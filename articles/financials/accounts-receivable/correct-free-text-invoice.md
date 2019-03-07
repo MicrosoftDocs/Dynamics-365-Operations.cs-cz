@@ -1,13 +1,13 @@
 ---
-title: "Oprava faktury s volným textem"
-description: "Tento článek vysvětluje, jak opravit volnou fakturu, která byla zaúčtována, a znovu ji vystavit jako opravenou fakturu."
+title: Oprava faktury s volným textem
+description: Tento článek vysvětluje, jak opravit volnou fakturu, která byla zaúčtována, a znovu ji vystavit jako opravenou fakturu.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: shylaw
@@ -18,38 +18,36 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: c8c1b90b7b2c02a53e53cc13d70445a237b126d4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364596"
 ---
-
-# <a name="correct-a-free-text-invoice"></a><span data-ttu-id="a5f5d-103">Oprava faktury s volným textem</span><span class="sxs-lookup"><span data-stu-id="a5f5d-103">Correct a free text invoice</span></span>
+# <a name="correct-a-free-text-invoice"></a><span data-ttu-id="9bb3c-103">Oprava faktury s volným textem</span><span class="sxs-lookup"><span data-stu-id="9bb3c-103">Correct a free text invoice</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a5f5d-104">Tento článek vysvětluje, jak opravit volnou fakturu, která byla zaúčtována, a znovu ji vystavit jako opravenou fakturu.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-104">This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.</span></span>
+<span data-ttu-id="9bb3c-104">Tento článek vysvětluje, jak opravit volnou fakturu, která byla zaúčtována, a znovu ji vystavit jako opravenou fakturu.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-104">This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.</span></span>
 
-<span data-ttu-id="a5f5d-105">Pokud chcete upravit volnou fakturu, která již byla zaúčtována, otevřete ji.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-105">To correct a free text invoice that has already been posted, open the posted free text invoice.</span></span> <span data-ttu-id="a5f5d-106">Na stránce **Faktura** vyberte možnost **Zrušit** a poté vyberte možnost **Správná faktura**.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-106">On the **Invoice** page, select **Cancel**, and then select **Correct invoice**.</span></span> <span data-ttu-id="a5f5d-107">Vyberte kód důvodu, přidejte poznámky a vyberte datum pro novou, opravenou fakturu.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-107">Select a reason code, add comments, and select the date for new corrected invoice.</span></span> <span data-ttu-id="a5f5d-108">Můžete upravit opravenou fakturu a zaúčtovat ji.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-108">You can modify the corrected invoice, and post it.</span></span> 
+<span data-ttu-id="9bb3c-105">Pokud chcete upravit volnou fakturu, která již byla zaúčtována, otevřete ji.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-105">To correct a free text invoice that has already been posted, open the posted free text invoice.</span></span> <span data-ttu-id="9bb3c-106">Na stránce **Faktura** vyberte možnost **Zrušit** a poté vyberte možnost **Správná faktura**.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-106">On the **Invoice** page, select **Cancel**, and then select **Correct invoice**.</span></span> <span data-ttu-id="9bb3c-107">Vyberte kód důvodu, přidejte poznámky a vyberte datum pro novou, opravenou fakturu.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-107">Select a reason code, add comments, and select the date for new corrected invoice.</span></span> <span data-ttu-id="9bb3c-108">Můžete upravit opravenou fakturu a zaúčtovat ji.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-108">You can modify the corrected invoice, and post it.</span></span> 
 
-<span data-ttu-id="a5f5d-109">Po zaúčtování opravené faktury se vytvoří zrušení faktury pro kreditní částku, která se rovná původní částce faktury.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-109">When you post the corrected invoice, a canceling invoice is created for a credit amount that equals the original invoice amount.</span></span> <span data-ttu-id="a5f5d-110">Kombinovaný zůstatek původní faktury a zrušení faktury je tedy 0 (nula).</span><span class="sxs-lookup"><span data-stu-id="a5f5d-110">Therefore, the combined balance of the original invoice and the canceling invoice is 0 (zero).</span></span> <span data-ttu-id="a5f5d-111">Zrušení faktury je vyrovnáno oproti původní faktuře.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-111">The canceling invoice is settled against the original invoice.</span></span> 
+<span data-ttu-id="9bb3c-109">Po zaúčtování opravené faktury se vytvoří zrušení faktury pro kreditní částku, která se rovná původní částce faktury.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-109">When you post the corrected invoice, a canceling invoice is created for a credit amount that equals the original invoice amount.</span></span> <span data-ttu-id="9bb3c-110">Kombinovaný zůstatek původní faktury a zrušení faktury je tedy 0 (nula).</span><span class="sxs-lookup"><span data-stu-id="9bb3c-110">Therefore, the combined balance of the original invoice and the canceling invoice is 0 (zero).</span></span> <span data-ttu-id="9bb3c-111">Zrušení faktury je vyrovnáno oproti původní faktuře.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-111">The canceling invoice is settled against the original invoice.</span></span> 
 
-<span data-ttu-id="a5f5d-112">Po zaúčtování opravené fakturu budete mít tři faktury:</span><span class="sxs-lookup"><span data-stu-id="a5f5d-112">After you post the corrected invoice, you will have three invoices:</span></span>
+<span data-ttu-id="9bb3c-112">Po zaúčtování opravené fakturu budete mít tři faktury:</span><span class="sxs-lookup"><span data-stu-id="9bb3c-112">After you post the corrected invoice, you will have three invoices:</span></span>
 
--   <span data-ttu-id="a5f5d-113">**Původní faktura** – Faktura obsahující informace, které opravujete.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-113">**Original invoice** – The invoice that includes the information that you're correcting.</span></span>
--   <span data-ttu-id="a5f5d-114">**Zrušení faktury** – Systémem vygenerovaná faktura strany Dal, která byla vytvořena za účelem zrušení naposledy opravené faktury.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-114">**Canceling invoice** – The system-generated credit invoice that was created to cancel the invoice that was most recently corrected.</span></span>
--   <span data-ttu-id="a5f5d-115">**Opravená faktura** – Faktura, která obsahuje informace o opravené faktuře.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-115">**Corrected invoice** – The invoice that contains the corrected invoice information.</span></span>
+-   <span data-ttu-id="9bb3c-113">**Původní faktura** – Faktura obsahující informace, které opravujete.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-113">**Original invoice** – The invoice that includes the information that you're correcting.</span></span>
+-   <span data-ttu-id="9bb3c-114">**Zrušení faktury** – Systémem vygenerovaná faktura strany Dal, která byla vytvořena za účelem zrušení naposledy opravené faktury.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-114">**Canceling invoice** – The system-generated credit invoice that was created to cancel the invoice that was most recently corrected.</span></span>
+-   <span data-ttu-id="9bb3c-115">**Opravená faktura** – Faktura, která obsahuje informace o opravené faktuře.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-115">**Corrected invoice** – The invoice that contains the corrected invoice information.</span></span>
 
-<span data-ttu-id="a5f5d-116">Zrušení faktury a opravnou fakturu lze určit dvěma způsoby:</span><span class="sxs-lookup"><span data-stu-id="a5f5d-116">You can identify canceling and correcting invoices in two ways:</span></span>
+<span data-ttu-id="9bb3c-116">Zrušení faktury a opravnou fakturu lze určit dvěma způsoby:</span><span class="sxs-lookup"><span data-stu-id="9bb3c-116">You can identify canceling and correcting invoices in two ways:</span></span>
 
--   <span data-ttu-id="a5f5d-117">Na stránce **Všechny volné faktury** je sloupec **Oprava**, ve kterém můžete vidět, které faktury jsou zrušeny a které jsou opravné.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-117">The **All free text invoices** page includes a **Correction** column, where you can see which invoices are canceling invoices and corrected invoices.</span></span>
--   <span data-ttu-id="a5f5d-118">Záhlaví volné faktury zobrazuje stav **Zrušení faktury '\[číslo faktury\]'** nebo **Opravená faktura '\[číslo faktury\]'**.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-118">The header of the free text invoice shows a status of **Cancelling invoice '\[invoice number\]'** or **Corrected invoice '\[invoice number\]'**.</span></span>
+-   <span data-ttu-id="9bb3c-117">Na stránce **Všechny volné faktury** je sloupec **Oprava**, ve kterém můžete vidět, které faktury jsou zrušeny a které jsou opravné.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-117">The **All free text invoices** page includes a **Correction** column, where you can see which invoices are canceling invoices and corrected invoices.</span></span>
+-   <span data-ttu-id="9bb3c-118">Záhlaví volné faktury zobrazuje stav **Zrušení faktury '\[číslo faktury\]'** nebo **Opravená faktura '\[číslo faktury\]'**.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-118">The header of the free text invoice shows a status of **Cancelling invoice '\[invoice number\]'** or **Corrected invoice '\[invoice number\]'**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a5f5d-119">Tato funkce je k dispozici pouze tehdy, je-li vybrán konfigurační klíč **Oprava volné faktury**.</span><span class="sxs-lookup"><span data-stu-id="a5f5d-119">This feature is available only if the **Free text invoice correction** configuration key is selected.</span></span>
-
+> <span data-ttu-id="9bb3c-119">Tato funkce je k dispozici pouze tehdy, je-li vybrán konfigurační klíč **Oprava volné faktury**.</span><span class="sxs-lookup"><span data-stu-id="9bb3c-119">This feature is available only if the **Free text invoice correction** configuration key is selected.</span></span>
 
 
 
