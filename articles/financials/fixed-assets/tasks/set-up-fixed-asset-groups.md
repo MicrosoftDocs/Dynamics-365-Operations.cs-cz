@@ -1,13 +1,13 @@
---- 
-title: "Nastavit skupiny dlouhodobého majetku"
-description: "Tento postup popisuje, jak vytvořit novou skupinu dlouhodobého majetku."
+---
+title: Nastavit skupiny dlouhodobého majetku
+description: Tento postup popisuje, jak vytvořit novou skupinu dlouhodobého majetku.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetGroup, AssetGroupBookSetup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,30 +16,29 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 48784ef4eb12a4a1cae3387e3a45afdf34f2a0fd
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321793"
 ---
-# <a name="set-up-fixed-asset-groups"></a><span data-ttu-id="2421e-103">Nastavit skupiny dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="2421e-103">Set up fixed asset groups</span></span>
+# <a name="set-up-fixed-asset-groups"></a><span data-ttu-id="42dc9-103">Nastavit skupiny dlouhodobého majetku</span><span class="sxs-lookup"><span data-stu-id="42dc9-103">Set up fixed asset groups</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="2421e-104">Tento postup popisuje, jak vytvořit novou skupinu dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="2421e-104">This procedure shows how to create a new fixed asset group.</span></span> <span data-ttu-id="2421e-105">Využívá účetní role a ukázková data pro právnické osoby USMF.</span><span class="sxs-lookup"><span data-stu-id="2421e-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>
+<span data-ttu-id="42dc9-104">Tento postup popisuje, jak vytvořit novou skupinu dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="42dc9-104">This procedure shows how to create a new fixed asset group.</span></span> <span data-ttu-id="42dc9-105">Využívá účetní role a ukázková data pro právnické osoby USMF.</span><span class="sxs-lookup"><span data-stu-id="42dc9-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>
 
-1. <span data-ttu-id="2421e-106">Přejděte do části Dlouhodobý majetek > Nastavení > Skupiny dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="2421e-106">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
-2. <span data-ttu-id="2421e-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="2421e-107">Click New.</span></span>
-3. <span data-ttu-id="2421e-108">Zadejte hodnotu do pole Skupina dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="2421e-108">In the Fixed asset group field, type a value.</span></span>
-4. <span data-ttu-id="2421e-109">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="2421e-109">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="2421e-110">Funkce Automaticky číslovat dlouhodobý majetek a Kód číselné řady ve skupině dlouhodobého majetku přepíše nastavení v parametrech dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="2421e-110">Autonumber fixed assets and Number sequence code on the Fixed asset group will override the settings on the Fixed assets parameters.</span></span> <span data-ttu-id="2421e-111">Nastavení zde můžete změnit v případě, že majetek v této skupině dlouhodobého majetku bude mít jiné číslování, než v jiných skupinách.</span><span class="sxs-lookup"><span data-stu-id="2421e-111">You can change it here if the assets in this fixed asset group will have different numbering from other groups.</span></span>  
-5. <span data-ttu-id="2421e-112">Klepněte na Knihy.</span><span class="sxs-lookup"><span data-stu-id="2421e-112">Click Books.</span></span>
-6. <span data-ttu-id="2421e-113">V poli Kniha zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="2421e-113">In the Book field, enter or select a value.</span></span>
-    * <span data-ttu-id="2421e-114">Možnost Výpočet odpisu je nastavena na Ano a kniha majetku tak bude zahrnuta v návrzích odpisů.</span><span class="sxs-lookup"><span data-stu-id="2421e-114">The Calculate depreciation field is set to Yes, so the asset book will be included in depreciation proposals.</span></span> <span data-ttu-id="2421e-115">Je-li výpočet odpisu nastaven na hodnotu Ne, majetek nebude odepisován automaticky.</span><span class="sxs-lookup"><span data-stu-id="2421e-115">If Calculate depreciation is set to No, the asset will not be automatically depreciated.</span></span>  
-7. <span data-ttu-id="2421e-116">Nastavte dobu životnosti majetku v letech.</span><span class="sxs-lookup"><span data-stu-id="2421e-116">Set the Service life of the asset, in years.</span></span>
-    * <span data-ttu-id="2421e-117">Všimněte si, že hodnota pole Období odpisu se vypočítá po nastavení doby životnosti.</span><span class="sxs-lookup"><span data-stu-id="2421e-117">Note that the Depreciation periods field value is calculated after setting the Service life.</span></span>  
-8. <span data-ttu-id="2421e-118">Vyberte volbu v poli Způsob odpisu.</span><span class="sxs-lookup"><span data-stu-id="2421e-118">In the Depreciation convention field, select an option.</span></span>
-9. <span data-ttu-id="2421e-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2421e-119">Close the page.</span></span>
-
+1. <span data-ttu-id="42dc9-106">Přejděte do části Dlouhodobý majetek > Nastavení > Skupiny dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="42dc9-106">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
+2. <span data-ttu-id="42dc9-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="42dc9-107">Click New.</span></span>
+3. <span data-ttu-id="42dc9-108">Zadejte hodnotu do pole Skupina dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="42dc9-108">In the Fixed asset group field, type a value.</span></span>
+4. <span data-ttu-id="42dc9-109">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="42dc9-109">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="42dc9-110">Funkce Automaticky číslovat dlouhodobý majetek a Kód číselné řady ve skupině dlouhodobého majetku přepíše nastavení v parametrech dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="42dc9-110">Autonumber fixed assets and Number sequence code on the Fixed asset group will override the settings on the Fixed assets parameters.</span></span> <span data-ttu-id="42dc9-111">Nastavení zde můžete změnit v případě, že majetek v této skupině dlouhodobého majetku bude mít jiné číslování, než v jiných skupinách.</span><span class="sxs-lookup"><span data-stu-id="42dc9-111">You can change it here if the assets in this fixed asset group will have different numbering from other groups.</span></span>  
+5. <span data-ttu-id="42dc9-112">Klepněte na Knihy.</span><span class="sxs-lookup"><span data-stu-id="42dc9-112">Click Books.</span></span>
+6. <span data-ttu-id="42dc9-113">V poli Kniha zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="42dc9-113">In the Book field, enter or select a value.</span></span>
+    * <span data-ttu-id="42dc9-114">Možnost Výpočet odpisu je nastavena na Ano a kniha majetku tak bude zahrnuta v návrzích odpisů.</span><span class="sxs-lookup"><span data-stu-id="42dc9-114">The Calculate depreciation field is set to Yes, so the asset book will be included in depreciation proposals.</span></span> <span data-ttu-id="42dc9-115">Je-li výpočet odpisu nastaven na hodnotu Ne, majetek nebude odepisován automaticky.</span><span class="sxs-lookup"><span data-stu-id="42dc9-115">If Calculate depreciation is set to No, the asset will not be automatically depreciated.</span></span>  
+7. <span data-ttu-id="42dc9-116">Nastavte dobu životnosti majetku v letech.</span><span class="sxs-lookup"><span data-stu-id="42dc9-116">Set the Service life of the asset, in years.</span></span>
+    * <span data-ttu-id="42dc9-117">Všimněte si, že hodnota pole Období odpisu se vypočítá po nastavení doby životnosti.</span><span class="sxs-lookup"><span data-stu-id="42dc9-117">Note that the Depreciation periods field value is calculated after setting the Service life.</span></span>  
+8. <span data-ttu-id="42dc9-118">Vyberte volbu v poli Způsob odpisu.</span><span class="sxs-lookup"><span data-stu-id="42dc9-118">In the Depreciation convention field, select an option.</span></span>
+9. <span data-ttu-id="42dc9-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="42dc9-119">Close the page.</span></span>
 

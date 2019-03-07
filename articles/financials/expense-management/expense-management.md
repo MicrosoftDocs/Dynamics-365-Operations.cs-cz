@@ -1,13 +1,13 @@
 ---
-title: "Správa výdajů"
-description: "Použijte modul Správa výdajů pro vytvoření integrovaného workflow, do kterého lze uložit informace o metodách platby, importovat transakce kreditních karet a sledovat obnosy, které zaměstnanci utrácejí jako výdaje pro dosažený zisku pro vaši společnost."
+title: Správa výdajů
+description: Použijte modul Správa výdajů pro vytvoření integrovaného workflow, do kterého lze uložit informace o metodách platby, importovat transakce kreditních karet a sledovat obnosy, které zaměstnanci utrácejí jako výdaje pro dosažený zisku pro vaši společnost.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvExpenseWorkspace
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,43 +18,41 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 1cd637f1b74056db89520b762255d03afa3855ba
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313398"
 ---
-
-# <a name="expense-management"></a><span data-ttu-id="87aad-103">Správa výdajů</span><span class="sxs-lookup"><span data-stu-id="87aad-103">Expense management</span></span>
+# <a name="expense-management"></a><span data-ttu-id="a5708-103">Správa výdajů</span><span class="sxs-lookup"><span data-stu-id="a5708-103">Expense management</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="87aad-104">Použijte modul Správa výdajů pro vytvoření integrovaného workflow, do kterého lze uložit informace o metodách platby, importovat transakce kreditních karet a sledovat obnosy, které zaměstnanci utrácejí jako výdaje pro dosažený zisku pro vaši společnost.</span><span class="sxs-lookup"><span data-stu-id="87aad-104">Use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees are spending when they incur expenses for your business.</span></span> <span data-ttu-id="87aad-105">Můžete také definovat zásady výdajů a automatizovat refundace cestovních výdajů.</span><span class="sxs-lookup"><span data-stu-id="87aad-105">You can also define expense policies and automate the reimbursement of travel expenses.</span></span> 
+<span data-ttu-id="a5708-104">Použijte modul Správa výdajů pro vytvoření integrovaného workflow, do kterého lze uložit informace o metodách platby, importovat transakce kreditních karet a sledovat obnosy, které zaměstnanci utrácejí jako výdaje pro dosažený zisku pro vaši společnost.</span><span class="sxs-lookup"><span data-stu-id="a5708-104">Use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees are spending when they incur expenses for your business.</span></span> <span data-ttu-id="a5708-105">Můžete také definovat zásady výdajů a automatizovat refundace cestovních výdajů.</span><span class="sxs-lookup"><span data-stu-id="a5708-105">You can also define expense policies and automate the reimbursement of travel expenses.</span></span> 
 
-[<span data-ttu-id="87aad-106">Správa výdajů plánování</span><span class="sxs-lookup"><span data-stu-id="87aad-106">Planning expense management</span></span>](plan-expense-management.md) 
+[<span data-ttu-id="a5708-106">Správa výdajů plánování</span><span class="sxs-lookup"><span data-stu-id="a5708-106">Planning expense management</span></span>](plan-expense-management.md) 
 
-### <a name="additional-resources"></a><span data-ttu-id="87aad-107">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="87aad-107">Additional resources</span></span>
+### <a name="additional-resources"></a><span data-ttu-id="a5708-107">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="a5708-107">Additional resources</span></span>
 
-#### <a name="whats-new-and-in-development"></a><span data-ttu-id="87aad-108">Co je nového a na čem se pracuje</span><span class="sxs-lookup"><span data-stu-id="87aad-108">What's new and in development</span></span>
+#### <a name="whats-new-and-in-development"></a><span data-ttu-id="a5708-108">Co je nového a na čem se pracuje</span><span class="sxs-lookup"><span data-stu-id="a5708-108">What's new and in development</span></span>
 
-<span data-ttu-id="87aad-109">Přejděte na [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.</span><span class="sxs-lookup"><span data-stu-id="87aad-109">Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.</span></span> 
+<span data-ttu-id="a5708-109">Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.</span><span class="sxs-lookup"><span data-stu-id="a5708-109">Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.</span></span> 
 
-#### <a name="blogs"></a><span data-ttu-id="87aad-110">Blogy</span><span class="sxs-lookup"><span data-stu-id="87aad-110">Blogs</span></span>
+#### <a name="blogs"></a><span data-ttu-id="a5708-110">Blogy</span><span class="sxs-lookup"><span data-stu-id="a5708-110">Blogs</span></span>
 
-<span data-ttu-id="87aad-111">Názory, novinky a jiné informace o modulu Pohledávky a jiných řešeních naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).</span><span class="sxs-lookup"><span data-stu-id="87aad-111">You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).</span></span>
+<span data-ttu-id="a5708-111">Názory, novinky a jiné informace o modulu Pohledávky a jiných řešeních naleznete v blogu [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).</span><span class="sxs-lookup"><span data-stu-id="a5708-111">You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).</span></span>
 
-<span data-ttu-id="87aad-112">Existuje mnoho příspěvků o modulu Pohledávky na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/).</span><span class="sxs-lookup"><span data-stu-id="87aad-112">There are many posts about Accounts receivable on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/).</span></span> <span data-ttu-id="87aad-113">I když některé z těchto příspěvků byly napsány pro předchozí verzi modulu pohledávky, stále se používají stejné koncepty.</span><span class="sxs-lookup"><span data-stu-id="87aad-113">Although some of these posts were written for the previous version of Accounts receivable, the same concepts still apply.</span></span> <span data-ttu-id="87aad-114">a postupy jsou podobné jako v aktuální verzi.</span><span class="sxs-lookup"><span data-stu-id="87aad-114">and the procedures are also similar in the current version.</span></span>
+<span data-ttu-id="a5708-112">Existuje mnoho příspěvků o modulu Pohledávky na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/).</span><span class="sxs-lookup"><span data-stu-id="a5708-112">There are many posts about Accounts receivable on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/).</span></span> <span data-ttu-id="a5708-113">I když některé z těchto příspěvků byly napsány pro předchozí verzi modulu pohledávky, stále se používají stejné koncepty.</span><span class="sxs-lookup"><span data-stu-id="a5708-113">Although some of these posts were written for the previous version of Accounts receivable, the same concepts still apply.</span></span> <span data-ttu-id="a5708-114">a postupy jsou podobné jako v aktuální verzi.</span><span class="sxs-lookup"><span data-stu-id="a5708-114">and the procedures are also similar in the current version.</span></span>
 
-<span data-ttu-id="87aad-115">[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.</span><span class="sxs-lookup"><span data-stu-id="87aad-115">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
+<span data-ttu-id="a5708-115">[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.</span><span class="sxs-lookup"><span data-stu-id="a5708-115">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
 
-#### <a name="task-guides"></a><span data-ttu-id="87aad-116">Průvodci záznamem úloh</span><span class="sxs-lookup"><span data-stu-id="87aad-116">Task guides</span></span>
-<span data-ttu-id="87aad-117">V aplikaci Finance and Operations je k dispozici další nápověda v podobě průvodců záznamem úloh.</span><span class="sxs-lookup"><span data-stu-id="87aad-117">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="87aad-118">Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.</span><span class="sxs-lookup"><span data-stu-id="87aad-118">To access task guides, click the Help button on any page.</span></span>
+#### <a name="task-guides"></a><span data-ttu-id="a5708-116">Průvodci záznamem úloh</span><span class="sxs-lookup"><span data-stu-id="a5708-116">Task guides</span></span>
+<span data-ttu-id="a5708-117">V aplikaci Finance and Operations je k dispozici další nápověda v podobě průvodců záznamem úloh.</span><span class="sxs-lookup"><span data-stu-id="a5708-117">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="a5708-118">Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.</span><span class="sxs-lookup"><span data-stu-id="a5708-118">To access task guides, click the Help button on any page.</span></span>
 
-#### <a name="videos"></a><span data-ttu-id="87aad-119">Videa</span><span class="sxs-lookup"><span data-stu-id="87aad-119">Videos</span></span>
+#### <a name="videos"></a><span data-ttu-id="a5708-119">Videa</span><span class="sxs-lookup"><span data-stu-id="a5708-119">Videos</span></span>
 
-<span data-ttu-id="87aad-120">Prohlédněte si instruktážní videa, která jsou nyní k dispozici na kanálu [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="87aad-120">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
-
+<span data-ttu-id="a5708-120">Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="a5708-120">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
 
 
 

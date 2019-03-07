@@ -1,13 +1,13 @@
 ---
-title: "Zadání kombinací účtu a dimenze (řízení segmentového zadání)"
-description: "Tento článek popisuje způsob zadání kombinací účtu a dimenzí nebo účtů hlavní knihy. Zadávání je obvykle označováno jako řízení segmentovaného zadávání."
+title: Zadání kombinací účtu a dimenze (řízení segmentového zadání)
+description: Tento článek popisuje způsob zadání kombinací účtu a dimenzí nebo účtů hlavní knihy. Zadávání je obvykle označováno jako řízení segmentovaného zadávání.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure
 audience: Application User
 ms.reviewer: shylaw
@@ -18,56 +18,22 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: c9addb2897bac68115a38f0239764ab65af2378c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315652"
 ---
-
-# <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a><span data-ttu-id="f4e90-104">Zadání kombinací účtu a dimenze (řízení segmentového zadání)</span><span class="sxs-lookup"><span data-stu-id="f4e90-104">Enter account and dimension combinations (segmented entry control)</span></span>
+# <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a><span data-ttu-id="d1925-104">Zadání kombinací účtu a dimenze (řízení segmentového zadání)</span><span class="sxs-lookup"><span data-stu-id="d1925-104">Enter account and dimension combinations (segmented entry control)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f4e90-105">Tento článek popisuje způsob zadání kombinací účtu a dimenzí nebo účtů hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="f4e90-105">This article describes how to enter account and dimension combinations or ledger accounts.</span></span> <span data-ttu-id="f4e90-106">Zadávání je obvykle označováno jako řízení segmentovaného zadávání.</span><span class="sxs-lookup"><span data-stu-id="f4e90-106">The entry experience is often referred to as segmented entry control.</span></span>
+<span data-ttu-id="d1925-105">Tento článek popisuje způsob zadání kombinací účtu a dimenzí nebo účtů hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="d1925-105">This article describes how to enter account and dimension combinations or ledger accounts.</span></span> <span data-ttu-id="d1925-106">Zadávání je obvykle označováno jako řízení segmentovaného zadávání.</span><span class="sxs-lookup"><span data-stu-id="d1925-106">The entry experience is often referred to as segmented entry control.</span></span>
 
-<span data-ttu-id="f4e90-107">Uživatelé zadávají kombinace účtů a dimenzí na různých stránkách, například na stránkách pro hlavní deníky, rozpočtování a definice účtování.</span><span class="sxs-lookup"><span data-stu-id="f4e90-107">Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions.</span></span> <span data-ttu-id="f4e90-108">Platné kombinace účtu a dimenzí závisí na účetních strukturách přiřazených k hlavní knize a rozšířených pravidlech přiřazených účetním strukturám.</span><span class="sxs-lookup"><span data-stu-id="f4e90-108">The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures.</span></span> <span data-ttu-id="f4e90-109">Když uživatelé zadávají kombinaci, mohou hodnoty zadat buď ručně, nebo využít rozsáhlou funkcionalitu vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="f4e90-109">When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience.</span></span> <span data-ttu-id="f4e90-110">Pokud zadáte pole, můžete začít psát a bude vyhledána hodnota a popis.</span><span class="sxs-lookup"><span data-stu-id="f4e90-110">When you enter the field, you can start to type and it will search the value and the description.</span></span> <span data-ttu-id="f4e90-111">Například pokud zadáte 180, bude se hledat libovolná hodnot, která začíná touto číselnou kombinaci.</span><span class="sxs-lookup"><span data-stu-id="f4e90-111">For example, if you type 180 it will search any value that begins with that number combination.</span></span> <span data-ttu-id="f4e90-112">Nebo můžete zadat hotovost a vyhledají se libovolné hodnoty, které má popis začínající slovem Hotovost.</span><span class="sxs-lookup"><span data-stu-id="f4e90-112">Or you may type Cash and it will search any value that has a description that begins with Cash.</span></span> <span data-ttu-id="f4e90-113">K hledání můžete také použít zástupné znaky, jako \*Hotovost nebo \*180, pokud hodnota nebo popis obsahuje vyhledávací kritéria.</span><span class="sxs-lookup"><span data-stu-id="f4e90-113">You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria.</span></span> 
+<span data-ttu-id="d1925-107">Uživatelé zadávají kombinace účtů a dimenzí na různých stránkách, například na stránkách pro hlavní deníky, rozpočtování a definice účtování.</span><span class="sxs-lookup"><span data-stu-id="d1925-107">Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions.</span></span> <span data-ttu-id="d1925-108">Platné kombinace účtu a dimenzí závisí na účetních strukturách přiřazených k hlavní knize a rozšířených pravidlech přiřazených účetním strukturám.</span><span class="sxs-lookup"><span data-stu-id="d1925-108">The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures.</span></span> <span data-ttu-id="d1925-109">Když uživatelé zadávají kombinaci, mohou hodnoty zadat buď ručně, nebo využít rozsáhlou funkcionalitu vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="d1925-109">When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience.</span></span> <span data-ttu-id="d1925-110">Pokud zadáte pole, můžete začít psát a bude vyhledána hodnota a popis.</span><span class="sxs-lookup"><span data-stu-id="d1925-110">When you enter the field, you can start to type and it will search the value and the description.</span></span> <span data-ttu-id="d1925-111">Například pokud zadáte 180, bude se hledat libovolná hodnot, která začíná touto číselnou kombinaci.</span><span class="sxs-lookup"><span data-stu-id="d1925-111">For example, if you type 180 it will search any value that begins with that number combination.</span></span> <span data-ttu-id="d1925-112">Nebo můžete zadat hotovost a vyhledají se libovolné hodnoty, které má popis začínající slovem Hotovost.</span><span class="sxs-lookup"><span data-stu-id="d1925-112">Or you may type Cash and it will search any value that has a description that begins with Cash.</span></span> <span data-ttu-id="d1925-113">K hledání můžete také použít zástupné znaky, jako \*Hotovost nebo \*180, pokud hodnota nebo popis obsahuje vyhledávací kritéria.</span><span class="sxs-lookup"><span data-stu-id="d1925-113">You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria.</span></span> 
 
-<span data-ttu-id="f4e90-114">V následující tabulce jsou popsány klávesové zkratky, které lze použít, když je vyhledávání zavřené.</span><span class="sxs-lookup"><span data-stu-id="f4e90-114">The following table describes the keyboard shortcuts that can be used when the lookup is closed.</span></span>
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><span data-ttu-id="f4e90-115">Klávesová zkratka</span><span class="sxs-lookup"><span data-stu-id="f4e90-115">Keyboard shortcut</span></span></th>
-<th><span data-ttu-id="f4e90-116">Akce</span><span class="sxs-lookup"><span data-stu-id="f4e90-116">Action</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span data-ttu-id="f4e90-117">Alt + šipka dolů</span><span class="sxs-lookup"><span data-stu-id="f4e90-117">Alt+Down Arrow</span></span></td>
-<td><span data-ttu-id="f4e90-118">Otevře vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="f4e90-118">Open the lookup.</span></span> <span data-ttu-id="f4e90-119">Pokud stisknete klávesy Alt + šipka dolů ještě jednou, výběr se přesune do segmentů v plovoucím panelu.</span><span class="sxs-lookup"><span data-stu-id="f4e90-119">If you press Alt+Down Arrow a second time, the focus moves to the segments in the flyout.</span></span></td>
-</tr>
-<tr class="even">
-<td><ul>
-<li><span data-ttu-id="f4e90-120">Enter a Shift + Enter</span><span class="sxs-lookup"><span data-stu-id="f4e90-120">Enter and Shift+Enter</span></span></li>
-<li><span data-ttu-id="f4e90-121">Oddělovač účtové osnovy</span><span class="sxs-lookup"><span data-stu-id="f4e90-121">Chart of accounts delimiter</span></span></li>
-<li><span data-ttu-id="f4e90-122">Šipka doprava a šipka doleva</span><span class="sxs-lookup"><span data-stu-id="f4e90-122">Right Arrow and Left Arrow</span></span></li>
-</ul></td>
-<td><span data-ttu-id="f4e90-123">Přejde na následující nebo předchozí segment.</span><span class="sxs-lookup"><span data-stu-id="f4e90-123">Move to the next or previous segment.</span></span></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="f4e90-124">Karta</span><span class="sxs-lookup"><span data-stu-id="f4e90-124">Tab</span></span></td>
-<td><span data-ttu-id="f4e90-125">Přejde k následujícímu poli v mřížce.</span><span class="sxs-lookup"><span data-stu-id="f4e90-125">Move to the next field in the grid.</span></span></td>
-</tr>
-</tbody>
-</table>
-
-<span data-ttu-id="f4e90-126">V následující tabulce jsou popsány klávesové zkratky, které lze použít, když je vyhledávání otevřené.</span><span class="sxs-lookup"><span data-stu-id="f4e90-126">The following table describes the keyboard shortcuts that can be used when the lookup is open.</span></span>
+<span data-ttu-id="d1925-114">V následující tabulce jsou popsány klávesové zkratky, které lze použít, když je vyhledávání zavřené.</span><span class="sxs-lookup"><span data-stu-id="d1925-114">The following table describes the keyboard shortcuts that can be used when the lookup is closed.</span></span>
 
 <table>
 <colgroup>
@@ -76,41 +42,73 @@ ms.lasthandoff: 08/07/2018
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="f4e90-127">Klávesová zkratka</span><span class="sxs-lookup"><span data-stu-id="f4e90-127">Keyboard shortcut</span></span></th>
-<th><span data-ttu-id="f4e90-128">Akce</span><span class="sxs-lookup"><span data-stu-id="f4e90-128">Action</span></span></th>
+<th><span data-ttu-id="d1925-115">Klávesová zkratka</span><span class="sxs-lookup"><span data-stu-id="d1925-115">Keyboard shortcut</span></span></th>
+<th><span data-ttu-id="d1925-116">Akce</span><span class="sxs-lookup"><span data-stu-id="d1925-116">Action</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="f4e90-129">Esc</span><span class="sxs-lookup"><span data-stu-id="f4e90-129">Esc</span></span></td>
-<td><span data-ttu-id="f4e90-130">Zavření vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="f4e90-130">Close the lookup.</span></span></td>
+<td><span data-ttu-id="d1925-117">Alt + šipka dolů</span><span class="sxs-lookup"><span data-stu-id="d1925-117">Alt+Down Arrow</span></span></td>
+<td><span data-ttu-id="d1925-118">Otevře vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="d1925-118">Open the lookup.</span></span> <span data-ttu-id="d1925-119">Pokud stisknete klávesy Alt + šipka dolů ještě jednou, výběr se přesune do segmentů v plovoucím panelu.</span><span class="sxs-lookup"><span data-stu-id="d1925-119">If you press Alt+Down Arrow a second time, the focus moves to the segments in the flyout.</span></span></td>
 </tr>
 <tr class="even">
 <td><ul>
-<li><span data-ttu-id="f4e90-131">Šipka nahoru a šipka dolů</span><span class="sxs-lookup"><span data-stu-id="f4e90-131">Up Arrow and Down Arrow</span></span></li>
-<li><span data-ttu-id="f4e90-132">Page Up a Page Down</span><span class="sxs-lookup"><span data-stu-id="f4e90-132">Page Up and Page Down</span></span></li>
-<li><span data-ttu-id="f4e90-133">Home a End</span><span class="sxs-lookup"><span data-stu-id="f4e90-133">Home and End</span></span></li>
+<li><span data-ttu-id="d1925-120">Enter a Shift + Enter</span><span class="sxs-lookup"><span data-stu-id="d1925-120">Enter and Shift+Enter</span></span></li>
+<li><span data-ttu-id="d1925-121">Oddělovač účtové osnovy</span><span class="sxs-lookup"><span data-stu-id="d1925-121">Chart of accounts delimiter</span></span></li>
+<li><span data-ttu-id="d1925-122">Šipka doprava a šipka doleva</span><span class="sxs-lookup"><span data-stu-id="d1925-122">Right Arrow and Left Arrow</span></span></li>
 </ul></td>
-<td><span data-ttu-id="f4e90-134">Přejde na předchozí nebo následující hodnotu v seznamech, předchozí nebo následující skupinu hodnot anebo na první nebo poslední prvek ve vyhledání.</span><span class="sxs-lookup"><span data-stu-id="f4e90-134">Move to the previous or next value in the lists, to the previous or next group of values, or to the first or last element in the lookup.</span></span></td>
+<td><span data-ttu-id="d1925-123">Přejde na následující nebo předchozí segment.</span><span class="sxs-lookup"><span data-stu-id="d1925-123">Move to the next or previous segment.</span></span></td>
 </tr>
 <tr class="odd">
-<td><ul>
-<li><span data-ttu-id="f4e90-135">Oddělovač účtové osnovy</span><span class="sxs-lookup"><span data-stu-id="f4e90-135">Chart of accounts delimiter</span></span></li>
-<li><span data-ttu-id="f4e90-136">Šipka doprava a šipka doleva</span><span class="sxs-lookup"><span data-stu-id="f4e90-136">Right Arrow and Left Arrow</span></span></li>
-</ul></td>
-<td><span data-ttu-id="f4e90-137">Přejde na následující nebo předchozí segment.</span><span class="sxs-lookup"><span data-stu-id="f4e90-137">Move to the next or previous segment.</span></span></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="f4e90-138">Karta</span><span class="sxs-lookup"><span data-stu-id="f4e90-138">Tab</span></span></td>
-<td><span data-ttu-id="f4e90-139">Přejde k následujícímu poli v mřížce.</span><span class="sxs-lookup"><span data-stu-id="f4e90-139">Move to the next field in the grid.</span></span></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="f4e90-140">Alt + W</span><span class="sxs-lookup"><span data-stu-id="f4e90-140">Alt+W</span></span></td>
-<td><span data-ttu-id="f4e90-141">Přepne mezi režimy <strong>Zobrazit vše</strong> a <strong>Zobrazit platné</strong>.</span><span class="sxs-lookup"><span data-stu-id="f4e90-141">Switch between <strong>Show all</strong> and <strong>Show valid</strong>.</span></span></td>
+<td><span data-ttu-id="d1925-124">Karta</span><span class="sxs-lookup"><span data-stu-id="d1925-124">Tab</span></span></td>
+<td><span data-ttu-id="d1925-125">Přejde k následujícímu poli v mřížce.</span><span class="sxs-lookup"><span data-stu-id="d1925-125">Move to the next field in the grid.</span></span></td>
 </tr>
 </tbody>
 </table>
 
+<span data-ttu-id="d1925-126">V následující tabulce jsou popsány klávesové zkratky, které lze použít, když je vyhledávání otevřené.</span><span class="sxs-lookup"><span data-stu-id="d1925-126">The following table describes the keyboard shortcuts that can be used when the lookup is open.</span></span>
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span data-ttu-id="d1925-127">Klávesová zkratka</span><span class="sxs-lookup"><span data-stu-id="d1925-127">Keyboard shortcut</span></span></th>
+<th><span data-ttu-id="d1925-128">Akce</span><span class="sxs-lookup"><span data-stu-id="d1925-128">Action</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span data-ttu-id="d1925-129">Esc</span><span class="sxs-lookup"><span data-stu-id="d1925-129">Esc</span></span></td>
+<td><span data-ttu-id="d1925-130">Zavření vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="d1925-130">Close the lookup.</span></span></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><span data-ttu-id="d1925-131">Šipka nahoru a šipka dolů</span><span class="sxs-lookup"><span data-stu-id="d1925-131">Up Arrow and Down Arrow</span></span></li>
+<li><span data-ttu-id="d1925-132">Page Up a Page Down</span><span class="sxs-lookup"><span data-stu-id="d1925-132">Page Up and Page Down</span></span></li>
+<li><span data-ttu-id="d1925-133">Home a End</span><span class="sxs-lookup"><span data-stu-id="d1925-133">Home and End</span></span></li>
+</ul></td>
+<td><span data-ttu-id="d1925-134">Přejde na předchozí nebo následující hodnotu v seznamech, předchozí nebo následující skupinu hodnot anebo na první nebo poslední prvek ve vyhledání.</span><span class="sxs-lookup"><span data-stu-id="d1925-134">Move to the previous or next value in the lists, to the previous or next group of values, or to the first or last element in the lookup.</span></span></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li><span data-ttu-id="d1925-135">Oddělovač účtové osnovy</span><span class="sxs-lookup"><span data-stu-id="d1925-135">Chart of accounts delimiter</span></span></li>
+<li><span data-ttu-id="d1925-136">Šipka doprava a šipka doleva</span><span class="sxs-lookup"><span data-stu-id="d1925-136">Right Arrow and Left Arrow</span></span></li>
+</ul></td>
+<td><span data-ttu-id="d1925-137">Přejde na následující nebo předchozí segment.</span><span class="sxs-lookup"><span data-stu-id="d1925-137">Move to the next or previous segment.</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="d1925-138">Karta</span><span class="sxs-lookup"><span data-stu-id="d1925-138">Tab</span></span></td>
+<td><span data-ttu-id="d1925-139">Přejde k následujícímu poli v mřížce.</span><span class="sxs-lookup"><span data-stu-id="d1925-139">Move to the next field in the grid.</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="d1925-140">Alt + W</span><span class="sxs-lookup"><span data-stu-id="d1925-140">Alt+W</span></span></td>
+<td><span data-ttu-id="d1925-141">Přepne mezi režimy <strong>Zobrazit vše</strong> a <strong>Zobrazit platné</strong>.</span><span class="sxs-lookup"><span data-stu-id="d1925-141">Switch between <strong>Show all</strong> and <strong>Show valid</strong>.</span></span></td>
+</tr>
+</tbody>
+</table>
 
 
 

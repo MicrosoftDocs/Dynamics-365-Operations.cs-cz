@@ -1,13 +1,13 @@
 ---
-title: "Zásady práce ve skladu"
-description: "Zásady práce ve skladu řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu."
+title: Zásady práce ve skladu
+description: Zásady práce ve skladu řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -19,236 +19,234 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 0710eac8daba7f51f6b5d1522476b812a130960d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325588"
 ---
-
-# <a name="warehouse-work-policies"></a><span data-ttu-id="a2fac-103">Zásady práce ve skladu</span><span class="sxs-lookup"><span data-stu-id="a2fac-103">Warehouse work policies</span></span>
+# <a name="warehouse-work-policies"></a><span data-ttu-id="cdfe4-103">Zásady práce ve skladu</span><span class="sxs-lookup"><span data-stu-id="cdfe4-103">Warehouse work policies</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a2fac-104">Zásady práce ve skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu.</span><span class="sxs-lookup"><span data-stu-id="a2fac-104">Warehouse work policies in Microsoft Dynamics 365 for Finance and Operations control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.</span></span>
+<span data-ttu-id="cdfe4-104">Zásady práce ve skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-104">Warehouse work policies in Microsoft Dynamics 365 for Finance and Operations control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.</span></span>
 
-<span data-ttu-id="a2fac-105">Tato pracovní zásada řídí, zda je vytvořena práce skladu pro procesy skladu při výrobě.</span><span class="sxs-lookup"><span data-stu-id="a2fac-105">This work policy controls whether warehouse work is created for warehouse processes in manufacturing.</span></span> <span data-ttu-id="a2fac-106">Zásadu práce můžete nastavit použitím kombinace **typů pracovního příkazu**, **skladového místa** a **produktu**.</span><span class="sxs-lookup"><span data-stu-id="a2fac-106">You can set up the work policy by using a combination of **work order types**, an **inventory location**, and a **product**.</span></span> <span data-ttu-id="a2fac-107">Například produkt L0101 je vykazován jako dokončený na umístění výstupu 001.</span><span class="sxs-lookup"><span data-stu-id="a2fac-107">For example, product L0101 is reported as finished to output location 001.</span></span> <span data-ttu-id="a2fac-108">Hotového výrobek je později spotřebován v jiné výrobní zakázce v umístění výstupu 001.</span><span class="sxs-lookup"><span data-stu-id="a2fac-108">The finished good is later consumed in another production order at output location 001.</span></span> <span data-ttu-id="a2fac-109">V tomto případě můžete nastavením pracovní zásady zabránit vytvoření práce pro zaskladnění hotových výrobků, když nahlásíte produkt L0101 jako dokončený v umístění výstupu 001.</span><span class="sxs-lookup"><span data-stu-id="a2fac-109">In this case, you can set up a work policy to prevent the work for finished goods put-away from being created when you report product L0101 as finished to output location 001.</span></span> <span data-ttu-id="a2fac-110">Zásady práce označují individuální entitu, kterou lze popsat pomocí následujících informací:</span><span class="sxs-lookup"><span data-stu-id="a2fac-110">The work policy is an individual entity that can be described through the following information:</span></span>
+<span data-ttu-id="cdfe4-105">Tato pracovní zásada řídí, zda je vytvořena práce skladu pro procesy skladu při výrobě.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-105">This work policy controls whether warehouse work is created for warehouse processes in manufacturing.</span></span> <span data-ttu-id="cdfe4-106">Zásadu práce můžete nastavit použitím kombinace **typů pracovního příkazu**, **skladového místa** a **produktu**.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-106">You can set up the work policy by using a combination of **work order types**, an **inventory location**, and a **product**.</span></span> <span data-ttu-id="cdfe4-107">Například produkt L0101 je vykazován jako dokončený na umístění výstupu 001.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-107">For example, product L0101 is reported as finished to output location 001.</span></span> <span data-ttu-id="cdfe4-108">Hotového výrobek je později spotřebován v jiné výrobní zakázce v umístění výstupu 001.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-108">The finished good is later consumed in another production order at output location 001.</span></span> <span data-ttu-id="cdfe4-109">V tomto případě můžete nastavením pracovní zásady zabránit vytvoření práce pro zaskladnění hotových výrobků, když nahlásíte produkt L0101 jako dokončený v umístění výstupu 001.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-109">In this case, you can set up a work policy to prevent the work for finished goods put-away from being created when you report product L0101 as finished to output location 001.</span></span> <span data-ttu-id="cdfe4-110">Zásady práce označují individuální entitu, kterou lze popsat pomocí následujících informací:</span><span class="sxs-lookup"><span data-stu-id="cdfe4-110">The work policy is an individual entity that can be described through the following information:</span></span>
 
--   <span data-ttu-id="a2fac-111">**Název pracovní zásady**(jedinečný identifikátor pracovní zásady)</span><span class="sxs-lookup"><span data-stu-id="a2fac-111">**Work policy name** (the unique identifier of the work policy)</span></span>
--   <span data-ttu-id="a2fac-112">**Typy pracovních činností** a **způsob vytvoření práce**</span><span class="sxs-lookup"><span data-stu-id="a2fac-112">**Work order types** and **Work creation method**</span></span>
--   <span data-ttu-id="a2fac-113">**Skladová místa**</span><span class="sxs-lookup"><span data-stu-id="a2fac-113">**Inventory locations**</span></span>
--   <span data-ttu-id="a2fac-114">**Výrobky**</span><span class="sxs-lookup"><span data-stu-id="a2fac-114">**Products**</span></span>
+-   <span data-ttu-id="cdfe4-111">**Název pracovní zásady**(jedinečný identifikátor pracovní zásady)</span><span class="sxs-lookup"><span data-stu-id="cdfe4-111">**Work policy name** (the unique identifier of the work policy)</span></span>
+-   <span data-ttu-id="cdfe4-112">**Typy pracovních činností** a **způsob vytvoření práce**</span><span class="sxs-lookup"><span data-stu-id="cdfe4-112">**Work order types** and **Work creation method**</span></span>
+-   <span data-ttu-id="cdfe4-113">**Skladová místa**</span><span class="sxs-lookup"><span data-stu-id="cdfe4-113">**Inventory locations**</span></span>
+-   <span data-ttu-id="cdfe4-114">**Výrobky**</span><span class="sxs-lookup"><span data-stu-id="cdfe4-114">**Products**</span></span>
 
-## <a name="work-order-types"></a><span data-ttu-id="a2fac-115">Typy pořadí pracovních činností</span><span class="sxs-lookup"><span data-stu-id="a2fac-115">Work order types</span></span>
-<span data-ttu-id="a2fac-116">Můžete vybrat některý z následujících typů pracovních příkazů:</span><span class="sxs-lookup"><span data-stu-id="a2fac-116">You can select the following work order types:</span></span>
+## <a name="work-order-types"></a><span data-ttu-id="cdfe4-115">Typy pořadí pracovních činností</span><span class="sxs-lookup"><span data-stu-id="cdfe4-115">Work order types</span></span>
+<span data-ttu-id="cdfe4-116">Můžete vybrat některý z následujících typů pracovních příkazů:</span><span class="sxs-lookup"><span data-stu-id="cdfe4-116">You can select the following work order types:</span></span>
 
--   <span data-ttu-id="a2fac-117">Výdej dokončeného zboží</span><span class="sxs-lookup"><span data-stu-id="a2fac-117">Finished goods put away</span></span>
--   <span data-ttu-id="a2fac-118">Vyskladnění vedlejšího produktu</span><span class="sxs-lookup"><span data-stu-id="a2fac-118">Co-product and by-product put away</span></span>
--   <span data-ttu-id="a2fac-119">Výdej suroviny</span><span class="sxs-lookup"><span data-stu-id="a2fac-119">Raw material picking</span></span>
+-   <span data-ttu-id="cdfe4-117">Výdej dokončeného zboží</span><span class="sxs-lookup"><span data-stu-id="cdfe4-117">Finished goods put away</span></span>
+-   <span data-ttu-id="cdfe4-118">Vyskladnění vedlejšího produktu</span><span class="sxs-lookup"><span data-stu-id="cdfe4-118">Co-product and by-product put away</span></span>
+-   <span data-ttu-id="cdfe4-119">Výdej suroviny</span><span class="sxs-lookup"><span data-stu-id="cdfe4-119">Raw material picking</span></span>
 
-<span data-ttu-id="a2fac-120">Pole **Metoda vytváření práce** má hodnotu **Nikdy**.</span><span class="sxs-lookup"><span data-stu-id="a2fac-120">The **Work creation method** field has the value **Never**.</span></span> <span data-ttu-id="a2fac-121">Tato hodnota značí, že pracovní zásada zabrání vytvoření práce ve skladu pro vybraný typ výrobního příkazu.</span><span class="sxs-lookup"><span data-stu-id="a2fac-121">This value indicates that the work policy will prevent warehouse work from being created for the selected work order type.</span></span>
+<span data-ttu-id="cdfe4-120">Pole **Metoda vytváření práce** má hodnotu **Nikdy**.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-120">The **Work creation method** field has the value **Never**.</span></span> <span data-ttu-id="cdfe4-121">Tato hodnota značí, že pracovní zásada zabrání vytvoření práce ve skladu pro vybraný typ výrobního příkazu.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-121">This value indicates that the work policy will prevent warehouse work from being created for the selected work order type.</span></span>
 
-## <a name="inventory-locations"></a><span data-ttu-id="a2fac-122">Skladová místa</span><span class="sxs-lookup"><span data-stu-id="a2fac-122">Inventory locations</span></span>
-<span data-ttu-id="a2fac-123">Můžete vybrat místo, na které se pracovní zásada vztahuje.</span><span class="sxs-lookup"><span data-stu-id="a2fac-123">You can select a location that the work policy applies to.</span></span> <span data-ttu-id="a2fac-124">Pokud žádné umístění není přidruženo k zásadě práce, zásada práce se nevztahuje na všechny procesy.</span><span class="sxs-lookup"><span data-stu-id="a2fac-124">If no location is associated with a work policy, the work policy doesn’t apply to any processes.</span></span> <span data-ttu-id="a2fac-125">Na stránce **Umístění** můžete vybrat nebo zrušit výběr zásady práci na určité místo.</span><span class="sxs-lookup"><span data-stu-id="a2fac-125">On the **Locations** page, you can also select or cancel the selection of the work policy for a specific location.</span></span>
+## <a name="inventory-locations"></a><span data-ttu-id="cdfe4-122">Skladová místa</span><span class="sxs-lookup"><span data-stu-id="cdfe4-122">Inventory locations</span></span>
+<span data-ttu-id="cdfe4-123">Můžete vybrat místo, na které se pracovní zásada vztahuje.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-123">You can select a location that the work policy applies to.</span></span> <span data-ttu-id="cdfe4-124">Pokud žádné umístění není přidruženo k zásadě práce, zásada práce se nevztahuje na všechny procesy.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-124">If no location is associated with a work policy, the work policy doesn’t apply to any processes.</span></span> <span data-ttu-id="cdfe4-125">Na stránce **Umístění** můžete vybrat nebo zrušit výběr zásady práci na určité místo.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-125">On the **Locations** page, you can also select or cancel the selection of the work policy for a specific location.</span></span>
 
-## <a name="products"></a><span data-ttu-id="a2fac-126">Produkty</span><span class="sxs-lookup"><span data-stu-id="a2fac-126">Products</span></span>
-<span data-ttu-id="a2fac-127">Můžete vybrat produkt, na který se pracovní zásada vztahuje.</span><span class="sxs-lookup"><span data-stu-id="a2fac-127">You can select a product that the work policy applies to.</span></span> <span data-ttu-id="a2fac-128">Zásadu práce lze použít pro všechny produkty nebo vybrané produkty.</span><span class="sxs-lookup"><span data-stu-id="a2fac-128">You can apply the work policy to either all products or selected products.</span></span>
+## <a name="products"></a><span data-ttu-id="cdfe4-126">Produkty</span><span class="sxs-lookup"><span data-stu-id="cdfe4-126">Products</span></span>
+<span data-ttu-id="cdfe4-127">Můžete vybrat produkt, na který se pracovní zásada vztahuje.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-127">You can select a product that the work policy applies to.</span></span> <span data-ttu-id="cdfe4-128">Zásadu práce lze použít pro všechny produkty nebo vybrané produkty.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-128">You can apply the work policy to either all products or selected products.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a2fac-129">Příklad</span><span class="sxs-lookup"><span data-stu-id="a2fac-129">Example</span></span>
-<span data-ttu-id="a2fac-130">V následujícím příkladu jsou dvě výrobní zakázky, PRD-001 a PRD-00*2*.</span><span class="sxs-lookup"><span data-stu-id="a2fac-130">In the following example, there are two production orders, PRD-001 and PRD-00*2*.</span></span> <span data-ttu-id="a2fac-131">Výrobní zakázka PRD-001 má operaci s názvem **Sestavení**, kde produkt SC1 je hlášen jako dokončený v místě O1.</span><span class="sxs-lookup"><span data-stu-id="a2fac-131">Production order PRD-001 has an operation that is named **Assembly**, where product SC1 is being reported as finished to location O1.</span></span> <span data-ttu-id="a2fac-132">Výrobní zakázka PRD-002 má operaci, která se nazývá **Lakování** a spotřebovává produkt SC1 z umístění O1.</span><span class="sxs-lookup"><span data-stu-id="a2fac-132">Production order PRD-002 has an operation that is named **Painting** and consumes product SC1 from location O1.</span></span> <span data-ttu-id="a2fac-133">Výrobní zakázka PRD-002 také spotřebovává suroviny RM1 z umístění O1.</span><span class="sxs-lookup"><span data-stu-id="a2fac-133">Production order PRD-002 also consumes raw material RM1 from location O1.</span></span> <span data-ttu-id="a2fac-134">RM1 je uložen ve skladu BULK-001 a bude vyskladněno v umístění O1 během práce ve skladu pro výdej surovin.</span><span class="sxs-lookup"><span data-stu-id="a2fac-134">RM1 is stored in warehouse location BULK-001 and will be picked to location O1 by warehouse work for raw material picking.</span></span> <span data-ttu-id="a2fac-135">Pro uvolnění výroby PRD-002 je generována práce vyskladnění.</span><span class="sxs-lookup"><span data-stu-id="a2fac-135">The picking work is generated when production PRD-002 is released.</span></span> 
+## <a name="example"></a><span data-ttu-id="cdfe4-129">Příklad</span><span class="sxs-lookup"><span data-stu-id="cdfe4-129">Example</span></span>
+<span data-ttu-id="cdfe4-130">V následujícím příkladu jsou dvě výrobní zakázky, PRD-001 a PRD-00*2*.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-130">In the following example, there are two production orders, PRD-001 and PRD-00*2*.</span></span> <span data-ttu-id="cdfe4-131">Výrobní zakázka PRD-001 má operaci s názvem **Sestavení**, kde produkt SC1 je hlášen jako dokončený v místě O1.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-131">Production order PRD-001 has an operation that is named **Assembly**, where product SC1 is being reported as finished to location O1.</span></span> <span data-ttu-id="cdfe4-132">Výrobní zakázka PRD-002 má operaci, která se nazývá **Lakování** a spotřebovává produkt SC1 z umístění O1.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-132">Production order PRD-002 has an operation that is named **Painting** and consumes product SC1 from location O1.</span></span> <span data-ttu-id="cdfe4-133">Výrobní zakázka PRD-002 také spotřebovává suroviny RM1 z umístění O1.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-133">Production order PRD-002 also consumes raw material RM1 from location O1.</span></span> <span data-ttu-id="cdfe4-134">RM1 je uložen ve skladu BULK-001 a bude vyskladněno v umístění O1 během práce ve skladu pro výdej surovin.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-134">RM1 is stored in warehouse location BULK-001 and will be picked to location O1 by warehouse work for raw material picking.</span></span> <span data-ttu-id="cdfe4-135">Pro uvolnění výroby PRD-002 je generována práce vyskladnění.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-135">The picking work is generated when production PRD-002 is released.</span></span> 
 
-<span data-ttu-id="a2fac-136">[![Zásady práce ve skladu](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)</span><span class="sxs-lookup"><span data-stu-id="a2fac-136">[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)</span></span> 
+<span data-ttu-id="cdfe4-136">[![Zásady práce ve skladu](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)</span><span class="sxs-lookup"><span data-stu-id="cdfe4-136">[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)</span></span> 
 
-<span data-ttu-id="a2fac-137">Při plánování konfigurace zásad práce ve skladu pro tento scénář je třeba zvážit následujících informace:</span><span class="sxs-lookup"><span data-stu-id="a2fac-137">When you plan to configure a warehouse work policy for this scenario, you should consider the following information:</span></span>
+<span data-ttu-id="cdfe4-137">Při plánování konfigurace zásad práce ve skladu pro tento scénář je třeba zvážit následujících informace:</span><span class="sxs-lookup"><span data-stu-id="cdfe4-137">When you plan to configure a warehouse work policy for this scenario, you should consider the following information:</span></span>
 
--   <span data-ttu-id="a2fac-138">Práce ve skladu pro výdej dokončeného zboží není vyžadována, když vykážete produkt SC1 jako dokončený z výrobní zakázky PRD-001 do umístění O1.</span><span class="sxs-lookup"><span data-stu-id="a2fac-138">Warehouse work for finished goods put-away isn’t required when you report product SC1 as finished from production order PRD-001 to location O1.</span></span> <span data-ttu-id="a2fac-139">Důvodem je, že operace **Lakování** pro výrobní zakázku PRD-002 spotřebovává SC1 na stejném místě.</span><span class="sxs-lookup"><span data-stu-id="a2fac-139">This is because the **Painting** operation for production order PRD-002 consumes SC1 at the same location.</span></span>
--   <span data-ttu-id="a2fac-140">Práce ve skladu pro vyzvednutí surovin je požadována pro účely přesunutí surovin RM1 z umístění ve skladu BULK-001 do umístění O1.</span><span class="sxs-lookup"><span data-stu-id="a2fac-140">Warehouse work for raw material picking is required in order to move raw material RM1 from warehouse location BULK-001 to location O1.</span></span>
+-   <span data-ttu-id="cdfe4-138">Práce ve skladu pro výdej dokončeného zboží není vyžadována, když vykážete produkt SC1 jako dokončený z výrobní zakázky PRD-001 do umístění O1.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-138">Warehouse work for finished goods put-away isn’t required when you report product SC1 as finished from production order PRD-001 to location O1.</span></span> <span data-ttu-id="cdfe4-139">Důvodem je, že operace **Lakování** pro výrobní zakázku PRD-002 spotřebovává SC1 na stejném místě.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-139">This is because the **Painting** operation for production order PRD-002 consumes SC1 at the same location.</span></span>
+-   <span data-ttu-id="cdfe4-140">Práce ve skladu pro vyzvednutí surovin je požadována pro účely přesunutí surovin RM1 z umístění ve skladu BULK-001 do umístění O1.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-140">Warehouse work for raw material picking is required in order to move raw material RM1 from warehouse location BULK-001 to location O1.</span></span>
 
-<span data-ttu-id="a2fac-141">Toto je příklad zásad práce, které můžete nastavit na základě těchto důvodů.</span><span class="sxs-lookup"><span data-stu-id="a2fac-141">Here is an example of the work policy that you can set up, based on these considerations.</span></span>
+<span data-ttu-id="cdfe4-141">Toto je příklad zásad práce, které můžete nastavit na základě těchto důvodů.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-141">Here is an example of the work policy that you can set up, based on these considerations.</span></span>
 
 
 |                                       |                                       |
 |---------------------------------------|---------------------------------------|
-| <span data-ttu-id="a2fac-142"><strong>Název pracovní zásady</strong></span><span class="sxs-lookup"><span data-stu-id="a2fac-142"><strong>Work policy name</strong></span></span><br> | <span data-ttu-id="a2fac-143"><strong>Typy pořadí pracovních činností</strong></span><span class="sxs-lookup"><span data-stu-id="a2fac-143"><strong>Work order types</strong></span></span><br> |
-|         <span data-ttu-id="a2fac-144">Bez zaskladnění 01     \`</span><span class="sxs-lookup"><span data-stu-id="a2fac-144">No put away 01     \`</span></span>          |     <span data-ttu-id="a2fac-145">- Zaskladnění dokončeného výrobku</span><span class="sxs-lookup"><span data-stu-id="a2fac-145">- Finished good put away</span></span><br>      |
-|                                       |    <span data-ttu-id="a2fac-146"><strong>Umístění</strong></span><span class="sxs-lookup"><span data-stu-id="a2fac-146"><strong>Locations</strong></span></span><br>     |
-|                                       |                 <span data-ttu-id="a2fac-147">- O1</span><span class="sxs-lookup"><span data-stu-id="a2fac-147">- O1</span></span>                  |
-|                                       |    <span data-ttu-id="a2fac-148"><strong>Produkty</strong></span><span class="sxs-lookup"><span data-stu-id="a2fac-148"><strong>Products</strong></span></span> <br>     |
-|                                       |                 <span data-ttu-id="a2fac-149">- SC1</span><span class="sxs-lookup"><span data-stu-id="a2fac-149">- SC1</span></span>                 |
+| <span data-ttu-id="cdfe4-142"><strong>Název pracovní zásady</strong></span><span class="sxs-lookup"><span data-stu-id="cdfe4-142"><strong>Work policy name</strong></span></span><br> | <span data-ttu-id="cdfe4-143"><strong>Typy pořadí pracovních činností</strong></span><span class="sxs-lookup"><span data-stu-id="cdfe4-143"><strong>Work order types</strong></span></span><br> |
+|         <span data-ttu-id="cdfe4-144">Bez zaskladnění 01     \`</span><span class="sxs-lookup"><span data-stu-id="cdfe4-144">No put away 01     \`</span></span>          |     <span data-ttu-id="cdfe4-145">- Zaskladnění dokončeného výrobku</span><span class="sxs-lookup"><span data-stu-id="cdfe4-145">- Finished good put away</span></span><br>      |
+|                                       |    <span data-ttu-id="cdfe4-146"><strong>Umístění</strong></span><span class="sxs-lookup"><span data-stu-id="cdfe4-146"><strong>Locations</strong></span></span><br>     |
+|                                       |                 <span data-ttu-id="cdfe4-147">- O1</span><span class="sxs-lookup"><span data-stu-id="cdfe4-147">- O1</span></span>                  |
+|                                       |    <span data-ttu-id="cdfe4-148"><strong>Produkty</strong></span><span class="sxs-lookup"><span data-stu-id="cdfe4-148"><strong>Products</strong></span></span> <br>     |
+|                                       |                 <span data-ttu-id="cdfe4-149">- SC1</span><span class="sxs-lookup"><span data-stu-id="cdfe4-149">- SC1</span></span>                 |
 
-<span data-ttu-id="a2fac-150">Následující procedury obsahují podrobné pokyny ke způsobu nastavení zásad pracovního skladu pro tento scénář.</span><span class="sxs-lookup"><span data-stu-id="a2fac-150">The following procedures provide step-by-step instructions about how to set up the warehouse work policy for this scenario.</span></span> <span data-ttu-id="a2fac-151">Je popsána také ukázka nastavení, která uvádí, jak vykázat výrobní zakázku jako dokončenou v místě, které nemá licenční kód.</span><span class="sxs-lookup"><span data-stu-id="a2fac-151">A sample setup showing how to report a production order as finished to a location that isn’t license plate–controlled is also described.</span></span>
+<span data-ttu-id="cdfe4-150">Následující procedury obsahují podrobné pokyny ke způsobu nastavení zásad pracovního skladu pro tento scénář.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-150">The following procedures provide step-by-step instructions about how to set up the warehouse work policy for this scenario.</span></span> <span data-ttu-id="cdfe4-151">Je popsána také ukázka nastavení, která uvádí, jak vykázat výrobní zakázku jako dokončenou v místě, které nemá licenční kód.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-151">A sample setup showing how to report a production order as finished to a location that isn’t license plate–controlled is also described.</span></span>
 
-## <a name="set-up-a-warehouse-work-policy"></a><span data-ttu-id="a2fac-152">Nastavení zásady práce ve skladu</span><span class="sxs-lookup"><span data-stu-id="a2fac-152">Set up a warehouse work policy</span></span>
-<span data-ttu-id="a2fac-153">Skladové procesy ne vždy zahrnují skladovou práci.</span><span class="sxs-lookup"><span data-stu-id="a2fac-153">Warehouse processes don’t always include warehouse work.</span></span> <span data-ttu-id="a2fac-154">Definováním zásad práce můžete zabránit vytváření práce pro výdej surovin, ale také vyskladnění dokončených výrobků pro sérii produktů v konkrétních umístěních.</span><span class="sxs-lookup"><span data-stu-id="a2fac-154">By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations.</span></span> <span data-ttu-id="a2fac-155">K vytvoření této procedury jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="a2fac-155">The USMF demo data company was used to create this procedure.</span></span> 
+## <a name="set-up-a-warehouse-work-policy"></a><span data-ttu-id="cdfe4-152">Nastavení zásady práce ve skladu</span><span class="sxs-lookup"><span data-stu-id="cdfe4-152">Set up a warehouse work policy</span></span>
+<span data-ttu-id="cdfe4-153">Skladové procesy ne vždy zahrnují skladovou práci.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-153">Warehouse processes don’t always include warehouse work.</span></span> <span data-ttu-id="cdfe4-154">Definováním zásad práce můžete zabránit vytváření práce pro výdej surovin, ale také vyskladnění dokončených výrobků pro sérii produktů v konkrétních umístěních.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-154">By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations.</span></span> <span data-ttu-id="cdfe4-155">K vytvoření této procedury jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-155">The USMF demo data company was used to create this procedure.</span></span> 
 
-<span data-ttu-id="a2fac-156">KROKY (21)</span><span class="sxs-lookup"><span data-stu-id="a2fac-156">STEPS (21)</span></span>
+<span data-ttu-id="cdfe4-156">KROKY (21)</span><span class="sxs-lookup"><span data-stu-id="cdfe4-156">STEPS (21)</span></span>
 
 |     |                                                                            |
 |-----|----------------------------------------------------------------------------|
-| <span data-ttu-id="a2fac-157">1.</span><span class="sxs-lookup"><span data-stu-id="a2fac-157">1.</span></span>  | <span data-ttu-id="a2fac-158">Přejděte do nabídky Řízení skladu &gt; Nastavení &gt; Práce &gt; Pracovní zásady.</span><span class="sxs-lookup"><span data-stu-id="a2fac-158">Go to Warehouse management &gt; Setup &gt; Work &gt; Work policies.</span></span>        |
-| <span data-ttu-id="a2fac-159">2.</span><span class="sxs-lookup"><span data-stu-id="a2fac-159">2.</span></span>  | <span data-ttu-id="a2fac-160">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="a2fac-160">Click New.</span></span>                                                                 |
-| <span data-ttu-id="a2fac-161">3.</span><span class="sxs-lookup"><span data-stu-id="a2fac-161">3.</span></span>  | <span data-ttu-id="a2fac-162">Do pole Název pracovní zásady zadejte „Žádné vyskladnění“.</span><span class="sxs-lookup"><span data-stu-id="a2fac-162">In the Work policy name field, type 'No put-away work'.</span></span>                    |
-| <span data-ttu-id="a2fac-163">4.</span><span class="sxs-lookup"><span data-stu-id="a2fac-163">4.</span></span>  | <span data-ttu-id="a2fac-164">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="a2fac-164">Click Save.</span></span>                                                                |
-| <span data-ttu-id="a2fac-165">5.</span><span class="sxs-lookup"><span data-stu-id="a2fac-165">5.</span></span>  | <span data-ttu-id="a2fac-166">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="a2fac-166">Click Add.</span></span>                                                                 |
-| <span data-ttu-id="a2fac-167">6.</span><span class="sxs-lookup"><span data-stu-id="a2fac-167">6.</span></span>  | <span data-ttu-id="a2fac-168">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="a2fac-168">In the list, mark the selected row.</span></span>                                        |
-| <span data-ttu-id="a2fac-169">7.</span><span class="sxs-lookup"><span data-stu-id="a2fac-169">7.</span></span>  | <span data-ttu-id="a2fac-170">V poli Typ pořadí pracovních činností vyberte možnost Výdej dokončeného zboží.</span><span class="sxs-lookup"><span data-stu-id="a2fac-170">In the Work order type field, select 'Finished goods put away'.</span></span>            |
-| <span data-ttu-id="a2fac-171">8.</span><span class="sxs-lookup"><span data-stu-id="a2fac-171">8.</span></span>  | <span data-ttu-id="a2fac-172">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="a2fac-172">Click Add.</span></span>                                                                 |
-| <span data-ttu-id="a2fac-173">9.</span><span class="sxs-lookup"><span data-stu-id="a2fac-173">9.</span></span>  | <span data-ttu-id="a2fac-174">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="a2fac-174">In the list, mark the selected row.</span></span>                                        |
-| <span data-ttu-id="a2fac-175">10.</span><span class="sxs-lookup"><span data-stu-id="a2fac-175">10.</span></span> | <span data-ttu-id="a2fac-176">V poli Typ pořadí pracovních činností vyberte Vyskladnění vedlejšího produktu.</span><span class="sxs-lookup"><span data-stu-id="a2fac-176">In the Work order type field, select 'Co-product and by-product put away'.</span></span> |
-| <span data-ttu-id="a2fac-177">11.</span><span class="sxs-lookup"><span data-stu-id="a2fac-177">11.</span></span> | <span data-ttu-id="a2fac-178">Rozbalte oblast Skladová místa.</span><span class="sxs-lookup"><span data-stu-id="a2fac-178">Expand the Inventory locations section.</span></span>                                    |
-| <span data-ttu-id="a2fac-179">12.</span><span class="sxs-lookup"><span data-stu-id="a2fac-179">12.</span></span> | <span data-ttu-id="a2fac-180">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="a2fac-180">Click Add.</span></span>                                                                 |
-| <span data-ttu-id="a2fac-181">13.</span><span class="sxs-lookup"><span data-stu-id="a2fac-181">13.</span></span> | <span data-ttu-id="a2fac-182">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="a2fac-182">In the list, mark the selected row.</span></span>                                        |
-| <span data-ttu-id="a2fac-183">14.</span><span class="sxs-lookup"><span data-stu-id="a2fac-183">14.</span></span> | <span data-ttu-id="a2fac-184">V seznamu Sklad zadejte „51“.</span><span class="sxs-lookup"><span data-stu-id="a2fac-184">In the Warehouse list, enter '51'.</span></span>                                         |
-| <span data-ttu-id="a2fac-185">15.</span><span class="sxs-lookup"><span data-stu-id="a2fac-185">15.</span></span> | <span data-ttu-id="a2fac-186">V poli Umístění zadejte nebo vyberte hodnotu 001.</span><span class="sxs-lookup"><span data-stu-id="a2fac-186">In the Location field, enter or select '001'.</span></span>                              |
-| <span data-ttu-id="a2fac-187">16.</span><span class="sxs-lookup"><span data-stu-id="a2fac-187">16.</span></span> | <span data-ttu-id="a2fac-188">Rozbalte část Produkty.</span><span class="sxs-lookup"><span data-stu-id="a2fac-188">Expand the Products section.</span></span>                                               |
-| <span data-ttu-id="a2fac-189">17.</span><span class="sxs-lookup"><span data-stu-id="a2fac-189">17.</span></span> | <span data-ttu-id="a2fac-190">Vyberte možnost Vybráno v poli Výběr produktu.</span><span class="sxs-lookup"><span data-stu-id="a2fac-190">In the Product selection field, select 'Selected'.</span></span>                         |
-| <span data-ttu-id="a2fac-191">18.</span><span class="sxs-lookup"><span data-stu-id="a2fac-191">18.</span></span> | <span data-ttu-id="a2fac-192">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="a2fac-192">Click Add.</span></span>                                                                 |
-| <span data-ttu-id="a2fac-193">19.</span><span class="sxs-lookup"><span data-stu-id="a2fac-193">19.</span></span> | <span data-ttu-id="a2fac-194">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="a2fac-194">In the list, mark the selected row.</span></span>                                        |
-| <span data-ttu-id="a2fac-195">20.</span><span class="sxs-lookup"><span data-stu-id="a2fac-195">20.</span></span> | <span data-ttu-id="a2fac-196">V poli Číslo zboží zadejte nebo vyberte hodnotu L0101.</span><span class="sxs-lookup"><span data-stu-id="a2fac-196">In the Item number field, enter or select 'L0101'.</span></span>                         |
-| <span data-ttu-id="a2fac-197">21.</span><span class="sxs-lookup"><span data-stu-id="a2fac-197">21.</span></span> | <span data-ttu-id="a2fac-198">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="a2fac-198">Click Save.</span></span>                                                                |
+| <span data-ttu-id="cdfe4-157">1.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-157">1.</span></span>  | <span data-ttu-id="cdfe4-158">Přejděte do nabídky Řízení skladu &gt; Nastavení &gt; Práce &gt; Pracovní zásady.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-158">Go to Warehouse management &gt; Setup &gt; Work &gt; Work policies.</span></span>        |
+| <span data-ttu-id="cdfe4-159">2.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-159">2.</span></span>  | <span data-ttu-id="cdfe4-160">Klikněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-160">Click New.</span></span>                                                                 |
+| <span data-ttu-id="cdfe4-161">3.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-161">3.</span></span>  | <span data-ttu-id="cdfe4-162">Do pole Název pracovní zásady zadejte „Žádné vyskladnění“.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-162">In the Work policy name field, type 'No put-away work'.</span></span>                    |
+| <span data-ttu-id="cdfe4-163">4.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-163">4.</span></span>  | <span data-ttu-id="cdfe4-164">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-164">Click Save.</span></span>                                                                |
+| <span data-ttu-id="cdfe4-165">5.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-165">5.</span></span>  | <span data-ttu-id="cdfe4-166">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-166">Click Add.</span></span>                                                                 |
+| <span data-ttu-id="cdfe4-167">6.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-167">6.</span></span>  | <span data-ttu-id="cdfe4-168">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-168">In the list, mark the selected row.</span></span>                                        |
+| <span data-ttu-id="cdfe4-169">7.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-169">7.</span></span>  | <span data-ttu-id="cdfe4-170">V poli Typ pořadí pracovních činností vyberte možnost Výdej dokončeného zboží.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-170">In the Work order type field, select 'Finished goods put away'.</span></span>            |
+| <span data-ttu-id="cdfe4-171">8.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-171">8.</span></span>  | <span data-ttu-id="cdfe4-172">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-172">Click Add.</span></span>                                                                 |
+| <span data-ttu-id="cdfe4-173">9.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-173">9.</span></span>  | <span data-ttu-id="cdfe4-174">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-174">In the list, mark the selected row.</span></span>                                        |
+| <span data-ttu-id="cdfe4-175">10.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-175">10.</span></span> | <span data-ttu-id="cdfe4-176">V poli Typ pořadí pracovních činností vyberte Vyskladnění vedlejšího produktu.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-176">In the Work order type field, select 'Co-product and by-product put away'.</span></span> |
+| <span data-ttu-id="cdfe4-177">11.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-177">11.</span></span> | <span data-ttu-id="cdfe4-178">Rozbalte oblast Skladová místa.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-178">Expand the Inventory locations section.</span></span>                                    |
+| <span data-ttu-id="cdfe4-179">12.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-179">12.</span></span> | <span data-ttu-id="cdfe4-180">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-180">Click Add.</span></span>                                                                 |
+| <span data-ttu-id="cdfe4-181">13.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-181">13.</span></span> | <span data-ttu-id="cdfe4-182">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-182">In the list, mark the selected row.</span></span>                                        |
+| <span data-ttu-id="cdfe4-183">14.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-183">14.</span></span> | <span data-ttu-id="cdfe4-184">V seznamu Sklad zadejte „51“.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-184">In the Warehouse list, enter '51'.</span></span>                                         |
+| <span data-ttu-id="cdfe4-185">15.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-185">15.</span></span> | <span data-ttu-id="cdfe4-186">V poli Umístění zadejte nebo vyberte hodnotu 001.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-186">In the Location field, enter or select '001'.</span></span>                              |
+| <span data-ttu-id="cdfe4-187">16.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-187">16.</span></span> | <span data-ttu-id="cdfe4-188">Rozbalte část Produkty.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-188">Expand the Products section.</span></span>                                               |
+| <span data-ttu-id="cdfe4-189">17.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-189">17.</span></span> | <span data-ttu-id="cdfe4-190">Vyberte možnost Vybráno v poli Výběr produktu.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-190">In the Product selection field, select 'Selected'.</span></span>                         |
+| <span data-ttu-id="cdfe4-191">18.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-191">18.</span></span> | <span data-ttu-id="cdfe4-192">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-192">Click Add.</span></span>                                                                 |
+| <span data-ttu-id="cdfe4-193">19.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-193">19.</span></span> | <span data-ttu-id="cdfe4-194">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-194">In the list, mark the selected row.</span></span>                                        |
+| <span data-ttu-id="cdfe4-195">20.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-195">20.</span></span> | <span data-ttu-id="cdfe4-196">V poli Číslo zboží zadejte nebo vyberte hodnotu L0101.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-196">In the Item number field, enter or select 'L0101'.</span></span>                         |
+| <span data-ttu-id="cdfe4-197">21.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-197">21.</span></span> | <span data-ttu-id="cdfe4-198">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-198">Click Save.</span></span>                                                                |
 
-## <a name="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled"></a><span data-ttu-id="a2fac-199">Vykázání výrobní zakázky jako dokončené v místě, které není řízeno registrační značkou</span><span class="sxs-lookup"><span data-stu-id="a2fac-199">Report a production order as finished to a location that isn’t license plate–controlled</span></span>
-<span data-ttu-id="a2fac-200">Tato procedura obsahuje ukázku dokončeného hlášení do skladového místa, které není řízeno registrační značkou.</span><span class="sxs-lookup"><span data-stu-id="a2fac-200">This procedure shows an example of reporting as finished to a location that isn't license plate–controlled.</span></span> <span data-ttu-id="a2fac-201">Předpokladem pro tento úkol je příslušné pracovní pravidlo.</span><span class="sxs-lookup"><span data-stu-id="a2fac-201">An applicable work policy is the prerequisite for this task.</span></span> <span data-ttu-id="a2fac-202">Předchozí procedura popisovala nastavení pracovních zásad.</span><span class="sxs-lookup"><span data-stu-id="a2fac-202">The previous procedure shows the setup of the work policy.</span></span> 
+## <a name="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled"></a><span data-ttu-id="cdfe4-199">Vykázání výrobní zakázky jako dokončené v místě, které není řízeno registrační značkou</span><span class="sxs-lookup"><span data-stu-id="cdfe4-199">Report a production order as finished to a location that isn’t license plate–controlled</span></span>
+<span data-ttu-id="cdfe4-200">Tato procedura obsahuje ukázku dokončeného hlášení do skladového místa, které není řízeno registrační značkou.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-200">This procedure shows an example of reporting as finished to a location that isn't license plate–controlled.</span></span> <span data-ttu-id="cdfe4-201">Předpokladem pro tento úkol je příslušné pracovní pravidlo.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-201">An applicable work policy is the prerequisite for this task.</span></span> <span data-ttu-id="cdfe4-202">Předchozí procedura popisovala nastavení pracovních zásad.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-202">The previous procedure shows the setup of the work policy.</span></span> 
 
-<span data-ttu-id="a2fac-203">KROKY (25)</span><span class="sxs-lookup"><span data-stu-id="a2fac-203">STEPS (25)</span></span>
+<span data-ttu-id="cdfe4-203">KROKY (25)</span><span class="sxs-lookup"><span data-stu-id="cdfe4-203">STEPS (25)</span></span>
 
 <table>
 <tbody>
 <tr>
-<td colspan="3"><span data-ttu-id="a2fac-204"><strong>Dílčí úkol: Nastavení výstupního umístění.</strong></span><span class="sxs-lookup"><span data-stu-id="a2fac-204"><strong>Sub-task: Set up an output location.</strong></span></span></td>
+<td colspan="3"><span data-ttu-id="cdfe4-204"><strong>Dílčí úkol: Nastavení výstupního umístění.</strong></span><span class="sxs-lookup"><span data-stu-id="cdfe4-204"><strong>Sub-task: Set up an output location.</strong></span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>1.</td>
-<td><span data-ttu-id="a2fac-205">Přejděte na nabídce Správa organizace &gt; Zdroje &gt; Skupiny prostředků.</span><span class="sxs-lookup"><span data-stu-id="a2fac-205">Go to Organization administration &gt; Resources &gt; Resource groups.</span></span></td>
+<td><span data-ttu-id="cdfe4-205">Přejděte na nabídce Správa organizace &gt; Zdroje &gt; Skupiny prostředků.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-205">Go to Organization administration &gt; Resources &gt; Resource groups.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>2.</td>
-<td><span data-ttu-id="a2fac-206">V seznamu vyberte skupinu prostředků '5102'.</span><span class="sxs-lookup"><span data-stu-id="a2fac-206">In the list, select resource group &#39;5102&#39;.</span></span></td>
+<td><span data-ttu-id="cdfe4-206">V seznamu vyberte skupinu prostředků &#39;5102&#39;.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-206">In the list, select resource group &#39;5102&#39;.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>3.</td>
-<td><span data-ttu-id="a2fac-207">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="a2fac-207">Click Edit.</span></span></td>
+<td><span data-ttu-id="cdfe4-207">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-207">Click Edit.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>4.</td>
-<td><span data-ttu-id="a2fac-208">V poli Výstupní sklad vyberte 51.</span><span class="sxs-lookup"><span data-stu-id="a2fac-208">In the Output warehouse field, enter &#39;51&#39;.</span></span></td>
+<td><span data-ttu-id="cdfe4-208">Do pole Výstupní sklad zadejte &#39;51&#39;.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-208">In the Output warehouse field, enter &#39;51&#39;.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td><span data-ttu-id="a2fac-209">V poli Výstupní umístění vyberte 001.</span><span class="sxs-lookup"><span data-stu-id="a2fac-209">In the Output location field, enter &#39;001&#39;.</span></span></td>
+<td><span data-ttu-id="cdfe4-209">Do pole Umístění výstupu zadejte &#39;001&#39;.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-209">In the Output location field, enter &#39;001&#39;.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>6.</td>
-<td><span data-ttu-id="a2fac-210">Umístění 001 není umístění řízené registrační značkou.</span><span class="sxs-lookup"><span data-stu-id="a2fac-210">Location 001 isn&#39;t a license plate–controlled location.</span></span> <span data-ttu-id="a2fac-211">Umístění výstupu bez registrační značky můžete nastavit pouze v případě, že pro umístění existuje příslušné pracovní pravidlo.</span><span class="sxs-lookup"><span data-stu-id="a2fac-211">You can set up a non–license plate output location only if an applicable work policy exists for the location.</span></span></td>
+<td><span data-ttu-id="cdfe4-210">Umístění 001 není umístění řízené registrační značkou.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-210">Location 001 isn&#39;t a license plate–controlled location.</span></span> <span data-ttu-id="cdfe4-211">Umístění výstupu bez registrační značky můžete nastavit pouze v případě, že pro umístění existuje příslušné pracovní pravidlo.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-211">You can set up a non–license plate output location only if an applicable work policy exists for the location.</span></span></td>
 </tr>
 <tr>
-<td colspan="3"><span data-ttu-id="a2fac-212"><strong>Dílčí úkol: Vytvoření výrobní zakázky a její ohlášení jako dokončené.</strong></span><span class="sxs-lookup"><span data-stu-id="a2fac-212"><strong>Sub-task: Create a production order and report it as finished.</strong></span></span></td>
+<td colspan="3"><span data-ttu-id="cdfe4-212"><strong>Dílčí úkol: Vytvoření výrobní zakázky a její ohlášení jako dokončené.</strong></span><span class="sxs-lookup"><span data-stu-id="cdfe4-212"><strong>Sub-task: Create a production order and report it as finished.</strong></span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>1.</td>
-<td><span data-ttu-id="a2fac-213">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="a2fac-213">Close the page.</span></span></td>
+<td><span data-ttu-id="cdfe4-213">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-213">Close the page.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>2.</td>
-<td><span data-ttu-id="a2fac-214">Přejděte na Řízení výroby &gt; Výrobní zakázky &gt; Všechny výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="a2fac-214">Go to Production control &gt; Production orders &gt; All production orders.</span></span></td>
+<td><span data-ttu-id="cdfe4-214">Přejděte na Řízení výroby &gt; Výrobní zakázky &gt; Všechny výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-214">Go to Production control &gt; Production orders &gt; All production orders.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>3.</td>
-<td><span data-ttu-id="a2fac-215">Klikněte na možnost Nová výrobní zakázka.</span><span class="sxs-lookup"><span data-stu-id="a2fac-215">Click New production order.</span></span></td>
+<td><span data-ttu-id="cdfe4-215">Klikněte na možnost Nová výrobní zakázka.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-215">Click New production order.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>4.</td>
-<td><span data-ttu-id="a2fac-216">V poli Číslo zboží zadejte 'L0101'.</span><span class="sxs-lookup"><span data-stu-id="a2fac-216">In the Item number field, enter &#39;L0101&#39;.</span></span></td>
+<td><span data-ttu-id="cdfe4-216">Do pole Číslo položky zadejte &#39;L0101&#39;.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-216">In the Item number field, enter &#39;L0101&#39;.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td><span data-ttu-id="a2fac-217">Klikněte na položku Vytvořit.</span><span class="sxs-lookup"><span data-stu-id="a2fac-217">Click Create.</span></span></td>
+<td><span data-ttu-id="cdfe4-217">Klikněte na položku Vytvořit.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-217">Click Create.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>6.</td>
-<td><span data-ttu-id="a2fac-218">V podokně akcí klikněte na položku Výrobní zakázka.</span><span class="sxs-lookup"><span data-stu-id="a2fac-218">On the Action Pane, click Production order.</span></span></td>
+<td><span data-ttu-id="cdfe4-218">V podokně akcí klikněte na položku Výrobní zakázka.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-218">On the Action Pane, click Production order.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>7.</td>
-<td><span data-ttu-id="a2fac-219">Klepněte na Odhad.</span><span class="sxs-lookup"><span data-stu-id="a2fac-219">Click Estimate.</span></span></td>
+<td><span data-ttu-id="cdfe4-219">Klepněte na Odhad.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-219">Click Estimate.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>8.</td>
-<td><span data-ttu-id="a2fac-220">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="a2fac-220">Click OK.</span></span></td>
+<td><span data-ttu-id="cdfe4-220">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-220">Click OK.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>9.</td>
-<td><span data-ttu-id="a2fac-221">Klepněte na tlačítko Start.</span><span class="sxs-lookup"><span data-stu-id="a2fac-221">Click Start.</span></span></td>
+<td><span data-ttu-id="cdfe4-221">Klepněte na tlačítko Start.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-221">Click Start.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>10.</td>
-<td><span data-ttu-id="a2fac-222">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="a2fac-222">Click the General tab.</span></span></td>
+<td><span data-ttu-id="cdfe4-222">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-222">Click the General tab.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>11.</td>
-<td><span data-ttu-id="a2fac-223">V poli Automatická spotřeba kusovníku vyberte hodnotu „Nikdy“.</span><span class="sxs-lookup"><span data-stu-id="a2fac-223">In the Automatic BOM consumption field, select &#39;Never&#39;.</span></span></td>
+<td><span data-ttu-id="cdfe4-223">V poli Automatická spotřeba kusovníku vyberte hodnotu &#39;nikdy&#39;.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-223">In the Automatic BOM consumption field, select &#39;Never&#39;.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>12.</td>
-<td><span data-ttu-id="a2fac-224">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="a2fac-224">Click OK.</span></span></td>
+<td><span data-ttu-id="cdfe4-224">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-224">Click OK.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>13.</td>
-<td><span data-ttu-id="a2fac-225">Klikněte na položku Oznámit jako dokončené.</span><span class="sxs-lookup"><span data-stu-id="a2fac-225">Click Report as finished.</span></span></td>
+<td><span data-ttu-id="cdfe4-225">Klikněte na položku Oznámit jako dokončené.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-225">Click Report as finished.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>14.</td>
-<td><span data-ttu-id="a2fac-226">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="a2fac-226">Click the General tab.</span></span></td>
+<td><span data-ttu-id="cdfe4-226">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-226">Click the General tab.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>15.</td>
-<td><span data-ttu-id="a2fac-227">Vyberte možnost Ano v poli Akceptovat chybu.</span><span class="sxs-lookup"><span data-stu-id="a2fac-227">Select Yes in the Accept error field.</span></span></td>
+<td><span data-ttu-id="cdfe4-227">Vyberte možnost Ano v poli Akceptovat chybu.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-227">Select Yes in the Accept error field.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>16.</td>
-<td><span data-ttu-id="a2fac-228">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="a2fac-228">Click OK.</span></span></td>
+<td><span data-ttu-id="cdfe4-228">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-228">Click OK.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>17.</td>
-<td><span data-ttu-id="a2fac-229">V podokně akcí klikněte na možnost Sklad.</span><span class="sxs-lookup"><span data-stu-id="a2fac-229">On the Action Pane, click Warehouse.</span></span></td>
+<td><span data-ttu-id="cdfe4-229">V podokně akcí klikněte na možnost Sklad.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-229">On the Action Pane, click Warehouse.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>18.</td>
-<td><span data-ttu-id="a2fac-230">Klepněte na tlačítko Podrobnosti práce.</span><span class="sxs-lookup"><span data-stu-id="a2fac-230">Click Work details.</span></span></td>
+<td><span data-ttu-id="cdfe4-230">Klepněte na tlačítko Podrobnosti práce.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-230">Click Work details.</span></span></td>
 </tr>
 <tr>
 <td></td>
 <td>19.</td>
-<td><span data-ttu-id="a2fac-231">Pokud byla výrobní zakázka ohlášena jako dokončená, žádná práce nebyla pro vyskladnění vytvořena.</span><span class="sxs-lookup"><span data-stu-id="a2fac-231">When the production order was reported as finished, no work was generated for put-away.</span></span> <span data-ttu-id="a2fac-232">K tomu dochází, protože jsou definovány zásady práce, které brání generování práce, když je produkt L0101 ohlášen za dokončený v umístění 001.</span><span class="sxs-lookup"><span data-stu-id="a2fac-232">This occurs because a work policy is defined that prevents work from being generated when product L0101 is reported as finished to location 001.</span></span></td>
+<td><span data-ttu-id="cdfe4-231">Pokud byla výrobní zakázka ohlášena jako dokončená, žádná práce nebyla pro vyskladnění vytvořena.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-231">When the production order was reported as finished, no work was generated for put-away.</span></span> <span data-ttu-id="cdfe4-232">K tomu dochází, protože jsou definovány zásady práce, které brání generování práce, když je produkt L0101 ohlášen za dokončený v umístění 001.</span><span class="sxs-lookup"><span data-stu-id="cdfe4-232">This occurs because a work policy is defined that prevents work from being generated when product L0101 is reported as finished to location 001.</span></span></td>
 </tr>
 </tbody>
 </table>
-
 
 
 
