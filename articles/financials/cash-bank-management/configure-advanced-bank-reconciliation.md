@@ -1,13 +1,13 @@
 ---
-title: "Proces nastavení rozšířeného odsouhlasení banky"
-description: "Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations.  Tento článek vysvětluje nastavení procesů odsouhlasení."
+title: Proces nastavení rozšířeného odsouhlasení banky
+description: Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations.  Tento článek vysvětluje nastavení procesů odsouhlasení.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c95589b013b569f15fce80612a11eca621944f6b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f77a9c927232c95558ba78037f6a6e9f77e202c2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357328"
 ---
-
 # <a name="advanced-bank-reconciliation-setup-process"></a>Proces nastavení rozšířeného odsouhlasení banky
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Funkce **Použít bankovní výpisy jako potvrzení elektronické platby** integ
 Pole **Název bankovního účtu v příkazech** představuje název používaný pro bankovní účet ve vašich elektronických bankovních výpisech.  Tento název se používá při určování transakcí, které mají být importovány do bankovního účtu z příkazu, který může obsahovat informace pro více bankovních účtů. 
 
 Možnost **Po importu odsouhlasit** automaticky ověří bankovní výpis, vytvoří nové odsouhlasení banky a list a spustí výchozí sadu pravidel párování.  Tato funkce automatizuje proces až do okamžiku, kdy musíte odpovídající transakce ručně spárovat.  Při importu bude nastaveno výchozí nastavení bankovního účtu
-
 
 
 

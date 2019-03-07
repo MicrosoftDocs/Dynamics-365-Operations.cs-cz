@@ -1,13 +1,13 @@
 ---
-title: "Mobilní pracovní prostor Můj tým"
-description: "Toto téma obsahuje informace o mobilním pracovním prostoru Můj tým, ve kterém si manažeři mohou zobrazovat informace o přímých podřízených a dalších zaměstnancích. Kromě toho mohou podřízeným také poslat pochvalu."
+title: Mobilní pracovní prostor Můj tým
+description: Toto téma obsahuje informace o mobilním pracovním prostoru Můj tým, ve kterém si manažeři mohou zobrazovat informace o přímých podřízených a dalších zaměstnancích. Kromě toho mohou podřízeným také poslat pochvalu.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: fccbedea611228cc57531c89406f72a6664153c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d049c55a40761d0663e3d558b47b4840e5db9bf1
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346909"
 ---
-
 # <a name="my-team-mobile-workspace"></a>Mobilní pracovní prostor Můj tým
 
 [!include [banner](../includes/banner.md)]
@@ -78,7 +77,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Přihlaste se do mobilní aplikace
 1.  Spusťte aplikaci na svém mobilním zařízení.
-2.  Zadejte adresu URL aplikace Microsoft Dynamics 365.
+2.  Zadejte URL adresu Microsoft Dynamics 365.
 3.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 4.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
@@ -99,4 +98,3 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 1.  Vyberte možnost **Udělit pochvalu**. 
 1. Zadejte text pochvaly, kterou chcete odeslat. 
 1. Vyberte **Hotovo**.
-

@@ -1,13 +1,13 @@
 ---
-title: "Strukturované rozpisy prací"
-description: "Strukturovaný rozpis prací (WBS) je popis práce, která bude provedena v projektu. Jedná se o hierarchii úkolů, která představuje pochopení projektového týmu v souvislosti se složením práce a velikostí, náklady a dobou trvání jednotlivých součástí nebo úkolů."
+title: Strukturované rozpisy prací
+description: Strukturovaný rozpis prací (WBS) je popis práce, která bude provedena v projektu. Jedná se o hierarchii úkolů, která představuje pochopení projektového týmu v souvislosti se složením práce a velikostí, náklady a dobou trvání jednotlivých součástí nebo úkolů.
 author: KimANelson
 manager: AnnBe
 ms.date: 06/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df4bc39f8df80580261102941712622ed59262bd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358892"
 ---
-
 # <a name="work-breakdown-structures"></a>Strukturované rozpisy prací
 
 [!include [banner](../includes/banner.md)]
@@ -106,7 +105,7 @@ V současné době nelze měnit číslování struktury WBS.
 Odhad plánu je obvykle druhým krokem při vytváření struktury WBS. Doporučujeme provést odhad plánu po vytvoření úkolů. Stránka **Strukturovaný rozpis prací** v aplikaci Finance and Operations má dvě části. Horní podokno je určeno pro odhad plánu a dolní podokno obsahuje kartu **Odhadované náklady a výnosy**, kterou lze použít pro odhady nákladů. 
 **Závislosti úkolu** Ve WBS můžete vytvořit vztahy předchůdců mezi úkoly. Když přiřadíte předcházející úkoly k úkolu, lze tento úkol zahájit až po dokončení všech jeho předchůdců. Plánované datum zahájení úkolu je automaticky nastaveno na poslední datum všech jeho předchůdců. 
 
-**Plánování úkolů v aplikaci Microsoft Dynamics 365 for Finance and Operations** Následující faktory určují plánování úkolů listového uzlu:
+**Plánování úkolů v aplikaci Microsoft Dynamics 365 for Finance and Operations** Následující faktory určují plánování úkolů listového uzlu:
 
 -   Předchůdci
 -   Úsilí
@@ -314,7 +313,6 @@ Výdaje a náklady na zboží lze vytvořit ručně, stejně jako je tomu u stru
 Klepnutím na **Opravit všechny chyby plánování** můžete opravit všechny chyby plánování současně. 
 
 Případně můžete opravit chyby plánování jednotlivě, kliknutím na ikonu upozornění pro jednotlivé úkoly.
-
 
 
 

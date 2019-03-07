@@ -1,13 +1,13 @@
 ---
-title: "Nastavení platební karty, autorizace a záznam"
-description: "Tento článek podává přehled o autorizaci platební karty v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o způsobu nastavení platební služby, přidání platební karty do prodejní objednávky a anulování ověření."
+title: Nastavení platební karty, autorizace a záznam
+description: Tento článek přehled autorizace platební karty v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o způsobu nastavení platební služby, přidání platební karty do prodejní objednávky a anulování ověření.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7a1d3c73e4305375ddf356b93b9502b0255df99b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a6354563fdebff901498f1cd6caed3aedae668b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342999"
 ---
-
 # <a name="credit-card-setup-authorization-and-capture"></a>Nastavení platební karty, autorizace a záznam
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-Tento článek podává přehled o autorizaci platební karty v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o způsobu nastavení platební služby, přidání platební karty do prodejní objednávky a anulování ověření.
+Tento článek přehled autorizace platební karty v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o způsobu nastavení platební služby, přidání platební karty do prodejní objednávky a anulování ověření.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Nastavení služby pro platby platební kartou
 ------------------------------------------
@@ -78,7 +77,6 @@ Pokud dodáváte část objednávky, je zachycena částka z dílčí objednávk
 
 ## <a name="voiding-an-authorization"></a>Anulování autorizace 
 Pro anulování autorizace platební karty můžete změnit metodu platby na jinou metodu, která nemá typ Platební karta.
-
 
 
 

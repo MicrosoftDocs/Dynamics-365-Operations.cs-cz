@@ -1,13 +1,13 @@
 ---
-title: "Obsah Power BI pro rozvoj zaměstnanců"
-description: "Toto téma popisuje obsah Power BI pro rozvoj zaměstnanců."
+title: Obsah rozvoje zaměstnanců v Power BI
+description: Toto téma popisuje obsah rozvoje zaměstnanců v Power BI.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,22 +15,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347162"
 ---
-
-# <a name="employee-development-power-bi-content"></a>Obsah Power BI pro rozvoj zaměstnanců
+# <a name="employee-development-power-bi-content"></a>Obsah rozvoje zaměstnanců v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah Microsoft Power BI – **Rozvoj zaměstnance**.
+Toto téma popisuje obsah **Rozvoj zaměstnanců** v Power BI.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
-Sestavy, které jsou součástí obsahu Power BI **Rozvoj zaměstnance**, obsahují grafy a tabulky s dalšími informacemi. Následující tabulka obsahuje popis daných sestav.
+Sestavy, které jsou součástí obsahu **Rozvoj zaměstnanců** v Power BI, obsahují grafy a tabulky s dalšími informacemi. Následující tabulka obsahuje popis daných sestav.
 
 | Sestava                        | Obsah |
 |-------------------------------|----------|
@@ -42,7 +41,7 @@ Sestavy, které jsou součástí obsahu Power BI **Rozvoj zaměstnance**, obsahu
 | Analýza hodnocení výkonnosti   | Zaměstnanci s nejnižším a nejvyšším hodnocením podle druhu práce, hodnocení zaměstnanců podle oddělení, zaměstnanci podle typu pozice a hodnocení a nejvyšší a nejnižší hodnocení podle umístění |
 | Analýza výkonnosti zaměstnanců | Hodnocení zaměstnanců u vybraného hodnocení podle manažera |
 
-Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 
@@ -70,4 +69,3 @@ Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídi
 | Analýza dovedností zaměstnanců  | Certifikace, úroveň, datum úrovně a dovednost                                                                    | Jméno zaměstnance, dovednost |
 | Výkonnost              | Ohodnocení, popis a model ohodnocení                                                                      | Aktuální zaměstnanec, aktuální pozice, trend zaměstnance, upřednostňované dovednosti, minulá pozice, trend pozice, ukončený pracovní poměr |
 | Dovednost                    | Dovednosti, typ dovedností a ohodnocení                                                                              | Analýza dovedností zaměstnanců, upřednostňovaná dovednost |
-

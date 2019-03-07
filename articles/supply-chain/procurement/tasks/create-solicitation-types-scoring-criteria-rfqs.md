@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření typů oslovení a kritérií hodnocení pro požadavky na nabídku"
-description: "Tato příručka popisuje způsob vytvoření typu oslovení a jeho přiřazení k metodě hodnocení."
+---
+title: Vytvoření typů oslovení a kritérií hodnocení pro požadavky na nabídku
+description: Tato příručka popisuje způsob vytvoření typu oslovení a jeho přiřazení k metodě hodnocení.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 14fd7d0bfa17427883f97c5e0a72044016d4965e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 095855d552d228375635bdbaa9fca37c47a3b952
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344609"
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a>Vytvoření typů oslovení a kritérií hodnocení pro požadavky na nabídku
 
@@ -51,5 +51,4 @@ Tato příručka popisuje způsob vytvoření typu oslovení a jeho přiřazení
 7. V poli Metoda hodnocení zadejte nebo vyberte hodnotu.
 8. Klikněte na tlačítko OK.
 9. Zavřete stránku.
-
 

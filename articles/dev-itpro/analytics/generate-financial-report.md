@@ -1,13 +1,13 @@
 ---
-title: "Generovat finanční sestavy"
-description: "Toto téma obsahuje informace o generování finančních sestav."
+title: Generovat finanční sestavy
+description: Toto téma obsahuje informace o generování finančních sestav.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340883"
 ---
-
 # <a name="generate-financial-reports"></a>Generovat finanční sestavy
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Při generování sestavy se používají možnosti, které jste zadali na kart�
 
 ## <a name="generate-a-financial-report"></a>Generovat finanční sestavu
 
-Chcete-li generovat finanční sestavu pomocí aplikace Microsoft Dynamics 365 for Finance and Operations, přejděte na **Hlavní kniha** \> **Dotazy a sestavy** \> **Finanční sestavy**.
+Chcete-li generovat finanční sestavu s aplikací Microsoft Dynamics 365 for Finance and Operations, přejděte na **Hlavní kniha** \> **Dotazy a sestavy** \> **Finanční sestavy**.
 
 - Zvolte sestavu, kterou chcete generovat, a klikněte **Generovat**.
 - Vyplňte pole **Datum sestavy** a klikněte na tlačítko **OK**.
@@ -115,7 +114,7 @@ Chybějící účty se určují použitím nejnižší a nejvyšší hodnoty z d
 > [!TIP]
 > Pro účely ověření doporučujeme tento proces spustit před generováním měsíčních sestav a při vytváření nových stavebních bloků.
 
-Sestavy, které mají rozsahy hodnot, mají menší pravděpodobnost chybějících účtů. Pokud je to možné, používejte rozsahy ve stavebních blocích, aby byly zahrnuty nově vytvořené účty. Pokud je jakákoli definice sestavy nastavena na hodnotu společnosti @ANY, můžete se přihlásit k určité společnosti a spustit analýzu chybějících účtů pro danou společnost.
+Sestavy, které mají rozsahy hodnot, mají menší pravděpodobnost chybějících účtů. Pokud je to možné, používejte ve stavebních blocích rozsahy. Budou tak do nich zahrnuty i nově vytvářené účty. Pokud je nějaká definice sestavy nastavena na společnost @ANY, můžete se k dané společnosti přihlásit a spustit pro ni analýzu chybějících účtů.
 
 > [!NOTE]
 > Pokud byla přidána nová společnost, je nutné přidat novou společnost do stromů výkaznictví ve všech existujících sestavách, jinak společnost nebude zahrnuta do analýzy chybějících účtů.
@@ -158,4 +157,3 @@ Po spuštění analýzy chybějícího účtu jsou k dispozici následující kl
 [Finanční výkaznictví](financial-reporting-intro.md)
 
 [Rozhraní Návrháře sestav](report-designer-interface.md)
-

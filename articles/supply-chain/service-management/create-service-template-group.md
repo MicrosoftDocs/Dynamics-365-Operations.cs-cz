@@ -1,31 +1,30 @@
 ---
-title: "Vytvoření skupiny šablon servisu"
-description: "Pomocí skupin servisních šablon lze řadit a filtrovat servisní šablony."
+title: Vytvoření skupiny šablon servisu
+description: Pomocí skupin servisních šablon lze řadit a filtrovat servisní šablony.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: smatemplategroup
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2c3af831cd9433bdc6180811a3af82d3fbbf8c5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 4ea10e4c0fbfd21538bba16d2b01deb3e4b3a10d
-ms.openlocfilehash: 93d768577afe14ac49f57e3c207e79bbe3f080fd
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/20/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348220"
 ---
-
 # <a name="create-a-service-template-group"></a>Vytvoření skupiny šablon servisu  
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,6 @@ Pomocí skupin servisních šablon lze řadit a filtrovat servisní šablony.
 3. Zadejte ID skupiny, popis a případně nadřazenou skupinu šablon servisu.
 4. Uložte skupinu šablon servisu.
 5. Nastavte posuvník **Stromová struktura** na **Ano** pro otevření stromové struktury a zobrazení skupin šablon servisu buď jako hierarchii ve formě stromového zobrazení nebo ve formě přehledu.
-
 
 
 

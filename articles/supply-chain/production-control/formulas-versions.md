@@ -1,32 +1,31 @@
 ---
-title: "Receptury a verze receptury"
-description: "Toto téma obsahuje informace o recepturách a verzích receptur. Receptura definuje materiály, suroviny a výsledky konkrétního procesu v procesu výroby. Receptury se používají k plánování a výrobě produktů ve výrobním procesu."
+title: Receptury a verze receptury
+description: Toto téma obsahuje informace o recepturách a verzích receptur. Receptura definuje materiály, suroviny a výsledky konkrétního procesu v procesu výroby. Receptury se používají k plánování a výrobě produktů ve výrobním procesu.
 author: cvocph
 manager: AnnBe
 ms.date: 09/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bbffc298ff5d2442092f8f0c987b7e79a7934a84
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4475695b1a00213ab7e3b5060fd38cc71883d2bd
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350106"
 ---
-
 # <a name="formulas-and-formula-versions"></a>Receptury a verze receptury
 
 [!include [banner](../includes/banner.md)]
@@ -72,4 +71,3 @@ Poměrná funkce je k dispozici pouze tehdy, když jsou všechny komponenty polo
 
 ## <a name="use-step-consumption"></a>Použití spotřeby kroku
 Spotřeba kroku eliminuje požadavek, kdy je nutné zadat množství suroviny na kartě **Řádek receptury**. Namísto toho je spotřeba kroku nakonfigurována tak, aby měla hodnoty **Od řady** a **Množství**. Je zvolena informace ze spotřeby kroku na záznam řady, který splňuje množství na dávkové objednávce. Spotřeba kroku je užitečná, když není poměr spotřeby lineární s ohledem na velikost dávkové objednávky a pouze navyšuje požadavek při dosažení určité prahové hodnoty množství. Chcete-li povolit tuto funkci pro novou recepturu, ve skupině **Výpočet spotřeby** změňte nastavení receptury pro použitelnou surovinu ze **Standardní** na **Krok**. Tuto metodu spotřeby určíte na kartě **nastavení** stránky **Řádek receptury**.
-

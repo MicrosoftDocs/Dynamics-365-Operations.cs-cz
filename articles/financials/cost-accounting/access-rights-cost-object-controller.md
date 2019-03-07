@@ -1,32 +1,31 @@
 ---
-title: "Definování přístupových práv pro kontrolory objektů nákladů"
-description: "Toto téma poskytuje informace o přístupových právech pro kontrolory objektů nákladů."
+title: Definování přístupových práv pro kontrolory objektů nákladů
+description: Toto téma poskytuje informace o přístupových právech pro kontrolory objektů nákladů.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 290b16eeb99ac7ddb9b552b289215c99a0451660
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1cac3c3b724dda4ab39a65aa5221eda427767eb8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355534"
 ---
-
 # <a name="access-rights-of-a-cost-object-controller"></a>Přístupová práva kontrolora objektu nákladů
 
 [!include [banner](../includes/banner.md)]
@@ -96,7 +95,7 @@ Nastavení pro hierarchii přístupového seznamu se používají ke kontrole da
 - Microsoft Power BI:
 
     - Data zobrazená ve vizualizacích Power BI
-    - Vizualizace dat Power BI, vložené do klienta Microsoft Dynamics 365 for Finance and Operations
+    - Vizualizace dat Power BI, které jsou vloženy do klienta Microsoft Dynamics 365 for Finance and Operations
 
 > [!IMPORTANT]
 > - Než může hierarchie přístupového seznamu ovlivnit data v Power BI, musí být spárována hierarchie přístupového seznamu a zabezpečení na úrovni řádku v Power BI. Další informace naleznete v tématu [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
@@ -107,4 +106,3 @@ Další zdroje
 - [Pracovní prostor kontroly nákladů](cost-control-workspace.md)
 - [Hierarchie dimenzí](dimension-hierarchy.md)
 - [Nastavení zabezpečení pro balíček obsahu nákladového účetnictví](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
-

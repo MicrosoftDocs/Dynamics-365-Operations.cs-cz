@@ -1,13 +1,13 @@
---- 
-title: "Zpracování upomínek"
-description: "Tato procedura popisuje způsob tvorby, tisku a zaúčtování upomínek."
+---
+title: Zpracování upomínek
+description: Tato procedura popisuje způsob tvorby, tisku a zaúčtování upomínek.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 12/04/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
+ms.openlocfilehash: 8a3f74d2891c050294e089eae14ba2386449d7c9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
-ms.openlocfilehash: 33d9fd62a780ab109474eefa9e322a9c529f9e72
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/06/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358846"
 ---
 # <a name="process-collection-letters"></a>Zpracování upomínek
 
@@ -80,4 +80,3 @@ Pokud zahrnete transakce a upomínky do transakcí, které budou zahrnuty v upom
 Pokud chcete ignorovat platby a dobropisy pro výpočet kódu upomínky, postupujte následovně:
 1. Přejděte na **Kredit a inkasa > Nastavení > Parametry závazků** a klikněte na kartu **Inkasa**. 
 2. Změňte hodnotu možnosti **ignorovat platby a dobropisy pro výpočet kódu upomínky na** **Ano**.
-

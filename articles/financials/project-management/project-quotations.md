@@ -1,13 +1,13 @@
 ---
-title: "Nabídky projektu"
-description: "Tento článek představuje koncept nabídky projektu, který můžete použít k předložení atraktivní nabídky odběrateli v rámci prvního kroku fáze projektu. Nabídka projektu může obsahovat položky a služby, základní kontaktní údaje, zvláštní obchodní ujednání a slevy, případně daně a příplatky."
+title: Nabídky projektu
+description: Tento článek představuje koncept nabídky projektu, který můžete použít k předložení atraktivní nabídky odběrateli v rámci prvního kroku fáze projektu. Nabídka projektu může obsahovat položky a služby, základní kontaktní údaje, zvláštní obchodní ujednání a slevy, případně daně a příplatky.
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesQuotationProjTable
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,28 +18,26 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bdfb1b0702ed59127e2e26589ea8e44837e81756
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c7de1d7e57a2a32c339bc576f929958b9de91fcc
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343229"
 ---
-
 # <a name="project-quotations"></a>Nabídky projektu
 
 [!include [banner](../includes/banner.md)]
 
 Tento článek představuje koncept nabídky projektu, který můžete použít k předložení atraktivní nabídky odběrateli v rámci prvního kroku fáze projektu. Nabídka projektu může obsahovat položky a služby, základní kontaktní údaje, zvláštní obchodní ujednání a slevy, případně daně a příplatky. 
 
-Schopnost sledovat, kontrolovat a řídit příležitosti projektových nabídek a objednávek přestavuje důležitou část projektového řízení. Různé nástroje v aplikaci Microsoft Dynamics 365 for Finance and Operations vám mohou s těmito úkoly pomoci. Například správné definice referenčních dat (typy nabídek, původ nabídky, prognóza a pravděpodobnost nabídky) pomáhají analyzovat příležitosti. Tyto nástroje lze využít k uspořádání důvodů, proč byla nabídka projektu úspěšná nebo neúspěšná, a ke zjištění potenciální hodnoty nabídky. 
+Schopnost sledovat, kontrolovat a řídit příležitosti projektových nabídek a objednávek přestavuje důležitou část projektového řízení. S tímto úkolem vám mohou pomoci různé nástroje aplikace Microsoft Dynamics 365 for Finance and Operations. Například správné definice referenčních dat (typy nabídek, původ nabídky, prognóza a pravděpodobnost nabídky) pomáhají analyzovat příležitosti. Tyto nástroje lze využít k uspořádání důvodů, proč byla nabídka projektu úspěšná nebo neúspěšná, a ke zjištění potenciální hodnoty nabídky. 
 
 Zadejte do nabídky projektu služby, základní kontaktní údaje, zvláštní obchodní ujednání a slevy, případně odhadované daně a příplatky pro projekt. Můžete také vybrat aktivity nebo úlohy projektu a vytvořit hierarchii a dílčí úkoly. Pro každou aktivitu můžete zadat podrobnosti o načasování a době trvání aktivity a také o dovednostech a zkušenostech, které jsou požadovány pro pracovníky, kteří provádějí aktivitu. 
 
 Nabídka projektu je nezávazný odhad práce, která musí být provedena. Pokud jsou ale informace zkopírovány do nabídky projektu, který je přidružený k projektové smlouvě, stanou se tyto informace součástí závazné smlouvy mezi dvěma stranami. 
 
 Pokud odběratel schválí nabídku projektu, můžete zkopírovat informace do nabídky projektu pro projekt. Můžete také současně zkopírovat informace o nabídce projektu do prognózy projektu.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Integrace plánování rozpočtu s jinými moduly"
-description: "Plány rozpočtu lze vytvořit z několika různých zdrojů. Základní prvky periodického zpracování jsou stejné pro všechny zdroje."
+title: Integrace plánování rozpočtu s jinými moduly
+description: Plány rozpočtu lze vytvořit z několika různých zdrojů. Základní prvky periodického zpracování jsou stejné pro všechny zdroje.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 97c33a222d31e690d2a395f972c0ddc4b89e8fdb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353027"
 ---
-
 # <a name="budget-planning-integration-with-other-modules"></a>Integrace plánování rozpočtu s jinými moduly
 
 [!include [banner](../includes/banner.md)]
@@ -145,7 +144,6 @@ Vyberte řádek a klepnutím na tlačítko **Řádky plánu rozpočtu** spusťte
 Ke spuštění těchto dotazů můžete použít tlačítka **Prognóza dodávky** a **Prognóza poptávky**. V obou případech dotaz hledá řádky prognózy, které by mohly vytvořit řádky plánu rozpočtu. 
 
 Další sestavy, které jsou k dispozici, zahrnují sestavu **Pozice prognózy podle plánu rozpočtu**. Tato sestava je užitečná, pokud chcete určit, zda byla pozice správně přiřazena k plánům rozpočtu.
-
 
 
 

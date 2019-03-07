@@ -1,13 +1,13 @@
 ---
-title: "Definice řádku v návrháři finanční sestavy"
-description: "Definice řádku je součástí sestavy nebo stavebního bloku, který určuje obsah jednotlivých řádků ve finanční sestavě. Definici řádku lze kombinovat s definicemi sloupců, definicemi stromu výkaznictví a definicemi sestav a vytvořit tak skupinu stavebních bloků, které může používat více společností."
+title: Definice řádku v návrháři finanční sestavy
+description: Definice řádku je součástí sestavy nebo stavebního bloku, který určuje obsah jednotlivých řádků ve finanční sestavě. Definici řádku lze kombinovat s definicemi sloupců, definicemi stromu výkaznictví a definicemi sestav a vytvořit tak skupinu stavebních bloků, které může používat více společností.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "350428"
 ---
-
 # <a name="row-definitions-in-financial-report-designer"></a>Definice řádku v návrháři finanční sestavy
 
 [!include [banner](../includes/banner.md)]
@@ -158,9 +157,9 @@ Můžete vytvořit a upravit styly písem pro sestavy. Můžete také použít t
 
 ### <a name="format-row-text"></a>Formátování textu řádků
 
-Formátování určené v definici řádku přepíše formátování určené v definici sloupce a definici sestavy. Pomocí ovládacích prvků na panelu nástrojů formátování můžete upravit formát textu. Jedná se o standardní ovládací prvky systému Microsoft Windows.
+Formátování určené v definici řádku přepíše formátování určené v definici sloupce a definici sestavy. Pomocí ovládacích prvků na panelu nástrojů formátování můžete upravit formát textu. Tyto ovládací prvky jsou standardní ovládací prvky systému Microsoft Windows.
 
-1. V Návrháři sestav otevřete definici řádku k úpravě.
+1. V Návrháři sestav otevřete definici řádků, kterou chcete změnit.
 2. Vyberte buňky k formátování. Chcete-li vybrat více buněk, podržte klávesu Ctrl a vyberte buňky.
 3. Na panelu nástrojů klikněte na tlačítko formátu, který chcete použít. Chcete-li například odsadit řádek, vyberte ho a klikněte na tlačítko **Zvětšit odsazení** ![Zvětšit odsazení](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zvětšit odsazení") na panelu nástrojů.
 
@@ -189,4 +188,3 @@ K usnadnění zobrazování sloupců, se kterými pracujete v definici řádku, 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
-

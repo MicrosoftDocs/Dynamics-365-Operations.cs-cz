@@ -1,13 +1,13 @@
 ---
-title: "Nastavení modelu konfigurace produktu"
-description: "Tento článek popisuje postup nastavení a vytvoření modelu konfigurace produktu."
+title: Nastavení modelu konfigurace produktu
+description: Tento článek popisuje postup nastavení a vytvoření modelu konfigurace produktu.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10faa26a53b026a70487124d696b0313d1f5814d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8504eb789b0d449cf2e29d4314d189dc0b8a6b43
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360663"
 ---
-
 # <a name="set-up-a-product-configuration-model"></a>Nastavení modelu konfigurace produktu
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Tento článek popisuje postup nastavení a vytvoření modelu konfigurace produ
 | Testování modelu konfigurace produktu.                         | Testujte model konfigurace produktu ze stránky **Podrobnosti modelu produktu s konfigurací založenou na omezeních** nebo **Seznam modelů konfigurace produktu**. Testování modelů konfigurace produktu simuluje proces konfigurace modelu výrobku, ke kterému dochází během zpracování objednávky.                                                                                                |
 | Vytvoření šablony modelů konfigurace produktu.                | Vytvořte šablonu modelu konfigurace produktu na stránce **Šablony konfigurací**. Konfigurační šablona obsahuje hodnoty pro atributy v modelu konfigurace produktu. Vyberte hodnoty atributu na stránce **Řádek konfigurace**. Můžete se rozhodnout načíst šablonu konfigurace modelu výrobku při konfiguraci modelu výrobku.                                                   |
 | Konfigurace položky.                                          | Modely konfigurace produktu lze konfigurovat z prodejní objednávky, prodejní nabídky, nákupní objednávky nebo výrobní zakázky.                                                                                                                                                                                                                                                                           |
-
 
 
 

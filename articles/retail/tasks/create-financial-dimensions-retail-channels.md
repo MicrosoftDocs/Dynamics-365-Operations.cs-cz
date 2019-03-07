@@ -1,13 +1,13 @@
---- 
-title: "Vytváření finančních dimenzí pro maloobchodní sítě a konfigurace hodnot dimenzí v obchodech"
-description: "Tato procedura vás provede vytvořením finanční dimenze maloobchodního kanálu s hodnotami dimenzí a postupem pro konfiguraci hodnot finančních dimenzí v maloobchodních prodejnách."
+---
+title: Vytváření finančních dimenzí pro maloobchodní sítě a konfigurace hodnot dimenzí v obchodech
+description: Tato procedura vás provede vytvořením finanční dimenze maloobchodního kanálu s hodnotami dimenzí a postupem pro konfiguraci hodnot finančních dimenzí v maloobchodních prodejnách.
 author: jashanno
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: cf32d17a36fd699141ce697d23e20b2eb5cbfa54
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354522"
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a>Vytváření finančních dimenzí pro maloobchodní sítě a konfigurace hodnot dimenzí v obchodech
 
@@ -54,5 +54,4 @@ Tato procedura vás provede vytvořením finanční dimenze maloobchodního kan�
 23. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 24. Klikněte na odkaz na vybraném řádku v seznamu.
 25. Klikněte na položku Uložit.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Mobilní pracovní prostor správy výdajů"
-description: "Toto téma obsahuje informace o mobilním pracovním prostoru Správa výdajů. Tento pracovní prostor umožňuje uživatelům zdokumentovat a odeslat účtenku, aby ji mohli připojit později k sestavě výdajů. Uživatelé mohou také rychle vytvořit řádek výdajů pomocí přiloženého příjmu a vytvořit a spravovat svá vyúčtování výdajů."
+title: Mobilní pracovní prostor správy výdajů
+description: Toto téma obsahuje informace o mobilním pracovním prostoru Správa výdajů. Tento pracovní prostor umožňuje uživatelům zdokumentovat a odeslat účtenku, aby ji mohli připojit později k sestavě výdajů. Uživatelé mohou také rychle vytvořit řádek výdajů pomocí přiloženého příjmu a vytvořit a spravovat svá vyúčtování výdajů.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 6ec9966826830e9ceaa3ed7e1b06e2cb89e8a780
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344333"
 ---
-
 # <a name="expense-management-mobile-workspace"></a>Pracovnímu prostor správy výdajů
 
 [!include [banner](../includes/banner.md)]
@@ -42,11 +41,11 @@ Mnoho organizací vyžaduje, aby byla připojena k sestavě cestovních nebo obc
 
 Konkrétně mobilní pracovní prostor **Správa výdajů** uživatelům umožňuje provádění těchto úloh:
 
-- Pořiďte fotografii účtenky a odešlete ji do aplikace Microsoft Dynamics 365 for Finance and Operations. Následně můžete připojit uvedenou fotografii k sestavě výdajů později.
+- Pořiďte fotografii příjemky a odešlete ji do Microsoft Dynamics 365 for Finance and Operations. Následně můžete připojit uvedenou fotografii k sestavě výdajů později.
 - Odešlete soubor jako zdokumentovanou účtenku. Následně můžete připojit uvedený soubor k sestavě výdajů později.
 - Vytvořte nový řádek výdajů pomocí připojené účtenky. Později můžete přidat položku řádku k sestavě výdajů a odeslat ke schválení a refundaci.
 
-Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, můžete používat tyto funkce:
+Pokud používáte Microsoft Dynamics 365 for Finance and Operations, můžete také použít tyto funkce:
 
 - Vytvořte novou sestavu výdajů.
 - Transakce kreditních karet a další dříve vytvořené výdaje připojte k vyúčtování výdajů.
@@ -57,13 +56,13 @@ Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, m
 - Odešlete vyúčtování výdajů ke schválení a úhradě.
 - Schvalte nebo odmítněte vyúčtování výdajů, které jste přiřadili schvalovateli.
 
-## <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Předpoklady
 Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations 
-Pokud je ve vaší organizaci nasazena aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, správce systému musí mobilní pracovní prostor **Správa výdajů** publikovat. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Předpoklady při použití Microsoft Dynamics 365 for Finance and Operations 
+Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Finance and Operations , správce systému musí publikovat mobilní pracovní prostor **Správa výdajů**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Předpoklady při použití Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform Update 3 nebo vyšší
 Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější, správce systému musí dokončit následující předpoklady. 
 
 <table>
@@ -80,7 +79,7 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 <td>Správce systému</td>
 <td>KB 4019015 je X ++ aktualizace nebo oprava hotfix metadat obsahující mobilní pracovní prostor <strong>Správa výdajů</strong>. Pro implementaci KB 4019015 musí správce systému provést tyto kroky:
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Stažení opravy hotfix metadat ze služby Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Stažení oprav hotfix z Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Nainstalujte opravu hotfix metadat</a>.</li>
 <li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Vytvořte nasaditelný balíček</a>, který obsahuje modely <strong>ApplicationSuite</strong> a <strong>ExpenseMobile</strong> a odešlete ho do služby LCS.</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Použití nasaditelného balíčku</a></li>
@@ -94,7 +93,7 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Operations
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci Dynamics 365 for Operations
 Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 - [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
@@ -243,4 +242,3 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 22. Vyberte **Odeslat**.
 23. Zadejte libovolné komentáře pro schvalujícího.
 24. Vyberte **Hotovo**.
-

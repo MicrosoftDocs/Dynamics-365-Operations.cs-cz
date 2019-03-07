@@ -1,13 +1,13 @@
---- 
-title: "Nastavení formátu platebního dokladu pro faktury projektů"
-description: "Společnosti obvykle přiřadí vytištěné platební doklady k fakturám, aby poskytli asistenci odběratelům a určili platební odkaz pro zaúčtování a vyrovnání."
+---
+title: Nastavení formátu platebního dokladu pro faktury projektů
+description: Společnosti obvykle přiřadí vytištěné platební doklady k fakturám, aby poskytli asistenci odběratelům a určili platební odkaz pro zaúčtování a vyrovnání.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b365585e884749bb73f8ba9054e446f210e10f37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 9700571110a1b488e250dd8ee7b8c5c8f15cbc01
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345598"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Nastavení formátu platebního dokladu pro faktury projektů
 
@@ -65,5 +65,4 @@ Tato funkce je k dispozici pro právnické osoby, jejichž primární adresa je 
     * Žádné – Netisknout platební doklad. Tuto možnost vyberte, pokud je částka platby v jiné měně než Dánská koruna (DKK).   FIK 751 – Pokud chcete ručně napsat částku platby a datum splatnosti na platební doklad, vytiskněte platební doklad FIK 751.   FIK 752 – Vytiskněte platební doklad FIK 752, pokud máte v úmyslu použít počítačově generovaný platební doklad s předtištěnou částkou platby a datem splatnosti.  
 16. Klikněte na položku Uložit.
 17. Zavřete stránku.
-
 

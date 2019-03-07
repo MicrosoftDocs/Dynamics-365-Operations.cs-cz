@@ -1,13 +1,13 @@
 ---
-title: "Rozdělení generovaných souborů XML na základě velikosti souboru a množství obsahu"
-description: "Toto téma obsahuje informace o rozdělení generovaných souborů na základě velikost souboru a množství položek obsahu."
+title: Rozdělení generovaných souborů XML na základě velikosti souboru a množství obsahu
+description: Toto téma obsahuje informace o rozdělení generovaných souborů na základě velikost souboru a množství položek obsahu.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 8c3899d5c6602b3afe13b447b40f0b4dcc701448
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 0f13194575e2f19f585f09ffad99144c9a9fc3b1
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347093"
 ---
-
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Rozdělení generovaných souborů XML na základě velikosti souboru a množství obsahu
 
 [!include[banner](../includes/banner.md)]
@@ -49,4 +48,3 @@ Další informace o této funkci zobrazíte přehráním Průvodce záznamem úl
 [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 
 [Návrhář vzorců v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
-

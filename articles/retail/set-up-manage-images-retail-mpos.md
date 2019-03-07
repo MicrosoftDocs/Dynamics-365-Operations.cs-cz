@@ -1,13 +1,13 @@
 ---
-title: "Nastavení a správa obrázků pro Retail Modern POS (MPOS)"
-description: "Tento článek vysvětluje postup, který je součástí nastavení a správy obrázků pro různé entity, které jsou obsaženy v modulu Retail Modern POS (MPOS)."
+title: Nastavení a správa obrázků pro Retail Modern POS (MPOS)
+description: Tento článek vysvětluje postup, který je součástí nastavení a správy obrázků pro různé entity, které jsou obsaženy v modulu Retail Modern POS (MPOS).
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d2f4cc99ec239c4c35c44a226235d01e18d4185f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356730"
 ---
-
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Nastavení a správa obrázků pro Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
@@ -35,10 +34,10 @@ Tento článek vysvětluje postup, který je součástí nastavení a správy ob
 
 ## <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Nastavení základní adresy URL média a definování šablon média ke konfiguraci formátu adresy URL pro obrázek
 
-Obrázky zobrazené v Retail Modern POS (MPOS) musí být hostovány externě mimo aplikaci Microsoft Dynamics 365 for Retail. Standardně jsou umístěny v systému správy obsahu, sítě dodávky obsahu (CDN) nebo serveru médií. MPOS pak prostřednictvím přístupu k cílové adrese URL načte a zobrazí obrázky odpovídajících entit, jako jsou například výrobky a katalogy. K načtení těchto externě hostovaných obrázků MPOS je zapotřebí správný formát adresy URL pro obrázky. Požadovaný formát adresy URL pro obrázky lze konfigurovat pomocí nastavení hodnoty **základní adresy URL média** v kanálu profilu a používáním funkce **šablony definování médií** pro každou entitu. Standardní formát adresy URL pro podmnožinu entit je rovněž možné přepsat pomocí funkce **úpravy v aplikaci Excel**.
+Obrázky zobrazené v Retail Modern POS (MPOS) musí být hostovány externě mimo Microsoft Dynamics 365 for Retail. Standardně jsou umístěny v systému správy obsahu, sítě dodávky obsahu (CDN) nebo serveru médií. MPOS pak prostřednictvím přístupu k cílové adrese URL načte a zobrazí obrázky odpovídajících entit, jako jsou například výrobky a katalogy. K načtení těchto externě hostovaných obrázků MPOS je zapotřebí správný formát adresy URL pro obrázky. Požadovaný formát adresy URL pro obrázky lze konfigurovat pomocí nastavení hodnoty **základní adresy URL média** v kanálu profilu a používáním funkce **šablony definování médií** pro každou entitu. Standardní formát adresy URL pro podmnožinu entit je rovněž možné přepsat pomocí funkce **úpravy v aplikaci Excel**.
 
 > [!IMPORTANT]
-> V aktuální verzi aplikace Dynamics 365 for Retail již nelze nastavit formát adresy URL pomocí atributu **obrázku** XML pro MPOS ve **Výchozí** skupině atributů entit. Pokud jste obeznámeni s aplikací Microsoft Dynamics AX 2012 R3 a nyní používáte aktuální verzi aplikace Dynamics 365 for Retail, ujistěte se, že vždy používáte novou funkci **Definovat šablonu média** k nastavení obrázků. Není možné použít nebo upravit atribut **obrázku** ve **výchozím** skupině atributů pro všechny entity včetně produktů. Změny prováděné přímo ve **výchozí** skupině atributů pro obrázky se neodrazí. Tato možnost bude zakázána v budoucích verzích.
+> V aktuální verzi aplikace Dynamics 365 for Retail již nelze nastavit formát adresy URL pomocí atributu **Obrázek** XML pro MPOS ve **výchozí** skupině atributů entit. Pokud jste obeznámeni s aplikací Microsoft Dynamics AX 2012 R3 a nyní používáte aktuální verzi aplikace Dynamics 365 for Retail, ujistěte se, že vždy používáte novou funkci **Definovat šablonu média** k nastavení obrázků. Není možné použít nebo upravit atribut **obrázku** ve **výchozím** skupině atributů pro všechny entity včetně produktů. Změny prováděné přímo ve **výchozí** skupině atributů pro obrázky se neodrazí. Tato možnost bude zakázána v budoucích verzích.
 
 V následujících procedurách jsou obrázky nastaveny jako příklad pro entitu katalogu. Tyto postupy vám pomůžou zajistit, že správná cílová cesta obrázků je implicitně nastavena pro všechny obrázky katalogu používající obecnou cestu. Například jestliže jste externě nastavili server médií nebo CDN a chcete, aby se obrázky zobrazily v MPOS pro daný obchod, funkce **Definovat šablonu média** vám usnadní nastavení cesty umístění, kde MPOS může vyhledat a získávat obrázky.
 
@@ -63,7 +62,7 @@ V následujících procedurách jsou obrázky nastaveny jako příklad pro entit
 3. Na pevné záložce **Cesta média** zadejte zbývající cestu k místu obrázku. Cesta média podporuje **LanguageID** jako proměnnou. Například pro ukázková data můžete vytvořit složku **Katalogy** pro všechny katalogové obrázky na základní adrese URL médií pro váš serveru médií (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`) Můžete pak mít složku pro každý jazyk, jako je například en-US nebo fr-FR a zkopírovat příslušné obrázky do každé složky. Pokud nemáte různé obrázky pro různé jazyky, můžete vynechat proměnnou **LanguageID** ze své složkové struktury a poukázat přímo na složku katalogů, která bude obsahovat katalogové obrázky.
 
     > [!NOTE]
-    > Aktuální verze aplikace Dynamics 365 for Retail podporuje token **{LanguageId}** pro katalog, produkt a entity katalogu. (Token **{LanguageID}** není podporován pro odběratele a jednotky pracovníků, podle existujícího standardu, který byl platná od verze aplikace Microsoft Dynamics AX 6.x.)
+    > Poznámka: Aktuální verze aplikace Dynamics 365 for Retail podporuje token **{LanguageId}** pro entity katalog, produkt a kategorie. (Token **{LanguageID}** není podporován pro odběratele a jednotky pracovníků, podle existujícího standardu, který byl platná od verze aplikace Microsoft Dynamics AX 6.x.)
 
 4. Pro obrázky je formát názvu souboru pevně zakódován do názvu katalogu a nemůže být změněn. Z tohoto důvodu přejmenujte své obrázky, aby měly odpovídající katalogové názvy, abyste si zajistili, že je MPOS zpracovávají správně.
 5. V poli **Přípona souboru** vyberte očekávané přípony názvu souboru, v závislosti na typu obrázku, které máte. Například pro ukázková data jsou katalogové obrázky nastaveny na příponu .jpg. (Obrázkové soubory také přejmenujte tak, aby měly katalogové názvy.)
@@ -214,4 +213,3 @@ Obrázky katalogu, kategorie, zaměstnance a odběratelů, které musí být pou
 5. Postupujte podobně pro ostatní entity, jako je například kategorie, zaměstnanec a odběratel.
 
     [![offline2](./media/offline2.png)](./media/offline2.png)
-

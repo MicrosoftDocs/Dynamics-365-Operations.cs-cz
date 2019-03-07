@@ -1,13 +1,13 @@
 ---
-title: "Prognóza pozice"
-description: "Výdaje, které souvisejí s pracovníky, často tvoří velkou část nákladů organizace. Prognózy pozic vám umožní plánovat výdaje a zahrnut je do plánování rozpočtů."
+title: Prognóza pozice
+description: Výdaje, které souvisejí s pracovníky, často tvoří velkou část nákladů organizace. Prognózy pozic vám umožní plánovat výdaje a zahrnut je do plánování rozpočtů.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bcd7363ba50f1c3a20d9823333df65eab9868d67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356155"
 ---
-
 # <a name="position-forecasting"></a>Prognóza pozice
 
 [!include [banner](../includes/banner.md)]
@@ -216,7 +215,6 @@ Pro proces generování i proces výběru určuje počáteční datum na řádku
 Řádky plánu rozpočtu popisují zdroj částek rozpočtu (číslo pozice prognózy), ale nejsou propojeny. Proto změny v pozici prognózy se nezobrazují na řádku plánu rozpočtu, a změny na řádku plánu rozpočtu jsou zobrazeny v pozici prognózy. Pokud změníte pozici prognózy a chcete, aby aktualizace byly zahrnuty do plánu rozpočtu, je nutné znovu přenést pozici prognózy do plánu. Nezapomeňte však, že tento proces odebere všechny řádky, kterým je přiřazena tato pozice prognózy. Z tohoto důvodu všechny změny provedené v těchto řádcích budou odebrány. 
 
 Pokud chcete zobrazit, do kterých plánů rozpočtu byly zahrnuty pozice prognózy, lze vygenerovat hlášení **Pozice prognózy podle plánu rozpočtu**. U pozice prognózy případně můžete otevřít okno s fakty **Přidružené plány rozpočtu** a zobrazit plány.
-
 
 
 

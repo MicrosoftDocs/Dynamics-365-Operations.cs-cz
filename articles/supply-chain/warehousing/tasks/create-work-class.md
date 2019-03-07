@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření pracovní třídy"
-description: "Tento postup popisuje nastavení pracovní třídy."
+---
+title: Vytvoření pracovní třídy
+description: Tento postup popisuje nastavení pracovní třídy.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5def9be0966d65728ffb0897229c0d749e7e13a0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9a775366bdaecb59a375f245f7a4d17a659cab11
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356017"
 ---
 # <a name="create-a-work-class"></a>Vytvoření pracovní třídy
 
@@ -38,5 +38,4 @@ Tento postup popisuje nastavení pracovní třídy. Pracovní třídy se použí
 7. Zadejte hodnotu do pole Typ místa.
     * Pokud vyberete typ umístění, nastaví se omezení s ohledem na to, kde je možné položky umístit poté, co byly vyskladněny. Toto nastavení se používá, když se směrnice umístění pokusí o překlad umístění nebo když pracovník skladu ručně zadá umístění pro položku nabídky mobilního zařízení.  
 8. Zavřete stránku.
-
 

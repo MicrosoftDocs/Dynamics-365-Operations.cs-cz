@@ -1,13 +1,13 @@
 ---
-title: "Spuštění výrobní zakázky"
-description: "Tento postup ukazuje, jak začít výrobní zakázku v dílenském řízení."
+title: Spuštění výrobní zakázky
+description: Tento postup ukazuje, jak začít výrobní zakázku v dílenském řízení.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f83091a9f3e96a9176860bd16fa5969507488a25
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
-ms.openlocfilehash: 3b5657e5eb2719702eae3a3c5178b3a04f7545e3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/06/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346219"
 ---
 # <a name="start-a-production-order"></a>Spuštění výrobní zakázky
 
@@ -70,4 +70,3 @@ Tento postup ukazuje, jak začít výrobní zakázku v dílenském řízení. V 
 7. Klikněte na položku Zaúčtovat.
 8. Klikněte na tlačítko OK.
     * V deníku karet postupu je zaznamenáván čas strávený na jednotlivých operacích. Může být rovněž uvedeno dobré a chybné množství.  
-

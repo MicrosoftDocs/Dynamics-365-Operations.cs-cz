@@ -1,13 +1,13 @@
 ---
-title: "Mobilní pracovní prostor dodavatelské spolupráce"
-description: "Toto téma obsahuje informace o mobilním pracovním prostoru Spolupráce dodavatele Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech."
+title: Mobilní pracovní prostor dodavatelské spolupráce
+description: Toto téma obsahuje informace o mobilním pracovním prostoru Spolupráce dodavatele Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech.
 author: mkirknel
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: df27ff3477443611278436a680d70ea81a21763e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 83fcf1d0432d5afa71d6f9d7d22cea5a583777bf
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358639"
 ---
-
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilní pracovní prostor dodavatelské spolupráce
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Toto téma obsahuje informace o mobilním pracovním prostoru **Spolupráce doda
 Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Microsoft Dynamics 365 for Unified Operations.
 
 ## <a name="overview"></a>Přehled 
-Mobilní pracovní prostor **Spolupráce dodavatele** informuje dodavatele o nových nákupních objednávkách, aby mohli prohlížet nákupní objednávky a reagovat na ně pomocí webového klienta aplikace Microsoft Dynamics 365 for Finance and Operations. 
+Mobilní pracovní prostor **Dodavatelská spolupráce** informuje dodavatele o nových nákupních objednávkách. Dodavatelé si je mohou prohlížet a reagovat na ně pomocí webového klienta Microsoft Dynamics 365 for Finance and Operations. 
 
 >[!NOTE]
 > Mobilní pracovní prostor slouží jako doplněk webového rozhraní dodavatelské spolupráce, nikoli jako jeho náhrada. 
@@ -57,14 +56,14 @@ Mobilní pracovní prostor **Spolupráce dodavatele** umožňuje dodavateli prov
 -   zobrazit informace o kontaktní osobě, která je registrován pro účet dodavatele. (Tato úloha vyžaduje další roli zabezpečení).
 -   prohlížet si informace o požadavcích uživatele, které odeslal dodavatel a sledovat jejich stav. (Tato úloha vyžaduje další roli zabezpečení).
 
-## <a name="prerequisites"></a>Požadavky
-Předpoklady jsou různé podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
+## <a name="prerequisites"></a>Předpoklady
+Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations 
-Pokud je ve vaší organizaci nasazena aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, správce systému musí mobilní pracovní prostor **Spolupráce dodavatele** publikovat. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Předpoklady při použití Microsoft Dynamics 365 for Finance and Operations 
+Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Finance and Operations , správce systému musí publikovat mobilní pracovní prostor **Spolupráce dodavatelů**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform 3 nebo novější
-Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform 3 nebo novější, správce systému musí dokončit následující předpoklady. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Předpoklady při použití Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform Update 3 nebo vyšší
+Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform update 3 nebo novější, správce systému musí dokončit následující předpoklady. 
 
 <table>
 <thead>
@@ -76,11 +75,11 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 </thead>
 <tbody>
 <tr class="odd">
-<td>Pokud používáte aktualizace platformy 3 musí být implementován článek KB 3216943.</td>
+<td>Pokud používáte aktualizace platformy 3, musí být implementován článek KB 3216943.</td>
 <td>Správce systému</td>
-<td>KB 3216943 je binární aktualizace, která je vyžadována, pokud používáte aktualizace platformy 3. Pro implementaci tohoto KB musí správce systému provést tyto kroky:
+<td>KB 3216943 je binární aktualizace, která je vyžadována, pokud používáte aktualizaci platformy 3. Pro implementaci tohoto KB musí správce systému provést tyto kroky:
 <ol>
-<li>Stáhněte KB 3216943 z webu Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li>Stáhněte si KB 3216943 ze služby Microsoft Dynamics Lifecycle Services (LCS).</li>
 <li>Nainstalovat binární aktualizaci, která je dodána jako balíček s možností nasazení. Informace o použití nasaditelného balíčku naleznete v tématu <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Použití nasaditelného balíčku</a>.</li>
 </ol></td>
 </tr>
@@ -120,7 +119,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Přihlaste se do mobilní aplikace
 1.  Spusťte aplikaci na svém mobilním zařízení.
-2.  Zadejte adresu URL aplikace Microsoft Dynamics 365.
+2.  Zadejte URL adresu Microsoft Dynamics 365.
 4.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 5.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
@@ -171,4 +170,3 @@ Jsou zobrazeny všechny změny, které byly provedeny v odpovědi na řádku obj
 
 ### <a name="open-confirmed-orders"></a>Otevřít potvrzené objednávky
 Jakmile odběratel nákupní objednávku potvrdí (její stav se tedy změní na **Potvrzeno**), objednávka se zobrazí v otevřených potvrzených objednávkách. V seznamu zůstane, dokud ji odběratel nezaregistruje jako přijatou.
-

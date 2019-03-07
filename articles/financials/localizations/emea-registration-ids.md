@@ -1,13 +1,13 @@
 ---
 title: ID registrace
-description: "Toto téma poskytuje informace o nastavení a používání ID registrace."
+description: Toto téma poskytuje informace o nastavení a používání ID registrace.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7b663b9a72afdd3c2e2dcf503152f02e0b7861fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 978c6c6f2a3de803f252e93040d2d7eb2bc4a793
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350497"
 ---
-
 # <a name="registration-ids"></a>ID registrace
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ Registrace kategorie je identifikátor země registrace schválený pro použív
 |-----------------------|----------------|
 | Typ registrace     | Typ registrace v konkrétní zemi nebo oblasti.|
 | Omezení         | Typ omezení, které platí pro typ daňové registrace: žádné, osoba, organizace.|
-| Kategorie registrace | Jedinečný identifikátor registrace schválený pro použití v dané zemi. Úplný seznam kategorií podporovaných v aplikaci Microsoft Dynamics 365 for Finance and Operations je uveden níže. |
+| Kategorie registrace | Jedinečný identifikátor registrace schválený pro použití v dané zemi. Úplný seznam podporovaných v kategoriích Microsoft Dynamics 365 for Finance and Operations je níže. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Zadejte ID registrace pro záznamy globálního adresáře
 
@@ -93,10 +92,10 @@ V následující tabulce jsou uvedeny typy registrací podporovaných v aplika
 | Kód důvodu registrace                                                           | Ruská federace| RRC (RRC legislativního typu v aplikaci AX 2012 R3)|
 | OKDP                                                          | Ruská federace| OKDP (OKDP legislativního typu v aplikaci AX 2012 R3)|
 | OKPO                                                          | Ruská federace| OKPO (OKPO legislativního typu v aplikaci AX 2012 R3)|
-| RKOSU                                                         | Ruská federace| RCOAD (RCOAD legislativního typu v aplikaci AX 2012 R3)|
+| RKOSU                                                         | Ruská federace| RCOAD (typ legislativním RCOAD v AX 2012 R3)|
 | OGRN                                                          | Ruská federace| OGRN (OGRN legislativního typu v aplikaci AX 2012 R3) |
-| SNILS                                                         | Ruská federace| SNILS (SNILS legislativního typu v aplikaci AX 2012 R3)|
-| CIFTS                                                         | Ruská federace| CIFTS (CIFTS legislativního typu v aplikaci AX 2012 R3)|
+| SNILS                                                         | Ruská federace| SNILS (SNILS legislativního typu v AX 2012 R3)|
+| CIFTS                                                         | Ruská federace| CIFTS (CIFTS legislativního typu v AX 2012 R3)|
 | Pas                                                      | Španělsko             | Pas|
 | Oficiální identifikační doklad                              | Španělsko             | Oficiální identifikační doklad|
 | Certifikát o pobytu                                         | Španělsko             | Certifikát o pobytu|
@@ -109,7 +108,6 @@ Další informace o zpracování ID registrace, včetně nezbytných předpoklad
 -   Nastavení DIČ
 -   ID registrace DPH dodavatele
 -    Vyhledání strany pomocí DIČ
-
 
 
 

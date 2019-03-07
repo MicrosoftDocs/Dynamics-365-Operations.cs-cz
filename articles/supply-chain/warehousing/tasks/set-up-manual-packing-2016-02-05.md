@@ -1,13 +1,13 @@
---- 
-title: "Nastavení ručního balení (únor 2016 a květen 2016)"
-description: "Proces balení umožňuje ověřit a zabalit produkty do kontejnerů."
+---
+title: Nastavení ručního balení (únor 2016 a květen 2016)
+description: Proces balení umožňuje ověřit a zabalit produkty do kontejnerů.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b90b4a71e2447e942dbb4a9645ef93064da630d3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347714"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>Nastavení ručního balení (únor 2016 a květen 2016)
 
@@ -94,5 +94,4 @@ Proces balení umožňuje ověřit a zabalit produkty do kontejnerů. V tomto pr
     * To bude umístění, kam budou přesunuty produkty, jakmile budou kontejnery uzavřené. Toto skladové místo musí mít profil skladového místa definováno v parametrech skladu.  
 8. V poli Hmotnost jednotky zadejte nebo vyberte hodnotu.
 9. Klikněte na položku Uložit.
-
 

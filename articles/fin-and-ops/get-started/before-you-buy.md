@@ -1,13 +1,13 @@
 ---
-title: "Před zakoupením"
-description: "Podrobné pokyny, které mají být použity při zvažování nákupu aplikace Dynamics 365 for Finance and Operations."
+title: Před zakoupením
+description: Podrobné pokyny k použití, pokud zvažujete zakoupit Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 01/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -16,27 +16,26 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345460"
 ---
-
 # <a name="before-you-buy"></a>Před zakoupením
 
 [!include [banner](../includes/banner.md)]
 
-Pracujete s aplikací Dynamics 365 for Finance and Operations poprvé? Připravili jsme podrobné pokyny, ať již aplikaci Finance and Operations stále hodnotíte, nebo jste připravení na nákup.
+Používáte Dynamics 365 for Finance and Operations poprvé? Připravili jsme podrobné pokyny, ať již aplikaci Finance and Operations stále hodnotíte, nebo jste připravení na nákup.
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok jedna: Vyzkoušejte si aplikaci Finance and Operations 30 dní zdarma
 
-Aplikaci Dynamics 365 for Finance and Operations můžete zkoušet po dobu 30 dní po jednoduchém přihlášení pomocí e-mailu. Zkušební verze aplikace Finance and Operations obsahuje průvodce Začínáme, který poskytuje podrobné pokyny, které umožňují zobrazení konkrétních scénářů v praxi. Produkt je k dispozici pro prohlížení a zkoušení scénářů, ale nelze ho přizpůsobit. Ukázková data jsou zahrnuta k usnadnění používání produktu a zkušeností požadavků uživatele. 3 dny před vypršení doby platnosti vám bude zaslán e-mail s upozorněním. Podrobnosti získáte na stránce [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+Můžete vyzkoušet Dynamics 365 for Finance and Operations po dobu 30 dnů prostřednictvím jednoduché registrace e-mailem. Zkušební verze aplikace Finance and Operations obsahuje průvodce Začínáme, který poskytuje podrobné pokyny, které umožňují zobrazení konkrétních scénářů v praxi. Produkt je k dispozici pro prohlížení a zkoušení scénářů, ale nelze ho přizpůsobit. Ukázková data jsou zahrnuta k usnadnění používání produktu a zkušeností požadavků uživatele. 3 dny před vypršení doby platnosti vám bude zaslán e-mail s upozorněním. Podrobnosti získáte na stránce [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Krok dva: Výběr možnosti nasazení
 
-Nyní můžete nasadit aplikaci aplikace Microsoft Dynamics 365 for Finance and Operations v cloudu nebo místně. Cloudová nasazení nabízejí službu ERP, která je plně spravovaná společností Microsoft, zatímco místní nasazení jsou nasazena do datacentra zákazníka.
+Microsoft Dynamics 365 for Finance and Operations můžete nyní nasadit v cloudu nebo místně. Cloudová nasazení nabízejí službu ERP, která je plně spravovaná společností Microsoft, zatímco místní nasazení jsou nasazena do datacentra zákazníka.
 
 Pokud zvolíte místní nasazení jako možnost nasazení, musíte vzít v úvahu následující:
 
@@ -46,7 +45,7 @@ Pokud zvolíte místní nasazení jako možnost nasazení, musíte vzít v úvah
 - [Minimální požadavky na infrastrukturu](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
-> Místní nasazení aplikace Microsoft Dynamics 365 for Finance and Operations nejsou podporována na žádné veřejné infrastruktuře cloudu, včetně Azure.
+> Místní nasazení Microsoft Dynamics 365 for Finance and Operations nejsou podporována na žádném veřejném cloudu, včetně Azure.
 
 Další informace získáte v tématu [Možnosti nasazení](../../dev-itpro/deployment/choose-deployment-type.md).
 
@@ -54,7 +53,7 @@ Další informace získáte v tématu [Možnosti nasazení](../../dev-itpro/depl
 
 Chcete-li prozkoumat možnosti předplatného, přejděte na stránku s cenami [Dynamics 365](https://www.microsoft.com/dynamics365/pricing). Tato stránka obsahuje několik různých plánů podle potřeby vaší organizace.
 
-K dispozici je více typů zakoupení předplatného aplikace Microsoft Dynamics 365 for Finance and Operations:
+Existuje mnohou způsobů, jak zakoupit předplatné Dynamics 365 for Finance and Operations:
 
 - Nákup prostřednictvím partnera a použití multilicence (cloud nebo místní)
 - Nákup prostřednictvím poskytovatele cloudového řešení (pouze cloud)
@@ -79,7 +78,7 @@ Poskytovatele cloudového řešení Microsoft s vámi může spolupracovat, aby 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Nákup prostřednictvím partnera Dynamics (místní)
 
-Pokud chcete zakoupit místní aplikaci Finance and Operations, je nutná spolupráce s partnerem. Další informace uvádí téma [Zakoupení aplikace Dynamics 365 for Finance and Operations (místní)](purchase-on-premises.md)
+Pokud chcete zakoupit místní aplikaci Finance and Operations, je nutná spolupráce s partnerem. Další informace naleznete v tématu [Nákup Dynamics 365 for Finance and Operations (on-premises)](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Zvolte možnost podpory
 
@@ -97,4 +96,3 @@ Microsoft FastTrack for Dynamics 365 je služba zajišťující zákazníkům ú
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Pokud provádíte upgrade aplikace Dynamics AX 2012 nebo migraci z aplikace AX 2009
 
 Pokud jste zákazník, který upgraduje z aplikace Microsoft Dynamics AX 2012 nebo migruje z aplikace Microsoft Dynamics AX 2009, budete pravděpodobně mít nárok na delší zkušební období. Další informace vám poskytne <daxcf@microsoft.com>.
-

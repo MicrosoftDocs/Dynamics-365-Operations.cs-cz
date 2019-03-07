@@ -1,13 +1,13 @@
 ---
-title: "Fakturování projektu"
-description: "V tomto článku najdete přehled fakturace projektu pro časové a materiálové projekty a projekty s pevnou cenou. Zahrnuje informace o návrzích faktur (předběžné faktury), řízení faktur, fakturování na účet, fakturaci dodavatele a dobropisech."
+title: Fakturování projektu
+description: V tomto článku najdete přehled fakturace projektu pro časové a materiálové projekty a projekty s pevnou cenou. Zahrnuje informace o návrzích faktur (předběžné faktury), řízení faktur, fakturování na účet, fakturaci dodavatele a dobropisech.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5dd51e442479a05ce715fe91ebab0c99df9a8b6f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2434e0a97846ce9ca0643327a7a032a9998bde5b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346311"
 ---
-
 # <a name="project-invoicing"></a>Fakturování projektu
 
 [!include [banner](../includes/banner.md)]
@@ -121,7 +120,6 @@ Stejný dokument může obsahovat transakce, které jsou vybrané k dobropisová
 Chcete-li dopropisovat fakturovanou částku, musíte nejprve vybrat fakturovanou částku, kterou chcete dobropisovat, a poté vytvořit dobropis. Vytvořte dobropis úplně stejným způsobem, jaký používáte k vytvoření běžné faktury odběratele. 
 
 Můžete vytvořit fakturu se zápornou částkou, což bude faktura klasifikovaná jako dobropis. Chcete-li vytvořit a vytisknout dobropis, musíte vybrat transakce, které byly dříve zaúčtovány pro fakturu odběratele, a pak upravit transakce. Pokud není primární adresa právnické osoby v Německu, je název faktury "Opravná faktura".
-
 
 
 

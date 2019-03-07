@@ -1,13 +1,13 @@
 ---
-title: "Spravovat plánované objednávky"
-description: "Toto téma obsahuje informace o postupu správy plánovaných objednávek. Popisuje, jak můžete aktualizovat stav plánovaných objednávek, upevnit je a zobrazit filtr plánovaných objednávek, které mají stejný stav, jako vybraná plánovaná objednávka."
+title: Spravovat plánované objednávky
+description: Toto téma obsahuje informace o postupu správy plánovaných objednávek. Popisuje, jak můžete aktualizovat stav plánovaných objednávek, upevnit je a zobrazit filtr plánovaných objednávek, které mají stejný stav, jako vybraná plánovaná objednávka.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqTransPo
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bf578d98abc4825c5607ec031da6ab6737c3183a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ad0083018d2734cb1e36cbf5f94105376c57cdf9
-ms.openlocfilehash: e0e3e86ae85b59b10dc8d9ca9b0130d218469118
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/02/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360456"
 ---
-
 # <a name="maintain-planned-orders"></a>Spravovat plánované objednávky
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Když je plánovaná objednávka potvrzena, přesune se do částí objednávek 
 --------
 
 [Hlavní plány](master-plans.md)
-
 
 
 

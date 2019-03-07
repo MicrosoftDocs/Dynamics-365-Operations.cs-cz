@@ -1,13 +1,13 @@
 ---
-title: "Registrace sériových čísel v prodejním procesu"
-description: "Toto téma vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu. Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání."
+title: Registrace sériových čísel v prodejním procesu
+description: Toto téma vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu. Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350405"
 ---
-
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrace sériových čísel v prodejním procesu
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Toto téma vysvětluje, jak lze registrovat sériová čísla v dodacích listec
 
 Mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání. V těchto situacích aplikace Microsoft Dynamics 365 for Finance and Operations umožní registrovat sériová čísla v dodacích listech nebo fakturách při prodeji produktu. Při pozdějším vrácení produktu lze trasovat produkt k faktuře k určení, zda jste produkt prodali a zda jsou služby nebo záruční povinnosti platné.
 
-Je nutné povolit sériová čísla pro prodejní proces ve skupině sledovací dimenze výběrem možnosti **Aktivní v prodejním procesu** na stránce **Sledování – skupiny dimenze**. V aplikaci Microsoft Dynamics 365 for Finance and Operations pak dojde k následujícím událostem:
+Je nutné povolit sériová čísla pro prodejní proces ve skupině sledovací dimenze výběrem možnosti **Aktivní v prodejním procesu** na stránce **Sledování – skupiny dimenze**. Pak v Microsoft Dynamics 365 for Finance and Operations dojde k následujícím událostem:
 -   Na pevné kartě **Sériová čísla** se vybere možnost **Kontrola sériového čísla**. Je-li tato možnost vybrána, je nutné zaregistrovat jedno sériové číslo pro každou položku dodacího listu nebo faktury.
 -   Všechny vybrané položky ve skupině sledovací dimenze pro sériová čísla jsou prázdná s výjimkou možnosti **Povolen prázdný výdej**. Můžete vybrat možnost **Povolen prázdný výdej** pro obejití kontroly sériového čísla a povolit produktům balení a fakturaci bez registrace sériových čísel.
 
@@ -58,8 +57,8 @@ Jestliže sériové číslo nelze přečíst nebo skenovat, můžete vytvořit p
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Mohu opravit nebo změnit sériová čísla registrovaná pro prodejní objednávku?
 Ano, sériová čísla můžete opravit, pokud jsou splněny následující podmínky:
--   **Faktury** - můžete změnit sériová čísla položek, které dosud nebyly vyfakturovány. Dodací list se také aktualizuje. Pokud však byl řádek prodejní objednávky opraven registrací záporného množství, nelze změnit sériová čísla pro řádek prodejní objednávky.
--   **Dodací listy** - nelze částečně opravit řádek dodacího listu, který obsahuje serializované položky. Je nutné stornovat celé množství na řádku. Pokud byl stornován nebo opraven dodací list, není třeba registrovat stornovaná sériová čísla znovu při vytváření nového dodacího listu pro stejné serializované položky. Použijí se čísla, která byla zaregistrována.
+-   **Faktury** – můžete změnit sériová čísla položek, které dosud nebyly vyfakturovány. Dodací list se také aktualizuje. Pokud však byl řádek prodejní objednávky opraven registrací záporného množství, nelze změnit sériová čísla pro řádek prodejní objednávky.
+-   **Dodací listy** – nelze částečně opravit řádek dodacího listu, který obsahuje serializované položky. Je nutné stornovat celé množství na řádku. Pokud byl stornován nebo opraven dodací list, není třeba registrovat stornovaná sériová čísla znovu při vytváření nového dodacího listu pro stejné serializované položky. Použijí se čísla, která byla zaregistrována.
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>Mohu zobrazit sériová čísla, která byla dodána společně s konkrétním dodacím list nebo byla zahrnuta do faktury?
 Ano, můžete spustit dotaz na řádek deníku dodacího listu nebo řádek deníku faktury k zobrazení seznamu všech sériových čísel, které byly zahrnuty do dokumentu.
@@ -78,7 +77,6 @@ Ano, maloobchodní pokladních systém (POS) vyzve uživatele k zadání sériov
 Tato funkce je k dispozici pro všechny role, které mohou spravovat prodejní dodací listy a prodejní faktury. Následující úkoly umožňují pracovníkům opravit sériová čísla a registrovat prázdné položky registru pro sériová čísla, která nelze přečíst nebo naskenovat:
 -   Udržovat opravy sériových čísel
 -   Udržovat registraci nečitelných sériových čísel
-
 
 
 

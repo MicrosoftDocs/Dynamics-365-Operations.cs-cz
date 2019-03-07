@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření cíle"
-description: "Můžete vytvořit cíle, přidat aktivity k cílům, sledovat měrný systém a propojit cíle s kontrolou."
+---
+title: Vytvoření cíle
+description: Můžete vytvořit cíle, přidat aktivity k cílům, sledovat měrný systém a propojit cíle s kontrolou.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: e3f3bc01113099c5b28f10e702ebf981e26c196a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350704"
 ---
 # <a name="create-a-goal"></a>Vytvoření cíle
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Můžete vytvořit cíle, přidat aktivity k cílům, sledovat měrný systém a propojit cíle s kontrolou. Tato procedura byla vytvořena pomocí ukázkových dat společnosti USMF. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations, verze 1611.
+Můžete vytvořit cíle, přidat aktivity k cílům, sledovat měrný systém a propojit cíle s kontrolou. Tato procedura byla vytvořena pomocí ukázkových dat společnosti USMF. Tento postup je určen pro funkci, která byla přidána do Dynamics 365 for Operations, verze 1611.
 
 1. Přejděte na Všechny pracovní prostory > Samoobsluha pro zaměstnance.
 2. Klikněte na Zobrazit všechny cíle.
@@ -59,5 +59,4 @@ Můžete vytvořit cíle, přidat aktivity k cílům, sledovat měrný systém a
     * Často existují cíle, které jsou stejné nebo podobné pro členy týmu nebo všechny zaměstnance.     Pracovník nebo manažer personálního oddělení může pro tyto cíle vytvořit šablony cíle. Cíl můžete přidat ze šablony a potom upravit tak, aby odpovídal vašim časovým osám.  
     * Často existuje několik cílů, které jsou stejné nebo podobné pro členy týmu nebo všechny zaměstnance.     Pracovník nebo manažer personálního oddělení může vytvořit skupiny cílů, které obsahují jednu nebo více šablon cíle. Cíle můžete přidat ze skupiny cílů a potom upravit tak, aby odpovídal vašim časovým osám.  
     * Při vytváření kontroly můžete cíle přidat do této kontroly. V Průvodci záznamem úloh najdete kontroly, které ukazují, jak se přidávají cíle do kontrol.  
-
 

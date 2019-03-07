@@ -1,13 +1,13 @@
---- 
-title: "Generování elektronických dokumentů ER pro platby za použití konfigurace formátu"
-description: "Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může použít novou konfiguraci formátu pro elektronické výkaznictví a vytvořit tak elektronické doklady pro zpracování plateb."
+---
+title: Generování elektronických dokumentů ER pro platby za použití konfigurace formátu
+description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může použít novou konfiguraci formátu pro elektronické výkaznictví a vytvořit tak elektronické doklady pro zpracování plateb.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: cf2ae8fb451eba1054bb94edbce009dcfa8c872c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348312"
 ---
 # <a name="er-generate-electronic-documents-for-payments-using-a-format-configuration"></a>Generování elektronických dokumentů ER pro platby za použití konfigurace formátu
 
@@ -81,5 +81,4 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postup
 24. Klikněte na tlačítko OK.
 25. Klikněte na tlačítko OK.
     * Analyzujte vytvořený soubor platby ve formátu XML. Srovnejte jej s navrženým rozvržením dokumentu a definovanými atributy platební transakce.  
-
 

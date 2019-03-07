@@ -1,13 +1,13 @@
 ---
-title: "Subdodávky na základě aktivit"
-description: "Toto téma podrobně popisuje, jak používat subdodavatelské aktivity ve výrobním toku pro lean manufacturing."
+title: Subdodávky na základě aktivit
+description: Toto téma podrobně popisuje, jak používat subdodavatelské aktivity ve výrobním toku pro lean manufacturing.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 59b41b31931a128898ee70a583bfb9c515f90abc
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350037"
 ---
-
 # <a name="activity-based-subcontracting"></a>Subdodávky na základě aktivit
 
 [!include [banner](../includes/banner.md)]
@@ -84,7 +83,7 @@ Aktivita převodu je nakonfigurován jako subdodavatelská aktivita, v závislos
 -   **Příjemce** – Aktivita je subdodavatelská, pokud je převod do skladu řízen dodavatelem (jak je definováno vlastností skladu). Všechny vybrané nákupní smlouvy pro služby musí mít stejné ID dodavatele jako sklad.
 -   **Dopravce** – Aktivita je zadána dodavateli, který poskytuje službu. Aby byl dopravce platný, musí být vytvořen pro řízení skladu a musí mít přiřazený dodavatelský účet.
 
-Pokud jde o aktivity procesu, je nutné nakonfigurovat výchozí službu pro aktivity subdodavatelského převodu na pevné záložce **Podmínky služby** stránky **Podrobnosti o****aktivitě**.
+Pokud jde o aktivity procesu, je nutné nakonfigurovat výchozí službu pro aktivity subdodavatelského převodu na pevné záložce **Podmínky služby** stránky **Podrobnosti o** **aktivitě**.
 
 ## <a name="service-quantity-calculation"></a>Výpočet množství služby
 Celý nákupní proces je založen na odkazu položky pro službu. Tento odkaz položky se měří v měrné jednotce služby. Služby se obvykle měří buď v počtu služeb (jednotky) nebo v čase. Pro výpočet množství služeb na základě registrovaných dokončení kanbanových úloh můžete použít následující metody:
@@ -104,7 +103,6 @@ Lidé často považují dopravu za nevýrobní a domnívají se, že nepřináš
 Subdodávky na základě aktivit v lean manufacturingu vám umožňují integrovat dopravce a dodavatele přepravy, kteří přesouvají materiál a výrobky mezi místy výrobního toku. Modelováním aktivity převodu můžete přiřadit dopravce nebo dodavatele. Aktivity/úlohy převodu jsou založeny na službě a nákupní smlouvě a lze vytvořit nákupní objednávky a avíza o přijetí na základě skutečných úloh převodu. Tato funkce je stejná jako funkce pro proces subdodavatelských aktivit.  
 
 Proto Finance and Operations nyní podporuje výpočet kusovníku, který zahrnuje přepravní služby, vytvoření souvisejících nákupních objednávek, integrovanou registraci příjmu a integraci nákladů na přepravní služby do výpočtu nákladů výrobního toku.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Mezipodnikové účetnictví pro centralizované platby"
-description: "Toto téma popisuje vyrovnání pro centralizované platby pro Microsoft Dynamics 365 for Finance and Operations."
+title: Mezipodnikové účetnictví pro centralizované platby
+description: Toto téma popisuje vyrovnání pro centralizované platby v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: abruer
 manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
 ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358570"
 ---
-
 # <a name="settlement-overview-for-centralized-payments"></a>Mezipodnikové účetnictví pro centralizované platby
 
 [!include [banner](../includes/banner.md)]
@@ -109,4 +108,3 @@ U plateb dodavatelů transakce počátečního a koncového data splatnosti v pr
 
 ## <a name="withholding-tax"></a>Srážková daň
 Účet dodavatele, který je přidružený k faktuře, slouží k určení, zda se má vypočítat srážkovou daň. Pokud se srážková daň používá, je vypočteno v právnické osobě, která je přidružená k faktuře. Pokud právnické osoby používají různé měny, použije se směnný kurz z právnické osoby, která je přidružená k faktuře.
-

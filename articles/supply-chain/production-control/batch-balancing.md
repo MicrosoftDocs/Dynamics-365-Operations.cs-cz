@@ -1,13 +1,13 @@
 ---
-title: "Vyvážení dávky"
-description: "Toto téma popisuje proces vyvážení dávky."
+title: Vyvážení dávky
+description: Toto téma popisuje proces vyvážení dávky.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: 63b986f9f3a1505dba4c2f64f872b9472e1aca87
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7d00df6263530ba9fff4c246cb3593cd607f6719
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358616"
 ---
-
 # <a name="batch-balancing"></a>Vyvážení dávky
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma popisuje podporu procesu vyvážení dávky. 
 
-Podívejte se na [video o vyrovnání dávky v aplikaci Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
+Podívejte se na [video o vyvážení dávky v Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 V procesu vyvážení dávky se množství látek pro použití ve výrobní dávce vypočítá z koncentrace aktivních látek ve vybraných výrobních dávkách.
 
@@ -194,4 +193,3 @@ Existuje jedna výjimka z pravidla, že dávkové objednávky lze použít pro v
 Pokud receptura obsahuje aktivní látku produktu, který je povolen pro procesy správy skladu, ale je číslo dávky je pod umístěním v hierarchii rezervací, není dávková objednávka použitelná pro vyvážení dávky.
 
 Dávková objednávka, která není použitelná pro vyvážení dávky, prochází pravidelným cyklem procesu pro dávkové objednávky.
-

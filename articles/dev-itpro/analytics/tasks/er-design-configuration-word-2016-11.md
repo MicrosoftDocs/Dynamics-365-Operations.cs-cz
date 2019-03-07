@@ -1,13 +1,13 @@
---- 
-title: "Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu Word"
-description: "Následující kroky vysvětlují, jak uživatel v roli správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formáty elektronického výkaznictví pro generování sestav v podobě souborů aplikace Microsoft Word."
+---
+title: Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu Word
+description: Následující kroky vysvětlují, jak uživatel v roli správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formáty elektronického výkaznictví pro generování sestav v podobě souborů aplikace Microsoft Word.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362342"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu Word
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Následující kroky vysvětlují, jak uživatel v roli správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formáty elektronického výkaznictví (ER) pro generování sestav v podobě souborů aplikace Microsoft Word. Tyto kroky lze provést v rámci společnosti GBSI.
+Následující kroky vysvětlují, jak uživatel v roli správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formáty elektronického výkaznictví pro generování sestav v podobě souborů aplikace Microsoft Word. Tyto kroky lze provést v rámci společnosti GBSI.
 
 K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh s názvem „Vytvoření konfigurace ER pro generování sestav ve formátu OPENXML“. Předem musíte také stáhnout a uložit následující šablony pro vzorovou sestavu:
 
@@ -35,7 +35,7 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodc
 - [Vázaná šablona sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266)
 
 
-Tato procedura je určena pro funkci, která byla přidána do aplikace Microsoft Dynamics 365 for Operations, verze 1611.
+Tento postup je určený pro funkci, která byla přidána do Microsoft Dynamics 365 for Operations verze 1611.
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>Volba existující konfigurace sestavy ER
@@ -99,5 +99,4 @@ Tato procedura je určena pro funkci, která byla přidána do aplikace Microsof
 16. Klikněte na tlačítko OK.
 17. Klikněte na tlačítko OK.
     * Analyzujte vygenerovaný výstup. Povšimnete si, že vytvořený výstup je ve formátu aplikace Word a obsahuje podrobnosti o zpracovaných platbách.  
-
 

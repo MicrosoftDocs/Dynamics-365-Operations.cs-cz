@@ -1,13 +1,13 @@
 ---
-title: "Hromadná aktualizace dlouhodobého majetku"
-description: "Pokud používáte knihy, můžete změnit způsob odpisu pro skupinu majetku, které jsou součástí stejné knihy."
+title: Hromadná aktualizace dlouhodobého majetku
+description: Pokud používáte knihy, můžete změnit způsob odpisu pro skupinu majetku, které jsou součástí stejné knihy.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b740f1fe710c2278bd5ac5f8d615f0e305cd7df1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3fb55f1a51652299db8a31274b07f239fbaf28f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348795"
 ---
-
 # <a name="fixed-asset-mass-update"></a>Hromadná aktualizace dlouhodobého majetku
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,6 @@ Při aktualizaci způsobu odpisu pro majetek odstraníte všechny transakce odpi
 Chcete-li aktualizovat způsob odpisu pro majetek, který již byl vyřazen, budete muset nejprve odstranit existující vyřazovací transakce. Je nutné odstranit také všechny transakce vygenerované kvůli procesu vyřazení. 
 
 Po aktualizaci způsobu odpisu pro majetek lze zpracovat odpisy a mimořádné odpisy pro každý majetek. Můžete také provést ruční úpravy odpisu, jsou-li zapotřebí.
-
 
 
 

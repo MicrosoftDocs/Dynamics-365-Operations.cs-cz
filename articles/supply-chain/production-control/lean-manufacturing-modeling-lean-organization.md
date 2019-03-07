@@ -1,13 +1,13 @@
 ---
-title: "Modelování úsporné organizace"
-description: "Tento článek obsahuje informace o klíčových konceptech pro modelování úsporné organizace."
+title: Modelování úsporné organizace
+description: Tento článek obsahuje informace o klíčových konceptech pro modelování úsporné organizace.
 author: cvocph
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 254616174d3f3c449e2a55dfc5f080d6276105b0
 ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350980"
 ---
-
 # <a name="modeling-a-lean-organization"></a>Modelování úsporné organizace
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Ve scénářích výroby založených na výrobních zakázkách je materiálu v
 
 Ke snížení doby realizace dodávky a nadbytečných zásob mezi pracovními středisky, které jsou způsobené výrobními dávkami, zavádí lean manufacturing doplnění kanbanu a supermarkety ve výrobě a doplnění skladu. Tyto prvky obvykle naruší výrobu částečně nezávislých kanbanových cyklů. Doplnění kanbanu pro polotovar již není aktivováno objednávkou hotového výrobku. 
 
-Aby bylo možné znovu vytvořit kontext výroby a nákladů pro různé scénáře kanbanu navržené v aplikaci Microsoft Dynamics 365 for Finance and Operations, byly zavedeny výrobní toky zavedené na aktivitě jako základní stavební prvky lean manufacturingu. Všechna kanbanová pravidla naleznete v této předdefinované struktuře. Model založený na aktivitách podporuje nastavení široké škály scénářů. Avšak tento model nezvyšuje náročnost pro dílenské pracovníky, protože všechny scénáře používají stejné uživatelské rozhraní založené na aktivitách.
+Chcete-li znovu vytvořit kontext výroby a nákladů pro různé scénáře kanbanu navržených v aplikaci Microsoft Dynamics 365 for Finance and Operations, výrobní toky na základě aktivity jsou vkládány jako základní stavební prvky lean manufacturingu. Všechna kanbanová pravidla naleznete v této předdefinované struktuře. Model založený na aktivitách podporuje nastavení široké škály scénářů. Avšak tento model nezvyšuje náročnost pro dílenské pracovníky, protože všechny scénáře používají stejné uživatelské rozhraní založené na aktivitách.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Polotovary (bez úrovní kusovníku)
 Lean manufacturing integruje kanbany pro produkty na skladě a polotovary v jednom rámci, tudíž nabízí ve všech případech sjednocené uživatelské prostředí. Díky této architektuře není třeba zavádět další úrovně kusovníku, aby bylo možné použít kanbany pro polotovary. Tato architektura také umožňuje omezit skladové transakce na minimum.
@@ -65,7 +64,6 @@ Pro lepší podporu souvislého zlepšování, jsou implementovány výrobní to
 
 ## <a name="simplicity"></a>Jednoduchost
 K nasazení Lean Manufacturingu jsme zvolili přístup k výrobnímu toku a aktivitám, který umožňuje modelování jednoduchých a složitých scénářů výroby do jedné škálovatelné architektury. Podrobnější pohled na koncept aktivity odhaluje nové zjednodušení pro uživatele, kteří to opravdu potřebují: dílenské vedoucí a zaměstnance logistiky. Vykazování prací na základě neaktivity namísto skladových transakcí, přesune sjednocené uživatelské rozhraní pro všechny varianty lean manufacturingu složitost obchodu z uživatelského rozhraní tam, kam patří: výrobní tok jako základní stavební prvek lean manufacturingu..
-
 
 
 

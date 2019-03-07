@@ -1,13 +1,13 @@
 ---
-title: "Správa uživatelů dodavatelské spolupráce"
-description: "Toto téma popisuje, jak můžete požadovat zřízení nových uživatelů dodavatelské spolupráce a přidat nové kontakty dodavatelské spolupráce."
+title: Správa uživatelů dodavatelské spolupráce
+description: Toto téma popisuje, jak můžete požadovat zřízení nových uživatelů dodavatelské spolupráce a přidat nové kontakty dodavatelské spolupráce.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 520dcaa1eec3c0fb8aa72fc7f75a56622069881f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
-ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356684"
 ---
-
 # <a name="manage-vendor-collaboration-users"></a>Správa uživatelů dodavatelské spolupráce
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,7 @@ Když je odeslán požadavek, je přidán do seznamu **Žádosti uživatelů o d
 Předtím, než můžete požadovat zřízení nového uživatele, musí být tento uživatel nastaven jako kontakt pro jeden nebo více účtů dodavatele. Vytvoření žádosti o nového uživatele dodavatelské spolupráce:
 
 1. Na stránce **Všechny kontakty** klepněte na **Zřídit dodavatelského uživatele**.
-2. Zadejte e-mailovou adresu uživatele. Uživatel bude tuto adresu používat pro přihlášení do aplikace Finance and Operations. Pokud e-mailová adresa patří do domény, která je registrována jako tenant v Microsoft Azure, musí být e-mailová adresa existující účte Azure Active Directory (AAD), aby byl proces zřizování úspěšně dokončen. Pokud e-mailová adresa nepatří k doméně registrované službou Microsoft Azure, přidaný účet bude vytvořen jako součást procesu zřizování a nový uživatel obdrží e-mail s pozváním. E-mailové adresy spotřebitelů v doménách jako @hotmail.com, @gmail.com nebo @comcast.net nelze používat k registraci jako uživatele aplikace Finance and Operations.
+2. Zadejte e-mailovou adresu uživatele. Uživatel bude tuto adresu používat pro přihlášení do aplikace Finance and Operations. Pokud e-mailová adresa patří do domény, která je registrována jako tenant v Microsoft Azure, musí být e-mailová adresa existující účte Azure Active Directory (AAD), aby byl proces zřizování úspěšně dokončen. Pokud e-mailová adresa nepatří k doméně registrované službou Microsoft Azure, přidaný účet bude vytvořen jako součást procesu zřizování a nový uživatel obdrží e-mail s pozváním. E-mailové adresy spotřebitelů v doménách jako @hotmail.com, @gmail.com nebo @comcast.net nelze používat k registraci jako uživatele Finance and Operations.
 3. Nastavte možnost na **Povolený přístup k dodavatelské spolupráci na** **Ano** pro všechny právnické osoby, ke kterým musí mít uživatel přístup.
 4. V oddílu **Přiřazení rolí uživatelů** zaškrtněte políčko **Přiřadit** pro role zabezpečení, které by měl mít nový uživatel.
 5. Klepněte na tlačítko **Odeslat**.
@@ -91,7 +90,6 @@ Zadání požadavku, aby byly upraveny role zabezpečení pro uživatele:
 2.  Do pole **Obchodní odůvodnění** napište komentář.
 3.  V části **Spravovat uživatelské role** zaškrtněte políčko u rolí zabezpečení, které chcete přiřadit, nebo zrušte zaškrtnutí políček u rolí, které chcete odstranit.
 4.  Klikněte na **Odeslat**.
-
 
 
 

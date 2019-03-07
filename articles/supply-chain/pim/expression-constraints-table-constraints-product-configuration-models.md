@@ -1,13 +1,13 @@
 ---
-title: "Omezení výrazu a omezení tabulky v modelech konfigurace produktu"
-description: "Toto téma popisuje použití omezení výrazu a omezení tabulky. Omezení řídí hodnoty atributů, které jsou k dispozici při konfiguraci produktů pro prodejní nabídku, nákupní objednávku nebo výrobní zakázku. Můžete použít omezení výrazu nebo omezení tabulky v závislosti na tom, jak chcete vytvářet omezení."
+title: Omezení výrazu a omezení tabulky v modelech konfigurace produktu
+description: Toto téma popisuje použití omezení výrazu a omezení tabulky. Omezení řídí hodnoty atributů, které jsou k dispozici při konfiguraci produktů pro prodejní nabídku, nákupní objednávku nebo výrobní zakázku. Můžete použít omezení výrazu nebo omezení tabulky v závislosti na tom, jak chcete vytvářet omezení.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 88d52031f4c916f5ec3e970f38864977e69a9d9a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b6b5b7e7894cb74e33e08893934b3eaede957556
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356638"
 ---
-
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Omezení výrazu a omezení tabulky v modelech konfigurace produktu
 
 [!include [banner](../includes/banner.md)]
@@ -223,7 +222,7 @@ V následující tabulce jsou uvedeny příklady, jak zapsat infixový zápis.
 |        (x)        |                           Závorky ruší výchozí priority.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Proč nejsou má omezení výrazu vyhodnocena správně?
-Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponentů nebo dílčích komponentů v modelu konfigurace produktu. Následující seznam obsahuje rezervovaná klíčová slova, která nelze použít:
+Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponentů nebo dílčích komponentů v modelu konfigurace produktu.Následující seznam obsahuje rezervovaná klíčová slova, která nelze použít:
 
 -   Horní mez
 -   Prvek
@@ -252,7 +251,6 @@ Rezervovaná slovo nelze použít jako řešitelské názvy atributů, komponent
 [Přidání omezení výrazu (Průvodce záznamem úloh)](tasks/add-expression-constraint-product-configuration-model.md)
 
 [Přidání výpočtu do modelu konfigurace produktu (Průvodce záznamem úloh)](tasks/add-calculation-product-configuration-model.md)
-
 
 
 

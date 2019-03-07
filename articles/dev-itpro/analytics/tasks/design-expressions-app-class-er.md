@@ -1,13 +1,13 @@
---- 
-title: "Návrh výrazů elektronického výkaznictví pro volání metod třídy aplikace"
-description: "Tento průvodce obsahuje informace o tom, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd ve výrazech ER."
+---
+title: Návrh výrazů elektronického výkaznictví pro volání metod třídy aplikace
+description: Tento průvodce obsahuje informace o tom, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd ve výrazech ER.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: fdacd852eeed33b443a3c79b96fc4c4af04bb6b2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357236"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Návrh výrazů elektronického výkaznictví pro volání metod třídy aplikace
 
@@ -103,7 +103,7 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proced
     * Mapování na datový model  
 6. Klikněte na položku Uložit.
 7. Klikněte na možnost Návrhář.
-8. Ve stromové struktuře vyberte 'Dynamics 365 for Operations\Class'.
+8. Ve stromu vyberte'Dynamics 365 for Operations\Class'.
 9. Klikněte na možnost Přidat kořen.
     * Přidejte nový zdroj dat pro volání existující aplikační logiky pro ověření kódů IBAN.  
 10. Do pole Název zadejte 'check_codes'.
@@ -157,5 +157,4 @@ Pro účely testování proveďte mapování formátu pomocí souboru SampleInco
     * Klikněte na tlačítko Procházet a vyhledejte soubor SampleIncomingMessage.txt, který jste předtím stáhli.  
 2. Klikněte na tlačítko OK.
     * Zkontrolujte výstup ve formátu XML, který představuje data importovaná z vybraného souboru a přenesená do datového modelu. Všimněte si, že byly zpracovány pouze řádky 3 importovaného souboru TXT. Kód IBAN na řádku 4, který není platný, byl vynechán a v informačním protokolu je uvedena chybová zpráva.  
-
 

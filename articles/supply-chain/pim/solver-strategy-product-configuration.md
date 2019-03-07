@@ -1,39 +1,38 @@
 ---
-title: "Strategie řešitele pro konfiguraci produktů"
-description: "Toto téma popisuje, jak můžete použít strategii řešitele ke zlepšení výkonu konfigurace produktu."
+title: Strategie řešitele pro konfiguraci produktů
+description: Toto téma popisuje, jak můžete použít strategii řešitele ke zlepšení výkonu konfigurace produktu.
 author: cvocph
 manager: AnnBe
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d0abb9313ec62cfdfe3bf7c810e2143dcf502bf9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 4544128e580b30b14a6236a9a6147ff0a8641d72
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351141"
 ---
-
 # <a name="solver-strategy-for-product-configuration"></a>Strategie řešitele pro konfiguraci produktů
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma popisuje, jak můžete použít strategii řešitele ke zlepšení výkonu konfigurace produktu.
 
-Koncept strategie řešitele byl poprvé představen v aktualizaci Cumulative update 7 (CU7) pro Microsoft Dynamics AX 2012 R2. Byl rozšířen v aktualizaci Cumulative update 8 (CU8) pro Microsoft Dynamics AX 2012 R3 a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
+Koncept strategie řešitele byl poprvé představen v aktualizaci Cumulative update 7 (CU7) pro Microsoft Dynamics AX 2012 R2. Byl rozšířen v kumulativní aktualizaci 8 (CU8) pro Microsoft Dynamics AX 2012 R3 a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
 
 Koncept strategie řešitele se nyní skládá z následujících strategií:
 
@@ -74,4 +73,3 @@ Následující tabulka poskytuje doporučení o strategii řešitele k použití
 [Heuristika](https://techterms.com/definition/heuristic)
 
 [Problém omezení spokojenosti](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
-

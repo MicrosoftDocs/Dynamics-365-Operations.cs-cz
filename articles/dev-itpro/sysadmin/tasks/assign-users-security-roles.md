@@ -1,13 +1,13 @@
---- 
-title: "Přiřadit uživatelů k rolím zabezpečení"
-description: "Uživatelé musí být přiřazeni k rolím zabezpečení, aby měli přístup k aplikaci Microsoft Dynamics 365 for Finance and Operations, edice Enterprise."
+---
+title: Přiřazení uživatelů k rolím zabezpečení
+description: Pro přístup k aplikaci Microsoft Dynamics 365 for Finance and Operations Enterprise edition musí být uživateli přiřazeni k rolím zabezpečení.
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
 ms.reviewer: margoc
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 55cb085bb5170aa4894a2240a12f6ca451b922fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 551048af26f46d334c562d1968963aed262a5e03
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349945"
 ---
-# <a name="assign-users-to-security-roles"></a>Přiřadit uživatelů k rolím zabezpečení
+# <a name="assign-users-to-security-roles"></a>Přiřazení uživatelů k rolím zabezpečení
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Uživatelé musí být přiřazeni k rolím zabezpečení, aby měli přístup k aplikaci Microsoft Dynamics 365 for Finance and Operations, edice Enterprise. Tento postup vysvětluje způsob, jakým správce systému může přiřadit uživatele k rolím automaticky na základě obchodních dat. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
+Pro přístup k aplikaci Microsoft Dynamics 365 for Finance and Operations Enterprise edition musí být uživateli přiřazeni k rolím zabezpečení. Tento postup vysvětluje způsob, jakým správce systému může přiřadit uživatele k rolím automaticky na základě obchodních dat. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
 
 ## <a name="automatically-assign-users-to-roles"></a>Automatické přiřazení uživatelů k rolím
@@ -52,5 +52,4 @@ Uživatelé musí být přiřazeni k rolím zabezpečení, aby měli přístup k
     * Vyberte uživatele.  
 6. Klikněte na Vyloučit z role.
     * Kliknutím na Vyloučit z role vyloučíte vybrané uživatele z role. Pokud chcete vyloučení odebrat, vyberte uživatele, pro kterého chcete vyloučení odebrat, a klepněte na tlačítko Vynulovat stav. Při odebírání vyloučení obnovením stavu uživatele se role uživatele znovu automaticky přiřadí. Uživatel však při vynulování stavu není okamžitě přiřazen k roli nebo z ní vyloučen. Místo toho je uživateli přiřazena role nebo je z role odebrán při příštím spuštění pravidel pro automatické přiřazení role.  
-
 

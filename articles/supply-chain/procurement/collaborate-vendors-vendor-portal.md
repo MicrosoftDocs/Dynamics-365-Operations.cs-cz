@@ -1,13 +1,13 @@
 ---
-title: "Spolupráce s dodavateli pomocí portálu pro dodavatele"
-description: "Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016."
+title: Spolupráce s dodavateli pomocí portálu pro dodavatele
+description: Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 07fbc5fea1fd44769a29bcc40297ffd02812a1e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339871"
 ---
-
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Spolupráce s dodavateli pomocí portálu pro dodavatele
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,7 @@ Následující tabulka zobrazuje příklad změn stavu a verze, kterou objednáv
 
 | Akce                                                   | Stav a verze                                                                                    |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Počáteční verze nákupní objednávky je vytvořena v aplikaci Dynamics AX | Stav je **Schváleno**.                                                                           |
+| Počáteční verze nákupní objednávky je vytvořena v aplikaci Dynamics AX. | Stav je **Schváleno**.                                                                           |
 | Nákupní objednávka je odeslána do portálu pro dodavatele.                     | Verze je registrována na portálu pro dodavatele a stav se změní na **Na externí kontrole**.    |
 | Provedete změny, které jsou požadovány dodavatelem.  | Stav je opět změněn na **Schváleno**.                                                            |
 | Odešlete novou verzi nákupní objednávky na portál pro dodavatele. | Nová verze je registrována na portálu pro dodavatele a stav se změní na **Na externí kontrole**. |
@@ -88,7 +87,7 @@ Pokud je povolena Správa změn, následující tabulka zobrazuje příklad změ
 
 |                                                    Akce                                                     |                                                                                                                                                                                                                      Stav a verze                                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                           Počáteční verze nákupní objednávky je vytvořena v aplikaci Dynamics AX                            |                                                                                                                                                                                                            Stav majetku je <strong>Koncept</strong>.                                                                                                                                                                                                             |
+|                           Počáteční verze nákupní objednávky je vytvořena v aplikaci Dynamics AX.                            |                                                                                                                                                                                                            Stav majetku je <strong>Koncept</strong>.                                                                                                                                                                                                             |
 | Nákupní objednávka je odeslána do schvalovacího procesu. (Toto je interní proces, kterého dodavatel není součástí). |                                                                                                                        Stav je změněn z hodnoty <strong>Koncept</strong> na <strong>Na kontrole</strong> a na <strong>Schválení</strong>, pokud nákupní objednávky není během procesu schvalování zamítnuta. Schválená nákupní objednávka je registrována jako verze.                                                                                                                        |
 |                                      Nákupní objednávka je odeslána do portálu pro dodavatele                                      |                                                                                                                                                                      Verze je registrována na portálu pro dodavatele a stav se změní na <strong>Na externí kontrole</strong>.                                                                                                                                                                       |
 |                            Provedete změny, které jsou požadovány dodavatelem.                            |                                                                                                                                                                                                    Stav je opět změněn na <strong>Koncept</strong>.                                                                                                                                                                                                     |
@@ -102,7 +101,6 @@ Pokud je povolena Správa změn, následující tabulka zobrazuje příklad změ
 [Konfigurace zabezpečení pro uživatele portálu Spolupráce dodavatele](configure-security-vendor-portal-users.md)
 
 [Pracovní prostor fakturace dodavatelské spolupráce](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
-
 
 
 

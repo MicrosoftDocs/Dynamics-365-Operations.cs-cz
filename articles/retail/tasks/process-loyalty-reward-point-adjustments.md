@@ -1,13 +1,13 @@
---- 
+---
 title: " Zpracování úprav bodů věrnostních odměn"
-description: "Tato procedura demonstruje vyhledávání informace o věrnostní kartě a úpravu bodů věrnostních odměn."
+description: Tato procedura demonstruje vyhledávání informace o věrnostní kartě a úpravu bodů věrnostních odměn.
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailLoyaltyCards, RetailLoyaltyCardRewardPointTrans, RetailLoyaltyCardRewardPointAdjustment, RetailAffiliationLookup
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 85aaa82bf56d55c69f39bab49682c79f51247251
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfb5095c1db2a5ab9fb528d08d979ec850543fc
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346150"
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a> Zpracování úprav bodů věrnostních odměn
 
@@ -49,5 +49,4 @@ Tato procedura demonstruje vyhledávání informace o věrnostní kartě a úpra
     * Obvykle byste v tomto bodě obnovili stránku k zobrazení výsledku úpravy věrnostních bodů na kartě Souhrn bodů odměny. Pokud provádíte spuštění jako průvodce úkolem, neprovádějte nyní obnovení. V opačném případě bude průvodce úkolem zastaven.  
 15. Klikněte na Transakce karet.
 16. Zavřete stránku.
-
 

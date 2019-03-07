@@ -1,13 +1,13 @@
---- 
-title: "Příprava kanbanové úlohy procesu, když pro pracovní buňku jsou k dispozici materiály"
-description: "Tento úkol se zaměřuje na přípravu zpracování kanbanové úlohy, pokud jsou všechny materiály k dispozici pro pracovní buňku."
+---
+title: Příprava kanbanové úlohy procesu, když pro pracovní buňku jsou k dispozici materiály
+description: Tento úkol se zaměřuje na přípravu zpracování kanbanové úlohy, pokud jsou všechny materiály k dispozici pro pracovní buňku.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardWorkCell
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 714196ba92fe3f57c80809930ed54705a4e75078
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
-ms.openlocfilehash: fdedab1bfccafb4f8592aea8ec421e3ba311a94a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/06/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341941"
 ---
 # <a name="prepare-a-process-kanban-job-when-materials-are-available-for-the-work-cell"></a>Příprava kanbanové úlohy procesu, když pro pracovní buňku jsou k dispozici materiály
 
@@ -41,5 +41,4 @@ Tento úkol se zaměřuje na přípravu zpracování kanbanové úlohy, pokud js
     * Pokud je vybráno více úloh, výdejky zobrazí součet všech položek, které jsou potřebné pro vybrané úlohy.  
 6. Klepněte na Připravit.
     * Proces přípravy je dokončen. Označení pole pro všechny řádky výdejky označuje, že je vybrán stav dodání.  
-
 

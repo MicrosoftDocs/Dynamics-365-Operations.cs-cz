@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření otázky s otevřeným koncem"
-description: "Dotazy s otevřeným koncem povolují respondentům poskytovat vlastní odpovědi."
+---
+title: Vytvoření otázky s otevřeným koncem
+description: Dotazy s otevřeným koncem povolují respondentům poskytovat vlastní odpovědi.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMQuestion
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 51d238e41e1c89211d158bd4aee958a85bec772d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347898"
 ---
 # <a name="create-an-open-ended-question"></a>Vytvoření otázky s otevřeným koncem
 
@@ -37,5 +37,4 @@ Dotazy s otevřeným koncem povolují respondentům poskytovat vlastní odpověd
 5. Vyberte možnost v poli Typ vstupu.
     * Pro otázky s otevřeným koncem se používá vstupní druh Text nebo Poznámka.  
 6. V poli Text zadejte svoji otázku.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Vytvoření workflow"
-description: "Toto téma vysvětluje postup při vytváření workflowu."
+title: Vytvoření workflow
+description: Toto téma vysvětluje postup při vytváření workflowu.
 author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: 7d4a3c5e12b226a7d801d8db9abcbd15738c1ce0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 0edf6f1a97b3bbd074168a3cb8bb5c2375492b71
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353349"
 ---
-
 # <a name="create-workflows"></a>Vytvoření workflow
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Toto téma vysvětluje postup při vytváření workflowu.
 
 ## <a name="open-the-workflow-editor"></a>Otevřete editor workflowu
 
-Modul aplikace Microsoft Dynamics 365 for Finance and Operations, ve kterém pracujete, určuje typy workflowu, které můžete vytvořit. Podle následujících kroků vyberte typ workflowu k vytvoření a otevření editoru workflowu.
+Modul Microsoft Dynamics 365 for Finance and Operations, ve kterém pracujete, určí typy workflow, které můžete vytvořit. Podle následujících kroků vyberte typ workflowu k vytvoření a otevření editoru workflowu.
 
 1. Otevřete modul, pro který chcete vytvořit nový workflow. Když například chcete vytvořit workflow pro nákupní žádanky, klepněte na **Zásobování a zdroje**.
 2. Klikněte na **Nastavení** &gt; **\[Název modulu\] workflowy**.
@@ -85,4 +84,3 @@ Až budete připraveni uložit a aktivovat workflow, postupujte následovně.
 
     - Pokud chcete aktivovat tuto verzi workflowu, klepněte na tlačítko **Aktivovat novou verzi**. Když je workflow aktivní, uživatelé do něj mohou odesílat dokumenty ke zpracování a schválení.
     - Pokud nechcete tuto verzi aktivovat, klepněte na tlačítko **Neaktivovat novou verzi**. Workflow můžete aktivovat později.
-

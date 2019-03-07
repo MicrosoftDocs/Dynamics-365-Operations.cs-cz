@@ -1,13 +1,13 @@
---- 
-title: "Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví"
-description: "Následující procedura vysvětluje, jak uživatel přiřazený k roli Správce systému nebo Návrhář elektronického výkaznictví může spravovat mapování modelu pro elektronické výkaznictví (ER) v samostatné konfiguraci ER."
+---
+title: Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
+description: Následující procedura vysvětluje, jak uživatel přiřazený k roli Správce systému nebo Návrhář elektronického výkaznictví může spravovat mapování modelu pro elektronické výkaznictví (ER) v samostatné konfiguraci ER.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349140"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
 
@@ -70,7 +70,7 @@ Vzhledem k tomu, že konfigurace ER se sdílí mezi společnostmi, můžete doko
 6. Klikněte na možnost Návrhář.
     * Všimněte si, že vytvořená konfigurace mapování modelu obsahuje nové prázdné mapování se stejným názvem, jako vytvořená konfigurace. Mějte na paměti, že pokud konfigurace vybraného nadřazeného modelu obsahuje mapování modelu, dojde ke zkopírování do nové konfigurace mapování modelu.   
 7. Klikněte na možnost Návrhář.
-8. Ve stromové struktuře vyberte Dynamics 365 for Operations\Table.
+8. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Tabulka'.
 9. Klikněte na možnost Přidat kořen.
 10. Do pole Název zadejte text „Společnost“.
     * Společnost  
@@ -123,7 +123,7 @@ Vzhledem k tomu, že konfigurace ER se sdílí mezi společnostmi, můžete doko
 5. Klepněte na možnost Vytvořit konfiguraci.
 6. Klikněte na možnost Návrhář.
 7. Klikněte na možnost Návrhář.
-8. Ve stromové struktuře vyberte Dynamics 365 for Operations\Table.
+8. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Tabulka'.
 9. Klikněte na možnost Přidat kořen.
 10. Do pole Název zadejte text „Společnost“.
     * Společnost  
@@ -161,5 +161,4 @@ Vzhledem k tomu, že konfigurace ER se sdílí mezi společnostmi, můžete doko
 6. Klikněte na položku Spustit.
 7. Klikněte na tlačítko OK.
     * Všimněte si, že výchozí konfigurace mapování modelu se používá v této konfiguraci formátu pro generování elektronických dokumentů (vytvořený výstup obsahuje kód společnosti).  
-
 

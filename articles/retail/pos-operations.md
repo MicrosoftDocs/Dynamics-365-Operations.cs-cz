@@ -1,40 +1,39 @@
 ---
-title: "Online a offline operace pokladního místa (POS)"
-description: "Toto téma poskytuje podrobnosti o operacích pokladního místa (POS) v aplikaci Microsoft Dynamics 365 for Retail. Určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici v offline režimu."
+title: Online a offline operace pokladního místa (POS)
+description: Toto téma obsahuje podrobnosti týkající se operací pokladních míst (POS) v aplikaci Microsoft Dynamics 365 for Retail. Určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici v offline režimu.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353809"
 ---
-
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
 [!include [banner](includes/banner.md)]
 
-Většina akcí, které uživatel provede v pokladním místě, se považuje za operace. Operace se konfigurují a spravují v aplikaci Microsoft Dynamics 365 for Retail. Mnohé operace lze přidat k tlačítkům v POS mřížce tlačítek. Uživatelé mohou potom vybírat tlačítka k vyvolání operací a provádění jejich funkcí. Další operace jsou součástí hlavní aplikace POS a jsou vyvolávány buď pomocí tlačítek na obrazovce nebo jako součást jiných workflow nebo procesů.
+Většina akcí, které uživatel provede v pokladním místě, se považuje za operace. Operace jsou konfigurovány a spravovány v účetním systému Microsoft Dynamics 365 for Retail. Mnohé operace lze přidat k tlačítkům v POS mřížce tlačítek. Uživatelé mohou potom vybírat tlačítka k vyvolání operací a provádění jejich funkcí. Další operace jsou součástí hlavní aplikace POS a jsou vyvolávány buď pomocí tlačítek na obrazovce nebo jako součást jiných workflow nebo procesů.
 
-Následující tabulka poksytuje podrobnosti o operacích, které jsou k dispozici v Retail Modern POS a Cloud POS pro Dynamics 365 for Retail. Tabulka rovněž určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici, když je pokladní místo (POS) v offline režimu.
+Následující tabulka obsahuje podrobnosti o operacích, které jsou k dispozici v Retail Modern POS a Cloud POS pro Dynamics 365 for Retail. Tabulka rovněž určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici, když je pokladní místo (POS) v offline režimu.
 
-Některé operace nejsou aktuálně k dispozici v Retail Modern POS nebo Cloud POS pro Dynamics 365 for Retail. Některé z těchto operací jsou buď operacemi specifickými pro národní prostředí, která vyžadují další rozšíření a konfigurace. Jiné jsou funkce aplikace Microsoft Dynamics AX 2012, které nejsou aktuálně podporovány.
+Některé operace nejsou v současné době dostupné v Retail Modern POS nebo Cloud POS pro Dynamics 365 for Retail. Některé z těchto operací jsou buď operacemi specifickými pro národní prostředí, která vyžadují další rozšíření a konfigurace. Jiné jsou funkce aplikace Microsoft Dynamics AX 2012, které nejsou aktuálně podporovány.
 
 Následující sloupce určují, kde lze operace vyvolat:
 
@@ -199,4 +198,3 @@ Následující sloupce určují, kde lze operace vyvolat:
 § Když je POS offline, pouze transakce v aktuální offline databázi lze stornovat k vrácení.
 
 \*\* Když je POS offline, pouze transakce v aktuální offline databázi kanálů se zobrazí v deníku.
-

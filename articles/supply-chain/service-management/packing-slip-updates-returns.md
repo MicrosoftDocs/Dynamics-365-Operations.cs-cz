@@ -1,31 +1,30 @@
 ---
-title: "Aktualizace dodacího listu pro vrácení"
-description: "Před přijetím vrácených položek na sklad je nutné aktualizovat dodací list objednávky, do které náleží."
+title: Aktualizace dodacího listu pro vrácení
+description: Před přijetím vrácených položek na sklad je nutné aktualizovat dodací list objednávky, do které náleží.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4aba61e6acf5fb959917da9ddea94c21fe1460d1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7532c5b1debdb498c2d6bab129208a412387c8fa
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344862"
 ---
-
 # <a name="packing-slip-updates-for-returns"></a>Aktualizace dodacího listu pro vrácení  
 
 [!include [banner](../includes/banner.md)]
@@ -48,6 +47,5 @@ Při aktualizaci dodacího listu pro vrácenou položku, která pochází z prod
 [Provádění aktualizací faktur pro vrácení](perform-invoice-updates-for-returns.md)
 
   
-
 
 

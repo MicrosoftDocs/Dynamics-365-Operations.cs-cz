@@ -1,13 +1,13 @@
 ---
-title: "Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)"
-description: "Toto téma obsahuje nové nebo aktualizované průvodce záznamem úloh vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme."
+title: Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)
+description: Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9cba30560762b5f647621aafb8db19241523f904
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348910"
 ---
-
 # <a name="new-or-updated-task-guides-november-2016"></a>Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje nové nebo aktualizované průvodce záznamem úloh vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme.
+Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme.
 
-Sjednocená knihovna APQC (listopad 2016 – všechny jazyky) obsahuje průvodce záznamem úloh, kteří jsou určení pro použití s nápovědou k Microsoft Dynamics 365 for Operations, aktualizací 3 Microsoft Dynamics 365 for Operations Platform, Microsoft Dynamics AX Platform aktualizace 2, aktualizaci Dynamics AX z května 2016 update a únorové vydání aplikace Microsoft Dynamics AX February 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md).
+Knihovna APQC Unified Library (listopad 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations, aktualizace Platform Update 3, Microsoft Dynamics AX aktualizace Platform Update 2, aktualizace Dynamics AX z května 2016 a vydání Microsoft Dynamics AX z února 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md).
 
 > [!NOTE]
-> Poznámka: Hvězdička (\*) vedle názvu řádku pro modelování podnikových procesů (BPM) označuje, že průvodce záznamem úloh pro tento obchodní proces byl vytvořen pro aktualizaci Dynamics 365 for Operations pro listopad 2016 a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.
+> Hvězdička (\*) vedle názvu řádku pro modelování podnikových procesů (BPM) označuje, že průvodce úkolem pro tento obchodní proces byl vytvořen pro aktualizaci Dynamics 365 for Operations listopad 2016 a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.
 
 ### <a name="accounts-payable"></a>Závazky
 
@@ -549,4 +548,3 @@ Sjednocená knihovna APQC (listopad 2016 – všechny jazyky) obsahuje průvodce
 [Noví nebo aktualizovaní dostupní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)](new-updated-task-guides-available-august-2016.md)
-

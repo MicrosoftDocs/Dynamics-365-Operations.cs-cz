@@ -1,13 +1,13 @@
---- 
-title: "Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu"
-description: "Tento postup se zaměřuje na vytváření zásad výpočtu kanbanového množství a jejich přidání do kanbanového pravidla pro optimalizaci velikosti a množství kanbanu."
+---
+title: Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu
+description: Tento postup se zaměřuje na vytváření zásad výpočtu kanbanového množství a jejich přidání do kanbanového pravidla pro optimalizaci velikosti a množství kanbanu.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanQuantityPolicy, KanbanRules
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: fffd623104dc403e230128c9234521ad1e39c7bb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6a947d4a5302c6ed1848396d50cfbfcb78aabf97
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352130"
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu
 
@@ -62,5 +62,4 @@ Tento postup se zaměřuje na vytváření zásad výpočtu kanbanového množst
 7. V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 8. Klikněte na odkaz na vybraném řádku v seznamu.
     * Vyberte zásadu Speaker2016, kterou jste právě vytvořili v předchozím podúkolu.  
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Oceňovací model dlouhodobého majetku a slučování knih odpisů"
-description: "V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů. V aplikaci Microsoft Dynamics 365 for Operations (verze 1611) byly funkce modelu hodnot a knihy odpisů sloučeny do jednoho celku, který se označuje jako kniha."
+title: Oceňovací model dlouhodobého majetku a slučování knih odpisů
+description: V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů. Ve vydání Microsoft Dynamics 365 for Operations (1611) byly funkce modelu hodnoty a knihy odpisů sloučeny do jednoho konceptu, který je označován jako kniha.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 26f4b73f67064a83eb7b3d57f2dc98d90602c254
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8ef31b63dd253ab5b436a65385e248c4753abf1e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342516"
 ---
-
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Oceňovací model dlouhodobého majetku a slučování knih odpisů
 
 [!include [banner](../includes/banner.md)]
 
-V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů. V aplikaci Microsoft Dynamics 365 for Operations (verze 1611) byly funkce modelu hodnot a knihy odpisů sloučeny do jednoho celku, který se označuje jako kniha.
+V předchozích verzích existovaly dva koncepty ocenění pro dlouhodobý majetek - oceňovací modely a knihy odpisů. Ve vydání Microsoft Dynamics 365 for Operations (1611) byly funkce modelu hodnoty a knihy odpisů sloučeny do jednoho konceptu, který je označován jako kniha.
 
 Funkce nová kniha je založena na dřívější funkcí oceňovacího modelu, ale obsahuje také všechny funkce, které byly dříve k dispozici jen v knihách odpisů. [![Kniha jako sloučení funkce modelu hodnoty a odpisu knihy](./media/fixed-assets.png)](./media/fixed-assets.png) Kvůli tomuto sloučení nyní můžete používat jednu sadu stránek, dotazy a sestavy pro všechny vaše procesy pro dlouhodobý majetek. Tabulky v tomto tématu popisují dřívější funkci pro knihy odpisů a oceňovací modely, spolu s novou funkcí knih.
 
@@ -69,7 +68,6 @@ Dotazy a sestavy podporují všechny knihy. Sestavy, které nejsou zahrnuty v n�
 
 ## <a name="upgrade"></a>Upgradovat
 Proces upgradu přesune vaše existující nastavení a všechny vaše existující transakce na novou účetní strukturu. Oceňovací modely zůstanou, jaké momentálně jsou, tedy jako knihy, které se účtují do hlavní knihy. Nicméně, knihy odpisů budou přesunuty do knihy, která má možnost **Zaúčtovat do hlavní knihy** nastavenu na **Ne**. Názvy deníku knihy odpisů bude přesunut do názvu deníku hlavní knihy, který má účtovací vrstvu nastavenou na **Žádná**.
-
 
 
 

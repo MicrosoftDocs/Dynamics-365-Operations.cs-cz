@@ -1,13 +1,13 @@
---- 
-title: "Import konfigurací pro generování dokumentů s daty aplikace"
-description: "K provedení kroků v tomto postupu musíte nejprve dokončit postup \"ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního\"."
+---
+title: Import konfigurací pro generování dokumentů s daty aplikace
+description: K provedení kroků v tomto postupu musíte nejprve dokončit postup "ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".
 author: NickSelin
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 1637ba59525f5f8bd9fe41a00c34eca90f7a2751
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340791"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Import konfigurací pro generování dokumentů s daty aplikace
 
@@ -75,5 +75,4 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
 29. Ve stromu vyberte Soubor.
     * Prohlédněte si strukturu formátu použitého k vygenerování sestavy Intrastat. Všimněte si, že je navržena k vygenerování souboru formátu XML vyplněním dat z datového modelu, které je založen na kořenové položce Pro odchozí dokument. Ověřte, že název vytvořeného souboru je definován ve formuláři dialogového okna uživatele (k tomu slouží zdroj dat fn).   
 30. Zavřete stránku.
-
 

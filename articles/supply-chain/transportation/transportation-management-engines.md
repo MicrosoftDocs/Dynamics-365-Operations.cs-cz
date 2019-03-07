@@ -1,13 +1,13 @@
 ---
-title: "Moduly správy přepravy"
-description: "Moduly správy přepravy definují logiku, které slouží ke generování a zpracování přepravní sazby v rámci správy přepravy."
+title: Moduly správy přepravy
+description: Moduly správy přepravy definují logiku, které slouží ke generování a zpracování přepravní sazby v rámci správy přepravy.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine
 audience: Application User
 ms.reviewer: josaw
@@ -18,24 +18,23 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361123"
 ---
-
 # <a name="transportation-management-engines"></a>Moduly správy přepravy
 
 [!include [banner](../includes/banner.md)]
 
 Moduly správy přepravy definují logiku, které slouží ke generování a zpracování přepravní sazby v rámci správy přepravy. 
 
-Modul správy přepravy vypočítá úlohy, například sazbu přepravy dopravce. Systém modulu vám umožní změnit strategie výpočtu za běhu, které jsou založeny na údajích v rámci aplikace Microsoft Dynamics 365 for Finance and Operations. Modulu správy přepravy se podobá modulu plug-in souvisejícímu s určitou smlouvou dopravce.
+Modul správy přepravy vypočítá úlohy, například sazbu přepravy dopravce. Systém modulu vám umožní změnit strategie výpočtu za běhu, které jsou založeny na údajích v aplikaci Microsoft Dynamics 365 for Finance and Operations. Modulu správy přepravy se podobá modulu plug-in souvisejícímu s určitou smlouvou dopravce.
 
 ## <a name="what-engines-are-available"></a>Které moduly jsou k dispozici?
-Následující tabulka obsahuje moduly správy přepravy, které jsou k dispozici v rámci aplikace Microsoft Dynamics 365 for Finance and Operations.
+Následující tabulka obsahuje moduly správy přepravy, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
 | Modul správy přepravy | popis                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -63,23 +62,23 @@ Ve většině případů můžete klepnout na tlačítko **Parametry** ve formul
 |          Parametr           |                                                                                  Popis                                                                                  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  <em>PřidělovatelZákladuSazby</em>   | Typ rozhraní .NET, který interpretuje data pro přiřazení základní sazby v konkrétním schématu. Syntaxe hodnoty parametru se skládá ze dvou segmentů oddělených svislou čárou ( |
-|  <em>KódRegistruUjetéVzdálenosti</em>  |                       Modul pro výpočet kilometrovného, který identifikuje záznam v modulu kilometrovného v databázi Microsoft Dynamics 365 for Finance and Operations.                        |
-| <em>PřidělovacíStroj</em> |                        Modul pro obecný výpočet, který identifikuje výpočet rozdělení nákladů v databázi Microsoft Dynamics 365 for Finance and Operations.                        |
+|  <em>KódRegistruUjetéVzdálenosti</em>  |                       Modul pro výpočet kilometrovného, který identifikuje záznam v modulu kilometrovného v databázi aplikace Microsoft Dynamics 365 for Finance and Operations.                        |
+| <em>PřidělovacíStroj</em> |                        Modul pro výpočet rozdělení nákladů, který identifikuje záznam ve výpočtu rozdělení nákladů v databázi aplikace Microsoft Dynamics 365 for Finance and Operations.                        |
 
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Jaké je použití metadat v modulech správy přepravy?
 ----------------------------------------------------------
 
-Moduly správy přepravy, které pracují s daty, která jsou definovány v rámci Dynamics 365 for Finance and Operations, mohou používat různá datová schémata. Systém správy přepravy umožňuje různým modulům správy přepravy používat stejné obecné fyzické databázové tabulky. Abyste byla zajištěna správnost výkladu běhových dat modulu, můžete definovat metadata pro databázové tabulky. Tím lze snížit náklady na sestavení nových modulů správy přepravy, protože další struktury tabulky a formuláře nejsou v rámci operací zapotřebí.
+Moduly správy přepravy, které pracují s daty, která jsou definovány v aplikaci Dynamics 365 for Finance and Operations, mohou používat různá datová schémata. Systém správy přepravy umožňuje různým modulům správy přepravy používat stejné obecné fyzické databázové tabulky. Abyste byla zajištěna správnost výkladu běhových dat modulu, můžete definovat metadata pro databázové tabulky. Tím lze snížit náklady na sestavení nových modulů správy přepravy, protože další struktury tabulky a formuláře nejsou v rámci operací zapotřebí.
 
 ## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Co lze použít jako vyhledávací data ve výpočtech sazby?
-Data, která lze použít při výpočtu sazby v rámci Microsoft Dynamics 365 for Finance and Operations, jsou ovládána prostřednictvím konfigurace metadat. Například pokud chcete vyhledávat sazby podle PSČ, nastavte metadata podle typu vyhledávání poštovního směrovacího čísla.
+Data, která lze použít při výpočtu sazby v aplikaci Microsoft Dynamics 365 for Finance and Operations, jsou řízena prostřednictvím konfigurace metadat. Například pokud chcete vyhledávat sazby podle PSČ, nastavte metadata podle typu vyhledávání poštovního směrovacího čísla.
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Vyžadují všechny konfigurace modulu metadata?
 Ne. Moduly správy přepravy, které slouží k načtení dat, která jsou vyžadována pro výpočet sazby z externích systémů, nebudou metadat požadovat. Data sazby pro tyto moduly lze získávat z externích přepravních systémů dopravce, obvykle pomocí webové služby. Například můžete používat modul pro výpočet kilometrovného načítající data přímo z map služby Bing a metadata pro tento modul tak nepotřebujete.
 
 | **Poznámka**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Moduly správy přepravy, které jsou dodávány s aplikací Finance and Operations pracují s daty, která se načítají z aplikace. Moduly, které se připojují k externím systémům, nejsou součástí operací. Model rozšíření využívající moduly však umožňují sestavení rozšíření pomocí nástroje Microsoft Dynamics 365 for Finance and Operations Visual Studio Tools. |
+| Moduly správy přepravy, které jsou dodávány s aplikací Finance and Operations pracují s daty, která se načítají z aplikace. Moduly, které se připojují k externím systémům, nejsou součástí operací. Model rozšíření využívající moduly však umožňují sestavení rozšíření pomocí nástrojů Microsoft Dynamics 365 for Finance and Operations Visual Studio. |
 
 ## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>Jak mohu nastavit metadata pro modul správy přepravy?
 Metadata pro moduly správy přepravy jsou nakonfigurovány odlišně pro různé typy modulů.
@@ -90,7 +89,7 @@ Metadata pro moduly správy přepravy jsou nakonfigurovány odlišně pro různ�
 | **Modul zóny**                                | Vyžaduje nastavení metadat přímo pro hlavní zónu.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Modul mezioperačního času** a **Modul kilometrovného** | Načte metadata přímo z formuláře pro nastavení konfigurace modulu pro výpočet kilometrovného.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Příklad metadat v modulu pro výpočet přepravních sazeb** Modul správy přepravy vyžaduje identifikaci původní adresy, cílového státu a země/oblasti a počáteční a koncový bod dodávky. Po použití těchto požadavků budou metadata vypadat jako údaje v následující tabulce. Tabulka obsahuje také informace o tom, jaký typ vstupních dat je zapotřebí.
+  **Příklad metadat v modulu pro výpočet přepravních sazeb** Modul správy přepravy vyžaduje identifikaci původní adresy, cílového státu a země/oblasti a počáteční a koncový bod dodávky. Po použití těchto požadavků budou metadata vypadat jako údaje v následující tabulce. Tabulka obsahuje také informace o tom, jaký typ vstupních dat je zapotřebí.
 -   Definujte tuto informaci pod **Správa přepravy** &gt; **Nastavení** na stránce **Typ základu sazby**.
 
 | Klasifikace | Jméno                          | Typ pole | Datový typ | Typ vyhledávání    | Povinné |
@@ -100,7 +99,6 @@ Metadata pro moduly správy přepravy jsou nakonfigurovány odlišně pro různ�
 | 3        | Cílové PSČ | Přiřazení | Řetězec    | PSČ    | Vybrané  |
 | 4        | Cílové koncové PSČ   | Přiřazení | Řetězec    | PSČ    | Vybrané  |
 | 5        | Cílová země           | Přiřazení | Řetězec    | Země / oblast |           |
-
 
 
 

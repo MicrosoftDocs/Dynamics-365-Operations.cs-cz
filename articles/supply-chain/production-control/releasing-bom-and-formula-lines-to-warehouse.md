@@ -1,13 +1,13 @@
 ---
-title: "Uvolnění řádků kusovníku a receptury do skladu"
-description: "Toto téma popisuje proces uvolnění suroviny pro řádky kusovníku a řádky receptury do skladu."
+title: Uvolnění řádků kusovníku a receptury do skladu
+description: Toto téma popisuje proces uvolnění suroviny pro řádky kusovníku a řádky receptury do skladu.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 8ccdb71f49652d6cca6ced2e9e9764d9ad0fffd8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343137"
 ---
-
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Uvolnění řádků kusovníku a receptury do skladu
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Metoda, která se používá k uvolnění řádků kusovníku a řádků receptu
 - **Uvolnění řádků kusovníku a řádků receptury jako součást výrobní zakázky nebo dávkové objednávky** – v této metodě se řádky kusovníku a receptury pro výrobní zakázku nebo dávkovou objednávku uvolňují součást procesu uvolnění objednávky. Obvykle se během uvolnění výrobní zakázky nebo dávkové úlohy uvolňují výrobní úlohy dílenským pracovníkům a vytisknout se výrobní doklady. Během tohoto procesu se stav objednávky také změní na **Uvolněno**.
 - **Uvolnění řádků kusovníku receptury pomocí dávkové úlohy nebo jako ruční interakce** – v této metodě lze řádky kusovníku a receptury uvolnit pouze prostřednictvím dávkové úlohy **Automaticky uvolnit řádky kusovníku a receptury** nebo ruční interakcí. Chcete-li ručně uvolnit řádky kusovníku a řádky receptury, na stránce se seznamem výrobních zakázek nebo na stránce s podrobnostmi výrobních zakázek v podokně akcí zvolte **Uvolnit do skladu**.
 
-Chcete-li rychle ukázat, jak uvolnit kusovníky a řádky receptury do výroby pomocí dávkové úlohy, podívejte se na toto krátké video na YouTube: [Uvolnění výdeje výroby do skladu v dávkách](https://www.youtube.com/watch?v=8urAJn50dQ8).
+Pro rychlou ukázku, jak uvolnit kusovník a řádky receptury do výroby pomocí dávkové úlohy, uvádí toto krátké video YouTube: [Vydání vyzvednutí výroby ve skladu v dávkách](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Uvolnění řádků kusovníku a receptury pomocí dávkové úlohy
 
@@ -99,4 +98,3 @@ Můžete uvolnit surovinu pro částečné množství dokončeného zboží nebo
     Jednotky, které jsou k dispozici, jsou definovány v ID skupiny klasifikace jednotek dokončeného zboží.
 
     Například dokončené zboží má následující převod jednotek mezi librami a paletami: 1 PL = 100 kg. Chcete-li vytvořit výrobní zakázku na 10 000 kg  dokončeného zboží, můžete uvolnit suroviny pro počet palet, které chcete vyrobit. Vyberte **PL** jako jednotku a vyberte odpovídající číslo v poli **Množství**.
-

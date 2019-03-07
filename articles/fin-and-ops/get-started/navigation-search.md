@@ -1,13 +1,13 @@
 ---
-title: "Hledání za účelem navigace"
-description: "V tomto tématu je vysvětleno, jak použít funkci vyhledávání k přechodu na stránky v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Hledání za účelem navigace
+description: Hledání za účelem navigace -Toto téma vysvětluje, jak používat funkci vyhledávání při přechodu na stránky v Microsoft Dynamics 365 for Finance and Operations.
 author: aneesmsft
 manager: AnnBe
 ms.date: 04/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7c05098815c6b330cbb9c7f5ce886779927c6804
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353004"
 ---
-
 # <a name="navigation-search"></a>Hledání za účelem navigace
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak použít funkci vyhledávání k přechodu na stránky v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Hledání za účelem navigace -Toto téma vysvětluje, jak používat funkci vyhledávání při přechodu na stránky v Microsoft Dynamics 365 for Finance and Operations.
 
 Finance and Operations poskytuje funkce pro celou řadu odvětví a vertikál. Aplikace obsahuje několik oblastí a stránek na pomoc s prováděním různých úloh. Pokud potřebujete rychle najít stránky, které potřebujete k dokončení úkolů, použijte vyhledávací funkce navigace.
 
@@ -64,4 +63,3 @@ Seznam výsledků hledání je omezen na 10 položek. Pokud ve výsledcích nena
 ## <a name="development"></a>Vývoj
 
 Z pohledu vývoje je funkce hledání navigace velmi jednoduchá, protože nevzniká téměř žádná prodleva mezi nasazením položek nabídky a možnosti jejich zobrazení ve výsledcích hledání. Dokud jsou položky nabídky propojeny z navigačního podokna nebo řídicího panelu, je možné je automaticky prohledávat.
-

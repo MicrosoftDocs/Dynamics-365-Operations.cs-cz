@@ -1,13 +1,13 @@
 ---
-title: "Nastavení a práce s výstrahami u podvodů kontaktního střediska"
-description: "Toto téma vysvětluje, jak nastavit pravidla výstrahy pro zástupce z oddělení služeb zákazníkům zaměřené na potenciálně podvodné informace při zpracování objednávek. Můžete definovat zvláštní kódy, které jsou automaticky nebo ručně použity k blokování podezřelých objednávek."
+title: Nastavení a práce s výstrahami u podvodů kontaktního střediska
+description: Toto téma vysvětluje, jak nastavit pravidla výstrahy pro zástupce z oddělení služeb zákazníkům zaměřené na potenciálně podvodné informace při zpracování objednávek. Můžete definovat zvláštní kódy, které jsou automaticky nebo ručně použity k blokování podezřelých objednávek.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13b6a18750e79a17c7f6034780922c64b12390e2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361491"
 ---
-
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Nastavení a práce s výstrahami u podvodů kontaktního střediska
 
 [!include [banner](includes/banner.md)]
@@ -69,4 +68,3 @@ Objednávka je uložena, a obsahuje příznak **Nezpracovávat**. Tento přízna
 Chcete-li zobrazit a spravovat objednávky, které jsou blokovány kvůli kontrole proti podvodu, přejděte na **Maloobchod** \> **Odběratelé** \> **Blokování objednávek**. Na stránce **Blokování objednávek** v seznamu vyberte položku a klikněte na **Blokování objednávky**, abyste viděli podrobnější zobrazení, které obsahuje informace o důvodu blokování. Na pevné záložce **Podrobnosti podvodu** můžete zobrazit systematická kritéria podvodu, která byla nalezena jako shoda pro objednávku a použité skóre. Pokud objednávka byla blokována ručně, můžete provést revizi všech komentářů zadaných uživatelem, který objednávku zablokoval pohledem do části **Poznámky o podvodu** na pevné záložce **Poznámky**.
 
 Další informace o práci s blokováním objednávek najdete v části [Blokování objednávek](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
-

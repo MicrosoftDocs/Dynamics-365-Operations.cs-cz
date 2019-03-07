@@ -1,13 +1,13 @@
 ---
-title: "Pracovní prostor fakturace dodavatelské spolupráce"
-description: "Toto téma vysvětluje, jak můžete zobrazit faktury dodavatele a přijmout faktury z pracovního prostoru spolupráce dodavatele."
+title: Pracovní prostor fakturace dodavatelské spolupráce
+description: Toto téma vysvětluje, jak můžete zobrazit faktury dodavatele a přijmout faktury z pracovního prostoru spolupráce dodavatele.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 5520012a00e918e8748b974773eeaf2450f0c55e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2368fae3913f67d9d2ce0bbe6b2e0bee7968bb15
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340515"
 ---
-
 # <a name="vendor-collaboration-invoicing-workspace"></a>Pracovní prostor fakturace dodavatelské spolupráce
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma vysvětluje, jak můžete zobrazit faktury dodavatele a přijmout faktury z pracovního prostoru spolupráce dodavatele.
 
-Pracovní prostor **Fakturace dodavatelské spolupráce** lze použít pro zobrazení informací o faktuře dodavatele a odeslání faktur do aplikace Microsoft Dynamics 365 for Finance and Operations pomocí možností workflowu.
+Pracovní prostor **fakturace dodavatelské spolupráce** lze použít pro zobrazení informace o faktuře dodavatele a odeslání faktur do aplikace Microsoft Dynamics 365 for Finance and Operations pomocí možností workflowu.
 
 
 <a name="vendor-collaboration-invoicing-workspace"></a>Pracovní prostor fakturace dodavatelské spolupráce
@@ -60,7 +59,6 @@ Vytvořit novou fakturu z nákupní objednávky
 Novou fakturu dodavatele můžete vytvořit, pokud vyberete akci **Nová** v pracovním prostoru **fakturace dodavatelské spolupráce**. Číslo nákupní objednávky a číslo faktury musí zadat dodavatel. Ve výchozím nastavení se všechny řádky z nákupní objednávky dodavatele zobrazí na nové faktuře. Před odesláním dodavatelské faktury do workflowu lze upravovat informace o množství a nákladech. Před odesláním můžete k faktuře také připojit soubory, poznámky, obrázky a adresy URL.
 
 Další informace naleznete v tématu [Dodavatelská spolupráce s externími dodavateli](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
-
 
 
 

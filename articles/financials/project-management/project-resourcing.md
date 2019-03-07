@@ -1,13 +1,13 @@
 ---
-title: "Prostředky pro projekt"
-description: "V tomto tématu jsou informace o přidělování zdrojů k projektu."
+title: Prostředky pro projekt
+description: V tomto tématu jsou informace o přidělování zdrojů k projektu.
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectsListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 34f80d283bb710d7db3137a439dbe8dc67d22682
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351647"
 ---
-
 # <a name="project-resourcing"></a>Prostředky pro projekt
 
 [!include [banner](../includes/banner.md)]
@@ -351,4 +350,3 @@ Po dokončení předcházejících úkolů můžete provést následující úko
 ## <a name="monitor-project-teams"></a>Monitorování projektových týmů
 1. Na stránce **Všechny projekty** vyberte odkaz **ID projektu** pro projekt **Upgrade XYZ fáze 2**.
 2. Na pevné záložce **Projektový tým a plánování** ověřte správnost uvedených prostředků.
-

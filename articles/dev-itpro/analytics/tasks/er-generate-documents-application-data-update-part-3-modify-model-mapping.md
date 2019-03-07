@@ -1,13 +1,13 @@
---- 
-title: "Úprava modelů a mapování pro generování dokumentů s daty aplikace"
-description: "K dokončení kroků v tomto postupu musíte nejprve dokončit postup ER Generování dokumentů s aktualizací dat aplikace (část 2 - generování dokumentů)."
+---
+title: Úprava modelů a mapování pro generování dokumentů s daty aplikace
+description: K dokončení kroků v tomto postupu musíte nejprve dokončit postup ER Generování dokumentů s aktualizací dat aplikace (část 2 - generování dokumentů).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 580f00faf6694dc2da476ffa75f995d9a24e0f8b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361928"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Úprava modelů a mapování pro generování dokumentů s daty aplikace
 
@@ -168,5 +168,4 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
 65. Klikněte na položku Uložit.
 66. Zavřete stránku.
 67. Zavřete stránku.
-
 

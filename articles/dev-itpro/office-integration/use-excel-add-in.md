@@ -1,13 +1,13 @@
 ---
-title: "Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel"
-description: "Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel."
+title: Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
+description: Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel.
 author: ChrisGarty
 manager: AnnBe
 ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,29 +17,28 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340630"
 ---
-
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Chcete-li otevřít data entity, můžete začít z aplikace Excel nebo Microsoft Dynamics 365 for Finance and Operations.
+Toto téma vysvětluje, jak otevřít data entity v aplikaci Microsoft Excel a potom zobrazit, aktualizovat a upravovat data pomocí doplňku Microsoft Dynamics Office pro aplikaci Excel. Pokud chcete otevřít data entity, začněte v aplikaci Excel nebo Microsoft Dynamics 365 for Finance and Operations.
 
-Otevřením dat entity v aplikaci Microsoft Excel můžete rychle a snadno zobrazit a upravovat data pomocí doplňku aplikace Excel. Tento doplněk vyžaduje aplikaci Microsoft Excel 2016.
+Otevřením dat entity v aplikaci Microsoft Excel můžete rychle a snadno zobrazit a upravovat data pomocí doplňku aplikace Excel. Tento doplněk vyžaduje Microsoft Excel 2016.
 
 > [!NOTE]
-> Pokud je klient Microsoft Azure Active Directory (Azure AD) nakonfigurován pro použití služby Active Directory Federation Services (AD FS), musíte ověřit, že byla použita aktualizace z května 2016 pro Office, aby vás doplněk aplikace Excel mohl správně přihlásit.
+> Pokud je klient Microsoft Azure Active Directory (Azure AD) nakonfigurován pro použití služby Active Directory Federation Services (AD FS), musíte ověřit, že byla použita aktualizace z května 2016 pro Office, aby vás doplněk aplikace Excel mohl správně přihlásit.
 
 Další informace o používání doplňku aplikace Excel se dozvíte v krátkém videu [Vytvoření šablony aplikace Excel pro vzory záhlaví a řádků v Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Otevření dat entity v Excelu při spuštění z aplikace Finance and Operations
-1. Na stránce v aplikaci Finance and Operations zvolte **Otevřít v sadě Microsoft Office**.
+1. Na stránce v aplikaci Finance and Operations zvolte **Otevřít v Microsoft Office**.
 
     Pokud je kořenový zdroj dat (tabulka) pro stránku stejný jako kořenový zdroj dat kořenové pro libovolnou entitu, jsou pro stránku generovány výchozí možnosti **Otevřít v aplikaci Excel**. Možnosti **Otevřít v aplikaci Excel** možnosti najdete na často používaných stránkách jako **Všichni dodavatelé** a **Všichni zákazníci**.
  
@@ -52,7 +51,7 @@ Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Vš
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Otevření dat entity v aplikaci Excel při spuštění z aplikace Excel
 1. V aplikaci Excel na kartě **Vložit** ve skupině **doplňky** zvolením možnosti **Obchod** otevřete Office Store.
-2. V Office Storu vyhledejte klíčové slovo **Dynamics** a zvolte **Přidat** vedle položky **Doplněk Microsoft Dynamics Office** (doplněk aplikace Excel).
+2. V Office Storu vyhledejte klíčové slovo **Dynamics** a zvolte **Přidat** vedle položky **Doplněk Microsoft Dynamics** (doplněk aplikace Excel).
 3. Pokud používáte doplněk aplikace Excel poprvé, zvolte **Důvěřovat tomuto doplňku** pro povolení spuštění doplňku aplikace Excel. Doplněk aplikace Excel je spuštěn v podokně na pravé straně okna aplikace Excel.
 4. Zvolte **Přidat informace o serveru** k otevření podokna **Možnosti**.
 5. Ve vašem prohlížeči zkopírujte adresu URL cílové instance aplikace Finance and Operations, vložte ji do pole **Adresa URL serveru** a potom odstraňte vše za názvem hostitele. Výsledná adresa URL by měla mít pouze název hostitele.
@@ -125,4 +124,3 @@ Existuje několik problémů, které lze vyřešit pomocí některé jednoduchý
 - **Je zobrazeno tlačítko Načíst aplety** – Pokud má doplněk aplikace Excel po přihlášení tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Chcete-li tento problém vyřešit, ověřte, že se v pravém horním rohu doplňku aplikace Excel zobrazuje správné uživatelské jméno. Pokud se zobrazí nesprávné uživatelské jméno, zvolte ho, odhlaste se a znovu přihlaste.
 - **Dostanete zprávu "Zakázáno"** – Pokud se při načítání metadat doplňkem aplikace Excel zobrazí zpráva "Zakázáno", účet, který je přihlášení k doplňku aplikace Excel, nemá oprávnění používat cílené služby, instance nebo databázi. Chcete-li tento problém vyřešit, ověřte, že se v pravém horním rohu doplňku aplikace Excel zobrazuje správné uživatelské jméno. Pokud se zobrazí nesprávné uživatelské jméno, zvolte ho, odhlaste se a znovu přihlaste.
 - **V aplikaci Excel se zobrazí prázdná webová stránka** – Pokud se v průběhu přihlašování otevře prázdná webová stránka, účet vyžaduje AD FS, ale verze Excelu, na které je doplněk spuštěný, není dost nedávná, aby načetla přihlašovací dialog. Chcete-li tento problém vyřešit, aktualizujte verzi aplikace Excel, kterou používáte. Pokud chcete aktualizovat verzi Excelu, když jste v síti s vyřazeným kanálem, použijte [Nástroj pro nasazení Officel](https://technet.microsoft.com/library/jj219422.aspx) pro [přesunutí z vyřazeného kanálu do stávajícího](https://technet.microsoft.com/library/mt455210.aspx).
-

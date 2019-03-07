@@ -1,13 +1,13 @@
---- 
-title: "Vytváření vlastností plánování pracovní doby"
-description: "Vlastnosti plánování pracovní doby se používají ke kategorizaci časových intervalů pracovní doby a definování nastavení, které musí operátoři brát v úvahu."
+---
+title: Vytváření vlastností plánování pracovní doby
+description: Vlastnosti plánování pracovní doby se používají ke kategorizaci časových intervalů pracovní doby a definování nastavení, které musí operátoři brát v úvahu.
 author: sorenva
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OpResLifeCycleManagementWorkspace, WrkCtrProperty
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 699ba33a766f5bbb6c03a41821a3eb809e3a3e55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: eef5844ade45b0c7fdd38624d842c1a96efcd639
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351003"
 ---
 # <a name="create-working-time-scheduling-properties"></a>Vytváření vlastností plánování pracovní doby
 
@@ -43,5 +43,4 @@ Vlastnosti plánování pracovní doby se používají ke kategorizaci časovýc
 2. Zadejte hodnotu do pole Název.
 3. Zadejte hodnotu do pole Hodnota.
 4. Klikněte na položku Uložit.
-
 

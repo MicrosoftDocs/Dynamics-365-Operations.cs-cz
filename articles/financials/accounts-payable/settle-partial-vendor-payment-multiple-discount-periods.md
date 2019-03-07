@@ -1,13 +1,13 @@
 ---
-title: "Vyrovnání částečné platby dodavatele, u níž je více období slev"
-description: "Tento článek vás provede scénářem, kdy je více částečných plateb provedeno pro dodavatele, který nabízí více platebních slev."
+title: Vyrovnání částečné platby dodavatele, u níž je více období slev
+description: Tento článek vás provede scénářem, kdy je více částečných plateb provedeno pro dodavatele, který nabízí více platebních slev.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c697d20bcbe6ab8f2bc38c03b181104db1f36838
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d88630a62cfdebf0daf19d3bb6af7fcc6e877876
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357949"
 ---
-
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Vyrovnání částečné platby dodavatele, u níž je více období slev
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,6 @@ Na stránce **Transakce dodavatele** April uvidí nový zůstatek 200,00.
 | APP-10061  | 12. 7. 2015 |         | 495,00                               |                                       | 0,00    | USD      |
 | SLEV-10061 | 12. 7. 2015 |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10062  | 7/20/2015 |         | 200,00                               |                                       | 0,00    | USD      |
-
 
 
 

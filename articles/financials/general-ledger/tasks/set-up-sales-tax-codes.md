@@ -1,13 +1,13 @@
---- 
-title: "Nastavit kódy DPH"
-description: "Kódy DPH se vytvoří pro každou nepřímou daň nebo clo, které je právnická osoba povinna vypočítávat, shromažďovat o nich informace a platit je finančním úřadům."
+---
+title: Nastavit kódy DPH
+description: Kódy DPH se vytvoří pro každou nepřímou daň nebo clo, které je právnická osoba povinna vypočítávat, shromažďovat o nich informace a platit je finančním úřadům.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f29442c2ef2e3d0008a74298fda218e4cbd93f8e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 968f4bb9f7d54cdb4de4f7842ed1777c9a9acd64
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349163"
 ---
 # <a name="set-up-sales-tax-codes"></a>Nastavit kódy DPH
 
@@ -52,5 +52,4 @@ Tento úkol používá ukázkovou společnost USMF.
 15. Klikněte na položku Uložit.
 16. Zavřete stránku.
 17. Klikněte na položku Uložit.
-
 

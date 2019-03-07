@@ -1,30 +1,29 @@
 ---
-title: "Pracovní prostor plateb dodavatelů"
-description: "Toto téma obsahuje informace o pracovním prostoru Platby dodavatele. Pracovní prostor Platby dodavatele zobrazuje informace související se zpracováním dodavatelských plateb."
+title: Pracovní prostor plateb dodavatelů
+description: Toto téma obsahuje informace o pracovním prostoru Platby dodavatele. Pracovní prostor Platby dodavatele zobrazuje informace související se zpracováním dodavatelských plateb.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymentWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 03fd290f8ad780e740a8fe6552c7a64c44b65a67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: fa8ddf52d34c3662e120509156ab0b343bb4cc16
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346104"
 ---
-
 # <a name="vendor-payments-workspace"></a>Pracovní prostor plateb dodavatelů
 
 [!include [banner](../includes/banner.md)]
@@ -69,5 +68,4 @@ V následující tabulce jsou uvedeny vizualizace dostupné na stránkách sest
 |         Workflow platby          |                                                                                <ul><li>Instance workflowu platby dodavatele</li><li>Instance workflowu platby podle schvalujícího</li><li>Instance workflowu platby podle společnosti</li><li>Průměrný počet dnů ve workflowu podle schvalujícího</li></ul>                                                                                |
 |    Zůstatek dodavatele vůči odběrateli     |                                                                                                                   <ul><li>Zůstatek dodavatele vůči odběrateli</li><li>Zůstatek dodavatele vůči na společnost</li><li>Zůstatek dodavatele vůči odběrateli – detaily</li></ul>                                                                                                                    |
 |    Faktury s blokováním platby     |                                                                                         <ul><li>Faktury s blokováním platby</li><li>Faktury s blokováním platby – detaily</li><li>Faktury s blokováním platby podle společnosti</li><li>Faktury s blokováním platby podle skupiny dodavatelů</li></ul>                                                                                          |
-
 

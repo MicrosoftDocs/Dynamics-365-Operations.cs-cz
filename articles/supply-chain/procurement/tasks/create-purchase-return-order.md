@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření nákupní vratky"
-description: "Tento postup popisuje, jak vytvořit nákupní vratku pomocí akce dobropisu a zkopírovat tak řádky z dokumentu faktury dodavatele do nové nákupní objednávky."
+---
+title: Vytvoření nákupní vratky
+description: Tento postup popisuje, jak vytvořit nákupní vratku pomocí akce dobropisu a zkopírovat tak řádky z dokumentu faktury dodavatele do nové nákupní objednávky.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e080252006d889e2f27db2bccb7b541f3ee4cf9e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9124100f84afb13acc2ac9dda7b9483afb01754
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354131"
 ---
 # <a name="create-a-purchase-return-order"></a>Vytvoření nákupní vratky
 
@@ -77,5 +77,4 @@ Tento postup popisuje, jak vytvořit nákupní vratku pomocí akce dobropisu a z
     * Toto pole slouží k zadání reference, která bude použita jako doklad pro deník příjemek produktů.  
 5. Klikněte na tlačítko OK.
     * Zboží bylo zaznamenáno jako expedované v nákupní vratce a byl vytvořen deník příjemek produktů. Akci Příjemka produktu můžete použít ke kontrole deníků vytvořených s nákupní objednávkou a zobrazit tak, co bylo přijato nebo vráceno, a kdy.  
-
 

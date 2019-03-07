@@ -1,13 +1,13 @@
 ---
-title: "Předpoklady pro převod standardních nákladů"
-description: "Toto téma popisuje úkoly prováděné před spuštěním převodu standardních nákladů."
+title: Předpoklady pro převod standardních nákladů
+description: Toto téma popisuje úkoly prováděné před spuštěním převodu standardních nákladů.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 955191a32165a32c455d0dba7424a82eb2559399
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 65844bd78363dc6638b16b3fd4ca163a3fde6a23
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351923"
 ---
-
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Předpoklady pro převod standardních nákladů
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Před spuštěním standardního převodu nákladů postupujte takto:
 
         Aktivní rozúčtování nákladů znamená, že povolení nákladů na vyráběnou položku bude mít za výsledek uložení segmentace nákladových skupin v záznamu nákladů položky. Pokud nevložíte žádnou hodnotu do pole **Rozúčtování nákladů**, nebude pro standardní nákladové položky udržována segmentace nákladových skupin. To tedy znamená, že standardní náklady na vyráběnou položku budou vypočteny a spravovány jako jedna částka bez rozdělení nákladových skupin do segmentů a že nákladové příspěvky vyráběných součástí budou agregovány do jediné částky.
     -   Pomocí pole **Odchylky od standardních hodnot** vyberte sumarizované údaje nebo údaje podle nákladových skupin. Volba podle nákladových skupin umožňuje identifikovat odchylky nákupní ceny a odchylky výroby podle nákladové skupiny. To také umožňuje identifikovat čtyři typy výrobních odchylek (velikost šarže, množství, cena a odchylky náhrady). Volba sumarizace znamená, že nelze identifikovat odchylky podle nákladové skupiny a že nelze identifikovat čtyři typy výrobních odchylek. Můžete zobrazit pouze souhrnnou výrobní odchylku. Zásady týkající se odchylek vzhledem ke standardním hodnotám pracují nezávisle na zásadách rozúčtování nákladů. To znamená, že nemusíte vybrat žádnou zásadu pro rozúčtování nákladů a přitom vybrat odchylky podle nákladových skupin, takže budou stále zaznamenány výrobní odchylky podle nákladových skupin.
-
 
 
 

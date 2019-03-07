@@ -1,13 +1,13 @@
 ---
-title: "Zásady nákupu"
-description: "V tomto článku jsou informace o zásadách nákupu. Zásady nákupu jsou soubor pravidel řídících proces nákupní žádanky. Zásady nákupu umožňují správcům zásobování implementovat strategie zásobování vytvořením struktury zásad, které jsou v souladu se strategickými požadavky organizace na nákupy."
+title: Zásady nákupu
+description: V tomto článku jsou informace o zásadách nákupu. Zásady nákupu jsou soubor pravidel řídících proces nákupní žádanky. Zásady nákupu umožňují správcům zásobování implementovat strategie zásobování vytvořením struktury zásad, které jsou v souladu se strategickými požadavky organizace na nákupy.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a16f365fa5a8b39dddac2886c36a8231de745a37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 675a7a8b0da228e789ee37ca8fe1d0c0ea01c283
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358754"
 ---
-
 # <a name="purchasing-policies"></a>Zásady nákupu
 
 [!include [banner](../includes/banner.md)]
@@ -148,7 +147,6 @@ Pravidlo pro tvorbu nákupní objednávky a konsolidaci poptávky definuje zása
     -   **Nepovolit konsolidaci poptávky** – nárok na konsolidaci poptávky nemají žádné schválené řádky nákupních žádanek. Tato možnost je vybrána ve výchozím nastavení a platí pouze pro řádky nákupních žádanek, které vyžadují ruční zpracování pro vytvoření nákupní objednávky.
     -   **Vždy povolit konsolidaci poptávky** – nárok na konsolidaci poptávky mají všechny schválené řádky nákupních žádanek. **Poznámka:** vyberete-li možnost **Vždy povolit konsolidaci poptávky** na kartě **Konsolidace poptávky**, ale vyberte možnost **Automatické vytváření nákupních objednávek** na kartě **Ruční vytvoření nákupní objednávky**, budou všechny nákupní žádanky pozdrženy pro ruční zpracování.
     -   **Povolit konsolidaci poptávky za těchto podmínek** – definujte kritéria, která určují, zda schválené řádky nákupních žádanek mají nárok na konsolidaci poptávky. Pro každý typ řádku nákupní žádanky můžete nastavit kritéria podle kategorie zásobování a dodavatele. Pokud vyberete možnost **Povolit konsolidaci poptávky za těchto podmínek**, můžete nastavit kritéria podle kategorie zásobování a dodavatele pro každý typ řádku nákupní žádanky. Po výběru kategorie zásobování jsou vybrány také všechny podkategorie pro danou kategorii zásobování. Vyberete-li možnost **Vše** pro konkrétní typ řádku, jsou všechny řádky nákupní žádanky tohoto typu řádku způsobilé pro konsolidaci poptávky.
-
 
 
 

@@ -1,40 +1,39 @@
 ---
-title: "Synchronizace produktů přímo z aplikace Finance and Operations na produkty v aplikaci Sales"
-description: "Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci produktů z aplikace Microsoft Dynamics 365 for Finance and Operations do aplikace Microsoft Dynamics 365 for Sales."
+title: Synchronizace produktů přímo z aplikace Finance and Operations na produkty v aplikaci Sales
+description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci produktů z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348243"
 ---
-
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Synchronizace produktů přímo z aplikace Finance and Operations na produkty v aplikaci Sales
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do Common Data Service pro aplikaci Dynamics 365](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+> Než budete moci použít řešení Zpeněžnění potenciálního zákazníka, měli byste se seznámit s modulem [Integrace dat do služby Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
-Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci produktů přímo z aplikace Microsoft Dynamics 365 for Finance and Operations do aplikace Microsoft Dynamics 365 for Sales.
+Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci produktů přímo z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Tok dat ve zpeněžení potenciálního zákazníka
 
@@ -79,7 +78,7 @@ Externě spravované produkty jsou automaticky přidány k prvnímu platnému ce
 
 > [!NOTE]
 > - Synchronizaci produktů se nezdaří, pokud neexistuje ceník se shodnou měnou.
-> - Můžete kontrolovat použitý ceník s integrací pomocí mapování pricelevelid.name [výchozí ceník (název)] v projektu integrace dat. Vstup musí být pouze malými písmeny. Například výchozí hodnota pro ceník v aplikaci Sales s názvem 'Standardní' bude: Cílové pole: pricelevelid.name [Výchozí ceník (název)] a typ typu: [{"transformType": "Default", "defaultValue": "standard"}].
+> - Můžete kontrolovat použitý ceník s integrací pomocí mapování pricelevelid.name [výchozí ceník (název)] v projektu integrace dat. Vstup musí být pouze malými písmeny. Například výchozí hodnota pro ceník v aplikaci Sales s názvem 'Standardní' bude: Cílové pole:pricelevelid.name [Výchozí ceník (název)] a typ mapování: [ { "transformType": "Default", "defaultValue": "standard" } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Nastavení mapování a předpokladů
 
@@ -120,7 +119,6 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 [Synchronizace hlaviček a řádků prodejní objednávky přímo z aplikace Finance and Operations do Sales](sales-order-template-mapping-direct-two-ways.md)
 
 [Synchronizace hlaviček a řádků prodejní faktury přímo z aplikace Finance and Operations do Sales](sales-invoice-template-mapping-direct.md)
-
 
 
 

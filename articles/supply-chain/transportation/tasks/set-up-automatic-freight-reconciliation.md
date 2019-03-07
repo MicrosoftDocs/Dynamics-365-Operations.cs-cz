@@ -1,13 +1,13 @@
---- 
-title: "Nastavení automatického odsouhlasení dopravného"
-description: "Tato procedura ukazuje, jak nastavit data pro automatické odsouhlasení dopravného."
+---
+title: Nastavení automatického odsouhlasení dopravného
+description: Tato procedura ukazuje, jak nastavit data pro automatické odsouhlasení dopravného.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/16/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCodeLookup, DefaultDashboard, TMSAuditMaster
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
 ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357466"
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Nastavení automatického odsouhlasení dopravného
 
@@ -71,5 +71,4 @@ Tato procedura ukazuje, jak nastavit data pro automatické odsouhlasení dopravn
     * Pokud se peněžní částky na účtu dopravného a faktuře dopravce liší, kódy důvodu přeplatku či nedoplatku určují účty, na kterých má být registrován rozdíl, dokud je rozdíl v rámci úrovní tolerance.  
 11. V poli Kód důvodu nedoplatku zadejte nebo vyberte hodnotu.
 12. Zavřete stránku.
-
 

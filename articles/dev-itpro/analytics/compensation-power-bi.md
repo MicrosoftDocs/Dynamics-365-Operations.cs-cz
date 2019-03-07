@@ -1,13 +1,13 @@
 ---
-title: "Obsah kompenzací v Power BI"
-description: "Toto téma popisuje obsah kompenzací v Power BI. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
+title: Obsah kompenzací v Power BI
+description: Toto téma popisuje obsah kompenzací v Power BI. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 8457182fee49e28256f2a1102ba77b2b4e89d5b2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 93c005d4b85b56f77ddd488c91e477970f4ccd07
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347277"
 ---
-
 # <a name="compensation-power-bi-content"></a>Obsah kompenzací v Power BI
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Obsah **Kompenzace** v Power BI se zobrazuje v pracovním prostoru **Správa kom
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
-Sestavy, které jsou součástí obsahu **Kompenzace**, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
+Sestavy, které jsou součástí obsahu **Kompenzace** v Power BI, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
 
 | Sestava                     | Obsah |
 |----------------------------|----------|
@@ -46,10 +45,10 @@ Sestavy, které jsou součástí obsahu **Kompenzace**, mají grafy a tabulky ob
 | Analýza platů pozice      | Nejvyšší a nejnižší hodinová a stálá mzda, pozice s nejvyšší a nejnižší mzdou a pozice na plný úvazek a na částečný úvazek |
 | Analýza plánu kompenzací | Přihlášení zaměstnance podle vybrané zaměstnanecké výhody |
 
-Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Následující data se používají k vyplňování sestav v obsahu **Kompenzace** Power BI. Tato tabulka zobrazuje entity, na kterých je balíček obsahu založen.
+Následující data se používají k vyplňování sestav v obsahu **Kompenzace** v Power BI. Tato tabulka zobrazuje entity, na kterých je balíček obsahu založen.
 
 | Celek                   | Obsah                                                                                                   | Vztahy s jinými entitami |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
@@ -73,4 +72,3 @@ Následující data se používají k vyplňování sestav v obsahu **Kompenzace
 | Jméno zaměstnance            | Křestní jméno, příjmení a celé jméno                                                                       | Aktuální zaměstnanec, ukončený zaměstnanec, trend zaměstnance |
 | Titul zaměstnance           | Název a datum služebního věku                                                                                   | Aktuální zaměstnanec, ukončený zaměstnanec, trend zaměstnance |
 | Trend zaměstnance           | Pracovníci během času, počet zaměstnanců, společnost a pozice                                                        | Společnost, kompenzace, geografické umístění, jméno zaměstnance, nadřízený, posun kalendáře, datum, pracovní zařazení, demografické údaje, práce, zaměstnání, zaměstnanecké výhody |
-

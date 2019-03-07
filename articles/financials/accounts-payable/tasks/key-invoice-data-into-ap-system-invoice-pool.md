@@ -1,13 +1,13 @@
---- 
-title: "Zadání dat faktury do systému závazků s použitím evidence faktur"
-description: "Tento průvodce úkolem popisuje postup použití registru faktur k vytvoření faktur."
+---
+title: Zadání dat faktury do systému závazků s použitím evidence faktur
+description: Tento průvodce úkolem popisuje postup použití registru faktur k vytvoření faktur.
 author: abruer
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4b4e9a52a383d4acc0bf2adc669fd88c0c0f7402
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 96040b1c1ba130f773ba0defbf7bf1dcebedfc13
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357443"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>Zadání dat faktury do systému závazků s použitím evidence faktur
 
@@ -77,5 +77,4 @@ Tento průvodce úkolem popisuje postup použití registru faktur k vytvoření 
 14. Klikněte na Transakce.
 15. Vyberte fakturu, kterou jste vytvořili.
     * Časové rozlišení registru faktur bylo stornováno a zaúčtováno na příslušný účet výdajů.  
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Konfigurovat účetní struktury"
-description: "Toto téma obsahuje informace o účetní struktuře a finančních dimenzích."
+title: Konfigurovat účetní struktury
+description: Toto téma obsahuje informace o účetní struktuře a finančních dimenzích.
 author: aprilolson
 manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 8435389a523d8393e9d4daa0cb1244203c0dbb12
 ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351716"
 ---
-
 # <a name="configure-account-structures"></a>Konfigurovat účetní struktury
 
 [!include[banner](../includes/banner.md)]
@@ -100,4 +99,3 @@ Při nastavování účetních struktur existují doporučené postupy, které m
 Jakmile jste s novým nastavením nebo změnou účetní struktury spokojení, musíte ji aktivovat. Pokud je účetní struktura přiřazena hlavní knize, může být tato aktivace zdlouhavý proces, protože všechny nezaúčtované transakce v systému musí být synchronizované podle nové struktury. Zaúčtované transakce nejsou změnami účetní struktury ovlivněny.
 
 Další informace naleznete v tématu [Plánování účtových osnov](plan-chart-of-accounts.md), [finanční dimenze](financial-dimensions.md) a [Zadání kombinací účtů a dimenzí (segmentovaná kontrola položek)](enter-account-dimension-combinations-segmented-entry-control.md).
-

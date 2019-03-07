@@ -1,13 +1,13 @@
 ---
-title: "Tisk dokumentů"
-description: "V aplikaci Microsoft Dynamics 365 for Finance and Operations můžete tisknout dokumenty buď pomocí lokální tiskárny nebo zařízení připojeného k síti. Tento článek poskytuje přehled způsobu tisku dokumentů."
+title: Tisk dokumentů
+description: V aplikaci Microsoft Dynamics 365 for Finance and Operations můžete tisknout dokumenty buď pomocí lokální tiskárny nebo zařízení připojeného k síti. Tento článek poskytuje přehled způsobu tisku dokumentů.
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 4fd20022ff91fedb6d0323e82fbe3c1acae38e48
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362043"
 ---
-
 # <a name="document-printing"></a>Tisk dokumentů
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ V aplikaci Microsoft Dynamics 365 for Finance and Operations můžete tisknout d
 
 ## <a name="printing-overview"></a>Přehled tisku
 
-Microsoft Dynamics 365 for Finance and Operations poskytuje integrované služby a klientské aplikace, které usnadňují generování, ukládání a distribuci dokumentů, které podporují podnikatelské aktivity. V aplikaci Finance and Operations můžete tisknout dokumenty buď pomocí lokální tiskárny nebo zařízení připojeného k síti. Kromě toho můžete exportovat stránky a sestavy aplikace Finance and Operations přímo z klienta jako soubory PDF nebo dokumenty systému Microsoft Office. V neposlední řadě vám distribuované pracovní vytížení umožňuje tisknout obchodní dokumenty přímo z mobilní zařízení pomocí síťových prostředků. Přestože se požadavky na tisk mohou lišit, všechna odvětví obvykle musí vytvářet tištěné kopie obchodních dokumentů pomocí aplikace Finance and Operations. Tisk dokumentů na síťových zařízeních z hostovaných aplikací představuje ojedinělou řadu výzev. Několik příkladů:
+Microsoft Dynamics 365 for Finance and Operations poskytuje integrované služby a klientské aplikace, které usnadňují generování, ukládání a distribuci dokumentů, které podporují podnikatelské aktivity. V aplikaci Finance and Operations můžete tisknout dokumenty buď pomocí lokální tiskárny nebo zařízení připojeného k síti. Kromě toho můžete exportovat stránky a sestavy aplikace Finance and Operations přímo z klienta jako soubory PDF nebo dokumenty Microsoft Office. V neposlední řadě vám distribuované pracovní vytížení umožňuje tisknout obchodní dokumenty přímo z mobilní zařízení pomocí síťových prostředků. Přestože se požadavky na tisk mohou lišit, všechna odvětví obvykle musí vytvářet tištěné kopie obchodních dokumentů pomocí aplikace Finance and Operations. Tisk dokumentů na síťových zařízeních z hostovaných aplikací představuje ojedinělou řadu výzev. Několik příkladů:
 
 - Tiskové ovladače nemusí být k dispozici na zařízeních uživatele.
 - Zařízení uživatele nemusí být připojeno k firemní síti.
@@ -76,4 +75,3 @@ Následující diagram znázorňuje základní komponenty, které pomáhají s p
 [![servisní-komponenty-pro-síťový-tisk\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Všimněte si, že jednu tiskárnu lze registrovat s více agenty pro směrování dokumentů. Chcete-li vyřešit předvolby tiskárny, hostovaná služba používá síťovou cestu, která jednoznačně identifikuje každou síťovou tiskárnu. Výsledkem je, že i když je tiskárna registrována více klienty, zobrazí se jako jedna volba v seznamu tiskáren dostupných v aplikacích Finance and Operations.
-

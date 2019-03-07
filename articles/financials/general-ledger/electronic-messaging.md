@@ -1,33 +1,32 @@
 ---
-title: "Elektronické zprávy"
-description: "Toto téma poskytuje přehled a informace o nastavení elektronických zpráv v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Elektronické zprávy
+description: Toto téma poskytuje přehled a informace o nastavení pro elektronické zprávy v Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 232398a6c4193d0074881e26fff361deb9784bf2
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357926"
 ---
-
 # <a name="electronic-messaging"></a>Elektronické zprávy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled a informace o nastavení elektronických zpráv v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Toto téma poskytuje přehled a informace o nastavení pro elektronické zprávy v Microsoft Dynamics 365 for Finance and Operations.
 
 Nedávno vlády a legislativní orgány různých zemí a regionů na celém světě zavedly požadavky na podávání zpráv pro společnosti, které jsou registrovány v těchto zemích nebo regionech. Účelem požadavků je umožnit získávání údajů z těchto společností v elektronickém formátu přímo ze systémů, kde byly účtovány, uloženy a zpracovány.
 
@@ -39,7 +38,7 @@ Elektronické zprávy jsou založeny na následujících entitách:
 
 - **Elektronická zpráva** – Sestava nebo prohlášení, které mají být vykázány anebo přenášeny interně. Příkladem jsou sestavy, které jsou odesílány daňovému úřadu.
 - **Položky elektronických zpráv** – Záznamy, které mají být zahrnuty ve vykazované zprávě.
-- **Zpracování elektronické zprávy** – Sled akcí, buď propojený nebo odpojený, který by měl být spuštěn pro shromažďování požadovaných dat, generování sestav, ukládání dat do úložiště Microsoft Azure Blob, přenos sestav mimo systém, získání odpovědí mimo systém a aktualizace databáze založené na získaných informacích.
+- **Zpracování elektronické zprávy** – Sled akcí, buď propojený nebo odpojený, který by měl být spuštěn pro shromažďování požadovaných dat, generování sestav, ukládání dat do úložiště objektů blob Microsoft Azure, přenos sestav mimo systém, získání odpovědí mimo systém a aktualizace databáze založené na získaných informacích.
 
 Následující obrázek znázorňuje tok dat pro elektronické zprávy.
 
@@ -452,4 +451,3 @@ Nyní můžete buď odstranit nebo aktualizovat stav zprávy. Pokud chcete aktua
 ![Aktualizace stavu zprávy](media/update-status.png)
 
 Stav zprávy je aktualizován na **Připraveno** a nyní můžete vygenerovat sestavu výběrem možnosti **Generovat sestavu**. Sestava se vygeneruje a aktualizuje se stav zprávy a protokol akce. Chcete-li zobrazit vygenerovanou sestavu, zvolte tlačítko **Příloha** v podokně akcí.
-

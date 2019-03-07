@@ -1,13 +1,13 @@
 ---
-title: "Nastavení masek čárových kódů"
-description: "Toto téma popisuje, jak nastavit znaky masky čárového kódu a masky čárového kódu a jak přiřadit masky čárového kódu k čárovým kódům."
+title: Nastavení masek čárových kódů
+description: Toto téma popisuje, jak nastavit znaky masky čárového kódu a masky čárového kódu a jak přiřadit masky čárového kódu k čárovým kódům.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d3527807650061804212abf67e536c17078aabf9
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340607"
 ---
-
 # <a name="set-up-bar-code-masks"></a>Nastavení masek čárových kódů
 
 [!include [banner](includes/banner.md)]
@@ -51,7 +50,7 @@ Masky čárových kódů se používají k vytvoření čárových kódů a rych
 | Zaměstnanec         | Určuje segment čárového kódu pro identifikační číslo zaměstnance používané pro přihlášení k POS pomocí čárového kódu. |
 | Zákazník         | Označuje segment ID odběratelů. |
 | Zadání dat       | *Není ještě implementováno.* |
-| Kód slevy    | *Odepsáno* k verzi Dynamics 365 for Retail z jara 2017. Dříve: Označuje kód slevy pro čárový kód, který se používá za účelem přidání slevy k transakci pokladního místa. |
+| Kód slevy    | *Zastaralé* k verzi Dynamics 365 for Retail z jara 2017. Dříve: Označuje kód slevy pro čárový kód, který se používá za účelem přidání slevy k transakci pokladního místa. |
 | Kód kupónu      | Označuje kód kupónu pro čárový kód, použitý pro přidání slevy k prodejní objednávce. T nahradilo kód slevy. |
 | Dárkový poukaz        | Označuje číslo dárkového poukazu při vydávání nebo platbě dárkovým poukazem. |
 | Věrnostní karta     | Přidá věrného zákazníka k transakci a může být použita při platbě věrnostní kartou. |
@@ -84,4 +83,3 @@ Masky čárových kódů musí být před použitím přiřazeny k čárovým k�
 5. Klikněte na tlačítko **Uložit**.
 
 Masku čárového kódu lze nyní použít k vytvoření čárových kódů pro produkty. Výše uvedené kroky jsou příklady vytváření masek čárových kódů pro produkty, ale také ukazují, jak vytvořit masky čárového kódu pro všechny ostatní podporované typy čárového kódu. Masky čárových kódů, typy a délky je třeba upravit pro použití v konkrétním prostředí.
-
