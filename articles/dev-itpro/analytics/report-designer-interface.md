@@ -1,13 +1,13 @@
 ---
-title: "Rozhraní Návrháře sestav"
-description: "Tento článek vysvětluje, jak navigovat v návrháři sestav, a jak používat různé možnosti podle specifických požadavků."
+title: Rozhraní Návrháře sestav
+description: Tento článek vysvětluje, jak navigovat v návrháři sestav, a jak používat různé možnosti podle specifických požadavků.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e9b77e2b510a72d1e3fe3c68c997d58245a86a27
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368023"
 ---
-
 # <a name="report-designer-interface"></a>Rozhraní Návrháře sestav
 
 [!include [banner](../includes/banner.md)]
@@ -139,7 +138,7 @@ Nabídka **Nástroje** je k dispozici všem uživatelům, avšak některé pří
 |-------------------------------|-------------|
 | Zamknout                       | Uplatní heslo na aktuální stavební blok. Tento příkaz je k dispozici pro uživatele, kteří mají role **Návrhář** **Správce**. |
 | Stav fronty sestav           | Otevře dialogové okno **Stav fronty sestav**, v němž se zobrazí všechny nedávno vygenerované sestavy a podrobnosti jednotlivých sestav. |
-| Informace o zdrojovém systému     | Zobrazí nastavení systému Microsoft Dynamics ERP. Tento příkaz je k dispozici pro uživatele, kteří mají role **Návrhář** **Správce**. |
+| Informace o zdrojovém systému     | Zobrazte nastavení pro systém Microsoft Dynamics ERP. Tento příkaz je k dispozici pro uživatele, kteří mají role **Návrhář** **Správce**. |
 | Rezervované položky             | Zobrazí definice řádků, definice sloupců, definice organizačních stromů a definice sestav, které jsou momentálně otevřené. Tento příkaz je k dispozici pro uživatele, kteří mají role **Návrhář** **Správce**. |
 | Aktualizovat finanční data v mezipaměti | Aktualizuje data ve sloupci finančních dimenzí. |
 | Možnosti                       | Otevře dialogové okno **Možnosti**, kde můžete upravit uživatelské předvolby pro Návrhář sestav. |
@@ -229,4 +228,3 @@ Panel nástrojů návrháře sestav poskytuje rychlý přístup k příkazům na
 [Finanční výkaznictví](financial-reporting-intro.md)
 
 [Generování finanční sestavy](generate-financial-report.md)
-

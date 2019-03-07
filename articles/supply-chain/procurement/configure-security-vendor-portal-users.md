@@ -1,13 +1,13 @@
 ---
-title: "Zabezpečení uživatele portálu pro dodavatele"
-description: "V tomto článku se vysvětluje, jak nastavit zabezpečení pro externí dodavatele, kteří používají portál pro dodavatele. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016."
+title: Zabezpečení uživatele portálu pro dodavatele
+description: V tomto článku se vysvětluje, jak nastavit zabezpečení pro externí dodavatele, kteří používají portál pro dodavatele. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserManagement
 audience: Application User
 ms.reviewer: josaw
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 176eeb2ddb145d21f7ff9fd94a9a56e173caee59
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5819d21a91ac2a7c91f19fd6d80fd7b983411545
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367057"
 ---
-
-# <a name="vendor-portal-user-security"></a>Zabezpečení uživatele portálu pro dodavatele
+# <a name="vendor-portal-user-security"></a>Zabezpečení uživatele dodavatelského portálu
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,7 +36,7 @@ Funkce portálu dodavatele byla v Dynamics 365 for Operations verze 1611 nahraze
 ## <a name="setting-up-a-vendor-portal-user"></a>Nastavení uživatele dodavatelského portálu
 Před vytvořením uživatelského účtu pro někoho, kdo bude používat portál pro dodavatele, musíte povolit dodavatele pro spolupráci s portálem pro dodavatele. Použijte pole **Spolupráce v rámci nákupní objednávky** na kartě **Obecné** na stránce **Dodavatelé**. Externí dodavatelé, kteří používají portál pro dodavatele musí mít následující nastavení:
 
--   Účet uživatele Microsoft Azure Active Directory (AAD) musí být registrován pro dodavatele na stránce **Uživatelé** v aplikaci Dynamics AX.
+-   Účet uživatele MicrosoftAzure Active Directory (AAD) musí být registrován pro dodavatele na stránce **Uživatelé** v aplikaci Dynamics AX.
 -   Dodavatel musí mít role zabezpečení **Dodavatel (externí)**, ne roli **Systémový uživatel**. **Poznámka:** Role **Systémový uživatel** je automaticky přidělena, když vytvoříte nový účet uživatele v aplikaci Dynamics AX. Proto je nutné odebrat tuto roli a potvrdit varovnou zprávu, která se zobrazí.
 -   Dodavatelský uživatel nemá oprávnění k přidání dalších polí z tabulky nákupní objednávky do jejich zobrazení nákupní objednávky. Na kartě **Přizpůsobení** na kartě **Uživatelé**, nastavte možnost **Explicitní individuální nastavení je povoleno** pro uživatele na **Ne**.
 -   Uživatelský účet musí být přidružen k registrované kontaktní osobě. Na stránce **Uživatelé** vyberte kontaktní osobu v poli **Jméno**. Osoba, kterou vyberete, má mít roli **Kontakt** pro příslušného dodavatele.
@@ -48,7 +47,6 @@ Jestliže stejná osoba vyžaduje přístup k portálu pro dodavatele pro více 
 --------
 
 [Dodavatelská spolupráce](collaborate-vendors-vendor-portal.md)
-
 
 
 

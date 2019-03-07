@@ -1,13 +1,13 @@
 ---
-title: "Zálohové faktury pro východní Evropu"
-description: "Zálohová faktura je dokument, který vytvoříte pro odběratele nebo dodavatele. Zálohová faktura uvádí částku, která musí být předplacena na prodejní objednávce. Toto téma obsahuje informace o zálohových fakturách pro východní Evropu."
+title: Zálohové faktury pro východní Evropu
+description: Zálohová faktura je dokument, který vytvoříte pro odběratele nebo dodavatele. Zálohová faktura uvádí částku, která musí být předplacena na prodejní objednávce. Toto téma obsahuje informace o zálohových fakturách pro východní Evropu.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 03129177bca7d1a104d297cff70978c43f0bb9c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 97be3eee9ebb99af33e3153fe7726ed5b086b03c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370100"
 ---
-
 # <a name="advance-invoices-for-eastern-europe"></a>Zálohové faktury pro východní Evropu
 
 [!include [banner](../includes/banner.md)]
@@ -148,7 +147,6 @@ Vytvořte nákupní objednávku nebo vyberte stávající nákupní objednávku.
 | Procento                                         | Zadejte procento zálohy pro nákupní objednávku.                                                         |
 | Aktualizovat nákup                                 | Vyberte některou z následujících možností: Částka zálohové faktury se vypočítá na základě částky nákupní objednávky pro položky. |
 | Účetní profil se zálohovým dokladem deníku | Zadejte účetní profil pro zálohu.                                                                          |
-
 
 
 

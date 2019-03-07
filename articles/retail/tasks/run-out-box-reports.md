@@ -1,13 +1,13 @@
---- 
-title: "Generování a spuštění předpřipravených sestav"
-description: "Použijte tohoto průvodce úkolem ke spuštění předem připravených sestav v centrále z jiných pracovních prostorů a dotazy a prodejní sestavy, které jsou umístěny pod Maloobchodní a velkoobchodní prodej."
+---
+title: Generování a spuštění předpřipravených sestav
+description: Použijte tohoto průvodce úkolem ke spuštění předem připravených sestav v centrále z jiných pracovních prostorů a dotazy a prodejní sestavy, které jsou umístěny pod Maloobchodní a velkoobchodní prodej.
 author: ashishmsft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup, SrsReportViewerForm
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b42f86fc243312d18654b1a048f9dffb29afd187
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365240"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generování a spuštění předpřipravených sestav
 
@@ -66,5 +66,4 @@ K vytvoření tohoto záznamu jsou použita ukázková data společnosti USRT. T
 4. Klikněte na tlačítko OK.
 5. Klikněte na Exportovat.
 6. Klikněte na PDF.
-
 

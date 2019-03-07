@@ -1,13 +1,13 @@
 ---
-title: "Vstupní certifikáty EU"
-description: "V tomto článku jsou informace o vstupních certifikátech Evropské unie (EU)."
+title: Vstupní certifikáty EU
+description: V tomto článku jsou informace o vstupních certifikátech Evropské unie (EU).
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9b3346a5229d0cc9e7af74f17ea6a327e5ba253a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6e066bd2adbb9f27f3b0850ca25978d0777590d2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370114"
 ---
-
 # <a name="eu-entry-certificates"></a>Vstupní certifikáty EU
 
 [!include [banner](../includes/banner.md)]
@@ -122,7 +121,6 @@ Pokud nemáte přístup ke stránkám, které se používají k dokončení toho
 </tr>
 </tbody>
 </table>
-
 
 
 

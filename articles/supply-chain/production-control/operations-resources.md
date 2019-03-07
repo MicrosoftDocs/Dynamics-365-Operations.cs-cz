@@ -1,13 +1,13 @@
 ---
-title: "Prostředky aplikace Operations"
-description: "Provozní prostředek provádí aktivity projektu nebo výrobního procesu. Mohou být různého typu a mohou mít různé schopnosti."
+title: Prostředky aplikace Operations
+description: Provozní prostředek provádí aktivity projektu nebo výrobního procesu. Mohou být různého typu a mohou mít různé schopnosti.
 author: sorenva
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e11d64ec37775f4fe2fc113af238a6294b459454
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366597"
 ---
-
 # <a name="operations-resources"></a>Prostředky aplikace Operations
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,6 @@ Při použití skupiny prostředků jako štíhlé pracovní buňky je kapacita 
 
 ## <a name="costing-resources"></a>Prostředky výpočtu nákladů
 Při definování činnosti, například operace postupu nebo hodinové prognózy projektu, můžete zadat požadavek pro konkrétní provozní prostředek nebo skupinu prostředků. Můžete však také určit požadavek pro provozní prostředek určitého typu nebo provozní prostředek, který má specifickou schopnost nebo kompetenci. Z tohoto důvodu není provedeno vlastní přiřazení prostředku, dokud nebude naplánovaná aktivita a rezervována kapacita. Proto můžete pro operaci postupu zadat, že odhad a výpočet kusovníku musí být založeny na určitém provozním prostředku. Tento provozní prostředek je označován jako prostředek výpočtu nákladů. Můžete také přenést nákladové kategorie a časy operací z prostředku výpočtu nákladů do aktivity. Při plánování operace se odhad a výpočet kusovníku provede pomocí provozního prostředku, který je skutečně naplánován.
-
 
 
 

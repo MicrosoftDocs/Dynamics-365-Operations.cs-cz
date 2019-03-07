@@ -1,13 +1,13 @@
 ---
-title: "Úpravy kurzů"
-description: "Toto téma uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému."
+title: Úpravy kurzů
+description: Toto téma uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: eece22113824fd520568dc46bbd384bda23c3c8d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dbc715a23e14d96e0ac93e47ff793e49fad24b93
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370158"
 ---
-
 # <a name="exchange-rate-adjustments"></a>Úpravy kurzů
 
 [!include [banner](../includes/banner.md)]
@@ -95,7 +94,6 @@ Například u tohoto přecenění si všimněte, že položka ze 1. ledna 2013 j
 |3-led-13 | Kreditní | 0 CAD/5,000 USD | Zisk po úpravě v nerealizované měně | Přecenění cizí měny | Zisk ze směnného kurzu | X |   |
 
 Chování systému je stejné bez ohledu na to, zda je volba **Oprava** v části **Storno transakce** na stránce **Parametry hlavní knihy** nastavená na **Ano** nebo **Ne**.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Definování závislosti konfigurace elektronického výkaznictví na jiných komponentách"
-description: "K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh, ER Správa konfigurací mapování modelů, a mít přístup k aplikaci Microsoft Dynamics Lifecycle Services (LCS)."
+---
+title: Definování závislosti konfigurace elektronického výkaznictví na jiných komponentách
+description: K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh, ER Správa konfigurací mapování modelů, a mít přístup k aplikaci Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 18eb8de7c851e5477d93a00f744fe56929c43ca2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365079"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definování závislosti konfigurace elektronického výkaznictví na jiných komponentách
 
@@ -46,7 +46,7 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
     * Požadované závislostí mohou být seskupeny. Je-li vybrán typ seskupení 'Všechny', podmínka závislosti této skupiny bude považována za splněnou, pokud bude splněna podmínka každé závislosti z této skupiny a podřízené skupiny. Je-li vybrán typ seskupení 'Jeden', podmínka závislosti této skupiny bude považována za splněnou, pokud bude splněna podmínka alespoň jedné závislosti z této skupiny a podřízené skupiny.   
 5. Klikněte na položku Nová.
 6. Vyberte Požadovaná součást produktu.
-7. Zvolte Microsoft Dynamics 365 for Operations (1611).
+7. Vyberte Microsoft Dynamics 365 for Operations (1611).
 8. V poli Verze zadejte [7.1.1541.3036,8).
     * [7.1.1541.3036,8)  
     * Zadané závislosti budou vyhodnoceny po stažení této konfigurace z některého úložiště ER. Tato verze konfigurace bude stažena z úložiště ER, pokud je verze 1 konfigurace Vzorový model dat již k dispozici nebo stažena předem. Pokud dojde ke stažení předem, musí být proces dokončen v části Finance a operace a verze musí být 7.1.1541.3036 nebo novější, ale nesmí přesáhnout hlavní verzi 8.   
@@ -59,10 +59,10 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
 15. Klikněte na položku Upravit.
 16. Klikněte na položku Nová.
 17. Vyberte Požadovaná součást produktu.
-18. Vyberte Microsoft Dynamics AX 7.0 RTW.
+18. Zvolte Microsoft Dynamics AX 7.0 RTW.
 19. V poli Verze zadejte [7.0.1265.3015,7.1).
     * [7.0.1265.3015,7.1)  
-    * Závislosti budou vyhodnoceny po stažení této konfigurace z některého úložiště ER. Tato verze konfigurace bude stažena z úložiště ER, pokud je verze 1 konfigurace Vzorový model dat již k dispozici nebo stažena předem. Pokud dojde ke stažení předem, musí být proces dokončen v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, a verze musí být 7.0.1265.3015 nebo novější, ale nesmí přesáhnout menší verzi 1.   
+    * Závislosti budou vyhodnoceny po stažení této konfigurace z některého úložiště ER. Tato verze konfigurace bude stažena z úložiště ER, pokud je verze 1 konfigurace Vzorový model dat již k dispozici nebo stažena předem. Pokud dojde ke stažení předem, musí být proces dokončen v části Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition a verze musí být 7.0.1265.3015 nebo novější, ale nesmí přesáhnout vedlejší verzi 1.   
 20. Klikněte na položku Uložit.
 21. Zavřete stránku.
 22. Klikněte na položku Změnit stav.
@@ -139,6 +139,5 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
 25. Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.
 26. Ve stromovém zobrazení rozbalte Ukázkový datový model.
     * Všimněte si, že konfigurace modelu mapování Vzorové mapování bylo staženo spolu s vybranou konfigurací modelu dat. Dva soubory jsou staženy společně vzhledem k tomu, že 'Ukázkové mapování' bylo definováno jako implementace vybraného datového modelu a vzhledem k tomu, že je použitelné pro Finance a Operace. Konfigurace Vzorové mapování (alternativní) nebylo staženo, protože podmínky pro požadovanou aplikační verzi nebyly splněny.   
-    * Pokud jste přihlášeni k Dynamics 365 for Finance and Operations, Enterprise Edition, zaregistrujte si stejného poskytovatele, přejděte na projekt LCS a stáhněte stejnou konfiguraci datového modelu, stáhne se konfigurace Ukázkové mapování (alternativní) a konfigurace "Ukázkové mapování" bude přeskočena.  
-
+    * Pokud jste přihlášeni k Dynamics 365 for Finance and Operations Enterprise edition, zaregistrujte si stejného poskytovatele, přejděte na projekt LCS a stáhněte stejnou konfiguraci datového modelu, stáhne se konfigurace Ukázkové mapování (alternativní) a konfigurace "Ukázkové mapování" bude přeskočena.  
 

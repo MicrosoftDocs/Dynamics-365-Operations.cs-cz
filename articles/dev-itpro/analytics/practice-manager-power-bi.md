@@ -1,51 +1,50 @@
 ---
-title: "Obsah Power BI pro manažery školení"
-description: "Toto téma popisuje, co je součástí obsahu pro manažery školení v Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu."
+title: Obsah manažera školení v Power BI
+description: Toto téma popisuje, co je součástí obsahu pro manažery školení v Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367793"
 ---
-
-# <a name="practice-manager-power-bi-content"></a>Obsah Power BI pro manažery školení
+# <a name="practice-manager-power-bi-content"></a>Obsah manažera školení v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, co je součástí obsahu pro **manažery školení** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu.
+Toto téma popisuje, co je součástí obsahu **manažera školení** v Microsoft Power BI Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="overview"></a>Přehled
 
-Obsah Power BI pro **manažery školení** je určený pro manažery školení a projektové manažery. Poskytuje klíčové metriky, které se vztahují k projektům, na nichž organizace pracuje. Řídicí panel poskytuje přehled projektů a příslušných odběratelů. Filtr na úrovni sestavy slouží k vykazování pro určité právnické osoby. Tento obsah Power BI získává data z agregovaných měření účetnictví projektu.
+Obsah **manažer školení** v Power BI je určený pro manažery školení a projektové manažery. Poskytuje klíčové metriky, které se vztahují k projektům, na nichž organizace pracuje. Řídicí panel poskytuje přehled projektů a příslušných odběratelů. Filtr na úrovni sestavy slouží k vykazování pro určité právnické osoby. Tento obsah Power BI získává data z agregovaných měření účetnictví projektu.
 
-Obsah Power BI pro **Manažera školení** obsahuje pět stránek sestav: jednu stránku přehledu a čtyři stránky, které uvádějí podrobnosti o nákladech na projekt, výnosech, správě získané hodnoty a metrikách hodin, které jsou rozděleny mezi různé dimenze.
+Obsah **Manažer školení** v Power BI obsahuje pět stránek sestav: jednu stránku přehledu a čtyři stránky, které uvádějí podrobnosti o nákladech na projekt, výnosech, správě získané hodnoty a metrikách hodin, které jsou rozděleny mezi různé dimenze.
 
 Všechny částky v obsahu jsou zobrazeny v měně systému. Systémovou měnu můžete nastavit na stránce **Parametry systému**.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
-Obsah Power BI **Manažer školení** se zobrazí v pracovním prostoru **Manažer školení**.
+Obsah **Manažer školení** v Power BI se zobrazí v pracovním prostoru **Správa projektu**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 
-Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispozici na každé stránce sestavy obsahu Power BI **manažera školení**.
+Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispozici na každé stránce sestavy obsahu **manažera školení** v Power BI.
 
 | Stránka sestavy       | Metrika |
 |-------------------|---------|
@@ -55,11 +54,11 @@ Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispozic
 | EVM               | Stanovení nákladů a plánování indexu výkonnosti podle projektu |
 | Pracovní doba             | <ul><li>Skutečné fakturovatelné využité hodiny vs. skutečné fakturovatelné hodiny rozpočtu vs. hodiny rozpočtu</li><li>Skutečné fakturovatelné využité hodiny vs. skutečné fakturovatelné hodiny rozpočtu podle projektu</li><li>Skutečné fakturovatelné využité hodiny vs. skutečné fakturovatelné hodiny rozpočtu podle prostředku</li><li>Poměr skutečných fakturovatelných hodin podle projektu</li><li>Poměr skutečných fakturovatelných hodin podle prostředku</li></ul> |
 
-Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Můžete také použít základní funkci exportu dat pro export základních dat, jejichž souhrn je uveden ve vizualizaci.
+Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Můžete také použít základní funkci exportu dat pro export základních dat, jejichž souhrn je uveden ve vizualizaci.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 
-Následující data se používají k naplnění stránek sestavy v obsahu **Manažer školení** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md).
+Následující data se používají k naplnění stránek sestavy v obsahu **Manažer školení** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
 
 V následujících oddílech jsou popsána agregační měření, která se používají v každé entitě.
 
@@ -119,4 +118,3 @@ V následujících oddílech jsou popsána agregační měření, která se pou�
 | Klíčové měření agregace       | Pole               | popis |
 |---------------------------------|---------------------|-------------|
 | Plánované náklady dokončené aktivity | Sum(TotalCostPrice) | Celková nákladová cena v odhadech pro všechny typy transakcí projektu s dokončenými úlohami. |
-

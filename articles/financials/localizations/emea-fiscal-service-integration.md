@@ -1,13 +1,13 @@
 ---
-title: "Integrace fiskální služby (ESR)"
-description: "Toto téma obsahuje informace o integraci fiskální služby pro Rakousko a Českou republiku."
+title: Integrace fiskální služby (ESR)
+description: Toto téma obsahuje informace o integraci fiskální služby pro Rakousko a Českou republiku.
 author: Anasyash
 manager: AnnBe
 ms.date: 01/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CashRegister_W
 audience: Application user
 ms.reviewer: shylaw
@@ -15,22 +15,21 @@ ms.search.scope: Core, Operations
 ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 308f46ae4afef1eb88548bdebdf8215aabb87442
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370091"
 ---
-
 # <a name="fiscal-service-esr-integration"></a>Integrace fiskální služby (ESR)
 
 [!include [banner](../includes/banner.md)]
 
 V Rakousku musí být všechny platby v hotovosti podepsány externím zařízením nebo službou, a musí být bezpečně uloženy. V České republice musí být platby v hotovosti odeslány na vládní portál pro fiskální podpis. V obou zemích musí být vystavena hotovostní účtenka s vytištěným podpisem.
 
-K podpoře těchto požadavků specifických pro tyto země vám aplikace Microsoft Dynamics 365 Finance and Operations umožňuje integraci s fiskální službou třetí strany, která splňuje specifické požadavky pro řízení hotovostních plateb v různých zemích nebo oblastech.
+K podpoře těchto požadavků specifických pro tyto země vám aplikace Microsoft Dynamics 365 for Finance and Operations umožňuje integraci s fiskální službou třetí strany, která splňuje specifické požadavky pro řízení hotovostních plateb v různých zemích nebo oblastech.
 
 > [!NOTE]
 > Předpokládá se, že fiskální služba třetích stran splňuje všechny další právní požadavky specifické pro zemi týkající se zaregistrovaných transakcí. Jste zodpovědni za správné nastavení a správu finanční služby.
@@ -71,7 +70,7 @@ Každá registrační pokladna musí být nastavena pro komunikaci s fiskální 
 <td>Zadejte adresu URL registrační pokladny, název instance Microsoft Azure Key Vault a název třídy.</td>
 <td><ul>
 <li><strong>URL adresa registrační pokladny</strong> – Zadejte adresu URL fiskální služby.
-<blockquote>[!WARNING]<br>Služby třetích stran nebo jiné služby, které zde nakonfigurujete, nevyžadují certifikaci, a nemusí splňovat standardy společnosti Microsoft týkající se ochrany osobních údajů. Měli byste ověřit dokumentaci týkající se ochrany osobních údajů každé služny a kontaktovat poskytovatele každé služby, abyste se dozvěděli více informací o úrovni shody, kterou každá služba poskytuje. Jste sami zodpovědni za to, že se ujistíte, zda tyto služby splňují vaše bezpečnostní, ochranné a právní standardy. Odpovědnost za používání těchto služeb je pouze na vás. Společnost Microsoft vám nedává žádné výslovné záruky, garance ani podmínky. Důrazně doporučujeme používat pouze služby, které poskytují zabezpečené a autorizované připojení (to znamená služby, které používají protokol HTTPS).</blockquote>
+<blockquote>[!WARNING]<br>Služby třetích stran nebo jiné služby, které zde nakonfigurujete, nevyžadují certifikaci, a nemusí splňovat standardy společnosti Microsoft týkající se ochrany osobních údajů. Měli byste ověřit dokumentaci týkající se ochrany osobních údajů každé služby a kontaktovat poskytovatele každé služby, abyste se dozvěděli více informací o úrovni shody, kterou každá služba poskytuje. Jste sami zodpovědní za to, že se ujistíte, zda tyto služby splňují vaše bezpečnostní, ochranné a právní standardy. Odpovědnost za používání těchto služeb je pouze na vás. Společnost Microsoft vám nedává žádné výslovné záruky, garance ani podmínky. Důrazně doporučujeme používat pouze služby, které poskytují zabezpečené a autorizované připojení (to znamená služby, které používají protokol HTTPS).</blockquote>
 </li>
 <li><strong>Název úložiště klíčů</strong> – Je-li fiskální služba přístupná na zabezpečeném připojení (to znamená, že adresa URL začíná https://), je třeba nastavit certifikáty a správně je uložit na obou stranách (Finance and Operations a fiskální služba třetí strany). V tomto poli vyberte název instance Azure Key Vault, kde je uložen certifikát aplikace Finance and Operations. Další informace naleznete v tématu <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Nastavení klienta Azure Key Vault</a>.</li>
 <li><strong>Název třídy</strong> – Vyberte třídu, kde jsou implementována specifika integrace s fiskální službou. Dostupná třída je <strong>CashRegisterProcessingEFSTA_W</strong>.</li>
@@ -350,4 +349,3 @@ V následující tabulce jsou popsána pole pro platební transakce registračn�
 </tr>
 </tbody>
 </table>
-

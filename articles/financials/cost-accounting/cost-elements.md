@@ -1,13 +1,13 @@
 ---
-title: "Dimenze prvku nákladů"
-description: "Coby jeden ze základních pilířů v nákladovém účetnictví se dimenze prvků nákladů používají pro kategorizaci a sledování, kam jsou náklady převáděny."
+title: Dimenze prvku nákladů
+description: Coby jeden ze základních pilířů v nákladovém účetnictví se dimenze prvků nákladů používají pro kategorizaci a sledování, kam jsou náklady převáděny.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c703d1a9ae36d4342dc652d70dd82379187057c1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0f47c75b6f6f4533501070f78698de82cf70f9bd
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366068"
 ---
-
 # <a name="cost-element-dimensions"></a>Dimenze prvku nákladů
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ K usnadnění nastavení členů dimenze prvku nákladů v nákladovém účetni
 
 ## <a name="implementation-considerations"></a>Na co myslet při implementaci
 Jelikož prvky nákladů představují nejnižší úroveň podrobností o nákladech, měli byste se ujistit, že všechny požadované prvky nákladů pro manažerské vykazování jsou zahrnuty při implementací struktury prvků nákladů. Může být obtížné najít vhodný počet prvků nákladů pro řízení nákladů. Tisíce prvků nákladů pravděpodobně ztíží řízení jednotlivých prvků nákladů. Jako alternativní postup lze seskupit prvky nákladů a správu řízení nákladů v agregační úrovni.
-
 
 
 

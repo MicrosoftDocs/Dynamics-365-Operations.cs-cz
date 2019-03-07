@@ -1,13 +1,13 @@
 ---
-title: "Správa aktualizací standardních nákladů"
-description: "Aktualizace dat standardních nákladů lze spravovat pomocí dvou různých metod – metody s jednou verzí nebo se dvěma verzemi."
+title: Správa aktualizací standardních nákladů
+description: Aktualizace dat standardních nákladů lze spravovat pomocí dvou různých metod – metody s jednou verzí nebo se dvěma verzemi.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e72d4e90ac83787ed7c58d91c2102696acfac68
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b64d9e53736fd3b81ee997ed28ccfa62ed7e9ce6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367540"
 ---
-
 # <a name="manage-standard-cost-updates"></a>Správa aktualizací standardních nákladů
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,6 @@ Následující příklad znázorňuje použití přístupu s jednou verzí a dv�
 -   **Metoda aktualizace údajů nákladů s použitím dvou verzí** − Metoda se dvěma verzemi vyžaduje další nákladovou verzi, která bude obsahovat pouze aktualizace nákladů. Identifikátor pro tuto verzi je 2016-STD-CHANGES. Aktualizace nákladů jsou zaznamenány do 2016-STD-CHANGES a jsou nastaveny na stav "Nevyřízené". Výpočty kusovníku nevyřízených nákladů pro vyrobené položky u metody dvou verzí vyžadují záložní datový zdroj. Důvodem je skutečnost, že dodatečná nákladová verze 2016-STD-CHANGES obsahuje pouze podmnožinu dat nákladů. Zálohu lze vyjádřit jako aktivní náklady nebo jako nákladovou verzi 2016-STD, protože obě tyto položky identifikují zdroj dat nákladů v případech, kdy tento zdroj neexistuje ve verzi 2016-STD-CHANGES. Po aktivaci nákladů se stavem nevyřízeno bude dodatečná nákladová verze 2016-STD-CHANGES obsahovat aktuální aktivní náklady odrážející aktualizace, přičemž původní nákladová verze 2016-STD zůstane nedotčena. Použití metody se dvěma verzemi znamená, že pomocí zásad blokování pro původní nákladovou verzi je zabráněno aktualizacím. Identické zásady blokování by měly být nastaveny pro dodatečnou nákladovou verzi, s výjimkou zadaného počátečního data a selektivního použití zásad blokování pro umožnění aktualizací. Určené počáteční datum musí být s každou dávkou změn aktualizováno, aby odpovídalo naplánovanému datu aktivace.
 
 V tomto příkladu byla použita dodatečná nákladová verze pro správu aktualizací v průběhu roku 2016. Lze použít více dodatečných nákladových verzí (například samostatnou verzi pro každou dávku aktualizací). Při použití více dalších nákladů musí být záloha vyjádřena jako aktivní náklady, protože aktivní náklady jsou rozděleny na více nákladových verzích.
-
 
 
 

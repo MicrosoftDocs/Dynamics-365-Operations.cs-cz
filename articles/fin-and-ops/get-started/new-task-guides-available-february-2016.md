@@ -1,13 +1,13 @@
 ---
-title: "Noví průvodci úkolem (únor 2016)"
-description: "Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics 365 for Operations a (únor 2016) příručku Začínáme."
+title: Noví průvodci úkolem (únor 2016)
+description: Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016.  Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library pro Microsoft Dynamics 365 for Operations a (únor 2016) příručku Začínáme.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 87384bae08e3fa78ef3deb3830583b16b9d9d6ac
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366436"
 ---
-
 # <a name="new-task-guides-february-2016"></a>Noví průvodci úkolem (únor 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016. Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library for Microsoft Dynamics AX a (únor 2016) příručku Začínáme.
+Toto téma obsahuje průvodce záznamem úloh vydané pro knihovny Microsoft BPM k únoru 2016. Publikované knihovny zahrnují (únor 2016) knihovnu APQC Unified Library pro Microsoft Dynamics AX a (únor 2016) příručku Začínáme.
 
-## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (únor 2016)
+## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library (únor 2016) pro Microsoft Dynamics AX
 
 Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, určené k použití v rámci Nápovědy pro verzi Dynamics AX 7.0.0. Pokud potřebujete lokalizované verze těchto průvodců, jsou k dispozici v knihovně Unified Library APQC pro Microsoft Dynamics AX (květen 2016). Další informace o tom, jak připojit systém nápovědy ke knihovně průvodce úkolem viz [Začínáme s nápovědou](help-overview.md).
 
@@ -647,4 +646,3 @@ Knihovna APQC Unified Library (únor 2016) obsahuje průvodce záznamem úloh, u
 [Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (listopad 2016)](new-task-guides-november-2016.md)
-

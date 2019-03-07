@@ -1,13 +1,13 @@
 ---
-title: "Sazby DPH na základě polí Základ marže a Metody výpočtu"
-description: "Toto téma vysvětluje, jak hodnoty v poli Základ marže a Metoda výpočtu určují sazby daně v prodejních a nákupních transakcích."
+title: Sazby DPH na základě polí Základ marže a Metody výpočtu
+description: Toto téma vysvětluje, jak hodnoty v poli Základ marže a Metoda výpočtu určují sazby daně v prodejních a nákupních transakcích.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0128743e608ec56bea2301ac576551065a1ff290
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf0f8f2e3f553ea181e8cc9ab5b712fce64a89d4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366413"
 ---
-
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Sazby DPH na základě polí Základ marže a Metody výpočtu
 
 [!include [banner](../includes/banner.md)]
@@ -184,7 +183,6 @@ Základ marže: **Faktura celkem včetně částek DPH** metoda výpočtu: **Int
 Pro každou lampu existuje speciální clo ve výši 5,00 eur. Toto clo je k čisté částce přidáno před výpočtem DPH. Koupíte 8 lamp po 25,00 za kus. Čistá částka faktury je 200,00. Hrubá částka faktury je 200,00 + (8 x 5,00) = 240,00. Daň se vypočítá takto: Celková DPH = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 10 + 14 = 39,00 Celkové clo = 5,00 x 8 = 40,00 Celková fakturovaná částka = 200,00 + 39,00 + 40,00 = 279,00
 
 Další informace viz [Možnost Celková částka a Interval výpočtu pro kódy DPH](whole-amount-interval-options-sales-tax-codes.md) a [Metody výpočtu DPH v poli Zdroj](sales-tax-calculation-methods-origin-field.md).
-
 
 
 

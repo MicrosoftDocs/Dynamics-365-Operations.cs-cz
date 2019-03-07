@@ -1,13 +1,13 @@
 ---
-title: "Odstraňování problémů s rozpočtováním pozice"
-description: "Tento článek obsahuje odpovědí na otázky, které můžete mít při konfiguraci rozpočtování pozice. Řeší časté otázky týkající se vytváření prvků rozpočtových nákladů, skupin kompenzací a kompenzačních mřížek."
+title: Odstraňování problémů s rozpočtováním pozice
+description: Tento článek obsahuje odpovědí na otázky, které můžete mít při konfiguraci rozpočtování pozice. Řeší časté otázky týkající se vytváření prvků rozpočtových nákladů, skupin kompenzací a kompenzačních mřížek.
 author: ryansandness
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmBudgetPurposeType, HcmPositionForecast
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0800a4a7c92a1a5f4d4f66bb37032eacccc4cb4e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f2ef04008a5e6339a2193f9fcc77f2e0e6643557
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367103"
 ---
-
 # <a name="position-budgeting-troubleshooting"></a>Odstraňování problémů s rozpočtováním pozice
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,6 @@ Data na řádku nákladového prvku pozice prognózy musí spadat do následují
 -   Data aktivace a vyřazení pozice.
 -   Data aktivace a vypršení platnosti prvku rozpočtových nákladů.
 -   Datum zahájení a ukončení rozpočtového cyklu, který j přidruženy k procesu plánování rozpočtu pozice prognózy.
-
 
 
 

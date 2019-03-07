@@ -1,13 +1,13 @@
 ---
-title: "Součásti finančních sestav"
-description: "Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách. Tyto stavební bloky zahrnují definice řádku, definice sloupce a definice stromu výkaznictví. Tento článek vysvětluje způsob uspořádání a uzamčení stavebních bloků a způsob, jak pracovat se skupinami stavebních bloků."
+title: Součásti finančních sestav
+description: Tento článek popisuje způsob použití komponent nebo stavebních bloků z definic sestavy ve finančních sestavách. Tyto stavební bloky zahrnují definice řádku, definice sloupce a definice stromu výkaznictví. Tento článek vysvětluje způsob uspořádání a uzamčení stavebních bloků a způsob, jak pracovat se skupinami stavebních bloků.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0829c9eb54a8a5ca1f78bfe85de4779e541b945a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368138"
 ---
-
 # <a name="financial-report-components"></a>Součásti finančních sestav
 
 [!include [banner](../includes/banner.md)]
@@ -82,7 +81,7 @@ Můžete zobrazit všechny stavební bloky, které jsou přiřazeny ke skupině 
 
 ### <a name="export-a-building-block-group"></a>Export skupiny stavebních bloků
 
-Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavební bloky sestavy ze skupiny stavebních bloků. Skupinu exportovaných stavebních bloků můžete použít jako zálohu. Exportovaná data také můžete kopírovat mezi instalacemi aplikace Finance and Operations. Návrhář sestav zahrnuje odkazované styly písem a sady dimenzí společně se skupinou stavebních bloků.
+Můžete vyexportovat celou skupinu stavebních bloků nebo jen určité stavební bloky sestavy ze skupiny stavebních bloků.Skupinu exportovaných stavebních bloků můžete použít jako zálohu. Exportovaná data také můžete kopírovat mezi instalacemi aplikace Finance and Operations.Návrhář sestav zahrnuje odkazované styly písem a sady dimenzí společně se skupinou stavebních bloků.
 
 1. V Návrháři sestav v nabídce **Společnost** klikněte na položku **Skupiny stavebních bloků**.
 2. V dialogovém okně **Skupiny stavebních bloků** vyberte skupinu stavebních bloků, kterou chcete vyexportovat, a pak klikněte na položku **Export**.
@@ -128,4 +127,3 @@ Při otevření stavebního bloku mají k tomuto stavebnímu bloku ostatní uži
 ## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
-

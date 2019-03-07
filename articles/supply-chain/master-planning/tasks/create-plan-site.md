@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření plánu pro pracoviště"
-description: "Plánovač výroby vypočítá požadovaný materiál a kapacitu pro výrobu určité položky."
+---
+title: Vytvoření plánu pro pracoviště
+description: Plánovač výroby vypočítá požadovaný materiál a kapacitu pro výrobu určité položky.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqTransPOUrgentFormPart, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f34d694171e690354721c87f07aa81e811ecdfdc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1452c5d6f5dd8d0dd4cb08eb5cc9a48fd8f875f9
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364757"
 ---
 # <a name="create-a-plan-for-a-site"></a>Vytvoření plánu pro pracoviště
 
@@ -54,5 +54,4 @@ Plánovač výroby vypočítá požadovaný materiál a kapacitu pro výrobu ur�
 1. V seznamu označte všechny řádky nebo jejich označení zrušte.
 2. Klikněte na položku Potvrdit.
 3. Klikněte na tlačítko OK.
-
 

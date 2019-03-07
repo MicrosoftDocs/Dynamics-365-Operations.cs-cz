@@ -1,13 +1,13 @@
---- 
-title: "Převedení fyzických zásob ve skladu"
-description: "Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu zásob za účelem registrace pohybu zboží z jednoho umístění ve skladu do druhého."
+---
+title: Převedení fyzických zásob ve skladu
+description: Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu zásob za účelem registrace pohybu zboží z jednoho umístění ve skladu do druhého.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 79b3e91be8aeab10188b6d3925d44a9ec1106406
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: bfba69731a4897906d08ff9fb9ce69e79121efeb
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367287"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Převedení fyzických zásob ve skladu
 
@@ -68,5 +68,4 @@ Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu
 1. Klepněte na položku Zásoby.
 2. Klikněte na Transakce.
     * V tomto poli se zobrazí transakce, které byly vytvořeny při zaúčtování deníku.  
-
 

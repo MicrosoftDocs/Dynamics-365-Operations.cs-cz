@@ -1,13 +1,13 @@
---- 
-title: "Spuštění formátů k použití souborů pro správu dokumentů ve výstupu elektronického výkaznictví"
-description: "Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví k souborů správy dokumentů ve výstupu elektronického výkaznictví."
+---
+title: Spuštění formátů k použití souborů pro správu dokumentů ve výstupu elektronického výkaznictví
+description: Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví k souborů správy dokumentů ve výstupu elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenInvoicesListPage, CustInvoiceJournal, SalesTable, ERSolutionTable
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e87dbb0fa890f4d554c3e2ff09566fb2b1f3206b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364780"
 ---
 # <a name="run-formats-to-use-document-management-files-in-er-output"></a>Spuštění formátů k použití souborů pro správu dokumentů ve výstupu elektronického výkaznictví
 
@@ -31,7 +31,7 @@ Následující postup popisuje, jak uživatel s rolí správce systému nebo vý
 
 K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elektronické výkaznictví – Použití souboru pro správu dokumentů ve výstupech formátu (část 3: Vytvoření formátu).
 
-Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
 
 ## <a name="add-necessary-attachments-for-sales-order-of-a-single-invoice"></a>Přidejte nezbytné přílohy pro prodejní objednávku z jedné faktury.
@@ -69,5 +69,4 @@ Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics
 10. Klikněte na tlačítko OK.
 11. Klikněte na tlačítko OK.
     * Prohlédněte si generovaný výstup. Všimněte si, že pro každou přílohu byl vytvořen jeden uzel XML. Obsah přílohy je naplněna do výstupu XML v textovém formátu MIME (base64).  
-
 

@@ -1,13 +1,13 @@
---- 
-title: "EUR-00015 Nastavení DIČ"
-description: "Tato procedura vás provede předpoklady registrace DIČ, jako je nastavení typu registrace a jeho přiřazení kategorii registrace."
+---
+title: EUR-00015 Nastavení DIČ
+description: Tato procedura vás provede předpoklady registrace DIČ, jako je nastavení typu registrace a jeho přiřazení kategorii registrace.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 66ee7215dc21921f9d8e405c3f77d9b5e0b89a9e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370122"
 ---
 # <a name="eur-00015-set-up-vat-id"></a>EUR-00015 Nastavení DIČ
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/14/2018
 
 Tato procedura vás provede předpoklady registrace DIČ, jako je nastavení typu registrace a jeho přiřazení kategorii registrace. Další informace o ID registrace a zpracování ID registrace, včetně povinných požadavků, najdete v tématu nápovědy věnovaném ID registrace a zpracování ID registrace. 
 
-Informace zde uvedené se vztahují na všechny evropské země/oblasti. Tento úkol byl vytvořen za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu. Tento úkol je určen pro správce systému. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+Informace zde uvedené se vztahují na všechny evropské země/oblasti. Tento úkol byl vytvořen za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu. Tento úkol je určen pro správce systému. Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
 1. Přejděte na položky Správa organizace > Globální adresář > Typy registrace > Typy registrace.
 2. Kliknutím na možnost Nový otevřete dialogové okno.
@@ -60,5 +60,4 @@ Informace zde uvedené se vztahují na všechny evropské země/oblasti. Tento �
 21. V poli kategorie registrace vyberte DIČ.
     * Přiřaďte typ registrace, který jste vytvořili, k předdefinované kategorii registrace.  
 22. Klikněte na položku Uložit.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Obsah organizačních školení Power BI"
-description: "Toto téma popisuje aplikaci Finance and Operations - Organizační obsah školení Power BI."
+title: Obsah školení organizace v Power BI
+description: Toto téma popisuje aplikaci Finance and Operations - Organizační obsah školení Power BI.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6c1855013dc449950877f8727a5453942aeb75de
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367517"
 ---
-
-# <a name="organizational-training-power-bi-content"></a>Obsah organizačních školení Power BI
+# <a name="organizational-training-power-bi-content"></a>Obsah školení organizace v Power BI
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +38,7 @@ Po připojení balíčku obsahu k datům z aplikace Finance and Operations zobra
 | Analýza kurzu | Registrace podle umístění, účastníci kurzu podle stavu a seznam registrací |
 | Typy kurzů    | Typy kurzů podle dovednosti                                                       |
 
-Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 Data aplikace Finance and Operations se používají k naplnění sestav v balíčku obsahu organizačního školení. Následující tabulka zobrazuje entity, na kterých je balíček obsahu založen.
@@ -59,4 +58,3 @@ Data aplikace Finance and Operations se používají k naplnění sestav v balí
 | Školení\_Pozice        | Pozice, titul a ekvivalent plného úvazku (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Školení\_WorkerName      | Křestní jméno, příjmení a celé jméno                             | Školení\_CourseAttendees |
 | Školení\_WorkerTitle     | Název a datum služebního věku                                         | Školení\_CourseAttendees |
-

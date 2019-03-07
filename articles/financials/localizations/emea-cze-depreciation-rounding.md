@@ -1,13 +1,13 @@
 ---
 title: " Zaokrouhlení odpisu"
-description: "Toto téma vysvětluje, jak můžete zaokrouhlit částky odpisu dlouhodobého majetku nahoru nebo dolů na nejbližší celé číslo."
+description: Toto téma vysvětluje, jak můžete zaokrouhlit částky odpisu dlouhodobého majetku nahoru nebo dolů na nejbližší celé číslo.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 8d4e72ee9b4ff411ba8b402406cae1667da5c47c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 286355f6e0f9796d724e5cea32b5eebe36cb2085
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370146"
 ---
-
 # <a name="depreciation-rounding"></a> Zaokrouhlení odpisu
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,6 @@ Toto téma vysvětluje, jak můžete zaokrouhlit částky odpisu dlouhodobého m
 |-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|
 |1 111,11 Kč|1|CZK 1 111.11 ÷ 1 = CZK 1 111.11|1 111,1 Kč|1 111,11 Kč je zaokrouhleno nahoru na 1 112 Kč. Výsledná částka odpisu: CZK 1 112 × 1 = CZK 1 112|1 111,11 Kč je zaokrouhleno dolů na 1 111 Kč. Výsledná částka odpisu: CZK 1 111 × 1 = CZK 1 111|
 |1 234,5 Kč|10|CZK 1 234.5 ÷ 10 = CZK 123,45|1 235 Kč|123,45 Kč je zaokrouhleno nahoru na 124 Kč. Výsledná částka odpisu: CZK 124 × 10 = CZK 1 240|123,45 Kč je zaokrouhleno dolů na 123 Kč. Výsledná částka odpisu: CZK 123 × 10 = CZK 1 230|
-
 
 
 

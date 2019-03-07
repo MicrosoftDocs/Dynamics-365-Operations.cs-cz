@@ -1,31 +1,30 @@
 ---
-title: "Fáze servisních zakázek"
-description: "Definováním fází servisní zakázky a jejich přiřazením k zaměstnancům můžete řídit tok servisní zakázky pomocí jednotlivých úloh, které provádějí různé osoby v rámci servisní organizace."
+title: Fáze servisních zakázek
+description: Definováním fází servisní zakázky a jejich přiřazením k zaměstnancům můžete řídit tok servisní zakázky pomocí jednotlivých úloh, které provádějí různé osoby v rámci servisní organizace.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAStageTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3b924be95c7e60598879e4d0cfd03193fe888dd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9aa90dfcfc4b30d6cb4fa7ed4e6faaf505548d41
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365769"
 ---
-
 # <a name="service-order-stages"></a>Fáze servisních zakázek   
 
 [!include [banner](../includes/banner.md)]
@@ -46,6 +45,5 @@ Při nastavování servisní fáze můžete vytvořit více možností nebo vět
 [Změna fáze servisní zakázky](change-service-order-stage.md)
 
   
-
 
 

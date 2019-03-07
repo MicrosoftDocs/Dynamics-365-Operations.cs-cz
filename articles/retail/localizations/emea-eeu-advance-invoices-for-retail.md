@@ -1,13 +1,13 @@
 ---
-title: "Zálohové faktury pro Retail pro východní Evropu"
-description: "Toto téma vysvětluje, jak nastavit oznámení zálohách v maloobchodu pro východní Evropu."
+title: Zálohové faktury pro Retail pro východní Evropu
+description: Toto téma vysvětluje, jak nastavit oznámení zálohách v maloobchodu pro východní Evropu.
 author: epopov
 manager: annbe
 ms.date: 10/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,15 +15,14 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-01
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: ba2cfb176242e2e611375c9943a9e4da2b2bb02a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370086"
 ---
-
 # <a name="advance-invoices-for-retail-for-eastern-europe"></a>Zálohové faktury pro Retail pro východní Evropu
 [!include [banner](../includes/banner.md)]
 
@@ -88,4 +87,3 @@ Tento postup slouží k povolení tisku dokumentů z POS na tiskárně Windows, 
 
 4. Přejděte do nabídky **Maloobchodní prodej \> Maloobchodní IT \> Distribuční plán**.
 5. Vyberte úlohu **1090** a klikněte na tlačítko **Spustit**.
-

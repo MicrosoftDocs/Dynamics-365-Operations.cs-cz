@@ -1,14 +1,14 @@
 ---
 title: Aktivity v procesech
-description: "Toto téma obsahuje informace o různých typech aktivit, které lze použít v procesu náboru."
-author: 
+description: Toto téma obsahuje informace o různých typech aktivit, které lze použít v procesu náboru.
+author: ''
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c32db1f563466f05b9fef1a03578392888c0b7e6
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374750"
 ---
-
 # <a name="activities-in-the-hiring-processes"></a>Aktivity v procesech náboru
 
 [!include[banner](../includes/banner.md)]
@@ -43,33 +42,11 @@ Aktivita potenciálního zákazníka určuje, zda lze do pracovní pozice přid�
 
 Aktivita žádosti je povinná v šabloně procesu náboru. Pokud chcete odeslat e-mail uchazečům, když odešlou žádost nebo jsou přidáni do fáze žádosti, nastavte možnost **Odeslat e-mail uchazeči** na **Zapnuto**.
 
-## <a name="scheduler-activity"></a>Aktivita plánovače
+## <a name="interview-schedule-and-feedback-activity"></a>Plán pohovoru a aktivita zpětné vazby
 
-Aktivita plánovače je volitelná. Tato aktivita obsahuje dvě složky: dostupnost kandidáta a plán. Dostupnost komponenty Uchazeč umožňuje používat e-mail k vyžádání dostupnosti uchazeče. Komponenta Plán umožňuje plánování pohovorů s uchazečem a týmem náboru. V aktivitě Plánovač lze konfigurovat následující možnosti: **Požadovat dostupnost uchazeče**, **Online schůzka** a **Odeslání e-mailu uchazeči**.
+Tato aktivita obsahuje tři složky: požadavek na dostupnost kandidáta, plán a zpětnou vazbu. Použijte aktivitu pohovoru v šabloně práce, pokud chcete zahrnout požadavek na dostupnost kandidáta, plán a zpětnou vazbu jako součást procesu, namísto jejich individuálního použití jako součástí náborového procesu. Další informace naleznete v tématu [Plánování pohovoru a zpětná vazba](interview-scheduling-feedback.md).
 
-- Pokud chcete odeslat uchazečům e-mail s dotazem na dostupnost, nastavte možnost **Požadovat dostupnost uchazeče** na **Zapnuto**. Pokud nastavíte tuto možnost na **Vypnuto**, tento krok se v procesu náboru na pracovní pozici nezobrazí.
-- Pokud chcete živě streamovat nebo uskutečnit živý konferenční hovor pomocí Skypu pro firmy, nastavte hodnotu v poli **Online schůzka** na **Skype pro firmy**. Do žádosti o schůzku s pohovorem, která je rozeslána vedoucím pohovorů, pak bude přidán správný odkaz **Připojit ke skypové schůzce**.
-- Pokud chcete odeslat uchazečům e-mail pro dokončení plánu, nastavte možnost **Odeslat uchazeči e-mail** na **Zapnuto**. Pokud tuto možnost nastavíte na **Vypnuto**, uchazeči obdrží plán pohovoru pouze v případě, že se přihlásí na portál pro uchazeče.
-
-## <a name="feedback-activity"></a>Aktivita zpětné vazby
-
-Aktivita zpětné vazby je volitelná. Tato aktivita umožňuje účastníkům pohovoru zadat doporučení pro uchazeče. Mohou rovněž zadat jakékoli komentáře ke zpětné vazbě. Pokud zapnete možnost **Zdědit účastníky zpětné od náborového týmu**, budou do aktivity zpětné vazby automaticky zadáni náborář, manažer náboru a vedoucí pohovoru. Organizace mohou tazatelům povolit zobrazení zpětné vazby ostatních předtím, než odešlou vlastní zpětnou vazbu. Organizace může také povolit tazatelům úpravu zpětné vazby po odeslání.
-
-## <a name="interview-activity"></a>Aktivita pohovoru
-
-Aktivita pohovoru je volitelná. Tato aktivita obsahuje tři složky: dostupnost kandidáta, plán a zpětná vazba. Dostupnost komponenty Uchazeč umožňuje používat e-mail k vyžádání dostupnosti uchazeče. Komponenta Plán umožňuje plánování pohovorů s uchazečem a týmem náboru. V aktivitě Plánovač lze konfigurovat následující možnosti: **Požadovat dostupnost uchazeče**, **Online schůzka** a **Odeslání e-mailu uchazeči**.
-
-- Pokud chcete odeslat uchazečům e-mail s dotazem na dostupnost, nastavte možnost **Požadovat dostupnost uchazeče** na **Zapnuto**. Pokud nastavíte tuto možnost na **Vypnuto**, tento krok se v procesu náboru na pracovní pozici nezobrazí.
-- Pokud chcete živě streamovat nebo uskutečnit živý konferenční hovor pomocí Skypu pro firmy, nastavte hodnotu v poli **Online schůzka** na **Skype pro firmy**. Do žádosti o schůzku s pohovorem bude přidán správný odkaz **Připojit ke skypové schůzce**.
-- Pokud chcete odeslat uchazečům e-mail pro dokončení plánu, nastavte možnost **Odeslat uchazeči e-mail** na **Zapnuto**. Pokud tuto možnost nastavíte na **Vypnuto**, uchazeči obdrží plán pohovoru pouze v případě, že se přihlásí na portál pro uchazeče.
-
->[!NOTE]
-> - Pro všechny pohovory 1:1 jsou připomenutí odesílána tazatelům každých 24 hodin, pokud nereagoval (přejetí nebo zamítnutí) na žádost o pohovor.
-> - Pro všechny panelové pohovory nejsou žádná automatizovaná připomenutí na reagování na žádost o pohovor. Pokud chcete připomenutí spustit ručně, upravte pohovor a použijte možnost **aktualizovat a odeslat** k odeslání žádosti zpět tazatelům.
-
-Součást Zpětná vazba komponenty umožňuje zadávat doporučení pro uchazeče. Mohou rovněž zadat jakékoli komentáře ke zpětné vazbě. Pokud zapnete možnost **Zdědit účastníky zpětné od náborového týmu**, budou do složky zpětné vazby automaticky zadáni náborář, manažer náboru a vedoucí pohovoru. Organizace mohou tazatelům povolit zobrazení zpětné vazby ostatních předtím, než odešlou vlastní zpětnou vazbu. Organizace může také povolit tazatelům úpravu zpětné vazby po odeslání.
-
-## <a name="powerapps-activity"></a>Aktivita PowerApps
+## <a name="powerapps-activity"></a>Aktivity PowerApps
 
 Aktivita PowerApps umožňuje vložit aplikaci Microsoft PowerApps do procesu náboru. Aplikace může být požadována pro všechny uchazeče, pouze interní uchazeče, pouze externí uchazečů nebo žádné uchazeče. Pokud je aplikace označena jako povinná, musí být dokončena předtím, než může fáze pokračovat. Pokud aplikace není označena jako povinná, je aktivita volitelný krok a fáze můžete pokračovat, i když není aplikace dokončena.
 
@@ -80,9 +57,9 @@ Vyberete-li možnost **Povolit přidání účastníků pro tuto aktivitu**, lze
 > [!NOTE]
 > Aktivita PowerApps je dostupná pouze s doplňkem Komplexní nábor.
 
-## <a name="youtube-activity"></a>Aktivita YouTube
+## <a name="youtube-activity"></a>Aktvita YouTube
 
-Aktivita YouTube umožňuje sdílet v rámci procesu náboru video YouTube. Pokud chcete uložit aktivitu YouTube do procesu náboru, zadejte adresu URL videa YouTube. Pokud jde o aktivitu PowerApps, můžete povolit účastníkům, aby se přidali do aktivity. Vyberete-li možnost **Zobrazit pouze uchazeči**, video se zobrazí pouze jako součást zkušenosti uchazeče. Nezobrazuje se v procesu náboru v systému Attract.
+Aktivita YouTube umožňuje sdílet video YouTube v rámci procesu náboru. Pokud chcete uložit aktivitu YouTube do procesu náboru, zadejte adresu URL videa YouTube. Pokud jde o aktivitu PowerApps, můžete povolit účastníkům, aby se přidali do aktivity. Vyberete-li možnost **Zobrazit pouze uchazeči**, video se zobrazí pouze jako součást zkušenosti uchazeče. Nezobrazuje se v procesu náboru v systému Attract.
 
 > [!NOTE]
 > Aktivita YouTube je dostupná pouze s doplňkem Komplexní nábor.
@@ -102,4 +79,3 @@ V aplikaci Microsoft Forms mohou autoři měnit nastavení a umožnit tak uživa
 
 > [!NOTE]
 > Aktivita Microsoft Forms je dostupná pouze s doplňkem Komplexní nábor.
-

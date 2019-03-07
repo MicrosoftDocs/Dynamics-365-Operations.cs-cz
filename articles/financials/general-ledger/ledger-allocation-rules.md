@@ -1,13 +1,13 @@
 ---
-title: "Pravidla přidělení hlavní knihy"
-description: "Tento článek obsahuje informace o pravidlech přidělení hlavní knihy. Popisuje různé aspekty těchto pravidel přidělení a metod přidělení, které lze pro ně použít."
+title: Pravidla přidělení hlavní knihy
+description: Tento článek obsahuje informace o pravidlech přidělení hlavní knihy. Popisuje různé aspekty těchto pravidel přidělení a metod přidělení, které lze pro ně použít.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: abbeb1bb4481139dff902916362a479f94fb96e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 63562cde3f2813fdcfc9df7ccbfc623aa2fbe9b1
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365723"
 ---
-
 # <a name="ledger-allocation-rules"></a>Pravidla přidělení hlavní knihy
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Každé pravidlo přidělení má čtyři komponenty: obecné údaje, zdroj, cí
 -   **Cíl** – tato komponenta určuje způsob, jak má být výsledek výpočtu přidělení distribuován a zaúčtován. Například může existovat jeden řádek cíle pro každé oddělení.
 -   **Protiúčet** – tato komponenta určuje, jak mají být hlavní účty a dimenze určeny pro položky protiúčtu, které vyrovnávají položky cíle. Namísto účtů a dimenzí založených na zdroji se obvykle používají uživatelem definované možnosti. Při nastavení možnosti **Zdroj dat** na hodnotu **Pevná hodnota** nelze použít možnost **Zdroj**.
 -   **Pravidla základu přidělení hlavní knihy** – tato pravidla používají vlastní kritéria filtru zdroje k určení, které zůstatky hlavní knihy mají být použity pro přidělení (například výnosy pro jednotlivá oddělení). Každé pravidlo základu přidělení lze použít s více pravidly přidělení.
-
 
 
 

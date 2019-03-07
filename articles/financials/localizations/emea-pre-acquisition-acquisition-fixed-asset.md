@@ -1,13 +1,13 @@
 ---
-title: "Účtování předpořízení dlouhodobého majetku"
-description: "Toto téma vysvětluje, jak vytvořit a zaúčtovat předpořízení dlouhodobého majetku."
+title: Účtování předpořízení dlouhodobého majetku
+description: Toto téma vysvětluje, jak vytvořit a zaúčtovat předpořízení dlouhodobého majetku.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 543735fd030ae665125f9f2b6807839bfef10630
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4cb29bf004faf95b25850c1a9700c8555da046ba
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370106"
 ---
-
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Účtování předpořízení dlouhodobého majetku
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Předtím, než budete moci zaúčtovat předpořízení, je třeba dokončit to
 8.  Kliknutím na **Vybrat** nastavte kritéria výběru a klikněte na **OK**.
 9.  Kliknutím na tlačítko **OK** zavřete stránku **Návrh předpořízení**.
 10. Kliknutím na **Zaúčtovat** &gt; **Zaúčtovat** zaúčtujte transakci předpořízení. Stav dlouhodobého majetku na stránce **Knihy** by teď měl být **Pořízené**.
-
 
 
 

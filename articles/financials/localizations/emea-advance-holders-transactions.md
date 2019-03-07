@@ -1,13 +1,13 @@
 ---
-title: "Transakce držitelů záloh"
-description: "Naučte se pracovat s transakcemi držitele zálohy v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Transakce držitelů záloh
+description: Zjistěte více o tom, jak pracovat s transakcemi držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: f71df6fff803855cf08ca0672604ae97efe3f40e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3e1fbb37c75052f10fdac3d3361e2c93c3c8a56c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370154"
 ---
-
 # <a name="advance-holder-transactions"></a>Transakce držitelů záloh
 
 [!include [banner](../includes/banner.md)]
 
-Naučte se pracovat s transakcemi držitele zálohy v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Zjistěte více o tom, jak pracovat s transakcemi držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
 Transakce pro tyto pracovníky, kteří jsou držitelé zálohy, mohou být zaúčtovány pomocí účtů držitele zálohy. ID pracovníka, které je určeno pro každého držitele zálohy, lze použít ke sledování všech transakcí držitele zálohy. Toto číslo je načteno jako číslo účtu pro transakce držitele zálohy na stránkách **Hlavní deníky** a **Transakce držitele zálohy**.
 
@@ -64,5 +63,4 @@ Po zpracování deníku dokladů, pokud částka v poli **Převáděná částka
 ## <a name="additional-resources"></a>Další zdroje
 
 - [Záloha pro zaměstnance (východní Evropa)](tasks/advance-payment-employee.md)
-
 

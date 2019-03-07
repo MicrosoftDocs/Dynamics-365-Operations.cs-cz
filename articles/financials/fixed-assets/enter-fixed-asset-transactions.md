@@ -1,13 +1,13 @@
 ---
-title: "Transakce dlouhodobého majetku"
-description: "Tento článek popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku."
+title: Možnosti transakce dlouhodobého majetku
+description: Toto téma popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6362a63bca43b5ac8da14becf6b966e459365ce1
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 18352ad921c2e2d110a7535f979272685105662f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377175"
 ---
-
-# <a name="fixed-asset-transaction-options"></a>Transakce dlouhodobého majetku
+# <a name="fixed-asset-transaction-options"></a>Možnosti transakce dlouhodobého majetku
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku.
+Toto téma popisuje různé dostupné metody pro vytvoření transakcí dlouhodobého majetku.
 
 Dlouhodobý majetek lze nastavit pro účely integrace se závazky, pohledávkami, zprostředkováním a zajištěním zdrojů a hlavní knihou. Položky lze rovněž převádět ve správě zásob na dlouhodobý majetek pro vnitřní použití.
 
@@ -66,9 +65,6 @@ Kterýkoliv typ transakce s dlouhodobým majetkem lze zaúčtovat na stránce Hl
 | ** **                               | Pohledávky      | Volné faktury                         |
 
 
+Zbývající hodnota období odpisu dlouhodobého majetku se neaktualizuje, pokud je řádek deníku typu transakce odpisu vytvořený nebo importovaný prostřednictvím datové entity. Tato hodnota je aktualizována při použití procesu schválení odpisu pro vytvoření řádku deníku.
 
 Další informace naleznete v tématu [Integrace dlouhodobého majetku](fixed-asset-integration.md).
-
-
-
-

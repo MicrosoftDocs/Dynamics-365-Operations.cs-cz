@@ -1,32 +1,31 @@
 ---
-title: "Pracovní prostor řízení nákladů"
-description: "Toto téma obsahuje informace o pracovním prostoru řízení nákladů. Tento pracovní prostor je centrálním místem, kde vedoucí pracovníci, kteří jsou zodpovědní za kontrolu objektu nákladů nebo sady objektů nákladů v rámci dimenze nebo napříč dimenzemi, mohou přistupovat k sestavám."
+title: Pracovní prostor řízení nákladů
+description: Toto téma obsahuje informace o pracovním prostoru řízení nákladů. Tento pracovní prostor je centrálním místem, kde vedoucí pracovníci, kteří jsou zodpovědní za kontrolu objektu nákladů nebo sady objektů nákladů v rámci dimenze nebo napříč dimenzemi, mohou přistupovat k sestavám.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c6a196c677ed27666efec8a180f1d3b7e7ee931c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 934ab83d45aad32c067e8422c5415d4a0a6481b4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363745"
 ---
-
 # <a name="cost-control-overview"></a>Přehled řízení nákladů 
 
 [!include [banner](../includes/banner.md)]
@@ -157,6 +156,5 @@ V následujícím příkladu je základ přidělení typu **Základ přidělení
 Další zdroje 
 
 [Definování přístupových práv pro kontrolory objektů nákladů](access-rights-cost-object-controller.md)
-
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Vrácení stavu výrobní zakázky"
-description: "Toto téma popisuje způsob stornování stavu výrobní zakázky."
+title: Vrácení stavu výrobní zakázky
+description: Toto téma popisuje způsob stornování stavu výrobní zakázky.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParmStatusDecrease
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ca5a62b4509f0c7e49da94128e72eae5f35829e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4761e44b6bbc93ebf4a395948f42c2a73013ecb9
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367310"
 ---
-
 # <a name="reverse-the-production-order-status"></a>Vrácení stavu výrobní zakázky
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Když vrátíte stav výrobní zakázky ze stavu **Uvolněno** do stavu **Pláno
 
 ## <a name="from-started-to-released"></a>Ze stavu Zahájeno do stavu Uvolněno
 Když vrátíte stav výrobní zakázky ze stavu **Zahájeno** zpět do stavu **Uvolněno**, budou všechny položky hlášené jako dokončené vráceny zpět. Jestliže došlo k vydání materiálu nebo k provedení vstupních a výstupních dodávek do výroby, budou tato nastavení stornována. Pole **Následný stav** na řádcích kusovníku výrobní zakázky se změní z **Ukončeno** na **Spotřeba materiálu**. Pokud nebyl zaregistrován čas, nebo množství bylo hlášeno jako dokončené u operací ve výrobním postupu, budou tato nastavení stornována. Pole **Následný stav** se změní z **Ukončeno** na **Spotřeba postupu** ve výrobním postupu. Nastavení pro všechny položky, které jsou zaúčtovány jako procesu nebo nedokončená výroba, budou stornovány. Na stránce **Podrobnosti výrobní zakázky** se vynulují pole, která zobrazí množství, které bylo zahájeno nebo ohlášeno jako dokončené. Data pro tyto transakce jsou rovněž vynulovány.
-
 
 
 

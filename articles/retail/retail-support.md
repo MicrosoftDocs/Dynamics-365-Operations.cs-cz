@@ -1,35 +1,34 @@
 ---
-title: "Získání podpory pro aplikaci Dynamics 365 for Retail"
-description: "Tento článek vysvětluje, jak získat nápovědu k aplikaci Microsoft Dynamics 365 for Retail."
+title: Získání podpory pro Dynamics 365 for Retail
+description: Tento článek vysvětluje, jak získat pomoc s Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
+ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 2e74554338e4b12991756f63257f67ee3e2e6dc4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364044"
 ---
-
-# <a name="get-support-for-dynamics-365-for-retail"></a>Získání podpory pro aplikaci Dynamics 365 for Retail
+# <a name="get-support-for-dynamics-365-for-retail"></a>Získání podpory pro Dynamics 365 for Retail
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek vysvětluje, jak získat nápovědu k aplikaci Dynamics 365 for Retail.
+Tento článek vysvětluje, jak získat pomoc s Dynamics 365 for Retail.
 
 ## <a name="contact-support"></a>Kontaktovat podporu
 
@@ -43,7 +42,7 @@ Chcete-li získat podporu pro aplikaci Retail, použijte zdroje v následující
 <thead>
 <tr>
 <th>Úkol</th>
-<th>Další informace</th>
+<th>Více informací</th>
 </tr>
 </thead>
 <tbody>
@@ -72,7 +71,7 @@ Chcete-li získat podporu pro aplikaci Retail, použijte zdroje v následující
 <li>Chyby, ke kterým dochází při použití LCS, nebo problémy s přístupem k LCS.</li>
 <li>Chyby, ke kterým dochází při použití aplikace Retail.</li>
 </ul>
-Ohledně technických dotazů, které se vztahují k přihlášení a přístupu do CutomerSource, kurzů elektronického vzdělávání, vyhledávání, znalostní bázi, stahování souborů a chybám stránky nebo systému, přejděte na <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Web podpory</a>.</td>
+Ohledně technických dotazů, které se vztahují k přihlášení a přístupu do CustomerSource, kurzů elektronického vzdělávání, vyhledávání, znalostní bázi, stahování souborů a chybám stránky nebo systému, přejděte na <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Web podpory</a>.</td>
 </tr>
 <tr>
 <td>Získejte nápovědu k dotazům týkajícím se licencí k aplikacím Retail nebo Finance and Operations.</td>
@@ -85,5 +84,4 @@ Ohledně technických dotazů, které se vztahují k přihlášení a přístupu
 </tbody>
 </table>
 
-Další informace o nabídkách podpory pro aplikaci Microsoft Dynamics naleznete v tématu [Online podpora pro aplikace Microsoft Dynamics](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
-
+Další informace o nabídkách podpory Microsoft Dynamics naleznete v tématu [Online podpora Microsoft Dynamics](https://dynamics.microsoft.com/en-us/support/).

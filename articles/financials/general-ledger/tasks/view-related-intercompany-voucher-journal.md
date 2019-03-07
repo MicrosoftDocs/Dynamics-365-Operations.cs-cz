@@ -1,13 +1,13 @@
---- 
-title: "Zobrazení souvisejícího mezipodnikového dokladu z deníku"
-description: "Související doklad zobrazí doklad společností protiúčtu při zaúčtování mezipodnikové transakce z deníku hlavní knihy."
+---
+title: Zobrazení souvisejícího mezipodnikového dokladu z deníku
+description: Související doklad zobrazí doklad společností protiúčtu při zaúčtování mezipodnikové transakce z deníku hlavní knihy.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, SysDataAreaSelectLookup, LedgerTransVoucher, LedgerTransRelatedVouchers
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: fe2590b43a4399c3935906c8ab67a91883bbf094
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366022"
 ---
 # <a name="view-related-intercompany-voucher-from-journal"></a>Zobrazení souvisejícího mezipodnikového dokladu z deníku
 
@@ -53,5 +53,4 @@ Související doklad zobrazí doklad společností protiúčtu při zaúčtován
 2. Klikněte na možnost Související doklady.
 3. Označte v seznamu vybraný řádek.
 4. Klikněte na možnost Doklad.
-
 

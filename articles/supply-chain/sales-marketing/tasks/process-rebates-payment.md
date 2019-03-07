@@ -1,13 +1,13 @@
---- 
-title: "Zpracování rabatu pro platbu"
-description: "Tento postup ukazuje převod schválených a zpracovaných rabatů odběratele na dobropisy."
+---
+title: Zpracování rabatu pro platbu
+description: Tento postup ukazuje převod schválených a zpracovaných rabatů odběratele na dobropisy.
 author: omulvad
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b2d97a59ae782af0a3d5ab71903961ef244a8e62
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 791ec304b9ea7c49fbea506d73c4daffd4478739
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363308"
 ---
 # <a name="process-rebates-for-payment"></a>Zpracování rabatu pro platbu
 
@@ -50,5 +50,4 @@ Tento postup ukazuje převod schválených a zpracovaných rabatů odběratele n
 14. Klikněte na možnost Vyrovnat transakce.
     * Všimněte si, že transakce pro zápornou částku představující celkovou částku rabatu bez referenčního čísla faktury byla přidána k zůstatku odběratele.   
 15. Klikněte na možnost Zrušit.
-
 

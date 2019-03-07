@@ -1,13 +1,13 @@
 ---
-title: "Nastavení mezipodnikového účetnictví"
-description: "Toto téma vysvětluje, jak se nastavuje mezipodnikové účetnictví tak, abyste mohli používat mezipodnikové deníky k přidělování knih a finančních deníků, jako jsou každodenní deníky, deníky faktur dodavatele a platební deníky."
+title: Nastavení mezipodnikového účetnictví
+description: Toto téma vysvětluje, jak se nastavuje mezipodnikové účetnictví tak, abyste mohli používat mezipodnikové deníky k přidělování knih a finančních deníků, jako jsou každodenní deníky, deníky faktur dodavatele a platební deníky.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ce07a29d7aa5057d0b61c7fcc6bb87a0a2755fc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48e0b00e2a9bd1a1387780747e1976bd386200eb
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363975"
 ---
-
 # <a name="intercompany-accounting-setup"></a>Nastavení mezipodnikového účetnictví
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Vyberte **Účet má dáti (Pohledávky)** a **Dal účet (Závazky)** pro práv
 Nakonec vyberte, které právnická osoba obdrží účetnictví na podporu částek, jako jsou platební slevy pro centralizované platby realizované zisky/ztráty. 
 
 Vzájemný vztah lze snadno nastavit na stránce **Mezipodnikové účetnictví** pomocí tlačítka **Vytvořit vzájemný vztah** tlačítko po vytvoření prvního páru právnické osoby. Při vytvoření vzájemné dvojice budou informace o cílové společnosti zkopírovány do původní společnosti a naopak. Deníku definovaný pro cílovou společnost zůstane. Většina organizací používá stejné konvence pojmenování pro své názvy deníku takže název deníku je stejný. Pokud se název deníku liší, zobrazí se upozornění v poli s upozorněním, že deník neexistuje a lze vybrat jiný deník.
-
 
 
 

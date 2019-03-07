@@ -1,13 +1,13 @@
 ---
-title: "Skupiny výpočtů kusovníku"
-description: "Tento článek obsahuje informace o skupinách výpočtu kusovníků, a o tom, jak je nastavit. Pro spuštění výpočtu kusovníku musíte buď nastavit skupiny kalkulace a přiřadit je k jednotlivým položkám, nebo nastavit výchozí skupinu výpočtu. Nastavení výpočtu ze skupiny výpočtu jsou použita jako výchozí hodnoty na stránce Kalkulace kusovníku v době výpočtu kusovníku."
+title: Skupiny výpočtů kusovníku
+description: Tento článek obsahuje informace o skupinách výpočtu kusovníků, a o tom, jak je nastavit. Pro spuštění výpočtu kusovníku musíte buď nastavit skupiny kalkulace a přiřadit je k jednotlivým položkám, nebo nastavit výchozí skupinu výpočtu. Nastavení výpočtu ze skupiny výpočtu jsou použita jako výchozí hodnoty na stránce Kalkulace kusovníku v době výpočtu kusovníku.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 55bca29016e06b6ed71c0f1a4aa412401976ebdd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48d1bc67038c6080bb96d524a549deddbc8d4e0b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362871"
 ---
-
 # <a name="bom-calculations-groups"></a>Skupiny výpočtů kusovníku
 
 [!include [banner](../includes/banner.md)]
@@ -96,7 +95,6 @@ Výpočet kusovníku vygeneruje upozornění. Můžete zobrazit upozornění tý
 -   Identifikovat, když položka na řádku kusovníku má menší procento ziskovosti, než jaké požadujete.
 
 Můžete definovat několik skupin výpočtů kusovníku v závislosti na požadavcích na variaci u varovných zpráv. Jedna skupina výpočtu kusovníku může být například dostačující pro podmínky výstrah týkající se aktivního kusovníku, nulového množství a nulových nákladů komponenty. Po zahájení výpočtu kusovníku můžete přepsat použité podmínky výstrah, které jsou přidružené ke skupině výpočtu kusovníku. Můžete také přidat nebo odebrat podmínky upozornění. Když například aktuální situace nezahrnuje data technologického postupu, můžete odebrat použitou podmínku výstrah, která se týká aktivního postupu. **Poznámka:** čas a docházka zahrnuje stránku **Skupiny výpočtů**, ale tato stránka nemá žádný vztah ke skupinám výpočtu kusovníku. V části Čas a docházka lze pracovníky přiřadit ke skupinám výpočtů, které odrážejí sdružení pracovníků, kteří jsou přidruženy ke stejnému nadřízenému nebo vedoucímu. Výpočet registrací pracovníků může provést automaticky nebo ručně jejich nadřízený nebo vedoucí.
-
 
 
 

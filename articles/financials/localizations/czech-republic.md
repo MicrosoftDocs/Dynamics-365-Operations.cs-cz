@@ -1,13 +1,13 @@
 ---
-title: "Česká republika"
-description: "Toto téma poskytuje přehled o funkci aplikace Microsoft Dynamics 365 for Finance and Operations, která je specifická pro Českou republiku."
+title: Česká republika
+description: Toto téma poskytuje přehled o funkci aplikace Dynamics 365 for Finance and Operations, která je specifická pro Českou republiku.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Czech Republic
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 2b930050b415c111b4612b6d8f920f5c673b54da
 ms.openlocfilehash: 98a56021ea67623ee4dc1013913bc4b924c199fd
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370090"
 ---
-
 # <a name="czech-republic"></a>Česká republika
 
 [!include [banner](../includes/banner.md)]
@@ -89,8 +88,7 @@ Existují jedinečné aspekty procesu roční uzávěrky a počátečních trans
 - Převod ročního výsledku zisků nebo ztrát do nově otevřeného roku na jiný účet.
 Další informace naleznete v tématu [roční uzávěrka pro Českou republiku a Maďarsko](emea-cze-hun-year-end.md).
 
-## <a name="additional-resources"></a>Další zdroje
-- [Portál aplikace Microsoft Dynamics pro lokalizaci: sestava pro Českou republiku](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)
+## <a name="additional-resources"></a>Další prostředky
+- [Portál lokalizace Microsoft Dynamics: Sestava České republiky](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)
 - [Přehled elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-

@@ -1,14 +1,14 @@
 ---
-title: "Správa rolí a zabezpečení v aplikaci Attract"
-description: "Toto téma obsahuje informace o zabezpečení rolí v aplikaci Microsoft Dynamics 365 for Talent - Attract."
+title: Správa rolí a zabezpečení v aplikaci Attract
+description: Toto téma poskytuje informace o zabezpečení datových entit v Microsoft Dynamics 365 for Talent - Attract.
 author: josaw1
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9eb12bd6b9fc1aa66002908e5989b3ac504ab673
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374773"
 ---
-
 # <a name="security-and-role-management-in-attract"></a>Správa rolí a zabezpečení v aplikaci Attract
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract používá zabezpečení na základě rolí. Jinými slovy, přístup není udělován jednotlivým uživatelům, nýbrž rolím zabezpečení, ke kterým jsou uživatelé přiřazeni. Uživatel, který je přiřazen k roli zabezpečení, má přístup k sadě oprávnění, která je přidružena k této roli.
+Microsoft Dynamics 365 for Talent: Attract vyžaduje zabezpečení na základě rolí. Jinými slovy, přístup není udělován jednotlivým uživatelům, nýbrž rolím zabezpečení, ke kterým jsou uživatelé přiřazeni. Uživatel, který je přiřazen k roli zabezpečení, má přístup k sadě oprávnění, která je přidružena k této roli.
 
 Attract poskytuje pět základních uživatelských rolí:
 
@@ -63,7 +62,7 @@ Uživatelé, kteří jsou přiřazeni k roli náborového manažera, mohou vytv�
 
 Uživatelé, kteří jsou přiřazeni k roli náborového pracovníka, mají úplná oprávnění ke čtení, vytváření, aktualizaci a odstranění prací, které vytvořili. Mají též úplná oprávnění ke čtení, vytváření, aktualizaci a odstranění aplikací, které jsou přiřazeny k pracím, které vlastní. Pouze uživatele, kteří jsou přiřazeni k roli náborového pracovníka, lze přidat do náborového týmu jako náborové pracovníky.
 
-## <a name="interviewer"></a>Tazatel na pohovoru
+## <a name="interviewer"></a>Tazatel
 
 Každý uživatel, který má účet Microsoft Azure Active Directory (Azure AD) v organizaci, může být přidán do náborového týmu jako tazatel na pohovoru. Uživatelé, kteří jsou přiřazeni k roli tazatele na pohovoru, mohou zobrazit podrobnosti o práci a data uchazeče pro práce, u kterých jsou členy náborového týmu. Pro tyto práce mohou tazatelé na pohovoru též činit náborová doporučení a poskytovat zpětnou vazbu o kandidátech. Nemohou však aktualizovat podrobnosti o práci nebo data uchazeče.
 
@@ -108,7 +107,7 @@ Následující oprávnění se vztahují na data specifická pro práci u uchaze
 | Postoupit do další fáze           | Může zamítnout, pokud je uživatel členem náborového týmu | Může posunout dál, pokud je uživatel členem náborového týmu | Nepovoleno |
 | Spuštění správy nabídek | Může spustit správu nabídek | Existuje možnost konfigurace pro aktivitu nabídky. | Nepovoleno |
 
-\*\* Možnost konfigurace v [nastavení aktivity zpětné vazby](./activities-attract.md#feedback-activity) kontroluje, zda mohou tazatelé na pohovoru zobrazit zpětnou vazbu jeden druhého.
+\*\* Možnost konfigurace v [nastavení aktivity zpětné vazby](activities-attract.md#feedback-activity) kontroluje, zda mohou tazatelé na pohovoru zobrazit zpětnou vazbu jeden druhého.
 
 ## <a name="process-templates"></a>Šablony procesu
 
@@ -146,4 +145,3 @@ Kandidáti jsou osoby, které byly přidány do skupiny talentů, ale nejsou př
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil - podrobnosti o kandidátovi | Vytvoření, čtení, aktualizace a odstranění | Vytvoření, čtení, aktualizace a odstranění | Bez přístupu   |
 | Dokumenty                   | Vytvoření, čtení, aktualizace a odstranění | Vytvoření, čtení, aktualizace a odstranění | Bez přístupu   |
-

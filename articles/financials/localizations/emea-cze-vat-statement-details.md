@@ -1,13 +1,13 @@
 ---
-title: "Výkaz DPH pro Českou republiku"
-description: "Nastavení a generování výkazu DPH pro uživatele v rolích právnických osob na území České republiky."
+title: Výkaz DPH pro Českou republiku
+description: Nastavení a generování výkazu DPH pro uživatele v rolích právnických osob na území České republiky.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: e863eb39a80d1e0bc3ba60a42e364241c1880d6d
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 68c52b5f01b917c522bb0c47c38c5ba6bc619b82
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "370132"
 ---
-
 # <a name="vat-statement-for-the-czech-republic"></a>Výkaz DPH pro Českou republiku
 
 [!include [banner](../includes/banner.md)]
@@ -147,7 +146,6 @@ Ke kontrole nebo změně konfigurace výkazu DPH můžete použít pracovní pro
 
 ## <a name="generate-the-vat-statement"></a>Generování výkazu DPH
 Pokud chcete generovat soubor DPH XML, otevřete stránku **Platby DPH**, vyberte doklady a klikněte na **Export DPH do souboru XML**.
-
 
 
 

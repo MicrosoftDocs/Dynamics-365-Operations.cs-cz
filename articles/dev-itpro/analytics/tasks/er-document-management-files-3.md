@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření formátů k použití souborů pro správu dokumentů ve výstupu elektronického výkaznictví"
-description: "Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví k souborů správy dokumentů ve výstupu elektronického výkaznictví."
+---
+title: Vytvoření formátů k použití souborů pro správu dokumentů ve výstupu elektronického výkaznictví
+description: Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví k souborů správy dokumentů ve výstupu elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 1815a0004eee6734b3c7d2c2f9e75ce5fe16af1c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362940"
 ---
-
 # <a name="create-formats-to-use-document-management-files-in-er-output"></a>Vytvoření formátů k použití souborů pro správu dokumentů ve výstupu elektronického výkaznictví
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
@@ -32,7 +31,7 @@ Následující postup popisuje, jak uživatel s rolí správce systému nebo vý
 
 K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Soubory správy dokumentů použití ER soubory ve výstupech formátu (Část 2: Rozšíření datového modelu).
 
-Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
 
 ## <a name="create-a-format-to-process-invoices"></a>Vytvoření formátu pro zpracování faktur
@@ -120,5 +119,4 @@ Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics
 22. Klikněte na možnost Vazba.
 23. Klikněte na položku Uložit.
 24. Zavřete stránku.
-
 

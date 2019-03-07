@@ -1,13 +1,13 @@
 ---
-title: "Přehled směnného kurzu DPH"
-description: "Toto téma obsahuje informace o směnných kurzech pro výpočet DPH. Směnný kurz, který se používá k výpočtu DPH, může být odlišný od směnného kurzu, který organizace používá pro funkce účetnictví. Při zaúčtování dokumentu v cizí měně jsou zaúčtovány všechny vzniklé kurzové rozdíly do konkrétních účtů hlavní knihy."
+title: Přehled směnného kurzu DPH
+description: Toto téma obsahuje informace o směnných kurzech pro výpočet DPH. Směnný kurz, který se používá k výpočtu DPH, může být odlišný od směnného kurzu, který organizace používá pro funkce účetnictví. Při zaúčtování dokumentu v cizí měně jsou zaúčtovány všechny vzniklé kurzové rozdíly do konkrétních účtů hlavní knihy.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 5f3988e9dea7687d710a7580c0c63d720f3baa0a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f6a1bd580de0a2c40ce3a407c0fd056cae98bfee
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370084"
 ---
-
 # <a name="vat-exchange-rate-overview"></a>Přehled směnného kurzu DPH
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Než budete moci použít tuto funkci, musíte nakonfigurovat systém.
 ## <a name="overview"></a>Přehled
 
 Po dokončení konfigurace systému pro použití směnných kurzů DPH, pokud je nutné zadat dokument nebo vytvořit objednávku používající cizí měnu, lze použít stránku **Transakce DPH** pro nastavení hodnoty **Datum rejstříku DPH** k vyzvednutí a nastavení výchozí hodnoty **Směnný kurz DPH**. Obě pole lze upravovat. Můžete také použít pole **Původ opravené částky (směnný kurz DPH)** nebo **Opravená částka DPH (směnný kurz DPH)** pro zadání skutečných částek DPH v místní měně, která je uvedena v externím dokumentu. Při kontrole účetnictví můžete zobrazit částky rozdílu DPH na stránce **Dílčí hlavní kniha**. Při zaúčtování dokumentu můžete zobrazit jakékoliv rozdíly v částkách DPH způsobené rozdílem mezi směnným kurzem měny DPH a směnným kurzem účetnictví vaší organizace, které jsou zaúčtovány do účtů hlavní knihy, které jste nakonfigurovali.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Skupiny konsolidačních účtů a další konsolidační účty"
-description: "Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Skupiny konsolidačních účtů a další konsolidační účty
+description: Toto téma obsahuje informace o skupinách konsolidačních účtů a další konsolidačních účtech a vysvětluje způsob jejich použití v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: f1c463ee54512b07f5e45c4df995aefed6110cb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 60486002b520fdf347ed2537cefa0a45e06d6271
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366390"
 ---
-
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Skupiny konsolidačních účtů a další konsolidační účty
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,6 @@ Když dokončíte vytváření skupin konsolidačních účtů a dalších konso
 
 
 Další informace naleznete v tématu [Vytvoření skupin konsolidace a další konsolidace účtů](../general-ledger/tasks/create-consolidation-groups.md). 
-
 
 
 

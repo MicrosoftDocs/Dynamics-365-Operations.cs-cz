@@ -1,13 +1,13 @@
 ---
-title: "Souhrnné hlášení EU"
-description: "V tomto článku jsou informace o souhrnném hlášení pro Evropskou unii (EU)."
+title: Souhrnné hlášení EU
+description: V tomto článku jsou informace o souhrnném hlášení pro Evropskou unii (EU).
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2c4fe1c93693cee9164f2c22ad71a29abd6473d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e1eff86902170401e593019ea555d9c2a4c11c04
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370144"
 ---
-
 # <a name="eu-sales-list-reporting"></a>Souhrnné hlášení EU
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,7 @@ Pomocí formuláře ESL mohou finanční úřady jednotlivých členských stát
 K dispozici máte následující úkony pro souhrnné hlášení EU:
 
 -   Shromažďování informací o intrakomunitárních obchodních transakcích. Intrakomunitární obchodní transakce může být prodejní faktura, volná faktura, projektová faktura nebo dodavatelská faktura. Transakce je identifikována na základě země/oblasti protistrany. Intrakomunitární obchodní transakce různých typů jsou shromažďovány v tabulce souhrnného hlášení EU, v němž jsou reprezentovány v běžné formuláře. Každý záznam v tabulce ESL představuje jednu transakci a obsahuje DIČ protistrany a celkovou hodnotu zboží a služeb, které byly dodány.
--   (Volitelně) Zobrazení sestavy **Souhrnné hlášení (EU)**. Můžete zobrazit a ověřit sestavu **Souhrnné hlášení (EU)** pro dané období ve formuláři sešitu aplikace Microsoft Excel.
+-   (Volitelně) Zobrazení sestavy **Souhrnné hlášení (EU)**. Můžete zobrazit a ověřit sestavu **Souhrnné hlášení (EU)** pro dané období ve formuláři sešitu aplikace Microsoft Excel
 -   Vygenerování sestavy **Souhrnné hlášení (EU)**. Sestava **Souhrnné hlášení (EU)** je generována ve formě elektronického souboru s konkrétním formátem, který je specifický pro každý členský stát EU. Obecně sestava **Souhrnné hlášení (EU)** obsahuje základní informace o vykazující straně a hodnotách dodávek zboží a služeb. Informace jsou seskupovány podle země a DIČ protistrany.
 -   Uzavření období vykazování souhrnného hlášení EU. Po vygenerování sestavy **Souhrnné hlášení (EU)** a odeslání úřadům, je možné označit záznamy tabulky ESL jako **Uzavřené**. Tyto transakce nebudou zahrnuty v dalších sestavách.
 
@@ -158,7 +157,6 @@ Můžete generovat sestavu **Souhrnné hlášení (EU)** pomocí funkce **Vykazo
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Uzavření období vykazování souhrnného hlášení EU
 
 Po dokončení procesu vykazování za určité období (například pokud finanční úřady přijaly sestavu **Souhrnné hlášení (EU)**), lze označit záznamy ESL, které jsou zahrnuty do sestavy za dané období, nastavením položky **Stav vykazování** na hodnotu **Uzavřené**. Tento stav lze nastavit použitím funkce **Označit jako uzavřené**na stránce **Souhrnné hlášení (EU)**. Pokud vrátíte uzávěrku období, můžete označit záznamy ESL nastavením položky **Stav vykazování** na hodnotu **Zahrnuto**. Tyto záznamy pak mohou být znovu zahrnuty v sestavě **Souhrnné hlášení (EU)**. Tento stav lze nastavit použitím funkce **Označit jako** **zahrnuto**na stránce **Souhrnné hlášení (EU)**.
-
 
 
 

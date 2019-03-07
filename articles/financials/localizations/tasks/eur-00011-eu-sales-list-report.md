@@ -1,13 +1,13 @@
---- 
-title: "EUR-00011 Vygenerování sestavy Souhrnné hlášení (EU)"
-description: "Tento postup vás provede generováním sestavy souhrnného hlášení EU."
+---
+title: EUR-00011 Vygenerování sestavy Souhrnné hlášení (EU)
+description: Tento postup vás provede generováním sestavy souhrnného hlášení EU.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  EUSalesList, EUSalesListSelection, SysQueryForm, SysLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 9fcafa2beca5d998b2556ba73e9f3cc2bdd314ba
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370150"
 ---
 # <a name="eur-00011-generate-the-eu-sales-list-report"></a>EUR-00011 Vygenerování sestavy Souhrnné hlášení (EU)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup vás provede generováním sestavy souhrnného hlášení EU. To zahrnuje převod interních obchodních transakcí do souhrnného hlášení EU a spuštění sestavy. Tento postup také zahrnuje vytváření interních obchodních transakcí pro účely ukázky. Další informace o výkazu se seznamem prodeje v EU včetně případných požadovaných předpokladů naleznete v nápovědě aplikace Dynamics 365 for Finance and Operations.
+Tento postup vás provede generováním sestavy souhrnného hlášení EU. To zahrnuje převod interních obchodních transakcí do souhrnného hlášení EU a spuštění sestavy. Tento postup také zahrnuje vytváření interních obchodních transakcí pro účely ukázky. Další informace o výkazu se seznamem prodeje v EU včetně případných požadovaných předpokladů naleznete v nápovědě Dynamics 365 for Finance and Operations.
 
 Postup se vztahuje na všechny evropské země/oblasti. Postup byl vytvořen použitím ukázkových dat společnosti DEMF a následně Německa jako příklad pro domácí zemi nebo oblast. Postup také využívá Portugalsko jako příklad země nebo oblasti EU. Před dokončením tohoto postupu, je nutné konfigurovat vytváření souhrnného hlášení EU.
 
@@ -100,5 +100,4 @@ Tento postup je určen pouze pro účetní.
     * Můžete také nastavit další filtry interní obchodních transakcí k převodu pro označení jako Uzavřeno.  
 7. Klikněte na tlačítko OK.
 8. Vyberte volbu „Uzavřeno“ v poli Výběr.
-
 

@@ -1,32 +1,31 @@
 ---
-title: "Přehled informací o produktech"
-description: "Toto téma poskytuje informace o správě informací o produktu. Řízení informací o produktech funguje s definicí sdíleného produktu, kategorizací a identifikátory napříč všemi právnickými osobami a také s určitými konfiguracemi produktů pro obchodní procesy."
+title: Přehled informací o produktech
+description: Toto téma poskytuje informace o správě informací o produktu. Řízení informací o produktech funguje s definicí sdíleného produktu, kategorizací a identifikátory napříč všemi právnickými osobami a také s určitými konfiguracemi produktů pro obchodní procesy.
 author: cvocph
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363009"
 ---
-
 # <a name="product-information-overview"></a>Přehled informací o produktech
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,7 @@ Produkt je definován především číslem, názvem a popisem. Jsou však poža
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Distribuce, export a import dat produktu
 
-Definici produktu lze vytvořit v aplikaci Microsoft Dynamics 365 for Finance and Operations. Lze ji také importovat ze správy životního cyklu produktu (PLM), správy dat správy produktů (PDM) nebo systémů správy informací o produktu (PIM). Při použití více než jedné instance aplikace Finance and Operations se jedna instance běžně používá jako předloha dat produktu pro všechny ostatní instance. Tato metoda je podpořena velkou sadou datových entit, které umožňují export a import dat definice produktů z jedné instance na jinou.
+Definici výrobků lze vytvořit v aplikaci Microsoft Dynamics 365 for Finance and Operations. Lze ji také importovat ze správy životního cyklu produktu (PLM), správy dat správy produktů (PDM) nebo systémů správy informací o produktu (PIM). Při použití více než jedné instance aplikace Finance and Operations se jedna instance běžně používá jako předloha dat produktu pro všechny ostatní instance. Tato metoda je podpořena velkou sadou datových entit, které umožňují export a import dat definice produktů z jedné instance na jinou.
 
 Na podporu distribuce dat produktu do mnoha instancí umožňuje aplikace Finance and Operations použití služby Common Data Service. Definice produktů lze exportovat službu běžné dat z instance aplikace Finance and Operations do služby Common Data Service. Definice produktů lze použít k zajištění jinými obchodními aplikacemi, jako například aplikace Microsoft Dynamics 365 for Sales, s daty produktu.
 
@@ -66,7 +65,7 @@ Všimněte si, že v dynamických a pružných organizacích se informace o prod
 
 ## <a name="product-masters-and-product-variants"></a>Hlavní produkty a varianty produktů
 
-V agilním, kde se produkty musí rychle podřizovat požadavkům zákazníka, určují definice produktů sadu produktů místo jedinečných produktů. V aplikaci Microsoft Dynamics 365 for Finance and Operations jsou tyto obecné produkty známy jako *hlavní produkty*. Hlavní produkty mají definici a pravidla definující způsob popisu jedinečných produktů a jejich chování v obchodních procesech. Na základě těchto definicí mohou být generovány jedinečné produkty. Tyto jedinečné produkty se označují jako *varianty produktu*.
+V agilním, kde se produkty musí rychle podřizovat požadavkům zákazníka, určují definice produktů sadu produktů místo jedinečných produktů. V aplikaci Microsoft Dynamics 365 for Finance and Operations se tyto obecné produkty označují jako *základní produkty*. Hlavní produkty mají definici a pravidla definující způsob popisu jedinečných produktů a jejich chování v obchodních procesech. Na základě těchto definicí mohou být generovány jedinečné produkty. Tyto jedinečné produkty se označují jako *varianty produktu*.
 
 V aplikaci Finance and Operations je hlavní produkt přidružen ke skupině dimenzí produktu a technologii konfigurace k určení obchodních pravidel. Dimenze produktu (barva, velikost, styl a konfigurace) jsou konkrétní sada atributů, které lze použít v celé aplikaci k definování a sledování konkrétního chování souvisejících produktů. Tyto dimenze také pomáhají uživatelům vyhledat a určit produkty.
 
@@ -97,4 +96,3 @@ Pracovní prostor sestává ze souhrnu dlaždic a dvou seznamů. Seznam **Otevř
 ### <a name="manually-creating-a-new-released-product"></a>Ruční vytvoření nově uvolněného produktu
 
 Uvolněný produkt můžete vytvořit ručně v jednom běhu, v závislosti na obchodních procesech dané organizace a pravidlech používání této funkce. Tato funkce vytvoří nový produkt a automaticky ho uvolní pro stávající právnickou osobu. Pokud chcete vytvořit nový produkt, klikněte na **Uvolněné produkty** v pracovním prostoru **Údržba uvolněných produktů** na stránce se seznamem **uvolněný produkt**.
-

@@ -1,33 +1,32 @@
 ---
-title: "Funkce usnadnění přístupu"
-description: "Toto téma popisuje funkci, která je určená k tomu, aby pomohla uživatelům, kteří mají různá postižení, používat aplikace Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent."
+title: Funkce usnadnění přístupu
+description: Toto téma popisuje funkci určenou uživatelům, kteří mají různá postižení, aby mohli používat Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent.
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: f88b485b0bdbf66532adff530e399bdd9d5b0ed5
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363400"
 ---
-
 # <a name="accessibility-features"></a>Funkce usnadnění přístupu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje funkci, která je určená k tomu, aby pomohla uživatelům, kteří mají různá postižení, používat aplikace Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent. Existují například funkce pro zrakově postižené uživatele, kteří používají technologie jako je Microsoft Windows Narrator
+Toto téma popisuje funkci určenou uživatelům, kteří mají různá postižení, aby mohli používat Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent. Existují například funkce pro zrakově postižené uživatele, kteří používají technologie jako je Microsoft Windows Narrator.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows Narrator a přístup pouze pomocí klávesnice
 
@@ -97,4 +96,3 @@ Produkt je navržen pro práci na různých zařízení a provedeních, od nejme
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Pokyny pro vývojáře a odběratele k tomu, jak začlenit usnadnění přístupu do svých přizpůsobení
 
 Další informace o osvědčených postupech společnosti Microsoft pro usnadnění přístupu naleznete v tématu [Dostupnost ve formulářích, produktech a ovládacích prvcích](../../dev-itpro/user-interface/enable-accessibility.md).
-
