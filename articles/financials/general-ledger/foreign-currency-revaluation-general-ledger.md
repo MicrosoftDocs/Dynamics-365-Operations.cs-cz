@@ -1,13 +1,13 @@
 ---
-title: "Přecenění cizí měny pro hlavní knihu"
-description: "Toto téma obsahuje přehled následujících procesů přecenění cizí měny hlavní knihy – nastavení, spuštění procesu, výpočty pro proces a způsob stornování transakcí přecenění v případě potřeby."
+title: Přecenění cizí měny pro hlavní knihu
+description: Toto téma obsahuje přehled následujících procesů přecenění cizí měny hlavní knihy – nastavení, spuštění procesu, výpočty pro proces a způsob stornování transakcí přecenění v případě potřeby.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb04c5a9e7db1a6c6a8d8c7126bfa80208d1fd53
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f967854e9a39c7b2d76559744bbc1e16a53d7f6a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315537"
 ---
-
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Přecenění cizí měny pro hlavní knihu
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Bude vytvořena následující účetní položka.
 Pokud potřebujete stornovat transakci přecenění, vyberte tlačítko **Stornovat transakci** na stránce  **Přecenění cizí měny**. Nový historický záznam přecenění cizí měny bude vytvořen k udržování historického kontrolního záznamu, kdy bylo přecenění vytvořeno nebo stornováno. 
 
 Výsledek přecenění mimo pořadí dat lze zrušit, ale může být nutné změnit také aktuálnější přecenění k zajištění správných zůstatků pro každý přeceněný hlavní účet. Protože neexistuje žádný způsob, jak řídit, které hlavní účty budou přehodnoceny a četnost jejich přeceňování, může dojít ke stornu aktuálního pořadí. Organizace se může například rozhodnout přecenit své hlavní účty hotovosti čtvrtletně, ale všechny ostatní hlavní účty každý měsíc.
-
 
 
 

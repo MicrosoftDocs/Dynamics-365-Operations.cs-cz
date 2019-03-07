@@ -1,31 +1,30 @@
 ---
-title: "Automaticky vytvářené servisní zakázky"
-description: "Servisní zakázky generujete na základě servisních smluv pro platné období servisní smlouvy."
+title: Automaticky vytvářené servisní zakázky
+description: Servisní zakázky generujete na základě servisních smluv pro platné období servisní smlouvy.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0189a9f99ffbb6ed2387211ba9e3b9f3bcdb3b52
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2d942d4448e0f792945603d3f5960fb82095be30
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331177"
 ---
-
 # <a name="automatically-create-service-orders"></a>Automaticky vytvářené servisní zakázky 
 
 [!include [banner](../includes/banner.md)]
@@ -58,6 +57,5 @@ Servisní smlouva je platná od 1. ledna 2012 až 31. prosince 2012. Pokud servi
 Servisní smlouva je platná od 1. ledna 2012 až 31. prosince 2012. K této servisní smlouvě jsou připojeny dva řádky servisní smlouvy. První řádek servisní smlouvy má počáteční datum 2. ledna 2012 a koncové datum 1. března 2012. Druhý řádek servisní smlouvy má počáteční datum 1. dubna 2012 a koncové datum 31. prosince 2012. Můžete určit období ve formuláři **vytváření servisních zakázek** od1. října 2012 do 31. prosince 2012. Servisní zakázky budou tedy generovány pouze pro druhý řádek smlouvy, protože počáteční a koncové datum prvního řádku smlouvy se nachází mimo období zadané pro servisní zakázku.
 
   
-
 
 

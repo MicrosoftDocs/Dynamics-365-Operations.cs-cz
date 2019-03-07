@@ -1,13 +1,13 @@
 ---
-title: "Řízení pracovníků skladu"
-description: "Tento článek popisuje, jak aplikace Dynamics 365 for Finance and Operations pomáhá řídit a sledovat práci, kterou provádějí zaměstnanci ve skladech."
+title: Řízení pracovníků skladu
+description: Tento článek popisuje, jak aplikace Dynamics 365 for Finance and Operations pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 211ced007e7729265621a05c2162a228eb0023c2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310983"
 ---
-
 # <a name="manage-warehouse-workers"></a>Řízení pracovníků skladu
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje, jak aplikace Microsoft Dynamics 365 for Finance and Operations pomáhá řídit a sledovat práci, kterou provádějí zaměstnanci ve skladech.
+Tento článek popisuje, jak aplikace Microsoft Dynamics 365 for Finance and Operations pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
 
 Používáte-li funkci řízení skladu, všechny skladové operace pracovníků jsou označovány jako *práce*. Práce jako například výdej, přemístění a inventura zásob na skladě se zaznamenává pomocí mobilního zařízení. Předtím, než pracovník skladu může pracovat, musí být přidružen k pracovníkovi v modulu Lidské zdroje. Každý účet **Pracovník** může mít asociováno více skladů, se kterými jsou uživatelé přidruženi. Tito pracovní uživatelé mohou pracovat v různých skladech a mohou mít různé úrovně přístupu do různých nabídek mobilního zařízení. Můžete považovat pracovní uživatele skladu jako více přihlášení pro vybraného pracovníka. Každý pracovní uživatel má výchozí sklad a konkrétní workflow jsou zveřejněny pomocí položek nabídky, které jsou k dispozici pro pracovní uživatele. 
 
@@ -54,7 +53,6 @@ Analýza času který se používá ke zpracování pracovních položek může 
 
 -   **Práce podle uživatele** – Tato sestava zobrazuje produktivitu pracovníka, která vychází ze skutečného času proti očekávanému času.
 -   **Práce podle typu transakce práce** – Pomocí této sestavy můžete analyzovat nedostatky v procesech určitého skladu. Například si všimněte, že vyskladnění pro převodní příkazy trvají delší dobu tento týden než v předchozích týdnech. Potom můžete použít tyto informace pro další analýzu.
-
 
 
 

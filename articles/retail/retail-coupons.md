@@ -1,31 +1,30 @@
 ---
-title: "Natavení kupónů pro maloobchodní prodej"
-description: "Toto téma poskytuje přehled maloobchodních kupónů a vysvětluje postup při jejich nastavení."
+title: Natavení kupónů pro maloobchodní prodej
+description: Toto téma poskytuje přehled maloobchodních kupónů a vysvětluje postup při jejich nastavení.
 author: scott-tucker
 manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336582"
 ---
-
 # <a name="set-up-coupons-for-retail-sales"></a>Natavení kupónů pro maloobchodní prodej
 
 [!include [banner](includes/banner.md)]
@@ -38,10 +37,10 @@ Každý kupón se vztahuje k jedné maloobchodní slevě. Cenové skupiny, kter�
 
 Kupóny v zásadě představují další ověření nad rámec maloobchodních slev. Kupón obsahuje kódy kupónu a čárové kódy, které jsou vyžadovány, spolu s rozsahy kalendářních dat pro tyto kódy. Kupón také poskytuje volitelné limity použití a vlastnosti definované zákazníkem. Sleva obsahuje sadu produktů, pro které kupón platný. Cenové skupiny pro slevu poskytují sadu zákazníků, kanálů nebo katalogů, pro které je kupón platný.
 
-Kupón vytvoříte tak, že vytvoříte slevu a kupón samostatně. Pak je spojíte výběrem slevy na stránce kupónu v aplikaci Microsoft Dynamics 365 for Retail.
+Kupón vytvoříte tak, že vytvoříte slevu a kupón samostatně. Pak je spojíte výběrem slevy na stránce kupónu v Microsoft Dynamics 365 for Retail.
 
 > [!NOTE]
-> Po té, co je kupón propojen se slevou, několik polí na stránce slevy v aplikaci Microsoft Dynamics 365 for Retail začne být jen pro čtení, vzhledem k tomu, že jsou spravovány nastavením kupónu. Tato pole zahrnují pole pro stav a standardní rozsahy dat.
+> Po propojení kupónu se slevou začne být několik polí na stránce slevy v Microsoft Dynamics 365 for Retail jen pro čtení, vzhledem k tomu, že jsou spravována nastavením kupónu. Tato pole zahrnují pole pro stav a standardní rozsahy dat.
 
 ### <a name="limited-use-coupons"></a>Kupóny s omezeným použitím
 
@@ -76,9 +75,8 @@ Před nastavením kupónu je nutné nakonfigurovat čárový kód kupónu a dvě
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Vliv částečných aktualizací na kupóny
 
-Funkce kupón zahrnuje více různých funkcí v 365 Dynamics for Retail. Maloobchodní centrály aplikace Microsoft Dynamics 365 for Retail (HQ) a kanál lze částečně aktualizovat napříč komponentami. Proto je důležité pochopit, částečné aktualizace ovlivňují funkčnost kupónu jako celek.
+Funkce kupón zahrnuje více různých funkcí v Dynamics 365 for Retail. Centrály Microsoft Dynamics 365 for Retail (HQ) a kanál lze částečně aktualizovat napříč komponentami. Proto je důležité pochopit, částečné aktualizace ovlivňují funkčnost kupónu jako celek.
 
 - **HQ se aktualizuje částečně, ale nejsou aktualizovány databáze serveru Retail a POS.** V aktualizaci HQ se aktualizují stránky kupónu a slev a modul maloobchodní ceny je rovněž aktualizován. Pokud je aktualizována pouze jedna z těchto dvou komponent, některé stránky v modulu Retail nebudou odpovídat datům výpočtu ceny. Při výpočtech slevy tak mohou nastat neočekávané výpočty slevy nebo chyby.
 - **HQ se aktualizuje částečně, ale nejsou aktualizovány databáze serveru Retail a POS (N-1).** Vzhledem k tomu, že zároveň nemohou být aktualizovány všechny maloobchody, doporučujeme, abyste provedli aktualizaci HQ před aktualizací maloobchodů. V případě scénáře N-1 nebude nová funkčnosti vztahující se ke kupónům k dispozici v obchodech, které dosud nebyly aktualizovány. Funkce kupónu například zavádí řádky vyloučení. Používáte-li u slevy vyloučené řádky, nebudou použity v maloobchodě, ve kterém je spuštěna dřívější verze.
 - **HQ se neaktualizuje, ale jsou aktualizovány databáze serveru Retail a POS (N+1).** Vzhledem k tomu, že aktualizovaný cenový modul na serveru Retail dokáže zpracovávat zastaralé kódy slev během cenové kalkulace, aktualizace by neměla mít žádný funkční dopad na tento scénář.
-

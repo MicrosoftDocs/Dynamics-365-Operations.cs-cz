@@ -1,13 +1,13 @@
 ---
-title: "Plánování účetní osnovy"
-description: "V tomto tématu jsou informace, které vám pomohou naplánovat účtové osnovy pro vaši organizaci."
+title: Plánování účetní osnovy
+description: V tomto tématu jsou informace, které vám pomohou naplánovat účtové osnovy pro vaši organizaci.
 author: aprilolson
 manager: AnnBe
 ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 93d5ef19a4b1cb2885c611c8675ac06fd841ac56
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3f8d97fc42cde9053b0552fc1dfe8e6de0f5e03b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337571"
 ---
-
 # <a name="plan-your-chart-of-accounts"></a>Plánování účetní osnovy
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,7 @@ Zde je několik faktorů, které je třeba brát v potaz při plánování struk
 Na stránce **Účtová osnova** vytvořte účtovou osnovu. Hlavní účty lze vytvořit na stránce **Účtové osnovy** nebo **Hlavní účty**. V hlavních účtech nepoužívejte zvláštní znaky, které se používají jako oddělovače účtové osnovy. V opačném případě může dojít k nestabilitě nebo je třeba vždy použít vyhledávání, resp. při zadávání kombinací účtů a dimenzí. Další informace naleznete v tématu [Vytvoření hlavního účtu](tasks/create-main-account.md).
 
 > [!NOTE]
-> V aplikaci Microsoft Dynamics for Finance and Operations verze 8.0 (duben 2018) můžete změnit oddělovač účtové osnovy ze stránky **parametry hlavní knihy** stránky.
+> V aplikaci Microsoft Dynamics for Finance and Operations verze 8.0 (duben 2018) můžete změnit oddělovač účtové osnovy ze stránky **Parametry hlavní knihy**.
 
 Je vhodné propojit hlavní účty s kategoriemi hlavních účtů, abyste mohli využít výhody výchozích finančních sestav bez nutnosti provádět změny. Můžete proto rychleji a snáze navrhovat a spravovat sestavy.
 
@@ -61,4 +60,3 @@ Další informace naleznete v následujících tématech:
 
 - [Finanční dimenze](financial-dimensions.md)
 - [Vytvoření a přiřazení struktur rozšířeného pravidla](tasks/create-assign-advanced-rule-structures.md)
-

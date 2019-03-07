@@ -1,13 +1,13 @@
 ---
-title: "Prognóza cashflow"
-description: "Toto téma obsahuje přehled procesu prognózy cashflow. Také vysvětluje, jak je prognóza cashflow integrována s jinými moduly v systému."
+title: Prognóza cashflow
+description: Toto téma obsahuje přehled procesu prognózy cashflow. Také vysvětluje, jak je prognóza cashflow integrována s jinými moduly v systému.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 681817f2879034d65b53666a9d56ec00cc175ad8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 9aefc79897d0abcee14c05f33516181b3eb05e55
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324484"
 ---
-
 # <a name="cash-flow-forecasting"></a>Prognóza cashflow
 
 [!include [banner](../includes/banner.md)]
@@ -138,5 +137,4 @@ Dále můžete zobrazit data prognózy cashflow pro konkrétní účty, objedná
 - **Všechny nákupní objednávky**: Na kartě **Faktura** zvolte **Prognózy cashflow** pro zobrazení předpokládaného dopadu hotovosti vybrané nákupní objednávky.
 - **Prognóza nabídek**: Vyberte **Prognózy cashflow** k zobrazení budoucích cashflow, které jsou přidruženy k vybrané prognóze nabídky položky.
 - **Prognóza poptávek**: Vyberte **prognózy cashflow** k zobrazení budoucích cashflow, které jsou přidruženy k vybrané prognóze poptávky položky.
-
 

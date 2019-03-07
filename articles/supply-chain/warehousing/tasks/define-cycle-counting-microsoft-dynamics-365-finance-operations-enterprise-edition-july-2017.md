@@ -1,13 +1,13 @@
---- 
-title: "Definování cyklické inventury "
-description: "Cyklická inventura je skladový proces, který slouží k auditu skladových položek na skladě."
+---
+title: 'Definování cyklické inventury '
+description: Cyklická inventura je skladový proces, který slouží k auditu skladových položek na skladě.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2832547f81b0153d42ac4664184f18bd66f1acdd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f9cdb0a7de0199363279c53e817c98085b31fe6b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337295"
 ---
 # <a name="define-cycle-counting"></a>Definování cyklické inventury  
 
@@ -100,5 +100,4 @@ Cyklická inventura je skladový proces, který slouží k auditu skladových po
 20. V poli Kritéria zadejte nebo vyberte hodnotu.
 21. Klikněte na tlačítko OK.
 22. Zavřete stránku.
-
 

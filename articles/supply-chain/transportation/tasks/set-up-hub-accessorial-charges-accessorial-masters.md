@@ -1,13 +1,13 @@
---- 
-title: "Nastavení nákladů na dodatečnou službu centra a hlavních dodatečných služeb"
-description: "Tento postup popisuje vytvoření hlavní dodatečnou služby pro centrum a použití této hlavní položky k vytvoření poplatků za dodatečnou službu centra."
+---
+title: Nastavení nákladů na dodatečnou službu centra a hlavních dodatečných služeb
+description: Tento postup popisuje vytvoření hlavní dodatečnou služby pro centrum a použití této hlavní položky k vytvoření poplatků za dodatečnou službu centra.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9959c20f9a8fd07cbf0cfd76f7760b44d7b5cae1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6381416640ffacf0a9d96d7da96bc33612ca7137
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331890"
 ---
 # <a name="set-up-hub-accessorial-charges-and-accessorial-masters"></a>Nastavení nákladů na dodatečnou službu centra a hlavních dodatečných služeb
 
@@ -52,5 +52,4 @@ Tento postup popisuje vytvoření hlavní dodatečnou služby pro centrum a pou�
     * Vyberte hlavní položku, kterou jste právě vytvořili.  
 9. Klikněte na položku Uložit.
 10. Zavřete stránku.
-
 

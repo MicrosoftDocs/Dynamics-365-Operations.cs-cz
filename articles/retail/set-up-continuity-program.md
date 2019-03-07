@@ -1,13 +1,13 @@
 ---
-title: "Nastavení programů kontinuity pro kontaktní střediska"
-description: "Tento článek popisuje, jak lze nastavit program trvání pro kontaktní středisko."
+title: Nastavení programů kontinuity pro kontaktní střediska
+description: Tento článek popisuje, jak lze nastavit program trvání pro kontaktní středisko.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 369856f33c6da49b6c6b3f51f42c99a8f07fe777
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 9952785afd8e5d1877e96239ee23f9de1c332bcf
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320965"
 ---
-
 # <a name="set-up-continuity-programs-for-call-centers"></a>Nastavení programů kontinuity pro kontaktní střediska
 
 [!include [banner](includes/banner.md)]
@@ -51,4 +50,3 @@ Poté, co jste nastavili program trvání podle pokynů výše, můžete vytvoř
 - **Rozšiřte řádky trvání** (je-li vyžadováno) – zvyšte počet opakování povolených u trvalé události. Opakování dodávky lze poté překročit přes limit, který byl nastaven v poli **Prahová hodnota opakování trvalé položky** v parametrech kontaktního střediska.
 - **Proveďte aktualizaci trvání** (je-li vyžadováno) – synchronizujte změny mezi programem trvání a nadřazenými trvalými prodejními objednávkami.
 - **Zavřete nadřazené řádky trvání a objednávky** – zavřete trvalé objednávky.
-

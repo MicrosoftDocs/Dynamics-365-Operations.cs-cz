@@ -1,13 +1,13 @@
 ---
-title: "Mobilní pracovní prostor zásob na skladě"
-description: "Toto téma obsahuje informace o mobilním pracovním prostoru Zásoby na skladě. Tento mobilní pracovní prostor pomáhá získat mobilní přehled o rezervovaných a dostupných zásobách a je k dispozici kdykoli a kdekoli."
+title: Mobilní pracovní prostor zásob na skladě
+description: Toto téma obsahuje informace o mobilním pracovním prostoru Zásoby na skladě. Tento mobilní pracovní prostor pomáhá získat mobilní přehled o rezervovaných a dostupných zásobách a je k dispozici kdykoli a kdekoli.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -18,14 +18,13 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: e2a99476da7ce3feab1d2c37e8510f0042cf4b63
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 735a25d625774892ff71d4799932f15c258dfbfa
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335593"
 ---
-
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilní pracovní prostor zásob na skladě
 
 [!include [banner](../includes/banner.md)]
@@ -56,13 +55,13 @@ Mobilní pracovní prostor konkrétně poskytuje následující funkce:
     -   Podle fyzické rezervy (Toto zobrazení představuje rezervovanou částku).
     -   Fyzicky k dispozici (Toto zobrazení představuje částku k dispozici, která nemá žádné rezervace.)
 
-## <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Předpoklady
 Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations 
-Pokud je ve vaší organizaci nasazena aktualizace aplikace Microsoft Dynamics 365 for Finance and Operations, správce systému musí mobilní pracovní prostor **Zásoby na skladě** publikovat. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Předpoklady při použití Microsoft Dynamics 365 for Finance and Operations 
+Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Finance and Operations , správce systému musí publikovat mobilní pracovní prostor **Zásoby na skladě**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Požadavky, pokud používáte aplikaci Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Předpoklady při použití Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform Update 3 nebo vyšší
 Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější, správce systému musí dokončit následující předpoklady. 
 
 <table>
@@ -80,7 +79,7 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 
 <td>KB 4013633 je aktualizace X++ nebo oprava hotfix metadat obsahující mobilní pracovní prostor <strong>Zásoby na skladě</strong>. Pro implementaci KB 4013633 musí správce systému provést tyto kroky:
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Stažení opravy hotfix metadat ze služby Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Stažení oprav hotfix z Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Nainstalujte opravu hotfix metadat</a>.</li>
 <li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Vytvořte nasaditelný balíček</a>, který obsahuje model <strong>SCMMobile</strong>, a nahrajte ho do LCS.</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Použití nasaditelného balíčku</a></li>
@@ -131,4 +130,3 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
     -   Podle fyzické inventury (Toto zobrazení představuje celkovou částku).
     -   Podle fyzické rezervy (Toto zobrazení představuje rezervovanou částku).
     -   Fyzicky k dispozici (Toto zobrazení představuje částku k dispozici, která nemá žádné rezervace.)
-

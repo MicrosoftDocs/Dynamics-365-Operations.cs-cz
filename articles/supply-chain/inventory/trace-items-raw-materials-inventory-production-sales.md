@@ -1,13 +1,13 @@
 ---
-title: "Sledování zboží a surovin ve skladu, při výrobě a prodeji"
-description: "Toto téma popisuje, jak můžete použít sledování položky k identifikaci, kde bylo použito zboží nebo suroviny, nebo kde budou použity ve výrobě a prodejních procesech."
+title: Sledování zboží a surovin ve skladu, při výrobě a prodeji
+description: Toto téma popisuje, jak můžete použít sledování položky k identifikaci, kde bylo použito zboží nebo suroviny, nebo kde budou použity ve výrobě a prodejních procesech.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310063"
 ---
-
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sledování zboží a surovin ve skladu, při výrobě a prodeji
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,7 @@ Pokud chcete použít možnost **Nové zpětné sledování** nebo **Nové dopř
 Informace můžete uložit na kartě <strong>Podrobnosti</strong> jako soubor XML kliknutím na <strong>Export</strong> pod položkou *<strong><em>Sledování</em></strong>* v podokně akcí. Kromě podrobností o sledování obsahuje soubor XML kritéria sledování, nadřazený uzel a množství na skladě. Možnost uložení podrobností o sledování je užitečné, například pokud mají být připojeny informace o objednávce kvality nebo jiná dokumentace o kompatibilitě. Můžete určit, kde je soubor uložen. Chcete-li zobrazit soubor ihned, vyberte možnost <strong>Zobrazit dokument</strong>. <strong>Poznámka:</strong> Soubor se uloží vždy, i v případě, že ho chcete pouze zobrazit. Ve výchozím nastavení se otevře soubor XML v okně prohlížeče. To lze změnit klepnutím pravým tlačítkem myši na soubor, výběrem volby <strong>Otevřít v programu</strong> a potom výběrem programu, který se má použít k zobrazení obsahu.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Lze vypočítat zůstatek pro konkrétní položku nebo látku?
-Informace můžete exportovat ze souhrnných stránek do aplikace Microsoft Excel. Otevřete odpovídající stránku, klepněte na ikonu **Otevřít v aplikaci Microsoft Office** a poté vyberte **Exportovat do aplikace Excel**. Tato funkce je zvlášť užitečná, když chcete vypočítat hromadný zůstatek položky nebo látky ze stránky **Souhrnné transakce**. Na stránce **Souhrnné transakce** můžete filtrovat podle zboží nebo složky a dávky, pokud chcete, a poté exportovat informace do aplikace Excel. V aplikaci Excel například můžete izolovat množství na skladě, prodané množství a částku, která byla použita ve výrobě.
+Informace můžete exportovat ze souhrnných stránek do aplikace Microsoft Excel. Otevřete odpovídající stránku, klepněte na ikonu **Otevřít v aplikaci Microsoft Office** a poté vyberte **Exportovat do aplikace Microsoft Excel**. Tato funkce je zvlášť užitečná, když chcete vypočítat hromadný zůstatek položky nebo látky ze stránky **Souhrnné transakce**. Na stránce **Souhrnné transakce** můžete filtrovat podle zboží nebo složky a dávky, pokud chcete, a poté exportovat informace do aplikace Excel. V aplikaci Excel například můžete izolovat množství na skladě, prodané množství a částku, která byla použita ve výrobě.
 
 ## <a name="can-i-investigate-whether-there-is-a-history-of-issues-with-items-or-raw-materials"></a>Můžu zjistit, zda existuje historie problémů se zbožím nebo surovinami?
 Podrobnosti o sledování zahrnují informace o objednávkách kvality a neshodách, které zahrnují zboží nebo suroviny. Souhrn objednávek kvality a neshod lze zobrazit klepnutím na **Objednávka kvality** nebo **Neshody** v podokně akcí. **Poznámka:** Destruktivní objednávky kvality se mohou v podrobnostech o sledování zobrazit více než jednou. Při vytvoření destruktivní objednávky kvality pro dokument, například nákupní objednávky, se zobrazí pro každou transakci pro daný dokument.
@@ -141,4 +140,3 @@ Můžete vygenerovat sestavu **Expedováno odběratelům** k identifikaci množs
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Je možné sledovat souběžné a vedlejší produkty?
 Souběžné produkty lze sledovat, ale není možné sledovat vedlejší produkty, protože k nim nejsou obvykle přiřazeny sledovací dimenze. Když sledujete zboží, budou jakékoli související souběžné produkty zahrnuty do podrobností o sledování. Uzel, který obsahuje souběžný produkt, má v podrobnosti slovo "souběžný produkt". Podrobnosti o souběžném produktu můžete z obrazit také výběrem uzlu v podrobnostech o sledování a kliknutím na pevnou záložku **Výroba**.
-

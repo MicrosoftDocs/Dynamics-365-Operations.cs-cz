@@ -1,13 +1,13 @@
 ---
-title: "Vytváření modelu konfigurace produktu"
-description: "V jak vztahu mezi společnostmi, tak mezi podniky a odběrateli se stalo pravidlem, že konfigurace produktů musí splňovat zvláštní požadavky."
+title: Vytváření modelu konfigurace produktu
+description: V jak vztahu mezi společnostmi, tak mezi podniky a odběrateli se stalo pravidlem, že konfigurace produktů musí splňovat zvláštní požadavky.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60a901ce9e87571b2d199a49af2cddbd72fc5808
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfaf16cde329909c167d1ad402e08619bdcd5a2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327451"
 ---
-
 # <a name="build-a-product-configuration-model"></a>Vytváření modelu konfigurace produktu
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ Omezení tabulek mohou být definovaná uživatelem nebo systémem.
 
 Omezení tabulky uživatelem je vytvořeno uživatelem. Uživatel vybere kombinaci typů atributů k představení sloupců tabulky a poté zadá hodnoty z domén typů vybraných atributů k vytvoření řádků v omezeních tabulky.  
 
-Omezení tabulky definované systémem je definováno výběrem, kterou tabulku produktu Microsoft Dynamics 365 for Finance and Operations použít jako odkaz, a poté výběrem polí z této tabulky k seřazení sloupců v omezení. Omezení řádků tabulky jsou řádky tabulky Finance and Operations, které jsou k dispozici v době konfigurace.  
+Omezení tabulky definované systémem je definována výběrem, kterou tabulku produktu Microsoft Dynamics 365 for Finance and Operations použít jako odkaz, a poté výběrem polí z této tabulky k seřazení sloupce v omezení. Omezení řádků tabulky jsou řádky tabulky Finance and Operations, které jsou k dispozici v době konfigurace.  
 
 Omezení tabulky je zahrnuto v modelu konfigurace produktu odkazováním na definici omezení tabulky a mapováním odpovídajících atributů v modelu do sloupců v omezení tabulky.
 
@@ -158,7 +157,6 @@ Konfigurace produktu lze provést v následujících umístěních:
 ### <a name="multiple-sites-and-intercompany"></a>Více pracovišť a mezipodniková pracoviště
 
 Bude-li konfigurace provedena na pracovišti nebo dokonce ve společnosti, která se liší od pracoviště nebo společnosti, kde má výroba probíhat, bude pro ně vytvořen kusovník a postup a budou umístěny na webu dodavatele dodavatelské společnosti. Varianty produktu budou vydány do všech společností, které jsou součástí dodavatelského řetězce.
-
 
 
 

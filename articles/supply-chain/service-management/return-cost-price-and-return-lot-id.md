@@ -1,31 +1,30 @@
 ---
-title: "Nákladová cena vrácení a ID vrácené šarže"
-description: "Můžete chtít, aby se náklady na vrácené produkty rovnaly nákladům na produkty v době, kdy jste produkty prodali zákazníkovi. To lze provést pomocí **ID vrácené šarže**."
+title: Nákladová cena vrácení a ID vrácené šarže
+description: Můžete chtít, aby se náklady na vrácené produkty rovnaly nákladům na produkty v době, kdy jste produkty prodali zákazníkovi. To lze provést pomocí **ID vrácené šarže**.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33cd3d50fe342ba12a17419f4e759c243a60b3e0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: aeba56128ab6c9ab7d244bdf153faba8e96069d6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335133"
 ---
-
 # <a name="return-cost-price-and-return-lot-id"></a>Nákladová cena vrácení a ID vrácené šarže        
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Ve výchozím nastavení při přidání položky do vratky budou položky vrác
 
 3.  Ve formuláři **Vytvořit vratku** vyberte účet zákazníka a klepněte na tlačítko **OK**.
 
-4.  Ve formuláři **vratka – číslo RMA: %1, %2** vyberte položku a poté zadejte záporné množství do pole **množství**.
+4.  Ve formuláři **vratka – číslo RMA: %1, %2** vyberte položku a poté zadejte záporné množství do pole **Množství**.
 
 5.  Klikněte na pevnou záložku **Podrobnosti řádku**.
 
@@ -109,7 +108,6 @@ Používáte-li pole **ID vrácené šarže** na řádku objednávky k určení 
 10. V modulu Řízení zásob a skladu použijte formulář **závěrka a oprava** a spusťte formulář ke spuštění **3. závěrky**.
     
     Tato akce, nastaví náklady pro původní řádek prodeje, který byl vypočítán při -35,00 (5 kusů \* 7,00) k -30,00 (5 kusů \* 6,00). Je to proto, že skupina skladových modelů používá metodu první do skladu, první ze skladu (FIFO), a náklady 6,00 za kus z první nákupní objednávky. Kromě toho tato akce upraví náklady na vrácení řádku prodeje tak, aby odpovídal ceně za kus v původním řádku nákupní objednávky. Proto náklady řádku vrácenky budou upraveny z 35,00 na 30,00.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Generování a zpracování rabatů odběratelů"
-description: "Tento postup ukazuje zpracování rabatů odběratele z generování nároku až do okamžiku jejich předání do pohledávek jako časově rozlišených položek."
+---
+title: Generování a zpracování rabatů odběratelů
+description: Tento postup ukazuje zpracování rabatů odběratele z generování nároku až do okamžiku jejich předání do pohledávek jako časově rozlišených položek.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5afe2fa73e218aa9eb21aff866baa509860a83cb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 348793abc6d219f38bcdc2629b77343d93927005
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336444"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generování a zpracování rabatů odběratelů
 
@@ -83,5 +83,4 @@ Tento postup ukazuje zpracování rabatů odběratele z generování nároku až
 9. V poli Odběratel zadejte nebo vyberte hodnotu.
 10. Klikněte na tlačítko OK.
     * Zpráva ukazující, že byl rabat úspěšně zpracován a že se stav nároku změnil na hodnotu Označit. To znamená, že po zaúčtování deníku časového rozlišení rabatu: a) nároky jsou nyní převedeny do dočasného zůstatku odběratele jako odpočty; b) na účet časového rozlišení rabatu bylo provedeno připsání představující budoucí odpovědnost směrem k odběrateli; c) z výdajového účtu rabatu byl proveden odpis v rámci uznání vzniklých nákladů v souvislosti s prodejem.   
-
 

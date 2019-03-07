@@ -1,14 +1,14 @@
 ---
-title: "Chytrá doporučení"
-description: "Toto téma vysvětluje, jak lze použít strojové učení pro poskytnutí doporučení pro práce a uchazeče o práci."
+title: Chytrá doporučení
+description: Toto téma vysvětluje, jak lze použít strojové učení pro poskytnutí doporučení pro práce a uchazeče o práci.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fea36661c65739ef09261c82ec44e16c29fad0e7
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303585"
 ---
-
 # <a name="intelligent-recommendations"></a>Chytrá doporučení
 
 [!include[banner](../includes/banner.md)]
@@ -45,4 +44,3 @@ Pro jakéhokoliv doporučeného kandidáta můžete vybrat možnost **Zobrazit k
 ## <a name="job-recommendations"></a>Doporučení práce 
 
 Pokud potenciální zaměstnanec použije kariérní web, aby se ucházel o zaměstnání, doporučí se další otevřené pozice v organizaci. Tato doporučení se zakládají na předchozích žádostech uchazeče a jeho životopisu a profilu. Tím pádem doporučení práce pomáhají uchazečům rychle identifikovat práce, které jsou pro ně nejvhodnější. Doporučení práce jsou poskytována uchazečům tehdy, pokud je na kariérním webu nabízeno více než deset pracovních pozic. Uchazeči mohou otevřít podrobnosti o nabídce zaměstnání z karty doporučení. Mohou také poskytnout zpětnou vazbu o doporučení za účelem vylepšení budoucích doporučení.
-

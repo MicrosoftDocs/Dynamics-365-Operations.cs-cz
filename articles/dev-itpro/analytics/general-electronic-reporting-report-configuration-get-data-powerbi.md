@@ -1,13 +1,13 @@
 ---
-title: "Konfigurace elektronického výkaznictví pro doplňování dat do Power BI"
-description: "Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z aplikace Finance and Operations do služeb Power BI."
+title: Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
+description: Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z aplikace Finance and Operations do služeb Power BI.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e2d3c03a75fd03dfd3a96a181eff20f934546ec4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335777"
 ---
-
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z aplikace Finance and Operations do služeb Power BI. Toto téma používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti.
+Toto téma vysvětluje, jak lze použít konfiguraci elektronického vykazování (ER) k uspořádání přenosu dat z aplikace Finance and Operations do služeb Power BI. Toto téma používá jako příklad transakcí v systému Intrastat obchodní údaje, které je nutné převést. Vizualizace map Power BI využívá těchto dat transakcí systému Intrastat, aby představila náhled analýzy aktivit importu a exportu společnosti v sestavě Power BI.
 
 ## <a name="overview"></a>Přehled
 
-Microsoft Power BI je sada softwarových služeb, aplikací a konektorů, které společně mění externí zdroje dat na souvislých, vizuálně dokonalých a interaktivních poznatků. Elektronické vykazování (ER) uživatelům aplikace Microsoft Dynamics 365 for Finance and Operations umožňuje snadno konfigurovat zdroje dat a nastavit převod dat z aplikace Finance and Operations do Power BI. Data se převádějí jako soubory ve formátu listu OpenXML (soubor sešitu aplikace Microsoft Excel). Převedené soubory se ukládají na serveru Microsoft SharePoint, který byl konfigurován pro tento účel. Uložené soubory se používají v Power BI a vyrábějí sestavy, které zahrnují vizualizace (tabulky, grafů, mapy apod.) Sestavy Power BI se sdílí s uživateli Power BI a jsou dostupné na řídicích panelech Power BI a na stránkách aplikace Finance and Operations. Toto téma vysvětluje následující úkoly:
+Microsoft Power BI je sada softwarových služeb, aplikací a konektorů, které společně mění externí zdroje dat na souvislých, vizuálně dokonalých a interaktivních poznatků. Elektronické výkaznictví umožňuje uživatelům Microsoft Dynamics 365 for Finance and Operations snadno konfigurovat zdroje dat a převod dat z Finance and Operations do Power BI. Data se převádějí jako soubory ve formátu listu OpenXML (soubor sešitu aplikace Microsoft Excel). Převedené soubory se ukládají na serveru Microsoft SharePoint, který byl konfigurován pro tento účel. Uložené soubory se používají v Power BI a vyrábějí sestavy, které zahrnují vizualizace (tabulky, grafů, mapy apod.) Sestavy Power BI se sdílí s uživateli Power BI a jsou dostupné na řídicích panelech Power BI a na stránkách aplikace Finance and Operations. Toto téma vysvětluje následující úkoly:
 
 - Konfiguraci aplikace Finance and Operations.
 - Přípravu konfigurace formátu ER na získávání dat z aplikace Finance and Operations.
@@ -41,7 +40,7 @@ Microsoft Power BI je sada softwarových služeb, aplikací a konektorů, které
 - Použití převedených dat pro vytvoření sestavy Power BI.
 - Zpřístupnění sestavy Power BI v aplikaci Finance and Operations.
 
-## <a name="prerequisites"></a>Požadavky
+## <a name="prerequisites"></a>Předpoklady
 Pro dokončení příkladu v tomto tématu, musíte mít následující přístup:
 
 - Přístup k aplikaci Finance and Operations pro některou z následujících rolí:
@@ -51,16 +50,16 @@ Pro dokončení příkladu v tomto tématu, musíte mít následující přístu
     - Správce systému
 
 - Přístup k serveru SharePoint, který je konfigurován k použití s aplikací Finance and Operations
-- Přístup k systému Power BI
+- Přístup k architektuře Power BI
 
 ## <a name="configure-document-management-parameters"></a>Konfigurujte parametry správy dokumentů
-1. Na stránce **Parametry správy dokumentů**, nakonfigurujte přístup k serveru SharePoint, který bude používán ve společnosti, do které jste přihlášeni (např. společnost DEMF).
+1. Na stránce **Parametry správy dokumentů** nakonfigurujte přístup k serveru SharePoint, který bude používán ve společnosti, do které jste přihlášeni (např. společnost DEMF).
 2. Zkontrolujte připojení k serveru SharePoint, abyste se ujistili, že máte udělen přístup.
 
     [![Stránka s parametry správy dokumentů](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
-3. Otevřete konfigurovanou stránku SharePoint. Vytvořte novou složku, kam bude ER ukládat Excelové soubory s obchodními údaji, které vyžadují sestavy Power BI jako zdroje sad dat Power BI.
-4. V aplikaci Finance and Operations na stránce **Typy dokumentů** vytvořte nový typ dokumentu, který se použije pro přístup ke složce služby SharePoint, kterou jste právě vytvořili. Zadejte **soubor** do pole **Skupina** a **SharePoint** do pole **Umístění** a poté zadejte adresu složky služby SharePoint.
+3. Otevřete konfigurovanou stránku SharePoint. Vytvořte novou složku, kam bude elektronické výkaznictví ukládat soubory aplikace Excel s obchodními údaji, které vyžadují sestavy Power BI jako zdroje sad dat Power BI.
+4. V aplikaci Finance and Operations na stránce **Typy dokumentů** vytvořte nový typ dokumentu, který se použije pro přístup ke složce služby SharePoint, kterou jste právě vytvořili. Zadejte **Soubor** do pole **Skupina** a **SharePoint** do pole **Umístění** a poté zadejte adresu složky služby SharePoint.
 
     [![Stránka typu dokumentu](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
 
@@ -123,7 +122,7 @@ Na stránce **Elektronické sestavy** (**Správa organizace** &gt; **Elektronick
 
 Klepněte na tlačítko **Nastavení** pro nový záznam cíle. Potom můžete v dialogovém okně **nastavení cíle** provést následující kroky.
 
-1. V záložce **Power BI** nastavte možnost **povoleno** na **Ano**.
+1. Na kartě **Power BI** nastavte možnost **Povoleno** na **Ano**.
 2. V poli **SharePoint** vyberte typ dokumentu **Sdílené**, který jste vytvořili dříve.
 
 ## <a name="schedule-execution-of-the-configured-er-format"></a>Naplánujte provedení konfigurovaného ER formátu
@@ -152,7 +151,7 @@ Klepněte na tlačítko **Nastavení** pro nový záznam cíle. Potom můžete v
     [![Vytváření sady dat](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
 
 2. Vyberte možnost **SharePoint – týmová pracoviště** a zadejte cestu serveru SharePoint Server, kterou používáte (v našem příkladu `https://ax7partner.litware.com`).
-3. Přejděte do složky **Sdílené dokumenty / GER data / PowerBI** a vyberte soubor aplikace Excel, který jste vytvořili jako zdroj dat pro novou sadu dat Power BI.
+3. Přejděte do složky **/Shared Documents/GER data/PowerBI** a vyberte soubor aplikace Excel, který jste vytvořili jako zdroj dat pro novou sadu dat Power BI.
 
     [![Výběr souboru aplikace Excel](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
 
@@ -160,9 +159,9 @@ Klepněte na tlačítko **Nastavení** pro nový záznam cíle. Potom můžete v
 
     [![Sada dat v řídicím panelu](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)
 
-5. Konfigurujte naplánování obnovy pro tuto sadu dat, abyste si vynutili periodické aktualizace. Pravidelné aktualizace umožňují využití nových obchodních dat, která vznikají v aplikaci Finance and Operations při pravidelném spouštění sestavy ER prostřednictvím nových verzí souboru aplikace Excel, které se vytváří na serveru SharePoint Server.
+5. Konfigurujte naplánování obnovy pro tuto sadu dat, abyste si vynutili periodické aktualizace. Pravidelné aktualizace umožňují využití nových obchodních dat, která vznikají v aplikaci Finance and Operations při pravidelném spouštění sestavy ER prostřednictvím nových verzí souboru aplikace Excel, které se vytváří na serveru SharePoint.
 
-## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Vytvořte sestavu Power BI pomocí nové sady dat
+## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Vytvoření sestavy Power BI pomocí nové sady dat
 1. Klikněte na tlačítko **Podrobnosti importu a exportu** sady dat Power BI, kterou jste vytvořili.
 2. Nakonfigurujte vizualizaci. Vyberte například vizualizaci **Plná mapa** a proveďte její konfiguraci následujícím způsobem:
 
@@ -170,7 +169,7 @@ Klepněte na tlačítko **Nastavení** pro nový záznam cíle. Potom můžete v
     - Přiřaďte sadu dat **Množství** do pole **Sytost barvy** vizualizace mapy.
     - Přidejte pole sad dat **aktivity** a **Rok** k polím **Filtry** kolekce vizualizace map.
 
-3. Uložte sestavu Power BI jako **sestava podrobností o Importu a exportu**.
+3. Uložte sestavu Power BI jako **sestavu podrobností o importu a exportu**.
 
     [![Sestava podrobností o Importu a exportu](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)
 
@@ -185,17 +184,16 @@ Klepněte na tlačítko **Nastavení** pro nový záznam cíle. Potom můžete v
     [![Aktualizovaná mapa](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance-and-operations"></a>Zpřístupnění sestavy Power BI v aplikaci Finance and Operations
-Nastavte integraci mezi aplikací Finance and Operations a Power BI. Další informace naleznete na [konfigurace integrace Power BI pro pracovní prostory](configure-power-bi-integration.md).
+Nastavte integraci mezi aplikací Finance and Operations a Power BI. Další informace naleznete v části [Konfigurace integrace Power BI pro pracovní prostory](configure-power-bi-integration.md).
 
-1. Na stránce pracovního prostoru **Elektronické vykazování** podporující integraci Power BI (**Správa organizace** &gt; **Pracovní prostory** &gt; **Pracovní prostor elektronického vykazování**), klikněte na **Možnosti** &gt; **Otevřít katalog sestav**.
-2. Vyberte **Podrobnosti Importu a exportu** sestavy Power BI, kterou jste vytvořili, aby se tato sestava zobrazila jako položka akcí na vybrané stránce.
+1. Na stránce pracovního prostoru **Elektronické výkaznictví**, která podporuje integraci Power BI (**Správa organizace** &gt; **Pracovní prostory** &gt; **Pracovní prostor elektronického vykazování**) klikněte na tlačítko **Možnosti** &gt; **Otevřít sestavu katalogu**.
+2. Vyberte **Podrobnosti Importu a exportu sestavy** Power BI, kterou jste vytvořili, aby se tato sestava zobrazila jako položka akcí na vybrané stránce.
 3. Kliknutím na položku akce otevřete stránku aplikace Finance and Operations se sestavami, které jste navrhli v Power BI.
 
     [![Sestava podrobností o Importu a exportu](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
-

@@ -1,13 +1,13 @@
---- 
-title: "Nastavení předpokladů pro správu neshody"
-description: "Tento postup použijte pro povolení procesů správy neshod."
+---
+title: Nastavení předpokladů pro správu neshody
+description: Tento postup použijte pro povolení procesů správy neshod.
 author: perlynne
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters, InventTestReportSetup, SysUserManagement, SysUserSetup, InventTestDiagnosticType, InventTestMiscCharges, InventTestOperation, InventProblemType, InventProblemTypeSetup, InventQuarantineZone
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0a4062acc91e024e3a0a41c0b3cb35ff5ffe2a4a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337663"
 ---
 # <a name="set-up-prerequisites-for-nonconformance-management"></a>Nastavení předpokladů pro správu neshody
 
@@ -102,5 +102,4 @@ Tento postup použijte pro povolení procesů správy neshod. Neshoda popisuje p
 3. Zadejte hodnotu do pole Karanténní zóna.
 4. Zadejte nějakou hodnotu do pole Popis.
 5. Zavřete stránku.
-
 

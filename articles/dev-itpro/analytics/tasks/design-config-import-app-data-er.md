@@ -1,13 +1,13 @@
---- 
-title: "Návrh konfigurací elektronického výkaznictví pro analýzu příchozích dokumentů"
-description: "Kroky v tomto postupu popisují postup návrhu konfigurace elektronického vykazování k analýze příchozího elektronického dokumentu."
+---
+title: Návrh konfigurací elektronického výkaznictví pro analýzu příchozích dokumentů
+description: Kroky v tomto postupu popisují postup návrhu konfigurace elektronického vykazování k analýze příchozího elektronického dokumentu.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326094"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Návrh konfigurací elektronického výkaznictví pro analýzu příchozích dokumentů
 
@@ -110,5 +110,4 @@ Spuštěním mapování vytvářeném modelu pro testovací účely zobrazíte, 
     * Klepněte na tlačítko Procházet a vyberte soubor Response4.xml.  
 16. Klikněte na tlačítko OK.
     * Prohlédněte si generovaný výstup. Všimněte si, že typ odezvy nyní byl správně rozpoznán jako rovnající se souboru Response1.xml.  
-
 

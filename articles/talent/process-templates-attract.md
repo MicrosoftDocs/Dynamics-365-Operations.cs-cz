@@ -1,13 +1,13 @@
 ---
-title: "Vytvoření šablony procesu v aplikaci Attract"
-description: "Toto téma poskytuje informace o způsobu vytvoření šablony procesu v aplikaci Attract."
+title: Vytvoření šablony procesu v aplikaci Attract
+description: Toto téma poskytuje informace o způsobu vytvoření šablony procesu v aplikaci Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
 ms.openlocfilehash: 2b9cac68093be65584192757229c20b1a1546342
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "303575"
 ---
-
 # <a name="create-a-process-template-in-attract"></a>Vytvoření šablony procesu v aplikaci Attract
 
 [!include [banner](includes/banner.md)]
@@ -72,4 +71,3 @@ Pro vytvoření šablony náborového procesu postupujte podle těchto kroků:
     - Chcete-li odstranit aktivitu, rozbalte jí a pak vyberte tlačítko koše na záhlaví aktivity.
 
 8. Zvolte **Uložit**.
-

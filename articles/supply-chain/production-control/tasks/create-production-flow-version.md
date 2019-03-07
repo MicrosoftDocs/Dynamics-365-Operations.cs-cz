@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření verze výrobního toku"
-description: "Tento postup se zaměřuje na vytvoření nové verze výrobního toku."
+---
+title: Vytvoření verze výrobního toku
+description: Tento postup se zaměřuje na vytvoření nové verze výrobního toku.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9a76e5bb6f63f793e4644c2ccf70cef21785ff10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8903e618a35e66742b5c2ebcb5b6f0da3853fcaf
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320666"
 ---
 # <a name="create-a-production-flow-version"></a>Vytvoření verze výrobního toku
 
@@ -63,5 +63,4 @@ Tento postup se zaměřuje na vytvoření nové verze výrobního toku. Pro tuto
 12. Do pole Období skutečného času cyklu (dny) zadejte číslo.
     * Zadejte počet dní v období skutečného času cyklu. Období skutečného času cyklu je počet dnů, jejichž úlohy jsou zpětně seskupeny od aktuální minuty pro výpočet skutečného času cyklu. Hodnota může být změněna kdykoli a je použita pouze pro výpočet skutečného času cyklu.  
 13. Klikněte na položku Uložit.
-
 

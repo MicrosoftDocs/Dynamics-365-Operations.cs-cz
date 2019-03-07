@@ -1,13 +1,13 @@
 ---
-title: "Přehled rozpočtování"
-description: "Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 for Finance and Operations budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran."
+title: Přehled rozpočtování
+description: Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 for Finance and Operations, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 01b7970119b9abb26570c19162e159dd05496168
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1d768ee6d2244a237972f7183f27a60b93eea819
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332304"
 ---
-
 # <a name="budgeting-overview"></a>Přehled rozpočtování 
 
 [!include [banner](../includes/banner.md)]
 
-Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 for Finance and Operations budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
+Téměř všechny společnosti, které používají funkci Finance v aplikaci Microsoft Dynamics 365 for Finance and Operations, budou mít možnost vytvářet sestavy rozpočtu a skutečných hodnot. Tento článek popisuje minimální konfiguraci, která je nezbytná pro vytváření rozpočtů v aplikaci Finance and Operations nebo pro jejich načítání z programu třetích stran.
 
 <a name="overview"></a>Přehled
 --------
@@ -40,7 +39,7 @@ Schválený rozpočet pro právnickou osobu je udržován v dokumentu, který je
 Vytvoření položek registru rozpočtu v aplikaci Finance and Operations lze několika způsoby:
 
 -   Ručně zadat informace o dokumentu na stránce **položky registru rozpočtu**.
--   Použít šablonu aplikace Microsoft Excel, kterou lze otevřít klepnutím na tlačítko **Otevřít v aplikaci Excel** na stránce **položky registru rozpočtu**.
+-   Použijte šablonu aplikace Microsoft Excel, kterou lze otevřít kliknutím na tlačítko **Otevřít v aplikaci Excel** na stránce **Položky registru rozpočtu**.
 -   Použití datovou entitu **účetní položky rozpočtu** v modulu Správa dat pro import položek registru rozpočtu. Zvažte použití této metody a zapnutí **zpracování** parametru **Založeno na sadě**, když musíte importovat velký počet účetních položek rozpočtu do systému.
 -   Pokud společnost používá funkci plánování rozpočtu pro přípravu dat rozpočtu, můžete použít periodické zpracování **Generovat položku registru rozpočtu**.
 
@@ -80,7 +79,6 @@ Správce rozpočtu může kontrolovat aktuální stav rozpočtu v pracovním pro
 Ze stránky s dotazy **Rozpočet a skutečné hodnoty** můžete přejít na podrobné informace o rozpočtu versus skutečných částkách. Vyberte řádek stránky s dotazy a pak klepněte na možnost **Zůstatky za období** a zobrazíte rozpočet a skutečné částky rozdělené do fiskálních období. Stránka **Účetní položky rozpočtu** poskytují přecházení k podrobnostem o rozpočtových částkách v položkách registru rozpočtu. Stránka **Položky hlavního deníku** otevře transakce hlavní knihy, které jsou zahrnuty do vypočítané částky **skutečné hodnoty**. 
 
 Společnost, která používá funkci plánování rozpočtu může vytvořit a použít *prognózy rozpočtu* v pracovním prostoru **Rozpočty hlavní knihy a prognózy**.
-
 
 
 

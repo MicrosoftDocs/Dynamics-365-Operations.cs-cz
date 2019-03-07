@@ -1,13 +1,13 @@
 ---
-title: "Jeden doklad se záznamy několika odběratelů nebo dodavatelů"
-description: "Toto téma poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích aplikace Microsoft Dynamics 365 for Finance and Operations, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání."
+title: Jeden doklad se záznamy několika odběratelů nebo dodavatelů
+description: Toto téma poskytuje přehled o to, co se stane, když zaúčtujete jeden doklad s více záznamy odběratele nebo dodavatele. Tato funkce nebude podporována v budoucích verzích aplikace Microsoft Dynamics 365 for Finance and Operations, proto nedoporučujeme využívat tuto metodu účtování z důvodu dopadu účetnictví na zpracování vyrovnání.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d27c4182703b4421763036b2a338b3598f9e969b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4c499e31fb42a69dff6ac41faac0c78f7f4d1876
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330349"
 ---
-
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Jeden doklad se záznamy několika odběratelů nebo dodavatelů
 
 [!include [banner](../includes/banner.md)]
@@ -249,7 +248,6 @@ Chcete-li se vyhnout nežádoucím problémům s budoucím vyrovnání pro tuto 
 | **Doklad** | **Typ účtu** | **Účet** | **Popis** | **Má Dáti** | **Kreditní** | **Typ protiúčtu** | **Protiúčet** |
 | 001         | Zákazník         | US-008      |                 |           |  75,00     | Hlavní kniha          | 999999---          |
 | 002         | Dodavatel           | 1 001        |                 |  75,00    |            | Hlavní kniha          | 999999---          |
-
 
 
 

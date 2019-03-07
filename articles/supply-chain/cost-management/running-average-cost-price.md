@@ -1,13 +1,13 @@
 ---
-title: "Průběžná průměrná nákladová cena"
-description: "Proces uzávěrky skladu v aplikaci vyrovná výdejové transakce příjmovými transakcemi podle metody oceňování zásob, která je vybraná ve skupině modelu zboží. Před spuštěním uzávěrky skladu však systém vypočítá průběžnou průměrnou nákladovou cenu, která obvykle slouží k účtování výdejových transakcí."
+title: Průběžná průměrná nákladová cena
+description: Proces uzávěrky skladu v aplikaci vyrovná výdejové transakce příjmovými transakcemi podle metody oceňování zásob, která je vybraná ve skupině modelu zboží. Před spuštěním uzávěrky skladu však systém vypočítá průběžnou průměrnou nákladovou cenu, která obvykle slouží k účtování výdejových transakcí.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e14f38baaef32c72761594147feca8d08651a050
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: aeb23f78d9bec93cf92214470e9ace3cd88b92c3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312018"
 ---
-
 # <a name="running-average-cost-price"></a>Průběžná průměrná nákladová cena
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,6 @@ Použití následujících postupů však pomáhá zabránit negativním množst
 -   Pokud *ne*vyberete možnost **Zahrnovat fyzickou hodnotu** pro určitou položku, zrušte označení možnosti **Záporný finanční sklad** na stránce **Skupiny modelů položek**.
 
 Dále mějte dále na paměti, že maximální vyrovnání hodnoty fyzických zásob je omezeno počtem fyzických transakcí a rozdílem mezi fyzickými a finančními cenami. Dokud jsou všechny fyzické transakce dodatečně finančně aktualizovány, fyzická hodnota nemůže stoupnout na extrémní úroveň. A konečně, efekt nadhodnocení se dále výrazně snižuje v případě, že je kumulované vyrovnání rozprostřeno na více kusů na skladě namísto jednoho kusu.
-
 
 
 

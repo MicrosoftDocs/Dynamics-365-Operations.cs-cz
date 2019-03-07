@@ -1,13 +1,13 @@
---- 
-title: "Nastavení účetních skupin pro DPH"
-description: "DPH je vypočítáno a zaúčtováno do hlavních účtů, které jsou zadány v části Účetní skupiny."
+---
+title: Nastavení účetních skupin pro DPH
+description: DPH je vypočítáno a zaúčtováno do hlavních účtů, které jsou zadány v části Účetní skupiny.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAccountGroup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 15421da6f325dfee22a303e9fe83a0e72895fa08
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308338"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Nastavení účetních skupin pro DPH
 
@@ -48,5 +48,4 @@ DPH je vypočítáno a zaúčtováno do hlavních účtů, které jsou zadány v
 11. V poli Platební sleva odběratele vyberte hlavní účet pro zaúčtování platební slevy pro kódy DPH, které jsou přidružené k této skupině zaúčtování hlavní knihy.
     * Toto pole je nepovinné a pokud není zadán žádný účet, použije se hlavní účet ze seznamu Kódy platebních slev. Může být užitečné použití různých účtů pro každou skupinu Zaúčtování hlavní knihy, pokud používáte možnost Stornovat DPH u platební slevy pro skupiny DPH.  
 12. Klikněte na položku Uložit.
-
 

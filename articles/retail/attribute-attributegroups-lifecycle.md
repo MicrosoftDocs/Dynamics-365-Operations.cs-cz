@@ -1,37 +1,36 @@
 ---
-title: "Atributy a skupiny atributů"
-description: "Toto téma popisuje způsob použití atributů k poskytnutí způsobu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí."
+title: Atributy a skupiny atributů
+description: Toto téma popisuje způsob použití atributů k poskytnutí způsobu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí.
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326232"
 ---
-
 # <a name="attributes-and-attribute-groups"></a>Atributy a skupiny atributů
 
 [!include [banner](includes/banner.md)]
 
-*Atributy* poskytují způsob k dalšímu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí (jako například **Velikost paměti**, **Kapacita pevného disku**, **Je kompatibilní se standardem Energy Star** atd). V aplikaci Microsoft Dynamics 365 for Finance and Operations lze atributy přidružit k různým maloobchodním entitám, jako jsou kategorie produktů a maloobchodní sítě, a lze jim nastavit výchozí hodnoty. Produkty pak dědí atributy a výchozí hodnoty při přidružení ke kategorii produktu nebo maloobchodní síti. Výchozí hodnoty lze přepsat na úrovni jednotlivých produktů, na úrovni maloobchodní sítě nebo v maloobchodním katalogu.
+*Atributy* poskytují způsob k dalšímu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí (jako například **Velikost paměti**, **Kapacita pevného disku**, **Je kompatibilní se standardem Energy Star** atd). V aplikaci Microsoft Dynamics 365 for Finance and Operations lze atributy přidružit k různým entitám aplikace Retail, jako jsou kategorie produktů a maloobchodní sítě, a lze jim nastavit výchozí hodnoty. Produkty pak dědí atributy a výchozí hodnoty při přidružení ke kategorii produktu nebo maloobchodní síti. Výchozí hodnoty lze přepsat na úrovni jednotlivých produktů, na úrovni maloobchodní sítě nebo v maloobchodním katalogu.
 
 Například typický televizní produkt může mít následující atributy.
 
@@ -48,7 +47,7 @@ Například typický televizní produkt může mít následující atributy.
 | LCD        | Připraveno na 3D                 | Ano nebo Ne                   | Ano           |
 |            | 3D k dispozici               | Ano nebo Ne                   | Žádný            |
 | Plazma     | Provozní teplota od      | 0–43 °C              | 32            |
-|            | Provozní teplota do        | 0–43 °C              | 1597           |
+|            | Provozní teplota do        | 0–43 °C              | 100           |
 | Projekční | Záruka | 6, 12 nebo 18 měsíců         | 12            |
 |            | Počet trubic: \#   | 1–5                         | 3             |
 
@@ -257,4 +256,3 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
 
     > [!NOTE]
     > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
-

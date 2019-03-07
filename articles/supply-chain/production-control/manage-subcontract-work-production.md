@@ -1,13 +1,13 @@
 ---
-title: "Správa subdodavatelské práce při výrobě"
-description: "Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku."
+title: Správa subdodavatelské práce při výrobě
+description: Toto téma vysvětluje, jak se spravují subdodavatelské operace v Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326577"
 ---
-
 # <a name="manage-subcontracting-work-in-production"></a>Správa subdodavatelské práce při výrobě
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak jsou subdodavatelské operace spravovány v aplikaci Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
+Toto téma vysvětluje, jak se spravují subdodavatelské operace v Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
 
 Ve [výrobních procesech](production-process-overview.md) mohou práci provádět zdroje, které jsou vlastněné nebo spravované dodavateli. Prostředky dodavatele se používají k vyrovnání pravidelné nadměrné poptávky, která překračuje dostupnou kapacitu vlastních prostředků společnosti. Dodavatel může být také schopen nabídnout konkrétní [schopnosti prostředku](resource-capabilities.md) nebo prostředky za nižší cenu.  
 
@@ -101,7 +100,6 @@ Polotovary jsou výjimkou z tohoto pravidla. K přenosu polotovarů jste omezeni
 **Poznámka:** Postup výroby pro jednu výrobní zakázku nemůže přesahovat více míst. Toto pravidlo platí také pro práci subdodavatele. Proto sklady představující umístění materiálu spravovaného dodavatelem musí být definovány ve stejné síti jako interní zdroje, které jsou použity v postupu. Přestože výrobní toky mohou zahrnovat více pracovišť, nemohou převádět polotovary z jednoho pracoviště na jiné, protože operace implikuje změnu kontextu nákladů.  
 
 Obvykle jsou výstupní sklad a umístění subdodavatelské skupiny prostředků skupiny přímo přiděleny skladu a umístění dalšího kroku operace v postupu nebo výrobním toku. Toto nastavení pomáhá snížit množství vykazování úloh, které se objeví, nebo na počtu dalších operací přenosu, které musí být modelovány.
-
 
 
 

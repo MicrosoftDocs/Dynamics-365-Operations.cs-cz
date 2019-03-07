@@ -1,13 +1,13 @@
---- 
-title: "Konfigurace cílů ER"
-description: "Tento postup ukazuje, jak nastavit a používat různé cíle pro výstupní součásti elektronického vykazování (ER), jako například složku nebo soubor."
+---
+title: Konfigurace cílů ER
+description: Tento postup ukazuje, jak nastavit a používat různé cíle pro výstupní součásti elektronického vykazování (ER), jako například složku nebo soubor.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 83c6b8db609b83f94b51800616976eb9ce08d79b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309856"
 ---
 # <a name="er-configure-destinations"></a>Konfigurace cílů ER
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/14/2018
 
 Tento postup ukazuje, jak nastavit a používat různé cíle pro výstupní součásti elektronického vykazování (ER), jako například složku nebo soubor. K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF. Německo je země\oblast s primární adresou právnické osoby, ale pro tuto proceduru můžete použít jakoukoli právnickou osobu. 
 
-Formát použitý v tomto případě je „platební převod ISO 20022 (DE)“, ale můžete vybrat jakýkoli formát, který již byl importován. Všimněte si, že tato procedura je příkladem nastavení jednoho souboru a cíle. Další informace o správě cílů pro elektronické sestavy naleznete v nápovědě k aplikaci Dynamics 365 for Finance and Operations.
+Formát použitý v tomto případě je „platební převod ISO 20022 (DE)“, ale můžete vybrat jakýkoli formát, který již byl importován. Všimněte si, že tato procedura je příkladem nastavení jednoho souboru a cíle. Další informace o správě cílů pro elektronické sestavy naleznete v nápovědě pro Dynamics 365 for Finance and Operations.
 
 1. Přejděte do nabídky Správa organizace > Elektronická sestava > Místo určení elektronického výkaznictví.
 2. Klepnutím na tlačítko Nový vytvoříte novou sadu míst určení pro daný formát.
@@ -60,5 +60,4 @@ Formát použitý v tomto případě je „platební převod ISO 20022 (DE)“, 
 20. Klikněte na tlačítko OK.
 21. Zadejte hodnotu do pole Předmět.
 22. Klikněte na tlačítko OK.
-
 

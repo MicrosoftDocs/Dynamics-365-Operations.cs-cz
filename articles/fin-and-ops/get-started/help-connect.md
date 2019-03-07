@@ -1,13 +1,13 @@
 ---
-title: "Připojení k systému nápovědy"
-description: "Toto téma popisuje součásti systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations a obsahuje přehled způsobu jejich propojení a shrnutí postupu vytvoření vlastní nápovědy."
+title: Připojení k systému nápovědy
+description: Toto téma popisuje součástí systému nápovědy pro Microsoft Dynamics 365 for Finance and Operations a poskytuje přehled o způsobu jejich propojení a shrnutí postupu pro vytvoření vlastní nápovědy.
 author: margoc
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 673b01648127fe1d19fb3c75c4d6812c4f22c761
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317722"
 ---
-
 # <a name="connect-the-help-system"></a>Připojení k systému nápovědy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje součásti systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations. Poskytuje přehled o tom, jak připojit tyto komponenty, a souhrnné informace o tom, jak vytvořit vlastní nápovědu.
+Toto téma popisuje součástí systému nápovědy pro Microsoft Dynamics 365 for Finance and Operations. Poskytuje přehled o tom, jak připojit tyto komponenty, a souhrnné informace o tom, jak vytvořit vlastní nápovědu.
 
 ## <a name="help-architecture"></a>Architektura nápovědy
 
@@ -44,7 +43,7 @@ Následující obrázek znázorňuje části systému nápovědy aplikace Financ
 ## <a name="connecting-the-help-system"></a>Připojení systému nápovědy
 
 > [!NOTE]
-> Karta **Průvodci záznamem úloh** není v současnosti v aplikacích Microsoft Dynamics 365 for Talent a Microsoft Dynamics 365 for Retail k dispozici. Funkci zpřístupníme v budoucí verzi. Průvodci v prostředí Začínáme v aplikaci Talent jsou i nadále k dispozici a zabývají se základními funkcemi. Na webu docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) jsou také k dispozici pokyny pro aplikaci Retail i Talent.
+> Karta **Průvodci záznamem úloh** není k dispozici v aplikacích Microsoft Dynamics 365 for Talent a Microsoft Dynamics 365 for Retail. Funkci zpřístupníme v budoucí verzi. Průvodci v prostředí Začínáme v aplikaci Talent jsou i nadále k dispozici a zabývají se základními funkcemi. Na webu docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) jsou také k dispozici pokyny pro aplikaci Retail i Talent.
 
 Pomocí stránky **Systémové parametry** správci systému připojí části systému nápovědy pro implementaci.
 
@@ -102,4 +101,3 @@ Společnost Microsoft poskytla dokument white paper a vzorový kód, které popi
 [Přehled záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md)
 
 [Postup vytvoření záznamu úloh pro použití jako dokumentace nebo školení](../../dev-itpro/user-interface/task-recorder-training-docs.md)
-

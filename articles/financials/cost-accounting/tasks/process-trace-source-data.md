@@ -1,13 +1,13 @@
---- 
-title: "Zpracování a sledování zdrojových dat"
-description: "Veškeré zpracování dat se provádí prostřednictvím úloh."
+---
+title: Zpracování a sledování zdrojových dat
+description: Veškeré zpracování dat se provádí prostřednictvím úloh.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e476416420875ba0f2401cf251d34977ae84b8f5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7093338fd306e90df79a787f9de9861b3fe49dd5
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322598"
 ---
 # <a name="process-and-trace-source-data"></a>Zpracování a sledování zdrojových dat
 
@@ -44,5 +44,4 @@ Veškeré zpracování dat se provádí prostřednictvím úloh. Pro každou úl
 13. V poli Období fiskálního kalendáře zadejte nebo vyberte hodnotu.
     * V tomto příkladu vyberte Fiskální období 9/2017.  
 14. Klikněte na tlačítko OK.
-
 

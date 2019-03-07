@@ -1,13 +1,13 @@
---- 
-title: "Zkopírování vedlejších produktů z existující verze receptury"
-description: "Tato procedura popisuje postup kopírování vedlejších produktů z existující verze receptury do jiné verze receptury pro uvolněný produkt."
+---
+title: Zkopírování vedlejších produktů z existující verze receptury
+description: Tato procedura popisuje postup kopírování vedlejších produktů z existující verze receptury do jiné verze receptury pro uvolněný produkt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, BOMConsistOf, PmfFormulaCoBy, BOMRouteCopyDialog
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 179c12da0c2ddc7b5e2f2fdddd21168eac121811
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 80543780c423b5beac3ec57f4fa035e560aaa4ce
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319240"
 ---
 # <a name="copy-co-products-from-an-existing-formula-version"></a>Zkopírování vedlejších produktů z existující verze receptury
 
@@ -53,5 +53,4 @@ Tato procedura popisuje postup kopírování vedlejších produktů z existujíc
 5. V poli Verze receptury zadejte nebo vyberte hodnotu.
 6. Klikněte na tlačítko OK.
 7. Zavřete stránku.
-
 

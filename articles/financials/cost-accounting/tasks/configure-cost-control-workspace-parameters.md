@@ -1,13 +1,13 @@
---- 
-title: "Konfigurace parametrů pracovního prostoru řízení nákladů"
-description: "Pomocí tohoto postupu nastavte pracovní prostor řízení nákladů tak, aby vedoucí pracovníci na různých úrovních v rámci organizace mohli získat přehled o svých objektech nákladů, jako jsou nákladová střediska nebo skupiny produktů."
+---
+title: Konfigurace parametrů pracovního prostoru řízení nákladů
+description: Pomocí tohoto postupu nastavte pracovní prostor řízení nákladů tak, aby vedoucí pracovníci na různých úrovních v rámci organizace mohli získat přehled o svých objektech nákladů, jako jsou nákladová střediska nebo skupiny produktů.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2f9c50bb0ab7f1b0afadfabb687932f96ab6e689
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8ede40951d08e159358b713fc3dde46576a1b4e3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308568"
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Konfigurace parametrů pracovního prostoru řízení nákladů
 
@@ -57,5 +57,4 @@ Pomocí tohoto postupu nastavte pracovní prostor řízení nákladů tak, aby v
 26. V poli Období fiskálního kalendáře zadejte nebo vyberte hodnotu.
 27. V poli Uzel hierarchie dimenze objektu nákladů zadejte nebo vyberte hodnotu.
     * Po výběru hierarchie dimenzí objektu nákladů rozbalte hierarchii dimenzí prvku nákladů a prohlédněte si požadované nákladové hodnoty. Můžete například rozbalit hierarchii Výrobní režie a zjistit z ní hodnoty.  
-
 

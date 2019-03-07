@@ -1,13 +1,13 @@
 ---
-title: "Generování formulářů FTI k tisku"
-description: "Toto téma vysvětluje, jak použít architekturu elektronického výkaznictví pro vygenerování formulářů volné faktury k tisku jako dokumentů sady Microsoft Office."
+title: Generování formulářů FTI k tisku
+description: Toto téma vysvětluje, jak použít architekturu elektronického výkaznictví pro vygenerování formulářů volné faktury k tisku jako dokumentů sady Microsoft Office.
 author: NickSelin
 manager: AnnBe
 ms.date: 07/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: d27a11a0d925b0f1164578f9c04e6abd4736b2b2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325519"
 ---
-
-# <a name="generate-printable-fti-forms"></a>Generování formulářů FTI k tisku
+# <a name="generate-printable-fti-forms"></a>Generovat formulářů FTI k tisku
 
 [!include[banner](../includes/banner.md)]
 
@@ -114,7 +113,7 @@ Architektura elektronického výkaznictví aktuálně podporuje následující c
 - **Stažený soubor** – vygenerované formuláře jsou k dispozici jako stažené soubory, které můžete uložit pomocí prohlížeče.
 - **Obrazovka** – Použije se Microsoft Office 365 k zobrazení náhledu generovaných formulářů FTI ve formátu aplikace Excel.
 - **Složka SharePoint** – vygenerované formuláře jsou uloženy na základě nastavení architektury správy dokumentů.
-- **Archiv aplikace** – vygenerované formuláře jsou uloženy jako přílohy záznamů protokolů provádění v úložišti Microsoft Azure Storage.
+- **Archiv aplikace** – vygenerované formuláře jsou uloženy jako přílohy záznamů protokolů provádění v úložišti Microsoft Azure.
 - **E-mail** – vygenerované formuláře jsou odeslány jako e-mailové přílohy.
 
 > [!NOTE]
@@ -226,4 +225,3 @@ Výraz **Emailing.TxtToUse.Body** vzorového formátu je nakonfigurován pro ná
 
 ## <a name="additional-resources"></a>Další zdroje
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
-

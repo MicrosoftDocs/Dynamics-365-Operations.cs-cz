@@ -1,13 +1,13 @@
 ---
-title: "Schopnosti prostředku"
-description: "V tomto článku jsou informace o možnostech prostředků. Schopnost je možnost provozních prostředků provádět určitou aktivitu. Článek vysvětluje způsob použití možností a souvisejících koncepcí, například úrovní znalosti a priority, k volbě vhodných prostředků pro aktivitu."
+title: Schopnosti prostředku
+description: V tomto článku jsou informace o možnostech prostředků. Schopnost je možnost provozních prostředků provádět určitou aktivitu. Článek vysvětluje způsob použití možností a souvisejících koncepcí, například úrovní znalosti a priority, k volbě vhodných prostředků pro aktivitu.
 author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 567b4c5544f2a58801fefb1aa9d4c72815913910
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 533faf78e4cc9a091d64f7c6a0f82d14158710c8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319286"
 ---
-
 # <a name="resource-capabilities"></a>Schopnosti prostředku
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ V tomto příkladu obě vrtačky mohou být vybrány modulem plánování, proto
 
 ## <a name="competencies-for-human-resources"></a>Kompetence pro lidské zdroje
 Když máte provozní prostředky typu **lidské zdroje**, které jsou přiřazeny k zaměstnancům v lidských zdrojích, můžete také využít kompetencí pracovníků při definování požadavků na prostředky ve výrobním postupu. Jinak řečeno můžete také nastavit také požadavky pro konkrétní dovednosti, kurzy, certifikáty nebo tituly. Modul plánování zdrojů může poté vybrat, které prostředky jsou přiřazeny zaměstnancům a výběr bude založen na kompetencích těchto zaměstnanců. Kompetence jsou nastaveny v lidských zdrojích, ne na stránce **Schopnosti prostředku**. Při definování dovedností, kurzů, certifikátů nebo titulů jako požadavků na prostředek musíte použít funkci modulu lidské zdroje a spojit každý prostředek typu **lidských zdrojů** s odpovídajícím pracovníkem. Pokud nepoužíváte funkce lidských zdrojů, je možné určit schopnosti na stránce **Schopnosti prostředku**, která se podobá nebo duplikuje kompetence z lidských zdrojů. Avšak stránka **Schopnosti prostředku** neobsahuje funkce, které jsou potřebné za účelem úprav dovedností, kurzů, certifikátů nebo titulů.
-
 
 
 

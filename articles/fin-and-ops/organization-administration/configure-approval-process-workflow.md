@@ -1,13 +1,13 @@
 ---
-title: "Konfigurace schvalovacích procesů ve workflowu"
-description: "Pomocí následujícího postupu nakonfigurujte vlastnosti schvalovacího procesu."
+title: Konfigurace schvalovacích procesů ve workflowu
+description: Pomocí následujícího postupu nakonfigurujte vlastnosti schvalovacího procesu.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 08641eaac31813a8bee3231118f8e2bf802ea3e1
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325634"
 ---
-
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurace schvalovacích procesů ve workflowu
 
 [!include [banner](../includes/banner.md)]
@@ -124,11 +123,11 @@ Při schválení, zamítnutí, delegování nebo eskalování dokumentu nebo př
     </tr>
     <tr>
     <td><strong>Uživatel</strong></td>
-    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Konkrétní uživatelé Microsoft Dynamics 365 for Finance and Operations</td>
     <td>
     <ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
-    <li>Seznam <strong>Dostupní uživatelé</strong>: obsahuje všechny uživatele aplikace Microsoft Dynamics 365 for Finance and Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
+    <li><strong>Dostupní uživatelé</strong> seznam obsahuje všechny uživatele aplikace Microsoft Dynamics 365 for Finance and Operations. Vyberte uživatele, kterým chcete odeslat oznámení, a pak přesuňte tyto uživatele do seznamu <strong>Vybraní uživatelé</strong>.</li>
     </ol>
     </td>
     </tr>
@@ -184,4 +183,3 @@ Schvalovací proces se skládá z kroků schválení. Pomocí následujícího p
 1. V editoru workflowu poklepejte na schvalovací proces. V editoru workflowu se zobrazí kroky schvalovacího procesu.
 2. Chcete-li přidat schvalovací krok, přetáhněte krok z oblasti **Prvky workflowu** na plátno.
 3. Chcete-li nakonfigurovat schvalovací krok, získáte informace v části [Konfigurace schvalovacího kroku](configure-approval-step-workflow.md).
-

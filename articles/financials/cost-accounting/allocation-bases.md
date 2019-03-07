@@ -1,32 +1,31 @@
 ---
-title: "Základy přidělení"
-description: "Toto téma poskytuje informace o základech přidělení. Základy přidělení jsou klíčové komponenty v nákladovém účetnictví a používají se většinou pro přidělení režijních nákladů."
+title: Základy přidělení
+description: Toto téma poskytuje informace o základech přidělení. Základy přidělení jsou klíčové komponenty v nákladovém účetnictví a používají se většinou pro přidělení režijních nákladů.
 author: AndersGirke
 manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimensionMember
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 223174
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 92824cf0fb5ad361090d8dccfd64353d2c16317c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 63f39a6c06a0c6b5df901f7aa4235aab3c4ac06e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311673"
 ---
-
 # <a name="allocation-bases"></a>Základy přidělení 
 
 [!include [banner](../includes/banner.md)]
@@ -430,5 +429,4 @@ Následuje příklad pravidla pro rozdělení nákladů, pokud je v něm jako z�
 |    CC001    |     HR      | 1,837.50  | (1 837,50 ÷ 18 162,50) × částka  |
 |    CC002    |     FI      | 3,075.00  | (3 075,00 ÷ 18 162,50) × částka  |
 |    CC003    |     IT      | 13,250.00 | (13 250 ÷ 18 162,50) × částka |
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Rozúčtováních a záznamy v dílčí hlavní knize pro volné faktury"
-description: "Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výnosy, daně a náklady zaúčtovány na volných fakturách. Každá částka, která musí být zaúčtována, když je volná faktura zapsána do deníku, bude mít jedno nebo více rozúčtování."
+title: Rozúčtováních a záznamy v dílčí hlavní knize pro volné faktury
+description: Rozúčtování slouží k definování, jak budou zaúčtovány částky, například jak budou výnosy, daně a náklady zaúčtovány na volných fakturách. Každá částka, která musí být zaúčtována, když je volná faktura zapsána do deníku, bude mít jedno nebo více rozúčtování.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5d1546e8537110daec5d6655f68d3328a58ca1cb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d13fbd98597fc8138bfb4d549608d75f790e0e52
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334857"
 ---
-
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Rozúčtováních a záznamy v dílčí hlavní knize pro volné faktury
 
 [!include [banner](../includes/banner.md)]
@@ -134,7 +133,6 @@ Dokud daně nejsou vypočítány, nelze pro ně vytvořit rozúčtování. Při 
 
 ## <a name="subledger-journals-for-free-text-invoices"></a> Dílčí hlavní knihy pro volné faktury
 Před zaúčtováním volné faktury můžete zobrazit celý účetní zápis faktury, který zahrnuje pohledávky a závazky, abyste ověřili, zda je faktura zaúčtována na správné účty. Toto zobrazení celkového zápisu do účetnictví se nazývá dílčí hlavní kniha. Pokud zobrazíte náhled dříve, než zapíšete fakturu dodavatele do deníku, a položka dílčí hlavní knihy není správná, nelze položku dílčí hlavní knihy změnit. Namísto toho je nutné změnit rozúčtování nebo účetní profil. Rozúčtování slouží k definování jedné strany účetní položky, má dáti nebo dal. Vyrovnání účetní položky dílčí hlavní knihy je vytvořeno z účetních profilů, jako je například účet odběratele nebo daň.
-
 
 
 

@@ -1,31 +1,30 @@
 ---
-title: "Vyhledávání produktu a zákazníka v pokladním místě (POS)"
-description: "Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Microsoft Dynamics 365 for Retail ohledně funkce vyhledávání produktu a vyhledávání zákazníka."
+title: Vyhledávání produktu a zákazníka v pokladním místě (POS)
+description: Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Microsoft Dynamics 365 for Retail ohledně funkce vyhledávání produktu a vyhledávání zákazníka.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
+ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 50b0cec27e343b3b6aba464a04c9883160ab263a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313582"
 ---
-
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Vyhledávání produktu a zákazníka v pokladním místě (POS)
 
 [!include [banner](includes/banner.md)]
@@ -91,7 +90,7 @@ Tradiční vyhledávání zákazníků může být časově náročné, protože
 
 ![Zkratky hledání odběratele](./media/SearchShortcutsPOS.png "zkratky hledání odběratele")
 
-Aby bylo možné nastavit kritérium hledání jako zástupce, musí správce otevřít stránku **parametry maloobchodu** v aplikaci Microsoft Dynamics 365 for Finance and Operations a poté na stránce **kritéria vyhledávání POS** vyberat všechna kritéria, která se mají zobrazit jako zástupci.
+Aby bylo možné nastavit kritérium hledání jako zástupce, musí správce otevřít stránku **Parametry maloobchodu** v aplikaci Microsoft Dynamics 365 for Finance and Operations a poté na kartě **Kritéria vyhledávání POS** vybrat všechna kritéria, která se mají zobrazit jako zástupci.
 
 ![Konfigurace vyhledávání zástupců](./media/ConfigureShortcutsAX.png "Konfigurace vyhledávání zástupců")
 
@@ -102,4 +101,3 @@ Pole **Pořadí zobrazení** určuje pořadí, ve kterém jsou zobrazeny zkratky
 
 > [!NOTE]
 > Vlastní vlastnost, která je přidána do výčtu, neovlivní standardní algoritmus hledání odběratele. Jinými slovy, algoritmus hledání zákazníků nevyhledává ve vlastní vlastnosti. Uživatelé mohou vlastní vlastnosti použít k vyhledávání pouze v případě, že je vlastní vlastnost přidána jako zástupce, případně je přepsán výchozí algoritmus hledání.
-

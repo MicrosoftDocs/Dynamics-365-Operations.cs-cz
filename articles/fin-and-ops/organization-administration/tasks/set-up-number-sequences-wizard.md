@@ -1,13 +1,13 @@
---- 
-title: "Nastavení číselných řad pomocí průvodce"
-description: "Číselné řady slouží ke generování čitelných, jedinečných identifikátorů pro záznamy hlavních dat a záznamy transakcí, které je požadují."
+---
+title: Nastavení číselných řad pomocí průvodce
+description: Číselné řady slouží ke generování čitelných, jedinečných identifikátorů pro záznamy hlavních dat a záznamy transakcí, které je požadují.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1808ab9240ab291f9d203893a634bd390f16e2e7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 96c1bc711350b447611977c3f2070fbc08fbae0f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328233"
 ---
 # <a name="set-up-number-sequences-by-using-a-wizard"></a>Nastavení číselných řad pomocí průvodce
 
@@ -36,5 +36,4 @@ ms.lasthandoff: 09/29/2017
     * Nevybírejte možnost Souvislá, pokud musíte předem přidělit čísla pro číselnou řadu.     Chcete-li přidat rozsah segmentu do formátu číselné řady, vyberte formát v seznamu a potom klikněte na možnost Zahrnout obor do formátu.     Chcete-li odebrat rozsah segmentu z formátu číselné řady, vyberte formát v seznamu a potom klikněte na možnost Odebrat obor z formátu.     Chcete-li vyloučit číselnou řadu z automatického generování, vyberte číselnou řadu v seznamu a potom klikněte na tlačítko Odstranit.  
 4. Klepněte na tlačítko Další.
 5. Klepněte na tlačítko Dokončit.
-
 

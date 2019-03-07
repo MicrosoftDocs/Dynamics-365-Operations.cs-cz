@@ -1,13 +1,13 @@
 ---
-title: "Platební slevy"
-description: "Platební slevy jsou nastaveny a sdílené pro závazky a pohledávky.  Dostupná platební sleva může být definovaná na faktuře odběratele nebo dodavatele a proběhne, jestliže bude faktura zaplacena v rámci data platební slevy."
+title: Platební slevy
+description: Platební slevy jsou nastaveny a sdílené pro závazky a pohledávky.  Dostupná platební sleva může být definovaná na faktuře odběratele nebo dodavatele a proběhne, jestliže bude faktura zaplacena v rámci data platební slevy.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CashDisc
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dd15a021244e55ea988a95184a758a321ebeafb3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5ccf41d1184280d3c4a000db13847733fd2cf4d2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320022"
 ---
-
 # <a name="cash-discounts"></a>Platební slevy
 
 [!include [banner](../includes/banner.md)]
@@ -65,6 +64,5 @@ Zúčtovací měna vaší právnické osoby je EUR a pro USD jsou zadány násle
 Faktura na 1000 USD s podmínkou platební slevy 20D2% je zaúčtována 15. února. Částka v zúčtovací měně faktury činí 1100 EUR. Platba za 980 USD je vyrovnána s fakturou 1. března. Částka platební slevy je 20 USD. Částka v zúčtovací měně u dané platby činí 784 EUR. Částka v zúčtovací měně u platební slevy je vypočítána pomocí směnného kurzu ke dni 1. března: 20 \* 80 / 100 = 16 EUR.
 
 > [!NOTE]
-> Je-li na stránce Parametry pohledávek nebo na stránce Parametry závazků zvolena možnost Vypočítat platební slevy pro částečné platby, použije se směnný kurz platný k datu jednotlivých částečných plateb. 
-
+> Je-li na stránce Parametry pohledávek nebo na stránce Parametry závazků zvolena možnost Vypočítat platební slevy pro částečné platby, použije se směnný kurz platný k datu jednotlivých částečných plateb. 
 

@@ -1,13 +1,13 @@
 ---
-title: "Vytváření pravidel výstrah"
-description: "Toto téma obsahuje informace o výstrahách a vysvětluje postup při vytvoření pravidla výstrahy, abyste byli upozorněni na události, jako je například následné datum nebo nastalá specifická změna."
+title: Vytváření pravidel výstrah
+description: Toto téma obsahuje informace o výstrahách a vysvětluje postup při vytvoření pravidla výstrahy, abyste byli upozorněni na události, jako je například následné datum nebo nastalá specifická změna.
 author: tjvass
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: cbf4917424e72a70a6d513b5daf45f6bf9cd57c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 78e1e6f7be04e1d4fecae080cbd4a285358590fb
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329406"
 ---
-
 # <a name="create-alert-rules"></a>Vytváření pravidel výstrah
 
 [!include [banner](../includes/banner.md)]
@@ -84,4 +83,3 @@ Na pevné záložce **Upozornit mě pomocí** dialogového okna **Vytvořit prav
 7. Na pevné záložce **Upozornit mě pomocí** v poli **Předmět** přijměte výchozí text předmětu e-mailové zprávy nebo zadejte nový předmět. Text se používá jako předmět e-mailové zprávy, kterou obdržíte, když se aktivuje výstraha.
 8. Do pole **Zpráva** zadejte libovolnou zprávu. Text, který bude používán jako zpráva, kterou dostanete při spuštění výstrahy.
 9. Zvolte **OK**, chcete-li uložit nastavení a vytvořit pravidlo výstrahy.
-

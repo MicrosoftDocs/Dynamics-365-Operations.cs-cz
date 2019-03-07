@@ -1,13 +1,13 @@
 ---
-title: "Elektronické výkaznictví (EV)"
-description: "Toto téma poskytuje přehled o nástroji Elektronické výkaznictví (ER). Zahrnuje informace o klíčových konceptech, scénářích, které EV podporuje, a vyjmenovává formáty, které jsou navržené a vydané jako součást řešení."
+title: Elektronické výkaznictví (EV)
+description: Toto téma poskytuje přehled o nástroji Elektronické výkaznictví (ER). Zahrnuje informace o klíčových konceptech, scénářích, které EV podporuje, a vyjmenovává formáty, které jsou navržené a vydané jako součást řešení.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
 ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310799"
 ---
-
 # <a name="electronic-reporting-er"></a>Elektronické výkaznictví (EV)
 
 [!include [banner](../includes/banner.md)]
@@ -36,12 +35,12 @@ ER je nástroj, který slouží ke konfiguraci formátů pro příchozí i odch
 
 Modul EV je zaměřen na obchodní uživatele, nikoli na vývojáře. Vzhledem k tomu, že místo kódu konfigurujete formáty, jsou procesy vytváření a úpravy formátů pro elektronické dokumenty rychlejší a jednodušší.
 
-ER v současné době podporuje formáty listů TEXT, XML, Microsoft Word a OPENXML. Je k dispozici rozšíření zajišťující podporu dalších formátů.
+EV v současné době podporuje formáty listů TEXT, XML dokument Microsoft Word a OPENXML. Je k dispozici rozšíření zajišťující podporu dalších formátů.
 
 ## <a name="capabilities"></a>Schopnosti
 Modul EV má následující možnosti:
 
-- S jedním společným nástrojem pro elektronické vykazování v různých doménách nahrazuje více než 20 různých modulů pro provádění určitého druhu elektronického vykazování pro aplikaci Microsoft Dynamics 365 for Finance and Operations.
+- S jedním společným nástrojem pro elektronické výkaznictví v různých doménách nahrazuje 20 různých modulů pro provádění určitého typu elektronického výkaznictví pro Microsoft Dynamics 365 for Finance and Operations.
 - Izoluje formát výkazu od aktuální implementace aplikace Finance and Operations. Jinými slovy – formát je použitelný pro různé verze aplikace Finance and Operations.
 - Podporuje vytváření vlastního formátu, který je založen na původním formátu. Nabízí také funkce pro automatické upgradování vlastního formátu při změně původního formátu kvůli požadavkům na lokalizaci nebo přizpůsobení.
 - Stane se primárním standardním nástrojem pro podporu lokalizace požadavků v elektronických sestavách – pro společnost Microsoft i pro její partnery.
@@ -170,7 +169,7 @@ Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si pr�
 
 Úložiště **projektu LCS** poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán ve fázi registrace úložiště. ER umožňuje odesílat sdílené konfigurace z aktuální instance aplikace Finance and Operations do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z úložiště **projektu LCS** do aktuální instance aplikace Finance and Operations.
 
-Úložiště **Systém souborů** poskytuje přístup k seznamu konfigurací, které jsou umístěny jako soubory XML ve specifické složce místního systému souborů počítače, kde je hostována služba AOS. Požadovaná složka je vybrána při fázi registrace úložiště. Můžete importovat konfigurace z úložiště **Systém souborů** do aktuální instance aplikace Finance and Operations. Všimněte si, že tento typ úložiště je dostupný v následujících prostředích Dynamics 365 for Finance and Operations:
+Úložiště **Systém souborů** poskytuje přístup k seznamu konfigurací, které jsou umístěny jako soubory XML ve specifické složce místního systému souborů počítače, kde je hostována služba AOS. Požadovaná složka je vybrána při fázi registrace úložiště. Můžete importovat konfigurace z úložiště **Systém souborů** do aktuální instance aplikace Finance and Operations. Všimněte si, že tento typ úložiště je přístupný v následujících prostředích Dynamics 365 for Finance and Operations:
 - prostředí hostovaná v cloudu nasazená pro vývojářské účely (obsahující testovací modely přiložených sad)
 - prostředí nasazená místně (místní nebo lokální nasazení obchodních dat)
 
@@ -381,4 +380,3 @@ EV podporuje schopnost automaticky přijmout změny poslední verze základní k
 [Požadavky na lokalizaci – vytvoření konfigurace elektronického výkaznictví](electronic-reporting-configuration.md)
 
 [Správa životního cyklu konfigurace elektronického vykazování](general-electronic-reporting-manage-configuration-lifecycle.md)
-

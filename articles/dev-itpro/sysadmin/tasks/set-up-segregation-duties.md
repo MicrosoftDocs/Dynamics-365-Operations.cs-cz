@@ -1,13 +1,13 @@
---- 
-title: "Nastavení dělení zodpovědnosti"
-description: "Můžete nastavit pravidla k oddělení úkolů, které musí být prováděny různými uživateli."
+---
+title: Nastavení dělení zodpovědnosti
+description: Můžete nastavit pravidla k oddělení úkolů, které musí být prováděny různými uživateli.
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesRule
 audience: Application User
 ms.reviewer: margoc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 68e1a4419eaa11a59e1b634deb8e76a2bb9b6fdf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 754f28cd2831d8a9a57c408518d240de460b732b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318780"
 ---
 # <a name="set-up-segregation-of-duties"></a>Nastavení dělení zodpovědnosti
 
@@ -48,5 +48,4 @@ Můžete nastavit pravidla k oddělení úkolů, které musí být prováděny r
 12. Zadejte hodnotu do pole Snížení rizika zabezpečení.
     * Zadejte popis akcí, které budete provádět pro snížení rizika zabezpečení. Můžete například snížit riziko provedením podrobnějších kontrol procesu, prováděním měsíčních manažerských kontrol nebo sdílením prostředků se jinými odděleními.  
 13. Klikněte na položku Uložit.
-
 

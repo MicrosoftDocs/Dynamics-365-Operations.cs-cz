@@ -1,39 +1,38 @@
 ---
-title: "Uložení průvodců záznamem úloh do LCS a jejich opakované přehrání"
-description: "Toto téma vysvětluje, jak uložit průvodce záznamem úloh do Microsoft Dynamics Lifecycle Services (LCS) a poté je opětovně přehrát."
+title: Uložení průvodců záznamem úloh do LCS a jejich opětovné přehrání
+description: Toto téma vysvětluje, jak uložit průvodce záznamem úloh do Microsoft Dynamics Lifecycle Services (LCS) a poté je opětovně přehrát.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 40b4c3154a04a557b8a670e1f1ae3722c71122fe
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303596"
 ---
-
-# <a name="save-task-guides-to-lcs-and-replay-them"></a>Uložení průvodců záznamem úloh do LCS a jejich opakované přehrání
+# <a name="save-task-guides-to-lcs-and-replay-them"></a>Uložení průvodců záznamem úloh do LCS a jejich opětovné přehrání
 
 [!include [banner](includes/banner.md)]
 
 **Podrobnosti o prostředí** 
 
-Aplikace Microsoft Dynamics 365 for Talent, která byla nasazena pomocí Microsoft Dynamics Lifecycle Services (LCS)
+Microsoft Dynamics 365 for Talent, která byla nasazena pomocí služby Microsoft Dynamics Lifecycle Services (LCS)
 
-**Problém**
+**Výdej**
 
 Zákazník chce uložit nové záznamy úlohy do projektu LCS a poté uložené průvodce záznamem úloh přehrát.
 
@@ -66,4 +65,3 @@ Postupujte podle těchto kroků k opětovnému přehrání průvodce záznamem �
 2. Zvolte **Otevřít z LCS**.
 3. Vyberte knihovnu a BPM uzel, který má uloženého průvodce záznamem úloh.
 4. Otevřete průvodce záznamem úloh.
-

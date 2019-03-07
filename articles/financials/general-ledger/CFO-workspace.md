@@ -1,14 +1,14 @@
 ---
-title: "Přidání finančních dimenzí k pracovnímu prostoru CFO"
-description: "Toto téma vysvětluje postup při přidání finančních dimenzí do pracovního prostoru CFO tak, aby bylo možné je používat pro hlavní knihu a sestavy rozpočtu."
+title: Přidání finančních dimenzí k pracovnímu prostoru CFO
+description: Toto téma vysvětluje postup při přidání finančních dimenzí do pracovního prostoru CFO tak, aby bylo možné je používat pro hlavní knihu a sestavy rozpočtu.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a15414eff99751d4e77e5b3bf315a556efb7ad5d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5faefe5da8c3a64987a38ebef92eb87049ebe874
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332672"
 ---
-
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Přidání finančních dimenzí k pracovnímu prostoru CFO
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 Toto téma vysvětluje postup při přidání finančních dimenzí do pracovního prostoru CFO (Chief Financial Officer) tak, aby bylo možné je používat pro hlavní knihu a sestavy rozpočtu. Pracovní prostor CFO má kartu **Přehled** a kartu **Finanční**. Sestavy na těchto dvou kartách jsou podloženy dvěma měřeními: LedgerActivityMeasure a BudgetActivityMeasure. V aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017) existuje vztah mezi těmito dvěma měřeními a entitou DimensionCombinationEntity. Z tohoto důvodu lze vybrat dimenze.
 
 1. V aplikaci Finance and Operations aktualizujte měření **LedgerActivityMeasure** a **BudgetActivityMeasure** na stránce **Úložiště entit**.
-2. V aplikaci Microsoft Visual Studio otevřete Průzkumníka aplikace a vyhledejte **LedgerCFO**.
+2. V aplikaci Visual Studio otevřete Průzkumníka aplikace a vyhledejte **LedgerCFO**.
 3. Pod položkou **Zdroje** otevřete **LedgerCFOWorkspacePBIX**.
 4. Když se zdroj otevře v Microsoft Power BI Desktop, vyberte **Načíst data**, vyberte **Databáze SQL Server** a poté vyberte **Připojit**.
 5. Zadejte název serveru a zadejte **AxDW** jako databázi. Vyberte možnost **DirectQuery** a pak zvolte **OK**.
@@ -57,4 +56,3 @@ Toto téma vysvětluje postup při přidání finančních dimenzí do pracovní
 16. Vytvořte svůj projekt a potom otevřete aplikaci pro zobrazení výsledků.
 
     [![Dokončený pracovní prostor](./media/workspace.png)](./media/workspace.png)
-

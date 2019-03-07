@@ -1,13 +1,13 @@
 ---
-title: "Návrh dotazníků"
-description: "Toto téma popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí."
+title: Návrh dotazníků
+description: Toto téma popisuje postup vytváření dotazníku. Prvním krokem je návrh dotazníku. Při navrhování dotazníku můžete pouze zapsat otázky a odpovědi, ale také vytvořit strukturu, která umožňuje záznam a uspořádání odpovědí.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: cd13fa1c424d1769b356d90012b187a77473473d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303586"
 ---
-
 # <a name="design-questionnaires"></a>Návrh dotazníků
 
 [!include [banner](includes/banner.md)]
@@ -94,7 +93,7 @@ Kódy číselných řad se používají k uspořádání otázek a odpovědí. N
 Dříve než začnete definovat vaše data, měli byste definovat veškeré parametry. Vaše parametrů dotazníku můžete kdykoliv upravit.
 
 ## <a name="questionnaire-components"></a>Komponenty dotazníku
-Dotazníky zahrnují tři hlavní prvky: skupiny odpovědí, které obsahují odpovědi pro otázky s možností více odpovědí, otázky a dotazník jako takový. Volitelně lze otázky v dotazníku seskupit do skupin výsledků. Skupiny výsledků umožňují rozdělit otázky do kategorií a poskytují další analýzy v dotazníku. 
+Dotazníky zahrnují tři hlavní prvky: skupiny odpovědí, které obsahují odpovědi pro otázky s možností více odpovědí, otázky a dotazník jako takový.Volitelně lze otázky v dotazníku seskupit do skupin výsledků. Skupiny výsledků umožňují rozdělit otázky do kategorií a poskytují další analýzy v dotazníku. 
 
 [![Komponenty dotazníku](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -192,7 +191,7 @@ Nastavte více skupin výsledků a vyhodnoťte body, které respondent získá z
 
 Pro každou skupinu výsledků můžete také nastavit jednu nebo více zpráv založených na bodech, které respondent získá po vyplnění dotazníku. Zobrazený text se může lišit v závislosti na výsledku, jehož respondenti dosáhnou ve skupině výsledků. Chcete-li použít zprávy založené na bodech, musíte definovat intervaly bodů a popis každého intervalu. Když respondent získá hodnocení určitého intervalu, bude text zahrnut do sestavy výsledků. 
 
-Vzhledem k tomu, že skupina výsledků souvisí s body, které jsou přiřazeny konkrétní sadě otázek v dotazníku, můžete pro dotazník použít pouze určitou skupinu výsledků.
+Vzhledem k tomu, že skupina výsledků souvisí s body, které jsou přiřazeny konkrétní sadě otázek v dotazníku, můžete pro dotazník použít pouze určitou skupinu výsledků.
 
 #### <a name="example-pointstexts-for-result-group-3"></a>Příklad: Body/text pro skupinu výsledků 3
 
@@ -226,7 +225,7 @@ Chcete-li použít podmíněné otázky a vytvářet hierarchii otázek v dotazn
 
 #### <a name="examples"></a>Příklad
 
-Právnická osoba nabízí zboží i služby zákazníkům. V takovém případě obvykle dochází k tomu, že někteří odběratelé kupují pouze zboží, jiní pouze služby a někteří zboží i služby. Proto pokud právnická osoba distribuuje průzkum spokojenosti zákazníků, použije na dotazník podmíněnou strukturu, aby odběratelé, kteří nakupují pouze služby, nemuseli odpovídat na otázky o zboží. 
+Právnická osoba nabízí zboží i služby zákazníkům. V takovém případě obvykle dochází k tomu, že někteří odběratelé kupují pouze zboží, jiní pouze služby a někteří zboží i služby. Proto pokud právnická osoba distribuuje průzkum spokojenosti zákazníků, použije na dotazník podmíněnou strukturu, aby odběratelé, kteří nakupují pouze služby, nemuseli odpovídat na otázky o zboží. 
 
 Případně můžete nastavit dotazník tak, že pokud respondent vybere odpověď A na otázku 1, další v pořadí bude otázka 2. Pokud však respondent vybere odpověď B na otázku 1, následuje otázka 5.
 
@@ -238,5 +237,4 @@ Případně můžete nastavit dotazník tak, že pokud respondent vybere odpově
 [Distribuování a vyplňování dotazníků](distribute-questionnaires.md)
 
 [Zobrazení a zhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
-
 

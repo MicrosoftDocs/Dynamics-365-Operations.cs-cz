@@ -1,13 +1,13 @@
 ---
-title: "Organizace a organizační hierarchie"
-description: "Organizace představuje skupinu lidí, kteří spolupracují na provádění obchodního procesu nebo dosažení cíle. Organizační hierarchie představuje vztahy mezi organizacemi, které tvoří váš podnik."
+title: Organizace a organizační hierarchie
+description: Organizace představuje skupinu lidí, kteří spolupracují na provádění obchodního procesu nebo dosažení cíle. Organizační hierarchie představuje vztahy mezi organizacemi, které tvoří váš podnik.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 72834769e393382ac511ad3af21544efddb049d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f8afc37e8d69b06622176d4f6cfb3ff06a0ab54
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322230"
 ---
-
 # <a name="organizations-and-organizational-hierarchies"></a>Organizace a organizační hierarchie
 
 [!include [banner](../includes/banner.md)]
@@ -42,13 +41,13 @@ Všechny interní organizace budou entita typu **Strana**. Proto tyto organizace
 
 Právnická osoba je organizace, která má registrovanou nebo uzákoněnou právní strukturu. Právnické osoby mohou uzavírat právní smlouvy a je po nich vyžadována příprava výkazů s informacemi o jejich výkonu.
 
-Společnost je typ právnické osoby. V této verzi Microsoft Dynamics Dynamics 365 for Finance and Operations jsou společnosti pouze druhem právnické osoby, kterou můžete vytvořit, a každá právnická osoba je spojena s identifikátorem společnosti. Toto přiřazení existuje vzhledem k tomu, že některé funkční oblasti v aplikaci používají ID společnosti nebo DataAreaId ve svých datových modelech. V těchto funkčních oblastech jsou společnosti používány jako hranice pro zabezpečení dat. Uživatelé mohou přistupovat k datům pouze pro společnost, ke které jsou aktuálně přihlášeni.
+Společnost je typ právnické osoby. V této verzi Microsoft Dynamics 365 for Finance and Operations jsou společnosti pouze druhem právnické osoby, kterou můžete vytvořit, a každá právnická osoba je spojena s identifikátorem společnosti. Toto přiřazení existuje vzhledem k tomu, že některé funkční oblasti v aplikaci používají ID společnosti nebo DataAreaId ve svých datových modelech. V těchto funkčních oblastech jsou společnosti používány jako hranice pro zabezpečení dat. Uživatelé mohou přistupovat k datům pouze pro společnost, ke které jsou aktuálně přihlášeni.
 
 ### <a name="operating-units"></a>Provozní jednotky
 
 Provozní jednotka je organizace, která se používá k rozdělení řízení ekonomických zdrojů a operačních procesů v podniku. Osoby v provozní jednotce jsou povinni maximalizovat využívání omezených zdrojů, zdokonalovat procesy a zvažovat jejich výkon.
 
-Typy provozních jednotek v aplikaci Microsoft Dynamics Dynamics 365 for Finance and Operations zahrnují nákladová střediska, obchodní jednotky, hodnotové proudy, oddělení a maloobchodní kanály. V následující tabulce jsou uvedeny další informace o typech provozních jednotek.
+V Microsoft Dynamics 365 for Finance and Operations patří k typům provozních jednotek nákladová střediska, obchodní jednotky, hodnotové proudy, oddělení a maloobchodní kanály. V následující tabulce jsou uvedeny další informace o typech provozních jednotek.
 
 | Typ provozní jednotky | Popis | Účel |
 |---------------------|-------------|---------|
@@ -66,7 +65,6 @@ Tým představuje organizaci, jejíž členové sdílejí společnou odpovědnos
 
 Nastavení organizační hierarchie pro zobrazení a tvorbu sestav vašeho podnikání z různých perspektiv. Můžete například nastavit hierarchii pro právnické osoby pro daňové, právní nebo statutární vykazování. Nastavte hierarchii vycházející z provozní jednotky tak, aby vykazovala finanční informace, které nejsou vyžadovány zákonem, ale které se používají pro interní správu. Například můžete vytvořit hierarchii nákupu a řídit tak zásady nákupu, pravidla a obchodní procesy.
 
-Každé hierarchii je přiřazen účel v aplikaci Microsoft Dynamics Dynamics 365 for Finance and Operations. Účel hierarchie určuje typy organizací, které mohou být zahrnuty v hierarchii. Účel také určuje, v jakých scénářích aplikace lze hierarchii použít.
+Každé hierarchii je přiřazen účel v Microsoft Dynamics 365 for Finance and Operations. Účel hierarchie určuje typy organizací, které mohou být zahrnuty v hierarchii. Účel také určuje, v jakých scénářích aplikace lze hierarchii použít.
 
 Organizace v hierarchii mohou sdílet parametry, zásady a transakce. Organizace může dědit nebo přepsat parametry její nadřazené organizace. Sdílené hlavní data, například výrobky a adresáře, však platí pro celou organizaci, a nelze je přepsat pro jednotlivé organizace. Vytváření organizace a hierarchie vyžaduje pečlivé plánování. Další informace viz [Plánování organizační hierarchie](plan-organizational-hierarchy.md).
-

@@ -1,13 +1,13 @@
 ---
-title: "Názvosloví čísel a názvů variant produktu"
-description: "Toto téma popisuje, jak nastavit názvosloví pro čísla produktu, které nahradí opravený formát [základní produkt - konfigurace – velikost – barva – styl]."
+title: Názvosloví čísel a názvů variant produktu
+description: Toto téma popisuje, jak nastavit názvosloví pro čísla produktu, které nahradí opravený formát [základní produkt - konfigurace – velikost – barva – styl].
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: f84b6982af8b81ff83086d163a77e1c2f58ca478
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3baf1d7313d8ff03ae5ece035b6f3641c0f1d707
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336674"
 ---
-
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Názvosloví čísel a názvů variant produktu
 
 [!include [banner](../includes/banner.md)]
@@ -198,5 +197,4 @@ Během jednoho kroku procesu konfigurace systém navrhne hodnotu konfigurace pod
 [Vytvoření názvosloví čísel produktů pro předdefinované varianty produktu](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [Vytvoření názvosloví čísel produktů pro nakonfigurované varianty produktu](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
-
 

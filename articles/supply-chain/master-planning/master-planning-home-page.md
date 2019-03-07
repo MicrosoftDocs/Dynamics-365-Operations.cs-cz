@@ -1,32 +1,31 @@
 ---
-title: "Domovská stránka Hlavního plánování"
-description: "Hlavní plánování umožňuje společnostem určit a vyvážit budoucí potřebu surovin a kapacit ke splnění cílů společnosti."
+title: Domovská stránka Hlavního plánování
+description: Hlavní plánování umožňuje společnostem určit a vyvážit budoucí potřebu surovin a kapacit ke splnění cílů společnosti.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
 ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314778"
 ---
-
 # <a name="master-planning-home-page"></a>Domovská stránka Hlavního plánování
 
 [!include [banner](../includes/banner.md)]
@@ -66,13 +65,13 @@ Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří r
 - [Přehled prognózy poptávky](introduction-demand-forecasting.md)
 - [Redukční klíče](reduction-keys.md)
                                   
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 ### <a name="roadmaps"></a>Plánování
 Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.
 
 ### <a name="blogs"></a>Blogy
-Názory, novinky a další informace o hlavním plánování a jiných řešeních naleznete na blogu [Tým výzkumu a vývoje pro výrobu v Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) a v blogu [Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+Názory, novinky a další informace o hlavním plánování a jiných řešeních naleznete na [blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) a v [blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Průvodci záznamem úloh
 V aplikaci Finance and Operations je k dispozici další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko **Nápověda** na kterékoliv stránce.
@@ -84,7 +83,6 @@ V aplikaci Finance and Operations je k dispozici další nápověda v podobě pr
 -  [Rozšíření funkce prognózy poptávky](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 -  [Hlavní plánování – tipy a triky pro řešení problémů s výkonem](https://youtu.be/7v8BPmEs9Dg)
 -  [Pomoc! MRP je pomalé.](https://youtu.be/RLXybx20B5o)
-
 
 
 

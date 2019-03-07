@@ -1,31 +1,30 @@
 ---
-title: "Časové rozlišení předplatného"
-description: "U předplatného servisu ručně rozlišujete výnosy do období následujících po datu, kdy jste fakturovali transakci poplatku."
+title: Časové rozlišení předplatného
+description: U předplatného servisu ručně rozlišujete výnosy do období následujících po datu, kdy jste fakturovali transakci poplatku.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a183e17749c04b407eb17155ecb1363e96ade18a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: acbf7432c9487cbefaf24a2a98772c8f0ec7ffe6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317170"
 ---
-
 # <a name="accruing-subscriptions"></a>Časové rozlišení předplatného 
 
 [!include [banner](../includes/banner.md)]
@@ -151,6 +150,5 @@ Můžete určit počet transakcí hlavní knihy, které jsou vytvořeny při za�
 [Časově rozlišit výnosy z předplatného](accrue-subscription-revenue.md)
 
   
-
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Vygenerování dokladu převodu pro interní převod zásob"
-description: "Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zboží v rámci společnosti."
+---
+title: Vygenerování dokladu převodu pro interní převod zásob
+description: Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zboží v rámci společnosti.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4b9ef0026129d958b4214bb6e235c288de023d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 30e5f6ad184720d0e119f86fb703ed7211b27fab
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321356"
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>Vygenerování dokladu převodu pro interní převod zásob
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zboží v rámci společnosti. Tato procedura je k dispozici pouze pro právnické osoby, jejichž primární adresa je v Litvě. Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Litvě. Než bude možné tuto proceduru dokončit, je nutné dokončit proceduru "Nastavení převodních dokumentů pro pohyb zboží uvnitř společnosti". Tato procedura je určena pouze pro skladové účetní. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zboží v rámci společnosti. Tato procedura je k dispozici pouze pro právnické osoby, jejichž primární adresa je v Litvě. Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Litvě. Než bude možné tuto proceduru dokončit, je nutné dokončit proceduru "Nastavení převodních dokumentů pro pohyb zboží uvnitř společnosti". Tato procedura je určena pouze pro skladové účetní. Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
 
 ## <a name="create-a-transfer-order"></a>Vytvoření převodního příkazu
@@ -73,5 +73,4 @@ Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zbož
 9. V podokně akcí klikněte na možnost Expedovat.
 10. Klepněte na Dodací list.
 11. Klikněte na tlačítko OK.
-
 

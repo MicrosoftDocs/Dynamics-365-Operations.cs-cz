@@ -1,13 +1,13 @@
 ---
-title: "Nastavení kanálů kontaktního střediska"
-description: "Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Microsoft Dynamics 365 for Retail."
+title: Nastavení kanálů kontaktního střediska
+description: Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334834"
 ---
-
 # <a name="set-up-call-center-channels"></a>Nastavení kanálů kontaktního střediska
 
 [!include [banner](includes/banner.md)]
 
-Společnost může definovat více kanálů kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail. Kanály kontaktního střediska jsou konfigurovány v **Retail** \> **Kanály** \> **Kontaktní střediska** \> **Všechna kontaktní střediska** a jsou specifické pro právnickou osobu.
+Společnost může definovat ve více kanálů kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail. Kanály kontaktního střediska jsou konfigurovány v **Retail** \> **Kanály** \> **Kontaktní střediska** \> **Všechna kontaktní střediska** a jsou specifické pro právnickou osobu.
 
 Po vytvoření nového kanálu kontaktního střediska je systematicky přiřazeno číslo provozní jednotky. Vzhledem k tomu, že kontaktní střediska jsou vytvořena jako provozní jednotky, uživatelé mohou propojit kontaktní střediska s různými funkcemi aplikace Retail, jako jsou například sortimenty, katalogy a určité způsoby dodání.
 
@@ -77,7 +76,6 @@ Při definování kanálu kontaktního střediska je nutné propojit uživatele 
 
 Ve výchozím nastavení je příznak **Maloobchodní prodej** na záhlaví prodejní objednávky je zapnutý pro všechny objednávky, které uživatelé kontaktního střediska vytvoří. Objednávky poté mohou využít systémových funkcí promoakce a cen specifických pro maloobchod.
 
-Uživatelé, kteří nejsou napojeni na kanál kontaktního střediska, používají standardní funkce zadání objednávky v aplikaci Microsoft Dynamics 365 for Finance and Operations. Objednávky, které tito uživatelé zadávají prostřednictvím formuláře pro zadání prodejní objednávky, nebudou systematicky identifikovány jako objednávky aplikace Retail. Navíc tyto objednávky zadané těmito uživateli nebudou podléhat žádným pravidlům zpracování dokončení objednávek, maloobchodní cenové logice nebo jiným ověřením objednávek, které lze definovat v konfiguraci kanálu kontaktního střediska nebo v parametrech systému kontaktního střediska.
+Uživatelé, kteří nejsou spojení s kanálem kontaktního střediska, používají standardní funkce zadání objednávky aplikace Microsoft Dynamics 365 for Finance and Operations. Objednávky, které tito uživatelé zadávají prostřednictvím formuláře pro zadání prodejní objednávky, nebudou systematicky identifikovány jako objednávky aplikace Retail. Navíc tyto objednávky zadané těmito uživateli nebudou podléhat žádným pravidlům zpracování dokončení objednávek, maloobchodní cenové logice nebo jiným ověřením objednávek, které lze definovat v konfiguraci kanálu kontaktního střediska nebo v parametrech systému kontaktního střediska.
 
 Po dokončení konfigurace kanálu kontaktního střediska a definování uživatelů kanálu k zajištění požadovaného chování systému se ujistěte, že všechny požadované parametry kontaktního střediska jsou definovány v možnostech **Retail** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Parametry kontaktního střediska**. Ujistěte se, že související číselné řady jsou rovněž definovány.
-

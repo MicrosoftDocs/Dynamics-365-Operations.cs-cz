@@ -1,13 +1,13 @@
 ---
-title: "Odstranění prostředí Talent"
-description: "Toto téma vás provede procesem odstranění testovacího produkčního prostředí pro aplikaci Microsoft Dynamics 365 for Talent."
+title: Odstranění prostředí Talent
+description: Toto téma vás povede procesem odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Dynamics 365 for Talent.
 author: rschloma
 manager: AnnBe
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
+ms.openlocfilehash: e0422a5b7ac227ad03ccafb4e34e614dc770a363
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 5080f1ec182b8cbdf281967185a1afeb9887f682
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303659"
 ---
 # <a name="remove-talent-environments"></a>Odstranění prostředí Talent
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vás provede procesem odstranění testovacího produkčního prostředí pro aplikaci Microsoft Dynamics 365 for Talent.
+Toto téma vás povede procesem odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Dynamics 365 for Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Odstranění testovacího prostředí
 
@@ -73,5 +73,4 @@ Chcete-li odebrat prostředí Talent z existujícího prostředí PowerApps, pro
 6. Ve svém LCS projektu vyberte dlaždici **Správa aplikace Talent**. 
 7. Vyberte instanci, kterou chcete odebrat. Ta by měla být označena stavem nasazení **Neúspěšný**.
 8. Vyberte **Odebrat instanci** a potvrďte vaše rozhodnutí. 
-
 

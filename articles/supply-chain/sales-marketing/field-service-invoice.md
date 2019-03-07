@@ -1,37 +1,36 @@
 ---
-title: "Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci Finance and Operations"
-description: "Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci fakturovaných dohod z aplikace Microsoft Dynamics 365 for Field Service na volné textové faktury v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci Finance and Operations
+description: Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci smluvních faktur v Microsoft Dynamics 365 for Field Service do volných faktur v Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: 55301ba39dd28fbae5b6c21b1da3c3d9cf6afd8a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
-ms.openlocfilehash: 6672e283a5e56b068e3494d53a0fd6dd08253ba9
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333247"
 ---
-
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-finance-and-operations"></a>Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci fakturovaných dohod z aplikace Microsoft Dynamics 365 for Field Service na volné textové faktury v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci smluvních faktur v Microsoft Dynamics 365 for Field Service do volných faktur v Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
@@ -107,4 +106,3 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Smluvní faktury (Field Service do Fin a Ops): Řádky záhlaví faktury
 
 [![Mapování šablony v integraci dat](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
-

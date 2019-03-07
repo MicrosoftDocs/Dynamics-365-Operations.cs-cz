@@ -1,13 +1,13 @@
 ---
-title: "Vrácení platby dodavatele"
-description: "Tento článek popisuje rozdíly mezi stornováním, odstraněním, anulováním a odmítnutím platby. Dále popisuje dva způsoby stornování kontroly dodavatele."
+title: Vrácení platby dodavatele
+description: Tento článek popisuje rozdíly mezi stornováním, odstraněním, anulováním a odmítnutím platby. Dále popisuje dva způsoby stornování kontroly dodavatele.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankChequeTable, LedgerJournalTransBankChequeReversal, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d58aac20f9ef54e4ee41464a30b7c8190ade26b7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 019b765cd1e9fa00078018354f0d0792b97faba6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329613"
 ---
-
 # <a name="reverse-a-vendor-payment"></a>Vrácení platby dodavatele
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Pokud byl stornovaný šek vydán pro refundaci odběratele, může dojít také
 
 -   Transakce je zaúčtována oproti účtu odběratele jako storno platby a vyrovnání mezi původní platbou a dokumentem, oproti kterému byla platba původně vyrovnána, je stornováno (je vytvořena záporná platba).
 -   Na původní platbu je použito storno platby. Pole **Poslední doklad vyrovnání** na stránce **Transakce odběratele** původní platby odběrateli je aktualizováno, aby reflektovalo číslo dokladu stornované transakce.
-
 
 
 

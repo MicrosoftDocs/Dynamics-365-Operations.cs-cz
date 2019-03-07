@@ -1,13 +1,13 @@
 ---
-title: "Vyrovnání částečné platby zákazníka, u níž je více období slev"
-description: "Tento článek popisuje způsob, jakým se vyrovnávají platby odběratelů po více období slevy."
+title: Vyrovnání částečné platby zákazníka, u níž je více období slev
+description: Tento článek popisuje způsob, jakým se vyrovnávají platby odběratelů po více období slevy.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60c8b9b3a5aebed7e1a999335aab0baf83ea952a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ac64ece82abe75f3cba437b1ec1af499fbbce8e4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337893"
 ---
-
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Vyrovnání částečné platby zákazníka, u níž je více období slev
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,6 @@ Zůstatek faktury je nyní 0,00. Arnold informace může zobrazit na stránce **
 | SLEV-10030 |  Platební sleva   | 28. 6. 2015 |         |                                      | 6,00                                  | 0,00    | USD      |
 | ARP-10031  |  Platba         | 7/8/2015  |         |                                      | 693,00                                | 0,00    | USD      |
 | SLEV-1031  |  Platební sleva   | 7/8/2015  |         |                                      | 7:00                                  | 0,00    | USD      |
-
 
 
 

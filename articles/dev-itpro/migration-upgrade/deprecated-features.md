@@ -1,13 +1,13 @@
 ---
-title: "Odstraněné nebo zastaralé funkce"
-description: "Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění."
+title: Odstraněné nebo zastaralé funkce
+description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
 author: sericks007
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
-ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329245"
 ---
-
 # <a name="removed-or-deprecated-features"></a>Odstraněné nebo zastaralé funkce
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje funkce, které byly odebrány z aplikace Microsoft Dynamics 365 for Finance and Operations, nebo které jsou již zastaralé.
+Toto téma popisuje funkce, které byly odebrány nebo jsou zastaralé pro aplikaci Dynamics 365 for Finance and Operations.
 
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
@@ -37,12 +36,12 @@ Toto téma popisuje funkce, které byly odebrány z aplikace Microsoft Dynamics
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
 > [!Note]
-> Počínaje vydáním Dynamics 365 for Finance and Operations z července 2017 s aktualizací platform update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci. Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.
+> Počínaje vydáním Dynamics 365 for Finance and Operations z července 2017 s aktualizací Platform Update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci. Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.
 
 > [!Note]
 > Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
 
-## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 a aktualizací platform update 20
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Pravidla dávkových převodů pro položky účtu dílčí hlavní knihy
 Režim synchronního převodu je zastaralý v parametrech hlavní knihy.  Tento režim je nahrazen pouze možnostmi Asynchronní a plánovaná dávka, které již existují jako možnosti pro převod. 
@@ -63,8 +62,8 @@ Funkce pro konfiguraci formátů souborů TXT a XML prohlášení.
 | **Důvod pro zrušení/odstranění** | Nahrazeno elektronickým výkaznictvím. |
 | **Nahrazeno jinou funkcí?**   | Ano. |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha |
-| **Možnost nasazení**              | Všechna |
-| **Stav**                         | Odstraněno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Generátor finančních sestav pro Rusko
 Nástroj pro nastavení shromažďování dat pro účetnictví a daňové sestavy a export dat do šablon sestavy XLS a DOC. Funkční části: jsou odstraněny export dat do šablon sestavy XLS , dotazy a pevné požadavky. 
@@ -74,8 +73,8 @@ Nástroj pro nastavení shromažďování dat pro účetnictví a daňové sesta
 | **Důvod pro zrušení/odstranění** | Odebrané části jsou nahrazeny elektronickým výkaznictvím. |
 | **Nahrazeno jinou funkcí?**   | Ano. Uživatelské rozhraní nastavení finančních sestav by mělo být použito pro nastavení pravidel shromažďování dat účty hlavní knihy a daňovými registry. Export dat do různých typů souborů, pevné požadavky a pravidla shromažďování dat podobná dotazům musí být nakonfigurovány v elektronickém výkaznictví. |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha. |
-| **Možnost nasazení**              | Všechna |
-| **Stav**                         | Odstraněno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integrování s externími poskytovateli pro odeslání elektronických sestav prostřednictvím komunikačních kanálů pro Rusko
 Funkce exportující generované elektronické soubory deklarací do složky pro další zasílání oficiálním poskytovatelům elektronického výkaznictví, stejně jako import stavu zpět.
@@ -85,8 +84,8 @@ Funkce exportující generované elektronické soubory deklarací do složky pro
 | **Důvod pro zrušení/odstranění** | Nahrazeno konfigurovatelnou funkcí elektronických zpráv. |
 | **Nahrazeno jinou funkcí?**   | Ano.  |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha, daň |
-| **Možnost nasazení**              | Všechna |
-| **Stav**                         | Odstraněno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Průvodce registrem daně ze zisku
@@ -97,16 +96,16 @@ Funkce pro vytvoření šablony pro nové registry daně ze zisku. Tato funkce v
 | **Důvod pro zrušení/odstranění** | Funkce není kompatibilní s modelem rozšiřitelnosti Dynamics 365 for Finance and Operations. |
 | **Nahrazeno jinou funkcí?**   | Žádný |
 | **Ovlivněné oblasti produktu**         | Daň |
-| **Možnost nasazení**              | Všechna |
-| **Stav**                         | Odstraněno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 a aktualizací platform update 15
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 s aktualizací Platform Update 15
 V této verzi nebyly odebrány ani odepsány žádné funkce. Aktualizace platformy 15 je kumulativní a obsahuje nové a změněné funkce aktualizace platformy 13, aktualizace platformy 14 a aktualizace platformy 15.
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 a aktualizací platform update 12
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 s aktualizací Platform Update 12
 
-### <a name="personalized-product-recommendations"></a>Přizpůsobená doporučení produktu 
+### <a name="personalized-product-recommendations"></a>Doporučení přizpůsobeného produktu 
 Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
 
 |   |  |
@@ -115,7 +114,7 @@ Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporu�
 | **Nahrazeno jinou funkcí?**   | Č. Nicméně po jaru 2018 plánujeme vrátit tuto funkci, abychom využili novou službu doporučení.   |
 | **Ovlivněné oblasti produktu**         | Doporučení přizpůsobeného produktu v POS.                                                    |
 | **Možnost nasazení**              | Všechna                                                                                      |
-| **Stav**                         |Odstraněno od 15. února 2018. To ovlivní zákazníky, kteří používají Dynamics 365 for Operations 1611 a pozdější.  |
+| **Stav**                         |Odstraněno od 15. února 2018. To má vliv na zákazníky s verzí Dynamics 365 for Operations 1611 a vyšší.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Rozšíření seznamu funkcí elektronického vykazování
 Možnost zavést vlastní funkce pro použití v tvůrci výrazů ER (další informace naleznete v tématu [Rozšíření seznamu funkcí elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) již není nadále podporována. Z důvodu změn rozhraní API pro elektronické výkaznictví se stalo API volající vestavěné funkce z tvůrce výkazů ER interním a již nelze rozšířit.
@@ -125,8 +124,8 @@ Možnost zavést vlastní funkce pro použití v tvůrci výrazů ER (další in
 | **Důvod pro zrušení/odstranění** | Iniciativa uzavření kódu  |
 | **Nahrazeno jinou funkcí?**   | Žádný. Kdykoliv je potřeba nová vestavěná funkce, musí být adresován nová požadavek na rozšíření týmu architektury elektronického výkaznictví.<br><br>Jako dočasné řešení pro dobu, kdy je požadovaná funkce vyvíjena týmem elektronického výkaznictví, lze požadovanou logiku naprogramovat jako metodu vlastní třídy aplikace. K této metodě lze získat přístup ve výrazu elektronické výkaznictví jako vlastnost přidaného datového zdroje dat elektronické výkaznictví typu **Aplikace\Třída**, který se vztahuje k této vlastní třídě aplikace.  |
 | **Ovlivněné oblasti produktu**         | Architektura elektronického výkaznictví                                                      |
-| **Možnost nasazení**              | Všechna                                                                                      |
-| **Stav**                         | Odstraněno od verze aplikace Dynamics 365 for Finance and Operations, Enterprise Edition 7.3    |
+| **Možnost nasazení**              | Vše                                                                                      |
+| **Stav**                         | Odebráno od verze Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Zásoby podle prodlení skupiny zboží a Zásoby podle doby uskladnění za dimenzi zásob
 
@@ -140,13 +139,13 @@ Tyto dvě sestavy již nejsou podporovány v aplikaci Finance and Operations. Na
 | **Možnost nasazení**        | Všechna|
 | **Stav**                       | Zastaralé: Položky nabídky pro tyto dvě sestavy byly odstraněny ve verzi 7.3. Kód pro sestavy však zůstane v produktu. V plánu je kód odstranit v budoucích verzích. |
 
-### <a name="power-bi-content-packs-available-on-appsource"></a>Sada obsahu BI dostupná v AppSource
-Balíčky obsahu **Řízení nákladů**, **Finanční výkonnost** a **Výkonnost maloobchodního kanálu**, které byly publikovány na webu [Microsoft AppSource](https://appsource.microsoft.com), jsou zastaralé v důsledku aktualizace produktů v Microsoft Power BI. Formuláře správy systému používané k nasazení těchto balíčků obsahu do PowerBI.com obsahu jsou také zastaralé v aplikaci Finance and Operations.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Balíčky obsahu Power BI dostupné v AppSource
+Balíčky obsahu **Řízení nákladů**, **Finanční výkonnost** a **Výkonnost maloobchodního kanálu**, dostupné na webu [Microsoft AppSource](https://appsource.microsoft.com), jsou zastaralé v důsledku aktualizace produktů v Microsoft Power BI. Formuláře správy systému používané k nasazení těchto balíčků obsahu do PowerBI.com obsahu jsou také zastaralé v aplikaci Finance and Operations.
 
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Aktualizace produktu v Microsoft Power BI. |
-| **Nahrazeno jinou funkcí?**   | Balíčk y obsahu**Řízení nákladů**, **finanční výsledky**, a **maloobchodní sítě výkonu**, které jsou k dispozici na webu [AppSource](https://appsource.microsoft.com), jsou nahrazeny analytickými aplikacemi umožňujícími integraci řešení na úrovni databáze. Další informace o analytických aplikacích naleznete v tématu [Embedded Power BI v pracovních prostorech](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Nahrazeno jinou funkcí?**   | Balíčky obsahu **Řízení nákladů**, **Finanční výkonnost** a **Výkonnost maloobchodního kanálu**, které jsou k dispozici na webu [AppSource](https://appsource.microsoft.com), jsou nahrazeny analytickými aplikacemi umožňujícími integrace řešení na úrovni databáze. Další informace o analytických aplikacích naleznete v tématu [Power BI Embedded v pracovních prostorech](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Ovlivněné oblasti produktu**         | Řízení nákladů, Finance a Maloobchod                                                                                               |
 | **Možnost nasazení**              | Pouze cloud (Inntegrace s PowerBI.com není podporována v místních nasazeních).                                                                                                            |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je druhé čtvrtletí roku 2018.    |
@@ -209,9 +208,9 @@ Uživatelé si mohou stáhnout tento formulář ze státního portálu.
 | **Stav**                                  | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.  |    
 
 
-## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
+## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
-### <a name="personalized-product-recommendations"></a>Přizpůsobená doporučení produktu 
+### <a name="personalized-product-recommendations"></a>Doporučení přizpůsobeného produktu 
 Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
 
 |   |  |
@@ -220,10 +219,10 @@ Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporu�
 | **Nahrazeno jinou funkcí?**   | Č. Nicméně po jaru 2018 plánujeme vrátit tuto funkci, abychom využili novou službu doporučení.   |
 | **Ovlivněné oblasti produktu**         | Doporučení přizpůsobeného produktu v POS.                                                    |
 | **Možnost nasazení**              | Všechna                                                                                      |
-| **Stav**                         |Odstraněno od 15. února 2018. To ovlivní zákazníky, kteří používají Dynamics 365 for Retail 7.2 a pozdější. |
+| **Stav**                         |Odstraněno od 15. února 2018. To má vliv na zákazníky s verzí Dynamics 365 for Retail 7.2 a vyšší. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition červenec 2017 a aktualizací platform update 8
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition červenec 2017 s aktualizací Platform Update 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Převod měny pro účetnictví a měny vykazování
 
@@ -244,7 +243,7 @@ Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, urč
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Duplicitní funkce.       |
-| **Nahrazeno jinou funkcí?**   | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a požadavcích naleznete v tématu [Instalace a konfigurace aplikace Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Nahrazeno jinou funkcí?**   | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a předpokladech naleznete v tématu [Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations – Sklady](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Ovlivněné oblasti produktu**         | Řízení skladu, Správa přepravy     |
 | **Možnost nasazení**              | Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení.               |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je čtvrté čtvrtletí roku 2019.   |
@@ -258,10 +257,10 @@ Bylo použito pravidlo párování k výběru a označení bankovního dokumentu
 | **Důvod pro zrušení/odstranění** | Omezené použití.                                                                         |
 | **Nahrazeno jinou funkcí?**   | Č. Pro nalezení dokumentů k odsouhlasení je třeba použít možnosti filtrování sloupce. |
 | **Ovlivněné oblasti produktu**         | Pokladna a banka                                                               |
-| **Možnost nasazení**              | Všechna                                                                                    |
+| **Možnost nasazení**              | Vše                                                                                    |
 | **Stav**                         | Odstraněno od července 2017.                                                               |
 
-## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 s aktualizací platform update 3
+## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 s aktualizací Platform Update 3
 
 ### <a name="aeb-payment-formats-for-spain"></a>AEB formáty plateb pro Španělsko
 
@@ -353,7 +352,7 @@ EDIVAT je starý standard pro elektronické prohlášení prostřednictvím zabe
 
 ### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>Importní formát platby eGiro EDIFACT CREMUL pro Norsko
 
-eGiro je založeno na mezinárodních standardech SN EDIFACT CREMUL (Multiple Credit Advice Message), které slouží pro automatické zaúčtování plateb odběratele. V aplikaci Microsoft Dynamics AX je eGiro implementováno jako formát importu platby odběratele.
+eGiro je založeno na mezinárodních standardech SN EDIFACT CREMUL (Multiple Credit Advice Message), které slouží pro automatické zaúčtování plateb odběratele. V aplikaci Microsoft Dynamics AX je implementováno eGiro jako formát importu platby odběratele.
 
 |   |  |
 |------------|--------------------|
@@ -481,7 +480,7 @@ Mzdové informace lidských zdrojů
 | **Důvod pro zrušení/odstranění** | Tato funkce byla nahrazena základními stránkami Mzdy a Lidské zdroje.  |
 | **Nahrazeno jinou funkcí?**   | **Výhody**, **Příjmy** a další související stránky, které byly dříve v modulu Mzdy v USA, byly překonfigurovány a jsou nyní součásti základní konfigurace modulu Lidské zdroje pro podporu zpracování externích mezd. K této funkci se dostanete pomocí konfiguračního klíče **Lidské zdroje 1** \> **Mzdy**. |
 | **Ovlivněné oblasti produktu**         | Lidské zdroje, Mzdy   |
-| **Stav**                         | Odstraněno od verze aplikace Dynamics 365 for Operations 1611.    |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611.    |
 
 ### <a name="performance-management-goal-workflow"></a>Pracovní postup cíle řízení výkonnosti
 
@@ -492,7 +491,7 @@ Mzdové informace lidských zdrojů
 | **Důvod pro zrušení/odstranění** | Řízení výkonnosti bylo změněno a počet stránek cílů se snížil, aby došlo ke zjednodušení procesu.                 |
 | **Nahrazeno jinou funkcí?**   | Ne. Cíle jsou viditelné pro vedoucí pracovníky pomocí portálu samoobslužných stránek správce a lze je změnit a zobrazit manažerem. |
 | **Ovlivněné oblasti produktu**         | Správa lidského kapitálu       |
-| **Stav**                         | Odstraněno od verze aplikace Dynamics 365 for Operations 1611.    |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611.    |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Formáty platby Postgirot a Postgirot Utland pro Švédsko
 
@@ -514,7 +513,7 @@ Radiofrekvenční identifikace (RFID) představuje technologii shromažďování
 | **Důvod pro zrušení/odstranění** | Málo používáno odběrateli a omezená sada funkcí.   |
 | **Nahrazeno jinou funkcí?**   | Žádný                                              |
 | **Ovlivněné oblasti produktu**         | Řízení zásob                            |
-| **Stav**                         | Odstraněno od verze aplikace Dynamics 365 for Operations 1611. |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611. |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Zpráva o číslování státních faktur Lotyšska
 
@@ -545,7 +544,7 @@ Jména správce a hlavního účetního společnosti mohou být určena v inform
 | **Důvod pro zrušení/odstranění** | Duplicitní funkce   |
 | **Nahrazeno jinou funkcí?**   | Částečně nahrazeno správou přepravy |
 | **Ovlivněné oblasti produktu**         | Prodeje a marketing, Řízení zásob  |
-| **Stav**                         | Odstraněno od verze aplikace Dynamics 365 for Operations 1611.  |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611.  |
 
 ### <a name="telepay-payment-formats-for-norway"></a>Telepay formáty plateb pro Norsko
 
@@ -574,9 +573,9 @@ Existují dva formáty pro export plateb pro Finsko. LM02 (FI) se používá pro
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Řešení Řízení skladu II (WMS II), které bylo k dispozici v modulu **Řízení zásob**, duplikuje funkce, které jsou v modulu **Řízení skladu** a byly vydány v aplikaci Microsoft Dynamics AX 2012 R3.                                                                         |
-| **Nahrazeno jinou funkcí?**   | Modul **Řízení skladu**, který byl vydán v aplikaci AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 a Microsoft Dynamics AX 2012 R3 CU9, nahrazuje funkce modulu Řízení skladu II. V porovnání s funkcemi modulu Řízení skladu II má nový modul více rozšířené funkce a flexibilnější procesy řízení skladu. |
+| **Nahrazeno jinou funkcí?**   | Modul **Řízení skladu**, který byl vydán v aplikaci AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 a Dynamics AX 2012 R3 CU9, nahrazuje funkce modulu Řízení skladu II. V porovnání s funkcemi modulu Řízení skladu II má nový modul více rozšířené funkce a flexibilnější procesy řízení skladu. |
 | **Ovlivněné oblasti produktu**         | Řízení zásob, prodeje a marketing, zásobování a zdroje   |
-| **Stav**                         | Odstraněno od verze aplikace Dynamics 365 for Operations 1611.    |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611.    |
 
 ### <a name="worker-reminders-in-human-resources"></a>Připomenutí pracovníka v modulu Lidské zdroje
 
@@ -587,7 +586,7 @@ Mzdové informace lidských zdrojů
 | **Důvod pro zrušení/odstranění** | Malé využití                                                           |
 | **Nahrazeno jinou funkcí?**   | Žádný                                                                  |
 | **Ovlivněné oblasti produktu**         | Lidské zdroje                                                     |
-| **Stav**                         | Odstraněno od verze aplikace Dynamics 365 for Operations 1611 |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611 |
 
 ### <a name="workflow-for-creating-goals"></a>Postup pro vytváření cíle
 
@@ -595,10 +594,10 @@ Workflow správy vytvoření cílů zaměstnanců je jednou z několika workflow
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Řízení výkonnosti bylo zcela změněno v aplikaci Microsoft Dynamics 365 for Finance and Operations.     |
+| **Důvod pro zrušení/odstranění** | Řízení výkonnosti bylo zcela přepracováno v aplikaci Microsoft Dynamics 365 for Finance and Operations.     |
 | **Nahrazeno jinou funkcí?**   | Upravená funkce řízení výkonnosti poskytuje větší kontrolu nad obsahem cílů, měřeními, která se používají ke sledování vývoje, a připojováním podpůrné dokumentace. Cíle lze ukládat jako šablony a pak znovu použít. Tato funkce vám pomůže rychleji nastavit další cíle pro zaměstnance. |
 | **Ovlivněné oblasti produktu**         | Správa lidského kapitálu                 |
-| **Stav**                         | Odstraněno od verze aplikace Dynamics 365 for Operations 1611. |
+| **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611. |
 
 ## <a name="dynamics-ax-70"></a>Dynamics AX 7.0 
 
@@ -614,7 +613,7 @@ Workflow správy vytvoření cílů zaměstnanců je jednou z několika workflow
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integrace rozhraní AIF, AxD a AxBC
 
-V rozhraní AIF (Application Integration Framework) mohou být data vyměňována s externími systémy pomocí obchodní logiky, která je zveřejněna jako služba. Dynamics AX obsahuje služby, které jsou založeny na dokumentech a programu .NET Business Connector (AxBC). Dokument je vytvářen pomocí kódu XML. Soubor XML obsahuje informace v záhlaví, které jsou přidány pro vytvoření *zprávy*, již lze přenést do a z aplikace Dynamics AX. Příkladem takovýchto dokumentů mohou být prodejní objednávky nebo nákupní objednávky. Dokumentem však může být reprezentována téměř jakákoliv entita, například odběratel. Služby, které jsou založeny na dokumentech, používají třídy **Axd \<Dokument\>**.
+V rozhraní AIF (Application Integration Framework) mohou být data vyměňována s externími systémy pomocí obchodní logiky, která je zveřejněna jako služba. Dynamics AX obsahuje služby, které jsou založeny na dokumentech a programu .NET Business Connector (AxBC). Dokument je vytvářen pomocí kódu XML. Soubor XML obsahuje informace v záhlaví, jež jsou přidány pro vytvoření *zprávy*, kterou lze přenést do a z aplikace Dynamics AX. Příkladem takovýchto dokumentů mohou být prodejní objednávky nebo nákupní objednávky. Dokumentem však může být reprezentována téměř jakákoliv entita, například odběratel. Služby, které jsou založeny na dokumentech, používají třídy **Axd \<Dokument\>**.
 
 |   |  |
 |------------|--------------------|
@@ -685,7 +684,7 @@ Nastavení dotazů na obchodní statistiky, která vám mohou pomoct s analýzou
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Starší přístup k obchodnímu zpravodajství (BI), málo používáno odběrateli a omezená sada funkcí |
-| **Nahrazeno jinou funkcí?**   | Nové řešení BI pro aktuální verzi aplikace Dynamics AX                                      |
+| **Nahrazeno jinou funkcí?**   | Nové řešení Power BI pro aktuální verzi aplikace Dynamics AX                                      |
 | **Ovlivněné oblasti produktu**         | Zásobování a zdroje, Závazky, Prodej a marketing, Pohledávky         |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.                                                               |
 
@@ -754,7 +753,7 @@ Tento nástroj byl použit k integraci klíčových dat z aplikace Microsoft Dyn
 | **Důvod pro zrušení/odstranění** | Metadata hromádky byla omezena na informace o počtu nebo součtu.    |
 | **Nahrazeno jinou funkcí?**   | Kvůli flexibilnějším možnostem modelování byla zavedena metadata dlaždice. Modelova můžete například aktuální počty, navigaci a klíčové indikátory výkonnosti (KPI). Metadata dlaždice počtu jsou přímou náhradou za metadata hromádky. |
 | **Ovlivněné oblasti produktu**         | Všechny moduly           |
-| **Stav**                         | Odstraněno od verze Dynamics AX 7.0.      |
+| **Stav**                         | Odstraněno od verze Dynamics AX 7.0      |
 
 ### <a name="danish-check-format"></a>Formát šeku – Dánsko
 
@@ -771,7 +770,7 @@ Datové oddíly poskytují logické oddělení dat v databázi aplikace Microsof
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Datové oddíly byly zavedeny v aplikaci Microsoft Dynamics AX 2012 R2 a umožňují izolaci dat. V běžné situaci má společnost pobočky a data z jedné dceřiné společnosti by neměla být viditelná pro jiné dceřiné společnosti, přestože obě pobočky jsou spravovány ve stejném oddělení IT. Nicméně by byly vyžadovány dodatečné skripty a další správní režie v celém programu pro vytvoření nových oddílů, naplnění je daty a zálohování data oddílu. V cloudu, kde máte přístup k databázové službě Platforma jako služba (PaaS – Microsoft Azure SQL Database), je mnohem efektivnější použít databázi pro izolační kontejner, než provádět izolaci v programu. Bez ohledu na to, zda je rozdělení dat požadované pro dceřiné společnosti, pro více klientů nebo pouze pro škálování, věříme, že situace je možné vyřešit efektivněji s využitím více instancí aplikace Finance and Operations. |
+| **Důvod pro zrušení/odstranění** | Datové oddíly byly zavedeny v aplikaci Microsoft Dynamics AX 2012 R2 a umožňují izolaci dat. V běžné situaci má společnost pobočky a data z jedné dceřiné společnosti by neměla být viditelná pro jiné dceřiné společnosti, přestože obě pobočky jsou spravovány ve stejném oddělení IT. Nicméně by byly vyžadovány dodatečné skripty a další správní režie v celém programu pro vytvoření nových oddílů, naplnění je daty a zálohování data oddílu. V cloudu, kde máte přístup k databázové službě Platforma jako služba (PaaS) (Microsoft Azure SQL Database), je mnohem efektivnější použít databázi pro izolační kontejner, než provádět izolaci v programu. Bez ohledu na to, zda je rozdělení dat požadované pro dceřiné společnosti, pro více klientů nebo pouze pro škálování, věříme, že situace je možné vyřešit efektivněji s využitím více instancí aplikace Finance and Operations. |
 | **Nahrazeno jinou funkcí?**   | Odběratelé používající datové oddíly musí použít více instancí aplikace Finance and Operations, pokud je oddělení úrovně databáze kritickým problémem.    |
 | **Ovlivněné oblasti produktu**         | Všechny moduly  |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.  |
@@ -794,7 +793,7 @@ Povolené úložiště příloh v databázi a sdílených složkách souborů po
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Funkce nebyla shledána potřebnou. |
 | **Nahrazeno jinou funkcí?**   | Žádný                                     |
-| **Ovlivněné oblasti produktu**         | Čas a docházka                    |
+| **Ovlivněné oblasti produktu**         | Čas a docházka                    |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.         |
 
 ### <a name="desktop-client"></a>Klient pro stolní počítače
@@ -814,7 +813,7 @@ V aplikaci Dynamics AX 2012 R3 se Retail Modern POS připojoval přímo k datab�
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Přímé připojení k databázi vyžadovalo nižší protokoly zabezpečení a primárně sloužilo k dosahování nejvyšších úrovní výkonnosti. Vzhledem k výkonu a vylepšení zabezpečení, ke kterým došlo v aplikaci Finance and Operations tato funkce nyní způsobuje mnohem více problémů, než řeší. |
 | **Nahrazeno jinou funkcí?**   | Č. V současné době se podporuje pouze standardní komunikace Retail Server.  |
-| **Ovlivněné oblasti produktu**         | Channel DB/Retail Modern POS   |
+| **Ovlivněné oblasti produktu**         | Databáze kanálů/Retail Modern POS   |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.  |
 
 ### <a name="dutch-swift-mt940"></a>Nizozemský SWIFT MT940
@@ -873,7 +872,7 @@ Verifikační transakce nelze generovat pomocí dávky, ale mohou být generová
 | **Důvod pro zrušení/odstranění** | Neexistuje žádný formulář, který by po vygenerování pomocí dávky zachovával a zobrazoval výsledný soubor verifikačních transakcí. |
 | **Nahrazeno jinou funkcí?**   | Verifikační transakce lze i nadále generovat a uživatel může nastavit umístění, kam má být soubor uložen.   |
 | **Ovlivněné oblasti produktu**         | Závazky, Pohledávky, Řízení zásob, Pokladna a banka  |
-| **Stav**                         | Odstraněno od verze Dynamics AX 7.0.    |
+| **Stav**                         | Odstraněno od verze AX 7.0.    |
 
 ### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Export německé platby DTAUS a import výpisu z účtu (souhrny a transakce)
 
@@ -918,7 +917,7 @@ Byly odebrány sestavy, které zahrnují následující položky nabídky: **Sou
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Finanční sestavy Microsoft SQL Server Reporting Services (SSRS) byly nahrazeny funkcemi nástroje Management Reporter a výchozími sestavami. |
-| **Nahrazeno jinou funkcí?**   | Management Reporter (v aktuální verzi aplikace Dynamics AX označena jako **Finanční výkaznictví**)    |
+| **Nahrazeno jinou funkcí?**   | Management Reporter (v aktuální verzi aplikace Dynamics AX označeno jako **Finanční výkaznictví**)    |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha   |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.   |
 
@@ -975,14 +974,14 @@ Aplikace Microsoft Dynamics AX 2012 spravovala neuplatněnou daň z přidané ho
 | **Ovlivněné oblasti produktu**         | Daň   |
 | **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno. |
 
-### <a name="microsoft-outlook-integration"></a>Integrace aplikace Microsoft Outlook
+### <a name="microsoft-outlook-integration"></a>Integrace sady Microsoft Outlook
 
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Tato funkce byla nahrazena integrací serveru Microsoft Exchange. |
+| **Důvod pro zrušení/odstranění** | Tato funkce byla nahrazena integrací Microsoft Exchange Server. |
 | **Nahrazeno jinou funkcí?**   | Ano                                                                            |
-| **Ovlivněné oblasti produktu**         | Prodej a marketing                                                            |
+| **Ovlivněné oblasti produktu**         | Prodej a marketing                                                            |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.                                                 |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Soukromé blokování deníků řízení zásob a skladu
@@ -1037,17 +1036,17 @@ V aplikaci Dynamics AX 2012 R3 může Retail Server fungovat pomocí komunikace 
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Z důvodu nových požadavků na zabezpečení je nyní podporována pouze zabezpečená komunikace pomocí TLS 1.2 (nebo vyšší podle dostupnosti). Samoobslužný instalační program bude automaticky konfigurovat počítač na tuto komunikaci. |
 | **Nahrazeno jinou funkcí?**   | Č. V současné době se podporuje pouze standardní komunikace HTTPS. |
-| **Ovlivněné oblasti produktu**         | Retail Server  |
+| **Ovlivněné oblasti produktu**         | Server maloobchodu  |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0. |
 
 ### <a name="role-center-pages"></a>Stránky pracovní plochy role
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Stránky pracovní plochy rolí byly vytvořeny na zastaralé platformě podnikového portálu, která byla v aktuální verzi aplikace Dynamics AX nahrazena novou platformu webového klienta. |
+| **Důvod pro zrušení/odstranění** | Stránky pracovní plochy rolí byly vytvořeny na zastaralé platformě podnikového portálu, která byla v aktuální verzi aplikace Dynamics AX nahrazena novou platformu webového klienta. |
 | **Nahrazeno jinou funkcí?**   | Nový vzor formulářů v pracovním prostoru nabízí uživatelům možnost návrhu zaměřeného na procesy, který zajišťuje snadný přístup k často používaným úkolům v rámci tohoto procesu.                       |
 | **Ovlivněné oblasti produktu**         | Všechny moduly    |
-| **Stav**                         | Odstraněno od verze Dynamics AX 7.0.   |
+| **Stav**                         | Odstraněno od verze Dynamics AX 7.0   |
 
 ### <a name="sales-tax-jurisdictions"></a>Příslušnosti k dani
 
@@ -1064,7 +1063,7 @@ Služba Sites Services umožňuje vytvářet webové stránky, které rozšiřuj
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Infrastruktura Microsoft Azure používaná aplikací Dynamics AX má nové funkce, které lze použít (například Azure Sites). |
+| **Důvod pro zrušení/odstranění** | Infrastruktura Microsoft Azure používaná aplikací Dynamics AX má nové funkce, které lze použít (například weby Azure). |
 | **Nahrazeno jinou funkcí?**   | Žádný   |
 | **Ovlivněné oblasti produktu**         | Nábor HR, správa případů, požadavek na cenovou nabídku, registrace dodavatele, pracovní prostory pro spolupráci pro příležitosti a kampaně  |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.    |
@@ -1124,8 +1123,7 @@ Aplikace pro tablety Windows 8 poskytovala funkci pro zadání a schválení vý
 |                                                 |                                                                                                          |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | <strong>Důvod pro zrušení/odstranění</strong> |                         Tato funkce byla nahrazena jinou funkcí.                         |
-|  <strong>Nahrazeno jinou funkcí?</strong>  | Management Reporter (v aktuální verzi aplikace Dynamics AX označena jako <strong>Finanční výkaznictví</strong>) |
+|  <strong>Nahrazeno jinou funkcí?</strong>  | Management Reporter (v aktuální verzi aplikace Dynamics AX označeno jako <strong>Finanční výkaznictví</strong>) |
 |     <strong>Ovlivněné oblasti produktu</strong>     |                                              Hlavní kniha                                              |
-|             <strong>Stav</strong>             |                                      Odstraněno od verze Dynamics AX 2012.                                      |
-
+|             <strong>Stav</strong>             |                                      Odstraněno od verze Dynamics AX 2012                                      |
 

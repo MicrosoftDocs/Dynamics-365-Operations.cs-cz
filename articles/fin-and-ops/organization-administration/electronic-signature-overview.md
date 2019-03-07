@@ -1,13 +1,13 @@
 ---
-title: "Elektronické podpisy"
-description: "Tento článek obsahuje přehled informací o elektronických podpisech a o možnostech jejich použití v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Elektronické podpisy
+description: Tento článek obsahuje přehled informací o elektronických podpisech a o možnostech jejich použití v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: maertenm
 manager: AnnBe
 ms.date: 08/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 676510ef503d51d914ba762e7ac15e2c4811c6ba
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325657"
 ---
-
 # <a name="electronic-signatures"></a>Elektronické podpisy
 
 [!include [banner](../includes/banner.md)]
@@ -39,9 +38,9 @@ Elektronický podpis potvrzuje identitu osoby, která spouští nebo schvaluje u
 Elektronické podpisy jsou vyžadovány předpisy v několika průmyslových odvětvích, například ve farmaceutickém, potravinářském, leteckém a zbrojním průmyslu. Jsou rovněž nezbytnou podmínkou souladu s předpisy směrnice CFR 21, část 11, kterou vydal Úřad pro kontrolu potravin a léků (FDA) ve Spojených státech amerických.
 
 > [!NOTE]
-> Elektronický podpis sám o sobě není totéž jako podpis digitální. Elektronický podpis je prostou náhražkou podpisu psaného rukou, zatímco digitální podpis je doplněn o další bezpečnostní opatření. Digitální podpis vám může pomoci zjistit, zda s daty neoprávněně nemanipuloval jiný uživatel nebo proces. Digitální podpis lze rovněž ověřit, přičemž vlastník certifikátu použitého k podepsání dat nemůže platnost ověření popřít. Jak je popsáno dále, v aplikaci Microsoft Dynamics 365 for Finance and Operations jsou součástí elektronických podpisů i vestavěné funkce podpisů digitálních.
+> Elektronický podpis sám o sobě není totéž jako podpis digitální. Elektronický podpis je prostou náhražkou podpisu psaného rukou, zatímco digitální podpis je doplněn o další bezpečnostní opatření. Digitální podpis vám může pomoci zjistit, zda s daty neoprávněně nemanipuloval jiný uživatel nebo proces. Digitální podpis lze rovněž ověřit, přičemž vlastník certifikátu použitého k podepsání dat nemůže platnost ověření popřít. Jak je popsáno dále, v aplikaci Microsoft Dynamics 365 for Finance and Operations jsou součástí elektronických podpisů i vestavěné funkce podpisů digitálních.
 
-## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektronické podpisy v aplikaci Microsoft Dynamics 365 for Finance and Operations
+## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektronické podpisy v Dynamics 365 for Finance and Operations
 
 V aplikaci Finance and Operations můžete používat elektronické podpisy pro důležité obchodní procesy. Některé procesy obsahují vestavěné prvky pro práci s elektronickými podpisy. Kromě toho můžete vytvářet vlastní požadavky na podpisy, připojené k libovolné databázové tabulce a poli.
 
@@ -111,4 +110,3 @@ Chcete-li určit schvalovatele, postupujte takto.
 1. Na stránce **Možnosti** na kartě **Účty** klepněte na tlačítko **Určit schvalovatele**.
 2. V poli **ID schvalujícího uživatele** vyberte ID uživatele, který musí podepsat změny provedené jiným uživatelem.
 3. V poli **Podepsat pro ID uživatele** vyberte ID uživatele, jehož změny musí být podepsány.
-

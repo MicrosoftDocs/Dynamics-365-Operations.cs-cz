@@ -1,31 +1,30 @@
 ---
-title: "Tvorba předmětů servisu"
-description: "Servisní předměty jsou majetek a produkty zákazníka, u kterých je lze provádět servisní úkony."
+title: Tvorba předmětů servisu
+description: Servisní předměty jsou majetek a produkty zákazníka, u kterých je lze provádět servisní úkony.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4675ad83d5e569f2286ce667acd59ed294dc5d82
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: 406198196a3da2583002b747f177fcc44c4fdba1
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331453"
 ---
-
 # <a name="create-service-objects"></a>Tvorba předmětů servisu  
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,6 @@ Servisní předměty jsou majetek a produkty zákazníka, u kterých je lze prov
 ## <a name="related-topics"></a>Související témata
 
 [Předměty servisu](service-objects.md)
-
 
 
 

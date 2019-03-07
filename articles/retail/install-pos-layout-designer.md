@@ -1,13 +1,13 @@
 ---
-title: "Instalace návrháře rozložení pokladního místa Retail (POS)"
-description: "Můžete použít předdefinovaného návrháře k navržení jiných rozložení Retail Modern POS (MPOS) a Cloud POS v režimu rozložení šířku nebo výšku, pro obchody, registrační pokladny, pokladníky a manažery."
+title: Instalace návrháře rozložení pokladního místa Retail (POS)
+description: Můžete použít předdefinovaného návrháře k navržení jiných rozložení Retail Modern POS (MPOS) a Cloud POS v režimu rozložení šířku nebo výšku, pro obchody, registrační pokladny, pokladníky a manažery.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 4c647f49101dcbbe7dd1feac2dd9aad5c6dd5bcc
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327635"
 ---
-
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Instalace návrháře rozložení pokladního místa Retail (POS)
 
 [!include [banner](includes/banner.md)]
@@ -37,11 +36,11 @@ Rozložení grafického návrhu pro MPOS nebo Cloud POS řídí rozložení pokl
 
 ## <a name="install-the-one-click-designer"></a>Instalace předdefinovaného návrháře
 
-1. V aplikaci Microsoft Dynamics 365 for Retail přejděte v nabídce vlevo nahoře na položky **Maloobchodní** **a velkoobchodní prodej** &gt; **Instalace kanálu** &gt; **Nastavení POS** &gt; **POS** &gt; **Rozložení obrazovky**.
+1. V aplikaci Microsoft Dynamics 365 for Retail přejděte z nabídky vlevo nahoře na položky **Maloobchod** **a obchodování** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **POS** &gt; **Rozložení obrazovky**.
 2. Vyberte jakékoli rozložení, které má typ aplikace **Moderní POS pro Windows** nebo **Cloud POS**, a klepněte na tlačítko **Návrhář rozložení**.
 3. Na panelu oznámení, který se zobrazí v dolní části okna Internet Explorer, klepněte na tlačítko **Otevřít** a spusťte tak instalaci předdefinovaného návrháře. (Panel oznámení se v jiných prohlížečích může zobrazit v různých umístěních.)
 4. V poli se zprávou **Aplikace spuštěna - upozornění zabezpečení**, které se zobrazí, klikněte na tlačítko **Spustit** k instalaci hostitele maloobchodního návrháře. Indikátor průběhu zobrazí průběh instalace.
-5. Po dokončení instalace na stránce **Přihlásit** zadejte uživatelské jméno a heslo pro aplikaci Microsoft Dynamics 365 for Retail a kliknutím na tlačítko **Přihlásit se** spusťte modul návrháře.
+5. Po dokončení instalace zadejte na stránce **Přihlásit** své uživatelské jméno a heslo aplikace Microsoft Dynamics 365 for Retail a klikněte na tlačítko **Přihlásit** pro spuštění návrháře.
 6. Po ověření pověření a spuštění návrháře můžete začít navrhovat vlastní rozložení nebo změnit existující rozložení.
 
     [![Rozložení předdefinovaného návrháře](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -52,16 +51,15 @@ Rozložení grafického návrhu pro MPOS nebo Cloud POS řídí rozložení pokl
 
     **Řešení:**
 
-    - V aplikaci Internet Explorer se ujistěte, že je pro tento web blokování zakázáno. Klepněte na **Nastavení** &gt; **Možnosti** &gt; **Ochrana osobních údajů** &gt; **Najít blokování automaticky otevíraných oken** a změňte nastavení, pokud je požadována změna.
-    - V aplikaci Internet Explorer přidejte adresu URL aplikace Dynamics 365 for Retail do seznamu důvěryhodných webů. Klikněte na **Nastavení** &gt; **Možnosti** &gt; **Zabezpečení** &gt; **Důvěryhodné weby** &gt; **Weby** &gt; **Přidat**.
+    - V prohlížeči Internet Explorer se ujistěte, že je pro tento web blokování zakázáno. Klepněte na **Nastavení** &gt; **Možnosti** &gt; **Ochrana osobních údajů** &gt; **Najít blokování automaticky otevíraných oken** a změňte nastavení, pokud je požadována změna.
+    - V prohlížeči Internet Explorer přidejte URL adresu Dynamics 365 for Retail do svých důvěryhodných webů. Klikněte na **Nastavení** &gt; **Možnosti** &gt; **Zabezpečení** &gt; **Důvěryhodné weby** &gt; **Weby** &gt; **Přidat**.
 
 - Program nelze spustit, a jste vyzváni, abyste kontaktovali dodavatele.
 
-    **Řešení:** V aplikaci Internet Explorer přidejte adresu URL aplikace Dynamics 365 for Retail do seznamu důvěryhodných webů. Klikněte na **Nastavení** &gt; **Možnosti** &gt; **Zabezpečení** &gt; **Důvěryhodné weby** &gt; **Weby** &gt; **Přidat**.
+    **Řešení:** V prohlížeči Internet Explorer přidejte URL adresu Dynamics 365 for Retail do svých důvěryhodných webů. Klikněte na **Nastavení** &gt; **Možnosti** &gt; **Zabezpečení** &gt; **Důvěryhodné weby** &gt; **Weby** &gt; **Přidat**.
 
 **Známý problém:** návrhář správně nefunguje v prohlížečích Google Chrome a Mozilla Firefox. Na opravě tohoto problému pracujeme.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace, stažení, instalace a aktivace Retail Modern POS](retail-modern-pos-device-activation.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "Řízení a účetnictví projektů"
-description: "Funkci řízení projektu a účetnictví lze použít v několika odvětvích k poskytování služeb, výrobě produktů nebo dosažení výsledků."
+title: Řízení a účetnictví projektů
+description: Funkci řízení projektu a účetnictví lze použít v několika odvětvích k poskytování služeb, výrobě produktů nebo dosažení výsledků.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311328"
 ---
-
 # <a name="project-management-and-accounting"></a>Řízení a účetnictví projektů
 
 [!include [banner](../includes/banner.md)]
@@ -206,7 +205,7 @@ Můžete objednat položky ze skladu společnosti pro spotřebu na projektu. Neb
 
 Způsob objednání zboží závisí na tom, odkud objednáváte:
 
--   Chcete-li objednat položky ze skladu společnosti, je nutné objednávku zadat jako požadavek na položku. Při použití stránky **Požadavky na položku** je možné požadavek nastavit tak, abyste položky přijímali jako součást dodávek. To znamená, že spotřebu množství položek můžete posunout, dokud tyto položky nebudou vyžadovány.
+-   Chcete-li objednat položky ze skladu společnosti, je nutné objednávku zadat jako požadavek na položku. Při použití stránky **Požadavky na položku** je možné požadavek nastavit tak, abyste položky přijímali jako součást dodávek.To znamená, že spotřebu množství položek můžete posunout, dokud tyto položky nebudou vyžadovány.
 -   Pro objednání položky od externího dodavatele je nutné tuto objednávku vytvořit jako nákupní objednávku na stránce **Nákupní objednávka**.
 
 > [!NOTE] 
@@ -301,7 +300,7 @@ Na základě vašeho nastavení můžete vytvořit prognózu cashflow pro vybran
 -   **Datum projektu:** 5. březen 2012.
 -   **Datum faktury:** 31. březen 2012. Toto datum závisí na četnosti faktur. V tomto příkladu nastavujete četnost faktur na aktuální měsíci. Z toho vyplývá, že všechny transakce, které jsou zaúčtované v měsíci březnu, budou fakturovány v poslední den v měsíci.
 -   **Datum splatnosti:** 14. duben 2012. Toto datum je stanoveno podle platebních podmínek nastavených pro projekt. V tomto příkladu jste vybrali platební podmínky o délce 14 dní. 14 dní se tedy přidá k datu faktury, aby se dosáhlo data splatnosti 14. dubna 2012.
--   **Očekávané datum platby prodeje:** 27. duben 2012. Toto datum se vypočítává přičtením počtu dnů v poli **Obecné pojistné dny** na stránce **Parametry modulu Řízení a účetnictví projektu** k počtu dnů v poli **Jednotlivé pojistné dny** na stránce **Projektové smlouvy**, a poté přičtením součtu k celkovému počtu dnů v poli **Datum splatnosti**. V tomto příkladu jste zadali hodnotu **3** do pole **Obecné pojistné dny** a hodnotu **10** do pole **Jednotlivé pojistné dny**. 13 dní se tedy přičte k datu splatnosti, aby se dosáhlo předpokládaného data platby prodeje 27. dubna 2012.
+-   **Očekávané datum platby prodeje:** 27. duben 2012. Toto datum se vypočítává přičtením počtu dnů v poli **Obecné pojistné dny** na stránce **Parametry modulu Řízení a účetnictví projektu**  k počtu dnů v poli **Jednotlivé pojistné dny** na stránce **Projektové smlouvy**, a poté přičtením součtu k celkovému počtu dnů v poli **Datum splatnosti**. V tomto příkladu jste zadali hodnotu **3** do pole **Obecné pojistné dny** a hodnotu **10** do pole **Jednotlivé pojistné dny**. 13 dní se tedy přičte k datu splatnosti, aby se dosáhlo předpokládaného data platby prodeje 27. dubna 2012.
 
 Obecné pojistné dny mohou buď nahradit jednotlivé pojistné dny, nebo je lze přičíst k jednotlivým pojistným dnům:
 
@@ -441,4 +440,3 @@ Po výpočtu výkazu můžete zobrazit následující informace na různých kar
 -   **Spotřeba** – informace o spotřebě hodin, výdajů, položek a mzdových transakcí.
 -   **Faktura** – informace o fakturách a fakturaci na účet.
 -   **Hodinová sazba** – hodinové sazby za hodiny zaúčtované na účty výnosů a nákladů.
-

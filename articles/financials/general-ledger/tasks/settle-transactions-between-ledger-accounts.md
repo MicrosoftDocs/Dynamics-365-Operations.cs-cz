@@ -1,13 +1,13 @@
---- 
-title: "Vyrovnání transakcí mezi účty hlavní knihy"
-description: "Tato procedura ukazuje, jak vyrovnat transakce mezi účty hlavní knihy a jak zrušit vyrovnání hlavní knihy."
+---
+title: Vyrovnání transakcí mezi účty hlavní knihy
+description: Tato procedura ukazuje, jak vyrovnat transakce mezi účty hlavní knihy a jak zrušit vyrovnání hlavní knihy.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
 ms.openlocfilehash: 4aff64fa1c017f295752e913de7fb320f0662ef8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/03/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325818"
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Vyrovnání transakcí mezi účty hlavní knihy
 
@@ -48,5 +48,4 @@ Tato procedura ukazuje, jak vyrovnat transakce mezi účty hlavní knihy a jak z
 6. Filtr lze použít ke snadnému vyhledání transakce v seznamu.
 7. Klepněte na Vyrovnání hlavní knihy.
 8. Označte v seznamu vybraný řádek.
-
 

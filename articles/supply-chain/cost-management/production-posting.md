@@ -1,13 +1,13 @@
 ---
-title: "Zaúčtování výroby"
-description: "Tento článek obsahuje informace o různých typech účetních zápisů ve výrobním procesu."
+title: Zaúčtování výroby
+description: Tento článek obsahuje informace o různých typech účetních zápisů ve výrobním procesu.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0b44d57fe89ef7ae3def835865e4da80c260f907
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 413bf76b40ec1e6d00322605900a71f163c9396c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332396"
 ---
-
 # <a name="production-posting"></a>Zaúčtování výroby
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,6 @@ V nabídce **Parametry modulu řízení výroby**, lze použít pole **Zaúčtov
 -   **Skupina účtování výroby** – Použijte účty hlavní knihy, které jsou nastaveny pro výrobní skupiny pro spotřebu materiálu a času. Skupiny účtování výroby jsou přidruženy k uvolněným produktům a zkopírovány do výrobní zakázky při vytvoření objednávky. Zaúčtování výrobních zakázek bude pak probíhat prostřednictvím skupin účtování výroby, které jsou přidruženy k výrobní zakázce.
 
 **Poznámka:** Jestliže byla použita standardní metoda výpočtu nákladů na dokončenou položku, projeví se tento fakt i ve výsledných transakcích. Jestliže je rozdíl mezi skutečnými náklady a náklady vypočtenými standardní metodou, tento rozdíl se zaúčtuje na účet vykazující zisk nebo ztrátu.
-
 
 
 

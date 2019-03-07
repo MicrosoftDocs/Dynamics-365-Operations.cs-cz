@@ -1,13 +1,13 @@
 ---
-title: "Konfigurace ručních úloh ve workflow"
-description: "Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního úkolu."
+title: Konfigurace ručních úloh ve workflow
+description: Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního úkolu.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 669fce3ddade4d6e0a130da2420ab33ca4ff4671
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309741"
 ---
-
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurace ručních úloh ve workflow
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,7 @@ Pomocí následujícího postupu určíte, komu má být ruční úkol přiřaze
     </tr>
     <tr>
     <td>Uživatel</td>
-    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Konkrétní uživatelé Microsoft Dynamics 365 for Finance and Operations</td>
     <td>
     <ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
@@ -383,4 +382,3 @@ Po přiřazení ruční úlohy uživateli musí uživatel danou úlohu zpracovat
 5. Chcete-li uživateli umožnit, aby úlohu postoupil jinému uživateli, zaškrtněte políčko **Delegovat**.
 6. Chcete-li uživateli umožnit, aby úlohu přeřadil jinému uživateli ve frontě pracovních položek, označte pole **Znovu přiřadit**.
 7. Chcete-li uživateli umožnit, aby úlohu přeřadil do fronty pracovních položek, označte pole **Uvolnit**. Jiný uživatel pak může úkol dokončit.
-

@@ -1,13 +1,13 @@
 ---
-title: "Registrace pro provádění výroby"
-description: "Toto téma popisuje klíčové pojmy a termíny, které je třeba pochopit ke konfiguraci a používání provádění výroby."
+title: Registrace pro provádění výroby
+description: Toto téma popisuje klíčové pojmy a termíny, které je třeba pochopit ke konfiguraci a používání provádění výroby.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1bbcd7ebea869f921c2eadd05e64509ff9246aa4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e5d4ee2fb1cd58107043939c3721fd857909f16b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318159"
 ---
-
 # <a name="registration-for-manufacturing-execution"></a>Registrace pro provádění výroby
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Zaměstnanci mohou provádět různé typy registrací spuštění výroby v rá
 -   **Záznam přestávek** (k dispozici s časem a docházkou) – během pracovního dne zaměstnanci mohou registrovat, své opuštění pracovní stanici kvůli přestávce. Můžete nastavit několik typů přestávky. Když se pracovník vrátí a přihlásí se znovu, systém zaregistruje že pracovník je zpět a zastaví registraci přestávky.
 -   **Registrace nepřímých aktivit** (k dispozici s časem a docházkou) – nepřímé aktivity jsou nevýrobní aktivity, kterých se mohou zaměstnanci účastnit během pracovního dne, jako například schůzky oddělení, schůzky týmu nebo úloha údržby, která se provádí v dílně. Zaměstnanci mohou provádět registraci nepřímých aktivit, které jsou nastaveny.
 -   **Registrace přesčasu** (k dispozici s časem a docházkou) – pracovníci, kteří byli požádáni o delší pracovní dobu, mohou určit, zda by další hodiny měly být registrovány s pružnou pracovní dobou nebo jako placený přesčas.
-
 
 
 

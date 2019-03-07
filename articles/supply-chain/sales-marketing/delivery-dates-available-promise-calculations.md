@@ -1,13 +1,13 @@
 ---
-title: "Příslib objednávky"
-description: "Tento článek poskytuje informace o příslibech objednávky. Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet."
+title: Příslib objednávky
+description: Tento článek poskytuje informace o příslibech objednávky. Příslib objednávky pomáhá spolehlivě přislíbit odběratelům data dodání a poskytuje vám flexibilitu, se kterou můžete tato data dodržet.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ad70e94521fdb8c6d3f9a76a84aa9da5759fcf89
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 039bc5c572d204d9fa3e10a9f33cb4f4eb00b31c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312340"
 ---
-
 # <a name="order-promising"></a>Příslib objednávky
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,6 @@ Vytvořte řádek prodejní objednávky pro daný produkt a jak množství zadej
 Vzhledem k tomu, že metoda řízení data dodání je ATP, vypočítají se data ATP, aby se našlo nejbližší možné datum expedice. Na základě nastavení je zohledněna zpožděná nákupní objednávka a prodejní objednávka a výsledné množství ATP pro aktuální datum je 0. Zítra, kdy je očekáváno přijetí zpožděné nákupní objednávky, se množství ATP vypočítá jako větší než 0 (v tomto případě bude mít hodnotu 125). Nicméně za 10 dní od dneška, kdy je očekáváno přijetí další nákupní objednávky na 100 kusů, bude množství ATP větší než 150.  
 
 Proto je datum expedice na základě výpočtu hodnoty ATP nastaveno na 10 dní od tohoto okamžiku. Odběrateli tedy můžete sdělit, že požadované množství lze dodat za 10 dní od tohoto okamžiku.
-
 
 
 

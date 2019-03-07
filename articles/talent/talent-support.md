@@ -1,13 +1,13 @@
 ---
-title: "Získání podpory pro Talent"
-description: "Toto téma vysvětluje, jak získat nápovědu k aplikaci Dynamics 365 for Talent."
+title: Získání podpory pro Talent
+description: Toto téma vysvětluje, jak získat pomoc s Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 1bf37d65cd8ce6a98fc2d2fb11ae9587cf6958a3
 ms.openlocfilehash: 9b2d7159b458b6f3b2cbb3271210c10ab486f496
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303653"
 ---
-
 # <a name="get-support-for-talent"></a>Získání podpory pro Talent
 
 [!include [banner](includes/banner.md)]
@@ -55,4 +54,3 @@ Chcete-li získat podporu pro aplikace Attract a Onboard, použijte zdroje v ná
 | Nahlásit problém                                                        | Vyberte ikonu **?** v nabídce a zvolte možnosti k nahlášení problému. Zadejte problém do popisu a přidejte svou e-mailovou adresu, pokud chcete dále reagovat na ohlášený problém.                                                                                           |
 | Získání nápovědy k dotazům týkajících se licencí pro Talent                         | Obraťte na partnera nebo prodejce společnosti Microsoft.                                                                                                                                                                                                                                        |
 | Požadavek na nové funkce a funkcionality v aplikacích Attract a Onboard | Klikněte na ikonu **?** a zvolte **Nápady**, nebo použijte následující odkazy pro zobrazení, hledání, hlasování nebo přidání nových nápadů: [Attract](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract) nebo [Onboard](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard). |
-

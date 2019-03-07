@@ -1,13 +1,13 @@
 ---
-title: "Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)"
-description: "Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX 7.0 nové nebo změněné. Tato verze obsahuje funkce pro obě platformy a byla vydána v únoru 2016."
+title: Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics AX 7.0. Tato verze obsahuje funkce pro obě platformy a byla vydána v únoru 2016.
 author: sericks007
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334880"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX 7.0 nové nebo změněné. Tato verze obsahuje funkce pro obě platformy a byla vydána v únoru 2016.
+Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics AX 7.0. Tato verze obsahuje funkce pro obě platformy a byla vydána v únoru 2016.
 
 ## <a name="cost-management"></a>Správa nákladů
 
@@ -119,7 +118,7 @@ Tato funkce pracuje nezávisle na metodě výpočtu nákladů, která je přiřa
 | K vývoji svých řešení použijte aplikaci Microsoft Visual Studio. | Microsoft MorphX je hlavní vývojové prostředí, ale některé části vývoje probíhají v aplikaci Visual Studio. | Visual Studio je jediné vývojové prostředí. | Dodržuje známé koncepty Dynamics AX 2012 a bez problémů je adaptuje prostředí a modelům aplikace Visual Studio. Zajišťuje standardní interakci s jinými jazyky a projekty v prostředí .NET. |
 | Kompilovat jazyk Common Intermediate Language (CIL) pro všechny funkce. | X++ je kompilován na p-kód. | Zcela nový kompilátor jazyka X ++ generuje jazyk CIL pro všechny funkce. Jazyk CIL je stejný převodní jazyk, který je použit i jinými jazyky vycházejícími z prostředí .NET. | Jazyk CIL je rychlejší, může efektivněji odkazovat na třídy ve spravované dynamické knihovně (DLL) a lze jej spustit na velkém množství nástrojů v prostředí .NET. |
 | Vestavěné sestavy a vizualizace analytických nástrojů v klientovi aplikace Microsoft Dynamics AX. | Není k dispozici. | Vytváření mimořádně intuitivních a plynulých vizualizací. | Poskytuje podklady k rozhodnutím, které vychází z analytických nástrojů. |
-| Integrace s aplikací Microsoft Office. | Není k dispozici. | Mezi nové funkce patří aplikace Excel Data Connector, stránka **Návrhář sešitu**, rozhraní API exportu a správa dokumentů. | Můžete vytvořit řešení produktivity pro své koncové uživatele. |
+| Integrujte s aplikací Microsoft Office. | Není k dispozici. | Mezi nové funkce patří aplikace Excel Data Connector, stránka **Návrhář sešitu**, rozhraní API exportu a správa dokumentů. | Můžete vytvořit řešení produktivity pro své koncové uživatele. |
 | Automatizace sestavování, testování a nasazení. | Částečně k dispozici | Nasazení topologie pro vývojáře pomocí nástrojů Vývojář a Build VM. Automatická konfigurace nástroje Build VM, sestavování modulů z aplikace Visual Studio Online (VSO) a spouštění testů. Je podporována kompilace a odkazy jazyka C\# a X++. | Snížením nákladů a nutného úsilí při testování a ověřování se zvýší produktivita vývojářů. |
 | Úprava překrývání vrstev a rozšíření. | Rozšíření nejsou k dispozici. | Aktuální verze aplikace Dynamics AX má nový model přizpůsobení. | Můžete upravit zdrojový kód a metadata prvků modelu, které jsou odeslány společnosti Microsoft nebo partnerské třetí straně společnosti Microsoft. |
 | Sestavování nových ovladačů a prvků uživatelského rozhraní pomocí jazyka X++ a moderního webového rozhraní. | Vlastní ovládací prvky jsou založeny na externích architekturách, jako je například Microsoft ActiveX nebo Windows Presentation Foundation (WPF). | Vytvoření ovládacích prvků je v aktuální verzi snadnější. Architekturu X++ lze použít pro chování aplikace a obchodní logiku; klient založený na jazyku HTML/JavaScript umožňuje moderní vizualizace. | Ovládací prvky lze navrhnout tak, aby vypadaly a chovaly se stejně jako předpřipravené (OOB) ovládací prvky Dynamics AX. |
@@ -141,7 +140,7 @@ Tato funkce pracuje nezávisle na metodě výpočtu nákladů, která je přiřa
 </thead>
 <tbody>
 <tr>
-<td>Export účetních struktur do aplikace Microsoft Excel.</td>
+<td>Exportujte účetní struktury do Microsoft Excel.</td>
 <td>Není k dispozici.</td>
 <td>Nyní můžete vybrat účetní strukturu a exportovat ji do aplikace Excel.</td>
 <td>Mnozí zákazníci žádali o možnost exportu účetních struktur do aplikace Excel za účelem snazšího filtrování.</td>
@@ -218,9 +217,9 @@ Tato funkce pracuje nezávisle na metodě výpočtu nákladů, která je přiřa
 <td>Uživatel může vybrat úroveň podrobností a nastavení stránky se sestavou pomocí možnosti Tisk ve finanční sestavě v klientovi Dynamics AX.</td>
 <td>Tištěné sestavy se tisknou tak, jak to uživatelé očekávají, namísto tisku webové stránky.</td>
 </tr><tr>
-<td>Analýza finančních dat pomocí obsahu Power BI „Sledování finanční výkonnosti“.</td>
+<td>Analýza finančních dat pomocí obsahu Power BI Sledování finanční výkonnosti.</td>
 <td>Není k dispozici.</td>
-<td>Na stránce PowerBI.com vyberte možnost <strong>Načíst data</strong> a poté vyberte balíček obsahu <strong>Dynamics AX – finanční výkonnost</strong>. Zadejte adresu URL koncového bodu Dynamics AX, aby se data zobrazovala na řídicím panelu.</td>
+<td>Na stránce PowerBI.com vyberte možnost <strong>Načíst data</strong> a poté vyberte balíček obsahu <strong>Dynamics AX – Finanční výkonnost</strong>. Zadejte adresu URL koncového bodu Dynamics AX, aby se data zobrazovala na řídicím panelu.</td>
 <td>Třemi až čtyřmi kliknutími mohou organizace nasadit do provozu řídicí panel Power BI obsahující důležitá finanční data. Obsah lze přizpůsobit podle požadavků organizace.</td>
 </tr>
 <tr>
@@ -282,7 +281,7 @@ Tato funkce pracuje nezávisle na metodě výpočtu nákladů, která je přiřa
 </tr>
 <tr>
 <td>Produktivita pomocí nového záznamníku úkolů.</td>
-<td>Záznamník úkolů AX 2012 vyžaduje přímý přístup k počítači se serverem aplikačního objektového serveru (AOS) a vyšší oprávnění a neposkytuje žádné možnosti úpravy.</td>
+<td>Záznamník úkolů AX 2012 vyžaduje přímý přístup k počítači se serverem aplikačního objektového serveru (AOS) a vyšší oprávnění a neposkytuje žádné možnosti úpravy.</td>
 <td>Nový záznamník úkolů lze použít přímo z webové klienta. Přístup k záznamníku úkolů nevyžaduje oprávnění správce. Zaznamenané kroky lze zobrazit přímo při záznamu, byly zavedeny nové možnosti úprav a záznamník úkolů podporuje kromě stávajících scénářů modelování podnikových procesů (BPM) i další scénáře.</td>
 <td>Nový záznamník úkolů nabízí jednodušší a efektivnější nové funkce v aplikaci Dynamics AX. Některé z těchto funkcí jsou k dispozici už nyní a další budou následovat v budoucnosti.</td>
 </tr>
@@ -322,7 +321,7 @@ Tato funkce pracuje nezávisle na metodě výpočtu nákladů, která je přiřa
 <tr>
 <td>Přístup k procesní nápovědě (průvodce úkolem) a rámcovým tématům kliknutím na tlačítko <strong>Nápověda</strong>.</td>
 <td>Systém nápovědy aplikace AX 2012 odkazuje na témata ve formátu HTML, která jsou uložena na místním webovém serveru. Zákazníci a partneři si mohou vytvářet svou vlastní nápovědu.</td>
-<td>Systém nápovědy v aktuální verzi aplikace Dynamics AX zobrazuje průvodce úkolem, kteří jsou uloženi v BPM služby Microsoft Dynamics Lifecycle Services (LCS). Systém nápovědy také zobrazuje témata z webu dokumentů společnosti Microsoft. Další informace naleznete v tématu <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Nápověda k aplikaci Dynamics AX – začínáme</a> a <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Nový průvodce úkolem je k dispozici (únor 2016)</a>.</td>
+<td>Systém nápovědy v aktuální verzi aplikace Dynamics AX zobrazuje průvodce úkolem, kteří jsou uloženi v BPM služby Microsoft Dynamics Lifecycle Services (LCS). Systém nápovědy také zobrazuje témata z webu dokumentů společnosti Microsoft. Další infirmace uvádí nápověda pro <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Dynamics AX Help – začínáme</a> a <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Dostupní nový průvodci záznamem úloh (únor 2016)</a>.</td>
 <td>Průvodci úkolem vás interaktivním způsobem provedou kroky daného úkolu nebo obchodního procesu. Můžete stahovat a upravovat průvodce úkoly, které společnost Microsoft poskytuje. Téma nabízí rychlejší a pružnější způsob vytváření, dodávání a aktualizace dokumentace k produktu. Díky tomu pomáhá zajistit, že budete mít přístup k aktuálním technickým informacím.</td>
 </tr>
 </tbody>
@@ -550,7 +549,7 @@ Nebyly přidány následující nové funkce.
 | Může uživatele upozornit na to, že prodejní objednávka nebo výrobní zakázka nejsou připraveny k dodání k naplánovanému datu. | Upozornění, které jsou vytvořena na základě hlavního plánování, se nazývají *termínové zprávy*. *Termíny* jsou smlouvy mezi dvěma stranami nákupu nebo prodeje majetku za cenu, která je sjednána dnes (*termínová cena*), i když k dodání a platbě může dojít v budoucnu (*datum dodání*). | *Termínové zprávy* a *data termínů* byly přejmenovány na *vypočtená zpoždění* a *zpožděná data*. | Pojmy používané v aplikaci AX 2012 byly nepřesné a vedly k nesprávným překladům. |
 | Získání rychlého přehledu o stavu průběhu hlavního plánování, naléhavých plánovaných objednávkách a plánovaných objednávkách, které mají za následek zpoždění. | Informace jsou k dispozici, ale jsou roztříštěny v několika formulářích. | Pracovní prostor **Hlavní plánování** nabízí přehledné informace o dokončení posledního průběhu hlavního plánování a o tom, zda došlo k chybám, jaké jsou naléhavé plánované objednávky a které objednávky způsobují zpoždění. | Výhodou pracovního prostoru je přehlednost. Relevantní informace jsou shromážděny a mohou pomoct s hlavním plánováním a zvýšením produktivity. |
 | Použití aplikace Excel k aktualizace prognóz poptávky. | Není k dispozici. | Při zadávání, aktualizaci a odstraňování prognóz poptávky můžete využít výhod bezproblémové integrace s aplikací Excel. | Je tím zvýšena efektivita a produktivita. |
-| Umožňuje odhadovat budoucí poptávku a vytvářet prognózy poptávky na základě historických dat transakcí. | V aplikaci Microsoft Dynamics AX 2012 R3 jsou k vytvoření předpovědi prognózy poptávky použity modely prognózy ze služby Microsoft SQL Server Analysis Service. | Odhadování budoucí poptávky pomocí výkonu a rozšiřitelnosti cloudové služby Microsoft Azure Machine Learning. Snadno se používá a ve službě Machine Learning můžete modely prognóz rozšířit tak, aby splňovaly požadavky odběratelů. Služba provádí výběr nejlépe odpovídajícího modelu a nabízí klíčové indikátory výkonnosti (KPI), které lze použít k výpočtu přesnosti prognózy. | Generování přesnějších prognóz pomocí technik služby Machine Learning. |
+| Umožňuje odhadovat budoucí poptávku a vytvářet prognózy poptávky na základě historických dat transakcí. | V Microsoft Dynamics AX 2012 R3 modely prognózy v Microsoft SQL Server Analysis Service slouží k vytváření prognózy předpovědi poptávky. | Odhadování budoucí poptávky pomocí výkonu a rozšiřitelnosti cloudové služby Microsoft Azure Machine Learning. Snadno se používá a ve službě Machine Learning můžete modely prognóz rozšířit tak, aby splňovaly požadavky odběratelů. Služba provádí výběr nejlépe odpovídajícího modelu a nabízí klíčové indikátory výkonnosti (KPI), které lze použít k výpočtu přesnosti prognózy. | Generování přesnějších prognóz pomocí technik služby Machine Learning. |
 | Optimalizace data objednávky a množství na základě grafického znázornění souvisejících akcí z průběhu hlavního plánování. | Přehledový graf akcí je k dispozici, ale obsahuje všechny související akce. Jakmile jsou akce použity, okamžitě zmizí ze zobrazení. | Graf akcí je přehlednější. Disponuje možnosti, kterými lze zobrazit pouze použité akce a přímo související akce. Jakmile jsou akce použity, sníží se jejich jas, avšak zůstanou i nadále zobrazeny. Tím je zaručena přehlednost. Do grafu akcí jsou přidány další informace, aby se data zobrazila na jedné stránce. | Budete se moci soustředit pouze na relevantní akce, což se projeví zvýšením produktivity. |
 
 ## <a name="procurement-and-sourcing"></a>Zásobování a zdroje
@@ -559,7 +558,7 @@ Nebyly přidány následující nové funkce.
 |------------------|------------------|-----------------|------------------------|
 | Pomocí pracovního prostoru **Příprava nákupní objednávky** získáte rychlý přehled o stavu připravovaných nákupních objednávek. | Nepodporováno | Pracovní prostor **Příprava nákupní objednávky** nabízí přehledné zobrazení objednávek od chvíle, kdy byly vytvořeny jako koncept a bylo zahájeno jejich sledování, přes různé stavy workflowu až po potvrzení. | Pracovníci nákupního oddělení již nemusí vyhledávat informace na několika stránkách, protože přehled nyní získají na jednom pracovním prostoru. |
 | Pomocí pracovního prostoru **Příjemka a zpracování nákupní objednávky** získáte rychlý přehled o nákupních objednávkách s čekající příjemkou a usnadníte si zpracování. | Nepodporováno | Pracovní prostor **Příjemka a zpracování nákupní objednávky** nabízí přehled o potvrzených nákupních objednávkách, které čekají na příjemku nebo dodávku. Na pracovním prostoru se nachází seznam příjemek po splatnosti a čekajících příjemkách, což usnadní aktivní kontrolu a zpracování ze strany dodavatele. Kromě toho je na pracovním prostoru také seznam nákupních objednávek, u kterých proběhla registrace doručení pro sklad, aby bylo zaručeno, že bude příjem zaúčtován. Vratky nákupních objednávek, které dosud nebyly expedovány, jsou k dispozici ke kontrole. | Pracovníci oddělení nákupu budou těžit z přehlednosti informací na pracovním prostoru. Relevantní informace jsou shromážděny a mohou pomoct se zpracováním a zvýšením produktivity. |
-| Odeslat nákupní objednávky za účelem potvrzení na portál dodavatele hostovaný v klientovi aplikace Dynamics AX. Nechat dodavatele potvrdit nebo zamítnout. | Nepodporováno | Rozhraní portálu dodavatele umožňuje dodavatelům přijímat nákupní objednávky za účelem potvrzení nebo zamítnutí. Také dává dodavateli přehled o všech potvrzených nákupních objednávkách na účtu. Nákupčí může odeslat žádost o potvrzení nákupní objednávky ze strany dodavatele. Dodavatel musí být registrovaný uživatel Microsoft Azure Active Directory (Azure AD) v aplikaci Dynamics AX, být kontaktní osobou dodavatele a mít vyhrazenou roli zabezpečení. | Pracovníkům nákupního oddělení se omezí papírování a ruční sledování odpovědí na nákupní objednávky, protože tyto odpovědi se vloží rovnou do systému. Jeden zdroj informací navíc sníží riziko nedorozumění mezi odběratelem a dodavatelem. |
+| Odeslat nákupní objednávky za účelem potvrzení na portál dodavatele hostovaný v klientovi aplikace Dynamics AX. Nechat dodavatele potvrdit nebo zamítnout. | Nepodporováno | Rozhraní portálu dodavatele umožňuje dodavatelům přijímat nákupní objednávky za účelem potvrzení nebo zamítnutí. Také dává dodavateli přehled o všech potvrzených nákupních objednávkách na účtu. Nákupčí může odeslat žádost o potvrzení nákupní objednávky ze strany dodavatele. Dodavatel musí být registrovaný uživatel Microsoft Azure Active Directory (Azure AD) v Dynamics AX, být kontaktní osobou dodavatele a mít vyhrazenou roli zabezpečení. | Pracovníkům nákupního oddělení se omezí papírování a ruční sledování odpovědí na nákupní objednávky, protože tyto odpovědi se vloží rovnou do systému. Jeden zdroj informací navíc sníží riziko nedorozumění mezi odběratelem a dodavatelem. |
 
 ## <a name="projects"></a>Projekty
 
@@ -624,7 +623,7 @@ Pracovní prostor <strong>Správa katalogu</strong> disponuje těmito funkcemi:
 <ul>
 <li>Vytvoření a konfigurace nových kanálů a souvisejících entit.</li>
 <li>Správa denních aktivit obchodu.</li>
-<li>Zpracování transakcí maloobchodu v aplikaci Microsoft Dynamics AX, generování výkazů maloobchodu a aktualizace zásob a finančních údajů v aplikaci Microsoft Dynamics AX.</li>
+<li>Zpracování maloobchodních transakcí v Microsoft DynamicsAX, generování výkazy maloobchodu a aktualizace zásob a finančních údajů Microsoft DynamicsAX.</li>
 </ul>
 </td>
 <td>Na pracovním prostoru <strong>Nasazení kanálu</strong> můžete provádět tyto činnosti:
@@ -655,7 +654,7 @@ Pracovní prostor <strong>Správa katalogu</strong> disponuje těmito funkcemi:
 <tr>
 <td>Správa IT operací pro maloobchod.</td>
 <td>Uživatel musí použít několik formulářů.</td>
-<td>Na pracovním prostoru <strong>IT pro maloobchod</strong> lze na jednom místě pokládat dotazy Commerce Data Exchange pro daný kanál a provádět tak tyto úlohy:
+<td>V pracovním prostoru <strong>IT pro maloobchod</strong> lze na jednom místě pokládat dotazy Commerce Data Exchange pro daný kanál a provádět tak tyto úlohy:
 <ul>
 <li>Stahování relací.</li>
 <li>Nahrávání relací.</li>
@@ -679,7 +678,7 @@ Pracovní prostor <strong>Správa katalogu</strong> disponuje těmito funkcemi:
 <tr>
 <td>Analyzovat data prodeje přes maloobchodní kanály pomocí obsahu Power BI „Sledování výkonu maloobchodního kanálu“.</td>
 <td>Není k dispozici.</td>
-<td>Na stránce PowerBI.com vyberte možnost <strong>Načíst data</strong>a poté vyberte balíček obsahu <strong>Dynamics AX – výkonnost maloobchodního kanálu</strong>. Zadejte adresu URL koncového bodu Dynamics AX, aby se data zobrazovala na řídicím panelu.</td>
+<td>Na stránce PowerBI.com vyberte možnost <strong>Načíst data</strong> a poté vyberte balíček obsahu <strong>Dynamics AXAX – výkonnost maloobchodního kanálu</strong>. Zadejte adresu URL koncového bodu Dynamics AX, aby se data zobrazovala na řídicím panelu.</td>
 <td>Třemi až čtyřmi kliknutími mohou organizace nasadit do provozu řídicí panel Power BI obsahující důležitá finanční data. Obsah lze přizpůsobit podle požadavků organizace. Kromě toho mohou uživatelé vkládat dlaždice panelu Power BI na své vlastní pracovní prostory v aplikaci Dynamics AX, aby měli přehled o všech analytických informacích.</td>
 </tr>
 <tr>
@@ -734,13 +733,13 @@ Se serverem maloobchodu a správou dat mohou spotřebitelé a podniků vytváře
 <td>K dispozici jsou hostované a škálovatelné služby e-commerce, které lze použít s online obchody třetích stran.</td>
 </tr>
 <tr>
-<td>Pomocí systému Commerce Data Exchange přesunout data mezi účetním systémem Microsoft Dynamics AX a kanály.</td>
+<td>Přesun dat mezi záložní kanceláří Microsoft DynamicsAX a kanály pomocí Commerce Data Exchange.</td>
 <td>Commerce Data Exchange je systém, který přenáší data mezi aplikací Microsoft Dynamics AX a maloobchodními kanály, jako jsou například online obchody nebo kamenné obchody. Další informace naleznete v tématu <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
-<td>Existuje funkční parita s aplikací Microsoft Dynamics AX 2012 CU8. Upozorňujeme však na tyto skutečnosti:
+<td>Funkční parita s Microsoft Dynamics AX 2012 CU8. Upozorňujeme však na tyto skutečnosti:
 <ul>
 <li>Služba Commerce Data Exchange byla přepracována pro cloud.</li>
 <li>Asynchronní služba používá přímý přístup k databázi kanálu.</li>
-<li>Commerce Data Exchange: Služba v reálném čase je hostována jako vlastní služba Microsoft Dynamics AX.</li>
+<li>Commerce Data Exchange: služba v reálném čase je hostovaná jako vlastní služba Microsoft Dynamics AX.</li>
 <li>MPOS spravuje synchronizaci mezi offline databázemi a serverem maloobchodu.</li>
 </ul></td>
 <td>Služba Commerce Data Exchange byla přepracována pro cloudovou platformu. I nadále spravuje přenos dat mezi aplikací Microsoft Dynamics AX a maloobchodními kanály, jako jsou například online obchody nebo kamenné obchody.</td>
@@ -758,11 +757,11 @@ Se serverem maloobchodu a správou dat mohou spotřebitelé a podniků vytváře
 <td>Odběratelé mohou díky tomu zpracovávat transakce kreditní nebo debetní karty pro platby.</td>
 </tr>
 <tr>
-<td>Aktivovat zařízení prostřednictvím účtu Microsoft (Microsoft Azure Active Directory (Azure AD)).</td>
-<td>Není k dispozici</td>
+<td>Aktivovat zařízení pomocí účtu Microsoft (Microsoft Azure Active Directory (Azure AD)).</td>
+<td>Není k dispozici.</td>
 <td>K dispozici jsou tyto funkce:
 <ul>
-<li>Zdokonalené zabezpečení prostřednictvím aktivace na základě Azure AD pro cloud.</li>
+<li>Zdokonalené zabezpečení prostřednictvím aktivace na základě Azure AD pro cloud</li>
 <li>Zdokonalené zabezpečení pro správu tokenů.</li>
 <li>Vylepšení spolehlivosti, řešení potíží a chybových zpráv při aktivaci</li>
 <li>Zjednodušené IT administrativní úlohy vztahující se k aktivaci.</li>
@@ -770,7 +769,7 @@ Se serverem maloobchodu a správou dat mohou spotřebitelé a podniků vytváře
 </ul></td>
 <td>Přináší to tyto výhody:
 <ul>
-<li>Zdokonalené zabezpečení díky Azure AD a tokenu/ID zařízení (volání RS používají token, úložiště aplikace specifické pro uživatele).</li>
+<li>Zdokonalené zabezpečení díky Azure AD a tokenu/ID zařízení (volání RS používají token, úložiště aplikace specifické pro uživatele).</li>
 <li>Zastavení neoprávněného vzdáleného použití MPOS (zařízení brick).</li>
 <li>Sledování zařízení MPOS pro účely kompatibility PCI.</li>
 <li>Mapování fyzických zařízení s podnikovou entitou (registrací) pomocí tokenu zařízení.</li>
@@ -823,7 +822,7 @@ Maloobchod nabízí dokonalý mobilní zážitek kdekoliv, kdykoliv a na jakémk
 <li>Výdej a příjem objednávek a provádění inventury.</li>
 <li>Zobrazení obchodních sestav.</li>
 </ul></td>
-<td>K dispozici je funkční parita s AX 2012 MPOS. Ta zahrnuje tyto funkce:
+<td>K dispozici je funkční parita s AX 2012 MPOS. Ta zahrnuje tyto funkce:
 <ul>
 <li>Vyhledávání odběratelů mezi obchody a kanály.</li>
 <li>Možnost vytvoření objednávky odběratele bez nutnosti využití služby v reálném čase.</li>
@@ -972,7 +971,7 @@ K dispozici je zlepšená instalace součásti zlepšení odlehčeného klienta 
 </tr>
 <tr>
 <td>Sledovat stav systému a určit příčiny chyb a potíží.</td>
-<td>Tato funkce vyžaduje balíček <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack pro maloobchod v aplikaci Microsoft Dynamics AX 2012 R3 CU8</a>.</td>
+<td>Tato funkce vyžaduje balíček <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Sledování a diagnostika pro součásti maloobchodu jsou nyní dostupné prostřednictvím řídicího panelu <strong>Provozní analytika</strong>v LCS.</td>
 <td>Řídicí panel <strong>Provozní analytika</strong> je cloudový sledovací portál, díky kterému není potřeba instalovat infrastrukturu System Center Operations Manager (SCOM).</td>
 </tr>
@@ -985,7 +984,7 @@ K dispozici je zlepšená instalace součásti zlepšení odlehčeného klienta 
 </tbody>
 </table>
 
-## <a name="sales"></a>Prodeje
+## <a name="sales"></a>Prodej.
 
 <table>
 <thead>
@@ -1034,4 +1033,3 @@ Nebyly přidány následující nové funkce.
 [Co je nového a co se změnilo](whats-new-changed.md)
 
 [Nový průvodce úkolem je k dispozici (únor 2016)](new-task-guides-available-february-2016.md)
-

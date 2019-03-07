@@ -1,13 +1,13 @@
 ---
-title: "Vyhledávání produktů a variant produktu během zadání objednávky"
-description: "Použijte pole **Číslo položky** k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky. Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu."
+title: Vyhledávání produktů a variant produktu během zadání objednávky
+description: Použijte pole **Číslo položky** k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky. Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bf90dc4823599ed6ff8e81986fc35f2210b66b0c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d6a45d89ba20994c06a77c646fa5099fa34b3b2e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323104"
 ---
-
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Vyhledávání produktů a variant produktu během zadání objednávky
 
 [!include [banner](../includes/banner.md)]
@@ -35,9 +34,9 @@ ms.lasthandoff: 05/08/2018
 
 Použijte pole **Číslo položky** k vyhledání produktů a variant produktů, až budete ručně vytvářet řádek prodejní objednávky nebo řádek nákupní objednávky.  Tímto způsobem můžete rychle vyhledat varianty produktu, pokud máte k dispozici pouze konfigurační řetězec nebo jednu z dimenzí produktu.
 
-V některých případech mít příliš moc něčeho není tou nejlepší situací, zejména pokud prodáváte více produktů, které jsou si podobné a vy se snažíte zapamatovat si čísla položek nebo vyhledávací názvy produktů, abyste našli správný produkt do prodejní objednávky. Jako vyhledávací pole lze použít pole **číslo položky** na řádku prodejní objednávky nebo řádku nákupní objednávky. Můžete zadat libovolnou část názvu produktu, čísla nebo dimenze a získat vyhledání, které zobrazuje všechny položky, které odpovídají hledanému slovu.
+V některých případech mít příliš moc něčeho není tou nejlepší situací, zejména pokud prodáváte více produktů, které jsou si podobné a vy se snažíte zapamatovat si čísla položek nebo vyhledávací názvy produktů, abyste našli správný produkt do prodejní objednávky.Jako vyhledávací pole lze použít pole **Číslo položky** na řádku prodejní objednávky nebo řádku nákupní objednávky. Můžete zadat libovolnou část názvu produktu, čísla nebo dimenze a získat vyhledání, které zobrazuje všechny položky, které odpovídají hledanému slovu.
 
-## <a name="how-search-works"></a>Jak funguje hledání
+## <a name="how-searchworks"></a>Jak funguje hledání
 Při hledání produktu nebo varianty produktu, je třeba pochopit, jak funkce hledá produkty, které odpovídají zadanému textu. Klíčová pravidla hledání přinášející výsledky hledání jsou:
 
 -   Výsledky hledání nepřinesou odpovídající záznam bez ohledu na pole, v němž je zadán text pro hledání.
@@ -47,13 +46,13 @@ Při hledání produktu nebo varianty produktu, je třeba pochopit, jak funkce h
 
 ### <a name="examples"></a>Příklad
 
-Následující příklady využívají produkty a varianty produktů, aby ilustrovaly způsob, jak hledání probíhá v různých situacích. **Předpoklad:** V části **Prodej a marketing &gt; Nastavení &gt; Hledat &gt; Parametry hledání &gt; Typ hledání** vyberte možnost **Úplná shoda**.
+Následující příklady využívají produkty a varianty produktů, aby ilustrovaly způsob, jak hledání probíhá v různých situacích. **Předpoklad:** V části **Prodej a marketing &gt; Nastavení &gt; Hledání &gt; Parametry hledání &gt; Typ hledání** vyberte možnost **Úplná shoda**.
 
 | Typ produktu     | Název produktu    | Zobrazit číslo produktu | Č. položky | Konfigurace |
 |------------------|-----------------|------------------------|-------------|---------------|
 | Jedinečný produkt | SpeakerMidRange | D0001                  | D0001       | Není k dispozici            |
-| Varianta produktu  | Aktivní reproduktor  | D0010:::Černá:         | D0010       | 000005        |
-| Varianta produktu  | Aktivní reproduktor  | D0010:::Bílá:         | D0010       | Bílá         |
+| Varianta produktu  | Aktivní reproduktor  | D0010:::černá:         | D0010       | 000005        |
+| Varianta produktu  | Aktivní reproduktor  | D0010:::bílá:         | D0010       | Bílá         |
 
 Pokud zadáte 'hovořit' do pole **Číslo položky**, obdržíte všechny výše uvedené produkty v jako výsledek vyhledávání. Pokud napíšete 'černá' do pole **Číslo položky**, zobrazí se druhý produkt, protože má text "černá" v zobrazení čísla produktu. Tyto dva příklady ilustrují, že se nevyhledává jen od začátku tohoto pole. Ke shodě dojde i v případě, že hledaný text se nachází uprostřed textového řetězce v odpovídajícím záznamu.  
 
@@ -61,14 +60,14 @@ Pokud zadáte "05" obdržíte pouze druhou variantu produktu, protože má v kon
 
 Pokud zadáte 'hovořit 05', nezískáte žádné výsledky. Důvodem je skutečnost, že vyhledávání hledá úplný text, který je zadán. Vyhledávání se nebude snažit vyhledání "hovořit" a pak zúžit výsledky na ty obsahující '05'.  
 
-Počet výsledků vyhledávání můžete omezit pomocí pole **Počet výsledků** na stránce **Prodej a marketing &gt; Nastavení &gt; Vyhledávání &gt; Parametry hledání**. Pokud toto pole nastavíte na hodnotu 0, budou všechny výsledky vyhledávání odmítnuty. Pokud nastavíte například 10, získáte jako maximální počet výsledků hledání 10.
+Počet výsledků vyhledávání můžete omezit pomocí pole **Počet výsledků** na stránce **Prodej a marketing&gt; nastavení &gt; Vyhledávání &gt; Parametry hledání** . Pokud toto pole nastavíte na hodnotu 0, budou všechny výsledky vyhledávání odmítnuty. Pokud nastavíte například 10, získáte jako maximální počet výsledků hledání 10.
 
-## <a name="configure-the-product-search"></a>Nakonfigurujte vyhledávání produktu
+## <a name="configure-the-productsearch"></a>Nakonfigurujte vyhledávání produktu
 Před použitím funkce vyhledávání produktu a varianty produktu, postupujte podle následujících kroků při konfigurování vyhledávání produktu. [![3 kroky ke konfiguraci vyhledávání produktu\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
-### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Krok 1: Zahrňte všechny relevantní identifikátory produktu a variant produktu i dimenzí do kritérií vyhledávání
+### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Krok 1: Zahrňte všechny relevantní identifikátory produktu a variant produktu i dimenzí do kritérií vyhledávání
 
-Příklady identifikátorů produktu a variant produktu i dimenzí, podle nichž můžete vyhledávat, jsou **Název produktu, číslo položky**, **Zobrazit číslo produktu, Konfigurace, Barva, Velikost, Styl, Název pro vyhledávání apod**.  
+Příklady identifikátorů produktu a variant produktu i dimenzí, podle nichž můžete vyhledávat, jsou  **Název produktu, číslo položky**, **Zobrazit číslo produktu, Konfigurace, Barva, Velikost, Styl, Název pro vyhledávání apod**.  
 
 Přejděte na stránku **Prodej a marketing &gt; Nastavení &gt; Vyhledávání &gt; Kritéria vyhledávání**. Stránka **Kritéria vyhledávání** vám umožňuje definovat kritéria pro odběratele, potenciální zákazníky a vyhledávání produktu. Ověřte, že stránku filtrujete pomocí kritérií vyhledávání produktu. To můžete provést přepnutím do **Produkt** v nabídce na stránce.  
 
@@ -76,7 +75,7 @@ Pokud chcete do kritérií vyhledávání přidat číslo zobrazeného produktu,
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Krok 2: Vyplňte tabulku databáze, která se používá pro hledání produktu
 
-Na stránce **Kritéria vyhledávání** klepněte na tlačítko **Aktualizace data vyhledávání**. V dialogovém okně **Aktualizace data vyhledávání** se ujistěte, že **Zdroj** je nastaven na **Produkt** a klepněte na tlačítko **OK**. Systém bude v jedné tabulce agregovat všechna vybraná vyhledávací kritéria zadaná v kroku 1. Pokud máte velké množství produktů a variant produktů, operace mohou být dlouhodobé a mohou se zobrazit upozornění. Doporučujeme naplánovat vyplnění tabulky vyhledávání na dávkovém serveru v okamžiku, kdy server není příliš zaneprázdněn.  
+Na stránce **Kritéria vyhledávání** klepněte na tlačítko **Aktualizace data vyhledávání**. V dialogovém okně **Aktualizace data vyhledávání** se ujistěte, že  **Zdroj** je nastaven na **Produkt** a klepněte na tlačítko **OK**. Systém bude v jedné tabulce agregovat všechna vybraná vyhledávací kritéria zadaná v kroku 1. Pokud máte velké množství produktů a variant produktů, operace mohou být dlouhodobé a mohou se zobrazit upozornění. Doporučujeme naplánovat vyplnění tabulky vyhledávání na dávkovém serveru v okamžiku, kdy server není příliš zaneprázdněn.  
 
 Dokud nebude tabulka vyplněna, vyhledávání produktu neposkytne správné výsledky. Pokud se vám nezobrazí žádné výsledky vyhledávání, ujistěte se, že je tato tabulka vyplněná.  
 
@@ -86,8 +85,7 @@ Tabulka musí být také vyplněná po úpravě kritérií hledání. Nově pře
 
 Tuto funkci můžete povolit v části **Prodej a marketing &gt; Nastavení &gt; Vyhledávání &gt; Parametry vyhledávání** a nastavením možnosti **Povolit hledání pro vyhledávání** na **Ano** na kartě **Obecné**.  
 
-Pro položku řádku prodejní objednávky je standardní postup takový, že otevřete stránku **Vyhledávání produktu**, kam začnete vyplňovat **Číslo položky** a pak stisknete klávesu **Tab**. Stránka **Vyhledávání produktu** mění kontext během tvoření řádku objednávky a lze ji považovat za zbytečně rušivou. Pokud dáváte přednost výsledkům hledání v hledání a nechcete ztratit kontext při zadávání řádku objednávky, můžete použít místo toho vyhledávání v hledání. Hledáte-li produkt nebo variantu produktu, ale nevyberete nic v hledání a stiskněte klávesu **Tab**, objeví se stránka **Vyhledávání produktu**.
-
+Pro položku řádku prodejní objednávky je standardní postup takový, že otevřete stránku **Vyhledávání produktu**, kam začnete vyplňovat  **Číslo položky** a pak stisknete klávesu  **Tab**. Stránka **Vyhledávání produktu** mění kontext během tvoření řádku objednávky a lze ji považovat za zbytečně rušivou. Pokud dáváte přednost výsledkům hledání v hledání a nechcete ztratit kontext při zadávání řádku objednávky, můžete použít místo toho vyhledávání v hledání. Hledáte-li produkt nebo variantu produktu, ale nevyberete nic v hledání a stiskněte klávesu **Tab**, objeví se stránka **Vyhledávání produktu**.
 
 
 

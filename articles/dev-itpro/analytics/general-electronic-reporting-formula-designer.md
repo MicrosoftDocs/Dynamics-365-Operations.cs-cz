@@ -1,13 +1,13 @@
 ---
-title: "Návrhář receptur v elektronickém výkaznictví"
-description: "Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví."
+title: Návrhář receptur v elektronickém výkaznictví
+description: Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví.
 author: NickSelin
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
 ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331269"
 ---
-
 # <a name="formula-designer-in-electronic-reporting-er"></a>Návrhář receptur v elektronickém výkaznictví
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ Toto téma popisuje, jak lze používat návrháře receptur v elektronickém v�
 
 Elektronické výkaznictví podporuje návrháře receptur. Proto můžete během návrhu konfigurovat výrazy, které lze použít pro následující úkoly za běhu:
 
-- Transformace dat přijatých z databáze Microsoft Dynamics 365 for Finance and Operations, která mají být zadána v datovém modelu elektronického výkaznictví, který je určený jako zdroj dat pro formáty elektronického výkaznictví. (Tyto transformace mohou například zahrnovat filtrování, seskupení a převod typů dat.)
+- Transformujte data, přijatá z databáze Microsoft Dynamics 365 for Finance and Operations, která by měla být zadána do datového modelu elektronického výkaznictví navrženého jako datový zdroj pro formáty elektronického výkaznictví. (Tyto transformace mohou například zahrnovat filtrování, seskupení a převod typů dat.)
 - Formátování dat, která musí být odeslána do generovaného elektronické dokument v souladu s rozvržením a podmínkami konkrétního formátu elektronického výkaznictví. (Formátování může být například provedeno v souladu s požadovaným jazykem, jazykovou verzí nebo kódováním).
 - Kontrola procesu vytváření elektronických dokumentů. (Například výrazy mohou povolit nebo zakázat výstup konkrétních prvků formátu, v závislosti na zpracování dat. Mohou rovněž přerušit proces vytváření dokumentu nebo odesílat zprávy uživateli.)
 
@@ -625,8 +624,8 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </ul></li>
 <li>Popisek aplikace Finance and Operations SYS18389, který má následující text:
 <ul>
-<li><strong>Pro jazyk EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>Pro jazyk DE:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
+<li><strong>U jazyka EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
+<li><strong>U jazyka DE:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Zde je vzorec, který lze vytvořit:</p>
@@ -731,7 +730,7 @@ Když jsou definovány tyto zdroje dat, můžete použít výraz jako <strong>FI
 | FA\_BALANCE (kód dlouhodobého majetku, kód oceňovacího modelu, vykazovaný rok, datum sestavy) | Vrátí připravený datový kontejner zůstatku dlouhodobého majetku. Rok vykazování je nutné zadat jako hodnotu výčtu aplikace Finance and Operations **AssetYear**. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** vrátí připravený datový kontejner zůstatků pro dlouhodobý majetek **"COMP-000001"** s modelem hodnoty **"Current"** k aktuálnímu datu relace aplikace 365 for Finance and Operations. |
 | TABLENAME2ID (řetězec) | Vrací reprezentaci celého čísla ID tabulky pro daný název tabulky. | **TABLENAME2ID ("Intrastat")** vrátí hodnotu **1510**. |
 | ISVALIDCHARACTERISO7064 (řetězec) | Vrátí logickou hodnotu **TRUE**, pokud zadaný řetězec představuje platné mezinárodní číslo bankovního účtu (IBAN). V opačném případě vrátí logickou hodnotu **FALSE**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** vrátí hodnotu **TRUE**. **ISVALIDCHARACTERISO7064 ("AT61")** vrátí hodnotu **FALSE**. |
-| NUMSEQVALUE (kód číselné řady, obor, id oboru) | Vrátí novou vygenerovanou hodnotu číselné řady, na základě zadaného kódu číselné řady, oboru a ID oboru. Obor je nutné zadat jako hodnotu výčtu **ERExpressionNumberSequenceScopeType** výčtu (**Sdílený**, **Právnická osoba**, nebo **Společnost**). Pro obor **Sdílený** zadejte prázdný řetězec jako ID oboru. Pro obory **Společnost** a **Právnická osoba** zadejte kód společnosti jako ID oboru. Pro obory **Společnost** a **Právnická osoba** se použije aktuální kód společnosti, pokud použijete prázdný řetězec jako ID oboru. | Definujte v mapování modelu následující zdroje dat:<ul><li>**enumScope** (typ **výčet Dynamics 365 for Operations**),který odkazuje na výčet **ERExpressionNumberSequenceScopeType**</li><li>**NumSeq** (typ **Vypočítané pole**), která obsahuje výraz **NUMSEQVALUE ("genovou\_1", enumScope.Company, "")**</li></ul>Když je volán datový zdroj **NumSeq**, vrátí novou vygenerovanou hodnotu číselné řady **Gene\_1**, která byla nakonfigurována pro společnost poskytující kontext, pod kterým běží formát elektronického výkaznictví. |
+| NUMSEQVALUE (kód číselné řady, obor, id oboru) | Vrátí novou vygenerovanou hodnotu číselné řady, na základě zadaného kódu číselné řady, oboru a ID oboru. Obor je nutné zadat jako hodnotu výčtu **ERExpressionNumberSequenceScopeType** výčtu (**Sdílený**, **Právnická osoba**, nebo **Společnost**). Pro obor **Sdílený** zadejte prázdný řetězec jako ID oboru. Pro obory **Společnost** a **Právnická osoba** zadejte kód společnosti jako ID oboru. Pro obory **Společnost** a **Právnická osoba** se použije aktuální kód společnosti, pokud použijete prázdný řetězec jako ID oboru. | Definujte v mapování modelu následující zdroje dat:<ul><li>**enumScope** (typ **výčet Dynamics 365 for Operations**), který odkazuje na výčet **ERExpressionNumberSequenceScopeType**</li><li>**NumSeq** (typ **Vypočítané pole**), která obsahuje výraz **NUMSEQVALUE ("genovou\_1", enumScope.Company, "")**</li></ul>Když je volán datový zdroj **NumSeq**, vrátí novou vygenerovanou hodnotu číselné řady **Gene\_1**, která byla nakonfigurována pro společnost poskytující kontext, pod kterým běží formát elektronického výkaznictví. |
 | NUMSEQVALUE (kód číselné řady) | Vrátí novou vygenerovanou hodnotu číselné řady, na základě určené číselné řady, oboru **Společnost** a kódu společnosti (jako ID oboru) poskytující kontext, pod kterým běží formát elektronického výkaznictví | Definujete následující zdroje dat v mapování modelu: **NumSeq** (typ **Vypočítané pole**). Tento zdroj dat obsahuje výraz **NUMSEQVALUE ("Gene\_1")**. Když je volán datový zdroj **NumSeq**, vrátí novou vygenerovanou hodnotu číselné řady **Gene\_1**, která byla nakonfigurována pro společnost poskytující kontext, pod kterým běží formát elektronického výkaznictví. |
 | NUMSEQVALUE (ID záznamu číselné řady) | Vrátí novou vygenerovanou hodnotu číselné řady, na základě zadaného ID záznamu číselné řady. | Definujte v mapování modelu následující zdroje dat:<ul><li>**LedgerParms** (typ **Tabulka**), která odkazuje na tabulku LedgerParameters</li><li>**NumSeq** (typ **Vypočítané pole**), která obsahuje výraz **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</li></ul>Když je volán datový zdroj **NumSeq**, vrátí novou vygenerovanou hodnotu číselné řady, která byla nakonfigurována v parametrech hlavní knihy pro společnost poskytující kontext, pod kterým běží formát elektronického výkaznictví. Tato číselná řada jedinečně identifikuje deníky a chová se jako číslo dávky propojující transakce dohromady. |
 
@@ -743,4 +742,3 @@ Elektronické výkaznictví umožňuje rozšířit seznam funkcí, které se pou
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Rozšíření seznamu funkcí elektronického vykazování](general-electronic-reporting-formulas-list-extension.md)
-

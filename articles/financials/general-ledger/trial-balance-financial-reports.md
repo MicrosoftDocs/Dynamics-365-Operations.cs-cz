@@ -1,13 +1,13 @@
 ---
-title: "Finanční sestavy předvah"
-description: "Tento článek popisuje výchozí sestavy pro předvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám, a způsob změn sestav tak, aby odpovídaly vašim obchodním požadavkům."
+title: Finanční sestavy předvah
+description: Tento článek popisuje výchozí sestavy pro předvahy. Popisuje také stavební bloky, které jsou přidruženy k těmto sestavám, a způsob změn sestav tak, aby odpovídaly vašim obchodním požadavkům.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c9e8c16724364df4dd62150056299e818470aa63
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a61369033202bdb99fe4b36b24051c64cb9ca4b1
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309097"
 ---
-
 # <a name="trial-balance-financial-reports"></a>Finanční sestavy předvah
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Tento článek popisuje výchozí sestavy pro předvahy. Popisuje také stavebn�
 <a name="default-trial-balance-reports"></a>Výchozí finanční sestavy předvah
 -----------------------------
 
-Pro finanční výkaznictví v aplikaci Microsoft Dynamics 365 for Finance and Operations jsou k dispozici tři předvahy.
+Ve finančním vykazování v aplikaci Microsoft Dynamics 365 for Finance and Operations existují tři sestavy předvah.
 
 | Výchozí sestava                                 | Jak funguje                                                                                                                                                                                        |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -108,7 +107,6 @@ Každá sestavu předvahy používá jinou definici sloupců. Tyto definice slou
 [Zobrazení finančních sestav](view-financial-reports.md)
 
 [Blog o finančním výkaznictví v Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
 
 
 

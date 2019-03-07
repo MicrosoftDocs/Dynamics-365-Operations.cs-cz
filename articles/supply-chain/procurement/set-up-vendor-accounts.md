@@ -1,13 +1,13 @@
 ---
-title: "Nastavení účtů dodavatele"
-description: "Toto téma popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele."
+title: Nastavení účtů dodavatele
+description: Toto téma popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4a20fca7420e7bd546e29278b40046d69a81aac6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329130"
 ---
-
 # <a name="set-up-vendor-accounts"></a>Nastavení účtů dodavatele
 
 [!include [banner](../includes/banner.md)]
@@ -67,7 +66,7 @@ Kontakty dodavatelů můžete vytvářet zcela od začátku. Také můžete zkop
 
 Záznam kontaktní osoby nelze odstranit, pokud je na tento kontakt v dokumentu odkazováno. Namísto toho lze kontakt deaktivovat.  
 
-Kontakty dodavatele můžete přidat do osobních kontaktů v aplikaci Microsoft Office 365. Nejprve je však nutné nastavit synchronizaci mezi aplikací Finance and Operations a Office 365 v rámci synchronizace serveru Microsoft Exchange Server a průvodci instalací pro aplikaci Microsoft Outlook.
+Kontakty dodavatele můžete přidat do osobních kontaktů ve službách Microsoft Office 365. Nejprve je však nutné nastavit synchronizaci mezi aplikací Finance and Operations a službami Office 365 v rámci synchronizace serveru Microsoft Exchange Server a průvodci instalací pro aplikaci Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Dodavatelé z různých právnických osob
 Dodavatel je ve vaší organizaci registrován pouze pro jednu právnickou osobu a ostatní právnické osoby si musí zaregistrovat stejného dodavatele. Ke konfiguraci dodavatele pro jinou právnickou osobu lze použít stránku **Přidat dodavatele k jiné právnické osobě**. U dodavatele je ve vybrané právnické osobě nutné určit skupinu dodavatelů, měnu a stav blokování.  
@@ -116,7 +115,6 @@ Pokud je třeba provést platby na bankovní účet dodavatele, můžete zadat i
 Můžete zadat výchozí účty, které se automaticky zobrazí v denících faktur daného dodavatele. Tato funkce může být užitečná, pokud průběžně obvykle platíte za stejné typy položek nebo služeb od stejných dodavatelů. Při určování výchozího účtu můžete rychle a efektivně zadat položky hlavního deníku do deníku faktury. Výchozí účty, které zadáte, nejsou použity pro nákupní objednávky, ani pro faktury dodavatele, které jsou zadány na stránce **Faktura dodavatele**.  
 
 Vyberte výchozí účty na stránce **Výchozí nastavení účtu**, kterou lze otevřít na kartě **Faktura** v záznamech dodavatele. Účty, které zde vyberete, se při zadávání záznamu v deníku zobrazí ve filtrovaném seznamu účtů pro účet dodavatele. Jeden z účtů lze nastavit jako výchozí účet.
-
 
 
 

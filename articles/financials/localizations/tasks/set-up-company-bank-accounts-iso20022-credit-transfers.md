@@ -1,13 +1,13 @@
---- 
-title: "Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022"
-description: "Tento postup popisuje způsob nastavení informací o konkrétním bankovním účtu společnosti, které jsou vyžadované pro generování souboru platby."
+---
+title: Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022
+description: Tento postup popisuje způsob nastavení informací o konkrétním bankovním účtu společnosti, které jsou vyžadované pro generování souboru platby.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2a84408ea24e4221b041782b681c2a2bf1bd8436
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1d0eabdfdeb5ed7d0bdb6df87ebdfa0d41e87492
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334926"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a>Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022
 
@@ -31,7 +31,7 @@ Tento postup popisuje způsob nastavení informací o konkrétním bankovním ú
 
 K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.
 
-Toto je druhý z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+Toto je druhý z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví. Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
 
 ## <a name="set-up-iban-and-swift-code"></a>Nastavení kódu IBAN a SWIFT
@@ -51,5 +51,4 @@ Toto je druhý z pěti úkolů, které společně popisují proces platby dodava
 3. Rozbalte část informací o bankovním účtu.
 4. V poli Bankovní účet zadejte nebo vyberte hodnotu.
 5. Klikněte na položku Uložit.
-
 

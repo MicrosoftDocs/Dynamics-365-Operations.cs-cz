@@ -1,30 +1,29 @@
 ---
-title: "Analytické sestavy nejsou aktualizovány"
-description: "Toto téma vysvětluje, jak postupovat, když e nezobrazují změny dat odběratele v žádném z pracovních prostorů odběratele."
+title: Analytické sestavy nejsou aktualizovány
+description: Toto téma vysvětluje, jak postupovat, když e nezobrazují změny dat odběratele v žádném z pracovních prostorů odběratele.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 46f426a4b0012e87b4d9d21032870ac7fc33c4ae
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303543"
 ---
-
 # <a name="analytic-reports-are-not-updated"></a>Analytické sestavy nejsou aktualizovány
 
 [!include [banner](includes/banner.md)]
@@ -46,4 +45,3 @@ Tento problém může být pouze záležitostí časování. Tento postup slouž
 1. Vyberte **Upravit** v horní části stránky a nastavte naplánované počáteční datum a čas na hodnotu, která bude aktualizovat analytiku blíže aktuálnímu času.
 
 ![Dávkové úlohy](media/batch-jobs.png)
-

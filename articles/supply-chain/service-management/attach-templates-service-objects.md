@@ -1,31 +1,30 @@
 ---
-title: "Připojení šablon k předmětům servisu"
-description: "Šablonu kusovníku lze připojit ke vztahu předmětu servisu."
+title: Připojení šablon k předmětům servisu
+description: Šablonu kusovníku lze připojit ke vztahu předmětu servisu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3cfd653278169c935095b54f488b65a8939d8309
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6cb56cf57b8f67d8d9a725d3cd197798d6c16d20
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311006"
 ---
-
 # <a name="attach-templates-to-service-objects"></a>Připojení šablon k předmětům servisu    
 
 [!include [banner](../includes/banner.md)]
@@ -54,6 +53,5 @@ ms.lasthandoff: 05/08/2018
 [Tvorba předmětů servisu](create-service-objects.md)
 
   
-
 
 

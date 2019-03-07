@@ -1,31 +1,30 @@
 ---
-title: "Zajištění zdrojů uchazečů s využitím fondů talentů"
-description: "Toto téma vysvětluje, jak vytvořit a nastavit fondy talentů v aplikaci Attract."
-author: 
+title: Zajištění zdrojů uchazečů s využitím fondů talentů
+description: Toto téma vysvětluje, jak vytvořit a nastavit fondy talentů v aplikaci Attract.
+author: ''
 manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 2eb46f436305a4c81ea99553e4dc07288ee74008
 ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303569"
 ---
-
 # <a name="source-candidates-by-using-talent-pools"></a>Zajištění zdrojů uchazečů s využitím fondů talentů
 
 [!include[banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ Vlastník a přispěvatelé do fondu majetku mohou přidávat uchazeče do fondu
 
     - Pokud chcete přidat interního uchazeče, můžete vyhledávat osoby podle e-mailové adresy. Po úspěšném vyhledání se zadá e-mailová adresa, křestní jméno a příjmení uchazeče. Pokud máte životopis uchazeče a jakékoli související dokumenty o uchazeči, můžete je nyní uložit. Pak vyberte **Přidat** pro přidání uchazeče do fondu talentů.
     - Pokud chcete přidat externího uchazeče, je nutné ručně zadat jeho e-mailovou adresu, jméno a příjmení. Pokud máte životopis uchazeče a jakékoli související dokumenty, můžete je nyní nahrát. Pak vyberte **Přidat** pro přidání uchazeče do fondu talentů.
-    - Chcete-li přidat více uchazečů, vyberte kartu **z aplikace Excel**. Pak můžete stáhnout odpovídající šablonu aplikace Microsoft Excel, zadat podrobnosti uchazečů, uložit list aplikace Excel a nahrát ho do aplikace.
+    - Chcete-li přidat více uchazečů, vyberte kartu **Z aplikace Excel**. Pak můžete stáhnout odpovídající šablonu aplikace Microsoft Excel, zadat podrobnosti uchazečů, uložit list aplikace Excel a nahrát ho do aplikace.
 
         Pokud jsou v listu nalezeny nějaké chyby, zobrazí se zprávy o těchto chybách. Poté můžete chyby opravit a znovu odeslat list. Pokud nebyly nalezeny žádné další chyby, vyberte **přidat** pro nahrání listu. List je zpracováván na pozadí a po přidání všech uchazečů do fondu talentů obdržíte upozornění.
 
@@ -108,7 +107,7 @@ Všichni uživatelé mají společný pohled na profily uchazečů. Vyberte řá
 
 - Karta **Dokumenty** zobrazuje všechny dokumenty, které uchazeč přidal ze svého profilu nebo v průběhu žádosti o práci. Tato karta slouží ke správě životopisů, průvodních dopisů, pracovního portfolia atd. uchazeče. Na této kartě můžete také přidat dokumenty.
 
-    Pokud chcete zobrazit dokument, vyberte název dokumentu ze seznamu dokumentů. Můžete zobrazit dokumenty aplikace Microsoft Word v žádosti pomocí služeb Microsoft Office 365. Také můžete stáhnout dokumenty do místního počítače pomocí možnosti **Stáhnout** pro každý dokument.
+    Pokud chcete zobrazit dokument, vyberte název dokumentu ze seznamu dokumentů. Můžete zobrazit dokumenty Microsoft Word v aplikaci pomocí Microsoft Office 365. Také můžete stáhnout dokumenty do místního počítače pomocí možnosti **Stáhnout** pro každý dokument.
 
 - Karta **LinkedIn** ukazuje informace z webu LinkedIn. Pokud chcete tuto kartu použít, je nutné připojit účet LinkedIn v nastavení uživatele a je nutné navázat připojení k programu linkedIn Recruiter. Další informace naleznete v tématu [Zajištění zdrojů z programu LinkedIn Recruiter](./attract-linked-in-recruiter.md).
 
@@ -139,4 +138,3 @@ Z výsledků hledání nebo fondu talentů můžete vybrat uchazeče pro jakéko
 1. Na stránce žádosti vyberte **přidat do fondu talentů**. Zobrazí se fondy talentů, do kterých máte přístup.
 
 1. Vyberte nebo vyhledejte fond talentů a vyberte **Přidat** pro přidání uchazeče do tohoto fondu talentů.
-

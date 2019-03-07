@@ -1,13 +1,13 @@
 ---
-title: "Nastavení sortimentu"
-description: "Tento článek popisuje, co je sortiment, a vysvětluje, jak nastavit sortimenty v aplikaci Microsoft Dynamics 365 for Retail."
+title: Nastavení sortimentu
+description: Tento článek popisuje, co je sortiment, a vysvětluje, jak nastavit sortimenty v aplikaci Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: a9578a0784d4f4fbfca27ec4093a3f61d1068a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 91713a4492ad82520f7dde611c17a5ea168ed80d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314962"
 ---
-
 # <a name="set-up-assortments"></a>Nastavení sortimentu
 
 [!include [banner](includes/banner.md)]
@@ -56,4 +55,3 @@ Po dokončení požadavků lze vytvořit sortiment a přiřadit jej do vaší ma
 2. Vyberte maloobchodní sítě nebo skupiny vysoké úrovně v maloobchodní síti, na které sortiment vztahuje.
 3. Přidejte do sortimentu kategorie produktů, jednotlivé produkty nebo varianty produktu. Všechny produkty lze zahrnout do konkrétní kategorie, nebo vyjmout vybrané produkty z kategorie, která je zahrnuta do sortimentu.
 4. Publikujte sortiment. Při publikování sortimentů je automaticky spuštěn plánovač maloobchodního sortimentu. Tento proces generuje seznam produktů. Po dokončení tohoto procesu budou produkty k dispozici pro maloobchodní kanály, ke kterým je sortiment produktu přiřazen. Pokud jsou provedeny změny v publikovaném sortimentu nebo v maloobchodní síti, ke které je sortiment přiřazen, musí být sortiment aktualizován. Pokud chcete aktualizovat sortiment po provedení změn, můžete spustit plánovač maloobchodního sortimentu jako dávkovou úlohu.
-

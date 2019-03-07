@@ -1,13 +1,13 @@
 ---
-title: "Inicializace počátečních dat v nových prostředích Retail"
-description: "Tento článek popisuje data, která se vytváří v rámci inicializačního procesu pro aplikaci Microsoft Dynamics 365 for Retail."
+title: Inicializace počátečních dat v nových prostředích Retail
+description: Tento článek popisuje data, která se vytváří v rámci inicializačního procesu pro aplikaci Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327888"
 ---
-
 # <a name="initialize-seed-data-in-new-retail-environments"></a>Inicializace počátečních dat v nových prostředích Retail
 
 [!include [banner](includes/banner.md)]
@@ -58,7 +57,7 @@ Inicializace vytvoří následující výchozí data konfigurace:
 - Šablony ověření entity
 - Dávková úloha pro vymazání historie relace Commerce Data Exchange
 
-U databáze aplikace Dynamics 365 for Retail je také povoleno protokolování, které se vztahuje k odvětví platebních karet (PCI).
+Dále protokolování, které se vztahuje k odvětví platební karty (PCI) je povoleni pro databázi aplikace Dynamics 365 for Retail.
 
 > [!NOTE]
 > Je možné Maloobchodní plánovač konfigurovat samostatně. Tato možnost umožňuje obnovíte konfiguraci maloobchodního plánovače na výchozí nastavení.
@@ -70,4 +69,3 @@ Po dokončení inicializace je nutné nakonfigurovat další data pro maloobchod
 - Maloobchodní sítě
 - Registry a zařízení
 - Sortimenty
-

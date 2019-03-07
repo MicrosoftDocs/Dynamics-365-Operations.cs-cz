@@ -1,13 +1,13 @@
 ---
-title: "Plánování pracovního vytížení"
-description: "Toto téma vysvětluje postup při nastavení a plánování kapacity pracovního vytížení pro zaměstnance v určitém skladu nebo pro celý sklad."
+title: Plánování pracovního vytížení
+description: Toto téma vysvětluje postup při nastavení a plánování kapacity pracovního vytížení pro zaměstnance v určitém skladu nebo pro celý sklad.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317285"
 ---
-
 # <a name="schedule-workload-capacity"></a>Plánování pracovního vytížení
 
 [!include[banner](../includes/banner.md)]
@@ -81,4 +80,3 @@ Pokud tyto informace nejsou správně zadány, zobrazí se zpráva při generov�
 3. V poli **typ objednávky** vyberte **plánované a potvrzené**, **plánováno** nebo **potvrzeno** k označení typu objednávek pro plánování v sestavě.
 4. V poli **Typ vytížení** výběrem typu vytížení určete, zda má být kapacita pracovního vytížení projektována v paletách, objemu či hmotnosti.
 5. V poli **Kapacita pracovního vytížení** vyberte nastavení kapacity pracovního vytížení.
-

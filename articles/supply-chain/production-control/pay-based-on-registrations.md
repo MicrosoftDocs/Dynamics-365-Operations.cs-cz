@@ -1,13 +1,13 @@
 ---
-title: "Plat na základě registrace"
-description: "Toto téma popisuje způsob výpočtu mzdy na základě registrací pracovníka."
+title: Plat na základě registrace
+description: Toto téma popisuje způsob výpočtu mzdy na základě registrací pracovníka.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: f36c411ce24dfd8cceacda3d4659ec9a98fd5aa9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321103"
 ---
-
 # <a name="pay-based-on-registrations"></a>Plat na základě registrace
 
 [!include [banner](../includes/banner.md)]
@@ -600,4 +599,3 @@ Pokud se pracovník nedostaví na práci v pracovní den a nemá na ten den plá
 - Automaticky vložit absenci
 
 Při výpočtu denních registrací pro pracovníka, který má oprávnění k pružné pracovní době, se použije jako kód absence kód, který je určený v poli **Automaticky vložit flex-**. Pokud pracovník není aktivován pro pružnou pracovní dobu, bude použit kód absence zadaný v poli **Automaticky vložit absenci**. Pokud má společnost kombinaci pracovníků, kteří mají povolenu pružnou pracovní dobu, a pracovníky, kteří nemají povolenu pružnou pracovní dobu, musíte nastavit oba parametry.
-

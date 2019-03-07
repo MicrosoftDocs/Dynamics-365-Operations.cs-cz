@@ -1,13 +1,13 @@
 ---
-title: "Sloučit dávky skladových zásob"
-description: "Tento článek obsahuje informace o způsobu sloučení dvou nebo více skladových dávek na sloučenou dávku."
+title: Sloučit dávky skladových zásob
+description: Tento článek obsahuje informace o způsobu sloučení dvou nebo více skladových dávek na sloučenou dávku.
 author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f118ef38e88171ad1eac463078acf37ba4390e57
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319815"
 ---
-
 # <a name="merge-inventory-batches"></a>Sloučit dávky skladových zásob
 
 [!include [banner](../includes/banner.md)]
@@ -141,4 +140,3 @@ Můžete schválit deník zásob pro sloučení dávky ze stránky se seznamem *
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Poté, co byly sloučeny položky se skutečnou hmotností, proč nejsou zobrazeny údaje o skutečné hmotnosti v deníku zásob?
 Lze sloučit dávky položek se skutečnou hmotností stejně jako všech ostatních položek. Údaje o skutečné hmotnosti však nejsou zobrazeny v deníku zásob. Doporučujeme ověřit údaje o skutečné hmotnosti před přenesením sloučení dávky do deníku zásob.
-

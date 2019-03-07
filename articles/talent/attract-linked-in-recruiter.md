@@ -1,32 +1,31 @@
 ---
-title: "Zajištění zdrojů pomocí LinkedIn Recruiter"
-description: "Toto téma obsahuje informace o používání strojového učení pro získání doporučení práce a uchazeče o práci."
+title: Zajištění zdrojů pomocí LinkedIn Recruiter
+description: Toto téma obsahuje informace o používání strojového učení pro získání doporučení práce a uchazeče o práci.
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303527"
 ---
-
 # <a name="sourcing-with-linkedin-recruiter"></a>Zajištění zdrojů pomocí LinkedIn Recruiter
 [!include[banner](../includes/banner.md)]
 
@@ -127,9 +126,9 @@ Pomocí systému LinkedIn Recruiter můžete sledovat, zda uchazeč žádal o ji
 
 ### <a name="inmail-history"></a>Historie InMail
 
-Historie webu LinkedIn InMail je v programu LinkedIn Recruiter dostupná s přístupem na úrovni smlouvy. Pokud tato možnost povolena, můžete zobrazit celou historii InMail s uchazečem. Můžete se také podívat, kdo další z vaší organizace si vyměňoval InMail s uchazečem, nemůžete však zobrazit zprávy, které si zasílali.
+Historie LinkedIn InMail je v programu LinkedIn Recruiter dostupná s přístupem na úrovni smlouvy. Pokud tato možnost povolena, můžete zobrazit celou historii InMail s uchazečem. Můžete se také podívat, kdo další z vaší organizace si vyměňoval InMail s uchazečem, nemůžete však zobrazit zprávy, které si zasílali.
 
-Pokud chcete zobrazit historii InMail, přejděte na kartu **LinkedIn** a přejděte do spodní části stránky a zobrazte historii. POkud jste vedli diskusi s uchazečem, můžete zobrazit historii InMail. Zprávy z InMail se každých několik hodin synchronizují s aplikací Attract.
+Pokud chcete zobrazit historii InMail, přejděte na kartu **LinkedIn** a přejděte do spodní části stránky a zobrazte historii. Pokud jste vedli diskusi s uchazečem, můžete zobrazit historii InMail. Zprávy z InMail se každých několik hodin synchronizují s aplikací Attract.
 
 ### <a name="notes-history"></a>Historie poznámek 
 
@@ -142,4 +141,3 @@ Pokud chcete zobrazit historii poznámek, přejděte na kartu **LinkedIn** a př
 Profil InMail se zakázaným inzerováním je v programu LinkedIn Recruiter dostupný s přístupem na úrovni smlouvy. Pokud uchazeči souhlasí se sdílením svých profilů LinkedIn s libovolným uživatelem ve vaší organizaci, můžete sledovat uchazeče v aplikaci Attract a pro každého uchazeče se vytvoří nový záznam uchazeče. Pokud uchazeč existuje v systému a má e-mailovou adresu nebo se rozhodl sdílet adresu s náborářem, můžete zobrazit jeho e-mailovou adresu.
 
 Chcete-li zobrazit seznam uchazečů, přejděte na **Fondy talentů**, aby se zobrazil fond talentů LinkedIn vytvořený systémem. Tento fond talentů obsahuje seznam uchazečů a jejich profily se zakázaným inzerováním z webu LinkedIn, zobrazující křestní jméno a příjmení uchazeče. ID e-mailu uchazeče se zobrazí, pokud uchazeč nastavil sdílení své e-mailové adresy.
-

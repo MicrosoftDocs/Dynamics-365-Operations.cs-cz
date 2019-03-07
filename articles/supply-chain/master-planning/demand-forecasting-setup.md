@@ -1,13 +1,13 @@
 ---
-title: "Nastavení prognózy poptávky"
-description: "Toto téma popisuje úlohy nastavení, které je třeba provést, aby bylo možné používat prognózy poptávky."
+title: Nastavení prognózy poptávky
+description: Toto téma popisuje úlohy nastavení, které je třeba provést, aby bylo možné používat prognózy poptávky.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 59fb8938720ce1634735dd728eee3874660a4289
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: be962bffd9dfe756b444f6946990058971896a27
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330441"
 ---
-
 # <a name="demand-forecasting-setup"></a>Nastavení prognózy poptávky
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,7 @@ Prognóza poptávky generuje prognózy mezi více společnostmi. V aplikaci Micr
 
 Ve výchozím nastavení pokud nejsou přiřazeny žádné alokační klíče položek k členům skupiny mezipodnikového plánování, prognóza poptávky bude vypočtena pro všechny položky, které jsou přiřazeny ke všem alokačním klíčům položek ze všech společností v aplikaci Finance and Operations. Další možnosti pro filtrování společností a alokačních klíčů položek jsou k dispozici na stránce **Vygenerování statistické základní prognózy**. 
 
-Prohlédněte si počet položek, které jsou předvídány. Zbytečné položek mohou způsobit zvýšení nákladů při použití služby Microsoft Azure Machine Learning.
+Prohlédněte si počet položek, které jsou předvídány. Zbytečné položek mohou způsobit zvýšení nákladů při použití služby strojového učení Microsoft Azure.
 
 ## <a name="demand-forecasting-parameters"></a>Parametry tvorby prognóz poptávky
 K nastavení parametrů prognózy poptávky přejděte na **Hlavní plánování** &gt; **Nastavení** &gt; **Parametry tvorby prognóz poptávky**. Vzhledem k tomu, že prognózy poptávky jsou spuštěny mezi více společnostmi, toto nastavení je globální. Jinak řečeno nastavení platí pro všechny společnosti. 
@@ -64,7 +63,7 @@ Kdykoli je možné přidat dimenze prognózy na seznam dimenzí, které se použ
 
 Ne všechny položky se chovají stejným způsobem z perspektivy prognózy poptávky. Podobné položky mohou být seskupeny do jednoho alokačního klíče položky a pro každý alokační klíč položky lze nastavit parametry, jako například typy transakcí a nastavení metody prognózy. Klepněte na tlačítko **Alokační klíče položek** v levém podokně stránky **Parametry vytváření prognózy poptávky**. 
 
-Pokud chcete generovat prognózu, aplikace Finance and Operations používá webovou službu Machine Learning. Pro připojení ke službě je třeba zadat aplikaci Finance and Operations následující informace pro přihlášení ke službě Microsoft Azure Machine Learning Studio:
+Pokud chcete generovat prognózu, aplikace Finance and Operations používá webovou službu Machine Learning. Pro připojení ke službě je třeba zadat aplikaci Finance and Operations následující informace pro přihlášení do studia strojového učení Microsoft Azure:
 
 -   Klíč rozhraní API webové služby
 -   Koncový bod URL webové služby
@@ -86,7 +85,6 @@ Chcete-li zobrazit parametry, které lze konfigurovat pro službu vytváření p
 [Generování statistické základní prognózy](generate-statistical-baseline-forecast.md)
 
 [Ruční úpravy základní prognózy](manual-adjustments-baseline-forecast.md)
-
 
 
 

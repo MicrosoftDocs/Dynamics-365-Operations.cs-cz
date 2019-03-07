@@ -1,30 +1,29 @@
 ---
-title: "Odpojení klienta aplikace Talent"
-description: "Toto téma vysvětluje, jak postupovat při bezdůvodném odpojení odběratele od jeho prostředí."
+title: Odpojení klienta aplikace Talent
+description: Toto téma vysvětluje, jak postupovat při bezdůvodném odpojení odběratele od jeho prostředí.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 4f96b986059c179268f8a96ea7e7725831a93524
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303549"
 ---
-
 # <a name="talent-client-disconnects"></a>Odpojení klienta aplikace Talent
 
 [!include [banner](includes/banner.md)]
@@ -44,7 +43,7 @@ Odběratel je bezdůvodně odpojen od svého prostředí. Odběratel obdrží je
 
 K tomuto problému dochází často, když uživatelé jsou ve fázi implementace, porovnávají informace v produkčních a testovacích prostředích a zapomínají, že se pohybují mezi relacemi. Pokud uživatelé jsou v této fázi, pravděpodobně se s tímto problémem setkají.
 
-**Problém** 
+**Výdej** 
 
 **Typy prohlížeče:** Google Chrome, Internet Explorer a Microsoft Edge
 
@@ -55,4 +54,3 @@ Platforma Microsoft Dynamics 365 for Talent odpojuje uživatele, když jsou sou�
 Ujistěte se, že pro daný typ prohlížeče je současně otevřeno pouze jedno prostředí. Uživatelé mohou otevřít více relací do stejného prostředí (více záložek ve stejném prohlížeči.
 
 Uživatelé, kteří chtějí přeskakovat mezi dvěma prostředími současně, by měli otevřít každé prostředí v jiném typu prohlížeče. (Například uživatel A může zobrazit prostředí 1 v Chrome a prostředí 2 v Microsoft Edge.)
-

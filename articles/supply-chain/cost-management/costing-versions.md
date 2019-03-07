@@ -1,13 +1,13 @@
 ---
-title: "Nákladové verze"
-description: "Tento článek obsahuje informace o nákladových verzích, způsobu jejich udržování a typech dat, která lze do nich zahrnout. Hlavním účelem nákladové verze je to, že obsahuje záznamy o položkách, kategorie nákladů a vzorce pro výpočet nepřímých nákladů."
+title: Nákladové verze
+description: Tento článek obsahuje informace o nákladových verzích, způsobu jejich udržování a typech dat, která lze do nich zahrnout. Hlavním účelem nákladové verze je to, že obsahuje záznamy o položkách, kategorie nákladů a vzorce pro výpočet nepřímých nákladů.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a73be45d183f3cbdc19efbb9ee29fa621a113c66
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cb8e8193b3312a63042a44cb082a33a196cbc1be
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330142"
 ---
-
 # <a name="costing-versions"></a>Nákladové verze
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Hlavním důvodem pro povolení dat o nákupní ceně je definování záznamů 
 Chcete-li povolit obsah nákupních cen, je nutné nejprve určit skupinu výpočtu kusovníku, která obsahuje model nákladových cen pro nákupní ceny položky, a přiřadit skupinu výpočtu kusovníku k zakoupeným položkám. Model nákladových cen poté použijete pro skupinu výpočtu kusovníku při provádění výpočtů kusovníku, který k výpočtu prodejních cen vyráběných položek využívá plánované náklady . 
 
 Záznamy o nákupních cenách pro položky slouží také jako referenční informace. Změnou stavu záznamu o nákupní ceně položky z hodnoty **Čeká na zpracování** na hodnotu **Aktivní** můžete změnit základní nákupní cenu položky. Základní nákupní cena však není specifická pro pracoviště a lze ji ručně přepsat. Základní nákupní cena položky slouží jako výchozí nákupní cena na nákupních objednávkách.
-
 
 
 

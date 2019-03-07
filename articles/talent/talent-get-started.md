@@ -1,13 +1,13 @@
 ---
-title: "Začínáme s nápovědou pro aplikaci Talent"
-description: "Toto téma obsahuje informace o přizpůsobení uživatelského rozhraní podle vašich představ, stejně jako připojení k prostředkům nápovědy, které jsou k dispozici v produktu a dna webu docs.microsoft.com."
+title: Začínáme s nápovědou pro aplikaci Talent
+description: Toto téma obsahuje informace o přizpůsobení uživatelského rozhraní podle vašich představ, stejně jako připojení k prostředkům nápovědy, které jsou k dispozici v produktu a dna webu docs.microsoft.com.
 author: rschloma
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: ddd7d9315b61cb3aa5e23f86666752ca8280acbf
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303647"
 ---
 # <a name="get-started-with-talent"></a>Začínáme s nápovědou pro aplikaci Talent
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/08/2018
 V aplikaci Microsoft Dynamics 365 for Talent lze snadno upravit uživatelské rozhraní a nastavit volby, které učiní software intuitivnější podle vašich potřeb. Toto téma obsahuje odkazy na témata, která poskytují informace o přizpůsobení uživatelského rozhraní podle vašich požadavků. Témata rovněž obsahuje odkazy na informace, které vám pomohou nalézt informace v systému efektivně a přesně. 
 
 > [!NOTE] 
-> Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
+> Následující tři produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. Proto bude v tématech, která primárně souvisí s modulem Retail, název produktu Dynamics 365 for Retail. V tématech, která primárně souvisí s aplikací Talent, bude název produktu Dynamics 365 for Talent. V tématech, která primárně souvisí se základním produktem, bude název produktu Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
 ## <a name="personalizing-talent"></a>Přizpůsobení aplikace Talent 
 Následující témata ukazují, jak nastavit v aplikaci Dynamics 365 for Talent mnoho funkcí, které usnadňují dokončení práce včas. 
@@ -55,15 +55,14 @@ Následující témata vysvětlují používání vyhledávání a funkcí hled�
 
 -   [Vyhledání akce](../fin-and-ops/get-started/action-search.md) -Toto téma popisuje funkci vyhledávání akce. Hledání akce vám pomůže najít a spustit akce na stránce. Stránky v tomto produktu primárně vystavují příkazy v podoknech akcí, standardním podokně akcí, které se zobrazí v horní části stránky, a na panelech nástrojů, které se zobrazují v různých částech stránky.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 ### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
-Přejděte na [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.
+Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.
 
 ### <a name="blogs"></a>Blogy
-Názory, novinky a jiné informace o modulu Závazky a jiných řešeních naleznete v [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
+Názory, novinky a jiné informace o modulu Závazky a jiných řešeních naleznete v blogu [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
 
 ### <a name="videos"></a>Videa
-Prohlédněte si instruktážní videa, která jsou nyní k dispozici na kanálu [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
+Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 

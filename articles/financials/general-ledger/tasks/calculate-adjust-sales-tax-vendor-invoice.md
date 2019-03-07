@@ -1,13 +1,13 @@
---- 
-title: "Výpočet a úprava DPH na faktuře dodavatele"
-description: "Pokud původní zdrojový dokument zobrazí různé částky daně tak, jak se vypočítají, můžete je upravit před zaúčtováním."
+---
+title: Výpočet a úprava DPH na faktuře dodavatele
+description: Pokud původní zdrojový dokument zobrazí různé částky daně tak, jak se vypočítají, můžete je upravit před zaúčtováním.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, VendTableLookup, TaxTmpWorkTrans
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 803c038d907b68a3c72a83a3e035c4e08b8a8661
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 367772604bf6a3e1e0825144135da7dc12680619
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308913"
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>Výpočet a úprava DPH na faktuře dodavatele
 
@@ -49,5 +49,4 @@ Pokud původní zdrojový dokument zobrazí různé částky daně tak, jak se v
 18. Klikněte na Resetovat skutečné částky z vypočítaných částek.
 19. Klikněte na tlačítko OK.
 20. Klikněte na položku Uložit.
-
 

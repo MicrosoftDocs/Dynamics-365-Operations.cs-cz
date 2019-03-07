@@ -1,13 +1,13 @@
 ---
-title: "Úprava buněk definice řádku"
-description: "Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat."
+title: Úprava buněk definice řádku
+description: Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323633"
 ---
-
 # <a name="modify-row-definition-cells"></a>Úprava buněk definice řádku
 
 [!include [banner](../includes/banner.md)]
@@ -390,7 +389,7 @@ Některé účetní systémy podporují atributy účtů a transakcí ve finan�
 Buňka **Odkaz na finanční dimenze** obsahuje odkazy na finanční data, která mají být zahrnuta v každém řádku sestavy. Tato buňka obsahuje hodnoty dimenzí, ale místo nebo kromě hodnot segmentů a dimenzí lze zadat buňky v listu aplikace Microsoft Excel. Otevřete dialogové okno **Dimenze** kliknutím dvakrát na buňku **Odkaz na finanční dimenze**.
 
 > [!NOTE]
-> Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, nebo }. Chcete-li zadat informace pro řádek, které je již v definici řádku, přidejte informace do buňky **Odkaz na finanční dimenze**. Chcete-li přidat nové řádky, které odkazují na finanční data, použijte dialogové okno **Vložit řádky z** pro vytvoření nových řádků v definici sestavy. Název sloupce se změní podle toho, jak je nakonfigurován, jak je znázorněno v následující tabulce.
+> Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }. Chcete-li zadat informace pro řádek, který již je v definici řádků, přidejte tyto informace do buňky **Odkaz na finanční dimenze**. Chcete-li přidat nové řádky, které odkazují na finanční data, použijte dialogové okno **Vložit řádky z** pro vytvoření nových řádků v definici sestavy. Název sloupce se změní podle toho, jak je nakonfigurován, jak je znázorněno v následující tabulce.
 
 | Vybraný typ odkazu       | Popis sloupce Odkaz se změní na tento |
 |----------------------------------|----------------------------------------------------|
@@ -429,14 +428,14 @@ Když zadáte přirozenou hodnotu segmentu do dialogového okna **Dimenze** mů�
 Můžete zadat rozsah hodnot segmentů nebo dimenzí. Výhodou zadání rozsahu je, že nemusíte aktualizovat definici řádku pokaždé, když je přidána nová hodnota segmentu nebo hodnota dimenze do finančních dat. Například rozsah **+Účet=\[6100:6900\]** získá hodnoty z účtů 6100 až 6900 do částky řádku. Když rozsah zahrnuje zástupný znak (?), nebude návrhář sestav hodnotit rozsah znak po znaku. Místo toho určí dolní a horní konec rozsahu a potom zahrne koncové hodnoty a veškeré hodnoty mezi nimi.
 
 > [!NOTE]
-> Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, nebo }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
+> Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Rozsahy s více segmenty nebo dimenzemi
 
 Při zadání rozsahu kombinací více hodnot dimenzí se provádí porovnání rozsahu na základě ..\\financial-dimensions\\dimension-by-dimension basis. Porovnání rozsahu nelze provést po znacích nebo částečných segmentech. Například rozsah **+Účet=\[5000:6000\], Oddělení=\[1000:2000\], Nákladové středisko=\[00\]** zahrnuje pouze účty, které odpovídají každému segmentu. V tomto případě první dimenze musí být v rozmezí od 5000 až 6000, druhá dimenze musí být v rozmezí 1000 až 2000 a poslední dimenze musí být 00. Například **+ účet =\[5100\], oddělení =\[1100\], nákladové středisko =\[01\]** není zahrnuto v sestavě, protože poslední segment je mimo zadaný rozsah. Pokud hodnota segmentu zahrnuje mezery, vložte ji do hranatých závorek (\[ \]). Následující hodnoty jsou platné pro čtyřmístný segment: **\[ 234\], \[123 \], \[1 34\]**. Hodnoty dimenze mají být zadávány do hranatých závorek (\[ \]) a návrhář sestav tyto závorky přidá za vás. Pokud rozsah segmentu více nebo více dimenzí obsahuje zástupné znaky (? nebo \*), bude určen horní a dolní konec celého násobného segmentu a potom budou zahrnuty koncové hodnoty a veškeré hodnoty mezi nimi. Pokud máte velký rozsah, například celý rozsah účtů od 40000 do 99999, zadejte platný počáteční účet a koncový účet, kdykoli je to možné.
 
 > [!NOTE] 
-> Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, nebo }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
+> Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }. Můžete přidat ampersand (&) pouze při automatickém vytváření definic řádku pomocí dialogového okna **Vložit řádky z dimenzí**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Sčítání nebo odečítání z jiných účtů v definici řádku
 Chcete-li přičítat nebo odečítat peněžní částky jednoho účtu od peněžních částek jiného účtu, můžete použít znaménko plus (+) a znaménko minus (-) v buňce **Odkaz na finanční dimenze**. Následující tabulka zobrazuje přípustné formáty pro přičítání odkazů k finančním datům a pro jejich odečítání.
@@ -456,10 +455,10 @@ Chcete-li přičítat nebo odečítat peněžní částky jednoho účtu od pen�
 | Odečtení rozsahu hodnot segmentů                                                     | -Účet=\[1200:1205\]                                                                                       |
 | Odečtení rozsahu hodnot segmentů obsahujících zástupné znaky.                    | -Účet=\[120?:130?\]                                                                                       |
 
-Ačkoli můžete upravovat účty přímo, můžete použít také dialogové okno **Dimenze** k aplikaci správného formátování na vaše odkazy na finanční údaje. Všechny hodnoty mohou obsahovat zástupné znaky (? nebo \*). Návrhář sestav však nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : &, \*, \[, \], {, or }.
+Ačkoli můžete upravovat účty přímo, můžete použít také dialogové okno **Dimenze** k aplikaci správného formátování na vaše odkazy na finanční údaje. Všechny hodnoty mohou obsahovat zástupné znaky (? nebo \*). Návrhář sestav však nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }.
 
 > [!NOTE]
-> K odečtení hodnot musíte tyto hodnoty umístit do závorek. Zadáte-li například hodnotu **450?-(4509)**, bude zobrazena jako **+Účet==\[4509\]-Účet=\[450?\]** a říká návrháři sestav, aby odečetl částku segmentu účtu 4509 od částky jakéhokoli segmentu účtu, který má na začátku 450.
+> Chcete-li odečítat hodnoty, je nutné uzavřít tyto hodnoty do závorek. Zadáte-li například hodnotu **450?-(4509)**, bude zobrazena jako **+Účet==\[4509\]-Účet=\[450?\]** a říká návrháři sestav, aby odečetl částku segmentu účtu 4509 od částky jakéhokoli segmentu účtu, který má na začátku 450.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Přičítání nebo odečítání účtů od jiných účtů
 
@@ -533,4 +532,3 @@ Sada hodnot dimenze je pojmenovaná skupina hodnot dimenze. Sada hodnot dimenze 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "Nastavení parametrů lidských zdrojů pro konkrétní společnost"
-description: "Nastavení některých parametrů lidských zdrojů nesmí být sdílena napříč společnostmi, zatímco nastavení jiných parametrů jsou specifické pro společnost. Tento článek vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost."
+title: Nastavení parametrů lidských zdrojů pro konkrétní společnost
+description: Nastavení některých parametrů lidských zdrojů nesmí být sdílena napříč společnostmi, zatímco nastavení jiných parametrů jsou specifické pro společnost. Tento článek vysvětluje, jak nastavit parametry lidských zdrojů specifické pro společnost.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMParameters
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: f7ecd72a2a6ba4ba15e412e40508462f6ef0d218
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303642"
 ---
-
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Nastavení parametrů lidských zdrojů pro konkrétní společnost
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ Nastavení některých parametrů lidských zdrojů nesmí být sdílena napří
 Dvě stránky slouží k nastavení parametrů lidských zdrojů. Pro parametry, které jsou sdíleny napříč společnostmi, použijte stránku **Sdílené parametry lidských zdrojů**. Pro parametry, které jsou specifické pro společnost (jinými slovy nastavení se použije pro jednu společnost), můžete použít stránku **Parametry lidských zdrojů**. Na stránce **Parametry lidských zdrojů** jsou nastavení rozdělena mezi šest karet:
 
 -   Obecné
--   Nábor - není součástí aplikace Dynamics 365 for Talent
+-   Nábor - není součástí Dynamics 365 for Talent
 -   Kompenzace
 -   Číselné řady
 -   Opuštění z rodinných a lékařských důvodu (FMLA)
@@ -61,7 +60,6 @@ Nastavení na kartě **Pracovní volno** definují počet hodin, které musí za
 --------
 
 [Nastavení parametrů lidských zdrojů mezi právnickými osobami](set-up-hr-parameters-across-legal-entities.md)
-
 
 
 

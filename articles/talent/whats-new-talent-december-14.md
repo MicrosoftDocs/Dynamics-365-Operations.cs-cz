@@ -1,29 +1,29 @@
 ---
-title: "Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (14. prosince 2018)"
-description: "Toto téma popisuje funkce, které jsou v aktuální verzi aplikace Microsoft Dynamics 365 for Talent Core HR."
+title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (14. prosince 2018)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 844c23fc908c962203e644f1154cc480425d830b
 ms.openlocfilehash: 7d2866923efd7f115ad5290f35ed4fcac5e47573
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303504"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (14. prosince 2018)
 
@@ -96,7 +96,7 @@ Jakmile bude možné předpovídat, zobrazený zůstatek se změní na aktuáln�
 
 ### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Chyby mapování integrace s aplikací Finance and Operations
 
-Byly zjištěny následující chyby v aktuální šabloně pro integraci aplikace Talent s aplikací Dynamics 365 for Finance ad Operations. Nová šablona bude publikována brzy a bude použita pro všechny nové integrace projektů, které jsou vytvořeny. Pro existující integrace projektů lze mapování úkolu aktualizovat. Aktualizované mapování naleznete v následující tabulce. 
+Byly zjištěny následující chyby v aktuální šabloně pro integraci aplikace Talent s aplikací Dynamics 365 for Finance and Operations. Nová šablona bude publikována brzy a bude použita pro všechny nové integrace projektů, které jsou vytvořeny. Pro existující integrace projektů lze mapování úkolu aktualizovat. Aktualizované mapování naleznete v následující tabulce. 
 
 >[!NOTE]
 > Úkol Pracovní pozice do  přiřazení práce nadřazené pozice neintegruje data. Toto je problém, který je právě zkoumán. Aktuální mapování nelze nijak obejít. 
@@ -151,4 +151,3 @@ Aktualizované mapování by mělo vypadat jako následující obrázky.
 ![Úkol pracovníci pracovníkovi](./media/WorkerMapping.png)
 
 ![Transformace pole pohlaví](./media/WorkerTransform.png)
-

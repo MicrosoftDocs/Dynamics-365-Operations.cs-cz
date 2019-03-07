@@ -1,13 +1,13 @@
---- 
-title: "Rozdělení dlouhodobého majetku"
-description: "Tento průvodce záznamem úloh rozdělí procento jedné knihy majetku na novou knihu majetku."
+---
+title: Rozdělení dlouhodobého majetku
+description: Tento průvodce záznamem úloh rozdělí procento jedné knihy majetku na novou knihu majetku.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6be9de64265a4d7b5c91af3ee8acfce80c78e0f1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b4c1b39bcae1fa3830f3a217d1ad89e84cd72134
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333362"
 ---
 # <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
 
@@ -58,5 +58,4 @@ Tento průvodce záznamem úloh rozdělí procento jedné knihy majetku na novou
 3. Klikněte na položku Řádky.
     * Ověřte, že byly vytvořeny řádky deníku.  Transakce Oprava pořizovací ceny byla vytvořena pro původní majetek s cílem snížit hodnotu o procento uvedené během procesu rozdělení.  Je vytvořena transakce pořízení pro nový majetek na stejnou částku.  
 4. Klikněte na položku Zaúčtovat.
-
 

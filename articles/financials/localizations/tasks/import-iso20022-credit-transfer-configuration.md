@@ -1,13 +1,13 @@
---- 
-title: "Import konfigurace převodu kreditu ve formátu ISO20022"
-description: "Tento postup ukazuje, jak importovat konfiguraci elektronického výkaznictví pro platby dodavatelů."
+---
+title: Import konfigurace převodu kreditu ve formátu ISO20022
+description: Tento postup ukazuje, jak importovat konfiguraci elektronického výkaznictví pro platby dodavatelů.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3fbd2e39f488696ebe8db5579ed88595e246ce97
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 71c0175178203006e297466c4a37cd3e6319b6ea
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337341"
 ---
 # <a name="import-iso20022-credit-transfer-configuration"></a>Import konfigurace převodu kreditu ve formátu ISO20022
 
@@ -31,7 +31,7 @@ Tento postup ukazuje, jak importovat konfiguraci elektronického výkaznictví p
 
 Tento úkol byl vytvořen pomocí ukázkových dat společnosti DEMF, ale k jeho dokončení můžete použít ukázková data libovolné společnosti.
 
-Toto je první z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+Toto je první z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví. Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
 2. V seznamu dostupných poskytovatelů konfigurace vyberte Microsoft.
@@ -44,5 +44,4 @@ Toto je první z pěti úkolů, které společně popisují proces platby dodava
 8. Klepněte na tlačítko Importovat.
     * Pokud tlačítko Importovat není k dispozici, znamená to, že tato konfigurace je již po importu.  
 9. Klepněte na tlačítko Ano.
-
 

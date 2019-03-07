@@ -1,13 +1,13 @@
 ---
-title: "Obalové materiály a poplatky"
-description: "Poplatky za balicí materiál se recyklační společnosti hradí v určitých intervalech. Platí se částka za hmotnostní jednotku za každý materiál, ze kterého se skládá jednotka balného. Poplatky za balicí materiál jsou vypočítány a vykázány, ale nezaúčtují se žádné nikdy neúčtované transakce, protože poplatky se nepovažují za daně, které je třeba zaplatit úřadům."
+title: Obalové materiály a poplatky
+description: Poplatky za balicí materiál se recyklační společnosti hradí v určitých intervalech. Platí se částka za hmotnostní jednotku za každý materiál, ze kterého se skládá jednotka balného. Poplatky za balicí materiál jsou vypočítány a vykázány, ale nezaúčtují se žádné nikdy neúčtované transakce, protože poplatky se nepovažují za daně, které je třeba zaplatit úřadům.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c188651fe8ba3fe3f9678f36ab11ae886ef6f1cf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312294"
 ---
-
 # <a name="packing-materials-and-fees"></a>Obalové materiály a poplatky
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,6 @@ Pokud vaše společnost platí poplatky za obalový materiál, nezadávejte lice
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Tisk hmotností obalového materiálu na fakturách
 Na faktuře můžete vytisknout hmotnosti obalového materiálu a informovat o tom, kdo platí poplatky za obalový materiál. Hmotnosti se sčítají pro jednotlivé kódy obalu.
-
 
 
 

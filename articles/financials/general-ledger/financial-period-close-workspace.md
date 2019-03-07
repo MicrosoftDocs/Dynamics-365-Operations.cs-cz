@@ -1,13 +1,13 @@
 ---
-title: "Pracovní prostor uzavření finančního období"
-description: "V tomto článku je přehled pracovního prostoru Uzavření finančního období a příslušné konfigurace."
+title: Pracovní prostor uzavření finančního období
+description: V tomto článku je přehled pracovního prostoru Uzavření finančního období a příslušné konfigurace.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e9c3c7f00d0a0e4379547edc5199f4a9a6727f3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326899"
 ---
-
 # <a name="financial-period-close-workspace"></a>Pracovní prostor uzavření finančního období
 
 [!include [banner](../includes/banner.md)]
@@ -53,17 +52,17 @@ Pro úkoly se používají dva indikátory:
 -   Ikona vykřičníku označuje, že úkol je po splatnosti. Pro úkoly, které jsou po splatnosti, je datum splatnosti červeně zvýrazněno.
 -   Ikona visacího zámku označuje, že úkol závisí na jiných úkolech, které ještě nejsou dokončeny. Úkol, který je blokováno závislostmi, nelze označit jako dokončený. Závislosti úkolu lze nastavit pomocí akce **Nastavit závislost**.
 
-Název úkolu je hypertextový odkaz na stránku 365 Microsoft Dynamics nebo jinou webovou stránku, kam uživatel musí přejít k dokončení práce. Tento hypertextový odkaz můžete nastavit pomocí pole **Odkaz na úkol** při úpravě nebo vytvoření úkolu. 
+Název úkolu je hypertextový odkaz na stránku Microsoft Dynamics 365 for Operations, nebo jinou webovou stránku, kam uživatel musí přejít k dokončení práce. Tento hypertextový odkaz můžete nastavit pomocí pole **Odkaz na úkol** při úpravě nebo vytvoření úkolu. 
 
 Soubory, poznámky, obrázky a adresy URL můžete připojit k úkolu pomocí akce **Přílohy**. Můžete například označit čísla deníků, které jsou používány jako součást úkolu, přidat komentáře týkající se určitého úkolu nebo připojit soubor sestavy, který byl vytištěn pro úkol. Ikona se zobrazí ve sloupci **Přílohy** pro úkol, pokud je příloha k dispozici. 
 
 Možnost **Dokončení úkolu** musí být vybrána ručně po dokončení úkolu. Pokud je úkol označen jako dokončený, pole **Datum dokončení** je automaticky aktualizováno na aktuální datum a čas. Indikátory závislosti jsou také aktualizovány podle potřeby.
 
 ## <a name="all-financial-period-close-tasks-list-page"></a>Stránka seznamu Všechny úkoly uzavření finančního období
-Můžete zobrazit všechny úkoly pro aktuální a předchozí období uzavření ze stránky se seznamem **Všechny úkoly uzavření finančního období**. Tato stránka se seznamem je nejvhodnější pro historickou analýzu procesu uzavření, protože obsahuje informace o plánovaném datu splatnosti, datu skutečného dokončení a osobě, která úlohu dokončila. Informace na této stránce se seznamem můžete snadno exportovat do aplikace Excel pro vytváření sestav a účely auditování.
+Můžete zobrazit všechny úkoly pro aktuální a předchozí období uzavření ze stránky se seznamem **Všechny úkoly uzavření finančního období**. Tato stránka se seznamem je nejvhodnější pro historickou analýzu procesu uzavření, protože obsahuje informace o plánovaném datu splatnosti, datu skutečného dokončení a osobě, která úlohu dokončila. Informace na této stránce se seznamem můžete snadno exportovat do aplikace Microsoft Excel pro vytváření sestav a účely auditování.
 
 ## <a name="financial-period-close-configuration-page"></a>Stránka Konfigurace uzavření finančního období
-Než bude možné použít pracovní prostor **Uzavření finančního období**, je nutné nastavit proces v aplikaci Microsoft Dynamics 365 for Finance and Operations pomocí stránky **Konfigurace uzavření finančního období**. (Klikněte na tlačítko **Hlavní kniha** &gt; **Závěrka období** &gt; **Konfigurace uzavření finančního období**.)
+Než bude možné použít pracovní prostor **Uzavření finančního období**, je nutné nastavit proces v aplikaci Microsoft Dynamics 365 for Finance and Operations pomocí stránky **Konfigurace uzavření finančního období**. (Klikněte na tlačítko **Hlavní kniha** &gt; **Závěrka období** &gt; **Konfigurace uzavření finančního období**.)
 
 ### <a name="resources"></a>Zdroje
 
@@ -88,7 +87,7 @@ Pomocí šablony finanční uzávěrky definujte všechny úkoly, které jsou so
 
 Úkol v šabloně můžete přiřadit jedné nebo více společnostem, na které se vztahuje tento úkol. Pokud je jiná osoba je přiřazena k dokončení tohoto pracovního úsilí v každé společnosti, může být užitečné vytvořit více úkolů pro stejné pracovní úsilí. Vytvořte jeden úkol pro každou společnost. 
 
-Položka nabídky **Odkaz na úkol** je spojena s pracovním úsilím úkolu a lze ji použít k přechodu přímo na příslušnou stránku z odkazu na úkol v pracovním prostoru. Například úkol uzávěrky spuštění procesu přecenění měny závazků lze propojit s příslušnou stránkou **Přecenění cizí měny** stránky v 365 Microsoft Dynamics 365 for Finance and Operations. Můžete také odkazovat na externí adresu URL. 
+Položka nabídky **Odkaz na úkol** je spojena s pracovním úsilím úkolu a lze ji použít k přechodu přímo na příslušnou stránku z odkazu na úkol v pracovním prostoru. Například úkol uzávěrky spuštění procesu přecenění měny závazků lze propojit s příslušnou stránkou **Přecenění cizí měny stránky** v Microsoft Dynamics 365 for Finance and Operations. Můžete také odkazovat na externí adresu URL. 
 
 > [!TIP]
 > Pokud chcete odkázat konkrétní sestavu aplikace Management Reporter na úkol uzávěrky finančního období, můžete použít adresu URL sestavy. Chcete-li přistupovat k adrese URL sestavy, otevřete sestavu v Návrháři sestav a klikněte na možnost **Soubor** &gt; **Zobrazit sestavu**, aby se sestava otevřela v prohlížeči. Můžete zkopírovat adresu URL v řádku adresa v prohlížeči a vložit ji do pole **Odkaz na úkol** **URL**. 
@@ -106,7 +105,6 @@ Přiřaďte kalendář, který je vhodný pro plán uzávěrky, k určení praco
 Je nutné definovat také společnosti, které budou přidruženy k plánu uzávěrky. Pokud jsou šablony úlohy jsou přiřazeny k více společnostem, pro každou společnost, která je v plánu uzávěrky, bude vytvořen plán uzávěrky, který bude přiřazen k úkolu šablony. 
 
 Po dokončení plánu uzávěrky pro něho vyberte možnost **Uzavřeno**. Historie úloh bude stále k dispozici ze stránky se seznamem **Všechny úkoly uzavření finančního období**, ale plán uzávěrky bude odebrán z pracovního prostoru. Po označení plánu uzávěrky jako **Uzavřeno** nebudete moci přidat upravit nebo zrušit úlohy v tomto plánu.
-
 
 
 

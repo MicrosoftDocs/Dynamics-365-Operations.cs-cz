@@ -1,13 +1,13 @@
 ---
-title: "Synchronizace projektových smluv a projektů přímo z Project Service Automation do aplikace Finance and Operations"
-description: "Toto téma popisuje šablonu a základní úlohy, které se používají k synchronizaci projektových smluv a projektů přímo z aplikace Microsoft Dynamics 365 for Project Service Automation do aplikace Microsoft Dynamics 365 for Finance and Operations."
+title: Synchronizace projektových smluv a projektů přímo z Project Service Automation do aplikace Finance and Operations
+description: Toto téma popisuje šablonu a základní úkoly, které se používají k synchronizaci smluv o projektech a projektů přímo z Microsoft Dynamics 365 for Project Service Automation do Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,27 +17,26 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312110"
 ---
-
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronizace projektových smluv a projektů přímo z Project Service Automation do aplikace Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablonu a základní úlohy, které se používají k synchronizaci projektových smluv a projektů přímo z aplikace Microsoft Dynamics 365 for Project Service Automation do aplikace Microsoft Dynamics 365 for Finance and Operations.
+Toto téma popisuje šablonu a základní úkoly, které se používají k synchronizaci smluv o projektech a projektů přímo z Microsoft Dynamics 365 for Project Service Automation do Microsoft Dynamics 365 for Finance and Operations.
 
 > [!NOTE] 
-> Pokud používáte aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, musíte si nainstalovat KB 4074835.
+> Pokud používáte Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, je nutné nainstalovat KB 4074835.
 
 ## <a name="data-flow-for-project-service-automation-to-finance-and-operations"></a>Tok dat pro Project Service Automation a aplikaci Finance and Operations
 
 > [!NOTE]
-> Před použitím řešení integrace Project Service Automation do Finance and Operations byste se měli seznámit s funkcí integrace dat Microsoft Dynamics 365.
+> Před použitím řešení integrace Project Service Automation to Finance and Operations byste se měli seznámit s funkcí integrace dat Microsoft Dynamics 365.
 
 Řešení integrace Project Service Automation do Finance and Operations používá funkci integrace dat k synchronizaci dat mezi instancemi Project Service Automation and Finance and Operations. Šablona integrace, která jsou k dispozici s funkcí integrace dat, povoluje tok dat o projektech, projektových smlouvách, řádcích smlouvy projektu, a milnících řádků smlouvy projektu z aplikace Project Service Automation do Finance and Operations.
 
@@ -47,7 +46,7 @@ Následující obrázek znázorňuje, jak jsou synchronizována data mezi Projec
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
-Chcete-li získat přístup k dostupným šablonám, zvolte v centru správy Microsoft PowerApps **Projekty**a v pravém horním rohu vyberte **Nový projekt** pro volbu veřejných šablon.
+Chcete-li získat přístup k dostupným šablonám, zvolte v centru správy Microsoft PowerApps **Projekty** a v pravém horním rohu vyberte **Nový projekt** pro volbu veřejných šablon.
 
 K synchronizaci projektových smluv a projektů z aplikace Project Service Automation do aplikace Finance and Operations slouží následující šablona a základní úkoly:
 
@@ -111,7 +110,7 @@ Když se použije řešení integrace Project Service Automation to Finance and 
 
 K filtrování dat musíte použít Microsoft Power Query pro Excel, pokud jsou splněny následující podmínky:
 
-- Máte prodejní objednávku v Microsoft Dynamics 365 for Sales.
+- Máte prodejní objednávky v Microsoft Dynamics 365 for Sales.
 - Máte několik organizačních jednotek v Project Service Automation a tyto organizační jednotky budou namapovány na více právnických osob v Finance and Operations.
 
 Pokud musíte použít Power Query, postupujte podle následujících pokynů:
@@ -135,4 +134,3 @@ Na následujícím obrázku je příklad mapování úkolu šablony v integraci 
 [![Mapování šablony](./media/ProjectContractLinesMapping.JPG)](./media/ProjectContractLinesMapping.JPG)
 
 [![Mapování šablony](./media/ProjectContractLineMilestonesMapping.JPG)](./media/ProjectContractLineMilestonesMapping.JPG)
-

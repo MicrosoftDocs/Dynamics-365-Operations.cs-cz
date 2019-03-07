@@ -1,13 +1,13 @@
 ---
-title: "Konfigurace vyrovnání"
-description: "To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Toto téma popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky."
+title: Konfigurace vyrovnání
+description: To, jak a kdy jsou transakce vyrovnány, může být poměrně složité, proto je nutné pochopit a správně definovat parametry pro splnění požadavků společnosti. Toto téma popisuje parametry, které se používají k vyrovnání pro závazky i pohledávky.
 author: kweekley
 manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
 ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319263"
 ---
-
 # <a name="configure-settlement"></a>Konfigurace vyrovnání
 
 [!include [banner](../includes/banner.md)]
@@ -68,4 +67,3 @@ Abyste se vyhnuli dalším účetním položkám, straně Má dáti a Dal na ste
 
 -   Organizace často používají pevné dimenze k nulovému plnění a finanční dimenzi, která není požadována. Obvykle se jedná o případy pro rozvahové účty, jako jsou účty pohledávek a závazků. Účetní struktury lze použít pro nesledované finanční dimenze, které jsou obvykle vyplněny nulovými hodnotami.  Odebrání finanční dimenze pro rozvahové účty eliminuje nutnost použít pevné dimenze.
 -   Pokud vaše organizace vyžaduje pevné dimenze na hlavním účtu pohledávek/závazků, najděte způsob nastavení výchozí pevné dimenze pro platbu, tak, aby hodnota pevné dimenze byla uložena v transakci dodavatele pro platbu. To umožní systému obnovit hlavní účet pohledávek a závazků tak, aby zahrnoval hodnoty pevné dimenze. Hodnotu pevné dimenze lze definovat jako výchozí pro dodavatele nebo pro název deníku pro deník plateb.
-

@@ -1,31 +1,30 @@
 ---
-title: "Výběr mezi Retail Modern POS (MPOS) a Cloud POS"
-description: "Toto téma vysvětluje klíčové rozdíly mezi Retail Modern POS a Cloud POS. Také popisuje různé faktory, které prodejci implementující aplikaci Microsoft Dynamics 365 for Retail musí zvážit, aby mohli vytěžit pro své požadavky maximum."
+title: Výběr mezi Retail Modern POS (MPOS) a Cloud POS
+description: Toto téma vysvětluje klíčové rozdíly mezi Retail Modern POS a Cloud POS. Také popisuje různé faktory, které prodejci implementující aplikaci Microsoft Dynamics 365 for Retail musí zvážit, aby mohli vytěžit pro své požadavky maximum.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336237"
 ---
-
 # <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Výběr mezi Retail Modern POS (MPOS) a Cloud POS
 
 [!include [banner](includes/banner.md)]
@@ -43,7 +42,7 @@ Retail podporuje následující POS možnosti:
 - Retail Modern POS (MPOS) pro Microsoft Windows
 - MPOS pro Microsoft Windows Phone
 - MPOS pro Apple iPad nebo Google Android tablet
-- Cloud POS (CPOS), který podporuje prohlížeče Microsoft Edge, Internet Explorer a Google Chrome
+- Cloud POS (CPOS), které podporuje prohlížeče Microsoft Edge, Internet Explorer a Google Chrome
 
 Ve všech případech POS (MPOS a CPOS) sdílí stejný základní kód aplikace. Tento bod je důležitý z následujících důvodů:
 
@@ -61,7 +60,7 @@ Přestože MPOS a CPOS jsou převážně stejné, existují některé důležit�
 MPOS na zařízeních se systémem Windows, iOS nebo Android je aplikace, která je zabalená, nainstalována a servisovaná na takovém zařízení.
 
 - **Windows** – MPOS pro aplikaci Windows obsahuje celý kód aplikace a integrovanou službu commerce runtime (CRT). 
-- **iOS/Android** – Na těchto platformách se aplikace chová jako hostitel pro kód aplikace CPOS. Jinak řečeno, kód aplikace pochází z CPOS serveru na Microsoft Azure or the Retail Store Scale Unit (RSSU). Další informace naleznete v tématu [přehled Retail Store Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – Na těchto platformách se aplikace chová jako hostitel pro kód aplikace CPOS. Jinak řečeno, kód aplikace pochází ze serveru CPOS na Microsoft Azurenebo Retail Store Scale Unit (RSSU). Další informace naleznete v tématech [Přehled Retail Store Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### <a name="cpos"></a>CPOS
 
@@ -106,4 +105,3 @@ Při plánování POS implementace ve svých maloobchodech vezměte v úvahu ná
 - **Hardwarová zařízení/periferní zařízení** – Jedním z důležitých aspektů systému Retail POS je jeho schopnost používat periferní zařízení POS, například tiskárny, zásuvky s hotovostí nebo platební terminály. Ačkoliv všechny dostupné možnosti POS mohou použít periferní zařízení, pouze MPOS pro systém Windows je podporuje přímo. Pro všechny jiné aplikace se vyžaduje jedna nebo více hardwarových stanic. I když tento přístup přidá flexibilitu, je třeba nasadit, nakonfigurovat a obsluhovat další komponenty.
 - **Systémové požadavky** – Požadavky na systém pro POS se liší. Ujistěte se, že ověříte nejnovější informace před provedením výběru. Například vzhledem k tomu, že CPOS běží v prohlížeči, podporuje širokou škálu operačních systémů. Další informace o systémových požadavcích naleznete v části [Systémové požadavky pro nasazení cloudu](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Nasazení a údržba** – Složitost požadavků na nasazení a údržbu se může lišit v závislosti na výběru aplikace a nasazení. Například pro nasazení CPOS hostované na cloudu CPOS nemusíte instalovat a aktualizovat každé zařízení. Proto tento přístup výrazně snižuje složitost a náklady. Pokud však MPOS nasadíte na každé registrační pokladně a povolíte offline režim offline, a současně nasadíte sdílené hardwarové stanice, výrazně zvýšíte počet koncových bodů, které je třeba spravovat.
-

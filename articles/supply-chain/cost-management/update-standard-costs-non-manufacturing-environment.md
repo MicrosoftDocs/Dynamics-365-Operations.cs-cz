@@ -1,13 +1,13 @@
 ---
-title: "Aktualizace standardních nákladů v nevýrobním prostředí"
-description: "V tomto článku jsou pokyny k tomu, jak aktualizovat standardní náklady v nevýrobním prostředí."
+title: Aktualizace standardních nákladů v nevýrobním prostředí
+description: V tomto článku jsou pokyny k tomu, jak aktualizovat standardní náklady v nevýrobním prostředí.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4fa545aa6903bd6f789dda20ab5755ffe9a12b88
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0386ca1e5e7bf6e578ba2abf1b2c9eefe4dd2a02
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323012"
 ---
-
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Aktualizace standardních nákladů v nevýrobním prostředí
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Chcete-li opravit, upravit nebo aktualizovat standardní náklady nových polož
 4.  Pomocí stránky **Údržba nákladové verze** upravte příznak blokování a umožnit tak aktivaci záznamů čekajících nákladů ve druhé nákladové verzi.
 5.  Pomocí stránky **Aktivovat ceny** (kterou otevřete ze stránky **Údržba nákladové verze**) povolte všechny čekající záznamy nákladů položek ve druhé nákladové verzi. Čekající záznamy nákladů pro jednotlivé položky lze také povolit klepnutím na tlačítko **Aktivovat nezpracované ceny** na stránce **Cena položky**.
 6.  Pomocí stránky **Nastavení nákladové verze** upravte příznaky blokování ve druhé nákladové verzi pro zabránění další údržby dat. Zásady blokování zabraňují zadávání nových čekajících nákladů a aktivaci čekajících nákladů.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Formalizace obchodních procesů"
-description: "Toto téma vysvětluje, jak můžete použít funkci obchodního procesu k vytvoření šablony obchodního procesu pro procesy, které je třeba dokončit v rámci vaší organizace."
+title: Formalizace obchodních procesů
+description: Toto téma vysvětluje, jak můžete použít funkci obchodního procesu k vytvoření šablony obchodního procesu pro procesy, které je třeba dokončit v rámci vaší organizace.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGenericTemplateListpage, BusinessProcessGenericMyTemplates, BusinessProcessGroupAssignment
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
 ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303637"
 ---
 # <a name="formalize-business-processes"></a>Formalizace obchodních procesů
 
@@ -43,7 +43,7 @@ Vlastníka procesu lze definovat pro každý obchodní proces. Vlastník procesu
 Vlastník procesu nemůže vytvořit nové obchodní procesy nebo šablony obchodních procesů, nebo odstranit aktivní obchodní procesy nebo šablony obchodních procesů.
 
 ## <a name="tasks"></a>Úlohy
-Obchodní proces se často sklád z více úkolů. Některé úlohy, jako je například kontrola nabídek interních kurzů, lze dokončit v rámci aplikace Microsoft Dynamics 365 for Talent[?]. V tomto případě je možnost zvolena v poli **Odkaz na úkol**. Ostatní úlohy mohou zahrnovat revize nebo vyplňování stránek na webové stránce. V tomto případě je zvoleno **URL** v poli **Odkaz na úkol** a poté lze zadat webovou adresu. Pro externí a interní weby můžete zadat adresy URL. Můžete také vytvořit úkoly pro aktivity, které provádíte ručně, například kontrolu přístupu všech struktur. V takovém případě není požadován odkaz na úkol. Tato flexibilita vám umožňuje sledovat více druhů úloh v komplexním procesu.
+Obchodní proces se často sklád z více úkolů. Některé úlohy, jako je například kontrola nabídek interních kurzů, lze dokončit v rámci aplikace Dynamics 365 for Talent[?]. V tomto případě je možnost zvolena v poli **Odkaz na úkol**. Ostatní úlohy mohou zahrnovat revize nebo vyplňování stránek na webové stránce. V tomto případě je zvoleno **URL** v poli **Odkaz na úkol** a poté lze zadat webovou adresu. Pro externí a interní weby můžete zadat adresy URL. Můžete také vytvořit úkoly pro aktivity, které provádíte ručně, například kontrolu přístupu všech struktur. V takovém případě není požadován odkaz na úkol. Tato flexibilita vám umožňuje sledovat více druhů úloh v komplexním procesu.
 
 Úlohy lze přiřadit buď ke konkrétnímu pracovníkovi nebo pozici. Například manažer kompenzací a zaměstnaneckých výhod bude vždy osoba, která provádí kontrolu náhrad pojistného. Proto když vytvoříte tuto úlohu, vyberte **Pozice** v poli **Typ přiřazení** a poté zvolte **Manažer kompenzací a zaměstnaneckých výhod** v seznamu **Pozice**. Po spuštění obhodního procesu se přiřadí úloha k pracovníkovi, který je na pozici **Manažer kompenzací a zaměstnaneckých výhod**. Chcete-li přiřadit úkol konkrétnímu pracovníkovi, zvolte **Pracovník** v poli **Typ přiřazení** a poté vyberte příslušnou osobu.
 
@@ -74,5 +74,4 @@ Chcete-li vytvořit nebo kopírovat šablonu obchodního procesu, nebo spustot o
 - Zvolte **Spustit proces** pro spuštění vybraného obchodního procesu, přiřadění úlohy a vypočítání data splatnosti.
 
 Chcete-li zobrazit aktivní procesy a přidružené úlohy, otevřete pracovní prostor **Obchodní procesy**.
-
 

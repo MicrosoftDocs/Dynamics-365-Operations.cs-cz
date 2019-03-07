@@ -1,13 +1,13 @@
 ---
-title: "Nastavení produktů, které mohou být vyrobeny nebo pořízeny"
-description: "Produkty mohou být odebírány různými způsoby – mohou být produkovány (vyrobeny) nebo získané (nakupované). Tento článek popisuje některé typické body, které je třeba zvážit při konfiguraci produktů pro podporu více zdrojů."
+title: Nastavení produktů, které mohou být vyrobeny nebo pořízeny
+description: Produkty mohou být odebírány různými způsoby – mohou být produkovány (vyrobeny) nebo získané (nakupované). Tento článek popisuje některé typické body, které je třeba zvážit při konfiguraci produktů pro podporu více zdrojů.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a910b5782c8f15cfdd4cf93ea883bc28a5ce8e1a
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5ed8c93c13746249605ad8742549c23bb1e0e10
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "338445"
 ---
-
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>Nastavení produktů, které mohou být vyrobeny nebo pořízeny
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,6 @@ Získávání z více zdrojů se obvykle používá k zakoupení položky, kter�
 Při použití standardních nákladů lze pro vyráběnou položku vypočítat záznam o nákladech položky. Záznam o nákladech na položku však nemusí odpovídat standardním nákladům, které požadujete pro účely nákupu. V tomto případě je nutno standardní náklady ručně zadat a aktivovat pro záznam o nákladech na položku. Pro výpočet nákladů zvažte použití zvláštního kusovníku a postupu, který představuje kombinaci zásobování produktu v průběhu fiskálního období za účelem minimalizace odchylek během určité doby. Položku vyráběnou na jednom pracovišti lze také převést na jiné pracoviště. Z toho vyplývá, že náklady na položku je nutné ručně zadat a aktivovat pro pracoviště, na které položka převádí. Pokud vyráběnou položku použijete jako komponentu pro výrobky vyšší úrovně, je třeba s náklady na tuto komponentu pracovat jako se zakoupenou položkou. Tato směrnice platí bez ohledu na to, zda náklady komponenty byly vypočteny nebo ručně zadány. To znamená, že výpočet kusovníku musí pracovat s náklady na položku jako se zakoupenou komponentou namísto použití údajů o kusovníku a postupu položky k výpočtu nákladů. 
 
 Výpočtu lze předejít výběrem příznaku **Zastavit rozpad**, který je vložen do skupiny výpočtu kusovníku přiřazené k dané položce. Chcete-li zabránit požadavkům na rozpad u výpočtů hlavního plánování prostřednictvím položky, nastavte ochrannou dobu rozpadu na hodnotu 0 (nula) dní pro disponibilitu položky nebo ve skupině disponibility. Kalkulace hlavního plánování bude pracovat s položkou jako s nakoupenou položkou a nebudou prováděny další výpočty pro údaje o kusovníku a postupu položky.
-
 
 
 

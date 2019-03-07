@@ -1,37 +1,36 @@
 ---
-title: "Synchronizace produktů v aplikaci Finance and Operations do produktů ve službě Field Service"
-description: "Toto téma popisuje šablony a základní úlohu, které se používají k synchronizaci produktů z aplikace Microsoft Dynamics 365 for Finance and Operations do aplikace Microsoft Dynamics 365 for Field Service."
+title: Synchronizace produktů v aplikaci Finance and Operations do produktů ve službě Field Service
+description: Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: 3f26240ec289f5ddcc2682e598bbf93f516b99af
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
-ms.openlocfilehash: bf5de13fee6db1b467c1cf4d5cc65b46c67b29fe
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316319"
 ---
-
 # <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>Synchronizace produktů v aplikaci Finance and Operations do produktů ve službě Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablony a základní úlohu, které se používají k synchronizaci produktů z aplikace Microsoft Dynamics 365 for Finance and Operations do aplikace Microsoft Dynamics 365 for Field Service.
+Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
 
 Používaná šablona **Produkty Field Service (Fin and Ops do Field Service)** je založena na šabloně **Produkty (Fin a Ops do Sales) – Direct** z modulu Prospect to Cash. Další informace naleznete v tématu [Produkty (Fin and Ops na Sales) – přímé](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
@@ -74,4 +73,3 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>Produkty Field Service (Fin and Ops do Field Service) : Produkty - Produkty
 
 [![Mapování šablony v integraci dat](./media/FSProduct.png)](./media/FSProduct.png)
-

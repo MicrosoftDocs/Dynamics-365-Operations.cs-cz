@@ -1,13 +1,13 @@
 ---
-title: "Nastavení displeje mobilního zařízení skladu"
-description: "Tento článek popisuje, jak nastavit vzhled displeje mobilního zařízení a namapovat klávesové zkratky na ovládací prvky, jako jsou například tlačítka."
+title: Nastavení displeje mobilního zařízení skladu
+description: Tento článek popisuje, jak nastavit vzhled displeje mobilního zařízení a namapovat klávesové zkratky na ovládací prvky, jako jsou například tlačítka.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16f332da00d2230ecb4cebc526b6456314564e55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328026"
 ---
-
 # <a name="warehouse-mobile-device-display-settings"></a>Nastavení displeje mobilního zařízení skladu
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,7 @@ V tomto poli je vysvětlení částí výrazu:
 -   **&lt;uživatelské jméno hostitele&gt;** – Regulární výraz .NET shodující se s žadatelem názvu sítě.
 -   **&lt;agent uživatele&gt;** – Regulární výraz .NET shodující se s identifikátorem prohlížeče použitého žadatelem.
 
-Následující příklad umožňuje použití aplikace Internet Explorer 8.
+Následující příklad umožňuje použití aplikace Internet Explorer 8:
 
 Request.UserHostAddress=.\*|HostName=.\*|Request.UserAgent=MSIE\\s8\\.0
 
@@ -101,7 +100,6 @@ Ve stejném souboru můžete zadat více než jeden výraz. Každý výraz musí
 --------
 
 [Konfigurace mobilních zařízení pro práci ve skladu](configure-mobile-devices-warehouse.md)
-
 
 
 

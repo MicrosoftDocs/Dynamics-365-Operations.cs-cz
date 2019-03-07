@@ -1,13 +1,13 @@
 ---
-title: "Přidání ovládacího prvku doporučení na obrazovku transakce na zařízeních POS"
-description: "Toto téma popisuje, jak přidat ovládací prvek doporučení na obrazovku transakcí na zařízení POS pomocí návrháře rozložení obrazovky v aplikaci Microsoft Dynamics 365 for Retail."
+title: Přidání ovládacího prvku doporučení na obrazovku transakce na zařízeních POS
+description: Toto téma popisuje, jak přidat ovládací prvek doporučení na obrazovku transakcí na zařízení POS pomocí návrháře rozložení obrazovky v aplikaci Microsoft Dynamics 365 for Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320436"
 ---
-
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Přidání ovládacího prvku doporučení na obrazovku transakce na zařízeních POS
 
 [!include [banner](includes/banner.md)]
@@ -67,7 +66,7 @@ K dispozici jsou dvě možnosti konfigurace. Vyberte možnost, která nejlépe v
     [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 3. Návrháře rozložení uložíte a zavřete kliknutím na **X**.
-4. V aplikaci Dynamics 365 for Retail přejděte na **Maloobchod** &gt; **IT pro maloobchod** &gt; **Plány distribuce**.
+4. V aplikaci Dynamics 365 for Retail přejděte do **Maloobchod** &gt; **IT pro maloobchod** &gt; **Plány distribuce**.
 5. V seznamu vyberte možnost  **1090, Pokladny**.
 6. Klikněte na možnost **Spustit**.
 
@@ -88,11 +87,10 @@ K dispozici jsou dvě možnosti konfigurace. Vyberte možnost, která nejlépe v
 7. V poli **Obrázek** zvolte obrázek, který se zobrazí na kartě.
 8. Klepněte na tlačítko **OK**. Nová karta se zobrazí v mřížce tlačítek.
 9. Návrháře rozložení uložíte a zavřete kliknutím na **X**.
-10. V aplikaci Dynamics 365 for Retail přejděte na **Maloobchod** &gt; **IT pro maloobchod** &gt; **Plány distribuce**.
+10. V aplikaci Dynamics 365 for Retail přejděte do **Maloobchod** &gt; **IT pro maloobchod** &gt; **Plány distribuce**.
 11. V seznamu vyberte možnost  **1090, Pokladny**.
 12. Klikněte na možnost **Spustit**.
 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přehled doporučení přizpůsobeného produktu](personalized-product-recommendations.md)
-

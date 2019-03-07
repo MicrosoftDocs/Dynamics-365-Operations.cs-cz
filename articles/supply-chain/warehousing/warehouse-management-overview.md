@@ -1,13 +1,13 @@
 ---
-title: "Řízení skladu"
-description: "Pomocí správy skladu můžete sledovat a automatizovat procesy skladu."
+title: Řízení skladu
+description: Pomocí správy skladu můžete sledovat a automatizovat procesy skladu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSParameters
 audience: Application User
 ms.reviewer: josaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7c9613070e077bced4b272b136985de5f4ddbdd0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fc039b3c35c9ff8f40bf671e523104031c598171
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335248"
 ---
 # <a name="warehouse-management"></a>Řízení skladu
 
 [!include [banner](../includes/banner.md)]
 
-Modul Řízení skladu pro aplikaci Dynamics 365 for Finance and Operations umožňuje správu skladových procesů ve výrobních, distribučních a maloobchodních společnostech. Tento modul má celou řadu funkcí pro podporu skladového areálu na optimální úrovni v jakémkoliv čase. Řízení skladu je plně integrováno s ostatními obchodními procesy v aplikaci Finance and Operation, jako je například přeprava, výroba, řízení kvality, nákup, převod, prodej a vrácení.
+Modul správy skladu pro Dynamics 365 for Finance and Operations umožňuje spravovat procesy skladu ve výrobě, distribuci a maloobchodních společnostech. Tento modul má celou řadu funkcí pro podporu skladového areálu na optimální úrovni v jakémkoliv čase. Řízení skladu je plně integrováno s ostatními obchodními procesy v aplikaci Finance and Operation, jako je například přeprava, výroba, řízení kvality, nákup, převod, prodej a vrácení.
 
 ## <a name="get-started"></a>Začínáme
 Abyste mohli začít pracovat s modulem Řízení skladu, je třeba dokončit nastavení obecných parametrů skladu pro podporu obchodních procesů vaší společnosti.
@@ -64,14 +64,13 @@ Je nutné konfigurovat komponenty pro vstupní a výstupní workflowy procesu sk
 - Výdej seskupení
 - Jednoduchý cross docking
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 ### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
-Přejděte na [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.
+Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.
 
 ### <a name="blogs"></a>Blogy
-Názory, novinky a jiné informace o modulu Řízení skladu a jiných řešeních naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog).
+Názory, novinky a jiné informace o modulu Řízení skladů a jiných řešeních naleznete v blogu [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog).
 
 
  
-
 

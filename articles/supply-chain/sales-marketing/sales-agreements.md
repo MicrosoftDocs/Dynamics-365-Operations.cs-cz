@@ -1,13 +1,13 @@
 ---
-title: "Prodejní smlouvy"
-description: "V tomto tématu jsou informace o prodejních smlouvách. Prodejní smlouva je smlouva, která zaváže odběratele k nákupu produktů v určitém množství nebo stanovené částce za určitý čas výměnou za zvláštní ceny nebo slevy."
+title: Prodejní smlouvy
+description: V tomto tématu jsou informace o prodejních smlouvách. Prodejní smlouva je smlouva, která zaváže odběratele k nákupu produktů v určitém množství nebo stanovené částce za určitý čas výměnou za zvláštní ceny nebo slevy.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4ab396d06383e3d6fc7bfab2e01f1afe4aa8fc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309511"
 ---
-
 # <a name="sales-agreements"></a>Prodejní smlouvy
 
 [!include [banner](../includes/banner.md)]
@@ -100,7 +99,7 @@ Pokud jste vytvořili (vydali) prodejní objednávku proti prodejní smlouvě, n
 | Množství                                                          | Pokud zadáte množství přesahující množství, které je specifikováno na řádku prodejní smlouvy, kde je označeno pole **Max je vynuceno**, zobrazí se zpráva s dotazem, zda chcete uložit upravené množství. Klepněte na tlačítko **Ano** pro odebrání odkazu na řádek prodejní smlouvy a přepočítání ceny. Klepněte na tlačítko **Ne** pro odebrání odkazu na řádek prodejní smlouvy bez přepočítání ceny.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Vrácení zboží objednaného z prodejní smlouvy
-Když odběratel vrací produkt, který byl objednán z prodejní smlouvy, aplikace Microsoft Dynamics 365 for Finance and Operations může vyhledat a automaticky aktualizovat závazek prodejní smlouvy tak, aby odrážel změny v množství nebo částce. Vytvořením vratky na základě původní prodejní objednávky, která je propojena s prodejní smlouvou, vytvoříte vztah mezi závazkem prodejní smlouvy, řádkem prodejní objednávky a fakturou vratky.  
+Když odběratel vrací produkt, který byl objednán z prodejní smlouvy, Microsoft Dynamics 365 for Finance and Operations může vyhledat a automaticky aktualizovat závazek prodejní smlouvy tak, aby odrážel změny v množství nebo částce. Vytvořením vratky na základě původní prodejní objednávky, která je propojena s prodejní smlouvou, vytvoříte vztah mezi závazkem prodejní smlouvy, řádkem prodejní objednávky a fakturou vratky.  
 
 Pokud nechcete odečíst množství vrácených položek ze závazku prodejní smlouvy, můžete použít ovládací prvek **Odebrat odkaz** na stránce **Vratka** k odebrání propojení mezi vratkou a závazkem prodejní smlouvy. Pokud budete muset obnovit propojení později, klepněte na tlačítko **Vytvořit odkaz**.  
 
@@ -111,7 +110,6 @@ V některých situacích, kdy vytváření prodejních objednávek proběhlo nep
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Finanční dimenze pro prodejní smlouvy
 Můžete kopírovat finanční dimenze, záhlaví dokladů nebo jednotlivé řádky prodejní smlouvy. Dimenze pro záhlaví smlouvy nebo řádku smlouvy lze změnit kdykoliv. V takovém případě dimenze jsou automaticky zkopírovány do záhlaví vydání nebo řádku vydání u vydané objednávky.
-
 
 
 

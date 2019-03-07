@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření kontroly výkonnosti"
-description: "Tato procedura ukazuje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly."
+---
+title: Vytvoření kontroly výkonnosti
+description: Tato procedura ukazuje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: 437a63159f0333434175acce081fa4ff417c334b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338468"
 ---
 # <a name="create-a-performance-review"></a>Vytvoření kontroly výkonnosti
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura ukazuje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly. Tato procedura byla vytvořena pomocí ukázkových dat společnosti USMF. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+Tato procedura ukazuje, jak vytvořit kontrolu výkonnosti, a popisuje účel pro každou část kontroly. Tato procedura byla vytvořena pomocí ukázkových dat společnosti USMF. Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
 1. Klikněte na možnost Samoobsluha pro zaměstnance.
 2. Kliknutím na Nová kontrola vytvořte novou kontrolu.
@@ -79,5 +79,4 @@ Tato procedura ukazuje, jak vytvořit kontrolu výkonnosti, a popisuje účel pr
     * S tím, jak recenze prochází jednotlivými stavy, zaměstnanec a manažer můžou přidávat komentáře pro každý cíl nebo kompetenci.  
 42. Klepněte na kartu Podpisy.
     * Pracovník a manažer můžou recenzi podepsat. Po dokončení všech požadovaných podpisů je stav změněn na hodnotu Dokončeno a nelze provést žádné další změny.  
-
 

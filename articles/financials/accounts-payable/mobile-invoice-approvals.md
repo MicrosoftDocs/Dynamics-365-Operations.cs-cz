@@ -1,13 +1,13 @@
 ---
-title: "Mobilní schvalování faktur"
-description: "Toto téma poskytuje praktický přístup k navrhování mobilních scénářů v aplikaci Dynamics 365 for Finance and Operations převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití."
+title: Mobilní schvalování faktur
+description: Toto téma poskytuje praktický přístup k navrhování mobilních scénářů v Dynamics 365 for Finance and Operations převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314387"
 ---
-
 # <a name="mobile-invoice-approvals"></a>Mobilní schvalování faktur
 
 [!include [banner](../includes/banner.md)]
 
-Mobilní funkce v Microsoft Dynamics 365 for Finance and Operations umožňují podnikovým uživatelům navrhovat mobilní prostředí. Pro pokročilé scénáře platforma také vývojářům umožňuje rozšířit možnosti podle vlastních potřeb. Nejúčinnějším způsobem, jak se naučit některé nové pojmy v oblasti mobilních zařízení, je projít proces navrhování několik scénářů. Toto téma poskytuje praktický přístup k navrhování mobilních scénářů převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití. Toto téma by vám mělo pomoci navrhnout jiné varianty scénářů a lze je také použít pro další scénáře, které nesouvisejí s fakturami dodavatele.
+Mobilní funkce v aplikaci Microsoft Dynamics 365 for Finance and Operations umožňují obchodnímu uživateli navrhovat mobilní rozhraní. Pro pokročilé scénáře platforma také vývojářům umožňuje rozšířit možnosti podle vlastních potřeb. Nejúčinnějším způsobem, jak se naučit některé nové pojmy v oblasti mobilních zařízení, je projít proces navrhování několik scénářů. Toto téma poskytuje praktický přístup k navrhování mobilních scénářů převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití. Toto téma by vám mělo pomoci navrhnout jiné varianty scénářů a lze je také použít pro další scénáře, které nesouvisejí s fakturami dodavatele.
 
 <a name="prerequisites"></a>Požadavky
 -------------
@@ -37,7 +36,7 @@ Mobilní funkce v Microsoft Dynamics 365 for Finance and Operations umožňují 
 | Předpoklad                                                                                            | popis                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Předběžná verze mobilní příručky                                                                                |[Mobilní platforma](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | Prostředí, které má Microsoft Dynamics 365 for Operations verzi 1611 a Microsoft Dynamics for Operations aktualizaci platformy 3 (listopad 2016)                   |
+| Dynamics 365 for Finance and Operations                                                                             | Prostředí, které má Microsoft Dynamics 365 for Operations verzi 1611 a Microsoft Dynamics for Operations s aktualizací Platform Update 3 (listopad 2016)                   |
 | Nainstalujte opravu hotfix KB 3204341.                                                                              | Záznamník úloh může omylem zaznamenat dva příkazy k zavření rozevíracích dialogových oken, které jsou součástí aktualizace 3 Dynamics 365 for Operations (aktualizace z listopadu 2016) |
 | Nainstalujte opravu hotfix KB 3207800.                                                                              | Tato oprava hotfix umožňuje zobrazovat přílohy v mobilním klientovi, který je zahrnutý v aktualizaci 3 platformy Dynamics 365 for Operations (aktualizace z listopadu 2016).           |
 | Nainstalujte opravu hotfix KB 3208224.                                                                              | Kód aplikace pro mobilní aplikaci schvalování faktur dodavatele je zahrnut v aplikaci Microsoft Dynamics AX 7.0.1 (květen 2016).                          |
@@ -126,7 +125,7 @@ Platí zásada, abyste při práci s návrhářem mobilních aplikací nezapomn�
 ### <a name="create-the-workspace"></a>Vytvoření pracovního prostoru
 
 1.  V prohlížeči otevřete Finance and Operations a přihlaste se.
-2.  Po přihlášení přidejte k adrese URL text **&mode=mobile**, jak ukazuje následující příklad, a aktualizujte stránku: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
+2.  Po přihlášení přidejte k adrese URL **&mode=mobile**, jak ukazuje následující příklad, a aktualizujte stránku: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
 3.  Klikněte na tlačítko **Nastavení** (ozubené kolo) v pravém horním rohu stránky, a pak klikněte na **Mobilní aplikace**. Návrhář mobilní aplikace se musí zobrazit stejně jako Záznam úloh.
 4.  Kliknutím na tlačítko **Přidat** vytvořte nový pracovní prostor. V tomto příkladu pojmenujte pracovní prostor **Moje schválení**.
 5.  Zadejte popis.
@@ -488,7 +487,6 @@ Tyto změny lze provést pro scénář 1, na základě požadavků pro scénář
     3.  V ideálním případě by rozdělení v tomto scénáři měla zobrazovat v kontextu řádku faktury. Proto se ujistěte, že uživatel může přejít k podrobnostem řádky, aby viděl stránku distribuce. Použijte možnost odkazu stránky k navázat procházení na detaily, stejně jako u stránek záhlaví a podrobností v scénáři 1.
 
 2.  Vzhledem k tomu, že na rozdělení v scénáři 2 (prodejní daně, poplatky a tak dále) se očekává více než jeden typ částky, je užitečné zobrazit popis typu Částka. (Tyto informace jsme v scénáři 1 vynechali).
-
 
 
 

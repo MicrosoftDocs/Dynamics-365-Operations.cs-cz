@@ -1,13 +1,13 @@
---- 
-title: "Nastavení způsobu platby pro převody kreditu ve formátu ISO20022"
-description: "Tento postup ukazuje, jak nastavit metodu platby dodavatele pro převedení kreditu ISO20022 nebo jakýkoli jiný typ platby pomocí elektronických sestav k vygenerování souboru."
+---
+title: Nastavení způsobu platby pro převody kreditu ve formátu ISO20022
+description: Tento postup ukazuje, jak nastavit metodu platby dodavatele pro převedení kreditu ISO20022 nebo jakýkoli jiný typ platby pomocí elektronických sestav k vygenerování souboru.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c9209006074fb9da2c3c2ffaa2af4adecfcc1aa9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: bed51f8749dfa0264ad39f51f9ceb295ac46fe93
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311811"
 ---
 # <a name="set-up-method-of-payment-for-iso20022-credit-transfer"></a>Nastavení způsobu platby pro převody kreditu ve formátu ISO20022
 
@@ -33,7 +33,7 @@ Před provedením tohoto úkolu musíte exportovat konfigurace formátu a nastav
 
 Tento úkol byl vytvořen pomocí ukázkových dat společnosti DEMF.
 
-Toto je třetí z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+Toto je třetí z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví. Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
 1. Přejděte do nabídky Závazky > Nastavení platby > Metody platby.
 2. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat v poli Metody platby pomocí hodnoty „SEPA CT“.
@@ -47,5 +47,4 @@ Toto je třetí z pěti úkolů, které společně popisují proces platby dodav
 9. V poli Typ účtu vyberte „Banka“.
 10. Zadejte hodnoty DEMF OPER do pole Platební účet.
 11. Klikněte na položku Uložit.
-
 

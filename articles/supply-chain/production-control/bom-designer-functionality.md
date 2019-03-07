@@ -1,13 +1,13 @@
 ---
-title: "Funkce návrháře kusovníku"
-description: "Toto téma popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM)."
+title: Funkce návrháře kusovníku
+description: Toto téma popisuje, jak můžete na stránce Návrhář kusovníku navrhnout a používat stromové struktury pro kusovníky (BOM).
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMDesigner
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d3bae68c9daf7aaaee1802e1def64d04ccea01b8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b7d4530ecccf18d9370d84ff2b61be1514b80192
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338146"
 ---
-
 # <a name="bom-designer-functionality"></a>Funkce návrháře kusovníku
 
 [!include [banner](../includes/banner.md)]
@@ -65,7 +64,7 @@ Filtr, který je použit pro kusovník a postup se zobrazí v záhlaví návrhá
 <tbody>
 <tr class="odd">
 <td>Dimenze produktu</td>
-<td>Pokud je vybraný hotový produkt základním produktem, můžete u hlavního výběru definovat aktivní dimenze produktu. <strong>Poznámka:</strong> Pokud otevřete návrhář kusovníku pro produkt, který není základní, v dialogovém okně <strong>Filtr</strong> nebude možné vybrat žádné dimenze produktu.</td>
+<td>Pokud je vybraný hotový produkt základním produktem, můžete u hlavního výběru definovat aktivní dimenze produktu. <strong>Poznámka:</strong>: Pokud otevřete návrhář kusovníku pro produkt, který není základní, v dialogovém okně <strong>Filtr</strong> nebude možné vybrat žádné dimenze produktu.</td>
 </tr>
 <tr class="even">
 <td>Lokalita</td>
@@ -117,7 +116,6 @@ Kliknutím na tlačítko **Nastavení** můžete upravit informace zobrazené ve
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kusovník         | Pomocí zaškrtávacích políček vyberte kritéria, která se zobrazí ve stromové struktuře. V návrháři kusovníku jsou vybraná kritéria zobrazena v dolní části obou tabulek. |
 | Trasa       | Pomocí zaškrtávacích políček vyberte kritéria, která se zobrazí pro postupy.                                                                                    |
-
 
 
 

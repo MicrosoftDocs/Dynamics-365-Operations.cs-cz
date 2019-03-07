@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování"
-description: "Tento postup popisuje, jak vytvořit nový stav životního cyklu produktu s vyloučením produktů z hlavního plánování a výpočtu úrovně Kusovníku."
+---
+title: Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování
+description: Tento postup popisuje, jak vytvořit nový stav životního cyklu produktu s vyloučením produktů z hlavního plánování a výpočtu úrovně Kusovníku.
 author: cvocph
 manager: AnnBe
 ms.date: 12/05/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 156972cdbf4ffb02b01b00972cc83d003d941378
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 1685e8eb706e29ef5b195e9163bf19345fee78b6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326347"
 ---
 # <a name="create-a-product-lifecycle-state-to-exclude-products-from-master-planning"></a>Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování
 
@@ -43,5 +43,4 @@ Tento postup popisuje, jak vytvořit nový stav životního cyklu produktu s vyl
 4. Klikněte na položku Upravit.
 5. Označte v seznamu vybraný řádek.
 6. V poli Stav cyklu životnosti produktu zadejte nebo vyberte hodnotu.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Nákladové kategorie, které se používají v modulu Řízení výroby a Řízení a účetnictví projektů"
-description: "Některé typy výrobní práce se mohou vztahovat na odhadovaný čas projektu a zprávy. Tento článek obsahuje informace o nákladových kategoriích, které je nutné definovat pro tyto typy výrobních prací pro účely výroby a projektů."
+title: Nákladové kategorie, které se používají v modulu Řízení výroby a Řízení a účetnictví projektů
+description: Některé typy výrobní práce se mohou vztahovat na odhadovaný čas projektu a zprávy. Tento článek obsahuje informace o nákladových kategoriích, které je nutné definovat pro tyto typy výrobních prací pro účely výroby a projektů.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cab4629740e92f9075b7afc7a5d228b2e01c4664
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d641ce950aed87b0cf6763fc9dae67ef47268b8d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326025"
 ---
-
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Nákladové kategorie, které se používají v modulu Řízení výroby a Řízení a účetnictví projektů
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,6 @@ Některé typy výrobní práce se mohou vztahovat na odhadovaný čas projektu 
 -   Účty hlavní knihy, které souvisí s náklady a prodeji, jsou obvykle definovány pro skupinu kategorií přiřazenou kategorii nákladů. Konkrétní účty ale lze definovat pro samostatnou kategorii nákladů.
 
 Další tlačítka na stránce **Nákladové kategorie** poskytují přístup k informacím souvisejícím s projektem o vybrané kategorii nákladů. Můžete například zobrazit transakce související s projektem, definovat zaměstnance nebo projekty, definovat hodinové náklady a prodejní ceny, nebo zobrazit sestavy.
-
 
 
 

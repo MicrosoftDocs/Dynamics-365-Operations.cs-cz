@@ -1,13 +1,13 @@
 ---
-title: "Rozvrh převodů kanbanu podporuje skenery čárových kódů"
-description: "Rozvrh převodů kanbanu podporuje vstup ze skeneru skrze widget pro skener čárového kódu, který umožňuje vybrat, zahájit, dokončit a vyprázdnit kanbanovou úlohu."
+title: Rozvrh převodů kanbanu podporuje skenery čárových kódů
+description: Rozvrh převodů kanbanu podporuje vstup ze skeneru skrze widget pro skener čárového kódu, který umožňuje vybrat, zahájit, dokončit a vyprázdnit kanbanovou úlohu.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e63a33af63144b78d0c375022b9802e11c255598
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a8393efd51032271d3023f1e0569425a16222cc3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319447"
 ---
-
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Rozvrh převodů kanbanu podporuje skenery čárových kódů
 
 [!include [banner](../includes/banner.md)]
@@ -45,11 +44,11 @@ Na pevné záložce **Registrace skeneru** můžete vybrat režim registrace, kt
 | Prázdné                 | Registrovat manipulační jednotku materiálu odkazovanou kanbanovou kartou jako prázdnou.              |
 | Vybrat                | Registrovat číslo kanbanové karty a automaticky vybrat odkazovanou úlohu ze seznamu kanbanu. |
 
- 
-<a name="registration-mode-select"></a>Režim registrace – Nastavit
+ 
+Režim registrace – Nastavit
 ------------------------
 
-Pokud používáte čtečku čárových kódů pro výběr úlohy, režim zobrazení kanbanové desky se změní. V tomto režimu platí následující podmínky:
+Pokud používáte čtečku čárových kódů pro výběr úlohy, režim zobrazení kanbanové desky se změní.V tomto režimu platí následující podmínky:
 
 -   Zobrazí se pouze skenovaná kanbanová úloha.
 -   Podrobnosti o vybrané úloze jsou uvedeny na pevné záložce **Podrobnosti**.
@@ -188,7 +187,6 @@ Stav vybrané úlohy a stav doložené úlohy pro kanbany události určuje, zda
 </tr>
 </tbody>
 </table>
-
 
 
 

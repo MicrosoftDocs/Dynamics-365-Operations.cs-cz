@@ -1,13 +1,13 @@
 ---
-title: "Prognózy projektu a rozpočty"
-description: "Aplikace Microsoft Dynamics 365 for Finance and Operations poskytuje prognózy projektu a rozpočty projektu pro správu a řízení vašich projektů."
+title: Prognózy projektu a rozpočty
+description: Microsoft Dynamics 365 for Finance and Operations poskytuje prognózy projektu a rozpočty projektu ke správě a řízení projektů.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 530a2717427c540d80509c4862e6fb8ea7c5694a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e31a013d6bf33b92b02bd9645a19380ba07f4a05
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310385"
 ---
-
 # <a name="project-forecasts-and-budgets"></a>Prognózy projektu a rozpočty
 
 [!include [banner](../includes/banner.md)]
 
-Aplikace Microsoft Dynamics 365 for Finance and Operations poskytuje dva způsoby správy a kontroly projektů: prognózy projektu a rozpočty projektu. 
+Microsoft Dynamics 365 for Finance and Operations poskytuje dva způsoby správy a řízení projektů: prognózy projektu a rozpočty projektu. 
 
 Prognózu projektu můžete použít, má-li vaše organizace operační perspektivu a zaměřuje se na výnosy a náklady, které jsou odvozeny od specifických transakcí. Rozpočty projektu můžete použít, pokud se vaše organizace více zaměřuje na finanční částky. 
 
@@ -80,7 +79,6 @@ Rozpočty projektu jsou automaticky spojeny se dvěma modely prognózy, jedním 
 Modely prognóz mají jednovrstvou hierarchii. To znamená, že jedna prognóza projektu musí být přidružena k jednomu modelu prognózy.
 
 Pokud používáte prognózy projektu, můžete identifikovat modely jako dílčí modely. Pak můžete vytvářet prognózy podle oddělení, časového období nebo regionu. Můžete například vytvořit model prognózy pro rok a poté vytvořit dílčí modely pro regionální prognózy severovýchodu, jihovýchodu, severozápadu a jihovýchodu, které odešle regionální vedoucí. Výběrem různých možností v dostupných sestavách můžete zobrazit informace dle celkové prognózy nebo dílčího modelu.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Stanovení platebních podmínek odběratele"
-description: "Tento postup definuje platební slevu a nastavení data splatnosti."
+---
+title: Stanovení platebních podmínek odběratele
+description: Tento postup definuje platební slevu a nastavení data splatnosti.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 49f4047ab4bff6bdfbe8326a6680f9d8f9762c95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e0e43962bea3ff1c3adafa73da4ce3862963a51
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312478"
 ---
 # <a name="establish-customer-payment-terms"></a>Stanovení platebních podmínek odběratele
 
@@ -66,5 +66,4 @@ Tento postup definuje platební slevu a nastavení data splatnosti. Tento průvo
     * Pokud vyberete možnost Účty na řádcích faktury, platební sleva se zaúčtuje do stejného hlavního účtu majetku / nákladů na řádky faktury dodavatele. Použít vyberete možnost Použít hlavní účet pro faktury dodavatele, platební slevy se zaúčtují do hlavního účtu, který definujete v části Hlavní účet pro faktury dodavatele. V tomto příkladu vyberte možnost Použít hlavní účet pro faktury dodavatele.  
 26. Zadejte hlavního účtu, ke kterému bude platební sleva zaúčtována pro faktury dodavatele.
 27. Klikněte na položku Uložit.
-
 

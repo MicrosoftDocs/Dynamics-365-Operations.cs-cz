@@ -1,13 +1,13 @@
 ---
-title: "Mezipodnikové fakturování"
-description: "Tento článek obsahuje informace a příklady o vnitropodnikové fakturaci pro projekty v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Mezipodnikové fakturování
+description: Tento článek obsahuje informace a příklady o vnitropodnikové fakturaci pro projekty v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 857aee796db2a4743cdbd91da3eb1cf6f996f9d1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3d4354316d0c37c6556c0ec3d27a3c62c5afb7b0
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333477"
 ---
-
 # <a name="intercompany-invoicing"></a>Mezipodnikové fakturování
 
 [!include [banner](../includes/banner.md)]
@@ -112,6 +111,5 @@ Když půjčující právnická osoba, USSI, zaúčtuje fakturu mezipodnikového
 
 
 Další informace naleznete v tématu [Konfigurace fakturování mezipodnikového projektu](tasks/configure-intercompany-project-invoicing.md).
-
 
 

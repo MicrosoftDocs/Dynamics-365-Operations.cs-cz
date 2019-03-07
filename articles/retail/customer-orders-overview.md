@@ -1,13 +1,13 @@
 ---
-title: "Objednávky odběratele v Retail Modern POS (MPOS)"
-description: "Toto téma obsahuje informace o objednávkách odběratele v Retail Modern POS (MPOS). Objednávky odběratele jsou označovány také jako speciální objednávky. Téma obsahuje diskuzi o souvisejících parametrech a transakčních tocích."
+title: Objednávky zákazníka v Retail Modern POS (MPOS)
+description: Toto téma obsahuje informace o objednávkách odběratele v Retail Modern POS (MPOS). Objednávky odběratele jsou označovány také jako speciální objednávky. Téma obsahuje diskuzi o souvisejících parametrech a transakčních tocích.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: b54f39cc7896871d77f9371e6197bf6dbaac51de
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336605"
 ---
-
-# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Objednávky odběratele v Retail Modern POS (MPOS)
+# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Objednávky zákazníka v Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje informace o objednávkách odběratele v Retail Modern POS (MPOS). Objednávky odběratele jsou označovány také jako speciální objednávky. Téma obsahuje diskuzi o souvisejících parametrech a transakčních tocích.
+Toto téma obsahuje informace o objednávkách odběratele v Retail Modern POS (MPOS). Objednávky odběratele jsou označovány také jako speciální objednávky. Téma obsahuje diskuzi o souvisejících parametrech a transakčních tocích.
 
 Ve světě omni-channel maloobchodu celá řada maloobchodních prodejců poskytuje možnost objednávek odběratele neboli speciálních objednávek, aby splnili různé požadavky týkající se produktu a plnění. Zde jsou některé typické scénáře:
 
@@ -97,9 +96,8 @@ Objednávky odběratele lze vytvořit z klienta pokladního místa buď v synchr
 1. Klikněte na **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profil POS** &gt; **Funkční profily**.
 2. Na pevné záložce **Obecné** nastavte možnost **Vytvořit objednávku odběratele v asynchronním režimu** na **Ano**.
 
-Když je možnost **Vytvořit objednávku odběratele v asynchronním režimu** nastavena na **Ano**, objednávky odběratelů se vždy vytvářejí v asynchronním režimu, i když je k dispozici služba Retail Transaction Service. Pokud nastavíte tuto možnost na **Ne**, objednávky odběratelů jsou vždy vytvářeny v synchronním režimu pomocí služby RTS. Při vytváření objednávek odběratelů v asynchronním režimu jsou objednávky vyžádány a vloženy do aplikace Retail pomocí úloh na vyžádání (úlohy P). Odpovídající prodejní objednávky se vytvoří v aplikaci Retail buď při manuálním spuštění možnosti **Synchronizovat objednávky** nebo pomocí dávkového zpracování.
+Když je možnost **Vytvořit objednávku odběratele v asynchronním režimu** nastavena na **Ano**, objednávky odběratelů se vždy vytvářejí v asynchronním režimu, i když je k dispozici služba Retail Transaction Service (RTS). Pokud nastavíte tuto možnost na **Ne**, objednávky odběratelů jsou vždy vytvářeny v synchronním režimu pomocí služby RTS. Při vytváření objednávek odběratelů v asynchronním režimu jsou objednávky vyžádány a vloženy do aplikace Retail pomocí úloh na vyžádání (úlohy P). Odpovídající prodejní objednávky se vytvoří v aplikaci Retail buď při manuálním spuštění možnosti **Synchronizovat objednávky** nebo pomocí dávkového zpracování.
 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Hybridní objednávky zákazníka](hybrid-customer-orders.md)
-

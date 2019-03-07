@@ -1,14 +1,14 @@
 ---
-title: "Nastavení pro správu v aplikaci Attract"
-description: "Toto téma vysvětluje postup povolení fungování funkce pro organizace uživatele v aplikaci Attract."
-author: 
+title: Nastavení pro správu v aplikaci Attract
+description: Toto téma vysvětluje postup povolení fungování funkce pro organizace uživatele v aplikaci Attract.
+author: ''
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,18 +18,17 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303567"
 ---
-
 # <a name="admin-settings-in-attract"></a>Nastavení pro správu v aplikaci Attract
 [!include[banner](../includes/banner.md)]
 
-Centrum pro správu v aplikaci Microsoft Dynamics 365 for Talent: Aplikace Attract obsahuje nastavení konfigurace, možnosti integrace a možnosti nastavení aplikace Attract.
+Centrum pro správu v aplikaci Dynamics 365 for Talent: Aplikace Attract obsahuje nastavení konfigurace, možnosti integrace a možnosti nastavení aplikace Attract.
 
 ## <a name="company-information"></a>Informace o společnosti
 
@@ -69,4 +68,3 @@ Můžete také konfigurovat možnosti, které souvisejí se zkušenostmi uchaze�
 Můžete také nastavit a vynutit datum vypršení platnosti nabídek. Nastavíte-li možnost **Vyžadovat datum vypršení platnosti pro všechny nabídky** na **Ano**, nabídky přestanou platil po zadaném počtu dní nebo hodin.
 
 Další informace o správě nabídky získáte v části [Nastavení správy nabídky](./offer-setup.md).
-

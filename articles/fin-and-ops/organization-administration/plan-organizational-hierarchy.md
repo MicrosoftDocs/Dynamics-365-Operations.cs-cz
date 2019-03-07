@@ -1,13 +1,13 @@
 ---
-title: "Plánování organizační hierarchie"
-description: "Před nastavením organizací a organizačních hierarchií se ujistěte, že rozumíte tomu, jak nejlépe namodelovat vaše podnikání."
+title: Plánování organizační hierarchie
+description: Před nastavením organizací a organizačních hierarchií se ujistěte, že rozumíte tomu, jak nejlépe namodelovat vaše podnikání.
 author: sericks007
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 633d85333a510cec9cee2721e6e2330a47b6c78c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331982"
 ---
-
 # <a name="plan-your-organizational-hierarchy"></a>Plánování organizační hierarchie
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Před nastavením organizací a organizačních hierarchií v Microsoft Dynamics
 
 Organizační hierarchie představuje vztahy mezi organizacemi, které tvoří podnik. Nejdůležitější věc při modelování organizace je tedy struktura vaší společnosti. Doporučujeme nejprve definovat organizační struktury na základě zpětné vazby od vedoucích pracovníků a manažerů z funkčních oblastí, například finance a účetnictví, lidské zdroje, provoz, nákup a prodej a marketing.
 
-Při plánování hierarchií je také třeba uvážit vztah mezi organizační hierarchií a finančními dimenzemi. Můžete nastavit více organizačních hierarchií představujících různé pohledy na vaši společnost. Použitím finančních dimenzí můžete vytvořit sestavy založené na těchto pohledech. Ve spolupráci se svým partnerem Dynamics 365 for Finance and Operations vytvořte hierarchii, která odpovídá potřebám organizačního i statutárního vykazování.
+Při plánování hierarchií je také třeba uvážit vztah mezi organizační hierarchií a finančními dimenzemi. Můžete nastavit více organizačních hierarchií představujících různé pohledy na vaši společnost. Použitím finančních dimenzí můžete vytvořit sestavy založené na těchto pohledech. Ve spolupráci se svým partnerem Microsoft Dynamics 365 for Finance and Operations vytvořte hierarchii, která odpovídá potřebám organizačního i statutárního vykazování.
 
 > [!NOTE]
 > Ačkoliv lze finanční dimenze použít k reprezentaci právnických osob bez vytvoření právnických osob v aplikaci Finance and Operations, finanční dimenze nejsou určeny řešení provozních ani obchodních potřeb právnických osob. Funkce mezijednotkového účetnictví v aplikaci Finance and Operations je určena pouze k práci s účetními položkami vytvořenými jednotlivými transakcemi.
@@ -168,7 +167,7 @@ Provozní jednotky používají kontext země nadřazené právnické osoby. Pro
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Pokud organizace modelována jako právnická osoba
 
-Pro země nebo oblasti, které jsou v aplikaci Finance and Operations podporovány, lze vytvořit většinu povinných sestav. Informace o tom, které sestavy jsou k dispozici pro každou zemi/oblast, naleznete na [lokalizačním portálu Microsoft Dynamics](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) pro Finance and Operations. (Je vyžadováno přihlášení k webu CustomerSource.)
+Pro země nebo oblasti, které jsou v aplikaci Finance and Operations podporovány, lze vytvořit většinu povinných sestav. Informace o tom, které sestavy jsou k dispozici pro každou zemi/oblast, naleznete na [lokalizačním portálu Microsoft Dynamics](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) pro Finance and Operations. (Je vyžadováno přihlášení k CustomerSource.)
 
 > [!NOTE]
 > V aplikaci Finance and Operations vám účtovací vrstva v hlavní knize umožňuje vytvořit úpravné položky pro nadřazenou společnost, která používá jiný účetní standard než dceřiná společnost. Například pro společnost, která používá obecně přijímanou účetní praxi ve Velké Británii (UK GAAP), můžete vytvořit položky úprav v účtovací vrstvě. Tyto položky mohou konsolidovány do nadřazené společnosti, která používá obecně přijímané účetní principy (GAAP) ve Spojených státech amerických. Položky úprav neovlivní vykazování UK GAAP.
@@ -243,4 +242,3 @@ Při implementaci organizační hierarchie berte v úvahu následující doporu�
 - Před modelováním významných restrukturalizačních scénářů využijte data platnosti hierarchie k provedení analýzy dopadů a testu ověření.
 - V režimu konceptu můžete změnit hierarchii před publikováním nové verze v produkčním prostředí.
 - Omezte počet uživatelů, kteří mají oprávnění přidávat nebo odebírat organizace z hierarchie v produkčním prostředí. Menší počet snižuje riziko nákladné chyby a nutných oprav.
-

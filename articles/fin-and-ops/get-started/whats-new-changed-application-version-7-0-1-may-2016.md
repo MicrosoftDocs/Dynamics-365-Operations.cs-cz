@@ -1,13 +1,13 @@
 ---
-title: "Co je nového nebo upraveného v aplikaci verze Dynamics AX 7.0.1 (květen 2016)"
-description: "Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX verze 7.0.1 nové nebo změněné. Tato verze byla vydána v květnu 2016 a má číslo sestavení 7.0.1265.23014."
+title: Co je nového nebo změněného v aplikaci Dynamics AX verze 7.0.1 (květen 2016)
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics AX verze 7.0.1. Tato verze byla vydána v květnu 2016 a má číslo sestavení 7.0.1265.23014.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: c830952b5d9e4887a816b5ab66d0944bddf5b505
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314502"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Co je nového nebo upraveného v aplikaci verze Dynamics AX 7.0.1 (květen 2016)
+# <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX verze 7.0.1 (květen 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX verze 7.0.1 nové nebo změněné. Tato verze byla vydána v květnu 2016 a má číslo sestavení 7.0.1265.23014.
+Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics AX verze 7.0.1. Tato verze byla vydána v květnu 2016 a má číslo sestavení 7.0.1265.23014.
 
 ## <a name="electronic-reporting-er"></a>Elektronické výkaznictví (EV)
 
@@ -40,7 +39,7 @@ Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX ver
 | Nakonfigurujte sestavu EV pro zadávání dat v dynamicky generovaných sloupcích elektronického dokumentu, který je vytvořen ve formátu listu OPENXML. | Zpráva EV umožňuje zadávání dat ve vygenerovaném listu OPENXML pomocí vodorovně replikovaných sloupců. Proto stejnou konfigurací sestavy EV lze znovu použít ke generování elektronických dokumentů, které mají různý počet dynamicky generovaných sloupců. |
 | Nakonfigurujte cíle EV tak, aby výstupní výsledek formátu byl směrován do určitého cíle: soubor, e-mail nebo archív (složka Microsoft SharePoint nebo Microsoft Azure Storage). | Dříve se při spuštění konfigurace EV zobrazilo okno se zprávou akce požadující po uživateli akci pro uložení nebo otevření souboru. Pro každou konfiguraci formátu a její komponenty (složku nebo soubor) lze nově předem konfigurovat cíl samostatně. Uživatelé, kterým jsou udělena přístupová práva, mohou také měnit nastavení cíle v době běhu. |
 
-## <a name="pos--microsoft-dynamics-ax-retail"></a>POS – Microsoft Dynamics AX Retail
+## <a name="pos--microsoft-dynamics-ax-retail"></a>POS – Microsoft Dynamics AX maloobchod
 
 | Co můžete udělat? | Proč je to důležité? |
 |------------------|------------------------|
@@ -107,4 +106,3 @@ Tento článek popisuje funkce, které jsou v aplikaci Microsoft Dynamics AX ver
 [Co je nového a co se změnilo](whats-new-changed.md)
 
 [Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
-
