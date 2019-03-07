@@ -1,13 +1,13 @@
---- 
-title: "Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022"
-description: "Tento postup ukazuje, jak vytvořit platební řádky pro platbu dodavateli v deníku, a generovat soubor pro platbu dodavateli pomocí příkladu převodu kreditu ISO2022."
+---
+title: Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022
+description: Tento postup ukazuje, jak vytvořit platební řádky pro platbu dodavateli v deníku, a generovat soubor pro platbu dodavateli pomocí příkladu převodu kreditu ISO2022.
 author: mrolecki
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 01/17/2019
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,41 +16,37 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b589d64a4446420164175b41f435cf48daac01a9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
-ms.openlocfilehash: 032f1f09fd017a2ae8cf5973d9f5c6ee99ca797f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340538"
 ---
-# <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a><span data-ttu-id="4988c-103">Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022</span><span class="sxs-lookup"><span data-stu-id="4988c-103">Create and export vendor payments using ISO20022 payment format</span></span>
+# <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a><span data-ttu-id="69d22-103">Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022</span><span class="sxs-lookup"><span data-stu-id="69d22-103">Create and export vendor payments using ISO20022 payment format</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="4988c-104">Tento postup ukazuje, jak vytvořit platební řádky pro platbu dodavateli v deníku, a generovat soubor pro platbu dodavateli pomocí příkladu převodu kreditu ISO2022.</span><span class="sxs-lookup"><span data-stu-id="4988c-104">This procedure shows how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.</span></span> 
+<span data-ttu-id="69d22-104">Toto téma vysvětluje, jak vytvořit platební řádky pro platbu dodavateli v deníku, a generovat soubor pro platbu dodavateli pomocí příkladu převodu kreditu ISO2022.</span><span class="sxs-lookup"><span data-stu-id="69d22-104">This topic explains how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.</span></span>
 
-<span data-ttu-id="4988c-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.</span><span class="sxs-lookup"><span data-stu-id="4988c-105">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="69d22-105">Toto je pátý z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="69d22-105">This is the fifth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="69d22-106">K dokončení tohoto příkladu použijte ukázková data DEMF.</span><span class="sxs-lookup"><span data-stu-id="69d22-106">Use the DEMF demo data to complete this example.</span></span>
 
-<span data-ttu-id="4988c-106">Toto je pátý z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="4988c-106">This is the fifth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="4988c-107">Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="4988c-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+## <a name="example"></a><span data-ttu-id="69d22-107">Příklad</span><span class="sxs-lookup"><span data-stu-id="69d22-107">Example</span></span>
 
-
-## <a name="create-payment-lines"></a><span data-ttu-id="4988c-108">Vytvoření řádků platby</span><span class="sxs-lookup"><span data-stu-id="4988c-108">Create payment lines</span></span>
-1. <span data-ttu-id="4988c-109">Přejděte na Závazky > Platby > Deník plateb.</span><span class="sxs-lookup"><span data-stu-id="4988c-109">Go to Accounts payable > Payments > Payment journal.</span></span>
-2. <span data-ttu-id="4988c-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4988c-110">Click New.</span></span>
-3. <span data-ttu-id="4988c-111">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="4988c-111">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="4988c-112">V poli Název zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4988c-112">In the Name field, enter or select a value.</span></span>
-5. <span data-ttu-id="4988c-113">Klikněte na položku Řádky.</span><span class="sxs-lookup"><span data-stu-id="4988c-113">Click Lines.</span></span>
-6. <span data-ttu-id="4988c-114">Klikněte na Návrh platby.</span><span class="sxs-lookup"><span data-stu-id="4988c-114">Click Payment proposal.</span></span>
-7. <span data-ttu-id="4988c-115">Klikněte na Vytvořit návrh plateb.</span><span class="sxs-lookup"><span data-stu-id="4988c-115">Click Create payment proposal.</span></span>
-8. <span data-ttu-id="4988c-116">Rozbalte oddíl Záznamy k zahrnutí.</span><span class="sxs-lookup"><span data-stu-id="4988c-116">Expand the Records to include section.</span></span>
-9. <span data-ttu-id="4988c-117">Klepněte na tlačítko Filtr.</span><span class="sxs-lookup"><span data-stu-id="4988c-117">Click Filter.</span></span>
-10. <span data-ttu-id="4988c-118">V seznamu vyberte řádek pro tabulku dodavatelů a pole Účet dodavatele.</span><span class="sxs-lookup"><span data-stu-id="4988c-118">In the list, select the row for Vendors table and Vendor account field.</span></span>
-11. <span data-ttu-id="4988c-119">V poli Kritéria zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4988c-119">In the Criteria field, enter or select a value.</span></span>
-    * <span data-ttu-id="4988c-120">Můžete použít všechna kritéria pro výběr transakcí dodavatele k zaplacení. Pro tento příklad použijte DE-001 jako účet dodavatele.</span><span class="sxs-lookup"><span data-stu-id="4988c-120">You can apply any criteria for selecting vendor transactions to pay, for this example use DE-001 as a vendor account.</span></span>  
-12. <span data-ttu-id="4988c-121">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="4988c-121">Click OK.</span></span>
-13. <span data-ttu-id="4988c-122">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="4988c-122">Click OK.</span></span>
-14. <span data-ttu-id="4988c-123">Klikněte na Vytvořit platby.</span><span class="sxs-lookup"><span data-stu-id="4988c-123">Click Create payments.</span></span>
-
-## <a name="generate-an-iso20022-payment-file"></a><span data-ttu-id="4988c-124">Vygenerování souboru platby ISO20022</span><span class="sxs-lookup"><span data-stu-id="4988c-124">Generate an ISO20022 payment file</span></span>
-
+1.  <span data-ttu-id="69d22-108">Přejděte na **Závazky > Platby > Deník plateb**.</span><span class="sxs-lookup"><span data-stu-id="69d22-108">Go to **Accounts payable > Payments > Payment journal**.</span></span>
+2.  <span data-ttu-id="69d22-109">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="69d22-109">Click **New**.</span></span>
+3.  <span data-ttu-id="69d22-110">V poli **Název** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="69d22-110">In the **Name** field, enter or select a value.</span></span>
+4.  <span data-ttu-id="69d22-111">Klikněte na **Řádky > Návrh platby -> Vytvořit návrh platby**.</span><span class="sxs-lookup"><span data-stu-id="69d22-111">Click **Lines > Payment proposal > Create payment proposal**.</span></span>
+5.  <span data-ttu-id="69d22-112">Rozbalte oddíl **Záznamy k zahrnutí**.</span><span class="sxs-lookup"><span data-stu-id="69d22-112">Expand the **Records to include** section.</span></span>
+6.  <span data-ttu-id="69d22-113">Klikněte na tlačítko **Filtr**.</span><span class="sxs-lookup"><span data-stu-id="69d22-113">Click **Filter**.</span></span>
+7.  <span data-ttu-id="69d22-114">V seznamu vyberte řádek pro **tabulku dodavatelů** a pole **Účet dodavatele**.</span><span class="sxs-lookup"><span data-stu-id="69d22-114">In the list, select the row for **Vendors table** and **Vendor account field**.</span></span>
+8.  <span data-ttu-id="69d22-115">V poli **Kritéria** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="69d22-115">In the **Criteria** field, enter or select a value.</span></span> <span data-ttu-id="69d22-116">Můžete použít všechna kritéria pro výběr transakcí dodavatele k zaplacení. Pro tento příklad použijte DE-001 jako účet dodavatele.</span><span class="sxs-lookup"><span data-stu-id="69d22-116">You can apply any criteria for selecting vendor transactions to pay, for this example, use DE-001 as a vendor account.</span></span>
+12. <span data-ttu-id="69d22-117">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="69d22-117">Click **OK**.</span></span>
+13. <span data-ttu-id="69d22-118">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="69d22-118">Click **OK**.</span></span>
+14. <span data-ttu-id="69d22-119">Klikněte na **Vytvořit platby**.</span><span class="sxs-lookup"><span data-stu-id="69d22-119">Click **Create payments**.</span></span>
+15. <span data-ttu-id="69d22-120">Vygenerujte soubor platby ISO20022.</span><span class="sxs-lookup"><span data-stu-id="69d22-120">Generate an ISO20022 payment file.</span></span>
+    1.  <span data-ttu-id="69d22-121">Klikněte na **Generovat platby**.</span><span class="sxs-lookup"><span data-stu-id="69d22-121">Click **Generate payments**.</span></span>
+    2.  <span data-ttu-id="69d22-122">V poli **Metody platby** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="69d22-122">In the **Method of payment** field, enter or select a value.</span></span>
+    3.  <span data-ttu-id="69d22-123">Zadejte hodnotu do pole **Název souboru**.</span><span class="sxs-lookup"><span data-stu-id="69d22-123">In the **File name** field, type a value.</span></span> <span data-ttu-id="69d22-124">Z důvodu platby v EUR bude v tomto příkladu vygenerovaný soubor kompatibilní se SEPA.</span><span class="sxs-lookup"><span data-stu-id="69d22-124">For this example, because of the EUR payment, the generated file will be SEPA compliant.</span></span> <span data-ttu-id="69d22-125">Převod kreditu ISO20022, jakož i jiné formáty plateb dodavatelů, lze také použít k vytváření plateb v jiných měnách.</span><span class="sxs-lookup"><span data-stu-id="69d22-125">ISO20022 credit transfer as well as other vendor payment formats can also be used for generating payments in other currencies.</span></span>
+    4.  <span data-ttu-id="69d22-126">V poli **Bankovní účet** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="69d22-126">In the **Bank account** field, enter or select a value.</span></span>
 

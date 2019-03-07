@@ -1,13 +1,13 @@
---- 
-title: "Konfigurace adresářů"
-description: "Pomocí tohoto postupu a rozhodnutí, která byla provedena v tématu o plánování konfigurace globálního adresáře a dalších adresářů, nastavte další adresáře pro vaši organizaci."
+---
+title: Konfigurace adresářů
+description: Pomocí tohoto postupu a rozhodnutí, která byla provedena v tématu o plánování konfigurace globálního adresáře a dalších adresářů, nastavte další adresáře pro vaši organizaci.
 author: kfend
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirAddressBook, DirAddressBookTeam
 audience: Application User
 ms.reviewer: kfend
@@ -16,30 +16,29 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 325e3974cb38afea46c2f735165ee2fd1a6a22ab
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353211"
 ---
-# <a name="configure-address-books"></a><span data-ttu-id="ba70c-103">Konfigurace adresářů</span><span class="sxs-lookup"><span data-stu-id="ba70c-103">Configure address books</span></span>
+# <a name="configure-address-books"></a><span data-ttu-id="732bd-103">Konfigurace adresářů</span><span class="sxs-lookup"><span data-stu-id="732bd-103">Configure address books</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ba70c-104">Pomocí tohoto postupu a rozhodnutí, která byla provedena v tématu o plánování konfigurace globálního adresáře a dalších adresářů, nastavte další adresáře pro vaši organizaci.</span><span class="sxs-lookup"><span data-stu-id="ba70c-104">Use this procedure, and the decisions that you made in the Planning the configuration of the global address book and additional address books topic, to set up additional address books for your organization.</span></span>
+<span data-ttu-id="732bd-104">Pomocí tohoto postupu a rozhodnutí, která byla provedena v tématu o plánování konfigurace globálního adresáře a dalších adresářů, nastavte další adresáře pro vaši organizaci.</span><span class="sxs-lookup"><span data-stu-id="732bd-104">Use this procedure, and the decisions that you made in the Planning the configuration of the global address book and additional address books topic, to set up additional address books for your organization.</span></span>
 
-<span data-ttu-id="ba70c-105">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="ba70c-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="ba70c-106">Tento záznam je určen pro členy týmu plánování a konfigurace.</span><span class="sxs-lookup"><span data-stu-id="ba70c-106">This recording is intended for the Planning and configuration team members.</span></span>
+<span data-ttu-id="732bd-105">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="732bd-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="732bd-106">Tento záznam je určen pro členy týmu plánování a konfigurace.</span><span class="sxs-lookup"><span data-stu-id="732bd-106">This recording is intended for the Planning and configuration team members.</span></span>
 
 
-## <a name="configure-address-books"></a><span data-ttu-id="ba70c-107">Konfigurace adresářů</span><span class="sxs-lookup"><span data-stu-id="ba70c-107">Configure address books</span></span>
-1. <span data-ttu-id="ba70c-108">Přejděte do nabídky Správa organizace > Globální adresář > Adresáře.</span><span class="sxs-lookup"><span data-stu-id="ba70c-108">Go to Organization administration > Global address book > Address books.</span></span>
-2. <span data-ttu-id="ba70c-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="ba70c-109">Click New.</span></span>
-3. <span data-ttu-id="ba70c-110">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="ba70c-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="ba70c-111">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="ba70c-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="ba70c-112">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="ba70c-112">Click Save.</span></span>
-6. <span data-ttu-id="ba70c-113">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="ba70c-113">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="ba70c-114">Kliknutím na šipku přidejte vybrané dostupné týmy do adresáře.</span><span class="sxs-lookup"><span data-stu-id="ba70c-114">Click the arrow to add the selected available teams to the address book.</span></span>
-8. <span data-ttu-id="ba70c-115">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="ba70c-115">Click Save.</span></span>
-
+## <a name="configure-address-books"></a><span data-ttu-id="732bd-107">Konfigurace adresářů</span><span class="sxs-lookup"><span data-stu-id="732bd-107">Configure address books</span></span>
+1. <span data-ttu-id="732bd-108">Přejděte do nabídky Správa organizace > Globální adresář > Adresáře.</span><span class="sxs-lookup"><span data-stu-id="732bd-108">Go to Organization administration > Global address book > Address books.</span></span>
+2. <span data-ttu-id="732bd-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="732bd-109">Click New.</span></span>
+3. <span data-ttu-id="732bd-110">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="732bd-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="732bd-111">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="732bd-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="732bd-112">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="732bd-112">Click Save.</span></span>
+6. <span data-ttu-id="732bd-113">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="732bd-113">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="732bd-114">Kliknutím na šipku přidejte vybrané dostupné týmy do adresáře.</span><span class="sxs-lookup"><span data-stu-id="732bd-114">Click the arrow to add the selected available teams to the address book.</span></span>
+8. <span data-ttu-id="732bd-115">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="732bd-115">Click Save.</span></span>
 

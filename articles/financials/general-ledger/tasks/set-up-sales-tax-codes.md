@@ -1,13 +1,13 @@
---- 
-title: "Nastavit kódy DPH"
-description: "Kódy DPH se vytvoří pro každou nepřímou daň nebo clo, které je právnická osoba povinna vypočítávat, shromažďovat o nich informace a platit je finančním úřadům."
+---
+title: Nastavit kódy DPH
+description: Kódy DPH se vytvoří pro každou nepřímou daň nebo clo, které je právnická osoba povinna vypočítávat, shromažďovat o nich informace a platit je finančním úřadům.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,41 +16,40 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f29442c2ef2e3d0008a74298fda218e4cbd93f8e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349163"
 ---
-# <a name="set-up-sales-tax-codes"></a><span data-ttu-id="d35cf-103">Nastavit kódy DPH</span><span class="sxs-lookup"><span data-stu-id="d35cf-103">Set up sales tax codes</span></span>
+# <a name="set-up-sales-tax-codes"></a><span data-ttu-id="2f7b5-103">Nastavit kódy DPH</span><span class="sxs-lookup"><span data-stu-id="2f7b5-103">Set up sales tax codes</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d35cf-104">Kódy DPH se vytvoří pro každou nepřímou daň nebo clo, které je právnická osoba povinna vypočítávat, shromažďovat o nich informace a platit je finančním úřadům.</span><span class="sxs-lookup"><span data-stu-id="d35cf-104">Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.</span></span>
+<span data-ttu-id="2f7b5-104">Kódy DPH se vytvoří pro každou nepřímou daň nebo clo, které je právnická osoba povinna vypočítávat, shromažďovat o nich informace a platit je finančním úřadům.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-104">Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.</span></span>
 
-<span data-ttu-id="d35cf-105">Tento úkol používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="d35cf-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="2f7b5-105">Tento úkol používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-105">This task uses the USMF demo company.</span></span>
 
 
 
-1. <span data-ttu-id="d35cf-106">Přejděte na Daň > Nepřímé daně > DPH > Kódy DPH.</span><span class="sxs-lookup"><span data-stu-id="d35cf-106">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
-2. <span data-ttu-id="d35cf-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d35cf-107">Click New.</span></span>
-3. <span data-ttu-id="d35cf-108">V poli Kód prodejní daně zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d35cf-108">In the Sales tax code field, type a value.</span></span>
-4. <span data-ttu-id="d35cf-109">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="d35cf-109">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="d35cf-110">Vyberte Období vyrovnání a určete, pro které finanční úřady a v jakých intervalech je tato DPH vykazována a zaplacena.</span><span class="sxs-lookup"><span data-stu-id="d35cf-110">Select a Settlement period to specify which Sales tax authority and in which intervals this sales tax needs to be reported and paid.</span></span>
-6. <span data-ttu-id="d35cf-111">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="d35cf-111">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="d35cf-112">Vyberte možnost Skupina zaúčtování hl. knihy a určete hlavní účty pro zaúčtování DPH do hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="d35cf-112">Select a Ledger posting group to specify the main accounts to post sales tax to the general ledger.</span></span>
-8. <span data-ttu-id="d35cf-113">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="d35cf-113">In the list, find and select the desired record.</span></span>
-9. <span data-ttu-id="d35cf-114">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="d35cf-114">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="d35cf-115">Rozbalte pevnou záložku Výpočet.</span><span class="sxs-lookup"><span data-stu-id="d35cf-115">Expand the Calculation FastTab.</span></span>
-    * <span data-ttu-id="d35cf-116">Na pevné záložce Výpočet naleznete několik polí určujících způsob výpočtu částky DPH.</span><span class="sxs-lookup"><span data-stu-id="d35cf-116">The Calculation FastTab has multiple fields that control how sales tax amounts will be calculated.</span></span>  
-11. <span data-ttu-id="d35cf-117">V podokně akcí klikněte na možnost Kód prodejní daně.</span><span class="sxs-lookup"><span data-stu-id="d35cf-117">On the Action Pane, click Sales tax code.</span></span>
-12. <span data-ttu-id="d35cf-118">Klepněte na položku Hodnoty.</span><span class="sxs-lookup"><span data-stu-id="d35cf-118">Click Values.</span></span>
-13. <span data-ttu-id="d35cf-119">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="d35cf-119">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="d35cf-120">Zadejte hodnotu pro tento kód daně.</span><span class="sxs-lookup"><span data-stu-id="d35cf-120">Enter the value for this tax code.</span></span>
-    * <span data-ttu-id="d35cf-121">Pokud je vybrána možnost Částka za jednotku, hodnota na pevné záložce Výpočet v poli Zdroj se vynásobí množstvím v transakci a vypočítá se částka DPH.</span><span class="sxs-lookup"><span data-stu-id="d35cf-121">On the Calculation FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.</span></span>  <span data-ttu-id="d35cf-122">Pokud kód daně není daní na základě jednotky, hodnota je procentuální a použije se pro Původ pro tento kód daně k výpočtu částky DPH.</span><span class="sxs-lookup"><span data-stu-id="d35cf-122">If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.</span></span>     
-15. <span data-ttu-id="d35cf-123">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d35cf-123">Click Save.</span></span>
-16. <span data-ttu-id="d35cf-124">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d35cf-124">Close the page.</span></span>
-17. <span data-ttu-id="d35cf-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d35cf-125">Click Save.</span></span>
-
+1. <span data-ttu-id="2f7b5-106">Přejděte na Daň > Nepřímé daně > DPH > Kódy DPH.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-106">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
+2. <span data-ttu-id="2f7b5-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-107">Click New.</span></span>
+3. <span data-ttu-id="2f7b5-108">V poli Kód prodejní daně zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-108">In the Sales tax code field, type a value.</span></span>
+4. <span data-ttu-id="2f7b5-109">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-109">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="2f7b5-110">Vyberte Období vyrovnání a určete, pro které finanční úřady a v jakých intervalech je tato DPH vykazována a zaplacena.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-110">Select a Settlement period to specify which Sales tax authority and in which intervals this sales tax needs to be reported and paid.</span></span>
+6. <span data-ttu-id="2f7b5-111">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-111">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="2f7b5-112">Vyberte možnost Skupina zaúčtování hl. knihy a určete hlavní účty pro zaúčtování DPH do hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-112">Select a Ledger posting group to specify the main accounts to post sales tax to the general ledger.</span></span>
+8. <span data-ttu-id="2f7b5-113">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-113">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="2f7b5-114">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-114">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="2f7b5-115">Rozbalte pevnou záložku Výpočet.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-115">Expand the Calculation FastTab.</span></span>
+    * <span data-ttu-id="2f7b5-116">Na pevné záložce Výpočet naleznete několik polí určujících způsob výpočtu částky DPH.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-116">The Calculation FastTab has multiple fields that control how sales tax amounts will be calculated.</span></span>  
+11. <span data-ttu-id="2f7b5-117">V podokně akcí klikněte na možnost Kód prodejní daně.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-117">On the Action Pane, click Sales tax code.</span></span>
+12. <span data-ttu-id="2f7b5-118">Klepněte na položku Hodnoty.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-118">Click Values.</span></span>
+13. <span data-ttu-id="2f7b5-119">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-119">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="2f7b5-120">Zadejte hodnotu pro tento kód daně.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-120">Enter the value for this tax code.</span></span>
+    * <span data-ttu-id="2f7b5-121">Pokud je vybrána možnost Částka za jednotku, hodnota na pevné záložce Výpočet v poli Zdroj se vynásobí množstvím v transakci a vypočítá se částka DPH.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-121">On the Calculation FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.</span></span>  <span data-ttu-id="2f7b5-122">Pokud kód daně není daní na základě jednotky, hodnota je procentuální a použije se pro Původ pro tento kód daně k výpočtu částky DPH.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-122">If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.</span></span>     
+15. <span data-ttu-id="2f7b5-123">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-123">Click Save.</span></span>
+16. <span data-ttu-id="2f7b5-124">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-124">Close the page.</span></span>
+17. <span data-ttu-id="2f7b5-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="2f7b5-125">Click Save.</span></span>
 
