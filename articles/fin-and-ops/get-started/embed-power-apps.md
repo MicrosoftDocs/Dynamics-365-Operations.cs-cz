@@ -1,13 +1,13 @@
 ---
-title: "Integrace aplikací PowerApps"
-description: "Toto téma popisuje způsob vložení PowerApps do klienta Finance and Operations pro zvýšení funkčnosti produktu."
+title: Integrace aplikací PowerApps
+description: Toto téma popisuje způsob vložení PowerApps do klienta Finance and Operations pro zvýšení funkčnosti produktu.
 author: jasongre
 manager: AnnBe
 ms.date: 09/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
 ms.search.scope: Operations, Core
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 262d34cbc50251595d22c27387fbd3f1045d1fbb
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334144"
 ---
-
 # <a name="embed-powerapps-apps"></a>Integrace aplikací PowerApps
 
 [!include [banner](../includes/banner.md)]
 
-V aktualizaci Platformy 14, Microsoft Dynamics 365 for Finance and Operations podporuje integraci s Microsoft PowerApps, službou pro vývojáře a netechnické uživatele pro vytváření vlastních obchodních aplikací pro mobilní zařízení, tablety a web bez zápisu kódu. PowerApps, které jste vytvořili vy, vaše organizace nebo širší ekosystém, lze poté vložit do klienta Finance and Operations, aby bylo možné vylepšit funkce produktu. Například může vytvořit PowerApp pro doplnění modulu Finance and Operations informacemi získanými z jiného systému.
+V aktualizaci Platform Update 14, Microsoft Dynamics 365 for Finance and Operations podporuje integraci s Microsoft PowerApps, službou pro vývojáře a netechnické uživatele pro vytváření vlastních obchodních aplikací pro mobilní zařízení, tablety a web bez zápisu kódu. PowerApps, které jste vytvořili vy, vaše organizace nebo širší ekosystém, lze poté vložit do klienta Finance and Operations, aby bylo možné vylepšit funkce produktu. Například může vytvořit PowerApp pro doplnění modulu Finance and Operations informacemi získanými z jiného systému.
 
-Další informace o začlenění PowerApps se dozvíte v krátkém videu [Jak začlenit PowerApps do Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY) grafické.
+Další informace o začlenění PowerApps se dozvíte v krátkém videu [Jak začlenit PowerApps do Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>Přidání vložené PowerApp na stránku
 
@@ -132,4 +131,3 @@ public final class ClassTest_Extension
     }
 }
 ```
-

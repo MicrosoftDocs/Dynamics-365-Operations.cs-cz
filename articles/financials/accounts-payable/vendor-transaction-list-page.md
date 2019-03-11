@@ -1,13 +1,13 @@
 ---
-title: "Stránka se seznamem transakcí dodavatele"
-description: "Toto téma obsahuje informace o stránce se seznamem transakcí dodavatele pro aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Stránka se seznamem transakcí dodavatele
+description: Toto téma obsahuje informace o stránce se seznamem transakcí dodavatele pro Microsoft Dynamics 365 for Finance and Operations.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 99a169bd51e14f15c085f7547ec240b2787258cc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: 45033b8b015d468b7ee0f6c3fba5e6fb6201433e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341734"
 ---
-
 # <a name="vendor-transactions-list-page"></a>Stránka se seznamem transakcí dodavatele
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Tlačítko **Zobrazit vyrovnání** v podokně akcí poskytuje rychlý přístup
 
 4. V tomto dialogovém okně můžete provádět různé úkoly. Vyberte jeden nebo více dokladů a pak vyberte některou z následujících tlačítek:
 
-    - **Zobrazit související** -Zobrazí se všechny transakce deníku plateb, které byly vytvořeny v deníku plateb souvisejícím se zvoleným dokumentem. Kromě toho se zobrazí všechna vyrovnání, která souvisejí s těmito platbami. Při zobrazení souvisejících plateb se změní popisek tohoto tlačítka na **Zobrazit vyrovnání**. Vyberte **Zobrazit vyrovnání**, chcete-li zobrazit pouze transakce, které byly zobrazeny při prvním otevření dialogového okna **Zobrazit vyrovnání**.
+    - **Zobrazit související** – Zobrazí všechny transakce deníku plateb a transakce hlavní knihy pro dodavatele, které byly vytvořeny v denících, ve kterých byly vytvořeny dokumenty zobrazené v seznamu. Když je například zobrazena platba, pak se zobrazí všechny platby v deníku plateb, ve kterém byly vytvořeny. Pokud je zobrazena faktura nebo platba a byly vytvořeny v hlavním deníku, zobrazí se všechny dokumenty v hlavní knize, ve které byly vytvořeny. Také se zobrazí všechna vyrovnání, která souvisejí se seznamem dokumentů. Při zobrazení souvisejících plateb se změní popisek tohoto tlačítka na **Zobrazit vyrovnání**. Vyberte **Zobrazit vyrovnání**, chcete-li zobrazit pouze transakce, které byly zobrazeny při prvním otevření dialogového okna **Zobrazit vyrovnání**.
     - **Zobrazit historii** – Zobrazí historii vyrovnání pro doklady. Zvolte **Zavřít** a zavřete dialogové okno.
     - **Zobrazit účetnictví** – Zobrazí se všechny doklady, které souvisí se zvolenými dokumenty. Zvolte **Zavřít** a zavřete dialogové okno.
     - **Exportovat** – Exportujte vybrané doklady do aplikace Microsoft Excel.
@@ -98,4 +97,3 @@ Při úpravě má každé pole jiný účinek na transakci:
 - **Upravit podmínky platební slevy:** Platební slevy se změní na základě základního data a podmínek platební slevy.
 
 Po dokončení úprav nastavení platby vyberte **Zavřít** pro uložení vašich změn.
-

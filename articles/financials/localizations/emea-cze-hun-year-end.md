@@ -1,29 +1,28 @@
 ---
-title: "Roční uzávěrka pro Českou republiku a Maďarsko"
-description: "Toto téma obsahuje informace o procesu roční uzávěrky a počátečních transakcích pro Maďarsko a Českou republiku."
+title: Roční uzávěrka pro Českou republiku a Maďarsko
+description: Toto téma obsahuje informace o procesu roční uzávěrky a počátečních transakcích pro Maďarsko a Českou republiku.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 2b930050b415c111b4612b6d8f920f5c673b54da
 ms.openlocfilehash: e49e612ecd78768879731882a59fdba69cf96660
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370080"
 ---
-
 # <a name="year-end-close-for-czech-republic-and-hungary"></a>Roční uzávěrka pro Českou republiku a Maďarsko
 [!include[banner](../includes/banner.md)]
 
@@ -33,7 +32,7 @@ Toto téma obsahuje informace o procesu roční uzávěrky a počátečních tra
 -    Převod ročního výsledku zisků nebo ztrát do nově otevřeného roku na jiný účet.
 
 ## <a name="year-end-closing-setup"></a>Nastavení roční uzávěrky
-Na stránce **Účty pro automatické transakce** můžete určit účty hlavní knihy, které se budou používat v průběhu procesu roční uzávěrky.
+Na stránce **Účty pro automatické transakce**  můžete určit účty hlavní knihy, které se budou používat v průběhu procesu roční uzávěrky:
 
 -   Výsledek roční uzávěrky – tento účet bude použit pro převod koncových zůstatků transakcí zisků a ztrát.
 -   Převod koncových a počátečních transakcí – Tento účet se použije pro převod konečných zůstatků rozvahových účtů.
@@ -43,4 +42,3 @@ Před zaúčtováním otevřených transakcí na různé účty pro každý hlav
 
 ## <a name="additional-resources"></a>Další zdroje
 [Roční uzávěrka](../general-ledger/year-end-close.md)
-

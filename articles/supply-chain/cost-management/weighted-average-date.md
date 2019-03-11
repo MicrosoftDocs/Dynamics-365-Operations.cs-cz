@@ -1,13 +1,13 @@
 ---
-title: "Datum váženého průměru"
-description: "Datum váženého průměru je skladovým modelem založeným na principu váženého průměru, kde jsou výdeje ze skladu oceňovány průměrnou cenou položek přijatých na sklad v jednotlivých dnech období uzávěrky skladu."
+title: Datum váženého průměru
+description: Datum váženého průměru je skladovým modelem založeným na principu váženého průměru, kde jsou výdeje ze skladu oceňovány průměrnou cenou položek přijatých na sklad v jednotlivých dnech období uzávěrky skladu.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9963c17d8ac1854a42cac2a0e19615f13e8cc006
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355396"
 ---
-
 # <a name="weighted-average-date"></a>Datum váženého průměru
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ Pokud dojde pouze k jednomu příjmu k datu nebo před ním, není nutné počí
 
 Následující vzorec se používá pro výpočet nákladové metody s datem váženého průměru: 
 
-Vážený průměr = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+Vážený průměr = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
 
 Při uzávěrce skladu je výpočet proveden denně prostřednictvím období uzávěrky, jak je uvedeno na následujícím obrázku. 
 
@@ -54,7 +53,7 @@ Skladové transakce, které opustí sklad, jako například prodejní objednávk
 
 Jako vyrovnání jsou označována zaúčtování uzávěrky skladu, při nichž jsou výdeje přiřazeny ke správnému váženému průměru k datu uzávěrky. 
 
-**Poznámka:** Další informace o vyrovnání naleznete v článku o skladových uzávěrkách. V následujících příkladech je znázorněn dopad použití váženého průměru v pěti konfiguracích:
+**Poznámka:** Další informace o vyrovnání naleznete v článku o skladových uzávěrkách. V následujících příkladech je znázorněn dopad použití váženého průměru v pěti konfiguracích:
 
 -   Přímé vyrovnání s použitím data váženého průměru bez volby **Zahrnout fyzickou hodnotu**
 -   Souhrnné vyrovnání s použitím data váženého průměru bez volby **Zahrnout fyzickou hodnotu**
@@ -195,7 +194,6 @@ Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančn�
 -   Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
 -   Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
 -   Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými tečkovanými šipkami, směřujícími diagonálně od určitého příjmu k výdeji.
-
 
 
 

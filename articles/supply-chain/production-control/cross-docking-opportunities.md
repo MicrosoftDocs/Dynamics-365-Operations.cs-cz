@@ -1,13 +1,13 @@
 ---
-title: "Cross docking z výrobních příkazů na výstupní překladiště"
-description: "Toto téma popisuje, jak spravovat zpracování cross docking materiálu, který je vykazován jako dokončený z výrobní linky do výstupního překladiště."
+title: Cross docking z výrobních příkazů na výstupní překladiště
+description: Toto téma popisuje, jak spravovat zpracování cross docking materiálu, který je vykazován jako dokončený z výrobní linky do výstupního překladiště.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8691bb6702028070810a1503add33985de5ede3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 62194012cfbe101d19e9de3254afb004da79a562
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329015"
 ---
-
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking z výrobních příkazů na výstupní překladiště
 
 [!include [banner](../includes/banner.md)]
@@ -126,6 +125,5 @@ Poté, co je výrobek vykázán jako dokončený na výrobní lince, je přeprav
 ### <a name="additional-information"></a>Doplňkové informace
 
 -   Scénář cross dockingu je podporován pro dávku a sériové řízené zboží, přičemž jak dimenze dávky, tak dimenze sériového čísla jsou definovány nad a pod skladovým místem v hierarchii rezervací. 
-
 
 

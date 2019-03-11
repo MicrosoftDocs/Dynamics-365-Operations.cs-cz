@@ -1,13 +1,13 @@
 ---
-title: "Správa směn a zásuvky s hotovostí"
-description: "Toto téma vysvětluje, jak nastavit a používat směny v maloobchodním pokladním místě (POS)."
+title: Správa směn a zásuvky s hotovostí
+description: Toto téma vysvětluje, jak nastavit a používat směny v maloobchodním pokladním místě (POS).
 author: jblucher
 manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313007"
 ---
-
 # <a name="shift-and-cash-drawer-management"></a>Správa směn a zásuvky s hotovostí
 
 [!include [banner](includes/banner.md)]
@@ -159,4 +158,3 @@ Přejděte na **Maloobchod \> Kanály \> Maloobchodní prodejny \> Všechny malo
 Toto nastavení pomáhá zajistit, aby výkazy administrativy zahrnovaly stejné transakce jako směny v POS a aby se data sčítala podle této směny.
 
 Další informace o výkazu a metodách uzávěrky naleznete v tématu [Konfigurace obchodů pro výkazy Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-

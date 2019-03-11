@@ -1,13 +1,13 @@
 ---
-title: "Sestavy výdajů a více schvalovatelů"
-description: "Toto téma obsahuje informace o sestavách výdajů, které vyžadují schválení více než jednou osobou."
+title: Sestavy výdajů a více schvalovatelů
+description: Toto téma obsahuje informace o sestavách výdajů, které vyžadují schválení více než jednou osobou.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvExpensesReportList
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1483de5405895d60f0cb302ab622758b2b05d2ca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 0f7592c580a21040c8b630885939ceaab3855c2c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362411"
 ---
-
 # <a name="expense-reports-and-multiple-approvers"></a>Sestavy výdajů a více schvalovatelů
 
 [!include [banner](../includes/banner.md)]
@@ -43,4 +42,3 @@ Pokud se rozhodnete požadovat více schvalovatelů sestav výdajů, můžete p�
 
     1. Manažer zaměstnance schválí vyúčtování výdajů.
     2. Vlastník rozpočtu schválí vyúčtování výdajů.
-

@@ -1,13 +1,13 @@
 ---
-title: "Dodavatelská spolupráce s externími dodavateli"
-description: "Toto téma vysvětluje, jak nákupčí mohou spolupracovat s externími dodavateli na výměně informací o nákupních objednávkách a zásobách dodávek."
+title: Dodavatelská spolupráce s externími dodavateli
+description: Toto téma vysvětluje, jak nákupčí mohou spolupracovat s externími dodavateli na výměně informací o nákupních objednávkách a zásobách dodávek.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
 audience: Application User
 ms.reviewer: josaw
@@ -18,24 +18,23 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350014"
 ---
-
 # <a name="vendor-collaboration-with-external-vendors"></a>Dodavatelská spolupráce s externími dodavateli
 
 [!include [banner](../includes/banner.md)]
 
-Modul **Spolupráce s dodavateli** je zaměřen na dodavatele, kteří nemají integraci výměny elektronických dat (EDI) s aplikací Microsoft Dynamics 365 for Finance and Operations. To umožňuje dodavatelům práci s nákupními objednávkami, fakturami, informace o zásobách dodávek a požadavky na nabídku a také jim dává možnost mít přístup k části jejich dodavatelských hlavních dat. Toto téma vysvětluje, jak můžete spolupracovat s externími dodavateli, kteří používají rozhraní dodavatelské spolupráce k práci s nákupními objednávkami, požadavky na nabídku a zásobami dodávek. Také vysvětluje, jak konkrétnímu dodavateli umožnit používání dodavatelské spolupráce a definovat informace, které dodavatelé uvidí při odpovídání na nákupní objednávku.
+Modul **Spolupráce s dodavateli** je zaměřen na dodavatele, kteří nemají integraci výměny elektronických data (EDI) s aplikací Microsoft Dynamics 365 for Finance and Operations. To umožňuje dodavatelům práci s nákupními objednávkami, fakturami, informace o zásobách dodávek a požadavky na nabídku a také jim dává možnost mít přístup k části jejich dodavatelských hlavních dat. Toto téma vysvětluje, jak můžete spolupracovat s externími dodavateli, kteří používají rozhraní dodavatelské spolupráce k práci s nákupními objednávkami, požadavky na nabídku a zásobami dodávek. Také vysvětluje, jak konkrétnímu dodavateli umožnit používání dodavatelské spolupráce a definovat informace, které dodavatelé uvidí při odpovídání na nákupní objednávku.
 
 Další informace o tom, co mohou externí dodavatelé provádět v rozhraní spolupráce dodavatelů, uvádí téma [Spolupráce dodavatelů s odběrateli](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informace v tomto tématu o dodavatelské spolupráci se vztahují pouze na aktuální verzi aplikace Finance and Operations. V aplikaci Microsoft Dynamics AX 7.0 (únor 2016) a verzi aplikace Microsoft Dynamics AX 7.0.1 (květen 2016) můžete spolupracovat s dodavateli pomocí modulu **Portál pro dodavatele**. Informace o modulu **Portál pro dodavatele** naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md).
+> Informace v tomto tématu o dodavatelské spolupráci se vztahují pouze na aktuální verzi aplikace Finance and Operations. V aplikaci Microsoft Dynamics AX 7.0 (únor 2016) a Microsoft Dynamics AX 7.0.1 (květen 2016) můžete spolupracovat s dodavateli pomocí modulu **Portál pro dodavatele**. Informace o modulu **Portál pro dodavatele** naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md).
 
 Další informace o tom, jak mohou dodavatelé používat spolupráci s dodavateli v procesech fakturace, uvádí téma [Pracovní prostor fakturace dodavatelské spolupráce](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Informace o zřizování nových uživatelů pro spolupráci s dodavateli uvádí téma [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md).
 
@@ -94,7 +93,7 @@ Následující tabulka zobrazuje typické výměny informací v závislosti na o
 <tbody>
 <tr class="even">
 <td>Dodavatel <strong>přijímá</strong> objednávku a aplikace Finance and Operations je nakonfigurována tak, aby automaticky potvrdila nákupní objednávky, které dodavatel přijme.</td>
-<td>Stav objednávky bude aktualizován na hodnotu <strong>Potvrzeno</strong>. Pokud nelze z nějakého důvodu objednávku aktualizovat, odpověď dodavatele i tak bude zaznamenána jako <strong>Přijato</strong>, ale nákupní objednávka zůstane ve stavu <strong>Externí revize</strong>. 
+<td>Stav objednávky bude aktualizován na hodnotu <strong>Potvrzeno</strong>. Pokud nelze z nějakého důvodu objednávku aktualizovat, odpověď dodavatele i tak bude zaznamenána jako<strong> Přijato</strong>, ale nákupní objednávka zůstane ve stavu <strong>Externí revize</strong>. 
 
 Nákupní objednávka, která byla odeslána dodavateli a má stav <strong>Externí revize</strong>, se aktualizuje s potvrzenými daty dodání na řádcích. Tato aktualizace zahájí novou verzi, která bude automaticky nastavena na stav <strong>potvrzeno</strong>. Potvrzená nákupní objednávka se zobrazí v rozhraní dodavatelské spolupráce.</td>
 </tr>
@@ -106,7 +105,7 @@ Nákupní objednávka, která byla odeslána dodavateli a má stav <strong>Exter
 </tr>
 <tr class="even">
 <td>Dodavatel <strong>odmítne</strong> objednávku.</td>
-<td>Odpověď dodavatele bude zaznamenána jako <strong>Zamítnuto</strong> a nákupní objednávka zůstane ve stavu <strong>Na externí kontrole</strong>. Odmítnutí je přijato společně s poznámkou dodavatele.</td>
+<td>Odpověď dodavatele bude zaznamenána jako <strong>Zamítnuto</strong> a nákupní objednávka zůstane ve stavu <strong>Na externí kontrole</strong>. Odmítnutí je přijato společně s poznámkou pro dodavatele.</td>
 </tr>
 <tr class="odd">
 <td>Dodavatel <strong>přijme</strong> objednávku <strong>se změnami</strong>. Na úrovni řádků je možné navrhnout změny. Dodavatele může přijmout nebo odmítnout jednotlivé řádky. Zde jsou některé další změny, které může dodavatel navrhnout:
@@ -260,4 +259,3 @@ Uživatel, který nastavuje parametry pro proces požadavku na nabídku, může 
 - %createddate%
 
 Pokud je požadován dodatek a je odeslán po odeslání požadavku na nabídku, požadavek na nabídku bude odeslán znovu všem pozvaným dodavatelům. Publikovaný dokument bude také aktualizován na stránce **Otevřené publikované požadavky na nabídky**.
-

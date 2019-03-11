@@ -1,13 +1,13 @@
 ---
-title: "Konfigurace způsobů dodání a poplatků call centra"
-description: "Toto téma popisuje, jak nastavit režimy dodání a poplatky objednávky kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail."
+title: Konfigurace způsobů dodání a poplatků call centra
+description: Toto téma popisuje způsob nastavení režimů dodání a poplatků objednávky kontaktního střediska v Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: ebc8ee52da7d10ca18147684a0190e52a495ad5a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328417"
 ---
-
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurace způsobů dodání a poplatků call centra
 
 [!INCLUDE [banner](includes/banner.md)]
@@ -96,4 +95,3 @@ Volitelně můžete propojit kód urychleného zpracování u libovolného způs
 Například pro objednávky, které budou expedovány letecky další den, výdej je zapotřebí provést ze skladu do 13: 00 každý den. V takovém případě lze vytvořit kód urychleného zpracování a kód lze spojit s libovolným způsobem dodání další den, konfigurovaným v systému. Když se ve skladu vytvoří vlna výdeje, příslušný kód urychleného zpracování v poli **urychlené zpracování** lze použít jako filtr, aby byl běh výdeje jen pro objednávky, které mají způsob dodání spojený s tímto kódem.
 
 Dále platí, že při zadání objednávky kontaktního střediska, lze kód urychleného zpracování použít ručně v záhlaví prodejní objednávky nebo na samostatném řádku prodejní objednávky. Kód lze použít k třídění nebo pro účely vykazování. V některých případech musí být objednávka zpracována pečlivě z důvodu problému se službou odběratele. V takovém případě lze v záhlaví nebo na řádkách objednávky použít konkrétní kód urychleného zpracování na pomoc se stanovením prioritního pořadí při procesu plnění.
-

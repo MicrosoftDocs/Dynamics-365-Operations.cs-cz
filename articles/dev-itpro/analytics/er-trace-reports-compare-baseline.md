@@ -1,13 +1,13 @@
 ---
-title: "Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami"
-description: "Toto téma obsahuje informace o porovnání výsledků generovaných sestav ER se základními hodnotami sestavy."
+title: Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
+description: Toto téma obsahuje informace o porovnání výsledků generovaných sestav ER se základními hodnotami sestavy.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 7f7877ccaa0c45ab5f0032d6808280e3c47a43ca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 1a598d0bd053c60c3f8df6b05ecb7ff15addfaa3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317929"
 ---
-
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
 
 [!include[banner](../includes/banner.md)]
@@ -40,4 +39,3 @@ Jednotlivé základní soubory aplikací můžete uložit pro libovolný formát
 Můžete vyhodnotit sledování k analýze, zda elektronické dokumenty, které jsou generovány, obsahují očekávaný obsah. Toto hodnocení můžete provést v prostředí testování přijetí uživatelem (UAT), když byl změněn základní kód (například při migraci na novou instanci aplikace, nainstalované balíčky oprav hotfix nebo změn nasazeného kódu). Tímto způsobem zajistíte, že hodnocení neovlivní provádění sestav ER sestavy, které se používají. U spousty sestav ER může probíhat hodnocení probíhat v bezobslužném režimu.
 
 Další informace o této funkci získáte přehráním průvodců záznamů úloh **Generování sestav ER a porovnání jejich výsledků (část 1)** a **Generování sestav ER a porovnání výsledků (část 2)**, které jsou součástí obchodního procesu **7.5.4.3 Test IT services/solutions (10679)** a které se dají stáhnout ve [službě stažení softwaru Microsoft](https://go.microsoft.com/fwlink/?linkid=874684). Tito průvodci záznamů úloh vás provedou procesem konfigurace rozhraní ER na používání základních souborů pro posouzení generovaných elektronických dokumentů.
-

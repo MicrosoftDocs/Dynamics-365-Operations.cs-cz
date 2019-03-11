@@ -1,13 +1,13 @@
 ---
-title: "Výchozí protiúčty pro deníky faktur dodavatele a deníky schvalování faktur"
-description: "Toto téma vám pomůže s rozhodnutím, kam chcete přiřadit výchozí účty pro deníky faktur."
+title: Výchozí protiúčty pro deníky faktur dodavatele a deníky schvalování faktur
+description: Toto téma vám pomůže s rozhodnutím, kam chcete přiřadit výchozí účty pro deníky faktur.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f876e5dfdab67dd98b2449993c3ba2baacde1587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 90b24e8e00a78c122e0f7c712a694c9c62bd4824
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320252"
 ---
-
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Výchozí protiúčty pro deníky faktur dodavatele a deníky schvalování faktur
 
 [!include [banner](../includes/banner.md)]
@@ -87,14 +86,13 @@ Podle následující tabulky se rozhodněte, kam chcete přiřadit výchozí ú�
 <td>Tato možnost slouží k vytvoření výchozích účtů, které použijete, pokud protiúčet dodavatele není přiřazen.</td>
 </tr>
 <tr class="odd">
-<td><strong>Záhlaví deníku</strong> – Nastavte výchozí protiúčet pro deník, který má být použit jako výchozí položka na stránkách pro doklad deníku. Poznámka: není možné zadat výchozí protiúčty pro záhlaví deníků, pokud je typ deníku u názvů deníků <strong>Registr faktur</strong> nebo <strong>Schválení</strong>.</td>
+<td><strong>Záhlaví deníku</strong> – Nastavte výchozí protiúčet pro deník, který má být použit jako výchozí položka na stránkách pro doklad deníku. Mějte na paměti, že není možné zadat výchozí protiúčty pro záhlaví deníků, pokud je typ deníku u názvů deníků <strong>Registr faktur</strong> nebo <strong>Schválení</strong>.</td>
 <td>Položky deníku v deníku</td>
 <td>Výchozí protiúčet pro deník se používá jako výchozí položka na stránkách pro doklad deníku.</td>
 <td>Tato možnost slouží k urychlení zadávání dat, pokud většina položek v deníku má stejný protiúčet.</td>
 </tr>
 </tbody>
 </table>
-
 
 
 

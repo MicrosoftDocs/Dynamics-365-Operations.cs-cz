@@ -1,13 +1,13 @@
 ---
-title: "Domovská stránka Hlavní kniha a Finanční výkaznictví"
-description: "Pomocí hlavní knihy definujte a spravujte finanční záznamy právnické osoby."
+title: Domovská stránka Hlavní kniha a Finanční výkaznictví
+description: Pomocí hlavní knihy definujte a spravujte finanční záznamy právnické osoby.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 85afebcc88ad1c087d5f1dabaac56f694534cf98
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
-ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
-ms.contentlocale: cs-cz
-ms.lasthandoff: 06/25/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363354"
 ---
-
 # <a name="general-ledger"></a>Hlavní kniha 
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Pomocí hlavní knihy definujte a spravujte finanční záznamy právnické osob
  - [Plánování účetní osnovy](plan-chart-of-accounts.md)
  - [Typy hlavního účtu](main-account-types.md)
 
-Můžete přidělovat nebo distribuovat peněžní částky na jeden či na více účtů nebo pro kombinace účet a dimenze na základě pravidel přidělení. Existují dva typy přidělení: pevné a proměnné. Lze také vyrovnávat transakce mezi účty hlavní knihy a přeceňovat částky měn. Na konci fiskálního roku musíte vygenerovat transakce uzávěrky a připravit účty na další fiskální rok. Funkci konsolidace můžete použít ke kombinaci finančních výsledků několika dceřiných právnických osob do výsledků pro jednu konsolidovanou organizaci. Dceřiné společnosti mohou být umístěny ve stejné databázi aplikace Microsoft Dynamics 365 for Finance and Operations nebo v samostatných databázích.
+Můžete přidělovat nebo distribuovat peněžní částky na jeden či na více účtů nebo pro kombinace účet a dimenze na základě pravidel přidělení. Existují dva typy přidělení: pevné a proměnné. Lze také vyrovnávat transakce mezi účty hlavní knihy a přeceňovat částky měn. Na konci fiskálního roku musíte vygenerovat transakce uzávěrky a připravit účty na další fiskální rok. Funkci konsolidace můžete použít ke kombinaci finančních výsledků několika dceřiných právnických osob do výsledků pro jednu konsolidovanou organizaci. Dceřiné společnosti mohou být umístěny ve stejné databázi Microsoft Dynamics 365 for Finance and Operations nebo v samostatných databázích.
 
 - [Přehled konsolidace a vyloučení](../budgeting/consolidation-elimination-overview.md)
 - [Účetní zůstatky hlavní knihy](general-ledger-account-balances.md)
@@ -60,18 +59,17 @@ Přejděte na [poznámky k verzi](https://docs.microsoft.com/en-us/business-appl
 
 ### <a name="videos"></a>Videa
 
-Prohlédněte si instruktážní videa, která jsou nyní k dispozici na kanálu [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace o modulu Závazky a jiných řešeních naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Názory, novinky a jiné informace o modulu Závazky a jiných řešeních naleznete v blogu [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Existuje mnoho příspěvků o modulu Hlavní kniha na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Hlavní kniha, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
+Existuje mnoho příspěvků o hlavní knize na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Hlavní kniha, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
 
 [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.
 
 #### <a name="community-blogs"></a>Blogy komunity
 
 - [Důležité informace o hlavní knize v Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
-
 

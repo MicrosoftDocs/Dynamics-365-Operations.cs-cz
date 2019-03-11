@@ -1,32 +1,31 @@
 ---
-title: "Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Attract"
-description: "Toto téma popisuje prvky pracovního místa v aplikaci Attract. Také vysvětluje, jakým způsobem vytvořit pracovní místo."
+title: Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Attract
+description: Toto téma popisuje prvky pracovního místa v aplikaci Attract. Také vysvětluje, jakým způsobem vytvořit pracovní místo.
 author: josaw
 manager: AnnBe
 ms.date: 12/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
 ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303601"
 ---
-
 # <a name="create-approve-and-post-jobs-in-attract"></a>Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Attract
 
 [!include [banner](includes/banner.md)]
@@ -75,7 +74,7 @@ Další informace o aktivitách, které lze přidat do procesu náboru, naleznet
 
 ## <a name="postings"></a>Zaúčtování
 
-Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveřejnit jen náborář a správce. Pracovní místo lze zveřejnit na webu Talent Careers (kariérní web systému Microsoft Dynamics 365 for Talent) nebo LinkedIn. 
+Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveřejnit jen náborář a správce. Pracovní místo lze zveřejnit na webu Talent Careers (kariérní web systému Dynamics 365 for Talent) nebo LinkedIn. 
 
 > [!NOTE]
 > Při publikování procesu ve službě LinkedIn je důležité všimnout si tří důležitých věcí.
@@ -127,7 +126,7 @@ Po uložení pracovního místa je možné ho odeslat ke schválení. V následu
 
 V seznamu pracovních pozic můžete filtrovat stavy úloh.
 
-Schválení lze odeslat libovolnému uživateli služby Microsoft Azure Active Directory (Azure AD) ve společnosti. Schválení jsou odeslána současně všem uživatelům, kteří jsou uvedeni jako schvalovatelé. Po schválení pracovního místa je lze aktivovat.
+Schválení lze odeslat uživateli Microsoft Azure Active Directory (Azure AD) ve společnosti. Schválení jsou odeslána současně všem uživatelům, kteří jsou uvedeni jako schvalovatelé. Po schválení pracovního místa je lze aktivovat.
 
 Osoby, které jsou uvedeny jako schvalovatelé, obdrží upozornění v aplikaci Attract s informací, že se mají položku ke schválení. Položka ke schválení se zobrazí také v části **Přiřazené** v řídicím panelu. Jakmile někdo pracovní místo přijme nebo schválí, náborový tým obdrží upozornění. Nakonec obdrží náborový tým upozornění na schválení pracovního místa.
 
@@ -162,11 +161,10 @@ Podle následujícího postupu vytvořte pracovní místo.
 11. Zvolte **Uložit**.
 12. Pokud jste vybrali použití procesu schválení, postupujte takto:
 
-    1. Vyberte **+ přidat schvalovatele**a poté zadejte uživatele, který má účet Azure AD. Můžete přidat více schvalujících.
+    1. Vyberte **+ Přidat schvalovatele** a poté zadejte uživatele, který má účet Azure AD. Můžete přidat více schvalujících.
     2. Vyberte **Odeslat schvalovatelům**.
 
     Pole **Stav práce** v pracovní pozici je nastaveno na **čekající**. Poté, co se hodnota v poli **Stav práce** změní na **Schváleno**, lze pracovní pozici aktivovat.
 
 13. Chcete-li pracovní pozici aktivovat, zaškrtněte políčko **Aktivovat**.
 14. Pokud chcete pracovní pozici zveřejnit, přejděte na **Zveřejnit** a vyberte **Zveřejint** na webu Talent Careers nebo LinkedIn.
-

@@ -1,13 +1,13 @@
 ---
-title: "Výstrahy"
-description: "Toto téma poskytuje obecné informace o výstrahách v aplikaci Microsoft Dynamics 365 for Finance and Operations. Výstrahy lze používat k informování o událostech, které mají být sledovány během pracovního dne."
+title: Výstrahy
+description: Toto téma obsahuje obecné informace o výstrahách v Microsoft Dynamics 365 for Finance and Operations. Výstrahy lze používat k informování o událostech, které mají být sledovány během pracovního dne.
 author: tjvass
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 28ee34cd9133c634af98a50168e22efd0f74abce
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 38309e986c1d284ed63be760745b20a5415adb4c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367448"
 ---
-
 # <a name="alerts"></a>Výstrahy
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="about-alerts"></a>O výstrahách
-Výstrahy představují systém oznámení kritické události v aplikaci Microsoft Dynamics 365 for Finance and Operations. Výstrahy lze používat k informování o událostech, které mají být sledovány během pracovního dne. Můžete snadno vytvořit vlastní pravidla výstrah, abyste byli upozorněni na zpožděné dodávky, smazané objednávky, změny cen nebo jiné události, na které musíte reagovat.
+Výstrahy tvoří systém oznámení pro kritické události v Microsoft Dynamics 365 for Finance and Operations. Výstrahy lze používat k informování o událostech, které mají být sledovány během pracovního dne. Můžete snadno vytvořit vlastní pravidla výstrah, abyste byli upozorněni na zpožděné dodávky, smazané objednávky, změny cen nebo jiné události, na které musíte reagovat.
 
 Při plánování podnikových zdrojů (ERP) existují některé typické scénáře, kde lze použít funkci výstrahy v modulu Finance and Operations. Několik příkladů:
 
@@ -78,4 +77,3 @@ Pravidlo výstrahy obsahuje pět komponent:
 ## <a name="email-notifications-from-alerts"></a>E-mailová oznámení z výstrah
 
 E-mailová oznámení z výstrah dosud nejsou povolena. To bude k dispozici v budoucí aktualizaci.
-

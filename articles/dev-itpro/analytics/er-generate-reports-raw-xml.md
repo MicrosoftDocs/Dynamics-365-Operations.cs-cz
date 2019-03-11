@@ -1,13 +1,13 @@
 ---
-title: "Generování sestavy přidáním obsahu v podobě neformátovaného dokumentu XML"
-description: "Formáty v modulu Elektronické výkaznictví (ER) můžete navrhovat pro generování odchozích dokumentů ve formátu XML."
+title: Generování sestavy přidáním obsahu v podobě neformátovaného dokumentu XML
+description: Formáty v modulu Elektronické výkaznictví (ER) můžete navrhovat pro generování odchozích dokumentů ve formátu XML.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 39503d051e3b4686bbaa0130fe5be7cb980fbcb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312179"
 ---
-
 # <a name="generate-reports-by-adding-content-as-raw-xml"></a>Generování sestavy přidáním obsahu v podobě neformátovaného dokumentu XML
 
 [!include[banner](../includes/banner.md)]
@@ -39,4 +38,3 @@ Můžete použít nový prvek formátu **RAW XML** k návrhu formátů elektroni
 > Počítejte s tím, že systém neřídí, zda je obsah XML, který se umístí do vygenerovaného dokumentu pomocí prvku formátu **RAW XML*** správný.
 
 Další informace o této funkci získáte přehráním průvodců záznamů úlohy **ER Použití nezpracovaných dat XML ke generování sestav XML (část 1: Návrh datového modelu)** a **ER Použití nezpracovaných dat XML ke generování sestav XML (část 2: Návrh a spuštění sestavy)**, které jsou součástí obchodního procesu **7.5.4.3 Acquire/Develop IT service/solution components (10677)** a dají se stáhnout ze [služby Stažení softwaru Microsoft](https://go.microsoft.com/fwlink/?linkid=874684). Tito průvodci záznamem úloh vás provedou procesem konfigurace formátu ER k vložení nezpracovaných dat XML do generovaných souborů.
-

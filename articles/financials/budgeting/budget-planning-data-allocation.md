@@ -1,13 +1,13 @@
 ---
-title: "Přidělování dat plánování rozpočtu"
-description: "Tento článek popisuje různé metody přidělení, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations, a jejich použití."
+title: Přidělování dat plánování rozpočtu
+description: Tento článek popisuje různé metody přidělení, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations, a jejich použití.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 430040f7b3706aa1ad913d70c0dbcab9249ea222
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b5f262318b4defb941f1216d0bfe06961f62bad4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352498"
 ---
-
 # <a name="budget-planning-data-allocation"></a>Přidělení dat pro plánování rozpočtu
 
 [!include [banner](../includes/banner.md)]
@@ -72,7 +71,6 @@ Dále vytvořte přidělení fáze na stránce **Konfigurace plánování rozpo�
 Nakonec přidejte automatizovanou úlohu pro přidělení fáze plánování rozpočtu v požadované fázi workflowu. V následujícím příkladu byla do workflowu vložena dvě přidělení fází plánování rozpočtu (červený okraj).
 
 [![Přidělení fází plánování rozpočtu](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Zpracování úroků"
-description: "Tato procedura popisuje způsob tvorby, tisku a zaúčtování oznámení úroků."
+---
+title: Zpracování úroků
+description: Tato procedura popisuje způsob tvorby, tisku a zaúčtování oznámení úroků.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPosting, SysQueryForm, CustInterestNote, SrsReportViewerForm
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c5652a38684061914f895d7f8b82999c9840fd63
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 543ac29ac1b1cbad52f1c155ac90b04d0c122a1f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359145"
 ---
 # <a name="process-interest"></a>Zpracování úroků
 
@@ -67,5 +67,4 @@ Tato procedura popisuje způsob tvorby, tisku a zaúčtování oznámení úrok�
 4. Rozbalte nebo sbalte oddíl Záznamy k zahrnutí.
 5. Klikněte na tlačítko OK.
 6. V poli Stav vyberte možnost „Zaúčtováno“.
-
 

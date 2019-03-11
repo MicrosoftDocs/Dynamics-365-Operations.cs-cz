@@ -1,13 +1,13 @@
 ---
-title: "Přecenění cizí měny pro závazky a pohledávky"
-description: "Teoretická hodnota (účetní hodnota) otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Tento článek poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky."
+title: Přecenění cizí měny pro závazky a pohledávky
+description: Teoretická hodnota (účetní hodnota) otevřených transakcí v zahraničních měnách se průběžně liší z důvodu fluktuací směnných kurzů. Tento článek poskytuje informace o procesu přecenění cizí měny, kterého lze využít pro aktualizaci hodnoty otevřených transakcí v modulu Závazky a pohledávky.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: da1aee4c678cb4786d52abc81b787edceaa5aa38
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 259b487b0f11b19af9609d63f12114dcaa61be52
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341320"
 ---
-
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Přecenění cizí měny pro závazky a pohledávky
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ Při každém spuštění přecenění cizí měny je vytvořen záznam. Ze záz
     -   **Žádná** – nejsou zaúčtovány žádné finanční dimenze. Používáte-li požadovanou finanční dimenzi ve vaší účetní struktuře, proces přecenění stále probíhá a vytvoří účetní položky, které nemají žádné finanční dimenze. Nejprve se zobrazí zpráva s upozorněním, po které můžete zrušit přecenění.
     -   **Tabulka** – finanční dimenze účtu odběratele nebo dodavatele jsou zaúčtovány v transakcích zaměřených na přecenění cizí měny.
     -   **Zaúčtování** – finanční dimenze transakce, která je právě přehodnocena, je zaúčtována v transakcích zaměřených na přecenění cizí měny. Ve výchozím nastavení budou finanční dimenze z účtu hlavní knihy původní transakce pohledávek a závazků použity pro transakce přecenění hlavního účtu pohledávek/závazků a finanční dimenze z účtu hlavní knihy majetku/výdajů/příjmů původní transakce se použijí pro transakce přecenění hlavního účtu nerealizovaného zisku/ztráty.
-
 
 
 

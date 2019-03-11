@@ -1,32 +1,31 @@
 ---
-title: "Členy statistické dimenze a šablony poskytovatelů statistických měření"
-description: "Toto téma uvádí informace o členech statistické dimenze a šablonách poskytovatelů statistických měření. Členy statistické dimenze lze použít jako základ přidělení v zásadách, jako je distribuce nákladů a přidělení nákladů. Můžete je také používat k vykazování spotřeby nepeněžních nákladů."
+title: Členy statistické dimenze a šablony poskytovatelů statistických měření
+description: Toto téma uvádí informace o členech statistické dimenze a šablonách poskytovatelů statistických měření. Členy statistické dimenze lze použít jako základ přidělení v zásadách, jako je distribuce nákladů a přidělení nákladů. Můžete je také používat k vykazování spotřeby nepeněžních nákladů.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cc9170f10fe2be0446b1c974a50dbdf1cb5fe236
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8c74c47a5e0ca72fc4509786b091a70b5e292b54
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360295"
 ---
-
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Členy statistické dimenze a šablony poskytovatelů statistických měření
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ Zde je několik příkladů typických členů statistické dimenze.
 
 ## <a name="statistical-measure-provider-template"></a>Šablona poskytovatele statistického měření
 
-Statistická měření mohou pocházet z mnoha zdrojů. Aplikace Microsoft Dynamics 365 for Finance and Operations, je skvělým zdrojem k extrahování statistických měření. Šablonu poskytovatele statistických měření můžete použít ke snadné konfiguraci statistických měření, která budete extrahovat.
+Statistická měření mohou pocházet z mnoha zdrojů. Microsoft Dynamics 365 for Finance and Operations je skvělým zdrojem pro extrahování statistických měřítek. Šablonu poskytovatele statistických měření můžete použít ke snadné konfiguraci statistických měření, která budete extrahovat.
 
 Definice šablony poskytovatele statistických měření je obecná a lze ji opakovaně používat ve více členech statistické dimenze.
 
@@ -132,13 +131,13 @@ Předtím, než do nákladového účetnictví zadáte statistické hodnoty, je 
 > [!NOTE]
 > V tomto příkladu vytvoříme vztah pouze pro **skutečnou verzi**.
 
-Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. V tomto scénáři vyberte datový konektor **Dynamics 365 for Finance and Operations, – Statistická měření**, protože chceme extrahovat data z aplikace Finance and Operations.
+Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. V tomto scénáři vyberte datový konektor **Dynamics 365 for Finance and Operations – Statistická měření**, protože chceme extrahovat data z aplikace Finance and Operations.
 
 **Zdroj dat**
 
-| Jméno        | Datový konektor                                                                     | Člen statistické dimenze |
+| Název        | Datový konektor                                                                     | Člen statistické dimenze |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| FTEs D365FO | Aplikace Dynamics 365 for Finance and Operations – statistická měření | FTE                         |
+| FTEs D365FO | Dynamics 365 for Finance and Operations – Statistická měření | FTE                         |
 
 **Konfigurace poskytovatele dat**
 
@@ -220,13 +219,13 @@ Předtím, než do nákladového účetnictví zadáte statistické hodnoty, je 
 > [!NOTE]
 > V tomto příkladu vytvoříme vztah pouze pro **skutečnou verzi**.
 
-Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. V tomto scénáři vyberte datový konektor **Dynamics 365 for Finance and Operations, – Statistická měření**, protože chceme extrahovat data z aplikace Finance and Operations.
+Při vytváření vztahu přejděte postupně na položky **Hlavní kniha nákladového účetnictví** \> **Skutečná verze** \> **Spravovat** \> **Statistická měření**. V tomto scénáři vyberte datový konektor **Dynamics 365 for Finance and Operations – Statistická měření**, protože chceme extrahovat data z aplikace Finance and Operations.
 
 **Zdroj dat**
 
 | Jméno           | Datový konektor                                                                     | Člen statistické dimenze |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| CC balení D365FO | Aplikace Dynamics 365 for Finance and Operations – statistická měření | CC balení                      |
+| CC balení D365FO | Dynamics 365 for Finance and Operations – Statistická měření | CC balení                      |
 
 Systém zjistí, že ProdRouteTrans je tabulka, kde každý záznam patří samostatné právnické osobě. Z toho vyplývá, že se zobrazí výzva k výběru právnické osoby, od níž mají být importovány transakce.
 
@@ -347,4 +346,3 @@ Pokud je předdefinovaný základ přidělení člena dimenze Elektřina přidru
 ## <a name="additional-resources"></a>Další zdroje
 
 [Základy přidělení](allocation-bases.md)
-

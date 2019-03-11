@@ -1,13 +1,13 @@
 ---
-title: "Lidské zdroje"
-description: "Lidské zdroje zjednodušují mnoho rutinních administrativních úkolů a automatizují řadu procesů souvisejících s pracovníky ve vaší organizaci. Také poskytuje rámec pro oddělení lidských zdrojů ke správě řady oblastí dohledu. Mezi tyto oblasti spadá nábor a udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn."
+title: Lidské zdroje
+description: Lidské zdroje zjednodušují mnoho rutinních administrativních úkolů a automatizují řadu procesů souvisejících s pracovníky ve vaší organizaci. Také poskytuje rámec pro oddělení lidských zdrojů ke správě řady oblastí dohledu. Mezi tyto oblasti spadá nábor a udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn.
 author: rschloma
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341757"
 ---
-
 # <a name="human-resources"></a>Lidské zdroje
 
 [!include [banner](../includes/banner.md)]
@@ -77,11 +76,11 @@ Kromě kompenzací zaměstnanců skrze mzdy, platy a odměny můžete vyvíjet p
 
 - [Správa programu zaměstnaneckých výhod](../../talent/manage-benefit-program.md)
 - [Zásady způsobilosti k zaměstnaneckým výhodám](../../talent/benefit-eligibility-policies.md)
-- [Spravovat položky půjčené zaměstnancům](../../talent/loan-items.md)
+- [Správa položek půjčených zaměstnancům](../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Zachování bezpečnosti na pracovišti a dodržování předpisů
 
-Aplikace Microsoft Dynamics AX umožňuje udržovat bezpečné pracovní prostředí, které je v souladu s platnými právními předpisy, včetně standardu ADA (Americans with Disabilities Act) a imigračních a naturalizačních zákonů. Například můžete spravovat fyzické požadavky pro konkrétní pracovní pozice, stejně jako sledovat požadavky na ubytování, které mohou pomoci vaší organizaci optimalizovat dovedností zaměstnanců.
+Microsoft Dynamics AX umožňuje udržovat bezpečné pracovní prostředí, které je v souladu s platnými právními předpisy, včetně zákona ADA (Americans with Disabilities Act) a imigračních a naturalizačních zákonů. Například můžete spravovat fyzické požadavky pro konkrétní pracovní pozice, stejně jako sledovat požadavky na ubytování, které mohou pomoci vaší organizaci optimalizovat dovedností zaměstnanců.
 
 - [Ověřování zaměstnanců pomocí formuláře I-9](localizations/noam-usa-form-i-9-verification.md)
 - [Splnění standardu ADA (Americans with Disabilities Act)](localizations/noam-usa-comply-ada.md)
@@ -95,4 +94,3 @@ Můžete navrhovat a rozdávat dotazníky, které slouží ke shromažďování 
 - [Návrh dotazníku](../../talent/design-questionnaires.md)
 - [Distribuce a vyplnění dotazníku](../../talent/distribute-questionnaires.md)
 - [Zobrazení a vyhodnocení výsledků dotazníku](../../talent/evaluate-questionnaire-results.md)
-

@@ -1,13 +1,13 @@
---- 
-title: "Definování modelů výrobních toků"
-description: "Modely výrobních toků popisují, jak je vypočtena a spravována kapacita pracovních buněk lean manufacturing."
+---
+title: Definování modelů výrobních toků
+description: Modely výrobních toků popisují, jak je vypočtena a spravována kapacita pracovních buněk lean manufacturing.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e410928bc850e1f3427c9536e9943d1196be7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7850a121ca06f25f6c532e49e18c0b6811bd7455
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336720"
 ---
 # <a name="define-production-flow-models"></a>Definování modelů výrobních toků
 
@@ -45,5 +45,4 @@ Modely výrobních toků popisují, jak je vypočtena a spravována kapacita pra
     * Ochranná doba plánování vyjadřuje počet dní, kdy může být provedena rezervace kapacity pro související pracovní buňky. V poli Ochranná doba plánování zadejte počet dní.   Úlohy kanbanových procesů, které se nacházejí mimo toto období, nejsou plánované s automatickým plánováním. Ochranná doba plánování je obvykle dvojnásobná než průměrná skladová doba realizace produktů vyrobených ve výrobním toku nebo pracovní buňce. Cyklus EPE nesmí být větší, než polovina ochranné doby plánování.     
 8. V poli Reakce na nedostatek kapacity vyberte možnost.
     * Možnosti obsahují: Odložit – odložení úplné poptávky plánovací události na příští dostupný produkční den, s dostupnou propustností. Zrušit - ukončení automatického plánování pro plánovací událost a ponechání souvisejících prací nenaplánovaných.   Přidat do požadovaného dne - naplánování požadované práce pro požadované období. Tímto dochází k přetížení buňky pro tento den a vyžaduje kontrolu plánovače a ruční interakci.   Rozdělit na dostupná období - rozdělení různých prací plánovací události na všechny dostupné produkční dny, počínaje prvním dostupným dnem. Množství minimální distribuce je množství kanbanové úlohy. Rozdělení přiřadí minimální množství plánování (kanbanové množství) pro každý den s dostatečnou dostupnou propustností.  
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Přehled výrobního procesu"
-description: "Toto téma poskytuje přehled procesů výroby. Popisuje různé fáze výrobní zakázky, dávkové objednávky a kanbany od vytvoření objednávky po uzavření finančního období."
+title: Přehled výrobního procesu
+description: Toto téma poskytuje přehled procesů výroby. Popisuje různé fáze výrobní zakázky, dávkové objednávky a kanbany od vytvoření objednávky po uzavření finančního období.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cd529afa5d8117e01784ed267709e1ac8c43290d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8a12627db93b131450015539bb92ea4780518ed3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317998"
 ---
-
 # <a name="production-process-overview"></a>Přehled výrobního procesu
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,6 @@ Následující kroky ve výrobním cyklu mohou nastat pro všechny typy smíšen
 [Modely konfigurace produktu](../pim/product-configuration-models.md)
 
 [Lean manufacturing](lean-manufacturing-overview.md)
-
 
 
 

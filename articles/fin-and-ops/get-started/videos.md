@@ -1,52 +1,51 @@
 ---
 title: Videa pro aplikaci Finance and Operations
-description: "Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Dynamics 365 for Finance and Operations a jsou k dispozici ve službě YouTube a na dalších webech."
+description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Dynamics 365 for Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
 author: josaw1
 manager: AnnBe
 ms.date: 05/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
+ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 7f1fb4d2094076de62873148212c76ae6812d6a2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/17/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317814"
 ---
-
 # <a name="videos-for-finance-and-operations"></a>Videa pro aplikaci Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
-Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Dynamics 365 for Finance and Operations a jsou k dispozici ve službě YouTube a na dalších webech.
+Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Dynamics 365 for Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
 
-## <a name="dynamics-365-youtube-channel"></a>Kanál Dynamics 365 YouTube
+## <a name="dynamics-365-youtube-channel"></a>Kanál YouTube Dynamics 365
 
-V [kanálu YouTube Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) najdete videa vytvořená společností Microsoft, která ukazují celou řadu obchodních řešení pro produkty Dynamics 365. Tato část uvádí videa s postupy pro Dynamics 365 for Finance and Operations, která jsou v tomto informačním kanálu hostovaná.
+V kanálu [Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), najdete videa vytvořená společností Microsoft, která ukazují celou řadu obchodních řešení pro produkty Dynamics 365. Tato část uvádí videa s postupy pro Dynamics 365 for Finance and Operations, která jsou v tomto informačním kanálu hostovaná.
 
 Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli celý obsah videa.
 
 #### <a name="data-integration"></a>Integrace dat
 
 - [Integrace zpeněžení potenciálního zákazníka](https://youtu.be/AVV9x5x-XCg)
-- [Synchronizace pracovního příkazu mezi Dynamics 365 for Field Service a aplikací Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synchronizace pracovního příkazu mezi službou Dynamics 365 for Field Service a aplikací Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 #### <a name="data-management"></a>Správa dat
 
-- [Použití datových entit a balíčků dat v Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
+- [Použít datových entit a balíčků dat v Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
 
-#### <a name="development"></a>Rozvoj
+#### <a name="development"></a>Vývoj
 
 - [Poradce při optimalizaci](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Nastavení pobočky a sestavení pro vývoj](https://www.youtube.com/watch?v=qXLd-NMx9OY)
@@ -67,8 +66,8 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 
 #### <a name="intelligence"></a>Intelligence
 
-- [Přinesení vlastní databáze (BYOD) do Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
-- [Způsob použití obsahu správy nákladů Power BI v Dynamics 365.](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
+- [Použití vlastní databáze (BYOD) do Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Jak používat obsah řízení nákladů Power BI v Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 #### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
 
@@ -80,23 +79,23 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 - [Nasazení kódu pro prostředí sandbox](https://www.youtube.com/watch?v=5azLeOO078k)
 - [Nasazení kódu pro produkční prostředí](https://www.youtube.com/watch?v=ogXo-saZkmE&t=2s)
 - [Implementace projektů v rámci služby Lifecycle Services](https://www.youtube.com/watch?v=V1vVOgcTuw4&t=18s)
-- [Správa procesu upgradu kódu a nástroje v aplikaci Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
+- [Správa procesu upgradu kódu a nástroje v Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
 - [Řízení knihoven obchodního procesu v rámci služby Lifecycle Services](https://www.youtube.com/watch?v=S5msxj-2-x0)
 - [Metodologie ve službě Lifecycle Services](https://www.youtube.com/watch?v=YRMJ15DvgZ8)
-- [Požadování produkčního prostředí v aplikaci Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
+- [požadavek na produkční prostředí Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
 - [Aktualizace dat v produkčním prostředí](https://www.youtube.com/watch?v=VCd5SgkYPTw)
-- [Vydání nové platformy Dynamics 365 for Finance and Operations po aktualizaci Platform 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
+- [Příjem nové verze platformy Dynamics 365 for Finance and Operations po aktualizaci platformy 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Sledování klíčových čítačů výkonu ve službě Dynamics Lifecycle Services pomocí telemetrie](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
 
 #### <a name="office-integration"></a>Integrace s Office
 
-- [Vytvoření šablony aplikace Excel pro záhlaví a vzorce řádků v aplikaci Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+- [Vytvoření šablony aplikace Excel pro vzorce záhlaví a řádku v Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 
 #### <a name="organization-administration"></a>Správa organizace
 
 - [Správa dokumentů](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
 
-#### <a name="procurement-and-sourcing"></a>Zásobování a zdroje
+#### <a name="procurement-and-sourcing"></a>Zásobování a zdroje
 
 - [Schválení nákupních objednávek na mobilním zařízení](https://youtu.be/gZ-gOlJe7H8)
 - [Příjem nového dodavatele](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
@@ -136,7 +135,7 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 
 #### <a name="develop-and-customize"></a>Vývoj a přizpůsobení
 
-- [Nástroje Azure Integration pro Dynamics 365 for Finance and Operations (DYN386PAL)](https://infopedia.eventbuilder.com/event?eventid=l7f2i9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Nástroje pro integraci Azure pro Dynamics 365 for Finance and Operations (DYN386PAL)](https://infopedia.eventbuilder.com/event?eventid=l7f2i9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Rozšiřitelnost (DYN384PAL2)](https://infopedia.eventbuilder.com/event?eventid=e0x4q5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Rozšíření nebo sestavení nového analytického pracovního prostoru (DYN321PAL)](https://infopedia.eventbuilder.com/event?eventid=r7z0f5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Přístup k testování výkonu (DYN449PAL2)](https://infopedia.eventbuilder.com/event?eventid=k6c6g9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
@@ -145,13 +144,13 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 #### <a name="financial-reporting"></a>Finanční výkaznictví
 
 - [Finanční výkaznictví (DYN305PAL)](https://infopedia.eventbuilder.com/event?eventid=s0d0n3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) 
-- [Možnosti vykazování v aplikaci Microsoft Dynamics 365 for Finance and Operations (VIR810PAL)](https://infopedia.eventbuilder.com/event?eventid=p8x0s5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Možnosti vykazování v Dynamics 365 for Finance and Operations (VIR810PAL)](https://infopedia.eventbuilder.com/event?eventid=p8x0s5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="integration"></a>Integrace
 
 - [Integrátor dat CDS (DYN451PAL2)](https://infopedia.eventbuilder.com/event?eventid=i8v2n3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integrace (VIR806PAL)](https://infopedia.eventbuilder.com/event?eventid=y0w0k9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Integrace mezi Dynamics 365 for Sales a Dynamics 365 for Finance & Operations přes CDS (DYN340PAL)](https://infopedia.eventbuilder.com/event?eventid=d8s3b6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Integrace mezi Dynamics 365 for Sales a Dynamics 365 for Finance & Operations prostřednictvím CDS (DYN340PAL)](https://infopedia.eventbuilder.com/event?eventid=d8s3b6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Systém integrace v Dynamics 365 for Finance & Operations (DYN385PAL)](https://infopedia.eventbuilder.com/event?eventid=y4y2v9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Systém automatizace úloh pro správu dat (DYN447PAL2)](https://youtu.be/KqnXjNpR4AY)
 
@@ -170,11 +169,11 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 - [Funkce punchout (DYN332PAL2)](https://infopedia.eventbuilder.com/event?eventid=w5u5q8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Dodavatelská spolupráce (DYN327PAL)](https://infopedia.eventbuilder.com/event?eventid=c3e4c0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
-#### <a name="retail"></a>Retail
+#### <a name="retail"></a>Maloobchodní a velkoobchodní prodej
 
-- [Možnosti rozšíření Dynamics 365 for Retail POS: podrobný přehled (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Retail architecture & Retail Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Novinky v Dynamics 365 for Retail POS: podrobný přehled (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Dynamics 365 for RetailRozšíření POS: podrobné zkoumání (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Architektura serveru maloobchodu a Retail Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Co je nového v rozšíření Dynamics 365 for Retail POS (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="support"></a>Podpora
 
@@ -182,9 +181,9 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 
 #### <a name="upgrade-and-migration"></a>Upgrade a migrace
 
-- [Nástroje migrace AX 2009 do Dynamics 365 for Operations (VIR809PAL)](https://infopedia.eventbuilder.com/event?eventid=c3g5k3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Nástroje pro migraci AX 2009 (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Upgrade z AX 2012 na Dynamics 365 for Operations (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [AX 2009 to Dynamics 365 for Operations – nástroje pro migraci (VIR809PAL)](https://infopedia.eventbuilder.com/event?eventid=c3g5k3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [AX 2009 – nástroje pro migraci (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- Upgrade [AX 2012 na Dynamics 365 for Operations (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Jak upgradovat na verzi 7.2 (červenec 2017) z 7.0 (RTW)/7.1 (vydání 1611) (DYN338PAL2)](https://infopedia.eventbuilder.com/event?eventid=q0w9p0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Nastavení Azure DevOps (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
@@ -196,4 +195,3 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 - [Proces vyskladnění podle dílů (DYN330PAL2)](https://infopedia.eventbuilder.com/event?eventid=u6e0z6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Vizuální plánování výrobních zakázek a kanbanů (DYN328PAL)](https://infopedia.eventbuilder.com/event?eventid=h0o0n0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integrace skladů s výrobou (DYN344PAL)](https://infopedia.eventbuilder.com/event?eventid=y8p6o1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) - [Skladová mobilní aplikace (VIR816PAL)](https://infopedia.eventbuilder.com/event?eventid=t8t7l8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-

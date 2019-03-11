@@ -1,13 +1,13 @@
 ---
-title: "Upgrade plánování rozpočtu"
-description: "Mezi aplikacemi Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Finance and Operations existují významné rozdíly, pokud jde o plánování rozpočtu. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu."
+title: Upgrade plánování rozpočtu
+description: Existují významné rozdíly mezi plánování rozpočtu v aplikaci Microsoft DynamicsAX 2012 a Microsoft Dynamics 365 for Finance and Operations. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu.
 author: ryansandness
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 3d57419ca5c59be185c87b869302b41bef05a3c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a39f516bb6d023ea18492ba3dfe721bd1127c60e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342953"
 ---
-
 # <a name="upgrade-budget-planning"></a>Upgrade plánování rozpočtu
 
 [!include [banner](../includes/banner.md)]
 
-Mezi aplikacemi Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Finance and Operations existují významné rozdíly, pokud jde o plánování rozpočtu. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu.  
+Existují významné rozdíly mezi plánování rozpočtu v aplikaci Microsoft DynamicsAX 2012 a Microsoft Dynamics 365 for Finance and Operations. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu.  
 
-Plánování rozpočtu v aplikaci Microsoft Dynamics 365 for Finance and Operations má mnohá vylepšení, která nebyla v aplikaci Microsoft Dynamics AX 2012 k dispozici. Toto téma vysvětluje změny, které musíte provést zákazníci, kteří upgradují. Rovněž zdůrazňuje nové funkce, které by měla být vzaty v úvahu při procesu upgradu. Z důvodu rozsahu změn nebude možné otevřít jakékoliv existující plány rozpočtu, dokud nebudou provedeny změny popsané v tomto tématu. Sestavy však budou fungovat a nebudou vyžadovat žádné změny.
+Plánování rozpočtu v aplikaci Microsoft Dynamics 365 for Finance and Operations obsahuje mnoho vylepšení, která nebyla k dispozici v aplikaci Microsoft Dynamics AX 2012. Toto téma vysvětluje změny, které musíte provést zákazníci, kteří upgradují. Rovněž zdůrazňuje nové funkce, které by měla být vzaty v úvahu při procesu upgradu. Z důvodu rozsahu změn nebude možné otevřít jakékoliv existující plány rozpočtu, dokud nebudou provedeny změny popsané v tomto tématu. Sestavy však budou fungovat a nebudou vyžadovat žádné změny.
 
 ## <a name="overview-of-changes"></a>Přehled změn
 V modulu rozpočtování pro Finance and Operations bylo provedeno mnoho významných změn. Tyto změny mají za cíl usnadnit konfiguraci a opětovné použití plánování rozpočtu a snížit každoroční údržbu a nastavování. Následující oblasti z aplikace AX 2012 se již v aplikaci Finance and Operations nevyskytují:
@@ -41,7 +40,7 @@ V modulu rozpočtování pro Finance and Operations bylo provedeno mnoho význam
 -   Omezení scénáře (konfigurace plánování rozpočtu)
 -   Šablony pro pravidla fáze plánování rozpočtu a šablony (proces plánování rozpočtu)
 -   Pole matice pro šablony listů
--   Průvodce šablonou aplikace Microsoft Excel pro plán rozpočtu
+-   Průvodce šablonou plánu rozpočtu v aplikaci Microsoft Excel
 
 Některé nové koncepty nelze upgradovat z předchozí funkce přímo. Proto je nutné dokončit některé rekonfigurace, aby bylo možné adresovat tyto nové koncepty. Následující části popisují koncepty, které nahradily položky v předcházejícím seznamu.
 
@@ -160,7 +159,6 @@ Bylo přidáno několik datových entit, aby bylo možné rychle implementovat p
 -   Priority plánu rozpočtu
 -   Sloupce plánu rozpočtu
 -   Prvky rozložení plánu rozpočtu
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Funkce a možnosti aplikace Attract"
-description: "Toto téma popisuje funkce, které aplikace Attract nabízí pro správu procesu náboru nových talentů."
+title: Funkce a možnosti aplikace Attract
+description: Toto téma popisuje funkce, které aplikace Attract nabízí pro správu procesu náboru nových talentů.
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: dd65def0006445da1a8d07577cf5ef05178c19bd
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303580"
 ---
 # <a name="attract-features-and-capabilities"></a>Funkce a možnosti aplikace Attract
 
@@ -33,9 +33,9 @@ Aplikace Attract poskytuje možnosti správy procesu při přijímání nových 
 Toto téma popisuje funkce, které poskytuje aplikace Attract.
 
 ## <a name="attract-dashboard"></a>Řídicí panel Attract
-Na řídicím panelu mohou členové týmu zobrazit podrobné informace o pracovních místech, která zastávají. Dále zde může náborový manažer nebo náborář přidávat do aplikace Attract nová pracovní místa, a to buď jejich vytvářením jednotlivých pozic nebo importem několika pozic najednou z tabulky aplikace Excel.
+Na řídicím panelu mohou členové týmu zobrazit podrobné informace o pracovních místech, která zastávají. Dále zde může náborový manažer nebo náborář přidávat do aplikace Attract nová pracovní místa, a to buď jejich vytvářením jednotlivých pozic nebo importem několika pozic najednou z tabulky aplikace Microsoft Excel.
 
-## <a name="jobs"></a>Práce
+## <a name="jobs"></a>Úlohy
 Na stránce **Práce** můžete zobrazit a upravit podrobnosti, jako je například popis práce a místo výkonu práce. Na stránce **Práce** se také dává dohromady náborový tým a můžete zde přidat nebo změnit náborové pracovníky a tazatele na pohovoru v týmu. Nové kandidáty lze přidat na stránce **Práce** taktéž.
 
 ## <a name="candidates"></a>Kandidáti
@@ -46,4 +46,3 @@ Aplikace Attract poskytuje předdefinovaný proces náboru, který obsahuje čty
 
 ## <a name="candidate-app"></a>Aplikace pro kandidáta
 Jakmile jsou uchazeči přidáni k pracovnímu místu, obdrží e-mail s odkazem na webovou aplikaci. Tato aplikace poskytuje podrobnosti o práci. Je to současně nástroj pro komunikaci s náborovým týmem. Uchazeči mohou její pomocí také odesílat informace o své dostupnosti pro pohovory.
-

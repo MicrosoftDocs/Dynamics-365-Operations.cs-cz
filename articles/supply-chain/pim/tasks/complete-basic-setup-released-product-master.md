@@ -1,13 +1,13 @@
---- 
-title: "Základní nastavení uvolněného základního produktu"
-description: "Tento postup popisuje, jak dokončit minimální požadované nastavení před použitím základního produktu ve verzích kusovníku."
+---
+title: Základní nastavení uvolněného základního produktu
+description: Tento postup popisuje, jak dokončit minimální požadované nastavení před použitím základního produktu ve verzích kusovníku.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroups, InventItemOrderSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0d3a91977c38c0ce0f9fe114bec943c7cb32a5d4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 35617f5bec877fbe8a89d015eda16a66ee14d335
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354775"
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>Základní nastavení uvolněného základního produktu
 
@@ -63,5 +63,4 @@ Jedná se o třetí postup z osmi, který vysvětluje vytvoření kombinací kon
     * Zvolením možnosti Výroba zadejte, že výchozí možností zásob pro tento základní produkt je jeho výroba.  
 24. Zavřete stránku.
 25. Zavřete formulář Podrobnosti o uvolněném produktu.
-
 

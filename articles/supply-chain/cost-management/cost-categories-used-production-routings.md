@@ -1,13 +1,13 @@
 ---
-title: "Nákladové kategorie použité ve výrobních postupech"
-description: "Tento článek obsahuje informace o nákladových kategoriích, které se týkají výrobních prostředí využívající trasování."
+title: Nákladové kategorie použité ve výrobních postupech
+description: Tento článek obsahuje informace o nákladových kategoriích, které se týkají výrobních prostředí využívající trasování.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory, RouteCostCategoryPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 90177a6b8dd277ba1180073c9cf416f857c5d730
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 53e038183a10b8732a9a5e0f25aac440c224400e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315790"
 ---
-
 # <a name="cost-categories-used-in-production-routing"></a>Nákladové kategorie použité ve výrobních postupech
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,6 @@ Záznam nákladů pro nákladovou kategorii může být specifický pro určité
 Pro operaci postupu jsou obvykle zděděny nákladové kategorie, které jsou přiřazeny k provoznímu prostředku nebo k hlavní operaci. Pokud vytváříte výrobní zakázku, budou operace postupu v rámci výrobního postupu odrážet vybranou verzi postupu. Nákladové kategorie přiřazené k operacím v rámci výrobního postupu můžete přepsat. 
 
 Některé typy výrobní práce se mohou vztahovat na odhadovaný čas projektu a zprávy. Nákladová kategorie v tomto případě je nutná pro účely výroby a projektu. Je-li určitá nákladová kategorie označena příznakem pro použití v projektech, je nutné definovat další informace související s daným projektem.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Pokladní hotovost pro východní Evropu"
-description: "Toto téma uvádí informace o funkci pokladní hotovosti, která umožňuje uživatelům v Estonsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému."
+title: Pokladní hotovost pro východní Evropu
+description: Toto téma uvádí informace o funkci pokladní hotovosti, která umožňuje uživatelům v Estonsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RCashBalance, RCashCountStatementForm, RCashPosting, RCashRemainLimit, RCashReportJour_PL, RCashTable, RCashTableBalance, RCashTableCredLimit, RCashTableLastRevaluation, RCashTableTransactions, RCashTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 77159c0ef8e8046b50fa1dae60423823865e80b5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4467987c4bb25ec7c44550c9e941298e459bbf22
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370128"
 ---
-
 # <a name="petty-cash-for-eastern-europe"></a>Pokladní hotovost pro východní Evropu
 
 [!include [banner](../includes/banner.md)]
@@ -310,7 +309,7 @@ Chcete-li vytvořit pokladní doklad prostřednictvím deníku dokladu, přejdě
 <td>Typ prodejního zástupce</td>
 <td>Toto pole může mít následující hodnoty:
 <ul>
-<li><strong>Pracovník</strong> – vyhledávací hodnota <strong>Zástupce</strong> obsahuje seznam zaměstnanců, pokud je hodnota v poli <strong>Protiúčet</strong> nastavena na <strong>Hlavní kniha</strong> nebo <strong>Banka</strong> nebo seznam kontaktních osob protistrany, pokud je v poli <strong>Protiúčet</strong> nastavena hodnota <strong>Zákazník</strong> nebo <strong>Dodavatel</strong>. Při nastavování zástupců přejděte na <strong>Základní</strong> &gt; <strong>Nastavení</strong> &gt; <strong>Kontakty</strong> &gt; <strong>Kontaktní osoba</strong>.</li>
+<li><strong>Pracovník</strong> – vyhledávací hodnota <strong>Zástupce</strong> obsahuje seznam zaměstnanců, pokud je hodnota v poli <strong>Protiúčet</strong> nastavena na <strong>Hlavní kniha</strong> nebo <strong>Banka</strong>, nebo seznam kontaktních osob protistrany, pokud je v poli <strong>Protiúčet</strong> nastavena hodnota <strong>Zákazník</strong> nebo <strong>Dodavatel</strong>. Při nastavování zástupců přejděte na <strong>Základní</strong> &gt; <strong>Nastavení</strong> &gt; <strong>Kontakty</strong> &gt; <strong>Kontaktní osoba</strong>.</li>
 <li><strong>Ostatní</strong> – vyhledávací hodnota <strong>Zástupce</strong> obsahuje seznam jiných klientů. Pokud chcete nastavit příjemce, kteří nejsou uvedeni v tabulce <strong>Zákazníci</strong> nebo <strong>Dodavatelé</strong>, přejděte na <strong>Hlavní kniha</strong> &gt; <strong>Příjemci</strong>. Tento typ je dostupný pouze pro Lotyšsko. (Měl by být povolen klíč konfigurace <strong>CSELatvia</strong>.)</li>
 <li><strong>Dodavatel</strong> – vyhledávací hodnota <strong>Zástupce</strong> obsahuje seznam dodavatelů. Při nastavování dodavatelů přejděte na položky <strong>Závazky</strong> &gt; <strong>Dodavatelé</strong>.</li>
 <li><strong>Zákazník</strong> – vyhledávací hodnota <strong>Zástupce</strong> obsahuje seznam zákazníků. Při nastavování zákazníků přejděte na položky <strong>Pohledávky</strong> &gt; <strong>Zákazníci</strong>.</li>
@@ -475,7 +474,6 @@ Vyrovnaná částka se projeví v poli <strong>Měna vyrovnání</strong> na str
 | Hotovostní transakce                              | Pokud chcete zobrazit platební transakce, přejděte na **řízení hotovosti a banky** &gt; **Dotazy a sestavy** &gt; **Platební transakce**. Pomocí funkce **Filtr** na kartě Záznamy pro zahrnutí zadejte další kritéria omezující výběr hotovostních transakcí. |
 | Registrační deník (pro Estonsko, Rusko) | Sestava v okně **řízení hotovosti a banky** &gt; **dotazy a sestavy** &gt; **deník registrace** odráží všechny hotovostní refundační a hotovostní výdajové doklady, které byly vydány.                                   |
 | Pokladní kniha (pro Lotyšsko, Litvu, Rusko)     | Sestava v okně **řízení hotovosti a banky** &gt; **dotazy a sestavy** &gt; **pokladní kniha sestavy** odráží skutečné peněžní fond pohyby (příjmy a výdaje).                                                            |
-
 
 
 

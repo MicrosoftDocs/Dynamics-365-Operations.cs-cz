@@ -1,13 +1,13 @@
---- 
-title: "EEU 00047 Záloha pro zaměstnance"
-description: "Tato procedura ukazuje, jak lze nastavit a registrovat transakce pro držitele zálohy."
+---
+title: EEU 00047 Záloha pro zaměstnance
+description: Tato procedura ukazuje, jak lze nastavit a registrovat transakce pro držitele zálohy.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RCashTable, LedgerJournalSetup, HcmWorkerGroup_RU, EmplPosting_RU, VendParameters, RCashPosting, BankParameters, PaymTerm, HcmWorker, HcmWorkerNewWorker, HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU, PurchTable, PurchCreateOrder, HcmAdvHolderLookup_RU, InventItemIdLookupPurchase, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, EmplTrans_RU, EmplBalance_RU
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e3c07789bfa0839436caf32e428f3abeecb8f2b7
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370135"
 ---
 # <a name="eeu-00047-advance-payment-to-employee"></a>EEU 00047 Záloha pro zaměstnance
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura ukazuje, jak lze nastavit a registrovat transakce pro držitele zálohy. Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Litvě. Tento úkol lze použít pouze pro právnické osoby s primární adresu v Polsku, Litvě, Lotyšsku, Estonsku, České republice nebo Maďarsku. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+Tato procedura ukazuje, jak lze nastavit a registrovat transakce pro držitele zálohy. Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Litvě. Tento úkol lze použít pouze pro právnické osoby s primární adresu v Polsku, Litvě, Lotyšsku, Estonsku, České republice nebo Maďarsku. Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
 
 ## <a name="create-a-new-cash-account"></a>Vytvoření nového bankovního účtu
@@ -170,5 +170,4 @@ Tato procedura ukazuje, jak lze nastavit a registrovat transakce pro držitele z
 11. Klikněte na tlačítko OK.
 12. Zavřete stránku.
 13. Klikněte na Transakce.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Plánování tras nákladní dopravy s více zastávkami"
-description: "Tento článek popisuje různé prvky, které slouží k plánování tras přepravy v aplikaci Dynamics 365 for Finance and Operations."
+title: Plánování tras nákladní dopravy s více zastávkami
+description: Tento článek popisuje různé prvky, které slouží k plánování tras přepravy v aplikaci Dynamics 365 for Finance and Operations.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 36cb454477c0d296246c061d2573954a81c9efd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 16255e812773ed35c0e34ec26a8a689ea09632bd
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328302"
 ---
-
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Plánování tras nákladní dopravy s více zastávkami
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Naplánovaná trasa je předdefinovaný plán cesty, který obsahuje plán pro d
 
 ## <a name="load-building-workbench"></a>Pracovní plocha sestavení vytížení
 Pracovní plocha sestavení vytížení používá pro navržení nákladu adresy zákazníka a data dodání z prodejních objednávek a plánované trasy, které jsou k dispozici. Ve výchozím nastavení jsou hodnoty z trasy zadány v rámci pracovní plochy. Můžete však vybrat datum "od", které je dřívější, než datum "od" z trasy. Po navržení nákladu se zkontroluje adresa dodání a datum dodání pro všechny otevřené prodejní objednávky. Pokud PSČ dodací adresy odpovídá PSČ centra v plánu trasy, a pokud je datum dodání v rozsahu, který je vybrán v rámci kritérií, bude prodejní objednávka navržena pro náklad. Je třeba zvážit také kapacitu šablony nákladu. Najednou je nabízen pouze jeden náklad. Pokud máte prodejní objednávky, které nejsou zahrnuty, bude pravděpodobně nutné použít jinou šablonu nákladu (například šablonu nákladu pro větší nákladní vůz nebo kontejner), nebo naplánovat další dodávky.
-
 
 
 

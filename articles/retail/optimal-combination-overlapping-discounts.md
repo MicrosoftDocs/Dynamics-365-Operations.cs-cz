@@ -1,13 +1,13 @@
 ---
-title: "Určení optimální kombinace překrývajících se slev"
-description: "Při překrytí slev je třeba určit kombinaci překrývající se slev, které budou tvořit nejnižší celkové částky transakce nebo nejvyšší celkovou slevu. Pokud se částka slevy liší podle ceny produktů, které jsou zakoupeny, například u běžné maloobchodní slevy typu Při nákupu 1 sleva X procent (BOGO), tento proces bude problémem pro kombinatorní optimalizaci."
+title: Určení optimální kombinace překrývajících se slev
+description: Při překrytí slev je třeba určit kombinaci překrývající se slev, které budou tvořit nejnižší celkové částky transakce nebo nejvyšší celkovou slevu. Pokud se částka slevy liší podle ceny produktů, které jsou zakoupeny, například u běžné maloobchodní slevy typu Při nákupu 1 sleva X procent (BOGO), tento proces bude problémem pro kombinatorní optimalizaci.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: eebb532071e7c6bae7cfae93bfe795e79bb16c63
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360686"
 ---
-
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Určení optimální kombinace překrývajících se slev
 
 [!include [banner](includes/banner.md)]
 
 Při překrytí slev je třeba určit kombinaci překrývající se slev, které budou tvořit nejnižší celkové částky transakce nebo nejvyšší celkovou slevu. Pokud se částka slevy liší podle ceny produktů, které jsou zakoupeny, například u běžné maloobchodní slevy typu "Při nákupu 1 sleva X procent" (BOGO), tento proces bude problémem pro kombinatorní optimalizaci.
 
-Tento článek se týká aplikace Microsoft Dynamics AX 2012 R3 s aktualizací KB 3105973 (vydané 2. listopadu 2015) nebo novější, a aplikace Microsoft Dynamics 365 for Retail. Abyste mohli určit překrývající se kombinované slevy pro včasné použití, zavedli jme metodu použití překrývajících se slev. Nazýváme tuto novou metodu **mezní hodnota pořadí**. Mezní hodnota pořadí se používá, když doba potřebná k vyhodnocení možných kombinací překrývajících se slev překročí prahovou hodnotu, kterou je možné konfigurovat na stránce **Parametry maloobchodu**. V metodě mezní hodnoty pořadí se vypočítá hodnota pro každou překrývající se slevu pomocí hodnoty slevy ve sdílených produktech. Překrývající se slevy jsou pak použity od nejvyšší relativní hodnoty po nejnižší relativní hodnotu. Další informace o nové metodě naleznete v části "Mezní hodnota" dále v tomto článku. Mezní hodnota pořadí nebude použita, pokud částky slev produktu nejsou ovlivněny jiným produktem v transakci. Například se tato metoda nepoužívá pro dvě jednoduché slevy nebo jednoduchou slevu a množstevní slevu pro jeden produkt.
+Tento článek platí pro Microsoft Dynamics AX 2012 R3 s KB 3105973 (vydáno 2 listopadu 2015) nebo novější, a na Microsoft Dynamics 365 for Retail. Abyste mohli určit překrývající se kombinované slevy pro včasné použití, zavedli jme metodu použití překrývajících se slev. Nazýváme tuto novou metodu **mezní hodnota pořadí**. Mezní hodnota pořadí se používá, když doba potřebná k vyhodnocení možných kombinací překrývajících se slev překročí prahovou hodnotu, kterou je možné konfigurovat na stránce **Parametry maloobchodu**. V metodě mezní hodnoty pořadí se vypočítá hodnota pro každou překrývající se slevu pomocí hodnoty slevy ve sdílených produktech. Překrývající se slevy jsou pak použity od nejvyšší relativní hodnoty po nejnižší relativní hodnotu. Další informace o nové metodě naleznete v části "Mezní hodnota" dále v tomto článku. Mezní hodnota pořadí nebude použita, pokud částky slev produktu nejsou ovlivněny jiným produktem v transakci. Například se tato metoda nepoužívá pro dvě jednoduché slevy nebo jednoduchou slevu a množstevní slevu pro jeden produkt.
 
 ## <a name="discount-examples"></a>Příklady slev
 
@@ -85,4 +84,3 @@ Chcete-li vyřešit problém exponenciálně rostoucího počtu kombinací, kter
 ![Pole se seznamem Překrývající se slevy 06](./media/overlapping-discount-combo-06.jpg)
 
 Po odečtení mezní hodnoty každé slevy ve sdílené sadě produktů se vypočte mezní hodnota, uplatní slevy na sdílené výrobky v pořadí, vyčerpávajícím způsobem, od nejvyšší mezní hodnoty k nejnižší mezní hodnotě. Pro tuto metodu nejsou porovnány všechny zbývající možnosti slev pokaždé, když je uplatněna jedna instance slevy. Místo toho jsou překrývající se slevy porovnány jednou a poté použity v pořadí. Nejsou prováděny žádné další porovnání. Můžete nakonfigurovat prahové hodnoty pro přepnutí na metodu mezní hodnoty na kartě **Sleva** stránky **Parametry maloobchodu**. Přijatelná doba při výpočtu celkové slevy se v rámci odvětví maloobchodu liší. Tentokrát však obecně spadá do rozsahu desítky milisekund na jednu sekundu.
-

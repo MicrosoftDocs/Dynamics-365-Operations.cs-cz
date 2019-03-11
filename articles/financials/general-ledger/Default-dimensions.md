@@ -1,13 +1,13 @@
 ---
-title: "Finanční dimenze a zaúčtování"
-description: "Při plánování a nastavení svých účtových osnov musíte zvážit, jak jednotlivé části budou spolupracovat při zaúčtování deníku nebo dokladu. Tyto komponenty zahrnují účetní struktury, rozšířená pravidla a vyrovnávací a pevné dimenze. Toto téma vysvětluje, co jednotlivé komponenty představují a jak pracují dohromady."
+title: Finanční dimenze a zaúčtování
+description: Při plánování a nastavení svých účtových osnov musíte zvážit, jak jednotlivé části budou spolupracovat při zaúčtování deníku nebo dokladu. Tyto komponenty zahrnují účetní struktury, rozšířená pravidla a vyrovnávací a pevné dimenze. Toto téma vysvětluje, co jednotlivé komponenty představují a jak pracují dohromady.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 89bc6f1f01f77dac4c24419705737783b07e4ac7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0530a569978bafffcdcc63c8d502b9bfa645bc5
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327934"
 ---
-
 # <a name="financial-dimensions-and-posting"></a>Finanční dimenze a zaúčtování 
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Při plánování a nastavení svých účtových osnov musíte zvážit, jak je
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Komponenty účetních osnov a finančních dimenzí
 
-Microsoft Dynamics 365 for Finance and Operations má bohatý systém na základě pravidel pro určení platných kombinací hlavních účtů a hodnot finančních dimenzí. Tento oddíl poskytuje stručný přehled funkcí jednotlivých komponent a vysvětluje, kde komponenty naleznete.
+Microsoft Dynamics 365 for Finance and Operations má bohatý systém na základě pravidel pro určení platných kombinací hlavních účtů hodnot finančních dimenzí. Tento oddíl poskytuje stručný přehled funkcí jednotlivých komponent a vysvětluje, kde komponenty naleznete.
 
 ### <a name="account-structures"></a>Účetní struktury
 
@@ -128,4 +127,3 @@ Některé z následujících zdrojů se vztahují k předchozí verzi aplikace F
 [Výchozí nastavení dimenze v rozúčtování](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Dimenze výchozí v architektuře dimenzí](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2014/09/)
-

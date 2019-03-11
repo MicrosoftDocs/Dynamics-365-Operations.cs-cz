@@ -1,13 +1,13 @@
 ---
-title: "Skladové deníky"
-description: "Toto téma popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob."
+title: Skladové deníky
+description: Toto téma popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
 author: perlynne
 manager: AnnBe
 ms.date: 04/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7e6ac46cc4d4961cdd76f6127d8900a9b3d13a39
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361675"
 ---
-
 # <a name="inventory-journals"></a>Skladové deníky
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 04/13/2018
 
 Toto téma popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
 
-Deníky zásob v aplikaci Microsoft Dynamics 365 for Finance and Operations se používají ke zpracovávání různých typů transakcí fyzických zásob, například k zaúčtování výdejů a příjmů, pohybu zásob, vytváření kusovníků a odsouhlasení fyzických zásob. Všechny tyto deníky zásob se používají podobným způsobem, avšak rozděleny jsou do různých typů.
+Deníky zásob v aplikaci Microsoft Dynamics 365 for Finance and Operations se používají k zaúčtování různých typů transakcí fyzických zásob, jako například zaúčtování výdejů a příjmů, skladové pohyby, vytvoření kusovníku a odsouhlasení fyzických zásob. Všechny tyto deníky zásob se používají podobným způsobem, avšak rozděleny jsou do různých typů.
 
 ## <a name="types-of-inventory-journals"></a>Typy deníků zásob
 K dispozici jsou následující typy deníků zásob:
@@ -120,4 +119,3 @@ Tyto dva skladové deníky podporují pouze scénář *Inicializovat sklad* scé
 ## <a name="additional-resources"></a>Další zdroje
 
 [Datové entity](../../dev-itpro/data-entities/data-entities.md)
-

@@ -1,13 +1,13 @@
---- 
-title: "Správa šablon e-mailů"
-description: "Můžete přenést informace z databáze organizace do záložek v novém dokumentu a použít je v rámci šablon, které vám pomohou efektivně komunikovat s uchazeči a kandidáty."
+---
+title: Správa šablon e-mailů
+description: Můžete přenést informace z databáze organizace do záložek v novém dokumentu a použít je v rámci šablon, které vám pomohou efektivně komunikovat s uchazeči a kandidáty.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMApplicationWordBookmark, HRMApplicationEmailTemplate
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f8eface8fd47378e25c7baeca9a84fa41097dfbe
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eeaf1675b6653ab2c8c04d05ec1bff3cd0bb18d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309603"
 ---
 # <a name="manage-email-templates"></a>Správa šablon e-mailů
 
@@ -50,5 +50,4 @@ Můžete přenést informace z databáze organizace do záložek v novém dokume
 8. Pokračujte v zadávání e-mailové zprávy vložením polí záložky v místě potřeby.
     * Pokračujte v zadávání e-mailové zprávy vložením polí záložky v místě potřeby.  
 9. Klikněte na položku Uložit.
-
 

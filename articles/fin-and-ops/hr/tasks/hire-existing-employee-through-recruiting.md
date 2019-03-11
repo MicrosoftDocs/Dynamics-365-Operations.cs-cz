@@ -1,13 +1,13 @@
---- 
-title: "Najmutí existujících zaměstnanců prostřednictvím náboru"
-description: "Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanci ve vaší organizaci."
+---
+title: Najmutí existujících zaměstnanců prostřednictvím náboru
+description: Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanci ve vaší organizaci.
 author: rschloma
 manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
 ms.openlocfilehash: 71793ce48142b19b288e2315dcd44a07d8e39f90
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365378"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Najmutí existujících zaměstnanců prostřednictvím náboru
 
@@ -40,5 +40,4 @@ Otevřené pozice mohou někdy zaplnit kandidáti, kteří jsou již zaměstnanc
 8. Můžete také zvolit kód důvodu. Příklad: Reorganizace
 9. Klikněte na možnost Změna pozice.
     * Nyní můžete také změnit kompenzaci. Pokud nyní kompenzaci nepřiřadíte, můžete to změnit zobrazením formuláře pracovníka, výběrem karty Kompenzace a výběrem možnosti „Fixní plán“. Po výběru možnosti „Změna pozice“ bude stav přihlášky aktualizován na hodnotu „Zaměstnán“.  
-
 

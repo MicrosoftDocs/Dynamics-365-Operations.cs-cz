@@ -1,13 +1,13 @@
 ---
-title: "Import souborů ISO20022"
-description: "Toto téma popisuje, jak importovat soubory plateb formátů ISO 20022 camt.054 a pain.002 do aplikace Microsoft Dynamics 365 for Finance and Operations."
+title: Import souborů ISO20022
+description: Toto téma vysvětluje, jak importovat soubory plateb formátů ISO 20022 camt.054 a pain.002 do Microsoft Dynamics 365 for Finance and Operations.
 author: neserovleo
 manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: d91e937c62d4d498e67d753e39676514835f4161
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f55e8fbc4d13f84686298cb8dbcebb4baf134cf3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370102"
 ---
-
 # <a name="import-iso20022-files"></a>Import souborů ISO20022
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ Můžete importovat soubory plateb, které mají následující formáty:
 ## <a name="prerequisites-for-importing-the-camt054-credit-advice-file"></a>Předpoklady pro import souboru platebního avíza camt.054
 Import zpráv s bankovními oznámeními ve formátu camt.054.001.002 do deníku plateb odběratele vyžaduje splnění následujících předpokladů.
 
-1. Importujte konfiguraci **ISO20022 camt.054** Electronické výkaznictví (ER) z aplikace Microsoft Dynamics Lifecycle Services (LCS). Potom na stránce **Způsob platby odběratele** v poli **Importovat konfigurace formátu** vyberte konfiguraci. Další informace naleznete v tématu [Formáty souboru pro způsoby platby](emea-select-file-formats-for-the-method-of-payments.md).
+1. Importujte konfiguraci elektronického výkaznictví **ISO20022 camt.054** z aplikace Microsoft Dynamics Lifecycle Services (LCS). Potom na stránce **Způsob platby odběratele** v poli **Importovat konfigurace formátu** vyberte konfiguraci. Další informace naleznete v tématu [Formáty souboru pro způsoby platby](emea-select-file-formats-for-the-method-of-payments.md).
 2. Na stránce **Všichni zákazníci** zadejte název a číslo organizace pro každého zákazníka.
 3. Na stránce **Bankovní účet odběratele** nastavte bankovní účet záznamu odběratele zadáním následujících informací: IBAN nebo číslo bankovního účtu a kód SWIFT nebo směrové číslo.
 4. Na stránce **Bankovní účty** nastavte bankovní účty právnické osoby zadáním následujících informací: IBAN nebo číslo bankovního účtu, kód SWIFT nebo směrové číslo, měna a adresa.
@@ -130,4 +129,3 @@ Další informace o elektronickém výkaznictví naleznete v tématu [Přehled e
 - [Nastavení způsobu platby pro převody kreditu ve formátu ISO20022](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Nastavení způsobu platby pro přímý debet ve formátu ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022](./tasks/set-up-vendor-iso20022-credit-transfers.md)
-

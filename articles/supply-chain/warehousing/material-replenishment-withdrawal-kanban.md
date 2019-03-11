@@ -1,32 +1,31 @@
 ---
-title: "Doplnění s kanbany odběru"
-description: "Toto téma popisuje, jak se kanban odběru používá pro doplnění materiálu pro výrobní aktivity."
+title: Doplnění s kanbany odběru
+description: Toto téma popisuje, jak se kanban odběru používá pro doplnění materiálu pro výrobní aktivity.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7fe3ebe3c27c380d95cbc12b864264e9538d433f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 011da8cd894cc044b6af8b740e49ed8d7c3c0c67
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320919"
 ---
-
 # <a name="replenishment-with-withdrawal-kanbans"></a>Doplnění s kanbany odběru
 
 [!include [banner](../includes/banner.md)]
@@ -87,5 +86,4 @@ V následujícím scénáři je nakonfigurována aktivita kanbanu převodu na p�
 6.  Výrobní proces
 
 Když se kanban spotřebovává ve vstupním místě výroby, je vykazován jako prázdný signál a do toku je přidán nový kanban stejného typu. Po vytvoření kanbanu se do vlny kanbanu přidá řádek vlny. Při zpracování vlny kanbanu se vytvoří skladová práce vyskladnění kanbanu. Pracovník skladu zpracuje práci pro výdej kanbanu a je nasměrován na výdej materiálu pro kanban ve skladovém místě. Když tento pracovník skladu potvrdí vyskladnění, kanban bude automaticky doplněn a pracovník skladu dostane pokyn k vložení materiálu do vstupního skladového místa.
-
 

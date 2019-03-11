@@ -1,13 +1,13 @@
---- 
-title: "Změna data pro relaci"
-description: "Standardně se při zadávání a publikování položek deníku nebo zdrojových dokumentů používá aktuální datum."
+---
+title: Změna data pro relaci
+description: Standardně se při zadávání a publikování položek deníku nebo zdrojových dokumentů používá aktuální datum.
 author: pvillads
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemDate
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3d27a4d36ff8c8192d2342cd97f29c556540d00b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 69a449766f2e5d9a6833127fcd28a2959d4578fc
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318504"
 ---
 # <a name="change-the-date-for-the-session"></a>Změna data pro relaci
 
@@ -32,5 +32,4 @@ Standardně se při zadávání a publikování položek deníku nebo zdrojovýc
 1. Přejděte na Společné > Společné > Datum a čas relace.
 2. Do pole Datum zadejte datum.
 3. Klikněte na tlačítko OK.
-
 

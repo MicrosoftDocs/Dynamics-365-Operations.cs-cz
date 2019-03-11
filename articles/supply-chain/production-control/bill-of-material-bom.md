@@ -1,13 +1,13 @@
 ---
-title: "Kusovníky a receptury"
-description: "Toto téma obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu."
+title: Kusovníky a receptury
+description: Toto téma obsahuje informace o kusovnících a vzorce, které jsou ústřední součástí definice produktů a variant produktu.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0833143722df5402a17e4f8f456a923792c478a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 430e2ab0c4438222ceb9102c011940af803acfbc
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317101"
 ---
-
 # <a name="bills-of-materials-and-formulas"></a>Kusovníky a receptury
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Vyberte typ řádku **Doložená dodávka**, pokud chcete vytvořit odvozenou v�
 Vyberte řádek **Dodavatel**, pokud výrobní proces používá subdodavatele a pokud chcete pro tohoto subdodavatele automaticky vytvořit dílčí výrobu nebo prodejní objednávku.  
 
 **Poznámka týkající se subdodavatelských operací v kusovníku:** servis nebo práce prováděná tímto subdodavatelem se musí vytvořit jako servisní položka, která se sleduje ve skladu. Servisní položku je nutné připojit k nadřazené položce jako řádek kusovníku. Postup musí obsahovat operaci, která je přiřazena k provoznímu prostředku subdodavatele.
-
 
 
 

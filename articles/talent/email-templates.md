@@ -1,14 +1,14 @@
 ---
-title: "Šablony e-mailů"
-description: "Toto téma obsahuje informace o šablonách e-mailu, které lze vytvořit a používat v aplikaci Microsoft Dynamics 365 for Talent - Attract."
+title: Šablony e-mailů
+description: Toto téma obsahuje informace o šablonách e-mailu, které lze vytvořit a používat v aplikaci Microsoft Dynamics 365 for Talent - Attract.
 author: josaw
 manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,18 +18,17 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303621"
 ---
-
 # <a name="email-templates"></a>Šablony e-mailů
 [!include[banner](../includes/banner.md)]
 
-Pomocí knihovny šablon e-mailu mohou správci vytvářet jednotný motiv a značky všech e-mailů zasílaných z aplikace Microsoft Dynamics 365 for Talent - Attract. Správci také mohou také uspořádat sadu šablon obsahu e-mailů, kterou mohou využívat ostatní uživatelé. Náborový tým může tyto šablony používat ve svém workflowu k efektivnějšímu odesílání e-mailů. Některé e-mailové zprávy v aplikaci Attract jsou nakonfigurovány na automatické odeslání a správce může použít knihovnu šablon e-mailu pro přizpůsobení obsahu těchto e-mailů.
+Pomocí knihovny šablon e-mailu mohou správci vytvářet jednotný motiv a značky všech e-mailů zasílaných z aplikace Microsoft Dynamics 365 for Talent: Attract. Správci také mohou také uspořádat sadu šablon obsahu e-mailů, kterou mohou využívat ostatní uživatelé. Náborový tým může tyto šablony používat ve svém workflowu k efektivnějšímu odesílání e-mailů. Některé e-mailové zprávy v aplikaci Attract jsou nakonfigurovány na automatické odeslání a správce může použít knihovnu šablon e-mailu pro přizpůsobení obsahu těchto e-mailů.
 
 > [!NOTE]
 > Aby bylo možné E-mailové šablony používat, musí mít organizace doplněk Komplexní nábor.
@@ -81,4 +80,3 @@ Když náborový tým odešle e-mail, může používat šablony vytvořené spr
 
 > [!NOTE] 
 > Pro automaticky odesílané e-maily můžete vytvořit více šablon. Pouze jednu šablonu však lze nastavit jako aktivní. Vzhledem k tomu, že tento proces spouštějí události, může pouze správce určit, která šablona se má použít, na základě kombinace odznaku **výchozí** a **Automaticky odeslané** v knihovně šablon.
-

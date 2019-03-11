@@ -1,13 +1,13 @@
 ---
-title: "Zobrazení a export popisů polí"
-description: "Tento článek popisuje, jak zobrazit popisy pole, a jak používat stránku Popisy pole pro export popisů."
+title: Zobrazení a export popisů polí
+description: Tento článek popisuje, jak zobrazit popisy pole, a jak používat stránku Popisy pole pro export popisů.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
 ms.reviewer: rschloma
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7be1495fc42b5f19884a7d9df747f6bec9b64680
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359329"
 ---
-
 # <a name="view-and-export-field-descriptions"></a>Zobrazení a export popisů polí
 
 [!include [banner](../includes/banner.md)]
 
 Tento článek popisuje, jak zobrazit popisy pole, a jak používat stránku Popisy pole pro export popisů.
 
-Microsoft Dynamics 365 for Finance and Operations má k dispozici pro některá složitější pole popisy. Tyto popisy se zobrazí při přesunutí ukazatele myši na pole. Stránka **Popis polí** slouží také k zobrazení a exportu popisů polí.
+Microsoft Dynamics 365 for Finance and Operations má pro některá složitější pole k dispozici popisy. Tyto popisy se zobrazí při přesunutí ukazatele myši na pole. Stránka **Popis polí** slouží také k zobrazení a exportu popisů polí.
 
 Ne všechny stránky obsahují popis polí. Chceme poskytnout popisy pro složitější pole a nikoliv pro ty, kde je jejich použití zřejmé. Proto některé stránky nemají žádné popisy pole, některé stránky mají několik popisů a některé složitější stránky, například mnoho stránek s parametry, mají mnoho popisů.
 
@@ -70,7 +69,7 @@ Pokud jste nastavili možnost **Zahrnout pole bez popisu** na **Ano**, všechna 
 Pro exportování popisů pro stránku postupujte následovně.
 
 1. Vyberte stránku v poli **Vybrat stránku**.
-2. Klikněte na tlačítko **Otevřít v aplikaci Microsoft Office** v pravém horním rohu a potom klikněte na možnost **FieldDescriptionTmp**.
+2. Klikněte na tlačítko **Otevřít v Microsoft Office** v pravém horním rohu a potom klikněte na možnost **FieldDescriptionTmp**.
 
 ### <a name="searching-for-a-page"></a>Hledání stránky
 
@@ -109,4 +108,3 @@ Informace o různých způsobech, jak vyhledat stránky, naleznete v části "Hl
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přizpůsobení nápovědy pole](../../dev-itpro/user-interface/customize-field-help.md)
-

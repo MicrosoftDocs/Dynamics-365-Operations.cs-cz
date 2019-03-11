@@ -1,13 +1,13 @@
---- 
-title: "Elektronické vykazování – Mapování komponent vytvořeného formátu na prvky datového modelu (listopad 2016)"
-description: "Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může mapovat prvky datového modelu na komponenty vytvořené konfigurace elektronického výkaznictví, která určuje formát elektronického dokumentu obchodní doménu pro platby."
+---
+title: Elektronické vykazování – Mapování komponent vytvořeného formátu na prvky datového modelu (listopad 2016)
+description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může mapovat prvky datového modelu na komponenty vytvořené konfigurace elektronického výkaznictví, která určuje formát elektronického dokumentu obchodní doménu pro platby.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: a24ef0e091379f14a163a6385be988143a1ec608
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323541"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>Elektronické vykazování – Mapování komponent vytvořeného formátu na prvky datového modelu (listopad 2016)
 
@@ -113,5 +113,4 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 ## <a name="restrict-access-to-created-format-from-companies"></a>Omezení přístupu k vytvořenému formátu ze společností
 1. Rozbalte oddíl Kódy ISO zemí/oblastí.
     * Označením konkrétní země/oblasti, ve které lze formát použít, lze omezit přístup ke každému formátu. Pokud je seznam zemí/oblastí pro určitý formát prázdný, lze použít tento formát v jakékoli společnosti. Pokud jsou do tohoto seznamu zemí/oblastí vloženy některé kódy země/oblasti ISO, lze použít tento formát pouze ve společnostech, které mají primární adresu v této zemi/regionu.  
-
 

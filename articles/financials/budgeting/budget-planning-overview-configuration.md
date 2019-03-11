@@ -1,13 +1,13 @@
 ---
-title: "Přehled plánování rozpočtu"
-description: "Tento článek představuje plánování rozpočtu a obsahuje informace, které vám pomohou při konfiguraci plánování rozpočtu a nastavení procesů plánování rozpočtu."
+title: Přehled plánování rozpočtu
+description: Tento článek představuje plánování rozpočtu a obsahuje informace, které vám pomohou při konfiguraci plánování rozpočtu a nastavení procesů plánování rozpočtu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329912"
 ---
-
 # <a name="budget-planning-overview"></a>Přehled plánování rozpočtu
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Tento článek představuje plánování rozpočtu a obsahuje informace, které 
 
 Můžete provádět plánování rozpočtu, zatímco připravujete rozpočty, které bude organizace implementovat. Organizace může nastavit plánování rozpočtu a poté nastavit procesy plánování rozpočtu pro potřeby splnění zásad a postupů a požadavků pro přípravu rozpočtu. 
 
-Pokud rozumíte konceptům a terminologii, které se používají v aplikaci Microsoft Dynamics 365 for Finance and Operations, bude pro vás snazší provádět plánování rozpočtu ve vaší organizaci.
+Pokud rozumíte konceptům a terminologii, které se používají v aplikaci Microsoft Dynamics 365 for Finance and Operations, je bude pro vás snazší provádět plánování rozpočtu ve vaší organizaci.
 
 ### <a name="key-terms"></a>Klíčové podmínky
 
@@ -58,7 +57,7 @@ Pomocí plánování rozpočtu můžete provádět následující úkony:
 -   Automaticky směrujte plány rozpočtu společně s listy, dokumenty odůvodnění a jinými přílohami ke kontrole a schválení.
 -   Konsolidujte více plánů rozpočtu z nižší úrovně organizace do jediného nadřazeného plánu rozpočtu na vyšší úrovni organizace. Lze také vyvinout jeden plán rozpočtu na vyšší úrovni v organizaci a přidělit rozpočet nižším úrovním organizace.
 
-Plánování rozpočtu je integrováno s jinými moduly v aplikaci Microsoft Dynamics 365 for Finance and Operations. Lze tedy přenést informace z předchozích rozpočtů, skutečných výdajů, dlouhodobého majetku a lidských zdrojů. Protože je plánování rozpočtu také integrováno s aplikacemi Microsoft Excel a Microsoft Word, můžete tyto aplikace využít k práci s daty plánování rozpočtu. Například správce rozpočtu může exportovat požadavek oddělení rozpočtu ze scénáře plánu rozpočtu do listu aplikace Excel. Data lze analyzovat, aktualizovat a zobrazit na listě a pak opět publikovat do řádků plánu rozpočtu.
+Plánování rozpočtu je integrováno s jinými moduly Microsoft Dynamics 365 for Finance and Operations. Lze tedy přenést informace z předchozích rozpočtů, skutečných výdajů, dlouhodobého majetku a lidských zdrojů. Protože je plánování rozpočtu také integrováno s aplikacemi Microsoft Excel a Microsoft Word, můžete tyto programy využít k práci s daty plánování rozpočtu. Například správce rozpočtu může exportovat požadavek oddělení rozpočtu ze scénáře plánu rozpočtu do listu aplikace Excel. Data lze analyzovat, aktualizovat a zobrazit na listě a pak opět publikovat do řádků plánu rozpočtu.
 
 ## <a name="configuring-budget-planning"></a>Konfigurace plánování rozpočtu
 Stránka **Konfigurace plánování rozpočtu** obsahuje nastavení, která jsou vyžadována pro nastavení plánování rozpočtu. Následující části popisují některé klíčové faktory, které byste měli zvážit při konfiguraci plánování rozpočtu. Po dokončení konfigurace nastavte procesy plánování rozpočtu.
@@ -188,7 +187,6 @@ V nabídce **Akce** je také možné vytvořit proces zkopírováním existujíc
 Další užitečný příkaz v nabídce **Akce** je **Zobrazit stav zpracování rozpočtu**. Tento příkaz graficky zobrazí plány rozpočtu v rámci procesu spolu s odpovídajícími daty, jako jsou například stav workflowu plánů, souhrny podle množství a jednotky a navigace jedním kliknutím k samotným plánům rozpočtu.
 
 [![Stav procesu plánování rozpočtu](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
 
 
 

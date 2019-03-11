@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření nových uživatelů"
-description: "Uživatelé jsou interní zaměstnanci ve vaší organizaci nebo externí zákazníci a dodavatelé, kteří v rámci své práce vyžadují přístup k systému."
+---
+title: Vytvoření nových uživatelů
+description: Uživatelé jsou interní zaměstnanci ve vaší organizaci nebo externí zákazníci a dodavatelé, kteří v rámci své práce vyžadují přístup k systému.
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserManagement, SysDataAreaSelectLookup, SysSecUserAddRoles, SysUserMSODSUserImport
 audience: Application User
 ms.reviewer: margoc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 12cf223d262c4e0f2a195e95c83a00fc1a3f07e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5936196d4772c8fcfcc8a00767d17268f6609cde
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361951"
 ---
 # <a name="create-new-users"></a>Vytvoření nových uživatelů
 
@@ -55,5 +55,4 @@ Uživatelé jsou interní zaměstnanci ve vaší organizaci nebo externí zákaz
 2. Označte v seznamu vybraný řádek.
 3. Klikněte na možnost Importovat uživatele.
 4. Klikněte na tlačítko Zavřít.
-
 

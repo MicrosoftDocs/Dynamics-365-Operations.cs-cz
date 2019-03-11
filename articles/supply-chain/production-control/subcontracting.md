@@ -1,33 +1,32 @@
 ---
-title: "Subdodávka"
-description: "Toto téma vám pomůže vytvořit ukázku subdodávek ve výrobě v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Subdodávka
+description: Toto téma vás provede subdodávkami ve výrobě v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: christophernread
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: ade3f4ad9878c9e885afc5034334e41897512871
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 55b516f928eadea9b7ddbb1192db79f3ab7fa204
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336697"
 ---
-
 # <a name="subcontracting"></a>Subdodávka
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vám pomůže vytvořit ukázku subdodávek ve výrobě v aplikaci Microsoft Dynamics 365 for Finance and Operations. První část tohoto tématu popisuje nastavení dat. Druhá část vás provede kroky v této ukázce.
+Toto téma vás provede subdodávkami ve výrobě v aplikaci Microsoft Dynamics 365 for Finance and Operations. První část tohoto tématu popisuje nastavení dat. Druhá část vás provede kroky v této ukázce.
 
 ## <a name="target-audience"></a>Cílová skupina
 
@@ -304,4 +303,3 @@ Je vytvořena výrobní zakázka na 10 kusů pro produkt D8100, „Nalakovaná s
     ![Graf porovnání nákladů](./media/subcontract35_cost-comparison-charts.png)
 
 Chybí nastavení v datech.
-

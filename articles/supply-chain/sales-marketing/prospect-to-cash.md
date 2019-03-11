@@ -1,39 +1,38 @@
 ---
-title: "zpeněžení potenciálního zákazníka"
-description: "Toto téma uvádí přehled řešení zpeněžení potenciálního zákazníka mezi aplikacemi Microsoft Dynamics 365 for Finance and Operations a Microsoft Dynamics 365 for Sales."
+title: zpeněžení potenciálního zákazníka
+description: Toto téma obsahuje přehled řešení zpeněžení potenciálního zákazníka mezi Microsoft Dynamics 365 for Finance and Operations, a Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309488"
 ---
-
 # <a name="prospect-to-cash"></a>zpeněžení potenciálního zákazníka
 
 [!include [banner](../includes/banner.md)]
 
-Řešení zpeněžení potenciálního zákazníka nabízí přímou synchronizaci mezi aplikacemi Dynamics 365 for Finance and Operations a Dynamics 365 for Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Finance and Operations a Sales. V průběhu toku dat mezi aplikacemi Finance and Operations a Sales můžete provádět prodejní a marketingové aktivity v aplikaci Sales a můžete zpracovávat plnění objednávky pomocí správy skladů v aplikaci Finance and Operations. 
+Řešení zpeněžení potenciálního zákazníka poskytuje přímou synchronizaci mezi aplikací Dynamics 365 for Finance and Operations a Dynamics 365 for Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Finance and Operations a Sales. V průběhu toku dat mezi aplikacemi Finance and Operations a Sales můžete provádět prodejní a marketingové aktivity v aplikaci Sales a můžete zpracovávat plnění objednávky pomocí správy skladů v aplikaci Finance and Operations. 
 
-Další informace o zpeněžení potenciálního zákazníka naleznete v krátkém videu na YouTube [Prospect to cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg).
+Další informace o integraci zpeněžení potenciálního zákazníka uvádí krátké video na YouTube [Integrace zpeněžení potenciálního zákazníka](https://www.youtube.com/watch?v=AVV9x5x-XCg).
 
 V aktuální verzi poskytuje řešení zpeněžení potenciálního zákazníka následující typy přímé synchronizace:
 
@@ -49,11 +48,11 @@ Integrace zpeněžení potenciálního zákazníka je podporována v následují
 
 ### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (prosinec 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (prosinec 2017) - sestavení aplikace 7.3.11971.56116 s aktualizací Platform Update 12 (7.0.4709.41129)
+- Dynamics 365 for Finance and Operations, Enterprise edition (prosinec 2017) - sestavení aplikace 7.3.11971.56116 s aktualizací platformy 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Rozvržení v aplikaci Dynamics 365 for Finance and Operations, Enterprise edition (červenec 2017)
+### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (červenec 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (července 2017) - s aktualizací Platform update 8 (sestavení aplikace 7.2.11792.56024 se sestavením platformou 7.0.4565.16212).
+- Dynamics 365 for Finance and Operations, Enterprise edition (červenec 2017) - s aktualizací platformy 8 (sestavení aplikace 7.2.11792.56024 se sestavením platformy 7.0.4565.16212).
 - Následující opravy hotfix jsou vyžadovány:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Tato oprava hotfix umožňuje synchronizaci prodejní objednávky pomocí funkce integrace z aplikace Sales do aplikace Finance and Operations. Poskytuje několik různých vylepšení.
@@ -63,9 +62,9 @@ Integrace zpeněžení potenciálního zákazníka je podporována v následují
     > [!NOTE]
     > Musíte pouze nainstalovat KB4045570, protože instalace obsahuje změny z jiných oprav hotfix. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations, verze 1611 (listopad 2016)
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations verze 1611 (listopad 2016)
 
-- Dynamics 365 for Finance and Operations, verze 1611, s aktualizací platformy 8 nebo vyšší (listopad 2016)
+- Dynamics 365 for Finance and Operations verze 1611 (listopad 2016) s aktualizací platformy 8 nebo vyšší
 
 - Následující opravy hotfix jsou vyžadovány:
 
@@ -81,6 +80,5 @@ Integrace zpeněžení potenciálního zákazníka je podporována v následují
 
 Chcete-li použít řešení zpeněžení potenciálního zákazníka, je nutné nainstalovat následující komponenty:
 
-- Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online nebo vyšší verze.
-- Řešení zpeněžení potenciálního zákazníka pro Dynamics 365 for Sales, verze 1.15.0.0 nebo pozdější. Řešení je k dispozici ke stažení na webech AppSource. [Stáhnout Dynamics 365, zpeněžení potenciálního zákazníka](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-
+- Dynamics 365 for Sales verze 1612 (8.2.1.207) (DB 8.2.1.207) online nebo pozdější
+- Řešení zpeněžení potenciálního zákazníka pro Dynamics 365 for Sales, verze 1.15.0.0 nebo pozdější. Řešení je k dispozici ke stažení z AppSource. [Stáhnout Dynamics 365, zpeněžení potenciálního zákazníka](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).

@@ -1,13 +1,13 @@
---- 
-title: "Ruční zadávání dat o přihlášce a uchazeči"
-description: "Tento postup popisuje, jak ručně spravovat informace o uchazečích a jejich přihláškách."
+---
+title: Ruční zadávání dat o přihlášce a uchazeči
+description: Tento postup popisuje, jak ručně spravovat informace o uchazečích a jejich přihláškách.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 60b3d155826d234744c9805b18edf0226e237ed3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6aef83b18ba5f18506921e08f3674b6bb272d3ab
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364527"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Ruční zadávání dat o přihlášce a uchazeči
 
@@ -61,5 +61,4 @@ Tento postup popisuje, jak ručně spravovat informace o uchazečích a jejich p
     * Ve výchozím nastavení je pozice a oddělení založeno na vybraném náborovém projektu.  
 6. Klikněte na položku Uložit.
     * Po uložení přihlášky bude k ní možné připojit dokumenty, včetně zkušeností, odměn a průvodního dopisu uchazeče.  
-
 

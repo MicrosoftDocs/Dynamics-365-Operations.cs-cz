@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření zásad chování nákladů a jejich přiřazení jednotce řízení nákladů"
-description: "Chování nákladů je klasifikace nákladů jako fixních nebo variabilních."
+---
+title: Vytvoření zásad chování nákladů a jejich přiřazení jednotce řízení nákladů
+description: Chování nákladů je klasifikace nákladů jako fixních nebo variabilních.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c7b39b7649aaef0d354b61e3d70b6cac887282ed
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 392cb83ceb8612a2e73cc54bb2d8d40c62a6b7b6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313812"
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Vytvoření zásad chování nákladů a jejich přiřazení jednotce řízení nákladů
 
@@ -84,5 +84,4 @@ Chování nákladů je klasifikace nákladů jako fixních nebo variabilních. Z
     * Pravidla jsou platná od data a platnost pravidla může ukončit uživatel nebo systém v případě vytvoření novější verze.  
 15. V poli Jednotka řízení nákladů zadejte nebo vyberte hodnotu.
 16. Klikněte na položku Uložit.
-
 

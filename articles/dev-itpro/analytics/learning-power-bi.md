@@ -1,13 +1,13 @@
 ---
-title: "Obsah Power BI pro výuku"
-description: "Toto téma popisuje obsah Power BI pro výuku."
+title: Obsah učení v Power BI
+description: Toto téma popisuje obsah učení v Power BI.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,39 +15,38 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a4ea4606f9987bc08565d43a1f05243acf88883c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ee0cc2e22609d1a87e7d2b6dcd031606191f879
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321448"
 ---
-
-# <a name="learning-power-bi-content"></a>Obsah Power BI pro výuku
+# <a name="learning-power-bi-content"></a>Obsah učení v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah **Výuka** v Microsoft Power BI.
+Toto téma popisuje obsah **učení** v Microsoft Power BI.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 
-Sestavy, které jsou součástí obsahu **Výuka**, obsahují grafy a tabulky s dalšími informacemi. Následující tabulka obsahuje popis daných sestav.
+Sestavy, které jsou součástí obsahu **učení** v Power BI, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
 
 | Sestava                | Obsah |
 |-----------------------|----------|
 | Přehled výuky     | Souhrn dalších sestav |
-| Analýza kurzu       | Registrace podle umístění, účastníci podle stavu, kurzy podle typu u každé společnosti a účast na kurzu podle práce |
+| Analýza kurzu       | Registrace podle umístění, účastníci podle stavu, kurzy podle typu u každé společnosti a účast na kurzu podle práce |
 | Analýza registrace | Seznam registrací |
 | Typy kurzů          | Typy kurzů podle dovednosti |
 | Analýza instruktora   | Poměr kurzů k počtu instruktorů, počet instruktorů, počet kurzů od instruktora, počet kurzů na instruktora a program kurzu od instruktora |
 | Kurzy, které jsou k dispozici       | Seznam kurzů |
 | Formát kurzů        | Agenda kurzu |
 
-Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 
-Tato data se používají k vyplňování sestav v obsahu Power BI **Výuka**. Tato tabulka zobrazuje entity, na kterých je balíček obsahu založen.
+Následující data se používají k vyplňování sestav v obsahu **učení** v Power BI. Tato tabulka zobrazuje entity, na kterých je balíček obsahu založen.
 
 | Celek           | Obsah                                                         | Vztahy s jinými entitami |
 |------------------|------------------------------------------------------------------|-----------------------------------|
@@ -64,4 +63,3 @@ Tato data se používají k vyplňování sestav v obsahu Power BI **Výuka**.
 | Pozice         | Pozice, titul a ekvivalent plného úvazku (FTE)                  | Program kurzu, účastníci kurzu |
 | Jméno zaměstnance    | Křestní jméno, příjmení a celé jméno                             | Účastníci kurzu |
 | Titul zaměstnance   | Název a datum služebního věku                                         | Účastníci kurzu |
-

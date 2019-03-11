@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření schémat časového rozlišení"
-description: "Tento průvodce úkoly vás provede vytvořením schématu časového rozlišení."
+---
+title: Vytvoření schémat časového rozlišení
+description: Tento průvodce úkoly vás provede vytvořením schématu časového rozlišení.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAccrualTable
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ce96ccfb0dc3e4a723af967147dae93772c5b44f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 324be23a1e26de0d05c7cf6a61567f7260d0c390
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355281"
 ---
 # <a name="create-accrual-schemes"></a>Vytvoření schémat časového rozlišení
 
@@ -42,5 +42,4 @@ Tento průvodce úkoly vás provede vytvořením schématu časového rozlišen�
 9. V poli Frekvence období vyberte, jak často by transakce měla být zaznamenána.
 10. Do pole Počet výskytů podle období zadejte číslo.
 11. V poli Zaúčtovat transakce vyberte, kdy transakce mají být zaúčtovány – například měsíčně.
-
 

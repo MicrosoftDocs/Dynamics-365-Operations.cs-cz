@@ -1,13 +1,13 @@
 ---
-title: "Nastavení a vygenerování souborů kladných plateb"
-description: "Tento článek vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb."
+title: Nastavení a vygenerování souborů kladných plateb
+description: Tento článek vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d7b64f8414385629acef071c47a654d56005bd
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346081"
 ---
-
 # <a name="set-up-and-generate-positive-pay-files"></a>Nastavení a vygenerování souborů kladných plateb
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Tento článek vysvětluje postup při nastavení kladných plateb a generován�
 Nastavte kladné platby pro generování elektronických seznamů šeků, které jsou dodávány bance. Poté při předložení šeku bance ho banka srovná se seznamem šeků. Pokud šek odpovídá tomu, co má banka má v záznamech v seznamu, banka jej zúčtuje. Pokud šek neodpovídá šeku v seznamu, banka předloží šek ke kontrole.
 
 ## <a name="security-for-positive-pay-files"></a>Zabezpečení pro soubory kladných plateb
-Soubory kladných plateb mohou obsahovat citlivé informace o příjemcích plateb a šekových částkách. Nezapomeňte tedy použít dostatečná opatření od doby vytvoření souborů do jejich přijetí do banky. Soubory kladných plateb budou staženy do umístění, které je zadáno ve webovém prohlížeči. Vzhledem k tomu, že soubory kladných plateb mohou obsahovat důvěrné informace, je důležité, aby k vytváření a prohlížení těchto informací v aplikaci Microsoft Dynamics 365 for Finance and Operations měli přístup pouze oprávnění uživatelé. V následující tabulce naleznete postup, jak určit potřebná oprávnění.
+Soubory kladných plateb mohou obsahovat citlivé informace o příjemcích plateb a šekových částkách. Nezapomeňte tedy použít dostatečná opatření od doby vytvoření souborů do jejich přijetí do banky. Soubory kladných plateb budou staženy do umístění, které je zadáno ve webovém prohlížeči. Vzhledem k tomu, že soubory kladných plateb mohou obsahovat důvěrné informace, je důležité, aby k vytváření a prohlížení těchto informací v aplikaci Microsoft Dynamics 365 for Finance and Operations měli přístup pouze oprávnění uživatelé. V následující tabulce naleznete postup, jak určit potřebná oprávnění.
 
 <table>
 <colgroup>
@@ -160,7 +159,6 @@ Po zaplacení šeků, které jsou uvedeny v souboru kladných plateb, obdržíte
 
 ## <a name="recall-a-positive-pay-file"></a>Odvolat soubor kladných plateb
 Pokud je nutné změnit soubor kladných plateb, můžete jej odvolat. Na stránce **Souhrnné informace o souboru kladných plateb** vyberte soubor kladných plateb, který má stav **Vytvořeno**, a poté vyberte akci **Odvolat**. Pro každý šek v souboru kladných plateb se resetuje pole, které označuje, zda byl šek zahrnut do souboru kladných plateb. Poté můžete vytvořit nový soubor kladných plateb, který obsahuje šeky, které byly odvolány.
-
 
 
 

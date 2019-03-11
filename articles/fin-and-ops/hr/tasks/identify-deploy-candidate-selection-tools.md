@@ -1,13 +1,13 @@
---- 
-title: "Identifikování a nasazení nástrojů pro výběr kandidáta"
-description: "Najít kvalifikovaný fond uchazečů pro vyplnění volných pracovních míst může být obtížné, zejména v případě, že pozice vyžaduje jedinečnou sadu dovedností."
+---
+title: Identifikování a nasazení nástrojů pro výběr kandidáta
+description: Najít kvalifikovaný fond uchazečů pro vyplnění volných pracovních míst může být obtížné, zejména v případě, že pozice vyžaduje jedinečnou sadu dovedností.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: df7956cfdc3c470b5e652b62e659060120cdd770
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eb6e6121d39f9fc089afe38354b96eb88e5501d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332718"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifikování a nasazení nástrojů pro výběr kandidáta
 
@@ -57,5 +57,4 @@ Najít kvalifikovaný fond uchazečů pro vyplnění volných pracovních míst 
     * Sestava zobrazí seznam doporučených spárování v horní části sestavy.  Můžete vidět, že je zde uveden element „mezera“.  To je rozdíl mezi úrovní, která byla uvedena v mapování dovedností a úrovní dovednosti, která je přiřazena dané osobě.  
 24. Zavřete stránku.
 25. Klikněte na položku Uložit.
-
 

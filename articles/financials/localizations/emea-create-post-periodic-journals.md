@@ -1,13 +1,13 @@
 ---
-title: "Rozdělení období do periodických deníků"
-description: "Toto téma poskytuje informace o funkci rozdělení období do periodických deníků nebo opakujících se deníků pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšku, Polsku a Rusku."
+title: Rozdělení období do periodických deníků
+description: Toto téma poskytuje informace o funkci rozdělení období do periodických deníků nebo opakujících se deníků pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšku, Polsku a Rusku.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c7a2acd8565c33d0e6dccf92fc66a1413b3c7263
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a1c4b7623f3409d4474adcd04fb1331b944b9fbb
-ms.openlocfilehash: 60c8b10af7c77cf8ae566014e2cacd939d01c9e8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370094"
 ---
-
 # <a name="split-periods-in-periodic-journals"></a>Rozdělení období do periodických deníků
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Pojišťovna nabízí organizaci slevu při předplacení pojistného za celý r
 | **Interval období**   | Určete interval mezi účetními obdobími.                                                                                                                                                              |
 
 Chcete-li například generovat čtvrtletní zaúčtování, zadejte hodnotu **4** do pole **Počet období**, vyberte možnost **Měsíce** v poli **Jednotka** a zadejte hodnotu **3** do pole **Interval období**. Systém generuje čtyři řádky deníku, každý pro jednu čtvrtinu částky řádku deníku, který jste zadali ve 3měsíčních intervalech. Podobná funkce je také k dispozici pro hlavní deník. Při zobrazení řádků hlavního deníku vyberte **Periodický deník**&gt;**Uložit deník**.
-
 
 
 

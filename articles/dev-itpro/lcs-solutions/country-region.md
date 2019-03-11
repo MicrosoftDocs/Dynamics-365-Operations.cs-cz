@@ -1,13 +1,13 @@
 ---
-title: "Lokalizace a funkce týkající se předpisů"
-description: "Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o funkci specifické pro zemi/oblast."
+title: Lokalizace a funkce týkající se předpisů
+description: Toto téma obsahuje seznam prostředků, které vám pomohou dozvědět se více o funkci specifické pro zemi/oblast.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a8207af4dc9d5059d487bda97959eff559b7ca06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: e74ad4442e1b6851812f889e79f2fb09060fb87a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/01/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302031"
 ---
-
 # <a name="localization-and-regulatory-features"></a>Lokalizace a funkce týkající se předpisů
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations zahrnuje funkci pro zemi/oblast popsané v dokumentu [Průvodce dostupnosti lokalizace a překladů produktu](https://aka.ms/ax-availabilityguide). Tato funkce je povolena na základě primární adresy aktivní právnické osoby. 
+Microsoft Dynamics 365 for Finance and Operations zahrnuje funkci pro zemi/oblast popsané v dokumentu [Průvodce dostupnosti lokalizace a překladu produktu](https://aka.ms/dynamics_365_international_availability_deck). Tato funkce je povolena na základě primární adresy aktivní právnické osoby. 
 
 Toto téma zahrnuje zdroje, které vám pomohou: 
 - získat více informací o řešeních specifických pro rozvojové země/oblasti
@@ -45,10 +44,11 @@ Následující zdroje obsahují pokyny a informace, které mohou pomoci vývoj�
 -   [Klasifikace lokalizačních funkcí](classify-localization-features.md)
 -   [Kódy zemí - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates-and-communication"></a>Lokalizační aktualizace a komunikace
+## <a name="regulatory-updates-and-communication"></a>Povinné aktualizace a komunikace
 Následující zdroje obsahují informace o plánovaných a nových lokalizačních funkcích. 
 
-### <a name="localization-updates"></a>Lokalizační aktualizace
+### <a name="regulatory-updates"></a>Povinné aktualizace
+-   [Povinné aktualizace](../../financials/localizations/regulatory-updates.md)
 -   [Lokalizační portál](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (aktualizováno týdně)
 -   [Hledání problémů LCS](../lifecycle-services/issue-search-lcs.md) (aktualizováno denně)
 
@@ -118,7 +118,6 @@ Další informace naleznete v tématu [Průvodci záznamem úloh](../../fin-and-
         - [Spojené státy](../../financials/localizations/united-states.md)
     :::column-end:::
 :::row-end:::
-
 
 
 

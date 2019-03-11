@@ -1,13 +1,13 @@
 ---
-title: "Přehled kontrol rozpočtu"
-description: "Tento článek obsahuje základní informace o kontrole rozpočtu a poskytuje informace, které umožňují konfiguraci kontroly rozpočtu v aplikaci Microsoft Dynamics 365 for Finance and Operations, abyste mohli spravovat finančních prostředky."
+title: Přehled kontrol rozpočtu
+description: Tento článek obsahuje základní informace o kontrole rozpočtu a poskytuje informace, které umožňují konfiguraci kontroly rozpočtu v aplikaci Microsoft Dynamics 365 for Finance and Operations, abyste mohli spravovat finančních prostředky.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4dbbbdf403c3e3f7c1bfa391cc32f80505098db9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e77760d6729b8faf3099590c60ea7673cfcb18ec
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308522"
 ---
-
-# <a name="budget-control-overview"></a>Přehled řízení 
+# <a name="budget-control-overview"></a>Přehled kontroly rozpočtu
 
 [!include [banner](../includes/banner.md)]
 
@@ -128,4 +127,3 @@ Jakmile bude zapnuta kontrola rozpočtu, uživatelům se budou zobrazovat varovn
 Z této stránky mohou uživatelé přejít na stránku **Statistika kontroly rozpočtu podle období** a zobrazit zde podrobnosti o dostupnosti rozpočtu a rezervace pro vybrané kombinace dimenzí kontroly rozpočtu. Uživatelé mohou také přejít k podrobnostem na stránce **Statistika kontroly rozpočtu** a zobrazit si dostupnost rozpočtu pro všechny kombinace finančních dimenzí, které se používají v kontrole rozpočtu. 
 
 Pokud je kontrola rozpočtu zapnuta pro nákupní objednávky, může správce rozpočtu použít pracovní prostor **Rozpočty hlavní knihy a prognózy** ke kontrole fronty všech nepotvrzených nákupních objednávek s varováními a chybami kontroly rozpočtu. Pokud má správce rozpočtu nakonfigurovaná oprávnění překročit rozpočet, může potvrdit nákupní objednávky přímo v tomto pracovním prostoru.    
-

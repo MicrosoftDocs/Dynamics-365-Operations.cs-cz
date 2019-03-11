@@ -1,13 +1,13 @@
 ---
-title: "Rozšířené možnosti formátování ve finančním výkaznictví"
-description: "Vytvoříte-li zprávu ve finančním vykazování, budou k dispozici další funkce formátování, včetně filtrů pro dimenze, omezení pro sloupce a jednotky vykazování, řádky neurčené pro tisk a výrazy IF/THEN/ELSE ve výpočtech."
+title: Rozšířené možnosti formátování ve finančním výkaznictví
+description: Vytvoříte-li zprávu ve finančním vykazování, budou k dispozici další funkce formátování, včetně filtrů pro dimenze, omezení pro sloupce a jednotky vykazování, řádky neurčené pro tisk a výrazy IF/THEN/ELSE ve výpočtech.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335570"
 ---
-
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Rozšířené možnosti formátování ve finančním výkaznictví
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,7 @@ Následující tabulka vysvětluje rozšířené funkce formátování, které j
 ## <a name="advanced-cell-placement"></a>Přesné umísťování buněk
 Přesné umísťování buněk (jinak *vynucení*) zahrnuje umístění konkrétních hodnot do konkrétních buněk. Například vynucení často slouží k přesunutí správného zůstatku ve výkazu cashflow. Vynucení můžete použít pro následující účely:
 
-- přesunutí hodnot z aplikace Microsoft Excel do konkrétních buněk;
+- Přesunutí hodnot z aplikace Microsoft Excel do konkrétních buněk
 - pevné zakódování konkrétních hodnot do sestavy;
 - změna znamének zkopírováním hodnoty z předchozí buňky a vynásobení hodnoty -1.
 
@@ -192,7 +191,7 @@ Výpočetní vzorec v definici řádku může zahrnovat operátory **+**, **-**,
 
 ### <a name="operators-in-a-calculation-formula"></a>Operátory ve výpočetním vzorci
 
-Výpočetní vzorec používá složitější operátory než vzorec součtu řádku. Lze však použít operátory **\*** a **/** spolu s dalšími operátory k násobení (\*) a dělení (/) částek. Pokud chcete použít ve vzorci pro výpočet rozsah nebo součet, je nutné použít zavináč (@) před jakýmkoli kódem řádku, pokud nepoužíváte sloupec v definici řádku. Například pro přičtení částky v řádku 100 k částce v řádku 330 lze použít vzorec součtu řádku **100+330** nebo vzorec výpočtu **@100+@330**.
+Výpočetní vzorec používá složitější operátory než vzorec součtu řádku. Lze však použít operátory **\*** a **/** spolu s dalšími operátory k násobení (\*) a dělení (/) částek. Pokud chcete použít ve vzorci pro výpočet rozsah nebo součet, je nutné použít zavináč (@) před jakýmkoli kódem řádku, pokud nepoužíváte sloupec v definici řádku. Například pro přičtení částky v řádku 100 k částce v řádku 330 lze použít vzorec součtu řádku **100+330** nebo výpočetní vzorec **@100+@330**.
 
 > [!NOTE]
 > Je třeba použít zavináč (@) před každým kódem řádku, který využíváte ve výpočetním vzorci. Jinak bude číslo přečteno jako absolutní hodnota. Například vzorec **@100+330** přidá k částce na řádku 100 částku ve výši 330 USD. Při odkazování na sloupec ve vzorci pro výpočet není znak (@) zapotřebí.
@@ -203,7 +202,7 @@ Výpočetní vzorec používá složitější operátory než vzorec součtu ř�
 2. Dvakrát klikněte na buňku **Kód formátu** a vyberte kód **CAL**.
 3. V buňce **Související vzorce/řádky/jednotky** zadejte výpočetní vzorec.
 
-### <a name="example-of-a-calculation-formula-for-specific-rows"></a>Příklad výpočetního vzorce pro konkrétní řádky
+### <a name="example-of-a-calculation-formula-for-specific-rows"></a>Příklad vzorce výpočtu pro určité řádky
 
 V tomto příkladu vzorec výpočtu **@100+@330** znamená, že částka v řádku 100 se přidá k částce řádku 330. Vzorec součtu řádku **340+370** přidá částku v řádku 340 k částce v řádku 370. (Částku v řádku 370 je částka z vzorce výpočtu).
 
@@ -244,9 +243,9 @@ Pokud upravíte číslo nebo výpočet v jednom sloupci konkrétního řádku, a
 
 | Výpočet            | Akce, která je vytvořena                                                                                                   |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| @130\*,75              | Pro každý sloupec je hodnota v řádku 130 vynásobena hodnotou 0,75. Výsledek je pak uložen do aktuálního řádku každého sloupce. |
-| B=@130\*,75            | Stejný výpočet se provádí pouze pro sloupec B.                                                                      |
-| A,B,C=(@100/@130)\*,75 | A=(A.100/A.130)\*,75 B=(B.100/B.130)\*.75 C=(C.100/C.130)\*,75                                                           |
+| @130\*.75              | Pro každý sloupec je hodnota v řádku 130 vynásobena hodnotou 0,75. Výsledek je pak uložen do aktuálního řádku každého sloupce. |
+| B=@130\*.75            | Stejný výpočet se provádí pouze pro sloupec B.                                                                      |
+| A,B,C=(@100/@130)\*.75 | A=(A.100/A.130)\*,75 B=(B.100/B.130)\*.75 C=(C.100/C.130)\*,75                                                           |
 
 ### <a name="ifthenelse-statements-in-a-row-definition"></a>Výrazy IF/THEN/ELSE v definici řádku
 
@@ -281,7 +280,7 @@ Omezit výpočet na jednu jednotku výkaznictví ve stromu výkaznictví tak, ab
 
 - Zadáním názvu jednotky zahrňte jednotky, které odpovídají. Například **IF @Unit(SALES)** umožňuje výpočet pro jakoukoli jednotku názvem SALES, i když ve stromu výkaznictví existuje několik jednotek SALES.
 - Zadejte název společnosti a jednotky pro omezení výpočtu na specifické jednotky v určité společnosti. Zadejte například hodnotu **IF @Unit(ACME:SALES**) k omezení výpočtu na jednotky SALES ve společnosti ACME.
-- Zadáním plně hierarchického kódu z organizačního stromu omezíte výpočet na konkrétní jednotku. Zadejte například výraz **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
+- Zadejte úplný kód hierarchie ze stromu výkaznictví pro omezení výpočtu na určitou jednotku. Zadejte například výraz **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
 > Plně hierarchický kód zjistíte tak, že kliknete pravým tlačítkem v definici organizačního stromu a pak vyberete příkaz **Kopírovat identifikátor organizační jednotky (kód H)**.
@@ -298,4 +297,3 @@ Výraz **IF/THEN/ELSE** umožňuje závislost jakéhokoli výpočtu na výsledc�
 
 > [!NOTE]
 > Nemůžete vložit výsledky výpočtu do žádného jiného sloupce. Výsledky musí být ve sloupci, který obsahuje vzorec.
-

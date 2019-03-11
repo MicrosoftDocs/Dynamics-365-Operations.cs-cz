@@ -1,28 +1,28 @@
 ---
-title: "Nastavení správy nabídek"
-description: "Toto téma popisuje, jak nastavit nabídky v aplikaci Talent."
+title: Nastavení správy nabídek
+description: Toto téma popisuje, jak nastavit nabídky v aplikaci Talent.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
+ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "376500"
 ---
 # <a name="set-up-offer-management"></a>Nastavení správy nabídek 
 
@@ -203,5 +203,7 @@ Existuje několik částí procesu vytváření nabídky, které může konfigur
 
     - ESign – Toto je výchozí možnost poskytovaná přímo po vybalení, kde může uživatel podepsat nabídku zadáním svého jména a iniciál.
 
-Další informace o procesu vytváření nabídky naleznete v tématu [Vytvoření, schválení a podepisování nabídek](./creating-offers.md).
+>[!NOTE]
+> Ohledně licencí Adobe Sign a bezplatných zkušebních verzí navštivte tento [odkaz](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+Další informace o procesu vytváření nabídky naleznete v tématu [Vytvoření, schválení a podepisování nabídek](./creating-offers.md).

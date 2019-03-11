@@ -1,13 +1,13 @@
 ---
-title: "Nahrazení materiálů ve výrobě"
-description: "Toto téma popisuje nahrazení materiálů během výrobního procesu."
+title: Nahrazení materiálů ve výrobě
+description: Toto téma popisuje nahrazení materiálů během výrobního procesu.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdBOM
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461b717acafb5ccf37acae23a1564069cea6828a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3e70a6ad074911438ef45b6aac2523a4a9fccf8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327612"
 ---
-
 # <a name="material-substitution-in-manufacturing"></a>Nahrazení materiálů ve výrobě
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,6 @@ Materiál lze nahradit při plánování, pouze pokud používáte receptury, ne
 
 ## <a name="substituting-material-during-production"></a>Nahrazení materiálu během výroby
 Předpokládejme následující situaci: Kovová destička je vyžadována u svařovací operace. V průběhu operace pracovník skladu informuje operátora stroje, že destička není na skladě. Je však rozhodnuto, že destička bude nahrazena jinou, která je o trochu silnější. Díky tomu může být operace dokončena. Materiál lze přidat do kusovníku pro otevřenou výrobní zakázku. Je-li výrobní zakázka ve stavu **Zahájeno**, uživatelé jsou vyzváni k opětovnému odhadu objednávky při přidání nové položky do výrobního Kusovníku. Poté, co je přidán materiál, lze vytvořit novou výdejku pro novou položku. Nemusíte přidávat nový materiál do výrobního kusovníku. Namísto toho je možné jej přímo přidat na výrobní výdejku. Při zaúčtování výdejky systém materiál přidá do výrobního kusovníku.
-
 
 
 

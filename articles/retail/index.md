@@ -1,39 +1,38 @@
 ---
-title: "Vítá vás aplikace Dynamics 365 for Retail"
-description: "Domovská stránka aplikace Dynamics 365 for Retail"
+title: Vítejte v Dynamics 365 for Retail
+description: Domovská stránka pro Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: fbdcfc747186e2d8f55ff294a477226a83fbe1b2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302019"
 ---
-
-# <a name="welcome-to-dynamics-365-for-retail"></a>Vítá vás aplikace Dynamics 365 for Retail
+# <a name="welcome-to-dynamics-365-for-retail"></a>Vítejte v Dynamics 365 for Retail
 
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Retail je komplexní maloobchodní řešení, které zajišťuje sjednocené obchodování napříč všemi prodejními kanály. Zahrnuje prodeje, mobilitu, zpravodajství a produktivitu, které obchodníkům a pracovníkům pomáhají dosahovat lepších výsledků způsobem využívajícím především cloudová úložiště a mobilní zařízení. Modul Retail nabízí rozsáhlou podporu pro provoz celé řady obchodních procesů, jako jsou možnosti nákupu, skladů a správa prodejních kanálů. Poskytuje také dokonalé zkušenosti uživatelům napříč všemi styčnými body.
 
 > [!NOTE]
-> Dynamics 365 for Retail se úzce vztahuje k aplikacím Dynamics 365 for Finance and Operations a Dynamics 365 for Talent. Stejné funkce se mohou objevit ve všech třech produktech. Proto bude v tématech, která primárně souvisí s modulem Retail, název produktu Microsoft Dynamics 365 for Retail; v tématech, která primárně souvisí s hlavním produktem (Finance and Operations, pak bude název produktu Microsoft Dynamics 365 for Finance and Operations. A v tématech, která primárně souvisí s lidskými zdroji, bude název produktu Dynamics 365 for Talent.
+> Dynamics 365 for Retail je úzce spojen s Dynamics 365 for Finance and Operations a Dynamics 365 for Talent. Stejné funkce se mohou objevit ve všech třech produktech. Proto bude v tématech, která primárně souvisí s modulem Retail, název produktu Microsoft Dynamics 365 for Retail. V tématech, která primárně souvisí se základním produktem (Finance and Operations), bude název produktu Microsoft Dynamics 365 for Finance and Operations. V tématech, která primárně souvisí s lidskými zdroji bude název produktu Dynamics 365 for Talent.
 
 V levém podokně vyberte funkční oblast, o které se chcete dozvědět více.
 
@@ -79,8 +78,8 @@ Budete nastavovat několik komponent k definování vztahů mezi obchodem, POS p
 
 Pokud jste byli požádáni o přizpůsobení vašeho prostředí nebo pokud zodpovídáte za nasazení a údržbu vašeho systému, seznamte se s konkrétním obsahem pro vývojáře a správce aplikace Retail, stejně jako s obecnějším obsahem.
 
-- [Dynamics 365 for Retail pro profesionály v oblasti IT a vývojáře](dev-itpro/dev-retail-home-page.md)
-- [Vývoj a správa pro aplikaci Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 for Retail pro IT odborníky a vývojáře](dev-itpro/dev-retail-home-page.md)
+- [Vývoj a správa pro Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Další zdroje
 
@@ -90,9 +89,8 @@ Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a
 
 ### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace o aplikaci Retail a jiná řešení naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog).
+Názory, novinky a jiné informace o modulu Retail a jiných řešeních naleznete v blogu [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog).
 
-Existuje mnoho příspěvků o aplikaci Retail na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). I když některé z těchto příspěvků byly napsány pro předchozí verzi aplikace Retail, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
+Existuje mnoho příspěvků o modulu Retail na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). I když některé z těchto příspěvků byly napsány pro předchozí verzi aplikace Retail, stále se používají stejné koncepty. a postupy jsou podobné jako v aktuální verzi.
 
 [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.
-

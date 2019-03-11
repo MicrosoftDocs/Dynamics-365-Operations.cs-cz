@@ -1,13 +1,13 @@
 ---
-title: "Přidání analýz do pracovního prostoru pomocí Power BI Embedded"
-description: "Toto téma popisuje, jak vložit sestavu Power BI na kartě Analýzy v pracovním prostoru."
+title: Přidání analýz do pracovního prostoru pomocí Power BI Embedded
+description: Toto téma popisuje, jak vložit sestavu Power BI na kartě Analýzy v pracovním prostoru.
 author: tjvass
 manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -15,20 +15,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a190e15dc304f60739c80d75222830ee737c5a32
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355212"
 ---
-
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Tato funkce je podporována v aplikaci Dynamics 365 for Finance and Operations (verze 7.2 a novější).
+> Tato funkce je podporována v Dynamics 365 for Finance and Operations (verze 7.2 a novější).
 
 ## <a name="introduction"></a>Úvod
 Toto téma popisuje, jak vložit sestavu Microsoft Power BI na kartě **Analýzy** v pracovním prostoru. V uvedeném příkladu rozšíříme pracovní prostor **Správa rezervací** v aplikaci Správa vozového parku na kartě **Analýzy** tak, aby zahrnovala analytický pracovní prostor.
@@ -46,10 +45,10 @@ Ať rozšíříte existující pracovní prostor aplikace nebo zadáte nový pra
 4. Volitelné: Přidejte rozšíření pro přizpůsobení zobrazení.
 
 > [!NOTE]
-> Další informace o postupu vytváření analytických sestav naleznete v tématu [Úvod do práce s počítačem Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Tato stránka je skvělý zdroj informací, které pomáhají vytvořit přinutit řešení generování analytických sestav.
+> Další informace o postupu vytváření analytických sestav naleznete v tématu [Začínáme s Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Tato stránka je skvělý zdroj informací, které pomáhají vytvořit přinutit řešení generování analytických sestav.
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>Přidejte soubor .pbix jako prostředek
-Dříve než začnete, musíte vytvořit nebo získat sestavu Power BI, kterou vložíte do pracovního prostoru. Další informace o postupu vytváření analytických sestav naleznete v tématu [Úvod do práce s počítačem Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
+Dříve než začnete, musíte vytvořit nebo získat sestavu Power BI, kterou vložíte do pracovního prostoru. Další informace o postupu vytváření analytických sestav naleznete v tématu [Začínáme s Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
 
 Tento postup slouží k přidání souboru .pbix jako artefaktů projektu Visual Studio.
 
@@ -177,4 +176,3 @@ public static void initializeReportControl(
 | showFilterPane   | Logická hodnota, která určuje, zda má být podokno filtru zobrazené (**true**) nebo skryté (**false**).     |
 | showNavPane      | Logická hodnota, která určuje, zda má být navigační podokno zobrazené (**true**) nebo skryté (**false**). |
 | defaultFilters   | Výchozí filtry pro sestavu Power BI.                                                                 |
-

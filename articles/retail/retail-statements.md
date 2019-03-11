@@ -1,13 +1,13 @@
 ---
-title: "Výkazy maloobchodu"
-description: "Toto téma popisuje způsob vytváření a zaúčtování výkazů."
+title: Výkazy maloobchodu
+description: Toto téma popisuje způsob vytváření a zaúčtování výkazů.
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347691"
 ---
-
-# <a name="retail-statements"></a>Výkazy maloobchodu
+# <a name="retail-statements"></a>Příkazy maloobchodu
 
 [!include [banner](includes/banner.md)]
 
-V aplikaci Microsoft Dynamics 365 for Retail proces zaúčtování výkazů slouží k zaúčtování transakcí, které se mohou vyskytovat v Cloudovém pokladním místě (POS) nebo v Modern POS (MPOS).. Proces zaúčtování výkazu používá plán distribuce k vyžádání sady transakcí Retail POS do klienta centrály (HQ). Parametry, které jsou definovány na stránkách **Parametry maloobchodu** a **Obchody** se používají k výběru transakcí, které budou převedeny na jednotlivé výkazy.
+V aplikaci Microsoft Dynamics 365 for Retail proces zaúčtování výkazů slouží k zaúčtování transakcí, které se mohou vyskytovat v Cloudovém pokladním místě (POS) nebo v Modern POS (MPOS). Proces zaúčtování výkazu používá plán distribuce k vyžádání sady transakcí Retail POS do klienta centrály (HQ). Parametry, které jsou definovány na stránkách **Parametry maloobchodu** a **Obchody** se používají k výběru transakcí, které budou převedeny na jednotlivé výkazy.
 
 Proces zaúčtování je znázorněn na následujícím obrázku. V tomto procesu jsou transakce, které jsou zaznamenány v POS, předávány klientovi pomocí modulu Maloobchodní plánovač. Po přijetí transakcí klientem můžete vytvářet, kalkulovat a zaúčtovávat výkazy transakce pro daný obchod.
 
@@ -89,4 +88,3 @@ Při zaúčtování výkazu prodejní objednávky a faktury jsou vytvořeny pro 
 - Maloobchodní prodeje, pro které byl přidání odběratel do transakce v Microsoft Dynamics 365 for Retail POS, generují samostatné prodejní objednávky a faktury, jednu pro každého jedinečného odběratele.
 
 Pro platby ve výkazu jsou automaticky vytvořeny deníky plateb a zásoby jsou automaticky aktualizovány pro obchod POS.
-

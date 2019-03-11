@@ -1,32 +1,31 @@
 ---
-title: "Parametry výroby v modulu Provádění výroby"
-description: "Toto téma obsahuje informace o nastavení parametrů výroby v modulu Provádění výroby."
+title: Parametry výroby v modulu Provádění výroby
+description: Toto téma obsahuje informace o nastavení parametrů výroby v modulu Provádění výroby.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgProdParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bf1afd18132e92cf081b7bde5067e1be90314467
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a0a28ba5072d55b8133f5458f75befa752a3dcdf
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339457"
 ---
-
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry výroby v modulu Provádění výroby
 
 [!include [banner](../includes/banner.md)]
@@ -154,5 +153,4 @@ Když mají být materiály ručně odečteny ze skladu, můžete použít násl
 |     Operations     |   Automatická spotřeba kusovníku    | <strong>Nikdy</strong>  |
 | Hlášení jako dokončené |   Automatická spotřeba kusovníku    | <strong>Nikdy</strong>  |
 | Hlášení jako dokončené | Aktualizovat sestavu o dokončení on-line | <strong>Stav</strong> |
-
 

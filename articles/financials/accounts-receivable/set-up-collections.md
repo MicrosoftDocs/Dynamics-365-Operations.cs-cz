@@ -1,13 +1,13 @@
 ---
-title: "Nastavení kreditu a inkas"
-description: "Tento článek popisuje postup nastavení funkce inkasa."
+title: Nastavení kreditu a inkas
+description: Tento článek popisuje postup nastavení funkce inkasa.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6b1dcd6ad0ca05a94409d5d23039ccefe53392e3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f35981396c782b530737adac8ad62d0ff4b0f77e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351831"
 ---
-
 # <a name="set-up-credit-and-collections"></a>Nastavení kreditu a inkas
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ Nastavte účet pro odpis používaný pro položky odpisu hlavní knihy, když 
 Aktualizujte bankovní účty, aby měly správný deník, když jsou na stránce **Inkasa** identifikovány platby NFP. Na kartě **Správa měn** vyberte v poli **Deník plateb NFP** deník plateb.
 
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>Nastavení aplikace Outlook pro uživatele stránky Inkasa
-Dříve, než budou moci pracovníci na stránce **Inkasa** vytvářet aktivity či odesílat e-mailové zprávy, je nutné ověřit, že je zvolen konfigurační klíč **Synchronizace aplikace Microsoft Outlook** a že je pro tyto pracovníky nastavena synchronizace s aplikací Outlook.
+Dříve, než budou moci pracovníci na stránce **Inkasa** vytvářet aktivity či odesílat e-mailové zprávy, je nutné ověřit, že je zvolen konfigurační klíč Synchronizace aplikace **Microsoft Outlook** a že je pro tyto pracovníky nastavena synchronizace s aplikací Outlook.
 
 ## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Nastavení e-mailů a adres pro kontakty inkasa odběratelů
 Pokud chcete na stránce **Inkasa** posílat e-mailové zprávy kontaktům odběratelů, nastavte e-mailové adresy těchto kontaktů. Kontaktní osoba pro inkaso se na stránce **Inkasa** používá jako výchozí kontakt. Můžete nastavit adresu pro výpis odběratele, pokud mají mít výpisy adresu odlišnou od primární adresy. 
@@ -100,5 +99,4 @@ Další informace naleznete v následujících tématech:
  - [Zpracování upomínek](tasks/process-collection-letters.md)
 
  - [Kontrola inkasních informací](tasks/review-collections-information.md)
-
 

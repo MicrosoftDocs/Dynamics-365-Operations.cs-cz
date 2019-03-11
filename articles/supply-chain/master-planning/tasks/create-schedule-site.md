@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření plánu pro pracoviště"
-description: "Tento postup popisuje způsob plánování výrobních zakázek, které nebyly dosud pro pracoviště zahájeny."
+---
+title: Vytvoření plánu pro pracoviště
+description: Tento postup popisuje způsob plánování výrobních zakázek, které nebyly dosud pro pracoviště zahájeny.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 54bb2532534d5567239dad4fab7fd74fa50d2826
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 775428bf84a752c03c492e764fa9ed576ab64fb8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330050"
 ---
 # <a name="create-a-schedule-for-a-site"></a>Vytvoření plánu pro pracoviště
 
@@ -55,5 +55,4 @@ Tento postup popisuje způsob plánování výrobních zakázek, které nebyly d
     * Na této stránce můžete vidět seznam úloh. Na kartě Plánování můžete zobrazit počáteční datum a koncové datum úlohy.  
 4. Klepněte na Kusovníky.
     * Na této stránce se zobrazí odhad spotřeby materiálu pro operace ve výrobní zakázce, a aktuální dostupné zásoby.  
-
 

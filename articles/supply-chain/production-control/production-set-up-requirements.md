@@ -1,13 +1,13 @@
 ---
-title: "Požadavky na nastavení výroby"
-description: "V tomto článku jsou informace o požadavcích na nastavení předtím, než bude možné pracovat s modulem řízení výroby."
+title: Požadavky na nastavení výroby
+description: V tomto článku jsou informace o požadavcích na nastavení předtím, než bude možné pracovat s modulem řízení výroby.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b811c11271097f4bb7910c34f7775955abba526d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 47fe11168ad2ddea2a7033eda8d8bd8220efea32
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366620"
 ---
-
 # <a name="production-setup-requirements"></a>Požadavky na nastavení výroby
 
 [!include [banner](../includes/banner.md)]
@@ -78,7 +77,6 @@ Pokud pracujete s postupy, je nutné definovat operaci pro každý nastavený v�
 1.  **Skupiny výroby** – Nastavením skupin výroby vytvoříte vztahy mezi výrobní zakázkou a účty hlavní knihy. Účty hlavní knihy jsou používány k zaúčtování nebo seskupení objednávek pro vykazování.
 2.  **Skupiny produktů** – Vytvořením skupin výrobků můžete seskupit výrobní zakázky tak, že bude možné zpracovat naléhavé výrobní zakázky nebo odstranit a zaúčtovat skupiny objednávek.
 3.  **Vlastnosti** – Definováním vlastností můžete vytvořit speciální atributy, které lze přiřadit zdrojům a řídit tak pořadí výroby. Tyto atributy jsou spojeny se šablonou pracovní doby.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Konfigurace schvalovacích kroků ve workflowu"
-description: "Toto téma vysvětluje, jak nakonfigurovat vlastnosti schvalovacího kroku."
+title: Konfigurace schvalovacích kroků ve workflowu
+description: Toto téma vysvětluje, jak nakonfigurovat vlastnosti schvalovacího kroku.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f52b6ffed7c1edb97c7a673cefbc8bf486ba831
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 813866d63f38f5865666bad96f6f3590716a93ad
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368046"
 ---
-
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurace schvalovacích kroků ve workflowu
 
 [!include [banner](../includes/banner.md)]
@@ -135,7 +134,7 @@ Pomocí následujícího postupu určíte, komu má být schvalovací krok při�
     </tr>
     <tr>
     <td>Uživatel</td>
-    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Konkrétní uživatelé Microsoft Dynamics 365 for Finance and Operations</td>
     <td>
     <ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
@@ -278,4 +277,3 @@ Pokud uživatel u dokumentu neprovede akci v přiděleném čase, dokument bude 
 
 5. Zopakujte kroky 3 a 4 u každého uživatele, který má být přidán do eskalační cesty. Pořadí uživatelů lze změnit.
 6. Pokud uživatelé v eskalační cestě nereagují v určeném čase, systém automaticky provede akci vhodnou pro daný dokument. Akci, kterou systém provede, můžete vybrat výběrem řádku **Akce** a na kartě **Konečná akce** vyberte akci.
-

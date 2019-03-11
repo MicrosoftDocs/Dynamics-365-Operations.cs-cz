@@ -1,13 +1,13 @@
 ---
-title: "Odsouhlasení bankovního výpisu pomocí rozšířeného odsouhlasení banky"
-description: "Funkce rozšířeného odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations. Toto téma popisuje proces odsouhlasení."
+title: Odsouhlasení bankovního výpisu pomocí rozšířeného odsouhlasení banky
+description: Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations. Toto téma popisuje proces odsouhlasení.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 93b311d541ab588be82e6704dbe9ae3e43deabba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ed3a1fae6ca30b9411fde47e7ef8a08150d7d748
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364964"
 ---
-
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Odsouhlasení bankovního výpisu pomocí rozšířeného odsouhlasení banky
 
 [!include [banner](../includes/banner.md)]
 
-Funkce rozšířeného odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations. Toto téma popisuje proces odsouhlasení.  
+Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 for Finance and Operations. Toto téma popisuje proces odsouhlasení.  
 
 <a name="import-an-electronic-bank-statement"></a>Import elektronického bankovního výpisu
 -----------------------------------
@@ -94,7 +93,6 @@ Po dokončení procesu odsouhlasení je vhodné označit list odsouhlasení bank
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Zaúčtování nových transakcí, které jsou přidruženy k odsouhlasení
 Transakce bankovního výpisu, které jste označili jako **Nový** v listě odsouhlasení, jsou zaúčtovány na stránce **Bankovní výpis**. Na stránce **Bankovní výpis** výběrem ID výpisu zobrazte podrobnosti výkazu. V nabídce **Účetnictví** můžete pomocí možnosti **Zobrazit rozdělení** a **Zobrazit účetnictví** zobrazit podrobnosti za novými transakcemi a souvisejícími položkami v hlavní knize. Výběrem možnosti **Zaúčtovat** zaúčtujete řádky bankovního výpisu, které jsou označeny jako **Nové**, do hlavní knihy. Mějte na paměti, že zaúčtování může být provedeno pouze jednou pro každý bankovní výpis.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření organizační hierarchie"
-description: "Následující postup použijte k vytvoření organizační hierarchie."
+---
+title: Vytvoření organizační hierarchie
+description: Následující postup použijte k vytvoření organizační hierarchie.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 203a586b06a13a7c67f246384152d17627e22041
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 2aea56a549131745b2636392561176bf0f87097c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308798"
 ---
 # <a name="create-an-organization-hierarchy"></a>Vytvoření organizační hierarchie
 
@@ -56,5 +56,4 @@ K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 2. Klikněte na Zobrazit hierarchii.
     * Podle potřeby přidejte organizace.  
     * Pokud chcete přidat organizaci, klepněte na tlačítko Upravit a Vložit a přidejte tak organizaci.     Po dokončení provádění změn můžete uložit návrh a publikovat změny.  
-
 

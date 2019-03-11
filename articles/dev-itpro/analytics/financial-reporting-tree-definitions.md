@@ -1,13 +1,13 @@
 ---
-title: "Definice stromu výkaznictví ve finančních sestavách"
-description: "Tento článek obsahuje informace o definicích stromu výkaznictví. Definice stromu výkaznictví je součástí sestavy nebo stavební blok, který pomáhá definovat strukturu a hierarchii vaší organizace."
+title: Definice stromu výkaznictví ve finančních sestavách
+description: Tento článek obsahuje informace o definicích stromu výkaznictví. Definice stromu výkaznictví je součástí sestavy nebo stavební blok, který pomáhá definovat strukturu a hierarchii vaší organizace.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 00219f21076af60f8e2f16ca365b1138bb279400
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316940"
 ---
-
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definice stromu výkaznictví ve finančních sestavách
 
 [!include [banner](../includes/banner.md)]
@@ -49,9 +48,9 @@ Můžete vytvořit neomezený počet stromů výkaznictví k zobrazování dat v
 ## <a name="create-a-reporting-tree-definition"></a> Vytvoření definice stromu výkaznictví
 Definice stromu výkaznictví obsahuje sloupce popsané v následující tabulce.
 
-| Sloupec sestavy výkaznictví | popis |
+| Sloupec sestavy výkaznictví | Popis |
 |-----------------------|-------------|
-| Společnost               | Název společnosti pro jednotku výkaznictví. Hodnota **@ANY**, která je obvykle přiřazena pouze na úrovni souhrnu, umožňuje strom výkaznictví používat pro všechny společnosti. Všechny větve podřízených jednotek mají přiřazenu společnost. |
+| Společnost               | Název společnosti pro organizační jednotku. Hodnota **@ANY**, která je obvykle přiřazena jen souhrnné úrovni, umožňuje používat organizační strom pro všechny společnosti. Všechny větve podřízených jednotek mají přiřazenu společnost. |
 | Název jednotky             | Kód identifikující tuto jednotku výkaznictví v grafickém stromu výkaznictví. Nezapomeňte vytvořit jedinečný systém kódování, který je konzistentní, a které bude snadno pochopitelný pro uživatele. |
 | Popis jednotky      | Název jednotky výkaznictví se zobrazí v záhlaví nebo zápatí sestavy, když zadáte hodnotu **UnitDesc** jako kód na kartě **Záhlaví a zápatí** v definici sestavy. Nadpis se zobrazí v sestavě v řádku popisu, pokud zadáte hodnotu **UnitDesc** do buňky **Popis** v definici řádku. |
 | Dimenze            | Jednotka výkaznictví, která získává informace přímo z finančních dat. Definuje logické umístění a délky pro účet a související segmenty. Každý řádek sestavy musí mít uveden rozměr v tomto sloupci. Dimenzi můžete vložit také do řádku Souhrn jednotky (například pro výdaje, které přímo souvisejí s touto jednotkou). Zadáte-li dimenzi v řádku jednotky souhrnu, účty, které se používají v nadřazených jednotkách nepoužívejte v podřízených jednotkách. Jinak může docházet ke zdvojování částek. |
@@ -166,9 +165,9 @@ Můžete zabránit určitým uživatelům a skupinám v přístupu k jednotkám 
 3. V dialogovém okně **Zabezpečení jednotky** zvolte název a klikněte na tlačítko **Odebrat**.
 4. Klepněte na tlačítko **OK**.
 
-### <a name="link-to-reports"></a>Odkaz na sestavy
+### <a name="link-toreports"></a>Odkaz na sestavy
 
-Po vytvoření sloupce **Sestava** v definici řádku a určení sestavy k zahrnutí v sestavě musíte aktualizovat stromu výkaznictví pomocí propojeného sloupce a informací o sestavě. Sestavu lze importovat do jakékoli jednotky ve stromu výkaznictví.
+Po vytvoření sloupce  **Sestava** v definici řádku a určení sestavy k zahrnutí v sestavě musíte aktualizovat stromu výkaznictví pomocí propojeného sloupce a informací o sestavě. Sestavu lze importovat do jakékoli jednotky ve stromu výkaznictví.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identifikace sestavy ve stromu výkaznictví
 
@@ -222,4 +221,3 @@ Následující příklady ukazují možné informace, které jsou použity v def
 ## <a name="additional-resources"></a>Další zdroje
 
 [Finanční výkaznictví](financial-reporting-intro.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "Definice sloupce ve finančních sestavách"
-description: "Tento článek obsahuje informace o definicích sloupce. Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě. Stejně jako definice řádků lze základní definice sloupců použít u více sestav."
+title: Definice sloupce ve finančních sestavách
+description: Tento článek obsahuje informace o definicích sloupce. Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě. Stejně jako definice řádků lze základní definice sloupců použít u více sestav.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356339"
 ---
-
 # <a name="column-definitions-in-financial-reports"></a>Definice sloupce ve finančních sestavách
 
 [!include [banner](../includes/banner.md)]
@@ -121,7 +120,7 @@ Následující tabulka popisuje kódy omezení sloupce.
 | ADJ                     | Omezí částky v tomto sloupci na částky oprav za období, pokud jsou tyto částky k dispozici. |
 | XAD                     | Omezí částky v tomto sloupci tak, aby byly vyloučeny částky oprav za období. |
 | PT                      | Omezí částky ve sloupci tak, aby pouze zaúčtované transakce byly zahrnuty, pokud tyto transakce jsou k dispozici. |
-| UPT                     | Omezí částky ve sloupci tak, aby pouze nezaúčtované transakce byly zahrnuty, pokud tyto transakce jsou k dispozici.<blockquote>[!NOTE] Ne všichni zprostředkovatelé dat podporují nezaúčtované transakce. Další informace naleznete v <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>příručce k integraci dat</a> systému Microsoft Dynamics ERP.</blockquote> |
+| UPT                     | Omezí částky ve sloupci tak, aby pouze nezaúčtované transakce byly zahrnuty, pokud tyto transakce jsou k dispozici.<blockquote>[!NOTE] Ne všichni zprostředkovatelé dat podporují nezaúčtované transakce. Další informace naleznete v <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>příručce pro integraci dat</a> pro váš systém Microsoft Dynamics ERP.</blockquote> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Omezení sloupce na organizační jednotku
 
@@ -171,28 +170,28 @@ Můžete přidat, upravit a odstranit záhlaví, která se zobrazí v horní č�
 
 ### <a name="create-an-automatically-generated-header"></a>Vytvoření automaticky generovaného záhlaví
 
-Návrhář sestav může automaticky generovat záhlaví sloupců na základě kódů automatického textu. Kódy automatického textu jsou proměnné, které se aktualizují při každém generování sestavy. Tyto kódy mohou být zahrnuty do libovolného záhlaví sloupce a určovat informace, které se u sestavy liší, jako je například datum nebo číslo období. Jednu definici sloupců proto můžete použít pro více definic sestav, časových období a organizačních stromů. Protože kódy automatického textu závisí na informacích kalendáře z řádků podrobností definice sloupce, jsou podporovány pouze u sloupců **CALC**, **FD** a **WKS**. Způsob, jakým je kód automatického textu zobrazen v buňce záhlaví sloupce, má vliv na to, jak se tyto údaje zobrazují v sestavě. V dialogovém okně **Záhlaví sloupce** se kódy automatického textu zobrazí s malými i velkými znaky. Proto se text zobrazí s malými i velkými znaky v sestavě. Například ve standardním kalendářním roku vypíše kód **@CalMonthLong** měsíc **7** jako **Červenec**. Pokud má název měsíce být psán velkými písmeny (například **ČERVENEC**), zadejte kód automatického textu velkými písmeny do pole **Text záhlaví sloupce**. Například zadejte **@CALMONTHLONG**. Můžete kombinovat kódy a text. Například zadejte následující text záhlaví: **Období @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**. Záhlaví sestavy, které bude vygenerováno, bude vypadat nápodobně: **Period 1-02 od 1.1.2002 do 31.1.2002**.
+Návrhář sestav může automaticky generovat záhlaví sloupců na základě kódů automatického textu. Kódy automatického textu jsou proměnné, které se aktualizují při každém generování sestavy. Tyto kódy mohou být zahrnuty do libovolného záhlaví sloupce a určovat informace, které se u sestavy liší, jako je například datum nebo číslo období. Jednu definici sloupců proto můžete použít pro více definic sestav, časových období a organizačních stromů. Protože kódy automatického textu závisí na informacích kalendáře z řádků podrobností definice sloupce, jsou podporovány pouze u sloupců **CALC**, **FD** a **WKS**. Způsob, jakým je kód automatického textu zobrazen v buňce záhlaví sloupce, má vliv na to, jak se tyto údaje zobrazují v sestavě. V dialogovém okně **Záhlaví sloupce** se kódy automatického textu zobrazí s malými i velkými znaky. V sestavě se proto text se zobrazí velkými i malými písmeny. Například ve standardním kalendářním roku vypíše kód **@CalMonthLong** měsíc **7** jako **Červenec**. Pokud má být v sestavě název měsíce uveden velkými písmeny (například **ČERVENEC**), zadejte kód automatického textu velkými písmeny do pole **Text záhlaví sloupce**. Například zadejte **@CALMONTHLONG**. Kódy lze používat společně s textem. Například zadejte následující text záhlaví: **Období @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**. Záhlaví sestavy, které bude vygenerováno, bude vypadat nápodobně: **Period 1-02 od 1.1.2002 do 31.1.2002**.
 
 > [!NOTE]
-> Formát částí textu, jako například dlouhé datum, závisí na vašich místních nastaveních serveru Finance and Operations. Tato nastavení můžete změnit, kliknutím na tlačítko **Start**, na položku **Ovládací panely** a nakonec na položku **Oblast a jazyk**. V následující tabulce jsou uvedeny dostupné možnosti automatického textu pro záhlaví sloupců.
+> Formát částí textu, jako například dlouhé datum, závisí na vašich místních nastaveních serveru Finance and Operations. Tato nastavení můžete změnit, kliknutím na tlačítko **Start**, na položku **Ovládací panely** a nakonec na položku **Oblast a jazyk**. V následující tabulce jsou uvedeny dostupné možnosti automatického textu u záhlaví sloupců.
 
 
-| Možnost a kód automatického textu                | popis |
+| Možnost a kód automatického textu                | Popis |
 |-----------------------------------------|-------------|
-| Název měsíce (@CalMonthLong)              | Vytiskne název aktuálního měsíce v záhlaví sloupce. Pokud se rozhodnete zaokrouhlovat částky v sestavě na tisíce, miliony nebo miliardy nebo nastavíte šířku sloupce v sestavě na menší šířku než devět znaků, název měsíce se zkrátí na první tři znaky. |
+| Název měsíce (@CalMonthLong)              | Vytiskne v záhlaví sloupce název aktuálního měsíce. Pokud se rozhodnete zaokrouhlovat částky v sestavách na tisíce, milióny nebo miliardy, nebo pokud šířku sloupce v sestavě nastavíte na méně než 9 znaků, zkrátí se název měsíce na první tři znaky. |
 | Zkrácený název měsíce (@CalMonthShort) | Vytiskne zkrácený název měsíce pro vybrané fiskální období. |
-| Číslo období (@FiscalPeriod)           | Vytiskne číselnou formu fiskálního období, které je určeno pro daný sloupec. Pokud sloupec zahrnuje více období, vytiskne se poslední období v rozsahu. |
-| Popis období (@FiscalPeriodName)  | Vytiskne popis fiskálního období, které je určeno ve finančních datech. |
-| Fiskální rok (@FiscalYear)               | Vytiskne fiskální rok pro sloupec v číselné formě. |
-| Kalendářní rok (@CalYear)                | Vytiskne kalendářní rok pro sloupec v číselné formě. |
+| Číslo období (@FiscalPeriod)           | Vytiskne číselnou formu fiskálního období, který je určený pro daný sloupec. Pokud sloupec překlenuje několik období, vytiskne se poslední období v tomto rozsahu. |
+| Popis období (@FiscalPeriodName)  | Vytiskne popis fiskálního období, který je určen ve finančních datech. |
+| Fiskální rok (@FiscalYear)               | Vytiskne fiskální rok tohoto sloupce v číselné formě. |
+| Kalendářní rok (@CalYear)                | Vytiskne kalendářní rok tohoto sloupce v číselné formě. |
 | Počáteční datum (@StartDate)                 | Vytiskne počáteční datum pro sloupec. |
 | Koncové datum (@EndDate)                     | Vytiskne koncové datum pro sloupec. |
-| Název jednotky ze stromu (@UnitName)         | Jestliže omezíte sloupce pro určitou jednotku stromu výkaznictví, vytiskne název jednotky v záhlaví sloupce. |
-| Popis jednotky (@UnitDesc)            | Jestliže omezíte sloupec na určitou jednotku stromu výkaznictví, vytiskne popis jednotky v záhlaví sloupce. |
-| Kód knihy (@BookCode)                   | Vytiskne kód knihy stanovený ve sloupci. |
-| Prázdný řádek (@Blank)                     | Vloží prázdný řádek do záhlaví sloupce. |
+| Název jednotky ze stromu (@UnitName)         | Pokud sloupec omezíte na konkrétní jednotku organizačního stromu, vytiskne v záhlaví sloupce její název. |
+| Popis jednotky (@UnitDesc)            | Pokud sloupec omezíte na konkrétní jednotku organizačního stromu, vytiskne v záhlaví sloupce její popis. |
+| Kód knihy (@BookCode)                   | Vytiskne kód knihy zadaný ve sloupci. |
+| Prázdný řádek (@Blank)                     | Vloží do záhlaví sloupce prázdný řádek. |
 
-### <a name="create-a-conditional-spanning-header"></a>Vytvoří záhlaví s podmíněným pokrytím
+### <a name="create-a-conditional-spanning-header"></a>Vytvoření podmíněného překlenovacího záhlaví
 
 Podmíněná překlenovací záhlaví mohou na základě zadaného data období zasahovat do více sloupců. Pokud máte například sestavu rozpočtu na fiskální rok a chcete zobrazit skutečné rozpočty za minulé měsíce s předpokládanými rozpočty na budoucí měsíce, můžete pomocí podmíněných překlenovacích záhlaví automaticky aktualizovat záhlaví sestavy. Při vytváření podmíněných překlenovacích záhlaví dávejte pozor na následující situace:
 
@@ -213,16 +212,16 @@ Podmíněná překlenovací záhlaví mohou na základě zadaného data období 
 
 #### <a name="example-of-a-conditional-spanning-header"></a>Příklad podmíněného překlenovacího záhlaví
 
-Petra vytváří sestavu pro dynamickou šestiměsíční prognózu. Chce, aby se přes sloupce obsahující skutečná data vytisklo slovo „Skutečnost“ a přes sloupce obsahující prognózy rozpočtu slovo „Rozpočet“. Každý měsíc, kdy je spuštěna sestava, přibude jeden sloupec se skutečnými hodnotami a ubude jeden sloupec rozpočtu. Přestože Petra může při každém generování sestavy upravit záhlaví ruční změnou definice sloupce, rozhodne se ušetřit si čas a práci a vytvoří podmíněná překlenovací záhlaví, která automaticky vytvoří záhlaví u příslušných sloupců při každém spuštění sestavy. Pavla otevře Návrhář sestav, klikne na tlačítko **Definice sloupce** v navigačním podokně a otevře definici sloupce pro sestavu. Zadá potom následující informace. Základní období v definici sestavy je 4.
+Petra vytváří sestavu pro dynamickou šestiměsíční prognózu. Chce, aby se přes sloupce obsahující skutečná data vytisklo slovo „Skutečnost“ a přes sloupce obsahující prognózy rozpočtu slovo „Rozpočet“. Každý měsíc, kdy je spuštěna sestava, přibude jeden sloupec se skutečnými hodnotami a ubude jeden sloupec rozpočtu. Přestože Petra může při každém generování sestavy upravit záhlaví ruční změnou definice sloupce, rozhodne se ušetřit si čas a práci a vytvoří podmíněná překlenovací záhlaví, která automaticky vytvoří záhlaví u příslušných sloupců při každém spuštění sestavy. Pavla otevře Návrhář sestav, klikne na tlačítko **Definice sloupce** v navigačním podokně a otevře definici sloupce pro sestavu. Zadá potom následující informace. Základní období v definici sestavy je 4.
 
 
-|                     |  A.   | mld.             | K             | P             | E.             | F.             | G.             | H.             | N             | J             | tis.             | V             | mil.             |
+|                     |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| Záhlaví 1            |      | Skutečná        | Rozpočet        |               |               |               |               |               |               |               |               |               |               |
+| Záhlaví 1            |      | Skutečnost        | Rozpočet        |               |               |               |               |               |               |               |               |               |               |
 | Záhlaví 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
 | Záhlaví 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
 | Typ sloupce         | POPIS | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
-| Kód knihy / atribut |      | SKUTEČNÝ        | ROZPOČET2012    | SKUTEČNÝ        | ROZPOČET2012    | SKUTEČNÝ        | ROZPOČET2012    | SKUTEČNÝ        | ROZPOČET2012    | SKUTEČNÝ        | ROZPOČET2012    | SKUTEČNÝ        | ROZPOČET2012    |
+| Kód knihy/atribut |      | SKUTEČNÝ        | ROZPOČET2012    | SKUTEČNÝ        | ROZPOČET2012    | SKUTEČNÝ        | ROZPOČET2012    | SKUTEČNÝ        | ROZPOČET2012    | SKUTEČNÝ        | ROZPOČET2012    | SKUTEČNÝ        | ROZPOČET2012    |
 | Fiskální rok         |      | ZÁKLAD          | ZÁKLAD          | ZÁKLAD          | ZÁKLAD          | ZÁKLAD          | ZÁKLAD          | ZÁKLAD          | ZÁKLAD          | ZÁKLAD          | ZÁKLAD          | ZÁKLAD          | ZÁKLAD          |
 | Období              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
 | Pokrytá období     |      | PERIODICKÝ      | PERIODICKÝ      | PERIODICKÝ      | PERIODICKÝ      | PERIODICKÝ      | PERIODICKÝ      | PERIODICKÝ      | PERIODICKÝ      | PERIODICKÝ      | PERIODICKÝ      | PERIODICKÝ      | PERIODICKÝ      |
@@ -472,7 +471,7 @@ Buňka **Pokrytá období** identifikuje částku, kterou má sloupec zobrazit. 
 
 ### <a name="attribute-filter-in-a-column-definition"></a>Filtr atributů v definici sloupce
 
-Atributy jsou hodnoty finančních dat, které podrobněji definují účet nebo transakci. Atributy účtu zahrnují položky **Majetek**, **Závazky**, **Výnosy** a **Výdaje**. Atributy transakce zahrnují položky **Popis transakce** a **Datum použití transakce**. Podpora atributů se v systémech Microsoft Dynamics ERP může lišit. Buňka **Filtr atributů** omezuje data ve sloupcích **FD** na konkrétní hodnoty nebo rozsahy pro kategorie atributů. Ačkoli lze tuto funkci použít spolu se sloupcem **ATTR**, sloupec **ATTR** není požadován. Ve sloupci **FD** existuje limit účtů nebo transakcí, které bude sestava obsahovat z filtru atributů.
+Atributy jsou hodnoty finančních dat, které podrobněji definují účet nebo transakci. Atributy účtu zahrnují položky **Majetek**, **Závazky**, **Výnosy** a **Výdaje**. Atributy transakce zahrnují položky **Popis transakce** a **Datum použití transakce**. Podpora atributů se v systémech Microsoft Microsoft Dynamics ERP může lišit. Buňka **Filtr atributů** omezuje data ve sloupcích **FD** na konkrétní hodnoty nebo rozsahy pro kategorie atributů. Ačkoli lze tuto funkci použít spolu se sloupcem **ATTR**, sloupec **ATTR** není požadován. Ve sloupci **FD** existuje limit účtů nebo transakcí, které bude sestava obsahovat z filtru atributů.
 
 > [!NOTE]
 > Pokud chcete zjistit, jaké atributy váš systém ERP podporuje, prostudujte příručku pro integraci svého systému.
@@ -612,4 +611,3 @@ Můžete vytvořit sloupec, který zobrazuje všechny hodnoty v zadaném sloupc
 [Definice řádku ve finančním výkaznictví](row-definitions-financial-reporting.md)
 
 [Rozšířené možnosti formátování ve finančním výkaznictví](advanced-formatting-options-financial-reporting.md)
-

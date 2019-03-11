@@ -1,14 +1,14 @@
 ---
-title: "Finanční konsolidace online"
-description: "Toto téma popisuje online finanční konsolidace v hlavní knize."
+title: Finanční konsolidace online
+description: Toto téma popisuje online finanční konsolidace v hlavní knize.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
 ms.openlocfilehash: fd29dc5f932c9cd274a42923e1ff659dd5d8e9d6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341251"
 ---
-
 # <a name="consolidate-online"></a>Konsolidovat online
 
 [!include [banner](../includes/banner.md)]
@@ -97,4 +96,3 @@ Na kartě **Převod měny** definujete právnickou osobu, účet a typ směnnéh
 Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Finanční konsolidace a převod měny](./financial-consolidations-currency-translation.md).
 
 Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).
-

@@ -1,13 +1,13 @@
 ---
-title: "Workflow nákupního požadavku"
-description: "Proces workflowu přesouvá nákupní žádanky v procesu kontroly od počátečního stavu Koncept do konečného stavu Schváleno. Když je nákupní požadavek odeslán ke kontrole, proces workflowu se spustí. Po schválení nákupního požadavku lze generovat nákupní objednávku pro řádky nákupního požadavku a odeslat ji dodavateli pro splnění zakázky."
+title: Workflow nákupního požadavku
+description: Proces workflowu přesouvá nákupní žádanky v procesu kontroly od počátečního stavu Koncept do konečného stavu Schváleno. Když je nákupní požadavek odeslán ke kontrole, proces workflowu se spustí. Po schválení nákupního požadavku lze generovat nákupní objednávku pro řádky nákupního požadavku a odeslat ji dodavateli pro splnění zakázky.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0adc43f3ed238a7a49cde44dd5f2d3bd55201cb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a5dcc294b3dde7dc7e0f789d9e7678b75bc699b0
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355764"
 ---
-
 # <a name="purchase-requisition-workflow"></a>Workflow nákupního požadavku
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Chcete-li použít jednoho z kontrolorů výdajů, které jste nastavili ve work
 [Workflowy zásobování a zdrojů](procurement-sourcing-workflows.md)
 
 [Přehled nákupních žádanek](purchase-requisitions-overview.md)
-
 
 
 

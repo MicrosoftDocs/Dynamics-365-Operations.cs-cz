@@ -1,13 +1,13 @@
---- 
-title: "Definování nových oddělení"
-description: "Oddělení jsou provozní jednotky, které představují funkční oblasti společnosti, jako například prodejní oddělení nebo účetní oddělení."
+---
+title: Definování nových oddělení
+description: Oddělení jsou provozní jednotky, které představují funkční oblasti společnosti, jako například prodejní oddělení nebo účetní oddělení.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6dedddf305e303de5b284b34420cd0eda5170ed1
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342838"
 ---
 # <a name="define-new-departments"></a>Definování nových oddělení
 
@@ -51,5 +51,4 @@ Oddělení jsou provozní jednotky, které představují funkční oblasti spole
     * Při publikování hierarchie oddělení můžete vybrat, kdy mají změny nabýt platnosti. Změny může být s budoucím datem. Například můžete vědět, že na začátku fiskálního roku budete přidávat další oddělení. Můžete nastavit na datum platnosti na začátek fiskálního roku a změny hierarchie budou platit k tomuto datu.  
 16. Zadejte hodnotu do pole Popsat změny.
 17. Klikněte na tlačítko Publikovat.
-
 

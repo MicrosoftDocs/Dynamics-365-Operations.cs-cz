@@ -1,13 +1,13 @@
---- 
-title: "EUR-00012 Vydání vstupního certifikátu EU"
-description: "Tento postup vás provede povolením vstupního certifikátu EU, konfigurací účtu odběratele pro použití vstupních certifikátů a vydáním certifikátu."
+---
+title: EUR-00012 Vydání vstupního certifikátu EU
+description: Tento postup vás provede povolením vstupního certifikátu EU, konfigurací účtu odběratele pro použití vstupních certifikátů a vydáním certifikátu.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 5a566b1d25064e3fccc8953dc883aa63bd16a301
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370118"
 ---
 # <a name="eur-00012-issue-an-eu-entry-certificate"></a>EUR-00012 Vydání vstupního certifikátu EU
 
@@ -87,5 +87,4 @@ Tento postup vás provede povolením vstupního certifikátu EU, konfigurací ú
 3. Klepněte na tlačítko OK.
 4. V podokně akcí klikněte na položku Faktura.
 5. Klikněte na možnost Zobrazit vystavené vstupní certifikáty.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Vytvoření zaškolení, které zaujme"
-description: "Když je zaškolení provedeno dobře, pomůže novým zaměstnancům vytvářet pocit, že patří k nové organizaci."
+title: Vytvoření zaškolení, které zaujme
+description: Když je zaškolení provedeno dobře, pomůže novým zaměstnancům vytvářet pocit, že patří k nové organizaci.
 author: tbisaacs
-manager: 
+manager: ''
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 audience: Application User
 ms.reviewer: rschloma
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: tbisaacs
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
+ms.openlocfilehash: 0dbc3247e1a5a8134184c8fe98fa8692fbf27c94
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 54caf2648766053ec5a662f48bd50a1ec9b8911a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303545"
 ---
-
 # <a name="create-an-engaging-onboarding-experience"></a>Vytvoření zaškolení, které zaujme
 
 [!include [banner](includes/banner.md)]
@@ -90,5 +89,4 @@ Když zavádíte nový program zaškolení, věnujte zvýšenou pozornost násle
 - Zvyšuje se mezi nově přijatými zaměstnanci spokojenost? 
 
 Měřte tyto údaje a provádějte s každým novým zaměstnancem drobná zlepšení.
-
 

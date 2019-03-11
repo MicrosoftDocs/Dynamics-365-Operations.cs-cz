@@ -1,14 +1,14 @@
 ---
-title: "Přístup k funkcím náhledu v aplikaci Talent"
-description: "Toto téma popisuje, jak může správce povolit funkce náhledu, a uvádí seznam funkcí, které jsou nyní povoleny pro náhled."
+title: Přístup k funkcím náhledu v aplikaci Talent
+description: Toto téma popisuje, jak může správce povolit funkce náhledu, a uvádí seznam funkcí, které jsou nyní povoleny pro náhled.
 author: rschloma
 manager: AnnBe
 ms.date: 04/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303561"
 ---
-
 # <a name="access-preview-features-in-talent"></a>Přístup k funkcím náhledu v aplikaci Talent
 
 [!include[banner](../includes/banner.md)]
@@ -36,14 +35,14 @@ Toto téma popisuje, jak může správce povolit funkce náhledu, a uvádí sezn
 
 ## <a name="enable-or-disable-preview-features"></a>Povolit nebo zakázat funkce náhledu
 
-Nastavení **funkce náhledu** můžete použít v centru pro správu aplikace Microsoft Dynamics 365 for Talent, pro povoení nebo zakázání funkcí náhledu. Ve výchozím nastavení je toto nastavení vypnuté. Akce povolení nebo zakázání funkcí náhledu se vztahuje ke konkrétnímu prostředí.
+Nastavení **funkcí náhledu** můžete použít v centru pro správu aplikace Microsoft Dynamics 365 for Talent pro povolení nebo zakázání funkcí náhledu. Ve výchozím nastavení je toto nastavení vypnuté. Akce povolení nebo zakázání funkcí náhledu se vztahuje ke konkrétnímu prostředí.
 
 > [!IMPORTANT]
 > Zapnutím nastavení **Funkce náhledu** povolíte funkce Náhledu pro všechny uživatele ve vaší organizaci, kteří jsou v prostředí. Vypnutím nastavení zakážete funkce náhledu a způsobíte, že budou uživatelům nepřístupné. Funkce náhledu mají v aplikaci Talent omezenou podporu. Mohou používat méně opatření pro soukromí a bezpečnostních opatření a nejsou zahrnuty do smlouvy o úrovni služeb aplikace Talent. Neměli byste je používat ke zpracování osobních údajů (to znamená všech informací, které vás mohou identifikovat), nebo ke zpracování jiných dat, které podléhají požadavkům na vyhovění zákonům nebo předpisům.
 
 ### <a name="enable-or-disable-preview-features-for-your-organization"></a>Povolit nebo zakázat funkce náhledu ve vaší organizaci
 
-#### <a name="attract"></a>Attract
+#### <a name="attract"></a>Upoutat
 
 1. Přihlaste se do aplikace Microsoft Dynamics 365 for Talent: Attract.
 2. V nabídce **Nastavení** (symbol ozubeného kola) v pravém horním rohu vyberte **nastavení pro správu**.
@@ -92,4 +91,3 @@ Neuvádějte ve zpětné vazbě nebo recenzích na produkty své osobní údaje 
 
 > [!TIP]
 > Toto téma si uložte do záložek a často se vracejte, abyste měli informace o nových funkcích náhledu, když je vydáme.
-

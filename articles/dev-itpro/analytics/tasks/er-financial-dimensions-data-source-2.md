@@ -1,13 +1,13 @@
---- 
-title: "Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2 - mapování modelu)"
-description: "Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví."
+---
+title: Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2 - mapování modelu)
+description: Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 92efd6a0b36471286c292a80542b81cd14a8eff3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319585"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2-model-mapping"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2: mapování modelu)
 
@@ -43,7 +43,7 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 8. Do pole Popis zadejte Mapování dat dimenzí.
 9. Klikněte na položku Uložit.
 10. Klikněte na možnost Návrhář.
-11. Ve stromové struktuře vyberte Dynamics 365 for Operations\Table.
+11. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Tabulka'.
 12. Klikněte na možnost Přidat kořen.
 13. Do pole Název zadejte text „Společnost“.
 14. Do pole Tabulka zadejte hodnotu „CompanyInfo“.
@@ -59,7 +59,7 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 21. Vyberte možnost Ano v poli Zeptat se na hlavní účet.
     * Nastavte v poli Zeptat se na hlavní účet hodnotu Ano, chcete-li umožnit uživatelům vybrat hlavní účet jako součást seznamu dimenzí.   Je-li nastavena na hodnotu Ne, hlavní účet nebude zahrnut do seznamu dimenzí a je povolena možnost "Je hlavní účet povinný". Pokud je možnost Je hlavní účet povinný nastavena na hodnotu Ano, zahrňte hlavní účet do seznamu dimenzí nezávisle na výběru uživatele.  
 22. Klikněte na tlačítko OK.
-23. Ve stromové struktuře vyberte Dynamics 365 for Operations\Záznamy tabulky.
+23. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.
 24. Klikněte na možnost Přidat kořen.
 25. Do pole Název zadejte 'LedgerJournal'.
 26. Vyberte možnost Ano v poli Zeptat se na dotaz.
@@ -143,5 +143,4 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 3. Klikněte na položku Změnit stav.
 4. Klikněte na tlačítko Dokončit.
 5. Klikněte na tlačítko OK.
-
 

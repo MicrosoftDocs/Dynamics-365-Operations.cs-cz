@@ -1,13 +1,13 @@
---- 
-title: "Vrátit stav kanbanové úlohy"
-description: "Tato procedura se zaměřuje na vrácení zpět nesprávného stavu kanbanové úlohy."
+---
+title: Vrátit stav kanbanové úlohy
+description: Tato procedura se zaměřuje na vrácení zpět nesprávného stavu kanbanové úlohy.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 27874f89cede151b52b869fa0d58e320d548e6d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 55d359232da5f3087b1e6baed182a20da09aeff7
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352084"
 ---
 # <a name="revert-kanban-job-status"></a>Vrátit stav kanbanové úlohy
 
@@ -54,5 +54,4 @@ Tato procedura se zaměřuje na vrácení zpět nesprávného stavu kanbanové �
 5. Odznačte vybraný řádek na seznamu.
     * Vyberte stejnou úlohu.  
     * Všimněte si, že stav úlohy pro kanbanovou úlohu bude vrácen zpět na Plánováno, což je označeno ikonou prázdného kanbanu.  
-
 

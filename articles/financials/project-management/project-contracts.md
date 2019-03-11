@@ -1,13 +1,13 @@
 ---
-title: "Projektové smlouvy"
-description: "Toto téma popisuje projektové smlouvy (obsahuje i příklady), které můžete vytvořit pro různé typy projektů a zdroje financování, dále způsoby, jak lze spravovat smlouvy a fakturovat odběratele projektu v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Projektové smlouvy
+description: Toto téma popisuje projektové smlouvy (obsahuje i příklady), které můžete vytvořit pro různé typy projektů a zdroje financování, dále jak lze spravovat smlouvy a fakturovat odběratele projektu v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0f0fcec64ce03c6e1d877fb1c8d004bb416bd95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e46393b9ac8797bf12cca12099d177980b75ba38
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310362"
 ---
-
 # <a name="project-contracts"></a>Projektové smlouvy
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje projektové smlouvy (obsahuje i příklady), které můžete vytvořit pro různé typy projektů a zdroje financování, dále způsoby, jak lze spravovat smlouvy a fakturovat odběratele projektu v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Tento článek popisuje projektové smlouvy (obsahuje i příklady), které můžete vytvořit pro různé typy projektů a zdroje financování, dále jak lze spravovat smlouvy a fakturovat odběratele projektu v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
 Typ projektu, který vytvoříte pro smlouvu projektu, určuje metodu použitou při fakturaci odběratelům projektu. Můžete změnit projektovou smlouvu a související projekt, ale nelze změnit typ projektu. 
 
@@ -342,7 +341,6 @@ Při nastavování projektové smlouvy souhlasíte s fakturací odběratele kaž
 -   Faktura odběratele se vytváří na konci každého kalendářního měsíce během projektu.
 
 Během prvního měsíce je zaznamenáno celkem 800 hodin konzultanty na projektu. Náklady na kancelářské potřeby zaúčtované v projektu jsou 2 000. Proto na konci měsíce vytvoříte fakturu na 122 000, která se vypočítá jako 800 hodin za 150 za hodinu a 2 000 za kancelářské potřeby.
-
 
 
 

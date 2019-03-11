@@ -1,13 +1,13 @@
 ---
-title: "Domovská stránka řešení PowerBI.com"
-description: "V tomto tématu jsou popsána řešení PowerBI.com, která jsou k dispozici, a téma odkazuje na zdroje, které se o řešeních dozvíte více."
+title: Domovská stránka řešení PowerBI.com
+description: V tomto tématu jsou popsána řešení PowerBI.com, která jsou k dispozici, a téma odkazuje na zdroje, které se o řešeních dozvíte více.
 author: sericks007
 manager: AnnBe
 ms.date: 05/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: PowerBIPbixDeployForm
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 64b1c09b781b7bdbaf01a374e321b8dd9418f3da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 1a391c0111ad39cb8c4ec809eccb3eb7cfb18687
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316687"
 ---
-
 # <a name="powerbicom-solutions-home-page"></a>Domovská stránka řešení PowerBI.com
 
 [!include [banner](../includes/banner.md)]
 
-Následující řešení PowerBI.com jsou k dispozici v prostředí Dynamics 365 for Finance and Operations.
+Pro prostředí Dynamics 365 for Finance and Operations jsou k dispozici následující řešení PowerBI.com.
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>PowerBI.com řešení, která jsou k dispozici ze služby Lifecycle Services (LCS)
 
@@ -59,7 +58,7 @@ Následující řešení PowerBI.com jsou k dispozici v knihovnách sdíleného 
 
 ## <a name="powerbicom-solutions-available-from-appsource"></a>PowerBI.com řešení dostupná z AppSource
 
-Následující řešení PowerBI.com jsou dostupná z [Microsoft AppSource](https://appsource.microsoft.com).
+Následující řešení PowerBI.com jsou k dispozici z [Microsoft AppSource](https://appsource.microsoft.com).
 
 > [!NOTE]
 > Tato řešení jsou zastaralá, jak je uvedeno v části [Balíčky obsahu Power BI dostupné v AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
@@ -67,4 +66,3 @@ Následující řešení PowerBI.com jsou dostupná z [Microsoft AppSource](http
 - Správa nákladů
 - [Finanční výkonnost](financial-performance-power-bi-content-pack.md)
 - [Výkonnost maloobchodního kanálu ](retail-channel-performance-dashboard-power-bi-data.md)
-

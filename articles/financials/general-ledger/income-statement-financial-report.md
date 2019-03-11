@@ -1,13 +1,13 @@
 ---
-title: "Finanční sestava výkazu příjmu"
-description: "Tento článek popisuje výchozí sestavu pro výsledovky. Popisuje také stavební bloky, které jsou přidruženy k této sestavě."
+title: Finanční sestava výkazu příjmu
+description: Tento článek popisuje výchozí sestavu pro výsledovky. Popisuje také stavební bloky, které jsou přidruženy k této sestavě.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9105e1de86ed2834b04f75c7d08c4021402bcfda
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9310508082ff710cd040b74519044f5a90c23988
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363998"
 ---
-
 # <a name="income-statement-financial-report"></a>Finanční sestava výkazu příjmu
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,6 @@ Definice sloupců obsahují různé typy sloupců, které poskytují různé úr
 [Zobrazení finančních sestav](view-financial-reports.md)
 
 [Blog o finančním výkaznictví v Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Připojení periferních zařízení k pokladnímu místu (POS)."
-description: "Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS."
+title: Připojení periferních zařízení k pokladnímu místu (POS).
+description: Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 544f109a4f46bd7511ee564902f627beddd29f15
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308775"
 ---
-
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Připojení periferních zařízení k pokladnímu místu (POS).
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS.
 
 > [!NOTE]
-> Konkrétní pokyny k instalaci naleznete v tématu [Konfigurace a instalace hardwarové stanice pro maloobchod](retail-hardware-station-configuration-installation.md) a [Samoobslužné stažení/instalace řešení Retail Modern POS a aktivace zařízení Modern POS a Cloud POS](retail-modern-pos-device-activation.md).
+> Konkrétní pokyny k instalaci naleznete v tématu [Konfigurace a instalace Retail hardware station](retail-hardware-station-configuration-installation.md) a [Samoobslužné stažení/instalace Retail Modern POS a aktivace zařízení Modern POS a Cloud POS](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Klíčové komponenty
 
@@ -188,4 +187,3 @@ Další informace týkající se aktivace zahrnují informaci o tom, který prac
 ### <a name="client-data-synchronization"></a>Synchronizace dat klienta
 
 Všechny změny v klientovi POS s výjimkou změn ve stavu aktivace zařízení musí synchronizovány s databázi kanálu, jinak se neprojeví. Chcete-li synchronizovat změny s databází kanálů, přejděte do nabídky **Retail** &gt; **IT pro maloobchod** &gt; **Plán distribuce** a spusťte požadovaný plán distribuce. V případě klientských změn spouštějte plány distribuce „Pokladny“ a „Konfigurace kanálu“.
-

@@ -1,13 +1,13 @@
 ---
-title: "Automatické vyrovnání a stanovení priorit"
-description: "Toto téma popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby."
+title: Automatické vyrovnání a stanovení priorit
+description: Toto téma popisuje způsob vyrovnání transakcí, pokud vyberete možnost Automatické vyrovnání na straně Parametry pohledávek. Vysvětluje také, jak lze automatické vyrovnání použít v kombinaci s prioritou platby.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 775ce10cdba5e38fbb5fc058c6df297143229f79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318964"
 ---
-
 # <a name="automatic-settlement-and-prioritization"></a>Automatické vyrovnání a stanovení priorit
 
 [!include [banner](../includes/banner.md)]
@@ -42,11 +41,11 @@ Následuje části popisují způsob vyrovnání transakcí pro každou z metod.
 ## <a name="example-transactions"></a>Příklady transakcí
 Příklady vyrovnání dále v tomto článku jsou založeny na následujících transakcích. Všechny transakce jsou pro odběratele 2050.
 
-| Transakce   | Datum        | Částka | Podmínky platební slevy | Datum platební slevy | Poznámky                                                                                                                                                                                      |
+| Transakce   | Datum        | Částka | Podmínky platební slevy | Dat. plat. slevy | Poznámky                                                                                                                                                                                      |
 |---------------|-------------|--------|---------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Faktura 1     | 15. srpna   | 100,00 | 2%14, netto 30        | 29. srpna          |                                                                                                                                                                                               |
-| Faktura 2     | 1. září | 250,00 | 2%14, netto 30        | 15. září       |                                                                                                                                                                                               |
-| Faktura 3     | 15. října  | 500,00 | 2% 14/netto 30        | 29. října         |                                                                                                                                                                                               |
+| Faktura 1     | 15. srpna   | 100,00 | 2%14, čisté 30        | 29. srpna          |                                                                                                                                                                                               |
+| Faktura 2     | 1. září | 250.00 | 2%14, čisté 30        | 15. září       |                                                                                                                                                                                               |
+| Faktura 3     | 15. říjen  | 500.00 | 2% 14/netto 30        | 29. října         |                                                                                                                                                                                               |
 | Oznámení úroků | 15. října  | 7:00   |                     |                    | Toto oznámení úroků je pro fakturu 1 a fakturu 2. Částka se počítá jako 2% úrok z částek, které jsou 30 nebo více dnů po splatnosti. Například 0,02 × (100,00 + 250,00) = 7,00. |
 
 ## <a name="user-defined-settlement-priority"></a>Priorita vyrovnání definovaná uživatelem
@@ -79,7 +78,6 @@ Pokud nejsou uvedeny žádné uživatelem definované priority vyrovnání, tran
 | Faktura 2     | 1. 9. 2015   | 10002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Faktura 3     | 15. 10. 2015 |         | 500,00                         | 350,00           | 150,00  | USD      |
 | Oznámení úroků | 15. 10. 2015 |         | 7:00                           | 0,00             | 0,00    | USD      |
-
 
 
 

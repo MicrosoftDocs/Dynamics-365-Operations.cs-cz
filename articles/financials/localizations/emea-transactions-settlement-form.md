@@ -1,13 +1,13 @@
 ---
-title: "Zobrazení transakcí vyrovnání pro východní Evropu"
-description: "Toto téma obsahuje informace o transakcích vyrovnání na stránce pro zákazníky a dodavatele."
+title: Zobrazení transakcí vyrovnání pro východní Evropu
+description: Toto téma obsahuje informace o transakcích vyrovnání na stránce pro zákazníky a dodavatele.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustVendTransPostingLog_RU
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 0ba1731e4b0dcdeb4591d49dacf517f36e472eef
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5ac75d1900a428777374dcc9d7eea10ce4d15b1e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370081"
 ---
-
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Zobrazení transakcí vyrovnání pro východní Evropu
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,6 @@ Informace týkající se vypořádání jsou zaznamenány a mohou být zobrazeny
 -   **Haléřový rozdíl** – faktura je vyrovnána s platbou, která má mírně odlišnou částku než uvádí faktura.
 -   **Podmíněné zaúčtování daně** – Faktura je vyrovnána s platbou, u které byla použita podmíněná daň.
 -   **Vyrovnání mezi společnostmi** – mezipodniková funkce se používá k vyrovnání faktury s platbou z organizace.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření kódu úroků s rozsahem"
-description: "Kódy úroků lze nastavit pro výpočet různých částek úroků podle rozsahu hodnot."
+---
+title: Vytvoření kódu úroků s rozsahem
+description: Kódy úroků lze nastavit pro výpočet různých částek úroků podle rozsahu hodnot.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Interest, CustInterestRange
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2d76ae320ee43a473b64afe311876cc94b953b20
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 05ca41dd5d660e9f0ef72ee5bd49d800645081a5
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367632"
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Vytvoření kódu úroků s rozsahem
 
@@ -51,5 +51,4 @@ Kódy úroků lze nastavit pro výpočet různých částek úroků podle rozsah
 20. Do dalšího pole Hodnota od zadejte možnost 7, což je další měsíc, kdy budete počítat novou částku úroku.
 21. Zadejte procento měsíčního úroku, který se použije pro výpočet úroku počínaje 7. měsícem. V tomto příkladu to je 2,5.
 22. Chcete-li dokončit nastavení, klikněte na tlačítko Zavřít.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Obsah výkonu skladu v Power BI"
-description: "Toto téma popisuje, co je součástí obsahu výkonu skladu v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu."
+title: Obsah výkonnosti skladu v Power BI
+description: Toto téma popisuje, co je součástí obsahu výkonu skladu v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 99966a67fa1fd91fc54e7100f8e2e41b87f6a406
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365355"
 ---
-
-# <a name="warehouse-performance-power-bi-content"></a>Obsah výkonu skladu v Power BI
+# <a name="warehouse-performance-power-bi-content"></a>Obsah výkonnosti skladu v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, co je součástí obsahu **Výkonu skladu** v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu.
+Toto téma popisuje, co je součástí obsahu **výkonu skladu** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="overview"></a>Přehled
 
@@ -43,10 +42,10 @@ Vedoucí skladu mohou používat obsah **výkonu skladu** v Power BI k měření
 - **Přesnost umístění zásob** – Přesnost zásob je důležitá interní skladová business intelligence. Je velmi důležité, abyste stanovili, s jakou přesností obecně provádíte inventuru. Také je však důležité určit, jak přesní jste při skladování zboží na správných místech, a poukázat na nesrovnalosti, abyste mohli najít pro zboží lepší umístění nebo zahájit celkovou inventuru konkrétního zboží. (V současné době nová funkce inventury podle zboží je poskytována jako oprava hotfix.) Používáte-li tento obsah Power BI k určení správnosti údajů množství na skladě podle skladového místa, můžete též určit krádeže ve vašich obchodech. Můžete také určit, zda má nějaké skladové místo na skladě taková množství, která se liší od údajů v systému plánování podnikových zdrojů. Taková skladová místa mohou být příliš velká nebo v nich nelze inventuru provést. Případně některá fyzická umístění mohou být nesprávná, takže je obtížné udržet jeden typ zboží v souladu s daty o zásobách na skladě.
 
 ## <a name="accessing-the-power-bi-content-pack"></a>Přístup k balíčku obsahu Power BI
-Obsah Power BI **Výkonnost skladu** se zobrazí na stránce **Výkonnost skladu** (**Řízení skladu** \> **Dotazy a sestavy** \> **Analýza výkonnosti skladu** \> **Výkonnost skladu**).
+Obsah **Výkon skladu** v Power BI se zobrazuje na stránce **Výkon skladu** (**Řízení skladu** \> **dotazy a sestavy** \> **Analýza výkonu skladu** \> **Výkon skladu**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
-Obsah **výkonu skladu** Power BI zahrnuje sestavu. Tato sestava obsahuje sadu metrik, které jsou zobrazovány jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizace v obsahu **výkonu skladu** v Power BI.
+Obsah **Výkonu skladu** v Power BI zahrnuje sestavu. Tato sestava obsahuje sadu metrik, které jsou zobrazovány jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizace v obsahu **Výkon skladu** v Power BI.
 
 | Stránka sestavy                 | Grafy                                   | popis |
 |-----------------------------|------------------------------------------|-------------|
@@ -79,7 +78,7 @@ Obsah **výkonu skladu** Power BI zahrnuje sestavu. Tato sestava obsahuje sadu m
 | Výkon expedice        | Expedováno podle pracoviště nebo skladu              | Procento dodávané předčasně, včas nebo pozdě podle pracoviště nebo skladu. |
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Informace o datovém modelu a výpočtech
-Následující data se používají k naplnění stránek sestavy v obsahu **Výkonnost skladu** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](power-bi-integration-entity-store.md).
+Následující data se používají k naplnění stránek sestavy v obsahu **Výkonn skladu** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
 
 Následujících klíčové měrné systémy agregace byly použity jako základ obsahu.
 
@@ -113,4 +112,3 @@ Následujících klíčové měrné systémy agregace byly použity jako základ
 | Výkon expedice        | Expedice podle produktu                       | CustPackingSlipOnTimeStatus           | Předčasně, Včas a Pozdě (viz dřívější popisy v této tabulce). |
 | Výkon expedice        | Expedováno podle odběratele                      | CustPackingSlipOnTimeStatus           | Předčasně, Včas a Pozdě (viz dřívější popisy v této tabulce). |
 | Výkon expedice        | Expedováno podle pracoviště nebo skladu              | CustPackingSlipOnTimeStatus           | Předčasně, Včas a Pozdě (viz dřívější popisy v této tabulce). |
-

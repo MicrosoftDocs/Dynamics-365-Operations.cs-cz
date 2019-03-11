@@ -1,13 +1,13 @@
 ---
-title: "Záporné storno"
-description: "Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku."
+title: Záporné storno
+description: Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-semaz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a9352b0a80d8c5fe013e951bd4380b87834c0030
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 1cdc57196c93cb30c7d0bfebca2e533ae6bd7d5a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/05/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370070"
 ---
-
 # <a name="storno-accounting"></a>Záporné storno
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ Záporné storno je praxe používání záporných čísel ke stornování pův
 *Záporné storno* je praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku. Vzhledem k tomu, že účetní obvykle zapisují položky záporného storna červeně, tento účetní standard se také označuje jako *červené storno*. Pomocí záporného storna můžete zrušit dokument s nesprávnými částkami, po zrušení byste však vždy měli zadat správnou částku dokumentu.
 
 ## <a name="example"></a>Příklad
-Účetní zaúčtuje fakturu dodavatele s částkou 1 200 Kč. Během procesu platby se zjistí, že účetní omylem zadal 1 200 Kč namísto 1 002 Kč. Účetní teď musí vytvořit storno původního dokumentu a následně vytvořit správnou fakturu na 1 002 Kč. Další informace získáte v části [Faktura od dodavatele](../accounts-payable/vendor-invoices-overview.md). Následující tabulka uvádí obecné záznamy pro Storno.
+Účetní zaúčtuje fakturu dodavatele s částkou 120 USD. Během procesu platby se zjistí, že účetní omylem zadal 120 USD, namísto 102 USD. Účetní teď musí vytvořit storno původního dokumentu a následně vytvořit správnou fakturu na 102 USD. Další informace získáte v části  [Faktura od dodavatele](../accounts-payable/vendor-invoices-overview.md). Následující tabulka uvádí obecné záznamy pro Storno.
 
 | **ID dokumentu** | **Účet** | **Má Dáti** | **Dal** | **Poznámka**                  |
 |-----------------|-------------|-----------|------------|------------------------------|
@@ -77,7 +76,7 @@ V tomto příkladu výpis zůstatku ukazuje následující.
 Všimněte si, že jsou zůstatky záporného účtování a storna stejné. Existuje rozdíl mezi debetním a kreditním obratem, protože opačný zápis způsobuje redundantní obrat debetu a kreditu. Opačný zápis se používá v zemích/oblastech, kde se obrat používá jen zřídka. Jiné země nebo oblasti používají záporné storno.
 
 ## <a name="partial-storno"></a>Částečná storno
-*Částečné storno* je účetní praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku. Některé země nebo oblasti umožňují používání částečného storna. Účetní například zaúčtuje fakturu dodavatele s částkou 1 200 Kč. Během procesu platby je zjištěno, že účetní omylem zadal nesprávnou číselnou řadu. Původní faktura na 1 002 Kč obsahovala chybu v číselné řadě. Pomocí částečného storna by měl účetní vytvořit storno na 180 Kč. Následující tabulka uvádí obecné záznamy pro částečné storno.
+*Částečné storno* je účetní praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku. Některé země nebo oblasti umožňují používání částečného storna. Účetní například zaúčtuje fakturu dodavatele s částkou 120 USD. Během procesu platby je zjištěno, že účetní omylem zadal nesprávnou číselnou řadu. Původní faktura na 102 USD obsahovala chybu v číselné řadě.Pomocí částečného storna by měl účetní vytvořit storno na 18 USD. Následující tabulka uvádí obecné záznamy pro částečné storno.
 
 | **ID dokumentu** | **Účet** | **Má Dáti** | **Kreditní** | **Poznámka**                  |
 |-----------------|-------------|-----------|------------|------------------------------|
@@ -94,13 +93,13 @@ V tomto příkladu výpis zůstatku ukazuje následující.
 | Nákupní vratka  | 102   | 0      | 102     |
 | Účet dodavatele | 0     | 102    | -102    |
 
-Částečné storno může vytvořit problém ve formuláři Tisk předlohy. Pokud existuje rozdíl mezi datem původního dokladu a datem storna, může být obtížné získat přesnou částku měny. V důsledku toho je částečné storno povoleno pouze pro určité dokumenty. Aplikace Microsoft Dynamics 365 for Operations poskytuje funkci částečného storna pro dokumenty a země/oblasti, kde je povoleno.
+Částečné storno může vytvořit problém ve formuláři Tisk předlohy.Pokud existuje rozdíl mezi datem původního dokladu a datem storna, může být obtížné získat přesnou částku měny. V důsledku toho je částečné storno povoleno pouze pro určité dokumenty. Microsoft Dynamics 365 for Operations poskytuje funkci částečného storna pro dokumenty a země/oblasti, kde je povoleno.
 
-## <a name="how-to-enter-storno-on-journal-lines"></a>Jak zadat storno na řádcích deníku
+## <a name="how-to-enter-stornoon-journal-lines"></a>Jak zadat storno na řádcích deníku
 Zadejte částku Má dáti nebo Dal se záporným znaménkem v řádku deníku k vytvoření položky storna. Pole **Oprava** je nastaveno během procesu zaúčtování. 
 
 ## <a name="how-storno-is-displayed"></a>Zobrazení storna
-Aplikace Dynamics 365 for Operations zpracovává záporné částky deníku speciálním způsobem. Položka hlavního deníku, transakce odběratele, transakce dodavatele a jiné transakce poskytují funkce storna, jak je uvedeno níže.
+Dynamics 365 for Operations zpracovává záporné částky deníku speciálním způsobem. Položka hlavního deníku, transakce odběratele, transakce dodavatele a jiné transakce poskytují funkce storna, jak je uvedeno níže.
 
 <table>
 <thead>
@@ -122,7 +121,7 @@ Aplikace Dynamics 365 for Operations zpracovává záporné částky deníku spe
 </thead>
 <tbody>
 <tr class="row-2">
-<td class="column-1"> Má Dáti</td>
+<td class="column-1"> Má Dáti</td>
 <td class="column-2">Žádný</td>
 <td class="column-3">0. &gt;</td>
 <td class="column-4" align="right">Množství</td>
@@ -132,7 +131,7 @@ Aplikace Dynamics 365 for Operations zpracovává záporné částky deníku spe
 <td class="column-8">Zvýšení</td>
 </tr>
 <tr class="row-3">
-<td class="column-1"> Kreditní</td>
+<td class="column-1"> Kreditní</td>
 <td class="column-2">Žádný</td>
 <td class="column-3">0. &lt;</td>
 <td class="column-4" align="right">-Částka</td>
@@ -169,6 +168,5 @@ Můžete upravit zobrazení storna pro formuláře, tabulky, sloupce a pole. Nap
 ![Částky storna položky deníku](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Jak dokumenty vytvářejí storno
-Některé dokumenty vytvářejí transakce zrušení. Následující přecenění cizí měny pro hlavní knihu, závazky a dokumenty pohledávek stornují nerealizovaé zisky a ztráty. Podrobnější informace získáte v tématu [Přecenění cizí měny pro hlavní knihu](../general-ledger/foreign-currency-revaluation-general-ledger.md) nebo [Závazky a pohledávky](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Po vytvoření transakce zrušení budou vytvořeny nové transakce s nerealizovanými zisky a ztrátami. Transakce zrušení jsou vytvořeny také pro zásoby. Další informace naleznete v tématu [Uzávěrka zásob](../../supply-chain/cost-management/inventory-close.md). Existují dokumenty, které umožňují zrušení dříve zaúčtovaného dokladu. Uživatel může například vytvořit dobropis ke zrušení dříve vytvořené faktury. Dokumenty používají specifické parametry pro vytváření zpětných transakcí nebo transakcí storna. Například přecenění cizí měny vytvoří transakce zpětného zápisu nebo storna na základě parametru opravy hlavní knihy. Dobropis odběratele vytvoří zpětné transakce nebo transakce storna na základě parametru opravy dobropisu závazků.
-
+Některé dokumenty vytvářejí transakce zrušení. Následující přecenění cizí měny pro hlavní knihu, závazky a dokumenty pohledávek stornují nerealizovaé zisky a ztráty. Podrobnější informace získáte v tématu [Přecenění cizí měny pro hlavní knihu](../general-ledger/foreign-currency-revaluation-general-ledger.md) nebo [Závazky a pohledávky](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Po vytvoření transakce zrušení budou vytvořeny nové transakce s nerealizovanými zisky a ztrátami. Transakce zrušení jsou vytvořeny také pro zásoby. Další informace naleznete v tématu  [Uzávěrka zásob](../../supply-chain/cost-management/inventory-close.md). Existují dokumenty, které umožňují zrušení dříve zaúčtovaného dokladu. Uživatel může například vytvořit dobropis ke zrušení dříve vytvořené faktury. Dokumenty používají specifické parametry pro vytváření zpětných transakcí nebo transakcí storna. Například přecenění cizí měny vytvoří transakce zpětného zápisu nebo storna na základě parametru opravy hlavní knihy. Dobropis odběratele vytvoří zpětné transakce nebo transakce storna na základě parametru opravy dobropisu závazků.
 

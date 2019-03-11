@@ -1,32 +1,30 @@
 ---
-title: "Správa servisu"
-description: "Za pomoci správy servisu můžete sestavit servisní smlouvy a předplatné služeb, zpracování servisních zakázek, dotazů odběratelů a ke správě a analýze poskytování služeb odběratelům."
+title: Správa servisu
+description: Za pomoci správy servisu můžete sestavit servisní smlouvy a předplatné služeb, zpracování servisních zakázek, dotazů odběratelů a ke správě a analýze poskytování služeb odběratelům.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 80a3cb74279f72e8cb94f3a2c38230f409067a47
 ms.openlocfilehash: 89035687d87c674cca7fa5fd3126100c4c0ad892
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343804"
 ---
-
-
 # <a name="service-management"></a>Správa servisu 
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +48,7 @@ Pomocí nástrojů pro vykazování můžete sledovat marže ze servisní objedn
 
 ## <a name="business-processes"></a>Obchodní procesy
 
-Následující diagram znázorňuje vysoké úrovně obchodních procesů pro **řízení servisu** a zobrazí, kde se procesy služby integrují s jinými moduly v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Následující diagram znázorňuje obchodní procesy vysoké úrovně pro **řízení služeb** a popisuje, kde se procesy služby integrují v jiných modulech v aplikaci Microsoft Dynamics 365 for Finance and Operations.
 
 [![Diagram obchodního procesu Správa služby](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
@@ -72,5 +70,4 @@ Následující diagram znázorňuje vysoké úrovně obchodních procesů pro **
   - [Lidské zdroje](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/index)
 
   
-
 

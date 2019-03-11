@@ -1,13 +1,13 @@
 ---
-title: "Konfigurace a práce s blokováním objednávek kontaktního střediska"
-description: "Toto téma popisuje, jak pracovat s blokováním objednávek pomocí aplikace Microsoft Dynamics 365 for Retail."
+title: Konfigurace a práce s blokováním objednávek kontaktního střediska
+description: Toto téma popisuje, jak pracovat s blokováním objednávek pomocí aplikace Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ba8fade84358c960dcfd1e8d9ffef1ffede34871
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335294"
 ---
-
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurace a práce s blokováním objednávek kontaktního střediska
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce blokování objednávky, které má aplikace Microsoft Dynamics 365 for Retail pro objednávky kontaktního střediska
+Toto téma popisuje funkce blokování objednávky, které má aplikace Microsoft Dynamics 365 for Retail pro objednávky kontaktního střediska.
 
 ## <a name="configuring-call-center-order-holds"></a>Konfigurace blokování objednávek kontaktního střediska
 
@@ -104,4 +103,3 @@ Pokud uživatelé chtějí vymazat blokování a provést ještě další změny
 ## <a name="reporting-options"></a>Možnosti vykazování
 
 Přejděte na **Maloobchod** \> **Dotazy a sestavy** \> **Sestavy kontaktního střediska** \> **Sestavy blokování objednávky** a spusťte sestavu týkající se blokování objednávek podle rozsahu dat, kódu blokování nebo jiných souvisejících kritérií.
-

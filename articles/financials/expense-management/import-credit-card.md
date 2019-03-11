@@ -1,13 +1,13 @@
 ---
-title: "Import a udržování transakce platební karty"
-description: "Toto téma vysvětluje postup, jak importovat a udržovat transakce platební karty týkající se výdajů. Tyto transakce lze nastavit tak, aby byly automaticky importovány v opakovaném plánování, nebo ručně importovány podle potřeby."
+title: Import a udržování transakce platební karty
+description: Toto téma vysvětluje postup, jak importovat a udržovat transakce platební karty týkající se výdajů. Tyto transakce lze nastavit tak, aby byly automaticky importovány v opakovaném plánování, nebo ručně importovány podle potřeby.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPbsMainDataLines
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 9674cf495b7fdd40d8672580b9d10e9ebe626bb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e640c9e44add5599be4a2e381b4ffd81f212889c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322644"
 ---
-
 # <a name="import-and-maintain-credit-card-transactions"></a>Import a udržování transakce platební karty
 
 [!include [banner](../includes/banner.md)]
@@ -53,4 +52,3 @@ Další informace o datových entitách naleznete v tématu [Datové entity](../
 Po ukončení záznamu zaměstnance je zakázán zaměstnancův účet služby Active Directory Domain Services (AD DS). Mohou však existovat aktivní transakce platební karty, které musí být ještě zaneseny do výdajů a uhrazeny. Ze stránky **Transakce platebních karet** můžete opět přiřadit zaměstnance k libovolné transakci platební karty, pokud byl související zaměstnanec propuštěn.
 
 Vyberte jednu nebo více transakcí platebních karet a poté vyberte **Opětovně přiřadit transakce**. Poté můžete vybrat jiného zaměstnance, ke kterému přiřadíte transakce platebních karet. Poté, co opět přiřadíte transakce platební karty, můžete je vybrat pro sestavu výdajů a zaplatit běžným procesem pro uhrazení vyúčtování výdajů.
-

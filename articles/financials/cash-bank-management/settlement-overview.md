@@ -1,13 +1,13 @@
 ---
-title: "Přehled vyrovnání"
-description: "V tomto článku jsou obecné informace o procesu vyrovnání. Popisuje typy transakcí, které lze vyrovnat, kdy a jak lze transakce vyrovnat, a jaké jsou výsledky procesu vyrovnání."
+title: Přehled vyrovnání
+description: V tomto článku jsou obecné informace o procesu vyrovnání. Popisuje typy transakcí, které lze vyrovnat, kdy a jak lze transakce vyrovnat, a jaké jsou výsledky procesu vyrovnání.
 author: kweekley
 manager: AnnBe
 ms.date: 12/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -17,15 +17,14 @@ ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 9b82c6afa2812344ff8200e227ee8c5f2451584f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/06/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338284"
 ---
-
 # <a name="settlement-overview"></a>Přehled vyrovnání
 
 [!include [banner](../includes/banner.md)]
@@ -55,5 +54,4 @@ Pokud [je platba menší než částka faktury](../accounts-payable/vendor-payme
 
 ## <a name="additional-resources"></a>Další prostředky
 - [Vyrovnání zůstatku](settle-remainder.md)
-
 

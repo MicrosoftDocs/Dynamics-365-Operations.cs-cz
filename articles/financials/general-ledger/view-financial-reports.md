@@ -1,13 +1,13 @@
 ---
-title: "Zobrazit finanční sestavy"
-description: "Tento článek vysvětluje, jak zobrazit a zkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují."
+title: Zobrazit finanční sestavy
+description: Tento článek popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 author: kweekley
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d9c7bcb8cae7b17636ffc0c87bb1147b9d27a6c8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312938"
 ---
-
 # <a name="view-financial-reports"></a>Zobrazit finanční sestavy
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek vysvětluje, jak zobrazit a zkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
+Tento článek popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 
 <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
 ----------------------------
@@ -84,11 +83,10 @@ Po dokončení nastavení možností tisku sestavu vytisknete kliknutím na tla�
 ## <a name="export-a-financial-report"></a>Exportování finanční sestavy
 Chcete-li finanční sestavu exportovat, v podokně akcí klikněte na tlačítko **Exportovat**. Sestava se exportuje do aplikace Microsoft Excel a prohlížeč zobrazí výzvu k otevření nebo uložení exportovaného souboru. V exportované sestavě se použijí nastavení exportu definovaná v návrhu sestavy.    
 
-<a name="additional-resources"></a>Další zdroje
+<a name="additional-resources"></a>Další prostředky
 --------
 
-[Finanční výkaznictví pro aplikaci Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
-
+[Finanční výkaznictví pro Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Převedení materiálu s kanbanovými úlohami"
-description: "Tento postup se zaměřuje na provádění kanbanové úlohy pro výběr umožňující převod materiálu."
+---
+title: Převedení materiálu s kanbanovými úlohami
+description: Tento postup se zaměřuje na provádění kanbanové úlohy pro výběr umožňující převod materiálu.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: a2db7b9fb960beb5b4a851aabb9f28a0f9e3d3da
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367425"
 ---
 # <a name="transfer-materials-with-kanban-jobs"></a>Převedení materiálu s kanbanovými úlohami
 
@@ -65,5 +65,4 @@ Tento postup se zaměřuje na provádění kanbanové úlohy pro výběr umožň
     * Nyní jsou vybrány dvě úlohy převodu – na řádku 4 a 5.  
 2. Klikněte na tlačítko Dokončit.
     * Tímto dokončíte převod obou úloh.  
-
 

@@ -1,14 +1,14 @@
 ---
-title: "Správa prodejní ceny v aplikaci Retail"
-description: "Toto téma popisuje koncepty pro vytváření a správu prodejních cen v aplikaci Microsoft Dynamics 365 for Retail."
+title: Správa prodejní ceny v aplikaci Retail
+description: Toto téma popisuje koncepty pro vytváření a správu prodejních cen v aplikaci Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -17,19 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362135"
 ---
-
-# <a name="retail-sales-price-management"></a>Správa prodejní ceny v aplikaci Retail
+# <a name="retail-sales-price-management"></a>Správa maloobchodní prodejní ceny
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje informace o procesu vytváření a správy prodejních cen v aplikaci Microsoft Dynamics 365 for Retail. zaměřuje se na koncepty, které jsou zahrnuty v tomto procesu, a na dopady různých možností konfigurace na prodejní ceny.
+Toto téma obsahuje informace o procesu vytváření a správy prodejních cen v Microsoft Dynamics 365 for Retail. zaměřuje se na koncepty, které jsou zahrnuty v tomto procesu, a na dopady různých možností konfigurace na prodejní ceny.
 
 ## <a name="terminology"></a>Terminologie
 
@@ -202,7 +201,7 @@ Pro snadnou aktualizaci cen různých produktů z různých kategorií produktů
 
 ## <a name="best-practices"></a>Doporučené postupy
 
-Microsoft SQL Server Express se často používá pro databáze kanálů z důvodu nákladů (zdarma). Mějte na paměti, že SQL Server Express má omezení hardwaru a limity velikosti dat. Pokud neplánujete správně, můžete rychle odosáhnout limitů velikosti dat SQL Server Express. Tento předpoklad platí nejen pro ceny, ale i pro jiné oblasti produktu. Zde je několik doporučených postupů, které mohou pomoci snížit velikost vašich dat:
+Microsoft SQL Server se často používá pro databáze kanálů z důvodu nákladů (zdarma). Mějte na paměti, že SQL Server Express má omezení hardwaru a limity velikosti dat. Pokud neplánujete správně, můžete rychle odosáhnout limitů velikosti dat SQL Server Express. Tento předpoklad platí nejen pro ceny, ale i pro jiné oblasti produktu. Zde je několik doporučených postupů, které mohou pomoci snížit velikost vašich dat:
 
 - Pokud používáte obchodní smlouvy a vaše ceny se mění, měli byste nechat staré obchodní smlouvy vypršet nastavením koncového data. V průběhu času tento přístup pomáhá snížit počet obchodních smluv, které jsou uloženy v databázi kanálů. Pomáhá také snížit množství dat, s nimiž algoritmus výpočtu cen musí pracovat.
 - Pokud se vaše ceny liší podle varianty produktu, zvažte použití základní ceny produktu jako ceny nejběžnější varianty. Poté použijte obchodní smlouvy pouze pro ceny variant, které jsou výjimkami. Tento postup umožňuje snížit počet záznamů obchodních smluv. Protože je snadné importovat data do aplikace Microsoft Dynamics 365, můžete být v pokušení importovat obchodní smlouvu pro každou variantu každého produktu. Tento přístup však může vytvořit mnoho obchodních smluv se stejnou hodnotou. To může zbytečně zvýšit velikost vašich dat.
@@ -212,7 +211,7 @@ Microsoft SQL Server Express se často používá pro databáze kanálů z důvo
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Ceny, které zahrnují daň, a ceny bez daně
 
-Při nastavení prodejních cen v aplikaci Microsoft Dynamics 365, nezadáváte, zda hodnota ceny, kterou nastavujete, zahrnuje daň či nikoliv. Hodnotou je pouze cena. Nicméně nastavení **Cena včetně DPH** na maloobchodních kanálech vám umožňuje nakonfigurovat maloobchodní kanály tak, aby buď zahrnovaly nebo nezahrnovaly daň z ceny. Toto nastavení se nastavuje na kanálu a může se změnit i v jedné společnosti.
+Při nastavení prodejních cen v aplikaci Microsoft Dynamics 365 nezadáváte, zda hodnota ceny, kterou nastavujete, zahrnuje daň či nikoliv. Hodnotou je pouze cena. Nicméně nastavení **Cena včetně DPH** na maloobchodních kanálech vám umožňuje nakonfigurovat maloobchodní kanály tak, aby buď zahrnovaly nebo nezahrnovaly daň z ceny. Toto nastavení se nastavuje na kanálu a může se změnit i v jedné společnosti.
 
 Pokud pracujete s oběma typy zahrnuté a nezahrnuté daně, je velmi důležité správné nastavení ceny, vzhledem k tomu, že celková částka, kterou zákazník platí, se změní, pokud se změní nastavení **Cena včetně DPH** na kanálu.
 
@@ -232,4 +231,3 @@ Maloobchodní cenový modul nepodporuje následující cenové funkce:
 
 - Cena je založena na dimenzích produktu, v pořadí od nejkonkrétnější ceny varianty přes nejméně konkrétní cenu varianty, po cenu základního produktu. Cena, která je nastavena pomocí dvou dimenzí produktu (například barva a velikost), se používá před cenou, která je nastavena pomocí pouze jedné dimenze produktu (například velikost).
 - Stejnou cenovou skupinu lze použít ke kontrole cen a slev.
-

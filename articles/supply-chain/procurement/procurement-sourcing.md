@@ -1,13 +1,13 @@
 ---
-title: "Domovská stránka modulu Zásobování a zdroje"
-description: "V tomto tématu je seznam témat nápovědy a dalších zdrojů, které jsou k dispozici pro Zásobování a zdroje."
+title: Domovská stránka modulu Zásobování a zdroje
+description: V tomto tématu je seznam témat nápovědy a dalších zdrojů, které jsou k dispozici pro Zásobování a zdroje.
 author: mkirknel
 manager: AnnBe
 ms.date: 09/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 091b50c26cf596fc03e42f60fc662b8d1f25f06b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338583"
 ---
-
 # <a name="procurement-and-sourcing-home-page"></a>Domovská stránka modulu Zásobování a zdroje
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,7 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 -   [Spolupráce dodavatelů s odběrateli](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md)
 -   [Nastavení a správa dodavatelské spolupráce](set-up-maintain-vendor-collaboration.md)
--   [Ukázkový skript příchozích zásob dodávky Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)
+-   [Ukázkový skript příchozích zásob dodávky pro Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)
 -   [Sledování zásob dodávky s použitím dodavatelské spolupráce](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md) (pouze verze Dynamics AX z února a května 2016)
 -   [Konfigurace zabezpečení pro uživatele na portálu pro dodavatele](configure-security-vendor-portal-users.md) (pouze verze Finance and Operations z února a května 2016)
@@ -102,7 +101,6 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 -   [Definování workflowů pracovních postupů pro nákupní žádanky](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (dokumentace)
 -   [Zásady nákupu](purchase-policies.md)
 -   [Vytvoření zásad nákupu](tasks/create-purchasing-policies.md)
-
 
 
 

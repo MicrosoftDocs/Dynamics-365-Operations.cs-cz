@@ -1,13 +1,13 @@
 ---
-title: "Konfigurační klíče a datové entity"
-description: "Toto téma popisuje vztah mezi konfiguračními klíči a datovými entitami v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Konfigurační klíče a datové entity
+description: Toto téma popisuje vztah mezi konfiguračními klíči a entitami dat v Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8d07a0572e56e97d42c0e1b841905f828edc6f51
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336467"
 ---
-
 # <a name="configuration-keys-and-data-entities"></a>Konfigurační klíče a datové entity
 
 [!include [banner](../includes/banner.md)]
@@ -96,4 +95,3 @@ S použitím metadat konfiguračního klíče vytvořeného během seznamu obnov
 Kdykoli aktualizujete konfigurační klíče na entitě, úrovni tabulek nebo polí, seznam entit v platformě správy dat musí být aktualizován. Tento proces zajišťuje, aby platforma vzala nejnovější nastavení konfiguračního klíče. Dokud nebude obnoven seznam entit, bude se zobrazovat na stránce seznamu entit následující upozornění. Aktualizované změny konfiguračního klíče se projeví okamžitě po aktualizaci seznamu entit. Doporučujeme ověřit existující datové projekty a úlohy, abyste se ujistili, že fungují podle očekávání poté, co změny konfiguračních klíčů začaly být účinné.
 
 ![Cílová pole](./media/Target_fields_3.png)
-

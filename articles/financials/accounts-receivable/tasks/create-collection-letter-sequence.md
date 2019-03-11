@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření posloupnosti upomínek"
-description: "Tento průvodce úkolem slouží k vytvoření posloupnosti upomínek."
+---
+title: Vytvoření posloupnosti upomínek
+description: Tento průvodce úkolem slouží k vytvoření posloupnosti upomínek.
 author: mikefalkner
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: db5264f6d8d7723ff01d13e99728c2bfebcb4515
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6331c3680169b305c4bfbfada4ba106b619be092
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311558"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Vytvoření posloupnosti upomínek
 
@@ -65,5 +65,4 @@ Tento průvodce úkolem slouží k vytvoření posloupnosti upomínek. Tento úk
 26. Rozbalte pevnou záložku Poznámka.
 27. Zadejte text, který se má zobrazit v upomínce pro vybraný kód upomínky.
     * Tento text lze přeložit do několika jazyků pomocí nabídky Překlady nad polem.  
-
 

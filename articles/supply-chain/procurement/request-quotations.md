@@ -1,13 +1,13 @@
 ---
-title: "Požadavky na nabídku"
-description: "Toto téma obsahuje přehled požadavků na nabídku. Organizace vygenerují požadavek na nabídku v případě, že chtějí získat konkurenční nabídky od několika dodavatelů, týkající se zboží nebo služeb, které musí nakoupit."
+title: Požadavky na nabídku
+description: Toto téma obsahuje přehled požadavků na nabídku. Organizace vygenerují požadavek na nabídku v případě, že chtějí získat konkurenční nabídky od několika dodavatelů, týkající se zboží nebo služeb, které musí nakoupit.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 714715ccfbdd57e4450c301f5302e008c0c136b1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 9b840f5511f6a0df0e9ce3db4be69a0ab4ec3261
-ms.openlocfilehash: 8d7b07027443d1ca3894ccb7ed7f3cf49a4dc3e3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 06/21/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351279"
 ---
-
 # <a name="requests-for-quotation-rfqs"></a>Požadavky na nabídku
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,7 @@ Případ požadavku na nabídku můžete vytvořit z plánovaných objednávek, 
 
 Po přípravě případu požadavku na nabídku a přidání dodavatelů vyberte **Odeslat** (**Odeslat a publikovat** pro veřejný sektor) v případu požadavku na nabídku. Deník požadavku na nabídku se vygeneruje pro každého dodavatele, kterému jste odeslali požadavek na nabídku. Můžete nakonfigurovat možnosti tisku pro akci Odeslat, aby se buď vytiskla sestava pro každého dodavatele do archivu nebo odeslala sestava na e-mailovou adresu každého dodavatele. Deník požadavku na nabídku pro každého dodavatele lze navíc použít k vytvoření sestavy, kterou lze odeslat nebo později znovu odeslat dodavateli. Také můžete nakonfigurovat akci Odeslat, aby se vygeneroval list odpovědí, který mohou dodavatelé vyplnit.
 
-V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li váš systém nastaven pro dodavatelskou spolupráci, dodavatelé mohou zadat nabídky přímo do aplikace Microsoft Dynamics 365 for Finance and Operations. Další informace viz [Spolupráce dodavatelů se zákazníky](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
+V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li systém nastaven pro spolupráci dodavatelů, mohou dodavatelé zadávat nabídky přímo v aplikaci Microsoft Dynamics 365 for Finance and Operations. Další informace viz [Spolupráce dodavatelů se zákazníky](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
 
 Pokud musíte změnit požadavek na nabídku po jeho odeslání, můžete opět odeslat požadavek na nabídku dodavatelům po jeho dokončení s použitím dvou akcí úprav: Vytvoření a Dokončení.+
 
@@ -58,7 +57,7 @@ Jakmile obdržíte nabídky e-mailem, můžete s nimi pracovat na stránce **Odp
 Pokud je druhá iterace odpovědi vyžadována od dodavatele, zvolte **Vrácení** na stránce **Odpověď na požadavek na nabídku**. Akce Vrácení vytvoří nový deník a sestavu, která bude vytištěna, archivována a odeslána podle nastavení tisku.
 
 > [!NOTE]
-> Název stránky **požadavek na nabídku** se změnil. V předchozích verzích aplikace Dynamics 365 for Finance and Operations měla tato stránka název **Požadavek na odpověď nabídky**.
+> Název stránky **požadavek na nabídku** se změnil. V dřívějších verzích aplikace Dynamics 365 for Finance and Operations se tato stránka nazývala **Požadavky na odpovědi na nabídku**.
 
 Pokud jste přidali kritéria hodnocení do případu požadavku na nabídku, požadavek na nabídku bude mít panel hodnocení, kde můžete zadat výsledky. Celkové hodnocení se zobrazí na RFQ a při porovnání odpovědí na stránce **Porovnat odpovědi**. Na stránce **Porovnat odpovědi** můžete také porovnat jiná data odpovědi, například řádkovou cenu, datum dodání a celkovou cenu.
 
@@ -268,5 +267,4 @@ V následujícím příkladu se můžete podívat na nejvyšší a nejnižší s
 |------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|-------------------------------------------------|----------------------------------------------|-----------------------------------------------|
 | Přijměte jednu z nabídek. (nebo alespoň jeden řádek) |                          Přijato                           |                           Akceptováno                           |                    Přijato                    |                    Akceptováno                     |                   Přijato                   |                   Akceptováno                    |
 |           Odmítněte všechny ostatní nabídky.           |                          Odmítnuto                           |                           Akceptováno                           |                    Odmítnuto                    |                    Akceptováno                     |                   Odmítnuto                   |                   Přijato                    |
-
 

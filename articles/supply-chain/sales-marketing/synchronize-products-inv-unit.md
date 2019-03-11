@@ -1,37 +1,36 @@
 ---
-title: "Synchronizace produktů s jednotkou zásob z aplikace Finance and Operations do služby Field Service"
-description: "Toto téma popisuje šablony a základní úlohu, které se používají k synchronizaci produktů s jednotkou zásob z aplikace Microsoft Dynamics 365 for Finance and Operations do aplikace Microsoft Dynamics 365 for Field Service."
+title: Synchronizace produktů s jednotkou zásob z aplikace Finance and Operations do služby Field Service
+description: Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů se skladovou jednotkou z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 12/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.translationtype: HT
-ms.sourcegitcommit: 8c6cb481f1a3fe48d329c5936118d8df88a4175b
 ms.openlocfilehash: 5d3767c1a499f3d888d8fc2ce06c2837442e39f0
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359237"
 ---
-
-# <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Synchronizace produktů s jednotkou zásob z aplikace Finance and Operations do služby Field Service
+# <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Synchronizace produktů ve skladové jednotce z aplikace Finance and Operations do služby Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablony a základní úlohu, které se používají k synchronizaci produktů s jednotkou zásob z aplikace Microsoft Dynamics 365 for Finance and Operations do aplikace Microsoft Dynamics 365 for Field Service.
+Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů se skladovou jednotkou z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
 
 [![Synchronizace obchodních procesů mezi aplikacemi Finance a Operations and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
@@ -62,4 +61,3 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 ### <a name="field-service-products-with-inventory-unit-finance-and-operations-to-field-service-products"></a>Produkty Field Service s jednotkou zásob (Finance and Operations do Field Service): produkty
 
 [![Mapování šablony v integraci dat](./media/FSProduct1.png)](./media/FSProduct1.png)
-

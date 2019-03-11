@@ -1,13 +1,13 @@
---- 
-title: "Nastavení hierarchie kategorií zásobování"
-description: "Tento postup popisuje vytvoření nových uzlů v hierarchii kategorií zásobování a konfiguraci kategorie zásobování pro použití v procesu zásobování."
+---
+title: Nastavení hierarchie kategorií zásobování
+description: Tento postup popisuje vytvoření nových uzlů v hierarchii kategorií zásobování a konfiguraci kategorie zásobování pro použití v procesu zásobování.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/06/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 01809a8a3256342682d8a9cfb296a355310fe4ed
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ad5c8552a6989e9093d0b1325754bc0f6d19372
-ms.openlocfilehash: 4541d029c9c3be3ee42332e5d8ff183dd503f13e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/06/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334512"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Nastavení hierarchie kategorií zásobování
 
@@ -74,5 +74,4 @@ Tento postup popisuje vytvoření nových uzlů v hierarchii kategorií zásobov
 6. Rozbalte oddíl Stránka kategorie.
     * Stránky kategorie jsou vytvořeny na stránce Hierarchie kategorií. Obsahují informace o kategorii zásobování, jako jsou informace o typu produktů v kategorii, obrázky produktů v kategorii a oznámení, jako např. prodej nebo sleva, které jsou v kategorii k dispozici. Informace na stránce kategorie budou zobrazeny na nákupní žádance.  
 7. Zavřete stránku.
-
 

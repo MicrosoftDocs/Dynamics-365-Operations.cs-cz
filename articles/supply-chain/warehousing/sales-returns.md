@@ -1,13 +1,13 @@
 ---
-title: "Prodejní vratky"
-description: "Toto téma obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob."
+title: Prodejní vratky
+description: Toto téma obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d4da2ed8d61ffae3a4a4dc24793d82de22e86e59
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362687"
 ---
-
 # <a name="sales-returns"></a>Prodejní vratky
 
 [!include [banner](../includes/banner.md)]
@@ -329,7 +328,6 @@ V tomto příkladu je řádek objednávky vrácení vytvořen pomocí funkce **
 ![Řádek objednávky vrácení vytvořen pomocí funkce Najít prodejní objednávku ](./media/SalesReturn11.png)  
 
 >[Poznámka!] **Slevy** a **Nákladová cena vrácení** jsou správně nastaveny. Proto dojde k přesnému vzetí zpět faktury odběratele.
-
 
 
 

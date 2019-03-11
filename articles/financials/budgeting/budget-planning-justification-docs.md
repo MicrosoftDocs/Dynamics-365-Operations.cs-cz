@@ -1,13 +1,13 @@
 ---
-title: "Dokumenty odůvodnění plánování budgetu"
-description: "Dokumenty odůvodnění poskytují komentáře pro osoby požadující rozpočet k vysvětlení, proč je konkrétní rozpočet nezbytný."
+title: Dokumenty odůvodnění plánování budgetu
+description: Dokumenty odůvodnění poskytují komentáře pro osoby požadující rozpočet k vysvětlení, proč je konkrétní rozpočet nezbytný.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanJustificationTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cae6334cd39a91eaf3a2a79f30edc705f484bc8c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333569"
 ---
-
 # <a name="budget-planning-justification-documents"></a>Dokumenty odůvodnění plánování budgetu
 
 [!include [banner](../includes/banner.md)]
@@ -34,15 +33,15 @@ Dokumenty odůvodnění poskytují komentáře pro osoby požadující rozpočet
 
 Šablona plánu rozpočtu se vytváří správcem rozpočtu v aplikaci Microsoft Word a přiřazuje se k aktuálnímu procesu plánování rozpočtu. Vlastníci rozpočtu mohou potom otevřít šablonu a data v aplikaci Word se automaticky vyplní na základě jejich žádosti o rozpočet. Mohou poté přidat další text nebo data před uložením a přiložením svého přizpůsobeného dokumentu odůvodnění k plánu rozpočtu.
 
-##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Nastavení doplňku Microsoft Dynamics Office pro Microsoft Word
+##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Nastavení doplňku Office aplikace Microsoft Dynamics pro Microsoft Word
 
-1.  Otevřete nový dokument aplikace Microsoft Word.
+1.  Otevřete nový dokument Microsoft Word.
 2.  Klikněte na tlačítko **Vložit** na pásu karet a klikněte na **Obchod**.
 3.  Vyhledejte doplněk Microsoft Dynamics Office a klikněte na tlačítko **Přidat**.
 4.  V aplikaci Word klikněte v pravém podokně na možnost **Přidat informace serveru**.
 5.  Zadejte nebo vložte adresu URL serveru a klikněte na tlačítko **OK**.
 
-##### <a name="define-the-justification-template-in-microsoft-word"></a>Definování šablony odůvodnění v aplikaci Microsoft Word
+##### <a name="define-the-justification-template-in-microsoft-word"></a>Definování šablon odůvodnění v Microsoft Word
 
 1.  Klikněte na tlačítko **Návrh** v doplňku Microsoft Dynamics Office poté, co se přihlásíte.
 2.  Pro informace záhlaví použijte tlačítko **Přidat pole**.
@@ -69,7 +68,6 @@ Dokumenty odůvodnění poskytují komentáře pro osoby požadující rozpočet
 1.  V aplikaci Finance and Operations vytvořte nový plán rozpočtu nebo otevřete existující plán rozpočtu.
 2.  V rozevírací nabídce **Odůvodnění** vyberte **Vytvořit nové odůvodnění**.
 3.  Po vyplnění podrobností vyberte z rozevírací nabídky **Odůvodnění** možnost odeslání přizpůsobeného dokumentu.
-
 
 
 

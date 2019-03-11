@@ -1,13 +1,13 @@
 ---
-title: "Uspořádání zaměstnanců pomocí oddělení, prací a pozic"
-description: "Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje. Toto téma obsahuje koncepční informace o těchto prvcích."
+title: Uspořádání zaměstnanců pomocí oddělení, prací a pozic
+description: Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje. Toto téma obsahuje koncepční informace o těchto prvcích.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 ms.reviewer: rschloma
@@ -18,19 +18,17 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: 8b74542b85810409e062a42e323c0527711d562f
+ms.sourcegitcommit: 49a642cd5e0519e381ff558f59c993ee77f55108
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b2a79c42b67621272af8107661202ea2ce092193
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "374390"
 ---
-
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Uspořádání zaměstnanců pomocí oddělení, prací a pozic
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje. Toto téma obsahuje koncepční informace o těchto prvcích. 
 
@@ -165,7 +163,6 @@ Pro některé záznamy můžete určit budoucí změny tohoto záznamu. Následu
 </table>
 
 Můžete upravovat údaje uvedené v předchozí tabulce pro pozice nebo úlohy a zadat datum, kdy by se změny pozice pro vybrané úlohy měly projevit. Například pozice lze přiřadit pouze jednomu pracovníkovi, ale Sanjay Patel, který je přiřazený k pozici Účetní A odchází za dva týdny. Joe Healy nahradí Sanjay Patel po jeho odchodu. Přestože Sanjay je i nadále přiřazen na svoji pozici, můžete přiřadit Jan Healy na stejnou pozici tak, aby přiřazení nabylo platnosti až po posledním dni Sanjay.
-
 
 
 

@@ -1,28 +1,27 @@
 ---
-title: "Pracovní prostor kontrolního seznamu ověřování dat"
-description: "Pracovní prostor Kontrolní seznam ověřování dat umožňuje sledování procesů ověřování dat mezi společnostmi, oblastmi a osobami. Kontrolní seznam lze použít během nové implementace, po upgradu nebo po migraci."
+title: Pracovní prostor kontrolního seznamu ověřování dat
+description: Pracovní prostor Kontrolní seznam ověřování dat umožňuje sledování procesů ověřování dat mezi společnostmi, oblastmi a osobami. Kontrolní seznam lze použít během nové implementace, po upgradu nebo po migraci.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataValidationWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: dd758ac5698d84532c0b724485cc6f0da83bc8e0
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364182"
 ---
-
 # <a name="data-validation-checklist-workspace"></a>Pracovní prostor kontrolního seznamu ověřování dat
 
 [!include [banner](../includes/banner.md)]
@@ -59,4 +58,3 @@ Před použitím pracovního prostoru **Kontrolní seznam ověřování dat** je
 Pomocí oblastí úkolů seskupte úkoly ověřování dat do logických oblastí vlastnictví ve vaší organizaci. Například závazky, pohledávky a hlavní kniha mohou být použity jako oblasti úkolu.
 
 **Název položky nabídky** je spojen s pracovním úsilím úkolu a lze ho použít k přechodu přímo na přidruženou stránku z odkazu na úkol v pracovním prostoru. Například úloha ověřování dat pro spuštění sestavy **sledování splatnosti závazků** pro závazky lze spojit se stránkou **Sestava sledování splatnosti závazků**.
-

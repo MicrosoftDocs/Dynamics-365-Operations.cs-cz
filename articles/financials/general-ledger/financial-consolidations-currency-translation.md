@@ -1,14 +1,14 @@
 ---
-title: "Finanční konsolidace a převod měny"
-description: "Toto téma popisuje finanční konsolidace a převod měny v hlavní knize."
+title: Finanční konsolidace a převod měny
+description: Toto téma popisuje finanční konsolidace a převod měny v hlavní knize.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: 8427d53bac3216d362b2bf8983a847f069351b3b
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353993"
 ---
-
 # <a name="financial-consolidations-and-currency-translation"></a>Finanční konsolidace a převod měny
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vás provede přístupem, který používají aplikace Microsoft Dynamics 365 for Finance and Operations a finanční výkaznictví ke konsolidaci. Popisuje scénáře, které zahrnují výkaznictví několika společností, agregace, eliminaci a minoritní podíl. Také vysvětluje, jak postupovat v určitých situacích, jako jsou například scénáře, kdy mají právnické osoby jiná fiskálního období nebo jiné účtové osnovy.
+Toto téma vás provede přístupem, který používají Microsoft Dynamics 365 for Finance and Operations a finanční výkaznictví ke konsolidacím. Popisuje scénáře, které zahrnují výkaznictví několika společností, agregace, eliminaci a minoritní podíl. Také vysvětluje, jak postupovat v určitých situacích, jako jsou například scénáře, kdy mají právnické osoby jiná fiskálního období nebo jiné účtové osnovy.
 
 Toto téma bylo napsáno pro uživatele a funkční konzultanty a předpokládá, že čtenáři mají obecné znalosti aplikace Finance and Operations a finančního výkaznictví. Základní nastavení není zmíněno.
 
@@ -181,4 +180,3 @@ Zde jsou uvedeny některé scénáře konsolidace, které podporuje finanční v
 
 ## <a name="generating-consolidated-financial-statements"></a>Generování konsolidovaných finančních výkazů
 Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).
-

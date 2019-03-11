@@ -1,13 +1,13 @@
 ---
 title: Workflow dodavatele
-description: "Upravte informace o dodavateli a použijte k jejich schválení workflow."
+description: Upravte informace o dodavateli a použijte k jejich schválení workflow.
 author: mikefalkner
 manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 950a1852acf9f3e4747ce2d55738c0eb3a646897
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329682"
 ---
-
 # <a name="vendor-workflow"></a>Workflow dodavatele
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,7 @@ Než budete funkci workflow moci používat, musíte ji povolit.
 
 ## <a name="change-vendor-information-and-submit-the-changes-to-the-workflow"></a>Změna informace o dodavateli a odeslání změn do workflow
 
-Při změně pole, které je povoleno pro workflow, se zobrazí stránka **Navrhované změny**. Na této stránce se zobrazí původní hodnota tohoto pole a nová hodnota, kterou jste zadali. Pole, které jste změnili, se vrátí na původní hodnotu. Stavová zpráva také informuje o tom, že vaše změny nebyly odeslány. 
+Při změně pole, které je povoleno pro workflow, se zobrazí stránka **Navrhované změny**. Tato stránka zobrazí původní hodnotu pole a novou hodnotu, kterou jste zadali. Pole, které jste změnili, se vrátí na původní hodnotu. Stavová zpráva také informuje o tom, že vaše změny nebyly odeslány. 
 
 Vždy, když změníte pole, které je povoleno pro workflow, bude toto pole přidáno do seznamu na stránce **Navrhované změny**. Chcete-li zrušit navrženou hodnotu pro pole, použijte tlačítko **Zahodit** vedle pole v seznamu. Chcete-li zahodit všechny změny, použijte tlačítko **Zahodit všechny změny** v dolní části stránky. Vyberte **OK** a stránku zavřete.
 
@@ -61,5 +60,4 @@ Až budete mít alespoň jednu navrženou změnu, zobrazí se další dvě karty
 
     Stav na stránce se změní na **Změny čekající na schválení**.
 
-Workflow se řídí standardním procesem workflow v aplikaci Microsoft Dynamics 365 for Finance and Operations. Schvalovatel je přesměrován na stránku **Dodavatel**, kde můžete zkontrolovat změny na stránce **Navržené změny** a poté vybrat **Workflowu \> Schválit** ke schválení workflow. Po dokončení všech schvalování se aktualizují pole vámi navrženými hodnotami.
-
+Workflow postupuje podle standardního procesu workflow v aplikaci Microsoft Dynamics 365 for Finance and Operations. Schvalovatel je přesměrován na stránku **Dodavatel**, kde můžete zkontrolovat změny na stránce **Navržené změny** a poté vybrat **Workflowu \> Schválit** ke schválení workflow. Po dokončení všech schválení jsou pole aktualizována hodnotami, které jste navrhli.

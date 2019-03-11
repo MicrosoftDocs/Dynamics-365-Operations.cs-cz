@@ -1,13 +1,13 @@
 ---
-title: "Nákl. skupiny"
-description: "Nákladové skupiny poskytují základ pro segmentaci a analýzu nákladových příspěvků v rámci vypočtených nákladů na určitou vyráběnou položku (například nákladové příspěvky na materiál, práci a režii). Termín segmentace nákladových skupin má ve výrobním prostředí několik dalších synonym (například rozúčtování nákladů, dekompozice nákladů nebo klasifikace nákladů)."
+title: Nákl. skupiny
+description: Nákladové skupiny poskytují základ pro segmentaci a analýzu nákladových příspěvků v rámci vypočtených nákladů na určitou vyráběnou položku (například nákladové příspěvky na materiál, práci a režii). Termín segmentace nákladových skupin má ve výrobním prostředí několik dalších synonym (například rozúčtování nákladů, dekompozice nákladů nebo klasifikace nákladů).
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCostGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1f1f97981c33c72c71e055848e874002dad73813
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f44099c2ce30d917838733af072721dd79148d27
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337410"
 ---
-
 # <a name="cost-groups"></a>Nákl. skupiny
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Nákladové skupině může být přiřazen typ nákladové skupiny a chování 
 
 -   **Typ nákladové skupiny** − Ke každé nákladové skupině musí být přiřazen typ nákladové skupiny, který označuje nákladovou skupinu jako týkající se přímého materiálu, přímého outsorcingu nebo navržení jako nepřímé či nedefinované výroby. Nákladovou skupinu označenou jako týkající se přímého materiálu lze přiřadit k položkám. Nákladovou skupinu přímé výroby lze přiřadit k nákladovým kategoriím. Nákladová skupina přímého outsourcingu může být přiřazena k typu produktu služby, která umožňuje klasifikaci nákladů souvisejících s nákupem služby pro subdodavatelské aktivity. Nepřímou nákladovou skupinu lze přiřadit k nepřímým nákladům pro příplatky nebo sazby. Nákladovou skupinu, která je označena jako nedefinovaná, lze přiřadit k položkám, nákladovým kategoriím nebo nepřímým nákladům. Přiřazení typu nákladové skupiny slouží několika účelům. Zaprvé omezuje možnost přiřazení nákladové skupiny a zobrazení seznamu použitelných nákladových skupin. Za druhé poskytuje doplňkovou segmentaci pro účely vykazování. Za třetí jej lze použít pro přiřazení účtů hlavní knihy pro různé odchylky.
 -   **Chování** − Ke každé nákladové skupině lze volitelně přiřadit určité chování, které označuje danou nákladovou skupinu jako týkající se pevných nebo variabilních nákladů. Nákladová skupina s chováním s hodnotou Null je zpracována jako skupina variabilních nákladů. Přiřazení chování slouží pouze k účelům vykazování. Náklady lze například zobrazit s rozdělením na segmenty pevných a variabilních nákladů v nákladovém formuláři nebo na**Shrnutí nákladů podle skupiny nákladů**. Pokud přiřadíte podíl nastavení zisku pro každou nákladovou skupinu, výpočet kusovníku lze použít pro návrh prodejní ceny na základě vzorce: náklady plus přirážka.
-
 
 
 

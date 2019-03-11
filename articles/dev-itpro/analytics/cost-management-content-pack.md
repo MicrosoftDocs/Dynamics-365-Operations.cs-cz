@@ -1,13 +1,13 @@
 ---
-title: "Obsah správy nákladů v Power BI"
-description: "Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI."
+title: Obsah správy nákladů v Power BI
+description: Toto téma popisuje, co je součástí obsahu správy nákladů v Power BI.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -19,15 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f67b1c901267bdf79c94e4f4c698c8731c515bb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327796"
 ---
-
-# <a name="cost-management-power-bi-content"></a>Obsah správy nákladů v Power BI
+# <a name="cost-management-power-bi-content"></a>Obsah správy nákladů v Power BI
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,9 +35,9 @@ ms.lasthandoff: 08/13/2018
 Obsah **Řízení nákladů** v Microsoft Power BI je určen pro skladové účetní nebo osoby v rámci organizace, které zodpovídají za nebo se zabývají stavem zásob nebo nedokončenou výrobu (NV) nebo které jsou zodpovědné za nebo se zabývají analýzou odchylek standardních nákladů.
 
 > [!NOTE]
-> Obsah **Řízení nákladů** Power BI popisovaný v tomto v tomto tématu se týká aplikace Dynamics 365 for Finance and Operations 8.0.
+> Obsah **Řízení nákladů** v Power BI popsaný v tomto tématu se vztahuje na Dynamics 365 for Finance and Operations 8.0.
 > 
-> Sada obsahu Power BI **Řízení nákladů**, dostupná na serveru AppSource se již nepoužívá. Další informace o tomto odepsání uvádí [Sady obsahu Power BI dostupné na AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Sada obsahu **Řízení nákladů**v Power BI, dostupná na webu AppSource se již nepoužívá. Další informace o tomto odepsání uvádí [Sady obsahu Power BI dostupné na AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Tento obsah Power BI obsahuje kategorizovaný formát, který pomáhá sledovat výkon zásob a vizualizovat, jak jimi protékají náklady. Můžete získat manažerské informace, jako je například ukazatel obratu, počet dní, po který jsou zásoby na skladě, přesnost a "ABC-klasifikace" na preferované agregované úrovni (společnost, položka, skupina položek nebo webové stránky). Zpřístupněné informace lze použít také jako podrobný doplněk k finančnímu výkazu.
 
@@ -48,24 +47,24 @@ Po každé aktualizaci tabulky **CostObjectStatementCache** je nutné aktualizov
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
-Obsah Power BI **Řízení nákladů** se zobrazí v pracovním prostoru **Správa nákladů** a **Analýza nákladů**.
+Obsah **Řízení nákladů** v Power BI se zobrazí v pracovním prostoru **Správa nákladů** a **Analýza nákladů**.
 
 Pracovní prostor **Správa nákladů** obsahuje následující karty:
 
 - **Přehled** – na této kartě se zobrazují data aplikace.
 - **Stav účetnictví zásob** – na této kartě se zobrazuje obsah Power BI.
-- **Stav účetnictví výroby** – na této kartě se zobrazuje obsah Power BI.
+- **Stav účetnictví pro výrobu** – na této kartě se zobrazuje obsah Power BI.
 
 Pracovní prostor **Analýza nákladů** obsahuje následující karty:
 
 - **Přehled** – na této kartě se zobrazují data aplikace.
 - **Analýza účetnictví zásob** – na této kartě se zobrazuje obsah Power BI.
-- **Analýza účetnictví výroby** – na této kartě se zobrazuje obsah Power BI.
+- **Analýza účetnictví pro výrobu** – na této kartě se zobrazuje obsah Power BI.
 - **Analýza odchylky st. nákladů** – na této kartě se zobrazuje obsah Power BI.
 
 ## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Stránky sestav, které jsou součástí obsahu Power BI
 
-Obsah Power BI **Správa nákladů** obsahuje sadu stránek sestavy, které sestávají ze sady metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. 
+Obsah **Správa nákladů** v Power BI obsahuje sadu stránek sestavy, které sestávají ze sady metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. 
 
 Následující tabulky poskytují přehled vizualizace v obsahu **správy nákladů** v Power BI.
 
@@ -173,7 +172,7 @@ Následující tabulky poskytují přehled vizualizace v obsahu **správy nákla
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 
-Data z aplikace Microsoft Dynamics 365 for Finance and Operations se používají k vyplnění stránek sestavy obsahu Power BI **Řízení nákladů**. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze serveru Microsoft SQL optimalizovaná pro analýzy. Další informace naleznete v tématu [Integrace Power BI úložištěm entit](power-bi-integration-entity-store.md).
+Data z aplikace Microsoft Dynamics 365 for Finance and Operations se používají k naplnění stránek sestav v obsahu **Správa nákladů** v Power BI. Tato data jsou reprezentována jako měrné systémy agregace, které jsou rozfázovány v úložišti entit, což je databáze Microsoft SQL Server optimalizována pro analýzy. Další informace naleznete v tématu [Integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
 
 Klíčová agregovaná opatření následujících objektů se používají jako základ obsahu Power BI.
 
@@ -186,7 +185,7 @@ Klíčová agregovaná opatření následujících objektů se používají jako
 
 Následující tabulka zobrazuje klíčová vypočítaná měření v obsahu Power BI.
 
-| Výměra                            | Výpočet |
+| Vyhodnocení                            | Výpočet |
 |------------------------------------|-------------|
 | Počáteční zůstatek                  | Počáteční zůstatek = \[Koncový zůstatek\]-\[Čistá změna\] |
 | Množství počátečního zůstatku             | Množství Počáteční zůstatek = \[Množství Koncový zůstatek\]-\[Množství Čistá změna\] |
@@ -209,4 +208,3 @@ Následující tabulka uvádí klíčové dimenze, které se používají jako f
 | Právnické osoby                                          | Jména právnické osoby                              |
 | Fiskální kalendáře                                        | Fiskální kalendář, rok, čtvrtletí, období, měsíc   |
 | Pracoviště                                                    | ID, název, adresa, stát, země               |
-

@@ -1,52 +1,51 @@
 ---
-title: "Srovnání funkcí cloudu a on-premises"
-description: "Toto téma popisuje funkce, které jsou podporovány v cloudu a instalaci on-premises."
+title: Srovnání funkcí cloudu a on-premises
+description: Toto téma popisuje funkce, které jsou podporovány v cloudu a instalaci on-premises.
 author: robinarh
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
+ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 596cfa056c6f2e64f554b643bb5a61d09c7bf20c
-ms.openlocfilehash: 58bba3dead4d2a8ed3ae424694377e410df16f4c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313973"
 ---
-
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Srovnání funkcí cloudu a on-premises
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma popisuje, zda jsou konkrétní funkce k dispozici v těchto produktech:
 
-+ Aplikace Dynamics 365 for Finance and Operations (cloud)
-+ Řešení problémů aplikace Dynamics 365 for Finance and Operations (místní)
++ Dynamics 365 for Finance and Operations (cloud)
++ Dynamics 365 for Finance and Operations (on-premises)
 
 Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-premise je uvedena pro funkci jako celek. Tam, kde se konkrétní funkce liší od celkové oblasti, jsou funkce uvedeny na odděleném řádku ve sloupci Funkce.
 
 ## <a name="dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations
 
-| Plošný | Funkce | Cloudový | Místní |
+| Oblast | Funkce | Cloudový | Místní |
 |---|---|---|---|
 | Dodržování předpisů a certifikáty | | Ano | Ano |
-| | SOC 1 Typ 1 certifikace | Ano | Ne |
+| | SOC 1 Typ 1 certifikace | Ano | Žádný |
 | Nákladové účetnictví | | Ano | Ano |
-| | Balíček obsahu Nákladové účetnictví pro Power BI | Ano | Ne |
-| | Pracovní prostor nákladového účetnictví pro mobilní aplikaci | Ano | Ne |
+| | Balíček obsahu Nákladové účetnictví pro Power BI | Ano | Žádný |
+| | Pracovní prostor nákladového účetnictví pro mobilní aplikaci | Ano | Žádný |
 | Správa nákladů | | Ano | Ano |
-| | Balíček obsahu Správa nákladů pro Power BI | Ano | Ne |
+| | Balíček obsahu správy nákladů pro Power BI | Ano | Žádný |
 | Integrace a správa dat | | Ano | Ano |
 | | Rozšíření na základě konfigurace | Ano | Žádný |
 | | Export dat do svého vlastního datového skladu | Ano | Ano |
@@ -57,9 +56,9 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 | Nápověda | | Ano | Ne |
 | Lidské zdroje | | Ano | Ano |
 | Intelligence | | Ano | Ano |
-| | Elektronické výkaznictví (ER) - Integrace s LCS | Ano | Ne |
-| | Elektronické výkaznictví (ER) - Integrace s aplikací SharePoint | Ano | Ne |
-| | Integrace s PowerBI.com | Ano | Ne |
+| | Elektronické výkaznictví (ER) - Integrace s LCS | Ano | Žádný |
+| | Elektronické výkaznictví (ER) - Integrace s SharePoint | Ano | Žádný |
+| | Integrace s PowerBI.com | Ano | Žádný |
 | | Analytické pracovní prostory | Ano | Žádný |
 | | Inteligentní obchodní proces: doporučení | Ano | Žádný |
 | | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel | Ano | Žádný |
@@ -77,15 +76,15 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 | Payroll | | Ano | Ano |
 | | Přímý vklad | Ano | Ne |
 | Zásobování a zdroje | | Ano | Ano |
-| | Funkce punch-out pro externí katalog z nákupní žádanky | Ano | Ne |
-| | Power BI sestavy analýz nákupu a výdajů | Ano | Ne |
+| | Funkce punch-out pro externí katalog z nákupní žádanky | Ano | Žádný |
+| | Sestavy Power BI analýzy nákupu a výdajů | Ano | Žádný |
 | Řízení informací o produktech | | Ano | Ano |
 | Data základního produktu | | Ano | Ano |
-| Výrobní | | Ano | Ano |
-| | Power BI sestavy výkonosti výroby | Ano | Ne |
-| Řízení projektů a účetnictví | | Ano | Ano |
+| Výroba | | Ano | Ano |
+| | Sestavy výkonnosti výroby v Power BI | Ano | Žádný |
+| Řízení a účetnictví projektů | | Ano | Ano |
 | Prodej. | | Ano | Ano |
-| | Power BI sestavy výkonu prodeje a ziskovosti | Ano | Ne |
+| | Sestavy výkonu prodeje a ziskovosti v Power BI | Ano | Žádný |
 | Zabezpečení | | Ano | Ano |
 | Správa servisu | | Ano | Ano |
 | Správa dodavatelsko-odběratelského řetězce | | Ano | Ano |
@@ -93,7 +92,7 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 | Dodavatelská spolupráce | | Ano | Žádný |
 | Řízení skladu | | Ano | Ano |
 | | Mobilní aplikace skladu | Ano | Ano |
-| | Power BI sestavy skladu | Ano | Žádný |
+| | Sestavy skladu v Power BI | Ano | Žádný |
 | Webový klient | | Ano | Ano |
 | | Záznamník úloh - Uložení nebo načtení záznamu úloh z knihovny BPM | Ano | Ne |
 | Podpora | | Ano | Ano |
@@ -113,18 +112,17 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 | Upgradovat | | Ano | Ano |
 | | Upgradovat | Ano | Žádný |
 | | Upgrade a podpora předchozích verzí | Ano | Žádný |
-| Vývoj sady Visual Studio | | Ano | Ano |
+| Vývoj Visual Studio | | Ano | Ano |
 
-### <a name="retail"></a>Retail 
+### <a name="retail"></a>Maloobchodní a velkoobchodní prodej 
 Pokud chcete zobrazit seznam maloobchodních možností, které jsou k dispozici v místním nasazení, přečtěte si téma [Možnosti, které jsou k dispozici v místním nasazení maloobchodu](../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-for-talent"></a>Dynamics 365 for Talent
 
-| Plošný | Funkce | Cloudový | Místní |
+| Oblast | Funkce | Cloudový | Místní |
 |---|---|---|---|
 | Všechny oblasti Talent | Všechny funkce Talent | Ano | Žádný |
 
 ## <a name="additional-resources"></a>Další zdroje
 
 - [Funkce neimplementované v nasazeních on-premises](features-not-implemented-on-prem.md)
-

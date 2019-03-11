@@ -1,13 +1,13 @@
 ---
-title: "Finanční výkaznictví"
-description: "Finanční výkaznictví v aplikaci Finance and Operations je nástroj, pomocí kterého mohou pracovníci v oblasti financí a obchodu vytvářet, spravovat, nasazovat a kontrolovat finanční výkazy. Obchází omezení tradičních sestav a pomáhá efektivně navrhnout různé typy sestav."
+title: Finanční výkaznictví
+description: Finanční výkaznictví v aplikaci Finance and Operations je nástroj, pomocí kterého mohou pracovníci v oblasti financí a obchodu vytvářet, spravovat, nasazovat a kontrolovat finanční výkazy. Obchází omezení tradičních sestav a pomáhá efektivně navrhnout různé typy sestav.
 author: aprilolson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinanicalReportingSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: ae2087cf142fc2670bda3c542b336f12978178a6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323771"
 ---
-
 # <a name="financial-reporting"></a>Finanční výkaznictví
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,7 @@ Následující součásti finančního výkaznictví umožňují snadné vytvá�
 <ul>
 <li>plánování automatického generování sestav s denní, týdenní, měsíční nebo roční pravidelností;</li>
 <li>export do formátu jen pro čtení XPS, který poskytuje lepší zabezpečení dokumentů s digitálními podpisy;</li>
-<li>export do listu aplikace Microsoft Excel;</li>
+<li>Export do listu aplikace Microsoft Excel.</li>
 <li>pokud chcete sdílet sestavy, můžete vytvářet e-mailové zprávy, které obsahují odkazy na sestavy.</li>
 </ul>
 </td>
@@ -98,4 +97,3 @@ Následující součásti finančního výkaznictví umožňují snadné vytvá�
 
 ## <a name="additional-resources"></a>Další zdroje
 [Generování finanční sestavy](generate-financial-report.md)
-

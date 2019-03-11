@@ -1,13 +1,13 @@
 ---
-title: "Terminologie týkající se účtování nákladů"
-description: "Toto téma definuje klíčové podmínky, které se používají v nákladovém účetnictví."
+title: Terminologie týkající se účtování nákladů
+description: Toto téma definuje klíčové podmínky, které se používají v nákladovém účetnictví.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 702fa3cb4219aecd95a74d3c225e104be5f281fc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365930"
 ---
-
 # <a name="cost-accounting-terminology"></a>Terminologie týkající se účtování nákladů
 
 [!include [banner](../includes/banner.md)]
@@ -119,7 +118,7 @@ Existují dvě hierarchie dimenzí: kategorizační hierarchie a klasifikační 
 Nákladové účetnictví podporuje integraci dat ze zdrojových systémů prostřednictvím sady datových konektorů. K dispozici jsou následující datové konektory:
 
 -  Importované transakce (předem nakonfigurované)
--  Dynamics 365 for Finance and Operations (předem nakonfigurované)
+-  Dynamics 365 for Finance and Operations (předkonfigurovaná)
 -  Dynamics AX (vyžaduje se konfigurace)
 
 **Poznámka:** Datový konektor Importované transakce vychází z datových entit.
@@ -128,7 +127,7 @@ Nákladové účetnictví podporuje integraci dat ze zdrojových systémů prost
 
 Většina zdrojových systémů může poskytovat data, která odpovídají jednomu nebo více datovým zdrojům v nákladovém účetnictví. Chcete-li sladit data ze zdrojových systémů s datovým zdrojem v nákladovém účetnictví, je třeba nakonfigurovat poskytovatele dat. V následující tabulce je uvedena dostupnost poskytovatelů dat podle datového konektoru a datového zdroje.
 
-|  **Datové zdroje** |  **datový konektor Importované transakce** | **Datový konektor Dynamics 365 for Finance and Operations**  | **Datový konektor Dynamics AX**  |
+|  **Datové zdroje** |  **datový konektor Importované transakce** | Datový konektor **Dynamics 365 for Finance and Operations**  | **Datový konektor Dynamics AX**  |
 |---|---|---|---|
 | Členy dimenze prvku nákladů  |  Ano | Ano  | Ano  |
 |  Členy dimenze objektu nákladů |  Ano | Ano  | Ano  |
@@ -204,6 +203,5 @@ Výpisy jsou zobrazení pro vedoucí pracovníky, kteří odpovídají za říze
 **Verze**
 
 Verze se používají k simulaci, zobrazení a porovnání různých výsledků. Standardně jsou zobrazeny všechny skutečné náklady v jedné základní verzi, která se nazývá *Skutečné*. U rozpočtů a výpočtů můžete pracovat s libovolným počtem verzí. Můžete například importovat data rozpočtu do původní verze a poté revidovat rozpočet v revidované verzi. V případě výpočtů můžete vytvořit více verzí. V těchto různých verzích pak můžete vytvářet výpočty pomocí různých pravidel výpočtu, která se budou používat pro přidělení nákladů.
-
 
 

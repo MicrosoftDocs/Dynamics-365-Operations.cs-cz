@@ -1,13 +1,13 @@
 ---
-title: "Katalogy kontaktního střediska"
-description: "Toto téma popisuje funkce kontaktního střediska pro katalogy v aplikaci Microsoft Dynamics 365 for Retail."
+title: Katalogy kontaktního střediska
+description: Toto téma popisuje funkce kontaktního střediska pro katalogy v aplikaci Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322736"
 ---
-
 # <a name="call-center-catalogs"></a>Katalogy kontaktního střediska
 
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje funkce kontaktního střediska propojené s možnostmi katalogu v aplikaci Microsoft Dynamics 365 for Retail.
 
-Funkce katalogu v aplikaci Dynamics 365 pro maloobchod lze použít pro několik účelů. Funkce katalogu původně byly vytvořeny k podpoře integrace elektronického obchodování třetí strany. Nastavení katalogu společnostem umožňovalo vytvořit skupinu atributů, které mohly být publikovány externě pro spotřebu řešení elektronického obchodování třetí strany.
+Funkce katalogu v aplikaci Dynamics 365 for Retail lze použít pro několik účelů. Funkce katalogu původně byly vytvořeny k podpoře integrace elektronického obchodování třetí strany. Nastavení katalogu společnostem umožňovalo vytvořit skupinu atributů, které mohly být publikovány externě pro spotřebu řešení elektronického obchodování třetí strany.
 
 Po přidání podpory call centra do aplikace Dynamics 365 for Retail byl koncept katalogu rozšířen tak, aby obsahoval další možnosti podpory a správy funkcí souvisejících s tradičními katalogy marketingu pro spotřebitele. Společnost směřovaná na zákazníka bude často vytvářet tištěné katalogy, které jsou pak odeslány do jednoho či více segmentů odběratelů. Tyto katalogy budou obvykle mít konkrétní promoakce nebo slevy, které budou použity jen v případě, že odběratel poskytne identifikační kód katalogu v době vytvoření objednávky.
 
@@ -93,7 +92,7 @@ Při konfiguraci produktů v katalogu, použijte akci **rozložení stránky pro
 
 ## <a name="catalog-requests"></a>Požadavky na katalog
 
-Při konfiguraci a publikování katalogů v aplikaci Dynamics 365 for Retail lze vyoužít funkci **Odeslat katalog**. Tato funkce je k dispozici na stránce **Hledat zákazníka** a **odběratelský servis**. Po výběru záznamu odběratele pomocí možnosti **Hledat zákazníka** nebo při zobrazení vybraného účtu odběratele vybraný z pole **odběratelský servis**, uživatelé mohou vybrat možnost **odeslání katalogu**, kterou se otevře dialogové okno umožňující uživateli zvolit ze seznamu všech publikovaných a aktivních katalogů. Uživatel může vybrat katalog a množství a konkrétní ID zdrojového kódu k odeslání. Po klepnutí na tlačítko **odeslat** se uloží požadavek, který lze poté spravovat vytištěním sestavy **požadavky na katalogu**. Tuto sestavu lze najít po přechodu do okna **maloobchod** \> **Sestavy kontaktního střediska** \> **estava požadavku na katalog**. Zobrazuje seznam všech požadavků na katalog, včetně názvu a adresy zákazníka, který si vyžádal katalog. Tuto sestavu lze použít interně nebo je možné přenést data třetí straně podporující externí procesy pro fyzické odeslání katalogu odběrateli.
+Při konfiguraci a publikování katalogů v aplikaci Dynamics 365 for Retail lze využít funkci **Odeslat katalog**. Tato funkce je k dispozici na stránce **Hledat zákazníka** a **odběratelský servis**. Po výběru záznamu odběratele pomocí možnosti **Hledat zákazníka** nebo při zobrazení vybraného účtu odběratele vybraný z pole **odběratelský servis**, uživatelé mohou vybrat možnost **odeslání katalogu**, kterou se otevře dialogové okno umožňující uživateli zvolit ze seznamu všech publikovaných a aktivních katalogů. Uživatel může vybrat katalog a množství a konkrétní ID zdrojového kódu k odeslání. Po klepnutí na tlačítko **odeslat** se uloží požadavek, který lze poté spravovat vytištěním sestavy **požadavky na katalogu**. Tuto sestavu lze najít po přechodu do okna **maloobchod** \> **Sestavy kontaktního střediska** \> **estava požadavku na katalog**. Zobrazuje seznam všech požadavků na katalog, včetně názvu a adresy zákazníka, který si vyžádal katalog. Tuto sestavu lze použít interně nebo je možné přenést data třetí straně podporující externí procesy pro fyzické odeslání katalogu odběrateli.
 
 ## <a name="additional-features"></a>Další funkce
 
@@ -102,4 +101,3 @@ Na kartě **katalogy** kartě Možnosti konfigurace jsou k dispozici možnosti p
 ## <a name="additional-notes"></a>Další poznámky
 
 V současné době platí, že když je použito ID zdrojového kódu pro všechny prodejní objednávky v call centru, použije se pro generování cen, promoakcí, skriptů a návazného/křížového prodeje specifických pro katalog. Systém nebude zakazovat ani zabraňovat objednání produktu, který není v katalogu, v prodejní objednávce. Pokud je objednaná položka, která není součástí katalogu, systém použije nejprve **Cenovou skupinu** definovanou v kanálu kontaktního střediska (**maloobchod** \> **maloobchod** \> **kontaktní střediska** \> **šechna kontaktní střediska**) pro ceny zboží nebo promoakcí. Pokud žádná konkrétní kanálová cena není nalezena, použije se základní prodejní cena zboží.
-

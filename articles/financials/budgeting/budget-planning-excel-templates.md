@@ -1,13 +1,13 @@
 ---
-title: "Šablony plánování rozpočtu pro Excel"
-description: "Toto téma popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze použít pro plány rozpočtu."
+title: Šablony plánování rozpočtu pro Excel
+description: Toto téma popisuje, jak vytvořit šablony aplikace Microsoft Excel, které lze použít pro plány rozpočtu.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanSetLayout
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 079aa6bb4be020fc050b81c400050ed23d48f6ca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 156688b705337331e083ebc19fded57b028acb67
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337042"
 ---
-
 # <a name="budget-planning-templates-for-excel"></a>Šablony plánování rozpočtu pro Excel
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,6 @@ Ano, většina standardních funkcí aplikace Excel bude fungovat i v šablonác
 Můžete také vytvořit a použít kontingenční tabulky a grafy pro další seskupení a vizualizace dat rozpočtu. Na kartě **Data** ve skupině **Připojení** klikněte na tlačítko **Aktualizovat vše** a potom klikněte na tlačítko **Vlastnosti připojení**. Klikněte na kartu **Použití**. Pod možností **Aktualizovat** zvolte zaškrtávací políčko **Aktualizovat data při otevření souboru**. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
-
 
 
 

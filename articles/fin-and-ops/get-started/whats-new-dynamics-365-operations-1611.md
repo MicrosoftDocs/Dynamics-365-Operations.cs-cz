@@ -1,13 +1,13 @@
 ---
-title: "Co je nového nebo upraveného v aplikaci verze Dynamics 365 for Operations 1611 (září 2016)"
-description: "Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611 nové nebo změněné."
+title: Co je nového nebo změněného v aplikaci Dynamics 365 for Operations verze 1611 (listopad 2016)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 for Operations verze 1611.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339066"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Co je nového nebo upraveného v aplikaci verze Dynamics 365 for Operations 1611 (září 2016)
+# <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Operations verze 1611 (listopad 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611 nové nebo změněné.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 for Operations verze 1611.
 
 ## <a name="cost-accounting"></a>Nákladové účetnictví
 
@@ -59,7 +58,7 @@ Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611
 </tr>
 <tr>
 <td>Tvorba šablon poskytovatelů statistického měření.</td>
-<td>Šablona poskytovatele statistických měření slouží k převedení dat z Dynamics 365 for Operations do statistických měření. Šablona je poté přidružená k danému členu statistické dimenze. Šablony jsou předfiltrovány tak, aby zobrazovaly pouze tabulky, které jsou přidruženy finančním dimenzím.</td>
+<td>Šablona poskytovatele statistických měření slouží k převedení dat z Dynamics 365 for Operations s do statistických měření. Šablona je poté přidružená k danému členu statistické dimenze. Šablony jsou předfiltrovány tak, aby zobrazovaly pouze tabulky, které jsou přidruženy finančním dimenzím.</td>
 </tr>
 <tr>
 <td>Tvorba hlavní knihy nákladového účetnictví</td>
@@ -101,7 +100,7 @@ Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611
 </tr>
 <tr>
 <td>Vytvořte sestavy pomocí aplikace Excel.
-<blockquote>[!NOTE] Musíte nejprve spustit aplikaci Microsoft Excel 2016.</blockquote>
+<blockquote>[!NOTE] Je nutné spustit Microsoft Excel 2016.</blockquote>
 </td>
 <td>Data nákladového účetnictví můžete exportovat přímo do aplikace Excel prostřednictvím entit dat a používat Microsoft PivotTable pro vytváření sestav.</td>
 </tr>
@@ -344,7 +343,7 @@ Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611
 <li>Švédsko</li>
 </ul>
 </td>
-<td>Dynamics 365 for Operations je k dispozici v 18 dalších zemích. V rámci našeho úsilí zjednodušit lokalizaci a učinit ji více konfigurovatelnou, konvertovali jsme regulační funkce elektronického vykazování na konfigurace elektronického vykazování (ER) a určité zákonem předepsané výkazy Microsoft SQL Server Reporting Services (SSRS) byly převedeny na ER konfigurace, které využívají šablony aplikace Excel. Tyto převedené funkce konkrétně zmiňované později v této tabulce.</td>
+<td>Dynamics 365 for Operations je k dispozici v 18 další zemích. V rámci našeho úsilí zjednodušit lokalizaci a učinit ji více konfigurovatelnou, konvertovali jsme regulační funkce elektronického vykazování na konfigurace elektronického vykazování (ER) a určité zákonem předepsané výkazy Microsoft SQL Server Reporting Services (SSRS) byly převedeny na ER konfigurace, které využívají šablony aplikace Excel. Tyto převedené funkce konkrétně zmiňované později v této tabulce.</td>
 </tr>
 <tr>
 <td>Japonsko – Spojení dlouhodobého majetku při tisku formuláře 26 a dalších připojených tabulek.</td>
@@ -624,7 +623,7 @@ Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611
 | Konfigurujte sestavy ER a generujte elektronické dokumenty do formátu aplikace Excel, Microsoft Word nebo PDF. | Jediná konfigurace umožňuje ER sestavám generovat elektronické dokumenty ve třech různých formátech: OpenXML list (aplikace Excel), Word a formuláře dat formátu XML (XFDF) (PDF). Uživatelé mohou vybrat formát přidáním šablony formátu k sestavě ER ve formě dokumentu aplikace Excel, aplikace Word a PDF. |
 | Konfigurujte sestavy ER pro vložení dat do záhlaví a zápatí elektronických dokumentů, které jsou generovány ve formátu listu OpenXML. Můžete tak také určovat zalomení stránky. | Sestavy ER mohou zadávat obchodní data do záhlaví a zápatí a také určit, kde bude zalomení stránky. Sestavy proto mohou podporovat statické horní a dolní části stránek generovaných elektronických dokumentů. Mohou také podporovat specifické stránkování těchto dokumentů tak, aby splňovaly právní předpisy. |
 | Konfigurujte cíle sestavy ER tak, aby se výstup posílal jako e-mail a aby obchodní data i ER logika (výrazy) sloužily k průběžnému určení použité e-mailové adresy. | Když jste v předchozích verzích konfigurovali cíle ER, mohla být e-mailová adresa příjemce definována už v době návrhu. Nyní můžete nakonfigurovat výrazy ve formátu ER. Tento výraz lze vybrat v cíli jako zdroj e-mailové adresy pro každou konfiguraci formátu a každý výstupní komponent (složku nebo soubor) samostatně. Proto pokud je spuštěn výkaz ER, každý generovaný soubor může být odeslán různým příjemcům a e-mailovou adresu lze definovat podle logiky ER a obchodních dat. |
-| Konfigurujte cíl sestavy ER tak, aby se výstup odesílal do složky aplikace Microsoft SharePoint jako buď nový pojmenovaný soubor nebo jako nová verze existujícího souboru, a aby se obchodní data dala použít v rámci Microsoft Power BI jako sada dat nebo jako sestava. | Při konfiguraci sestav ER můžete nyní snadno (bez kódování) připravit požadovaná obchodní data, tak aby je šlo snadno použít v rozhraní Power BI. Při spuštění těchto sestav ER můžete pro rozhraní Power BI zajistit odpovídající obchodní data a/nebo Excelové sestavy, které jsou již k dispozici. Při plánování v režimu opakované spuštění sestavy, můžete vytvořit plánované vypuštění obchodních dat z Dynamics 365 for Operations do Power BI a podpořit tak plán aktualizace sestav na základě Power BI. |
+| Konfigurujte cíl sestavy ER tak, aby se výstup odesílal do složky aplikace Microsoft SharePoint SharePoint jako buď nový pojmenovaný soubor nebo jako nová verze existujícího souboru, a aby se obchodní data dala použít v rámci Microsoft Power BI jako sada dat nebo jako sestava. | Při konfiguraci sestav ER můžete nyní snadno (bez kódování) připravit požadovaná obchodní data, tak aby je šlo snadno použít v rozhraní Power BI. Při spuštění těchto sestav ER můžete pro rozhraní Power BI zajistit odpovídající obchodní data a/nebo Excelové sestavy, které jsou již k dispozici. Při plánování v režimu opakované spuštění sestavy, můžete vytvořit plánované vypuštění obchodních dat z Dynamics 365 for Operations do Power BI a podpořit tak plán aktualizace sestav na základě Power BI. |
 | Konfigurujte sestavy ER pomocí části elektronického dokumentu, který již byl generován jako zdroj dat pro generování zbytku onoho dokumentu. | Můžete konfigurovat ER sestavy, které tvoří výstup v textovém formátu, a připravit řádek inventáře. Tyto údaje pak lze použít v jiných oddílech dokumentu a vytvořit řádky, které zahrnují podrobnosti souhrnu. Souhrnné informace (součty a čísla) můžete vypočítat a vytisknout do generovaných elektronických dokumentů, aniž by bylo nutné dodatečné transformování dat. Tato funkce tedy zlepšuje výkon při spuštění sestavy a usnadňuje budoucí údržbu konfigurovaného formátu ER. |
 | Konfigurujte sestavy ER a určujte příponu názvu souboru pro elektronické dokumenty, které jsou generovány v textovém formátu. | Můžete konfigurovat sestavy ER a vytvořit výstup v textovém formátu, aby šel uložit jako soubor se specifickou příponou. Kromě výchozí .txt přípony můžete konfigurovat rozšíření např. csv a .prn v souladu se specifikací formátu. |
 | Tvořte nové sestavy ER, které jsou založeny na konkrétní verzi modelu ER. | Když jste dříve tvořili nový formát ER, mohli jste jako umístění dat zdroje formátu použít pouze nejnovější verzi vybraného modelu ER. Nyní můžete vybrat jakoukoli dostupnou verzi vybraného modelu ER. Tato funkce vám umožní spravovat ER sestavy pro aktuální rok a současně navrhovat novou verzi modelu ER pro příští rok. |
@@ -657,7 +656,7 @@ Toto téma popisuje funkce, které jsou v Dynamics 365 for Operations verze 1611
 </tr>
 <tr>
 <td>Generujte kladné platební výměry pro kontrolu mezd.</td>
-<td>Existuje nová přípona k pozitivní funkci řízení hotovostních a bankovních pohybů pro platby mezd. Přidali jsme samostatné položky v rámci základního procesu, které umožňují izolovanou konfiguraci, která je pro mzdy typická. Funkce je stejná jako základní funkce kladných plateb, která se objevila v aplikaci Microsoft Dynamics AX 7.0.1 (květen 2016). Z důvodu tohoto rozšíření jsou mzdová data plně oddělena od ostatních kladných platebních transakcí. Tato izolace pomáhá zajistit, aby pouze příjemci mezd mohli vstoupit a zobrazit si data, která souvisí se mzdou.</td>
+<td>Existuje nová přípona k pozitivní funkci řízení hotovostních a bankovních pohybů pro platby mezd. Přidali jsme samostatné položky v rámci základního procesu, které umožňují izolovanou konfiguraci, která je pro mzdy typická. Funkce je stejná jako základní funkce kladných plateb, která se objevila v aplikaci Microsoft Dynamics AX verze 7.0.1 (květen 2016). Z důvodu tohoto rozšíření jsou mzdová data plně oddělena od ostatních kladných platebních transakcí. Tato izolace pomáhá zajistit, aby pouze příjemci mezd mohli vstoupit a zobrazit si data, která souvisí se mzdou.</td>
 </tr>
 <tr>
 <td>Importujte řádky výkazu zisků z externího zdroje s použitím nových dat entity řádku výkazu příjmů .</td>
@@ -764,7 +763,7 @@ Perfektní obchodní omni-channel odkazuje ke správě a zpracovávání objedn�
 
 | Co můžete dělat | Proč je to důležité |
 |-----------------|-----------------------|
-| Zobrazte přizpůsobená doporučení produktu ve více stykových místech pokladního místa (POS), chcete-li zjistit, jaký zákazník může mít zájem na základě jejich historie nákupů, položek v seznamu jejich přání a položek, které ostatní zákazníci zakoupili online a v kamenných obchodech | Co se týká maloobchodních prodejců s velkým katalogy, přizpůsobená doporučení pomáhají zákazníkům objevit produkty a poskytují zaměstnancům obchodů inteligentní clienteling. Vystavením produktů zaměřených na zájmy a nákupní zvyklosti zákazníka mohou doporučení produktu pomáhat maloobchodníkům navýšit prodeje a zlepšit udržení si zákazníka. V aplikaci Microsoft Dynamics 365 for Retail jsou doporučení produktu podpořena kognitivní službou a službou Microsoft Azure machine learning. |
+| Zobrazte přizpůsobená doporučení produktu ve více stykových místech pokladního místa (POS), chcete-li zjistit, jaký zákazník může mít zájem na základě jejich historie nákupů, položek v seznamu jejich přání a položek, které ostatní zákazníci zakoupili online a v kamenných obchodech | Co se týká maloobchodních prodejců s velkým katalogy, přizpůsobená doporučení pomáhají zákazníkům objevit produkty a poskytují zaměstnancům obchodů inteligentní clienteling. Vystavením produktů zaměřených na zájmy a nákupní zvyklosti zákazníka mohou doporučení produktu pomáhat maloobchodníkům navýšit prodeje a zlepšit udržení si zákazníka. V aplikaci Microsoft Dynamics 365 for Retail využívají doporučení produktu kognitivní služby a strojové učení Microsoft Azure. |
 
 ### <a name="pos-task-recorder"></a>Záznamník úkolů POS
 
@@ -783,8 +782,8 @@ Systém obchodu je možnost nasazení pro maloobchodní prodejce, který umožň
 - Maloobchodní Server a databáze obchodů jsou v obchodě, spolu s službu Async Client.
 - Maloobchodní Server v obchodě komunikuje přímo s aplikačním objektovým serverem (AOS) v centrále systému obchodu.
 - Podpora scénářů mezi terminály v případě bez připojení k centrále.
-- Moderní Retail POS a Retail POS Cloud vždy komunikovat s Retail Server v obchodě.
-- Podpora moderních obchodních POS a cloudových POS, kde není připojení k centrále.
+- Retail Modern POS a Cloud POS vždy komunikují s Retail Server v obchodě.
+- Podpora Retail Modern POS a cloudových POS, kde není připojení k centrále.
 - Podpora off-line databáze specifické pro Retail Modern POS (izolovaný vůči jednotlivým instancím Retail Modern POS), kde není žádné připojení k centrále.
 - Ověření je založeno výměně služeb pouze pro obchod systému.
 - Volání Real-time Service nejsou podporovány bez připojení k Internetu.
@@ -801,9 +800,9 @@ Systém obchodu je možnost nasazení pro maloobchodní prodejce, který umožň
 | Prodejce může mít zabezpečenou komunikaci mezi systémem v místě obchodu a centrálou. | Prodejce může bezpečně komunikovat ze systému obchodu, pokud má k dispozici připojení k síti. |
 | Správce IT a Microsoft Operations může sledovat a podávat hlášení do systému v místě obchodu (diagnostika a vykazování změn). | Správce IT a Microsoft Operations může bezpečně sledovat systém úložiště a hledat efektivní řešení problémů. |
 
-### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Univerzální aplikace Windows Platform pro moderní Retail POS.
+### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Aplikace Univerzální platforma Windows pro Retail Modern POS
 
-V současné době je Retail Modern POS k dispozici pouze jako aplikace systému Windows 8.1 pro stolní počítače a tablety, a jako POS na cloudu pro prohlížeče stolních počítačů nebo tabletů. V této verzi se Retail Moderns POS převádí do aplikace Universal Windows Platform (UWP). Tato změna umožní spuštění Retail Modern POS na jakémkoli zařízení s Windows 10 (stolní počítače, tablety a telefon) a také přepínat mezi různými zobrazeními na zařízeních povolujících Continuum.
+V současné době je Retail Modern POS k dispozici pouze jako aplikace systému Windows 8.1 pro stolní počítače a tablety, a jako POS v cloudu pro prohlížeče stolních počítačů nebo tabletů. V této verzi se Retail Moderns POS převádí do aplikace Universal Windows Platform (UWP). Tato změna umožní spuštění Retail Modern POS na jakémkoli zařízení s Windows 10 (stolní počítače, tablety a telefon) a také přepínat mezi různými zobrazeními na zařízeních povolujících Continuum.
 
 | Co můžete dělat | Proč je to důležité |
 |-----------------|-----------------------|
@@ -819,7 +818,7 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 | Jako dodavatel můžete získat informace o množství zasílaných zásob, které se převádějí k odběrateli. | Pro možnost účtovat odběrateli dodavatel vyžaduje údaje o surovinách zakoupených ze zásilky dodávky a datum zakoupení. Dodavatel může také monitorovat zásoby na skladě u zákazníka pomocí rozhraní dodavatelské spolupráce. |
 | Přesunujte zásoby vlastněné dodavatelem pomocí deníku převodu. | Chcete-li sledovat fyzickou pozici zásob vlastněných dodavatelem, musíte být schopní zaznamenat umístění v systému. Pomocí deníku převodu můžete zaznamenat fyzické přesunutí zásob, jako je například pohyb z jednoho místa ve skladu do jiného místa v dotyčném skladu. |
 | Upravte zásoby vlastněné dodavatelem pomocí deníku inventur. | Je důležité, abyste zásoby na skladě systému synchronizovali se skutečnými fyzickými zásobami. Zásoby vlastněné dodavatelem lze upravit pomocí procesů inventury, například úpravou množství a procesů deníku inventury. |
-| Další informace o podpoře zásilek Dynamics 365 for Operations | Chcete-li zobrazit další informace týkající se podpory pro procesy dodávek, otevřete [Zásilka](../../supply-chain/inventory/consignment.md), [Nastavení zásilky](../../supply-chain/inventory/set-up-consignment.md), [Vytvoření nové zakázky na doplnění stavu zásob dodávky (Průvodce záznamem úloh)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) a [Změna vlastnictví zásilky zásob na základě výrobní poptávky (Průvodce záznamem úloh)](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Další informace o podpoře pro dodávku v Dynamics 365 for Operations | Chcete-li zobrazit další informace týkající se podpory pro procesy dodávek, otevřete [Zásilka](../../supply-chain/inventory/consignment.md), [Nastavení zásilky](../../supply-chain/inventory/set-up-consignment.md), [Vytvoření nové zakázky na doplnění stavu zásob dodávky (Průvodce záznamem úloh)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) a [Změna vlastnictví zásilky zásob na základě výrobní poptávky (Průvodce záznamem úloh)](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Dodavatelská spolupráce (dříve označovaná jako portál pro dodavatele)
 
@@ -828,7 +827,7 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 | Povolte dodavatelům odpovídat na každý řádek nákupní objednávky a navrhovat změny. | V některých případech chce dodavatel přijímat některé řádky nákupní objednávky a jiné odmítat. Dodavatelé nyní mohou jednotlivě spravovat řádky nákupní objednávky. Každý řádek může být odmítnut, potvrzen nebo přijat se změnami. Dodavatele například může změnit datum dodání, rozdělit doručení a množství, nebo navrhnout alternativní položku. |
 | Povolte dodavatelům spravovat informace o kontaktní osobě. | Dodavatelé mohou spravovat informace o kontaktní osobě pro svou společnost. Tyto informace zahrnují jména, e-mailové adresy a telefonní čísla. Přístup k této funkci je udělován prostřednictvím vyhrazené zabezpečené úlohy. |
 | Sdílejte dokumenty, které souvisejí s nákupními objednávkami dodavatelů. | Jestliže musíte sdílet s dodavateli dokument, například dokumenty o požadavcích, je vhodné spojit dokument s příslušnou nákupní objednávkou. Dodavatel může sdílet poznámky a přílohy s odběratelem pomocí propojení dokumentu ke své reakci na nákupní objednávku. Správa dokumentů je podkladovou podpůrnou soustavou a pouze poznámky a přílohy, které jsou klasifikovány jako "externí", lze sdílet s dodavatelem. |
-| Založit nového dodavatelského uživatele. | Pokud vaši dodavatelé používají rozhraní dodavatelské spolupráce, mají bezproblémový způsob, jak požadovat nové účty, pokud nové kontakty vyžadují přístup k dodavatelské spolupráci. Odborníci v oblasti zásobování mohou odeslat požadavek na účet pro kontaktní osoby u dodavatelské společnosti. Kontaktní osoba dodavatele, která je již uživatelem dodavatelské spolupráce, může tento typ požadavku také odeslat. Tento požadavek nakonec vytvoří nového uživatele v Dynamics 365 for Operations, který bude mít bezpečnostní role specifické pro dodavatele. Také usnadňuje žádost na portál Microsoft Azure B2B o zajištění nového uživatelského účtu služby Active Directory Azure (Azure AD) pro uživatele. Dodavatel také může požádat o deaktivaci nebo změnu zabezpečení úlohy účtu specifického dodavatelského uživatele. |
+| Založit nového dodavatelského uživatele. | Pokud vaši dodavatelé používají rozhraní dodavatelské spolupráce, mají bezproblémový způsob, jak požadovat nové účty, pokud nové kontakty vyžadují přístup k dodavatelské spolupráci. Odborníci v oblasti zásobování mohou odeslat požadavek na účet pro kontaktní osoby u dodavatelské společnosti. Kontaktní osoba dodavatele, která je již uživatelem dodavatelské spolupráce, může tento typ požadavku také odeslat. Tento požadavek nakonec vytvoří nového uživatele v Dynamics 365 for Operations, který bude mít bezpečnostní role specifické pro dodavatele. Usnadňuje také požadavek na portál Microsoft Azure B2B k poskytnutí nového účtu Azure Active Directory (Azure AD) uživateli. Dodavatel také může požádat o deaktivaci nebo změnu zabezpečení úlohy účtu specifického dodavatelského uživatele. |
 | Další informace o dodavatelské spolupráci v Dynamics 365 for Operations. | Další informace o dodavatelské spolupráci najdete na [Dodavatelská spolupráce s externími dodavateli](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md), [Dodavatelská spolupráce s odběrateli](../../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md), [Správa uživatelů dodavatelské spolupráce](../../supply-chain/procurement/manage-vendor-collaboration-users.md), [Nastavení konfigurace a správa dodavatelské spolupráce](../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) a [Pracovní prostor pro fakturaci dodavatelské spolupráce](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). |
 
 ### <a name="intercompany-order-processing"></a>Mezipodnikové zpracovávání objednávek
@@ -885,7 +884,7 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 | Co můžete dělat | Proč je to důležité |
 |-----------------|-----------------------|
 | Modelujte různé typy kontejnerů. | Můžete použít různé typy kontejnerů ve skladu a optimalizovat tak úložiště. Rozhodnout se ale pro to můžete i z jiných důvodů. Nová entita typ kontejneru má fyzické vlastnosti typů kontejneru. Nyní můžete přidružit k určitému typu kontejneru licenční značky a použít limity pro místo uskladnění. Tuto funkci můžete například využít k určování, kolik palet (nebo jiných typů kontejnerů) povolíte na určitém místě. Typy kontejneru také byly přidány do skupiny klasifikace jednotek, aby přidaly výchozí typ kontejneru pro proces příjmu. Typy kontejneru lze použít u směrnic pro skladová místa pro příchozí a odchozí zboží. Můžete je také používat při zobrazení zásob na skladě, jelikož pomáhají určit, kolik typů kontejnerů máte aktuálně uloženo na skladě. Další informace hledejte v článku [Použití registračních značek přidružených k typu kontejneru pro procesy řízení skladu](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/20/use-of-license-plates-associated-with-a-container-type-to-drive-warehouse-management-processes/). I když tento článek popisuje aktualizaci aplikace Microsoft Dynamics AX 2012, stejnou podporu jsme nyní přidali i do Dynamics 365 for Operations. |
-| Storno dopravy. | Ve skladu musíte být schopni zpracovat poslední změny. Například u některého zboží může dojít k poškození, takže je nelze odeslat. Případně může odběratel vydat opožděný požadavek na zrušení nebo změnu objednávky. Dynamics 365 for Operations nyní umožňuje stornovat dodávkou. Proto můžete zrušit dodací list a později ho doplnit o správná množství. Stejně tak můžete zrušit příjmy produktů v příchozím toku a vytvořit aktualizovanou verzi. |
+| Storno dopravy. | Ve skladu musíte být schopni zpracovat poslední změny. Například u některého zboží může dojít k poškození, takže je nelze odeslat. Případně může odběratel vydat opožděný požadavek na zrušení nebo změnu objednávky. Dynamics 365 for Operations nyní umožňuje stornovat dodávky. Proto můžete zrušit dodací list a později ho doplnit o správná množství. Stejně tak můžete zrušit příjmy produktů v příchozím toku a vytvořit aktualizovanou verzi. |
 | Použijte palety se smíšeným zbožím. | Nyní můžete přijímat a registrovat „smíšené" palety. Smíšená paleta se skládá z různých položek, které jsou poskládány na jednu paletu, a to na jednu nebo několik nákupních objednávek nebo řádků. Všechny registrace lze shrnout do jedné cílové licenční značky. Tento proces se povoluje prostřednictvím mobilního zařízení skladu. Například: Když do skladu dorazí paleta se smíšenými položkami, úředník na příjmu položky a jejich množství identifikuje, potom paleta putuje do vyhrazeného místa určení. Tato skladová místa jsou určena šablonami práce a směrnicemi skladového místa. Pokud jsou skladová místa rozdělena pro několik položek, které mají pevná skladová místa, tato funkce vytvoří tolik řádků práce, kolik různých položek se na smíšené paletě nachází. Tato funkce registruje a ukládá přijaté palety se smíšenými položkami rychleji a pružněji. Další informace naleznete v článku [příjem a zaznamenávání palet s různými zdroji řádků dokumentu pomocí jedné licenční značky](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/13/receive-and-register-a-pallet-with-mixed-source-document-lines-using-1-license-plate-purchase-order-matching/) a informace o smíšených paletách na [Oznámení o naší poslední kumulativní aktualizaci](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/30/whats-new-in-cu11-for-wms-and-tms/). I když tento článek popisuje aktualizaci aplikace AX 2012, stejnou podporu jsme nyní přidali i do Dynamics 365 for Operations. |
 
 ### <a name="minor-feature-enhancements-in-supply-chain-management"></a>Méně výrazné změny funkcí v řízení řetězce dodávek
@@ -946,4 +945,3 @@ V současné době je Retail Modern POS k dispozici pouze jako aplikace systému
 ## <a name="additional-resources"></a>Další zdroje
 
 [Co je nového a co se změnilo](whats-new-changed.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "Nákladové formuláře"
-description: "Nastavení nákladového formuláře má dva cíle. Prvním je definovat formát zobrazení informací o nákladech na prodané zboží, které se týkají vyrobených položek nebo výrobní zakázky. Vytvořený formát zobrazení je pojmenován nákladový formulář. Druhým je definovat základnu pro výpočet nepřímých nákladů. Nastavení nákladového formuláře je založeno na funkcích nákladové skupiny pro zobrazení informací a vzorců pro výpočet nepřímých nákladů. V tomto článku jsou popsány dva cíle nastavení nákladového formuláře."
+title: Nákladové formuláře
+description: Nastavení nákladového formuláře má dva cíle. Prvním je definovat formát zobrazení informací o nákladech na prodané zboží, které se týkají vyrobených položek nebo výrobní zakázky. Vytvořený formát zobrazení je pojmenován nákladový formulář. Druhým je definovat základnu pro výpočet nepřímých nákladů. Nastavení nákladového formuláře je založeno na funkcích nákladové skupiny pro zobrazení informací a vzorců pro výpočet nepřímých nákladů. V tomto článku jsou popsány dva cíle nastavení nákladového formuláře.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostSheetDesigner
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1421049adb86916202ad6f7ee748c8525fd55fa8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3988bd478cfad791b5d4c73d28a86c9cfb68288f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312754"
 ---
-
 # <a name="costing-sheets"></a>Nákladové formuláře
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Pro nákladové verze existují dvě zásady blokování, které určují, zda m
 Po definování formátu nákladového formuláře a výpočtu nepřímých nákladů je nutné provést samostatný krok, ve kterém informace ověříte a uložíte. Nákladový formulář představuje celopodnikový formát pro konzistentní zobrazení informací o nákladech na prodané zboží. 
 
 Nákladový formulář je zobrazen jako součást stránky **Vypočítat náklady na zboží**. Nákladový formulář lze zobrazit pro záznam o vypočtených nákladech na vyrobenou položku na stránce **Cena položky** nebo pro záznam o výpočtu pro určitou zakázku na stránce **Výsledky výpočtu kusovníku**. Lze jej také zobrazit jako součást stránky **Kalkulace ceny** pro výrobní zakázku.
-
 
 
 

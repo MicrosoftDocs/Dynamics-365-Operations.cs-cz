@@ -1,13 +1,13 @@
 ---
-title: "Dotazníky"
-description: "Toto téma obsahuje obecné informace o dotaznících a odkazy na podrobnější informace. Dotazník je sada otázek, které se používají ke shromažďování informací pro různé účely. Můžete navrhovat, vytvářet, rozesílat a vyplňovat dotazníky a následně provádět analýzu výsledků."
+title: Dotazníky
+description: Toto téma obsahuje obecné informace o dotaznících a odkazy na podrobnější informace. Dotazník je sada otázek, které se používají ke shromažďování informací pro různé účely. Můžete navrhovat, vytvářet, rozesílat a vyplňovat dotazníky a následně provádět analýzu výsledků.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: d5c3e02bf5bc17db7232ccbb56e4dfbc062795b4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303539"
 ---
-
 # <a name="questionnaires"></a>Dotazníky
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ Toto téma obsahuje obecné informace o dotaznících a odkazy na podrobnější
 Dotazník můžete upravit pomocí různých funkcí, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations, podle svých specifických požadavků. Zde je několik příkladů použití dotazníků:
 
 -   testování profesionálních dovedností zaměstnanců a uchazečů,
--   Zhodnoťte, zda se účastníci kurzu seznámili s materiály kurzu.
+-   Zhodnoťte, zda se účastníci kurzu seznámili s materiály kurzu.
 -   Zhodnoťte kurz (například zařízení, obsah a instruktora).
 -   průzkum spokojenosti zaměstnanců a odběratelů.
 -   Zhodnoťte práci zaměstnance.
@@ -58,5 +57,4 @@ Následující tabulka obsahuje odkazy na informace o základních úlohách dot
 [Distribuování a vyplňování dotazníků](distribute-questionnaires.md)
 
 [Zobrazení a zhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
-
 

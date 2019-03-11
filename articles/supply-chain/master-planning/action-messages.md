@@ -1,13 +1,13 @@
 ---
-title: "Zprávy akce"
-description: "Zpráva opatření je návrh vygenerovaný systémem na změnu existující plánované nebo potvrzené objednávky."
+title: Zprávy akce
+description: Zpráva opatření je návrh vygenerovaný systémem na změnu existující plánované nebo potvrzené objednávky.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqGroup
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a417abc8b725f4d57ada595da57505ae1347bfc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0990ddc9c330b1d590e4c49eba0582c9cf70aa06
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349646"
 ---
-
 # <a name="action-messages"></a>Zprávy akce
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Na stránce **Skupiny disponibility** můžete vybrat zprávy akcí, které má 
 | **Snížení**        | Pokud vyberete tuto zprávu, výrobní zakázky, nákupní objednávky a jiné příjmové transakce se sníží tak, aby se zabránilo přebytku zásob.                                                                                                   |
 | **Zvýšit**        | Pokud vyberete tuto zprávu, výrobní zakázky, nákupní objednávky a jiné příjmové transakce se zvýší tak, aby se zabránilo nedostatku zásob.                                                                                                    |
 | **Odvozené akce** | Pokud vyberete tuto zprávu, zprávy akce se vytvoří pro odvozené požadavky, jako například akce pro objednávky komponent splňující výrobní požadavek.                                                                                                   |
-
 
 
 

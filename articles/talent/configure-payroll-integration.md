@@ -1,28 +1,27 @@
 ---
 title: Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
-description: "Toto téma vysvětluje, jak nakonfigurovat integraci mezi aplikacemi Microsoft Dynamics 365 for Talent a Ceridian Dayforce pro zpracování výplat."
+description: Toto téma vysvětluje, jak nakonfigurovat integraci mezi aplikacemi Microsoft Dynamics 365 for Talent a Ceridian Dayforce pro zpracování výplat.
 author: jcart1106
 manager: AnnBe
 ms.date: 07/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: fcddf82cffb9f0ba94b83eb21809b810585ebc9e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303551"
 ---
-
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
 
 [!include [banner](includes/banner.md)]
@@ -40,7 +39,7 @@ Toto téma popisuje postup, který je třeba provést při povolení integrace. 
 
 ## <a name="enable-the-integration"></a>Povolení integrace
 
-V aplikaci Talent musíte zapnout integraci a zadat informace o konfiguraci pro připojení k aplikaci Dayforce. Pokud chcete, aby transakce hlavní knihy, která byla vytvořena, byla naimportována do aplikace Microsoft Dynamics 365 for Finance and Operations, musíte také nastavit účet úložiště Microsoft Azure a zadat řetězec připojení Azure Storage v aplikaci Finance a Operations.
+V aplikaci Talent musíte zapnout integraci a zadat informace o konfiguraci pro připojení k aplikaci Dayforce. Pokud chcete, aby transakce hlavní knihy, která byla vytvořena, byla naimportována do aplikace Microsoft Dynamics 365 for Finance and Operations, musíte také nastavit účet úložiště Microsoft Azure a zadat řetězec připojení Azure Storage v aplikaci Finance and Operations.
 
 Pro zapnutí integrace v aplikaci Talent postupuje podle těchto kroků.
 
@@ -662,4 +661,3 @@ Zaměstnanci mohou deklarovat informace o cestovním pasu. Tato informace je typ
 - Datum vypršení platnosti
 
 Zaměstnanec může deklarovat více identifikačních čísel typu identifikace **Pas**. Do aplikace Dayforce se integruje pouze zadání aktuálního aktivního pasu. Po uplynutí platnosti všech zadání pasu se integruje do Dayforce ten, který byl naposledy vydán.
-

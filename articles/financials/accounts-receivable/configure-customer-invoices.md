@@ -1,13 +1,13 @@
 ---
-title: "Vytvoření faktury odběratele"
-description: "**Faktura odběratele pro prodejní objednávku** je účet, který se vztahuje k prodeji a který organizace předává odběrateli."
+title: Vytvoření faktury odběratele
+description: '**Faktura odběratele pro prodejní objednávku** je účet, který se vztahuje k prodeji a který organizace předává odběrateli.'
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
 ms.openlocfilehash: 6d7c9a61f935503b74ac27b354c875df095d84b4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365263"
 ---
-
 # <a name="create-a-customer-invoice"></a>Vytvoření faktury odběratele
 
 [!include [banner](../includes/banner.md)]
@@ -100,7 +99,7 @@ Následující pole mění chování procesu zaúčtování.
 <td>Zaúčtování</td>
 <td><ul>
 <li>Tuto možnost vyberte, chcete-li do deníku zapsat prodejní objednávky.</li>
-<li>Zrušte výběr této možnosti pro tisk proformy prodejní objednávky. <strong>Poznámka:</strong> Pokud jste uzavřeli dohodu o platebním kalendáři, tento platební kalendář se na proforma prodejní objednávce nezobrazí. Platební kalendáře se zobrazí pouze na aktuálních prodejních objednávkách.</li>
+<li>Zrušte výběr této možnosti pro tisk proformy prodejní objednávky. <strong>Poznámka:</strong>: Pokud jste uzavřeli dohodu o platebním kalendáři, tento platební kalendář se na proforma prodejní objednávce nezobrazí. Platební kalendáře se zobrazí pouze na aktuálních prodejních objednávkách.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -163,7 +162,6 @@ Následující pole mění chování procesu zaúčtování.
 </tr>
 </tbody>
 </table>
-
 
 
 

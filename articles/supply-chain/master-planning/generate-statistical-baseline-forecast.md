@@ -1,13 +1,13 @@
 ---
-title: "Generování statistické základní prognózy"
-description: "Tento článek obsahuje informace o parametrech a filtrech, které se používají při výpočtu prognózy poptávky."
+title: Generování statistické základní prognózy
+description: Tento článek obsahuje informace o parametrech a filtrech, které se používají při výpočtu prognózy poptávky.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 30f2ccb8c0b4d7c4755e0b8dc66539e165265090
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326416"
 ---
-
 # <a name="generate-a-statistical-baseline-forecast"></a>Generování statistické základní prognózy
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Pokud je strategie prognózy nastavena na **Kopírování mezi historickými pop
 
 Aby se zabránilo nejasnostem v plánování výroby, může být určitý počet intervalů prognóz zamrazen. Tento počet je nastaven v poli **Ochranná doba zablokování**. Na stránce **Upravená prognóza poptávky** jsou buňky pro zmrazené období zakázány a poskytují tak vizuální označení, že by tyto hodnoty neměly být změněny. 
 
-Datum zahájení pro základní prognózu poptávky nemusí být aktuální datum ani datum v budoucnosti. Pro nastavení jiného počátečního data lze používat pole **Datum zahájení základní prognózy – počáteční datum**. Například v červnu mohou uživatelé generovat prognózu pro příští rok. Vzhledem k tomu, že intervaly prognóz mezi koncem historické poptávky a zahájením základní poptávky chybí, nemusí být předpovědi přesné. Pokud používáte službu prognózy poptávky aplikace Microsoft Dynamics 365 for Finance and Operations, máte k dispozici čtyři způsoby, jak vyplnit mezery. Můžete zvolit požadovanou metodu nastavením parametru MISSING\_VALUE\_SUBSTITUTION na stránce **Parametry tvorby prognóz poptávky**. 
+Datum zahájení pro základní prognózu poptávky nemusí být aktuální datum ani datum v budoucnosti. Pro nastavení jiného počátečního data lze používat pole **Datum zahájení základní prognózy – počáteční datum**. Například v červnu mohou uživatelé generovat prognózu pro příští rok. Vzhledem k tomu, že intervaly prognóz mezi koncem historické poptávky a zahájením základní poptávky chybí, nemusí být předpovědi přesné. Pokud používáte službu prognózy poptávky aplikace Microsoft Dynamics 365 for Finance and Operations, máte k dispozici čtyři způsoby, jak vyplnit chybějící mezery. Můžete zvolit požadovanou metodu nastavením parametru MISSING\_VALUE\_SUBSTITUTION na stránce **Parametry tvorby prognóz poptávky**. 
 
 Pole **Datum zahájení základní prognózy** - **počáteční datum** musí být nastaveno na začátek intervalu prognózy, například v USA na neděli, pokud je interval prognózy nastaven na týden. Systém automaticky nastaví pole **Datum zahájení základní prognózy** - **počáteční datum** tak, aby odpovídalo začátku intervalu prognózy. 
 
@@ -72,7 +71,6 @@ Pokud se prognóza nevygeneruje pro velkou sadu položek, ale například vždy 
 [Ruční úpravy základní prognózy](manual-adjustments-baseline-forecast.md)
 
 [Autorizování upravené prognózy](authorize-adjusted-forecast.md)
-
 
 
 

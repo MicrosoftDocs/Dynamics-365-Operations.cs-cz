@@ -1,13 +1,13 @@
 ---
-title: "Metoda přidělení celkových nákladů"
-description: "Toto téma obsahuje pokyny pro používání celkových přidělených nákladů. Celkové přidělené náklady je metoda výpočtu nákladů mezi hlavní položkou receptury pro dávkovou objednávku a vedlejšími produkty, které jsou definovány pro recepturu."
+title: Metoda přidělení celkových nákladů
+description: Toto téma obsahuje pokyny pro používání celkových přidělených nákladů. Celkové přidělené náklady je metoda výpočtu nákladů mezi hlavní položkou receptury pro dávkovou objednávku a vedlejšími produkty, které jsou definovány pro recepturu.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConsistOf, PmfFormulaCoBy
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cda1c5251b81a3bb73d4d8703d7c3fa1ab4e9c16
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f3d75411e8c99365f1aba8214c78e93b4741871
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341573"
 ---
-
 # <a name="total-cost-allocation-method"></a>Metoda přidělení celkových nákladů
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,6 @@ Pole **Přidělení nákladů vedlejšího produktu** na stránce **Vedlejší p
 -   **Procento** ─ částka nákladů se vypočítá jako procento z celkových nákladů na suroviny, které jsou spotřebovány ve výrobě. Do pole se zadává podíl, který se používá pro výpočet.
 -   **Po řadách** ─ částka nákladů se vypočítává jako částka pro standardní velikost dávky ve výrobní zakázce. Tato částka je nezávislá na hlášeném množství ve výrobě. Do pole se zadává částka, která se používá pro výpočet.
 -   **Podle množství** ─ částka nákladů se vypočítává jako částka za hlášené množství položky receptury ve výrobě. Do pole se zadává částka, která se používá pro výpočet.
-
 
 
 

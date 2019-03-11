@@ -1,13 +1,13 @@
 ---
-title: "Nastavení mobilních zařízení pro práci ve skladu"
-description: "Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení."
+title: Nastavení mobilních zařízení pro práci ve skladu
+description: Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
 ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/03/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347944"
 ---
-
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
 [!include [banner](../includes/banner.md)]
@@ -174,7 +173,7 @@ Po provedení počáteční akce pro mobilním zařízení můžete nastavit pol
 </tr>
 <tr>
 <td>Načtení registrační značky</td>
-<td>Tuto možnost použijte při prvotním nastavení skladu. Naskenujte všechny registrační značky ve všech skladových místech ve skladu. Skladové místo musí být řízeno registrační značkou. Tuto možnost nelze použít, pokud <strong>sériové číslo</strong> nebo <strong>číslo dávky</strong> je uvedeno nad <strong>skladovým místem</strong> v hierarchii rezervací zásob.</td>
+<td>Tuto možnost použijte při prvotním nastavení skladu. Naskenujte všechny registrační značky ve všech skladových místech ve skladu. Skladové místo musí být řízeno registrační značkou. Tuto možnost nelze použít, pokud <strong>Sériové číslo</strong> nebo <strong>Číslo dávky</strong> je uvedeno nad <strong>skladovým místem</strong> v hierarchii rezervací zásob.</td>
 </tr>
 <tr>
 <td>Cyklická inventura</td>
@@ -208,12 +207,12 @@ Kromě nastavení položek nabídky pro vytvoření skladové práce můžete na
 </thead>
 <tbody>
 <tr class="odd">
-<td>None</td>
+<td>Neomezeno</td>
 <td>Tato výchozí hodnota práci nezpracuje.</td>
 </tr>
 <tr class="even">
 <td>Řízeno systémem</td>
-<td>Aplikace Microsoft Dynamics 365 for Finance and Operations určuje typ práce, která je přiřazena k pracovníkovi, a pořadí, ve kterém pracovník provádí práci. Pokud vyberete tuto možnost, můžete klepnout na <strong>Práce řízená systémem</strong> v podokně Akce a otevřít tak stránku <strong>Pořadí řazení řízené systémem</strong>, kde můžete nastavit kritéria pro pracovní třídění. Kritéria třídění řídí pořadí, ve kterém pracovník provádí práci. Můžete přidat tolik kritérií, kolik potřebujete.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations určuje typ práce, která je přiřazena k pracovníkovi, a pořadí, ve kterém pracovník provádí práci. Pokud vyberete tuto možnost, můžete klepnout na <strong>Práce řízená systémem</strong> v podokně Akce a otevřít tak stránku <strong>Pořadí řazení řízené systémem</strong>, kde můžete nastavit kritéria pro pracovní třídění. Kritéria třídění řídí pořadí, ve kterém pracovník provádí práci. Můžete přidat tolik kritérií, kolik potřebujete.</td>
 </tr>
 <tr class="odd">
 <td>Řízeno uživatelem</td>
@@ -225,7 +224,7 @@ Kromě nastavení položek nabídky pro vytvoření skladové práce můžete na
 </tr>
 <tr class="odd">
 <td>Systémové seskupení</td>
-<td>Aplikace Microsoft Dynamics 365 for Finance and Operations seskupí práci pro pracovníka na základě zadaného pole. Například výdej bude seskupen, jakmile pracovník naskenuje ID dodávky, ID vytížení nebo jinou hodnotu, kterou lze propojit každá pracovní položka. Pokud tuto možnost vyberete, budou k dispozici následující pole:
+<td>Microsoft Dynamics 365 for Finance and Operations seskupí práci pro pracovníka na základě zadaného pole. Například výdej bude seskupen, jakmile pracovník naskenuje ID dodávky, ID vytížení nebo jinou hodnotu, kterou lze propojit každá pracovní položka. Pokud tuto možnost vyberete, budou k dispozici následující pole:
 <ul>
 <li><strong>Pole systémového seskupení</strong> - vyberte pole, které pracovník naskenuje pro seskupení práce.</li>
 <li><strong>Popisek systémového seskupení</strong> - zadejte text, který informuje pracovníka o tom, co při seskupení práce naskenovat.</li>
@@ -367,7 +366,7 @@ Následující tabulka obsahuje popis těchto možností.
 </tr>
 <tr class="even">
 <td>Pole systémového seskupení</td>
-<td>Vyberte pole, které určuje způsob, jak aplikace Microsoft Dynamics 365 for Finance and Operations seskupí práci výdeje pro pracovníka. Pokud například vyberete pole <strong>ShipmentId</strong>, pracovník naskenuje ID dodávky pro seskupení práce výdeje. Všechna práce pro dodávku bude přiřazena pracovníkovi. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Musíte také zadat text do pole <strong>Popisek systémového seskupení</strong> a informovat tak pracovníka o tom, co naskenovat.</td>
+<td>Vyberte pole, které určuje způsob, jak aplikace Microsoft Dynamics 365 for Finance and Operations seskupí práci výdeje pro pracovníky. Pokud například vyberete pole <strong>ShipmentId</strong>, pracovník naskenuje ID dodávky pro seskupení práce výdeje. Všechna práce pro dodávku bude přiřazena pracovníkovi. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Musíte také zadat text do pole <strong>Popisek systémového seskupení</strong> a informovat tak pracovníka o tom, co naskenovat.</td>
 </tr>
 <tr class="odd">
 <td>Popisek systémového seskupení</td>
@@ -420,6 +419,5 @@ Následující tabulka popisuje různé typy práce, se kterým můžete použí
 
 [Nastavení položky nabídky v mobilním zařízení pro registraci přijatých položek (Průvodce záznamem úloh)](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 [Výhody používání stavů zásob](../inventory/inventory-statuses.md)
-
 
 

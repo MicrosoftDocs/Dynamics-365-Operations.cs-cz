@@ -1,13 +1,13 @@
---- 
-title: "Konfigurace zpracování vlny"
-description: "Tento průvodce popisuje, jak nastavit kritéria určující práci, která vznikne pro sklad při zpracování vlny, a zda jsou vlny zpracovány ručně nebo automaticky."
+---
+title: Konfigurace zpracování vlny
+description: Tento průvodce popisuje, jak nastavit kritéria určující práci, která vznikne pro sklad při zpracování vlny, a zda jsou vlny zpracovány ručně nebo automaticky.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 399146d35388a0151abb23e57bc36ec0173be928
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f7a6db585468c235e07c4a0117a83995ec93f4b0
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337502"
 ---
 # <a name="configure-wave-processing"></a>Konfigurace zpracování vlny
 
@@ -68,5 +68,4 @@ Tento průvodce popisuje, jak nastavit kritéria určující práci, která vzni
 24. V poli Uvolnit do skladu vyberte požadovanou možnost.
     * V případě prodejních objednávek a zakázek kanbanu je třeba vyhradit zásoby před vydáním objednávky do skladu. V opačném případě položky nebo řádky přidělení nelze zpracovat ve vlně. Pro výrobní zakázky můžete také využít možnost Povolit částečnou rezervaci. Například je to užitečné v případě, kdy vlastníte materiály potřebné k zahájení výroby, a můžete počkat, než budou pro dokončení procesu k dispozici další materiály. Pokud vyberete tuto možnost, je nutné ručně opakovat proces vydání do skladu, jakmile budou k dispozici další materiály.  
 25. Zavřete stránku.
-
 

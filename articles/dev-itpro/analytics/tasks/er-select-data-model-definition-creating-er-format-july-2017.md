@@ -1,13 +1,13 @@
---- 
-title: "Výběr definic datového modelu při vytváření formátů"
-description: "K provedení kroků v tomto postupu musíte nejprve dokončit postup \"ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního\"."
+---
+title: Výběr definic datového modelu při vytváření formátů
+description: K provedení kroků v tomto postupu musíte nejprve dokončit postup "ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: dc357db8acbdb98741a694a8a9d3c0c0625c50e4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334489"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Výběr definic datového modelu při vytváření formátů
 
@@ -81,7 +81,7 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
     * Pomocí návrháře ER určete mapování modelu pro požadované kořenové položky.  
 2. Klikněte na možnost Návrhář.
     * Simulujte nastavení vybraného mapování modelu pro kořenovou položku vybraného modelu.  
-3. Ve stromové struktuře vyberte Dynamics 365 for Operations\Záznamy tabulky.
+3. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.
 4. Klikněte na možnost Přidat kořen.
 5. Do pole Název zadejte Hlavní kniha.
 6. Do pole Tabulka zadejte hodnotu „LedgerJournalTrans“.
@@ -98,5 +98,4 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
 4. V poli Definice datového modelu zadejte nebo vyberte hodnotu.
     * Nyní je tak k dispozici k mapování zdrojů dat aplikace pouze jedna kořenová položka. Po uvedení alespoň jednoho modelu mapování jsou mapovány ke zdrojům dat aplikace pouze kořenové položky modelu, které lze vybrat jako definici modelu po přidání formátu ER.   
 5. Zavřete stránku.
-
 

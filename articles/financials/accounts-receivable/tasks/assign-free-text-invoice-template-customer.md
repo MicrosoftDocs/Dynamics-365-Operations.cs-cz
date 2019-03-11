@@ -1,13 +1,13 @@
---- 
-title: "Přiřazení šablony volné faktury k odběrateli"
-description: "Tato úloha demonstruje způsob, jak přiřadit šablonu volné faktury pro odběratele."
+---
+title: Přiřazení šablony volné faktury k odběrateli
+description: Tato úloha demonstruje způsob, jak přiřadit šablonu volné faktury pro odběratele.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 317b3bd4c1f395987ef3dbbd268c40be5c688320
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318918"
 ---
 # <a name="assign-free-text-invoice-template-to-a-customer"></a>Přiřazení šablony volné faktury k odběrateli
 
@@ -48,5 +48,4 @@ Tato úloha demonstruje způsob, jak přiřadit šablonu volné faktury pro odb�
 10. Vyberte způsob opakování.
     * Denně – Vyberte tuto možnost a zadejte počet dní do pole Za. Například pokud zadáte 15, faktura bude pro tohoto odběratele vygenerována každých 15 dnů.  Týdně – Vyberte tuto možnost a zadejte počet týdnů do pole Za. Například pokud zadáte 2, faktura bude pro tohoto odběratele vygenerována každé dva týdny.  Měsíčně – Vyberte tuto možnost a zadejte počet měsíců do pole Za. Například pokud zadáte 6, faktura bude pro tohoto odběratele vygenerována každých šest měsíců.  Ročně – Vyberte tuto možnost a zadejte počet roků do pole Za. Například pokud zadáte 2, faktura bude pro tohoto odběratele vygenerována každé dva roky.  
 11. Do pole Za zadejte číslo.
-
 

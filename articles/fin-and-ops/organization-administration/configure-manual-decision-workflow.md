@@ -1,13 +1,13 @@
 ---
-title: "Konfigurace ručních rozhodnutí ve workflow"
-description: "Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního rozhodnutí."
+title: Konfigurace ručních rozhodnutí ve workflow
+description: Toto téma vysvětluje, jak nakonfigurovat vlastnosti ručního rozhodnutí.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d09e99a5bf99593a8fa7682f9d4f29eaa4e7c836
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341389"
 ---
-
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurace ručních rozhodnutí ve workflow
 
 [!include [banner](../includes/banner.md)]
@@ -164,7 +163,7 @@ Můžete odeslat oznámení uživatelům, jakmile bude rozhodnutí provedeno, de
     </tr>
     <tr>
     <td>Uživatel</td>
-    <td>Konkrétní uživatelé aplikace Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Konkrétní uživatelé Microsoft Dynamics 365 for Finance and Operations</td>
     <td>
     <ol>
     <li>Po výběru možnosti <strong>Uživatel</strong> klepněte na kartu <strong>Uživatel</strong>.</li>
@@ -372,4 +371,3 @@ Tento postup použijte, pokud je rozhodnutí nutné učinit v určitém čase.
     - **Roky** – vyberte den, týden a měsíc, do kdy má být rozhodnutí učiněno. Můžete například požadovat, aby bylo rozhodnutí učiněno do třetího pátku v prosinci.
 
 4. Dojde-li k překročení časového limitu, systém učiní rozhodnutí. V seznamu **Akce** vyberte možnost, která má být vybrána.
-

@@ -1,13 +1,13 @@
 ---
 title: Simulace ceny
-description: "Tento článek obsahuje informace o simulaci cen pro nabídky. Simulace cen umožňuje vyhodnotit vliv srážek na budoucí prodejní ceny v průběhu nabídky, a to před potvrzením konkrétní ceny."
+description: Tento článek obsahuje informace o simulaci cen pro nabídky. Simulace cen umožňuje vyhodnotit vliv srážek na budoucí prodejní ceny v průběhu nabídky, a to před potvrzením konkrétní ceny.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316526"
 ---
-
 # <a name="price-simulation"></a>Simulace ceny
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ Aby byl zajištěn správný výpočet slev a cen, je nutné dbát při spuště
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typy slev v obchodních smlouvách
 
-Obchodní smlouvy v aplikaci Microsoft Dynamics 365 for Finance and Operations mohou obsahovat čtyři typy slev. Tyto slevy mohou být nastaveny pro různé položky, zákazníky či cenové skupiny a mohou být omezeny datem. Při spuštění cenové simulace je nutné brát ohled na obchodní smlouvy, aby nedošlo k chybnému výpočtu. U obchodních smluv jsou k dispozici tyto čtyři typy slev:
+Obchodní slevy v aplikaci Microsoft Dynamics 365 for Finance and Operations mohou mít čtyři typy slev. Tyto slevy mohou být nastaveny pro různé položky, zákazníky či cenové skupiny a mohou být omezeny datem. Při spuštění cenové simulace je nutné brát ohled na obchodní smlouvy, aby nedošlo k chybnému výpočtu. U obchodních smluv jsou k dispozici tyto čtyři typy slev:
 
 -   **Prodejní cena** – pro položky lze zadat zvláštní prodejní ceny. Při vytváření řádků nabídky program vyhledá správnou prodejní cenu pro určitou položku a převede ji do řádků nabídky. Obchodní smlouva s tímto typem slevy tedy neovlivní simulaci ceny. Prodejní cena, která je použita na řádku nabídky, odpovídá obchodní smlouvě.
 -   **Řádková sleva** – v závislosti na objednaném množství jsou určeny speciální slevy pro položky. Částky na řádku jsou obvykle sníženy o řádkovou slevu ještě před spuštěním simulace ceny. Obchodní smlouva s tímto typem slevy tedy ovlivní simulaci ceny.
@@ -143,7 +142,6 @@ Spusťte simulaci ceny a uplatněte 10procentní celkovou slevu na jednotky BR-1
 | Nový celkový příspěvkový poměr                      | \[(302,88 – 184,96) ÷ 302,88\] × 100    | 38,93 %   |
 
 Simulace ceny ovlivňuje pouze řádek, pro který byla použita, a snižuje celkovou hodnotu pro daný řádek.
-
 
 
 

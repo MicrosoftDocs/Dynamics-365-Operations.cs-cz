@@ -1,13 +1,13 @@
 ---
-title: "Úprava ID faktury v prodejních objednávkách pro východní Evropu"
-description: "Toto téma obsahuje informace o parametrech pohledávek ovlivňujících čísla faktur na dodacích listech a fakturách pro Českou republiku, Estonsko, Maďarsko, Litvu, Lotyšsko a Polsko."
+title: Úprava ID faktury v prodejních objednávkách pro východní Evropu
+description: Toto téma obsahuje informace o parametrech pohledávek ovlivňujících čísla faktur na dodacích listech a fakturách pro Českou republiku, Estonsko, Maďarsko, Litvu, Lotyšsko a Polsko.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: fab099ccd8f3dd9269143670fee0abdc24ff4782
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0c82abe7a34d5882611f0fbd54b2817d54c11eaa
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370087"
 ---
-
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Úprava ID faktury v prodejních objednávkách pro východní Evropu
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsk
 </tr>
 </tbody>
 </table>
-
 
 
 

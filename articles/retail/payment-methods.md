@@ -1,13 +1,13 @@
 ---
 title: Metody platby
-description: "Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému. Tento článek popisuje typy plateb, které lze nastavit, a také proces jejich nastavení."
+description: Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému. Tento článek popisuje typy plateb, které lze nastavit, a také proces jejich nastavení.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 60f0a2e5fa2dc2bc37a04b159a4834a52117893d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 1ba80e48c8b3b5ed94b9e03302788099a1d31909
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328969"
 ---
-
 # <a name="payment-methods"></a>Metody platby
 
 [!include [banner](includes/banner.md)]
 
 Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému. Tento článek popisuje typy plateb, které lze nastavit, a také proces jejich nastavení.
 
-Maloobchodní prodejci mohou přijímat různé typy plateb za výrobky a služby, které prodávají. I když jsou hotovostní platby nejčastěji používaným typem platby, maloobchodní prodejci mohou také přijímat platby ve formě šeků, karet, kuponů apod. Každý typ platby, kterou přijímá prodejce, musí být nakonfigurován v části Maloobchodní a velkoobchodní prodej v aplikaci Dynamics 365 for Retail při nastavení systému. Následující seznam popisuje každý typ platby, který lze nastavit v části Maloobchodní a velkoobchodní prodej v aplikaci Dynamics 365 for Retail:
+Maloobchodní prodejci mohou přijímat různé typy plateb za výrobky a služby, které prodávají. I když jsou hotovostní platby nejčastěji používaným typem platby, maloobchodní prodejci mohou také přijímat platby ve formě šeků, karet, kuponů apod. Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému v aplikaci Dynamics 365 for Retail. Následující seznam popisuje každý typ platby, který lze nastavit v části Maloobchodní a velkoobchodní prodej v aplikaci Dynamics 365 for Retail:
 
 - **Hotovost** – peníze v podobě fyzické měny, například bankovky a mince. Měnou může být měna společnosti nebo místní měna obchodu.
 - **Šek** – převoditelný nástroj opravňující k výběru určité částky v určité měně z uvedené banky. Šek má obvykle platnost neomezeně nebo šest měsíců od data vystavení, pokud není určena jiná doba platnosti. Toto období závisí na tom, z jaké banky se šek vybírá. Existují různé druhy šeků, například šeky na jméno, šekové formuláře, šeky na doručitele, šeky na řad. Můžete nastavit šeky jako způsob platby pro každý obchod. Šeky lze přijímat v měně definované na úrovni společnosti nebo na úrovni obchodu. Musíte nastavit šeky jako způsob platby dříve, než budete moci jako platbu v obchodě přijímat šeky.
@@ -50,4 +49,3 @@ K nastavení způsobů platby je třeba dokončit následující úlohy.
 2. Vytvoření celoorganizačních typů karet a čísel karet. Budou-li přijímány kreditní nebo debetní karty, je třeba vytvořit jeden typ úhrady pro karty a poté vytvořit celoorganizační typy karet a čísla karet.
 3. Nastavte platební metody obchodu. Přiřaďte způsoby plateb ke každému obchodu a poté zadejte konkrétní nastavení pro každý způsob platby.
 4. Nastavte karetní platební metody pro obchody. Pro jakékoli metody platby kartou, které obchod přijímá, dokončete nastavení karty.
-

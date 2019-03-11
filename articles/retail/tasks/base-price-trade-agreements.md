@@ -1,13 +1,13 @@
---- 
+---
 title: " Základní cena a obchodní smlouvy"
-description: "Tato procedura vás provede postupem vytváření obchodních smluv prodejních cen specifických pro kanál."
+description: Tato procedura vás provede postupem vytváření obchodních smluv prodejních cen specifických pro kanál.
 author: josaw1
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PriceDiscGroup, RetailStoreTable, RetailChannelPriceGroup, EcoResProductDetailsExtended, PriceDiscAdmTable, PriceDiscAdm
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4830ac553318cfbb3cb74395d1662e74dff75290
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 81c70921718e41719470c7428c05a9f7ae77354a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320413"
 ---
 # <a name="base-price-and-trade-agreements"></a> Základní cena a obchodní smlouvy
 
@@ -74,5 +74,4 @@ Tato procedura vás provede postupem vytváření obchodních smluv prodejních 
 37. Zavřete stránku.
 38. V podokně akcí klikněte na možnost Prodej.
 39. Klikněte na možnost Prodejní cena.
-
 

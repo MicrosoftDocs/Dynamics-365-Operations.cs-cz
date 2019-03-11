@@ -1,32 +1,31 @@
 ---
-title: "Rozložení obrazovky ukázkových dat v Retail Modern POS (MPOS) a Cloud POS"
-description: "Toto téma poskytuje informace o rozvrženích obrazovky, která jsou zahrnuta se sadou ukázkových dat v uživatelském prostředí pokladních míst (POS) v aplikaci Microsoft Dynamics 365 for Retail."
+title: Rozložení obrazovky ukázkových dat v Retail Modern POS (MPOS) a Cloud POS
+description: Toto téma poskytuje informace o rozvrženích obrazovky, která jsou zahrnuta se sadou ukázkových dat v uživatelském prostředí pokladních míst (POS) v aplikaci Microsoft Dynamics 365 for Retail.
 author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352475"
 ---
-
 # <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Rozložení obrazovky ukázkových dat v Retail Modern POS (MPOS) a Cloud POS
 
 [!include [banner](includes/banner.md)]
@@ -108,7 +107,7 @@ Následující tabulka zobrazuje velikosti rozvržení, které jsou k dispozici 
 \* Tyto dodatečné velikosti rozvržení jsou k dispozici pouze v rozvrženích Fabrikam a Adventure Works.
 
 > [!TIP]
-> POS automaticky vybere velikost rozvržení, v závislosti na nejbližší velikosti, která je k dispozici pro rozlišení obrazovky aktuálního okna aplikace. Pokud chcete nalézt ID rozvržení obrazovky a rozlišení rozvržení, která jsou aktuálně používána v Retail Modern POS (MPOS) nebo v Retail Cloud POS (CPOS), otevřete stránku **Nastavení** a nahlédněte do části **Informace o relaci**. Můžete také vidět skutečné rozlišení okna vaší aktuální aplikace nebo rámce prohlížeče. Jakmile máte tyto informace, lze vyhledat zdroj obsahu rozvržení v aplikaci Retail přechodem na **Nastavení kanálu** \> **Nastavení POS** \> **POS** \> **Rozvržení obrazovky**.
+> POS automaticky vybere velikost rozvržení, v závislosti na nejbližší velikosti, která je k dispozici pro rozlišení obrazovky aktuálního okna aplikace. Pokud chcete nalézt ID rozvržení obrazovky a rozlišení rozvržení, která jsou aktuálně používána v Retail Modern POS (POS) nebo v Retail Cloud POS (CPOS), otevřete stránku **Nastavení** a nahlédněte do části **Informace o relaci**. Můžete také vidět skutečné rozlišení okna vaší aktuální aplikace nebo rámce prohlížeče. Jakmile máte tyto informace, lze vyhledat zdroj obsahu rozvržení v aplikaci Retail přechodem na **Nastavení kanálu** \> **Nastavení POS** \> **POS** \> **Rozvržení obrazovky**.
 
 ![Rozvržení obrazovky a rozlišení rozvržení/velikosti v aplikaci Retail a v POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 
@@ -175,4 +174,3 @@ Pro různá rozvržení obrazovky byli zadáni uživatelé. Pomocí následujíc
 <!-- Use the [POS Icon and Image Mapping](../retail/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 
 <!-- END HIDDEN CONTENT -->
-

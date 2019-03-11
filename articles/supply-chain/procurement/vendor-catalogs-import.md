@@ -1,37 +1,36 @@
 ---
-title: "Import katalogů dodavatele"
-description: "Toto téma popisuje proces importu dat katalogu dodavatele."
+title: Import katalogů dodavatele
+description: Toto téma popisuje proces importu dat katalogu dodavatele.
 author: mkirknel
 manager: AnnBe
 ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: cf81823de46da9a834f0214896b9e634989cac0e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ac7754bd6361ad74f7ab4d564ae3114dd4b9f165
-ms.openlocfilehash: caf801ea27ade63c24bb0907313e7f8294c50702
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362020"
 ---
-
 # <a name="import-vendor-catalogs"></a>Import katalogů dodavatele
 [!include[banner](../includes/banner.md)]
 
 ## <a name="vendor-catalogs-import"></a>Import katalogů dodavatele
 
-V aplikaci Microsoft Dynamics 365 for Finance and Operations mohou nakupující profesionálové vytvářet a udržovat katalogy pro zaměstnance společnosti k použití při objednávání položek a služeb pro interní použití. Chcete-li vytvořit zásobovací katalog, můžete přidat položky a služby, které chcete zpřístupnit zaměstnancům, buď importem dat katalogu produktů nebo ručním přidáním dat katalogu produktů do základního produktu. 
+V aplikaci Microsoft Dynamics 365 for Finance and Operations mohou nakupující profesionálové vytvářet a udržovat katalogy, které zaměstnanci společnosti mohou použít při objednání položek a služeb pro interní použití. Chcete-li vytvořit zásobovací katalog, můžete přidat položky a služby, které chcete zpřístupnit zaměstnancům, buď importem dat katalogu produktů nebo ručním přidáním dat katalogu produktů do základního produktu. 
 
 Můžete načíst data katalogu odeslaná dodavatelem z klienta aplikace Microsoft Dynamics 365.
 
@@ -53,7 +52,7 @@ Chcete-li importovat data katalogu dodavatele, je nutné provést následující
 
 6.  Odešlete soubor CMR.
 
-7.  Zrevidujte, schvalte nebo zamítněte produkty v katalogu dodavatele. Produkty jsou automaticky namapovány na kategorie zásobování v aplikaci Dynamics 365 for Finance and Operations. 
+7.  Zrevidujte, schvalte nebo zamítněte produkty v katalogu dodavatele. Produkty, které jsou automaticky přiřazeny do kategorie zásobování Dynamics 365 for Finance and Operations. 
     
 Schválené produkty jsou přidány do základního produktu a jsou uvolněny pro vybrané právnické osoby. Pouze schválené produkty lze přidat do zásobovacího katalogu.
 
@@ -70,4 +69,3 @@ Soubor šablony pro import katalogu je soubor průmyslového standardu XSD, kter
 3. V dialogovém okně **Uložit jako** vyberte umístění, do kterého chcete šablonu souboru s katalogem uložit a soubor uložte.
 
 Další informace a příklady naleznete v tomto příspěvku blogu: [Katalogy dodavatele v aplikaci Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
-

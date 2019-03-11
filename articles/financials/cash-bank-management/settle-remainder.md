@@ -1,34 +1,31 @@
 ---
-title: "Vyrovnání zůstatku"
-description: "Částku zbývající z aktivity vyrovnání můžete vyrovnat použitím částky na účet hlavní knihy."
+title: Vyrovnání zůstatku
+description: Částku zbývající z aktivity vyrovnání můžete vyrovnat použitím částky na účet hlavní knihy.
 author: mikefalkner
 manager: aolson
 ms.date: 10/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
-ms.search.validFrom: 2018-11-30
-ms.dyn365.ops.version: 8.1.1
+ms.search.validFrom: 2018-12-01
+ms.dyn365.ops.version: 8.1.3
+ms.openlocfilehash: 408a36a7cf221463b38260bd8830b422e58ccb64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
-ms.openlocfilehash: e67bd36adc92bffea48087d0322ab14e9c066a4e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/06/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367195"
 ---
-
 # <a name="settle-remainder"></a>Vyrovnání zůstatku
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview banner](../includes/preview-banner.md)]
 
 Částku zbývající z aktivity vyrovnání můžete vyrovnat použitím částky na účet hlavní knihy nebo jiného zákazníka. Zůstatek můžete vyrovnat, když vyrvnáváte částky zadané do deníku nebo když vyrovnáváte pouze otevřené transakce.
 
@@ -73,4 +70,3 @@ Pro vyrovnání zbývající částky proveďte následující kroky:
 7)  Můžete také vytvořit deník plateb se zbývající částkou vyrovnání nebo ji zaúčtovat bez deníku. Vyberte **Ano** pro **Upravit v deníku** pro vytvoření deníku plateb. Budete moci upravit deník plateb, který vytvoříte.
 8)  Klikněte na **Vyrovnat zůstatek**. Pokud chcete vytvořit deník, tlačítko se změní na **Vytvořit deník**. Namísto toho klikněte na **Vytvořit deník**.
 9)  Jestliže jste vytvořili deník plateb, stránka deníku se otevře po klepnutí na tlačítko **Vyrovnání zůstatku**. Do deníku bude přidán řádek deníku se zbývající částkou vyrovnání a s účtem vyrovnání zůstatku jako protiúčtem. Pokud jste přidali odběratele nebo dodavatele, abyste mohli přesunout částku vyrovnání na jiného odběratele nebo dodavatele, do deníku bude přidán další řádek pro přesun částky vyrovnání danému odběrateli nebo dodavateli.
-

@@ -1,13 +1,13 @@
 ---
-title: "Pracovní prostor správy banky"
-description: "Toto téma poskytuje informace o pracovním prostoru Správa banky. Tento pracovní prostor zobrazuje Informace, které se vztahují k bankovním účtům společnosti a obsahují souhrnné zobrazení a stránku analýzy. Souhrnné zobrazení ukazuje souhrnné dlaždice, informace o bankovním účtu, graf zůstatku a související informace. Na stránce analýzy se používají funkce Microsoft Power BI k zobrazení vizuálů, které se vztahují k zůstatkům na bankovním účtu."
+title: Pracovní prostor správy banky
+description: Toto téma poskytuje informace o pracovním prostoru Správa banky. Tento pracovní prostor zobrazuje Informace, které se vztahují k bankovním účtům společnosti a obsahují souhrnné zobrazení a stránku analýzy. Souhrnné zobrazení ukazuje souhrnné dlaždice, informace o bankovním účtu, graf zůstatku a související informace. Na stránce analýzy se používají funkce Microsoft Power BI k zobrazení vizuálů, které se vztahují k zůstatkům na bankovním účtu.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: fdc0d1e5ea02cdcff9f7f5ede4ab685f54365698
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 3c38807e9ed3b2ced37ada35b72e388c125bd654
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/05/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348358"
 ---
 # <a name="bank-management-workspace"></a>Pracovní prostor správy banky
 
 [!include [banner](../includes/banner.md)]
 
-Pracovní prostor **Správa banky** zobrazuje informace, které se vztahují k bankovním účtům společnosti. Tento pracovní prostor obsahuje zobrazení **Souhrn** a stránku **Analýzy**. Zobrazení **Souhrn** ukazuje souhrnné dlaždice, informace o bankovním účtu, graf zůstatku a související informace. Stránka **Analýza** používá funkce Microsoft Power BI k zobrazení vizuálů, které se vztahují k zůstatkům na bankovním účtu.
+Pracovní prostor **Správa banky** zobrazuje informace, které se vztahují k bankovním účtům společnosti. Tento pracovní prostor obsahuje zobrazení **Souhrn** a stránku **Analýzy**. Zobrazení **Souhrn** ukazuje souhrnné dlaždice, informace o bankovním účtu, graf zůstatku a související informace. Na stránce **Analýzy** se používají funkce Microsoft Power BI k zobrazení vizuálů, které se vztahují k zůstatkům na bankovním účtu.
 
 ## <a name="summary-view"></a>Souhrnné zobrazení
 
@@ -64,4 +64,3 @@ Stránka **Analýza** poskytuje důležité metriky o bankovních účtech v akt
 -   Zůstatek podle měny
 
 Zobrazit bankovní analýzu napříč všemi společnostmi můžete z pracovního prostoru **Přehled hotovosti – všechny společnosti**.
-

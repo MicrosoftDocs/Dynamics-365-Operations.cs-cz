@@ -1,13 +1,13 @@
---- 
-title: "Definování mapování modelů elektronického výkaznictví a výběr zdrojů dat"
-description: "Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vybrat zdroje dat pro datový model Elektronické výkaznictví."
+---
+title: Definování mapování modelů elektronického výkaznictví a výběr zdrojů dat
+description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vybrat zdroje dat pro datový model Elektronické výkaznictví.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b5f2f2c699514d723f42f5d1fb25724f46dfc4f4
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348864"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definování mapování modelů elektronického výkaznictví a výběr zdrojů dat
 
@@ -51,7 +51,7 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 
 ## <a name="define-required-data-sources-for-the-current-model-mapping"></a>Definování požadovaných zdrojů dat pro aktuální mapování modelu
 1. Klikněte na možnost Návrhář.
-2. Ve stromové struktuře vyberte Dynamics 365 for Operations\Záznamy tabulky.
+2. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.
 3. Klikněte na možnost Přidat kořen.
     * Zadejte tento zdroj dat pro přístup k platebním transakcím.  
 4. Zadejte text „Transakce“ do pole Název.
@@ -110,7 +110,7 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 41. Ve stromovém zobrazení rozbalte možnost Transakce.
 42. Ve stromové struktuře rozbalte nebo sbalte Transactions\$Amount.
 43. Ve stromové struktuře rozbalte nebo sbalte 'Transakce'.
-44. Ve stromové struktuře vyberte Dynamics 365 for Operations\Záznamy tabulky.
+44. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.
 45. Klikněte na možnost Přidat kořen.
     * Zadejte tento zdroj dat pro přístup k podrobnostem o bankovním účtu společnosti.  
 46. Zadejte text „BankAccount“ do pole Název.
@@ -157,5 +157,4 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 70. Zavřete stránku.
 71. Zavřete stránku.
 72. Zavřete stránku.
-
 

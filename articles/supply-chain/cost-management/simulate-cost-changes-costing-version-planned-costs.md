@@ -1,13 +1,13 @@
 ---
-title: "Simulace změn nákladů pomocí nákladové verze pro plánované náklady"
-description: "Tento článek popisuje simulaci účinků změn nákladů na vypočtené náklady vyráběné položky za použití samostatné nákladové verze pro plánované náklady."
+title: Simulace změn nákladů pomocí nákladové verze pro plánované náklady
+description: Tento článek popisuje simulaci účinků změn nákladů na vypočtené náklady vyráběné položky za použití samostatné nákladové verze pro plánované náklady.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ef3cdb2ede2c30609db4addfc10b819629cdc64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8d5b6354ee8c627014a6da675bb2a7b52db97348
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318872"
 ---
-
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulace změn nákladů pomocí nákladové verze pro plánované náklady
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ V následujícím scénáři je znázorněno, jak je použita nákladová verze 
 -   Proveďte simulaci změny nákladů ve vzorci pro výpočet nepřímých nákladů. Změna nákladů může například odrážet předpokládané zvýšení nebo snížení režijních nákladů. Chcete-li definovat změnu ve vzorci pro výpočet nepřímých nákladů, na stránce **Nastavení nákladového formuláře** zadejte nevyřízený nákladový záznam v simulaci nákladové verze a ověřte a uložte změnu.
 
 Po zadání simulovaných změn nákladů vypočtěte náklady pro vyráběné položky, které jsou ovlivněny změnami nákladů. Použijte stránku **Výpočet** pro simulaci nákladové verze a určete vybrané vyráběné položky, které budou ovlivněny změnami nákladů. Pokud nevyberete konkrétní položky, budou pro všechny vyráběné položky použity výpočty kusovníku. Jinou možností je použití volby výpočtu kusovníku pro případně použité aktualizace. Zobrazte nákladové záznamy položky v nákladové verzi simulace k analýze způsobu, jakým simulované změny nákladů ovlivnily náklady pro vybrané vyráběné položky. Pomocí stránky **Cena položky** a **Vypočítat náklady na zboží** můžete zobrazit a analyzovat náklady.
-
 
 
 

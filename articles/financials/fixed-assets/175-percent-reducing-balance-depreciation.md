@@ -1,13 +1,13 @@
 ---
-title: "Degresivní odpis 175 %"
-description: "Toto téma poskytuje přehled metody degresivního odpisu 175 %."
+title: Degresivní odpis 175 %
+description: Toto téma poskytuje přehled metody degresivního odpisu 175 %.
 author: saraschi2
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2a63293dbf24c27733f8013947aeab5792fa0db9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8f78eb06930eab26d300fba6fd28333a5ce39cf8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320160"
 ---
-
 # <a name="175-percent-reducing-balance-depreciation"></a>Degresivní odpis 175 %
 
 [!include [banner](../includes/banner.md)]
@@ -80,13 +79,12 @@ Metoda degresivního odepisování 175 % vydělí 175 procent počtem roků živ
 
 | Období | Výpočet částky ročního odpisu | Účetní hodnota                  | Čistá účetní hodnota na konci roku |
 |--------|-----------------------------------------------|-----------------------------|---------------------------------------|
-| Rok 1 | (11 000 – 1 000) × 35 % = 3 500                | 11 000 – 3 500 = 7 500      | 11 000 – 1 000 – 3 500 = 6 500        |
-| Rok 2 | 6 500 × 35 % = 2 275                           | 7 500 – 2 275 = 5 225       | 6 500 – 2 275 = 4 225                 |
-| Rok 3 | 4 225 × 35 % = 1 478,75                        | 5 225 – 1 478,75 = 3 746,25 | 4 225 – 1 478,75 = 2 746,25           |
+| Rok 1 | (11 000 – 1 000) × 35 % = 3 500                | 11 000 – 3 500 = 7 500      | 11 000 – 1 000 – 3 500 = 6 500        |
+| Rok 2 | 6 500 × 35 % = 2 275                           | 7 500 – 2 275 = 5 225       | 6 500 – 2 275 = 4 225                 |
+| Rok 3 | 4 225 × 35 % = 1 478,75                        | 5 225 – 1 478,75 = 3 746,25 | 4 225 – 1 478,75 = 2 746,25           |
 
 > [!NOTE] 
 > Když částka vypočtená s použitím metody 175% degresivního odpisování klesne pod hodnotu menší než má částka, která by byla vypočtena s použitím lineární metody, obvykle dojde k převodu na lineární metodu pro zbytek životnosti.
-
 
 
 

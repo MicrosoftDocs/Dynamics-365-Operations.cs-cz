@@ -1,13 +1,13 @@
---- 
-title: "Odebrání kanbanové úlohy z plánu"
-description: "Tento postup se zaměřuje na odebrání plánovaného zpracování kanbanové úlohy z plánu pomocí změny stavu úlohy na Neplánováno."
+---
+title: Odebrání kanbanové úlohy z plánu
+description: Tento postup se zaměřuje na odebrání plánovaného zpracování kanbanové úlohy z plánu pomocí změny stavu úlohy na Neplánováno.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, SysLookupMultiSelectGrid, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b4d994be5c6bb1edc6f0fc64494a19a5babf72ae
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9a0f246bfe42dde0befdf5c4f01d2ad1e1200b12
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352061"
 ---
 # <a name="remove-a-kanban-job-from-the-schedule"></a>Odebrání kanbanové úlohy z plánu
 
@@ -45,5 +45,4 @@ Tento postup se zaměřuje na odebrání plánovaného zpracování kanbanové �
 3. Klikněte na Vrátit stav úlohy.
 4. Klikněte na tlačítko OK.
     * Tím vrátíte aktuální stav úlohy ze stavu Plánováno na Neplánováno a odeberete ji z panelu procesů.   
-
 

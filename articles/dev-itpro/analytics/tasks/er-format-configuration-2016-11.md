@@ -1,13 +1,13 @@
---- 
-title: "Elektronické vykazování – Vytvoření konfigurace formátu (listopad 2016)"
-description: "Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit konfiguraci formátu pro elektronické výkaznictví."
+---
+title: Elektronické vykazování – Vytvoření konfigurace formátu (listopad 2016)
+description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit konfiguraci formátu pro elektronické výkaznictví.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
+ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377542"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>Elektronické vykazování – Vytvoření konfigurace formátu (listopad 2016)
 
@@ -35,8 +35,10 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo N�
 2. Klikněte na **Konfigurace výkaznictví**.
 3. Ve stromovém zobrazení vyberte možnost **Platby (zjednodušený model)**.
 4. Kliknutím na možnost **Vytvořit konfiguraci** otevřete dialogové okno.
+
  > [!NOTE]
  > Pokud se možnost **Vytvořit konfiguraci** nezobrazuje, musíte povolit režim návrhu na stránce **Parametry elektronického výkaznictví**. 
+ 
 5. V poli **Nový** zadejte **Formát založený na datovém modelu PaymentModel**.
 6. Do pole **Název** zadejte **BACS (Velká Británie – fiktivní)**.
 7. Do pole **Popis** zadejte **Formát plateb dodavatele BACS (Velká Británie – fiktivní)**.
@@ -44,9 +46,6 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo N�
     * Lze definovat určitý formát elektronického dokumentu. Ponechejte toto pole prázdné, pokud chcete vybrat formát při spuštění.  
 8. V poli **Definice datového modelu** zadejte nebo vyberte hodnotu.
 9. Klepněte na možnost **Vytvořit konfiguraci**. Byla vytvořena nová konfigurace. Verzi konceptu lze použít k ukládání formát návrhu pro správu elektronických dokumentů.  
- > [!NOTE]
- > Pokud se možnost **Vytvořit konfiguraci** nezobrazuje, musíte povolit režim návrhu na stránce **Parametry elektronického výkaznictví**.
-
 
 ## <a name="design-the-format-of-an-electronic-document"></a>Návrh formátu elektronického dokumentu
 1. Klikněte na možnost **Návrhář**.
@@ -159,5 +158,4 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo N�
 41. Klikněte na tlačítko **OK**.
 42. Klikněte na tlačítko **Uložit**.
 43. Zavřete stránku.
-
 

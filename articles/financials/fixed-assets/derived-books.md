@@ -1,13 +1,13 @@
 ---
-title: "Odvozené knihy"
-description: "Tento článek podává přehled o funkci Odvozená kniha."
+title: Odvozené knihy
+description: Tento článek podává přehled o funkci Odvozená kniha.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBookTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 153b6437205d5a849fa6a90c0d3b9f3d51dd6768
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e43dcc15212ae90a33d59fa32692aabcba7a19cb
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313904"
 ---
-
 # <a name="derived-books"></a>Odvozené knihy
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Při zaúčtování transakce je vygenerována transakce pořízení a je zaúč
 > Knihy, které jsou nastaveny pro zaúčtování transakcí v intervalech jiných než je interval pro primární knihu, musí být připojeny k dlouhodobému majetku jako samostatné knihy a nikoliv jako odvozené knihy.  
 
 Další informace naleznete v tématu [Zaúčtování pomocí odvozených knih](post-derived-value-models.md).
-
 
 
 

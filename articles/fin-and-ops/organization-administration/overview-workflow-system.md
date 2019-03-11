@@ -1,13 +1,13 @@
 ---
-title: "Systémový workflowu"
-description: "Toto téma popisuje systém workflowu v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Systémový workflowu
+description: Toto téma popisuje systém workflowu v Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7eb6d743131937081ce83b31988d792185cb28b2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 770796b42e79ad616b469e1dbf5149789bff0788
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308637"
 ---
-
 # <a name="workflow-system"></a>Systémový workflowu
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje systém workflowu v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Toto téma popisuje systém workflowu v Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="what-is-workflow"></a>Co je workflow?
 
@@ -72,4 +71,3 @@ Používání systému workflowu v organizaci má několik výhod:
 + [Konfigurace paralelních aktivit ve workflowu](configure-parallel-activity-workflow.md)
 + [Konfigurace paralelní větve ve workflowu](configure-parallel-branch-workflow.md)
 + [Konfigurace workflowu položky řádku](configure-line-item-workflow.md)
-

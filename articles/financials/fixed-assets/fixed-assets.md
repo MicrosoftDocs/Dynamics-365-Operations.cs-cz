@@ -1,13 +1,13 @@
 ---
-title: "Domovská stránka Dlouhodobý majetek"
-description: "Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo společnost."
+title: Domovská stránka Dlouhodobý majetek
+description: Dlouhodobý majetek jsou položky s hodnotou, jako například budovy, vozidla, pozemek nebo vybavení, které vlastní jedinec nebo společnost.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 78c70ade5a1ca9794760e72fb94e0735848aae79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3c49ff15a6ac5dddd64ded4a6e9c755504393346
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302003"
 ---
-
 # <a name="fixed-assets-home-page"></a>Domovská stránka Dlouhodobý majetek
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,7 @@ Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace o modulu Dlouhodobý majetek a jiných řešeních naleznete v [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Názory, novinky a jiné informace o modulu Dlouhodobý majetek a jiných řešeních naleznete v blogu [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
 Existuje mnoho příspěvků o modulu Dlouhodobý majetek na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Závazky, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
 
@@ -57,8 +56,7 @@ V aplikaci Finance and Operations je k dispozici další nápověda v podobě pr
 
 #### <a name="videos"></a>Videa
 
-Prohlédněte si instruktážní videa, která jsou nyní k dispozici na kanálu [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
+Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 
 

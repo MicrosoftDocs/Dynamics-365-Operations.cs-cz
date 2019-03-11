@@ -1,13 +1,13 @@
 ---
-title: "Mezipodnikové výdaje"
-description: "Pracovník, který je zaměstnán jednou právnickou osobou v jedné organizaci, může provádět práci pro jinou právnickou osobu v rámci stejné organizace. V takové situaci můžete použít funkci mezipodnikových výdajů přiřazení pro přiřazení výdajů pracovníka k právnické osobě, pro kterou byla práce prováděna."
+title: Mezipodnikové výdaje
+description: Pracovník, který je zaměstnán jednou právnickou osobou v jedné organizaci, může provádět práci pro jinou právnickou osobu v rámci stejné organizace. V takové situaci můžete použít funkci mezipodnikových výdajů přiřazení pro přiřazení výdajů pracovníka k právnické osobě, pro kterou byla práce prováděna.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9e1f2b9593d50d5ec04f039b9b995c8792b40612
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d887eafa0df48099fe86c64ea702e2a99312490c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351440"
 ---
-
 # <a name="intercompany-expenses"></a>Mezipodnikové výdaje
 
 [!include [banner](../includes/banner.md)]
@@ -31,4 +30,3 @@ ms.lasthandoff: 11/03/2017
 Pracovník, který je zaměstnán jednou právnickou osobou v jedné organizaci, může provádět práci pro jinou právnickou osobu v rámci stejné organizace. V takové situaci můžete použít funkci mezipodnikových výdajů přiřazení pro přiřazení výdajů pracovníka k právnické osobě, pro kterou byla práce prováděna. Právnická osoba, která pracovníka zaměstnává, se nazývá půjčující právnická osoba. Právnická osoba, vůči které pracovník uplatňuje výdaje, se nazývá vypůjčující právnická osoba. 
 
 Předtím, než pracovník může vytvářet a odesílat výdaje za práci pro jinou právnickou osobu, zvolte u půjčující právnické osoby na stránce **Parametry správy výdajů** možnost **Povolit řádky mezipodnikových výdajů**. 
-

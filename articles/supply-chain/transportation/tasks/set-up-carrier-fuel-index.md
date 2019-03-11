@@ -1,13 +1,13 @@
---- 
-title: "Nastavení indexu paliva dopravce"
-description: "Tato příručka popisuje vytváření oblast indexu paliva, indexu paliva a indexu paliva dopravce."
+---
+title: Nastavení indexu paliva dopravce
+description: Tato příručka popisuje vytváření oblast indexu paliva, indexu paliva a indexu paliva dopravce.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b6f72de7ad54a2b2dc1bf40fd8cb86d8b055e2d1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 81f3244ff42cf13cd93ac10656c47f8a9204ef99
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366574"
 ---
 # <a name="set-up-a-carrier-fuel-index"></a>Nastavení indexu paliva dopravce
 
@@ -65,5 +65,4 @@ Tato příručka popisuje vytváření oblast indexu paliva, indexu paliva a ind
 11. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 12. Klikněte na odkaz na vybraném řádku v seznamu.
 13. Klikněte na položku Uložit.
-
 

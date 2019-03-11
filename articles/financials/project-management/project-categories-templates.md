@@ -1,13 +1,13 @@
 ---
-title: "Synchronizace kategorií projektových výdajů mezi Finance and Operations a Project Service Automation"
-description: "Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci kategorií projektových nákladů mezi Microsoft Dynamics 365 for Finance and Operations a Microsoft Dynamics 365 for Project Service Automation."
+title: Synchronizace kategorií projektových výdajů mezi Finance and Operations a Project Service Automation
+description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci kategorií výdajů mezi aplikací Microsoft Dynamics 365 for Finance and Operations a Microsoft Dynamics 365 for Project Service Automation.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: c4d09fde2cf4335553243c136590f9f3135db97a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347829"
 ---
-
 # <a name="synchronize-project-expense-categories-between-finance-and-operations-and-project-service-automation"></a>Synchronizace kategorií projektových výdajů mezi Finance and Operations a Project Service Automation
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci kategorií projektových nákladů mezi Microsoft Dynamics 365 for Finance and Operations a Microsoft Dynamics 365 for Project Service Automation.
+Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci kategorií výdajů mezi aplikací Microsoft Dynamics 365 for Finance and Operations a Microsoft Dynamics 365 for Project Service Automation.
 
 > [!NOTE]
 > - Integrace úkolů projektu, kategorie transakce výdajů, odhady hodin, odhady výdajů a uzamykání funkcí jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations verze 8.0.
-> - Integrace skutečných hodnot je dostupná v aplikaci Microsoft Dynamics 365 for Finance and Operations, verze 8.01 nebo novější.
+> - Integrace skutečných hodnot je k dispozici v Microsoft Dynamics 365 for Finance and Operations verze 8.0.1 nebo pozdější.
 > - Pokud používáte Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, po instalaci KB 4132657 a KB 4132660 bude možné použít šablony k integraci projektových úkolů, kategorií transakcí výdajů, odhadů hodin, odhadů výdajů a skutečných hodnot a ke konfiguraci funkce uzamčení. Pokud musíte resetovat rozúčtování, doporučujeme nainstalovat též KB 4131710.
 
 ## <a name="data-flow-for-project-service-automation-and-finance-and-operations"></a>Tok dat pro Project Service Automation a aplikaci Finance and Operations
@@ -65,7 +64,7 @@ Následující obrázek znázorňuje, jak jsou synchronizována data mezi Projec
 
 ### <a name="template-and-task"></a>Šablona a úkol
 
-Chcete-li získat přístup k šabloně, zvolte v centru správy Microsoft PowerApps **Projekty**a v pravém horním rohu vyberte **Nový projekt** pro volbu veřejných šablon.
+Chcete-li získat přístup k šabloně, zvolte v centru správy Microsoft PowerApps **Projekty** a v pravém horním rohu vyberte **Nový projekt** pro volbu veřejných šablon.
 
 K synchronizaci kategorií projektových výdajů z aplikace Finance and Operations do aplikace Project Service Automation slouží následující šablona a základní úkoly:
 
@@ -125,4 +124,3 @@ Na následujícím obrázku je příklad mapování úkolu šablony v integraci 
 > Mapování ukazuje, jaké informace o poli budou synchronizovány z aplikace Project Service Automation do aplikace Finance and Operations.
 
 [![Mapování šablony](./media/ProjectExpenseCategoriesToFinOpsMapping.jpg)](./media/ProjectExpenseCategoriesToFinOpsMapping.jpg)
-

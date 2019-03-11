@@ -1,35 +1,34 @@
 ---
-title: "Import dat ze šablon datových entit aplikace Excel s více listy"
-description: "Toto téma popisuje, jak importovat data pomocí šablon datových entit aplikace Excel do aplikace Microsoft Dynamics 365 for Finance and Operations."
+title: Import dat ze šablon datových entit aplikace Excel s více listy
+description: Toto téma popisuje, jak importovat data pomocí šablon datové entity Excelu do Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351256"
 ---
-
 # <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Import dat ze šablon datových entit aplikace Excel s více listy
 
 [!include [banner](../includes/banner.md)]
 
-Správa dat v aplikaci Microsoft Dynamics 365 for Finance and Operations podporuje šablony na základě aplikace Microsoft Excel pro datové entity. Tyto šablony mohou obsahovat jeden nebo více listů. Šablony s více listy se často používají tehdy, když je vhodné spravovat data v jednom souboru a importovat je do vícero datových entit. Příkladem by byla pracoviště a sklady.
+Správa dat v Microsoft Dynamics 365 for Finance and Operations podporuje šablony založené na aplikaci Microsoft Excel pro datové entity. Tyto šablony mohou obsahovat jeden nebo více listů. Šablony s více listy se často používají tehdy, když je vhodné spravovat data v jednom souboru a importovat je do vícero datových entit. Příkladem by byla pracoviště a sklady.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Nahrajte soubor jednou a namapujte ho na všechny entity
 Podíváme se na příklad, kde existuje jeden soubor aplikace Excel s listy nazvanými **Pracoviště** a **Sklady**. Chcete-li nastavit projekt importu dat, přidali byste první datovou entitu **Pracoviště** a poté odeslali soubor. Budete moci vybrat **Pracoviště** jako list, který bude použit pro tuto entitu.
@@ -51,4 +50,3 @@ V případech, kdy musí být odeslána nová verze stejného nebo zcela nového
 ## <a name="upload-a-file-using-run-project"></a>Odeslání souboru pomocí spuštění projektu
 
 Můžete načíst soubor aplikace Excel při používání možnosti **Spustit projekt** pro provedení projektu importu. Musíte si dávat pozor, abyste odeslali pouze soubory, které mají stejné listy jako existující mapování na datových entitách v datovém projektu. Pokud není list nalezen v nově odeslaném souboru, systém zobrazí chybovou zprávu a zastaví import. Pokud u entity musí být změněno mapování na list, musí být nejprve aktualizováno mapování v datovém projektu z datového projektu předtím, než použijete soubor v možnosti **Spustit projekt**.
-

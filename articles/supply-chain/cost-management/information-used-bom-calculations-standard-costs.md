@@ -1,13 +1,13 @@
 ---
-title: "Údaje použité ve výpočtech kusovníku se standardními náklady"
-description: "Ve výpočtech kusovníku jsou při vyčíslení standardních nákladů na vyráběnou položku použita data z více zdrojů. Mezi tyto zdroje patří informace o různých položkách, postupy a kusovníky, výpočetní vzorce nepřímých nákladů a nákladová verze."
+title: Údaje použité ve výpočtech kusovníku se standardními náklady
+description: Ve výpočtech kusovníku jsou při vyčíslení standardních nákladů na vyráběnou položku použita data z více zdrojů. Mezi tyto zdroje patří informace o různých položkách, postupy a kusovníky, výpočetní vzorce nepřímých nákladů a nákladová verze.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcGroup, BOMCalcTable, ProdParmBOMCalc
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4ec6ffe41d6dae10693b1a1ebd6e5012c32bc2e6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 187482f29e6982220b844777ef31997f0d5ef0d3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333753"
 ---
-
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>Údaje použité ve výpočtech kusovníku se standardními náklady
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Mezi informace o nákladových verzích, které jsou použity ve výpočtu stand
 -   Obsah nákladové verze musí zahrnovat náklady − Obsah musí zahrnovat náklady. Může volitelně zahrnovat prodejní ceny s cílem vypočítat navržené prodejní ceny pro vyráběné položky.
 
 Při inicializaci výpočtu kusovníku lze určit několik zdrojů informací. Mezi ně patří pracoviště, datum výpočtu nebo nákladová verze.
-
 
 
 

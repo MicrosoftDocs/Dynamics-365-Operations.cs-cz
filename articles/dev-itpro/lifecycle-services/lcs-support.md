@@ -1,13 +1,13 @@
 ---
-title: "Získání podpory pro aplikace Finance and Operations nebo Lifecycle Services (LCS)"
-description: "Tento článek vysvětluje, jak získat nápovědu k aplikaci Microsoft Dynamics 365 for Finance and Operations, nebo službě Microsoft Dynamics Lifecycle Services (LCS)."
+title: Získání podpory pro aplikace Finance and Operations nebo Lifecycle Services (LCS)
+description: Tento článek vysvětluje, jak získat nápovědu s aplikacemi Microsoft Dynamics 365 for Finance and Operations nebo Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
 ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro, Developer, Application user
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
 ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/21/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334765"
 ---
-
 # <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Získání podpory pro aplikace Finance and Operations nebo Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,7 @@ Abyste získali podpora pro aplikaci Finance and Operations nebo LCS, použijte 
 <thead>
 <tr class="header">
 <th>Úkol</th>
-<th>Další informace</th>
+<th>Více informací</th>
 </tr>
 </thead>
 <tbody>
@@ -75,7 +74,7 @@ Poznámka: Partneři a zákaznici s podporou Microsoft Premier mohou také odesl
 <li>Chyby, ke kterým dochází při použití LCS, nebo problémy s přístupem k LCS.</li>
 <li>Chyby, ke kterým dochází při použití aplikace Finance and Operations.</li>
 </ul>
-Ohledně technických dotazů, které se vztahují k přihlášení a přístupu do CutomerSource, kurzů elektronického vzdělávání, vyhledávání, znalostní bázi, stahování souborů a chybám stránky nebo systému, přejděte na <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Web podpory</span></a>.</td>
+Ohledně technických dotazů, které se vztahují k přihlášení a přístupu do CustomerSource, kurzů elektronického vzdělávání, vyhledávání, znalostní bázi, stahování souborů a chybám stránky nebo systému, přejděte na <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Web podpory</span></a>.</td>
 </tr>
 <tr class="odd">
 <td>Získejte nápovědu k dotazům týkajícím se licencí k aplikaci Finance and Operations.</td>
@@ -89,9 +88,8 @@ Ohledně technických dotazů, které se vztahují k přihlášení a přístupu
 </table>
 
 
-## <a name="additional-resources"></a>Další zdroje
-- [Získání podpory pro aplikaci Dynamics 365 for Retail](../../retail/retail-support.md)
-- [Získání podpory pro aplikaci Dynamics 365 for Talent](../../talent/talent-support.md)
-- Další informace o nabídkách podpory pro aplikaci Microsoft Dynamics naleznete v tématu [Online podpora pro aplikace Microsoft Dynamics](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
-
+## <a name="additional-resources"></a>Další prostředky
+- [Získání podpory pro Dynamics 365 for Retail](../../retail/retail-support.md)
+- [Získání podpory pro Dynamics 365 for Talent](../../talent/talent-support.md)
+- Další informace o nabídkách podpory Microsoft Dynamics naleznete v tématu [Online podpora Microsoft Dynamics](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 

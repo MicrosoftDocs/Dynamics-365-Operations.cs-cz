@@ -1,13 +1,13 @@
 ---
-title: "Vážený průměr s fyzickou hodnotou a označením"
-description: "Vážený průměr představuje skladový model založený na principu váženého aritmetického průměru. V tomto modelu jsou při uzávěrce skladové výdeje oceňovány průměrnou cenou položek přijatých na sklad plus jakékoli množství na skladě z předcházejícího období."
+title: Vážený průměr s fyzickou hodnotou a označením
+description: Vážený průměr představuje skladový model založený na principu váženého aritmetického průměru. V tomto modelu jsou při uzávěrce skladové výdeje oceňovány průměrnou cenou položek přijatých na sklad plus jakékoli množství na skladě z předcházejícího období.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc70b9cffd8716bc1d90cdb611076b4fc0bf6b30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355672"
 ---
-
 # <a name="weighted-average-with-physical-value-and-marking"></a>Vážený průměr s fyzickou hodnotou a označením
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 - Skladové transakce jsou reprezentovány svislými šipkami.
 - Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
 - Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
-- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@Unitprice.
+- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Množství@Jednotková cena.
 - Hodnota skladové transakce uzavřená do hranatých závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce bez hranatých závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
@@ -111,7 +110,7 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 - Skladové transakce jsou reprezentovány svislými šipkami.
 - Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
 - Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
-- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@Unitprice.
+- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Množství@Jednotková cena.
 - Hodnota skladové transakce uzavřená do hranatých závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce bez hranatých závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
@@ -140,7 +139,7 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 - Skladové transakce jsou reprezentovány svislými šipkami.
 - Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
 - Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
-- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@Unitprice.
+- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Množství@Jednotková cena.
 - Hodnota skladové transakce uzavřená do hranatých závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce bez hranatých závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
@@ -173,7 +172,7 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 - Skladové transakce jsou reprezentovány svislými šipkami.
 - Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
 - Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
-- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@Unitprice.
+- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Množství@Jednotková cena.
 - Hodnota skladové transakce uzavřená do hranatých závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce bez hranatých závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
@@ -221,14 +220,13 @@ Následující diagram ilustruje tuto sérii transakcí, včetně dopadu volby v
 - Skladové transakce jsou reprezentovány svislými šipkami.
 - Příjmy do skladu jsou reprezentovány svislými šipkami nad časovou osou.
 - Výdeje ze skladu jsou reprezentovány svislými šipkami pod časovou osou.
-- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Quantity@"Unitprice".
+- Nad (nebo pod) každou svislou šipkou je zadána hodnota skladové transakce ve formátu Množství@Jednotková cena.
 - Hodnota skladové transakce uzavřená do hranatých závorek označuje, že skladová transakce je fyzicky zaúčtována do skladu.
 - Hodnota skladové transakce bez hranatých závorek označuje, že skladová transakce je finančně zaúčtována do skladu.
 - Každá nová transakce příjmu nebo výdeje je označena novým popiskem.
 - Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
 - Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem Uzávěrka skladu.
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými tečkovanými šipkami, směřujícími diagonálně od určitého příjmu k výdeji.
-
 
 
 

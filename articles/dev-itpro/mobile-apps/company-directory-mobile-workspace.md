@@ -1,13 +1,13 @@
 ---
-title: "Mobilní pracovní prostor adresáře společnosti"
-description: "Toto téma obsahuje informace o pracovním prostoru adresáře společnosti, který uživatelům umožňuje zobrazit a kontaktovat ostatní zaměstnance v organizaci."
+title: Mobilní pracovní prostor adresáře společnosti
+description: Toto téma obsahuje informace o pracovním prostoru adresáře společnosti, který uživatelům umožňuje zobrazit a kontaktovat ostatní zaměstnance v organizaci.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308614"
 ---
-
 # <a name="company-directory-mobile-workspace"></a>Mobilní pracovní prostor adresáře společnosti
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Přihlaste se do mobilní aplikace
 1.  Spusťte aplikaci na svém mobilním zařízení.
-2.  Zadejte adresu URL aplikace Microsoft Dynamics 365.
+2.  Zadejte URL adresu Microsoft Dynamics 365.
 3.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 4.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
@@ -91,4 +90,3 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 1.  V mobilní aplikaci zvolte pracovní prostor **Adresář společnosti**.
 2.  V poli **Vyhledat** zadejte křestní jméno, příjmení, titul nebo oddělení zaměstnance pro zahájení hledání.
 3.  Vyberte zaměstnance. Zobrazí se stránka **Profil zaměstnance**. Informace na této stránce zahrnují křestní jméno, příjmení, titul a oddělení zaměstnance.
-

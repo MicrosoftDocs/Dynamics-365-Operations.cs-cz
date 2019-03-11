@@ -1,13 +1,13 @@
 ---
-title: "Platební metody v kontaktních střediscích"
-description: "Toto téma popisuje různé platební metody, které lze použít v kontaktním středisku v aplikaci Dynamics 365 for Retail."
+title: Platební metody v kontaktních střediscích
+description: Toto téma popisuje různé platební metody, které lze použít v kontaktním středisku v aplikaci Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRSalesTableOrderHistory, MCRCCAuthManagement
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 825ad4ba3e72e5b34c2ff29f36f88a518810ce49
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 0b86388efab113af605d62c6ad76c8169d9c4643
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355373"
 ---
-
 # <a name="payment-methods-in-call-centers"></a>Platební metody v kontaktních střediscích
 
 [!include [banner](includes/banner.md)]
@@ -54,4 +53,3 @@ Když jsou metody platby vytvořeny, měly by být navázány na hlavní knihu n
 Pro scénáře zpracování refundace používá kontaktní středisko také některé z metod platby, které se definují v modulu Pohledávky. Chcete-li konfigurovat tyto metody plateb, přejděte na **Retail** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Metody refundace kontaktního střediska**. Je nutné dokončit tuto konfigurace pro zpracování šeků refundace odběratelům. Například platí-li odběratel původně objednávku hotovostí nebo šekem, uživatel může chtít odeslat odběrateli šek refundace prostřednictvím pohledávek. Typy plateb hotovostí a šekem v kontaktním středisku musí být v takovém případě namapovány na správnou metodu platby v modulu Pohledávky, aby se zajistilo správné zpracování refundace.
 
 Dále, pokud uživatel zpracovává vratku jako uživatel kontaktního střediska v aplikaci Retail, ale nemůže navázat vratku na původní prodej, musí být definována platební metoda **Vrácení** v parametrech kontaktního střediska. Přejděte na **Retail** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Parametry kontaktního střediska** a poté na kartě **RMA/vratky** v poli **Způsob platby** nadefinujte způsob platby. Metoda platby bude metodou platby použitou pro refundace. Obvykle bude definována buď jako metodu šeku nebo jako metoda účtu odběratele.
-

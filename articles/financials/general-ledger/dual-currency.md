@@ -1,29 +1,28 @@
 ---
-title: "Duální měna"
-description: "Toto téma obsahuje informace o duální měně, kdy je měna vykazování použita jako druhá zúčtovací měna pro aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Duální měna
+description: Toto téma obsahuje informace o duální měně, kdy je měna vykazování použita jako druhá zúčtovací měna pro aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330303"
 ---
-
 # <a name="dual-currency"></a>Duální měna
 
 [!include [banner](../includes/banner.md)]
@@ -184,4 +183,3 @@ Kromě toho byly provedeny zásadní změny procesu odpisování. Tyto změny vy
     - Je-li typ transakce odpisování je zadán v deníku dlouhodobého majetku, částky v měně vykazování se zobrazí v nových sloupcích. Tyto částky lze změnit.
     - Pokud je zúčtovací měna a měna vykazování v hlavní knize stejná, budou částky průběžně synchronizovány. Změníte-li částku **Dal**, částka **Dal v měně vykazování** se automaticky změní tak, aby jí odpovídala.
     - Pokud je do deníku dlouhodobého majetku zadán jakýkoli jiný typ transakce, částky **má dáti v měně vykazování** a **Dal v měně vykazování** se nikdy nezobrazí, ani před, ani po zaúčtování. Částky v zúčtovací měně a měně vykazování jsou stále k dispozici na dokladu, ve kterém se má zaúčtovat do hlavní knihy.
-

@@ -1,13 +1,13 @@
 ---
-title: "Zásady třícestného párování"
-description: "Toto téma obsahuje příklady třícestného párování."
+title: Zásady třícestného párování
+description: Toto téma obsahuje příklady třícestného párování.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f02f6831709dcc0998c74a9ddd04216a2213970d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c8ea45ece05f006f1649c79fcdee427a0bc4b0b5
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318941"
 ---
-
 # <a name="three-way-matching-policies"></a>Zásady třícestného párování
 
 [!include [banner](../includes/banner.md)]
@@ -143,7 +142,6 @@ Pokud je schválení vyžadováno u faktur, které mají být zaúčtovány s od
 
 
 Další informace naleznete v tématu [Nastavení párování faktur závazků](accounts-payable-invoice-matching.md).
-
 
 
 

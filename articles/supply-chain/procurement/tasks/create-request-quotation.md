@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření požadavku na nabídku"
-description: "Tato procedura popisuje způsob ručního vytváření požadavku na nabídku."
+---
+title: Vytvoření požadavku na nabídku
+description: Tato procedura popisuje způsob ručního vytváření požadavku na nabídku.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchCreateRFQCase, InventLocationIdLookup, PurchRFQCaseTable, InventItemIdLookupSimple, EcoResCategorySingleLookup, UnitOfMeasureLookup, PurchRFQEditLines, PurchRFQEditLinesPrintOptions, VendRFQJournal, SrsReportViewerForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4c09149fcbe5731126c2e48a37fafdf71c1d49df
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 331f516f3483acd79be4ef7b95b53adcfbef1ae2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334443"
 ---
 # <a name="create-a-request-for-quotation"></a>Vytvoření požadavku na nabídku
 
@@ -85,5 +85,4 @@ Tato procedura popisuje způsob ručního vytváření požadavku na nabídku. T
 3. Klepněte na Náhled originálu.
 4. Zavřete stránku.
 5. Zavřete stránku.
-
 

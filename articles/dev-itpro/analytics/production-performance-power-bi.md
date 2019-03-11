@@ -1,13 +1,13 @@
 ---
-title: "Obsah výkonosti výroby v Power BI"
-description: "Toto téma popisuje, co je součástí obsahu výkonosti výroby v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
+title: Obsah výkonosti výroby v Power BI
+description: Toto téma popisuje, co je součástí obsahu výkonosti výroby v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,23 +16,22 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365953"
 ---
-
 # <a name="production-performance-power-bi-content"></a>Obsah výkonosti výroby v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, co je součástí obsahu **výkonnosti výroby** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Toto téma popisuje, co je součástí obsahu **výkonosti výroby** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="overview"></a>Přehled
 
-Obsah **Výkonnost výroby** pro Power BI je určený pro výrobní manažery nebo osoby v rámci organizace, které odpovídají za kontrolu výroby.
+Obsah **Výkonnost výroby** v Power BI je určený pro výrobní manažery nebo osoby v rámci organizace, které odpovídají za kontrolu výroby.
 
 Sestavy, které jsou zahrnuty, umožňují používat Power BI spotřeby ke sledování výkonu výrobních operací z hlediska včasné realizace, kvality a nákladů. Sestavy používají transakční data z výrobních zakázek a dávkových objednávek a poskytují agregované zobrazení metrik výroby na úrovni celé společnosti a rozúčtování metrik podle produktu a zdroje.
 
@@ -43,7 +42,7 @@ Tento obsah Power BI také lze analyzuje výrobní odchylky. Výrobní odchylky 
 Obsah **Výkonnost výroby** v Power BI zahrnuje data, která pocházejí z výrobních zakázek a dávkových objednávek. Sestavy neobsahují data, která souvisí s kanbanovými výrobami.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah Power BI **Výkonnost výroby** se zobrazí na stránce **Výkonnost výroby** (**Řízení výroby** \> **Dotazy a sestavy** \> **Analýza výkonnosti výroby** \> **Výkonnost výroby**). 
+Obsah **Výkonnost výroby** v Power BI se zobrazí na stránce **Výkonnost výroby** (**Řízení výroby** \> **Dotazy a sestavy** \> **Analýza výkonnosti výroby** \> **Výkonnost výroby**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriky, které jsou součástí obsahu Power BI
 
@@ -130,4 +129,3 @@ Následující tabulka uvádí klíčové dimenze, které se používají jako f
 | Entity                  | ID a jméno                                                   |
 | Zdroje                 | ID prostředku, název prostředku, typ prostředku a skupiny prostředků |
 | Produkty                  | Číslo produktu, název produktu, ID položky a skupina položek         |
-

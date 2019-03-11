@@ -1,13 +1,13 @@
 ---
-title: "Nábor dodavatelů"
-description: "Toto téma popisuje proces nabírání nových dodavatelů. Vysvětluje akce, které jsou vyžadovány různými rolemi v průběhu tohoto procesu."
+title: Nábor dodavatelů
+description: Toto téma popisuje proces nabírání nových dodavatelů. Vysvětluje akce, které jsou vyžadovány různými rolemi v průběhu tohoto procesu.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
 ms.reviewer: josaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f831d986d7b534bf030bee0fa0c5dcb97af03289
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322138"
 ---
-
 # <a name="onboard-vendors"></a>Nábor dodavatelů
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +34,7 @@ Proces se skládá z následujících kroků, kde různé role provádějí akce
 
 1. **Správa dat OData** – Import entit – Počáteční požadavek je požadavek na registraci potenciálního dodavatele. Tento požadavek obvykle pocházejí ze zdroje, jako je například odběratelem hostovaný web umožňující anonymní přístup. Dodavatelé se mohou zaregistrovat zadáním základních informací, jako je název dodavatele, odůvodnění, číslo organizace a jméno a e-mailová adresa kontaktní osoby. Požadavky jsou importovány prostřednictvím rozhraní pro správu dat.
 2. **Stránka se seznamem požadavků na registraci potenciálního dodavatele** - Na základě informací, které jsou zadané v požadavku na registraci potenciálního dodavatele, se pracovník zásobování rozhodne, zda bude dodavatel nově přijat. Pracovník zásobování zobrazí příchozí požadavek na stránce se seznamem **Požadavky na registraci potenciálního dodavatele** v aplikaci Finance and Operations.
-3. **Workflow zřízení uživatele** - pokud pracovník zásobování ověřil informace v příchozím požadavku a rozhodl se pokračovat s procesem náboru, workflow požadavku uživatele zřídí nového uživatele a odešle e-mailovou pozvánku k přijetí kontaktní osoby jako ověřeného uživatele aplikace Microsoft Dynamics 365.
+3. **Workflow zřízení uživatele** – pokud pracovník zásobování ověřil informace v příchozím požadavku a rozhodl se pokračovat s procesem náboru, workflow požadavku uživatele zřídí nového uživatele a odešle e-mailovou pozvánku k přijetí kontaktní osoby jako ověřeného uživatele aplikace Microsoft Dynamics 365.
 4. **Průvodce registrace potenciálního dodavatele** - kontaktní osoba dodavatele se přihlásí do aplikace Finance and Operations pomocí nového uživatelského účtu. Tato osoba dokončí průvodce registrace potenciálního dodavatele pro poskytnutí informací, jako jsou adresy, obchodní informace, kategorie zásobování a odpovědi na dotazník.
 5. **Workflow schválení** - je vytvořen požadavek na dodavatele, který obsahuje informace o registraci. Požadavek na dodavatele je odeslán do workflowu a přesměrován na kontrolu a schválení.
 6. **Vytvoření hlavních dat dodavatele a úprava uživatelské role** – když je schválen požadavek na dodavatele, je vytvořen záznam dodavatele. Uživatelský účet kontaktní osoby dodavatele má buď uděleno oprávnění k dodavatelské spolupráci nebo je deaktivován.
@@ -49,7 +48,7 @@ Následující tabulka zobrazuje kroky a role, které jsou zahrnuty v procesu.
 | Správce            | | | Vytvořte uživatele v aplikaci Finance and Operations a Microsoft Azure. | | | |
 | Kontaktní osoba dodavatele    | | | Odešlete e-mail kontaktní osobě. | Zaregistruje informace o dodavateli. | | |
 
-Pro rychlou ukázku náborového procesu dodavatele se podívejte na toto krátké video na YouTube: [Příjem nového dodavatele v aplikaci Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+Pro rychlou demonstraci náborového procesu dodavatele se podívejte na toto krátké video na YouTube: [Onboard a new vendor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Import požadavků na registraci potenciálního dodavatele
 
@@ -67,7 +66,7 @@ Následující tabulka zobrazuje informace, které tato entita obsahuje a které
 | Druhé jméno kontaktní osoby | Druhé jméno osoby, která bude pozvána k registraci informací o dodavateli. |
 | Příjmení kontaktní osoby   | Příjmení osoby, která bude pozvána k registraci informací o dodavateli. |
 | E-mail kontaktní osoby       | E-mailová adresa, která se použije k vytvoření nového uživatele v aplikaci Finance and Operations a která bude registrována u klientského účtu Azure Active Directory (Azure AD). |
-| Datum odeslání               | Datum vytvoření požadavku v externím systému. |
+| Odeslané datum               | Datum vytvoření požadavku v externím systému. |
 | Právnická osoba                 | Právnická osoba, u které se dodavatel uchází o to, aby se stal jejím dodavatelem. Tato hodnota musí být kód právnické osoby, který byl registrováno v aplikaci Finance and Operations. Pokud není žádná hodnota přijata prostřednictvím procesu importu, použije se hodnota z parametrů modulu Zásobování a zdroje. |
 | Typ dodavatele                  | Dodavatel může být buď organizace, nebo osoba. Typ dodavatele určuje, jak je nakonec dodavatel vytvořen. |
 
@@ -174,5 +173,4 @@ Pomocí akce **Odstranit** na požadavku registrace potenciálního dodavatele m
 |  Požadavek dodavatele vytvořen  |                                                                     Průvodce registrace dodavatele byl dokončen.                                                                      | Je vytvořen požadavek na deaktivaci uživatele a požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.<blockquote>[!NOTE]<br>Nelze použít akci <strong>Odstranit</strong>, když je požadavek na dodavatele v procesu revize ve workflowu.</blockquote> |
 |         Schváleno         |                                                                               Požadavek na dodavatele je schválen.                                                                               |                                                                                                   Požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.                                                                                                    |
 |         Odmítnuto         |                                                                               Požadavek na dodavatele je zamítnut.                                                                               |                                                                                                   Požadavek na registraci potenciálního dodavatele a data, která byla zadána v průvodci registrace dodavatele, spolu s požadavkem na dodavatele, budou odstraněna.                                                                                                    |
-
 

@@ -1,28 +1,28 @@
 ---
-title: "Domovská stránka místních nasazení"
-description: "Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení."
+title: Domovská stránka místních nasazení
+description: Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení.
 author: kfend
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: c51cce929384b7e822213dcb9df9007edfe3700c
+ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
 ms.translationtype: HT
-ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
-ms.openlocfilehash: c80a41427db18607577b4f89c8e30fe6c8f872d3
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/02/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "373270"
 ---
 # <a name="on-premises-deployments-home-page"></a>Domovská stránka místních nasazení
 
@@ -59,10 +59,11 @@ Můžete nasadit Microsoft Dynamics 365 for Finance and Operations (on-premises)
 ## <a name="retail"></a>Retail
 - [Funkce aplikace Retail, které jsou dostupné v místních nasazeních](../../retail/retail-onprem.md)
 - [Instalační kroky pro komponenty maloobchodní sítě v místním prostředí](deploy-retail-onprem.md)
-- [Konfigurace, stažení, instalace a aktivace Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
-- [Konfigurace a instalace Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Konfigurace, Instalace a aktivace Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
+- [Instalace a konfigurace Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
-
+## <a name="upgrade"></a>Upgradovat
+- [Proces místního upgradu pro místní prostředí](../migration-upgrade/on-prem-upgrade.md)
 
 ## <a name="other-resources"></a>Další zdroje
 - [Řešení problémů s místním nasazením](troubleshoot-on-prem.md)
@@ -71,4 +72,3 @@ Můžete nasadit Microsoft Dynamics 365 for Finance and Operations (on-premises)
 - [Odstraněné nebo zastaralé funkce](../migration-upgrade/deprecated-features.md)
 - [Zásady životního cyklu softwaru a vydání on-premises](../migration-upgrade/on-prem-version-update-policy.md)
  
-

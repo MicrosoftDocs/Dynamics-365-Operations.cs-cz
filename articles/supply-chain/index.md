@@ -1,36 +1,35 @@
 ---
-title: "Domovská stránka správy dodavatelsko-odběratelského řetězce"
-description: "Tato stránka obsahuje seznam témat nápovědy a další zdroje pro funkce správy dodavatelsko-odběratelského řetězce v aplikaci Microsoft Dynamics 365 for Finance and Operations."
+title: Domovská stránka správy dodavatelsko-odběratelského řetězce
+description: Tato stránka poskytuje seznam témat nápovědy a dalších zdrojů pro funkce správy dodavatelsko-odběratelského řetězce v Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
-ms.openlocfilehash: df35f70d8297aa2a832d143217542e3d558040ea
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/09/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302027"
 ---
-
 # <a name="supply-chain-management-home-page"></a>Domovská stránka správy dodavatelsko-odběratelského řetězce
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje seznam témat nápovědy a další zdroje pro funkce správy dodavatelsko-odběratelského řetězce v aplikaci Microsoft Dynamics 365 for Finance and Operations. 
+Toto téma poskytuje seznam témat nápovědy a dalších zdrojů pro funkce správy dodavatelsko-odběratelského řetězce v Microsoft Dynamics 365 for Finance and Operations. 
 
 ## <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 Přejděte na web <a href="https://roadmap.dynamics.com/">Přehled Microsoft Dynamics 365</a> a zjistěte, jaké nové funkce se vydávají a jaké se chystají. 
@@ -57,13 +56,13 @@ Tato krátká videa vám představí nové funkce, které přináší aplikace M
 
 - [Synchronizace pracovního příkazu mezi službou Field Service a aplikací Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (prosinec 2017).
+Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (prosinec 2017).
 
 -  [Integrace zpeněžení potenciálního zákazníka](https://youtu.be/AVV9x5x-XCg) 
 -  [Poradce při optimalizaci](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 -  [Použití šablony skladu pro kopírování konfigurace](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (červenec 2017).
+Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (červenec 2017).
 
 -  [Začínáme s modulem Nákladové účetnictví](https://youtu.be/1pUDtJQZ8FU)
 -  [Mobilní pracovní prostor kontroly nákladů](https://youtu.be/imsuTg8rUVk)
@@ -85,7 +84,7 @@ Tyto nahrávky z technické konference se zabývají funkcionalitou produktu v p
 
 **Řízení informací o produktech**
 
--  [Konfigurátor produktu v aplikaci Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+-  [Konfigurátor produktu v Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 
 **Řízení skladu** 
 
@@ -102,10 +101,10 @@ Tyto nahrávky z technické konference se zabývají funkcionalitou produktu v p
 
 **Správa přepravy**
 
--  [Správa dopravy (TMS) v nové aplikace Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
+-  [Správa přepravy (TMS) v nové aplikaci Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogy
-Výrobě a správě dodavatelského řetězce se věnuje spousta témat v blogu <a href="https://blogs.msdn.microsoft.com/axmfg/">Tým výzkumu a vývoje pro výrobu v Dynamics AX</a> a v blogu <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX</a>. Většina jich je napsána pro předchozí verzi aplikace Finance and Operations, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 
+Výrobě a správě dodavatelského řetězce se věnuje spousta témat v <a href="https://blogs.msdn.microsoft.com/axmfg/">blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX</a> a v <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX</a>. Většina jich je napsána pro předchozí verzi aplikace Finance and Operations, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 
 
 ## <a name="white-papers"></a>Dokumenty white paper
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktická cvičení zaměřená na nákladové účetnictví</a> 
@@ -114,7 +113,6 @@ Výrobě a správě dodavatelského řetězce se věnuje spousta témat v blogu
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilita ve skladu usnadněná aplikací Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
-Informace o školení k aplikaci Microsoft Dynamics 365 for Finance and Operations získáte na <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> výukovém portálu Microsoft Dynamics</a>. (vyžaduje účet CustomerSource) 
-
+Informace o školeních Microsoft Dynamics 365 for Finance and Operations naleznete na <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Výukovém portálu Microsoft Dynamics</a>. (vyžaduje účet CustomerSource) 
 
 

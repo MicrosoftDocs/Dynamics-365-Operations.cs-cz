@@ -1,13 +1,13 @@
 ---
-title: "Plánování rozpočtu"
-description: "Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace."
+title: Plánování rozpočtu
+description: Cílem tohoto semináře je poskytnout přehled aktualizací funkcí aplikace Microsoft Dynamics 365 for Finance and Operations v oblasti Plánování rozpočtu. Tento seminář ukazuje příklad rychlé konfigurace modulu plánování rozpočtu a znázorňuje, jak lze provést plánování rozpočtu pomocí této konfigurace.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311627"
 ---
-
 # <a name="budget-planning"></a>Plánování rozpočtu
 
 [!include [banner](../includes/banner.md)]
@@ -260,7 +259,6 @@ B. Přejděte do části Rozpočtování &gt; Nastavení &gt; Plánování rozpo
 C. Přejděte do části Rozpočtování &gt; Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu. Na kartě Fáze workflowu přidružte automatické schválení workflowu vytvořené v kroku A fázím Počáteční a Odesláno 
 
 [![Tvorba rozpočtu a plánování rozpočtu](./media/screenshot42.png)](./media/screenshot42.png)  
-
 
 
 

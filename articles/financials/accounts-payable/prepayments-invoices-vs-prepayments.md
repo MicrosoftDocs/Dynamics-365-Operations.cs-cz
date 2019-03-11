@@ -1,13 +1,13 @@
 ---
-title: "Zálohové faktury a zálohy"
-description: "Toto téma nabízí popis a porovnání dvou metod, které organizace mohou použít pro platby záloh (zálohy). Pro jednu metodu je nutné vytvořit zálohovou fakturu, která je přidružená k nákupní objednávce. Pro druhou můžete zálohový doklad deníku vytvořit vytvořením položek deníku a jejich označením jako zálohový doklad deníku."
+title: Zálohové faktury a zálohy
+description: Toto téma nabízí popis a porovnání dvou metod, které organizace mohou použít pro platby záloh (zálohy). Pro jednu metodu je nutné vytvořit zálohovou fakturu, která je přidružená k nákupní objednávce. Pro druhou můžete zálohový doklad deníku vytvořit vytvořením položek deníku a jejich označením jako zálohový doklad deníku.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c81045b72d15f4474d82040d7725740cff5eba91
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f30e375b759641875ed6a5a7d2f77132715c57
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310132"
 ---
-
 # <a name="prepayment-invoices-vs-prepayments"></a>Zálohové faktury a zálohy
 
 [!include [banner](../includes/banner.md)]
@@ -45,14 +44,14 @@ Organizace může vydávat zálohy (zálohové platby) dodavatelům za zboží n
 | Fakturace zálohy je k dispozici jen v části Závazky.                         | Zálohy jsou k dispozici v části Závazky a Pohledávky.    |
 
 ## <a name="overview-of-the-prepayment-process"></a>Přehled procesu záloh
-Účetní praxe v mnoha zemích nebo oblastech vyžaduje, aby zálohy od odběratele nebo pro dodavatele nebyly zaúčtovány na běžných součtových účtech pro odběratele nebo dodavatele. Namísto toho se tyto platby záloh účtují do zvláštních účtů hlavní knihy určené pro platby záloh. Při vytvoření prodejní nebo nákupní objednávky je odběrateli nebo od dodavatele vystavena faktura. Při úhradě faktury dojde ke stornování zálohy a dokladu platby zálohy na DPH na účtech záloh hlavní knihy a částky faktury se automaticky zaúčtují na běžné součtové účty. Pokud chcete vytvořit zálohu, postupujte následovně.
+Účetní praxe v mnoha zemích nebo oblastech vyžaduje, aby zálohy od odběratele nebo pro dodavatele nebyly zaúčtovány na běžných součtových účtech pro odběratele nebo dodavatele. Namísto toho se tyto platby záloh účtují do zvláštních účtů hlavní knihy určené pro platby záloh. Při vytvoření prodejní nebo nákupní objednávky je odběrateli nebo od dodavatele vystavena faktura. Při úhradě faktury dojde ke stornování zálohy a dokladu platby zálohy na DPH na účtech záloh hlavní knihy a částky faktury se automaticky zaúčtují na běžné součtové účty. Pokud chcete vytvořit zálohu, postupujte následovně.
 
 1.  Nastavte účetní profily pro zálohy.
 2.  V části Parametry pohledávek a Parametry závazků pod položkou **Hlavní kniha a DPH** vyberte nový účetní profil pomocí parametru **Účetní profil pro deník plateb se zálohou**.
 3.  Vytvořte deník plateb a potom vytvořte novou platbu.
 4.  Můžete platbu označit jako zálohu. Pokud je platba označena jako záloha, bude platba zaúčtována do účtů hlavní knihy, které jsou definovány v účetním profilu, který nastavíte podle kroku 1 a 2. Dále platí, že pokud je platba označena jako záloha, budou vypočteny daně. Některé úřady vyžadují zaplacení daní při zaznamenání zálohy, a to i v případě, že není k dispozici faktura.
 5.  Zaúčtujte zálohu.
-6.  Volitelné: Zálohu můžete před vytvořením faktury vyrovnat proti nákupní objednávce nebo prodejní objednávce. Na stránce prodejní nebo nákupní objednávky v podokně akcí použijte možnost **Vyrovnat transakce**.
+6.  Volitelné: Zálohu můžete před vytvořením faktury vyrovnat proti nákupní objednávce nebo prodejní objednávce.Na stránce prodejní nebo nákupní objednávky v podokně akcí použijte možnost **Vyrovnat transakce**.
 7.  Jakmile dodavatel dodá zboží nebo služby, fakturu zaznamenejte. Pokud jste v kroku 6 vyrovnali zálohu oproti nákupní objednávce nebo prodejní objednávce, záloha se automaticky vyrovná oproti faktuře, kterou jste vytvořili. Pokud záloha nebyla vyrovnána oproti nákupní objednávce nebo prodejní objednávce, můžete ji ručně vyrovnat oproti faktuře s použitím možnosti **Vyrovnat transakce** na stránce odběratele nebo dodavatele. Částka zálohy je potom dočasně stornována z účtu hlavní knihy závazků/pohledávek. Dále pokud byly vypočteny daně, jsou stornovány, protože faktura obsahuje skutečné daně.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Přehled procesu fakturace záloh
@@ -63,7 +62,6 @@ Zálohové faktury se při obchodování používají běžně. Dodavatel vystav
 3.  Koordinátor závazků zaznamená zálohovou fakturu oproti nákupní objednávce a poté je zálohová faktura uhrazena.
 4.  Jakmile dodavatel dodá zboží nebo služby a budou přijaty příslušné faktury dodavatele, koordinátor závazků použije částku zálohy, která byla zaplacena podle faktury.
 5.  Koordinátor závazků zaplatí a vyrovná zbývající zůstatek faktury.
-
 
 
 

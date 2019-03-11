@@ -1,13 +1,13 @@
 ---
-title: "Přehled převodů SEPA"
-description: "Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele. Převod SEPA je specifický typ platby v eurech od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Toto téma také vysvětluje, jak nastavit a převést soubor platby platebního převodu."
+title: Přehled převodů SEPA
+description: Tento článek poskytuje obecné informace o převodech kreditů ISO 20022, které zahrnují převody kreditů v jednotné oblasti pro platby v eurech a jakékoli další elektronické platby pro dodavatele. Převod SEPA je specifický typ platby v eurech od jedné společnosti nebo osoby pro jinou společnost nebo osobu. Toto téma také vysvětluje, jak nastavit a převést soubor platby platebního převodu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d6081c12ea65812a15b50c627330b4566ab4c679
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1aa70dea3b0e7056afbdba96f4475c3e7e71f57c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363768"
 ---
-
 # <a name="sepa-credit-transfer-overview"></a>Přehled převodů SEPA
 
 [!include [banner](../includes/banner.md)]
@@ -124,7 +123,6 @@ Mezinárodní číslo bankovního účtu (IBAN) a identifikační kód banky (IK
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Jak mohu přenést soubor platby do banky?
 Při generování plateb je vygenerován soubor platby a budete vyzváni k jeho uložení z webového prohlížeče do kteréhokoli dostupného umístění. Dalším krokem je odeslání souboru XML do banky. Tento proces se v jednotlivých bankách liší. Postupujte podle pokynů vaší banky k odeslání souborů do banky ke zpracování.
-
 
 
 

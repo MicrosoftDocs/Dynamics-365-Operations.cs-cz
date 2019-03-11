@@ -1,31 +1,30 @@
 ---
-title: "Ruční vytvoření servisních objednávek"
-description: "Servisní zakázky můžete vytvářet ručně pomocí servisní smlouvy nebo pomocí formuláře **Servisní zakázky**."
+title: Ruční vytvoření servisních objednávek
+description: Servisní zakázky můžete vytvářet ručně pomocí servisní smlouvy nebo pomocí formuláře **Servisní zakázky**.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9fbcdaa50a8f13247c13c1885cdb4ab7f5f39a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a0cc6b2646929776f4efb20474de6b0fc5c4719c
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310914"
 ---
-
 # <a name="create-service-orders-manually"></a>Ruční vytvoření servisních objednávek    
 
 [!include [banner](../includes/banner.md)]
@@ -102,5 +101,4 @@ Servisní zakázku lze vytvořit z formuláře **Prodejní objednávky** pomocí
 [Automatické vytvoření servisních zakázek](create-service-orders-automatically.md)
 
 [Vytvoření servisních zakázek (formulář třídy)](https://technet.microsoft.com/en-us/library/aa553901\(v=ax.60\)) 
-
 

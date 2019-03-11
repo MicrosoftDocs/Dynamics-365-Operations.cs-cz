@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření zásad shrnutí nákladů"
-description: "Tento postup popisuje způsob vytvoření zásad shrnutí nákladů a vytváření pravidel zásad."
+---
+title: Vytvoření zásad shrnutí nákladů
+description: Tento postup popisuje způsob vytvoření zásad shrnutí nákladů a vytváření pravidel zásad.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5f1fa434061832bd306cef13afc46c7f3adab0c0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 42656cbf445fd3f79844884d7d35243c5b051a4a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362595"
 ---
 # <a name="create-a-cost-rollup-policy"></a>Vytvoření zásad shrnutí nákladů
 
@@ -67,5 +67,4 @@ Tento postup popisuje způsob vytvoření zásad shrnutí nákladů a vytvářen
     * V tomto příkladu namapujte sekundární nákladový prvek CC-009 na nákladové středisko.  
     * Pokračujte, dokud všechna nákladová střediska nejsou namapována na odpovídajících sekundární prvky nákladů.  
 16. Klikněte na položku Uložit.
-
 

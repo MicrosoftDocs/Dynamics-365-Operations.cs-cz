@@ -1,13 +1,13 @@
 ---
-title: "Vytvoření vlastních polí a práce s nimi"
-description: "Toto téma popisuje, jak aplikace Microsoft Dynamics 365 for Finance and Operations umožňuje některým uživatelům vytvářet vlastní pole pro přizpůsobení aplikace jejich podnikání."
+title: Vytvoření vlastních polí a práce s nimi
+description: Toto téma popisuje, jak aplikace Microsoft Dynamics 365 for Finance and Operations umožňuje některým uživatelům vytvářet vlastní pole pro přizpůsobení aplikace jejich podnikání.
 author: jasongre
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 18402579789c17de7b46dd7a013b3b6327ea5d4f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348013"
 ---
-
 # <a name="create-and-work-with-custom-fields"></a>Vytvoření vlastních polí a práce s nimi
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ Aplikace Microsoft Dynamics 365 for Finance and Operations sice poskytuje rozsá
 
 Možnost přidat vlastní pole je k dispozici v aktualizaci platform update 13 a novější.
 
-Toto video ukazuje, jak je snadné přidat vlastní pole na stránku: [Přidání vlastního pole v aplikaci Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
+Toto video ukazuje, jak je snadné přidat na stránku vlastní pole: [Přidávání vlastních polí v aplikaci Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
 ## <a name="creating-custom-fields"></a>Vytváření vlastních polí
 
@@ -160,4 +159,3 @@ Z důvodů výkonnosti a z technických důvodů momentálně podporují přidá
 - Tabulka nemůže rozšiřovat jinou tabulku.
 - Tabulka nemůže být označena jako systémová tabulka.
 - Tabulka nemůže být dočasná.
-

@@ -1,13 +1,13 @@
 ---
-title: "Doplnění"
-description: "Toto téma popisuje strategie doplnění, které jsou k dispozici pro sklady, které používají funkce, které jsou k dispozici v modulu Řízení skladu."
+title: Doplnění
+description: Toto téma popisuje strategie doplnění, které jsou k dispozici pro sklady, které používají funkce, které jsou k dispozici v modulu Řízení skladu.
 author: Mirzaab
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 37a5509b6161caffa8f3ab65f1fd8378966c2c30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344517"
 ---
-
 # <a name="replenishment"></a>Doplnění
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,7 @@ Doplnění poptávky je podporována pro prodejní objednávky, převodní pří
 ## <a name="minmax-replenishment"></a>Doplnění metodou min/max.
 U doplnění metodou min/max. probíhá doplnění zásob tak, aby byly ve stanoveném minimálním a maximálním rozsahu. Obvykle tento proces probíhá jednou denně k zajištění toho, že jsou všechna výdejní skladová místa naplněna na maximální úroveň před zahájením výdeje. 
 
-Minimální a maximální objemy jsou nastaveny v šabloně doplnění. Mnoho dalších nastavení v šabloně je podobné, jako v šablonách, které se používají u doplnění na základě poptávky vlny. Šablona by měla obsahovat jeden řádek pro každou položku a skladové místo. Při provádění doplnění pomocí dávkové úlohy Microsoft Dynamics 365 for Finance and Operations vyhodnotí, zda doplnění je vyžadováno pomocí pořadí, ve kterém jsou uspořádány řádky. 
+Minimální a maximální objemy jsou nastaveny v šabloně doplnění. Mnoho dalších nastavení v šabloně je podobné, jako v šablonách, které se používají u doplnění na základě poptávky vlny. Šablona by měla obsahovat jeden řádek pro každou položku a skladové místo. Při provádění doplnění pomocí dávkové úlohy aplikace Microsoft Dynamics 365 for Finance and Operations vyhodnotí, zda je doplnění vyžadováno, pomocí pořadí, ve kterém jsou uspořádány řádky. 
 
 Všimněte si, že strategie doplnění metodou Min/Max. nedokáže doplnit prázdné místo, pokud není umístění nastaveno jako pevné umístění pro položku. Není-li umístění, které musí být doplněno, nastaveno jako pevné umístění, systém nedokáže určit, kterou položku je třeba doplnit. Proto je nutné před zahájením doplnění mít na skladě alespoň část množství.
 
@@ -77,5 +76,4 @@ Namísto toho, abyste museli na konci procesu přidělení shrnout poptávku a p
 |    Profily umístění    |                                                                                                        Profily umístění jsou nutné k vytvoření umístění.                                                                                                        |
 |   Směrnice skladového místa   |                                                       Směrnice umístění jsou nezbytné, aby bylo možné provést práci v umístění, které vyžaduje doplnění, a v umístění, ze kterého zásoby pochází.                                                        |
 |     Šablony práce      |                                                   Šablony práce typu <strong>Doplnění</strong> jsou nutné pro vytvoření doplnění, a aby bylo možné zásoby přenášet do požadovaného umístění.                                                    |
-
 

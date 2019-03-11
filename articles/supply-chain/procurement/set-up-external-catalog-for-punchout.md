@@ -1,13 +1,13 @@
 ---
-title: "Nastavení externího katalogu pro funkci PunchOut eProcurement"
-description: "Toto téma popisuje použití externího katalogu nebo katalogu funkce punchout ke shromažďování informací o nabídce od dodavatele a jejich přidání do žádanky."
+title: Nastavení externího katalogu pro funkci PunchOut eProcurement
+description: Toto téma popisuje použití externího katalogu nebo katalogu funkce punchout ke shromažďování informací o nabídce od dodavatele a jejich přidání do žádanky.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368161"
 ---
-
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
 
 [!include [banner](../includes/banner.md)]
@@ -55,16 +54,17 @@ Externí katalog by měl zaměstnanci, který zadá nákupní žádanku, umožni
 Tento oddíl uvádí další podrobnosti o úkolu 4 v předchozím oddílu.
 
 1. Zadejte název a popis katalogu externího dodavatele. Název, který zadáte, se zobrazí v nákupním košíku představujícím externí katalog zobrazený zaměstnancům, kteří vytvoří žádanku. Zaměstnanci můžou kliknout na nákupní košík k otevření katalogu na webu externího katalogu dodavatele.
-2. Přidejte obrázek pomocí akce **Obrázek externího katalogu**. Obrázek, který zadáte, se zobrazí v nákupním košíku představujícím externí katalog zobrazený zaměstnancům, kteří vytvoří žádanku. Všimněte si, že šířka a výška obrázku musí být stejné. V opačném případě se obrázek nezobrazí správně.
+2. Přidejte obrázek pomocí akce  **Obrázek externího katalogu**. Obrázek, který zadáte, se zobrazí v nákupním košíku představujícím externí katalog zobrazený zaměstnancům, kteří vytvoří žádanku. Všimněte si, že šířka a výška obrázku musí být stejné. V opačném případě se obrázek nezobrazí správně.
 3. Vyberte, zda se má web externího katalogu dodavatele zobrazit ve stejném okně prohlížeče jako web, kde zaměstnanec vytvořil žádanku, nebo v novém okně.
 4. Vyberte dodavatele pro katalog. V seznamu **právnické osoby** existuje řádek pro každou právnickou osobu, kde je dodavatel nastaven. Pokud chcete uživatelům umožnit, aby požadovali produkty přímo z katalogu dodavatele v některých právnických osobách, ale ne v jiných, můžete použít tlačítko **Nepovolit přístup** nebo **Povolit přístup** pro každou právnickou osobu, které chcete tento katalog zpřístupnit nebo zamezit v přístupu.
 5. V poli **Výchozí konec platnosti (dny)** zadejte počet dní, po které je nabídka přijatá z externího katalogu platná a lze ji použít k nákupu od externího dodavatele. Když je nabídka vytvořena a načtena z místa katalogu externího dodavatele, nabídka je platná od aktuálního systémového data a zůstává v platnosti pro počet dnů, které zadáte v tomto poli.
-6. Kliknutím na tlačítko **Přidat** spusťte mapování kategorií zásobování na externí katalog. Potom v seznamu Název kategorie vyberte kategorii. Seznam kategorií je nadřazený kategoriím zásobování, na které je dodavatel namapován ve všech právnických osobách, které jsou nastaveny pro dodavatele.
+6. Kliknutím na tlačítko **Přidat** spusťte mapování kategorií zásobování na externí katalog.Potom v seznamu Název kategorie vyberte kategorii. Seznam kategorií je nadřazený kategoriím zásobování, na které je dodavatel namapován ve všech právnických osobách, které jsou nastaveny pro dodavatele.
 [!NOTE]
-Zásady nákupu slouží k povolení nebo zakázání přístupu ke kategoriím kupující právnické osoby nebo přijímající provozní jednotky. Funkce punchout pro externí katalog vyžaduje, aby přístup být povolen alespoň jedné kategorii zásobování, která je mapována na katalog.
+Zásady nákupu slouží k povolení nebo zakázání přístupu ke kategoriím kupující právnické osoby nebo přijímající provozní jednotky.Funkce punchout pro externí katalog vyžaduje, aby přístup být povolen alespoň jedné kategorii zásobování, která je mapována na katalog.
 7. Nastavení zprávy s požadavkem cXML, který bude odeslán dodavateli. Automaticky generovaný formát zprávy je minimální šablona potřebné k zahájení relace. Vyplňte hodnoty štítků.
 
-Vždy můžete znovu načíst šablonu zprávy generované systémem klepnutím na **Obnovit formát zprávy**. Všimněte si, že když obnovíte formát zpráv, aktuální zpráva bude nahrazena automaticky generovaným formátem zprávy, který má prázdné značky.
+Vždy můžete znovu načíst šablonu zprávy generované systémem klepnutím na **Obnovit formát zprávy**. 
+Všimněte si, že když obnovíte formát zpráv, aktuální zpráva bude nahrazena automaticky generovaným formátem zprávy, který má prázdné značky.
 
 ### <a name="cxml-setup-message"></a>Zpráva nastavení cXML
 Níže naleznete popis štítků, které jsou zahrnuty do šablony:
@@ -88,7 +88,7 @@ Dodavatel může mít požadavek na příjem z vnějšího zdroje prvku v nastav
 Další informace o službách protokolu cXML naleznete v tématu http://cxml.org/.
 
 ## <a name="post-back-message"></a>Zpráva zaslaná zpět
-Zpráva zaslaná zpět je zpráva přijatá od dodavatele v případě, že se uživatel odhlásí z externího webu a vrátí do aplikace Finance and Operations. Tyto zprávy nelze konfigurovat. Jsou založeny na definici cXML protokolu. Dále jsou uvedeny informace, které mohou být součástí takové zprávy přijaté na řádku žádanky:
+Zpráva zaslaná zpět je zpráva přijatá od dodavatele v případě, že se uživatel odhlásí z externího webu a vrátí do aplikace Finance and Operations. Tyto zprávy nelze konfigurovat. Jsou založeny na definici cXML protokolu.Dále jsou uvedeny informace, které mohou být součástí takové zprávy přijaté na řádku žádanky:
 
 | Zpráva přijatá od dodavatele | Zkopírovaná do řádku žádanky v aplikaci Finance and Operations.|
 |------------------------------|----------------------------------------------------------|
@@ -106,5 +106,4 @@ Zpráva zaslaná zpět je zpráva přijatá od dodavatele v případě, že se u
 Odstraňte externí katalog s akcí odstranění na stránce.
 
 Pokud byl požadován produkt z externího katalogu dodavatele, nelze katalog odstranit, protože uživatel požaduje zboží či službu z tohoto katalogu. Místo toho se stav dodavatel externího katalogu nastaví na neaktivní. Pokud chcete odebrat přístup k webu externího dodavatele katalogu, ale ne ho odstranit, změňte stav externího katalogu na Neaktivní.
-
 

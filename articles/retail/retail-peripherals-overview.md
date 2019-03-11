@@ -1,13 +1,13 @@
 ---
-title: "Periferní zařízení Retail"
-description: "Toto téma vysvětluje pojmy související s maloobchodními periferními zařízeními."
+title: Periferní zařízení Retail
+description: Toto téma vysvětluje pojmy související s maloobchodními periferními zařízeními.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/16/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: c2539af8a29b580a10002bc8648505d42c7b8456
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347852"
 ---
-
 # <a name="retail-peripherals"></a>Periferní zařízení Retail
 
 [!include [banner](includes/banner.md)]
@@ -40,9 +39,9 @@ Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **
 
 ### <a name="devices"></a>Zařízení
 
-Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Zařízení**. Zařízení je entita, která představuje fyzickou instanci zařízení, která je namapována k pokladně POS. Při vytvoření je zařízení mapováno k pokladně POS. Zařízení sleduje informace o tom, kdy dojde k aktivaci pokladny POS, typu používaného klienta a balíčku aplikace, který byl nasazen na konkrétní zařízení. Zařízení lze mapovat na následující typy aplikací: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android a Retail Modern POS – iOS.
+Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Zařízení**. Zařízení je entita, která představuje fyzickou instanci zařízení, která je namapována k pokladně POS. Při vytvoření je zařízení mapováno k pokladně POS. Zařízení sleduje informace o tom, kdy dojde k aktivaci pokladny POS, typu používaného klienta a balíčku aplikace, který byl nasazen na konkrétní zařízení. Zařízení mohou být mapována na aplikací následujících typů: Retail Modern POS, program Retail POS cloudu, Retail Modern POS – Windows Phone Retail Modern POS – Android a Retail Modern POS – iOS.
 
-### <a name="retail-modern-pos"></a>Moderní Retail POS
+### <a name="retail-modern-pos"></a>Retail Modern POS
 
 Modern POS je program POS pro systém Microsoft Windows. Může být nasazen v operačních systémech Windows 10.
 
@@ -56,7 +55,7 @@ Modern POS pro iOS je verze programu Modern POS založená na iOS, kterou lze im
 
 ### <a name="modern-pos-for-android"></a>Modern POS pro Android
 
-Modern POS pro Android je verze programu Modern POS založená na Androidu, kterou lze implementovat na zařízeních se systémem Android.
+Modern POS pro Android je verze programu Modern POS založená na systému Android, kterou lze implementovat na zařízeních se systémem Android.
 
 ### <a name="pos-peripherals"></a>Periferní položky POS
 
@@ -117,9 +116,9 @@ Podpora platebního zařízení je implementována prostřednictvím platebního
 
 ### <a name="opos"></a>OPOS
 
-Aby bylo možno zaručit, že spolu s aplikací Microsoft Dynamics 365 for Operations - Retail bude možné používat co nejširší škálu zařízení, je primární platformou pro maloobchodní periferní zařízení podporovanou aplikací Microsoft Dynamics 365 for Retail průmyslový standard OLE pro POS. Standard OLE pro POS byl vytvořen Národní maloobchodní federací (National Retail Federation, NRF), která stanovuje standardní komunikační protokoly pro maloobchodní periferní zařízení. OPOS je široce přijímaná implementace standardu OLE pro POS. Byla vyvinuta v polovině 90. let 20. století a od té doby několikrát aktualizována. OPOS poskytuje architekturu ovladačů zařízení, která umožňuje snadnou integraci hardwaru POS se systémy POS založenými na Windows. OPOS řídí zpracování komunikace mezi kompatibilním hardwarem a mezi softwarem POS. Ovládací prvek OPOS se skládá ze dvou částí:
+Aby bylo možno zaručit, že spolu s aplikací Microsoft Dynamics 365 for Retail bude možné používat co nejširší škálu zařízení, je primární platformou pro maloobchodní periferní zařízení podporovanou aplikací Microsoft Dynamics 365 for Retail průmyslový standard OLE pro POS. Standard OLE pro POS byl vytvořen Národní maloobchodní federací (National Retail Federation, NRF), která stanovuje standardní komunikační protokoly pro maloobchodní periferní zařízení. OPOS je široce přijímaná implementace standardu OLE pro POS. Byla vyvinuta v polovině 90. let 20. století a od té doby několikrát aktualizována. OPOS poskytuje architekturu ovladačů zařízení, která umožňuje snadnou integraci hardwaru POS se systémy POS založenými na Windows. OPOS řídí zpracování komunikace mezi kompatibilním hardwarem a mezi softwarem POS. Ovládací prvek OPOS se skládá ze dvou částí:
 
-- **Objekt ovládacího prvku** – objekt ovládacího prvku pro určitou třídu zařízení (jako například řádkový displej) poskytuje rozhraní pro softwarový program. Konzultační služby Monroe (Monroe Consulting Services, [www.monroecs.com](http://www.monroecs.com/)) je společnost, která poskytuje standardizovanou sadu ovládacích prvků řízení OPOS, které jsou označovány jako objekty společných ovládacích prvků (Common Control Objects, CCO). CCO se používají k testování komponenty POS u Microsoft Dynamics 365 for Retail. Proto testování pomáhá zaručit, aby, pokud Microsoft Dynamics 365 for Retail podporuje nějakou třídu zařízení prostřednictvím OPOS, mohlo být podporováno mnoho typů zařízení za předpokladu, že výrobce dodává servisní objekt určený pro OPOS. Není nutné explicitně testovat každý typ zařízení.
+- **Objekt ovládacího prvku** – objekt ovládacího prvku pro určitou třídu zařízení (jako například řádkový displej) poskytuje rozhraní pro softwarový program. Konzultační služby Monroe (Monroe Consulting Services, [www.monroecs.com](http://www.monroecs.com/)) je společnost, která poskytuje standardizovanou sadu ovládacích prvků řízení OPOS, které jsou označovány jako objekty společných ovládacích prvků (Common Control Objects, CCO). K testování komponenty POS v Microsoft Dynamics 365 for Retail se používají CCO. Proto testování pomáhá zaručit, aby, pokud Microsoft Dynamics 365 for Retail podporuje nějakou třídu zařízení prostřednictvím OPOS, mohlo být podporováno mnoho typů zařízení za předpokladu, že výrobce dodává servisní objekt určený pro OPOS. Není nutné explicitně testovat každý typ zařízení.
 - **Objekt služby** – objekt služby zajišťuje komunikaci mezi objektem ovládacího prvku (CCO) a zařízením. Objekt služby pro nějaké zařízení obvykle pochází od výrobce zařízení. V některých případech však bude pravděpodobně nutné stáhnout objekt služby z webu výrobce. Například může být k dispozici novější objekt služby. Adresu webu výrobce najdete v dokumentaci k hardwaru.
 
 [![Předměty kontroly a servisu](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -127,7 +126,7 @@ Aby bylo možno zaručit, že spolu s aplikací Microsoft Dynamics 365 for Opera
 Podpora pro implementaci OPOS OLE pro POS pomáhá zaručit aby, v případě, že výrobci zařízení a vydavatelé POS standard správně implementují, mohly pokladní systémy a podporovaná zařízení řádně spolupracovat, i kdyby nebyly nejprve společně otestovány.
 
 > [!NOTE]
-> Podpora OPOS nezaručuje podporu pro všechna zařízení, která mají ovladače OPOS. Microsoft Dynamics 365 for Retail musí nejprve podporovat tento typ zařízení nebo třídy prostřednictvím OPOS. Kromě toho objekty služby nemusí být vždy aktuální s nejnovější verzí CCO. Měli byste také pamatovat na to, že kvalita objektů služby bývá obecně různá.
+> Podpora OPOS nezaručuje podporu pro všechna zařízení, která mají ovladače OPOS. Microsoft Dynamics 365 for Retail mísí nejprve podporoval typ zařízení nebo na třídu prostřednictvím OPOS. Kromě toho objekty služby nemusí být vždy aktuální s nejnovější verzí CCO. Měli byste také pamatovat na to, že kvalita objektů služby bývá obecně různá.
 
 ### <a name="windows"></a>Windows
 
@@ -203,7 +202,7 @@ Informace naleznete v tématu [Konfigurace a instalace maloobchodní hardwarové
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Instalace a konfigurace Moderního POS pro Windows
 
-Informace naleznete v tématu [Konfigurace a instalace maloobchodního Moderního POS](retail-modern-pos-device-activation.md).
+Informace naleznete v tématu [Konfigurace a instalace Retail Modern POS](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Instalace a konfigurace zařízení OPOS
 
@@ -296,7 +295,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Síť
-<blockquote>[!NOTE] Pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</blockquote>
+<blockquote>POZNáMKA. Pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</blockquote>
 </li>
 </ul>
 </td>
@@ -307,7 +306,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Síť
-<blockquote>[!NOTE] Pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</blockquote>
+<blockquote>POZNáMKA. Pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</blockquote>
 </li>
 </ul>
 </td>
@@ -375,7 +374,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Ovladač systému Windows
-<blockquote>[!NOTE] U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</blockquote>
+<blockquote>POZNáMKA: U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</blockquote>
 </li>
 <li>Síť</li>
 </ul>
@@ -405,7 +404,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Síť
-<blockquote>[!NOTE] Pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong> .</blockquote>
+<blockquote>POZNáMKA. Pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong> .</blockquote>
 </li>
 </ul>
 </td>
@@ -470,7 +469,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Ovladač systému Windows
-<blockquote>[!NOTE] U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</blockquote>
+<blockquote>POZNáMKA: U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</blockquote>
 </li>
 <li>Síť</li>
 </ul>
@@ -492,7 +491,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Síť
-<blockquote>[!NOTE] Pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong> .</blockquote>
+<blockquote>POZNáMKA. Pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong> .</blockquote>
 </li>
 </ul>
 </td>
@@ -523,7 +522,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 Další informace o vytváření hardwarových profilů naleznete v tématu [Definování a udržování kanálových klientů, včetně registrů a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> V aplikaci Microsoft Dynamics 365 for Retail, verze 1611 se hardwarový profil stanice již nepoužívá. Atributy, které jste dříve nastavili v profilu hardwarové stanice, jsou nyní součástí samotné hardwarové stanice.
+> V Microsoft Dynamics 365 for Retail verze 1611 se profil hardwarové stanice již nepoužívá. Atributy, které jste dříve nastavili v profilu hardwarové stanice, jsou nyní součástí samotné hardwarové stanice.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Moderní POS pro systém Windows s hardwarovou stanicí IPC (vestavěnou)
 
@@ -564,7 +563,7 @@ Tato konfigurace může být použita pro všechny moderní POS klienty, které 
 5. Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
 6. Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
 7. Instalace hardwarové stanice. Další informace o instalaci hardwarové stanice, viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
-8. Instalace a aktivace moderní POS. Další informace o instalaci moderní POS, viz [Instalace a konfigurace moderní POS pro maloobchod](retail-modern-pos-device-activation.md).
+8. Instalace a aktivace moderní POS. Další informace o instalaci Modern POS uvádí téma [Retail Modern POS – konfigurace a instalace](retail-modern-pos-device-activation.md).
 9. Přihlášte se do moderní POS a vyberte **Provést operace bez zásuvky**.
 10. Spusťte operaci **Spravovat hardwarové stanice**.
 11. Klikněte na **Spravovat**.
@@ -593,7 +592,7 @@ Tato konfigurace může být použita pro všechny moderní POS klienty, které 
 6. Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
 7. Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
 8. Nainstalujte hardwarovou stanici na každý hostitelský počítač, který jste vytvořili v krocích 2 a 3. Další informace o instalaci hardwarové stanice, viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
-9. Instalace a aktivace moderní POS. Další informace o instalaci moderní POS, viz [Instalace a konfigurace moderní POS pro maloobchod](retail-modern-pos-device-activation.md).
+9. Instalace a aktivace moderní POS. Další informace o instalaci Modern POS uvádí téma [Retail Modern POS – konfigurace a instalace](retail-modern-pos-device-activation.md).
 10. Přihlášte se do moderní POS a vyberte **Provést operace bez zásuvky**.
 11. Spusťte operaci **Spravovat hardwarové stanice**.
 12. Klikněte na **Spravovat**.
@@ -743,7 +742,6 @@ Následující periferní zařízení byly testovány pomocí vyhrazené, nesdí
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě     |
-| Star         | TSP100   | OPOS      | Vyžaduje ovladače TSP650II |
 | HP           | F7M67AA  | OPOS      | Napájené USB               |
 
 #### <a name="bar-code-scanner"></a>Skener čárových kódů
@@ -818,7 +816,6 @@ Následující periferní zařízení byla testována pomocí sdílené hardwaro
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě     |
-| Star         | TSP100   | OPOS      | Vyžaduje ovladače TSP650II |
 | HP           | F7M67AA  | OPOS      | Napájené USB               |
 
 #### <a name="payment-terminal"></a>Patební terminál 
@@ -894,4 +891,3 @@ Následující periferní zařízení byla testována pomocí sdílené hardwaro
 ## <a name="additional-resources"></a>Další zdroje
 
 [Simulátor periferních zařízení Retail](dev-itpro/retail-peripheral-simulator.md)
-

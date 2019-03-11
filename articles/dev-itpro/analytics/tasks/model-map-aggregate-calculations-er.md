@@ -1,13 +1,13 @@
---- 
-title: "Použití konfigurací mapování modelu pro agregované výpočty na úrovni databáze"
-description: "Tento postup poskytuje informace o způsobu navržení nové konfigurace mapování modelu elektronického výkaznictví a použití integrovaných funkcí ER k efektivním agregovaným výpočtům."
+---
+title: Použití konfigurací mapování modelu pro agregované výpočty na úrovni databáze
+description: Tento postup poskytuje informace o způsobu navržení nové konfigurace mapování modelu elektronického výkaznictví a použití integrovaných funkcí ER k efektivním agregovaným výpočtům.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a462a3997644a494b5cea89c9530ddba67c32450
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313628"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Použití konfigurací mapování modelu pro agregované výpočty na úrovni databáze
 
@@ -37,7 +37,7 @@ Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému 
 3. Ve stromové struktuře vyberte 'Intrastat model\Intrastat sample mapping'.
 4. Klikněte na možnost Návrhář.
 5. Klikněte na možnost Návrhář.
-6. Ve stromové struktuře vyberte Dynamics 365 for Operations\Záznamy tabulky.
+6. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.
 7. Klikněte na možnost Přidat kořen.
     * Přidáte nový zdroj dat představující záznamy, které chcete seskupit.  
 8. Zadejte text „Transakce“ do pole Název.
@@ -116,5 +116,4 @@ Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému 
 67. Ve stromovém zobrazení rozbalte 'Commodity record(Intrastat)'.
 68. Klikněte na položku Uložit.
     * Poznámka: pole 'Provedení v' označuje, že toto seskupení se provede při spuštění v paměti i v případě, že neexistují žádná seskupení definovaná ve vybraném zdroji dat a vybraný zdroj dat tabulky záznamů typu se vztahuje na stejnou tabulku 'systému Intrastat. Důvodem je skutečnost, že zdroj dat obsahuje některá vypočítaná pole, která nelze ještě převést na úrovni databáze SQL.  
-
 

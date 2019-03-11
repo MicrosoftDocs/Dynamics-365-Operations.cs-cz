@@ -1,13 +1,13 @@
 ---
-title: "Vítá vás aplikace Dynamics 365 for Talent"
-description: "Aplikace Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn."
+title: Vítejte v Dynamics 365 for Talent
+description: Aplikace Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn.
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "301997"
 ---
-
-# <a name="welcome-to-dynamics-365-for-talent"></a>Vítá vás aplikace Dynamics 365 for Talent
+# <a name="welcome-to-dynamics-365-for-talent"></a>Vítejte v Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
 
-Aplikace Microsoft Dynamics 365 for Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn. Nabízí také systém, ve kterém mohou pracovníci oddělení lidských zdrojů spravovat různé oblasti dohledu.
+Microsoft Dynamics 365 for Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn. Nabízí také systém, ve kterém mohou pracovníci oddělení lidských zdrojů spravovat různé oblasti dohledu.
 
 Modul Talent lze použít k provádění těchto úkonů:
 
@@ -42,11 +41,11 @@ Modul Talent lze použít k provádění těchto úkonů:
 + Hodnocení výkonu a implementace cílů pracovníka.
 + Nastavení, poskytování a analýza školení, která mají určitý program, semináře a průběh.
 
-Pusťte si video [Začínáme s aplikací Dynamics 365 for Talent](https://www.youtube.com/watch?v=6rg2ByadbN0) a seznamte se s aplikací Dynamics 365 for Talent.
+Prozkoumejte Dynamics 365 for Talent ve videu [Začínáme s aplikací Dynamics 365 for Talent.](https://www.youtube.com/watch?v=6rg2ByadbN0)
 
 
 > [!NOTE] 
-> Aplikace Dynamics 365 for Talent úzce souvisí s modulem pro lidské zdroje v aplikaci Dynamics 365 for Finance and Operations. Stejné funkce se mohou objevit v obou produktech. Proto bude v tématech, která primárně souvisí s modulem Lidské zdroje, název produktu Dynamics 365 for Finance and Operations. V tématech, která primárně souvisí s aplikací Talent, pak bude název produktu Dynamics 365 for Talent. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
+> Dynamics 365 for Talent je úzce spojen s modulem Lidské zdroje v aplikaci Dynamics 365 for Finance and Operations. Stejné funkce se mohou objevit v obou produktech. Proto bude v tématech, která primárně souvisí s modulem Lidské zdroje, název produktu Dynamics 365 for Finance and Operations. V tématech, která primárně souvisí s aplikací Talent, bude název produktu Dynamics 365 for Talent. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Vytvoření strategie správy lidských zdrojů
 ---------------------------------------------------------
@@ -93,7 +92,7 @@ Kromě kompenzací zaměstnanců skrze mzdy, platy a odměny můžete vyvíjet p
 
 -   [Správa programu zaměstnaneckých výhod](manage-benefit-program.md)
 -   [Zásady způsobilosti k zaměstnaneckým výhodám](benefit-eligibility-policies.md)
--   [Správa položek půjčených zaměstnancům](loan-items.md)
+-   [Správa položek zapůjčených pracovníkům](loan-items.md)
 -   [Správa zaměstnaneckých výhod v aplikaci Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Zachování bezpečnosti na pracovišti a dodržování předpisů
@@ -111,4 +110,3 @@ Můžete navrhovat a rozdávat dotazníky, které slouží ke shromažďování 
 -   [Návrh dotazníku](design-questionnaires.md)
 -   [Distribuce a vyplnění dotazníku](distribute-questionnaires.md)
 -   [Zobrazení a vyhodnocení výsledků dotazníku](evaluate-questionnaire-results.md)
-

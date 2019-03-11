@@ -1,13 +1,13 @@
 ---
-title: "Nastavení a návrh formátů příjemek"
-description: "Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určovat tak, jak se mají tisknout účtenky, faktury a další doklady. Microsoft Dynamics 365 for Retail obsahuje návrháře rozvržení formulářů, který umožňuje snadné vytváření a úpravu různých druhů rozvržení formulářů."
+title: Nastavení a návrh formátů příjemek
+description: Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určovat tak, jak se mají tisknout účtenky, faktury a další doklady. Microsoft Dynamics 365 for Retail obsahuje návrháře rozvržení formulářů, který umožňuje snadné vytváření a úpravu různých druhů rozvržení formulářů.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.contentlocale: cs-cz
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357811"
 ---
-
 # <a name="set-up-and-design-receipt-formats"></a>Nastavení a návrh formátů příjemek
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určovat tak, jak se mají tisknout účtenky, faktury a další doklady. Microsoft Dynamics 365 for Retail obsahuje návrháře rozvržení formulářů, který umožňuje snadné vytváření a úpravu různých druhů rozvržení formulářů.
 
 > [!IMPORTANT]
-> Pokud chcete tisknout příjemky a další dokumenty z Retail Modern POS a Cloud POS, musíte nastavit rozložení formulářů a profily příjemek. Můžete zahrnout více rozložení formuláře do profilu účtenky. Můžete pak přiřadit profil účtenky k tiskárně úpravou profilu hardwaru.
+> Musíte nastavit rozvržení formulářů a profily příjemek, chcete-li tisknout příjemky a další dokumenty z Retail Modern POS a Cloudového POS. Můžete zahrnout více rozložení formuláře do profilu účtenky. Můžete pak přiřadit profil účtenky k tiskárně úpravou profilu hardwaru.
 
 ## <a name="set-up-a-receipt-format"></a>Nastavení formátu příjemky
 
@@ -55,8 +54,8 @@ Použijte návrháře rozvržení formuláře ke grafickému vytvoření rozvrž
 1. Klepněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **POS** &gt; **Formáty příjemky**.
 2. Na stránce **Formát příjemky** vyberte rozvržení formuláře a klepněte na tlačítko **Návrhář**.
 3. Klepnutím na tlačítko **Spustit** zahájíte instalaci hostitele maloobchodního návrháře.
-4. Na panelu Oznámení, který se zobrazí v dolní části okna Internet Explorer klepněte na tlačítko **Otevřít** a spusťte tak instalaci předdefinovaného návrháře. (Oznamovací pruh se může zobrazit v jiném umístění v jiných prohlížečích). Indikátor průběhu ukazuje průběh procesu instalace.
-5. Po dokončení instalace zadejte uživatelské jméno a heslo aplikace Dynamics 365 for Retail a klepněte na tlačítko **Přihlásit** pro spuštění návrháře.
+4. Na panelu Oznámení, který se zobrazí v dolní části okna Internet Explorer, klepněte na tlačítko **Otevřít** a spusťte tak instalaci předdefinovaného návrháře. (Oznamovací pruh se může zobrazit v jiném umístění v jiných prohlížečích). Indikátor průběhu ukazuje průběh procesu instalace.
+5. Po dokončení instalace zadejte na stránce Přihlásit své uživatelské jméno a heslo aplikace Dynamics 365 for Retail a klikněte na tlačítko **Přihlásit** pro spuštění návrháře.
 6. Po ověření pověření a spuštění návrháře můžete začít navrhovat formát příjemky nebo změnit existující formát.
 7. Chcete-li vytvořit prvky formuláře, vyberte oddíl **Záhlaví**, **Řádky** nebo **Zápatí** a potom přetáhněte prvek z oddílu do pracovního prostoru. Většina prvků obsahuje proměnné, které jsou automaticky vyplněny daty z databáze. Další prvky, jako **Text**, vám umožňují vytisknout vlastní text na příjemce.
 
@@ -83,4 +82,3 @@ Profily účtenky jsou přiřazeny přímo k tiskárnám prostřednictvím profi
 
 > [!NOTE]
 > Pokud jsou použity dvě tiskárny, jednu tiskárnu lze nastavit na tisk standardních termálních účtenek se 40 sloupci. Druhá tiskárna se obvykle používá pro tisk účtenek na celou stránku, které vyžadují další informace. Tyto typy účtenky zahrnují účtenky za objednávky odběratelů a faktury odběratelům.
-

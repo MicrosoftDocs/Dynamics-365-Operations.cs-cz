@@ -1,13 +1,13 @@
 ---
-title: "Klouzavý průměr"
-description: "Klouzavý průměr je trvalá metoda nákladů založená na principu průměru, kde se náklady na skladový výdej nemění, když se mění nákupní ceny. Rozdíl je kapitalizován a je založen na proporcionálním výpočtu. Zbývající částka je zanesena do výdajů."
+title: Klouzavý průměr
+description: Klouzavý průměr je trvalá metoda nákladů založená na principu průměru, kde se náklady na skladový výdej nemění, když se mění nákupní ceny. Rozdíl je kapitalizován a je založen na proporcionálním výpočtu. Zbývající částka je zanesena do výdajů.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0befa0e31347c9ee15ac0426fa3314b151a0200d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348059"
 ---
-
 # <a name="moving-average"></a>Klouzavý průměr
 
 [!include [banner](../includes/banner.md)]
@@ -113,8 +112,7 @@ V tomto příkladu klouzavého průměru je sestava hodnoty skladu vytištěna p
 | 8. říjen        | 8. říjen    | Přecenění klouzavého průměru |          | 4,00   | 16.00             |
 |                  | 31. říjen   | Celkem                      | 2        | 32.00  | 16.00             |
 
- **Poznámka:** Odsouhlasení hlavní knihy se zásobami pomocí možnosti **Řazení času transakce** není možné. Sestava musí být vytištěna pomocí možnosti **Datum zaúčtování**.
-
+ **Poznámka:** Odsouhlasení hlavní knihy se zásobami pomocí možnosti **Řazení času transakce** není možné. Sestava musí být vytištěna pomocí možnosti **Datum zaúčtování**.
 
 
 

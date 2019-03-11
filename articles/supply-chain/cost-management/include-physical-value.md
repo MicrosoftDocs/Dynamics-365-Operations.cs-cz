@@ -1,13 +1,13 @@
 ---
 title: Zahrnovat fyzickou hodnotu
-description: "Pole Zahrnout fyzickou hodnotu na pevné záložce Skladový model na stránce Skupiny modelů položky se používá k určení toho, zda se fyzicky aktualizované transakce promítnou do výpočtu průběžných průměrných nákladových ceny položky."
+description: Pole Zahrnout fyzickou hodnotu na pevné záložce Skladový model na stránce Skupiny modelů položky se používá k určení toho, zda se fyzicky aktualizované transakce promítnou do výpočtu průběžných průměrných nákladových ceny položky.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e96d5e2a658a027d66663868329cf4eedcb1d46f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4ea8fe31588dd0768e0651c9e1e332212a00cde2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357305"
 ---
-
 # <a name="include-physical-value"></a>Zahrnovat fyzickou hodnotu
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,6 @@ Toto políčko má účinky, které se liší v závislosti na skladovém modelu
 -   Nákupní objednávka na 3 kusy v ceně 12,00 USD byla aktualizována podle faktury
 
 V tomto případě bude průběžná průměrná nákladová cena 11,20 USD, protože při výpočtu nákladové ceny jsou použity fyzicky i finančně aktualizované transakce. **Příklad 2:** Neoznačíte pole **Zahrnovat fyzickou hodnotu** a nákladová cena v rámci konfigurace položky je 10,00 USD. Obdržíte nákupní objednávku na 20 kusů v ceně 12,00 USD, která byla aktualizována podle dodacího listu. Při zaúčtování prodejní objednávky se zaúčtuje částka nákladů 10,00 USD, protože průběžná průměrná nákladová cena nebude zahrnovat fyzicky zaúčtované transakce. **Poznámka:** Pokud pro porovnání označíte pole **Zahrnovat fyzickou hodnotu** pro toto zboží při zaúčtování prodejní objednávky, zaúčtované náklady budou 12,00 USD.
-
 
 
 

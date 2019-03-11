@@ -1,13 +1,13 @@
 ---
-title: "Obsah správy úvěru a inkasa v Power BI"
-description: "Toto téma popisuje, co je součástí obsahu správy úvěru a inkasa v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které jsou použity k sestavení obsahu."
+title: Obsah správy úvěru a inkasa v Power BI
+description: Toto téma popisuje, co je součástí obsahu správy úvěru a inkasa v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,23 +16,22 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
-ms.openlocfilehash: 3832cabb11d67eda7afd7f3d5322c005b36dc1f5
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325174"
 ---
-
 # <a name="credit-and-collections-management-power-bi-content"></a>Obsah správy úvěru a inkasa v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, co je součástí obsahu **Správa úvěru a inkasa** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Toto téma popisuje, co je součástí obsahu **správy úvěru a inkasa** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="overview"></a>Přehled
 
-Obsah **Správa úvěru a inkasa** v Power BI byl vytvořen pro správce úvěru a inkasa a pro inkasní úředníky. Poskytuje klíčové metriky úvěru a inkasa, jako jsou například počet dnů neuhrazeného prodeje, zůstatek po datu splatnosti, vystavení úvěru a zákazníci, kteří překročili svůj limit úvěru. Používá transakční data a poskytuje agregované zobrazení úvěru a inkasa napříč všemi společnostmi. Také poskytuje rozpis podle společnosti, skupiny odběratelů a odběratele.
+**Obsah Správa úvěru a inkasa** v Power BI byl vytvořen pro správce úvěru a inkasa a pro inkasní úředníky. Poskytuje klíčové metriky úvěru a inkasa, jako jsou například počet dnů neuhrazeného prodeje, zůstatek po datu splatnosti, vystavení úvěru a zákazníci, kteří překročili svůj limit úvěru. Používá transakční data a poskytuje agregované zobrazení úvěru a inkasa napříč všemi společnostmi. Také poskytuje rozpis podle společnosti, skupiny odběratelů a odběratele.
 
 Tento obsah Power BI se skládá z 10 stránek sestavy:
 
@@ -44,11 +43,11 @@ Všechny částky jsou zobrazeny v měně systému. Systémovou měnu můžete n
 Ve výchozím nastavení se zobrazují data úvěrů a inkas pro aktuální společnost. Abyste zobrazili data napříč všemi společnostmi, přiřaďte funkční oprávnění **CustCollectionsBICrossCompany** k roli.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah Power BI **Správa kreditu a inkasa** se zobrazí v pracovním prostoru **Kredit a inkasa odběratele**.
+Obsah **Správa kreditu a inkasa** v Power BI se zobrazí v pracovním prostoru **Kredit a inkasa odběratele**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
 
-Obsah **CustCollectionsBICrossCompany** Power BI obsahuje sestavu, která sestává ze sady metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizací v obsahu **CustCollectionsBICrossCompany** v Power BI.
+Obsah **CustCollectionsBICrossCompany** v Power BI obsahuje sestavu, která sestává ze sady metrik. Tyto metriky jsou zobrazována jako grafy, dlaždice a tabulky. Následující tabulka poskytuje přehled vizualizace v obsahu **CustCollectionsBICrossCompany** v Power BI.
 
 | Stránka sestavy                 | Vizualizace |
 |-----------------------------|---------------|
@@ -63,11 +62,11 @@ Obsah **CustCollectionsBICrossCompany** Power BI obsahuje sestavu, která sestá
 | Stav inkasa          | <ul><li>Sporné</li><li>Slib zaplacení porušen</li><li>Přislíbit zaplacení</li><li>Podrobnosti stavu inkasa</li><li>Částky stavu inkasa</li><li>Otevřené případy</li><li>Otevřené aktivity</li></ul> |
 | Upomínky         | <ul><li>Částky kódu výběru</li><li>Podrobnosti částky kódu inkasa</li><li>Částka upomínky podle společnosti</li><li>Částka upomínky podle skupiny odběratelů</li><li>Částka upomínky podle oblasti</li></ul> |
 
-Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Můžete také použít základní funkci exportu dat pro export základních dat, jejichž souhrn je uveden na vizualizaci.
+Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Můžete také použít základní funkci exportu dat pro export základních dat, jejichž souhrn je uveden na vizualizaci.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 
-Následující data se používají k naplnění stránek sestavy v obsahu **Správa úvěru a inkasa** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI úložištěm entit](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
+Následující data se používají k naplnění stránek sestavy v obsahu **Správa úvěru a inkasa** v Power BI Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI s úložištěm entit](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
 
 
 |                   Celek                    |      Klíčová opatření agregace      |             Zdroj dat              |                           Pole                            |                                    popis                                     |
@@ -88,5 +87,4 @@ Následující data se používají k naplnění stránek sestavy v obsahu **Spr
 |        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Počet oznámení úroků, která byly vytvořeny.                |
 |        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Počet celkových prodejních objednávek, které jsou blokovány.                 |
 |          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Součet transakcí, které byly odepsány.                 |
-
 

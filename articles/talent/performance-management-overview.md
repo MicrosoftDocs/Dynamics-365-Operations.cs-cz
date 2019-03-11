@@ -1,13 +1,13 @@
 ---
-title: "Řízení výkonnosti"
-description: "Proces řízení výkonnosti umožňuje zaměstnancům dokumentovat a diskutovat o jejich výkonnosti s jejich manažerem. Manažerům pak umožňuje poskytovat zpětnou vazbu a zaměstnance vést."
+title: Řízení výkonnosti
+description: Proces řízení výkonnosti umožňuje zaměstnancům dokumentovat a diskutovat o jejich výkonnosti s jejich manažerem. Manažerům pak umožňuje poskytovat zpětnou vazbu a zaměstnance vést.
 author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 67da25514edc6b27f8478a7b317f6690720ab592
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: e7621b4c1358d1ecd6ff1c9ce2f1de08766a4bf6
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303522"
 ---
-
 # <a name="performance-management"></a>Řízení výkonnosti
 
 [!include [banner](includes/banner.md)]
@@ -56,9 +55,9 @@ Při přístupu z pracovního prostoru **ESS** můžete na stránce **deníku v�
 
 Deník výkonnosti můžete také propojit s externím webem uložením adresy URL daného webu. Pokud deník souvisí s cíli nebo přezkoumáními výkonnosti, můžete ho také propojit s jedním nebo více z nich. Při přístupu k deníku ze stránky **MSS** můžete zadat stejné informace, které lze zadat do deníku zaměstnance. Kromě toho můžete určit zaměstnance, pro kterého je deník vytvářen. Můžete si vybrat, zda budete deník manažera sdílet se svým zaměstnancem.
 
-### <a name="praise"></a>Pochvala
+### <a name="send-feedback"></a>Odeslat názor
 
-Deník výkonnosti obsahuje další funkci s názvem Pochvala. Po kliknutí na tlačítko **Udělit pochvalu** můžete vybrat zaměstnance a poskytnout tomuto zaměstnanci zpětnou vazbu prostřednictvím e-mailu. Zpráva bude odeslána zaměstnanci, kterému je pochvala udělována, manažerovi daného zaměstnance, zaměstnanci, který pochvalu uděluje, a manažerovi daného zaměstnance. Pro každou osobu, která obdrží zprávu s pochvalou, se vytvoří položka deníku výkonnosti.
+Deník výkonnosti obsahuje další funkci s názvem Zpětná vazba. Po kliknutí na tlačítko **Odeslat zpětnou vazbu** můžete vybrat zaměstnance a poskytnout tomuto zaměstnanci zpětnou vazbu prostřednictvím e-mailu. Zpráva bude odeslána zaměstnanci, který je adresátem zpětné vazby, manažerovi daného zaměstnance, zaměstnanci, který odesílá zpětnou vazbu, a manažerovi daného zaměstnance. Pro každou osobu, která obdrží zpětnou vazbu, se vytvoří položka deníku výkonnosti.
 
 ## <a name="goals"></a>Cíle
 Stránka **cílů výkonnosti** umožňuje sledovat cíle, které jste si spolu s vaším manažerem vytvořili. Můžete vytvářet libovolný počet cílů a tyto cíle mohou být rozloženy do různých období a přezkoumání výkonnosti. Dále můžete vytvářet jednoduché nebo komplexní cíle v závislosti na množství informací, které chcete pro daný cíl zadat. Cíle nejsou vyžadovány k přezkoumání výkonnosti. 
@@ -151,7 +150,6 @@ Typy zdrojů deníků výkonnosti popisují, odkud pochází deníky výkonnosti
 ### <a name="review-types"></a>Typy přezkoumání
 
 Typy přezkoumání výkonnosti vám pomáhají s řízením průběhu přezkoumání. Můžete povolit nebo zakázat pracovní postup přezkoumání. Pokud přezkoumání nepoužívá pracovní postup, můžete definovat výchozí stav, který bude používán při vytvoření přezkoumání. Můžete také rozhodnout, zda bude muset přezkoumání podepsat zaměstnanec, manažer nebo oba.
-
 
 
 

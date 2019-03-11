@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření a otevření požadavku na pozici"
-description: "Náborové projekty umožňují spravovat proces náboru."
+---
+title: Vytvoření a otevření požadavku na pozici
+description: Náborové projekty umožňují spravovat proces náboru.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e2d0dcb2e64fa7b901cdc5e4a0469e5f6a76be58
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322161"
 ---
 # <a name="develop-and-open-job-requisition"></a>Vytvoření a otevření požadavku na pozici
 
@@ -65,5 +65,4 @@ Náborové projekty umožňují spravovat proces náboru. K jednotlivým náboro
 32. Klikněte na položku Spustit.
     * Stav Zahájeno znamená, že je projekt připraven přijímat žádosti.  
 33. Klikněte na tlačítko OK.
-
 

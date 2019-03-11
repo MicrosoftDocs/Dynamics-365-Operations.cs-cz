@@ -1,28 +1,27 @@
 ---
-title: "Přehledy plateb zákazníka (preview)"
-description: "Toto téma popisuje, jak přehledy plateb zákazníka mohou pomoci předpovídat, kdy bude faktura zaplacena, a rovněž pomoci organizacím vytvořit strategie optimalizace, které zlepší pravděpodobnost včasného zaplacení."
+title: Přehledy plateb zákazníka (preview)
+description: Toto téma popisuje, jak přehledy plateb zákazníka mohou pomoci předpovídat, kdy bude faktura zaplacena, a rovněž pomoci organizacím vytvořit strategie optimalizace, které zlepší pravděpodobnost včasného zaplacení.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 841ea53f754f61c2930e77fdafc85eac72f47d7a
 ms.openlocfilehash: 9e722db6302d7ef51c01601cde245d4f4a333eba
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344655"
 ---
-
 # <a name="customer-payment-insights-preview"></a>Přehledy plateb zákazníka (preview)
 
 [!include[banner](../includes/banner.md)]
@@ -78,4 +77,3 @@ Pokud chcete vyzkoušet Přehledy plateb zákazníka (preview), pošlete e-mail 
 ## <a name="privacy-statement"></a>Prohlášení o ochraně osobních údajů
 
 Verze Preview ukládají údaje o zákaznících ve Spojených státech. Kromě toho verze Preview (1) mohou využívat méně ochrany soukromí a bezpečnostních opatření než služba Dynamics 365 for Finance and Operations, (2) nejsou zahrnuty v dohodě o úrovni služeb pro tuto službu, (3) neměly by být používány pro zpracování osobních údajů nebo jiných údajů, které podléhají právním nebo regulačním požadavkům, a (4) mají omezenou podporu.
-

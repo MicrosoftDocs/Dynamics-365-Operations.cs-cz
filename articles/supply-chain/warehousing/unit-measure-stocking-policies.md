@@ -1,13 +1,13 @@
 ---
-title: "Měrná jednotka a zásady uskladnění"
-description: "Tento článek popisuje způsob, jakým jsou výchozí jednotky, řady jednotek a převody jednotek používány v procesech skladu."
+title: Měrná jednotka a zásady uskladnění
+description: Tento článek popisuje způsob, jakým jsou výchozí jednotky, řady jednotek a převody jednotek používány v procesech skladu.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorageDimensionGroup, InventItemOrderSetup, UnitOfMeasureConversion, WHSRFMenuItem, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c484f814d9f1e726fd326e1cd0ea8fe694f797b9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e0a22e07f5a0e5bc30c8ad9dc87c5a506d62847d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318090"
 ---
-
 # <a name="unit-of-measure-and-stocking-policies"></a>Měrná jednotka a zásady uskladnění
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Pro nastavení výchozích jednotek, které chcete použít pro procesy příjmu
 
 ## <a name="default-order-settings"></a>Výchozí nastavení objednávky
 Při vytvoření uvolněných produktů je nutné vybrat výchozí jednotky pro nákup, prodej a sklad a zpracovat tak různé objednávky. Můžete nastavit výchozí jednotky a množství pro různé zdrojové dokumenty pomocí stránek **Výchozí nastavení objednávky** a **Nastavení objednávky specifické pro pracoviště**. Tyto stránky lze otevřít pomocí stránky **Uvolněné produkty**.
-
 
 
 

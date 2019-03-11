@@ -1,13 +1,13 @@
 ---
-title: "Systém nápovědy pro aplikaci Finance and Operations"
-description: "Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations."
+title: Systém nápovědy pro aplikaci Finance and Operations
+description: Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
 ms.date: 11/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350727"
 ---
-
 # <a name="finance-and-operations-help-system"></a>Systém nápovědy pro aplikaci Finance and Operations
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 12/18/2018
 Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations.
 
 > [!NOTE]
-> Tyto produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. U témat, která se vztahují především k aplikaci Retail, proto bude uveden název produktu Dynamics 365 for Retail; u témat souvisejících s aplikací Talent bude uveden název Dynamics 365 for Talent a u témat souvisejících se základním produktem bude uveden název Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
+> Následující tři produkty spolu úzce souvisí: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail a Dynamics 365 for Talent. Stejné funkce se mohou objevovat ve všech třech produktech. Proto bude v tématech, která primárně souvisí s modulem Retail, název produktu Dynamics 365 for Retail. V tématech, která primárně souvisí s aplikací Talent, bude název produktu Dynamics 365 for Talent. V tématech, která primárně souvisí se základním produktem, bude název produktu Dynamics 365 for Finance and Operations. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
 Systém nápovědy je společný pro všechny následující produkty:
 
@@ -137,7 +136,7 @@ Chcete-li získat přístup k obsahu nápovědy v aplikaci Finance and Operati
 Z podokna Nápověda můžete otevřít články, které se týkají klienta aplikace Finance and Operations. Při prvním otevření podokna nápovědy a kliknutí na kartu **Nápověda** uvidíte články vztahující se ke stránce, kterou máte aktuálně otevřenou v aplikaci Finance and Operations. Pokud nebyly nalezeny žádné články, můžete zadat klíčová slova pro upřesnění hledání. Po kliknutí na článek v podokně Nápověda se nová záložka otevře v prohlížeči a zobrazí se wiki článek.
 
 > [!IMPORTANT]
-> Tato část se nevztahuje na aplikaci Dynamics 365 for Talent. Systém nápovědy pro aplikaci Talent se automaticky připojí k průvodcům záznamem úloh pro daný produkt. V aplikaci Talent navíc nelze vytvářet vlastní průvodce záznamem úloh.
+> Tato část se nevztahuje na Dynamics 365 for Talent. Systém nápovědy pro aplikaci Talent se automaticky připojí k průvodcům záznamem úloh pro daný produkt. V aplikaci Talent navíc nelze vytvářet vlastní průvodce záznamem úloh.
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Přístup k průvodcům záznamem úloh z podokna Nápověda
 
@@ -158,7 +157,7 @@ Na stránce **Systémové parametry** proveďte následující kroky:
 2. Vyberte projekt služby Lifecycle Services pro připojení.
 3. Vyberte knihovny BPM (v rámci vybraného projektu), ze kterých chcete načíst záznamy úloh.
 
-    - U aplikace Finance and Operations vyberte pro obsah společnosti Microsoft knihovnu z února 2017 QPC Unified Library for Microsoft Dynamics 365 for Finance and Operations.
+    - Pro Finance and Operations, pro obsah Microsoft zvolte knihovnu QPC Unified Library z února 2017 pro Microsoft Dynamics 365 for Finance and Operations.
     - Pro aplikaci Retail vydáme knihovnu v červenci.
     - Pro aplikaci Talent není třeba knihovnu vybírat – připojení ke správné knihovně se nastaví automaticky.
 
@@ -194,10 +193,9 @@ V následující tabulce jsou uvedeny naše weby. Weby s hvězdičkou (\*) u ná
 |------------------------------------------------------------------------------------------------|-------------|
 | [Docs.microsoft.com](/dynamics365/)                                                            | Hostitelé nebo odkazy na veškerou produktovou dokumentaci pro aplikaci Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Bezplatný web elektronického vzdělávání společnosti Microsoft. |
-| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Zajišťuje cloudový pracovní prostor pro spolupráci, který mohou odběratelé a partneři používat ke správě projektů aplikace Dynamics 365 for Finance and Operations od předprodeje až k implementaci a operacím. Tento web je užitečný ve všech fázích implementace. |
-| [Blog podpory](http://aka.ms/AXSupportBlog)                                                    | Nabízí tipy a triky od týmu podpory aplikace Dynamics 365 for Finance and Operations. |
+| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Poskytuje cloudový pracovní prostor spolupráce, který mohou použít odběratelé a jejich partneři ke správě projektů Dynamics 365 for Finance and Operations z předprodeje k implementaci a operacím. Tento web je užitečný ve všech fázích implementace. |
+| [Blog podpory](http://aka.ms/AXSupportBlog)                                                    | Obsahuje tipy a triky týmu podpory aplikace Dynamics 365 for Finance and Operations. |
 | [Docs.microsoft.com/previous versions](https://docs.microsoft.com/previous-versions/dynamics/) | Hostuje obsah z předchozích verzí. |
 | [Komunita Dynamics](https://community.dynamics.com/)                                          | Je hostitelem blogů, fór a videí. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Obsahuje hodnocení a informace o prodeji. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Hostuje některé zdroje školení pro Finance and Operations, sestavy ke stažení a dokumenty whitepaper, a je primárním webem podpory pro držitele plánu služeb. Může vyžadovat plán služeb pro přístup k některým zdrojům na webu. |
-

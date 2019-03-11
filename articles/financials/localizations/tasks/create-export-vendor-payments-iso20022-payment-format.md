@@ -1,13 +1,13 @@
---- 
-title: "Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022"
-description: "Tento postup ukazuje, jak vytvořit platební řádky pro platbu dodavateli v deníku, a generovat soubor pro platbu dodavateli pomocí příkladu převodu kreditu ISO2022."
+---
+title: Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022
+description: Tento postup ukazuje, jak vytvořit platební řádky pro platbu dodavateli v deníku, a generovat soubor pro platbu dodavateli pomocí příkladu převodu kreditu ISO2022.
 author: mrolecki
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 01/17/2019
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,41 +16,37 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b589d64a4446420164175b41f435cf48daac01a9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7cc90bc86cd489b124a806c480632dd53ba47f3f
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340538"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup ukazuje, jak vytvořit platební řádky pro platbu dodavateli v deníku, a generovat soubor pro platbu dodavateli pomocí příkladu převodu kreditu ISO2022. 
+Toto téma vysvětluje, jak vytvořit platební řádky pro platbu dodavateli v deníku, a generovat soubor pro platbu dodavateli pomocí příkladu převodu kreditu ISO2022.
 
-K vytvoření tohoto postupu jsou použita ukázková data společnosti DEMF.
+Toto je pátý z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví. K dokončení tohoto příkladu použijte ukázková data DEMF.
 
-Toto je pátý z pěti úkolů, které společně popisují proces platby dodavatele pomocí konfigurací elektronického výkaznictví. Tato procedura je určena pro funkci, která byla přidána do aplikace Dynamics 365 for Operations verze 1611.
+## <a name="example"></a>Příklad
 
-
-## <a name="create-payment-lines"></a>Vytvoření řádků platby
-1. Přejděte na Závazky > Platby > Deník plateb.
-2. Klikněte na položku Nová.
-3. Označte v seznamu vybraný řádek.
-4. V poli Název zadejte nebo vyberte hodnotu.
-5. Klikněte na položku Řádky.
-6. Klikněte na Návrh platby.
-7. Klikněte na Vytvořit návrh plateb.
-8. Rozbalte oddíl Záznamy k zahrnutí.
-9. Klepněte na tlačítko Filtr.
-10. V seznamu vyberte řádek pro tabulku dodavatelů a pole Účet dodavatele.
-11. V poli Kritéria zadejte nebo vyberte hodnotu.
-    * Můžete použít všechna kritéria pro výběr transakcí dodavatele k zaplacení. Pro tento příklad použijte DE-001 jako účet dodavatele.  
-12. Klikněte na tlačítko OK.
-13. Klikněte na tlačítko OK.
-14. Klikněte na Vytvořit platby.
-
-## <a name="generate-an-iso20022-payment-file"></a>Vygenerování souboru platby ISO20022
-
+1.  Přejděte na **Závazky > Platby > Deník plateb**.
+2.  Klepněte na možnost **Nový**.
+3.  V poli **Název** zadejte nebo vyberte hodnotu.
+4.  Klikněte na **Řádky > Návrh platby -> Vytvořit návrh platby**.
+5.  Rozbalte oddíl **Záznamy k zahrnutí**.
+6.  Klikněte na tlačítko **Filtr**.
+7.  V seznamu vyberte řádek pro **tabulku dodavatelů** a pole **Účet dodavatele**.
+8.  V poli **Kritéria** zadejte nebo vyberte hodnotu. Můžete použít všechna kritéria pro výběr transakcí dodavatele k zaplacení. Pro tento příklad použijte DE-001 jako účet dodavatele.
+12. Klikněte na tlačítko **OK**.
+13. Klikněte na tlačítko **OK**.
+14. Klikněte na **Vytvořit platby**.
+15. Vygenerujte soubor platby ISO20022.
+    1.  Klikněte na **Generovat platby**.
+    2.  V poli **Metody platby** zadejte nebo vyberte hodnotu.
+    3.  Zadejte hodnotu do pole **Název souboru**. Z důvodu platby v EUR bude v tomto příkladu vygenerovaný soubor kompatibilní se SEPA. Převod kreditu ISO20022, jakož i jiné formáty plateb dodavatelů, lze také použít k vytváření plateb v jiných měnách.
+    4.  V poli **Bankovní účet** zadejte nebo vyberte hodnotu.
 

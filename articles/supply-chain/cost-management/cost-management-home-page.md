@@ -1,32 +1,31 @@
 ---
-title: "Domovská stránka správy nákladů"
-description: "Správa nákladů vám umožňuje zpracovat ocenění a účtování surovin, polotovarů, dokončeného zboží a nedokončené výroby."
+title: Domovská stránka správy nákladů
+description: Správa nákladů vám umožňuje zpracovat ocenění a účtování surovin, polotovarů, dokončeného zboží a nedokončené výroby.
 author: AndersGirke
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: b1513e5a7cb3a19fd3743a5aac8efd211aa02ce8
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333937"
 ---
-
 # <a name="cost-management-home-page"></a>Domovská stránka správy nákladů
 
 [!include [banner](../includes/banner.md)]
@@ -46,9 +45,9 @@ Ke skladovému účetnictví a účetnictví pro výrobu můžete přistupovat z
 
 Účetnictví pro výrobu vám umožní zpracovávat [výpočet nákladů výrobních příkazů](production-order-cost-analysis.md) ve výrobních zakázkách a dávkových objednávkách, a také [zpětné účtování nákladů](backflush-costing.md) v lean manufacturing.
 
-Obsah [Správy nákladů](../../dev-itpro/analytics/cost-management-content-pack.md) v Power BI poskytuje manažerský přehled o zásobách a nedokončené výrobě a způsobu, jakým jimi náklady procházejí podle kategorie v průběhu času. Informace lze použít také jako podrobný doplněk k finančnímu výkazu.
+[Obsah Správy nákladů v Power BI](../../dev-itpro/analytics/cost-management-content-pack.md) poskytuje manažerský přehled o zásobách a nedokončené výrobě a způsobu, jakým jimi náklady procházejí podle kategorie v průběhu času. Informace lze použít také jako podrobný doplněk k finančnímu výkazu.
 
-### <a name="additional-resources"></a>Další zdroje
+### <a name="additional-resources"></a>Další prostředky
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
@@ -67,9 +66,8 @@ Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a
 
 
 #### <a name="blogs"></a>Blogy
-Názory, novinky a další informace o správě nákladů naleznete na blogu [Tým výzkumu a vývoje pro výrobu v Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) a v blogu [Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Správa nákladů, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
+Názory, novinky a další informace o správě nákladů naleznete na [blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) a v [blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Správa nákladů, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
 
 #### <a name="task-guides"></a>Průvodci záznamem úloh
 V aplikaci Finance and Operations je k dispozici další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.
-
 

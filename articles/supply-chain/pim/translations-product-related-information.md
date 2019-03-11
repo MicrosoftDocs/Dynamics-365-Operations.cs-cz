@@ -1,13 +1,13 @@
 ---
-title: "Překlady související s produktem – nejčastější dotazy"
-description: "Toto téma popisuje, jak spravovat překlady pro produkty, hodnoty dimenze produktu a atributy produktu."
+title: Překlady související s produktem – nejčastější dotazy
+description: Toto téma popisuje, jak spravovat překlady pro produkty, hodnoty dimenze produktu a atributy produktu.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Product information
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d124e2608f01878487bc8fc9af2e27d143c8ae9e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 87dfdf7085e185b3e0467088118838eb832546d7
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342861"
 ---
-
 # <a name="product-related-translations-faq"></a>Překlady související s produktem – nejčastější dotazy
 
 [!include [banner](../includes/banner.md)]
@@ -124,7 +123,6 @@ Pokud chcete spravovat překlady hodnot v určité skupině hodnot dimenze, post
 
 ## <a name="when-can-translations-of-product-related-information-be-managed"></a>Kdy lze spravovat překlady informací souvisejících s produktem?
 Překlady informací souvisejících s produktem lze spravovat kdykoli. Při aktualizaci překladů pro hodnotu dimenze, která je přidružena k produktu, se aktualizují informace o produktu, bez ohledu na to, zda má produkt transakce.
-
 
 
 

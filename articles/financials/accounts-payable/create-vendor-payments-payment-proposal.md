@@ -1,13 +1,13 @@
 ---
-title: "Vytvoření plateb dodavatele pomocí návrhu platby"
-description: "Toto téma obsahuje přehled možností návrhu platby a nabízí příklady zobrazující, jak návrh plateb funguje."
+title: Vytvoření plateb dodavatele pomocí návrhu platby
+description: Toto téma obsahuje přehled možností návrhu platby a nabízí příklady zobrazující, jak návrh plateb funguje.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 332a18eb98811505b38c023c97c22b86a9367af1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327405"
 ---
-
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Vytvoření plateb dodavatelů pomocí návrhu platby
 
 [!include [banner](../includes/banner.md)]
@@ -70,7 +69,7 @@ Dotaz na návrh platby obsahuje různé karty, z nichž každá má různé mož
 
 ### <a name="option-1-by-cash-discount"></a>Možnost 1: Dle platební slevy
 
-April vybere **Platební sleva** jako typ návrhu. Zadá rozsah dat od 26. června do 10. července. Tyto faktury jsou zahrnuty v návrhu:
+April vybere **Platební sleva** jako typ návrhu. Zadá rozsah dat od 26. června do 10. července. Tyto faktury jsou zahrnuty v návrhu:
 
 -   1002, protože datum slevy pro 4. července je v rozsahu dat pro platbu.
 -   1004, protože datum slevy pro 1. července je v rozsahu dat pro platbu.
@@ -120,8 +119,7 @@ Kontrola dimenzí umožňuje kontrolovat seskupení generovaných řádků podle
 
 #### <a name="bank-account-selection"></a>Výběr účtu
 
-Můžete definovat standardní debetní účet plateb podle metody platby bez ohledu na kontext země. To bude nastaveno na řádcích platby generovaných návrhem. S funkcí bankovního účtu lze definovat více debetní bankovních účtů spravovaných dimenzí a měnou nebo jejich kombinací k použití různých debetní bankovních účtů, v závislosti na jednotlivých kombinacích. Tyto kombinace můžete nastavit na stránce **Metody platby** pomocí tlačítka **Bankovní účty** dostupného pro každou metodu platby pomocí položky **Typ účtu pro zaúčtování** = **Banka**.
-
+Můžete definovat standardní debetní účet plateb podle metody platby bez ohledu na kontext země. To bude nastaveno na řádcích platby generovaných návrhem. S funkcí bankovního účtu lze definovat více debetní bankovních účtů spravovaných dimenzí a měnou nebo jejich kombinací k použití různých debetní bankovních účtů, v závislosti na jednotlivých kombinacích. Tyto kombinace můžete nastavit na stránce **Metody platby** pomocí tlačítka  **Bankovní účty** dostupného pro každou metodu platby s **Typ účtu pro zaúčtování** = **Banka**.
 
 
 

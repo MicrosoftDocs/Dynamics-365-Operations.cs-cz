@@ -1,32 +1,31 @@
 ---
-title: "Vytvoření pravidel pro poradce při optimalizaci"
-description: "Toto téma popisuje postup přidání nových pravidel do poradce při optimalizaci."
+title: Vytvoření pravidel pro poradce při optimalizaci
+description: Toto téma popisuje postup přidání nových pravidel do poradce při optimalizaci.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: ca73120a5a0da4dc348c2d16dca8e7654876af5d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: a18fac31b5acb7d2a1ec40203122d4eb9d94a439
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354154"
 ---
-
 # <a name="create-rules-for-optimization-advisor"></a>Vytvoření pravidel pro poradce při optimalizaci
 
 [!include [banner](../includes/banner.md)]
@@ -196,7 +195,7 @@ class ScanNewRulesJob
 
 Pravidlo se zobrazí ve formuláři **Pravidlo ověření diagnostiky**, dostupné z **Správa systému** > **Periodické úlohy** > **Udržovat pravidlo ověření diagnostiky**. Pokud ho chcete mít vyhodnocené, přejděte na **Správa systému** > **Periodické úlohy** > **Naplánovat pravidlo ověření diagnostiky**, vyberte četnost pravidla, jako je například **Denně**. Klikněte na tlačítko **OK**. Přejděte na **Správa systému** > **Poradce při optimalizaci** pro zobrazení nové příležitosti. 
 
-V následujícím příkladu je fragment kódu s kostrou pravidla, včetně všech požadovaných metod a atributů. Pomůže vám to při zahájení psaní nových pravidel. Popisky a položky nabídky akcí, které se používají v uvedeném příkladu, slouží pouze pro demonstrační účel.
+V následujícím příkladu je fragment kódu s kostrou pravidla, včetně všech požadovaných metod a atributů. Pomůže vám to při zahájení psaní nových pravidel. Popisky a položky nabídky akcí, které se používají v uvedeném příkladu, slouží pouze pro demonstrační účel.
 
 ```
 [DiagnosticsRuleAttribute]
@@ -255,5 +254,4 @@ public final class SkeletonSelfHealingRule extends SelfHealingRule implements ID
 }
 ```
 
-Další informace se dozvíte v krátkém videu na YouTube: [Poradce při optimalizaci v Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ) grafické.
-
+Další informace naleznete v krátkém videu YouTube: [Poradce při optimalizaci v Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

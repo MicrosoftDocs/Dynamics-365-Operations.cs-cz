@@ -1,30 +1,29 @@
 ---
-title: "Vytvoření objednávky náhrady položky"
-description: "Objednávky náhrady položek jsou obvykle vytvořeny po vrácení a kontrole výrobku."
+title: Vytvoření objednávky náhrady položky
+description: Objednávky náhrady položek jsou obvykle vytvořeny po vrácení a kontrole výrobku.
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 784a2522c27e8131f211ffc52319552b3b928cc3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1f0cd629658972f98e2233dfa287940c4444b82a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355005"
 ---
-
 # <a name="create-an-item-replacement-order"></a>Vytvoření objednávky náhrady položky 
 
 [!include [banner](../includes/banner.md)]
@@ -50,13 +49,13 @@ Objednávky náhrady položek jsou obvykle vytvořeny po vrácení a kontrole v�
 
 1.  Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Všechny objednávky vratky**.
 
-2.  Vytvořte novou objednávku vratky nebo vyberte objednávku vratky ze seznamu a otevřete formulář **Vratka - číslo RMA: %1, %2**.
+2.  Vytvořte novou vratku nebo vyberte vratku ze seznamu a otevřete formulář **Vratka - číslo RMA: %1, %2**.
 
-3.  Klikněte na **Najít prodejní objednávku**, pokud chcete identifikovat prodejní objednávku pro vrácenou položku. Vyplňte formulář **Najít prodejní objednávku** a kliknutím na **OK** zavřete formulář a vraťte se do formuláře **vratka – číslo RMA %1, %2**. Řádek prodejní objednávky pro vrácené zboží se zkopíruje do objednávky vratky.
+3.  Klikněte na **Najít prodejní objednávku**, pokud chcete identifikovat prodejní objednávku pro vrácenou položku. Vyplňte formulář **Najít prodejní objednávku** a kliknutím na **OK** zavřete formulář a vraťte se do formuláře **Vratka – číslo RMA:%1, %2**. Řádek prodejní objednávky pro vrácené zboží se zkopíruje do objednávky vratky.
 
 4.  Klepněte na tlačítko **náhradní objednávka** pro otevření formuláře **Vytvořit prodejní objednávku**.
 
-5.  Zaškrtnutím políčka **Kopírovat řádky vratek** přesuňte podrobnosti z vratky vybrané ve formuláři **vratka – číslo RMA: %1, %2** do této prodejní objednávky.
+5.  Zaškrtnutím políčka **Kopírovat řádky vratek** přesuňte podrobnosti z vratky vybrané ve formuláři **Vratka – číslo RMA:%1, %2** do této prodejní objednávky.
 
 6.  Podle potřeby zadejte nebo upravte podrobné údaje.
     
@@ -66,6 +65,5 @@ Objednávky náhrady položek jsou obvykle vytvořeny po vrácení a kontrole v�
     
     Je-li identifikátor prodejní smlouvy automaticky zobrazen v poli **ID prodejní smlouvy**, pak prodejní smlouvu byla spojena se záhlavím prodejní objednávky náhradního zboží. Pokud je v prodejní smlouvě platný závazek, který ještě nebyl naplněn, a prodejní objednávka je vytvořena před vypršením platnosti prodejní smlouvy, je vytvořeno propojení mezi řádkem prodejní smlouvy a řádkem prodejní objednávky. Proto se informace z prodejní smlouvy, jako je cena zboží, zkopíruje do nového řádku prodejní objednávky. 
   
-
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Akce v procesech schválení workflow"
-description: "V tomto článku jsou vysvětleny akce, které může provést každý účastník v procesu schválení workflowu."
+title: Akce v procesech schválení workflow
+description: V tomto článku jsou vysvětleny akce, které může provést každý účastník v procesu schválení workflowu.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 829ee16b8fd72a0808a657419524487d9c1b3123
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361744"
 ---
-
 # <a name="actions-in-workflow-approval-processes"></a>Akce v procesech schválení workflow
 
 [!include [banner](../includes/banner.md)]
@@ -143,4 +142,3 @@ Když schvalující požaduje provedení změny v dokumentu, je dokument odeslá
 Stanislav například odeslal vyúčtování výdajů na 12 000 USD a tento dokument je přiřazen Šárce. Pokud bude Šárka požadovat změnu, bude vyúčtování výdajů odesláno zpět Stanislavovi.
 
 Stanislav může vyúčtování výdajů znovu odeslat. Nejprve může provést požadované změny, anebo může znovu odeslat původní verzi vyúčtování výdajů. Jestliže Stanislav vyúčtování výdajů znovu odešle, je odesláno Františkovi ke schválení, protože František je prvním schvalovatelem v procesu schvalování.
-

@@ -1,13 +1,13 @@
 ---
-title: "Obsah metriky pracovní síly Power BI"
-description: "Toto téma popisuje obsah Power BI Metriky zaměstnanců. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
+title: Obsah metriky zaměstnanců v Power BI
+description: Toto téma popisuje obsah Metriky zaměstnanců v Power BI. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,22 +18,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345782"
 ---
-
-# <a name="workforce-metrics-power-bi-content"></a>Obsah metriky pracovní síly Power BI
+# <a name="workforce-metrics-power-bi-content"></a>Obsah metriky zaměstnanců v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah Power BI **Metriky zaměstnanců**. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Toto téma popisuje obsah **metriky zaměstnanců** v Microsoft Power BI . Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah **Metriky zaměstnanců** v Power BI se zobrazuje v pracovním prostoru **Správa pracovníků**, pokud používáte jeden z následujících produktů:
+Obsah **Metriky zaměstnanců** v Power BI zobrazuje v pracovním prostoru **Správa pracovníků**, pokud používáte jeden z následujících produktů:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
@@ -57,9 +56,9 @@ V následující tabulce jsou uvedeny metriky, které jsou zobrazeny pro každou
 | Narozeniny zaměstnance                               | Narozeniny tento měsíc, narozeniny další měsíc, narozeniny zaměstnanců a narozeniny podle oddělení a měsíce |
 | Projekty hromadného zařazení                               | Celkový počet projektů hromadného zařazení, projekty hromadného zařazení podle stavu, projekty hromadného zařazení podle oddělení a vlastníka, projekty hromadného zařazení podle úlohy a projekty hromadného zařazení |
 
-Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-Nezapomeňte si stáhnout obsah **Metriky zaměstnanců** v Power BI, který se vztahuje k vámi používané verzi aplikace Microsoft Dynamics 365.
+Nezapomeňte si stáhnout obsah **Metriky pracovníků** Power BI, který platí pro verzi Microsoft Dynamics 365, již používáte.
 
 > [!NOTE]
 > Soubory .pbix dostupné ve službě Lifecycle Services platí pouze pro aplikaci Finance and Operations.
@@ -88,4 +87,3 @@ Následující tabulka zobrazuje entity, na kterých je obsah založen.
 | Trend zaměstnance           | Pracovníci během času, počet zaměstnanců, společnost a pozice                                 | Společnost, geografické umístění, jméno zaměstnance, nadřízený, posun kalendáře, datum, pracovní zařazení, demografické údaje, práce, zaměstnání |
 | Projekt hromadného zařazení        | Počet projektů hromadného zařazení, vlastník projektu a stav projektu                     | Společnost, řádek Hromadné zařazení |
 | Řádek hromadné zařazení           | Oddělení, typ zaměstnání a pozice                                           | Datum, pozice, projekt hromadného zařazení |
-

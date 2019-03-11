@@ -1,31 +1,30 @@
 ---
-title: "Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (1. října 2018)"
-description: "Toto téma popisuje funkce, které jsou v aktuální verzi aplikace Microsoft Dynamics 365 for Talent Core HR."
+title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (1. října 2018)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
 ms.openlocfilehash: 97820cd25ece48dc0b8045d9ba509d0971ca5aad
-ms.contentlocale: cs-cz
-ms.lasthandoff: 10/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303553"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-1-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (1. října 2018)
 
 [!include [banner](includes/banner.md)]
@@ -59,4 +58,3 @@ Organizace přidělují volno odlišným způsobem na základě toho, kdy zaměs
 ## <a name="known-issue"></a>Známý problém
 
 -   **Problém:** Při přidání nové přílohy k pracovníkovi jsou zašedlá tlačítka **Nová** a **Upravit**. **Řešení:** Než otevřete stránku přílohy, ujistěte se, že jsou zavřena okna s fakty na stránce **Pracovník**. Jsou-li okna s fakty uzavřena při načítání stránky **Pracovník**, budou tlačítka **Přílohy** k dispozici. (Tento problém bude opraven v další aktualizaci Platform Update.)
-

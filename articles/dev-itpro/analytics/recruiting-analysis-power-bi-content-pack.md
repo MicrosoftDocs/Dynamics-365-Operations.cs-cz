@@ -1,13 +1,13 @@
 ---
-title: "Obsah Power BI pro nábor"
-description: "Toto téma popisuje obsah Power BI pro nábor. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
+title: Obsah náboru v Power BI
+description: Toto téma popisuje obsah náboru v Power BI. Vysvětluje přístup k sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmRecruitmentWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,25 +18,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 2d8c0e0e52a8dba2a1ea5bf330cdea01e3cfb60d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 0d6bc8584d202810ed14367d36d113d9b109ea7a
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/19/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347990"
 ---
-
-# <a name="recruiting-power-bi-content"></a>Obsah Power BI pro nábor
+# <a name="recruiting-power-bi-content"></a>Obsah náboru v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah **Nábor** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Toto téma popisuje obsah **náboru** v Microsoft Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
-Obsah Power BI **Nábor** se zobrazí v pracovním prostoru **Řízení náboru**.
+Obsah **Nábor** v Power BI se zobrazí v pracovním prostoru **Řízení náboru**.
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Sestavy a vizuální informace v pracovním prostoru řízení náboru
-Pracovní prostor **Řízení náboru** obsahuje kartu **Analýza**. Tato karta zahrnuje obsah Power BI Embedded pro nábor. Obsah je tvořen kartou Přehled a dalšími kartami, které obsahují podrobnosti. Následující tabulka obsahuje popis daných sestav na jednotlivých kartách.
+Pracovní prostor **Řízení náboru obsahuje** kartu **Analýza**. Tato karta zahrnuje obsah Power BI pro nábor. Obsah je tvořen kartou Přehled a dalšími kartami, které obsahují podrobnosti. Následující tabulka obsahuje popis daných sestav na jednotlivých kartách.
 
 | Sestava               | Obsah |
 |----------------------|----------|
@@ -46,9 +45,9 @@ Pracovní prostor **Řízení náboru** obsahuje kartu **Analýza**. Tato karta 
 | Analýza náboru  | Poměr čistého náboru, průměrný počet dnů náboru procento chybných náborů, nákladů na nábor, počtu náborových projektů, žádostí o přijetí do zaměstnání a počet žadatelů vs. volných míst podle náborového projektu |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-Následující tabulka zobrazuje entity, na kterých je obsah **Nábor** v Power BI založen.
+Následující tabulka zobrazuje entity, na kterých je balíček obsahu **Nábor** Power BI založen.
 
 | Celek               | Obsah                                                         | Vztahy s jinými entitami |
 |----------------------|------------------------------------------------------------------|-----------------------------------|
@@ -66,4 +65,3 @@ Následující tabulka zobrazuje entity, na kterých je obsah **Nábor** v Power
 | Výkonnost          | Ohodnocení, popis a model ohodnocení                            | Uchazeč, zaměstnaný uchazeč, uchazeč s výpovědí |
 | Náborový projekt  | Popis projektu, stavu projektu a volných míst                | Uchazeč, zaměstnaný uchazeč, uchazeč s výpovědí |
 | Uchazeč po výpovědi | Vyřazení uchazeči, důvod, výkon a datum vyřazení | Společnost, Posun v kalendáři, Datum, Zeměpisná poloha, Demografické údaje, Pracovní místo, Média, Projekt náboru, Jméno uchazeče |
-

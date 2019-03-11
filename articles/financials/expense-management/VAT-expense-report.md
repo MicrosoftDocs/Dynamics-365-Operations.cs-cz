@@ -1,13 +1,13 @@
 ---
-title: "Vratka DPH ve správě výdajů"
-description: "Toto téma vysvětluje postup refundace u transakcí s nárokem na vrácení daně z přidané hodnoty."
+title: Vratka DPH ve správě výdajů
+description: Toto téma vysvětluje postup refundace u transakcí s nárokem na vrácení daně z přidané hodnoty.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8bc9e533de40aa8fe8ddfe422cfe0f4078a360c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: d1c9357f8f51e1a87aebeb8f802dbe3b5fdd5aa0
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359559"
 ---
-
 # <a name="vat-recovery-in-expense-management"></a>Vratka DPH ve správě výdajů
 
 [!include [banner](../includes/banner.md)]
@@ -75,4 +74,3 @@ Když je Arnold připraven odeslat data sestavy výdajů dodavateli třetí stra
 Arnold musí ověřit, zda jsou transakce vyúčtování výdajů nárokovatelné na vratku DPH a zda jsou digitální účtenky připojeny k sestavám. Aby mohl zahájit zpracování výdajů s nárokem na domácí vratku, otevře Arnold stránku **Výdajová vratka daně** a vybere vyúčtování výdajů, které vyžaduje ověření. Zkontroluje, zda jsou účtenky na jméno společnosti, nikoliv zaměstnance. Pro vrácení DPH musí být účtenky na jméno společnosti. Arnold pak potvrdí, že byla použita správná skupina DPH a kódy DPH položky.
 
 Když Arnold dostane papírové účtenky, změní stav vyúčtování výdajů na **Připraveno pro vratku**. Poté můžete podat vratku u příslušného daňového úřadu. V tomto případě je příslušný finanční úřad v USA Internal Revenue Service (IRS).
-

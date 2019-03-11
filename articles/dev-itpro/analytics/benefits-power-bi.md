@@ -1,13 +1,13 @@
 ---
-title: "Obsah zaměstnaneckých výhod v Power BI"
-description: "Toto téma popisuje obsah zaměstnaneckých výhod v Power BI. Vysvětluje přístup k obsaženým sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu."
+title: Obsah zaměstnaneckých výhod v Power BI
+description: Toto téma popisuje obsah zaměstnaneckých výhod v Power BI. Vysvětluje přístup k obsaženým sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355235"
 ---
-
 # <a name="benefits-power-bi-content"></a>Obsah zaměstnaneckých výhod v Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje obsah **zaměstnaneckých výhod** v Microsoft Power BI. Vysvětluje přístup k obsaženým sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
+Toto téma popisuje obsah **zaměstnaneckých výhod** v Power BI. Vysvětluje přístup k obsaženým sestavám a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 Obsah **Zaměstnanecké výhody** v Power BI se zobrazuje v pracovním prostoru **Správa zaměstnaneckých výhod**, pokud používáte jeden z následujících produktů:
@@ -37,17 +36,17 @@ Obsah **Zaměstnanecké výhody** v Power BI se zobrazuje v pracovním prostoru 
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
-Sestavy, které jsou součástí obsahu **Zaměstnanecké výhody**, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
+Sestavy, které jsou součástí obsahu **zaměstnaneckých výhod** v Power BI, mají grafy a tabulky obsahující další informace. Následující tabulka obsahuje popis daných sestav.
 
 | Sestava                      | Obsah                                                                                       |
 |-----------------------------|------------------------------------------------------------------------------------------------|
 | Přehled registrací k zaměstnaneckým výhodám | Nejvíce a nejméně registrované plány, registrace podle skupiny zaměstnanců a vybrané možnosti zaměstnaneckých výhod |
 | Zaměstnanecké výhody           | Přihlášení zaměstnance podle vybrané zaměstnanecké výhody                                                        |
 
-Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v aplikaci Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Následující data se používají k vyplňování sestav v obsahu **Zaměstnanecké výhody** Power BI. Tato tabulka zobrazuje entity, na kterých je balíček obsahu založen.
+Následující data se používají k vyplňování sestav v obsahu **zaměstnaneckých výhod** v Power BI. Tato tabulka zobrazuje entity, na kterých je balíček obsahu založen.
 
 | Celek                   | Obsah                                                                                                   | Vztahy s jinými entitami |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
@@ -71,4 +70,3 @@ Následující data se používají k vyplňování sestav v obsahu **Zaměstnan
 | Jméno zaměstnance            | Křestní jméno, příjmení a celé jméno                                                                       | Aktuální zaměstnanec, ukončený zaměstnanec, trend zaměstnance |
 | Titul zaměstnance           | Název a datum služebního věku                                                                                   | Aktuální zaměstnanec, ukončený zaměstnanec, trend zaměstnance |
 | Trend zaměstnance           | Pracovníci během času, počet zaměstnanců, společnost a pozice                                                        | Společnost, kompenzace, geografické umístění, jméno zaměstnance, nadřízený, posun kalendáře, datum, pracovní zařazení, demografické údaje, práce, zaměstnání, zaměstnanecké výhody |
-

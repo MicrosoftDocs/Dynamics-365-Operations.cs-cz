@@ -1,13 +1,13 @@
 ---
-title: "Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)"
-description: "Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (srpen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme."
+title: Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)
+description: Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (srpen 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics AX. Nebyly vydány žádné nové knihovny Začínáme.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 4fac04d1ea028bae9323b7961e64f3e49b74e482
-ms.contentlocale: cs-cz
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344632"
 ---
-
 # <a name="new-or-updated-task-guides-august-2016"></a>Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knih
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Průvodci úkolem v knihovně APQC Unified Library pro Microsoft Dynamics AX (srpen 2016 – všechny jazyky)
 
-Knihovna APQC Unified Library (srpen 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v aktualizaci 2 platformy Microsoft Dynamics AX (srpen 2016), aktualizaci Dynamics AX z května 2016 a vydání aplikace Microsoft Dynamics AX pro únor 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md).
+Knihovna APQC Unified Library (srpen 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v Microsoft Dynamics AX aktualizace Platform Update 2 (srpen 2016), aktualizace Dynamics AX z května 2016 a vydání Microsoft Dynamics AX z února 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md).
 
 ### <a name="data-access"></a>Přístup k datům
 
@@ -101,4 +100,3 @@ Knihovna APQC Unified Library (srpen 2016 – všechny jazyky) obsahuje průvodc
 [Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (listopad 2016)](new-task-guides-november-2016.md)
-

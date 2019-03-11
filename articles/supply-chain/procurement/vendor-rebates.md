@@ -1,13 +1,13 @@
 ---
 title: Rabaty dodavatele
-description: "Toto téma poskytuje přehled nejběžnějších úloh, které můžete chtít provádět při práci s rabaty dodavatele. Rabaty dodavatele pomáhají společnostem lépe spravovat programy rabatů dodavatelů díky automatizaci úloh potřebných ke správě, sledování a uplatňování nároků na získané rabatů."
+description: Toto téma poskytuje přehled nejběžnějších úloh, které můžete chtít provádět při práci s rabaty dodavatele. Rabaty dodavatele pomáhají společnostem lépe spravovat programy rabatů dodavatelů díky automatizaci úloh potřebných ke správě, sledování a uplatňování nároků na získané rabatů.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: josaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
+ms.openlocfilehash: 90bee2925f135b3d626ba898a0e9995b5b8437ff
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8ae5ee60238b951779c7790870e6c6adfba55d7d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341067"
 ---
-
 # <a name="vendor-rebates"></a>Rabaty dodavatele
 [!include [banner](../includes/banner.md)]
 
@@ -159,4 +158,3 @@ Proces zpracování rabatů dodavatele zahrnuje více úloh ručního sledován�
 - Generování přesných nároků na rabat
 - Časové rozlišení očekávaných pohledávek a dočasného zisku v hlavní knize
 - Aktualizace zůstatku dodavatele a výsledovky se splatnou úhradou
-

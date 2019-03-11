@@ -1,13 +1,13 @@
 ---
-title: "Konfigurace názvů polí aplikace v aplikaci Warehousing"
-description: "Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace skladu a priority v aplikaci Finance and Operations."
+title: Konfigurace názvů polí aplikace v aplikaci Warehousing
+description: Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace skladu a priority v aplikaci Finance and Operations.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 0162014189ed6bffb17e6718a67eecfd55c334a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d029481d31a0064a193e2cb9eeaf79df28bfa159
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351325"
 ---
-
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurace názvů polí aplikace v aplikaci Warehousing
 
 [!include [banner](../includes/banner.md)]
@@ -140,11 +139,10 @@ Na základě nastavení priority pole aplikace skladu ve výše uvedené tabulce
 
 Zbývající metadata, například umístění, se nezobrazí na stránce úloh, ale budou zobrazena na stránce podrobností. Další informace a příklady uživatelského rozhraní naleznete v příspěvku blogu [Oznámení aplikace Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-<a name="additional-resources"></a>Další zdroje
+<a name="additional-resources"></a>Další prostředky
 --------
 
-[Instalace a konfigurace aplikace Microsoft Dynamics 365 for Finance and Operations – Warehousing](install-configure-warehousing-app.md)
-
+[Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations – Sklady](install-configure-warehousing-app.md)
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Mobilní pracovní prostor pro schválení faktur"
-description: "Toto téma obsahuje informace o mobilním pracovním prostoru Schválení faktur. Tento pracovní prostor obsahuje seznam faktur, které vám byly přiřazeny v procesu workflowu záhlaví faktury dodavatele."
+title: Mobilní pracovní prostor pro schválení faktur
+description: Toto téma obsahuje informace o mobilním pracovním prostoru Schválení faktur. Tento pracovní prostor obsahuje seznam faktur, které vám byly přiřazeny v procesu workflowu záhlaví faktury dodavatele.
 author: abruer
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: ff726670e0fd7566a74e6def73555a7c53b86f97
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6c95c2779d996f489679c8dda4cda462ba0a05ac
-ms.contentlocale: cs-cz
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326991"
 ---
-
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilní pracovní prostor pro schválení faktur
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,7 @@ Před použitím tohoto mobilního pracovního prostoru musí být splněny nás
 </thead>
 <tbody>
 <tr class="odd">
-<td>V organizaci musí být nasazena aplikace Microsoft Dynamics 365 for Finance and Operations.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations musí být nasazen ve vaší organizaci.</td>
 <td>Správce systému</td>
 <td>Viz část <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí</a>.
 </td>
@@ -72,7 +71,7 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 ## <a name="sign-in-to-the-mobile-app"></a>Přihlaste se do mobilní aplikace
 
 1.  Spusťte aplikaci na svém mobilním zařízení.
-2.  Zadejte adresu URL aplikace Microsoft Dynamics 365.
+2.  Zadejte URL adresu Microsoft Dynamics 365.
 3.  Při prvním přihlášení se zobrazí výzva k zadání uživatelského jména a hesla. Zadejte své přihlašovací údaje.
 4.  Po přihlášení se zobrazí dostupné pracovní prostory pro vaši společnost. Všimněte si, že pokud správce systému později publikuje nový pracovní prostor, budete muset aktualizovat seznam mobilních pracovních prostorů.
 
@@ -88,4 +87,3 @@ Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
 7.  Výběrem možnosti **Přílohy** zobrazíte další poznámky nebo soubory, které jsou připojeny k faktuře.
 8.  Na stránce **Podrobnosti faktury** vyberte požadovanou akci workflowu a dokončete tak proces kontroly.
 9.  Vyberte **Hotovo**.
-

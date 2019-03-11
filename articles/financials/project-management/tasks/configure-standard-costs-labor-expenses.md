@@ -1,13 +1,13 @@
---- 
-title: "Konfigurace standardních nákladů pro práci a výdaje"
-description: "Tento postup ukazuje způsob nastavení standardních nákladů na práci a výdaje na projekt."
+---
+title: Konfigurace standardních nákladů pro práci a výdaje
+description: Tento postup ukazuje způsob nastavení standardních nákladů na práci a výdaje na projekt.
 author: KimANelson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCostPriceHour, ProjSalesPriceHour, ProjCostPriceExpense, ProjSalesPriceCost
 audience: Application User
 ms.reviewer: twheeloc
@@ -17,12 +17,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f89590c87aec1a7200e95aeac6b2765fc64bb623
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 432b5b195b29fb03786cb0560e277735b531b7d7
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339388"
 ---
 # <a name="configure-standard-costs-for-labor-and-expenses"></a>Konfigurace standardních nákladů pro práci a výdaje
 
@@ -59,5 +59,4 @@ Tento postup ukazuje způsob nastavení standardních nákladů na práci a výd
 24. Do pole Oceňování zadejte číslo.
     * Skutečná prodejní cena, která se použije, když pracovník zadá transakci do deníku výdajů, je prodejní cena s nejvyšší úrovní podrobnosti. Je-li například nastavena jak všeobecná prodejní cena, tak i specifická prodejní cena pro daného pracovníka, použije se prodejní cena specifická pro daného pracovníka.  
 25. Klikněte na položku Uložit.
-
 

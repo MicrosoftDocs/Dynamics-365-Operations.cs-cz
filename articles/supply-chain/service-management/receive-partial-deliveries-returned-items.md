@@ -1,31 +1,30 @@
 ---
-title: "Příjem částečných dodávek vrácených položek"
-description: "Částečné dodávky jsou definovány v souvislosti se řádky vratek, nikoli s odesláním vratky."
+title: Příjem částečných dodávek vrácených položek
+description: Částečné dodávky jsou definovány v souvislosti se řádky vratek, nikoli s odesláním vratky.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2b7bfad1e0d80675848353d4118960d44f2dc01
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f9f596d31f2438a353b02bf939786b284937db86
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363906"
 ---
-
 # <a name="receive-partial-deliveries-of-returned-items"></a>Příjem částečných dodávek vrácených položek    
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Pokud vrácená dodávka obsahuje menší než úplné množství na řádku vra
 
 ## <a name="register-and-post-a-partial-quantity"></a>Zaznamenání a zaúčtování částečného množství
 
-1.  Po výběru objednávky vrácení pro příjezd na kartě **Přehled příjezdu – sklad: %1, Dok: %2, název deníku: %3** formulář, klikněte na **Počáteční příjezd** k vytvoření deníku příjezdu a pak kliknutím na **Deníky** \> **Zobrazit příjezdy z příjmů** otevřete formulář **Deník místa**.
+1.  Po výběru objednávky vrácení pro příjezd ve formuláři **Přehled příjezdu – sklad: %1, Dok: %2, název deníku: %3** klikněte na **zahájit příjezd** k vytvoření deníku příjezdu a pak kliknutím na **Deníky** \> **Zobrazit příjezdy z příjmů** otevřete formulář **Deník místa**.
 
 2.  Vyberte řádek deníku, se kterým chcete pracovat, a poté klepnutím na položku **Řádky** otevřete formulář **Řádky deníku, místa**.
 
@@ -48,7 +47,6 @@ Pokud vrácená dodávka obsahuje menší než úplné množství na řádku vra
 4.  Do pole **Rozdělit množství** zadejte množství pro celkový počet přijatých položek a poté klepněte na tlačítko **OK**.
 
 5.  Ve formuláři **Řádky deníku, skl. místa** vyberte řádek pro množství položek, které jste obdrželi, a poté klepněte na položku **Zaúčtovat**. Po převzetí položek můžete zaúčtovat řádek pro další množství.
-
 
 
 

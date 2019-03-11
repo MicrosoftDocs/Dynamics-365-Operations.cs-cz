@@ -1,31 +1,30 @@
 ---
-title: "Vytvoření skupin servisních smluv"
-description: "Skupiny servisních smluv jsou užitečné při řazení a filtrování servisních smluv."
+title: Vytvoření skupin servisních smluv
+description: Skupiny servisních smluv jsou užitečné při řazení a filtrování servisních smluv.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAAgreementGroup
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5b6219b7e277e00a74743fe00957c1bb6225b373
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2a46173a3566a56a21add9d42c111d456b1ae7c1
-ms.openlocfilehash: 91c672094f5b13bf70d490990ad1ffb1d42b98e7
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/19/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349117"
 ---
-
 # <a name="create-service-agreement-groups"></a>Vytvoření skupin servisních smluv 
 
 [!include [banner](../includes/banner.md)]
@@ -44,4 +43,3 @@ Skupiny servisních smluv jsou užitečné při řazení a filtrování servisn�
 ## <a name="related-topics"></a>Související témata
 
 [Skupiny servisních smluv](service-agreement-groups.md)
-

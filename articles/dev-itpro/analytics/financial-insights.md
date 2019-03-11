@@ -1,13 +1,13 @@
 ---
-title: "Finanční přehledy"
-description: "Finanční přehledy používají Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů."
+title: Finanční přehledy
+description: Finanční přehledy používají Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů.
 author: kweekley
 manager: AnnBe
 ms.date: 08/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,20 +16,19 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308844"
 ---
-
 # <a name="financial-insights"></a>Finanční přehledy
 
 [!include [banner](../includes/banner.md)]
 
-**Finanční přehledy** používají Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů. Power BI je integrováno v aplikaci Microsoft Dynamics 365 Finance and Operations. Záměrem **finančních přehledů** je sestava analýz. Osoby v rámci organizace mohou zobrazit, prohledávat, pochopit a jednat. 
+**Finanční přehledy** používají Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů. Power BI je integrováno do Microsoft Dynamics 365 Finance and Operations. Záměrem **finančních přehledů** je sestava analýz. Osoby v rámci organizace mohou zobrazit, prohledávat, pochopit a jednat. 
 
 **Finanční přehledy** kombinují data z hlavní knihy a dílčích hlavních knih, aby poskytly ucelenější obrázek o finančním stavu organizace.
 
@@ -87,7 +86,7 @@ V současné době data v integrovaných sestavách Power BI nelze omezit na pr�
 |-----------------------------------------|-------|------------|
 | Zobrazit pracovní prostor přehledu CFO             | Vedoucí finančního oddělení | Toto funkční oprávnění poskytuje přístup k pracovnímu prostoru Přehled CFO. Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám. |
 | Zobrazit finanční přehledy aktuální společnosti | <ul><li>Účetní</li><li>Účetní manažer</li><li>Účetní supervizor</li><li>Auditor</li><li>Správce rozpočtu</li><li>Výkonný ředitel</li><li>Vedoucí finančního oddělení</li><li>Finanční kontrolor</li></ul> | Toto funkční oprávnění poskytuje přístup k finančním přehledům. Standardně slouží aktivní společnost jako filtr. Nelze přidat další právnické osoby. |
-| Zobrazit finanční přehledy mezi společnostmi   | Toto funkční oprávnění není přiřazeno k roli v aplikaci Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3. V další verzi bude toto funkční přiřazeno k roli vedoucího finančního oddělení. | Toto funkční oprávnění poskytuje přístup k položce nabídky pracovního prostoru Přehled CFO. Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám. |
+| Zobrazit finanční přehledy mezi společnostmi   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, toto funkční oprávnění není přiřazeno k roli. V další verzi bude toto funkční přiřazeno k roli vedoucího finančního oddělení. | Toto funkční oprávnění poskytuje přístup k položce nabídky pracovního prostoru Přehled CFO. Standardně slouží aktivní společnost jako filtr. Můžete však přidat všechny právnické osoby, bez ohledu na to, zda má uživatel přístup k jiným právnickým osobám. |
 
 
 ## <a name="financial-reporting-vs-finanical-insights"></a>Finanční výkaznictví a Finanční přehledy
@@ -194,7 +193,7 @@ Po přechodu dolů k podrobnostem na jeden řádek je třeba několik kliknutí,
 
 Můžete nadále používat tlačítko **Přejít nahoru k podrobnostem** pro návrat na nejvyšší úrověň souhrnu řádků.
 
-Power BI má také tlačítko, které vám umožní přejít na další úroveň v hierarchii (druhé tlačítka po poli **Přejít na podrobnosti**). Účinek tohoto tlačítka se liší od účinku tlačítka **Rozbalit** (třetí tlačítko po poli **Přejít na podrobnosti**), které se používá k rozbalení hierarchie. Po rozbalení hierarchie se hierarchie uchová v sestavě. Jak bylo zobrazeno dříve, pokud například rozbalíte na úrověň typu hlavního účtu, stále uvidíte v sestavě typ hlavního účtu. Pokud všask přejdete na další úroveň v hierarchii, tato sestava již nezobrazuje nadřazenou položku v hierarchii, jak je zobrazeno na následujícím obrázku.
+Power BI má také tlačítko, které vám umožní přejít na další úroveň v hierarchii (druhé tlačítko po poli **Přejít na podrobnosti**). Účinek tohoto tlačítka se liší od účinku tlačítka **Rozbalit** (třetí tlačítko po poli **Přejít na podrobnosti**), které se používá k rozbalení hierarchie. Po rozbalení hierarchie se hierarchie uchová v sestavě. Jak bylo zobrazeno dříve, pokud například rozbalíte na úrověň typu hlavního účtu, stále uvidíte v sestavě typ hlavního účtu. Pokud všask přejdete na další úroveň v hierarchii, tato sestava již nezobrazuje nadřazenou položku v hierarchii, jak je zobrazeno na následujícím obrázku.
 
 ![Předvaha](./media/trial-balance5.png)
 
@@ -250,4 +249,3 @@ Informace v následujících zdrojích není vyžadována, aby bylo možné povo
 - <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
 - <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
-

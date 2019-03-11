@@ -1,13 +1,13 @@
---- 
-title: "Revize konfigurací pro generování sestav ve formátech Office s integrovanými obrázky"
-description: "K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 1 - nastavení parametrů)."
+---
+title: Revize konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
+description: K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 1 - nastavení parametrů).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
-ms.contentlocale: cs-cz
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331407"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Revize konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
 
@@ -91,5 +91,4 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
 14. Ve stromovém zobrazení rozbalte Štítky: Kontejner.
     * Některé popisky, které jsou uvedeny v předtištěném formuláři šeků, budou zahrnuty do sestavy při jejím vytvoření pro účely testování. Tyto štítky se však nevytisknou během skutečného tisku, protože předtištěný formulář je již obsahuje.  
 15. Zavřete stránku.
-
 

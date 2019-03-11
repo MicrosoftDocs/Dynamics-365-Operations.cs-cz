@@ -1,13 +1,13 @@
 ---
-title: "Přehled nákupních žádanek"
-description: "Toto téma popisuje workflow nákupní žádanky a různé možné stavy nákupních žádanek."
+title: Přehled nákupních žádanek
+description: Toto téma popisuje workflow nákupní žádanky a různé možné stavy nákupních žádanek.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 942693ed3d2d54c6e973e5d3f86454b195f0fdee
-ms.contentlocale: cs-cz
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309833"
 ---
-
 # <a name="purchase-requisition-overview"></a>Přehled nákupních žádanek
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Po schválení nákupní žádanky ho lze použít k vytvoření nákupní objed
 ## <a name="creating-purchase-requisitions"></a>Vytvoření nákupních žádanek
 Můžete vytvořit nákupní požadavek na stránce **Mé nákupní žádanky** a vybrat položky a služby, které požadujete. Můžete vybrat položky ze zásobovacího katalogu, který vytvořila vaše organizace, nebo si můžete vyžádat položky, které nejsou k dispozici v katalogu, výběrem kategorie zásobování a zadáním podrobností o produktu.  
 
-Před tím, než bude možné odeslat nákupní žádanku ke kontrole, musí být v klientovi Microsoft Dynamics 365 for Finance and Operations nakonfigurován workflow. Workflow se používá k přesouvání nákupní žádanky v procesu kontroly od počátečního stavu **Koncept** do konečného stavu **Schváleno**.
+Před tím, než bude možné odeslat nákupní žádanku ke kontrole, musí být nakonfigurovány workflowy v Microsoft Dynamics 365 for Finance and Operations. Workflow se používá k přesouvání nákupní žádanky v procesu kontroly od počátečního stavu **Koncept** do konečného stavu **Schváleno**.
 
 ### <a name="purchase-requisition-statuses"></a>Stavy nákupních požadavků
 
@@ -142,7 +141,7 @@ V rámci zásad zásobování můžete určit účely žádanky, které budou do
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Žádanky, které mají účel spotřeby
 
-Žádanka, kterou má účel spotřeby představuje poptávku po zboží nebo službách, které bude interně používat vaše organizace. Poptávka, která je vytvořena tímto typem žádanky, je vždy splněna prostřednictvím nákupní objednávky. Pokud je aplikace Microsoft Dynamics 365 for Finance and Operations nastavena na automatické vytváření nákupních objednávek, budou nákupní objednávky vytvořeny po schválení nákupní žádanky.
+Žádanka, kterou má účel spotřeby představuje poptávku po zboží nebo službách, které bude interně používat vaše organizace. Poptávka, která je vytvořena tímto typem žádanky, je vždy splněna prostřednictvím nákupní objednávky. Pokud je aplikace Microsoft Dynamics 365 for Finance and Operations nastavena na automatické generování nákupních objednávek, budou nákupní objednávky vytvořeny po schválení nákupní žádanky.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Požadavky, které mají účel doplnění
 
@@ -198,7 +197,6 @@ Pokud chcete konsolidovat schválené řádky nákupní žádanky, postupujte ta
 [Vytvořeni požadavku na využití (Průvodce záznamem úloh)](tasks/create-requisition-consumption.md)
 
 [Workflow nákupního požadavku](purchase-requisitions-workflow.md)
-
 
 
 

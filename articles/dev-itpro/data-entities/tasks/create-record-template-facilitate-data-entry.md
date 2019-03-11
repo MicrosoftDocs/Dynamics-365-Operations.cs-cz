@@ -1,13 +1,13 @@
---- 
-title: "Vytvoření šablony záznamu pro usnadnění zadávání dat"
-description: "Tento postup ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam."
+---
+title: Vytvoření šablony záznamu pro usnadnění zadávání dat
+description: Tento postup ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam.
 author: margoc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, SysRecordInfo, SysRecordTemplatePromptOnCreate
 audience: Application User
 ms.reviewer: margoc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 36d14c386322adab0cc0ba9b7b47c874aefbe519
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6f8d804133f8e9c6f47420d41df8d9430381e2fe
-ms.contentlocale: cs-cz
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315974"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Vytvoření šablony záznamu pro usnadnění zadávání dat
 
@@ -49,5 +49,4 @@ Tento postup ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, kte
     * Zadejte například 'firemní laptop'.  
 15. Klikněte na tlačítko OK.
 16. Klikněte na tlačítko Zavřít.
-
 
