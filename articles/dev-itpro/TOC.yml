@@ -46,6 +46,10 @@ items:
       href: dev-tools/development-tools-overview.md
     - name: Kurz vývojových nástrojů
       href: dev-tools/introduction-visual-studio.md
+    - name: AppChecker
+      items:
+      - name: Instalace BaseX pro AppChecker
+        href: dev-tools/install-basex.md
     - name: Průzkumník aplikací
       href: dev-tools/application-explorer.md
     - name: Sestavení a ladění projektů
@@ -264,6 +268,8 @@ items:
         href: extensibility/extensibility-changes-812.md
       - name: Změny rozšiřitelnosti – verze 8.1.3
         href: extensibility/extensibility-changes-813.md
+      - name: Změny rozšiřitelnosti – verze 10.0
+        href: extensibility/extensibility-changes-10.md
     - name: Základy
       items:
       - name: Narušující přizpůsobení
@@ -887,6 +893,7 @@ items:
   - name: Nasazení ukázkových prostředí
     href: deployment/deploy-demo-environment.md
   - name: Cloudové nasazení
+    href: deployment/cloud-deployment-overview.md
     items:
     - name: Samoobslužné nasazení
       href: deployment/infrastructure-stack.md
@@ -975,7 +982,7 @@ items:
       href: migration-upgrade/analyze-code-upgrade.md
     - name: Upgrade AX 2012 – Nasazení ukázkového prostředí pro analýzu
       href: migration-upgrade/analysis-sandbox.md
-    - name: UpgradeAX 2012 – Upgrade dat ve vývojových prostředích
+    - name: Upgrade AX 2012 – Upgrade dat ve vývojových prostředích
       href: migration-upgrade/data-upgrade-2012.md
     - name: Upgrade AX 2012 - Kontrolní seznam před upgradem dat
       href: migration-upgrade/prepare-data-upgrade.md
@@ -1073,10 +1080,12 @@ items:
       href: dev-tools/update-development-tools.md
   - name: Zastaralé
     items:
-    - name: Zastaralá API
-      href: migration-upgrade/deprecated-apis.md
-    - name: Zastaralé funkce
+    - name: Odstraněné nebo zastaralé funkce
       href: migration-upgrade/deprecated-features.md
+    - name: Zastarání metod a prvků metadat
+      href: migration-upgrade/deprecation-deletion-apis.md
+    - name: Zastaralá API (červen 2017)
+      href: migration-upgrade/deprecated-apis.md
 - name: Správa systému
   href: sysadmin/system-administration-home-page.md
   items:
@@ -1122,6 +1131,8 @@ items:
       href: sysadmin/activeperiod.md
     - name: Role zabezpečení správce dávky
       href: sysadmin/runby.md
+    - name: Dávková úloha pro zpracování defragmentace SQL indexu
+      href: sysadmin/batch-job-SQL-defragmentation.md
   - name: Poradce při optimalizaci
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1200,18 +1211,30 @@ items:
       href: lifecycle-services/use-translation-service-ua.md
     - name: Soubory překladové paměti
       href: lifecycle-services/use-translation-service-tm.md
-- name: Správa databáze
+- name: Operace přesunu databáze
   items:
-  - name: Kopírování databází z Azure SQL databáze do prostředí SQL Serveru
-    href: database/copy-database-from-azure-sql-to-sql-server.md
-  - name: Kopírování databází z SQL Serveru do produkčního prostředí databáze Azure SQL
-    href: database/copy-database-from-sql-server-to-azure-sql.md
-  - name: Obnovení databází v neprodukčních prostředích
-    href: database/request-point-in-time-restore.md
-  - name: Export kopií databází pro pozdější obnovení
-    href: database/copy-operations-database.md
-  - name: Žádost o obnovení databáze sandbox
-    href: database/database-refresh.md
+  - name: Přehled
+    href: database/dbmovement-operations.md
+  - name: Průvodci pro rychlé zahájení práce
+    items:
+    - name: Obnovení databáze
+      href: database/database-refresh.md
+    - name: Export databáze
+      href: database/export-database.md
+    - name: Import databáze
+      href: database/import-database.md
+    - name: Obnovení databáze k určitému bodu v čase
+      href: database/database-point-in-time-restore.md
+  - name: Kurzy
+    items:
+    - name: Obnovení pro účely školení
+      href: database/dbmovement-scenario-general-refresh.md
+    - name: Ladění a diagnostika
+      href: database/dbmovement-scenario-debugdiag.md
+    - name: Propagace zlaté konfigurace
+      href: database/dbmovement-scenario-goldenconfig.md
+    - name: Destruktivní testování
+      href: database/dbmovement-scenario-destructivetests.md
 - name: Podpora
   items:
   - name: Získání podpory pro aplikace Finance and Operations a Lifecycle Services
@@ -1228,9 +1251,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Správa zkušeností s podporou Finance and Operations
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: 9baabd73eb9a6e0c33b41bc30a1ba0788a858ce9
-ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
+ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
+ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "373316"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "773795"

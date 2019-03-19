@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 944030859c26a1aadeb98a070d071e30f8b86dc4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d15ff8add8a77c27a9f0153c9e881ecae3d9da78
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302033"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403301"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Domovská stránka Pokladna a banka
 
@@ -86,13 +86,11 @@ Tyto nástroje zahrnují vkladové složenky, šeky, cizí směnky a vlastní sm
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají. 
+Přejděte [poznámky k verzi aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace o modulu Pokladna a banka a jiných řešeních naleznete na [blogu Microsoft Dynamics 365] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Existuje mnoho příspěvků o modulu Pokladna a banka na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Pokladna a banka, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
+Názory, novinky a jiné informace naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.
 
