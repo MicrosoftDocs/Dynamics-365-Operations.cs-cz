@@ -3,7 +3,7 @@ title: Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (31. l
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 1/31/2019
+ms.date: 01/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-29
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5c9449e2bdec8c17cc2cf659ed68ac1d713a26ad
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.openlocfilehash: ab43bab53afd979d64099425f0582f6c1bb5a8b0
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374727"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377843"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-january-31-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (31. ledna 2019)
 

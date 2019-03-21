@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
 author: sericks007
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329245"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836341"
 ---
 # <a name="removed-or-deprecated-features"></a>Odstraněné nebo zastaralé funkce
 
@@ -35,11 +35,77 @@ Toto téma popisuje funkce, které byly odebrány nebo jsou zastaralé pro aplik
 
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
-> [!Note]
+> [!NOTE]
 > Počínaje vydáním Dynamics 365 for Finance and Operations z července 2017 s aktualizací Platform Update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci. Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.
 
-> [!Note]
+> [!NOTE]
 > Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Aktualizace služeb standardního a prvního vydání](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### <a name="deprecated-apis-and-potential-breaking-changes"></a>Zastaralá rozhraní API a možná přerušení změn
+
+#### <a name="deriving-from-internal-classes-is-deprecated"></a>Odvození z interních tříd je zastaralé
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Ve verzích před aktualizací Platform Update 25 bylo možné vytvořit třídu nebo tabulku odvozenou z interní třídy/tabulky, která je definována v jiném balíčku/modulu. Nejedná se o bezpečný postup kódování. Od aktualizace Platform Update 25 kompilátor zobrazí zprávu s upozorněním, pokud se o to pokusíte.|
+| **Nahrazeno jinou funkcí?**   | Upozornění kompilátoru bude nahrazeno chybou v příští aktualizaci Platform Update. Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Pltaform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód. Tato změna ovlivní čas nasazení a kompilace. |
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio. |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé - Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update. |
+
+#### <a name="overriding-internal-methods-is-deprecated"></a>Přepsání interních metod je zastaralé
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Ve verzích před aktualizací Platform Update 25 bylo možné přepsat interní metodu v odvozené třídě, která je definována v jiném balíčku/modulu. Nejedná se o bezpečný postup kódování. Od aktualizace Platform Update 25 kompilátor zobrazí zprávu s upozorněním, pokud se o to pokusíte.|
+| **Nahrazeno jinou funkcí?**   | Upozornění bude nahrazeno kompilační chybou v příští aktualizaci Platform Update. Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Pltaform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód. Tato změna ovlivní čas nasazení a kompilace. |
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio. |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé - Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update. |
+
+## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 s aktualizací Platform Update 23
+
+### <a name="print-to-screen-functionality"></a>Funkce tisku na obrazovku
+Zákazníci mohou použít akci **Importovat** poskytovanou ovládacím prvkem Report Viewer ke stažení dokumentů vyprodukovaných aplikacemi Finance and Operations. Tato prezentace sestavy na bázi HTML nabízí uživatelům náhled dokumentu bez číslování stránek.
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Povaha náhledu na bázi HTML bez čísel stránek **neposkytuje** věrnost s fyzickými dokumenty produkovanými aplikací Finance and Operations. Plným zahrnutím PDF jako standardního formátu pro obchodní operace jsme schopni výrazně zjednodušit uživatelské možnosti interakce se sestavami aplikace a zefektivnit proces vykreslování dokumentů. |
+| **Nahrazeno jinou funkcí?**   | Do budoucna budou dokumenty PDF výchozím formátem pro sestavy vykreslované aplikací Finance and Operations.   |
+| **Ovlivněné oblasti produktu**         | Tato změna **nemá** vliv na scénáře, kdy jsou sestavy rozesílány elektronicky nebo odesílány přímo na tiskárny.    |
+| **Možnost nasazení**              | Vše  |
+| **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno. Funkce automatického stažení sestav aplikací do prohlížeče ve formátu PDF je plánována na aktualizaci Platform Update v květnu 2019. <br><br>**Důležité:** Stávajícím zákazníkům, kteří se spoléhají na funkci tisku na obrazovku, doporučujeme, aby se obrátili [Podporu](../lifecycle-services/lcs-support.md) před upgradem na aktualizaci Platform Update 26. |
+
+### <a name="client-kpi-controls"></a>Ovládací prvky klíčových ukazatelů výkonu klienta
+Vložené klíčové indikátory výkonnosti (KPI) mohou být vývojářem modelovány v aplikaci Visual Studio a dále upravovány koncovým uživatelem.
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nativní ovládací prvky klienta používané k definování KPI mají nízký vstup od zákazníka a spoléhají na vývojáře, který přidává sledovatelné metriky. |
+| **Nahrazeno jinou funkcí?**   | Služba PowerBI.com poskytuje nástroje světové třídy pro definování a správu indikátorů KPI na základě dat z externích zdrojů.  V nadcházející verzi plánujeme umožnit vkládání řešení hostovaných na PowerBI.com v pracovních prostorech aplikací.   |
+| **Ovlivněné oblasti produktu**         | Tato aktualizace zabrání vývojářům vkládání nových ovládacích prvků KPI v návrháři Visual Studio.    |
+| **Možnost nasazení**              | Vše  |
+| **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno. |
+
+### <a name="deprecated-apis-and-future-breaking-changes"></a>Zastaralá rozhraní API a budoucí přerušení změn
+
+#### <a name="field-groups-containing-invalid-field-references"></a>Skupiny polí obsahující neplatné odkazy na pole
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Definice tabulkových metadat mohou mít skupiny polí obsahující neplatné odkazy na pole. Tento problém je v současné době kategorizován jako *varování kompilátoru*, nikoli jako *chyba*, což znamená, že vytvoření a nasazení zaváděcího balíčku může pokračovat bez opravení problému. Při nasazení to může způsobit chyby runtime ve finančním výkaznictví a službě SQL Server Reporting Services (SSRS). Chcete-li vyřešit tento problém:<br><br>1. Odeberte neplatný odkaz na pole z definice skupiny pole tabulky.<br><br>2. Proveďte kompilaci znovu.<br><br>3. Ujistěte se, že jsou adresovány veškeré chyby nebo upozornění. |
+| **Nahrazeno jinou funkcí?**   | Upozornění bude nahrazeno kompilační chybou v budoucnosti.  |
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio. |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé – Upozornění se v budoucnu stane chybou při kompilaci. Plánujeme to v aktualizaci Platform Update 30. |
+
+#### <a name="complete-list"></a>Úplný seznam
+Pro přístup k úplnému seznamu zastaralých rozhraní API nahlédněte do části [Zastarání metod a prvků metadat](deprecation-deletion-apis.md).
 
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20
 
@@ -51,8 +117,8 @@ Režim synchronního převodu je zastaralý v parametrech hlavní knihy.  Tento 
 | **Důvod pro zrušení/odstranění** | Odstraňujeme synchronní možnost kvůli dopadu na výkon systému. |
 | **Nahrazeno jinou funkcí?**   | Asynchronní a plánovaná dávka jsou možnosti, které mají být použity místo synchronní možnosti.   |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha, Závazky, Pohledávky, Zásobování, Výdaje    |
-| **Možnost nasazení**              | Všechna  |
-| **Stav**                         | Zastaralé - Plánovaná doba pro odstranění funkcionality je verze 10.0.|
+| **Možnost nasazení**              | Vše  |
+| **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je verze 10.0.|
 
 ### <a name="electronic-reporting-for-russia"></a>Elektronické výkaznictví pro Rusko
 Funkce pro konfiguraci formátů souborů TXT a XML prohlášení. 

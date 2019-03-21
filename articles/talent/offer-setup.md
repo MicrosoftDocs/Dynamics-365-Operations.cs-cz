@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
-ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
+ms.openlocfilehash: 43cf13d96e345747e06541267d820e17de7c1763
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376500"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768875"
 ---
 # <a name="set-up-offer-management"></a>Nastavení správy nabídek 
 
@@ -199,11 +199,11 @@ Existuje několik částí procesu vytváření nabídky, které může konfigur
 - **Vypršení nabídky kandidátovi** -Jako správce můžete určit, zda mají všechny nabídky datum vypršení platnosti, a pokud ano, jaký by mě být výchozí posun pro datum vypršení platnosti. Můžete také nastavit, zda kandidáti mohou odmítnout nabídku.
 
 - **Elektronické podpisy** -jako správce můžete také zvolit metodu, kterou mohou uchazeči používat k podepisování nabídek.
-    - Adobe Sign - všechny nabídky budou odeslány a podepisovány pomocí Adobe Sign. Každý autor nabídky, který ji publikuje, musí mít připojenou licenci aplikace Adobe Sign k aplikaci Attract. 
+    - Adobe Sign - všechny nabídky budou odeslány a podepisovány pomocí Adobe Sign. Každý autor nabídky, který ji publikuje, musí mít připojený účet Adobe Sign k aplikaci Attract. Ohledně licencí Adobe Sign a bezplatných zkušebních verzí navštivte tento [odkaz](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+    - DocuSign - všechny nabídky budou odeslány a podepisovány pomocí DocuSign. Každý autor nabídky, který ji publikuje, musí mít připojený účet DocuSign k aplikaci Attract. 
+    
     - ESign – Toto je výchozí možnost poskytovaná přímo po vybalení, kde může uživatel podepsat nabídku zadáním svého jména a iniciál.
 
->[!NOTE]
-> Ohledně licencí Adobe Sign a bezplatných zkušebních verzí navštivte tento [odkaz](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
 Další informace o procesu vytváření nabídky naleznete v tématu [Vytvoření, schválení a podepisování nabídek](./creating-offers.md).

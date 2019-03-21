@@ -3,7 +3,7 @@ title: Povinné aktualizace
 description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/25/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 9dcf958165cffa3e3cd62b88a71295eefae9cf8f
-ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
+ms.openlocfilehash: 3beeb77819661de3f6b55766a1f8a5bd1fe023ba
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "375983"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832094"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -40,8 +40,16 @@ Pokud se ve sloupci Datum používá měsíc, je povinné aktualizace plánován
 |      2019. březen          |   10.0.0      | Rakousko      |   Změny v Kammerumlage 2019 (nákupní clo)    |
 |      2019. březen          |   10.0.0      |   Brazílie    |     Příspěvky SPED EFD - rozvržení 004 a 005  |
 |      2019. březen          |   10.0.0      |    Malajsie     |Malajsie nahrazuje GST prodejní a servisní daní SST        |
+|      2019. duben          |   10.0.1      |    Rakousko     |Retail - Fiskální integrace         |
+|      2019. duben          |   10.0.1      |    Evropa     |Elektronické faktury – Export faktur zákazníků ve formátu PEPPOL BIS 3         |
+|      2019. duben          |   10.0.1      |    Evropa     |Elektronické faktury – Import faktur dodavatele z formátu PEPPOL BIS 3         |
+|      2019. duben          |   10.0.1      |   Německo     |Elektronické faktury – Export faktur zákazníků ve formátu xRechnung 1.1         |
+|      2019. duben          |   10.0.1      |    Velká Británie     |[Změny odeslání výkazu DPH (Digitalizování daní)](emea-gbr-mtd-vat-integration.md)    |    
+|      2019. duben          |   10.0.1      |    Brazílie     |NF-e nové NT 2018.005         |
+|      2019. duben          |   10.0.1      |    Rusko     |Formát přiznání k DPH se mění od roku 2019         |
+|      2019. duben          |   10.0.1      |    Rusko     |Formát přiznání k DPH se mění od 2019 (formáty knih nákupu a prodeje)  |
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 - Najděte všechny plánované a vydané povinné aktualizace v [Lifecycle Service - hledání problémů](https://lcs.dynamics.com/Logon/Index) (log in required).
 - Seznam lokalizace, které jsou podporovány v Dynamics 365 for Finance and Operations naleznete v [příručce mezinárodní dostupnosti](https://aka.ms/dynamics_365_international_availability_deck).
 

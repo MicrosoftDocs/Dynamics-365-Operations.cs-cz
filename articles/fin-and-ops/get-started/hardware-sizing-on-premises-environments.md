@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
+ms.sourcegitcommit: 21bbdac152e0cbb0576df9d5e6e90283175834ef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340722"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768407"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Požadavky nastavení velikosti hardwaru pro místní prostředí
 
@@ -86,7 +86,7 @@ Abyste mohli porozumět požadavkům nastavení velikosti, je nutné znát maxim
     - Použití dalších funkcí, jako jsou například výstrahy a protokol databáze. Protokolování databáze dále sníží propustnost za hodinu na základ pod 3K řádky.
     - Složitost složení dat – jednoduchá účtová osnova vs. podrobná účtová osnova má vliv na propustnost (jako příklad).
     - Popis transakce.
-    - 2 GB paměti na 4 GB pro každé jádro.
+    - 2 GB paměti na 16 GB pro každé jádro.
     - Pomocné databáze na Databázovm serveru, jako je například SSRS databáze a aplikace Management reporter.
     - Dočasné databáze = počet souborů jako fyzických procesorů 15 % velikosti databáze.
     - Velikost SAN a propustnosti na základě celkové objemu/použití souběžných transakce.

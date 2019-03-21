@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d636e77888fff383849b3a91bf643475a6d516ac
-ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
+ms.openlocfilehash: efda4e39f63155785386ecec6d21973e01a0f69f
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "377871"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770886"
 ---
 # <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integrace s aplikací Microsoft Dynamics 365 for Field Service
 
@@ -75,7 +75,7 @@ Další funkce v této druhé fázi se zaměřovala na to, aby technikům v ter�
 ### <a name="system-requirements-for-finance-and-operations"></a>Systémové požadavky aplikaci Finance and Operations
 Integrace Field Service podporuje následující verze:
 
-- Dynamics 365 for Finance and Operations verze 8.1.2 (Prosinec 2019) byla vydána v 2019 dne a má číslo sestavení aplikace 8.1.195 s aktualizací Platform Update 22 (7.0.5095). 
+- Dynamics 365 for Finance and Operations verze 8.1.2 (Prosinec 2018) byla vydána v 2018 dne a má číslo sestavení aplikace 8.1.195 s aktualizací Platform Update 22 (7.0.5095). 
 
 ### <a name="system-requirements-for-field-service"></a>Požadavky na systém pro Field Service
 Chcete-li použít řešení integrace Field Service, je nutné nainstalovat následující komponenty:

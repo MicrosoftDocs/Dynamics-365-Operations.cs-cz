@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356339"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832141"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definice sloupce ve finančních sestavách
 
@@ -62,7 +62,7 @@ Definice sloupce může obsahovat 2 až 255 sloupců.
 Definice sloupce zahrnuje následující informace:
 
 - Sloupec popisů pro definici řádku.
-- Sloupce částky, které zobrazují data z finančních dat, tabulky aplikace Microsoft Excel nebo výpočtů založených jiných datech v definici sloupce
+- Sloupce částky, které zobrazují data z finančních dat, nebo výpočtů založených na jiných datech v definici sloupce
 - Sloupce formátování
 - Sloupce atributů
 
@@ -170,7 +170,7 @@ Můžete přidat, upravit a odstranit záhlaví, která se zobrazí v horní č�
 
 ### <a name="create-an-automatically-generated-header"></a>Vytvoření automaticky generovaného záhlaví
 
-Návrhář sestav může automaticky generovat záhlaví sloupců na základě kódů automatického textu. Kódy automatického textu jsou proměnné, které se aktualizují při každém generování sestavy. Tyto kódy mohou být zahrnuty do libovolného záhlaví sloupce a určovat informace, které se u sestavy liší, jako je například datum nebo číslo období. Jednu definici sloupců proto můžete použít pro více definic sestav, časových období a organizačních stromů. Protože kódy automatického textu závisí na informacích kalendáře z řádků podrobností definice sloupce, jsou podporovány pouze u sloupců **CALC**, **FD** a **WKS**. Způsob, jakým je kód automatického textu zobrazen v buňce záhlaví sloupce, má vliv na to, jak se tyto údaje zobrazují v sestavě. V dialogovém okně **Záhlaví sloupce** se kódy automatického textu zobrazí s malými i velkými znaky. V sestavě se proto text se zobrazí velkými i malými písmeny. Například ve standardním kalendářním roku vypíše kód **@CalMonthLong** měsíc **7** jako **Červenec**. Pokud má být v sestavě název měsíce uveden velkými písmeny (například **ČERVENEC**), zadejte kód automatického textu velkými písmeny do pole **Text záhlaví sloupce**. Například zadejte **@CALMONTHLONG**. Kódy lze používat společně s textem. Například zadejte následující text záhlaví: **Období @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**. Záhlaví sestavy, které bude vygenerováno, bude vypadat nápodobně: **Period 1-02 od 1.1.2002 do 31.1.2002**.
+Návrhář sestav může automaticky generovat záhlaví sloupců na základě kódů automatického textu. Kódy automatického textu jsou proměnné, které se aktualizují při každém generování sestavy. Tyto kódy mohou být zahrnuty do libovolného záhlaví sloupce a určovat informace, které se u sestavy liší, jako je například datum nebo číslo období. Jednu definici sloupců proto můžete použít pro více definic sestav, časových období a organizačních stromů. Protože kódy automatického textu závisí na informacích kalendáře z řádků podrobností definice sloupce, jsou podporovány pouze u sloupců **CALC** a **FD**. Způsob, jakým je kód automatického textu zobrazen v buňce záhlaví sloupce, má vliv na to, jak se tyto údaje zobrazují v sestavě. V dialogovém okně **Záhlaví sloupce** se kódy automatického textu zobrazí s malými i velkými znaky. V sestavě se proto text se zobrazí velkými i malými písmeny. Například ve standardním kalendářním roku vypíše kód **@CalMonthLong** měsíc **7** jako **Červenec**. Pokud má být v sestavě název měsíce uveden velkými písmeny (například **ČERVENEC**), zadejte kód automatického textu velkými písmeny do pole **Text záhlaví sloupce**. Například zadejte **@CALMONTHLONG**. Kódy lze používat společně s textem. Například zadejte následující text záhlaví: **Období @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**. Záhlaví sestavy, které bude vygenerováno, bude vypadat nápodobně: **Period 1-02 od 1.1.2002 do 31.1.2002**.
 
 > [!NOTE]
 > Formát částí textu, jako například dlouhé datum, závisí na vašich místních nastaveních serveru Finance and Operations. Tato nastavení můžete změnit, kliknutím na tlačítko **Start**, na položku **Ovládací panely** a nakonec na položku **Oblast a jazyk**. V následující tabulce jsou uvedeny dostupné možnosti automatického textu u záhlaví sloupců.
@@ -291,7 +291,7 @@ Buňka **Další mezery před sloupcem** určuje šířku oddělovače mezi jedn
 1. V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.
 2. V buňce **Další mezery před sloupcem** zadejte počet mezer k vložení mezi sloupce.
 
-### <a name="specify-a-currency"></a>Zadání měny
+### <a name="specify-a-format-currency-override"></a>Určení přepsání formátu a měny
 
 Buňka **Přepsání formátu/měny** určuje formátování desetinných míst, měny a procentuálních hodnot ve sloupci. Toto formátování má přednost před veškerým formátováním, které je určeno v definici sestavy nebo systémovými výchozími hodnotami.
 
@@ -361,7 +361,7 @@ Typ informací, které zahrnuje každý sloupec v sestavě, je určen hodnotou v
     <tbody>
     <tr>
     <td>FD</td>
-    <td>Zobrazení finančních dat nebo zobrazení dat z tabulky aplikace Excel při použití sloupce <strong>Odkaz na finanční dimenze</strong> nebo sloupce <strong>Odkaz na list</strong> v definici řádku. Vyberete-li typ sloupce <strong>FD</strong>, jsou v následujících řádcích automaticky přiřazena výchozí nastavení: <ul>
+    <td>Zobrazte finanční data při použití sloupce <strong>Odkaz na finanční dimenze</strong> v definici řádku. Vyberete-li typ sloupce <strong>FD</strong>, jsou v následujících řádcích automaticky přiřazena výchozí nastavení: <ul>
     <li><strong>Kód knihy / Kategorie atributů:</strong> ACTUAL</li>
     <li><strong>Kód knihy / Kategorie atributů:</strong> ACTUAL</li>
     <li><strong>Fiskální rok:</strong> BASE</li>
@@ -394,14 +394,6 @@ Tato výchozí nastavení můžete změnit.</td>
     <tr>
     <td>STRANA</td>
     <td>Vloží do sestav svislý konec stránky. Sloupce napravo od sloupce <strong>PAGE</strong> se zobrazí na jiné stránce.</td>
-    </tr>
-    <tr>
-    <td>WKS</td>
-    <td>Zobrazí data načtená z tabulky aplikace Excel. Vyberete-li typ sloupce <strong>WKS</strong>, jsou v následujících řádcích automaticky přiřazena výchozí nastavení: <ul>
-    <li><strong>Fiskální rok:</strong> PERIODIC</li>
-    <li><strong>Období:</strong> BASE</li>
-    </ul>
-Tato výchozí nastavení můžete změnit.</td>
     </tr>
     <tr>
     <td>ATTR</td>
@@ -518,13 +510,13 @@ Můžete také použít jakoukoli kombinaci alfanumerických znaků pro přesnou
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Formátování sestavy s více měnami v definici sloupce
 
-V sestavě s více měnami se mohou zobrazovat částky v přirozené (místní) měně, funkční (výchozí) měně nebo měně vykazování. Funkční měna společnosti je definována v systému Microsoft Dynamics ERP. Nepleťte si toto nastavení systému ERP s místním nastavením operačního systému, kde se konfigurují symboly výchozí měny pro sestavy. Definice sloupce obsahuje následující dostupné buňky související s měnou:
+Sestava více měn může zobrazit částky v zúčtovací měně hlavní knihy, v měně vykazování hlavní knihy, původní měně transakce nebo v převedené měně vykazování. Zúčtovací měna společnosti je definována v nastavení hlavní knihy. Nepleťte si toto nastavení s místním nastavením operačního systému, kde se konfigurují symboly výchozí měny pro sestavy. Definice sloupce obsahuje následující dostupné buňky související s měnou:
 
-- **Zobrazení měny** – určuje typ měny (přirozená, funkční nebo vykazovací) ve které se transakce zobrazí. Tato funkce je někdy označována jako převod měny. Převod měn je schopnost uvádět částky hlavní knihy v sestavách v měně, která nemusí být funkční měnou společnosti ani měnou, ve které byla zadána transakce.
+- **Zobrazení měny** – určuje typ měny (účetnictví, vykazování, transakce nebo převedené výkaznictví), ve které se transakce zobrazí. Funkce převodu na měnu vykazování se někdy označuje jako převod měny. Převod měn je schopnost uvádět částky hlavní knihy v sestavách v měně, která nemusí být funkční měnou nebo měno vykazování společnosti, ani měnou, ve které byla zadána transakce.
 - **Filtr měny** – definuje filtr měny. V sestavě jsou zobrazeny pouze transakce, které byly zadány ve vybrané měně.
 
-> [!NOTE]
-> Abyste mohli vytvářet sestavy, které používají více měn, je nutné zaškrtnout políčko **Zahrnout všechny měny vykazování** na kartě **Sestava**. Chcete-li určit funkční měnu společnosti, postupujte takto:
+> 
+Chcete-li určit zúčtovací měnu společnosti, postupujte takto.
 
 1. V Návrháři sestav klikněte v nabídce **Společnost** na příkaz **Společnosti**.
 2. V dialogovém okně **Společnosti** vyberte společnost a klikněte na tlačítko **Zobrazení**.
@@ -533,20 +525,18 @@ V sestavě s více měnami se mohou zobrazovat částky v přirozené (místní)
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Zadání měny v sestavě s více měnami
 
 1. V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.
-2. Klikněte dvakrát na buňku **Zobrazení měny** v odpovídajícím sloupci **FD** a poté vyberte možnost zobrazení informací o měně: **Přirozená/původní měna**, **Funkční měna z informací o společnosti** nebo měna vykazování.
+2. Klikněte dvakrát na buňku **Zobrazení měny** v odpovídajícím sloupci **FD** a poté vyberte možnost zobrazení informací o měně: **Zúčtovací měna pro hlavní knihu**, **Vykazování hlavní knihy**, měnu transakce nebo vyberte možnost převodu na jinou měnu vykazování.
 3. Klikněte dvakrát na buňku **Filtr měny** v odpovídajícím sloupci **FD** a poté vyberte odpovídající kód měny v seznamu. V sestavě jsou zobrazeny pouze transakce, které byly zadány v této měně.
 
-> [!NOTE]
-> Možnosti zde popsané se mohou lišit v závislosti na systému ERP. Další informace naleznete v [dokumentaci systému Microsoft ERP](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Příklad pro buňky Zobrazení měny a Filtr měny
 
 Petra ve své definici sloupce vybrala následující měny:
 
 - **Filtr měny:** Jen
-- **Zobrazení měny:** Funkční (USD)
+- **Zobrazení měny:** Zúčtovací měna z hlavní knihy (USD)
 
-Vzhledem k filtru měny, který Petra vybrala, se do sestavy zahrnou pouze transakce, které byly zadány v japonských jenech (JPY). Vzhledem k zobrazení měny, které vybrala, se v sestavě zobrazí tyto transakce ve funkční měně (americké dolary – USD).
+Vzhledem k filtru měny, který Petra vybrala, se do sestavy zahrnou pouze transakce, které byly zadány v japonských jenech (JPY). Vzhledem k zobrazení měny, které vybrala, se v sestavě zobrazí tyto transakce v zúčtovací měně (americké dolary – USD).
 
 #### <a name="currency-filter-and-currency-display-combinations"></a>Kombinace filtru měny a zobrazení měny
 
@@ -555,10 +545,10 @@ Následující tabulka obsahuje výsledky sestavy, které mohou nastat pro různ
 
 | Buňka Zobrazení měny                        | Buňka Filtr měny | Výsledek sestavy |
 |----------------------------------------------|----------------------|---------------|
-| Přirozená/původní měna                 | **JEN**              | **6 000 Y** – výsledek ukazuje pouze transakce, které byly zadány v měně JPY. |
-| Funkční měna z informací o společnosti | **JEN**              |**60 $** – výsledek zobrazí pouze transakce, které byly zadány v měně JPY, a tyto transakce zobrazí v měně USD.<blockquote>[!NOTE] Kurz převodu je přibližně 100 JPY za jeden USD.</blockquote> |
-| Funkční měna z informací o společnosti | Prázdné                | **2 310 USD** – Výsledek zobrazí všechna data ve funkční měně, která je určena v informacích o společnosti.<blockquote>[!NOTE] Tato částka je součtem všech transakcí ve funkční měně.</blockquote> |
-| Přirozená/původní měna                 | Prázdné                | **2 250 $** – výsledek obsahuje všechny částky v měně, ve které byla provedena transakce. |
+| Měna transakce                 | **JEN**              | **6 000 Y** – výsledek ukazuje pouze transakce, které byly zadány v měně JPY. |
+| Zúčtovací měna z hlavní knihy | **JEN**              |**60 $** – výsledek zobrazí pouze transakce, které byly zadány v měně JPY, a tyto transakce zobrazí v měně USD.<blockquote>[!NOTE] Kurz převodu je přibližně 100 JPY za jeden USD.</blockquote> |
+| Zúčtovací měna z hlavní knihy | Prázdné                | **2 310 USD** – Výsledek zobrazí všechna data v zúčtovací měně, která je určena v hlavní knize.<blockquote>[!NOTE] Tato částka je součtem všech transakcí v zúčtovací měně.</blockquote> |
+| Měna transakce                 | Prázdné                | **2 250 $** – výsledek obsahuje všechny částky v měně, ve které byla provedena transakce. To znamená, že součet skládá dohromady částky z různých měn. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Sloupec Výpočet v definici sloupců
 

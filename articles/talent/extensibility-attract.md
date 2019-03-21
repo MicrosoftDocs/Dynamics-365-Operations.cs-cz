@@ -3,7 +3,7 @@ title: Rozšiřitelnost v aplikaci Attract
 description: Toto téma popisuje, jak můžete rozšířit aplikaci Microsoft Dynamics 365 for Talent - Attract pomocí Microsoft Power Platform.
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,18 +18,41 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303555"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789644"
 ---
 # <a name="extensibility-in-attract"></a>Rozšiřitelnost v aplikaci Attract
 
 [!include[banner](../includes/banner.md)]
 
 Aplikace Dynamics 365 for Talent je vytvořen na platformě Common Data Service (CDS) for Apps a lze ji rozšířit různými způsoby pomocí Microsoft Power Platform a možností, které nabízí Common Data Service for Apps. Proto můžete konfigurovat a přizpůsobit systém pomocí Microsoft PowerApps a Microsoft Flow. Můžete rovněž získat další analýzy o osobách pomocí Microsoft Power BI. Kromě toho je díky novým vlastním aktivitám, jako jsou například PowerApps a Webový obsah (iframe), proces náboru přizpůsobitelní více, než kdy dříve. Díky těmto aktivitám můžete proces náboru přizpůsobit potřebám a procesům vaší firmy a zajistit, aby náborový tým i kandidáti měli bezproblémový a přizpůsobený zážitek
+
+## <a name="extending-option-sets-in-attract"></a>Rozšíření sad možností v aplikaci Attract
+
+**Sada možností** (rozevírací seznam) je typem pole, který může být zahrnut do entity. Definuje sadu možností. Když se sada možností zobrazí ve formuláři, používá ovládací prvek rozevíracího seznamu.  V aplikaci Attract existuje více polí, která jsou sadami možností.  Začínáme zavádět funkce pro rozšíření sad možností, počínaje polem Důvodu zamítnutí, polem Typ zaměstnání a polem Typ služebního věku.   Můžete také přidat lokalizované zobrazované popisky možnosti, které přidáte.  Podrobné informace naleznete na následujícím odkazu: [Přizpůsobení popisků sady možností](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+
+> [!NOTE]
+> Funkce publikování pracovní nabídky na LinkedIn vyžaduje použití polí **Typ zaměstnání** a **Typ služebního věku** na stránce **Podrobnosti práce**. Výchozí hodnoty v těchto polích jsou podporovány službou LinkedIn a jsou zobrazeny při publikování nabídky práce. Proto pokud publikujete nabídku práce na LinkedIn a upravujete existující hodnoty sady možností pro tato pole, práce bude nadále publikována, ale LinkedIn nezobrazí vlastní hodnoty **Typ zaměstnání** a **Typ služebního věku**.  
+
+V následujícím seznamu jsou uvedeny kroky k aktualizaci pole **Důvod zamítnutí** s hodnotami, které jsou specifické pro váš podnik.  
+
+1. Chcete-li rozšířit sadu možností **Důvod zamítnutí**, přejděte na [web správy PowerApps.](Https://admin.powerapps.microsoft.com)
+2. Můžete být vyzvání k přihlášení se ke svému účtu. Zadejte své ID uživatele a heslo, které používáte pro přihlášení k Dynamics365 anebo Office365 a poté klikněte na tlačítko **Další**.
+3. Na kartě **Prostředí** vyberte prostředí, které chcete spravovat, a dvakrát klikněte, abyste se dostali na kartu **Podrobnosti**.
+4. Na kartě **Podrobnosti** zvolte **Centrum pro správu Dynamics 365**.
+5. Vyberte instanci, kterou chcete změnit, a zvolte **Otevřít**.
+6. Přejděte na **Nastavení**a pak **Přizpůsobení** a zvolte **Přizpůsobit systém**.
+7. Vyhledejte entitu, pro kterou chcete rozbalit sadu možností, výběrem možnosti **Entity** a rozbalením skupiny. V tomto příkladu to bude **entita žádosti o práci**.
+8. Přejděte na pole, pro které chcete rozšířit sadu možností, výběrem možnosti **Pole**. V tomto příkladu to bude **msdyn_rejectionreason**. Dvakrát klikněte na pole.
+9. V poli **Sada možností** vyberte **Upravit**.
+10. Vyberte ikonu **+**.
+11. Zadejte **Popisek**.  (Musí to být jedinečná hodnota – žádné duplicity).
+12. Zvolte **Uložit**.
+13. Vyberte **Publikovat** v horní části stránky.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Využijte výhody Microsoft Power Platform 
 

@@ -3,7 +3,7 @@ title: Integrace dlouhodobého majetku
 description: Modulu Dlouhodobý majetek lze integrovat s moduly Hlavní kniha, Řízení zásob, Pohledávky a Závazky. U dlouhodobého majetku lze rovněž nastavit integraci s nákupními objednávkami.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5d33de3af05668bc9aedc94894b12d16daf78e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2023d68a1455c6bb5ec569b6ae19fc3268f8769d
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336973"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778148"
 ---
 # <a name="fixed-assets-integration"></a>Integrace dlouhodobého majetku
 
@@ -41,7 +41,7 @@ Na stránce **Účetní profily dlouhodobého majetku** můžete definovat hlavn
 ## <a name="inventory-management"></a>Řízení zásob
 Ve skladovém deníku dlouhodobého majetku můžete zadat pořízení dlouhodobého majetku, který právnická osoba vyrobila nebo sestavila pro sebe. Pak můžete předat skladové položky do dlouhodobého majetku ve formě pořízení nebo částečného pořízení. 
 
-Majetek můžete rovněž pořídit pomocí nákupních objednávek. Pokud nákupní objednávky obsahují skladové položky, které patří do dlouhodobého majetku, nastavení pole Povolit pořízení majetku v části **Nakupování** na stránce **Parametry dlouhodobého majetku** určuje, zda při zaúčtování faktury bude zároveň zaúčtováno pořízení dlouhodobého majetku. Vliv pořízení dlouhodobého majetku vliv na zásoby závisí na nastavení právnické osoby. 
+Majetek můžete rovněž pořídit pomocí nákupních objednávek. Pokud nákupní objednávky obsahují skladové položky, které patří do dlouhodobého majetku, nastavení pole Povolit pořízení majetku v části **Nakupování** na stránce **Parametry dlouhodobého majetku** určuje, zda při zaúčtování faktury bude zároveň zaúčtováno pořízení dlouhodobého majetku. Jeden řádek nákupu vytvoří pouze jeden dlouhodobý majetek bez ohledu na množství. Vliv pořízení dlouhodobého majetku vliv na zásoby závisí na nastavení právnické osoby. 
 
 Když se ve skladovém deníku, nákupní objednávce nebo v návrhu pořízení ze skladové položky stane pořízení dlouhodobého majetku, je vytvořena transakce knihy pořízení dlouhodobého majetku. Pokud kniha pořízení zahrnuje odvozenou knihu odpisů, bude transakce pořízení rovněž vytvořena v odvozené knize. 
 

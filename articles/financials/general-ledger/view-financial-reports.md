@@ -1,9 +1,9 @@
 ---
-title: Zobrazit finanční sestavy
-description: Tento článek popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
+title: Zobrazení finančních sestav
+description: Toto téma popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 author: kweekley
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
+ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312938"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791434"
 ---
-# <a name="view-financial-reports"></a>Zobrazit finanční sestavy
+# <a name="view-financial-reports"></a>Zobrazení finančních sestav
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
+Toto téma popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 
 <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
 ----------------------------
@@ -67,26 +67,23 @@ Finanční sestavu lze kdykoli zobrazit v jiné měně. Chcete-li sestavu zobraz
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>Souhrnné zobrazení finanční sestavy
 Finanční sestava může obsahovat řádky podrobností a řádky souhrnů. Řádky podrobností jsou řádky, které obsahují hlavní účty nebo dimenze. Řádky souhrnů jsou řádky popisu, součtu a výpočtu. Chcete-li v sestavě zobrazit pouze řádky souhrnu, klikněte na možnost **Zobrazit** a poté na tlačítko **Pouze řádky souhrnu**. Sestava se sbalí a zobrazí se pouze řádky souhrnu. Chcete-li zobrazit řádky podrobností spolu s řádky souhrnu, klikněte na tlačítko **Zobrazit** na poté znovu na tlačítko **Pouze řádky souhrnu**.
 
-## <a name="open-a-financial-report-from-a-previous-month"></a>Otevření finanční sestavy z předchozího měsíce
-Sestavy pro aktuální nebo předchozí měsíc můžete zobrazit, aniž byste museli sestavu generovat znovu. K otevření sestavy pro předchozí měsíc klikněte na možnost **Zobrazit** a potom na tlačítko **Předchozí sestavy**. Zobrazí se seznam předchozích měsíců vygenerované sestavy. Rozbalte měsíc k zobrazení sestavy, vyberte datum a klikněte na tlačítko **OK**. Zobrazí se sestava pro předchozí měsíc. Chcete-li se vrátit k sestavě aktuálního měsíce, klikněte na tlačítko **Storno**.
-
 ## <a name="print-a-financial-report"></a>Tisk finanční sestavy
-Chcete-li vytisknout finanční sestavu, v podokně akcí klikněte na tlačítko **Tisk** a poté proveďte jeden nebo více z následujících kroků, abyste nastavili volby tisku:
+Tisk finanční sestavy vytvoří soubor PDF, který lze poté ručně vytisknout. Chcete-li vytvořit finanční sestavu k tisku, v podokně akcí klikněte na tlačítko **Tisk** a poté proveďte jeden nebo více z následujících kroků, abyste nastavili volby tisku:
 
 -   Chcete-li do vytištěné sestavy zahrnout různé úrovně podrobností, přepněte posuvník do hodnoty **Ano** nebo **Ne**. Pokud sestava používá strom výkaznictví, je možné zahrnout všechny jednotky výkaznictví nebo pouze aktuální jednotku výkaznictví.
 -   Velikost stránky lze nastavit výběrem velikost stránky v seznamu.
 -   Chcete-li nastavit rozvržení stránky, vyberte rozvržení v seznamu. Pokud se má obsah sestavy přizpůsobit vybrané šířce, přepněte posuvník do hodnoty **Ano**.
 -   Chcete-li nastavit okraje stránky, zadejte velikost horního, dolního, levého a pravého okraje v palcích.
 
-Po dokončení nastavení možností tisku sestavu vytisknete kliknutím na tlačítko **Tisk**. Pokud se rozhodnete, že sestavu nechcete tisknout, klikněte na tlačítko **Storno**. Zobrazí se náhled vytištěné sestavy. Můžete vybrat, do které tiskárny se sestava odešle, a rovněž upravit možnosti tisku.
+Po dokončení nastavení možností tisku klikněte na **Tisk** a budete vyzváni, zda si přejete stažení souboru, nebo uložení souboru na OneDrive nebo SharePoint. Pokud se rozhodnete, že nechcete pokračovat, klikněte na tlačítko **Zrušit**. Pokud budete pokračovat, sestava se začne vykreslování na serveru a budete vyzváni ke stažení sestavy ve formátu PDF. Nyní můžete zobrazit sestavu v prohlížeči souborů PDF a odtud můžete vybrat tiskárnu, na kterou sestavu odešlete a provést další změny pro možnosti tisku.
 
 ## <a name="export-a-financial-report"></a>Exportování finanční sestavy
 Chcete-li finanční sestavu exportovat, v podokně akcí klikněte na tlačítko **Exportovat**. Sestava se exportuje do aplikace Microsoft Excel a prohlížeč zobrazí výzvu k otevření nebo uložení exportovaného souboru. V exportované sestavě se použijí nastavení exportu definovaná v návrhu sestavy.    
 
-<a name="additional-resources"></a>Další prostředky
+<a name="additional-resources"></a>Další zdroje
 --------
 
-[Finanční výkaznictví pro Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Finanční výkaznictví](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

@@ -3,7 +3,7 @@ title: Import akreditivu
 description: Tato procedura vás provede procesem importu akreditivu.
 author: kweekley
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1768494182a79d7a33044498c1e768e61d937d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3d5539fbd17c880d8bbadd47444c9cc53fce039c
+ms.sourcegitcommit: 0c1deb100d0bf6dacd14b328968bbc7a9d92583a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313559"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "771224"
 ---
 # <a name="import-letter-of-credit"></a>Import akreditivu
 
@@ -111,8 +111,7 @@ Tato procedura používá ukázkovou společnost USMF.
 1. Přejděte na Pokladna a banka > Akreditivy > Importovat akreditiv a kolekci importu.
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 3. Klikněte na odkaz na vybraném řádku v seznamu.
-    * Ověřte stav importního akreditivu.    
-    *   
+    * Ověřte stav importního akreditivu.     
 4. Zavřete stránku.
 5. Zavřete stránku.
 

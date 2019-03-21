@@ -3,7 +3,7 @@ title: Vyhledávání produktu a zákazníka v pokladním místě (POS)
 description: Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Microsoft Dynamics 365 for Retail ohledně funkce vyhledávání produktu a vyhledávání zákazníka.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313582"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789862"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Vyhledávání produktu a zákazníka v pokladním místě (POS)
 
@@ -69,7 +69,7 @@ Zkušenosti při hledání místních produktů jsou uživatelsky přívětivěj
 
 ## <a name="customer-search"></a>Hledat zákazníka
 
-Vyhledávání zákazníka slouží k vyhledání zákazníků pro různé účely. Pokladníci například mohou chtít zobrazit seznam přání zákazníka nebo historii nákupů, nebo přidat zákazníka do transakce. V případě vyhledání více klíčových slov vrací algoritmus vyhledávání zákazníků všechny zákazníky, kteří odpovídají některému z hledaných klíčových slov. V horní části výsledků se však objevují zákazníci, kteří odpovídají většině klíčových slov. Toto chování je podobné způsobu, kterým zobrazují výsledky jiné vyhledávače. Zobrazují nejprve výsledky, které odpovídají nejvíce vyhledávaným termínům, a poté zobrazují výsledky, které částečně odpovídají vyhledávaným klíčovým slovům. Toto chování pomáhá pokladníkům v situacích, kdy pro své vyhledávání použijí více klíčových slov, ale jedno z klíčových slov má pravopisnou chybu.
+Vyhledávání zákazníka slouží k vyhledání zákazníků pro různé účely. Pokladníci například mohou chtít zobrazit seznam přání zákazníka nebo historii nákupů, nebo přidat zákazníka do transakce. Vyhledávací algoritmus páruje hledané termíny oproti hodnotám přítomným v následujících vlastnostech zákazníka: jméno, e-mail, telefon, číslo věrnostní karty, adresa a číslo účtu. Mezi těmito vlastnostmi poskytuje vlastnost jména největší flexibilitu, pokud jde o vyhledávání více klíčových slov, protože algoritmus vrací všechny zákazníky, kteří odpovídají některému z vyhledávaných klíčových slov, a zákazníci, kteří odpovídají většině klíčových slov se zobrazují v horní části výsledků. Toto chování pomáhá pokladníkům v situacích, kdy hledají zadáním celého jména, ale příjmení a křestní jméno byly při původním zadání zaměněna. Z důvodů výkonu však všechny ostatní vlastnosti zachovávají pořadí klíčových slov vyhledávání, takže pokud klíčová slova vyhledávání neodpovídají pořadí, ve kterém jsou data uložena, nebudou žádné výsledky vráceny.
 
 Ve výchozím nastavení se vyhledávání zákazníků provádí na adresářích zákazníků, které jsou přiřazeny k obchodu. Tento typ vyhledávání se nazývá *vyhledávání místních zákazníků*. Zaměstnanci však mohou také vyhledávat zákazníky globálně. Jinými slovy, mohou vyhledávat ve všech obchodech společnosti a ve všech ostatních právnických osobách. Tento typ vyhledávání se nazývá *vyhledávání vzdálených zákazníků*.
 

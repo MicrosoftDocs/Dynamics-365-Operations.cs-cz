@@ -3,7 +3,7 @@ title: Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Attr
 description: Toto téma popisuje prvky pracovního místa v aplikaci Attract. Také vysvětluje, jakým způsobem vytvořit pracovní místo.
 author: josaw
 manager: AnnBe
-ms.date: 12/21/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
+ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303601"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "772804"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Attract
 
@@ -76,8 +76,23 @@ Další informace o aktivitách, které lze přidat do procesu náboru, naleznet
 
 Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveřejnit jen náborář a správce. Pracovní místo lze zveřejnit na webu Talent Careers (kariérní web systému Dynamics 365 for Talent) nebo LinkedIn. 
 
+Tým Attract průběžně pracuje na partnerství s agregátory vývěsky volných míst. Tento seznam se bude průběžně rozšiřovat.
+
+Další informace o nabídce volných pracovních míst naleznete v tématu [Funkce Kariérní web v aplikaci Attract](career-site.md).
+
 > [!NOTE]
-> Při publikování procesu ve službě LinkedIn je důležité všimnout si tří důležitých věcí.
+> Funkce zveřejnění nabídky volných míst je k dispozici pouze s doplňkem Comprehensive Hiring pro systém Attract.
+
+### <a name="posting-jobs-to-linkedin"></a>Publikování pracovních nabídek na LinkedIn 
+
+Před publikováním pracovní nabídky z aplikace Attract na LinkedIn musí správce přidat ID společnosti LinkedIn a název společnosti LinkedIn v **Nastavení pro správu**. ID společnosti LinkedIn je vyžadováno, aby se zajistilo, že vaše práce publikované z aplikace Attract jsou namapovány na správnou stránku společnosti.
+
+Vaše ID společnosti ve službě LinkedIn je řetězec čísel, který jednoznačně identifikuje vaši společnost na službě LinkedIn. Další informace o vyhledávání ID společnosti na službe LinkedIn naleznete na [webu LinkedIn](https://aka.ms/findID).
+
+Pokud chcete vaši společnost na službě LinkedIn, vyberte **Centrum pro správu** v nabídce **Nastavení**  (symbol ozubeného kola) a pak vyberte kartu **Integrace LinkedIn** . Ve části **připojení ke službě LinkedIn** zadejte ID a název společnosti na službě LinkedIn a uložte nastavení.
+
+> [!NOTE]
+> Při publikování procesu ve službě LinkedIn je důležité všimnout si čtyř důležitých věcí.
 > 1. Pracovní nabídky publikované ve službě LinkedIn se publikují jako pracovní nabídky s omezeným výpisem. Nelze je propagovat na celém webu LinkedIn. Pokud chcete propagovat pracovní nabídky s omezeným výpisem ve službě LinkedIn z Attract, měli byste spolupracovat s LinkedIn a umožnit sbalení pracovní nabídky. Podrobnější informace získáte z následujících odkazů a může vám je poskytnout podpora společnosti LinkedIn.
 >
 >    [Omezené seznamy vs. prémiové nabídky volných míst ke sbalení pracovních nabídek](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
@@ -90,14 +105,10 @@ Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveře
 >
 >    Pokud máte po dokončení tohoto kroku potíže, obraťte se na podporu LinkedIn. 
 > 
+> 1. Publikované pracovní nabídky na službě LinkedIn se objeví na živém webu LinkedIn. Neexistuje žádné testovací prostředí pro publikování pracovních pozic na webu LinkedIn. 
+>
 > 1. Může trvat až 24 hodin, než se nabídky volných míst publikované ve službě LinkedIn zobrazí uchazečům. Důvodem je současný proces dávkového publikování volných míst službou LinkedIn.
 
-Tým Attract průběžně pracuje na partnerství s agregátory vývěsky volných míst. Tento seznam se bude průběžně rozšiřovat.
-
-Další informace o nabídce volných pracovních míst naleznete v tématu [Funkce Kariérní web v aplikaci Attract](./career-site.md).
-
-> [!NOTE]
-> Funkce zveřejnění nabídky volných míst je k dispozici pouze s doplňkem Comprehensive Hiring pro systém Attract.
 
 ## <a name="activate"></a>Aktivovat
 

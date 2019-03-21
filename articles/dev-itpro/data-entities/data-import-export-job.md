@@ -3,7 +3,7 @@ title: Úlohy importu a exportu dat
 description: Použijte pracovní prostor Správa dat k vytvoření a správě úloh importu a exportu dat.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
+ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360203"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "834653"
 ---
 # <a name="data-import-and-export-jobs"></a>Úlohy importu a exportu dat
 
@@ -128,6 +128,9 @@ Organizace však může potřebovat mít týmy zpracovávající faktury podle p
 
 ## <a name="run-the-import-or-export-job"></a>Spuštění úlohy importu nebo exportu
 Spustit úlohu můžete jednou výběrem tlačítka **Importovat** nebo **Exportovat** poté, co nadefinujete úlohu. Chcete-li nastavit opakovanou úlohu, zvolte **Vytvořit opakovanou datovou úlohu**.
+
+[!NOTE]
+Úlohu importu nebo exportu lze spustit asynchronně výběrem tlačítka **Importovat** nebo **Exportovat**. Spuštění v asynchronním režimu používá asynchronní rozhraní v aplikaci Finance and Operations, která se liší od rozhraní dávek. Stejně jako rozhraní dávek však může asynchronní rozhraní projít omezeními a úlohy nelze proto provést okamžitě. Úlohy můžete také provádět synchronně výběrem **Importovat nyní** nebo **Exportovat nyní**. Úloha se spustí ihned a je to užitečné, pokud se asynchronní způsob nebo dávka nespustí z důvodu omezení. Úlohy mohou být provedeny také v dávce výběrem možnosti **Spustit v dávce**. Zdroje dávky podléhají omezení, takže dávková úloha nemusí začít okamžitě. Asynchronní možnost je užitečná, když uživatelé interagují s uživatelským rozhraním a nejsou uživatelé typu power pro pochopení plánování dávky. Použití dávky je alternativní možnost, pokud je třeba exportovat nebo importovat velké objemy. Dávkové úlohy lze naplánovat tak, aby se spouštěly na určité skupině dávek, což umožňuje větší kontrolu z pohledu vyvažování zátěže. Pokud asynchronní možnost a dávka procházejí omezením kvůli vysokému využití zdrojů v systému, lze jako okamžité řešení použít synchronní verzi importu/exportu. Synchronní možnost se spustí okamžitě a zablokuje uživatelské rozhraní, protože probíhá synchronně. Okna prohlížeče musí zůstat otevřené, když probíhá synchronní operace.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Ověření, zda byla úloha spuštěna podle očekávání
 Historie úloh je dostupná pro řešení potíží a analýzu na úlohách importu i exportu. Historie spuštění úloh je organizována podle časových rozsahů.

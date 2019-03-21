@@ -3,7 +3,7 @@ title: Správa rolí a zabezpečení v aplikaci Attract
 description: Toto téma poskytuje informace o zabezpečení datových entit v Microsoft Dynamics 365 for Talent - Attract.
 author: josaw1
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374773"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789690"
 ---
 # <a name="security-and-role-management-in-attract"></a>Správa rolí a zabezpečení v aplikaci Attract
 
@@ -100,14 +100,16 @@ Následující oprávnění se vztahují na data specifická pro práci u uchaze
 | Data nebo akce          | Náborový pracovník | Náborový manažer | Tazatel na pohovoru |
 |-------------------------|-----------|----------------|-------------|
 | Dokumenty žádosti   | Vytváření, čtení, aktualizace a odstranění u prací, u kterých je uživatel v náborovém týmu | Vytváření, čtení, aktualizace a odstranění u prací, u kterých je uživatel v náborovém týmu | Pouze pro čtení |
-| Poznámky k žádosti       | Vytváření, čtení, aktualizace a odstranění u prací, u kterých je uživatel v náborovém týmu | Vytváření, čtení, aktualizace a odstranění u prací, u kterých je uživatel v náborovém týmu | Vytvořit |
+| Poznámky k žádosti       | Vytváření, čtení, aktualizace a odstranění u prací, u kterých je uživatel v náborovém týmu | Vytváření, čtení, aktualizace a odstranění u prací, u kterých je uživatel v náborovém týmu | Pouze pro čtení|
 | Aktivita žádosti    | Zobrazení, pokud je uživatel členem náborového týmu | Zobrazení, pokud je uživatel členem náborového týmu | Pouze pro čtení |
 | Zpětná vazba k žádosti    | Přidání a zobrazení všech zpětných vazeb, pokud je uživatel členem náborového týmu | Přidání a zobrazení všech zpětných vazeb, pokud je uživatel členem náborového týmu | Může přidat zpětnou vazbu\*\* |
 | Odmítnutí žádosti      | Může zamítnout, pokud je uživatel členem náborového týmu | Nepovoleno | Nepovoleno |
 | Postoupit do další fáze           | Může zamítnout, pokud je uživatel členem náborového týmu | Může posunout dál, pokud je uživatel členem náborového týmu | Nepovoleno |
 | Spuštění správy nabídek | Může spustit správu nabídek | Existuje možnost konfigurace pro aktivitu nabídky. | Nepovoleno |
 
-\*\* Možnost konfigurace v [nastavení aktivity zpětné vazby](activities-attract.md#feedback-activity) kontroluje, zda mohou tazatelé na pohovoru zobrazit zpětnou vazbu jeden druhého.
+
+\*\* Možnost konfigurace v [nastavení aktivity zpětné vazby](./activities-attract.md) kontroluje, zda mohou tazatelé na pohovoru zobrazit zpětnou vazbu jeden druhého.
+
 
 ## <a name="process-templates"></a>Šablony procesu
 

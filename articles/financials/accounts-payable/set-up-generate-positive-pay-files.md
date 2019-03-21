@@ -1,9 +1,9 @@
 ---
-title: Nastavení a vygenerování souborů kladných plateb
-description: Tento článek vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb.
+title: Nastavení a generování souborů kladné platby
+description: Toto téma vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dbc512c6d214dc8cf2527ac23103529111896ec5
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346081"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778171"
 ---
-# <a name="set-up-and-generate-positive-pay-files"></a>Nastavení a vygenerování souborů kladných plateb
+# <a name="set-up-and-generate-positive-pay-files"></a>Nastavení a generování souborů kladné platby
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb. 
+Toto téma vysvětluje postup při nastavení kladných plateb a generování souborů kladných plateb. 
 
 Nastavte kladné platby pro generování elektronických seznamů šeků, které jsou dodávány bance. Poté při předložení šeku bance ho banka srovná se seznamem šeků. Pokud šek odpovídá tomu, co má banka má v záznamech v seznamu, banka jej zúčtuje. Pokud šek neodpovídá šeku v seznamu, banka předloží šek ke kontrole.
 
@@ -94,7 +94,7 @@ Soubory kladných plateb jsou vytvořeny pomocí datových entit. Aby bylo možn
           <xsl:value-of select="'
     '" />
           <!--Header End-->
-          <xsl:for-each select="Document/BankPositivePayExportEntity">
+          <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
             <!--Cheque Detail begin-->
             <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
             <xsl:value-of select="','" />
