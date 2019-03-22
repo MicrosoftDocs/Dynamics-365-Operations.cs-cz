@@ -3,7 +3,7 @@ title: Domovská stránka Závazků
 description: Toto téma poskytuje přehled závazků.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/18/2017
+ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f1acf2bade2bb279a35fdf4689bbbcc49e64101f
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302011"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403278"
 ---
 # <a name="accounts-payable-home-page"></a>Domovská stránka Závazků
 
@@ -123,15 +123,17 @@ Následující témata obsahují informace o vyrovnání. Vyrovnání je proces 
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají. 
+Přejděte [poznámky k verzi aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
 
 #### <a name="blogs"></a>Blogy
 
-Názory, novinky a jiné informace o modulu Závazky a jiných řešeních naleznete v blogu [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Existuje mnoho příspěvků o modulu Závazky na [blogu týmu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Závazky, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
+Názory, novinky a jiné informace o závazcích a jiných řešeních naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.
+
+#### <a name="community-blogs"></a>Blogy komunity
+
+[Správa závazků v Dynamics 365 for Finance and Operations](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Průvodci záznamem úloh
 V aplikaci Finance and Operations je k dispozici další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.

@@ -3,7 +3,7 @@ title: Redukční klíče
 description: Tento článek obsahuje příklady nastavení redukčního klíče. Obsahuje informace týkající se různého nastavení redukčního klíče a výsledky každého z nich. Redukční klíč slouží k definování způsobu snížení požadavků prognózy.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e62431a1fdbeb81dda68297f034ee00adece079
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364803"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770909"
 ---
 # <a name="reduction-keys"></a>Redukční klíče
 
@@ -98,6 +98,7 @@ Ve většině případů jsou systémy nastaveny tak, aby transakce snižovaly p
 
    V této prognóze není jasné období mezi daty prognózy: mezi 1. a 2. daty existuje 4denní rozpětí a mezi 2. a 3. daty je 7denní rozpětí. Tato různá rozpětí jsou dynamická období.
 2. Vytvořte řádky prodejní objednávky následovně.
+
    | Datum                             | Množství prodejní objednávky |
    |----------------------------------|----------------------|
    | 15. prosince v minulém roce | 500                  |

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 20ae19fb03acb075b6553b95808779c905bcd31b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 34a31cee817447697b5d7d3e3ea2cfd2865d2bb1
+ms.sourcegitcommit: 2cf5498098e7a5ade1c16eac6df26bc98e4565cd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370098"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "760707"
 ---
 # <a name="retail-customer-invoices-and-return-sales-orders-in-eastern-european-countries"></a>Faktury odběratele a objednávky prodejní vratky ve východoevropských zemích v aplikaci Retail
 
@@ -32,16 +32,13 @@ Toto téma popisuje způsob nastavení informací o fakturách odběratele a obj
 
 Můžete nastavit následující informace pro faktury odběratelů a objednávky prodejní vratky, které jsou generovány v Retail POS.
 
-- Můžete použít skupiny DPH ke zpracování vratek pomocí objednávek prodejní vratky. Přejděte na možnost **Maloobchod > Nastavení centrály > Parametry > Parametry maloobchodu**. Otevřete kartu **Zaúčtování > Faktura** a potom nastavte **Použít skupinu prodejní daně pro vrácení** na **Ano**. 
+- Můžete použít skupiny DPH ke zpracování vratek pomocí objednávek prodejní vratky. Přejděte na možnost **Maloobchod \> Nastavení centrály \> Parametry \> Parametry maloobchodu**. Otevřete kartu **Zaúčtování \> Faktura** a potom nastavte **Použít skupinu prodejní daně pro vrácení** na **Ano**.
 
-  * K určení skupiny DPH pro vrácení, která jsou provedena zákazníkem, vyberte skupinu DPH na stránce **Odběratelé** na pevné záložce **Maloobchod** v poli **Skupina DPH pro vrácení**. Pokud zaúčtujete objednávky prodejní vratky pro odběratele, řádek objednávky prodejní vratky bude aktualizován skupinou DPH pro vrácení, které je zadané ve formuláři **Odběratelé**.
-  
-  * K určení skupiny DPH pro vrácení, která jsou provedena zákazníkem v Retail POS vyberte skupinu DPH na stránce **Obchody** na pevné záložce **Obecné** v poli **Skupina DPH pro vrácení**. Pokud zaúčtujete objednávky prodejní vratky pro odběratele v maloobchodě, bude řádek objednávky prodejní vratky aktualizován skupinou DPH pro vrácení, která jsou zadaná na stránce **Obchody**.
+    * K určení skupiny DPH pro vrácení, která jsou provedena zákazníkem, vyberte skupinu DPH na stránce **Odběratelé** na pevné záložce **Maloobchod** v poli **Skupina DPH pro vrácení**. Pokud zaúčtujete objednávky prodejní vratky pro odběratele, řádek objednávky prodejní vratky bude aktualizován skupinou DPH pro vrácení, které je zadané ve formuláři **Odběratelé**.
+    * K určení skupiny DPH pro vrácení, která jsou provedena zákazníkem v Retail POS vyberte skupinu DPH na stránce **Obchody** na pevné záložce **Obecné** v poli **Skupina DPH pro vrácení**. Pokud zaúčtujete objednávky prodejní vratky pro odběratele v maloobchodě, bude řádek objednávky prodejní vratky aktualizován skupinou DPH pro vrácení, která jsou zadaná na stránce **Obchody**.
 
-- Můžete použít datum zaúčtování maloobchodní faktury odběratele nebo objednávky prodejní vratky jako prodejní datum faktury nebo vratky, pokud faktura nebo vratka nemá výchozí datum prodeje. Přejděte na možnost **Maloobchod > Nastavení centrály > Parametry > Parametry maloobchodu**. Otevřete kartu **Zaúčtování > Faktura** a potom nastavte **Použít datum zaúčtování jako datum prodeje** na **Ano**.
+- Můžete použít datum zaúčtování maloobchodní faktury odběratele nebo objednávky prodejní vratky jako prodejní datum faktury nebo vratky, pokud faktura nebo vratka nemá výchozí datum prodeje. Přejděte na možnost **Maloobchod \> Nastavení centrály \> Parametry \> Parametry maloobchodu**. Otevřete kartu **Zaúčtování \> Faktura** a potom nastavte **Použít datum zaúčtování jako datum prodeje** na **Ano**.
+- Můžete použít číselnou řadu poskytnutou finančními úřady k číslování faktur odběratele a objednávek prodejní vratky pro zákazníky v Lotyšsku a Litvě.
 
-- Můžete použít číselnou řadu poskytnutou finančními úřady k číslování faktur odběratele a objednávek prodejní vratky pro zákazníky v Lotyšsku a Litvě. 
-
-  * Přejděte na **Správa organizace > Číselné řady > Správa čítačů**. Musí existovat záznam, kde **Modul** = **Prodej** a **Typ** = **Faktura**.
-
-  * Přejděte na **Správa organizace > Číselné řady > Nastavení číslování faktur**. Zaškrtněte políčko **Maloobchod** pro pořadové číslo řádku, který se používá k číslování faktur odběratele.
+    * Přejděte na **Správa organizace \> Číselné řady \> Správa čítačů**. Musí existovat záznam, kde **Modul** = **Prodej** a **Typ** = **Faktura**.
+    * Přejděte na **Správa organizace \> Číselné řady \> Nastavení číslování faktur**. Zaškrtněte políčko **Maloobchod** pro pořadové číslo řádku, který se používá k číslování faktur odběratele.

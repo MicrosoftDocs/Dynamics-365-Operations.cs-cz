@@ -3,7 +3,7 @@ title: Přehled věrnostního programu
 description: Toto téma popisuje funkce věrnostního programu v aplikaci Microsoft Dynamics 365 for Retail odpovídající kroky nastavení, které pomáhají maloobchodníkům začít se svými věrnostními programy.
 author: scott-tucker
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bb1a1ff28c846a35858df971e29bb7a551c8012a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9b73c52a72c82c109a1ff874d2369ce9c0b3a6d2
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "320114"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789713"
 ---
 # <a name="loyalty-overview"></a>Přehled věrnostního programu
 
@@ -93,7 +93,11 @@ Retail obsahuje novou funkci věrnostního programu jako součást verze z říj
 
     ![Generování věrnostní karty](./media/Generate%20loyalty%20card.png "Automatické vygenerování čísla věrnostní karty")
 
-- Získané a uplatněné věrnostní body jsou nyní ukládány pro každou transakci a prodejní objednávky proti řádku prodeje, takže je možné refundovat nebo vzít zpět stejnou částku v případě úplného nebo částečného vrácení. Navíc viditelnost bodů na úrovni řádku prodej poskytuje uživatelům kontaktního střediska možnost odpovědět na otázky zákazníků o tom, kolik bodů bylo získáno nebo uplatněno za každý řádek. Před touto změnou byly body odměn vždy přepočítány během vrácení, což vedlo k odlišné částce než původní, pokud se změnila pravidla získávání nebo uplatnění, a také uživatelé kontaktního střediska neměli viditelnost v rozdělení bodů. Body lze zobrazit ve formuláři **Transakce karty** pro každou věrnostní kartu.    
+- Získané a uplatněné věrnostní body jsou nyní ukládány pro každou transakci a prodejní objednávky proti řádku prodeje, takže je možné refundovat nebo vzít zpět stejnou částku v případě úplného nebo částečného vrácení. Navíc viditelnost bodů na úrovni řádku prodej poskytuje uživatelům kontaktního střediska možnost odpovědět na otázky zákazníků o tom, kolik bodů bylo získáno nebo uplatněno za každý řádek. Před touto změnou byly body odměn vždy přepočítány během vrácení, což vedlo k odlišné částce než původní, pokud se změnila pravidla získávání nebo uplatnění, a také uživatelé kontaktního střediska neměli viditelnost v rozdělení bodů. Body lze zobrazit ve formuláři **Transakce karty** pro každou věrnostní kartu. Chcete-li povolit tuto funkci, zapněte konfiguraci **Zaúčtovat věrnostní body pro prodejní řádek** na kartě **Sdílené parametry maloobchodu**  > **Obecné**.
+
+>[!NOTE]
+> Důrazně doporučujeme zapnout tuto funkci, aby bylo zajištěno, že v případě vrácení může být vrácen nebo odebrán správný počet bodů.
+
 - Maloobchodní prodejci nyní mohou určit období připsání pro každý bod odměny. Konfigurace období připsání určí trvání od data získání, po kterém budou k dispozici body odměny pro zákazníky. Neudělené body lze zobrazit ve sloupci **Neudělené body** na stránce **Věrnostní karty**. Maloobchodní prodejci kromě toho mohou definovat maximální limit bodů věrnostní odměny na věrnostní kartu. Toto pole lze použít ke snížení dopadu podvodu s věrnostními body. Po dosažení maximálního počtu bodů odměn nemůže uživatel získat další body. Prodejce se může rozhodnout takovou kartu blokovat, dokud neprošetří možný podvod. Pokud prodejce zjistí podvod, nemůže pouze zablokovat věrnostní kartu zákazníka, ale musí také označit zákazníka jako blokovaného. To se provede nastavením vlastnosti **Blokovat zákazníka pro registraci k věrnostnímu programu** na **Ano** v rámci možnosti **Všichni odběratelé** na pevné záložce **Maloobchod**. Blokovaným zákazníkům nebude možné vystavit věrnostní kartu v žádném z kanálů.
 
     ![Připsání bodů a jejich maximální počet](./media/Vesting%20and%20maximum%20reward%20points.png "Definování připsání bodů a jejich maximálního počtu")
@@ -139,7 +143,8 @@ Po tomto nastavení mohou zákazníci znovu uplatnit své věrnostní body v kon
 > V současné době vynutí systém po uživateli, aby nastavil číselnou řadu pro "ostatní typy aktivit", ale nebude se jednat o povinný krok v příštích verzích. Chcete-li nastavit číselnou řadu, přejděte na **Sdílené maloobchodní parametry > číselné řady** a vyberte číselnou řadu pro **ID typu ostatních věrnostních aktivit**.
 
 - Pokud chcete poskytovat zákaznické služby a efektivně řešit dotazy zákazníků, je důležité, aby měli podkladní přístup k úplnému profilu zákazníka. Ve verzi 10.0 budou pokladní moci zobrazit detaily věrnostní historie spolu s přidruženým věrnostním programem a informacemi o vrstvě v POS.
-- Dodání zdarma nebo se slevou je jedním z vysoce motivačních faktorů pro zákazníky při nákupu online. Abychom umožnili maloobchodním prodejcům nastavení propagačních dodávek ve verzi 10.0, zavádíme nový typ promoakce nazvaný Sleva prahové hodnoty expedice, v němž může prodejce definovat prahové hodnoty, které při splnění kvalifikují zákazníka na bezplatné nebo zlevněné dodání. Například při útratě 35 USD získáte dopravu do dvou dnů zdarma nebo Bezplatná expedice do dvou dnů pro všechny věrné zákazníky Tyto slevy se vztahují pouze k poplatkům za expedici objednávek. Vzhledem k tomu, že maloobchodní prodejce může nastavit více typů poplatků, jako je manipulační nebo instalační poplatek, musí určit, který poplatek je považován za poplatek za expedici. Tato konfigurace je nazvána "Kód dopravného" a je k dispozici na kartě **Zakázky odběratele** na stránce **parametry maloobchodu**. Tato sleva uznává všechny existující standardní možnosti slevy, jako je například umožnění prodejci omezit tyto slevy na poukazy, aby je získal pouze zákazník s poukazy. Tyto slevy také využívají schopnost cenové skupiny ceny k určení nároku na tyto slevy. Například prodejce může spustit tyto promoakce, pouze v online kanálech nebo napříč kanály pro určité skupiny zákazníků, jako jsou věrní zákazníci. Jakmile řádky objednávky s určeným režimem dodání splní definovanou prahovou hodnotu, použije se sleva za doručení a sníží se poplatek za doručení na základě nastavené slevy. 
+- Dodání zdarma nebo se slevou je jedním z vysoce motivačních faktorů pro zákazníky při nákupu online. Abychom umožnili maloobchodním prodejcům nastavení propagačních dodávek ve verzi 10.0, zavádíme nový typ promoakce nazvaný Sleva prahové hodnoty expedice, v němž může prodejce definovat prahové hodnoty, které při splnění kvalifikují zákazníka na bezplatné nebo zlevněné dodání. Například při útratě 35 USD získáte dopravu do dvou dnů zdarma nebo Bezplatná expedice do dvou dnů pro všechny věrné zákazníky Tato funkce využívá novou funkci rozšířených automatických nákladů. Informace naleznete v dokumentaci k rozšířeným automatickým nákladům zde: https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-auto-charges. Tyto rozšířené automatické náklady musí být povoleny, aby fungovala propagace doručení. Lze je povolit z karty **Objednávky zákazníka** na stránce **zákazníka** a zapnout na konfiguraci „Použít rozšířené automatické náklady“. Navíc vzhledem k tomu, že maloobchodní prodejce může nastavit více typů poplatků, jako je manipulační nebo instalační poplatek, musí určit, který poplatek je považován za poplatek za expedici. Přepravní slevy se vztahují pouze k poplatkům za expedici. K určení nákladů jako dopravného přejděte na formulář **Kódy nákladů** přítomný pod možnostmi **Maloobchod** > **IT pro maloobchod** > **Nastavení kanálu** > **Náklady** a povolte zaškrtávací políčko "Dopravné" pro požadované náklady. Nyní můžete přejít na formulář **Maloobchodní dodací mezní sleva** a nastavit slevu.
+    Stejně jako produktové slevy, tato sleva uznává všechny existující standardní možnosti slevy, jako je například umožnění prodejci omezit tyto slevy na poukazy, aby je získal pouze zákazník s poukazy. Tyto slevy také využívají schopnost cenové skupiny ceny k určení nároku na tyto slevy. Například prodejce může spustit tyto promoakce, pouze v online kanálech nebo napříč kanály pro určité skupiny zákazníků, jako jsou věrní zákazníci. Jakmile řádky objednávky s určeným režimem dodání splní definovanou prahovou hodnotu, použije se sleva za doručení a sníží se poplatek za doručení na základě nastavené slevy. 
 
 > [!NOTE]
-> Na rozdíl od jiných časových slev, jako je například množství, jednotlivý produkt, shoda a porovnání a slevy prahové hodnoty, nevytvoří sleva za doručení řádky slevy a úpravy poplatku za dopravu je nutné provést přímo.
+> Na rozdíl od jiných pravidelných slev, jako je například množství, jednotlivý produkt, shoda a porovnání a slevy prahové hodnoty, nevytvoří sleva za doručení řádky slevy. Spíše přímo upraví přepravní poplatek a připojí název slevy k popisu poplatku.

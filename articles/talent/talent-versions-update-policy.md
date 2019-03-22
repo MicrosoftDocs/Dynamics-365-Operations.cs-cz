@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0fa2b7c2dc5b88349cb4012b6b0ba9009a361fa0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 64362ae9e4ebb63ca6da2cd2f41376d1d9047694
+ms.sourcegitcommit: c6af2de37309b574dcb69c9caad436b55136600f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303503"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768478"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Systémové požadavky aplikace Talent a zásady aktualizace
 
@@ -36,8 +36,8 @@ Webová aplikace Microsoft Dynamics 365 for Talent může běžet v kterémkoli 
 
 *   Microsoft Edge (nejnovější veřejně dostupná verze) v systému Windows 10
 *   Internet Explorer 11 v systému Windows 10, Windows 8.1 nebo Windows 7
-*   Google Chrome (nejnovější veřejně dostupná verze) v systému Windows 10, Windows 8.1, Windows 8, Windows 7 nebo tabletu Google Nexus 10
-*   Apple Safari (nejnovější veřejně dostupná verze) v systému Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) nebo 10.12 (Sierra), nebo Apple iPad
+*   Google Chrome (nejnovější veřejně dostupná verze)
+*   Apple Safari (nejnovější veřejně dostupná verze)
 
 Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce softwaru. 
 

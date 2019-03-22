@@ -1,9 +1,9 @@
 ---
 title: Úprava buněk definice řádku
-description: Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.
+description: Toto téma popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
+ms.sourcegitcommit: eb24b63b10c4d06f7550bba9fbd1910ba2719b0a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "323633"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379657"
 ---
 # <a name="modify-row-definition-cells"></a>Úprava buněk definice řádku
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.
+Toto téma popisuje informace, které jsou nutné pro každou buňku v definici řádku ve finanční sestavě, a vysvětluje, jak tyto informace zadat.
 
 ## <a name="specify-a-row-code-in-a-row-definition"></a>Určení kódu řádku v definici řádku
 
@@ -386,7 +386,7 @@ Vyberete-li určitý účet, návrhář sestav obvykle spojí účet a fiskáln�
 Některé účetní systémy podporují atributy účtů a transakcí ve finančních datech. Tyto atributy fungují podobně jako segmenty virtuální účet a mohou obsahovat další informace o vztahu nebo transakce. Tyto doplňkové informace může být účet ID, ID šarže, poštovní směrovací čísla nebo jiné atributy. Pokud váš účetní systém podporuje atributy, můžete atributy účtů nebo transakcí použít jako modifikátory řádku v definici řádku. Pokyny, jak přepsat informace řádku, naleznete v postupu „Přepsání definice sloupce“ v předchozím textu tohoto článku.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Zadání buňky Odkaz na finanční dimenze
-Buňka **Odkaz na finanční dimenze** obsahuje odkazy na finanční data, která mají být zahrnuta v každém řádku sestavy. Tato buňka obsahuje hodnoty dimenzí, ale místo nebo kromě hodnot segmentů a dimenzí lze zadat buňky v listu aplikace Microsoft Excel. Otevřete dialogové okno **Dimenze** kliknutím dvakrát na buňku **Odkaz na finanční dimenze**.
+Buňka **Odkaz na finanční dimenze** obsahuje odkazy na finanční data, která mají být zahrnuta v každém řádku sestavy. Tato buňka obsahuje hodnoty dimenze. Otevřete dialogové okno **Dimenze** kliknutím dvakrát na buňku **Odkaz na finanční dimenze**.
 
 > [!NOTE]
 > Návrhář sestav nemůže vybrat účty, dimenze nebo pole ze systému Microsoft Dynamics ERP, které obsahují kterékoli z následujících vyhrazených znaků: : & \*, \[, \], {, or }. Chcete-li zadat informace pro řádek, který již je v definici řádků, přidejte tyto informace do buňky **Odkaz na finanční dimenze**. Chcete-li přidat nové řádky, které odkazují na finanční data, použijte dialogové okno **Vložit řádky z** pro vytvoření nových řádků v definici sestavy. Název sloupce se změní podle toho, jak je nakonfigurován, jak je znázorněno v následující tabulce.
@@ -394,13 +394,11 @@ Buňka **Odkaz na finanční dimenze** obsahuje odkazy na finanční data, kter�
 | Vybraný typ odkazu       | Popis sloupce Odkaz se změní na tento |
 |----------------------------------|----------------------------------------------------|
 | Finanční dimenze             | Odkaz na finanční dimenze                       |
-| Externí list               | Odkaz na list                                  |
-| Finanční dimenze + list | Odkaz na finanční dimenze + list           |
-| Sestava aplikace Management Reporter       | Sestava aplikace Management Reporter                         |
+| List sestavy                 | Sestava finančního výkaznictví                         |
 
 ### <a name="specify-a-dimension-or-range"></a>Zadání dimenze nebo rozsahu
 
-1. V Návrháři sestav otevřete definici řádků, kterou chcete změnit.
+1. V Návrháři sestav otevřete definici řádku k úpravě.
 2. Dvakrát klikněte na některou buňku ve sloupci **Odkaz na finanční dimenze**.
 3. V dialogovém okně **Dimenze** dvakrát klikněte na buňku pod názvem dimenze.
 4. V dialogovém okně pro dimenzi vyberte položku **Jednotlivec nebo rozsah**.

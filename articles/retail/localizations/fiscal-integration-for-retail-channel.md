@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377128"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773270"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Přehled fiskální integrace pro maloobchodní sítě
 
@@ -30,7 +30,7 @@ ms.locfileid: "377128"
 
 ## <a name="introduction"></a>Úvod
 
-Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Microsoft Dynamics 365 for Retail. Fiskální integrace zahrnuje integraci s různými fiskálními zařízeními a službami, které umožňují fiskální registraci maloobchodního prodeje v souladu s místními fiskálními zákony, které mají za cíl zabránit daňovým podvodům v maloobchodním průmyslu. Zde je několik typických scénářů, které lze pokrýt pomocí fiskální integrace: 
+Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Microsoft Dynamics 365 for Retail. Fiskální integrace zahrnuje integraci s různými fiskálními zařízeními a službami, které umožňují fiskální registraci maloobchodního prodeje v souladu s místními fiskálními zákony, které mají za cíl zabránit daňovým podvodům v maloobchodním průmyslu. Zde je několik typických scénářů, které lze pokrýt pomocí fiskální integrace:
 
 - Zaregistrujte maloobchodní prodej na fiskálním zařízení, které je připojeno k pokladnímu místu Retail (POS), jako je například fiskální tiskárna, a vytiskněte pro zákazníka příjmový doklad.
 - Bezpečně odešlete informace, které souvisejí s prodejem a vráceními, které jsou dokončeny v Retail POS do externí webové službě, kterou provozuje daňový úřad.
@@ -87,6 +87,7 @@ Když je fiskální registrace transakce nebo události úspěšná, v databázi
 
 Fiskální transakce jsou přeneseny do Retail Headquarters podle *úlohy P*, společně s maloobchodními transakcemi. Na záložce s náhledem **Fiskální transakce** stránky **Transakce maloobchodu** uvidíte fiskální transakce, které jsou napojeny na maloobchodní transakce.
 
+
 Fiskální transakce ukládá následující podrobnosti:
 
 - Podrobnosti procesu fiskální registrace (proces, skupina konektorů, konektor atd.). Též ukládá sériové číslo fiskálního zařízení do pole **Číslo pokladny**, pokud jsou tyto informace zahrnuty do fiskální odezvy.
@@ -115,4 +116,5 @@ Následující funkce fiskální integrace je k dispozici také v sadě Retail S
 
 - [Digitální podpis pro Francii](emea-fra-cash-registers.md)
 - [Digitální podpis pro Norsko](emea-nor-cash-registers.md)
-- [Ukázka integrace kontrolní jednotky pro Švédsko](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+- [Ukázka integrace kontrolní jednotky pro Švédsko](./retail-sdk-control-unit-sample.md)
+

@@ -3,7 +3,7 @@ title: Synchronizujte pracovní příkazy s projektem ze služby Field Service d
 description: Toto téma popisuje šablony a základní úlohu, které se používají k synchronizaci pracovních příkazů v s číslem projektu z Microsoft Dynamics 365 for Field Service do prodejních objednávek v Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b61411a5a235e2d0aad8bb25ae4a3bfcf1248d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ca01b085315d916a18c512af28fc7534ce76ee8
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329843"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836435"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-finance-and-operations"></a>Synchronizujte pracovní příkazy s projektem ze služby Field Service do aplikace Finance and Operations.
 
@@ -34,9 +34,11 @@ Toto téma popisuje šablony a základní úlohu, které se používají k synch
 
 [![Synchronizace obchodních procesů mezi aplikacemi Finance a Operations and Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-Používaná šablona **Produkty Field Service (z aplikace Finance and Operations do služby Field Service)** je založena na šabloně **Produkty (z aplikace Finance and Operations do Sales) – Direct** z modulu Prospect to Cash. Další informace naleznete v tématu [Produkty (Finance and Operations do Sales) – přímé](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+Používaná šablona **Pracovní příkazy s projektem (Field Service do Fin and Ops)** je založena na šabloně **Pracovní příkazy (Field Service to Fin and Ops)**. Více informací naleznete v části [Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
-Toto téma pouze popisuje rozdíl mezi šablonami **Produkty Field Service (Finance and Operations do Field Service)** a je založeno na šabloně **Field Service (Finance and Operations do Sales) – přímé**.
+V tomto tématu jsou popsány pouze rozdíly mezi dvěma šablonami:
+- **Pracovní příkazy s projektem (Field Service do Fin and Ops)**
+- **Pracovní příkazy (Field Service do Fin and Ops)**
 
 Hlavní rozdíl je, že tato šablona obsahuje mapování čísla projektu přirazeného pracovnímu příkazu ve službě Field Service, přičemž je zajištěno, že prodejní objednávky vytvořené v aplikaci Finance and Operations zahrnují číslo projektu a že u souvisejícího projektu může být provedena fakturace. Kromě toho šablona používá pokročilé dotazování a filtrování.
 
@@ -44,7 +46,7 @@ Hlavní rozdíl je, že tato šablona obsahuje mapování čísla projektu přir
 
 **Název šablony v integraci dat:**
 
-- Pracovní příkazy s projektem (Field Service do Finance and Operations)
+- Pracovní příkazy s projektem (Field Service do Fin and Ops)
 
 **Název úkolu v projektu integrace dat:**
 
@@ -60,18 +62,18 @@ Pole **Externí projekt** bylo přidáno do entity pracovního příkazu. Toto p
 
 Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderheader"></a>Pracovní příkazy s projektem (Field Service do Finance and Operations): WorkOrderHeader
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheader"></a>Pracovní příkazy s projektem (Field Service do Fin and Ops): WorkOrderHeader
 
 [![Mapování šablony v integraci dat](./media/FSWOP1.png)](./media/FSWOP1.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderheaderproject"></a>Pracovní příkazy s projektem (Field Service do Finance and Operations): WorkOrderHeaderProject
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderheaderproject"></a>Pracovní příkazy s projektem (Field Service do Fin and Ops): WorkOrderHeaderProject
 
 [![Mapování šablony v integraci dat](./media/FSWOP2.png)](./media/FSWOP2.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderproduct"></a>Pracovní příkazy s projektem (Field Service do Finance and Operations): WorkOrderProduct
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderproduct"></a>Pracovní příkazy s projektem (Field Service do Fin and Ops): WorkOrderProduct
 
 [![Mapování šablony v integraci dat](./media/FSWOP3.png)](./media/FSWOP3.png)
 
-### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderservice"></a>Pracovní příkazy s projektem (Field Service do Finance and Operations): WorkOrderService
+### <a name="work-orders-with-project-field-service-to-fin-and-ops-workorderservice"></a>Pracovní příkazy s projektem (Field Service do Fin and Ops): WorkOrderService
 
 [![Mapování šablony v integraci dat](./media/FSWOP4.png)](./media/FSWOP4.png)

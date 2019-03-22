@@ -3,7 +3,7 @@ title: Omnikanálové rozšířené automatické náklady
 description: Toto téma popisuje funkce pro správu dalších nákladů objednávky pro objednávky maloobchodní sítě pomocí funkcí rozšířených automatických nákladů.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a980ae9571fb47522d3966dc172b2343641b827e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b63a1bb8791ab3f0c71a2fd03677e7d0bf71e62
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345552"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789764"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanálové rozšířené automatické náklady
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Toto téma obsahuje informace o konfiguraci a nasazení funkce rozšířených automatických nákladů, která je k dispozici v aplikaci Dynamics 365 for Retail verze 10.0.
@@ -49,7 +48,7 @@ Na stránce **Maloobchod \> Nastavení centrály \> Parametry \> Parametry maloo
 
 ![Parametr rozšířených automatických nákladů](media/advancedchargesparameter.png)
 
-Když jsou povoleny rozšířené automatické náklady, uživatelé jsou nadále vyzýváni k ručnímu zadání nákladů na terminálu POS při vytváření objednávky odběratele expedovat vše a expedovat vybrané. Náklady objednávky POS jsou systematicky vypočítávány a přidávány k transakci POS (pokud je nalezena odpovídající tabulka automatických nákladů, která odpovídá kritériu vytvářené objednávky). Uživatelé mohou přidávat nebo udržovat náklady záhlaví nebo na úrovni řádku ručně prostřednictvím nově přidaných operací POS, které lze přidat do rozvržení obrazovky POS.  
+Když jsou povoleny rozšířené automatické náklady, uživatelé nejsou nadále vyzýváni k ručnímu zadání nákladů na terminálu POS při vytváření objednávky odběratele expedovat vše a expedovat vybrané. Náklady objednávky POS jsou systematicky vypočítávány a přidávány k transakci POS (pokud je nalezena odpovídající tabulka automatických nákladů, která odpovídá kritériu vytvářené objednávky). Uživatelé mohou přidávat nebo udržovat náklady záhlaví nebo na úrovni řádku ručně prostřednictvím nově přidaných operací POS, které lze přidat do rozvržení obrazovky POS.  
 
 Pokud jsou povoleny rozšířené automatické náklady, existující **Parametry maloobchodu** pro **Kód dopravného** a **Refundovat dopravné** se již nepoužívají. Tyto parametry jsou použitelné pouze tehdy, když je parametr **Použít rozšířené automatické náklady** nastaven na **Ne**.
 
@@ -67,6 +66,8 @@ Nové operace jsou následující.
 - **143 - Přepočítat náklady** – Použijte tuto operaci k provedení úplného přepočítání nákladů pro prodejní transakci. Veškeré dříve uživatelem přepsané automatické náklady budou přepočítány na základě aktuální konfigurace košíku.  
 
 Jako u všech operací POS lze provést konfigurace zabezpečení, aby bylo požadováno schválení manažerem za účelem provedení operace.
+
+Je důležité poznamenat, že výše uvedené operace POS lze také přidat k rozvržení POS, i v případě, když je parametr **Použít rozšířené automatické náklady** zakázán. V tomto scénáři budou organizace stále přidávat další výhody v tom, že budou moci zobrazit manuálně přidané náklady a upravovat je pomocí operace **Spravovat náklady**. Uživatel může rovněž použít operace **Přidat náklady záhlaví** a **Přidat náklady řádku** pro POS transakce, i když je parametr **Použít rozšířené automatické náklady** zakázán. Operace **Přepočítat náklady** má nižší funkci, je-li použita při zákazu možnosti **Použít rozšířené automatické náklady**. V tomto scénáři by nebylo nic přepočítáno a veškeré náklady ručně přidané do transakce by se pouze resetovaly na 0,00 USD.
 
 ## <a name="use-case-examples"></a>Použití příkladů případu
 V této části jsou uvedeny ukázkové příklady použití, které vám pomohou porozumět konfiguraci a použití automatických nákladů a vedlejších nákladů v rámci objednávek maloobchodní sítě. Tyto příklady ilustrují chování aplikace při povolení parametru **Použít automatické rozšířené náklady**.
@@ -207,3 +208,7 @@ Doporučujeme, aby organizace rovněž přidala volná textová pole do zápatí
 ### <a name="preventing-charges-from-being-calculated-until-the-pos-order-is-completed"></a>Zabránění výpočtu nákladů do dokončení objednávky POS
 
 Některé organizace mohou chtít počkat, než uživatel dokončí přidání všech prodejních řádků k transakci POS před výpočtem nákladů. Chcete-li zabránit výpočtu nákladů, když se k transakci POS přidávají položky, zapněte parametr **Ruční výpočet nákladů** ve **funkčním profilu** používaném obchodem. Povolení tohoto parametru vyžaduje, aby uživatel POS použil operaci **Vypočítat součty** po dokončení přidání produktů k transakci POS. Operace **Vypočítat součty** poté spustí výpočet jakýchkoliv automatických nákladů pro záhlaví nebo řádky objednávky podle potřeby.
+
+### <a name="charges-override-reports"></a>Sestavy přepsání nákladů
+
+Pokud uživatelé ručně přepíší vypočtené náklady nebo přidají ruční náklady do transakce, budou tato data dostupná pro audit v sestavě **Historie přespání nákladů**. Sestava se nalézá v možnostech **Maloobchod \> Dotazy a sestavy \> Historie přepsání nákladů**.  Je důležité poznamenat, že data potřebná pro tuto sestavu se importují z databáze maloobchodní sítě do HQ prostřednictvím úloh plánování distribuce "P". Informace o přepsáních právě provedených v POS proto nemusí být okamžitě k dispozici v této sestavě, dokud tato úloha nenahraje data transakce obchodu do HQ. 

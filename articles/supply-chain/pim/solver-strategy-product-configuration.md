@@ -3,7 +3,7 @@ title: Strategie řešitele pro konfiguraci produktů
 description: Toto téma popisuje, jak můžete použít strategii řešitele ke zlepšení výkonu konfigurace produktu.
 author: cvocph
 manager: AnnBe
-ms.date: 01/02/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0abb9313ec62cfdfe3bf7c810e2143dcf502bf9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
+ms.sourcegitcommit: 0ceee30a60468a01db6f5b3526dcb9c6abc9d4dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "351141"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "403909"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Strategie řešitele pro konfiguraci produktů
 
@@ -62,8 +62,8 @@ Následující tabulka poskytuje doporučení o strategii řešitele k použití
 | Strategie řešitele      | Použití strategie v tomto scénáři |
 |----------------------|-----------------------------------|
 | Výchozí              | Strategie **Výchozí** byla optimalizována pro řešení modelů, které závisí na omezení tabulky. Studie implementace odběratele ukázaly, že tato strategie je nejúčinnější strategií v situacích, kdy jsou omezení tabulky často používány. |
-| Minimální doména jako první | Strategie **Minimální doména jako první** a **Shora dolů** spolu blízce souvisí. Studie implementace odběratele ukázaly, že strategie **Shora dolů**, která byla uvedena v CU8, překonává strategie **Minimální doména jako první**. Avšak strategie jako **Minimální doména jako první** se uchová v produktu pro zpětnou kompatibilitu. Obě tyto strategie řešitele se ukázaly být jako efektivnější při řešení modelů, které obsahují několik aritmetických výrazů, kde se nepoužívají žádná omezení tabulky. V některých případech však strategie **Výchozí** překonává výkonem tyto dvě strategie. Nezapomeňte vyzkoušet všechny strategie. |
-| Shora dolů             | Strategie **Minimální doména jako první** a **Shora dolů** spolu blízce souvisí. Studie implementace odběratele ukázaly, že strategie **Shora dolů**, která byla uvedena v CU8, překonává strategie **Minimální doména jako první**. Avšak strategie jako **Minimální doména jako první** se uchová v produktu pro zpětnou kompatibilitu. Obě tyto strategie řešitele se ukázaly být jako efektivnější při řešení modelů, které obsahují několik aritmetických výrazů, kde se nepoužívají žádná omezení tabulky. V některých případech však strategie **Výchozí** překonává výkonem tyto dvě strategie. Nezapomeňte vyzkoušet všechny strategie. |
+| Minimální domény jako první | Strategie **Minimální doména jako první** a **Shora dolů** spolu blízce souvisí. Studie implementace odběratele ukázaly, že strategie **Shora dolů** překonává strategii **Minimální doména jako první**. Avšak strategie jako **Minimální doména jako první** se uchová v produktu pro zpětnou kompatibilitu. Obě tyto strategie řešitele se ukázaly být jako efektivnější při řešení modelů, které obsahují několik aritmetických výrazů, kde se nepoužívají žádná omezení tabulky. V některých případech však strategie **Výchozí** překonává výkonem tyto dvě strategie. Nezapomeňte vyzkoušet všechny strategie. |
+| Shora dolů             | Strategie **Minimální doména jako první** a **Shora dolů** spolu blízce souvisí. Studie implementace odběratele ukázaly, že strategie **Shora dolů** překonává strategii **Minimální doména jako první**. Avšak strategie jako **Minimální doména jako první** se uchová v produktu pro zpětnou kompatibilitu. Obě tyto strategie řešitele se ukázaly být jako efektivnější při řešení modelů, které obsahují několik aritmetických výrazů, kde se nepoužívají žádná omezení tabulky. V některých případech však strategie **Výchozí** překonává výkonem tyto dvě strategie. Nezapomeňte vyzkoušet všechny strategie. |
 | Z3                   | Doporučujeme používat strategii **Z3** jako výchozí strategii řešitele. Pokud máte obavy o výkon a škálovatelnost, můžete vyhodnotit další strategie. |
 
 ## <a name="additional-resources"></a>Další zdroje

@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Vítejte v Dynamics 365 for Talent
-description: Aplikace Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn.
+description: 'Aplikace Talent zjednodušuje mnoho rutinních administrativních úkolů a automatizuje řadu procesů souvisejících s pracovníky ve vaší organizaci. Mezi tyto procesy spadá udržení zaměstnanců, správa zaměstnaneckých výhod, školení, hodnocení výkonu a správa změn.'
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-365-talent
-ms.technology: ''
+ms.technology: null
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: 'Core, Operations, Talent'
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "301997"
+ms.search.validFrom: '2016-02-28'
+ms.dyn365.ops.version: 'AX 7.0.0, Talent July 2017 update'
 ---
+
 # <a name="welcome-to-dynamics-365-for-talent"></a>Vítejte v Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
@@ -79,7 +75,7 @@ Můžete nastavit plány pro efektivní a spravedlivé řízení kompenzací, st
 
 ## <a name="develop-and-train-employees"></a>Rozvoj a zaškolení zaměstnanců
 
-Abyste pomohli vašim zaměstnancům dosahovat jejich kariérních cílů za současného plnění důležitých firemních potřeb, můžete stanovovat cíle, vytvářet hodnocení výkonnosti a sledovat zpětnou vazbu. Pro rozvoj potřebných zaměstnaneckých dovedností můžete nastavovat instruktory, typy kurzů, popisy kurzů, agendy, cvičení a relace před přiřazením instruktora ke kurzu nebo registrací osoby do kurzu. Instruktoři musí již existovat jako pracovníci, uchazeči nebo kontakty.
+Chcete-li pomoci svým zaměstnancům dosáhnout svých kariérních cílů a přitom poskytovat kritické obchodní potřeby, můžete nastavit cíle, vytvořit hodnocení výkonu a sledovat zpětnou vazbu. Abyste pomohli zaměstnancům rozvíjet potřebné schopnosti, můžete nastavit instruktory, typy kurzů, kurzy, popisy kurzů, agendy, cvičení a relace před přiřazením instruktora ke kurzu nebo registrací osoby do kurzu. Instruktoři musí již existovat jako pracovníci, uchazeči nebo kontakty.
 
 -   [Řízení výkonnosti](performance-management-overview.md)
 -   [Sladění dovedností zaměstnanců s potřebami společnosti](skills.md)

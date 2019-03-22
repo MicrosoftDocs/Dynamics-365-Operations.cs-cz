@@ -3,7 +3,7 @@ title: Vytvoření, schválení a podpis nabídek
 description: Toto téma podrobně popisuje postup pro vytvoření, schválení a podepsání nabídky uchazeče pomocí aplikace Dynamics 365 for Talent.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ad7ce1e089d2a8b5c52e7cd01bb3d89070004b1
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303623"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768898"
 ---
 # <a name="creating-approving-and-signing-offers"></a>Vytvoření, schválení a podpis nabídek
 
@@ -104,15 +104,20 @@ Existuje několik akcí, které lze provést před odesláním nabídky uchazeč
 
 -  Mohou existovat další dokumenty, které mají být zahrnuty do procesu přijetí nabídky. Budete mít možnost uvést požadovaný typ dokumentu.
 
-- Možnost elektronického podpisu Pokud byla jako preferovaná metoda elektronického podpisu vybrána Adobe Sign, musí si autoři nabídky přidat licenci Adobe Sign. To lze provést dvěma způsoby. Přejděte na uživatelské **nastavení** v části **nabídka** pod **připojení** připojit **Adobe Sign**. Případně se zobrazí výzva k připojení nabídky odeslání na obrazovku uchazeče, pokud nebylo připojení navázáno na základě uživatelského nastavení. 
+- Možnost elektronického podpisu: Existují dva způsoby, jak připojit poskytovatele elektronického podpisu podle vašeho výběru. Přejděte na **Nastavení uživatele** v části **Nabídka** pod možností **Připojení** a připojte se k **Adobe Sign** nebo **DocuSign**. Případně se zobrazí výzva k připojení stránky **Odeslání nabídky kandidátovi**, pokud nebylo připojení navázáno na základě uživatelského nastavení. Účet elektronického podpisu je třeba připojit pouze jednou. Stejná uživatelská licence se použije pro všechny budoucí nabídky balíčků, které bude odesílat stejný uživatel. 
 
-> [!NOTE]
-> Stačí, když uživatelé připojí účty Adobe Sign jednou. Stejná uživatelská licence se použije pro všechny budoucí nabídky balíčků, které bude odesílat stejný uživatel. 
+### <a name="adobe-sign"></a>Adobe Sign
+Pokud byla jako preferovaná metoda elektronického podpisu vybrána Adobe Sign, musí si autoři nabídky přidat licenci Adobe Sign v tomto kroku. 
+
+### <a name="docusign"></a>DocuSign
+Pokud byla jako preferovaná metoda elektronického podpisu vybrána DocuSign, musí si autoři nabídky přidat licenci DocuSign. Po přihlášení se výchozí účet a oprávnění spojená s profilem uživatele DocuSign připojí k aplikaci Talent Attract. 
 
 -  Podle potřeby můžete zobrazit a upravit šablonu e-mailů.
 
 Když je nabídka připravena a kliknete na tlačítko **Odeslat uchazeči**, uchazeč obdrží e-mail, že nabídka čeká na kontrolu.
 
+>[!NOTE]
+> Pokud používáte Adobe Sign nebo DocuSign a dojde k chybě při odeslání nabídky kandidátovi, zkuste odpojit a opětovně připojit účet uživatele elektronického podpisu z **uživatelského nastavení**. Pokud problém přetrvává, obraťte se na naši podporu pomocí odkazu **Nahlásit problém**.
 
 ## <a name="candidates-actions-after-receiving-an-offer"></a>Akce uchazeče po přijetí nabídky
 

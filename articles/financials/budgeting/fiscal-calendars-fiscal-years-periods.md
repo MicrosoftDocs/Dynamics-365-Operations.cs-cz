@@ -3,7 +3,7 @@ title: Fiskální kalendář, fiskální roky a období
 description: Tento článek popisuje fiskální kalendáře, fiskální roky a období a způsoby jejich využití pro právnické osoby, dlouhodobý majetek a tvorbu rozpočtu.
 author: aprilolson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 01f8f939079d55d5a75d1a4b1fd718bf2a3f9700
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361652"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778194"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Fiskální kalendář, fiskální roky a období
 
@@ -43,7 +43,7 @@ Období uzávěrky slouží k oddělení transakcí v hlavní knize, které jsou
 Při vytváření období uzávěrky vyberte období, které má stav Otevřené a které obsahuje data, která chcete použít. Nové období uzávěrky zkopíruje počáteční a koncová data z existujícího období. Původní období bude nadále existovat. Vyberte například Období 12, což je poslední období fiskálního roku s daty od 1. do 31. srpna. Zadejte název období uzávěrky, jako např. Uzavření. Po vytvoření nového období uzávěrky nyní máte původní období a období uzávěrky. Obě mají data zahájení 1. srpna a končí 31. srpna.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Výběr fiskálních kalendářů pro hlavní knihy, dlouhodobý majetek a rozpočtové cykly
-Fiskální kalendáře se používají pro odpis dlouhodobého majetku finanční transakce a rozpočtové cykly. Když vytváříte fiskální kalendář můžete ho použít pro několik účelů. Můžete vybrat fiskální kalendář pro oceňovací model nebo knihu odpisů, a udělat z něj kalendář dlouhodobého majetku. Můžete vybrat fiskální kalendář pro hlavní knihu a udělat z něj kalendář hlavní knihy. A můžete vybrat fiskální kalendář pro rozpočtový cyklus a udělat z něj kalendář rozpočtu. Pro všechny tyto možnosti můžete používat stejný fiskální kalendář.
+Fiskální kalendáře se používají pro odpis dlouhodobého majetku finanční transakce a rozpočtové cykly. Když vytváříte fiskální kalendář můžete ho použít pro několik účelů. Můžete vybrat fiskální kalendář pro knihu dlouhodobého majetku, a udělat z něj kalendář dlouhodobého majetku. Můžete vybrat fiskální kalendář pro hlavní knihu a udělat z něj kalendář hlavní knihy. A můžete vybrat fiskální kalendář pro rozpočtový cyklus a udělat z něj kalendář rozpočtu. Pro všechny tyto možnosti můžete používat stejný fiskální kalendář.
 
 ### <a name="select-a-fiscal-calendar-for-your-legal-entity"></a>Výběr fiskálního kalendáře pro právnickou osobu
 
@@ -51,7 +51,7 @@ Vyberte fiskální kalendář, který chcete používat pro hlavní knihu pro va
 
 ### <a name="select-a-fiscal-calendar-for-fixed-assets"></a>Výběr fiskálního kalendáře pro dlouhodobý majetek
 
-Můžete vybrat fiskální kalendář pro oceňovací model nebo knihu odpisů a tenteo fiskální kalendář se bude používat pro dlouhodobý majetek, který používá vybraný oceňovací model nebo knihu odpisů. Můžete vybírat ze všech fiskálních kalendářů definovaných na stránce Fiskální kalendáře.
+Můžete vybrat fiskální kalendář pro knihu dlouhodobého majetku a tento fiskální kalendář se bude používat pro dlouhodobý majetek, který používá vybranou knihu. Můžete vybírat ze všech fiskálních kalendářů definovaných na stránce Fiskální kalendáře.
 
 ### <a name="define-budget-cycle-time-spans"></a>Definice délky rozpočtového cyklu
 
