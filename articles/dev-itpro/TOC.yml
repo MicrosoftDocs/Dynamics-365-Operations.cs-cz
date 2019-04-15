@@ -278,7 +278,7 @@ items:
         href: extensibility/class-extensions.md
       - name: Rozšíření tříd prostřednictvím method wrapping a Chain of Command
         href: extensibility/method-wrapping-coc.md
-      - name: Pokyny k názvům pro rozšíření modelu
+      - name: Pokyny k názvům pro rozšíření
         href: extensibility/naming-guidelines-extensions.md
       - name: Rozvolnění omezení modelu, aby bylo možné provést refactoring nadměrných vrstev do rozšíření
         href: extensibility/refactoring-over-layering.md
@@ -374,6 +374,28 @@ items:
       href: perf-test/continuous-build-test-automation.md
     - name: Filtrování SysTest pomocí třídy a atributů metody
       href: perf-test/systest-filtering.md
+    - name: Knihovna akceptačních testů
+      href: perf-test/acceptance-test-library.md
+    - name: Navigační koncepty
+      href: perf-test/concepts-navigation.md
+    - name: Metody testování dat
+      href: perf-test/test-data-methods.md
+    - name: Entity v knihovně akceptačních testů
+      href: perf-test/concepts-entities.md
+    - name: Příkazy knihovny akceptačních testů
+      href: perf-test/concepts-commands.md
+    - name: Autoři v knihovně akceptačních testů
+      href: perf-test/concepts-creators.md
+    - name: Dotazy v knihovně akceptačních testů
+      href: perf-test/concepts-queries.md
+    - name: Třídy specifikace
+      href: perf-test/concepts-specifications.md
+    - name: Průvodce generováním kódu knihovny akceptačních testů
+      href: perf-test/code-generation-wizard.md
+    - name: Osvědčené postupy pro knihovnu akceptačních testů
+      href: perf-test/atl-best-practices.md
+    - name: Časté dotazy
+      href: perf-test/atl-faq.md
   - name: Platnost od
     href: dev-tools/date-effectivity.md
   - name: ISV licence
@@ -451,6 +473,8 @@ items:
       href: user-interface/control-checklist.md
   - name: Zprávy
     items:
+    - name: Popisky funkcí
+      href: user-interface/feature-callouts.md
     - name: Dialogová okna posuvníku a MessageBox
       href: user-interface/slider-messagebox.md
     - name: API pro centrum zpráv, panel zpráv a podrobnosti o zprávách
@@ -920,7 +944,7 @@ items:
       href: deployment/apply-deployable-package-system.md
     - name: Použití aktualizací a rozšíření na komponenty kanálu Retail hostované v cloudu
       href: deployment/Update-retail-channel.md
-    - name: Inicializace komponent kanálu Retail hostovaných v cloudu
+    - name: Inicializovat Retail Cloud Scale Unit
       href: deployment/Initialize-Retail-Channels.md
   - name: Místní nasazení
     href: deployment/on-premises-deployment-landing-page.md
@@ -1044,7 +1068,7 @@ items:
     items:
     - name: Proces přechodu na nejnovější aktualizaci
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Aktualizace prostředí z verze 8.0 na 8.1
+    - name: Aktualizace prostředí z verze 8.0 na 8.1.X/10.X
       href: migration-upgrade/appupdate-80-81.md
     - name: Zásady životního cyklu softwaru a cloudová vydání
       href: migration-upgrade/versions-update-policy.md
@@ -1133,6 +1157,12 @@ items:
       href: sysadmin/runby.md
     - name: Dávková úloha pro zpracování defragmentace SQL indexu
       href: sysadmin/batch-job-SQL-defragmentation.md
+    - name: Konfigurace dávkových výstrah
+      href: sysadmin/alerts.md
+    - name: Vylepšené dávkové formuláře
+      href: sysadmin/enhanced-forms.md
+    - name: Vyčištění historie dávek
+      href: sysadmin/batch-history-cleanup.md
   - name: Poradce při optimalizaci
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1229,8 +1259,10 @@ items:
     items:
     - name: Obnovení pro účely školení
       href: database/dbmovement-scenario-general-refresh.md
-    - name: Ladění a diagnostika
+    - name: Ladění kopie produkční databáze
       href: database/dbmovement-scenario-debugdiag.md
+    - name: Export kopie standardní databáze akceptačního testování uživatele
+      href: database/dbmovement-scenario-exportuat.md
     - name: Propagace zlaté konfigurace
       href: database/dbmovement-scenario-goldenconfig.md
     - name: Destruktivní testování
@@ -1251,9 +1283,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Správa zkušeností s podporou Finance and Operations
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: 93081e4ccc64b68ae8f5cb3aa0f0c499bc1a426b
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773795"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "976005"
