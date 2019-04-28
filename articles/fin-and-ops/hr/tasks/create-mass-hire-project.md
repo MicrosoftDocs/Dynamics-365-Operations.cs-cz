@@ -1,7 +1,7 @@
 ---
 title: Vytvoření projektu masového pronájmu
 description: Tento postup vás provede nastavením procesu hromadného zařazování zaměstnanců.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -10,41 +10,41 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMMassHireProject,  HRMMassHireLineCreate, HcmJobLookup
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f352435f8ad04f676aa786aae4669e3586a5715c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ea0f4638a968d2aecf4e3bb27acbd19e6455a8b3
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "328210"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "856731"
 ---
-# <a name="create-a-mass-hire-project"></a><span data-ttu-id="bedeb-103">Vytvoření projektu masového pronájmu</span><span class="sxs-lookup"><span data-stu-id="bedeb-103">Create a mass hire project</span></span>
+# <a name="create-a-mass-hire-project"></a><span data-ttu-id="1bd62-103">Vytvoření projektu masového pronájmu</span><span class="sxs-lookup"><span data-stu-id="1bd62-103">Create a mass hire project</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="bedeb-104">Tento postup vás provede nastavením procesu hromadného zařazování zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="bedeb-104">This procedure walks through the process of setting up a mass hire project.</span></span> <span data-ttu-id="bedeb-105">Náborový zaměstnanec může využívat projekty hromadného zařazení pro snadné vytváření více pozic a zařazení většího počtu pracovníků na tyto pozice.</span><span class="sxs-lookup"><span data-stu-id="bedeb-105">A recruiter can use mass hire projects to easily create multiple positions and hire a number of workers into those positions.</span></span> <span data-ttu-id="bedeb-106">Tento postup zahájíte tak, že přejděte na Lidské zdroje > Nábor > Projekty hromadného zařazení.</span><span class="sxs-lookup"><span data-stu-id="bedeb-106">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span> <span data-ttu-id="bedeb-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="bedeb-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="1bd62-104">Tento postup vás provede nastavením procesu hromadného zařazování zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="1bd62-104">This procedure walks through the process of setting up a mass hire project.</span></span> <span data-ttu-id="1bd62-105">Náborový zaměstnanec může využívat projekty hromadného zařazení pro snadné vytváření více pozic a zařazení většího počtu pracovníků na tyto pozice.</span><span class="sxs-lookup"><span data-stu-id="1bd62-105">A recruiter can use mass hire projects to easily create multiple positions and hire a number of workers into those positions.</span></span> <span data-ttu-id="1bd62-106">Tento postup zahájíte tak, že přejděte na Lidské zdroje > Nábor > Projekty hromadného zařazení.</span><span class="sxs-lookup"><span data-stu-id="1bd62-106">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span> <span data-ttu-id="1bd62-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="1bd62-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="bedeb-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="bedeb-108">Click New.</span></span>
-2. <span data-ttu-id="bedeb-109">Zadejte hodnotu do pole Projekt hromadného zařazení.</span><span class="sxs-lookup"><span data-stu-id="bedeb-109">In the Mass hire project field, type a value.</span></span>
-3. <span data-ttu-id="bedeb-110">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="bedeb-110">In the Description field, type a value.</span></span>
-4. <span data-ttu-id="bedeb-111">Zadejte datum do pole Počátek projektu.</span><span class="sxs-lookup"><span data-stu-id="bedeb-111">In the Project start field, enter a date.</span></span>
-5. <span data-ttu-id="bedeb-112">Zadejte datum do pole Konec projektu.</span><span class="sxs-lookup"><span data-stu-id="bedeb-112">In the Project end field, enter a date.</span></span>
-6. <span data-ttu-id="bedeb-113">Klikněte na Otevřít projekt.</span><span class="sxs-lookup"><span data-stu-id="bedeb-113">Click Open project.</span></span>
-7. <span data-ttu-id="bedeb-114">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="bedeb-114">Click Yes.</span></span>
-8. <span data-ttu-id="bedeb-115">Klikněte na Vytvořit pozice.</span><span class="sxs-lookup"><span data-stu-id="bedeb-115">Click Create positions.</span></span>
-9. <span data-ttu-id="bedeb-116">Do pole Množství zadejte počet pozic, které chcete vytvořit</span><span class="sxs-lookup"><span data-stu-id="bedeb-116">In the Quantity field, enter the number of positions that you want to create</span></span>
-    * <span data-ttu-id="bedeb-117">Počáteční datum se změní na datum náboru nových zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="bedeb-117">The Start date will become the Hire date for the new workers.</span></span>  
-    * <span data-ttu-id="bedeb-118">Konečné datum se změní na datum výpovědi nových zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="bedeb-118">The End date will be the Termination date for the new workers.</span></span>  
-    * <span data-ttu-id="bedeb-119">Určete, zda noví zaměstnanci budou na pozici zaměstnanců nebo dodavatelů.</span><span class="sxs-lookup"><span data-stu-id="bedeb-119">Specify whether the new workers will be Employees or Contractors.</span></span>  
-10. <span data-ttu-id="bedeb-120">V poli Úloha klikněte na tlačítko rozevíracího seznamu a vyberte úlohu, pro kterou chcete vytvořit pozice.</span><span class="sxs-lookup"><span data-stu-id="bedeb-120">In the Job field, click the drop-down button to select the job to create the positions for.</span></span>
-11. <span data-ttu-id="bedeb-121">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="bedeb-121">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="bedeb-122">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="bedeb-122">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="bedeb-123">Výchozí hodnota ekvivalentu plného úvazku bude vycházet z vybrané práce.</span><span class="sxs-lookup"><span data-stu-id="bedeb-123">The default full-time equivalent value will come from the selected job.</span></span> <span data-ttu-id="bedeb-124">Tento údaj lze v případě potřeby změnit.</span><span class="sxs-lookup"><span data-stu-id="bedeb-124">You can change this if needed.</span></span>  
-    * <span data-ttu-id="bedeb-125">Volitelně vyberte Oddělení pro nové pozice.</span><span class="sxs-lookup"><span data-stu-id="bedeb-125">Optionally, select the Department for the new positions.</span></span>  
-13. <span data-ttu-id="bedeb-126">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="bedeb-126">Click OK.</span></span>
+1. <span data-ttu-id="1bd62-108">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="1bd62-108">Click New.</span></span>
+2. <span data-ttu-id="1bd62-109">Zadejte hodnotu do pole Projekt hromadného zařazení.</span><span class="sxs-lookup"><span data-stu-id="1bd62-109">In the Mass hire project field, type a value.</span></span>
+3. <span data-ttu-id="1bd62-110">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="1bd62-110">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="1bd62-111">Zadejte datum do pole Počátek projektu.</span><span class="sxs-lookup"><span data-stu-id="1bd62-111">In the Project start field, enter a date.</span></span>
+5. <span data-ttu-id="1bd62-112">Zadejte datum do pole Konec projektu.</span><span class="sxs-lookup"><span data-stu-id="1bd62-112">In the Project end field, enter a date.</span></span>
+6. <span data-ttu-id="1bd62-113">Klikněte na Otevřít projekt.</span><span class="sxs-lookup"><span data-stu-id="1bd62-113">Click Open project.</span></span>
+7. <span data-ttu-id="1bd62-114">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="1bd62-114">Click Yes.</span></span>
+8. <span data-ttu-id="1bd62-115">Klikněte na Vytvořit pozice.</span><span class="sxs-lookup"><span data-stu-id="1bd62-115">Click Create positions.</span></span>
+9. <span data-ttu-id="1bd62-116">Do pole Množství zadejte počet pozic, které chcete vytvořit</span><span class="sxs-lookup"><span data-stu-id="1bd62-116">In the Quantity field, enter the number of positions that you want to create</span></span>
+    * <span data-ttu-id="1bd62-117">Počáteční datum se změní na datum náboru nových zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="1bd62-117">The Start date will become the Hire date for the new workers.</span></span>  
+    * <span data-ttu-id="1bd62-118">Konečné datum se změní na datum výpovědi nových zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="1bd62-118">The End date will be the Termination date for the new workers.</span></span>  
+    * <span data-ttu-id="1bd62-119">Určete, zda noví zaměstnanci budou na pozici zaměstnanců nebo dodavatelů.</span><span class="sxs-lookup"><span data-stu-id="1bd62-119">Specify whether the new workers will be Employees or Contractors.</span></span>  
+10. <span data-ttu-id="1bd62-120">V poli Úloha klikněte na tlačítko rozevíracího seznamu a vyberte úlohu, pro kterou chcete vytvořit pozice.</span><span class="sxs-lookup"><span data-stu-id="1bd62-120">In the Job field, click the drop-down button to select the job to create the positions for.</span></span>
+11. <span data-ttu-id="1bd62-121">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="1bd62-121">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="1bd62-122">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="1bd62-122">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="1bd62-123">Výchozí hodnota ekvivalentu plného úvazku bude vycházet z vybrané práce.</span><span class="sxs-lookup"><span data-stu-id="1bd62-123">The default full-time equivalent value will come from the selected job.</span></span> <span data-ttu-id="1bd62-124">Tento údaj lze v případě potřeby změnit.</span><span class="sxs-lookup"><span data-stu-id="1bd62-124">You can change this if needed.</span></span>  
+    * <span data-ttu-id="1bd62-125">Volitelně vyberte Oddělení pro nové pozice.</span><span class="sxs-lookup"><span data-stu-id="1bd62-125">Optionally, select the Department for the new positions.</span></span>  
+13. <span data-ttu-id="1bd62-126">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="1bd62-126">Click OK.</span></span>
 

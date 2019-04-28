@@ -1,7 +1,7 @@
 ---
 title: Registrace a odebrání zaměstnaneckých výhod pracovníků
 description: Tento postup ukazuje, jak jeden pracovník může být registrován do jedné nebo více zaměstnaneckých výhod, a také jak více pracovníků může být registrováno k zaměstnanecké výhodě.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -10,51 +10,51 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 32f0e641f5e6824df89112aa5ea21dc3a708efa0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 92da6d24f3fc4282de5673a8155b6ab6316e55aa
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "341849"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "857469"
 ---
-# <a name="enroll-and-remove-benefits-from-workers"></a><span data-ttu-id="e8b3d-103">Registrace a odebrání zaměstnaneckých výhod pracovníků</span><span class="sxs-lookup"><span data-stu-id="e8b3d-103">Enroll and remove benefits from workers</span></span>
+# <a name="enroll-and-remove-benefits-from-workers"></a><span data-ttu-id="a73f9-103">Registrace a odebrání zaměstnaneckých výhod pracovníků</span><span class="sxs-lookup"><span data-stu-id="a73f9-103">Enroll and remove benefits from workers</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="e8b3d-104">Tento postup ukazuje, jak jeden pracovník může být registrován do jedné nebo více zaměstnaneckých výhod, a také jak více pracovníků může být registrováno k zaměstnanecké výhodě.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-104">This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit.</span></span> <span data-ttu-id="e8b3d-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-105">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="a73f9-104">Tento postup ukazuje, jak jeden pracovník může být registrován do jedné nebo více zaměstnaneckých výhod, a také jak více pracovníků může být registrováno k zaměstnanecké výhodě.</span><span class="sxs-lookup"><span data-stu-id="a73f9-104">This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit.</span></span> <span data-ttu-id="a73f9-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="a73f9-105">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="enroll-a-single-worker-in-benefits"></a><span data-ttu-id="e8b3d-106">Přihlásit jednoho pracovníka k zaměstnaneckým výhodám</span><span class="sxs-lookup"><span data-stu-id="e8b3d-106">Enroll a single worker in benefits</span></span>
-1. <span data-ttu-id="e8b3d-107">Přejděte k nabídce Lidské zdroje > Pracovníci > Zaměstnanci.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-107">Go to Human resources > Workers > Employees</span></span>
-2. <span data-ttu-id="e8b3d-108">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-108">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="e8b3d-109">Klikněte na možnost Zaměstnanecké výhody.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-109">Click Benefits.</span></span>
-4. <span data-ttu-id="e8b3d-110">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-110">Click New.</span></span>
-5. <span data-ttu-id="e8b3d-111">V poli Zaměstnanecká výhody zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-111">In the Benefit field, enter or select a value.</span></span>
-6. <span data-ttu-id="e8b3d-112">Do pole Počáteční datum pokrytí zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-112">In the Coverage start date field, enter a date and time.</span></span>
-7. <span data-ttu-id="e8b3d-113">Do pole Koncové datum pokrytí zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-113">In the Coverage end date field, enter a date and time.</span></span>
-8. <span data-ttu-id="e8b3d-114">Pokud potřebujete přidat příjemce do zaměstnaneckých výhod, rozbalte oddíl příjemců.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-114">Expand the Beneficiaries section if beneficiaries need to be added to the benefit.</span></span> <span data-ttu-id="e8b3d-115">Můžete také podle potřeby přidat závislé prvky z této stránky do zaměstnanecké výhody.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-115">You can also add dependents from this page if applicable to the benefit.</span></span>
-9. <span data-ttu-id="e8b3d-116">Na této stránce můžete také upravit podrobnosti o přihlášení k zaměstnanecké výhodě nebo přihlášení odstranit.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-116">You can also edit the details of a benefit enrollment or delete an enrollment on this page.</span></span> <span data-ttu-id="e8b3d-117">Po dokončení požadovaných změn v přihlášení k zaměstnanecké výhodě zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-117">When you have finished making changes to the benefit enrollment, close the page.</span></span>
+## <a name="enroll-a-single-worker-in-benefits"></a><span data-ttu-id="a73f9-106">Přihlásit jednoho pracovníka k zaměstnaneckým výhodám</span><span class="sxs-lookup"><span data-stu-id="a73f9-106">Enroll a single worker in benefits</span></span>
+1. <span data-ttu-id="a73f9-107">Přejděte k nabídce Lidské zdroje > Pracovníci > Zaměstnanci.</span><span class="sxs-lookup"><span data-stu-id="a73f9-107">Go to Human resources > Workers > Employees</span></span>
+2. <span data-ttu-id="a73f9-108">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="a73f9-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="a73f9-109">Klikněte na možnost Zaměstnanecké výhody.</span><span class="sxs-lookup"><span data-stu-id="a73f9-109">Click Benefits.</span></span>
+4. <span data-ttu-id="a73f9-110">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="a73f9-110">Click New.</span></span>
+5. <span data-ttu-id="a73f9-111">V poli Zaměstnanecká výhody zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a73f9-111">In the Benefit field, enter or select a value.</span></span>
+6. <span data-ttu-id="a73f9-112">Do pole Počáteční datum pokrytí zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="a73f9-112">In the Coverage start date field, enter a date and time.</span></span>
+7. <span data-ttu-id="a73f9-113">Do pole Koncové datum pokrytí zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="a73f9-113">In the Coverage end date field, enter a date and time.</span></span>
+8. <span data-ttu-id="a73f9-114">Pokud potřebujete přidat příjemce do zaměstnaneckých výhod, rozbalte oddíl příjemců.</span><span class="sxs-lookup"><span data-stu-id="a73f9-114">Expand the Beneficiaries section if beneficiaries need to be added to the benefit.</span></span> <span data-ttu-id="a73f9-115">Můžete také podle potřeby přidat závislé prvky z této stránky do zaměstnanecké výhody.</span><span class="sxs-lookup"><span data-stu-id="a73f9-115">You can also add dependents from this page if applicable to the benefit.</span></span>
+9. <span data-ttu-id="a73f9-116">Na této stránce můžete také upravit podrobnosti o přihlášení k zaměstnanecké výhodě nebo přihlášení odstranit.</span><span class="sxs-lookup"><span data-stu-id="a73f9-116">You can also edit the details of a benefit enrollment or delete an enrollment on this page.</span></span> <span data-ttu-id="a73f9-117">Po dokončení požadovaných změn v přihlášení k zaměstnanecké výhodě zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="a73f9-117">When you have finished making changes to the benefit enrollment, close the page.</span></span>
 
-## <a name="enroll-multiple-workers-in-a-benefit"></a><span data-ttu-id="e8b3d-118">Přihlásit více pracovníků k zaměstnanecké výhodě</span><span class="sxs-lookup"><span data-stu-id="e8b3d-118">Enroll multiple workers in a benefit</span></span>
-1. <span data-ttu-id="e8b3d-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-119">Close the page.</span></span>
-2. <span data-ttu-id="e8b3d-120">Přejděte k nabídce Lidské zdroje > Pracovníci > Zaměstnanci.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-120">Go to Human resources > Workers > Employees</span></span>
-3. <span data-ttu-id="e8b3d-121">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-121">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="e8b3d-122">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-122">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="e8b3d-123">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-123">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="e8b3d-124">Klikněte na možnost Přihlášení k zaměstnaneckým výhodám.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-124">Click Enroll in benefits.</span></span>
-7. <span data-ttu-id="e8b3d-125">V poli Zaměstnanecká výhody zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-125">In the Benefit field, enter or select a value.</span></span>
-8. <span data-ttu-id="e8b3d-126">Do pole Počáteční datum pokrytí zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-126">In the Coverage start date field, enter a date and time.</span></span>
-9. <span data-ttu-id="e8b3d-127">Do pole Koncové datum pokrytí zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-127">In the Coverage end date field, enter a date and time.</span></span>
-10. <span data-ttu-id="e8b3d-128">Klikněte na možnost Přihlásit.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-128">Click Enroll.</span></span>
-11. <span data-ttu-id="e8b3d-129">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-129">Close the page.</span></span>
-12. <span data-ttu-id="e8b3d-130">Přejděte na Lidské zdroje > Výhody > Přihlášení > Výsledky přihlášení k zaměstnanecké výhodě</span><span class="sxs-lookup"><span data-stu-id="e8b3d-130">Go to Human Resources > Benefits > Enrollment > Benefit enrollment results</span></span>
-13. <span data-ttu-id="e8b3d-131">Najděte záznam výsledků zaměstnanecké výhody, který hledáte.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-131">Find the benefit results record that you are looking for.</span></span>
-14. <span data-ttu-id="e8b3d-132">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-132">In the list, click the link in the selected row.</span></span>
-15. <span data-ttu-id="e8b3d-133">Na této stránce můžete zobrazit, kterým zaměstnancům byly zapsány zaměstnanecké výhody a také všechny zaměstnance, kteří nebyli přihlášeni.</span><span class="sxs-lookup"><span data-stu-id="e8b3d-133">This page allows you to view which employees have been enrolled in the benefit, as well as any employees who were not enrolled.</span></span>
+## <a name="enroll-multiple-workers-in-a-benefit"></a><span data-ttu-id="a73f9-118">Přihlásit více pracovníků k zaměstnanecké výhodě</span><span class="sxs-lookup"><span data-stu-id="a73f9-118">Enroll multiple workers in a benefit</span></span>
+1. <span data-ttu-id="a73f9-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="a73f9-119">Close the page.</span></span>
+2. <span data-ttu-id="a73f9-120">Přejděte k nabídce Lidské zdroje > Pracovníci > Zaměstnanci.</span><span class="sxs-lookup"><span data-stu-id="a73f9-120">Go to Human resources > Workers > Employees</span></span>
+3. <span data-ttu-id="a73f9-121">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="a73f9-121">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="a73f9-122">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="a73f9-122">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="a73f9-123">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="a73f9-123">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="a73f9-124">Klikněte na možnost Přihlášení k zaměstnaneckým výhodám.</span><span class="sxs-lookup"><span data-stu-id="a73f9-124">Click Enroll in benefits.</span></span>
+7. <span data-ttu-id="a73f9-125">V poli Zaměstnanecká výhody zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a73f9-125">In the Benefit field, enter or select a value.</span></span>
+8. <span data-ttu-id="a73f9-126">Do pole Počáteční datum pokrytí zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="a73f9-126">In the Coverage start date field, enter a date and time.</span></span>
+9. <span data-ttu-id="a73f9-127">Do pole Koncové datum pokrytí zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="a73f9-127">In the Coverage end date field, enter a date and time.</span></span>
+10. <span data-ttu-id="a73f9-128">Klikněte na možnost Přihlásit.</span><span class="sxs-lookup"><span data-stu-id="a73f9-128">Click Enroll.</span></span>
+11. <span data-ttu-id="a73f9-129">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="a73f9-129">Close the page.</span></span>
+12. <span data-ttu-id="a73f9-130">Přejděte na Lidské zdroje > Výhody > Přihlášení > Výsledky přihlášení k zaměstnanecké výhodě</span><span class="sxs-lookup"><span data-stu-id="a73f9-130">Go to Human Resources > Benefits > Enrollment > Benefit enrollment results</span></span>
+13. <span data-ttu-id="a73f9-131">Najděte záznam výsledků zaměstnanecké výhody, který hledáte.</span><span class="sxs-lookup"><span data-stu-id="a73f9-131">Find the benefit results record that you are looking for.</span></span>
+14. <span data-ttu-id="a73f9-132">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="a73f9-132">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="a73f9-133">Na této stránce můžete zobrazit, kterým zaměstnancům byly zapsány zaměstnanecké výhody a také všechny zaměstnance, kteří nebyli přihlášeni.</span><span class="sxs-lookup"><span data-stu-id="a73f9-133">This page allows you to view which employees have been enrolled in the benefit, as well as any employees who were not enrolled.</span></span>
 
