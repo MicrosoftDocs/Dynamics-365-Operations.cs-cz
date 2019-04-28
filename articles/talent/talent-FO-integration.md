@@ -1,7 +1,7 @@
 ---
 title: Nejčastější dotazy týkající se integrace aplikace Dynamics 365 for Talent s Dynamics 365 for Finance and Operations
 description: Toto téma vysvětluje, jaká data jsou synchronizována v rámci integrace aplikací Talent a Finance and Operations.
-author: negudava
+author: andreabichsel
 manager: AnnBe
 ms.date: 01/09/2019
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: negudava
+ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: aea025bc4898d6399e82030cf1f52b21949e014f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303609"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950076"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Nejčastější dotazy týkající se integrace aplikace Dynamics 365 for Talent s Dynamics 365 for Finance and Operations
 
@@ -34,15 +34,15 @@ Toto téma uvádí odpovědi na časté otázky spojené s tím, jaká data jsou
 
 S aplikací Core Human Resources (HR) je synchronizována dílčí skupina dat. Seznam všech entit uvádí téma [Integrace z aplikace Dynamics 365 for Talent do Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
 
-V případě Attract a Onboard jsou všechna data nativní pro Common Data Service (CDS) pro aplikace.
+V případě Attract a Onboard jsou všechna data nativní pro Common Data Service.
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Je možné vytvořit nové mapování bez použití šablon
 
-Šablony jsou počátečním bodem. Můžete vytvořit vlastní šablonu, ale při vytváření projektu integrace je šablona potřeba vždy. Další informace o šablonách integrátoru dat (DI) a projektech naleznete v tématu [Integrace dat v Common Data Service pro aplikace](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+Šablony jsou počátečním bodem. Můžete vytvořit vlastní šablonu, ale při vytváření projektu integrace je šablona potřeba vždy. Další informace o šablonách integrátoru dat (DI) a projektech naleznete v tématu [Integrace dat v Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Lze mapovat finanční dimenze k přenosu mezi aplikacemi Talent and Finance and Operations?
 
-Finanční dimenze aktuálně nejsou v CDS pro aplikace a proto nejsou součástí výchozí šablony. Tato entita je plánována, ale v současné době není k dispozici žádná časová osa pro uvolnění.
+Finanční dimenze aktuálně nejsou v Common Data Service pro aplikace a proto nejsou součástí výchozí šablony. Tato entita je plánována, ale v současné době není k dispozici žádná časová osa pro uvolnění.
 
 V případě dat, která existují v modulu Finance and Operations, ale ne v aplikaci Talent, spojte tyto dva systémy pomocí příkazu **Konfigurovat odkazy** v aplikaci Talent. Další informace o tom, jak konfigurovat propojení mezi aplikacemi Talent a Finance and Operations získáte v tématu [Co je nového nebo změněného v Dynamics 365 for Talent Core HR (October 31, 2018)](whats-new-talent-october-31.md).
 
@@ -64,7 +64,7 @@ S použitím "Rozšířeného dotazu" můžete filtrovat a měnit tvar zdrojový
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Můžu určit pole, která chcete odeslat do modulu Finance and Operations pro konkrétní entitu?
 
-Pole lze přidat nebo odebrat z úkolu integrace. Ne všechna datová pole, která existují na CDS pro aplikace (CD 2.0) budou doplněna z Core HR.
+Pole lze přidat nebo odebrat z úkolu integrace. Ne všechna datová pole, která existují na Common Data Service budou doplněna z Core HR.
 Prostřednictvím PowerApps lze naplnit další data.
 
 ![](media/SpecifyFieldsIncludedInIntegration.png)
@@ -83,7 +83,7 @@ Ne, integrátor dat nebude zaznamenávat odstraněné záznamy pro přenos dat. 
 
 ## <a name="can-i-rerun-the-errored-execution-if-so-will-it-send-a-full-file-or-only-the-changes"></a>Můžu znovu spustit chybné spuštění? Odešle se v takovém případě celý soubor nebo pouze změny?
 
-Při prvním spuštění aplikace Integrátor dat je vždy úplné spuštění. Dalším spuštění jsou založeny na sledování změn. Při chybě spuštění se záznamy v rozsahu spuštění extrahují a odešlou z CDS poslední změny.
+Při prvním spuštění aplikace Integrátor dat je vždy úplné spuštění. Dalším spuštění jsou založeny na sledování změn. Při chybě spuštění se záznamy v rozsahu spuštění extrahují a odešlou z Common Data Service poslední změny.
 
 ## <a name="when-i-save-the-project-i-get-the-error-project-has-mapping-errors-what-do-i-do"></a>Při ukládání projektu se zobrazila chybová zpráva: "Projekt obsahuje chyby mapování". Co udělat?
 
@@ -97,15 +97,15 @@ Ano, pro každou právnickou osobu v modulu Finance and Operations je nutný sam
 
 ## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Je třeba převést data, která nejsou součástí výchozí šablony od společnosti Microsoft. Lze to provést?
 
-Ano, pole můžete přidat do existující šablony nebo z ní odebrat. Šablony lze upravit tak, aby obsahovaly další data z jiných entit aplikací CDS. Entita musí být v CDS pro aplikace, aby byla zahrnuta do šablony. 
+Ano, pole můžete přidat do existující šablony nebo z ní odebrat. Šablony lze upravit tak, aby obsahovaly další data z jiných entit Common Data Service. Entita musí být Common Data Service, aby byla zahrnuta do šablony. 
 
 ## <a name="i-just-created-new-finance-and-operations-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Právě jsem vytvořil nová prostředí Finance and Operations a Talent a zobrazuje se chyba Hodnota data porušuje omezení integrity. Proč?
 
 Důvody této chyby mohou zahrnovat:
 
-- Převod dat měl za následek extrahování duplicitních záznamů ve zdroji (CD).
+- Převod dat měl za následek extrahování duplicitních záznamů ve zdroji (Common Data Service).
 
-- Přenos dat má hodnoty null pro pole, která jsou v aplikaci Finance and Operations povinná. Ověřte data, která se jsou v CDS a splňují požadavky modulu Finance and Operations.
+- Přenos dat má hodnoty null pro pole, která jsou v aplikaci Finance and Operations povinná. Ověřte data, která se jsou v Common Data Service a splňují požadavky aplikace Finance and Operations.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Pokud došlo k chybám provedení a neproběhla synchronizace ID zaměstnance, jak lze najít úlohu historie s neúspěšným záznamem zaměstnance?
 
@@ -127,17 +127,17 @@ Sledujte čas od historie provedení integrátoru dat a hledejte projekt index -
 
 ## <a name="after-integrating-talent-and-finance-and-operations-i-dont-see-my-talent-data-in-finance-and-operations-what-do-i-do"></a>Po integraci aplikací Talent a Finance and Operations nevidím data Talent v aplikaci Finance and Operations. Co udělat?
 
-Integrace s aplikací Finance and Operations je proces ve dvou krocích. Nejprve ověřte, že jsou data aplikace Talent aktualizovaná a dostupná v CDS. To je synchronizace v reálném čase a lze ji ověřit v PowerApps pohledem na data v rámci datových entit.
+Integrace s aplikací Finance and Operations je proces ve dvou krocích. Nejprve ověřte, že jsou data aplikace Talent aktualizovaná a dostupná v Common Data Service. To je synchronizace v reálném čase a lze ji ověřit v PowerApps pohledem na data v rámci datových entit.
 
-![Data v CDS](media/DataInCDS.png)
+![Data v Common Data Service](media/DataInCDS.png)
 
-Pokud se data v CDS nezobrazují požadovaným způsobem, ověřte, že je entita v integraci podporovaná. Pokud chcete zahrnout do CDS další data, bude požadována změna na straně společnosti Microsoft.
+Pokud se data v Common Data Service nezobrazují požadovaným způsobem, ověřte, že je entita v integraci podporovaná. Pokud chcete zahrnout do Common Data Service další data, bude požadována změna na straně společnosti Microsoft.
 
-Pokud je entita podporovaná a data jsou v CDS k dispozici, ověřte, zda je v integrátoru dat správné mapování. Pokud se mapování integrátoru zdá v pořádně, ověřte, zda jsou úspěšně spuštěné úlohy správy dat. Během zpracování dávkových úloh může dojít k chybám. Další informace o způsobu použití nástroje pro správu dat naleznete v tématu [Správa dat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Pokud je entita podporovaná a data jsou v Common Data Service k dispozici, ověřte, zda je v integrátoru dat správné mapování. Pokud se mapování integrátoru zdá v pořádně, ověřte, zda jsou úspěšně spuštěné úlohy správy dat. Během zpracování dávkových úloh může dojít k chybám. Další informace o způsobu použití nástroje pro správu dat naleznete v tématu [Správa dat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Údaje o adrese mých zaměstnanců nejdou po importu do aplikace Finance and Operations správné. Co mám dělat?
 
-Číselná řada pro **ID skladového místa** používá stejný vzorec v aplikacích Talent i Finance and Operations. Číselné řady musí být jedinečný na obou stranách tak, aby nebyla žádná kolize adres při integraci dat z CDS do Finance and Operations.
+Číselná řada pro **ID skladového místa** používá stejný vzorec v aplikacích Talent i Finance and Operations. Číselné řady musí být jedinečný na obou stranách tak, aby nebyla žádná kolize adres při integraci dat z Common Data Service do Finance and Operations.
 
 Při implementaci aplikace Talent ověřte, zda číselné řady v aplikaci Talent a Finance and Operations nejsou stejné. Ověřte, zda nejsou všechny číselné řady stejné, když lze udržovat data v obou systémech.
 
@@ -147,7 +147,7 @@ Při vytváření připojení zvolte Dynamics 365 for Finance and Operations (ak
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Při synchronizaci zaměstnání se zobrazují chyby "CompanyInfo_FK neexistuje" nebo "Hodnota 31/12 a 2154 23:59:59: 00 ' v poli Koncové datum zaměstnání nebyla nalezena v související tabulce"Zaměstnání"." Co mám dělat?
 
-Mapujte na správné právnické osoby. Synchronizace právnické osoby není součástí výchozí šablony, takže se očekává, že každá právnická osoba přítomná v aplikacích Talent a CDS je dostupná také v aplikaci Finance and Operations.
+Mapujte na správné právnické osoby. Synchronizace právnické osoby není součástí výchozí šablony, takže se očekává, že každá právnická osoba přítomná v aplikacích Talent a Common Data Service je dostupná také v aplikaci Finance and Operations.
 Dále také vyberte správné právnické osoby pro přidruženou sadu připojení.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-and-operations-appears-to-be-empty-what-should-i-do"></a>Po nastavení projektu se zdá mapování polí pro Finance and Operations prázdné. Co mám dělat?
@@ -156,15 +156,15 @@ Aktualizujte entity dat v aplikaci Finance and Operations v části **Správa da
 
 ![Mapování chybějících polí](media/MissingFieldMapping.png)
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
 - Integrátor dat (Di): 
 
-  - [Integrace dat do Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Integrace dat do Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
 
   - [Správa chyb a řešení problémů integrátoru dat](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
 
-  - [Odpovídání na požadavky DSR u systémem generovaných protokolů v PowerApps, Microsoft Flow a Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Odpovídání na požadavky DSR u systémem generovaných protokolů v Microsoft Flow a Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Správa dat:
 

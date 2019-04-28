@@ -3,7 +3,7 @@ title: Synchronizujte informace o množství zásob z aplikace Finance and Opera
 description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci informací na úrovni zásob z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b81694f1ed56d8542de46203ac5faf5fae2b6645
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356776"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842549"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Synchronizace informací o úrovni zásob z aplikace Finance and Operations do služby Field Service 
 
@@ -38,14 +38,14 @@ Toto téma popisuje šablony a základní úkoly, které se používají k synch
 Následující šablony a základní úkoly se používají k synchronizaci úprav zásob na skladě a převodů z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
 
 **Šablona v integraci dat**
-- Zásob produktu (z aplikace Finance and Operations do služby Field Service)
+- Zásoby produktu (Fin and Ops do Field Service)
   
 **Úkol v projektu integrace dat**
 - Zásoby produktu
 
 Následující úlohy synchronizace jsou vyžadovány před zobrazením synchronizace množství zásob:
-- Sklady (z aplikace Finance and Operations do služby Field Service) 
-- Produkty služby Field Service s jednotkou zásob (z aplikace Finance and Operations do služby Prodej) 
+- Sklady (Fin and Ops do Field Service) 
+- Produkty služby Field Service s jednotkou zásob (Fin and Ops do Sales) 
 
 ## <a name="entity-set"></a>Sada entit
 
@@ -80,6 +80,6 @@ Můžete použít filtry s pokročilým dotazováním a filtrování, pomocí kt
 
 ## <a name="template-mapping-in-data-integration"></a>Mapování šablony v integraci dat
 
-### <a name="product-inventory-finance-and-operations-to-field-service-product-inventory"></a>Zásoby produktu (z aplikace Finance and Operations do služby Field Service): zásoby produktu
+### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>Zásoby produktu (Fin and Ops do služby Field Service): zásoby produktu
 
 [![Mapování šablony v integraci dat](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

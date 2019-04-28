@@ -1,28 +1,28 @@
 ---
 title: Srovnání funkcí cloudu a on-premises
 description: Toto téma popisuje funkce, které jsou podporovány v cloudu a instalaci on-premises.
-author: robinarh
+author: sericks007
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robinr
+ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 18f668bdc49da1022230278f1de8494150e8a5f9
+ms.sourcegitcommit: bdcdcdddcb0517f0c64d541258ccbd119b960719
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313973"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "977199"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Srovnání funkcí cloudu a on-premises
 
@@ -56,9 +56,12 @@ Následující tabulka uvádí oblasti produktu. Podpora cloudu a instalace on-p
 | Nápověda | | Ano | Ne |
 | Lidské zdroje | | Ano | Ano |
 | Intelligence | | Ano | Ano |
-| | Elektronické výkaznictví (ER) - Integrace s LCS | Ano | Žádný |
-| | Elektronické výkaznictví (ER) - Integrace s SharePoint | Ano | Žádný |
-| | Integrace s PowerBI.com | Ano | Žádný |
+| | Elektronické výkaznictví (EV) | Ano | Ano |
+| | ER: Integrace s LCS | Ano | Ne |
+| | ER: Integrace se službou SharePoint | Ano | Ne |
+| | ER: Integrace se službou Regulatory Configuration Services (RCS) | Ano | Ne |
+| | ER: Používá místní systém souborů jako úložiště konfigurací ER přístupné z úložišť ER | Ne | Ano |
+| | Integrace s PowerBI.com | Ano | Ne |
 | | Analytické pracovní prostory | Ano | Žádný |
 | | Inteligentní obchodní proces: doporučení | Ano | Žádný |
 | | Vytváření sestav Power BI s OData pomocí pracovní plochy Power BI nebo nástroje PowerQuery aplikace Excel | Ano | Žádný |

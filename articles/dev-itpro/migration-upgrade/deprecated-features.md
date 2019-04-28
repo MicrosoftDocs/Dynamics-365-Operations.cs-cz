@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
 author: sericks007
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836341"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992876"
 ---
 # <a name="removed-or-deprecated-features"></a>Odstraněné nebo zastaralé funkce
 
@@ -41,45 +41,114 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 > [!NOTE]
 > Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
 
+
+## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 s aktualizací Platform Update 26
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.2 s aktualizací Platform Update 26 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="legacy-default-action-behavior"></a>Starší výchozí chování akce
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Starší chování výchozích akcí v mřížkách vede k nečekanému sloupci s výchozím odkazem na akci po změně pořadí sloupců mřížky přes přizpůsobení. Tuto akci napravuje nová výchozí akce jedním prstem. Další informace naleznete v tématu [Výchozí akce jedním prstem v mřížce](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Nahrazeno jinou funkcí?**   | Od aktualizace Platformy 21 byla zavedena funkce výchozích akcí jedním prstem. Tuto funkci lze povolit na stránce **Možnosti výkonu klienta**. |
+| **Ovlivněné oblasti produktu**         | Mřížky ve webovém klientovi |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Od dubna 2020 budou výchozí akce jedním prstem výchozím chováním bez mechanismu výchozího chování. |
+
+### <a name="legacy-is-one-of-filtering-experience"></a>Zastarání "je jedna z" možností filtrování
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Možnost "je jedna" filtrování prošla v aktualizaci Platform 22 změnou, přičemž plán je pravděpodobně možnost filtrování "je jedním z". |
+| **Nahrazeno jinou funkcí?**   | Počínaje aktualizací Platform update 22 je vylepšená možnost filtrování "je jedním z" k dispozici na stránce **Možnosti výkonu klienta**. Více informací viz [Optimalizovaná možnost filtrování „je jeden z“](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Ovlivněné oblasti produktu**         | Webový klient |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Od dubna 2020 bude možnost "je jedním z" výchozím chováním bez mechanismu výchozího chování. |
+
+### <a name="deriving-from-internal-classes-is-deprecated"></a>Odvození z interních tříd je zastaralé
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Před aktualizací Platform Update 25 bylo možné vytvořit třídu nebo tabulku odvozenou z interní třídy/tabulky, která je definována v jiném balíčku/modulu. Nejedná se o bezpečný postup kódování. Od aktualizace Platform update 25 bude kompilátor zobrazovat upozornění. |
+| **Nahrazeno jinou funkcí?**   | Upozornění kompilátoru bude nahrazeno chybou v příští aktualizaci Platform update 26. Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Platform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód. Tato změna ovlivní čas nasazení a kompilace.|
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26. |
+
+### <a name="overriding-internal-methods-is-deprecated"></a>Přepsání interních metod je zastaralé
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Před aktualizací Platform Update 25 bylo možné přepsat interní metodu v odvozené třídě, která je definována v jiném balíčku/modulu. Nejedná se o bezpečný postup kódování. Od aktualizace Platform update 25 bude kompilátor zobrazovat upozornění. |
+| **Nahrazeno jinou funkcí?**   | Toto upozornění kompilátoru bude nahrazeno chybou sestavení v příští aktualizaci Platform update 26. Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Platform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód. Tato změna ovlivní čas nasazení a kompilace. |
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26. |
+
+### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parametr umožňující prodejní objednávky s více zdroji financování projektové smlouvy
+Podpora pro vytváření prodejních objednávek na základě projektů, kde měla projektová smlouva více zdrojů financování s nastavením **parametrů řízení projektů** **Povolit prodejní objednávky pro projekt v více zdroji financování**. Tento parametr není ve výchozím nastavení povolen. 
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Funkce bude vždy povolena po odebrání parametru. |
+| **Nahrazeno jinou funkcí?**   | Č. Funkce pro podporu prodejních objednávek založených na projektu s více zdroji financování bude povolena vždy.   |
+| **Ovlivněné oblasti produktu**         |Parametr **Povolit prodejní objednávky pro projekty s více zdroji financování** bude odebrán. Po odebrání parametru budou modifikovány následující metody: metoda **ctrlSalesOrderTable** ve třídě **ProjStatusType**, metoda **validate** pro pole **ProjId** a metoda **run** ve formuláři **SalescreateOrder**. Následující metody budou po odebrání parametru zastaralé: metoda **IsSalesOrderAllowedForMultipleFundingSources** v souboru tabulky **ProjTable**, metoda **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** v souboru tabulky **ProjTable**, datové pole **AllowSalesOrdersForMultipleFundingSources** ve formuláři **ProjParameters** a v souborech **ProjParameterEntity**, soukromá metoda **IsAssociatedToMultipleFundingSourcesContract** v souboru tabulky **ProjTable**. |
+| **Možnost nasazení**              | Vše  |
+| **Stav**                         | Odpisování je plánováno pro vlnu vydání v dubnu 2020. |
+
+### <a name="legacy-workflow-reports-for-tracking-and-instance-status"></a>Zastaralé sestavy workflowu pro sledování stavu instance
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Sestavy ze starší verze workflowu pro sledování a stav instance jsou odepsané, protože na ně již není odkazováno z navigace. Názvy sestavy jsou WorkflowWorkflowInstanceByStatusReport a WorkflowWorkflowTrackingReport. |
+| **Nahrazeno jinou funkcí?**   | Místo toho lze použít formulář Historie workflowu. |
+| **Ovlivněné oblasti produktu**         | Webový klient |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je duben 2020. |
+
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Aktualizace služeb standardního a prvního vydání](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+> Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Zastaralá rozhraní API a možná přerušení změn
+
 
 #### <a name="deriving-from-internal-classes-is-deprecated"></a>Odvození z interních tříd je zastaralé
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Ve verzích před aktualizací Platform Update 25 bylo možné vytvořit třídu nebo tabulku odvozenou z interní třídy/tabulky, která je definována v jiném balíčku/modulu. Nejedná se o bezpečný postup kódování. Od aktualizace Platform Update 25 kompilátor zobrazí zprávu s upozorněním, pokud se o to pokusíte.|
-| **Nahrazeno jinou funkcí?**   | Upozornění kompilátoru bude nahrazeno chybou v příští aktualizaci Platform Update. Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Pltaform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód. Tato změna ovlivní čas nasazení a kompilace. |
-| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio. |
+| **Důvod pro zrušení/odstranění** | Před aktualizací Platform Update 25 bylo možné vytvořit třídu nebo tabulku odvozenou z interní třídy/tabulky, která je definována v jiném balíčku/modulu. Nejedná se o bezpečný postup kódování. Od aktualizace Platform update 25 bude kompilátor zobrazovat upozornění. |
+| **Nahrazeno jinou funkcí?**   | Upozornění kompilátoru bude nahrazeno chybou v příští aktualizaci Platform update 26. Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Platform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód. Tato změna ovlivní čas nasazení a kompilace.|
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé - Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update. |
+| **Stav**                         | Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26. |
 
 #### <a name="overriding-internal-methods-is-deprecated"></a>Přepsání interních metod je zastaralé
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Ve verzích před aktualizací Platform Update 25 bylo možné přepsat interní metodu v odvozené třídě, která je definována v jiném balíčku/modulu. Nejedná se o bezpečný postup kódování. Od aktualizace Platform Update 25 kompilátor zobrazí zprávu s upozorněním, pokud se o to pokusíte.|
-| **Nahrazeno jinou funkcí?**   | Upozornění bude nahrazeno kompilační chybou v příští aktualizaci Platform Update. Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Pltaform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód. Tato změna ovlivní čas nasazení a kompilace. |
-| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio. |
+| **Důvod pro zrušení/odstranění** | Před aktualizací Platform Update 25 bylo možné přepsat interní metodu v odvozené třídě, která je definována v jiném balíčku/modulu. Nejedná se o bezpečný postup kódování. Od aktualizace Platform update 25 bude kompilátor zobrazovat upozornění. |
+| **Nahrazeno jinou funkcí?**   | Toto upozornění kompilátoru bude nahrazeno chybou sestavení v příští aktualizaci Platform update 26. Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Platform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód. Tato změna ovlivní čas nasazení a kompilace. |
+| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé - Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update. |
+| **Stav**                         | Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 s aktualizací Platform Update 23
 
-### <a name="print-to-screen-functionality"></a>Funkce tisku na obrazovku
-Zákazníci mohou použít akci **Importovat** poskytovanou ovládacím prvkem Report Viewer ke stažení dokumentů vyprodukovaných aplikacemi Finance and Operations. Tato prezentace sestavy na bázi HTML nabízí uživatelům náhled dokumentu bez číslování stránek.
+### <a name="sql-server-reporting-services-reportviewer-control"></a>Kontrola SQL Server Reporting Services ReportViewer
+Zákazníci mohou použít akci **Exportovat** poskytovanou vestavěným ovládacím prvkem SQL Server Reporting Services (SSRS) ReportViewe ke stažení dokumentů vyprodukovaných aplikacemi Finance and Operations. Tato prezentace sestavy na bázi HTML nabízí uživatelům náhled dokumentu bez číslování stránek.
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Povaha náhledu na bázi HTML bez čísel stránek **neposkytuje** věrnost s fyzickými dokumenty produkovanými aplikací Finance and Operations. Plným zahrnutím PDF jako standardního formátu pro obchodní operace jsme schopni výrazně zjednodušit uživatelské možnosti interakce se sestavami aplikace a zefektivnit proces vykreslování dokumentů. |
+| **Důvod pro zrušení/odstranění** | Povaha náhledu na bázi HTML bez čísel stránek **neposkytuje** věrnost s fyzickými dokumenty produkovanými aplikací Finance and Operations. Plným začleněním PDF jako standardního formátu pro obchodní dokumenty mohou uživatelé využívat moderní zobrazení prostředí se zvýšením výkonu při vytváření sestav aplikace. |
 | **Nahrazeno jinou funkcí?**   | Do budoucna budou dokumenty PDF výchozím formátem pro sestavy vykreslované aplikací Finance and Operations.   |
 | **Ovlivněné oblasti produktu**         | Tato změna **nemá** vliv na scénáře, kdy jsou sestavy rozesílány elektronicky nebo odesílány přímo na tiskárny.    |
 | **Možnost nasazení**              | Vše  |
-| **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno. Funkce automatického stažení sestav aplikací do prohlížeče ve formátu PDF je plánována na aktualizaci Platform Update v květnu 2019. <br><br>**Důležité:** Stávajícím zákazníkům, kteří se spoléhají na funkci tisku na obrazovku, doporučujeme, aby se obrátili [Podporu](../lifecycle-services/lcs-support.md) před upgradem na aktualizaci Platform Update 26. |
+| **Stav**                         | Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno. Funkce automatického náhledu sestav aplikací pomocí vestavěného prohlížeče ve formátu PDF je plánována na aktualizaci Platform Update v květnu 2019. |
 
 ### <a name="client-kpi-controls"></a>Ovládací prvky klíčových ukazatelů výkonu klienta
 Vložené klíčové indikátory výkonnosti (KPI) mohou být vývojářem modelovány v aplikaci Visual Studio a dále upravovány koncovým uživatelem.
@@ -102,7 +171,7 @@ Vložené klíčové indikátory výkonnosti (KPI) mohou být vývojářem model
 | **Nahrazeno jinou funkcí?**   | Upozornění bude nahrazeno kompilační chybou v budoucnosti.  |
 | **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio. |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé – Upozornění se v budoucnu stane chybou při kompilaci. Plánujeme to v aktualizaci Platform Update 30. |
+| **Stav**                         | Zastaralé: Upozornění se v budoucnu stane chybou při kompilaci. Plánujeme to v aktualizaci Platform Update 30. |
 
 #### <a name="complete-list"></a>Úplný seznam
 Pro přístup k úplnému seznamu zastaralých rozhraní API nahlédněte do části [Zastarání metod a prvků metadat](deprecation-deletion-apis.md).
@@ -110,7 +179,7 @@ Pro přístup k úplnému seznamu zastaralých rozhraní API nahlédněte do č�
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Pravidla dávkových převodů pro položky účtu dílčí hlavní knihy
-Režim synchronního převodu je zastaralý v parametrech hlavní knihy.  Tento režim je nahrazen pouze možnostmi Asynchronní a plánovaná dávka, které již existují jako možnosti pro převod. 
+Režim synchronního převodu je zastaralý v parametrech hlavní knihy.  Tento režim je nahrazen pouze možnostmi Asynchronní a plánovaná dávka, které již existují jako možnosti pro převod. Další informace naleznete v blogu [Parametry hlavní knihy - pravidla dávkového přenosu ](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules).
 
 |   |  |
 |------------|--------------------|
@@ -172,7 +241,7 @@ V této verzi nebyly odebrány ani odepsány žádné funkce. Aktualizace platfo
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 s aktualizací Platform Update 12
 
 ### <a name="personalized-product-recommendations"></a>Doporučení přizpůsobeného produktu 
-Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -277,7 +346,7 @@ Uživatelé si mohou stáhnout tento formulář ze státního portálu.
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>Doporučení přizpůsobeného produktu 
-Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -309,7 +378,7 @@ Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, urč
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Duplicitní funkce.       |
-| **Nahrazeno jinou funkcí?**   | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a předpokladech naleznete v tématu [Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations – Sklady](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Nahrazeno jinou funkcí?**   | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a předpokladech naleznete v tématu [Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations – Sklady](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Ovlivněné oblasti produktu**         | Řízení skladu, Správa přepravy     |
 | **Možnost nasazení**              | Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení.               |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je čtvrté čtvrtletí roku 2019.   |
@@ -687,6 +756,17 @@ V rozhraní AIF (Application Integration Framework) mohou být data vyměňován
 | **Nahrazeno jinou funkcí?**   | Tato funkce je nahrazena architekturou pro import a export dat, která podporuje opakovaný hromadný import/export. U rozhraní AxBC doporučujeme používat skutečné tabulky. |
 | **Ovlivněné oblasti produktu**         | AxDs, AxBCs a AIF   |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.   |
+
+### <a name="billing-code-rate-scripts"></a>Skripty sazby účtovacího kódu
+
+Účtovací skripty se používaly k výpočtu sazeb fakturace pro kódy fakturace. To skripty vyžadovaly vlastní vývoj v programovacím jazyce C Sharp nebo Visual Basic. V aktuální verzi aplikace Dynamics AX nejsou **kódy skriptu fakturační sazby** podporovány.
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Podpora vlastních skriptů v jazyce C Sharp nebo Visual Basic snebyla v Dynamics AX 7.0 přidána. |
+| **Nahrazeno jinou funkcí?**   | Ne                                                                                      |
+| **Ovlivněné oblasti produktu**         | Veřejný sektor (pohledávky)                                    |
+| **Stav**                         | Odstraněno od verze Dynamics AX 7.0.                                                          |
 
 ### <a name="boms-without-bom-versions"></a>Kusovníky bez verze kusovníku
 
@@ -1068,7 +1148,7 @@ Konfigurátor výrobku byl používán k dynamické konfiguraci položek z prode
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Konfigurátor výrobku zveřejňoval kód X ++ koncovým uživatelům a není v aktuální verzi aplikace Dynamics AX podporován. Byl odebrán kvůli zamezení duplicitní údržby na překrývajících se kódech.  |
-| **Nahrazeno jinou funkcí?**   | Ano. Konfigurace založená na omezeních byla uvedena v aplikaci Dynamics AX 2012, kde již byl oznámen odpis konfigurátoru výrobku v budoucích verzích. Technologie konfigurace založené na omezeních je zvolena na základních produktech k umožnění konfigurace. Další informace naleznete v tématu [Vytvoření modelu konfigurace produktu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
+| **Nahrazeno jinou funkcí?**   | Ano. Konfigurace založená na omezeních byla uvedena v aplikaci Dynamics AX 2012, kde již byl oznámen odpis konfigurátoru výrobku v budoucích verzích. Technologie konfigurace založené na omezeních je zvolena na základních produktech k umožnění konfigurace. Další informace naleznete v tématu [Vytvoření modelu konfigurace produktu](../../supply-chain/pim/build-product-configuration-model.md). |
 | **Ovlivněné oblasti produktu**         | Řízení informací o produktech, Prodej a marketing  |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.      |
 

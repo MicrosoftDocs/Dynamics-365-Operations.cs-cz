@@ -3,7 +3,7 @@ title: Synchronizujte seznamy projektů z aplikace Finance and Operations do slu
 description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci projektů z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b5aeb4c3925994d7488e8e113e88b9d06ee6b350
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ea5c188891bb97ba73d2d022e86bbff50897381b
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312501"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842597"
 ---
 # <a name="synchronize-project-list-from-finance-and-operations-to-field-service"></a>Synchronizace seznamu projektů z aplikace Finance and Operations do služby Field Service
 
@@ -38,13 +38,13 @@ Toto téma popisuje šablony a základní úkoly, které se používají k synch
 Následující šablona a základní úlohy slouží ke spuštění synchronizace projektů z Microsoft Dynamics 365 for Finance and Operations k Microsoft Dynamics 365 for Field Service.
 
 **Šablona v integraci dat**
-- Projekty (z aplikace Finance and Operations do služby Field Service)
+- Projekty (Fin and Ops do Field Service)
 
 **Úkol v projektu integrace dat**
 - Projekty
 
 Následující úlohy synchronizace jsou vyžadovány před zobrazením synchronizace seznamu projektů:
-- Účty (Sales do aplikace Finance and Operations) 
+- Účty (Sales do Fin and Ops) 
 
 ## <a name="entity-set"></a>Sada entit
 | Field Service           | Finance and Operations  |
@@ -64,6 +64,6 @@ Povolte sledování změn pro projekty datové entity.
 ## <a name="template-mapping-in-data-integration"></a>Mapování šablony v integraci dat
 
 
-### <a name="projects-finance-and-operations-to-field-service-projects"></a>Projekty (z aplikace Finance and Operations do služby Field Service): projekty
+### <a name="projects-fin-and-ops-to-field-service-projects"></a>Projekty (Fin and Ops do Field Service): Projekty
 
 [![Mapování šablony v integraci dat](./media/FSProject1.png)](./media/FSProject1.png)

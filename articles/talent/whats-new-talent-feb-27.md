@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b622276000c56a5af1bb258dbc3c6c4a56af4d20
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782810"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949890"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (27. února 2019)
 
@@ -87,7 +87,7 @@ Je obvyklé, že zaměstnanec je přijat do organizace s budoucím počáteční
 
 ## <a name="known-issues"></a>Známé problémy
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-for-apps-to-finance-and-operations"></a>Změny šablony integrace Core HR (Talent Common Data Service for Apps do Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Změny šablony integrace Core HR (Talent Common Data Service do Finance and Operations)
 Šablona pro Core HR byla aktualizována na šablonu rozšířeného dotazu. Ve výchozím nastavení bude proto rozšířený dotaz k dispozici pro projekty vytvořené pomocí této šablony. Všechny výchozí funkce mapování budou navíc viditelné pouze v editoru rozšířených dotazů. (Výchozí funkce mapování se zobrazí v mapování jako FN.)
 
 Další informace o chybách mapování naleznete v tématu [Co je nového a co se změnilo v Dynamics 365 for Talent Core HR (14. prosince 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
@@ -100,19 +100,19 @@ Chcete-li aktualizovat svou stávající šablonu, postupujte takto.
 
     - **Pracovní pozice na pozice:** Odeberte toto mapování.
     - **Pracovní pozice do přiřazení práce nadřazené pozice:** Odeberte toto mapování.
-    - **Pracovní pozice na základní pozici:** Přidejte nové mapování z entity **Pracovní pozice** Common Data Service for Apps na entitu **Základní pozice** Finance and Operations. Přesuňte ji do pozice 7 v číselné řadě.
+    - **Pracovní pozice na základní pozici:** Přidejte nové mapování z entity **Pracovní pozice** Common Data Service na entitu **Základní pozice** Finance and Operations. Přesuňte ji do pozice 7 v číselné řadě.
 
         [![Mapování Pracovní pozice na základní pozici](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Pracovní pozice na podrobnosti pozice:** Přidejte nové mapování z entity **Pracovní pozice** Common Data Service for Apps na entitu **Podrobnosti pozice** Finance and Operations. Přesuňte ji do pozice 8 v číselné řadě.
+    - **Pracovní pozice na podrobnosti pozice:** Přidejte nové mapování z entity **Pracovní pozice** Common Data Service na entitu **Podrobnosti pozice** Finance and Operations. Přesuňte ji do pozice 8 v číselné řadě.
 
         [![Mapování Pracovní pozice na Podrobnosti pozice](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Pracovní pozice na trvání pozice:** Přidejte nové mapování z entity **Pracovní pozice** Common Data Service for Apps na entitu **Trvání pozice** Finance and Operations.
+    - **Pracovní pozice na trvání pozice:** Přidejte nové mapování z entity **Pracovní pozice** Common Data Service na entitu **Trvání pozice** Finance and Operations.
 
         [![Mapování Pracovní pozice na Trvání pozice](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Pracovní pozice na hierarchie pozice:** Přidejte nové mapování z entity **Pracovní pozice** Common Data Service for Apps na entitu **Hierarchie pozice** Finance and Operations. Vyberte **Rozšířený dotazu** pro zpřístupnění rozšířeného dotazu pro váš projekt.
+    - **Pracovní pozice na hierarchie pozice:** Přidejte nové mapování z entity **Pracovní pozice** Common Data Service na entitu **Hierarchie pozice** Finance and Operations. Vyberte **Rozšířený dotazu** pro zpřístupnění rozšířeného dotazu pro váš projekt.
 
        [![Tlačítko Rozšířený dotaz](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 

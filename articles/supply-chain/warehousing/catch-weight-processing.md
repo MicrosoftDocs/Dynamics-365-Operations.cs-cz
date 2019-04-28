@@ -3,7 +3,7 @@ title: Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 description: Toto téma popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
 author: perlynne
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
-ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
+ms.openlocfilehash: d4082464dafebfcadd02425081f5f9b5716af01a
+ms.sourcegitcommit: 118cd383a327519a266dfe27720b12e9bbfbac14
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "777265"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "946426"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 
@@ -97,7 +97,9 @@ Například **Krabice** je jednotka skutečné hmotnosti a přijmete jednu palet
 
 Když se nepoužívá sledování štítků skutečné hmotnosti, lze zaznamenat hmotnost pro každou sadu dimenzí, (například pro každou poznávací značku a sledovací dimenzi). Případně lze zaznamenat hmotnost podle agregované úrovně, například pět poznávacích značek (palet).
 
-Pro metody zaznamenání výstupní hmotnosti lze definovat, zda se vážení provádí pro každou jednotku skutečné hmotnosti (to znamená pro krabici), nebo zda je zachycena hmotnost na základě množství, které bude vyskladněno (například tři krabice). Všimněte si, že pro proces výdeje řádku výroby se použije průměrná hmotnost, pokud není použita možnost **Nezaznamenáno**.
+Pro metody zaznamenání výstupní hmotnosti lze definovat, zda se vážení provádí pro každou jednotku skutečné hmotnosti (to znamená pro krabici), nebo zda je zachycena hmotnost na základě množství, které bude vyskladněno (například tři krabice). Všimněte si, že pro proces výdeje řádku výroby a interních procesů pohybu se použije průměrná hmotnost, pokud není použita možnost **Nezaznamenáno**.
+
+Pokud chcete omezit proces výběru procesů při zaznamenání hmotností, jehož výsledkem jsou úpravy skutečné hmotnosti/ztrát, lze použít metodu odchylky od původní hmotnosti.
 
 ## <a name="supported-scenarios"></a>Podporované scénáře
 
@@ -121,14 +123,12 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
  
 ### <a name="order-processing"></a>Zpracování objednávky
 
-- Mezipodnikové zpracovávání objednávek není podporováno.
 - Vytvoření avíza expedice zboží expedice (ASN/struktury balení) nepodporuje informace o hmotnosti.
 - Objednané množství musí být spravované na základě jednotky skutečné hmotnosti.
  
 ### <a name="inbound-warehouse-processing"></a>Příchozí zpracování skladu
 
 - Přijetí poznávacích značek vyžaduje, aby byly hmotnosti přiřazeny při registraci, vzhledem k tomu, že informace o hmotnosti není podporována jako součást avíza expedice zboží. Když se používají procesy štítku skutečné hmotnost, musí být číslo štítku ručně přiřazen o podle jednotky skutečné hmotnosti.
-- Přijetí smíšených poznávacích značek není podporováno pro produkty se skutečnou hmotností.
  
 ### <a name="inventory-and-warehouse-operations"></a>Operace skladů a zásob
 
@@ -169,7 +169,6 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
  
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Další omezení a chování pro zpracování produktů se skutečnou hmotností se správou skladu
 
-- Když jsou štítky skutečné hmotnosti zaznamenány jako součást zpracování aplikace, uživatel nemůže provést zrušení z workflow.
 - Během procesů výdeje, kde není uživatel vyzván k identifikaci sledovacích dimenzí, se provádí přiřazení hmotnosti na základě průměrné hmotnosti. K tomuto chování dochází například v případě, že je ve stejném umístění použita kombinace sledovacích dimenzí a poté, co uživatel zpracuje výdej, zůstane v umístění pouze jedna hodnota sledovací dimenze.
 - Pokud jsou zásoby rezervovány pro produkt se skutečnou hmotností, který je konfigurován pro procesy správy skladu, rezervace se provádí na základě definované minimální hmotnosti, a to i v případě, že je toto množství naposledy zpracovávané množství zásob na skladě. Toto chování se liší od chování pro položky, které nejsou nakonfigurovány pro procesy správy skladu.
 - Procesy, které používají hmotnost jako součást výpočtů kapacity (prahové hodnoty vln, maximální pracovní přestávky, maxima kontejnerů, kapacit vytížení místa atd.) nepoužívají skutečnou hmotnost zásob. Místo toho jsou procesy založeny na fyzické hmotnosti zpracování definované pro produkt.
@@ -193,3 +192,5 @@ V současné době je funkce štítků skutečné hmotnosti podporována pouze j
 - Když jsou kontejnery znovu otevřeny.
 - Když jsou produkty receptury vykazovány jako dokončené pomocí aplikace skladu.
 - Při zpracování nákladů přepravy s použitím aplikace skladu.
+
+Značku skutečné hmotnosti lze vytvořit pomocí procesu skladové aplikace, ručně ve formuláři nebo pomocí procesu datové entity. Pokud se značka skutečné hmotnosti přidruží k příchozí řádce zdrojového dokumentu, jako je řádka nákupní objednávky, značka bude zaregistrována. Je-li řádek použit pro odchozí zpracování. Značka bude aktualizována jako expedovaná.

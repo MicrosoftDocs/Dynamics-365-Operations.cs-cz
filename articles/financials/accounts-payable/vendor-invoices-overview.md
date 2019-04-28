@@ -1,9 +1,9 @@
 ---
 title: Přehled faktur dodavatele
 description: V tomto článku jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,24 @@ ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e563688b46c556ffbf46f9d20d9b9f248d26e02c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1d7cec48b1e01d308cfc67260ac82a50a8d76844
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329751"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975795"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 V tomto článku jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb. 
 
-<a name="vendor-invoices"></a>Faktury dodavatele
----------------
+## <a name="vendor-invoices"></a>Faktury dodavatele
 
 Faktura dodavatele z nákupní objednávky je faktura, která je vytvořena při přijetí produktů nebo služeb podle nákupní objednávky, kterou jste uskutečnili s dodavatelem. Faktura dodavatele obsahuje hlavičku a jeden nebo více řádků se zbožím nebo službami. Faktura dodavatele představuje konec cyklu nákupní objednávky, příjemky produktu a faktury dodavatele. 
 
@@ -79,8 +79,15 @@ Více informací naleznete v tématu [Zaznamenání faktury dodavatele a spáro
 
 Můžete pracovat s více fakturami současně a zaúčtovat je všechny najednou. Pokud je nutné vytvořit více faktur, použijte stránku **Nevyřízené faktury dodavatele**. Potřebujete-li zaúčtovat a vytisknout více faktur dodavatele, použijte stránku deníku pro schvalování faktur. Když používáte deník pro schvalování faktur, musí být pro nákupní objednávku zaúčtována alespoň jedna příjemka produktu a faktura pro nákupní objednávku musí být zaúčtována do registru faktur. Finanční informace pro fakturu pocházejí z faktury zaúčtované do registru.
 
+## <a name="recovering-vendor-invoices-that-are-in-use"></a>Obnovení faktur dodavatele, které se používají
 
-Další informace naleznete zde: 
+Když se používá faktura dodavatele, nemůže být upravena jiným uživatelem. Stav faktury však může někdy znamenat, že se faktura používá, i když není aktivně upravována. Aplikace například mohla přestat odpovídat, když byla faktura upravována, nebo uživatel může nechtěně nechat otevřenou fakturu v aplikaci.
+
+Můžete použít stránku **Obnovit faktury dodavatel** pro obnovení nebo uvolnění faktur dodavatele, které byly používány déle než čtyři hodiny, aby mohly být upraveny. Můžete otevřít tuto stránku z navigace **Periodická úloha** nebo dlaždice v pracovním prostoru **Záznam faktury dodavatele**. Po obnovení faktury bude k dispozici pro úpravy na stránce **Faktura dodavatele**.
+
+Na stránku **Obnovit faktury dodavatele** budete mít přístup pouze v případě, že vám je přiděleno funkční oprávnění zabezpečení **Obnovit používané faktury dodavatele**. Kromě toho musí být zapnutý parametr **Povolit obnovení faktury dodavatele** na stránce **Parametry závazků**.
+
+## <a name="additional-resources"></a>Další zdroje
 
  - [Nastavení zásad faktur dodavatele](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 

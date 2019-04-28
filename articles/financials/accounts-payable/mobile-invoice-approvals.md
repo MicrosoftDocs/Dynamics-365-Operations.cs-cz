@@ -1,7 +1,7 @@
 ---
 title: Mobilní schvalování faktur
 description: Toto téma poskytuje praktický přístup k navrhování mobilních scénářů v Dynamics 365 for Finance and Operations převzetím schválení faktur dodavatele pro mobilní zařízení jako příklad použití.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5a48ea7b0c1faf5726de21a246e3d8b4d98f166a
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "314387"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "897171"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobilní schvalování faktur
 
@@ -37,8 +37,8 @@ Mobilní funkce v aplikaci Microsoft Dynamics 365 for Finance and Operations umo
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Předběžná verze mobilní příručky                                                                                |[Mobilní platforma](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 for Finance and Operations                                                                             | Prostředí, které má Microsoft Dynamics 365 for Operations verzi 1611 a Microsoft Dynamics for Operations s aktualizací Platform Update 3 (listopad 2016)                   |
-| Nainstalujte opravu hotfix KB 3204341.                                                                              | Záznamník úloh může omylem zaznamenat dva příkazy k zavření rozevíracích dialogových oken, které jsou součástí aktualizace 3 Dynamics 365 for Operations (aktualizace z listopadu 2016) |
-| Nainstalujte opravu hotfix KB 3207800.                                                                              | Tato oprava hotfix umožňuje zobrazovat přílohy v mobilním klientovi, který je zahrnutý v aktualizaci 3 platformy Dynamics 365 for Operations (aktualizace z listopadu 2016).           |
+| Nainstalujte opravu hotfix KB 3204341.                                                                              | Záznamník úloh může omylem zaznamenat dva příkazy k zavření rozevíracích dialogových oken, které jsou součástí aktualizace Dynamics 365 for Operations Platform Update 3 (aktualizace z listopadu 2016) |
+| Nainstalujte opravu hotfix KB 3207800.                                                                              | Tato oprava hotfix umožňuje zobrazovat přílohy v mobilním klientovi, který je zahrnutý v Dynamics 365 for Operations Platform Update 3 (aktualizace z listopadu 2016).           |
 | Nainstalujte opravu hotfix KB 3208224.                                                                              | Kód aplikace pro mobilní aplikaci schvalování faktur dodavatele je zahrnut v aplikaci Microsoft Dynamics AX 7.0.1 (květen 2016).                          |
 | Zařízení se systémem Android nebo iOS nebo se systémem Windows, které má nainstalovanou mobilní aplikaci Finance and Operations | Vyhledejte aplikaci v příslušném obchodě s aplikacemi.                                                                                                                     |
 

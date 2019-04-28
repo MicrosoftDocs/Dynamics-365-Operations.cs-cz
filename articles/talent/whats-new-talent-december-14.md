@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7d2866923efd7f115ad5290f35ed4fcac5e47573
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c2d209cac52665053b664a93bfb6c35e171b0948
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303504"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949844"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (14. prosince 2018)
 
@@ -65,7 +65,7 @@ Touto změnou jsou nyní v Power BI podporovány přestupné dny.
 
 ### <a name="integration-between-core-hr-and-attract"></a>Integrace mezi aplikacemi Core HR a Attract
 
-Byla provedena změna, která má aktualizovat integraci mezi aplikacemi Core HR a Attract související s nabíranými uchazeči. Aby nabíraná uchazeči byli vidět v pracovním prostoru **Správa zaměstnanců**, jsou pro entity aplikací (CDS 2.0) použity následující CDS:
+Byla provedena změna, která má aktualizovat integraci mezi aplikacemi Core HR a Attract související s nabíranými uchazeči. Aby nabíraní kandidáti byli vidět v pracovním prostoru **Správa zaměstnanců**, jsou použity následující entity Common Data Service:
 
 Žádost o práci
 - Stav důvodů je třeba nastavit na přijetí nabídky
@@ -139,7 +139,7 @@ Aktualizované mapování by mělo vypadat jako obrázek níže.
 
 Transformace pole pohlaví je rovněž třeba aktualizovat. Vyberte typ mapy **fn** (funkce) pro pohlaví a aktualizujte následující mapování hodnot.
 
-| Hodnota CDS                   | Hodnota aplikace Finance and Operations                     |
+| Hodnota Common Data Service                   | Hodnota aplikace Finance and Operations                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | Muž                                             |
 | 75440001                    | Žena                                           |

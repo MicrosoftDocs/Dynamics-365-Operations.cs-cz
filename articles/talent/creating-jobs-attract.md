@@ -1,30 +1,30 @@
 ---
 title: Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Attract
 description: Toto téma popisuje prvky pracovního místa v aplikaci Attract. Také vysvětluje, jakým způsobem vytvořit pracovní místo.
-author: josaw
+author: hasrivas
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
-ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
+ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "772804"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "969342"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Attract
 
@@ -44,7 +44,7 @@ Karta **Detaily pracovního místa** obsahuje podrobnosti o odpovědnostech a at
 
 Ve výchozím nastavení je v poli **Počet volných míst** zadána hodnota **1**. Hodnotu však lze upravit. Jakmile je připravena nabídka pracovního místa, hodnota v poli **Počet volných míst** se postupně snižuje.
 
-Pokud je v centru pro správu zapnutá správa pracovních míst, je k dispozici vyhledávací hodnota **Aktualizovat pracovní místa**. Tento vyhledávací kód čte entitu JobPosition v aplikaci Common Data Service pro aplikace a vrací seznam pozic, které lze pro pracovní místo vybrat. Pokud počet pozic, které vyberete, přesáhne počet otevřených pozic, zobrazí se upozornění. Je-li pozice použita ve více pracovních místech, zobrazí se varování.
+Pokud je v centru pro správu zapnutá správa pracovních míst, je k dispozici vyhledávací hodnota **Aktualizovat pracovní místa**. Tento vyhledávací kód čte entitu JobPosition v aplikaci Common Data Service a vrací seznam pozic, které lze pro pracovní místo vybrat. Pokud počet pozic, které vyberete, přesáhne počet otevřených pozic, zobrazí se upozornění. Je-li pozice použita ve více pracovních místech, zobrazí se varování.
 
 > [!NOTE]
 > Správa pozice je k dispozici s doplňkem Comprehensive Hiring.
@@ -74,9 +74,7 @@ Další informace o aktivitách, které lze přidat do procesu náboru, naleznet
 
 ## <a name="postings"></a>Zaúčtování
 
-Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveřejnit jen náborář a správce. Pracovní místo lze zveřejnit na webu Talent Careers (kariérní web systému Dynamics 365 for Talent) nebo LinkedIn. 
-
-Tým Attract průběžně pracuje na partnerství s agregátory vývěsky volných míst. Tento seznam se bude průběžně rozšiřovat.
+Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveřejnit jen náborář a správce. Pracovní místo lze zveřejnit na webu Talent Careers (kariérní web systému Dynamics 365 for Talent) nebo LinkedIn. Tým Attract průběžně pracuje na partnerství s agregátory vývěsky volných míst. Tento seznam se bude průběžně rozšiřovat. Když je práce zveřejněna pouze jako interní, uchazeči potřebují účet AAD k zobrazení pracovní nabídky a podání žádosti. Pokud je nabídka práce uvedena jako veřejná, uchazeči mohou zobrazit nabídky a zažádat za ně pomocí všech možností ověřování. 
 
 Další informace o nabídce volných pracovních míst naleznete v tématu [Funkce Kariérní web v aplikaci Attract](career-site.md).
 
@@ -137,9 +135,14 @@ Po uložení pracovního místa je možné ho odeslat ke schválení. V následu
 
 V seznamu pracovních pozic můžete filtrovat stavy úloh.
 
-Schválení lze odeslat uživateli Microsoft Azure Active Directory (Azure AD) ve společnosti. Schválení jsou odeslána současně všem uživatelům, kteří jsou uvedeni jako schvalovatelé. Po schválení pracovního místa je lze aktivovat.
+Schválení lze odeslat uživateli Microsoft Azure Active Directory (Azure AD) ve společnosti. Schválení jsou odeslána současně všem uživatelům, kteří jsou uvedeni jako schvalovatelé. Všichni schvalovatelé musí schválit práci před tím, než bude možné jít dále. Pokud jeden schvalovatel práci zamítne, zobrazí se u ní stav **Odmítnuto**. Po schválení pracovního místa je lze aktivovat.
 
-Osoby, které jsou uvedeny jako schvalovatelé, obdrží upozornění v aplikaci Attract s informací, že se mají položku ke schválení. Položka ke schválení se zobrazí také v části **Přiřazené** v řídicím panelu. Jakmile někdo pracovní místo přijme nebo schválí, náborový tým obdrží upozornění. Nakonec obdrží náborový tým upozornění na schválení pracovního místa.
+Pokud uživatel nabídku upraví po schválení, ale neaktivuje ji, bude stav práce obnoven na **Koncept** a bude nutné ji znovu odeslat ke schválení. Poté, co byla schválená práce aktivována, nelze ji upravit.
+
+Osoby, které jsou uvedeny jako schvalovatelé, obdrží upozornění v aplikaci Attract a e-mailovou zprávu s informací, že se mají položku ke schválení.  Schvalující může v e-mailu kliknutím na odkaz práci otevřít, zkontrolovat podrobnosti a schválit ji nebo zamítnout. Po nastavení stavu práce na **Schváleno** nebo **Zamítnuto**, předkladatel bude upozorněn v systému Attract a obdrží e-mail. Schvalující také obdrží e-mailové připomenutí, pokud na žádost o schválení neodpoví do 24 hodin.
+
+> [!NOTE]
+> Můžete vytvořit vlastní e-mailové šablony ke schvalování emailů. Další informace získáte v části [Vytvoření a správa e-mailových šablon](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Vytvoření práce
 

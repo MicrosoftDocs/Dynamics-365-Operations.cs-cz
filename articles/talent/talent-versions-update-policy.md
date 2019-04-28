@@ -1,7 +1,7 @@
 ---
 title: Systémové požadavky aplikace Talent a zásady aktualizace
 description: Toto téma obsahuje požadavky na Dynamics 365 for Talent. Jsou zde také popsány zásady aktualizací.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
-ms.author: shielas
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64362ae9e4ebb63ca6da2cd2f41376d1d9047694
-ms.sourcegitcommit: c6af2de37309b574dcb69c9caad436b55136600f
+ms.openlocfilehash: 2389f00b22ec3b5284eeffb2c015533b7a3d13e0
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "768478"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "856294"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Systémové požadavky aplikace Talent a zásady aktualizace
 
@@ -54,7 +54,7 @@ Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce soft
 
 ## <a name="supported-microsoft-office-applications"></a>Podporované aplikace Microsoft Office
 
-* Chcete-li používat doplňky aplikace Microsoft Excel a Word, musíte mít nainstalovanou sadu Microsoft Office 2016 pro Windows nebo Mac. Další informace o požadavcích na verzi naleznete v tématu [Office integration troubleshooting](../dev-itpro/office-integration/office-integration-troubleshooting.md "Řešení problémů s integrací se sadou Office").
+* Chcete-li používat doplňky aplikace Microsoft Excel a Word, musíte mít nainstalovanou sadu Microsoft Office 2016 pro Windows nebo Mac. Další informace o požadavcích na verzi naleznete v tématu [Řešení problémů s integrací se sadou Office](../dev-itpro/office-integration/office-integration-troubleshooting.md "Řešení problémů s integrací se sadou Office").
 * Chcete-li zobrazit dokumenty, které jsou generovány pomocí funkce exportu do aplikace Excel nebo Word funkce, musíte mít nainstalovanou sadu Microsoft Office 2007 nebo novější.
 
 ## <a name="update-policy"></a>Zásady aktualizace

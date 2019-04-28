@@ -1,29 +1,29 @@
 ---
 title: Funkce kariérního webu v aplikaci Attract
 description: Toto téma poskytuje přehled funkce kariérního webu vystaveného kandidátům v aplikaci Attract
-author: josaw1
+author: hasrivas
 manager: AnnBe
-ms.date: 02/12/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 087ab4034a1e601e7f3514c77d56ef54b0c5c52d
-ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
+ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
+ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "389952"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898924"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funkce kariérního webu v aplikaci Attract
 
@@ -43,15 +43,15 @@ Pokud chcete nastavit hodnoty pro následující položky, přihlaste se k syst�
 
 -   **Logo organizace:** - V levém horním rohu kariérního webu se zobrazuje obrázek loga organizace. Když uchazeč vybere obrázek loga, přejde na stránku se seznamem všech otevřených pracovních míst.
 
-    >   [!NOTE] 
-    >   Obrázek loga, který se zobrazí na stránce kariérního webu, má pevnou výšku 20 pixelů (px). Obrázek, který přidáte do Centra pro správu, se přizpůsobuje stránce. Proto se může šířka měnit v závislosti na obrázku.
+    > [!NOTE] 
+    > Obrázek loga, který se zobrazí na stránce kariérního webu, má pevnou výšku 20 pixelů (px). Obrázek, který přidáte do Centra pro správu, se přizpůsobuje stránce. Proto se může šířka měnit v závislosti na obrázku.
  
 Pokud chcete nastavit hodnoty pro následující položky, přihlaste se k aplikaci Attract jako správce, vyberte **Centrum pro správu** v nabídce **Nastavení** a poté zvolte kartu **Správa kariérního webu**.
 
 -   **Optimalizace pro vyhledávače** - Pokud je povolena, budou všechny nabídky práce publikované na kariérním webu Attract vyhledávatelné pomocí vyhledávačů, jako jsou Bing a Google.
 
-    >   [!NOTE] 
-    >   Může dojít ke zpoždění mezi zapnutím tohoto nastavení a zobrazením výsledků vyhledávání, v závislosti na používaném vyhledávači.
+    > [!NOTE] 
+    > Může dojít ke zpoždění mezi zapnutím tohoto nastavení a zobrazením výsledků vyhledávání, v závislosti na používaném vyhledávači.
          
 ## <a name="career-site-urls"></a>URL adresy kariérního webu
 
@@ -81,15 +81,17 @@ Uchazeči mají k dispozici následující možnosti přihlašování ke kariér
 
     -   Microsoft Azure Active Directory (Azure AD)
 
-Přihlašování ke službě Azure AD je určeno pouze pro interní kandidáty. Proto funguje pouze pro interní uchazeče, kteří používají své přihlašovací údaje služby Azure AD. Například uchazeč, který je aktuálně zaměstnancem společnosti Contoso Ltd., chce zažádat o zaměstnání v nesouvisející společnost Alpine Ski House. V takovém případě přihlášení nebude úspěšné, pokud se zaměstnanec pokusí použít své přihlašovací údaje ke službě Azure AD od společnosti Contoso Ltd.
+Přihlašování ke službě Azure AD je určeno pouze pro interní kandidáty. Proto funguje pouze pro interní uchazeče, kteří používají své přihlašovací údaje služby Azure AD. Například uchazeč, který je aktuálně zaměstnancem společnosti Contoso Ltd., chce zažádat o zaměstnání v nesouvisející společnost Alpine Ski House. V takovém případě přihlášení nebude úspěšné, pokud se zaměstnanec pokusí použít své přihlašovací údaje ke službě Azure AD od společnosti Contoso Ltd. 
+
+Zájemci se musí přihlásit s použitím Azure AD, pokud je práce, kterou zobrazují nebo o niž žádají, uvedena pouze jako interní.
 
 ## <a name="create-and-maintain-a-profile"></a>Vytvoření a správa profilu
 
 Poté, co se uchazeči přihlásí ke kariérnímu webu, mohou vybrat **Můj profil** na navigačním panelu v horní části stránky, kde mohou vytvořit a spravovat svůj profil.
 Profil obsahuje osobní údaje, údaje o pracovních zkušenostech, podrobnostech o vzdělání, dokumenty, odkazy a informace o kvalifikačních předpokladech. Po vytvoření lze profil použít k zažádání o pracovní místa, o která má uchazeč zájem. Profily také pomáhají systému Attract doporučit správná pracovní místa uchazečům.
 
->   [!NOTE]
->   Pokud kandidát použije ID e-mailu k přihlášení pomocí jednoho z výše uvedených poskytovatelů ověřování, toto e-mailové ID bude standardně nastaveno na ID e-mailu kontaktu přidruženého k profilu. Ty druhé však mohou být kdykoliv změněny a jsou zcela nezávislé na prvním. Attract vždy použije ID e-mailu kontaktu pro přidružení k vašemu profilu pro všechny e-mailové komunikace.
+> [!NOTE]
+> Pokud kandidát použije ID e-mailu k přihlášení pomocí jednoho z výše uvedených poskytovatelů ověřování, toto e-mailové ID bude standardně nastaveno na ID e-mailu kontaktu přidruženého k profilu. Ty druhé však mohou být kdykoliv změněny a jsou zcela nezávislé na prvním. Attract vždy použije ID e-mailu kontaktu pro přidružení k vašemu profilu pro všechny e-mailové komunikace.
 
 ## <a name="find-the-right-job"></a>Vyhledání správné práce
 
@@ -97,13 +99,38 @@ Na stránce se seznamem práce mohou uchazeči vyhledat určité pracovní míst
 
 Uchazeči také mohou zobrazit sadu doporučených pracovních míst na kariérním webu. Pracovní místa, která jsou uchazeči doporučena, jsou založena na minulých žádostech uchazeče, profilu a životopisech.
 
->   [!NOTE] 
->   Doporučení pracovních míst se zobrazí pouze v případě, že je na kariérním webu zveřejněno nejméně 10 pracovních míst, a pokud uchazeč vyplnil svůj profil.
+> [!NOTE] 
+> Doporučení pracovních míst se zobrazí pouze v případě, že je na kariérním webu zveřejněno nejméně 10 pracovních míst, a pokud uchazeč vyplnil svůj profil.
+
+Interní uchazeči se také mohou podívat, kdo je náborový manažer nebo pracovník u dané práce, pro případ, že by tyto členy náborového týmu chtěli kontaktovat. Externí uchazeči se však nemohou podívat, kdo jsou členové náborového týmu u jakékoli zakázky.
+
+## <a name="contact-the-hiring-team"></a>Kontaktovat náborový tým
+Pouze interní uchazeči mohou kontaktovat náborový tým. Toto omezení se vztahuje na všechny práce, bez ohledu na to, jestli jsou jenom interní nebo byly zveřejněny.
+
+Zájemci mohou chtít kontaktovat náborový tým, aby vyjádřili zájem o práci, která byla zveřejněna, nebo aby o ní získali více informací. Mohou kontaktovat kohokoli z náborového týmu, kdo je uveden (náboroví manažeři nebo pracovníci). Ke zprávě mohou také volitelně připojit životopis nebo mohou vybrat současný životopis, který předtím nahráli v rámci svého profilu.
+
+Poté, co interní uchazeč vybere členy náborového týmu ke kontaktování, Attract pošle těmto lidem e-mail jménem uchazeče. Současně je profilu uchazeče přidán do fáze **potenciální zaměstnanec**, pokud je tato fáze pro práci dostupná. Ve fázi **potenciální zaměstnanec** mohou náboroví pracovníci nebo manažeři zobrazovat uchazeče, kteří je kontaktovali. Mohou také prohlížet profily uchazečů a pozvat potenciální uchazeče, aby o práci zažádali.
+
+Uchazeči mohou zažádat o práci, ohledně které už kontaktovali členy náborového týmu. Jakmile podají žádost, nemohou dále kontaktovat náborový tým prostřednictvím kariérního webu.
 
 ## <a name="apply-for-jobs"></a>Žádost o práci
 
-Poté, co uchazeči najdou správnou práci, mohou o ni zažádat pomocí tlačítka **Požádat** na stránce **Podrobnosti o práci**. V tomto okamžiku mohou uchazeči vytvořit nový profil nebo zkontrolovat informace ve svém existujícím profilu.
+Poté, co uchazeči najdou správnou práci, mohou o ni zažádat pomocí tlačítka **Požádat**  na stránce **Podrobnosti o práci**. V tomto okamžiku mohou uchazeči vytvořit nový profil nebo zkontrolovat informace ve svém existujícím profilu.
 Uchazeči také mohou nahrát podle potřeby životopis a odeslat žádost o práci.
+
+### <a name="enable-applying-for-jobs-with-linkedin-profiles"></a>Povolení žádostí o práci s profily na webu LinkedIn
+
+Uchazečům můžete usnadnit žádost o pracovní místa konfigurací aplikace Attract tak, aby jim umožnila podávat žádosti prostřednictvím webu LinkedIn.
+
+> [!NOTE] 
+> K tomu je potřeba jedna nebo více licencí náborových pracovníků LinkedIn předtím, než budou moci podat žádost pomocí webu LinkedIn.
+
+1. Přihlaste se do aplikace Attract jako správce.
+2. Zvolte tlačítko **Nastavení** tlačítko (symbol ozubeného kola) v pravém horním rohu stránky a vyberte **Centrum pro správu**.
+3. Vyberte kartu **Integrace LinkedIn** a připojte se k účtu LinkedIn Recruiter.
+4. V části **Integrace programu LinkedIn Recruiter System Connect** vyberte **Povoleno** pro nastavení **Zažádat pomocí webu LinkedIn**.
+
+Poté, co jste povolili toto nastavení, mohou uživatelé k žádosti použít svá stávající data profilu LinkedIn. Když uživatelé zažádají pomocí tlačítka **Zažádat pomocí služby LinkedIn**, jsou ožádáni o ověření ve službě LinkedIn, zda nejsou přihlášení. Po ověření nahradí jejich profil LinkedIn existující data profilu zobrazená na stránce aplikace. Zájemci mohou podle potřeby upravovat informace a následně odeslat žádost Pokud uchazeč přejde mimo stránku bez žádosti o práci, data profilu se neaktualizují v Attract.
 
 ## <a name="check-application-status"></a>Kontrola stavu žádosti
 
