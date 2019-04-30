@@ -3,7 +3,7 @@ title: Postupy a operace
 description: Toto téma obsahuje obecné informace o postupech a operacích.
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 417fd960a43ad3fd023ea0c4a17be735b69743de
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
+ms.sourcegitcommit: dc90d56050d7353930d048476451542cce147e37
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333339"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "850661"
 ---
 # <a name="routes-and-operations"></a>Postupy a operace
 
@@ -59,11 +59,10 @@ Pokud ve formuláři Parametry modulu Řízení výroby povolíte složitější
 
 [![Síťový postup](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
-**Poznámky:**
-
--   Každá operace může mít pouze jednu následnou operaci a celý postup musí končit jednou operací.
--   Neexistuje žádná záruka, že více operací, které mají stejnou následnou operaci (například operace 30 a 40 na předchozím obrázku), budou skutečně probíhat souběžně. Dostupnost a kapacita prostředků může omezovat plánování operací.
--   Jako číslo operace nelze použít hodnotu 0 (nula). Toto číslo je rezervováno a slouží k určení skutečnosti, že poslední operace v postupu nemá žádné následné operace.
+> [!NOTE]
+> -   Každá operace může mít pouze jednu následnou operaci a celý postup musí končit jednou operací.
+> -   Neexistuje žádná záruka, že více operací, které mají stejnou následnou operaci (například operace 30 a 40 na předchozím obrázku), budou skutečně probíhat souběžně. Dostupnost a kapacita prostředků může omezovat plánování operací.
+> -   Jako číslo operace nelze použít hodnotu 0 (nula). Toto číslo je rezervováno a slouží k určení skutečnosti, že poslední operace v postupu nemá žádné následné operace.
 
 ### <a name="parallel-operations"></a>Paralelní operace
 
@@ -122,7 +121,8 @@ Můžete také určit, že vztah operace bude platit jen pro konkrétní pracovi
 
 Vztahy operací zajišťují při definici postupů velkou flexibilitu. Možnost definovat výchozí vlastnosti navíc pomáhá snižovat množství hlavních dat, která je nutné uchovávat. Tato flexibilita však také znamená, že si musíte být vědomi kontextu, ve kterém vztahy operací upravujete.  
 
-**Poznámka:** Provozní vlastnosti jsou uloženy ve vztazích operací u každé operace a každého postupu a všechny výskyty stejné operace (například montáže) mají stejný přípravný a operační čas, požadavky na prostředky a podobně. Pokud se tedy dva výskyty operace musí nacházet ve stejném postupu, ale mají různé operační časy, je nutné vytvořit dvě samostatné operace, například Montáž1 a Montáž2.
+> [!NOTE]
+> Provozní vlastnosti jsou uloženy ve vztazích operací u každé operace a každého postupu a všechny výskyty stejné operace (například montáže) mají stejný přípravný a operační čas, požadavky na prostředky atd. Pokud se tedy dva výskyty operace musí nacházet ve stejném postupu, ale mají různé operační časy, je nutné vytvořit dvě samostatné operace, například Montáž1 a Montáž2.
 
 ### <a name="modifying-product-specific-routes"></a>Změna postupů u konkrétních produktů
 
@@ -132,7 +132,8 @@ Na stránce **Postup** můžete změnit provozní vlastnosti operace, napříkla
 
 Operaci, která je specifická pro daný postup a uvolněný produkt, můžete také ručně vytvořit pomocí funkce **Kopírovat a upravit vztah**.  
 
-**Poznámka:** Pokud k postupu přidáte novou operaci na stránce **Postup**, vztah operace se vytvoří pouze pro aktuální uvolněný produkt. Jestliže tedy postup slouží také k výrobě jiných uvolněných produktů, nebude pro ně existovat žádný platný vztah operace a postup nebude pro tyto uvolněné produkty možné dále používat.
+> [!NOTE]
+> Pokud k postupu přidáte novou operaci na stránce **Postup**, vztah operace se vytvoří pouze pro aktuální uvolněný produkt. Jestliže tedy postup slouží také k výrobě jiných uvolněných produktů, nebude pro ně existovat žádný platný vztah operace a postup nebude pro tyto uvolněné produkty možné dále používat.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Udržování vztahů operací u jednotlivých postupů
 
@@ -228,17 +229,32 @@ Pokud v rámci požadavků na prostředky u operace nezadáte provozní prost�
 -   **Dávka** – kapacita dávky se počítá s využitím informací ze vztahu operace. Počet dávek (a tím i čas zpracování) lze pak vypočítat na základě objednaného množství.
 -   **Dávka prostředku** – tato možnost je v podstatě stejná jako možnost **Dávka**. Při výpočtu se však zohledňuje i pole **Kapacita dávky** z provozního prostředku. Čas tedy závisí na prostředku.
 
+### <a name="set-up-route-groups"></a>Nastavit skupiny postupů
 
-<a name="additional-resources"></a>Další zdroje
---------
+Můžete definovat skupiny postupů a nastavení pro typy postupu nebo práce v části **Řízení výroby > Nastavení > Postupy > Skupiny postupu**. Pro každý typ postupu/práce ve skupině postupů můžete zvolit nebo vyčistit následující možnosti:
 
-[Kusovníky a receptury](bill-of-material-bom.md)
+- **Aktivace** - Tuto možnost vyberte pro povolení výpočtů a k plánování pro vybraný typ úlohy a přijetí zpětné vazby na práci, když spustíte plánování úloh. Chcete-li povolit typ práce, musíte vybrat tuto možnost a poté vybrat další možnosti pro daný typ práce. Pokud není aktivace zvolena, tento typ práce nebude povolen bez ohledu na výběr dalších možností. 
+- **Správa práce** - Zaškrtnutím tohoto políčka zahrnete typ práce do správy práce při spuštění plánování práce. 
+- **Pracovní doba** Tuto možnost vyberte pro plánování typu práce podle kalendáře pracovní doby, který je definován pro zdroj provozního prostředku. V opačném případě bude použit gregoriánský kalendář. Pracovní čas lze plánovat podle gregoriánského kalendáře nebo pomocí definovaného pracovního kalendáře. Pokud tuto možnost vyberete, plánování vychází z definovaného kalendáře pracovní doby. Kromě toho úloha příslušného typu úlohy bude naplánována od půlnocí data, které je definováno jako počáteční datum úlohy.
+- **Kapacita** Zaškrtnutím tohoto políčka rezervujete kapacitu pro typ úlohy při spuštění plánování úloh. Zaškrtnutím této možnosti bude kapacita rezervována při spuštění plánování pro vybraný typ úlohy. To umožňuje získat přehled, které typy úloh v každé skupině postupů používají provozní prostředky. Například v případě, že sušicí prostředky jsou kritickými prostředky, musí být zadány tyto prostředky jako kritická místa. Operace sušení, které jsou přiřazeny k typům úloh času čekání, zarezervují prostředky sušení. 
 
-[Nákladové kategorie použité ve výrobních postupech](../cost-management/cost-categories-used-production-routings.md)
+Pro jednotlivé typy práce je musíte nejprve aktivovat nebo deaktivovat. Při deaktivaci nebude zvažováno žádné z ostatních nastavení (Správa práce, pracovní doba a kapacita), protože typ úlohy nebude aktivní. 
 
-[Schopnosti prostředku](resource-capabilities.md)
+Mezi typy prací lze najít Překrytí. Překrytí umožňuje, aby různé práce byly vykonány současně. Pokud se práce překrývají, lze použít zdroje, ale nelze je rezervovat pro konkrétní práce.
+Když je tedy volba Aktivace vybrána pro Překrytí, zbytek nastavení (Správa práce, Pracovní doba a Kapacita) nemá žádný vliv na skupinu postupů. 
 
-[Přehled elektronických podpisů](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+> [!NOTE]
+> Při upgradu verze může dojít k následující chybě: **V průběhu vyvolání modulu plánování došlo k chybě modulu CLR.**. Zobrazí-li se tato chyba, přejděte na stránku **Skupiny postupu** a pro všechny postupy, u kterých jste aktivovali **Překrytí**, zrušte možnosti **Správa práce**, **Pracovní doba** a **Kapacita**. 
+
+## <a name="additional-resources"></a>Další zdroje
+
+- [Kusovníky a receptury](bill-of-material-bom.md)
+
+- [Nákladové kategorie použité ve výrobních postupech](../cost-management/cost-categories-used-production-routings.md)
+
+- [Schopnosti prostředku](resource-capabilities.md)
+
+- [Přehled elektronických podpisů](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 

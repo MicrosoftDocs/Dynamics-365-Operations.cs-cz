@@ -1,7 +1,7 @@
 ---
-title: Zajištění zdrojů pomocí LinkedIn Recruiter
+title: Zdroje pomocí LinkedIn Recruiter
 description: Toto téma obsahuje informace o používání strojového učení pro získání doporučení práce a uchazeče o práci.
-author: josaw
+author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
@@ -10,23 +10,23 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4ac7a302e5bf589beb2b560b0ff5818e90c67139
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303527"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859567"
 ---
-# <a name="sourcing-with-linkedin-recruiter"></a>Zajištění zdrojů pomocí LinkedIn Recruiter
+# <a name="sourcing-with-linkedin-recruiter"></a>Zdroje pomocí LinkedIn Recruiter
 [!include[banner](../includes/banner.md)]
 
 LinkedIn je největší databáze talentů na světě a často slouží jako primární systém, který náboráři používají k vyhledávání, komunikaci a zajišťování zdrojů uchazečů o pracovní pozice, které chtějí náboráři obsadit. Integrace programu LinkedIn Recruiter s aplikací Dynamics 365 for Talent: Attract uživatelům usnadňuje nábor a udržování synchronizace dat mezi dvěma systémy.
@@ -34,7 +34,7 @@ LinkedIn je největší databáze talentů na světě a často slouží jako pri
 > [!NOTE]
 > Aby bylo možné používat integraci programu LinkedIn Recruiter s aplikací Attract, je potřeba doplněk Comprehensive hiring a licence LinkedIn Recruiter.
 
-## <a name="set-up-linkedin-recruiter-with-attract"></a>Nastavení webu LinkedIn Recruiter s aplikací Attract 
+## <a name="set-up-linkedin-recruiter-with-attract"></a>Nastavení programu LinkedIn Recruiter s aplikací Attract 
 
 Než budete moci využívat program LinkedIn Recruiter, musíte nakonfigurovat přístup na úrovni smlouvy nebo společnosti s instancí aplikace Attract. Pro dokončení procesu konfigurace musíte spolupracovat s uživatelem, který je správce vaší smlouvy o programu LinkedIn Recruiter. Pomocí následujících kroků nakonfigurujte LinkedIn Recruiter s aplikací Attract.
 
@@ -66,15 +66,15 @@ Systém Attract bude uveden s několika možnostmi, které lze zapnout.
 
 9. Pokud chcete povolit export pouze 1-kliknutím pro **indikátor In-ATS** a **miniaplikaci In-ATS profil**, vyberte **přístup na úrovni společnosti**. Pokud chcete povolit všechny funkce přístupu na úrovni společnosti plus historii InMail a přístupu neúplného profilu InMail, vyberte **Přístup na úrovni smlouvy**.
 
-10. Zapněte požadovanou úroveň přístupu z nastavení **Admin ATS** programu LinkedIn Recruiter.
+10. Zapněte požadovanou úroveň přístupu z nastavení LinkedIn Recruiter **Admin-ATS**.
 
-[![Zapnutí integrace aplikace Attract ze zobrazení pro správu proramu LinkedIn Recruiter](./media/EnableRSC.png)](./media/EnableRSC.png)
+[![Zapnutí integrace aplikace Attract ze zobrazení pro správu programu LinkedIn Recruiter](./media/EnableRSC.png)](./media/EnableRSC.png)
 
 12. Přejděte zpět na nastavení pro správu jako správce Attract a vyberte kartu **Integrace LinkedIn**. Měli byste vidět vytížení miniaplikace LinkedIn načíst zobrazující možnost **povoleno** se zapnutou vybranou úrovní přístupu.
 
-[![Dokončená integrace programu LinkedIn Recruiter](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
+[![Dokončení integrace LinkedIn Recruiter](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
 
-## <a name="using-linkedin-recruiter-capabilities"></a>Použití možností webu LinkedIn Recruiter
+## <a name="using-linkedin-recruiter-capabilities"></a>Použití dovedností LinkedIn Recruiter
 
 Poté, co správce systému Attract povolí možnosti programu LinkedIn Recruiter, je program k dispozici pro přístup manažerům náboru a náborářům. Pokud chcete tyto možnosti použít, připojte se k účtu LinkedIn v části **uživatelská nastavení**. Poté, co byla připojena nastavení správce a uživatele, bude k dispozici několik možností.
 
@@ -132,7 +132,7 @@ Pokud chcete zobrazit historii InMail, přejděte na kartu **LinkedIn** a přejd
 
 ### <a name="notes-history"></a>Historie poznámek 
 
-Historie poznámek LinkedIn je v programu LinkedIn Recruiter dostupná s přístupem na úrovni smlouvy. Pokud je to povoleno, můžete zobrazit poznámky, které byly zachyceny o uchazeči podle různých náborářů z vaší organizace.
+Historie poznámek je v programu LinkedIn Recruiter dostupná s přístupem na úrovni smlouvy. Pokud je to povoleno, můžete zobrazit poznámky, které byly zachyceny o uchazeči podle různých náborářů z vaší organizace.
 
 Pokud chcete zobrazit historii poznámek, přejděte na kartu **LinkedIn** a přejděte do spodní části stránky a zobrazte historii. Můžete zobrazit všechny poznámky o uchazeči z webu LinkedIn Recruiter.
 

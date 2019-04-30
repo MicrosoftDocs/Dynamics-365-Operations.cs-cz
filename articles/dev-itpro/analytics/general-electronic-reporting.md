@@ -3,14 +3,14 @@ title: Elektronické výkaznictví (EV)
 description: Toto téma poskytuje přehled o nástroji Elektronické výkaznictví (ER). Zahrnuje informace o klíčových konceptech, scénářích, které EV podporuje, a vyjmenovává formáty, které jsou navržené a vydané jako součást řešení.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bc544211891c19104b2b3cb704b55a074784d608
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310799"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902953"
 ---
 # <a name="electronic-reporting-er"></a>Elektronické výkaznictví (EV)
 
@@ -132,7 +132,7 @@ Komponenty EV podporují správu verzí je podporována. Následující workflow
 
 Verze ve stavu **Dokončeno** nebo **Sdíleno** jsou k dispozici pro další výměnu dat. U komponenty s těmito stavy můžete provádět následující akce:
 
-- Komponentu lze serializovat do formátu XML a exportovat z aplikace Dynamics AX jako soubor ve formátu XML.
+- Komponentu lze serializovat do formátu XML a exportovat jako soubor ve formátu XML.
 - Komponentu lze reserializovat ze souboru XML a importovat do aplikace Finance and Operations jako novou verzi komponenty ER.
 
 #### <a name="component-date-effectivity"></a>Datum platnosti komponenty
@@ -163,21 +163,33 @@ Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si pr�
 
 #### <a name="repository"></a>Úložiště
 
-Úložiště EV obsahuje konfigurace EV. Momentálně jsou podporovány čtyři typy úložišť elektronického vykazování: **Prostředky aplikace Operations**, **LCS projekt**, **Systém souborů** a **Regulační konfigurační služby (RCS)**.
+Úložiště EV obsahuje konfigurace EV. Následující typy úložiště ER jsou aktuálně podporovány: 
 
-Úložiště typu **Provozní prostředky** poskytuje přístup k seznamu konfigurací, které společnost Microsoft jako poskytovatel konfigurace ER vydává v rámci řešení Finance and Operations. Tyto konfigurace lze importovat do aktuální instance aplikace Finance and Operations a používat pro elektronické sestavy. Můžete je používat i pro další lokalizace a přizpůsobení.
+- Sdílená knihovna LCS
+- Projekt LCS
+- Systém souborů
+- Regulatory Configuration Services (RCS)
+- Prostředky aplikace Operations
+
+
+Úložiště **sdílené knihovny LCS** poskytuje přístup k seznamu konfigurací v rámci knihovny sdíleného majetku ve službě Lifecycle Services (LCS). Tento typ ER úložiště lze registrovat pouze pro zprostředkovatele společnosti Microsoft. Z knihovny sdíleného majetku LCS můžete importovat poslední verze konfigurace ER do aktuální instance Finance and Operations.
 
 Úložiště **projektu LCS** poskytuje přístup k seznamu konfigurací určitého projektu LCS (knihovny majetku projektu LCS), který byl vybrán ve fázi registrace úložiště. ER umožňuje odesílat sdílené konfigurace z aktuální instance aplikace Finance and Operations do určitého úložiště **projektu LCS**. Můžete také importovat konfigurace z úložiště **projektu LCS** do aktuální instance aplikace Finance and Operations.
 
-Úložiště **Systém souborů** poskytuje přístup k seznamu konfigurací, které jsou umístěny jako soubory XML ve specifické složce místního systému souborů počítače, kde je hostována služba AOS. Požadovaná složka je vybrána při fázi registrace úložiště. Můžete importovat konfigurace z úložiště **Systém souborů** do aktuální instance aplikace Finance and Operations. Všimněte si, že tento typ úložiště je přístupný v následujících prostředích Dynamics 365 for Finance and Operations:
-- prostředí hostovaná v cloudu nasazená pro vývojářské účely (obsahující testovací modely přiložených sad)
-- prostředí nasazená místně (místní nebo lokální nasazení obchodních dat)
+Úložiště **Systém souborů** poskytuje přístup k seznamu konfigurací, které jsou umístěny jako soubory XML ve specifické složce místního systému souborů počítače, kde je hostována služba AOS. Požadovaná složka je vybrána při fázi registrace úložiště. Můžete importovat konfigurace z úložiště **Systém souborů** do aktuální instance aplikace Finance and Operations. 
 
-Pro více podrobností navštivte stránku [Import konfigurace elektronického výkaznictví](./electronic-reporting-import-ger-configurations.md).
+Všimněte si, že tento typ úložiště je přístupný v následujících prostředích Dynamics 365 for Finance and Operations:
 
-Úložiště **Instance RCS** poskytuje přístup k seznamu konfigurací určité instance RCS, která byla vybrána ve fázi registrace úložiště. Elektronické výkaznictví vám umožňuje importovat dokončené nebo sdílené konfigurace z vybrané instance RCS do aktuální instance Finance and Operations a použité pro elektronické výkaznictví.
+- Prostředí hostovaná v cloudu nasazená pro vývojářské účely (obsahující testovací modely přiložených sad)
+- Místně nasazená prostředí (on-premises)
 
-Pro více podrobností navštivte stránku [Import konfigurací elektronického výkaznictví ze služby Regulatory Configuration Services](./rcs-download-configurations.md).
+Další informace získáte v tématu [Import konfigurací elektronického výkaznictví](./electronic-reporting-import-ger-configurations.md).
+
+Úložiště **Instance RCS** poskytuje přístup k seznamu konfigurací určité instance RCS, která byla vybrána ve fázi registrace úložiště. Elektronické výkaznictví vám umožňuje importovat dokončené nebo sdílené konfigurace z vybrané instance RCS do aktuální instance Finance and Operations, abyste je mohli použít v elektronickém výkaznictví.
+
+Další informace získáte v tématu [Import konfigurací elektronického výkaznictví ze služby RCS (Regulatory Configuration Services)](./rcs-download-configurations.md).
+
+Úložiště typu **Provozní prostředky** poskytuje přístup k seznamu konfigurací, které společnost Microsoft jako poskytovatel konfigurace ER původně vydává v rámci řešení Finance and Operations. Tyto konfigurace lze importovat do aktuální instance aplikace Finance and Operations a používat pro elektronické sestavy nebo přehrání vzorovými průvodci záznamem úloh. Můžete je používat i pro další lokalizace a přizpůsobení. Všimněte si, že nejnovější verze poskytované konfiguracemi elektronického výkaznictví musí být importovány z knihovny sdíleného majetku LCS s použitím odpovídajícího ER úložiště.
 
 Požadovaná úložiště **LCS projekt**, **Systém souborů** a **Regulatory Configuration Services (RCS)** lze registrovat pro jednotlivé poskytovatele konfigurace jednotlivě z aktuální instance aplikace Finance and Operations. Každé úložiště může být určeno konkrétnímu poskytovateli konfigurace.
 
@@ -377,6 +389,5 @@ EV podporuje schopnost automaticky přijmout změny poslední verze základní k
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Požadavky na lokalizaci – vytvoření konfigurace elektronického výkaznictví](electronic-reporting-configuration.md)
-
-[Správa životního cyklu konfigurace elektronického vykazování](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Požadavky na lokalizaci – vytvoření konfigurace elektronického výkaznictví](electronic-reporting-configuration.md)
+- [Správa životního cyklu konfigurace elektronického vykazování](general-electronic-reporting-manage-configuration-lifecycle.md)

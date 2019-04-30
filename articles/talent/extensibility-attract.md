@@ -1,46 +1,46 @@
 ---
 title: Rozšiřitelnost v aplikaci Attract
 description: Toto téma popisuje, jak můžete rozšířit aplikaci Microsoft Dynamics 365 for Talent - Attract pomocí Microsoft Power Platform.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichsew
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789644"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949959"
 ---
 # <a name="extensibility-in-attract"></a>Rozšiřitelnost v aplikaci Attract
 
 [!include[banner](../includes/banner.md)]
 
-Aplikace Dynamics 365 for Talent je vytvořen na platformě Common Data Service (CDS) for Apps a lze ji rozšířit různými způsoby pomocí Microsoft Power Platform a možností, které nabízí Common Data Service for Apps. Proto můžete konfigurovat a přizpůsobit systém pomocí Microsoft PowerApps a Microsoft Flow. Můžete rovněž získat další analýzy o osobách pomocí Microsoft Power BI. Kromě toho je díky novým vlastním aktivitám, jako jsou například PowerApps a Webový obsah (iframe), proces náboru přizpůsobitelní více, než kdy dříve. Díky těmto aktivitám můžete proces náboru přizpůsobit potřebám a procesům vaší firmy a zajistit, aby náborový tým i kandidáti měli bezproblémový a přizpůsobený zážitek
+Aplikace Microsoft Dynamics 365 for Talent je vytvořena na platformě Common Data Service a lze ji rozšířit mnoha způsoby pomocí Microsoft Power Platform a možností, které nabízí Common Data Service. Proto můžete konfigurovat a přizpůsobit systém pomocí Microsoft PowerApps a Microsoft Flow. Můžete rovněž získat další analýzy o osobách pomocí Microsoft Power BI. Kromě toho je díky novým vlastním aktivitám, jako jsou například PowerApps a Webový obsah (iframe), proces náboru přizpůsobitelní více, než kdy dříve. Díky těmto aktivitám můžete proces náboru přizpůsobit potřebám a procesům vaší firmy a zajistit, aby náborový tým i kandidáti měli bezproblémový a přizpůsobený zážitek
 
 ## <a name="extending-option-sets-in-attract"></a>Rozšíření sad možností v aplikaci Attract
 
-**Sada možností** (rozevírací seznam) je typem pole, který může být zahrnut do entity. Definuje sadu možností. Když se sada možností zobrazí ve formuláři, používá ovládací prvek rozevíracího seznamu.  V aplikaci Attract existuje více polí, která jsou sadami možností.  Začínáme zavádět funkce pro rozšíření sad možností, počínaje polem Důvodu zamítnutí, polem Typ zaměstnání a polem Typ služebního věku.   Můžete také přidat lokalizované zobrazované popisky možnosti, které přidáte.  Podrobné informace naleznete na následujícím odkazu: [Přizpůsobení popisků sady možností](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+**Sada možností** (rozevírací seznam) je typem pole, který může být zahrnut do entity. Definuje sadu možností. Když se sada možností zobrazí ve formuláři, používá ovládací prvek rozevíracího seznamu.  V aplikaci Attract existuje více polí, která jsou sadami možností.  Začínáme zavádět funkce pro rozšíření sad možností, počínaje polem Důvodu zamítnutí, polem Typ zaměstnání a polem Typ služebního věku.   Můžete také přidat lokalizované zobrazované popisky možnosti, které přidáte. Další informace naleznete v tématu [Přizpůsobení popisků sady možností](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > Funkce publikování pracovní nabídky na LinkedIn vyžaduje použití polí **Typ zaměstnání** a **Typ služebního věku** na stránce **Podrobnosti práce**. Výchozí hodnoty v těchto polích jsou podporovány službou LinkedIn a jsou zobrazeny při publikování nabídky práce. Proto pokud publikujete nabídku práce na LinkedIn a upravujete existující hodnoty sady možností pro tato pole, práce bude nadále publikována, ale LinkedIn nezobrazí vlastní hodnoty **Typ zaměstnání** a **Typ služebního věku**.  
 
 V následujícím seznamu jsou uvedeny kroky k aktualizaci pole **Důvod zamítnutí** s hodnotami, které jsou specifické pro váš podnik.  
 
-1. Chcete-li rozšířit sadu možností **Důvod zamítnutí**, přejděte na [web správy PowerApps.](Https://admin.powerapps.microsoft.com)
+1. Pokud chcete rozšířit sadu možnosti **Důvod odmítnutí**, přejděte na [web pro správu PowerApps](https://admin.powerapps.com).
 2. Můžete být vyzvání k přihlášení se ke svému účtu. Zadejte své ID uživatele a heslo, které používáte pro přihlášení k Dynamics365 anebo Office365 a poté klikněte na tlačítko **Další**.
 3. Na kartě **Prostředí** vyberte prostředí, které chcete spravovat, a dvakrát klikněte, abyste se dostali na kartu **Podrobnosti**.
 4. Na kartě **Podrobnosti** zvolte **Centrum pro správu Dynamics 365**.
@@ -56,17 +56,17 @@ V následujícím seznamu jsou uvedeny kroky k aktualizaci pole **Důvod zamítn
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Využijte výhody Microsoft Power Platform 
 
-Protože se všechna data z aplikace Attract nachází v Common Data Service for Apps, můžete použít nástroje z Microsoft Power Platform pro začlenění vašich jedinečných firemních potřeb do aplikace Attract.
+Protože se všechna data z aplikace Attract nacházejí v Common Data Service, můžete použít nástroje z Microsoft Power Platform pro začlenění vašich jedinečných firemních potřeb do aplikace Attract.
 
 ### <a name="powerapps"></a>PowerApps
 
 Pomocí PowerApps můžete snadno vytvořit aplikace, které se připojí k datům aplikace Attract a které používají stejné výrazy jako Microsoft Excel. Aplikace, které vytvoříte pomocí PowerApps, můžete spustit na webu a na zařízení Apple iOS a Google Android.
 
-Například můžete zjednodušit univerzitní trhy práce pro náboráře tak, že vytvoříte jednoduchou aplikaci, která jim umožní skenovat životopisy a přiřazovat kandidáty na pozici v aplikaci Attract. Popřípadě můžete vytvořit aplikaci umožňující splnění potřeb organizace na shodu s předpisy. Další informace o PowerApps a způsobu použití pro vytváření aplikací naleznete v části [Integrace dat Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps).
+Například můžete zjednodušit univerzitní trhy práce pro náboráře tak, že vytvoříte jednoduchou aplikaci, která jim umožní skenovat životopisy a přiřazovat kandidáty na pozici v aplikaci Attract. Popřípadě můžete vytvořit aplikaci umožňující splnění potřeb organizace na shodu s předpisy. Další informace o PowerApps a způsobu použití pro vytváření aplikací naleznete v části [Integrace dat do Common Data Service](https://docs.microsoft.com/en-us/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Můžete použít Microsoft Flow pro vytvoření automatizovaných workflow, která běží nad daty aplikace Attract. Můžete se snadno připojit ke stovkám oblíbených aplikací a služeb, aniž by bylo nutné psát kód. Vytvářením toků, které v Common Data Service for Apps interagují s entitami Práce, Kandidát a Žádost v aplikaci Attracts můžete automatizovat různé akce. Například když kandidát přijme nabídku, může být náborovému týmu odesláno oznámení, nebo může být oznámena novinka na Twitteru. Další informace o tocích naleznete v [dokumentaci k aplikaci Microsoft Flow](https://docs.microsoft.com/en-us/flow/).
+Můžete použít Microsoft Flow pro vytvoření automatizovaných workflow, která běží nad daty aplikace Attract. Můžete se snadno připojit ke stovkám oblíbených aplikací a služeb, aniž by bylo nutné psát kód. Vytvářením toků, které v Common Data Service interagují s entitami Práce, Kandidát a Žádost v aplikaci Attracts můžete automatizovat různé akce. Například když kandidát přijme nabídku, může být náborovému týmu odesláno oznámení, nebo může být oznámena novinka na Twitteru. Další informace o tocích naleznete v [dokumentaci k aplikaci Microsoft Flow](https://docs.microsoft.com/en-us/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
@@ -78,14 +78,14 @@ Můžete přidávat vlastní aktivity, jako jsou například aplikace PowerApps 
 
 #### <a name="powerapps-activity"></a>Aktivity PowerApps 
 
-Aktivita PowerApps umožňuje autorovi práce nebo šablony procesu práce integrovat aplikaci PowerApps do toku náboru. Po vytvoření a publikování aplikace můžete zadat její ID aplikace v konfiguracích aktivity. Pomocí aplikace PowerApps lze číst a zapisovat data do Common Data Service for Apps. Můžete dokonce připojit aplikaci do toku. Například máte aplikaci, kterou náboráři používají k vyplnění formuláře během provádění svých telefonních pohovorů. V takovém případě můžete propojit aplikaci do toku, který vyhodnotí, zda žadatel může být posunut dále v procesu žádosti o práci. Tento typ aktivity mohou zobrazit pouze členové náborového týmu. Další informace o nakonfigurování aktivity PowerApps naleznete v části [Aktivity v aplikaci Attract](./activities-attract.md).
+Aktivita PowerApps umožňuje autorovi práce nebo šablony procesu práce integrovat aplikaci PowerApps do toku náboru. Po vytvoření a publikování aplikace můžete zadat její ID aplikace v konfiguracích aktivity. Pomocí aplikace PowerApps lze číst a zapisovat data do Common Data Service. Můžete dokonce připojit aplikaci do toku. Například máte aplikaci, kterou náboráři používají k vyplnění formuláře během provádění svých telefonních pohovorů. V takovém případě můžete propojit aplikaci do toku, který vyhodnotí, zda žadatel může být posunut dále v procesu žádosti o práci. Tento typ aktivity mohou zobrazit pouze členové náborového týmu. Další informace o nakonfigurování aktivity PowerApps naleznete v části [Aktivity v aplikaci Attract](./activities-attract.md).
 
 > [!NOTE]
 > Aktivita PowerApps je dostupná pouze s doplňkem Komplexní nábor.
 
 #### <a name="web-content-iframe-activity"></a>Aktivita webového obsahu (iframe)
 
-Aktivita webového obsahu (iframe) vám umožňuje vložit vlastní webové řešení, které jste vytvořili v náborovém procesu nebo na portálu kandidátů. Můžete číst a zapisovat data přímo z Common Data Service for Apps. Můžete také upravit řešení tak, aby spustilo toky nebo využilo výhod funkcí Microsoft Azure. Další informace o nakonfigurování aktivity webového obsahu naleznete v části [Aktivity v aplikaci Attract](./activities-attract.md).
+Aktivita webového obsahu (iframe) vám umožňuje vložit vlastní webové řešení, které jste vytvořili v náborovém procesu nebo na portálu kandidátů. Můžete číst a zapisovat data přímo z Common Data Service. Můžete také upravit řešení tak, aby spustilo toky nebo využilo výhod funkcí Microsoft Azure. Další informace o nakonfigurování aktivity webového obsahu naleznete v části [Aktivity v aplikaci Attract](./activities-attract.md).
 
 > [!NOTE]
 > Aktivita Webový obsah je dostupná pouze s doplňkem Komplexní nábor.

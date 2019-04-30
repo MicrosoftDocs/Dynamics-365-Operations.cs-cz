@@ -1,29 +1,29 @@
 ---
 title: Chytrá doporučení
 description: Toto téma vysvětluje, jak lze použít strojové učení pro poskytnutí doporučení pro práce a uchazeče o práci.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303585"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896550"
 ---
 # <a name="intelligent-recommendations"></a>Chytrá doporučení
 
@@ -32,8 +32,9 @@ ms.locfileid: "303585"
 Strojové učení může pomoci náborovým pracovníkům a náborovým manažerům k rychlé identifikaci nejlepších kandidátů na pozici. Také může pomoci potenciálním uchazečům najít pozici, která nejlépe odpovídá jejich profilu a zájmům. Když se tyto funkce používají a poskytuje se zpětná vazba, doporučení se zdokonalují.
 
 > [!NOTE] 
-> - Funkce chytrých doporučení jsou k dispozici pouze s doplňkem Komplexní nábor.
-> - Chcete-li povolit funkce doporučení uchazečů a práce, musí pro ně správce zapnout možnosti Preview. V centru pro správu na kartě **Správa funkcí** se ujistěte, že možnost **Funkce Preview** je nastavena na **Zapnuto**. Poté se ujistěte, že jednotlivé možnosti **Doporučení kandidáta** a **Doporučení práce** jsou nastaveny na **Zapnuto**.
+> - Funkce chytrých doporučení jsou k dispozici pouze [s doplňkem Komplexní nábor](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Funkce pojednávaná v tomto tématu je k dispozici jako součást verze Preview. Obsah a funkce se mohou změnit. Chcete-li použít tuto funkci, požádejte správce o její povolení pomocí **Nastavení pro správu** v aplikaci Attract. Nastavte **Doporučení kandidáta**, **Doporučení práce** a **Doporučení potenciálního uchazeče** na **Zapnuto**. Další informace naleznete v tématu [Přístup k funkcím Preview v aplikaci Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+
 
 ## <a name="candidate-recommendations"></a>Doporučení kandidáta
 
@@ -43,4 +44,15 @@ Pro jakéhokoliv doporučeného kandidáta můžete vybrat možnost **Zobrazit k
 
 ## <a name="job-recommendations"></a>Doporučení práce 
 
-Pokud potenciální zaměstnanec použije kariérní web, aby se ucházel o zaměstnání, doporučí se další otevřené pozice v organizaci. Tato doporučení se zakládají na předchozích žádostech uchazeče a jeho životopisu a profilu. Tím pádem doporučení práce pomáhají uchazečům rychle identifikovat práce, které jsou pro ně nejvhodnější. Doporučení práce jsou poskytována uchazečům tehdy, pokud je na kariérním webu nabízeno více než deset pracovních pozic. Uchazeči mohou otevřít podrobnosti o nabídce zaměstnání z karty doporučení. Mohou také poskytnout zpětnou vazbu o doporučení za účelem vylepšení budoucích doporučení.
+Pokud potenciální zaměstnanec použije kariérní web, aby se ucházel o zaměstnání, Attract doporučí další otevřené pozice v organizaci. Tato doporučení se zakládají na předchozích žádostech a životopisu a profilu potenciálního uchazeče. Tím pádem doporučení práce pomáhají uchazečům rychle identifikovat práce, které jsou pro ně nejvhodnější. Doporučení práce jsou poskytována uchazečům tehdy, pokud je na kariérním webu nabízeno více než deset pracovních pozic. Uchazeči mohou otevřít podrobnosti o nabídce zaměstnání z karty doporučení. Mohou také poskytnout zpětnou vazbu o doporučení za účelem vylepšení budoucích doporučení.
+
+## <a name="prospect-recommendations"></a>Doporučení potenciálního uchazeče 
+
+Když je k dispozici nová pozice, prohledávání všech vašich minulých uchazečů a celé sítě talentů může chvíli zabrat. Aby vám s tím aplikace Attract pomohla, můžete použít inteligentní algoritmy strojového učení. To znamená, že jakmile vytvoříte práci, Attract zreviduje všechny kandidáty a navrhne ty, kteří nejlépe vyhovují požadavkům. Chcete-li zobrazit tato doporučení, povolte pro práci fázi **Potenciální uchazeč**. To může trvat až minutu, než Attract projde celou databázi kandidátů a poskytne doporučení.
+
+Doporučení budou zobrazeny jako karty na záložce **Potenciální uchazeči** všech prací, které mají povolenou fázi **Potenciální uchazeč**. Tyto karty uvádějí dovednosti, které se nacházejí v profilu potenciálního uchazeče, jakož i informace o kvalifikaci a vzdělání. Pokud najdete doporučení, které se vám líbí, můžete přidat kandidáta jako potenciálního uchazeče pro tuto práci.
+
+> [!NOTE]
+> Pokud jste v nedávné době začali používat Attract, budete muset počkat, až budete mít 10 nebo více uchazečů, kteří mají úplné profily nebo životopisy, než tuto funkci použijete.
+
+Aby se předešlo případnému zkreslení doporučení, Attract pouze vyhledá profily kandidátů pro dovednosti, kvalifikace a další klíčová slova, která odpovídají popisu práce. Attract navíc před hodnocením odstraní osobní identifikaci informací z profilů kandidátů.

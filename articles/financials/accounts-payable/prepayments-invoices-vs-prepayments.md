@@ -1,7 +1,7 @@
 ---
 title: Zálohové faktury a zálohy
 description: Toto téma nabízí popis a porovnání dvou metod, které organizace mohou použít pro platby záloh (zálohy). Pro jednu metodu je nutné vytvořit zálohovou fakturu, která je přidružená k nákupní objednávce. Pro druhou můžete zálohový doklad deníku vytvořit vytvořením položek deníku a jejich označením jako zálohový doklad deníku.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c81045b72d15f4474d82040d7725740cff5eba91
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0f97eba8831e96b43f7fe7d5ea58359cab47315c
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310132"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "897125"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Zálohové faktury a zálohy
 

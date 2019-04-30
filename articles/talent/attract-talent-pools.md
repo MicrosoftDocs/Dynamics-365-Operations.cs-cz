@@ -1,29 +1,29 @@
 ---
 title: Zajištění zdrojů uchazečů s využitím fondů talentů
 description: Toto téma vysvětluje, jak vytvořit a nastavit fondy talentů v aplikaci Attract.
-author: ''
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303569"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949337"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Zajištění zdrojů uchazečů s využitím fondů talentů
 
@@ -44,7 +44,7 @@ Podle níže uvedených kroků vytvořte a sdílejte fond talentů.
 
     Na kartě **Moje fondy talentů** jsou zobrazeny všechny fondy talentů, ke kterým máte přístup, s podrobnostmi o jednotlivých fondech. Podrobnosti zahrnují vlastníka fondu a počet uchazečů, které obsahuje.
 
-1. V pravém horním rohu vyberte **+ nový** k otevření dialogového okna **Vytvořit fond talentů**.
+1. V pravém horním rohu stránky vyberte **+ nový** k otevření dialogového okna **Vytvořit fond talentů**.
 1. Zadejte jedinečný název pro fond talentů.
 1. Pokud chcete přidávat uživatele do fondu jako přispěvatele, najděte jejich jména pomocí nástroje pro výběr osob a pak je přidejte do seznamu. Fond talentů můžete sdílet pouze s uživateli, kteří mají roli náboráře, manažera náboru nebo správce aplikace Attract.
 1. Vyberte možnost **Přidat** k vytvoření fondu talentů.
@@ -78,26 +78,35 @@ Vlastník a přispěvatelé do fondu majetku mohou přidávat uchazeče do fondu
 
 ## <a name="search-and-view-candidate-profiles"></a>Vyhledání a zobrazení profilů uchazeče
 
-Uživatelé fondu talentů mohou zobrazit profil uchazeče, informace z webu LinkedIn, související dokumenty nebo celou historii žádosti uchazeče. Můžete také prohledat celou databázi uchazečů a vyhledat libovolného uchazeče, který někdy zažádal o nějaké pracovní místo ve vaší organizaci nebo který byl někdy přidán do jakéhokoli fondu talentů.
+> [!NOTE] 
+> Tato funkce je aktuálně v náhledu Pokud chcete provést akci, musíte [ji zapnout v nastavení pro správu Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
 
-1. Použijte vyhledávací pole v horní části karty **Moje fondy talentů** k prohledání celé databáze uchazečů.
-1. Prohledávání různých atributů profilu. Vyberte kategorii atributu vyhledávání, sestavte vyhledávací dotaz a pak klikněte na tlačítko se šipkou vpravo (**-\>**) ke spuštění hledání.
+Fondy talentů vám umožňují zobrazit profil uchazeče, informace ve službě LinkedIn, související dokumenty a historii žádosti. Můžete prohledávat celou databázi všech uchazečů, kteří jsou přidáni do libovolné skupiny uchazečů, včetně uzavřených a aktivních uchazečů.
 
-    Uchazeče můžete vyhledávat podle jména, organizace, pro kterou pracují, dovedností, které prokazují, historie vzdělání, současné pracovní pozice nebo dosaženého vzdělání, pokud jsou tyto informace uvedeny v jejich profilu.
+>[!NOTE]
+> Když přidáváte nové zájemce nebo uchazeče, může u nového přidání trvat až 15 minut, než bude hledání indexováno.
 
-    Můžete také vytvořit vyhledávací dotaz, který se používá jako kritérium pro dva nebo více z těchto atributů jako kritérium. Kritéria zkombinujte pomocí operátoru **and**.
+Díky vylepšenému vyhledávání můžete prohledávat všechny dokumenty uchazečů a filtrovat je podle stříbrných medailistů, zdrojů, dovedností, vzdělání a dalších atributů. V předchozích verzích bylo nutné určit entitu, kterou jste chtěli prozkoumat. Attract nyní umožňuje vyhledávání ve všech polí souvisejících s uchazečem a seřadit výsledky.
 
-    Pokud někteří uchazeči vyhovují vašemu vyhledávacímu dotazu, jsou uvedeni ve výsledcích vyhledávání.
+1. Chcete-li začít nové hledání prostřednictvím databáze uchazečů, zadejte text, který chcete vyhledat, do vyhledávacího pole na kartě **Fond talentů**. 
 
-1. Chcete-li výsledky omezit, můžete vyhledávací dotaz aktualizovat pomocí vyhledávacího pole nahoře.
+Můžete zadat jméno uchazeče nebo libovolné atributy, které hledáte. Jednotlivé atributy oddělte mezerou.
 
-    Případně můžete použít seznam inteligentních filtrů vpravo. Tyto filtry jsou dynamicky použity na základě výsledků vyhledávání.
+Výsledky můžete zúžit změnou vyhledávání nebo pomocí vyhledávacího dotazu či inteligentních filtrů v levé části stránky.
 
-    Výsledky hledání ukazují hlavních 20 dovedností, škol, organizací atd., která jsou nejčastěji uvedeny v seznamu uchazečů. Můžete přidat další filtry pro některý z těchto atributů pro další zúžení výsledků hledání.
+Výsledky hledání ukazují zvýraznění pro různé atributy, které odpovídají vašemu vyhledávacímu dotazu. Vyberte libovolného uchazeče, jehož profil vás zajímá.
 
-1. Poté co jste identifikovali uchazeče, vyberte řádek pro toto uchazeče k zobrazení jeho profilu.
+### <a name="syntax-highlights"></a>Zvýraznění syntaxe 
 
-Všichni uživatelé mají společný pohled na profily uchazečů. Vyberte řádek pro uchazeče v sadě výsledků vyhledávání nebo fondu talentů k zobrazení jeho profilu. Na kartě **Profil** jsou zobrazeny informace o dovednostech, pracovních zkušenostech a vzdělání, které uchazeč aktualizoval z kariérního portálu.
+| Operátor | Použití                                                      | Příklad              |
+|----------|------------------------------------------------------------|----------------------|
+| \*       | Vyhledá dílčí řetězce; umožňuje zobrazit všechny záznamy | Vstup: Mi\* <br></br> Výsledek: Všechny záznamy obsahující pole, která začínají "Mi", jako je například Microsoft, Micro systems, Midtown Enterprises, or Middleton <br></br>Vstup: \* <br></br> Výsledek: Všechny záznamy v databázi |
+| “”       | Vyhledá přesnou shodu                                | Vstup: "Microsoft" <br></br> Výsledek: Všechny záznamy obsahující "Microsoft"                    |
+
+>[!WARNING]
+> Nevypínejte vyhledávání relevantnosti instance Common Data Service. Zakáže to možnosti vyhledávání v Attract.
+
+Všichni uživatelé mají společný pohled na profily uchazečů. Na kartě **Profil** jsou zobrazeny informace o dovednostech, pracovních zkušenostech a vzdělání, které uchazeč poskytl v rámci žádosti pomocí kariérního portálu.
 
 - Můžete zobrazit kontaktní údaje uchazeče. Podle potřeby můžete upravit nebo aktualizovat informace o pomocí tlačítka **Upravit podrobnosti**.
 
@@ -109,7 +118,7 @@ Všichni uživatelé mají společný pohled na profily uchazečů. Vyberte řá
 
     Pokud chcete zobrazit dokument, vyberte název dokumentu ze seznamu dokumentů. Můžete zobrazit dokumenty Microsoft Word v aplikaci pomocí Microsoft Office 365. Také můžete stáhnout dokumenty do místního počítače pomocí možnosti **Stáhnout** pro každý dokument.
 
-- Karta **LinkedIn** ukazuje informace z webu LinkedIn. Pokud chcete tuto kartu použít, je nutné připojit účet LinkedIn v nastavení uživatele a je nutné navázat připojení k programu linkedIn Recruiter. Další informace naleznete v tématu [Zajištění zdrojů z programu LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+- Karta **LinkedIn** ukazuje informace z webu LinkedIn. Pokud chcete tuto kartu použít, je nutné připojit účet LinkedIn v nastavení uživatele a je nutné navázat připojení k programu LinkedIn Recruiter. Další informace naleznete v tématu [Zajištění zdrojů z programu LinkedIn Recruiter](./attract-linked-in-recruiter.md).
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Přidání uchazečů z fondu talentů do pracovního místa
 
@@ -117,7 +126,7 @@ Z výsledků hledání nebo fondu talentů můžete vybrat uchazeče pro jakéko
 
 1. Vyhledejte uchazeče pomocí možnosti vyhledávání a poté otevřete jeho profil. Případně otevřete fond talentů z karty **Moje fondy talentů** vyhledejte uchazeče do fondu talentů a otevřete jeho profil.
 
-1. Na stránce profilu uchazeče vyberte **+ Přidat k práce** vpravo nahoře. 
+1. Na stránce profilu uchazeče vyberte **+ Přidat k práci** vpravo nahoře. 
      
      Zobrazí se seznam prací pro náborový tým, do kterého patříte jako náborář nebo manažer náboru.
 

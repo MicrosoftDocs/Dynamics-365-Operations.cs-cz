@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353809"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842715"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
@@ -93,7 +93,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 614 | Upravit objednávku odběratele | Stornujte vybranou objednávku tak, aby ji bylo možné změnit v POS. | Ne | Ne | Ne | Ne | Ne |
 | 615 | Upravit nabídku | Stornujte vybranou nabídku tak, aby ji bylo možné změnit v POS. | Ne | Ne | Ne | Ne | Ne |
 | 518 | Účty výdajů | Zaznamená peníze odebrané ze zásuvky s hotovostí na příležitostné výdaje. | Ano | Ano | Ano | Ano | Ne |
-| 919 | Rozšířené přihlášení | Přiřazení nebo odebrání oprávnění pro přihlášení naskenováním čárového kódu nebo pohybem karty. | Ano | Ano | Ano | Ne | Ne |
+| 919 | Rozšířené přihlášení | Přiřazení nebo odebrání oprávnění pro přihlášení naskenováním čárového kódu nebo pohybem karty. | Ano | Ano | Ano | Ano | Ne |
 | 1201 | Zadání plovoucího zůstatku | Tato operace umožňuje uživateli přidat další peníze do aktuální zásuvky nebo směny. | Ano | Ano | Ano | Ano | Ne |
 | 1218 | Vynutit odemčení periferního zařízení | Systém používá tuto operaci interně k odemknutí periferních zařízení v POS. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
 | 520 | Zůstatek dárkového poukazu | Zobrazí zůstatek dárkového poukazu. | Ano | Ano | Ne | Ne | Ne |

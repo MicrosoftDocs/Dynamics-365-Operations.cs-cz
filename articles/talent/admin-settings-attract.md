@@ -1,7 +1,7 @@
 ---
 title: Nastavení pro správu v aplikaci Attract
 description: Toto téma vysvětluje postup povolení fungování funkce pro organizace uživatele v aplikaci Attract.
-author: ''
+author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0de215103306ef7115ba390b1b4855179979c77b
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303567"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "856363"
 ---
 # <a name="admin-settings-in-attract"></a>Nastavení pro správu v aplikaci Attract
 [!include[banner](../includes/banner.md)]
@@ -36,7 +36,7 @@ Zadejte zobrazovaný název společnosti a přidejte logo společnosti. Zobrazov
 
 ## <a name="linkedin-integration"></a>Integrace se službou LinkedIn
 
-Nastavte integraci se systémem LinkedIn Recruiter System Connect (RSC). Po připojení ke službě LinkedIn pomocí vašich přihlašovacích údajů na LinkedIn můžete synchronizovat profil uchazeče na webu LinkedIn, aplikace, zpětnou vazbu k pohovoru a poznámky náborového týmu. Je požadována úplná licence náboráře LinkedIn. Další informace o nástroji LinkedIn Recruiter získáte v tématu [Recruiter System Connect (RSC) – nejčastější dotazy](https://www.linkedin.com/help/recruiter/answer/90483).
+Nastavení integrace s modulem LinkedIn Recruiter System Connect (RSC). Po připojení ke službě LinkedIn pomocí vašich přihlašovacích údajů na LinkedIn můžete synchronizovat profil uchazeče na webu LinkedIn, aplikace, zpětnou vazbu k pohovoru a poznámky náborového týmu. Je požadována úplná licence náboráře LinkedIn. Další informace o LinkedIn Recruiter získáte v tématu [Recruiter System Connect (RSC) – nejčastější dotazy](https://www.linkedin.com/help/recruiter/answer/90483).
 
 ## <a name="user-permissions"></a>Oprávnění uživatele
 

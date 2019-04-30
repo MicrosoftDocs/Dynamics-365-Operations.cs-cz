@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773320"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "898970"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Nastavení fiskální integrace pro maloobchodní kanály
 
@@ -60,7 +60,7 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
 2. Nahrajte konfigurace fiskálních konektorů a poskytovatelů fiskálních dokumentů.
 
     Zprostředkovatel fiskálního dokumentu je zodpovědný za generování fiskálních dokumentů, které představují maloobchodní transakce a události, které jsou zaregistrovány na POS ve formátu, který se používá pro interakci s fiskálním zařízením nebo službou. Poskytovatel fiskálního dokumentu například může generovat vyjádření fiskálního příjmu ve formátu XML.
-    
+
     Fiskální konektor zodpovídá za komunikace s fiskálním zařízením nebo službu. Fiskální konektor může například odeslat fiskální příjem, který poskytovatel fiskálních dokumentů vytvořil ve formátu XML pro fiskální tiskárnu. Podrobnější informace o kompoenntách fiskální integrace získáte v části [Ukázky procesu fiskální registrace pro fiskální zařízení](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. Na stránce **Fiskální konektory** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Fiskální konektory**), nahrajte konfiguraci XML pro každé zařízení nebo službu, které plánujete použít pro účely fislální integrace.
@@ -150,7 +150,7 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
     - Poté, co provedete změny v existujícím procesu daňové registrace a pokud tyto změny způsobí výběr jiného fiskálního konektoru v době běhu (například když změníte skupinu konektoru pro krok procesu fiskální registrace, povolte funkční profil konektoru ve skupině konektoru nebo přidejte nový funkční profil konektoru skupině konektoru).
     - Po provedení změn v přiřazení technických profilů konektoru hardwarovým profilům.
 
-8. Na stránce **Plánovač distribuce** spusťte úlohu **1070** a **1090** pro převod dat do databáze kanálů.
+8. Na stránce **Plán distribuce** spusťte úlohu **1070** a **1090** pro převod dat do databáze kanálů.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Nastavení fiskální textů pro slevy
 
@@ -185,8 +185,12 @@ Možnosti zpracování chyb, které jsou dostupné ve fiskální integraci, jsou
 
     - **Povolit přeskočení** – tento parametr aktivuje možnost **Přeskočit** v dialogovém okně Zpracování chyb.
     - **Povolit označení za registrované** – Tento parametr aktivuje možnost **Označit jako registrované** v dialogovém okně zpracování chyb.
+    - **Pokračovat při chybě** – Pokud je tento parametr povolen, může proces fiskální registrace pokračovat v registru POS, pokud selže fiskální registrace transakce nebo události. V opačném případě musí provozovatel pro spuštění fiskální registrace další transakce nebo události zopakovat neúspěšnou fiskální registraci, přeskočit ji nebo označit transakci nebo událost za registrovanou. Další informace naleznete v tématu [Volitelná fiskální registrace](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
-2. Možnost **Přeskočit** a **Označit jako registrované** v dialogovém okně zpracování chyby vyžadují oprávnění **Povolit přeskočení nebo označit jako registrované**. Proto na stránce **Skupiny oprávnění** (**Maloobchod \> Zaměstnanci \> Skupiny oprávnění**) povolte oprávnění **Povolit přeskočení nebo označit jako registrované**.
+    > [!NOTE]
+    > Pokud je parametr **Pokračovat při chybě** povolen, parametry **Povolit přeskočení** a **Povolit označení za registrované** jsou automaticky zakázány.
+
+2. Možnosti **Přeskočit** a **Označit jako registrované** v dialogovém okně zpracování chyb vyžadují oprávnění **Povolit přeskočení nebo označit jako registrované**. Proto na stránce **Skupiny oprávnění** (**Maloobchod \> Zaměstnanci \> Skupiny oprávnění**) povolte oprávnění **Povolit přeskočení registrace nebo označit jako registrované**.
 3. Možnosti **Přeskočit** a **Označit jako registrované** umožňují operátorům zadat další informace v případě selhání fiskální registrace. Aby bylo možné tuto funkci zpřístupnit, měli byste určit informační kódy **přeskočit** a **označit jako registrované** ve fiskálním konektoru skupiny. Informace, které operátor zadá, jsou pak uloženy jako transakce informačního kódu spojené s fiskální transakcí. Další podrobnosti o informačních kódech naleznete v tématu [informační kódy a skupiny informačních kódů](../info-codes-retail.md).
 
     > [!NOTE]
@@ -200,6 +204,8 @@ Možnosti zpracování chyb, které jsou dostupné ve fiskální integraci, jsou
     > - **Daňový doklad** – povinný dokument, který by měl být úspěšně registrován (například jako fiskální příjemka).
     > - **Nefiskální dokument** – doplňkový doklad pro transakci nebo událost (například dárkový poukaz).
 
+4. Pokud musí být provozovatel schopen pokračovat v zpracování aktuální operace (například vytvoření nebo dokončení transakce) po výskytu chyby při kontrole stavu, měli byste povolit oprávnění **Povolit přeskočení chyby při kontrole stavu** na stránce **Skupiny oprávnění** (**Maloobchod \> Zaměstnanci \> Skupiny oprávnění**). Další informace o postupu kontroly stavu naleznete v tématu [Kontrola stavu fiskální registrace](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Nastavení fiskálních sestav X/ Z z POS
 
 Pokud chcete povolit spouštění fiskálních sestav z POS, měli byste do rozložení POS přidat nová tlačítka.
@@ -211,3 +217,12 @@ Pokud chcete povolit spouštění fiskálních sestav z POS, měli byste do rozl
     3. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Tisknout fiskální Z**.
     4. Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod změn do databáze kanálů.
 
+## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Povolení ručního provedení odložené daňové registrace
+
+Chcete-li povolit ruční provedení odložené fiskální registrace, měli byste přidat nové tlačítko do rozvržení POS.
+
+- Na stránce **Mřížky tlačítka** proveďte postup v části [Přidání vlastního operačního tlačítka do rozložení POS v centrále maloobchodu](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) k instalaci návrháře a aktualizaci rozložení POS.
+
+    1. Výběr rozložení k aktualizaci
+    2. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Dokončit proces fiskální registrace**.
+    3. Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod vašich změn do databáze kanálů.

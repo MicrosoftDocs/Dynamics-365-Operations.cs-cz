@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773270"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950397"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Přehled fiskální integrace pro maloobchodní sítě
 
@@ -81,12 +81,37 @@ Architektura fiskální integrace poskytuje následující možnosti k řešení
 
 Možnosti **Přeskočit** a **Označit jako registrované** umožňují informačním kódům zaznamenat některé konkrétní informace o selhání, jako je důvod selhání nebo odůvodnění pro přeskočení fiskální registrace nebo označení transakce jako registrované. Další informace o způsobu nastavení parametrů zpracování chyb naleznete v tématu [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
+### <a name="optional-fiscal-registration"></a>Volitelná fiskální registraci
+
+Fiskální registrace může být povinná pro některé operace, ale volitelná pro jiné. Fiskální registrace pravidelných prodejů a vrácení může být například povinná, ale fiskální registrace operací, které se týkají vkladů zákazníků, může být volitelná. V tomto případě by nedokončení fiskální registrace prodeje mělo blokovat další prodej, ale nedokončení fiskální registrace vkladu zákazníka by nemělo blokovat další prodej. Chcete-li rozlišit povinné a volitelné operace, doporučujeme, abyste je zpracovali prostřednictvím různých poskytovatelů dokumentů a abyste nastavili samostatné kroky v procesu fiskální registrace pro tyto poskytovatele. Parametr **Pokračovat při chybě** by měl být povolen pro všechny kroky, které souvisí s volitelnou fiskální registrací. Další informace o způsobu nastavení parametrů zpracování chyb naleznete v tématu [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
+### <a name="manually-running-fiscal-registration"></a>Ruční spuštění fiskální registrace
+
+Pokud byla fiskální registrace transakce nebo události odložena po selhání (například pokud operátor zvolil **Zrušit** v dialogovém okně zpracování chyb), můžete ručně spustit fiskální registraci vyvoláním příslušné operace. Více informací naleznete v části [Povolit ruční provedení odložené daňové registrace](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### <a name="fiscal-registration-health-check"></a>Kontrola stavu fiskální registrace
+
+Postup kontroly stavu pro fiskální registrace ověří dostupnost fiskálního zařízení nebo služby, když dojde ke konkrétní události. Pokud nelze momentálně provést fiskální registraci, je operátor informován předem.
+
+POS spustí kontrolu stavu, jakmile dojde k následujícím událostem:
+
+- Otevře se nová transakce.
+- Pozastavená transakce je odvolána.
+- Prodejní transakce nebo transakce vrácení je dokončena.
+
+Pokud se kontrola stavu nezdaří, POS zobrazí dialogové okno kontroly stavu. Toto dialogové okno nabízí následující tlačítka:
+
+- **OK** – Toto tlačítko umožňuje operátorovi ignorovat chybu kontroly stavu a pokračovat ve zpracování operace. Operátorři mohou vybrat toto tlačítko pouze tehdy, pokud mají oprávnění **Povolení přeskočení chyby kontroly stavu**.
+- **Zrušit** – Pokud operátor vybere toto tlačítko, POS zruší poslední akci (například položka není přidána do nové transakce).
+
+> [!NOTE]
+> Kontrola stavu je spuštěna pouze v případě, když aktuální operace vyžaduje fiskální registraci a když je parametr **Pokračovat při chybě** zakázán pro aktuální krok procesu fiskální registrace. Další informace naleznete v tématu [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Ukládání fiskální odezvy ve fiskální transakci
 
 Když je fiskální registrace transakce nebo události úspěšná, v databázi kanálů se vytvoří fiskální transakce a bude propojena s původní transakcí nebo událostí. Obdobě pokud zvolíte **Přeskočit** nebo **Označit jako registrované** pro nezdařenou fiskální registrací, tyto informace se uloží ve fiskální transakci. Fiskální transakce drží fiskální odezvu fiskálního zařízení nebo služby. Pokud proces fiskální registrace sestává z několika kroků, vytvoří se fiskální transakce pro každý krok procesu, který měl za následek úspěšnou nebo neúspěšnou registraci.
 
 Fiskální transakce jsou přeneseny do Retail Headquarters podle *úlohy P*, společně s maloobchodními transakcemi. Na záložce s náhledem **Fiskální transakce** stránky **Transakce maloobchodu** uvidíte fiskální transakce, které jsou napojeny na maloobchodní transakce.
-
 
 Fiskální transakce ukládá následující podrobnosti:
 
@@ -109,12 +134,13 @@ Funkce fiskální integrace podporuje generování výkazů na konci dne, které
 
 Následující ukázky fiskální integrace jsou v současné době k dispozici v sadě Retail SDK, která je vydána s aplikací Retail:
 
-- [Ukázka integrace fiskální tiskárny pro Itálii](emea-ita-fpi-sample.md)
-- [Ukázka integrace fiskální tiskárny pro Polsko](emea-pol-fpi-sample.md)
+- [Vzor integrace fiskální tiskárny pro Itálii](emea-ita-fpi-sample.md)
+- [Vzor integrace fiskální tiskárny pro Polsko](emea-pol-fpi-sample.md)
+- [Ukázka integrace fiskální služby pro Rakousko](emea-aut-fi-sample.md)
+- [Ukázka integrace fiskální služby pro Českou republiku](emea-cze-fi-sample.md)
 
 Následující funkce fiskální integrace je k dispozici také v sadě Retail SDK, ale v současné době nevyužívá architekturu fiskální integrace. Migrace této funkce do architektury fiskální integrace je plánována po pozdější aktualizace.
 
 - [Digitální podpis pro Francii](emea-fra-cash-registers.md)
 - [Digitální podpis pro Norsko](emea-nor-cash-registers.md)
 - [Ukázka integrace kontrolní jednotky pro Švédsko](./retail-sdk-control-unit-sample.md)
-

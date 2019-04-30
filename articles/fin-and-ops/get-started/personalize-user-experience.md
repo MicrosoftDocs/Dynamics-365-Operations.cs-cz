@@ -3,7 +3,7 @@ title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363469"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975844"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jakým způsobem lze přizpůsobit Microsoft Dynamics 365 for Finance and Operations.
 
@@ -47,6 +48,8 @@ Stránka **Uživatelské možnosti** obsahuje několik systémových nastavení 
 - **Předvolby** – Vyberte výchozí hodnoty, které se používají při každém otevření aplikace Finance and Operations. Tyto hodnoty zahrnují společnosti, úvodní stránku a výchozí režim zobrazení/úprav. (Režim zobrazení/úprav určuje, zda je stránka uzamčena pro zobrazení nebo otevřena pro úpravy při každém otevření.) Tato karta také obsahuje možnosti pro jazyk, časové pásmo a datum, čas a formát čísel. Konečně jsou také na této kartě zahrnuty různé předvolby, které se liší podle verze.
 - **Účet**- Upravte jméno uživatele a ostatní možnosti vztahující se k účtu.
 - **Workflow** – Vyberte možnosti týkající se workflowu.
+
+Kromě úpravy uživatelských nastavení můžete také zobrazit a odstranit data o používání a přizpůsobení kliknutím na tlačítko **Údaje o využití**. Když používáte aplikaci, mnoho z vašich voleb se zapamatuje, aby byl systém v budoucnu jednodušší pro vaše použití. Karta **Individuální nastavení** zejména umožňuje zobrazit a spravovat osobní změny provedené na stránkách v systému. Z této karty lze také obnovit popisky funkcí, vyskakovací okna, která vás seznámí s novými funkcemi produktu (k dispozici v Platform Update 26), abyste byli znovu upozorněni na dříve nalezené funkce.  
 
 ## <a name="implicit-personalizations"></a>Implicitní individuální nastavení
 
@@ -160,7 +163,7 @@ Uživatelé, kteří mají oprávnění správce, také mohou spravovat přizpů
 
 - **Použít** – můžete importovat nebo zvolit individuální nastavení pro jednoho nebo více uživatelů. Chcete-li použít přizpůsobení pro jednoho nebo více uživatelů, nejprve vyberte roli a uživatele, kteří tuto roli mají. Poté buď vyberte existující personalizaci, která se bude vztahovat na vybrané uživatele, nebo importovat soubor personalizace. Přizpůsobení bude ověřeno a použito pro všechny vybrané uživatele, když příště otevřou vybrané stránky.
 - **Vymazat** – Můžete vymazat všechna přizpůsobení stránky nebo pracovního prostoru pro jednoho nebo více uživatelů. Nejprve vyberte stránku nebo pracovní prostor, aby se zobrazil seznam uživatelů, kteří u nich provedli individuální nastavení. Poté vyberte uživatele, kteří by měli mít individuální nastavení pro tuto stránku nebo pracovní prostor odstraněno, a vyberte **Vymazat**. Všechna přizpůsobení, která vybraní uživatelé použili u vybrané stránky nebo pracovního prostoru, se smažou. Tuto akci nelze vrátit zpět. Pokud však byla personalizace uložena pro stránku nebo pracovní prostor, může být tato personalizace znovu importována.
-- **Manažer podle uživatele** – vyberte uživatele a zobrazte seznam stránek, pro které má tato osoba individuální nastavení. Můžete povolit nebo zakázat možnost zvoleného uživatele použít přizpůsobení pro specifické stránky nebo pro celý systém. Rovněž můžete vymazat, importovat nebo exportovat individuální nastavení pro vybraného uživatele.
+- **Manažer podle uživatele** – vyberte uživatele a zobrazte seznam stránek, pro které má uživatel individuální nastavení. Můžete povolit nebo zakázat možnost zvoleného uživatele použít přizpůsobení pro specifické stránky nebo pro celý systém. Rovněž můžete vymazat, importovat nebo exportovat individuální nastavení pro vybraného uživatele. Kromě toho můžete resetovat popisky funkcí pro vybraného uživatele, což umožní, aby se všechny dříve vynechaná vyskakovací okna, která zavedly nové funkce, znovu zobrazila při příště, kdy se uživatel s těmito funkcemi setká.   
 - **Systém:** – Zde můžete dočasně zakázat veškerá přizpůsobení v systému pro všechny uživatele. V takovém případě se přizpůsobení odstraní. Všechny stránky se resetují na výchozí nastavení pro všechny uživatele. Pokud později znovu povolíte přizpůsobení, veškerá přizpůsobení budou znovu použita. Můžete trvale odstranit veškerá přizpůsobení v systému pro všechny uživatele. Neexistuje žádný způsob obnovení individuálního nastavení, které bylo odstraněno. Proto se před provedením tohoto úkolu ujistěte, že jste exportovali všechna individuální nastavení, která můžete chtít později.
 
 ## <a name="personalization-of-inventory-dimensions"></a>Přizpůsobení dimenzí zásob

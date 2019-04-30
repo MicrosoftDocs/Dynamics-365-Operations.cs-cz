@@ -1,7 +1,7 @@
 ---
 title: Správa rolí a zabezpečení v aplikaci Attract
 description: Toto téma poskytuje informace o zabezpečení datových entit v Microsoft Dynamics 365 for Talent - Attract.
-author: josaw1
+author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: josaw1
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 9c0f9d3304b1b15aa84fd1a296267d606bf9c59d
+ms.sourcegitcommit: 1653d1e28d02f8a9a4bea8df562ac98d7a350ed1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789690"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "993684"
 ---
 # <a name="security-and-role-management-in-attract"></a>Správa rolí a zabezpečení v aplikaci Attract
 
@@ -70,6 +70,16 @@ Každý uživatel, který má účet Microsoft Azure Active Directory (Azure AD)
 
 Uživatelé, kteří jsou přiřazeni k roli jen pro čtení, mají přístup pouze pro čtení ke všem datům v prostředí Attract. Nemohou však vytvářet nebo upravovat data.
 
+## <a name="find-out-which-roles-you-have"></a>Zjistěte, jaké role máte
+
+1.  V aplikaci Attract klikněte na otazník (**?**) v pravém horním rohu stránky.
+
+2.  Klikněte na tlačítko **O aplikaci**.
+
+    V zobrazeném okně se zobrazí role, které máte v aplikaci Attract:
+
+    ![Zobrazení typu licence Attract](media/attract-license-types.png)
+    
 ## <a name="delegated-roles"></a>Delegované role
 
 Pro každou práci, u níž jsou v náborovém týmu, mohou náboroví pracovníci a náboroví manažeři za sebe určit jednoho nebo více delegátů. Nemohou však určit delegáty pro jiné osoby v náborovém týmu.

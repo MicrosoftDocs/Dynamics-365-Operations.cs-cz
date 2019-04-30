@@ -3,7 +3,7 @@ title: Zobrazení finančních sestav
 description: Toto téma popisuje, jak zobrazit a prozkoumat finanční sestavy v aplikaci Microsoft Dynamics 365 for Finance and Operations. Obsahuje informace o různých možnostech, které můžete použít pro finanční sestavy, když chcete změnit jejich vzhled a data, která obsahují.
 author: kweekley
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
-ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
+ms.openlocfilehash: 0ba92ab4f751758c4adf26885ebb7b2c5290ecac
+ms.sourcegitcommit: 1e8dfa62989dbd7601bafdc933558f6bea1638ae
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791434"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894581"
 ---
 # <a name="view-financial-reports"></a>Zobrazení finančních sestav
 
@@ -46,12 +46,11 @@ Finanční sestavy mohou zahrnout více úrovní podrobností. První úroveň, 
 Jedná-li se o data rozpočtu, můžete otevřít účetní položky rozpočtu. Chcete-li zavřít úroveň zprávy a vrátit se na začátek, stiskněte klávesu Esc nebo klikněte na tlačítko **Zavřít** (**X**) vpravo nahoře.
 
 ## <a name="change-report-options"></a>Změna možností sestavy
-Ve zprávě **Skutečnost versus rozpočet** můžete změnit datum sestavy, použít filtry atributů a dimenzí nebo změnit scénář rozpočtu. V podokně akcí klikněte na tlačítko **Možnosti sestavy** a poté proveďte jeden nebo více z následujících kroků:
+V sestavě **Skutečnost versus rozpočet** můžete použít filtry atributů a dimenzí nebo změnit scénář rozpočtu. V podokně akcí klikněte na tlačítko **Možnosti sestavy** a poté proveďte jeden nebo více z následujících kroků:
 
--   Chcete-li změnit základní období a základní rok sestavy, vyberte základní období a základní rok a klikněte na tlačítko **OK**.
 -   Chcete-li v sestavě použít filtry atributů, vyberte možnost **Přidat filtr atributu**. Vyberte atribut, zadejte hodnotu atributu a klikněte na tlačítko **OK**. Vyberete-li například atribut **Kategorie účtů**, zadejte hodnotu atributu **PRODEJE**. Chcete-li filtr atributu odebrat, klikněte na tlačítko **Vymazat**.
 -   Chcete-li v sestavě použít filtry dimenzí, vyberte možnost **Přidat filtr dimenze**. Vyberte dimenzi a poté zadejte ID dimenze nebo vyberte dimenzi ze seznamu. Chcete-li filtr dimenze odebrat, klikněte na tlačítko **Vymazat**.
--   Chcete-li změnit scénář na sestavu **Skutečnost versus rozpočet**, vyberte nový scénář a klikněte na tlačítko **OK**. Je-li vybraný scénář pro jiný rok, je nutné aktualizovat základní rok. Například pokud je aktuální scénář pro fiskální rok 2015 a vy vyberete nový scénář pro fiskální rok 2016, musíte měnit základní rok na **2016**.
+-   Chcete-li změnit scénář na sestavu **Skutečnost versus rozpočet**, vyberte nový scénář a klikněte na tlačítko **OK**. Pokud je vybraný scénář pro jiný fiskální rok, nebudou vráceny žádné výsledky. Pokud je například sestava generována pro fiskální rok 2015 a aktuální scénář je pro fiskální rok 2015 a vybraný nový scénář je pro fiskální rok 2016, nebudou vráceny žádné výsledky. Pokud je zapotřebí nový scénář pro jiný fiskální rok, vytvořte novou verzi sestavy pro fiskální rok související se scénářem.
 
 Po kliknutí na tlačítko **OK** se vybrané možnosti použijí pro sestavu. Pokud se rozhodnete, že nechcete použít vybrané možnosti, klikněte na tlačítko **Storno**.
 

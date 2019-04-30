@@ -1,26 +1,26 @@
 ---
 title: Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
 description: Toto téma vysvětluje, jak nakonfigurovat integraci mezi aplikacemi Microsoft Dynamics 365 for Talent a Ceridian Dayforce pro zpracování výplat.
-author: jcart1106
+author: andreabichsel
 manager: AnnBe
-ms.date: 07/10/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fcddf82cffb9f0ba94b83eb21809b810585ebc9e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9a88bf61dbb12520b555ceb7363b1c646d95386e
+ms.sourcegitcommit: 204e4554e409c39fbbf7b273ad138ce2809931a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "303551"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898437"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
 
@@ -357,6 +357,9 @@ Když generujete mzdu pro zaměstnance v USA a Kanadě, musí být nakonfigurov�
 
 - Pro pozice jsou požadována oddělení.
 - Nákladová střediska musí být nastavena jako finanční dimenze a musí být prvním prvkem ve výchozím řetězci finanční dimenze.
+
+> [!NOTE] 
+> Aplikaci Talent lze konfigurovat tak, aby od pozic požadovala určení oddělení. Chcete-li to provést, přejděte na **Sdílené pozice lidských zdrojů > Pozice > Vyžadovat oddělení na pozicích**. Doporučujeme, aby toto nastavení bylo vynuceno pro integraci.
 
 ### <a name="job-types"></a>Typ úloh
 
