@@ -1,689 +1,684 @@
-items:
 - name: Vítejte v Dynamics 365 for Retail
   href: index.md
 - name: Začínáme
   items:
-  - name: Co je nového a co se změnilo
-    href: get-started/whats-new.md
-  - name: Funkce Preview v Dynamics 365 for Retail 10.0.2
-    href: get-started/whats-new-10-0-2.md
-  - name: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.1
-    href: get-started/whats-new-10-0-1.md
-  - name: Co je nového a upraveného v aplikaci Dynamics 365 for Retail (duben 2019)
-    href: get-started/april-whats-new.md
-  - name: Před zakoupením aplikace Retail
-    href: get-started/before-you-buy.md
-  - name: Registrace ukázkového předplatného
-    href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-  - name: Nasazení ukázkového prostředí
-    href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
-  - name: Možnosti nasazení
-    href: dev-itpro/choose-deployment.md
-  - name: Získání podpory pro Retail
-    href: retail-support.md
-  - name: Často kladené dotazy k aktualizacím služby One Version
-    href: ../fin-and-ops/get-started/one-version.md
+    - name: Co je nového a co se změnilo
+      href: get-started/whats-new.md
+    - name: Funkce Preview v Dynamics 365 for Retail 10.0.3
+      href: get-started/whats-new-10-0-3.md
+    - name: Funkce Preview v Dynamics 365 for Retail 10.0.2
+      href: get-started/whats-new-10-0-2.md
+    - name: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.1
+      href: get-started/whats-new-10-0-1.md
+    - name: Co je nového a upraveného v aplikaci Dynamics 365 for Retail (duben 2019)
+      href: get-started/april-whats-new.md
+    - name: Před zakoupením aplikace Retail
+      href: get-started/before-you-buy.md
+    - name: Registrace ukázkového předplatného
+      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
+    - name: Nasazení ukázkového prostředí
+      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
+    - name: Možnosti nasazení
+      href: dev-itpro/choose-deployment.md
+    - name: Získání podpory pro Retail
+      href: retail-support.md
+    - name: Často kladené dotazy k aktualizacím služby One Version
+      href: ../fin-and-ops/get-started/one-version.md
 - name: Vysvětlení životního cyklu implementace
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
-  - name: Microsoft FastTrack for Dynamics 365
-    href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
-  - name: Zaškolení
-    href: ../fin-and-ops/imp-lifecycle/onboard.md
-  - name: Příprava pro ostré nasazení
-    href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
-  - name: Často kladené dotazy týkající se ostrého nasazení
-    href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
-  - name: Odeslání požadavku na službu
-    href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
-  - name: Často kladené dotazy týkající se předplatného, projektů LCS a klientů Azure Active Directory
-    href: ../fin-and-ops/get-started/subscription-overview.md
-  - name: Přesun prostředí mezi datovými centry
-    href: ../fin-and-ops/get-started/move-environments-data-center.md
-  - name: Přesun licencí mezi typy smlouvy
-    href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
-  - name: Přesun projektu implementace LCS do jiného klienta služby Azure Active Directory
-    href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
-  - name: Implementace více LCS projektů a produkčních prostředí na stejném klientovi služby Azure Active Directory
-    href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
-  - name: Implementace projektů v aplikaci Finance and Operations Retail
-    href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-  - name: Nastavení nových prostředí, Azure DevOps a větví pro projekty Retail
-    href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-  - name: Aktualizace kódu a prostředí pro projekty Retail
-    href: dev-itpro/updating-environments.md
-  - name: Testování a problémy s výkonností
-    href: dev-itpro/retail-implementation-testing-performance.md
+    - name: Microsoft FastTrack for Dynamics 365
+      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
+    - name: Zaškolení
+      href: ../fin-and-ops/imp-lifecycle/onboard.md
+    - name: Příprava pro ostré nasazení
+      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
+    - name: Často kladené dotazy týkající se ostrého nasazení
+      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
+    - name: Odeslání požadavku na službu
+      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
+    - name: 'Často kladené dotazy týkající se předplatného, projektů LCS a klientů Azure Active Directory'
+      href: ../fin-and-ops/get-started/subscription-overview.md
+    - name: Přesun prostředí mezi datovými centry
+      href: ../fin-and-ops/get-started/move-environments-data-center.md
+    - name: Přesun licencí mezi typy smlouvy
+      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
+    - name: Přesun projektu implementace LCS do jiného klienta služby Azure Active Directory
+      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
+    - name: Implementace více LCS projektů a produkčních prostředí na stejném klientovi služby Azure Active Directory
+      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
+    - name: Implementace projektů v aplikaci Finance and Operations Retail
+      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+    - name: 'Nastavení nových prostředí, Azure DevOps a větví pro projekty Retail'
+      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+    - name: Aktualizace kódu a prostředí pro projekty Retail
+      href: dev-itpro/updating-environments.md
+    - name: Testování a problémy s výkonností
+      href: dev-itpro/retail-implementation-testing-performance.md
 - name: Distribuovaná správa objednávek (DOM)
   href: dom.md
 - name: Platby
   items:
-  - name: Metody platby
-    href: payment-methods.md
-  - name: Nastavení platební karty, autorizace a záznam
-    href: ../financials/accounts-receivable/credit-card-authorizations.md
-  - name: Konfigurace nominálních hodnot hotovosti pro pokladní místo
-    href: cash-denominations.md
-  - name: Platební konektor Dynamics 365 pro Adyen
-    href: dev-itpro/adyen-connector.md
-  - name: Nastavení scénářů plateb faktur
-    href: payinvoice.md
-  - name: Časté dotazy k platbám
-    href: dev-itpro/payments-retail.md
-  - name: Zabránění duplicitním platbám
-    href: duplicate-payment-protection.md
+    - name: Metody platby
+      href: payment-methods.md
+    - name: 'Nastavení platební karty, autorizace a záznam'
+      href: ../financials/accounts-receivable/credit-card-authorizations.md
+    - name: Konfigurace nominálních hodnot hotovosti pro pokladní místo
+      href: cash-denominations.md
+    - name: Platební konektor Dynamics 365 pro Adyen
+      href: dev-itpro/adyen-connector.md
+    - name: Nastavení scénářů plateb faktur
+      href: payinvoice.md
+    - name: Časté dotazy k platbám
+      href: dev-itpro/payments-retail.md
+    - name: Zabránění duplicitním platbám
+      href: duplicate-payment-protection.md
 - name: Nákupní objednávky
   items:
-  - name: Přehled nákupních objednávek
-    href: ../supply-chain/procurement/purchase-order-overview.md
-  - name: Vytváření nákupních objednávek
-    href: ../supply-chain/procurement/purchase-order-creation.md
-  - name: Příjemka produktu proti nákupním objednávkám
-    href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
-  - name: Schválení a potvrzení nákupních objednávek
-    href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
-  - name: Mobilní pracovní prostor schvalování nákupních objednávek
-    href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
+    - name: Přehled nákupních objednávek
+      href: ../supply-chain/procurement/purchase-order-overview.md
+    - name: Vytváření nákupních objednávek
+      href: ../supply-chain/procurement/purchase-order-creation.md
+    - name: Příjemka produktu proti nákupním objednávkám
+      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
+    - name: Schválení a potvrzení nákupních objednávek
+      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
+    - name: Mobilní pracovní prostor schvalování nákupních objednávek
+      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
 - name: Výkazy
   items:
-  - name: Výkazy maloobchodu
-    href: retail-statements.md
-  - name: Kontrola konzistence maloobchodních transakcí
-    href: valid-checker.md
-  - name: Vytvoření, výpočet a zaúčtování výkazů pro maloobchod
-    href: tasks/create-calculate-post-statement-retail-store.md
-  - name: Vylepšení funkcionality zaúčtování výkazů
-    href: statement-posting-EOD.md
-  - name: Konfigurace parametrů Retail, které ovlivňují výkazy maloobchodu
-    href: tasks/parameter-configurations-retail-statements.md
-  - name: Konfigurace nastavení metod platby, které ovlivňují výkazy maloobchodu
-    href: tasks/payment-configurations-retail-statements.md
-  - name: Konfigurace a spuštění úlohy pro výpočet výkazů
-    href: tasks/run-job-calculate-statements.md
-  - name: Konfigurace a spuštění úlohy pro zaúčtování výkazů
-    href: tasks/run-job-post-statements.md
-  - name: Konfigurace nastavení obchodu, které ovlivňují výkazy maloobchodu
-    href: tasks/store-configurations-retail-statements.md
+    - name: Výkazy maloobchodu
+      href: retail-statements.md
+    - name: Kontrola konzistence maloobchodních transakcí
+      href: valid-checker.md
+    - name: "Vytvoření, výpočet a\_zaúčtování výkazů pro maloobchod"
+      href: tasks/create-calculate-post-statement-retail-store.md
+    - name: Vylepšení funkcionality zaúčtování výkazů
+      href: statement-posting-EOD.md
+    - name: 'Konfigurace parametrů Retail, které ovlivňují výkazy maloobchodu'
+      href: tasks/parameter-configurations-retail-statements.md
+    - name: 'Konfigurace nastavení metod platby, které ovlivňují výkazy maloobchodu'
+      href: tasks/payment-configurations-retail-statements.md
+    - name: "Konfigurace a\_spuštění úlohy pro výpočet výkazů"
+      href: tasks/run-job-calculate-statements.md
+    - name: "Konfigurace a\_spuštění úlohy pro zaúčtování výkazů"
+      href: tasks/run-job-post-statements.md
+    - name: 'Konfigurace nastavení obchodu, které ovlivňují výkazy maloobchodu'
+      href: tasks/store-configurations-retail-statements.md
 - name: DPH
   items:
-  - name: Přehled DPH
-    href: ../financials/general-ledger/indirect-taxes-overview.md
-  - name: Metody výpočtu DPH v poli Zdroj
-    href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-  - name: " Přiřazení a přepsání DPH"
-    href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
-  - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
-    href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+    - name: Přehled DPH
+      href: ../financials/general-ledger/indirect-taxes-overview.md
+    - name: Metody výpočtu DPH v poli Zdroj
+      href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+    - name: " Přiřazení a\_přepsání DPH"
+      href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
+    - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
+      href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Omnikanálové rozšířené automatické náklady
   items:
-  - name: Konfigurace a použití rozšířených automatických nákladů
-    href: omni-auto-charges.md
-  - name: Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje
-    href: pro-rate-charges-matching-lines.md
+    - name: Konfigurace a použití rozšířených automatických nákladů
+      href: omni-auto-charges.md
+    - name: Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje
+      href: pro-rate-charges-matching-lines.md
 - name: Kontaktní středisko
   items:
-  - name: Funkce prodeje kontaktního střediska
-    href: call-center-functionality.md
-  - name: Katalogy kontaktního střediska
-    href: call-center-catalogs.md
-  - name: Konfigurace způsobů dodání a poplatků
-    href: configure-call-center-delivery.md
-  - name: Nastavení a práce s výstrahami u podvodů
-    href: set-up-fraud-alerts.md
-  - name: Nastavení kanálů kontaktního střediska
-    href: set-up-order-processing-options.md
-  - name: Nastavení programů kontinuity pro kontaktní střediska
-    href: set-up-continuity-program.md
-  - name: Konfigurace a práce s blokováním objednávek kontaktního střediska
-    href: work-with-order-holds.md
-  - name: Metody platby
-    href: work-with-payments.md
+    - name: Funkce prodeje kontaktního střediska
+      href: call-center-functionality.md
+    - name: Katalogy kontaktního střediska
+      href: call-center-catalogs.md
+    - name: Konfigurace způsobů dodání a poplatků
+      href: configure-call-center-delivery.md
+    - name: Nastavení a práce s výstrahami u podvodů
+      href: set-up-fraud-alerts.md
+    - name: Nastavení kanálů kontaktního střediska
+      href: set-up-order-processing-options.md
+    - name: Nastavení programů kontinuity pro kontaktní střediska
+      href: set-up-continuity-program.md
+    - name: Konfigurace a práce s blokováním objednávek kontaktního střediska
+      href: work-with-order-holds.md
+    - name: Metody platby
+      href: work-with-payments.md
 - name: Nastavení a správa kanálů
   items:
-  - name: Inicializace počátečních dat v nových prostředích Retail
-    href: enable-configure-retail-functionality.md
-  - name: Definování a udržování maloobchodní sítě
-    href: define-maintain-retail-channels.md
-  - name: Správa sortimentu
-    href: assortments.md
-  - name: Nastavit online obchodů
-    href: online-stores.md
-  - name: Konfigurace a instalace Retail hardware station
-    href: retail-hardware-station-configuration-installation.md
-  - name: Čas a docházka v aplikaci Retail
-    href: retail-time-attendance.md
+    - name: Inicializace počátečních dat v nových prostředích Retail
+      href: enable-configure-retail-functionality.md
+    - name: Definování a udržování maloobchodní sítě
+      href: define-maintain-retail-channels.md
+    - name: Správa sortimentu
+      href: assortments.md
+    - name: Nastavit online obchodů
+      href: online-stores.md
+    - name: Konfigurace a instalace Retail hardware station
+      href: retail-hardware-station-configuration-installation.md
+    - name: Čas a docházka v aplikaci Retail
+      href: retail-time-attendance.md
 - name: Modern Point of Sale (MPOS) a Cloud POS
   items:
-  - name: Výběr mezi MPOS a Cloud POS
-    href: MPOS-or-CPOS.md
-  - name: Online a offline POS operace
-    href: pos-operations.md
-  - name: Aktivace zařízení přizpůsobeného Retail Modern POS
-    href: dev-itpro/retail-POS-activation-changes.md
-  - name: Rozložení obrazovky ukázkových dat v MPOS a Cloud POS
-    href: demo-data.md
-  - name: Vyhledávání produktu a zákazníka v POS
-    href: POS-search-improvements.md
-  - name: Vyhledávání zásob v POS
-    href: product-variants-POS.md
-  - name: Pozastavení a obnovení transakcí v POS
-    href: pos-suspend-recall-transactions.md
-  - name: Hardwarová periferní zařízení
-    items:
-    - name: Periferní zařízení Retail
-      href: retail-peripherals-overview.md
-    - name: Simulátor periferních zařízení Retail
-      href: dev-itpro/retail-peripheral-simulator.md
-    - name: Připojení periferních zařízení k POS
-      href: define-maintain-channel-clients-registers-hw-stations.md
-  - name: Rozložení obrazovky
-    items:
-    - name: Rozložení obrazovky ukázkových dat v MPOS/CPOS
+    - name: Výběr mezi MPOS a Cloud POS
+      href: MPOS-or-CPOS.md
+    - name: Online a offline POS operace
+      href: pos-operations.md
+    - name: Aktivace zařízení přizpůsobeného Retail Modern POS
+      href: dev-itpro/retail-POS-activation-changes.md
+    - name: Rozložení obrazovky ukázkových dat v MPOS a Cloud POS
       href: demo-data.md
-    - name: Rozložení obrazovky pro POS
-      href: pos-screen-layouts.md
-    - name: Instalace návrháře rozložení Retail POS
-      href: install-pos-layout-designer.md
-    - name: Volba nastavení oznámení
-      href: Notifications-POS.md
-    - name: Nastavení aplikace POS a uživatelského jazyka
-      href: pos-application-user-language-settings.md
-    - name: Nastavení a správa obrázků pro MPOS
-      href: set-up-manage-images-retail-mpos.md
-  - name: Informační kódy a skupiny informačních kódů
-    href: info-codes-retail.md
-  - name: Vylepšení POS pro serializované produkty
-    href: serialized-inventory.md
-  - name: Doporučení produktu
-    items:
-    - name: Doporučení přizpůsobeného produktu
-      href: personalized-product-recommendations.md
-    - name: Přidání řízení doporučení na zařízeních POS
-      href: add-recommendations-control-pos-screen.md
-  - name: Funkce Offline POS
-    href: pos-offline-functionality.md
-  - name: Správa směn a zásuvky s hotovostí
-    href: shift-drawer-management.md
-  - name: Vyplacení zůstatku dárkového poukazu
-    href: dev-itpro/gift-card-cash-out.md
-  - name: Objednávky zákazníka
-    items:
-    - name: Objednávky zákazníka v MPOS
-      href: customer-orders-overview.md
-    - name: Hybridní objednávky zákazníka
-      href: hybrid-customer-orders.md
-  - name: Zaměstnanci obchodu
-    items:
-    - name: Sledování provizí v POS pomocí prodejních skupin
-      href: pos-sales-groups-track-commissions.md
-  - name: Odeslání objednávek z jiného obchodu
-    href: charge-send.md
-  - name: Aktivace zařízení
-    items:
-    - name: Konfigurace, Instalace a aktivace MPOS
-      href: retail-modern-pos-device-activation.md
-    - name: Nastavení funkce rozšířeného přihlášení pro MPOS a Cloud POS
-      href: extended-logon.md
-    - name: Správa účtů aktivace Retail a ověření zařízení
-      href: set-up-activation-accounts-validate-devices-hq.md
-  - name: Účtenky
-    items:
-    - name: Nastavení a návrh formátů příjemek
-      href: receipt-templates-printing.md
-    - name: Odesílání účtenek e-mailem z MPOS
-      href: email-receipts.md
-  - name: Záznamník úloh a nápověda pro MPOS a Cloud POS
-    href: task-recorder-retail-pos.md
+    - name: Vyhledávání produktu a zákazníka v POS
+      href: POS-search-improvements.md
+    - name: Vyhledávání zásob v POS
+      href: product-variants-POS.md
+    - name: Pozastavení a obnovení transakcí v POS
+      href: pos-suspend-recall-transactions.md
+    - name: Hardwarová periferní zařízení
+      items:
+        - name: Periferní zařízení Retail
+          href: retail-peripherals-overview.md
+        - name: Simulátor periferních zařízení Retail
+          href: dev-itpro/retail-peripheral-simulator.md
+        - name: Připojení periferních zařízení k POS
+          href: define-maintain-channel-clients-registers-hw-stations.md
+    - name: Rozložení obrazovky
+      items:
+        - name: Rozložení obrazovky ukázkových dat v MPOS/CPOS
+          href: demo-data.md
+        - name: Rozložení obrazovky pro POS
+          href: pos-screen-layouts.md
+        - name: Instalace návrháře rozložení Retail POS
+          href: install-pos-layout-designer.md
+        - name: Volba nastavení oznámení
+          href: Notifications-POS.md
+        - name: Nastavení aplikace POS a uživatelského jazyka
+          href: pos-application-user-language-settings.md
+        - name: Nastavení a správa obrázků pro MPOS
+          href: set-up-manage-images-retail-mpos.md
+    - name: "Informační kódy a\_skupiny informačních kódů"
+      href: info-codes-retail.md
+    - name: Vylepšení POS pro serializované produkty
+      href: serialized-inventory.md
+    - name: Doporučení produktu
+      items:
+        - name: Doporučení přizpůsobeného produktu
+          href: personalized-product-recommendations.md
+        - name: Přidání řízení doporučení na zařízeních POS
+          href: add-recommendations-control-pos-screen.md
+    - name: Funkce Offline POS
+      href: pos-offline-functionality.md
+    - name: Správa směn a zásuvky s hotovostí
+      href: shift-drawer-management.md
+    - name: Vyplacení zůstatku dárkového poukazu
+      href: dev-itpro/gift-card-cash-out.md
+    - name: Objednávky zákazníka
+      items:
+        - name: Objednávky zákazníka v MPOS
+          href: customer-orders-overview.md
+        - name: Hybridní objednávky zákazníka
+          href: hybrid-customer-orders.md
+    - name: Zaměstnanci obchodu
+      items:
+        - name: Sledování provizí v POS pomocí prodejních skupin
+          href: pos-sales-groups-track-commissions.md
+    - name: Odeslání objednávek z jiného obchodu
+      href: charge-send.md
+    - name: Aktivace zařízení
+      items:
+        - name: 'Konfigurace, Instalace a aktivace MPOS'
+          href: retail-modern-pos-device-activation.md
+        - name: Nastavení funkce rozšířeného přihlášení pro MPOS a Cloud POS
+          href: extended-logon.md
+        - name: Správa účtů aktivace Retail a ověření zařízení
+          href: set-up-activation-accounts-validate-devices-hq.md
+    - name: Účtenky
+      items:
+        - name: Nastavení a návrh formátů příjemek
+          href: receipt-templates-printing.md
+        - name: Odesílání účtenek e-mailem z MPOS
+          href: email-receipts.md
+    - name: Záznamník úloh a nápověda pro MPOS a Cloud POS
+      href: task-recorder-retail-pos.md
 - name: Plnění objednávek
   items:
-  - name: Plnění objednávek obchodu
-    href: Order-fulfillment-overview.md
-  - name: Nastavení plnění objednávek pro obchody
-    href: Order-fulfillment-POS-setup.md
-  - name: Zobrazení oznámení o objednávkách v POS
-    href: Notifications-POS.md
+    - name: Plnění objednávek obchodu
+      href: Order-fulfillment-overview.md
+    - name: Nastavení plnění objednávek pro obchody
+      href: Order-fulfillment-POS-setup.md
+    - name: Zobrazení oznámení o objednávkách v POS
+      href: Notifications-POS.md
 - name: Vrácení
   items:
-  - name: Prodej a vrácení produktů nezahrnutých v sortimentu obchodu
-    href: sell-return-outside-assortments.md
-  - name: Konfigurace a zpracování výměny u vratek
-    href: orderexchanges.md
-  - name: Omezení platebních metod pro vrácení bez příjemky
-    href: payment-methods-restrictions.md
-  - name: Vrácení položek napříč vícero objednávkami odběratele a fakturami
-    href: multireturn.md
+    - name: Prodej a vrácení produktů nezahrnutých v sortimentu obchodu
+      href: sell-return-outside-assortments.md
+    - name: Konfigurace a zpracování výměny u vratek
+      href: orderexchanges.md
+    - name: Omezení platebních metod pro vrácení bez příjemky
+      href: payment-methods-restrictions.md
+    - name: Vrácení položek napříč vícero objednávkami odběratele a fakturami
+      href: multireturn.md
 - name: Monitorování a analýza
   items:
-  - name: Monitorování výkonnosti prodeje a marží
-    href: monitor-sales-margin-performance.md
-  - name: Analýza trendů a vzorců prodeje
-    href: analyze-sales-trends-patterns.md
-  - name: Posouzení prodejních výsledků podle produktu
-    href: sales-performance-products.md
-  - name: Vyhodnocení ziskovosti odběratelů a produktů
-    href: assess-customer-product-profitability.md
-  - name: Analýza výkonnosti obchodu
-    href: store-performance-information.md
-  - name: Nastavení analýzy recency, frekvence a peněžního období
-    href: set-up-rfm-analysis.md
+    - name: Monitorování výkonnosti prodeje a marží
+      href: monitor-sales-margin-performance.md
+    - name: "Analýza trendů a\_vzorců prodeje"
+      href: analyze-sales-trends-patterns.md
+    - name: Posouzení prodejních výsledků podle produktu
+      href: sales-performance-products.md
+    - name: Vyhodnocení ziskovosti odběratelů a produktů
+      href: assess-customer-product-profitability.md
+    - name: Analýza výkonnosti obchodu
+      href: store-performance-information.md
+    - name: 'Nastavení analýzy recency, frekvence a peněžního období'
+      href: set-up-rfm-analysis.md
 - name: Sestavy maloobchodních cen
   href: price-report.md
-- name: Tvorba cen a slevy
+- name: "Tvorba cen a\_slevy"
   items:
-  - name: Maloobchodní slevy
-    href: retail-discounts-overview.md
-  - name: Správa maloobchodní prodejní ceny
-    href: price-management.md
-  - name: Úpravy ceny a slevy
-    href: price-adjustments-discounts.md
-  - name: Uplatnit vícero slev na produkt
-    href: Apply-multiple-retail-discounts.md
-  - name: Určení optimální kombinace překrývajících se slev
-    href: optimal-combination-overlapping-discounts.md
-  - name: Definování slev specifických pro kanál
-    href: define-channel-specific-discounts.md
-  - name: Možnosti zabránění slevám pro maloobchodní produkty
-    href: prevent-discounts.md
-  - name: Přehled slev při dodání
-    href: retail-shipping-discount.md
-  - name: Natavení kupónů pro maloobchodní prodej
-    href: retail-coupons.md
+    - name: Maloobchodní slevy
+      href: retail-discounts-overview.md
+    - name: Správa maloobchodní prodejní ceny
+      href: price-management.md
+    - name: Úpravy ceny a slevy
+      href: price-adjustments-discounts.md
+    - name: Uplatnit vícero slev na produkt
+      href: Apply-multiple-retail-discounts.md
+    - name: Určení optimální kombinace překrývajících se slev
+      href: optimal-combination-overlapping-discounts.md
+    - name: Definování slev specifických pro kanál
+      href: define-channel-specific-discounts.md
+    - name: Možnosti zabránění slevám pro maloobchodní produkty
+      href: prevent-discounts.md
+    - name: Přehled slev při dodání
+      href: retail-shipping-discount.md
+    - name: Natavení kupónů pro maloobchodní prodej
+      href: retail-coupons.md
 - name: Produkty a merchandising
   items:
-  - name: Přehled informací o produktech
-    href: ../supply-chain/pim/product-information.md
-  - name: Hierarchie maloobchodu
-    href: retail-hierarchies.md
-  - name: Atributy a skupiny atributů
-    href: attribute-attributegroups-lifecycle.md
-  - name: Vytvoření a správa atributů
-    href: create-manage-attributes.md
-  - name: Nastavení maloobchodních produktů
-    href: set-up-retail-products.md
-  - name: Správa kategorií produktů a produktů v aplikaci Retail
-    href: category-management-product-creation.md
-  - name: Dimenze produktu
-    href: ../supply-chain/pim/product-dimensions.md
-  - name: Nastavení čárových kódů
-    href: set-up-bar-codes.md
-  - name: Nastavení masek čárových kódů
-    href: set-up-bar-code-masks.md
-  - name: Nastavení sortimentu
-    href: set-up-assortments.md
-  - name: Prodej a návrat produktů nezahrnutých v sortimentu obchodu
-    href: sell-return-outside-assortments.md
-  - name: Výchozí nastavení objednávky pro dimenze a varianty produktu
-    href: ../supply-chain/production-control/default-order-settings.md
-  - name: Vyhledávání produktů a variant produktu během zadávání objednávky
-    href: ../supply-chain/pim/search-products-product-variants.md
+    - name: Přehled informací o produktech
+      href: ../supply-chain/pim/product-information.md
+    - name: Hierarchie maloobchodu
+      href: retail-hierarchies.md
+    - name: Atributy a skupiny atributů
+      href: attribute-attributegroups-lifecycle.md
+    - name: Vytvoření a správa atributů
+      href: create-manage-attributes.md
+    - name: Nastavení maloobchodních produktů
+      href: set-up-retail-products.md
+    - name: Správa kategorií produktů a produktů v aplikaci Retail
+      href: category-management-product-creation.md
+    - name: Dimenze produktu
+      href: ../supply-chain/pim/product-dimensions.md
+    - name: Nastavení čárových kódů
+      href: set-up-bar-codes.md
+    - name: Nastavení masek čárových kódů
+      href: set-up-bar-code-masks.md
+    - name: Nastavení sortimentu
+      href: set-up-assortments.md
+    - name: Prodej a návrat produktů nezahrnutých v sortimentu obchodu
+      href: sell-return-outside-assortments.md
+    - name: Výchozí nastavení objednávky pro dimenze a varianty produktu
+      href: ../supply-chain/production-control/default-order-settings.md
+    - name: "Vyhledávání produktů a\_variant produktu během zadávání objednávky"
+      href: ../supply-chain/pim/search-products-product-variants.md
 - name: Věrnostní program
   items:
-  - name: Přehled věrnostního programu
-    href: set-up-customer-loyalty-program.md
+    - name: Přehled věrnostního programu
+      href: set-up-customer-loyalty-program.md
 - name: Zásoby
   items:
-  - name: Správa skladových zásob
-    href: work-with-store-inventory.md
-  - name: Registrace sériových čísel v prodejním procesu
-    href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
-  - name: Skladové deníky
-    href: ../supply-chain/inventory/inventory-journals.md
-  - name: Počet označení zásob
-    href: ../supply-chain/inventory/inventory-tag-counting.md
-  - name: Metoda FIFO s fyzickou hodnotou a označením
-    href: ../supply-chain/cost-management/fifo-physical-value-marking.md
-  - name: Datum LIFO s fyzickou hodnotou a označením
-    href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md
-  - name: Metoda LIFO s fyzickou hodnotou a označením
-    href: ../supply-chain/cost-management/lifo-physical-value-marking.md
-  - name: Datum váženého průměru
-    href: ../supply-chain/cost-management/weighted-average-date.md
-  - name: Vážený průměr s fyzickou hodnotou a označením
-    href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md
-  - name: Karanténní příkazy
-    href: ../supply-chain/inventory/quarantine-orders.md
-  - name: Průběžná průměrná nákladová cena
-    href: ../supply-chain/cost-management/running-average-cost-price.md
-  - name: Sledování průběžných průměrných nákladů pro dimenzi zboží
-    href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+    - name: Správa skladových zásob
+      href: work-with-store-inventory.md
+    - name: "Registrace sériových čísel v\_prodejním procesu"
+      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
+    - name: Skladové deníky
+      href: ../supply-chain/inventory/inventory-journals.md
+    - name: Počet označení zásob
+      href: ../supply-chain/inventory/inventory-tag-counting.md
+    - name: Metoda FIFO s fyzickou hodnotou a označením
+      href: ../supply-chain/cost-management/fifo-physical-value-marking.md
+    - name: Datum LIFO s fyzickou hodnotou a označením
+      href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md
+    - name: Metoda LIFO s fyzickou hodnotou a označením
+      href: ../supply-chain/cost-management/lifo-physical-value-marking.md
+    - name: Datum váženého průměru
+      href: ../supply-chain/cost-management/weighted-average-date.md
+    - name: Vážený průměr s fyzickou hodnotou a označením
+      href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md
+    - name: Karanténní příkazy
+      href: ../supply-chain/inventory/quarantine-orders.md
+    - name: Průběžná průměrná nákladová cena
+      href: ../supply-chain/cost-management/running-average-cost-price.md
+    - name: Sledování průběžných průměrných nákladů pro dimenzi zboží
+      href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
 - name: Lidské zdroje
   items:
-  - name: Uspořádání zaměstnanců podle oddělení, prací a pozic
-    href: ../talent/departments-jobs-positions.md
-  - name: Nastavení komponent práce
-    href: ../talent/create-job.md
+    - name: 'Uspořádání zaměstnanců podle oddělení, prací a pozic'
+      href: ../talent/departments-jobs-positions.md
+    - name: Nastavení komponent práce
+      href: ../talent/create-job.md
 - name: Lokalizace a funkce týkající se předpisů
   items:
-  - name: Přehled fiskální integrace pro maloobchodní síť
-    href: localizations/fiscal-integration-for-retail-channel.md
-  - name: Nastavení fiskální integrace pro maloobchodní síť
-    href: localizations/setting-up-fiscal-integration-for-retail-channel.md
-  - name: Rakousko
-    items:
-    - name: Ukázka integrace fiskální služby pro Rakousko
-      href: localizations/emea-aut-fi-sample.md
-  - name: Východní Evropa
-    items:
-    - name: Zálohové faktury pro Retail pro východní Evropu
-      href: localizations/emea-eeu-advance-invoices-for-retail.md
-    - name: Správa pokladní hotovosti pro Retail pro východní Evropu
-      href: localizations/emea-eeu-petty-cash-for-retail.md
-    - name: Faktury odběratele a vrácení prodejních objednávek ve východoevropských zemích v aplikaci Retail
-      href: localizations/emea-eeu-retail-invoices.md
-    - name: Pokyny k nasazení registračních pokladen pro Českou republiku, Maďarsko a Polsko
-      href: localizations/emea-eeu-deployment.md
-    - name: Vzor integrace fiskální tiskárny pro Polsko
-      href: localizations/emea-pol-fpi-sample.md
-    - name: Ukázka integrace fiskální služby pro Českou republiku
-      href: localizations/emea-cze-fi-sample.md
-  - name: Francie
-    items:
-    - name: Funkce registrační pokladny
-      href: localizations/emea-fra-cash-registers.md
-    - name: Pokyny k nasazení registračních pokladen
-      href: localizations/emea-fra-deployment.md
-  - name: Indie
-    items:
-    - name: Integrace daně ze zboží služeb (GST) pro registrační pokladny
-      href: localizations/apac-ind-cash-registers.md
-    - name: Pokyny k nasazení registračních pokladen
-      href: localizations/apac-ind-loc-deployment-guidelines.md
-    - name: Podpora pro upgrade a N-1 pro Indii
-      href: localizations/apac-ind-n-1-for-india.md
-  - name: Itálie
-    items:
-    - name: Vzor integrace fiskální tiskárny pro Itálii
-      href: localizations/emea-ita-fpi-sample.md
-  - name: Norsko
-    items:
-    - name: Funkce registrační pokladny
-      href: localizations/emea-nor-cash-registers.md
-    - name: Pokyny k nasazení registračních pokladen
-      href: localizations/emea-nor-loc-deployment-guidelines.md
-  - name: Švédsko
-    items:
-    - name: Funkce registrační pokladny
-      href: localizations/emea-swe-cash-registers.md
-    - name: Vzor pro integraci Retail POS s kontrolními jednotkami
-      href: localizations/retail-sdk-control-unit-sample.md
-- name: Úkoly v aplikaci Retail
+    - name: Přehled fiskální integrace pro maloobchodní síť
+      href: localizations/fiscal-integration-for-retail-channel.md
+    - name: Nastavení fiskální integrace pro maloobchodní síť
+      href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+    - name: Rakousko
+      items:
+        - name: Ukázka integrace fiskální služby pro Rakousko
+          href: localizations/emea-aut-fi-sample.md
+    - name: Východní Evropa
+      items:
+        - name: Zálohové faktury pro Retail pro východní Evropu
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: Správa pokladní hotovosti pro Retail pro východní Evropu
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: Faktury odběratele a vrácení prodejních objednávek ve východoevropských zemích v aplikaci Retail
+          href: localizations/emea-eeu-retail-invoices.md
+        - name: 'Pokyny k nasazení registračních pokladen pro Českou republiku, Maďarsko a Polsko'
+          href: localizations/emea-eeu-deployment.md
+        - name: Vzor integrace fiskální tiskárny pro Polsko
+          href: localizations/emea-pol-fpi-sample.md
+        - name: Ukázka integrace fiskální služby pro Českou republiku
+          href: localizations/emea-cze-fi-sample.md
+    - name: Francie
+      items:
+        - name: Funkce registrační pokladny
+          href: localizations/emea-fra-cash-registers.md
+        - name: Pokyny k nasazení registračních pokladen
+          href: localizations/emea-fra-deployment.md
+    - name: Indie
+      items:
+        - name: Integrace daně ze zboží služeb (GST) pro registrační pokladny
+          href: localizations/apac-ind-cash-registers.md
+        - name: Pokyny k nasazení registračních pokladen
+          href: localizations/apac-ind-loc-deployment-guidelines.md
+        - name: Podpora pro upgrade a N-1 pro Indii
+          href: localizations/apac-ind-n-1-for-india.md
+    - name: Itálie
+      items:
+        - name: Vzor integrace fiskální tiskárny pro Itálii
+          href: localizations/emea-ita-fpi-sample.md
+    - name: Norsko
+      items:
+        - name: Funkce registrační pokladny
+          href: localizations/emea-nor-cash-registers.md
+        - name: Pokyny k nasazení registračních pokladen
+          href: localizations/emea-nor-loc-deployment-guidelines.md
+    - name: Švédsko
+      items:
+        - name: Funkce registrační pokladny
+          href: localizations/emea-swe-cash-registers.md
+        - name: Vzor pro integraci Retail POS s kontrolními jednotkami
+          href: localizations/retail-sdk-control-unit-sample.md
+- name: "Úkoly v\_aplikaci Retail"
   items:
-  - name: Vytvoření produktu
-    href: ../supply-chain/pim/tasks/create-product.md
-  - name: Konfigurace propojených produktů
-    href: ../supply-chain/pim/tasks/configure-linked-products.md
-  - name: Uvolnění produktu / základního produktu právnickým osobám
-    href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
-  - name: Vytvoření obchodní smluv specifických pro kanál
-    href: tasks/base-price-trade-agreements.md
-  - name: Vytvoření obchodních smluv pomocí cenových pravidel kategorií
-    href: tasks/category-pricing-rules-trade-agreements.md
-  - name: Konfigurace zpracování platební karty
-    href: tasks/configure-credit-card-processing.md
-  - name: Konfigurace funkčních profilů pro obchodní zástupce
-    href: tasks/configure-functionality-profile-sales-representative.md
-  - name: Konfigurace doporučení produktu využívajícího strojové učení
-    href: tasks/configure-machine-learning-product-recommendations.md
-  - name: Vytvoření zařízení a jejich přidružení k pokladnám
-    href: tasks/create-associate-device.md
-  - name: Vytvoření hardwarových stanic
-    href: tasks/create-associate-hardware-station.md
-  - name: Vytvoření registračních pokladen POS
-    href: tasks/create-associate-registers.md
-  - name: Vytváření objednávek v kontaktním středisku
-    href: tasks/create-call-center-orders.md
-  - name: Vytvoření finančních dimenzí pro pokladny POS a konfigurace hodnot dimenzí na pokladnách
-    href: tasks/create-financial-dimensions-pos.md
-  - name: Vytváření finančních dimenzí pro maloobchodní sítě a konfigurace hodnot dimenzí v obchodech
-    href: tasks/create-financial-dimensions-retail-channels.md
-  - name: Vytváření online kanálů a definování atributů kanálu
-    href: tasks/create-online-channel-define-channel-attributes.md
-  - name: Vytváření skupin oprávnění POS
-    href: tasks/create-pos-permission-groups.md
-  - name: Vytvoření vizuálních profilů POS
-    href: tasks/create-pos-visual-profile-2016-02.md
-  - name: Vytváření balení produktů pro nákupní objednávky
-    href: tasks/create-product-packages-purchase-orders.md
-  - name: Vytvoření kanálů kontaktního střediska a definování atributů kanálu
-    href: tasks/define-call-center-channel-channel-attributes.md
-  - name: Definování atributů kanálu
-    href: tasks/define-channel-attributes.md
-  - name: Definování plánů trvání
-    href: tasks/define-continuity-schedules.md
-  - name: " Definování věrnostních programů"
-    href: tasks/define-loyalty-programs.md
-  - name: " Definování bodů věrnostních odměn"
-    href: tasks/define-loyalty-reward-points.md
-  - name: " Definování věrnostních schémat"
-    href: tasks/define-loyalty-schemes.md
-  - name: Návrh vztahů mezi organizačními jednotkami
-    href: tasks/design-relationships-between-organizational-units.md
-  - name: Správa sortimentu
-    href: tasks/manage-assortments-2016-11.md
-  - name: Stažení hardwarové stanice pomocí samoobsluhy
-    href: tasks/perform-self-service-download-hardware-station.md
-  - name: Zaúčtování online prodeje a plateb
-    href: tasks/posting-online-sales-payments.md
-  - name: Zpracování úprav bodů věrnostních odměn
-    href: tasks/process-loyalty-reward-point-adjustments.md
-  - name: Zadání produktů z distribučních center do obchodů pomocí metody buyer's push
-    href: tasks/push-products-distribution-center-store-buyers-push.md
-  - name: Vytvoření úprav maloobchodních cen
-    href: tasks/retail-price-adjustments.md
-  - name: Generování a spouštění předpřipravených sestav
-    href: tasks/run-out-box-reports.md
-  - name: Nastavení pravidel a parametrů pro cross docking a metodu buyer's push
-    href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
-  - name: Prodej programů trvání a zpracování prodejních objednávek
-    href: tasks/use-continuity-program.md
-  - name: Konfigurace maloobchodních pracovníků
-    href: tasks/worker.md
+    - name: Vytvoření produktu
+      href: ../supply-chain/pim/tasks/create-product.md
+    - name: Konfigurace propojených produktů
+      href: ../supply-chain/pim/tasks/configure-linked-products.md
+    - name: Uvolnění produktu / základního produktu právnickým osobám
+      href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
+    - name: Vytvoření obchodní smluv specifických pro kanál
+      href: tasks/base-price-trade-agreements.md
+    - name: Vytvoření obchodních smluv pomocí cenových pravidel kategorií
+      href: tasks/category-pricing-rules-trade-agreements.md
+    - name: Konfigurace zpracování platební karty
+      href: tasks/configure-credit-card-processing.md
+    - name: Konfigurace funkčních profilů pro obchodní zástupce
+      href: tasks/configure-functionality-profile-sales-representative.md
+    - name: Konfigurace doporučení produktu využívajícího strojové učení
+      href: tasks/configure-machine-learning-product-recommendations.md
+    - name: Vytvoření zařízení a jejich přidružení k pokladnám
+      href: tasks/create-associate-device.md
+    - name: Vytvoření hardwarových stanic
+      href: tasks/create-associate-hardware-station.md
+    - name: Vytvoření registračních pokladen POS
+      href: tasks/create-associate-registers.md
+    - name: "Vytváření objednávek v\_kontaktním středisku"
+      href: tasks/create-call-center-orders.md
+    - name: "Vytvoření finančních dimenzí pro pokladny POS a\_konfigurace hodnot dimenzí na pokladnách"
+      href: tasks/create-financial-dimensions-pos.md
+    - name: "Vytváření finančních dimenzí pro maloobchodní sítě a\_konfigurace hodnot dimenzí v\_obchodech"
+      href: tasks/create-financial-dimensions-retail-channels.md
+    - name: "Vytváření online kanálů a\_definování atributů kanálu"
+      href: tasks/create-online-channel-define-channel-attributes.md
+    - name: Vytváření skupin oprávnění POS
+      href: tasks/create-pos-permission-groups.md
+    - name: Vytvoření vizuálních profilů POS
+      href: tasks/create-pos-visual-profile-2016-02.md
+    - name: Vytváření balení produktů pro nákupní objednávky
+      href: tasks/create-product-packages-purchase-orders.md
+    - name: Vytvoření kanálů kontaktního střediska a definování atributů kanálu
+      href: tasks/define-call-center-channel-channel-attributes.md
+    - name: Definování atributů kanálu
+      href: tasks/define-channel-attributes.md
+    - name: Definování plánů trvání
+      href: tasks/define-continuity-schedules.md
+    - name: ' Definování věrnostních programů'
+      href: tasks/define-loyalty-programs.md
+    - name: ' Definování bodů věrnostních odměn'
+      href: tasks/define-loyalty-reward-points.md
+    - name: ' Definování věrnostních schémat'
+      href: tasks/define-loyalty-schemes.md
+    - name: Návrh vztahů mezi organizačními jednotkami
+      href: tasks/design-relationships-between-organizational-units.md
+    - name: Správa sortimentu
+      href: tasks/manage-assortments-2016-11.md
+    - name: Stažení hardwarové stanice pomocí samoobsluhy
+      href: tasks/perform-self-service-download-hardware-station.md
+    - name: "Zaúčtování online prodeje a\_plateb"
+      href: tasks/posting-online-sales-payments.md
+    - name: Zpracování úprav bodů věrnostních odměn
+      href: tasks/process-loyalty-reward-point-adjustments.md
+    - name: "Zadání produktů z\_distribučních center do obchodů pomocí metody buyer's push"
+      href: tasks/push-products-distribution-center-store-buyers-push.md
+    - name: Vytvoření úprav maloobchodních cen
+      href: tasks/retail-price-adjustments.md
+    - name: "Generování a\_spouštění předpřipravených sestav"
+      href: tasks/run-out-box-reports.md
+    - name: "Nastavení pravidel a\_parametrů pro cross docking a\_metodu buyer's push"
+      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+    - name: Prodej programů trvání a zpracování prodejních objednávek
+      href: tasks/use-continuity-program.md
+    - name: Konfigurace maloobchodních pracovníků
+      href: tasks/worker.md
 - name: Vývoj a správa v aplikaci Retail
   href: dev-itpro/dev-retail-home-page.md
   items:
-  - name: Architektura
-    items:
-    - name: Komponenty aplikace Retail
-      href: retail-components.md
-    - name: Architektura serveru Retail Server
-      href: dev-itpro/retail-server-architecture.md
-    - name: Výběr topologie v obchodu
-      href: dev-itpro/retail-in-store-topology.md
-    - name: Commerce Data Exchange a komunikace maloobchodní sítě
-      href: dev-itpro/define-retail-channel-communications-cdx.md
-    - name: Architektura Retail Modern POS
-      href: dev-itpro/retail-modern-pos-architecture.md
-    - name: Architektura publikování online obchodu Retail
-      href: dev-itpro/retail-online-store-publishing-architecture.md
-    - name: Obsah Retail Channel Performance Power BI
-      href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
-    - name: Certifikace Payment Application Data Security Standards (PA-DSS)
-      href: dev-itpro/PA-DSS-Certification.md
-    - name: Maloobchodní funkce dostupné v místních nasazeních
-      href: retail-onprem.md
-  - name: Nasazení a opravy hotfix
-    items:
-    - name: Retail Store Scale Unit
-      href: dev-itpro/retail-store-system-begin.md
-    - name: Instalace a konfigurace Retail Store Scale Unit
-      href: dev-itpro/retail-store-scale-unit-configuration-installation.md
-    - name: Konfigurace a instalace Retail Modern POS
-      href: retail-modern-pos-device-activation.md
-    - name: Správa účtů Retail a zařízení z centrály
-      href: set-up-activation-accounts-validate-devices-hq.md
-    - name: Aktivace zařízení Retail POS
-      href: dev-itpro/retail-device-activation.md
-    - name: Pomoc se zabezpečením Cloud POS ve sdílených prostředích
-      href: dev-itpro/secure-retail-cloud-pos.md
-    - name: Konfigurace a instalace Retail hardware station
-      href: retail-hardware-station-configuration-installation.md
-    - name: Hromadné nasazení samoobslužných komponent Retail
-      href: dev-itpro/retail-mass-deployment.md
-    - name: Události komponent Retail pro diagnostiku a řešení potíží
-      href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
-    - name: Použití nasaditelného balíčku
-      href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
-  - name: Upgrade a N-1 podpora
-    items:
-    - name: Upgrade a N-1 podpora pro Retail
-      href: dev-itpro/overview-upgrade-n-minus1.md
-    - name: Instalace fázovaného nasazení (N-1) a přechod
-      href: dev-itpro/n-1-installation-configuration.md
-    - name: Upgrade rozšíření kanálu Retail na nejnovější Retail SDK
-      href: dev-itpro/retailSDK-update.md
-  - name: Průvodce implementací
-    items:
-    - name: Průvodce implementací správy zařízení
-      href: implementation-considerations-devices.md
-  - name: Konfigurace prostředí
-    items:
-    - name: Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci
-      href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
-    - name: Správa Map Bing
-      href: dev-itpro/manage-bing-maps.md
-  - name: Lokalizovat zdroje rozšíření Retail a soubory popisků
-    href: dev-itpro/extension-resource-localization.md
-  - name: Rozšiřitelnost pokladních míst
-    items:
-    - name: Rozvržení obrazovky Retail POS
-      href: pos-screen-layouts.md
-    - name: Otevřené URL adresy v POS
-      href: Open-URL-in-POS.md
-    - name: Instalace návrháře rozložení POS
-      href: install-pos-layout-designer.md
-    - name: Retail Modern POS v offline režimu
-      href: dev-itpro/retail-modern-pos-offline.md
-    - name: Rozšíření zobrazení displeje POS Dual
-      href: dev-itpro/pos-dual-display-extension.md
-    - name: Rozšiřitelnost spouštění Retail Modern POS a Cloud POS
-      href: dev-itpro/modern-pos-trigger-extensibility.md
-    - name: Přidání vlastních ovládacích prvků do POS zobrazení
-      href: dev-itpro/pos-custom-control.md
-    - name: Přidání operací POS do rozvržení POS pomocí návrháře mřížek tlačítek
-      href: dev-itpro/add-POS-operations.md
-    - name: Rozhraní API pro Retail POS
-      href: dev-itpro/POS-APIs.md
-    - name: Rozšíření POS plateb
-      href: dev-itpro/pos-payment-extension.md
-    - name: Podpora pro externí dárkové poukazy
-      href: dev-itpro/gift-card.md
-    - name: Vytvoření a použití brandingu na aplikaci Retail Experience
-      href: dev-itpro/create-retail-experience-app.md
-    - name: Nastavení aplikace POS Hybrid na systémech Android a iOS
-      href: dev-itpro/hybridApp.md
-    - name: Přepsání obslužné rutiny POS
-      href: dev-itpro/pos-handler.md
-    - name: Zobrazit informace o balíčku rozšíření POS
-      href: dev-itpro/view-pos-extension-package-details.md
-  - name: Hardware Station a rozšiřitelnost
-    href: dev-itpro/hardware-station-extensibility.md
-  - name: Rozšiřitelnost serveru Retail Server
-    items:
-    - name: Rozšíření kontroloru Retail Server OData
-      href: dev-itpro/extend-retail-server-odata-controller.md
-    - name: Vytvoření kontroloru Web API pro Retail Server
-      href: dev-itpro/odata-controllers-api.md
-    - name: API zákazníka a spotřebitel serveru Retail Server
-      href: dev-itpro/retail-server-customer-consumer-api.md
-    - name: Rozšíření výchozího kontroloru metadat Retail Serveru
-      href: dev-itpro/extend-metadata.md
-    - name: Volání služby CRT v režimu offline
-      href: dev-itpro/call-crt-service-offline.md
-  - name: Rozšiřitelnost Commerce Runtime (CRT)
-    items:
-    - name: Architektura a konfigurace CRT
-      href: dev-itpro/commerce-runtime-overview.md
-    - name: Služby CRT
-      href: dev-itpro/crt-services.md
-    - name: Rozšiřitelnost CRT a serveru Retail Server
-      href: dev-itpro/commerce-runtime-extensibility.md
-    - name: Přidání preferenčních dat zákazníka do databází kanálů
-      href: dev-itpro/add-customer-preference-channel.md
-    - name: Přidání vlastností do prodejních objednávek
-      href: dev-itpro/add-properties-sales-order.md
-    - name: Rozšiřitelnost a spouštění CRT
-      href: dev-itpro/commerce-runtime-extensibility-trigger.md
-    - name: Blokování transakcí pomocí spouštění
-      href: dev-itpro/trigger-example-blocking-transaction.md
-    - name: Implementace zásad vracení pomocí spouštění
-      href: dev-itpro/trigger-example-return-policy.md
-  - name: Rozšiřitelnost e-Commerce
-    items:
-    - name: Konfigurace online obchodů
-      href: dev-itpro/configure-online-store.md
-    - name: Konfigurace poskytovatelů ověřování
-      href: dev-itpro/configure-authentication-providers.md
-    - name: Platforma e-Commerce
-      href: dev-itpro/ecommerce-platform.md
-    - name: SDK platforma e-Commerce
-      href: dev-itpro/ecommerce-platform-sdk.md
-  - name: Rozšiřitelnost konektoru platby
-    items:
-    - name: Vytvoření integrace plateb pro platební terminál
-      href: dev-itpro/end-to-end-payment-extension.md
-    - name: Implementace konektoru platby a platebního zařízení (dokument white paper)
-      href: http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx
-    - name: Nasazení konektorů platby
-      href: dev-itpro/deploy-payment-connector.md
-    - name: Vytvoření vlastních lokalizovaných chybových zpráv pro rozšíření platebních terminálů
-      href: dev-itpro/payment-custom-error-messages.md
-    - name: Vytvoření instalační služby systému Windows pro konektory platby
-      href: dev-itpro/create-windows-installer-payment-connector.md
-    - name: Použití dat platby
-      href: payment-connector-data-fields.md
-    - name: Povolení ochrany před duplicitní platbou pro platební konektor
-      href: dev-itpro/duplicate-payment-protection.md
-  - name: Retail SDK
-    href: dev-itpro/retail-sdk/retail-sdk-overview.md
-    items:
-    - name: Nadcházející změny v Retail SDK
-      href: dev-itpro/UpcomingSDKChanges.md
-    - name: Sloučení systémů sestavení pro Retail a Finance and Operations
-      href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-    - name: Vzory rozšiřitelnosti sady Retail SDK
-      href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-    - name: Vytvoření maloobchodních nasaditelných balíčků
-      href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-    - name: Vzory sady Retail SDK
-      href: dev-itpro/retail-sdk/retail-sdk-samples.md
+    - name: Architektura
       items:
-      - name: Body rozšíření pro dodací listy
-        href: dev-itpro/extensions-shipping-carrier-integration.md
-    - name: Rozšíření databáze kanálů
-      href: dev-itpro/channel-db-extensions.md
-    - name: Povolení vlastní CDX synchronizace prostřednictvím rozšíření
-      href: dev-itpro/cdx-extensibility.md
-    - name: Přidání vlastních polí do panelu POS Totals
-      href: dev-itpro/custom-field-pos-totals.md
-    - name: Definování a nastavení atributů objednávky
-      href: dev-itpro/order-attributes.md
-    - name: Atributy odběratele
-      href: dev-itpro/customer-attributes.md
-    - name: Retail Typescript a C# proxy
-      href: dev-itpro/typescript-proxy-retail-pos.md
-    - name: Spuštění vzorů Retail POS
-      href: dev-itpro/pos-run-samples.md
-    - name: Rozšíření zobrazení POS pro přidání vlastních sloupců a tlačítek panelu aplikací
-      href: dev-itpro/pos-view-extension.md
-    - name: Přidání vlastních ovládacích prvků na stránky transakcí Retail Modern POS
-      href: dev-itpro/pos-custom-transaction.md
-    - name: Přidání vlastních sloupců do mřížky transakcí POS
-      href: dev-itpro/pos-custom-transaction-column.md
-    - name: Volání API POS nebo operací z rozšíření POS
-      href: dev-itpro/pos-api-extension.md
-    - name: Spouštěče Retail Modern POS a tisk
-      href: dev-itpro/pos-trigger-printing.md
-    - name: Přidání vlastních ovládacích prvků do zobrazení POS na základě návrháře bez obrazovky
-      href: dev-itpro/pos-control-non-screen.md
-    - name: Vývoj ve vývojářských prostředích hostovaných v cloudu bez přístupu správce
-      href: dev-itpro/cloud-dev-box.md
-  - name: Commerce runtime
-    items:
-    - name: Rozšíření věrnostního programu
-      href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 179295f4397120f46391885760c980b2c9baa028
-ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
-ms.translationtype: HT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "975913"
+        - name: Komponenty aplikace Retail
+          href: retail-components.md
+        - name: Architektura serveru Retail Server
+          href: dev-itpro/retail-server-architecture.md
+        - name: Výběr topologie v obchodu
+          href: dev-itpro/retail-in-store-topology.md
+        - name: Commerce Data Exchange a komunikace maloobchodní sítě
+          href: dev-itpro/define-retail-channel-communications-cdx.md
+        - name: Architektura Retail Modern POS
+          href: dev-itpro/retail-modern-pos-architecture.md
+        - name: Architektura publikování online obchodu Retail
+          href: dev-itpro/retail-online-store-publishing-architecture.md
+        - name: Obsah Retail Channel Performance Power BI
+          href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
+        - name: Certifikace Payment Application Data Security Standards (PA-DSS)
+          href: dev-itpro/PA-DSS-Certification.md
+        - name: Maloobchodní funkce dostupné v místních nasazeních
+          href: retail-onprem.md
+    - name: Nasazení a opravy hotfix
+      items:
+        - name: Retail Store Scale Unit
+          href: dev-itpro/retail-store-system-begin.md
+        - name: Instalace a konfigurace Retail Store Scale Unit
+          href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: Konfigurace a instalace Retail Modern POS
+          href: retail-modern-pos-device-activation.md
+        - name: Správa účtů Retail a zařízení z centrály
+          href: set-up-activation-accounts-validate-devices-hq.md
+        - name: Aktivace zařízení Retail POS
+          href: dev-itpro/retail-device-activation.md
+        - name: Pomoc se zabezpečením Cloud POS ve sdílených prostředích
+          href: dev-itpro/secure-retail-cloud-pos.md
+        - name: Konfigurace a instalace Retail hardware station
+          href: retail-hardware-station-configuration-installation.md
+        - name: Hromadné nasazení samoobslužných komponent Retail
+          href: dev-itpro/retail-mass-deployment.md
+        - name: Události komponent Retail pro diagnostiku a řešení potíží
+          href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
+        - name: Použití nasaditelného balíčku
+          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
+    - name: Upgrade a N-1 podpora
+      items:
+        - name: Upgrade a N-1 podpora pro Retail
+          href: dev-itpro/overview-upgrade-n-minus1.md
+        - name: Instalace fázovaného nasazení (N-1) a přechod
+          href: dev-itpro/n-1-installation-configuration.md
+        - name: Upgrade rozšíření kanálu Retail na nejnovější Retail SDK
+          href: dev-itpro/retailSDK-update.md
+    - name: Průvodce implementací
+      items:
+        - name: Průvodce implementací správy zařízení
+          href: implementation-considerations-devices.md
+    - name: Konfigurace prostředí
+      items:
+        - name: Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci
+          href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
+        - name: Správa Map Bing
+          href: dev-itpro/manage-bing-maps.md
+    - name: Lokalizovat zdroje rozšíření Retail a soubory popisků
+      href: dev-itpro/extension-resource-localization.md
+    - name: Rozšiřitelnost pokladních míst
+      items:
+        - name: Rozvržení obrazovky Retail POS
+          href: pos-screen-layouts.md
+        - name: Otevřené URL adresy v POS
+          href: Open-URL-in-POS.md
+        - name: Instalace návrháře rozložení POS
+          href: install-pos-layout-designer.md
+        - name: Retail Modern POS v offline režimu
+          href: dev-itpro/retail-modern-pos-offline.md
+        - name: Rozšíření zobrazení displeje POS Dual
+          href: dev-itpro/pos-dual-display-extension.md
+        - name: Rozšiřitelnost spouštění Retail Modern POS a Cloud POS
+          href: dev-itpro/modern-pos-trigger-extensibility.md
+        - name: Přidání vlastních ovládacích prvků do POS zobrazení
+          href: dev-itpro/pos-custom-control.md
+        - name: Přidání operací POS do rozvržení POS pomocí návrháře mřížek tlačítek
+          href: dev-itpro/add-POS-operations.md
+        - name: Rozhraní API pro Retail POS
+          href: dev-itpro/POS-APIs.md
+        - name: Rozšíření POS plateb
+          href: dev-itpro/pos-payment-extension.md
+        - name: Podpora pro externí dárkové poukazy
+          href: dev-itpro/gift-card.md
+        - name: Vytvoření a použití brandingu na aplikaci Retail Experience
+          href: dev-itpro/create-retail-experience-app.md
+        - name: Nastavení aplikace POS Hybrid na systémech Android a iOS
+          href: dev-itpro/hybridApp.md
+        - name: Přepsání obslužné rutiny POS
+          href: dev-itpro/pos-handler.md
+        - name: Zobrazit informace o balíčku rozšíření POS
+          href: dev-itpro/view-pos-extension-package-details.md
+    - name: Hardware Station a rozšiřitelnost
+      href: dev-itpro/hardware-station-extensibility.md
+    - name: Rozšiřitelnost serveru Retail Server
+      items:
+        - name: Rozšíření kontroloru Retail Server OData
+          href: dev-itpro/extend-retail-server-odata-controller.md
+        - name: Vytvoření kontroloru Web API pro Retail Server
+          href: dev-itpro/odata-controllers-api.md
+        - name: API zákazníka a spotřebitel serveru Retail Server
+          href: dev-itpro/retail-server-customer-consumer-api.md
+        - name: Rozšíření výchozího kontroloru metadat Retail Serveru
+          href: dev-itpro/extend-metadata.md
+        - name: "Volání služby CRT v\_režimu offline"
+          href: dev-itpro/call-crt-service-offline.md
+    - name: Rozšiřitelnost Commerce Runtime (CRT)
+      items:
+        - name: "Architektura a\_konfigurace CRT"
+          href: dev-itpro/commerce-runtime-overview.md
+        - name: Služby CRT
+          href: dev-itpro/crt-services.md
+        - name: Rozšiřitelnost CRT a serveru Retail Server
+          href: dev-itpro/commerce-runtime-extensibility.md
+        - name: Přidání preferenčních dat zákazníka do databází kanálů
+          href: dev-itpro/add-customer-preference-channel.md
+        - name: Přidání vlastností do prodejních objednávek
+          href: dev-itpro/add-properties-sales-order.md
+        - name: Rozšiřitelnost a spouštění CRT
+          href: dev-itpro/commerce-runtime-extensibility-trigger.md
+        - name: Blokování transakcí pomocí spouštění
+          href: dev-itpro/trigger-example-blocking-transaction.md
+        - name: Implementace zásad vracení pomocí spouštění
+          href: dev-itpro/trigger-example-return-policy.md
+    - name: Rozšiřitelnost e-Commerce
+      items:
+        - name: Konfigurace online obchodů
+          href: dev-itpro/configure-online-store.md
+        - name: Konfigurace poskytovatelů ověřování
+          href: dev-itpro/configure-authentication-providers.md
+        - name: Platforma e-Commerce
+          href: dev-itpro/ecommerce-platform.md
+        - name: SDK platforma e-Commerce
+          href: dev-itpro/ecommerce-platform-sdk.md
+    - name: Rozšiřitelnost konektoru platby
+      items:
+        - name: Vytvoření integrace plateb pro platební terminál
+          href: dev-itpro/end-to-end-payment-extension.md
+        - name: Implementace konektoru platby a platebního zařízení (dokument white paper)
+          href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
+        - name: Nasazení konektorů platby
+          href: dev-itpro/deploy-payment-connector.md
+        - name: Vytvoření vlastních lokalizovaných chybových zpráv pro rozšíření platebních terminálů
+          href: dev-itpro/payment-custom-error-messages.md
+        - name: Vytvoření instalační služby systému Windows pro konektory platby
+          href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Použití dat platby
+          href: payment-connector-data-fields.md
+        - name: Povolení ochrany před duplicitní platbou pro platební konektor
+          href: dev-itpro/duplicate-payment-protection.md
+    - name: Retail SDK
+      href: dev-itpro/retail-sdk/retail-sdk-overview.md
+      items:
+        - name: Nadcházející změny v Retail SDK
+          href: dev-itpro/UpcomingSDKChanges.md
+        - name: Sloučení systémů sestavení pro Retail a Finance and Operations
+          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+        - name: Vzory rozšiřitelnosti sady Retail SDK
+          href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+        - name: Vytvoření maloobchodních nasaditelných balíčků
+          href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+        - name: Vzory sady Retail SDK
+          href: dev-itpro/retail-sdk/retail-sdk-samples.md
+          items:
+            - name: Body rozšíření pro dodací listy
+              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Rozšíření databáze kanálů
+          href: dev-itpro/channel-db-extensions.md
+        - name: Povolení vlastní CDX synchronizace prostřednictvím rozšíření
+          href: dev-itpro/cdx-extensibility.md
+        - name: Přidání vlastních polí do panelu POS Totals
+          href: dev-itpro/custom-field-pos-totals.md
+        - name: Definování a nastavení atributů objednávky
+          href: dev-itpro/order-attributes.md
+        - name: Atributy odběratele
+          href: dev-itpro/customer-attributes.md
+        - name: 'Retail Typescript a C# proxy'
+          href: dev-itpro/typescript-proxy-retail-pos.md
+        - name: Spuštění vzorů Retail POS
+          href: dev-itpro/pos-run-samples.md
+        - name: Rozšíření zobrazení POS pro přidání vlastních sloupců a tlačítek panelu aplikací
+          href: dev-itpro/pos-view-extension.md
+        - name: Přidání vlastních ovládacích prvků na stránky transakcí Retail Modern POS
+          href: dev-itpro/pos-custom-transaction.md
+        - name: Přidání vlastních sloupců do mřížky transakcí POS
+          href: dev-itpro/pos-custom-transaction-column.md
+        - name: Volání API POS nebo operací z rozšíření POS
+          href: dev-itpro/pos-api-extension.md
+        - name: Spouštěče Retail Modern POS a tisk
+          href: dev-itpro/pos-trigger-printing.md
+        - name: Přidání vlastních ovládacích prvků do zobrazení POS na základě návrháře bez obrazovky
+          href: dev-itpro/pos-control-non-screen.md
+        - name: Vývoj ve vývojářských prostředích hostovaných v cloudu bez přístupu správce
+          href: dev-itpro/cloud-dev-box.md
+    - name: Commerce runtime
+      items:
+        - name: Rozšíření věrnostního programu
+          href: dev-itpro/retail-sdk/loyalty-extension-sample.md
