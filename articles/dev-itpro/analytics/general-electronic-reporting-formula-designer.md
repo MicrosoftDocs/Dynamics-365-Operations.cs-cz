@@ -3,7 +3,7 @@ title: Návrhář receptur v elektronickém výkaznictví
 description: Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví.
 author: NickSelin
 manager: AnnBe
-ms.date: 10/03/2018
+ms.date: 05/14/2014
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331269"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541261"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Návrhář receptur v elektronickém výkaznictví
 
@@ -440,12 +440,17 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <td>Vrátí zadaný seznam po úpravě dotazu k filtrování podle zadané podmínky. Tato funkce se liší od funkce <strong>WHERE</strong>, protože zadaná podmínka je použita u jakéhokoli zdroje dat elektronického výkaznictví typu <strong>Záznamy tabulky</strong> na úrovni databáze. Seznam a podmínku lze definovat pomocí tabulek a relací.</td>
 <td>Jestliže je položka <strong>Dodavatel</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> vrátí pouze seznam dodavatelů patřících do skupiny dodavatelů č. 40. Pokud je <strong>Vendor</strong> nakonfigurován jako zdroj dat elektronického výkaznictví, který se vztahuje k tabulce VendTable a pokud je <strong>parmVendorBankGroup</strong> nakonfigurovaný jako zdroj dat elektronického výkaznictví, který vrací hodnotu v datovém typu <strong>String</strong>, pak příkaz <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> vrací seznam pouze těch dodavatelských účtů, které patří ke konkrétní bankovní skupině.</td>
 </tr>
+<tr>
+<td>INDEX (seznam, index)</td>
+<td>Tato funkce vrací záznam, který je vybrán určitým číselným indexem v seznamu. Výjimka je vyvolána v případě, že index je mimo rozsah záznamů v seznamu.</td>
+<td>Pokud zadáte zdroj dat <strong>DS</strong> pro typ <strong>vypočítaného pole</strong> a to obsahuje výraz <strong>SPLIT ("A|B|C", “|”), 2)</strong>, výraz <strong>DS.Value</strong> vrátí textovou hodnotu "B". Výraz <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> vrátí též textovou hodnotu “B”.</td>
+</tr>
 </tbody>
 </table>
 
 ### <a name="logical-functions"></a>Logické funkce
 
-| Funkce | popis | Příklad |
+| Funkce | Popis | Příklad |
 |----------|-------------|---------|
 | CASE (výraz, možnost 1, výsledek 1 \[, možnost 2, výsledek\] … \[, výchozí výsledek\]) | Vyhodnotí zadanou hodnotu výrazu s ohledem na zadané alternativní možnosti. Vrací výsledek možnosti, která je rovna hodnotě výrazu. V opačném případě vrací volitelný výchozí výsledek, pokud je zadán výchozí výsledek. (Výchozí výsledek je poslední parametr, který nepředchází žádná možnost). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** vrátí řetězec **"WINTER"**, jestliže je aktuální datum relace aplikace Finance and Operations mezi říjnem a prosincem. Jinak bude vrácen prázdný řetězec. |
 | IF (podmínka, hodnota 1, hodnota 2) | Při splnění dané podmínky bude vrácena první zadaná hodnota. V opačném případě vrací druhou zadanou hodnotu. Pokud hodnoty 1 a 2 jsou záznamy nebo seznamy záznamů, má výsledek pouze pole, která existují v obou seznamech. | **IF (1=2, "podmínka je splněna", "podmínka není splněna")** vrátí řetězec **"podmínka není splněna"**. |

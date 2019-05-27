@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: f36c411ce24dfd8cceacda3d4659ec9a98fd5aa9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321103"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548968"
 ---
 # <a name="pay-based-on-registrations"></a>Plat na základě registrace
 
@@ -115,7 +115,7 @@ Poté, co jste vypočítali registrace deníku na stránce **Schválit** můžet
 
 | Flex + | Flex - | Čas  | Placený čas | Placený přesčas |
 |--------|--------|-------|----------|--------------|
-| 0,50   | 0,00   | 10,50 USD | 10.00    | 1.50         |
+| 0,50   | 0,00   | 10.50 | 10.00    | 1.50         |
 
 #### <a name="calculation-of-flex"></a>Výpočet Flex+
 
@@ -284,7 +284,7 @@ Poté, co jste vypočítali registrace deníku na stránce **Schválit** můžet
 
 | Flex + | Flex - | Čas  | Placený čas | Neplacená přestávka | Placený přesčas |
 |--------|--------|-------|----------|---------------------|--------------|
-| 0,50   | 0,00   | 10,50 USD | 9.50     | 0.5                 | 1.50         |
+| 0,50   | 0,00   | 10.50 | 9.50     | 0.5                 | 1.50         |
 
 > [!NOTE] 
 > Systém vypočítá 0,5 hodiny nezaplacené přestávka a tento čas není součástí placeného času.
@@ -328,13 +328,13 @@ Poté, co jste vypočítali registrace deníku na stránce **Schválit** můžet
 
 | Flex + | Flex - | Čas  | Placený čas | Neplacená přestávka | Placený přesčas |
 |--------|--------|-------|----------|---------------------|--------------|
-| 0,50   | 0,00   | 10,50 USD | 9.50     | 0.5                 | 1.50         |
+| 0,50   | 0,00   | 10.50 | 9.50     | 0.5                 | 1.50         |
 
 Pokud byla plánovaná přestávka zaplacena a ne nezaplacena, výsledek výpočtu by vypadal takto.
 
 | Flex + | Flex - | Čas  | Placený čas | Placená přestávka | Placený přesčas |
 |--------|--------|-------|----------|-----------------|--------------|
-| 0,50   | 0,00   | 10,50 USD | 10.00    | 0.5             | 1.50         |
+| 0,50   | 0,00   | 10.50 | 10.00    | 0.5             | 1.50         |
 
 ### <a name="pay-items-and-paid-breaks"></a>Placené položky a placené přestávky
 
