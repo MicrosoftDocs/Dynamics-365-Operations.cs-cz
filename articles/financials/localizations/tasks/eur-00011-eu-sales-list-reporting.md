@@ -16,116 +16,116 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aef1d19aabb7937fcd961a9657b8ca65c064b0b1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ee87abdc276d80123bbbe44a67c667bb0df9acb6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370076"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537635"
 ---
-# <a name="eur-00011-set-up-eu-sales-list-reporting"></a><span data-ttu-id="65034-103">EUR-00011 Nastavení sestav souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="65034-103">EUR-00011 Set up EU sales list reporting</span></span>
+# <a name="eur-00011-set-up-eu-sales-list-reporting"></a><span data-ttu-id="c70f8-103">EUR-00011 Nastavení sestav souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="c70f8-103">EUR-00011 Set up EU sales list reporting</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="65034-104">Tato úloha vás provede přehledem o předpokladech pro vytváření souhrnného hlášení (EU).</span><span class="sxs-lookup"><span data-stu-id="65034-104">This task walks you through an overview of the prerequisites required for EU sales list reporting.</span></span> <span data-ttu-id="65034-105">Další informace o výkazu se seznamem prodeje v EU včetně případných požadovaných předpokladů naleznete v nápovědě Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="65034-105">For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.</span></span>
+<span data-ttu-id="c70f8-104">Tato úloha vás provede přehledem o předpokladech pro vytváření souhrnného hlášení (EU).</span><span class="sxs-lookup"><span data-stu-id="c70f8-104">This task walks you through an overview of the prerequisites required for EU sales list reporting.</span></span> <span data-ttu-id="c70f8-105">Další informace o výkazu se seznamem prodeje v EU včetně případných požadovaných předpokladů naleznete v nápovědě Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c70f8-105">For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.</span></span>
 
-<span data-ttu-id="65034-106">Úkol se vztahuje na všechny evropské země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="65034-106">This task applies to all European countries/regions.</span></span> <span data-ttu-id="65034-107">Průvodce byl vytvořen použitím ukázkových dat společnosti DEMF a následně Německa jako příklad pro domácí zemi nebo oblast.</span><span class="sxs-lookup"><span data-stu-id="65034-107">The guide was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region.</span></span> <span data-ttu-id="65034-108">Průvodce také využívá Portugalsko jako příklad země nebo oblasti EU.</span><span class="sxs-lookup"><span data-stu-id="65034-108">The guide also uses Portugal as an exemplar EU country/region.</span></span>
+<span data-ttu-id="c70f8-106">Úkol se vztahuje na všechny evropské země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="c70f8-106">This task applies to all European countries/regions.</span></span> <span data-ttu-id="c70f8-107">Průvodce byl vytvořen použitím ukázkových dat společnosti DEMF a následně Německa jako příklad pro domácí zemi nebo oblast.</span><span class="sxs-lookup"><span data-stu-id="c70f8-107">The guide was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region.</span></span> <span data-ttu-id="c70f8-108">Průvodce také využívá Portugalsko jako příklad země nebo oblasti EU.</span><span class="sxs-lookup"><span data-stu-id="c70f8-108">The guide also uses Portugal as an exemplar EU country/region.</span></span>
 
-<span data-ttu-id="65034-109">Tyto úkoly jsou určeny pro správce systému.</span><span class="sxs-lookup"><span data-stu-id="65034-109">These tasks are intended for system administrators.</span></span>
+<span data-ttu-id="c70f8-109">Tyto úkoly jsou určeny pro správce systému.</span><span class="sxs-lookup"><span data-stu-id="c70f8-109">These tasks are intended for system administrators.</span></span>
 
 
-## <a name="import-electronic-reporting-configurations-for-eu-sales-list-reporting"></a><span data-ttu-id="65034-110">Import elektronického vykazování konfigurace pro vytváření souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="65034-110">Import electronic reporting configurations for EU sales list reporting</span></span>
-1. <span data-ttu-id="65034-111">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="65034-111">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="65034-112">Klikněte na možnost Nastavit jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="65034-112">Click Set active.</span></span>
-3. <span data-ttu-id="65034-113">Klikněte na možnost Úložiště.</span><span class="sxs-lookup"><span data-stu-id="65034-113">Click Repositories.</span></span>
-4. <span data-ttu-id="65034-114">Klikněte na možnost Otevřít.</span><span class="sxs-lookup"><span data-stu-id="65034-114">Click Open.</span></span>
-5. <span data-ttu-id="65034-115">V podokně akcí klikněte na Možnosti.</span><span class="sxs-lookup"><span data-stu-id="65034-115">On the Action Pane, click Options.</span></span>
-6. <span data-ttu-id="65034-116">Klepněte na možnost Rozšířený filtr či řazení.</span><span class="sxs-lookup"><span data-stu-id="65034-116">Click Advanced Filter/Sort.</span></span>
-7. <span data-ttu-id="65034-117">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="65034-117">Click Add.</span></span>
-8. <span data-ttu-id="65034-118">V poli Pole vyberte „Název konfigurace“.</span><span class="sxs-lookup"><span data-stu-id="65034-118">In the Field field, select 'Configuration name'.</span></span>
-9. <span data-ttu-id="65034-119">Do pole kritéria zadejte hodnotu „Souhrnné hlášení EU (DE)“.</span><span class="sxs-lookup"><span data-stu-id="65034-119">In the Criteria field, type 'EU Sales list (DE)'.</span></span>
-10. <span data-ttu-id="65034-120">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="65034-120">Click OK.</span></span>
-11. <span data-ttu-id="65034-121">Klepněte na tlačítko Importovat.</span><span class="sxs-lookup"><span data-stu-id="65034-121">Click Import.</span></span>
-12. <span data-ttu-id="65034-122">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="65034-122">Click Yes.</span></span>
-13. <span data-ttu-id="65034-123">V podokně akcí klikněte na Možnosti.</span><span class="sxs-lookup"><span data-stu-id="65034-123">On the Action Pane, click Options.</span></span>
-14. <span data-ttu-id="65034-124">Klepněte na možnost Rozšířený filtr či řazení.</span><span class="sxs-lookup"><span data-stu-id="65034-124">Click Advanced Filter/Sort.</span></span>
-15. <span data-ttu-id="65034-125">Klepněte na možnost Resetovat.</span><span class="sxs-lookup"><span data-stu-id="65034-125">Click Reset.</span></span>
-16. <span data-ttu-id="65034-126">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="65034-126">Click Add.</span></span>
-17. <span data-ttu-id="65034-127">V poli Pole vyberte „Název konfigurace“.</span><span class="sxs-lookup"><span data-stu-id="65034-127">In the Field field, select 'Configuration name'.</span></span>
-18. <span data-ttu-id="65034-128">Do pole kritéria zadejte hodnotu „Souhrnné hlášení EU podle řádků“.</span><span class="sxs-lookup"><span data-stu-id="65034-128">In the Criteria field, type 'EU Sales list by rows report'.</span></span>
-19. <span data-ttu-id="65034-129">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="65034-129">Click OK.</span></span>
-20. <span data-ttu-id="65034-130">Klepněte na tlačítko Importovat.</span><span class="sxs-lookup"><span data-stu-id="65034-130">Click Import.</span></span>
-21. <span data-ttu-id="65034-131">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="65034-131">Click Yes.</span></span>
+## <a name="import-electronic-reporting-configurations-for-eu-sales-list-reporting"></a><span data-ttu-id="c70f8-110">Import elektronického vykazování konfigurace pro vytváření souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="c70f8-110">Import electronic reporting configurations for EU sales list reporting</span></span>
+1. <span data-ttu-id="c70f8-111">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="c70f8-111">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="c70f8-112">Klikněte na možnost Nastavit jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="c70f8-112">Click Set active.</span></span>
+3. <span data-ttu-id="c70f8-113">Klikněte na možnost Úložiště.</span><span class="sxs-lookup"><span data-stu-id="c70f8-113">Click Repositories.</span></span>
+4. <span data-ttu-id="c70f8-114">Klikněte na možnost Otevřít.</span><span class="sxs-lookup"><span data-stu-id="c70f8-114">Click Open.</span></span>
+5. <span data-ttu-id="c70f8-115">V podokně akcí klikněte na Možnosti.</span><span class="sxs-lookup"><span data-stu-id="c70f8-115">On the Action Pane, click Options.</span></span>
+6. <span data-ttu-id="c70f8-116">Klepněte na možnost Rozšířený filtr či řazení.</span><span class="sxs-lookup"><span data-stu-id="c70f8-116">Click Advanced Filter/Sort.</span></span>
+7. <span data-ttu-id="c70f8-117">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="c70f8-117">Click Add.</span></span>
+8. <span data-ttu-id="c70f8-118">V poli Pole vyberte „Název konfigurace“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-118">In the Field field, select 'Configuration name'.</span></span>
+9. <span data-ttu-id="c70f8-119">Do pole kritéria zadejte hodnotu „Souhrnné hlášení EU (DE)“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-119">In the Criteria field, type 'EU Sales list (DE)'.</span></span>
+10. <span data-ttu-id="c70f8-120">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="c70f8-120">Click OK.</span></span>
+11. <span data-ttu-id="c70f8-121">Klepněte na tlačítko Importovat.</span><span class="sxs-lookup"><span data-stu-id="c70f8-121">Click Import.</span></span>
+12. <span data-ttu-id="c70f8-122">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="c70f8-122">Click Yes.</span></span>
+13. <span data-ttu-id="c70f8-123">V podokně akcí klikněte na Možnosti.</span><span class="sxs-lookup"><span data-stu-id="c70f8-123">On the Action Pane, click Options.</span></span>
+14. <span data-ttu-id="c70f8-124">Klepněte na možnost Rozšířený filtr či řazení.</span><span class="sxs-lookup"><span data-stu-id="c70f8-124">Click Advanced Filter/Sort.</span></span>
+15. <span data-ttu-id="c70f8-125">Klepněte na možnost Resetovat.</span><span class="sxs-lookup"><span data-stu-id="c70f8-125">Click Reset.</span></span>
+16. <span data-ttu-id="c70f8-126">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="c70f8-126">Click Add.</span></span>
+17. <span data-ttu-id="c70f8-127">V poli Pole vyberte „Název konfigurace“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-127">In the Field field, select 'Configuration name'.</span></span>
+18. <span data-ttu-id="c70f8-128">Do pole kritéria zadejte hodnotu „Souhrnné hlášení EU podle řádků“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-128">In the Criteria field, type 'EU Sales list by rows report'.</span></span>
+19. <span data-ttu-id="c70f8-129">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="c70f8-129">Click OK.</span></span>
+20. <span data-ttu-id="c70f8-130">Klepněte na tlačítko Importovat.</span><span class="sxs-lookup"><span data-stu-id="c70f8-130">Click Import.</span></span>
+21. <span data-ttu-id="c70f8-131">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="c70f8-131">Click Yes.</span></span>
 
-## <a name="set-up-sales-tax-codes-for-eu-sales-list-reporting"></a><span data-ttu-id="65034-132">Nastavte kódy DPH pro vytváření souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="65034-132">Set up sales tax codes for EU sales list reporting</span></span>
-1. <span data-ttu-id="65034-133">Přejděte na Daň > Nepřímé daně > DPH > Kódy DPH.</span><span class="sxs-lookup"><span data-stu-id="65034-133">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
-2. <span data-ttu-id="65034-134">Použijte rychlý filtr k filtrování v poli Kód prodejní daně s hodnotou „DPH19“.</span><span class="sxs-lookup"><span data-stu-id="65034-134">Use the Quick Filter to filter on the Sales tax code field with a value of 'VAT19'.</span></span>
-3. <span data-ttu-id="65034-135">Rozbalte část nastavení sestavy.</span><span class="sxs-lookup"><span data-stu-id="65034-135">Expand the Report setup section.</span></span>
-    * <span data-ttu-id="65034-136">Ověřte, zda je vyloučený výběr nastaven na hodnotu Ne.</span><span class="sxs-lookup"><span data-stu-id="65034-136">Verify that the Excluded selection is set to No.</span></span>  
-    * <span data-ttu-id="65034-137">Pro změnu tohoto nastavení může být nutné odemknout průvodce úkolem.</span><span class="sxs-lookup"><span data-stu-id="65034-137">You may need to unlock the task guide to change this setting.</span></span>  
+## <a name="set-up-sales-tax-codes-for-eu-sales-list-reporting"></a><span data-ttu-id="c70f8-132">Nastavte kódy DPH pro vytváření souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="c70f8-132">Set up sales tax codes for EU sales list reporting</span></span>
+1. <span data-ttu-id="c70f8-133">Přejděte na Daň > Nepřímé daně > DPH > Kódy DPH.</span><span class="sxs-lookup"><span data-stu-id="c70f8-133">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
+2. <span data-ttu-id="c70f8-134">Použijte rychlý filtr k filtrování v poli Kód prodejní daně s hodnotou „DPH19“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-134">Use the Quick Filter to filter on the Sales tax code field with a value of 'VAT19'.</span></span>
+3. <span data-ttu-id="c70f8-135">Rozbalte část nastavení sestavy.</span><span class="sxs-lookup"><span data-stu-id="c70f8-135">Expand the Report setup section.</span></span>
+    * <span data-ttu-id="c70f8-136">Ověřte, zda je vyloučený výběr nastaven na hodnotu Ne.</span><span class="sxs-lookup"><span data-stu-id="c70f8-136">Verify that the Excluded selection is set to No.</span></span>  
+    * <span data-ttu-id="c70f8-137">Pro změnu tohoto nastavení může být nutné odemknout průvodce úkolem.</span><span class="sxs-lookup"><span data-stu-id="c70f8-137">You may need to unlock the task guide to change this setting.</span></span>  
 
-## <a name="set-up-sales-tax-groups-for-eu-sales-list-reporting"></a><span data-ttu-id="65034-138">Nastavte skupiny DPH pro vytváření souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="65034-138">Set up sales tax groups for EU sales list reporting</span></span>
-1. <span data-ttu-id="65034-139">Přejděte na Daň > Nepřímé daně > DPH > Skupiny DPH.</span><span class="sxs-lookup"><span data-stu-id="65034-139">Go to Tax > Indirect taxes > Sales tax > Sales tax groups.</span></span>
-2. <span data-ttu-id="65034-140">Použijte rychlý filtr k filtrování v poli Skupina prodejní daně s hodnotou „AR-DOM“.</span><span class="sxs-lookup"><span data-stu-id="65034-140">Use the Quick Filter to filter on the Sales tax group field with a value of 'AR-DOM'.</span></span>
-3. <span data-ttu-id="65034-141">Klikněte na možnost Upravit.</span><span class="sxs-lookup"><span data-stu-id="65034-141">Click Edit.</span></span>
-4. <span data-ttu-id="65034-142">Rozbalte sekci Nastavení.</span><span class="sxs-lookup"><span data-stu-id="65034-142">Expand the Setup section.</span></span>
-5. <span data-ttu-id="65034-143">V seznamu vyberte první řádek.</span><span class="sxs-lookup"><span data-stu-id="65034-143">In the list, select the first row.</span></span>
-6. <span data-ttu-id="65034-144">Zaškrtněte políčko Osvobozené od daně.</span><span class="sxs-lookup"><span data-stu-id="65034-144">Select the Exempt check box.</span></span>
-7. <span data-ttu-id="65034-145">V seznamu vyberte druhý řádek.</span><span class="sxs-lookup"><span data-stu-id="65034-145">In the list, select the second row.</span></span>
-8. <span data-ttu-id="65034-146">Zaškrtněte políčko Osvobozené od daně.</span><span class="sxs-lookup"><span data-stu-id="65034-146">Select the Exempt check box.</span></span>
-9. <span data-ttu-id="65034-147">V seznamu vyberte třetí řádek.</span><span class="sxs-lookup"><span data-stu-id="65034-147">In the list, select the third row.</span></span>
-10. <span data-ttu-id="65034-148">Zaškrtněte políčko Osvobozené od daně.</span><span class="sxs-lookup"><span data-stu-id="65034-148">Select the Exempt check box.</span></span>
+## <a name="set-up-sales-tax-groups-for-eu-sales-list-reporting"></a><span data-ttu-id="c70f8-138">Nastavte skupiny DPH pro vytváření souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="c70f8-138">Set up sales tax groups for EU sales list reporting</span></span>
+1. <span data-ttu-id="c70f8-139">Přejděte na Daň > Nepřímé daně > DPH > Skupiny DPH.</span><span class="sxs-lookup"><span data-stu-id="c70f8-139">Go to Tax > Indirect taxes > Sales tax > Sales tax groups.</span></span>
+2. <span data-ttu-id="c70f8-140">Použijte rychlý filtr k filtrování v poli Skupina prodejní daně s hodnotou „AR-DOM“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-140">Use the Quick Filter to filter on the Sales tax group field with a value of 'AR-DOM'.</span></span>
+3. <span data-ttu-id="c70f8-141">Klikněte na možnost Upravit.</span><span class="sxs-lookup"><span data-stu-id="c70f8-141">Click Edit.</span></span>
+4. <span data-ttu-id="c70f8-142">Rozbalte sekci Nastavení.</span><span class="sxs-lookup"><span data-stu-id="c70f8-142">Expand the Setup section.</span></span>
+5. <span data-ttu-id="c70f8-143">V seznamu vyberte první řádek.</span><span class="sxs-lookup"><span data-stu-id="c70f8-143">In the list, select the first row.</span></span>
+6. <span data-ttu-id="c70f8-144">Zaškrtněte políčko Osvobozené od daně.</span><span class="sxs-lookup"><span data-stu-id="c70f8-144">Select the Exempt check box.</span></span>
+7. <span data-ttu-id="c70f8-145">V seznamu vyberte druhý řádek.</span><span class="sxs-lookup"><span data-stu-id="c70f8-145">In the list, select the second row.</span></span>
+8. <span data-ttu-id="c70f8-146">Zaškrtněte políčko Osvobozené od daně.</span><span class="sxs-lookup"><span data-stu-id="c70f8-146">Select the Exempt check box.</span></span>
+9. <span data-ttu-id="c70f8-147">V seznamu vyberte třetí řádek.</span><span class="sxs-lookup"><span data-stu-id="c70f8-147">In the list, select the third row.</span></span>
+10. <span data-ttu-id="c70f8-148">Zaškrtněte políčko Osvobozené od daně.</span><span class="sxs-lookup"><span data-stu-id="c70f8-148">Select the Exempt check box.</span></span>
 
-## <a name="set-up-item-sales-tax-groups-for-eu-sales-list-reporting"></a><span data-ttu-id="65034-149">Nastavte položku skupin DPH pro vytváření souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="65034-149">Set up item sales tax groups for EU sales list reporting</span></span>
-1. <span data-ttu-id="65034-150">Přejděte na Daň > Nepřímé daně > DPH > Skupiny prodejní daně položky.</span><span class="sxs-lookup"><span data-stu-id="65034-150">Go to Tax > Indirect taxes > Sales tax > Item sales tax groups.</span></span>
-2. <span data-ttu-id="65034-151">Použijte rychlý filtr k filtrování v poli Položka prodejní daně s hodnotou „FULL“.</span><span class="sxs-lookup"><span data-stu-id="65034-151">Use the Quick Filter to filter on the Item sales tax group field with a value of 'FULL '.</span></span>
-    * <span data-ttu-id="65034-152">Ověřte, zda je výběr Typ vykazování nastaven na hodnotu „Položka“.</span><span class="sxs-lookup"><span data-stu-id="65034-152">Verify that the Reporting type selection is set to 'Item'.</span></span>  
-    * <span data-ttu-id="65034-153">Pro změnu hodnoty v tomto poli může být nutné odemknout průvodce úkolem.</span><span class="sxs-lookup"><span data-stu-id="65034-153">You may need to unlock the task guide to change the value in this field.</span></span>  
-3. <span data-ttu-id="65034-154">Použijte rychlý filtr k filtrování v poli Položka prodejní daně s hodnotou „RED“.</span><span class="sxs-lookup"><span data-stu-id="65034-154">Use the Quick Filter to filter on the Item sales tax group field with a value of 'RED '.</span></span>
-    * <span data-ttu-id="65034-155">Ověřte, zda je výběr Typ vykazování nastaven na hodnotu „Servis“.</span><span class="sxs-lookup"><span data-stu-id="65034-155">Verify that the Reporting type selection is set to 'Service'.</span></span>  
-    * <span data-ttu-id="65034-156">Pro změnu hodnoty v tomto poli může být nutné odemknout průvodce úkolem.</span><span class="sxs-lookup"><span data-stu-id="65034-156">You may need to unlock the task guide to change the value in this field.</span></span>  
+## <a name="set-up-item-sales-tax-groups-for-eu-sales-list-reporting"></a><span data-ttu-id="c70f8-149">Nastavte položku skupin DPH pro vytváření souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="c70f8-149">Set up item sales tax groups for EU sales list reporting</span></span>
+1. <span data-ttu-id="c70f8-150">Přejděte na Daň > Nepřímé daně > DPH > Skupiny prodejní daně položky.</span><span class="sxs-lookup"><span data-stu-id="c70f8-150">Go to Tax > Indirect taxes > Sales tax > Item sales tax groups.</span></span>
+2. <span data-ttu-id="c70f8-151">Použijte rychlý filtr k filtrování v poli Položka prodejní daně s hodnotou „FULL“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-151">Use the Quick Filter to filter on the Item sales tax group field with a value of 'FULL '.</span></span>
+    * <span data-ttu-id="c70f8-152">Ověřte, zda je výběr Typ vykazování nastaven na hodnotu „Položka“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-152">Verify that the Reporting type selection is set to 'Item'.</span></span>  
+    * <span data-ttu-id="c70f8-153">Pro změnu hodnoty v tomto poli může být nutné odemknout průvodce úkolem.</span><span class="sxs-lookup"><span data-stu-id="c70f8-153">You may need to unlock the task guide to change the value in this field.</span></span>  
+3. <span data-ttu-id="c70f8-154">Použijte rychlý filtr k filtrování v poli Položka prodejní daně s hodnotou „RED“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-154">Use the Quick Filter to filter on the Item sales tax group field with a value of 'RED '.</span></span>
+    * <span data-ttu-id="c70f8-155">Ověřte, zda je výběr Typ vykazování nastaven na hodnotu „Servis“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-155">Verify that the Reporting type selection is set to 'Service'.</span></span>  
+    * <span data-ttu-id="c70f8-156">Pro změnu hodnoty v tomto poli může být nutné odemknout průvodce úkolem.</span><span class="sxs-lookup"><span data-stu-id="c70f8-156">You may need to unlock the task guide to change the value in this field.</span></span>  
 
-## <a name="set-up-countryregion-parameters-for-eu-sales-list-reporting"></a><span data-ttu-id="65034-157">Nastavte parametry země/oblasti pro vytváření souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="65034-157">Set up country/region parameters for EU sales list reporting</span></span>
-1. <span data-ttu-id="65034-158">Přejděte na Daň > Nastavení > DPH > Parametry země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="65034-158">Go to Tax > Setup > Sales tax > Country/region parameters.</span></span>
-2. <span data-ttu-id="65034-159">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="65034-159">Click New.</span></span>
-3. <span data-ttu-id="65034-160">V poli Země/oblast zadejte „PRT“.</span><span class="sxs-lookup"><span data-stu-id="65034-160">In the Country/region field, type 'PRT'.</span></span>
-4. <span data-ttu-id="65034-161">V poli Prodejní daň zadejte „PT“.</span><span class="sxs-lookup"><span data-stu-id="65034-161">In the Sales tax field, type 'PT'.</span></span>
+## <a name="set-up-countryregion-parameters-for-eu-sales-list-reporting"></a><span data-ttu-id="c70f8-157">Nastavte parametry země/oblasti pro vytváření souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="c70f8-157">Set up country/region parameters for EU sales list reporting</span></span>
+1. <span data-ttu-id="c70f8-158">Přejděte na Daň > Nastavení > DPH > Parametry země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="c70f8-158">Go to Tax > Setup > Sales tax > Country/region parameters.</span></span>
+2. <span data-ttu-id="c70f8-159">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="c70f8-159">Click New.</span></span>
+3. <span data-ttu-id="c70f8-160">V poli Země/oblast zadejte „PRT“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-160">In the Country/region field, type 'PRT'.</span></span>
+4. <span data-ttu-id="c70f8-161">V poli Prodejní daň zadejte „PT“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-161">In the Sales tax field, type 'PT'.</span></span>
 
-## <a name="create-tax-exempt-numbers"></a><span data-ttu-id="65034-162">Vytvořit čísla osvobození od daně</span><span class="sxs-lookup"><span data-stu-id="65034-162">Create tax exempt numbers</span></span>
-1. <span data-ttu-id="65034-163">Přejděte na Daň > Nastavení > DPH > DIČ.</span><span class="sxs-lookup"><span data-stu-id="65034-163">Go to Tax > Setup > Sales tax > Tax exempt numbers.</span></span>
-2. <span data-ttu-id="65034-164">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="65034-164">Click New.</span></span>
-3. <span data-ttu-id="65034-165">V poli Země/oblast zadejte „PRT“.</span><span class="sxs-lookup"><span data-stu-id="65034-165">In the Country/region field, type 'PRT'.</span></span>
-4. <span data-ttu-id="65034-166">Do pole DIČ zadejte „PT12345“.</span><span class="sxs-lookup"><span data-stu-id="65034-166">In the Tax exempt number field, type 'PT12345'.</span></span>
+## <a name="create-tax-exempt-numbers"></a><span data-ttu-id="c70f8-162">Vytvořit čísla osvobození od daně</span><span class="sxs-lookup"><span data-stu-id="c70f8-162">Create tax exempt numbers</span></span>
+1. <span data-ttu-id="c70f8-163">Přejděte na Daň > Nastavení > DPH > DIČ.</span><span class="sxs-lookup"><span data-stu-id="c70f8-163">Go to Tax > Setup > Sales tax > Tax exempt numbers.</span></span>
+2. <span data-ttu-id="c70f8-164">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="c70f8-164">Click New.</span></span>
+3. <span data-ttu-id="c70f8-165">V poli Země/oblast zadejte „PRT“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-165">In the Country/region field, type 'PRT'.</span></span>
+4. <span data-ttu-id="c70f8-166">Do pole DIČ zadejte „PT12345“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-166">In the Tax exempt number field, type 'PT12345'.</span></span>
 
-## <a name="set-up-eu-sales-list-reporting-parameters"></a><span data-ttu-id="65034-167">Nastavit parametry sestav souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="65034-167">Set up EU sales list reporting parameters</span></span>
-1. <span data-ttu-id="65034-168">Přejděte na Daň > Nastavení > Zahraniční obchod > Parametry zahraničního obchodu.</span><span class="sxs-lookup"><span data-stu-id="65034-168">Go to Tax > Setup > Foreign trade > Foreign trade parameters.</span></span>
-2. <span data-ttu-id="65034-169">Klepněte na kartu souhrnného hlášení EU.</span><span class="sxs-lookup"><span data-stu-id="65034-169">Click the EU sales list tab.</span></span>
-3. <span data-ttu-id="65034-170">Vyberte možnost Ano v poli převodu nákupů.</span><span class="sxs-lookup"><span data-stu-id="65034-170">Select Yes in the Transfer purchases field.</span></span>
-4. <span data-ttu-id="65034-171">Rozbalte položku Pravidla zaokrouhlování.</span><span class="sxs-lookup"><span data-stu-id="65034-171">Expand the Rounding rules section.</span></span>
-5. <span data-ttu-id="65034-172">Nastavit Pravidlo zaokrouhlování na „0,1“.</span><span class="sxs-lookup"><span data-stu-id="65034-172">Set Rounding rule to '0.1'.</span></span>
-6. <span data-ttu-id="65034-173">Vyberte možnost Ano v poli Použít minimální hodnotu.</span><span class="sxs-lookup"><span data-stu-id="65034-173">Select Yes in the Use minimum value field.</span></span>
-7. <span data-ttu-id="65034-174">Do pole Počet desetinných míst zadejte „2“.</span><span class="sxs-lookup"><span data-stu-id="65034-174">In the Number of decimals field, enter '2'.</span></span>
-8. <span data-ttu-id="65034-175">Rozbalte část Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="65034-175">Expand the Electronic reporting section.</span></span>
-9. <span data-ttu-id="65034-176">V poli Mapování formátu souboru vyberte „Souhrnné hlášení EU (DE)“.</span><span class="sxs-lookup"><span data-stu-id="65034-176">In the File format mapping field, select 'EU Sales list (DE)'.</span></span>
-10. <span data-ttu-id="65034-177">V poli Mapování formátu sestavy vyberte „Souhrnné hlášení EU podle řádků“.</span><span class="sxs-lookup"><span data-stu-id="65034-177">In the Report format mapping field, select 'EU Sales list by rows report'.</span></span>
-11. <span data-ttu-id="65034-178">Klepněte na kartu vlastností Země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="65034-178">Click the Country/region properties tab.</span></span>
-    * <span data-ttu-id="65034-179">Zkontrolujte, že pole typu Země/oblast je nastaveno na hodnotu „Domácí“ pro zemi nebo oblast Německo.</span><span class="sxs-lookup"><span data-stu-id="65034-179">Verify that the Country/region type field is set to 'Domestic' for Country/region DEU.</span></span>  
-    * <span data-ttu-id="65034-180">Pro změnu hodnoty v tomto poli může být nutné odemknout průvodce úkolem.</span><span class="sxs-lookup"><span data-stu-id="65034-180">You may need to unlock the task guide to change the value in this field.</span></span>  
-12. <span data-ttu-id="65034-181">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="65034-181">Click New.</span></span>
-13. <span data-ttu-id="65034-182">V poli Země/oblast zadejte „PRT“.</span><span class="sxs-lookup"><span data-stu-id="65034-182">In the Country/region field, type 'PRT'.</span></span>
-14. <span data-ttu-id="65034-183">V poli Kód Intrastat zadejte „PT“.</span><span class="sxs-lookup"><span data-stu-id="65034-183">In the Intrastat code field, type 'PT'.</span></span>
-15. <span data-ttu-id="65034-184">Do zadávacího pole Země/oblast vyberte položku „EU“.</span><span class="sxs-lookup"><span data-stu-id="65034-184">In the Country/region type field, select 'EU'.</span></span>
-16. <span data-ttu-id="65034-185">Klikněte na kartu Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="65034-185">Click the Number sequences tab.</span></span>
-    * <span data-ttu-id="65034-186">Ověřte, zda je zadán kód číselné řady pro odkaz „Souhrnného hlášení EU“.</span><span class="sxs-lookup"><span data-stu-id="65034-186">Verify that a Number sequence code is specified for the Reference 'EU sales list'.</span></span>  
+## <a name="set-up-eu-sales-list-reporting-parameters"></a><span data-ttu-id="c70f8-167">Nastavit parametry sestav souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="c70f8-167">Set up EU sales list reporting parameters</span></span>
+1. <span data-ttu-id="c70f8-168">Přejděte na Daň > Nastavení > Zahraniční obchod > Parametry zahraničního obchodu.</span><span class="sxs-lookup"><span data-stu-id="c70f8-168">Go to Tax > Setup > Foreign trade > Foreign trade parameters.</span></span>
+2. <span data-ttu-id="c70f8-169">Klepněte na kartu souhrnného hlášení EU.</span><span class="sxs-lookup"><span data-stu-id="c70f8-169">Click the EU sales list tab.</span></span>
+3. <span data-ttu-id="c70f8-170">Vyberte možnost Ano v poli převodu nákupů.</span><span class="sxs-lookup"><span data-stu-id="c70f8-170">Select Yes in the Transfer purchases field.</span></span>
+4. <span data-ttu-id="c70f8-171">Rozbalte položku Pravidla zaokrouhlování.</span><span class="sxs-lookup"><span data-stu-id="c70f8-171">Expand the Rounding rules section.</span></span>
+5. <span data-ttu-id="c70f8-172">Nastavit Pravidlo zaokrouhlování na „0,1“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-172">Set Rounding rule to '0.1'.</span></span>
+6. <span data-ttu-id="c70f8-173">Vyberte možnost Ano v poli Použít minimální hodnotu.</span><span class="sxs-lookup"><span data-stu-id="c70f8-173">Select Yes in the Use minimum value field.</span></span>
+7. <span data-ttu-id="c70f8-174">Do pole Počet desetinných míst zadejte „2“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-174">In the Number of decimals field, enter '2'.</span></span>
+8. <span data-ttu-id="c70f8-175">Rozbalte část Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="c70f8-175">Expand the Electronic reporting section.</span></span>
+9. <span data-ttu-id="c70f8-176">V poli Mapování formátu souboru vyberte „Souhrnné hlášení EU (DE)“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-176">In the File format mapping field, select 'EU Sales list (DE)'.</span></span>
+10. <span data-ttu-id="c70f8-177">V poli Mapování formátu sestavy vyberte „Souhrnné hlášení EU podle řádků“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-177">In the Report format mapping field, select 'EU Sales list by rows report'.</span></span>
+11. <span data-ttu-id="c70f8-178">Klepněte na kartu vlastností Země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="c70f8-178">Click the Country/region properties tab.</span></span>
+    * <span data-ttu-id="c70f8-179">Zkontrolujte, že pole typu Země/oblast je nastaveno na hodnotu „Domácí“ pro zemi nebo oblast Německo.</span><span class="sxs-lookup"><span data-stu-id="c70f8-179">Verify that the Country/region type field is set to 'Domestic' for Country/region DEU.</span></span>  
+    * <span data-ttu-id="c70f8-180">Pro změnu hodnoty v tomto poli může být nutné odemknout průvodce úkolem.</span><span class="sxs-lookup"><span data-stu-id="c70f8-180">You may need to unlock the task guide to change the value in this field.</span></span>  
+12. <span data-ttu-id="c70f8-181">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="c70f8-181">Click New.</span></span>
+13. <span data-ttu-id="c70f8-182">V poli Země/oblast zadejte „PRT“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-182">In the Country/region field, type 'PRT'.</span></span>
+14. <span data-ttu-id="c70f8-183">V poli Kód Intrastat zadejte „PT“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-183">In the Intrastat code field, type 'PT'.</span></span>
+15. <span data-ttu-id="c70f8-184">Do zadávacího pole Země/oblast vyberte položku „EU“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-184">In the Country/region type field, select 'EU'.</span></span>
+16. <span data-ttu-id="c70f8-185">Klikněte na kartu Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="c70f8-185">Click the Number sequences tab.</span></span>
+    * <span data-ttu-id="c70f8-186">Ověřte, zda je zadán kód číselné řady pro odkaz „Souhrnného hlášení EU“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-186">Verify that a Number sequence code is specified for the Reference 'EU sales list'.</span></span>  
 
-## <a name="create-a-customer-for-eu-sales-list-reporting-demo-purposes"></a><span data-ttu-id="65034-187">Vytvořit odběratele pro účely ukázky souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="65034-187">Create a customer for EU sales list reporting demo purposes</span></span>
-1. <span data-ttu-id="65034-188">Přejděte na Pohledávky > Zákazníci > Všichni odběratelé.</span><span class="sxs-lookup"><span data-stu-id="65034-188">Go to Accounts receivable > Customers > All customers.</span></span>
-2. <span data-ttu-id="65034-189">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="65034-189">Click New.</span></span>
-3. <span data-ttu-id="65034-190">V poli Účet odběratele zadejte „PRT-001“.</span><span class="sxs-lookup"><span data-stu-id="65034-190">In the Customer account field, type 'PRT-001'.</span></span>
-4. <span data-ttu-id="65034-191">Do pole Název zadejte „Zákazník z Portugalska“.</span><span class="sxs-lookup"><span data-stu-id="65034-191">In the Name field, type 'A customer from Portugal'.</span></span>
-5. <span data-ttu-id="65034-192">V poli Skupina odběratelů vyberte „10“.</span><span class="sxs-lookup"><span data-stu-id="65034-192">In the Customer group field, select '10'.</span></span>
-6. <span data-ttu-id="65034-193">V poli Skupina DPH vyberte položku „AR-DOM“.</span><span class="sxs-lookup"><span data-stu-id="65034-193">In the Sales tax group field, select 'AR-DOM'.</span></span>
-7. <span data-ttu-id="65034-194">Do pole DIČ vyberte „PT12345“.</span><span class="sxs-lookup"><span data-stu-id="65034-194">In the Tax exempt number field, select 'PT12345'.</span></span>
-8. <span data-ttu-id="65034-195">V poli Země/oblast zadejte „PRT“.</span><span class="sxs-lookup"><span data-stu-id="65034-195">In the Country/region field, type 'PRT'.</span></span>
-9. <span data-ttu-id="65034-196">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="65034-196">Click Save.</span></span>
+## <a name="create-a-customer-for-eu-sales-list-reporting-demo-purposes"></a><span data-ttu-id="c70f8-187">Vytvořit odběratele pro účely ukázky souhrnného hlášení EU</span><span class="sxs-lookup"><span data-stu-id="c70f8-187">Create a customer for EU sales list reporting demo purposes</span></span>
+1. <span data-ttu-id="c70f8-188">Přejděte na Pohledávky > Zákazníci > Všichni odběratelé.</span><span class="sxs-lookup"><span data-stu-id="c70f8-188">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="c70f8-189">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="c70f8-189">Click New.</span></span>
+3. <span data-ttu-id="c70f8-190">V poli Účet odběratele zadejte „PRT-001“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-190">In the Customer account field, type 'PRT-001'.</span></span>
+4. <span data-ttu-id="c70f8-191">Do pole Název zadejte „Zákazník z Portugalska“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-191">In the Name field, type 'A customer from Portugal'.</span></span>
+5. <span data-ttu-id="c70f8-192">V poli Skupina odběratelů vyberte „10“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-192">In the Customer group field, select '10'.</span></span>
+6. <span data-ttu-id="c70f8-193">V poli Skupina DPH vyberte položku „AR-DOM“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-193">In the Sales tax group field, select 'AR-DOM'.</span></span>
+7. <span data-ttu-id="c70f8-194">Do pole DIČ vyberte „PT12345“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-194">In the Tax exempt number field, select 'PT12345'.</span></span>
+8. <span data-ttu-id="c70f8-195">V poli Země/oblast zadejte „PRT“.</span><span class="sxs-lookup"><span data-stu-id="c70f8-195">In the Country/region field, type 'PRT'.</span></span>
+9. <span data-ttu-id="c70f8-196">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="c70f8-196">Click Save.</span></span>
 

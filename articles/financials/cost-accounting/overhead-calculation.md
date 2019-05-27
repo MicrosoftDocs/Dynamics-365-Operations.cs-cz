@@ -20,1355 +20,1355 @@ ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335110"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544048"
 ---
-# <a name="overhead-calculation"></a><span data-ttu-id="3c61d-103">Výpočet režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-103">Overhead calculation</span></span>
+# <a name="overhead-calculation"></a><span data-ttu-id="29c26-103">Výpočet režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-103">Overhead calculation</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3c61d-104">Toto téma popisuje typické procesy pro výpočet a přidělení režijních nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-104">This topic describes the typical processes for calculating and allocating overhead costs.</span></span>
+<span data-ttu-id="29c26-104">Toto téma popisuje typické procesy pro výpočet a přidělení režijních nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-104">This topic describes the typical processes for calculating and allocating overhead costs.</span></span>
 
-<a name="term-definition"></a><span data-ttu-id="3c61d-105">Definice termínu</span><span class="sxs-lookup"><span data-stu-id="3c61d-105">Term definition</span></span>
+<a name="term-definition"></a><span data-ttu-id="29c26-105">Definice termínu</span><span class="sxs-lookup"><span data-stu-id="29c26-105">Term definition</span></span>
 ---------------
 
-<span data-ttu-id="3c61d-106">Režijní náklady jsou náklady, které nutně vznikají při chodu podnikání, ale nelze je připsat přímo k žádné konkrétní podnikatelské aktivitě, produktu nebo službě.</span><span class="sxs-lookup"><span data-stu-id="3c61d-106">Overhead costs are the costs that are incurred in order to run a business, but that can't be directly attributed to any specific business activity, product, or service.</span></span> <span data-ttu-id="3c61d-107">Režijní náklady poskytují důležitou podporu pro generování aktivity přinášejících zisk.</span><span class="sxs-lookup"><span data-stu-id="3c61d-107">Overhead costs provide critical support for the generation of profit-making activities.</span></span> <span data-ttu-id="3c61d-108">Následuje několik příkladů režijních nákladů:</span><span class="sxs-lookup"><span data-stu-id="3c61d-108">Here are some examples of overhead costs:</span></span>
+<span data-ttu-id="29c26-106">Režijní náklady jsou náklady, které nutně vznikají při chodu podnikání, ale nelze je připsat přímo k žádné konkrétní podnikatelské aktivitě, produktu nebo službě.</span><span class="sxs-lookup"><span data-stu-id="29c26-106">Overhead costs are the costs that are incurred in order to run a business, but that can't be directly attributed to any specific business activity, product, or service.</span></span> <span data-ttu-id="29c26-107">Režijní náklady poskytují důležitou podporu pro generování aktivity přinášejících zisk.</span><span class="sxs-lookup"><span data-stu-id="29c26-107">Overhead costs provide critical support for the generation of profit-making activities.</span></span> <span data-ttu-id="29c26-108">Následuje několik příkladů režijních nákladů:</span><span class="sxs-lookup"><span data-stu-id="29c26-108">Here are some examples of overhead costs:</span></span>
 
--   <span data-ttu-id="3c61d-109">Renta</span><span class="sxs-lookup"><span data-stu-id="3c61d-109">Rent</span></span>
--   <span data-ttu-id="3c61d-110">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-110">Electricity</span></span>
--   <span data-ttu-id="3c61d-111">Administrativní mzdy</span><span class="sxs-lookup"><span data-stu-id="3c61d-111">Administrative salaries</span></span>
+-   <span data-ttu-id="29c26-109">Renta</span><span class="sxs-lookup"><span data-stu-id="29c26-109">Rent</span></span>
+-   <span data-ttu-id="29c26-110">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-110">Electricity</span></span>
+-   <span data-ttu-id="29c26-111">Administrativní mzdy</span><span class="sxs-lookup"><span data-stu-id="29c26-111">Administrative salaries</span></span>
 
-## <a name="overhead-calculation-overview"></a><span data-ttu-id="3c61d-112">Přehled výpočtu režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-112">Overhead calculation overview</span></span>
-<span data-ttu-id="3c61d-113">Výpočet režijních nákladů spustí zásady účtování nákladů ve správném pořadí.</span><span class="sxs-lookup"><span data-stu-id="3c61d-113">Overhead calculation runs the cost accounting policies in the correct order.</span></span> <span data-ttu-id="3c61d-114">Výpočet režijních nákladů můžete pro stejné fiskální období spustit mnohokrát, pokud došlo ke změně zásad účtování nákladů nebo zjištění konkrétních chyb.</span><span class="sxs-lookup"><span data-stu-id="3c61d-114">You can run overhead calculation multiple times for the same fiscal period if cost accounting policies have been changed or specific errors have been detected.</span></span> <span data-ttu-id="3c61d-115">Každé spuštění výpočtu režijních nákladů se ukládá a přijímá ID jedinečné verze, které vám umožní porovnávat výpočty v různých verzích.</span><span class="sxs-lookup"><span data-stu-id="3c61d-115">Each run of the overhead calculation is stored and receives a unique version ID that lets you compare the calculations in various versions.</span></span> <span data-ttu-id="3c61d-116">Položky nákladů, které generuje výpočet režijních nákladů, přijímá datum účtování.</span><span class="sxs-lookup"><span data-stu-id="3c61d-116">The cost entries that the overhead calculation generates receive an accounting date.</span></span> <span data-ttu-id="3c61d-117">Toto datum účtován se shoduje s konvovým datem fiskálního období, které se použije ve výpočtu.</span><span class="sxs-lookup"><span data-stu-id="3c61d-117">This accounting date matches the end date of the fiscal period that is used in the calculation.</span></span> <span data-ttu-id="3c61d-118">ID jedinečné verze se skládá z následujících prvků:</span><span class="sxs-lookup"><span data-stu-id="3c61d-118">The unique version ID consists of the following elements:</span></span>
+## <a name="overhead-calculation-overview"></a><span data-ttu-id="29c26-112">Přehled výpočtu režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-112">Overhead calculation overview</span></span>
+<span data-ttu-id="29c26-113">Výpočet režijních nákladů spustí zásady účtování nákladů ve správném pořadí.</span><span class="sxs-lookup"><span data-stu-id="29c26-113">Overhead calculation runs the cost accounting policies in the correct order.</span></span> <span data-ttu-id="29c26-114">Výpočet režijních nákladů můžete pro stejné fiskální období spustit mnohokrát, pokud došlo ke změně zásad účtování nákladů nebo zjištění konkrétních chyb.</span><span class="sxs-lookup"><span data-stu-id="29c26-114">You can run overhead calculation multiple times for the same fiscal period if cost accounting policies have been changed or specific errors have been detected.</span></span> <span data-ttu-id="29c26-115">Každé spuštění výpočtu režijních nákladů se ukládá a přijímá ID jedinečné verze, které vám umožní porovnávat výpočty v různých verzích.</span><span class="sxs-lookup"><span data-stu-id="29c26-115">Each run of the overhead calculation is stored and receives a unique version ID that lets you compare the calculations in various versions.</span></span> <span data-ttu-id="29c26-116">Položky nákladů, které generuje výpočet režijních nákladů, přijímá datum účtování.</span><span class="sxs-lookup"><span data-stu-id="29c26-116">The cost entries that the overhead calculation generates receive an accounting date.</span></span> <span data-ttu-id="29c26-117">Toto datum účtován se shoduje s konvovým datem fiskálního období, které se použije ve výpočtu.</span><span class="sxs-lookup"><span data-stu-id="29c26-117">This accounting date matches the end date of the fiscal period that is used in the calculation.</span></span> <span data-ttu-id="29c26-118">ID jedinečné verze se skládá z následujících prvků:</span><span class="sxs-lookup"><span data-stu-id="29c26-118">The unique version ID consists of the following elements:</span></span>
 
--   <span data-ttu-id="3c61d-119">Typ verze</span><span class="sxs-lookup"><span data-stu-id="3c61d-119">Version type</span></span>
--   <span data-ttu-id="3c61d-120">Datum a čas</span><span class="sxs-lookup"><span data-stu-id="3c61d-120">Date and time</span></span>
--   <span data-ttu-id="3c61d-121">Hlavní kniha nákladového účetnictví</span><span class="sxs-lookup"><span data-stu-id="3c61d-121">Cost accounting ledger</span></span>
--   <span data-ttu-id="3c61d-122">Fiskální rok</span><span class="sxs-lookup"><span data-stu-id="3c61d-122">Fiscal year</span></span>
--   <span data-ttu-id="3c61d-123">Fiskální období</span><span class="sxs-lookup"><span data-stu-id="3c61d-123">Fiscal period</span></span>
+-   <span data-ttu-id="29c26-119">Typ verze</span><span class="sxs-lookup"><span data-stu-id="29c26-119">Version type</span></span>
+-   <span data-ttu-id="29c26-120">Datum a čas</span><span class="sxs-lookup"><span data-stu-id="29c26-120">Date and time</span></span>
+-   <span data-ttu-id="29c26-121">Hlavní kniha nákladového účetnictví</span><span class="sxs-lookup"><span data-stu-id="29c26-121">Cost accounting ledger</span></span>
+-   <span data-ttu-id="29c26-122">Fiskální rok</span><span class="sxs-lookup"><span data-stu-id="29c26-122">Fiscal year</span></span>
+-   <span data-ttu-id="29c26-123">Fiskální období</span><span class="sxs-lookup"><span data-stu-id="29c26-123">Fiscal period</span></span>
 
-<span data-ttu-id="3c61d-124">Výpočet režijních nákladů se spustí bez ohledu na verzi.</span><span class="sxs-lookup"><span data-stu-id="3c61d-124">Overhead calculation is run independently of the version.</span></span> <span data-ttu-id="3c61d-125">Proto lze vypočítat rozpočtovou verzi před skutečnou verzí.</span><span class="sxs-lookup"><span data-stu-id="3c61d-125">Therefore, you can calculate the Budget version before the Actual version.</span></span> <span data-ttu-id="3c61d-126">Výpočet režijních nákladů se skládá ze čtyř kroků uvedených na následujícím obrázku.</span><span class="sxs-lookup"><span data-stu-id="3c61d-126">Overhead calculation consists of four steps, as shown in the following illustration.</span></span> <span data-ttu-id="3c61d-127">V každé fázi je vytvořeno záhlaví deníku, které obsahuje položky deníku.</span><span class="sxs-lookup"><span data-stu-id="3c61d-127">In each step, a journal header is created that has journal entries.</span></span> <span data-ttu-id="3c61d-128">Toto záhlaví deníku zachovává vstupní data pro každý krok výpočtu.</span><span class="sxs-lookup"><span data-stu-id="3c61d-128">This journal header keeps the input data for each calculation step.</span></span> <span data-ttu-id="3c61d-129">Zásady a pravidla se použijí na každý řádek deníku a položky nákladů jsou generovány jako výstup.</span><span class="sxs-lookup"><span data-stu-id="3c61d-129">Policies and rules are applied to each journal line, and cost entries are generated as output.</span></span> <span data-ttu-id="3c61d-130">Máte tedy vždy plnou sledovatelnost.</span><span class="sxs-lookup"><span data-stu-id="3c61d-130">Therefore, you always have full traceability.</span></span> 
+<span data-ttu-id="29c26-124">Výpočet režijních nákladů se spustí bez ohledu na verzi.</span><span class="sxs-lookup"><span data-stu-id="29c26-124">Overhead calculation is run independently of the version.</span></span> <span data-ttu-id="29c26-125">Proto lze vypočítat rozpočtovou verzi před skutečnou verzí.</span><span class="sxs-lookup"><span data-stu-id="29c26-125">Therefore, you can calculate the Budget version before the Actual version.</span></span> <span data-ttu-id="29c26-126">Výpočet režijních nákladů se skládá ze čtyř kroků uvedených na následujícím obrázku.</span><span class="sxs-lookup"><span data-stu-id="29c26-126">Overhead calculation consists of four steps, as shown in the following illustration.</span></span> <span data-ttu-id="29c26-127">V každé fázi je vytvořeno záhlaví deníku, které obsahuje položky deníku.</span><span class="sxs-lookup"><span data-stu-id="29c26-127">In each step, a journal header is created that has journal entries.</span></span> <span data-ttu-id="29c26-128">Toto záhlaví deníku zachovává vstupní data pro každý krok výpočtu.</span><span class="sxs-lookup"><span data-stu-id="29c26-128">This journal header keeps the input data for each calculation step.</span></span> <span data-ttu-id="29c26-129">Zásady a pravidla se použijí na každý řádek deníku a položky nákladů jsou generovány jako výstup.</span><span class="sxs-lookup"><span data-stu-id="29c26-129">Policies and rules are applied to each journal line, and cost entries are generated as output.</span></span> <span data-ttu-id="29c26-130">Máte tedy vždy plnou sledovatelnost.</span><span class="sxs-lookup"><span data-stu-id="29c26-130">Therefore, you always have full traceability.</span></span> 
 
-<span data-ttu-id="3c61d-131">[![Výpočet režijních nákladů](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)</span><span class="sxs-lookup"><span data-stu-id="3c61d-131">[![Overhead calculation](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)</span></span>
+<span data-ttu-id="29c26-131">[![Výpočet režijních nákladů](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)</span><span class="sxs-lookup"><span data-stu-id="29c26-131">[![Overhead calculation](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)</span></span>
 
-## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a><span data-ttu-id="3c61d-132">Výpočet a přidělení režijních nákladů za elektřinu</span><span class="sxs-lookup"><span data-stu-id="3c61d-132">Calculate and allocate the Electricity overhead cost</span></span>
-<span data-ttu-id="3c61d-133">Ve finančním účetnictví se některé náklady, jako je například elektřina, registrují jako paušální.</span><span class="sxs-lookup"><span data-stu-id="3c61d-133">In Financial accounting, some costs, such as electricity, are registered as a lump sum.</span></span> <span data-ttu-id="3c61d-134">Podrobný přehled pro vedoucí není tedy pro nákladové účetnictví k dispozici.</span><span class="sxs-lookup"><span data-stu-id="3c61d-134">Therefore, detailed managerial insight isn't provided for Cost accounting.</span></span> <span data-ttu-id="3c61d-135">V nákladovém účetnictví musí náklady procházet organizačními jednotkami, aby byl získán správný přehled pro vedoucí napříč všemi jednotkami a úrovněmi organizace.</span><span class="sxs-lookup"><span data-stu-id="3c61d-135">In Cost accounting, to provide correct managerial insight across all organizational units and levels, costs must flow through the organizational units.</span></span> <span data-ttu-id="3c61d-136">Tento tok musí být založen buď na přesném záznamu spotřeby nebo na objektivním hodnocení.</span><span class="sxs-lookup"><span data-stu-id="3c61d-136">This flow must be based on either an accurate record of the consumption or a fair assessment.</span></span> <span data-ttu-id="3c61d-137">V hlavní knize mohou být zaúčtovány náklady na elektřinu způsobem znázorněným v následující tabulce.</span><span class="sxs-lookup"><span data-stu-id="3c61d-137">In the general ledger, an electricity cost can be posted as shown in the following table.</span></span>
+## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a><span data-ttu-id="29c26-132">Výpočet a přidělení režijních nákladů za elektřinu</span><span class="sxs-lookup"><span data-stu-id="29c26-132">Calculate and allocate the Electricity overhead cost</span></span>
+<span data-ttu-id="29c26-133">Ve finančním účetnictví se některé náklady, jako je například elektřina, registrují jako paušální.</span><span class="sxs-lookup"><span data-stu-id="29c26-133">In Financial accounting, some costs, such as electricity, are registered as a lump sum.</span></span> <span data-ttu-id="29c26-134">Podrobný přehled pro vedoucí není tedy pro nákladové účetnictví k dispozici.</span><span class="sxs-lookup"><span data-stu-id="29c26-134">Therefore, detailed managerial insight isn't provided for Cost accounting.</span></span> <span data-ttu-id="29c26-135">V nákladovém účetnictví musí náklady procházet organizačními jednotkami, aby byl získán správný přehled pro vedoucí napříč všemi jednotkami a úrovněmi organizace.</span><span class="sxs-lookup"><span data-stu-id="29c26-135">In Cost accounting, to provide correct managerial insight across all organizational units and levels, costs must flow through the organizational units.</span></span> <span data-ttu-id="29c26-136">Tento tok musí být založen buď na přesném záznamu spotřeby nebo na objektivním hodnocení.</span><span class="sxs-lookup"><span data-stu-id="29c26-136">This flow must be based on either an accurate record of the consumption or a fair assessment.</span></span> <span data-ttu-id="29c26-137">V hlavní knize mohou být zaúčtovány náklady na elektřinu způsobem znázorněným v následující tabulce.</span><span class="sxs-lookup"><span data-stu-id="29c26-137">In the general ledger, an electricity cost can be posted as shown in the following table.</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="3c61d-138">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="3c61d-138">Accounting date</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-139">Nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-139">Cost center</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-140">Hlavní účet</span><span class="sxs-lookup"><span data-stu-id="3c61d-140">Main account</span></span></th>
-<th><span data-ttu-id="3c61d-141">Částka v zúčtovací měně</span><span class="sxs-lookup"><span data-stu-id="3c61d-141">Amount in the accounting currency</span></span></th>
+<th><span data-ttu-id="29c26-138">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="29c26-138">Accounting date</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-139">Nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-139">Cost center</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-140">Hlavní účet</span><span class="sxs-lookup"><span data-stu-id="29c26-140">Main account</span></span></th>
+<th><span data-ttu-id="29c26-141">Částka v zúčtovací měně</span><span class="sxs-lookup"><span data-stu-id="29c26-141">Amount in the accounting currency</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-142">3. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-142">January 3, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-143">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-143">CC099</span></span></td>
-<td><span data-ttu-id="3c61d-144">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-144">Default cost center</span></span></td>
-<td><span data-ttu-id="3c61d-145">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-145">10001</span></span></td>
-<td><span data-ttu-id="3c61d-146">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-146">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-147">10,000.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-147">10,000.00</span></span></td>
+<td><span data-ttu-id="29c26-142">3. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-142">January 3, 2017</span></span></td>
+<td><span data-ttu-id="29c26-143">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-143">CC099</span></span></td>
+<td><span data-ttu-id="29c26-144">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-144">Default cost center</span></span></td>
+<td><span data-ttu-id="29c26-145">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-145">10001</span></span></td>
+<td><span data-ttu-id="29c26-146">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-146">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-147">10,000.00</span><span class="sxs-lookup"><span data-stu-id="29c26-147">10,000.00</span></span></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="step-1-process-the-cost-behavior-calculation"></a><span data-ttu-id="3c61d-148">Krok 1: Zpracování výpočtu chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-148">Step 1: Process the cost behavior calculation</span></span>
+### <a name="step-1-process-the-cost-behavior-calculation"></a><span data-ttu-id="29c26-148">Krok 1: Zpracování výpočtu chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-148">Step 1: Process the cost behavior calculation</span></span>
 
-<span data-ttu-id="3c61d-149">Ve výchozím nastavení dostanou při importu položek nákladů z datového zdroje tyto položky v nákladovém účetnictví klasifikaci **Neklasifikované**.</span><span class="sxs-lookup"><span data-stu-id="3c61d-149">By default, when cost entries are imported from the source data, they receive the **Unclassified** cost behavior classification in Cost accounting.</span></span> <span data-ttu-id="3c61d-150">Použitím pravidla zásad chování nákladů lze reklasifikovat položky nákladů jako **Pevné náklady** nebo **Variabilní náklady**.</span><span class="sxs-lookup"><span data-stu-id="3c61d-150">By applying cost behavior policy rules, you can reclassify cost entries as either **Fixed cost** or **Variable cost**.</span></span>
+<span data-ttu-id="29c26-149">Ve výchozím nastavení dostanou při importu položek nákladů z datového zdroje tyto položky v nákladovém účetnictví klasifikaci **Neklasifikované**.</span><span class="sxs-lookup"><span data-stu-id="29c26-149">By default, when cost entries are imported from the source data, they receive the **Unclassified** cost behavior classification in Cost accounting.</span></span> <span data-ttu-id="29c26-150">Použitím pravidla zásad chování nákladů lze reklasifikovat položky nákladů jako **Pevné náklady** nebo **Variabilní náklady**.</span><span class="sxs-lookup"><span data-stu-id="29c26-150">By applying cost behavior policy rules, you can reclassify cost entries as either **Fixed cost** or **Variable cost**.</span></span>
 
-#### <a name="define-the-cost-behavior-rule"></a><span data-ttu-id="3c61d-151">Definice pravidel chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-151">Define the cost behavior rule</span></span>
+#### <a name="define-the-cost-behavior-rule"></a><span data-ttu-id="29c26-151">Definice pravidel chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-151">Define the cost behavior rule</span></span>
 
-<span data-ttu-id="3c61d-152">V některých případech je část nákladů s pevným poplatkem a zbývající náklady jsou založeny na spotřebě.</span><span class="sxs-lookup"><span data-stu-id="3c61d-152">In some cases, part of the cost is a fixed fee, and the remaining cost is based on consumption.</span></span> <span data-ttu-id="3c61d-153">Účty za elektřinu často odpovídají této definici.</span><span class="sxs-lookup"><span data-stu-id="3c61d-153">Electricity bills often match this definition.</span></span> <span data-ttu-id="3c61d-154">Po platbě konkrétního pevného poplatku platíte spotřebu za kilowatthodinu (kWh).</span><span class="sxs-lookup"><span data-stu-id="3c61d-154">After you pay a specific fixed fee, you pay for consumption per kilowatt hour (Kwh).</span></span> <span data-ttu-id="3c61d-155">Pokud je například poplatek pevných nákladů 1 000,00, definuje se pravidlo chování nákladů takto:</span><span class="sxs-lookup"><span data-stu-id="3c61d-155">For example, if the fixed cost fee is 1,000.00, here is how the cost behavior rule is defined:</span></span>
+<span data-ttu-id="29c26-152">V některých případech je část nákladů s pevným poplatkem a zbývající náklady jsou založeny na spotřebě.</span><span class="sxs-lookup"><span data-stu-id="29c26-152">In some cases, part of the cost is a fixed fee, and the remaining cost is based on consumption.</span></span> <span data-ttu-id="29c26-153">Účty za elektřinu často odpovídají této definici.</span><span class="sxs-lookup"><span data-stu-id="29c26-153">Electricity bills often match this definition.</span></span> <span data-ttu-id="29c26-154">Po platbě konkrétního pevného poplatku platíte spotřebu za kilowatthodinu (kWh).</span><span class="sxs-lookup"><span data-stu-id="29c26-154">After you pay a specific fixed fee, you pay for consumption per kilowatt hour (Kwh).</span></span> <span data-ttu-id="29c26-155">Pokud je například poplatek pevných nákladů 1 000,00, definuje se pravidlo chování nákladů takto:</span><span class="sxs-lookup"><span data-stu-id="29c26-155">For example, if the fixed cost fee is 1,000.00, here is how the cost behavior rule is defined:</span></span>
 
--   <span data-ttu-id="3c61d-156">Pevná částka 1 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-156">Fixed amount 1,000.00</span></span>
-    -   <span data-ttu-id="3c61d-157">0 &lt;= 1 000,00 = Pevná</span><span class="sxs-lookup"><span data-stu-id="3c61d-157">0 &lt;= 1,000.00 = Fixed</span></span>
-    -   <span data-ttu-id="3c61d-158">1 000,01 &lt; N = Variabilní</span><span class="sxs-lookup"><span data-stu-id="3c61d-158">1000,01 &lt; N = Variable</span></span>
+-   <span data-ttu-id="29c26-156">Pevná částka 1 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-156">Fixed amount 1,000.00</span></span>
+    -   <span data-ttu-id="29c26-157">0 &lt;= 1 000,00 = Pevná</span><span class="sxs-lookup"><span data-stu-id="29c26-157">0 &lt;= 1,000.00 = Fixed</span></span>
+    -   <span data-ttu-id="29c26-158">1 000,01 &lt; N = Variabilní</span><span class="sxs-lookup"><span data-stu-id="29c26-158">1000,01 &lt; N = Variable</span></span>
 
-##### <a name="journal"></a><span data-ttu-id="3c61d-159">Deník</span><span class="sxs-lookup"><span data-stu-id="3c61d-159">Journal</span></span>
+##### <a name="journal"></a><span data-ttu-id="29c26-159">Deník</span><span class="sxs-lookup"><span data-stu-id="29c26-159">Journal</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="3c61d-160">Deník</span><span class="sxs-lookup"><span data-stu-id="3c61d-160">Journal</span></span></th>
-<th><span data-ttu-id="3c61d-161">Typ deníku</span><span class="sxs-lookup"><span data-stu-id="3c61d-161">Journal type</span></span></th>
-<th colspan="3"><span data-ttu-id="3c61d-162">Fiskální kalendářní období</span><span class="sxs-lookup"><span data-stu-id="3c61d-162">Fiscal calendar period</span></span></th>
-<th><span data-ttu-id="3c61d-163">Verze</span><span class="sxs-lookup"><span data-stu-id="3c61d-163">Version</span></span></th>
+<th><span data-ttu-id="29c26-160">Deník</span><span class="sxs-lookup"><span data-stu-id="29c26-160">Journal</span></span></th>
+<th><span data-ttu-id="29c26-161">Typ deníku</span><span class="sxs-lookup"><span data-stu-id="29c26-161">Journal type</span></span></th>
+<th colspan="3"><span data-ttu-id="29c26-162">Fiskální kalendářní období</span><span class="sxs-lookup"><span data-stu-id="29c26-162">Fiscal calendar period</span></span></th>
+<th><span data-ttu-id="29c26-163">Verze</span><span class="sxs-lookup"><span data-stu-id="29c26-163">Version</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-164">00001</span><span class="sxs-lookup"><span data-stu-id="3c61d-164">00001</span></span></td>
-<td><span data-ttu-id="3c61d-165">Deník výpočtu chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-165">Cost behavior calculation journal</span></span></td>
-<td><span data-ttu-id="3c61d-166">Fiskální</span><span class="sxs-lookup"><span data-stu-id="3c61d-166">Fiscal</span></span></td>
-<td><span data-ttu-id="3c61d-167">2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-167">2017</span></span></td>
-<td><span data-ttu-id="3c61d-168">Období 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-168">Period 1</span></span></td>
-<td><span data-ttu-id="3c61d-169">Výpočet režijních nákladů / 01-02-2017 23:51:00: 00 / Hlavní kniha /2017 / Období 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-169">Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</span></span></td>
+<td><span data-ttu-id="29c26-164">00001</span><span class="sxs-lookup"><span data-stu-id="29c26-164">00001</span></span></td>
+<td><span data-ttu-id="29c26-165">Deník výpočtu chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-165">Cost behavior calculation journal</span></span></td>
+<td><span data-ttu-id="29c26-166">Fiskální</span><span class="sxs-lookup"><span data-stu-id="29c26-166">Fiscal</span></span></td>
+<td><span data-ttu-id="29c26-167">2017</span><span class="sxs-lookup"><span data-stu-id="29c26-167">2017</span></span></td>
+<td><span data-ttu-id="29c26-168">Období 1</span><span class="sxs-lookup"><span data-stu-id="29c26-168">Period 1</span></span></td>
+<td><span data-ttu-id="29c26-169">Výpočet režijních nákladů / 01-02-2017 23:51:00: 00 / Hlavní kniha /2017 / Období 1</span><span class="sxs-lookup"><span data-stu-id="29c26-169">Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a><span data-ttu-id="3c61d-170">Položky deníku (Položky deníku pro zůstatek objektu nákladů)</span><span class="sxs-lookup"><span data-stu-id="3c61d-170">Journal entries (Cost object balance journal entries)</span></span>
+##### <a name="journal-entries-cost-object-balance-journal-entries"></a><span data-ttu-id="29c26-170">Položky deníku (Položky deníku pro zůstatek objektu nákladů)</span><span class="sxs-lookup"><span data-stu-id="29c26-170">Journal entries (Cost object balance journal entries)</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="3c61d-171">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="3c61d-171">Accounting date</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-172">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-172">Cost object</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-173">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-173">Cost element</span></span></th>
-<th><span data-ttu-id="3c61d-174">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-174">Cost behavior</span></span></th>
-<th><span data-ttu-id="3c61d-175">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-175">Amount</span></span></th>
+<th><span data-ttu-id="29c26-171">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="29c26-171">Accounting date</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-172">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-172">Cost object</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-173">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-173">Cost element</span></span></th>
+<th><span data-ttu-id="29c26-174">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-174">Cost behavior</span></span></th>
+<th><span data-ttu-id="29c26-175">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-175">Amount</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-176">3. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-176">January 3, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-177">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-177">CC099</span></span></td>
-<td><span data-ttu-id="3c61d-178">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-178">Default cost center</span></span></td>
-<td><span data-ttu-id="3c61d-179">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-179">10001</span></span></td>
-<td><span data-ttu-id="3c61d-180">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-180">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-181">Neklasifikované</span><span class="sxs-lookup"><span data-stu-id="3c61d-181">Unclassified</span></span></td>
-<td><span data-ttu-id="3c61d-182">10,000.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-182">10,000.00</span></span></td>
+<td><span data-ttu-id="29c26-176">3. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-176">January 3, 2017</span></span></td>
+<td><span data-ttu-id="29c26-177">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-177">CC099</span></span></td>
+<td><span data-ttu-id="29c26-178">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-178">Default cost center</span></span></td>
+<td><span data-ttu-id="29c26-179">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-179">10001</span></span></td>
+<td><span data-ttu-id="29c26-180">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-180">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-181">Neklasifikované</span><span class="sxs-lookup"><span data-stu-id="29c26-181">Unclassified</span></span></td>
+<td><span data-ttu-id="29c26-182">10,000.00</span><span class="sxs-lookup"><span data-stu-id="29c26-182">10,000.00</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a><span data-ttu-id="3c61d-183">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-183">Cost entries</span></span>
+##### <a name="cost-entries"></a><span data-ttu-id="29c26-183">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-183">Cost entries</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-184">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-184">Cost object</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-185">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-185">Cost element</span></span></th>
-<th><span data-ttu-id="3c61d-186">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-186">Cost behavior</span></span></th>
-<th><span data-ttu-id="3c61d-187">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-187">Amount</span></span></th>
-<th><span data-ttu-id="3c61d-188">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="3c61d-188">Accounting date</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-184">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-184">Cost object</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-185">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-185">Cost element</span></span></th>
+<th><span data-ttu-id="29c26-186">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-186">Cost behavior</span></span></th>
+<th><span data-ttu-id="29c26-187">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-187">Amount</span></span></th>
+<th><span data-ttu-id="29c26-188">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="29c26-188">Accounting date</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-189">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-189">CC099</span></span></td>
-<td><span data-ttu-id="3c61d-190">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-190">Default cost center</span></span></td>
-<td><span data-ttu-id="3c61d-191">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-191">10001</span></span></td>
-<td><span data-ttu-id="3c61d-192">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-192">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-193">Neklasifikované</span><span class="sxs-lookup"><span data-stu-id="3c61d-193">Unclassified</span></span></td>
-<td><span data-ttu-id="3c61d-194">10,000.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-194">10,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-195">3. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-195">January 3, 2017</span></span></td>
+<td><span data-ttu-id="29c26-189">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-189">CC099</span></span></td>
+<td><span data-ttu-id="29c26-190">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-190">Default cost center</span></span></td>
+<td><span data-ttu-id="29c26-191">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-191">10001</span></span></td>
+<td><span data-ttu-id="29c26-192">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-192">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-193">Neklasifikované</span><span class="sxs-lookup"><span data-stu-id="29c26-193">Unclassified</span></span></td>
+<td><span data-ttu-id="29c26-194">10,000.00</span><span class="sxs-lookup"><span data-stu-id="29c26-194">10,000.00</span></span></td>
+<td><span data-ttu-id="29c26-195">3. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-195">January 3, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-196">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-196">CC099</span></span></td>
-<td><span data-ttu-id="3c61d-197">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-197">Default cost center</span></span></td>
-<td><span data-ttu-id="3c61d-198">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-198">10001</span></span></td>
-<td><span data-ttu-id="3c61d-199">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-199">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-200">Neklasifikované</span><span class="sxs-lookup"><span data-stu-id="3c61d-200">Unclassified</span></span></td>
-<td><span data-ttu-id="3c61d-201">-10 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-201">-10,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-202">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-202">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-196">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-196">CC099</span></span></td>
+<td><span data-ttu-id="29c26-197">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-197">Default cost center</span></span></td>
+<td><span data-ttu-id="29c26-198">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-198">10001</span></span></td>
+<td><span data-ttu-id="29c26-199">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-199">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-200">Neklasifikované</span><span class="sxs-lookup"><span data-stu-id="29c26-200">Unclassified</span></span></td>
+<td><span data-ttu-id="29c26-201">-10 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-201">-10,000.00</span></span></td>
+<td><span data-ttu-id="29c26-202">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-202">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-203">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-203">CC099</span></span></td>
-<td><span data-ttu-id="3c61d-204">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-204">Default cost center</span></span></td>
-<td><span data-ttu-id="3c61d-205">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-205">10001</span></span></td>
-<td><span data-ttu-id="3c61d-206">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-206">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-207">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-207">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-208">1 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-208">1,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-209">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-209">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-203">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-203">CC099</span></span></td>
+<td><span data-ttu-id="29c26-204">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-204">Default cost center</span></span></td>
+<td><span data-ttu-id="29c26-205">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-205">10001</span></span></td>
+<td><span data-ttu-id="29c26-206">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-206">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-207">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-207">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-208">1 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-208">1,000.00</span></span></td>
+<td><span data-ttu-id="29c26-209">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-209">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-210">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-210">CC099</span></span></td>
-<td><span data-ttu-id="3c61d-211">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-211">Default cost center</span></span></td>
-<td><span data-ttu-id="3c61d-212">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-212">10001</span></span></td>
-<td><span data-ttu-id="3c61d-213">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-213">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-214">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-214">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-215">9,000.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-215">9,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-216">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-216">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-210">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-210">CC099</span></span></td>
+<td><span data-ttu-id="29c26-211">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-211">Default cost center</span></span></td>
+<td><span data-ttu-id="29c26-212">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-212">10001</span></span></td>
+<td><span data-ttu-id="29c26-213">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-213">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-214">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-214">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-215">9,000.00</span><span class="sxs-lookup"><span data-stu-id="29c26-215">9,000.00</span></span></td>
+<td><span data-ttu-id="29c26-216">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-216">January 31, 2017</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-217">Více informací naleznete v tématu [Vytvoření a přiřazení zásad chování nákladů k jednotce řízení nákladů](tasks/create-assign-cost-behavior-policy-cost-control-unit.md)</span><span class="sxs-lookup"><span data-stu-id="3c61d-217">For more information, see [Create and assign a cost behavior policy to a cost control unit](tasks/create-assign-cost-behavior-policy-cost-control-unit.md).</span></span>
-### <a name="step-2-process-the-cost-distribution-calculation"></a><span data-ttu-id="3c61d-218">Krok 2: Zpracování výpočtu distribuce nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-218">Step 2: Process the cost distribution calculation</span></span>
+<span data-ttu-id="29c26-217">Více informací naleznete v tématu [Vytvoření a přiřazení zásad chování nákladů k jednotce řízení nákladů](tasks/create-assign-cost-behavior-policy-cost-control-unit.md)</span><span class="sxs-lookup"><span data-stu-id="29c26-217">For more information, see [Create and assign a cost behavior policy to a cost control unit](tasks/create-assign-cost-behavior-policy-cost-control-unit.md).</span></span>
+### <a name="step-2-process-the-cost-distribution-calculation"></a><span data-ttu-id="29c26-218">Krok 2: Zpracování výpočtu distribuce nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-218">Step 2: Process the cost distribution calculation</span></span>
 
-<span data-ttu-id="3c61d-219">Distribuce nákladů se používá k rozdělení nákladů z jednoho objektu nákladů na jeden nebo více dalších objektů nákladů použitím příslušného základu přidělení.</span><span class="sxs-lookup"><span data-stu-id="3c61d-219">Cost distribution is used to redistribute cost from one cost object to one or more other cost objects by applying a relevant allocation base.</span></span> <span data-ttu-id="3c61d-220">Distribuce nákladů a přidělení nákladů se liší v tom, že k distribuci nákladů dochází vždy na úrovni primárního prvku nákladů původních nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-220">Cost distribution and cost allocation differ in that cost distribution always occurs at the level of the primary cost element of the original cost.</span></span>
+<span data-ttu-id="29c26-219">Distribuce nákladů se používá k rozdělení nákladů z jednoho objektu nákladů na jeden nebo více dalších objektů nákladů použitím příslušného základu přidělení.</span><span class="sxs-lookup"><span data-stu-id="29c26-219">Cost distribution is used to redistribute cost from one cost object to one or more other cost objects by applying a relevant allocation base.</span></span> <span data-ttu-id="29c26-220">Distribuce nákladů a přidělení nákladů se liší v tom, že k distribuci nákladů dochází vždy na úrovni primárního prvku nákladů původních nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-220">Cost distribution and cost allocation differ in that cost distribution always occurs at the level of the primary cost element of the original cost.</span></span>
 
-#### <a name="define-the-cost-distribution-rule"></a><span data-ttu-id="3c61d-221">Definice pravidel distribuce nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-221">Define the cost distribution rule</span></span>
+#### <a name="define-the-cost-distribution-rule"></a><span data-ttu-id="29c26-221">Definice pravidel distribuce nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-221">Define the cost distribution rule</span></span>
 
-<span data-ttu-id="3c61d-222">Ve finančním účetnictví se náklady na elektřinu často registrují jako paušální.</span><span class="sxs-lookup"><span data-stu-id="3c61d-222">In Financial accounting, electricity costs are often registered as a lump sum.</span></span> <span data-ttu-id="3c61d-223">V nákladovém účetnictví není tento přístup dostatečně podrobný.</span><span class="sxs-lookup"><span data-stu-id="3c61d-223">In Cost accounting, this approach isn't detailed enough.</span></span> <span data-ttu-id="3c61d-224">Variabilní náklady by měly být distribuovány k jednotlivým objektům nákladů na solidním základě.</span><span class="sxs-lookup"><span data-stu-id="3c61d-224">The variable cost should be distributed to the individual cost objects on a fair basis.</span></span> <span data-ttu-id="3c61d-225">Nejlogičtější základ přidělení je spotřeba elektřiny (kWh).</span><span class="sxs-lookup"><span data-stu-id="3c61d-225">The most logical allocation basis is the consumption of electricity (Kwh).</span></span> <span data-ttu-id="3c61d-226">Vytvoří se člen statistické dimenzi s názvem Elektřina a zaznamená se elektrické spotřeba.</span><span class="sxs-lookup"><span data-stu-id="3c61d-226">A statistical dimension member that is named Electricity is created, and electricity consumption is recorded.</span></span> <span data-ttu-id="3c61d-227">Ve výchozím nastavení se všechny členy statistické dimenze stanou dostupnými zpřístupněny jako základy přidělení.</span><span class="sxs-lookup"><span data-stu-id="3c61d-227">By default, all statistical dimension members become available as allocation bases.</span></span>
+<span data-ttu-id="29c26-222">Ve finančním účetnictví se náklady na elektřinu často registrují jako paušální.</span><span class="sxs-lookup"><span data-stu-id="29c26-222">In Financial accounting, electricity costs are often registered as a lump sum.</span></span> <span data-ttu-id="29c26-223">V nákladovém účetnictví není tento přístup dostatečně podrobný.</span><span class="sxs-lookup"><span data-stu-id="29c26-223">In Cost accounting, this approach isn't detailed enough.</span></span> <span data-ttu-id="29c26-224">Variabilní náklady by měly být distribuovány k jednotlivým objektům nákladů na solidním základě.</span><span class="sxs-lookup"><span data-stu-id="29c26-224">The variable cost should be distributed to the individual cost objects on a fair basis.</span></span> <span data-ttu-id="29c26-225">Nejlogičtější základ přidělení je spotřeba elektřiny (kWh).</span><span class="sxs-lookup"><span data-stu-id="29c26-225">The most logical allocation basis is the consumption of electricity (Kwh).</span></span> <span data-ttu-id="29c26-226">Vytvoří se člen statistické dimenzi s názvem Elektřina a zaznamená se elektrické spotřeba.</span><span class="sxs-lookup"><span data-stu-id="29c26-226">A statistical dimension member that is named Electricity is created, and electricity consumption is recorded.</span></span> <span data-ttu-id="29c26-227">Ve výchozím nastavení se všechny členy statistické dimenze stanou dostupnými zpřístupněny jako základy přidělení.</span><span class="sxs-lookup"><span data-stu-id="29c26-227">By default, all statistical dimension members become available as allocation bases.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-228">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-228">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-229">kWh</span><span class="sxs-lookup"><span data-stu-id="3c61d-229">Kwh</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-228">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-228">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-229">kWh</span><span class="sxs-lookup"><span data-stu-id="29c26-229">Kwh</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-230">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-230">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-231">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-231">HR</span></span></td>
-<td><span data-ttu-id="3c61d-232">1 000</span><span class="sxs-lookup"><span data-stu-id="3c61d-232">1,000</span></span></td>
+<td><span data-ttu-id="29c26-230">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-230">CC001</span></span></td>
+<td><span data-ttu-id="29c26-231">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-231">HR</span></span></td>
+<td><span data-ttu-id="29c26-232">1 000</span><span class="sxs-lookup"><span data-stu-id="29c26-232">1,000</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-233">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-233">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-234">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-234">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-235">6,000</span><span class="sxs-lookup"><span data-stu-id="3c61d-235">6,000</span></span></td>
+<td><span data-ttu-id="29c26-233">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-233">CC002</span></span></td>
+<td><span data-ttu-id="29c26-234">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-234">Finance</span></span></td>
+<td><span data-ttu-id="29c26-235">6,000</span><span class="sxs-lookup"><span data-stu-id="29c26-235">6,000</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-236">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-236">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-237">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-237">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-238">0</span><span class="sxs-lookup"><span data-stu-id="3c61d-238">0</span></span></td>
+<td><span data-ttu-id="29c26-236">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-236">CC003</span></span></td>
+<td><span data-ttu-id="29c26-237">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-237">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-238">0</span><span class="sxs-lookup"><span data-stu-id="29c26-238">0</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-239">Následující tabulka zobrazuje výsledek při použití elektrické spotřeby jako základu přidělení pro variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="3c61d-239">The following table shows the result when electricity consumption is applied as an allocation base for variable costs.</span></span>
+<span data-ttu-id="29c26-239">Následující tabulka zobrazuje výsledek při použití elektrické spotřeby jako základu přidělení pro variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="29c26-239">The following table shows the result when electricity consumption is applied as an allocation base for variable costs.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-240">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-240">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-241">Hodnota</span><span class="sxs-lookup"><span data-stu-id="3c61d-241">Magnitude</span></span></th>
-<th><span data-ttu-id="3c61d-242">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="3c61d-242">Allocation factor</span></span></th>
-<th><span data-ttu-id="3c61d-243">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-243">Amount</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-240">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-240">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-241">Hodnota</span><span class="sxs-lookup"><span data-stu-id="29c26-241">Magnitude</span></span></th>
+<th><span data-ttu-id="29c26-242">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="29c26-242">Allocation factor</span></span></th>
+<th><span data-ttu-id="29c26-243">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-243">Amount</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-244">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-244">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-245">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-245">HR</span></span></td>
-<td><span data-ttu-id="3c61d-246">1 000</span><span class="sxs-lookup"><span data-stu-id="3c61d-246">1,000</span></span></td>
-<td><span data-ttu-id="3c61d-247">(1 000 ÷ 7 000) × 9 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-247">(1,000 ÷ 7,000) × 9,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-248">1,285.71</span><span class="sxs-lookup"><span data-stu-id="3c61d-248">1,285.71</span></span></td>
+<td><span data-ttu-id="29c26-244">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-244">CC001</span></span></td>
+<td><span data-ttu-id="29c26-245">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-245">HR</span></span></td>
+<td><span data-ttu-id="29c26-246">1 000</span><span class="sxs-lookup"><span data-stu-id="29c26-246">1,000</span></span></td>
+<td><span data-ttu-id="29c26-247">(1 000 ÷ 7 000) × 9 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-247">(1,000 ÷ 7,000) × 9,000.00</span></span></td>
+<td><span data-ttu-id="29c26-248">1,285.71</span><span class="sxs-lookup"><span data-stu-id="29c26-248">1,285.71</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-249">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-249">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-250">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-250">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-251">6,000</span><span class="sxs-lookup"><span data-stu-id="3c61d-251">6,000</span></span></td>
-<td><span data-ttu-id="3c61d-252">(6 000 ÷ 7 000) × 9 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-252">(6,000 ÷ 7,000) × 9,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-253">7,714.29</span><span class="sxs-lookup"><span data-stu-id="3c61d-253">7,714.29</span></span></td>
+<td><span data-ttu-id="29c26-249">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-249">CC002</span></span></td>
+<td><span data-ttu-id="29c26-250">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-250">Finance</span></span></td>
+<td><span data-ttu-id="29c26-251">6,000</span><span class="sxs-lookup"><span data-stu-id="29c26-251">6,000</span></span></td>
+<td><span data-ttu-id="29c26-252">(6 000 ÷ 7 000) × 9 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-252">(6,000 ÷ 7,000) × 9,000.00</span></span></td>
+<td><span data-ttu-id="29c26-253">7,714.29</span><span class="sxs-lookup"><span data-stu-id="29c26-253">7,714.29</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-254">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-254">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-255">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-255">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-256">0</span><span class="sxs-lookup"><span data-stu-id="3c61d-256">0</span></span></td>
-<td><span data-ttu-id="3c61d-257">(0 ÷ 7 000) × 9 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-257">(0 ÷ 7,000) × 9,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-258">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-258">0.00</span></span></td>
+<td><span data-ttu-id="29c26-254">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-254">CC003</span></span></td>
+<td><span data-ttu-id="29c26-255">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-255">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-256">0</span><span class="sxs-lookup"><span data-stu-id="29c26-256">0</span></span></td>
+<td><span data-ttu-id="29c26-257">(0 ÷ 7 000) × 9 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-257">(0 ÷ 7,000) × 9,000.00</span></span></td>
+<td><span data-ttu-id="29c26-258">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-258">0.00</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-259">Pevné náklady musí být distribuovány rovnoměrně k jednotlivých objektům nákladů, které spotřebovávaly elektřinu.</span><span class="sxs-lookup"><span data-stu-id="3c61d-259">The fixed cost should be distributed evenly to the individual cost objects that have consumed electricity.</span></span> <span data-ttu-id="3c61d-260">Tohoto výsledku můžete dosáhnout pomocí členu statistické dimenze Elektřina v základu přidělení vzorce: (Elektřina &gt; 0,00) Následující tabulka zobrazuje výsledek při použití elektrické spotřeby jako základu přidělení pro variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="3c61d-260">You can achieve this result by using the Electricity statistical dimension member in a formula allocation base: (Electricity &gt; 0.00) The following table shows the result when electricity consumption is applied as an allocation base for variable costs.</span></span>
+<span data-ttu-id="29c26-259">Pevné náklady musí být distribuovány rovnoměrně k jednotlivých objektům nákladů, které spotřebovávaly elektřinu.</span><span class="sxs-lookup"><span data-stu-id="29c26-259">The fixed cost should be distributed evenly to the individual cost objects that have consumed electricity.</span></span> <span data-ttu-id="29c26-260">Tohoto výsledku můžete dosáhnout pomocí členu statistické dimenze Elektřina v základu přidělení vzorce: (Elektřina &gt; 0,00) Následující tabulka zobrazuje výsledek při použití elektrické spotřeby jako základu přidělení pro variabilní náklady.</span><span class="sxs-lookup"><span data-stu-id="29c26-260">You can achieve this result by using the Electricity statistical dimension member in a formula allocation base: (Electricity &gt; 0.00) The following table shows the result when electricity consumption is applied as an allocation base for variable costs.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-261">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-261">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-262">Vzorec</span><span class="sxs-lookup"><span data-stu-id="3c61d-262">Formula</span></span></th>
-<th><span data-ttu-id="3c61d-263">Hodnota</span><span class="sxs-lookup"><span data-stu-id="3c61d-263">Magnitude</span></span></th>
-<th><span data-ttu-id="3c61d-264">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="3c61d-264">Allocation factor</span></span></th>
-<th><span data-ttu-id="3c61d-265">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-265">Amount</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-261">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-261">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-262">Vzorec</span><span class="sxs-lookup"><span data-stu-id="29c26-262">Formula</span></span></th>
+<th><span data-ttu-id="29c26-263">Hodnota</span><span class="sxs-lookup"><span data-stu-id="29c26-263">Magnitude</span></span></th>
+<th><span data-ttu-id="29c26-264">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="29c26-264">Allocation factor</span></span></th>
+<th><span data-ttu-id="29c26-265">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-265">Amount</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-266">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-266">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-267">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-267">HR</span></span></td>
-<td><span data-ttu-id="3c61d-268">(1 000 &gt; 0,00)</span><span class="sxs-lookup"><span data-stu-id="3c61d-268">(1,000 &gt; 0.00)</span></span></td>
-<td><span data-ttu-id="3c61d-269">1</span><span class="sxs-lookup"><span data-stu-id="3c61d-269">1</span></span></td>
-<td><span data-ttu-id="3c61d-270">(1 ÷ 2) × 1 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-270">(1 ÷ 2) × 1,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-271">500.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-271">500.00</span></span></td>
+<td><span data-ttu-id="29c26-266">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-266">CC001</span></span></td>
+<td><span data-ttu-id="29c26-267">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-267">HR</span></span></td>
+<td><span data-ttu-id="29c26-268">(1 000 &gt; 0,00)</span><span class="sxs-lookup"><span data-stu-id="29c26-268">(1,000 &gt; 0.00)</span></span></td>
+<td><span data-ttu-id="29c26-269">1</span><span class="sxs-lookup"><span data-stu-id="29c26-269">1</span></span></td>
+<td><span data-ttu-id="29c26-270">(1 ÷ 2) × 1 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-270">(1 ÷ 2) × 1,000.00</span></span></td>
+<td><span data-ttu-id="29c26-271">500.00</span><span class="sxs-lookup"><span data-stu-id="29c26-271">500.00</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-272">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-272">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-273">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-273">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-274">(6 000 &gt; 0,00)</span><span class="sxs-lookup"><span data-stu-id="3c61d-274">(6,000 &gt; 0.00)</span></span></td>
-<td><span data-ttu-id="3c61d-275">1</span><span class="sxs-lookup"><span data-stu-id="3c61d-275">1</span></span></td>
-<td><span data-ttu-id="3c61d-276">(1 ÷ 2) × 1 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-276">(1 ÷ 2) × 1,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-277">500.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-277">500.00</span></span></td>
+<td><span data-ttu-id="29c26-272">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-272">CC002</span></span></td>
+<td><span data-ttu-id="29c26-273">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-273">Finance</span></span></td>
+<td><span data-ttu-id="29c26-274">(6 000 &gt; 0,00)</span><span class="sxs-lookup"><span data-stu-id="29c26-274">(6,000 &gt; 0.00)</span></span></td>
+<td><span data-ttu-id="29c26-275">1</span><span class="sxs-lookup"><span data-stu-id="29c26-275">1</span></span></td>
+<td><span data-ttu-id="29c26-276">(1 ÷ 2) × 1 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-276">(1 ÷ 2) × 1,000.00</span></span></td>
+<td><span data-ttu-id="29c26-277">500.00</span><span class="sxs-lookup"><span data-stu-id="29c26-277">500.00</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-278">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-278">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-279">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-279">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-280">(0 &gt; 0,00)</span><span class="sxs-lookup"><span data-stu-id="3c61d-280">(0 &gt; 0.00)</span></span></td>
-<td><span data-ttu-id="3c61d-281">0</span><span class="sxs-lookup"><span data-stu-id="3c61d-281">0</span></span></td>
-<td><span data-ttu-id="3c61d-282">(0 ÷ 2) × 1 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-282">(0 ÷ 2) × 1,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-283">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-283">0.00</span></span></td>
+<td><span data-ttu-id="29c26-278">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-278">CC003</span></span></td>
+<td><span data-ttu-id="29c26-279">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-279">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-280">(0 &gt; 0,00)</span><span class="sxs-lookup"><span data-stu-id="29c26-280">(0 &gt; 0.00)</span></span></td>
+<td><span data-ttu-id="29c26-281">0</span><span class="sxs-lookup"><span data-stu-id="29c26-281">0</span></span></td>
+<td><span data-ttu-id="29c26-282">(0 ÷ 2) × 1 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-282">(0 ÷ 2) × 1,000.00</span></span></td>
+<td><span data-ttu-id="29c26-283">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-283">0.00</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="journal"></a><span data-ttu-id="3c61d-284">Deník</span><span class="sxs-lookup"><span data-stu-id="3c61d-284">Journal</span></span>
+##### <a name="journal"></a><span data-ttu-id="29c26-284">Deník</span><span class="sxs-lookup"><span data-stu-id="29c26-284">Journal</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="3c61d-285">Deník</span><span class="sxs-lookup"><span data-stu-id="3c61d-285">Journal</span></span></th>
-<th><span data-ttu-id="3c61d-286">Typ deníku</span><span class="sxs-lookup"><span data-stu-id="3c61d-286">Journal type</span></span></th>
-<th colspan="3"><span data-ttu-id="3c61d-287">Fiskální kalendářní období</span><span class="sxs-lookup"><span data-stu-id="3c61d-287">Fiscal calendar period</span></span></th>
-<th><span data-ttu-id="3c61d-288">Verze</span><span class="sxs-lookup"><span data-stu-id="3c61d-288">Version</span></span></th>
+<th><span data-ttu-id="29c26-285">Deník</span><span class="sxs-lookup"><span data-stu-id="29c26-285">Journal</span></span></th>
+<th><span data-ttu-id="29c26-286">Typ deníku</span><span class="sxs-lookup"><span data-stu-id="29c26-286">Journal type</span></span></th>
+<th colspan="3"><span data-ttu-id="29c26-287">Fiskální kalendářní období</span><span class="sxs-lookup"><span data-stu-id="29c26-287">Fiscal calendar period</span></span></th>
+<th><span data-ttu-id="29c26-288">Verze</span><span class="sxs-lookup"><span data-stu-id="29c26-288">Version</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-289">00002</span><span class="sxs-lookup"><span data-stu-id="3c61d-289">00002</span></span></td>
-<td><span data-ttu-id="3c61d-290">Deník výpočtu distribuce nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-290">Cost distribution calculation journal</span></span></td>
-<td><span data-ttu-id="3c61d-291">Fiskální</span><span class="sxs-lookup"><span data-stu-id="3c61d-291">Fiscal</span></span></td>
-<td><span data-ttu-id="3c61d-292">2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-292">2017</span></span></td>
-<td><span data-ttu-id="3c61d-293">Období 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-293">Period 1</span></span></td>
-<td><span data-ttu-id="3c61d-294">Výpočet režijních nákladů / 01-02-2017 23:51:00: 00 / Hlavní kniha /2017 / Období 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-294">Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</span></span></td>
+<td><span data-ttu-id="29c26-289">00002</span><span class="sxs-lookup"><span data-stu-id="29c26-289">00002</span></span></td>
+<td><span data-ttu-id="29c26-290">Deník výpočtu distribuce nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-290">Cost distribution calculation journal</span></span></td>
+<td><span data-ttu-id="29c26-291">Fiskální</span><span class="sxs-lookup"><span data-stu-id="29c26-291">Fiscal</span></span></td>
+<td><span data-ttu-id="29c26-292">2017</span><span class="sxs-lookup"><span data-stu-id="29c26-292">2017</span></span></td>
+<td><span data-ttu-id="29c26-293">Období 1</span><span class="sxs-lookup"><span data-stu-id="29c26-293">Period 1</span></span></td>
+<td><span data-ttu-id="29c26-294">Výpočet režijních nákladů / 01-02-2017 23:51:00: 00 / Hlavní kniha /2017 / Období 1</span><span class="sxs-lookup"><span data-stu-id="29c26-294">Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a><span data-ttu-id="3c61d-295">Položky deníku (Položky deníku pro zůstatek objektu nákladů)</span><span class="sxs-lookup"><span data-stu-id="3c61d-295">Journal entries (Cost object balance journal entries)</span></span>
+##### <a name="journal-entries-cost-object-balance-journal-entries"></a><span data-ttu-id="29c26-295">Položky deníku (Položky deníku pro zůstatek objektu nákladů)</span><span class="sxs-lookup"><span data-stu-id="29c26-295">Journal entries (Cost object balance journal entries)</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="3c61d-296">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="3c61d-296">Accounting date</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-297">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-297">Cost object</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-298">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-298">Cost element</span></span></th>
-<th><span data-ttu-id="3c61d-299">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-299">Cost behavior</span></span></th>
-<th><span data-ttu-id="3c61d-300">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-300">Amount</span></span></th>
+<th><span data-ttu-id="29c26-296">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="29c26-296">Accounting date</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-297">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-297">Cost object</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-298">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-298">Cost element</span></span></th>
+<th><span data-ttu-id="29c26-299">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-299">Cost behavior</span></span></th>
+<th><span data-ttu-id="29c26-300">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-300">Amount</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-301">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-301">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-302">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-302">CC099</span></span></td>
-<td><span data-ttu-id="3c61d-303">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-303">Default cost center</span></span></td>
-<td><span data-ttu-id="3c61d-304">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-304">10001</span></span></td>
-<td><span data-ttu-id="3c61d-305">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-305">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-306">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-306">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-307">1 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-307">1,000.00</span></span></td>
+<td><span data-ttu-id="29c26-301">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-301">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-302">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-302">CC099</span></span></td>
+<td><span data-ttu-id="29c26-303">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-303">Default cost center</span></span></td>
+<td><span data-ttu-id="29c26-304">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-304">10001</span></span></td>
+<td><span data-ttu-id="29c26-305">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-305">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-306">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-306">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-307">1 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-307">1,000.00</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-308">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-308">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-309">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-309">CC099</span></span></td>
-<td><span data-ttu-id="3c61d-310">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-310">Default cost center</span></span></td>
-<td><span data-ttu-id="3c61d-311">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-311">10001</span></span></td>
-<td><span data-ttu-id="3c61d-312">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-312">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-313">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-313">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-314">9,000.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-314">9,000.00</span></span></td>
+<td><span data-ttu-id="29c26-308">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-308">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-309">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-309">CC099</span></span></td>
+<td><span data-ttu-id="29c26-310">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-310">Default cost center</span></span></td>
+<td><span data-ttu-id="29c26-311">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-311">10001</span></span></td>
+<td><span data-ttu-id="29c26-312">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-312">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-313">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-313">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-314">9,000.00</span><span class="sxs-lookup"><span data-stu-id="29c26-314">9,000.00</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a><span data-ttu-id="3c61d-315">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-315">Cost entries</span></span>
+##### <a name="cost-entries"></a><span data-ttu-id="29c26-315">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-315">Cost entries</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-316">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-316">Cost object</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-317">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-317">Cost element</span></span></th>
-<th><span data-ttu-id="3c61d-318">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-318">Cost behavior</span></span></th>
-<th><span data-ttu-id="3c61d-319">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-319">Amount</span></span></th>
-<th><span data-ttu-id="3c61d-320">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="3c61d-320">Accounting date</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-316">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-316">Cost object</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-317">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-317">Cost element</span></span></th>
+<th><span data-ttu-id="29c26-318">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-318">Cost behavior</span></span></th>
+<th><span data-ttu-id="29c26-319">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-319">Amount</span></span></th>
+<th><span data-ttu-id="29c26-320">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="29c26-320">Accounting date</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-321">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-321">CC099</span></span></td>
-<td><span data-ttu-id="3c61d-322">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-322">Default cost center</span></span></td>
-<td><span data-ttu-id="3c61d-323">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-323">10001</span></span></td>
-<td><span data-ttu-id="3c61d-324">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-324">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-325">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-325">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-326">-1 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-326">-1,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-327">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-327">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-321">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-321">CC099</span></span></td>
+<td><span data-ttu-id="29c26-322">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-322">Default cost center</span></span></td>
+<td><span data-ttu-id="29c26-323">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-323">10001</span></span></td>
+<td><span data-ttu-id="29c26-324">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-324">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-325">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-325">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-326">-1 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-326">-1,000.00</span></span></td>
+<td><span data-ttu-id="29c26-327">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-327">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-328">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-328">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-329">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-329">HR</span></span></td>
-<td><span data-ttu-id="3c61d-330">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-330">10001</span></span></td>
-<td><span data-ttu-id="3c61d-331">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-331">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-332">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-332">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-333">500.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-333">500.00</span></span></td>
-<td><span data-ttu-id="3c61d-334">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-334">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-328">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-328">CC001</span></span></td>
+<td><span data-ttu-id="29c26-329">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-329">HR</span></span></td>
+<td><span data-ttu-id="29c26-330">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-330">10001</span></span></td>
+<td><span data-ttu-id="29c26-331">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-331">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-332">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-332">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-333">500.00</span><span class="sxs-lookup"><span data-stu-id="29c26-333">500.00</span></span></td>
+<td><span data-ttu-id="29c26-334">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-334">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-335">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-335">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-336">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-336">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-337">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-337">10001</span></span></td>
-<td><span data-ttu-id="3c61d-338">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-338">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-339">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-339">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-340">500.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-340">500.00</span></span></td>
-<td><span data-ttu-id="3c61d-341">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-341">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-335">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-335">CC002</span></span></td>
+<td><span data-ttu-id="29c26-336">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-336">Finance</span></span></td>
+<td><span data-ttu-id="29c26-337">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-337">10001</span></span></td>
+<td><span data-ttu-id="29c26-338">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-338">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-339">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-339">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-340">500.00</span><span class="sxs-lookup"><span data-stu-id="29c26-340">500.00</span></span></td>
+<td><span data-ttu-id="29c26-341">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-341">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-342">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-342">CC099</span></span></td>
-<td><span data-ttu-id="3c61d-343">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="3c61d-343">Default cost center</span></span></td>
-<td><span data-ttu-id="3c61d-344">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-344">10001</span></span></td>
-<td><span data-ttu-id="3c61d-345">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-345">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-346">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-346">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-347">-9 000,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-347">-9,000.00</span></span></td>
-<td><span data-ttu-id="3c61d-348">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-348">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-342">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-342">CC099</span></span></td>
+<td><span data-ttu-id="29c26-343">Výchozí nákladové středisko</span><span class="sxs-lookup"><span data-stu-id="29c26-343">Default cost center</span></span></td>
+<td><span data-ttu-id="29c26-344">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-344">10001</span></span></td>
+<td><span data-ttu-id="29c26-345">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-345">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-346">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-346">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-347">-9 000,00</span><span class="sxs-lookup"><span data-stu-id="29c26-347">-9,000.00</span></span></td>
+<td><span data-ttu-id="29c26-348">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-348">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-349">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-349">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-350">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-350">HR</span></span></td>
-<td><span data-ttu-id="3c61d-351">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-351">10001</span></span></td>
-<td><span data-ttu-id="3c61d-352">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-352">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-353">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-353">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-354">1,285.71</span><span class="sxs-lookup"><span data-stu-id="3c61d-354">1,285.71</span></span></td>
-<td><span data-ttu-id="3c61d-355">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-355">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-349">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-349">CC001</span></span></td>
+<td><span data-ttu-id="29c26-350">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-350">HR</span></span></td>
+<td><span data-ttu-id="29c26-351">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-351">10001</span></span></td>
+<td><span data-ttu-id="29c26-352">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-352">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-353">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-353">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-354">1,285.71</span><span class="sxs-lookup"><span data-stu-id="29c26-354">1,285.71</span></span></td>
+<td><span data-ttu-id="29c26-355">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-355">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-356">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-356">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-357">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-357">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-358">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-358">10001</span></span></td>
-<td><span data-ttu-id="3c61d-359">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-359">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-360">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-360">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-361">7,714.29</span><span class="sxs-lookup"><span data-stu-id="3c61d-361">7,714.29</span></span></td>
-<td><span data-ttu-id="3c61d-362">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-362">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-356">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-356">CC002</span></span></td>
+<td><span data-ttu-id="29c26-357">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-357">Finance</span></span></td>
+<td><span data-ttu-id="29c26-358">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-358">10001</span></span></td>
+<td><span data-ttu-id="29c26-359">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-359">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-360">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-360">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-361">7,714.29</span><span class="sxs-lookup"><span data-stu-id="29c26-361">7,714.29</span></span></td>
+<td><span data-ttu-id="29c26-362">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-362">January 31, 2017</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-363">Více informací naleznete v tématu [Vytvoření a přiřazení zásad distribuce nákladů k jednotce řízení nákladů](tasks/create-assign-cost-distribution-policy-cost-control-unit.md)</span><span class="sxs-lookup"><span data-stu-id="3c61d-363">For more information, see [Create and assign a cost distribution policy to a cost control unit](tasks/create-assign-cost-distribution-policy-cost-control-unit.md).</span></span> 
+<span data-ttu-id="29c26-363">Více informací naleznete v tématu [Vytvoření a přiřazení zásad distribuce nákladů k jednotce řízení nákladů](tasks/create-assign-cost-distribution-policy-cost-control-unit.md)</span><span class="sxs-lookup"><span data-stu-id="29c26-363">For more information, see [Create and assign a cost distribution policy to a cost control unit](tasks/create-assign-cost-distribution-policy-cost-control-unit.md).</span></span> 
 
-### <a name="step-3-process-the-overhead-rate-calculation"></a><span data-ttu-id="3c61d-364">Krok 3: Zpracování výpočtu režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-364">Step 3: Process the overhead rate calculation</span></span>
+### <a name="step-3-process-the-overhead-rate-calculation"></a><span data-ttu-id="29c26-364">Krok 3: Zpracování výpočtu režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-364">Step 3: Process the overhead rate calculation</span></span>
 
-<span data-ttu-id="3c61d-365">Režijní náklady se používají k účtování jednoho nebo více konkrétních objektů nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-365">The overhead rate is used to charge one or more specific cost objects.</span></span> <span data-ttu-id="3c61d-366">Účtování je založeno na předem určené nákladové sazbě a množství z přiřazeného základu přidělení.</span><span class="sxs-lookup"><span data-stu-id="3c61d-366">The charge is based on a predetermined cost rate and the magnitude from the assigned allocation base.</span></span> 
+<span data-ttu-id="29c26-365">Režijní náklady se používají k účtování jednoho nebo více konkrétních objektů nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-365">The overhead rate is used to charge one or more specific cost objects.</span></span> <span data-ttu-id="29c26-366">Účtování je založeno na předem určené nákladové sazbě a množství z přiřazeného základu přidělení.</span><span class="sxs-lookup"><span data-stu-id="29c26-366">The charge is based on a predetermined cost rate and the magnitude from the assigned allocation base.</span></span> 
 
-#### <a name="define-the-overhead-rate"></a><span data-ttu-id="3c61d-367">Definice sazby režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-367">Define the overhead rate</span></span>
+#### <a name="define-the-overhead-rate"></a><span data-ttu-id="29c26-367">Definice sazby režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-367">Define the overhead rate</span></span>
 
-<span data-ttu-id="3c61d-368">Objekt nákladů CC001 HR přispívá k sadě interních projektů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-368">Cost object CC001 HR contributes to a set of internal projects.</span></span> <span data-ttu-id="3c61d-369">Vytvoří se člen statistické dimenzi s názvem projekty lidských zdrojů k měření spotřebovaného množství.</span><span class="sxs-lookup"><span data-stu-id="3c61d-369">A statistical dimension member that is named HR projects is created to measure the consumed magnitude.</span></span>
+<span data-ttu-id="29c26-368">Objekt nákladů CC001 HR přispívá k sadě interních projektů.</span><span class="sxs-lookup"><span data-stu-id="29c26-368">Cost object CC001 HR contributes to a set of internal projects.</span></span> <span data-ttu-id="29c26-369">Vytvoří se člen statistické dimenzi s názvem projekty lidských zdrojů k měření spotřebovaného množství.</span><span class="sxs-lookup"><span data-stu-id="29c26-369">A statistical dimension member that is named HR projects is created to measure the consumed magnitude.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-370">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-370">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-371">Pracovní doba</span><span class="sxs-lookup"><span data-stu-id="3c61d-371">Hours</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-370">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-370">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-371">Pracovní doba</span><span class="sxs-lookup"><span data-stu-id="29c26-371">Hours</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-372">Proj 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-372">Proj 1</span></span></td>
-<td><span data-ttu-id="3c61d-373">Projekt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-373">Project 1</span></span></td>
-<td><span data-ttu-id="3c61d-374">3</span><span class="sxs-lookup"><span data-stu-id="3c61d-374">3</span></span></td>
+<td><span data-ttu-id="29c26-372">Proj 1</span><span class="sxs-lookup"><span data-stu-id="29c26-372">Proj 1</span></span></td>
+<td><span data-ttu-id="29c26-373">Projekt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-373">Project 1</span></span></td>
+<td><span data-ttu-id="29c26-374">3</span><span class="sxs-lookup"><span data-stu-id="29c26-374">3</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-375">Proj 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-375">Proj 2</span></span></td>
-<td><span data-ttu-id="3c61d-376">Projekt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-376">Project 2</span></span></td>
-<td><span data-ttu-id="3c61d-377">1</span><span class="sxs-lookup"><span data-stu-id="3c61d-377">1</span></span></td>
+<td><span data-ttu-id="29c26-375">Proj 2</span><span class="sxs-lookup"><span data-stu-id="29c26-375">Proj 2</span></span></td>
+<td><span data-ttu-id="29c26-376">Projekt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-376">Project 2</span></span></td>
+<td><span data-ttu-id="29c26-377">1</span><span class="sxs-lookup"><span data-stu-id="29c26-377">1</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-378">Byla definována předem určená nákladová sazba pro příspěvky k nákladovým projektům.</span><span class="sxs-lookup"><span data-stu-id="3c61d-378">A predetermined cost rate for the cost projects contribution has been defined.</span></span>
+<span data-ttu-id="29c26-378">Byla definována předem určená nákladová sazba pro příspěvky k nákladovým projektům.</span><span class="sxs-lookup"><span data-stu-id="29c26-378">A predetermined cost rate for the cost projects contribution has been defined.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-379">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-379">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-380">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-380">Cost element</span></span></th>
-<th><span data-ttu-id="3c61d-381">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-381">Cost behavior</span></span></th>
-<th><span data-ttu-id="3c61d-382">Jednotky</span><span class="sxs-lookup"><span data-stu-id="3c61d-382">Units</span></span></th>
-<th><span data-ttu-id="3c61d-383">Kurz</span><span class="sxs-lookup"><span data-stu-id="3c61d-383">Rate</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-379">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-379">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-380">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-380">Cost element</span></span></th>
+<th><span data-ttu-id="29c26-381">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-381">Cost behavior</span></span></th>
+<th><span data-ttu-id="29c26-382">Jednotky</span><span class="sxs-lookup"><span data-stu-id="29c26-382">Units</span></span></th>
+<th><span data-ttu-id="29c26-383">Kurz</span><span class="sxs-lookup"><span data-stu-id="29c26-383">Rate</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-384">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-384">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-385">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-385">HR</span></span></td>
-<td><span data-ttu-id="3c61d-386">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-386">10001</span></span></td>
-<td><span data-ttu-id="3c61d-387">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-387">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-388">1</span><span class="sxs-lookup"><span data-stu-id="3c61d-388">1</span></span></td>
-<td><span data-ttu-id="3c61d-389">10</span><span class="sxs-lookup"><span data-stu-id="3c61d-389">10</span></span></td>
+<td><span data-ttu-id="29c26-384">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-384">CC001</span></span></td>
+<td><span data-ttu-id="29c26-385">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-385">HR</span></span></td>
+<td><span data-ttu-id="29c26-386">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-386">10001</span></span></td>
+<td><span data-ttu-id="29c26-387">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-387">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-388">1</span><span class="sxs-lookup"><span data-stu-id="29c26-388">1</span></span></td>
+<td><span data-ttu-id="29c26-389">10</span><span class="sxs-lookup"><span data-stu-id="29c26-389">10</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-390">Následující tabulka zobrazuje výsledek při použití projektů lidských zdrojů jako základu přidělení.</span><span class="sxs-lookup"><span data-stu-id="3c61d-390">The following table shows the result when the HR projects are applied as an allocation base.</span></span>
+<span data-ttu-id="29c26-390">Následující tabulka zobrazuje výsledek při použití projektů lidských zdrojů jako základu přidělení.</span><span class="sxs-lookup"><span data-stu-id="29c26-390">The following table shows the result when the HR projects are applied as an allocation base.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-391">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-391">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-392">Hodnota</span><span class="sxs-lookup"><span data-stu-id="3c61d-392">Magnitude</span></span></th>
-<th><span data-ttu-id="3c61d-393">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-393">Cost element</span></span></th>
-<th><span data-ttu-id="3c61d-394">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="3c61d-394">Allocation factor</span></span></th>
-<th><span data-ttu-id="3c61d-395">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-395">Amount</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-391">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-391">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-392">Hodnota</span><span class="sxs-lookup"><span data-stu-id="29c26-392">Magnitude</span></span></th>
+<th><span data-ttu-id="29c26-393">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-393">Cost element</span></span></th>
+<th><span data-ttu-id="29c26-394">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="29c26-394">Allocation factor</span></span></th>
+<th><span data-ttu-id="29c26-395">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-395">Amount</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-396">Proj 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-396">Proj 1</span></span></td>
-<td><span data-ttu-id="3c61d-397">Projekt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-397">Project 1</span></span></td>
-<td><span data-ttu-id="3c61d-398">3</span><span class="sxs-lookup"><span data-stu-id="3c61d-398">3</span></span></td>
-<td><span data-ttu-id="3c61d-399">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-399">10001</span></span></td>
-<td><span data-ttu-id="3c61d-400">(3 ÷ 1) × 10,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-400">(3 ÷ 1) × 10.00</span></span></td>
-<td><span data-ttu-id="3c61d-401">30.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-401">30.00</span></span></td>
+<td><span data-ttu-id="29c26-396">Proj 1</span><span class="sxs-lookup"><span data-stu-id="29c26-396">Proj 1</span></span></td>
+<td><span data-ttu-id="29c26-397">Projekt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-397">Project 1</span></span></td>
+<td><span data-ttu-id="29c26-398">3</span><span class="sxs-lookup"><span data-stu-id="29c26-398">3</span></span></td>
+<td><span data-ttu-id="29c26-399">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-399">10001</span></span></td>
+<td><span data-ttu-id="29c26-400">(3 ÷ 1) × 10,00</span><span class="sxs-lookup"><span data-stu-id="29c26-400">(3 ÷ 1) × 10.00</span></span></td>
+<td><span data-ttu-id="29c26-401">30.00</span><span class="sxs-lookup"><span data-stu-id="29c26-401">30.00</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-402">Proj 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-402">Proj 2</span></span></td>
-<td><span data-ttu-id="3c61d-403">Projekt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-403">Project 2</span></span></td>
-<td><span data-ttu-id="3c61d-404">1</span><span class="sxs-lookup"><span data-stu-id="3c61d-404">1</span></span></td>
-<td><span data-ttu-id="3c61d-405">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-405">10001</span></span></td>
-<td><span data-ttu-id="3c61d-406">(1 ÷ 1) × 10,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-406">(1 ÷ 1) × 10.00</span></span></td>
-<td><span data-ttu-id="3c61d-407">10,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-407">10.00</span></span></td>
+<td><span data-ttu-id="29c26-402">Proj 2</span><span class="sxs-lookup"><span data-stu-id="29c26-402">Proj 2</span></span></td>
+<td><span data-ttu-id="29c26-403">Projekt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-403">Project 2</span></span></td>
+<td><span data-ttu-id="29c26-404">1</span><span class="sxs-lookup"><span data-stu-id="29c26-404">1</span></span></td>
+<td><span data-ttu-id="29c26-405">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-405">10001</span></span></td>
+<td><span data-ttu-id="29c26-406">(1 ÷ 1) × 10,00</span><span class="sxs-lookup"><span data-stu-id="29c26-406">(1 ÷ 1) × 10.00</span></span></td>
+<td><span data-ttu-id="29c26-407">10,00</span><span class="sxs-lookup"><span data-stu-id="29c26-407">10.00</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="journal"></a><span data-ttu-id="3c61d-408">Deník</span><span class="sxs-lookup"><span data-stu-id="3c61d-408">Journal</span></span>
+##### <a name="journal"></a><span data-ttu-id="29c26-408">Deník</span><span class="sxs-lookup"><span data-stu-id="29c26-408">Journal</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="3c61d-409">Deník</span><span class="sxs-lookup"><span data-stu-id="3c61d-409">Journal</span></span></th>
-<th><span data-ttu-id="3c61d-410">Typ deníku</span><span class="sxs-lookup"><span data-stu-id="3c61d-410">Journal type</span></span></th>
-<th colspan="3"><span data-ttu-id="3c61d-411">Fiskální kalendářní období</span><span class="sxs-lookup"><span data-stu-id="3c61d-411">Fiscal calendar period</span></span></th>
-<th><span data-ttu-id="3c61d-412">Verze</span><span class="sxs-lookup"><span data-stu-id="3c61d-412">Version</span></span></th>
+<th><span data-ttu-id="29c26-409">Deník</span><span class="sxs-lookup"><span data-stu-id="29c26-409">Journal</span></span></th>
+<th><span data-ttu-id="29c26-410">Typ deníku</span><span class="sxs-lookup"><span data-stu-id="29c26-410">Journal type</span></span></th>
+<th colspan="3"><span data-ttu-id="29c26-411">Fiskální kalendářní období</span><span class="sxs-lookup"><span data-stu-id="29c26-411">Fiscal calendar period</span></span></th>
+<th><span data-ttu-id="29c26-412">Verze</span><span class="sxs-lookup"><span data-stu-id="29c26-412">Version</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-413">00003</span><span class="sxs-lookup"><span data-stu-id="3c61d-413">00003</span></span></td>
-<td><span data-ttu-id="3c61d-414">Deník výpočtu režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-414">Overhead rate calculation journal</span></span></td>
-<td><span data-ttu-id="3c61d-415">Fiskální</span><span class="sxs-lookup"><span data-stu-id="3c61d-415">Fiscal</span></span></td>
-<td><span data-ttu-id="3c61d-416">2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-416">2017</span></span></td>
-<td><span data-ttu-id="3c61d-417">Období 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-417">Period 1</span></span></td>
-<td><span data-ttu-id="3c61d-418">Výpočet režijních nákladů / 01-02-2017 23:51:00: 00 / Hlavní kniha /2017 / Období 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-418">Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</span></span></td>
+<td><span data-ttu-id="29c26-413">00003</span><span class="sxs-lookup"><span data-stu-id="29c26-413">00003</span></span></td>
+<td><span data-ttu-id="29c26-414">Deník výpočtu režijních nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-414">Overhead rate calculation journal</span></span></td>
+<td><span data-ttu-id="29c26-415">Fiskální</span><span class="sxs-lookup"><span data-stu-id="29c26-415">Fiscal</span></span></td>
+<td><span data-ttu-id="29c26-416">2017</span><span class="sxs-lookup"><span data-stu-id="29c26-416">2017</span></span></td>
+<td><span data-ttu-id="29c26-417">Období 1</span><span class="sxs-lookup"><span data-stu-id="29c26-417">Period 1</span></span></td>
+<td><span data-ttu-id="29c26-418">Výpočet režijních nákladů / 01-02-2017 23:51:00: 00 / Hlavní kniha /2017 / Období 1</span><span class="sxs-lookup"><span data-stu-id="29c26-418">Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="journal-entries-journal-entries-for-overhead-rate-calculation"></a><span data-ttu-id="3c61d-419">Položky deníku (položky deníku pro výpočet sazby režijních nákladů)</span><span class="sxs-lookup"><span data-stu-id="3c61d-419">Journal entries (Journal entries for overhead rate calculation)</span></span>
+##### <a name="journal-entries-journal-entries-for-overhead-rate-calculation"></a><span data-ttu-id="29c26-419">Položky deníku (položky deníku pro výpočet sazby režijních nákladů)</span><span class="sxs-lookup"><span data-stu-id="29c26-419">Journal entries (Journal entries for overhead rate calculation)</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="3c61d-420">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="3c61d-420">Accounting date</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-421">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-421">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-422">Hodnota</span><span class="sxs-lookup"><span data-stu-id="3c61d-422">Magnitude</span></span></th>
+<th><span data-ttu-id="29c26-420">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="29c26-420">Accounting date</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-421">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-421">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-422">Hodnota</span><span class="sxs-lookup"><span data-stu-id="29c26-422">Magnitude</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-423">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-423">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-424">Proj 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-424">Proj 1</span></span></td>
-<td><span data-ttu-id="3c61d-425">Interní projekt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-425">Internal Proj 1</span></span></td>
-<td><span data-ttu-id="3c61d-426">3,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-426">3.00</span></span></td>
+<td><span data-ttu-id="29c26-423">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-423">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-424">Proj 1</span><span class="sxs-lookup"><span data-stu-id="29c26-424">Proj 1</span></span></td>
+<td><span data-ttu-id="29c26-425">Interní projekt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-425">Internal Proj 1</span></span></td>
+<td><span data-ttu-id="29c26-426">3,00</span><span class="sxs-lookup"><span data-stu-id="29c26-426">3.00</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-427">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-427">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-428">Proj 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-428">Proj 2</span></span></td>
-<td><span data-ttu-id="3c61d-429">Interní projekt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-429">Internal Proj 2</span></span></td>
-<td><span data-ttu-id="3c61d-430">1.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-430">1.00</span></span></td>
+<td><span data-ttu-id="29c26-427">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-427">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-428">Proj 2</span><span class="sxs-lookup"><span data-stu-id="29c26-428">Proj 2</span></span></td>
+<td><span data-ttu-id="29c26-429">Interní projekt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-429">Internal Proj 2</span></span></td>
+<td><span data-ttu-id="29c26-430">1.00</span><span class="sxs-lookup"><span data-stu-id="29c26-430">1.00</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a><span data-ttu-id="3c61d-431">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-431">Cost entries</span></span>
+##### <a name="cost-entries"></a><span data-ttu-id="29c26-431">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-431">Cost entries</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-432">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-432">Cost object</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-433">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-433">Cost element</span></span></th>
-<th><span data-ttu-id="3c61d-434">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-434">Cost behavior</span></span></th>
-<th><span data-ttu-id="3c61d-435">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-435">Amount</span></span></th>
-<th><span data-ttu-id="3c61d-436">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="3c61d-436">Accounting date</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-432">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-432">Cost object</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-433">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-433">Cost element</span></span></th>
+<th><span data-ttu-id="29c26-434">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-434">Cost behavior</span></span></th>
+<th><span data-ttu-id="29c26-435">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-435">Amount</span></span></th>
+<th><span data-ttu-id="29c26-436">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="29c26-436">Accounting date</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-437">CC0001</span><span class="sxs-lookup"><span data-stu-id="3c61d-437">CC0001</span></span></td>
-<td><span data-ttu-id="3c61d-438">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-438">HR</span></span></td>
-<td><span data-ttu-id="3c61d-439">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-439">10001</span></span></td>
-<td><span data-ttu-id="3c61d-440">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-440">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-441">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-441">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-442">-30,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-442">-30.00</span></span></td>
-<td><span data-ttu-id="3c61d-443">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-443">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-437">CC0001</span><span class="sxs-lookup"><span data-stu-id="29c26-437">CC0001</span></span></td>
+<td><span data-ttu-id="29c26-438">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-438">HR</span></span></td>
+<td><span data-ttu-id="29c26-439">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-439">10001</span></span></td>
+<td><span data-ttu-id="29c26-440">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-440">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-441">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-441">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-442">-30,00</span><span class="sxs-lookup"><span data-stu-id="29c26-442">-30.00</span></span></td>
+<td><span data-ttu-id="29c26-443">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-443">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-444">Proj 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-444">Proj 1</span></span></td>
-<td><span data-ttu-id="3c61d-445">Interní projekt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-445">Internal Proj 1</span></span></td>
-<td><span data-ttu-id="3c61d-446">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-446">10001</span></span></td>
-<td><span data-ttu-id="3c61d-447">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-447">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-448">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-448">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-449">30.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-449">30.00</span></span></td>
-<td><span data-ttu-id="3c61d-450">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-450">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-444">Proj 1</span><span class="sxs-lookup"><span data-stu-id="29c26-444">Proj 1</span></span></td>
+<td><span data-ttu-id="29c26-445">Interní projekt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-445">Internal Proj 1</span></span></td>
+<td><span data-ttu-id="29c26-446">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-446">10001</span></span></td>
+<td><span data-ttu-id="29c26-447">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-447">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-448">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-448">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-449">30.00</span><span class="sxs-lookup"><span data-stu-id="29c26-449">30.00</span></span></td>
+<td><span data-ttu-id="29c26-450">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-450">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-451">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-451">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-452">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-452">HR</span></span></td>
-<td><span data-ttu-id="3c61d-453">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-453">10001</span></span></td>
-<td><span data-ttu-id="3c61d-454">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-454">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-455">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-455">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-456">-10,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-456">-10.00</span></span></td>
-<td><span data-ttu-id="3c61d-457">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-457">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-451">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-451">CC001</span></span></td>
+<td><span data-ttu-id="29c26-452">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-452">HR</span></span></td>
+<td><span data-ttu-id="29c26-453">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-453">10001</span></span></td>
+<td><span data-ttu-id="29c26-454">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-454">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-455">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-455">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-456">-10,00</span><span class="sxs-lookup"><span data-stu-id="29c26-456">-10.00</span></span></td>
+<td><span data-ttu-id="29c26-457">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-457">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-458">Proj 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-458">Proj 2</span></span></td>
-<td><span data-ttu-id="3c61d-459">Interní projekt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-459">Internal Proj 2</span></span></td>
-<td><span data-ttu-id="3c61d-460">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-460">10001</span></span></td>
-<td><span data-ttu-id="3c61d-461">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-461">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-462">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-462">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-463">10.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-463">10.00</span></span></td>
-<td><span data-ttu-id="3c61d-464">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-464">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-458">Proj 2</span><span class="sxs-lookup"><span data-stu-id="29c26-458">Proj 2</span></span></td>
+<td><span data-ttu-id="29c26-459">Interní projekt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-459">Internal Proj 2</span></span></td>
+<td><span data-ttu-id="29c26-460">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-460">10001</span></span></td>
+<td><span data-ttu-id="29c26-461">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-461">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-462">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-462">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-463">10.00</span><span class="sxs-lookup"><span data-stu-id="29c26-463">10.00</span></span></td>
+<td><span data-ttu-id="29c26-464">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-464">January 31, 2017</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-465">Další informace naleznete v tématu [Provedení výpočtu režijních nákladů](cost-rollup.md#perform-overhead-calculation).</span><span class="sxs-lookup"><span data-stu-id="3c61d-465">For more information, see [Perform overhead calculation](cost-rollup.md#perform-overhead-calculation).</span></span>
+<span data-ttu-id="29c26-465">Další informace naleznete v tématu [Provedení výpočtu režijních nákladů](cost-rollup.md#perform-overhead-calculation).</span><span class="sxs-lookup"><span data-stu-id="29c26-465">For more information, see [Perform overhead calculation](cost-rollup.md#perform-overhead-calculation).</span></span>
 
-### <a name="step-4-process-the-cost-allocation-calculation"></a><span data-ttu-id="3c61d-466">Krok 4: Zpracování výpočtu přidělení nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-466">Step 4: Process the cost allocation calculation</span></span>
+### <a name="step-4-process-the-cost-allocation-calculation"></a><span data-ttu-id="29c26-466">Krok 4: Zpracování výpočtu přidělení nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-466">Step 4: Process the cost allocation calculation</span></span>
 
-<span data-ttu-id="3c61d-467">Přidělení se používá k přidělení zůstatku objektu nákladů do jiných objektů nákladů použitím základu přidělení.</span><span class="sxs-lookup"><span data-stu-id="3c61d-467">Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base.</span></span> <span data-ttu-id="3c61d-468">Aplikace Finance and Operations podporuje reciproční metodu přidělování.</span><span class="sxs-lookup"><span data-stu-id="3c61d-468">Finance and Operations supports the reciprocal allocation method.</span></span> <span data-ttu-id="3c61d-469">V metodě vzájemného přidělení jsou plně rozpoznány vzájemné služby, které si vyměňují pomocné objekty nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-469">In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized.</span></span> <span data-ttu-id="3c61d-470">Systém automaticky určí provádění přidělení ve správném pořadí.</span><span class="sxs-lookup"><span data-stu-id="3c61d-470">The system automatically determines the correct order to perform the allocations in.</span></span> <span data-ttu-id="3c61d-471">Zůstatek objektu nákladů je přidělen jedním základem přidělení.</span><span class="sxs-lookup"><span data-stu-id="3c61d-471">The balance of a cost object is allocated by a single allocation base.</span></span> <span data-ttu-id="3c61d-472">Je podporováno přidělování napříč dimenzemi objektů nákladů a jejich příslušných členů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-472">Allocations across cost objects dimensions and their respective members are supported.</span></span> <span data-ttu-id="3c61d-473">Pořadí přidělení je řízeno jednotkou řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-473">The allocation order is controlled by the cost control unit.</span></span> 
+<span data-ttu-id="29c26-467">Přidělení se používá k přidělení zůstatku objektu nákladů do jiných objektů nákladů použitím základu přidělení.</span><span class="sxs-lookup"><span data-stu-id="29c26-467">Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base.</span></span> <span data-ttu-id="29c26-468">Aplikace Finance and Operations podporuje reciproční metodu přidělování.</span><span class="sxs-lookup"><span data-stu-id="29c26-468">Finance and Operations supports the reciprocal allocation method.</span></span> <span data-ttu-id="29c26-469">V metodě vzájemného přidělení jsou plně rozpoznány vzájemné služby, které si vyměňují pomocné objekty nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-469">In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized.</span></span> <span data-ttu-id="29c26-470">Systém automaticky určí provádění přidělení ve správném pořadí.</span><span class="sxs-lookup"><span data-stu-id="29c26-470">The system automatically determines the correct order to perform the allocations in.</span></span> <span data-ttu-id="29c26-471">Zůstatek objektu nákladů je přidělen jedním základem přidělení.</span><span class="sxs-lookup"><span data-stu-id="29c26-471">The balance of a cost object is allocated by a single allocation base.</span></span> <span data-ttu-id="29c26-472">Je podporováno přidělování napříč dimenzemi objektů nákladů a jejich příslušných členů.</span><span class="sxs-lookup"><span data-stu-id="29c26-472">Allocations across cost objects dimensions and their respective members are supported.</span></span> <span data-ttu-id="29c26-473">Pořadí přidělení je řízeno jednotkou řízení nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-473">The allocation order is controlled by the cost control unit.</span></span> 
 
-<span data-ttu-id="3c61d-474">[![Reciproční metoda](./media/reciprocal-method.png)](./media/reciprocal-method.png)</span><span class="sxs-lookup"><span data-stu-id="3c61d-474">[![Reciprocal method](./media/reciprocal-method.png)](./media/reciprocal-method.png)</span></span>
+<span data-ttu-id="29c26-474">[![Reciproční metoda](./media/reciprocal-method.png)](./media/reciprocal-method.png)</span><span class="sxs-lookup"><span data-stu-id="29c26-474">[![Reciprocal method](./media/reciprocal-method.png)](./media/reciprocal-method.png)</span></span>
 
-#### <a name="define-the-cost-allocation"></a><span data-ttu-id="3c61d-475">Definice přidělení nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-475">Define the cost allocation</span></span>
+#### <a name="define-the-cost-allocation"></a><span data-ttu-id="29c26-475">Definice přidělení nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-475">Define the cost allocation</span></span>
 
-<span data-ttu-id="3c61d-476">Toto je jednoduchý příklad, který vysvětluje, jakým způsobem lze sledovat tok nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-476">Here is a simple example that explains how you can trace the flow of cost.</span></span> <span data-ttu-id="3c61d-477">Objekt nákladů objektu CC001 HR přispívá k několika objektům nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-477">Cost object CC001 HR contributes to several cost objects.</span></span> <span data-ttu-id="3c61d-478">Vytvoří se člen statistické dimenzi s názvem služby lidských zdrojů k měření spotřebovaného množství.</span><span class="sxs-lookup"><span data-stu-id="3c61d-478">A statistical dimension member that is named HR services is created to measure the consumed magnitude.</span></span>
+<span data-ttu-id="29c26-476">Toto je jednoduchý příklad, který vysvětluje, jakým způsobem lze sledovat tok nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-476">Here is a simple example that explains how you can trace the flow of cost.</span></span> <span data-ttu-id="29c26-477">Objekt nákladů objektu CC001 HR přispívá k několika objektům nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-477">Cost object CC001 HR contributes to several cost objects.</span></span> <span data-ttu-id="29c26-478">Vytvoří se člen statistické dimenzi s názvem služby lidských zdrojů k měření spotřebovaného množství.</span><span class="sxs-lookup"><span data-stu-id="29c26-478">A statistical dimension member that is named HR services is created to measure the consumed magnitude.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-479">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-479">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-480">Služby HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-480">HR services</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-479">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-479">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-480">Služby HR</span><span class="sxs-lookup"><span data-stu-id="29c26-480">HR services</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-481">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-481">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-482">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-482">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-483">35</span><span class="sxs-lookup"><span data-stu-id="3c61d-483">35</span></span></td>
+<td><span data-ttu-id="29c26-481">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-481">CC002</span></span></td>
+<td><span data-ttu-id="29c26-482">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-482">Finance</span></span></td>
+<td><span data-ttu-id="29c26-483">35</span><span class="sxs-lookup"><span data-stu-id="29c26-483">35</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-484">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-484">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-485">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-485">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-486">55</span><span class="sxs-lookup"><span data-stu-id="3c61d-486">55</span></span></td>
+<td><span data-ttu-id="29c26-484">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-484">CC003</span></span></td>
+<td><span data-ttu-id="29c26-485">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-485">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-486">55</span><span class="sxs-lookup"><span data-stu-id="29c26-486">55</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-487">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-487">CC004</span></span></td>
-<td><span data-ttu-id="3c61d-488">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-488">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-489">10</span><span class="sxs-lookup"><span data-stu-id="3c61d-489">10</span></span></td>
+<td><span data-ttu-id="29c26-487">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-487">CC004</span></span></td>
+<td><span data-ttu-id="29c26-488">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-488">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-489">10</span><span class="sxs-lookup"><span data-stu-id="29c26-489">10</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-490">Objekt nákladů objektu CC002 Finance přispívá k několika objektům nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-490">Cost object CC002 Finance contributes to several cost objects.</span></span> <span data-ttu-id="3c61d-491">Vytvoří se člen statistické dimenzi s názvem Finanční služby k měření spotřebovaného množství.</span><span class="sxs-lookup"><span data-stu-id="3c61d-491">A statistical dimension member that is named Finance services is created to measure the consumed magnitude.</span></span>
+<span data-ttu-id="29c26-490">Objekt nákladů objektu CC002 Finance přispívá k několika objektům nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-490">Cost object CC002 Finance contributes to several cost objects.</span></span> <span data-ttu-id="29c26-491">Vytvoří se člen statistické dimenzi s názvem Finanční služby k měření spotřebovaného množství.</span><span class="sxs-lookup"><span data-stu-id="29c26-491">A statistical dimension member that is named Finance services is created to measure the consumed magnitude.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-492">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-492">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-493">Finanční služby</span><span class="sxs-lookup"><span data-stu-id="3c61d-493">Finance services</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-492">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-492">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-493">Finanční služby</span><span class="sxs-lookup"><span data-stu-id="29c26-493">Finance services</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-494">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-494">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-495">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-495">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-496">65</span><span class="sxs-lookup"><span data-stu-id="3c61d-496">65</span></span></td>
+<td><span data-ttu-id="29c26-494">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-494">CC003</span></span></td>
+<td><span data-ttu-id="29c26-495">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-495">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-496">65</span><span class="sxs-lookup"><span data-stu-id="29c26-496">65</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-497">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-497">CC004</span></span></td>
-<td><span data-ttu-id="3c61d-498">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-498">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-499">35</span><span class="sxs-lookup"><span data-stu-id="3c61d-499">35</span></span></td>
+<td><span data-ttu-id="29c26-497">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-497">CC004</span></span></td>
+<td><span data-ttu-id="29c26-498">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-498">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-499">35</span><span class="sxs-lookup"><span data-stu-id="29c26-499">35</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-500">Objekt nákladů objektu CC003 Sestavení přispívá k několika objektům nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-500">Cost object CC003 Assembly contributes to several cost objects.</span></span> <span data-ttu-id="3c61d-501">Vytvoří se člen statistické dimenzi s názvem Služby sestavení zdrojů k měření spotřebovaného množství.</span><span class="sxs-lookup"><span data-stu-id="3c61d-501">A statistical dimension member that is named Assembly services is created to measure the consumed magnitude.</span></span>
+<span data-ttu-id="29c26-500">Objekt nákladů objektu CC003 Sestavení přispívá k několika objektům nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-500">Cost object CC003 Assembly contributes to several cost objects.</span></span> <span data-ttu-id="29c26-501">Vytvoří se člen statistické dimenzi s názvem Služby sestavení zdrojů k měření spotřebovaného množství.</span><span class="sxs-lookup"><span data-stu-id="29c26-501">A statistical dimension member that is named Assembly services is created to measure the consumed magnitude.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-502">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-502">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-503">Služby sestavení (v hodinách)</span><span class="sxs-lookup"><span data-stu-id="3c61d-503">Assembly services (hours)</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-502">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-502">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-503">Služby sestavení (v hodinách)</span><span class="sxs-lookup"><span data-stu-id="29c26-503">Assembly services (hours)</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-504">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-504">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-505">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-505">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-506">60</span><span class="sxs-lookup"><span data-stu-id="3c61d-506">60</span></span></td>
+<td><span data-ttu-id="29c26-504">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-504">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-505">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-505">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-506">60</span><span class="sxs-lookup"><span data-stu-id="29c26-506">60</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-507">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-507">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-508">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-508">Product 2</span></span></td>
-<td><span data-ttu-id="3c61d-509">20</span><span class="sxs-lookup"><span data-stu-id="3c61d-509">20</span></span></td>
+<td><span data-ttu-id="29c26-507">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-507">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-508">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-508">Product 2</span></span></td>
+<td><span data-ttu-id="29c26-509">20</span><span class="sxs-lookup"><span data-stu-id="29c26-509">20</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-510">Objekt nákladů objektu CC004 Balení přispívá k několika objektům nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-510">Cost object CC004 Packaging contributes to several cost objects.</span></span> <span data-ttu-id="3c61d-511">Vytvoří se člen statistické dimenzi s názvem Služby balení k měření spotřebovaného množství.</span><span class="sxs-lookup"><span data-stu-id="3c61d-511">A statistical dimension member that is named Packaging services is created to measure the consumed magnitude.</span></span>
+<span data-ttu-id="29c26-510">Objekt nákladů objektu CC004 Balení přispívá k několika objektům nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-510">Cost object CC004 Packaging contributes to several cost objects.</span></span> <span data-ttu-id="29c26-511">Vytvoří se člen statistické dimenzi s názvem Služby balení k měření spotřebovaného množství.</span><span class="sxs-lookup"><span data-stu-id="29c26-511">A statistical dimension member that is named Packaging services is created to measure the consumed magnitude.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-512">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-512">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-513">Služby balení (v hodinách)</span><span class="sxs-lookup"><span data-stu-id="3c61d-513">Packaging services (hours)</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-512">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-512">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-513">Služby balení (v hodinách)</span><span class="sxs-lookup"><span data-stu-id="29c26-513">Packaging services (hours)</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-514">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-514">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-515">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-515">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-516">80</span><span class="sxs-lookup"><span data-stu-id="3c61d-516">80</span></span></td>
+<td><span data-ttu-id="29c26-514">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-514">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-515">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-515">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-516">80</span><span class="sxs-lookup"><span data-stu-id="29c26-516">80</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-517">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-517">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-518">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-518">Product 2</span></span></td>
-<td><span data-ttu-id="3c61d-519">září</span><span class="sxs-lookup"><span data-stu-id="3c61d-519">15</span></span></td>
+<td><span data-ttu-id="29c26-517">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-517">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-518">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-518">Product 2</span></span></td>
+<td><span data-ttu-id="29c26-519">září</span><span class="sxs-lookup"><span data-stu-id="29c26-519">15</span></span></td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> <span data-ttu-id="3c61d-520">V aplikaci Finance and Operations lze odvodit statistická měření, jako je například výrobní doba spotřebovaná produktem, z datového zdroje.</span><span class="sxs-lookup"><span data-stu-id="3c61d-520">In Finance and Operations, statistical measures such as the production hours that a product consumes can be derived from source data.</span></span> <span data-ttu-id="3c61d-521">Více informací naleznete v části [Šablona poskytovatele statistického měření](statistical-measure-provider-template.md#statistical-measure-provider-template).</span><span class="sxs-lookup"><span data-stu-id="3c61d-521">For more information, see [Statistical measure provider template](statistical-measure-provider-template.md#statistical-measure-provider-template).</span></span> <span data-ttu-id="3c61d-522">V následující tabulce je uveden výsledek při použití služeb HR jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).</span><span class="sxs-lookup"><span data-stu-id="3c61d-522">The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).</span></span>
+> <span data-ttu-id="29c26-520">V aplikaci Finance and Operations lze odvodit statistická měření, jako je například výrobní doba spotřebovaná produktem, z datového zdroje.</span><span class="sxs-lookup"><span data-stu-id="29c26-520">In Finance and Operations, statistical measures such as the production hours that a product consumes can be derived from source data.</span></span> <span data-ttu-id="29c26-521">Více informací naleznete v části [Šablona poskytovatele statistického měření](statistical-measure-provider-template.md#statistical-measure-provider-template).</span><span class="sxs-lookup"><span data-stu-id="29c26-521">For more information, see [Statistical measure provider template](statistical-measure-provider-template.md#statistical-measure-provider-template).</span></span> <span data-ttu-id="29c26-522">V následující tabulce je uveden výsledek při použití služeb HR jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).</span><span class="sxs-lookup"><span data-stu-id="29c26-522">The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-523">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-523">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-524">Hodnota</span><span class="sxs-lookup"><span data-stu-id="3c61d-524">Magnitude</span></span></th>
-<th><span data-ttu-id="3c61d-525">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="3c61d-525">Allocation factor</span></span></th>
-<th><span data-ttu-id="3c61d-526">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-526">Amount</span></span></th>
-<th><span data-ttu-id="3c61d-527">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-527">Cost behavior</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-523">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-523">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-524">Hodnota</span><span class="sxs-lookup"><span data-stu-id="29c26-524">Magnitude</span></span></th>
+<th><span data-ttu-id="29c26-525">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="29c26-525">Allocation factor</span></span></th>
+<th><span data-ttu-id="29c26-526">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-526">Amount</span></span></th>
+<th><span data-ttu-id="29c26-527">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-527">Cost behavior</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-528">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-528">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-529">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-529">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-530">35</span><span class="sxs-lookup"><span data-stu-id="3c61d-530">35</span></span></td>
-<td><span data-ttu-id="3c61d-531">(35 ÷ 100) × 500,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-531">(35 ÷ 100) × 500.00</span></span></td>
-<td><span data-ttu-id="3c61d-532">175.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-532">175.00</span></span></td>
-<td><span data-ttu-id="3c61d-533">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-533">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-528">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-528">CC002</span></span></td>
+<td><span data-ttu-id="29c26-529">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-529">Finance</span></span></td>
+<td><span data-ttu-id="29c26-530">35</span><span class="sxs-lookup"><span data-stu-id="29c26-530">35</span></span></td>
+<td><span data-ttu-id="29c26-531">(35 ÷ 100) × 500,00</span><span class="sxs-lookup"><span data-stu-id="29c26-531">(35 ÷ 100) × 500.00</span></span></td>
+<td><span data-ttu-id="29c26-532">175.00</span><span class="sxs-lookup"><span data-stu-id="29c26-532">175.00</span></span></td>
+<td><span data-ttu-id="29c26-533">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-533">Fixed cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-534">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-534">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-535">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-535">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-536">55</span><span class="sxs-lookup"><span data-stu-id="3c61d-536">55</span></span></td>
-<td><span data-ttu-id="3c61d-537">(55 ÷ 100) × 500,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-537">(55 ÷ 100) × 500.00</span></span></td>
-<td><span data-ttu-id="3c61d-538">275.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-538">275.00</span></span></td>
-<td><span data-ttu-id="3c61d-539">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-539">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-534">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-534">CC003</span></span></td>
+<td><span data-ttu-id="29c26-535">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-535">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-536">55</span><span class="sxs-lookup"><span data-stu-id="29c26-536">55</span></span></td>
+<td><span data-ttu-id="29c26-537">(55 ÷ 100) × 500,00</span><span class="sxs-lookup"><span data-stu-id="29c26-537">(55 ÷ 100) × 500.00</span></span></td>
+<td><span data-ttu-id="29c26-538">275.00</span><span class="sxs-lookup"><span data-stu-id="29c26-538">275.00</span></span></td>
+<td><span data-ttu-id="29c26-539">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-539">Fixed cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-540">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-540">CC004</span></span></td>
-<td><span data-ttu-id="3c61d-541">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-541">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-542">10</span><span class="sxs-lookup"><span data-stu-id="3c61d-542">10</span></span></td>
-<td><span data-ttu-id="3c61d-543">(10 ÷ 100) × 500,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-543">(10 ÷ 100) × 500.00</span></span></td>
-<td><span data-ttu-id="3c61d-544">50,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-544">50.00</span></span></td>
-<td><span data-ttu-id="3c61d-545">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-545">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-540">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-540">CC004</span></span></td>
+<td><span data-ttu-id="29c26-541">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-541">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-542">10</span><span class="sxs-lookup"><span data-stu-id="29c26-542">10</span></span></td>
+<td><span data-ttu-id="29c26-543">(10 ÷ 100) × 500,00</span><span class="sxs-lookup"><span data-stu-id="29c26-543">(10 ÷ 100) × 500.00</span></span></td>
+<td><span data-ttu-id="29c26-544">50,00</span><span class="sxs-lookup"><span data-stu-id="29c26-544">50.00</span></span></td>
+<td><span data-ttu-id="29c26-545">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-545">Fixed cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-546">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-546">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-547">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-547">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-548">35</span><span class="sxs-lookup"><span data-stu-id="3c61d-548">35</span></span></td>
-<td><span data-ttu-id="3c61d-549">(35 ÷ 100) × 1 245,71</span><span class="sxs-lookup"><span data-stu-id="3c61d-549">(35 ÷ 100) × 1,245.71</span></span></td>
-<td><span data-ttu-id="3c61d-550">436.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-550">436.00</span></span></td>
-<td><span data-ttu-id="3c61d-551">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-551">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-546">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-546">CC002</span></span></td>
+<td><span data-ttu-id="29c26-547">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-547">Finance</span></span></td>
+<td><span data-ttu-id="29c26-548">35</span><span class="sxs-lookup"><span data-stu-id="29c26-548">35</span></span></td>
+<td><span data-ttu-id="29c26-549">(35 ÷ 100) × 1 245,71</span><span class="sxs-lookup"><span data-stu-id="29c26-549">(35 ÷ 100) × 1,245.71</span></span></td>
+<td><span data-ttu-id="29c26-550">436.00</span><span class="sxs-lookup"><span data-stu-id="29c26-550">436.00</span></span></td>
+<td><span data-ttu-id="29c26-551">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-551">Variable cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-552">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-552">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-553">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-553">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-554">55</span><span class="sxs-lookup"><span data-stu-id="3c61d-554">55</span></span></td>
-<td><span data-ttu-id="3c61d-555">(55 ÷ 100) × 1 245,71</span><span class="sxs-lookup"><span data-stu-id="3c61d-555">(55 ÷ 100) × 1,245.71</span></span></td>
-<td><span data-ttu-id="3c61d-556">685.14</span><span class="sxs-lookup"><span data-stu-id="3c61d-556">685.14</span></span></td>
-<td><span data-ttu-id="3c61d-557">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-557">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-552">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-552">CC003</span></span></td>
+<td><span data-ttu-id="29c26-553">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-553">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-554">55</span><span class="sxs-lookup"><span data-stu-id="29c26-554">55</span></span></td>
+<td><span data-ttu-id="29c26-555">(55 ÷ 100) × 1 245,71</span><span class="sxs-lookup"><span data-stu-id="29c26-555">(55 ÷ 100) × 1,245.71</span></span></td>
+<td><span data-ttu-id="29c26-556">685.14</span><span class="sxs-lookup"><span data-stu-id="29c26-556">685.14</span></span></td>
+<td><span data-ttu-id="29c26-557">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-557">Variable cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-558">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-558">CC004</span></span></td>
-<td><span data-ttu-id="3c61d-559">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-559">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-560">10</span><span class="sxs-lookup"><span data-stu-id="3c61d-560">10</span></span></td>
-<td><span data-ttu-id="3c61d-561">(10 ÷ 100) × 1 245,71</span><span class="sxs-lookup"><span data-stu-id="3c61d-561">(10 ÷ 100) × 1,245.71</span></span></td>
-<td><span data-ttu-id="3c61d-562">124.57</span><span class="sxs-lookup"><span data-stu-id="3c61d-562">124.57</span></span></td>
-<td><span data-ttu-id="3c61d-563">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-563">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-558">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-558">CC004</span></span></td>
+<td><span data-ttu-id="29c26-559">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-559">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-560">10</span><span class="sxs-lookup"><span data-stu-id="29c26-560">10</span></span></td>
+<td><span data-ttu-id="29c26-561">(10 ÷ 100) × 1 245,71</span><span class="sxs-lookup"><span data-stu-id="29c26-561">(10 ÷ 100) × 1,245.71</span></span></td>
+<td><span data-ttu-id="29c26-562">124.57</span><span class="sxs-lookup"><span data-stu-id="29c26-562">124.57</span></span></td>
+<td><span data-ttu-id="29c26-563">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-563">Variable cost</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-564">V následující tabulce je uveden výsledek při použití Finančních služeb Finance jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).</span><span class="sxs-lookup"><span data-stu-id="3c61d-564">The following table shows the result when the Finance services are applied as an allocation base for total cost (fixed cost and variable cost).</span></span>
+<span data-ttu-id="29c26-564">V následující tabulce je uveden výsledek při použití Finančních služeb Finance jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).</span><span class="sxs-lookup"><span data-stu-id="29c26-564">The following table shows the result when the Finance services are applied as an allocation base for total cost (fixed cost and variable cost).</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-565">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-565">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-566">Hodnota</span><span class="sxs-lookup"><span data-stu-id="3c61d-566">Magnitude</span></span></th>
-<th><span data-ttu-id="3c61d-567">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="3c61d-567">Allocation factor</span></span></th>
-<th><span data-ttu-id="3c61d-568">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-568">Amount</span></span></th>
-<th><span data-ttu-id="3c61d-569">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-569">Cost behavior</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-565">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-565">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-566">Hodnota</span><span class="sxs-lookup"><span data-stu-id="29c26-566">Magnitude</span></span></th>
+<th><span data-ttu-id="29c26-567">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="29c26-567">Allocation factor</span></span></th>
+<th><span data-ttu-id="29c26-568">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-568">Amount</span></span></th>
+<th><span data-ttu-id="29c26-569">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-569">Cost behavior</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-570">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-570">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-571">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-571">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-572">65</span><span class="sxs-lookup"><span data-stu-id="3c61d-572">65</span></span></td>
-<td><span data-ttu-id="3c61d-573">(65 ÷ 100) × (500,00 + 175,00)</span><span class="sxs-lookup"><span data-stu-id="3c61d-573">(65 ÷ 100) × (500.00 + 175.00)</span></span></td>
-<td><span data-ttu-id="3c61d-574">438.75</span><span class="sxs-lookup"><span data-stu-id="3c61d-574">438.75</span></span></td>
-<td><span data-ttu-id="3c61d-575">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-575">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-570">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-570">CC003</span></span></td>
+<td><span data-ttu-id="29c26-571">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-571">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-572">65</span><span class="sxs-lookup"><span data-stu-id="29c26-572">65</span></span></td>
+<td><span data-ttu-id="29c26-573">(65 ÷ 100) × (500,00 + 175,00)</span><span class="sxs-lookup"><span data-stu-id="29c26-573">(65 ÷ 100) × (500.00 + 175.00)</span></span></td>
+<td><span data-ttu-id="29c26-574">438.75</span><span class="sxs-lookup"><span data-stu-id="29c26-574">438.75</span></span></td>
+<td><span data-ttu-id="29c26-575">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-575">Fixed cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-576">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-576">CC004</span></span></td>
-<td><span data-ttu-id="3c61d-577">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-577">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-578">35</span><span class="sxs-lookup"><span data-stu-id="3c61d-578">35</span></span></td>
-<td><span data-ttu-id="3c61d-579">(35 ÷ 100) × (500,00 + 175,00)</span><span class="sxs-lookup"><span data-stu-id="3c61d-579">(35 ÷ 100) × (500.00 + 175.00)</span></span></td>
-<td><span data-ttu-id="3c61d-580">236.25</span><span class="sxs-lookup"><span data-stu-id="3c61d-580">236.25</span></span></td>
-<td><span data-ttu-id="3c61d-581">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-581">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-576">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-576">CC004</span></span></td>
+<td><span data-ttu-id="29c26-577">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-577">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-578">35</span><span class="sxs-lookup"><span data-stu-id="29c26-578">35</span></span></td>
+<td><span data-ttu-id="29c26-579">(35 ÷ 100) × (500,00 + 175,00)</span><span class="sxs-lookup"><span data-stu-id="29c26-579">(35 ÷ 100) × (500.00 + 175.00)</span></span></td>
+<td><span data-ttu-id="29c26-580">236.25</span><span class="sxs-lookup"><span data-stu-id="29c26-580">236.25</span></span></td>
+<td><span data-ttu-id="29c26-581">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-581">Fixed cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-582">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-582">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-583">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-583">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-584">65</span><span class="sxs-lookup"><span data-stu-id="3c61d-584">65</span></span></td>
-<td><span data-ttu-id="3c61d-585">(65 ÷ 100) × (7 714,29 + 436,00)</span><span class="sxs-lookup"><span data-stu-id="3c61d-585">(65 ÷ 100) × (7,714.29 + 436.00)</span></span></td>
-<td><span data-ttu-id="3c61d-586">5,297.69</span><span class="sxs-lookup"><span data-stu-id="3c61d-586">5,297.69</span></span></td>
-<td><span data-ttu-id="3c61d-587">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-587">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-582">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-582">CC003</span></span></td>
+<td><span data-ttu-id="29c26-583">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-583">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-584">65</span><span class="sxs-lookup"><span data-stu-id="29c26-584">65</span></span></td>
+<td><span data-ttu-id="29c26-585">(65 ÷ 100) × (7 714,29 + 436,00)</span><span class="sxs-lookup"><span data-stu-id="29c26-585">(65 ÷ 100) × (7,714.29 + 436.00)</span></span></td>
+<td><span data-ttu-id="29c26-586">5,297.69</span><span class="sxs-lookup"><span data-stu-id="29c26-586">5,297.69</span></span></td>
+<td><span data-ttu-id="29c26-587">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-587">Variable cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-588">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-588">CC004</span></span></td>
-<td><span data-ttu-id="3c61d-589">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-589">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-590">35</span><span class="sxs-lookup"><span data-stu-id="3c61d-590">35</span></span></td>
-<td><span data-ttu-id="3c61d-591">(35 ÷ 100) × (7 714,29 + 436,00)</span><span class="sxs-lookup"><span data-stu-id="3c61d-591">(35 ÷ 100) × (7,714.29 + 436.00)</span></span></td>
-<td><span data-ttu-id="3c61d-592">2,852.60</span><span class="sxs-lookup"><span data-stu-id="3c61d-592">2,852.60</span></span></td>
-<td><span data-ttu-id="3c61d-593">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-593">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-588">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-588">CC004</span></span></td>
+<td><span data-ttu-id="29c26-589">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-589">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-590">35</span><span class="sxs-lookup"><span data-stu-id="29c26-590">35</span></span></td>
+<td><span data-ttu-id="29c26-591">(35 ÷ 100) × (7 714,29 + 436,00)</span><span class="sxs-lookup"><span data-stu-id="29c26-591">(35 ÷ 100) × (7,714.29 + 436.00)</span></span></td>
+<td><span data-ttu-id="29c26-592">2,852.60</span><span class="sxs-lookup"><span data-stu-id="29c26-592">2,852.60</span></span></td>
+<td><span data-ttu-id="29c26-593">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-593">Variable cost</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-594">V následující tabulce je uveden výsledek při použití Služeb sestavení jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).</span><span class="sxs-lookup"><span data-stu-id="3c61d-594">The following table shows the result when the Assembly services are applied as an allocation base for total cost (fixed cost and variable cost).</span></span>
+<span data-ttu-id="29c26-594">V následující tabulce je uveden výsledek při použití Služeb sestavení jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).</span><span class="sxs-lookup"><span data-stu-id="29c26-594">The following table shows the result when the Assembly services are applied as an allocation base for total cost (fixed cost and variable cost).</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-595">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-595">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-596">Hodnota</span><span class="sxs-lookup"><span data-stu-id="3c61d-596">Magnitude</span></span></th>
-<th><span data-ttu-id="3c61d-597">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="3c61d-597">Allocation factor</span></span></th>
-<th><span data-ttu-id="3c61d-598">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-598">Amount</span></span></th>
-<th><span data-ttu-id="3c61d-599">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-599">Cost behavior</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-595">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-595">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-596">Hodnota</span><span class="sxs-lookup"><span data-stu-id="29c26-596">Magnitude</span></span></th>
+<th><span data-ttu-id="29c26-597">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="29c26-597">Allocation factor</span></span></th>
+<th><span data-ttu-id="29c26-598">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-598">Amount</span></span></th>
+<th><span data-ttu-id="29c26-599">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-599">Cost behavior</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-600">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-600">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-601">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-601">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-602">60</span><span class="sxs-lookup"><span data-stu-id="3c61d-602">60</span></span></td>
-<td><span data-ttu-id="3c61d-603">(60 ÷ 80) × (275,00 + 438,75)</span><span class="sxs-lookup"><span data-stu-id="3c61d-603">(60 ÷ 80) × (275.00 + 438.75)</span></span></td>
-<td><span data-ttu-id="3c61d-604">535.31</span><span class="sxs-lookup"><span data-stu-id="3c61d-604">535.31</span></span></td>
-<td><span data-ttu-id="3c61d-605">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-605">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-600">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-600">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-601">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-601">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-602">60</span><span class="sxs-lookup"><span data-stu-id="29c26-602">60</span></span></td>
+<td><span data-ttu-id="29c26-603">(60 ÷ 80) × (275,00 + 438,75)</span><span class="sxs-lookup"><span data-stu-id="29c26-603">(60 ÷ 80) × (275.00 + 438.75)</span></span></td>
+<td><span data-ttu-id="29c26-604">535.31</span><span class="sxs-lookup"><span data-stu-id="29c26-604">535.31</span></span></td>
+<td><span data-ttu-id="29c26-605">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-605">Fixed cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-606">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-606">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-607">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-607">Product 2</span></span></td>
-<td><span data-ttu-id="3c61d-608">20</span><span class="sxs-lookup"><span data-stu-id="3c61d-608">20</span></span></td>
-<td><span data-ttu-id="3c61d-609">(20 ÷ 80) × (275,00 + 438,75)</span><span class="sxs-lookup"><span data-stu-id="3c61d-609">(20 ÷ 80) × (275.00 + 438.75)</span></span></td>
-<td><span data-ttu-id="3c61d-610">178.44</span><span class="sxs-lookup"><span data-stu-id="3c61d-610">178.44</span></span></td>
-<td><span data-ttu-id="3c61d-611">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-611">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-606">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-606">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-607">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-607">Product 2</span></span></td>
+<td><span data-ttu-id="29c26-608">20</span><span class="sxs-lookup"><span data-stu-id="29c26-608">20</span></span></td>
+<td><span data-ttu-id="29c26-609">(20 ÷ 80) × (275,00 + 438,75)</span><span class="sxs-lookup"><span data-stu-id="29c26-609">(20 ÷ 80) × (275.00 + 438.75)</span></span></td>
+<td><span data-ttu-id="29c26-610">178.44</span><span class="sxs-lookup"><span data-stu-id="29c26-610">178.44</span></span></td>
+<td><span data-ttu-id="29c26-611">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-611">Fixed cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-612">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-612">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-613">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-613">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-614">60</span><span class="sxs-lookup"><span data-stu-id="3c61d-614">60</span></span></td>
-<td><span data-ttu-id="3c61d-615">(60 ÷ 80) × (5 297,69 + 685,14)</span><span class="sxs-lookup"><span data-stu-id="3c61d-615">(60 ÷ 80) × (5,297.69 + 685.14)</span></span></td>
-<td><span data-ttu-id="3c61d-616">4,487.12</span><span class="sxs-lookup"><span data-stu-id="3c61d-616">4,487.12</span></span></td>
-<td><span data-ttu-id="3c61d-617">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-617">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-612">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-612">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-613">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-613">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-614">60</span><span class="sxs-lookup"><span data-stu-id="29c26-614">60</span></span></td>
+<td><span data-ttu-id="29c26-615">(60 ÷ 80) × (5 297,69 + 685,14)</span><span class="sxs-lookup"><span data-stu-id="29c26-615">(60 ÷ 80) × (5,297.69 + 685.14)</span></span></td>
+<td><span data-ttu-id="29c26-616">4,487.12</span><span class="sxs-lookup"><span data-stu-id="29c26-616">4,487.12</span></span></td>
+<td><span data-ttu-id="29c26-617">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-617">Variable cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-618">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-618">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-619">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-619">Product 2</span></span></td>
-<td><span data-ttu-id="3c61d-620">20</span><span class="sxs-lookup"><span data-stu-id="3c61d-620">20</span></span></td>
-<td><span data-ttu-id="3c61d-621">(20 ÷ 80) × (5 297,69 + 685,14)</span><span class="sxs-lookup"><span data-stu-id="3c61d-621">(20 ÷ 80) × (5,297.69 + 685.14)</span></span></td>
-<td><span data-ttu-id="3c61d-622">1,495.71</span><span class="sxs-lookup"><span data-stu-id="3c61d-622">1,495.71</span></span></td>
-<td><span data-ttu-id="3c61d-623">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-623">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-618">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-618">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-619">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-619">Product 2</span></span></td>
+<td><span data-ttu-id="29c26-620">20</span><span class="sxs-lookup"><span data-stu-id="29c26-620">20</span></span></td>
+<td><span data-ttu-id="29c26-621">(20 ÷ 80) × (5 297,69 + 685,14)</span><span class="sxs-lookup"><span data-stu-id="29c26-621">(20 ÷ 80) × (5,297.69 + 685.14)</span></span></td>
+<td><span data-ttu-id="29c26-622">1,495.71</span><span class="sxs-lookup"><span data-stu-id="29c26-622">1,495.71</span></span></td>
+<td><span data-ttu-id="29c26-623">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-623">Variable cost</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="3c61d-624">V následující tabulce je uveden výsledek při použití Služeb balení jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).</span><span class="sxs-lookup"><span data-stu-id="3c61d-624">The following table shows the result when the Packaging services are applied as an allocation base for total cost (fixed cost and variable cost).</span></span>
+<span data-ttu-id="29c26-624">V následující tabulce je uveden výsledek při použití Služeb balení jako základu přidělení pro celkové náklady (pevné náklady a variabilní náklady).</span><span class="sxs-lookup"><span data-stu-id="29c26-624">The following table shows the result when the Packaging services are applied as an allocation base for total cost (fixed cost and variable cost).</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-625">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-625">Cost object</span></span></th>
-<th><span data-ttu-id="3c61d-626">Hodnota</span><span class="sxs-lookup"><span data-stu-id="3c61d-626">Magnitude</span></span></th>
-<th><span data-ttu-id="3c61d-627">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="3c61d-627">Allocation factor</span></span></th>
-<th><span data-ttu-id="3c61d-628">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-628">Amount</span></span></th>
-<th><span data-ttu-id="3c61d-629">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-629">Cost behavior</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-625">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-625">Cost object</span></span></th>
+<th><span data-ttu-id="29c26-626">Hodnota</span><span class="sxs-lookup"><span data-stu-id="29c26-626">Magnitude</span></span></th>
+<th><span data-ttu-id="29c26-627">Koeficient přidělení</span><span class="sxs-lookup"><span data-stu-id="29c26-627">Allocation factor</span></span></th>
+<th><span data-ttu-id="29c26-628">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-628">Amount</span></span></th>
+<th><span data-ttu-id="29c26-629">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-629">Cost behavior</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-630">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-630">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-631">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-631">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-632">80</span><span class="sxs-lookup"><span data-stu-id="3c61d-632">80</span></span></td>
-<td><span data-ttu-id="3c61d-633">(80 ÷ 95) × (50,00 + 236,25)</span><span class="sxs-lookup"><span data-stu-id="3c61d-633">(80 ÷ 95) × (50.00 + 236.25)</span></span></td>
-<td><span data-ttu-id="3c61d-634">241.05</span><span class="sxs-lookup"><span data-stu-id="3c61d-634">241.05</span></span></td>
-<td><span data-ttu-id="3c61d-635">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-635">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-630">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-630">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-631">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-631">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-632">80</span><span class="sxs-lookup"><span data-stu-id="29c26-632">80</span></span></td>
+<td><span data-ttu-id="29c26-633">(80 ÷ 95) × (50,00 + 236,25)</span><span class="sxs-lookup"><span data-stu-id="29c26-633">(80 ÷ 95) × (50.00 + 236.25)</span></span></td>
+<td><span data-ttu-id="29c26-634">241.05</span><span class="sxs-lookup"><span data-stu-id="29c26-634">241.05</span></span></td>
+<td><span data-ttu-id="29c26-635">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-635">Fixed cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-636">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-636">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-637">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-637">Product 2</span></span></td>
-<td><span data-ttu-id="3c61d-638">15</span><span class="sxs-lookup"><span data-stu-id="3c61d-638">15</span></span></td>
-<td><span data-ttu-id="3c61d-639">(15 ÷ 95) × (50,00 + 236,25)</span><span class="sxs-lookup"><span data-stu-id="3c61d-639">(15 ÷ 95) × (50.00 + 236.25)</span></span></td>
-<td><span data-ttu-id="3c61d-640">45.20</span><span class="sxs-lookup"><span data-stu-id="3c61d-640">45.20</span></span></td>
-<td><span data-ttu-id="3c61d-641">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-641">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-636">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-636">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-637">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-637">Product 2</span></span></td>
+<td><span data-ttu-id="29c26-638">15</span><span class="sxs-lookup"><span data-stu-id="29c26-638">15</span></span></td>
+<td><span data-ttu-id="29c26-639">(15 ÷ 95) × (50,00 + 236,25)</span><span class="sxs-lookup"><span data-stu-id="29c26-639">(15 ÷ 95) × (50.00 + 236.25)</span></span></td>
+<td><span data-ttu-id="29c26-640">45.20</span><span class="sxs-lookup"><span data-stu-id="29c26-640">45.20</span></span></td>
+<td><span data-ttu-id="29c26-641">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-641">Fixed cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-642">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-642">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-643">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-643">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-644">80</span><span class="sxs-lookup"><span data-stu-id="3c61d-644">80</span></span></td>
-<td><span data-ttu-id="3c61d-645">(80 ÷ 95) × (2 852,60 + 124,57)</span><span class="sxs-lookup"><span data-stu-id="3c61d-645">(80 ÷ 95) × (2,852.60 + 124.57)</span></span></td>
-<td><span data-ttu-id="3c61d-646">2,507.09</span><span class="sxs-lookup"><span data-stu-id="3c61d-646">2,507.09</span></span></td>
-<td><span data-ttu-id="3c61d-647">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-647">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-642">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-642">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-643">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-643">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-644">80</span><span class="sxs-lookup"><span data-stu-id="29c26-644">80</span></span></td>
+<td><span data-ttu-id="29c26-645">(80 ÷ 95) × (2 852,60 + 124,57)</span><span class="sxs-lookup"><span data-stu-id="29c26-645">(80 ÷ 95) × (2,852.60 + 124.57)</span></span></td>
+<td><span data-ttu-id="29c26-646">2,507.09</span><span class="sxs-lookup"><span data-stu-id="29c26-646">2,507.09</span></span></td>
+<td><span data-ttu-id="29c26-647">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-647">Variable cost</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-648">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-648">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-649">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-649">Product 2</span></span></td>
-<td><span data-ttu-id="3c61d-650">15</span><span class="sxs-lookup"><span data-stu-id="3c61d-650">15</span></span></td>
-<td><span data-ttu-id="3c61d-651">(15 ÷ 95) × (2 852,60 + 124,57)</span><span class="sxs-lookup"><span data-stu-id="3c61d-651">(15 ÷ 95) × (2,852.60 + 124.57)</span></span></td>
-<td><span data-ttu-id="3c61d-652">470.08</span><span class="sxs-lookup"><span data-stu-id="3c61d-652">470.08</span></span></td>
-<td><span data-ttu-id="3c61d-653">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-653">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-648">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-648">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-649">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-649">Product 2</span></span></td>
+<td><span data-ttu-id="29c26-650">15</span><span class="sxs-lookup"><span data-stu-id="29c26-650">15</span></span></td>
+<td><span data-ttu-id="29c26-651">(15 ÷ 95) × (2 852,60 + 124,57)</span><span class="sxs-lookup"><span data-stu-id="29c26-651">(15 ÷ 95) × (2,852.60 + 124.57)</span></span></td>
+<td><span data-ttu-id="29c26-652">470.08</span><span class="sxs-lookup"><span data-stu-id="29c26-652">470.08</span></span></td>
+<td><span data-ttu-id="29c26-653">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-653">Variable cost</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a><span data-ttu-id="3c61d-654">Položky deníku (položky deníku pro zůstatek objektu nákladů)</span><span class="sxs-lookup"><span data-stu-id="3c61d-654">Journal entries (cost object balance journal entries)</span></span>
+##### <a name="journal-entries-cost-object-balance-journal-entries"></a><span data-ttu-id="29c26-654">Položky deníku (položky deníku pro zůstatek objektu nákladů)</span><span class="sxs-lookup"><span data-stu-id="29c26-654">Journal entries (cost object balance journal entries)</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="3c61d-655">Deník</span><span class="sxs-lookup"><span data-stu-id="3c61d-655">Journal</span></span></th>
-<th><span data-ttu-id="3c61d-656">Typ deníku</span><span class="sxs-lookup"><span data-stu-id="3c61d-656">Journal type</span></span></th>
-<th colspan="3"><span data-ttu-id="3c61d-657">Fiskální kalendářní období</span><span class="sxs-lookup"><span data-stu-id="3c61d-657">Fiscal calendar period</span></span></th>
-<th><span data-ttu-id="3c61d-658">Verze</span><span class="sxs-lookup"><span data-stu-id="3c61d-658">Version</span></span></th>
+<th><span data-ttu-id="29c26-655">Deník</span><span class="sxs-lookup"><span data-stu-id="29c26-655">Journal</span></span></th>
+<th><span data-ttu-id="29c26-656">Typ deníku</span><span class="sxs-lookup"><span data-stu-id="29c26-656">Journal type</span></span></th>
+<th colspan="3"><span data-ttu-id="29c26-657">Fiskální kalendářní období</span><span class="sxs-lookup"><span data-stu-id="29c26-657">Fiscal calendar period</span></span></th>
+<th><span data-ttu-id="29c26-658">Verze</span><span class="sxs-lookup"><span data-stu-id="29c26-658">Version</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-659">00004</span><span class="sxs-lookup"><span data-stu-id="3c61d-659">00004</span></span></td>
-<td><span data-ttu-id="3c61d-660">Deník přidělení nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-660">Cost allocation journal</span></span></td>
-<td><span data-ttu-id="3c61d-661">Fiskální</span><span class="sxs-lookup"><span data-stu-id="3c61d-661">Fiscal</span></span></td>
-<td><span data-ttu-id="3c61d-662">2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-662">2017</span></span></td>
-<td><span data-ttu-id="3c61d-663">Období 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-663">Period 1</span></span></td>
-<td><span data-ttu-id="3c61d-664">Výpočet režijních nákladů / 01-02-2017 23:51:00: 00 / Hlavní kniha /2017 / Období 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-664">Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</span></span></td>
+<td><span data-ttu-id="29c26-659">00004</span><span class="sxs-lookup"><span data-stu-id="29c26-659">00004</span></span></td>
+<td><span data-ttu-id="29c26-660">Deník přidělení nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-660">Cost allocation journal</span></span></td>
+<td><span data-ttu-id="29c26-661">Fiskální</span><span class="sxs-lookup"><span data-stu-id="29c26-661">Fiscal</span></span></td>
+<td><span data-ttu-id="29c26-662">2017</span><span class="sxs-lookup"><span data-stu-id="29c26-662">2017</span></span></td>
+<td><span data-ttu-id="29c26-663">Období 1</span><span class="sxs-lookup"><span data-stu-id="29c26-663">Period 1</span></span></td>
+<td><span data-ttu-id="29c26-664">Výpočet režijních nákladů / 01-02-2017 23:51:00: 00 / Hlavní kniha /2017 / Období 1</span><span class="sxs-lookup"><span data-stu-id="29c26-664">Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="journal-lines"></a><span data-ttu-id="3c61d-665">Řádky deníku</span><span class="sxs-lookup"><span data-stu-id="3c61d-665">Journal lines</span></span>
+##### <a name="journal-lines"></a><span data-ttu-id="29c26-665">Řádky deníku</span><span class="sxs-lookup"><span data-stu-id="29c26-665">Journal lines</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="3c61d-666">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="3c61d-666">Accounting date</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-667">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-667">Cost object</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-668">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-668">Cost element</span></span></th>
-<th><span data-ttu-id="3c61d-669">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-669">Cost behavior</span></span></th>
-<th><span data-ttu-id="3c61d-670">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-670">Amount</span></span></th>
+<th><span data-ttu-id="29c26-666">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="29c26-666">Accounting date</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-667">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-667">Cost object</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-668">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-668">Cost element</span></span></th>
+<th><span data-ttu-id="29c26-669">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-669">Cost behavior</span></span></th>
+<th><span data-ttu-id="29c26-670">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-670">Amount</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-671">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-671">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-672">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-672">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-673">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-673">HR</span></span></td>
-<td><span data-ttu-id="3c61d-674">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-674">10001</span></span></td>
-<td><span data-ttu-id="3c61d-675">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-675">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-676">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-676">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-677">500.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-677">500.00</span></span></td>
+<td><span data-ttu-id="29c26-671">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-671">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-672">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-672">CC001</span></span></td>
+<td><span data-ttu-id="29c26-673">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-673">HR</span></span></td>
+<td><span data-ttu-id="29c26-674">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-674">10001</span></span></td>
+<td><span data-ttu-id="29c26-675">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-675">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-676">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-676">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-677">500.00</span><span class="sxs-lookup"><span data-stu-id="29c26-677">500.00</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-678">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-678">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-679">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-679">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-680">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-680">HR</span></span></td>
-<td><span data-ttu-id="3c61d-681">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-681">10001</span></span></td>
-<td><span data-ttu-id="3c61d-682">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-682">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-683">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-683">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-684">1,245.71</span><span class="sxs-lookup"><span data-stu-id="3c61d-684">1,245.71</span></span></td>
+<td><span data-ttu-id="29c26-678">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-678">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-679">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-679">CC001</span></span></td>
+<td><span data-ttu-id="29c26-680">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-680">HR</span></span></td>
+<td><span data-ttu-id="29c26-681">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-681">10001</span></span></td>
+<td><span data-ttu-id="29c26-682">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-682">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-683">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-683">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-684">1,245.71</span><span class="sxs-lookup"><span data-stu-id="29c26-684">1,245.71</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-685">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-685">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-686">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-686">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-687">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-687">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-688">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-688">10001</span></span></td>
-<td><span data-ttu-id="3c61d-689">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-689">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-690">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-690">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-691">675.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-691">675.00</span></span></td>
+<td><span data-ttu-id="29c26-685">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-685">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-686">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-686">CC002</span></span></td>
+<td><span data-ttu-id="29c26-687">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-687">Finance</span></span></td>
+<td><span data-ttu-id="29c26-688">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-688">10001</span></span></td>
+<td><span data-ttu-id="29c26-689">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-689">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-690">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-690">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-691">675.00</span><span class="sxs-lookup"><span data-stu-id="29c26-691">675.00</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-692">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-692">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-693">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-693">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-694">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-694">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-695">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-695">10001</span></span></td>
-<td><span data-ttu-id="3c61d-696">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-696">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-697">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-697">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-698">8,150.29</span><span class="sxs-lookup"><span data-stu-id="3c61d-698">8,150.29</span></span></td>
+<td><span data-ttu-id="29c26-692">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-692">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-693">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-693">CC002</span></span></td>
+<td><span data-ttu-id="29c26-694">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-694">Finance</span></span></td>
+<td><span data-ttu-id="29c26-695">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-695">10001</span></span></td>
+<td><span data-ttu-id="29c26-696">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-696">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-697">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-697">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-698">8,150.29</span><span class="sxs-lookup"><span data-stu-id="29c26-698">8,150.29</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-699">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-699">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-700">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-700">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-701">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-701">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-702">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-702">10001</span></span></td>
-<td><span data-ttu-id="3c61d-703">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-703">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-704">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-704">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-705">713.75</span><span class="sxs-lookup"><span data-stu-id="3c61d-705">713.75</span></span></td>
+<td><span data-ttu-id="29c26-699">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-699">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-700">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-700">CC003</span></span></td>
+<td><span data-ttu-id="29c26-701">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-701">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-702">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-702">10001</span></span></td>
+<td><span data-ttu-id="29c26-703">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-703">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-704">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-704">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-705">713.75</span><span class="sxs-lookup"><span data-stu-id="29c26-705">713.75</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-706">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-706">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-707">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-707">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-708">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-708">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-709">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-709">10001</span></span></td>
-<td><span data-ttu-id="3c61d-710">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-710">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-711">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-711">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-712">5,982.83</span><span class="sxs-lookup"><span data-stu-id="3c61d-712">5,982.83</span></span></td>
+<td><span data-ttu-id="29c26-706">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-706">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-707">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-707">CC003</span></span></td>
+<td><span data-ttu-id="29c26-708">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-708">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-709">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-709">10001</span></span></td>
+<td><span data-ttu-id="29c26-710">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-710">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-711">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-711">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-712">5,982.83</span><span class="sxs-lookup"><span data-stu-id="29c26-712">5,982.83</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-713">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-713">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-714">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-714">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-715">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-715">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-716">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-716">10001</span></span></td>
-<td><span data-ttu-id="3c61d-717">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-717">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-718">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-718">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-719">286.25</span><span class="sxs-lookup"><span data-stu-id="3c61d-719">286.25</span></span></td>
+<td><span data-ttu-id="29c26-713">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-713">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-714">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-714">CC003</span></span></td>
+<td><span data-ttu-id="29c26-715">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-715">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-716">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-716">10001</span></span></td>
+<td><span data-ttu-id="29c26-717">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-717">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-718">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-718">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-719">286.25</span><span class="sxs-lookup"><span data-stu-id="29c26-719">286.25</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-720">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-720">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-721">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-721">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-722">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-722">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-723">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-723">10001</span></span></td>
-<td><span data-ttu-id="3c61d-724">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-724">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-725">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-725">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-726">2,977.17</span><span class="sxs-lookup"><span data-stu-id="3c61d-726">2,977.17</span></span></td>
+<td><span data-ttu-id="29c26-720">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-720">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-721">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-721">CC003</span></span></td>
+<td><span data-ttu-id="29c26-722">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-722">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-723">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-723">10001</span></span></td>
+<td><span data-ttu-id="29c26-724">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-724">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-725">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-725">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-726">2,977.17</span><span class="sxs-lookup"><span data-stu-id="29c26-726">2,977.17</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-727">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-727">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-728">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-728">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-729">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-729">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-730">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-730">10001</span></span></td>
-<td><span data-ttu-id="3c61d-731">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-731">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-732">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-732">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-733">776.36</span><span class="sxs-lookup"><span data-stu-id="3c61d-733">776.36</span></span></td>
+<td><span data-ttu-id="29c26-727">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-727">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-728">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-728">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-729">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-729">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-730">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-730">10001</span></span></td>
+<td><span data-ttu-id="29c26-731">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-731">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-732">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-732">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-733">776.36</span><span class="sxs-lookup"><span data-stu-id="29c26-733">776.36</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-734">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-734">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-735">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-735">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-736">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-736">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-737">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-737">10001</span></span></td>
-<td><span data-ttu-id="3c61d-738">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-738">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-739">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-739">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-740">6,994.21</span><span class="sxs-lookup"><span data-stu-id="3c61d-740">6,994.21</span></span></td>
+<td><span data-ttu-id="29c26-734">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-734">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-735">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-735">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-736">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-736">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-737">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-737">10001</span></span></td>
+<td><span data-ttu-id="29c26-738">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-738">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-739">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-739">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-740">6,994.21</span><span class="sxs-lookup"><span data-stu-id="29c26-740">6,994.21</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-741">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-741">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-742">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-742">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-743">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-743">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-744">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-744">10001</span></span></td>
-<td><span data-ttu-id="3c61d-745">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-745">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-746">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-746">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-747">223.64</span><span class="sxs-lookup"><span data-stu-id="3c61d-747">223.64</span></span></td>
+<td><span data-ttu-id="29c26-741">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-741">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-742">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-742">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-743">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-743">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-744">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-744">10001</span></span></td>
+<td><span data-ttu-id="29c26-745">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-745">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-746">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-746">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-747">223.64</span><span class="sxs-lookup"><span data-stu-id="29c26-747">223.64</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-748">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-748">January 31, 2017</span></span></td>
-<td><span data-ttu-id="3c61d-749">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-749">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-750">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-750">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-751">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-751">10001</span></span></td>
-<td><span data-ttu-id="3c61d-752">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-752">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-753">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-753">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-754">1,965.79</span><span class="sxs-lookup"><span data-stu-id="3c61d-754">1,965.79</span></span></td>
+<td><span data-ttu-id="29c26-748">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-748">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-749">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-749">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-750">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-750">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-751">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-751">10001</span></span></td>
+<td><span data-ttu-id="29c26-752">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-752">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-753">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-753">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-754">1,965.79</span><span class="sxs-lookup"><span data-stu-id="29c26-754">1,965.79</span></span></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a><span data-ttu-id="3c61d-755">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-755">Cost entries</span></span>
+##### <a name="cost-entries"></a><span data-ttu-id="29c26-755">Položky nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-755">Cost entries</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2"><span data-ttu-id="3c61d-756">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-756">Cost object</span></span></th>
-<th colspan="2"><span data-ttu-id="3c61d-757">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-757">Cost element</span></span></th>
-<th><span data-ttu-id="3c61d-758">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-758">Cost behavior</span></span></th>
-<th><span data-ttu-id="3c61d-759">Částka</span><span class="sxs-lookup"><span data-stu-id="3c61d-759">Amount</span></span></th>
-<th><span data-ttu-id="3c61d-760">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="3c61d-760">Accounting date</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-756">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-756">Cost object</span></span></th>
+<th colspan="2"><span data-ttu-id="29c26-757">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-757">Cost element</span></span></th>
+<th><span data-ttu-id="29c26-758">Chování nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-758">Cost behavior</span></span></th>
+<th><span data-ttu-id="29c26-759">Částka</span><span class="sxs-lookup"><span data-stu-id="29c26-759">Amount</span></span></th>
+<th><span data-ttu-id="29c26-760">Datum účtování</span><span class="sxs-lookup"><span data-stu-id="29c26-760">Accounting date</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="3c61d-761">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-761">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-762">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-762">HR</span></span></td>
-<td><span data-ttu-id="3c61d-763">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-763">10001</span></span></td>
-<td><span data-ttu-id="3c61d-764">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-764">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-765">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-765">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-766">-500,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-766">-500.00</span></span></td>
-<td><span data-ttu-id="3c61d-767">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-767">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-761">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-761">CC001</span></span></td>
+<td><span data-ttu-id="29c26-762">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-762">HR</span></span></td>
+<td><span data-ttu-id="29c26-763">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-763">10001</span></span></td>
+<td><span data-ttu-id="29c26-764">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-764">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-765">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-765">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-766">-500,00</span><span class="sxs-lookup"><span data-stu-id="29c26-766">-500.00</span></span></td>
+<td><span data-ttu-id="29c26-767">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-767">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-768">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-768">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-769">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-769">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-770">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-770">10001</span></span></td>
-<td><span data-ttu-id="3c61d-771">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-771">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-772">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-772">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-773">175.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-773">175.00</span></span></td>
-<td><span data-ttu-id="3c61d-774">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-774">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-768">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-768">CC002</span></span></td>
+<td><span data-ttu-id="29c26-769">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-769">Finance</span></span></td>
+<td><span data-ttu-id="29c26-770">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-770">10001</span></span></td>
+<td><span data-ttu-id="29c26-771">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-771">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-772">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-772">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-773">175.00</span><span class="sxs-lookup"><span data-stu-id="29c26-773">175.00</span></span></td>
+<td><span data-ttu-id="29c26-774">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-774">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-775">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-775">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-776">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-776">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-777">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-777">10001</span></span></td>
-<td><span data-ttu-id="3c61d-778">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-778">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-779">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-779">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-780">275.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-780">275.00</span></span></td>
-<td><span data-ttu-id="3c61d-781">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-781">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-775">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-775">CC003</span></span></td>
+<td><span data-ttu-id="29c26-776">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-776">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-777">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-777">10001</span></span></td>
+<td><span data-ttu-id="29c26-778">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-778">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-779">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-779">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-780">275.00</span><span class="sxs-lookup"><span data-stu-id="29c26-780">275.00</span></span></td>
+<td><span data-ttu-id="29c26-781">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-781">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-782">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-782">CC004</span></span></td>
-<td><span data-ttu-id="3c61d-783">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-783">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-784">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-784">10001</span></span></td>
-<td><span data-ttu-id="3c61d-785">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-785">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-786">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-786">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-787">50,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-787">50,00</span></span></td>
-<td><span data-ttu-id="3c61d-788">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-788">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-782">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-782">CC004</span></span></td>
+<td><span data-ttu-id="29c26-783">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-783">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-784">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-784">10001</span></span></td>
+<td><span data-ttu-id="29c26-785">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-785">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-786">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-786">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-787">50,00</span><span class="sxs-lookup"><span data-stu-id="29c26-787">50,00</span></span></td>
+<td><span data-ttu-id="29c26-788">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-788">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-789">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-789">CC001</span></span></td>
-<td><span data-ttu-id="3c61d-790">HR</span><span class="sxs-lookup"><span data-stu-id="3c61d-790">HR</span></span></td>
-<td><span data-ttu-id="3c61d-791">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-791">10001</span></span></td>
-<td><span data-ttu-id="3c61d-792">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-792">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-793">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-793">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-794">-1 245,71</span><span class="sxs-lookup"><span data-stu-id="3c61d-794">-1,245.71</span></span></td>
-<td><span data-ttu-id="3c61d-795">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-795">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-789">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-789">CC001</span></span></td>
+<td><span data-ttu-id="29c26-790">HR</span><span class="sxs-lookup"><span data-stu-id="29c26-790">HR</span></span></td>
+<td><span data-ttu-id="29c26-791">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-791">10001</span></span></td>
+<td><span data-ttu-id="29c26-792">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-792">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-793">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-793">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-794">-1 245,71</span><span class="sxs-lookup"><span data-stu-id="29c26-794">-1,245.71</span></span></td>
+<td><span data-ttu-id="29c26-795">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-795">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-796">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-796">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-797">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-797">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-798">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-798">10001</span></span></td>
-<td><span data-ttu-id="3c61d-799">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-799">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-800">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-800">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-801">436.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-801">436.00</span></span></td>
-<td><span data-ttu-id="3c61d-802">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-802">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-796">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-796">CC002</span></span></td>
+<td><span data-ttu-id="29c26-797">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-797">Finance</span></span></td>
+<td><span data-ttu-id="29c26-798">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-798">10001</span></span></td>
+<td><span data-ttu-id="29c26-799">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-799">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-800">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-800">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-801">436.00</span><span class="sxs-lookup"><span data-stu-id="29c26-801">436.00</span></span></td>
+<td><span data-ttu-id="29c26-802">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-802">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-803">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-803">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-804">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-804">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-805">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-805">10001</span></span></td>
-<td><span data-ttu-id="3c61d-806">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-806">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-807">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-807">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-808">685.14</span><span class="sxs-lookup"><span data-stu-id="3c61d-808">685.14</span></span></td>
-<td><span data-ttu-id="3c61d-809">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-809">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-803">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-803">CC003</span></span></td>
+<td><span data-ttu-id="29c26-804">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-804">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-805">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-805">10001</span></span></td>
+<td><span data-ttu-id="29c26-806">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-806">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-807">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-807">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-808">685.14</span><span class="sxs-lookup"><span data-stu-id="29c26-808">685.14</span></span></td>
+<td><span data-ttu-id="29c26-809">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-809">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-810">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-810">CC004</span></span></td>
-<td><span data-ttu-id="3c61d-811">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-811">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-812">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-812">10001</span></span></td>
-<td><span data-ttu-id="3c61d-813">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-813">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-814">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-814">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-815">124.57</span><span class="sxs-lookup"><span data-stu-id="3c61d-815">124.57</span></span></td>
-<td><span data-ttu-id="3c61d-816">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-816">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-810">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-810">CC004</span></span></td>
+<td><span data-ttu-id="29c26-811">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-811">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-812">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-812">10001</span></span></td>
+<td><span data-ttu-id="29c26-813">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-813">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-814">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-814">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-815">124.57</span><span class="sxs-lookup"><span data-stu-id="29c26-815">124.57</span></span></td>
+<td><span data-ttu-id="29c26-816">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-816">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-817">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-817">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-818">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-818">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-819">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-819">10001</span></span></td>
-<td><span data-ttu-id="3c61d-820">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-820">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-821">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-821">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-822">-675,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-822">-675.00</span></span></td>
-<td><span data-ttu-id="3c61d-823">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-823">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-817">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-817">CC002</span></span></td>
+<td><span data-ttu-id="29c26-818">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-818">Finance</span></span></td>
+<td><span data-ttu-id="29c26-819">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-819">10001</span></span></td>
+<td><span data-ttu-id="29c26-820">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-820">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-821">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-821">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-822">-675,00</span><span class="sxs-lookup"><span data-stu-id="29c26-822">-675.00</span></span></td>
+<td><span data-ttu-id="29c26-823">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-823">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-824">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-824">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-825">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-825">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-826">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-826">10001</span></span></td>
-<td><span data-ttu-id="3c61d-827">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-827">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-828">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-828">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-829">438.75</span><span class="sxs-lookup"><span data-stu-id="3c61d-829">438.75</span></span></td>
-<td><span data-ttu-id="3c61d-830">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-830">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-824">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-824">CC003</span></span></td>
+<td><span data-ttu-id="29c26-825">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-825">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-826">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-826">10001</span></span></td>
+<td><span data-ttu-id="29c26-827">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-827">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-828">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-828">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-829">438.75</span><span class="sxs-lookup"><span data-stu-id="29c26-829">438.75</span></span></td>
+<td><span data-ttu-id="29c26-830">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-830">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-831">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-831">CC004</span></span></td>
-<td><span data-ttu-id="3c61d-832">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-832">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-833">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-833">10001</span></span></td>
-<td><span data-ttu-id="3c61d-834">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-834">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-835">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-835">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-836">236.25</span><span class="sxs-lookup"><span data-stu-id="3c61d-836">236.25</span></span></td>
-<td><span data-ttu-id="3c61d-837">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-837">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-831">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-831">CC004</span></span></td>
+<td><span data-ttu-id="29c26-832">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-832">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-833">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-833">10001</span></span></td>
+<td><span data-ttu-id="29c26-834">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-834">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-835">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-835">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-836">236.25</span><span class="sxs-lookup"><span data-stu-id="29c26-836">236.25</span></span></td>
+<td><span data-ttu-id="29c26-837">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-837">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-838">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-838">CC002</span></span></td>
-<td><span data-ttu-id="3c61d-839">Finance</span><span class="sxs-lookup"><span data-stu-id="3c61d-839">Finance</span></span></td>
-<td><span data-ttu-id="3c61d-840">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-840">10001</span></span></td>
-<td><span data-ttu-id="3c61d-841">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-841">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-842">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-842">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-843">-8 150,29</span><span class="sxs-lookup"><span data-stu-id="3c61d-843">-8,150.29</span></span></td>
-<td><span data-ttu-id="3c61d-844">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-844">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-838">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-838">CC002</span></span></td>
+<td><span data-ttu-id="29c26-839">Finance</span><span class="sxs-lookup"><span data-stu-id="29c26-839">Finance</span></span></td>
+<td><span data-ttu-id="29c26-840">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-840">10001</span></span></td>
+<td><span data-ttu-id="29c26-841">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-841">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-842">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-842">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-843">-8 150,29</span><span class="sxs-lookup"><span data-stu-id="29c26-843">-8,150.29</span></span></td>
+<td><span data-ttu-id="29c26-844">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-844">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-845">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-845">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-846">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-846">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-847">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-847">10001</span></span></td>
-<td><span data-ttu-id="3c61d-848">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-848">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-849">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-849">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-850">5,297.69</span><span class="sxs-lookup"><span data-stu-id="3c61d-850">5,297.69</span></span></td>
-<td><span data-ttu-id="3c61d-851">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-851">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-845">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-845">CC003</span></span></td>
+<td><span data-ttu-id="29c26-846">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-846">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-847">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-847">10001</span></span></td>
+<td><span data-ttu-id="29c26-848">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-848">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-849">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-849">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-850">5,297.69</span><span class="sxs-lookup"><span data-stu-id="29c26-850">5,297.69</span></span></td>
+<td><span data-ttu-id="29c26-851">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-851">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-852">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-852">CC004</span></span></td>
-<td><span data-ttu-id="3c61d-853">Balení</span><span class="sxs-lookup"><span data-stu-id="3c61d-853">Packaging</span></span></td>
-<td><span data-ttu-id="3c61d-854">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-854">10001</span></span></td>
-<td><span data-ttu-id="3c61d-855">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-855">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-856">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-856">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-857">2,852.60</span><span class="sxs-lookup"><span data-stu-id="3c61d-857">2,852.60</span></span></td>
-<td><span data-ttu-id="3c61d-858">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-858">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-852">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-852">CC004</span></span></td>
+<td><span data-ttu-id="29c26-853">Balení</span><span class="sxs-lookup"><span data-stu-id="29c26-853">Packaging</span></span></td>
+<td><span data-ttu-id="29c26-854">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-854">10001</span></span></td>
+<td><span data-ttu-id="29c26-855">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-855">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-856">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-856">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-857">2,852.60</span><span class="sxs-lookup"><span data-stu-id="29c26-857">2,852.60</span></span></td>
+<td><span data-ttu-id="29c26-858">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-858">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-859">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-859">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-860">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-860">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-861">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-861">10001</span></span></td>
-<td><span data-ttu-id="3c61d-862">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-862">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-863">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-863">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-864">-713,75</span><span class="sxs-lookup"><span data-stu-id="3c61d-864">-713.75</span></span></td>
-<td><span data-ttu-id="3c61d-865">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-865">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-859">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-859">CC003</span></span></td>
+<td><span data-ttu-id="29c26-860">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-860">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-861">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-861">10001</span></span></td>
+<td><span data-ttu-id="29c26-862">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-862">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-863">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-863">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-864">-713,75</span><span class="sxs-lookup"><span data-stu-id="29c26-864">-713.75</span></span></td>
+<td><span data-ttu-id="29c26-865">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-865">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-866">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-866">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-867">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-867">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-868">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-868">10001</span></span></td>
-<td><span data-ttu-id="3c61d-869">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-869">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-870">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-870">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-871">535.31</span><span class="sxs-lookup"><span data-stu-id="3c61d-871">535.31</span></span></td>
-<td><span data-ttu-id="3c61d-872">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-872">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-866">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-866">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-867">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-867">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-868">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-868">10001</span></span></td>
+<td><span data-ttu-id="29c26-869">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-869">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-870">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-870">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-871">535.31</span><span class="sxs-lookup"><span data-stu-id="29c26-871">535.31</span></span></td>
+<td><span data-ttu-id="29c26-872">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-872">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-873">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-873">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-874">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-874">Product 2</span></span></td>
-<td><span data-ttu-id="3c61d-875">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-875">10001</span></span></td>
-<td><span data-ttu-id="3c61d-876">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-876">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-877">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-877">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-878">178.44</span><span class="sxs-lookup"><span data-stu-id="3c61d-878">178.44</span></span></td>
-<td><span data-ttu-id="3c61d-879">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-879">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-873">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-873">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-874">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-874">Product 2</span></span></td>
+<td><span data-ttu-id="29c26-875">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-875">10001</span></span></td>
+<td><span data-ttu-id="29c26-876">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-876">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-877">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-877">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-878">178.44</span><span class="sxs-lookup"><span data-stu-id="29c26-878">178.44</span></span></td>
+<td><span data-ttu-id="29c26-879">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-879">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-880">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-880">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-881">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-881">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-882">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-882">10001</span></span></td>
-<td><span data-ttu-id="3c61d-883">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-883">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-884">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-884">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-885">-5 982,83</span><span class="sxs-lookup"><span data-stu-id="3c61d-885">-5,982.83</span></span></td>
-<td><span data-ttu-id="3c61d-886">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-886">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-880">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-880">CC003</span></span></td>
+<td><span data-ttu-id="29c26-881">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-881">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-882">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-882">10001</span></span></td>
+<td><span data-ttu-id="29c26-883">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-883">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-884">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-884">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-885">-5 982,83</span><span class="sxs-lookup"><span data-stu-id="29c26-885">-5,982.83</span></span></td>
+<td><span data-ttu-id="29c26-886">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-886">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-887">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-887">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-888">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-888">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-889">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-889">10001</span></span></td>
-<td><span data-ttu-id="3c61d-890">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-890">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-891">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-891">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-892">4,487.12</span><span class="sxs-lookup"><span data-stu-id="3c61d-892">4,487.12</span></span></td>
-<td><span data-ttu-id="3c61d-893">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-893">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-887">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-887">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-888">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-888">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-889">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-889">10001</span></span></td>
+<td><span data-ttu-id="29c26-890">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-890">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-891">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-891">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-892">4,487.12</span><span class="sxs-lookup"><span data-stu-id="29c26-892">4,487.12</span></span></td>
+<td><span data-ttu-id="29c26-893">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-893">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-894">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-894">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-895">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-895">Product 2</span></span></td>
-<td><span data-ttu-id="3c61d-896">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-896">10001</span></span></td>
-<td><span data-ttu-id="3c61d-897">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-897">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-898">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-898">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-899">1,495.71</span><span class="sxs-lookup"><span data-stu-id="3c61d-899">1,495.71</span></span></td>
-<td><span data-ttu-id="3c61d-900">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-900">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-894">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-894">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-895">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-895">Product 2</span></span></td>
+<td><span data-ttu-id="29c26-896">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-896">10001</span></span></td>
+<td><span data-ttu-id="29c26-897">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-897">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-898">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-898">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-899">1,495.71</span><span class="sxs-lookup"><span data-stu-id="29c26-899">1,495.71</span></span></td>
+<td><span data-ttu-id="29c26-900">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-900">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-901">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-901">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-902">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-902">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-903">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-903">10001</span></span></td>
-<td><span data-ttu-id="3c61d-904">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-904">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-905">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-905">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-906">-286,25</span><span class="sxs-lookup"><span data-stu-id="3c61d-906">-286.25</span></span></td>
-<td><span data-ttu-id="3c61d-907">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-907">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-901">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-901">CC003</span></span></td>
+<td><span data-ttu-id="29c26-902">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-902">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-903">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-903">10001</span></span></td>
+<td><span data-ttu-id="29c26-904">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-904">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-905">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-905">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-906">-286,25</span><span class="sxs-lookup"><span data-stu-id="29c26-906">-286.25</span></span></td>
+<td><span data-ttu-id="29c26-907">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-907">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-908">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-908">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-909">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-909">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-910">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-910">10001</span></span></td>
-<td><span data-ttu-id="3c61d-911">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-911">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-912">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-912">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-913">241.05</span><span class="sxs-lookup"><span data-stu-id="3c61d-913">241.05</span></span></td>
-<td><span data-ttu-id="3c61d-914">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-914">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-908">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-908">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-909">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-909">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-910">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-910">10001</span></span></td>
+<td><span data-ttu-id="29c26-911">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-911">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-912">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-912">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-913">241.05</span><span class="sxs-lookup"><span data-stu-id="29c26-913">241.05</span></span></td>
+<td><span data-ttu-id="29c26-914">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-914">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-915">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-915">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-916">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-916">Product 2</span></span></td>
-<td><span data-ttu-id="3c61d-917">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-917">10001</span></span></td>
-<td><span data-ttu-id="3c61d-918">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-918">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-919">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-919">Fixed cost</span></span></td>
-<td><span data-ttu-id="3c61d-920">45.20</span><span class="sxs-lookup"><span data-stu-id="3c61d-920">45.20</span></span></td>
-<td><span data-ttu-id="3c61d-921">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-921">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-915">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-915">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-916">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-916">Product 2</span></span></td>
+<td><span data-ttu-id="29c26-917">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-917">10001</span></span></td>
+<td><span data-ttu-id="29c26-918">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-918">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-919">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-919">Fixed cost</span></span></td>
+<td><span data-ttu-id="29c26-920">45.20</span><span class="sxs-lookup"><span data-stu-id="29c26-920">45.20</span></span></td>
+<td><span data-ttu-id="29c26-921">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-921">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-922">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-922">CC003</span></span></td>
-<td><span data-ttu-id="3c61d-923">Sestavení</span><span class="sxs-lookup"><span data-stu-id="3c61d-923">Assembly</span></span></td>
-<td><span data-ttu-id="3c61d-924">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-924">10001</span></span></td>
-<td><span data-ttu-id="3c61d-925">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-925">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-926">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-926">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-927">-2977,17</span><span class="sxs-lookup"><span data-stu-id="3c61d-927">-2,977.17</span></span></td>
-<td><span data-ttu-id="3c61d-928">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-928">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-922">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-922">CC003</span></span></td>
+<td><span data-ttu-id="29c26-923">Sestavení</span><span class="sxs-lookup"><span data-stu-id="29c26-923">Assembly</span></span></td>
+<td><span data-ttu-id="29c26-924">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-924">10001</span></span></td>
+<td><span data-ttu-id="29c26-925">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-925">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-926">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-926">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-927">-2977,17</span><span class="sxs-lookup"><span data-stu-id="29c26-927">-2,977.17</span></span></td>
+<td><span data-ttu-id="29c26-928">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-928">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-929">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-929">Prod 1</span></span></td>
-<td><span data-ttu-id="3c61d-930">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-930">Product 1</span></span></td>
-<td><span data-ttu-id="3c61d-931">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-931">10001</span></span></td>
-<td><span data-ttu-id="3c61d-932">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-932">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-933">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-933">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-934">2,507.09</span><span class="sxs-lookup"><span data-stu-id="3c61d-934">2,507.09</span></span></td>
-<td><span data-ttu-id="3c61d-935">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-935">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-929">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-929">Prod 1</span></span></td>
+<td><span data-ttu-id="29c26-930">Produkt 1</span><span class="sxs-lookup"><span data-stu-id="29c26-930">Product 1</span></span></td>
+<td><span data-ttu-id="29c26-931">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-931">10001</span></span></td>
+<td><span data-ttu-id="29c26-932">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-932">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-933">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-933">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-934">2,507.09</span><span class="sxs-lookup"><span data-stu-id="29c26-934">2,507.09</span></span></td>
+<td><span data-ttu-id="29c26-935">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-935">January 31, 2017</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="3c61d-936">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-936">Prod 2</span></span></td>
-<td><span data-ttu-id="3c61d-937">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-937">Product 2</span></span></td>
-<td><span data-ttu-id="3c61d-938">10001</span><span class="sxs-lookup"><span data-stu-id="3c61d-938">10001</span></span></td>
-<td><span data-ttu-id="3c61d-939">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="3c61d-939">Electricity</span></span></td>
-<td><span data-ttu-id="3c61d-940">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-940">Variable cost</span></span></td>
-<td><span data-ttu-id="3c61d-941">470.08</span><span class="sxs-lookup"><span data-stu-id="3c61d-941">470.08</span></span></td>
-<td><span data-ttu-id="3c61d-942">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="3c61d-942">January 31, 2017</span></span></td>
+<td><span data-ttu-id="29c26-936">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-936">Prod 2</span></span></td>
+<td><span data-ttu-id="29c26-937">Produkt 2</span><span class="sxs-lookup"><span data-stu-id="29c26-937">Product 2</span></span></td>
+<td><span data-ttu-id="29c26-938">10001</span><span class="sxs-lookup"><span data-stu-id="29c26-938">10001</span></span></td>
+<td><span data-ttu-id="29c26-939">Elektrické energie</span><span class="sxs-lookup"><span data-stu-id="29c26-939">Electricity</span></span></td>
+<td><span data-ttu-id="29c26-940">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-940">Variable cost</span></span></td>
+<td><span data-ttu-id="29c26-941">470.08</span><span class="sxs-lookup"><span data-stu-id="29c26-941">470.08</span></span></td>
+<td><span data-ttu-id="29c26-942">31. ledna 2017</span><span class="sxs-lookup"><span data-stu-id="29c26-942">January 31, 2017</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="conclusion"></a><span data-ttu-id="3c61d-943">Závěr</span><span class="sxs-lookup"><span data-stu-id="3c61d-943">Conclusion</span></span>
-<span data-ttu-id="3c61d-944">Ve finančním účtování se náklady za elektřinu ve výši 10 000 zaúčtují na ID fiktivního nákladového střediska.</span><span class="sxs-lookup"><span data-stu-id="3c61d-944">In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dummy cost center ID.</span></span> <span data-ttu-id="3c61d-945">Účetní tak budou vědět, že tento náklad musí být přidělen.</span><span class="sxs-lookup"><span data-stu-id="3c61d-945">Therefore, cost accountants will know that this cost must be allocated.</span></span> <span data-ttu-id="3c61d-946">V nákladovém účetnictví náklady procházejí napříč organizačními jednotkami a úrovněmi, na základě použitých zásad a pravidel.</span><span class="sxs-lookup"><span data-stu-id="3c61d-946">In Cost accounting, the costs flow across organizational units and levels, based on the policies and rules that are applied.</span></span> <span data-ttu-id="3c61d-947">Každý náklad byl přidružen k základu přidělení, který poskytuje nejlepší hodnocení pro přidělení nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-947">Each cost has been associated with an allocation base that provides the best assessment for the allocation of costs.</span></span>
+## <a name="conclusion"></a><span data-ttu-id="29c26-943">Závěr</span><span class="sxs-lookup"><span data-stu-id="29c26-943">Conclusion</span></span>
+<span data-ttu-id="29c26-944">Ve finančním účtování se náklady za elektřinu ve výši 10 000 zaúčtují na ID fiktivního nákladového střediska.</span><span class="sxs-lookup"><span data-stu-id="29c26-944">In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dummy cost center ID.</span></span> <span data-ttu-id="29c26-945">Účetní tak budou vědět, že tento náklad musí být přidělen.</span><span class="sxs-lookup"><span data-stu-id="29c26-945">Therefore, cost accountants will know that this cost must be allocated.</span></span> <span data-ttu-id="29c26-946">V nákladovém účetnictví náklady procházejí napříč organizačními jednotkami a úrovněmi, na základě použitých zásad a pravidel.</span><span class="sxs-lookup"><span data-stu-id="29c26-946">In Cost accounting, the costs flow across organizational units and levels, based on the policies and rules that are applied.</span></span> <span data-ttu-id="29c26-947">Každý náklad byl přidružen k základu přidělení, který poskytuje nejlepší hodnocení pro přidělení nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-947">Each cost has been associated with an allocation base that provides the best assessment for the allocation of costs.</span></span>
 
 <table>
 <thead>
 <tr>
-<th colspan="2" rowspan="2"><span data-ttu-id="3c61d-948">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-948">Cost element</span></span></th>
-<th colspan="9"><span data-ttu-id="3c61d-949">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="3c61d-949">Cost object</span></span></th>
-<th rowspan="2"><span data-ttu-id="3c61d-950">Celkem</span><span class="sxs-lookup"><span data-stu-id="3c61d-950">Total</span></span></th>
+<th colspan="2" rowspan="2"><span data-ttu-id="29c26-948">Prvek nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-948">Cost element</span></span></th>
+<th colspan="9"><span data-ttu-id="29c26-949">Objekt nákladů</span><span class="sxs-lookup"><span data-stu-id="29c26-949">Cost object</span></span></th>
+<th rowspan="2"><span data-ttu-id="29c26-950">Celkem</span><span class="sxs-lookup"><span data-stu-id="29c26-950">Total</span></span></th>
 </tr>
 <tr>
-<th><span data-ttu-id="3c61d-951">CC099</span><span class="sxs-lookup"><span data-stu-id="3c61d-951">CC099</span></span></th>
-<th><span data-ttu-id="3c61d-952">CC001</span><span class="sxs-lookup"><span data-stu-id="3c61d-952">CC001</span></span></th>
-<th><span data-ttu-id="3c61d-953">CC002</span><span class="sxs-lookup"><span data-stu-id="3c61d-953">CC002</span></span></th>
-<th><span data-ttu-id="3c61d-954">CC003</span><span class="sxs-lookup"><span data-stu-id="3c61d-954">CC003</span></span></th>
-<th><span data-ttu-id="3c61d-955">CC004</span><span class="sxs-lookup"><span data-stu-id="3c61d-955">CC004</span></span></th>
-<th><span data-ttu-id="3c61d-956">Proj 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-956">Proj 1</span></span></th>
-<th><span data-ttu-id="3c61d-957">Proj 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-957">Proj 2</span></span></th>
-<th><span data-ttu-id="3c61d-958">Prod 1</span><span class="sxs-lookup"><span data-stu-id="3c61d-958">Prod 1</span></span></th>
-<th><span data-ttu-id="3c61d-959">Prod 2</span><span class="sxs-lookup"><span data-stu-id="3c61d-959">Prod 2</span></span></th>
+<th><span data-ttu-id="29c26-951">CC099</span><span class="sxs-lookup"><span data-stu-id="29c26-951">CC099</span></span></th>
+<th><span data-ttu-id="29c26-952">CC001</span><span class="sxs-lookup"><span data-stu-id="29c26-952">CC001</span></span></th>
+<th><span data-ttu-id="29c26-953">CC002</span><span class="sxs-lookup"><span data-stu-id="29c26-953">CC002</span></span></th>
+<th><span data-ttu-id="29c26-954">CC003</span><span class="sxs-lookup"><span data-stu-id="29c26-954">CC003</span></span></th>
+<th><span data-ttu-id="29c26-955">CC004</span><span class="sxs-lookup"><span data-stu-id="29c26-955">CC004</span></span></th>
+<th><span data-ttu-id="29c26-956">Proj 1</span><span class="sxs-lookup"><span data-stu-id="29c26-956">Proj 1</span></span></th>
+<th><span data-ttu-id="29c26-957">Proj 2</span><span class="sxs-lookup"><span data-stu-id="29c26-957">Proj 2</span></span></th>
+<th><span data-ttu-id="29c26-958">Prod 1</span><span class="sxs-lookup"><span data-stu-id="29c26-958">Prod 1</span></span></th>
+<th><span data-ttu-id="29c26-959">Prod 2</span><span class="sxs-lookup"><span data-stu-id="29c26-959">Prod 2</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td colspan="2"><span data-ttu-id="3c61d-960">10001 Elektřina</span><span class="sxs-lookup"><span data-stu-id="3c61d-960">10001 Electricity</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-961"><strong>0,00</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-961"><strong>0.00</strong></span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-962"><strong>0,00</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-962"><strong>0.00</strong></span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-963"><strong>0,00</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-963"><strong>0.00</strong></span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-964"><strong>0,00</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-964"><strong>0.00</strong></span></span></td>
+<td colspan="2"><span data-ttu-id="29c26-960">10001 Elektřina</span><span class="sxs-lookup"><span data-stu-id="29c26-960">10001 Electricity</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-961"><strong>0,00</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-961"><strong>0.00</strong></span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-962"><strong>0,00</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-962"><strong>0.00</strong></span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-963"><strong>0,00</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-963"><strong>0.00</strong></span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-964"><strong>0,00</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-964"><strong>0.00</strong></span></span></td>
 <td style="text-align: right;"></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-965"><strong>30,00</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-965"><strong>30.00</strong></span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-966"><strong>10,00</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-966"><strong>10.00</strong></span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-967"><strong>7.770,57</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-967"><strong>7,770.57</strong></span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-968"><strong>2.189,43</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-968"><strong>2,189.43</strong></span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-969"><strong>10.000,00</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-969"><strong>10,000.00</strong></span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-965"><strong>30,00</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-965"><strong>30.00</strong></span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-966"><strong>10,00</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-966"><strong>10.00</strong></span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-967"><strong>7.770,57</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-967"><strong>7,770.57</strong></span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-968"><strong>2.189,43</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-968"><strong>2,189.43</strong></span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-969"><strong>10.000,00</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-969"><strong>10,000.00</strong></span></span></td>
 </tr>
 <tr>
 <td></td>
-<td style="text-align: left;"><span data-ttu-id="3c61d-970">Neklasifikované</span><span class="sxs-lookup"><span data-stu-id="3c61d-970">Unclassified</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-971">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-971">0.00</span></span></td>
+<td style="text-align: left;"><span data-ttu-id="29c26-970">Neklasifikované</span><span class="sxs-lookup"><span data-stu-id="29c26-970">Unclassified</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-971">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-971">0.00</span></span></td>
 <td style="text-align: right;"></td>
 <td style="text-align: right;"></td>
 <td style="text-align: right;"></td>
@@ -1381,37 +1381,37 @@ ms.locfileid: "335110"
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td style="text-align: left;"><span data-ttu-id="3c61d-972">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-972">Fixed cost</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-973">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-973">0.00</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-974">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-974">0.00</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-975">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-975">0.00</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-976">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-976">0.00</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-977">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-977">0.00</span></span></td>
+<td style="text-align: left;"><span data-ttu-id="29c26-972">Pevné náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-972">Fixed cost</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-973">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-973">0.00</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-974">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-974">0.00</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-975">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-975">0.00</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-976">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-976">0.00</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-977">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-977">0.00</span></span></td>
 <td style="text-align: right;"></td>
 <td style="text-align: right;"></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-978">776.36</span><span class="sxs-lookup"><span data-stu-id="3c61d-978">776.36</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-979">223.64</span><span class="sxs-lookup"><span data-stu-id="3c61d-979">223.64</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-980"><strong>1.000,00</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-980"><strong>1,000.00</strong></span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-978">776.36</span><span class="sxs-lookup"><span data-stu-id="29c26-978">776.36</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-979">223.64</span><span class="sxs-lookup"><span data-stu-id="29c26-979">223.64</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-980"><strong>1.000,00</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-980"><strong>1,000.00</strong></span></span></td>
 </tr>
 <tr>
 <td style="text-align: right;"></td>
-<td style="text-align: left;"><span data-ttu-id="3c61d-981">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="3c61d-981">Variable cost</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-982">000</span><span class="sxs-lookup"><span data-stu-id="3c61d-982">000</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-983">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-983">0.00</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-984">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-984">0.00</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-985">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-985">0.00</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-986">0,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-986">0.00</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-987">30.00</span><span class="sxs-lookup"><span data-stu-id="3c61d-987">30.00</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-988">10,00</span><span class="sxs-lookup"><span data-stu-id="3c61d-988">10.00</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-989">6,994.21</span><span class="sxs-lookup"><span data-stu-id="3c61d-989">6,994.21</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-990">1,965.79</span><span class="sxs-lookup"><span data-stu-id="3c61d-990">1,965.79</span></span></td>
-<td style="text-align: right;"><span data-ttu-id="3c61d-991"><strong>9.000,00</strong></span><span class="sxs-lookup"><span data-stu-id="3c61d-991"><strong>9,000.00</strong></span></span></td>
+<td style="text-align: left;"><span data-ttu-id="29c26-981">Variabilní náklady</span><span class="sxs-lookup"><span data-stu-id="29c26-981">Variable cost</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-982">000</span><span class="sxs-lookup"><span data-stu-id="29c26-982">000</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-983">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-983">0.00</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-984">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-984">0.00</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-985">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-985">0.00</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-986">0,00</span><span class="sxs-lookup"><span data-stu-id="29c26-986">0.00</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-987">30.00</span><span class="sxs-lookup"><span data-stu-id="29c26-987">30.00</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-988">10,00</span><span class="sxs-lookup"><span data-stu-id="29c26-988">10.00</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-989">6,994.21</span><span class="sxs-lookup"><span data-stu-id="29c26-989">6,994.21</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-990">1,965.79</span><span class="sxs-lookup"><span data-stu-id="29c26-990">1,965.79</span></span></td>
+<td style="text-align: right;"><span data-ttu-id="29c26-991"><strong>9.000,00</strong></span><span class="sxs-lookup"><span data-stu-id="29c26-991"><strong>9,000.00</strong></span></span></td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> <span data-ttu-id="3c61d-992">Toto téma popisuje, jak primární prvek nákladů, 10001 Elektřina, prochází přes objekty nákladů.</span><span class="sxs-lookup"><span data-stu-id="3c61d-992">This topic shows how a primary cost element, 10001 Electricity, flows through the cost objects.</span></span> <span data-ttu-id="3c61d-993">Tyto režijní náklady tedy budou přiděleny na nejnižší úroveň v organizaci.</span><span class="sxs-lookup"><span data-stu-id="3c61d-993">Therefore, this overhead cost is allocated to the lowest level in the organization.</span></span> <span data-ttu-id="3c61d-994">Jinak řečeno, objekty nákladů na nejnižší úrovni ponesou náklady.</span><span class="sxs-lookup"><span data-stu-id="3c61d-994">In other words, the cost objects at the lowest level bear the cost.</span></span> <span data-ttu-id="3c61d-995">Chcete-li vizuální tok nákladů mezi objekty nákladů, můžete použít pravidla zásad shrnutí nákladů pro vizualizaci jejich toků.</span><span class="sxs-lookup"><span data-stu-id="3c61d-995">If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost.</span></span> <span data-ttu-id="3c61d-996">Podrobnější informace naleznete v tématu [Zásady shrnutí nákladů](cost-rollup.md).</span><span class="sxs-lookup"><span data-stu-id="3c61d-996">For more information, see [Cost roll-up](cost-rollup.md).</span></span>
+> <span data-ttu-id="29c26-992">Toto téma popisuje, jak primární prvek nákladů, 10001 Elektřina, prochází přes objekty nákladů.</span><span class="sxs-lookup"><span data-stu-id="29c26-992">This topic shows how a primary cost element, 10001 Electricity, flows through the cost objects.</span></span> <span data-ttu-id="29c26-993">Tyto režijní náklady tedy budou přiděleny na nejnižší úroveň v organizaci.</span><span class="sxs-lookup"><span data-stu-id="29c26-993">Therefore, this overhead cost is allocated to the lowest level in the organization.</span></span> <span data-ttu-id="29c26-994">Jinak řečeno, objekty nákladů na nejnižší úrovni ponesou náklady.</span><span class="sxs-lookup"><span data-stu-id="29c26-994">In other words, the cost objects at the lowest level bear the cost.</span></span> <span data-ttu-id="29c26-995">Chcete-li vizuální tok nákladů mezi objekty nákladů, můžete použít pravidla zásad shrnutí nákladů pro vizualizaci jejich toků.</span><span class="sxs-lookup"><span data-stu-id="29c26-995">If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost.</span></span> <span data-ttu-id="29c26-996">Podrobnější informace naleznete v tématu [Zásady shrnutí nákladů](cost-rollup.md).</span><span class="sxs-lookup"><span data-stu-id="29c26-996">For more information, see [Cost roll-up](cost-rollup.md).</span></span>
 
 
 

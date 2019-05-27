@@ -19,34 +19,34 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc55c1ab0a9ad7af3b55e49079185062fd119cc7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "344816"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1546149"
 ---
-# <a name="reverse-changes-in-a-dispatch-board"></a><span data-ttu-id="8d9fb-103">Stornovací změn na expediční vývěsce</span><span class="sxs-lookup"><span data-stu-id="8d9fb-103">Reverse changes in a dispatch board</span></span> 
+# <a name="reverse-changes-in-a-dispatch-board"></a><span data-ttu-id="1988e-103">Stornovací změn na expediční vývěsce</span><span class="sxs-lookup"><span data-stu-id="1988e-103">Reverse changes in a dispatch board</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="8d9fb-104">Toto téma popisuje způsob stornování neuložených změn, které provedete na expediční vývěsce.</span><span class="sxs-lookup"><span data-stu-id="8d9fb-104">This topic describes how to reverse unsaved modifications that you make in a dispatch board.</span></span> <span data-ttu-id="8d9fb-105">Například můžete k servisní aktivitě přiřadit pracovníka, informace uložit a později se rozhodnout servisní aktivitu přiřadit jinému pracovníkovi.</span><span class="sxs-lookup"><span data-stu-id="8d9fb-105">For example, you assign a worker to a service activity, save the information, and then later decide to assign a different worker to the service activity.</span></span> <span data-ttu-id="8d9fb-106">Pracovníka upravíte na expediční vývěsce a potom před uložením změn zjistíte, že přiřazený pracovník není k dispozici.</span><span class="sxs-lookup"><span data-stu-id="8d9fb-106">You modify the worker in the dispatch board, and then, before saving the change, learn that the worker just assigned is not available.</span></span> <span data-ttu-id="8d9fb-107">Neuložené změny můžete stornovat tak, že původního pracovníka znovu přiřadíte k servisní zakázce.</span><span class="sxs-lookup"><span data-stu-id="8d9fb-107">You can reverse the unsaved modification so that the original worker is reassigned to the service order.</span></span>
+<span data-ttu-id="1988e-104">Toto téma popisuje způsob stornování neuložených změn, které provedete na expediční vývěsce.</span><span class="sxs-lookup"><span data-stu-id="1988e-104">This topic describes how to reverse unsaved modifications that you make in a dispatch board.</span></span> <span data-ttu-id="1988e-105">Například můžete k servisní aktivitě přiřadit pracovníka, informace uložit a později se rozhodnout servisní aktivitu přiřadit jinému pracovníkovi.</span><span class="sxs-lookup"><span data-stu-id="1988e-105">For example, you assign a worker to a service activity, save the information, and then later decide to assign a different worker to the service activity.</span></span> <span data-ttu-id="1988e-106">Pracovníka upravíte na expediční vývěsce a potom před uložením změn zjistíte, že přiřazený pracovník není k dispozici.</span><span class="sxs-lookup"><span data-stu-id="1988e-106">You modify the worker in the dispatch board, and then, before saving the change, learn that the worker just assigned is not available.</span></span> <span data-ttu-id="1988e-107">Neuložené změny můžete stornovat tak, že původního pracovníka znovu přiřadíte k servisní zakázce.</span><span class="sxs-lookup"><span data-stu-id="1988e-107">You can reverse the unsaved modification so that the original worker is reassigned to the service order.</span></span>
 
-<span data-ttu-id="8d9fb-108">Stornovat neuložené změny na expediční vývěsce můžete pomocí následujících kroků:</span><span class="sxs-lookup"><span data-stu-id="8d9fb-108">Use the following steps to reverse unsaved changes in a dispatch board:</span></span>
+<span data-ttu-id="1988e-108">Stornovat neuložené změny na expediční vývěsce můžete pomocí následujících kroků:</span><span class="sxs-lookup"><span data-stu-id="1988e-108">Use the following steps to reverse unsaved changes in a dispatch board:</span></span>
 
-1.  <span data-ttu-id="8d9fb-109">Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska**.</span><span class="sxs-lookup"><span data-stu-id="8d9fb-109">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="1988e-109">Klikněte na **Řízení služeb** \> **Periodické** \> **Expediční vývěska**.</span><span class="sxs-lookup"><span data-stu-id="1988e-109">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
 
-2.  <span data-ttu-id="8d9fb-110">Ve formuláři **Expediční vývěska** zadejte relevantní informace v polích a klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="8d9fb-110">In the **Dispatch board** form, enter relevant information in the fields, and then click **OK**.</span></span> 
+2.  <span data-ttu-id="1988e-110">Ve formuláři **Expediční vývěska** zadejte relevantní informace v polích a klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="1988e-110">In the **Dispatch board** form, enter relevant information in the fields, and then click **OK**.</span></span> 
 
-3.  <span data-ttu-id="8d9fb-111">Chcete-li vrátit zpět poslední změnu, která není uložena, klepněte na tlačítko **Zpět**.</span><span class="sxs-lookup"><span data-stu-id="8d9fb-111">To reverse the most recent change that is not saved, click **Undo**.</span></span>
+3.  <span data-ttu-id="1988e-111">Chcete-li vrátit zpět poslední změnu, která není uložena, klepněte na tlačítko **Zpět**.</span><span class="sxs-lookup"><span data-stu-id="1988e-111">To reverse the most recent change that is not saved, click **Undo**.</span></span>
 
-4.  <span data-ttu-id="8d9fb-112">Chcete-li odvolat sérii změn, které ještě nebyly uloženy, klepejte na tlačítko **Zpět**, dokud nedojde k odvolání všech změn, které chcete zrušit.</span><span class="sxs-lookup"><span data-stu-id="8d9fb-112">To reverse a series of changes that are not saved, continue clicking **Undo** until each change that you want to discard is reversed.</span></span>
+4.  <span data-ttu-id="1988e-112">Chcete-li odvolat sérii změn, které ještě nebyly uloženy, klepejte na tlačítko **Zpět**, dokud nedojde k odvolání všech změn, které chcete zrušit.</span><span class="sxs-lookup"><span data-stu-id="1988e-112">To reverse a series of changes that are not saved, continue clicking **Undo** until each change that you want to discard is reversed.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8d9fb-113">Viz také</span><span class="sxs-lookup"><span data-stu-id="8d9fb-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1988e-113">Viz také</span><span class="sxs-lookup"><span data-stu-id="1988e-113">See also</span></span>
 
-[<span data-ttu-id="8d9fb-114">Expediční vývěska</span><span class="sxs-lookup"><span data-stu-id="8d9fb-114">Dispatch board</span></span>](dispatch-board.md)
+[<span data-ttu-id="1988e-114">Expediční vývěska</span><span class="sxs-lookup"><span data-stu-id="1988e-114">Dispatch board</span></span>](dispatch-board.md)
 
-[<span data-ttu-id="8d9fb-115">Servisní aktivity</span><span class="sxs-lookup"><span data-stu-id="8d9fb-115">Service activities</span></span>](service-activities.md)
+[<span data-ttu-id="1988e-115">Servisní aktivity</span><span class="sxs-lookup"><span data-stu-id="1988e-115">Service activities</span></span>](service-activities.md)
 
  
 

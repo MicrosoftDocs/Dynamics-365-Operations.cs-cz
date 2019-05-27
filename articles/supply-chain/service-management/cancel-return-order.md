@@ -19,33 +19,33 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2a920c54e7cbb4d8478b6e409459807db68c77cc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342585"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555414"
 ---
-# <a name="cancel-a-return-order"></a><span data-ttu-id="df708-103">Zrušení vratky</span><span class="sxs-lookup"><span data-stu-id="df708-103">Cancel a return order</span></span> 
+# <a name="cancel-a-return-order"></a><span data-ttu-id="0413d-103">Zrušení vratky</span><span class="sxs-lookup"><span data-stu-id="0413d-103">Cancel a return order</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="df708-104">Když chcete uložit záznam plánované vratky, můžete vratku také zrušit, což je jiná akce než odstranění.</span><span class="sxs-lookup"><span data-stu-id="df708-104">You can cancel a return order, instead of deleting it, when you want to save a record of the planned return.</span></span>
+<span data-ttu-id="0413d-104">Když chcete uložit záznam plánované vratky, můžete vratku také zrušit, což je jiná akce než odstranění.</span><span class="sxs-lookup"><span data-stu-id="0413d-104">You can cancel a return order, instead of deleting it, when you want to save a record of the planned return.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="df708-105">Zrušeny mohou být pouze vratky se stavem <STRONG>Vytvořeno</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="df708-105">Only return orders that have a <STRONG>Created</STRONG> status can be canceled.</span></span> <span data-ttu-id="df708-106">Pokud jsou vratky ve stavu <STRONG>Otevřeno</STRONG> nebo <STRONG>Zavřeno</STRONG>, nelze je zrušit.</span><span class="sxs-lookup"><span data-stu-id="df708-106">Return orders with an <STRONG>Open</STRONG> or <STRONG>Closed</STRONG> status cannot be canceled.</span></span></P>
+> <P><span data-ttu-id="0413d-105">Zrušeny mohou být pouze vratky se stavem <STRONG>Vytvořeno</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="0413d-105">Only return orders that have a <STRONG>Created</STRONG> status can be canceled.</span></span> <span data-ttu-id="0413d-106">Pokud jsou vratky ve stavu <STRONG>Otevřeno</STRONG> nebo <STRONG>Zavřeno</STRONG>, nelze je zrušit.</span><span class="sxs-lookup"><span data-stu-id="0413d-106">Return orders with an <STRONG>Open</STRONG> or <STRONG>Closed</STRONG> status cannot be canceled.</span></span></P>
 
 
-1.  <span data-ttu-id="df708-107">Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Všechny objednávky vratky**.</span><span class="sxs-lookup"><span data-stu-id="df708-107">Click **Sales and marketing** \> **Common** \> **Return orders** \> **All return orders**.</span></span>
+1.  <span data-ttu-id="0413d-107">Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Všechny objednávky vratky**.</span><span class="sxs-lookup"><span data-stu-id="0413d-107">Click **Sales and marketing** \> **Common** \> **Return orders** \> **All return orders**.</span></span>
     
-    <span data-ttu-id="df708-108">- nebo -</span><span class="sxs-lookup"><span data-stu-id="df708-108">–or–</span></span>
+    <span data-ttu-id="0413d-108">- nebo -</span><span class="sxs-lookup"><span data-stu-id="0413d-108">–or–</span></span>
     
-    <span data-ttu-id="df708-109">Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Vytvořené objednávky vratky**.</span><span class="sxs-lookup"><span data-stu-id="df708-109">Click **Sales and marketing** \> **Common** \> **Return orders** \> **Created return orders**.</span></span>
+    <span data-ttu-id="0413d-109">Klikněte na **Prodej a marketing** \> **Společné** \> **Objednávky vratky** \> **Vytvořené objednávky vratky**.</span><span class="sxs-lookup"><span data-stu-id="0413d-109">Click **Sales and marketing** \> **Common** \> **Return orders** \> **Created return orders**.</span></span>
 
-2.  <span data-ttu-id="df708-110">Vyberte vratku, kterou chcete zrušit.</span><span class="sxs-lookup"><span data-stu-id="df708-110">Select the return order to cancel.</span></span>
+2.  <span data-ttu-id="0413d-110">Vyberte vratku, kterou chcete zrušit.</span><span class="sxs-lookup"><span data-stu-id="0413d-110">Select the return order to cancel.</span></span>
 
-3.  <span data-ttu-id="df708-111">Klikněte na **Zrušit objednávku**.</span><span class="sxs-lookup"><span data-stu-id="df708-111">Click **Cancel order**.</span></span>
+3.  <span data-ttu-id="0413d-111">Klikněte na **Zrušit objednávku**.</span><span class="sxs-lookup"><span data-stu-id="0413d-111">Click **Cancel order**.</span></span>
 
 
 

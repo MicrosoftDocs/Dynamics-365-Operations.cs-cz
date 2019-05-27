@@ -17,51 +17,51 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: e4b18ebe1388998b45e5ef38318b0ade9153f7c8
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565942"
 ---
-# <a name="set-up-postdated-checks"></a><span data-ttu-id="7ba10-103">Nastavení postdatovaných šeků</span><span class="sxs-lookup"><span data-stu-id="7ba10-103">Set up postdated checks</span></span>
+# <a name="set-up-postdated-checks"></a><span data-ttu-id="68248-103">Nastavení postdatovaných šeků</span><span class="sxs-lookup"><span data-stu-id="68248-103">Set up postdated checks</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="7ba10-104">Toto téma vysvětluje, jak určit, zda se mají zaúčtovat položky deníku pro postdatované šeky a které účetní deníky se mají použít pro vymazání položek a plateb dodavatele.</span><span class="sxs-lookup"><span data-stu-id="7ba10-104">This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments.</span></span> <span data-ttu-id="7ba10-105">Můžete také určit clearingové účty pro vydané šeky, přijaté šeky a srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="7ba10-105">You can also specify clearing accounts for issued checks, received checks, and withholding tax.</span></span> <span data-ttu-id="7ba10-106">Postdatované šeky jsou vydány za účelem provedení a přijetí platby v budoucí datu.</span><span class="sxs-lookup"><span data-stu-id="7ba10-106">Postdated checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="7ba10-107">Můžete zadat, zda se má šek odrazit ve vašich účetních knihách před datem splatnosti.</span><span class="sxs-lookup"><span data-stu-id="7ba10-107">You can specify whether the check must be reflected in the accounting books before its maturity date.</span></span>
+<span data-ttu-id="68248-104">Toto téma vysvětluje, jak určit, zda se mají zaúčtovat položky deníku pro postdatované šeky a které účetní deníky se mají použít pro vymazání položek a plateb dodavatele.</span><span class="sxs-lookup"><span data-stu-id="68248-104">This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments.</span></span> <span data-ttu-id="68248-105">Můžete také určit clearingové účty pro vydané šeky, přijaté šeky a srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="68248-105">You can also specify clearing accounts for issued checks, received checks, and withholding tax.</span></span> <span data-ttu-id="68248-106">Postdatované šeky jsou vydány za účelem provedení a přijetí platby v budoucí datu.</span><span class="sxs-lookup"><span data-stu-id="68248-106">Postdated checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="68248-107">Můžete zadat, zda se má šek odrazit ve vašich účetních knihách před datem splatnosti.</span><span class="sxs-lookup"><span data-stu-id="68248-107">You can specify whether the check must be reflected in the accounting books before its maturity date.</span></span>
 
 
 
-<span data-ttu-id="7ba10-108">Role tohoto postupu je Pokladník.</span><span class="sxs-lookup"><span data-stu-id="7ba10-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="7ba10-109">Tato procedura používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="7ba10-109">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="68248-108">Role tohoto postupu je Pokladník.</span><span class="sxs-lookup"><span data-stu-id="68248-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="68248-109">Tato procedura používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="68248-109">This procedure uses the USMF demo company.</span></span>
 
 
-## <a name="set-up-postdated-checks"></a><span data-ttu-id="7ba10-110">Nastavení postdatovaných šeků</span><span class="sxs-lookup"><span data-stu-id="7ba10-110">Set up postdated checks</span></span>
-1. <span data-ttu-id="7ba10-111">Přejděte do nabídky Pokladna a banka > Nastavení > Parametry pokladny a banky.</span><span class="sxs-lookup"><span data-stu-id="7ba10-111">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
-2. <span data-ttu-id="7ba10-112">Klikněte na kartu Postdatované šeky.</span><span class="sxs-lookup"><span data-stu-id="7ba10-112">Click the Postdated checks tab.</span></span>
-3. <span data-ttu-id="7ba10-113">Zaškrtněte políčko Povolit postdatované šeky nebo jeho zaškrtnutí zrušte.</span><span class="sxs-lookup"><span data-stu-id="7ba10-113">Select or clear the Enable postdated checks check box.</span></span>
-4. <span data-ttu-id="7ba10-114">Zaškrtněte políčko Zaúčtovat položky deníku pro postdatované šeky nebo jeho zaškrtnutí zrušte.</span><span class="sxs-lookup"><span data-stu-id="7ba10-114">Select or clear the Post journal entries for postdated checks check box.</span></span>
-5. <span data-ttu-id="7ba10-115">V poli Clearingový účet pro vydané šeky zadejte požadované hodnoty.</span><span class="sxs-lookup"><span data-stu-id="7ba10-115">In the Clearing account for issued checks field, specify the desired values.</span></span>
-6. <span data-ttu-id="7ba10-116">V poli Clearingový účet pro přijaté šeky zadejte požadované hodnoty.</span><span class="sxs-lookup"><span data-stu-id="7ba10-116">In the Clearing account for received checks field, specify the desired values.</span></span>
-7. <span data-ttu-id="7ba10-117">V poli Hlavní deník pro položky clearingu zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7ba10-117">In the General journal for clearing entries field, type a value.</span></span>
-8. <span data-ttu-id="7ba10-118">V poli Přenést postdatované šeky do tohoto deníku plateb dodavatelů zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7ba10-118">In the Transfer postdated checks to this vendor payment journal field, type a value.</span></span>
-9. <span data-ttu-id="7ba10-119">Zadejte požadované hodnoty do pole Clearingový účet srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="7ba10-119">In the Withholding tax clearing account field, specify the desired values.</span></span>
-10. <span data-ttu-id="7ba10-120">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="7ba10-120">Click Save.</span></span>
-11. <span data-ttu-id="7ba10-121">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7ba10-121">Close the page.</span></span>
-12. <span data-ttu-id="7ba10-122">Přejděte do nabídky Závazky > Nastavení platby > Metody platby.</span><span class="sxs-lookup"><span data-stu-id="7ba10-122">Go to Accounts payable > Payment setup > Methods of payment.</span></span>
-13. <span data-ttu-id="7ba10-123">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="7ba10-123">Click New.</span></span>
-14. <span data-ttu-id="7ba10-124">V poli Způsob platby zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7ba10-124">In the Method of payment field, type a value.</span></span>
-15. <span data-ttu-id="7ba10-125">Zvolením možnosti Clearingové zaúčtování postdatovaných šeků určete, že je částka šeku zaúčtována na clearingový účet.</span><span class="sxs-lookup"><span data-stu-id="7ba10-125">Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.</span></span>
-16. <span data-ttu-id="7ba10-126">V poli Typ účtu vyberte „Banka“.</span><span class="sxs-lookup"><span data-stu-id="7ba10-126">In the Account type field, select 'Bank'.</span></span>
-    * <span data-ttu-id="7ba10-127">Pole pro protiúčet způsobu platby bude prázdné.</span><span class="sxs-lookup"><span data-stu-id="7ba10-127">The offset account of the payment method will be a bank.</span></span>  
-17. <span data-ttu-id="7ba10-128">Zadejte požadované hodnoty do pole Platební účet.</span><span class="sxs-lookup"><span data-stu-id="7ba10-128">In the Payment account field, specify the desired values.</span></span>
-    * <span data-ttu-id="7ba10-129">Vyberte bankovní účet, který se používá k odečtu částky faktury.</span><span class="sxs-lookup"><span data-stu-id="7ba10-129">Select the bank account that is used to deduct the invoice amount.</span></span>  
-18. <span data-ttu-id="7ba10-130">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7ba10-130">Close the page.</span></span>
-19. <span data-ttu-id="7ba10-131">Přejděte do nabídky Pohledávky > Nastavení platby > Metody platby.</span><span class="sxs-lookup"><span data-stu-id="7ba10-131">Go to Accounts receivable > Payment setup > Methods of payment</span></span>
-20. <span data-ttu-id="7ba10-132">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="7ba10-132">Click New.</span></span>
-21. <span data-ttu-id="7ba10-133">V poli Způsob platby zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="7ba10-133">In the Method of payment field, type a value.</span></span>
-22. <span data-ttu-id="7ba10-134">Zvolením možnosti Clearingové zaúčtování postdatovaných šeků určete, že je částka šeku zaúčtována na clearingový účet.</span><span class="sxs-lookup"><span data-stu-id="7ba10-134">Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.</span></span>
-23. <span data-ttu-id="7ba10-135">V poli Typ účtu vyberte „Banka“.</span><span class="sxs-lookup"><span data-stu-id="7ba10-135">In the Account type field, select 'Bank'.</span></span>
-    * <span data-ttu-id="7ba10-136">Pole pro protiúčet způsobu platby bude prázdné.</span><span class="sxs-lookup"><span data-stu-id="7ba10-136">The offset account of the payment method will be a bank.</span></span>  
-24. <span data-ttu-id="7ba10-137">Zadejte požadované hodnoty do pole Platební účet.</span><span class="sxs-lookup"><span data-stu-id="7ba10-137">In the Payment account field, specify the desired values.</span></span>
-    * <span data-ttu-id="7ba10-138">Vyberte bankovní účet, který se používá k odečtu částky faktury.</span><span class="sxs-lookup"><span data-stu-id="7ba10-138">Select the bank account that is used to deduct the invoice amount.</span></span>  
-25. <span data-ttu-id="7ba10-139">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7ba10-139">Close the page.</span></span>
+## <a name="set-up-postdated-checks"></a><span data-ttu-id="68248-110">Nastavení postdatovaných šeků</span><span class="sxs-lookup"><span data-stu-id="68248-110">Set up postdated checks</span></span>
+1. <span data-ttu-id="68248-111">Přejděte do nabídky Pokladna a banka > Nastavení > Parametry pokladny a banky.</span><span class="sxs-lookup"><span data-stu-id="68248-111">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
+2. <span data-ttu-id="68248-112">Klikněte na kartu Postdatované šeky.</span><span class="sxs-lookup"><span data-stu-id="68248-112">Click the Postdated checks tab.</span></span>
+3. <span data-ttu-id="68248-113">Zaškrtněte políčko Povolit postdatované šeky nebo jeho zaškrtnutí zrušte.</span><span class="sxs-lookup"><span data-stu-id="68248-113">Select or clear the Enable postdated checks check box.</span></span>
+4. <span data-ttu-id="68248-114">Zaškrtněte políčko Zaúčtovat položky deníku pro postdatované šeky nebo jeho zaškrtnutí zrušte.</span><span class="sxs-lookup"><span data-stu-id="68248-114">Select or clear the Post journal entries for postdated checks check box.</span></span>
+5. <span data-ttu-id="68248-115">V poli Clearingový účet pro vydané šeky zadejte požadované hodnoty.</span><span class="sxs-lookup"><span data-stu-id="68248-115">In the Clearing account for issued checks field, specify the desired values.</span></span>
+6. <span data-ttu-id="68248-116">V poli Clearingový účet pro přijaté šeky zadejte požadované hodnoty.</span><span class="sxs-lookup"><span data-stu-id="68248-116">In the Clearing account for received checks field, specify the desired values.</span></span>
+7. <span data-ttu-id="68248-117">V poli Hlavní deník pro položky clearingu zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="68248-117">In the General journal for clearing entries field, type a value.</span></span>
+8. <span data-ttu-id="68248-118">V poli Přenést postdatované šeky do tohoto deníku plateb dodavatelů zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="68248-118">In the Transfer postdated checks to this vendor payment journal field, type a value.</span></span>
+9. <span data-ttu-id="68248-119">Zadejte požadované hodnoty do pole Clearingový účet srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="68248-119">In the Withholding tax clearing account field, specify the desired values.</span></span>
+10. <span data-ttu-id="68248-120">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="68248-120">Click Save.</span></span>
+11. <span data-ttu-id="68248-121">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="68248-121">Close the page.</span></span>
+12. <span data-ttu-id="68248-122">Přejděte do nabídky Závazky > Nastavení platby > Metody platby.</span><span class="sxs-lookup"><span data-stu-id="68248-122">Go to Accounts payable > Payment setup > Methods of payment.</span></span>
+13. <span data-ttu-id="68248-123">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="68248-123">Click New.</span></span>
+14. <span data-ttu-id="68248-124">V poli Způsob platby zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="68248-124">In the Method of payment field, type a value.</span></span>
+15. <span data-ttu-id="68248-125">Zvolením možnosti Clearingové zaúčtování postdatovaných šeků určete, že je částka šeku zaúčtována na clearingový účet.</span><span class="sxs-lookup"><span data-stu-id="68248-125">Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.</span></span>
+16. <span data-ttu-id="68248-126">V poli Typ účtu vyberte „Banka“.</span><span class="sxs-lookup"><span data-stu-id="68248-126">In the Account type field, select 'Bank'.</span></span>
+    * <span data-ttu-id="68248-127">Pole pro protiúčet způsobu platby bude prázdné.</span><span class="sxs-lookup"><span data-stu-id="68248-127">The offset account of the payment method will be a bank.</span></span>  
+17. <span data-ttu-id="68248-128">Zadejte požadované hodnoty do pole Platební účet.</span><span class="sxs-lookup"><span data-stu-id="68248-128">In the Payment account field, specify the desired values.</span></span>
+    * <span data-ttu-id="68248-129">Vyberte bankovní účet, který se používá k odečtu částky faktury.</span><span class="sxs-lookup"><span data-stu-id="68248-129">Select the bank account that is used to deduct the invoice amount.</span></span>  
+18. <span data-ttu-id="68248-130">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="68248-130">Close the page.</span></span>
+19. <span data-ttu-id="68248-131">Přejděte do nabídky Pohledávky > Nastavení platby > Metody platby.</span><span class="sxs-lookup"><span data-stu-id="68248-131">Go to Accounts receivable > Payment setup > Methods of payment</span></span>
+20. <span data-ttu-id="68248-132">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="68248-132">Click New.</span></span>
+21. <span data-ttu-id="68248-133">V poli Způsob platby zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="68248-133">In the Method of payment field, type a value.</span></span>
+22. <span data-ttu-id="68248-134">Zvolením možnosti Clearingové zaúčtování postdatovaných šeků určete, že je částka šeku zaúčtována na clearingový účet.</span><span class="sxs-lookup"><span data-stu-id="68248-134">Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.</span></span>
+23. <span data-ttu-id="68248-135">V poli Typ účtu vyberte „Banka“.</span><span class="sxs-lookup"><span data-stu-id="68248-135">In the Account type field, select 'Bank'.</span></span>
+    * <span data-ttu-id="68248-136">Pole pro protiúčet způsobu platby bude prázdné.</span><span class="sxs-lookup"><span data-stu-id="68248-136">The offset account of the payment method will be a bank.</span></span>  
+24. <span data-ttu-id="68248-137">Zadejte požadované hodnoty do pole Platební účet.</span><span class="sxs-lookup"><span data-stu-id="68248-137">In the Payment account field, specify the desired values.</span></span>
+    * <span data-ttu-id="68248-138">Vyberte bankovní účet, který se používá k odečtu částky faktury.</span><span class="sxs-lookup"><span data-stu-id="68248-138">Select the bank account that is used to deduct the invoice amount.</span></span>  
+25. <span data-ttu-id="68248-139">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="68248-139">Close the page.</span></span>
 

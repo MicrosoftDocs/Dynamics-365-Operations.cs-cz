@@ -17,27 +17,27 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1ae075d7678ab15157a500c6ee5bd77e8211254a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "315008"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562827"
 ---
-# <a name="set-up-a-ledger-account-alias"></a><span data-ttu-id="53ce1-103">Nastavení aliasu účtu hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="53ce1-103">Set up a ledger account alias</span></span>
+# <a name="set-up-a-ledger-account-alias"></a><span data-ttu-id="5b775-103">Nastavení aliasu účtu hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="5b775-103">Set up a ledger account alias</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="53ce1-104">Tento postup popisuje, jak vytvořit alias účtu, který poskytuje zástupce pro zadání čísla účtu.</span><span class="sxs-lookup"><span data-stu-id="53ce1-104">This procedure shows how to create an account alias that provides a shortcut for entering an account number.</span></span> <span data-ttu-id="53ce1-105">Tato procedura používá data ukázkové společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="53ce1-105">This procedure users demo data company USMF.</span></span>
+<span data-ttu-id="5b775-104">Tento postup popisuje, jak vytvořit alias účtu, který poskytuje zástupce pro zadání čísla účtu.</span><span class="sxs-lookup"><span data-stu-id="5b775-104">This procedure shows how to create an account alias that provides a shortcut for entering an account number.</span></span> <span data-ttu-id="5b775-105">Tato procedura používá data ukázkové společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="5b775-105">This procedure users demo data company USMF.</span></span>
 
-1. <span data-ttu-id="53ce1-106">Přejděte do části Hlavní kniha > Účtová osnova > Účty > Alias hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="53ce1-106">Go to General ledger > Chart of accounts > Accounts > Ledger account alias.</span></span>
-2. <span data-ttu-id="53ce1-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="53ce1-107">Click New.</span></span>
-3. <span data-ttu-id="53ce1-108">Zadejte hodnotu do pole Alias hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="53ce1-108">In the Ledger account alias field, type a value.</span></span>
-4. <span data-ttu-id="53ce1-109">V poli Struktura účtu vyberte strukturu, do které účet a dimenze náleží.</span><span class="sxs-lookup"><span data-stu-id="53ce1-109">In the Account structure field, select the structure the account and dimensions belong to.</span></span>
-5. <span data-ttu-id="53ce1-110">V poli Společnost kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="53ce1-110">In the Company field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="53ce1-111">V seznamu najděte a vyberte společnost, které se alias má týkat.</span><span class="sxs-lookup"><span data-stu-id="53ce1-111">In the list, find and select the company that the alias applies to.</span></span>
-7. <span data-ttu-id="53ce1-112">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="53ce1-112">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="53ce1-113">V poli Definice aliasu účtu hlavní knihy zadejte účet a dimenze.</span><span class="sxs-lookup"><span data-stu-id="53ce1-113">In the Ledger account alias definition field, specify the account and dimensions.</span></span>
-    * <span data-ttu-id="53ce1-114">Účet a dimenze se vyplní při použití zástupce.</span><span class="sxs-lookup"><span data-stu-id="53ce1-114">The account and dimensions will be populated when using the shortcut.</span></span>  
-9. <span data-ttu-id="53ce1-115">V poli Počáteční výběr vyberte dimenzi, která bude mít výběr při použití alias.</span><span class="sxs-lookup"><span data-stu-id="53ce1-115">In the Initial focus field, select the dimension that will have focus when the alias is used.</span></span>
-    * <span data-ttu-id="53ce1-116">Po zadání zástupce a vyplnění účtu a dimenzí, se kurzor přesune do pole Počáteční výběr.</span><span class="sxs-lookup"><span data-stu-id="53ce1-116">After you type the shortcut, and the account and dimensions are populated, the Initial focus field is where the cursor or focus will move to.</span></span>  
+1. <span data-ttu-id="5b775-106">Přejděte do části Hlavní kniha > Účtová osnova > Účty > Alias hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="5b775-106">Go to General ledger > Chart of accounts > Accounts > Ledger account alias.</span></span>
+2. <span data-ttu-id="5b775-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="5b775-107">Click New.</span></span>
+3. <span data-ttu-id="5b775-108">Zadejte hodnotu do pole Alias hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="5b775-108">In the Ledger account alias field, type a value.</span></span>
+4. <span data-ttu-id="5b775-109">V poli Struktura účtu vyberte strukturu, do které účet a dimenze náleží.</span><span class="sxs-lookup"><span data-stu-id="5b775-109">In the Account structure field, select the structure the account and dimensions belong to.</span></span>
+5. <span data-ttu-id="5b775-110">V poli Společnost kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="5b775-110">In the Company field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="5b775-111">V seznamu najděte a vyberte společnost, které se alias má týkat.</span><span class="sxs-lookup"><span data-stu-id="5b775-111">In the list, find and select the company that the alias applies to.</span></span>
+7. <span data-ttu-id="5b775-112">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="5b775-112">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="5b775-113">V poli Definice aliasu účtu hlavní knihy zadejte účet a dimenze.</span><span class="sxs-lookup"><span data-stu-id="5b775-113">In the Ledger account alias definition field, specify the account and dimensions.</span></span>
+    * <span data-ttu-id="5b775-114">Účet a dimenze se vyplní při použití zástupce.</span><span class="sxs-lookup"><span data-stu-id="5b775-114">The account and dimensions will be populated when using the shortcut.</span></span>  
+9. <span data-ttu-id="5b775-115">V poli Počáteční výběr vyberte dimenzi, která bude mít výběr při použití alias.</span><span class="sxs-lookup"><span data-stu-id="5b775-115">In the Initial focus field, select the dimension that will have focus when the alias is used.</span></span>
+    * <span data-ttu-id="5b775-116">Po zadání zástupce a vyplnění účtu a dimenzí, se kurzor přesune do pole Počáteční výběr.</span><span class="sxs-lookup"><span data-stu-id="5b775-116">After you type the shortcut, and the account and dimensions are populated, the Initial focus field is where the cursor or focus will move to.</span></span>  
 

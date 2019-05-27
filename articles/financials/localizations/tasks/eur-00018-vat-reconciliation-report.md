@@ -16,28 +16,28 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5822a60456376647f2687fc2d211db3296575d47
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 712140b61be323e40617243b23a7eb2500058f7f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370142"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537629"
 ---
-# <a name="eur-00018-vat-reconciliation-report"></a><span data-ttu-id="0b8ab-103">EUR-00018 Sestava odsouhlasení DPH</span><span class="sxs-lookup"><span data-stu-id="0b8ab-103">EUR-00018 VAT reconciliation report</span></span>
+# <a name="eur-00018-vat-reconciliation-report"></a><span data-ttu-id="17679-103">EUR-00018 Sestava odsouhlasení DPH</span><span class="sxs-lookup"><span data-stu-id="17679-103">EUR-00018 VAT reconciliation report</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="0b8ab-104">Tato procedura ukazuje, jak generovat sestavu odsouhlasení daně, která je k dispozici pro islandské a norské právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-104">This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.</span></span> <span data-ttu-id="0b8ab-105">Byla vytvořena za použití ukázkových dat společnosti DEMF s hodnotou země/oblasti právnické osoby aktualizovanou na Norsko.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-105">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.</span></span>
+<span data-ttu-id="17679-104">Tato procedura ukazuje, jak generovat sestavu odsouhlasení daně, která je k dispozici pro islandské a norské právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="17679-104">This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.</span></span> <span data-ttu-id="17679-105">Byla vytvořena za použití ukázkových dat společnosti DEMF s hodnotou země/oblasti právnické osoby aktualizovanou na Norsko.</span><span class="sxs-lookup"><span data-stu-id="17679-105">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.</span></span>
 
-1. <span data-ttu-id="0b8ab-106">Přejděte na Daň > Dotazy a sestavy > Sestavy DPH > Sestava odsouhlasení daně.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-106">Go to Tax > Inquiries and reports > Sales tax reports > Tax reconciliation report.</span></span>
-2. <span data-ttu-id="0b8ab-107">V poli Z účtu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-107">In the From account field, enter or select a value.</span></span>
-    * <span data-ttu-id="0b8ab-108">Vyberte hodnotu 200140.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-108">Select the value 200140.</span></span>  
-3. <span data-ttu-id="0b8ab-109">V poli Na účet zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-109">In the To account field, enter or select a value.</span></span>
-    * <span data-ttu-id="0b8ab-110">Vyberte hodnotu 600180.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-110">Select the value 600180.</span></span>  
-4. <span data-ttu-id="0b8ab-111">V poli Období vyrovnání zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-111">In the Settlement period field, enter or select a value.</span></span>
-    * <span data-ttu-id="0b8ab-112">Vyberte hodnotu Pondělí.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-112">Select the value Mon.</span></span>  
-5. <span data-ttu-id="0b8ab-113">Zadejte datum do pole Od data.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-113">In the From date field, enter a date.</span></span>
-    * <span data-ttu-id="0b8ab-114">Vyberte hodnotu 2015-11-01.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-114">Select the value 2015-11-01.</span></span>  
-6. <span data-ttu-id="0b8ab-115">Vyberte možnost Ano v poli Zobrazit podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-115">Select Yes in the Show details field.</span></span>
-7. <span data-ttu-id="0b8ab-116">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="0b8ab-116">Click OK.</span></span>
+1. <span data-ttu-id="17679-106">Přejděte na Daň > Dotazy a sestavy > Sestavy DPH > Sestava odsouhlasení daně.</span><span class="sxs-lookup"><span data-stu-id="17679-106">Go to Tax > Inquiries and reports > Sales tax reports > Tax reconciliation report.</span></span>
+2. <span data-ttu-id="17679-107">V poli Z účtu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="17679-107">In the From account field, enter or select a value.</span></span>
+    * <span data-ttu-id="17679-108">Vyberte hodnotu 200140.</span><span class="sxs-lookup"><span data-stu-id="17679-108">Select the value 200140.</span></span>  
+3. <span data-ttu-id="17679-109">V poli Na účet zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="17679-109">In the To account field, enter or select a value.</span></span>
+    * <span data-ttu-id="17679-110">Vyberte hodnotu 600180.</span><span class="sxs-lookup"><span data-stu-id="17679-110">Select the value 600180.</span></span>  
+4. <span data-ttu-id="17679-111">V poli Období vyrovnání zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="17679-111">In the Settlement period field, enter or select a value.</span></span>
+    * <span data-ttu-id="17679-112">Vyberte hodnotu Pondělí.</span><span class="sxs-lookup"><span data-stu-id="17679-112">Select the value Mon.</span></span>  
+5. <span data-ttu-id="17679-113">Zadejte datum do pole Od data.</span><span class="sxs-lookup"><span data-stu-id="17679-113">In the From date field, enter a date.</span></span>
+    * <span data-ttu-id="17679-114">Vyberte hodnotu 2015-11-01.</span><span class="sxs-lookup"><span data-stu-id="17679-114">Select the value 2015-11-01.</span></span>  
+6. <span data-ttu-id="17679-115">Vyberte možnost Ano v poli Zobrazit podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="17679-115">Select Yes in the Show details field.</span></span>
+7. <span data-ttu-id="17679-116">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="17679-116">Click OK.</span></span>
 

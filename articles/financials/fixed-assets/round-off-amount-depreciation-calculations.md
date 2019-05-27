@@ -19,32 +19,32 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7721e46a72e0f8133ed67c597a066a97ffd61669
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308407"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549120"
 ---
-# <a name="round-off-amount-for-depreciation-calculations"></a><span data-ttu-id="3ea05-103">Částka pro zaokrouhlení výpočtů odpisů</span><span class="sxs-lookup"><span data-stu-id="3ea05-103">Round-off amount for depreciation calculations</span></span>
+# <a name="round-off-amount-for-depreciation-calculations"></a><span data-ttu-id="953fc-103">Částka pro zaokrouhlení výpočtů odpisů</span><span class="sxs-lookup"><span data-stu-id="953fc-103">Round-off amount for depreciation calculations</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3ea05-104">Tento článek popisuje pole Zaokrouhlit odpis, které se nachází na stránce Nastavení knihy.</span><span class="sxs-lookup"><span data-stu-id="3ea05-104">This article discusses the Round-off depreciation field that is found on the Book setup pages.</span></span>
+<span data-ttu-id="953fc-104">Tento článek popisuje pole Zaokrouhlit odpis, které se nachází na stránce Nastavení knihy.</span><span class="sxs-lookup"><span data-stu-id="953fc-104">This article discusses the Round-off depreciation field that is found on the Book setup pages.</span></span>
 
-<span data-ttu-id="3ea05-105">Celková částka odpisů je stanovena pro každou knihu.</span><span class="sxs-lookup"><span data-stu-id="3ea05-105">Round-off depreciation amounts are set for each book.</span></span> <span data-ttu-id="3ea05-106">Současné odpisové částky se používají v profilu odpisování dlouhodobého majetku, který ukazuje budoucí odpisy a hodnotu dlouhodobého majetku, a také v návrzích na odpisy.</span><span class="sxs-lookup"><span data-stu-id="3ea05-106">Round-off depreciation amounts are used in the fixed asset depreciation profile that shows the future depreciation and value of the fixed asset, and also in depreciation proposals.</span></span> <span data-ttu-id="3ea05-107">Zadejte nejnižší částku odpisu povolenou pro tuto knihu.</span><span class="sxs-lookup"><span data-stu-id="3ea05-107">Enter the lowest depreciation amount that is allowed for the book.</span></span> 
+<span data-ttu-id="953fc-105">Celková částka odpisů je stanovena pro každou knihu.</span><span class="sxs-lookup"><span data-stu-id="953fc-105">Round-off depreciation amounts are set for each book.</span></span> <span data-ttu-id="953fc-106">Současné odpisové částky se používají v profilu odpisování dlouhodobého majetku, který ukazuje budoucí odpisy a hodnotu dlouhodobého majetku, a také v návrzích na odpisy.</span><span class="sxs-lookup"><span data-stu-id="953fc-106">Round-off depreciation amounts are used in the fixed asset depreciation profile that shows the future depreciation and value of the fixed asset, and also in depreciation proposals.</span></span> <span data-ttu-id="953fc-107">Zadejte nejnižší částku odpisu povolenou pro tuto knihu.</span><span class="sxs-lookup"><span data-stu-id="953fc-107">Enter the lowest depreciation amount that is allowed for the book.</span></span> 
 
-<span data-ttu-id="3ea05-108">Bez ohledu na nastavené zaokrouhlování, není částka odpisu v posledním období odpisu zaokrouhlena.</span><span class="sxs-lookup"><span data-stu-id="3ea05-108">Regardless of the rounding that is set up, the depreciation amount in the last depreciation period isn't rounded.</span></span> <span data-ttu-id="3ea05-109">Na konci posledního období odpisu musí být hodnota dlouhodobého majetku 0 (nula) nebo hodnotu odpadu, pokud se používá konečná zůstatková hodnota.</span><span class="sxs-lookup"><span data-stu-id="3ea05-109">At the end of the last depreciation period, the value of the fixed asset must be 0 (zero) or the scrap value, if scrap value is used.</span></span>
+<span data-ttu-id="953fc-108">Bez ohledu na nastavené zaokrouhlování, není částka odpisu v posledním období odpisu zaokrouhlena.</span><span class="sxs-lookup"><span data-stu-id="953fc-108">Regardless of the rounding that is set up, the depreciation amount in the last depreciation period isn't rounded.</span></span> <span data-ttu-id="953fc-109">Na konci posledního období odpisu musí být hodnota dlouhodobého majetku 0 (nula) nebo hodnotu odpadu, pokud se používá konečná zůstatková hodnota.</span><span class="sxs-lookup"><span data-stu-id="953fc-109">At the end of the last depreciation period, the value of the fixed asset must be 0 (zero) or the scrap value, if scrap value is used.</span></span>
 
-### <a name="example"></a><span data-ttu-id="3ea05-110">Příklad</span><span class="sxs-lookup"><span data-stu-id="3ea05-110">Example</span></span>
+### <a name="example"></a><span data-ttu-id="953fc-110">Příklad</span><span class="sxs-lookup"><span data-stu-id="953fc-110">Example</span></span>
 
-<span data-ttu-id="3ea05-111">Odpis je bez zaokrouhlení vypočítán v částce 2 444,44.</span><span class="sxs-lookup"><span data-stu-id="3ea05-111">Depreciation without rounding is calculated as 2,444.44.</span></span> <span data-ttu-id="3ea05-112">Stejně jako v následující tabulce se částky, které budou nabízeny, liší v závislosti na tom, jak je nastavené zaokrouhlování.</span><span class="sxs-lookup"><span data-stu-id="3ea05-112">As the following table shows, the amounts that are suggested vary, depending on how rounding is set up.</span></span>
+<span data-ttu-id="953fc-111">Odpis je bez zaokrouhlení vypočítán v částce 2 444,44.</span><span class="sxs-lookup"><span data-stu-id="953fc-111">Depreciation without rounding is calculated as 2,444.44.</span></span> <span data-ttu-id="953fc-112">Stejně jako v následující tabulce se částky, které budou nabízeny, liší v závislosti na tom, jak je nastavené zaokrouhlování.</span><span class="sxs-lookup"><span data-stu-id="953fc-112">As the following table shows, the amounts that are suggested vary, depending on how rounding is set up.</span></span>
 
-| <span data-ttu-id="3ea05-113">Metoda zaokrouhlení</span><span class="sxs-lookup"><span data-stu-id="3ea05-113">Rounding method</span></span> | <span data-ttu-id="3ea05-114">Odpisovaná částka</span><span class="sxs-lookup"><span data-stu-id="3ea05-114">Depreciation amount</span></span> |
+| <span data-ttu-id="953fc-113">Metoda zaokrouhlení</span><span class="sxs-lookup"><span data-stu-id="953fc-113">Rounding method</span></span> | <span data-ttu-id="953fc-114">Odpisovaná částka</span><span class="sxs-lookup"><span data-stu-id="953fc-114">Depreciation amount</span></span> |
 |-----------------|---------------------|
-| <span data-ttu-id="3ea05-115">Zaokrouhlení 0,1</span><span class="sxs-lookup"><span data-stu-id="3ea05-115">Rounding 0.1</span></span>    | <span data-ttu-id="3ea05-116">2 444,40</span><span class="sxs-lookup"><span data-stu-id="3ea05-116">2,444.40</span></span>            |
-| <span data-ttu-id="3ea05-117">Zaokrouhlení 1,00</span><span class="sxs-lookup"><span data-stu-id="3ea05-117">Rounding 1.00</span></span>   | <span data-ttu-id="3ea05-118">2,444.00</span><span class="sxs-lookup"><span data-stu-id="3ea05-118">2,444.00</span></span>            |
-| <span data-ttu-id="3ea05-119">Zaokrouhlení 10,00</span><span class="sxs-lookup"><span data-stu-id="3ea05-119">Rounding 10.00</span></span>  | <span data-ttu-id="3ea05-120">2,440.00</span><span class="sxs-lookup"><span data-stu-id="3ea05-120">2,440.00</span></span>            |
-| <span data-ttu-id="3ea05-121">Zaokrouhlení 100,00</span><span class="sxs-lookup"><span data-stu-id="3ea05-121">Rounding 100.00</span></span> | <span data-ttu-id="3ea05-122">2,400.00</span><span class="sxs-lookup"><span data-stu-id="3ea05-122">2,400.00</span></span>            |
+| <span data-ttu-id="953fc-115">Zaokrouhlení 0,1</span><span class="sxs-lookup"><span data-stu-id="953fc-115">Rounding 0.1</span></span>    | <span data-ttu-id="953fc-116">2 444,40</span><span class="sxs-lookup"><span data-stu-id="953fc-116">2,444.40</span></span>            |
+| <span data-ttu-id="953fc-117">Zaokrouhlení 1,00</span><span class="sxs-lookup"><span data-stu-id="953fc-117">Rounding 1.00</span></span>   | <span data-ttu-id="953fc-118">2,444.00</span><span class="sxs-lookup"><span data-stu-id="953fc-118">2,444.00</span></span>            |
+| <span data-ttu-id="953fc-119">Zaokrouhlení 10,00</span><span class="sxs-lookup"><span data-stu-id="953fc-119">Rounding 10.00</span></span>  | <span data-ttu-id="953fc-120">2,440.00</span><span class="sxs-lookup"><span data-stu-id="953fc-120">2,440.00</span></span>            |
+| <span data-ttu-id="953fc-121">Zaokrouhlení 100,00</span><span class="sxs-lookup"><span data-stu-id="953fc-121">Rounding 100.00</span></span> | <span data-ttu-id="953fc-122">2,400.00</span><span class="sxs-lookup"><span data-stu-id="953fc-122">2,400.00</span></span>            |
 
 
 

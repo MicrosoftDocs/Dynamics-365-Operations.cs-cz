@@ -18,49 +18,49 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: cfe0f6995598757dcea824e1bb4f7ef8ab54a67b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "354476"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549912"
 ---
-# <a name="correct-inventory-tracking-information"></a><span data-ttu-id="2bdbd-103">Oprava informací o sledování zásob</span><span class="sxs-lookup"><span data-stu-id="2bdbd-103">Correct inventory tracking information</span></span>
+# <a name="correct-inventory-tracking-information"></a><span data-ttu-id="0d265-103">Oprava informací o sledování zásob</span><span class="sxs-lookup"><span data-stu-id="0d265-103">Correct inventory tracking information</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="2bdbd-104">Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu zásob, za účelem opravit informace o sledování zásob.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information.</span></span> <span data-ttu-id="2bdbd-105">V tomto příkladu aktualizujeme informace o položky řízené dávkou pomocí změny nesprávně registrované dávky na jinou dávku.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-105">In this example, we’ll update the information of a batch controlled item by changing an incorrectly registered batch to another batch.</span></span> <span data-ttu-id="2bdbd-106">Tento proces můžete projít pomocí ukázkových dat společnosti USPI nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-106">You can walk through this procedure in demo data company USPI, or using your own data.</span></span> <span data-ttu-id="2bdbd-107">Při použití vlastních dat musí mít zboží, pro které je povolena dávka a nesmí být řízeno na základě umístění.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-107">If you use your own data, you need to have an item that’s batch-enabled, and it must not be location-controlled.</span></span> <span data-ttu-id="2bdbd-108">Rovněž je třeba mít nastaven název deníku zásob pro převody zásob.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-108">You also need to have an inventory journal name set up for inventory transfers.</span></span> <span data-ttu-id="2bdbd-109">Tyto úkoly obvykle provádějí zaměstnanci skladu.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-109">These tasks would normally be carried out by a warehouse employee.</span></span>
+<span data-ttu-id="0d265-104">Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu zásob, za účelem opravit informace o sledování zásob.</span><span class="sxs-lookup"><span data-stu-id="0d265-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information.</span></span> <span data-ttu-id="0d265-105">V tomto příkladu aktualizujeme informace o položky řízené dávkou pomocí změny nesprávně registrované dávky na jinou dávku.</span><span class="sxs-lookup"><span data-stu-id="0d265-105">In this example, we’ll update the information of a batch controlled item by changing an incorrectly registered batch to another batch.</span></span> <span data-ttu-id="0d265-106">Tento proces můžete projít pomocí ukázkových dat společnosti USPI nebo pomocí vlastních dat.</span><span class="sxs-lookup"><span data-stu-id="0d265-106">You can walk through this procedure in demo data company USPI, or using your own data.</span></span> <span data-ttu-id="0d265-107">Při použití vlastních dat musí mít zboží, pro které je povolena dávka a nesmí být řízeno na základě umístění.</span><span class="sxs-lookup"><span data-stu-id="0d265-107">If you use your own data, you need to have an item that’s batch-enabled, and it must not be location-controlled.</span></span> <span data-ttu-id="0d265-108">Rovněž je třeba mít nastaven název deníku zásob pro převody zásob.</span><span class="sxs-lookup"><span data-stu-id="0d265-108">You also need to have an inventory journal name set up for inventory transfers.</span></span> <span data-ttu-id="0d265-109">Tyto úkoly obvykle provádějí zaměstnanci skladu.</span><span class="sxs-lookup"><span data-stu-id="0d265-109">These tasks would normally be carried out by a warehouse employee.</span></span>
 
 
-## <a name="create-an-inventory-transfer-journal"></a><span data-ttu-id="2bdbd-110">Vytvořit deník převodu zásob</span><span class="sxs-lookup"><span data-stu-id="2bdbd-110">Create an inventory transfer journal</span></span>
-1. <span data-ttu-id="2bdbd-111">Přejít do převodu.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-111">Go to Transfer.</span></span>
-2. <span data-ttu-id="2bdbd-112">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-112">Click New.</span></span>
-3. <span data-ttu-id="2bdbd-113">V poli Název zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-113">In the Name field, enter or select a value.</span></span>
-4. <span data-ttu-id="2bdbd-114">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-114">Click OK.</span></span>
+## <a name="create-an-inventory-transfer-journal"></a><span data-ttu-id="0d265-110">Vytvořit deník převodu zásob</span><span class="sxs-lookup"><span data-stu-id="0d265-110">Create an inventory transfer journal</span></span>
+1. <span data-ttu-id="0d265-111">Přejít do převodu.</span><span class="sxs-lookup"><span data-stu-id="0d265-111">Go to Transfer.</span></span>
+2. <span data-ttu-id="0d265-112">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="0d265-112">Click New.</span></span>
+3. <span data-ttu-id="0d265-113">V poli Název zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0d265-113">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="0d265-114">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="0d265-114">Click OK.</span></span>
 
-## <a name="create-journal-lines"></a><span data-ttu-id="2bdbd-115">Vytvoření řádků deníku</span><span class="sxs-lookup"><span data-stu-id="2bdbd-115">Create journal lines</span></span>
-1. <span data-ttu-id="2bdbd-116">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-116">Click New.</span></span>
-2. <span data-ttu-id="2bdbd-117">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-117">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="2bdbd-118">Pokud používáte USPI, vyberte položku M5003.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-118">If you are using USPI, select item M5003.</span></span>  
-3. <span data-ttu-id="2bdbd-119">Zadejte číslo do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-119">In the Quantity field, enter a number.</span></span>
-4. <span data-ttu-id="2bdbd-120">Klepněte na kartu Dimenze zásob.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-120">Click the Inventory dimensions tab.</span></span>
-5. <span data-ttu-id="2bdbd-121">V poli Číslo dávky zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-121">In the Batch number field, enter or select a value.</span></span>
-6. <span data-ttu-id="2bdbd-122">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-122">In the Site field, enter or select a value.</span></span>
-7. <span data-ttu-id="2bdbd-123">V poli Sklad zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-123">In the Warehouse field, enter or select a value.</span></span>
-8. <span data-ttu-id="2bdbd-124">V poli Číslo dávky zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-124">In the Batch number field, enter or select a value.</span></span>
+## <a name="create-journal-lines"></a><span data-ttu-id="0d265-115">Vytvoření řádků deníku</span><span class="sxs-lookup"><span data-stu-id="0d265-115">Create journal lines</span></span>
+1. <span data-ttu-id="0d265-116">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="0d265-116">Click New.</span></span>
+2. <span data-ttu-id="0d265-117">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0d265-117">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="0d265-118">Pokud používáte USPI, vyberte položku M5003.</span><span class="sxs-lookup"><span data-stu-id="0d265-118">If you are using USPI, select item M5003.</span></span>  
+3. <span data-ttu-id="0d265-119">Zadejte číslo do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="0d265-119">In the Quantity field, enter a number.</span></span>
+4. <span data-ttu-id="0d265-120">Klepněte na kartu Dimenze zásob.</span><span class="sxs-lookup"><span data-stu-id="0d265-120">Click the Inventory dimensions tab.</span></span>
+5. <span data-ttu-id="0d265-121">V poli Číslo dávky zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0d265-121">In the Batch number field, enter or select a value.</span></span>
+6. <span data-ttu-id="0d265-122">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0d265-122">In the Site field, enter or select a value.</span></span>
+7. <span data-ttu-id="0d265-123">V poli Sklad zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0d265-123">In the Warehouse field, enter or select a value.</span></span>
+8. <span data-ttu-id="0d265-124">V poli Číslo dávky zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="0d265-124">In the Batch number field, enter or select a value.</span></span>
 
-## <a name="post-the-journal"></a><span data-ttu-id="2bdbd-125">Zaúčtovat deník</span><span class="sxs-lookup"><span data-stu-id="2bdbd-125">Post the journal</span></span>
-1. <span data-ttu-id="2bdbd-126">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-126">Click Post.</span></span>
-2. <span data-ttu-id="2bdbd-127">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-127">Click OK.</span></span>
+## <a name="post-the-journal"></a><span data-ttu-id="0d265-125">Zaúčtovat deník</span><span class="sxs-lookup"><span data-stu-id="0d265-125">Post the journal</span></span>
+1. <span data-ttu-id="0d265-126">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="0d265-126">Click Post.</span></span>
+2. <span data-ttu-id="0d265-127">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="0d265-127">Click OK.</span></span>
 
-## <a name="check-tracing-information"></a><span data-ttu-id="2bdbd-128">Kontrola informací o trase</span><span class="sxs-lookup"><span data-stu-id="2bdbd-128">Check tracing information</span></span>
-1. <span data-ttu-id="2bdbd-129">Klepněte na položku Zásoby.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-129">Click Inventory.</span></span>
-2. <span data-ttu-id="2bdbd-130">Klikněte na Trasa.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-130">Click Trace.</span></span>
-3. <span data-ttu-id="2bdbd-131">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-131">Click OK.</span></span>
-    * <span data-ttu-id="2bdbd-132">Pomocí těchto informací trasování lze zpětně sledovat, ze které dávky jste opravili skladové položky.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-132">Using this tracing information you can back trace which batch you corrected inventory from.</span></span>  <span data-ttu-id="2bdbd-133">Můžete také použít stránku Sledování položky pro tyto informace.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-133">You can also use the Item tracing page to see this information.</span></span>  
-4. <span data-ttu-id="2bdbd-134">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-134">Close the page.</span></span>
+## <a name="check-tracing-information"></a><span data-ttu-id="0d265-128">Kontrola informací o trase</span><span class="sxs-lookup"><span data-stu-id="0d265-128">Check tracing information</span></span>
+1. <span data-ttu-id="0d265-129">Klepněte na položku Zásoby.</span><span class="sxs-lookup"><span data-stu-id="0d265-129">Click Inventory.</span></span>
+2. <span data-ttu-id="0d265-130">Klikněte na Trasa.</span><span class="sxs-lookup"><span data-stu-id="0d265-130">Click Trace.</span></span>
+3. <span data-ttu-id="0d265-131">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="0d265-131">Click OK.</span></span>
+    * <span data-ttu-id="0d265-132">Pomocí těchto informací trasování lze zpětně sledovat, ze které dávky jste opravili skladové položky.</span><span class="sxs-lookup"><span data-stu-id="0d265-132">Using this tracing information you can back trace which batch you corrected inventory from.</span></span>  <span data-ttu-id="0d265-133">Můžete také použít stránku Sledování položky pro tyto informace.</span><span class="sxs-lookup"><span data-stu-id="0d265-133">You can also use the Item tracing page to see this information.</span></span>  
+4. <span data-ttu-id="0d265-134">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="0d265-134">Close the page.</span></span>
 
-## <a name="check-inventory-transactions"></a><span data-ttu-id="2bdbd-135">Kontrola transakcí zásob</span><span class="sxs-lookup"><span data-stu-id="2bdbd-135">Check inventory transactions</span></span>
-1. <span data-ttu-id="2bdbd-136">Klepněte na položku Zásoby.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-136">Click Inventory.</span></span>
-2. <span data-ttu-id="2bdbd-137">Klikněte na Transakce.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-137">Click Transactions.</span></span>
-    * <span data-ttu-id="2bdbd-138">V tomto poli se zobrazí transakce, které byly vytvořeny při zaúčtování deníku.</span><span class="sxs-lookup"><span data-stu-id="2bdbd-138">Here you can see the transactions that were created when you posted your journal.</span></span>   
+## <a name="check-inventory-transactions"></a><span data-ttu-id="0d265-135">Kontrola transakcí zásob</span><span class="sxs-lookup"><span data-stu-id="0d265-135">Check inventory transactions</span></span>
+1. <span data-ttu-id="0d265-136">Klepněte na položku Zásoby.</span><span class="sxs-lookup"><span data-stu-id="0d265-136">Click Inventory.</span></span>
+2. <span data-ttu-id="0d265-137">Klikněte na Transakce.</span><span class="sxs-lookup"><span data-stu-id="0d265-137">Click Transactions.</span></span>
+    * <span data-ttu-id="0d265-138">V tomto poli se zobrazí transakce, které byly vytvořeny při zaúčtování deníku.</span><span class="sxs-lookup"><span data-stu-id="0d265-138">Here you can see the transactions that were created when you posted your journal.</span></span>   
 

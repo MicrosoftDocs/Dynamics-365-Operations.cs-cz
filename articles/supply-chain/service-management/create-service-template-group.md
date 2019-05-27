@@ -19,23 +19,23 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e2c3af831cd9433bdc6180811a3af82d3fbbf8c5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "348220"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552131"
 ---
-# <a name="create-a-service-template-group"></a><span data-ttu-id="808d3-103">Vytvoření skupiny šablon servisu</span><span class="sxs-lookup"><span data-stu-id="808d3-103">Create a service template group</span></span>  
+# <a name="create-a-service-template-group"></a><span data-ttu-id="9de72-103">Vytvoření skupiny šablon servisu</span><span class="sxs-lookup"><span data-stu-id="9de72-103">Create a service template group</span></span>  
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="808d3-104">Pomocí skupin servisních šablon lze řadit a filtrovat servisní šablony.</span><span class="sxs-lookup"><span data-stu-id="808d3-104">You can use service template groups to sort and filter service templates.</span></span>
+<span data-ttu-id="9de72-104">Pomocí skupin servisních šablon lze řadit a filtrovat servisní šablony.</span><span class="sxs-lookup"><span data-stu-id="9de72-104">You can use service template groups to sort and filter service templates.</span></span>
 
-1. <span data-ttu-id="808d3-105">Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní smlouvy** \> **Skupiny šablon servisu**.</span><span class="sxs-lookup"><span data-stu-id="808d3-105">Click **Service management** \> **Setup** \> **Service agreements** \> **Service template groups**.</span></span>
-2. <span data-ttu-id="808d3-106">Vytvořte novou skupinu šablon servisu.</span><span class="sxs-lookup"><span data-stu-id="808d3-106">Create a new service template group.</span></span>
-3. <span data-ttu-id="808d3-107">Zadejte ID skupiny, popis a případně nadřazenou skupinu šablon servisu.</span><span class="sxs-lookup"><span data-stu-id="808d3-107">Enter the group ID, a description, and a parent service template group, if there is one.</span></span>
-4. <span data-ttu-id="808d3-108">Uložte skupinu šablon servisu.</span><span class="sxs-lookup"><span data-stu-id="808d3-108">Save the service template group.</span></span>
-5. <span data-ttu-id="808d3-109">Nastavte posuvník **Stromová struktura** na **Ano** pro otevření stromové struktury a zobrazení skupin šablon servisu buď jako hierarchii ve formě stromového zobrazení nebo ve formě přehledu.</span><span class="sxs-lookup"><span data-stu-id="808d3-109">Set the **Tree control** slider to **Yes** to open the tree view and view the service template groups either as a hierarchy in a tree view or as an overview.</span></span>
+1. <span data-ttu-id="9de72-105">Klikněte na **Správa servisu** \> **Nastavení** \> **Servisní smlouvy** \> **Skupiny šablon servisu**.</span><span class="sxs-lookup"><span data-stu-id="9de72-105">Click **Service management** \> **Setup** \> **Service agreements** \> **Service template groups**.</span></span>
+2. <span data-ttu-id="9de72-106">Vytvořte novou skupinu šablon servisu.</span><span class="sxs-lookup"><span data-stu-id="9de72-106">Create a new service template group.</span></span>
+3. <span data-ttu-id="9de72-107">Zadejte ID skupiny, popis a případně nadřazenou skupinu šablon servisu.</span><span class="sxs-lookup"><span data-stu-id="9de72-107">Enter the group ID, a description, and a parent service template group, if there is one.</span></span>
+4. <span data-ttu-id="9de72-108">Uložte skupinu šablon servisu.</span><span class="sxs-lookup"><span data-stu-id="9de72-108">Save the service template group.</span></span>
+5. <span data-ttu-id="9de72-109">Nastavte posuvník **Stromová struktura** na **Ano** pro otevření stromové struktury a zobrazení skupin šablon servisu buď jako hierarchii ve formě stromového zobrazení nebo ve formě přehledu.</span><span class="sxs-lookup"><span data-stu-id="9de72-109">Set the **Tree control** slider to **Yes** to open the tree view and view the service template groups either as a hierarchy in a tree view or as an overview.</span></span>
 
 
 
