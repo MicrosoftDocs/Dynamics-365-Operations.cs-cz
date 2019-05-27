@@ -3,7 +3,7 @@ title: Synchronizujte informace o množství zásob z aplikace Finance and Opera
 description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci informací na úrovni zásob z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/13/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: c7dce4427810b93e0ee4f1a27881c2b1b04fb125
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842549"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1535691"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Synchronizace informací o úrovni zásob z aplikace Finance and Operations do služby Field Service 
 
@@ -75,6 +75,14 @@ Entita **zásoby externího produktu** je nová entita, která se používá pou
 
 ## <a name="prerequisites-and-mapping-setup"></a>Nastavení mapování a předpokladů
 
+### <a name="data-integration"></a>Integrace dat
+Aby projekt fungoval, je nutné zajistit, aby byl klíč integrace aktualizován pro msdynce_externalproductinventories.
+1.  Přejděte na **Integrace dat > Sady připojení**.
+2.  Vyberte použitou sadu připojení.
+3.  Na kartě **Klíč integrace** se ujistěte, že jsou do msdynce_externalproductinventories přidány následující klíče:
+      - msdynce_productnumber (číslo produktu)
+      - msdynce_warehouseid (ID skladu)
+      
 ### <a name="data-integration-project"></a>Projekt integrace dat
 Můžete použít filtry s pokročilým dotazováním a filtrování, pomocí kterých lze řídit, že informace o zásobách budou z aplikace Finance and Operations do služby Field Service odesílat pouze požadované produkty a sklady.
 

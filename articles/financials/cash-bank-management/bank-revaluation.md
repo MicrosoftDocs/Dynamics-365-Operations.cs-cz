@@ -3,7 +3,7 @@ title: Přecenění cizí měny banky
 description: Toto téma obsahuje přehled procesu bankovního přecenění cizí měny. Obsahuje informace o nastavení, spuštění procesu, výpočtu proces a stornování transakcí přecenění.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3aed5a6c12e8dd39956f906f922bfbed1b8fb680
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976637"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538625"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Přecenění cizí měny banky
 
@@ -52,7 +52,7 @@ Než budete moci zpracovávat přecenění cizí měny, je potřeba zapnout bank
 3. Na kartě **číselné řady** přidejte číselnou řadu pro přecenění cizí měny.
 4. Aktualizujte prohlížeč a potívejte se na **přecenění cizí měny** v části **pravidelné úlohy** na stránce oblasti.
 
-Je nutné aktivovat funkci pro každou právnickou osobu, která bude používat přecenění cizí měny.
+Je nutné aktivovat funkci pro každou právnickou osobu, která bude používat přecenění cizí měny. Pokud jste přiřazeni k roli správce systému nebo roli správce funkcí, můžete eliminovat tento krok povolením funkce s názvem **Povolit bankovní přecenění bez parametru** v pracovním prostoru **Správa funkcí**.
 
 > [!NOTE]
 > Používá-li vaší právnická osoba ruský, polský nebo a maďarský kód země nebo oblasti, již lze přecenění cizí měny banky provést. Nebudete moci používat přecenění cizí měny, které používají jiné země nebo oblasti.

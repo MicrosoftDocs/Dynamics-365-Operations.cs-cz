@@ -1,27 +1,27 @@
 ---
 title: Definice zásad výdajů
 description: Můžete definovat zásady výdajů, které musí pracovníci dodržovat při zadávání a odesílání sestav výdajů a cestovních žádanek v aplikaci Microsoft Dynamics 365 for Finance and Operations.
-author: saraschi2
+author: ryansandness
 manager: AnnBe
-ms.date: 02/23/2018
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicyListPage, TrvPolicyRule
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04eaff110fea021ddee32be650be540894eb703b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 9f0ff56f0ff106bc168b6a27612e08743a539a07
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342424"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1514432"
 ---
 # <a name="expense-policies"></a>Zásady výdajů
 
@@ -42,9 +42,13 @@ Můžete definovat tři typy zásad:
 
 - Chyba – Požaduje po pracovníkovi opravit výdaje, aby byly v souladu se zásadou před odesláním sestavy výdajů nebo cestovní žádanky.       
  
-  - Zdůvodnění – Požaduje po pracovníkovi nebo manažerovi zadat odůvodnění částky přesahující zásadu před odesláním sestavy výdajů nebo cestovní žádanky.        
- 
-  Můžete také nastavit rozsah dat, pro které jsou zásady výdajů platné. Například letenky pro lety z Dánska      
-  do New York City mohou být během cestovní špičky v průběhu dovolených drahé. Můžete definovat pravidlo pro ceny letenek, které bude omezovat      
-  náklady na lety do New York City na 5000 DKK, a také zadat, že toto pravidlo má platit od 15. března      
-  do 15. září.
+ - Zdůvodnění – Požaduje po pracovníkovi nebo manažerovi zadat odůvodnění částky přesahující zásadu před odesláním sestavy výdajů nebo cestovní žádanky.        
+
+# <a name="policy-tips"></a>Tipy pro zásady
+Zde je několik návrhů, které vám mohou pomoci při vytváření nových zásad pro správu výdajů. 
+* Zásady mají časovou platnost a neuplatní se, pokud je zásada vytvořena s datem po datu, kdy došlo k výdaji. Vytváříte-li například novou zásadu dnes za účelem vynucení maximálních výdajů na jídlo ve výši 50 USD, nebude možné proti této zásadě kontrolovat existující výdaje, které jste zadali včera.
+* Při vytváření zásady pro kategorii výdajů, která může být rozepsaná, zvažte přidání podmínky pro typ řádku výdajů. Některé zásady, jako je například vyžadování účtenky, nemusí mít smysl pro rozepsané řádky a měly by být použity pouze na řádek záhlaví nebo na nerozepsaný řádek. 
+
+# <a name="when-to-evaluate-policies"></a>Kdy vyhodnotit zásady
+
+V parametrech správy výdajů je k dispozici možnost vyhodnotit zásady správy výdajů při uložení řádku nebo při odeslání sestavy výdajů. Rozhodnete-li se vyhodnocovat při uložení řádku, zajistíte, že uživatelé mají včasnější viditelnost toho, co musí udělat pro dokončení všech svých sestav výdajů najednou. V opačném případě můžete zpozdit vyhodnocení zásady a ušetřit čas v případě, že dochází k ověření na konci během odesílání do workflow.

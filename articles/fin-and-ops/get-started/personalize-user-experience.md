@@ -3,7 +3,7 @@ title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 78c96c58b8c3331fcadb3e5c9b25dfef3b1b4cbc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975844"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1528837"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -75,7 +75,7 @@ Nejtypičtější a nejdůležitější změny, které lze na stránce provést,
 
 Kromě toho jsou k dispozici základní typy explicitního přizpůsobení kliknutím pravým tlačítkem myši a následným výběrem **Přizpůsobit**. (Všimněte si, že ne všechny prvky na stránce mohou být přizpůsobeny.) Použijete-li tuto metodu přizpůsobení, zobrazí se okno Vlastnosti prvku.
 
-[![Přizpůsobení vlastností prvku](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
+[![Přizpůsobení vlastností prvku](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
 
 Můžete použít okno vlastností pro individuální nastavení prvku následujícími způsoby:
 
@@ -91,7 +91,7 @@ Okna vlastností mohou obsahovat další možnosti přizpůsobení, v závislost
 
 Pokud chcete provést více změn stránky nebo provést změny, které nejsou k dispozici prostřednictvím dalších mechanismů (jako je například změnou uspořádání prvků), lze použít panel nástrojů **Individuální nastavení**. Chcete-li otevřít panel nástrojů **Přizpůsobení**, vyberte **Přizpůsobit tento formulář** v okně vlastnosti prvku. Můžete také vybrat **Přizpůsobit tento formulář** ve skupině **Přizpůsobit** na kartě **Možnosti** každého podokna akcí.
 
-[![Panel nástrojů individuálních nastavení](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
+[![Panel nástrojů individuálních nastavení](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigace na stránce
 

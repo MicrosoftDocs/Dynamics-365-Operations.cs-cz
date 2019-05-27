@@ -18,11 +18,11 @@ ms.author: v-dmpere
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
 ms.openlocfilehash: ebc083e538ac863e54a87bafea0090389a51d6dd
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "969363"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537625"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 

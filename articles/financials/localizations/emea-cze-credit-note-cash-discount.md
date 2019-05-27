@@ -17,12 +17,12 @@ ms.search.region: Czech Republic
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 64aa64cd487dfed1f8930a868da37e93761c2dd3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ffafaebda0d3df49b1d69b9f269380010cd8d5c6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537658"
 ---
 # <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 

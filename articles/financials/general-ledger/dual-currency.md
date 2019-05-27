@@ -3,7 +3,7 @@ title: Duální měna
 description: Toto téma obsahuje informace o duální měně, kdy je měna vykazování použita jako druhá zúčtovací měna pro aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3665ec1cb15fc63e5707a4721699872fe81424a0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330303"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1532241"
 ---
 # <a name="dual-currency"></a>Duální měna
 
@@ -61,6 +61,9 @@ Pro různé sestavy a dotazy byla také přidána logika pro potlačení částe
 ## <a name="financial-journals"></a>Finanční deníky
 
 Byly aktualizovány finanční deníky, jako je například deník hlavní knihy a deník faktury dodavatele tak, aby zahrnovaly další informace o sekundární měně. Součty pro doklad a deník jsou nyní zobrazeny v měně vykazování. Kromě toho se informace o směnném kurzu měny vykazování nyní zobrazují na kartě **Hlavní** řádek deníku. Proto je možné přepsat směnný kurz měny vykazování při zadávání transakcí.
+
+## <a name="vendor-invoices-sales-orders-and-sales-agreements"></a>Faktury dodavatele, prodejní objednávky a prodejní smlouvy
+Faktury dodavatele, prodejní objednávky a prodejní smlouvy byly aktualizovány tak, aby zahrnovaly pevný směnný kurz pro měnu vykazování. Pevný směnný kurz lze definovat jak pro měnu účtování, tak pro měnu vykazování, pokud je měna transakce odlišná. Pokud jsou zúčtovací měna a měna vykazování stejné, bude pevný směnný kurz synchronizován s použitím pevné sazby zúčtovací měny jako pevné sazby měny vykazování. Pevný směnný kurz měny pro vykazování nelze pro tuto konfiguraci změnit. Pokud se zúčtovací měna a měna vykazování liší, pevný směnný kurz lze definovat jak pro měnu účtování, tak pro měnu vykazování během zadávání transakce. Pokud v hlavní knize není definována měna vykazování, nebude povoleno pole **Pevný směnný kurz měny vykazování** a nebude vypočtena žádná částka měny vykazování.
 
 ## <a name="module-changes"></a>Změny modulu
 
@@ -159,9 +162,9 @@ Kromě toho byly provedeny zásadní změny procesu odpisování. Tyto změny vy
         | Dlouhodobý majetek | Rezervovat      | typ transakce | Datum transakce | Měna | Částka v měně transakce | Množství  | Sm. kurz | Částka v měně vykazování |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
         | BUIL-00001  | 200\_SLLT | Pořizovací cena      | 6/3/2016         | DKK      | 1 000 000                      | 500,000 | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Odpis     | 6/3/2016         | DKK      | 50 000                         | 50 000  | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Odpis     | 6/3/2016         | DKK      | 50 000                         | 50 000  | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Odpis     | 6/3/2016         | DKK      | 50 000                         | 50 000  | 2,5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Odpis     | 6/3/2016         | DKK      | 50 000                         | 50,000  | 2,5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Odpis     | 6/3/2016         | DKK      | 50 000                         | 50,000  | 2,5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Odpis     | 6/3/2016         | DKK      | 50,000                         | 50,000  | 2,5       | 250,000                   |
 
     - Mnozí zákazníci sledovali podrobnosti o svých majetkových transakcích v sešitech. Tyto informace zahrnují směnné kurzy a částky. Pokud máte tato data v sešitu, můžete vytvořit vlastní typ směnného kurzu a aktualizovat ho směnnými kurzy ze sešitu. Tento typ směnného kurzu se pak použije k zadání výchozího směnného kurzu k datu pořízení a vypočítá částku v měně vykazování. Pokud není vybrán typ směnného kurzu, průvodce použije typ směnného kurzu, který byl definován v hlavní knize.
     - Směnný kurz a částky v měně vykazování nelze měnit. Pokud změníte směnný kurz, částka v měně vykazování se přepočítá s použitím nového kurzu.

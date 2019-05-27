@@ -1,9 +1,9 @@
 ---
 title: Zobrazení oznámení objednávek v pokladním místě (POS)
-description: Toto téma popisuje postup povolení oznámení objednávek v pokladním místě a architekturu oznámení. Vývojáři budou moci rozšířit tato oznámení na operace kromě operací plnění objednávky.
+description: Toto téma popisuje postup povolení oznámení objednávek v pokladním místě a architekturu oznámení.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361330"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530263"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Zobrazení oznámení objednávek v pokladním místě (POS)
 
@@ -67,6 +67,10 @@ Tlačítka POS mohou nyní zobrazit počet, což pracovníkům usnadňuje určit
 Následující obrázek znázorňuje nastavení aktivního obsahu v návrháři mřížky tlačítek.
 
 ![Nastavení aktivního obsahu v návrháři mřížky tlačítek](./media/ButtonGridDesigner.png "Nastavení aktivního obsahu v návrháři mřížky tlačítek")
+
+Chcete-li zobrazit počet oznámení na tlačítku, je nutné zajistit, aby bylo aktualizováno správné rozvržení obrazovky. Chcete-li určit rozvržení obrazovky, které používá POS, vyberte ikonu **Nastavení** v pravém horním rohu a poznamenejte si **ID rozvržení obrazovky** a **Rozlišení rozvržení**. Nyní pomocí prohlížeče Edge přejděte na stránku **Rozvržení obrazovky** v aplikaci Dynamics 365 for Finance and Operations, najděte výše uvedené **ID rozvržení obrazovky** a **Rozlišení rozvržení** a zaškrtněte políčko **Povolit živý obsah**. Přejděte na **Maloobchod > IT pro maloobchod > Plán distribuce** a spusťte úlohu 1090 (Registry) pro synchronizaci změn rozvržení. 
+
+![Vyhledání rozvržení obrazovky, které používá POS](./media/Choose_screen_layout.png "Vyhledání rozvržení obrazovky, které používá POS")
 
 Následující obrázek znázorňuje účinek výběru **Vpravo nahoře** oproti možnosti **Na střed** v poli **Zarovnání obsahu** pro tlačítka různých velikostí.
 

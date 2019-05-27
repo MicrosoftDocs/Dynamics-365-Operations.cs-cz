@@ -19,11 +19,11 @@ ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "898924"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517563"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funkce kariérního webu v aplikaci Attract
 
@@ -128,7 +128,7 @@ Uchazečům můžete usnadnit žádost o pracovní místa konfigurací aplikace 
 1. Přihlaste se do aplikace Attract jako správce.
 2. Zvolte tlačítko **Nastavení** tlačítko (symbol ozubeného kola) v pravém horním rohu stránky a vyberte **Centrum pro správu**.
 3. Vyberte kartu **Integrace LinkedIn** a připojte se k účtu LinkedIn Recruiter.
-4. V části **Integrace programu LinkedIn Recruiter System Connect** vyberte **Povoleno** pro nastavení **Zažádat pomocí webu LinkedIn**.
+4. V části **Integrace LinkedIn Recruiter System Connect** vyberte **Povoleno** pro nastavení **Zažádat pomocí webu LinkedIn**.
 
 Poté, co jste povolili toto nastavení, mohou uživatelé k žádosti použít svá stávající data profilu LinkedIn. Když uživatelé zažádají pomocí tlačítka **Zažádat pomocí služby LinkedIn**, jsou ožádáni o ověření ve službě LinkedIn, zda nejsou přihlášení. Po ověření nahradí jejich profil LinkedIn existující data profilu zobrazená na stránce aplikace. Zájemci mohou podle potřeby upravovat informace a následně odeslat žádost Pokud uchazeč přejde mimo stránku bez žádosti o práci, data profilu se neaktualizují v Attract.
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 20a7781486c6e0612c27af02a1bccbc48c55a932
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c5cfe92b8733a0a6d76e074cc31eec3f3935b512
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530861"
 ---
 # <a name="define-financial-dimensions"></a>Definování finančních dimenzí
 
@@ -32,8 +32,8 @@ Tento průvodce úkoly ukazuje přidávání finančních dimenzí zálohovanýc
 
 ## <a name="create-an-entity-backed-financial-dimension"></a>Vytvoření finanční dimenze zálohované entitou
 1. Přejděte do části Hlavní kniha > Účtová osnova > Dimenze > Finanční dimenze.
-2. Klikněte na položku Nová.
-3. V poli Hodnoty uživatele od vyberte systémem definovanou entitu jako základ finanční dimenze. 
+2. Klikněte na možnost Nový.
+3. V poli formuláře Hodnoty uživatele vyberte systémem definovanou entitu jako základ finanční dimenze. 
 4. V poli Název dimenze zadejte hodnotu pro popis finanční dimenze.
     * Název může být jiný než entita definovaná systémem, nesmí však obsahovat mezery ani speciální znaky.  
 5. Klepněte na tlačítko Aktivovat.
@@ -46,8 +46,8 @@ Tento průvodce úkoly ukazuje přidávání finančních dimenzí zálohovanýc
 
 ## <a name="create-a-custom-financial-dimension"></a>Vytvoření vlastní finanční dimenze
 1. Zavřete stránku.
-2. Klikněte na položku Nová.
-3. Vyberte možnost <Custom dimension> v poli Použít hodnoty od.
+2. Klikněte na možnost Nový.
+3. V poli Použít hodnoty od vyberte Vlastní dimenze.
 4. V poli Název dimenze zadejte hodnotu pro popis finanční dimenze.
     * Název nemůže obsahovat mezery ani speciální znaky.  
     * Můžete také učit účetní masku pro omezení množství a typů informací, které můžete zadat pro hodnoty dimenze.   
