@@ -16,94 +16,94 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 63ad2cc0c41a5931750dffbfc64bc7ce965a1da4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "316457"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1563197"
 ---
-# <a name="create-routes-february-2016-only"></a><span data-ttu-id="a549f-103">Vytváření postupů (jen ve verzi z února 2016)</span><span class="sxs-lookup"><span data-stu-id="a549f-103">Create routes (February 2016 only)</span></span>
+# <a name="create-routes-february-2016-only"></a><span data-ttu-id="75697-103">Vytváření postupů (jen ve verzi z února 2016)</span><span class="sxs-lookup"><span data-stu-id="75697-103">Create routes (February 2016 only)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a549f-104">Tato úloha je zaměřena na vytvoření výrobních postupů pro dokončený produkt a polotovar produktu.</span><span class="sxs-lookup"><span data-stu-id="a549f-104">This task focuses on creating the production routes for a finished product and a semi-finished product.</span></span> <span data-ttu-id="a549f-105">Je to pátá úloha v řadě Kalkulace kusovníku.</span><span class="sxs-lookup"><span data-stu-id="a549f-105">It is the fifth task in the BOM calculation series.</span></span> <span data-ttu-id="a549f-106">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="a549f-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="75697-104">Tato úloha je zaměřena na vytvoření výrobních postupů pro dokončený produkt a polotovar produktu.</span><span class="sxs-lookup"><span data-stu-id="75697-104">This task focuses on creating the production routes for a finished product and a semi-finished product.</span></span> <span data-ttu-id="75697-105">Je to pátá úloha v řadě Kalkulace kusovníku.</span><span class="sxs-lookup"><span data-stu-id="75697-105">It is the fifth task in the BOM calculation series.</span></span> <span data-ttu-id="75697-106">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="75697-106">The demo data company used to create this task is USMF.</span></span>
 
 
-## <a name="create-a-route-for-a-semi-finished-product"></a><span data-ttu-id="a549f-107">Vytvoření postupu pro polotovar produktu</span><span class="sxs-lookup"><span data-stu-id="a549f-107">Create a route for a semi-finished product</span></span>
-1. <span data-ttu-id="a549f-108">Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="a549f-108">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="a549f-109">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="a549f-109">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="a549f-110">Vyberte číslo položky BOM_2.</span><span class="sxs-lookup"><span data-stu-id="a549f-110">Select the item number BOM_2.</span></span>  
-3. <span data-ttu-id="a549f-111">V podokně akcí klikněte na možnost Analýza.</span><span class="sxs-lookup"><span data-stu-id="a549f-111">On the Action Pane, click Engineer.</span></span>
-4. <span data-ttu-id="a549f-112">Klikněte na Postup.</span><span class="sxs-lookup"><span data-stu-id="a549f-112">Click Route.</span></span>
-5. <span data-ttu-id="a549f-113">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="a549f-113">Click New.</span></span>
-6. <span data-ttu-id="a549f-114">Klikněte na Postup a verze postupu.</span><span class="sxs-lookup"><span data-stu-id="a549f-114">Click Route and route version.</span></span>
-7. <span data-ttu-id="a549f-115">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="a549f-115">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="a549f-116">Zadejte například ROUTE_2.</span><span class="sxs-lookup"><span data-stu-id="a549f-116">For example, type ROUTE_2.</span></span>  
-8. <span data-ttu-id="a549f-117">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a549f-117">In the Site field, enter or select a value.</span></span>
-    * <span data-ttu-id="a549f-118">V tomto příkladu zadejte nebo vyberte Pracoviště 1.</span><span class="sxs-lookup"><span data-stu-id="a549f-118">For this example, enter or select Site 1.</span></span>  
-9. <span data-ttu-id="a549f-119">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="a549f-119">Click OK.</span></span>
-10. <span data-ttu-id="a549f-120">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="a549f-120">Click New.</span></span>
-11. <span data-ttu-id="a549f-121">V poli Operace zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a549f-121">In the Operation field, enter or select a value.</span></span>
-    * <span data-ttu-id="a549f-122">V tomto příkladu vyberte Sestavení.</span><span class="sxs-lookup"><span data-stu-id="a549f-122">For this example, select Assembly.</span></span>  
-12. <span data-ttu-id="a549f-123">Do pole Operační čas zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="a549f-123">In the Run time field, enter a number.</span></span>
-    * <span data-ttu-id="a549f-124">Zadejte například 1.</span><span class="sxs-lookup"><span data-stu-id="a549f-124">For example, type 1.</span></span> <span data-ttu-id="a549f-125">Operační časy jsou často zahrnuté v ceně vypočtené pro položku.</span><span class="sxs-lookup"><span data-stu-id="a549f-125">Run times are often part of the price that is calculated for an item.</span></span>  
-13. <span data-ttu-id="a549f-126">V poli Skupina postupů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a549f-126">In the Route group field, enter or select a value.</span></span>
-    * <span data-ttu-id="a549f-127">V tomto příkladu vyberte Std.</span><span class="sxs-lookup"><span data-stu-id="a549f-127">For this example, select Std.</span></span>  
-14. <span data-ttu-id="a549f-128">Klikněte na záložku Nastavení.</span><span class="sxs-lookup"><span data-stu-id="a549f-128">Click the Setup tab.</span></span>
-15. <span data-ttu-id="a549f-129">V poli Kategorie nastavení zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a549f-129">In the Setup category field, enter or select a value.</span></span>
-    * <span data-ttu-id="a549f-130">V tomto příkladu vyberte Sestavení.</span><span class="sxs-lookup"><span data-stu-id="a549f-130">For this example, select Assembly.</span></span>  
-16. <span data-ttu-id="a549f-131">Klepněte na kartu Časy.</span><span class="sxs-lookup"><span data-stu-id="a549f-131">Click the Times tab.</span></span>
-17. <span data-ttu-id="a549f-132">Do pole Přípravný čas zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="a549f-132">In the Setup time field, enter a number.</span></span>
-    * <span data-ttu-id="a549f-133">V tomto příkladu zadejte 1.</span><span class="sxs-lookup"><span data-stu-id="a549f-133">For this example, type 1.</span></span> <span data-ttu-id="a549f-134">Přípravný čas je často zahrnutý v ceně vypočtené pro položku.</span><span class="sxs-lookup"><span data-stu-id="a549f-134">Setup times are often part of the price that is calculated for an item.</span></span>  
-18. <span data-ttu-id="a549f-135">V podokně akcí klikněte na možnost Verze postupu.</span><span class="sxs-lookup"><span data-stu-id="a549f-135">On the Action Pane, click Route version.</span></span>
-19. <span data-ttu-id="a549f-136">Klepněte na možnost Schválit.</span><span class="sxs-lookup"><span data-stu-id="a549f-136">Click Approve.</span></span>
-20. <span data-ttu-id="a549f-137">Vyberte Ano v poli Chcete postup také schválit? .</span><span class="sxs-lookup"><span data-stu-id="a549f-137">Select Yes in the Do you also want to approve the route? field.</span></span>
-21. <span data-ttu-id="a549f-138">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="a549f-138">Click OK.</span></span>
-22. <span data-ttu-id="a549f-139">V podokně akcí klikněte na možnost Verze postupu.</span><span class="sxs-lookup"><span data-stu-id="a549f-139">On the Action Pane, click Route version.</span></span>
-23. <span data-ttu-id="a549f-140">Klepněte na tlačítko Aktivovat.</span><span class="sxs-lookup"><span data-stu-id="a549f-140">Click Activate.</span></span>
-24. <span data-ttu-id="a549f-141">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="a549f-141">Close the page.</span></span>
-25. <span data-ttu-id="a549f-142">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="a549f-142">Close the page.</span></span>
+## <a name="create-a-route-for-a-semi-finished-product"></a><span data-ttu-id="75697-107">Vytvoření postupu pro polotovar produktu</span><span class="sxs-lookup"><span data-stu-id="75697-107">Create a route for a semi-finished product</span></span>
+1. <span data-ttu-id="75697-108">Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="75697-108">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="75697-109">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="75697-109">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="75697-110">Vyberte číslo položky BOM_2.</span><span class="sxs-lookup"><span data-stu-id="75697-110">Select the item number BOM_2.</span></span>  
+3. <span data-ttu-id="75697-111">V podokně akcí klikněte na možnost Analýza.</span><span class="sxs-lookup"><span data-stu-id="75697-111">On the Action Pane, click Engineer.</span></span>
+4. <span data-ttu-id="75697-112">Klikněte na Postup.</span><span class="sxs-lookup"><span data-stu-id="75697-112">Click Route.</span></span>
+5. <span data-ttu-id="75697-113">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="75697-113">Click New.</span></span>
+6. <span data-ttu-id="75697-114">Klikněte na Postup a verze postupu.</span><span class="sxs-lookup"><span data-stu-id="75697-114">Click Route and route version.</span></span>
+7. <span data-ttu-id="75697-115">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="75697-115">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="75697-116">Zadejte například ROUTE_2.</span><span class="sxs-lookup"><span data-stu-id="75697-116">For example, type ROUTE_2.</span></span>  
+8. <span data-ttu-id="75697-117">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="75697-117">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="75697-118">V tomto příkladu zadejte nebo vyberte Pracoviště 1.</span><span class="sxs-lookup"><span data-stu-id="75697-118">For this example, enter or select Site 1.</span></span>  
+9. <span data-ttu-id="75697-119">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="75697-119">Click OK.</span></span>
+10. <span data-ttu-id="75697-120">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="75697-120">Click New.</span></span>
+11. <span data-ttu-id="75697-121">V poli Operace zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="75697-121">In the Operation field, enter or select a value.</span></span>
+    * <span data-ttu-id="75697-122">V tomto příkladu vyberte Sestavení.</span><span class="sxs-lookup"><span data-stu-id="75697-122">For this example, select Assembly.</span></span>  
+12. <span data-ttu-id="75697-123">Do pole Operační čas zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="75697-123">In the Run time field, enter a number.</span></span>
+    * <span data-ttu-id="75697-124">Zadejte například 1.</span><span class="sxs-lookup"><span data-stu-id="75697-124">For example, type 1.</span></span> <span data-ttu-id="75697-125">Operační časy jsou často zahrnuté v ceně vypočtené pro položku.</span><span class="sxs-lookup"><span data-stu-id="75697-125">Run times are often part of the price that is calculated for an item.</span></span>  
+13. <span data-ttu-id="75697-126">V poli Skupina postupů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="75697-126">In the Route group field, enter or select a value.</span></span>
+    * <span data-ttu-id="75697-127">V tomto příkladu vyberte Std.</span><span class="sxs-lookup"><span data-stu-id="75697-127">For this example, select Std.</span></span>  
+14. <span data-ttu-id="75697-128">Klikněte na záložku Nastavení.</span><span class="sxs-lookup"><span data-stu-id="75697-128">Click the Setup tab.</span></span>
+15. <span data-ttu-id="75697-129">V poli Kategorie nastavení zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="75697-129">In the Setup category field, enter or select a value.</span></span>
+    * <span data-ttu-id="75697-130">V tomto příkladu vyberte Sestavení.</span><span class="sxs-lookup"><span data-stu-id="75697-130">For this example, select Assembly.</span></span>  
+16. <span data-ttu-id="75697-131">Klepněte na kartu Časy.</span><span class="sxs-lookup"><span data-stu-id="75697-131">Click the Times tab.</span></span>
+17. <span data-ttu-id="75697-132">Do pole Přípravný čas zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="75697-132">In the Setup time field, enter a number.</span></span>
+    * <span data-ttu-id="75697-133">V tomto příkladu zadejte 1.</span><span class="sxs-lookup"><span data-stu-id="75697-133">For this example, type 1.</span></span> <span data-ttu-id="75697-134">Přípravný čas je často zahrnutý v ceně vypočtené pro položku.</span><span class="sxs-lookup"><span data-stu-id="75697-134">Setup times are often part of the price that is calculated for an item.</span></span>  
+18. <span data-ttu-id="75697-135">V podokně akcí klikněte na možnost Verze postupu.</span><span class="sxs-lookup"><span data-stu-id="75697-135">On the Action Pane, click Route version.</span></span>
+19. <span data-ttu-id="75697-136">Klepněte na možnost Schválit.</span><span class="sxs-lookup"><span data-stu-id="75697-136">Click Approve.</span></span>
+20. <span data-ttu-id="75697-137">Vyberte Ano v poli Chcete postup také schválit? .</span><span class="sxs-lookup"><span data-stu-id="75697-137">Select Yes in the Do you also want to approve the route? field.</span></span>
+21. <span data-ttu-id="75697-138">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="75697-138">Click OK.</span></span>
+22. <span data-ttu-id="75697-139">V podokně akcí klikněte na možnost Verze postupu.</span><span class="sxs-lookup"><span data-stu-id="75697-139">On the Action Pane, click Route version.</span></span>
+23. <span data-ttu-id="75697-140">Klepněte na tlačítko Aktivovat.</span><span class="sxs-lookup"><span data-stu-id="75697-140">Click Activate.</span></span>
+24. <span data-ttu-id="75697-141">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="75697-141">Close the page.</span></span>
+25. <span data-ttu-id="75697-142">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="75697-142">Close the page.</span></span>
 
-## <a name="create-a-route-for-a-finished-product"></a><span data-ttu-id="a549f-143">Vytvoření postupu pro dokončený produkt</span><span class="sxs-lookup"><span data-stu-id="a549f-143">Create a route for a finished product</span></span>
-1. <span data-ttu-id="a549f-144">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="a549f-144">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="a549f-145">Vyberte číslo položky BOM_1.</span><span class="sxs-lookup"><span data-stu-id="a549f-145">Select the item number BOM_1.</span></span>  
-2. <span data-ttu-id="a549f-146">V podokně akcí klikněte na možnost Analýza.</span><span class="sxs-lookup"><span data-stu-id="a549f-146">On the Action Pane, click Engineer.</span></span>
-3. <span data-ttu-id="a549f-147">Klikněte na Postup.</span><span class="sxs-lookup"><span data-stu-id="a549f-147">Click Route.</span></span>
-4. <span data-ttu-id="a549f-148">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="a549f-148">Click New.</span></span>
-5. <span data-ttu-id="a549f-149">Klikněte na Postup a verze postupu.</span><span class="sxs-lookup"><span data-stu-id="a549f-149">Click Route and route version.</span></span>
-6. <span data-ttu-id="a549f-150">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="a549f-150">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="a549f-151">Pro tento příklad zadejte ROUTE_1.</span><span class="sxs-lookup"><span data-stu-id="a549f-151">For this example, type ROUTE_1.</span></span>  
-7. <span data-ttu-id="a549f-152">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a549f-152">In the Site field, enter or select a value.</span></span>
-    * <span data-ttu-id="a549f-153">V tomto příkladu zadejte nebo vyberte Pracoviště 1.</span><span class="sxs-lookup"><span data-stu-id="a549f-153">For this example, enter or select Site 1.</span></span>  
-8. <span data-ttu-id="a549f-154">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="a549f-154">Click OK.</span></span>
-9. <span data-ttu-id="a549f-155">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="a549f-155">Click New.</span></span>
-10. <span data-ttu-id="a549f-156">V poli Operace zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a549f-156">In the Operation field, enter or select a value.</span></span>
-    * <span data-ttu-id="a549f-157">V tomto příkladu vyberte Balení.</span><span class="sxs-lookup"><span data-stu-id="a549f-157">For this example, select Packing.</span></span>  
-11. <span data-ttu-id="a549f-158">Do pole Operační čas zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="a549f-158">In the Run time field, enter a number.</span></span>
-    * <span data-ttu-id="a549f-159">V tomto příkladu zadejte 1.</span><span class="sxs-lookup"><span data-stu-id="a549f-159">For this example, type 1.</span></span>  
-12. <span data-ttu-id="a549f-160">V poli Skupina postupů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a549f-160">In the Route group field, enter or select a value.</span></span>
-    * <span data-ttu-id="a549f-161">V tomto příkladu vyberte Std.</span><span class="sxs-lookup"><span data-stu-id="a549f-161">For this example, select Std.</span></span>  
-13. <span data-ttu-id="a549f-162">Klikněte na záložku Nastavení.</span><span class="sxs-lookup"><span data-stu-id="a549f-162">Click the Setup tab.</span></span>
-14. <span data-ttu-id="a549f-163">V poli Kategorie nastavení zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a549f-163">In the Setup category field, enter or select a value.</span></span>
-    * <span data-ttu-id="a549f-164">V tomto příkladu vyberte Balení.</span><span class="sxs-lookup"><span data-stu-id="a549f-164">For this example, select Packing.</span></span>  
-15. <span data-ttu-id="a549f-165">Klepněte na kartu Časy.</span><span class="sxs-lookup"><span data-stu-id="a549f-165">Click the Times tab.</span></span>
-16. <span data-ttu-id="a549f-166">Do pole Přípravný čas zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="a549f-166">In the Setup time field, enter a number.</span></span>
-    * <span data-ttu-id="a549f-167">V tomto příkladu zadejte 1.</span><span class="sxs-lookup"><span data-stu-id="a549f-167">For this example, type 1.</span></span>  
-17. <span data-ttu-id="a549f-168">V podokně akcí klikněte na možnost Verze postupu.</span><span class="sxs-lookup"><span data-stu-id="a549f-168">On the Action Pane, click Route version.</span></span>
-18. <span data-ttu-id="a549f-169">Klepněte na možnost Schválit.</span><span class="sxs-lookup"><span data-stu-id="a549f-169">Click Approve.</span></span>
-19. <span data-ttu-id="a549f-170">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="a549f-170">Click OK.</span></span>
-20. <span data-ttu-id="a549f-171">V podokně akcí klikněte na možnost Verze postupu.</span><span class="sxs-lookup"><span data-stu-id="a549f-171">On the Action Pane, click Route version.</span></span>
-21. <span data-ttu-id="a549f-172">Klepněte na tlačítko Aktivovat.</span><span class="sxs-lookup"><span data-stu-id="a549f-172">Click Activate.</span></span>
-22. <span data-ttu-id="a549f-173">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="a549f-173">Close the page.</span></span>
-23. <span data-ttu-id="a549f-174">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="a549f-174">Close the page.</span></span>
+## <a name="create-a-route-for-a-finished-product"></a><span data-ttu-id="75697-143">Vytvoření postupu pro dokončený produkt</span><span class="sxs-lookup"><span data-stu-id="75697-143">Create a route for a finished product</span></span>
+1. <span data-ttu-id="75697-144">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="75697-144">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="75697-145">Vyberte číslo položky BOM_1.</span><span class="sxs-lookup"><span data-stu-id="75697-145">Select the item number BOM_1.</span></span>  
+2. <span data-ttu-id="75697-146">V podokně akcí klikněte na možnost Analýza.</span><span class="sxs-lookup"><span data-stu-id="75697-146">On the Action Pane, click Engineer.</span></span>
+3. <span data-ttu-id="75697-147">Klikněte na Postup.</span><span class="sxs-lookup"><span data-stu-id="75697-147">Click Route.</span></span>
+4. <span data-ttu-id="75697-148">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="75697-148">Click New.</span></span>
+5. <span data-ttu-id="75697-149">Klikněte na Postup a verze postupu.</span><span class="sxs-lookup"><span data-stu-id="75697-149">Click Route and route version.</span></span>
+6. <span data-ttu-id="75697-150">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="75697-150">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="75697-151">Pro tento příklad zadejte ROUTE_1.</span><span class="sxs-lookup"><span data-stu-id="75697-151">For this example, type ROUTE_1.</span></span>  
+7. <span data-ttu-id="75697-152">V poli Lokalita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="75697-152">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="75697-153">V tomto příkladu zadejte nebo vyberte Pracoviště 1.</span><span class="sxs-lookup"><span data-stu-id="75697-153">For this example, enter or select Site 1.</span></span>  
+8. <span data-ttu-id="75697-154">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="75697-154">Click OK.</span></span>
+9. <span data-ttu-id="75697-155">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="75697-155">Click New.</span></span>
+10. <span data-ttu-id="75697-156">V poli Operace zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="75697-156">In the Operation field, enter or select a value.</span></span>
+    * <span data-ttu-id="75697-157">V tomto příkladu vyberte Balení.</span><span class="sxs-lookup"><span data-stu-id="75697-157">For this example, select Packing.</span></span>  
+11. <span data-ttu-id="75697-158">Do pole Operační čas zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="75697-158">In the Run time field, enter a number.</span></span>
+    * <span data-ttu-id="75697-159">V tomto příkladu zadejte 1.</span><span class="sxs-lookup"><span data-stu-id="75697-159">For this example, type 1.</span></span>  
+12. <span data-ttu-id="75697-160">V poli Skupina postupů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="75697-160">In the Route group field, enter or select a value.</span></span>
+    * <span data-ttu-id="75697-161">V tomto příkladu vyberte Std.</span><span class="sxs-lookup"><span data-stu-id="75697-161">For this example, select Std.</span></span>  
+13. <span data-ttu-id="75697-162">Klikněte na záložku Nastavení.</span><span class="sxs-lookup"><span data-stu-id="75697-162">Click the Setup tab.</span></span>
+14. <span data-ttu-id="75697-163">V poli Kategorie nastavení zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="75697-163">In the Setup category field, enter or select a value.</span></span>
+    * <span data-ttu-id="75697-164">V tomto příkladu vyberte Balení.</span><span class="sxs-lookup"><span data-stu-id="75697-164">For this example, select Packing.</span></span>  
+15. <span data-ttu-id="75697-165">Klepněte na kartu Časy.</span><span class="sxs-lookup"><span data-stu-id="75697-165">Click the Times tab.</span></span>
+16. <span data-ttu-id="75697-166">Do pole Přípravný čas zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="75697-166">In the Setup time field, enter a number.</span></span>
+    * <span data-ttu-id="75697-167">V tomto příkladu zadejte 1.</span><span class="sxs-lookup"><span data-stu-id="75697-167">For this example, type 1.</span></span>  
+17. <span data-ttu-id="75697-168">V podokně akcí klikněte na možnost Verze postupu.</span><span class="sxs-lookup"><span data-stu-id="75697-168">On the Action Pane, click Route version.</span></span>
+18. <span data-ttu-id="75697-169">Klepněte na možnost Schválit.</span><span class="sxs-lookup"><span data-stu-id="75697-169">Click Approve.</span></span>
+19. <span data-ttu-id="75697-170">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="75697-170">Click OK.</span></span>
+20. <span data-ttu-id="75697-171">V podokně akcí klikněte na možnost Verze postupu.</span><span class="sxs-lookup"><span data-stu-id="75697-171">On the Action Pane, click Route version.</span></span>
+21. <span data-ttu-id="75697-172">Klepněte na tlačítko Aktivovat.</span><span class="sxs-lookup"><span data-stu-id="75697-172">Click Activate.</span></span>
+22. <span data-ttu-id="75697-173">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="75697-173">Close the page.</span></span>
+23. <span data-ttu-id="75697-174">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="75697-174">Close the page.</span></span>
 
-## <a name="enable-automatic-consumption-of-setup-time"></a><span data-ttu-id="a549f-175">Aktivace automatické spotřeby přípravného času</span><span class="sxs-lookup"><span data-stu-id="a549f-175">Enable automatic consumption of setup time</span></span>
-1. <span data-ttu-id="a549f-176">Přejděte k Řízení výroby > Nastavení > Postupy > Skupiny postupu.</span><span class="sxs-lookup"><span data-stu-id="a549f-176">Go to Production control > Setup > Routes > Route groups.</span></span>
-2. <span data-ttu-id="a549f-177">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="a549f-177">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="a549f-178">V seznamu vyberte položku Std.</span><span class="sxs-lookup"><span data-stu-id="a549f-178">Select Std in the list.</span></span>  
-3. <span data-ttu-id="a549f-179">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="a549f-179">Click Edit.</span></span>
-4. <span data-ttu-id="a549f-180">Vyberte Ano v poli Přípravný čas.</span><span class="sxs-lookup"><span data-stu-id="a549f-180">Select Yes in the Setup time field.</span></span>
-    * <span data-ttu-id="a549f-181">Přípravný čas je často zahrnutý v ceně vypočtené pro položku.</span><span class="sxs-lookup"><span data-stu-id="a549f-181">Setup times are often part of the price that is calculated for an item.</span></span>  
-5. <span data-ttu-id="a549f-182">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="a549f-182">Click Save.</span></span>
-6. <span data-ttu-id="a549f-183">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="a549f-183">Close the page.</span></span>
+## <a name="enable-automatic-consumption-of-setup-time"></a><span data-ttu-id="75697-175">Aktivace automatické spotřeby přípravného času</span><span class="sxs-lookup"><span data-stu-id="75697-175">Enable automatic consumption of setup time</span></span>
+1. <span data-ttu-id="75697-176">Přejděte k Řízení výroby > Nastavení > Postupy > Skupiny postupu.</span><span class="sxs-lookup"><span data-stu-id="75697-176">Go to Production control > Setup > Routes > Route groups.</span></span>
+2. <span data-ttu-id="75697-177">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="75697-177">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="75697-178">V seznamu vyberte položku Std.</span><span class="sxs-lookup"><span data-stu-id="75697-178">Select Std in the list.</span></span>  
+3. <span data-ttu-id="75697-179">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="75697-179">Click Edit.</span></span>
+4. <span data-ttu-id="75697-180">Vyberte Ano v poli Přípravný čas.</span><span class="sxs-lookup"><span data-stu-id="75697-180">Select Yes in the Setup time field.</span></span>
+    * <span data-ttu-id="75697-181">Přípravný čas je často zahrnutý v ceně vypočtené pro položku.</span><span class="sxs-lookup"><span data-stu-id="75697-181">Setup times are often part of the price that is calculated for an item.</span></span>  
+5. <span data-ttu-id="75697-182">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="75697-182">Click Save.</span></span>
+6. <span data-ttu-id="75697-183">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="75697-183">Close the page.</span></span>
 

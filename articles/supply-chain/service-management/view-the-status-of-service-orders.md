@@ -19,38 +19,38 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: dec3fe2a7344c2719ca12a180fa0adb025b7fcc7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364987"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558119"
 ---
-# <a name="view-the-status-of-service-orders"></a><span data-ttu-id="5f2e6-103">Zobrazení stavu servisních zakázek</span><span class="sxs-lookup"><span data-stu-id="5f2e6-103">View the status of service orders</span></span> 
+# <a name="view-the-status-of-service-orders"></a><span data-ttu-id="9b297-103">Zobrazení stavu servisních zakázek</span><span class="sxs-lookup"><span data-stu-id="9b297-103">View the status of service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="5f2e6-104">Stav servisních aktivit v servisních objednávkách můžete zobrazit ve formuláři **expediční vývěska**.</span><span class="sxs-lookup"><span data-stu-id="5f2e6-104">You can use the **Dispatch board** form to view the status of service activities in service orders.</span></span>
+<span data-ttu-id="9b297-104">Stav servisních aktivit v servisních objednávkách můžete zobrazit ve formuláři **expediční vývěska**.</span><span class="sxs-lookup"><span data-stu-id="9b297-104">You can use the **Dispatch board** form to view the status of service activities in service orders.</span></span>
 
-## <a name="more-information-about-service-orders"></a><span data-ttu-id="5f2e6-105">Více informací o servisních objednávkách</span><span class="sxs-lookup"><span data-stu-id="5f2e6-105">More information about service orders</span></span>
+## <a name="more-information-about-service-orders"></a><span data-ttu-id="9b297-105">Více informací o servisních objednávkách</span><span class="sxs-lookup"><span data-stu-id="9b297-105">More information about service orders</span></span>
 
-<span data-ttu-id="5f2e6-106">Formulář obsahuje také další podrobnosti, které vám mohou pomoci vyhodnotit naléhavost servisní zakázky, jako je servisní smlouva nebo smlouva o úrovni poskytovaných služeb, které je se servisní zakázkou spojená.</span><span class="sxs-lookup"><span data-stu-id="5f2e6-106">The form also provides tools to track the flow of service orders and includes additional details to help you evaluate the urgency of a service order, such the service agreement and service level agreement that it is associated with.</span></span>
+<span data-ttu-id="9b297-106">Formulář obsahuje také další podrobnosti, které vám mohou pomoci vyhodnotit naléhavost servisní zakázky, jako je servisní smlouva nebo smlouva o úrovni poskytovaných služeb, které je se servisní zakázkou spojená.</span><span class="sxs-lookup"><span data-stu-id="9b297-106">The form also provides tools to track the flow of service orders and includes additional details to help you evaluate the urgency of a service order, such the service agreement and service level agreement that it is associated with.</span></span>
 
-<span data-ttu-id="5f2e6-107">Chcete-li rychle zjistit naléhavost servisní zakázky, použijte Ganttův diagram, který podporuje použití barev.</span><span class="sxs-lookup"><span data-stu-id="5f2e6-107">In order to help you quickly gauge the urgency of a service order, the Gantt chart supports the use of colors.</span></span> <span data-ttu-id="5f2e6-108">Barvy slouží k rozlišení priorit servisních volání.</span><span class="sxs-lookup"><span data-stu-id="5f2e6-108">Colors are used to distinguish the priority of a service call.</span></span> <span data-ttu-id="5f2e6-109">Ve výchozím nastavení je vysoká priorita označena červeně, typická priorita je označena žlutou barvou a nízká priorita je označena zeleně.</span><span class="sxs-lookup"><span data-stu-id="5f2e6-109">By default, these colors are red for high priority, yellow for typical priority, and green for low priority.</span></span>
+<span data-ttu-id="9b297-107">Chcete-li rychle zjistit naléhavost servisní zakázky, použijte Ganttův diagram, který podporuje použití barev.</span><span class="sxs-lookup"><span data-stu-id="9b297-107">In order to help you quickly gauge the urgency of a service order, the Gantt chart supports the use of colors.</span></span> <span data-ttu-id="9b297-108">Barvy slouží k rozlišení priorit servisních volání.</span><span class="sxs-lookup"><span data-stu-id="9b297-108">Colors are used to distinguish the priority of a service call.</span></span> <span data-ttu-id="9b297-109">Ve výchozím nastavení je vysoká priorita označena červeně, typická priorita je označena žlutou barvou a nízká priorita je označena zeleně.</span><span class="sxs-lookup"><span data-stu-id="9b297-109">By default, these colors are red for high priority, yellow for typical priority, and green for low priority.</span></span>
 
 
 > [!TIP]
-> <P><span data-ttu-id="5f2e6-110">Barvy lze změnit na kartě <STRONG>expedice</STRONG> ve formuláři <STRONG>parametry správy servisu</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="5f2e6-110">You can change the colors on the <STRONG>Dispatching</STRONG> tab in the <STRONG>Service management parameters</STRONG> form.</span></span></P>
+> <P><span data-ttu-id="9b297-110">Barvy lze změnit na kartě <STRONG>expedice</STRONG> ve formuláři <STRONG>parametry správy servisu</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="9b297-110">You can change the colors on the <STRONG>Dispatching</STRONG> tab in the <STRONG>Service management parameters</STRONG> form.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="5f2e6-111">Viz také</span><span class="sxs-lookup"><span data-stu-id="5f2e6-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9b297-111">Viz také</span><span class="sxs-lookup"><span data-stu-id="9b297-111">See also</span></span>
 
-[<span data-ttu-id="5f2e6-112">Určení priorit servisních zakázek</span><span class="sxs-lookup"><span data-stu-id="5f2e6-112">Prioritize service orders</span></span>](prioritize-service-orders.md)
+[<span data-ttu-id="9b297-112">Určení priorit servisních zakázek</span><span class="sxs-lookup"><span data-stu-id="9b297-112">Prioritize service orders</span></span>](prioritize-service-orders.md)
 
-[<span data-ttu-id="5f2e6-113">Sledování servisních aktivit</span><span class="sxs-lookup"><span data-stu-id="5f2e6-113">Monitor service activities</span></span>](monitor-service-activities.md)
+[<span data-ttu-id="9b297-113">Sledování servisních aktivit</span><span class="sxs-lookup"><span data-stu-id="9b297-113">Monitor service activities</span></span>](monitor-service-activities.md)
 
-<span data-ttu-id="5f2e6-114">[Expediční vývěska (formulář)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="5f2e6-114">[Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span></span>
+<span data-ttu-id="9b297-114">[Expediční vývěska (formulář)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="9b297-114">[Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span></span>
 
   
 
