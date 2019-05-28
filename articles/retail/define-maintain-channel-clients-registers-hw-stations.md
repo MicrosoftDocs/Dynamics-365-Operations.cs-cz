@@ -20,11 +20,11 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 544f109a4f46bd7511ee564902f627beddd29f15
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308775"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568038"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Připojení periferních zařízení k pokladnímu místu (POS).
 
@@ -49,11 +49,11 @@ Pokladna POS je entita, která se používá k definování vlastností konkrét
 
 Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Zařízení**.
 
-Zařízení je entita, která představuje fyzickou instanci zařízení, která je namapována k pokladně POS. Při vytvoření je zařízení mapováno k pokladně POS. Zařízení sleduje informace o tom, kdy dojde k aktivaci pokladny POS, typu používaného klienta a balíčku aplikace, který byl nasazen na konkrétní zařízení. Zařízení může být dvou typů: **Retail Modern POS** (MPOS) nebo **Retail Cloud POS** (Cloud POS).
+Zařízení je entita, která představuje fyzickou instanci zařízení, která je namapována k pokladně POS. Při vytvoření je zařízení mapováno k pokladně POS. Zařízení sleduje informace o tom, kdy dojde k aktivaci pokladny POS, typu používaného klienta a balíčku aplikace, který byl nasazen na konkrétní zařízení. Zařízení může být dvou typů: **Retail modern POS** (MPOS) nebo **Retail Cloud POS** (Cloud POS).
 
 #### <a name="mpos"></a>MPOS
 
-MPOS je klientská aplikace POS, která je nainstalována v operačním systému Windows 8.1 nebo novějším pro počítače. Pokud je k zařízení mapován typ aplikace **Retail Modern POS**, lze pro konkrétní zařízení nastavit balíček ke stažení. Balíček ke stažení lze přizpůsobit tak, aby obsahoval různé verze instalačního balíčku. Možnost nasadit různé balíčky poskytuje flexibilitu v případech, kde jiná pokladna POS může vyžadovat různé integrace. MPOS se nasazuje spolu s integrovanou hardwarovou stanicí.
+MPOS je klientská aplikace POS, která je nainstalována v operačním systému Windows 8.1 nebo novějším pro počítače. Pokud je k zařízení mapován typ aplikace **Retail modern POS**, lze pro konkrétní zařízení nastavit balíček ke stažení. Balíček ke stažení lze přizpůsobit tak, aby obsahoval různé verze instalačního balíčku. Možnost nasadit různé balíčky poskytuje flexibilitu v případech, kde jiná pokladna POS může vyžadovat různé integrace. MPOS se nasazuje spolu s integrovanou hardwarovou stanicí.
 
 #### <a name="cloud-pos"></a>Cloud POS
 

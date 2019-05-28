@@ -3,7 +3,7 @@ title: Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Fin
 description: Toto téma se věnuje šablonám a základní úloze, které se používají ke spuštění synchronizace prodejních objednávek přímo mezi aplikacemi Microsoft Dynamics 365 for Sales a Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a427bff3cd07adbf4d3d81f98bdf7f85a194730b
+ms.sourcegitcommit: 3f02d8a874d1696cbf21d100f1ad205c57224e4b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339112"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539107"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations
 
@@ -146,6 +146,16 @@ Před synchronizací prodejních objednávek je důležité aktualizovat násled
 ### <a name="setup-in-finance-and-operations"></a>Nastavení v aplikaci Finance and Operations
 
 - Přejděte na **Prodej a marketing** &gt; **Periodické úlohy** &gt; **Vypočítat celkové tržby**a nastavte úlohu, aby se spustila jako dávková úloha. Nastavte možnost **Vypočítat celkové částky prodejních objednávek** na **Ano**. Tento krok je důležitý, protože pouze prodejní objednávky s vypočítanými celkovými tržbami budou synchronizovány do aplikace Sales. Frekvence dávkové úlohy musí být ve shodě s frekvencí synchronizace prodejní objednávky.
+
+Pokud také používáte integraci s pracovními příkazy, je nutné nastavit původ prodeje. Původ prodej slouží k odlišení prodejních objednávek v modulu Finance and Operations, které byly vytvořeny z pracovních objednávek v modulu Field Service. Když má prodejní objednávka původ typu **Integrace pracovního příkazu**, v záhlaví prodejní objednávky se zobrazí pole **Stav externí pracovní objednávky**. Původ prodeje zajišťuje, aby během synchronizace prodejní objednávky z Finance and Operations do Field Service byly odfiltrovány prodejní objednávky, které byly vytvořeny z pracovních příkazů ve Field Service.
+
+1. Přejděte na **Prodej a marketing** \> **Nastavení** \> **Prodejní objednávky** \> **Původ prodeje**.
+2. Vyberte **nový** pro vytvoření nového původu prodeje.
+3. V poli **Původ prodeje** zadejte název pro původ prodeje, jako je například **SalesOrder**.
+4. Do pole **Popis** zadejte popis, například **Prodejní objednávka z obchodního oddělení**.
+5. Zaškrtněte políčko **Přiřazení typů původu**.
+6. Nastavte hodnotu v poli **Typ původu prodeje** na **Integrace prodejní objednávky**.
+7. Zvolte **Uložit**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-fin-and-ops---direct-data-integration-project"></a>Nastavení v prodejních objednávkách (Sales do Fin and Ops) - Přímo v projektu integrace dat
 

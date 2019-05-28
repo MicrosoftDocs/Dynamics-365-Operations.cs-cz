@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Toto téma se vztahuje k aplikaci Dynamics 365 for Finance and Operations a k aplikaci Dynamics 365 for Retail.
+> Toto téma se vztahuje na Dynamics 365 for Retail a Dynamics 365 for Finance and Operations.

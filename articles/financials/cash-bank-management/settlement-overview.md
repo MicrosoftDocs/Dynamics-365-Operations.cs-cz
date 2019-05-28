@@ -1,9 +1,9 @@
 ---
 title: Přehled vyrovnání
-description: V tomto článku jsou obecné informace o procesu vyrovnání. Popisuje typy transakcí, které lze vyrovnat, kdy a jak lze transakce vyrovnat, a jaké jsou výsledky procesu vyrovnání.
+description: V tomto tématu jsou obecné informace o procesu vyrovnání. Popisuje typy transakcí, které lze vyrovnat, kdy a jak lze transakce vyrovnat, a jaké jsou výsledky procesu vyrovnání.
 author: kweekley
 manager: AnnBe
-ms.date: 12/06/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b82c6afa2812344ff8200e227ee8c5f2451584f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e13bdcdcf6dac68a95e6c2759a66bc59013464cb
+ms.sourcegitcommit: fd3db9f2052c76a5d906b9ec23cb16222452a362
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "338284"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "1539960"
 ---
 # <a name="settlement-overview"></a>Přehled vyrovnání
 
 [!include [banner](../includes/banner.md)]
 
-V tomto článku jsou obecné informace o procesu vyrovnání. Popisuje typy transakcí, které lze vyrovnat, kdy a jak lze transakce vyrovnat, a jaké jsou výsledky procesu vyrovnání.
+V tomto tématu jsou obecné informace o procesu vyrovnání. Popisuje typy transakcí, které lze vyrovnat, kdy a jak lze transakce vyrovnat, a jaké jsou výsledky procesu vyrovnání.
 
 Při vyrovnání transakce z jednoho dokumentu platí pro transakce na jiném dokumentu pro zvýšení nebo snížení zůstatku z jednotlivých dokumentů. Platbu lze například použít na fakturu. Různé typy transakcí lze vyrovnat v různých časech a prostřednictvím různých metod. Vyrovnání může také způsobit vygenerování nových transakcí.
 
@@ -40,7 +40,7 @@ Vyrovnání v rámci závazků a pohledávek mohou být provedeny mezi všemi ty
 Transakce je možné vyrovnat při zadání platby. Například při realizaci platby pro dodavatele obvykle vybíráte faktury, které chcete zaplatit. Výběrem faktur je označíte pro vyrovnání oproti platbě. Když pracovník pro platby pohledávek zaznamená platbu odběratele, může označit odpovídající faktury pro vyrovnání, které jsou založené na informacích dodaných s platbou odběratele. Stránka **Vyrovnat transakce** slouží k označení transakcí pro vyrovnání. Tuto stránku lze otevřít z každé nezaúčtované faktury či platby. Když je transakce zaúčtována, je zaúčtováno také vyrovnání. Transakce lze také vyrovnat po zaúčtování. Můžete zadat a zaúčtovat platbu odběratele, aniž byste ji vyrovnali pro jakoukoli fakturu. Můžete však nejprve provést průzkum, abyste se ujistili, že platba je vyrovnána proti správné faktuře. Stránku **Vyrovnat transakce** lze otevřít ze stránky **Všichni zákazníci** nebo **Všichni dodavatelé**, nebo ze stránky **Transakce** pro libovolného odběratele nebo dodavatele. Můžete také rezervovat zaúčtované zálohy pro fakturu označením platby k vyrovnání pro nákupní objednávku nebo prodejní objednávku. V tomto případě platby budete mít stále otevřený zůstatek, ale nemůže být vyrovnán proti další faktuře. Platba bude automaticky vyrovnána proti faktuře, která je vytvořena z nákupní objednávky nebo prodejní objednávky.
 
 ## <a name="how-to-settle-transactions"></a>Jak vyrovnat transakce
-Transakce je možné vyrovnat ručně, automaticky nebo kombinací obou způsobů. Výběr metody vyrovnání závisí na obchodních procesech, které mohou být implementovány skrze nastavení vyrovnání v parametrech závazků a parametrech pohledávek. Vytvořením návrhu platby, který slouží k výběru faktur k úhradě, můžete vytvořit platby dodavatele a platby přímého debetu odběratelů. Návrh platby může být aktivován ručně, ale aplikace Microsoft Dynamics 365 for Finance and Operations automaticky označí vybrané faktury k vyrovnání při vytvoření plateb. Pokud jsou platby vytvořeny ručně, můžete použít stránku **Vyrovnat transakce** k výběru faktur k vyrovnání. Faktury je možné vybrat ručně nebo lze použít možnost **Označit podle priority**, kdy budou faktury automaticky označeny k vyrovnání. Možnost **Označit podle priority** je dostupná pouze pro pohledávky. Chcete-li tuto možnost použít, použijte stránku **Priorita vyrovnání** v parametrech pohledávky. Pokud úředník pro platby zadá platbu, ale nevyrovná ji, než platbu zaúčtuje, platba bude automaticky vyrovnána. Můžete zapnout automatické vyrovnání v parametrech pohledávek a parametrech závazků. Při použití automatického vyrovnání můžete použít předdefinované pořadí vyrovnání nebo můžete definovat vlastní pořadí priority vyrovnání v parametrech pohledávek. Tato funkce je k dispozici pouze pro pohledávky.
+Transakce je možné vyrovnat ručně, automaticky nebo kombinací obou způsobů. Výběr metody vyrovnání závisí na obchodních procesech, které mohou být implementovány skrze nastavení vyrovnání v parametrech závazků a parametrech pohledávek. Vytvořením návrhu platby, který slouží k výběru faktur k úhradě, můžete vytvořit platby dodavatele a platby přímého debetu odběratelů. Návrh platby je iniciován ručně a aplikace Dynamics 365 for Finance and Operations automaticky označí vybrané faktury pro vyrovnání při vytvoření plateb. Pokud jsou platby vytvořeny ručně, můžete použít stránku **Vyrovnat transakce** k výběru faktur k vyrovnání. Faktury je možné vybrat ručně nebo lze použít možnost **Označit podle priority**, kdy budou faktury automaticky označeny k vyrovnání. Možnost **Označit podle priority** je dostupná pouze pro pohledávky. Chcete-li tuto možnost použít, použijte stránku **Priorita vyrovnání** v parametrech pohledávky. Pokud úředník pro platby zadá platbu, ale nevyrovná ji, než platbu zaúčtuje, platba bude automaticky vyrovnána. Můžete zapnout automatické vyrovnání v parametrech pohledávek a parametrech závazků. Automatické vyrovnání provádí vyrovnání transakcí v rámci stejné právnické osoby a nevyrovnává mezi více právnickými osobami. Při použití automatického vyrovnání můžete použít předdefinované pořadí vyrovnání nebo můžete definovat vlastní pořadí priority vyrovnání v parametrech pohledávek. Tato funkce je k dispozici pouze pro pohledávky.
 
 ## <a name="results-of-settlement"></a>Výsledky vyrovnání
 Jak dojde k vyrovnání transakce, je zůstatek pro jednotlivé transakce zvýšen nebo snížen podle potřeby. V typickém scénáři, kde jsou vyrovnány faktura a platba, se aktualizuje stav a zůstatek jednotlivých transakcí podle následujících pravidel:

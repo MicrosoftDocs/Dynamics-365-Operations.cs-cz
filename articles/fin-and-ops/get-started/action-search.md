@@ -18,11 +18,11 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 960c715c487fbda5d93630327f07380e6d8fbd3c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "317492"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547024"
 ---
 # <a name="action-search"></a>Vyhledání akce
 
@@ -32,7 +32,7 @@ Tento článek popisuje funkci hledání akce v aplikaci Microsoft Dynamics 365 
 
 ## <a name="introduction"></a>Úvod
 
-Stránky v Microsoft Dynamics 365 for Finance and Operations primárně vystavují příkazy v podoknech akcí, standardním podokně akcí, které se zobrazí v horní části stránky, a na panelech nástrojů, které se zobrazují v různých částech stránky. V předchozích verzích aplikace Dynamics AX umožňovala funkce Klíčové tipy rychlý přístup k libovolnému tlačítku v podokně akcí stisknutím klávesy Alt a řady čísel.
+Stránky v Microsoft Dynamics 365 for Finance and Operations primárně vystavují příkazy v podoknech akcí, standardním podokně akcí, které se zobrazí v horní části stránky, a na panelech nástrojů, které se zobrazují v různých částech stránky. V předchozích verzích umožňovala funkce Klíčové tipy rychlý přístup k libovolnému tlačítku v podokně akcí stisknutím klávesy Alt a řady čísel.
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 

@@ -16,11 +16,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3d5752caba9327475bb28c7bc6b0ee7e072f44f3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327106"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551154"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Úprava formátů opětovným použitím šablon aplikace Excel
 
@@ -28,7 +28,7 @@ ms.locfileid: "327106"
 
 K provedení kroků v tomto postupu musíte nejprve dokončit průvodce záznamem úloh s názvem „ER – návrh konfigurace pro generování sestav ve formátu OPENXML“.
 
-Tento postup popisuje, jak změnit konfiguraci formátu elektronického vykazování (ER) opakovaným použitím šablony aplikace Microsoft Excel, která byla změněna. V tomto postupu naimportujete upravenou šablonu aplikace Excel do konfigurace formátu ER, která byla vytvořena pro vzorovou společnost Litware, Inc., a poté vygenerujete elektronické dokumenty. Tento postup je navržen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Tyto kroky lze dokončit za použití datové sady GBSI. Předtím, než začnete, si stáhněte a uložte soubor SampleVendPaymWsReport2.xlsx, který je uveden v tématu nápovědy, Změna formátu elektronického vykazování opakovaným použitím šablony Excel (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template/).
+Tento postup popisuje, jak změnit konfiguraci formátu elektronického vykazování (ER) opakovaným použitím šablony aplikace Microsoft Excel, která byla změněna. V tomto postupu naimportujete upravenou šablonu aplikace Excel do konfigurace formátu ER, která byla vytvořena pro vzorovou společnost Litware, Inc., a poté vygenerujete elektronické dokumenty. Tento postup je navržen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Tyto kroky lze dokončit za použití datové sady GBSI. Předtím, než začnete, si stáhněte a uložte soubor SampleVendPaymWsReport2.xlsx, který je uveden v tématu nápovědy, Změna formátu elektronického vykazování opakovaným použitím šablony Excel (modify-electronic-reporting-format-reapply-excel-template/).
 
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
     * Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako Aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního“.  

@@ -1,9 +1,9 @@
 ---
 title: Zadání a srovnání požadavků na nabídky a zvolení nejlepších smluv
-description: Tento postup popisuje, jak zadat odpovědi na požadavek na nabídku, hodnocení a porovnání nabídek, a poté přijmout nabídku některého z dodavatelů.
+description: Tento postup popisuje, jak zadat odpovědi na požadavek na nabídku, hodnotit a porovnávat nabídky, a poté udělit smlouvu jednomu z dodavatelů.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,104 +16,130 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7cd4876acfebcc9595abb358cfc9b355e93041d6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 45ddab03810b331bcd8965f6a2ba699ffb138910
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "349991"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1533345"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Zadání a srovnání požadavků na nabídky a zvolení nejlepších smluv
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup popisuje, jak zadat odpovědi na požadavek na nabídku, hodnocení a porovnání nabídek, a poté přijmout nabídku některého z dodavatelů. Tento postup můžete projít v ukázkových datech společnosti USMF. Než začnete, musíte mít požadavek na nabídku se dvěma řádky, které byly odeslány nejméně dvěma dodavatelům. Pro vytvoření je nezbytným předpokladem vytvoření postupu "Vytvořit požadavek na nabídku". Je nutné nastavit kritéria hodnocení před spuštěním tohoto procesu.
+Tento postup popisuje, jak zadat odpovědi na požadavek na nabídku, hodnotit a porovnávat přijaté nabídky, a poté udělit smlouvu jednomu z dodavatelů, který odeslal nabídku. Tento postup můžete projít v ukázkových datech společnosti **USMF**.
 
+Než začnete s tímto postupem, musíte mít požadavek na nabídku se dvěma řádky, který byl odeslán nejméně dvěma dodavatelům. Chcete-li vytvořit tento požadavek na nabídku, dokončete postup [Vytvoření požadavku na nabídku](create-request-quotation.md). Je nutné nastavit kritéria hodnocení před dokončením tohoto procesu.
 
-## <a name="enter-a-reply-from-a-vendor"></a>Zadání odpovědi od dodavatele
-1. Přejděte na Zásobování a zdroje > Požadavky na nabídky > Všechny požadavky na nabídky.
-2. Vyberte požadavek na nabídku, který má stav Odesláno, a klepněte na odkaz u čísla případu s požadavkem na nabídku.
-    * Požadavek na nabídku byl odeslán nejméně 2 dodavatelům.  
-3. Klepnutím na záhlaví přejděte na seznam dodavatelů.
-4. Vyberte dodavatele, pro kterého chcete zadat odpověď na požadavek na nabídku.
-5. Klikněte na Zadat odpověď.
-6. V podokně akcí klikněte na možnost Odpovědět.
-7. Klikněte na Kopírovat data do odpovědi.
-    * Touto akcí zkopírujete vybraná data, jako například množství z případu požadavku na nabídku do odpovědi na požadavek na nabídku. Také můžete tuto akci vynechat a vyplnit všechna pole s odpovědí ručně při úpravách odpovědi.  
-8. Klikněte na položku Upravit.
-9. Zadejte číslo do pole Jednotková cena.
-10. Vyberte jiný řádek nabídky.
-11. Zadejte číslo do pole Jednotková cena.
+Nabídku můžete zadat buď jako dodavatel, nebo nákupčí. Další informace o naleznete v tématu [Nastavení a správa dodavatelské spolupráce](../set-up-maintain-vendor-collaboration.md).
 
-## <a name="score-the-bid"></a>Hodnocení nabídky
-1. Klepnutím na záhlaví přejděte na hodnocení nabídek.
-2. Rozbalte oddíl Hodnocení nabídky.
-3. V poli Hodnocení zadejte číslo jednoho z kritérií hodnocení.
-    * Pokud umístíte kurzor myši na některé z kritérií hodnocení, zobrazí se popisek pole s rozsahem požadovaných bodů. V této ukázce můžete přidat číslo do libovolného kritéria v rozmezí 1 až 5.  
-4. Vyberte jiné kritérium hodnocení.
-5. V poli Hodnocení zadejte číslo.
-6. Rozbalte oddíl Dotazníky.
-    * Má-li případ požadavku na nabídku dotazník, který byl odeslán dodavatelům, můžete zadat jejich odpovědi v části dotazníku.  
-7. Zavřete stránku.
+## <a name="enter-a-reply-as-a-vendor"></a>Zadání odpovědi jako dodavatel
 
-## <a name="enter-a-reply-for-another-vendor"></a>Zadání odpovědi pro jiného dodavatele
-1. Vyberte dalšího dodavatele vymazáním dodavatele, pro kterého jste právě zadali odpověď a vyberte řádek u dalšího dodavatele.
-2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-3. Klikněte na Zadat odpověď.
-4. Klikněte na Kopírovat data do odpovědi.
-5. Klikněte na položku Upravit.
-6. Zadejte číslo do pole Jednotková cena.
-7. Vyberte jiný řádek nabídky.
-8. Zadejte číslo do pole Jednotková cena.
+1. Na řídicím panelu vyberte **Nabídky dodavatele**.
+2. V seznamu **Pozvánky k nové nabídce** vyhledejte požadavek na nabídku, který byl právě odeslán. Vyberte požadavek na nabídku, u nějž chcete zkontrolovat, co bylo požadováno.
+3. Vyberte **Přílohy požadavku na nabídku** pro kontrolu všech přidaných příloh.
+4. Chcete-li vytvořit upravitelná pole, vyberte **Nabídka**. Povšimněte si, že pole **Průběh nabídky** je nastaveno **Odběratel aktualizuje**.
+5. V záhlaví a řádcích zadejte hodnoty z odpovědi na nabídku.
+6. Pokud mají být do nabídky přidány nějaké přílohy, vyberte možnost **Přílohy nabídky**.
+7. Chcete-li zobrazit, zda jsou vyžadovány nějaké dokumenty, vyberte záložku s náhledem **Položky průvodce nabídkou**.
+8. Chcete-li zobrazit, zda byl požadavek na nabídku změněn, vyberte záložku s náhledem **Dodatky**.
+9. Vyberte záložku s náhledem **Dotazník**. Všechny dotazníky, které jsou zde uvedeny, musí být zodpovězeny.
+10. Chcete-li zobrazit rozšířené informace o řádku, vyberte záložku s náhledem **Podrobnosti řádku**.
+11. Vyberte **Resetovat z požadavku na nabídku** pouze v případě, že je nutné obnovit hodnoty zadané do původních hodnot požadavku na nabídku.
+12. Nabídku můžete kdykoli uložit a později provést další zpracování za předpokladu, že nevypršelo datum a čas platnosti. V takovém případě můžete najít nabídku v seznamu **Probíhající nabídky** v pracovním prostoru **Nabídky dodavatele**.
+13. Jakmile je nabídka připravena k odeslání, vyberte možnost **Odeslat.** Vyberte **Odmítnout**, pokud se nechcete nabídky účastnit.
 
-## <a name="score-the-second-bid"></a>Hodnocení druhé nabídky
-1. Klepnutím na záhlaví přejděte na hodnocení nabídek.
-2. V poli Hodnocení zadejte číslo.
-3. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-4. V poli Hodnocení zadejte číslo.
+    Odeslané nabídky jsou k dispozici v seznamu **Odeslané nabídky** v pracovním prostoru **Nabídky dodavatele**.
+
+14. Po odeslání nabídky ji lze kdykoli znovu vyvolat před datem a časem vypršení platnosti. Všimněte si, že když je nabídka odvolána, není považována za odeslanou.
+
+    Když je nabídka akceptována nebo zamítnuta oddělením zásobování, objeví se buď v seznamu **Přidělené nabídky** nebo **Ztracené nabídky** v pracovním prostoru **Nabídky dodavatele**.
+
+## <a name="enter-a-reply-from-a-vendor-as-a-procurement-professional"></a>Zadání odpovědi od dodavatele jako nákupčího
+
+1. Zkontrolujte, zda je nastaveno oprávnění k úpravám nabídek dodavatelů. Přejděte na **Zásobování a zdroje \> Nastavení \> Parametry modulu Zásobování a zdroje**. Na kartě **Požadavky na nabídky** nastavte možnost **Nákupčí může upravit nabídku dodavatelů** na **Ano**.
+2. Přejděte na **Zásobování a zdroje \> Požadavky na nabídky \> Všechny požadavky na nabídky**.
+3. Vyberte požadavek na nabídku, který má stav **Odesláno**, a zvolte odkaz v poli **Případ požadavku na nabídku**.
+4. Zvolte **Spravovat odpovědi**. Zobrazí se stránka požadavku na nabídku pro každého dodavatele, který byl pozván k nabídce.
+5. Vyberte požadavek na nabídku, na který nebylo odpovězeno. (Pole **Průběh odpovědi** by mělo být nastaveno na **Nezahájeno**.)
+6. Vyberte **Upravit \> Upravit odpověď na požadavek na nabídku**.
+
+    Zobrazí se stránka **Odpověď na požadavek na nabídku**. Jako nákupčí můžete nyní zadat odpověď jménem dodavatele. Povšimněte si, že pole **Průběh nabídky** je nastaveno **Nákupčí aktualizuje**.
+
+7. Zadejte data nabídky. Po dokončení zvolte **Odeslat**.
+
+## <a name="score-the-bids"></a>Hodnocení nabídek
+
+1. Na stránce **Všechny požadavky na nabídky** vyberte případ požadavku na nabídku, pro který chcete vyhodnotit odpovědi.
+2. Zvolte **Spravovat odpovědi**.
+3. Vyberte odpověď na skóre.
+4. Vyberte **Záhlaví**, aby bylo možné zobrazit hodnocení nabídky.
+5. Na záložce s náhledem **Hodnocení nabídky** zadejte číslo do pole **Skóre** pro jedno z kritérií hodnocení.
+
+    Pokud umístíte kurzor myši na jedno z kritérií hodnocení, zobrazí se popisek pole s požadovaným rozsahem skóre. V této ukázce můžete zadat číslo v rozmezí 1 až 5 pro libovolné kritérium hodnocení.
+
+6. Zopakujte krok 5 pro jiné kritérium hodnocení.
+7. Má-li případ požadavku na nabídku dotazník, který byl odeslán dodavatelům, můžete zadat odpovědi dodavatele na záložce s náhledem **Dotazník**.
+8. Zavřete stránku.
+9. Zopakujte kroky 1 až 8 pro všechny ostatní nabídky.
 
 ## <a name="compare-the-replies"></a>Porovnání odpovědí
-1. V podokně akcí klikněte na položku Obecné.
-2. Klikněte na Porovnat odpovědi.
-3. Do pole Rozsah zadejte požadované číslo.
-    * Na této stránce se zobrazí nabídky se záhlavím a řádky a celkovým hodnocením na úrovni záhlaví. Porovnat řádky můžete seřazením v mřížce tak, aby byly porovnatelné řádky vedle sebe. Informace zahrnují také následující:  Množství: množství nabízené dodavatelem. Toto množství se nemusí rovnat množství zadanému v RFQ.   Čistá částka: cena nabízená dodavatelem po odečtení všech slev za položky na řádku.   Odchylka: počet dnů, o které se datum dodání v záhlaví nabídky nebo řádku liší od požadovaného data dodání v záhlaví RFQ nebo řádku RFQ.   Pro každou nabídku můžete zadat hodnocení.  
-4. Vyberte řádek záhlaví pro jinou objednávku, kterou chcete ohodnotit.
-5. Do pole Rozsah zadejte požadované číslo.
-6. Klikněte na položku Uložit.
+
+1. V podokně akcí na kartě **Obecné** zvolte **Porovnat odpovědi**.
+2. Do pole **Rozsah** zadejte číslo.
+
+    Na této stránce se zobrazí nabídky spolu s informacemi o záhlaví a řádku a také celkové skóre na úrovni záhlaví. Porovnat řádky můžete seřazením mřížky tak, aby byly porovnatelné řádky vedle sebe. Jsou obsaženy i následující informace:
+
+    - **Množství** - Množství nabízené dodavatelem. Toto množství se nemusí rovnat množství zadanému v RFQ.
+    - **Čistá částka** - Cena, kterou nabídl dodavatel za položky na řádku po odečtení všech slev.
+    - **Odchylka** - Počet dnů, o které se datum dodání v záhlaví nabídky nebo řádku liší od požadovaného data dodání v záhlaví nebo řádku požadavku na nabídku. Pro každou nabídku můžete zadat hodnocení.
+
+3. Vyberte řádek záhlaví pro jinou objednávku, kterou chcete ohodnotit.
+4. Do pole **Rozsah** zadejte číslo.
+5. Zvolte **Uložit**.
 
 ## <a name="reject-a-bid"></a>Odmítnutí nabídky
+
 1. Vyberte řádek záhlaví pro objednávku, kterou chcete odmítnout.
-    * V každém okamžiku můžete je možné pouze přijetí, odmítnutí nebo návrat jedné nabídky nebo řádků v rámci nabídky.  
-2. Vyberte Zaškrtnout políčko.
-    * Pokud označíte pole Označit v záhlaví nabídky, budou označeny také všechny řádky. Můžete se také rozhodnout označit dílčí sadu řádků v rámci nabídky a odmítnout je nebo je přijmout. Lze potvrdit nabídku jednoho dodavatele pro některé řádky v požadavku na nabídku a potom udělit jiné řádky požadavku na nabídku jinému dodavateli. Musíte tak ale učinit ve 2 krocích vždy po jedné nabídce. Pokud existují řádky alternativy, můžete pouze přijmout buď původní řádek nabídky nebo jeho alternativu, ne však obojí.  
-3. Klikněte na tlačítko Zamítnout.
-4. Klepnutím na možnost Parametry otevřete dialogové okno.
-5. V poli Odmítnutí důvodu zadejte nebo vyberte hodnotu.
-    * Důvod pro odmítnutí bude uložen v odpovědi.  
-6. Klikněte na tlačítko OK.
-7. Klikněte na tlačítko OK.
-8. Zavřete stránku.
-9. Zavřete stránku.
-10. Aktualizujte stránku.
+
+    V každém okamžiku je možné přijetí, odmítnutí nebo vrácení pouze jedné nabídky nebo řádků v rámci jedné nabídky.
+
+2. Vyberte políčko **Označit**.
+
+    Pokud označíte pole **Označit** v záhlaví nabídky, budou označeny také všechny řádky. Chcete-li odmítnout nebo přijmout pouze některé řádky nabídky, můžete označit pouze tyto řádky. Dále můžete přijmout nabídku jednoho dodavatele pro některé řádky požadavku na nabídku a poté přidělit jiné řádky požadavku na nabídku jinému dodavateli. Je však nutné dělat jednu nabídku současně.
+
+    Pokud existují alternativní řádky, můžete přijmout buď původní řádek nabídky nebo jeho alternativu, nikoli však obojí.
+
+3. Vyberte **Odmítnout**.
+4. Vyberte **Parametry** a pak v poli **Důvod odmítnutí** zadejte nebo vyberte důvod odmítnutí nabídky.
+
+    Důvod je uložen v odpovědi.
+
+5. Vyberte **OK**.
+6. Vyberte **OK**.
 
 ## <a name="accept-a-bid"></a>Přijetí nabídky
-1. Vyberte nabídku, kterou chcete přijmout, a klepněte na odkaz v poli Požadavek na nabídku.
-2. V podokně akcí klikněte na možnost Odpovědět.
-3. Klepněte na možnost Akceptovat.
-    * Pokud jste označili určité řádky a jiné nikoli, akce přijetí bude obsahovat pouze označené řádky. Pokud chcete přijmout všechny řádky v nabídce, řádky není třeba označit.  
-4. Klepnutím na možnost Parametry otevřete dialogové okno.
-    * Tímto způsobem lze zaznamenat důvod pro přijetí nabídky. Důvod bude uložen v nabídce.  
-5. V poli Potvrzení důvodu zadejte nebo vyberte hodnotu.
-6. Klikněte na tlačítko OK.
-7. Klikněte na tlačítko OK.
-    * Po klepnutí na tlačítko OK vytvoříte nákupní objednávku na základě řádků, které jsou zahrnuty v přijetí požadavku na nabídku. Pokud existují jiné nabídky, které nebyly zpracovány (přijaty, odmítnuty nebo vráceny), systém zobrazí výzvu k odmítnutí zbývajících nabídek.  
 
-## <a name="view-the-purchase-order-thats-been-generated"></a>Zobrazení nákupní objednávky, která byla vytvořena
-1. V podokně akcí klikněte na položku Obecné.
-2. Klikněte na Nákupní objednávku.
-    * Zde je vidět nákupní objednávka, která byla vygenerována po přijetí nabídky.  
-3. Zavřete stránku.
-4. Zavřete stránku.
-5. Zavřete stránku.
-6. Zavřete stránku.
+1. Vyberte nabídku, kterou chcete přijmout, a zvolte odkaz v poli **Požadavek na nabídku**.
 
+    Pokud se nacházíte na stránce **Porovnat odpovědi na požadavky na nabídku**, je zvýrazněná nabídka tou nabídkou, kterou systém bude při akci přijetí brát v úvahu. Řádky lze přijímat pouze z jedné nabídky najednou.
+
+2. V podokně akcí zvolte **Odpovědět**.
+3. Zvolte **Přijmout**.
+
+    Pokud jste označili pouze určité řádky, bude akce přijetí zahrnovat pouze tyto řádky. Pokud chcete přijmout všechny řádky v nabídce, řádky nemusíte označit.
+
+4. Vyberte **Parametry** a pak v poli **Důvod přijetí** zadejte nebo vyberte důvod přijetí nabídky.
+
+    Důvod je uložen v nabídce.
+
+5. Vyberte **OK**.
+6. Vyberte **OK**.
+
+    Po zvolení **OK** se vytvoří nákupní objednávka na základě řádků, které jsou zahrnuty v přijetí požadavku na nabídku. Pokud existují jiné nabídky, které nebyly zpracovány (přijaty, odmítnuty nebo vráceny), systém zobrazí výzvu k jejich odmítnutí.
+
+## <a name="view-the-purchase-order-that-is-generated"></a>Zobrazení generované nákupní objednávky
+
+- V podokně akcí na kartě **Obecné** zvolte **Nákupní objednávka**.
+
+    Zobrazená stránka ukáže nákupní objednávku, která byla vygenerována po přijetí nabídky.

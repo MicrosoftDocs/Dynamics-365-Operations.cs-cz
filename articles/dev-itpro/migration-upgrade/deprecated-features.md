@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992876"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527664"
 ---
 # <a name="removed-or-deprecated-features"></a>Odstraněné nebo zastaralé funkce
 
@@ -66,26 +66,6 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 | **Ovlivněné oblasti produktu**         | Webový klient |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Od dubna 2020 bude možnost "je jedním z" výchozím chováním bez mechanismu výchozího chování. |
-
-### <a name="deriving-from-internal-classes-is-deprecated"></a>Odvození z interních tříd je zastaralé
-
-|   |  |
-|------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Před aktualizací Platform Update 25 bylo možné vytvořit třídu nebo tabulku odvozenou z interní třídy/tabulky, která je definována v jiném balíčku/modulu. Nejedná se o bezpečný postup kódování. Od aktualizace Platform update 25 bude kompilátor zobrazovat upozornění. |
-| **Nahrazeno jinou funkcí?**   | Upozornění kompilátoru bude nahrazeno chybou v příští aktualizaci Platform update 26. Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Platform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód. Tato změna ovlivní čas nasazení a kompilace.|
-| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
-| **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26. |
-
-### <a name="overriding-internal-methods-is-deprecated"></a>Přepsání interních metod je zastaralé
-
-|   |  |
-|------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Před aktualizací Platform Update 25 bylo možné přepsat interní metodu v odvozené třídě, která je definována v jiném balíčku/modulu. Nejedná se o bezpečný postup kódování. Od aktualizace Platform update 25 bude kompilátor zobrazovat upozornění. |
-| **Nahrazeno jinou funkcí?**   | Toto upozornění kompilátoru bude nahrazeno chybou sestavení v příští aktualizaci Platform update 26. Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Platform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód. Tato změna ovlivní čas nasazení a kompilace. |
-| **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
-| **Možnost nasazení**              | Vše |
-| **Stav**                         | Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26. |
 
 ### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parametr umožňující prodejní objednávky s více zdroji financování projektové smlouvy
 Podpora pro vytváření prodejních objednávek na základě projektů, kde měla projektová smlouva více zdrojů financování s nastavením **parametrů řízení projektů** **Povolit prodejní objednávky pro projekt v více zdroji financování**. Tento parametr není ve výchozím nastavení povolen. 

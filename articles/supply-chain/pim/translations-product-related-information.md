@@ -20,11 +20,11 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d124e2608f01878487bc8fc9af2e27d143c8ae9e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342861"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1573296"
 ---
 # <a name="product-related-translations-faq"></a>Překlady související s produktem – nejčastější dotazy
 

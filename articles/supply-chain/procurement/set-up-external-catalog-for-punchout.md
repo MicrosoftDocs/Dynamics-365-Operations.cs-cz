@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
-ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "368161"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571623"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
 
@@ -78,7 +78,7 @@ Níže naleznete popis štítků, které jsou zahrnuty do šablony:
 |< Header >< Sender >< Credential domain=”” > | Doména společnosti odběratele.|
 |< Header >< Sender >< Credential >< Identity >< /Identity> | Identita společnosti odběratele.|
 |< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|Tajný pro společnost odběratele.|
-|< Požadovat deploymentMode=”” >|Testovací nebo výrobní nasazení.|
+|< Request deploymentMode=”” >|Testovací nebo výrobní nasazení.|
 |< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Adresa URL konečného bodu punchout společnosti dodavatele.|
 
 ### <a name="extrinsic-elements"></a>Externí prvky

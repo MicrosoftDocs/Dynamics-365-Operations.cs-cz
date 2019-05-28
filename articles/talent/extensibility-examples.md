@@ -3,14 +3,14 @@ title: Rozšíření aplikace Talent pomocí PowerApps a Microsoft Flow - přík
 description: Toto téma popisuje několik příkladů scénářů rozšíření pro aplikaci Microsoft Dynamics 365 for Talent používající Microsoft PowerApps a Microsoft Flow.
 author: negudava
 manager: Annbe
-ms.date: 03/04/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent;Core;Experience Apps
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0aa3578047b9397682a7039d0dbcc05cc1b167e4
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "949913"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517502"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Rozšíření aplikace Talent pomocí PowerApps a Microsoft Flow - příkladové scénáře
 
@@ -101,7 +101,21 @@ Tuto šablonu lze rozšířit, aby ji bylo možné použít pro všechny scéná
 
 Chcete-li stáhnout šablonu **Tok - Integrace SharePoint**, přejděte na [Tok - Integrace SharePoint](https://go.microsoft.com/fwlink/?linkid=2082109) v Microsoft Download Center.
 
+## <a name="admin-console-to-manage-talent-pools"></a>Konzola správce pro správu skupin talentů
 
+Když povolíte integraci se službou LinkedIn, Attract automaticky vytvoří skupinu talentů LinkedIn. Když náborový pracovník vymění InMail za nábor prostřednictvím služby LinkedIn, Attract vytvoří profil a nábor se stane členem skupiny talentu LinkedIn. Tato aplikace PowerApps je užitečná pro reorganizaci kandidátů ve skupinách talentů na základě dovedností.
+
+Spusťte tuto aplikaci PowerApps jako konzolu správce, která provede následující úkoly:
+
+- Uvede seznam kandidátů ve skupině talentů
+- Přidá a odstraní kandidáty ze skupiny talentů
+- Přesune kandidáty z jedné skupiny talentů do druhé
+- Určí, zda kandidáti jsou již součástí skupiny talentů před jejich přesunutím
+- Ověří dovednosti kandidátů před jejich přesunutím do jiných skupin talentů
+
+Tato aplikace PowerApps používá vztahy N:N, takže ji můžete použít jako šablonu pro jiné scénáře, kde potřebujete extrahovat záznamy, které mají vztahy N:N.
+
+Chcete-li stáhnout šablonu **Konzola správce pro správu skupin talentů**, přejděte na [Konzola správce pro správu skupin talentů](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) v Microsoft Download Center.
 
 ## <a name="additional-resources"></a>Další zdroje
 

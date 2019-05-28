@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Dokumentace pro Microsoft Dynamics 365 for Finance and Operations
 description: Dokumentace pro Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 04/11/2019
 ms.topic: index-page
-ms.prod: null
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: null
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: 'Core, Operations'
+ms.search.scope: Core, Operations
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4547a0c8d43584e4cb8981e0a055c514c184f6dd
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1507582"
 ---
-
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentace pro Microsoft Dynamics 365 for Finance and Operations
 
 [!include [banner](includes/banner.md)]
@@ -60,6 +64,11 @@ Mnoho z tohoto obsahu se vztahuje i na související produkty: Microsoft Dynamic
 <p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Informujte se o aktualizacích služeb</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Automatizace datové úlohy</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
+
+<h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrace</a></h3>
+<p><a href="../dev-itpro/business-events/home-page.md">Obchodní události</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Datové entity</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integrace pomocí Microsoft Flow</a></p>
 
 <h3><a href="../financials/index.md">Správa financí</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Závazky</a></p>
@@ -105,10 +114,6 @@ Mnoho z tohoto obsahu se vztahuje i na související produkty: Microsoft Dynamic
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Rozvoj</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Rozšiřitelnost</a></p>
-
-<p><a href="../dev-itpro/data-entities/integration-overview.md">Integrace dat</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Správa dat</a></p>
-
 <p><a href="../dev-itpro/office-integration/office-integration.md">Integrace s Office</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Průběžné doručování</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobilní platforma</a></p>
@@ -119,7 +124,6 @@ Mnoho z tohoto obsahu se vztahuje i na související produkty: Microsoft Dynamic
 <p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Místní nasazení</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servis</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Data management framework</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Správa organizace</a></p>
 </td>

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505089"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
@@ -71,6 +71,8 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 640 | Vymazat prodejního zástupce na řádku | Odstraňte skupinu prodejní provize (obchodní zástupce) z aktuálně vybraného řádku. | Ano | Ano | Ne | Ano | Ne |
 | 121 | Vymazat prodejce | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
 | 1055 | Zavřít směnu | Uzavřete aktuální směnu, vytiskněte sestavu Z a odhlaste uživatele ze systému. | Ano | Ano | Ano | Ne | Ne |
+| 139 | Uzavřít transakci | Vyzve uživatele k výběru způsobu platby | Ano | Ano | Ne | Ano | Ne |
+| 620 | Vytvořit objednávku odběratele | Převeďte transakci POS na objednávku odběratele. | Ano | Ano | Ne | Ano\* | Ne |
 | 925 | Kopírovat bankovní šek | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ano |
 | 620 | Vytvořit objednávku odběratele | Převeďte transakci POS na objednávku odběratele. | Ano | Ano | Ne | Ano\* | Ne |
 | 621 | Vytvořit nabídku | Převeďte transakci POS na prodejní nabídku. | Ano | Ano | Ne | Ano\* | Ne |

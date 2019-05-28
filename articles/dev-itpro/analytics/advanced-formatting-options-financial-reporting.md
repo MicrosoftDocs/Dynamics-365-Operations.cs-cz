@@ -1,16 +1,16 @@
 ---
 title: Rozšířené možnosti formátování ve finančním výkaznictví
 description: Vytvoříte-li zprávu ve finančním vykazování, budou k dispozici další funkce formátování, včetně filtrů pro dimenze, omezení pro sloupce a jednotky vykazování, řádky neurčené pro tisk a výrazy IF/THEN/ELSE ve výpočtech.
-author: ShylaThompson
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 70f69fdad3d9186886190c62fba08af06d2a24d6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335570"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1502558"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Rozšířené možnosti formátování ve finančním výkaznictví
 
@@ -41,6 +41,7 @@ Následující tabulka vysvětluje rozšířené funkce formátování, které j
 | Omezení sloupce         | Omezení sloupce v definici řádku je užitečné ke skrývání hodnot, které jsou relevantní pouze pro některé řádky sestavy. Při provádění výpočtu procent na řádku zabrání omezení sloupce sloupcům součtů nebo jiným sloupcům ve vytištění, pokud daná čísla neplatí. |
 | Zalomení sloupce               | Můžete přidat zalomení sloupce do definice řádku a zobrazit tak informace sestavy vedle sebe. Můžete přidat více zalomení sloupce do jedné definice řádku a záhlaví sloupce bude opakováno nad každým sloupcem po zalomení sloupce. Komentáře pro sestavu se zobrazují mezi zalomeními sloupců. |
 | Výraz IF/THEN/ELSE     | Výpočty v definici řádku nebo definici sloupce lze upravit. |
+| Pro hodnoty dimenze používejte jednoduché uvozovky (' ') a znak ampersand (&). | Můžete použít hodnoty dimenze, včetně znaku ampersandu pro návrh sestavy. |
 
 ## <a name="advanced-cell-placement"></a>Přesné umísťování buněk
 Přesné umísťování buněk (jinak *vynucení*) zahrnuje umístění konkrétních hodnot do konkrétních buněk. Například vynucení často slouží k přesunutí správného zůstatku ve výkazu cashflow. Vynucení můžete použít pro následující účely:
@@ -297,3 +298,9 @@ Výraz **IF/THEN/ELSE** umožňuje závislost jakéhokoli výpočtu na výsledc�
 
 > [!NOTE]
 > Nemůžete vložit výsledky výpočtu do žádného jiného sloupce. Výsledky musí být ve sloupci, který obsahuje vzorec.
+
+#### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>Použití jednoduchých uvozovek a znaku ampersand pro hodnoty dimenze v řádku, sloupci nebo stromu
+
+Sestavy lze navrhovat pomocí hodnot dimenzí, které obsahují znak ampersand (&). 
+
+V rámci jakéhokoliv pole **Odkaz na finanční dimenze** můžete zadat hodnotu, například **P&L**. Zahrnutí jednoduchých uvozovek (' ') na obou stranách hodnoty dimenze označuje, že používáte hodnotu literálu, například zahrnutí znaku ampersandu (&). 

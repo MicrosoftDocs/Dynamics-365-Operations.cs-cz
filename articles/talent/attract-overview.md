@@ -3,7 +3,7 @@ title: Funkce a možnosti aplikace Attract
 description: Toto téma popisuje funkce, které aplikace Attract nabízí pro správu procesu náboru nových talentů.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d80e4d6359e51841e28ab5ef96e281838831db92
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.openlocfilehash: 6b76913ea5a3e9a2e935d8b0cfde88dd721cb5db
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "859729"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517557"
 ---
 # <a name="attract-features-and-capabilities"></a>Funkce a možnosti aplikace Attract
 
@@ -46,3 +46,6 @@ Aplikace Attract poskytuje předdefinovaný proces náboru, který obsahuje čty
 
 ## <a name="candidate-app"></a>Aplikace pro kandidáta
 Jakmile jsou uchazeči přidáni k pracovnímu místu, obdrží e-mail s odkazem na webovou aplikaci. Tato aplikace poskytuje podrobnosti o práci. Je to současně nástroj pro komunikaci s náborovým týmem. Uchazeči mohou její pomocí také odesílat informace o své dostupnosti pro pohovory.
+
+## <a name="analytic-reports"></a>Analytické sestavy
+Náborové týmy mohou použít klíčové metriky procesu náboru pro jednu práci nebo agregované přes všechny práce pomocí [analytických sestav v aplikaci Attract](analytic-reports.md). Tato funkce je momentálně ve verzi [Preview](access-preview-feature.md) pro zákazníky s [doplňkem komplexního náboru](attract-comprehensive-hiring.md).

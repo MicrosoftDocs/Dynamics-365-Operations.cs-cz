@@ -3,7 +3,7 @@ title: Vylepšení funkcionality zaúčtování výkazů
 description: Toto téma popisuje vylepšení, která byla provedena u funkce zaúčtování výkazu.
 author: josaw1
 manager: AnnBe
-ms.date: 04/26/2016
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 02880edda6c34c24f8dad8cc8cbeafe215f46896
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321425"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541284"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Vylepšení funkcionality zaúčtování výkazů
 
@@ -43,7 +43,7 @@ Aplikace Finance and Operations zahrnuje následující ověření, která souvi
 - Stejný konfigurační klíč musí být použit pro všechny operace, které se provádí v daném výpisu během jeho cyklu životnosti (vytvořit, vypočítat, vymazat, zaúčtovat a tak dále). Nelze například vytvořit a vypočítat výkaz, když je zapnutý konfigurační klíč **maloobchodní výkaz (starší verze)** konfigurační a vy se pokusíte o zaúčtování stejného výpisu, když je zapnutý konfigurační klíč **maloobchodní výkaz**.
 
 > [!NOTE]
-> Doporučujeme používat **maloobchodní výpisy** konfigurační klíč pro zlepšení výkaz zaúčtování, pokud nemáte závažné důvodů pro použití **maloobchodní výpisy (starší verze)** konfigurační klíč místo. Společnost Microsoft bude dále investovat do nových a vylepšených funkcí zaúčtování výkazů a je důležité, abyste na ně co nejdříve přešli a plně je využívali. Zastaralé funkce zaúčtování výkazů budou v budoucích verzích vyřazeny.
+> Doporučujeme používat **maloobchodní výpisy** konfigurační klíč pro zlepšení výkaz zaúčtování, pokud nemáte závažné důvodů pro použití **maloobchodní výpisy (starší verze)** konfigurační klíč místo. Společnost Microsoft bude dále investovat do nových a vylepšených funkcí zaúčtování výkazů a je důležité, abyste na ně co nejdříve přešli a plně je využívali. Zastaralá funkce zaúčtování výkazů bude od verze 8.0 vyřazena.
 
 ## <a name="setup"></a>Nastavení
 
@@ -56,11 +56,15 @@ Jako součást vylepšení funkce zaúčtování výkazu byly zavedeny tři nov�
 
 - **Je vyžadována deaktivace inventur** – při nastavení této možnosti na **Ano** proces zaúčtování výkazů pokračuje i v případě, že rozdíl mezi vypočítanou částkou a částkou transakce na výpisu je mimo prahovou hodnotu, která je definovaná v pevné záložce pro maloobchod **Výkaz**.
 
-Kromě toho bylo zavedeno pole **maximální počet paralelních výkazů** byl zaveden pole na pevné záložce **dávkové zpracování**. Toto pole definuje počet dávkových úloh, které by měly být spuštěny ve stejné době. V současné době musíte ručně nastavit hodnotu tohoto pole.
+Dále byly zavedeny následující parametry na záložce s náhledem **Dávkové zpracování** na kartě **Zaúčtování** stránky **Parametry maloobchodu**: 
 
-S novým procesem zaúčtování je rovněž nutné definovat **Produkt dárkového poukazu** na pevné záložce **Dárkový poukaz** na kartě **Zaúčtování** stránky **Parametry maloobchodu**. To platí i v případě, že organizace nepoužívá žádné dárkové poukazy.
+- **Maximální počet zaúčtování paralelních výkazů** – Toto pole definuje počet dávkových úloh, které budou použity při zaúčtování více výkazů. 
+- **Maximální počet vláken pro zpracování objednávky podle výkazu** – Toto pole představuje maximální počet vláken, které používá dávková úloha zaúčtování výkazu k vytvoření a fakturaci prodejních objednávek pro jeden výkaz. Celkový počet vláken, která budou použita procesem zaúčtování výkazu, bude vypočten na základě hodnoty v tomto parametru vynásobené hodnotou v parametru **Maximální počet zaúčtování paralelních příkazů**. Nastavení příliš vysoké hodnoty tohoto parametru může negativně ovlivnit výkon procesu zaúčtování výkazu.
+- **Maximální počet řádků transakce zahrnutých do agregace** – Toto pole definuje počet řádků transakce, které budou zahrnuty do jedné agregované transakce před vytvořením nové. Agregované transakce jsou vytvářeny na základě různých agregačních kritérií, jako je například odběratel, obchodní datum nebo finanční dimenze. Je důležité si uvědomit, že řádky z jedné maloobchodní transakce nebudou rozděleny mezi různé agregované transakce. To znamená, že je možné, že počet řádků v agregované transakci je o něco vyšší nebo nižší podle faktorů, jako je například počet různých produktů.
+- **Maximální počet vláken pro ověření transakcí obchodu** – Toto pole definuje počet vláken, která budou použita k ověření maloobchodních transakcí. Ověření maloobchodních transakcí je povinný krok, ke kterému musí dojít předtím, než mohou být transakce načteny do výkazů. Je rovněž nutné definovat **Produkt dárkového poukazu** na záložce s náhledem **Dárkový poukaz** na kartě **Zaúčtování** stránky **Parametry maloobchodu**. Je nutné to definovat i v případě, že organizace nepoužívá dárkové poukazy.
 
-Všimněte si, že všechna nastavení a parametry související se zaúčtováním výkazu, která jsou definována v seznam maloobchodních obchodech a na stránce **Parametry Maloobchodu**, se vztahuje na zaúčtování funkci zlepšeného výkazu.
+> [!NOTE]
+> Všechna nastavení a parametry související se zaúčtováním výkazu, které jsou definovány v maloobchodních obchodech a na stránce **Parametry Maloobchodu**, se vztahují na vylepšenou funkci zaúčtování výkazu.
 
 ## <a name="processing"></a>Zpracování
 

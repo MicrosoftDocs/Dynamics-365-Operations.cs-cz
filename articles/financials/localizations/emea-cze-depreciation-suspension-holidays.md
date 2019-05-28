@@ -17,12 +17,12 @@ ms.search.region: Czech Republic
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9883a56f2b063863f2451a367b1fdbb81091b16f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e6e7dc669db448c9a8284d3a96b924baba1f60c9
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537656"
 ---
 # <a name="depreciation-suspension-holidays"></a>Přerušení odpisování (svátky)
 

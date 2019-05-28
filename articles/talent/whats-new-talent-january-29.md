@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-01-29
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: d4504cebb7702c7163c94badeeb06d9af0e5467e
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "857631"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517486"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-january-31-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (31. ledna 2019)
 

@@ -19,11 +19,11 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d16ea19a6d3cfea325281f301e0502bb051381d9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "344057"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566742"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Možnost Celková částka a Interval výpočtu pro kódy DPH
 
@@ -60,7 +60,7 @@ Prodejní daň bude vypočtena ve výši celé zdanitelné částky.
 
 | Zdanitelná částka (cena) | Výpočet    | DPH |
 |------------------------|----------------|-----------|
-| 35,00                  | 35,00 \* 0,30  | 10,50 USD     |
+| 35,00                  | 35,00 \* 0,30  | 10.50     |
 | 50,00                  | 50,00 \* 0,30  | 15:00     |
 | 85,00                  | 85,00 \* 0,20  | 17,00     |
 | 305,00                 | 305,00 \* 0,10 | 30,50     |
@@ -79,7 +79,7 @@ Prodejní daň je součtem částek daně, které byly vypočteny pro každou č
 
 | Zdanitelná částka (cena) | Výpočet                                                               | DPH |
 |------------------------|---------------------------------------------------------------------------|-----------|
-| 35,00                  | 35,00 \* 0,30                                                             | 10,50 USD     |
+| 35,00                  | 35,00 \* 0,30                                                             | 10.50     |
 | 50,00                  | 50,00 \* 0,30                                                             | 15:00     |
 | 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
 | 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |

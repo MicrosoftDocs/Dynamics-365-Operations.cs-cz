@@ -18,11 +18,11 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: df9b091735a4971446c5b5d0e054076260040683
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330165"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558945"
 ---
 # <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Zobrazení stránek vedle sebe pomocí funkce Otevřít v novém okně
 

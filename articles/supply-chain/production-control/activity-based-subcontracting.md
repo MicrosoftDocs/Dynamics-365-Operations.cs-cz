@@ -20,11 +20,11 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "350037"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549306"
 ---
 # <a name="activity-based-subcontracting"></a>Subdodávky na základě aktivit
 
@@ -65,7 +65,7 @@ Následující části popisují, jak nakonfigurovat aktivity pro subdodávky.
 Platební položka, která se používá u subdodávek na základě aktivit, musí být produktem, který má následující vlastnosti:
 
 -   **Typ produktu:** Služba
--   **Skupina modelů zásob::** Neskladová
+-   **Skupina modelů zásob:** Neskladová
 
 Tento požadavek zajišťuje použití modelu zásob FIFO. **Poznámka:** Výpočet nákladů na produkt vyžaduje, aby byly definovány standardní náklady na službu. Nákupní smlouva s dodavatelem je vyžadována. Službu nelze jinak použít u subdodávek na základě aktivit.
 
