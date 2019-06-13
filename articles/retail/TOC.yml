@@ -1,684 +1,1056 @@
-- name: Vítejte v Dynamics 365 for Retail
-  href: index.md
-- name: Začínáme
-  items:
-    - name: Co je nového a co se změnilo
-      href: get-started/whats-new.md
-    - name: Funkce Preview v Dynamics 365 for Retail 10.0.3
-      href: get-started/whats-new-10-0-3.md
-    - name: Funkce Preview v Dynamics 365 for Retail 10.0.2
-      href: get-started/whats-new-10-0-2.md
-    - name: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.1
-      href: get-started/whats-new-10-0-1.md
-    - name: Co je nového a upraveného v aplikaci Dynamics 365 for Retail (duben 2019)
-      href: get-started/april-whats-new.md
-    - name: Před zakoupením aplikace Retail
-      href: get-started/before-you-buy.md
-    - name: Registrace ukázkového předplatného
-      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-    - name: Nasazení ukázkového prostředí
-      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
-    - name: Možnosti nasazení
-      href: dev-itpro/choose-deployment.md
-    - name: Získání podpory pro Retail
-      href: retail-support.md
-    - name: Často kladené dotazy k aktualizacím služby One Version
-      href: ../fin-and-ops/get-started/one-version.md
-- name: Vysvětlení životního cyklu implementace
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
-  items:
-    - name: Microsoft FastTrack for Dynamics 365
-      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
-    - name: Zaškolení
-      href: ../fin-and-ops/imp-lifecycle/onboard.md
-    - name: Příprava pro ostré nasazení
-      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
-    - name: Často kladené dotazy týkající se ostrého nasazení
-      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
-    - name: Odeslání požadavku na službu
-      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
-    - name: 'Často kladené dotazy týkající se předplatného, projektů LCS a klientů Azure Active Directory'
-      href: ../fin-and-ops/get-started/subscription-overview.md
-    - name: Přesun prostředí mezi datovými centry
-      href: ../fin-and-ops/get-started/move-environments-data-center.md
-    - name: Přesun licencí mezi typy smlouvy
-      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
-    - name: Přesun projektu implementace LCS do jiného klienta služby Azure Active Directory
-      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
-    - name: Implementace více LCS projektů a produkčních prostředí na stejném klientovi služby Azure Active Directory
-      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
-    - name: Implementace projektů v aplikaci Finance and Operations Retail
-      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: 'Nastavení nových prostředí, Azure DevOps a větví pro projekty Retail'
-      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-    - name: Aktualizace kódu a prostředí pro projekty Retail
-      href: dev-itpro/updating-environments.md
-    - name: Testování a problémy s výkonností
-      href: dev-itpro/retail-implementation-testing-performance.md
-- name: Distribuovaná správa objednávek (DOM)
-  href: dom.md
-- name: Platby
-  items:
-    - name: Metody platby
-      href: payment-methods.md
-    - name: 'Nastavení platební karty, autorizace a záznam'
-      href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: Konfigurace nominálních hodnot hotovosti pro pokladní místo
-      href: cash-denominations.md
-    - name: Platební konektor Dynamics 365 pro Adyen
-      href: dev-itpro/adyen-connector.md
-    - name: Nastavení scénářů plateb faktur
-      href: payinvoice.md
-    - name: Časté dotazy k platbám
-      href: dev-itpro/payments-retail.md
-    - name: Zabránění duplicitním platbám
-      href: duplicate-payment-protection.md
-- name: Nákupní objednávky
-  items:
-    - name: Přehled nákupních objednávek
-      href: ../supply-chain/procurement/purchase-order-overview.md
-    - name: Vytváření nákupních objednávek
-      href: ../supply-chain/procurement/purchase-order-creation.md
-    - name: Příjemka produktu proti nákupním objednávkám
-      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
-    - name: Schválení a potvrzení nákupních objednávek
-      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
-    - name: Mobilní pracovní prostor schvalování nákupních objednávek
-      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
-- name: Výkazy
-  items:
-    - name: Výkazy maloobchodu
-      href: retail-statements.md
-    - name: Kontrola konzistence maloobchodních transakcí
-      href: valid-checker.md
-    - name: "Vytvoření, výpočet a\_zaúčtování výkazů pro maloobchod"
-      href: tasks/create-calculate-post-statement-retail-store.md
-    - name: Vylepšení funkcionality zaúčtování výkazů
-      href: statement-posting-EOD.md
-    - name: 'Konfigurace parametrů Retail, které ovlivňují výkazy maloobchodu'
-      href: tasks/parameter-configurations-retail-statements.md
-    - name: 'Konfigurace nastavení metod platby, které ovlivňují výkazy maloobchodu'
-      href: tasks/payment-configurations-retail-statements.md
-    - name: "Konfigurace a\_spuštění úlohy pro výpočet výkazů"
-      href: tasks/run-job-calculate-statements.md
-    - name: "Konfigurace a\_spuštění úlohy pro zaúčtování výkazů"
-      href: tasks/run-job-post-statements.md
-    - name: 'Konfigurace nastavení obchodu, které ovlivňují výkazy maloobchodu'
-      href: tasks/store-configurations-retail-statements.md
-- name: DPH
-  items:
-    - name: Přehled DPH
-      href: ../financials/general-ledger/indirect-taxes-overview.md
-    - name: Metody výpočtu DPH v poli Zdroj
-      href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-    - name: " Přiřazení a\_přepsání DPH"
-      href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
-    - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
-      href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-- name: Omnikanálové rozšířené automatické náklady
-  items:
-    - name: Konfigurace a použití rozšířených automatických nákladů
-      href: omni-auto-charges.md
-    - name: Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje
-      href: pro-rate-charges-matching-lines.md
-- name: Kontaktní středisko
-  items:
-    - name: Funkce prodeje kontaktního střediska
-      href: call-center-functionality.md
-    - name: Katalogy kontaktního střediska
-      href: call-center-catalogs.md
-    - name: Konfigurace způsobů dodání a poplatků
-      href: configure-call-center-delivery.md
-    - name: Nastavení a práce s výstrahami u podvodů
-      href: set-up-fraud-alerts.md
-    - name: Nastavení kanálů kontaktního střediska
-      href: set-up-order-processing-options.md
-    - name: Nastavení programů kontinuity pro kontaktní střediska
-      href: set-up-continuity-program.md
-    - name: Konfigurace a práce s blokováním objednávek kontaktního střediska
-      href: work-with-order-holds.md
-    - name: Metody platby
-      href: work-with-payments.md
-- name: Nastavení a správa kanálů
-  items:
-    - name: Inicializace počátečních dat v nových prostředích Retail
-      href: enable-configure-retail-functionality.md
-    - name: Definování a udržování maloobchodní sítě
-      href: define-maintain-retail-channels.md
-    - name: Správa sortimentu
-      href: assortments.md
-    - name: Nastavit online obchodů
-      href: online-stores.md
-    - name: Konfigurace a instalace Retail hardware station
-      href: retail-hardware-station-configuration-installation.md
-    - name: Čas a docházka v aplikaci Retail
-      href: retail-time-attendance.md
-- name: Modern Point of Sale (MPOS) a Cloud POS
-  items:
-    - name: Výběr mezi MPOS a Cloud POS
-      href: MPOS-or-CPOS.md
-    - name: Online a offline POS operace
-      href: pos-operations.md
-    - name: Aktivace zařízení přizpůsobeného Retail Modern POS
-      href: dev-itpro/retail-POS-activation-changes.md
-    - name: Rozložení obrazovky ukázkových dat v MPOS a Cloud POS
-      href: demo-data.md
-    - name: Vyhledávání produktu a zákazníka v POS
-      href: POS-search-improvements.md
-    - name: Vyhledávání zásob v POS
-      href: product-variants-POS.md
-    - name: Pozastavení a obnovení transakcí v POS
-      href: pos-suspend-recall-transactions.md
-    - name: Hardwarová periferní zařízení
-      items:
-        - name: Periferní zařízení Retail
-          href: retail-peripherals-overview.md
-        - name: Simulátor periferních zařízení Retail
-          href: dev-itpro/retail-peripheral-simulator.md
-        - name: Připojení periferních zařízení k POS
-          href: define-maintain-channel-clients-registers-hw-stations.md
-    - name: Rozložení obrazovky
-      items:
-        - name: Rozložení obrazovky ukázkových dat v MPOS/CPOS
-          href: demo-data.md
-        - name: Rozložení obrazovky pro POS
-          href: pos-screen-layouts.md
-        - name: Instalace návrháře rozložení Retail POS
-          href: install-pos-layout-designer.md
-        - name: Volba nastavení oznámení
-          href: Notifications-POS.md
-        - name: Nastavení aplikace POS a uživatelského jazyka
-          href: pos-application-user-language-settings.md
-        - name: Nastavení a správa obrázků pro MPOS
-          href: set-up-manage-images-retail-mpos.md
-    - name: "Informační kódy a\_skupiny informačních kódů"
-      href: info-codes-retail.md
-    - name: Vylepšení POS pro serializované produkty
-      href: serialized-inventory.md
-    - name: Doporučení produktu
-      items:
-        - name: Doporučení přizpůsobeného produktu
-          href: personalized-product-recommendations.md
-        - name: Přidání řízení doporučení na zařízeních POS
-          href: add-recommendations-control-pos-screen.md
-    - name: Funkce Offline POS
-      href: pos-offline-functionality.md
-    - name: Správa směn a zásuvky s hotovostí
-      href: shift-drawer-management.md
-    - name: Vyplacení zůstatku dárkového poukazu
-      href: dev-itpro/gift-card-cash-out.md
-    - name: Objednávky zákazníka
-      items:
-        - name: Objednávky zákazníka v MPOS
-          href: customer-orders-overview.md
-        - name: Hybridní objednávky zákazníka
-          href: hybrid-customer-orders.md
-    - name: Zaměstnanci obchodu
-      items:
-        - name: Sledování provizí v POS pomocí prodejních skupin
-          href: pos-sales-groups-track-commissions.md
-    - name: Odeslání objednávek z jiného obchodu
-      href: charge-send.md
-    - name: Aktivace zařízení
-      items:
-        - name: 'Konfigurace, Instalace a aktivace MPOS'
-          href: retail-modern-pos-device-activation.md
-        - name: Nastavení funkce rozšířeného přihlášení pro MPOS a Cloud POS
-          href: extended-logon.md
-        - name: Správa účtů aktivace Retail a ověření zařízení
-          href: set-up-activation-accounts-validate-devices-hq.md
-    - name: Účtenky
-      items:
-        - name: Nastavení a návrh formátů příjemek
-          href: receipt-templates-printing.md
-        - name: Odesílání účtenek e-mailem z MPOS
-          href: email-receipts.md
-    - name: Záznamník úloh a nápověda pro MPOS a Cloud POS
-      href: task-recorder-retail-pos.md
-- name: Plnění objednávek
-  items:
-    - name: Plnění objednávek obchodu
-      href: Order-fulfillment-overview.md
-    - name: Nastavení plnění objednávek pro obchody
-      href: Order-fulfillment-POS-setup.md
-    - name: Zobrazení oznámení o objednávkách v POS
-      href: Notifications-POS.md
-- name: Vrácení
-  items:
-    - name: Prodej a vrácení produktů nezahrnutých v sortimentu obchodu
-      href: sell-return-outside-assortments.md
-    - name: Konfigurace a zpracování výměny u vratek
-      href: orderexchanges.md
-    - name: Omezení platebních metod pro vrácení bez příjemky
-      href: payment-methods-restrictions.md
-    - name: Vrácení položek napříč vícero objednávkami odběratele a fakturami
-      href: multireturn.md
-- name: Monitorování a analýza
-  items:
-    - name: Monitorování výkonnosti prodeje a marží
-      href: monitor-sales-margin-performance.md
-    - name: "Analýza trendů a\_vzorců prodeje"
-      href: analyze-sales-trends-patterns.md
-    - name: Posouzení prodejních výsledků podle produktu
-      href: sales-performance-products.md
-    - name: Vyhodnocení ziskovosti odběratelů a produktů
-      href: assess-customer-product-profitability.md
-    - name: Analýza výkonnosti obchodu
-      href: store-performance-information.md
-    - name: 'Nastavení analýzy recency, frekvence a peněžního období'
-      href: set-up-rfm-analysis.md
-- name: Sestavy maloobchodních cen
-  href: price-report.md
-- name: "Tvorba cen a\_slevy"
-  items:
-    - name: Maloobchodní slevy
-      href: retail-discounts-overview.md
-    - name: Správa maloobchodní prodejní ceny
-      href: price-management.md
-    - name: Úpravy ceny a slevy
-      href: price-adjustments-discounts.md
-    - name: Uplatnit vícero slev na produkt
-      href: Apply-multiple-retail-discounts.md
-    - name: Určení optimální kombinace překrývajících se slev
-      href: optimal-combination-overlapping-discounts.md
-    - name: Definování slev specifických pro kanál
-      href: define-channel-specific-discounts.md
-    - name: Možnosti zabránění slevám pro maloobchodní produkty
-      href: prevent-discounts.md
-    - name: Přehled slev při dodání
-      href: retail-shipping-discount.md
-    - name: Natavení kupónů pro maloobchodní prodej
-      href: retail-coupons.md
-- name: Produkty a merchandising
-  items:
-    - name: Přehled informací o produktech
-      href: ../supply-chain/pim/product-information.md
-    - name: Hierarchie maloobchodu
-      href: retail-hierarchies.md
-    - name: Atributy a skupiny atributů
-      href: attribute-attributegroups-lifecycle.md
-    - name: Vytvoření a správa atributů
-      href: create-manage-attributes.md
-    - name: Nastavení maloobchodních produktů
-      href: set-up-retail-products.md
-    - name: Správa kategorií produktů a produktů v aplikaci Retail
-      href: category-management-product-creation.md
-    - name: Dimenze produktu
-      href: ../supply-chain/pim/product-dimensions.md
-    - name: Nastavení čárových kódů
-      href: set-up-bar-codes.md
-    - name: Nastavení masek čárových kódů
-      href: set-up-bar-code-masks.md
-    - name: Nastavení sortimentu
-      href: set-up-assortments.md
-    - name: Prodej a návrat produktů nezahrnutých v sortimentu obchodu
-      href: sell-return-outside-assortments.md
-    - name: Výchozí nastavení objednávky pro dimenze a varianty produktu
-      href: ../supply-chain/production-control/default-order-settings.md
-    - name: "Vyhledávání produktů a\_variant produktu během zadávání objednávky"
-      href: ../supply-chain/pim/search-products-product-variants.md
-- name: Věrnostní program
-  items:
-    - name: Přehled věrnostního programu
-      href: set-up-customer-loyalty-program.md
-- name: Zásoby
-  items:
-    - name: Správa skladových zásob
-      href: work-with-store-inventory.md
-    - name: "Registrace sériových čísel v\_prodejním procesu"
-      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
-    - name: Skladové deníky
-      href: ../supply-chain/inventory/inventory-journals.md
-    - name: Počet označení zásob
-      href: ../supply-chain/inventory/inventory-tag-counting.md
-    - name: Metoda FIFO s fyzickou hodnotou a označením
-      href: ../supply-chain/cost-management/fifo-physical-value-marking.md
-    - name: Datum LIFO s fyzickou hodnotou a označením
-      href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md
-    - name: Metoda LIFO s fyzickou hodnotou a označením
-      href: ../supply-chain/cost-management/lifo-physical-value-marking.md
-    - name: Datum váženého průměru
-      href: ../supply-chain/cost-management/weighted-average-date.md
-    - name: Vážený průměr s fyzickou hodnotou a označením
-      href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md
-    - name: Karanténní příkazy
-      href: ../supply-chain/inventory/quarantine-orders.md
-    - name: Průběžná průměrná nákladová cena
-      href: ../supply-chain/cost-management/running-average-cost-price.md
-    - name: Sledování průběžných průměrných nákladů pro dimenzi zboží
-      href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
-- name: Lidské zdroje
-  items:
-    - name: 'Uspořádání zaměstnanců podle oddělení, prací a pozic'
-      href: ../talent/departments-jobs-positions.md
-    - name: Nastavení komponent práce
-      href: ../talent/create-job.md
-- name: Lokalizace a funkce týkající se předpisů
-  items:
-    - name: Přehled fiskální integrace pro maloobchodní síť
-      href: localizations/fiscal-integration-for-retail-channel.md
-    - name: Nastavení fiskální integrace pro maloobchodní síť
-      href: localizations/setting-up-fiscal-integration-for-retail-channel.md
-    - name: Rakousko
-      items:
-        - name: Ukázka integrace fiskální služby pro Rakousko
-          href: localizations/emea-aut-fi-sample.md
-    - name: Východní Evropa
-      items:
-        - name: Zálohové faktury pro Retail pro východní Evropu
-          href: localizations/emea-eeu-advance-invoices-for-retail.md
-        - name: Správa pokladní hotovosti pro Retail pro východní Evropu
-          href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: Faktury odběratele a vrácení prodejních objednávek ve východoevropských zemích v aplikaci Retail
-          href: localizations/emea-eeu-retail-invoices.md
-        - name: 'Pokyny k nasazení registračních pokladen pro Českou republiku, Maďarsko a Polsko'
-          href: localizations/emea-eeu-deployment.md
-        - name: Vzor integrace fiskální tiskárny pro Polsko
-          href: localizations/emea-pol-fpi-sample.md
-        - name: Ukázka integrace fiskální služby pro Českou republiku
-          href: localizations/emea-cze-fi-sample.md
-    - name: Francie
-      items:
-        - name: Funkce registrační pokladny
-          href: localizations/emea-fra-cash-registers.md
-        - name: Pokyny k nasazení registračních pokladen
-          href: localizations/emea-fra-deployment.md
-    - name: Indie
-      items:
-        - name: Integrace daně ze zboží služeb (GST) pro registrační pokladny
-          href: localizations/apac-ind-cash-registers.md
-        - name: Pokyny k nasazení registračních pokladen
-          href: localizations/apac-ind-loc-deployment-guidelines.md
-        - name: Podpora pro upgrade a N-1 pro Indii
-          href: localizations/apac-ind-n-1-for-india.md
-    - name: Itálie
-      items:
-        - name: Vzor integrace fiskální tiskárny pro Itálii
-          href: localizations/emea-ita-fpi-sample.md
-    - name: Norsko
-      items:
-        - name: Funkce registrační pokladny
-          href: localizations/emea-nor-cash-registers.md
-        - name: Pokyny k nasazení registračních pokladen
-          href: localizations/emea-nor-loc-deployment-guidelines.md
-    - name: Švédsko
-      items:
-        - name: Funkce registrační pokladny
-          href: localizations/emea-swe-cash-registers.md
-        - name: Vzor pro integraci Retail POS s kontrolními jednotkami
-          href: localizations/retail-sdk-control-unit-sample.md
-- name: "Úkoly v\_aplikaci Retail"
-  items:
-    - name: Vytvoření produktu
-      href: ../supply-chain/pim/tasks/create-product.md
-    - name: Konfigurace propojených produktů
-      href: ../supply-chain/pim/tasks/configure-linked-products.md
-    - name: Uvolnění produktu / základního produktu právnickým osobám
-      href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
-    - name: Vytvoření obchodní smluv specifických pro kanál
-      href: tasks/base-price-trade-agreements.md
-    - name: Vytvoření obchodních smluv pomocí cenových pravidel kategorií
-      href: tasks/category-pricing-rules-trade-agreements.md
-    - name: Konfigurace zpracování platební karty
-      href: tasks/configure-credit-card-processing.md
-    - name: Konfigurace funkčních profilů pro obchodní zástupce
-      href: tasks/configure-functionality-profile-sales-representative.md
-    - name: Konfigurace doporučení produktu využívajícího strojové učení
-      href: tasks/configure-machine-learning-product-recommendations.md
-    - name: Vytvoření zařízení a jejich přidružení k pokladnám
-      href: tasks/create-associate-device.md
-    - name: Vytvoření hardwarových stanic
-      href: tasks/create-associate-hardware-station.md
-    - name: Vytvoření registračních pokladen POS
-      href: tasks/create-associate-registers.md
-    - name: "Vytváření objednávek v\_kontaktním středisku"
-      href: tasks/create-call-center-orders.md
-    - name: "Vytvoření finančních dimenzí pro pokladny POS a\_konfigurace hodnot dimenzí na pokladnách"
-      href: tasks/create-financial-dimensions-pos.md
-    - name: "Vytváření finančních dimenzí pro maloobchodní sítě a\_konfigurace hodnot dimenzí v\_obchodech"
-      href: tasks/create-financial-dimensions-retail-channels.md
-    - name: "Vytváření online kanálů a\_definování atributů kanálu"
-      href: tasks/create-online-channel-define-channel-attributes.md
-    - name: Vytváření skupin oprávnění POS
-      href: tasks/create-pos-permission-groups.md
-    - name: Vytvoření vizuálních profilů POS
-      href: tasks/create-pos-visual-profile-2016-02.md
-    - name: Vytváření balení produktů pro nákupní objednávky
-      href: tasks/create-product-packages-purchase-orders.md
-    - name: Vytvoření kanálů kontaktního střediska a definování atributů kanálu
-      href: tasks/define-call-center-channel-channel-attributes.md
-    - name: Definování atributů kanálu
-      href: tasks/define-channel-attributes.md
-    - name: Definování plánů trvání
-      href: tasks/define-continuity-schedules.md
-    - name: ' Definování věrnostních programů'
-      href: tasks/define-loyalty-programs.md
-    - name: ' Definování bodů věrnostních odměn'
-      href: tasks/define-loyalty-reward-points.md
-    - name: ' Definování věrnostních schémat'
-      href: tasks/define-loyalty-schemes.md
-    - name: Návrh vztahů mezi organizačními jednotkami
-      href: tasks/design-relationships-between-organizational-units.md
-    - name: Správa sortimentu
-      href: tasks/manage-assortments-2016-11.md
-    - name: Stažení hardwarové stanice pomocí samoobsluhy
-      href: tasks/perform-self-service-download-hardware-station.md
-    - name: "Zaúčtování online prodeje a\_plateb"
-      href: tasks/posting-online-sales-payments.md
-    - name: Zpracování úprav bodů věrnostních odměn
-      href: tasks/process-loyalty-reward-point-adjustments.md
-    - name: "Zadání produktů z\_distribučních center do obchodů pomocí metody buyer's push"
-      href: tasks/push-products-distribution-center-store-buyers-push.md
-    - name: Vytvoření úprav maloobchodních cen
-      href: tasks/retail-price-adjustments.md
-    - name: "Generování a\_spouštění předpřipravených sestav"
-      href: tasks/run-out-box-reports.md
-    - name: "Nastavení pravidel a\_parametrů pro cross docking a\_metodu buyer's push"
-      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
-    - name: Prodej programů trvání a zpracování prodejních objednávek
-      href: tasks/use-continuity-program.md
-    - name: Konfigurace maloobchodních pracovníků
-      href: tasks/worker.md
-- name: Vývoj a správa v aplikaci Retail
-  href: dev-itpro/dev-retail-home-page.md
-  items:
-    - name: Architektura
-      items:
-        - name: Komponenty aplikace Retail
-          href: retail-components.md
-        - name: Architektura serveru Retail Server
-          href: dev-itpro/retail-server-architecture.md
-        - name: Výběr topologie v obchodu
-          href: dev-itpro/retail-in-store-topology.md
-        - name: Commerce Data Exchange a komunikace maloobchodní sítě
-          href: dev-itpro/define-retail-channel-communications-cdx.md
-        - name: Architektura Retail Modern POS
-          href: dev-itpro/retail-modern-pos-architecture.md
-        - name: Architektura publikování online obchodu Retail
-          href: dev-itpro/retail-online-store-publishing-architecture.md
-        - name: Obsah Retail Channel Performance Power BI
-          href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
-        - name: Certifikace Payment Application Data Security Standards (PA-DSS)
-          href: dev-itpro/PA-DSS-Certification.md
-        - name: Maloobchodní funkce dostupné v místních nasazeních
-          href: retail-onprem.md
-    - name: Nasazení a opravy hotfix
-      items:
-        - name: Retail Store Scale Unit
-          href: dev-itpro/retail-store-system-begin.md
-        - name: Instalace a konfigurace Retail Store Scale Unit
-          href: dev-itpro/retail-store-scale-unit-configuration-installation.md
-        - name: Konfigurace a instalace Retail Modern POS
-          href: retail-modern-pos-device-activation.md
-        - name: Správa účtů Retail a zařízení z centrály
-          href: set-up-activation-accounts-validate-devices-hq.md
-        - name: Aktivace zařízení Retail POS
-          href: dev-itpro/retail-device-activation.md
-        - name: Pomoc se zabezpečením Cloud POS ve sdílených prostředích
-          href: dev-itpro/secure-retail-cloud-pos.md
-        - name: Konfigurace a instalace Retail hardware station
-          href: retail-hardware-station-configuration-installation.md
-        - name: Hromadné nasazení samoobslužných komponent Retail
-          href: dev-itpro/retail-mass-deployment.md
-        - name: Události komponent Retail pro diagnostiku a řešení potíží
-          href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
-        - name: Použití nasaditelného balíčku
-          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
-    - name: Upgrade a N-1 podpora
-      items:
-        - name: Upgrade a N-1 podpora pro Retail
-          href: dev-itpro/overview-upgrade-n-minus1.md
-        - name: Instalace fázovaného nasazení (N-1) a přechod
-          href: dev-itpro/n-1-installation-configuration.md
-        - name: Upgrade rozšíření kanálu Retail na nejnovější Retail SDK
-          href: dev-itpro/retailSDK-update.md
-    - name: Průvodce implementací
-      items:
-        - name: Průvodce implementací správy zařízení
-          href: implementation-considerations-devices.md
-    - name: Konfigurace prostředí
-      items:
-        - name: Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci
-          href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
-        - name: Správa Map Bing
-          href: dev-itpro/manage-bing-maps.md
-    - name: Lokalizovat zdroje rozšíření Retail a soubory popisků
-      href: dev-itpro/extension-resource-localization.md
-    - name: Rozšiřitelnost pokladních míst
-      items:
-        - name: Rozvržení obrazovky Retail POS
-          href: pos-screen-layouts.md
-        - name: Otevřené URL adresy v POS
-          href: Open-URL-in-POS.md
-        - name: Instalace návrháře rozložení POS
-          href: install-pos-layout-designer.md
-        - name: Retail Modern POS v offline režimu
-          href: dev-itpro/retail-modern-pos-offline.md
-        - name: Rozšíření zobrazení displeje POS Dual
-          href: dev-itpro/pos-dual-display-extension.md
-        - name: Rozšiřitelnost spouštění Retail Modern POS a Cloud POS
-          href: dev-itpro/modern-pos-trigger-extensibility.md
-        - name: Přidání vlastních ovládacích prvků do POS zobrazení
-          href: dev-itpro/pos-custom-control.md
-        - name: Přidání operací POS do rozvržení POS pomocí návrháře mřížek tlačítek
-          href: dev-itpro/add-POS-operations.md
-        - name: Rozhraní API pro Retail POS
-          href: dev-itpro/POS-APIs.md
-        - name: Rozšíření POS plateb
-          href: dev-itpro/pos-payment-extension.md
-        - name: Podpora pro externí dárkové poukazy
-          href: dev-itpro/gift-card.md
-        - name: Vytvoření a použití brandingu na aplikaci Retail Experience
-          href: dev-itpro/create-retail-experience-app.md
-        - name: Nastavení aplikace POS Hybrid na systémech Android a iOS
-          href: dev-itpro/hybridApp.md
-        - name: Přepsání obslužné rutiny POS
-          href: dev-itpro/pos-handler.md
-        - name: Zobrazit informace o balíčku rozšíření POS
-          href: dev-itpro/view-pos-extension-package-details.md
-    - name: Hardware Station a rozšiřitelnost
-      href: dev-itpro/hardware-station-extensibility.md
-    - name: Rozšiřitelnost serveru Retail Server
-      items:
-        - name: Rozšíření kontroloru Retail Server OData
-          href: dev-itpro/extend-retail-server-odata-controller.md
-        - name: Vytvoření kontroloru Web API pro Retail Server
-          href: dev-itpro/odata-controllers-api.md
-        - name: API zákazníka a spotřebitel serveru Retail Server
-          href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: Rozšíření výchozího kontroloru metadat Retail Serveru
-          href: dev-itpro/extend-metadata.md
-        - name: "Volání služby CRT v\_režimu offline"
-          href: dev-itpro/call-crt-service-offline.md
-    - name: Rozšiřitelnost Commerce Runtime (CRT)
-      items:
-        - name: "Architektura a\_konfigurace CRT"
-          href: dev-itpro/commerce-runtime-overview.md
-        - name: Služby CRT
-          href: dev-itpro/crt-services.md
-        - name: Rozšiřitelnost CRT a serveru Retail Server
-          href: dev-itpro/commerce-runtime-extensibility.md
-        - name: Přidání preferenčních dat zákazníka do databází kanálů
-          href: dev-itpro/add-customer-preference-channel.md
-        - name: Přidání vlastností do prodejních objednávek
-          href: dev-itpro/add-properties-sales-order.md
-        - name: Rozšiřitelnost a spouštění CRT
-          href: dev-itpro/commerce-runtime-extensibility-trigger.md
-        - name: Blokování transakcí pomocí spouštění
-          href: dev-itpro/trigger-example-blocking-transaction.md
-        - name: Implementace zásad vracení pomocí spouštění
-          href: dev-itpro/trigger-example-return-policy.md
-    - name: Rozšiřitelnost e-Commerce
-      items:
-        - name: Konfigurace online obchodů
-          href: dev-itpro/configure-online-store.md
-        - name: Konfigurace poskytovatelů ověřování
-          href: dev-itpro/configure-authentication-providers.md
-        - name: Platforma e-Commerce
-          href: dev-itpro/ecommerce-platform.md
-        - name: SDK platforma e-Commerce
-          href: dev-itpro/ecommerce-platform-sdk.md
-    - name: Rozšiřitelnost konektoru platby
-      items:
-        - name: Vytvoření integrace plateb pro platební terminál
-          href: dev-itpro/end-to-end-payment-extension.md
-        - name: Implementace konektoru platby a platebního zařízení (dokument white paper)
-          href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
-        - name: Nasazení konektorů platby
-          href: dev-itpro/deploy-payment-connector.md
-        - name: Vytvoření vlastních lokalizovaných chybových zpráv pro rozšíření platebních terminálů
-          href: dev-itpro/payment-custom-error-messages.md
-        - name: Vytvoření instalační služby systému Windows pro konektory platby
-          href: dev-itpro/create-windows-installer-payment-connector.md
-        - name: Použití dat platby
-          href: payment-connector-data-fields.md
-        - name: Povolení ochrany před duplicitní platbou pro platební konektor
-          href: dev-itpro/duplicate-payment-protection.md
-    - name: Retail SDK
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
-      items:
-        - name: Nadcházející změny v Retail SDK
-          href: dev-itpro/UpcomingSDKChanges.md
-        - name: Sloučení systémů sestavení pro Retail a Finance and Operations
-          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-        - name: Vzory rozšiřitelnosti sady Retail SDK
-          href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-        - name: Vytvoření maloobchodních nasaditelných balíčků
-          href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-        - name: Vzory sady Retail SDK
-          href: dev-itpro/retail-sdk/retail-sdk-samples.md
-          items:
-            - name: Body rozšíření pro dodací listy
-              href: dev-itpro/extensions-shipping-carrier-integration.md
-        - name: Rozšíření databáze kanálů
-          href: dev-itpro/channel-db-extensions.md
-        - name: Povolení vlastní CDX synchronizace prostřednictvím rozšíření
-          href: dev-itpro/cdx-extensibility.md
-        - name: Přidání vlastních polí do panelu POS Totals
-          href: dev-itpro/custom-field-pos-totals.md
-        - name: Definování a nastavení atributů objednávky
-          href: dev-itpro/order-attributes.md
-        - name: Atributy odběratele
-          href: dev-itpro/customer-attributes.md
-        - name: 'Retail Typescript a C# proxy'
-          href: dev-itpro/typescript-proxy-retail-pos.md
-        - name: Spuštění vzorů Retail POS
-          href: dev-itpro/pos-run-samples.md
-        - name: Rozšíření zobrazení POS pro přidání vlastních sloupců a tlačítek panelu aplikací
-          href: dev-itpro/pos-view-extension.md
-        - name: Přidání vlastních ovládacích prvků na stránky transakcí Retail Modern POS
-          href: dev-itpro/pos-custom-transaction.md
-        - name: Přidání vlastních sloupců do mřížky transakcí POS
-          href: dev-itpro/pos-custom-transaction-column.md
-        - name: Volání API POS nebo operací z rozšíření POS
-          href: dev-itpro/pos-api-extension.md
-        - name: Spouštěče Retail Modern POS a tisk
-          href: dev-itpro/pos-trigger-printing.md
-        - name: Přidání vlastních ovládacích prvků do zobrazení POS na základě návrháře bez obrazovky
-          href: dev-itpro/pos-control-non-screen.md
-        - name: Vývoj ve vývojářských prostředích hostovaných v cloudu bez přístupu správce
-          href: dev-itpro/cloud-dev-box.md
-    - name: Commerce runtime
-      items:
-        - name: Rozšíření věrnostního programu
-          href: dev-itpro/retail-sdk/loyalty-extension-sample.md
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="TOC.yml" target-language="cs-CZ">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>TOC.1b20fc.88485598ac4a9d5d2829a3021361885065ad76a4.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>88485598ac4a9d5d2829a3021361885065ad76a4</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>bbc9aa0d6b94a942e1f4d5b038601509dcc87937</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\TOC.yml</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101">
+          <source>Welcome to Dynamics 365 for Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vítejte v Dynamics 365 for Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102">
+          <source>Get started</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Začínáme</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>What's new or changed</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Co je nového a co se změnilo</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Preview features in Dynamics 365 for Retail 10.0.3</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Funkce Preview v Dynamics 365 for Retail 10.0.3</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>What's new or changed in Dynamics 365 for Retail 10.0.2</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.2</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>What's new ot changed in Dynamics 365 for Retail 10.0.1</source><target logoport:matchpercent="87" state="translated" state-qualifier="x-fuzzy-match-unedited">Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.1</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>What's new or changed in Dynamics 365 for Retail (April 2019)</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail (duben 2019)</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Before you buy Retail</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Před zakoupením aplikace Retail</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Sign up for a preview subscription</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Registrace ukázkového předplatného</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Deploy a demo environment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nasazení ukázkového prostředí</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Deployment options</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnosti nasazení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Get support for Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Získání podpory pro Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>One Version service updates FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Často kladené dotazy k aktualizacím služby One Version</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Understand the implementation lifecycle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vysvětlení životního cyklu implementace</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Microsoft FastTrack for Dynamics 365</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft FastTrack for Dynamics 365</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Onboarding</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaškolení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Preparing for go-live</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příprava pro ostré nasazení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Go-live FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Často kladené dotazy týkající se ostrého nasazení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Submit a service request</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odeslání požadavku na službu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Subscriptions, LCS projects, and Azure Active Directory tenants FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Často kladené dotazy týkající se předplatného, projektů LCS a klientů Azure Active Directory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Move environments between data centers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přesun prostředí mezi datovými centry</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Move licenses between agreement types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přesun licencí mezi typy smlouvy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Move an LCS Implementation project to another Azure Active Directory tenant</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přesun projektu implementace LCS do jiného klienta služby Azure Active Directory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Implement multiple LCS projects and production environments on the same Azure Active Directory tenant</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Implementace více LCS projektů a produkčních prostředí na stejném klientovi služby Azure Active Directory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Implement Finance and Operations Retail projects</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Implementace projektů Retail v aplikaci Finance and Operations</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Set up new environments, Azure DevOps, and branches for Retail projects</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">Nastavení nových prostředí, Azure DevOps a větví pro projekty Retail</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Update code and environments for Retail projects</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Aktualizace kódu a prostředí pro projekty Retail</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Testing and performance issues</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Testování a problémy s výkonností</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Distributed order management (DOM)</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Distribuovaná správa objednávek (DOM)</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>DOM overview</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Přehled DOM</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Cost configuration</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Konfigurace nákladů</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Payments</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Platby</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Payment methods</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Způsoby platby</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Credit card setup, authorization, and capture</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Nastavení platební karty, autorizace a záznam</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Configure cash denominations for the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Konfigurace nominálních hodnot hotovosti pro pokladní místo</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Dynamics 365 Payment Connector for Adyen</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Platební konektor Dynamics 365 pro Adyen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Saving online payment instruments with the Adyen connector</source><target logoport:matchpercent="0" state="translated">Úspora nástrojů online plateb s konektorem Adyen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Set up pay invoice scenarios</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Nastavení scénářů plateb faktur</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Payments FAQ</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Časté dotazy k platbám</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Duplicate payments prevention</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Zabránění duplicitním platbám</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní objednávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Purchase order overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přehled nákupních objednávek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Create purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytváření nákupních objednávek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Product receipt against purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příjemka produktu proti nákupním objednávkám</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Approve and confirm purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Schválení a potvrzení nákupních objednávek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Purchase order approval mobile workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mobilní pracovní prostor schvalování nákupních objednávek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výkazy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Retail statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výkazy maloobchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Retail transaction consistency checker</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontrola konzistence maloobchodních transakcí</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Create, calculate, and post statements for a retail store</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Vytvoření, výpočet a zaúčtování výkazů pro maloobchod</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Improvements to statement posting functionality</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Vylepšení funkcionality zaúčtování výkazů</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Improved handling of batch tracked items</source><target logoport:matchpercent="0" state="translated">Vylepšené zpracování položek sledovaných dávkou</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Configure Retail parameters that affect retail statements</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Konfigurace parametrů maloobchodu, které ovlivňují výkazy maloobchodu</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Configure payment method settings that affect retail statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace nastavení metod platby, které ovlivňují výkazy maloobchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Configure and run a job to calculate statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace a spuštění úlohy pro výpočet výkazů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Configure and run a job to post statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace a spuštění úlohy pro zaúčtování výkazů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Configure store settings that affect retail statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace nastavení obchodu, které ovlivňují výkazy maloobchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Sales tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DPH</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Sales tax overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přehled DPH</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Sales tax calculation methods in the Origin field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metody výpočtu DPH v poli Zdroj</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Sales tax assignment and overrides</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Přiřazení a přepsání DPH</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Whole amount and Interval calculation options for sales tax codes</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Omni-channel payments overview</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Přehled omnikanálových plateb</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Omni-channel advanced auto charges</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Omnikanálové rozšířené automatické náklady</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Configure and use advanced auto charges</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Konfigurace a použití rozšířených automatických nákladů</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Prorate header charges to matching sales lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Call center</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontaktní středisko</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Call center sales functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce prodeje kontaktního střediska</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Call center catalogs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Katalogy kontaktního střediska</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Configure delivery modes and charges</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace způsobů dodání a poplatků</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Set up and work with fraud alerts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení a práce s výstrahami u podvodů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Set up call center channels</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení kanálů kontaktního střediska</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Set up continuity programs for call centers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení programů kontinuity pro kontaktní střediska</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Configure and work with call center order holds</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace a práce s blokováním objednávek kontaktního střediska</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Payment methods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Způsoby platby</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Channel setup and management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení a správa kanálů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Initialize seed data in new Retail environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Inicializace počátečních dat v nových prostředích Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Define and maintain retail channels</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definování a udržování maloobchodní sítě</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Assortment management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa sortimentu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Set up online stores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavit online obchodů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Configure and install Retail hardware station</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace a instalace Retail hardware station</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Time and attendance in Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Čas a docházka v aplikaci Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Modern Point of Sale (MPOS) and Cloud POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modern Point of Sale (MPOS) a Cloud POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Choose between MPOS and Cloud POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výběr mezi MPOS a Cloud POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Online and offline POS operations</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Online a offline POS operace</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Device activation of a customized Retail MPOS</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">Aktivace zařízení přizpůsobeného Retail MPOS</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Demo data screen layouts in MPOS and Cloud POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Rozložení obrazovky ukázkových dat v MPOS a Cloud POS</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Product and customer search in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Vyhledávání produktu a zákazníka v POS</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Cash management improvements</source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match">Vylepšení řízení hotovosti</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Inventory lookup in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Vyhledávání zásob v POS</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Suspend and resume transactions in the POS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Pozastavení a obnovení transakcí v POS</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Hardware peripherals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hardwarová periferní zařízení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Retail peripherals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Periferní zařízení Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Retail peripheral simulator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Simulátor periferních zařízení Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Connect peripherals to the POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Připojení periferních zařízení k POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Screen layouts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozložení obrazovky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Demo data screen layouts in MPOS/CPOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozložení obrazovky ukázkových dat v MPOS/CPOS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Screen layouts for the POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozložení obrazovky pro POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Install the Retail POS layout designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Instalace návrháře rozložení Retail POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Choose notification settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Volba nastavení oznámení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>POS application and user language settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení aplikace POS a uživatelského jazyka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Set up and manage images for MPOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení a správa obrázků pro MPOS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Info codes and info code groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Informační kódy a skupiny informačních kódů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>POS improvements for serialized products</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vylepšení POS pro serializované produkty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Product recommendations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doporučení produktu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Personalized product recommendations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doporučení přizpůsobeného produktu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Add a recommendations control on POS devices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání řízení doporučení na zařízeních POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Offline POS functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce Offline POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Shift and cash drawer management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa směn a zásuvky s hotovostí</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Cash out gift card balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyplacení zůstatku dárkového poukazu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Customer orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Objednávky zákazníka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Customer orders in MPOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Objednávky zákazníka v MPOS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Hybrid customer orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hybridní objednávky zákazníka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Sales associates</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaměstnanci obchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Track commissions in the POS using sales groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sledování provizí v POS pomocí prodejních skupin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Ship orders from another store</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odeslání objednávek z jiného obchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Device activation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivace zařízení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Configure, install and activate MPOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace, Instalace a aktivace MPOS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Set up extended logon functionality for MPOS and Cloud POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení funkce rozšířeného přihlášení pro MPOS a Cloud POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Manage Retail activation accounts and validate devices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa účtů aktivace Retail a ověření zařízení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Receipts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účtenky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Set up and design receipt formats</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení a návrh formátů příjemek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Send email receipts from MPOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odesílání účtenek e-mailem z MPOS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Task recorder and Help for MPOS and Cloud POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záznamník úloh a nápověda pro MPOS a Cloud POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Order fulfillment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Plnění objednávek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Store order fulfillment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Plnění objednávek obchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Set up order fulfillment for stores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení plnění objednávek pro obchody</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Show order notifications in the POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazení oznámení o objednávkách v POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Returns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrácení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Sell and return products not included in a store's assortment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prodej a vrácení produktů nezahrnutých v sortimentu obchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Configure and process an exchange on a return order</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace a zpracování výměny u vratek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Restrict payment methods for returns without a receipt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezení platebních metod pro vrácení bez příjemky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Return items across multiple customer orders and invoices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrácení položek napříč vícero objednávkami odběratele a fakturami</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Monitoring and analysis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Monitorování a analýza</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Monitor sales and margin performance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Monitorování výkonnosti prodeje a marží</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Analyze sales trends and patterns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Analýza trendů a vzorců prodeje</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Assess sales performance by product</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Posouzení prodejních výsledků podle produktu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Assess customer and product profitability</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyhodnocení ziskovosti odběratelů a produktů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Analyze store performance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Analýza výkonnosti obchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Set up Recency, Frequency, and Monetary (RFM) analysis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení analýzy recency, frekvence a peněžního období</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Retail price reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sestavy maloobchodních cen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Pricing and discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tvorba cen a slevy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Retail discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maloobchodní slevy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Retail sales price management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa maloobchodní prodejní ceny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Price adjustments and discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úpravy ceny a slevy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Apply multiple discounts to a product</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uplatnit vícero slev na produkt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Determine the optimal combination of overlapping discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Určení optimální kombinace překrývajících se slev</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Define channel-specific discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definování slev specifických pro kanál</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Options for preventing discounts for retail products</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnosti zabránění slevám pro maloobchodní produkty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Shipping discount overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přehled slev při dodání</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Set up coupons for retail sales</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Natavení kupónů pro maloobchodní prodej</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Products and merchandising</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Produkty a merchandising</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Product information overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přehled informací o produktech</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Retail hierarchies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hierarchie maloobchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Attributes and attribute groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atributy a skupiny atributů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Create and manage attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření a správa atributů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Set up retail products</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení maloobchodních produktů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Manage Retail product categories and products</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa kategorií produktů a produktů v aplikaci Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Product dimensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimenze produktu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Set up bar codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení čárových kódů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Set up bar code masks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení masek čárových kódů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Set up assortments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení sortimentu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Sell and return products not included in a store's assortment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prodej a návrat produktů nezahrnutých v sortimentu obchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Default order settings for dimensions and product variants</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výchozí nastavení objednávky pro dimenze a varianty produktu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Search for products and product variants during order entry</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyhledávání produktů a variant produktu během zadávání objednávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Loyalty</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Věrnostní program</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Loyalty overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přehled věrnostního programu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Inventory</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zásoby</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Store inventory management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa skladových zásob</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Register serial numbers in the sales process</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Registrace sériových čísel v prodejním procesu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Inventory journals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skladové deníky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Inventory tag counting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Počet označení zásob</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>FIFO with physical value and marking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metoda FIFO s fyzickou hodnotou a označením</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>LIFO Date with physical value and marking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum LIFO s fyzickou hodnotou a označením</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>LIFO with physical value and marking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metoda LIFO s fyzickou hodnotou a označením</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Weighted average date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum váženého průměru</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Weighted average with physical value and marking</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vážený průměr s fyzickou hodnotou a označením</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Quarantine orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Karanténní příkazy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Running average cost price</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Průběžná průměrná nákladová cena</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Track running average cost per inventory dimension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sledování průběžných průměrných nákladů pro dimenzi zboží</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Human resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lidské zdroje</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Organize your workforce using departments, jobs, and positions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uspořádání zaměstnanců podle oddělení, prací a pozic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Set up the components of a job</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení komponent práce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Localization and regulatory features</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lokalizace a funkce týkající se předpisů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Fiscal integration overview for Retail channel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přehled fiskální integrace pro maloobchodní síť</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Set up fiscal integration for Retail channel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení fiskální integrace pro maloobchodní síť</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Austria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rakousko</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Fiscal registration service integration sample for Austria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ukázka integrace fiskální služby pro Rakousko</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Eastern Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Východní Evropa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Advance invoices for Retail for Eastern Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohové faktury pro Retail pro východní Evropu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Petty cash management for Retail for Eastern Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa pokladní hotovosti pro Retail pro východní Evropu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Retail customer invoices and return sales orders in Eastern European countries</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktury odběratele a vrácení prodejních objednávek ve východoevropských zemích v aplikaci Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokyny k nasazení registračních pokladen pro Českou republiku, Maďarsko a Polsko</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Fiscal printer integration sample for Poland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzor integrace fiskální tiskárny pro Polsko</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Fiscal registration service integration sample for Czech Republic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ukázka integrace fiskální služby pro Českou republiku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>France</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Francie</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Cash register functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce registrační pokladny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Deployment guidelines for cash registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokyny k nasazení registračních pokladen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>India</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indie</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>Goods and Services Tax (GST) integration for cash registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integrace daně ze zboží služeb (GST) pro registrační pokladny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Deployment guidelines for cash registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokyny k nasazení registračních pokladen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>Support for upgrade and N-1 for India</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podpora pro upgrade a N-1 pro Indii</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Italy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Itálie</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Fiscal printer integration sample for Italy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzor integrace fiskální tiskárny pro Itálii</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>Norway</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Norsko</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Cash register functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce registrační pokladny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Deployment guidelines for cash registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokyny k nasazení registračních pokladen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>Sweden</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Švédsko</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Cash register functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce registrační pokladny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>Sample for Retail POS integration with control units</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzor pro integraci Retail POS s kontrolními jednotkami</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Retail tasks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úkoly v aplikaci Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>Create a product</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření produktu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Configure linked products</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace propojených produktů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>Release a product/product master to legal entities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uvolnění produktu / základního produktu právnickým osobám</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>Create channel-specific trade agreements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření obchodní smluv specifických pro kanál</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Create trade agreements using category pricing rules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření obchodních smluv pomocí cenových pravidel kategorií</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>Configure credit card processing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace zpracování platební karty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>Configure functionality profiles for sales representatives</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace funkčních profilů pro obchodní zástupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Configure machine learning-powered product recommendations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace doporučení produktu využívajícího strojové učení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>Create devices and associate them with registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření zařízení a jejich přidružení k pokladnám</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>Create hardware stations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření hardwarových stanic</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>Create POS registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření registračních pokladen POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>Create call center orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytváření objednávek v kontaktním středisku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>Create financial dimensions for POS registers and configure dimension values on registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření finančních dimenzí pro pokladny POS a konfigurace hodnot dimenzí na pokladnách</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Create financial dimensions for retail channels and configure dimension values on stores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytváření finančních dimenzí pro maloobchodní sítě a konfigurace hodnot dimenzí v obchodech</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Create online channels and define channel attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytváření online kanálů a definování atributů kanálu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Create POS permission groups</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytváření skupin oprávnění POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Create POS visual profiles</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření vizuálních profilů POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>Create product packages for purchase orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytváření balení produktů pro nákupní objednávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>Create call center channels and define channel attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření kanálů kontaktního střediska a definování atributů kanálu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Define channel attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definování atributů kanálu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Define continuity schedules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definování plánů trvání</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>Define loyalty programs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Definování věrnostních programů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Define loyalty reward points</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Definování bodů věrnostních odměn</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>Define loyalty schemes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Definování věrnostních schémat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Design the relationships between organizational units</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Návrh vztahů mezi organizačními jednotkami</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>Manage assortments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa sortimentu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Download hardware stations by using self-service</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stažení hardwarové stanice pomocí samoobsluhy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Post online sales and payments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaúčtování online prodeje a plateb</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Process adjustments of loyalty reward points</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zpracování úprav bodů věrnostních odměn</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>Push products from distribution centers to stores via buyer's push</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadání produktů z distribučních center do obchodů pomocí metody buyer's push</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>Create retail price adjustments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření úprav maloobchodních cen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Generate and run out-of-box reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generování a spouštění předpřipravených sestav</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>Set up rules and parameters for cross-docking and buyer's push</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení pravidel a parametrů pro cross docking a metodu buyer's push</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>Selling continuity programs and processing sales orders</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prodej programů trvání a zpracování prodejních objednávek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>Configure retail workers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace maloobchodních pracovníků</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Retail development and administration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vývoj a správa v aplikaci Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>Architecture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Architektura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>Retail components</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Komponenty aplikace Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>Retail Server architecture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Architektura serveru Retail Server</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Select an in-store topology</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výběr topologie v obchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Commerce Data Exchange and retail channel communications</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce Data Exchange a komunikace maloobchodní sítě</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>Retail Modern POS architecture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Architektura Retail Modern POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>Retail online store publishing architecture</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Architektura publikování online obchodu Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Retail Channel Performance Power BI content</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsah Retail Channel Performance Power BI</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>Payment Application Data Security Standards (PA-DSS) certification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Certifikace Payment Application Data Security Standards (PA-DSS)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>Retail capabilities available in on-premises deployments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maloobchodní funkce dostupné v místních nasazeních</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>Deployment and hotfixes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nasazení a opravy hotfix</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Retail Store Scale Unit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Store Scale Unit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Configure and install Retail Store Scale Unit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Instalace a konfigurace Retail Store Scale Unit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Retail Modern POS configuration and installation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace a instalace Retail Modern POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>Manage Retail accounts and devices from headquarters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa účtů Retail a zařízení z centrály</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>Retail POS device activation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivace zařízení Retail POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>Help secure Cloud POS in shared environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pomoc se zabezpečením Cloud POS ve sdílených prostředích</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>Retail Hardware Station configuration and installation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace a instalace Retail hardware station</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>Mass deployment of Retail self-service components</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hromadné nasazení samoobslužných komponent Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Retail component events for diagnostics and troubleshooting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Události komponent Retail pro diagnostiku a řešení potíží</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>Apply a deployable package</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použití nasaditelného balíčku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>Upgrade and N-1 support</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Upgrade a N-1 podpora</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>Upgrade and N-1 support for Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Upgrade a N-1 podpora pro Retail</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>Phased Rollout (N-1) installation, configuration, and cutover</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Instalace fázovaného nasazení (N-1) a přechod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>Upgrade the Retail channel extension to the latest Retail SDK</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Upgrade rozšíření kanálu Retail na nejnovější Retail SDK</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>Implementation guidance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Průvodce implementací</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>Device management implementation guidance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Průvodce implementací správy zařízení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>Environment configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace prostředí</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>Add links to your organization's legal terms and privacy statement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání odkazů na právní podmínky a zásady ochrany osobních údajů ve vaší organizaci</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>Manage Bing Maps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa Map Bing</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>Localize Retail extension resources and label files</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lokalizovat zdroje rozšíření Retail a soubory popisků</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>Point of sale extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšiřitelnost pokladních míst</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>Retail POS screen layouts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozvržení obrazovky Retail POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>Open URL in POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otevřené URL adresy v POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>Install the POS Layout designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Instalace návrháře rozložení POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>Retail Modern POS in offline mode</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS v offline režimu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>Extend the POS Dual display view</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšíření zobrazení displeje POS Dual</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>Retail Modern POS and Cloud POS trigger extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšiřitelnost spouštění Retail Modern POS a Cloud POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>Add custom controls to POS views</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání vlastních ovládacích prvků do POS zobrazení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Add POS operations to POS layouts using Button grid designer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání operací POS do rozvržení POS pomocí návrháře mřížek tlačítek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>Retail POS APIs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozhraní API pro Retail POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>POS payment extension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšíření POS plateb</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>Support for external gift cards</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podpora pro externí dárkové poukazy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Create and apply branding to the Retail Experience app</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření a použití brandingu na aplikaci Retail Experience</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>Set up POS Hybrid app on Android and iOS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení aplikace POS Hybrid na systémech Android a iOS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>Override POS request handler</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přepsání obslužné rutiny POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>View POS extension package information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazit informace o balíčku rozšíření POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>Hardware Station and extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hardware Station a rozšiřitelnost</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Retail Server extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšiřitelnost serveru Retail Server</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>Extend a Retail Server OData controller</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšíření kontroloru Retail Server OData</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>Create a Web API controller for Retail Server</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření kontroloru Web API pro Retail Server</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>Retail Server customer and consumer APIs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">API zákazníka a spotřebitel serveru Retail Server</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>Extend the default Retail Server metadata controller</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Rozšíření výchozího kontroloru metadat Retail Serveru</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>Call the CRT service in offline mode</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">Volání služby CRT v režimu offline</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>Commerce runtime (CRT) extensibility</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">Rozšiřitelnost Commerce Runtime (CRT)</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>CRT architecture and configuration</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Architektura a konfigurace CRT</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>CRT services</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Služby CRT</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>CRT and Retail Server extensibility</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Rozšiřitelnost CRT a serveru Retail Server</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>Add customer preference data to channel databases</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Přidání preferenčních dat zákazníka do databází kanálů</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>Add properties to sales orders</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Přidání vlastností do prodejních objednávek</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>CRT extensibility and triggers</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Rozšiřitelnost a spouštění CRT</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Block transactions using triggers</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Blokování transakcí pomocí spouštění</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>Implement a return policy using triggers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Implementace zásad vracení pomocí spouštění</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>e-Commerce extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšiřitelnost e-Commerce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>Configure online stores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace online obchodů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>Configure authentication providers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace poskytovatelů ověřování</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>e-Commerce platform</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platforma e-Commerce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>e-Commerce platform SDK</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SDK platforma e-Commerce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>Payment connector extensibility</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšiřitelnost konektoru platby</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Create a payment integration for a payment terminal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření integrace plateb pro platební terminál</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>Implementing a payment connector and payment device (white paper)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Implementace konektoru platby a platebního zařízení (dokument white paper)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>Deploy payment connectors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nasazení konektorů platby</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>Create custom localized error messages for payment terminal extensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření vlastních lokalizovaných chybových zpráv pro rozšíření platebních terminálů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>Create Windows installers for payment connectors</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření instalační služby systému Windows pro konektory platby</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>Payment data use</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použití dat platby</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>Enable duplicate payment protection for payment connector</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Povolení ochrany před duplicitní platbou pro platební konektor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>Retail SDK</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail SDK</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>Upcoming changes in the Retail SDK</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nadcházející změny v Retail SDK</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>Merge the build systems for Retail and Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloučení systémů sestavení pro Retail a Finance and Operations</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>Retail SDK extensibility samples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzory rozšiřitelnosti sady Retail SDK</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>Create retail deployable packages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření maloobchodních nasaditelných balíčků</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>Retail SDK samples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzory sady Retail SDK</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>Extension points for packing slips</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Body rozšíření pro dodací listy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>Channel database extensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšíření databáze kanálů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>Enable custom CDX synchronization via extension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Povolení vlastní CDX synchronizace prostřednictvím rozšíření</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>Add custom fields to the POS Totals panel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání vlastních polí do panelu POS Totals</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Define and set order attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definování a nastavení atributů objednávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>Customer attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atributy odběratele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>Retail Typescript and C# proxies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Typescript a C# proxy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>Run the Retail POS samples</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spuštění vzorů Retail POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>Extend POS views to add custom columns and app bar buttons</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšíření zobrazení POS pro přidání vlastních sloupců a tlačítek panelu aplikací</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>Add custom controls to Retail Modern POS transaction pages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání vlastních ovládacích prvků na stránky transakcí Retail Modern POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>Add custom columns to a POS transaction grid</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání vlastních sloupců do mřížky transakcí POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>Call POS APIs or operations from POS extensions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Volání API POS nebo operací z rozšíření POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>Retail Modern POS triggers and printing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spouštěče Retail Modern POS a tisk</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>Add custom controls to non-screen designer-based POS views</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání vlastních ovládacích prvků do zobrazení POS na základě návrháře bez obrazovky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>Development in cloud-hosted dev environments without admin access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vývoj ve vývojářských prostředích hostovaných v cloudu bez přístupu správce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>Commerce runtime</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Commerce runtime</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>Loyalty extension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšíření věrnostního programu</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
