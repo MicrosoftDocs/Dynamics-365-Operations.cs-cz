@@ -1,603 +1,2340 @@
----
-title: Definice sloupce ve finančních sestavách
-description: Tento článek obsahuje informace o definicích sloupce. Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě. Stejně jako definice řádků lze základní definice sloupců použít u více sestav.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-ms.search.form: FinancialReports
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 106601
-ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
-ms.search.region: Global
-ms.author: aolson
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502723"
----
-# <a name="column-definitions-in-financial-reports"></a><span data-ttu-id="f3f2e-105">Definice sloupce ve finančních sestavách</span><span class="sxs-lookup"><span data-stu-id="f3f2e-105">Column definitions in financial reports</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="f3f2e-106">Tento článek obsahuje informace o definicích sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-106">This article provides information about column definitions.</span></span> <span data-ttu-id="f3f2e-107">Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-107">A column definition is a report component, or building block, that defines the contents of columns on a report.</span></span> <span data-ttu-id="f3f2e-108">Stejně jako definice řádků lze základní definice sloupců použít u více sestav.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-108">Like row definitions, basic column definitions can be used on multiple reports.</span></span>
-
-## <a name="create-and-modify-a-column-definition"></a><span data-ttu-id="f3f2e-109">Vytvoření a úprava definice sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-109">Create and modify a column definition</span></span>
-
-<span data-ttu-id="f3f2e-110">Definice sloupce může obsahovat 2 až 255 sloupců.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-110">A column definition can contain two to 255 columns.</span></span>
-
-### <a name="create-a-column-definition"></a><span data-ttu-id="f3f2e-111">Vytvoření definice sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-111">Create a column definition</span></span>
-
-1. <span data-ttu-id="f3f2e-112">V Návrháři sestav v navigačním podokně klikněte na tlačítko **Definice sloupce**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-112">In Report Designer, in the navigation pane, click **Column Definitions**.</span></span>
-2. <span data-ttu-id="f3f2e-113">V nabídce **Soubor** klikněte na tlačítko **Nový** a vyberte možnost **Definice sloupce**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-113">On the **File** menu, click **New**, and then click **Column Definition**.</span></span>
-3. <span data-ttu-id="f3f2e-114">Přidejte obsah do definice sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-114">Add the contents of the column definition.</span></span>
-
-### <a name="open-a-column-definition"></a><span data-ttu-id="f3f2e-115">Otevření definice sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-115">Open a column definition</span></span>
-
-1. <span data-ttu-id="f3f2e-116">V Návrháři sestav v navigačním podokně klikněte na tlačítko **Definice sloupce**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-116">In Report Designer, in the navigation pane, click **Column Definitions**.</span></span>
-2. <span data-ttu-id="f3f2e-117">Dvojitým kliknutím na definici sloupce tuto definici otevřete.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-117">Double-click a column definition to open it.</span></span>
-
-### <a name="add-a-column-to-a-column-definition"></a><span data-ttu-id="f3f2e-118">Přidání sloupce do definice sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-118">Add a column to a column definition</span></span>
-
-1. <span data-ttu-id="f3f2e-119">V Návrháři sestav klikněte na tlačítko **Definice sloupce** a potom otevřete definici sloupce ke změně.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-119">In Report Designer, click **Column Definitions**, and then open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-120">Vyberte sloupce, kam má být vložen nový sloupec.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-120">Select the column where a new column should be inserted.</span></span>
-3. <span data-ttu-id="f3f2e-121">V nabídce **Upravit** klikněte na tlačítko **Vložit sloupec**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-121">On the **Edit** menu, click **Insert Column**.</span></span> <span data-ttu-id="f3f2e-122">Nový sloupec se zobrazí nalevo od sloupce, který jste vybrali.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-122">The new column appears to the left of the column that you selected.</span></span>
-
-### <a name="delete-a-column-from-a-column-definition"></a><span data-ttu-id="f3f2e-123">Odstranění sloupce z definice sloupců</span><span class="sxs-lookup"><span data-stu-id="f3f2e-123">Delete a column from a column definition</span></span>
-
-1. <span data-ttu-id="f3f2e-124">V Návrháři sestav klikněte na položku **Definice sloupců** a otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-124">In Report Designer, click **Column Definitions**, and then open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-125">Vyberte sloupec, který chcete odstranit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-125">Select the column to delete.</span></span>
-3. <span data-ttu-id="f3f2e-126">V nabídce **Úpravy** klikněte na příkaz **Odstranit sloupec**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-126">On the **Edit** menu, click **Delete Column**.</span></span>
-
-## <a name="contents-of-a-column-definition"></a><span data-ttu-id="f3f2e-127">Obsah definice sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-127">Contents of a column definition</span></span>
-<span data-ttu-id="f3f2e-128">Definice sloupce zahrnuje následující informace:</span><span class="sxs-lookup"><span data-stu-id="f3f2e-128">A column definition includes the following information:</span></span>
-
-- <span data-ttu-id="f3f2e-129">Sloupec popisů pro definici řádku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-129">A column of the descriptions for the row definition</span></span>
-- <span data-ttu-id="f3f2e-130">Sloupce částky, které zobrazují data z finančních dat, nebo výpočtů založených na jiných datech v definici sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-130">Amount columns that show data from the financial data or calculations that are based on other data in the column definition</span></span>
-- <span data-ttu-id="f3f2e-131">Sloupce formátování</span><span class="sxs-lookup"><span data-stu-id="f3f2e-131">Formatting columns</span></span>
-- <span data-ttu-id="f3f2e-132">Sloupce atributů</span><span class="sxs-lookup"><span data-stu-id="f3f2e-132">Attribute columns</span></span>
-
-<span data-ttu-id="f3f2e-133">Tyto informace se zobrazí v následujících částech definice sloupce:</span><span class="sxs-lookup"><span data-stu-id="f3f2e-133">This information appears in the following areas in the column definition:</span></span>
-
-- <span data-ttu-id="f3f2e-134">Oblast záhlaví definice sloupce obsahuje text a formátování nadpisu, které se zobrazí v sestavě.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-134">The headers area of the column definition contains the heading text and formatting that appears in the report.</span></span> <span data-ttu-id="f3f2e-135">Záhlaví se může vztahovat na jeden sloupec dat, může být rozšířeno na více sloupců nebo být pro sloupce použito za určitých podmínek.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-135">A header can apply to a single column of data, can span multiple columns, or can apply to columns on a conditional basis.</span></span> <span data-ttu-id="f3f2e-136">Definice sloupce může obsahovat tolik řádků záhlaví sloupců, kolik budete potřebovat.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-136">The column definition can include as many column header rows as you require.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="f3f2e-137">Záhlaví sloupců jsou použita pro všechny sloupce dat v sestavě.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-137">Column headers apply to each column of data on the report.</span></span> <span data-ttu-id="f3f2e-138">Záhlaví sestavy platí pro celou sestavu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-138">Report headers apply to the whole report.</span></span> <span data-ttu-id="f3f2e-139">Lze definovat záhlaví sestavy na kartě **Záhlaví a zápatí** v rámci definice sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-139">You define report headers on the **Headers and Footers** tab of the report definition.</span></span>
-
-- <span data-ttu-id="f3f2e-140">Řádky podrobností sloupců jsou řádky pod řádků záhlaví v definici sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-140">Column detail rows are the rows under the header rows in the column definition.</span></span> <span data-ttu-id="f3f2e-141">Řádky podrobností sloupců definují informace, které jsou zahrnuty do sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-141">Column detail rows define the information that is included on the report.</span></span> <span data-ttu-id="f3f2e-142">Následující tabulka obsahuje seznam řádků podrobností sloupců a jejich popis.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-142">The following table lists and describes the column detail rows.</span></span>
-
-    | <span data-ttu-id="f3f2e-143">Název řádku podrobností sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-143">Column detail row name</span></span>                                                | <span data-ttu-id="f3f2e-144">Popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-144">Description</span></span>                                                                                            |
-    |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-    | <span data-ttu-id="f3f2e-145">Typ sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-145">Column Type</span></span>                                                           | <span data-ttu-id="f3f2e-146">(Požadováno) Určete typ dat ve sloupci.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-146">(Required) Specify the type of data in the column.</span></span>                                                     |
-    | <span data-ttu-id="f3f2e-147">Kód knihy / Kategorie atributů</span><span class="sxs-lookup"><span data-stu-id="f3f2e-147">Book Code/Attribute Category</span></span>                                          | <span data-ttu-id="f3f2e-148">Zadejte informace o finančních datech pro sloupce typů **FD** a **ATTR**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-148">Specify financial data information for columns of the **FD** and **ATTR** types.</span></span>                       |
-    | <span data-ttu-id="f3f2e-149">Pokrytá období pro období fiskálního roku</span><span class="sxs-lookup"><span data-stu-id="f3f2e-149">Fiscal Year Period Periods Covered</span></span>                                    | <span data-ttu-id="f3f2e-150">Zadejte informace o finančních datech pro sloupce typu **FD**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-150">Specify financial data information for columns of the **FD** type.</span></span>                                     |
-    | <span data-ttu-id="f3f2e-151">Vzorec</span><span class="sxs-lookup"><span data-stu-id="f3f2e-151">Formula</span></span>                                                               | <span data-ttu-id="f3f2e-152">Zadejte vzorec pro výpočet sloupců typu **CALC**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-152">Specify a calculation formula for columns of the **CALC** type.</span></span>                                        |
-    | <span data-ttu-id="f3f2e-153">Extra mezery šířky sloupce před ovládacím prvkem potlačení tisku formátu sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-153">Column Width Extra Spaces Before Column Format Override Print Control</span></span> | <span data-ttu-id="f3f2e-154">Určuje speciální možnosti formátování.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-154">Specify special format options.</span></span>                                                                        |
-    | <span data-ttu-id="f3f2e-155">Omezení sloupců</span><span class="sxs-lookup"><span data-stu-id="f3f2e-155">Column Restrictions</span></span>                                                   | <span data-ttu-id="f3f2e-156">Omezit data.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-156">Restrict data.</span></span>                                                                                         |
-    | <span data-ttu-id="f3f2e-157">Organizační jednotka</span><span class="sxs-lookup"><span data-stu-id="f3f2e-157">Reporting Unit</span></span>                                                        | <span data-ttu-id="f3f2e-158">Omezí sloupec tak, aby se zobrazovala pouze data pro zadanou organizační jednotku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-158">Restrict the column, so that it shows data only for the specified reporting unit.</span></span>                      |
-    | <span data-ttu-id="f3f2e-159">Filtr měny zobrazení měny</span><span class="sxs-lookup"><span data-stu-id="f3f2e-159">Currency Display Currency Filter</span></span>                                      | <span data-ttu-id="f3f2e-160">Umožňuje naformátovat měnu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-160">Format currency.</span></span>                                                                                       |
-    | <span data-ttu-id="f3f2e-161">Filtr dimenze</span><span class="sxs-lookup"><span data-stu-id="f3f2e-161">Dimension Filter</span></span>                                                      | <span data-ttu-id="f3f2e-162">Určete filtr pro omezení dat na určité organizační jednotky finančních dat.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-162">Specify a filter to restrict data to certain financial data reporting units.</span></span>                           |
-    | <span data-ttu-id="f3f2e-163">Filtr atributů</span><span class="sxs-lookup"><span data-stu-id="f3f2e-163">Attribute Filter</span></span>                                                      | <span data-ttu-id="f3f2e-164">Určete filtr k omezení finančních dat.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-164">Specify a filter to restrict the financial data.</span></span>                                                       |
-    | <span data-ttu-id="f3f2e-165">Počáteční datum Koncové datum</span><span class="sxs-lookup"><span data-stu-id="f3f2e-165">Start Date End Date</span></span>                                                   | <span data-ttu-id="f3f2e-166">Umožňuje omezit finanční data na konkrétní kalendářní data.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-166">Restrict the financial data to specific dates.</span></span>                                                         |
-    | <span data-ttu-id="f3f2e-167">Zarovnání</span><span class="sxs-lookup"><span data-stu-id="f3f2e-167">Justification</span></span>                                                         | <span data-ttu-id="f3f2e-168">Zarovnání vlevo, na střed nebo vpravo zarovná text popisu, který je zadán v definici řádku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-168">Left-align, center-align, or right-align the description text that is specified in the row definition.</span></span> |
-
-## <a name="column-restrictions-in-a-column-definition"></a><span data-ttu-id="f3f2e-169">Omezení sloupce v definici sloupců</span><span class="sxs-lookup"><span data-stu-id="f3f2e-169">Column restrictions in a column definition</span></span>
-<span data-ttu-id="f3f2e-170">Pomocí omezení sloupců můžete určit, jak používá definice sloupce data nebo jak počítá informace.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-170">You can use column restrictions to specify how a column definition uses data or calculates information.</span></span> <span data-ttu-id="f3f2e-171">Můžete také omezit sloupec sestavy na konkrétní jednotku nebo konkrétní kalendářní data.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-171">You can also restrict a report column to a specific unit or for specific dates.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="f3f2e-172">Kód **Omezení sloupce** přepisuje jakékoli konfliktní nastavení, které je přiřazeno v definici řádků.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-172">A **Column Restriction** code overrides any conflicting setting that is assigned in the row definition.</span></span>
-
-### <a name="column-restrictions-cell"></a><span data-ttu-id="f3f2e-173">Buňka Omezení sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-173">Column Restrictions cell</span></span>
-
-<span data-ttu-id="f3f2e-174">Buňka **Omezení sloupce** může zahrnovat kódy, které omezují nebo potlačují informace, jako jsou například formátování řádků, podrobnosti a částky pro daný sloupec.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-174">The **Column Restrictions** cell can include codes that restrict or suppress information, such as row formatting, details, and amounts, for that column.</span></span>
-
-#### <a name="add-a-column-restriction-in-a-column-definition"></a><span data-ttu-id="f3f2e-175">Přidání omezení sloupce do definice sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-175">Add a column restriction in a column definition</span></span>
-
-1. <span data-ttu-id="f3f2e-176">V Návrháři sestav otevřete definici sloupce k úpravě.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-176">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-177">Klikněte dvakrát na buňku **Omezení sloupce** pro sloupec k omezení.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-177">Double-click the **Column Restrictions** cell for the column to restrict.</span></span>
-3. <span data-ttu-id="f3f2e-178">V dialogovém okně **Omezení sloupce** vyberte v seznamu jeden nebo více kódů a klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-178">In the **Column Restrictions** dialog box, select one or more codes in the list, and then click **OK**.</span></span>
-
-### <a name="column-restriction-codes"></a><span data-ttu-id="f3f2e-179">Kódy omezení sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-179">Column restriction codes</span></span>
-
-<span data-ttu-id="f3f2e-180">Následující tabulka popisuje kódy omezení sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-180">The following table describes the column restriction codes.</span></span>
-
-| <span data-ttu-id="f3f2e-181">Kód omezení sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-181">Column restriction code</span></span> | <span data-ttu-id="f3f2e-182">Popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-182">Description</span></span> |
-|-------------------------|-------------|
-| <span data-ttu-id="f3f2e-183">SU</span><span class="sxs-lookup"><span data-stu-id="f3f2e-183">SU</span></span>                      | <span data-ttu-id="f3f2e-184">Potlačí podtržení sloupce, kde je zadán příkaz podtržení (**---**) nebo příkaz dvojitého podtržení (**===**) v definici řádku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-184">Suppress the underscore for a column where either an underscore command (**---**) or a double underscore command (**===**) is entered in the row definition.</span></span> <span data-ttu-id="f3f2e-185">Nemusí být vhodné například podtrhovat částky, které jsou vytvářeny podle výpočtu procentuální hodnoty.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-185">For example, you might not want to underline amounts that are produced by a percentage calculation.</span></span> |
-| <span data-ttu-id="f3f2e-186">ST</span><span class="sxs-lookup"><span data-stu-id="f3f2e-186">ST</span></span>                      | <span data-ttu-id="f3f2e-187">Potlačí součty, aby se zobrazily v tomto sloupci pouze podrobnosti (například statistický sloupec).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-187">Suppress totals, so that only details are shown in the column (for example, a statistical column).</span></span> |
-| <span data-ttu-id="f3f2e-188">SD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-188">SD</span></span>                      | <span data-ttu-id="f3f2e-189">Potlačí podrobnosti, takže se ve sloupci zobrazí pouze řádky **TOT** a **CAL** (z definice řádku).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-189">Suppress details, so that only **TOT** and **CAL** rows (from the row definition) are shown in the column.</span></span> |
-| <span data-ttu-id="f3f2e-190">DR</span><span class="sxs-lookup"><span data-stu-id="f3f2e-190">DR</span></span>                      | <span data-ttu-id="f3f2e-191">Omezí částky ve sloupci **FD** na částky Má dáti.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-191">Restrict the amounts in an **FD** column to debit amounts.</span></span> |
-| <span data-ttu-id="f3f2e-192">CR</span><span class="sxs-lookup"><span data-stu-id="f3f2e-192">CR</span></span>                      | <span data-ttu-id="f3f2e-193">Omezí částky ve sloupci **FD** na částky Dal.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-193">Restrict the amounts in an **FD** column to credit amounts.</span></span> |
-| <span data-ttu-id="f3f2e-194">ADJ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-194">ADJ</span></span>                     | <span data-ttu-id="f3f2e-195">Omezí částky v tomto sloupci na částky oprav za období, pokud jsou tyto částky k dispozici.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-195">Restrict the amounts in the column to period adjustment amounts, if these amounts are available.</span></span> |
-| <span data-ttu-id="f3f2e-196">XAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-196">XAD</span></span>                     | <span data-ttu-id="f3f2e-197">Omezí částky v tomto sloupci tak, aby byly vyloučeny částky oprav za období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-197">Restrict the amounts in the column, so that period adjustment amounts are excluded.</span></span> |
-| <span data-ttu-id="f3f2e-198">PT</span><span class="sxs-lookup"><span data-stu-id="f3f2e-198">PT</span></span>                      | <span data-ttu-id="f3f2e-199">Omezí částky ve sloupci tak, aby pouze zaúčtované transakce byly zahrnuty, pokud tyto transakce jsou k dispozici.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-199">Restrict the amounts in the column, so that only posted transactions are included, if these transactions are available.</span></span> |
-| <span data-ttu-id="f3f2e-200">UPT</span><span class="sxs-lookup"><span data-stu-id="f3f2e-200">UPT</span></span>                     | <span data-ttu-id="f3f2e-201">Omezí částky ve sloupci tak, aby pouze nezaúčtované transakce byly zahrnuty, pokud tyto transakce jsou k dispozici.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-201">Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.</span></span><blockquote>[!NOTE] <span data-ttu-id="f3f2e-202">Ne všichni zprostředkovatelé dat podporují nezaúčtované transakce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-202">Not all data providers support unposted transactions.</span></span> <span data-ttu-id="f3f2e-203">Další informace naleznete v <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>příručce pro integraci dat</a> pro váš systém Microsoft Dynamics ERP.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-203">For more information, see the <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>data integration guide</a> for your Microsoft Dynamics ERP system.</span></span></blockquote> |
-
-### <a name="restrict-a-column-to-a-reporting-unit"></a><span data-ttu-id="f3f2e-204">Omezení sloupce na organizační jednotku</span><span class="sxs-lookup"><span data-stu-id="f3f2e-204">Restrict a column to a reporting unit</span></span>
-
-1. <span data-ttu-id="f3f2e-205">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-205">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-206">Klikněte dvakrát na buňku **Jednotka výkaznictví** pro sloupec k omezení.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-206">Double-click the **Reporting Unit** cell for the column to restrict.</span></span>
-3. <span data-ttu-id="f3f2e-207">V dialogovém okně **Výběr jednotky výkaznictví** v seznamu **Strom výkaznictví** vyberte strom.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-207">In the **Reporting Unit Selection** dialog box, in the **Reporting tree** list, select a tree.</span></span>
-4. <span data-ttu-id="f3f2e-208">Rozbalte nebo sbalte seznam jednotek vyberte jednotku výkaznictví a klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-208">Expand or collapse the list of units, select a reporting unit, and then click **OK**.</span></span>
-
-## <a name="format-column-headers"></a><span data-ttu-id="f3f2e-209">Formátování záhlaví sloupců</span><span class="sxs-lookup"><span data-stu-id="f3f2e-209">Format column headers</span></span>
-<span data-ttu-id="f3f2e-210">Záhlaví, která se objevují v horní části sloupců v sestavě, můžete přidávat, upravovat a odstraňovat.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-210">You can add, modify, and delete the headers that appear at the top of the columns on a report.</span></span> <span data-ttu-id="f3f2e-211">Také můžete nakonfigurovat podmíněné pokrývání záhlaví sloupců na základě pole **Období** z definice sloupce a pole **Základní období** z definic sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-211">You can also configure conditional spanning column headers, based on the **Period** field from column definitions and the **Base Period** field from report definitions.</span></span> <span data-ttu-id="f3f2e-212">Základní období vám pomůže ušetřit čas při vytváření sestav s klouzavými prognózami.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-212">The base period feature helps save you time when you create rolling forecast reports.</span></span>
-
-### <a name="create-and-manage-column-headers"></a><span data-ttu-id="f3f2e-213">Vytvoření a správa záhlaví sloupců</span><span class="sxs-lookup"><span data-stu-id="f3f2e-213">Create and manage column headers</span></span>
-
-<span data-ttu-id="f3f2e-214">Můžete přidat, upravit a odstranit záhlaví, která se zobrazí v horní části sloupců v sestavě, pomocí dialogového okna **Záhlaví sloupce**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-214">You can use the **Column Header** dialog box to add, modify, and delete the headers that appear at the top of the columns on a report.</span></span> <span data-ttu-id="f3f2e-215">Pole dialogového okna **Záhlaví sloupce** jsou popsána v následující tabulce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-215">The following table describes the fields in the **Column Header** dialog box.</span></span>
-
-| <span data-ttu-id="f3f2e-216">Pole</span><span class="sxs-lookup"><span data-stu-id="f3f2e-216">Field</span></span>                 | <span data-ttu-id="f3f2e-217">Popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-217">Description</span></span> |
-|-----------------------|-------------|
-| <span data-ttu-id="f3f2e-218">Text záhlaví sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-218">Column header text</span></span>    | <span data-ttu-id="f3f2e-219">Tento text se zobrazí v záhlaví sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-219">This text appears in the column header.</span></span> <span data-ttu-id="f3f2e-220">Můžete zadat text přímo do tohoto pole nebo kliknout na tlačítko **Vložit automatický text** a vybrat možnost, která aktualizuje záhlaví sloupce pokaždé, když je vygenerována sestava.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-220">You can type text directly in this field, or click **Insert AutoText** to select an option that updates the column header every time that the report is generated.</span></span> <span data-ttu-id="f3f2e-221">Chcete-li zahrnout více kódů automatického textu, klikněte na tlačítko **Vložit automatický text** znovu a potom klikněte na další kód v seznamu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-221">To include multiple autotext codes, click **Insert AutoText** again, and then click another code in the list.</span></span> |
-| <span data-ttu-id="f3f2e-222">Možnosti formátu</span><span class="sxs-lookup"><span data-stu-id="f3f2e-222">Format options</span></span>        | <span data-ttu-id="f3f2e-223">Použít formátování pro záhlaví sloupce, například rámeček nebo podtržení.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-223">Apply formatting to a column header, such as box or underline.</span></span> |
-| <span data-ttu-id="f3f2e-224">Rozšířit z Rozšířit do</span><span class="sxs-lookup"><span data-stu-id="f3f2e-224">Spread from Spread to</span></span> | <span data-ttu-id="f3f2e-225">Definuje sloupce, na které se text záhlaví vztahuje.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-225">Define the column or columns that the header text applies to.</span></span> |
-| <span data-ttu-id="f3f2e-226">Zarovnání</span><span class="sxs-lookup"><span data-stu-id="f3f2e-226">Justification</span></span>         | <span data-ttu-id="f3f2e-227">Určete jak má být text záhlaví sloupce zarovnán pro sloupec nebo rozsah sloupců určený pomocí polí **Pokrýt od** a **Pokrýt k**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-227">Specify how the column header text should be aligned for the column or range of columns that is specified in the **Spread from** and **Spread to** fields.</span></span> |
-
-### <a name="create-a-column-header"></a><span data-ttu-id="f3f2e-228">Vytvoření záhlaví sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-228">Create a column header</span></span>
-
-1. <span data-ttu-id="f3f2e-229">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-229">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-230">Klikněte dvakrát na buňku záhlaví.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-230">Double-click a header cell.</span></span>
-3. <span data-ttu-id="f3f2e-231">V dialogovém okně **Záhlaví sloupce** zadejte text záhlaví sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-231">In the **Column Header** dialog box, enter the column header text.</span></span> <span data-ttu-id="f3f2e-232">Případně klikněte na tlačítko **Vložit automatický text** a vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-232">Alternatively, click **Insert AutoText**, and select an option.</span></span>
-4. <span data-ttu-id="f3f2e-233">V poli **Možnosti formátu** vyberte formát pro záhlaví.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-233">In the **Format options** field, select a format for the header.</span></span>
-5. <span data-ttu-id="f3f2e-234">V poli **Pokrýt od** zadejte písmeno sloupce, nad kterým má začít záhlaví sloupců.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-234">In the **Spread from** field, enter the letter of the column that the column header should start over.</span></span> <span data-ttu-id="f3f2e-235">V poli **Pokrýt k** zadejte písmeno sloupce, nad kterým má končit záhlaví sloupců.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-235">In the **Spread to** field, enter the letter of the column that the column header should end over.</span></span>
-6. <span data-ttu-id="f3f2e-236">V části **Zarovnání** vyberte, zda má být text záhlaví sloupců zarovnaný vlevo, zarovnaný na střed nebo zarovnaný vpravo.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-236">Under **Justification**, select whether the column header text to should be left-justified, center-justified, or right-justified.</span></span>
-7. <span data-ttu-id="f3f2e-237">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-237">Click **OK**.</span></span>
-
-### <a name="add-a-column-header-row"></a><span data-ttu-id="f3f2e-238">Přidání řádku záhlaví sloupců</span><span class="sxs-lookup"><span data-stu-id="f3f2e-238">Add a column header row</span></span>
-
-1. <span data-ttu-id="f3f2e-239">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-239">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-240">Vyberte buňku v řádku záhlaví.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-240">Select a cell in the header row.</span></span>
-3. <span data-ttu-id="f3f2e-241">V nabídce **Upravit** klikněte na tlačítko **Vložit řádek**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-241">On the **Edit** menu, click **Insert Row**.</span></span> <span data-ttu-id="f3f2e-242">Nový řádek je vložen nad řádek, který jste vybrali v kroku 2.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-242">The new row is inserted above the row that you selected in step 2.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="f3f2e-243">Používáte-li v sestavě pro záhlaví sestavy čtyři nebo více řádků, záhlaví se budou při exportu sestavy do listu aplikace Excel překrývat.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-243">If you have four or more rows of report headers on a report, the headers will overlap when the report is exported to an Excel worksheet.</span></span> <span data-ttu-id="f3f2e-244">Chcete-li zobrazit všechna záhlaví v sestavě, zvětšete horní okraj v definici sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-244">To view all headers on the report, increase the top margin in the report definition.</span></span>
-
-### <a name="delete-a-column-header-row"></a><span data-ttu-id="f3f2e-245">Odstranění řádku záhlaví sloupců</span><span class="sxs-lookup"><span data-stu-id="f3f2e-245">Delete a column header row</span></span>
-
-1. <span data-ttu-id="f3f2e-246">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-246">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-247">Vyberte buňku pro odstranění v řádku záhlaví.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-247">In the header row, select the cell to delete.</span></span>
-3. <span data-ttu-id="f3f2e-248">V nabídce **Upravit** klikněte na tlačítko **Odstranit řádek**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-248">On the **Edit** menu, click **Delete Row**.</span></span>
-
-### <a name="create-an-automatically-generated-header"></a><span data-ttu-id="f3f2e-249">Vytvoření automaticky generovaného záhlaví</span><span class="sxs-lookup"><span data-stu-id="f3f2e-249">Create an automatically generated header</span></span>
-
-<span data-ttu-id="f3f2e-250">Návrhář sestav může automaticky generovat záhlaví sloupců na základě kódů automatického textu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-250">Report designer can automatically generate column headers, based on autotext codes.</span></span> <span data-ttu-id="f3f2e-251">Kódy automatického textu jsou proměnné, které se aktualizují při každém generování sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-251">Autotext codes are variables that are updated every time that a report is generated.</span></span> <span data-ttu-id="f3f2e-252">Tyto kódy mohou být zahrnuty do libovolného záhlaví sloupce a určovat informace, které se u sestavy liší, jako je například datum nebo číslo období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-252">Any column header can include these codes to specify report information that can vary, such as dates or period numbers.</span></span> <span data-ttu-id="f3f2e-253">Jednu definici sloupců proto můžete použít pro více definic sestav, časových období a organizačních stromů.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-253">Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees.</span></span> <span data-ttu-id="f3f2e-254">Protože kódy automatického textu závisí na informacích kalendáře z řádků podrobností definice sloupce, jsou podporovány pouze u sloupců **CALC** a **FD**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-254">Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for **CALC** and **FD** columns.</span></span> <span data-ttu-id="f3f2e-255">Způsob, jakým je kód automatického textu zobrazen v buňce záhlaví sloupce, má vliv na to, jak se tyto údaje zobrazují v sestavě.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-255">The way that an autotext code appears in the column header cell affects how that information appears on the report.</span></span> <span data-ttu-id="f3f2e-256">V dialogovém okně **Záhlaví sloupce** se kódy automatického textu zobrazí s malými i velkými znaky.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-256">In the **Column Header** dialog box, the autotext codes appear in mixed case.</span></span> <span data-ttu-id="f3f2e-257">V sestavě se proto text se zobrazí velkými i malými písmeny.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-257">Therefore, the text appears in mixed case on the report.</span></span> <span data-ttu-id="f3f2e-258">Například ve standardním kalendářním roku vypíše kód **@CalMonthLong** měsíc **7** jako **Červenec**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-258">For example, in a standard calendar year, **@CalMonthLong** resolves month **7** to **July**.</span></span> <span data-ttu-id="f3f2e-259">Pokud má být v sestavě název měsíce uveden velkými písmeny (například **ČERVENEC**), zadejte kód automatického textu velkými písmeny do pole **Text záhlaví sloupce**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-259">If the name of the month should be uppercase (for example **JULY**), enter the autotext code in uppercase characters in the **Column header text** field.</span></span> <span data-ttu-id="f3f2e-260">Například zadejte **@CALMONTHLONG**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-260">For example, enter **@CALMONTHLONG**.</span></span> <span data-ttu-id="f3f2e-261">Kódy lze používat společně s textem.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-261">You can mix codes and text.</span></span> <span data-ttu-id="f3f2e-262">Například zadejte následující text záhlaví: **Období @FiscalPeriod-@FiscalYear od @StartDate do @EndDate**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-262">For example, you enter the following header text: **Period @FiscalPeriod-@FiscalYear from @StartDate to @EndDate**.</span></span> <span data-ttu-id="f3f2e-263">Záhlaví sestavy, které bude vygenerováno, bude vypadat nápodobně: **Period 1-02 od 1.1.2002 do 31.1.2002**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-263">The report heading that is generated resembles the following text: **Period 1-02 from 01/01/02 to 01/31/02**.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="f3f2e-264">Formát částí textu, jako například dlouhé datum, závisí na vašich místních nastaveních serveru Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-264">The format of some of the text, such as the long date, depends on your regional settings on the Finance and Operations server.</span></span> <span data-ttu-id="f3f2e-265">Tato nastavení můžete změnit, kliknutím na tlačítko **Start**, na položku **Ovládací panely** a nakonec na položku **Oblast a jazyk**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-265">To change these settings, click the **Start** button, click **Control Panel**, and then click **Region and Language**.</span></span> <span data-ttu-id="f3f2e-266">V následující tabulce jsou uvedeny dostupné možnosti automatického textu u záhlaví sloupců.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-266">The following table lists the available autotext options for column headers.</span></span>
-
-
-| <span data-ttu-id="f3f2e-267">Možnost a kód automatického textu</span><span class="sxs-lookup"><span data-stu-id="f3f2e-267">Autotext option and code</span></span>                | <span data-ttu-id="f3f2e-268">Popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-268">Description</span></span> |
-|-----------------------------------------|-------------|
-| <span data-ttu-id="f3f2e-269">Název měsíce (@CalMonthLong)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-269">Month name (@CalMonthLong)</span></span>              | <span data-ttu-id="f3f2e-270">Vytiskne v záhlaví sloupce název aktuálního měsíce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-270">Print the name of the current month in the column heading.</span></span> <span data-ttu-id="f3f2e-271">Pokud se rozhodnete zaokrouhlovat částky v sestavách na tisíce, milióny nebo miliardy, nebo pokud šířku sloupce v sestavě nastavíte na méně než 9 znaků, zkrátí se název měsíce na první tři znaky.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-271">If you decide to round the amounts in the report to thousands, millions, or billions, or if you set the column width on the report to fewer than nine characters, the name of the month is abbreviated to the first three characters.</span></span> |
-| <span data-ttu-id="f3f2e-272">Zkrácený název měsíce (@CalMonthShort)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-272">Abbreviated month name (@CalMonthShort)</span></span> | <span data-ttu-id="f3f2e-273">Vytiskne zkrácený název měsíce pro vybrané fiskální období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-273">Print the abbreviated name of the month for the selected fiscal period.</span></span> |
-| <span data-ttu-id="f3f2e-274">Číslo období (@FiscalPeriod)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-274">Period number (@FiscalPeriod)</span></span>           | <span data-ttu-id="f3f2e-275">Vytiskne číselnou formu fiskálního období, který je určený pro daný sloupec.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-275">Print the numeric form of the fiscal period that is identified for that column.</span></span> <span data-ttu-id="f3f2e-276">Pokud sloupec překlenuje několik období, vytiskne se poslední období v tomto rozsahu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-276">If the column spans multiple periods, the last period in the range is printed.</span></span> |
-| <span data-ttu-id="f3f2e-277">Popis období (@FiscalPeriodName)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-277">Period description (@FiscalPeriodName)</span></span>  | <span data-ttu-id="f3f2e-278">Vytiskne popis fiskálního období, který je určen ve finančních datech.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-278">Print the fiscal period description that is identified in the financial data.</span></span> |
-| <span data-ttu-id="f3f2e-279">Fiskální rok (@FiscalYear)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-279">Fiscal year (@FiscalYear)</span></span>               | <span data-ttu-id="f3f2e-280">Vytiskne fiskální rok tohoto sloupce v číselné formě.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-280">Print the fiscal year for the column in numeric form.</span></span> |
-| <span data-ttu-id="f3f2e-281">Kalendářní rok (@CalYear)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-281">Calendar year (@CalYear)</span></span>                | <span data-ttu-id="f3f2e-282">Vytiskne kalendářní rok tohoto sloupce v číselné formě.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-282">Print the calendar year for the column in numeric form.</span></span> |
-| <span data-ttu-id="f3f2e-283">Počáteční datum (@StartDate)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-283">Start date (@StartDate)</span></span>                 | <span data-ttu-id="f3f2e-284">Vytiskne počáteční datum pro sloupec.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-284">Print the start date for the column.</span></span> |
-| <span data-ttu-id="f3f2e-285">Koncové datum (@EndDate)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-285">End Date (@EndDate)</span></span>                     | <span data-ttu-id="f3f2e-286">Vytiskne koncové datum pro sloupec.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-286">Print the end date for the column.</span></span> |
-| <span data-ttu-id="f3f2e-287">Název jednotky ze stromu (@UnitName)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-287">Unit name from tree (@UnitName)</span></span>         | <span data-ttu-id="f3f2e-288">Pokud sloupec omezíte na konkrétní jednotku organizačního stromu, vytiskne v záhlaví sloupce její název.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-288">If you restrict a column to a specific unit of the reporting tree, print the unit name in the column header.</span></span> |
-| <span data-ttu-id="f3f2e-289">Popis jednotky (@UnitDesc)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-289">Unit description (@UnitDesc)</span></span>            | <span data-ttu-id="f3f2e-290">Pokud sloupec omezíte na konkrétní jednotku organizačního stromu, vytiskne v záhlaví sloupce její popis.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-290">If you restrict a column to a specific unit of the reporting tree, print the unit description in the column header.</span></span> |
-| <span data-ttu-id="f3f2e-291">Kód knihy (@BookCode)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-291">Book Code (@BookCode)</span></span>                   | <span data-ttu-id="f3f2e-292">Vytiskne kód knihy zadaný ve sloupci.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-292">Print the book code that is specified in the column.</span></span> |
-| <span data-ttu-id="f3f2e-293">Prázdný řádek (@Blank)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-293">Blank line (@Blank)</span></span>                     | <span data-ttu-id="f3f2e-294">Vloží do záhlaví sloupce prázdný řádek.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-294">Insert an empty line in the column header.</span></span> |
-
-### <a name="create-a-conditional-spanning-header"></a><span data-ttu-id="f3f2e-295">Vytvoření podmíněného překlenovacího záhlaví</span><span class="sxs-lookup"><span data-stu-id="f3f2e-295">Create a conditional spanning header</span></span>
-
-<span data-ttu-id="f3f2e-296">Podmíněná překlenovací záhlaví mohou na základě zadaného data období zasahovat do více sloupců.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-296">Conditional spanning headers can span multiple columns that are based on specific period data.</span></span> <span data-ttu-id="f3f2e-297">Pokud máte například sestavu rozpočtu na fiskální rok a chcete zobrazit skutečné rozpočty za minulé měsíce s předpokládanými rozpočty na budoucí měsíce, můžete pomocí podmíněných překlenovacích záhlaví automaticky aktualizovat záhlaví sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-297">For example, if you have a budget report for the fiscal year and want to display the actual budgets of past months together with the projected budgets of future months, you can use a conditional spanning header to automatically update the report header.</span></span> <span data-ttu-id="f3f2e-298">Při vytváření podmíněných překlenovacích záhlaví dávejte pozor na následující situace:</span><span class="sxs-lookup"><span data-stu-id="f3f2e-298">Be aware of the following situations when you create a conditional spanning header:</span></span>
-
-- <span data-ttu-id="f3f2e-299">Jakákoli podmínka zastavení (pole **Pokrýt k**) vyhovující před podmínkou začátku (pole **Pokrýt od**) bude ignorována.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-299">Any stop condition (**Spread to** field) that is matched before a start condition (**Spread From** field) is ignored.</span></span> <span data-ttu-id="f3f2e-300">Pokud má například sloupec B podmínku rozšíření definovánu jako BASE+1 až BASE, hodnota BASE je ve sloupci C a BASE+1 ve sloupci D. V takovém případě podmínka konce ve sloupci C je ignorována a tisk záhlaví začíná sloupcem D.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-300">For example, column B has the spread condition defined as BASE+1 to BASE, BASE is in column C, and BASE+1 is in column D. In this case, the stop condition in column C is ignored, and the printing of the header starts at column D.</span></span>
-- <span data-ttu-id="f3f2e-301">Zadáte-li záhlaví sloupců, která se překrývají, budou se překrývat při vytištění v sestavě.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-301">If you specify column headers that overlap, they overlap when they are printed on the report.</span></span> <span data-ttu-id="f3f2e-302">estava bude vygenerována, ale zobrazí se následující upozornění v poli **Stav fronty sestav**: „Záhlaví sloupců používající základ se překrývají s jinými záhlavími sloupců a mohou způsobit překrývání textu.“</span><span class="sxs-lookup"><span data-stu-id="f3f2e-302">The report is generated, but the following warning appears in the **Report Queue Status** field: "Column headers using Base intersect with other column headers and may cause overlapping text."</span></span> <span data-ttu-id="f3f2e-303">Například definice záhlaví sloupce B je B až BASE+1 a definice záhlaví ve sloupci D je BASE+1 až F. V takovém případě se záhlaví tisknou na sebe a jsou nečitelná.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-303">For example, the header definition on column B is B to BASE+1, and the header definition on column D is BASE+1 to F. In this case, the headers are printed on top of each other and are unreadable.</span></span> <span data-ttu-id="f3f2e-304">Vždy při použití funkce BASE v definici **Pokrýt od / Pokrýt k** si prohlédněte vygenerovanou sestavu a zkontrolujte, zda se záhlaví nepřekrývají.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-304">Whenever BASE is used in a **Spread from/Spread to** definition, be sure to view the report that is generated, to see whether the headers overlap.</span></span>
-- <span data-ttu-id="f3f2e-305">Pokud v definici pokrytí zadáte hodnotu BASE ve sloupci Netisknout (**NP**), bude ignorována bez ohledu na to, co je definováno v definici sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-305">If you specify BASE in the spread definition in a No Print (**NP**) column, it's ignored, regardless of what is defined in the column definition.</span></span> <span data-ttu-id="f3f2e-306">Tento scénář je v podstatě stejný, jako když nevytvoříte definici záhlaví sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-306">Essentially, this scenario is the same as not creating a column header definition.</span></span>
-- <span data-ttu-id="f3f2e-307">V případě sloupců s podmíněným tiskem (**P&lt;B**, **P&gt;=B**) se záhlaví s podmíněným pokrytím chová jako jakákoli běžná definice záhlaví sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-307">For conditional printing columns (**P&lt;B**, **P&gt;=B**), conditional spanning headers behave like any regular column header definition.</span></span> <span data-ttu-id="f3f2e-308">Pokud je například výsledkem podmínky hodnota Nepravda, bude tisk záhlaví začínat na každém dalším sloupci odpovídajícím podmínce rozšíření.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-308">For example, if the condition is false, any subsequent column matching for the spread condition starts the printing of the header.</span></span>
-
-#### <a name="create-a-conditional-spanning-header"></a><span data-ttu-id="f3f2e-309">Vytvoření podmíněného překlenovacího záhlaví</span><span class="sxs-lookup"><span data-stu-id="f3f2e-309">Create a conditional spanning header</span></span>
-
-1. <span data-ttu-id="f3f2e-310">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-310">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-311">Klikněte dvakrát na buňku záhlaví.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-311">Double-click a header cell.</span></span>
-3. <span data-ttu-id="f3f2e-312">V dialogovém okně **Záhlaví sloupce** zadejte text záhlaví sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-312">In the **Column Header** dialog box, enter the column header text.</span></span> <span data-ttu-id="f3f2e-313">Případně klikněte na tlačítko **Vložit automatický text** a vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-313">Alternatively, click **Insert AutoText**, and select an option.</span></span>
-4. <span data-ttu-id="f3f2e-314">V poli **Možnosti formátu** vyberte styl formátování pro záhlaví.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-314">In the **Format options** field, select a formatting style for the header.</span></span>
-5. <span data-ttu-id="f3f2e-315">Zadejte období vztahující se k základnímu období, které je zadáno při generování sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-315">Specify a period relative to the base period that is specified when the report is generated.</span></span> <span data-ttu-id="f3f2e-316">V polích **Pokrýt od** a **Pokrýt k** zadejte některou z následujících hodnot: **BASE**, **BASE-X** nebo **BASE+X**, kde X je počet období od základního období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-316">In the **Spread from** and **Spread to** fields, enter one of the following values: **BASE**, **BASE-X** or **BASE+X**, where X is the number of periods from the base period.</span></span> <span data-ttu-id="f3f2e-317">Zadáte-li například **BASE** do pole **Pokrýt od**, text záhlaví sloupce s podmíněným pokrytím začíná v záhlaví sloupce, kde se hodnota definice sestavy **Základní období** rovná hodnotě definice sloupce **Období**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-317">For example, if you enter **BASE** in the **Spread from** field, the conditional spanning column header text starts in the column header where the report definition's **Base period** value equals the column definition's **Period** value.</span></span> <span data-ttu-id="f3f2e-318">Končí ve sloupci, který je určen v poli **Pokrýt k**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-318">It ends in the column that is indicated in the **Spread to** field.</span></span> <span data-ttu-id="f3f2e-319">Proto pokud je pokrytí od BASE k M a hodnota definice sestavy **Základní období** je **4**, záhlaví začne ve sloupci, ve kterém je období nastaveno na hodnotu **4** a končí ve sloupci M. Záhlaví končí a začínají pouze v tisknutých sloupcích.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-319">Therefore, if the spread is BASE to M, and the report definition's **Base period** value is **4**, the header starts in the column where the period is set to **4** and ends at column M. Headers stop and start on printing columns only.</span></span>
-6. <span data-ttu-id="f3f2e-320">V části **Zarovnání** vyberte, zda má být text záhlaví sloupců zarovnaný vlevo, zarovnaný na střed nebo zarovnaný vpravo.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-320">Under **Justification**, select whether the column header text should be left-justified, center-justified, or right justified.</span></span>
-7. <span data-ttu-id="f3f2e-321">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-321">Click **OK**.</span></span>
-
-#### <a name="example-of-a-conditional-spanning-header"></a><span data-ttu-id="f3f2e-322">Příklad podmíněného překlenovacího záhlaví</span><span class="sxs-lookup"><span data-stu-id="f3f2e-322">Example of a conditional spanning header</span></span>
-
-<span data-ttu-id="f3f2e-323">Petra vytváří sestavu pro dynamickou šestiměsíční prognózu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-323">Phyllis is creating a report for a dynamic six-month forecast.</span></span> <span data-ttu-id="f3f2e-324">Chce, aby se přes sloupce obsahující skutečná data vytisklo slovo „Skutečnost“ a přes sloupce obsahující prognózy rozpočtu slovo „Rozpočet“.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-324">She wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts.</span></span> <span data-ttu-id="f3f2e-325">Každý měsíc, kdy je spuštěna sestava, přibude jeden sloupec se skutečnými hodnotami a ubude jeden sloupec rozpočtu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-325">Each month that the report is run, there is one more actual column and one less budget column.</span></span> <span data-ttu-id="f3f2e-326">Přestože Petra může při každém generování sestavy upravit záhlaví ruční změnou definice sloupce, rozhodne se ušetřit si čas a práci a vytvoří podmíněná překlenovací záhlaví, která automaticky vytvoří záhlaví u příslušných sloupců při každém spuštění sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-326">Although Phyllis can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, she decides to create conditional spanning headers that will automatically create headers over the appropriate columns each time that the report is run.</span></span> <span data-ttu-id="f3f2e-327">Pavla otevře Návrhář sestav, klikne na tlačítko **Definice sloupce** v navigačním podokně a otevře definici sloupce pro sestavu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-327">Phyllis opens Report Designer, clicks **Column Definition** in the navigation pane, and opens the column definition for the report.</span></span> <span data-ttu-id="f3f2e-328">Zadá potom následující informace.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-328">She then enters the following information.</span></span> <span data-ttu-id="f3f2e-329">Základní období v definici sestavy je 4.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-329">The base period in the report definition is 4.</span></span>
-
-
-|                     |  <span data-ttu-id="f3f2e-330">A</span><span class="sxs-lookup"><span data-stu-id="f3f2e-330">A</span></span>   | <span data-ttu-id="f3f2e-331">B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-331">B</span></span>             | <span data-ttu-id="f3f2e-332">C</span><span class="sxs-lookup"><span data-stu-id="f3f2e-332">C</span></span>             | <span data-ttu-id="f3f2e-333">D</span><span class="sxs-lookup"><span data-stu-id="f3f2e-333">D</span></span>             | <span data-ttu-id="f3f2e-334">E</span><span class="sxs-lookup"><span data-stu-id="f3f2e-334">E</span></span>             | <span data-ttu-id="f3f2e-335">F</span><span class="sxs-lookup"><span data-stu-id="f3f2e-335">F</span></span>             | <span data-ttu-id="f3f2e-336">G</span><span class="sxs-lookup"><span data-stu-id="f3f2e-336">G</span></span>             | <span data-ttu-id="f3f2e-337">H</span><span class="sxs-lookup"><span data-stu-id="f3f2e-337">H</span></span>             | <span data-ttu-id="f3f2e-338">I</span><span class="sxs-lookup"><span data-stu-id="f3f2e-338">I</span></span>             | <span data-ttu-id="f3f2e-339">J</span><span class="sxs-lookup"><span data-stu-id="f3f2e-339">J</span></span>             | <span data-ttu-id="f3f2e-340">K</span><span class="sxs-lookup"><span data-stu-id="f3f2e-340">K</span></span>             | <span data-ttu-id="f3f2e-341">L</span><span class="sxs-lookup"><span data-stu-id="f3f2e-341">L</span></span>             | <span data-ttu-id="f3f2e-342">M</span><span class="sxs-lookup"><span data-stu-id="f3f2e-342">M</span></span>             |
-|---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| <span data-ttu-id="f3f2e-343">Záhlaví 1</span><span class="sxs-lookup"><span data-stu-id="f3f2e-343">Header 1</span></span>            |      | <span data-ttu-id="f3f2e-344">Skutečnost</span><span class="sxs-lookup"><span data-stu-id="f3f2e-344">Actual</span></span>        | <span data-ttu-id="f3f2e-345">Rozpočet</span><span class="sxs-lookup"><span data-stu-id="f3f2e-345">Budget</span></span>        |               |               |               |               |               |               |               |               |               |               |
-| <span data-ttu-id="f3f2e-346">Záhlaví 2</span><span class="sxs-lookup"><span data-stu-id="f3f2e-346">Header 2</span></span>            |      | <span data-ttu-id="f3f2e-347">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-347">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-348">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-348">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-349">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-349">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-350">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-350">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-351">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-351">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-352">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-352">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-353">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-353">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-354">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-354">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-355">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-355">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-356">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-356">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-357">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-357">@CalMonthLong</span></span> | <span data-ttu-id="f3f2e-358">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="f3f2e-358">@CalMonthLong</span></span> |
-| <span data-ttu-id="f3f2e-359">Záhlaví 3</span><span class="sxs-lookup"><span data-stu-id="f3f2e-359">Header 3</span></span>            |      |               |               |               |               |               |               |               |               |               |               |               |               |
-| <span data-ttu-id="f3f2e-360">Typ sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-360">Column Type</span></span>         | <span data-ttu-id="f3f2e-361">POPIS</span><span class="sxs-lookup"><span data-stu-id="f3f2e-361">DESC</span></span> | <span data-ttu-id="f3f2e-362">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-362">FD</span></span>            | <span data-ttu-id="f3f2e-363">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-363">FD</span></span>            | <span data-ttu-id="f3f2e-364">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-364">FD</span></span>            | <span data-ttu-id="f3f2e-365">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-365">FD</span></span>            | <span data-ttu-id="f3f2e-366">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-366">FD</span></span>            | <span data-ttu-id="f3f2e-367">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-367">FD</span></span>            | <span data-ttu-id="f3f2e-368">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-368">FD</span></span>            | <span data-ttu-id="f3f2e-369">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-369">FD</span></span>            | <span data-ttu-id="f3f2e-370">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-370">FD</span></span>            | <span data-ttu-id="f3f2e-371">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-371">FD</span></span>            | <span data-ttu-id="f3f2e-372">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-372">FD</span></span>            | <span data-ttu-id="f3f2e-373">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-373">FD</span></span>            |
-| <span data-ttu-id="f3f2e-374">Kód knihy/atribut</span><span class="sxs-lookup"><span data-stu-id="f3f2e-374">Book Code/Attribute</span></span> |      | <span data-ttu-id="f3f2e-375">SKUTEČNÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-375">ACTUAL</span></span>        | <span data-ttu-id="f3f2e-376">ROZPOČET2012</span><span class="sxs-lookup"><span data-stu-id="f3f2e-376">BUDGET2012</span></span>    | <span data-ttu-id="f3f2e-377">SKUTEČNÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-377">ACTUAL</span></span>        | <span data-ttu-id="f3f2e-378">ROZPOČET2012</span><span class="sxs-lookup"><span data-stu-id="f3f2e-378">BUDGET2012</span></span>    | <span data-ttu-id="f3f2e-379">SKUTEČNÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-379">ACTUAL</span></span>        | <span data-ttu-id="f3f2e-380">ROZPOČET2012</span><span class="sxs-lookup"><span data-stu-id="f3f2e-380">BUDGET2012</span></span>    | <span data-ttu-id="f3f2e-381">SKUTEČNÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-381">ACTUAL</span></span>        | <span data-ttu-id="f3f2e-382">ROZPOČET2012</span><span class="sxs-lookup"><span data-stu-id="f3f2e-382">BUDGET2012</span></span>    | <span data-ttu-id="f3f2e-383">SKUTEČNÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-383">ACTUAL</span></span>        | <span data-ttu-id="f3f2e-384">ROZPOČET2012</span><span class="sxs-lookup"><span data-stu-id="f3f2e-384">BUDGET2012</span></span>    | <span data-ttu-id="f3f2e-385">SKUTEČNÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-385">ACTUAL</span></span>        | <span data-ttu-id="f3f2e-386">ROZPOČET2012</span><span class="sxs-lookup"><span data-stu-id="f3f2e-386">BUDGET2012</span></span>    |
-| <span data-ttu-id="f3f2e-387">Fiskální rok</span><span class="sxs-lookup"><span data-stu-id="f3f2e-387">Fiscal Year</span></span>         |      | <span data-ttu-id="f3f2e-388">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-388">BASE</span></span>          | <span data-ttu-id="f3f2e-389">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-389">BASE</span></span>          | <span data-ttu-id="f3f2e-390">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-390">BASE</span></span>          | <span data-ttu-id="f3f2e-391">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-391">BASE</span></span>          | <span data-ttu-id="f3f2e-392">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-392">BASE</span></span>          | <span data-ttu-id="f3f2e-393">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-393">BASE</span></span>          | <span data-ttu-id="f3f2e-394">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-394">BASE</span></span>          | <span data-ttu-id="f3f2e-395">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-395">BASE</span></span>          | <span data-ttu-id="f3f2e-396">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-396">BASE</span></span>          | <span data-ttu-id="f3f2e-397">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-397">BASE</span></span>          | <span data-ttu-id="f3f2e-398">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-398">BASE</span></span>          | <span data-ttu-id="f3f2e-399">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-399">BASE</span></span>          |
-| <span data-ttu-id="f3f2e-400">Období</span><span class="sxs-lookup"><span data-stu-id="f3f2e-400">Period</span></span>              |      | <span data-ttu-id="f3f2e-401">1</span><span class="sxs-lookup"><span data-stu-id="f3f2e-401">1</span></span>             | <span data-ttu-id="f3f2e-402">1</span><span class="sxs-lookup"><span data-stu-id="f3f2e-402">1</span></span>             | <span data-ttu-id="f3f2e-403">2</span><span class="sxs-lookup"><span data-stu-id="f3f2e-403">2</span></span>             | <span data-ttu-id="f3f2e-404">2</span><span class="sxs-lookup"><span data-stu-id="f3f2e-404">2</span></span>             | <span data-ttu-id="f3f2e-405">3</span><span class="sxs-lookup"><span data-stu-id="f3f2e-405">3</span></span>             | <span data-ttu-id="f3f2e-406">3</span><span class="sxs-lookup"><span data-stu-id="f3f2e-406">3</span></span>             | <span data-ttu-id="f3f2e-407">4</span><span class="sxs-lookup"><span data-stu-id="f3f2e-407">4</span></span>             | <span data-ttu-id="f3f2e-408">4</span><span class="sxs-lookup"><span data-stu-id="f3f2e-408">4</span></span>             | <span data-ttu-id="f3f2e-409">5</span><span class="sxs-lookup"><span data-stu-id="f3f2e-409">5</span></span>             | <span data-ttu-id="f3f2e-410">5</span><span class="sxs-lookup"><span data-stu-id="f3f2e-410">5</span></span>             | <span data-ttu-id="f3f2e-411">6</span><span class="sxs-lookup"><span data-stu-id="f3f2e-411">6</span></span>             | <span data-ttu-id="f3f2e-412">6</span><span class="sxs-lookup"><span data-stu-id="f3f2e-412">6</span></span>             |
-| <span data-ttu-id="f3f2e-413">Pokrytá období</span><span class="sxs-lookup"><span data-stu-id="f3f2e-413">Periods Covered</span></span>     |      | <span data-ttu-id="f3f2e-414">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-414">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-415">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-415">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-416">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-416">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-417">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-417">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-418">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-418">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-419">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-419">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-420">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-420">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-421">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-421">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-422">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-422">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-423">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-423">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-424">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-424">PERIODIC</span></span>      | <span data-ttu-id="f3f2e-425">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-425">PERIODIC</span></span>      |
-| <span data-ttu-id="f3f2e-426">Šířka sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-426">Column Width</span></span>        | <span data-ttu-id="f3f2e-427">30</span><span class="sxs-lookup"><span data-stu-id="f3f2e-427">30</span></span>   | <span data-ttu-id="f3f2e-428">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-428">10</span></span>            | <span data-ttu-id="f3f2e-429">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-429">10</span></span>            | <span data-ttu-id="f3f2e-430">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-430">10</span></span>            | <span data-ttu-id="f3f2e-431">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-431">10</span></span>            | <span data-ttu-id="f3f2e-432">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-432">10</span></span>            | <span data-ttu-id="f3f2e-433">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-433">10</span></span>            | <span data-ttu-id="f3f2e-434">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-434">10</span></span>            | <span data-ttu-id="f3f2e-435">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-435">10</span></span>            | <span data-ttu-id="f3f2e-436">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-436">10</span></span>            | <span data-ttu-id="f3f2e-437">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-437">10</span></span>            | <span data-ttu-id="f3f2e-438">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-438">10</span></span>            | <span data-ttu-id="f3f2e-439">10</span><span class="sxs-lookup"><span data-stu-id="f3f2e-439">10</span></span>            |
-| <span data-ttu-id="f3f2e-440">Řízení tisku</span><span class="sxs-lookup"><span data-stu-id="f3f2e-440">Print Control</span></span>       |      | <span data-ttu-id="f3f2e-441">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-441">P&lt;=B</span></span>       | <span data-ttu-id="f3f2e-442">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-442">P&gt;B</span></span>        | <span data-ttu-id="f3f2e-443">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-443">P&lt;=B</span></span>       | <span data-ttu-id="f3f2e-444">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-444">P&gt;B</span></span>        | <span data-ttu-id="f3f2e-445">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-445">P&lt;=B</span></span>       | <span data-ttu-id="f3f2e-446">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-446">P&gt;B</span></span>        | <span data-ttu-id="f3f2e-447">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-447">P&lt;=B</span></span>       | <span data-ttu-id="f3f2e-448">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-448">P&gt;B</span></span>        | <span data-ttu-id="f3f2e-449">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-449">P&lt;=B</span></span>       | <span data-ttu-id="f3f2e-450">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-450">P&gt;B</span></span>        | <span data-ttu-id="f3f2e-451">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-451">P&lt;=B</span></span>       | <span data-ttu-id="f3f2e-452">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-452">P&gt;B</span></span>        |
-
-<span data-ttu-id="f3f2e-453">Pavla kliknutím dvakrát na buňku záhlaví sloupce otevřete dialogové okno **Záhlaví sloupce**, kam zadá následující informace.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-453">Phyllis double-clicks a column header cell to open the **Column Header** dialog box, where she enters the following information.</span></span>
-
-| <span data-ttu-id="f3f2e-454">Pole</span><span class="sxs-lookup"><span data-stu-id="f3f2e-454">Field</span></span>              | <span data-ttu-id="f3f2e-455">Hodnota</span><span class="sxs-lookup"><span data-stu-id="f3f2e-455">Value</span></span>                 |
-|--------------------|-----------------------|
-| <span data-ttu-id="f3f2e-456">Text záhlaví sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-456">Column header text</span></span> | <span data-ttu-id="f3f2e-457">Skutečné</span><span class="sxs-lookup"><span data-stu-id="f3f2e-457">Actual</span></span>                |
-| <span data-ttu-id="f3f2e-458">Vložit automatický text</span><span class="sxs-lookup"><span data-stu-id="f3f2e-458">Insert AutoText</span></span>    | <span data-ttu-id="f3f2e-459">Nebyla vybrána žádná možnost.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-459">No selection is made.</span></span> |
-| <span data-ttu-id="f3f2e-460">Možnosti formátu</span><span class="sxs-lookup"><span data-stu-id="f3f2e-460">Format options</span></span>     | <span data-ttu-id="f3f2e-461">Pole</span><span class="sxs-lookup"><span data-stu-id="f3f2e-461">Box</span></span>                   |
-| <span data-ttu-id="f3f2e-462">Zarovnání</span><span class="sxs-lookup"><span data-stu-id="f3f2e-462">Justification</span></span>      | <span data-ttu-id="f3f2e-463">Nebyla vybrána žádná možnost.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-463">No selection is made.</span></span> |
-| <span data-ttu-id="f3f2e-464">Rozšířit z</span><span class="sxs-lookup"><span data-stu-id="f3f2e-464">Spread from</span></span>        | <span data-ttu-id="f3f2e-465">B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-465">B</span></span>                     |
-| <span data-ttu-id="f3f2e-466">Rozšířit do</span><span class="sxs-lookup"><span data-stu-id="f3f2e-466">Spread to</span></span>          | <span data-ttu-id="f3f2e-467">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-467">BASE</span></span>                  |
-| <span data-ttu-id="f3f2e-468">Záhlaví rozpočtu</span><span class="sxs-lookup"><span data-stu-id="f3f2e-468">Budget header</span></span>      | <span data-ttu-id="f3f2e-469">BASE+1 až koncový sloupec</span><span class="sxs-lookup"><span data-stu-id="f3f2e-469">BASE+1 to end column</span></span>  |
-
-<span data-ttu-id="f3f2e-470">Poté, co dokončí zadávání informací, Pavla klikne na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-470">After she has finished entering information, Phyllis clicks **OK**.</span></span> <span data-ttu-id="f3f2e-471">Poté kliknutím dvakrát na buňku záhlaví sloupce C otevřete dialogové okno **Záhlaví sloupce**, kam zadá následující informace.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-471">She then double-clicks the column header cell in column C to open the **Column Header** dialog box, where she enters the following information.</span></span>
-
-| <span data-ttu-id="f3f2e-472">Pole</span><span class="sxs-lookup"><span data-stu-id="f3f2e-472">Field</span></span>              | <span data-ttu-id="f3f2e-473">Hodnota</span><span class="sxs-lookup"><span data-stu-id="f3f2e-473">Value</span></span>                 |
-|--------------------|-----------------------|
-| <span data-ttu-id="f3f2e-474">Text záhlaví sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-474">Column header text</span></span> | <span data-ttu-id="f3f2e-475">Rozpočet</span><span class="sxs-lookup"><span data-stu-id="f3f2e-475">Budget</span></span>                |
-| <span data-ttu-id="f3f2e-476">Vložit automatický text</span><span class="sxs-lookup"><span data-stu-id="f3f2e-476">Insert AutoText</span></span>    | <span data-ttu-id="f3f2e-477">Nebyla vybrána žádná možnost.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-477">No selection is made.</span></span> |
-| <span data-ttu-id="f3f2e-478">Možnosti formátu</span><span class="sxs-lookup"><span data-stu-id="f3f2e-478">Format options</span></span>     | <span data-ttu-id="f3f2e-479">Pole</span><span class="sxs-lookup"><span data-stu-id="f3f2e-479">Box</span></span>                   |
-| <span data-ttu-id="f3f2e-480">Zarovnání</span><span class="sxs-lookup"><span data-stu-id="f3f2e-480">Justification</span></span>      | <span data-ttu-id="f3f2e-481">Nebyla vybrána žádná možnost.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-481">No selection is made.</span></span> |
-| <span data-ttu-id="f3f2e-482">Rozšířit z</span><span class="sxs-lookup"><span data-stu-id="f3f2e-482">Spread from</span></span>        | <span data-ttu-id="f3f2e-483">C</span><span class="sxs-lookup"><span data-stu-id="f3f2e-483">C</span></span>                     |
-| <span data-ttu-id="f3f2e-484">Rozšířit do</span><span class="sxs-lookup"><span data-stu-id="f3f2e-484">Spread to</span></span>          | <span data-ttu-id="f3f2e-485">ZÁKLAD+2</span><span class="sxs-lookup"><span data-stu-id="f3f2e-485">BASE+2</span></span>                |
-
-<span data-ttu-id="f3f2e-486">Nyní pokaždé, když tato zpráva je generována, přes sloupce obsahující skutečná data se vytiskne slovo „Skutečnost“ a přes sloupce obsahující prognózy rozpočtu slovo „Rozpočet“.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-486">Now, every time that this report is generated, the word "Actual" will be printed over the columns that contain actual data, and the word "Budget" will be printed over the columns that contain budget forecasts.</span></span> <span data-ttu-id="f3f2e-487">Navíc počet sloupců se upraví každý měsíc.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-487">Additionally, the number of columns will be adjusted each month.</span></span>
-
-## <a name="apply-column-justification"></a><span data-ttu-id="f3f2e-488">Použití zarovnání sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-488">Apply column justification</span></span>
-<span data-ttu-id="f3f2e-489">Buňka **Zarovnání** se používá k formátování zarovnání sloupce popisu v sestavě.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-489">The **Justification** cell is used to apply justification formatting to a description column in a report.</span></span> <span data-ttu-id="f3f2e-490">Tato možnost má vliv jen na popisy sloupců, a ne na hodnoty samotné.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-490">This option affects only the column descriptions, not the actual values.</span></span>
-
-1. <span data-ttu-id="f3f2e-491">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-491">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-492">Dvakrát klikněte na buňku **Zarovnání**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-492">Double-click the **Justification** cell.</span></span>
-3. <span data-ttu-id="f3f2e-493">Vyberte jednu z následujících hodnot na seznamu:</span><span class="sxs-lookup"><span data-stu-id="f3f2e-493">Select one of the following values in the list:</span></span>
-
-    - <span data-ttu-id="f3f2e-494">**Žádné** – nebude použito žádné zarovnání.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-494">**None** – No justification is applied.</span></span>
-    - <span data-ttu-id="f3f2e-495">**Vlevo** – popisy sloupců se zarovnají doleva.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-495">**Left** – Left-align the column descriptions.</span></span>
-    - <span data-ttu-id="f3f2e-496">**Na střed** – popisy sloupců se zarovnají na střed.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-496">**Center** – Center-align the column descriptions.</span></span>
-    - <span data-ttu-id="f3f2e-497">**Vpravo** – popisy sloupců se zarovnají doprava.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-497">**Right** – Right-align the column descriptions.</span></span>
-
-## <a name="add-special-formatting-options"></a><span data-ttu-id="f3f2e-498">Přidání speciálních možností formátování</span><span class="sxs-lookup"><span data-stu-id="f3f2e-498">Add special formatting options</span></span>
-<span data-ttu-id="f3f2e-499">Řádky podrobností ve sloupci formátování v definici sloupců umožňují uplatnit speciální formátování na vybrané sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-499">In the column definition, the formatting column detail rows apply special formatting to selected columns.</span></span> <span data-ttu-id="f3f2e-500">I když jsou některé možnosti **Řízení tisku** a možnosti **Omezení sloupce** specifické pro sloupce **FD**, většina možnosti platí pro všechny typy sloupců.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-500">Although some of the **Print Control** options and **Column Restrictions** options are specific to **FD** columns, most of the options apply to all column types.</span></span> <span data-ttu-id="f3f2e-501">Formátování zadané v definici řádku přepíše formátování, které je zadáno v definici sloupce a v definici sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-501">The formatting that is specified in the column definition overrides the formatting that is specified in the report definition.</span></span> <span data-ttu-id="f3f2e-502">Formátování zadané v definici řádku však přepíše formátování, které je zadáno v definici sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-502">However, the formatting that is specified in the row definition overrides the formatting that is specified in the column definition.</span></span> <span data-ttu-id="f3f2e-503">Následující řádky se považují za řádky formátování:</span><span class="sxs-lookup"><span data-stu-id="f3f2e-503">The following rows are considered formatting rows:</span></span>
-
-- <span data-ttu-id="f3f2e-504">Šířka sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-504">Column Width</span></span>
-- <span data-ttu-id="f3f2e-505">Mezery navíc před sloupcem</span><span class="sxs-lookup"><span data-stu-id="f3f2e-505">Extra Spaces Before Column</span></span>
-- <span data-ttu-id="f3f2e-506">Přepsání formátu/měny</span><span class="sxs-lookup"><span data-stu-id="f3f2e-506">Format/Currency Override</span></span>
-- <span data-ttu-id="f3f2e-507">Řízení tisku</span><span class="sxs-lookup"><span data-stu-id="f3f2e-507">Print Control</span></span>
-
-### <a name="changing-the-column-width"></a><span data-ttu-id="f3f2e-508">Změna šířky sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-508">Changing the column width</span></span>
-
-<span data-ttu-id="f3f2e-509">Buňka **Šířka sloupce** určí počet znaků, které mají být použity pro šířku tohoto sloupce v tištěné sestavě.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-509">The **Column Width** cell specifies the number of characters to use for the width of this column on the printed report.</span></span> <span data-ttu-id="f3f2e-510">Šířka sloupců je důležitá pro sloupce, které obsahují částky (sloupce typu **CALC**, **WKS** nebo **FD**), popisy (sloupce typu **DESC**) nebo vyplnění (sloupce typu **FILL**).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-510">Column width is important for columns that contain amounts (columns of the **CALC**, **WKS**, or **FD** type), descriptions (columns of the **DESC** type), or fill (columns of the **FILL** type).</span></span> <span data-ttu-id="f3f2e-511">Ve výchozím nastavení je zvolena možnost **Automaticky přizpůsobit**, takže každý sloupec je automaticky upraven podle obsahu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-511">By default, the **AutoFit** option is selected, so that the width of each column is automatically adjusted to fit the contents.</span></span>
-
-#### <a name="specify-the-width-of-a-column-on-a-report"></a><span data-ttu-id="f3f2e-512">Zadání šířky sloupce v sestavě</span><span class="sxs-lookup"><span data-stu-id="f3f2e-512">Specify the width of a column on a report</span></span>
-
-1. <span data-ttu-id="f3f2e-513">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-513">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-514">V buňce **Šířka sloupce** zadejte počet míst pro šířku sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-514">In the **Column Width** cell, enter the number of spaces for the width of the column.</span></span> <span data-ttu-id="f3f2e-515">Maximální šířka jakéhokoli sloupce je 255 znaků (toto číslo zahrnuje procenta, čárky i závorky).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-515">The maximum width of any column is 255 characters (this number includes cents, commas, and parentheses).</span></span> <span data-ttu-id="f3f2e-516">Chcete-li návrháři sestav umožnit výběr vhodné šířky pro sloupec na základě obsahu buněk, můžete dvakrát kliknout na buňku **Šířka sloupce** a poté kliknout na možnost **Automaticky přizpůsobit**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-516">Alternatively, to enable report designer to select the appropriate width for the column, based on the cell content, double-click the **Column Width** cell, and then click **AutoFit**.</span></span>
-
-### <a name="add-space-between-columns"></a><span data-ttu-id="f3f2e-517">Přidání mezery mezi sloupci</span><span class="sxs-lookup"><span data-stu-id="f3f2e-517">Add space between columns</span></span>
-
-<span data-ttu-id="f3f2e-518">Buňka **Další mezery před sloupcem** určuje šířku oddělovače mezi jedním sloupcem a přiléhajícími sloupci v definici sloupců.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-518">The **Extra Spaces Before Column** cell specifies the width of the separator between one column and adjacent columns in the column definition.</span></span> <span data-ttu-id="f3f2e-519">Nastavení **Další mezery před sloupcem** ovlivní všechny řádky podrobností sloupce pro daný sloupec, ale nikoli řádky záhlaví sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-519">The **Extra Spaces Before Column** setting affects all column detail rows for the column, but not the column header rows.</span></span> <span data-ttu-id="f3f2e-520">Pomocí této možnosti můžete oddělit skupiny sloupců nebo přidat několik mezer před popis tak, aby byl sloupec s popisy odsazen od názvů v sestavě, které jsou zarovnány doleva.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-520">Use this option to separate groups of columns or to add a few spaces before the description, so that the description column is indented from the left-aligned titles on the report.</span></span> <span data-ttu-id="f3f2e-521">Ve výchozím nastavení jsou mezi jednotlivými sloupci dvě mezery.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-521">The default number of spaces between each column is two.</span></span> <span data-ttu-id="f3f2e-522">Toto nastavení lze změnit na kartě **Nastavení** v definici sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-522">You can change this setting on the **Settings** tab in the report definition.</span></span>
-
-#### <a name="specify-the-space-between-columns"></a><span data-ttu-id="f3f2e-523">Zadání mezery mezi sloupci</span><span class="sxs-lookup"><span data-stu-id="f3f2e-523">Specify the space between columns</span></span>
-
-1. <span data-ttu-id="f3f2e-524">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-524">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-525">V buňce **Další mezery před sloupcem** zadejte počet mezer k vložení mezi sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-525">In the **Extra Spaces Before Column** cell, enter the number of spaces to insert between columns.</span></span>
-
-### <a name="specify-a-format-currency-override"></a><span data-ttu-id="f3f2e-526">Určení přepsání formátu a měny</span><span class="sxs-lookup"><span data-stu-id="f3f2e-526">Specify a format currency override</span></span>
-
-<span data-ttu-id="f3f2e-527">Buňka **Přepsání formátu/měny** určuje formátování desetinných míst, měny a procentuálních hodnot ve sloupci.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-527">The **Format/Currency Override** cell specifies the formatting of the decimal, currency, and percentage amounts in the column.</span></span> <span data-ttu-id="f3f2e-528">Toto formátování má přednost před veškerým formátováním, které je určeno v definici sestavy nebo systémovými výchozími hodnotami.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-528">This formatting overrides any formatting that is specified in the report definition or system defaults.</span></span>
-
-#### <a name="assign-a-format-currency-override-to-a-report-column"></a><span data-ttu-id="f3f2e-529">Přiřazení přepsání formátu a měny ke sloupci sestavy</span><span class="sxs-lookup"><span data-stu-id="f3f2e-529">Assign a format currency override to a report column</span></span>
-
-1. <span data-ttu-id="f3f2e-530">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-530">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-531">Dvakrát klikněte na buňku **Přepsání formátu/měny** ve sloupci s částkou.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-531">Double-click a **Format/Currency Override** cell in an amount column.</span></span>
-3. <span data-ttu-id="f3f2e-532">V dialogovém okně **Přepsání formátu** vyberte možnosti formátování.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-532">In the **Format Override** dialog box, select formatting options.</span></span>
-
-### <a name="add-a-print-control-code"></a><span data-ttu-id="f3f2e-533">Přidání kódů řízení tisku</span><span class="sxs-lookup"><span data-stu-id="f3f2e-533">Add a print control code</span></span>
-
-<span data-ttu-id="f3f2e-534">Buňka **Řízení tisku** může obsahovat kódy, které upraví zobrazení nebo charakteristiky tisku sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-534">The **Print Control** cell can contain codes that adjust the display or the printing characteristics of a column.</span></span> <span data-ttu-id="f3f2e-535">Existují dva typy tiskových řídicích kódů: standardní kódy řízení tisku a podmíněné kódy řízení tisku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-535">There are two types of print control codes: regular print control codes and conditional print control codes.</span></span>
-
-#### <a name="regular-print-control-codes"></a><span data-ttu-id="f3f2e-536">Standardní kódy řízení tisku</span><span class="sxs-lookup"><span data-stu-id="f3f2e-536">Regular print control codes</span></span>
-
-| <span data-ttu-id="f3f2e-537">Kód řízení tisku</span><span class="sxs-lookup"><span data-stu-id="f3f2e-537">Print control code</span></span> | <span data-ttu-id="f3f2e-538">Význam</span><span class="sxs-lookup"><span data-stu-id="f3f2e-538">Translation</span></span>                                     | <span data-ttu-id="f3f2e-539">Popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-539">Description</span></span> |
-|--------------------|-------------------------------------------------|-------------|
-| <span data-ttu-id="f3f2e-540">NP</span><span class="sxs-lookup"><span data-stu-id="f3f2e-540">NP</span></span>                 | <span data-ttu-id="f3f2e-541">Netisknout</span><span class="sxs-lookup"><span data-stu-id="f3f2e-541">Nonprinting</span></span>                                     | <span data-ttu-id="f3f2e-542">Částky v tomto sloupci se nebudou tisknout ani používat ve výpočtech.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-542">Exclude the amounts in this column from the report that is printed and from calculations.</span></span> <span data-ttu-id="f3f2e-543">Chcete-li sloupec, který se netiskne, použít ve výpočtu, použijte ve výpočetním vzorci přímý odkaz na sloupec.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-543">To include a non-printing column in a calculation, refer to the column directly in the calculation formula.</span></span> <span data-ttu-id="f3f2e-544">Například netisknutý sloupec C je součástí následujícího výpočtu: **B+C+D**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-544">For example, the non-printing column C is included in the following calculation: **B+C+D**.</span></span> <span data-ttu-id="f3f2e-545">Netisknutý sloupec C však není součástí následujícího výpočtu: **B:D**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-545">However, the non-printing column C isn't included in the following calculation: **B:D**.</span></span> |
-| <span data-ttu-id="f3f2e-546">XCR</span><span class="sxs-lookup"><span data-stu-id="f3f2e-546">XCR</span></span>                | <span data-ttu-id="f3f2e-547">Změna znaménka, pokud obvyklý zůstatek řádku je typu Dal</span><span class="sxs-lookup"><span data-stu-id="f3f2e-547">Change sign if typical balance of row is credit</span></span> | <span data-ttu-id="f3f2e-548">Vytvoří rozpočet nebo porovnávací sestavu, ve které je nepříznivá odchylka (například deficit výnosů nebo překročení výdajů) vždy záporná.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-548">Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative.</span></span> <span data-ttu-id="f3f2e-549">Použitím tohoto kódu na sloupec **CALC** obrátíte znaménko částky sloupce, pokud je typický zůstatek daného řádku typu Dal (dle určení hodnoty **C** ve sloupci **Normální zůstatek** v definici řádku).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-549">Apply this code to a **CALC** column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a **C** in the **Normal Balance** column of the row definition).</span></span><blockquote>[!NOTE] <span data-ttu-id="f3f2e-550">Pro řádky <strong>TOT</strong> a </strong>CAL</strong>, které obvykle přenášejí kreditní zůstatek, je nutné zadat <strong>C</strong> ve sloupci <strong>Obvyklý zůstatek</strong> v definici řádku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-550">For <strong>TOT</strong> rows and </strong>CAL</strong> rows that typically carry a credit balance, be sure to enter a <strong>C</strong> in the <strong>Normal Balance</strong> column in the row definition.</span></span></blockquote> |
-| <span data-ttu-id="f3f2e-551">X0</span><span class="sxs-lookup"><span data-stu-id="f3f2e-551">X0</span></span>                 | <span data-ttu-id="f3f2e-552">Potlačit sloupec v případě, že obsahuje pouze nuly nebo prázdné hodnoty</span><span class="sxs-lookup"><span data-stu-id="f3f2e-552">Suppress column if all zeros or blanks</span></span>          | <span data-ttu-id="f3f2e-553">Vyloučí sloupec **FD** ze sestavy, pokud jsou všechny buňky ve sloupci prázdné nebo obsahují nuly.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-553">Exclude an **FD** column from the report if all cells in that column are either empty or contain zeros.</span></span> |
-| <span data-ttu-id="f3f2e-554">SR</span><span class="sxs-lookup"><span data-stu-id="f3f2e-554">SR</span></span>                 | <span data-ttu-id="f3f2e-555">Potlačit zaokrouhlování</span><span class="sxs-lookup"><span data-stu-id="f3f2e-555">Suppress rounding</span></span>                               | <span data-ttu-id="f3f2e-556">Zabrání zaokrouhlení částek v tomto sloupci.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-556">Prevent the amounts in this column from being rounded.</span></span> |
-| <span data-ttu-id="f3f2e-557">XR</span><span class="sxs-lookup"><span data-stu-id="f3f2e-557">XR</span></span>                 | <span data-ttu-id="f3f2e-558">Potlačit zahrnutí</span><span class="sxs-lookup"><span data-stu-id="f3f2e-558">Suppress rollup</span></span>                                 | <span data-ttu-id="f3f2e-559">Potlačí zahrnutí.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-559">Suppress a rollup.</span></span> <span data-ttu-id="f3f2e-560">Pokud sestava používá organizační strom, nebudou částky v tomto sloupci zahrnuty do následných nadřazených uzlů.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-560">If the report uses a reporting tree, the amounts in this column aren't rolled up into subsequent parent nodes.</span></span> |
-| <span data-ttu-id="f3f2e-561">RP</span><span class="sxs-lookup"><span data-stu-id="f3f2e-561">RP</span></span>                 | <span data-ttu-id="f3f2e-562">Opakovat sloupec na každé stránce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-562">Repeat column on each page</span></span>                      | <span data-ttu-id="f3f2e-563">Opakuje zadaný sloupec na všech stránkách sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-563">Repeat a specified column on each page of a report.</span></span> <span data-ttu-id="f3f2e-564">Například můžete použít kontrolní kód **RP** k zahrnutí sloupce typu **ROW**, který shromáždí kódy řádků na každé stránce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-564">For example, you can use the **RP** print control code to include a column of the **ROW** type that pulls in row codes on every page.</span></span> |
-| <span data-ttu-id="f3f2e-565">WT</span><span class="sxs-lookup"><span data-stu-id="f3f2e-565">WT</span></span>                 |  <span data-ttu-id="f3f2e-566">Zalamovat text</span><span class="sxs-lookup"><span data-stu-id="f3f2e-566">Wrap text</span></span>                                      |  <span data-ttu-id="f3f2e-567">Pokud je text příliš dlouhý na místo ve sloupci, zalomí tato možnost text tak, aby se celý text vešel do sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-567">If the text in a column is too long to fit the space, wrap the text to keep all the text in the column.</span></span> |
-
-#### <a name="conditional-print-control-codes"></a><span data-ttu-id="f3f2e-568">Podmíněné kódy řízení tisku</span><span class="sxs-lookup"><span data-stu-id="f3f2e-568">Conditional print control codes</span></span>
-
-| <span data-ttu-id="f3f2e-569">Podmíněný kód řízení tisku</span><span class="sxs-lookup"><span data-stu-id="f3f2e-569">Conditional print control code</span></span> | <span data-ttu-id="f3f2e-570">popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-570">Description</span></span>                                                                             |
-|--------------------------------|-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="f3f2e-571">(žádný)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-571">(none)</span></span>                         | <span data-ttu-id="f3f2e-572">Zruší výběr podmíněného tisku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-572">Clear the conditional print selection.</span></span>                                                  |
-| <span data-ttu-id="f3f2e-573">P&lt;B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-573">P&lt;B</span></span>                         | <span data-ttu-id="f3f2e-574">Zobrazí určený sloupec pouze v případě, že je hodnota období menší než základní období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-574">Display a specified column only if the period is less than the base period.</span></span>             |
-| <span data-ttu-id="f3f2e-575">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-575">P&gt;B</span></span>                         | <span data-ttu-id="f3f2e-576">Zobrazí určený sloupec pouze v případě, že je hodnota období větší než základní období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-576">Display a specified column only if the period is more than the base period.</span></span>             |
-| <span data-ttu-id="f3f2e-577">P=B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-577">P=B</span></span>                            | <span data-ttu-id="f3f2e-578">Zobrazí určený sloupec pouze v případě, že se hodnota období rovná základnímu období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-578">Display a specified column only if the period is equal to the base period.</span></span>              |
-| <span data-ttu-id="f3f2e-579">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-579">P&lt;=B</span></span>                        | <span data-ttu-id="f3f2e-580">Zobrazí určený sloupec pouze v případě, že je hodnota období menší nebo rovna základnímu období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-580">Display a specified column only if the period is less than or equal to the base period.</span></span> |
-| <span data-ttu-id="f3f2e-581">P&gt;=B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-581">P&gt;=B</span></span>                        | <span data-ttu-id="f3f2e-582">Zobrazí určený sloupec pouze v případě, že je hodnota období větší nebo rovna základnímu období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-582">Display a specified column only if the period is more than or equal to the base period.</span></span> |
-
-#### <a name="add-print-control-codes-to-a-report-column"></a><span data-ttu-id="f3f2e-583">Přidání kódů řízení tisku do sloupce sestavy</span><span class="sxs-lookup"><span data-stu-id="f3f2e-583">Add print control codes to a report column</span></span>
-
-1. <span data-ttu-id="f3f2e-584">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-584">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-585">Dvakrát klikněte na buňku **Řízení tisku**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-585">Double-click the **Print Control** cell.</span></span>
-3. <span data-ttu-id="f3f2e-586">V dialogovém okně **Řízení tisku** vyberte kód ze seznamu **Výběr možností řízení tisku**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-586">In the **Print Control** dialog box, select a code in the **Select print control options** list.</span></span> <span data-ttu-id="f3f2e-587">Chcete-li vybrat více než jeden kód, podržte klávesu Ctrl a vyberte kódy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-587">To select more than one code, hold down the Ctrl key while you select the codes.</span></span>
-4. <span data-ttu-id="f3f2e-588">Vyberte možnost v poli **Podmíněné možnosti tisku**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-588">Select an option in the **Conditional print options** field.</span></span> <span data-ttu-id="f3f2e-589">Ve výchozím nastavení je vybrána položka **(žádné)**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-589">By default, **(none)** is selected.</span></span> <span data-ttu-id="f3f2e-590">Lze vybrat pouze jeden podmíněný kód tisku současně.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-590">You can select only one conditional print code at a time.</span></span>
-5. <span data-ttu-id="f3f2e-591">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-591">Click **OK**.</span></span>
-
-> [!TIP]
-> <span data-ttu-id="f3f2e-592">Můžete také zadat tiskové kódy přímo do buňky **Řízení tisku**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-592">You can also enter the print codes directly in the **Print Control** cell.</span></span> <span data-ttu-id="f3f2e-593">Jednotlivé kódy řízení tisku oddělte čárkou.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-593">Separate multiple print control codes with a comma.</span></span>
-
-## <a name="column-types"></a><span data-ttu-id="f3f2e-594">Typy sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-594">Column types</span></span>
-<span data-ttu-id="f3f2e-595">Typ informací, které zahrnuje každý sloupec v sestavě, je určen hodnotou v řádku **Typ sloupce** v definici sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-595">The type of information that each column on a report includes is specified by the value in the **Column Type** row in the column definition.</span></span> <span data-ttu-id="f3f2e-596">Každá definice sloupce musí obsahovat minimálně jeden sloupec popisu (**DESC**) a jeden sloupec částky (**FD**, **WKS** nebo **CALC**).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-596">Each column definition must contain at least one description (**DESC**) column and one amount (**FD**, **WKS**, or **CALC**) column.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="f3f2e-597">Kódy typu sloupce se nevztahují na všechny účetní systémy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-597">The column type codes don't apply to all accounting systems.</span></span> <span data-ttu-id="f3f2e-598">Vyberete-li typ, který není pro daný účetním systémem platný, zobrazí se daný sloupec v sestavě jako prázdný.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-598">If you select a type that isn't valid for your accounting system, that column is blank on the report.</span></span>
-
-### <a name="specify-a-column-type"></a><span data-ttu-id="f3f2e-599">Zadání typu sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-599">Specify a column type</span></span>
-
-1. <span data-ttu-id="f3f2e-600">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-600">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-601">V odpovídajícím sloupci dvakrát klikněte na buňku v řádku **Typ sloupce**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-601">In the appropriate column, double-click a cell in the **Column Type** row.</span></span>
-3. <span data-ttu-id="f3f2e-602">Vyberte typ sloupce ze seznamu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-602">Select a column type in the list.</span></span> <span data-ttu-id="f3f2e-603">Následující tabulka popisuje různé typy sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-603">The following table describes the various column types.</span></span>
-
-    <table>
-    <thead>
-    <tr>
-    <th><span data-ttu-id="f3f2e-604">Kód typu sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-604">Column type code</span></span></th>
-    <th><span data-ttu-id="f3f2e-605">Popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-605">Description</span></span></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td><span data-ttu-id="f3f2e-606">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-606">FD</span></span></td>
-    <td><span data-ttu-id="f3f2e-607">Zobrazte finanční data při použití sloupce <strong>Odkaz na finanční dimenze</strong> v definici řádku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-607">Display financial data when you use a <strong>Link to Financial Dimensions</strong> column in the row definition.</span></span> <span data-ttu-id="f3f2e-608">Vyberete-li typ sloupce <strong>FD</strong>, jsou v následujících řádcích automaticky přiřazena výchozí nastavení:</span><span class="sxs-lookup"><span data-stu-id="f3f2e-608">When you select the <strong>FD</strong> column type, default settings are automatically specified for the following rows:</span></span> <ul>
-    <li><span data-ttu-id="f3f2e-609"><strong>Kód knihy / Kategorie atributů:</strong> ACTUAL</span><span class="sxs-lookup"><span data-stu-id="f3f2e-609"><strong>Book Code/Attribute Category:</strong> ACTUAL</span></span></li>
-    <li><span data-ttu-id="f3f2e-610"><strong>Kód knihy / Kategorie atributů:</strong> ACTUAL</span><span class="sxs-lookup"><span data-stu-id="f3f2e-610"><strong>Book Code/Attribute Category:</strong> ACTUAL</span></span></li>
-    <li><span data-ttu-id="f3f2e-611"><strong>Fiskální rok:</strong> BASE</span><span class="sxs-lookup"><span data-stu-id="f3f2e-611"><strong>Fiscal Year:</strong> BASE</span></span></li>
-    <li><span data-ttu-id="f3f2e-612"><strong>Období:</strong> BASE</span><span class="sxs-lookup"><span data-stu-id="f3f2e-612"><strong>Period:</strong> BASE</span></span></li>
-    <li><span data-ttu-id="f3f2e-613"><strong>Pokrytá období:</strong> PERIODIC</span><span class="sxs-lookup"><span data-stu-id="f3f2e-613"><strong>Periods Covered:</strong> PERIODIC</span></span></li>
-    <li><span data-ttu-id="f3f2e-614"><strong>Šířka sloupce:</strong> 14</span><span class="sxs-lookup"><span data-stu-id="f3f2e-614"><strong>Column Width:</strong> 14</span></span></li>
-    </ul>
-<span data-ttu-id="f3f2e-615">Tato výchozí nastavení můžete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-615">You can change these default settings.</span></span></td>
-    </tr>
-    <tr>
-    <td><span data-ttu-id="f3f2e-616">VÝPOČET</span><span class="sxs-lookup"><span data-stu-id="f3f2e-616">CALC</span></span></td>
-    <td><span data-ttu-id="f3f2e-617">Zobrazí výsledek jednoduchého nebo komplexního výpočtu, který je určen v buňce <strong>Vzorec</strong>.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-617">Display the result of a simple or complex calculation that is specified in the <strong>Formula</strong> cell.</span></span> <span data-ttu-id="f3f2e-618">Další informace naleznete v tématu <a href="advanced-formatting-options-financial-reporting.md">Rozšířené možnosti formátování v návrháři sestav</a>.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-618">For more information, see <a href="advanced-formatting-options-financial-reporting.md">Advanced formatting options in financial reporting</a>.</span></span></td>
-    </tr>
-    <tr>
-    <td><span data-ttu-id="f3f2e-619">POPIS</span><span class="sxs-lookup"><span data-stu-id="f3f2e-619">DESC</span></span></td>
-    <td><span data-ttu-id="f3f2e-620">Zobrazí popis řádku z definice řádku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-620">Display the row description from the row definition.</span></span> <span data-ttu-id="f3f2e-621">Tento sloupec sice často bývá prvním sloupcem v sestavě, může však být na jakékoli pozici.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-621">Although the description column is often the first column on the report, it can be in any position.</span></span></td>
-    </tr>
-    <tr>
-    <td><span data-ttu-id="f3f2e-622">ŘÁDEK</span><span class="sxs-lookup"><span data-stu-id="f3f2e-622">ROW</span></span></td>
-    <td><span data-ttu-id="f3f2e-623">Zobrazí jednotlivé kódy řádků pro finanční řádky ze sloupce <strong>Kód řádku</strong> v definici řádku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-623">Display the individual row codes for financial rows from the <strong>Row Code</strong> column in the row definition.</span></span> <span data-ttu-id="f3f2e-624">Další informace naleznete v tématu <a href="row-definitions-financial-reporting.md">Definice řádku ve finančním výkaznictví</a>.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-624">For more information, see <a href="row-definitions-financial-reporting.md">Row definitions in financial reporting</a>.</span></span></td>
-    </tr>
-    <tr>
-    <td><span data-ttu-id="f3f2e-625">ACCT (kódy účtů)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-625">ACCT (Account codes)</span></span></td>
-    <td><span data-ttu-id="f3f2e-626">Zobrazí hodnoty segmentů nebo dimenzí finančních dat, které platí pro jednotlivé řádky.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-626">Display the financial data segment values or dimension values that apply to each row.</span></span> <span data-ttu-id="f3f2e-627">Pro sestavy podrobností o účtu a transakcích je vytištěn plně kvalifikovaný účet (například <strong>110140-070-0101</strong>).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-627">For account and transaction detail reports, the fully qualified account is printed (for example, <strong>110140-070-0101</strong>).</span></span> <span data-ttu-id="f3f2e-628">Pokud byly ve sloupci <strong>Odkaz na finanční dimenze</strong> v přidružené definici řádku zadány rozsahy, je rozsah uzavřen do hranatých závorek a je při zpracování považován za jedinou hodnotu (například <strong>[110140:110700]-070-[0101:0200]</strong>).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-628">If ranges have been specified in the <strong>Link to Financial Dimensions</strong> column in an associated row definition, the range is enclosed in square brackets and is treated as a single value (for example, <strong>[110140:110700]-070-[0101:0200]</strong>).</span></span> <span data-ttu-id="f3f2e-629">U finančních sestav a sestav na vysoké úrovni, které jsou kombinací několika účtů, je vytištěn odkaz na finanční data z definice řádku (například <strong>1100:1200</strong>).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-629">For financial reports and high-level reports that are a combination of several accounts, the financial data link from the row definition is printed (for example, <strong>1100:1200</strong>).</span></span></td>
-    </tr>
-    <tr>
-    <td><span data-ttu-id="f3f2e-630">VYPLNIT</span><span class="sxs-lookup"><span data-stu-id="f3f2e-630">FILL</span></span></td>
-    <td><span data-ttu-id="f3f2e-631">Vyplní buňku znakem, který uzavřete do jednoduchých uvozovek.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-631">Fill the cell with a character that you enclose in single quotation marks.</span></span> <span data-ttu-id="f3f2e-632">Pokud nezadáte žádný znak, bude prázdný sloupec prázdný.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-632">If you don't enter a character, the column is empty.</span></span> <span data-ttu-id="f3f2e-633">Chcete-li například vyplnit sloupec třemi tečkami (...), zadejte hodnotu <strong>FILL</strong> <strong>'.'</strong>.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-633">For example, to fill a column with an ellipsis (...), enter <strong>FILL</strong> <strong>'.'</strong>.</span></span></td>
-    </tr>
-    <tr>
-    <td><span data-ttu-id="f3f2e-634">STRANA</span><span class="sxs-lookup"><span data-stu-id="f3f2e-634">PAGE</span></span></td>
-    <td><span data-ttu-id="f3f2e-635">Vloží do sestav svislý konec stránky.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-635">Insert a vertical page break in the report.</span></span> <span data-ttu-id="f3f2e-636">Sloupce napravo od sloupce <strong>PAGE</strong> se zobrazí na jiné stránce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-636">The columns that are to the right of the <strong>PAGE</strong> column appear on a different page.</span></span></td>
-    </tr>
-    <tr>
-    <td><span data-ttu-id="f3f2e-637">ATTR</span><span class="sxs-lookup"><span data-stu-id="f3f2e-637">ATTR</span></span></td>
-    <td><span data-ttu-id="f3f2e-638">Pokud váš účetní systém podporuje atributy, zobrazí ve sloupci atribut účtu nebo transakce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-638">If your accounting system supports attributes, display an account or transaction attribute in the column.</span></span> <span data-ttu-id="f3f2e-639">Atribut, který se musí vztahovat na jeden úplný účet, vyextrahuje z finančních dat příslušné informace o účtu nebo transakci.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-639">An attribute, which must apply to a single full account, extracts underlying account or transaction information from the financial data.</span></span> <span data-ttu-id="f3f2e-640">Atributy na úrovni účtu zobrazí data z účtu a atributy na úrovni transakce zobrazí data z doby, kdy byla zaúčtována transakce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-640">Account-level attributes display data from the account, and transaction-level attributes display data that occurred at the time that the transaction was posted.</span></span> <span data-ttu-id="f3f2e-641">Pokud jako typ sloupce vyberete typ <strong>ATTR</strong>, pak v řádku podrobností <strong>Kód knihy / Kategorie atributů</strong> definice sloupce zadejte kategorii atributu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-641">If you select <strong>ATTR</strong> as the column type, specify the attribute category in the <strong>Book Code/Attribute Category</strong> detail row of the column definition.</span></span></td>
-    </tr>
-    </tbody>
-    </table>
-
-### <a name="financial-dimensions-column"></a><span data-ttu-id="f3f2e-642">Sloupec Finanční dimenze</span><span class="sxs-lookup"><span data-stu-id="f3f2e-642">Financial Dimensions column</span></span>
-
-<span data-ttu-id="f3f2e-643">Následující definic řádků **Definice sloupce** platí pro sloupce, které mají typ sloupce **FD** (částky z finančních dimenzí).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-643">The following **Column Definition** row definitions apply to columns that have a column type of **FD** (Amounts from financial dimensions).</span></span>
-
-#### <a name="book-codeattribute-category-cell"></a><span data-ttu-id="f3f2e-644">Buňka Kód knihy / Kategorie atributů</span><span class="sxs-lookup"><span data-stu-id="f3f2e-644">Book Code/Attribute Category cell</span></span>
-
-<span data-ttu-id="f3f2e-645">Buňka **Kód knihy / atribut kategorie** identifikuje kód knihy pro data ve sloupci **FD**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-645">The **Book Code/Attribute Category** cell identifies the book code for the data in the **FD** column.</span></span> <span data-ttu-id="f3f2e-646">Definice sloupce může obsahovat více skutečných, rozpočtových a statistických sloupců.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-646">A column definition can include multiple actual, budget, and statistical columns.</span></span> <span data-ttu-id="f3f2e-647">Definice sloupců také dokáže zobrazit různá období (například aktuální nebo od začátku roku) a různé částky.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-647">A column definition can also display different periods, such as current or year-to-date, and different amounts.</span></span> <span data-ttu-id="f3f2e-648">Seznam kódů knih odráží skutečné, rozpočtové a statistické (nefinanční) možnosti, které byly stanoveny ve vašich finančních datech.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-648">The list of book codes reflects the actual, budget, and statistical (non-financial) options that have been established in your financial data.</span></span>
-
-#### <a name="fiscal-year-cell"></a><span data-ttu-id="f3f2e-649">Buňka Fiskální rok</span><span class="sxs-lookup"><span data-stu-id="f3f2e-649">Fiscal Year cell</span></span>
-
-<span data-ttu-id="f3f2e-650">Buňka **Fiskální rok** identifikuje fiskální rok, který má sloupec zahrnovat.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-650">The **Fiscal Year** cell identifies the fiscal year that the column should include.</span></span> <span data-ttu-id="f3f2e-651">Tento rok se může vztahovat k základnímu roku, který je zadáno při generování sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-651">The year can be relative to the base year that is specified when the report is generated.</span></span> <span data-ttu-id="f3f2e-652">K dispozici jsou tyto možnosti.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-652">The following options are available.</span></span>
-
-| <span data-ttu-id="f3f2e-653">Možnost</span><span class="sxs-lookup"><span data-stu-id="f3f2e-653">Option</span></span>  | <span data-ttu-id="f3f2e-654">Popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-654">Description</span></span>                                                                                                                  |
-|---------|------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="f3f2e-655">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-655">BASE</span></span>    | <span data-ttu-id="f3f2e-656">Použije základní rok, který je zadán v době vytvoření sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-656">Use the base year that is specified at report time.</span></span>                                                                          |
-| <span data-ttu-id="f3f2e-657">BASE+\#</span><span class="sxs-lookup"><span data-stu-id="f3f2e-657">BASE+\#</span></span> | <span data-ttu-id="f3f2e-658">Použije rok, který následuje \# let po základním roku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-658">Use the year that is \# years after the base year.</span></span> <span data-ttu-id="f3f2e-659">Například pro použití třetího roku po základním roku zadejte hodnotu **BASE+3**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-659">For example, to use the third year after the base year, enter **BASE+3**.</span></span> |
-| <span data-ttu-id="f3f2e-660">BASE-\#</span><span class="sxs-lookup"><span data-stu-id="f3f2e-660">BASE-\#</span></span> | <span data-ttu-id="f3f2e-661">Použije rok, který uplynul \# let před základním rokem.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-661">Use the year that is \# years before the base year.</span></span> <span data-ttu-id="f3f2e-662">Chcete-li například použít předchozí rok, zadejte hodnotu **BASE-1**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-662">For example, to use the previous year, enter **BASE-1**.</span></span>                 |
-| \#      | <span data-ttu-id="f3f2e-663">Zadá aktuální fiskální rok.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-663">Enter the actual fiscal year.</span></span>                                                                                                |
-
-#### <a name="period-cell"></a><span data-ttu-id="f3f2e-664">Buňka Období</span><span class="sxs-lookup"><span data-stu-id="f3f2e-664">Period cell</span></span>
-
-<span data-ttu-id="f3f2e-665">Buňka **Období** identifikuje fiskální období, která má sloupec zahrnovat.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-665">The **Period** cell identifies the fiscal periods that the column should include.</span></span> <span data-ttu-id="f3f2e-666">Toto období se může vztahovat k základnímu období, které je zadáno při generování sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-666">The period can be relative to the base period that is specified when the report is generated.</span></span> <span data-ttu-id="f3f2e-667">Existují tyto možnosti.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-667">The following options are available.</span></span>
-
-| <span data-ttu-id="f3f2e-668">Parametr</span><span class="sxs-lookup"><span data-stu-id="f3f2e-668">Option</span></span>          | <span data-ttu-id="f3f2e-669">popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-669">Description</span></span> |
-|-----------------|-------------|
-| <span data-ttu-id="f3f2e-670">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-670">BASE</span></span>            | <span data-ttu-id="f3f2e-671">Použije základní období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-671">Use the base period.</span></span> |
-| <span data-ttu-id="f3f2e-672">BASE+\#</span><span class="sxs-lookup"><span data-stu-id="f3f2e-672">BASE+\#</span></span>         | <span data-ttu-id="f3f2e-673">Použije období, které následuje \# období po základním období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-673">Use the period that is \# periods after the base period.</span></span> <span data-ttu-id="f3f2e-674">Například pro použití třetího období po základním období zadejte hodnotu **BASE+3**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-674">For example, to use the third period after the base period, enter **BASE+3**.</span></span> |
-| <span data-ttu-id="f3f2e-675">BASE-\#</span><span class="sxs-lookup"><span data-stu-id="f3f2e-675">BASE-\#</span></span>         | <span data-ttu-id="f3f2e-676">Použije období, které uplynulo \# období před základním obdobím.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-676">Use the period that is \# periods before the base period.</span></span> <span data-ttu-id="f3f2e-677">Chcete-li například použít předchozí období, zadejte hodnotu **BASE-1**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-677">For example, to use the previous period, enter **BASE-1**.</span></span> |
-| <span data-ttu-id="f3f2e-678">BASE-\#:BASE</span><span class="sxs-lookup"><span data-stu-id="f3f2e-678">BASE-\#:BASE</span></span>    | <span data-ttu-id="f3f2e-679">Použije více období, od několika období před základním obdobím až po základní období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-679">Use multiple periods, from several periods before the base period through the base period.</span></span> <span data-ttu-id="f3f2e-680">Například pro použití tři předchozích období a základního období zadejte hodnotu **BASE-3:BASE**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-680">For example, to use the three previous periods and the base period, enter **BASE-3:BASE**.</span></span> |
-| <span data-ttu-id="f3f2e-681">BASE:BASE+\#</span><span class="sxs-lookup"><span data-stu-id="f3f2e-681">BASE:BASE+\#</span></span>    | <span data-ttu-id="f3f2e-682">Použije více období, od základního období až po několik období po základním období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-682">Use multiple periods, from the base period through several periods after the base period.</span></span> <span data-ttu-id="f3f2e-683">Například pro použití základního období a dvou následujících období zadejte hodnotu **BASE:BASE+2**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-683">For example, to use the base period and the following two periods, enter **BASE:BASE+2**.</span></span> |
-| <span data-ttu-id="f3f2e-684">BASE-\#:BASE+\#</span><span class="sxs-lookup"><span data-stu-id="f3f2e-684">BASE-\#:BASE+\#</span></span> | <span data-ttu-id="f3f2e-685">Použije více období, od několika období před základním obdobím až po několik období po základním období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-685">Use multiple periods, from several periods before the base period to several periods after the base period.</span></span> <span data-ttu-id="f3f2e-686">Například pro použití tři předchozích období, základního období a dvou následujících období zadejte hodnotu **BASE-3:BASE+2**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-686">For example, to use the three previous periods, the base period, and the following two periods, enter **BASE-3:BASE+2**.</span></span> |
-| <span data-ttu-id="f3f2e-687">1:ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-687">1:BASE</span></span>          | <span data-ttu-id="f3f2e-688">Použije více období, od prvního období až po základní období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-688">Use multiple periods, from the first period through the base period.</span></span> |
-| \#              | <span data-ttu-id="f3f2e-689">Vždy použije konkrétní číslo období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-689">Always use a specific period number.</span></span> <span data-ttu-id="f3f2e-690">Nedoporučujeme používat tuto možnost, protože snižuje flexibilitu definice sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-690">We don't recommend that you use this option, because it reduces the flexibility of the column definition.</span></span> |
-| <span data-ttu-id="f3f2e-691">\#                                      : \#</span><span class="sxs-lookup"><span data-stu-id="f3f2e-691">\#:\#</span></span>           | <span data-ttu-id="f3f2e-692">Vždy použije konkrétní rozsah období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-692">Always use a specific range of periods.</span></span> <span data-ttu-id="f3f2e-693">Nedoporučujeme používat tuto možnost, protože snižuje flexibilitu definice sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-693">We don't recommend that you use this option, because it reduces the flexibility of the column definition.</span></span> |
-
-<span data-ttu-id="f3f2e-694">Při zadávání období můžete překročit hranice fiskálního roku a v rozsahu období můžete použít různé roky.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-694">You can go beyond fiscal year boundaries in any of the period specifications, and you can mix years in a range of periods.</span></span> <span data-ttu-id="f3f2e-695">Například zadejte jako období hodnotu **BASE-5** (představující posledních šest období) a spusťte sestavu, která má základní období 2.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-695">For example, you specify the periods as **BASE-5** (to represent the past six periods) and run a report that has a base period of 2.</span></span> <span data-ttu-id="f3f2e-696">V takovém případě tato sestava obsahuje data pro první dvě období zadaného fiskálního roku a poslední čtyři období předchozího fiskálního roku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-696">In this case, the report shows data for the first two periods of the specified fiscal year and the last four periods of the previous fiscal year.</span></span>
-
-### <a name="specify-the-periods-for-an-fd-column"></a><span data-ttu-id="f3f2e-697">Zadání období pro sloupec FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-697">Specify the periods for an FD column</span></span>
-
-1. <span data-ttu-id="f3f2e-698">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-698">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-699">Ve sloupci **FD** klikněte dvakrát na buňku v řádku **Období** a potom vyberte možnost v seznamu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-699">In an **FD** column, double-click the cell in the **Period** row, and then select an option in the list.</span></span>
-3. <span data-ttu-id="f3f2e-700">Na řádku vzorce nad navigačním podoknem nebo v buňce **Období** zadejte vzorec.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-700">In the formula bar above the navigation pane, or in the **Period** cell, complete the formula.</span></span> <span data-ttu-id="f3f2e-701">Nahraďte jakýkoli znak křížku (\#) odpovídající hodnotou.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-701">Replace any number sign (\#) with the appropriate value.</span></span>
-
-#### <a name="periods-covered-cell"></a><span data-ttu-id="f3f2e-702">Buňka Pokrytá období</span><span class="sxs-lookup"><span data-stu-id="f3f2e-702">Periods Covered cell</span></span>
-
-<span data-ttu-id="f3f2e-703">Buňka **Pokrytá období** identifikuje částku, kterou má sloupec zobrazit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-703">The **Periods Covered** cell identifies the amount that the column should display.</span></span> <span data-ttu-id="f3f2e-704">Tato částka je relativní vůči hodnotě v buňkách **Fiskální rok** a **Období** pro sloupec.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-704">This amount is relative to the value in the **Fiscal Year** and **Period** cells for the column.</span></span> <span data-ttu-id="f3f2e-705">K dispozici jsou tyto možnosti.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-705">The following options are available.</span></span>
-
-| <span data-ttu-id="f3f2e-706">Možnost</span><span class="sxs-lookup"><span data-stu-id="f3f2e-706">Option</span></span>      | <span data-ttu-id="f3f2e-707">Popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-707">Description</span></span>                                                                 |
-|-------------|-----------------------------------------------------------------------------|
-| <span data-ttu-id="f3f2e-708">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-708">PERIODIC</span></span>    | <span data-ttu-id="f3f2e-709">Zobrazí součet pohybů za aktuální období nebo rozsah období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-709">Display the sum of the activity for the current period or range of periods.</span></span> |
-| <span data-ttu-id="f3f2e-710">PERIODICKÝ/BB</span><span class="sxs-lookup"><span data-stu-id="f3f2e-710">PERIODIC/BB</span></span> | <span data-ttu-id="f3f2e-711">Zobrazí počáteční zůstatek za aktuální období nebo rozsah období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-711">Display the beginning balance for the current period or range of periods.</span></span>   |
-| <span data-ttu-id="f3f2e-712">Od začátku roku</span><span class="sxs-lookup"><span data-stu-id="f3f2e-712">YTD</span></span>         | <span data-ttu-id="f3f2e-713">Zobrazí součet pohybů od začátku roku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-713">Display the sum of the year-to-date activity.</span></span>                               |
-| <span data-ttu-id="f3f2e-714">OD POČÁTKU ROKU/BB</span><span class="sxs-lookup"><span data-stu-id="f3f2e-714">YTD/BB</span></span>      | <span data-ttu-id="f3f2e-715">Zobrazí počáteční zůstatek za tento rok.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-715">Display the beginning balance for the year.</span></span>                                 |
-
-### <a name="specify-the-periods-that-are-covered-for-an-fd-column"></a><span data-ttu-id="f3f2e-716">Zadání pokrytých období pro sloupec FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-716">Specify the periods that are covered for an FD column</span></span>
-
-1. <span data-ttu-id="f3f2e-717">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-717">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-718">Ve sloupci **FD** klikněte dvakrát na buňku v řádku **Pokrytá období** a potom vyberte možnost v seznamu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-718">In an **FD** column, double-click the cell in the **Periods Covered** row, and select an option in the list.</span></span>
-
-### <a name="attribute-filter-in-a-column-definition"></a><span data-ttu-id="f3f2e-719">Filtr atributů v definici sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-719">Attribute filter in a column definition</span></span>
-
-<span data-ttu-id="f3f2e-720">Atributy jsou hodnoty finančních dat, které podrobněji definují účet nebo transakci.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-720">Attributes are financial data values that further define an account or transaction.</span></span> <span data-ttu-id="f3f2e-721">Atributy účtu zahrnují položky **Majetek**, **Závazky**, **Výnosy** a **Výdaje**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-721">The account attributes include **Asset**, **Liability**, **Revenue**, and **Expense**.</span></span> <span data-ttu-id="f3f2e-722">Atributy transakce zahrnují položky **Popis transakce** a **Datum použití transakce**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-722">The transaction attributes include **Transaction Description** and **Transaction Apply Date**.</span></span> <span data-ttu-id="f3f2e-723">Podpora atributů se v systémech Microsoft Microsoft Dynamics ERP může lišit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-723">Attribute support might differ between Microsoft Dynamics ERP systems.</span></span> <span data-ttu-id="f3f2e-724">Buňka **Filtr atributů** omezuje data ve sloupcích **FD** na konkrétní hodnoty nebo rozsahy pro kategorie atributů.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-724">The **Attribute Filter** cell restricts the data in **FD** columns to specific values or ranges for attribute categories.</span></span> <span data-ttu-id="f3f2e-725">Ačkoli lze tuto funkci použít spolu se sloupcem **ATTR**, sloupec **ATTR** není požadován.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-725">Although this feature can be used together with an **ATTR** column, the **ATTR** column isn't required.</span></span> <span data-ttu-id="f3f2e-726">Ve sloupci **FD** existuje limit účtů nebo transakcí, které bude sestava obsahovat z filtru atributů.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-726">In an **FD** column, there is a limit on the accounts or transactions that the report will include from the attribute filter.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="f3f2e-727">Pokud chcete zjistit, jaké atributy váš systém ERP podporuje, prostudujte příručku pro integraci svého systému.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-727">To see which attributes your ERP system supports, see the integration guide for your system.</span></span>
-
-#### <a name="apply-an-attribute-filter-for-an-fd-column-on-a-report"></a><span data-ttu-id="f3f2e-728">Použití filtru atributů u sloupce FD v sestavě</span><span class="sxs-lookup"><span data-stu-id="f3f2e-728">Apply an attribute filter for an FD column on a report</span></span>
-
-1. <span data-ttu-id="f3f2e-729">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-729">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-730">Dvakrát klikněte na buňku **Filtr atributů** u některého sloupce **FD**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-730">Double-click the **Attribute Filter** cell for an **FD** column.</span></span>
-3. <span data-ttu-id="f3f2e-731">V dialogovém okně **Filtr atributů** dvakrát klikněte na buňku ve sloupci **Atribut** a vyberte typ filtru.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-731">In the **Attribute Filter** dialog box, double-click a cell in the **Attribute** column, and then select the filter type.</span></span>
-4. <span data-ttu-id="f3f2e-732">Chcete-li výsledky dále omezit, zadejte rozsah do sloupců **Od** a **Do**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-732">To further limit the results, enter a range in the **From** and **To** columns.</span></span> <span data-ttu-id="f3f2e-733">Buňka **Od** musí obsahovat hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-733">The **From** cell must contain a value.</span></span>
-5. <span data-ttu-id="f3f2e-734">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-734">Click **OK**.</span></span>
-
-#### <a name="example-of-an-attribute-filter"></a><span data-ttu-id="f3f2e-735">Příklad filtru atributů</span><span class="sxs-lookup"><span data-stu-id="f3f2e-735">Example of an attribute filter</span></span>
-
-<span data-ttu-id="f3f2e-736">Následující příklad ukazuje část popisu sloupce, který má atribut účtu v řádku **Kód knihy / atribut kategorie**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-736">The following example shows part of a column description that has an account attribute in the **Book Code/Attribute Category** row.</span></span> <span data-ttu-id="f3f2e-737">Filtr atributů pro tento sloupec určuje rozsah hodnot, které mají být zahrnuty do sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-737">The attribute filter for this column specifies the range of values to include in the report.</span></span>
-
-|                              | <span data-ttu-id="f3f2e-738">O</span><span class="sxs-lookup"><span data-stu-id="f3f2e-738">A</span></span>    | <span data-ttu-id="f3f2e-739">B</span><span class="sxs-lookup"><span data-stu-id="f3f2e-739">B</span></span>                   |
-|------------------------------|------|---------------------|
-| <span data-ttu-id="f3f2e-740">Typ sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-740">Column Type</span></span>                  | <span data-ttu-id="f3f2e-741">POPIS</span><span class="sxs-lookup"><span data-stu-id="f3f2e-741">DESC</span></span> | <span data-ttu-id="f3f2e-742">FD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-742">FD</span></span>                  |
-| <span data-ttu-id="f3f2e-743">Kód knihy / Kategorie atributů</span><span class="sxs-lookup"><span data-stu-id="f3f2e-743">Book Code/Attribute Category</span></span> |      | <span data-ttu-id="f3f2e-744">SKUTEČNÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-744">ACTUAL</span></span>              |
-| <span data-ttu-id="f3f2e-745">Fiskální rok</span><span class="sxs-lookup"><span data-stu-id="f3f2e-745">Fiscal Year</span></span>                  |      | <span data-ttu-id="f3f2e-746">ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-746">BASE</span></span>                |
-| <span data-ttu-id="f3f2e-747">Období</span><span class="sxs-lookup"><span data-stu-id="f3f2e-747">Period</span></span>                       |      | <span data-ttu-id="f3f2e-748">1:ZÁKLAD</span><span class="sxs-lookup"><span data-stu-id="f3f2e-748">1:BASE</span></span>              |
-| <span data-ttu-id="f3f2e-749">Pokrytá období</span><span class="sxs-lookup"><span data-stu-id="f3f2e-749">Periods Covered</span></span>              |      | <span data-ttu-id="f3f2e-750">PERIODICKÝ</span><span class="sxs-lookup"><span data-stu-id="f3f2e-750">PERIODIC</span></span>            |
-| <span data-ttu-id="f3f2e-751">...</span><span class="sxs-lookup"><span data-stu-id="f3f2e-751">...</span></span>                          |      |                     |
-| <span data-ttu-id="f3f2e-752">Šířka sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-752">Column Width</span></span>                 | <span data-ttu-id="f3f2e-753">30</span><span class="sxs-lookup"><span data-stu-id="f3f2e-753">30</span></span>   |                     |
-| <span data-ttu-id="f3f2e-754">...</span><span class="sxs-lookup"><span data-stu-id="f3f2e-754">...</span></span>                          |      |                     |
-| <span data-ttu-id="f3f2e-755">Filtr atributů</span><span class="sxs-lookup"><span data-stu-id="f3f2e-755">Attribute Filter</span></span>             |      | <span data-ttu-id="f3f2e-756">Odkaz=\[01:10\]</span><span class="sxs-lookup"><span data-stu-id="f3f2e-756">Reference=\[01:10\]</span></span> |
-
-### <a name="dimension-filter-in-a-column-definition"></a><span data-ttu-id="f3f2e-757">Filtr dimenzí v definici sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-757">Dimension filter in a column definition</span></span>
-
-<span data-ttu-id="f3f2e-758">Filtr dimenzí slouží k omezení sloupce **FD** na konkrétní hodnoty dimenzí.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-758">A dimension filter is used to restrict the **FD** column to specific dimension values.</span></span> <span data-ttu-id="f3f2e-759">Filtr může obsahovat jednu dimenzi, rozsah dimenzí nebo skupinu dimenzí.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-759">The filter can include a single dimension, a range of dimensions, or a group of dimensions.</span></span> <span data-ttu-id="f3f2e-760">Filtr může také obsahovat sady hodnot dimenzí.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-760">The filter can also include dimension value sets.</span></span> <span data-ttu-id="f3f2e-761">Vzhledem k tomu, že se mohou hodnoty dimenzí lišit, nemusí ..\\financial-dimensions\\dimension-based system odpovídat přesné délce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-761">Because dimension values can vary, a ..\\financial-dimensions\\dimension-based system doesn't have to correspond to an exact length.</span></span> <span data-ttu-id="f3f2e-762">Filtr se použije bez ohledu na to, zda sestava obsahuje strom výkaznictví, či nikoli.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-762">The filter is applied, regardless of whether the report includes a reporting tree.</span></span> <span data-ttu-id="f3f2e-763">Můžete použít zástupné znaky (\* nebo ?) na jakékoli pozici.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-763">You can use a wildcard character (\* or ?) in any position.</span></span> <span data-ttu-id="f3f2e-764">Když zadáte více účtů, vložte mezi účty čárku, jak je uvedeno v následujícím příkladu: +Částka=\[1200\], +Částka=\[1100\], Oddělení=\[01?\] Abyste získali všechna oddělení pro konkrétní účet,můžete vyloučit dimenzi oddělení z filtru dimenzí.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-764">When you specify multiple accounts, put a comma between accounts, as in the following example: +Account=\[1200\], +Account=\[1100\], Department=\[01?\] To receive all departments for a specific account, you can exclude the Department dimension from the dimension filter.</span></span> <span data-ttu-id="f3f2e-765">Například oba následující filtry dimenzí jsou zpracovány stejným způsobem:</span><span class="sxs-lookup"><span data-stu-id="f3f2e-765">For example, both of the following dimension filters are handled in the same way:</span></span>
-
-- <span data-ttu-id="f3f2e-766">+Účet=\[1100\],Oddělení</span><span class="sxs-lookup"><span data-stu-id="f3f2e-766">+Account=\[1100\],Department</span></span>
-- <span data-ttu-id="f3f2e-767">+Účet=\[1100\]</span><span class="sxs-lookup"><span data-stu-id="f3f2e-767">+Account=\[1100\]</span></span>
-
-<span data-ttu-id="f3f2e-768">Můžete také použít jakoukoli kombinaci alfanumerických znaků pro přesnou shodu a můžete definovat částečné dimenze.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-768">You can also use any combination of alphanumeric characters for exact matching, and you can define partial dimensions.</span></span> <span data-ttu-id="f3f2e-769">Například hodnota **Umístění = \[10\*\]** zahrnuje všechny hodnoty dimenze umístění začínající na 10.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-769">For example, **Location = \[10\*\]** includes all location dimension values that begin with 10.</span></span>
-
-#### <a name="apply-a-dimension-filter-for-a-column-on-a-report"></a><span data-ttu-id="f3f2e-770">Použití filtru dimenzí pro definici sloupce v sestavě</span><span class="sxs-lookup"><span data-stu-id="f3f2e-770">Apply a dimension filter for a column on a report</span></span>
-
-1. <span data-ttu-id="f3f2e-771">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-771">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-772">Klikněte dvakrát na buňku **Filtr dimenzí** pro sloupec **FD**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-772">Double-click the **Dimension Filter** cell for an **FD** column.</span></span>
-3. <span data-ttu-id="f3f2e-773">V dialogovém okně **Dimenze** zadejte filtry, které chcete použít.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-773">In the **Dimensions** dialog box, enter the filters to apply.</span></span>
-4. <span data-ttu-id="f3f2e-774">Klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-774">Click **OK**.</span></span>
-
-### <a name="format-a-multiple-currency-report-in-a-column-definition"></a><span data-ttu-id="f3f2e-775">Formátování sestavy s více měnami v definici sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-775">Format a multiple-currency report in a column definition</span></span>
-
-<span data-ttu-id="f3f2e-776">Sestava více měn může zobrazit částky v zúčtovací měně hlavní knihy, v měně vykazování hlavní knihy, původní měně transakce nebo v převedené měně vykazování.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-776">A multiple-currency report can display amounts in the ledger's accounting currency, the ledger's reporting, the originating transaction currency, or the translated reporting currency.</span></span> <span data-ttu-id="f3f2e-777">Zúčtovací měna společnosti je definována v nastavení hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-777">A company's accounting currency is defined in the Ledgers setup.</span></span> <span data-ttu-id="f3f2e-778">Nepleťte si toto nastavení s místním nastavením operačního systému, kde se konfigurují symboly výchozí měny pro sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-778">Don't confuse this setting with the operating system's regional options setting, where you can configure the default currency symbols that are used on reports.</span></span> <span data-ttu-id="f3f2e-779">Definice sloupce obsahuje následující dostupné buňky související s měnou:</span><span class="sxs-lookup"><span data-stu-id="f3f2e-779">The following currency-related cells are available in the column definition:</span></span>
-
-- <span data-ttu-id="f3f2e-780">**Zobrazení měny** – určuje typ měny (účetnictví, vykazování, transakce nebo převedené výkaznictví), ve které se transakce zobrazí.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-780">**Currency Display** – Specify the type of currency (accounting, reporting, transaction, or translated reporting) that the transactions are displayed in.</span></span> <span data-ttu-id="f3f2e-781">Funkce převodu na měnu vykazování se někdy označuje jako převod měny.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-781">Translated to a reporting currency functionality is sometimes referred to as currency translation.</span></span> <span data-ttu-id="f3f2e-782">Převod měn je schopnost uvádět částky hlavní knihy v sestavách v měně, která nemusí být funkční měnou nebo měno vykazování společnosti, ani měnou, ve které byla zadána transakce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-782">Currency translation is the ability to report general ledger amounts in a currency that might not be the functional or reporting currency of the company or the currency that the transaction was entered in.</span></span>
-- <span data-ttu-id="f3f2e-783">**Filtr měny** – definuje filtr měny.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-783">**Currency Filter** – Specify a currency filter.</span></span> <span data-ttu-id="f3f2e-784">V sestavě jsou zobrazeny pouze transakce, které byly zadány ve vybrané měně.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-784">Only transactions that are entered in the selected currency are displayed on the report.</span></span>
-
-> 
-<span data-ttu-id="f3f2e-785">Chcete-li určit zúčtovací měnu společnosti, postupujte takto.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-785">To determine a company's accounting currency, follow these steps.</span></span>
-
-1. <span data-ttu-id="f3f2e-786">V Návrháři sestav klikněte v nabídce **Společnost** na příkaz **Společnosti**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-786">In Report Designer, on the **Company** menu, click **Companies**.</span></span>
-2. <span data-ttu-id="f3f2e-787">V dialogovém okně **Společnosti** vyberte společnost a klikněte na tlačítko **Zobrazení**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-787">In the **Companies** dialog box, select a company, and then click **View**.</span></span>
-3. <span data-ttu-id="f3f2e-788">V dialogovém okně **Zobrazit společnost** v části **Možnosti místního nastavení** můžete zobrazit měnu, která je definovaná pro vybranou společnost.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-788">In the **View Company** dialog box, under **Regional options**, you can view the currency that is defined for the selected company.</span></span>
-
-#### <a name="specify-the-currency-on-a-multiple-currency-report"></a><span data-ttu-id="f3f2e-789">Zadání měny v sestavě s více měnami</span><span class="sxs-lookup"><span data-stu-id="f3f2e-789">Specify the currency on a multiple-currency report</span></span>
-
-1. <span data-ttu-id="f3f2e-790">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-790">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-791">Klikněte dvakrát na buňku **Zobrazení měny** v odpovídajícím sloupci **FD** a poté vyberte možnost zobrazení informací o měně: **Zúčtovací měna pro hlavní knihu**, **Vykazování hlavní knihy**, měnu transakce nebo vyberte možnost převodu na jinou měnu vykazování.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-791">Double-click the **Currency Display** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Ledger accounting currency**, **Ledger reporting**, transaction currency, or select to translate to a different reporting currency.</span></span>
-3. <span data-ttu-id="f3f2e-792">Klikněte dvakrát na buňku **Filtr měny** v odpovídajícím sloupci **FD** a poté vyberte odpovídající kód měny v seznamu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-792">Double-click the **Currency Filter** cell in the appropriate **FD** column, and then select the appropriate currency code in the list.</span></span> <span data-ttu-id="f3f2e-793">V sestavě jsou zobrazeny pouze transakce, které byly zadány v této měně.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-793">Only transactions that are entered in this currency are displayed on the report.</span></span>
-
-
-### <a name="example-for-currency-display-and-currency-filter-cells"></a><span data-ttu-id="f3f2e-794">Příklad pro buňky Zobrazení měny a Filtr měny</span><span class="sxs-lookup"><span data-stu-id="f3f2e-794">Example for Currency Display and Currency Filter cells</span></span>
-
-<span data-ttu-id="f3f2e-795">Petra ve své definici sloupce vybrala následující měny:</span><span class="sxs-lookup"><span data-stu-id="f3f2e-795">Phyllis has made the following currency selections in her column definition:</span></span>
-
-- <span data-ttu-id="f3f2e-796">**Filtr měny:** Jen</span><span class="sxs-lookup"><span data-stu-id="f3f2e-796">**Currency Filter:** Yen</span></span>
-- <span data-ttu-id="f3f2e-797">**Zobrazení měny:** Zúčtovací měna z hlavní knihy (USD)</span><span class="sxs-lookup"><span data-stu-id="f3f2e-797">**Currency Display:** Accounting currency from Ledger (U.S. dollars)</span></span>
-
-<span data-ttu-id="f3f2e-798">Vzhledem k filtru měny, který Petra vybrala, se do sestavy zahrnou pouze transakce, které byly zadány v japonských jenech (JPY).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-798">Because of the currency filter that Phyllis selected, the report includes only transactions that were entered in Japanese yen (JPY).</span></span> <span data-ttu-id="f3f2e-799">Vzhledem k zobrazení měny, které vybrala, se v sestavě zobrazí tyto transakce v zúčtovací měně (americké dolary – USD).</span><span class="sxs-lookup"><span data-stu-id="f3f2e-799">Because of the currency display that she selected, the report displays those transactions in the accounting currency, U.S. dollars (USD).</span></span>
-
-#### <a name="currency-filter-and-currency-display-combinations"></a><span data-ttu-id="f3f2e-800">Kombinace filtru měny a zobrazení měny</span><span class="sxs-lookup"><span data-stu-id="f3f2e-800">Currency Filter and Currency Display combinations</span></span>
-
-<span data-ttu-id="f3f2e-801">Následující tabulka obsahuje výsledky sestavy, které mohou nastat pro různé kombinace možností v buňkách **Zobrazení měny** a **Filtr měny** z důvodu voleb, které Pavla učinila.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-801">The following table shows the report results that can occur for various combinations of the options in **Currency Display** and **Currency Filter** cells because of the selections that Phyllis made.</span></span> <span data-ttu-id="f3f2e-802">Funkční měna je USD.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-802">The functional currency is USD.</span></span>
-
-
-| <span data-ttu-id="f3f2e-803">Buňka Zobrazení měny</span><span class="sxs-lookup"><span data-stu-id="f3f2e-803">Currency Display cell</span></span>                        | <span data-ttu-id="f3f2e-804">Buňka Filtr měny</span><span class="sxs-lookup"><span data-stu-id="f3f2e-804">Currency Filter cell</span></span> | <span data-ttu-id="f3f2e-805">Výsledek sestavy</span><span class="sxs-lookup"><span data-stu-id="f3f2e-805">Report result</span></span> |
-|----------------------------------------------|----------------------|---------------|
-| <span data-ttu-id="f3f2e-806">Měna transakce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-806">Transaction currency</span></span>                 | <span data-ttu-id="f3f2e-807">**JEN**</span><span class="sxs-lookup"><span data-stu-id="f3f2e-807">**YEN**</span></span>              | <span data-ttu-id="f3f2e-808">**6 000 Y** – výsledek ukazuje pouze transakce, které byly zadány v měně JPY.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-808">**Y6,000** – The result shows only transactions that were entered in JPY.</span></span> |
-| <span data-ttu-id="f3f2e-809">Zúčtovací měna z hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="f3f2e-809">Accounting currency from Ledger</span></span> | <span data-ttu-id="f3f2e-810">**JEN**</span><span class="sxs-lookup"><span data-stu-id="f3f2e-810">**YEN**</span></span>              |<span data-ttu-id="f3f2e-811">**60 $** – výsledek zobrazí pouze transakce, které byly zadány v měně JPY, a tyto transakce zobrazí v měně USD.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-811">**$60** – The result shows only transactions that were entered in JPY and displays those transactions in USD.</span></span><blockquote>[!NOTE] <span data-ttu-id="f3f2e-812">Kurz převodu je přibližně 100 JPY za jeden USD.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-812">The conversion rate is approximately 100 JPY per USD.</span></span></blockquote> |
-| <span data-ttu-id="f3f2e-813">Zúčtovací měna z hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="f3f2e-813">Accounting currency from Ledger</span></span> | <span data-ttu-id="f3f2e-814">Prázdné</span><span class="sxs-lookup"><span data-stu-id="f3f2e-814">Empty</span></span>                | <span data-ttu-id="f3f2e-815">**2 310 USD** – Výsledek zobrazí všechna data v zúčtovací měně, která je určena v hlavní knize.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-815">**$2,310** – The result shows all data in the accounting currency that is specified in the Ledger.</span></span><blockquote>[!NOTE] <span data-ttu-id="f3f2e-816">Tato částka je součtem všech transakcí v zúčtovací měně.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-816">This amount is the sum of all transactions in accounting currency.</span></span></blockquote> |
-| <span data-ttu-id="f3f2e-817">Měna transakce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-817">Transaction currency</span></span>                 | <span data-ttu-id="f3f2e-818">Prázdné</span><span class="sxs-lookup"><span data-stu-id="f3f2e-818">Empty</span></span>                | <span data-ttu-id="f3f2e-819">**2 250 $** – výsledek obsahuje všechny částky v měně, ve které byla provedena transakce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-819">**$2,250** – The result shows all amounts in the currency that the transaction was performed in.</span></span> <span data-ttu-id="f3f2e-820">To znamená, že součet skládá dohromady částky z různých měn.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-820">This means the total is adding together amounts from different currencies.</span></span> |
-
-### <a name="calculation-column-in-a-column-definition"></a><span data-ttu-id="f3f2e-821">Sloupec Výpočet v definici sloupců</span><span class="sxs-lookup"><span data-stu-id="f3f2e-821">Calculation column in a column definition</span></span>
-
-<span data-ttu-id="f3f2e-822">Typ sloupce **CALC** v definici sloupce podporuje složité výpočty v buňce **Vzorec** a může obsahovat operátory **+**, **-**, **\*** a **/**, a také výrazy **IF/THEN/ELSE**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-822">A column type of **CALC** in a column definition supports complex calculations in the **Formula** cell, and can include the **+**, **-**, **\***, and **/** operators, and also **IF/THEN/ELSE** statements.</span></span> <span data-ttu-id="f3f2e-823">Sloupec výpočtu může také odkazovat na libovolný sloupec, dokonce i následující sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-823">A calculation column can also refer to any other column, even subsequent columns.</span></span> <span data-ttu-id="f3f2e-824">Kromě toho výpočet sloupce můžete zahrnout také fiskální rok a období k podpoře záhlaví sloupce.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-824">Additionally, a calculation column can also include the fiscal year and period to support headers for the column.</span></span> <span data-ttu-id="f3f2e-825">Vzorec výpočtu může mít délku až 1 024 znaků.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-825">The calculation formula can be up to 1,024 characters long.</span></span> <span data-ttu-id="f3f2e-826">Pokud chcete výsledek výpočtu vyjádřit procentuální hodnotou, použijte formát přepisu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-826">To express the calculation result as a percentage, use a special format override.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="f3f2e-827">Ve výsledcích výpočetních vzorců nejsou zahrnuty hodnoty v netisknutelných rozsazích sloupců.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-827">The results of calculation formulas don't include the values in non-printing column ranges.</span></span> <span data-ttu-id="f3f2e-828">Například hodnota **A:D** vytiskne hodnotu **0** (nula), zatímco hodnota **A+B+C** pro netisknuté hodnoty vypočítá hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-828">For example, **A:D** prints **0** (zero), whereas **A+B+C** for non-printing values calculates the value.</span></span>
-
-#### <a name="operators-in-calculation-columns"></a><span data-ttu-id="f3f2e-829">Operátory ve výpočetních sloupcích</span><span class="sxs-lookup"><span data-stu-id="f3f2e-829">Operators in calculation columns</span></span>
-
-<span data-ttu-id="f3f2e-830">Chcete-li sloupce sčítat, odečítat, násobit nebo dělit, zadejte písmena sloupců v pořadí výpočtu a pak jednotlivá písmena sloupců oddělte příslušným operátorem.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-830">To add, subtract, multiply, or divide columns, enter the column letters in the order of computation, and then use the appropriate operator to separate each column letter.</span></span> <span data-ttu-id="f3f2e-831">Následující tabulka vysvětluje operátory, které lze použít ve sloupci výpočtu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-831">The following table explains the operators that you can use in a calculation column.</span></span>
-
-| <span data-ttu-id="f3f2e-832">Operátor</span><span class="sxs-lookup"><span data-stu-id="f3f2e-832">Operator</span></span> | <span data-ttu-id="f3f2e-833">Příklad výpočtu</span><span class="sxs-lookup"><span data-stu-id="f3f2e-833">Example calculation</span></span> | <span data-ttu-id="f3f2e-834">popis</span><span class="sxs-lookup"><span data-stu-id="f3f2e-834">Description</span></span> |
-|----------|---------------------|-------------|
-| +        | <span data-ttu-id="f3f2e-835">A+C</span><span class="sxs-lookup"><span data-stu-id="f3f2e-835">A+C</span></span>                 | <span data-ttu-id="f3f2e-836">Přičte částku ve sloupci A k částce ve sloupci C.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-836">Add the amount in column A to the amount in column C.</span></span> |
-| <span data-ttu-id="f3f2e-837">:</span><span class="sxs-lookup"><span data-stu-id="f3f2e-837">:</span></span>        | <span data-ttu-id="f3f2e-838">A:C A:C-D</span><span class="sxs-lookup"><span data-stu-id="f3f2e-838">A:C A:C-D</span></span>           | <span data-ttu-id="f3f2e-839">Sečte rozsah po sobě jdoucích sloupců.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-839">Add a range of consecutive columns.</span></span> <span data-ttu-id="f3f2e-840">Například vzorec **A:C** sečte součty sloupců od A do C a vzorec **A:C-D** sečte součty sloupců od A do C a potom odečte částku ve sloupci D.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-840">For example, the formula **A:C** adds the sums of columns A through C, and the formula **A:C-D** adds the sums of columns A through C, and then subtracts the amount in column D.</span></span> |
-| -        | <span data-ttu-id="f3f2e-841">A-C</span><span class="sxs-lookup"><span data-stu-id="f3f2e-841">A-C</span></span>                 | <span data-ttu-id="f3f2e-842">Odečte částku ve sloupci A od částky ve sloupci C.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-842">Subtract the amount in column A from the amount in column C.</span></span><blockquote>[!NOTE] <span data-ttu-id="f3f2e-843">Pomocí znaménka minus (-) lze také převrátit znaménka ve sloupci.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-843">You can also use the minus sign (-) to reverse the signs in a column.</span></span> <span data-ttu-id="f3f2e-844">Například můžete použít vzorec <strong>-A+B</strong> k přičtení obrácené hodnoty částky ve sloupci A k částce ve sloupci B.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-844">For example, use <strong>-A+B</strong> to add the reverse of the amount in column A to the amount in column B.</span></span></blockquote> |
-| \*       | <span data-ttu-id="f3f2e-845">A\*C</span><span class="sxs-lookup"><span data-stu-id="f3f2e-845">A\*C</span></span>                | <span data-ttu-id="f3f2e-846">Vynásobí částku ve sloupci A částkou ve sloupci C.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-846">Multiply the amount in column A by the amount in column C.</span></span> |
-| /        | <span data-ttu-id="f3f2e-847">A/C</span><span class="sxs-lookup"><span data-stu-id="f3f2e-847">A/C</span></span>                 | <span data-ttu-id="f3f2e-848">Vydělí částku ve sloupci A částkou ve sloupci C.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-848">Divide the amount in column A by the amount in column C.</span></span> |
-
-#### <a name="use-a-calculation-formula-in-a-column-definition"></a><span data-ttu-id="f3f2e-849">Použije vzorec výpočtu v definici sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-849">Use a calculation formula in a column definition</span></span>
-
-1. <span data-ttu-id="f3f2e-850">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-850">In Report Designer, open the column definition to modify.</span></span>
-2. <span data-ttu-id="f3f2e-851">V příslušném sloupci **CALC** zadejte vzorec do buňky **Vzorec**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-851">In the appropriate **CALC** column, enter a formula in the **Formula** cell.</span></span>
-
-#### <a name="complex-calculations"></a><span data-ttu-id="f3f2e-852">Složité výpočty</span><span class="sxs-lookup"><span data-stu-id="f3f2e-852">Complex calculations</span></span>
-
-<span data-ttu-id="f3f2e-853">Složitý výpočet může obsahovat libovolnou kombinaci odkazů na buňky, operátorů, hodnot a úrovní vnořených závorek.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-853">A complex calculation can contain any combination of cell references, operators, values, and levels of nested parentheses.</span></span> <span data-ttu-id="f3f2e-854">Vypočítat k výpočtu průměru ze sloupců A a B použijte výpočetní vzorec **((A+B)/2)**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-854">For example, to compute the average of columns A and B, use the calculation formula **((A+B)/2)**.</span></span>
-
-#### <a name="specify-report-cells-in-a-column-calculation"></a><span data-ttu-id="f3f2e-855">Zadání buněk sestavy ve výpočtu sloupce</span><span class="sxs-lookup"><span data-stu-id="f3f2e-855">Specify report cells in a column calculation</span></span>
-
-<span data-ttu-id="f3f2e-856">Na konkrétní buňku sestavy lze odkázat zadáním písmene sloupce a kódu řádku.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-856">You can refer to a specific report cell by entering a column letter and a row code.</span></span> <span data-ttu-id="f3f2e-857">Například **B.100** odkazuje na kód řádku 100 ve sloupci B. Můžete vydělit celý sloupec konkrétní hodnotou buňky sestavy, která se nachází ve stejném sloupci.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-857">For example, **B.100** refers to row code 100 in column B. You can divide a whole column by a specific report cell amount that is in the same column.</span></span> <span data-ttu-id="f3f2e-858">Například výpočet **B/B.100** znamená, že částka ve sloupci B má být vydělena hodnotou v řádku s kódem 100 ve sloupci B. Odkazuje-li výpočet na sloupec, který závisí na jiném sloupci, je nejprve vyřešen závislý sloupec.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-858">For example, the calculation **B/B.100** means that the amount in column B should be divided by the value in row code 100 in column B. If the calculation refers to a column that depends on another column, the dependent column is resolved first.</span></span> <span data-ttu-id="f3f2e-859">Pokud nějaký sloupec odkážete na jiný sloupec a tento sloupec odkazuje zpět na první sloupec, způsobíte chybu cyklického odkazu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-859">If you refer a column to another column that refers back to the first column, you will cause a circular reference error.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="f3f2e-860">Výpočet může být nesprávný, pokud změníte prioritu výpočtů sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-860">The calculation might be incorrect if you change the calculation priority for the report.</span></span> <span data-ttu-id="f3f2e-861">Prioritu pro výpočet lze nastavit na kartě **Nastavení** v definici sestavy.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-861">You can set the calculation priority on the **Settings** tab of the report definition.</span></span>
-
-#### <a name="multiply-or-divide-a-column-by-a-base-row"></a><span data-ttu-id="f3f2e-862">Násobení nebo dělení sloupce základním řádkem</span><span class="sxs-lookup"><span data-stu-id="f3f2e-862">Multiply or divide a column by a base row</span></span>
-
-<span data-ttu-id="f3f2e-863">Můžete vytvořit sloupec, který zobrazuje všechny hodnoty v zadaném sloupci jako procentuální hodnotu určitého základu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-863">You can create a column that displays all the values in a specified column as a percentage of a base number.</span></span> <span data-ttu-id="f3f2e-864">Můžete tedy znázornit vztahy mezi řádky, například procentuální hodnotu řádku prodeje nebo procentuální hodnotu řádku celkových výdajů.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-864">Therefore, you can show relationships between rows, such as a percentage of a sales row or a percentage of a total expenses row.</span></span> <span data-ttu-id="f3f2e-865">Chcete-li násobit nebo dělit každý řádek v konkrétním sloupci základním řádkem, zadejte sloupec k použití při výpočtu a potom zadejte hodnotu **\*BASEROW** nebo **/BASEROW**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-865">To multiply or divide each row in a specific column by a base row, enter the column to use in the calculation, and then enter **\*BASEROW** or **/BASEROW**.</span></span> <span data-ttu-id="f3f2e-866">Zadejte například vzorec **C\*BASEROW** nebo **C/BASEROW**.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-866">For example, enter **C\*BASEROW** or **C/BASEROW**.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="f3f2e-867">Pokud v definici sloupců použijete výpočet základního řádku, musí každá definice řádků použitá s touto definicí sloupců obsahovat alespoň jeden základní řádek pro výpočty.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-867">When you use a base row calculation in a column definition, make sure that each row definition that is used with this column definition contains at least one base row for calculations.</span></span>
-
-#### <a name="divide-the-amount-in-a-column-by-the-number-of-periods"></a><span data-ttu-id="f3f2e-868">Vydělení částky ve sloupci počtem období</span><span class="sxs-lookup"><span data-stu-id="f3f2e-868">Divide the amount in a column by the number of periods</span></span>
-
-<span data-ttu-id="f3f2e-869">Částku v některém sloupci můžete vydělit zadaným počtem období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-869">You can divide the amount in a column by a specified number of periods.</span></span> <span data-ttu-id="f3f2e-870">Například vzorec **B/Období** vydělí hodnotu ve sloupci B počtem období ve sloupci B. Pokud výpočet pokrývá více sloupců, zadejte počet období, který má být použit ve výpočtu.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-870">For example, the formula **B/Periods** divides the value in column B by the number of periods in column B. If the calculation spans multiple columns, specify the number of periods to use in the calculation.</span></span> <span data-ttu-id="f3f2e-871">Například vzorec **(B+C)/Období** sečte částky ve sloupcích B a C a potom výslednou hodnotu vydělí hodnotou období.</span><span class="sxs-lookup"><span data-stu-id="f3f2e-871">For example, the formula **(B+C)/Periods** adds the amounts in column B and column C, and then divides the result by the period value.</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="f3f2e-872">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="f3f2e-872">Additional resources</span></span>
-
-[<span data-ttu-id="f3f2e-873">Definice řádku ve finančním výkaznictví</span><span class="sxs-lookup"><span data-stu-id="f3f2e-873">Row definitions in financial reporting</span></span>](row-definitions-financial-reporting.md)
-
-[<span data-ttu-id="f3f2e-874">Rozšířené možnosti formátování ve finančním výkaznictví</span><span class="sxs-lookup"><span data-stu-id="f3f2e-874">Advanced formatting options in financial reporting</span></span>](advanced-formatting-options-financial-reporting.md)
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="column-definitions-financial-reports.md" target-language="cs-CZ">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>column-definitions-financial-reports.2311f7.bb08833cca843c370e2c845bce56d6f5a8b5f2ed.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>bb08833cca843c370e2c845bce56d6f5a8b5f2ed</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\analytics\column-definitions-financial-reports.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Column definitions in financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce ve finančních sestavách</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This article provides information about column definitions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento článek obsahuje informace o definicích sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>A column definition is a report component, or building block, that defines the contents of columns on a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104" restype="x-metadata">
+          <source>Like row definitions, basic column definitions can be used on multiple reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stejně jako definice řádků lze základní definice sloupců použít u více sestav.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Column definitions in financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce ve finančních sestavách</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This article provides information about column definitions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento článek obsahuje informace o definicích sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>A column definition is a report component, or building block, that defines the contents of columns on a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce je součástí sestavy nebo stavebního bloku, který definuje obsah jednotlivých sloupců v sestavě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Like row definitions, basic column definitions can be used on multiple reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stejně jako definice řádků lze základní definice sloupců použít u více sestav.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Create and modify a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření a úprava definice sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>A column definition can contain two to 255 columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce může obsahovat 2 až 255 sloupců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Create a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření definice sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>In Report Designer, in the navigation pane, click <bpt id="p1">**</bpt>Column Definitions<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav v navigačním podokně klikněte na tlačítko <bpt id="p1">**</bpt>Definice sloupce<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Column Definition<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V nabídce <bpt id="p1">**</bpt>Soubor<ept id="p1">**</ept> klikněte na tlačítko <bpt id="p2">**</bpt>Nový<ept id="p2">**</ept> a vyberte možnost <bpt id="p3">**</bpt>Definice sloupce<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Add the contents of the column definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidejte obsah do definice sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Open a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otevření definice sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>In Report Designer, in the navigation pane, click <bpt id="p1">**</bpt>Column Definitions<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav v navigačním podokně klikněte na tlačítko <bpt id="p1">**</bpt>Definice sloupce<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Double-click a column definition to open it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dvojitým kliknutím na definici sloupce tuto definici otevřete.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Add a column to a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání sloupce do definice sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>In Report Designer, click <bpt id="p1">**</bpt>Column Definitions<ept id="p1">**</ept>, and then open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav klikněte na tlačítko <bpt id="p1">**</bpt>Definice sloupce<ept id="p1">**</ept> a potom otevřete definici sloupce ke změně.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Select the column where a new column should be inserted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte sloupce, kam má být vložen nový sloupec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>On the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Insert Column<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V nabídce <bpt id="p1">**</bpt>Upravit<ept id="p1">**</ept> klikněte na tlačítko <bpt id="p2">**</bpt>Vložit sloupec<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>The new column appears to the left of the column that you selected.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nový sloupec se zobrazí nalevo od sloupce, který jste vybrali.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Delete a column from a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstranění sloupce z definice sloupců</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>In Report Designer, click <bpt id="p1">**</bpt>Column Definitions<ept id="p1">**</ept>, and then open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav klikněte na položku <bpt id="p1">**</bpt>Definice sloupců<ept id="p1">**</ept> a otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Select the column to delete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte sloupec, který chcete odstranit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>On the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Delete Column<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V nabídce <bpt id="p1">**</bpt>Úpravy<ept id="p1">**</ept> klikněte na příkaz <bpt id="p2">**</bpt>Odstranit sloupec<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Contents of a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsah definice sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>A column definition includes the following information:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce zahrnuje následující informace:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>A column of the descriptions for the row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupec popisů pro definici řádku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Amount columns that show data from the financial data or calculations that are based on other data in the column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupce částky, které zobrazují data z finančních dat, nebo výpočtů založených na jiných datech v definici sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Formatting columns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupce formátování</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Attribute columns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupce atributů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>This information appears in the following areas in the column definition:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto informace se zobrazí v následujících částech definice sloupce:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The headers area of the column definition contains the heading text and formatting that appears in the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oblast záhlaví definice sloupce obsahuje text a formátování nadpisu, které se zobrazí v sestavě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>A header can apply to a single column of data, can span multiple columns, or can apply to columns on a conditional basis.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záhlaví se může vztahovat na jeden sloupec dat, může být rozšířeno na více sloupců nebo být pro sloupce použito za určitých podmínek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>The column definition can include as many column header rows as you require.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce může obsahovat tolik řádků záhlaví sloupců, kolik budete potřebovat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Column headers apply to each column of data on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záhlaví sloupců jsou použita pro všechny sloupce dat v sestavě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Report headers apply to the whole report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záhlaví sestavy platí pro celou sestavu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>You define report headers on the <bpt id="p1">**</bpt>Headers and Footers<ept id="p1">**</ept> tab of the report definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lze definovat záhlaví sestavy na kartě <bpt id="p1">**</bpt>Záhlaví a zápatí<ept id="p1">**</ept> v rámci definice sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Column detail rows are the rows under the header rows in the column definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řádky podrobností sloupců jsou řádky pod řádků záhlaví v definici sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Column detail rows define the information that is included on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řádky podrobností sloupců definují informace, které jsou zahrnuty do sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>The following table lists and describes the column detail rows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující tabulka obsahuje seznam řádků podrobností sloupců a jejich popis.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Column detail row name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Název řádku podrobností sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Column Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>(Required) Specify the type of data in the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Požadováno) Určete typ dat ve sloupci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Book Code/Attribute Category</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód knihy / Kategorie atributů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Specify financial data information for columns of the <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ATTR<ept id="p2">**</ept> types.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte informace o finančních datech pro sloupce typů <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> a <bpt id="p2">**</bpt>ATTR<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Fiscal Year Period Periods Covered</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokrytá období pro období fiskálního roku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Specify financial data information for columns of the <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte informace o finančních datech pro sloupce typu <bpt id="p1">**</bpt>FD<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Formula</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzorec</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Specify a calculation formula for columns of the <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte vzorec pro výpočet sloupců typu <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Column Width Extra Spaces Before Column Format Override Print Control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Extra mezery šířky sloupce před ovládacím prvkem potlačení tisku formátu sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Specify special format options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Určuje speciální možnosti formátování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Column Restrictions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezení sloupců</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Restrict data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezit data.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Reporting Unit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organizační jednotka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Restrict the column, so that it shows data only for the specified reporting unit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezí sloupec tak, aby se zobrazovala pouze data pro zadanou organizační jednotku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Currency Display Currency Filter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr měny zobrazení měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Format currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Umožňuje naformátovat měnu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Dimension Filter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr dimenze</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Specify a filter to restrict data to certain financial data reporting units.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Určete filtr pro omezení dat na určité organizační jednotky finančních dat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Attribute Filter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr atributů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Specify a filter to restrict the financial data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Určete filtr k omezení finančních dat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Start Date End Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Počáteční datum Koncové datum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Restrict the financial data to specific dates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Umožňuje omezit finanční data na konkrétní kalendářní data.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Justification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zarovnání</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Left-align, center-align, or right-align the description text that is specified in the row definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zarovnání vlevo, na střed nebo vpravo zarovná text popisu, který je zadán v definici řádku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Column restrictions in a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezení sloupce v definici sloupců</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>You can use column restrictions to specify how a column definition uses data or calculates information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pomocí omezení sloupců můžete určit, jak používá definice sloupce data nebo jak počítá informace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>You can also restrict a report column to a specific unit or for specific dates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete také omezit sloupec sestavy na konkrétní jednotku nebo konkrétní kalendářní data.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>A <bpt id="p1">**</bpt>Column Restriction<ept id="p1">**</ept> code overrides any conflicting setting that is assigned in the row definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód <bpt id="p1">**</bpt>Omezení sloupce<ept id="p1">**</ept> přepisuje jakékoli konfliktní nastavení, které je přiřazeno v definici řádků.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Column Restrictions cell</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka Omezení sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>The <bpt id="p1">**</bpt>Column Restrictions<ept id="p1">**</ept> cell can include codes that restrict or suppress information, such as row formatting, details, and amounts, for that column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Omezení sloupce<ept id="p1">**</ept> může zahrnovat kódy, které omezují nebo potlačují informace, jako jsou například formátování řádků, podrobnosti a částky pro daný sloupec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Add a column restriction in a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání omezení sloupce do definice sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupce k úpravě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Double-click the <bpt id="p1">**</bpt>Column Restrictions<ept id="p1">**</ept> cell for the column to restrict.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte dvakrát na buňku <bpt id="p1">**</bpt>Omezení sloupce<ept id="p1">**</ept> pro sloupec k omezení.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>In the <bpt id="p1">**</bpt>Column Restrictions<ept id="p1">**</ept> dialog box, select one or more codes in the list, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Omezení sloupce<ept id="p1">**</ept> vyberte v seznamu jeden nebo více kódů a klikněte na tlačítko <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Column restriction codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kódy omezení sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>The following table describes the column restriction codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující tabulka popisuje kódy omezení sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Column restriction code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód omezení sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>SU</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SU</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Suppress the underscore for a column where either an underscore command (<bpt id="p1">**</bpt><ph id="ph1">---</ph><ept id="p1">**</ept>) or a double underscore command (<bpt id="p2">**</bpt><ph id="ph2">===</ph><ept id="p2">**</ept>) is entered in the row definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potlačí podtržení sloupce, kde je zadán příkaz podtržení (<bpt id="p1">**</bpt><ph id="ph1">---</ph><ept id="p1">**</ept>) nebo příkaz dvojitého podtržení (<bpt id="p2">**</bpt><ph id="ph2">===</ph><ept id="p2">**</ept>) v definici řádku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>For example, you might not want to underline amounts that are produced by a percentage calculation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nemusí být vhodné například podtrhovat částky, které jsou vytvářeny podle výpočtu procentuální hodnoty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>ST</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ST</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Suppress totals, so that only details are shown in the column (for example, a statistical column).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potlačí součty, aby se zobrazily v tomto sloupci pouze podrobnosti (například statistický sloupec).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>SD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Suppress details, so that only <bpt id="p1">**</bpt>TOT<ept id="p1">**</ept> and <bpt id="p2">**</bpt>CAL<ept id="p2">**</ept> rows (from the row definition) are shown in the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potlačí podrobnosti, takže se ve sloupci zobrazí pouze řádky <bpt id="p1">**</bpt>TOT<ept id="p1">**</ept> a <bpt id="p2">**</bpt>CAL<ept id="p2">**</ept> (z definice řádku).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>DR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DR</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Restrict the amounts in an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column to debit amounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezí částky ve sloupci <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> na částky Má dáti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>CR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CR</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Restrict the amounts in an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column to credit amounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezí částky ve sloupci <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> na částky Dal.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>ADJ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ADJ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Restrict the amounts in the column to period adjustment amounts, if these amounts are available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezí částky v tomto sloupci na částky oprav za období, pokud jsou tyto částky k dispozici.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>XAD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Restrict the amounts in the column, so that period adjustment amounts are excluded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezí částky v tomto sloupci tak, aby byly vyloučeny částky oprav za období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>PT</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PT</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Restrict the amounts in the column, so that only posted transactions are included, if these transactions are available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezí částky ve sloupci tak, aby pouze zaúčtované transakce byly zahrnuty, pokud tyto transakce jsou k dispozici.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>UPT</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UPT</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezí částky ve sloupci tak, aby byly zahrnuty pouze nezaúčtované transakce, pokud jsou tyto transakce k dispozici.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> Not all data providers support unposted transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Poznámka:<ept id="p1">&lt;/strong&gt;</ept> Ne všichni poskytovatelé dat podporují nezaúčtované transakce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>For more information, see the <bpt id="p1">&lt;a href='https://go.microsoft.com/fwlink/?LinkID=162565'&gt;</bpt>data integration guide<ept id="p1">&lt;/a&gt;</ept> for your Microsoft Dynamics ERP system.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v <bpt id="p1">&lt;a href='https://go.microsoft.com/fwlink/?LinkID=162565'&gt;</bpt>příručce pro integraci dat<ept id="p1">&lt;/a&gt;</ept> pro váš systém Microsoft Dynamics ERP.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Restrict a column to a reporting unit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezení sloupce na organizační jednotku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Double-click the <bpt id="p1">**</bpt>Reporting Unit<ept id="p1">**</ept> cell for the column to restrict.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte dvakrát na buňku <bpt id="p1">**</bpt>Jednotka výkaznictví<ept id="p1">**</ept> pro sloupec k omezení.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>In the <bpt id="p1">**</bpt>Reporting Unit Selection<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Reporting tree<ept id="p2">**</ept> list, select a tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Výběr jednotky výkaznictví<ept id="p1">**</ept> v seznamu <bpt id="p2">**</bpt>Strom výkaznictví<ept id="p2">**</ept> vyberte strom.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Expand or collapse the list of units, select a reporting unit, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte nebo sbalte seznam jednotek vyberte jednotku výkaznictví a klikněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Format column headers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formátování záhlaví sloupců</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>You can add, modify, and delete the headers that appear at the top of the columns on a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záhlaví, která se objevují v horní části sloupců v sestavě, můžete přidávat, upravovat a odstraňovat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>You can also configure conditional spanning column headers, based on the <bpt id="p1">**</bpt>Period<ept id="p1">**</ept> field from column definitions and the <bpt id="p2">**</bpt>Base Period<ept id="p2">**</ept> field from report definitions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Také můžete nakonfigurovat podmíněné pokrývání záhlaví sloupců na základě pole <bpt id="p1">**</bpt>Období<ept id="p1">**</ept> z definice sloupce a pole <bpt id="p2">**</bpt>Základní období<ept id="p2">**</ept> z definic sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>The base period feature helps save you time when you create rolling forecast reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Základní období vám pomůže ušetřit čas při vytváření sestav s klouzavými prognózami.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Create and manage column headers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření a správa záhlaví sloupců</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>You can use the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box to add, modify, and delete the headers that appear at the top of the columns on a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete přidat, upravit a odstranit záhlaví, která se zobrazí v horní části sloupců v sestavě, pomocí dialogového okna <bpt id="p1">**</bpt>Záhlaví sloupce<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>The following table describes the fields in the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole dialogového okna <bpt id="p1">**</bpt>Záhlaví sloupce<ept id="p1">**</ept> jsou popsána v následující tabulce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Column header text</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Text záhlaví sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>This text appears in the column header.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento text se zobrazí v záhlaví sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>You can type text directly in this field, or click <bpt id="p1">**</bpt>Insert AutoText<ept id="p1">**</ept> to select an option that updates the column header every time that the report is generated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete zadat text přímo do tohoto pole nebo kliknout na tlačítko <bpt id="p1">**</bpt>Vložit automatický text<ept id="p1">**</ept> a vybrat možnost, která aktualizuje záhlaví sloupce pokaždé, když je vygenerována sestava.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>To include multiple autotext codes, click <bpt id="p1">**</bpt>Insert AutoText<ept id="p1">**</ept> again, and then click another code in the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li zahrnout více kódů automatického textu, klikněte na tlačítko <bpt id="p1">**</bpt>Vložit automatický text<ept id="p1">**</ept> znovu a potom klikněte na další kód v seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Format options</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnosti formátu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Apply formatting to a column header, such as box or underline.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použít formátování pro záhlaví sloupce, například rámeček nebo podtržení.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Spread from Spread to</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšířit z Rozšířit do</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Define the column or columns that the header text applies to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definuje sloupce, na které se text záhlaví vztahuje.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Justification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zarovnání</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Specify how the column header text should be aligned for the column or range of columns that is specified in the <bpt id="p1">**</bpt>Spread from<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Spread to<ept id="p2">**</ept> fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Určete jak má být text záhlaví sloupce zarovnán pro sloupec nebo rozsah sloupců určený pomocí polí <bpt id="p1">**</bpt>Pokrýt od<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Pokrýt k<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Create a column header</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření záhlaví sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Double-click a header cell.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte dvakrát na buňku záhlaví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>In the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box, enter the column header text.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Záhlaví sloupce<ept id="p1">**</ept> zadejte text záhlaví sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Alternatively, click <bpt id="p1">**</bpt>Insert AutoText<ept id="p1">**</ept>, and select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Případně klikněte na tlačítko <bpt id="p1">**</bpt>Vložit automatický text<ept id="p1">**</ept> a vyberte možnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>In the <bpt id="p1">**</bpt>Format options<ept id="p1">**</ept> field, select a format for the header.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>Možnosti formátu<ept id="p1">**</ept> vyberte formát pro záhlaví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>In the <bpt id="p1">**</bpt>Spread from<ept id="p1">**</ept> field, enter the letter of the column that the column header should start over.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>Pokrýt od<ept id="p1">**</ept> zadejte písmeno sloupce, nad kterým má začít záhlaví sloupců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>In the <bpt id="p1">**</bpt>Spread to<ept id="p1">**</ept> field, enter the letter of the column that the column header should end over.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>Pokrýt k<ept id="p1">**</ept> zadejte písmeno sloupce, nad kterým má končit záhlaví sloupců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Under <bpt id="p1">**</bpt>Justification<ept id="p1">**</ept>, select whether the column header text to should be left-justified, center-justified, or right-justified.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V části <bpt id="p1">**</bpt>Zarovnání<ept id="p1">**</ept> vyberte, zda má být text záhlaví sloupců zarovnaný vlevo, zarovnaný na střed nebo zarovnaný vpravo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Add a column header row</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání řádku záhlaví sloupců</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Select a cell in the header row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte buňku v řádku záhlaví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>On the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Insert Row<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V nabídce <bpt id="p1">**</bpt>Upravit<ept id="p1">**</ept> klikněte na tlačítko <bpt id="p2">**</bpt>Vložit řádek<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>The new row is inserted above the row that you selected in step 2.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nový řádek je vložen nad řádek, který jste vybrali v kroku 2.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>If you have four or more rows of report headers on a report, the headers will overlap when the report is exported to an Excel worksheet.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Používáte-li v sestavě pro záhlaví sestavy čtyři nebo více řádků, záhlaví se budou při exportu sestavy do listu aplikace Excel překrývat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>To view all headers on the report, increase the top margin in the report definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li zobrazit všechna záhlaví v sestavě, zvětšete horní okraj v definici sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Delete a column header row</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstranění řádku záhlaví sloupců</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>In the header row, select the cell to delete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte buňku pro odstranění v řádku záhlaví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>On the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Delete Row<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V nabídce <bpt id="p1">**</bpt>Upravit<ept id="p1">**</ept> klikněte na tlačítko <bpt id="p2">**</bpt>Odstranit řádek<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Create an automatically generated header</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření automaticky generovaného záhlaví</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Report designer can automatically generate column headers, based on autotext codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Návrhář sestav může automaticky generovat záhlaví sloupců na základě kódů automatického textu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Autotext codes are variables that are updated every time that a report is generated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kódy automatického textu jsou proměnné, které se aktualizují při každém generování sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Any column header can include these codes to specify report information that can vary, such as dates or period numbers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto kódy mohou být zahrnuty do libovolného záhlaví sloupce a určovat informace, které se u sestavy liší, jako je například datum nebo číslo období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jednu definici sloupců proto můžete použít pro více definic sestav, časových období a organizačních stromů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> and <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Protože kódy automatického textu závisí na informacích kalendáře z řádků podrobností definice sloupce, jsou podporovány pouze u sloupců <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> a <bpt id="p2">**</bpt>FD<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>The way that an autotext code appears in the column header cell affects how that information appears on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Způsob, jakým je kód automatického textu zobrazen v buňce záhlaví sloupce, má vliv na to, jak se tyto údaje zobrazují v sestavě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>In the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box, the autotext codes appear in mixed case.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Záhlaví sloupce<ept id="p1">**</ept> se kódy automatického textu zobrazí s malými i velkými znaky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Therefore, the text appears in mixed case on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V sestavě se proto text se zobrazí velkými i malými písmeny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>For example, in a standard calendar year, <bpt id="p1">**</bpt>@CalMonthLong<ept id="p1">**</ept> resolves month <bpt id="p2">**</bpt>7<ept id="p2">**</ept> to <bpt id="p3">**</bpt>July<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například ve standardním kalendářním roku vypíše kód <bpt id="p1">**</bpt>@CalMonthLong<ept id="p1">**</ept> měsíc <bpt id="p2">**</bpt>7<ept id="p2">**</ept> jako <bpt id="p3">**</bpt>Červenec<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>If the name of the month should be uppercase (for example <bpt id="p1">**</bpt>JULY<ept id="p1">**</ept>), enter the autotext code in uppercase characters in the <bpt id="p2">**</bpt>Column header text<ept id="p2">**</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud má být v sestavě název měsíce uveden velkými písmeny (například <bpt id="p1">**</bpt>ČERVENEC<ept id="p1">**</ept>), zadejte kód automatického textu velkými písmeny do pole <bpt id="p2">**</bpt>Text záhlaví sloupce<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>For example, enter <bpt id="p1">**</bpt>@CALMONTHLONG<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte <bpt id="p1">**</bpt>@CALMONTHLONG<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>You can mix codes and text.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kódy lze používat společně s textem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>For example, you enter the following header text: <bpt id="p1">**</bpt>Period @FiscalPeriod-@FiscalYear from @StartDate to @EndDate<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte následující text záhlaví: <bpt id="p1">**</bpt>Období @FiscalPeriod-@FiscalYear od @StartDate do @EndDate<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>The report heading that is generated resembles the following text: <bpt id="p1">**</bpt>Period 1-02 from 01/01/02 to 01/31/02<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záhlaví sestavy, které bude vygenerováno, bude vypadat nápodobně: <bpt id="p1">**</bpt>Period 1-02 od 1.1.2002 do 31.1.2002<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>The format of some of the text, such as the long date, depends on your regional settings on the Finance and Operations server.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát částí textu, jako například dlouhé datum, závisí na vašich místních nastaveních serveru Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>To change these settings, click the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button, click <bpt id="p2">**</bpt>Control Panel<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Region and Language<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato nastavení můžete změnit, kliknutím na tlačítko <bpt id="p1">**</bpt>Start<ept id="p1">**</ept>, na položku <bpt id="p2">**</bpt>Ovládací panely<ept id="p2">**</ept> a nakonec na položku <bpt id="p3">**</bpt>Oblast a jazyk<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>The following table lists the available autotext options for column headers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V následující tabulce jsou uvedeny dostupné možnosti automatického textu u záhlaví sloupců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Autotext option and code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnost a kód automatického textu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Month name (@CalMonthLong)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Název měsíce (@CalMonthLong)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Print the name of the current month in the column heading.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytiskne v záhlaví sloupce název aktuálního měsíce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>If you decide to round the amounts in the report to thousands, millions, or billions, or if you set the column width on the report to fewer than nine characters, the name of the month is abbreviated to the first three characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud se rozhodnete zaokrouhlovat částky v sestavách na tisíce, milióny nebo miliardy, nebo pokud šířku sloupce v sestavě nastavíte na méně než 9 znaků, zkrátí se název měsíce na první tři znaky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Abbreviated month name (@CalMonthShort)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zkrácený název měsíce (@CalMonthShort)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Print the abbreviated name of the month for the selected fiscal period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytiskne zkrácený název měsíce pro vybrané fiskální období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Period number (@FiscalPeriod)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Číslo období (@FiscalPeriod)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Print the numeric form of the fiscal period that is identified for that column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytiskne číselnou formu fiskálního období, který je určený pro daný sloupec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>If the column spans multiple periods, the last period in the range is printed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud sloupec překlenuje několik období, vytiskne se poslední období v tomto rozsahu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Period description (@FiscalPeriodName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis období (@FiscalPeriodName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Print the fiscal period description that is identified in the financial data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytiskne popis fiskálního období, který je určen ve finančních datech.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Fiscal year (@FiscalYear)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiskální rok (@FiscalYear)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Print the fiscal year for the column in numeric form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytiskne fiskální rok tohoto sloupce v číselné formě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Calendar year (@CalYear)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kalendářní rok (@CalYear)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Print the calendar year for the column in numeric form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytiskne kalendářní rok tohoto sloupce v číselné formě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Start date (@StartDate)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Počáteční datum (@StartDate)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Print the start date for the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytiskne počáteční datum pro sloupec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>End Date (@EndDate)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koncové datum (@EndDate)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Print the end date for the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytiskne koncové datum pro sloupec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Unit name from tree (@UnitName)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Název jednotky ze stromu (@UnitName)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>If you restrict a column to a specific unit of the reporting tree, print the unit name in the column header.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud sloupec omezíte na konkrétní jednotku organizačního stromu, vytiskne v záhlaví sloupce její název.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Unit description (@UnitDesc)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis jednotky (@UnitDesc)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>If you restrict a column to a specific unit of the reporting tree, print the unit description in the column header.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud sloupec omezíte na konkrétní jednotku organizačního stromu, vytiskne v záhlaví sloupce její popis.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Book Code (@BookCode)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód knihy (@BookCode)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Print the book code that is specified in the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytiskne kód knihy zadaný ve sloupci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Blank line (@Blank)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prázdný řádek (@Blank)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Insert an empty line in the column header.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vloží do záhlaví sloupce prázdný řádek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Create a conditional spanning header</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření podmíněného překlenovacího záhlaví</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>Conditional spanning headers can span multiple columns that are based on specific period data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podmíněná překlenovací záhlaví mohou na základě zadaného data období zasahovat do více sloupců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>For example, if you have a budget report for the fiscal year and want to display the actual budgets of past months together with the projected budgets of future months, you can use a conditional spanning header to automatically update the report header.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud máte například sestavu rozpočtu na fiskální rok a chcete zobrazit skutečné rozpočty za minulé měsíce s předpokládanými rozpočty na budoucí měsíce, můžete pomocí podmíněných překlenovacích záhlaví automaticky aktualizovat záhlaví sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Be aware of the following situations when you create a conditional spanning header:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při vytváření podmíněných překlenovacích záhlaví dávejte pozor na následující situace:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Any stop condition (<bpt id="p1">**</bpt>Spread to<ept id="p1">**</ept> field) that is matched before a start condition (<bpt id="p2">**</bpt>Spread From<ept id="p2">**</ept> field) is ignored.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jakákoli podmínka zastavení (pole <bpt id="p1">**</bpt>Pokrýt k<ept id="p1">**</ept>) vyhovující před podmínkou začátku (pole <bpt id="p2">**</bpt>Pokrýt od<ept id="p2">**</ept>) bude ignorována.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>For example, column B has the spread condition defined as BASE+1 to BASE, BASE is in column C, and BASE+1 is in column D. In this case, the stop condition in column C is ignored, and the printing of the header starts at column D.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud má například sloupec B podmínku rozšíření definovánu jako BASE+1 až BASE, hodnota BASE je ve sloupci C a BASE+1 ve sloupci D. V takovém případě podmínka konce ve sloupci C je ignorována a tisk záhlaví začíná sloupcem D.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>If you specify column headers that overlap, they overlap when they are printed on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadáte-li záhlaví sloupců, která se překrývají, budou se překrývat při vytištění v sestavě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>The report is generated, but the following warning appears in the <bpt id="p1">**</bpt>Report Queue Status<ept id="p1">**</ept> field: "Column headers using Base intersect with other column headers and may cause overlapping text."</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">estava bude vygenerována, ale zobrazí se následující upozornění v poli <bpt id="p1">**</bpt>Stav fronty sestav<ept id="p1">**</ept>: „Záhlaví sloupců používající základ se překrývají s jinými záhlavími sloupců a mohou způsobit překrývání textu.“</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>For example, the header definition on column B is B to BASE+1, and the header definition on column D is BASE+1 to F. In this case, the headers are printed on top of each other and are unreadable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například definice záhlaví sloupce B je B až BASE+1 a definice záhlaví ve sloupci D je BASE+1 až F. V takovém případě se záhlaví tisknou na sebe a jsou nečitelná.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Whenever BASE is used in a <bpt id="p1">**</bpt>Spread from/Spread to<ept id="p1">**</ept> definition, be sure to view the report that is generated, to see whether the headers overlap.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vždy při použití funkce BASE v definici <bpt id="p1">**</bpt>Pokrýt od / Pokrýt k<ept id="p1">**</ept> si prohlédněte vygenerovanou sestavu a zkontrolujte, zda se záhlaví nepřekrývají.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>If you specify BASE in the spread definition in a No Print (<bpt id="p1">**</bpt>NP<ept id="p1">**</ept>) column, it's ignored, regardless of what is defined in the column definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud v definici pokrytí zadáte hodnotu BASE ve sloupci Netisknout (<bpt id="p1">**</bpt>NP<ept id="p1">**</ept>), bude ignorována bez ohledu na to, co je definováno v definici sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Essentially, this scenario is the same as not creating a column header definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento scénář je v podstatě stejný, jako když nevytvoříte definici záhlaví sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>For conditional printing columns (<bpt id="p1">**</bpt>P<ph id="ph1">&amp;lt;</ph>B<ept id="p1">**</ept>, <bpt id="p2">**</bpt>P<ph id="ph2">&amp;gt;</ph>=B<ept id="p2">**</ept>), conditional spanning headers behave like any regular column header definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V případě sloupců s podmíněným tiskem (<bpt id="p1">**</bpt>P<ph id="ph1">&amp;lt;</ph>B<ept id="p1">**</ept>, <bpt id="p2">**</bpt>P<ph id="ph2">&amp;gt;</ph>=B<ept id="p2">**</ept>) se záhlaví s podmíněným pokrytím chová jako jakákoli běžná definice záhlaví sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>For example, if the condition is false, any subsequent column matching for the spread condition starts the printing of the header.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je například výsledkem podmínky hodnota Nepravda, bude tisk záhlaví začínat na každém dalším sloupci odpovídajícím podmínce rozšíření.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Create a conditional spanning header</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření podmíněného překlenovacího záhlaví</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Double-click a header cell.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte dvakrát na buňku záhlaví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>In the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box, enter the column header text.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Záhlaví sloupce<ept id="p1">**</ept> zadejte text záhlaví sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Alternatively, click <bpt id="p1">**</bpt>Insert AutoText<ept id="p1">**</ept>, and select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Případně klikněte na tlačítko <bpt id="p1">**</bpt>Vložit automatický text<ept id="p1">**</ept> a vyberte možnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>In the <bpt id="p1">**</bpt>Format options<ept id="p1">**</ept> field, select a formatting style for the header.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>Možnosti formátu<ept id="p1">**</ept> vyberte styl formátování pro záhlaví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>Specify a period relative to the base period that is specified when the report is generated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte období vztahující se k základnímu období, které je zadáno při generování sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>In the <bpt id="p1">**</bpt>Spread from<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Spread to<ept id="p2">**</ept> fields, enter one of the following values: <bpt id="p3">**</bpt>BASE<ept id="p3">**</ept>, <bpt id="p4">**</bpt>BASE-X<ept id="p4">**</ept> or <bpt id="p5">**</bpt>BASE+X<ept id="p5">**</ept>, where X is the number of periods from the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V polích <bpt id="p1">**</bpt>Pokrýt od<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Pokrýt k<ept id="p2">**</ept> zadejte některou z následujících hodnot: <bpt id="p3">**</bpt>BASE<ept id="p3">**</ept>, <bpt id="p4">**</bpt>BASE-X<ept id="p4">**</ept> nebo <bpt id="p5">**</bpt>BASE+X<ept id="p5">**</ept>, kde X je počet období od základního období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>For example, if you enter <bpt id="p1">**</bpt>BASE<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Spread from<ept id="p2">**</ept> field, the conditional spanning column header text starts in the column header where the report definition's <bpt id="p3">**</bpt>Base period<ept id="p3">**</ept> value equals the column definition's <bpt id="p4">**</bpt>Period<ept id="p4">**</ept> value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadáte-li například <bpt id="p1">**</bpt>BASE<ept id="p1">**</ept> do pole <bpt id="p2">**</bpt>Pokrýt od<ept id="p2">**</ept>, text záhlaví sloupce s podmíněným pokrytím začíná v záhlaví sloupce, kde se hodnota definice sestavy <bpt id="p3">**</bpt>Základní období<ept id="p3">**</ept> rovná hodnotě definice sloupce <bpt id="p4">**</bpt>Období<ept id="p4">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>It ends in the column that is indicated in the <bpt id="p1">**</bpt>Spread to<ept id="p1">**</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Končí ve sloupci, který je určen v poli <bpt id="p1">**</bpt>Pokrýt k<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Therefore, if the spread is BASE to M, and the report definition's <bpt id="p1">**</bpt>Base period<ept id="p1">**</ept> value is <bpt id="p2">**</bpt>4<ept id="p2">**</ept>, the header starts in the column where the period is set to <bpt id="p3">**</bpt>4<ept id="p3">**</ept> and ends at column M. Headers stop and start on printing columns only.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proto pokud je pokrytí od BASE k M a hodnota definice sestavy <bpt id="p1">**</bpt>Základní období<ept id="p1">**</ept> je <bpt id="p2">**</bpt>4<ept id="p2">**</ept>, záhlaví začne ve sloupci, ve kterém je období nastaveno na hodnotu <bpt id="p3">**</bpt>4<ept id="p3">**</ept> a končí ve sloupci M. Záhlaví končí a začínají pouze v tisknutých sloupcích.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>Under <bpt id="p1">**</bpt>Justification<ept id="p1">**</ept>, select whether the column header text should be left-justified, center-justified, or right justified.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V části <bpt id="p1">**</bpt>Zarovnání<ept id="p1">**</ept> vyberte, zda má být text záhlaví sloupců zarovnaný vlevo, zarovnaný na střed nebo zarovnaný vpravo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>Example of a conditional spanning header</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad podmíněného překlenovacího záhlaví</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>Phyllis is creating a report for a dynamic six-month forecast.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Petra vytváří sestavu pro dynamickou šestiměsíční prognózu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>She wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chce, aby se přes sloupce obsahující skutečná data vytisklo slovo „Skutečnost“ a přes sloupce obsahující prognózy rozpočtu slovo „Rozpočet“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Each month that the report is run, there is one more actual column and one less budget column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Každý měsíc, kdy je spuštěna sestava, přibude jeden sloupec se skutečnými hodnotami a ubude jeden sloupec rozpočtu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Although Phyllis can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, she decides to create conditional spanning headers that will automatically create headers over the appropriate columns each time that the report is run.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přestože Petra může při každém generování sestavy upravit záhlaví ruční změnou definice sloupce, rozhodne se ušetřit si čas a práci a vytvoří podmíněná překlenovací záhlaví, která automaticky vytvoří záhlaví u příslušných sloupců při každém spuštění sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Phyllis opens Report Designer, clicks <bpt id="p1">**</bpt>Column Definition<ept id="p1">**</ept> in the navigation pane, and opens the column definition for the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pavla otevře Návrhář sestav, klikne na tlačítko <bpt id="p1">**</bpt>Definice sloupce<ept id="p1">**</ept> v navigačním podokně a otevře definici sloupce pro sestavu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>She then enters the following information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadá potom následující informace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>The base period in the report definition is 4.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Základní období v definici sestavy je 4.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>A</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>C</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">C</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>D</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">D</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>E</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>F</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">F</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>G</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">G</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>H</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">H</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>I</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>J</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">J</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>K</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">K</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>L</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>M</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">M</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Header 1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záhlaví 1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>Actual</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skutečnost</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>Budget</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozpočet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>Header 2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záhlaví 2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>@CalMonthLong</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Header 3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záhlaví 3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>Column Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>DESC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POPIS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>Book Code/Attribute</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód knihy/atribut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>ACTUAL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SKUTEČNÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source>BUDGET2012</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROZPOČET2012</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>ACTUAL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SKUTEČNÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>BUDGET2012</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROZPOČET2012</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>ACTUAL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SKUTEČNÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>BUDGET2012</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROZPOČET2012</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>ACTUAL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SKUTEČNÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>BUDGET2012</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROZPOČET2012</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source>ACTUAL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SKUTEČNÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>BUDGET2012</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROZPOČET2012</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>ACTUAL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SKUTEČNÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>BUDGET2012</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROZPOČET2012</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Fiscal Year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiskální rok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>Period</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Období</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source>3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>4</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>4</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>5</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>5</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>6</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>6</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>Periods Covered</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokrytá období</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>Column Width</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Šířka sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>30</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">30</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>10</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>Print Control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení tisku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>Phyllis double-clicks a column header cell to open the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box, where she enters the following information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pavla kliknutím dvakrát na buňku záhlaví sloupce otevřete dialogové okno <bpt id="p1">**</bpt>Záhlaví sloupce<ept id="p1">**</ept>, kam zadá následující informace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hodnota</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source>Column header text</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Text záhlaví sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>Actual</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skutečné</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source>Insert AutoText</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vložit automatický text</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>No selection is made.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nebyla vybrána žádná možnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source>Format options</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnosti formátu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>Box</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>Justification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zarovnání</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>No selection is made.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nebyla vybrána žádná možnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>Spread from</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšířit z</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>Spread to</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšířit do</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>Budget header</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záhlaví rozpočtu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>BASE+1 to end column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE+1 až koncový sloupec</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>After she has finished entering information, Phyllis clicks <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poté, co dokončí zadávání informací, Pavla klikne na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>She then double-clicks the column header cell in column C to open the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box, where she enters the following information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poté kliknutím dvakrát na buňku záhlaví sloupce C otevřete dialogové okno <bpt id="p1">**</bpt>Záhlaví sloupce<ept id="p1">**</ept>, kam zadá následující informace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hodnota</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>Column header text</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Text záhlaví sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>Budget</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozpočet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>Insert AutoText</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vložit automatický text</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>No selection is made.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nebyla vybrána žádná možnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>Format options</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnosti formátu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>Box</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>Justification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zarovnání</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>No selection is made.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nebyla vybrána žádná možnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>Spread from</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšířit z</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>C</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">C</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>Spread to</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšířit do</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>BASE+2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD+2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>Now, every time that this report is generated, the word "Actual" will be printed over the columns that contain actual data, and the word "Budget" will be printed over the columns that contain budget forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nyní pokaždé, když tato zpráva je generována, přes sloupce obsahující skutečná data se vytiskne slovo „Skutečnost“ a přes sloupce obsahující prognózy rozpočtu slovo „Rozpočet“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>Additionally, the number of columns will be adjusted each month.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Navíc počet sloupců se upraví každý měsíc.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source>Apply column justification</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použití zarovnání sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>The <bpt id="p1">**</bpt>Justification<ept id="p1">**</ept> cell is used to apply justification formatting to a description column in a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Zarovnání<ept id="p1">**</ept> se používá k formátování zarovnání sloupce popisu v sestavě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>This option affects only the column descriptions, not the actual values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato možnost má vliv jen na popisy sloupců, a ne na hodnoty samotné.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>Double-click the <bpt id="p1">**</bpt>Justification<ept id="p1">**</ept> cell.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dvakrát klikněte na buňku <bpt id="p1">**</bpt>Zarovnání<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>Select one of the following values in the list:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte jednu z následujících hodnot na seznamu:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source><bpt id="p1">**</bpt>None<ept id="p1">**</ept> – No justification is applied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Žádné<ept id="p1">**</ept> – nebude použito žádné zarovnání.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source><bpt id="p1">**</bpt>Left<ept id="p1">**</ept> – Left-align the column descriptions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vlevo<ept id="p1">**</ept> – popisy sloupců se zarovnají doleva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source><bpt id="p1">**</bpt>Center<ept id="p1">**</ept> – Center-align the column descriptions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Na střed<ept id="p1">**</ept> – popisy sloupců se zarovnají na střed.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source><bpt id="p1">**</bpt>Right<ept id="p1">**</ept> – Right-align the column descriptions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vpravo<ept id="p1">**</ept> – popisy sloupců se zarovnají doprava.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>Add special formatting options</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání speciálních možností formátování</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>In the column definition, the formatting column detail rows apply special formatting to selected columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řádky podrobností ve sloupci formátování v definici sloupců umožňují uplatnit speciální formátování na vybrané sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source>Although some of the <bpt id="p1">**</bpt>Print Control<ept id="p1">**</ept> options and <bpt id="p2">**</bpt>Column Restrictions<ept id="p2">**</ept> options are specific to <bpt id="p3">**</bpt>FD<ept id="p3">**</ept> columns, most of the options apply to all column types.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I když jsou některé možnosti <bpt id="p1">**</bpt>Řízení tisku<ept id="p1">**</ept> a možnosti <bpt id="p2">**</bpt>Omezení sloupce<ept id="p2">**</ept> specifické pro sloupce <bpt id="p3">**</bpt>FD<ept id="p3">**</ept>, většina možnosti platí pro všechny typy sloupců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>The formatting that is specified in the column definition overrides the formatting that is specified in the report definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formátování zadané v definici řádku přepíše formátování, které je zadáno v definici sloupce a v definici sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>However, the formatting that is specified in the row definition overrides the formatting that is specified in the column definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formátování zadané v definici řádku však přepíše formátování, které je zadáno v definici sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>The following rows are considered formatting rows:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující řádky se považují za řádky formátování:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>Column Width</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Šířka sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>Extra Spaces Before Column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mezery navíc před sloupcem</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>Format/Currency Override</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přepsání formátu/měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>Print Control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení tisku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source>Changing the column width</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Změna šířky sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>The <bpt id="p1">**</bpt>Column Width<ept id="p1">**</ept> cell specifies the number of characters to use for the width of this column on the printed report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Šířka sloupce<ept id="p1">**</ept> určí počet znaků, které mají být použity pro šířku tohoto sloupce v tištěné sestavě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>Column width is important for columns that contain amounts (columns of the <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept>, <bpt id="p2">**</bpt>WKS<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>FD<ept id="p3">**</ept> type), descriptions (columns of the <bpt id="p4">**</bpt>DESC<ept id="p4">**</ept> type), or fill (columns of the <bpt id="p5">**</bpt>FILL<ept id="p5">**</ept> type).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Šířka sloupců je důležitá pro sloupce, které obsahují částky (sloupce typu <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept>, <bpt id="p2">**</bpt>WKS<ept id="p2">**</ept> nebo <bpt id="p3">**</bpt>FD<ept id="p3">**</ept>), popisy (sloupce typu <bpt id="p4">**</bpt>DESC<ept id="p4">**</ept>) nebo vyplnění (sloupce typu <bpt id="p5">**</bpt>FILL<ept id="p5">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>By default, the <bpt id="p1">**</bpt>AutoFit<ept id="p1">**</ept> option is selected, so that the width of each column is automatically adjusted to fit the contents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve výchozím nastavení je zvolena možnost <bpt id="p1">**</bpt>Automaticky přizpůsobit<ept id="p1">**</ept>, takže každý sloupec je automaticky upraven podle obsahu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source>Specify the width of a column on a report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadání šířky sloupce v sestavě</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source>In the <bpt id="p1">**</bpt>Column Width<ept id="p1">**</ept> cell, enter the number of spaces for the width of the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V buňce <bpt id="p1">**</bpt>Šířka sloupce<ept id="p1">**</ept> zadejte počet míst pro šířku sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>The maximum width of any column is 255 characters (this number includes cents, commas, and parentheses).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maximální šířka jakéhokoli sloupce je 255 znaků (toto číslo zahrnuje procenta, čárky i závorky).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source>Alternatively, to enable report designer to select the appropriate width for the column, based on the cell content, double-click the <bpt id="p1">**</bpt>Column Width<ept id="p1">**</ept> cell, and then click <bpt id="p2">**</bpt>AutoFit<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li návrháři sestav umožnit výběr vhodné šířky pro sloupec na základě obsahu buněk, můžete dvakrát kliknout na buňku <bpt id="p1">**</bpt>Šířka sloupce<ept id="p1">**</ept> a poté kliknout na možnost <bpt id="p2">**</bpt>Automaticky přizpůsobit<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>Add space between columns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání mezery mezi sloupci</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source>The <bpt id="p1">**</bpt>Extra Spaces Before Column<ept id="p1">**</ept> cell specifies the width of the separator between one column and adjacent columns in the column definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Další mezery před sloupcem<ept id="p1">**</ept> určuje šířku oddělovače mezi jedním sloupcem a přiléhajícími sloupci v definici sloupců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>The <bpt id="p1">**</bpt>Extra Spaces Before Column<ept id="p1">**</ept> setting affects all column detail rows for the column, but not the column header rows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení <bpt id="p1">**</bpt>Další mezery před sloupcem<ept id="p1">**</ept> ovlivní všechny řádky podrobností sloupce pro daný sloupec, ale nikoli řádky záhlaví sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source>Use this option to separate groups of columns or to add a few spaces before the description, so that the description column is indented from the left-aligned titles on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pomocí této možnosti můžete oddělit skupiny sloupců nebo přidat několik mezer před popis tak, aby byl sloupec s popisy odsazen od názvů v sestavě, které jsou zarovnány doleva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>The default number of spaces between each column is two.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve výchozím nastavení jsou mezi jednotlivými sloupci dvě mezery.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>You can change this setting on the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> tab in the report definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto nastavení lze změnit na kartě <bpt id="p1">**</bpt>Nastavení<ept id="p1">**</ept> v definici sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>Specify the space between columns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadání mezery mezi sloupci</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source>In the <bpt id="p1">**</bpt>Extra Spaces Before Column<ept id="p1">**</ept> cell, enter the number of spaces to insert between columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V buňce <bpt id="p1">**</bpt>Další mezery před sloupcem<ept id="p1">**</ept> zadejte počet mezer k vložení mezi sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>Specify a format currency override</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Určení přepsání formátu a měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>The <bpt id="p1">**</bpt>Format/Currency Override<ept id="p1">**</ept> cell specifies the formatting of the decimal, currency, and percentage amounts in the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Přepsání formátu/měny<ept id="p1">**</ept> určuje formátování desetinných míst, měny a procentuálních hodnot ve sloupci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>This formatting overrides any formatting that is specified in the report definition or system defaults.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto formátování má přednost před veškerým formátováním, které je určeno v definici sestavy nebo systémovými výchozími hodnotami.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source>Assign a format currency override to a report column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přiřazení přepsání formátu a měny ke sloupci sestavy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>Double-click a <bpt id="p1">**</bpt>Format/Currency Override<ept id="p1">**</ept> cell in an amount column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dvakrát klikněte na buňku <bpt id="p1">**</bpt>Přepsání formátu/měny<ept id="p1">**</ept> ve sloupci s částkou.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source>In the <bpt id="p1">**</bpt>Format Override<ept id="p1">**</ept> dialog box, select formatting options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Přepsání formátu<ept id="p1">**</ept> vyberte možnosti formátování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>Add a print control code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání kódů řízení tisku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>The <bpt id="p1">**</bpt>Print Control<ept id="p1">**</ept> cell can contain codes that adjust the display or the printing characteristics of a column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Řízení tisku<ept id="p1">**</ept> může obsahovat kódy, které upraví zobrazení nebo charakteristiky tisku sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>There are two types of print control codes: regular print control codes and conditional print control codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Existují dva typy tiskových řídicích kódů: standardní kódy řízení tisku a podmíněné kódy řízení tisku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source>Regular print control codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardní kódy řízení tisku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>Print control code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód řízení tisku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source>Translation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Význam</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source>NP</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NP</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>Nonprinting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Netisknout</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source>Exclude the amounts in this column from the report that is printed and from calculations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částky v tomto sloupci se nebudou tisknout ani používat ve výpočtech.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>To include a non-printing column in a calculation, refer to the column directly in the calculation formula.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li sloupec, který se netiskne, použít ve výpočtu, použijte ve výpočetním vzorci přímý odkaz na sloupec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source>For example, the non-printing column C is included in the following calculation: <bpt id="p1">**</bpt>B+C+D<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například netisknutý sloupec C je součástí následujícího výpočtu: <bpt id="p1">**</bpt>B+C+D<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>However, the non-printing column C isn't included in the following calculation: <bpt id="p1">**</bpt>B:D<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Netisknutý sloupec C však není součástí následujícího výpočtu: <bpt id="p1">**</bpt>B:D<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>XCR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XCR</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source>Change sign if typical balance of row is credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Změna znaménka, pokud obvyklý zůstatek řádku je typu Dal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source>Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoří rozpočet nebo porovnávací sestavu, ve které je nepříznivá odchylka (například deficit výnosů nebo překročení výdajů) vždy záporná.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source>Apply this code to a <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a <bpt id="p2">**</bpt>C<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Normal Balance<ept id="p3">**</ept> column of the row definition).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použitím tohoto kódu na sloupec <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> obrátíte znaménko částky sloupce, pokud je typický zůstatek daného řádku typu Dal (dle určení hodnoty <bpt id="p2">**</bpt>C<ept id="p2">**</ept> ve sloupci <bpt id="p3">**</bpt>Normální zůstatek<ept id="p3">**</ept> v definici řádku).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> For <bpt id="p2">&lt;strong&gt;</bpt>TOT<ept id="p2">&lt;/strong&gt;</ept> rows and <ph id="ph1">&lt;/strong&gt;</ph>CAL<ph id="ph2">&lt;/strong&gt;</ph> rows that typically carry a credit balance, be sure to enter a <bpt id="p3">&lt;strong&gt;</bpt>C<ept id="p3">&lt;/strong&gt;</ept> in the <bpt id="p4">&lt;strong&gt;</bpt>Normal Balance<ept id="p4">&lt;/strong&gt;</ept> column in the row definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Poznámka:<ept id="p1">&lt;/strong&gt;</ept> Pro řádky <bpt id="p2">&lt;strong&gt;</bpt>TOT<ept id="p2">&lt;/strong&gt;</ept> a řádky <ph id="ph1">&lt;/strong&gt;</ph>CAL<ph id="ph2">&lt;/strong&gt;</ph>, které obvykle nesou zůstatek typu Dal, je třeba zadat hodnotu <bpt id="p3">&lt;strong&gt;</bpt>C<ept id="p3">&lt;/strong&gt;</ept> do sloupce <bpt id="p4">&lt;strong&gt;</bpt>Normální zůstatek<ept id="p4">&lt;/strong&gt;</ept> v definici řádku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source>X0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source>Suppress column if all zeros or blanks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potlačit sloupec v případě, že obsahuje pouze nuly nebo prázdné hodnoty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source>Exclude an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column from the report if all cells in that column are either empty or contain zeros.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyloučí sloupec <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> ze sestavy, pokud jsou všechny buňky ve sloupci prázdné nebo obsahují nuly.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source>SR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SR</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>Suppress rounding</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potlačit zaokrouhlování</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source>Prevent the amounts in this column from being rounded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zabrání zaokrouhlení částek v tomto sloupci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source>XR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XR</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>Suppress rollup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potlačit zahrnutí</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source>Suppress a rollup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potlačí zahrnutí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source>If the report uses a reporting tree, the amounts in this column aren't rolled up into subsequent parent nodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud sestava používá organizační strom, nebudou částky v tomto sloupci zahrnuty do následných nadřazených uzlů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>RP</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RP</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source>Repeat column on each page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opakovat sloupec na každé stránce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>Repeat a specified column on each page of a report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opakuje zadaný sloupec na všech stránkách sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source>For example, you can use the <bpt id="p1">**</bpt>RP<ept id="p1">**</ept> print control code to include a column of the <bpt id="p2">**</bpt>ROW<ept id="p2">**</ept> type that pulls in row codes on every page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například můžete použít kontrolní kód <bpt id="p1">**</bpt>RP<ept id="p1">**</ept> k zahrnutí sloupce typu <bpt id="p2">**</bpt>ROW<ept id="p2">**</ept>, který shromáždí kódy řádků na každé stránce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source>WT</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WT</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>Wrap text</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zalamovat text</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>If the text in a column is too long to fit the space, wrap the text to keep all the text in the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je text příliš dlouhý na místo ve sloupci, zalomí tato možnost text tak, aby se celý text vešel do sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source>Conditional print control codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podmíněné kódy řízení tisku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source>Conditional print control code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podmíněný kód řízení tisku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source>(none)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(žádný)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source>Clear the conditional print selection.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zruší výběr podmíněného tisku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source>P<ph id="ph1">&amp;lt;</ph>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>Display a specified column only if the period is less than the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí určený sloupec pouze v případě, že je hodnota období menší než základní období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source>Display a specified column only if the period is more than the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí určený sloupec pouze v případě, že je hodnota období větší než základní období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source>P=B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P=B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>Display a specified column only if the period is equal to the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí určený sloupec pouze v případě, že se hodnota období rovná základnímu období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source>Display a specified column only if the period is less than or equal to the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí určený sloupec pouze v případě, že je hodnota období menší nebo rovna základnímu období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source>P<ph id="ph1">&amp;gt;</ph>=B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>=B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>Display a specified column only if the period is more than or equal to the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí určený sloupec pouze v případě, že je hodnota období větší nebo rovna základnímu období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source>Add print control codes to a report column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání kódů řízení tisku do sloupce sestavy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source>Double-click the <bpt id="p1">**</bpt>Print Control<ept id="p1">**</ept> cell.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dvakrát klikněte na buňku <bpt id="p1">**</bpt>Řízení tisku<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source>In the <bpt id="p1">**</bpt>Print Control<ept id="p1">**</ept> dialog box, select a code in the <bpt id="p2">**</bpt>Select print control options<ept id="p2">**</ept> list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Řízení tisku<ept id="p1">**</ept> vyberte kód ze seznamu <bpt id="p2">**</bpt>Výběr možností řízení tisku<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source>To select more than one code, hold down the Ctrl key while you select the codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li vybrat více než jeden kód, podržte klávesu Ctrl a vyberte kódy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source>Select an option in the <bpt id="p1">**</bpt>Conditional print options<ept id="p1">**</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte možnost v poli <bpt id="p1">**</bpt>Podmíněné možnosti tisku<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>By default, <bpt id="p1">**</bpt>(none)<ept id="p1">**</ept> is selected.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve výchozím nastavení je vybrána položka <bpt id="p1">**</bpt>(žádné)<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>You can select only one conditional print code at a time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lze vybrat pouze jeden podmíněný kód tisku současně.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source>You can also enter the print codes directly in the <bpt id="p1">**</bpt>Print Control<ept id="p1">**</ept> cell.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete také zadat tiskové kódy přímo do buňky <bpt id="p1">**</bpt>Řízení tisku<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source>Separate multiple print control codes with a comma.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jednotlivé kódy řízení tisku oddělte čárkou.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>Column types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typy sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source>The type of information that each column on a report includes is specified by the value in the <bpt id="p1">**</bpt>Column Type<ept id="p1">**</ept> row in the column definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ informací, které zahrnuje každý sloupec v sestavě, je určen hodnotou v řádku <bpt id="p1">**</bpt>Typ sloupce<ept id="p1">**</ept> v definici sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source>Each column definition must contain at least one description (<bpt id="p1">**</bpt>DESC<ept id="p1">**</ept>) column and one amount (<bpt id="p2">**</bpt>FD<ept id="p2">**</ept>, <bpt id="p3">**</bpt>WKS<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>CALC<ept id="p4">**</ept>) column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Každá definice sloupce musí obsahovat minimálně jeden sloupec popisu (<bpt id="p1">**</bpt>DESC<ept id="p1">**</ept>) a jeden sloupec částky (<bpt id="p2">**</bpt>FD<ept id="p2">**</ept>, <bpt id="p3">**</bpt>WKS<ept id="p3">**</ept> nebo <bpt id="p4">**</bpt>CALC<ept id="p4">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source>The column type codes don't apply to all accounting systems.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kódy typu sloupce se nevztahují na všechny účetní systémy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>If you select a type that isn't valid for your accounting system, that column is blank on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberete-li typ, který není pro daný účetním systémem platný, zobrazí se daný sloupec v sestavě jako prázdný.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source>Specify a column type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadání typu sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source>In the appropriate column, double-click a cell in the <bpt id="p1">**</bpt>Column Type<ept id="p1">**</ept> row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V odpovídajícím sloupci dvakrát klikněte na buňku v řádku <bpt id="p1">**</bpt>Typ sloupce<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>Select a column type in the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte typ sloupce ze seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source>The following table describes the various column types.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující tabulka popisuje různé typy sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source>Column type code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód typu sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source>Display financial data when you use a <bpt id="p1">&lt;strong&gt;</bpt>Link to Financial Dimensions<ept id="p1">&lt;/strong&gt;</ept> column in the row definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte finanční data při použití sloupce <bpt id="p1">&lt;strong&gt;</bpt>Odkaz na finanční dimenze<ept id="p1">&lt;/strong&gt;</ept> v definici řádku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source>When you select the <bpt id="p1">&lt;strong&gt;</bpt>FD<ept id="p1">&lt;/strong&gt;</ept> column type, default settings are automatically specified for the following rows:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberete-li typ sloupce <bpt id="p1">&lt;strong&gt;</bpt>FD<ept id="p1">&lt;/strong&gt;</ept>, jsou v následujících řádcích automaticky přiřazena výchozí nastavení:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Book Code/Attribute Category:<ept id="p1">&lt;/strong&gt;</ept> ACTUAL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Kód knihy / Kategorie atributů:<ept id="p1">&lt;/strong&gt;</ept> ACTUAL</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Book Code/Attribute Category:<ept id="p1">&lt;/strong&gt;</ept> ACTUAL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Kód knihy / Kategorie atributů:<ept id="p1">&lt;/strong&gt;</ept> ACTUAL</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Fiscal Year:<ept id="p1">&lt;/strong&gt;</ept> BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Fiskální rok:<ept id="p1">&lt;/strong&gt;</ept> BASE</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Period:<ept id="p1">&lt;/strong&gt;</ept> BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Období:<ept id="p1">&lt;/strong&gt;</ept> BASE</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Periods Covered:<ept id="p1">&lt;/strong&gt;</ept> PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Pokrytá období:<ept id="p1">&lt;/strong&gt;</ept> PERIODIC</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Column Width:<ept id="p1">&lt;/strong&gt;</ept> 14</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Šířka sloupce:<ept id="p1">&lt;/strong&gt;</ept> 14</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>You can change these default settings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato výchozí nastavení můžete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source>CALC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VÝPOČET</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>Display the result of a simple or complex calculation that is specified in the <bpt id="p1">&lt;strong&gt;</bpt>Formula<ept id="p1">&lt;/strong&gt;</ept> cell.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí výsledek jednoduchého nebo komplexního výpočtu, který je určen v buňce <bpt id="p1">&lt;strong&gt;</bpt>Vzorec<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source>For more information, see <bpt id="p1">&lt;a href="advanced-formatting-options-financial-reporting.md"&gt;</bpt>Advanced formatting options in financial reporting<ept id="p1">&lt;/a&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">&lt;a href="advanced-formatting-options-financial-reporting.md"&gt;</bpt>Rozšířené možnosti formátování v návrháři sestav<ept id="p1">&lt;/a&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="619">
+          <source>DESC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POPIS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="620">
+          <source>Display the row description from the row definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí popis řádku z definice řádku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="621">
+          <source>Although the description column is often the first column on the report, it can be in any position.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento sloupec sice často bývá prvním sloupcem v sestavě, může však být na jakékoli pozici.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="622">
+          <source>ROW</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ŘÁDEK</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="623">
+          <source>Display the individual row codes for financial rows from the <bpt id="p1">&lt;strong&gt;</bpt>Row Code<ept id="p1">&lt;/strong&gt;</ept> column in the row definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí jednotlivé kódy řádků pro finanční řádky ze sloupce <bpt id="p1">&lt;strong&gt;</bpt>Kód řádku<ept id="p1">&lt;/strong&gt;</ept> v definici řádku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="624">
+          <source>For more information, see <bpt id="p1">&lt;a href="row-definitions-financial-reporting.md"&gt;</bpt>Row definitions in financial reporting<ept id="p1">&lt;/a&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">&lt;a href="row-definitions-financial-reporting.md"&gt;</bpt>Definice řádku ve finančním výkaznictví<ept id="p1">&lt;/a&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="625">
+          <source>ACCT (Account codes)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ACCT (kódy účtů)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="626">
+          <source>Display the financial data segment values or dimension values that apply to each row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí hodnoty segmentů nebo dimenzí finančních dat, které platí pro jednotlivé řádky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="627">
+          <source>For account and transaction detail reports, the fully qualified account is printed (for example, <bpt id="p1">&lt;strong&gt;</bpt>110140-070-0101<ept id="p1">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro sestavy podrobností o účtu a transakcích je vytištěn plně kvalifikovaný účet (například <bpt id="p1">&lt;strong&gt;</bpt>110140-070-0101<ept id="p1">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="628">
+          <source>If ranges have been specified in the <bpt id="p1">&lt;strong&gt;</bpt>Link to Financial Dimensions<ept id="p1">&lt;/strong&gt;</ept> column in an associated row definition, the range is enclosed in square brackets and is treated as a single value (for example, <bpt id="p2">&lt;strong&gt;</bpt>[110140:110700]-070-[0101:0200]<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud byly ve sloupci <bpt id="p1">&lt;strong&gt;</bpt>Odkaz na finanční dimenze<ept id="p1">&lt;/strong&gt;</ept> v přidružené definici řádku zadány rozsahy, je rozsah uzavřen do hranatých závorek a je při zpracování považován za jedinou hodnotu (například <bpt id="p2">&lt;strong&gt;</bpt>[110140:110700]-070-[0101:0200]<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="629">
+          <source>For financial reports and high-level reports that are a combination of several accounts, the financial data link from the row definition is printed (for example, <bpt id="p1">&lt;strong&gt;</bpt>1100:1200<ept id="p1">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">U finančních sestav a sestav na vysoké úrovni, které jsou kombinací několika účtů, je vytištěn odkaz na finanční data z definice řádku (například <bpt id="p1">&lt;strong&gt;</bpt>1100:1200<ept id="p1">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="630">
+          <source>FILL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VYPLNIT</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="631">
+          <source>Fill the cell with a character that you enclose in single quotation marks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyplní buňku znakem, který uzavřete do jednoduchých uvozovek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="632">
+          <source>If you don't enter a character, the column is empty.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud nezadáte žádný znak, bude prázdný sloupec prázdný.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="633">
+          <source>For example, to fill a column with an ellipsis (...), enter <bpt id="p1">&lt;strong&gt;</bpt>FILL<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt>'.'<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li například vyplnit sloupec třemi tečkami (...), zadejte hodnotu <bpt id="p1">&lt;strong&gt;</bpt>FILL<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt>'.'<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="634">
+          <source>PAGE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">STRANA</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="635">
+          <source>Insert a vertical page break in the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vloží do sestav svislý konec stránky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="636">
+          <source>The columns that are to the right of the <bpt id="p1">&lt;strong&gt;</bpt>PAGE<ept id="p1">&lt;/strong&gt;</ept> column appear on a different page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupce napravo od sloupce <bpt id="p1">&lt;strong&gt;</bpt>PAGE<ept id="p1">&lt;/strong&gt;</ept> se zobrazí na jiné stránce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="637">
+          <source>ATTR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ATTR</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="638">
+          <source>If your accounting system supports attributes, display an account or transaction attribute in the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud váš účetní systém podporuje atributy, zobrazí ve sloupci atribut účtu nebo transakce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="639">
+          <source>An attribute, which must apply to a single full account, extracts underlying account or transaction information from the financial data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atribut, který se musí vztahovat na jeden úplný účet, vyextrahuje z finančních dat příslušné informace o účtu nebo transakci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="640">
+          <source>Account-level attributes display data from the account, and transaction-level attributes display data that occurred at the time that the transaction was posted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atributy na úrovni účtu zobrazí data z účtu a atributy na úrovni transakce zobrazí data z doby, kdy byla zaúčtována transakce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="641">
+          <source>If you select <bpt id="p1">&lt;strong&gt;</bpt>ATTR<ept id="p1">&lt;/strong&gt;</ept> as the column type, specify the attribute category in the <bpt id="p2">&lt;strong&gt;</bpt>Book Code/Attribute Category<ept id="p2">&lt;/strong&gt;</ept> detail row of the column definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud jako typ sloupce vyberete typ <bpt id="p1">&lt;strong&gt;</bpt>ATTR<ept id="p1">&lt;/strong&gt;</ept>, pak v řádku podrobností <bpt id="p2">&lt;strong&gt;</bpt>Kód knihy / Kategorie atributů<ept id="p2">&lt;/strong&gt;</ept> definice sloupce zadejte kategorii atributu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="642">
+          <source>Financial Dimensions column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupec Finanční dimenze</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="643">
+          <source>The following <bpt id="p1">**</bpt>Column Definition<ept id="p1">**</ept> row definitions apply to columns that have a column type of <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> (Amounts from financial dimensions).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující definic řádků <bpt id="p1">**</bpt>Definice sloupce<ept id="p1">**</ept> platí pro sloupce, které mají typ sloupce <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> (částky z finančních dimenzí).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="644">
+          <source>Book Code/Attribute Category cell</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka Kód knihy / Kategorie atributů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="645">
+          <source>The <bpt id="p1">**</bpt>Book Code/Attribute Category<ept id="p1">**</ept> cell identifies the book code for the data in the <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Kód knihy / atribut kategorie<ept id="p1">**</ept> identifikuje kód knihy pro data ve sloupci <bpt id="p2">**</bpt>FD<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="646">
+          <source>A column definition can include multiple actual, budget, and statistical columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce může obsahovat více skutečných, rozpočtových a statistických sloupců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="647">
+          <source>A column definition can also display different periods, such as current or year-to-date, and different amounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupců také dokáže zobrazit různá období (například aktuální nebo od začátku roku) a různé částky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="648">
+          <source>The list of book codes reflects the actual, budget, and statistical (non-financial) options that have been established in your financial data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seznam kódů knih odráží skutečné, rozpočtové a statistické (nefinanční) možnosti, které byly stanoveny ve vašich finančních datech.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="649">
+          <source>Fiscal Year cell</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka Fiskální rok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="650">
+          <source>The <bpt id="p1">**</bpt>Fiscal Year<ept id="p1">**</ept> cell identifies the fiscal year that the column should include.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Fiskální rok<ept id="p1">**</ept> identifikuje fiskální rok, který má sloupec zahrnovat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="651">
+          <source>The year can be relative to the base year that is specified when the report is generated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento rok se může vztahovat k základnímu roku, který je zadáno při generování sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="652">
+          <source>The following options are available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">K dispozici jsou tyto možnosti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="653">
+          <source>Option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnost</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="654">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="655">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="656">
+          <source>Use the base year that is specified at report time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije základní rok, který je zadán v době vytvoření sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="657">
+          <source>BASE+<ph id="ph1">\#</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE+<ph id="ph1">\#</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="658">
+          <source>Use the year that is <ph id="ph1">\#</ph> years after the base year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije rok, který následuje <ph id="ph1">\#</ph> let po základním roku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="659">
+          <source>For example, to use the third year after the base year, enter <bpt id="p1">**</bpt>BASE+3<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například pro použití třetího roku po základním roku zadejte hodnotu <bpt id="p1">**</bpt>BASE+3<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="660">
+          <source>BASE-<ph id="ph1">\#</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE-<ph id="ph1">\#</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="661">
+          <source>Use the year that is <ph id="ph1">\#</ph> years before the base year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije rok, který uplynul <ph id="ph1">\#</ph> let před základním rokem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="662">
+          <source>For example, to use the previous year, enter <bpt id="p1">**</bpt>BASE-1<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li například použít předchozí rok, zadejte hodnotu <bpt id="p1">**</bpt>BASE-1<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="663">
+          <source>Enter the actual fiscal year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadá aktuální fiskální rok.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="664">
+          <source>Period cell</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka Období</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="665">
+          <source>The <bpt id="p1">**</bpt>Period<ept id="p1">**</ept> cell identifies the fiscal periods that the column should include.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Období<ept id="p1">**</ept> identifikuje fiskální období, která má sloupec zahrnovat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="666">
+          <source>The period can be relative to the base period that is specified when the report is generated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto období se může vztahovat k základnímu období, které je zadáno při generování sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="667">
+          <source>The following options are available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Existují tyto možnosti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="668">
+          <source>Option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametr</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="669">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="670">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="671">
+          <source>Use the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije základní období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="672">
+          <source>BASE+<ph id="ph1">\#</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE+<ph id="ph1">\#</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="673">
+          <source>Use the period that is <ph id="ph1">\#</ph> periods after the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije období, které následuje <ph id="ph1">\#</ph> období po základním období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="674">
+          <source>For example, to use the third period after the base period, enter <bpt id="p1">**</bpt>BASE+3<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například pro použití třetího období po základním období zadejte hodnotu <bpt id="p1">**</bpt>BASE+3<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="675">
+          <source>BASE-<ph id="ph1">\#</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE-<ph id="ph1">\#</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="676">
+          <source>Use the period that is <ph id="ph1">\#</ph> periods before the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije období, které uplynulo <ph id="ph1">\#</ph> období před základním obdobím.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="677">
+          <source>For example, to use the previous period, enter <bpt id="p1">**</bpt>BASE-1<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li například použít předchozí období, zadejte hodnotu <bpt id="p1">**</bpt>BASE-1<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="678">
+          <source>BASE-<ph id="ph1">\#</ph>:BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE-<ph id="ph1">\#</ph>:BASE</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="679">
+          <source>Use multiple periods, from several periods before the base period through the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije více období, od několika období před základním obdobím až po základní období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="680">
+          <source>For example, to use the three previous periods and the base period, enter <bpt id="p1">**</bpt>BASE-3:BASE<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například pro použití tři předchozích období a základního období zadejte hodnotu <bpt id="p1">**</bpt>BASE-3:BASE<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="681">
+          <source>BASE:BASE+<ph id="ph1">\#</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE:BASE+<ph id="ph1">\#</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="682">
+          <source>Use multiple periods, from the base period through several periods after the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije více období, od základního období až po několik období po základním období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="683">
+          <source>For example, to use the base period and the following two periods, enter <bpt id="p1">**</bpt>BASE:BASE+2<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například pro použití základního období a dvou následujících období zadejte hodnotu <bpt id="p1">**</bpt>BASE:BASE+2<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="684">
+          <source>BASE-<ph id="ph1">\#</ph>:BASE+<ph id="ph2">\#</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE-<ph id="ph1">\#</ph>:BASE+<ph id="ph2">\#</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="685">
+          <source>Use multiple periods, from several periods before the base period to several periods after the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije více období, od několika období před základním obdobím až po několik období po základním období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="686">
+          <source>For example, to use the three previous periods, the base period, and the following two periods, enter <bpt id="p1">**</bpt>BASE-3:BASE+2<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například pro použití tři předchozích období, základního období a dvou následujících období zadejte hodnotu <bpt id="p1">**</bpt>BASE-3:BASE+2<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="687">
+          <source>1:BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1:ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="688">
+          <source>Use multiple periods, from the first period through the base period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije více období, od prvního období až po základní období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="689">
+          <source>Always use a specific period number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vždy použije konkrétní číslo období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="690">
+          <source>We don't recommend that you use this option, because it reduces the flexibility of the column definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nedoporučujeme používat tuto možnost, protože snižuje flexibilitu definice sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="691">
+          <source><ph id="ph1">\#</ph>:<ph id="ph2">\#</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\#</ph>                                      : <ph id="ph2">\#</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="692">
+          <source>Always use a specific range of periods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vždy použije konkrétní rozsah období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="693">
+          <source>We don't recommend that you use this option, because it reduces the flexibility of the column definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nedoporučujeme používat tuto možnost, protože snižuje flexibilitu definice sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="694">
+          <source>You can go beyond fiscal year boundaries in any of the period specifications, and you can mix years in a range of periods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při zadávání období můžete překročit hranice fiskálního roku a v rozsahu období můžete použít různé roky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="695">
+          <source>For example, you specify the periods as <bpt id="p1">**</bpt>BASE-5<ept id="p1">**</ept> (to represent the past six periods) and run a report that has a base period of 2.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte jako období hodnotu <bpt id="p1">**</bpt>BASE-5<ept id="p1">**</ept> (představující posledních šest období) a spusťte sestavu, která má základní období 2.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="696">
+          <source>In this case, the report shows data for the first two periods of the specified fiscal year and the last four periods of the previous fiscal year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V takovém případě tato sestava obsahuje data pro první dvě období zadaného fiskálního roku a poslední čtyři období předchozího fiskálního roku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="697">
+          <source>Specify the periods for an FD column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadání období pro sloupec FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="698">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="699">
+          <source>In an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column, double-click the cell in the <bpt id="p2">**</bpt>Period<ept id="p2">**</ept> row, and then select an option in the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve sloupci <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> klikněte dvakrát na buňku v řádku <bpt id="p2">**</bpt>Období<ept id="p2">**</ept> a potom vyberte možnost v seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="700">
+          <source>In the formula bar above the navigation pane, or in the <bpt id="p1">**</bpt>Period<ept id="p1">**</ept> cell, complete the formula.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na řádku vzorce nad navigačním podoknem nebo v buňce <bpt id="p1">**</bpt>Období<ept id="p1">**</ept> zadejte vzorec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="701">
+          <source>Replace any number sign (<ph id="ph1">\#</ph>) with the appropriate value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nahraďte jakýkoli znak křížku (<ph id="ph1">\#</ph>) odpovídající hodnotou.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="702">
+          <source>Periods Covered cell</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka Pokrytá období</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="703">
+          <source>The <bpt id="p1">**</bpt>Periods Covered<ept id="p1">**</ept> cell identifies the amount that the column should display.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Pokrytá období<ept id="p1">**</ept> identifikuje částku, kterou má sloupec zobrazit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="704">
+          <source>This amount is relative to the value in the <bpt id="p1">**</bpt>Fiscal Year<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Period<ept id="p2">**</ept> cells for the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato částka je relativní vůči hodnotě v buňkách <bpt id="p1">**</bpt>Fiskální rok<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Období<ept id="p2">**</ept> pro sloupec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="705">
+          <source>The following options are available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">K dispozici jsou tyto možnosti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="706">
+          <source>Option</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnost</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="707">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="708">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="709">
+          <source>Display the sum of the activity for the current period or range of periods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí součet pohybů za aktuální období nebo rozsah období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="710">
+          <source>PERIODIC/BB</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ/BB</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="711">
+          <source>Display the beginning balance for the current period or range of periods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí počáteční zůstatek za aktuální období nebo rozsah období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="712">
+          <source>YTD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Od začátku roku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="713">
+          <source>Display the sum of the year-to-date activity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí součet pohybů od začátku roku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="714">
+          <source>YTD/BB</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OD POČÁTKU ROKU/BB</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="715">
+          <source>Display the beginning balance for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazí počáteční zůstatek za tento rok.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="716">
+          <source>Specify the periods that are covered for an FD column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadání pokrytých období pro sloupec FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="717">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="718">
+          <source>In an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column, double-click the cell in the <bpt id="p2">**</bpt>Periods Covered<ept id="p2">**</ept> row, and select an option in the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve sloupci <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> klikněte dvakrát na buňku v řádku <bpt id="p2">**</bpt>Pokrytá období<ept id="p2">**</ept> a potom vyberte možnost v seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="719">
+          <source>Attribute filter in a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr atributů v definici sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="720">
+          <source>Attributes are financial data values that further define an account or transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atributy jsou hodnoty finančních dat, které podrobněji definují účet nebo transakci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="721">
+          <source>The account attributes include <bpt id="p1">**</bpt>Asset<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Liability<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Revenue<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Expense<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atributy účtu zahrnují položky <bpt id="p1">**</bpt>Majetek<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Závazky<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Výnosy<ept id="p3">**</ept> a <bpt id="p4">**</bpt>Výdaje<ept id="p4">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="722">
+          <source>The transaction attributes include <bpt id="p1">**</bpt>Transaction Description<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Transaction Apply Date<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Atributy transakce zahrnují položky <bpt id="p1">**</bpt>Popis transakce<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Datum použití transakce<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="723">
+          <source>Attribute support might differ between Microsoft Dynamics ERP systems.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podpora atributů se v systémech Microsoft Microsoft Dynamics ERP může lišit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="724">
+          <source>The <bpt id="p1">**</bpt>Attribute Filter<ept id="p1">**</ept> cell restricts the data in <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> columns to specific values or ranges for attribute categories.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Filtr atributů<ept id="p1">**</ept> omezuje data ve sloupcích <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> na konkrétní hodnoty nebo rozsahy pro kategorie atributů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="725">
+          <source>Although this feature can be used together with an <bpt id="p1">**</bpt>ATTR<ept id="p1">**</ept> column, the <bpt id="p2">**</bpt>ATTR<ept id="p2">**</ept> column isn't required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ačkoli lze tuto funkci použít spolu se sloupcem <bpt id="p1">**</bpt>ATTR<ept id="p1">**</ept>, sloupec <bpt id="p2">**</bpt>ATTR<ept id="p2">**</ept> není požadován.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="726">
+          <source>In an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column, there is a limit on the accounts or transactions that the report will include from the attribute filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve sloupci <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> existuje limit účtů nebo transakcí, které bude sestava obsahovat z filtru atributů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="727">
+          <source>To see which attributes your ERP system supports, see the integration guide for your system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete zjistit, jaké atributy váš systém ERP podporuje, prostudujte příručku pro integraci svého systému.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="728">
+          <source>Apply an attribute filter for an FD column on a report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použití filtru atributů u sloupce FD v sestavě</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="729">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="730">
+          <source>Double-click the <bpt id="p1">**</bpt>Attribute Filter<ept id="p1">**</ept> cell for an <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dvakrát klikněte na buňku <bpt id="p1">**</bpt>Filtr atributů<ept id="p1">**</ept> u některého sloupce <bpt id="p2">**</bpt>FD<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="731">
+          <source>In the <bpt id="p1">**</bpt>Attribute Filter<ept id="p1">**</ept> dialog box, double-click a cell in the <bpt id="p2">**</bpt>Attribute<ept id="p2">**</ept> column, and then select the filter type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Filtr atributů<ept id="p1">**</ept> dvakrát klikněte na buňku ve sloupci <bpt id="p2">**</bpt>Atribut<ept id="p2">**</ept> a vyberte typ filtru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="732">
+          <source>To further limit the results, enter a range in the <bpt id="p1">**</bpt>From<ept id="p1">**</ept> and <bpt id="p2">**</bpt>To<ept id="p2">**</ept> columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li výsledky dále omezit, zadejte rozsah do sloupců <bpt id="p1">**</bpt>Od<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Do<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="733">
+          <source>The <bpt id="p1">**</bpt>From<ept id="p1">**</ept> cell must contain a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka <bpt id="p1">**</bpt>Od<ept id="p1">**</ept> musí obsahovat hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="734">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="735">
+          <source>Example of an attribute filter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad filtru atributů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="736">
+          <source>The following example shows part of a column description that has an account attribute in the <bpt id="p1">**</bpt>Book Code/Attribute Category<ept id="p1">**</ept> row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující příklad ukazuje část popisu sloupce, který má atribut účtu v řádku <bpt id="p1">**</bpt>Kód knihy / atribut kategorie<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="737">
+          <source>The attribute filter for this column specifies the range of values to include in the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr atributů pro tento sloupec určuje rozsah hodnot, které mají být zahrnuty do sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="738">
+          <source>A</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">O</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="739">
+          <source>B</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">B</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="740">
+          <source>Column Type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="741">
+          <source>DESC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POPIS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="742">
+          <source>FD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="743">
+          <source>Book Code/Attribute Category</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód knihy / Kategorie atributů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="744">
+          <source>ACTUAL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SKUTEČNÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="745">
+          <source>Fiscal Year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiskální rok</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="746">
+          <source>BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="747">
+          <source>Period</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Období</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="748">
+          <source>1:BASE</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1:ZÁKLAD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="749">
+          <source>Periods Covered</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokrytá období</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="750">
+          <source>PERIODIC</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODICKÝ</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="751">
+          <source>...</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">...</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="752">
+          <source>Column Width</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Šířka sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="753">
+          <source>30</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">30</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="754">
+          <source>...</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">...</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="755">
+          <source>Attribute Filter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr atributů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="756">
+          <source>Reference=<ph id="ph1">\[</ph>01:10<ph id="ph2">\]</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odkaz=<ph id="ph1">\[</ph>01:10<ph id="ph2">\]</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="757">
+          <source>Dimension filter in a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr dimenzí v definici sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="758">
+          <source>A dimension filter is used to restrict the <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column to specific dimension values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr dimenzí slouží k omezení sloupce <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> na konkrétní hodnoty dimenzí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="759">
+          <source>The filter can include a single dimension, a range of dimensions, or a group of dimensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr může obsahovat jednu dimenzi, rozsah dimenzí nebo skupinu dimenzí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="760">
+          <source>The filter can also include dimension value sets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr může také obsahovat sady hodnot dimenzí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="761">
+          <source>Because dimension values can vary, a ..<ph id="ph1">\\</ph>financial-dimensions<ph id="ph2">\\</ph>dimension-based system doesn't have to correspond to an exact length.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzhledem k tomu, že se mohou hodnoty dimenzí lišit, nemusí ..<ph id="ph1">\\</ph>financial-dimensions<ph id="ph2">\\</ph>dimension-based system odpovídat přesné délce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="762">
+          <source>The filter is applied, regardless of whether the report includes a reporting tree.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtr se použije bez ohledu na to, zda sestava obsahuje strom výkaznictví, či nikoli.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="763">
+          <source>You can use a wildcard character (<ph id="ph1">\*</ph> or ?) in any position.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete použít zástupné znaky (<ph id="ph1">\*</ph> nebo ?) na jakékoli pozici.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="764">
+          <source>When you specify multiple accounts, put a comma between accounts, as in the following example: +Account=<ph id="ph1">\[</ph>1200<ph id="ph2">\]</ph>, +Account=<ph id="ph3">\[</ph>1100<ph id="ph4">\]</ph>, Department=<ph id="ph5">\[</ph>01?<ph id="ph6">\]</ph> To receive all departments for a specific account, you can exclude the Department dimension from the dimension filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Když zadáte více účtů, vložte mezi účty čárku, jak je uvedeno v následujícím příkladu: +Částka=<ph id="ph1">\[</ph>1200<ph id="ph2">\]</ph>, +Částka=<ph id="ph3">\[</ph>1100<ph id="ph4">\]</ph>, Oddělení=<ph id="ph5">\[</ph>01?<ph id="ph6">\]</ph> Abyste získali všechna oddělení pro konkrétní účet,můžete vyloučit dimenzi oddělení z filtru dimenzí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="765">
+          <source>For example, both of the following dimension filters are handled in the same way:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například oba následující filtry dimenzí jsou zpracovány stejným způsobem:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="766">
+          <source>+Account=<ph id="ph1">\[</ph>1100<ph id="ph2">\]</ph>,Department</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">+Účet=<ph id="ph1">\[</ph>1100<ph id="ph2">\]</ph>,Oddělení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="767">
+          <source>+Account=<ph id="ph1">\[</ph>1100<ph id="ph2">\]</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">+Účet=<ph id="ph1">\[</ph>1100<ph id="ph2">\]</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="768">
+          <source>You can also use any combination of alphanumeric characters for exact matching, and you can define partial dimensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete také použít jakoukoli kombinaci alfanumerických znaků pro přesnou shodu a můžete definovat částečné dimenze.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="769">
+          <source>For example, <bpt id="p1">**</bpt>Location = <ph id="ph1">\[</ph>10<ph id="ph2">\*</ph><ph id="ph3">\]</ph><ept id="p1">**</ept> includes all location dimension values that begin with 10.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například hodnota <bpt id="p1">**</bpt>Umístění = <ph id="ph1">\[</ph>10<ph id="ph2">\*</ph><ph id="ph3">\]</ph><ept id="p1">**</ept> zahrnuje všechny hodnoty dimenze umístění začínající na 10.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="770">
+          <source>Apply a dimension filter for a column on a report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použití filtru dimenzí pro definici sloupce v sestavě</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="771">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="772">
+          <source>Double-click the <bpt id="p1">**</bpt>Dimension Filter<ept id="p1">**</ept> cell for an <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte dvakrát na buňku <bpt id="p1">**</bpt>Filtr dimenzí<ept id="p1">**</ept> pro sloupec <bpt id="p2">**</bpt>FD<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="773">
+          <source>In the <bpt id="p1">**</bpt>Dimensions<ept id="p1">**</ept> dialog box, enter the filters to apply.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Dimenze<ept id="p1">**</ept> zadejte filtry, které chcete použít.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="774">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="775">
+          <source>Format a multiple-currency report in a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formátování sestavy s více měnami v definici sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="776">
+          <source>A multiple-currency report can display amounts in the ledger's accounting currency, the ledger's reporting, the originating transaction currency, or the translated reporting currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sestava více měn může zobrazit částky v zúčtovací měně hlavní knihy, v měně vykazování hlavní knihy, původní měně transakce nebo v převedené měně vykazování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="777">
+          <source>A company's accounting currency is defined in the Ledgers setup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zúčtovací měna společnosti je definována v nastavení hlavní knihy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="778">
+          <source>Don't confuse this setting with the operating system's regional options setting, where you can configure the default currency symbols that are used on reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nepleťte si toto nastavení s místním nastavením operačního systému, kde se konfigurují symboly výchozí měny pro sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="779">
+          <source>The following currency-related cells are available in the column definition:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce obsahuje následující dostupné buňky související s měnou:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="780">
+          <source><bpt id="p1">**</bpt>Currency Display<ept id="p1">**</ept> – Specify the type of currency (accounting, reporting, transaction, or translated reporting) that the transactions are displayed in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Zobrazení měny<ept id="p1">**</ept> – určuje typ měny (účetnictví, vykazování, transakce nebo převedené výkaznictví), ve které se transakce zobrazí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="781">
+          <source>Translated to a reporting currency functionality is sometimes referred to as currency translation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce převodu na měnu vykazování se někdy označuje jako převod měny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="782">
+          <source>Currency translation is the ability to report general ledger amounts in a currency that might not be the functional or reporting currency of the company or the currency that the transaction was entered in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převod měn je schopnost uvádět částky hlavní knihy v sestavách v měně, která nemusí být funkční měnou nebo měno vykazování společnosti, ani měnou, ve které byla zadána transakce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="783">
+          <source><bpt id="p1">**</bpt>Currency Filter<ept id="p1">**</ept> – Specify a currency filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Filtr měny<ept id="p1">**</ept> – definuje filtr měny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="784">
+          <source>Only transactions that are entered in the selected currency are displayed on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V sestavě jsou zobrazeny pouze transakce, které byly zadány ve vybrané měně.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="785">
+          <source>To determine a company's accounting currency, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li určit zúčtovací měnu společnosti, postupujte takto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="786">
+          <source>In Report Designer, on the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Companies<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav klikněte v nabídce <bpt id="p1">**</bpt>Společnost<ept id="p1">**</ept> na příkaz <bpt id="p2">**</bpt>Společnosti<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="787">
+          <source>In the <bpt id="p1">**</bpt>Companies<ept id="p1">**</ept> dialog box, select a company, and then click <bpt id="p2">**</bpt>View<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Společnosti<ept id="p1">**</ept> vyberte společnost a klikněte na tlačítko <bpt id="p2">**</bpt>Zobrazení<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="788">
+          <source>In the <bpt id="p1">**</bpt>View Company<ept id="p1">**</ept> dialog box, under <bpt id="p2">**</bpt>Regional options<ept id="p2">**</ept>, you can view the currency that is defined for the selected company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V dialogovém okně <bpt id="p1">**</bpt>Zobrazit společnost<ept id="p1">**</ept> v části <bpt id="p2">**</bpt>Možnosti místního nastavení<ept id="p2">**</ept> můžete zobrazit měnu, která je definovaná pro vybranou společnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="789">
+          <source>Specify the currency on a multiple-currency report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadání měny v sestavě s více měnami</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="790">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="791">
+          <source>Double-click the <bpt id="p1">**</bpt>Currency Display<ept id="p1">**</ept> cell in the appropriate <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> column, and then select the option for displaying currency information: <bpt id="p3">**</bpt>Ledger accounting currency<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Ledger reporting<ept id="p4">**</ept>, transaction currency, or select to translate to a different reporting currency.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte dvakrát na buňku <bpt id="p1">**</bpt>Zobrazení měny<ept id="p1">**</ept> v odpovídajícím sloupci <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> a poté vyberte možnost zobrazení informací o měně: <bpt id="p3">**</bpt>Zúčtovací měna pro hlavní knihu<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Vykazování hlavní knihy<ept id="p4">**</ept>, měnu transakce nebo vyberte možnost převodu na jinou měnu vykazování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="792">
+          <source>Double-click the <bpt id="p1">**</bpt>Currency Filter<ept id="p1">**</ept> cell in the appropriate <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> column, and then select the appropriate currency code in the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte dvakrát na buňku <bpt id="p1">**</bpt>Filtr měny<ept id="p1">**</ept> v odpovídajícím sloupci <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> a poté vyberte odpovídající kód měny v seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="793">
+          <source>Only transactions that are entered in this currency are displayed on the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V sestavě jsou zobrazeny pouze transakce, které byly zadány v této měně.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="794">
+          <source>Example for Currency Display and Currency Filter cells</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad pro buňky Zobrazení měny a Filtr měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="795">
+          <source>Phyllis has made the following currency selections in her column definition:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Petra ve své definici sloupce vybrala následující měny:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="796">
+          <source><bpt id="p1">**</bpt>Currency Filter:<ept id="p1">**</ept> Yen</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Filtr měny:<ept id="p1">**</ept> Jen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="797">
+          <source><bpt id="p1">**</bpt>Currency Display:<ept id="p1">**</ept> Accounting currency from Ledger (U.S. dollars)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Zobrazení měny:<ept id="p1">**</ept> Zúčtovací měna z hlavní knihy (USD)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="798">
+          <source>Because of the currency filter that Phyllis selected, the report includes only transactions that were entered in Japanese yen (JPY).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzhledem k filtru měny, který Petra vybrala, se do sestavy zahrnou pouze transakce, které byly zadány v japonských jenech (JPY).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="799">
+          <source>Because of the currency display that she selected, the report displays those transactions in the accounting currency, U.S. dollars (USD).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzhledem k zobrazení měny, které vybrala, se v sestavě zobrazí tyto transakce v zúčtovací měně (americké dolary – USD).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="800">
+          <source>Currency Filter and Currency Display combinations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kombinace filtru měny a zobrazení měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="801">
+          <source>The following table shows the report results that can occur for various combinations of the options in <bpt id="p1">**</bpt>Currency Display<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Currency Filter<ept id="p2">**</ept> cells because of the selections that Phyllis made.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující tabulka obsahuje výsledky sestavy, které mohou nastat pro různé kombinace možností v buňkách <bpt id="p1">**</bpt>Zobrazení měny<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Filtr měny<ept id="p2">**</ept> z důvodu voleb, které Pavla učinila.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="802">
+          <source>The functional currency is USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkční měna je USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="803">
+          <source>Currency Display cell</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka Zobrazení měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="804">
+          <source>Currency Filter cell</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buňka Filtr měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="805">
+          <source>Report result</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výsledek sestavy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="806">
+          <source>Transaction currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Měna transakce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="807">
+          <source><bpt id="p1">**</bpt>YEN<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>JEN<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="808">
+          <source><bpt id="p1">**</bpt>Y6,000<ept id="p1">**</ept> – The result shows only transactions that were entered in JPY.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>6 000 Y<ept id="p1">**</ept> – výsledek ukazuje pouze transakce, které byly zadány v měně JPY.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="809">
+          <source>Accounting currency from Ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zúčtovací měna z hlavní knihy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="810">
+          <source><bpt id="p1">**</bpt>YEN<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>JEN<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="811">
+          <source><bpt id="p1">**</bpt>$60<ept id="p1">**</ept> – The result shows only transactions that were entered in JPY and displays those transactions in USD.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>60 $<ept id="p1">**</ept> – výsledek zobrazí pouze transakce, které byly zadány v měně JPY, a tyto transakce zobrazí v měně USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="812">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> The conversion rate is approximately 100 JPY per USD.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Poznámka:<ept id="p1">&lt;/strong&gt;</ept> Směnný kurz je přibližně 100 JPY na USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="813">
+          <source>Accounting currency from Ledger</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Zúčtovací měna z hlavní knihy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="814">
+          <source>Empty</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prázdné</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="815">
+          <source><bpt id="p1">**</bpt>$2,310<ept id="p1">**</ept> – The result shows all data in the accounting currency that is specified in the Ledger.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>2 310 USD<ept id="p1">**</ept> – Výsledek zobrazí všechna data v zúčtovací měně, která je určena v hlavní knize.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="816">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> This amount is the sum of all transactions in accounting currency.</source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;strong&gt;</bpt>Poznámka:<ept id="p1">&lt;/strong&gt;</ept> Tato částka je součtem všech transakcí v zúčtovací měně.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="817">
+          <source>Transaction currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Měna transakce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="818">
+          <source>Empty</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prázdné</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="819">
+          <source><bpt id="p1">**</bpt>$2,250<ept id="p1">**</ept> – The result shows all amounts in the currency that the transaction was performed in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>2 250 $<ept id="p1">**</ept> – výsledek obsahuje všechny částky v měně, ve které byla provedena transakce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="820">
+          <source>This means the total is adding together amounts from different currencies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">To znamená, že součet skládá dohromady částky z různých měn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="821">
+          <source>Calculation column in a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupec Výpočet v definici sloupců</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="822">
+          <source>A column type of <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> in a column definition supports complex calculations in the <bpt id="p2">**</bpt>Formula<ept id="p2">**</ept> cell, and can include the <bpt id="p3">**</bpt><ph id="ph1">+</ph><ept id="p3">**</ept>, <bpt id="p4">**</bpt><ph id="ph2">-</ph><ept id="p4">**</ept>, <bpt id="p5">**</bpt><ph id="ph3">\*</ph><ept id="p5">**</ept>, and <bpt id="p6">**</bpt><ph id="ph4">/</ph><ept id="p6">**</ept> operators, and also <bpt id="p7">**</bpt>IF/THEN/ELSE<ept id="p7">**</ept> statements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ sloupce <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> v definici sloupce podporuje složité výpočty v buňce <bpt id="p2">**</bpt>Vzorec<ept id="p2">**</ept> a může obsahovat operátory <bpt id="p3">**</bpt><ph id="ph1">+</ph><ept id="p3">**</ept>, <bpt id="p4">**</bpt><ph id="ph2">-</ph><ept id="p4">**</ept>, <bpt id="p5">**</bpt><ph id="ph3">\*</ph><ept id="p5">**</ept> a <bpt id="p6">**</bpt><ph id="ph4">/</ph><ept id="p6">**</ept>, a také výrazy <bpt id="p7">**</bpt>IF/THEN/ELSE<ept id="p7">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="823">
+          <source>A calculation column can also refer to any other column, even subsequent columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupec výpočtu může také odkazovat na libovolný sloupec, dokonce i následující sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="824">
+          <source>Additionally, a calculation column can also include the fiscal year and period to support headers for the column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kromě toho výpočet sloupce můžete zahrnout také fiskální rok a období k podpoře záhlaví sloupce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="825">
+          <source>The calculation formula can be up to 1,024 characters long.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzorec výpočtu může mít délku až 1 024 znaků.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="826">
+          <source>To express the calculation result as a percentage, use a special format override.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete výsledek výpočtu vyjádřit procentuální hodnotou, použijte formát přepisu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="827">
+          <source>The results of calculation formulas don't include the values in non-printing column ranges.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve výsledcích výpočetních vzorců nejsou zahrnuty hodnoty v netisknutelných rozsazích sloupců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="828">
+          <source>For example, <bpt id="p1">**</bpt>A:D<ept id="p1">**</ept> prints <bpt id="p2">**</bpt>0<ept id="p2">**</ept> (zero), whereas <bpt id="p3">**</bpt>A+B+C<ept id="p3">**</ept> for non-printing values calculates the value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například hodnota <bpt id="p1">**</bpt>A:D<ept id="p1">**</ept> vytiskne hodnotu <bpt id="p2">**</bpt>0<ept id="p2">**</ept> (nula), zatímco hodnota <bpt id="p3">**</bpt>A+B+C<ept id="p3">**</ept> pro netisknuté hodnoty vypočítá hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="829">
+          <source>Operators in calculation columns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operátory ve výpočetních sloupcích</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="830">
+          <source>To add, subtract, multiply, or divide columns, enter the column letters in the order of computation, and then use the appropriate operator to separate each column letter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li sloupce sčítat, odečítat, násobit nebo dělit, zadejte písmena sloupců v pořadí výpočtu a pak jednotlivá písmena sloupců oddělte příslušným operátorem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="831">
+          <source>The following table explains the operators that you can use in a calculation column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující tabulka vysvětluje operátory, které lze použít ve sloupci výpočtu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="832">
+          <source>Operator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operátor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="833">
+          <source>Example calculation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad výpočtu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="834">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="835">
+          <source>A+C</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A+C</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="836">
+          <source>Add the amount in column A to the amount in column C.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přičte částku ve sloupci A k částce ve sloupci C.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="837">
+          <source>:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="838">
+          <source>A:C A:C-D</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A:C A:C-D</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="839">
+          <source>Add a range of consecutive columns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sečte rozsah po sobě jdoucích sloupců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="840">
+          <source>For example, the formula <bpt id="p1">**</bpt>A:C<ept id="p1">**</ept> adds the sums of columns A through C, and the formula <bpt id="p2">**</bpt>A:C-D<ept id="p2">**</ept> adds the sums of columns A through C, and then subtracts the amount in column D.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například vzorec <bpt id="p1">**</bpt>A:C<ept id="p1">**</ept> sečte součty sloupců od A do C a vzorec <bpt id="p2">**</bpt>A:C-D<ept id="p2">**</ept> sečte součty sloupců od A do C a potom odečte částku ve sloupci D.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="841">
+          <source>A-C</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">A-C</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="842">
+          <source>Subtract the amount in column A from the amount in column C.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Odečte částku ve sloupci A od částky ve sloupci C.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="843">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> You can also use the minus sign (-) to reverse the signs in a column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Poznámka:<ept id="p1">&lt;/strong&gt;</ept> znaménko minus (-) lze také slouží k obrácení znamének ve sloupci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="844">
+          <source>For example, use <bpt id="p1">&lt;strong&gt;</bpt>-A+B<ept id="p1">&lt;/strong&gt;</ept> to add the reverse of the amount in column A to the amount in column B.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například můžete použít vzorec <bpt id="p1">&lt;strong&gt;</bpt>-A+B<ept id="p1">&lt;/strong&gt;</ept> k přičtení obrácené hodnoty částky ve sloupci A k částce ve sloupci B.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="845">
+          <source>A<ph id="ph1">\*</ph>C</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A<ph id="ph1">\*</ph>C</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="846">
+          <source>Multiply the amount in column A by the amount in column C.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vynásobí částku ve sloupci A částkou ve sloupci C.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="847">
+          <source>A/C</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A/C</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="848">
+          <source>Divide the amount in column A by the amount in column C.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vydělí částku ve sloupci A částkou ve sloupci C.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="849">
+          <source>Use a calculation formula in a column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použije vzorec výpočtu v definici sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="850">
+          <source>In Report Designer, open the column definition to modify.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="851">
+          <source>In the appropriate <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> column, enter a formula in the <bpt id="p2">**</bpt>Formula<ept id="p2">**</ept> cell.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V příslušném sloupci <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> zadejte vzorec do buňky <bpt id="p2">**</bpt>Vzorec<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="852">
+          <source>Complex calculations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Složité výpočty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="853">
+          <source>A complex calculation can contain any combination of cell references, operators, values, and levels of nested parentheses.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Složitý výpočet může obsahovat libovolnou kombinaci odkazů na buňky, operátorů, hodnot a úrovní vnořených závorek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="854">
+          <source>For example, to compute the average of columns A and B, use the calculation formula <bpt id="p1">**</bpt>((A+B)/2)<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vypočítat k výpočtu průměru ze sloupců A a B použijte výpočetní vzorec <bpt id="p1">**</bpt>((A+B)/2)<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="855">
+          <source>Specify report cells in a column calculation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadání buněk sestavy ve výpočtu sloupce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="856">
+          <source>You can refer to a specific report cell by entering a column letter and a row code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na konkrétní buňku sestavy lze odkázat zadáním písmene sloupce a kódu řádku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="857">
+          <source>For example, <bpt id="p1">**</bpt>B.100<ept id="p1">**</ept> refers to row code 100 in column B. You can divide a whole column by a specific report cell amount that is in the same column.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například <bpt id="p1">**</bpt>B.100<ept id="p1">**</ept> odkazuje na kód řádku 100 ve sloupci B. Můžete vydělit celý sloupec konkrétní hodnotou buňky sestavy, která se nachází ve stejném sloupci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="858">
+          <source>For example, the calculation <bpt id="p1">**</bpt>B/B.100<ept id="p1">**</ept> means that the amount in column B should be divided by the value in row code 100 in column B. If the calculation refers to a column that depends on another column, the dependent column is resolved first.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například výpočet <bpt id="p1">**</bpt>B/B.100<ept id="p1">**</ept> znamená, že částka ve sloupci B má být vydělena hodnotou v řádku s kódem 100 ve sloupci B. Odkazuje-li výpočet na sloupec, který závisí na jiném sloupci, je nejprve vyřešen závislý sloupec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="859">
+          <source>If you refer a column to another column that refers back to the first column, you will cause a circular reference error.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud nějaký sloupec odkážete na jiný sloupec a tento sloupec odkazuje zpět na první sloupec, způsobíte chybu cyklického odkazu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="860">
+          <source>The calculation might be incorrect if you change the calculation priority for the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výpočet může být nesprávný, pokud změníte prioritu výpočtů sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="861">
+          <source>You can set the calculation priority on the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> tab of the report definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prioritu pro výpočet lze nastavit na kartě <bpt id="p1">**</bpt>Nastavení<ept id="p1">**</ept> v definici sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="862">
+          <source>Multiply or divide a column by a base row</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Násobení nebo dělení sloupce základním řádkem</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="863">
+          <source>You can create a column that displays all the values in a specified column as a percentage of a base number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete vytvořit sloupec, který zobrazuje všechny hodnoty v zadaném sloupci jako procentuální hodnotu určitého základu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="864">
+          <source>Therefore, you can show relationships between rows, such as a percentage of a sales row or a percentage of a total expenses row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete tedy znázornit vztahy mezi řádky, například procentuální hodnotu řádku prodeje nebo procentuální hodnotu řádku celkových výdajů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="865">
+          <source>To multiply or divide each row in a specific column by a base row, enter the column to use in the calculation, and then enter <bpt id="p1">**</bpt><ph id="ph1">\*</ph>BASEROW<ept id="p1">**</ept> or <bpt id="p2">**</bpt>/BASEROW<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li násobit nebo dělit každý řádek v konkrétním sloupci základním řádkem, zadejte sloupec k použití při výpočtu a potom zadejte hodnotu <bpt id="p1">**</bpt><ph id="ph1">\*</ph>BASEROW<ept id="p1">**</ept> nebo <bpt id="p2">**</bpt>/BASEROW<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="866">
+          <source>For example, enter <bpt id="p1">**</bpt>C<ph id="ph1">\*</ph>BASEROW<ept id="p1">**</ept> or <bpt id="p2">**</bpt>C/BASEROW<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte například vzorec <bpt id="p1">**</bpt>C<ph id="ph1">\*</ph>BASEROW<ept id="p1">**</ept> nebo <bpt id="p2">**</bpt>C/BASEROW<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="867">
+          <source>When you use a base row calculation in a column definition, make sure that each row definition that is used with this column definition contains at least one base row for calculations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud v definici sloupců použijete výpočet základního řádku, musí každá definice řádků použitá s touto definicí sloupců obsahovat alespoň jeden základní řádek pro výpočty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="868">
+          <source>Divide the amount in a column by the number of periods</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vydělení částky ve sloupci počtem období</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="869">
+          <source>You can divide the amount in a column by a specified number of periods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částku v některém sloupci můžete vydělit zadaným počtem období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="870">
+          <source>For example, the formula <bpt id="p1">**</bpt>B/Periods<ept id="p1">**</ept> divides the value in column B by the number of periods in column B. If the calculation spans multiple columns, specify the number of periods to use in the calculation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například vzorec <bpt id="p1">**</bpt>B/Období<ept id="p1">**</ept> vydělí hodnotu ve sloupci B počtem období ve sloupci B. Pokud výpočet pokrývá více sloupců, zadejte počet období, který má být použit ve výpočtu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="871">
+          <source>For example, the formula <bpt id="p1">**</bpt>(B+C)/Periods<ept id="p1">**</ept> adds the amounts in column B and column C, and then divides the result by the period value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například vzorec <bpt id="p1">**</bpt>(B+C)/Období<ept id="p1">**</ept> sečte částky ve sloupcích B a C a potom výslednou hodnotu vydělí hodnotou období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="872">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další zdroje</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="873">
+          <source><bpt id="p1">[</bpt>Row definitions in financial reporting<ept id="p1">](row-definitions-financial-reporting.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Definice řádku ve finančním výkaznictví<ept id="p1">](row-definitions-financial-reporting.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="874">
+          <source><bpt id="p1">[</bpt>Advanced formatting options in financial reporting<ept id="p1">](advanced-formatting-options-financial-reporting.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Rozšířené možnosti formátování ve finančním výkaznictví<ept id="p1">](advanced-formatting-options-financial-reporting.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
