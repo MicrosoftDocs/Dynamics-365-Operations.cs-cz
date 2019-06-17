@@ -1,99 +1,534 @@
----
-title: Úpravy kurzů
-description: Toto téma uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 04/10/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: LedgerParameters
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 272683
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-elgolu
-ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 83f1b5686088292a4f23da2b479e963a8ed086fa
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513089"
----
-# <a name="exchange-rate-adjustments"></a><span data-ttu-id="0eed2-103">Úpravy kurzů</span><span class="sxs-lookup"><span data-stu-id="0eed2-103">Exchange rate adjustments</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="0eed2-104">Toto téma uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.</span><span class="sxs-lookup"><span data-stu-id="0eed2-104">This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</span></span>
-
-<span data-ttu-id="0eed2-105">Funkce pro vyrovnání kurzových rozdílů pro Estonsko, Maďarsko, Českou republiku, Litvu, Lotyšsko, Polsko a Rusko zahrnuje následující rozšíření, která jsou relevantní pro pohledávky a závazky:</span><span class="sxs-lookup"><span data-stu-id="0eed2-105">The functionality for exchange rate adjustments for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia includes the following extensions that are relevant for Accounts receivable and Accounts payable:</span></span>
-
--   <span data-ttu-id="0eed2-106">Zaúčtování vyrovnání kurzových rozdílů může být stornováno jako opravy (záporné částky) pro původní úpravy.</span><span class="sxs-lookup"><span data-stu-id="0eed2-106">Postings of exchange rate adjustments can be reversed as corrections (negative amounts) to the original adjustments.</span></span>
--   <span data-ttu-id="0eed2-107">Při zaúčtování po sobě jdoucích nerealizovaných úprav se používá stejný typ zúčtovacího účtu a transakce bez ohledu na to, zda úpravy představují zisk nebo ztrátu.</span><span class="sxs-lookup"><span data-stu-id="0eed2-107">When consecutive unrealized adjustments are posted, the same general ledger posting account and transaction type are used, regardless of whether the adjustments represent a gain or a loss.</span></span>
--   <span data-ttu-id="0eed2-108">Vypočtené kurzové zisky se vždy zaúčtovávají na účty zisků a vypočítané kurzové ztráty na účty ztrát.</span><span class="sxs-lookup"><span data-stu-id="0eed2-108">Calculated exchange rate gains are always posted to gain accounts, and calculated exchange rate losses are always posted to loss accounts.</span></span>
-
-<span data-ttu-id="0eed2-109">Právnické osoby, které mají primární adresu v rámci České republiky, mohou využít zvláštní metodu vyrovnání kurzových rozdílů.</span><span class="sxs-lookup"><span data-stu-id="0eed2-109">Legal entities that have their primary address in the Czech Republic can use a special method for exchange rate adjustment.</span></span> <span data-ttu-id="0eed2-110">Tato metoda se nazývá přírůstková metoda.</span><span class="sxs-lookup"><span data-stu-id="0eed2-110">This method is known as the Incremental method.</span></span> <span data-ttu-id="0eed2-111">Po zapnutí této metody změny nejsou použity změny které aktuální funkce zavedla.</span><span class="sxs-lookup"><span data-stu-id="0eed2-111">When this method is turned on, changes that the current feature introduces aren't applied.</span></span> <span data-ttu-id="0eed2-112">Nerealizované a realizované zisky nebo ztráty se počítají na základě posledního použitého směnného kurzu.</span><span class="sxs-lookup"><span data-stu-id="0eed2-112">Unrealized and realized gains or losses are calculated against the last exchange rate that was used.</span></span> <span data-ttu-id="0eed2-113">Opravená částka se použije namísto původní částky jako základ pro výpočet.</span><span class="sxs-lookup"><span data-stu-id="0eed2-113">The adjusted amount is used instead of the original amount as the basis of calculation.</span></span> <span data-ttu-id="0eed2-114">Pokud chcete přejít na metodu úpravy přírůstkového směnného kurzu, na stránce **Parametry hlavní knihy** v části **Přecenění cizí měny** v poli **Metoda výpočtu** vyberte **Přírůstkové**.</span><span class="sxs-lookup"><span data-stu-id="0eed2-114">To switch to the Incremental exchange rate adjustment method, on the **General ledger parameters** page, in the **Foreign currency revaluation** section, in the **Calculation method** field, select **Incremental**.</span></span> <span data-ttu-id="0eed2-115">Následující příklad ukazuje, jak funkce úpravy směnného kurzu funguje pro Estonsko, Maďarsko, Českou republiku, Litvu, Lotyšsko, Polsko a Rusko.</span><span class="sxs-lookup"><span data-stu-id="0eed2-115">The following example shows how the exchange rate adjustment functionality works for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</span></span> <span data-ttu-id="0eed2-116">Tady je obchodní scénář pro tento příklad:</span><span class="sxs-lookup"><span data-stu-id="0eed2-116">Here is the business scenario for this example:</span></span>
-
--   <span data-ttu-id="0eed2-117">Faktura v cizí měně je zaúčtována 1. prosince 2012.</span><span class="sxs-lookup"><span data-stu-id="0eed2-117">An invoice in a foreign currency is posted on December 1, 2012.</span></span>
--   <span data-ttu-id="0eed2-118">Platba v cizí měně je zaúčtována 3. ledna 2013</span><span class="sxs-lookup"><span data-stu-id="0eed2-118">The payment in the foreign currency is posted on January 3, 2013</span></span>
--   <span data-ttu-id="0eed2-119">Je provedeno vyrovnání pro použití platby u faktury.</span><span class="sxs-lookup"><span data-stu-id="0eed2-119">Settlement is done to apply the payment to the invoice.</span></span>
--   <span data-ttu-id="0eed2-120">Úprava směnného kurzu se provede 31. prosince 2012 (metoda = Standardní).</span><span class="sxs-lookup"><span data-stu-id="0eed2-120">Exchange rates adjustment is done on December 31, 2012 (method = Standard).</span></span>
--   <span data-ttu-id="0eed2-121">Úprava směnného kurzu se provede 1. ledna 2013 (metoda = datum na faktuře).</span><span class="sxs-lookup"><span data-stu-id="0eed2-121">Exchange rates adjustment is done on January 1, 2013 (method = Invoice date).</span></span>
-
-<span data-ttu-id="0eed2-122">Zde jsou směnné kurzy pro kanadské dolary (CAD) americké dolary (USD) pro tento příklad:</span><span class="sxs-lookup"><span data-stu-id="0eed2-122">Here are the exchange rates for Canadian dollars (CAD) to U.S. dollars (USD) for this example:</span></span>
-
--   <span data-ttu-id="0eed2-123">1. prosince 2012: 400,0000</span><span class="sxs-lookup"><span data-stu-id="0eed2-123">December 1, 2012: 400.0000</span></span>
--   <span data-ttu-id="0eed2-124">31. prosince 2012: 450,0000</span><span class="sxs-lookup"><span data-stu-id="0eed2-124">December 31, 2012: 450.0000</span></span>
--   <span data-ttu-id="0eed2-125">3. ledna 2013: 420,0000</span><span class="sxs-lookup"><span data-stu-id="0eed2-125">January 3, 2013: 420.0000</span></span>
-
-### <a name="invoice"></a><span data-ttu-id="0eed2-126">Faktura</span><span class="sxs-lookup"><span data-stu-id="0eed2-126">Invoice</span></span>
-
-| <span data-ttu-id="0eed2-127">Datum</span><span class="sxs-lookup"><span data-stu-id="0eed2-127">Date</span></span>                             | <span data-ttu-id="0eed2-128">Má dáti / Dal</span><span class="sxs-lookup"><span data-stu-id="0eed2-128">Debit/credit</span></span> | <span data-ttu-id="0eed2-129">Částky</span><span class="sxs-lookup"><span data-stu-id="0eed2-129">Amounts</span></span>               | <span data-ttu-id="0eed2-130">Účet hlavní knihy (HK)</span><span class="sxs-lookup"><span data-stu-id="0eed2-130">General ledger (GL) account</span></span>    | <span data-ttu-id="0eed2-131">typ transakce</span><span class="sxs-lookup"><span data-stu-id="0eed2-131">Transaction type</span></span>             | <span data-ttu-id="0eed2-132">Typ zaúčtování</span><span class="sxs-lookup"><span data-stu-id="0eed2-132">Posting type</span></span>       | <span data-ttu-id="0eed2-133">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-133">Credit</span></span> | <span data-ttu-id="0eed2-134">Oprava</span><span class="sxs-lookup"><span data-stu-id="0eed2-134">Correction</span></span> |
-|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
-| <span data-ttu-id="0eed2-135">1-Pro-12</span><span class="sxs-lookup"><span data-stu-id="0eed2-135">1-Dec-12</span></span>                         | <span data-ttu-id="0eed2-136">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="0eed2-136">Debit</span></span>        | <span data-ttu-id="0eed2-137">10,000 CAD/40,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-137">10,000 CAD/40,000 USD</span></span> | <span data-ttu-id="0eed2-138">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="0eed2-138">AR</span></span>                             | <span data-ttu-id="0eed2-139">Faktura</span><span class="sxs-lookup"><span data-stu-id="0eed2-139">Invoice</span></span>                      | <span data-ttu-id="0eed2-140">Zůstatek odběratele</span><span class="sxs-lookup"><span data-stu-id="0eed2-140">Customer balance</span></span>   |        |            |
-| <span data-ttu-id="0eed2-141">1-Pro-12</span><span class="sxs-lookup"><span data-stu-id="0eed2-141">1-Dec-12</span></span>                         | <span data-ttu-id="0eed2-142">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-142">Credit</span></span>       | <span data-ttu-id="0eed2-143">10,000 CAD/40,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-143">10,000 CAD/40,000 USD</span></span> | <span data-ttu-id="0eed2-144">Protiúčet</span><span class="sxs-lookup"><span data-stu-id="0eed2-144">Offset</span></span>                         | <span data-ttu-id="0eed2-145">Faktura</span><span class="sxs-lookup"><span data-stu-id="0eed2-145">Invoice</span></span>                      | <span data-ttu-id="0eed2-146">Deník hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="0eed2-146">Ledger journal</span></span>     | <span data-ttu-id="0eed2-147">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-147">X</span></span>      |
-
-### <a name="payment"></a><span data-ttu-id="0eed2-148">Platba</span><span class="sxs-lookup"><span data-stu-id="0eed2-148">Payment</span></span>
-
-| <span data-ttu-id="0eed2-149">Datum</span><span class="sxs-lookup"><span data-stu-id="0eed2-149">Date</span></span>                             | <span data-ttu-id="0eed2-150">Má dáti / Dal</span><span class="sxs-lookup"><span data-stu-id="0eed2-150">Debit/credit</span></span> | <span data-ttu-id="0eed2-151">Částky</span><span class="sxs-lookup"><span data-stu-id="0eed2-151">Amounts</span></span>               | <span data-ttu-id="0eed2-152">Účet hlavní knihy (HK)</span><span class="sxs-lookup"><span data-stu-id="0eed2-152">General ledger (GL) account</span></span>    | <span data-ttu-id="0eed2-153">typ transakce</span><span class="sxs-lookup"><span data-stu-id="0eed2-153">Transaction type</span></span>             | <span data-ttu-id="0eed2-154">Typ zaúčtování</span><span class="sxs-lookup"><span data-stu-id="0eed2-154">Posting type</span></span>       | <span data-ttu-id="0eed2-155">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-155">Credit</span></span> | <span data-ttu-id="0eed2-156">Oprava</span><span class="sxs-lookup"><span data-stu-id="0eed2-156">Correction</span></span> |
-|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
-| <span data-ttu-id="0eed2-157">3-led-13</span><span class="sxs-lookup"><span data-stu-id="0eed2-157">3-Jan-13</span></span>                         | <span data-ttu-id="0eed2-158">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="0eed2-158">Debit</span></span>        | <span data-ttu-id="0eed2-159">10,000 CAD/42,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-159">10,000 CAD/42,000 USD</span></span> | <span data-ttu-id="0eed2-160">Protiúčet</span><span class="sxs-lookup"><span data-stu-id="0eed2-160">Offset</span></span>                         | <span data-ttu-id="0eed2-161">Platba</span><span class="sxs-lookup"><span data-stu-id="0eed2-161">Payment</span></span>                      | <span data-ttu-id="0eed2-162">Deník hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="0eed2-162">Ledger journal</span></span>     |        |            |
-| <span data-ttu-id="0eed2-163">3-led-13</span><span class="sxs-lookup"><span data-stu-id="0eed2-163">3-Jan-13</span></span>                         | <span data-ttu-id="0eed2-164">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-164">Credit</span></span>       | <span data-ttu-id="0eed2-165">10,000 CAD/42,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-165">10,000 CAD/42,000 USD</span></span> | <span data-ttu-id="0eed2-166">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="0eed2-166">AR</span></span>                             | <span data-ttu-id="0eed2-167">Platba</span><span class="sxs-lookup"><span data-stu-id="0eed2-167">Payment</span></span>                      | <span data-ttu-id="0eed2-168">Zůstatek odběratele</span><span class="sxs-lookup"><span data-stu-id="0eed2-168">Customer balance</span></span>   | <span data-ttu-id="0eed2-169">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-169">X</span></span>      |            |
-
-### <a name="settlement"></a><span data-ttu-id="0eed2-170">Vyrovnání</span><span class="sxs-lookup"><span data-stu-id="0eed2-170">Settlement</span></span>
-
-| <span data-ttu-id="0eed2-171">Datum</span><span class="sxs-lookup"><span data-stu-id="0eed2-171">Date</span></span>                             | <span data-ttu-id="0eed2-172">Má dáti / Dal</span><span class="sxs-lookup"><span data-stu-id="0eed2-172">Debit/credit</span></span> | <span data-ttu-id="0eed2-173">Částky</span><span class="sxs-lookup"><span data-stu-id="0eed2-173">Amounts</span></span>               | <span data-ttu-id="0eed2-174">Účet hlavní knihy (HK)</span><span class="sxs-lookup"><span data-stu-id="0eed2-174">General ledger (GL) account</span></span>    | <span data-ttu-id="0eed2-175">typ transakce</span><span class="sxs-lookup"><span data-stu-id="0eed2-175">Transaction type</span></span>             | <span data-ttu-id="0eed2-176">Typ zaúčtování</span><span class="sxs-lookup"><span data-stu-id="0eed2-176">Posting type</span></span>       | <span data-ttu-id="0eed2-177">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-177">Credit</span></span> | <span data-ttu-id="0eed2-178">Oprava</span><span class="sxs-lookup"><span data-stu-id="0eed2-178">Correction</span></span> |
-|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
-|<span data-ttu-id="0eed2-179">3. ledna 2013 (= datum platby)</span><span class="sxs-lookup"><span data-stu-id="0eed2-179">January 3, 2013 (= payment date)</span></span> | <span data-ttu-id="0eed2-180">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="0eed2-180">Debit</span></span>        | <span data-ttu-id="0eed2-181">0 CAD/2,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-181">0 CAD/2,000 USD</span></span>       | <span data-ttu-id="0eed2-182">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="0eed2-182">AR</span></span>                             | <span data-ttu-id="0eed2-183">Zákazník</span><span class="sxs-lookup"><span data-stu-id="0eed2-183">Customer</span></span>                     | <span data-ttu-id="0eed2-184">Zisk ze směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="0eed2-184">Exchange rate gain</span></span> |        |            |
-<span data-ttu-id="0eed2-185">3. ledna 2013 (= datum platby)</span><span class="sxs-lookup"><span data-stu-id="0eed2-185">January 3, 2013 (= payment date)</span></span> | <span data-ttu-id="0eed2-186">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-186">Credit</span></span>       | <span data-ttu-id="0eed2-187">0 CAD/2,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-187">0 CAD/2,000 USD</span></span>       | <span data-ttu-id="0eed2-188">Zisk po úpravě v realizované měně</span><span class="sxs-lookup"><span data-stu-id="0eed2-188">Realized currency adj profit</span></span>   | <span data-ttu-id="0eed2-189">Zákazník</span><span class="sxs-lookup"><span data-stu-id="0eed2-189">Customer</span></span>                     | <span data-ttu-id="0eed2-190">Zisk ze směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="0eed2-190">Exchange rate gain</span></span> | <span data-ttu-id="0eed2-191">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-191">X</span></span>      |            |
-
-
-### <a name="revaluation--standard-method-date--december-31-2012"></a><span data-ttu-id="0eed2-192">Přecenění (standardní metodou, datum = 31. prosince 2012)</span><span class="sxs-lookup"><span data-stu-id="0eed2-192">Revaluation  (Standard method; date = December 31, 2012)</span></span>
-<span data-ttu-id="0eed2-193">Například u tohoto přecenění si všimněte, že položka ze 3. ledna 2013 je přímým stornem položky z 31. prosince 2012.</span><span class="sxs-lookup"><span data-stu-id="0eed2-193">For this revaluation example, notice that the entry from January 3, 2013, is a direct reversal of the December 31, 2012 entry.</span></span> <span data-ttu-id="0eed2-194">Dokonce účty hlavní knihy a typy zaúčtování jsou shodné.</span><span class="sxs-lookup"><span data-stu-id="0eed2-194">Even the GL accounts and posting types are the same.</span></span> <span data-ttu-id="0eed2-195">Dále si všimněte, že byl nastaven příznak **Oprava**.</span><span class="sxs-lookup"><span data-stu-id="0eed2-195">Additionally, notice that the **Correction** flag has been set.</span></span>
-
-| <span data-ttu-id="0eed2-196">Datum</span><span class="sxs-lookup"><span data-stu-id="0eed2-196">Date</span></span>                             | <span data-ttu-id="0eed2-197">Má dáti / Dal</span><span class="sxs-lookup"><span data-stu-id="0eed2-197">Debit/credit</span></span> | <span data-ttu-id="0eed2-198">Částky</span><span class="sxs-lookup"><span data-stu-id="0eed2-198">Amounts</span></span>               | <span data-ttu-id="0eed2-199">Účet hlavní knihy (HK)</span><span class="sxs-lookup"><span data-stu-id="0eed2-199">General ledger (GL) account</span></span>    | <span data-ttu-id="0eed2-200">typ transakce</span><span class="sxs-lookup"><span data-stu-id="0eed2-200">Transaction type</span></span>             | <span data-ttu-id="0eed2-201">Typ zaúčtování</span><span class="sxs-lookup"><span data-stu-id="0eed2-201">Posting type</span></span>       | <span data-ttu-id="0eed2-202">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-202">Credit</span></span> | <span data-ttu-id="0eed2-203">Oprava</span><span class="sxs-lookup"><span data-stu-id="0eed2-203">Correction</span></span> |
-|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
-| <span data-ttu-id="0eed2-204">31-Pro-12</span><span class="sxs-lookup"><span data-stu-id="0eed2-204">31-Dec-12</span></span>           | <span data-ttu-id="0eed2-205">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="0eed2-205">Debit</span></span>        | <span data-ttu-id="0eed2-206">0 CAD/5,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-206">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="0eed2-207">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="0eed2-207">AR</span></span>                             | <span data-ttu-id="0eed2-208">Přecenění cizí měny</span><span class="sxs-lookup"><span data-stu-id="0eed2-208">Foreign currency revaluation</span></span> | <span data-ttu-id="0eed2-209">Zisk ze směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="0eed2-209">Exchange rate gain</span></span> |        |            |
-| <span data-ttu-id="0eed2-210">31-Pro-12</span><span class="sxs-lookup"><span data-stu-id="0eed2-210">31-Dec-12</span></span>           | <span data-ttu-id="0eed2-211">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-211">Credit</span></span>       | <span data-ttu-id="0eed2-212">0 CAD/5,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-212">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="0eed2-213">Zisk po úpravě v nerealizované měně</span><span class="sxs-lookup"><span data-stu-id="0eed2-213">Unrealized currency adj profit</span></span> | <span data-ttu-id="0eed2-214">Přecenění cizí měny</span><span class="sxs-lookup"><span data-stu-id="0eed2-214">Foreign currency revaluation</span></span> | <span data-ttu-id="0eed2-215">Zisk ze směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="0eed2-215">Exchange rate gain</span></span> | <span data-ttu-id="0eed2-216">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-216">X</span></span>      |            |
-| <span data-ttu-id="0eed2-217">3-led-13</span><span class="sxs-lookup"><span data-stu-id="0eed2-217">3-Jan-13</span></span>            | <span data-ttu-id="0eed2-218">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="0eed2-218">Debit</span></span>        | <span data-ttu-id="0eed2-219">0 CAD/5,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-219">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="0eed2-220">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="0eed2-220">AR</span></span>                             | <span data-ttu-id="0eed2-221">Přecenění cizí měny</span><span class="sxs-lookup"><span data-stu-id="0eed2-221">Foreign currency revaluation</span></span> | <span data-ttu-id="0eed2-222">Zisk ze směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="0eed2-222">Exchange rate gain</span></span> |        | <span data-ttu-id="0eed2-223">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-223">X</span></span>          |
- <span data-ttu-id="0eed2-224">3-led-13</span><span class="sxs-lookup"><span data-stu-id="0eed2-224">3-Jan-13</span></span>            | <span data-ttu-id="0eed2-225">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-225">Credit</span></span>       | <span data-ttu-id="0eed2-226">0 CAD/5,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-226">0 CAD/5,000 USD</span></span>       | <span data-ttu-id="0eed2-227">Zisk po úpravě v nerealizované měně</span><span class="sxs-lookup"><span data-stu-id="0eed2-227">Unrealized currency adj profit</span></span> | <span data-ttu-id="0eed2-228">Přecenění cizí měny</span><span class="sxs-lookup"><span data-stu-id="0eed2-228">Foreign currency revaluation</span></span> | <span data-ttu-id="0eed2-229">Zisk ze směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="0eed2-229">Exchange rate gain</span></span> | <span data-ttu-id="0eed2-230">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-230">X</span></span>      | <span data-ttu-id="0eed2-231">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-231">X</span></span>          |
-
-
-### <a name="revaluation-invoice-date-method-date--january-1-2013"></a><span data-ttu-id="0eed2-232">Přecenění (metoda data faktury, datum = 1. ledna 2013)</span><span class="sxs-lookup"><span data-stu-id="0eed2-232">Revaluation (Invoice date method; date = January 1, 2013)</span></span>
-<span data-ttu-id="0eed2-233">Například u tohoto přecenění si všimněte, že položka ze 1. ledna 2013 je přímým stornem položky z 3. ledna 2013.</span><span class="sxs-lookup"><span data-stu-id="0eed2-233">For this revaluation, notice that the entry from January 1, 2013, is a direct reversal of the January 3, 2013 entry).</span></span> <span data-ttu-id="0eed2-234">Dokonce účty hlavní knihy a typy zaúčtování jsou shodné.</span><span class="sxs-lookup"><span data-stu-id="0eed2-234">Even the GL accounts and posting types are the same.</span></span> <span data-ttu-id="0eed2-235">Dále si všimněte, že byl nastaven příznak **Oprava**.</span><span class="sxs-lookup"><span data-stu-id="0eed2-235">Additionally, notice that the **Correction** flag has been set.</span></span>
-
-| <span data-ttu-id="0eed2-236">Datum</span><span class="sxs-lookup"><span data-stu-id="0eed2-236">Date</span></span>   | <span data-ttu-id="0eed2-237">Má dáti / Dal</span><span class="sxs-lookup"><span data-stu-id="0eed2-237">Debit/credit</span></span> | <span data-ttu-id="0eed2-238">Částky</span><span class="sxs-lookup"><span data-stu-id="0eed2-238">Amounts</span></span> | <span data-ttu-id="0eed2-239">Účet hlavní knihy (HK)</span><span class="sxs-lookup"><span data-stu-id="0eed2-239">General ledger (GL) account</span></span>| <span data-ttu-id="0eed2-240">typ transakce</span><span class="sxs-lookup"><span data-stu-id="0eed2-240">Transaction type</span></span>| <span data-ttu-id="0eed2-241">Typ zaúčtování</span><span class="sxs-lookup"><span data-stu-id="0eed2-241">Posting type</span></span>| <span data-ttu-id="0eed2-242">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-242">Credit</span></span> | <span data-ttu-id="0eed2-243">Oprava</span><span class="sxs-lookup"><span data-stu-id="0eed2-243">Correction</span></span> |
-|--------|--------------|---------|----------------------------|----------------|--------|------------|--------------|
-|<span data-ttu-id="0eed2-244">1-led-13</span><span class="sxs-lookup"><span data-stu-id="0eed2-244">1-Jan-13</span></span> | <span data-ttu-id="0eed2-245">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="0eed2-245">Debit</span></span>  | <span data-ttu-id="0eed2-246">0 CAD/5,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-246">0 CAD/5,000 USD</span></span> | <span data-ttu-id="0eed2-247">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="0eed2-247">AR</span></span>                             | <span data-ttu-id="0eed2-248">Přecenění cizí měny</span><span class="sxs-lookup"><span data-stu-id="0eed2-248">Foreign currency revaluation</span></span> | <span data-ttu-id="0eed2-249">Zisk ze směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="0eed2-249">Exchange rate gain</span></span> |   | <span data-ttu-id="0eed2-250">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-250">X</span></span> |
-|<span data-ttu-id="0eed2-251">1-led-13</span><span class="sxs-lookup"><span data-stu-id="0eed2-251">1-Jan-13</span></span> | <span data-ttu-id="0eed2-252">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-252">Credit</span></span> | <span data-ttu-id="0eed2-253">0 CAD/5,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-253">0 CAD/5,000 USD</span></span> | <span data-ttu-id="0eed2-254">Zisk po úpravě v nerealizované měně</span><span class="sxs-lookup"><span data-stu-id="0eed2-254">Unrealized currency adj profit</span></span> | <span data-ttu-id="0eed2-255">Přecenění cizí měny</span><span class="sxs-lookup"><span data-stu-id="0eed2-255">Foreign currency revaluation</span></span> | <span data-ttu-id="0eed2-256">Zisk ze směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="0eed2-256">Exchange rate gain</span></span> | <span data-ttu-id="0eed2-257">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-257">X</span></span> | <span data-ttu-id="0eed2-258">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-258">X</span></span> |
-|<span data-ttu-id="0eed2-259">3-led-13</span><span class="sxs-lookup"><span data-stu-id="0eed2-259">3-Jan-13</span></span> | <span data-ttu-id="0eed2-260">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="0eed2-260">Debit</span></span>  | <span data-ttu-id="0eed2-261">0 CAD/5,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-261">0 CAD/5,000 USD</span></span> | <span data-ttu-id="0eed2-262">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="0eed2-262">AR</span></span>                             | <span data-ttu-id="0eed2-263">Přecenění cizí měny</span><span class="sxs-lookup"><span data-stu-id="0eed2-263">Foreign currency revaluation</span></span> | <span data-ttu-id="0eed2-264">Zisk ze směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="0eed2-264">Exchange rate gain</span></span> |   |   |
-|<span data-ttu-id="0eed2-265">3-led-13</span><span class="sxs-lookup"><span data-stu-id="0eed2-265">3-Jan-13</span></span> | <span data-ttu-id="0eed2-266">Kreditní</span><span class="sxs-lookup"><span data-stu-id="0eed2-266">Credit</span></span> | <span data-ttu-id="0eed2-267">0 CAD/5,000 USD</span><span class="sxs-lookup"><span data-stu-id="0eed2-267">0 CAD/5,000 USD</span></span> | <span data-ttu-id="0eed2-268">Zisk po úpravě v nerealizované měně</span><span class="sxs-lookup"><span data-stu-id="0eed2-268">Unrealized currency adj profit</span></span> | <span data-ttu-id="0eed2-269">Přecenění cizí měny</span><span class="sxs-lookup"><span data-stu-id="0eed2-269">Foreign currency revaluation</span></span> | <span data-ttu-id="0eed2-270">Zisk ze směnného kurzu</span><span class="sxs-lookup"><span data-stu-id="0eed2-270">Exchange rate gain</span></span> | <span data-ttu-id="0eed2-271">X</span><span class="sxs-lookup"><span data-stu-id="0eed2-271">X</span></span> |   |
-
-<span data-ttu-id="0eed2-272">Chování systému je stejné bez ohledu na to, zda je volba **Oprava** v části **Storno transakce** na stránce **Parametry hlavní knihy** nastavená na **Ano** nebo **Ne**.</span><span class="sxs-lookup"><span data-stu-id="0eed2-272">The system behavior is the same, regardless of whether the **Correction** option in the **Transaction reversal** section on the **General ledger parameters** page is set to **Yes** or **No**.</span></span>
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-exchange-rate-adjustments.md" target-language="cs-CZ">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-exchange-rate-adjustments.8c3cbc.eece22113824fd520568dc46bbd384bda23c3c8d.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>eece22113824fd520568dc46bbd384bda23c3c8d</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-exchange-rate-adjustments.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Exchange rate adjustments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úpravy kurzů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Exchange rate adjustments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úpravy kurzů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma uvádí informace o funkci úpravy směnného kurzu, která umožňuje uživatelům v právnickým osobách v Estonsku, Maďarsku, Litvě, České republice, Maďarsku, Lotyšku, Polsku a Rusku provádět hotovostní operace v systému.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>The functionality for exchange rate adjustments for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia includes the following extensions that are relevant for Accounts receivable and Accounts payable:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce pro vyrovnání kurzových rozdílů pro Estonsko, Maďarsko, Českou republiku, Litvu, Lotyšsko, Polsko a Rusko zahrnuje následující rozšíření, která jsou relevantní pro pohledávky a závazky:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Postings of exchange rate adjustments can be reversed as corrections (negative amounts) to the original adjustments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaúčtování vyrovnání kurzových rozdílů může být stornováno jako opravy (záporné částky) pro původní úpravy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>When consecutive unrealized adjustments are posted, the same general ledger posting account and transaction type are used, regardless of whether the adjustments represent a gain or a loss.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při zaúčtování po sobě jdoucích nerealizovaných úprav se používá stejný typ zúčtovacího účtu a transakce bez ohledu na to, zda úpravy představují zisk nebo ztrátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Calculated exchange rate gains are always posted to gain accounts, and calculated exchange rate losses are always posted to loss accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vypočtené kurzové zisky se vždy zaúčtovávají na účty zisků a vypočítané kurzové ztráty na účty ztrát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Legal entities that have their primary address in the Czech Republic can use a special method for exchange rate adjustment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Právnické osoby, které mají primární adresu v rámci České republiky, mohou využít zvláštní metodu vyrovnání kurzových rozdílů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>This method is known as the Incremental method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato metoda se nazývá přírůstková metoda.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>When this method is turned on, changes that the current feature introduces aren't applied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po zapnutí této metody změny nejsou použity změny které aktuální funkce zavedla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Unrealized and realized gains or losses are calculated against the last exchange rate that was used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nerealizované a realizované zisky nebo ztráty se počítají na základě posledního použitého směnného kurzu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The adjusted amount is used instead of the original amount as the basis of calculation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opravená částka se použije namísto původní částky jako základ pro výpočet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>To switch to the Incremental exchange rate adjustment method, on the <bpt id="p1">**</bpt>General ledger parameters<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Foreign currency revaluation<ept id="p2">**</ept> section, in the <bpt id="p3">**</bpt>Calculation method<ept id="p3">**</ept> field, select <bpt id="p4">**</bpt>Incremental<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete přejít na metodu úpravy přírůstkového směnného kurzu, na stránce <bpt id="p1">**</bpt>Parametry hlavní knihy<ept id="p1">**</ept> v části <bpt id="p2">**</bpt>Přecenění cizí měny<ept id="p2">**</ept> v poli <bpt id="p3">**</bpt>Metoda výpočtu<ept id="p3">**</ept> vyberte <bpt id="p4">**</bpt>Přírůstkové<ept id="p4">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>The following example shows how the exchange rate adjustment functionality works for Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující příklad ukazuje, jak funkce úpravy směnného kurzu funguje pro Estonsko, Maďarsko, Českou republiku, Litvu, Lotyšsko, Polsko a Rusko.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Here is the business scenario for this example:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tady je obchodní scénář pro tento příklad:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>An invoice in a foreign currency is posted on December 1, 2012.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura v cizí měně je zaúčtována 1. prosince 2012.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>The payment in the foreign currency is posted on January 3, 2013</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platba v cizí měně je zaúčtována 3. ledna 2013</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Settlement is done to apply the payment to the invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je provedeno vyrovnání pro použití platby u faktury.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Exchange rates adjustment is done on December 31, 2012 (method = Standard).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úprava směnného kurzu se provede 31. prosince 2012 (metoda = Standardní).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Exchange rates adjustment is done on January 1, 2013 (method = Invoice date).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úprava směnného kurzu se provede 1. ledna 2013 (metoda = datum na faktuře).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Here are the exchange rates for Canadian dollars (CAD) to U.S. dollars (USD) for this example:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zde jsou směnné kurzy pro kanadské dolary (CAD) americké dolary (USD) pro tento příklad:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>December 1, 2012: 400.0000</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1. prosince 2012: 400,0000</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>December 31, 2012: 450.0000</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">31. prosince 2012: 450,0000</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>January 3, 2013: 420.0000</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3. ledna 2013: 420,0000</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Debit/credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má dáti / Dal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>General ledger (GL) account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet hlavní knihy (HK)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">typ transakce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Posting type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ zaúčtování</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprava</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>1-Dec-12</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1-Pro-12</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>10,000 CAD/40,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10,000 CAD/40,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Customer balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zůstatek odběratele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>1-Dec-12</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1-Pro-12</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>10,000 CAD/40,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10,000 CAD/40,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Offset</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Protiúčet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Ledger journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Deník hlavní knihy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platba</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Debit/credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má dáti / Dal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>General ledger (GL) account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet hlavní knihy (HK)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">typ transakce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Posting type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ zaúčtování</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprava</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-led-13</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>10,000 CAD/42,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10,000 CAD/42,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Offset</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Protiúčet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platba</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Ledger journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Deník hlavní knihy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-led-13</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>10,000 CAD/42,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10,000 CAD/42,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platba</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Customer balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zůstatek odběratele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Settlement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyrovnání</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Debit/credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má dáti / Dal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>General ledger (GL) account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet hlavní knihy (HK)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">typ transakce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Posting type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ zaúčtování</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprava</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>January 3, 2013 (= payment date)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3. ledna 2013 (= datum platby)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>0 CAD/2,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/2,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zákazník</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk ze směnného kurzu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>January 3, 2013 (= payment date)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3. ledna 2013 (= datum platby)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>0 CAD/2,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/2,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Realized currency adj profit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk po úpravě v realizované měně</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zákazník</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk ze směnného kurzu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Revaluation  (Standard method; date = December 31, 2012)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přecenění (standardní metodou, datum = 31. prosince 2012)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>For this revaluation example, notice that the entry from January 3, 2013, is a direct reversal of the December 31, 2012 entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například u tohoto přecenění si všimněte, že položka ze 3. ledna 2013 je přímým stornem položky z 31. prosince 2012.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Even the GL accounts and posting types are the same.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dokonce účty hlavní knihy a typy zaúčtování jsou shodné.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Additionally, notice that the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> flag has been set.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dále si všimněte, že byl nastaven příznak <bpt id="p1">**</bpt>Oprava<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Debit/credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má dáti / Dal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>General ledger (GL) account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet hlavní knihy (HK)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">typ transakce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Posting type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ zaúčtování</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprava</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>31-Dec-12</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">31-Pro-12</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přecenění cizí měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk ze směnného kurzu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>31-Dec-12</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">31-Pro-12</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Unrealized currency adj profit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk po úpravě v nerealizované měně</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přecenění cizí měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk ze směnného kurzu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-led-13</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přecenění cizí měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk ze směnného kurzu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-led-13</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Unrealized currency adj profit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk po úpravě v nerealizované měně</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přecenění cizí měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk ze směnného kurzu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Revaluation (Invoice date method; date = January 1, 2013)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přecenění (metoda data faktury, datum = 1. ledna 2013)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>For this revaluation, notice that the entry from January 1, 2013, is a direct reversal of the January 3, 2013 entry).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například u tohoto přecenění si všimněte, že položka ze 1. ledna 2013 je přímým stornem položky z 3. ledna 2013.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Even the GL accounts and posting types are the same.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dokonce účty hlavní knihy a typy zaúčtování jsou shodné.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Additionally, notice that the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> flag has been set.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dále si všimněte, že byl nastaven příznak <bpt id="p1">**</bpt>Oprava<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Debit/credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má dáti / Dal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>General ledger (GL) account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet hlavní knihy (HK)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Transaction type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">typ transakce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Posting type</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ zaúčtování</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Correction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprava</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>1-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1-led-13</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přecenění cizí měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk ze směnného kurzu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>1-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1-led-13</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Unrealized currency adj profit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk po úpravě v nerealizované měně</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přecenění cizí měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk ze směnného kurzu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-led-13</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>AR</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přecenění cizí měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk ze směnného kurzu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>3-Jan-13</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3-led-13</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>0 CAD/5,000 USD</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0 CAD/5,000 USD</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Unrealized currency adj profit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk po úpravě v nerealizované měně</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Foreign currency revaluation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přecenění cizí měny</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Exchange rate gain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zisk ze směnného kurzu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>X</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>The system behavior is the same, regardless of whether the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> option in the <bpt id="p2">**</bpt>Transaction reversal<ept id="p2">**</ept> section on the <bpt id="p3">**</bpt>General ledger parameters<ept id="p3">**</ept> page is set to <bpt id="p4">**</bpt>Yes<ept id="p4">**</ept> or <bpt id="p5">**</bpt>No<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chování systému je stejné bez ohledu na to, zda je volba <bpt id="p1">**</bpt>Oprava<ept id="p1">**</ept> v části <bpt id="p2">**</bpt>Storno transakce<ept id="p2">**</ept> na stránce <bpt id="p3">**</bpt>Parametry hlavní knihy<ept id="p3">**</ept> nastavená na <bpt id="p4">**</bpt>Ano<ept id="p4">**</ept> nebo <bpt id="p5">**</bpt>Ne<ept id="p5">**</ept>.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

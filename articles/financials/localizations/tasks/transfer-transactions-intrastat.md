@@ -1,191 +1,519 @@
----
-title: Převod transakcí do systému Intrastat
-description: Tento postup vás provede nastavením parametrů systému Intrastat a převodem transakcí do systému Intrastat.
-author: Anasyash
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategory, UnitOfMeasureLookup, ProcCategoryAddCommodityCode, EcoResProductDetailsExtended, IntrastatCommodityLookup, IntrastatTransactionCode, IntrastatParameters, DeliveryMode, MarkupTable, SalesTableListPage, SalesCreateOrder, SalesTable, MarkupTrans, SalesEditLines,  Intrastat, SysQueryForm
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: anasyash
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a0e332d5cae09c5026a64a4463e301a008860bd9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537626"
----
-# <a name="transfer-transactions-to-the-intrastat"></a><span data-ttu-id="d489a-103">Převod transakcí do systému Intrastat</span><span class="sxs-lookup"><span data-stu-id="d489a-103">Transfer transactions to the Intrastat</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="d489a-104">Tento postup vás provede nastavením parametrů systému Intrastat a převodem transakcí do systému Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d489a-104">This procedure walks you through how to set up Intrastat parameters and transfer transactions to Intrastat.</span></span> <span data-ttu-id="d489a-105">Tato procedura byla vytvořena pomocí ukázkových dat společnosti DEMF.</span><span class="sxs-lookup"><span data-stu-id="d489a-105">This procedure was created using the demo data company DEMF.</span></span>
-
-
-## <a name="create-new-and-update-existing-commodity-code"></a><span data-ttu-id="d489a-106">Vytvoření nového a aktualizace existujícího kódu komodity</span><span class="sxs-lookup"><span data-stu-id="d489a-106">Create new and update existing commodity code</span></span>
-1. <span data-ttu-id="d489a-107">Přejděte do nabídky Řízení informací o produktech > Nastavení > Kategorie a atributy > Hierarchie kategorií.</span><span class="sxs-lookup"><span data-stu-id="d489a-107">Go to Product information management > Setup > Categories and attributes > Category hierarchies.</span></span>
-2. <span data-ttu-id="d489a-108">V seznamu vyhledejte nebo vyberte záznam, "Kódy komodit systému Intrastat".</span><span class="sxs-lookup"><span data-stu-id="d489a-108">In the list, find or select the record "Intrastat commodity codes."</span></span>
-3. <span data-ttu-id="d489a-109">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="d489a-109">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="d489a-110">Ve stromovém zobrazení vyberte „záznam“.</span><span class="sxs-lookup"><span data-stu-id="d489a-110">In the tree, select 'a record'.</span></span>
-    * <span data-ttu-id="d489a-111">Vyberte například „Intrastat\Reproduktor“.</span><span class="sxs-lookup"><span data-stu-id="d489a-111">For example, select 'Intrastat\Speaker'.</span></span>  
-5. <span data-ttu-id="d489a-112">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="d489a-112">Click Edit.</span></span>
-6. <span data-ttu-id="d489a-113">Rozbalte oddíl Zahraniční obchod.</span><span class="sxs-lookup"><span data-stu-id="d489a-113">Expand the Foreign trade section.</span></span>
-7. <span data-ttu-id="d489a-114">V poli Dodatečné jednotky zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-114">In the Additional units field, enter or select a value.</span></span>
-    * <span data-ttu-id="d489a-115">Vyberte například „ks“.</span><span class="sxs-lookup"><span data-stu-id="d489a-115">For example, choose 'pcs'.</span></span>  
-8. <span data-ttu-id="d489a-116">V poli Hmotnost nelze použít vyberte možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="d489a-116">Select Yes in the Weight not applicable field.</span></span>
-9. <span data-ttu-id="d489a-117">Ve stromovém zobrazení vyberte Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d489a-117">In the tree, select 'Intrastat'.</span></span>
-10. <span data-ttu-id="d489a-118">Klikněte na možnost Nový uzel kategorie.</span><span class="sxs-lookup"><span data-stu-id="d489a-118">Click New category node.</span></span>
-11. <span data-ttu-id="d489a-119">Do pole Název zadejte název komodity.</span><span class="sxs-lookup"><span data-stu-id="d489a-119">In the Name field, enter the name of commodity.</span></span>
-    * <span data-ttu-id="d489a-120">Například zadejte „Jiné zboží“.</span><span class="sxs-lookup"><span data-stu-id="d489a-120">For example, type 'Other commodity'.</span></span>  
-12. <span data-ttu-id="d489a-121">V poli Kód zadejte kód komodity.</span><span class="sxs-lookup"><span data-stu-id="d489a-121">In the Code field, enter the commodity code.</span></span>
-    * <span data-ttu-id="d489a-122">Zadejte například 995 00 00.</span><span class="sxs-lookup"><span data-stu-id="d489a-122">For example, type '995 00 00'.</span></span>  
-13. <span data-ttu-id="d489a-123">Do pole Popisný název zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-123">In the Friendly name field, type a value.</span></span>
-    * <span data-ttu-id="d489a-124">Zadejte například Jiné.</span><span class="sxs-lookup"><span data-stu-id="d489a-124">For example, type 'Other'.</span></span>  
-14. <span data-ttu-id="d489a-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d489a-125">Click Save.</span></span>
-15. <span data-ttu-id="d489a-126">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d489a-126">Close the page.</span></span>
-
-## <a name="assign-commodity-code-to-product-hierarchy-and-released-product"></a><span data-ttu-id="d489a-127">Přiřazení kódu komodity k hierarchii produktů a uvolněným produktům</span><span class="sxs-lookup"><span data-stu-id="d489a-127">Assign commodity code to product hierarchy and released product</span></span>
-1. <span data-ttu-id="d489a-128">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="d489a-128">Use the Quick Filter to find records.</span></span> <span data-ttu-id="d489a-129">Můžete například filtrovat v poli Jméno pomocí hodnoty „prodeje“.</span><span class="sxs-lookup"><span data-stu-id="d489a-129">For example, filter on the Name field with a value of 'sales'.</span></span>
-2. <span data-ttu-id="d489a-130">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="d489a-130">In the list, click the link in the selected row.</span></span>
-3. <span data-ttu-id="d489a-131">Ve stromovém zobrazení rozbalte uzel kategorie.</span><span class="sxs-lookup"><span data-stu-id="d489a-131">In the tree, expand 'a category node'.</span></span>
-    * <span data-ttu-id="d489a-132">Například rozbalte "Prodejní hierarchie\Domácí audio".</span><span class="sxs-lookup"><span data-stu-id="d489a-132">For example, expand 'Sales hierarchy\Home audio'.</span></span>  
-4. <span data-ttu-id="d489a-133">Ve stromovém zobrazení vyberte kategorii, ke které chcete přiřadit kód komodity.</span><span class="sxs-lookup"><span data-stu-id="d489a-133">In the tree, select 'the category to assign to the commodity code'.</span></span>
-    * <span data-ttu-id="d489a-134">Například vyberte "Prodejní hierarchie\Domácí audio\Reproduktory".</span><span class="sxs-lookup"><span data-stu-id="d489a-134">For example, select 'Sales hierarchy\Home audio\Speakers.</span></span>  
-5. <span data-ttu-id="d489a-135">Rozbalte oddíl Kódy komodit.</span><span class="sxs-lookup"><span data-stu-id="d489a-135">Expand the Commodity codes section.</span></span>
-6. <span data-ttu-id="d489a-136">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="d489a-136">Click Add.</span></span>
-7. <span data-ttu-id="d489a-137">V poli Vybrat hierarchii vyberte Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d489a-137">In the Select hierarchy field, select 'Intrastat'.</span></span>
-8. <span data-ttu-id="d489a-138">Vyhledejte ze seznamu kód komodity a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="d489a-138">In the list, find and select the commodity code</span></span>
-    * <span data-ttu-id="d489a-139">Vyberte například „Reproduktor 920 20 34“.</span><span class="sxs-lookup"><span data-stu-id="d489a-139">For example, select '920 20 34 Speaker'.</span></span>  
-9. <span data-ttu-id="d489a-140">Klepněte na SelectCodes.</span><span class="sxs-lookup"><span data-stu-id="d489a-140">Click SelectCodes.</span></span>
-10. <span data-ttu-id="d489a-141">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d489a-141">Click OK.</span></span>
-11. <span data-ttu-id="d489a-142">Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="d489a-142">Go to Product information management > Products > Released products.</span></span>
-12. <span data-ttu-id="d489a-143">V seznamu vyberte uvolněný produkt, který přiřadíte ke kódu komodity.</span><span class="sxs-lookup"><span data-stu-id="d489a-143">In the list, choose the released product that you will assign to the commodity code.</span></span>
-    * <span data-ttu-id="d489a-144">Vyberte například „D0001“.</span><span class="sxs-lookup"><span data-stu-id="d489a-144">For example, choose 'D0001'.</span></span>  
-13. <span data-ttu-id="d489a-145">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="d489a-145">Click Edit.</span></span>
-14. <span data-ttu-id="d489a-146">Rozbalte oddíl Zahraniční obchod.</span><span class="sxs-lookup"><span data-stu-id="d489a-146">Expand the Foreign trade section.</span></span>
-15. <span data-ttu-id="d489a-147">V poli Komodita zadejte kód komodity.</span><span class="sxs-lookup"><span data-stu-id="d489a-147">In the Commodity field, enter the commodity code</span></span>
-    * <span data-ttu-id="d489a-148">Vyberte například hodnotu „Reproduktor 920 20 34“.</span><span class="sxs-lookup"><span data-stu-id="d489a-148">For example, select value '920 20 34 Speaker'.</span></span>    
-16. <span data-ttu-id="d489a-149">V poli Procento nákladů zadejte požadované číslo.</span><span class="sxs-lookup"><span data-stu-id="d489a-149">In the Charges percentage field, enter a number.</span></span>
-    * <span data-ttu-id="d489a-150">Například zadejte 3.</span><span class="sxs-lookup"><span data-stu-id="d489a-150">For example, enter '3'.</span></span>  
-17. <span data-ttu-id="d489a-151">V poli Země/oblast zadejte nebo vyberte zemi nebo oblast původu</span><span class="sxs-lookup"><span data-stu-id="d489a-151">In the Country/region field, enter or select a country or region of origin</span></span>
-    * <span data-ttu-id="d489a-152">Vyberte například AUT.</span><span class="sxs-lookup"><span data-stu-id="d489a-152">For example, select 'AUT'.</span></span>  
-18. <span data-ttu-id="d489a-153">Rozbalte oblast Spravovat sklad.</span><span class="sxs-lookup"><span data-stu-id="d489a-153">Expand the Manage inventory section.</span></span>
-19. <span data-ttu-id="d489a-154">V poli Čistá hmotnost zadejte hmotnost v kg.</span><span class="sxs-lookup"><span data-stu-id="d489a-154">In the Net weight field, enter a weight in kg.</span></span>
-    * <span data-ttu-id="d489a-155">Například zadejte 2.5.</span><span class="sxs-lookup"><span data-stu-id="d489a-155">For example, enter '2.5'.</span></span>  
-20. <span data-ttu-id="d489a-156">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d489a-156">Click Save.</span></span>
-
-## <a name="set-up-intrastat-transaction-codes-and-foreign-trade-parameters"></a><span data-ttu-id="d489a-157">Nastavení kódy transakcí systému Intrastat a parametrů zahraničního obchodu</span><span class="sxs-lookup"><span data-stu-id="d489a-157">Set up Intrastat transaction codes and foreign trade parameters</span></span>
-1. <span data-ttu-id="d489a-158">Přejděte na Daň > Nastavení > Zahraniční obchod > Kódy transakcí</span><span class="sxs-lookup"><span data-stu-id="d489a-158">Go to Tax > Setup > Foreign trade > Transaction codes</span></span>
-2. <span data-ttu-id="d489a-159">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d489a-159">Click New.</span></span>
-3. <span data-ttu-id="d489a-160">V poli Kód transakce zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-160">In the Transaction code field, type a value.</span></span>
-    * <span data-ttu-id="d489a-161">Jako kód transakce použitý pro vrácení zadejte například hodnotu 21.</span><span class="sxs-lookup"><span data-stu-id="d489a-161">For example, enter '21' for the transaction code used as return.</span></span>  
-4. <span data-ttu-id="d489a-162">Zadejte název kódu transakce do pole Název.</span><span class="sxs-lookup"><span data-stu-id="d489a-162">In the Name field, type the name of transaction code.</span></span>
-    * <span data-ttu-id="d489a-163">Například zadejte Vrácení.</span><span class="sxs-lookup"><span data-stu-id="d489a-163">For example, enter 'Return'.</span></span>  
-5. <span data-ttu-id="d489a-164">Vyberte volbu v poli Statistická částka.</span><span class="sxs-lookup"><span data-stu-id="d489a-164">In the Statistical amount field, select an option.</span></span>
-    * <span data-ttu-id="d489a-165">Vyberte například možnost „Prázdné“, která značí, že Statistická hodnota uváděná pro transakce s kódem transakce „21“ bude vždy nula.</span><span class="sxs-lookup"><span data-stu-id="d489a-165">For example, select 'Empty' which indicates that the Statistical value to be reported for transactions with Transaction code of "21" will always be zero.</span></span>  
-6. <span data-ttu-id="d489a-166">Přejděte na Daň > Nastavení > Zahraniční obchod > Parametry zahraničního obchodu.</span><span class="sxs-lookup"><span data-stu-id="d489a-166">Go to Tax > Setup > Foreign trade > Foreign trade parameters</span></span>
-7. <span data-ttu-id="d489a-167">V poli Kód transakce zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-167">In the Transaction code field, enter or select a value.</span></span>
-    * <span data-ttu-id="d489a-168">Vyberte například 11.</span><span class="sxs-lookup"><span data-stu-id="d489a-168">For example, select '11'.</span></span>  
-8. <span data-ttu-id="d489a-169">V poli Dobropis zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-169">In the Credit note field, enter or select a value.</span></span>
-    * <span data-ttu-id="d489a-170">Tato hodnota určuje fyzické vrácení.</span><span class="sxs-lookup"><span data-stu-id="d489a-170">This value also identifies the physical return.</span></span> <span data-ttu-id="d489a-171">Dobropis pro fyzické vrácení bude převeden do deníku Intrastat v opačném směru.</span><span class="sxs-lookup"><span data-stu-id="d489a-171">The credit note for the physical return will be transferred in the Intrastat journal with opposite direction.</span></span> <span data-ttu-id="d489a-172">Například vrácení pro „doručení“ je převedeno na expedici.</span><span class="sxs-lookup"><span data-stu-id="d489a-172">For example, the return of arrival is transferred as dispatch.</span></span>   <span data-ttu-id="d489a-173">V opačném případě je dobropis považován za opravu a je převeden ve stejném směru s opačným znaménkem.</span><span class="sxs-lookup"><span data-stu-id="d489a-173">Otherwise, the credit note is considered a correction and is transferred with the same direction and opposite sign.</span></span> <span data-ttu-id="d489a-174">Například korekce doručení je převedena jako přijetí se zápornou částkou, kde je aktivní příznak nastaven na "Oprava".</span><span class="sxs-lookup"><span data-stu-id="d489a-174">For example, the correction of arrival is transferred as an arrival with negative amount and the active flag is set to "Correction".</span></span>  
-9. <span data-ttu-id="d489a-175">Rozbalte sekci Převod.</span><span class="sxs-lookup"><span data-stu-id="d489a-175">Expand the Transfer section.</span></span>
-10. <span data-ttu-id="d489a-176">Vyberte možnost Ano v poli Položky s kódem zboží.</span><span class="sxs-lookup"><span data-stu-id="d489a-176">Select Yes in the Items with commodity code field.</span></span>
-    * <span data-ttu-id="d489a-177">Vyberte tuto možnost, pokud chcete převést pouze transakce s přiřazeným kódem zboží.</span><span class="sxs-lookup"><span data-stu-id="d489a-177">Select this option to transfer only the transactions with a commodity code assigned.</span></span> <span data-ttu-id="d489a-178">Transakce bez kódu komodity nebudou převedeny do systému Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d489a-178">Transactions without a commodity code won't be transferred to Intrastat.</span></span>  
-11. <span data-ttu-id="d489a-179">V poli „Převést při splnění kritéria pro“ vyberte požadovanou možnost.</span><span class="sxs-lookup"><span data-stu-id="d489a-179">In the Transfer when meeting criterion for field, select an option.</span></span>
-    * <span data-ttu-id="d489a-180">Vyberte například "Jedno z vybraných".</span><span class="sxs-lookup"><span data-stu-id="d489a-180">For example, select 'One of the selected'.</span></span>  
-12. <span data-ttu-id="d489a-181">Rozbalte oddíl Hierarchie kódů komodit.</span><span class="sxs-lookup"><span data-stu-id="d489a-181">Expand the Commodity code hierarchy section.</span></span>
-13. <span data-ttu-id="d489a-182">Klepněte na kartu vlastností Země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="d489a-182">Click the Country/region properties tab.</span></span>
-14. <span data-ttu-id="d489a-183">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d489a-183">Click New.</span></span>
-15. <span data-ttu-id="d489a-184">V poli Země/oblast zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-184">In the Country/region field, enter or select a value.</span></span>
-    * <span data-ttu-id="d489a-185">Například vyberte hodnotu „FRA“.</span><span class="sxs-lookup"><span data-stu-id="d489a-185">For example, select the value 'FRA'.</span></span>  
-16. <span data-ttu-id="d489a-186">V poli Kód Intrastat zadejte kód ISO pro danou zemi.</span><span class="sxs-lookup"><span data-stu-id="d489a-186">In the Intrastat code field, enter the ISO code for the country.</span></span>
-    * <span data-ttu-id="d489a-187">Zadejte například FR.</span><span class="sxs-lookup"><span data-stu-id="d489a-187">For example, type 'FR'.</span></span>  
-17. <span data-ttu-id="d489a-188">Do zadávacího pole Země/oblast vyberte položku „EU“.</span><span class="sxs-lookup"><span data-stu-id="d489a-188">In the Country/region type field, select 'EU'.</span></span>
-18. <span data-ttu-id="d489a-189">Klikněte na kartu Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="d489a-189">Click the Number sequences tab.</span></span>
-
-## <a name="set-up-modes-of-delivery-and-rules-for-including-charges-in-intrastat"></a><span data-ttu-id="d489a-190">Nastavení způsobů dodání a pravidel pro zahrnutí nákladů v systému Intrastat</span><span class="sxs-lookup"><span data-stu-id="d489a-190">Set up Modes of delivery and rules for including charges in Intrastat</span></span>
-1. <span data-ttu-id="d489a-191">Přejděte na Prodej a marketing > Nastavení > Distribuce > Způsoby dodání</span><span class="sxs-lookup"><span data-stu-id="d489a-191">Go to Sales and marketing > Setup > Distribution > Modes of delivery</span></span>
-2. <span data-ttu-id="d489a-192">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="d489a-192">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="d489a-193">Vyberte například 20 Air.</span><span class="sxs-lookup"><span data-stu-id="d489a-193">For example, select '20 Air'.</span></span>  
-3. <span data-ttu-id="d489a-194">Rozbalte oddíl Zahraniční obchod.</span><span class="sxs-lookup"><span data-stu-id="d489a-194">Expand the Foreign trade section.</span></span>
-4. <span data-ttu-id="d489a-195">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="d489a-195">Click Edit.</span></span>
-5. <span data-ttu-id="d489a-196">V poli Přeprava zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-196">In the Transport field, enter or select a value.</span></span>
-    * <span data-ttu-id="d489a-197">Vyberte například 02.</span><span class="sxs-lookup"><span data-stu-id="d489a-197">For example, select '02'.</span></span>  
-6. <span data-ttu-id="d489a-198">Přejděte na Pohledávky > Nastavení poplatků > Kód nákladů.</span><span class="sxs-lookup"><span data-stu-id="d489a-198">Go to Accounts receivable > Charges setup > Charges code.</span></span>
-7. <span data-ttu-id="d489a-199">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="d489a-199">Use the Quick Filter to find records.</span></span> <span data-ttu-id="d489a-200">Můžete například filtrovat v poli Kód nákladů pomocí hodnoty „dopravné“.</span><span class="sxs-lookup"><span data-stu-id="d489a-200">For example, filter on the Charges code field with a value of 'freight'.</span></span>
-8. <span data-ttu-id="d489a-201">Rozbalte oddíl Zahraniční obchod.</span><span class="sxs-lookup"><span data-stu-id="d489a-201">Expand the Foreign trade section.</span></span>
-9. <span data-ttu-id="d489a-202">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="d489a-202">Click Edit.</span></span>
-10. <span data-ttu-id="d489a-203">Vyberte možnost Ano v poli Hodnota faktury Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d489a-203">Select Yes in the Intrastat invoice value field.</span></span>
-    * <span data-ttu-id="d489a-204">Částka bude přenesena do pole s náklady faktury a bude shrnuta s ohledem na převedenou částkou v poli Částka faktury.</span><span class="sxs-lookup"><span data-stu-id="d489a-204">The amount will be transferred to the  Invoice charges field and will be summarized with the amount transferred in the Invoice amount field.</span></span>    <span data-ttu-id="d489a-205">Vyberte možnost Ano v poli Statistická hodnota Intrastat, pokud je třeba soubor změn přenést do pole Statistické náklady a shrnout pomocí pole Statistická částka.</span><span class="sxs-lookup"><span data-stu-id="d489a-205">Select Yes in the Intrastat statistical value field if the amount of changes need to be transferred to the field Statistical charges and summarized with Statistical amount.</span></span>  
-
-## <a name="sell-products-for-eu-customers"></a><span data-ttu-id="d489a-206">Prodej produktů odběratelům EU</span><span class="sxs-lookup"><span data-stu-id="d489a-206">Sell products for EU customers</span></span>
-1. <span data-ttu-id="d489a-207">Přejděte na Pohledávky > Objednávky > Všechny prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="d489a-207">Go to Accounts receivable > Orders > All sales orders.</span></span>
-2. <span data-ttu-id="d489a-208">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d489a-208">Click New.</span></span>
-3. <span data-ttu-id="d489a-209">V poli Účet odběratele vyberte zákazníka EU.</span><span class="sxs-lookup"><span data-stu-id="d489a-209">In the Customer account field, select an EU customer</span></span>
-    * <span data-ttu-id="d489a-210">Vyberte například "DE-012 Litware Retail".</span><span class="sxs-lookup"><span data-stu-id="d489a-210">For example, select "DE-012 Litware Retail".</span></span>  
-4. <span data-ttu-id="d489a-211">Rozbalte sekci Dodání.</span><span class="sxs-lookup"><span data-stu-id="d489a-211">Expand the Delivery section.</span></span>
-5. <span data-ttu-id="d489a-212">V poli Způsob dodání vyberte nebo zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-212">In the Mode of delivery field, enter or select a value.</span></span>
-    * <span data-ttu-id="d489a-213">Vyberte například 20 Air.</span><span class="sxs-lookup"><span data-stu-id="d489a-213">For example, select '20 Air'.</span></span>  
-6. <span data-ttu-id="d489a-214">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d489a-214">Click OK.</span></span>
-7. <span data-ttu-id="d489a-215">Umístěte kurzor na první řádek z řádků prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="d489a-215">Place the cursor on the first row of sales order lines.</span></span>
-8. <span data-ttu-id="d489a-216">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-216">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="d489a-217">Vyberte například D001.</span><span class="sxs-lookup"><span data-stu-id="d489a-217">For example, select 'D001'.</span></span>  
-9. <span data-ttu-id="d489a-218">Rozbalte sekci Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="d489a-218">Expand the Line details section.</span></span>
-10. <span data-ttu-id="d489a-219">Klepněte na kartu zahraničního obchodu.</span><span class="sxs-lookup"><span data-stu-id="d489a-219">Click the Foreign trade tab.</span></span>
-    * <span data-ttu-id="d489a-220">Přeprava je vyplněna automaticky z vybraného způsobu dodání.</span><span class="sxs-lookup"><span data-stu-id="d489a-220">The transport is filled automatically from the chosen Mode of delivery.</span></span>  
-11. <span data-ttu-id="d489a-221">V poli Přístav zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-221">In the Port field, enter or select a value.</span></span>
-12. <span data-ttu-id="d489a-222">Klepněte na tlačítko Finanční údaje.</span><span class="sxs-lookup"><span data-stu-id="d489a-222">Click Financials.</span></span>
-    * <span data-ttu-id="d489a-223">Podle nastavení se tato částka zahrne v poli Hodnota faktury Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d489a-223">As per the settings, this amount will be included in Intrastat invoice value.</span></span>  
-13. <span data-ttu-id="d489a-224">Klikněte na položku Spravovat náklady.</span><span class="sxs-lookup"><span data-stu-id="d489a-224">Click Maintain charges.</span></span>
-14. <span data-ttu-id="d489a-225">V poli Kód nákladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-225">In the Charges code field, enter or select a value.</span></span>
-    * <span data-ttu-id="d489a-226">V tomto příkladu vyberte Dopravné.</span><span class="sxs-lookup"><span data-stu-id="d489a-226">For example, select 'FREIGHT'.</span></span>  
-15. <span data-ttu-id="d489a-227">Zaškrtněte políčko Zachovat.</span><span class="sxs-lookup"><span data-stu-id="d489a-227">Select the Keep check box.</span></span>
-16. <span data-ttu-id="d489a-228">Zadejte číslo do pole Hodnota nákladů.</span><span class="sxs-lookup"><span data-stu-id="d489a-228">In the Charges value field, enter a number.</span></span>
-    * <span data-ttu-id="d489a-229">Například zadejte 10.</span><span class="sxs-lookup"><span data-stu-id="d489a-229">For example, enter '10'.</span></span>  
-17. <span data-ttu-id="d489a-230">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d489a-230">Click Save.</span></span>
-18. <span data-ttu-id="d489a-231">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d489a-231">Close the page.</span></span>
-19. <span data-ttu-id="d489a-232">V podokně akcí klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="d489a-232">On the Action Pane, click Invoice.</span></span>
-20. <span data-ttu-id="d489a-233">Klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="d489a-233">Click Invoice.</span></span>
-21. <span data-ttu-id="d489a-234">Rozbalte sekci Parametry.</span><span class="sxs-lookup"><span data-stu-id="d489a-234">Expand the Parameters section.</span></span>
-22. <span data-ttu-id="d489a-235">V poli Množství vyberte možnost Vše.</span><span class="sxs-lookup"><span data-stu-id="d489a-235">In the Quantity field, select 'All'.</span></span>
-23. <span data-ttu-id="d489a-236">Rozbalte sekci Nastavení.</span><span class="sxs-lookup"><span data-stu-id="d489a-236">Expand the Setup section.</span></span>
-24. <span data-ttu-id="d489a-237">Do pole Datum faktury zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="d489a-237">In the Invoice date field, enter a date.</span></span>
-    * <span data-ttu-id="d489a-238">Například zadejte 2015-01-31.</span><span class="sxs-lookup"><span data-stu-id="d489a-238">For example, enter '2015-01-31'.</span></span>  
-25. <span data-ttu-id="d489a-239">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d489a-239">Click OK.</span></span>
-26. <span data-ttu-id="d489a-240">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d489a-240">Click OK.</span></span>
-27. <span data-ttu-id="d489a-241">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d489a-241">Close the page.</span></span>
-28. <span data-ttu-id="d489a-242">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d489a-242">Click New.</span></span>
-29. <span data-ttu-id="d489a-243">V poli Účet odběratele vyberte zákazníka EU.</span><span class="sxs-lookup"><span data-stu-id="d489a-243">In the Customer account field, select an EU customer.</span></span>
-    * <span data-ttu-id="d489a-244">Vyberte například DE-013 Trey Wholesales</span><span class="sxs-lookup"><span data-stu-id="d489a-244">For example, select 'DE-013 Trey Wholesales'</span></span>  
-30. <span data-ttu-id="d489a-245">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d489a-245">Click OK.</span></span>
-31. <span data-ttu-id="d489a-246">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d489a-246">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="d489a-247">Vyberte například D0001.</span><span class="sxs-lookup"><span data-stu-id="d489a-247">For example, select 'D0001'.</span></span>  
-32. <span data-ttu-id="d489a-248">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d489a-248">Click Save.</span></span>
-33. <span data-ttu-id="d489a-249">Klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="d489a-249">Click Invoice.</span></span>
-34. <span data-ttu-id="d489a-250">Do pole Datum faktury zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="d489a-250">In the Invoice date field, enter a date.</span></span>
-    * <span data-ttu-id="d489a-251">Například zadejte datum 2015-01-31.</span><span class="sxs-lookup"><span data-stu-id="d489a-251">For example, enter the date '2015-01-31'.</span></span>  
-35. <span data-ttu-id="d489a-252">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d489a-252">Click OK.</span></span>
-36. <span data-ttu-id="d489a-253">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d489a-253">Click OK.</span></span>
-
-## <a name="transfer-transactions-to-the-intrastat"></a><span data-ttu-id="d489a-254">Převod transakcí do systému Intrastat</span><span class="sxs-lookup"><span data-stu-id="d489a-254">Transfer transactions to the Intrastat</span></span>
-1. <span data-ttu-id="d489a-255">Přejděte na Daň > Deklarace > Zahraniční obchod > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d489a-255">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
-2. <span data-ttu-id="d489a-256">Klepněte na položku Převod.</span><span class="sxs-lookup"><span data-stu-id="d489a-256">Click Transfer.</span></span>
-3. <span data-ttu-id="d489a-257">Vyberte možnost Ano v poli Faktura odběratele.</span><span class="sxs-lookup"><span data-stu-id="d489a-257">Select Yes in the Customer invoice field.</span></span>
-4. <span data-ttu-id="d489a-258">Klepněte na tlačítko Filtr.</span><span class="sxs-lookup"><span data-stu-id="d489a-258">Click Filter.</span></span>
-5. <span data-ttu-id="d489a-259">Označte na seznamu řádek s datem.</span><span class="sxs-lookup"><span data-stu-id="d489a-259">In the list, mark the row with Date</span></span>
-6. <span data-ttu-id="d489a-260">Zadejte hodnotu do pole Kritéria.</span><span class="sxs-lookup"><span data-stu-id="d489a-260">In the Criteria field, type a value.</span></span>
-    * <span data-ttu-id="d489a-261">Například zadejte filtr pro období Leden 2015 (přesná hodnota závisí na formátu data): 1/1/2015..1/31/2015</span><span class="sxs-lookup"><span data-stu-id="d489a-261">For example, enter the filter for the period January 2015 (the exact value depends on your date format): 1/1/2015..1/31/2015</span></span>  
-7. <span data-ttu-id="d489a-262">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d489a-262">Click OK.</span></span>
-8. <span data-ttu-id="d489a-263">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d489a-263">Click OK.</span></span>
-9. <span data-ttu-id="d489a-264">Vyhledejte na seznamu převedený záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="d489a-264">In the list, find and selected the transferred record.</span></span>
-10. <span data-ttu-id="d489a-265">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="d489a-265">Click the General tab.</span></span>
-    * <span data-ttu-id="d489a-266">Zkontrolujte převedená data včetně Cílová země/oblast expedice, země původu, hmotnosti, množství, množství v dalších jednotkách, zboží, kódu transakce, výše faktury a statistických částek.</span><span class="sxs-lookup"><span data-stu-id="d489a-266">Review transferred data, including country\region of destination/dispatch, country of origin, weight, quantity, quantity in additional units, commodity, transaction code, invoice amounts and statistical amounts.</span></span>   <span data-ttu-id="d489a-267">Tato data lze v případě potřeby změnit.</span><span class="sxs-lookup"><span data-stu-id="d489a-267">You can modify data if necessary.</span></span>  
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="transfer-transactions-intrastat.md" target-language="cs-CZ">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>transfer-transactions-intrastat.25c761.13cc9dc2119ad3dc85d580e92edee7bb9ef2075c.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>13cc9dc2119ad3dc85d580e92edee7bb9ef2075c</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\transfer-transactions-intrastat.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Transfer transactions to the Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převod transakcí do systému Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This procedure walks you through how to set up Intrastat parameters and transfer transactions to Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento postup vás provede nastavením parametrů systému Intrastat a převodem transakcí do systému Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Transfer transactions to the Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převod transakcí do systému Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This procedure walks you through how to set up Intrastat parameters and transfer transactions to Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento postup vás provede nastavením parametrů systému Intrastat a převodem transakcí do systému Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This procedure was created using the demo data company DEMF.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato procedura byla vytvořena pomocí ukázkových dat společnosti DEMF.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Create new and update existing commodity code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření nového a aktualizace existujícího kódu komodity</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Go to Product information management &gt; Setup &gt; Categories and attributes &gt; Category hierarchies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte do nabídky Řízení informací o produktech &gt; Nastavení &gt; Kategorie a atributy &gt; Hierarchie kategorií.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>In the list, find or select the record "Intrastat commodity codes."</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V seznamu vyhledejte nebo vyberte záznam, "Kódy komodit systému Intrastat".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>In the list, click the link in the selected row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na odkaz na vybraném řádku v seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>In the tree, select 'a record'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve stromovém zobrazení vyberte „záznam“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>For example, select 'Intrastat\Speaker'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například „Intrastat\Reproduktor“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Upravit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Expand the Foreign trade section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte oddíl Zahraniční obchod.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>In the Additional units field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Dodatečné jednotky zadejte nebo vyberte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>For example, choose 'pcs'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například „ks“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Select Yes in the Weight not applicable field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Hmotnost nelze použít vyberte možnost Ano.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>In the tree, select 'Intrastat'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve stromovém zobrazení vyberte Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Click New category node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na možnost Nový uzel kategorie.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>In the Name field, enter the name of commodity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Do pole Název zadejte název komodity.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>For example, type 'Other commodity'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte „Jiné zboží“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>In the Code field, enter the commodity code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Kód zadejte kód komodity.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>For example, type '995 00 00'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte například 995 00 00.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>In the Friendly name field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Do pole Popisný název zadejte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>For example, type 'Other'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte například Jiné.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Uložit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zavřete stránku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Assign commodity code to product hierarchy and released product</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přiřazení kódu komodity k hierarchii produktů a uvolněným produktům</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Use the Quick Filter to find records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použijte rychlý filtr pro hledání záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>For example, filter on the Name field with a value of 'sales'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete například filtrovat v poli Jméno pomocí hodnoty „prodeje“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>In the list, click the link in the selected row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na odkaz na vybraném řádku v seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the tree, expand 'a category node'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve stromovém zobrazení rozbalte uzel kategorie.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>For example, expand 'Sales hierarchy\Home audio'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například rozbalte "Prodejní hierarchie\Domácí audio".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>In the tree, select 'the category to assign to the commodity code'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve stromovém zobrazení vyberte kategorii, ke které chcete přiřadit kód komodity.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>For example, select 'Sales hierarchy\Home audio\Speakers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například vyberte "Prodejní hierarchie\Domácí audio\Reproduktory".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Expand the Commodity codes section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte oddíl Kódy komodit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Click Add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na možnost Přidat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>In the Select hierarchy field, select 'Intrastat'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Vybrat hierarchii vyberte Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the list, find and select the commodity code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyhledejte ze seznamu kód komodity a vyberte ho.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For example, select '920 20 34 Speaker'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například „Reproduktor 920 20 34“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Click SelectCodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na SelectCodes.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Go to Product information management &gt; Products &gt; Released products.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na možnosti Řízení informací o produktech &gt; Produkty &gt; Uvolněné produkty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In the list, choose the released product that you will assign to the commodity code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V seznamu vyberte uvolněný produkt, který přiřadíte ke kódu komodity.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>For example, choose 'D0001'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například „D0001“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Upravit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Expand the Foreign trade section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte oddíl Zahraniční obchod.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>In the Commodity field, enter the commodity code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Komodita zadejte kód komodity.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>For example, select value '920 20 34 Speaker'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například hodnotu „Reproduktor 920 20 34“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>In the Charges percentage field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Procento nákladů zadejte požadované číslo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>For example, enter '3'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte 3.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>In the Country/region field, enter or select a country or region of origin</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Země/oblast zadejte nebo vyberte zemi nebo oblast původu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>For example, select 'AUT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například AUT.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Expand the Manage inventory section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte oblast Spravovat sklad.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>In the Net weight field, enter a weight in kg.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Čistá hmotnost zadejte hmotnost v kg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>For example, enter '2.5'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte 2.5.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Uložit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Set up Intrastat transaction codes and foreign trade parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení kódy transakcí systému Intrastat a parametrů zahraničního obchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Transaction codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Daň &gt; Nastavení &gt; Zahraniční obchod &gt; Kódy transakcí</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Nová.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>In the Transaction code field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Kód transakce zadejte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>For example, enter '21' for the transaction code used as return.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jako kód transakce použitý pro vrácení zadejte například hodnotu 21.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>In the Name field, type the name of transaction code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte název kódu transakce do pole Název.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>For example, enter 'Return'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte Vrácení.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>In the Statistical amount field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte volbu v poli Statistická částka.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>For example, select 'Empty' which indicates that the Statistical value to be reported for transactions with Transaction code of "21" will always be zero.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například možnost „Prázdné“, která značí, že Statistická hodnota uváděná pro transakce s kódem transakce „21“ bude vždy nula.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Foreign trade parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Daň &gt; Nastavení &gt; Zahraniční obchod &gt; Parametry zahraničního obchodu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>In the Transaction code field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Kód transakce zadejte nebo vyberte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>For example, select '11'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například 11.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>In the Credit note field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Dobropis zadejte nebo vyberte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>This value also identifies the physical return.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato hodnota určuje fyzické vrácení.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>The credit note for the physical return will be transferred in the Intrastat journal with opposite direction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dobropis pro fyzické vrácení bude převeden do deníku Intrastat v opačném směru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>For example, the return of arrival is transferred as dispatch.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například vrácení pro „doručení“ je převedeno na expedici.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Otherwise, the credit note is considered a correction and is transferred with the same direction and opposite sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném případě je dobropis považován za opravu a je převeden ve stejném směru s opačným znaménkem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>For example, the correction of arrival is transferred as an arrival with negative amount and the active flag is set to "Correction".</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například korekce doručení je převedena jako přijetí se zápornou částkou, kde je aktivní příznak nastaven na "Oprava".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Expand the Transfer section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte sekci Převod.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Select Yes in the Items with commodity code field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte možnost Ano v poli Položky s kódem zboží.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Select this option to transfer only the transactions with a commodity code assigned.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte tuto možnost, pokud chcete převést pouze transakce s přiřazeným kódem zboží.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Transactions without a commodity code won't be transferred to Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Transakce bez kódu komodity nebudou převedeny do systému Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>In the Transfer when meeting criterion for field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli „Převést při splnění kritéria pro“ vyberte požadovanou možnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>For example, select 'One of the selected'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například "Jedno z vybraných".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Expand the Commodity code hierarchy section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte oddíl Hierarchie kódů komodit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Click the Country/region properties tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na kartu vlastností Země/oblasti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Nová.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>In the Country/region field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Země/oblast zadejte nebo vyberte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>For example, select the value 'FRA'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například vyberte hodnotu „FRA“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>In the Intrastat code field, enter the ISO code for the country.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Kód Intrastat zadejte kód ISO pro danou zemi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>For example, type 'FR'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte například FR.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>In the Country/region type field, select 'EU'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Do zadávacího pole Země/oblast vyberte položku „EU“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Click the Number sequences tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na kartu Číselné řady.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Set up Modes of delivery and rules for including charges in Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení způsobů dodání a pravidel pro zahrnutí nákladů v systému Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Go to Sales and marketing &gt; Setup &gt; Distribution &gt; Modes of delivery</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Prodej a marketing &gt; Nastavení &gt; Distribuce &gt; Způsoby dodání</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>For example, select '20 Air'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například 20 Air.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Expand the Foreign trade section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte oddíl Zahraniční obchod.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Upravit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>In the Transport field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Přeprava zadejte nebo vyberte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>For example, select '02'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například 02.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Go to Accounts receivable &gt; Charges setup &gt; Charges code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Pohledávky &gt; Nastavení poplatků &gt; Kód nákladů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Use the Quick Filter to find records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použijte rychlý filtr pro hledání záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>For example, filter on the Charges code field with a value of 'freight'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete například filtrovat v poli Kód nákladů pomocí hodnoty „dopravné“.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Expand the Foreign trade section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte oddíl Zahraniční obchod.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Upravit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Select Yes in the Intrastat invoice value field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte možnost Ano v poli Hodnota faktury Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>The amount will be transferred to the  Invoice charges field and will be summarized with the amount transferred in the Invoice amount field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částka bude přenesena do pole s náklady faktury a bude shrnuta s ohledem na převedenou částkou v poli Částka faktury.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Select Yes in the Intrastat statistical value field if the amount of changes need to be transferred to the field Statistical charges and summarized with Statistical amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte možnost Ano v poli Statistická hodnota Intrastat, pokud je třeba soubor změn přenést do pole Statistické náklady a shrnout pomocí pole Statistická částka.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Sell products for EU customers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prodej produktů odběratelům EU</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Go to Accounts receivable &gt; Orders &gt; All sales orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Pohledávky &gt; Objednávky &gt; Všechny prodejní objednávky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Nová.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>In the Customer account field, select an EU customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Účet odběratele vyberte zákazníka EU.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>For example, select "DE-012 Litware Retail".</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například "DE-012 Litware Retail".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Expand the Delivery section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte sekci Dodání.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>In the Mode of delivery field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Způsob dodání vyberte nebo zadejte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>For example, select '20 Air'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například 20 Air.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Place the cursor on the first row of sales order lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Umístěte kurzor na první řádek z řádků prodejní objednávky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>In the Item number field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Číslo zboží zadejte nebo vyberte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>For example, select 'D001'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například D001.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Expand the Line details section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte sekci Podrobnosti řádku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Click the Foreign trade tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na kartu zahraničního obchodu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>The transport is filled automatically from the chosen Mode of delivery.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přeprava je vyplněna automaticky z vybraného způsobu dodání.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>In the Port field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Přístav zadejte nebo vyberte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Click Financials.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko Finanční údaje.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>As per the settings, this amount will be included in Intrastat invoice value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podle nastavení se tato částka zahrne v poli Hodnota faktury Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Click Maintain charges.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Spravovat náklady.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>In the Charges code field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Kód nákladů zadejte nebo vyberte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>For example, select 'FREIGHT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu vyberte Dopravné.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Select the Keep check box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaškrtněte políčko Zachovat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>In the Charges value field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte číslo do pole Hodnota nákladů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>For example, enter '10'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte 10.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Uložit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zavřete stránku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>On the Action Pane, click Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V podokně akcí klikněte na položku Faktura.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Click Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Faktura.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Expand the Parameters section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte sekci Parametry.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>In the Quantity field, select 'All'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Množství vyberte možnost Vše.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Expand the Setup section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte sekci Nastavení.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>In the Invoice date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Do pole Datum faktury zadejte datum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>For example, enter '2015-01-31'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte 2015-01-31.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zavřete stránku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Nová.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>In the Customer account field, select an EU customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Účet odběratele vyberte zákazníka EU.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>For example, select 'DE-013 Trey Wholesales'</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například DE-013 Trey Wholesales</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>In the Item number field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Číslo zboží zadejte nebo vyberte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>For example, select 'D0001'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například D0001.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Uložit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Click Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Faktura.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>In the Invoice date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Do pole Datum faktury zadejte datum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>For example, enter the date '2015-01-31'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte datum 2015-01-31.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Transfer transactions to the Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převod transakcí do systému Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Go to Tax &gt; Declarations &gt; Foreign trade &gt; Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Daň &gt; Deklarace &gt; Zahraniční obchod &gt; Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Click Transfer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na položku Převod.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Select Yes in the Customer invoice field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte možnost Ano v poli Faktura odběratele.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Click Filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko Filtr.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>In the list, mark the row with Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Označte na seznamu řádek s datem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>In the Criteria field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte hodnotu do pole Kritéria.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>For example, enter the filter for the period January 2015 (the exact value depends on your date format): 1/1/2015..1/31/2015</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte filtr pro období Leden 2015 (přesná hodnota závisí na formátu data): 1/1/2015..1/31/2015</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>In the list, find and selected the transferred record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyhledejte na seznamu převedený záznam a vyberte ho.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Click the General tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na záložku Obecné.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Review transferred data, including country\region of destination/dispatch, country of origin, weight, quantity, quantity in additional units, commodity, transaction code, invoice amounts and statistical amounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zkontrolujte převedená data včetně Cílová země/oblast expedice, země původu, hmotnosti, množství, množství v dalších jednotkách, zboží, kódu transakce, výše faktury a statistických částek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>You can modify data if necessary.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato data lze v případě potřeby změnit.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

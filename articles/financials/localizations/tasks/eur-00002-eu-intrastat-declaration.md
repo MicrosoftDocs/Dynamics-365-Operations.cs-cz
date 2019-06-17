@@ -1,116 +1,267 @@
----
-title: EUR-00002 Generování prohlášení Intrastat EU
-description: Tento postup vás provede kroky nutnými k exportu prohlášení systému Intrastat ve formátu elektronického souboru a náhledu dat výkazu ve formátu aplikace Excel.
-author: Anasyash
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: anasyash
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 170c73d2ace75f990df9d57c658e859dcd30dd36
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537636"
----
-# <a name="eur-00002-generate-an-eu-intrastat-declaration"></a><span data-ttu-id="e6f37-103">EUR-00002 Generování prohlášení Intrastat EU</span><span class="sxs-lookup"><span data-stu-id="e6f37-103">EUR-00002 Generate an EU Intrastat declaration</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="e6f37-104">Tento postup vás provede kroky nutnými k exportu prohlášení systému Intrastat ve formátu elektronického souboru a náhledu dat výkazu ve formátu aplikace Excel.</span><span class="sxs-lookup"><span data-stu-id="e6f37-104">This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</span></span> 
-
-<span data-ttu-id="e6f37-105">Před provedením tohoto postupu je nutné převést transakce do systému Intrastat.</span><span class="sxs-lookup"><span data-stu-id="e6f37-105">Before you can complete this procedure, you must transfer transactions to the Intrastat.</span></span> 
-
-<span data-ttu-id="e6f37-106">Tato procedura byla vytvořena pomocí ukázkových dat společnosti DEMF.</span><span class="sxs-lookup"><span data-stu-id="e6f37-106">This procedure was created using the demo data company DEMF.</span></span>
-
-
-## <a name="import-configurations-with-settings"></a><span data-ttu-id="e6f37-107">Importování konfigurací s nastavením</span><span class="sxs-lookup"><span data-stu-id="e6f37-107">Import configurations with settings</span></span>
-1. <span data-ttu-id="e6f37-108">Přejděte na Pracovní prostory > Elektronické sestavy</span><span class="sxs-lookup"><span data-stu-id="e6f37-108">Go to Workspaces > Electronic reporting</span></span>
-2. <span data-ttu-id="e6f37-109">Klikněte na možnost Nastavit jako aktivní.</span><span class="sxs-lookup"><span data-stu-id="e6f37-109">Click Set active.</span></span>
-3. <span data-ttu-id="e6f37-110">Klikněte na možnost Úložiště.</span><span class="sxs-lookup"><span data-stu-id="e6f37-110">Click Repositories.</span></span>
-4. <span data-ttu-id="e6f37-111">Klikněte na možnost Otevřít.</span><span class="sxs-lookup"><span data-stu-id="e6f37-111">Click Open.</span></span>
-5. <span data-ttu-id="e6f37-112">Otevřete filtr sloupce Název konfigurace.</span><span class="sxs-lookup"><span data-stu-id="e6f37-112">Open Configuration name column filter.</span></span>
-6. <span data-ttu-id="e6f37-113">Použijte filtr v poli Název konfigurace, s hodnotou Intrastat (DE) a za použití operátoru filtru "začíná".</span><span class="sxs-lookup"><span data-stu-id="e6f37-113">Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.</span></span>
-    * <span data-ttu-id="e6f37-114">Musíte vybrat název konfigurace platný pro zemi vaší právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="e6f37-114">You should select the configuration name applicable for the country of your legal entity.</span></span> <span data-ttu-id="e6f37-115">Tento postup používá jako příklad právnickou osobu (DEMF) pro Německo a měla by být proto zvolena možnost "Intrastat (DE)".</span><span class="sxs-lookup"><span data-stu-id="e6f37-115">This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.</span></span>  
-    * <span data-ttu-id="e6f37-116">Klikněte na položku Import a poté na možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="e6f37-116">Click Import and then click Yes.</span></span>  
-7. <span data-ttu-id="e6f37-117">Otevřete filtr sloupce Název konfigurace.</span><span class="sxs-lookup"><span data-stu-id="e6f37-117">Open Configuration name column filter.</span></span>
-8. <span data-ttu-id="e6f37-118">Použijte filtr v poli Název konfigurace, s hodnotou Sestava Intrastat a za použití operátoru filtru "začíná".</span><span class="sxs-lookup"><span data-stu-id="e6f37-118">Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.</span></span>
-    * <span data-ttu-id="e6f37-119">Klikněte na položku Import a poté na možnost Ano.</span><span class="sxs-lookup"><span data-stu-id="e6f37-119">Click Import and then click Yes.</span></span>  
-
-## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="e6f37-120">Nastavení parametrů zahraničního obchodu</span><span class="sxs-lookup"><span data-stu-id="e6f37-120">Set up Foreign trade parameters</span></span>
-1. <span data-ttu-id="e6f37-121">Přejděte na Daň > Nastavení > Zahraniční obchod > Parametry zahraničního obchodu.</span><span class="sxs-lookup"><span data-stu-id="e6f37-121">Go to Tax > Setup > Foreign trade > Foreign trade parameters</span></span>
-2. <span data-ttu-id="e6f37-122">Rozbalte část Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="e6f37-122">Expand the Electronic reporting section.</span></span>
-3. <span data-ttu-id="e6f37-123">V poli Mapování formátu souboru zadejte nebo vyberte hodnotu Intrastat (DE).</span><span class="sxs-lookup"><span data-stu-id="e6f37-123">In the File format mapping field, enter or select a value Intrastat (DE)</span></span>
-4. <span data-ttu-id="e6f37-124">V poli Mapování formátu sestavy zadejte nebo vyberte hodnotu Sestava Intrastat.</span><span class="sxs-lookup"><span data-stu-id="e6f37-124">In the Report format mapping field, enter or select a value Intrastat report</span></span>
-5. <span data-ttu-id="e6f37-125">Rozbalte položku Pravidla zaokrouhlování.</span><span class="sxs-lookup"><span data-stu-id="e6f37-125">Expand the Rounding rules section.</span></span>
-    * <span data-ttu-id="e6f37-126">Měli byste nastavit pravidla zaokrouhlení, která jsou platná ve vaší zemi/oblasti pro vykazování v systému Intrastat.</span><span class="sxs-lookup"><span data-stu-id="e6f37-126">You should set up rounding rules that are applicable in your country/region for Intrastat reporting.</span></span>  
-6. <span data-ttu-id="e6f37-127">V poli Pravidlo zaokrouhlování zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="e6f37-127">In the Rounding rule field, enter a number.</span></span>
-    * <span data-ttu-id="e6f37-128">Zadejte přesnost zaokrouhlení, například zadejte hodnotu 0,01.</span><span class="sxs-lookup"><span data-stu-id="e6f37-128">Enter rounding precision, for example, enter '0.01'.</span></span>  
-7. <span data-ttu-id="e6f37-129">Do pole Počet desetinných míst částky zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="e6f37-129">In the Number of decimals for amount field, enter a number.</span></span>
-    * <span data-ttu-id="e6f37-130">Například zadejte 2.</span><span class="sxs-lookup"><span data-stu-id="e6f37-130">For example, enter '2'.</span></span>  
-8. <span data-ttu-id="e6f37-131">Vyberte možnost v poli Zaokrouhlování pod 1 kg.</span><span class="sxs-lookup"><span data-stu-id="e6f37-131">In the Rounding below 1 kg field, select an option.</span></span>
-    * <span data-ttu-id="e6f37-132">Vyberte například 'Zaokrouhlování nahoru na 1 kg'.</span><span class="sxs-lookup"><span data-stu-id="e6f37-132">For example, select 'Rounding up to 1 kg'.</span></span>  
-9. <span data-ttu-id="e6f37-133">V poli Pravidlo zaokrouhlování zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="e6f37-133">In the Rounding rule field, enter a number.</span></span>
-    * <span data-ttu-id="e6f37-134">Například zadejte hodnotu 1 pro zaokrouhlování hmotnosti na celé číslo.</span><span class="sxs-lookup"><span data-stu-id="e6f37-134">For example, enter '1' for rounding weight to the integer.</span></span>  
-10. <span data-ttu-id="e6f37-135">Rozbalte oddíl Minimální limit.</span><span class="sxs-lookup"><span data-stu-id="e6f37-135">Expand the Minimum limit section.</span></span>
-11. <span data-ttu-id="e6f37-136">Zadejte číslo do pole Hmotnost.</span><span class="sxs-lookup"><span data-stu-id="e6f37-136">In the Weight field, enter a number.</span></span>
-    * <span data-ttu-id="e6f37-137">Například zadejte hodnotu 10 jako minimální hmotnost.</span><span class="sxs-lookup"><span data-stu-id="e6f37-137">For example, enter '10' as the minimum weight.</span></span>  
-12. <span data-ttu-id="e6f37-138">Zadejte číslo do pole Částka.</span><span class="sxs-lookup"><span data-stu-id="e6f37-138">In the Amount field, enter a number.</span></span>
-    * <span data-ttu-id="e6f37-139">Například zadejte hodnotu 200 jako minimální částku.</span><span class="sxs-lookup"><span data-stu-id="e6f37-139">For example, enter '200' as the minimum amount.</span></span>  
-13. <span data-ttu-id="e6f37-140">V poli Komodita zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e6f37-140">In the Commodity field, enter or select a value.</span></span>
-
-## <a name="set-up-compression-of-intrastat"></a><span data-ttu-id="e6f37-141">Nastavení komprese pro systém Intrastat</span><span class="sxs-lookup"><span data-stu-id="e6f37-141">Set up Compression of Intrastat</span></span>
-1. <span data-ttu-id="e6f37-142">Přejděte na Daň > Nastavení > Zahraniční obchod > Komprese Intrastat.</span><span class="sxs-lookup"><span data-stu-id="e6f37-142">Go to Tax > Setup > Foreign trade > Compression of Intrastat.</span></span>
-2. <span data-ttu-id="e6f37-143">Klepněte na tlačítko Odebrat.</span><span class="sxs-lookup"><span data-stu-id="e6f37-143">Click Remove.</span></span>
-3. <span data-ttu-id="e6f37-144">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e6f37-144">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="e6f37-145">V oddílu Dostupné vyberte například Zboží.</span><span class="sxs-lookup"><span data-stu-id="e6f37-145">For example, select Commodity in the Available section.</span></span>  
-4. <span data-ttu-id="e6f37-146">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="e6f37-146">Click Add.</span></span>
-
-## <a name="generate-intrastat-declaration"></a><span data-ttu-id="e6f37-147">Generování prohlášení Intrastat</span><span class="sxs-lookup"><span data-stu-id="e6f37-147">Generate Intrastat declaration</span></span>
-1. <span data-ttu-id="e6f37-148">Přejděte na Daň > Deklarace > Zahraniční obchod > Intrastat</span><span class="sxs-lookup"><span data-stu-id="e6f37-148">Go to Tax > Declarations > Foreign trade > Intrastat</span></span>
-2. <span data-ttu-id="e6f37-149">Klikněte na tlačítko Ověřit.</span><span class="sxs-lookup"><span data-stu-id="e6f37-149">Click Validate.</span></span>
-    * <span data-ttu-id="e6f37-150">Ověření se provádí podle pole Zkontrolovat nastavení na stránce Parametry zahraničního obchodu.</span><span class="sxs-lookup"><span data-stu-id="e6f37-150">The validation is done according to the Check setup field on the Foreign trade parameters page.</span></span>  
-3. <span data-ttu-id="e6f37-151">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6f37-151">Click OK.</span></span>
-4. <span data-ttu-id="e6f37-152">Klepněte na položku Aktualizovat.</span><span class="sxs-lookup"><span data-stu-id="e6f37-152">Click Update.</span></span>
-5. <span data-ttu-id="e6f37-153">Klikněte na Minimální limit.</span><span class="sxs-lookup"><span data-stu-id="e6f37-153">Click Minimum limit.</span></span>
-6. <span data-ttu-id="e6f37-154">Zadejte datum do pole Počáteční datum.</span><span class="sxs-lookup"><span data-stu-id="e6f37-154">In the Start date field, enter a date.</span></span>
-    * <span data-ttu-id="e6f37-155">V tomto příkladu zadejte 1. ledna 2015.</span><span class="sxs-lookup"><span data-stu-id="e6f37-155">For example, enter January 1, 2015.</span></span>  
-7. <span data-ttu-id="e6f37-156">Vyberte Ano v poli Komprese.</span><span class="sxs-lookup"><span data-stu-id="e6f37-156">Select Yes in the Compress field.</span></span>
-8. <span data-ttu-id="e6f37-157">Zadejte datum do pole Koncové datum.</span><span class="sxs-lookup"><span data-stu-id="e6f37-157">In the End date field, enter a date.</span></span>
-    * <span data-ttu-id="e6f37-158">V tomto příkladu zadejte 31. ledna 2015.</span><span class="sxs-lookup"><span data-stu-id="e6f37-158">For example, enter January 31, 2015.</span></span>  
-9. <span data-ttu-id="e6f37-159">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6f37-159">Click OK.</span></span>
-10. <span data-ttu-id="e6f37-160">Klepněte na položku Aktualizovat.</span><span class="sxs-lookup"><span data-stu-id="e6f37-160">Click Update.</span></span>
-11. <span data-ttu-id="e6f37-161">Klikněte na Komprese.</span><span class="sxs-lookup"><span data-stu-id="e6f37-161">Click Compress.</span></span>
-    * <span data-ttu-id="e6f37-162">Tato komprese proběhne podle nastavení komprese v systému Intrastat.</span><span class="sxs-lookup"><span data-stu-id="e6f37-162">This compression happens according to how you set the Compression of intrastate settings.</span></span>  
-12. <span data-ttu-id="e6f37-163">Zadejte datum do pole Počáteční datum.</span><span class="sxs-lookup"><span data-stu-id="e6f37-163">In the Start date field, enter a date.</span></span>
-    * <span data-ttu-id="e6f37-164">V tomto příkladu zadejte 1. ledna 2015.</span><span class="sxs-lookup"><span data-stu-id="e6f37-164">For example, enter January 1, 2015.</span></span>  
-13. <span data-ttu-id="e6f37-165">Zadejte datum do pole Koncové datum.</span><span class="sxs-lookup"><span data-stu-id="e6f37-165">In the End date field, enter a date.</span></span>
-    * <span data-ttu-id="e6f37-166">V tomto příkladu zadejte 31. ledna 2015.</span><span class="sxs-lookup"><span data-stu-id="e6f37-166">For example, enter 31st January 2015.</span></span>  
-14. <span data-ttu-id="e6f37-167">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6f37-167">Click OK.</span></span>
-15. <span data-ttu-id="e6f37-168">Klepněte na položku Aktualizovat.</span><span class="sxs-lookup"><span data-stu-id="e6f37-168">Click Update.</span></span>
-16. <span data-ttu-id="e6f37-169">Klikněte na Znovu vygenerovat číselnou řadu.</span><span class="sxs-lookup"><span data-stu-id="e6f37-169">Click Regenerate sequence numbers.</span></span>
-17. <span data-ttu-id="e6f37-170">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6f37-170">Click OK.</span></span>
-18. <span data-ttu-id="e6f37-171">Klepněte na Výstup.</span><span class="sxs-lookup"><span data-stu-id="e6f37-171">Click Output.</span></span>
-19. <span data-ttu-id="e6f37-172">Klikněte na možnost Sestava.</span><span class="sxs-lookup"><span data-stu-id="e6f37-172">Click Report.</span></span>
-20. <span data-ttu-id="e6f37-173">V poli Od data zadejte první datum období vykazování.</span><span class="sxs-lookup"><span data-stu-id="e6f37-173">In the From date field, enter the first date of the reporting period.</span></span>
-    * <span data-ttu-id="e6f37-174">Například můžete nastavit datum na 1. ledna 2015.</span><span class="sxs-lookup"><span data-stu-id="e6f37-174">For example, set the date to January 1, 2015.</span></span>  
-21. <span data-ttu-id="e6f37-175">Do pole Do data zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="e6f37-175">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="e6f37-176">V tomto příkladu zadejte 31. ledna 2015.</span><span class="sxs-lookup"><span data-stu-id="e6f37-176">For example, enter January 31, 2015.</span></span>  
-22. <span data-ttu-id="e6f37-177">Vyberte možnost Ano v poli Generovat soubor.</span><span class="sxs-lookup"><span data-stu-id="e6f37-177">Select Yes in the Generate file field.</span></span>
-23. <span data-ttu-id="e6f37-178">Zadejte hodnotu do pole Název souboru.</span><span class="sxs-lookup"><span data-stu-id="e6f37-178">In the File name field, type a value.</span></span>
-24. <span data-ttu-id="e6f37-179">Vyberte možnost Ano v poli Generovat sestavu.</span><span class="sxs-lookup"><span data-stu-id="e6f37-179">Select Yes in the Generate report field.</span></span>
-25. <span data-ttu-id="e6f37-180">Zadejte hodnotu do pole Název souboru sestavy.</span><span class="sxs-lookup"><span data-stu-id="e6f37-180">In the Report file name field, type a value.</span></span>
-26. <span data-ttu-id="e6f37-181">Vyberte volbu v poli Směr.</span><span class="sxs-lookup"><span data-stu-id="e6f37-181">In the Direction field, select an option.</span></span>
-    * <span data-ttu-id="e6f37-182">V tomto příkladu vyberte Expedice.</span><span class="sxs-lookup"><span data-stu-id="e6f37-182">For example, select 'Dispatches'.</span></span>  
-27. <span data-ttu-id="e6f37-183">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e6f37-183">Click OK.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="eur-00002-eu-intrastat-declaration.md" target-language="cs-CZ">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>eur-00002-eu-intrastat-declaration.f3e0e2.1236f27a3a5c208ffec41374a6593d1f0e7c4433.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>1236f27a3a5c208ffec41374a6593d1f0e7c4433</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00002-eu-intrastat-declaration.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>EUR-00002 Generate an EU Intrastat declaration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00002 Generování prohlášení Intrastat EU</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento postup vás provede kroky nutnými k exportu prohlášení systému Intrastat ve formátu elektronického souboru a náhledu dat výkazu ve formátu aplikace Excel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>EUR-00002 Generate an EU Intrastat declaration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00002 Generování prohlášení Intrastat EU</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento postup vás provede kroky nutnými k exportu prohlášení systému Intrastat ve formátu elektronického souboru a náhledu dat výkazu ve formátu aplikace Excel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Before you can complete this procedure, you must transfer transactions to the Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Před provedením tohoto postupu je nutné převést transakce do systému Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This procedure was created using the demo data company DEMF.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato procedura byla vytvořena pomocí ukázkových dat společnosti DEMF.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Import configurations with settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importování konfigurací s nastavením</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Go to Workspaces &gt; Electronic reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Pracovní prostory &gt; Elektronické sestavy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Click Set active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na možnost Nastavit jako aktivní.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Click Repositories.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na možnost Úložiště.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Click Open.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na možnost Otevřít.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Open Configuration name column filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otevřete filtr sloupce Název konfigurace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použijte filtr v poli Název konfigurace, s hodnotou Intrastat (DE) a za použití operátoru filtru "začíná".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>You should select the configuration name applicable for the country of your legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Musíte vybrat název konfigurace platný pro zemi vaší právnické osoby.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento postup používá jako příklad právnickou osobu (DEMF) pro Německo a měla by být proto zvolena možnost "Intrastat (DE)".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Click Import and then click Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Import a poté na možnost Ano.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Open Configuration name column filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otevřete filtr sloupce Název konfigurace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použijte filtr v poli Název konfigurace, s hodnotou Sestava Intrastat a za použití operátoru filtru "začíná".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Click Import and then click Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na položku Import a poté na možnost Ano.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Set up Foreign trade parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení parametrů zahraničního obchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Foreign trade parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Daň &gt; Nastavení &gt; Zahraniční obchod &gt; Parametry zahraničního obchodu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Expand the Electronic reporting section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte část Elektronické výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>In the File format mapping field, enter or select a value Intrastat (DE)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Mapování formátu souboru zadejte nebo vyberte hodnotu Intrastat (DE).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>In the Report format mapping field, enter or select a value Intrastat report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Mapování formátu sestavy zadejte nebo vyberte hodnotu Sestava Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Expand the Rounding rules section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte položku Pravidla zaokrouhlování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>You should set up rounding rules that are applicable in your country/region for Intrastat reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Měli byste nastavit pravidla zaokrouhlení, která jsou platná ve vaší zemi/oblasti pro vykazování v systému Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>In the Rounding rule field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Pravidlo zaokrouhlování zadejte číslo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Enter rounding precision, for example, enter '0.01'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte přesnost zaokrouhlení, například zadejte hodnotu 0,01.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>In the Number of decimals for amount field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Do pole Počet desetinných míst částky zadejte číslo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>For example, enter '2'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte 2.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the Rounding below 1 kg field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte možnost v poli Zaokrouhlování pod 1 kg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>For example, select 'Rounding up to 1 kg'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte například 'Zaokrouhlování nahoru na 1 kg'.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>In the Rounding rule field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Pravidlo zaokrouhlování zadejte číslo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>For example, enter '1' for rounding weight to the integer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte hodnotu 1 pro zaokrouhlování hmotnosti na celé číslo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Expand the Minimum limit section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozbalte oddíl Minimální limit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>In the Weight field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte číslo do pole Hmotnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>For example, enter '10' as the minimum weight.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte hodnotu 10 jako minimální hmotnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the Amount field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte číslo do pole Částka.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For example, enter '200' as the minimum amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například zadejte hodnotu 200 jako minimální částku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>In the Commodity field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Komodita zadejte nebo vyberte hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Set up Compression of Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení komprese pro systém Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Compression of Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Daň &gt; Nastavení &gt; Zahraniční obchod &gt; Komprese Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Click Remove.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko Odebrat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>For example, select Commodity in the Available section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V oddílu Dostupné vyberte například Zboží.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Click Add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na možnost Přidat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Generate Intrastat declaration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generování prohlášení Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Go to Tax &gt; Declarations &gt; Foreign trade &gt; Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Daň &gt; Deklarace &gt; Zahraniční obchod &gt; Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Click Validate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko Ověřit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>The validation is done according to the Check setup field on the Foreign trade parameters page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ověření se provádí podle pole Zkontrolovat nastavení na stránce Parametry zahraničního obchodu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Click Update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na položku Aktualizovat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Click Minimum limit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na Minimální limit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>In the Start date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte datum do pole Počáteční datum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>For example, enter January 1, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu zadejte 1. ledna 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Select Yes in the Compress field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte Ano v poli Komprese.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>In the End date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte datum do pole Koncové datum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>For example, enter January 31, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu zadejte 31. ledna 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Click Update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na položku Aktualizovat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Click Compress.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na Komprese.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>This compression happens according to how you set the Compression of intrastate settings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato komprese proběhne podle nastavení komprese v systému Intrastat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>In the Start date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte datum do pole Počáteční datum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>For example, enter January 1, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu zadejte 1. ledna 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>In the End date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte datum do pole Koncové datum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>For example, enter 31st January 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu zadejte 31. ledna 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Click Update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na položku Aktualizovat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Click Regenerate sequence numbers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na Znovu vygenerovat číselnou řadu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Click Output.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na Výstup.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Click Report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na možnost Sestava.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>In the From date field, enter the first date of the reporting period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Od data zadejte první datum období vykazování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>For example, set the date to January 1, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například můžete nastavit datum na 1. ledna 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>In the To date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Do pole Do data zadejte datum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>For example, enter January 31, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu zadejte 31. ledna 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Select Yes in the Generate file field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte možnost Ano v poli Generovat soubor.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>In the File name field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte hodnotu do pole Název souboru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Select Yes in the Generate report field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte možnost Ano v poli Generovat sestavu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>In the Report file name field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte hodnotu do pole Název souboru sestavy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>In the Direction field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte volbu v poli Směr.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>For example, select 'Dispatches'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu vyberte Expedice.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

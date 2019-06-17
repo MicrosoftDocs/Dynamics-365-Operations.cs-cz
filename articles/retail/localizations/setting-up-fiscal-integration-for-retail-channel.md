@@ -1,228 +1,492 @@
----
-title: Nastavení fiskální integrace pro maloobchodní kanály
-description: Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro maloobchodní kanály.
-author: josaw
-manager: annbe
-ms.date: 02/01/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.search.region: Global
-ms.search.industry: Retail
-ms.author: v-kikozl
-ms.search.validFrom: 2018-11-1
-ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1525318"
----
-# <a name="set-up-the-fiscal-integration-for-retail-channels"></a><span data-ttu-id="23c49-103">Nastavení fiskální integrace pro maloobchodní kanály</span><span class="sxs-lookup"><span data-stu-id="23c49-103">Set up the fiscal integration for Retail channels</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-## <a name="introduction"></a><span data-ttu-id="23c49-104">Úvod</span><span class="sxs-lookup"><span data-stu-id="23c49-104">Introduction</span></span>
-
-<span data-ttu-id="23c49-105">Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro maloobchodní kanály.</span><span class="sxs-lookup"><span data-stu-id="23c49-105">This topic provides guidelines for setting up the fiscal integration functionality for Retail channels.</span></span> <span data-ttu-id="23c49-106">Další informace o fiskální integraci naleznete v tématu [Přehled fiskální integrace pro maloobchodní kanály](fiscal-integration-for-retail-channel.md).</span><span class="sxs-lookup"><span data-stu-id="23c49-106">For more information about the fiscal integration, see [Overview of fiscal integration for Retail channels](fiscal-integration-for-retail-channel.md).</span></span>
-
-<span data-ttu-id="23c49-107">Proces nastavení fiskální integrace zahrnuje následující obecné úlohy:</span><span class="sxs-lookup"><span data-stu-id="23c49-107">The process of setting up the fiscal integration includes the following tasks:</span></span>
-
-1. <span data-ttu-id="23c49-108">Konfigurace fiskálních konektorů, které reprezentují fiskální zařízení nebo služby používané pro účely fiskální registrace, jako jsou fiskální tiskárny.</span><span class="sxs-lookup"><span data-stu-id="23c49-108">Configure fiscal connectors that represent fiscal devices or services that are used for fiscal registration purposes, such as fiscal printers.</span></span>
-2. <span data-ttu-id="23c49-109">Nakonfigurujte poskytovatele dokumentů, kteří generují fiskální dokumenty k registraci ve fiskálních zařízeních nebo službách podle fiskálních konektorů.</span><span class="sxs-lookup"><span data-stu-id="23c49-109">Configure document providers that generate fiscal documents that will be registered in fiscal devices or services by fiscal connectors.</span></span>
-3. <span data-ttu-id="23c49-110">Nakonfigurujte proces fiskální registrace, který definuje pořadí kroků fiskální registrace a fiskálních konektorů a poskytovatelů fiskálních dokumentů používaných v jednotlivých krocích.</span><span class="sxs-lookup"><span data-stu-id="23c49-110">Configure the fiscal registration process that defines a sequence of fiscal registration steps and the fiscal connectors and fiscal document providers that are used for each step.</span></span>
-4. <span data-ttu-id="23c49-111">Přiřaďte procesy fiskální registrace do funkčních profilů POS.</span><span class="sxs-lookup"><span data-stu-id="23c49-111">Assign the fiscal registration process to point of sale (POS) functionality profiles.</span></span>
-5. <span data-ttu-id="23c49-112">Přiřadíte technické profily konektoru hardwarovým profilům.</span><span class="sxs-lookup"><span data-stu-id="23c49-112">Assign connector technical profiles to hardware profiles.</span></span>
-
-## <a name="set-up-a-fiscal-registration-process"></a><span data-ttu-id="23c49-113">Nastavení procesu fiskální registrace</span><span class="sxs-lookup"><span data-stu-id="23c49-113">Set up a fiscal registration process</span></span>
-
-<span data-ttu-id="23c49-114">Před použitím funkce fiskální integrace byste měli konfigurovat následující nastavení.</span><span class="sxs-lookup"><span data-stu-id="23c49-114">Before you use the fiscal integration functionality, you should configure the following settings.</span></span>
-
-1. <span data-ttu-id="23c49-115">Aktualizace parametrů maloobchodu</span><span class="sxs-lookup"><span data-stu-id="23c49-115">Update retail parameters.</span></span>
-
-    1. <span data-ttu-id="23c49-116">Na stránce **Sdílené parametry maloobchodu** na kartě **Obecné** nastavte možnost **Povolit fiskální integraci** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="23c49-116">On the **Retail shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**.</span></span> <span data-ttu-id="23c49-117">Na kartě **Číselné řady** definujte číselné řady pro následující reference:</span><span class="sxs-lookup"><span data-stu-id="23c49-117">On the **Number sequences** tab, define the number sequences for the following references:</span></span>
-
-        - <span data-ttu-id="23c49-118">Číslo fiskálního technického profilu</span><span class="sxs-lookup"><span data-stu-id="23c49-118">Fiscal technical profile number</span></span>
-        - <span data-ttu-id="23c49-119">Číslo skupiny fiskálních konektorů</span><span class="sxs-lookup"><span data-stu-id="23c49-119">Fiscal connector group number</span></span>
-        - <span data-ttu-id="23c49-120">Číslo procesu registrace</span><span class="sxs-lookup"><span data-stu-id="23c49-120">Registration process number</span></span>
-
-    2. <span data-ttu-id="23c49-121">Na stránce **Parametry maloobchodu** definujte číselné řady pro číslo fiskálního funkčního profilu.</span><span class="sxs-lookup"><span data-stu-id="23c49-121">On the **Retail parameters** page, define the number sequence for the fiscal functional profile number.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="23c49-122">Číselné řady jsou volitelné.</span><span class="sxs-lookup"><span data-stu-id="23c49-122">Number sequences are optional.</span></span> <span data-ttu-id="23c49-123">Čísla pro všechny entity fiskální integrace lze generovat z číselných řad nebo ručně.</span><span class="sxs-lookup"><span data-stu-id="23c49-123">Numbers for all fiscal integration entities can be generated either from number sequences or manually.</span></span>
-
-2. <span data-ttu-id="23c49-124">Nahrajte konfigurace fiskálních konektorů a poskytovatelů fiskálních dokumentů.</span><span class="sxs-lookup"><span data-stu-id="23c49-124">Upload configurations of fiscal connectors and fiscal document providers.</span></span>
-
-    <span data-ttu-id="23c49-125">Zprostředkovatel fiskálního dokumentu je zodpovědný za generování fiskálních dokumentů, které představují maloobchodní transakce a události, které jsou zaregistrovány na POS ve formátu, který se používá pro interakci s fiskálním zařízením nebo službou.</span><span class="sxs-lookup"><span data-stu-id="23c49-125">A fiscal document provider is responsible for generating fiscal documents that represent retail transactions and events that are registered on the POS in a format that is also used for the interaction with a fiscal device or service.</span></span> <span data-ttu-id="23c49-126">Poskytovatel fiskálního dokumentu například může generovat vyjádření fiskálního příjmu ve formátu XML.</span><span class="sxs-lookup"><span data-stu-id="23c49-126">For example, a fiscal document provider might generate a representation of a fiscal receipt in an XML format.</span></span>
-
-    <span data-ttu-id="23c49-127">Fiskální konektor zodpovídá za komunikace s fiskálním zařízením nebo službu.</span><span class="sxs-lookup"><span data-stu-id="23c49-127">A fiscal connector is responsible for the communication with a fiscal device or service.</span></span> <span data-ttu-id="23c49-128">Fiskální konektor může například odeslat fiskální příjem, který poskytovatel fiskálních dokumentů vytvořil ve formátu XML pro fiskální tiskárnu.</span><span class="sxs-lookup"><span data-stu-id="23c49-128">For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer.</span></span> <span data-ttu-id="23c49-129">Podrobnější informace o kompoenntách fiskální integrace získáte v části [Ukázky procesu fiskální registrace pro fiskální zařízení](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).</span><span class="sxs-lookup"><span data-stu-id="23c49-129">For more details about fiscal integration components, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).</span></span>
-
-    1. <span data-ttu-id="23c49-130">Na stránce **Fiskální konektory** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Fiskální konektory**), nahrajte konfiguraci XML pro každé zařízení nebo službu, které plánujete použít pro účely fislální integrace.</span><span class="sxs-lookup"><span data-stu-id="23c49-130">On the **Fiscal connectors** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes.</span></span>
-
-        > [!TIP]
-        > <span data-ttu-id="23c49-131">Výběrem možnosti **Zobrazit** můžete zobrazit funkční a technické profily, které se vztahují k aktuálnímu fiskálnímu konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-131">By selecting **View**, you can view all functional and technical profiles that are related to the current fiscal connector.</span></span>
-
-    2. <span data-ttu-id="23c49-132">Na stránce **Poskytovatelé fiskálního dokumentu** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Poskytovatelé fiskálního dokumentu**), nahrajte konfiguraci XML pro každé zařízení nebo službu, které plánujete použít pro účely fiskální integrace.</span><span class="sxs-lookup"><span data-stu-id="23c49-132">On the **Fiscal document providers** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal document providers**), upload an XML configuration for each device or service that you plan to use.</span></span>
-
-        > [!TIP]
-        > <span data-ttu-id="23c49-133">Výběrem možnosti **Zobrazit** můžete zobrazit funkční a technické profily, které se vztahují k aktuálnímu poskytovateli fiskálního dokumentu.</span><span class="sxs-lookup"><span data-stu-id="23c49-133">By selecting **View**, you can view all functional profiles that are related to the current fiscal document provider.</span></span>
-
-    <span data-ttu-id="23c49-134">Příklady konfigurací fiskálních konektorů a poskytovatelů fiskálního dokumentu naleznete v tématu [Ukázky fiskální integrace v sadě Retail SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk).</span><span class="sxs-lookup"><span data-stu-id="23c49-134">For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Retail SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk).</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="23c49-135">Mapování dat je považováno za součást poskytovatele fiskálního dokumentu.</span><span class="sxs-lookup"><span data-stu-id="23c49-135">Data mapping is considered part of a fiscal document provider.</span></span> <span data-ttu-id="23c49-136">Chcete-li nastavit různá mapování dat pro stejný konektor (například pravidla pro konkrétní stav), měli byste vytvořit různé poskytovatele fiskálních dokumentů.</span><span class="sxs-lookup"><span data-stu-id="23c49-136">To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.</span></span>
-
-3. <span data-ttu-id="23c49-137">Vytvořte funkční profily konektoru a technické profily konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-137">Create connector functional profiles and connector technical profiles.</span></span>
-
-    1. <span data-ttu-id="23c49-138">Na stránce **Funkční profily konektoru** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Funkční profily konektoru**) vytvořte funkční profil konektoru pro každou kombinaci fiskálního konektoru a poskytovatele fiskálního dokumentu, který souvisí s fiskálním konektorem.</span><span class="sxs-lookup"><span data-stu-id="23c49-138">On the **Connector functional profiles** page (**Retail \> Channel setup \> Fiscal integration \> Connector functional profiles**), create a connector functional profile for each combination of a fiscal connector and a fiscal document provider that is related to this fiscal connector.</span></span>
-
-        1. <span data-ttu-id="23c49-139">Zvolte název konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-139">Select a connector name.</span></span>
-        2. <span data-ttu-id="23c49-140">Vyberte poskytovatele dokumentu.</span><span class="sxs-lookup"><span data-stu-id="23c49-140">Select a document provider.</span></span>
-
-        <span data-ttu-id="23c49-141">Parametry mapování dat konektoru můžete změnit ve funkčním profilu konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-141">You can change the data mapping parameters in a connector functional profile.</span></span> <span data-ttu-id="23c49-142">Chcete-li obnovit výchozí parametry, které jsou definovány v konfiguraci poskytovatele fiskálního dokumentu, vyberte **Aktualizovat**.</span><span class="sxs-lookup"><span data-stu-id="23c49-142">To restore the default parameters that are defined in the fiscal document provider configuration, select **Update**.</span></span>
-
-        <span data-ttu-id="23c49-143">**Příklady**</span><span class="sxs-lookup"><span data-stu-id="23c49-143">**Examples**</span></span>
-    
-        |   | <span data-ttu-id="23c49-144">Formát</span><span class="sxs-lookup"><span data-stu-id="23c49-144">Format</span></span> | <span data-ttu-id="23c49-145">Příklad</span><span class="sxs-lookup"><span data-stu-id="23c49-145">Example</span></span> |
-        |---|--------|---------|
-        | <span data-ttu-id="23c49-146">**Nastavení sazeb DPH**</span><span class="sxs-lookup"><span data-stu-id="23c49-146">**VAT rates settings**</span></span> | <span data-ttu-id="23c49-147">hodnota : VATrate</span><span class="sxs-lookup"><span data-stu-id="23c49-147">value : VATrate</span></span> | <span data-ttu-id="23c49-148">1 : 2000, 2 : 1800</span><span class="sxs-lookup"><span data-stu-id="23c49-148">1 : 2000, 2 : 1800</span></span> |
-        | <span data-ttu-id="23c49-149">**Mapování kódů DPH**</span><span class="sxs-lookup"><span data-stu-id="23c49-149">**VAT codes mapping**</span></span> | <span data-ttu-id="23c49-150">VATcode : hodnota</span><span class="sxs-lookup"><span data-stu-id="23c49-150">VATcode : value</span></span> | <span data-ttu-id="23c49-151">vat20 : 1, vat18 : 2</span><span class="sxs-lookup"><span data-stu-id="23c49-151">vat20 : 1, vat18 : 2</span></span> |
-        | <span data-ttu-id="23c49-152">**Mapování typů úhrad**</span><span class="sxs-lookup"><span data-stu-id="23c49-152">**Tender types mapping**</span></span> | <span data-ttu-id="23c49-153">TenderType : hodnota</span><span class="sxs-lookup"><span data-stu-id="23c49-153">TenderType : value</span></span> | <span data-ttu-id="23c49-154">Hotovost : 1, Karta : 2</span><span class="sxs-lookup"><span data-stu-id="23c49-154">Cash : 1, Card : 2</span></span> |
-
-        > [!NOTE]
-        > <span data-ttu-id="23c49-155">Funkční profily konektoru jsou specifické pro společnost.</span><span class="sxs-lookup"><span data-stu-id="23c49-155">Connector functional profiles are company-specific.</span></span> <span data-ttu-id="23c49-156">Pokud chcete používat stejnou kombinaci fiskálního konektoru a poskytovatele fiskálních dokumentů v různých společnostech, měli byste vytvořit funkční profil konektoru pro každou společnost.</span><span class="sxs-lookup"><span data-stu-id="23c49-156">If you plan to use the same combination of a fiscal connector and a fiscal document provider in different companies, you should create a connector functional profile for each company.</span></span>
-
-    2. <span data-ttu-id="23c49-157">Na stránce **Technické profily konektoru** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Technické profily konektoru**) vytvořte technický profil konektoru pro každý fiskální konektor.</span><span class="sxs-lookup"><span data-stu-id="23c49-157">On the **Connector technical profiles** page (**Retail \> Channel setup \> Fiscal integration \> Connector technical profiles**), create a connector technical profile for each fiscal connector.</span></span>
-
-        1. <span data-ttu-id="23c49-158">Zvolte název konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-158">Select a connector name.</span></span>
-        2. <span data-ttu-id="23c49-159">Zvolte typ konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-159">Select a connector type.</span></span> <span data-ttu-id="23c49-160">Pro zařízení, která jsou připojena k hardwarové stanici, vyberte **místní**.</span><span class="sxs-lookup"><span data-stu-id="23c49-160">For devices that are connected to a Hardware station, select **Local**.</span></span>
-
-            > [!NOTE]
-            > <span data-ttu-id="23c49-161">Pouze místní konektory jsou aktuálně podporovány.</span><span class="sxs-lookup"><span data-stu-id="23c49-161">Only local connectors are currently supported.</span></span>
-
-        <span data-ttu-id="23c49-162">Parametry na kartách **zařízení** a **nastavení** v technickém profilu konektoru lze změnit.</span><span class="sxs-lookup"><span data-stu-id="23c49-162">Parameters on the **Device** and **Settings** tabs in a connector technical profile can be changed.</span></span> <span data-ttu-id="23c49-163">Chcete-li obnovit výchozí parametry, které jsou definovány v konfiguraci fiskálního konektoru, vyberte **Aktualizovat**.</span><span class="sxs-lookup"><span data-stu-id="23c49-163">To restore the default parameters that are defined in the fiscal connector configuration, select **Update**.</span></span> <span data-ttu-id="23c49-164">V době, kdy se načítá nová verze konfigurace XML, obdržíte zprávu, která uvádí, že se současný poskytovatel fiskálního konektoru nebo dokumentu již používá.</span><span class="sxs-lookup"><span data-stu-id="23c49-164">While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used.</span></span> <span data-ttu-id="23c49-165">Tento postup nepřepíše ruční změny, dříve provedené ve funkčních a technických profilech konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-165">This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles.</span></span> <span data-ttu-id="23c49-166">Chcete-li použít výchozí sadu parametrů z nové konfigurace, klikněte na tlačítko **Aktualizovat** na stránce **Funkční profily konektoru** a na stránce **Technické profily konektoru**.</span><span class="sxs-lookup"><span data-stu-id="23c49-166">To apply the default set of parameters from a new configuration, on the **Connector functional profiles** page or the **Connector technical profiles** page, select **Update**.</span></span>
-
-4. <span data-ttu-id="23c49-167">Vytvořte skupiny fiskálních konektorů.</span><span class="sxs-lookup"><span data-stu-id="23c49-167">Create fiscal connector groups.</span></span>
-
-    <span data-ttu-id="23c49-168">Skupina fiskálních konektorů kombinuje fiskální konektory funkčních profilů, které provádí identické funkce a používají se ve stejné fázi v rámci procesu fiskální registrace.</span><span class="sxs-lookup"><span data-stu-id="23c49-168">A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process.</span></span> <span data-ttu-id="23c49-169">Například pokud lze v maloobchodě použít několik modelů fiskální tiskárny, lze fiskální konektory pro tyto tiskárny zkombinovat do skupiny fiskálního konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-169">For example, if several fiscal printer models can be used in a retail store, fiscal connectors for those fiscal printers can be combined in a fiscal connector group.</span></span>
-    
-    1. <span data-ttu-id="23c49-170">Na stránce **Skupina fiskálních konektorů** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Skupiny fiskálních konektorů**) vytvořte novou skupinu fiskálních konektorů.</span><span class="sxs-lookup"><span data-stu-id="23c49-170">On the **Fiscal connector group** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**), create a new fiscal connector group.</span></span>
-    2. <span data-ttu-id="23c49-171">Přidání funkčních profilů do skupiny konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-171">Add functional profiles to the connector group.</span></span> <span data-ttu-id="23c49-172">Klikněte na **Přidat** na stránce **Funkční profily** a vyberte číslo profilu.</span><span class="sxs-lookup"><span data-stu-id="23c49-172">On the **Functional profiles** tab, select **Add**, and select a profile number.</span></span> <span data-ttu-id="23c49-173">Ve skupině konektoru může mít každý fiskální konektor pouze jeden funkční profil.</span><span class="sxs-lookup"><span data-stu-id="23c49-173">Each fiscal connector in a connector group can only have one functional profile.</span></span>
-    3. <span data-ttu-id="23c49-174">Pokud chcete pozastavit použití funkčního profilu, nastavte možnost **Zakázat** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="23c49-174">To suspend use of the functional profile, set the **Disable** option to **Yes**.</span></span> <span data-ttu-id="23c49-175">Tato změna ovlivní pouze aktuální skupinu konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-175">This change affects only the current connector group.</span></span> <span data-ttu-id="23c49-176">Můžete pokračovat s použitím stejného funkčního profilu v jiných skupinách konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-176">You can continue to use the same functional profile in other connector groups.</span></span>
-
-5. <span data-ttu-id="23c49-177">Vytvořte proces fiskální registrace.</span><span class="sxs-lookup"><span data-stu-id="23c49-177">Create a fiscal registration process.</span></span>
-
-    <span data-ttu-id="23c49-178">Proces fiskální registrace je definován sledem registračních kroků a skupinou konektorů používaných v každém kroku.</span><span class="sxs-lookup"><span data-stu-id="23c49-178">A fiscal registration process is defined by the sequence of registration steps and the connector group that is used for each step.</span></span>
-    
-    1. <span data-ttu-id="23c49-179">Na stránce **Proces fiskální registrace** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Procesy fiskální registrace**) vytvořte nový záznam pro každý jedinečný proces fiskálních integrace.</span><span class="sxs-lookup"><span data-stu-id="23c49-179">On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), create a new record for each unique process of fiscal registration.</span></span>
-    2. <span data-ttu-id="23c49-180">Přidejte kroky registrace do procesu:</span><span class="sxs-lookup"><span data-stu-id="23c49-180">Add registration steps to the process:</span></span>
-
-        1. <span data-ttu-id="23c49-181">Vyberte **přidat**.</span><span class="sxs-lookup"><span data-stu-id="23c49-181">Select **Add**.</span></span>
-        2. <span data-ttu-id="23c49-182">Zvolte typ fiskálního konektoru:</span><span class="sxs-lookup"><span data-stu-id="23c49-182">Select a fiscal connector type.</span></span>
-        3. <span data-ttu-id="23c49-183">V poli **číslo skupiny** vyberte vhodnou skupinu fiskálního konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-183">In the **Group number** field, select an appropriate fiscal connector group.</span></span>
-
-6. <span data-ttu-id="23c49-184">Přiřaďte entity procesu fiskální registrace profilům POS.</span><span class="sxs-lookup"><span data-stu-id="23c49-184">Assign entities of the fiscal registration process to POS profiles.</span></span>
-
-    1. <span data-ttu-id="23c49-185">Na stránce **Profily funkce POS** (**Maloobchod \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Funkční profily**) přidělte proces fiskální registrace funkčnímu profilu POS.</span><span class="sxs-lookup"><span data-stu-id="23c49-185">On the **POS functionality profiles** page (**Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**), assign the fiscal registration process to a POS functionality profile.</span></span> <span data-ttu-id="23c49-186">Vyberte **Upravit** a poté na kartě **Fiskální registrace** v poli **Číslo procesu** vyberte proces.</span><span class="sxs-lookup"><span data-stu-id="23c49-186">Select **Edit**, and then, on the **Fiscal registration process** tab, in the **Process number** field, select a process.</span></span>
-    2. <span data-ttu-id="23c49-187">Na stránce **Hardwarový profil POS** (**Maloobchod \> Nastavení kanálu \> Nastavení POS \> Profily POS \> Hardwarové profily**) přiřaďte technické profily konektoru hardwarovému profilu.</span><span class="sxs-lookup"><span data-stu-id="23c49-187">On the **POS hardware profile** page (**Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**), assign connector technical profiles to a hardware profile.</span></span> <span data-ttu-id="23c49-188">Vyberte **upravit**, přidejte řádek na kartu **Fiskální periferní zařízení** a potom v poli **číslo profilu** vyberte profil technického konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-188">Select **Edit**, add a line on the **Fiscal peripherals** tab, and then, in the **Profile number** field, select a connector technical profile.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="23c49-189">Můžete přidat několik technických profilů ke stejnému hardwarovému profilu.</span><span class="sxs-lookup"><span data-stu-id="23c49-189">You can add several technical profiles to the same hardware profile.</span></span> <span data-ttu-id="23c49-190">Profil hardwaru nebo profil funkce POS, by však měl mít pouze jeden průsečík s libovolnou skupinou fiskálního konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-190">However, a hardware profile or POS functionality profile should have only one intersection with any fiscal connector group.</span></span>
-
-    <span data-ttu-id="23c49-191">Tok fiskální registrace je definován procesem fiskální registrace a také určitými parametry komponent fiskální registrace: rozšíření Doba běhu obchodu pro poskytovatele fiskálního dokumentu a rozšíření Hardwarová stanice pro fiskální konektor.</span><span class="sxs-lookup"><span data-stu-id="23c49-191">The fiscal registration flow is defined by the fiscal registration process and also by some parameters of fiscal integration components: the Commerce runtime extension for the fiscal document provider and the Hardware station extension for the fiscal connector.</span></span>
-
-    - <span data-ttu-id="23c49-192">Přihlášení k odběru akcí a transakcí pro fiskální registraci je u poskytovatele fiskálního dokumentu předdefinované.</span><span class="sxs-lookup"><span data-stu-id="23c49-192">The subscription of events and transactions to fiscal registration is predefined in the fiscal document provider.</span></span>
-    - <span data-ttu-id="23c49-193">Poskytovatel fiskálního dokumentu nese odpovědnost také za identifikaci fiskálního konektoru, který se používá k fiskální registraci.</span><span class="sxs-lookup"><span data-stu-id="23c49-193">The fiscal document provider is also responsible for identifying the fiscal connector that is used for fiscal registration.</span></span> <span data-ttu-id="23c49-194">Odpovídá funkčním profilům konektoru, které jsou zahrnuty ve skupině fiskálních konektorů, která je zadaná pro aktuální krok procesu daňové registrace s technickým profilem konektoru, který je přiřazen profilu hardwaru hardwarové stanice, se kteoru je POS spárován.</span><span class="sxs-lookup"><span data-stu-id="23c49-194">It matches the connector functional profiles that are included in the fiscal connector group that is specified for the current step of the fiscal registration process with the connector technical profile that is assigned to the hardware profile of the Hardware station that the POS is paired to.</span></span>
-    - <span data-ttu-id="23c49-195">Poskytovatel fiskálního dokumentu používá nastavení mapování dat z konfigurace poskytovatele fiskálního dokumentu k transformaci dat transakce nebo události, například daně a plateb, zatímco je generován daňový doklad.</span><span class="sxs-lookup"><span data-stu-id="23c49-195">The fiscal document provider uses the data mapping settings from the fiscal document provider configuration to transform transaction/event data such as taxes and payments while a fiscal document is generated.</span></span>
-    - <span data-ttu-id="23c49-196">Pokud poskytovatel fiskálního dokumentu vygeneruje daňový doklad, fiskální konektor ho může zaslat do fiskálního zařízení tak, jak je, nebo ho analyzovat a převést do sekvence příkazů v programovacím rozhraní aplikace zařízení (API) v závislosti na tom, jak je komunikace zpracovávána.</span><span class="sxs-lookup"><span data-stu-id="23c49-196">When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device application programming interface (API), depending on how the communication is handled.</span></span>
-
-7. <span data-ttu-id="23c49-197">Na stránce **Proces fiskální registrace** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Procesy fiskální registrace**) vyberte **Ověřit** k ověření procesu fiskální registrace.</span><span class="sxs-lookup"><span data-stu-id="23c49-197">On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), select **Validate** to validate the fiscal registration process.</span></span>
-
-    <span data-ttu-id="23c49-198">Doporučujeme spustit tento typ ověření v následujících případech:</span><span class="sxs-lookup"><span data-stu-id="23c49-198">We recommend that you run this type of validation in the following cases:</span></span>
-    
-    - <span data-ttu-id="23c49-199">Pro nový proces registrace po dokončení všech nastavení, včetně přiřazení procesů registrace funkčním a hardwarovým profilům POS.</span><span class="sxs-lookup"><span data-stu-id="23c49-199">After you've completed all the settings for a new registration process, including when you assign registration processes to POS functionality profiles and hardware profiles.</span></span>
-    - <span data-ttu-id="23c49-200">Poté, co provedete změny v existujícím procesu daňové registrace a pokud tyto změny způsobí výběr jiného fiskálního konektoru v době běhu (například když změníte skupinu konektoru pro krok procesu fiskální registrace, povolte funkční profil konektoru ve skupině konektoru nebo přidejte nový funkční profil konektoru skupině konektoru).</span><span class="sxs-lookup"><span data-stu-id="23c49-200">After you make changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime (for example, if you change the connector group for a fiscal registration process step, enable a connector functional profile in a connector group, or add a new connector functional profile to a connector group).</span></span>
-    - <span data-ttu-id="23c49-201">Po provedení změn v přiřazení technických profilů konektoru hardwarovým profilům.</span><span class="sxs-lookup"><span data-stu-id="23c49-201">After you make changes in the assignment of connector technical profiles to hardware profiles.</span></span>
-
-8. <span data-ttu-id="23c49-202">Na stránce **Plán distribuce** spusťte úlohu **1070** a **1090** pro převod dat do databáze kanálů.</span><span class="sxs-lookup"><span data-stu-id="23c49-202">On the **Distribution schedule** page, run the **1070** and **1090** jobs to transfer data to the channel database.</span></span>
-
-## <a name="set-up-fiscal-texts-for-discounts"></a><span data-ttu-id="23c49-203">Nastavení fiskální textů pro slevy</span><span class="sxs-lookup"><span data-stu-id="23c49-203">Set up fiscal texts for discounts</span></span>
-
-<span data-ttu-id="23c49-204">V některých případech musí být vytištěn speciální text na fiskálním příjmu v případě, že je použita sleva.</span><span class="sxs-lookup"><span data-stu-id="23c49-204">In some cases, a special text must be printed on a fiscal receipt if a discount is applied.</span></span> <span data-ttu-id="23c49-205">Na stránce **Skupina fiskálních konektorů** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Skupiny fiskálních konektorů**) můžete nastavit fiskální texty pro slevy.</span><span class="sxs-lookup"><span data-stu-id="23c49-205">You can set up fiscal texts for discounts on the **Fiscal connector group** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**).</span></span>
-
-- <span data-ttu-id="23c49-206">Pro ruční slevy, které jsou použity v POS, je třeba nastavit fiskální text pro informační kód nebo skupinu informačních kódů, která je určena jako informační kód **sleva na produkt** v profilu funkce POS.</span><span class="sxs-lookup"><span data-stu-id="23c49-206">For manual discounts that are applied at the POS, you should set a fiscal text for the info code or info code group that is specified as the **Product discount** info code in the POS functionality profile.</span></span>
-
-    1. <span data-ttu-id="23c49-207">Na stránce**Skupina fiskálního konektoru** vyberte **Text pro fiskální příjem**.</span><span class="sxs-lookup"><span data-stu-id="23c49-207">On the **Fiscal connector group** page, select **Text for fiscal receipt**.</span></span>
-    2. <span data-ttu-id="23c49-208">Na kartě **Informační kódy** vyberte **Přidat** a vyberte informační kód nebo skupinu informačních kódů.</span><span class="sxs-lookup"><span data-stu-id="23c49-208">On the **Info codes** tab, select **Add**, and select an info code or info code group.</span></span>
-    3. <span data-ttu-id="23c49-209">V poli **číslo informačního kódu** vyberte požadovanou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="23c49-209">In the **Info code number**, select a value.</span></span>
-    4. <span data-ttu-id="23c49-210">V poli **Číslo podkódu** vyberte hodnotu, pokud je vyžadován pro vybraný informační kód.</span><span class="sxs-lookup"><span data-stu-id="23c49-210">In the **Subcode number** field, select a value if a subcode is required for the selected info code.</span></span>
-    5. <span data-ttu-id="23c49-211">V poli **Text pro fiskální příjem** upřesněte fiskální text, který je vytisknut na fiskální příjemce.</span><span class="sxs-lookup"><span data-stu-id="23c49-211">In the **Text for fiscal receipt** field, specify a fiscal text that should be printed on a fiscal receipt.</span></span>
-    6. <span data-ttu-id="23c49-212">Nastavte možnost **Vytisknout vstup uživatele na fiskálním příjmu** na **ano**, aby se přepsal text na fiskálním příjmu informacemi, které uživatel ručně zadá v POS.</span><span class="sxs-lookup"><span data-stu-id="23c49-212">Set the **Print user input on fiscal receipt** option to **Yes** to override the text on a fiscal receipt with information that a user manually enters at the POS.</span></span> <span data-ttu-id="23c49-213">Tato možnost se vztahuje pouze na informační kódy s typem vstupu **Text**.</span><span class="sxs-lookup"><span data-stu-id="23c49-213">This option applies only to info codes that have an input type of **Text**.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="23c49-214">Můžete zadat fiskální text pro několik informační kódy na podporu scénářů, kdy se používají skupiny informačních kódů, odkazované informační kódy a spuštěné informační kódy.</span><span class="sxs-lookup"><span data-stu-id="23c49-214">You can specify a fiscal text for several info codes to support scenarios where info code groups, linked info codes, and triggered info codes are used.</span></span> <span data-ttu-id="23c49-215">V těchto situacích fiskální příjemka bude obsahovat fiskální texty ze všech informačních kódů, které jsou propojeny s řádkem transakce, kde byla aplikována sleva.</span><span class="sxs-lookup"><span data-stu-id="23c49-215">In these scenarios, the fiscal receipt will contain the fiscal texts from all info codes that are linked to the transaction line where the discount was applied.</span></span>
-
-- <span data-ttu-id="23c49-216">Pro specifické slevy pro kanál byste měli definovat fiskální text pro ID slevy.</span><span class="sxs-lookup"><span data-stu-id="23c49-216">For channel-specific discounts, you should define a fiscal text for the discount ID.</span></span>
-
-    1. <span data-ttu-id="23c49-217">Na stránce**Skupina fiskálního konektoru** vyberte **Text pro fiskální příjem**.</span><span class="sxs-lookup"><span data-stu-id="23c49-217">On the **Fiscal connector group** page, select **Text for fiscal receipt**.</span></span>
-    2. <span data-ttu-id="23c49-218">Na kartě **Slevy** vyberte **Přidat** a vyberte ID slevy.</span><span class="sxs-lookup"><span data-stu-id="23c49-218">On the **Discounts** tab, select **Add**, and select a discount ID.</span></span>
-    3. <span data-ttu-id="23c49-219">V poli **Text pro fiskální příjem** upřesněte fiskální text, který je vytisknut na fiskální příjemce.</span><span class="sxs-lookup"><span data-stu-id="23c49-219">In the **Text for fiscal receipt** field, specify a fiscal text that should be printed on a fiscal receipt.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="23c49-220">Pokud je na jednom řádku transakce použito několik slev, bude fiskální příjemka obsahovat fiskální texty ze všech slev spojených s tímto řádkem transakce.</span><span class="sxs-lookup"><span data-stu-id="23c49-220">If several discounts are applied to the same transaction line, the fiscal receipt will contain fiscal texts from all discounts that are linked to those transaction line.</span></span>
-
-## <a name="set-error-handling-settings"></a><span data-ttu-id="23c49-221">Nastavení zpracování chyb</span><span class="sxs-lookup"><span data-stu-id="23c49-221">Set error handling settings</span></span>
-
-<span data-ttu-id="23c49-222">Možnosti zpracování chyb, které jsou dostupné ve fiskální integraci, jsou nastaveny v procesu fiskální registrace.</span><span class="sxs-lookup"><span data-stu-id="23c49-222">The error handling options that are available in the fiscal integration are set in the fiscal registration process.</span></span> <span data-ttu-id="23c49-223">Další informace o nakládání s chybami ve fiskální integraci uvádí téma [Zpracování chyb](fiscal-integration-for-retail-channel.md#error-handling).</span><span class="sxs-lookup"><span data-stu-id="23c49-223">For more information about error handling in the fiscal integration, see [Error handling](fiscal-integration-for-retail-channel.md#error-handling).</span></span>
-
-1. <span data-ttu-id="23c49-224">Na stránce **Proces fiskální registrace** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Procesy fiskální registrace**) můžete nastavit následující parametry pro každý krok procesu fiskální integrace.</span><span class="sxs-lookup"><span data-stu-id="23c49-224">On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), you can set the following parameters for each step of the fiscal registration process:</span></span>
-
-    - <span data-ttu-id="23c49-225">**Povolit přeskočení** – tento parametr aktivuje možnost **Přeskočit** v dialogovém okně Zpracování chyb.</span><span class="sxs-lookup"><span data-stu-id="23c49-225">**Allow skip** – This parameter enables the **Skip** option in the error handling dialog box.</span></span>
-    - <span data-ttu-id="23c49-226">**Povolit označení za registrované** – Tento parametr aktivuje možnost **Označit jako registrované** v dialogovém okně zpracování chyb.</span><span class="sxs-lookup"><span data-stu-id="23c49-226">**Allow mark as registered** – This parameter enables the **Mark as registered** option in the error handling dialog box.</span></span>
-    - <span data-ttu-id="23c49-227">**Pokračovat při chybě** – Pokud je tento parametr povolen, může proces fiskální registrace pokračovat v registru POS, pokud selže fiskální registrace transakce nebo události.</span><span class="sxs-lookup"><span data-stu-id="23c49-227">**Continue on error** – If this parameter is enabled, the fiscal registration process can continue on the POS register if the fiscal registration of a transaction or event fails.</span></span> <span data-ttu-id="23c49-228">V opačném případě musí provozovatel pro spuštění fiskální registrace další transakce nebo události zopakovat neúspěšnou fiskální registraci, přeskočit ji nebo označit transakci nebo událost za registrovanou.</span><span class="sxs-lookup"><span data-stu-id="23c49-228">Otherwise, to run the fiscal registration of the next transaction or event, the operator must retry the failed fiscal registration, skip it, or mark the transaction or event as registered.</span></span> <span data-ttu-id="23c49-229">Další informace naleznete v tématu [Volitelná fiskální registrace](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).</span><span class="sxs-lookup"><span data-stu-id="23c49-229">For more information, see [Optional fiscal registration](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="23c49-230">Pokud je parametr **Pokračovat při chybě** povolen, parametry **Povolit přeskočení** a **Povolit označení za registrované** jsou automaticky zakázány.</span><span class="sxs-lookup"><span data-stu-id="23c49-230">If the **Continue on error** parameter is enabled, the **Allow skip** and **Allow mark as registered** parameters are automatically disabled.</span></span>
-
-2. <span data-ttu-id="23c49-231">Možnosti **Přeskočit** a **Označit jako registrované** v dialogovém okně zpracování chyb vyžadují oprávnění **Povolit přeskočení nebo označit jako registrované**.</span><span class="sxs-lookup"><span data-stu-id="23c49-231">The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip registration or mark as registered** permission.</span></span> <span data-ttu-id="23c49-232">Proto na stránce **Skupiny oprávnění** (**Maloobchod \> Zaměstnanci \> Skupiny oprávnění**) povolte oprávnění **Povolit přeskočení registrace nebo označit jako registrované**.</span><span class="sxs-lookup"><span data-stu-id="23c49-232">Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip registration or mark as registered** permission.</span></span>
-3. <span data-ttu-id="23c49-233">Možnosti **Přeskočit** a **Označit jako registrované** umožňují operátorům zadat další informace v případě selhání fiskální registrace.</span><span class="sxs-lookup"><span data-stu-id="23c49-233">The **Skip** and **Mark as registered** options let operators enter additional information when fiscal registration fails.</span></span> <span data-ttu-id="23c49-234">Aby bylo možné tuto funkci zpřístupnit, měli byste určit informační kódy **přeskočit** a **označit jako registrované** ve fiskálním konektoru skupiny.</span><span class="sxs-lookup"><span data-stu-id="23c49-234">To make this functionality available, you should specify the **Skip** and **Mark as registered** info codes on a fiscal connector group.</span></span> <span data-ttu-id="23c49-235">Informace, které operátor zadá, jsou pak uloženy jako transakce informačního kódu spojené s fiskální transakcí.</span><span class="sxs-lookup"><span data-stu-id="23c49-235">The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction.</span></span> <span data-ttu-id="23c49-236">Další podrobnosti o informačních kódech naleznete v tématu [informační kódy a skupiny informačních kódů](../info-codes-retail.md).</span><span class="sxs-lookup"><span data-stu-id="23c49-236">For more details about info codes, see [Info codes and info code groups](../info-codes-retail.md).</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="23c49-237">Funkce spouštění **Produkt** není podporována pro informační kódy používané pro volby **Přeskočit** a **Označit jako registrované** ve skupinách fiskálního konektoru.</span><span class="sxs-lookup"><span data-stu-id="23c49-237">The **Product** trigger function isn't supported for the info codes that are used for **Skip** and **Mark as registered** in fiscal connector groups.</span></span>
-
-    - <span data-ttu-id="23c49-238">Na stránce **Skupiny fiskálního konektoru** na kartě**Informační kódy** vyberte informační kódy nebo skupiny informačních kódů v polích **přeskočit** a **Označit jako registrované**.</span><span class="sxs-lookup"><span data-stu-id="23c49-238">On the **Fiscal connector group** page, on the **Info codes** tab, select info codes or info code groups in the **Skip** and **Mark as registered** fields.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="23c49-239">Jeden fiskální dokument a jeden nefiskální dokument lze generovat v jakémkoli kroku procesu daňové registrace.</span><span class="sxs-lookup"><span data-stu-id="23c49-239">One fiscal document and one non-fiscal document can be generated on any step of a fiscal registration process.</span></span> <span data-ttu-id="23c49-240">Rozšíření poskytovatele fiskálního dokumentu identifikuje všechny typy transakcí nebo událostí jako související s fiskálními nebo nefiskálními dokumenty.</span><span class="sxs-lookup"><span data-stu-id="23c49-240">A fiscal document provider extension identifies every type of transaction or event as related to fiscal or non-fiscal documents.</span></span> <span data-ttu-id="23c49-241">Funkce zpracování chyb platí pouze pro fiskální dokumenty.</span><span class="sxs-lookup"><span data-stu-id="23c49-241">The error handling feature applies only to fiscal documents.</span></span>
-    >
-    > - <span data-ttu-id="23c49-242">**Daňový doklad** – povinný dokument, který by měl být úspěšně registrován (například jako fiskální příjemka).</span><span class="sxs-lookup"><span data-stu-id="23c49-242">**Fiscal document** – A mandatory document that should be registered successfully (for example, a fiscal receipt).</span></span>
-    > - <span data-ttu-id="23c49-243">**Nefiskální dokument** – doplňkový doklad pro transakci nebo událost (například dárkový poukaz).</span><span class="sxs-lookup"><span data-stu-id="23c49-243">**Non-fiscal document** – A supplementary document for the transaction or event (for example, a gift card slip).</span></span>
-
-4. <span data-ttu-id="23c49-244">Pokud musí být provozovatel schopen pokračovat v zpracování aktuální operace (například vytvoření nebo dokončení transakce) po výskytu chyby při kontrole stavu, měli byste povolit oprávnění **Povolit přeskočení chyby při kontrole stavu** na stránce **Skupiny oprávnění** (**Maloobchod \> Zaměstnanci \> Skupiny oprávnění**).</span><span class="sxs-lookup"><span data-stu-id="23c49-244">If the operator must be able to continue to process the current operation (for example, creation or finalization of a transaction) after a health check error occurs, you should enable the **Allow skip health check error** permission on the **Permission groups** page (**Retail \> Employees \> Permission groups**).</span></span> <span data-ttu-id="23c49-245">Další informace o postupu kontroly stavu naleznete v tématu [Kontrola stavu fiskální registrace](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).</span><span class="sxs-lookup"><span data-stu-id="23c49-245">For more information about the health check procedure, see [Fiscal registration health check](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).</span></span>
-
-## <a name="set-up-fiscal-xz-reports-from-the-pos"></a><span data-ttu-id="23c49-246">Nastavení fiskálních sestav X/ Z z POS</span><span class="sxs-lookup"><span data-stu-id="23c49-246">Set up fiscal X/Z reports from the POS</span></span>
-
-<span data-ttu-id="23c49-247">Pokud chcete povolit spouštění fiskálních sestav z POS, měli byste do rozložení POS přidat nová tlačítka.</span><span class="sxs-lookup"><span data-stu-id="23c49-247">To enable fiscal X/Z reports to be run from the POS, you should add new buttons to a POS layout.</span></span>
-
-- <span data-ttu-id="23c49-248">Na stránce **Mřížky tlačítka** proveďte postup v části [Přidání vlastního operačního tlačítka do rozložení POS v centrále maloobchodu](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) k instalaci návrháře a aktualizaci rozložení POS.</span><span class="sxs-lookup"><span data-stu-id="23c49-248">On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.</span></span>
-
-    1. <span data-ttu-id="23c49-249">Výběr rozložení k aktualizaci</span><span class="sxs-lookup"><span data-stu-id="23c49-249">Select the layout to update.</span></span> 
-    2. <span data-ttu-id="23c49-250">Přidejte nové tlačítko a nastavte vlastnost tlačítka **Tisknout fiskální X**.</span><span class="sxs-lookup"><span data-stu-id="23c49-250">Add a new button, and set the **Print fiscal X** button property.</span></span>
-    3. <span data-ttu-id="23c49-251">Přidejte nové tlačítko a nastavte vlastnost tlačítka **Tisknout fiskální Z**.</span><span class="sxs-lookup"><span data-stu-id="23c49-251">Add a new button, and set the **Print fiscal Z** button property.</span></span>
-    4. <span data-ttu-id="23c49-252">Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod změn do databáze kanálů.</span><span class="sxs-lookup"><span data-stu-id="23c49-252">On the **Distribution schedule** page, run the **1090** job to transfer changes to the channel database.</span></span>
-
-## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a><span data-ttu-id="23c49-253">Povolení ručního provedení odložené daňové registrace</span><span class="sxs-lookup"><span data-stu-id="23c49-253">Enable manual execution of postponed fiscal registration</span></span>
-
-<span data-ttu-id="23c49-254">Chcete-li povolit ruční provedení odložené fiskální registrace, měli byste přidat nové tlačítko do rozvržení POS.</span><span class="sxs-lookup"><span data-stu-id="23c49-254">To enable manual execution of a postponed fiscal registration, you should add a new button to a POS layout.</span></span>
-
-- <span data-ttu-id="23c49-255">Na stránce **Mřížky tlačítka** proveďte postup v části [Přidání vlastního operačního tlačítka do rozložení POS v centrále maloobchodu](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) k instalaci návrháře a aktualizaci rozložení POS.</span><span class="sxs-lookup"><span data-stu-id="23c49-255">On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.</span></span>
-
-    1. <span data-ttu-id="23c49-256">Výběr rozložení k aktualizaci</span><span class="sxs-lookup"><span data-stu-id="23c49-256">Select the layout to update.</span></span>
-    2. <span data-ttu-id="23c49-257">Přidejte nové tlačítko a nastavte vlastnost tlačítka **Dokončit proces fiskální registrace**.</span><span class="sxs-lookup"><span data-stu-id="23c49-257">Add a new button, and set the **Complete fiscal registration process** button property.</span></span>
-    3. <span data-ttu-id="23c49-258">Na stránce **Plán distribuce** spusťte úlohu **1090** pro převod vašich změn do databáze kanálů.</span><span class="sxs-lookup"><span data-stu-id="23c49-258">On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="setting-up-fiscal-integration-for-retail-channel.md" target-language="cs-CZ">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>setting-up-fiscal-integration-for-retail-channel.bcaf21.fda94e77480b9d9455fc0e214e43772ab2921f2d.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>fda94e77480b9d9455fc0e214e43772ab2921f2d</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>ffc37f7c2a63bada3055f37856a30424040bc9a3</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/16/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\localizations\setting-up-fiscal-integration-for-retail-channel.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Set up the fiscal integration for Retail channels</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení fiskální integrace pro maloobchodní kanály</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides guidelines for setting up the fiscal integration functionality for Retail channels.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro maloobchodní kanály.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Set up the fiscal integration for Retail channels</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení fiskální integrace pro maloobchodní kanály</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Introduction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úvod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This topic provides guidelines for setting up the fiscal integration functionality for Retail channels.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma obsahuje pokyny pro nastavení funkce fiskální integrace pro maloobchodní kanály.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>For more information about the fiscal integration, see <bpt id="p1">[</bpt>Overview of fiscal integration for Retail channels<ept id="p1">](fiscal-integration-for-retail-channel.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace o fiskální integraci naleznete v tématu <bpt id="p1">[</bpt>Přehled fiskální integrace pro maloobchodní kanály<ept id="p1">](fiscal-integration-for-retail-channel.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The process of setting up the fiscal integration includes the following tasks:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proces nastavení fiskální integrace zahrnuje následující obecné úlohy:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Configure fiscal connectors that represent fiscal devices or services that are used for fiscal registration purposes, such as fiscal printers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace fiskálních konektorů, které reprezentují fiskální zařízení nebo služby používané pro účely fiskální registrace, jako jsou fiskální tiskárny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Configure document providers that generate fiscal documents that will be registered in fiscal devices or services by fiscal connectors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nakonfigurujte poskytovatele dokumentů, kteří generují fiskální dokumenty k registraci ve fiskálních zařízeních nebo službách podle fiskálních konektorů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Configure the fiscal registration process that defines a sequence of fiscal registration steps and the fiscal connectors and fiscal document providers that are used for each step.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nakonfigurujte proces fiskální registrace, který definuje pořadí kroků fiskální registrace a fiskálních konektorů a poskytovatelů fiskálních dokumentů používaných v jednotlivých krocích.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Assign the fiscal registration process to point of sale (POS) functionality profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přiřaďte procesy fiskální registrace do funkčních profilů POS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Assign connector technical profiles to hardware profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přiřadíte technické profily konektoru hardwarovým profilům.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Set up a fiscal registration process</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení procesu fiskální registrace</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Before you use the fiscal integration functionality, you should configure the following settings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Před použitím funkce fiskální integrace byste měli konfigurovat následující nastavení.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Update retail parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktualizace parametrů maloobchodu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>On the <bpt id="p1">**</bpt>Retail shared parameters<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>General<ept id="p2">**</ept> tab, set the <bpt id="p3">**</bpt>Enable fiscal integration<ept id="p3">**</ept> option to <bpt id="p4">**</bpt>Yes<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Sdílené parametry maloobchodu<ept id="p1">**</ept> na kartě <bpt id="p2">**</bpt>Obecné<ept id="p2">**</ept> nastavte možnost <bpt id="p3">**</bpt>Povolit fiskální integraci<ept id="p3">**</ept> na <bpt id="p4">**</bpt>Ano<ept id="p4">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>On the <bpt id="p1">**</bpt>Number sequences<ept id="p1">**</ept> tab, define the number sequences for the following references:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na kartě <bpt id="p1">**</bpt>Číselné řady<ept id="p1">**</ept> definujte číselné řady pro následující reference:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Fiscal technical profile number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Číslo fiskálního technického profilu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Fiscal connector group number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Číslo skupiny fiskálních konektorů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Registration process number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Číslo procesu registrace</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>On the <bpt id="p1">**</bpt>Retail parameters<ept id="p1">**</ept> page, define the number sequence for the fiscal functional profile number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Parametry maloobchodu<ept id="p1">**</ept> definujte číselné řady pro číslo fiskálního funkčního profilu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Number sequences are optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Číselné řady jsou volitelné.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Numbers for all fiscal integration entities can be generated either from number sequences or manually.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Čísla pro všechny entity fiskální integrace lze generovat z číselných řad nebo ručně.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Upload configurations of fiscal connectors and fiscal document providers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nahrajte konfigurace fiskálních konektorů a poskytovatelů fiskálních dokumentů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>A fiscal document provider is responsible for generating fiscal documents that represent retail transactions and events that are registered on the POS in a format that is also used for the interaction with a fiscal device or service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zprostředkovatel fiskálního dokumentu je zodpovědný za generování fiskálních dokumentů, které představují maloobchodní transakce a události, které jsou zaregistrovány na POS ve formátu, který se používá pro interakci s fiskálním zařízením nebo službou.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>For example, a fiscal document provider might generate a representation of a fiscal receipt in an XML format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poskytovatel fiskálního dokumentu například může generovat vyjádření fiskálního příjmu ve formátu XML.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>A fiscal connector is responsible for the communication with a fiscal device or service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiskální konektor zodpovídá za komunikace s fiskálním zařízením nebo službu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiskální konektor může například odeslat fiskální příjem, který poskytovatel fiskálních dokumentů vytvořil ve formátu XML pro fiskální tiskárnu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>For more details about fiscal integration components, see <bpt id="p1">[</bpt>Fiscal registration process and fiscal integration samples for fiscal devices<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podrobnější informace o kompoenntách fiskální integrace získáte v části <bpt id="p1">[</bpt>Ukázky procesu fiskální registrace pro fiskální zařízení<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>On the <bpt id="p1">**</bpt>Fiscal connectors<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal connectors<ept id="p2">**</ept>), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Fiskální konektory<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Fiskální integrace <ph id="ph3">\&gt;</ph> Fiskální konektory<ept id="p2">**</ept>), nahrajte konfiguraci XML pro každé zařízení nebo službu, které plánujete použít pro účely fislální integrace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>By selecting <bpt id="p1">**</bpt>View<ept id="p1">**</ept>, you can view all functional and technical profiles that are related to the current fiscal connector.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výběrem možnosti <bpt id="p1">**</bpt>Zobrazit<ept id="p1">**</ept> můžete zobrazit funkční a technické profily, které se vztahují k aktuálnímu fiskálnímu konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>On the <bpt id="p1">**</bpt>Fiscal document providers<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal document providers<ept id="p2">**</ept>), upload an XML configuration for each device or service that you plan to use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Poskytovatelé fiskálního dokumentu<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Fiskální integrace <ph id="ph3">\&gt;</ph> Poskytovatelé fiskálního dokumentu<ept id="p2">**</ept>), nahrajte konfiguraci XML pro každé zařízení nebo službu, které plánujete použít pro účely fiskální integrace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>By selecting <bpt id="p1">**</bpt>View<ept id="p1">**</ept>, you can view all functional profiles that are related to the current fiscal document provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výběrem možnosti <bpt id="p1">**</bpt>Zobrazit<ept id="p1">**</ept> můžete zobrazit funkční a technické profily, které se vztahují k aktuálnímu poskytovateli fiskálního dokumentu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>For examples of configurations of fiscal connectors and fiscal document providers, see <bpt id="p1">[</bpt>Fiscal integration samples in the Retail SDK<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklady konfigurací fiskálních konektorů a poskytovatelů fiskálního dokumentu naleznete v tématu <bpt id="p1">[</bpt>Ukázky fiskální integrace v sadě Retail SDK<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Data mapping is considered part of a fiscal document provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mapování dat je považováno za součást poskytovatele fiskálního dokumentu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li nastavit různá mapování dat pro stejný konektor (například pravidla pro konkrétní stav), měli byste vytvořit různé poskytovatele fiskálních dokumentů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Create connector functional profiles and connector technical profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvořte funkční profily konektoru a technické profily konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>On the <bpt id="p1">**</bpt>Connector functional profiles<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Connector functional profiles<ept id="p2">**</ept>), create a connector functional profile for each combination of a fiscal connector and a fiscal document provider that is related to this fiscal connector.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Funkční profily konektoru<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Fiskální integrace <ph id="ph3">\&gt;</ph> Funkční profily konektoru<ept id="p2">**</ept>) vytvořte funkční profil konektoru pro každou kombinaci fiskálního konektoru a poskytovatele fiskálního dokumentu, který souvisí s fiskálním konektorem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Select a connector name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvolte název konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Select a document provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte poskytovatele dokumentu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>You can change the data mapping parameters in a connector functional profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametry mapování dat konektoru můžete změnit ve funkčním profilu konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>To restore the default parameters that are defined in the fiscal document provider configuration, select <bpt id="p1">**</bpt>Update<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li obnovit výchozí parametry, které jsou definovány v konfiguraci poskytovatele fiskálního dokumentu, vyberte <bpt id="p1">**</bpt>Aktualizovat<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source><bpt id="p1">**</bpt>Examples<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Příklady<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source><bpt id="p1">**</bpt>VAT rates settings<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nastavení sazeb DPH<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>value : VATrate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">hodnota : VATrate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>1 : 2000, 2 : 1800</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 : 2000, 2 : 1800</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source><bpt id="p1">**</bpt>VAT codes mapping<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Mapování kódů DPH<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>VATcode : value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VATcode : hodnota</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>vat20 : 1, vat18 : 2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vat20 : 1, vat18 : 2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">**</bpt>Tender types mapping<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Mapování typů úhrad<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>TenderType : value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TenderType : hodnota</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Cash : 1, Card : 2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hotovost : 1, Karta : 2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Connector functional profiles are company-specific.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkční profily konektoru jsou specifické pro společnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>If you plan to use the same combination of a fiscal connector and a fiscal document provider in different companies, you should create a connector functional profile for each company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete používat stejnou kombinaci fiskálního konektoru a poskytovatele fiskálních dokumentů v různých společnostech, měli byste vytvořit funkční profil konektoru pro každou společnost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>On the <bpt id="p1">**</bpt>Connector technical profiles<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Connector technical profiles<ept id="p2">**</ept>), create a connector technical profile for each fiscal connector.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Technické profily konektoru<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Fiskální integrace <ph id="ph3">\&gt;</ph> Technické profily konektoru<ept id="p2">**</ept>) vytvořte technický profil konektoru pro každý fiskální konektor.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Select a connector name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvolte název konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Select a connector type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvolte typ konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>For devices that are connected to a Hardware station, select <bpt id="p1">**</bpt>Local<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro zařízení, která jsou připojena k hardwarové stanici, vyberte <bpt id="p1">**</bpt>místní<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Only local connectors are currently supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pouze místní konektory jsou aktuálně podporovány.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Parameters on the <bpt id="p1">**</bpt>Device<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> tabs in a connector technical profile can be changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametry na kartách <bpt id="p1">**</bpt>zařízení<ept id="p1">**</ept> a <bpt id="p2">**</bpt>nastavení<ept id="p2">**</ept> v technickém profilu konektoru lze změnit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>To restore the default parameters that are defined in the fiscal connector configuration, select <bpt id="p1">**</bpt>Update<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li obnovit výchozí parametry, které jsou definovány v konfiguraci fiskálního konektoru, vyberte <bpt id="p1">**</bpt>Aktualizovat<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V době, kdy se načítá nová verze konfigurace XML, obdržíte zprávu, která uvádí, že se současný poskytovatel fiskálního konektoru nebo dokumentu již používá.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento postup nepřepíše ruční změny, dříve provedené ve funkčních a technických profilech konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>To apply the default set of parameters from a new configuration, on the <bpt id="p1">**</bpt>Connector functional profiles<ept id="p1">**</ept> page or the <bpt id="p2">**</bpt>Connector technical profiles<ept id="p2">**</ept> page, select <bpt id="p3">**</bpt>Update<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li použít výchozí sadu parametrů z nové konfigurace, klikněte na tlačítko <bpt id="p1">**</bpt>Aktualizovat<ept id="p1">**</ept> na stránce <bpt id="p2">**</bpt>Funkční profily konektoru<ept id="p2">**</ept> a na stránce <bpt id="p3">**</bpt>Technické profily konektoru<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Create fiscal connector groups.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvořte skupiny fiskálních konektorů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skupina fiskálních konektorů kombinuje fiskální konektory funkčních profilů, které provádí identické funkce a používají se ve stejné fázi v rámci procesu fiskální registrace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>For example, if several fiscal printer models can be used in a retail store, fiscal connectors for those fiscal printers can be combined in a fiscal connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například pokud lze v maloobchodě použít několik modelů fiskální tiskárny, lze fiskální konektory pro tyto tiskárny zkombinovat do skupiny fiskálního konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>On the <bpt id="p1">**</bpt>Fiscal connector group<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal connector groups<ept id="p2">**</ept>), create a new fiscal connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Skupina fiskálních konektorů<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Fiskální integrace <ph id="ph3">\&gt;</ph> Skupiny fiskálních konektorů<ept id="p2">**</ept>) vytvořte novou skupinu fiskálních konektorů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Add functional profiles to the connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidání funkčních profilů do skupiny konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>On the <bpt id="p1">**</bpt>Functional profiles<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and select a profile number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na <bpt id="p1">**</bpt>Přidat<ept id="p1">**</ept> na stránce <bpt id="p2">**</bpt>Funkční profily<ept id="p2">**</ept> a vyberte číslo profilu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Each fiscal connector in a connector group can only have one functional profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve skupině konektoru může mít každý fiskální konektor pouze jeden funkční profil.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>To suspend use of the functional profile, set the <bpt id="p1">**</bpt>Disable<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete pozastavit použití funkčního profilu, nastavte možnost <bpt id="p1">**</bpt>Zakázat<ept id="p1">**</ept> na <bpt id="p2">**</bpt>Ano<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>This change affects only the current connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato změna ovlivní pouze aktuální skupinu konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>You can continue to use the same functional profile in other connector groups.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete pokračovat s použitím stejného funkčního profilu v jiných skupinách konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Create a fiscal registration process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvořte proces fiskální registrace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>A fiscal registration process is defined by the sequence of registration steps and the connector group that is used for each step.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proces fiskální registrace je definován sledem registračních kroků a skupinou konektorů používaných v každém kroku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>On the <bpt id="p1">**</bpt>Fiscal registration process<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal registration processes<ept id="p2">**</ept>), create a new record for each unique process of fiscal registration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Proces fiskální registrace<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Fiskální integrace <ph id="ph3">\&gt;</ph> Procesy fiskální registrace<ept id="p2">**</ept>) vytvořte nový záznam pro každý jedinečný proces fiskálních integrace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Add registration steps to the process:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidejte kroky registrace do procesu:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte <bpt id="p1">**</bpt>přidat<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Select a fiscal connector type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvolte typ fiskálního konektoru:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>In the <bpt id="p1">**</bpt>Group number<ept id="p1">**</ept> field, select an appropriate fiscal connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>číslo skupiny<ept id="p1">**</ept> vyberte vhodnou skupinu fiskálního konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Assign entities of the fiscal registration process to POS profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přiřaďte entity procesu fiskální registrace profilům POS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>On the <bpt id="p1">**</bpt>POS functionality profiles<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> POS setup <ph id="ph3">\&gt;</ph> POS profiles <ph id="ph4">\&gt;</ph> Functionality profiles<ept id="p2">**</ept>), assign the fiscal registration process to a POS functionality profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Profily funkce POS<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Nastavení POS <ph id="ph3">\&gt;</ph> Profily POS <ph id="ph4">\&gt;</ph> Funkční profily<ept id="p2">**</ept>) přidělte proces fiskální registrace funkčnímu profilu POS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, and then, on the <bpt id="p2">**</bpt>Fiscal registration process<ept id="p2">**</ept> tab, in the <bpt id="p3">**</bpt>Process number<ept id="p3">**</ept> field, select a process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte <bpt id="p1">**</bpt>Upravit<ept id="p1">**</ept> a poté na kartě <bpt id="p2">**</bpt>Fiskální registrace<ept id="p2">**</ept> v poli <bpt id="p3">**</bpt>Číslo procesu<ept id="p3">**</ept> vyberte proces.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>On the <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> POS setup <ph id="ph3">\&gt;</ph> POS profiles <ph id="ph4">\&gt;</ph> Hardware profiles<ept id="p2">**</ept>), assign connector technical profiles to a hardware profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Hardwarový profil POS<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Nastavení POS <ph id="ph3">\&gt;</ph> Profily POS <ph id="ph4">\&gt;</ph> Hardwarové profily<ept id="p2">**</ept>) přiřaďte technické profily konektoru hardwarovému profilu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, add a line on the <bpt id="p2">**</bpt>Fiscal peripherals<ept id="p2">**</ept> tab, and then, in the <bpt id="p3">**</bpt>Profile number<ept id="p3">**</ept> field, select a connector technical profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte <bpt id="p1">**</bpt>upravit<ept id="p1">**</ept>, přidejte řádek na kartu <bpt id="p2">**</bpt>Fiskální periferní zařízení<ept id="p2">**</ept> a potom v poli <bpt id="p3">**</bpt>číslo profilu<ept id="p3">**</ept> vyberte profil technického konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>You can add several technical profiles to the same hardware profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete přidat několik technických profilů ke stejnému hardwarovému profilu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>However, a hardware profile or POS functionality profile should have only one intersection with any fiscal connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Profil hardwaru nebo profil funkce POS, by však měl mít pouze jeden průsečík s libovolnou skupinou fiskálního konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>The fiscal registration flow is defined by the fiscal registration process and also by some parameters of fiscal integration components: the Commerce runtime extension for the fiscal document provider and the Hardware station extension for the fiscal connector.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tok fiskální registrace je definován procesem fiskální registrace a také určitými parametry komponent fiskální registrace: rozšíření Doba běhu obchodu pro poskytovatele fiskálního dokumentu a rozšíření Hardwarová stanice pro fiskální konektor.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>The subscription of events and transactions to fiscal registration is predefined in the fiscal document provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přihlášení k odběru akcí a transakcí pro fiskální registraci je u poskytovatele fiskálního dokumentu předdefinované.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>The fiscal document provider is also responsible for identifying the fiscal connector that is used for fiscal registration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poskytovatel fiskálního dokumentu nese odpovědnost také za identifikaci fiskálního konektoru, který se používá k fiskální registraci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>It matches the connector functional profiles that are included in the fiscal connector group that is specified for the current step of the fiscal registration process with the connector technical profile that is assigned to the hardware profile of the Hardware station that the POS is paired to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odpovídá funkčním profilům konektoru, které jsou zahrnuty ve skupině fiskálních konektorů, která je zadaná pro aktuální krok procesu daňové registrace s technickým profilem konektoru, který je přiřazen profilu hardwaru hardwarové stanice, se kteoru je POS spárován.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>The fiscal document provider uses the data mapping settings from the fiscal document provider configuration to transform transaction/event data such as taxes and payments while a fiscal document is generated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poskytovatel fiskálního dokumentu používá nastavení mapování dat z konfigurace poskytovatele fiskálního dokumentu k transformaci dat transakce nebo události, například daně a plateb, zatímco je generován daňový doklad.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device application programming interface (API), depending on how the communication is handled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud poskytovatel fiskálního dokumentu vygeneruje daňový doklad, fiskální konektor ho může zaslat do fiskálního zařízení tak, jak je, nebo ho analyzovat a převést do sekvence příkazů v programovacím rozhraní aplikace zařízení (API) v závislosti na tom, jak je komunikace zpracovávána.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>On the <bpt id="p1">**</bpt>Fiscal registration process<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal registration processes<ept id="p2">**</ept>), select <bpt id="p3">**</bpt>Validate<ept id="p3">**</ept> to validate the fiscal registration process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Proces fiskální registrace<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Fiskální integrace <ph id="ph3">\&gt;</ph> Procesy fiskální registrace<ept id="p2">**</ept>) vyberte <bpt id="p3">**</bpt>Ověřit<ept id="p3">**</ept> k ověření procesu fiskální registrace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>We recommend that you run this type of validation in the following cases:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doporučujeme spustit tento typ ověření v následujících případech:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>After you've completed all the settings for a new registration process, including when you assign registration processes to POS functionality profiles and hardware profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro nový proces registrace po dokončení všech nastavení, včetně přiřazení procesů registrace funkčním a hardwarovým profilům POS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>After you make changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime (for example, if you change the connector group for a fiscal registration process step, enable a connector functional profile in a connector group, or add a new connector functional profile to a connector group).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poté, co provedete změny v existujícím procesu daňové registrace a pokud tyto změny způsobí výběr jiného fiskálního konektoru v době běhu (například když změníte skupinu konektoru pro krok procesu fiskální registrace, povolte funkční profil konektoru ve skupině konektoru nebo přidejte nový funkční profil konektoru skupině konektoru).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>After you make changes in the assignment of connector technical profiles to hardware profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po provedení změn v přiřazení technických profilů konektoru hardwarovým profilům.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>On the <bpt id="p1">**</bpt>Distribution schedule<ept id="p1">**</ept> page, run the <bpt id="p2">**</bpt>1070<ept id="p2">**</ept> and <bpt id="p3">**</bpt>1090<ept id="p3">**</ept> jobs to transfer data to the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Plán distribuce<ept id="p1">**</ept> spusťte úlohu <bpt id="p2">**</bpt>1070<ept id="p2">**</ept> a <bpt id="p3">**</bpt>1090<ept id="p3">**</ept> pro převod dat do databáze kanálů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Set up fiscal texts for discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení fiskální textů pro slevy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>In some cases, a special text must be printed on a fiscal receipt if a discount is applied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V některých případech musí být vytištěn speciální text na fiskálním příjmu v případě, že je použita sleva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>You can set up fiscal texts for discounts on the <bpt id="p1">**</bpt>Fiscal connector group<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal connector groups<ept id="p2">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Skupina fiskálních konektorů<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Fiskální integrace <ph id="ph3">\&gt;</ph> Skupiny fiskálních konektorů<ept id="p2">**</ept>) můžete nastavit fiskální texty pro slevy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>For manual discounts that are applied at the POS, you should set a fiscal text for the info code or info code group that is specified as the <bpt id="p1">**</bpt>Product discount<ept id="p1">**</ept> info code in the POS functionality profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro ruční slevy, které jsou použity v POS, je třeba nastavit fiskální text pro informační kód nebo skupinu informačních kódů, která je určena jako informační kód <bpt id="p1">**</bpt>sleva na produkt<ept id="p1">**</ept> v profilu funkce POS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>On the <bpt id="p1">**</bpt>Fiscal connector group<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Text for fiscal receipt<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce<bpt id="p1">**</bpt>Skupina fiskálního konektoru<ept id="p1">**</ept> vyberte <bpt id="p2">**</bpt>Text pro fiskální příjem<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>On the <bpt id="p1">**</bpt>Info codes<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and select an info code or info code group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na kartě <bpt id="p1">**</bpt>Informační kódy<ept id="p1">**</ept> vyberte <bpt id="p2">**</bpt>Přidat<ept id="p2">**</ept> a vyberte informační kód nebo skupinu informačních kódů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>In the <bpt id="p1">**</bpt>Info code number<ept id="p1">**</ept>, select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>číslo informačního kódu<ept id="p1">**</ept> vyberte požadovanou hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>In the <bpt id="p1">**</bpt>Subcode number<ept id="p1">**</ept> field, select a value if a subcode is required for the selected info code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>Číslo podkódu<ept id="p1">**</ept> vyberte hodnotu, pokud je vyžadován pro vybraný informační kód.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>In the <bpt id="p1">**</bpt>Text for fiscal receipt<ept id="p1">**</ept> field, specify a fiscal text that should be printed on a fiscal receipt.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>Text pro fiskální příjem<ept id="p1">**</ept> upřesněte fiskální text, který je vytisknut na fiskální příjemce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Set the <bpt id="p1">**</bpt>Print user input on fiscal receipt<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to override the text on a fiscal receipt with information that a user manually enters at the POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavte možnost <bpt id="p1">**</bpt>Vytisknout vstup uživatele na fiskálním příjmu<ept id="p1">**</ept> na <bpt id="p2">**</bpt>ano<ept id="p2">**</ept>, aby se přepsal text na fiskálním příjmu informacemi, které uživatel ručně zadá v POS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>This option applies only to info codes that have an input type of <bpt id="p1">**</bpt>Text<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato možnost se vztahuje pouze na informační kódy s typem vstupu <bpt id="p1">**</bpt>Text<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>You can specify a fiscal text for several info codes to support scenarios where info code groups, linked info codes, and triggered info codes are used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete zadat fiskální text pro několik informační kódy na podporu scénářů, kdy se používají skupiny informačních kódů, odkazované informační kódy a spuštěné informační kódy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>In these scenarios, the fiscal receipt will contain the fiscal texts from all info codes that are linked to the transaction line where the discount was applied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V těchto situacích fiskální příjemka bude obsahovat fiskální texty ze všech informačních kódů, které jsou propojeny s řádkem transakce, kde byla aplikována sleva.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>For channel-specific discounts, you should define a fiscal text for the discount ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro specifické slevy pro kanál byste měli definovat fiskální text pro ID slevy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>On the <bpt id="p1">**</bpt>Fiscal connector group<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Text for fiscal receipt<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce<bpt id="p1">**</bpt>Skupina fiskálního konektoru<ept id="p1">**</ept> vyberte <bpt id="p2">**</bpt>Text pro fiskální příjem<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>On the <bpt id="p1">**</bpt>Discounts<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and select a discount ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na kartě <bpt id="p1">**</bpt>Slevy<ept id="p1">**</ept> vyberte <bpt id="p2">**</bpt>Přidat<ept id="p2">**</ept> a vyberte ID slevy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>In the <bpt id="p1">**</bpt>Text for fiscal receipt<ept id="p1">**</ept> field, specify a fiscal text that should be printed on a fiscal receipt.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>Text pro fiskální příjem<ept id="p1">**</ept> upřesněte fiskální text, který je vytisknut na fiskální příjemce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>If several discounts are applied to the same transaction line, the fiscal receipt will contain fiscal texts from all discounts that are linked to those transaction line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je na jednom řádku transakce použito několik slev, bude fiskální příjemka obsahovat fiskální texty ze všech slev spojených s tímto řádkem transakce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Set error handling settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení zpracování chyb</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>The error handling options that are available in the fiscal integration are set in the fiscal registration process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnosti zpracování chyb, které jsou dostupné ve fiskální integraci, jsou nastaveny v procesu fiskální registrace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>For more information about error handling in the fiscal integration, see <bpt id="p1">[</bpt>Error handling<ept id="p1">](fiscal-integration-for-retail-channel.md#error-handling)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace o nakládání s chybami ve fiskální integraci uvádí téma <bpt id="p1">[</bpt>Zpracování chyb<ept id="p1">](fiscal-integration-for-retail-channel.md#error-handling)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>On the <bpt id="p1">**</bpt>Fiscal registration process<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal registration processes<ept id="p2">**</ept>), you can set the following parameters for each step of the fiscal registration process:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Proces fiskální registrace<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Nastavení kanálu <ph id="ph2">\&gt;</ph> Fiskální integrace <ph id="ph3">\&gt;</ph> Procesy fiskální registrace<ept id="p2">**</ept>) můžete nastavit následující parametry pro každý krok procesu fiskální integrace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source><bpt id="p1">**</bpt>Allow skip<ept id="p1">**</ept> – This parameter enables the <bpt id="p2">**</bpt>Skip<ept id="p2">**</ept> option in the error handling dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Povolit přeskočení<ept id="p1">**</ept> – tento parametr aktivuje možnost <bpt id="p2">**</bpt>Přeskočit<ept id="p2">**</ept> v dialogovém okně Zpracování chyb.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source><bpt id="p1">**</bpt>Allow mark as registered<ept id="p1">**</ept> – This parameter enables the <bpt id="p2">**</bpt>Mark as registered<ept id="p2">**</ept> option in the error handling dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Povolit označení za registrované<ept id="p1">**</ept> – Tento parametr aktivuje možnost <bpt id="p2">**</bpt>Označit jako registrované<ept id="p2">**</ept> v dialogovém okně zpracování chyb.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source><bpt id="p1">**</bpt>Continue on error<ept id="p1">**</ept> – If this parameter is enabled, the fiscal registration process can continue on the POS register if the fiscal registration of a transaction or event fails.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Pokračovat při chybě<ept id="p1">**</ept> – Pokud je tento parametr povolen, může proces fiskální registrace pokračovat v registru POS, pokud selže fiskální registrace transakce nebo události.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Otherwise, to run the fiscal registration of the next transaction or event, the operator must retry the failed fiscal registration, skip it, or mark the transaction or event as registered.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném případě musí provozovatel pro spuštění fiskální registrace další transakce nebo události zopakovat neúspěšnou fiskální registraci, přeskočit ji nebo označit transakci nebo událost za registrovanou.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>For more information, see <bpt id="p1">[</bpt>Optional fiscal registration<ept id="p1">](fiscal-integration-for-retail-channel.md#optional-fiscal-registration)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">[</bpt>Volitelná fiskální registrace<ept id="p1">](fiscal-integration-for-retail-channel.md#optional-fiscal-registration)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>If the <bpt id="p1">**</bpt>Continue on error<ept id="p1">**</ept> parameter is enabled, the <bpt id="p2">**</bpt>Allow skip<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Allow mark as registered<ept id="p3">**</ept> parameters are automatically disabled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je parametr <bpt id="p1">**</bpt>Pokračovat při chybě<ept id="p1">**</ept> povolen, parametry <bpt id="p2">**</bpt>Povolit přeskočení<ept id="p2">**</ept> a <bpt id="p3">**</bpt>Povolit označení za registrované<ept id="p3">**</ept> jsou automaticky zakázány.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>The <bpt id="p1">**</bpt>Skip<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Mark as registered<ept id="p2">**</ept> options in the error handling dialog box require the <bpt id="p3">**</bpt>Allow skip registration or mark as registered<ept id="p3">**</ept> permission.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnosti <bpt id="p1">**</bpt>Přeskočit<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Označit jako registrované<ept id="p2">**</ept> v dialogovém okně zpracování chyb vyžadují oprávnění <bpt id="p3">**</bpt>Povolit přeskočení nebo označit jako registrované<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Therefore, on the <bpt id="p1">**</bpt>Permission groups<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Employees <ph id="ph2">\&gt;</ph> Permission groups<ept id="p2">**</ept>), enable the <bpt id="p3">**</bpt>Allow skip registration or mark as registered<ept id="p3">**</ept> permission.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proto na stránce <bpt id="p1">**</bpt>Skupiny oprávnění<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Zaměstnanci <ph id="ph2">\&gt;</ph> Skupiny oprávnění<ept id="p2">**</ept>) povolte oprávnění <bpt id="p3">**</bpt>Povolit přeskočení registrace nebo označit jako registrované<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>The <bpt id="p1">**</bpt>Skip<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Mark as registered<ept id="p2">**</ept> options let operators enter additional information when fiscal registration fails.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnosti <bpt id="p1">**</bpt>Přeskočit<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Označit jako registrované<ept id="p2">**</ept> umožňují operátorům zadat další informace v případě selhání fiskální registrace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>To make this functionality available, you should specify the <bpt id="p1">**</bpt>Skip<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Mark as registered<ept id="p2">**</ept> info codes on a fiscal connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aby bylo možné tuto funkci zpřístupnit, měli byste určit informační kódy <bpt id="p1">**</bpt>přeskočit<ept id="p1">**</ept> a <bpt id="p2">**</bpt>označit jako registrované<ept id="p2">**</ept> ve fiskálním konektoru skupiny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Informace, které operátor zadá, jsou pak uloženy jako transakce informačního kódu spojené s fiskální transakcí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>For more details about info codes, see <bpt id="p1">[</bpt>Info codes and info code groups<ept id="p1">](../info-codes-retail.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další podrobnosti o informačních kódech naleznete v tématu <bpt id="p1">[</bpt>informační kódy a skupiny informačních kódů<ept id="p1">](../info-codes-retail.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>The <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> trigger function isn't supported for the info codes that are used for <bpt id="p2">**</bpt>Skip<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Mark as registered<ept id="p3">**</ept> in fiscal connector groups.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce spouštění <bpt id="p1">**</bpt>Produkt<ept id="p1">**</ept> není podporována pro informační kódy používané pro volby <bpt id="p2">**</bpt>Přeskočit<ept id="p2">**</ept> a <bpt id="p3">**</bpt>Označit jako registrované<ept id="p3">**</ept> ve skupinách fiskálního konektoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>On the <bpt id="p1">**</bpt>Fiscal connector group<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Info codes<ept id="p2">**</ept> tab, select info codes or info code groups in the <bpt id="p3">**</bpt>Skip<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Mark as registered<ept id="p4">**</ept> fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Skupiny fiskálního konektoru<ept id="p1">**</ept> na kartě<bpt id="p2">**</bpt>Informační kódy<ept id="p2">**</ept> vyberte informační kódy nebo skupiny informačních kódů v polích <bpt id="p3">**</bpt>přeskočit<ept id="p3">**</ept> a <bpt id="p4">**</bpt>Označit jako registrované<ept id="p4">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>One fiscal document and one non-fiscal document can be generated on any step of a fiscal registration process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeden fiskální dokument a jeden nefiskální dokument lze generovat v jakémkoli kroku procesu daňové registrace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>A fiscal document provider extension identifies every type of transaction or event as related to fiscal or non-fiscal documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšíření poskytovatele fiskálního dokumentu identifikuje všechny typy transakcí nebo událostí jako související s fiskálními nebo nefiskálními dokumenty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>The error handling feature applies only to fiscal documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce zpracování chyb platí pouze pro fiskální dokumenty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source><bpt id="p1">**</bpt>Fiscal document<ept id="p1">**</ept> – A mandatory document that should be registered successfully (for example, a fiscal receipt).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Daňový doklad<ept id="p1">**</ept> – povinný dokument, který by měl být úspěšně registrován (například jako fiskální příjemka).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source><bpt id="p1">**</bpt>Non-fiscal document<ept id="p1">**</ept> – A supplementary document for the transaction or event (for example, a gift card slip).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nefiskální dokument<ept id="p1">**</ept> – doplňkový doklad pro transakci nebo událost (například dárkový poukaz).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>If the operator must be able to continue to process the current operation (for example, creation or finalization of a transaction) after a health check error occurs, you should enable the <bpt id="p1">**</bpt>Allow skip health check error<ept id="p1">**</ept> permission on the <bpt id="p2">**</bpt>Permission groups<ept id="p2">**</ept> page (<bpt id="p3">**</bpt>Retail <ph id="ph1">\&gt;</ph> Employees <ph id="ph2">\&gt;</ph> Permission groups<ept id="p3">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud musí být provozovatel schopen pokračovat v zpracování aktuální operace (například vytvoření nebo dokončení transakce) po výskytu chyby při kontrole stavu, měli byste povolit oprávnění <bpt id="p1">**</bpt>Povolit přeskočení chyby při kontrole stavu<ept id="p1">**</ept> na stránce <bpt id="p2">**</bpt>Skupiny oprávnění<ept id="p2">**</ept> (<bpt id="p3">**</bpt>Maloobchod <ph id="ph1">\&gt;</ph> Zaměstnanci <ph id="ph2">\&gt;</ph> Skupiny oprávnění<ept id="p3">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>For more information about the health check procedure, see <bpt id="p1">[</bpt>Fiscal registration health check<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace o postupu kontroly stavu naleznete v tématu <bpt id="p1">[</bpt>Kontrola stavu fiskální registrace<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Set up fiscal X/Z reports from the POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení fiskálních sestav X/ Z z POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>To enable fiscal X/Z reports to be run from the POS, you should add new buttons to a POS layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete povolit spouštění fiskálních sestav z POS, měli byste do rozložení POS přidat nová tlačítka.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>On the <bpt id="p1">**</bpt>Button grids<ept id="p1">**</ept> page, follow the instructions in <bpt id="p2">[</bpt>Add a custom operation button to the POS layout in Retail headquarters<ept id="p2">](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters)</ept> to install the designer and update a POS layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Mřížky tlačítka<ept id="p1">**</ept> proveďte postup v části <bpt id="p2">[</bpt>Přidání vlastního operačního tlačítka do rozložení POS v centrále maloobchodu<ept id="p2">](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters)</ept> k instalaci návrháře a aktualizaci rozložení POS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Select the layout to update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výběr rozložení k aktualizaci</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Add a new button, and set the <bpt id="p1">**</bpt>Print fiscal X<ept id="p1">**</ept> button property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidejte nové tlačítko a nastavte vlastnost tlačítka <bpt id="p1">**</bpt>Tisknout fiskální X<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Add a new button, and set the <bpt id="p1">**</bpt>Print fiscal Z<ept id="p1">**</ept> button property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidejte nové tlačítko a nastavte vlastnost tlačítka <bpt id="p1">**</bpt>Tisknout fiskální Z<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>On the <bpt id="p1">**</bpt>Distribution schedule<ept id="p1">**</ept> page, run the <bpt id="p2">**</bpt>1090<ept id="p2">**</ept> job to transfer changes to the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Plán distribuce<ept id="p1">**</ept> spusťte úlohu <bpt id="p2">**</bpt>1090<ept id="p2">**</ept> pro převod změn do databáze kanálů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Enable manual execution of postponed fiscal registration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Povolení ručního provedení odložené daňové registrace</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>To enable manual execution of a postponed fiscal registration, you should add a new button to a POS layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li povolit ruční provedení odložené fiskální registrace, měli byste přidat nové tlačítko do rozvržení POS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>On the <bpt id="p1">**</bpt>Button grids<ept id="p1">**</ept> page, follow the instructions in <bpt id="p2">[</bpt>Add a custom operation button to the POS layout in Retail headquarters<ept id="p2">](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters)</ept> to install the designer and update a POS layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Mřížky tlačítka<ept id="p1">**</ept> proveďte postup v části <bpt id="p2">[</bpt>Přidání vlastního operačního tlačítka do rozložení POS v centrále maloobchodu<ept id="p2">](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters)</ept> k instalaci návrháře a aktualizaci rozložení POS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Select the layout to update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výběr rozložení k aktualizaci</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Add a new button, and set the <bpt id="p1">**</bpt>Complete fiscal registration process<ept id="p1">**</ept> button property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidejte nové tlačítko a nastavte vlastnost tlačítka <bpt id="p1">**</bpt>Dokončit proces fiskální registrace<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>On the <bpt id="p1">**</bpt>Distribution schedule<ept id="p1">**</ept> page, run the <bpt id="p2">**</bpt>1090<ept id="p2">**</ept> job to transfer your changes to the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Plán distribuce<ept id="p1">**</ept> spusťte úlohu <bpt id="p2">**</bpt>1090<ept id="p2">**</ept> pro převod vašich změn do databáze kanálů.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

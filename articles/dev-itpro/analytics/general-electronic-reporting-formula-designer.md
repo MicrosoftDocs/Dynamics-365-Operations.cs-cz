@@ -1,749 +1,2505 @@
----
-title: Návrhář receptur v elektronickém výkaznictví
-description: Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví.
-author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-audience: Application User, IT Pro
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
-ms.search.region: Global
-ms.author: nselin
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541261"
----
-# <a name="formula-designer-in-electronic-reporting-er"></a><span data-ttu-id="f68c8-103">Návrhář receptur v elektronickém výkaznictví</span><span class="sxs-lookup"><span data-stu-id="f68c8-103">Formula designer in Electronic reporting (ER)</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="f68c8-104">Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-104">This topic explains how to use the formula designer in Electronic reporting (ER).</span></span> <span data-ttu-id="f68c8-105">Při vytváření formátu pro určitý elektronický dokument pro elektronické výkaznictví můžete použít vzorce k převodu dat za účelem plnění požadavků na plnění a formátování daného dokumentu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-105">When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting.</span></span> <span data-ttu-id="f68c8-106">Tyto vzorce připomínají vzorce aplikace Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="f68c8-106">These formulas resemble formulas in Microsoft Excel.</span></span> <span data-ttu-id="f68c8-107">Ve vzorcích jsou podporovány různé typy funkcí: text, datum a čas, matematika, logika, informace, převod datových typů a další (funkce specifické pro danou obchodní doménu).</span><span class="sxs-lookup"><span data-stu-id="f68c8-107">Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, data type conversion, and other (business domain–specific functions).</span></span>
-
-## <a name="formula-designer-overview"></a><span data-ttu-id="f68c8-108">Přehled návrháře vzorců</span><span class="sxs-lookup"><span data-stu-id="f68c8-108">Formula designer overview</span></span>
-
-<span data-ttu-id="f68c8-109">Elektronické výkaznictví podporuje návrháře receptur.</span><span class="sxs-lookup"><span data-stu-id="f68c8-109">ER supports the formula designer.</span></span> <span data-ttu-id="f68c8-110">Proto můžete během návrhu konfigurovat výrazy, které lze použít pro následující úkoly za běhu:</span><span class="sxs-lookup"><span data-stu-id="f68c8-110">Therefore, at design time, you can configure expressions that can be used for the following tasks at runtime:</span></span>
-
-- <span data-ttu-id="f68c8-111">Transformujte data, přijatá z databáze Microsoft Dynamics 365 for Finance and Operations, která by měla být zadána do datového modelu elektronického výkaznictví navrženého jako datový zdroj pro formáty elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-111">Transform data that is received from a Microsoft Dynamics 365 for Finance and Operations database, and that should be entered in an ER data model that is designed to be a data source for ER formats.</span></span> <span data-ttu-id="f68c8-112">(Tyto transformace mohou například zahrnovat filtrování, seskupení a převod typů dat.)</span><span class="sxs-lookup"><span data-stu-id="f68c8-112">(For example, these transformations might include filtering, grouping, and data type conversion.)</span></span>
-- <span data-ttu-id="f68c8-113">Formátování dat, která musí být odeslána do generovaného elektronické dokument v souladu s rozvržením a podmínkami konkrétního formátu elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-113">Format data that must be sent to a generating electronic document in accordance with the layout and conditions of a specific ER format.</span></span> <span data-ttu-id="f68c8-114">(Formátování může být například provedeno v souladu s požadovaným jazykem, jazykovou verzí nebo kódováním).</span><span class="sxs-lookup"><span data-stu-id="f68c8-114">(For example, the formatting might be done in accordance with the requested language or culture, or the encoding).</span></span>
-- <span data-ttu-id="f68c8-115">Kontrola procesu vytváření elektronických dokumentů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-115">Control the process of creating electronic documents.</span></span> <span data-ttu-id="f68c8-116">(Například výrazy mohou povolit nebo zakázat výstup konkrétních prvků formátu, v závislosti na zpracování dat.</span><span class="sxs-lookup"><span data-stu-id="f68c8-116">(For example, the expressions can enable or disable the output of specific elements of the format, depending on processing data.</span></span> <span data-ttu-id="f68c8-117">Mohou rovněž přerušit proces vytváření dokumentu nebo odesílat zprávy uživateli.)</span><span class="sxs-lookup"><span data-stu-id="f68c8-117">They can also interrupt the document creation process or throw messages to users.)</span></span>
-
-<span data-ttu-id="f68c8-118">Můžete otevřít stránku **Návrhář receptur** po provedení některé z následujících akcí:</span><span class="sxs-lookup"><span data-stu-id="f68c8-118">You can open the **Formula designer** page when you perform any of the following actions:</span></span>
-
-- <span data-ttu-id="f68c8-119">vazba položek zdroje dat na součásti datového modelu,</span><span class="sxs-lookup"><span data-stu-id="f68c8-119">Bind data source items to data model components.</span></span>
-- <span data-ttu-id="f68c8-120">vazba položek zdroje dat na součásti formátu,</span><span class="sxs-lookup"><span data-stu-id="f68c8-120">Bind data source items to format components.</span></span>
-- <span data-ttu-id="f68c8-121">kompletní údržba vypočtených polí, která jsou součástí datových zdrojů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-121">Complete maintenance of calculated fields that are part of data sources.</span></span>
-- <span data-ttu-id="f68c8-122">definování podmínek viditelnosti pro vstupní parametry uživatele,</span><span class="sxs-lookup"><span data-stu-id="f68c8-122">Define the visibility conditions for user input parameters.</span></span>
-- <span data-ttu-id="f68c8-123">návrh transformací formátu,</span><span class="sxs-lookup"><span data-stu-id="f68c8-123">Design a format's transformations.</span></span>
-- <span data-ttu-id="f68c8-124">definování povolení podmínek pro součásti formátu,</span><span class="sxs-lookup"><span data-stu-id="f68c8-124">Define the enabling conditions for the format's components.</span></span>
-- <span data-ttu-id="f68c8-125">definování názvů souborů pro součásti souboru formátu,</span><span class="sxs-lookup"><span data-stu-id="f68c8-125">Define the file names for the format's FILE components.</span></span>
-- <span data-ttu-id="f68c8-126">definování podmínek pro ověření kontroly procesu,</span><span class="sxs-lookup"><span data-stu-id="f68c8-126">Define the conditions for process control validations.</span></span>
-- <span data-ttu-id="f68c8-127">definování textu zpráv pro ověření kontroly procesu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-127">Define the message text for process control validations.</span></span>
-
-## <a name="designing-er-formulas"></a><span data-ttu-id="f68c8-128">Vytvoření vzorců elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="f68c8-128">Designing ER formulas</span></span>
-
-### <a name="data-binding"></a><span data-ttu-id="f68c8-129">Datová vazba</span><span class="sxs-lookup"><span data-stu-id="f68c8-129">Data binding</span></span>
-
-<span data-ttu-id="f68c8-130">Návrháře receptur elektronického výkaznictví lze použít k definování výrazu, který převádí data přijatá ze zdrojů dat, aby tato data bylo možné zadat v příjemci dat za běhu:</span><span class="sxs-lookup"><span data-stu-id="f68c8-130">The ER formula designer can be used to define an expression that transforms data that is received from data sources, so that the data can be entered in the data consumer at runtime:</span></span>
-
-- <span data-ttu-id="f68c8-131">ze zdrojů dat aplikace Finance and Operations a parametrů spuštění do datového modelu elektronického výkaznictví,</span><span class="sxs-lookup"><span data-stu-id="f68c8-131">From Finance and Operations data sources and runtime parameters to an ER data model</span></span>
-- <span data-ttu-id="f68c8-132">z datového modelu elektronického výkaznictví do formátu elektronického výkaznictví,</span><span class="sxs-lookup"><span data-stu-id="f68c8-132">From an ER data model to an ER format</span></span>
-- <span data-ttu-id="f68c8-133">ze zdrojů dat aplikace Finance and Operations a parametrů spuštění do formátu elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-133">From Finance and Operations data sources and runtime parameters to an ER format</span></span>
-
-<span data-ttu-id="f68c8-134">Následující obrázek znázorňuje návrh výraz tohoto typu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-134">The following illustration shows the design of an expression of this type.</span></span> <span data-ttu-id="f68c8-135">V tomto příkladu výraz zaokrouhluje hodnotu pole **Intrastat.AmountMST** tabulky Intrastat aplikace Finance and Operations na dvě desetinná místa a vrací zaokrouhlenou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-135">In this example, the expression rounds the value of the **Intrastat.AmountMST** field the Intrastat table in Finance and Operations to two decimal places and then returns the rounded value.</span></span>
-
-<span data-ttu-id="f68c8-136">[![Datová vazba](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)</span><span class="sxs-lookup"><span data-stu-id="f68c8-136">[![Data binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)</span></span>
-
-<span data-ttu-id="f68c8-137">Je možné použít následující obrázek, který znázorňuje návrh výrazu tohoto typu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-137">The following illustration shows how an expression of this type can be used.</span></span> <span data-ttu-id="f68c8-138">V tomto příkladu je výsledek navrženého výrazu zadán do komponenty **Transaction.InvoicedAmount** datového modelu **Vykazování daně**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-138">In this example, the result of the designed expression is entered in the **Transaction.InvoicedAmount** component of the **Tax reporting model** data model.</span></span>
-
-<span data-ttu-id="f68c8-139">[![Používané datové vazby](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)</span><span class="sxs-lookup"><span data-stu-id="f68c8-139">[![Data binding being used](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)</span></span>
-
-<span data-ttu-id="f68c8-140">Navržený vzorec **ROUND (Intrastat.AmountMST 2)**, zaokrouhluje za běhu hodnot pole **AmountMST** pro každý záznam v tabulce Intrastat na dvě desetinná místa.</span><span class="sxs-lookup"><span data-stu-id="f68c8-140">At runtime, the designed formula, **ROUND (Intrastat.AmountMST, 2)**, rounds the value of the **AmountMST** field for each record in the Intrastat table to two decimal places.</span></span> <span data-ttu-id="f68c8-141">Poté zadá zaokrouhlenou hodnotu do komponenty **Transaction.InvoicedAmount** datového modelu **Vykazování daně**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-141">It then enters the rounded value in the **Transaction.InvoicedAmount** component of the **Tax reporting** data model.</span></span>
-
-### <a name="data-formatting"></a><span data-ttu-id="f68c8-142">Formátování dat</span><span class="sxs-lookup"><span data-stu-id="f68c8-142">Data formatting</span></span>
-
-<span data-ttu-id="f68c8-143">Návrháře receptur elektronického výkaznictví lze použít k definování výrazu, který naformátuje data přijatá ze zdrojů dat, aby tato data bylo možné odeslat jako součást generovaného elektronického dokumentu:</span><span class="sxs-lookup"><span data-stu-id="f68c8-143">The ER formula designer can be used to define an expression that formats data that is received from data sources, so that the data can be sent as part of the generating electronic document.</span></span> <span data-ttu-id="f68c8-144">Můžete mít formátování, které je třeba použít jako typické pravidlo, které by mělo být znovu použito pro formát.</span><span class="sxs-lookup"><span data-stu-id="f68c8-144">You might have formatting that must be applied as a typical rule that should be reused for a format.</span></span> <span data-ttu-id="f68c8-145">V takovém případě můžete uvést toto formátování jednou v konfiguraci formátu jako pojmenovanou transformaci, která má výraz formátování.</span><span class="sxs-lookup"><span data-stu-id="f68c8-145">In this case, you can introduce that formatting one time in the format configuration, as a named transformation that has a formatting expression.</span></span> <span data-ttu-id="f68c8-146">Tuto pojmenovanou transformaci lze potom propojit s mnoha komponentami formátu, kde výstup musí být formátován podle vytvořeného výrazu formátování.</span><span class="sxs-lookup"><span data-stu-id="f68c8-146">This named transformation can then be linked to many format components where the output must be formatted according to the formatting expression that you created.</span></span>
-
-<span data-ttu-id="f68c8-147">Následující obrázek znázorňuje návrh transformace tohoto typu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-147">The following illustration shows the design of a transformation of this type.</span></span> <span data-ttu-id="f68c8-148">V tomto příkladu ořeže transformace **TrimmedString** vstupní data typu dat **Řetězec** odstraněním počáteční a koncové mezery.</span><span class="sxs-lookup"><span data-stu-id="f68c8-148">In this example, the **TrimmedString** transformation truncates incoming data of the **String** data type by removing leading and trailing spaces.</span></span> <span data-ttu-id="f68c8-149">Vrátí hodnotu oříznutého řetězce.</span><span class="sxs-lookup"><span data-stu-id="f68c8-149">It then returns the truncated string value.</span></span>
-
-<span data-ttu-id="f68c8-150">[![Transformace](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)</span><span class="sxs-lookup"><span data-stu-id="f68c8-150">[![Transformation](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)</span></span>
-
-<span data-ttu-id="f68c8-151">Je možné použít následující obrázek, který znázorňuje návrh transformace tohoto typu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-151">The following illustration shows how a transformation of this type can be used.</span></span> <span data-ttu-id="f68c8-152">V tomto příkladu více součástí formátu odesílá text jako výstup do generovaného elektrického dokumentu za běhu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-152">In this example, several format components send text as output to the generating electronic document at runtime.</span></span> <span data-ttu-id="f68c8-153">Všechny tyto součásti formátu odkazují na transofmraci **TrimmedString** podle názvu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-153">All these format components refer to the **TrimmedString** transformation by name.</span></span>
-
-<span data-ttu-id="f68c8-154">[![Použitá transformace](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)</span><span class="sxs-lookup"><span data-stu-id="f68c8-154">[![Transformation being used](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)</span></span>
-
-<span data-ttu-id="f68c8-155">Když součásti formátu, jako je například součást **partyName** na předchozím obrázku, odkazují na transformaci **TrimmedString**, transformace odešle text jako výstup generovaného elektronického dokumentu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-155">When format components, such as the **partyName** component in the preceding illustration, refer to the **TrimmedString** transformation, the transformation sends text as output to the generating electronic document.</span></span> <span data-ttu-id="f68c8-156">Tento text nezahrnuje počáteční a koncové mezery.</span><span class="sxs-lookup"><span data-stu-id="f68c8-156">This text doesn't include leading and trailing spaces.</span></span>
-
-<span data-ttu-id="f68c8-157">Pokud máte formátování, které je nutné použít jednotlivě, můžete toto formátování použít jako jednotlivý výraz vazby konkrétní součásti formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-157">If you have formatting that must be applied individually, you can introduce that formatting as an individual expression of a binding of a specific format component.</span></span> <span data-ttu-id="f68c8-158">Následující obrázek znázorňuje výraz tohoto typu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-158">The following illustration shows an expression of this type.</span></span> <span data-ttu-id="f68c8-159">V tomto příkladu je součást formátu **partyType** vázána na zdroj dat pomocí výrazu, který převede příchozí data z pole **Model.Company.RegistrationType** ve zdroji dat na text s velkými písmeny.</span><span class="sxs-lookup"><span data-stu-id="f68c8-159">In this example, the **partyType** format component is bound to the data source via an expression that converts incoming data from the **Model.Company.RegistrationType** field in the data source to uppercase text.</span></span> <span data-ttu-id="f68c8-160">Výraz pak odešle tento text jako výstup do elektronického dokumentu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-160">The expression then sends that text as output to the electronic document.</span></span>
-
-<span data-ttu-id="f68c8-161">[![Použití formátování na jednotlivou součást](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)</span><span class="sxs-lookup"><span data-stu-id="f68c8-161">[![Applying formatting to an individual component](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)</span></span>
-
-### <a name="process-flow-control"></a><span data-ttu-id="f68c8-162">Kontrola procesního toku</span><span class="sxs-lookup"><span data-stu-id="f68c8-162">Process flow control</span></span>
-
-<span data-ttu-id="f68c8-163">Návrháře receptur elektronického výkaznictví lze použít k definování výrazů, které se používají k řízení toku procesu generovaných elektronických dokumentů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-163">The ER formula designer can be used to define expressions that control the process flow of generating electronic documents.</span></span> <span data-ttu-id="f68c8-164">K dispozici jsou tyto úlohy:</span><span class="sxs-lookup"><span data-stu-id="f68c8-164">You can perform the following tasks:</span></span>
-
-- <span data-ttu-id="f68c8-165">Definujte podmínky určující, kdy musí být zastaven proces vytvoření dokumentu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-165">Define conditions that determine when a document creation process must be stopped.</span></span>
-- <span data-ttu-id="f68c8-166">Zadejte výrazy, které vytvoří zprávy pro uživatele o zastaveném procesu nebo vyvolají spuštění zpráv protokolu o pokračujícím procesu generování sestav.</span><span class="sxs-lookup"><span data-stu-id="f68c8-166">Specify expressions that either create messages for the user about stopped processes or throw execution log messages about the continuing process of report generation.</span></span>
-- <span data-ttu-id="f68c8-167">Zadejte názvy souborů generovaných elektronických dokumentů a řiďte podmínky jejich vytvoření.</span><span class="sxs-lookup"><span data-stu-id="f68c8-167">Specify the file names of generating electronic documents, and control the conditions of their creation.</span></span>
-
-<span data-ttu-id="f68c8-168">Každé pravidlo procesu řízení toku je navržen jako jednotlivé ověření.</span><span class="sxs-lookup"><span data-stu-id="f68c8-168">Each rule of the process flow control is designed as an individual validation.</span></span> <span data-ttu-id="f68c8-169">Následující obrázek znázorňuje ověření tohoto typu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-169">The following illustration shows a validation of this type.</span></span> <span data-ttu-id="f68c8-170">Zde je vysvětlení konfigurace v tomto příkladu:</span><span class="sxs-lookup"><span data-stu-id="f68c8-170">Here is an explanation of the configuration in this example:</span></span>
-
-- <span data-ttu-id="f68c8-171">Ověření je vyhodnoceno, když je uzel **INSTAT** vytvořen během generování souboru XML.</span><span class="sxs-lookup"><span data-stu-id="f68c8-171">The validation is evaluated when the **INSTAT** node is created during generation of the XML file.</span></span>
-- <span data-ttu-id="f68c8-172">Pokud je seznam transakcí prázdný, ověření zastaví proces spouštění a vrátí hodnotu **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-172">If the list of transactions is empty, the validation stops the execution process and returns **FALSE**.</span></span>
-- <span data-ttu-id="f68c8-173">Ověření vrátí chybovou zpráva, která obsahuje textu Finance and Operations popisku SYS70894 v upřednostňovaném jazyce uživatele.</span><span class="sxs-lookup"><span data-stu-id="f68c8-173">The validation returns an error message that includes the text of Finance and Operations label SYS70894 in the user's preferred language.</span></span>
-
-<span data-ttu-id="f68c8-174">[![Ověření](./media/picture-validation.jpg)](./media/picture-validation.jpg)</span><span class="sxs-lookup"><span data-stu-id="f68c8-174">[![Validation](./media/picture-validation.jpg)](./media/picture-validation.jpg)</span></span>
-
-<span data-ttu-id="f68c8-175">Návrhář receptur elektronického výkaznictví lze také použít k vygenerování názvu souboru pro generovaný elektronický dokument a kontrolu procesu vytvoření souboru.</span><span class="sxs-lookup"><span data-stu-id="f68c8-175">The ER formula designer can also be used to generate a file name for a generating electronic document and control the file creation process.</span></span> <span data-ttu-id="f68c8-176">Následující obrázek znázorňuje návrh kontroly procesního toku tohoto typu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-176">The following illustration shows the design of a process flow control of this type.</span></span> <span data-ttu-id="f68c8-177">Zde je vysvětlení konfigurace v tomto příkladu:</span><span class="sxs-lookup"><span data-stu-id="f68c8-177">Here is an explanation of the configuration in this example:</span></span>
-
-- <span data-ttu-id="f68c8-178">Seznam záznamů z datového zdroje **model.Intrastat** je rozdělen do dávek.</span><span class="sxs-lookup"><span data-stu-id="f68c8-178">The list of records from the **model.Intrastat** data source is divided into batches.</span></span> <span data-ttu-id="f68c8-179">Každá dávka obsahuje až 1 000 záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-179">Each batch contains up to 1,000 records.</span></span>
-- <span data-ttu-id="f68c8-180">Výstup vytvoří soubor ZIP, který obsahuje jeden soubor ve formátu XML pro každou dávku, která byla vytvořena.</span><span class="sxs-lookup"><span data-stu-id="f68c8-180">The output creates a zip file that contains one file in XML format for every batch that was created.</span></span>
-- <span data-ttu-id="f68c8-181">Výraz vrátí název souboru pro generované elektronické dokumenty zřetězením názvu a přípony souboru.</span><span class="sxs-lookup"><span data-stu-id="f68c8-181">An expression returns a file name for generating electronic documents by concatenating the file name and the file name extension.</span></span> <span data-ttu-id="f68c8-182">Pro druhou dávku a všechny následné dávky obsahuje název souboru ID dávky jako příponu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-182">For the second batch and all subsequent batches, the file name contains the batch ID as a suffix.</span></span>
-- <span data-ttu-id="f68c8-183">Výraz umožňuje (vrácením hodnoty **TRUE**) proces vytváření souborů pro dávky, které obsahují alespoň jeden záznam.</span><span class="sxs-lookup"><span data-stu-id="f68c8-183">An expression enables (by returning **TRUE**) the file creation process for batches that contain at least one record.</span></span>
-
-<span data-ttu-id="f68c8-184">[![Kontrola souboru](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)</span><span class="sxs-lookup"><span data-stu-id="f68c8-184">[![File control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)</span></span>
-
-### <a name="basic-syntax"></a><span data-ttu-id="f68c8-185">Základní syntaxe</span><span class="sxs-lookup"><span data-stu-id="f68c8-185">Basic syntax</span></span>
-
-<span data-ttu-id="f68c8-186">Výrazy elektronické výkaznictví mohou obsahovat jakékoli nebo všechny následující prvky:</span><span class="sxs-lookup"><span data-stu-id="f68c8-186">ER expressions can contain any or all of the following elements:</span></span>
-
-- <span data-ttu-id="f68c8-187">Konstanty</span><span class="sxs-lookup"><span data-stu-id="f68c8-187">Constants</span></span>
-- <span data-ttu-id="f68c8-188">Operátory</span><span class="sxs-lookup"><span data-stu-id="f68c8-188">Operators</span></span>
-- <span data-ttu-id="f68c8-189">Odkazy</span><span class="sxs-lookup"><span data-stu-id="f68c8-189">References</span></span>
-- <span data-ttu-id="f68c8-190">Cesty</span><span class="sxs-lookup"><span data-stu-id="f68c8-190">Paths</span></span>
-- <span data-ttu-id="f68c8-191">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-191">Functions</span></span>
-
-#### <a name="constants"></a><span data-ttu-id="f68c8-192">Konstanty</span><span class="sxs-lookup"><span data-stu-id="f68c8-192">Constants</span></span>
-
-<span data-ttu-id="f68c8-193">Při návrhu výrazů lze použít text a numerické konstanty (hodnoty, které nejsou vypočteny).</span><span class="sxs-lookup"><span data-stu-id="f68c8-193">When you design expressions, you can use text and numeric constants (that is, values that aren't calculated).</span></span> <span data-ttu-id="f68c8-194">Například výraz **VALUE ("100") + 20** používá číselnou konstantu **20** a řetězcovou konstantu **"100"** a vrátí číselnou hodnotu **120**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-194">For example, the expression **VALUE ("100") + 20** uses the numeric constant **20** and the string constant **"100"**, and returns the numeric value **120**.</span></span> <span data-ttu-id="f68c8-195">Návrhář receptur elektronického výkaznictví podporuje řídicí sekvence.</span><span class="sxs-lookup"><span data-stu-id="f68c8-195">The ER formula designer supports escape sequences.</span></span> <span data-ttu-id="f68c8-196">Můžete tedy určit řetězec výrazu, se kterým má být zacházeno jinak.</span><span class="sxs-lookup"><span data-stu-id="f68c8-196">Therefore, you can specify an expression string that should be handled differently.</span></span> <span data-ttu-id="f68c8-197">Například výraz **"Lev Tolstoj ""Vojna a mir"" Svazek 1"** vrátí textový řetězec **Lev Tolstoj "Vojna a mir" Svazek 1**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-197">For example, the expression **"Leo Tolstoy ""War and Peace"" Volume 1"** returns the text string **Leo Tolstoy "War and Peace" Volume 1**.</span></span>
-
-#### <a name="operators"></a><span data-ttu-id="f68c8-198">Operátory</span><span class="sxs-lookup"><span data-stu-id="f68c8-198">Operators</span></span>
-
-<span data-ttu-id="f68c8-199">Následující tabulka ukazuje aritmetické operátory, které lze používat k provádění základních matematických operací, například sčítání, odčítání, dělení a násobení.</span><span class="sxs-lookup"><span data-stu-id="f68c8-199">The following table shows the arithmetic operators that you can use to do basic mathematical operations, such as addition, subtraction, multiplication, and division.</span></span>
-
-| <span data-ttu-id="f68c8-200">Operátor</span><span class="sxs-lookup"><span data-stu-id="f68c8-200">Operator</span></span> | <span data-ttu-id="f68c8-201">Význam</span><span class="sxs-lookup"><span data-stu-id="f68c8-201">Meaning</span></span>               | <span data-ttu-id="f68c8-202">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-202">Example</span></span> |
-|----------|-----------------------|---------|
-| +        | <span data-ttu-id="f68c8-203">Dodatek</span><span class="sxs-lookup"><span data-stu-id="f68c8-203">Addition</span></span>              | <span data-ttu-id="f68c8-204">1+2</span><span class="sxs-lookup"><span data-stu-id="f68c8-204">1+2</span></span>     |
-| -        | <span data-ttu-id="f68c8-205">Odečítání, negace</span><span class="sxs-lookup"><span data-stu-id="f68c8-205">Subtraction, negation</span></span> | <span data-ttu-id="f68c8-206">5-2, -1</span><span class="sxs-lookup"><span data-stu-id="f68c8-206">5-2, -1</span></span> |
-| \*       | <span data-ttu-id="f68c8-207">Násobení</span><span class="sxs-lookup"><span data-stu-id="f68c8-207">Multiplication</span></span>        | <span data-ttu-id="f68c8-208">7\*8</span><span class="sxs-lookup"><span data-stu-id="f68c8-208">7\*8</span></span>    |
-| /        | <span data-ttu-id="f68c8-209">Divize</span><span class="sxs-lookup"><span data-stu-id="f68c8-209">Division</span></span>              | <span data-ttu-id="f68c8-210">9/3</span><span class="sxs-lookup"><span data-stu-id="f68c8-210">9/3</span></span>     |
-
-<span data-ttu-id="f68c8-211">Následující tabulka ukazuje operátory porovnávání, které jsou podporovány.</span><span class="sxs-lookup"><span data-stu-id="f68c8-211">The following table shows the comparison operators that are supported.</span></span> <span data-ttu-id="f68c8-212">Tyto operátory slouží k porovnání dvou hodnot.</span><span class="sxs-lookup"><span data-stu-id="f68c8-212">You can use these operators to compare two values.</span></span>
-
-| <span data-ttu-id="f68c8-213">Operátor</span><span class="sxs-lookup"><span data-stu-id="f68c8-213">Operator</span></span> | <span data-ttu-id="f68c8-214">Význam</span><span class="sxs-lookup"><span data-stu-id="f68c8-214">Meaning</span></span>                  | <span data-ttu-id="f68c8-215">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-215">Example</span></span>    |
-|----------|--------------------------|------------|
-| =        | <span data-ttu-id="f68c8-216">Rovno</span><span class="sxs-lookup"><span data-stu-id="f68c8-216">Equal</span></span>                    | <span data-ttu-id="f68c8-217">X=Y</span><span class="sxs-lookup"><span data-stu-id="f68c8-217">X=Y</span></span>        |
-| &gt;     | <span data-ttu-id="f68c8-218">Je větší než</span><span class="sxs-lookup"><span data-stu-id="f68c8-218">Greater than</span></span>             | <span data-ttu-id="f68c8-219">X&gt;Y</span><span class="sxs-lookup"><span data-stu-id="f68c8-219">X&gt;Y</span></span>     |
-| &lt;     | <span data-ttu-id="f68c8-220">Je menší než</span><span class="sxs-lookup"><span data-stu-id="f68c8-220">Less than</span></span>                | <span data-ttu-id="f68c8-221">X&lt;Y</span><span class="sxs-lookup"><span data-stu-id="f68c8-221">X&lt;Y</span></span>     |
-| &gt;=    | <span data-ttu-id="f68c8-222">Větší než nebo rovno</span><span class="sxs-lookup"><span data-stu-id="f68c8-222">Greater than or equal to</span></span> | <span data-ttu-id="f68c8-223">X&gt;=Y</span><span class="sxs-lookup"><span data-stu-id="f68c8-223">X&gt;=Y</span></span>    |
-| &lt;=    | <span data-ttu-id="f68c8-224">Menší než nebo rovno</span><span class="sxs-lookup"><span data-stu-id="f68c8-224">Less than or equal to</span></span>    | <span data-ttu-id="f68c8-225">X&lt;=Y</span><span class="sxs-lookup"><span data-stu-id="f68c8-225">X&lt;=Y</span></span>    |
-| &lt;&gt; | <span data-ttu-id="f68c8-226">Není rovno</span><span class="sxs-lookup"><span data-stu-id="f68c8-226">Not equal to</span></span>             | <span data-ttu-id="f68c8-227">X&lt;&gt;Y</span><span class="sxs-lookup"><span data-stu-id="f68c8-227">X&lt;&gt;Y</span></span> |
-
-<span data-ttu-id="f68c8-228">Kromě toho můžete použít znak & jako operátor ke zřetězení textu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-228">Additionally, you can use an ampersand (&) as a text concatenation operator.</span></span> <span data-ttu-id="f68c8-229">Tímto způsobem můžete spojit nebo zřetězit jeden nebo více řetězců do jednoho textu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-229">In this way, you can join, or concatenate, one or more text strings into a single piece of text.</span></span>
-
-| <span data-ttu-id="f68c8-230">Operátor</span><span class="sxs-lookup"><span data-stu-id="f68c8-230">Operator</span></span> | <span data-ttu-id="f68c8-231">Význam</span><span class="sxs-lookup"><span data-stu-id="f68c8-231">Meaning</span></span>     | <span data-ttu-id="f68c8-232">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-232">Example</span></span>                                             |
-|----------|-------------|-----------------------------------------------------|
-| &        | <span data-ttu-id="f68c8-233">Sloučit</span><span class="sxs-lookup"><span data-stu-id="f68c8-233">Concatenate</span></span> | <span data-ttu-id="f68c8-234">"Nic k tisku" & ":&nbsp;" & "nebyly nalezeny žádné záznamy"</span><span class="sxs-lookup"><span data-stu-id="f68c8-234">"Nothing to print" & ":&nbsp;" & "no records found"</span></span> |
-
-##### <a name="operator-precedence"></a><span data-ttu-id="f68c8-235">Priorita operátorů</span><span class="sxs-lookup"><span data-stu-id="f68c8-235">Operator precedence</span></span>
-
-<span data-ttu-id="f68c8-236">Pořadí, v jakém jsou části složeného výrazu vyhodnoceny, je důležité.</span><span class="sxs-lookup"><span data-stu-id="f68c8-236">The order that the parts of a compound expression are evaluated in is important.</span></span> <span data-ttu-id="f68c8-237">Například výsledek výrazu **1 + 4 / 2** se liší v závislosti na tom, zda se provádí nejprve sčítání nebo dělení.</span><span class="sxs-lookup"><span data-stu-id="f68c8-237">For example, the result of the expression **1 + 4 / 2** varies, depending on whether the addition operation or the division operation is done first.</span></span> <span data-ttu-id="f68c8-238">Pomocí závorek lze explicitně definovat způsob vyhodnocení výrazu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-238">You can use parentheses to explicitly define how an expression is evaluated.</span></span> <span data-ttu-id="f68c8-239">Chcete-li například uvést, že se sčítání musí provést jako první, můžete upravit předchozí výraz na **(1 + 4) / 2**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-239">For example, to indicate that the addition operation should be done first, you can change the preceding expression to **(1 + 4) / 2**.</span></span> <span data-ttu-id="f68c8-240">Pokud pořadí operací ve výrazu, není explicitně definováno, pořadí vychází z výchozí priority přiřazené k podporovaným operátorům.</span><span class="sxs-lookup"><span data-stu-id="f68c8-240">If you don't explicitly indicate the order of operations in an expression, the order is based on the default precedence that is assigned to the supported operators.</span></span> <span data-ttu-id="f68c8-241">V následující tabulce je priorita, která je přiřazena ke každému operátoru.</span><span class="sxs-lookup"><span data-stu-id="f68c8-241">The following table shows the precedence that is assigned to each operator.</span></span> <span data-ttu-id="f68c8-242">Operátory, které mají vyšší prioritu (například 7), jsou vyhodnoceny dříve než operátory s nižší prioritou (například 1).</span><span class="sxs-lookup"><span data-stu-id="f68c8-242">Operators that have a higher precedence (for example, 7) are evaluated before operators that have a lower precedence (for example, 1).</span></span>
-
-| <span data-ttu-id="f68c8-243">Priorita</span><span class="sxs-lookup"><span data-stu-id="f68c8-243">Precedence</span></span> | <span data-ttu-id="f68c8-244">Operátory</span><span class="sxs-lookup"><span data-stu-id="f68c8-244">Operators</span></span>      | <span data-ttu-id="f68c8-245">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="f68c8-245">Syntax</span></span>                                                                  |
-|------------|----------------|-------------------------------------------------------------------------|
-| <span data-ttu-id="f68c8-246">7</span><span class="sxs-lookup"><span data-stu-id="f68c8-246">7</span></span>          | <span data-ttu-id="f68c8-247">Seskupení</span><span class="sxs-lookup"><span data-stu-id="f68c8-247">Grouping</span></span>       | <span data-ttu-id="f68c8-248">( …</span><span class="sxs-lookup"><span data-stu-id="f68c8-248">( …</span></span> <span data-ttu-id="f68c8-249">)</span><span class="sxs-lookup"><span data-stu-id="f68c8-249">)</span></span>                                                                   |
-| <span data-ttu-id="f68c8-250">6</span><span class="sxs-lookup"><span data-stu-id="f68c8-250">6</span></span>          | <span data-ttu-id="f68c8-251">Přístup členů</span><span class="sxs-lookup"><span data-stu-id="f68c8-251">Member access</span></span>  | <span data-ttu-id="f68c8-252">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-252">…</span></span> <span data-ttu-id="f68c8-253">.</span><span class="sxs-lookup"><span data-stu-id="f68c8-253">.</span></span> <span data-ttu-id="f68c8-254">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-254">…</span></span>                                                                   |
-| <span data-ttu-id="f68c8-255">5</span><span class="sxs-lookup"><span data-stu-id="f68c8-255">5</span></span>          | <span data-ttu-id="f68c8-256">Volání funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-256">Function call</span></span>  | <span data-ttu-id="f68c8-257">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-257">…</span></span> <span data-ttu-id="f68c8-258">( …</span><span class="sxs-lookup"><span data-stu-id="f68c8-258">( …</span></span> <span data-ttu-id="f68c8-259">)</span><span class="sxs-lookup"><span data-stu-id="f68c8-259">)</span></span>                                                                 |
-| <span data-ttu-id="f68c8-260">4</span><span class="sxs-lookup"><span data-stu-id="f68c8-260">4</span></span>          | <span data-ttu-id="f68c8-261">Multiplikativní</span><span class="sxs-lookup"><span data-stu-id="f68c8-261">Multiplicative</span></span> | <span data-ttu-id="f68c8-262">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-262">…</span></span> <span data-ttu-id="f68c8-263">\* …</span><span class="sxs-lookup"><span data-stu-id="f68c8-263">\* …</span></span><br><span data-ttu-id="f68c8-264">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-264">…</span></span> <span data-ttu-id="f68c8-265">/ …</span><span class="sxs-lookup"><span data-stu-id="f68c8-265">/ …</span></span>                                                         |
-| <span data-ttu-id="f68c8-266">3</span><span class="sxs-lookup"><span data-stu-id="f68c8-266">3</span></span>          | <span data-ttu-id="f68c8-267">Přídavné</span><span class="sxs-lookup"><span data-stu-id="f68c8-267">Additive</span></span>       | <span data-ttu-id="f68c8-268">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-268">…</span></span> <span data-ttu-id="f68c8-269">+ …</span><span class="sxs-lookup"><span data-stu-id="f68c8-269">+ …</span></span><br><span data-ttu-id="f68c8-270">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-270">…</span></span> <span data-ttu-id="f68c8-271">- …</span><span class="sxs-lookup"><span data-stu-id="f68c8-271">- …</span></span>                                                          |
-| <span data-ttu-id="f68c8-272">2</span><span class="sxs-lookup"><span data-stu-id="f68c8-272">2</span></span>          | <span data-ttu-id="f68c8-273">Porovnání</span><span class="sxs-lookup"><span data-stu-id="f68c8-273">Comparison</span></span>     | <span data-ttu-id="f68c8-274">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-274">…</span></span> <span data-ttu-id="f68c8-275">&lt; …</span><span class="sxs-lookup"><span data-stu-id="f68c8-275">&lt; …</span></span><br><span data-ttu-id="f68c8-276">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-276">…</span></span> <span data-ttu-id="f68c8-277">&lt;= …</span><span class="sxs-lookup"><span data-stu-id="f68c8-277">&lt;= …</span></span><br><span data-ttu-id="f68c8-278">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-278">…</span></span><span data-ttu-id="f68c8-279"> =&gt; …</span><span class="sxs-lookup"><span data-stu-id="f68c8-279"> =&gt; …</span></span><br><span data-ttu-id="f68c8-280">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-280">…</span></span> <span data-ttu-id="f68c8-281">&gt; …</span><span class="sxs-lookup"><span data-stu-id="f68c8-281">&gt; …</span></span><br><span data-ttu-id="f68c8-282">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-282">…</span></span> <span data-ttu-id="f68c8-283">= …</span><span class="sxs-lookup"><span data-stu-id="f68c8-283">= …</span></span><br><span data-ttu-id="f68c8-284">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-284">…</span></span> <span data-ttu-id="f68c8-285">&lt;&gt; …</span><span class="sxs-lookup"><span data-stu-id="f68c8-285">&lt;&gt; …</span></span> |
-| <span data-ttu-id="f68c8-286">1</span><span class="sxs-lookup"><span data-stu-id="f68c8-286">1</span></span>          | <span data-ttu-id="f68c8-287">Dělení</span><span class="sxs-lookup"><span data-stu-id="f68c8-287">Separation</span></span>     | <span data-ttu-id="f68c8-288">…</span><span class="sxs-lookup"><span data-stu-id="f68c8-288">…</span></span> <span data-ttu-id="f68c8-289">, …</span><span class="sxs-lookup"><span data-stu-id="f68c8-289">, …</span></span>                                                                   |
-
-<span data-ttu-id="f68c8-290">Pokud výraz obsahuje několik po sobě jdoucích operátorů, které mají stejnou prioritu, vyhodnocují se tyto operátory zleva doprava.</span><span class="sxs-lookup"><span data-stu-id="f68c8-290">If an expression includes multiple consecutive operators that have the same precedence, those operations are evaluated from left to right.</span></span> <span data-ttu-id="f68c8-291">Například výraz **1 + 6 / 2 \* 3 &gt; 5** vrátí hodnotu **true**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-291">For example, the expression **1 + 6 / 2 \* 3 &gt; 5** returns **true**.</span></span> <span data-ttu-id="f68c8-292">Doporučujeme vám pomocí závorek explicitně určit požadované pořadí operátorů ve výrazech, usnadní se tím čtení a správa výrazů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-292">We recommend that you use parentheses to explicitly indicate the desired order of operations in expressions, so that the expressions are easier to read and maintain.</span></span>
-
-#### <a name="references"></a><span data-ttu-id="f68c8-293">Odkazy</span><span class="sxs-lookup"><span data-stu-id="f68c8-293">References</span></span>
-
-<span data-ttu-id="f68c8-294">Všechny zdroje dat aktuální součásti elektronického výkaznictví, které jsou k dispozici během návrhu výrazu, lze použít jako pojmenované odkazy.</span><span class="sxs-lookup"><span data-stu-id="f68c8-294">All data sources of the current ER component that are available during the design of an expression can be used as named references.</span></span> <span data-ttu-id="f68c8-295">(Aktuální součást elektronického výkaznictví může být model nebo formát.) Aktuální datový model model elektronického výkaznictví obsahuje například datový zdroj **ReportingDate** a tento datový zdroj vrací hodnotu typu dat **DATETIME**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-295">(The current ER component can be either a model or a format.) For example, the current ER data model contains the **ReportingDate** data source, and this data source returns a value of the **DATETIME** data type.</span></span> <span data-ttu-id="f68c8-296">Abyste tuto hodnotu v generování dokumentu správně zformátovali, můžete odkazovat na zdroj dat ve výrazu jako je **DATETIMEFORMAT (ReportingDate, "dd-MM-rrrr")**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-296">To correctly format that value in the generating document, you can reference the data source in the expression as **DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")**.</span></span>
-
-<span data-ttu-id="f68c8-297">Všechny znaky v názvu referenčního datového zdroje, které nepředstavují písmeno abecedy, musí předcházet jednoduchá uvozovka (').</span><span class="sxs-lookup"><span data-stu-id="f68c8-297">All characters in the name of a referencing data source that don't represent a letter of the alphabet must be preceded by a single quotation mark (').</span></span> <span data-ttu-id="f68c8-298">Pokud název odkazujícího zdroje dat obsahuje alespoň jeden znak, který nepředstavuje písmeno abecedy, musí být název v jednoduchých uvozovkách.</span><span class="sxs-lookup"><span data-stu-id="f68c8-298">If the name of a referencing data source contains at least one symbol that doesn't represent a letter of the alphabet, the name must be enclosed in single quotation marks.</span></span> <span data-ttu-id="f68c8-299">(Těmito nealfabetickými symboly mohou být například interpunkční znaménka nebo jiné psané symboly.) Zde je několik příkladů:</span><span class="sxs-lookup"><span data-stu-id="f68c8-299">(For example, these non-alphabetic symbols can be punctuation marks or other written symbols.) Here are some examples:</span></span>
-
-- <span data-ttu-id="f68c8-300">Datový zdroj **Dnešní datum a čas** je nutné odkazovat ve výrazu elektronického výkaznictví jako **Dnešní datum a čas**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-300">The **Today's date & time** data source must be referred to in an ER expression as **'Today''s date & time'**.</span></span>
-- <span data-ttu-id="f68c8-301">Na metodu **name()** zdroje dat **Odběratelé** musí být odkazováno ve výrazu elektronického výkaznictví jako **Odběratelé.'name()'**</span><span class="sxs-lookup"><span data-stu-id="f68c8-301">The **name()** method of the **Customers** data source must be referred to in an ER expression as **Customers.'name()'**.</span></span>
-
-<span data-ttu-id="f68c8-302">Pokud mají metody aplikace Finance and Operations datové zdroje s parametry, používá se pro volání těchto metod následující syntaxe:</span><span class="sxs-lookup"><span data-stu-id="f68c8-302">If the methods of Finance and Operations data sources have parameters, the following syntax is used to call those methods:</span></span>
-
-- <span data-ttu-id="f68c8-303">Pokud má metoda **isLanguageRTL** datového zdroje **Systém** parametr **EN-US** datového typu **Řetězec**, musí být odkazována ve výrazu elektronického výkaznictví jako **System.'isLanguageRTL'("EN-US")**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-303">If the **isLanguageRTL** method of the **System** data source has an **EN-US** parameter of the **String** data type, this method must be referred to in an ER expression as **System.'isLanguageRTL'("EN-US")**.</span></span>
-- <span data-ttu-id="f68c8-304">Pokud název metody obsahuje pouze alfanumerické znaky, nejsou uvozovky vyžadovány.</span><span class="sxs-lookup"><span data-stu-id="f68c8-304">Quotation marks aren't required when a method name contains only alphanumeric symbols.</span></span> <span data-ttu-id="f68c8-305">U metod tabulky, jejichž název obsahuje závorky, jsou však povinné.</span><span class="sxs-lookup"><span data-stu-id="f68c8-305">However, they are required for a method of a table if the name includes brackets.</span></span>
-
-<span data-ttu-id="f68c8-306">Při přidání datového zdroje **Systém** do mapování elektronického výkaznictví, které odkazuje na třídu aplikace Finance and Operations **Globální**, výraz vrátí logickou hodnotu **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-306">When the **System** data source is added to an ER mapping that refers to the **Global** Finance and Operations application class, the expression returns the Boolean value **FALSE**.</span></span> <span data-ttu-id="f68c8-307">Upravený výraz **System.' isLanguageRTL'("AR")** vrátí logickou hodnotu **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-307">The modified expression **System.' isLanguageRTL'("AR")** returns the Boolean value **TRUE**.</span></span>
-
-<span data-ttu-id="f68c8-308">Je možné omezit způsob, jakým jsou hodnoty předány do parametrů tohoto typu metody:</span><span class="sxs-lookup"><span data-stu-id="f68c8-308">You can limit the way that values are passed to the parameters of this type of method:</span></span>
-
-- <span data-ttu-id="f68c8-309">Lze předat pouze konstanty do metod tohoto typu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-309">Only constants can be passed to methods of this type.</span></span> <span data-ttu-id="f68c8-310">Hodnoty konstant jsou definovány v době návrhu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-310">The values of the constants are defined at design time.</span></span>
-- <span data-ttu-id="f68c8-311">Podporovány jsou pouze jednoduché (základní) datové typy pro parametry tohoto typu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-311">Only primitive (basic) data types are supported for parameters of this type.</span></span> <span data-ttu-id="f68c8-312">(Jednoduché datové typy jsou celé číslo, reálné, logická hodnota, řetězec atd.)</span><span class="sxs-lookup"><span data-stu-id="f68c8-312">(The primitive data types are integer, real, Boolean, string, and so on.)</span></span>
-
-#### <a name="paths"></a><span data-ttu-id="f68c8-313">Cesty</span><span class="sxs-lookup"><span data-stu-id="f68c8-313">Paths</span></span>
-
-<span data-ttu-id="f68c8-314">Pokud výraz odkazuje na strukturovaný zdroj dat, můžete použít definici cesty k volbě určitého primitivního prvku daného zdroje dat.</span><span class="sxs-lookup"><span data-stu-id="f68c8-314">When an expression references a structured data source, you can use the path definition to select a specific primitive element of that data source.</span></span> <span data-ttu-id="f68c8-315">Znak tečky (.) se používá k oddělení jednotlivých prvků strukturovaného zdroje dat.</span><span class="sxs-lookup"><span data-stu-id="f68c8-315">A dot character (.) is used to separate individual elements of a structured data source.</span></span> <span data-ttu-id="f68c8-316">Například aktuální datový model elektronického výkaznictví obsahuje zdroj dat **InvoiceTransactions** a ten vrátí seznam záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-316">For example, the current ER data model contains the **InvoiceTransactions** data source, and this data source returns a list of records.</span></span> <span data-ttu-id="f68c8-317">Struktura záznamu **InvoiceTransactions** obsahuje pole **AmountDebit** a **AmountCredit** a obě tato pole vrací číselné hodnoty.</span><span class="sxs-lookup"><span data-stu-id="f68c8-317">The **InvoiceTransactions** record structure contains the **AmountDebit** and **AmountCredit** fields, and both these fields return numeric values.</span></span> <span data-ttu-id="f68c8-318">Proto můžete vytvořit následující výraz pro výpočet fakturované částky: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-318">Therefore, you can design the following expression to calculate the invoiced amount: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**.</span></span>
-
-#### <a name="functions"></a><span data-ttu-id="f68c8-319">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-319">Functions</span></span>
-
-<span data-ttu-id="f68c8-320">Další část popisuje funkce, které lze použít ve výrazech elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-320">The next section describes the functions that can be used in ER expressions.</span></span> <span data-ttu-id="f68c8-321">Všechny zdroje dat kontextu výrazu (aktuální datový model nebo formát elektronického výkaznictví) mohou sloužit jako parametry funkcí volání, v souladu se seznamem argumentů pro funkce volání.</span><span class="sxs-lookup"><span data-stu-id="f68c8-321">All data sources of the expression context (the current ER data model or ER format) can be used as parameters of calling functions, in accordance with the list of arguments for calling functions.</span></span> <span data-ttu-id="f68c8-322">Konstanty lze také použít jako parametry funkcí volání.</span><span class="sxs-lookup"><span data-stu-id="f68c8-322">Constants can also be used as parameters of calling functions.</span></span> <span data-ttu-id="f68c8-323">Například aktuální datový model elektronického výkaznictví obsahuje zdroj dat **InvoiceTransactions** a ten vrátí seznam záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-323">For example, the current ER data model contains the **InvoiceTransactions** data source, and this data source returns a list of records.</span></span> <span data-ttu-id="f68c8-324">Struktura záznamu **InvoiceTransactions** obsahuje pole **AmountDebit** a **AmountCredit** a obě tato pole vrací číselné hodnoty.</span><span class="sxs-lookup"><span data-stu-id="f68c8-324">The **InvoiceTransactions** record structure contains the **AmountDebit** and **AmountCredit** fields, and both these fields return numeric values.</span></span> <span data-ttu-id="f68c8-325">Takže pokud chcete vypočítat částku, můžete vytvořit následující výraz využívající integrovanou funkci zaokrouhlování pro použití v elektronickém výkaznictví: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-325">Therefore, to calculate the invoiced amount, you can design the following expression that uses the built-in ER rounding function: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**.</span></span>
-
-## <a name="supported-functions"></a><span data-ttu-id="f68c8-326">Podporované funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-326">Supported functions</span></span>
-
-<span data-ttu-id="f68c8-327">V následující tabulce jsou popsány funkce pro manipulaci s daty, které lze použít k vytváření datových modelů a sestav elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-327">The following tables describe the data manipulation functions that you can use to design ER data models and ER reports.</span></span> <span data-ttu-id="f68c8-328">Seznam funkcí není pevný.</span><span class="sxs-lookup"><span data-stu-id="f68c8-328">The list of functions isn't fixed.</span></span> <span data-ttu-id="f68c8-329">Vývojáři ho mohou rozšířit.</span><span class="sxs-lookup"><span data-stu-id="f68c8-329">Developers can extend it.</span></span> <span data-ttu-id="f68c8-330">Chcete-li zobrazit seznam funkcí, které můžete použít, otevřete podokno funkcí v návrháři receptur elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-330">To see the list of functions that you can use, open the functions pane in the ER formula designer.</span></span>
-
-### <a name="date-and-time-functions"></a><span data-ttu-id="f68c8-331">Funkce data a času</span><span class="sxs-lookup"><span data-stu-id="f68c8-331">Date and time functions</span></span>
-
-| <span data-ttu-id="f68c8-332">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-332">Function</span></span> | <span data-ttu-id="f68c8-333">Popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-333">Description</span></span> | <span data-ttu-id="f68c8-334">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-334">Example</span></span> |
-|----------|-------------|---------|
-| <span data-ttu-id="f68c8-335">ADDDAYS (datum a čas, dny)</span><span class="sxs-lookup"><span data-stu-id="f68c8-335">ADDDAYS (datetime, days)</span></span> | <span data-ttu-id="f68c8-336">Přidá zadaný počet dní k zadané hodnotě data a času.</span><span class="sxs-lookup"><span data-stu-id="f68c8-336">Add the specified number of days to the specified date/time value.</span></span> | <span data-ttu-id="f68c8-337">**ADDDAYS (NOW(), 7)** vrátí datum a čas sedm dní v budoucnosti.</span><span class="sxs-lookup"><span data-stu-id="f68c8-337">**ADDDAYS (NOW(), 7)** returns the date and time seven days in the future.</span></span> |
-| <span data-ttu-id="f68c8-338">DATETODATETIME (datum)</span><span class="sxs-lookup"><span data-stu-id="f68c8-338">DATETODATETIME (date)</span></span> | <span data-ttu-id="f68c8-339">Převede zadanou hodnotu data na hodnotu data a času.</span><span class="sxs-lookup"><span data-stu-id="f68c8-339">Convert the specified date value to a date/time value.</span></span> | <span data-ttu-id="f68c8-340">**DATETODATETIME (CompInfo. 'getCurrentDate()')** vrátí datum aktuální relace aplikace Finance and Operations, např. 24. prosince 2015, jako **12/24/2015 12:00:00 AM**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-340">**DATETODATETIME (CompInfo. 'getCurrentDate()')** returns the current Finance and Operations session date, December 24, 2015, as **12/24/2015 12:00:00 AM**.</span></span> <span data-ttu-id="f68c8-341">V tomto příkladu **CompInfo** představuje zdroj dat elektronického výkaznictví typu **Finance and Operations/Table** a odkazuje na tabulku CompanyInfo.</span><span class="sxs-lookup"><span data-stu-id="f68c8-341">In this example, **CompInfo** is an ER data source of the **Finance and Operations/Table** type and refers to the CompanyInfo table.</span></span> |
-| <span data-ttu-id="f68c8-342">NOW ()</span><span class="sxs-lookup"><span data-stu-id="f68c8-342">NOW ()</span></span> | <span data-ttu-id="f68c8-343">Vrátí aktuální datum a čas relace aplikačního serveru Finance and Operations jako hodnotu data a času.</span><span class="sxs-lookup"><span data-stu-id="f68c8-343">Return the current Finance and Operations application server date and time as a date/time value.</span></span> | |
-| <span data-ttu-id="f68c8-344">TODAY ()</span><span class="sxs-lookup"><span data-stu-id="f68c8-344">TODAY ()</span></span> | <span data-ttu-id="f68c8-345">Vrátí aktuální datum relace aplikačního serveru Finance and Operations jako hodnotu data.</span><span class="sxs-lookup"><span data-stu-id="f68c8-345">Return the current Finance and Operations application server date as a date value.</span></span> | |
-| <span data-ttu-id="f68c8-346">NULLDATE ()</span><span class="sxs-lookup"><span data-stu-id="f68c8-346">NULLDATE ()</span></span> | <span data-ttu-id="f68c8-347">Vrátí hodnotu data **null**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-347">Return a **null** date value.</span></span> | |
-| <span data-ttu-id="f68c8-348">NULLDATETIME ()</span><span class="sxs-lookup"><span data-stu-id="f68c8-348">NULLDATETIME ()</span></span> | <span data-ttu-id="f68c8-349">Vrátí hodnotu data a času **null**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-349">Return a **null** date/time value.</span></span> | |
-| <span data-ttu-id="f68c8-350">DATETIMEFORMAT (datum a čas, formát)</span><span class="sxs-lookup"><span data-stu-id="f68c8-350">DATETIMEFORMAT (datetime, format)</span></span> | <span data-ttu-id="f68c8-351">Převede zadanou hodnotu data a času na řetězec v zadaném formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-351">Convert the specified date/time value to a string in the specified format.</span></span> <span data-ttu-id="f68c8-352">(Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span><span class="sxs-lookup"><span data-stu-id="f68c8-352">(For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span></span> | <span data-ttu-id="f68c8-353">**DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015 jako **"24-12-2015"** na základě zadaného vlastního formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-353">**DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returns the current Finance and Operations application server date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format.</span></span> |
-| <span data-ttu-id="f68c8-354">DATETIMEFORMAT (datum a čas, jazyková verze)</span><span class="sxs-lookup"><span data-stu-id="f68c8-354">DATETIMEFORMAT (datetime, format, culture)</span></span> | <span data-ttu-id="f68c8-355">Převede zadanou hodnotu data a času na řetězec v zadaném formátu a [jazykové verzi](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).</span><span class="sxs-lookup"><span data-stu-id="f68c8-355">Convert the specified date/time value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).</span></span> <span data-ttu-id="f68c8-356">(Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span><span class="sxs-lookup"><span data-stu-id="f68c8-356">(For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span></span> | <span data-ttu-id="f68c8-357">**DATETIMEFORMAT (NOW(), "d", "de")** vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015, jako **"24.12.2015"**, na základě vybraného německého prostředí.</span><span class="sxs-lookup"><span data-stu-id="f68c8-357">**DATETIMEFORMAT (NOW(), "d", "de")** returns the current Finance and Operations application server date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture.</span></span> |
-| <span data-ttu-id="f68c8-358">SESSIONTODAY ()</span><span class="sxs-lookup"><span data-stu-id="f68c8-358">SESSIONTODAY ()</span></span> | <span data-ttu-id="f68c8-359">Vrátí aktuální datum relace aplikace Finance and Operations jako hodnotu data.</span><span class="sxs-lookup"><span data-stu-id="f68c8-359">Return the current Finance and Operations session date as a date value.</span></span> | |
-| <span data-ttu-id="f68c8-360">SESSIONNOW ()</span><span class="sxs-lookup"><span data-stu-id="f68c8-360">SESSIONNOW ()</span></span> | <span data-ttu-id="f68c8-361">Vrátí aktuální datum a čas relace aplikace Finance and Operations jako hodnotu data a času.</span><span class="sxs-lookup"><span data-stu-id="f68c8-361">Return the current Finance and Operations session date and time as a date/time value.</span></span> | |
-| <span data-ttu-id="f68c8-362">DATEFORMAT (datum, formát)</span><span class="sxs-lookup"><span data-stu-id="f68c8-362">DATEFORMAT (date, format)</span></span> | <span data-ttu-id="f68c8-363">Vrátí znázornění řetězce zadaného data v zadaném formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-363">Return a string representation of the specified date in the specified format.</span></span> | <span data-ttu-id="f68c8-364">**DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")**  vrátí aktuální datum aplikace Finance and Operations, například 24. prosince 2015 jako **"24-12-2015"** na základě zadaného vlastního formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-364">**DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current Finance and Operations session date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format.</span></span> |
-| <span data-ttu-id="f68c8-365">DATEFORMAT (datum, formát, jazyková verze)</span><span class="sxs-lookup"><span data-stu-id="f68c8-365">DATEFORMAT (date, format, culture)</span></span> | <span data-ttu-id="f68c8-366">Převede zadanou hodnotu data na řetězec v zadaném formátu [jazykové verzi](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).</span><span class="sxs-lookup"><span data-stu-id="f68c8-366">Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).</span></span> <span data-ttu-id="f68c8-367">(Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span><span class="sxs-lookup"><span data-stu-id="f68c8-367">(For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span></span> | <span data-ttu-id="f68c8-368">**DATETIMEFORMAT (SESSIONNOW (), "d", "de")** vrátí aktuální datum aplikace Finance and Operations, například 24. prosince 2015, jako **"24.12.2015"**, na základě vybraného německého prostředí.</span><span class="sxs-lookup"><span data-stu-id="f68c8-368">**DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Finance and Operations session date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture.</span></span> |
-| <span data-ttu-id="f68c8-369">DAYOFYEAR (datum)</span><span class="sxs-lookup"><span data-stu-id="f68c8-369">DAYOFYEAR (date)</span></span> | <span data-ttu-id="f68c8-370">Vrátí celočíselnou reprezentaci počtu dní mezi 1. lednem a zadaným datem.</span><span class="sxs-lookup"><span data-stu-id="f68c8-370">Return an integer representation of the number of days between January 1 and the specified date.</span></span> | <span data-ttu-id="f68c8-371">**DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** vrátí **61**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-371">**DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**.</span></span> <span data-ttu-id="f68c8-372">**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** vrátí **1**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-372">**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**.</span></span> |
-| <span data-ttu-id="f68c8-373">DAYS (datum 1, datum 2)</span><span class="sxs-lookup"><span data-stu-id="f68c8-373">DAYS (date 1, date 2)</span></span> | <span data-ttu-id="f68c8-374">Vrátí počet dní mezi prvním a druhým určeným datem.</span><span class="sxs-lookup"><span data-stu-id="f68c8-374">Return the number of days between the first specified date and the second specified date.</span></span> <span data-ttu-id="f68c8-375">Vrátí kladnou hodnotu, pokud je první datum pozdější než druhé datum, vrátí **0** (nulu), když se první datum shoduje s druhým datem, nebo vrátí zápornou hodnotu, když je první datum dřívější než druhé.</span><span class="sxs-lookup"><span data-stu-id="f68c8-375">Return a positive value when the first date is later than the second date, return **0** (zero) when the first date equals the second date, or return a negative value when the first date is earlier than the second date.</span></span> | <span data-ttu-id="f68c8-376">**DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** vrátí **-1**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-376">**DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** returns **-1**.</span></span> |
-
-### <a name="data-conversion-functions"></a><span data-ttu-id="f68c8-377">Funkce převodu dat</span><span class="sxs-lookup"><span data-stu-id="f68c8-377">Data conversion functions</span></span>
-
-| <span data-ttu-id="f68c8-378">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-378">Function</span></span> | <span data-ttu-id="f68c8-379">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-379">Description</span></span> | <span data-ttu-id="f68c8-380">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-380">Example</span></span> |
-|----------|-------------|---------|
-| <span data-ttu-id="f68c8-381">DATETODATETIME (datum)</span><span class="sxs-lookup"><span data-stu-id="f68c8-381">DATETODATETIME (date)</span></span> | <span data-ttu-id="f68c8-382">Převede zadanou hodnotu data na hodnotu data a času.</span><span class="sxs-lookup"><span data-stu-id="f68c8-382">Convert the specified date value to a date/time value.</span></span> | <span data-ttu-id="f68c8-383">**DATETODATETIME (CompInfo. 'getCurrentDate()')** vrátí datum aktuální relace aplikace Finance and Operations, např. 24. prosince 2015, jako **12/24/2015 12:00:00 AM**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-383">**DATETODATETIME (CompInfo. 'getCurrentDate()')** returns the current Finance and Operations session date, December 24, 2015, as **12/24/2015 12:00:00 AM**.</span></span> <span data-ttu-id="f68c8-384">V tomto příkladu **CompInfo** představuje zdroj dat elektronického výkaznictví typu **Finance and Operations/Table** a odkazuje na tabulku CompanyInfo.</span><span class="sxs-lookup"><span data-stu-id="f68c8-384">In this example, **CompInfo** is an ER data source of the **Finance and Operations/Table** type and refers to the CompanyInfo table.</span></span> |
-| <span data-ttu-id="f68c8-385">DATEVALUE (řetězec, formát)</span><span class="sxs-lookup"><span data-stu-id="f68c8-385">DATEVALUE (string, format)</span></span> | <span data-ttu-id="f68c8-386">Vrátí znázornění data zadaného řetězce v zadaném formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-386">Return a date representation of the specified string in the specified format.</span></span> | <span data-ttu-id="f68c8-387">**DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** vrátí datum 21. prosince 2016 na základě zadaného vlastního formátu a výchozí jazykové verze aplikace **EN-US**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-387">**DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** returns the date December 21, 2016, based on specified custom format and the default application's **EN-US** culture.</span></span> |
-| <span data-ttu-id="f68c8-388">DATEVALUE (řetězec, formát, prostředí)</span><span class="sxs-lookup"><span data-stu-id="f68c8-388">DATEVALUE (string, format, culture)</span></span> | <span data-ttu-id="f68c8-389">Vrátí znázornění data zadaného řetězce v zadaném formátu a jazykové verzi.</span><span class="sxs-lookup"><span data-stu-id="f68c8-389">Return a date representation of the specified string in the specified format and culture.</span></span> | <span data-ttu-id="f68c8-390">**DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")** vrátí datum 21. ledna 2016 na základě zadaného vlastního formátu a jazykové verze.</span><span class="sxs-lookup"><span data-stu-id="f68c8-390">**DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")** returns the date January 21, 2016, based on the specified custom format and culture.</span></span> <span data-ttu-id="f68c8-391">Nicméně **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")** zobrazí výjimku za účelem informování uživatele, že zadaný řetězec nebyl rozpoznán jako platné datum.</span><span class="sxs-lookup"><span data-stu-id="f68c8-391">However, **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")** throws an exception to inform the user that the specified string isn't recognized as a valid date.</span></span> |
-| <span data-ttu-id="f68c8-392">DATETIMEVALUE (řetězec, formát)</span><span class="sxs-lookup"><span data-stu-id="f68c8-392">DATETIMEVALUE (string, format)</span></span> | <span data-ttu-id="f68c8-393">Vrátí znázornění data a času zadaného řetězce v zadaném formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-393">Return a date/time representation of the specified string in the specified format.</span></span> | <span data-ttu-id="f68c8-394">**DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** vrátí 2:55:00 21. prosince 2016 na základě zadaného vlastní formátu a výchozí jazykové verze aplikace **EN-US**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-394">**DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** returns 2:55:00 AM on December 21, 2016, based on the specified custom format and the default application's **EN-US** culture.</span></span> |
-| <span data-ttu-id="f68c8-395">DATETIMEVALUE (řetězec, formát, prostředí)</span><span class="sxs-lookup"><span data-stu-id="f68c8-395">DATETIMEVALUE (string, format, culture)</span></span> | <span data-ttu-id="f68c8-396">Vrátí znázornění data a času zadaného řetězce v zadaném formátu a jazykové verzi.</span><span class="sxs-lookup"><span data-stu-id="f68c8-396">Return a date/time representation of the specified string in the specified format and culture.</span></span> | <span data-ttu-id="f68c8-397">**DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "IT")** vrátí 2:55:00 21. prosince 2016 na základě zadaného vlastní formátu a výchozí jazykové verze aplikace EN-US.</span><span class="sxs-lookup"><span data-stu-id="f68c8-397">**DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "IT")** returns 2:55:00 AM on December 21, 2016, based on the specified custom format and culture.</span></span> <span data-ttu-id="f68c8-398">Nicméně **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")** zobrazí výjimku za účelem informování uživatele, že zadaný řetězec nebyl rozpoznán jako platné datum.</span><span class="sxs-lookup"><span data-stu-id="f68c8-398">However, **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")** throws an exception to inform the user that the specified string isn't recognized as a valid date/time.</span></span> |
-
-### <a name="list-functions"></a><span data-ttu-id="f68c8-399">Funkce seznamu</span><span class="sxs-lookup"><span data-stu-id="f68c8-399">List functions</span></span>
-
-<table>
-<thead>
-<tr>
-<th><span data-ttu-id="f68c8-400">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-400">Function</span></span></th>
-<th><span data-ttu-id="f68c8-401">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-401">Description</span></span></th>
-<th><span data-ttu-id="f68c8-402">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-402">Example</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span data-ttu-id="f68c8-403">SPLIT (vstup, délka)</span><span class="sxs-lookup"><span data-stu-id="f68c8-403">SPLIT (input, length)</span></span></td>
-<td><span data-ttu-id="f68c8-404">Rozdělí zadaný vstupní řetězec na dílčí řetězce, přičemž každý bude mít zadanou délku.</span><span class="sxs-lookup"><span data-stu-id="f68c8-404">Split the specified input string into substrings, each of which has the specified length.</span></span> <span data-ttu-id="f68c8-405">Vrátí výsledek jako nový seznam.</span><span class="sxs-lookup"><span data-stu-id="f68c8-405">Return the result as a new list.</span></span></td>
-<td><span data-ttu-id="f68c8-406"><strong>SPLIT (&quot;abcd&quot;, 3)</strong> vrátí nový seznam obsahující dva záznamy, které mají pole <strong>STRING</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-406"><strong>SPLIT (&quot;abcd&quot;, 3)</strong> returns a new list that consists of two records that have a <strong>STRING</strong> field.</span></span> <span data-ttu-id="f68c8-407">Pole v prvním záznamu obsahuje text <strong>&quot;abc&quot;</strong> a pole v druhém záznamu obsahuje text <strong>&quot;d&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-407">The field in the first record contains the text <strong>&quot;abc&quot;</strong>, and the field in the second record contains the text <strong>&quot;d&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-408">SPLIT (vstupní, oddělovač)</span><span class="sxs-lookup"><span data-stu-id="f68c8-408">SPLIT (input, delimiter)</span></span></td>
-<td><span data-ttu-id="f68c8-409">Rozdělí zadaný vstupní řetězec na dílčí řetězce, na základě určeného oddělovače.</span><span class="sxs-lookup"><span data-stu-id="f68c8-409">Split the specified input string into substrings, based on the specified delimiter.</span></span></td>
-<td><span data-ttu-id="f68c8-410"><strong>SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> vrátí nový seznam obsahující tři záznamy, které mají pole <strong>STRING</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-410"><strong>SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> returns a new list that consists of three records that have a <strong>STRING</strong> field.</span></span> <span data-ttu-id="f68c8-411">Pole v prvním záznamu obsahuje text <strong>&quot;X&quot;</strong>, pole v druhém záznamu obsahuje text &quot;&nbsp;&quot;, a pole v třetím záznamu obsahuje text <strong>&quot;y&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-411">The field in the first record contains the text <strong>&quot;X&quot;</strong>, the field in the second record contains the text &quot;&nbsp;&quot;, and the field in the third record contains the text <strong>&quot;y&quot;</strong>.</span></span> <span data-ttu-id="f68c8-412">Je-li oddělovač prázdný, vrátí se nový seznam, který se skládá z jednoho záznamu, který má pole <strong>STRING</strong> obsahující vstupní text.</span><span class="sxs-lookup"><span data-stu-id="f68c8-412">If the delimiter is empty, a new list is returned that consists of one record that has a <strong>STRING</strong> field that contains the input text.</span></span> <span data-ttu-id="f68c8-413">Pokud je vstup prázdný, vrátí se nový prázdný seznam.</span><span class="sxs-lookup"><span data-stu-id="f68c8-413">If the input is empty, a new empty list is returned.</span></span>
-<span data-ttu-id="f68c8-414">Pokud je buď vstup nebo oddělovač neurčený (null), bude vyvolána výjimka aplikace.</span><span class="sxs-lookup"><span data-stu-id="f68c8-414">If either the input or the delimiter is unspecified (null), an application exception is thrown.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-415">SPLITLIST (seznam, počet)</span><span class="sxs-lookup"><span data-stu-id="f68c8-415">SPLITLIST (list, number)</span></span></td>
-<td><span data-ttu-id="f68c8-416">Rozdělí zadaný seznam na dávky, přičemž každá z nich obsahuje zadaný počet záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-416">Split the specified list into batches, each of which contains the specified number of records.</span></span> <span data-ttu-id="f68c8-417">Vrátí výsledek jako nový seznam dávek, který obsahuje následující prvky:</span><span class="sxs-lookup"><span data-stu-id="f68c8-417">Return the result as a new list of batches that contains the following elements:</span></span>
-<ul>
-<li><span data-ttu-id="f68c8-418">Dávky jako běžné seznamy (součást <strong>Value</strong>)</span><span class="sxs-lookup"><span data-stu-id="f68c8-418">Batches as regular lists (<strong>Value</strong> component)</span></span></li>
-<li><span data-ttu-id="f68c8-419">Číslo aktuální dávky (součást <strong>BatchNumber</strong>)</span><span class="sxs-lookup"><span data-stu-id="f68c8-419">The current batch number (<strong>BatchNumber</strong> component)</span></span></li>
-</ul>
-</td>
-<td><span data-ttu-id="f68c8-420">V následujícím příkladu je datový zdroj <strong>Řádky</strong> vytvořen jako seznam záznamů ze tři záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-420">In the following illustration, a <strong>Lines</strong> data source is created as a record list of three records.</span></span> <span data-ttu-id="f68c8-421">Tento seznam je rozdělen do dávek, z nichž každá obsahuje až dva záznamy.</span><span class="sxs-lookup"><span data-stu-id="f68c8-421">This list is divided into batches, each of which contains up to two records.</span></span>
-<p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
-<p><span data-ttu-id="f68c8-422">Následující obrázek znázorňuje navržené rozvržení formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-422">The following illustration shows the designed format layout.</span></span> <span data-ttu-id="f68c8-423">V tomto rozvržení formátu jsou vytvořeny vazby na datový zdroj <strong>Řádky</strong> za účelem vygenerování výstupu ve formátu XML.</span><span class="sxs-lookup"><span data-stu-id="f68c8-423">In this format layout, bindings to the <strong>Lines</strong> data source are created to generate output in XML format.</span></span> <span data-ttu-id="f68c8-424">Tento výstup představuje jednotlivé uzly pro každou dávku a záznamy v ní.</span><span class="sxs-lookup"><span data-stu-id="f68c8-424">This output presents individual nodes for each batch and the records in it.</span></span></p>
-<p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
-<p><span data-ttu-id="f68c8-425">Následující obrázek znázorňuje výsledek při spuštění navrženého formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-425">The following illustration shows the result when the designed format is run.</span></span></p>
-<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-426">LIST (záznam 1 [, záznam 2, …])</span><span class="sxs-lookup"><span data-stu-id="f68c8-426">LIST (record 1 [, record 2, …])</span></span></td>
-<td><span data-ttu-id="f68c8-427">Vrátí nový seznam, který je vytvořený na základě zadaných argumentů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-427">Return a new list that is created from the specified arguments.</span></span></td>
-<td><span data-ttu-id="f68c8-428"><strong>LIST (model.MainData, model.OtherData)</strong> vrátí prázdný záznam, kde seznam polí obsahuje všechna pole seznamů záznamů <strong>MainData</strong> a <strong>OtherData</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-428"><strong>LIST (model.MainData, model.OtherData)</strong> returns an empty record, where the list of fields contains all fields of the <strong>MainData</strong> and <strong>OtherData</strong> record lists.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-429">LISTJOIN (seznam 1, seznam 2, …)</span><span class="sxs-lookup"><span data-stu-id="f68c8-429">LISTJOIN (list 1, list 2, …)</span></span></td>
-<td><span data-ttu-id="f68c8-430">Vrátí spojený seznam, který je vytvořený ze seznamů zadaných argumentů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-430">Return a joined list that is created from lists of specified arguments.</span></span></td>
-<td><span data-ttu-id="f68c8-431"><strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> vrátí seznam šesti záznamů, kde jedno pole datového typu <strong>STRING</strong> obsahuje jednotlivá písmena.</span><span class="sxs-lookup"><span data-stu-id="f68c8-431"><strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> returns a list of six records, where one field of the <strong>STRING</strong> data type contains single letters.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-432">ISEMPTY (seznam)</span><span class="sxs-lookup"><span data-stu-id="f68c8-432">ISEMPTY (list)</span></span></td>
-<td><span data-ttu-id="f68c8-433">Vrátí hodnotu <strong>TRUE</strong>, pokud zadaný seznam neobsahuje žádné prvky.</span><span class="sxs-lookup"><span data-stu-id="f68c8-433">Return <strong>TRUE</strong> if the specified list contains no elements.</span></span> <span data-ttu-id="f68c8-434">V opačném případě vrátí hodnotu <strong>FALSE</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-434">Otherwise, return <strong>FALSE</strong>.</span></span></td>
-<td></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-435">EMPTYLIST (seznam)</span><span class="sxs-lookup"><span data-stu-id="f68c8-435">EMPTYLIST (list)</span></span></td>
-<td><span data-ttu-id="f68c8-436">Vrátí prázdný seznam pomocí zadaného seznamu jako zdroje pro strukturu seznamu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-436">Return an empty list by using the specified list as a source for the list structure.</span></span></td>
-<td><span data-ttu-id="f68c8-437"><strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> vrátí nový prázdný seznam, který má stejnou strukturu jako seznam vrácený funkcí <strong>SPLIT</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-437"><strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> returns a new empty list that has the same structure as the list that is returned by the <strong>SPLIT</strong> function.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-438">FIRST (seznam)</span><span class="sxs-lookup"><span data-stu-id="f68c8-438">FIRST (list)</span></span></td>
-<td><span data-ttu-id="f68c8-439">Vrátí první záznam zadaného seznamu, pokud tento záznam není prázdný.</span><span class="sxs-lookup"><span data-stu-id="f68c8-439">Return the first record of the specified list, if that record isn't empty.</span></span> <span data-ttu-id="f68c8-440">V opačném bude vyvolána výjimka.</span><span class="sxs-lookup"><span data-stu-id="f68c8-440">Otherwise, throw an exception.</span></span></td>
-<td></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-441">FIRSTORNULL (seznam)</span><span class="sxs-lookup"><span data-stu-id="f68c8-441">FIRSTORNULL (list)</span></span></td>
-<td><span data-ttu-id="f68c8-442">Vrátí první záznam zadaného seznamu, pokud tento záznam není prázdný.</span><span class="sxs-lookup"><span data-stu-id="f68c8-442">Return the first record of the specified list, if that record isn't empty.</span></span> <span data-ttu-id="f68c8-443">V opačném vrátí záznam <strong>null</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-443">Otherwise, return a <strong>null</strong> record.</span></span></td>
-<td></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-444">LISTOFFIRSTITEM (seznam)</span><span class="sxs-lookup"><span data-stu-id="f68c8-444">LISTOFFIRSTITEM (list)</span></span></td>
-<td><span data-ttu-id="f68c8-445">Vrátí seznam obsahující pouze první položku zadaného seznamu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-445">Return a list that contains only the first item of the specified list.</span></span></td>
-<td></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-446">ALLITEMS (cesta)</span><span class="sxs-lookup"><span data-stu-id="f68c8-446">ALLITEMS (path)</span></span></td>
-<td><span data-ttu-id="f68c8-447">Tato funkce je spuštěná jako výběr v paměti.</span><span class="sxs-lookup"><span data-stu-id="f68c8-447">This function runs as an in-memory selection.</span></span> <span data-ttu-id="f68c8-448">Vrátí nový plochý seznam, který obsahuje všechny položky odpovídající zadané cestě.</span><span class="sxs-lookup"><span data-stu-id="f68c8-448">It returns a new flattened list that represents all items that match the specified path.</span></span> <span data-ttu-id="f68c8-449">Cesta musí být definována jako platná cesta zdroje dat k prvku zdroje dat typu dat seznamu záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-449">The path must be defined as a valid data source path of a data source element of a record list data type.</span></span> <span data-ttu-id="f68c8-450">Datové prvky, jako je cesta k řetězci, datum atd. by měly zobrazit chybu v době návrhu v tvůrci výrazů elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-450">Data elements such as the path string and date should raise an error in the ER expression builder at design time.</span></span></td>
-<td><span data-ttu-id="f68c8-451">Zadáte-li <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> jako zdroj dat (DS), <strong>COUNT( ALLITEMS (DS.Value))</strong> vrátí <strong>3</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-451">If you enter <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> as a data source (DS), <strong>COUNT( ALLITEMS (DS.Value))</strong> returns <strong>3</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-452">ALLITEMSQUERY (cesta)</span><span class="sxs-lookup"><span data-stu-id="f68c8-452">ALLITEMSQUERY (path)</span></span></td>
-<td><span data-ttu-id="f68c8-453">Tato funkce je spuštěna jako připojený dotaz SQL.</span><span class="sxs-lookup"><span data-stu-id="f68c8-453">This function runs as a joined SQL query.</span></span> <span data-ttu-id="f68c8-454">Vrátí nový plochý seznam, který obsahuje všechny položky odpovídající zadané cestě.</span><span class="sxs-lookup"><span data-stu-id="f68c8-454">It returns a new flattened list that represents all items that match the specified path.</span></span> <span data-ttu-id="f68c8-455">Zadaná cesta musí být definována jako platná cesta zdroje dat k prvku zdroje dat typu dat seznamu záznamů a musí obsahovat nejméně jeden vztah.</span><span class="sxs-lookup"><span data-stu-id="f68c8-455">The specified path must be defined as a valid data source path of a data source element of a record list data type, and it must contain at least one relation.</span></span> <span data-ttu-id="f68c8-456">Datové prvky, jako je cesta k řetězci, datum atd. by měly zobrazit chybu v době návrhu v tvůrci výrazů elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-456">Data elements such as the path string and date should raise an error in the ER expression builder at design time.</span></span></td>
-<td><span data-ttu-id="f68c8-457">Definujte v mapování modelu následující zdroje dat:</span><span class="sxs-lookup"><span data-stu-id="f68c8-457">Define the following data sources in your model mapping:</span></span>
-<ul>
-<li><span data-ttu-id="f68c8-458"><strong>CustInv</strong> (typ <strong>Záznamy tabulky</strong>), která odkazuje na tabulku CustInvoiceTable</span><span class="sxs-lookup"><span data-stu-id="f68c8-458"><strong>CustInv</strong> (<strong>Table records</strong> type), which refers to the CustInvoiceTable table</span></span></li> 
-<li><span data-ttu-id="f68c8-459"><strong>FilteredInv</strong> (typ <strong>vypočítané pole</strong>), který obsahuje výraz <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong></span><span class="sxs-lookup"><span data-stu-id="f68c8-459"><strong>FilteredInv</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong></span></span></li>
-<li><span data-ttu-id="f68c8-460"><strong>JourLines</strong> (typ <strong>Vypočítané pole</strong>), which contains the expression <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong></span><span class="sxs-lookup"><span data-stu-id="f68c8-460"><strong>JourLines</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong></span></span></li>
-</ul>
-<p><span data-ttu-id="f68c8-461">Při spuštění mapování modelu k volání zdroje dat <strong>JourLines</strong> se spustí příkaz SQL:</span><span class="sxs-lookup"><span data-stu-id="f68c8-461">When you run your model mapping to call the <strong>JourLines</strong> data source, the following SQL statement is run:</span></span></p>
-<span data-ttu-id="f68c8-462">SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...</span><span class="sxs-lookup"><span data-stu-id="f68c8-462">SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...</span></span>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-463">ORDERBY (seznam [, výraz 1, výraz 2…])</span><span class="sxs-lookup"><span data-stu-id="f68c8-463">ORDERBY (list [, expression 1, expression 2, …])</span></span></td>
-<td><span data-ttu-id="f68c8-464">Vrátí zadaný seznam po seřazení podle zadaných argumentů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-464">Return the specified list after it has been sorted according to the specified arguments.</span></span> <span data-ttu-id="f68c8-465">Tyto argumenty lze definovat jako výrazy.</span><span class="sxs-lookup"><span data-stu-id="f68c8-465">These arguments can be defined as expressions.</span></span></td>
-<td><span data-ttu-id="f68c8-466">Jestliže je položka <strong>Vendor</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> vrátí seznamu dodavatelů seřazených podle názvu ve vzestupném pořadí.</span><span class="sxs-lookup"><span data-stu-id="f68c8-466">If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> returns a list of vendors that is sorted by name in ascending order.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-467">REVERSE (seznam)</span><span class="sxs-lookup"><span data-stu-id="f68c8-467">REVERSE (list)</span></span></td>
-<td><span data-ttu-id="f68c8-468">Vrátí zadaný seznam v obráceném pořadí.</span><span class="sxs-lookup"><span data-stu-id="f68c8-468">Return the specified list in reversed sort order.</span></span></td>
-<td><span data-ttu-id="f68c8-469">Jestliže je položka <strong>Vendor</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> vrátí seznamu dodavatelů seřazených podle názvu v sestupném pořadí.</span><span class="sxs-lookup"><span data-stu-id="f68c8-469">If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> returns a list of vendors that is sorted by name in descending order.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-470">WHERE (seznam, podmínka)</span><span class="sxs-lookup"><span data-stu-id="f68c8-470">WHERE (list, condition)</span></span></td>
-<td><span data-ttu-id="f68c8-471">Vrátí zadaný seznam po vyfiltrování podle zadané podmínky.</span><span class="sxs-lookup"><span data-stu-id="f68c8-471">Return the specified list after it has been filtered according to the specified condition.</span></span> <span data-ttu-id="f68c8-472">Zadaná podmínka se použije na seznam v paměti.</span><span class="sxs-lookup"><span data-stu-id="f68c8-472">The specified condition is applied to the list in memory.</span></span> <span data-ttu-id="f68c8-473">Tímto způsobem se funkce <strong>WHERE</strong> liší od funkce <strong>FILTER</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-473">In this way, the <strong>WHERE</strong> function differs from the <strong>FILTER</strong> function.</span></span></td>
-<td><span data-ttu-id="f68c8-474">Jestliže je položka <strong>Dodavatel</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> vrátí pouze seznam dodavatelů patřících do skupiny dodavatelů č. 40.</span><span class="sxs-lookup"><span data-stu-id="f68c8-474">If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-475">ENUMERATE (seznam)</span><span class="sxs-lookup"><span data-stu-id="f68c8-475">ENUMERATE (list)</span></span></td>
-<td><span data-ttu-id="f68c8-476">Vrátí nový seznam, který se skládá z výčtových záznamů zadaného seznamu a poskytne následující prvky:</span><span class="sxs-lookup"><span data-stu-id="f68c8-476">Return a new list that consists of enumerated records of the specified list, and that exposes the following elements:</span></span>
-<ul>
-<li><span data-ttu-id="f68c8-477">Zadané záznamy seznamu jako běžné seznamy (součást <strong>hodnota</strong>)</span><span class="sxs-lookup"><span data-stu-id="f68c8-477">Specified list records as regular lists (<strong>Value</strong> component)</span></span></li>
-<li><span data-ttu-id="f68c8-478">Aktuální index záznamů (součást <strong>číslo</strong>)</span><span class="sxs-lookup"><span data-stu-id="f68c8-478">The current record index (<strong>Number</strong> component)</span></span></li>
-</ul>
-</td>
-<td><span data-ttu-id="f68c8-479">Na následujícím obrázku je zdroj dat <strong>Enumerated</strong> vytvořen jako výčtový seznam záznamů dodavatelů ze zdroje dat <strong>Vendors</strong>, který odkazuje na tabulku VendTable.</span><span class="sxs-lookup"><span data-stu-id="f68c8-479">In the following illustration, an <strong>Enumerated</strong> data source is created as an enumerated list of vendor records from the <strong>Vendors</strong> data source that refers to the VendTable table.</span></span>
-<p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
-<p><span data-ttu-id="f68c8-480">Následující obrázek znázorňuje formát.</span><span class="sxs-lookup"><span data-stu-id="f68c8-480">The following illustration shows the format.</span></span> <span data-ttu-id="f68c8-481">V tomto formátu jsou vytvořeny vazby za účelem vygenerování výstupu ve formátu XML.</span><span class="sxs-lookup"><span data-stu-id="f68c8-481">In this format, data bindings are created to generate output in XML format.</span></span> <span data-ttu-id="f68c8-482">Tento výstup představuje jednotlivé dodavatel jako výčtové uzly.</span><span class="sxs-lookup"><span data-stu-id="f68c8-482">This output presents individual vendors as enumerated nodes.</span></span></p>
-<p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
-<p><span data-ttu-id="f68c8-483">Následující obrázek znázorňuje výsledek při spuštění navrženého formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-483">The following illustration shows the result when the designed format is run.</span></span></p>
-<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-484">COUNT (seznam)</span><span class="sxs-lookup"><span data-stu-id="f68c8-484">COUNT (list)</span></span></td>
-<td><span data-ttu-id="f68c8-485">Vrátí počet záznamů v zadaném seznamu, pokud tento seznam není prázdný.</span><span class="sxs-lookup"><span data-stu-id="f68c8-485">Return the number of records in the specified list, if the list isn't empty.</span></span> <span data-ttu-id="f68c8-486">V opačném případě vrátí hodnotu <strong>0</strong> (nula).</span><span class="sxs-lookup"><span data-stu-id="f68c8-486">Otherwise, return <strong>0</strong> (zero).</span></span></td>
-<td><span data-ttu-id="f68c8-487"><strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> vrátí <strong>2</strong>, protože funkce <strong>SPLIT</strong> vytvoří seznam, který se skládá ze dvou záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-487"><strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> returns <strong>2</strong>, because the <strong>SPLIT</strong> function creates a list that consists of two records.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-488">LISTOFFIELDS (cesta)</span><span class="sxs-lookup"><span data-stu-id="f68c8-488">LISTOFFIELDS (path)</span></span></td>
-<td><span data-ttu-id="f68c8-489">Vrátí seznam záznamů vytvořený z argumentu jednoho z následujících typů:</span><span class="sxs-lookup"><span data-stu-id="f68c8-489">Return a record list that is created from an argument of one of the following types:</span></span>
-<ul>
-<li><span data-ttu-id="f68c8-490">Výčet modelu</span><span class="sxs-lookup"><span data-stu-id="f68c8-490">Model enumeration</span></span></li>
-<li><span data-ttu-id="f68c8-491">Výčet formátu</span><span class="sxs-lookup"><span data-stu-id="f68c8-491">Format enumeration</span></span></li>
-<li><span data-ttu-id="f68c8-492">Kontejner</span><span class="sxs-lookup"><span data-stu-id="f68c8-492">Container</span></span></li>
-</ul>
-<p><span data-ttu-id="f68c8-493">Vytvořený seznam obsahuje záznamy, které mají následující pole:</span><span class="sxs-lookup"><span data-stu-id="f68c8-493">The list that is created consists of records that have the following fields:</span></span></p>
-<ul>
-<li><span data-ttu-id="f68c8-494">Jméno</span><span class="sxs-lookup"><span data-stu-id="f68c8-494">Name</span></span></li>
-<li><span data-ttu-id="f68c8-495">Štítek</span><span class="sxs-lookup"><span data-stu-id="f68c8-495">Label</span></span></li>
-<li><span data-ttu-id="f68c8-496">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-496">Description</span></span></li>
-</ul>
-<span data-ttu-id="f68c8-497">Při běhu vrátí pole <strong>Popisek</strong> a <strong>Popis</strong> hodnoty založené na jazykovém nastavení formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-497">At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format's language settings.</span></span>
-</td>
-<td><span data-ttu-id="f68c8-498">Na následujícím obrázku je výčet uveden v datovém modelu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-498">In the following illustration, an enumeration is introduced in a data model.</span></span>
-<p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
-<p><span data-ttu-id="f68c8-499">Následující obrázek znázorňuje tyto podrobnosti:</span><span class="sxs-lookup"><span data-stu-id="f68c8-499">The following illustration shows these details:</span></span></p>
-<ul>
-<li><span data-ttu-id="f68c8-500">Výčet modelů je vložen do sestavy jako zdroj dat.</span><span class="sxs-lookup"><span data-stu-id="f68c8-500">The model enumeration is inserted into a report as a data source.</span></span></li>
-<li><span data-ttu-id="f68c8-501">Výraz elektronického výkaznictví používá výčet modelů jako parametr funkce <strong>LISTOFFIELDS</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-501">An ER expression uses the model enumeration as a parameter of the <strong>LISTOFFIELDS</strong> function.</span></span></li>
-<li><span data-ttu-id="f68c8-502">Zdroj dat typu seznamu záznamů je vložen do sestavy pomocí vytvořeného výrazu elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-502">A data source of the record list type is inserted into a report by using the ER expression that is created.</span></span></li>
-</ul>
-<p><a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="Format" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a></p>
-<p><span data-ttu-id="f68c8-503">Následující příklad uvádí prvky formátu ER, které jsou vázané na zdroj dat typu seznamu záznamů, který byl vytvořen pomocí funkce <strong>LISTOFFIELDS</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-503">The following example shows the ER format elements that are bound to the data source of the record list type that was created by using the <strong>LISTOFFIELDS</strong> function.</span></span></p>
-<p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
-<p><span data-ttu-id="f68c8-504">Následující obrázek znázorňuje výsledek při spuštění navrženého formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-504">The following illustration shows the result when the designed format is run.</span></span></p>
-<p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE] <span data-ttu-id="f68c8-505">Přeložený text popisků a popisů je zadáván do výstupu formátu elektronického výkaznictví na základě nastavení jazyka nadřazených prvků formátu FILE a FOLDER.</span><span class="sxs-lookup"><span data-stu-id="f68c8-505">Based on the language settings of the parent FILE and FOLDER format elements, translated text for labels and descriptions is entered in the output of the ER format.</span></span></blockquote>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-506">LISTOFFIELDS (cesta, jazyk)</span><span class="sxs-lookup"><span data-stu-id="f68c8-506">LISTOFFIELDS (path, language)</span></span></td>
-<td><span data-ttu-id="f68c8-507">Vrátí seznam záznamů vytvořený z argumentu, jako například výčet modelů, výčet formátů nebo kontejner.</span><span class="sxs-lookup"><span data-stu-id="f68c8-507">Return a record list that is created from an argument, such as a model enumeration, a format enumeration, or a container.</span></span> <span data-ttu-id="f68c8-508">Vytvořený seznam obsahuje záznamy, které mají následující pole:</span><span class="sxs-lookup"><span data-stu-id="f68c8-508">The list that is created consists of records that have the following fields:</span></span>
-<ul>
-<li><span data-ttu-id="f68c8-509">Jméno</span><span class="sxs-lookup"><span data-stu-id="f68c8-509">Name</span></span></li>
-<li><span data-ttu-id="f68c8-510">Štítek</span><span class="sxs-lookup"><span data-stu-id="f68c8-510">Label</span></span></li>
-<li><span data-ttu-id="f68c8-511">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-511">Description</span></span></li>
-<li><span data-ttu-id="f68c8-512">Je přeloženo</span><span class="sxs-lookup"><span data-stu-id="f68c8-512">Is translated</span></span></li>
-</ul>
-<span data-ttu-id="f68c8-513">Při běhu vrátí pole <strong>Popisek</strong> a <strong>Popis</strong> hodnoty založené na jazykovém nastavení formátu a zadaném jazyku.</span><span class="sxs-lookup"><span data-stu-id="f68c8-513">At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format's language settings and the specified language.</span></span> <span data-ttu-id="f68c8-514">Pole <strong>Je přeloženo</strong> označuje, že pole <strong>Popisek</strong> je přeloženo do určeného jazyka.</span><span class="sxs-lookup"><span data-stu-id="f68c8-514">The <strong>Is translated</strong> field indicates that the <strong>Label</strong> field has been translated into the specified language.</span></span>
-</td>
-<td><span data-ttu-id="f68c8-515">Například použijete typ datového zdroje <strong>Vypočítané pole</strong> ke konfiguraci datových zdrojů <strong>enumType_de</strong> a <strong>enumType_deCH</strong> pro výčet datových modelů <strong>enumType</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-515">For example, you use the <strong>Calculated field</strong> data source type to configure the <strong>enumType_de</strong> and <strong>enumType_deCH</strong> data sources for the <strong>enumType</strong> data model enumeration.</span></span>
-<ul>
-<li><span data-ttu-id="f68c8-516">enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</span><span class="sxs-lookup"><span data-stu-id="f68c8-516">enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</span></span></li>
-<li><span data-ttu-id="f68c8-517">enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</span><span class="sxs-lookup"><span data-stu-id="f68c8-517">enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</span></span></li>
-</ul>
-<p><span data-ttu-id="f68c8-518">V takovém případě můžete použít následující výraz k získání popisku hodnoty výčtu ve švýcarské němčině, pokud je tento překlad k dispozici.</span><span class="sxs-lookup"><span data-stu-id="f68c8-518">In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if this translation is available.</span></span> <span data-ttu-id="f68c8-519">Není-li k dispozici překlad do švýcarské němčiny, je popisek v němčině.</span><span class="sxs-lookup"><span data-stu-id="f68c8-519">If the Swiss German translation isn't available, the label is in German.</span></span></p>
-<span data-ttu-id="f68c8-520">IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</span><span class="sxs-lookup"><span data-stu-id="f68c8-520">IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</span></span>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-521">STRINGJOIN (seznam, název pole, oddělovač)</span><span class="sxs-lookup"><span data-stu-id="f68c8-521">STRINGJOIN (list, field name, delimiter)</span></span></td>
-<td><span data-ttu-id="f68c8-522">Vrátí řetězec, který se skládá ze zřetězených hodnot zadaného pole ze zadaného seznamu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-522">Return a string that consists of concatenated values of the specified field from the specified list.</span></span> <span data-ttu-id="f68c8-523">Hodnoty jsou odděleny určeným oddělovačem.</span><span class="sxs-lookup"><span data-stu-id="f68c8-523">The values are separated by the specified delimiter.</span></span></td>
-<td><span data-ttu-id="f68c8-524">Pokud jako zdroj dat (DS) zadáte <strong>SPLIT(&quot;abc&quot; , 1)</strong>, <strong>STRINGJOIN (DS, DS.Value, &quot;-&quot;)</strong> vrátí <strong>&quot;a-b-c&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-524">If you enter <strong>SPLIT(&quot;abc&quot; , 1)</strong> as a data source (DS), <strong>STRINGJOIN (DS, DS.Value, &quot;-&quot;)</strong> returns <strong>&quot;a-b-c&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-525">SPLITLISTBYLIMIT (seznamu, hodnota limitu, zdroj limitu)</span><span class="sxs-lookup"><span data-stu-id="f68c8-525">SPLITLISTBYLIMIT (list, limit value, limit source)</span></span></td>
-<td><span data-ttu-id="f68c8-526">Rozdělí zadaný seznam na nový seznam podřízených seznamů a vrátí výsledek v obsahu seznamu záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-526">Split the specified list into a new list of sub-lists, and return the result in record list content.</span></span> <span data-ttu-id="f68c8-527">Parametr <strong>hodnota limitu</strong> určuje hodnotu limitu k rozdělení původního seznamu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-527">The <strong>limit value</strong> parameter defines the value of the limit for splitting the original list.</span></span> <span data-ttu-id="f68c8-528">Parametr <strong>zdroj limitu</strong> určuje krok, o který se celkový součet zvýší.</span><span class="sxs-lookup"><span data-stu-id="f68c8-528">The <strong>limit source</strong> parameter defines the step that the total sum is increased on.</span></span> <span data-ttu-id="f68c8-529">Limit nebude použito na jednu položku z původního seznamu, když zdrojový limit překročí definovaný limit.</span><span class="sxs-lookup"><span data-stu-id="f68c8-529">The limit isn't applied to a single item of the original list if the limit source exceeds the defined limit.</span></span></td>
-<td><span data-ttu-id="f68c8-530">Následující obrázek znázorňuje formát.</span><span class="sxs-lookup"><span data-stu-id="f68c8-530">The following illustration shows a format.</span></span> 
-<p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
-<p><span data-ttu-id="f68c8-531">Následující obrázek zobrazuje formát a zdroje dat, které se pro něj používají.</span><span class="sxs-lookup"><span data-stu-id="f68c8-531">The following illustration shows the data sources that are used for the format.</span></span></p>
-<p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
-<p><span data-ttu-id="f68c8-532">Následující obrázek znázorňuje výsledek při spuštění formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-532">The following illustration shows the result when the format is run.</span></span> <span data-ttu-id="f68c8-533">V takovém případě je výstup prostý seznam položek komodit.</span><span class="sxs-lookup"><span data-stu-id="f68c8-533">In this case, the output is a flat list of commodity items.</span></span></p>
-<p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
-<p><span data-ttu-id="f68c8-534">Následující obrázek uvádí stejný formát, který byl upraven tak, aby obsahoval seznam položek komodit v dávkách, kdy musí jedna dávka zahrnovat komodity a celková hmotnost nesmí překračovat limit 9.</span><span class="sxs-lookup"><span data-stu-id="f68c8-534">In the following illustrations, the same format has been adjusted so that it presents the list of commodity items in batches when a single batch must include commodities and the total weight should not exceed the limit of 9.</span></span></p>
-<p><a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="Adjusted format" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a></p>
-<p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
-<p><span data-ttu-id="f68c8-535">Následující obrázek znázorňuje výsledek při spuštění upraveného formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-535">The following illustration shows the result when the adjusted format is run.</span></span></p>
-<p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE] <span data-ttu-id="f68c8-536">Limit není použit na poslední položku v původním seznamu, protože hodnota (11) zdroje limitu (hmotnost) překračuje definovaný limit (9).</span><span class="sxs-lookup"><span data-stu-id="f68c8-536">The limit isn't applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9).</span></span> <span data-ttu-id="f68c8-537">Použijte funkci <strong>WHERE</strong> nebo výraz <strong>Enabled</strong> odpovídajícího prvku formátu k ignorování (přeskočení) dílčích seznamů během generování sestavy podle potřeby.</span><span class="sxs-lookup"><span data-stu-id="f68c8-537">Use either the <strong>WHERE</strong> function or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.</span></span></blockquote>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-538">FILTER (seznam, podmínka)</span><span class="sxs-lookup"><span data-stu-id="f68c8-538">FILTER (list, condition)</span></span></td>
-<td><span data-ttu-id="f68c8-539">Vrátí zadaný seznam po úpravě dotazu k filtrování podle zadané podmínky.</span><span class="sxs-lookup"><span data-stu-id="f68c8-539">Return the specified list after the query has been modified to filter for the specified condition.</span></span> <span data-ttu-id="f68c8-540">Tato funkce se liší od funkce <strong>WHERE</strong>, protože zadaná podmínka je použita u jakéhokoli zdroje dat elektronického výkaznictví typu <strong>Záznamy tabulky</strong> na úrovni databáze.</span><span class="sxs-lookup"><span data-stu-id="f68c8-540">This function differs from the <strong>WHERE</strong> function, because the specified condition is applied to any ER data source of the <strong>Table records</strong> type at the database level.</span></span> <span data-ttu-id="f68c8-541">Seznam a podmínku lze definovat pomocí tabulek a relací.</span><span class="sxs-lookup"><span data-stu-id="f68c8-541">The list and condition can be defined by using tables and relations.</span></span></td>
-<td><span data-ttu-id="f68c8-542">Jestliže je položka <strong>Dodavatel</strong> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> vrátí pouze seznam dodavatelů patřících do skupiny dodavatelů č. 40.</span><span class="sxs-lookup"><span data-stu-id="f68c8-542">If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40.</span></span> <span data-ttu-id="f68c8-543">Pokud je <strong>Vendor</strong> nakonfigurován jako zdroj dat elektronického výkaznictví, který se vztahuje k tabulce VendTable a pokud je <strong>parmVendorBankGroup</strong> nakonfigurovaný jako zdroj dat elektronického výkaznictví, který vrací hodnotu v datovém typu <strong>String</strong>, pak příkaz <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> vrací seznam pouze těch dodavatelských účtů, které patří ke konkrétní bankovní skupině.</span><span class="sxs-lookup"><span data-stu-id="f68c8-543">If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, and if <strong>parmVendorBankGroup</strong> is configured as an ER data source that returns a value of the <strong>String</strong> data type, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-544">INDEX (seznam, index)</span><span class="sxs-lookup"><span data-stu-id="f68c8-544">INDEX (list, index)</span></span></td>
-<td><span data-ttu-id="f68c8-545">Tato funkce vrací záznam, který je vybrán určitým číselným indexem v seznamu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-545">This function returns a record that is selected by a specific numeric index in the list.</span></span> <span data-ttu-id="f68c8-546">Výjimka je vyvolána v případě, že index je mimo rozsah záznamů v seznamu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-546">An exception is thrown if the index is out of range of the records in the list.</span></span></td>
-<td><span data-ttu-id="f68c8-547">Pokud zadáte zdroj dat <strong>DS</strong> pro typ <strong>vypočítaného pole</strong> a to obsahuje výraz <strong>SPLIT ("A|B|C", “|”), 2)</strong>, výraz <strong>DS.Value</strong> vrátí textovou hodnotu "B".</span><span class="sxs-lookup"><span data-stu-id="f68c8-547">If you enter the data source <strong>DS</strong> for the <strong>Calculated field</strong> type and it contains the expression <strong>SPLIT ("A|B|C", “|”), 2)</strong>, the expression <strong>DS.Value</strong> returns the text value, “B”.</span></span> <span data-ttu-id="f68c8-548">Výraz <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> vrátí též textovou hodnotu “B”.</span><span class="sxs-lookup"><span data-stu-id="f68c8-548">The expression <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> also returns the “B” text value.</span></span></td>
-</tr>
-</tbody>
-</table>
-
-### <a name="logical-functions"></a><span data-ttu-id="f68c8-549">Logické funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-549">Logical functions</span></span>
-
-| <span data-ttu-id="f68c8-550">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-550">Function</span></span> | <span data-ttu-id="f68c8-551">Popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-551">Description</span></span> | <span data-ttu-id="f68c8-552">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-552">Example</span></span> |
-|----------|-------------|---------|
-| <span data-ttu-id="f68c8-553">CASE (výraz, možnost 1, výsledek 1 \[, možnost 2, výsledek\] …</span><span class="sxs-lookup"><span data-stu-id="f68c8-553">CASE (expression, option 1, result 1 \[, option 2, result 2\] …</span></span> <span data-ttu-id="f68c8-554">\[, výchozí výsledek\])</span><span class="sxs-lookup"><span data-stu-id="f68c8-554">\[, default result\])</span></span> | <span data-ttu-id="f68c8-555">Vyhodnotí zadanou hodnotu výrazu s ohledem na zadané alternativní možnosti.</span><span class="sxs-lookup"><span data-stu-id="f68c8-555">Evaluate the specified expression value against the specified alternative options.</span></span> <span data-ttu-id="f68c8-556">Vrací výsledek možnosti, která je rovna hodnotě výrazu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-556">Return the result of the option that equals the value of the expression.</span></span> <span data-ttu-id="f68c8-557">V opačném případě vrací volitelný výchozí výsledek, pokud je zadán výchozí výsledek.</span><span class="sxs-lookup"><span data-stu-id="f68c8-557">Otherwise, return the optional default result, if a default result is specified.</span></span> <span data-ttu-id="f68c8-558">(Výchozí výsledek je poslední parametr, který nepředchází žádná možnost).</span><span class="sxs-lookup"><span data-stu-id="f68c8-558">(The default result is the last parameter that isn't preceded by an option.)</span></span> | <span data-ttu-id="f68c8-559">**CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** vrátí řetězec **"WINTER"**, jestliže je aktuální datum relace aplikace Finance and Operations mezi říjnem a prosincem.</span><span class="sxs-lookup"><span data-stu-id="f68c8-559">**CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** returns the string **"WINTER"** when the current Finance and Operations session date is between October and December.</span></span> <span data-ttu-id="f68c8-560">Jinak bude vrácen prázdný řetězec.</span><span class="sxs-lookup"><span data-stu-id="f68c8-560">Otherwise, it returns a blank string.</span></span> |
-| <span data-ttu-id="f68c8-561">IF (podmínka, hodnota 1, hodnota 2)</span><span class="sxs-lookup"><span data-stu-id="f68c8-561">IF (condition, value 1, value 2)</span></span> | <span data-ttu-id="f68c8-562">Při splnění dané podmínky bude vrácena první zadaná hodnota.</span><span class="sxs-lookup"><span data-stu-id="f68c8-562">Return the first specified value when the specified condition is met.</span></span> <span data-ttu-id="f68c8-563">V opačném případě vrací druhou zadanou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-563">Otherwise, return the second specified value.</span></span> <span data-ttu-id="f68c8-564">Pokud hodnoty 1 a 2 jsou záznamy nebo seznamy záznamů, má výsledek pouze pole, která existují v obou seznamech.</span><span class="sxs-lookup"><span data-stu-id="f68c8-564">If value 1 and value 2 are records or record lists, the result has only the fields that exist in both lists.</span></span> | <span data-ttu-id="f68c8-565">**IF (1=2, "podmínka je splněna", "podmínka není splněna")** vrátí řetězec **"podmínka není splněna"**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-565">**IF (1=2, "condition is met", "condition is not met")** returns the string **"condition is not met"**.</span></span> |
-| <span data-ttu-id="f68c8-566">NOT (podmínka)</span><span class="sxs-lookup"><span data-stu-id="f68c8-566">NOT (condition)</span></span> | <span data-ttu-id="f68c8-567">Vrátí obrácenou logickou hodnotu zadané podmínky.</span><span class="sxs-lookup"><span data-stu-id="f68c8-567">Return the reversed logical value of the specified condition.</span></span> | <span data-ttu-id="f68c8-568">**NOT (TRUE)** vrátí **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-568">**NOT (TRUE)** returns **FALSE**.</span></span> |
-| <span data-ttu-id="f68c8-569">AND (podmínka 1\[, podmínka 2, …\])</span><span class="sxs-lookup"><span data-stu-id="f68c8-569">AND (condition 1\[, condition 2, …\])</span></span> | <span data-ttu-id="f68c8-570">Vrátí **TRUE**, pokud jsou *všechny* zadané podmínky pravda.</span><span class="sxs-lookup"><span data-stu-id="f68c8-570">Return **TRUE** if *all* specified conditions are true.</span></span> <span data-ttu-id="f68c8-571">V opačném případě vrátí hodnotu **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-571">Otherwise, return **FALSE**.</span></span> | <span data-ttu-id="f68c8-572">**AND (1=1, "a"="a")** vrátí **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-572">**AND (1=1, "a"="a")** returns **TRUE**.</span></span> <span data-ttu-id="f68c8-573">**AND (1=2, "a"="a")** vrátí **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-573">**AND (1=2, "a"="a")** returns **FALSE**.</span></span> |
-| <span data-ttu-id="f68c8-574">OR (podmínka 1\[, podmínka 2, …\])</span><span class="sxs-lookup"><span data-stu-id="f68c8-574">OR (condition 1\[, condition 2, …\])</span></span> | <span data-ttu-id="f68c8-575">Vrátí **FALSE**, pokud jsou *všechny* zadané podmínky nepravda.</span><span class="sxs-lookup"><span data-stu-id="f68c8-575">Return **FALSE** if *all* specified conditions are false.</span></span> <span data-ttu-id="f68c8-576">Vrátí **TRUE**, pokud je *jakákoli* zadaná podmínka pravda.</span><span class="sxs-lookup"><span data-stu-id="f68c8-576">Return **TRUE** if *any* specified condition is true.</span></span> | <span data-ttu-id="f68c8-577">**OR (1=2, "a"="a")** vrátí **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-577">**OR (1=2, "a"="a")** returns **TRUE**.</span></span> |
-| <span data-ttu-id="f68c8-578">VALUEIN (vstup, seznam, výraz položky seznamu)</span><span class="sxs-lookup"><span data-stu-id="f68c8-578">VALUEIN (input, list, list item expression)</span></span> | <span data-ttu-id="f68c8-579">Určete, zda zadaný vstup odpovídá libovolné hodnotě položky v určeném seznamu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-579">Determine whether the specified input matches any value of an item in the specified list.</span></span> <span data-ttu-id="f68c8-580">Vrátí **TRUE**, pokud zadaný vstup odpovídá výsledku spuštění zadaného výrazu pro alespoň jeden záznam.</span><span class="sxs-lookup"><span data-stu-id="f68c8-580">Return **TRUE** if the specified input matches the result of running the specified expression for at least one record.</span></span> <span data-ttu-id="f68c8-581">V opačném případě vrátí hodnotu **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-581">Otherwise, return **FALSE**.</span></span> <span data-ttu-id="f68c8-582">Parametr **vstup** představující cestu prvku zdroje dat.</span><span class="sxs-lookup"><span data-stu-id="f68c8-582">The **input** parameter represents the path of a data source element.</span></span> <span data-ttu-id="f68c8-583">Hodnota tohoto prvku bude spárována.</span><span class="sxs-lookup"><span data-stu-id="f68c8-583">The value of this element will be matched.</span></span> <span data-ttu-id="f68c8-584">Parametr **seznam** reprezentuje cestu prvku zdroje dat typu seznamu záznamu jako seznamu záznamů, který obsahuje výraz.</span><span class="sxs-lookup"><span data-stu-id="f68c8-584">The **list** parameter represents the path of a data source element of the record list type as a list of records that contains an expression.</span></span> <span data-ttu-id="f68c8-585">Hodnota tohoto prvku se bude porovnávat se zadaným vstupem.</span><span class="sxs-lookup"><span data-stu-id="f68c8-585">The value of this element will be compared with the specified input.</span></span> <span data-ttu-id="f68c8-586">Argument **výraz položky seznamu** představuje výraz, který buď odkazuje na nebo obsahuje jedno pole určeného seznamu, který by měl být použit pro párování.</span><span class="sxs-lookup"><span data-stu-id="f68c8-586">The **list item expression** argument represents an expression that either points to or contains a single field of the specified list that should be used for the matching.</span></span> | <span data-ttu-id="f68c8-587">Příklady naleznete v části [Příklady: VALUEIN (vstup, seznam, výraz položky seznamu)](#examples-valuein-input-list-list-item-expression), která následuje.</span><span class="sxs-lookup"><span data-stu-id="f68c8-587">For examples, see the [Examples: VALUEIN (input, list, list item expression)](#examples-valuein-input-list-list-item-expression) section that follows.</span></span> |
-
-#### <a name="examples-valuein-input-list-list-item-expression"></a><span data-ttu-id="f68c8-588">Příklady: VALUEIN (vstup, seznam, výraz položky seznamu)</span><span class="sxs-lookup"><span data-stu-id="f68c8-588">Examples: VALUEIN (input, list, list item expression)</span></span>
-<span data-ttu-id="f68c8-589">Obecně platí, že funkce **VALUEIN** je převedena do sady podmínek **OR**:</span><span class="sxs-lookup"><span data-stu-id="f68c8-589">In general, the **VALUEIN** function is translated to a set of **OR** conditions:</span></span>
-
-<span data-ttu-id="f68c8-590">(vstup = list.item1.value) OR (vstup = list.item2.value) OR …</span><span class="sxs-lookup"><span data-stu-id="f68c8-590">(input = list.item1.value) OR (input = list.item2.value) OR …</span></span>
-
-##### <a name="example-1"></a><span data-ttu-id="f68c8-591">Příklad 1</span><span class="sxs-lookup"><span data-stu-id="f68c8-591">Example 1</span></span>
-<span data-ttu-id="f68c8-592">Definujete následující zdroje dat v mapování modelu: **List** (typ **Vypočítané pole**).</span><span class="sxs-lookup"><span data-stu-id="f68c8-592">You define the following data source in your model mapping: **List** (**Calculated field** type).</span></span> <span data-ttu-id="f68c8-593">Tento zdroj dat obsahuje výraz **SPLIT ("a, b c", ",")**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-593">This data source contains the expression **SPLIT ("a,b,c", ",")**.</span></span>
-
-<span data-ttu-id="f68c8-594">Pokud je volán zdroj dat, který je nakonfigurován jako výraz **VALUEIN ("B", List, List.Value)**, vrátí se hodnota **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-594">When a data source is called that is configured as the **VALUEIN ("B", List, List.Value)** expression, it returns **TRUE**.</span></span> <span data-ttu-id="f68c8-595">V tomto případě je funkce **VALUEIN** převedena do následující sady podmínek:</span><span class="sxs-lookup"><span data-stu-id="f68c8-595">In this case, the **VALUEIN** function is translated to the following set of conditions:</span></span>
-
-<span data-ttu-id="f68c8-596">**(("B" = "a") or ("B" = "b") or ("B" = "c"))**, kde **("B" = "b")** se rovná **TRUE**</span><span class="sxs-lookup"><span data-stu-id="f68c8-596">**(("B" = "a") or ("B" = "b") or ("B" = "c"))**, where **("B" = "b")** is equal to **TRUE**</span></span>
-
-<span data-ttu-id="f68c8-597">Pokud je volán zdroj dat, který je nakonfigurován jako výraz **VALUEIN ("B", LEFT(List.Value,0))**, vrátí se hodnota **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-597">When a data source is called that is configured as the **VALUEIN ("B", List, LEFT(List.Value, 0))** expression, it returns **FALSE**.</span></span> <span data-ttu-id="f68c8-598">V tomto případě je funkce **VALUEIN** převedena do následující podmínky:</span><span class="sxs-lookup"><span data-stu-id="f68c8-598">In this case, the **VALUEIN** function is translated to the following condition:</span></span>
-
-<span data-ttu-id="f68c8-599">**("B" = "")**, což se nerovná **TRUE**</span><span class="sxs-lookup"><span data-stu-id="f68c8-599">**("B" = "")**, which isn't equal to **TRUE**</span></span>
-
-<span data-ttu-id="f68c8-600">Všimněte si, že maximální počet znaků v textu takové podmínky je 32 768 znaků.</span><span class="sxs-lookup"><span data-stu-id="f68c8-600">Note that the upper limit for the number of characters in the text of such a condition is 32,768 characters.</span></span> <span data-ttu-id="f68c8-601">Proto byste neměli vytvářet zdroje dat, které mohou překročit tento limit za běhu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-601">Therefore, you should not create data sources that might exceed this limit at runtime.</span></span> <span data-ttu-id="f68c8-602">Při přesažení limitu se aplikace zastaví a bude vyvolána výjimka.</span><span class="sxs-lookup"><span data-stu-id="f68c8-602">If the limit is exceeded, the application will stop running, and an exception will be thrown.</span></span> <span data-ttu-id="f68c8-603">Například k této situaci může dojít, pokud je datový zdroj nakonfigurován jako **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)**, a seznamy **List1** a **List2** obsahují velké množství záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-603">For example, this situation can occur if the data source is configured as **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)**, and the **List1** and **List2** lists contain a large volume of records.</span></span>
-
-<span data-ttu-id="f68c8-604">V některých případech je funkce **VALUEIN** přeložena do výkazu databázi pomocí operátoru **EXISTS JOIN**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-604">In some cases, the **VALUEIN** function is translated to a database statement by using the **EXISTS JOIN** operator.</span></span> <span data-ttu-id="f68c8-605">K tomuto chování dochází, když se používá funkce **FILTER** a jsou splněny následující podmínky:</span><span class="sxs-lookup"><span data-stu-id="f68c8-605">This behavior occurs when the **FILTER** function is used and the following conditions are met:</span></span>
-
-- <span data-ttu-id="f68c8-606">Možnost **ASK FOR QUERY** je vypnuta pro datový zdroj funkce **VALUEIN**, která se odkazuje na seznam záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-606">The **ASK FOR QUERY** option is turned off for the data source of the **VALUEIN** function that refers to the list of records.</span></span> <span data-ttu-id="f68c8-607">(Žádné další podmínky nebudou použity na tento zdroj dat za běhu.)</span><span class="sxs-lookup"><span data-stu-id="f68c8-607">(No additional conditions will be applied to this data source at runtime.)</span></span>
-- <span data-ttu-id="f68c8-608">Žádné vnořené výrazy nejsou nakonfigurovány pro datový zdroj funkce **VALUEIN**, která se odkazuje na seznam záznamů.</span><span class="sxs-lookup"><span data-stu-id="f68c8-608">No nested expressions are configured for the data source of the **VALUEIN** function that refers to the list of records.</span></span>
-- <span data-ttu-id="f68c8-609">Položka seznamu funkce **VALUEIN** se vztahuje k poli (nikoliv k výrazu nebo metodě) určeného zdroje dat.</span><span class="sxs-lookup"><span data-stu-id="f68c8-609">A list item of the **VALUEIN** function refers to a field (not an expression or a method) of the specified data source.</span></span>
-
-<span data-ttu-id="f68c8-610">Zvažte použití této možnosti místo funkce **WHERE**, jak je pospáno výše v tomto příkladu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-610">Consider using this option instead of the **WHERE** function as described earlier in this example.</span></span>
-
-##### <a name="example-2"></a><span data-ttu-id="f68c8-611">Příklad 2</span><span class="sxs-lookup"><span data-stu-id="f68c8-611">Example 2</span></span>
-
-<span data-ttu-id="f68c8-612">Definujte v mapování modelu následující zdroje dat:</span><span class="sxs-lookup"><span data-stu-id="f68c8-612">You define the following data sources in your model mapping:</span></span>
-
-- <span data-ttu-id="f68c8-613">**In** (typ **Záznamy tabulky**), která odkazuje na tabulku Intrastat</span><span class="sxs-lookup"><span data-stu-id="f68c8-613">**In** (**Table records** type), which refers to the Intrastat table</span></span>
-- <span data-ttu-id="f68c8-614">**Port** (typ **Záznamy tabulky**), která odkazuje na tabulku IntrastatPort</span><span class="sxs-lookup"><span data-stu-id="f68c8-614">**Port** (**Table records** type), which refers to the IntrastatPort table</span></span>
-
-<span data-ttu-id="f68c8-615">Pokud je volán zdroj dat nakonfigurovaný jako výraz **FILTER (In, VALUEIN (In.Port, Port, Port.PortId)**, je vygenerován následující příkaz SQL pro navrácení vyfiltrovaných záznamů tabulky Intrastat:</span><span class="sxs-lookup"><span data-stu-id="f68c8-615">When a data source is called that is configured as the **FILTER (In, VALUEIN(In.Port, Port, Port.PortId)** expression, the following SQL statement is generated to return filtered records of the Intrastat table:</span></span>
-
-```
-select … from Intrastat
-exists join TableId from IntrastatPort
-where IntrastatPort.PortId = Intrastat.Port
-```
-
-<span data-ttu-id="f68c8-616">Pro pole **dataAreaId** je konečný příkaz SQL vygenerován pomocí operátoru **IN**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-616">For **dataAreaId** fields, the final SQL statement is generated by the using **IN** operator.</span></span>
-
-##### <a name="example-3"></a><span data-ttu-id="f68c8-617">Příklad 3</span><span class="sxs-lookup"><span data-stu-id="f68c8-617">Example 3</span></span>
-
-<span data-ttu-id="f68c8-618">Definujte v mapování modelu následující zdroje dat:</span><span class="sxs-lookup"><span data-stu-id="f68c8-618">You define the following data sources in your model mapping:</span></span>
-
-- <span data-ttu-id="f68c8-619">**Le** (typ **Vypočítané pole**), která obsahuje výraz **SPLIT ("DEMF GBSI, USMF", ",")**</span><span class="sxs-lookup"><span data-stu-id="f68c8-619">**Le** (**Calculated field** type), which contains the expression **SPLIT ("DEMF,GBSI,USMF", ",")**</span></span>
-- <span data-ttu-id="f68c8-620">**In** (typ **Záznamy tabulky**), která se vztahuje k tabulce Intrastat a pro kterou je možnost **Mezi společnostmi** zapnuta.</span><span class="sxs-lookup"><span data-stu-id="f68c8-620">**In** (**Table records** type), which refers to the Intrastat table and for which the **Cross-company** option is turned on</span></span>
-
-<span data-ttu-id="f68c8-621">Pokud je volán zdroj dat nakonfigurovaný jako výraz **FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)**, obsahuje konečný příkaz SQL následující podmínku:</span><span class="sxs-lookup"><span data-stu-id="f68c8-621">When a data source is called that is configured as the **FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)** expression, the final SQL statement contains the following condition:</span></span>
-
-```
-Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
-```
-
-### <a name="mathematical-functions"></a><span data-ttu-id="f68c8-622">Matematické funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-622">Mathematical functions</span></span>
-
-| <span data-ttu-id="f68c8-623">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-623">Function</span></span> | <span data-ttu-id="f68c8-624">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-624">Description</span></span> | <span data-ttu-id="f68c8-625">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-625">Example</span></span> |
-|----------|-------------|---------|
-| <span data-ttu-id="f68c8-626">ABS (číslo)</span><span class="sxs-lookup"><span data-stu-id="f68c8-626">ABS (number)</span></span> | <span data-ttu-id="f68c8-627">Vrací absolutní hodnotu zadaného čísla.</span><span class="sxs-lookup"><span data-stu-id="f68c8-627">Return the absolute value of the specified number.</span></span> <span data-ttu-id="f68c8-628">(Jinými slovy, vrací číslo bez znaménka.)</span><span class="sxs-lookup"><span data-stu-id="f68c8-628">(In other words, return the number without its sign.)</span></span> | <span data-ttu-id="f68c8-629">**ABS (-1)** vrátí hodnotu **1**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-629">**ABS (-1)** returns **1**.</span></span> |
-| <span data-ttu-id="f68c8-630">POWER (číslo, mocnina)</span><span class="sxs-lookup"><span data-stu-id="f68c8-630">POWER (number, power)</span></span> | <span data-ttu-id="f68c8-631">Vrátí výsledek umocnění zadaného kladného čísla pomocí zadané mocniny.</span><span class="sxs-lookup"><span data-stu-id="f68c8-631">Return the result of raising the specified positive number to the specified power.</span></span> | <span data-ttu-id="f68c8-632">**POWER (10, 2)** vrátí hodnotu **100**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-632">**POWER (10, 2)** returns **100**.</span></span> |
-| <span data-ttu-id="f68c8-633">NUMBERVALUE (řetězec, oddělovač desetinných míst, oddělovač skupin číslic)</span><span class="sxs-lookup"><span data-stu-id="f68c8-633">NUMBERVALUE (string, decimal separator, digit grouping separator)</span></span> | <span data-ttu-id="f68c8-634">Převede zadaný řetězec na číslo.</span><span class="sxs-lookup"><span data-stu-id="f68c8-634">Convert the specified string to a number.</span></span> <span data-ttu-id="f68c8-635">Zadaný oddělovač desetinných míst se použije mezi celým číslem a zlomkovou částí desetinného čísla.</span><span class="sxs-lookup"><span data-stu-id="f68c8-635">The specified decimal separator is used between the integer and fractional parts of a decimal number.</span></span> <span data-ttu-id="f68c8-636">Zadaný oddělovač skupin číslic se použije jako oddělovač tisíců.</span><span class="sxs-lookup"><span data-stu-id="f68c8-636">The specified digit grouping separator is used as the thousands separator.</span></span> | <span data-ttu-id="f68c8-637">**NUMBERVALUE("1 234,56", ",", " ")** vrátí hodnotu **1234.56**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-637">**NUMBERVALUE("1 234,56", ",", " ")** returns the value **1234.56**.</span></span> |
-| <span data-ttu-id="f68c8-638">VALUE (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-638">VALUE (string)</span></span> | <span data-ttu-id="f68c8-639">Převede zadaný řetězec na číslo.</span><span class="sxs-lookup"><span data-stu-id="f68c8-639">Convert the specified string to a number.</span></span> <span data-ttu-id="f68c8-640">Čárky a tečky (.) jsou považovány za oddělovače desetinných míst a úvodní spojovník (-) se používá jako záporné znaménko.</span><span class="sxs-lookup"><span data-stu-id="f68c8-640">Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign.</span></span> <span data-ttu-id="f68c8-641">Pokud jsou v zadaném řetězci obsaženy jiné než číselné znaky, bude vyvolána výjimka.</span><span class="sxs-lookup"><span data-stu-id="f68c8-641">Throw an exception if the specified string contains other non-numeric characters.</span></span> | <span data-ttu-id="f68c8-642">**VALUE ("1 234,56")** vyvolá výjimku.</span><span class="sxs-lookup"><span data-stu-id="f68c8-642">**VALUE ("1 234,56")** throws an exception.</span></span> |
-| <span data-ttu-id="f68c8-643">ROUND (číslo, desetinná čísla)</span><span class="sxs-lookup"><span data-stu-id="f68c8-643">ROUND (number, decimals)</span></span> | <span data-ttu-id="f68c8-644">Vrátí zadané číslo, poté, co je zaokrouhleno na zadaný počet desetinných míst:</span><span class="sxs-lookup"><span data-stu-id="f68c8-644">Return the specified number after it has been rounded to the specified number of decimal places:</span></span><ul><li><span data-ttu-id="f68c8-645">Pokud je hodnota parametru **desetinná místa** vyšší než 0 (nula), zadané číslo je zaokrouhleno na tento počet desetinných míst.</span><span class="sxs-lookup"><span data-stu-id="f68c8-645">If the value of the **decimals** parameter is more than 0 (zero), the specified number is rounded to that many decimal places.</span></span></li><li><span data-ttu-id="f68c8-646">Pokud je hodnota parametru **desetinná místa** **0** (nula), zadané číslo je zaokrouhleno na nejbližší celé číslo.</span><span class="sxs-lookup"><span data-stu-id="f68c8-646">If the value of the **decimals** parameter is **0** (zero), the specified number is rounded to the nearest integer.</span></span></li><li><span data-ttu-id="f68c8-647">Pokud je hodnota parametru **desetinná místa** nižší než 0 (nula), zadané číslo je zaokrouhleno vlevo od oddělovače desetinných míst.</span><span class="sxs-lookup"><span data-stu-id="f68c8-647">If the value of the **decimals** parameter is less than 0 (zero), the specified number is rounded to the left of the decimal point.</span></span></li></ul> | <span data-ttu-id="f68c8-648">**ROUND (1200.767, 2)** zaokrouhlí na dvě desetinná místa a vrátí hodnotu **1200.77**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-648">**ROUND (1200.767, 2)** rounds to two decimal places and returns **1200.77**.</span></span> <span data-ttu-id="f68c8-649">**ROUND (1200.767, -3)** zaokrouhlí na nejbližší násobek 1 000 a vrátí hodnotu **1000**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-649">**ROUND (1200.767, -3)** rounds to the nearest multiple of 1,000 and returns **1000**.</span></span> |
-| <span data-ttu-id="f68c8-650">ROUNDDOWN (číslo, desetinná čísla)</span><span class="sxs-lookup"><span data-stu-id="f68c8-650">ROUNDDOWN (number, decimals)</span></span> | <span data-ttu-id="f68c8-651">Vrátí zadané číslo, poté, co je zaokrouhleno dolů na zadaný počet desetinných míst.</span><span class="sxs-lookup"><span data-stu-id="f68c8-651">Return the specified number after it has been rounded down to the specified number of decimal places.</span></span><blockquote>[!NOTE] <span data-ttu-id="f68c8-652">Tato funkce se chová jako **ROUND**, ale vždy zaokrouhluje zadané číslo směrem dolů (směrem k nule).</span><span class="sxs-lookup"><span data-stu-id="f68c8-652">This function behaves like **ROUND**, but it always rounds the specified number down (toward zero).</span></span></blockquote> | <span data-ttu-id="f68c8-653">**ROUNDDOWN (1200.767, 2)** zaokrouhlí směrem dolů na dvě desetinná místa a vrátí hodnotu **1200.76**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-653">**ROUNDDOWN (1200.767, 2)** rounds down to two decimal places and returns **1200.76**.</span></span> <span data-ttu-id="f68c8-654">**ROUNDDOWN (1700.767, -3)** zaokrouhlí směrem dolů na nejbližší násobek 1 000 a vrátí hodnotu **1000**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-654">**ROUNDDOWN (1700.767, -3)** rounds down to the nearest multiple of 1,000 and returns **1000**.</span></span> |
-| <span data-ttu-id="f68c8-655">ROUNDUP (číslo, desetinná čísla)</span><span class="sxs-lookup"><span data-stu-id="f68c8-655">ROUNDUP (number, decimals)</span></span> | <span data-ttu-id="f68c8-656">Vrátí zadané číslo, poté, co je zaokrouhleno nahoru na zadaný počet desetinných míst.</span><span class="sxs-lookup"><span data-stu-id="f68c8-656">Return the specified number after it has been rounded up to the specified number of decimal places.</span></span><blockquote>[!NOTE] <span data-ttu-id="f68c8-657">Tato funkce se chová jako **ROUND**, ale vždy zaokrouhluje zadané číslo směrem nahoru (směrem od nuly).</span><span class="sxs-lookup"><span data-stu-id="f68c8-657">This function behaves like **ROUND**, but it always rounds the specified number up (away from zero).</span></span></blockquote> | <span data-ttu-id="f68c8-658">**ROUNDUP (1200.763, 2)** zaokrouhlí směrem nahoru na dvě desetinná místa a vrátí hodnotu **1200.77**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-658">**ROUNDUP (1200.763, 2)** rounds up to two decimal places and returns **1200.77**.</span></span> <span data-ttu-id="f68c8-659">**ROUNDUP (1200.767, -3)** zaokrouhlí směrem nahoru na nejbližší násobek 1 000 a vrátí hodnotu **2000**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-659">**ROUNDUP (1200.767, -3)** rounds up to the nearest multiple of 1,000 and returns **2000**.</span></span> |
-
-### <a name="data-conversion-functions"></a><span data-ttu-id="f68c8-660">Funkce převodu dat</span><span class="sxs-lookup"><span data-stu-id="f68c8-660">Data conversion functions</span></span>
-
-| <span data-ttu-id="f68c8-661">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-661">Function</span></span> | <span data-ttu-id="f68c8-662">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-662">Description</span></span> | <span data-ttu-id="f68c8-663">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-663">Example</span></span> |
-|----------|-------------|---------|
-| <span data-ttu-id="f68c8-664">VALUE (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-664">VALUE (string)</span></span> | <span data-ttu-id="f68c8-665">Převede zadaný řetězec na číslo.</span><span class="sxs-lookup"><span data-stu-id="f68c8-665">Convert the specified string to a number.</span></span> <span data-ttu-id="f68c8-666">Čárky a tečky (.) jsou považovány za oddělovače desetinných míst a úvodní spojovník (-) se používá jako záporné znaménko.</span><span class="sxs-lookup"><span data-stu-id="f68c8-666">Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign.</span></span> <span data-ttu-id="f68c8-667">Pokud jsou v zadaném řetězci obsaženy jiné než číselné znaky, bude vyvolána výjimka.</span><span class="sxs-lookup"><span data-stu-id="f68c8-667">Throw an exception if the specified string contains other non-numeric characters.</span></span> | <span data-ttu-id="f68c8-668">**VALUE ("1 234,56")** vyvolá výjimku.</span><span class="sxs-lookup"><span data-stu-id="f68c8-668">**VALUE ("1 234,56")** throws an exception.</span></span> |
-| <span data-ttu-id="f68c8-669">NUMBERVALUE (řetězec, oddělovač desetinných míst, oddělovač skupin číslic)</span><span class="sxs-lookup"><span data-stu-id="f68c8-669">NUMBERVALUE (string, decimal separator, digit grouping separator)</span></span> | <span data-ttu-id="f68c8-670">Převede zadaný řetězec na číslo.</span><span class="sxs-lookup"><span data-stu-id="f68c8-670">Convert the specified string to a number.</span></span> <span data-ttu-id="f68c8-671">Zadaný oddělovač desetinných míst se použije mezi celým číslem a zlomkovou částí desetinného čísla.</span><span class="sxs-lookup"><span data-stu-id="f68c8-671">The specified decimal separator is used between the integer and fractional parts of a decimal number.</span></span> <span data-ttu-id="f68c8-672">Zadaný oddělovač skupin číslic se použije jako oddělovač tisíců.</span><span class="sxs-lookup"><span data-stu-id="f68c8-672">The specified digit grouping separator is used as the thousands separator.</span></span> | <span data-ttu-id="f68c8-673">**NUMBERVALUE("1 234,56", ",", " ")** vrátí **1234.56**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-673">**NUMBERVALUE("1 234,56", ",", " ")** returns **1234.56**.</span></span> |
-| <span data-ttu-id="f68c8-674">INTVALUE (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-674">INTVALUE (string)</span></span> | <span data-ttu-id="f68c8-675">Vrátí reprezentaci celého čísla zadaného řetězce.</span><span class="sxs-lookup"><span data-stu-id="f68c8-675">Return an integer representation of the specified string.</span></span> <span data-ttu-id="f68c8-676">Desetinná místa jsou oříznuta.</span><span class="sxs-lookup"><span data-stu-id="f68c8-676">Any decimal places are truncated.</span></span> | <span data-ttu-id="f68c8-677">**INTVALUE ("100.77")** vrátí **100**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-677">**INTVALUE ("100.77")** returns **100**.</span></span> |
-| <span data-ttu-id="f68c8-678">INTVALUE (číslo)</span><span class="sxs-lookup"><span data-stu-id="f68c8-678">INTVALUE (number)</span></span> | <span data-ttu-id="f68c8-679">Vrátí reprezentaci celého čísla zadaného čísla.</span><span class="sxs-lookup"><span data-stu-id="f68c8-679">Return an integer representation of the specified number.</span></span> <span data-ttu-id="f68c8-680">Desetinná místa jsou oříznuta.</span><span class="sxs-lookup"><span data-stu-id="f68c8-680">Any decimal places are truncated.</span></span> | <span data-ttu-id="f68c8-681">**INTVALUE (-100.77)** vrátí hodnotu **-100**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-681">**INTVALUE (-100.77)** returns **-100**.</span></span> |
-| <span data-ttu-id="f68c8-682">INT64VALUE (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-682">INT64VALUE (string)</span></span> | <span data-ttu-id="f68c8-683">Vrátí reprezentaci int64 zadaného řetězce.</span><span class="sxs-lookup"><span data-stu-id="f68c8-683">Return an int64 representation of the specified string.</span></span> <span data-ttu-id="f68c8-684">Desetinná místa jsou oříznuta.</span><span class="sxs-lookup"><span data-stu-id="f68c8-684">Any decimal places are truncated.</span></span> | <span data-ttu-id="f68c8-685">**INT64VALUE ("22565422744")** vrátí **22565422744**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-685">**INT64VALUE ("22565422744")** returns **22565422744**.</span></span> |
-| <span data-ttu-id="f68c8-686">INT64VALUE (číslo)</span><span class="sxs-lookup"><span data-stu-id="f68c8-686">INT64VALUE (number)</span></span> | <span data-ttu-id="f68c8-687">Vrátí reprezentaci int64 zadaného čísla.</span><span class="sxs-lookup"><span data-stu-id="f68c8-687">Return an int64 representation of the specified number.</span></span> <span data-ttu-id="f68c8-688">Desetinná místa jsou oříznuta.</span><span class="sxs-lookup"><span data-stu-id="f68c8-688">Any decimal places are truncated.</span></span> | <span data-ttu-id="f68c8-689">**INT64VALUE (22565422744.00)** vrátí hodnotu **22565422744**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-689">**INT64VALUE (22565422744.00)** returns **22565422744**.</span></span> |
-
-### <a name="record-functions"></a><span data-ttu-id="f68c8-690">Funkce záznamu</span><span class="sxs-lookup"><span data-stu-id="f68c8-690">Record functions</span></span>
-
-| <span data-ttu-id="f68c8-691">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-691">Function</span></span> | <span data-ttu-id="f68c8-692">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-692">Description</span></span> | <span data-ttu-id="f68c8-693">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-693">Example</span></span> |
-|----------|-------------|---------|
-| <span data-ttu-id="f68c8-694">NULLCONTAINER (seznam)</span><span class="sxs-lookup"><span data-stu-id="f68c8-694">NULLCONTAINER (list)</span></span> | <span data-ttu-id="f68c8-695">Vrátí záznam **null**, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.</span><span class="sxs-lookup"><span data-stu-id="f68c8-695">Return a **null** record that has the same structure as the specified record list or record.</span></span><blockquote>[!NOTE] <span data-ttu-id="f68c8-696">Tato funkce je zastaralá.</span><span class="sxs-lookup"><span data-stu-id="f68c8-696">This function is obsolete.</span></span> <span data-ttu-id="f68c8-697">Místo toho použijte **EMPTYRECORD**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-697">Use **EMPTYRECORD** instead.</span></span></blockquote> | <span data-ttu-id="f68c8-698">**NULLCONTAINER (SPLIT ("abc", 1))** vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí **SPLIT**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-698">**NULLCONTAINER (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function.</span></span> |
-| <span data-ttu-id="f68c8-699">EMPTYRECORD (záznam)</span><span class="sxs-lookup"><span data-stu-id="f68c8-699">EMPTYRECORD (record)</span></span> | <span data-ttu-id="f68c8-700">Vrátí záznam **null**, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.</span><span class="sxs-lookup"><span data-stu-id="f68c8-700">Return a **null** record that has the same structure as the specified record list or record.</span></span><blockquote>[!NOTE] <span data-ttu-id="f68c8-701">Záznam **null** je záznam, kde všechna pole mají prázdnou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-701">A **null** record is a record where all fields have an empty value.</span></span> <span data-ttu-id="f68c8-702">Prázdná hodnota je **0** (nula) pro čísla, prázdný řetězec pro řetězce atd.</span><span class="sxs-lookup"><span data-stu-id="f68c8-702">An empty value is **0** (zero) for numbers, an empty string for strings, and so on.</span></span></blockquote> | <span data-ttu-id="f68c8-703">**EMPTYRECORD (SPLIT ("abc", 1))** vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí **SPLIT**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-703">**EMPTYRECORD (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function.</span></span> |
-
-### <a name="text-functions"></a><span data-ttu-id="f68c8-704">Textové funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-704">Text functions</span></span>
-
-<table>
-<thead>
-<tr>
-<th><span data-ttu-id="f68c8-705">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-705">Function</span></span></th>
-<th><span data-ttu-id="f68c8-706">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-706">Description</span></span></th>
-<th><span data-ttu-id="f68c8-707">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-707">Example</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span data-ttu-id="f68c8-708">UPPER (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-708">UPPER (string)</span></span></td>
-<td><span data-ttu-id="f68c8-709">Vrátí zadaný řetězec po převedení na velká písmena.</span><span class="sxs-lookup"><span data-stu-id="f68c8-709">Return the specified string after it has been converted to uppercase letters.</span></span></td>
-<td><span data-ttu-id="f68c8-710"><strong>UPPER(&quot;Sample&quot;)</strong> vrátí <strong>&quot;SAMPLE&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-710"><strong>UPPER(&quot;Sample&quot;)</strong> returns <strong>&quot;SAMPLE&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-711">LOWER (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-711">LOWER (string)</span></span></td>
-<td><span data-ttu-id="f68c8-712">Vrátí zadaný řetězec po převedení na malá písmena.</span><span class="sxs-lookup"><span data-stu-id="f68c8-712">Return the specified string after it has been converted to lowercase letters.</span></span></td>
-<td><span data-ttu-id="f68c8-713"><strong>LOWER (&quot;Sample&quot;)</strong> vrátí <strong>&quot;sample&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-713"><strong>LOWER (&quot;Sample&quot;)</strong> returns <strong>&quot;sample&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-714">LEFT (řetězec, počet znaků)</span><span class="sxs-lookup"><span data-stu-id="f68c8-714">LEFT (string, number of characters)</span></span></td>
-<td><span data-ttu-id="f68c8-715">Vrátí zadaný počet znaků od začátku zadaného řetězce.</span><span class="sxs-lookup"><span data-stu-id="f68c8-715">Return the specified number of characters from the start of the specified string.</span></span></td>
-<td><span data-ttu-id="f68c8-716"><strong>LEFT (&quot;Sample&quot;, 3)</strong> vrátí <strong>&quot;Sam&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-716"><strong>LEFT (&quot;Sample&quot;, 3)</strong> returns <strong>&quot;Sam&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-717">RIGHT (řetězec, počet znaků)</span><span class="sxs-lookup"><span data-stu-id="f68c8-717">RIGHT (string, number of characters)</span></span></td>
-<td><span data-ttu-id="f68c8-718">Vrátí zadaný počet znaků od konce zadaného řetězce.</span><span class="sxs-lookup"><span data-stu-id="f68c8-718">Return the specified number of characters from the end of the specified string.</span></span></td>
-<td><span data-ttu-id="f68c8-719"><strong>RIGHT (&quot;Sample&quot;, 3)</strong> vrátí <strong>&quot;ple&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-719"><strong>RIGHT (&quot;Sample&quot;, 3)</strong> returns <strong>&quot;ple&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-720">MID (řetězec, počáteční pozice, počet znaků)</span><span class="sxs-lookup"><span data-stu-id="f68c8-720">MID (string, starting position, number of characters)</span></span></td>
-<td><span data-ttu-id="f68c8-721">Vrátí zadaný počet znaků ze zadaného řetězce, počínaje od zadané pozice.</span><span class="sxs-lookup"><span data-stu-id="f68c8-721">Return the specified number of characters from the specified string, starting at the specified position.</span></span></td>
-<td><span data-ttu-id="f68c8-722"><strong>MID (&quot;Sample&quot;, 2, 3)</strong> vrátí <strong>&quot;amp&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-722"><strong>MID (&quot;Sample&quot;, 2, 3)</strong> returns <strong>&quot;amp&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-723">LEN (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-723">LEN (string)</span></span></td>
-<td><span data-ttu-id="f68c8-724">Vrátí počet znaků v zadaném řetězci.</span><span class="sxs-lookup"><span data-stu-id="f68c8-724">Return the number of characters in the specified string.</span></span></td>
-<td><span data-ttu-id="f68c8-725"><strong>LEN (&quot;Sample&quot;)</strong> vrátí <strong>6</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-725"><strong>LEN (&quot;Sample&quot;)</strong> returns <strong>6</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-726">CHAR (číslo)</span><span class="sxs-lookup"><span data-stu-id="f68c8-726">CHAR (number)</span></span></td>
-<td><span data-ttu-id="f68c8-727">Vrátí řetězec znaků, na který odkazuje zadané číslo ve znakové sadě Unicode.</span><span class="sxs-lookup"><span data-stu-id="f68c8-727">Return the string of characters that is referenced by the specified Unicode number.</span></span></td>
-<td><span data-ttu-id="f68c8-728"><strong>CHAR (255)</strong> vrátí <strong>&quot;ÿ&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-728"><strong>CHAR (255)</strong> returns <strong>&quot;ÿ&quot;</strong>.</span></span>
-<blockquote>[!NOTE] <span data-ttu-id="f68c8-729">Řetězec, který vrací tato funkce, závisí na kódování, které je vybráno v nadřazeném prvku formátu SOUBORU.</span><span class="sxs-lookup"><span data-stu-id="f68c8-729">The string that this function returns depends on the encoding that is selected in the parent FILE format element.</span></span> <span data-ttu-id="f68c8-730">Více informací o seznamu podporovaných kódování naleznete v tématu <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Třída kódování</a>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-730">For the list of supported encodings, see <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</span></span></blockquote>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-731">CONCATENATE (řetězec 1 [, řetězec 2…])</span><span class="sxs-lookup"><span data-stu-id="f68c8-731">CONCATENATE (string 1 [, string 2, …])</span></span></td>
-<td><span data-ttu-id="f68c8-732">Vrátí všechny zadané textové řetězce po jejich spojení do jednoho řetězce.</span><span class="sxs-lookup"><span data-stu-id="f68c8-732">Return all specified text strings after they have been joined into one string.</span></span></td>
-<td><span data-ttu-id="f68c8-733"><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> vrátí <strong>&quot;abcdef&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-733"><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> returns <strong>&quot;abcdef&quot;</strong>.</span></span>
-<blockquote>[!NOTE] <span data-ttu-id="f68c8-734">Výraz <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> vrátí též <strong>&quot;abcdef&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-734">The expression <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> also returns <strong>&quot;abcdef&quot;</strong>.</span></span></blockquote>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-735">TRANSLATE (řetězec, vzor, náhrada)</span><span class="sxs-lookup"><span data-stu-id="f68c8-735">TRANSLATE (string, pattern, replacement)</span></span></td>
-<td><span data-ttu-id="f68c8-736">Vrátí zadaný řetězec po nahrazení všech výskytů znaků v zadaném řetězci vzoru za znaky na odpovídající pozici zadaného řetězce sloužícího jako náhrada.</span><span class="sxs-lookup"><span data-stu-id="f68c8-736">Return the specified string after all occurrences of the characters in the specified pattern string have been replaced by the characters at the corresponding position in the specified replacement string.</span></span></td>
-<td><span data-ttu-id="f68c8-737"><strong>TRANSLATE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> nahradí vzorec <strong>&quot;cd&quot;</strong> řetězcem <strong>&quot;GH&quot;</strong> a vrátí <strong>&quot;abGHef&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-737"><strong>TRANSLATE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> replaces the pattern <strong>&quot;cd&quot;</strong> with the string <strong>&quot;GH&quot;</strong> and returns <strong>&quot;abGHef&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-738">REPLACE (řetězec, vzor, náhrada, příznak regulérního výrazu)</span><span class="sxs-lookup"><span data-stu-id="f68c8-738">REPLACE (string, pattern, replacement, regular expression flag)</span></span></td>
-<td><span data-ttu-id="f68c8-739">Pokud je zadaný parametr <strong>příznak regulárního výrazu</strong> <strong>true</strong>, vrátí zadaný řetězec po úpravě použitím regulárního výrazu zadaného jako argument <strong>vzoru</strong> pro tuto funkci.</span><span class="sxs-lookup"><span data-stu-id="f68c8-739">When the specified <strong>regular expression flag</strong> parameter is <strong>true</strong>, return the specified string after it has been modified by applying the regular expression that is specified as the <strong>pattern</strong> argument for this function.</span></span> <span data-ttu-id="f68c8-740">Tento výraz slouží k vyhledání znaků, které je třeba nahradit.</span><span class="sxs-lookup"><span data-stu-id="f68c8-740">This expression is used to find characters that must be replaced.</span></span> <span data-ttu-id="f68c8-741">Znaky zadaného argumentu <strong>náhrady</strong> jsou použity k nahrazení nalezených znaků.</span><span class="sxs-lookup"><span data-stu-id="f68c8-741">Characters of the specified <strong>replacement</strong> argument are used to replace characters that are found.</span></span> <span data-ttu-id="f68c8-742">Pokud je zadaný parametr <strong>příznak regulérního výrazu</strong> <strong>false</strong>, tato funkce se chová jako <strong>TRANSLATE</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-742">When the specified <strong>regular expression flag</strong> parameter is <strong>false</strong>, this function behaves like <strong>TRANSLATE</strong>.</span></span></td>
-<td><span data-ttu-id="f68c8-743"><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> použije regulární výraz, ktreý odebere všechny nečíselné symboly a vrátí <strong>&quot;19234564971&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-743"><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> applies a regular expression that removes all non-numeric symbols, and returns <strong>&quot;19234564971&quot;</strong>.</span></span> <span data-ttu-id="f68c8-744"><strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> nahradí vzorec <strong>&quot;cd&quot;</strong> řetězcem <strong>&quot;GH&quot;</strong> a vrátí <strong>&quot;abGHef&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-744"><strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> replaces the pattern <strong>&quot;cd&quot;</strong> with the string <strong>&quot;GH&quot;</strong> and returns <strong>&quot;abGHef&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-745">TEXT (vstup)</span><span class="sxs-lookup"><span data-stu-id="f68c8-745">TEXT (input)</span></span></td>
-<td><span data-ttu-id="f68c8-746">Vrátí zadaný vstup po převedení na textový řetězec naformátovaný podle nastavení národního prostředí serveru aktuální instance aplikace Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f68c8-746">Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance.</span></span> <span data-ttu-id="f68c8-747">Co se týká hodnot typu <strong>real</strong>, převod řetězce je omezen na dvě desetinná místa.</span><span class="sxs-lookup"><span data-stu-id="f68c8-747">For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</span></span></td>
-<td><span data-ttu-id="f68c8-748">Jestliže je národní prostředí serveru instance Finance and Operations definováno jako <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> vrátí aktuální datum relace aplikace Finance and Operations, například 17. prosince 2015, jako textový řetězec <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-748">If the server locale of the Finance and Operations instance is defined as <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> returns the current Finance and Operations session date, December 17, 2015, as the text string <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>.</span></span> <span data-ttu-id="f68c8-749"><strong>TEXT (1/3)</strong> vrátí <strong>&quot;0.33&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-749"><strong>TEXT (1/3)</strong> returns <strong>&quot;0.33&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-750">FORMAT (řetězec 1 řetězce 2[, řetězec 3 ...])</span><span class="sxs-lookup"><span data-stu-id="f68c8-750">FORMAT (string 1, string 2[, string 3, …])</span></span></td>
-<td><span data-ttu-id="f68c8-751">Vrátí zadaný řetězec po zformátování nahrazením všech výskytů <strong>%N</strong> <em>n-tým</em> argumentem.</span><span class="sxs-lookup"><span data-stu-id="f68c8-751">Return the specified string after it has been formatted by substituting any occurrences of <strong>%N</strong> with the <em>n</em>th argument.</span></span> <span data-ttu-id="f68c8-752">Argumenty jsou řetězce.</span><span class="sxs-lookup"><span data-stu-id="f68c8-752">The arguments are strings.</span></span> <span data-ttu-id="f68c8-753">Pokud pro parametr není zadán argument, parametr je vrácen jako <strong>&quot;%N&quot;</strong> v řetězci.</span><span class="sxs-lookup"><span data-stu-id="f68c8-753">If an argument isn't provided for a parameter, the parameter is returned as <strong>&quot;%N&quot;</strong> in the string.</span></span> <span data-ttu-id="f68c8-754">Co se týká hodnot typu <strong>real</strong>, převod řetězce je omezen na dvě desetinná místa.</span><span class="sxs-lookup"><span data-stu-id="f68c8-754">For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</span></span></td>
-<td><span data-ttu-id="f68c8-755">Ná následujícím obrázku vrátí zdroj dat <strong>PaymentModel</strong> seznam záznamů odběratelů prostřednictvím součásti <strong>Customer</strong> a datum zpracování prostřednictvím pole <strong>ProcessingDate</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-755">In the following illustration, the <strong>PaymentModel</strong> data source returns the list of customer records via the <strong>Customer</strong> component and the processing date value via the <strong>ProcessingDate</strong> field.</span></span>
-<p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
-<p><span data-ttu-id="f68c8-756">Ve formátu elektronického výkaznictví, který je určený ke generování elektronického souboru pro vybrané odběratele, je vybrán řetězec <strong>PaymentModel</strong> jako zdroj dat, který řídí procesní tok.</span><span class="sxs-lookup"><span data-stu-id="f68c8-756">In the ER format that is designed to generate an electronic file for selected customers, <strong>PaymentModel</strong> is selected as a data source and controls the process flow.</span></span> <span data-ttu-id="f68c8-757">Jestliže je vybraný odběratel zastaven u data zpracování sestavy, je vyvolána výjimka pro informování uživatele.</span><span class="sxs-lookup"><span data-stu-id="f68c8-757">An exception is thrown to inform the user when a selected customer is stopped for the date when the report is processed.</span></span> <span data-ttu-id="f68c8-758">Vzorec, který je určen pro tento typ ovládacího prvku pro zpracování, může využít následující zdroje:</span><span class="sxs-lookup"><span data-stu-id="f68c8-758">The formula that is designed for this type of processing control can use the following resources:</span></span></p>
-<ul>
-<li><span data-ttu-id="f68c8-759">Popisek aplikace Finance and Operations SYS70894, který má následující text:</span><span class="sxs-lookup"><span data-stu-id="f68c8-759">Finance and Operations label SYS70894, which has the following text:</span></span>
-<ul>
-<li><span data-ttu-id="f68c8-760"><strong>Pro jazyk EN-US:</strong> &quot;Nothing to print&quot;</span><span class="sxs-lookup"><span data-stu-id="f68c8-760"><strong>For the EN-US language:</strong> &quot;Nothing to print&quot;</span></span></li>
-<li><span data-ttu-id="f68c8-761"><strong>Pro jazyk CS:</strong> &quot;Nic k vytištění&quot;</span><span class="sxs-lookup"><span data-stu-id="f68c8-761"><strong>For the DE language:</strong> &quot;Nichts zu drucken&quot;</span></span></li>
-</ul></li>
-<li><span data-ttu-id="f68c8-762">Popisek aplikace Finance and Operations SYS18389, který má následující text:</span><span class="sxs-lookup"><span data-stu-id="f68c8-762">Finance and Operations label SYS18389, which has the following text:</span></span>
-<ul>
-<li><span data-ttu-id="f68c8-763"><strong>U jazyka EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</span><span class="sxs-lookup"><span data-stu-id="f68c8-763"><strong>For the EN-US language:</strong> &quot;Customer %1 is stopped for %2.&quot;</span></span></li>
-<li><span data-ttu-id="f68c8-764"><strong>U jazyka DE:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</span><span class="sxs-lookup"><span data-stu-id="f68c8-764"><strong>For the DE language:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</span></span></li>
-</ul></li>
-</ul>
-<p><span data-ttu-id="f68c8-765">Zde je vzorec, který lze vytvořit:</span><span class="sxs-lookup"><span data-stu-id="f68c8-765">Here is the formula that can be designed:</span></span></p>
-<p><span data-ttu-id="f68c8-766">FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;.</span><span class="sxs-lookup"><span data-stu-id="f68c8-766">FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;.</span></span> <span data-ttu-id="f68c8-767">&quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</span><span class="sxs-lookup"><span data-stu-id="f68c8-767">&quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</span></span></p>
-<p><span data-ttu-id="f68c8-768">Pokud je sestava zpracovávána pro odběratele <strong>Litware Retail</strong> 17. prosince 2015, v národním prostředí <strong>EN-US</strong> a jazyce <strong>EN-US</strong>, tento vzorec vrátí následující text, který může být uživateli nabídnut ve formě zprávy výjimky:</span><span class="sxs-lookup"><span data-stu-id="f68c8-768">If a report is processed for the <strong>Litware Retail</strong> customer on December 17, 2015, in the <strong>EN-US</strong> culture and the <strong>EN-US</strong> language, this formula returns the following text, which can be presented to the user as an exception message:</span></span></p>
-<p><span data-ttu-id="f68c8-769">&quot;Nic k tisku.</span><span class="sxs-lookup"><span data-stu-id="f68c8-769">&quot;Nothing to print.</span></span> <span data-ttu-id="f68c8-770">Customer Litware Retail is stopped for 12/17/2015.&quot;</span><span class="sxs-lookup"><span data-stu-id="f68c8-770">Customer Litware Retail is stopped for 12/17/2015.&quot;</span></span></p>
-<p><span data-ttu-id="f68c8-771">Jestliže je stejná sestava zpracována pro odběratele <strong>Litware Retail</strong> 17. prosince 2015 v jazykové verzi <strong>DE</strong> a jazyce <strong>DE</strong>, vzorec vrátí následující text, který používá jiný formát data:</span><span class="sxs-lookup"><span data-stu-id="f68c8-771">If the same report is processed for the <strong>Litware Retail</strong> customer on December 17, 2015, in the <strong>DE</strong> culture and the <strong>DE</strong> language, the formula returns the following text, which uses a different date format:</span></span></p>
-<p><span data-ttu-id="f68c8-772">&quot;Nichts zu drucken.</span><span class="sxs-lookup"><span data-stu-id="f68c8-772">&quot;Nichts zu drucken.</span></span> <span data-ttu-id="f68c8-773">Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</span><span class="sxs-lookup"><span data-stu-id="f68c8-773">Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</span></span></p>
-<blockquote>[!NOTE] <span data-ttu-id="f68c8-774">Následující syntaxe je použita ve vzorcích elektronického výkaznictví pro popisky:</span><span class="sxs-lookup"><span data-stu-id="f68c8-774">The following syntax is applied in ER formulas for labels:</span></span>
-<ul>
-<li><span data-ttu-id="f68c8-775"><strong>Popisky ze zdrojů aplikace Finance and Operations:</strong> <strong>@&quot;X&quot;</strong>, kde <strong>X</strong> je ID popisku ve stromu aplikačních objektů (AOT)</span><span class="sxs-lookup"><span data-stu-id="f68c8-775"><strong>For labels from Finance and Operations resources:</strong> <strong>@&quot;X&quot;</strong>, where <strong>X</strong> is the label ID in the Application Object Tree (AOT)</span></span></li>
-<li><span data-ttu-id="f68c8-776"><strong>Popisky, které se nachází v konfiguracích elektronického výkaznictví:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, kde <strong>X</strong> je ID popisku v konfiguraci elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-776"><strong>For labels that reside in ER configurations:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, where <strong>X</strong> is the label ID in the ER configuration</span></span></li>
-</ul>
-</blockquote>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-777">NUMBERFORMAT (číslo, formát)</span><span class="sxs-lookup"><span data-stu-id="f68c8-777">NUMBERFORMAT (number, format)</span></span></td>
-<td><span data-ttu-id="f68c8-778">Vrátí znázornění řetězce zadaného čísla v zadaném formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-778">Return a string representation of the specified number in the specified format.</span></span> <span data-ttu-id="f68c8-779">(Informace o podporovaných formátech naleznete v tématu <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standardní</a> a <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">vlastní</a>.) Spuštění této funkce v rámci určuje jazykovou verzi, která je použita k formátování čísla.</span><span class="sxs-lookup"><span data-stu-id="f68c8-779">(For information about the supported formats, see <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standard</a> and <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">custom</a>.) The context that this function is run in determines the culture that is used to format numbers.</span></span></td>
-<td><span data-ttu-id="f68c8-780">Pro jazykovou verzi EN-US vrátí <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> hodnotu <strong>&quot;45,00 %&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-780">For the EN-US culture, <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> returns <strong>&quot;45.00 %&quot;</strong>.</span></span> <span data-ttu-id="f68c8-781"><strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> vrátí hodnotu <strong>&quot;10&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-781"><strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returns <strong>&quot;10&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-782">NUMERALSTOTEXT (číslo jazyk, měna, příznak názvu měny pro tisk, desetinná místa)</span><span class="sxs-lookup"><span data-stu-id="f68c8-782">NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)</span></span></td>
-<td><span data-ttu-id="f68c8-783">Vrátí zadané číslo po vyslovení (převedení) na textové řetězce v zadaném jazyce.</span><span class="sxs-lookup"><span data-stu-id="f68c8-783">Return the specified number after it has been spelled out (converted to text strings) in the specified language.</span></span> <span data-ttu-id="f68c8-784">Kód jazyka je volitelný.</span><span class="sxs-lookup"><span data-stu-id="f68c8-784">The language code is optional.</span></span> <span data-ttu-id="f68c8-785">Pokud je definován jako prázdný řetězec, použije se kód jazyka pro aktuální kontext.</span><span class="sxs-lookup"><span data-stu-id="f68c8-785">When it's defined as an empty string, the language code for the running context is used.</span></span> <span data-ttu-id="f68c8-786">(Kód jazyka spuštěného kontextu je definován pro generovaný soubor nebo složku). Kód měny je také volitelný.</span><span class="sxs-lookup"><span data-stu-id="f68c8-786">(The language code for the running context is defined for a generating folder or file.) The currency code is also optional.</span></span> <span data-ttu-id="f68c8-787">Pokud je definován jako prázdný řetězec, je použita měna společnosti.</span><span class="sxs-lookup"><span data-stu-id="f68c8-787">When it's defined as an empty string, the company currency is used.</span></span>
-<blockquote>[!NOTE] <span data-ttu-id="f68c8-788">Příznak <strong>název měny pro tisk</strong> a <strong>parametry desetinných míst</strong> jsou analyzovány pouze pro následující jazykové kódy: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> a <strong>RU</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-788">The <strong>print currency name flag</strong> and <strong>decimal points</strong> parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>.</span></span> <span data-ttu-id="f68c8-789">Dále je příznak <strong>názvu měny pro tisk</strong> analyzován pouze pro společnosti používající aplikaci Finance and Operations s kontextem země nebo oblasti, který podporuje skloňování názvů měn.</span><span class="sxs-lookup"><span data-stu-id="f68c8-789">Additionally, the <strong>print currency name flag</strong> parameter is analyzed only for Finance and Operations companies where the country's or region's context supports declension of currency names.</span></span></blockquote>
-</td>
-<td><span data-ttu-id="f68c8-790"><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returns <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-790"><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returns <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>.</span></span> <span data-ttu-id="f68c8-791"><strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> vrátí <strong>&quot;Sto dwadzieścia&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-791"><strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returns <strong>&quot;Sto dwadzieścia&quot;</strong>.</span></span> <span data-ttu-id="f68c8-792"><strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> vrátí <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-792"><strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returns <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-793">PADLEFT (řetězec, délka, odsazovací znaky)</span><span class="sxs-lookup"><span data-stu-id="f68c8-793">PADLEFT (string, length, padding chars)</span></span></td>
-<td><span data-ttu-id="f68c8-794">Vrátí řetězec určené délky, ve kterém je začátek určeného řetězce odsazen určenými znaky.</span><span class="sxs-lookup"><span data-stu-id="f68c8-794">Return a string of the specified length, where the start of the specified string is padded with the specified characters.</span></span></td>
-<td><span data-ttu-id="f68c8-795"><strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> vrátí řetězec <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-795"><strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> returns the text string <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-796">TRIM (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-796">TRIM (string)</span></span></td>
-<td><span data-ttu-id="f68c8-797">Vrátí určený textový řetězec po příznutí počátečních a koncových mezer a po odebrání více mezer mezi slovy.</span><span class="sxs-lookup"><span data-stu-id="f68c8-797">Return the specified text string after leading and trailing spaces have been truncated, and after multiple spaces between words have been removed.</span></span></td>
-<td><span data-ttu-id="f68c8-798"><strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ukázkový&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> vrátí <strong>&quot;Ukázkový text&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-798"><strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> returns <strong>&quot;Sample text&quot;</strong>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-799">GETENUMVALUEBYNAME (cesta zdroje dat výčtu, text popisku hodnoty výčtu)</span><span class="sxs-lookup"><span data-stu-id="f68c8-799">GETENUMVALUEBYNAME (enumeration data source path, enumeration value label text)</span></span></td>
-<td><span data-ttu-id="f68c8-800">Vrátí hodnotu zadaného zdroje dat výčtu podle zadaného textu popisku výčtu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-800">Return a value of the specified enumeration data source, based on the specified text of the enumeration label.</span></span></td>
-<td><span data-ttu-id="f68c8-801">Na následujícím obrázku je výčet <strong>ReportDirection</strong> uveden v datovém modelu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-801">In the following illustration, the <strong>ReportDirection</strong> enumeration is introduced in a data model.</span></span> <span data-ttu-id="f68c8-802">Pro hodnoty výčtu jsou definovány popisky.</span><span class="sxs-lookup"><span data-stu-id="f68c8-802">Note that labels are defined for enumeration values.</span></span>
-<p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
-<p><span data-ttu-id="f68c8-803">Následující obrázek znázorňuje tyto podrobnosti:</span><span class="sxs-lookup"><span data-stu-id="f68c8-803">The following illustration shows these details:</span></span></p>
-<ul>
-<li><span data-ttu-id="f68c8-804">Výčet modelů <strong>ReportDirection</strong> je vložený do sestavy jako zdroj dat <strong>$Direction</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-804">The <strong>ReportDirection</strong> model enumeration is inserted into a report as a data source, <strong>$Direction</strong>.</span></span></li>
-<li><span data-ttu-id="f68c8-805">Výraz elektronického výkaznictví <strong>$IsArrivals</strong> je určený k použití výčtu modelů jako parametr této funkce.</span><span class="sxs-lookup"><span data-stu-id="f68c8-805">An ER expression, <strong>$IsArrivals</strong>, is designed to use the model enumeration as a parameter of this function.</span></span> <span data-ttu-id="f68c8-806">Hodnota tohoto výrazu je <strong>TRUE</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-806">The value of this expression is <strong>TRUE</strong>.</span></span></li>
-</ul>
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-807">GUIDVALUE (vstup)</span><span class="sxs-lookup"><span data-stu-id="f68c8-807">GUIDVALUE (input)</span></span></td>
-<td><span data-ttu-id="f68c8-808">Převeďte zadaný vstup datového typu <strong>String</strong> na datovou položku datového typu <strong>GUID</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-808">Convert the specified input of the <strong>String</strong> data type to a data item of the <strong>GUID</strong> data type.</span></span><blockquote>[!NOTE] <span data-ttu-id="f68c8-809">Pro provedení konverze opačným směrem (to znamená převedení zadaného vstupu datového typu <strong>GUID</strong> na datovou položku datového typu <strong>Řetězec</strong>), lze použít funkci <strong>TEXT()</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-809">To do a conversion in the opposite direction (that is, to convert specified input of the <strong>GUID</strong> data type to a data item of the <strong>String</strong> data type), you can use the <strong>TEXT()</strong> function.</span></span></blockquote></td>
-<td><span data-ttu-id="f68c8-810">Definujte v mapování modelu následující zdroje dat:</span><span class="sxs-lookup"><span data-stu-id="f68c8-810">You define the following data sources in your model mapping:</span></span>
-<ul>
-<li><span data-ttu-id="f68c8-811"><strong>myID</strong> (typ <strong>Vypočítané pole</strong>), které obsahuje výraz <strong>GUIDVALUE(&quot;AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0&quot;)</strong></span><span class="sxs-lookup"><span data-stu-id="f68c8-811"><strong>myID</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>GUIDVALUE(&quot;AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0&quot;)</strong></span></span></li>
-<li><span data-ttu-id="f68c8-812"><strong>Users</strong> (typ <strong>Záznamy tabulky</strong>), která odkazuje na tabulku UserInfo</span><span class="sxs-lookup"><span data-stu-id="f68c8-812"><strong>Users</strong> (<strong>Table records</strong> type), which refers to the UserInfo table</span></span></li>
-</ul>
-<span data-ttu-id="f68c8-813">Když jsou definovány tyto zdroje dat, můžete použít výraz jako <strong>FILTER (Users, Users.objectId = myID)</strong> k filtrování tabulky UserInfo podle pole <strong>objectId</strong> datového typu <strong>GUID</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-813">When these data sources are defined, you can use an expression such as <strong>FILTER (Users, Users.objectId = myID)</strong> to filter the UserInfo table by the <strong>objectId</strong> field of the <strong>GUID</strong> data type.</span></span>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="f68c8-814">JSONVALUE (id, cesta)</span><span class="sxs-lookup"><span data-stu-id="f68c8-814">JSONVALUE (id, path)</span></span></td>
-<td><span data-ttu-id="f68c8-815">Analyzujte data ve formátu notace objektu JavaScript (JSON), který je přístupný ze zadané cesty k extrahování skalární hodnoty založené na zadaném ID.</span><span class="sxs-lookup"><span data-stu-id="f68c8-815">Parse data in JavaScript Object Notation (JSON) format that is accessed by the specified path to extract a scalar value that is based on the specified ID.</span></span></td>
-<td><span data-ttu-id="f68c8-816">Zdroj dat <strong>$JsonField</strong> obsahuje následující data ve formátu JSON: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-816">The data source <strong>$JsonField</strong> contains the following data in JSON format: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>.</span></span> <span data-ttu-id="f68c8-817">Pro tento zdroj dat </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> vrací hodnotu <strong>7.3.1234.1</strong> z datového typu <strong>String</strong>.</span><span class="sxs-lookup"><span data-stu-id="f68c8-817">For this data source, </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> returns the value <strong>7.3.1234.1</strong> of the <strong>String</strong> data type.</span></span></td>
-</tr>
-</tbody>
-</table>
-
-### <a name="data-conversion-functions"></a><span data-ttu-id="f68c8-818">Funkce převodu dat</span><span class="sxs-lookup"><span data-stu-id="f68c8-818">Data conversion functions</span></span>
-
-| <span data-ttu-id="f68c8-819">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-819">Function</span></span> | <span data-ttu-id="f68c8-820">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-820">Description</span></span> | <span data-ttu-id="f68c8-821">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-821">Example</span></span> |
-|----------|-------------|---------|
-| <span data-ttu-id="f68c8-822">TEXT (vstup)</span><span class="sxs-lookup"><span data-stu-id="f68c8-822">TEXT (input)</span></span> | <span data-ttu-id="f68c8-823">Vrátí zadaný vstup po převedení na textový řetězec naformátovaný podle nastavení národního prostředí serveru aktuální instance aplikace Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f68c8-823">Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance.</span></span> <span data-ttu-id="f68c8-824">Co se týká hodnot typu **real**, převod řetězce je omezen na dvě desetinná místa.</span><span class="sxs-lookup"><span data-stu-id="f68c8-824">For values of the **real** type, the string conversion is limited to two decimal places.</span></span> | <span data-ttu-id="f68c8-825">Jestliže je národní prostředí serveru instance Finance and Operations definováno jako **EN-US**, **TEXT (NOW ())** vrátí aktuální datum relace aplikace Finance and Operations, například 17. prosince 2015, jako textový řetězec **"12/17/2015 07:59:23 AM"**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-825">If the server locale of the Finance and Operations instance is defined as **EN-US**, **TEXT (NOW ())** returns the current Finance and Operations session date, December 17, 2015, as the text string **"12/17/2015 07:59:23 AM"**.</span></span> <span data-ttu-id="f68c8-826">**TEXT (1/3)** vrátí **"0.33"**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-826">**TEXT (1/3)** returns **"0.33"**.</span></span> |
-| <span data-ttu-id="f68c8-827">QRCODE (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-827">QRCODE (string)</span></span> | <span data-ttu-id="f68c8-828">Vrátí obrázek QR (Quick Response) kódu v binárním formátu base64 pro zadaný řetězec.</span><span class="sxs-lookup"><span data-stu-id="f68c8-828">Return a Quick Response Code (QR code) image in base64 binary format for the specified string.</span></span> | <span data-ttu-id="f68c8-829">**QRCODE (“Ukázkový text”)** vrátí hodnotu **U2FtcGxlIHRleHQ=**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-829">**QRCODE ("Sample text")** returns **U2FtcGxlIHRleHQ=**.</span></span> |
-
-### <a name="data-collection-functions"></a><span data-ttu-id="f68c8-830">Funkce shromažďování dat</span><span class="sxs-lookup"><span data-stu-id="f68c8-830">Data collection functions</span></span>
-
-| <span data-ttu-id="f68c8-831">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-831">Function</span></span> | <span data-ttu-id="f68c8-832">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-832">Description</span></span> | <span data-ttu-id="f68c8-833">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-833">Example</span></span> |
-|----------|-------------|---------|
-| <span data-ttu-id="f68c8-834">FORMATELEMENTNAME ()</span><span class="sxs-lookup"><span data-stu-id="f68c8-834">FORMATELEMENTNAME ()</span></span> | <span data-ttu-id="f68c8-835">Vrátí název prvku aktuálního formátu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-835">Return the name of the current format's element.</span></span> <span data-ttu-id="f68c8-836">Vrátí prázdný řetězec, když je příznak **Podrobnosti výstupu shromažďování** aktuálních souborů vypnut.</span><span class="sxs-lookup"><span data-stu-id="f68c8-836">Return an empty string when the **Collect output details** flag of the current files is turned off.</span></span> | <span data-ttu-id="f68c8-837">Další informace o použití těchto funkcí najdete v průvodci záznamem úloh **Elektronické výkaznictví - zdroj dat formát výstupu pro inventuru a souhrn**, část obchodního procesu **Získání/vývoj komponent služby/řešení**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-837">To learn more about how to use this function, see the **ER Use data of format output for counting and summing** task guide, which is part of the **Acquire/Develop IT service/solution components** business process.</span></span> |
-| <span data-ttu-id="f68c8-838">SUMIFS (key string for summing, criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])</span><span class="sxs-lookup"><span data-stu-id="f68c8-838">SUMIFS (key string for summing, criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])</span></span> | <span data-ttu-id="f68c8-839">Vrátí součet hodnot získaných pro XML uzly (s názvem definovaným jako klíč) při spuštění formátu, který splňuje zadané podmínky (dvojice rozsahů a hodnot).</span><span class="sxs-lookup"><span data-stu-id="f68c8-839">Return the sum of values  that was collected for XML nodes (where the name is defined as a key) when the format was run, and that satisfies the specified conditions (pairs of ranges and values).</span></span> <span data-ttu-id="f68c8-840">Vrací hodnotu **0** (nula), když je příznak  **Podrobnosti výstupu shromažďování** aktuálních souborů vypnut.</span><span class="sxs-lookup"><span data-stu-id="f68c8-840">Return a **0** (zero) value when the **Collect output details** flag of the current files is turned off.</span></span> | |
-| <span data-ttu-id="f68c8-841">SUMIF (řetězec klíče pro sčítání, řetězec kritéria rozsahu, řetězec kritéria hodnoty)</span><span class="sxs-lookup"><span data-stu-id="f68c8-841">SUMIF (key string for summing, criteria range string, criteria value string)</span></span> | <span data-ttu-id="f68c8-842">Vrátí součet hodnot získaných pro XML uzly (s názvem definovaným jako klíč) při spuštění formátu, který splňuje zadanou podmínku (rozsah a hodnotu).</span><span class="sxs-lookup"><span data-stu-id="f68c8-842">Return the sum of values that was collected for XML nodes (where the name is defined as a key) when the format was run, and that satisfies the specified condition (a range and value).</span></span> <span data-ttu-id="f68c8-843">Vrací hodnotu **0** (nula), když je příznak  **Podrobnosti výstupu shromažďování** aktuálních souborů vypnut.</span><span class="sxs-lookup"><span data-stu-id="f68c8-843">Return a **0** (zero) value when the **Collect output details** flag of the current files is turned off.</span></span> | |
-| <span data-ttu-id="f68c8-844">COUNTIFS (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])</span><span class="sxs-lookup"><span data-stu-id="f68c8-844">COUNTIFS (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])</span></span> | <span data-ttu-id="f68c8-845">Vrátí počet XML uzlů získaný během spuštění formátu, který splňuje zadané podmínky (dvojice rozsahů a hodnot).</span><span class="sxs-lookup"><span data-stu-id="f68c8-845">Return the number of XML nodes that was collected when the format was run, and that satisfies the specified conditions (pairs of ranges and values).</span></span> <span data-ttu-id="f68c8-846">Vrací hodnotu **0** (nula), když je příznak  **Podrobnosti výstupu shromažďování** aktuálních souborů vypnut.</span><span class="sxs-lookup"><span data-stu-id="f68c8-846">Return a **0** (zero) value when the **Collect output details** flag of the current files is turned off.</span></span> | |
-| <span data-ttu-id="f68c8-847">COUNTIF (řetězec rozsahu kritérií, řetězec hodnoty kritérií)</span><span class="sxs-lookup"><span data-stu-id="f68c8-847">COUNTIF (criteria range string, criteria value string)</span></span> | <span data-ttu-id="f68c8-848">Vrátí počet XML uzlů získaný během spuštění formátu, který splňuje zadanou podmínku (rozsah a hodnotu).</span><span class="sxs-lookup"><span data-stu-id="f68c8-848">Return the number of XML nodes that was collected when the format was run, and that satisfies the specified condition (a range and value).</span></span> <span data-ttu-id="f68c8-849">Vrací hodnotu **0** (nula), když je příznak  **Podrobnosti výstupu shromažďování** aktuálních souborů vypnut.</span><span class="sxs-lookup"><span data-stu-id="f68c8-849">Return a **0** (zero) value the flag **Collect output details** flag of the current files is turned off.</span></span> | |
-| <span data-ttu-id="f68c8-850">COLLECTEDLIST (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])</span><span class="sxs-lookup"><span data-stu-id="f68c8-850">COLLECTEDLIST (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])</span></span> | <span data-ttu-id="f68c8-851">Vrátí seznam hodnot získaný pro XML uzly během spuštění formátu, který splňuje zadané podmínky (rozsah a hodnotu).</span><span class="sxs-lookup"><span data-stu-id="f68c8-851">Return the list of values that was collected for XML nodes when the format was run, and that satisfies the specified conditions (a range and value).</span></span> <span data-ttu-id="f68c8-852">Vrátí prázdný seznam, když je příznak **Podrobnosti výstupu shromažďování** aktuálních souborů vypnut.</span><span class="sxs-lookup"><span data-stu-id="f68c8-852">Return an empty list when the **Collect output details** flag of the current files is turned off.</span></span> | |
-
-### <a name="other-business-domainspecific-functions"></a><span data-ttu-id="f68c8-853">Další funkce (konkrétní pro obchodní domény)</span><span class="sxs-lookup"><span data-stu-id="f68c8-853">Other (business domain–specific) functions</span></span>
-
-| <span data-ttu-id="f68c8-854">Funkce</span><span class="sxs-lookup"><span data-stu-id="f68c8-854">Function</span></span> | <span data-ttu-id="f68c8-855">popis</span><span class="sxs-lookup"><span data-stu-id="f68c8-855">Description</span></span> | <span data-ttu-id="f68c8-856">Příklad</span><span class="sxs-lookup"><span data-stu-id="f68c8-856">Example</span></span> |
-|----------|-------------|---------|
-| <span data-ttu-id="f68c8-857">CONVERTCURRENCY (částka, zdrojová měna, cílová měna, datum, společnost)</span><span class="sxs-lookup"><span data-stu-id="f68c8-857">CONVERTCURRENCY (amount, source currency, target currency, date, company)</span></span> | <span data-ttu-id="f68c8-858">Převede zadanou peněžní částku ze zadané měny na zadanou měnu za použití nastavení zadané společnosti v aplikaci Finance and Operations k zadanému datu.</span><span class="sxs-lookup"><span data-stu-id="f68c8-858">Convert the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified Finance and Operations company on the specified date.</span></span> | <span data-ttu-id="f68c8-859">**CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** vrátí ekvivalent jednoho eura v amerických dolarech v aktuální den relace podle nastavení společnosti DEMF.</span><span class="sxs-lookup"><span data-stu-id="f68c8-859">**CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** returns the equivalent of one euro in US dollars on the current session date, based on settings for the DEMF company.</span></span> |
-| <span data-ttu-id="f68c8-860">ROUNDAMOUNT (číslo, desetinná místa, pravidlo zaokrouhlování)</span><span class="sxs-lookup"><span data-stu-id="f68c8-860">ROUNDAMOUNT (number, decimals, round rule)</span></span> | <span data-ttu-id="f68c8-861">Zaokrouhlí zadanou částku na zadaný počet bdesetinných míst podle zadaného pravidla zaokrouhlování.</span><span class="sxs-lookup"><span data-stu-id="f68c8-861">Round the specified amount to the specified number of decimal places according to the specified rounding rule.</span></span><blockquote>[!NOTE] <span data-ttu-id="f68c8-862">Pravidlo zaokrouhlování musí být zadáno jako hodnota výčtu **RoundOffType** aplikace Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f68c8-862">The rounding rule must be specified as a value of the Finance and Operations **RoundOffType** enumeration.</span></span></blockquote> | <span data-ttu-id="f68c8-863">Pokud je parametr **model.RoundOff** nastaven na **Downward**, **3ROUNDAMOUNT (1000.787, 2, model.RoundOff)** vrátí hodnotu **1000.78**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-863">If the **model.RoundOff** parameter is set to **Downward**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.78**.</span></span> <span data-ttu-id="f68c8-864">Pokud je parametr **model.RoundOff** nastaven na hodnotu **Normal** nebo **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** vrátí hodnotu **1000.79**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-864">If the **model.RoundOff** parameter is set to either **Normal** or **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.79**.</span></span> |
-| <span data-ttu-id="f68c8-865">CURCredRef (číslice)</span><span class="sxs-lookup"><span data-stu-id="f68c8-865">CURCredRef (digits)</span></span> | <span data-ttu-id="f68c8-866">Vrátí referenční údaj věřitele na základě číslic zadaného čísla faktury.</span><span class="sxs-lookup"><span data-stu-id="f68c8-866">Return a creditor reference, based on the digits of the specified invoice number.</span></span> | <span data-ttu-id="f68c8-867">**CURCredRef ("VEND-200002")** vrátí hodnotu **"2200002"**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-867">**CURCredRef ("VEND-200002")** returns **"2200002"**.</span></span> |
-| <span data-ttu-id="f68c8-868">MOD\_97 (číslice)</span><span class="sxs-lookup"><span data-stu-id="f68c8-868">MOD\_97 (digits)</span></span> | <span data-ttu-id="f68c8-869">Vrátí referenční údaj věřitele jako výraz MOD97 na základě číslic zadaného čísla faktury.</span><span class="sxs-lookup"><span data-stu-id="f68c8-869">Return a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</span></span> | <span data-ttu-id="f68c8-870">**MOD\_97 ("VEND-200002")** vrátí **"20000285"**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-870">**MOD\_97 ("VEND-200002")** returns **"20000285"**.</span></span> |
-| <span data-ttu-id="f68c8-871">ISOCredRef (číslice)</span><span class="sxs-lookup"><span data-stu-id="f68c8-871">ISOCredRef (digits)</span></span> | <span data-ttu-id="f68c8-872">Vrátí ISO údaj věřitele na základě číslic a abecedních symbolů zadaného čísla faktury.</span><span class="sxs-lookup"><span data-stu-id="f68c8-872">Return an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.</span></span><blockquote>[!NOTE] <span data-ttu-id="f68c8-873">Chcete-li vyloučit z abecedy symboly, které jsou v souladu se standardem ISO, vstupní parametr musí být přeložen před jeho předáním této funkci.</span><span class="sxs-lookup"><span data-stu-id="f68c8-873">To eliminate symbols from alphabets that aren't ISO-compliant, the input parameter must be translated before it's passed to this function.</span></span></blockquote> | <span data-ttu-id="f68c8-874">**ISOCredRef ("VEND-200002")** vrátí hodnotu **"RF23VEND-200002"**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-874">**ISOCredRef ("VEND-200002")** returns **"RF23VEND-200002"**.</span></span> |
-| <span data-ttu-id="f68c8-875">CN\_GBT\_AdditionalDimensionID (řetězec, číslo)</span><span class="sxs-lookup"><span data-stu-id="f68c8-875">CN\_GBT\_AdditionalDimensionID (string, number)</span></span> | <span data-ttu-id="f68c8-876">Získá zadané ID další finanční dimenze.</span><span class="sxs-lookup"><span data-stu-id="f68c8-876">Get the specified additional financial dimension ID.</span></span> <span data-ttu-id="f68c8-877">Dimenze jsou reprezentovány v parametru **řetězec** jako ID oddělená čárkou.</span><span class="sxs-lookup"><span data-stu-id="f68c8-877">In the **string** parameter, dimensions are represented as IDs that are separated by commas.</span></span> <span data-ttu-id="f68c8-878">Parametr **číslo** definuje kód sekvence požadované dimenze v řetězci.</span><span class="sxs-lookup"><span data-stu-id="f68c8-878">The **number** parameter defines the sequence code of the requested dimension in the string.</span></span> | <span data-ttu-id="f68c8-879">**CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** vrací **"CC"**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-879">**CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returns **"CC"**.</span></span> |
-| <span data-ttu-id="f68c8-880">GetCurrentCompany ()</span><span class="sxs-lookup"><span data-stu-id="f68c8-880">GetCurrentCompany ()</span></span> | <span data-ttu-id="f68c8-881">Vrací textovou reprezentaci kódu právnické osoby (společnosti), ke které je uživatel momentálně přihlášen.</span><span class="sxs-lookup"><span data-stu-id="f68c8-881">Return a text representation of the code for the legal entity (company) that a user is currently signed in to.</span></span> | <span data-ttu-id="f68c8-882">**GETCURRENTCOMPANY ()** vrátí hodnotu **USMF** u uživatele přihlášeného v aplikaci Finance and Operations ke společnosti **Contoso Entertainment System USA**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-882">**GETCURRENTCOMPANY ()** returns **USMF** for a user who is signed in to the **Contoso Entertainment System USA** company in Finance and Operations.</span></span> |
-| <span data-ttu-id="f68c8-883">CH\_BANK\_MOD\_10 (číslice)</span><span class="sxs-lookup"><span data-stu-id="f68c8-883">CH\_BANK\_MOD\_10 (digits)</span></span> | <span data-ttu-id="f68c8-884">Vrátí odkaz věřitele jako výraz MOD10 na základě číslic zadaného čísla faktury.</span><span class="sxs-lookup"><span data-stu-id="f68c8-884">Return a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.</span></span> | <span data-ttu-id="f68c8-885">**CH\_BANK\_MOD\_10 ("VEND-200002")** vrátí **3**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-885">**CH\_BANK\_MOD\_10 ("VEND-200002")** returns **3**.</span></span> |
-| <span data-ttu-id="f68c8-886">FA\_SUM (kód dlouhodobého majetku, kód modelu hodnoty, počáteční datum, koncové datum)</span><span class="sxs-lookup"><span data-stu-id="f68c8-886">FA\_SUM (fixed asset code, value model code, start date, end date)</span></span> | <span data-ttu-id="f68c8-887">Vrátí připravený datový kontejner částky dlouhodobého majetku za období.</span><span class="sxs-lookup"><span data-stu-id="f68c8-887">Return the prepared data container of the fixed asset amount for the specified period.</span></span> | <span data-ttu-id="f68c8-888">**FA\_SUM ("COMP-000001", "Current", Date1, Date2)** vrátí připravený datový kontejner dlouhodobého majetku **"COMP-000001"** s modelem hodnoty **"Current"** za období mezi **Date1** a **Date2**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-888">**FA\_SUM ("COMP-000001", "Current", Date1, Date2)** returns the prepared data container of fixed asset **"COMP-000001"** that has the **"Current"** value model for a period from **Date1** to **Date2**.</span></span> |
-| <span data-ttu-id="f68c8-889">FA\_BALANCE (kód dlouhodobého majetku, kód oceňovacího modelu, vykazovaný rok, datum sestavy)</span><span class="sxs-lookup"><span data-stu-id="f68c8-889">FA\_BALANCE (fixed asset code, value model code, reporting year, reporting date)</span></span> | <span data-ttu-id="f68c8-890">Vrátí připravený datový kontejner zůstatku dlouhodobého majetku.</span><span class="sxs-lookup"><span data-stu-id="f68c8-890">Return the prepared data container of the fixed asset balance.</span></span> <span data-ttu-id="f68c8-891">Rok vykazování je nutné zadat jako hodnotu výčtu aplikace Finance and Operations **AssetYear**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-891">The reporting year must be specified as a value of the **AssetYear** enumeration in Finance and Operations.</span></span> | <span data-ttu-id="f68c8-892">**FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** vrátí připravený datový kontejner zůstatků pro dlouhodobý majetek **"COMP-000001"** s modelem hodnoty **"Current"** k aktuálnímu datu relace aplikace 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f68c8-892">**FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returns the prepared data container of balances for fixed asset **"COMP-000001"** that has the **"Current"** value model on the current Finance and Operations session date.</span></span> |
-| <span data-ttu-id="f68c8-893">TABLENAME2ID (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-893">TABLENAME2ID (string)</span></span> | <span data-ttu-id="f68c8-894">Vrací reprezentaci celého čísla ID tabulky pro daný název tabulky.</span><span class="sxs-lookup"><span data-stu-id="f68c8-894">Return an integer representation of a table ID for the specified table name.</span></span> | <span data-ttu-id="f68c8-895">**TABLENAME2ID ("Intrastat")** vrátí hodnotu **1510**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-895">**TABLENAME2ID ("Intrastat")** returns **1510**.</span></span> |
-| <span data-ttu-id="f68c8-896">ISVALIDCHARACTERISO7064 (řetězec)</span><span class="sxs-lookup"><span data-stu-id="f68c8-896">ISVALIDCHARACTERISO7064 (string)</span></span> | <span data-ttu-id="f68c8-897">Vrátí logickou hodnotu **TRUE**, pokud zadaný řetězec představuje platné mezinárodní číslo bankovního účtu (IBAN).</span><span class="sxs-lookup"><span data-stu-id="f68c8-897">Return the Boolean value **TRUE** when the specified string represents a valid international bank account number (IBAN).</span></span> <span data-ttu-id="f68c8-898">V opačném případě vrátí logickou hodnotu **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-898">Otherwise, return the Boolean value **FALSE**.</span></span> | <span data-ttu-id="f68c8-899">**ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** vrátí hodnotu **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-899">**ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returns **TRUE**.</span></span> <span data-ttu-id="f68c8-900">**ISVALIDCHARACTERISO7064 ("AT61")** vrátí hodnotu **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-900">**ISVALIDCHARACTERISO7064 ("AT61")** returns **FALSE**.</span></span> |
-| <span data-ttu-id="f68c8-901">NUMSEQVALUE (kód číselné řady, obor, id oboru)</span><span class="sxs-lookup"><span data-stu-id="f68c8-901">NUMSEQVALUE (number sequence code, scope, scope id)</span></span> | <span data-ttu-id="f68c8-902">Vrátí novou vygenerovanou hodnotu číselné řady, na základě zadaného kódu číselné řady, oboru a ID oboru.</span><span class="sxs-lookup"><span data-stu-id="f68c8-902">Return the new generated value of a number sequence, based on the specified number sequence code, scope, and scope ID.</span></span> <span data-ttu-id="f68c8-903">Obor je nutné zadat jako hodnotu výčtu **ERExpressionNumberSequenceScopeType** výčtu (**Sdílený**, **Právnická osoba**, nebo **Společnost**).</span><span class="sxs-lookup"><span data-stu-id="f68c8-903">The scope must be specified as a value of the **ERExpressionNumberSequenceScopeType** enumeration (**Shared**, **Legal entity**, or **Company**).</span></span> <span data-ttu-id="f68c8-904">Pro obor **Sdílený** zadejte prázdný řetězec jako ID oboru.</span><span class="sxs-lookup"><span data-stu-id="f68c8-904">For the **Shared** scope, specify an empty string as the scope ID.</span></span> <span data-ttu-id="f68c8-905">Pro obory **Společnost** a **Právnická osoba** zadejte kód společnosti jako ID oboru.</span><span class="sxs-lookup"><span data-stu-id="f68c8-905">For the **Company** and **Legal entity** scopes, specify the company code as the scope ID.</span></span> <span data-ttu-id="f68c8-906">Pro obory **Společnost** a **Právnická osoba** se použije aktuální kód společnosti, pokud použijete prázdný řetězec jako ID oboru.</span><span class="sxs-lookup"><span data-stu-id="f68c8-906">For the **Company** and **Legal entity** scopes, if you specify an empty string as the scope ID, the current company code is used.</span></span> | <span data-ttu-id="f68c8-907">Definujte v mapování modelu následující zdroje dat:</span><span class="sxs-lookup"><span data-stu-id="f68c8-907">You define the following data sources in your model mapping:</span></span><ul><li><span data-ttu-id="f68c8-908">**enumScope** (typ **výčet Dynamics 365 for Operations**), který odkazuje na výčet **ERExpressionNumberSequenceScopeType**</span><span class="sxs-lookup"><span data-stu-id="f68c8-908">**enumScope** (**Dynamics 365 for Operations enumeration** type), which refers to the **ERExpressionNumberSequenceScopeType** enumeration</span></span></li><li><span data-ttu-id="f68c8-909">**NumSeq** (typ **Vypočítané pole**), která obsahuje výraz **NUMSEQVALUE ("genovou\_1", enumScope.Company, "")**</span><span class="sxs-lookup"><span data-stu-id="f68c8-909">**NumSeq** (**Calculated field** type), which contains the expression **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</span></span></li></ul><span data-ttu-id="f68c8-910">Když je volán datový zdroj **NumSeq**, vrátí novou vygenerovanou hodnotu číselné řady **Gene\_1**, která byla nakonfigurována pro společnost poskytující kontext, pod kterým běží formát elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-910">When the **NumSeq** data source is called, it returns the new generated value of the **Gene\_1** number sequence that has been configured for the company that supplies the context that the ER format is run under.</span></span> |
-| <span data-ttu-id="f68c8-911">NUMSEQVALUE (kód číselné řady)</span><span class="sxs-lookup"><span data-stu-id="f68c8-911">NUMSEQVALUE (number sequence code)</span></span> | <span data-ttu-id="f68c8-912">Vrátí novou vygenerovanou hodnotu číselné řady, na základě určené číselné řady, oboru **Společnost** a kódu společnosti (jako ID oboru) poskytující kontext, pod kterým běží formát elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="f68c8-912">Return the new generated value of a number sequence, based on the specified number sequence, the **Company** scope, and (as the scope ID) the code of the company that supplies the context that is ER format is run under.</span></span> | <span data-ttu-id="f68c8-913">Definujete následující zdroje dat v mapování modelu: **NumSeq** (typ **Vypočítané pole**).</span><span class="sxs-lookup"><span data-stu-id="f68c8-913">You define the following data source in your model mapping: **NumSeq** (**Calculated field** type).</span></span> <span data-ttu-id="f68c8-914">Tento zdroj dat obsahuje výraz **NUMSEQVALUE ("Gene\_1")**.</span><span class="sxs-lookup"><span data-stu-id="f68c8-914">This data source contains the expression **NUMSEQVALUE ("Gene\_1")**.</span></span> <span data-ttu-id="f68c8-915">Když je volán datový zdroj **NumSeq**, vrátí novou vygenerovanou hodnotu číselné řady **Gene\_1**, která byla nakonfigurována pro společnost poskytující kontext, pod kterým běží formát elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-915">When the **NumSeq** data source is called, it returns the new generated value of the **Gene\_1** number sequence that has been configured for the company that supplies the context that the ER format is run under.</span></span> |
-| <span data-ttu-id="f68c8-916">NUMSEQVALUE (ID záznamu číselné řady)</span><span class="sxs-lookup"><span data-stu-id="f68c8-916">NUMSEQVALUE (number sequence record ID)</span></span> | <span data-ttu-id="f68c8-917">Vrátí novou vygenerovanou hodnotu číselné řady, na základě zadaného ID záznamu číselné řady.</span><span class="sxs-lookup"><span data-stu-id="f68c8-917">Return the new generated value of a number sequence, based on the specified number sequence record ID.</span></span> | <span data-ttu-id="f68c8-918">Definujte v mapování modelu následující zdroje dat:</span><span class="sxs-lookup"><span data-stu-id="f68c8-918">You define the following data sources in your model mapping:</span></span><ul><li><span data-ttu-id="f68c8-919">**LedgerParms** (typ **Tabulka**), která odkazuje na tabulku LedgerParameters</span><span class="sxs-lookup"><span data-stu-id="f68c8-919">**LedgerParms** (**Table** type), which refers to the LedgerParameters table</span></span></li><li><span data-ttu-id="f68c8-920">**NumSeq** (typ **Vypočítané pole**), která obsahuje výraz **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</span><span class="sxs-lookup"><span data-stu-id="f68c8-920">**NumSeq** (**Calculated field** type), which contains the expression **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</span></span></li></ul><span data-ttu-id="f68c8-921">Když je volán datový zdroj **NumSeq**, vrátí novou vygenerovanou hodnotu číselné řady, která byla nakonfigurována v parametrech hlavní knihy pro společnost poskytující kontext, pod kterým běží formát elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-921">When the **NumSeq** data source is called, it returns the new generated value of the number sequence that has been configured in the General ledger parameters for the company that supplies the context that the ER format is run under.</span></span> <span data-ttu-id="f68c8-922">Tato číselná řada jedinečně identifikuje deníky a chová se jako číslo dávky propojující transakce dohromady.</span><span class="sxs-lookup"><span data-stu-id="f68c8-922">This number sequence uniquely identifies journals and acts as a batch number that links the transactions together.</span></span> |
-
-### <a name="functions-list-extension"></a><span data-ttu-id="f68c8-923">Rozšíření seznamu funkcí</span><span class="sxs-lookup"><span data-stu-id="f68c8-923">Functions list extension</span></span>
-
-<span data-ttu-id="f68c8-924">Elektronické výkaznictví umožňuje rozšířit seznam funkcí, které se používají ve výrazech elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f68c8-924">ER lets you extend the list of functions that are used in ER expressions.</span></span> <span data-ttu-id="f68c8-925">Je však vyžadováno určité technické úsilí.</span><span class="sxs-lookup"><span data-stu-id="f68c8-925">Some engineering effort is required.</span></span> <span data-ttu-id="f68c8-926">Další informace naleznete v tématu [Rozšíření seznamu funkcí elektronického vykazování](general-electronic-reporting-formulas-list-extension.md).</span><span class="sxs-lookup"><span data-stu-id="f68c8-926">For detailed information, see [Extending the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md).</span></span>
-
-## <a name="additional-resources"></a><span data-ttu-id="f68c8-927">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="f68c8-927">Additional resources</span></span>
-
-- [<span data-ttu-id="f68c8-928">Přehled elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="f68c8-928">Electronic Reporting overview</span></span>](general-electronic-reporting.md)
-- [<span data-ttu-id="f68c8-929">Rozšíření seznamu funkcí elektronického vykazování</span><span class="sxs-lookup"><span data-stu-id="f68c8-929">Extend the list of Electronic reporting (ER) functions</span></span>](general-electronic-reporting-formulas-list-extension.md)
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="general-electronic-reporting-formula-designer.md" target-language="cs-CZ">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>general-electronic-reporting-formula-designer.d3f1ab.85d2370353520ee588dfe2aedf9998d707f0eda6.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>85d2370353520ee588dfe2aedf9998d707f0eda6</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>97ed74889a09ef385f6ecbab69e84a05ff42ee41</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/20/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\analytics\general-electronic-reporting-formula-designer.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Formula designer in Electronic reporting (ER)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Návrhář receptur v elektronickém výkaznictví</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic explains how to use the formula designer in Electronic reporting (ER).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Formula designer in Electronic reporting (ER)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Návrhář receptur v elektronickém výkaznictví</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic explains how to use the formula designer in Electronic reporting (ER).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při vytváření formátu pro určitý elektronický dokument pro elektronické výkaznictví můžete použít vzorce k převodu dat za účelem plnění požadavků na plnění a formátování daného dokumentu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>These formulas resemble formulas in Microsoft Excel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto vzorce připomínají vzorce aplikace Microsoft Excel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, data type conversion, and other (business domain–specific functions).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve vzorcích jsou podporovány různé typy funkcí: text, datum a čas, matematika, logika, informace, převod datových typů a další (funkce specifické pro danou obchodní doménu).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Formula designer overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přehled návrháře vzorců</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>ER supports the formula designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronické výkaznictví podporuje návrháře receptur.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Therefore, at design time, you can configure expressions that can be used for the following tasks at runtime:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proto můžete během návrhu konfigurovat výrazy, které lze použít pro následující úkoly za běhu:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Transform data that is received from a Microsoft Dynamics 365 for Finance and Operations database, and that should be entered in an ER data model that is designed to be a data source for ER formats.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Transformujte data, přijatá z databáze Microsoft Dynamics 365 for Finance and Operations, která by měla být zadána do datového modelu elektronického výkaznictví navrženého jako datový zdroj pro formáty elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>(For example, these transformations might include filtering, grouping, and data type conversion.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Tyto transformace mohou například zahrnovat filtrování, seskupení a převod typů dat.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Format data that must be sent to a generating electronic document in accordance with the layout and conditions of a specific ER format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formátování dat, která musí být odeslána do generovaného elektronické dokument v souladu s rozvržením a podmínkami konkrétního formátu elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>(For example, the formatting might be done in accordance with the requested language or culture, or the encoding).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Formátování může být například provedeno v souladu s požadovaným jazykem, jazykovou verzí nebo kódováním).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Control the process of creating electronic documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontrola procesu vytváření elektronických dokumentů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>(For example, the expressions can enable or disable the output of specific elements of the format, depending on processing data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Například výrazy mohou povolit nebo zakázat výstup konkrétních prvků formátu, v závislosti na zpracování dat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>They can also interrupt the document creation process or throw messages to users.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mohou rovněž přerušit proces vytváření dokumentu nebo odesílat zprávy uživateli.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>You can open the <bpt id="p1">**</bpt>Formula designer<ept id="p1">**</ept> page when you perform any of the following actions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete otevřít stránku <bpt id="p1">**</bpt>Návrhář receptur<ept id="p1">**</ept> po provedení některé z následujících akcí:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Bind data source items to data model components.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vazba položek zdroje dat na součásti datového modelu,</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Bind data source items to format components.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vazba položek zdroje dat na součásti formátu,</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Complete maintenance of calculated fields that are part of data sources.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">kompletní údržba vypočtených polí, která jsou součástí datových zdrojů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Define the visibility conditions for user input parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">definování podmínek viditelnosti pro vstupní parametry uživatele,</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Design a format's transformations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">návrh transformací formátu,</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Define the enabling conditions for the format's components.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">definování povolení podmínek pro součásti formátu,</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Define the file names for the format's FILE components.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">definování názvů souborů pro součásti souboru formátu,</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Define the conditions for process control validations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">definování podmínek pro ověření kontroly procesu,</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Define the message text for process control validations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">definování textu zpráv pro ověření kontroly procesu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Designing ER formulas</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření vzorců elektronického výkaznictví</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Data binding</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datová vazba</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>The ER formula designer can be used to define an expression that transforms data that is received from data sources, so that the data can be entered in the data consumer at runtime:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Návrháře receptur elektronického výkaznictví lze použít k definování výrazu, který převádí data přijatá ze zdrojů dat, aby tato data bylo možné zadat v příjemci dat za běhu:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>From Finance and Operations data sources and runtime parameters to an ER data model</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ze zdrojů dat aplikace Finance and Operations a parametrů spuštění do datového modelu elektronického výkaznictví,</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>From an ER data model to an ER format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">z datového modelu elektronického výkaznictví do formátu elektronického výkaznictví,</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>From Finance and Operations data sources and runtime parameters to an ER format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ze zdrojů dat aplikace Finance and Operations a parametrů spuštění do formátu elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The following illustration shows the design of an expression of this type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje návrh výraz tohoto typu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>In this example, the expression rounds the value of the <bpt id="p1">**</bpt>Intrastat.AmountMST<ept id="p1">**</ept> field the Intrastat table in Finance and Operations to two decimal places and then returns the rounded value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu výraz zaokrouhluje hodnotu pole <bpt id="p1">**</bpt>Intrastat.AmountMST<ept id="p1">**</ept> tabulky Intrastat aplikace Finance and Operations na dvě desetinná místa a vrací zaokrouhlenou hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Data binding<ept id="p1">](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Datová vazba<ept id="p1">](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>The following illustration shows how an expression of this type can be used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je možné použít následující obrázek, který znázorňuje návrh výrazu tohoto typu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In this example, the result of the designed expression is entered in the <bpt id="p1">**</bpt>Transaction.InvoicedAmount<ept id="p1">**</ept> component of the <bpt id="p2">**</bpt>Tax reporting model<ept id="p2">**</ept> data model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu je výsledek navrženého výrazu zadán do komponenty <bpt id="p1">**</bpt>Transaction.InvoicedAmount<ept id="p1">**</ept> datového modelu <bpt id="p2">**</bpt>Vykazování daně<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Data binding being used<ept id="p1">](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Používané datové vazby<ept id="p1">](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>At runtime, the designed formula, <bpt id="p1">**</bpt>ROUND (Intrastat.AmountMST, 2)<ept id="p1">**</ept>, rounds the value of the <bpt id="p2">**</bpt>AmountMST<ept id="p2">**</ept> field for each record in the Intrastat table to two decimal places.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Navržený vzorec <bpt id="p1">**</bpt>ROUND (Intrastat.AmountMST 2)<ept id="p1">**</ept>, zaokrouhluje za běhu hodnot pole <bpt id="p2">**</bpt>AmountMST<ept id="p2">**</ept> pro každý záznam v tabulce Intrastat na dvě desetinná místa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>It then enters the rounded value in the <bpt id="p1">**</bpt>Transaction.InvoicedAmount<ept id="p1">**</ept> component of the <bpt id="p2">**</bpt>Tax reporting<ept id="p2">**</ept> data model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poté zadá zaokrouhlenou hodnotu do komponenty <bpt id="p1">**</bpt>Transaction.InvoicedAmount<ept id="p1">**</ept> datového modelu <bpt id="p2">**</bpt>Vykazování daně<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Data formatting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formátování dat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>The ER formula designer can be used to define an expression that formats data that is received from data sources, so that the data can be sent as part of the generating electronic document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Návrháře receptur elektronického výkaznictví lze použít k definování výrazu, který naformátuje data přijatá ze zdrojů dat, aby tato data bylo možné odeslat jako součást generovaného elektronického dokumentu:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>You might have formatting that must be applied as a typical rule that should be reused for a format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete mít formátování, které je třeba použít jako typické pravidlo, které by mělo být znovu použito pro formát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>In this case, you can introduce that formatting one time in the format configuration, as a named transformation that has a formatting expression.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V takovém případě můžete uvést toto formátování jednou v konfiguraci formátu jako pojmenovanou transformaci, která má výraz formátování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>This named transformation can then be linked to many format components where the output must be formatted according to the formatting expression that you created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuto pojmenovanou transformaci lze potom propojit s mnoha komponentami formátu, kde výstup musí být formátován podle vytvořeného výrazu formátování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>The following illustration shows the design of a transformation of this type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje návrh transformace tohoto typu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>In this example, the <bpt id="p1">**</bpt>TrimmedString<ept id="p1">**</ept> transformation truncates incoming data of the <bpt id="p2">**</bpt>String<ept id="p2">**</ept> data type by removing leading and trailing spaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu ořeže transformace <bpt id="p1">**</bpt>TrimmedString<ept id="p1">**</ept> vstupní data typu dat <bpt id="p2">**</bpt>Řetězec<ept id="p2">**</ept> odstraněním počáteční a koncové mezery.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>It then returns the truncated string value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí hodnotu oříznutého řetězce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Transformation<ept id="p1">](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Transformace<ept id="p1">](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>The following illustration shows how a transformation of this type can be used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je možné použít následující obrázek, který znázorňuje návrh transformace tohoto typu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>In this example, several format components send text as output to the generating electronic document at runtime.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu více součástí formátu odesílá text jako výstup do generovaného elektrického dokumentu za běhu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>All these format components refer to the <bpt id="p1">**</bpt>TrimmedString<ept id="p1">**</ept> transformation by name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny tyto součásti formátu odkazují na transofmraci <bpt id="p1">**</bpt>TrimmedString<ept id="p1">**</ept> podle názvu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Transformation being used<ept id="p1">](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Použitá transformace<ept id="p1">](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>When format components, such as the <bpt id="p1">**</bpt>partyName<ept id="p1">**</ept> component in the preceding illustration, refer to the <bpt id="p2">**</bpt>TrimmedString<ept id="p2">**</ept> transformation, the transformation sends text as output to the generating electronic document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Když součásti formátu, jako je například součást <bpt id="p1">**</bpt>partyName<ept id="p1">**</ept> na předchozím obrázku, odkazují na transformaci <bpt id="p2">**</bpt>TrimmedString<ept id="p2">**</ept>, transformace odešle text jako výstup generovaného elektronického dokumentu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>This text doesn't include leading and trailing spaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento text nezahrnuje počáteční a koncové mezery.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>If you have formatting that must be applied individually, you can introduce that formatting as an individual expression of a binding of a specific format component.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud máte formátování, které je nutné použít jednotlivě, můžete toto formátování použít jako jednotlivý výraz vazby konkrétní součásti formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>The following illustration shows an expression of this type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje výraz tohoto typu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>In this example, the <bpt id="p1">**</bpt>partyType<ept id="p1">**</ept> format component is bound to the data source via an expression that converts incoming data from the <bpt id="p2">**</bpt>Model.Company.RegistrationType<ept id="p2">**</ept> field in the data source to uppercase text.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu je součást formátu <bpt id="p1">**</bpt>partyType<ept id="p1">**</ept> vázána na zdroj dat pomocí výrazu, který převede příchozí data z pole <bpt id="p2">**</bpt>Model.Company.RegistrationType<ept id="p2">**</ept> ve zdroji dat na text s velkými písmeny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The expression then sends that text as output to the electronic document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výraz pak odešle tento text jako výstup do elektronického dokumentu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Applying formatting to an individual component<ept id="p1">](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Použití formátování na jednotlivou součást<ept id="p1">](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Process flow control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontrola procesního toku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>The ER formula designer can be used to define expressions that control the process flow of generating electronic documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Návrháře receptur elektronického výkaznictví lze použít k definování výrazů, které se používají k řízení toku procesu generovaných elektronických dokumentů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>You can perform the following tasks:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">K dispozici jsou tyto úlohy:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Define conditions that determine when a document creation process must be stopped.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definujte podmínky určující, kdy musí být zastaven proces vytvoření dokumentu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Specify expressions that either create messages for the user about stopped processes or throw execution log messages about the continuing process of report generation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte výrazy, které vytvoří zprávy pro uživatele o zastaveném procesu nebo vyvolají spuštění zpráv protokolu o pokračujícím procesu generování sestav.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Specify the file names of generating electronic documents, and control the conditions of their creation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte názvy souborů generovaných elektronických dokumentů a řiďte podmínky jejich vytvoření.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Each rule of the process flow control is designed as an individual validation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Každé pravidlo procesu řízení toku je navržen jako jednotlivé ověření.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>The following illustration shows a validation of this type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje ověření tohoto typu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Here is an explanation of the configuration in this example:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zde je vysvětlení konfigurace v tomto příkladu:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>The validation is evaluated when the <bpt id="p1">**</bpt>INSTAT<ept id="p1">**</ept> node is created during generation of the XML file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ověření je vyhodnoceno, když je uzel <bpt id="p1">**</bpt>INSTAT<ept id="p1">**</ept> vytvořen během generování souboru XML.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>If the list of transactions is empty, the validation stops the execution process and returns <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je seznam transakcí prázdný, ověření zastaví proces spouštění a vrátí hodnotu <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>The validation returns an error message that includes the text of Finance and Operations label SYS70894 in the user's preferred language.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ověření vrátí chybovou zpráva, která obsahuje textu Finance and Operations popisku SYS70894 v upřednostňovaném jazyce uživatele.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Validation<ept id="p1">](./media/picture-validation.jpg)](./media/picture-validation.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Ověření<ept id="p1">](./media/picture-validation.jpg)](./media/picture-validation.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>The ER formula designer can also be used to generate a file name for a generating electronic document and control the file creation process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Návrhář receptur elektronického výkaznictví lze také použít k vygenerování názvu souboru pro generovaný elektronický dokument a kontrolu procesu vytvoření souboru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>The following illustration shows the design of a process flow control of this type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje návrh kontroly procesního toku tohoto typu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Here is an explanation of the configuration in this example:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zde je vysvětlení konfigurace v tomto příkladu:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>The list of records from the <bpt id="p1">**</bpt>model.Intrastat<ept id="p1">**</ept> data source is divided into batches.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seznam záznamů z datového zdroje <bpt id="p1">**</bpt>model.Intrastat<ept id="p1">**</ept> je rozdělen do dávek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Each batch contains up to 1,000 records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Každá dávka obsahuje až 1 000 záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>The output creates a zip file that contains one file in XML format for every batch that was created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výstup vytvoří soubor ZIP, který obsahuje jeden soubor ve formátu XML pro každou dávku, která byla vytvořena.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>An expression returns a file name for generating electronic documents by concatenating the file name and the file name extension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výraz vrátí název souboru pro generované elektronické dokumenty zřetězením názvu a přípony souboru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>For the second batch and all subsequent batches, the file name contains the batch ID as a suffix.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro druhou dávku a všechny následné dávky obsahuje název souboru ID dávky jako příponu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>An expression enables (by returning <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept>) the file creation process for batches that contain at least one record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výraz umožňuje (vrácením hodnoty <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept>) proces vytváření souborů pro dávky, které obsahují alespoň jeden záznam.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>File control<ept id="p1">](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Kontrola souboru<ept id="p1">](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Basic syntax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Základní syntaxe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>ER expressions can contain any or all of the following elements:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výrazy elektronické výkaznictví mohou obsahovat jakékoli nebo všechny následující prvky:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Constants</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konstanty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Operators</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operátory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>References</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odkazy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Paths</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Cesty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Constants</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konstanty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>When you design expressions, you can use text and numeric constants (that is, values that aren't calculated).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při návrhu výrazů lze použít text a numerické konstanty (hodnoty, které nejsou vypočteny).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>For example, the expression <bpt id="p1">**</bpt>VALUE ("100") + 20<ept id="p1">**</ept> uses the numeric constant <bpt id="p2">**</bpt>20<ept id="p2">**</ept> and the string constant <bpt id="p3">**</bpt>"100"<ept id="p3">**</ept>, and returns the numeric value <bpt id="p4">**</bpt>120<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například výraz <bpt id="p1">**</bpt>VALUE ("100") + 20<ept id="p1">**</ept> používá číselnou konstantu <bpt id="p2">**</bpt>20<ept id="p2">**</ept> a řetězcovou konstantu <bpt id="p3">**</bpt>"100"<ept id="p3">**</ept> a vrátí číselnou hodnotu <bpt id="p4">**</bpt>120<ept id="p4">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>The ER formula designer supports escape sequences.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Návrhář receptur elektronického výkaznictví podporuje řídicí sekvence.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Therefore, you can specify an expression string that should be handled differently.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete tedy určit řetězec výrazu, se kterým má být zacházeno jinak.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>For example, the expression <bpt id="p1">**</bpt>"Leo Tolstoy ""War and Peace"" Volume 1"<ept id="p1">**</ept> returns the text string <bpt id="p2">**</bpt>Leo Tolstoy "War and Peace" Volume 1<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například výraz <bpt id="p1">**</bpt>"Lev Tolstoj ""Vojna a mir"" Svazek 1"<ept id="p1">**</ept> vrátí textový řetězec <bpt id="p2">**</bpt>Lev Tolstoj "Vojna a mir" Svazek 1<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Operators</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operátory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>The following table shows the arithmetic operators that you can use to do basic mathematical operations, such as addition, subtraction, multiplication, and division.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující tabulka ukazuje aritmetické operátory, které lze používat k provádění základních matematických operací, například sčítání, odčítání, dělení a násobení.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Operator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operátor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Meaning</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Význam</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Addition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dodatek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>1+2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1+2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Subtraction, negation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odečítání, negace</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>5-2, -1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5-2, -1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Multiplication</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Násobení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>7<ph id="ph1">\*</ph>8</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7<ph id="ph1">\*</ph>8</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Division</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Divize</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>9/3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">9/3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>The following table shows the comparison operators that are supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující tabulka ukazuje operátory porovnávání, které jsou podporovány.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>You can use these operators to compare two values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto operátory slouží k porovnání dvou hodnot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Operator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operátor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Meaning</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Význam</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Equal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rovno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>X=Y</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X=Y</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Greater than</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je větší než</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>X<ph id="ph1">&amp;gt;</ph>Y</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X<ph id="ph1">&amp;gt;</ph>Y</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Less than</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je menší než</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>X<ph id="ph1">&amp;lt;</ph>Y</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X<ph id="ph1">&amp;lt;</ph>Y</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Greater than or equal to</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Větší než nebo rovno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>X<ph id="ph1">&amp;gt;</ph>=Y</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X<ph id="ph1">&amp;gt;</ph>=Y</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Less than or equal to</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Menší než nebo rovno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>X<ph id="ph1">&amp;lt;</ph>=Y</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X<ph id="ph1">&amp;lt;</ph>=Y</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Not equal to</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Není rovno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>X<ph id="ph1">&amp;lt;</ph><ph id="ph2">&amp;gt;</ph>Y</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X<ph id="ph1">&amp;lt;</ph><ph id="ph2">&amp;gt;</ph>Y</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Additionally, you can use an ampersand (&amp;) as a text concatenation operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kromě toho můžete použít znak &amp; jako operátor ke zřetězení textu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>In this way, you can join, or concatenate, one or more text strings into a single piece of text.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tímto způsobem můžete spojit nebo zřetězit jeden nebo více řetězců do jednoho textu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Operator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operátor</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Meaning</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Význam</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Concatenate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloučit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>"Nothing to print" &amp; ":<ph id="ph1">&amp;nbsp;</ph>" &amp; "no records found"</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"Nic k tisku" &amp; ":<ph id="ph1">&amp;nbsp;</ph>" &amp; "nebyly nalezeny žádné záznamy"</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Operator precedence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Priorita operátorů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>The order that the parts of a compound expression are evaluated in is important.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pořadí, v jakém jsou části složeného výrazu vyhodnoceny, je důležité.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>For example, the result of the expression <bpt id="p1">**</bpt>1 + 4 / 2<ept id="p1">**</ept> varies, depending on whether the addition operation or the division operation is done first.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například výsledek výrazu <bpt id="p1">**</bpt>1 + 4 / 2<ept id="p1">**</ept> se liší v závislosti na tom, zda se provádí nejprve sčítání nebo dělení.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>You can use parentheses to explicitly define how an expression is evaluated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pomocí závorek lze explicitně definovat způsob vyhodnocení výrazu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>For example, to indicate that the addition operation should be done first, you can change the preceding expression to <bpt id="p1">**</bpt>(1 + 4) / 2<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li například uvést, že se sčítání musí provést jako první, můžete upravit předchozí výraz na <bpt id="p1">**</bpt>(1 + 4) / 2<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>If you don't explicitly indicate the order of operations in an expression, the order is based on the default precedence that is assigned to the supported operators.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud pořadí operací ve výrazu, není explicitně definováno, pořadí vychází z výchozí priority přiřazené k podporovaným operátorům.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>The following table shows the precedence that is assigned to each operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V následující tabulce je priorita, která je přiřazena ke každému operátoru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Operators that have a higher precedence (for example, 7) are evaluated before operators that have a lower precedence (for example, 1).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operátory, které mají vyšší prioritu (například 7), jsou vyhodnoceny dříve než operátory s nižší prioritou (například 1).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Precedence</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Priorita</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Operators</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operátory</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Syntax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syntaxe</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>7</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Grouping</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seskupení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>( …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">( …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>6</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Member access</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přístup členů</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>5</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Function call</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Volání funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>( …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">( …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>4</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Multiplicative</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Multiplikativní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source><ph id="ph1">\*</ph> …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph> …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>/ …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">/ …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Additive</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přídavné</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>+ …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">+ …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>- …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Comparison</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Porovnání</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source><ph id="ph1">&amp;lt;</ph> …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;lt;</ph> …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source><ph id="ph1">&amp;lt;</ph>= …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;lt;</ph>= …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source><ph id="ph1"> =</ph><ph id="ph2">&amp;gt;</ph> …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1"> =</ph><ph id="ph2">&amp;gt;</ph> …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source><ph id="ph1">&amp;gt;</ph> …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;gt;</ph> …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>= …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">= …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source><ph id="ph1">&amp;lt;</ph><ph id="ph2">&amp;gt;</ph> …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;lt;</ph><ph id="ph2">&amp;gt;</ph> …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Separation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dělení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>…</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>, …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">, …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>If an expression includes multiple consecutive operators that have the same precedence, those operations are evaluated from left to right.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud výraz obsahuje několik po sobě jdoucích operátorů, které mají stejnou prioritu, vyhodnocují se tyto operátory zleva doprava.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>For example, the expression <bpt id="p1">**</bpt>1 + 6 / 2 <ph id="ph1">\*</ph> 3 <ph id="ph2">&amp;gt;</ph> 5<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>true<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například výraz <bpt id="p1">**</bpt>1 + 6 / 2 <ph id="ph1">\*</ph> 3 <ph id="ph2">&amp;gt;</ph> 5<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>true<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>We recommend that you use parentheses to explicitly indicate the desired order of operations in expressions, so that the expressions are easier to read and maintain.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doporučujeme vám pomocí závorek explicitně určit požadované pořadí operátorů ve výrazech, usnadní se tím čtení a správa výrazů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>References</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odkazy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>All data sources of the current ER component that are available during the design of an expression can be used as named references.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny zdroje dat aktuální součásti elektronického výkaznictví, které jsou k dispozici během návrhu výrazu, lze použít jako pojmenované odkazy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>(The current ER component can be either a model or a format.) For example, the current ER data model contains the <bpt id="p1">**</bpt>ReportingDate<ept id="p1">**</ept> data source, and this data source returns a value of the <bpt id="p2">**</bpt>DATETIME<ept id="p2">**</ept> data type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Aktuální součást elektronického výkaznictví může být model nebo formát.) Aktuální datový model model elektronického výkaznictví obsahuje například datový zdroj <bpt id="p1">**</bpt>ReportingDate<ept id="p1">**</ept> a tento datový zdroj vrací hodnotu typu dat <bpt id="p2">**</bpt>DATETIME<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>To correctly format that value in the generating document, you can reference the data source in the expression as <bpt id="p1">**</bpt>DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Abyste tuto hodnotu v generování dokumentu správně zformátovali, můžete odkazovat na zdroj dat ve výrazu jako je <bpt id="p1">**</bpt>DATETIMEFORMAT (ReportingDate, "dd-MM-rrrr")<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>All characters in the name of a referencing data source that don't represent a letter of the alphabet must be preceded by a single quotation mark (').</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny znaky v názvu referenčního datového zdroje, které nepředstavují písmeno abecedy, musí předcházet jednoduchá uvozovka (').</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>If the name of a referencing data source contains at least one symbol that doesn't represent a letter of the alphabet, the name must be enclosed in single quotation marks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud název odkazujícího zdroje dat obsahuje alespoň jeden znak, který nepředstavuje písmeno abecedy, musí být název v jednoduchých uvozovkách.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>(For example, these non-alphabetic symbols can be punctuation marks or other written symbols.) Here are some examples:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Těmito nealfabetickými symboly mohou být například interpunkční znaménka nebo jiné psané symboly.) Zde je několik příkladů:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>The <bpt id="p1">**</bpt>Today's date &amp; time<ept id="p1">**</ept> data source must be referred to in an ER expression as <bpt id="p2">**</bpt>'Today''s date &amp; time'<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datový zdroj <bpt id="p1">**</bpt>Dnešní datum a čas<ept id="p1">**</ept> je nutné odkazovat ve výrazu elektronického výkaznictví jako <bpt id="p2">**</bpt>Dnešní datum a čas<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>The <bpt id="p1">**</bpt>name()<ept id="p1">**</ept> method of the <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> data source must be referred to in an ER expression as <bpt id="p3">**</bpt>Customers.'name()'<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na metodu <bpt id="p1">**</bpt>name()<ept id="p1">**</ept> zdroje dat <bpt id="p2">**</bpt>Odběratelé<ept id="p2">**</ept> musí být odkazováno ve výrazu elektronického výkaznictví jako <bpt id="p3">**</bpt>Odběratelé.'name()'<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>If the methods of Finance and Operations data sources have parameters, the following syntax is used to call those methods:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud mají metody aplikace Finance and Operations datové zdroje s parametry, používá se pro volání těchto metod následující syntaxe:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>If the <bpt id="p1">**</bpt>isLanguageRTL<ept id="p1">**</ept> method of the <bpt id="p2">**</bpt>System<ept id="p2">**</ept> data source has an <bpt id="p3">**</bpt>EN-US<ept id="p3">**</ept> parameter of the <bpt id="p4">**</bpt>String<ept id="p4">**</ept> data type, this method must be referred to in an ER expression as <bpt id="p5">**</bpt>System.'isLanguageRTL'("EN-US")<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud má metoda <bpt id="p1">**</bpt>isLanguageRTL<ept id="p1">**</ept> datového zdroje <bpt id="p2">**</bpt>Systém<ept id="p2">**</ept> parametr <bpt id="p3">**</bpt>EN-US<ept id="p3">**</ept> datového typu <bpt id="p4">**</bpt>Řetězec<ept id="p4">**</ept>, musí být odkazována ve výrazu elektronického výkaznictví jako <bpt id="p5">**</bpt>System.'isLanguageRTL'("EN-US")<ept id="p5">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Quotation marks aren't required when a method name contains only alphanumeric symbols.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud název metody obsahuje pouze alfanumerické znaky, nejsou uvozovky vyžadovány.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>However, they are required for a method of a table if the name includes brackets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">U metod tabulky, jejichž název obsahuje závorky, jsou však povinné.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>When the <bpt id="p1">**</bpt>System<ept id="p1">**</ept> data source is added to an ER mapping that refers to the <bpt id="p2">**</bpt>Global<ept id="p2">**</ept> Finance and Operations application class, the expression returns the Boolean value <bpt id="p3">**</bpt>FALSE<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při přidání datového zdroje <bpt id="p1">**</bpt>Systém<ept id="p1">**</ept> do mapování elektronického výkaznictví, které odkazuje na třídu aplikace Finance and Operations <bpt id="p2">**</bpt>Globální<ept id="p2">**</ept>, výraz vrátí logickou hodnotu <bpt id="p3">**</bpt>FALSE<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>The modified expression <bpt id="p1">**</bpt>System.' isLanguageRTL'("AR")<ept id="p1">**</ept> returns the Boolean value <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Upravený výraz <bpt id="p1">**</bpt>System.' isLanguageRTL'("AR")<ept id="p1">**</ept> vrátí logickou hodnotu <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>You can limit the way that values are passed to the parameters of this type of method:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je možné omezit způsob, jakým jsou hodnoty předány do parametrů tohoto typu metody:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>Only constants can be passed to methods of this type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lze předat pouze konstanty do metod tohoto typu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>The values of the constants are defined at design time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hodnoty konstant jsou definovány v době návrhu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Only primitive (basic) data types are supported for parameters of this type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podporovány jsou pouze jednoduché (základní) datové typy pro parametry tohoto typu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>(The primitive data types are integer, real, Boolean, string, and so on.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Jednoduché datové typy jsou celé číslo, reálné, logická hodnota, řetězec atd.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>Paths</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Cesty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>When an expression references a structured data source, you can use the path definition to select a specific primitive element of that data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud výraz odkazuje na strukturovaný zdroj dat, můžete použít definici cesty k volbě určitého primitivního prvku daného zdroje dat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>A dot character (.) is used to separate individual elements of a structured data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Znak tečky (.) se používá k oddělení jednotlivých prvků strukturovaného zdroje dat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>For example, the current ER data model contains the <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> data source, and this data source returns a list of records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například aktuální datový model elektronického výkaznictví obsahuje zdroj dat <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> a ten vrátí seznam záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>The <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> record structure contains the <bpt id="p2">**</bpt>AmountDebit<ept id="p2">**</ept> and <bpt id="p3">**</bpt>AmountCredit<ept id="p3">**</ept> fields, and both these fields return numeric values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Struktura záznamu <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> obsahuje pole <bpt id="p2">**</bpt>AmountDebit<ept id="p2">**</ept> a <bpt id="p3">**</bpt>AmountCredit<ept id="p3">**</ept> a obě tato pole vrací číselné hodnoty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>Therefore, you can design the following expression to calculate the invoiced amount: <bpt id="p1">**</bpt>InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proto můžete vytvořit následující výraz pro výpočet fakturované částky: <bpt id="p1">**</bpt>InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>The next section describes the functions that can be used in ER expressions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další část popisuje funkce, které lze použít ve výrazech elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>All data sources of the expression context (the current ER data model or ER format) can be used as parameters of calling functions, in accordance with the list of arguments for calling functions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny zdroje dat kontextu výrazu (aktuální datový model nebo formát elektronického výkaznictví) mohou sloužit jako parametry funkcí volání, v souladu se seznamem argumentů pro funkce volání.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>Constants can also be used as parameters of calling functions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konstanty lze také použít jako parametry funkcí volání.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>For example, the current ER data model contains the <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> data source, and this data source returns a list of records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například aktuální datový model elektronického výkaznictví obsahuje zdroj dat <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> a ten vrátí seznam záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>The <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> record structure contains the <bpt id="p2">**</bpt>AmountDebit<ept id="p2">**</ept> and <bpt id="p3">**</bpt>AmountCredit<ept id="p3">**</ept> fields, and both these fields return numeric values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Struktura záznamu <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> obsahuje pole <bpt id="p2">**</bpt>AmountDebit<ept id="p2">**</ept> a <bpt id="p3">**</bpt>AmountCredit<ept id="p3">**</ept> a obě tato pole vrací číselné hodnoty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>Therefore, to calculate the invoiced amount, you can design the following expression that uses the built-in ER rounding function: <bpt id="p1">**</bpt>ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Takže pokud chcete vypočítat částku, můžete vytvořit následující výraz využívající integrovanou funkci zaokrouhlování pro použití v elektronickém výkaznictví: <bpt id="p1">**</bpt>ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Supported functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podporované funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>The following tables describe the data manipulation functions that you can use to design ER data models and ER reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V následující tabulce jsou popsány funkce pro manipulaci s daty, které lze použít k vytváření datových modelů a sestav elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>The list of functions isn't fixed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seznam funkcí není pevný.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>Developers can extend it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vývojáři ho mohou rozšířit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>To see the list of functions that you can use, open the functions pane in the ER formula designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li zobrazit seznam funkcí, které můžete použít, otevřete podokno funkcí v návrháři receptur elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>Date and time functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce data a času</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>ADDDAYS (datetime, days)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ADDDAYS (datum a čas, dny)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Add the specified number of days to the specified date/time value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přidá zadaný počet dní k zadané hodnotě data a času.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source><bpt id="p1">**</bpt>ADDDAYS (NOW(), 7)<ept id="p1">**</ept> returns the date and time seven days in the future.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ADDDAYS (NOW(), 7)<ept id="p1">**</ept> vrátí datum a čas sedm dní v budoucnosti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>DATETODATETIME (date)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETODATETIME (datum)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Convert the specified date value to a date/time value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převede zadanou hodnotu data na hodnotu data a času.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source><bpt id="p1">**</bpt>DATETODATETIME (CompInfo. 'getCurrentDate()')<ept id="p1">**</ept> returns the current Finance and Operations session date, December 24, 2015, as <bpt id="p2">**</bpt>12/24/2015 12:00:00 AM<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETODATETIME (CompInfo. 'getCurrentDate()')<ept id="p1">**</ept> vrátí datum aktuální relace aplikace Finance and Operations, např. 24. prosince 2015, jako <bpt id="p2">**</bpt>12/24/2015 12:00:00 AM<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>In this example, <bpt id="p1">**</bpt>CompInfo<ept id="p1">**</ept> is an ER data source of the <bpt id="p2">**</bpt>Finance and Operations/Table<ept id="p2">**</ept> type and refers to the CompanyInfo table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu <bpt id="p1">**</bpt>CompInfo<ept id="p1">**</ept> představuje zdroj dat elektronického výkaznictví typu <bpt id="p2">**</bpt>Finance and Operations/Table<ept id="p2">**</ept> a odkazuje na tabulku CompanyInfo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>NOW ()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NOW ()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Return the current Finance and Operations application server date and time as a date/time value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí aktuální datum a čas relace aplikačního serveru Finance and Operations jako hodnotu data a času.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>TODAY ()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TODAY ()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>Return the current Finance and Operations application server date as a date value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí aktuální datum relace aplikačního serveru Finance and Operations jako hodnotu data.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>NULLDATE ()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NULLDATE ()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Return a <bpt id="p1">**</bpt>null<ept id="p1">**</ept> date value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí hodnotu data <bpt id="p1">**</bpt>null<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>NULLDATETIME ()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NULLDATETIME ()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>Return a <bpt id="p1">**</bpt>null<ept id="p1">**</ept> date/time value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí hodnotu data a času <bpt id="p1">**</bpt>null<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>DATETIMEFORMAT (datetime, format)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETIMEFORMAT (datum a čas, formát)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Convert the specified date/time value to a string in the specified format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převede zadanou hodnotu data a času na řetězec v zadaném formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>(For information about the supported formats, see <bpt id="p1">[</bpt>standard<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> and <bpt id="p2">[</bpt>custom<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Informace o podporovaných formátech: <bpt id="p1">[</bpt>standardní<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> a <bpt id="p2">[</bpt>vlastní<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source><bpt id="p1">**</bpt>DATETIMEFORMAT (NOW(), "dd-MM-yyyy")<ept id="p1">**</ept> returns the current Finance and Operations application server date, December 24, 2015, as <bpt id="p2">**</bpt>"24-12-2015"<ept id="p2">**</ept>, based on the specified custom format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETIMEFORMAT (NOW(), "dd-MM-yyyy")<ept id="p1">**</ept> vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015 jako <bpt id="p2">**</bpt>"24-12-2015"<ept id="p2">**</ept> na základě zadaného vlastního formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>DATETIMEFORMAT (datetime, format, culture)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETIMEFORMAT (datum a čas, jazyková verze)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Convert the specified date/time value to a string in the specified format and <bpt id="p1">[</bpt>culture<ept id="p1">](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převede zadanou hodnotu data a času na řetězec v zadaném formátu a <bpt id="p1">[</bpt>jazykové verzi<ept id="p1">](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>(For information about the supported formats, see <bpt id="p1">[</bpt>standard<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> and <bpt id="p2">[</bpt>custom<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Informace o podporovaných formátech: <bpt id="p1">[</bpt>standardní<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> a <bpt id="p2">[</bpt>vlastní<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source><bpt id="p1">**</bpt>DATETIMEFORMAT (NOW(), "d", "de")<ept id="p1">**</ept> returns the current Finance and Operations application server date, December 24, 2015, as <bpt id="p2">**</bpt>"24.12.2015"<ept id="p2">**</ept>, based on the selected German culture.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETIMEFORMAT (NOW(), "d", "de")<ept id="p1">**</ept> vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015, jako <bpt id="p2">**</bpt>"24.12.2015"<ept id="p2">**</ept>, na základě vybraného německého prostředí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>SESSIONTODAY ()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SESSIONTODAY ()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>Return the current Finance and Operations session date as a date value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí aktuální datum relace aplikace Finance and Operations jako hodnotu data.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>SESSIONNOW ()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SESSIONNOW ()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Return the current Finance and Operations session date and time as a date/time value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí aktuální datum a čas relace aplikace Finance and Operations jako hodnotu data a času.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>DATEFORMAT (date, format)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATEFORMAT (datum, formát)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>Return a string representation of the specified date in the specified format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí znázornění řetězce zadaného data v zadaném formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source><bpt id="p1">**</bpt>DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")<ept id="p1">**</ept> returns the current Finance and Operations session date, December 24, 2015, as <bpt id="p2">**</bpt>"24-12-2015"<ept id="p2">**</ept>, based on the specified custom format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")<ept id="p1">**</ept>  vrátí aktuální datum aplikace Finance and Operations, například 24. prosince 2015 jako <bpt id="p2">**</bpt>"24-12-2015"<ept id="p2">**</ept> na základě zadaného vlastního formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>DATEFORMAT (date, format, culture)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATEFORMAT (datum, formát, jazyková verze)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>Convert the specified date value to a string in the specified format and <bpt id="p1">[</bpt>culture<ept id="p1">](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převede zadanou hodnotu data na řetězec v zadaném formátu <bpt id="p1">[</bpt>jazykové verzi<ept id="p1">](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>(For information about the supported formats, see <bpt id="p1">[</bpt>standard<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> and <bpt id="p2">[</bpt>custom<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Informace o podporovaných formátech: <bpt id="p1">[</bpt>standardní<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> a <bpt id="p2">[</bpt>vlastní<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source><bpt id="p1">**</bpt>DATETIMEFORMAT (SESSIONNOW (), "d", "de")<ept id="p1">**</ept> returns the current Finance and Operations session date, December 24, 2015, as <bpt id="p2">**</bpt>"24.12.2015"<ept id="p2">**</ept>, based on the selected German culture.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETIMEFORMAT (SESSIONNOW (), "d", "de")<ept id="p1">**</ept> vrátí aktuální datum aplikace Finance and Operations, například 24. prosince 2015, jako <bpt id="p2">**</bpt>"24.12.2015"<ept id="p2">**</ept>, na základě vybraného německého prostředí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>DAYOFYEAR (date)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DAYOFYEAR (datum)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>Return an integer representation of the number of days between January 1 and the specified date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí celočíselnou reprezentaci počtu dní mezi 1. lednem a zadaným datem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source><bpt id="p1">**</bpt>DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>61<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>61<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source><bpt id="p1">**</bpt>DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>1<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>1<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>DAYS (date 1, date 2)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DAYS (datum 1, datum 2)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source>Return the number of days between the first specified date and the second specified date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí počet dní mezi prvním a druhým určeným datem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>Return a positive value when the first date is later than the second date, return <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) when the first date equals the second date, or return a negative value when the first date is earlier than the second date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí kladnou hodnotu, pokud je první datum pozdější než druhé datum, vrátí <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (nulu), když se první datum shoduje s druhým datem, nebo vrátí zápornou hodnotu, když je první datum dřívější než druhé.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source><bpt id="p1">**</bpt>DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>-1<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>-1<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>Data conversion functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce převodu dat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source>DATETODATETIME (date)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETODATETIME (datum)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>Convert the specified date value to a date/time value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převede zadanou hodnotu data na hodnotu data a času.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source><bpt id="p1">**</bpt>DATETODATETIME (CompInfo. 'getCurrentDate()')<ept id="p1">**</ept> returns the current Finance and Operations session date, December 24, 2015, as <bpt id="p2">**</bpt>12/24/2015 12:00:00 AM<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETODATETIME (CompInfo. 'getCurrentDate()')<ept id="p1">**</ept> vrátí datum aktuální relace aplikace Finance and Operations, např. 24. prosince 2015, jako <bpt id="p2">**</bpt>12/24/2015 12:00:00 AM<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>In this example, <bpt id="p1">**</bpt>CompInfo<ept id="p1">**</ept> is an ER data source of the <bpt id="p2">**</bpt>Finance and Operations/Table<ept id="p2">**</ept> type and refers to the CompanyInfo table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu <bpt id="p1">**</bpt>CompInfo<ept id="p1">**</ept> představuje zdroj dat elektronického výkaznictví typu <bpt id="p2">**</bpt>Finance and Operations/Table<ept id="p2">**</ept> a odkazuje na tabulku CompanyInfo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source>DATEVALUE (string, format)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATEVALUE (řetězec, formát)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>Return a date representation of the specified string in the specified format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí znázornění data zadaného řetězce v zadaném formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source><bpt id="p1">**</bpt>DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")<ept id="p1">**</ept> returns the date December 21, 2016, based on specified custom format and the default application's <bpt id="p2">**</bpt>EN-US<ept id="p2">**</ept> culture.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")<ept id="p1">**</ept> vrátí datum 21. prosince 2016 na základě zadaného vlastního formátu a výchozí jazykové verze aplikace <bpt id="p2">**</bpt>EN-US<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>DATEVALUE (string, format, culture)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATEVALUE (řetězec, formát, prostředí)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>Return a date representation of the specified string in the specified format and culture.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí znázornění data zadaného řetězce v zadaném formátu a jazykové verzi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source><bpt id="p1">**</bpt>DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")<ept id="p1">**</ept> returns the date January 21, 2016, based on the specified custom format and culture.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")<ept id="p1">**</ept> vrátí datum 21. ledna 2016 na základě zadaného vlastního formátu a jazykové verze.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>However, <bpt id="p1">**</bpt>DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")<ept id="p1">**</ept> throws an exception to inform the user that the specified string isn't recognized as a valid date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nicméně <bpt id="p1">**</bpt>DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")<ept id="p1">**</ept> zobrazí výjimku za účelem informování uživatele, že zadaný řetězec nebyl rozpoznán jako platné datum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source>DATETIMEVALUE (string, format)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETIMEVALUE (řetězec, formát)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>Return a date/time representation of the specified string in the specified format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí znázornění data a času zadaného řetězce v zadaném formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source><bpt id="p1">**</bpt>DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")<ept id="p1">**</ept> returns 2:55:00 AM on December 21, 2016, based on the specified custom format and the default application's <bpt id="p2">**</bpt>EN-US<ept id="p2">**</ept> culture.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")<ept id="p1">**</ept> vrátí 2:55:00 21. prosince 2016 na základě zadaného vlastní formátu a výchozí jazykové verze aplikace <bpt id="p2">**</bpt>EN-US<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source>DATETIMEVALUE (string, format, culture)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETIMEVALUE (řetězec, formát, prostředí)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Return a date/time representation of the specified string in the specified format and culture.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí znázornění data a času zadaného řetězce v zadaném formátu a jazykové verzi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source><bpt id="p1">**</bpt>DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "IT")<ept id="p1">**</ept> returns 2:55:00 AM on December 21, 2016, based on the specified custom format and culture.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "IT")<ept id="p1">**</ept> vrátí 2:55:00 21. prosince 2016 na základě zadaného vlastní formátu a výchozí jazykové verze aplikace EN-US.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>However, <bpt id="p1">**</bpt>DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")<ept id="p1">**</ept> throws an exception to inform the user that the specified string isn't recognized as a valid date/time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nicméně <bpt id="p1">**</bpt>DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")<ept id="p1">**</ept> zobrazí výjimku za účelem informování uživatele, že zadaný řetězec nebyl rozpoznán jako platné datum.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source>List functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce seznamu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>SPLIT (input, length)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SPLIT (vstup, délka)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>Split the specified input string into substrings, each of which has the specified length.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozdělí zadaný vstupní řetězec na dílčí řetězce, přičemž každý bude mít zadanou délku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>Return the result as a new list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí výsledek jako nový seznam.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>SPLIT (<ph id="ph1">&amp;quot;</ph>abcd<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> returns a new list that consists of two records that have a <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>SPLIT (<ph id="ph1">&amp;quot;</ph>abcd<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> vrátí nový seznam obsahující dva záznamy, které mají pole <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>The field in the first record contains the text <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept>, and the field in the second record contains the text <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>d<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole v prvním záznamu obsahuje text <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept> a pole v druhém záznamu obsahuje text <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>d<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source>SPLIT (input, delimiter)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SPLIT (vstupní, oddělovač)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>Split the specified input string into substrings, based on the specified delimiter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozdělí zadaný vstupní řetězec na dílčí řetězce, na základě určeného oddělovače.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>SPLIT (<ph id="ph1">&amp;quot;</ph>XAb aBy<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>aB<ph id="ph4">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns a new list that consists of three records that have a <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>SPLIT (<ph id="ph1">&amp;quot;</ph>XAb aBy<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>aB<ph id="ph4">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> vrátí nový seznam obsahující tři záznamy, které mají pole <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source>The field in the first record contains the text <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>X<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept>, the field in the second record contains the text <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;quot;</ph>, and the field in the third record contains the text <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>y<ph id="ph7">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole v prvním záznamu obsahuje text <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>X<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept>, pole v druhém záznamu obsahuje text <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;quot;</ph>, a pole v třetím záznamu obsahuje text <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>y<ph id="ph7">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>If the delimiter is empty, a new list is returned that consists of one record that has a <bpt id="p1">&lt;strong&gt;</bpt>STRING<ept id="p1">&lt;/strong&gt;</ept> field that contains the input text.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je-li oddělovač prázdný, vrátí se nový seznam, který se skládá z jednoho záznamu, který má pole <bpt id="p1">&lt;strong&gt;</bpt>STRING<ept id="p1">&lt;/strong&gt;</ept> obsahující vstupní text.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source>If the input is empty, a new empty list is returned.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je vstup prázdný, vrátí se nový prázdný seznam.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>If either the input or the delimiter is unspecified (null), an application exception is thrown.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je buď vstup nebo oddělovač neurčený (null), bude vyvolána výjimka aplikace.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source>SPLITLIST (list, number)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SPLITLIST (seznam, počet)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>Split the specified list into batches, each of which contains the specified number of records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozdělí zadaný seznam na dávky, přičemž každá z nich obsahuje zadaný počet záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Return the result as a new list of batches that contains the following elements:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí výsledek jako nový seznam dávek, který obsahuje následující prvky:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>Batches as regular lists (<bpt id="p1">&lt;strong&gt;</bpt>Value<ept id="p1">&lt;/strong&gt;</ept> component)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dávky jako běžné seznamy (součást <bpt id="p1">&lt;strong&gt;</bpt>Value<ept id="p1">&lt;/strong&gt;</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source>The current batch number (<bpt id="p1">&lt;strong&gt;</bpt>BatchNumber<ept id="p1">&lt;/strong&gt;</ept> component)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Číslo aktuální dávky (součást <bpt id="p1">&lt;strong&gt;</bpt>BatchNumber<ept id="p1">&lt;/strong&gt;</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>In the following illustration, a <bpt id="p1">&lt;strong&gt;</bpt>Lines<ept id="p1">&lt;/strong&gt;</ept> data source is created as a record list of three records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V následujícím příkladu je datový zdroj <bpt id="p1">&lt;strong&gt;</bpt>Řádky<ept id="p1">&lt;/strong&gt;</ept> vytvořen jako seznam záznamů ze tři záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source>This list is divided into batches, each of which contains up to two records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento seznam je rozdělen do dávek, z nichž každá obsahuje až dva záznamy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>The following illustration shows the designed format layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje navržené rozvržení formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source>In this format layout, bindings to the <bpt id="p1">&lt;strong&gt;</bpt>Lines<ept id="p1">&lt;/strong&gt;</ept> data source are created to generate output in XML format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto rozvržení formátu jsou vytvořeny vazby na datový zdroj <bpt id="p1">&lt;strong&gt;</bpt>Řádky<ept id="p1">&lt;/strong&gt;</ept> za účelem vygenerování výstupu ve formátu XML.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>This output presents individual nodes for each batch and the records in it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento výstup představuje jednotlivé uzly pro každou dávku a záznamy v ní.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source>The following illustration shows the result when the designed format is run.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje výsledek při spuštění navrženého formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>LIST (record 1 [, record 2, …])</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIST (záznam 1 [, záznam 2, …])</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source>Return a new list that is created from the specified arguments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí nový seznam, který je vytvořený na základě zadaných argumentů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>LIST (model.MainData, model.OtherData)<ept id="p1">&lt;/strong&gt;</ept> returns an empty record, where the list of fields contains all fields of the <bpt id="p2">&lt;strong&gt;</bpt>MainData<ept id="p2">&lt;/strong&gt;</ept> and <bpt id="p3">&lt;strong&gt;</bpt>OtherData<ept id="p3">&lt;/strong&gt;</ept> record lists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>LIST (model.MainData, model.OtherData)<ept id="p1">&lt;/strong&gt;</ept> vrátí prázdný záznam, kde seznam polí obsahuje všechna pole seznamů záznamů <bpt id="p2">&lt;strong&gt;</bpt>MainData<ept id="p2">&lt;/strong&gt;</ept> a <bpt id="p3">&lt;strong&gt;</bpt>OtherData<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>LISTJOIN (list 1, list 2, …)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LISTJOIN (seznam 1, seznam 2, …)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>Return a joined list that is created from lists of specified arguments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí spojený seznam, který je vytvořený ze seznamů zadaných argumentů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>LISTJOIN (SPLIT (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, 1), SPLIT (<ph id="ph3">&amp;quot;</ph>def<ph id="ph4">&amp;quot;</ph>, 1))<ept id="p1">&lt;/strong&gt;</ept> returns a list of six records, where one field of the <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept> data type contains single letters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>LISTJOIN (SPLIT (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, 1), SPLIT (<ph id="ph3">&amp;quot;</ph>def<ph id="ph4">&amp;quot;</ph>, 1))<ept id="p1">&lt;/strong&gt;</ept> vrátí seznam šesti záznamů, kde jedno pole datového typu <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept> obsahuje jednotlivá písmena.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>ISEMPTY (list)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISEMPTY (seznam)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source>Return <bpt id="p1">&lt;strong&gt;</bpt>TRUE<ept id="p1">&lt;/strong&gt;</ept> if the specified list contains no elements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí hodnotu <bpt id="p1">&lt;strong&gt;</bpt>TRUE<ept id="p1">&lt;/strong&gt;</ept>, pokud zadaný seznam neobsahuje žádné prvky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Otherwise, return <bpt id="p1">&lt;strong&gt;</bpt>FALSE<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném případě vrátí hodnotu <bpt id="p1">&lt;strong&gt;</bpt>FALSE<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source>EMPTYLIST (list)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EMPTYLIST (seznam)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>Return an empty list by using the specified list as a source for the list structure.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí prázdný seznam pomocí zadaného seznamu jako zdroje pro strukturu seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>EMPTYLIST (SPLIT (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, 1))<ept id="p1">&lt;/strong&gt;</ept> returns a new empty list that has the same structure as the list that is returned by the <bpt id="p2">&lt;strong&gt;</bpt>SPLIT<ept id="p2">&lt;/strong&gt;</ept> function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>EMPTYLIST (SPLIT (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, 1))<ept id="p1">&lt;/strong&gt;</ept> vrátí nový prázdný seznam, který má stejnou strukturu jako seznam vrácený funkcí <bpt id="p2">&lt;strong&gt;</bpt>SPLIT<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>FIRST (list)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIRST (seznam)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source>Return the first record of the specified list, if that record isn't empty.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí první záznam zadaného seznamu, pokud tento záznam není prázdný.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>Otherwise, throw an exception.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném bude vyvolána výjimka.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>FIRSTORNULL (list)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIRSTORNULL (seznam)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source>Return the first record of the specified list, if that record isn't empty.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí první záznam zadaného seznamu, pokud tento záznam není prázdný.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>Otherwise, return a <bpt id="p1">&lt;strong&gt;</bpt>null<ept id="p1">&lt;/strong&gt;</ept> record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném vrátí záznam <bpt id="p1">&lt;strong&gt;</bpt>null<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source>LISTOFFIRSTITEM (list)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LISTOFFIRSTITEM (seznam)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>Return a list that contains only the first item of the specified list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí seznam obsahující pouze první položku zadaného seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source>ALLITEMS (path)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALLITEMS (cesta)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>This function runs as an in-memory selection.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce je spuštěná jako výběr v paměti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source>It returns a new flattened list that represents all items that match the specified path.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí nový plochý seznam, který obsahuje všechny položky odpovídající zadané cestě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>The path must be defined as a valid data source path of a data source element of a record list data type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Cesta musí být definována jako platná cesta zdroje dat k prvku zdroje dat typu dat seznamu záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source>Data elements such as the path string and date should raise an error in the ER expression builder at design time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datové prvky, jako je cesta k řetězci, datum atd. by měly zobrazit chybu v době návrhu v tvůrci výrazů elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>If you enter <bpt id="p1">&lt;strong&gt;</bpt>SPLIT(<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph> , 2)<ept id="p1">&lt;/strong&gt;</ept> as a data source (DS), <bpt id="p2">&lt;strong&gt;</bpt>COUNT( ALLITEMS (DS.Value))<ept id="p2">&lt;/strong&gt;</ept> returns <bpt id="p3">&lt;strong&gt;</bpt>3<ept id="p3">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadáte-li <bpt id="p1">&lt;strong&gt;</bpt>SPLIT(<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph> , 2)<ept id="p1">&lt;/strong&gt;</ept> jako zdroj dat (DS), <bpt id="p2">&lt;strong&gt;</bpt>COUNT( ALLITEMS (DS.Value))<ept id="p2">&lt;/strong&gt;</ept> vrátí <bpt id="p3">&lt;strong&gt;</bpt>3<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>ALLITEMSQUERY (path)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALLITEMSQUERY (cesta)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>This function runs as a joined SQL query.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce je spuštěna jako připojený dotaz SQL.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source>It returns a new flattened list that represents all items that match the specified path.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí nový plochý seznam, který obsahuje všechny položky odpovídající zadané cestě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>The specified path must be defined as a valid data source path of a data source element of a record list data type, and it must contain at least one relation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadaná cesta musí být definována jako platná cesta zdroje dat k prvku zdroje dat typu dat seznamu záznamů a musí obsahovat nejméně jeden vztah.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source>Data elements such as the path string and date should raise an error in the ER expression builder at design time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datové prvky, jako je cesta k řetězci, datum atd. by měly zobrazit chybu v době návrhu v tvůrci výrazů elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>Define the following data sources in your model mapping:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definujte v mapování modelu následující zdroje dat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>CustInv<ept id="p1">&lt;/strong&gt;</ept> (<bpt id="p2">&lt;strong&gt;</bpt>Table records<ept id="p2">&lt;/strong&gt;</ept> type), which refers to the CustInvoiceTable table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>CustInv<ept id="p1">&lt;/strong&gt;</ept> (typ <bpt id="p2">&lt;strong&gt;</bpt>Záznamy tabulky<ept id="p2">&lt;/strong&gt;</ept>), která odkazuje na tabulku CustInvoiceTable</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>FilteredInv<ept id="p1">&lt;/strong&gt;</ept> (<bpt id="p2">&lt;strong&gt;</bpt>Calculated field<ept id="p2">&lt;/strong&gt;</ept> type), which contains the expression <bpt id="p3">&lt;strong&gt;</bpt>FILTER (CustInv, CustInv.InvoiceAccount = <ph id="ph1">&amp;quot;</ph>US-001<ph id="ph2">&amp;quot;</ph>)<ept id="p3">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>FilteredInv<ept id="p1">&lt;/strong&gt;</ept> (typ <bpt id="p2">&lt;strong&gt;</bpt>vypočítané pole<ept id="p2">&lt;/strong&gt;</ept>), který obsahuje výraz <bpt id="p3">&lt;strong&gt;</bpt>FILTER (CustInv, CustInv.InvoiceAccount = <ph id="ph1">&amp;quot;</ph>US-001<ph id="ph2">&amp;quot;</ph>)<ept id="p3">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>JourLines<ept id="p1">&lt;/strong&gt;</ept> (<bpt id="p2">&lt;strong&gt;</bpt>Calculated field<ept id="p2">&lt;/strong&gt;</ept> type), which contains the expression <bpt id="p3">&lt;strong&gt;</bpt>ALLITEMSQUERY (FilteredInv.'<ph id="ph1">&amp;lt;</ph>Relations'.CustInvoiceJour.'<ph id="ph2">&amp;lt;</ph>Relations'.CustInvoiceTrans)<ept id="p3">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>JourLines<ept id="p1">&lt;/strong&gt;</ept> (typ <bpt id="p2">&lt;strong&gt;</bpt>Vypočítané pole<ept id="p2">&lt;/strong&gt;</ept>), which contains the expression <bpt id="p3">&lt;strong&gt;</bpt>ALLITEMSQUERY (FilteredInv.'<ph id="ph1">&amp;lt;</ph>Relations'.CustInvoiceJour.'<ph id="ph2">&amp;lt;</ph>Relations'.CustInvoiceTrans)<ept id="p3">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>When you run your model mapping to call the <bpt id="p1">&lt;strong&gt;</bpt>JourLines<ept id="p1">&lt;/strong&gt;</ept> data source, the following SQL statement is run:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při spuštění mapování modelu k volání zdroje dat <bpt id="p1">&lt;strong&gt;</bpt>JourLines<ept id="p1">&lt;/strong&gt;</ept> se spustí příkaz SQL:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source>SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>ORDERBY (list [, expression 1, expression 2, …])</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ORDERBY (seznam [, výraz 1, výraz 2…])</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>Return the specified list after it has been sorted according to the specified arguments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný seznam po seřazení podle zadaných argumentů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source>These arguments can be defined as expressions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto argumenty lze definovat jako výrazy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>If <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> is configured as an ER data source that refers to the VendTable table, <bpt id="p2">&lt;strong&gt;</bpt>ORDERBY (Vendors, Vendors.'name()')<ept id="p2">&lt;/strong&gt;</ept> returns a list of vendors that is sorted by name in ascending order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jestliže je položka <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <bpt id="p2">&lt;strong&gt;</bpt>ORDERBY (Vendors, Vendors.'name()')<ept id="p2">&lt;/strong&gt;</ept> vrátí seznamu dodavatelů seřazených podle názvu ve vzestupném pořadí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source>REVERSE (list)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">REVERSE (seznam)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>Return the specified list in reversed sort order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný seznam v obráceném pořadí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source>If <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> is configured as an ER data source that refers to the VendTable table, <bpt id="p2">&lt;strong&gt;</bpt>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )<ept id="p2">&lt;/strong&gt;</ept> returns a list of vendors that is sorted by name in descending order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jestliže je položka <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <bpt id="p2">&lt;strong&gt;</bpt>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )<ept id="p2">&lt;/strong&gt;</ept> vrátí seznamu dodavatelů seřazených podle názvu v sestupném pořadí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>WHERE (list, condition)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHERE (seznam, podmínka)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source>Return the specified list after it has been filtered according to the specified condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný seznam po vyfiltrování podle zadané podmínky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source>The specified condition is applied to the list in memory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadaná podmínka se použije na seznam v paměti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source>In this way, the <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> function differs from the <bpt id="p2">&lt;strong&gt;</bpt>FILTER<ept id="p2">&lt;/strong&gt;</ept> function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tímto způsobem se funkce <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> liší od funkce <bpt id="p2">&lt;strong&gt;</bpt>FILTER<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>If <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> is configured as an ER data source that refers to the VendTable table, <bpt id="p2">&lt;strong&gt;</bpt>WHERE(Vendors, Vendors.VendGroup = <ph id="ph1">&amp;quot;</ph>40<ph id="ph2">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> returns a list of just the vendors that belong to vendor group 40.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jestliže je položka <bpt id="p1">&lt;strong&gt;</bpt>Dodavatel<ept id="p1">&lt;/strong&gt;</ept> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <bpt id="p2">&lt;strong&gt;</bpt>WHERE(Vendors, Vendors.VendGroup = <ph id="ph1">&amp;quot;</ph>40<ph id="ph2">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> vrátí pouze seznam dodavatelů patřících do skupiny dodavatelů č. 40.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>ENUMERATE (list)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ENUMERATE (seznam)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>Return a new list that consists of enumerated records of the specified list, and that exposes the following elements:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí nový seznam, který se skládá z výčtových záznamů zadaného seznamu a poskytne následující prvky:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>Specified list records as regular lists (<bpt id="p1">&lt;strong&gt;</bpt>Value<ept id="p1">&lt;/strong&gt;</ept> component)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadané záznamy seznamu jako běžné seznamy (součást <bpt id="p1">&lt;strong&gt;</bpt>hodnota<ept id="p1">&lt;/strong&gt;</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>The current record index (<bpt id="p1">&lt;strong&gt;</bpt>Number<ept id="p1">&lt;/strong&gt;</ept> component)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktuální index záznamů (součást <bpt id="p1">&lt;strong&gt;</bpt>číslo<ept id="p1">&lt;/strong&gt;</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source>In the following illustration, an <bpt id="p1">&lt;strong&gt;</bpt>Enumerated<ept id="p1">&lt;/strong&gt;</ept> data source is created as an enumerated list of vendor records from the <bpt id="p2">&lt;strong&gt;</bpt>Vendors<ept id="p2">&lt;/strong&gt;</ept> data source that refers to the VendTable table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na následujícím obrázku je zdroj dat <bpt id="p1">&lt;strong&gt;</bpt>Enumerated<ept id="p1">&lt;/strong&gt;</ept> vytvořen jako výčtový seznam záznamů dodavatelů ze zdroje dat <bpt id="p2">&lt;strong&gt;</bpt>Vendors<ept id="p2">&lt;/strong&gt;</ept>, který odkazuje na tabulku VendTable.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>The following illustration shows the format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje formát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source>In this format, data bindings are created to generate output in XML format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto formátu jsou vytvořeny vazby za účelem vygenerování výstupu ve formátu XML.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>This output presents individual vendors as enumerated nodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento výstup představuje jednotlivé dodavatel jako výčtové uzly.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>The following illustration shows the result when the designed format is run.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje výsledek při spuštění navrženého formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source>COUNT (list)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">COUNT (seznam)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>Return the number of records in the specified list, if the list isn't empty.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí počet záznamů v zadaném seznamu, pokud tento seznam není prázdný.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source>Otherwise, return <bpt id="p1">&lt;strong&gt;</bpt>0<ept id="p1">&lt;/strong&gt;</ept> (zero).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném případě vrátí hodnotu <bpt id="p1">&lt;strong&gt;</bpt>0<ept id="p1">&lt;/strong&gt;</ept> (nula).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>COUNT (SPLIT(<ph id="ph1">&amp;quot;</ph>abcd<ph id="ph2">&amp;quot;</ph> , 3))<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt>2<ept id="p2">&lt;/strong&gt;</ept>, because the <bpt id="p3">&lt;strong&gt;</bpt>SPLIT<ept id="p3">&lt;/strong&gt;</ept> function creates a list that consists of two records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>COUNT (SPLIT(<ph id="ph1">&amp;quot;</ph>abcd<ph id="ph2">&amp;quot;</ph> , 3))<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt>2<ept id="p2">&lt;/strong&gt;</ept>, protože funkce <bpt id="p3">&lt;strong&gt;</bpt>SPLIT<ept id="p3">&lt;/strong&gt;</ept> vytvoří seznam, který se skládá ze dvou záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source>LISTOFFIELDS (path)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LISTOFFIELDS (cesta)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>Return a record list that is created from an argument of one of the following types:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí seznam záznamů vytvořený z argumentu jednoho z následujících typů:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>Model enumeration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výčet modelu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>Format enumeration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výčet formátu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>Container</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontejner</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>The list that is created consists of records that have the following fields:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvořený seznam obsahuje záznamy, které mají následující pole:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jméno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>Label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Štítek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>At runtime, the <bpt id="p1">&lt;strong&gt;</bpt>Label<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Description<ept id="p2">&lt;/strong&gt;</ept> fields return values that are based on the format's language settings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při běhu vrátí pole <bpt id="p1">&lt;strong&gt;</bpt>Popisek<ept id="p1">&lt;/strong&gt;</ept> a <bpt id="p2">&lt;strong&gt;</bpt>Popis<ept id="p2">&lt;/strong&gt;</ept> hodnoty založené na jazykovém nastavení formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source>In the following illustration, an enumeration is introduced in a data model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na následujícím obrázku je výčet uveden v datovém modelu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>The following illustration shows these details:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje tyto podrobnosti:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source>The model enumeration is inserted into a report as a data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výčet modelů je vložen do sestavy jako zdroj dat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>An ER expression uses the model enumeration as a parameter of the <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výraz elektronického výkaznictví používá výčet modelů jako parametr funkce <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>A data source of the record list type is inserted into a report by using the ER expression that is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zdroj dat typu seznamu záznamů je vložen do sestavy pomocí vytvořeného výrazu elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>The following example shows the ER format elements that are bound to the data source of the record list type that was created by using the <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující příklad uvádí prvky formátu ER, které jsou vázané na zdroj dat typu seznamu záznamů, který byl vytvořen pomocí funkce <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>The following illustration shows the result when the designed format is run.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje výsledek při spuštění navrženého formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>Based on the language settings of the parent FILE and FOLDER format elements, translated text for labels and descriptions is entered in the output of the ER format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přeložený text popisků a popisů je zadáván do výstupu formátu elektronického výkaznictví na základě nastavení jazyka nadřazených prvků formátu FILE a FOLDER.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source>LISTOFFIELDS (path, language)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LISTOFFIELDS (cesta, jazyk)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>Return a record list that is created from an argument, such as a model enumeration, a format enumeration, or a container.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí seznam záznamů vytvořený z argumentu, jako například výčet modelů, výčet formátů nebo kontejner.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source>The list that is created consists of records that have the following fields:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvořený seznam obsahuje záznamy, které mají následující pole:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jméno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>Label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Štítek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source>Is translated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je přeloženo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>At runtime, the <bpt id="p1">&lt;strong&gt;</bpt>Label<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Description<ept id="p2">&lt;/strong&gt;</ept> fields return values that are based on the format's language settings and the specified language.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při běhu vrátí pole <bpt id="p1">&lt;strong&gt;</bpt>Popisek<ept id="p1">&lt;/strong&gt;</ept> a <bpt id="p2">&lt;strong&gt;</bpt>Popis<ept id="p2">&lt;/strong&gt;</ept> hodnoty založené na jazykovém nastavení formátu a zadaném jazyku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source>The <bpt id="p1">&lt;strong&gt;</bpt>Is translated<ept id="p1">&lt;/strong&gt;</ept> field indicates that the <bpt id="p2">&lt;strong&gt;</bpt>Label<ept id="p2">&lt;/strong&gt;</ept> field has been translated into the specified language.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole <bpt id="p1">&lt;strong&gt;</bpt>Je přeloženo<ept id="p1">&lt;/strong&gt;</ept> označuje, že pole <bpt id="p2">&lt;strong&gt;</bpt>Popisek<ept id="p2">&lt;/strong&gt;</ept> je přeloženo do určeného jazyka.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>For example, you use the <bpt id="p1">&lt;strong&gt;</bpt>Calculated field<ept id="p1">&lt;/strong&gt;</ept> data source type to configure the <bpt id="p2">&lt;strong&gt;</bpt>enumType_de<ept id="p2">&lt;/strong&gt;</ept> and <bpt id="p3">&lt;strong&gt;</bpt>enumType_deCH<ept id="p3">&lt;/strong&gt;</ept> data sources for the <bpt id="p4">&lt;strong&gt;</bpt>enumType<ept id="p4">&lt;/strong&gt;</ept> data model enumeration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například použijete typ datového zdroje <bpt id="p1">&lt;strong&gt;</bpt>Vypočítané pole<ept id="p1">&lt;/strong&gt;</ept> ke konfiguraci datových zdrojů <bpt id="p2">&lt;strong&gt;</bpt>enumType_de<ept id="p2">&lt;/strong&gt;</ept> a <bpt id="p3">&lt;strong&gt;</bpt>enumType_deCH<ept id="p3">&lt;/strong&gt;</ept> pro výčet datových modelů <bpt id="p4">&lt;strong&gt;</bpt>enumType<ept id="p4">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source>enumType_de = <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> (enumType, <ph id="ph1">&amp;quot;</ph>de<ph id="ph2">&amp;quot;</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">enumType_de = <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> (enumType, <ph id="ph1">&amp;quot;</ph>de<ph id="ph2">&amp;quot;</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>enumType_deCH = <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> (enumType, <ph id="ph1">&amp;quot;</ph>de-CH<ph id="ph2">&amp;quot;</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">enumType_deCH = <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> (enumType, <ph id="ph1">&amp;quot;</ph>de-CH<ph id="ph2">&amp;quot;</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source>In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if this translation is available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V takovém případě můžete použít následující výraz k získání popisku hodnoty výčtu ve švýcarské němčině, pokud je tento překlad k dispozici.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>If the Swiss German translation isn't available, the label is in German.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Není-li k dispozici překlad do švýcarské němčiny, je popisek v němčině.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>STRINGJOIN (list, field name, delimiter)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">STRINGJOIN (seznam, název pole, oddělovač)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source>Return a string that consists of concatenated values of the specified field from the specified list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí řetězec, který se skládá ze zřetězených hodnot zadaného pole ze zadaného seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>The values are separated by the specified delimiter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hodnoty jsou odděleny určeným oddělovačem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source>If you enter <bpt id="p1">&lt;strong&gt;</bpt>SPLIT(<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph> , 1)<ept id="p1">&lt;/strong&gt;</ept> as a data source (DS), <bpt id="p2">&lt;strong&gt;</bpt>STRINGJOIN (DS, DS.Value, <ph id="ph3">&amp;quot;</ph><ph id="ph4">-</ph><ph id="ph5">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> returns <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>a-b-c<ph id="ph7">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud jako zdroj dat (DS) zadáte <bpt id="p1">&lt;strong&gt;</bpt>SPLIT(<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph> , 1)<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>STRINGJOIN (DS, DS.Value, <ph id="ph3">&amp;quot;</ph><ph id="ph4">-</ph><ph id="ph5">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> vrátí <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>a-b-c<ph id="ph7">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source>SPLITLISTBYLIMIT (list, limit value, limit source)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SPLITLISTBYLIMIT (seznamu, hodnota limitu, zdroj limitu)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>Split the specified list into a new list of sub-lists, and return the result in record list content.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozdělí zadaný seznam na nový seznam podřízených seznamů a vrátí výsledek v obsahu seznamu záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source>The <bpt id="p1">&lt;strong&gt;</bpt>limit value<ept id="p1">&lt;/strong&gt;</ept> parameter defines the value of the limit for splitting the original list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametr <bpt id="p1">&lt;strong&gt;</bpt>hodnota limitu<ept id="p1">&lt;/strong&gt;</ept> určuje hodnotu limitu k rozdělení původního seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>The <bpt id="p1">&lt;strong&gt;</bpt>limit source<ept id="p1">&lt;/strong&gt;</ept> parameter defines the step that the total sum is increased on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametr <bpt id="p1">&lt;strong&gt;</bpt>zdroj limitu<ept id="p1">&lt;/strong&gt;</ept> určuje krok, o který se celkový součet zvýší.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source>The limit isn't applied to a single item of the original list if the limit source exceeds the defined limit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Limit nebude použito na jednu položku z původního seznamu, když zdrojový limit překročí definovaný limit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>The following illustration shows a format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje formát.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>The following illustration shows the data sources that are used for the format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek zobrazuje formát a zdroje dat, které se pro něj používají.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source>The following illustration shows the result when the format is run.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje výsledek při spuštění formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>In this case, the output is a flat list of commodity items.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V takovém případě je výstup prostý seznam položek komodit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>In the following illustrations, the same format has been adjusted so that it presents the list of commodity items in batches when a single batch must include commodities and the total weight should not exceed the limit of 9.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek uvádí stejný formát, který byl upraven tak, aby obsahoval seznam položek komodit v dávkách, kdy musí jedna dávka zahrnovat komodity a celková hmotnost nesmí překračovat limit 9.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>The following illustration shows the result when the adjusted format is run.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje výsledek při spuštění upraveného formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source>The limit isn't applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Limit není použit na poslední položku v původním seznamu, protože hodnota (11) zdroje limitu (hmotnost) překračuje definovaný limit (9).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>Use either the <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> function or the <bpt id="p2">&lt;strong&gt;</bpt>Enabled<ept id="p2">&lt;/strong&gt;</ept> expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Použijte funkci <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> nebo výraz <bpt id="p2">&lt;strong&gt;</bpt>Enabled<ept id="p2">&lt;/strong&gt;</ept> odpovídajícího prvku formátu k ignorování (přeskočení) dílčích seznamů během generování sestavy podle potřeby.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source>FILTER (list, condition)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FILTER (seznam, podmínka)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>Return the specified list after the query has been modified to filter for the specified condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný seznam po úpravě dotazu k filtrování podle zadané podmínky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source>This function differs from the <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> function, because the specified condition is applied to any ER data source of the <bpt id="p2">&lt;strong&gt;</bpt>Table records<ept id="p2">&lt;/strong&gt;</ept> type at the database level.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce se liší od funkce <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept>, protože zadaná podmínka je použita u jakéhokoli zdroje dat elektronického výkaznictví typu <bpt id="p2">&lt;strong&gt;</bpt>Záznamy tabulky<ept id="p2">&lt;/strong&gt;</ept> na úrovni databáze.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>The list and condition can be defined by using tables and relations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seznam a podmínku lze definovat pomocí tabulek a relací.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source>If <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> is configured as an ER data source that refers to the VendTable table, <bpt id="p2">&lt;strong&gt;</bpt>FILTER (Vendors, Vendors.VendGroup = <ph id="ph1">&amp;quot;</ph>40<ph id="ph2">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> returns a list of just the vendors that belong to vendor group 40.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jestliže je položka <bpt id="p1">&lt;strong&gt;</bpt>Dodavatel<ept id="p1">&lt;/strong&gt;</ept> konfigurována jako zdroj dat elektronického výkaznictví, který odkazuje na tabulku VendTable, <bpt id="p2">&lt;strong&gt;</bpt>FILTER (Vendors, Vendors.VendGroup = <ph id="ph1">&amp;quot;</ph>40<ph id="ph2">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> vrátí pouze seznam dodavatelů patřících do skupiny dodavatelů č. 40.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>If <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> is configured as an ER data source that refers to the VendTable table, and if <bpt id="p2">&lt;strong&gt;</bpt>parmVendorBankGroup<ept id="p2">&lt;/strong&gt;</ept> is configured as an ER data source that returns a value of the <bpt id="p3">&lt;strong&gt;</bpt>String<ept id="p3">&lt;/strong&gt;</ept> data type, <bpt id="p4">&lt;strong&gt;</bpt>FILTER (Vendor.'<ph id="ph1">&amp;lt;</ph>Relations'.VendBankAccount, Vendor.'<ph id="ph2">&amp;lt;</ph>Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)<ept id="p4">&lt;/strong&gt;</ept> returns a list of just the vendor accounts that belong to a specific bank group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> nakonfigurován jako zdroj dat elektronického výkaznictví, který se vztahuje k tabulce VendTable a pokud je <bpt id="p2">&lt;strong&gt;</bpt>parmVendorBankGroup<ept id="p2">&lt;/strong&gt;</ept> nakonfigurovaný jako zdroj dat elektronického výkaznictví, který vrací hodnotu v datovém typu <bpt id="p3">&lt;strong&gt;</bpt>String<ept id="p3">&lt;/strong&gt;</ept>, pak příkaz <bpt id="p4">&lt;strong&gt;</bpt>FILTER (Vendor.'<ph id="ph1">&amp;lt;</ph>Relations'.VendBankAccount, Vendor.'<ph id="ph2">&amp;lt;</ph>Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)<ept id="p4">&lt;/strong&gt;</ept> vrací seznam pouze těch dodavatelských účtů, které patří ke konkrétní bankovní skupině.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source>INDEX (list, index)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">INDEX (seznam, index)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>This function returns a record that is selected by a specific numeric index in the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce vrací záznam, který je vybrán určitým číselným indexem v seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>An exception is thrown if the index is out of range of the records in the list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výjimka je vyvolána v případě, že index je mimo rozsah záznamů v seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source>If you enter the data source <bpt id="p1">&lt;strong&gt;</bpt>DS<ept id="p1">&lt;/strong&gt;</ept> for the <bpt id="p2">&lt;strong&gt;</bpt>Calculated field<ept id="p2">&lt;/strong&gt;</ept> type and it contains the expression <bpt id="p3">&lt;strong&gt;</bpt>SPLIT ("A|B|C", “|”), 2<ept id="p3">&lt;/strong&gt;</ept>, the expression <bpt id="p4">&lt;strong&gt;</bpt>DS.Value<ept id="p4">&lt;/strong&gt;</ept> returns the text value, “B”.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Pokud zadáte zdroj dat <bpt id="p1">&lt;strong&gt;</bpt>DS<ept id="p1">&lt;/strong&gt;</ept> pro typ <bpt id="p2">&lt;strong&gt;</bpt>vypočítaného pole<ept id="p2">&lt;/strong&gt;</ept> a to obsahuje výraz <bpt id="p3">&lt;strong&gt;</bpt>SPLIT ("A|B|C", “|”), 2<ept id="p3">&lt;/strong&gt;</ept>, výraz <bpt id="p4">&lt;strong&gt;</bpt>DS.Value<ept id="p4">&lt;/strong&gt;</ept> vrátí textovou hodnotu "B".</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source>The expression <bpt id="p1">&lt;strong&gt;</bpt>INDEX (SPLIT ("A|B|C", “|”), 2).Value<ept id="p1">&lt;/strong&gt;</ept> also returns the “B” text value.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Výraz <bpt id="p1">&lt;strong&gt;</bpt>INDEX (SPLIT ("A|B|C", “|”), 2).Value<ept id="p1">&lt;/strong&gt;</ept> vrátí též textovou hodnotu “B”.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source>Logical functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Logické funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source>CASE (expression, option 1, result 1 <ph id="ph1">\[</ph>, option 2, result 2<ph id="ph2">\]</ph> …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CASE (výraz, možnost 1, výsledek 1 <ph id="ph1">\[</ph>, možnost 2, výsledek<ph id="ph2">\]</ph> …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source><ph id="ph1">\[</ph>, default result<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\[</ph>, výchozí výsledek<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>Evaluate the specified expression value against the specified alternative options.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyhodnotí zadanou hodnotu výrazu s ohledem na zadané alternativní možnosti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source>Return the result of the option that equals the value of the expression.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrací výsledek možnosti, která je rovna hodnotě výrazu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source>Otherwise, return the optional default result, if a default result is specified.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném případě vrací volitelný výchozí výsledek, pokud je zadán výchozí výsledek.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>(The default result is the last parameter that isn't preceded by an option.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Výchozí výsledek je poslední parametr, který nepředchází žádná možnost).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source><bpt id="p1">**</bpt>CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")<ept id="p1">**</ept> returns the string <bpt id="p2">**</bpt>"WINTER"<ept id="p2">**</ept> when the current Finance and Operations session date is between October and December.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")<ept id="p1">**</ept> vrátí řetězec <bpt id="p2">**</bpt>"WINTER"<ept id="p2">**</ept>, jestliže je aktuální datum relace aplikace Finance and Operations mezi říjnem a prosincem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source>Otherwise, it returns a blank string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jinak bude vrácen prázdný řetězec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>IF (condition, value 1, value 2)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IF (podmínka, hodnota 1, hodnota 2)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source>Return the first specified value when the specified condition is met.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při splnění dané podmínky bude vrácena první zadaná hodnota.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>Otherwise, return the second specified value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném případě vrací druhou zadanou hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source>If value 1 and value 2 are records or record lists, the result has only the fields that exist in both lists.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud hodnoty 1 a 2 jsou záznamy nebo seznamy záznamů, má výsledek pouze pole, která existují v obou seznamech.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source><bpt id="p1">**</bpt>IF (1=2, "condition is met", "condition is not met")<ept id="p1">**</ept> returns the string <bpt id="p2">**</bpt>"condition is not met"<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>IF (1=2, "podmínka je splněna", "podmínka není splněna")<ept id="p1">**</ept> vrátí řetězec <bpt id="p2">**</bpt>"podmínka není splněna"<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>NOT (condition)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NOT (podmínka)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>Return the reversed logical value of the specified condition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí obrácenou logickou hodnotu zadané podmínky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source><bpt id="p1">**</bpt>NOT (TRUE)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NOT (TRUE)<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source>AND (condition 1<ph id="ph1">\[</ph>, condition 2, …<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AND (podmínka 1<ph id="ph1">\[</ph>, podmínka 2, …<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>Return <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept> if <bpt id="p2">*</bpt>all<ept id="p2">*</ept> specified conditions are true.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept>, pokud jsou <bpt id="p2">*</bpt>všechny<ept id="p2">*</ept> zadané podmínky pravda.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source>Otherwise, return <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném případě vrátí hodnotu <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source><bpt id="p1">**</bpt>AND (1=1, "a"="a")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>AND (1=1, "a"="a")<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source><bpt id="p1">**</bpt>AND (1=2, "a"="a")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>AND (1=2, "a"="a")<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>OR (condition 1<ph id="ph1">\[</ph>, condition 2, …<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OR (podmínka 1<ph id="ph1">\[</ph>, podmínka 2, …<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source>Return <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept> if <bpt id="p2">*</bpt>all<ept id="p2">*</ept> specified conditions are false.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>, pokud jsou <bpt id="p2">*</bpt>všechny<ept id="p2">*</ept> zadané podmínky nepravda.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source>Return <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept> if <bpt id="p2">*</bpt>any<ept id="p2">*</ept> specified condition is true.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept>, pokud je <bpt id="p2">*</bpt>jakákoli<ept id="p2">*</ept> zadaná podmínka pravda.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source><bpt id="p1">**</bpt>OR (1=2, "a"="a")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OR (1=2, "a"="a")<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>VALUEIN (input, list, list item expression)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VALUEIN (vstup, seznam, výraz položky seznamu)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source>Determine whether the specified input matches any value of an item in the specified list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Určete, zda zadaný vstup odpovídá libovolné hodnotě položky v určeném seznamu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source>Return <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept> if the specified input matches the result of running the specified expression for at least one record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept>, pokud zadaný vstup odpovídá výsledku spuštění zadaného výrazu pro alespoň jeden záznam.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source>Otherwise, return <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném případě vrátí hodnotu <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>The <bpt id="p1">**</bpt>input<ept id="p1">**</ept> parameter represents the path of a data source element.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametr <bpt id="p1">**</bpt>vstup<ept id="p1">**</ept> představující cestu prvku zdroje dat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source>The value of this element will be matched.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hodnota tohoto prvku bude spárována.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source>The <bpt id="p1">**</bpt>list<ept id="p1">**</ept> parameter represents the path of a data source element of the record list type as a list of records that contains an expression.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametr <bpt id="p1">**</bpt>seznam<ept id="p1">**</ept> reprezentuje cestu prvku zdroje dat typu seznamu záznamu jako seznamu záznamů, který obsahuje výraz.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source>The value of this element will be compared with the specified input.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hodnota tohoto prvku se bude porovnávat se zadaným vstupem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source>The <bpt id="p1">**</bpt>list item expression<ept id="p1">**</ept> argument represents an expression that either points to or contains a single field of the specified list that should be used for the matching.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Argument <bpt id="p1">**</bpt>výraz položky seznamu<ept id="p1">**</ept> představuje výraz, který buď odkazuje na nebo obsahuje jedno pole určeného seznamu, který by měl být použit pro párování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source>For examples, see the <bpt id="p1">[</bpt>Examples: VALUEIN (input, list, list item expression)<ept id="p1">](#examples-valuein-input-list-list-item-expression)</ept> section that follows.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklady naleznete v části <bpt id="p1">[</bpt>Příklady: VALUEIN (vstup, seznam, výraz položky seznamu)<ept id="p1">](#examples-valuein-input-list-list-item-expression)</ept>, která následuje.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source>Examples: VALUEIN (input, list, list item expression)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklady: VALUEIN (vstup, seznam, výraz položky seznamu)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>In general, the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function is translated to a set of <bpt id="p2">**</bpt>OR<ept id="p2">**</ept> conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obecně platí, že funkce <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> je převedena do sady podmínek <bpt id="p2">**</bpt>OR<ept id="p2">**</ept>:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>(input = list.item1.value) OR (input = list.item2.value) OR …</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(vstup = list.item1.value) OR (vstup = list.item2.value) OR …</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source>Example 1</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad 1</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source>You define the following data source in your model mapping: <bpt id="p1">**</bpt>List<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Calculated field<ept id="p2">**</ept> type).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definujete následující zdroje dat v mapování modelu: <bpt id="p1">**</bpt>List<ept id="p1">**</ept> (typ <bpt id="p2">**</bpt>Vypočítané pole<ept id="p2">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source>This data source contains the expression <bpt id="p1">**</bpt>SPLIT ("a,b,c", ",")<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento zdroj dat obsahuje výraz <bpt id="p1">**</bpt>SPLIT ("a, b c", ",")<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>When a data source is called that is configured as the <bpt id="p1">**</bpt>VALUEIN ("B", List, List.Value)<ept id="p1">**</ept> expression, it returns <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je volán zdroj dat, který je nakonfigurován jako výraz <bpt id="p1">**</bpt>VALUEIN ("B", List, List.Value)<ept id="p1">**</ept>, vrátí se hodnota <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source>In this case, the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function is translated to the following set of conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto případě je funkce <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> převedena do následující sady podmínek:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source><bpt id="p1">**</bpt>(("B" = "a") or ("B" = "b") or ("B" = "c"))<ept id="p1">**</ept>, where <bpt id="p2">**</bpt>("B" = "b")<ept id="p2">**</ept> is equal to <bpt id="p3">**</bpt>TRUE<ept id="p3">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>(("B" = "a") or ("B" = "b") or ("B" = "c"))<ept id="p1">**</ept>, kde <bpt id="p2">**</bpt>("B" = "b")<ept id="p2">**</ept> se rovná <bpt id="p3">**</bpt>TRUE<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source>When a data source is called that is configured as the <bpt id="p1">**</bpt>VALUEIN ("B", List, LEFT(List.Value, 0))<ept id="p1">**</ept> expression, it returns <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je volán zdroj dat, který je nakonfigurován jako výraz <bpt id="p1">**</bpt>VALUEIN ("B", LEFT(List.Value,0))<ept id="p1">**</ept>, vrátí se hodnota <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>In this case, the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function is translated to the following condition:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto případě je funkce <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> převedena do následující podmínky:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source><bpt id="p1">**</bpt>("B" = "")<ept id="p1">**</ept>, which isn't equal to <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>("B" = "")<ept id="p1">**</ept>, což se nerovná <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source>Note that the upper limit for the number of characters in the text of such a condition is 32,768 characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všimněte si, že maximální počet znaků v textu takové podmínky je 32 768 znaků.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source>Therefore, you should not create data sources that might exceed this limit at runtime.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proto byste neměli vytvářet zdroje dat, které mohou překročit tento limit za běhu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>If the limit is exceeded, the application will stop running, and an exception will be thrown.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při přesažení limitu se aplikace zastaví a bude vyvolána výjimka.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source>For example, this situation can occur if the data source is configured as <bpt id="p1">**</bpt>WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)<ept id="p1">**</ept>, and the <bpt id="p2">**</bpt>List1<ept id="p2">**</ept> and <bpt id="p3">**</bpt>List2<ept id="p3">**</ept> lists contain a large volume of records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například k této situaci může dojít, pokud je datový zdroj nakonfigurován jako <bpt id="p1">**</bpt>WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)<ept id="p1">**</ept>, a seznamy <bpt id="p2">**</bpt>List1<ept id="p2">**</ept> a <bpt id="p3">**</bpt>List2<ept id="p3">**</ept> obsahují velké množství záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source>In some cases, the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function is translated to a database statement by using the <bpt id="p2">**</bpt>EXISTS JOIN<ept id="p2">**</ept> operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V některých případech je funkce <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> přeložena do výkazu databázi pomocí operátoru <bpt id="p2">**</bpt>EXISTS JOIN<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source>This behavior occurs when the <bpt id="p1">**</bpt>FILTER<ept id="p1">**</ept> function is used and the following conditions are met:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">K tomuto chování dochází, když se používá funkce <bpt id="p1">**</bpt>FILTER<ept id="p1">**</ept> a jsou splněny následující podmínky:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source>The <bpt id="p1">**</bpt>ASK FOR QUERY<ept id="p1">**</ept> option is turned off for the data source of the <bpt id="p2">**</bpt>VALUEIN<ept id="p2">**</ept> function that refers to the list of records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnost <bpt id="p1">**</bpt>ASK FOR QUERY<ept id="p1">**</ept> je vypnuta pro datový zdroj funkce <bpt id="p2">**</bpt>VALUEIN<ept id="p2">**</ept>, která se odkazuje na seznam záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source>(No additional conditions will be applied to this data source at runtime.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Žádné další podmínky nebudou použity na tento zdroj dat za běhu.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source>No nested expressions are configured for the data source of the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function that refers to the list of records.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádné vnořené výrazy nejsou nakonfigurovány pro datový zdroj funkce <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept>, která se odkazuje na seznam záznamů.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source>A list item of the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function refers to a field (not an expression or a method) of the specified data source.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Položka seznamu funkce <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> se vztahuje k poli (nikoliv k výrazu nebo metodě) určeného zdroje dat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source>Consider using this option instead of the <bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> function as described earlier in this example.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvažte použití této možnosti místo funkce <bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept>, jak je pospáno výše v tomto příkladu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source>Example 2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad 2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source>You define the following data sources in your model mapping:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definujte v mapování modelu následující zdroje dat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source><bpt id="p1">**</bpt>In<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Table records<ept id="p2">**</ept> type), which refers to the Intrastat table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>In<ept id="p1">**</ept> (typ <bpt id="p2">**</bpt>Záznamy tabulky<ept id="p2">**</ept>), která odkazuje na tabulku Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source><bpt id="p1">**</bpt>Port<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Table records<ept id="p2">**</ept> type), which refers to the IntrastatPort table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Port<ept id="p1">**</ept> (typ <bpt id="p2">**</bpt>Záznamy tabulky<ept id="p2">**</ept>), která odkazuje na tabulku IntrastatPort</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>When a data source is called that is configured as the <bpt id="p1">**</bpt>FILTER (In, VALUEIN(In.Port, Port, Port.PortId)<ept id="p1">**</ept> expression, the following SQL statement is generated to return filtered records of the Intrastat table:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je volán zdroj dat nakonfigurovaný jako výraz <bpt id="p1">**</bpt>FILTER (In, VALUEIN (In.Port, Port, Port.PortId)<ept id="p1">**</ept>, je vygenerován následující příkaz SQL pro navrácení vyfiltrovaných záznamů tabulky Intrastat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source>For <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> fields, the final SQL statement is generated by the using <bpt id="p2">**</bpt>IN<ept id="p2">**</ept> operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro pole <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> je konečný příkaz SQL vygenerován pomocí operátoru <bpt id="p2">**</bpt>IN<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>Example 3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad 3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source>You define the following data sources in your model mapping:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definujte v mapování modelu následující zdroje dat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="619">
+          <source><bpt id="p1">**</bpt>Le<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Calculated field<ept id="p2">**</ept> type), which contains the expression <bpt id="p3">**</bpt>SPLIT ("DEMF,GBSI,USMF", ",")<ept id="p3">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Le<ept id="p1">**</ept> (typ <bpt id="p2">**</bpt>Vypočítané pole<ept id="p2">**</ept>), která obsahuje výraz <bpt id="p3">**</bpt>SPLIT ("DEMF GBSI, USMF", ",")<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="620">
+          <source><bpt id="p1">**</bpt>In<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Table records<ept id="p2">**</ept> type), which refers to the Intrastat table and for which the <bpt id="p3">**</bpt>Cross-company<ept id="p3">**</ept> option is turned on</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>In<ept id="p1">**</ept> (typ <bpt id="p2">**</bpt>Záznamy tabulky<ept id="p2">**</ept>), která se vztahuje k tabulce Intrastat a pro kterou je možnost <bpt id="p3">**</bpt>Mezi společnostmi<ept id="p3">**</ept> zapnuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="621">
+          <source>When a data source is called that is configured as the <bpt id="p1">**</bpt>FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)<ept id="p1">**</ept> expression, the final SQL statement contains the following condition:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je volán zdroj dat nakonfigurovaný jako výraz <bpt id="p1">**</bpt>FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)<ept id="p1">**</ept>, obsahuje konečný příkaz SQL následující podmínku:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="622">
+          <source>Mathematical functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Matematické funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="623">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="624">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="625">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="626">
+          <source>ABS (number)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ABS (číslo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="627">
+          <source>Return the absolute value of the specified number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrací absolutní hodnotu zadaného čísla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="628">
+          <source>(In other words, return the number without its sign.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Jinými slovy, vrací číslo bez znaménka.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="629">
+          <source><bpt id="p1">**</bpt>ABS (-1)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>1<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ABS (-1)<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>1<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="630">
+          <source>POWER (number, power)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POWER (číslo, mocnina)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="631">
+          <source>Return the result of raising the specified positive number to the specified power.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí výsledek umocnění zadaného kladného čísla pomocí zadané mocniny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="632">
+          <source><bpt id="p1">**</bpt>POWER (10, 2)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>100<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>POWER (10, 2)<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>100<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="633">
+          <source>NUMBERVALUE (string, decimal separator, digit grouping separator)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMBERVALUE (řetězec, oddělovač desetinných míst, oddělovač skupin číslic)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="634">
+          <source>Convert the specified string to a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převede zadaný řetězec na číslo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="635">
+          <source>The specified decimal separator is used between the integer and fractional parts of a decimal number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadaný oddělovač desetinných míst se použije mezi celým číslem a zlomkovou částí desetinného čísla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="636">
+          <source>The specified digit grouping separator is used as the thousands separator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadaný oddělovač skupin číslic se použije jako oddělovač tisíců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="637">
+          <source><bpt id="p1">**</bpt>NUMBERVALUE("1 234,56", ",", " ")<ept id="p1">**</ept> returns the value <bpt id="p2">**</bpt>1234.56<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NUMBERVALUE("1 234,56", ",", " ")<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>1234.56<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="638">
+          <source>VALUE (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VALUE (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="639">
+          <source>Convert the specified string to a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převede zadaný řetězec na číslo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="640">
+          <source>Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Čárky a tečky (.) jsou považovány za oddělovače desetinných míst a úvodní spojovník (-) se používá jako záporné znaménko.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="641">
+          <source>Throw an exception if the specified string contains other non-numeric characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud jsou v zadaném řetězci obsaženy jiné než číselné znaky, bude vyvolána výjimka.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="642">
+          <source><bpt id="p1">**</bpt>VALUE ("1 234,56")<ept id="p1">**</ept> throws an exception.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>VALUE ("1 234,56")<ept id="p1">**</ept> vyvolá výjimku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="643">
+          <source>ROUND (number, decimals)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROUND (číslo, desetinná čísla)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="644">
+          <source>Return the specified number after it has been rounded to the specified number of decimal places:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadané číslo, poté, co je zaokrouhleno na zadaný počet desetinných míst:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="645">
+          <source>If the value of the <bpt id="p1">**</bpt>decimals<ept id="p1">**</ept> parameter is more than 0 (zero), the specified number is rounded to that many decimal places.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je hodnota parametru <bpt id="p1">**</bpt>desetinná místa<ept id="p1">**</ept> vyšší než 0 (nula), zadané číslo je zaokrouhleno na tento počet desetinných míst.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="646">
+          <source>If the value of the <bpt id="p1">**</bpt>decimals<ept id="p1">**</ept> parameter is <bpt id="p2">**</bpt>0<ept id="p2">**</ept> (zero), the specified number is rounded to the nearest integer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je hodnota parametru <bpt id="p1">**</bpt>desetinná místa<ept id="p1">**</ept> <bpt id="p2">**</bpt>0<ept id="p2">**</ept> (nula), zadané číslo je zaokrouhleno na nejbližší celé číslo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="647">
+          <source>If the value of the <bpt id="p1">**</bpt>decimals<ept id="p1">**</ept> parameter is less than 0 (zero), the specified number is rounded to the left of the decimal point.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je hodnota parametru <bpt id="p1">**</bpt>desetinná místa<ept id="p1">**</ept> nižší než 0 (nula), zadané číslo je zaokrouhleno vlevo od oddělovače desetinných míst.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="648">
+          <source><bpt id="p1">**</bpt>ROUND (1200.767, 2)<ept id="p1">**</ept> rounds to two decimal places and returns <bpt id="p2">**</bpt>1200.77<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUND (1200.767, 2)<ept id="p1">**</ept> zaokrouhlí na dvě desetinná místa a vrátí hodnotu <bpt id="p2">**</bpt>1200.77<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="649">
+          <source><bpt id="p1">**</bpt>ROUND (1200.767, -3)<ept id="p1">**</ept> rounds to the nearest multiple of 1,000 and returns <bpt id="p2">**</bpt>1000<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUND (1200.767, -3)<ept id="p1">**</ept> zaokrouhlí na nejbližší násobek 1 000 a vrátí hodnotu <bpt id="p2">**</bpt>1000<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="650">
+          <source>ROUNDDOWN (number, decimals)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROUNDDOWN (číslo, desetinná čísla)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="651">
+          <source>Return the specified number after it has been rounded down to the specified number of decimal places.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadané číslo, poté, co je zaokrouhleno dolů na zadaný počet desetinných míst.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="652">
+          <source>This function behaves like <bpt id="p1">**</bpt>ROUND<ept id="p1">**</ept>, but it always rounds the specified number down (toward zero).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce se chová jako <bpt id="p1">**</bpt>ROUND<ept id="p1">**</ept>, ale vždy zaokrouhluje zadané číslo směrem dolů (směrem k nule).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="653">
+          <source><bpt id="p1">**</bpt>ROUNDDOWN (1200.767, 2)<ept id="p1">**</ept> rounds down to two decimal places and returns <bpt id="p2">**</bpt>1200.76<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUNDDOWN (1200.767, 2)<ept id="p1">**</ept> zaokrouhlí směrem dolů na dvě desetinná místa a vrátí hodnotu <bpt id="p2">**</bpt>1200.76<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="654">
+          <source><bpt id="p1">**</bpt>ROUNDDOWN (1700.767, -3)<ept id="p1">**</ept> rounds down to the nearest multiple of 1,000 and returns <bpt id="p2">**</bpt>1000<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUNDDOWN (1700.767, -3)<ept id="p1">**</ept> zaokrouhlí směrem dolů na nejbližší násobek 1 000 a vrátí hodnotu <bpt id="p2">**</bpt>1000<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="655">
+          <source>ROUNDUP (number, decimals)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROUNDUP (číslo, desetinná čísla)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="656">
+          <source>Return the specified number after it has been rounded up to the specified number of decimal places.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadané číslo, poté, co je zaokrouhleno nahoru na zadaný počet desetinných míst.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="657">
+          <source>This function behaves like <bpt id="p1">**</bpt>ROUND<ept id="p1">**</ept>, but it always rounds the specified number up (away from zero).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce se chová jako <bpt id="p1">**</bpt>ROUND<ept id="p1">**</ept>, ale vždy zaokrouhluje zadané číslo směrem nahoru (směrem od nuly).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="658">
+          <source><bpt id="p1">**</bpt>ROUNDUP (1200.763, 2)<ept id="p1">**</ept> rounds up to two decimal places and returns <bpt id="p2">**</bpt>1200.77<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUNDUP (1200.763, 2)<ept id="p1">**</ept> zaokrouhlí směrem nahoru na dvě desetinná místa a vrátí hodnotu <bpt id="p2">**</bpt>1200.77<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="659">
+          <source><bpt id="p1">**</bpt>ROUNDUP (1200.767, -3)<ept id="p1">**</ept> rounds up to the nearest multiple of 1,000 and returns <bpt id="p2">**</bpt>2000<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUNDUP (1200.767, -3)<ept id="p1">**</ept> zaokrouhlí směrem nahoru na nejbližší násobek 1 000 a vrátí hodnotu <bpt id="p2">**</bpt>2000<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="660">
+          <source>Data conversion functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce převodu dat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="661">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="662">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="663">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="664">
+          <source>VALUE (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VALUE (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="665">
+          <source>Convert the specified string to a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převede zadaný řetězec na číslo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="666">
+          <source>Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Čárky a tečky (.) jsou považovány za oddělovače desetinných míst a úvodní spojovník (-) se používá jako záporné znaménko.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="667">
+          <source>Throw an exception if the specified string contains other non-numeric characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud jsou v zadaném řetězci obsaženy jiné než číselné znaky, bude vyvolána výjimka.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="668">
+          <source><bpt id="p1">**</bpt>VALUE ("1 234,56")<ept id="p1">**</ept> throws an exception.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>VALUE ("1 234,56")<ept id="p1">**</ept> vyvolá výjimku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="669">
+          <source>NUMBERVALUE (string, decimal separator, digit grouping separator)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMBERVALUE (řetězec, oddělovač desetinných míst, oddělovač skupin číslic)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="670">
+          <source>Convert the specified string to a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převede zadaný řetězec na číslo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="671">
+          <source>The specified decimal separator is used between the integer and fractional parts of a decimal number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadaný oddělovač desetinných míst se použije mezi celým číslem a zlomkovou částí desetinného čísla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="672">
+          <source>The specified digit grouping separator is used as the thousands separator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadaný oddělovač skupin číslic se použije jako oddělovač tisíců.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="673">
+          <source><bpt id="p1">**</bpt>NUMBERVALUE("1 234,56", ",", " ")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>1234.56<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NUMBERVALUE("1 234,56", ",", " ")<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>1234.56<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="674">
+          <source>INTVALUE (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">INTVALUE (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="675">
+          <source>Return an integer representation of the specified string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí reprezentaci celého čísla zadaného řetězce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="676">
+          <source>Any decimal places are truncated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Desetinná místa jsou oříznuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="677">
+          <source><bpt id="p1">**</bpt>INTVALUE ("100.77")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>100<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>INTVALUE ("100.77")<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>100<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="678">
+          <source>INTVALUE (number)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">INTVALUE (číslo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="679">
+          <source>Return an integer representation of the specified number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí reprezentaci celého čísla zadaného čísla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="680">
+          <source>Any decimal places are truncated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Desetinná místa jsou oříznuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="681">
+          <source><bpt id="p1">**</bpt>INTVALUE (-100.77)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>-100<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>INTVALUE (-100.77)<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>-100<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="682">
+          <source>INT64VALUE (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">INT64VALUE (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="683">
+          <source>Return an int64 representation of the specified string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí reprezentaci int64 zadaného řetězce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="684">
+          <source>Any decimal places are truncated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Desetinná místa jsou oříznuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="685">
+          <source><bpt id="p1">**</bpt>INT64VALUE ("22565422744")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>22565422744<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>INT64VALUE ("22565422744")<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>22565422744<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="686">
+          <source>INT64VALUE (number)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">INT64VALUE (číslo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="687">
+          <source>Return an int64 representation of the specified number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí reprezentaci int64 zadaného čísla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="688">
+          <source>Any decimal places are truncated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Desetinná místa jsou oříznuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="689">
+          <source><bpt id="p1">**</bpt>INT64VALUE (22565422744.00)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>22565422744<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>INT64VALUE (22565422744.00)<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>22565422744<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="690">
+          <source>Record functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce záznamu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="691">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="692">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="693">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="694">
+          <source>NULLCONTAINER (list)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NULLCONTAINER (seznam)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="695">
+          <source>Return a <bpt id="p1">**</bpt>null<ept id="p1">**</ept> record that has the same structure as the specified record list or record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí záznam <bpt id="p1">**</bpt>null<ept id="p1">**</ept>, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="696">
+          <source>This function is obsolete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce je zastaralá.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="697">
+          <source>Use <bpt id="p1">**</bpt>EMPTYRECORD<ept id="p1">**</ept> instead.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Místo toho použijte <bpt id="p1">**</bpt>EMPTYRECORD<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="698">
+          <source><bpt id="p1">**</bpt>NULLCONTAINER (SPLIT ("abc", 1))<ept id="p1">**</ept> returns a new empty record that has the same structure as the list that is returned by the <bpt id="p2">**</bpt>SPLIT<ept id="p2">**</ept> function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NULLCONTAINER (SPLIT ("abc", 1))<ept id="p1">**</ept> vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí <bpt id="p2">**</bpt>SPLIT<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="699">
+          <source>EMPTYRECORD (record)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EMPTYRECORD (záznam)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="700">
+          <source>Return a <bpt id="p1">**</bpt>null<ept id="p1">**</ept> record that has the same structure as the specified record list or record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí záznam <bpt id="p1">**</bpt>null<ept id="p1">**</ept>, který má stejnou strukturu jako zadaný seznam záznamů nebo záznam.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="701">
+          <source>A <bpt id="p1">**</bpt>null<ept id="p1">**</ept> record is a record where all fields have an empty value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záznam <bpt id="p1">**</bpt>null<ept id="p1">**</ept> je záznam, kde všechna pole mají prázdnou hodnotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="702">
+          <source>An empty value is <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) for numbers, an empty string for strings, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prázdná hodnota je <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (nula) pro čísla, prázdný řetězec pro řetězce atd.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="703">
+          <source><bpt id="p1">**</bpt>EMPTYRECORD (SPLIT ("abc", 1))<ept id="p1">**</ept> returns a new empty record that has the same structure as the list that is returned by the <bpt id="p2">**</bpt>SPLIT<ept id="p2">**</ept> function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>EMPTYRECORD (SPLIT ("abc", 1))<ept id="p1">**</ept> vrátí nový prázdný záznam, který má stejnou strukturu jako seznam vrácený funkcí <bpt id="p2">**</bpt>SPLIT<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="704">
+          <source>Text functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Textové funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="705">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="706">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="707">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="708">
+          <source>UPPER (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UPPER (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="709">
+          <source>Return the specified string after it has been converted to uppercase letters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný řetězec po převedení na velká písmena.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="710">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>UPPER(<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>SAMPLE<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>UPPER(<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>SAMPLE<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="711">
+          <source>LOWER (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LOWER (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="712">
+          <source>Return the specified string after it has been converted to lowercase letters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný řetězec po převedení na malá písmena.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="713">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>LOWER (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>sample<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>LOWER (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>sample<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="714">
+          <source>LEFT (string, number of characters)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LEFT (řetězec, počet znaků)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="715">
+          <source>Return the specified number of characters from the start of the specified string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný počet znaků od začátku zadaného řetězce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="716">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>LEFT (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>Sam<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>LEFT (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>Sam<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="717">
+          <source>RIGHT (string, number of characters)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RIGHT (řetězec, počet znaků)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="718">
+          <source>Return the specified number of characters from the end of the specified string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný počet znaků od konce zadaného řetězce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="719">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>RIGHT (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>ple<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>RIGHT (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>ple<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="720">
+          <source>MID (string, starting position, number of characters)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MID (řetězec, počáteční pozice, počet znaků)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="721">
+          <source>Return the specified number of characters from the specified string, starting at the specified position.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný počet znaků ze zadaného řetězce, počínaje od zadané pozice.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="722">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>MID (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>, 2, 3)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>amp<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>MID (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>, 2, 3)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>amp<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="723">
+          <source>LEN (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LEN (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="724">
+          <source>Return the number of characters in the specified string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí počet znaků v zadaném řetězci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="725">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>LEN (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt>6<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>LEN (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt>6<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="726">
+          <source>CHAR (number)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CHAR (číslo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="727">
+          <source>Return the string of characters that is referenced by the specified Unicode number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí řetězec znaků, na který odkazuje zadané číslo ve znakové sadě Unicode.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="728">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>CHAR (255)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>ÿ<ph id="ph2">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>CHAR (255)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>ÿ<ph id="ph2">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="729">
+          <source>The string that this function returns depends on the encoding that is selected in the parent FILE format element.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řetězec, který vrací tato funkce, závisí na kódování, které je vybráno v nadřazeném prvku formátu SOUBORU.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="730">
+          <source>For the list of supported encodings, see <bpt id="p1">&lt;a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx"&gt;</bpt>Encoding class<ept id="p1">&lt;/a&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Více informací o seznamu podporovaných kódování naleznete v tématu <bpt id="p1">&lt;a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx"&gt;</bpt>Třída kódování<ept id="p1">&lt;/a&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="731">
+          <source>CONCATENATE (string 1 [, string 2, …])</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CONCATENATE (řetězec 1 [, řetězec 2…])</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="732">
+          <source>Return all specified text strings after they have been joined into one string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí všechny zadané textové řetězce po jejich spojení do jednoho řetězce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="733">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>CONCATENATE (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>def<ph id="ph4">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>abcdef<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>CONCATENATE (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>def<ph id="ph4">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>abcdef<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="734">
+          <source>The expression <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph> <ph id="ph3">&amp;amp;</ph> <ph id="ph4">&amp;quot;</ph>def<ph id="ph5">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept> also returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>abcdef<ph id="ph7">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výraz <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph> <ph id="ph3">&amp;amp;</ph> <ph id="ph4">&amp;quot;</ph>def<ph id="ph5">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept> vrátí též <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>abcdef<ph id="ph7">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="735">
+          <source>TRANSLATE (string, pattern, replacement)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TRANSLATE (řetězec, vzor, náhrada)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="736">
+          <source>Return the specified string after all occurrences of the characters in the specified pattern string have been replaced by the characters at the corresponding position in the specified replacement string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný řetězec po nahrazení všech výskytů znaků v zadaném řetězci vzoru za znaky na odpovídající pozici zadaného řetězce sloužícího jako náhrada.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="737">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>TRANSLATE (<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>cd<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>GH<ph id="ph6">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> replaces the pattern <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>cd<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept> with the string <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph9">&amp;quot;</ph>GH<ph id="ph10">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept> and returns <bpt id="p4">&lt;strong&gt;</bpt><ph id="ph11">&amp;quot;</ph>abGHef<ph id="ph12">&amp;quot;</ph><ept id="p4">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>TRANSLATE (<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>cd<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>GH<ph id="ph6">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> nahradí vzorec <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>cd<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept> řetězcem <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph9">&amp;quot;</ph>GH<ph id="ph10">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept> a vrátí <bpt id="p4">&lt;strong&gt;</bpt><ph id="ph11">&amp;quot;</ph>abGHef<ph id="ph12">&amp;quot;</ph><ept id="p4">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="738">
+          <source>REPLACE (string, pattern, replacement, regular expression flag)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">REPLACE (řetězec, vzor, náhrada, příznak regulérního výrazu)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="739">
+          <source>When the specified <bpt id="p1">&lt;strong&gt;</bpt>regular expression flag<ept id="p1">&lt;/strong&gt;</ept> parameter is <bpt id="p2">&lt;strong&gt;</bpt>true<ept id="p2">&lt;/strong&gt;</ept>, return the specified string after it has been modified by applying the regular expression that is specified as the <bpt id="p3">&lt;strong&gt;</bpt>pattern<ept id="p3">&lt;/strong&gt;</ept> argument for this function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je zadaný parametr <bpt id="p1">&lt;strong&gt;</bpt>příznak regulárního výrazu<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt>true<ept id="p2">&lt;/strong&gt;</ept>, vrátí zadaný řetězec po úpravě použitím regulárního výrazu zadaného jako argument <bpt id="p3">&lt;strong&gt;</bpt>vzoru<ept id="p3">&lt;/strong&gt;</ept> pro tuto funkci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="740">
+          <source>This expression is used to find characters that must be replaced.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento výraz slouží k vyhledání znaků, které je třeba nahradit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="741">
+          <source>Characters of the specified <bpt id="p1">&lt;strong&gt;</bpt>replacement<ept id="p1">&lt;/strong&gt;</ept> argument are used to replace characters that are found.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Znaky zadaného argumentu <bpt id="p1">&lt;strong&gt;</bpt>náhrady<ept id="p1">&lt;/strong&gt;</ept> jsou použity k nahrazení nalezených znaků.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="742">
+          <source>When the specified <bpt id="p1">&lt;strong&gt;</bpt>regular expression flag<ept id="p1">&lt;/strong&gt;</ept> parameter is <bpt id="p2">&lt;strong&gt;</bpt>false<ept id="p2">&lt;/strong&gt;</ept>, this function behaves like <bpt id="p3">&lt;strong&gt;</bpt>TRANSLATE<ept id="p3">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je zadaný parametr <bpt id="p1">&lt;strong&gt;</bpt>příznak regulérního výrazu<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt>false<ept id="p2">&lt;/strong&gt;</ept>, tato funkce se chová jako <bpt id="p3">&lt;strong&gt;</bpt>TRANSLATE<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="743">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>REPLACE (<ph id="ph1">&amp;quot;</ph>+1 923 456 4971<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>[^0-9]<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph><ph id="ph6">&amp;quot;</ph>, true)<ept id="p1">&lt;/strong&gt;</ept> applies a regular expression that removes all non-numeric symbols, and returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>19234564971<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>REPLACE (<ph id="ph1">&amp;quot;</ph>+1 923 456 4971<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>[^0-9]<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph><ph id="ph6">&amp;quot;</ph>, true)<ept id="p1">&lt;/strong&gt;</ept> použije regulární výraz, ktreý odebere všechny nečíselné symboly a vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>19234564971<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="744">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>REPLACE (<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>cd<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>GH<ph id="ph6">&amp;quot;</ph>, false)<ept id="p1">&lt;/strong&gt;</ept> replaces the pattern <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>cd<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept> with the string <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph9">&amp;quot;</ph>GH<ph id="ph10">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept> and returns <bpt id="p4">&lt;strong&gt;</bpt><ph id="ph11">&amp;quot;</ph>abGHef<ph id="ph12">&amp;quot;</ph><ept id="p4">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>REPLACE (<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>cd<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>GH<ph id="ph6">&amp;quot;</ph>, false)<ept id="p1">&lt;/strong&gt;</ept> nahradí vzorec <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>cd<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept> řetězcem <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph9">&amp;quot;</ph>GH<ph id="ph10">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept> a vrátí <bpt id="p4">&lt;strong&gt;</bpt><ph id="ph11">&amp;quot;</ph>abGHef<ph id="ph12">&amp;quot;</ph><ept id="p4">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="745">
+          <source>TEXT (input)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TEXT (vstup)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="746">
+          <source>Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný vstup po převedení na textový řetězec naformátovaný podle nastavení národního prostředí serveru aktuální instance aplikace Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="747">
+          <source>For values of the <bpt id="p1">&lt;strong&gt;</bpt>real<ept id="p1">&lt;/strong&gt;</ept> type, the string conversion is limited to two decimal places.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Co se týká hodnot typu <bpt id="p1">&lt;strong&gt;</bpt>real<ept id="p1">&lt;/strong&gt;</ept>, převod řetězce je omezen na dvě desetinná místa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="748">
+          <source>If the server locale of the Finance and Operations instance is defined as <bpt id="p1">&lt;strong&gt;</bpt>EN-US<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>TEXT (NOW ())<ept id="p2">&lt;/strong&gt;</ept> returns the current Finance and Operations session date, December 17, 2015, as the text string <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>12/17/2015 07:59:23 AM<ph id="ph2">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jestliže je národní prostředí serveru instance Finance and Operations definováno jako <bpt id="p1">&lt;strong&gt;</bpt>EN-US<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>TEXT (NOW ())<ept id="p2">&lt;/strong&gt;</ept> vrátí aktuální datum relace aplikace Finance and Operations, například 17. prosince 2015, jako textový řetězec <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>12/17/2015 07:59:23 AM<ph id="ph2">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="749">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>TEXT (1/3)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>0.33<ph id="ph2">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>TEXT (1/3)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>0.33<ph id="ph2">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="750">
+          <source>FORMAT (string 1, string 2[, string 3, …])</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FORMAT (řetězec 1 řetězce 2[, řetězec 3 ...])</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="751">
+          <source>Return the specified string after it has been formatted by substituting any occurrences of <bpt id="p1">&lt;strong&gt;</bpt>%N<ept id="p1">&lt;/strong&gt;</ept> with the <bpt id="p2">&lt;em&gt;</bpt>n<ept id="p2">&lt;/em&gt;</ept>th argument.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný řetězec po zformátování nahrazením všech výskytů <bpt id="p1">&lt;strong&gt;</bpt>%N<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;em&gt;</bpt>n-tým<ept id="p2">&lt;/em&gt;</ept> argumentem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="752">
+          <source>The arguments are strings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Argumenty jsou řetězce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="753">
+          <source>If an argument isn't provided for a parameter, the parameter is returned as <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>%N<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept> in the string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud pro parametr není zadán argument, parametr je vrácen jako <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>%N<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept> v řetězci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="754">
+          <source>For values of the <bpt id="p1">&lt;strong&gt;</bpt>real<ept id="p1">&lt;/strong&gt;</ept> type, the string conversion is limited to two decimal places.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Co se týká hodnot typu <bpt id="p1">&lt;strong&gt;</bpt>real<ept id="p1">&lt;/strong&gt;</ept>, převod řetězce je omezen na dvě desetinná místa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="755">
+          <source>In the following illustration, the <bpt id="p1">&lt;strong&gt;</bpt>PaymentModel<ept id="p1">&lt;/strong&gt;</ept> data source returns the list of customer records via the <bpt id="p2">&lt;strong&gt;</bpt>Customer<ept id="p2">&lt;/strong&gt;</ept> component and the processing date value via the <bpt id="p3">&lt;strong&gt;</bpt>ProcessingDate<ept id="p3">&lt;/strong&gt;</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ná následujícím obrázku vrátí zdroj dat <bpt id="p1">&lt;strong&gt;</bpt>PaymentModel<ept id="p1">&lt;/strong&gt;</ept> seznam záznamů odběratelů prostřednictvím součásti <bpt id="p2">&lt;strong&gt;</bpt>Customer<ept id="p2">&lt;/strong&gt;</ept> a datum zpracování prostřednictvím pole <bpt id="p3">&lt;strong&gt;</bpt>ProcessingDate<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="756">
+          <source>In the ER format that is designed to generate an electronic file for selected customers, <bpt id="p1">&lt;strong&gt;</bpt>PaymentModel<ept id="p1">&lt;/strong&gt;</ept> is selected as a data source and controls the process flow.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ve formátu elektronického výkaznictví, který je určený ke generování elektronického souboru pro vybrané odběratele, je vybrán řetězec <bpt id="p1">&lt;strong&gt;</bpt>PaymentModel<ept id="p1">&lt;/strong&gt;</ept> jako zdroj dat, který řídí procesní tok.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="757">
+          <source>An exception is thrown to inform the user when a selected customer is stopped for the date when the report is processed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jestliže je vybraný odběratel zastaven u data zpracování sestavy, je vyvolána výjimka pro informování uživatele.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="758">
+          <source>The formula that is designed for this type of processing control can use the following resources:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzorec, který je určen pro tento typ ovládacího prvku pro zpracování, může využít následující zdroje:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="759">
+          <source>Finance and Operations label SYS70894, which has the following text:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popisek aplikace Finance and Operations SYS70894, který má následující text:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="760">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>For the EN-US language:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Nothing to print<ph id="ph2">&amp;quot;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Pro jazyk EN-US:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Nothing to print<ph id="ph2">&amp;quot;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="761">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>For the DE language:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Nichts zu drucken<ph id="ph2">&amp;quot;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Pro jazyk CS:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Nic k vytištění<ph id="ph2">&amp;quot;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="762">
+          <source>Finance and Operations label SYS18389, which has the following text:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popisek aplikace Finance and Operations SYS18389, který má následující text:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="763">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>For the EN-US language:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Customer %1 is stopped for %2.<ph id="ph2">&amp;quot;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>U jazyka EN-US:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Customer %1 is stopped for %2.<ph id="ph2">&amp;quot;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="764">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>For the DE language:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Debitor '%1' wird für %2 gesperrt.<ph id="ph2">&amp;quot;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>U jazyka DE:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Debitor '%1' wird für %2 gesperrt.<ph id="ph2">&amp;quot;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="765">
+          <source>Here is the formula that can be designed:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zde je vzorec, který lze vytvořit:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="766">
+          <source>FORMAT (CONCATENATE (@<ph id="ph1">&amp;quot;</ph>SYS70894<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FORMAT (CONCATENATE (@<ph id="ph1">&amp;quot;</ph>SYS70894<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="767">
+          <source><ph id="ph1">&amp;quot;</ph>, @<ph id="ph2">&amp;quot;</ph>SYS18389<ph id="ph3">&amp;quot;</ph>), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, <ph id="ph4">&amp;quot;</ph>d<ph id="ph5">&amp;quot;</ph>))</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;quot;</ph>, @<ph id="ph2">&amp;quot;</ph>SYS18389<ph id="ph3">&amp;quot;</ph>), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, <ph id="ph4">&amp;quot;</ph>d<ph id="ph5">&amp;quot;</ph>))</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="768">
+          <source>If a report is processed for the <bpt id="p1">&lt;strong&gt;</bpt>Litware Retail<ept id="p1">&lt;/strong&gt;</ept> customer on December 17, 2015, in the <bpt id="p2">&lt;strong&gt;</bpt>EN-US<ept id="p2">&lt;/strong&gt;</ept> culture and the <bpt id="p3">&lt;strong&gt;</bpt>EN-US<ept id="p3">&lt;/strong&gt;</ept> language, this formula returns the following text, which can be presented to the user as an exception message:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je sestava zpracovávána pro odběratele <bpt id="p1">&lt;strong&gt;</bpt>Litware Retail<ept id="p1">&lt;/strong&gt;</ept> 17. prosince 2015, v národním prostředí <bpt id="p2">&lt;strong&gt;</bpt>EN-US<ept id="p2">&lt;/strong&gt;</ept> a jazyce <bpt id="p3">&lt;strong&gt;</bpt>EN-US<ept id="p3">&lt;/strong&gt;</ept>, tento vzorec vrátí následující text, který může být uživateli nabídnut ve formě zprávy výjimky:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="769">
+          <source><ph id="ph1">&amp;quot;</ph>Nothing to print.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;quot;</ph>Nic k tisku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="770">
+          <source>Customer Litware Retail is stopped for 12/17/2015.<ph id="ph1">&amp;quot;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Customer Litware Retail is stopped for 12/17/2015.<ph id="ph1">&amp;quot;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="771">
+          <source>If the same report is processed for the <bpt id="p1">&lt;strong&gt;</bpt>Litware Retail<ept id="p1">&lt;/strong&gt;</ept> customer on December 17, 2015, in the <bpt id="p2">&lt;strong&gt;</bpt>DE<ept id="p2">&lt;/strong&gt;</ept> culture and the <bpt id="p3">&lt;strong&gt;</bpt>DE<ept id="p3">&lt;/strong&gt;</ept> language, the formula returns the following text, which uses a different date format:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jestliže je stejná sestava zpracována pro odběratele <bpt id="p1">&lt;strong&gt;</bpt>Litware Retail<ept id="p1">&lt;/strong&gt;</ept> 17. prosince 2015 v jazykové verzi <bpt id="p2">&lt;strong&gt;</bpt>DE<ept id="p2">&lt;/strong&gt;</ept> a jazyce <bpt id="p3">&lt;strong&gt;</bpt>DE<ept id="p3">&lt;/strong&gt;</ept>, vzorec vrátí následující text, který používá jiný formát data:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="772">
+          <source><ph id="ph1">&amp;quot;</ph>Nichts zu drucken.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;quot;</ph>Nichts zu drucken.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="773">
+          <source>Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.<ph id="ph1">&amp;quot;</ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.<ph id="ph1">&amp;quot;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="774">
+          <source>The following syntax is applied in ER formulas for labels:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující syntaxe je použita ve vzorcích elektronického výkaznictví pro popisky:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="775">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>For labels from Finance and Operations resources:<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">@</ph><ph id="ph2">&amp;quot;</ph>X<ph id="ph3">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>, where <bpt id="p3">&lt;strong&gt;</bpt>X<ept id="p3">&lt;/strong&gt;</ept> is the label ID in the Application Object Tree (AOT)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Popisky ze zdrojů aplikace Finance and Operations:<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">@</ph><ph id="ph2">&amp;quot;</ph>X<ph id="ph3">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>, kde <bpt id="p3">&lt;strong&gt;</bpt>X<ept id="p3">&lt;/strong&gt;</ept> je ID popisku ve stromu aplikačních objektů (AOT)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="776">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>For labels that reside in ER configurations:<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">@</ph><ph id="ph2">&amp;quot;</ph>GER_LABEL:X<ph id="ph3">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>, where <bpt id="p3">&lt;strong&gt;</bpt>X<ept id="p3">&lt;/strong&gt;</ept> is the label ID in the ER configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Popisky, které se nachází v konfiguracích elektronického výkaznictví:<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">@</ph><ph id="ph2">&amp;quot;</ph>GER_LABEL:X<ph id="ph3">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>, kde <bpt id="p3">&lt;strong&gt;</bpt>X<ept id="p3">&lt;/strong&gt;</ept> je ID popisku v konfiguraci elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="777">
+          <source>NUMBERFORMAT (number, format)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMBERFORMAT (číslo, formát)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="778">
+          <source>Return a string representation of the specified number in the specified format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí znázornění řetězce zadaného čísla v zadaném formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="779">
+          <source>(For information about the supported formats, see <bpt id="p1">&lt;a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx"&gt;</bpt>standard<ept id="p1">&lt;/a&gt;</ept> and <bpt id="p2">&lt;a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx"&gt;</bpt>custom<ept id="p2">&lt;/a&gt;</ept>.) The context that this function is run in determines the culture that is used to format numbers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Informace o podporovaných formátech naleznete v tématu <bpt id="p1">&lt;a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx"&gt;</bpt>standardní<ept id="p1">&lt;/a&gt;</ept> a <bpt id="p2">&lt;a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx"&gt;</bpt>vlastní<ept id="p2">&lt;/a&gt;</ept>.) Spuštění této funkce v rámci určuje jazykovou verzi, která je použita k formátování čísla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="780">
+          <source>For the EN-US culture, <bpt id="p1">&lt;strong&gt;</bpt>NUMBERFORMAT (0.45, <ph id="ph1">&amp;quot;</ph>p<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>45.00 %<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro jazykovou verzi EN-US vrátí <bpt id="p1">&lt;strong&gt;</bpt>NUMBERFORMAT (0.45, <ph id="ph1">&amp;quot;</ph>p<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> hodnotu <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>45,00 %<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="781">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>NUMBERFORMAT (10.45, <ph id="ph1">&amp;quot;</ph><ph id="ph2">#</ph><ph id="ph3">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph4">&amp;quot;</ph>10<ph id="ph5">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>NUMBERFORMAT (10.45, <ph id="ph1">&amp;quot;</ph><ph id="ph2">#</ph><ph id="ph3">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> vrátí hodnotu <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph4">&amp;quot;</ph>10<ph id="ph5">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="782">
+          <source>NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMERALSTOTEXT (číslo jazyk, měna, příznak názvu měny pro tisk, desetinná místa)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="783">
+          <source>Return the specified number after it has been spelled out (converted to text strings) in the specified language.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadané číslo po vyslovení (převedení) na textové řetězce v zadaném jazyce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="784">
+          <source>The language code is optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód jazyka je volitelný.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="785">
+          <source>When it's defined as an empty string, the language code for the running context is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je definován jako prázdný řetězec, použije se kód jazyka pro aktuální kontext.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="786">
+          <source>(The language code for the running context is defined for a generating folder or file.) The currency code is also optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Kód jazyka spuštěného kontextu je definován pro generovaný soubor nebo složku). Kód měny je také volitelný.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="787">
+          <source>When it's defined as an empty string, the company currency is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je definován jako prázdný řetězec, je použita měna společnosti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="788">
+          <source>The <bpt id="p1">&lt;strong&gt;</bpt>print currency name flag<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>decimal points<ept id="p2">&lt;/strong&gt;</ept> parameters are analyzed only for the following language codes: <bpt id="p3">&lt;strong&gt;</bpt>CS<ept id="p3">&lt;/strong&gt;</ept>, <bpt id="p4">&lt;strong&gt;</bpt>ET<ept id="p4">&lt;/strong&gt;</ept>, <bpt id="p5">&lt;strong&gt;</bpt>HU<ept id="p5">&lt;/strong&gt;</ept>, <bpt id="p6">&lt;strong&gt;</bpt>LT<ept id="p6">&lt;/strong&gt;</ept>, <bpt id="p7">&lt;strong&gt;</bpt>LV<ept id="p7">&lt;/strong&gt;</ept>, <bpt id="p8">&lt;strong&gt;</bpt>PL<ept id="p8">&lt;/strong&gt;</ept>, and <bpt id="p9">&lt;strong&gt;</bpt>RU<ept id="p9">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příznak <bpt id="p1">&lt;strong&gt;</bpt>název měny pro tisk<ept id="p1">&lt;/strong&gt;</ept> a <bpt id="p2">&lt;strong&gt;</bpt>parametry desetinných míst<ept id="p2">&lt;/strong&gt;</ept> jsou analyzovány pouze pro následující jazykové kódy: <bpt id="p3">&lt;strong&gt;</bpt>CS<ept id="p3">&lt;/strong&gt;</ept>, <bpt id="p4">&lt;strong&gt;</bpt>ET<ept id="p4">&lt;/strong&gt;</ept>, <bpt id="p5">&lt;strong&gt;</bpt>HU<ept id="p5">&lt;/strong&gt;</ept>, <bpt id="p6">&lt;strong&gt;</bpt>LT<ept id="p6">&lt;/strong&gt;</ept>, <bpt id="p7">&lt;strong&gt;</bpt>LV<ept id="p7">&lt;/strong&gt;</ept>, <bpt id="p8">&lt;strong&gt;</bpt>PL<ept id="p8">&lt;/strong&gt;</ept> a <bpt id="p9">&lt;strong&gt;</bpt>RU<ept id="p9">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="789">
+          <source>Additionally, the <bpt id="p1">&lt;strong&gt;</bpt>print currency name flag<ept id="p1">&lt;/strong&gt;</ept> parameter is analyzed only for Finance and Operations companies where the country's or region's context supports declension of currency names.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dále je příznak <bpt id="p1">&lt;strong&gt;</bpt>názvu měny pro tisk<ept id="p1">&lt;/strong&gt;</ept> analyzován pouze pro společnosti používající aplikaci Finance and Operations s kontextem země nebo oblasti, který podporuje skloňování názvů měn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="790">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (1234.56, <ph id="ph1">&amp;quot;</ph>EN<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;quot;</ph>, false, 2)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>One Thousand Two Hundred Thirty Four and 56<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (1234.56, <ph id="ph1">&amp;quot;</ph>EN<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;quot;</ph>, false, 2)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>One Thousand Two Hundred Thirty Four and 56<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="791">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (120, <ph id="ph1">&amp;quot;</ph>PL<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;quot;</ph>, false, 0)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>Sto dwadzieścia<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (120, <ph id="ph1">&amp;quot;</ph>PL<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;quot;</ph>, false, 0)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>Sto dwadzieścia<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="792">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (120.21, <ph id="ph1">&amp;quot;</ph>RU<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>EUR<ph id="ph4">&amp;quot;</ph>, true, 2)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>Сто двадцать евро 21 евроцент<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (120.21, <ph id="ph1">&amp;quot;</ph>RU<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>EUR<ph id="ph4">&amp;quot;</ph>, true, 2)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>Сто двадцать евро 21 евроцент<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="793">
+          <source>PADLEFT (string, length, padding chars)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PADLEFT (řetězec, délka, odsazovací znaky)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="794">
+          <source>Return a string of the specified length, where the start of the specified string is padded with the specified characters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí řetězec určené délky, ve kterém je začátek určeného řetězce odsazen určenými znaky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="795">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>PADLEFT (<ph id="ph1">&amp;quot;</ph>1234<ph id="ph2">&amp;quot;</ph>, 10, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns the text string <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph><ph id="ph7">&amp;nbsp;</ph><ph id="ph8">&amp;nbsp;</ph><ph id="ph9">&amp;nbsp;</ph><ph id="ph10">&amp;nbsp;</ph><ph id="ph11">&amp;nbsp;</ph><ph id="ph12">&amp;nbsp;</ph>1234<ph id="ph13">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>PADLEFT (<ph id="ph1">&amp;quot;</ph>1234<ph id="ph2">&amp;quot;</ph>, 10, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> vrátí řetězec <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph><ph id="ph7">&amp;nbsp;</ph><ph id="ph8">&amp;nbsp;</ph><ph id="ph9">&amp;nbsp;</ph><ph id="ph10">&amp;nbsp;</ph><ph id="ph11">&amp;nbsp;</ph><ph id="ph12">&amp;nbsp;</ph>1234<ph id="ph13">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="796">
+          <source>TRIM (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TRIM (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="797">
+          <source>Return the specified text string after leading and trailing spaces have been truncated, and after multiple spaces between words have been removed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí určený textový řetězec po příznutí počátečních a koncových mezer a po odebrání více mezer mezi slovy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="798">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>TRIM (<ph id="ph1">&amp;quot;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;nbsp;</ph><ph id="ph6">&amp;nbsp;</ph>Sample<ph id="ph7">&amp;nbsp;</ph><ph id="ph8">&amp;nbsp;</ph><ph id="ph9">&amp;nbsp;</ph><ph id="ph10">&amp;nbsp;</ph><ph id="ph11">&amp;nbsp;</ph>text<ph id="ph12">&amp;nbsp;</ph><ph id="ph13">&amp;nbsp;</ph><ph id="ph14">&amp;nbsp;</ph><ph id="ph15">&amp;nbsp;</ph><ph id="ph16">&amp;nbsp;</ph><ph id="ph17">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph18">&amp;quot;</ph>Sample text<ph id="ph19">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>TRIM (<ph id="ph1">&amp;quot;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;nbsp;</ph><ph id="ph6">&amp;nbsp;</ph>Ukázkový<ph id="ph7">&amp;nbsp;</ph><ph id="ph8">&amp;nbsp;</ph><ph id="ph9">&amp;nbsp;</ph><ph id="ph10">&amp;nbsp;</ph><ph id="ph11">&amp;nbsp;</ph>text<ph id="ph12">&amp;nbsp;</ph><ph id="ph13">&amp;nbsp;</ph><ph id="ph14">&amp;nbsp;</ph><ph id="ph15">&amp;nbsp;</ph><ph id="ph16">&amp;nbsp;</ph><ph id="ph17">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> vrátí <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph18">&amp;quot;</ph>Ukázkový text<ph id="ph19">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="799">
+          <source>GETENUMVALUEBYNAME (enumeration data source path, enumeration value label text)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GETENUMVALUEBYNAME (cesta zdroje dat výčtu, text popisku hodnoty výčtu)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="800">
+          <source>Return a value of the specified enumeration data source, based on the specified text of the enumeration label.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí hodnotu zadaného zdroje dat výčtu podle zadaného textu popisku výčtu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="801">
+          <source>In the following illustration, the <bpt id="p1">&lt;strong&gt;</bpt>ReportDirection<ept id="p1">&lt;/strong&gt;</ept> enumeration is introduced in a data model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na následujícím obrázku je výčet <bpt id="p1">&lt;strong&gt;</bpt>ReportDirection<ept id="p1">&lt;/strong&gt;</ept> uveden v datovém modelu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="802">
+          <source>Note that labels are defined for enumeration values.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro hodnoty výčtu jsou definovány popisky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="803">
+          <source>The following illustration shows these details:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující obrázek znázorňuje tyto podrobnosti:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="804">
+          <source>The <bpt id="p1">&lt;strong&gt;</bpt>ReportDirection<ept id="p1">&lt;/strong&gt;</ept> model enumeration is inserted into a report as a data source, <bpt id="p2">&lt;strong&gt;</bpt>$Direction<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výčet modelů <bpt id="p1">&lt;strong&gt;</bpt>ReportDirection<ept id="p1">&lt;/strong&gt;</ept> je vložený do sestavy jako zdroj dat <bpt id="p2">&lt;strong&gt;</bpt>$Direction<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="805">
+          <source>An ER expression, <bpt id="p1">&lt;strong&gt;</bpt>$IsArrivals<ept id="p1">&lt;/strong&gt;</ept>, is designed to use the model enumeration as a parameter of this function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výraz elektronického výkaznictví <bpt id="p1">&lt;strong&gt;</bpt>$IsArrivals<ept id="p1">&lt;/strong&gt;</ept> je určený k použití výčtu modelů jako parametr této funkce.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="806">
+          <source>The value of this expression is <bpt id="p1">&lt;strong&gt;</bpt>TRUE<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hodnota tohoto výrazu je <bpt id="p1">&lt;strong&gt;</bpt>TRUE<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="807">
+          <source>GUIDVALUE (input)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GUIDVALUE (vstup)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="808">
+          <source>Convert the specified input of the <bpt id="p1">&lt;strong&gt;</bpt>String<ept id="p1">&lt;/strong&gt;</ept> data type to a data item of the <bpt id="p2">&lt;strong&gt;</bpt>GUID<ept id="p2">&lt;/strong&gt;</ept> data type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převeďte zadaný vstup datového typu <bpt id="p1">&lt;strong&gt;</bpt>String<ept id="p1">&lt;/strong&gt;</ept> na datovou položku datového typu <bpt id="p2">&lt;strong&gt;</bpt>GUID<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="809">
+          <source>To do a conversion in the opposite direction (that is, to convert specified input of the <bpt id="p1">&lt;strong&gt;</bpt>GUID<ept id="p1">&lt;/strong&gt;</ept> data type to a data item of the <bpt id="p2">&lt;strong&gt;</bpt>String<ept id="p2">&lt;/strong&gt;</ept> data type), you can use the <bpt id="p3">&lt;strong&gt;</bpt>TEXT()<ept id="p3">&lt;/strong&gt;</ept> function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro provedení konverze opačným směrem (to znamená převedení zadaného vstupu datového typu <bpt id="p1">&lt;strong&gt;</bpt>GUID<ept id="p1">&lt;/strong&gt;</ept> na datovou položku datového typu <bpt id="p2">&lt;strong&gt;</bpt>Řetězec<ept id="p2">&lt;/strong&gt;</ept>), lze použít funkci <bpt id="p3">&lt;strong&gt;</bpt>TEXT()<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="810">
+          <source>You define the following data sources in your model mapping:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definujte v mapování modelu následující zdroje dat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="811">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>myID<ept id="p1">&lt;/strong&gt;</ept> (<bpt id="p2">&lt;strong&gt;</bpt>Calculated field<ept id="p2">&lt;/strong&gt;</ept> type), which contains the expression <bpt id="p3">&lt;strong&gt;</bpt>GUIDVALUE(<ph id="ph1">&amp;quot;</ph>AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0<ph id="ph2">&amp;quot;</ph>)<ept id="p3">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>myID<ept id="p1">&lt;/strong&gt;</ept> (typ <bpt id="p2">&lt;strong&gt;</bpt>Vypočítané pole<ept id="p2">&lt;/strong&gt;</ept>), které obsahuje výraz <bpt id="p3">&lt;strong&gt;</bpt>GUIDVALUE(<ph id="ph1">&amp;quot;</ph>AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0<ph id="ph2">&amp;quot;</ph>)<ept id="p3">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="812">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Users<ept id="p1">&lt;/strong&gt;</ept> (<bpt id="p2">&lt;strong&gt;</bpt>Table records<ept id="p2">&lt;/strong&gt;</ept> type), which refers to the UserInfo table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Users<ept id="p1">&lt;/strong&gt;</ept> (typ <bpt id="p2">&lt;strong&gt;</bpt>Záznamy tabulky<ept id="p2">&lt;/strong&gt;</ept>), která odkazuje na tabulku UserInfo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="813">
+          <source>When these data sources are defined, you can use an expression such as <bpt id="p1">&lt;strong&gt;</bpt>FILTER (Users, Users.objectId = myID)<ept id="p1">&lt;/strong&gt;</ept> to filter the UserInfo table by the <bpt id="p2">&lt;strong&gt;</bpt>objectId<ept id="p2">&lt;/strong&gt;</ept> field of the <bpt id="p3">&lt;strong&gt;</bpt>GUID<ept id="p3">&lt;/strong&gt;</ept> data type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Když jsou definovány tyto zdroje dat, můžete použít výraz jako <bpt id="p1">&lt;strong&gt;</bpt>FILTER (Users, Users.objectId = myID)<ept id="p1">&lt;/strong&gt;</ept> k filtrování tabulky UserInfo podle pole <bpt id="p2">&lt;strong&gt;</bpt>objectId<ept id="p2">&lt;/strong&gt;</ept> datového typu <bpt id="p3">&lt;strong&gt;</bpt>GUID<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="814">
+          <source>JSONVALUE (id, path)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JSONVALUE (id, cesta)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="815">
+          <source>Parse data in JavaScript Object Notation (JSON) format that is accessed by the specified path to extract a scalar value that is based on the specified ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Analyzujte data ve formátu notace objektu JavaScript (JSON), který je přístupný ze zadané cesty k extrahování skalární hodnoty založené na zadaném ID.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="816">
+          <source>The data source <bpt id="p1">&lt;strong&gt;</bpt>$JsonField<ept id="p1">&lt;/strong&gt;</ept> contains the following data in JSON format: <bpt id="p2">&lt;strong&gt;</bpt>{<ph id="ph1">&amp;quot;</ph>BuildNumber<ph id="ph2">&amp;quot;</ph>:<ph id="ph3">&amp;quot;</ph>7.3.1234.1<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>KeyThumbprint<ph id="ph6">&amp;quot;</ph>:<ph id="ph7">&amp;quot;</ph>7366E<ph id="ph8">&amp;quot;</ph>}<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zdroj dat <bpt id="p1">&lt;strong&gt;</bpt>$JsonField<ept id="p1">&lt;/strong&gt;</ept> obsahuje následující data ve formátu JSON: <bpt id="p2">&lt;strong&gt;</bpt>{<ph id="ph1">&amp;quot;</ph>BuildNumber<ph id="ph2">&amp;quot;</ph>:<ph id="ph3">&amp;quot;</ph>7.3.1234.1<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>KeyThumbprint<ph id="ph6">&amp;quot;</ph>:<ph id="ph7">&amp;quot;</ph>7366E<ph id="ph8">&amp;quot;</ph>}<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="817">
+          <source>For this data source, <ph id="ph1">&lt;/strong&gt;</ph>JSONVALUE ( <ph id="ph2">&amp;quot;</ph>BuildNumber<ph id="ph3">&amp;quot;</ph>, $JsonField)<ph id="ph4">&lt;/strong&gt;</ph> returns the value <bpt id="p1">&lt;strong&gt;</bpt>7.3.1234.1<ept id="p1">&lt;/strong&gt;</ept> of the <bpt id="p2">&lt;strong&gt;</bpt>String<ept id="p2">&lt;/strong&gt;</ept> data type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro tento zdroj dat <ph id="ph1">&lt;/strong&gt;</ph>JSONVALUE ( <ph id="ph2">&amp;quot;</ph>BuildNumber<ph id="ph3">&amp;quot;</ph>, $JsonField)<ph id="ph4">&lt;/strong&gt;</ph> vrací hodnotu <bpt id="p1">&lt;strong&gt;</bpt>7.3.1234.1<ept id="p1">&lt;/strong&gt;</ept> z datového typu <bpt id="p2">&lt;strong&gt;</bpt>String<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="818">
+          <source>Data conversion functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce převodu dat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="819">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="820">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="821">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="822">
+          <source>TEXT (input)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TEXT (vstup)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="823">
+          <source>Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí zadaný vstup po převedení na textový řetězec naformátovaný podle nastavení národního prostředí serveru aktuální instance aplikace Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="824">
+          <source>For values of the <bpt id="p1">**</bpt>real<ept id="p1">**</ept> type, the string conversion is limited to two decimal places.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Co se týká hodnot typu <bpt id="p1">**</bpt>real<ept id="p1">**</ept>, převod řetězce je omezen na dvě desetinná místa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="825">
+          <source>If the server locale of the Finance and Operations instance is defined as <bpt id="p1">**</bpt>EN-US<ept id="p1">**</ept>, <bpt id="p2">**</bpt>TEXT (NOW ())<ept id="p2">**</ept> returns the current Finance and Operations session date, December 17, 2015, as the text string <bpt id="p3">**</bpt>"12/17/2015 07:59:23 AM"<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jestliže je národní prostředí serveru instance Finance and Operations definováno jako <bpt id="p1">**</bpt>EN-US<ept id="p1">**</ept>, <bpt id="p2">**</bpt>TEXT (NOW ())<ept id="p2">**</ept> vrátí aktuální datum relace aplikace Finance and Operations, například 17. prosince 2015, jako textový řetězec <bpt id="p3">**</bpt>"12/17/2015 07:59:23 AM"<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="826">
+          <source><bpt id="p1">**</bpt>TEXT (1/3)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>"0.33"<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>TEXT (1/3)<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>"0.33"<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="827">
+          <source>QRCODE (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QRCODE (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="828">
+          <source>Return a Quick Response Code (QR code) image in base64 binary format for the specified string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí obrázek QR (Quick Response) kódu v binárním formátu base64 pro zadaný řetězec.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="829">
+          <source><bpt id="p1">**</bpt>QRCODE ("Sample text")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>U2FtcGxlIHRleHQ=<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>QRCODE (“Ukázkový text”)<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>U2FtcGxlIHRleHQ=<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="830">
+          <source>Data collection functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce shromažďování dat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="831">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="832">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="833">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="834">
+          <source>FORMATELEMENTNAME ()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FORMATELEMENTNAME ()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="835">
+          <source>Return the name of the current format's element.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí název prvku aktuálního formátu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="836">
+          <source>Return an empty string when the <bpt id="p1">**</bpt>Collect output details<ept id="p1">**</ept> flag of the current files is turned off.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí prázdný řetězec, když je příznak <bpt id="p1">**</bpt>Podrobnosti výstupu shromažďování<ept id="p1">**</ept> aktuálních souborů vypnut.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="837">
+          <source>To learn more about how to use this function, see the <bpt id="p1">**</bpt>ER Use data of format output for counting and summing<ept id="p1">**</ept> task guide, which is part of the <bpt id="p2">**</bpt>Acquire/Develop IT service/solution components<ept id="p2">**</ept> business process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace o použití těchto funkcí najdete v průvodci záznamem úloh <bpt id="p1">**</bpt>Elektronické výkaznictví - zdroj dat formát výstupu pro inventuru a souhrn<ept id="p1">**</ept>, část obchodního procesu <bpt id="p2">**</bpt>Získání/vývoj komponent služby/řešení<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="838">
+          <source>SUMIFS (key string for summing, criteria range1 string, criteria value1 string <ph id="ph1">\[</ph>, criteria range2 string, criteria value2 string, …<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SUMIFS (key string for summing, criteria range1 string, criteria value1 string <ph id="ph1">\[</ph>, criteria range2 string, criteria value2 string, …<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="839">
+          <source>Return the sum of values  that was collected for XML nodes (where the name is defined as a key) when the format was run, and that satisfies the specified conditions (pairs of ranges and values).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí součet hodnot získaných pro XML uzly (s názvem definovaným jako klíč) při spuštění formátu, který splňuje zadané podmínky (dvojice rozsahů a hodnot).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="840">
+          <source>Return a <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) value when the <bpt id="p2">**</bpt>Collect output details<ept id="p2">**</ept> flag of the current files is turned off.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrací hodnotu <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (nula), když je příznak  <bpt id="p2">**</bpt>Podrobnosti výstupu shromažďování<ept id="p2">**</ept> aktuálních souborů vypnut.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="841">
+          <source>SUMIF (key string for summing, criteria range string, criteria value string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SUMIF (řetězec klíče pro sčítání, řetězec kritéria rozsahu, řetězec kritéria hodnoty)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="842">
+          <source>Return the sum of values that was collected for XML nodes (where the name is defined as a key) when the format was run, and that satisfies the specified condition (a range and value).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí součet hodnot získaných pro XML uzly (s názvem definovaným jako klíč) při spuštění formátu, který splňuje zadanou podmínku (rozsah a hodnotu).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="843">
+          <source>Return a <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) value when the <bpt id="p2">**</bpt>Collect output details<ept id="p2">**</ept> flag of the current files is turned off.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrací hodnotu <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (nula), když je příznak  <bpt id="p2">**</bpt>Podrobnosti výstupu shromažďování<ept id="p2">**</ept> aktuálních souborů vypnut.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="844">
+          <source>COUNTIFS (criteria range1 string, criteria value1 string <ph id="ph1">\[</ph>, criteria range2 string, criteria value2 string, …<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">COUNTIFS (criteria range1 string, criteria value1 string <ph id="ph1">\[</ph>, criteria range2 string, criteria value2 string, …<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="845">
+          <source>Return the number of XML nodes that was collected when the format was run, and that satisfies the specified conditions (pairs of ranges and values).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí počet XML uzlů získaný během spuštění formátu, který splňuje zadané podmínky (dvojice rozsahů a hodnot).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="846">
+          <source>Return a <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) value when the <bpt id="p2">**</bpt>Collect output details<ept id="p2">**</ept> flag of the current files is turned off.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrací hodnotu <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (nula), když je příznak  <bpt id="p2">**</bpt>Podrobnosti výstupu shromažďování<ept id="p2">**</ept> aktuálních souborů vypnut.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="847">
+          <source>COUNTIF (criteria range string, criteria value string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">COUNTIF (řetězec rozsahu kritérií, řetězec hodnoty kritérií)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="848">
+          <source>Return the number of XML nodes that was collected when the format was run, and that satisfies the specified condition (a range and value).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí počet XML uzlů získaný během spuštění formátu, který splňuje zadanou podmínku (rozsah a hodnotu).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="849">
+          <source>Return a <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) value the flag <bpt id="p2">**</bpt>Collect output details<ept id="p2">**</ept> flag of the current files is turned off.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrací hodnotu <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (nula), když je příznak  <bpt id="p2">**</bpt>Podrobnosti výstupu shromažďování<ept id="p2">**</ept> aktuálních souborů vypnut.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="850">
+          <source>COLLECTEDLIST (criteria range1 string, criteria value1 string <ph id="ph1">\[</ph>, criteria range2 string, criteria value2 string, …<ph id="ph2">\]</ph>)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">COLLECTEDLIST (criteria range1 string, criteria value1 string <ph id="ph1">\[</ph>, criteria range2 string, criteria value2 string, …<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="851">
+          <source>Return the list of values that was collected for XML nodes when the format was run, and that satisfies the specified conditions (a range and value).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí seznam hodnot získaný pro XML uzly během spuštění formátu, který splňuje zadané podmínky (rozsah a hodnotu).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="852">
+          <source>Return an empty list when the <bpt id="p1">**</bpt>Collect output details<ept id="p1">**</ept> flag of the current files is turned off.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí prázdný seznam, když je příznak <bpt id="p1">**</bpt>Podrobnosti výstupu shromažďování<ept id="p1">**</ept> aktuálních souborů vypnut.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="853">
+          <source>Other (business domain–specific) functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další funkce (konkrétní pro obchodní domény)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="854">
+          <source>Function</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="855">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="856">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="857">
+          <source>CONVERTCURRENCY (amount, source currency, target currency, date, company)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CONVERTCURRENCY (částka, zdrojová měna, cílová měna, datum, společnost)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="858">
+          <source>Convert the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified Finance and Operations company on the specified date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převede zadanou peněžní částku ze zadané měny na zadanou měnu za použití nastavení zadané společnosti v aplikaci Finance and Operations k zadanému datu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="859">
+          <source><bpt id="p1">**</bpt>CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")<ept id="p1">**</ept> returns the equivalent of one euro in US dollars on the current session date, based on settings for the DEMF company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")<ept id="p1">**</ept> vrátí ekvivalent jednoho eura v amerických dolarech v aktuální den relace podle nastavení společnosti DEMF.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="860">
+          <source>ROUNDAMOUNT (number, decimals, round rule)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROUNDAMOUNT (číslo, desetinná místa, pravidlo zaokrouhlování)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="861">
+          <source>Round the specified amount to the specified number of decimal places according to the specified rounding rule.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaokrouhlí zadanou částku na zadaný počet bdesetinných míst podle zadaného pravidla zaokrouhlování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="862">
+          <source>The rounding rule must be specified as a value of the Finance and Operations <bpt id="p1">**</bpt>RoundOffType<ept id="p1">**</ept> enumeration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pravidlo zaokrouhlování musí být zadáno jako hodnota výčtu <bpt id="p1">**</bpt>RoundOffType<ept id="p1">**</ept> aplikace Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="863">
+          <source>If the <bpt id="p1">**</bpt>model.RoundOff<ept id="p1">**</ept> parameter is set to <bpt id="p2">**</bpt>Downward<ept id="p2">**</ept>, <bpt id="p3">**</bpt>ROUNDAMOUNT (1000.787, 2, model.RoundOff)<ept id="p3">**</ept> returns the value <bpt id="p4">**</bpt>1000.78<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je parametr <bpt id="p1">**</bpt>model.RoundOff<ept id="p1">**</ept> nastaven na <bpt id="p2">**</bpt>Downward<ept id="p2">**</ept>, <bpt id="p3">**</bpt>3ROUNDAMOUNT (1000.787, 2, model.RoundOff)<ept id="p3">**</ept> vrátí hodnotu <bpt id="p4">**</bpt>1000.78<ept id="p4">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="864">
+          <source>If the <bpt id="p1">**</bpt>model.RoundOff<ept id="p1">**</ept> parameter is set to either <bpt id="p2">**</bpt>Normal<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Rounding-up<ept id="p3">**</ept>, <bpt id="p4">**</bpt>ROUNDAMOUNT (1000.787, 2, model.RoundOff)<ept id="p4">**</ept> returns the value <bpt id="p5">**</bpt>1000.79<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je parametr <bpt id="p1">**</bpt>model.RoundOff<ept id="p1">**</ept> nastaven na hodnotu <bpt id="p2">**</bpt>Normal<ept id="p2">**</ept> nebo <bpt id="p3">**</bpt>Rounding-up<ept id="p3">**</ept>, <bpt id="p4">**</bpt>ROUNDAMOUNT (1000.787, 2, model.RoundOff)<ept id="p4">**</ept> vrátí hodnotu <bpt id="p5">**</bpt>1000.79<ept id="p5">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="865">
+          <source>CURCredRef (digits)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CURCredRef (číslice)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="866">
+          <source>Return a creditor reference, based on the digits of the specified invoice number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí referenční údaj věřitele na základě číslic zadaného čísla faktury.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="867">
+          <source><bpt id="p1">**</bpt>CURCredRef ("VEND-200002")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>"2200002"<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CURCredRef ("VEND-200002")<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>"2200002"<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="868">
+          <source>MOD<ph id="ph1">\_</ph>97 (digits)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MOD<ph id="ph1">\_</ph>97 (číslice)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="869">
+          <source>Return a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí referenční údaj věřitele jako výraz MOD97 na základě číslic zadaného čísla faktury.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="870">
+          <source><bpt id="p1">**</bpt>MOD<ph id="ph1">\_</ph>97 ("VEND-200002")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>"20000285"<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>MOD<ph id="ph1">\_</ph>97 ("VEND-200002")<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>"20000285"<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="871">
+          <source>ISOCredRef (digits)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISOCredRef (číslice)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="872">
+          <source>Return an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí ISO údaj věřitele na základě číslic a abecedních symbolů zadaného čísla faktury.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="873">
+          <source>To eliminate symbols from alphabets that aren't ISO-compliant, the input parameter must be translated before it's passed to this function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li vyloučit z abecedy symboly, které jsou v souladu se standardem ISO, vstupní parametr musí být přeložen před jeho předáním této funkci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="874">
+          <source><bpt id="p1">**</bpt>ISOCredRef ("VEND-200002")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>"RF23VEND-200002"<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ISOCredRef ("VEND-200002")<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>"RF23VEND-200002"<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="875">
+          <source>CN<ph id="ph1">\_</ph>GBT<ph id="ph2">\_</ph>AdditionalDimensionID (string, number)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CN<ph id="ph1">\_</ph>GBT<ph id="ph2">\_</ph>AdditionalDimensionID (řetězec, číslo)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="876">
+          <source>Get the specified additional financial dimension ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Získá zadané ID další finanční dimenze.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="877">
+          <source>In the <bpt id="p1">**</bpt>string<ept id="p1">**</ept> parameter, dimensions are represented as IDs that are separated by commas.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimenze jsou reprezentovány v parametru <bpt id="p1">**</bpt>řetězec<ept id="p1">**</ept> jako ID oddělená čárkou.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="878">
+          <source>The <bpt id="p1">**</bpt>number<ept id="p1">**</ept> parameter defines the sequence code of the requested dimension in the string.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametr <bpt id="p1">**</bpt>číslo<ept id="p1">**</ept> definuje kód sekvence požadované dimenze v řetězci.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="879">
+          <source><bpt id="p1">**</bpt>CN<ph id="ph1">\_</ph>GBT<ph id="ph2">\_</ph>AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>"CC"<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CN<ph id="ph1">\_</ph>GBT<ph id="ph2">\_</ph>AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)<ept id="p1">**</ept> vrací <bpt id="p2">**</bpt>"CC"<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="880">
+          <source>GetCurrentCompany ()</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetCurrentCompany ()</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="881">
+          <source>Return a text representation of the code for the legal entity (company) that a user is currently signed in to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrací textovou reprezentaci kódu právnické osoby (společnosti), ke které je uživatel momentálně přihlášen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="882">
+          <source><bpt id="p1">**</bpt>GETCURRENTCOMPANY ()<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>USMF<ept id="p2">**</ept> for a user who is signed in to the <bpt id="p3">**</bpt>Contoso Entertainment System USA<ept id="p3">**</ept> company in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>GETCURRENTCOMPANY ()<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>USMF<ept id="p2">**</ept> u uživatele přihlášeného v aplikaci Finance and Operations ke společnosti <bpt id="p3">**</bpt>Contoso Entertainment System USA<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="883">
+          <source>CH<ph id="ph1">\_</ph>BANK<ph id="ph2">\_</ph>MOD<ph id="ph3">\_</ph>10 (digits)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CH<ph id="ph1">\_</ph>BANK<ph id="ph2">\_</ph>MOD<ph id="ph3">\_</ph>10 (číslice)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="884">
+          <source>Return a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí odkaz věřitele jako výraz MOD10 na základě číslic zadaného čísla faktury.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="885">
+          <source><bpt id="p1">**</bpt>CH<ph id="ph1">\_</ph>BANK<ph id="ph2">\_</ph>MOD<ph id="ph3">\_</ph>10 ("VEND-200002")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>3<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CH<ph id="ph1">\_</ph>BANK<ph id="ph2">\_</ph>MOD<ph id="ph3">\_</ph>10 ("VEND-200002")<ept id="p1">**</ept> vrátí <bpt id="p2">**</bpt>3<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="886">
+          <source>FA<ph id="ph1">\_</ph>SUM (fixed asset code, value model code, start date, end date)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FA<ph id="ph1">\_</ph>SUM (kód dlouhodobého majetku, kód modelu hodnoty, počáteční datum, koncové datum)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="887">
+          <source>Return the prepared data container of the fixed asset amount for the specified period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí připravený datový kontejner částky dlouhodobého majetku za období.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="888">
+          <source><bpt id="p1">**</bpt>FA<ph id="ph1">\_</ph>SUM ("COMP-000001", "Current", Date1, Date2)<ept id="p1">**</ept> returns the prepared data container of fixed asset <bpt id="p2">**</bpt>"COMP-000001"<ept id="p2">**</ept> that has the <bpt id="p3">**</bpt>"Current"<ept id="p3">**</ept> value model for a period from <bpt id="p4">**</bpt>Date1<ept id="p4">**</ept> to <bpt id="p5">**</bpt>Date2<ept id="p5">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FA<ph id="ph1">\_</ph>SUM ("COMP-000001", "Current", Date1, Date2)<ept id="p1">**</ept> vrátí připravený datový kontejner dlouhodobého majetku <bpt id="p2">**</bpt>"COMP-000001"<ept id="p2">**</ept> s modelem hodnoty <bpt id="p3">**</bpt>"Current"<ept id="p3">**</ept> za období mezi <bpt id="p4">**</bpt>Date1<ept id="p4">**</ept> a <bpt id="p5">**</bpt>Date2<ept id="p5">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="889">
+          <source>FA<ph id="ph1">\_</ph>BALANCE (fixed asset code, value model code, reporting year, reporting date)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FA<ph id="ph1">\_</ph>BALANCE (kód dlouhodobého majetku, kód oceňovacího modelu, vykazovaný rok, datum sestavy)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="890">
+          <source>Return the prepared data container of the fixed asset balance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí připravený datový kontejner zůstatku dlouhodobého majetku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="891">
+          <source>The reporting year must be specified as a value of the <bpt id="p1">**</bpt>AssetYear<ept id="p1">**</ept> enumeration in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rok vykazování je nutné zadat jako hodnotu výčtu aplikace Finance and Operations <bpt id="p1">**</bpt>AssetYear<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="892">
+          <source><bpt id="p1">**</bpt>FA<ph id="ph1">\_</ph>SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())<ept id="p1">**</ept> returns the prepared data container of balances for fixed asset <bpt id="p2">**</bpt>"COMP-000001"<ept id="p2">**</ept> that has the <bpt id="p3">**</bpt>"Current"<ept id="p3">**</ept> value model on the current Finance and Operations session date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FA<ph id="ph1">\_</ph>SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())<ept id="p1">**</ept> vrátí připravený datový kontejner zůstatků pro dlouhodobý majetek <bpt id="p2">**</bpt>"COMP-000001"<ept id="p2">**</ept> s modelem hodnoty <bpt id="p3">**</bpt>"Current"<ept id="p3">**</ept> k aktuálnímu datu relace aplikace 365 for Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="893">
+          <source>TABLENAME2ID (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TABLENAME2ID (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="894">
+          <source>Return an integer representation of a table ID for the specified table name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrací reprezentaci celého čísla ID tabulky pro daný název tabulky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="895">
+          <source><bpt id="p1">**</bpt>TABLENAME2ID ("Intrastat")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>1510<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>TABLENAME2ID ("Intrastat")<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>1510<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="896">
+          <source>ISVALIDCHARACTERISO7064 (string)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISVALIDCHARACTERISO7064 (řetězec)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="897">
+          <source>Return the Boolean value <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept> when the specified string represents a valid international bank account number (IBAN).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí logickou hodnotu <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept>, pokud zadaný řetězec představuje platné mezinárodní číslo bankovního účtu (IBAN).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="898">
+          <source>Otherwise, return the Boolean value <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V opačném případě vrátí logickou hodnotu <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="899">
+          <source><bpt id="p1">**</bpt>ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="900">
+          <source><bpt id="p1">**</bpt>ISVALIDCHARACTERISO7064 ("AT61")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ISVALIDCHARACTERISO7064 ("AT61")<ept id="p1">**</ept> vrátí hodnotu <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="901">
+          <source>NUMSEQVALUE (number sequence code, scope, scope id)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMSEQVALUE (kód číselné řady, obor, id oboru)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="902">
+          <source>Return the new generated value of a number sequence, based on the specified number sequence code, scope, and scope ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí novou vygenerovanou hodnotu číselné řady, na základě zadaného kódu číselné řady, oboru a ID oboru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="903">
+          <source>The scope must be specified as a value of the <bpt id="p1">**</bpt>ERExpressionNumberSequenceScopeType<ept id="p1">**</ept> enumeration (<bpt id="p2">**</bpt>Shared<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Legal entity<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>Company<ept id="p4">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obor je nutné zadat jako hodnotu výčtu <bpt id="p1">**</bpt>ERExpressionNumberSequenceScopeType<ept id="p1">**</ept> výčtu (<bpt id="p2">**</bpt>Sdílený<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Právnická osoba<ept id="p3">**</ept>, nebo <bpt id="p4">**</bpt>Společnost<ept id="p4">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="904">
+          <source>For the <bpt id="p1">**</bpt>Shared<ept id="p1">**</ept> scope, specify an empty string as the scope ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro obor <bpt id="p1">**</bpt>Sdílený<ept id="p1">**</ept> zadejte prázdný řetězec jako ID oboru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="905">
+          <source>For the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Legal entity<ept id="p2">**</ept> scopes, specify the company code as the scope ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro obory <bpt id="p1">**</bpt>Společnost<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Právnická osoba<ept id="p2">**</ept> zadejte kód společnosti jako ID oboru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="906">
+          <source>For the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Legal entity<ept id="p2">**</ept> scopes, if you specify an empty string as the scope ID, the current company code is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro obory <bpt id="p1">**</bpt>Společnost<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Právnická osoba<ept id="p2">**</ept> se použije aktuální kód společnosti, pokud použijete prázdný řetězec jako ID oboru.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="907">
+          <source>You define the following data sources in your model mapping:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definujte v mapování modelu následující zdroje dat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="908">
+          <source><bpt id="p1">**</bpt>enumScope<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Dynamics 365 for Operations enumeration<ept id="p2">**</ept> type), which refers to the <bpt id="p3">**</bpt>ERExpressionNumberSequenceScopeType<ept id="p3">**</ept> enumeration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>enumScope<ept id="p1">**</ept> (typ <bpt id="p2">**</bpt>výčet Dynamics 365 for Operations<ept id="p2">**</ept>), který odkazuje na výčet <bpt id="p3">**</bpt>ERExpressionNumberSequenceScopeType<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="909">
+          <source><bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Calculated field<ept id="p2">**</ept> type), which contains the expression <bpt id="p3">**</bpt>NUMSEQVALUE ("Gene<ph id="ph1">\_</ph>1", enumScope.Company, "")<ept id="p3">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (typ <bpt id="p2">**</bpt>Vypočítané pole<ept id="p2">**</ept>), která obsahuje výraz <bpt id="p3">**</bpt>NUMSEQVALUE ("genovou<ph id="ph1">\_</ph>1", enumScope.Company, "")<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="910">
+          <source>When the <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> data source is called, it returns the new generated value of the <bpt id="p2">**</bpt>Gene<ph id="ph1">\_</ph>1<ept id="p2">**</ept> number sequence that has been configured for the company that supplies the context that the ER format is run under.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Když je volán datový zdroj <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept>, vrátí novou vygenerovanou hodnotu číselné řady <bpt id="p2">**</bpt>Gene<ph id="ph1">\_</ph>1<ept id="p2">**</ept>, která byla nakonfigurována pro společnost poskytující kontext, pod kterým běží formát elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="911">
+          <source>NUMSEQVALUE (number sequence code)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMSEQVALUE (kód číselné řady)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="912">
+          <source>Return the new generated value of a number sequence, based on the specified number sequence, the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> scope, and (as the scope ID) the code of the company that supplies the context that is ER format is run under.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí novou vygenerovanou hodnotu číselné řady, na základě určené číselné řady, oboru <bpt id="p1">**</bpt>Společnost<ept id="p1">**</ept> a kódu společnosti (jako ID oboru) poskytující kontext, pod kterým běží formát elektronického výkaznictví</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="913">
+          <source>You define the following data source in your model mapping: <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Calculated field<ept id="p2">**</ept> type).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definujete následující zdroje dat v mapování modelu: <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (typ <bpt id="p2">**</bpt>Vypočítané pole<ept id="p2">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="914">
+          <source>This data source contains the expression <bpt id="p1">**</bpt>NUMSEQVALUE ("Gene<ph id="ph1">\_</ph>1")<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento zdroj dat obsahuje výraz <bpt id="p1">**</bpt>NUMSEQVALUE ("Gene<ph id="ph1">\_</ph>1")<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="915">
+          <source>When the <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> data source is called, it returns the new generated value of the <bpt id="p2">**</bpt>Gene<ph id="ph1">\_</ph>1<ept id="p2">**</ept> number sequence that has been configured for the company that supplies the context that the ER format is run under.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Když je volán datový zdroj <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept>, vrátí novou vygenerovanou hodnotu číselné řady <bpt id="p2">**</bpt>Gene<ph id="ph1">\_</ph>1<ept id="p2">**</ept>, která byla nakonfigurována pro společnost poskytující kontext, pod kterým běží formát elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="916">
+          <source>NUMSEQVALUE (number sequence record ID)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMSEQVALUE (ID záznamu číselné řady)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="917">
+          <source>Return the new generated value of a number sequence, based on the specified number sequence record ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrátí novou vygenerovanou hodnotu číselné řady, na základě zadaného ID záznamu číselné řady.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="918">
+          <source>You define the following data sources in your model mapping:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definujte v mapování modelu následující zdroje dat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="919">
+          <source><bpt id="p1">**</bpt>LedgerParms<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Table<ept id="p2">**</ept> type), which refers to the LedgerParameters table</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>LedgerParms<ept id="p1">**</ept> (typ <bpt id="p2">**</bpt>Tabulka<ept id="p2">**</ept>), která odkazuje na tabulku LedgerParameters</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="920">
+          <source><bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Calculated field<ept id="p2">**</ept> type), which contains the expression <bpt id="p3">**</bpt>NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)<ept id="p3">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (typ <bpt id="p2">**</bpt>Vypočítané pole<ept id="p2">**</ept>), která obsahuje výraz <bpt id="p3">**</bpt>NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)<ept id="p3">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="921">
+          <source>When the <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> data source is called, it returns the new generated value of the number sequence that has been configured in the General ledger parameters for the company that supplies the context that the ER format is run under.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Když je volán datový zdroj <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept>, vrátí novou vygenerovanou hodnotu číselné řady, která byla nakonfigurována v parametrech hlavní knihy pro společnost poskytující kontext, pod kterým běží formát elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="922">
+          <source>This number sequence uniquely identifies journals and acts as a batch number that links the transactions together.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato číselná řada jedinečně identifikuje deníky a chová se jako číslo dávky propojující transakce dohromady.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="923">
+          <source>Functions list extension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšíření seznamu funkcí</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="924">
+          <source>ER lets you extend the list of functions that are used in ER expressions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronické výkaznictví umožňuje rozšířit seznam funkcí, které se používají ve výrazech elektronického výkaznictví.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="925">
+          <source>Some engineering effort is required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je však vyžadováno určité technické úsilí.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="926">
+          <source>For detailed information, see <bpt id="p1">[</bpt>Extending the list of Electronic reporting functions<ept id="p1">](general-electronic-reporting-formulas-list-extension.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">[</bpt>Rozšíření seznamu funkcí elektronického vykazování<ept id="p1">](general-electronic-reporting-formulas-list-extension.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="927">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další zdroje</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="928">
+          <source><bpt id="p1">[</bpt>Electronic Reporting overview<ept id="p1">](general-electronic-reporting.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Přehled elektronického výkaznictví<ept id="p1">](general-electronic-reporting.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="929">
+          <source><bpt id="p1">[</bpt>Extend the list of Electronic reporting (ER) functions<ept id="p1">](general-electronic-reporting-formulas-list-extension.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Rozšíření seznamu funkcí elektronického vykazování<ept id="p1">](general-electronic-reporting-formulas-list-extension.md)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

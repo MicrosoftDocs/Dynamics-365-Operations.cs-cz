@@ -1,172 +1,657 @@
----
-title: Záporné storno
-description: Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 1219713
-ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-semaz
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f42e7819eba74608f33ea8ec5f7b7e978953b460
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537641"
----
-# <a name="storno-accounting"></a><span data-ttu-id="7f976-103">Záporné storno</span><span class="sxs-lookup"><span data-stu-id="7f976-103">Storno accounting</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="7f976-104">Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.</span><span class="sxs-lookup"><span data-stu-id="7f976-104">Storno accounting is the practice of using negative numbers to reverse original journal account entries.</span></span>
-
-<span data-ttu-id="7f976-105">*Záporné storno* je praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku.</span><span class="sxs-lookup"><span data-stu-id="7f976-105">*Storno accounting* is a practice of using negative debit or credit amounts to reverse original journal account entries.</span></span> <span data-ttu-id="7f976-106">Vzhledem k tomu, že účetní obvykle zapisují položky záporného storna červeně, tento účetní standard se také označuje jako *červené storno*.</span><span class="sxs-lookup"><span data-stu-id="7f976-106">Because bookkeepers typically write Storno entries in red ink, this accounting practice is also known as *Red Storno*.</span></span> <span data-ttu-id="7f976-107">Pomocí záporného storna můžete zrušit dokument s nesprávnými částkami, po zrušení byste však vždy měli zadat správnou částku dokumentu.</span><span class="sxs-lookup"><span data-stu-id="7f976-107">Using Storno accounting you can cancel a document with incorrect amounts, however you should always enter the correct document amount after the cancellation.</span></span>
-
-## <a name="example"></a><span data-ttu-id="7f976-108">Příklad</span><span class="sxs-lookup"><span data-stu-id="7f976-108">Example</span></span>
-<span data-ttu-id="7f976-109">Účetní zaúčtuje fakturu dodavatele s částkou 120 USD.</span><span class="sxs-lookup"><span data-stu-id="7f976-109">A bookkeeper posts an invoice from a vendor for 120 USD.</span></span> <span data-ttu-id="7f976-110">Během procesu platby se zjistí, že účetní omylem zadal 120 USD, namísto 102 USD.</span><span class="sxs-lookup"><span data-stu-id="7f976-110">During the payment process, it's discovered that the bookkeeper mistakenly entered 120 USD instead of 102 USD.</span></span> <span data-ttu-id="7f976-111">Účetní teď musí vytvořit storno původního dokumentu a následně vytvořit správnou fakturu na 102 USD.</span><span class="sxs-lookup"><span data-stu-id="7f976-111">Now, the bookkeeper needs to create Storno for the original document, and then create the correct invoice for 102 USD.</span></span> <span data-ttu-id="7f976-112">Další informace získáte v části  [Faktura od dodavatele](../accounts-payable/vendor-invoices-overview.md).</span><span class="sxs-lookup"><span data-stu-id="7f976-112">For more information, see [Invoice from Vendor](../accounts-payable/vendor-invoices-overview.md).</span></span> <span data-ttu-id="7f976-113">Následující tabulka uvádí obecné záznamy pro Storno.</span><span class="sxs-lookup"><span data-stu-id="7f976-113">The following table shows the general entry for Storno.</span></span>
-
-| <span data-ttu-id="7f976-114">**ID dokumentu**</span><span class="sxs-lookup"><span data-stu-id="7f976-114">**Document ID**</span></span> | <span data-ttu-id="7f976-115">**Účet**</span><span class="sxs-lookup"><span data-stu-id="7f976-115">**Account**</span></span> | <span data-ttu-id="7f976-116">**Má Dáti**</span><span class="sxs-lookup"><span data-stu-id="7f976-116">**Debit**</span></span> | <span data-ttu-id="7f976-117">**Dal**</span><span class="sxs-lookup"><span data-stu-id="7f976-117">**Credit**</span></span> | <span data-ttu-id="7f976-118">**Poznámka**</span><span class="sxs-lookup"><span data-stu-id="7f976-118">**Comment**</span></span>                  |
-|-----------------|-------------|-----------|------------|------------------------------|
-| <span data-ttu-id="7f976-119">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="7f976-119">Invoice0001</span></span>     | <span data-ttu-id="7f976-120">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-120">Purch acc</span></span>   | <span data-ttu-id="7f976-121">120</span><span class="sxs-lookup"><span data-stu-id="7f976-121">120</span></span>       |            | <span data-ttu-id="7f976-122">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="7f976-122">Original Invoice (incorrect)</span></span> |
-| <span data-ttu-id="7f976-123">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="7f976-123">Invoice0001</span></span>     | <span data-ttu-id="7f976-124">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-124">Vendor acc</span></span>  |           | <span data-ttu-id="7f976-125">120</span><span class="sxs-lookup"><span data-stu-id="7f976-125">120</span></span>        | <span data-ttu-id="7f976-126">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="7f976-126">Original Invoice (incorrect)</span></span> |
-|                 |             |           |            |                              |
-| <span data-ttu-id="7f976-127">Storno0001</span><span class="sxs-lookup"><span data-stu-id="7f976-127">Storno0001</span></span>      | <span data-ttu-id="7f976-128">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-128">Purch acc</span></span>   | <span data-ttu-id="7f976-129">-120</span><span class="sxs-lookup"><span data-stu-id="7f976-129">-120</span></span>     |            | <span data-ttu-id="7f976-130">Storno</span><span class="sxs-lookup"><span data-stu-id="7f976-130">Storno</span></span>                       |
-| <span data-ttu-id="7f976-131">Storno0001</span><span class="sxs-lookup"><span data-stu-id="7f976-131">Storno0001</span></span>      | <span data-ttu-id="7f976-132">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-132">Vendor acc</span></span>  |           | <span data-ttu-id="7f976-133">-120</span><span class="sxs-lookup"><span data-stu-id="7f976-133">-120</span></span>      | <span data-ttu-id="7f976-134">Storno</span><span class="sxs-lookup"><span data-stu-id="7f976-134">Storno</span></span>                       |
-|                 |             |           |            |                              |
-| <span data-ttu-id="7f976-135">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="7f976-135">Invoice0002</span></span>     | <span data-ttu-id="7f976-136">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-136">Purch acc</span></span>   | <span data-ttu-id="7f976-137">102</span><span class="sxs-lookup"><span data-stu-id="7f976-137">102</span></span>       |            | <span data-ttu-id="7f976-138">Správná faktura</span><span class="sxs-lookup"><span data-stu-id="7f976-138">Correct Invoice</span></span>              |
-| <span data-ttu-id="7f976-139">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="7f976-139">Invoice0002</span></span>     | <span data-ttu-id="7f976-140">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-140">Vendor acc</span></span>  |           | <span data-ttu-id="7f976-141">102</span><span class="sxs-lookup"><span data-stu-id="7f976-141">102</span></span>        | <span data-ttu-id="7f976-142">Správná faktura</span><span class="sxs-lookup"><span data-stu-id="7f976-142">Correct Invoice</span></span>              |
-
-<span data-ttu-id="7f976-143">V tomto příkladu výpis zůstatku ukazuje následující.</span><span class="sxs-lookup"><span data-stu-id="7f976-143">In this example, the balance statement shows the following.</span></span>
-
-| <span data-ttu-id="7f976-144">Účet</span><span class="sxs-lookup"><span data-stu-id="7f976-144">Account</span></span>    | <span data-ttu-id="7f976-145">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="7f976-145">Debit</span></span> | <span data-ttu-id="7f976-146">Kreditní</span><span class="sxs-lookup"><span data-stu-id="7f976-146">Credit</span></span> | <span data-ttu-id="7f976-147">Rozvaha</span><span class="sxs-lookup"><span data-stu-id="7f976-147">Balance</span></span> |
-|------------|-------|--------|---------|
-| <span data-ttu-id="7f976-148">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-148">Purch acc</span></span>  | <span data-ttu-id="7f976-149">102</span><span class="sxs-lookup"><span data-stu-id="7f976-149">102</span></span>   | <span data-ttu-id="7f976-150">0</span><span class="sxs-lookup"><span data-stu-id="7f976-150">0</span></span>      | <span data-ttu-id="7f976-151">102</span><span class="sxs-lookup"><span data-stu-id="7f976-151">102</span></span>     |
-| <span data-ttu-id="7f976-152">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-152">Vendor acc</span></span> | <span data-ttu-id="7f976-153">0</span><span class="sxs-lookup"><span data-stu-id="7f976-153">0</span></span>     | <span data-ttu-id="7f976-154">102</span><span class="sxs-lookup"><span data-stu-id="7f976-154">102</span></span>    | <span data-ttu-id="7f976-155">-102</span><span class="sxs-lookup"><span data-stu-id="7f976-155">-102</span></span>    |
-
-## <a name="differences-between-storno-and-reverse-entries"></a><span data-ttu-id="7f976-156">Rozdíly mezi stornem a opačnými zápisy</span><span class="sxs-lookup"><span data-stu-id="7f976-156">Differences between Storno and reverse entries</span></span>
-<span data-ttu-id="7f976-157">Existují dva způsoby opravy účetních položek – opačný zápis a storno.</span><span class="sxs-lookup"><span data-stu-id="7f976-157">There are two ways in which to correct posting entries – reverse and storno.</span></span> <span data-ttu-id="7f976-158">Při použití opačného zápisu je vytvořena kopie původního obecného zápisu se zpětným zápisem debetního a kreditního účtu, přičemž u částek bude stejné znaménko.</span><span class="sxs-lookup"><span data-stu-id="7f976-158">If you use a reverse entry, a copy of the original general entry is created with reverse debit and credit accounts, and the amounts remain with the same sign.</span></span> <span data-ttu-id="7f976-159">Používáte-li storno, systém vytvoří kopii původní obecné položky, ale částky budou zapsány se záporným znaménkem.</span><span class="sxs-lookup"><span data-stu-id="7f976-159">If you use Storno, the system creates a copy of the original general entry, but the amounts are recorded with a negative sign.</span></span> <span data-ttu-id="7f976-160">Následující tabulka uvádí obecné záznamy pro Storno.</span><span class="sxs-lookup"><span data-stu-id="7f976-160">The following table shows the general entry for Storno.</span></span>
-
-| <span data-ttu-id="7f976-161">**ID dokumentu**</span><span class="sxs-lookup"><span data-stu-id="7f976-161">**Document ID**</span></span> | <span data-ttu-id="7f976-162">**Účet**</span><span class="sxs-lookup"><span data-stu-id="7f976-162">**Account**</span></span> | <span data-ttu-id="7f976-163">**Má Dáti**</span><span class="sxs-lookup"><span data-stu-id="7f976-163">**Debit**</span></span> | <span data-ttu-id="7f976-164">**Dal**</span><span class="sxs-lookup"><span data-stu-id="7f976-164">**Credit**</span></span> | <span data-ttu-id="7f976-165">**Poznámka**</span><span class="sxs-lookup"><span data-stu-id="7f976-165">**Comment**</span></span>                  |
-|-----------------|-------------|-----------|------------|------------------------------|
-| <span data-ttu-id="7f976-166">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="7f976-166">Invoice0001</span></span>     | <span data-ttu-id="7f976-167">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-167">Purch acc</span></span>   | <span data-ttu-id="7f976-168">120</span><span class="sxs-lookup"><span data-stu-id="7f976-168">120</span></span>       |            | <span data-ttu-id="7f976-169">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="7f976-169">Original Invoice (incorrect)</span></span> |
-| <span data-ttu-id="7f976-170">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="7f976-170">Invoice0001</span></span>     | <span data-ttu-id="7f976-171">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-171">Vendor acc</span></span>  |           | <span data-ttu-id="7f976-172">120</span><span class="sxs-lookup"><span data-stu-id="7f976-172">120</span></span>        | <span data-ttu-id="7f976-173">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="7f976-173">Original Invoice (incorrect)</span></span> |
-|                 |             |           |            |                              |
-| <span data-ttu-id="7f976-174">Reverse0001</span><span class="sxs-lookup"><span data-stu-id="7f976-174">Reverse0001</span></span>     | <span data-ttu-id="7f976-175">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-175">Purch acc</span></span>   |           | <span data-ttu-id="7f976-176">120</span><span class="sxs-lookup"><span data-stu-id="7f976-176">120</span></span>        | <span data-ttu-id="7f976-177">Stornovat</span><span class="sxs-lookup"><span data-stu-id="7f976-177">Reverse</span></span>                      |
-| <span data-ttu-id="7f976-178">Reverse0001</span><span class="sxs-lookup"><span data-stu-id="7f976-178">Reverse0001</span></span>     | <span data-ttu-id="7f976-179">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-179">Vendor acc</span></span>  | <span data-ttu-id="7f976-180">120</span><span class="sxs-lookup"><span data-stu-id="7f976-180">120</span></span>       |            | <span data-ttu-id="7f976-181">Stornovat</span><span class="sxs-lookup"><span data-stu-id="7f976-181">Reverse</span></span>                      |
-|                 |             |           |            |                              |
-| <span data-ttu-id="7f976-182">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="7f976-182">Invoice0002</span></span>     | <span data-ttu-id="7f976-183">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-183">Purch acc</span></span>   | <span data-ttu-id="7f976-184">102</span><span class="sxs-lookup"><span data-stu-id="7f976-184">102</span></span>       |            | <span data-ttu-id="7f976-185">Správná faktura</span><span class="sxs-lookup"><span data-stu-id="7f976-185">Correct Invoice</span></span>              |
-| <span data-ttu-id="7f976-186">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="7f976-186">Invoice0002</span></span>     | <span data-ttu-id="7f976-187">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-187">Vendor acc</span></span>  |           | <span data-ttu-id="7f976-188">102</span><span class="sxs-lookup"><span data-stu-id="7f976-188">102</span></span>        | <span data-ttu-id="7f976-189">Správná faktura</span><span class="sxs-lookup"><span data-stu-id="7f976-189">Correct Invoice</span></span>              |
-
-<span data-ttu-id="7f976-190">V tomto příkladu výpis zůstatku ukazuje následující.</span><span class="sxs-lookup"><span data-stu-id="7f976-190">In this example, the balance statement shows the following.</span></span>
-
-| <span data-ttu-id="7f976-191">Účet</span><span class="sxs-lookup"><span data-stu-id="7f976-191">Account</span></span>    | <span data-ttu-id="7f976-192">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="7f976-192">Debit</span></span> | <span data-ttu-id="7f976-193">Kreditní</span><span class="sxs-lookup"><span data-stu-id="7f976-193">Credit</span></span> | <span data-ttu-id="7f976-194">Rozvaha</span><span class="sxs-lookup"><span data-stu-id="7f976-194">Balance</span></span> |
-|------------|-------|--------|---------|
-| <span data-ttu-id="7f976-195">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-195">Purch acc</span></span>  | <span data-ttu-id="7f976-196">222</span><span class="sxs-lookup"><span data-stu-id="7f976-196">222</span></span>   | <span data-ttu-id="7f976-197">120</span><span class="sxs-lookup"><span data-stu-id="7f976-197">120</span></span>    | <span data-ttu-id="7f976-198">102</span><span class="sxs-lookup"><span data-stu-id="7f976-198">102</span></span>     |
-| <span data-ttu-id="7f976-199">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-199">Vendor acc</span></span> | <span data-ttu-id="7f976-200">120</span><span class="sxs-lookup"><span data-stu-id="7f976-200">120</span></span>   | <span data-ttu-id="7f976-201">222</span><span class="sxs-lookup"><span data-stu-id="7f976-201">222</span></span>    | <span data-ttu-id="7f976-202">-102</span><span class="sxs-lookup"><span data-stu-id="7f976-202">-102</span></span>    |
-
-<span data-ttu-id="7f976-203">Všimněte si, že jsou zůstatky záporného účtování a storna stejné.</span><span class="sxs-lookup"><span data-stu-id="7f976-203">Note that the balances are equal for the reverse and the storno.</span></span> <span data-ttu-id="7f976-204">Existuje rozdíl mezi debetním a kreditním obratem, protože opačný zápis způsobuje redundantní obrat debetu a kreditu.</span><span class="sxs-lookup"><span data-stu-id="7f976-204">There is a difference between debit turnover and credit turnover, because the reverse entry makes redundant debit and credit turnover.</span></span> <span data-ttu-id="7f976-205">Opačný zápis se používá v zemích/oblastech, kde se obrat používá jen zřídka.</span><span class="sxs-lookup"><span data-stu-id="7f976-205">The reverse entry is used in countries/regions where turnover is rarely use.</span></span> <span data-ttu-id="7f976-206">Jiné země nebo oblasti používají záporné storno.</span><span class="sxs-lookup"><span data-stu-id="7f976-206">Other countries/regions use Storno accounting.</span></span>
-
-## <a name="partial-storno"></a><span data-ttu-id="7f976-207">Částečná storno</span><span class="sxs-lookup"><span data-stu-id="7f976-207">Partial Storno</span></span>
-<span data-ttu-id="7f976-208">*Částečné storno* je účetní praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku.</span><span class="sxs-lookup"><span data-stu-id="7f976-208">*Partial Storno* is an accounting practice of using negative debit or credit amounts to reverse part of the original journal account entries.</span></span> <span data-ttu-id="7f976-209">Některé země nebo oblasti umožňují používání částečného storna.</span><span class="sxs-lookup"><span data-stu-id="7f976-209">Some countries/regions allow the use the partial Storno.</span></span> <span data-ttu-id="7f976-210">Účetní například zaúčtuje fakturu dodavatele s částkou 120 USD.</span><span class="sxs-lookup"><span data-stu-id="7f976-210">For example, a bookkeeper posts an invoice from a vendor for 120 USD.</span></span> <span data-ttu-id="7f976-211">Během procesu platby je zjištěno, že účetní omylem zadal nesprávnou číselnou řadu.</span><span class="sxs-lookup"><span data-stu-id="7f976-211">During the payment process, it's discovered that the bookkeeper mistakenly entered an incorrect number sequence.</span></span> <span data-ttu-id="7f976-212">Původní faktura na 102 USD obsahovala chybu v číselné řadě.</span><span class="sxs-lookup"><span data-stu-id="7f976-212">The original invoice for 102 USD had a mistake in the number sequence.</span></span><span data-ttu-id="7f976-213">Pomocí částečného storna by měl účetní vytvořit storno na 18 USD.</span><span class="sxs-lookup"><span data-stu-id="7f976-213"> Using partial Storno, the bookkeeper should create Storno for 18 USD.</span></span> <span data-ttu-id="7f976-214">Následující tabulka uvádí obecné záznamy pro částečné storno.</span><span class="sxs-lookup"><span data-stu-id="7f976-214">The following table shows the general entry for partial Storno.</span></span>
-
-| <span data-ttu-id="7f976-215">**ID dokumentu**</span><span class="sxs-lookup"><span data-stu-id="7f976-215">**Document ID**</span></span> | <span data-ttu-id="7f976-216">**Účet**</span><span class="sxs-lookup"><span data-stu-id="7f976-216">**Account**</span></span> | <span data-ttu-id="7f976-217">**Má Dáti**</span><span class="sxs-lookup"><span data-stu-id="7f976-217">**Debit**</span></span> | <span data-ttu-id="7f976-218">**Kreditní**</span><span class="sxs-lookup"><span data-stu-id="7f976-218">**Credit**</span></span> | <span data-ttu-id="7f976-219">**Poznámka**</span><span class="sxs-lookup"><span data-stu-id="7f976-219">**Comment**</span></span>                  |
-|-----------------|-------------|-----------|------------|------------------------------|
-| <span data-ttu-id="7f976-220">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="7f976-220">Invoice0001</span></span>     | <span data-ttu-id="7f976-221">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-221">Purch acc</span></span>   | <span data-ttu-id="7f976-222">120</span><span class="sxs-lookup"><span data-stu-id="7f976-222">120</span></span>       |            | <span data-ttu-id="7f976-223">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="7f976-223">Original Invoice (incorrect)</span></span> |
-| <span data-ttu-id="7f976-224">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="7f976-224">Invoice0001</span></span>     | <span data-ttu-id="7f976-225">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-225">Vendor acc</span></span>  |           | <span data-ttu-id="7f976-226">120</span><span class="sxs-lookup"><span data-stu-id="7f976-226">120</span></span>        | <span data-ttu-id="7f976-227">Původní faktura (nesprávná)</span><span class="sxs-lookup"><span data-stu-id="7f976-227">Original Invoice (incorrect)</span></span> |
-|                 |             |           |            |                              |
-| <span data-ttu-id="7f976-228">Storno0001</span><span class="sxs-lookup"><span data-stu-id="7f976-228">Storno0001</span></span>      | <span data-ttu-id="7f976-229">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-229">Purch acc</span></span>   | <span data-ttu-id="7f976-230">18. \-</span><span class="sxs-lookup"><span data-stu-id="7f976-230">\-18</span></span>      |            | <span data-ttu-id="7f976-231">Částečná storno</span><span class="sxs-lookup"><span data-stu-id="7f976-231">Partial Storno</span></span>               |
-| <span data-ttu-id="7f976-232">Storno0001</span><span class="sxs-lookup"><span data-stu-id="7f976-232">Storno0001</span></span>      | <span data-ttu-id="7f976-233">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-233">Vendor acc</span></span>  |           | <span data-ttu-id="7f976-234">18. \-</span><span class="sxs-lookup"><span data-stu-id="7f976-234">\-18</span></span>       | <span data-ttu-id="7f976-235">Částečná storno</span><span class="sxs-lookup"><span data-stu-id="7f976-235">Partial Storno</span></span>               |
-
-<span data-ttu-id="7f976-236">V tomto příkladu výpis zůstatku ukazuje následující.</span><span class="sxs-lookup"><span data-stu-id="7f976-236">In this example, the balance statement shows the following.</span></span>
-
-| <span data-ttu-id="7f976-237">Účet</span><span class="sxs-lookup"><span data-stu-id="7f976-237">Account</span></span>    | <span data-ttu-id="7f976-238">Má Dáti</span><span class="sxs-lookup"><span data-stu-id="7f976-238">Debit</span></span> | <span data-ttu-id="7f976-239">Kreditní</span><span class="sxs-lookup"><span data-stu-id="7f976-239">Credit</span></span> | <span data-ttu-id="7f976-240">Rozvaha</span><span class="sxs-lookup"><span data-stu-id="7f976-240">Balance</span></span> |
-|------------|-------|--------|---------|
-| <span data-ttu-id="7f976-241">Nákupní vratka</span><span class="sxs-lookup"><span data-stu-id="7f976-241">Purch acc</span></span>  | <span data-ttu-id="7f976-242">102</span><span class="sxs-lookup"><span data-stu-id="7f976-242">102</span></span>   | <span data-ttu-id="7f976-243">0</span><span class="sxs-lookup"><span data-stu-id="7f976-243">0</span></span>      | <span data-ttu-id="7f976-244">102</span><span class="sxs-lookup"><span data-stu-id="7f976-244">102</span></span>     |
-| <span data-ttu-id="7f976-245">Účet dodavatele</span><span class="sxs-lookup"><span data-stu-id="7f976-245">Vendor acc</span></span> | <span data-ttu-id="7f976-246">0</span><span class="sxs-lookup"><span data-stu-id="7f976-246">0</span></span>     | <span data-ttu-id="7f976-247">102</span><span class="sxs-lookup"><span data-stu-id="7f976-247">102</span></span>    | <span data-ttu-id="7f976-248">-102</span><span class="sxs-lookup"><span data-stu-id="7f976-248">-102</span></span>    |
-
-<span data-ttu-id="7f976-249">Částečné storno může vytvořit problém ve formuláři Tisk předlohy.</span><span class="sxs-lookup"><span data-stu-id="7f976-249">Partial Storno can create an issue on the Original Print form.</span></span><span data-ttu-id="7f976-250">Pokud existuje rozdíl mezi datem původního dokladu a datem storna, může být obtížné získat přesnou částku měny.</span><span class="sxs-lookup"><span data-stu-id="7f976-250"> If there is a difference between the date of the original document and the date of Storno, it can make it difficult to get an accurate currency amount.</span></span> <span data-ttu-id="7f976-251">V důsledku toho je částečné storno povoleno pouze pro určité dokumenty.</span><span class="sxs-lookup"><span data-stu-id="7f976-251">As a result, partial Storno is only allowed for certain documents.</span></span> <span data-ttu-id="7f976-252">Microsoft Dynamics 365 for Operations poskytuje funkci částečného storna pro dokumenty a země/oblasti, kde je povoleno.</span><span class="sxs-lookup"><span data-stu-id="7f976-252">Microsoft Dynamics 365 for Operations provides partial Storno functionality for documents and countries/regions where it is allowed.</span></span>
-
-## <a name="how-to-enter-stornoon-journal-lines"></a><span data-ttu-id="7f976-253">Jak zadat storno na řádcích deníku</span><span class="sxs-lookup"><span data-stu-id="7f976-253">How to enter Storno on journal lines</span></span>
-<span data-ttu-id="7f976-254">Zadejte částku Má dáti nebo Dal se záporným znaménkem v řádku deníku k vytvoření položky storna.</span><span class="sxs-lookup"><span data-stu-id="7f976-254">Enter the debit or credit amount with a negative sign on the journal line to make a Storno entry.</span></span> <span data-ttu-id="7f976-255">Pole **Oprava** je nastaveno během procesu zaúčtování.</span><span class="sxs-lookup"><span data-stu-id="7f976-255">The **Correction** field is set during the posting process.</span></span> 
-
-## <a name="how-storno-is-displayed"></a><span data-ttu-id="7f976-256">Zobrazení storna</span><span class="sxs-lookup"><span data-stu-id="7f976-256">How Storno is displayed</span></span>
-<span data-ttu-id="7f976-257">Dynamics 365 for Operations zpracovává záporné částky deníku speciálním způsobem.</span><span class="sxs-lookup"><span data-stu-id="7f976-257">Dynamics 365 for Operations handles negative journal amounts in a special way.</span></span> <span data-ttu-id="7f976-258">Položka hlavního deníku, transakce odběratele, transakce dodavatele a jiné transakce poskytují funkce storna, jak je uvedeno níže.</span><span class="sxs-lookup"><span data-stu-id="7f976-258">The general journal entry, customer transaction, vendor transaction, and other transactions provide a Storno function, as shown below.</span></span>
-
-<table>
-<thead>
-<tr class="row-1">
-<th class="column-1" rowspan="2"><span data-ttu-id="7f976-259">Uživatelský vstup na řádku deníku</span><span class="sxs-lookup"><span data-stu-id="7f976-259">User input at journal line</span></span></th>
-<th class="column-2" colspan="2"><span data-ttu-id="7f976-260">Princip úložiště</span><span class="sxs-lookup"><span data-stu-id="7f976-260">Storage principle</span></span></th>
-<th class="column-4" colspan="2"><span data-ttu-id="7f976-261">Pravidlo zobrazení</span><span class="sxs-lookup"><span data-stu-id="7f976-261">Display principle</span></span></th>
-<th class="column-6" colspan="3"><span data-ttu-id="7f976-262">Dopad na sestavu výpisu</span><span class="sxs-lookup"><span data-stu-id="7f976-262">Impact to the Statement report</span></span></th>
-</tr>
-<tr class="row-1">
-<th class="column-2"><span data-ttu-id="7f976-263">Pole Oprava</span><span class="sxs-lookup"><span data-stu-id="7f976-263">Correction field</span></span></th>
-<th class="column-3"><span data-ttu-id="7f976-264">Pole Částka</span><span class="sxs-lookup"><span data-stu-id="7f976-264">Amount field</span></span></th>
-<th class="column-4"><span data-ttu-id="7f976-265">Částka v měně transakce</span><span class="sxs-lookup"><span data-stu-id="7f976-265">Amount in transaction currency</span></span></th>
-<th class="column-5"><span data-ttu-id="7f976-266">Množství</span><span class="sxs-lookup"><span data-stu-id="7f976-266">Amount</span></span></th>
-<th class="column-6"><span data-ttu-id="7f976-267">Sloupec Má dáti</span><span class="sxs-lookup"><span data-stu-id="7f976-267">Debit column</span></span></th>
-<th class="column-7"><span data-ttu-id="7f976-268">Sloupec Dal</span><span class="sxs-lookup"><span data-stu-id="7f976-268">Credit column</span></span></th>
-<th class="column-8"><span data-ttu-id="7f976-269">Sloupec Zůstatek</span><span class="sxs-lookup"><span data-stu-id="7f976-269">Balance column</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-2">
-<td class="column-1"><span data-ttu-id="7f976-270"> Má Dáti</span><span class="sxs-lookup"><span data-stu-id="7f976-270"> Debit</span></span></td>
-<td class="column-2"><span data-ttu-id="7f976-271">Žádný</span><span class="sxs-lookup"><span data-stu-id="7f976-271">No</span></span></td>
-<td class="column-3"><span data-ttu-id="7f976-272">0. &gt;</span><span class="sxs-lookup"><span data-stu-id="7f976-272">&gt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="7f976-273">Množství</span><span class="sxs-lookup"><span data-stu-id="7f976-273">Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="7f976-274">Množství</span><span class="sxs-lookup"><span data-stu-id="7f976-274">Amount</span></span></td>
-<td class="column-6"><span data-ttu-id="7f976-275">Zvýšení</span><span class="sxs-lookup"><span data-stu-id="7f976-275">Increases</span></span></td>
-<td class="column-7"></td>
-<td class="column-8"><span data-ttu-id="7f976-276">Zvýšení</span><span class="sxs-lookup"><span data-stu-id="7f976-276">Increases</span></span></td>
-</tr>
-<tr class="row-3">
-<td class="column-1"><span data-ttu-id="7f976-277"> Kreditní</span><span class="sxs-lookup"><span data-stu-id="7f976-277"> Credit</span></span></td>
-<td class="column-2"><span data-ttu-id="7f976-278">Žádný</span><span class="sxs-lookup"><span data-stu-id="7f976-278">No</span></span></td>
-<td class="column-3"><span data-ttu-id="7f976-279">0. &lt;</span><span class="sxs-lookup"><span data-stu-id="7f976-279">&lt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="7f976-280">-Částka</span><span class="sxs-lookup"><span data-stu-id="7f976-280">-Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="7f976-281">Množství</span><span class="sxs-lookup"><span data-stu-id="7f976-281">Amount</span></span></td>
-<td class="column-6"></td>
-<td class="column-7"><span data-ttu-id="7f976-282">Zvýšení</span><span class="sxs-lookup"><span data-stu-id="7f976-282">Increases</span></span></td>
-<td class="column-8"><span data-ttu-id="7f976-283">Snížení</span><span class="sxs-lookup"><span data-stu-id="7f976-283">Decreases</span></span></td>
-</tr>
-<tr class="row-4">
-<td class="column-1"><span data-ttu-id="7f976-284">-Má Dáti</span><span class="sxs-lookup"><span data-stu-id="7f976-284">-Debit</span></span></td>
-<td class="column-2"><span data-ttu-id="7f976-285">Ano</span><span class="sxs-lookup"><span data-stu-id="7f976-285">Yes</span></span></td>
-<td class="column-3"><span data-ttu-id="7f976-286">0. &gt;</span><span class="sxs-lookup"><span data-stu-id="7f976-286">&gt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="7f976-287">+Částka</span><span class="sxs-lookup"><span data-stu-id="7f976-287">+Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="7f976-288">-Částka</span><span class="sxs-lookup"><span data-stu-id="7f976-288">-Amount</span></span></td>
-<td class="column-6"><span data-ttu-id="7f976-289">Snížení</span><span class="sxs-lookup"><span data-stu-id="7f976-289">Decreases</span></span></td>
-<td class="column-7"></td>
-<td class="column-8"><span data-ttu-id="7f976-290">Zvýšení</span><span class="sxs-lookup"><span data-stu-id="7f976-290">Increases</span></span></td>
-</tr>
-<tr class="row-5">
-<td class="column-1"><span data-ttu-id="7f976-291">-Kredit</span><span class="sxs-lookup"><span data-stu-id="7f976-291">-Credit</span></span></td>
-<td class="column-2"><span data-ttu-id="7f976-292">Ano</span><span class="sxs-lookup"><span data-stu-id="7f976-292">Yes</span></span></td>
-<td class="column-3"><span data-ttu-id="7f976-293">0. &lt;</span><span class="sxs-lookup"><span data-stu-id="7f976-293">&lt;0</span></span></td>
-<td class="column-4" align="right"><span data-ttu-id="7f976-294">-Částka</span><span class="sxs-lookup"><span data-stu-id="7f976-294">-Amount</span></span></td>
-<td class="column-5" align="right"><span data-ttu-id="7f976-295">-Částka</span><span class="sxs-lookup"><span data-stu-id="7f976-295">-Amount</span></span></td>
-<td class="column-6"></td>
-<td class="column-7"><span data-ttu-id="7f976-296">Snížení</span><span class="sxs-lookup"><span data-stu-id="7f976-296">Decreases</span></span></td>
-<td class="column-8"><span data-ttu-id="7f976-297">Snížení</span><span class="sxs-lookup"><span data-stu-id="7f976-297">Decreases</span></span></td>
-</tr>
-</tbody>
-</table>
-
-<span data-ttu-id="7f976-298">Můžete upravit zobrazení storna pro formuláře, tabulky, sloupce a pole.</span><span class="sxs-lookup"><span data-stu-id="7f976-298">You can customize the display of Storno in forms, grids, columns, and fields.</span></span> <span data-ttu-id="7f976-299">Například můžete vypnout zobrazení znaménka nebo změnit odsazení pro záporné částky.</span><span class="sxs-lookup"><span data-stu-id="7f976-299">For example, you can turn off sign display or change padding for negative amounts.</span></span> <span data-ttu-id="7f976-300">Můžete také použít pole **oprava** se všemi nastaveními zobrazení, pokud má pole **Oprava** zadanou hodnotu "Ano", po které následuje položka Storno.</span><span class="sxs-lookup"><span data-stu-id="7f976-300">You can also use the **Correction** field with all display settings, if the **Correction** field has ‘Yes’, then it is a Storno entry.</span></span>
-
-![Částky storna položky deníku](./media/journal-storno.png)
-
-## <a name="how-documents-create-storno"></a><span data-ttu-id="7f976-302">Jak dokumenty vytvářejí storno</span><span class="sxs-lookup"><span data-stu-id="7f976-302">How documents create Storno</span></span>
-<span data-ttu-id="7f976-303">Některé dokumenty vytvářejí transakce zrušení.</span><span class="sxs-lookup"><span data-stu-id="7f976-303">Certain documents create cancellation transactions.</span></span> <span data-ttu-id="7f976-304">Následující přecenění cizí měny pro hlavní knihu, závazky a dokumenty pohledávek stornují nerealizovaé zisky a ztráty.</span><span class="sxs-lookup"><span data-stu-id="7f976-304">For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss.</span></span> <span data-ttu-id="7f976-305">Podrobnější informace získáte v tématu [Přecenění cizí měny pro hlavní knihu](../general-ledger/foreign-currency-revaluation-general-ledger.md) nebo [Závazky a pohledávky](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="7f976-305">For more details, see [Foreign currency revaluation for General Ledger](../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Accounts payable and Accounts receivable](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md).</span></span> <span data-ttu-id="7f976-306">Po vytvoření transakce zrušení budou vytvořeny nové transakce s nerealizovanými zisky a ztrátami.</span><span class="sxs-lookup"><span data-stu-id="7f976-306">After a cancellation transaction is created, new transactions will be created with unrealized gain and loss.</span></span> <span data-ttu-id="7f976-307">Transakce zrušení jsou vytvořeny také pro zásoby.</span><span class="sxs-lookup"><span data-stu-id="7f976-307">Cancellation transactions are also created for inventory.</span></span> <span data-ttu-id="7f976-308">Další informace naleznete v tématu  [Uzávěrka zásob](../../supply-chain/cost-management/inventory-close.md).</span><span class="sxs-lookup"><span data-stu-id="7f976-308">For more information, see [Inventory close](../../supply-chain/cost-management/inventory-close.md).</span></span> <span data-ttu-id="7f976-309">Existují dokumenty, které umožňují zrušení dříve zaúčtovaného dokladu.</span><span class="sxs-lookup"><span data-stu-id="7f976-309">There are documents that allow you to cancel the previously posted document.</span></span> <span data-ttu-id="7f976-310">Uživatel může například vytvořit dobropis ke zrušení dříve vytvořené faktury.</span><span class="sxs-lookup"><span data-stu-id="7f976-310">For example, the User can create a Credit Note to cancel a previously created Invoice.</span></span> <span data-ttu-id="7f976-311">Dokumenty používají specifické parametry pro vytváření zpětných transakcí nebo transakcí storna.</span><span class="sxs-lookup"><span data-stu-id="7f976-311">Documents use specific parameters to create reverse or Storno transactions.</span></span> <span data-ttu-id="7f976-312">Například přecenění cizí měny vytvoří transakce zpětného zápisu nebo storna na základě parametru opravy hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="7f976-312">For example, the foreign currency revaluation creates reverse or Storno transactions based on the general ledger correction parameter.</span></span> <span data-ttu-id="7f976-313">Dobropis odběratele vytvoří zpětné transakce nebo transakce storna na základě parametru opravy dobropisu závazků.</span><span class="sxs-lookup"><span data-stu-id="7f976-313">The customer credit note creates reverse or Storno transactions based on the accounts receivable credit note correction parameter.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-storno.md" target-language="cs-CZ">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-storno.ef97bf.a9352b0a80d8c5fe013e951bd4380b87834c0030.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>a9352b0a80d8c5fe013e951bd4380b87834c0030</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-storno.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Storno accounting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záporné storno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>Storno accounting is the practice of using negative numbers to reverse original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Storno accounting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záporné storno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Storno accounting is the practice of using negative numbers to reverse original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Záporné storno je praxe používání záporných čísel ke stornování původních účetních položek deníku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source><bpt id="p1">*</bpt>Storno accounting<ept id="p1">*</ept> is a practice of using negative debit or credit amounts to reverse original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Záporné storno<ept id="p1">*</ept> je praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Because bookkeepers typically write Storno entries in red ink, this accounting practice is also known as <bpt id="p1">*</bpt>Red Storno<ept id="p1">*</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzhledem k tomu, že účetní obvykle zapisují položky záporného storna červeně, tento účetní standard se také označuje jako <bpt id="p1">*</bpt>červené storno<ept id="p1">*</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Using Storno accounting you can cancel a document with incorrect amounts, however you should always enter the correct document amount after the cancellation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pomocí záporného storna můžete zrušit dokument s nesprávnými částkami, po zrušení byste však vždy měli zadat správnou částku dokumentu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příklad</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>A bookkeeper posts an invoice from a vendor for 120 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účetní zaúčtuje fakturu dodavatele s částkou 120 USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>During the payment process, it's discovered that the bookkeeper mistakenly entered 120 USD instead of 102 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Během procesu platby se zjistí, že účetní omylem zadal 120 USD, namísto 102 USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Now, the bookkeeper needs to create Storno for the original document, and then create the correct invoice for 102 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účetní teď musí vytvořit storno původního dokumentu a následně vytvořit správnou fakturu na 102 USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>For more information, see<bpt id="p1"> [</bpt>Invoice from Vendor<ept id="p1">](../accounts-payable/vendor-invoices-overview.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace získáte v části <bpt id="p1"> [</bpt>Faktura od dodavatele<ept id="p1">](../accounts-payable/vendor-invoices-overview.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The following table shows the general entry for Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující tabulka uvádí obecné záznamy pro Storno.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">**</bpt>Document ID<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ID dokumentu<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">**</bpt>Account<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Účet<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">**</bpt>Debit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Má Dáti<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">**</bpt>Credit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dal<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">**</bpt>Comment<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Původní faktura (nesprávná)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Původní faktura (nesprávná)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>-120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>-120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správná faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správná faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In this example, the balance statement shows the following.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu výpis zůstatku ukazuje následující.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozvaha</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>-102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Differences between Storno and reverse entries</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozdíly mezi stornem a opačnými zápisy</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>There are two ways in which to correct posting entries – reverse and storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Existují dva způsoby opravy účetních položek – opačný zápis a storno.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>If you use a reverse entry, a copy of the original general entry is created with reverse debit and credit accounts, and the amounts remain with the same sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při použití opačného zápisu je vytvořena kopie původního obecného zápisu se zpětným zápisem debetního a kreditního účtu, přičemž u částek bude stejné znaménko.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>If you use Storno, the system creates a copy of the original general entry, but the amounts are recorded with a negative sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Používáte-li storno, systém vytvoří kopii původní obecné položky, ale částky budou zapsány se záporným znaménkem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The following table shows the general entry for Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující tabulka uvádí obecné záznamy pro Storno.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source><bpt id="p1">**</bpt>Document ID<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ID dokumentu<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">**</bpt>Account<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Účet<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source><bpt id="p1">**</bpt>Debit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Má Dáti<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source><bpt id="p1">**</bpt>Credit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Dal<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source><bpt id="p1">**</bpt>Comment<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Původní faktura (nesprávná)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Původní faktura (nesprávná)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Reverse0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Reverse0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Reverse</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stornovat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Reverse0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Reverse0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Reverse</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stornovat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správná faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Invoice0002</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0002</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Correct Invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správná faktura</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>In this example, the balance statement shows the following.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu výpis zůstatku ukazuje následující.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozvaha</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>222</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">222</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>222</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">222</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>-102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Note that the balances are equal for the reverse and the storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všimněte si, že jsou zůstatky záporného účtování a storna stejné.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>There is a difference between debit turnover and credit turnover, because the reverse entry makes redundant debit and credit turnover.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Existuje rozdíl mezi debetním a kreditním obratem, protože opačný zápis způsobuje redundantní obrat debetu a kreditu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>The reverse entry is used in countries/regions where turnover is rarely use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Opačný zápis se používá v zemích/oblastech, kde se obrat používá jen zřídka.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Other countries/regions use Storno accounting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jiné země nebo oblasti používají záporné storno.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Partial Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částečná storno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source><bpt id="p1">*</bpt>Partial Storno<ept id="p1">*</ept> is an accounting practice of using negative debit or credit amounts to reverse part of the original journal account entries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Částečné storno<ept id="p1">*</ept> je účetní praxe používání záporných debetních nebo kreditních částek ke stornování původních účetních položek deníku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Some countries/regions allow the use the partial Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Některé země nebo oblasti umožňují používání částečného storna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>For example, a bookkeeper posts an invoice from a vendor for 120 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účetní například zaúčtuje fakturu dodavatele s částkou 120 USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>During the payment process, it's discovered that the bookkeeper mistakenly entered an incorrect number sequence.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Během procesu platby je zjištěno, že účetní omylem zadal nesprávnou číselnou řadu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>The original invoice for 102 USD had a mistake in the number sequence.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Původní faktura na 102 USD obsahovala chybu v číselné řadě.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source> Using partial Storno, the bookkeeper should create Storno for 18 USD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pomocí částečného storna by měl účetní vytvořit storno na 18 USD.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>The following table shows the general entry for partial Storno.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující tabulka uvádí obecné záznamy pro částečné storno.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source><bpt id="p1">**</bpt>Document ID<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ID dokumentu<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source><bpt id="p1">**</bpt>Account<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Účet<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source><bpt id="p1">**</bpt>Debit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Má Dáti<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source><bpt id="p1">**</bpt>Credit<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kreditní<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source><bpt id="p1">**</bpt>Comment<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Původní faktura (nesprávná)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Invoice0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktura0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>120</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">120</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Original Invoice (incorrect)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Původní faktura (nesprávná)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source><ph id="ph1">\-</ph>18</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">18. <ph id="ph1">\-</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Partial Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částečná storno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Storno0001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno0001</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source><ph id="ph1">\-</ph>18</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">18. <ph id="ph1">\-</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Partial Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částečná storno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>In this example, the balance statement shows the following.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto příkladu výpis zůstatku ukazuje následující.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Account</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Balance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozvaha</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Purch acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nákupní vratka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Vendor acc</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účet dodavatele</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>-102</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-102</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Partial Storno can create an issue on the Original Print form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částečné storno může vytvořit problém ve formuláři Tisk předlohy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source> If there is a difference between the date of the original document and the date of Storno, it can make it difficult to get an accurate currency amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud existuje rozdíl mezi datem původního dokladu a datem storna, může být obtížné získat přesnou částku měny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>As a result, partial Storno is only allowed for certain documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V důsledku toho je částečné storno povoleno pouze pro určité dokumenty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Microsoft Dynamics 365 for Operations provides partial Storno functionality for documents and countries/regions where it is allowed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Operations poskytuje funkci částečného storna pro dokumenty a země/oblasti, kde je povoleno.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>How to enter Storno on journal lines</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jak zadat storno na řádcích deníku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Enter the debit or credit amount with a negative sign on the journal line to make a Storno entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte částku Má dáti nebo Dal se záporným znaménkem v řádku deníku k vytvoření položky storna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>The <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> field is set during the posting process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole <bpt id="p1">**</bpt>Oprava<ept id="p1">**</ept> je nastaveno během procesu zaúčtování.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>How Storno is displayed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazení storna</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Dynamics 365 for Operations handles negative journal amounts in a special way.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Operations zpracovává záporné částky deníku speciálním způsobem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>The general journal entry, customer transaction, vendor transaction, and other transactions provide a Storno function, as shown below.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Položka hlavního deníku, transakce odběratele, transakce dodavatele a jiné transakce poskytují funkce storna, jak je uvedeno níže.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>User input at journal line</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uživatelský vstup na řádku deníku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Storage principle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Princip úložiště</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Display principle</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pravidlo zobrazení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Impact to the Statement report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dopad na sestavu výpisu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Correction field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole Oprava</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Amount field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole Částka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Amount in transaction currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částka v měně transakce</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Množství</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Debit column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupec Má dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Credit column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupec Dal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Balance column</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sloupec Zůstatek</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source><ph id="ph1"> </ph>Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1"> </ph>Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source><ph id="ph1">&amp;gt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0. <ph id="ph1">&amp;gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Množství</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Množství</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvýšení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvýšení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source><ph id="ph1"> </ph>Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1"> </ph>Kreditní</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source><ph id="ph1">&amp;lt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0. <ph id="ph1">&amp;lt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Částka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Množství</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvýšení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Snížení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>-Debit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Má Dáti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source><ph id="ph1">&amp;gt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0. <ph id="ph1">&amp;gt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>+Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">+Částka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Částka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Snížení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Increases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvýšení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>-Credit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Kredit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source><ph id="ph1">&amp;lt;</ph>0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0. <ph id="ph1">&amp;lt;</ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Částka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>-Amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">-Částka</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Snížení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>Decreases</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Snížení</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>You can customize the display of Storno in forms, grids, columns, and fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete upravit zobrazení storna pro formuláře, tabulky, sloupce a pole.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>For example, you can turn off sign display or change padding for negative amounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například můžete vypnout zobrazení znaménka nebo změnit odsazení pro záporné částky.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>You can also use the <bpt id="p1">**</bpt>Correction<ept id="p1">**</ept> field with all display settings, if the <bpt id="p2">**</bpt>Correction<ept id="p2">**</ept> field has ‘Yes’, then it is a Storno entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete také použít pole <bpt id="p1">**</bpt>oprava<ept id="p1">**</ept> se všemi nastaveními zobrazení, pokud má pole <bpt id="p2">**</bpt>Oprava<ept id="p2">**</ept> zadanou hodnotu "Ano", po které následuje položka Storno.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Journal Entry Storno amounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částky storna položky deníku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>How documents create Storno</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jak dokumenty vytvářejí storno</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Certain documents create cancellation transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Některé dokumenty vytvářejí transakce zrušení.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující přecenění cizí měny pro hlavní knihu, závazky a dokumenty pohledávek stornují nerealizovaé zisky a ztráty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>For more details, see <bpt id="p1">[</bpt>Foreign currency revaluation for General Ledger<ept id="p1">](../general-ledger/foreign-currency-revaluation-general-ledger.md)</ept> or <bpt id="p2">[</bpt>Accounts payable and Accounts receivable<ept id="p2">](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podrobnější informace získáte v tématu <bpt id="p1">[</bpt>Přecenění cizí měny pro hlavní knihu<ept id="p1">](../general-ledger/foreign-currency-revaluation-general-ledger.md)</ept> nebo <bpt id="p2">[</bpt>Závazky a pohledávky<ept id="p2">](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>After a cancellation transaction is created, new transactions will be created with unrealized gain and loss.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po vytvoření transakce zrušení budou vytvořeny nové transakce s nerealizovanými zisky a ztrátami.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>Cancellation transactions are also created for inventory.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Transakce zrušení jsou vytvořeny také pro zásoby.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>For more information, see<bpt id="p1"> [</bpt>Inventory close<ept id="p1">](../../supply-chain/cost-management/inventory-close.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1"> [</bpt>Uzávěrka zásob<ept id="p1">](../../supply-chain/cost-management/inventory-close.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>There are documents that allow you to cancel the previously posted document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Existují dokumenty, které umožňují zrušení dříve zaúčtovaného dokladu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>For example, the User can create a Credit Note to cancel a previously created Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uživatel může například vytvořit dobropis ke zrušení dříve vytvořené faktury.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Documents use specific parameters to create reverse or Storno transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dokumenty používají specifické parametry pro vytváření zpětných transakcí nebo transakcí storna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>For example, the foreign currency revaluation creates reverse or Storno transactions based on the general ledger correction parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například přecenění cizí měny vytvoří transakce zpětného zápisu nebo storna na základě parametru opravy hlavní knihy.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>The customer credit note creates reverse or Storno transactions based on the accounts receivable credit note correction parameter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dobropis odběratele vytvoří zpětné transakce nebo transakce storna na základě parametru opravy dobropisu závazků.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
