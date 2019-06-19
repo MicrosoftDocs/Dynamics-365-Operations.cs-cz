@@ -1,117 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="income-statement-financial-report.md" target-language="cs-CZ">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>income-statement-financial-report.6a66fd.232f6b6156d845f75abc0c052704e3a59bb33720.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>232f6b6156d845f75abc0c052704e3a59bb33720</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\general-ledger\income-statement-financial-report.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Income statement financial report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finanční sestava výkazu příjmu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This article describes the default report for income statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento článek popisuje výchozí sestavu pro výsledovky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>It also describes the building blocks that are associated with this report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popisuje také stavební bloky, které jsou přidruženy k této sestavě.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Income statement financial report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finanční sestava výkazu příjmu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This article describes the default report for income statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento článek popisuje výchozí sestavu pro výsledovky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>It also describes the building blocks that are associated with this report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popisuje také stavební bloky, které jsou přidruženy k této sestavě.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Default income statement report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výchozí sestava výkazu příjmu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Default report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výchozí sestava</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>What it does</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jak funguje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Income Statement – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výkaz příjmu – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Provides a view of the organization’s profitability for the current period and also for the year to date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Umožňuje zobrazit ziskovost organizace za aktuální období a také od začátku roku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Building blocks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stavební bloky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The income statement financial report uses the following building blocks.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finanční sestava výkazu příjmu používá následující stavební bloky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Default report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výchozí sestava</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Row definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice řádku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Income Statement - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výkaz příjmu – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Summary Income Statement - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Souhrnný výkazu příjmu – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Periodic and YTD - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Periodický a od začátku roku – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Row definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice řádku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice řádku Souhrnný výkazu příjmu – výchozí obsahuje oddíl pro každou část tradičního výkazu příjmu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>The Main Account Category dimension is used to build this row definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimenze kategorie hlavního účtu se používá k vytvoření této definice řádku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Therefore, anyone can generate the report without having to make any modifications.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Z toho vyplývá, že každý může generovat sestavu bez nutnosti provádět změny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Column Definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>The column definitions contain different types of columns to provide different levels of detail and financial data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice sloupců obsahují různé typy sloupců, které poskytují různé úrovně podrobností a finanční údaje.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source><bpt id="p1">**</bpt>Periodic and YTD – Default column types:<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Periodický a od začátku roku – výchozí typy sloupce:<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – The description from the row definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – popis z definice řádku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Financial data for the current period</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – finanční údaje pro aktuální období</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Financial data for the year to date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – finanční údaje od začátku roku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další zdroje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source><bpt id="p1">[</bpt>Financial reporting<ept id="p1">](financial-reporting-getting-started.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Finanční výkaznictví<ept id="p1">](financial-reporting-getting-started.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">[</bpt>View financial reports<ept id="p1">](view-financial-reports.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Zobrazení finančních sestav<ept id="p1">](view-financial-reports.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">[</bpt>Dynamics Financial Reporting Blog<ept id="p1">](https://blogs.msdn.com/b/dynamics_financial_reporting/)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Blog o finančním výkaznictví v Dynamics<ept id="p1">](https://blogs.msdn.com/b/dynamics_financial_reporting/)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Finanční sestava výkazu příjmu
+description: Tento článek popisuje výchozí sestavu pro výsledovky. Popisuje také stavební bloky, které jsou přidruženy k této sestavě.
+author: jcart1106
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: FinancialReports
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 12294
+ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
+ms.search.region: Global
+ms.author: jcart
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 232f6b6156d845f75abc0c052704e3a59bb33720
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595580"
+---
+# <a name="income-statement-financial-report"></a><span data-ttu-id="aed54-104">Finanční sestava výkazu příjmu</span><span class="sxs-lookup"><span data-stu-id="aed54-104">Income statement financial report</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="aed54-105">Tento článek popisuje výchozí sestavu pro výsledovky.</span><span class="sxs-lookup"><span data-stu-id="aed54-105">This article describes the default report for income statements.</span></span> <span data-ttu-id="aed54-106">Popisuje také stavební bloky, které jsou přidruženy k této sestavě.</span><span class="sxs-lookup"><span data-stu-id="aed54-106">It also describes the building blocks that are associated with this report.</span></span> 
+
+<a name="default-income-statement-report"></a><span data-ttu-id="aed54-107">Výchozí sestava výkazu příjmu</span><span class="sxs-lookup"><span data-stu-id="aed54-107">Default income statement report</span></span>
+-------------------------------
+
+| <span data-ttu-id="aed54-108">Výchozí sestava</span><span class="sxs-lookup"><span data-stu-id="aed54-108">Default report</span></span>             | <span data-ttu-id="aed54-109">Jak funguje</span><span class="sxs-lookup"><span data-stu-id="aed54-109">What it does</span></span>                                                                                              |
+|----------------------------|-----------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="aed54-110">Výkaz příjmu – výchozí</span><span class="sxs-lookup"><span data-stu-id="aed54-110">Income Statement – Default</span></span> | <span data-ttu-id="aed54-111">Umožňuje zobrazit ziskovost organizace za aktuální období a také od začátku roku.</span><span class="sxs-lookup"><span data-stu-id="aed54-111">Provides a view of the organization’s profitability for the current period and also for the year to date.</span></span> |
+
+## <a name="building-blocks"></a><span data-ttu-id="aed54-112">Stavební bloky</span><span class="sxs-lookup"><span data-stu-id="aed54-112">Building blocks</span></span>
+<span data-ttu-id="aed54-113">Finanční sestava výkazu příjmu používá následující stavební bloky.</span><span class="sxs-lookup"><span data-stu-id="aed54-113">The income statement financial report uses the following building blocks.</span></span>
+
+| <span data-ttu-id="aed54-114">Výchozí sestava</span><span class="sxs-lookup"><span data-stu-id="aed54-114">Default report</span></span>             | <span data-ttu-id="aed54-115">Definice řádku</span><span class="sxs-lookup"><span data-stu-id="aed54-115">Row definition</span></span>                     | <span data-ttu-id="aed54-116">Definice sloupce</span><span class="sxs-lookup"><span data-stu-id="aed54-116">Column definition</span></span>          |
+|----------------------------|------------------------------------|----------------------------|
+| <span data-ttu-id="aed54-117">Výkaz příjmu – výchozí</span><span class="sxs-lookup"><span data-stu-id="aed54-117">Income Statement - Default</span></span> | <span data-ttu-id="aed54-118">Souhrnný výkazu příjmu – výchozí</span><span class="sxs-lookup"><span data-stu-id="aed54-118">Summary Income Statement - Default</span></span> | <span data-ttu-id="aed54-119">Periodický a od začátku roku – výchozí</span><span class="sxs-lookup"><span data-stu-id="aed54-119">Periodic and YTD - Default</span></span> |
+
+### <a name="row-definition"></a><span data-ttu-id="aed54-120">Definice řádku</span><span class="sxs-lookup"><span data-stu-id="aed54-120">Row definition</span></span>
+
+<span data-ttu-id="aed54-121">Definice řádku Souhrnný výkazu příjmu – výchozí obsahuje oddíl pro každou část tradičního výkazu příjmu.</span><span class="sxs-lookup"><span data-stu-id="aed54-121">The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement.</span></span> <span data-ttu-id="aed54-122">Dimenze kategorie hlavního účtu se používá k vytvoření této definice řádku.</span><span class="sxs-lookup"><span data-stu-id="aed54-122">The Main Account Category dimension is used to build this row definition.</span></span> <span data-ttu-id="aed54-123">Z toho vyplývá, že každý může generovat sestavu bez nutnosti provádět změny.</span><span class="sxs-lookup"><span data-stu-id="aed54-123">Therefore, anyone can generate the report without having to make any modifications.</span></span>
+
+### <a name="column-definition"></a><span data-ttu-id="aed54-124">Definice sloupce</span><span class="sxs-lookup"><span data-stu-id="aed54-124">Column Definition</span></span>
+
+<span data-ttu-id="aed54-125">Definice sloupců obsahují různé typy sloupců, které poskytují různé úrovně podrobností a finanční údaje.</span><span class="sxs-lookup"><span data-stu-id="aed54-125">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
+
+-   <span data-ttu-id="aed54-126">**Periodický a od začátku roku – výchozí typy sloupce:**</span><span class="sxs-lookup"><span data-stu-id="aed54-126">**Periodic and YTD – Default column types:**</span></span>
+    -   <span data-ttu-id="aed54-127">**DESC** – popis z definice řádku</span><span class="sxs-lookup"><span data-stu-id="aed54-127">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="aed54-128">**FD** – finanční údaje pro aktuální období</span><span class="sxs-lookup"><span data-stu-id="aed54-128">**FD** – Financial data for the current period</span></span>
+    -   <span data-ttu-id="aed54-129">**FD** – finanční údaje od začátku roku</span><span class="sxs-lookup"><span data-stu-id="aed54-129">**FD** – Financial data for the year to date</span></span>
+
+
+
+<a name="additional-resources"></a><span data-ttu-id="aed54-130">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="aed54-130">Additional resources</span></span>
+--------
+
+[<span data-ttu-id="aed54-131">Finanční výkaznictví</span><span class="sxs-lookup"><span data-stu-id="aed54-131">Financial reporting</span></span>](financial-reporting-getting-started.md)
+
+[<span data-ttu-id="aed54-132">Zobrazení finančních sestav</span><span class="sxs-lookup"><span data-stu-id="aed54-132">View financial reports</span></span>](view-financial-reports.md)
+
+[<span data-ttu-id="aed54-133">Blog o finančním výkaznictví v Dynamics</span><span class="sxs-lookup"><span data-stu-id="aed54-133">Dynamics Financial Reporting Blog</span></span>](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
+

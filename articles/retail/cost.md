@@ -1,345 +1,174 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="cost.md" target-language="cs-CZ">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>cost.4e88df.80e7a033467c3d94d55f06daa05f99bd27e19a29.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>80e7a033467c3d94d55f06daa05f99bd27e19a29</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>e2fb0846fcc6298050a0ec82c302e5eb5254e0b5</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/27/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\cost.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Cost configuration for distributed order management (DOM)</source><target logoport:matchpercent="53" state="translated" state-qualifier="fuzzy-match">Konfigurace nákladů pro distribuovanou správu objednávek</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes cost configuration for the distributed order management (DOM) functionality in Microsoft Dynamics 365 for Retail.</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Toto téma popisuje konfiguraci nákladů pro funkcionalitu distribuované správy objednávek v aplikaci Microsoft Dynamics 365 for Retail.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Cost configuration for distributed order management (DOM)</source>
-        <target logoport:matchpercent="53" state="translated" state-qualifier="leveraged-inherited">Konfigurace nákladů pro distribuovanou správu objednávek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Organizations consider multiple cost components to determine the optimal location to fulfill an order from.</source><target logoport:matchpercent="0" state="translated">Organizace zvažují více komponent nákladů, aby určily optimální umístění, odkud se bude plnit objednávka.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Some of these cost components are shipping cost, handling cost, and packaging cost.</source><target logoport:matchpercent="0" state="translated">Některými z těchto komponent nákladů jsou náklady na přepravu, náklady na zpracování a náklady balení.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>A combination of these costs is calculated to determine the fulfillment location.</source><target logoport:matchpercent="0" state="translated">Pro určení místa plnění se vypočítává kombinace těchto nákladů.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>When the first iteration of distributed order management (DOM) in Microsoft Dynamics 365 for Retail optimized the assignment of orders to fulfillment locations, it factored in distance only.</source><target logoport:matchpercent="0" state="translated">Když první iterace správy distribuovaných objednávek v aplikaci Microsoft Dynamics 365 for Retail optimalizovala přiřazení objednávek do míst plnění, byla tato skutečnost zohledněna pouze ve vzdálenosti.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Although distance can be correlated with cost, it isn't the same as cost.</source><target logoport:matchpercent="0" state="translated">Ačkoli vzdálenost může vzájemně souviset s náklady, není totéž jako náklady.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>For example, an overnight shipping method costs more than three-day shipping or seven-day shipping over the same distance.</source><target logoport:matchpercent="0" state="translated">Například náklady metody doručení na druhý den stojí více, než doručení na tutéž vzdálenost do tří nebo do sedmi dnů.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The cost configuration feature lets retailers define and configure additional cost components that will be calculated and factored in to determine the optimal location to fulfill order lines from.</source><target logoport:matchpercent="0" state="translated">Funkce konfigurace nákladů umožňuje maloobchodníkům definovat a konfigurovat další komponenty nákladů, které budou vypočítány a zohledněny při určování optimálního umístění, odkud se budou plnit řádky objednávky.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>When cost components are configured, the DOM solver uses only those cost definitions to determine the optimal location for order fulfillment.</source><target logoport:matchpercent="52" state="translated" state-qualifier="fuzzy-match">Když jsou komponenty nákladů nakonfigurovány, řešitel DOM používá k určení optimálního umístění pro plnění objednávky pouze tyto definice nákladů.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>It doesn't consider the distance component as a cost.</source><target logoport:matchpercent="0" state="translated">Nepovažuje komponentu vzdálenosti jako náklady.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>However, if no cost components are configured, the DOM solver does use the distance component as a cost to determine the optimal location for order fulfillment.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">Když však nejsou nakonfigurovány žádné komponenty nákladů, řešitel DOM používá komponentu vzdálenosti jako náklad pro určení optimálního umístění pro plnění objednávky.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Set up cost components</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Nastavení komponent nákladů</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Two major cost component types can be defined in the system: <bpt id="p1">**</bpt>Shipping<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Other<ept id="p2">**</ept>.</source><target logoport:matchpercent="0" state="translated">V systému lze definovat dva hlavní typy komponent nákladů: <bpt id="p1">**</bpt>Expedice<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Jiné<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Both cost component types support multiple calculation bases, as shown in the following table.</source><target logoport:matchpercent="48" state="translated" state-qualifier="fuzzy-match">Oba typy komponent nákladů podporují více základů výpočtu, jak je znázorněno v následující tabulce.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Cost component type</source><target logoport:matchpercent="76" state="translated" state-qualifier="fuzzy-match">Typ komponenty nákladu</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Calculation basis</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Základ výpočtu</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Shipping</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Expedice</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Simple</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Jednoduchý</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Tiered</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Vrstvený</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Other</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Jiný</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Sales order</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Prodejní objednávka</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Sales line</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Řádek prodeje</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Location</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Umístění</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Shipping cost component type</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Typ komponenty nákladu Expedice</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>This section explains how to set up each combination of the <bpt id="p1">**</bpt>Shipping<ept id="p1">**</ept> cost component type and a calculation basis for shipping costs.</source><target logoport:matchpercent="0" state="translated">Tato část vysvětluje, jak nastavit každou kombinaci typu komponenty nákladu <bpt id="p1">**</bpt>Expedice<ept id="p1">**</ept> a základ výpočtu pro přepravní náklady.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>It also explains how the DOM solver uses each combination.</source><target logoport:matchpercent="30" state="translated" state-qualifier="fuzzy-match">Také vysvětluje, jak jsou řešitel DOM používá každou kombinaci.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Cost component type = Shipping and Calculation basis = Simple</source><target logoport:matchpercent="0" state="translated">Typ komponenty nákladů = Expedice a základ výpočtu = Jednoduchý</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>If a combination of the <bpt id="p1">**</bpt>Shipping<ept id="p1">**</ept> cost component type and the <bpt id="p2">**</bpt>Simple<ept id="p2">**</ept> calculation basis is used, the shipping cost for a mode of delivery is based on either a flat cost or distance.</source><target logoport:matchpercent="0" state="translated">Pokud se použije kombinace typu komponenty nákladů <bpt id="p1">**</bpt>Expedice<ept id="p1">**</ept> a základ výpočtu <bpt id="p2">**</bpt>Jednoduchý<ept id="p2">**</ept>, přepravní náklady pro režim doručení jsou založeny buď na paušálních nákladech nebo na vzdálenosti.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>You must set up the following fields for this combination:</source><target logoport:matchpercent="62" state="translated" state-qualifier="fuzzy-match">Pro tuto kombinaci musíte nastavit následující pole:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">**</bpt>Cost factor<ept id="p1">**</ept> – Enter a unique identifier for the cost factor.</source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Koeficient nákladů<ept id="p1">**</ept> - Zadejte jedinečný identifikátor pro koeficient nákladů.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept> – Enter the name and description of the cost factor.</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Popis<ept id="p1">**</ept> – Zadejte název a popis koeficientu nákladů.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source><bpt id="p1">**</bpt>Start date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>End date<ept id="p2">**</ept> – You can use these fields to limit the cost factor for a specific date range.</source><target logoport:matchpercent="52" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Počáteční datum<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Koncové datum<ept id="p2">**</ept> – Tato pole můžete použít k omezení koeficientu nákladů na konkrétní časový rozsah.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>If you leave these fields blank, the cost factor is valid for an indefinite period.</source><target logoport:matchpercent="54" state="translated" state-qualifier="fuzzy-match">Pokud tato pole ponecháte nevyplněná, koeficient nákladů bude platný pro neomezené období.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">**</bpt>Active<ept id="p1">**</ept> – Indicate whether the cost factor is active.</source><target logoport:matchpercent="59" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Aktivní<ept id="p1">**</ept> - Označuje, zda je koeficient nákladů aktivní.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The DOM considers only active cost factors that are associated with the fulfillment profile.</source><target logoport:matchpercent="52" state="translated" state-qualifier="fuzzy-match">Distribuovaná správa objednávek zvažuje pouze aktivní faktory nákladů, které jsou přidružené k profilu plnění.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source><bpt id="p1">**</bpt>Company<ept id="p1">**</ept> – Specify the legal entity that the cost factor is configured for.</source><target logoport:matchpercent="32" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Společnost<ept id="p1">**</ept> - Určuje právnickou osobu, pro kterou je koeficient nákladů nakonfigurován.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>All lines of the calculation criteria must be for the same legal entity.</source><target logoport:matchpercent="32" state="translated" state-qualifier="fuzzy-match">Všechny řádky kritérií výpočtu musí být pro stejnou právnickou osobu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source><bpt id="p1">**</bpt>Modes of delivery<ept id="p1">**</ept> – Specify the modes of delivery that the cost is configured for.</source><target logoport:matchpercent="59" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Způsoby dodání<ept id="p1">**</ept> - Určují způsoby dodání, pro které jsou nakonfigurovány náklady.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source><bpt id="p1">**</bpt>Calculation type<ept id="p1">**</ept> – Specify how the cost should be calculated for a specific mode of delivery.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>Typ výpočtu<ept id="p1">**</ept> – Určuje, jak mají být vypočítány náklady pro konkrétní způsob dodání.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Two calculation types are supported:</source><target logoport:matchpercent="62" state="translated" state-qualifier="fuzzy-match">Jsou podporovány dva typy výpočtu:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">**</bpt>Fixed<ept id="p1">**</ept> – A flat cost is used for the mode of delivery.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>Pevný<ept id="p1">**</ept> – Pro způsob dodání se používá jednotný paušální náklad.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>If you select this calculation type, the <bpt id="p1">**</bpt>Cost<ept id="p1">**</ept> field defines the flat cost.</source><target logoport:matchpercent="33" state="translated" state-qualifier="fuzzy-match">Pokud vyberete tento typ výpočtu, pole <bpt id="p1">**</bpt>Náklady<ept id="p1">**</ept> definuje jednotný paušální náklad.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source><bpt id="p1">**</bpt>Per-distance unit<ept id="p1">**</ept> – The cost for the mode of delivery is calculated as the cost value that is specified in the <bpt id="p2">**</bpt>Cost<ept id="p2">**</ept> field times the distance between the delivery address and the locations.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>Podle jednotky vzdálenosti<ept id="p1">**</ept> – Náklad pro způsob dodání se vypočítá jako hodnota nákladů specifikovaná v poli <bpt id="p2">**</bpt>Náklady<ept id="p2">**</ept> krát vzdálenost mezi adresou doručení a místy.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source><bpt id="p1">**</bpt>Cost<ept id="p1">**</ept> – Specify the cost value that is used in conjunction with the <bpt id="p2">**</bpt>Calculation type<ept id="p2">**</ept> field to compute the cost for a mode of delivery.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>Náklady<ept id="p1">**</ept> – Určuje hodnotu nákladů používanou ve spojení s polem <bpt id="p2">**</bpt>Typ výpočtu<ept id="p2">**</ept> pro výpočet nákladů pro způsob dodání.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Cost component type = Shipping and Calculation basis = Tiered</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Typ komponenty nákladů = Expedice a základ výpočtu = Vrstvený</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>If a combination of the <bpt id="p1">**</bpt>Shipping<ept id="p1">**</ept> cost component type and the <bpt id="p2">**</bpt>Tiered<ept id="p2">**</ept> calculation basis is used, the shipping cost for a mode of delivery is based on either a flat cost or distance.</source><target logoport:matchpercent="95" state="translated" state-qualifier="fuzzy-match">Pokud se použije kombinace typu komponenty nákladů <bpt id="p1">**</bpt>Expedice<ept id="p1">**</ept> a základ výpočtu <bpt id="p2">**</bpt>Vrstvený<ept id="p2">**</ept>, přepravní náklady pro režim doručení jsou založeny buď na paušálních nákladech nebo na vzdálenosti.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>However, in this combination, the distance is based on a tiered range of distances.</source><target logoport:matchpercent="0" state="translated">V této kombinaci je však vzdálenost založena na vrstveném rozsahu vzdáleností.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>You must set up the following fields for this combination:</source>
-        <target logoport:matchpercent="62" state="translated" state-qualifier="leveraged-inherited">Pro tuto kombinaci musíte nastavit následující pole:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source><bpt id="p1">**</bpt>Cost factor<ept id="p1">**</ept> – Enter a unique identifier for the cost factor.</source>
-        <target logoport:matchpercent="68" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Koeficient nákladů<ept id="p1">**</ept> - Zadejte jedinečný identifikátor pro koeficient nákladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept> – Enter the name and description of the cost factor.</source>
-        <target logoport:matchpercent="78" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Popis<ept id="p1">**</ept> – Zadejte název a popis koeficientu nákladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><bpt id="p1">**</bpt>Default cost<ept id="p1">**</ept> – Specify the cost that should be used for a mode of delivery if the distance between the delivery address and the location doesn't fall into any of the tiered distances for the mode of delivery.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>Výchozí náklady<ept id="p1">**</ept> – Určují náklady, které by měly být použity pro způsob dodání, pokud vzdálenost mezi adresou doručení a místem nespadá do žádné z vrstvených vzdáleností pro způsob dodání.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">**</bpt>Start date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>End date<ept id="p2">**</ept> – You can use these fields to limit the cost factor for a specific date range.</source>
-        <target logoport:matchpercent="52" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Počáteční datum<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Koncové datum<ept id="p2">**</ept> – Tato pole můžete použít k omezení koeficientu nákladů na konkrétní časový rozsah.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>If you leave these fields blank, the cost factor is valid for an indefinite period.</source>
-        <target logoport:matchpercent="54" state="translated" state-qualifier="leveraged-inherited">Pokud tato pole ponecháte nevyplněná, koeficient nákladů bude platný pro neomezené období.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source><bpt id="p1">**</bpt>Active<ept id="p1">**</ept> – Indicate whether the cost factor is active.</source>
-        <target logoport:matchpercent="59" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Aktivní<ept id="p1">**</ept> - Označuje, zda je koeficient nákladů aktivní.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>The DOM considers only active cost factors that are associated with the fulfillment profile.</source>
-        <target logoport:matchpercent="52" state="translated" state-qualifier="leveraged-inherited">Distribuovaná správa objednávek zvažuje pouze aktivní faktory nákladů, které jsou přidružené k profilu plnění.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source><bpt id="p1">**</bpt>Company<ept id="p1">**</ept> – Specify the legal entity that the cost factor is configured for.</source>
-        <target logoport:matchpercent="32" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Společnost<ept id="p1">**</ept> - Určuje právnickou osobu, pro kterou je koeficient nákladů nakonfigurován.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>All lines of the calculation criteria must be for the same legal entity.</source>
-        <target logoport:matchpercent="32" state="translated" state-qualifier="leveraged-inherited">Všechny řádky kritérií výpočtu musí být pro stejnou právnickou osobu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source><bpt id="p1">**</bpt>Modes of delivery<ept id="p1">**</ept> – Specify the modes of delivery that the cost is configured for.</source>
-        <target logoport:matchpercent="59" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Způsoby dodání<ept id="p1">**</ept> - Určují způsoby dodání, pro které jsou nakonfigurovány náklady.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source><bpt id="p1">**</bpt>Distance type<ept id="p1">**</ept> – Specify whether the tiered distance definition is an aerial distance or a road distance.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>Typ vzdálenosti<ept id="p1">**</ept> – Určuje, zda definice vrstvené vzdálenosti je vzdušná vzdálenost nebo vzdálenost po silnici.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source><bpt id="p1">**</bpt>Distance units<ept id="p1">**</ept> – Specify the unit that the tiered distance is measured in.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>Jednotky vzdálenosti<ept id="p1">**</ept> – Určuje jednotku, ve které se měří vrstvená vzdálenost.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source><bpt id="p1">**</bpt>Distance from<ept id="p1">**</ept> – Specify the start range for the tiered distance.</source><target logoport:matchpercent="56" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Vzdálenost od<ept id="p1">**</ept> – Určuje počátek rozsahu pro vrstvenou vzdálenost.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source><bpt id="p1">**</bpt>Distance to<ept id="p1">**</ept> – Specify the end range for the tiered distance.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Vzdálenost do<ept id="p1">**</ept> – Určuje konec rozsahu pro vrstvenou vzdálenost.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source><bpt id="p1">**</bpt>Calculation type<ept id="p1">**</ept> – Specify how the cost should be calculated for a specific mode of delivery and tiered distance.</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Typ výpočtu<ept id="p1">**</ept> – Určuje, jak mají být vypočítány náklady pro konkrétní způsob dodání a vrstvenou vzdálenost.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Two calculation types are supported:</source>
-        <target logoport:matchpercent="62" state="translated" state-qualifier="leveraged-inherited">Jsou podporovány dva typy výpočtu:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source><bpt id="p1">**</bpt>Fixed<ept id="p1">**</ept> – A flat cost is used for the mode of delivery.</source>
-        <target logoport:matchpercent="0" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Pevný<ept id="p1">**</ept> – Pro způsob dodání se používá jednotný paušální náklad.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>If you select this calculation type, the <bpt id="p1">**</bpt>Cost<ept id="p1">**</ept> field defines the flat cost.</source>
-        <target logoport:matchpercent="33" state="translated" state-qualifier="leveraged-inherited">Pokud vyberete tento typ výpočtu, pole <bpt id="p1">**</bpt>Náklady<ept id="p1">**</ept> definuje jednotný paušální náklad.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source><bpt id="p1">**</bpt>Per distance unit<ept id="p1">**</ept> – The cost for the mode of delivery and tiered distance is calculated as the cost value that is specified in the <bpt id="p2">**</bpt>Cost<ept id="p2">**</ept> field times the distance between the delivery address and the locations.</source><target logoport:matchpercent="90" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Podle jednotky vzdálenosti<ept id="p1">**</ept> – Náklad pro způsob dodání a vrstvenou vzdálenost se vypočítá jako hodnota nákladů specifikovaná v poli <bpt id="p2">**</bpt>Náklady<ept id="p2">**</ept> krát vzdálenost mezi adresou doručení a místy.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">**</bpt>Cost<ept id="p1">**</ept> – Specify the cost value that is used in conjunction with the <bpt id="p2">**</bpt>Calculation type<ept id="p2">**</ept> field to compute the cost for a mode of delivery.</source>
-        <target logoport:matchpercent="0" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Náklady<ept id="p1">**</ept> – Určuje hodnotu nákladů používanou ve spojení s polem <bpt id="p2">**</bpt>Typ výpočtu<ept id="p2">**</ept> pro výpočet nákladů pro způsob dodání.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>When you define tiered distances, the system validates that there are no missing or overlapping distances.</source><target logoport:matchpercent="0" state="translated">Když definujete vrstvené vzdálenosti, systém ověří, zda se vzdálenosti nepřekrývají nebo nechybí.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>The distance type that is used for a mode of delivery must be the same across all the tiered distances.</source><target logoport:matchpercent="55" state="translated" state-qualifier="fuzzy-match">Typ vzdálenosti používaný pro způsob dodání musí být shodný napříč všemi vrstvenými vzdálenostmi.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Other cost component type</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match">Jiný typ komponenty nákladu</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>This section explains how to set up each combination of the <bpt id="p1">**</bpt>Other<ept id="p1">**</ept> cost component type and an other cost type for non-shipping costs.</source><target logoport:matchpercent="80" state="translated" state-qualifier="fuzzy-match">Tato část vysvětluje, jak nastavit každou kombinaci typu komponenty nákladu <bpt id="p1">**</bpt>Jiný<ept id="p1">**</ept> a jiný typ nákladů pro jiné než přepravní náklady.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>It also explains how the DOM solver uses each combination.</source>
-        <target logoport:matchpercent="30" state="translated" state-qualifier="leveraged-inherited">Také vysvětluje, jak jsou řešitel DOM používá každou kombinaci.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Cost component type = Other and Other cost type = Sales order</source><target logoport:matchpercent="0" state="translated">Typ komponenty nákladů = Jiný a jiný typ nákladů = Prodejní objednávka</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>A combination of the <bpt id="p1">**</bpt>Other<ept id="p1">**</ept> cost component type and the <bpt id="p2">**</bpt>Sales order<ept id="p2">**</ept> other cost type is used to define non-shipping costs at the sales order level.</source><target logoport:matchpercent="0" state="translated">Kombinace typu nákladů <bpt id="p1">**</bpt>Jiný<ept id="p1">**</ept> a jiného typu nákladů <bpt id="p2">**</bpt>Prodejní objednávka<ept id="p2">**</ept> se používá pro definování nepřepravních nákladů na úrovni prodejní objednávky.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>You must set up the following fields for this combination:</source>
-        <target logoport:matchpercent="62" state="translated" state-qualifier="leveraged-inherited">Pro tuto kombinaci musíte nastavit následující pole:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source><bpt id="p1">**</bpt>Cost factor<ept id="p1">**</ept> – Enter a unique identifier for the cost factor.</source>
-        <target logoport:matchpercent="68" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Koeficient nákladů<ept id="p1">**</ept> - Zadejte jedinečný identifikátor pro koeficient nákladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept> – Enter the name and description of the cost factor.</source>
-        <target logoport:matchpercent="78" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Popis<ept id="p1">**</ept> – Zadejte název a popis koeficientu nákladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source><bpt id="p1">**</bpt>Start date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>End date<ept id="p2">**</ept> – You can use these fields to limit the cost factor for a specific date range.</source>
-        <target logoport:matchpercent="52" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Počáteční datum<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Koncové datum<ept id="p2">**</ept> – Tato pole můžete použít k omezení koeficientu nákladů na konkrétní časový rozsah.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>If you leave these fields blank, the cost factor is valid for an indefinite period.</source>
-        <target logoport:matchpercent="54" state="translated" state-qualifier="leveraged-inherited">Pokud tato pole ponecháte nevyplněná, koeficient nákladů bude platný pro neomezené období.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source><bpt id="p1">**</bpt>Active<ept id="p1">**</ept> – Indicate whether the cost factor is active.</source>
-        <target logoport:matchpercent="59" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Aktivní<ept id="p1">**</ept> - Označuje, zda je koeficient nákladů aktivní.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>The DOM considers only active cost factors that are associated with the fulfillment profile.</source>
-        <target logoport:matchpercent="52" state="translated" state-qualifier="leveraged-inherited">Distribuovaná správa objednávek zvažuje pouze aktivní faktory nákladů, které jsou přidružené k profilu plnění.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source><bpt id="p1">**</bpt>Cost<ept id="p1">**</ept> – Specify the cost value for a non-shipping cost at the sales order level.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>Náklady<ept id="p1">**</ept> – Určuje hodnotu nákladů pro nepřepravní náklady na úrovni prodejní objednávky.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Cost component type = Other and Other cost type = Sales line</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">Typ komponenty nákladů = Jiný a jiný typ nákladů = Prodejní řádek</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>A combination of the <bpt id="p1">**</bpt>Other<ept id="p1">**</ept> cost component type and the <bpt id="p2">**</bpt>Sales line<ept id="p2">**</ept> other cost type is used to define non-shipping costs at the sales order line level.</source><target logoport:matchpercent="93" state="translated" state-qualifier="fuzzy-match">Kombinace typu nákladů <bpt id="p1">**</bpt>Jiný<ept id="p1">**</ept> a jiného typu nákladů <bpt id="p2">**</bpt>Prodejní řádek<ept id="p2">**</ept> se používá pro definování nepřepravních nákladů na úrovni řádku prodejní objednávky.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>You must set up the following fields for this combination:</source>
-        <target logoport:matchpercent="62" state="translated" state-qualifier="leveraged-inherited">Pro tuto kombinaci musíte nastavit následující pole:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source><bpt id="p1">**</bpt>Cost factor<ept id="p1">**</ept> – Enter a unique identifier for the cost factor.</source>
-        <target logoport:matchpercent="68" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Koeficient nákladů<ept id="p1">**</ept> - Zadejte jedinečný identifikátor pro koeficient nákladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept> – Enter the name and description of the cost factor.</source>
-        <target logoport:matchpercent="78" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Popis<ept id="p1">**</ept> – Zadejte název a popis koeficientu nákladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source><bpt id="p1">**</bpt>Start date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>End date<ept id="p2">**</ept> – You can use these fields to limit the cost factor for a specific date range.</source>
-        <target logoport:matchpercent="52" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Počáteční datum<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Koncové datum<ept id="p2">**</ept> – Tato pole můžete použít k omezení koeficientu nákladů na konkrétní časový rozsah.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>If you leave these fields blank, the cost factor is valid for an indefinite period.</source>
-        <target logoport:matchpercent="54" state="translated" state-qualifier="leveraged-inherited">Pokud tato pole ponecháte nevyplněná, koeficient nákladů bude platný pro neomezené období.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source><bpt id="p1">**</bpt>Active<ept id="p1">**</ept> – Indicate whether the cost factor is active.</source>
-        <target logoport:matchpercent="59" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Aktivní<ept id="p1">**</ept> - Označuje, zda je koeficient nákladů aktivní.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>The DOM considers only active cost factors that are associated with the fulfillment profile.</source>
-        <target logoport:matchpercent="52" state="translated" state-qualifier="leveraged-inherited">Distribuovaná správa objednávek zvažuje pouze aktivní faktory nákladů, které jsou přidružené k profilu plnění.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source><bpt id="p1">**</bpt>Cost<ept id="p1">**</ept> – Specify the cost value for a non-shipping cost at the sales order line level.</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Náklady<ept id="p1">**</ept> – Určuje hodnotu nákladů pro nepřepravní náklady na úrovni řádku prodejní objednávky.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Cost component type = Other and Other cost type = Location</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">Typ komponenty nákladů = Jiný a jiný typ nákladů = Místo</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>A combination of the <bpt id="p1">**</bpt>Other<ept id="p1">**</ept> cost component type and the <bpt id="p2">**</bpt>Location<ept id="p2">**</ept> other cost type is used to define non-shipping costs for a group of locations or an individual location.</source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match">Kombinace typu nákladů <bpt id="p1">**</bpt>Jiný<ept id="p1">**</ept> a jiného typu nákladů <bpt id="p2">**</bpt>Místo<ept id="p2">**</ept> se používá pro definování nepřepravních nákladů pro skupinu míst nebo jednotlivé místo.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>You must set up the following fields for this combination:</source>
-        <target logoport:matchpercent="62" state="translated" state-qualifier="leveraged-inherited">Pro tuto kombinaci musíte nastavit následující pole:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source><bpt id="p1">**</bpt>Cost factor<ept id="p1">**</ept> – Enter a unique identifier for the cost factor.</source>
-        <target logoport:matchpercent="68" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Koeficient nákladů<ept id="p1">**</ept> - Zadejte jedinečný identifikátor pro koeficient nákladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept> – Enter the name and description of the cost factor.</source>
-        <target logoport:matchpercent="78" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Popis<ept id="p1">**</ept> – Zadejte název a popis koeficientu nákladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source><bpt id="p1">**</bpt>Start date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>End date<ept id="p2">**</ept> – You can use these fields to limit the cost factor for a specific date range.</source>
-        <target logoport:matchpercent="52" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Počáteční datum<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Koncové datum<ept id="p2">**</ept> – Tato pole můžete použít k omezení koeficientu nákladů na konkrétní časový rozsah.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>If you leave these fields blank, the cost factor is valid for an indefinite period.</source>
-        <target logoport:matchpercent="54" state="translated" state-qualifier="leveraged-inherited">Pokud tato pole ponecháte nevyplněná, koeficient nákladů bude platný pro neomezené období.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source><bpt id="p1">**</bpt>Active<ept id="p1">**</ept> – Indicate whether the cost factor is active.</source>
-        <target logoport:matchpercent="59" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Aktivní<ept id="p1">**</ept> - Označuje, zda je koeficient nákladů aktivní.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>The DOM considers only active cost factors that are associated with the fulfillment profile.</source>
-        <target logoport:matchpercent="52" state="translated" state-qualifier="leveraged-inherited">Distribuovaná správa objednávek zvažuje pouze aktivní faktory nákladů, které jsou přidružené k profilu plnění.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source><bpt id="p1">**</bpt>Fulfillment group<ept id="p1">**</ept> – Specify the group of locations that the non-shipping cost is defined for.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">**</bpt>Skupina plnění<ept id="p1">**</ept> – Určuje skupinu míst, pro která jsou definovány nepřepravní náklady.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source><bpt id="p1">**</bpt>Fulfillment location<ept id="p1">**</ept> – Specify the location that the non-shipping cost is defined for.</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Místo plnění<ept id="p1">**</ept> – Určuje místo, pro které jsou definovány nepřepravní náklady.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>You can't specify a fulfillment group and a fulfillment location on the same line for location-based calculation criteria.</source><target logoport:matchpercent="0" state="translated">Pro kritéria výpočtu na základě místa nelze určit skupinu plnění a místo plnění na stejném řádku.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source><bpt id="p1">**</bpt>Cost<ept id="p1">**</ept> – Specify the cost value for a non-shipping cost at the fulfillment group level or fulfillment location level.</source><target logoport:matchpercent="70" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Náklady<ept id="p1">**</ept> – Určuje hodnotu nákladů pro nepřepravní náklady na úrovni skupiny plnění nebo na úrovni místa plnění.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>For DOM to consider these costs when it's run, you must add the cost factor to the relevant fulfillment profile.</source><target logoport:matchpercent="0" state="translated">Aby distribuovaná správa objednávek zvažovala při svém spuštění tyto náklady, musíte přidat koeficient nákladů do příslušného profilu plnění.</target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Konfigurace nákladů pro distribuovanou správu objednávek
+description: Toto téma popisuje konfiguraci nákladů pro funkcionalitu distribuované správy objednávek v aplikaci Microsoft Dynamics 365 for Retail.
+author: josaw1
+manager: AnnBe
+ms.date: 12/05/2018
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2018-12-15
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 80e7a033467c3d94d55f06daa05f99bd27e19a29
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606772"
+---
+# <a name="cost-configuration-for-distributed-order-management-dom"></a><span data-ttu-id="10c63-103">Konfigurace nákladů pro distribuovanou správu objednávek</span><span class="sxs-lookup"><span data-stu-id="10c63-103">Cost configuration for distributed order management (DOM)</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="10c63-104">Organizace zvažují více komponent nákladů, aby určily optimální umístění, odkud se bude plnit objednávka.</span><span class="sxs-lookup"><span data-stu-id="10c63-104">Organizations consider multiple cost components to determine the optimal location to fulfill an order from.</span></span> <span data-ttu-id="10c63-105">Některými z těchto komponent nákladů jsou náklady na přepravu, náklady na zpracování a náklady balení.</span><span class="sxs-lookup"><span data-stu-id="10c63-105">Some of these cost components are shipping cost, handling cost, and packaging cost.</span></span> <span data-ttu-id="10c63-106">Pro určení místa plnění se vypočítává kombinace těchto nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-106">A combination of these costs is calculated to determine the fulfillment location.</span></span>
+
+<span data-ttu-id="10c63-107">Když první iterace správy distribuovaných objednávek v aplikaci Microsoft Dynamics 365 for Retail optimalizovala přiřazení objednávek do míst plnění, byla tato skutečnost zohledněna pouze ve vzdálenosti.</span><span class="sxs-lookup"><span data-stu-id="10c63-107">When the first iteration of distributed order management (DOM) in Microsoft Dynamics 365 for Retail optimized the assignment of orders to fulfillment locations, it factored in distance only.</span></span> <span data-ttu-id="10c63-108">Ačkoli vzdálenost může vzájemně souviset s náklady, není totéž jako náklady.</span><span class="sxs-lookup"><span data-stu-id="10c63-108">Although distance can be correlated with cost, it isn't the same as cost.</span></span> <span data-ttu-id="10c63-109">Například náklady metody doručení na druhý den stojí více, než doručení na tutéž vzdálenost do tří nebo do sedmi dnů.</span><span class="sxs-lookup"><span data-stu-id="10c63-109">For example, an overnight shipping method costs more than three-day shipping or seven-day shipping over the same distance.</span></span>
+
+<span data-ttu-id="10c63-110">Funkce konfigurace nákladů umožňuje maloobchodníkům definovat a konfigurovat další komponenty nákladů, které budou vypočítány a zohledněny při určování optimálního umístění, odkud se budou plnit řádky objednávky.</span><span class="sxs-lookup"><span data-stu-id="10c63-110">The cost configuration feature lets retailers define and configure additional cost components that will be calculated and factored in to determine the optimal location to fulfill order lines from.</span></span>
+
+<span data-ttu-id="10c63-111">Když jsou komponenty nákladů nakonfigurovány, řešitel DOM používá k určení optimálního umístění pro plnění objednávky pouze tyto definice nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-111">When cost components are configured, the DOM solver uses only those cost definitions to determine the optimal location for order fulfillment.</span></span> <span data-ttu-id="10c63-112">Nepovažuje komponentu vzdálenosti jako náklady.</span><span class="sxs-lookup"><span data-stu-id="10c63-112">It doesn't consider the distance component as a cost.</span></span> <span data-ttu-id="10c63-113">Když však nejsou nakonfigurovány žádné komponenty nákladů, řešitel DOM používá komponentu vzdálenosti jako náklad pro určení optimálního umístění pro plnění objednávky.</span><span class="sxs-lookup"><span data-stu-id="10c63-113">However, if no cost components are configured, the DOM solver does use the distance component as a cost to determine the optimal location for order fulfillment.</span></span>
+
+## <a name="set-up-cost-components"></a><span data-ttu-id="10c63-114">Nastavení komponent nákladů</span><span class="sxs-lookup"><span data-stu-id="10c63-114">Set up cost components</span></span>
+
+<span data-ttu-id="10c63-115">V systému lze definovat dva hlavní typy komponent nákladů: **Expedice** a **Jiné**.</span><span class="sxs-lookup"><span data-stu-id="10c63-115">Two major cost component types can be defined in the system: **Shipping** and **Other**.</span></span>
+
+<span data-ttu-id="10c63-116">Oba typy komponent nákladů podporují více základů výpočtu, jak je znázorněno v následující tabulce.</span><span class="sxs-lookup"><span data-stu-id="10c63-116">Both cost component types support multiple calculation bases, as shown in the following table.</span></span>
+
+<table>
+<thead>
+<tr>
+<th><span data-ttu-id="10c63-117">Typ komponenty nákladu</span><span class="sxs-lookup"><span data-stu-id="10c63-117">Cost component type</span></span></th>
+<th><span data-ttu-id="10c63-118">Základ výpočtu</span><span class="sxs-lookup"><span data-stu-id="10c63-118">Calculation basis</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span data-ttu-id="10c63-119">Expedice</span><span class="sxs-lookup"><span data-stu-id="10c63-119">Shipping</span></span></td>
+<td>
+<ul>
+<li><span data-ttu-id="10c63-120">Jednoduchý</span><span class="sxs-lookup"><span data-stu-id="10c63-120">Simple</span></span></li>
+<li><span data-ttu-id="10c63-121">Vrstvený</span><span class="sxs-lookup"><span data-stu-id="10c63-121">Tiered</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="10c63-122">Jiný</span><span class="sxs-lookup"><span data-stu-id="10c63-122">Other</span></span></td>
+<td>
+<ul>
+<li><span data-ttu-id="10c63-123">Prodejní objednávka</span><span class="sxs-lookup"><span data-stu-id="10c63-123">Sales order</span></span></li>
+<li><span data-ttu-id="10c63-124">Řádek prodeje</span><span class="sxs-lookup"><span data-stu-id="10c63-124">Sales line</span></span></li>
+<li><span data-ttu-id="10c63-125">Umístění</span><span class="sxs-lookup"><span data-stu-id="10c63-125">Location</span></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+### <a name="shipping-cost-component-type"></a><span data-ttu-id="10c63-126">Typ komponenty nákladu Expedice</span><span class="sxs-lookup"><span data-stu-id="10c63-126">Shipping cost component type</span></span>
+
+<span data-ttu-id="10c63-127">Tato část vysvětluje, jak nastavit každou kombinaci typu komponenty nákladu **Expedice** a základ výpočtu pro přepravní náklady.</span><span class="sxs-lookup"><span data-stu-id="10c63-127">This section explains how to set up each combination of the **Shipping** cost component type and a calculation basis for shipping costs.</span></span> <span data-ttu-id="10c63-128">Také vysvětluje, jak jsou řešitel DOM používá každou kombinaci.</span><span class="sxs-lookup"><span data-stu-id="10c63-128">It also explains how the DOM solver uses each combination.</span></span>
+
+#### <a name="cost-component-type--shipping-and-calculation-basis--simple"></a><span data-ttu-id="10c63-129">Typ komponenty nákladů = Expedice a základ výpočtu = Jednoduchý</span><span class="sxs-lookup"><span data-stu-id="10c63-129">Cost component type = Shipping and Calculation basis = Simple</span></span>
+
+<span data-ttu-id="10c63-130">Pokud se použije kombinace typu komponenty nákladů **Expedice** a základ výpočtu **Jednoduchý**, přepravní náklady pro režim doručení jsou založeny buď na paušálních nákladech nebo na vzdálenosti.</span><span class="sxs-lookup"><span data-stu-id="10c63-130">If a combination of the **Shipping** cost component type and the **Simple** calculation basis is used, the shipping cost for a mode of delivery is based on either a flat cost or distance.</span></span>
+
+<span data-ttu-id="10c63-131">Pro tuto kombinaci musíte nastavit následující pole:</span><span class="sxs-lookup"><span data-stu-id="10c63-131">You must set up the following fields for this combination:</span></span>
+
+- <span data-ttu-id="10c63-132">**Koeficient nákladů** - Zadejte jedinečný identifikátor pro koeficient nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-132">**Cost factor** – Enter a unique identifier for the cost factor.</span></span>
+- <span data-ttu-id="10c63-133">**Popis** – Zadejte název a popis koeficientu nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-133">**Description** – Enter the name and description of the cost factor.</span></span>
+- <span data-ttu-id="10c63-134">**Počáteční datum** a **Koncové datum** – Tato pole můžete použít k omezení koeficientu nákladů na konkrétní časový rozsah.</span><span class="sxs-lookup"><span data-stu-id="10c63-134">**Start date** and **End date** – You can use these fields to limit the cost factor for a specific date range.</span></span> <span data-ttu-id="10c63-135">Pokud tato pole ponecháte nevyplněná, koeficient nákladů bude platný pro neomezené období.</span><span class="sxs-lookup"><span data-stu-id="10c63-135">If you leave these fields blank, the cost factor is valid for an indefinite period.</span></span>
+- <span data-ttu-id="10c63-136">**Aktivní** - Označuje, zda je koeficient nákladů aktivní.</span><span class="sxs-lookup"><span data-stu-id="10c63-136">**Active** – Indicate whether the cost factor is active.</span></span> <span data-ttu-id="10c63-137">Distribuovaná správa objednávek zvažuje pouze aktivní faktory nákladů, které jsou přidružené k profilu plnění.</span><span class="sxs-lookup"><span data-stu-id="10c63-137">The DOM considers only active cost factors that are associated with the fulfillment profile.</span></span>
+- <span data-ttu-id="10c63-138">**Společnost** - Určuje právnickou osobu, pro kterou je koeficient nákladů nakonfigurován.</span><span class="sxs-lookup"><span data-stu-id="10c63-138">**Company** – Specify the legal entity that the cost factor is configured for.</span></span> <span data-ttu-id="10c63-139">Všechny řádky kritérií výpočtu musí být pro stejnou právnickou osobu.</span><span class="sxs-lookup"><span data-stu-id="10c63-139">All lines of the calculation criteria must be for the same legal entity.</span></span>
+- <span data-ttu-id="10c63-140">**Způsoby dodání** - Určují způsoby dodání, pro které jsou nakonfigurovány náklady.</span><span class="sxs-lookup"><span data-stu-id="10c63-140">**Modes of delivery** – Specify the modes of delivery that the cost is configured for.</span></span>
+- <span data-ttu-id="10c63-141">**Typ výpočtu** – Určuje, jak mají být vypočítány náklady pro konkrétní způsob dodání.</span><span class="sxs-lookup"><span data-stu-id="10c63-141">**Calculation type** – Specify how the cost should be calculated for a specific mode of delivery.</span></span> <span data-ttu-id="10c63-142">Jsou podporovány dva typy výpočtu:</span><span class="sxs-lookup"><span data-stu-id="10c63-142">Two calculation types are supported:</span></span>
+
+    - <span data-ttu-id="10c63-143">**Pevný** – Pro způsob dodání se používá jednotný paušální náklad.</span><span class="sxs-lookup"><span data-stu-id="10c63-143">**Fixed** – A flat cost is used for the mode of delivery.</span></span> <span data-ttu-id="10c63-144">Pokud vyberete tento typ výpočtu, pole **Náklady** definuje jednotný paušální náklad.</span><span class="sxs-lookup"><span data-stu-id="10c63-144">If you select this calculation type, the **Cost** field defines the flat cost.</span></span>
+    - <span data-ttu-id="10c63-145">**Podle jednotky vzdálenosti** – Náklad pro způsob dodání se vypočítá jako hodnota nákladů specifikovaná v poli **Náklady** krát vzdálenost mezi adresou doručení a místy.</span><span class="sxs-lookup"><span data-stu-id="10c63-145">**Per-distance unit** – The cost for the mode of delivery is calculated as the cost value that is specified in the **Cost** field times the distance between the delivery address and the locations.</span></span>
+
+- <span data-ttu-id="10c63-146">**Náklady** – Určuje hodnotu nákladů používanou ve spojení s polem **Typ výpočtu** pro výpočet nákladů pro způsob dodání.</span><span class="sxs-lookup"><span data-stu-id="10c63-146">**Cost** – Specify the cost value that is used in conjunction with the **Calculation type** field to compute the cost for a mode of delivery.</span></span>
+
+#### <a name="cost-component-type--shipping-and-calculation-basis--tiered"></a><span data-ttu-id="10c63-147">Typ komponenty nákladů = Expedice a základ výpočtu = Vrstvený</span><span class="sxs-lookup"><span data-stu-id="10c63-147">Cost component type = Shipping and Calculation basis = Tiered</span></span>
+
+<span data-ttu-id="10c63-148">Pokud se použije kombinace typu komponenty nákladů **Expedice** a základ výpočtu **Vrstvený**, přepravní náklady pro režim doručení jsou založeny buď na paušálních nákladech nebo na vzdálenosti.</span><span class="sxs-lookup"><span data-stu-id="10c63-148">If a combination of the **Shipping** cost component type and the **Tiered** calculation basis is used, the shipping cost for a mode of delivery is based on either a flat cost or distance.</span></span> <span data-ttu-id="10c63-149">V této kombinaci je však vzdálenost založena na vrstveném rozsahu vzdáleností.</span><span class="sxs-lookup"><span data-stu-id="10c63-149">However, in this combination, the distance is based on a tiered range of distances.</span></span>
+
+<span data-ttu-id="10c63-150">Pro tuto kombinaci musíte nastavit následující pole:</span><span class="sxs-lookup"><span data-stu-id="10c63-150">You must set up the following fields for this combination:</span></span>
+
+- <span data-ttu-id="10c63-151">**Koeficient nákladů** - Zadejte jedinečný identifikátor pro koeficient nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-151">**Cost factor** – Enter a unique identifier for the cost factor.</span></span>
+- <span data-ttu-id="10c63-152">**Popis** – Zadejte název a popis koeficientu nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-152">**Description** – Enter the name and description of the cost factor.</span></span>
+- <span data-ttu-id="10c63-153">**Výchozí náklady** – Určují náklady, které by měly být použity pro způsob dodání, pokud vzdálenost mezi adresou doručení a místem nespadá do žádné z vrstvených vzdáleností pro způsob dodání.</span><span class="sxs-lookup"><span data-stu-id="10c63-153">**Default cost** – Specify the cost that should be used for a mode of delivery if the distance between the delivery address and the location doesn't fall into any of the tiered distances for the mode of delivery.</span></span>
+- <span data-ttu-id="10c63-154">**Počáteční datum** a **Koncové datum** – Tato pole můžete použít k omezení koeficientu nákladů na konkrétní časový rozsah.</span><span class="sxs-lookup"><span data-stu-id="10c63-154">**Start date** and **End date** – You can use these fields to limit the cost factor for a specific date range.</span></span> <span data-ttu-id="10c63-155">Pokud tato pole ponecháte nevyplněná, koeficient nákladů bude platný pro neomezené období.</span><span class="sxs-lookup"><span data-stu-id="10c63-155">If you leave these fields blank, the cost factor is valid for an indefinite period.</span></span>
+- <span data-ttu-id="10c63-156">**Aktivní** - Označuje, zda je koeficient nákladů aktivní.</span><span class="sxs-lookup"><span data-stu-id="10c63-156">**Active** – Indicate whether the cost factor is active.</span></span> <span data-ttu-id="10c63-157">Distribuovaná správa objednávek zvažuje pouze aktivní faktory nákladů, které jsou přidružené k profilu plnění.</span><span class="sxs-lookup"><span data-stu-id="10c63-157">The DOM considers only active cost factors that are associated with the fulfillment profile.</span></span>
+- <span data-ttu-id="10c63-158">**Společnost** - Určuje právnickou osobu, pro kterou je koeficient nákladů nakonfigurován.</span><span class="sxs-lookup"><span data-stu-id="10c63-158">**Company** – Specify the legal entity that the cost factor is configured for.</span></span> <span data-ttu-id="10c63-159">Všechny řádky kritérií výpočtu musí být pro stejnou právnickou osobu.</span><span class="sxs-lookup"><span data-stu-id="10c63-159">All lines of the calculation criteria must be for the same legal entity.</span></span>
+- <span data-ttu-id="10c63-160">**Způsoby dodání** - Určují způsoby dodání, pro které jsou nakonfigurovány náklady.</span><span class="sxs-lookup"><span data-stu-id="10c63-160">**Modes of delivery** – Specify the modes of delivery that the cost is configured for.</span></span>
+- <span data-ttu-id="10c63-161">**Typ vzdálenosti** – Určuje, zda definice vrstvené vzdálenosti je vzdušná vzdálenost nebo vzdálenost po silnici.</span><span class="sxs-lookup"><span data-stu-id="10c63-161">**Distance type** – Specify whether the tiered distance definition is an aerial distance or a road distance.</span></span>
+- <span data-ttu-id="10c63-162">**Jednotky vzdálenosti** – Určuje jednotku, ve které se měří vrstvená vzdálenost.</span><span class="sxs-lookup"><span data-stu-id="10c63-162">**Distance units** – Specify the unit that the tiered distance is measured in.</span></span>
+- <span data-ttu-id="10c63-163">**Vzdálenost od** – Určuje počátek rozsahu pro vrstvenou vzdálenost.</span><span class="sxs-lookup"><span data-stu-id="10c63-163">**Distance from** – Specify the start range for the tiered distance.</span></span>
+- <span data-ttu-id="10c63-164">**Vzdálenost do** – Určuje konec rozsahu pro vrstvenou vzdálenost.</span><span class="sxs-lookup"><span data-stu-id="10c63-164">**Distance to** – Specify the end range for the tiered distance.</span></span>
+- <span data-ttu-id="10c63-165">**Typ výpočtu** – Určuje, jak mají být vypočítány náklady pro konkrétní způsob dodání a vrstvenou vzdálenost.</span><span class="sxs-lookup"><span data-stu-id="10c63-165">**Calculation type** – Specify how the cost should be calculated for a specific mode of delivery and tiered distance.</span></span> <span data-ttu-id="10c63-166">Jsou podporovány dva typy výpočtu:</span><span class="sxs-lookup"><span data-stu-id="10c63-166">Two calculation types are supported:</span></span>
+
+    - <span data-ttu-id="10c63-167">**Pevný** – Pro způsob dodání se používá jednotný paušální náklad.</span><span class="sxs-lookup"><span data-stu-id="10c63-167">**Fixed** – A flat cost is used for the mode of delivery.</span></span> <span data-ttu-id="10c63-168">Pokud vyberete tento typ výpočtu, pole **Náklady** definuje jednotný paušální náklad.</span><span class="sxs-lookup"><span data-stu-id="10c63-168">If you select this calculation type, the **Cost** field defines the flat cost.</span></span>
+    - <span data-ttu-id="10c63-169">**Podle jednotky vzdálenosti** – Náklad pro způsob dodání a vrstvenou vzdálenost se vypočítá jako hodnota nákladů specifikovaná v poli **Náklady** krát vzdálenost mezi adresou doručení a místy.</span><span class="sxs-lookup"><span data-stu-id="10c63-169">**Per distance unit** – The cost for the mode of delivery and tiered distance is calculated as the cost value that is specified in the **Cost** field times the distance between the delivery address and the locations.</span></span>
+
+- <span data-ttu-id="10c63-170">**Náklady** – Určuje hodnotu nákladů používanou ve spojení s polem **Typ výpočtu** pro výpočet nákladů pro způsob dodání.</span><span class="sxs-lookup"><span data-stu-id="10c63-170">**Cost** – Specify the cost value that is used in conjunction with the **Calculation type** field to compute the cost for a mode of delivery.</span></span>
+
+> [!NOTE]
+> - <span data-ttu-id="10c63-171">Když definujete vrstvené vzdálenosti, systém ověří, zda se vzdálenosti nepřekrývají nebo nechybí.</span><span class="sxs-lookup"><span data-stu-id="10c63-171">When you define tiered distances, the system validates that there are no missing or overlapping distances.</span></span>
+> - <span data-ttu-id="10c63-172">Typ vzdálenosti používaný pro způsob dodání musí být shodný napříč všemi vrstvenými vzdálenostmi.</span><span class="sxs-lookup"><span data-stu-id="10c63-172">The distance type that is used for a mode of delivery must be the same across all the tiered distances.</span></span>
+
+### <a name="other-cost-component-type"></a><span data-ttu-id="10c63-173">Jiný typ komponenty nákladu</span><span class="sxs-lookup"><span data-stu-id="10c63-173">Other cost component type</span></span>
+
+<span data-ttu-id="10c63-174">Tato část vysvětluje, jak nastavit každou kombinaci typu komponenty nákladu **Jiný** a jiný typ nákladů pro jiné než přepravní náklady.</span><span class="sxs-lookup"><span data-stu-id="10c63-174">This section explains how to set up each combination of the **Other** cost component type and an other cost type for non-shipping costs.</span></span> <span data-ttu-id="10c63-175">Také vysvětluje, jak jsou řešitel DOM používá každou kombinaci.</span><span class="sxs-lookup"><span data-stu-id="10c63-175">It also explains how the DOM solver uses each combination.</span></span>
+
+#### <a name="cost-component-type--other-and-other-cost-type--sales-order"></a><span data-ttu-id="10c63-176">Typ komponenty nákladů = Jiný a jiný typ nákladů = Prodejní objednávka</span><span class="sxs-lookup"><span data-stu-id="10c63-176">Cost component type = Other and Other cost type = Sales order</span></span>
+
+<span data-ttu-id="10c63-177">Kombinace typu nákladů **Jiný** a jiného typu nákladů **Prodejní objednávka** se používá pro definování nepřepravních nákladů na úrovni prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="10c63-177">A combination of the **Other** cost component type and the **Sales order** other cost type is used to define non-shipping costs at the sales order level.</span></span>
+
+<span data-ttu-id="10c63-178">Pro tuto kombinaci musíte nastavit následující pole:</span><span class="sxs-lookup"><span data-stu-id="10c63-178">You must set up the following fields for this combination:</span></span>
+
+- <span data-ttu-id="10c63-179">**Koeficient nákladů** - Zadejte jedinečný identifikátor pro koeficient nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-179">**Cost factor** – Enter a unique identifier for the cost factor.</span></span>
+- <span data-ttu-id="10c63-180">**Popis** – Zadejte název a popis koeficientu nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-180">**Description** – Enter the name and description of the cost factor.</span></span>
+- <span data-ttu-id="10c63-181">**Počáteční datum** a **Koncové datum** – Tato pole můžete použít k omezení koeficientu nákladů na konkrétní časový rozsah.</span><span class="sxs-lookup"><span data-stu-id="10c63-181">**Start date** and **End date** – You can use these fields to limit the cost factor for a specific date range.</span></span> <span data-ttu-id="10c63-182">Pokud tato pole ponecháte nevyplněná, koeficient nákladů bude platný pro neomezené období.</span><span class="sxs-lookup"><span data-stu-id="10c63-182">If you leave these fields blank, the cost factor is valid for an indefinite period.</span></span>
+- <span data-ttu-id="10c63-183">**Aktivní** - Označuje, zda je koeficient nákladů aktivní.</span><span class="sxs-lookup"><span data-stu-id="10c63-183">**Active** – Indicate whether the cost factor is active.</span></span> <span data-ttu-id="10c63-184">Distribuovaná správa objednávek zvažuje pouze aktivní faktory nákladů, které jsou přidružené k profilu plnění.</span><span class="sxs-lookup"><span data-stu-id="10c63-184">The DOM considers only active cost factors that are associated with the fulfillment profile.</span></span>
+- <span data-ttu-id="10c63-185">**Náklady** – Určuje hodnotu nákladů pro nepřepravní náklady na úrovni prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="10c63-185">**Cost** – Specify the cost value for a non-shipping cost at the sales order level.</span></span>
+
+#### <a name="cost-component-type--other-and-other-cost-type--sales-line"></a><span data-ttu-id="10c63-186">Typ komponenty nákladů = Jiný a jiný typ nákladů = Prodejní řádek</span><span class="sxs-lookup"><span data-stu-id="10c63-186">Cost component type = Other and Other cost type = Sales line</span></span>
+
+<span data-ttu-id="10c63-187">Kombinace typu nákladů **Jiný** a jiného typu nákladů **Prodejní řádek** se používá pro definování nepřepravních nákladů na úrovni řádku prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="10c63-187">A combination of the **Other** cost component type and the **Sales line** other cost type is used to define non-shipping costs at the sales order line level.</span></span>
+
+<span data-ttu-id="10c63-188">Pro tuto kombinaci musíte nastavit následující pole:</span><span class="sxs-lookup"><span data-stu-id="10c63-188">You must set up the following fields for this combination:</span></span>
+
+- <span data-ttu-id="10c63-189">**Koeficient nákladů** - Zadejte jedinečný identifikátor pro koeficient nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-189">**Cost factor** – Enter a unique identifier for the cost factor.</span></span>
+- <span data-ttu-id="10c63-190">**Popis** – Zadejte název a popis koeficientu nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-190">**Description** – Enter the name and description of the cost factor.</span></span>
+- <span data-ttu-id="10c63-191">**Počáteční datum** a **Koncové datum** – Tato pole můžete použít k omezení koeficientu nákladů na konkrétní časový rozsah.</span><span class="sxs-lookup"><span data-stu-id="10c63-191">**Start date** and **End date** – You can use these fields to limit the cost factor for a specific date range.</span></span> <span data-ttu-id="10c63-192">Pokud tato pole ponecháte nevyplněná, koeficient nákladů bude platný pro neomezené období.</span><span class="sxs-lookup"><span data-stu-id="10c63-192">If you leave these fields blank, the cost factor is valid for an indefinite period.</span></span>
+- <span data-ttu-id="10c63-193">**Aktivní** - Označuje, zda je koeficient nákladů aktivní.</span><span class="sxs-lookup"><span data-stu-id="10c63-193">**Active** – Indicate whether the cost factor is active.</span></span> <span data-ttu-id="10c63-194">Distribuovaná správa objednávek zvažuje pouze aktivní faktory nákladů, které jsou přidružené k profilu plnění.</span><span class="sxs-lookup"><span data-stu-id="10c63-194">The DOM considers only active cost factors that are associated with the fulfillment profile.</span></span>
+- <span data-ttu-id="10c63-195">**Náklady** – Určuje hodnotu nákladů pro nepřepravní náklady na úrovni řádku prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="10c63-195">**Cost** – Specify the cost value for a non-shipping cost at the sales order line level.</span></span>
+
+#### <a name="cost-component-type--other-and-other-cost-type--location"></a><span data-ttu-id="10c63-196">Typ komponenty nákladů = Jiný a jiný typ nákladů = Místo</span><span class="sxs-lookup"><span data-stu-id="10c63-196">Cost component type = Other and Other cost type = Location</span></span>
+
+<span data-ttu-id="10c63-197">Kombinace typu nákladů **Jiný** a jiného typu nákladů **Místo** se používá pro definování nepřepravních nákladů pro skupinu míst nebo jednotlivé místo.</span><span class="sxs-lookup"><span data-stu-id="10c63-197">A combination of the **Other** cost component type and the **Location** other cost type is used to define non-shipping costs for a group of locations or an individual location.</span></span>
+
+<span data-ttu-id="10c63-198">Pro tuto kombinaci musíte nastavit následující pole:</span><span class="sxs-lookup"><span data-stu-id="10c63-198">You must set up the following fields for this combination:</span></span>
+
+- <span data-ttu-id="10c63-199">**Koeficient nákladů** - Zadejte jedinečný identifikátor pro koeficient nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-199">**Cost factor** – Enter a unique identifier for the cost factor.</span></span>
+- <span data-ttu-id="10c63-200">**Popis** – Zadejte název a popis koeficientu nákladů.</span><span class="sxs-lookup"><span data-stu-id="10c63-200">**Description** – Enter the name and description of the cost factor.</span></span>
+- <span data-ttu-id="10c63-201">**Počáteční datum** a **Koncové datum** – Tato pole můžete použít k omezení koeficientu nákladů na konkrétní časový rozsah.</span><span class="sxs-lookup"><span data-stu-id="10c63-201">**Start date** and **End date** – You can use these fields to limit the cost factor for a specific date range.</span></span> <span data-ttu-id="10c63-202">Pokud tato pole ponecháte nevyplněná, koeficient nákladů bude platný pro neomezené období.</span><span class="sxs-lookup"><span data-stu-id="10c63-202">If you leave these fields blank, the cost factor is valid for an indefinite period.</span></span>
+- <span data-ttu-id="10c63-203">**Aktivní** - Označuje, zda je koeficient nákladů aktivní.</span><span class="sxs-lookup"><span data-stu-id="10c63-203">**Active** – Indicate whether the cost factor is active.</span></span> <span data-ttu-id="10c63-204">Distribuovaná správa objednávek zvažuje pouze aktivní faktory nákladů, které jsou přidružené k profilu plnění.</span><span class="sxs-lookup"><span data-stu-id="10c63-204">The DOM considers only active cost factors that are associated with the fulfillment profile.</span></span>
+- <span data-ttu-id="10c63-205">**Skupina plnění** – Určuje skupinu míst, pro která jsou definovány nepřepravní náklady.</span><span class="sxs-lookup"><span data-stu-id="10c63-205">**Fulfillment group** – Specify the group of locations that the non-shipping cost is defined for.</span></span>
+- <span data-ttu-id="10c63-206">**Místo plnění** – Určuje místo, pro které jsou definovány nepřepravní náklady.</span><span class="sxs-lookup"><span data-stu-id="10c63-206">**Fulfillment location** – Specify the location that the non-shipping cost is defined for.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="10c63-207">Pro kritéria výpočtu na základě místa nelze určit skupinu plnění a místo plnění na stejném řádku.</span><span class="sxs-lookup"><span data-stu-id="10c63-207">You can't specify a fulfillment group and a fulfillment location on the same line for location-based calculation criteria.</span></span>
+
+- <span data-ttu-id="10c63-208">**Náklady** – Určuje hodnotu nákladů pro nepřepravní náklady na úrovni skupiny plnění nebo na úrovni místa plnění.</span><span class="sxs-lookup"><span data-stu-id="10c63-208">**Cost** – Specify the cost value for a non-shipping cost at the fulfillment group level or fulfillment location level.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="10c63-209">Aby distribuovaná správa objednávek zvažovala při svém spuštění tyto náklady, musíte přidat koeficient nákladů do příslušného profilu plnění.</span><span class="sxs-lookup"><span data-stu-id="10c63-209">For DOM to consider these costs when it's run, you must add the cost factor to the relevant fulfillment profile.</span></span>

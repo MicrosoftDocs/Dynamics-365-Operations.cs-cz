@@ -1,330 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="emea-ISO20022-file-formats.md" target-language="cs-CZ">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>emea-ISO20022-file-formats.35e138.d91e937c62d4d498e67d753e39676514835f4161.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>d91e937c62d4d498e67d753e39676514835f4161</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-ISO20022-file-formats.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>ISO20022 files import</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import souborů ISO20022</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how to import payment files of the ISO 20022 camt.054 and pain.002 formats into Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma vysvětluje, jak importovat soubory plateb formátů ISO 20022 camt.054 a pain.002 do Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Import ISO20022 files</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import souborů ISO20022</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>You can import payment files that have the following formats:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete importovat soubory plateb, které mají následující formáty:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source><bpt id="p1">**</bpt>ISO20022 camt.054 credit advice<ept id="p1">**</ept> – Import incoming payments from a file in this format into the Customer payment journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Avízo o kreditní transakci ISO20022 camt.054<ept id="p1">**</ept> – Importuje příchozí platby do deníku plateb odběratele ze souboru v tomto formátu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source><bpt id="p1">**</bpt>ISO20022 pain.002 status return<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ISO20022 camt.054 debit advice<ept id="p2">**</ept> – Import return files in these formats into the AP Payment transfer journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vrácení stavu ISO20022 pain.002<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Avízo o debetní transakci ISO20022 camt.054<ept id="p2">**</ept> – Importuje soubory vrácení v těchto formátech do deníku plateb závazků převodu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Prerequisites for importing the camt.054 credit advice file</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Předpoklady pro import souboru platebního avíza camt.054</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>You must complete the following prerequisites to import bank notification messages in the camt.054.001.002 format into the Customer payment journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import zpráv s bankovními oznámeními ve formátu camt.054.001.002 do deníku plateb odběratele vyžaduje splnění následujících předpokladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Import the <bpt id="p1">**</bpt>ISO20022 camt.054<ept id="p1">**</ept> Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importujte konfiguraci elektronického výkaznictví <bpt id="p1">**</bpt>ISO20022 camt.054<ept id="p1">**</ept> z aplikace Microsoft Dynamics Lifecycle Services (LCS).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Then, on the <bpt id="p1">**</bpt>Customer method of payment<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Import format configuration<ept id="p2">**</ept> field, select that configuration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potom na stránce <bpt id="p1">**</bpt>Způsob platby odběratele<ept id="p1">**</ept> v poli <bpt id="p2">**</bpt>Importovat konfigurace formátu<ept id="p2">**</ept> vyberte konfiguraci.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>For more information, see <bpt id="p1">[</bpt>File formats for methods of payment<ept id="p1">](emea-select-file-formats-for-the-method-of-payments.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">[</bpt>Formáty souboru pro způsoby platby<ept id="p1">](emea-select-file-formats-for-the-method-of-payments.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>On the <bpt id="p1">**</bpt>All customers<ept id="p1">**</ept> page, enter a name and organization number for each customer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Všichni zákazníci<ept id="p1">**</ept> zadejte název a číslo organizace pro každého zákazníka.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>On the <bpt id="p1">**</bpt>Customer bank account<ept id="p1">**</ept> page, set up a customer bank account record by entering the following information: IBAN or bank account number, and SWIFT code or routing number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Bankovní účet odběratele<ept id="p1">**</ept> nastavte bankovní účet záznamu odběratele zadáním následujících informací: IBAN nebo číslo bankovního účtu a kód SWIFT nebo směrové číslo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>On the <bpt id="p1">**</bpt>Bank accounts<ept id="p1">**</ept> page, set up legal entity bank accounts by entering the following information: IBAN or bank account number, SWIFT code or routing number, currency, and address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Bankovní účty<ept id="p1">**</ept> nastavte bankovní účty právnické osoby zadáním následujících informací: IBAN nebo číslo bankovního účtu, kód SWIFT nebo směrové číslo, měna a adresa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>If you plan to use Advanced bank reconciliation, on the <bpt id="p1">**</bpt>Reconciliation<ept id="p1">**</ept> FastTab, set the <bpt id="p2">**</bpt>Advanced bank reconciliation<ept id="p2">**</ept> option to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud budete používat rozšířené bankovní odsouhlasení, na pevné záložce <bpt id="p1">**</bpt>Odsouhlasení<ept id="p1">**</ept> nastavte možnost <bpt id="p2">**</bpt>Rozšířené odsouhlasení bankovního výpisu<ept id="p2">**</ept> na <bpt id="p3">**</bpt>Ano<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>If you plan to reconcile unposted imported payments, set the <bpt id="p1">**</bpt>Use bank statements as confirmation of electronic payments<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete odsouhlasit nezaúčtované importované platby, nastavte možnost <bpt id="p1">**</bpt>Použít bankovní výpisy jako potvrzení elektronické platby<ept id="p1">**</ept> na <bpt id="p2">**</bpt>Ano<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Optional: On the <bpt id="p1">**</bpt>Transaction code mapping<ept id="p1">**</ept> page, set up the mapping between bank transaction codes in the file and bank transaction types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Volitelné: Na kartě <bpt id="p1">**</bpt>Mapování kódu transakce<ept id="p1">**</ept> nastavte mapování mezi kódy bankovních transakcív souboru a typy bankovních transakcí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>If the file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the <bpt id="p1">**</bpt>Customer payment fee<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud soubor obsahuje poplatky za transakce, které chcete zaúčtovat spolu s příchozí platbou, vytvořte pro platební poplatek na stránce <bpt id="p1">**</bpt>Platební poplatky odběratele<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Then, on the <bpt id="p1">**</bpt>Methods of payment<ept id="p1">**</ept> page, associate the payment fee with the bank account in the payment fee setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poté na stránce <bpt id="p1">**</bpt>Způsoby platby<ept id="p1">**</ept> přidružte platební poplatek k bankovnímu účtu v nastavení platebního poplatku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>If ESR payments will be imported and will contain ISR references (applicable for legal entities in Switzerland), complete the following setup:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud budou importovány platby ESR a budou obsahovat odkazy ISR (k dispozici pro právnické osoby ve Švýcarsku), proveďte následující nastavení:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>In the <bpt id="p1">**</bpt>Customer payments, account lengths<ept id="p1">**</ept> field, enter the length of the customer code that is used in ISR references or for automatic identification of the customer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>Platby odběratele, délky účtu<ept id="p1">**</ept> zadejte délku kódu odběratele, který se používá v referencích ISR nebo pro automatickou identifikaci odběratele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Make sure that the customer number and invoice number (number sequences) contain only digits.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ujistěte se, že číslo odběratele a čísla faktury (číselné řady) obsahují pouze číslice.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>They must contain no other characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nesmí obsahovat žádné jiné znaky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>The invoice number must not have leading zeros.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Číslo faktury nesmí obsahovat počáteční nuly.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Enter the ESR, BESR, and routing number for the legal entity bank account.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte ESR, BESR a směrové číslo pro bankovní účet pro právní subjekt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>For more information, see <bpt id="p1">[</bpt>legacy ESR feature<ept id="p1">](emea-che-esr-customer-payments-import.md)</ept>, because similar settings are required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">[</bpt>starší funkce ESR<ept id="p1">](emea-che-esr-customer-payments-import.md)</ept>, protože jsou požadována podobná nastavení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Import the camt.054 credit advice file into the Customer payment journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import souboru kreditního avíza camt.054 do deníku plateb odběratele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>On the <bpt id="p1">**</bpt>Customer payment journal lines<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Functions<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Import payments<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Řádky deníku plateb odběratele<ept id="p1">**</ept> klikněte na <bpt id="p2">**</bpt>Funkce<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Import plateb<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Select the method of payment that has the required settings for the ISO20022 camt.054 format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte metodu platby, která má požadované nastavení pro formát camt.054 ISO20022.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Specify the required parameters and the path of the file, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte požadované parametry a cestu k souboru a klepněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>The file is imported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Soubor je importován.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Prerequisites for importing files in the pain.002 status return and camt.054 debit advice formats into the AP Payment transfer journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Předpoklady pro import souborů se stavem pain.002 a Avízo o debetní transakci camt.054 do deníku plateb závazků převodu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>You must complete the following prerequisites to import bank messages in the following ISO20022 formats to the <bpt id="p1">**</bpt>Vendor payment transfer<ept id="p1">**</ept> page: pain.002.001.003 status return messages and camt.054.001.002 debit advice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import bankovních zpráv v následujících formátech ISO20022 na stránku <bpt id="p1">**</bpt>Převod platby dodavatele<ept id="p1">**</ept> vyžaduje splnění následujících předpokladů: zprávy o stavu vrácení pain.002.001.003 a debetní avízo camt.054.001.002.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Import the <bpt id="p1">**</bpt>ISO20022 camt.054<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ISO20022 pain.002<ept id="p2">**</ept> ER configurations from LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importujte konfiguraci <bpt id="p1">**</bpt>ISO20022 camt.054<ept id="p1">**</ept> a <bpt id="p2">**</bpt>ISO20022 pain.002<ept id="p2">**</ept> ER z LCS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>On the <bpt id="p1">**</bpt>Vendor method of payment<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Return format configuration<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Return format secondary configuration<ept id="p3">**</ept> fields, select the ER configurations that you imported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Způsob platby dodavatele<ept id="p1">**</ept> v polích <bpt id="p2">**</bpt>Konfigurace formátu vrácení<ept id="p2">**</ept> a <bpt id="p3">**</bpt>Sekundární konfigurace formátu vrácení<ept id="p3">**</ept> vyberte importované konfigurace ER.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>You will have to activate the generic electronic return format for the selected method of payment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je třeba aktivovat obecný elektronický formát vrácení pro vybranou metodu platby.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>On the <bpt id="p1">**</bpt>Return format status mapping<ept id="p1">**</ept> page, set up the mapping of status codes between pain.002 statuses and Vendor payment journal statuses.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Mapování stavu formátu vrácení<ept id="p1">**</ept> nastavte mapování kódů stavu mezi stavy pain.002 a stavy deníku plateb dodavatele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Here is an example of a status setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následuje příklad nastavení stavu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Return status</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stav vrácení</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Payment status</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stav platby</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>RJCT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RJCT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Rejected</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odmítnuto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>ACCP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ACCP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Accepted</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Akceptováno</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>ACSP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ACSP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Received</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přijato</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>On the <bpt id="p1">**</bpt>Return format error codes<ept id="p1">**</ept> page, set up pain.002 error codes and descriptions in accordance with external ISO20022 status reason codes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Kódy chyb formátu pro výpis<ept id="p1">**</ept> nastavte kódy chyb a popisy pain.002 v souladu s externími stavovými kódy důvodu ISO20022.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Here is an example of part of an error code setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následuje příklad součásti nastavení kódu chyby.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Code</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jméno</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>AC01</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC01</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>IncorrectAccountNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IncorrectAccountNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>AC02</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC02</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>InvalidDebtorAccountNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InvalidDebtorAccountNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>AC03</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC03</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>InvalidCreditorAccountNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InvalidCreditorAccountNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>AC04</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC04</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>ClosedAccountNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ClosedAccountNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>AC05</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC05</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>ClosedDebtorAccountNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ClosedDebtorAccountNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>AC06</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AC06</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>BlockedAccount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BlockedAccount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>If the camt.054 file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the <bpt id="p1">**</bpt>Vendor payment fee<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud soubor camt.054 obsahuje poplatky za transakce, které chcete zaúčtovat spolu s příchozí platbou, vytvořte pro platební poplatek na stránce <bpt id="p1">**</bpt>Platební poplatky dodavatele<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Then, on the <bpt id="p1">**</bpt>Methods of payment<ept id="p1">**</ept> page, associate the payment fee with the bank account in the payment fee setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poté na stránce <bpt id="p1">**</bpt>Způsoby platby<ept id="p1">**</ept> přidružte platební poplatek k bankovnímu účtu v nastavení platebního poplatku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Import the pain.002 status return or camt.054 debit advice files into the Vendor payment journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importujte soubor vrácení stavu pain.002 nebo debetního avíza camt.054 do deníku plateb dodavatele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Open the <bpt id="p1">**</bpt>Payment transfers<ept id="p1">**</ept> page in Accounts Payable menu.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otevřete stránku <bpt id="p1">**</bpt>Platební převody<ept id="p1">**</ept> v nabídce Závazky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>On the <bpt id="p1">**</bpt>Payment transfers<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Return file - vendor<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Převody plateb<ept id="p1">**</ept> klikněte na <bpt id="p2">**</bpt>Soubor vrácení – dodavatel<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Select the method of payment that has the required settings for ISO20022 files, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte metodu platby, která má požadované nastavení pro soubory ISO20022, a klikněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Select the file format that you plan to import, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte formát souboru, který chcete importovat, a klikněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Specify the required parameters and the path of the file, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte požadované parametry a cestu k souboru a klepněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>If you're importing the pain.002 file, the status of vendor payment lines is updated, based the information in the imported file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při importu souboru pain.002 se aktualizuje stav řádků platby dodavatele na základě informací v importovaném souboru.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>If you're importing the camt.054 file, you should specify the following additional parameters:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při importu souboru camt.054 byste měli zadat následující další parametry:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source><bpt id="p1">**</bpt>Fee ID<ept id="p1">**</ept> – Enter the Fee ID which will define new payment fee lines, which will be created on the Vendor payment journal line if a charge amount is present in the camt.054 file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ID poplatku<ept id="p1">**</ept> – zadejte ID poplatku, které bude definovat nové řádky poplatků plateb, které budou vytvořeny na řádku deníku plateb dodavatele, pokud je k dispozici v souboru camt.054.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source><bpt id="p1">**</bpt>New journal name<ept id="p1">**</ept> and <bpt id="p2">**</bpt>New journal description<ept id="p2">**</ept> – Enter the name and description of the journal that processed transactions will be transferred to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Název nového deníku<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Popis nového deníku<ept id="p2">**</ept> – zadejte název a popis deníku, do kterého budou převedeny zpracované transakce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>After the transfer, new voucher numbers should be assigned in the new journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po převodu je nutné přiřadit v novém deníku nová čísla dokladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source><bpt id="p1">**</bpt>Import direct debit transactions<ept id="p1">**</ept> – Set this option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> if outgoing direct debits must be imported into the Vendor payment journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Import transakcí přímého debetu<ept id="p1">**</ept> – Nastavte tuto možnost na <bpt id="p2">**</bpt>Ano<ept id="p2">**</ept>, pokud odchozí přímé debety musí být importovány do deníku plateb dodavatele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source><bpt id="p1">**</bpt>Journal name<ept id="p1">**</ept> – Define a new journal name for the imported direct debit transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Název deníku<ept id="p1">**</ept> – Definujte nový název deníku pro importované transakce přímého debetu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source><bpt id="p1">**</bpt>Settle transactions<ept id="p1">**</ept> – Set this option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> if imported vendor payments must be settled with invoices that are found in the system.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vyrovnat transakce<ept id="p1">**</ept> – nastavte tuto možnost na <bpt id="p2">**</bpt>Ano<ept id="p2">**</ept>, pokud musí být importované platby dodavatele vyrovnány s fakturami, které jsou nalezeny v systému.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>You can view the imported information on the <bpt id="p1">**</bpt>Payment transfers<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete zobrazit importované informace na stránce <bpt id="p1">**</bpt>Platební převody<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Additional details</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další podrobnosti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>When you import a format configuration from LCS, you import the whole configuration tree which means that the Model and Model mapping configurations are included.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při importu konfigurace formátu z LCS importujete celý stromu konfigurace, což znamená, že jsou zahrnuty konfigurace modelu a mapování modelu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>In the Payment model starting from version 8, the mappings are located in separate ER configurations in the solution tree (Payment model mapping 1611, Payment model mapping to destination ISO20022, etc).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V modelu platby počínaje verzí 8 jsou mapování umístěna v samostatných ER konfiguracích ve stromové struktuře řešení (mapování modelu platby 1611, mapování modelu platby do cílového umístění ISO20022 atd).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>There are many different payment formats under one model (Payment model), thus separate mapping handling is a key for easy solution maintenance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Existuje mnoho různých modelů platby pod jedním modelem (platebním modelem), proto je nakládání se samostatným mapováním klíčové pro snadnou údržbu řešení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>For example, consider this scenario: you use ISO20022 payments to generate credit transfer files and then you import the return messages from the bank.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvažte například tento scénář: použijete ISO20022 platby k vytvoření souborů převodu kreditu a poté importujete vrácené zprávy od banky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>In this scenario, you should use the following configurations:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V tomto scénáři byste měli používat následující konfigurace:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source><bpt id="p1">**</bpt>Payment model<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Model platby<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source><bpt id="p1">**</bpt>Payment model mapping 1611<ept id="p1">**</ept> – this mapping will be used to generate the export file</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Mapování modelu platby 1611<ept id="p1">**</ept> – toto mapování se použije ke generování souboru exportu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source><bpt id="p1">**</bpt>Payment model mapping to destination ISO20022<ept id="p1">**</ept> – this configuration includes all mappings which will be used to import the data (“to destination” mapping direction)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Mapování modelu platby do cílového umístění ISO20022<ept id="p1">**</ept> – tato konfigurace obsahuje všechna mapování, která budou použitá pro import dat (směr mapování "do cílového umístění")</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source><bpt id="p1">**</bpt>ISO20022 Credit transfer<ept id="p1">**</ept> – this configuration includes a format component that is responsible for export file generation (pain.001) based on the Payment model mapping 1611, as well as a format to model mapping component which will be used together with Payment model mapping to destination ISO20022 to register exported payments in the system for further import purposes (import in CustVendProcessedPayments technical table)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Převedení kreditu ISO20022<ept id="p1">**</ept> – tato konfigurace zahrnuje komponentu formátu, která zodpovídá za generování souboru exportu (pain.001) podle mapování modelu platby 1611, a také formát pro komponentu mapování modelu, která bude použita společně s mapováním modelu platby do cílového umístění ISO20022 k registraci exportovaných plateb v systému pro další účely importu (import v technické tabulce CustVendProcessedPayments)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source><bpt id="p1">**</bpt>ISO20022 Credit transfer (CE)<ept id="p1">**</ept>, where CE correspond to country extension – derived format to the ISO20022 Credit transfer with the same structure and with certain country-specific differences</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Převedení kreditu ISO20022 (CE)<ept id="p1">**</ept>, kde CE odpovídá příponě země – odvozený formát k převodu kreditu ISO20022 se stejnou strukturou a s určitými rozdíly specifickými pro zemi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source><bpt id="p1">**</bpt>Pain.002<ept id="p1">**</ept> – this format will be used together with the Payment model mapping to destination ISO20022 in order to import the pain.002 file into vendor payments transfers journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Pain.002<ept id="p1">**</ept> – tento formát se použije společně s mapování modelu platby do cílového umístění ISO20022, aby se naimportoval soubor pain.002 do deníku převodů plateb dodavatele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source><bpt id="p1">**</bpt>Camt.054<ept id="p1">**</ept> – this format will be used together with the Payment model mapping to destination ISO20022 to import the camt.054 file into vendor payments transfers journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Camt.054<ept id="p1">**</ept> – tento formát se použije společně s mapování modelu platby do cílového umístění ISO20022, aby se naimportoval soubor camt.054 do deníku převodů plateb dodavatele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>The same format configuration will be used in customer payments import functionality, but the different mapping will be used in the Payment model mapping to destination ISO20022 configuration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stejná konfigurace formátu se použije ve funkci importu plateb odběratelů, ale použije se odlišné mapování konfiguraci mapování modelu platby ISO20022 do cílového umístění.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>For more information about Electronic reporting, refer to <bpt id="p1">[</bpt>Electronic reporting overview<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace o elektronickém výkaznictví naleznete v tématu <bpt id="p1">[</bpt>Přehled elektronického výkaznictví<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další zdroje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source><bpt id="p1">[</bpt>Create and export vendor payments using ISO20022 payment format<ept id="p1">](./tasks/create-export-vendor-payments-iso20022-payment-format.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022<ept id="p1">](./tasks/create-export-vendor-payments-iso20022-payment-format.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source><bpt id="p1">[</bpt>Import ISO20022 credit transfer configuration<ept id="p1">](./tasks/import-iso20022-credit-transfer-configuration.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Import konfigurace převodu kreditu ve formátu ISO20022<ept id="p1">](./tasks/import-iso20022-credit-transfer-configuration.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source><bpt id="p1">[</bpt>Import ISO20022 direct debit configuration<ept id="p1">](./tasks/import-iso20022-direct-debit-configuration.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Import konfigurace přímého debetu ve formátu ISO20022<ept id="p1">](./tasks/import-iso20022-direct-debit-configuration.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source><bpt id="p1">[</bpt>Set up company bank accounts for ISO20022 credit transfers<ept id="p1">](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022<ept id="p1">](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source><bpt id="p1">[</bpt>Set up company bank accounts for ISO20022 direct debits<ept id="p1">](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Nastavení bankovních účtů společnosti pro přímé debety ve formátu ISO20022<ept id="p1">](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source><bpt id="p1">[</bpt>Set up customers and customer bank accounts for ISO20022 direct debits<ept id="p1">](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Nastavení bankovních účtů odběratelů a zákazníků pro přímé debety ve formátu ISO20022<ept id="p1">](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source><bpt id="p1">[</bpt>Set up method of payment for ISO20022 credit transfer<ept id="p1">](./tasks/set-up-method-payment-iso20022-credit-transfer.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Nastavení způsobu platby pro převody kreditu ve formátu ISO20022<ept id="p1">](./tasks/set-up-method-payment-iso20022-credit-transfer.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source><bpt id="p1">[</bpt>Set up method of payment for ISO20022 direct debit<ept id="p1">](./tasks/setup-method-payment-iso20022-direct-debit.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Nastavení způsobu platby pro přímý debet ve formátu ISO20022<ept id="p1">](./tasks/setup-method-payment-iso20022-direct-debit.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source><bpt id="p1">[</bpt>Set up vendors and vendor bank accounts for ISO20022 credit transfers<ept id="p1">](./tasks/set-up-vendor-iso20022-credit-transfers.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022<ept id="p1">](./tasks/set-up-vendor-iso20022-credit-transfers.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Import souborů ISO20022
+description: Toto téma vysvětluje, jak importovat soubory plateb formátů ISO 20022 camt.054 a pain.002 do Microsoft Dynamics 365 for Finance and Operations.
+author: neserovleo
+manager: AnnBe
+ms.date: 07/27/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
+ms.author: v-lenest
+ms.search.validFrom: 2017-06-01
+ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: d91e937c62d4d498e67d753e39676514835f4161
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564454"
+---
+# <a name="import-iso20022-files"></a><span data-ttu-id="d1414-103">Import souborů ISO20022</span><span class="sxs-lookup"><span data-stu-id="d1414-103">Import ISO20022 files</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="d1414-104">Můžete importovat soubory plateb, které mají následující formáty:</span><span class="sxs-lookup"><span data-stu-id="d1414-104">You can import payment files that have the following formats:</span></span>
+
+ - <span data-ttu-id="d1414-105">**Avízo o kreditní transakci ISO20022 camt.054** – Importuje příchozí platby do deníku plateb odběratele ze souboru v tomto formátu.</span><span class="sxs-lookup"><span data-stu-id="d1414-105">**ISO20022 camt.054 credit advice** – Import incoming payments from a file in this format into the Customer payment journal.</span></span>
+ - <span data-ttu-id="d1414-106">**Vrácení stavu ISO20022 pain.002** a **Avízo o debetní transakci ISO20022 camt.054** – Importuje soubory vrácení v těchto formátech do deníku plateb závazků převodu.</span><span class="sxs-lookup"><span data-stu-id="d1414-106">**ISO20022 pain.002 status return** and **ISO20022 camt.054 debit advice** – Import return files in these formats into the AP Payment transfer journal.</span></span>
+
+## <a name="prerequisites-for-importing-the-camt054-credit-advice-file"></a><span data-ttu-id="d1414-107">Předpoklady pro import souboru platebního avíza camt.054</span><span class="sxs-lookup"><span data-stu-id="d1414-107">Prerequisites for importing the camt.054 credit advice file</span></span>
+<span data-ttu-id="d1414-108">Import zpráv s bankovními oznámeními ve formátu camt.054.001.002 do deníku plateb odběratele vyžaduje splnění následujících předpokladů.</span><span class="sxs-lookup"><span data-stu-id="d1414-108">You must complete the following prerequisites to import bank notification messages in the camt.054.001.002 format into the Customer payment journal.</span></span>
+
+1. <span data-ttu-id="d1414-109">Importujte konfiguraci elektronického výkaznictví **ISO20022 camt.054** z aplikace Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="d1414-109">Import the **ISO20022 camt.054** Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="d1414-110">Potom na stránce **Způsob platby odběratele** v poli **Importovat konfigurace formátu** vyberte konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="d1414-110">Then, on the **Customer method of payment** page, in the **Import format configuration** field, select that configuration.</span></span> <span data-ttu-id="d1414-111">Další informace naleznete v tématu [Formáty souboru pro způsoby platby](emea-select-file-formats-for-the-method-of-payments.md).</span><span class="sxs-lookup"><span data-stu-id="d1414-111">For more information, see [File formats for methods of payment](emea-select-file-formats-for-the-method-of-payments.md).</span></span>
+2. <span data-ttu-id="d1414-112">Na stránce **Všichni zákazníci** zadejte název a číslo organizace pro každého zákazníka.</span><span class="sxs-lookup"><span data-stu-id="d1414-112">On the **All customers** page, enter a name and organization number for each customer.</span></span>
+3. <span data-ttu-id="d1414-113">Na stránce **Bankovní účet odběratele** nastavte bankovní účet záznamu odběratele zadáním následujících informací: IBAN nebo číslo bankovního účtu a kód SWIFT nebo směrové číslo.</span><span class="sxs-lookup"><span data-stu-id="d1414-113">On the **Customer bank account** page, set up a customer bank account record by entering the following information: IBAN or bank account number, and SWIFT code or routing number.</span></span>
+4. <span data-ttu-id="d1414-114">Na stránce **Bankovní účty** nastavte bankovní účty právnické osoby zadáním následujících informací: IBAN nebo číslo bankovního účtu, kód SWIFT nebo směrové číslo, měna a adresa.</span><span class="sxs-lookup"><span data-stu-id="d1414-114">On the **Bank accounts** page, set up legal entity bank accounts by entering the following information: IBAN or bank account number, SWIFT code or routing number, currency, and address.</span></span>
+
+   > [!NOTE]
+   > <span data-ttu-id="d1414-115">Pokud budete používat rozšířené bankovní odsouhlasení, na pevné záložce **Odsouhlasení** nastavte možnost **Rozšířené odsouhlasení bankovního výpisu** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="d1414-115">If you plan to use Advanced bank reconciliation, on the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**.</span></span> <span data-ttu-id="d1414-116">Pokud chcete odsouhlasit nezaúčtované importované platby, nastavte možnost **Použít bankovní výpisy jako potvrzení elektronické platby** na **Ano**.</span><span class="sxs-lookup"><span data-stu-id="d1414-116">If you plan to reconcile unposted imported payments, set the **Use bank statements as confirmation of electronic payments** option to **Yes**.</span></span>
+
+5. <span data-ttu-id="d1414-117">Volitelné: Na kartě **Mapování kódu transakce** nastavte mapování mezi kódy bankovních transakcív souboru a typy bankovních transakcí.</span><span class="sxs-lookup"><span data-stu-id="d1414-117">Optional: On the **Transaction code mapping** page, set up the mapping between bank transaction codes in the file and bank transaction types.</span></span>
+6. <span data-ttu-id="d1414-118">Pokud soubor obsahuje poplatky za transakce, které chcete zaúčtovat spolu s příchozí platbou, vytvořte pro platební poplatek na stránce **Platební poplatky odběratele**.</span><span class="sxs-lookup"><span data-stu-id="d1414-118">If the file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the **Customer payment fee** page.</span></span> <span data-ttu-id="d1414-119">Poté na stránce **Způsoby platby** přidružte platební poplatek k bankovnímu účtu v nastavení platebního poplatku.</span><span class="sxs-lookup"><span data-stu-id="d1414-119">Then, on the **Methods of payment** page, associate the payment fee with the bank account in the payment fee setup.</span></span>
+7. <span data-ttu-id="d1414-120">Pokud budou importovány platby ESR a budou obsahovat odkazy ISR (k dispozici pro právnické osoby ve Švýcarsku), proveďte následující nastavení:</span><span class="sxs-lookup"><span data-stu-id="d1414-120">If ESR payments will be imported and will contain ISR references (applicable for legal entities in Switzerland), complete the following setup:</span></span>
+
+    - <span data-ttu-id="d1414-121">V poli **Platby odběratele, délky účtu** zadejte délku kódu odběratele, který se používá v referencích ISR nebo pro automatickou identifikaci odběratele.</span><span class="sxs-lookup"><span data-stu-id="d1414-121">In the **Customer payments, account lengths** field, enter the length of the customer code that is used in ISR references or for automatic identification of the customer.</span></span>
+    - <span data-ttu-id="d1414-122">Ujistěte se, že číslo odběratele a čísla faktury (číselné řady) obsahují pouze číslice.</span><span class="sxs-lookup"><span data-stu-id="d1414-122">Make sure that the customer number and invoice number (number sequences) contain only digits.</span></span> <span data-ttu-id="d1414-123">Nesmí obsahovat žádné jiné znaky.</span><span class="sxs-lookup"><span data-stu-id="d1414-123">They must contain no other characters.</span></span> <span data-ttu-id="d1414-124">Číslo faktury nesmí obsahovat počáteční nuly.</span><span class="sxs-lookup"><span data-stu-id="d1414-124">The invoice number must not have leading zeros.</span></span>
+    - <span data-ttu-id="d1414-125">Zadejte ESR, BESR a směrové číslo pro bankovní účet pro právní subjekt.</span><span class="sxs-lookup"><span data-stu-id="d1414-125">Enter the ESR, BESR, and routing number for the legal entity bank account.</span></span> <span data-ttu-id="d1414-126">Další informace naleznete v tématu [starší funkce ESR](emea-che-esr-customer-payments-import.md), protože jsou požadována podobná nastavení.</span><span class="sxs-lookup"><span data-stu-id="d1414-126">For more information, see [legacy ESR feature](emea-che-esr-customer-payments-import.md), because similar settings are required.</span></span>
+    
+## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a><span data-ttu-id="d1414-127">Import souboru kreditního avíza camt.054 do deníku plateb odběratele</span><span class="sxs-lookup"><span data-stu-id="d1414-127">Import the camt.054 credit advice file into the Customer payment journal</span></span>
+1. <span data-ttu-id="d1414-128">Na stránce **Řádky deníku plateb odběratele** klikněte na **Funkce** > **Import plateb**.</span><span class="sxs-lookup"><span data-stu-id="d1414-128">On the **Customer payment journal lines** page, click **Functions** > **Import payments**.</span></span>
+2. <span data-ttu-id="d1414-129">Vyberte metodu platby, která má požadované nastavení pro formát camt.054 ISO20022.</span><span class="sxs-lookup"><span data-stu-id="d1414-129">Select the method of payment that has the required settings for the ISO20022 camt.054 format.</span></span>
+3. <span data-ttu-id="d1414-130">Zadejte požadované parametry a cestu k souboru a klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="d1414-130">Specify the required parameters and the path of the file, and then click **OK**.</span></span> <span data-ttu-id="d1414-131">Soubor je importován.</span><span class="sxs-lookup"><span data-stu-id="d1414-131">The file is imported.</span></span>
+
+## <a name="prerequisites-for-importing-files-in-the-pain002-status-return-and-camt054-debit-advice-formats-into-the-ap-payment-transfer-journal"></a><span data-ttu-id="d1414-132">Předpoklady pro import souborů se stavem pain.002 a Avízo o debetní transakci camt.054 do deníku plateb závazků převodu</span><span class="sxs-lookup"><span data-stu-id="d1414-132">Prerequisites for importing files in the pain.002 status return and camt.054 debit advice formats into the AP Payment transfer journal</span></span>
+<span data-ttu-id="d1414-133">Import bankovních zpráv v následujících formátech ISO20022 na stránku **Převod platby dodavatele** vyžaduje splnění následujících předpokladů: zprávy o stavu vrácení pain.002.001.003 a debetní avízo camt.054.001.002.</span><span class="sxs-lookup"><span data-stu-id="d1414-133">You must complete the following prerequisites to import bank messages in the following ISO20022 formats to the **Vendor payment transfer** page: pain.002.001.003 status return messages and camt.054.001.002 debit advice.</span></span>
+
+1. <span data-ttu-id="d1414-134">Importujte konfiguraci **ISO20022 camt.054** a **ISO20022 pain.002** ER z LCS.</span><span class="sxs-lookup"><span data-stu-id="d1414-134">Import the **ISO20022 camt.054** and **ISO20022 pain.002** ER configurations from LCS.</span></span>
+2. <span data-ttu-id="d1414-135">Na stránce **Způsob platby dodavatele** v polích **Konfigurace formátu vrácení** a **Sekundární konfigurace formátu vrácení** vyberte importované konfigurace ER.</span><span class="sxs-lookup"><span data-stu-id="d1414-135">On the **Vendor method of payment** page, in the **Return format configuration** and **Return format secondary configuration** fields, select the ER configurations that you imported.</span></span> <span data-ttu-id="d1414-136">Je třeba aktivovat obecný elektronický formát vrácení pro vybranou metodu platby.</span><span class="sxs-lookup"><span data-stu-id="d1414-136">You will have to activate the generic electronic return format for the selected method of payment.</span></span>
+3. <span data-ttu-id="d1414-137">Na stránce **Mapování stavu formátu vrácení** nastavte mapování kódů stavu mezi stavy pain.002 a stavy deníku plateb dodavatele.</span><span class="sxs-lookup"><span data-stu-id="d1414-137">On the **Return format status mapping** page, set up the mapping of status codes between pain.002 statuses and Vendor payment journal statuses.</span></span>
+
+    <span data-ttu-id="d1414-138">Následuje příklad nastavení stavu.</span><span class="sxs-lookup"><span data-stu-id="d1414-138">Here is an example of a status setup.</span></span>
+
+    <span data-ttu-id="d1414-139">Stav vrácení</span><span class="sxs-lookup"><span data-stu-id="d1414-139">Return status</span></span> | <span data-ttu-id="d1414-140">Stav platby</span><span class="sxs-lookup"><span data-stu-id="d1414-140">Payment status</span></span>
+    --------------|---------------
+    <span data-ttu-id="d1414-141">RJCT</span><span class="sxs-lookup"><span data-stu-id="d1414-141">RJCT</span></span>          | <span data-ttu-id="d1414-142">Odmítnuto</span><span class="sxs-lookup"><span data-stu-id="d1414-142">Rejected</span></span>
+    <span data-ttu-id="d1414-143">ACCP</span><span class="sxs-lookup"><span data-stu-id="d1414-143">ACCP</span></span>          | <span data-ttu-id="d1414-144">Akceptováno</span><span class="sxs-lookup"><span data-stu-id="d1414-144">Accepted</span></span>
+    <span data-ttu-id="d1414-145">ACSP</span><span class="sxs-lookup"><span data-stu-id="d1414-145">ACSP</span></span>          | <span data-ttu-id="d1414-146">Přijato</span><span class="sxs-lookup"><span data-stu-id="d1414-146">Received</span></span>
+
+4. <span data-ttu-id="d1414-147">Na stránce **Kódy chyb formátu pro výpis** nastavte kódy chyb a popisy pain.002 v souladu s externími stavovými kódy důvodu ISO20022.</span><span class="sxs-lookup"><span data-stu-id="d1414-147">On the **Return format error codes** page, set up pain.002 error codes and descriptions in accordance with external ISO20022 status reason codes.</span></span>
+
+    <span data-ttu-id="d1414-148">Následuje příklad součásti nastavení kódu chyby.</span><span class="sxs-lookup"><span data-stu-id="d1414-148">Here is an example of part of an error code setup.</span></span>
+
+    <span data-ttu-id="d1414-149">Kód</span><span class="sxs-lookup"><span data-stu-id="d1414-149">Code</span></span> | <span data-ttu-id="d1414-150">Jméno</span><span class="sxs-lookup"><span data-stu-id="d1414-150">Name</span></span>
+    -----|-----
+    <span data-ttu-id="d1414-151">AC01</span><span class="sxs-lookup"><span data-stu-id="d1414-151">AC01</span></span> | <span data-ttu-id="d1414-152">IncorrectAccountNumber</span><span class="sxs-lookup"><span data-stu-id="d1414-152">IncorrectAccountNumber</span></span>
+    <span data-ttu-id="d1414-153">AC02</span><span class="sxs-lookup"><span data-stu-id="d1414-153">AC02</span></span> | <span data-ttu-id="d1414-154">InvalidDebtorAccountNumber</span><span class="sxs-lookup"><span data-stu-id="d1414-154">InvalidDebtorAccountNumber</span></span>
+    <span data-ttu-id="d1414-155">AC03</span><span class="sxs-lookup"><span data-stu-id="d1414-155">AC03</span></span> | <span data-ttu-id="d1414-156">InvalidCreditorAccountNumber</span><span class="sxs-lookup"><span data-stu-id="d1414-156">InvalidCreditorAccountNumber</span></span>
+    <span data-ttu-id="d1414-157">AC04</span><span class="sxs-lookup"><span data-stu-id="d1414-157">AC04</span></span> | <span data-ttu-id="d1414-158">ClosedAccountNumber</span><span class="sxs-lookup"><span data-stu-id="d1414-158">ClosedAccountNumber</span></span>
+    <span data-ttu-id="d1414-159">AC05</span><span class="sxs-lookup"><span data-stu-id="d1414-159">AC05</span></span> | <span data-ttu-id="d1414-160">ClosedDebtorAccountNumber</span><span class="sxs-lookup"><span data-stu-id="d1414-160">ClosedDebtorAccountNumber</span></span>
+    <span data-ttu-id="d1414-161">AC06</span><span class="sxs-lookup"><span data-stu-id="d1414-161">AC06</span></span> | <span data-ttu-id="d1414-162">BlockedAccount</span><span class="sxs-lookup"><span data-stu-id="d1414-162">BlockedAccount</span></span>
+
+5. <span data-ttu-id="d1414-163">Pokud soubor camt.054 obsahuje poplatky za transakce, které chcete zaúčtovat spolu s příchozí platbou, vytvořte pro platební poplatek na stránce **Platební poplatky dodavatele**.</span><span class="sxs-lookup"><span data-stu-id="d1414-163">If the camt.054 file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the **Vendor payment fee** page.</span></span> <span data-ttu-id="d1414-164">Poté na stránce **Způsoby platby** přidružte platební poplatek k bankovnímu účtu v nastavení platebního poplatku.</span><span class="sxs-lookup"><span data-stu-id="d1414-164">Then, on the **Methods of payment** page, associate the payment fee with the bank account in the payment fee setup.</span></span>
+
+## <a name="import-the-pain002-status-return-or-camt054-debit-advice-files-into-the-vendor-payment-journal"></a><span data-ttu-id="d1414-165">Importujte soubor vrácení stavu pain.002 nebo debetního avíza camt.054 do deníku plateb dodavatele</span><span class="sxs-lookup"><span data-stu-id="d1414-165">Import the pain.002 status return or camt.054 debit advice files into the Vendor payment journal</span></span>
+1. <span data-ttu-id="d1414-166">Otevřete stránku **Platební převody** v nabídce Závazky.</span><span class="sxs-lookup"><span data-stu-id="d1414-166">Open the **Payment transfers** page in Accounts Payable menu.</span></span>
+2. <span data-ttu-id="d1414-167">Na stránce **Převody plateb** klikněte na **Soubor vrácení – dodavatel**.</span><span class="sxs-lookup"><span data-stu-id="d1414-167">On the **Payment transfers** page, click **Return file - vendor**.</span></span>
+3. <span data-ttu-id="d1414-168">Vyberte metodu platby, která má požadované nastavení pro soubory ISO20022, a klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="d1414-168">Select the method of payment that has the required settings for ISO20022 files, and then click **OK**.</span></span>
+4. <span data-ttu-id="d1414-169">Vyberte formát souboru, který chcete importovat, a klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="d1414-169">Select the file format that you plan to import, and then click **OK**.</span></span>
+5. <span data-ttu-id="d1414-170">Zadejte požadované parametry a cestu k souboru a klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="d1414-170">Specify the required parameters and the path of the file, and then click **OK**.</span></span>
+
+<span data-ttu-id="d1414-171">Při importu souboru pain.002 se aktualizuje stav řádků platby dodavatele na základě informací v importovaném souboru.</span><span class="sxs-lookup"><span data-stu-id="d1414-171">If you're importing the pain.002 file, the status of vendor payment lines is updated, based the information in the imported file.</span></span>
+
+<span data-ttu-id="d1414-172">Při importu souboru camt.054 byste měli zadat následující další parametry:</span><span class="sxs-lookup"><span data-stu-id="d1414-172">If you're importing the camt.054 file, you should specify the following additional parameters:</span></span>
+
+- <span data-ttu-id="d1414-173">**ID poplatku** – zadejte ID poplatku, které bude definovat nové řádky poplatků plateb, které budou vytvořeny na řádku deníku plateb dodavatele, pokud je k dispozici v souboru camt.054.</span><span class="sxs-lookup"><span data-stu-id="d1414-173">**Fee ID** – Enter the Fee ID which will define new payment fee lines, which will be created on the Vendor payment journal line if a charge amount is present in the camt.054 file.</span></span>
+- <span data-ttu-id="d1414-174">**Název nového deníku** a **Popis nového deníku** – zadejte název a popis deníku, do kterého budou převedeny zpracované transakce.</span><span class="sxs-lookup"><span data-stu-id="d1414-174">**New journal name** and **New journal description** – Enter the name and description of the journal that processed transactions will be transferred to.</span></span> <span data-ttu-id="d1414-175">Po převodu je nutné přiřadit v novém deníku nová čísla dokladů.</span><span class="sxs-lookup"><span data-stu-id="d1414-175">After the transfer, new voucher numbers should be assigned in the new journal.</span></span>
+- <span data-ttu-id="d1414-176">**Import transakcí přímého debetu** – Nastavte tuto možnost na **Ano**, pokud odchozí přímé debety musí být importovány do deníku plateb dodavatele.</span><span class="sxs-lookup"><span data-stu-id="d1414-176">**Import direct debit transactions** – Set this option to **Yes** if outgoing direct debits must be imported into the Vendor payment journal.</span></span>
+- <span data-ttu-id="d1414-177">**Název deníku** – Definujte nový název deníku pro importované transakce přímého debetu.</span><span class="sxs-lookup"><span data-stu-id="d1414-177">**Journal name** – Define a new journal name for the imported direct debit transactions.</span></span>
+- <span data-ttu-id="d1414-178">**Vyrovnat transakce** – nastavte tuto možnost na **Ano**, pokud musí být importované platby dodavatele vyrovnány s fakturami, které jsou nalezeny v systému.</span><span class="sxs-lookup"><span data-stu-id="d1414-178">**Settle transactions** – Set this option to **Yes** if imported vendor payments must be settled with invoices that are found in the system.</span></span>
+
+<span data-ttu-id="d1414-179">Můžete zobrazit importované informace na stránce **Platební převody**.</span><span class="sxs-lookup"><span data-stu-id="d1414-179">You can view the imported information on the **Payment transfers** page.</span></span> 
+
+## <a name="additional-details"></a><span data-ttu-id="d1414-180">Další podrobnosti</span><span class="sxs-lookup"><span data-stu-id="d1414-180">Additional details</span></span>
+
+<span data-ttu-id="d1414-181">Při importu konfigurace formátu z LCS importujete celý stromu konfigurace, což znamená, že jsou zahrnuty konfigurace modelu a mapování modelu.</span><span class="sxs-lookup"><span data-stu-id="d1414-181">When you import a format configuration from LCS, you import the whole configuration tree which means that the Model and Model mapping configurations are included.</span></span> <span data-ttu-id="d1414-182">V modelu platby počínaje verzí 8 jsou mapování umístěna v samostatných ER konfiguracích ve stromové struktuře řešení (mapování modelu platby 1611, mapování modelu platby do cílového umístění ISO20022 atd).</span><span class="sxs-lookup"><span data-stu-id="d1414-182">In the Payment model starting from version 8, the mappings are located in separate ER configurations in the solution tree (Payment model mapping 1611, Payment model mapping to destination ISO20022, etc).</span></span> <span data-ttu-id="d1414-183">Existuje mnoho různých modelů platby pod jedním modelem (platebním modelem), proto je nakládání se samostatným mapováním klíčové pro snadnou údržbu řešení.</span><span class="sxs-lookup"><span data-stu-id="d1414-183">There are many different payment formats under one model (Payment model), thus separate mapping handling is a key for easy solution maintenance.</span></span> <span data-ttu-id="d1414-184">Zvažte například tento scénář: použijete ISO20022 platby k vytvoření souborů převodu kreditu a poté importujete vrácené zprávy od banky.</span><span class="sxs-lookup"><span data-stu-id="d1414-184">For example, consider this scenario: you use ISO20022 payments to generate credit transfer files and then you import the return messages from the bank.</span></span> <span data-ttu-id="d1414-185">V tomto scénáři byste měli používat následující konfigurace:</span><span class="sxs-lookup"><span data-stu-id="d1414-185">In this scenario, you should use the following configurations:</span></span>
+
+ - <span data-ttu-id="d1414-186">**Model platby**</span><span class="sxs-lookup"><span data-stu-id="d1414-186">**Payment model**</span></span>
+ - <span data-ttu-id="d1414-187">**Mapování modelu platby 1611** – toto mapování se použije ke generování souboru exportu</span><span class="sxs-lookup"><span data-stu-id="d1414-187">**Payment model mapping 1611** – this mapping will be used to generate the export file</span></span>
+ - <span data-ttu-id="d1414-188">**Mapování modelu platby do cílového umístění ISO20022** – tato konfigurace obsahuje všechna mapování, která budou použitá pro import dat (směr mapování "do cílového umístění")</span><span class="sxs-lookup"><span data-stu-id="d1414-188">**Payment model mapping to destination ISO20022** – this configuration includes all mappings which will be used to import the data (“to destination” mapping direction)</span></span>
+ - <span data-ttu-id="d1414-189">**Převedení kreditu ISO20022** – tato konfigurace zahrnuje komponentu formátu, která zodpovídá za generování souboru exportu (pain.001) podle mapování modelu platby 1611, a také formát pro komponentu mapování modelu, která bude použita společně s mapováním modelu platby do cílového umístění ISO20022 k registraci exportovaných plateb v systému pro další účely importu (import v technické tabulce CustVendProcessedPayments)</span><span class="sxs-lookup"><span data-stu-id="d1414-189">**ISO20022 Credit transfer** – this configuration includes a format component that is responsible for export file generation (pain.001) based on the Payment model mapping 1611, as well as a format to model mapping component which will be used together with Payment model mapping to destination ISO20022 to register exported payments in the system for further import purposes (import in CustVendProcessedPayments technical table)</span></span>
+ - <span data-ttu-id="d1414-190">**Převedení kreditu ISO20022 (CE)**, kde CE odpovídá příponě země – odvozený formát k převodu kreditu ISO20022 se stejnou strukturou a s určitými rozdíly specifickými pro zemi</span><span class="sxs-lookup"><span data-stu-id="d1414-190">**ISO20022 Credit transfer (CE)**, where CE correspond to country extension – derived format to the ISO20022 Credit transfer with the same structure and with certain country-specific differences</span></span>
+ - <span data-ttu-id="d1414-191">**Pain.002** – tento formát se použije společně s mapování modelu platby do cílového umístění ISO20022, aby se naimportoval soubor pain.002 do deníku převodů plateb dodavatele</span><span class="sxs-lookup"><span data-stu-id="d1414-191">**Pain.002** – this format will be used together with the Payment model mapping to destination ISO20022 in order to import the pain.002 file into vendor payments transfers journal</span></span>
+ - <span data-ttu-id="d1414-192">**Camt.054** – tento formát se použije společně s mapování modelu platby do cílového umístění ISO20022, aby se naimportoval soubor camt.054 do deníku převodů plateb dodavatele</span><span class="sxs-lookup"><span data-stu-id="d1414-192">**Camt.054** – this format will be used together with the Payment model mapping to destination ISO20022 to import the camt.054 file into vendor payments transfers journal.</span></span> <span data-ttu-id="d1414-193">Stejná konfigurace formátu se použije ve funkci importu plateb odběratelů, ale použije se odlišné mapování konfiguraci mapování modelu platby ISO20022 do cílového umístění.</span><span class="sxs-lookup"><span data-stu-id="d1414-193">The same format configuration will be used in customer payments import functionality, but the different mapping will be used in the Payment model mapping to destination ISO20022 configuration.</span></span>
+
+<span data-ttu-id="d1414-194">Další informace o elektronickém výkaznictví naleznete v tématu [Přehled elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting.md).</span><span class="sxs-lookup"><span data-stu-id="d1414-194">For more information about Electronic reporting, refer to [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md).</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="d1414-195">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="d1414-195">Additional resources</span></span>
+- [<span data-ttu-id="d1414-196">Vytváření a export plateb dodavatelů s použitím formátu platby ISO20022</span><span class="sxs-lookup"><span data-stu-id="d1414-196">Create and export vendor payments using ISO20022 payment format</span></span>](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
+- [<span data-ttu-id="d1414-197">Import konfigurace převodu kreditu ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="d1414-197">Import ISO20022 credit transfer configuration</span></span>](./tasks/import-iso20022-credit-transfer-configuration.md)
+- [<span data-ttu-id="d1414-198">Import konfigurace přímého debetu ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="d1414-198">Import ISO20022 direct debit configuration</span></span>](./tasks/import-iso20022-direct-debit-configuration.md)
+- [<span data-ttu-id="d1414-199">Nastavení bankovních účtů společnosti pro převody kreditu ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="d1414-199">Set up company bank accounts for ISO20022 credit transfers</span></span>](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
+- [<span data-ttu-id="d1414-200">Nastavení bankovních účtů společnosti pro přímé debety ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="d1414-200">Set up company bank accounts for ISO20022 direct debits</span></span>](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
+- [<span data-ttu-id="d1414-201">Nastavení bankovních účtů odběratelů a zákazníků pro přímé debety ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="d1414-201">Set up customers and customer bank accounts for ISO20022 direct debits</span></span>](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
+- [<span data-ttu-id="d1414-202">Nastavení způsobu platby pro převody kreditu ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="d1414-202">Set up method of payment for ISO20022 credit transfer</span></span>](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
+- [<span data-ttu-id="d1414-203">Nastavení způsobu platby pro přímý debet ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="d1414-203">Set up method of payment for ISO20022 direct debit</span></span>](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [<span data-ttu-id="d1414-204">Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022</span><span class="sxs-lookup"><span data-stu-id="d1414-204">Set up vendors and vendor bank accounts for ISO20022 credit transfers</span></span>](./tasks/set-up-vendor-iso20022-credit-transfers.md)

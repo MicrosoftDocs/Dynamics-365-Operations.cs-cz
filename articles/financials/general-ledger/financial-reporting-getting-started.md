@@ -1,471 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="financial-reporting-getting-started.md" target-language="cs-CZ">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>financial-reporting-getting-started.2bf0de.b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>06c8dc5bc4e1c41f68e1cda141d61529768be958</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\general-ledger\financial-reporting-getting-started.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Financial reporting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finanční výkaznictví</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 for Finance and Operations a jak používat finanční možnosti vytváření sestav.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>It includes a description of the default financial reports that are provided.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsahuje popis výchozích finančních sestav, které jsou k dispozici.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Financial reporting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finanční výkaznictví</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 for Finance and Operations a jak používat finanční možnosti vytváření sestav.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>It includes a description of the default financial reports that are provided.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsahuje popis výchozích finančních sestav, které jsou k dispozici.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Accessing financial reporting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přístup k finančnímu výkaznictví</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>You can find the <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> menu in the following places in Finance and Operations:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nabídku <bpt id="p1">**</bpt>Finanční výkaznictví<ept id="p1">**</ept> najdete v aplikaci Finance and Operations na těchto místech:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source><bpt id="p1">**</bpt>General Ledger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Hlavní kniha<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Dotazy a sestavy<ept id="p2">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquires and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Basic budgeting<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Rozpočet<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Dotazy a sestavy<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Základní rozpočtování<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budget planning<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Rozpočet<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Dotazy a sestavy<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Plánování rozpočtu<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">**</bpt>Budgeting<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inquiries and reports<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Budget control<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Rozpočtování<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Dotazy a sestavy<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kontrola rozpočtu<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Consolidations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konsolidace</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>To create and generate financial reports for a legal entity, you must set up the following information for that legal entity:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li vytvořit a generovat finanční sestavy pro právnickou osobu, nastavte následující informace pro tuto právnickou osobu:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Fiscal calendar</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiskální kalendář</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Chart of accounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účtová osnova</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Měna</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce finančního vykazování jsou k dispozici pro uživatele, kteří mají odpovídající oprávnění a funkční oprávnění přiřazené prostřednictvím jejich rolí zabezpečení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>The following sections list these privileges and duties, together with the associated roles.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následujících oddíly uvádí tato oprávnění a funkční oprávnění, jakož i související role.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Duties</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkční oprávnění</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Duty label</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popisek pro funkční oprávnění</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>AOT name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Název AOT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Maintain financial reporting security</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udržovat zabezpečení finančního výkaznictví</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Maintain financial reporting security and perform administrative tasks.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udržujte zabezpečení finančního výkaznictví a provádějte úkoly správy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>FinancialReportsSecurityMaintain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsSecurityMaintain</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Maintain financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udržovat finanční sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Design and maintain financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Navrhujte a udržujte finanční sestavy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>FinancialReportsMaintain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsMaintain</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Generate financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generovat finanční sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Generate and refresh financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generujte a aktualizujte finanční sestavy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>FinancialReportsGenerate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsGenerate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Review financial performance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Posoudit finanční výkonnost</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Review and analyze financial performance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Posuzujte a analyzujte finanční výkonnost.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>FinancialReportsPerfReview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsPerfReview</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Privileges</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oprávnění</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Privilege label</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popisek pro oprávnění</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>AOT name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Název AOT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Maintain financial reporting security</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udržovat zabezpečení finančního výkaznictví</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Maintain financial reporting security and perform administrative tasks.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Udržujte zabezpečení finančního výkaznictví a provádějte úkoly správy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>FinancialReportsSecuritySystemMaintain</source><target logoport:matchpercent="0" state="translated">FinancialReportsSecuritySystemMaintain</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Maintain financial reports</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Udržovat finanční sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Design and maintain financial reports.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Navrhujte a udržujte finanční sestavy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>FinancialReportsMaintainReports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsMaintainReports</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Generate financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generovat finanční sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Generate and refresh financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generujte a aktualizujte finanční sestavy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>FinancialReportsGenerateReports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsGenerateReports</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>View financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazit finanční sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>View financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazujte finanční sestavy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>FinancialReportsView</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FinancialReportsView</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Roles</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Role</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Privilege label</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popisek pro oprávnění</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Duty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Clo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Roles</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Role</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Maintain financial reporting security</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udržovat zabezpečení finančního výkaznictví</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Maintain financial reporting security</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udržovat zabezpečení finančního výkaznictví</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Security administrator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Manažer zabezpečení</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Maintain financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udržovat finanční sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Maintain financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udržovat finanční sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Accounting Manager, Accounting Supervisor, Financial Controller, Budget Manager</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní účetní, Účetní supervizor, Finančním kontrolor, Správce rozpočtu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Generate financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generovat finanční sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Generate financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generovat finanční sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>CEO, CFO, Accountant</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CEO, CFO, Účetní</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>View financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazit finanční sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Review financial performance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Posoudit finanční výkonnost</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>None assigned</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nepřiřazeno</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jakmile je uživatel přidán nebo se změní role, měl by mít uživatel během několika minut možnost přístupu k finančnímu výkaznictví.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The sysadmin role is added to all roles in financial reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka:<ept id="p1">**</ept> Role sysadmin je přidána do všech rolí ve finančních výkazech.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Default reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výchozí sestavy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Financial reporting provides 22 default financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finanční vykazování poskytuje 22 výchozích finančních výkazů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Every report uses the default main account categories in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Každý výkaz používá výchozí kategorie hlavního účtu v aplikaci Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>You can use these reports as is or as a starting point for your financial reporting needs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto sestavy lze použít tak, jak jsou, nebo slouží jako výchozí bod vaše potřeby finančního vykazování.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kromě tradiční finančních výkazů, například výkaz zisků a ztrát nebo rozvaha, tyto výchozí sestavy zahrnují sestavy, které zobrazují různé typy finančních výkazů, které je možné vytvořit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Default report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výchozí sestava</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>12 Month Rolling Single Column Income Statement – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12měsíční kumulativní výkaz příjmu s jedním sloupcem – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>View an organization’s profitability for the past 12 months in a single column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte ziskovost organizace za posledních 12 měsíců v jednom sloupci.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>12 Month Trend Income Statement – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12měsíční výkaz příjmu trendů – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>View an organization’s profitability for each of the last 12 months.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte ziskovost organizace za každý ze 12 posledních měsíců.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>These 12 months can span more than one fiscal year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Těchto 12 měsíců může zahrnovat více než jeden fiskální rok.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Actual vs Budget – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skutečnost vs rozpočet – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte podrobné informace o zůstatku pro všechny účty původního rozpočtu a porovnejte revidovaný rozpočet se skutečnými hodnotami, které vykazují odchylku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Audit Details – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podrobnosti auditu – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>View detailed balance information for all accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte podrobné informace o zůstatku pro všechny účty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato sestava zobrazuje debetní a kreditní zůstatky v měně vykazování a místní měně, společně s dalšími informacemi o transakci, jako je například ID uživatele, uživatel, který naposledy upravil data, datum poslední změny a kód ID deníku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Balance List – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výpis zůstatků – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>View detailed balance information for all accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte podrobné informace o zůstatku pro všechny účty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato sestava zobrazuje počáteční a konečné zůstatky a debetní a kreditní zůstatky pro aktuální období a rok k datu, společně s dalšími informacemi o transakci, jako je například doklad.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Balance Sheet – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozvaha – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>View the organization's financial position for the year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte přehled finanční pozice organizace pro rok.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Balance Sheet and Income Statement Side by Side - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozvaha a výpis příjmu vedle sebe – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>View the organization’s financial position and profitability for the year side by side.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte finanční pozici a ziskovost organizace za rok vedle sebe.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Cash Flow – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Cashflow – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Gain insight into the cash that is coming in to and going out of the organization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Získejte přehled o hotovosti, která přichází do organizace a odchází z ní.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Detailed JE and TB Review – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podrobná revize JE a TB – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>View opening balance and activity information for all accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte počáteční zůstatek a informace o aktivitě pro všechny účty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Detailed Trial Balance - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podrobná předvaha – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte informace o zůstatku na všech účtech, které mají zůstatky má dáti a dal, a jejich čisté hodnoty, spolu s datem transakce, dokladem a popisem deníku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Expenses Three Year Quarterly Trend – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Čtvrtletní trend výdajů za tři roky – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Gain insight into expenses for the past 12 quarters over the previous three years.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Získejte přehled o výdajích za posledních 12 čtvrtletí v předchozích třech letech.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Financial Captions JE and TB Review – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podrobná revize finančních popisků JE a TB – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>See an overview of the balances and activity for the asset, liability, owner’s equity, revenue, expense, gain, or loss financial captions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte přehled zůstatků a aktivity pro finanční popisky aktiv, pasiv, jmění vlastníka, výnosů, výdajů, zisků nebo ztrát.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Income Statement – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Výkaz příjmu – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>View the organization’s profitability for the current period and the year to date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Umožňuje zobrazit ziskovost organizace za aktuální období a také od začátku roku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Ledger Transaction List – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seznam účetních transakcí – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>View detailed balance information for all accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte podrobné informace o zůstatku pro všechny účty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato sestava zobrazuje zůstatky má dáti a dal a další informace o transakci, jako je například datum transakce, číslo deníku, doklad, typ zaúčtování a sledovací číslo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Ratios – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poměry – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>View the solvency, profitability, and efficiency ratios for the organization for the year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Umožňuje zobrazit poměry solventnosti, ziskovosti a efektivnosti vaší organizace za rok.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Rolling 12 Month Expenses – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12měsíční kumulované výdaje – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Gain insight into expenses for each of the last 12 months.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Získejte přehled o výdajích pro každý z posledních 12 měsíců.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>These 12 months can span more than one fiscal year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Těchto 12 měsíců může zahrnovat více než jeden fiskální rok.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Rolling Quarter Income Statement – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kumulovaný výkaz čtvrtletích příjmů – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>View the organization’s profitability on a quarterly basis for the past year and the year to date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte ziskovost organizace čtvrtletně za minulý rok a rok k datu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Side by Side Balance Sheet – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozvaha vedle sebe – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>View the organization's financial position for the year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazte přehled finanční pozice organizace pro rok.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>This report shows assets and liability, and shareholder equity side by side.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato sestava uvádí aktiva a pasiva a jmění akcionářů vedle sebe.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Summary Trial Balance – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Souhrnná předvaha – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsahuje informace o zůstatku pro všechny účty s počátečními a závěrkovými zůstatky a zůstatky za má dáti a dal spolu s jejich čistým rozdílem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Summary Trial Balance Year Over Year – Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Souhrnná roční předvaha – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsahuje informace o zůstatku pro všechny účty s počátečními a závěrkovými zůstatky a zůstatky za má dáti a dal spolu s jejich čistým rozdílem pro aktuální a minulý rok.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Weekly Sales and Discounts - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Týdenní prodeje a slevy – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Gain insight into sales and discounts for each week in a month.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Získejte přehled o prodeji a slevách pro každý týden v měsíci.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>This report includes a four-week total.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato sestava zahrnuje součet za čtyři týdny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Budget Funds Available - Default</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dostupné rozpočtové prostředky – výchozí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zobrazení podrobného porovnání revidovaného rozpočtu, skutečných výdajů, rezervací rozpočtu a rozpočtových prostředků, které jsou k dispozici pro všechny účty</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Opening financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otevření finančních výkazů</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>When you click the <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> menu, the list of default financial reports for the company is shown.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po kliknutí na nabídku <bpt id="p1">**</bpt>Finanční vykazování<ept id="p1">**</ept> se zobrazí seznam výchozí finančních výkazů pro danou společnost.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>You can then open or modify a report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poté můžete otevřít nebo upravit sestavu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>To open one of the default reports, select the report name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li otevřít jednu z výchozích sestav, vyberte název sestavy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>The first time that a report is opened, it's automatically generated for the previous month.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při prvním otevření se sestava automaticky generuje pro předchozí měsíc.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>For example, if you open a report for the first time in August 2016, the report is generated for July 31, 2016.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například pokud otevřete sestavu poprvé v srpnu 2016, je sestava generována pro 31. července 2016.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po otevření sestavy můžete začít s prohlížením rozbalením specifických částí dat a změnou možností sestavy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Creating and modifying financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytváření a úpravy finančních výkazů</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>From the financial reports list, you can create a new report or modify an existing report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ze seznamu finančních výkazů lze vytvořit novou sestavu nebo upravit existující sestavu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>If you have the appropriate permissions, you can create a new financial report by clicking <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the Action Pane.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud máte příslušná oprávnění, můžete vytvořit novou finanční sestavu klepnutím na <bpt id="p1">**</bpt>Nové<ept id="p1">**</ept> v podokně akcí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>A report designer program is downloaded to your device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Program Sestava návrháře se stáhne do zařízení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>After the report designer starts you can then create the new report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po spuštění Návrháře sestavy pak můžete vytvořit novou sestavu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>After you save the new report, it appears in the financial reports list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po uložení nové sestavy se zobrazí v seznamu finančních výkazů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>The list shows only reports that were created for the company that you're using in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V seznamu se zobrazí pouze sestavy, které byly vytvořeny pro společnost, kterou právě používáte v aplikaci Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Počítač, do kterého stahujete klienta návrháře sestav musí mít nainstalovanou verzi 4.6.2 rozhraní Microsoft .NET Framework.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>This version of the Microsoft .NET Framework can be downloaded and installed from the <bpt id="p1">[</bpt>Microsoft Download Center<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=53345)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat z <bpt id="p1">[</bpt>Microsoft Download Center<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=53345)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud používáte Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>You can also modify a report that appears in the financial reports list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Také lze upravit sestavu, která se zobrazí v seznamu finančních výkazů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>When the area around the report name is selected, click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> on the Action Pane.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jakmile se vybere oblast kolem názvu sestavy, klikněte na tlačítko <bpt id="p1">**</bpt>Upravit<ept id="p1">**</ept> v podokně akcí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>The report designer program starts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spustí se program Návrhář sestav.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další zdroje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source><bpt id="p1">[</bpt>View financial reports<ept id="p1">](view-financial-reports.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Zobrazení finančních sestav<ept id="p1">](view-financial-reports.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Finanční výkaznictví
+description: Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 for Finance and Operations a jak používat finanční možnosti vytváření sestav. Obsahuje popis výchozích finančních sestav, které jsou k dispozici.
+author: aprilolson
+manager: AnnBe
+ms.date: 05/22/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: FinancialReports
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 10444
+ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
+ms.search.region: Global
+ms.author: aolson
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594953"
+---
+# <a name="financial-reporting"></a><span data-ttu-id="a6947-104">Finanční výkaznictví</span><span class="sxs-lookup"><span data-stu-id="a6947-104">Financial reporting</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="a6947-105">Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 for Finance and Operations a jak používat finanční možnosti vytváření sestav.</span><span class="sxs-lookup"><span data-stu-id="a6947-105">This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities.</span></span> <span data-ttu-id="a6947-106">Obsahuje popis výchozích finančních sestav, které jsou k dispozici.</span><span class="sxs-lookup"><span data-stu-id="a6947-106">It includes a description of the default financial reports that are provided.</span></span>
+
+<a name="accessing-financial-reporting"></a><span data-ttu-id="a6947-107">Přístup k finančnímu výkaznictví</span><span class="sxs-lookup"><span data-stu-id="a6947-107">Accessing financial reporting</span></span>
+-----------------------------
+
+<span data-ttu-id="a6947-108">Nabídku **Finanční výkaznictví** najdete v aplikaci Finance and Operations na těchto místech:</span><span class="sxs-lookup"><span data-stu-id="a6947-108">You can find the **Financial reporting** menu in the following places in Finance and Operations:</span></span>
+
+-   <span data-ttu-id="a6947-109">**Hlavní kniha** &gt; **Dotazy a sestavy**</span><span class="sxs-lookup"><span data-stu-id="a6947-109">**General Ledger** &gt; **Inquiries and reports**</span></span>
+-   <span data-ttu-id="a6947-110">**Rozpočet** &gt; **Dotazy a sestavy** &gt; **Základní rozpočtování**</span><span class="sxs-lookup"><span data-stu-id="a6947-110">**Budgeting** &gt; **Inquires and reports** &gt; **Basic budgeting**</span></span>
+-   <span data-ttu-id="a6947-111">**Rozpočet** &gt; **Dotazy a sestavy** &gt; **Plánování rozpočtu**</span><span class="sxs-lookup"><span data-stu-id="a6947-111">**Budgeting** &gt; **Inquiries and reports** &gt; **Budget planning**</span></span>
+-   <span data-ttu-id="a6947-112">**Rozpočtování** &gt; **Dotazy a sestavy** &gt; **Kontrola rozpočtu**</span><span class="sxs-lookup"><span data-stu-id="a6947-112">**Budgeting** &gt; **Inquiries and reports** &gt; **Budget control**</span></span>
+-   <span data-ttu-id="a6947-113">Konsolidace</span><span class="sxs-lookup"><span data-stu-id="a6947-113">Consolidations</span></span>
+
+<span data-ttu-id="a6947-114">Chcete-li vytvořit a generovat finanční sestavy pro právnickou osobu, nastavte následující informace pro tuto právnickou osobu:</span><span class="sxs-lookup"><span data-stu-id="a6947-114">To create and generate financial reports for a legal entity, you must set up the following information for that legal entity:</span></span>
+
+-   <span data-ttu-id="a6947-115">Fiskální kalendář</span><span class="sxs-lookup"><span data-stu-id="a6947-115">Fiscal calendar</span></span>
+-   <span data-ttu-id="a6947-116">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="a6947-116">Ledger</span></span>
+-   <span data-ttu-id="a6947-117">Účtová osnova</span><span class="sxs-lookup"><span data-stu-id="a6947-117">Chart of accounts</span></span>
+-   <span data-ttu-id="a6947-118">Měna</span><span class="sxs-lookup"><span data-stu-id="a6947-118">Currency</span></span>
+
+<span data-ttu-id="a6947-119">Funkce finančního vykazování jsou k dispozici pro uživatele, kteří mají odpovídající oprávnění a funkční oprávnění přiřazené prostřednictvím jejich rolí zabezpečení.</span><span class="sxs-lookup"><span data-stu-id="a6947-119">The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles.</span></span> <span data-ttu-id="a6947-120">Následujících oddíly uvádí tato oprávnění a funkční oprávnění, jakož i související role.</span><span class="sxs-lookup"><span data-stu-id="a6947-120">The following sections list these privileges and duties, together with the associated roles.</span></span>
+
+### <a name="duties"></a><span data-ttu-id="a6947-121">Funkční oprávnění</span><span class="sxs-lookup"><span data-stu-id="a6947-121">Duties</span></span>
+
+| <span data-ttu-id="a6947-122">Popisek pro funkční oprávnění</span><span class="sxs-lookup"><span data-stu-id="a6947-122">Duty label</span></span>                            | <span data-ttu-id="a6947-123">Popis</span><span class="sxs-lookup"><span data-stu-id="a6947-123">Description</span></span>                                                             | <span data-ttu-id="a6947-124">Název AOT</span><span class="sxs-lookup"><span data-stu-id="a6947-124">AOT name</span></span>                         |
+|---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
+| <span data-ttu-id="a6947-125">Udržovat zabezpečení finančního výkaznictví</span><span class="sxs-lookup"><span data-stu-id="a6947-125">Maintain financial reporting security</span></span> | <span data-ttu-id="a6947-126">Udržujte zabezpečení finančního výkaznictví a provádějte úkoly správy.</span><span class="sxs-lookup"><span data-stu-id="a6947-126">Maintain financial reporting security and perform administrative tasks.</span></span> | <span data-ttu-id="a6947-127">FinancialReportsSecurityMaintain</span><span class="sxs-lookup"><span data-stu-id="a6947-127">FinancialReportsSecurityMaintain</span></span> |
+| <span data-ttu-id="a6947-128">Udržovat finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-128">Maintain financial reports</span></span>            | <span data-ttu-id="a6947-129">Navrhujte a udržujte finanční sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6947-129">Design and maintain financial reports.</span></span>                                  | <span data-ttu-id="a6947-130">FinancialReportsMaintain</span><span class="sxs-lookup"><span data-stu-id="a6947-130">FinancialReportsMaintain</span></span>         |
+| <span data-ttu-id="a6947-131">Generovat finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-131">Generate financial reports</span></span>            | <span data-ttu-id="a6947-132">Generujte a aktualizujte finanční sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6947-132">Generate and refresh financial reports.</span></span>                                 | <span data-ttu-id="a6947-133">FinancialReportsGenerate</span><span class="sxs-lookup"><span data-stu-id="a6947-133">FinancialReportsGenerate</span></span>         |
+| <span data-ttu-id="a6947-134">Posoudit finanční výkonnost</span><span class="sxs-lookup"><span data-stu-id="a6947-134">Review financial performance</span></span>          | <span data-ttu-id="a6947-135">Posuzujte a analyzujte finanční výkonnost.</span><span class="sxs-lookup"><span data-stu-id="a6947-135">Review and analyze financial performance.</span></span>                               | <span data-ttu-id="a6947-136">FinancialReportsPerfReview</span><span class="sxs-lookup"><span data-stu-id="a6947-136">FinancialReportsPerfReview</span></span>       |
+
+### <a name="privileges"></a><span data-ttu-id="a6947-137">Oprávnění</span><span class="sxs-lookup"><span data-stu-id="a6947-137">Privileges</span></span>
+
+| <span data-ttu-id="a6947-138">Popisek pro oprávnění</span><span class="sxs-lookup"><span data-stu-id="a6947-138">Privilege label</span></span>                       | <span data-ttu-id="a6947-139">Popis</span><span class="sxs-lookup"><span data-stu-id="a6947-139">Description</span></span>                                                             | <span data-ttu-id="a6947-140">Název AOT</span><span class="sxs-lookup"><span data-stu-id="a6947-140">AOT name</span></span>                         |
+|---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
+| <span data-ttu-id="a6947-141">Udržovat zabezpečení finančního výkaznictví</span><span class="sxs-lookup"><span data-stu-id="a6947-141">Maintain financial reporting security</span></span> | <span data-ttu-id="a6947-142">Udržujte zabezpečení finančního výkaznictví a provádějte úkoly správy.</span><span class="sxs-lookup"><span data-stu-id="a6947-142">Maintain financial reporting security and perform administrative tasks.</span></span> | <span data-ttu-id="a6947-143">FinancialReportsSecuritySystemMaintain</span><span class="sxs-lookup"><span data-stu-id="a6947-143">FinancialReportsSecuritySystemMaintain</span></span> |
+| <span data-ttu-id="a6947-144">Udržovat finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-144">Maintain financial reports</span></span>            | <span data-ttu-id="a6947-145">Navrhujte a udržujte finanční sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6947-145">Design and maintain financial reports.</span></span>                                  | <span data-ttu-id="a6947-146">FinancialReportsMaintainReports</span><span class="sxs-lookup"><span data-stu-id="a6947-146">FinancialReportsMaintainReports</span></span>  |
+| <span data-ttu-id="a6947-147">Generovat finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-147">Generate financial reports</span></span>            | <span data-ttu-id="a6947-148">Generujte a aktualizujte finanční sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6947-148">Generate and refresh financial reports.</span></span>                                 | <span data-ttu-id="a6947-149">FinancialReportsGenerateReports</span><span class="sxs-lookup"><span data-stu-id="a6947-149">FinancialReportsGenerateReports</span></span>  |
+| <span data-ttu-id="a6947-150">Zobrazit finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-150">View financial reports</span></span>                | <span data-ttu-id="a6947-151">Zobrazujte finanční sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6947-151">View financial reports.</span></span>                                                 | <span data-ttu-id="a6947-152">FinancialReportsView</span><span class="sxs-lookup"><span data-stu-id="a6947-152">FinancialReportsView</span></span>             |
+
+### <a name="roles"></a><span data-ttu-id="a6947-153">Role</span><span class="sxs-lookup"><span data-stu-id="a6947-153">Roles</span></span>
+
+| <span data-ttu-id="a6947-154">Popisek pro oprávnění</span><span class="sxs-lookup"><span data-stu-id="a6947-154">Privilege label</span></span>                       | <span data-ttu-id="a6947-155">Clo</span><span class="sxs-lookup"><span data-stu-id="a6947-155">Duty</span></span>                                  | <span data-ttu-id="a6947-156">Role</span><span class="sxs-lookup"><span data-stu-id="a6947-156">Roles</span></span>                                                                           |
+|---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
+| <span data-ttu-id="a6947-157">Udržovat zabezpečení finančního výkaznictví</span><span class="sxs-lookup"><span data-stu-id="a6947-157">Maintain financial reporting security</span></span> | <span data-ttu-id="a6947-158">Udržovat zabezpečení finančního výkaznictví</span><span class="sxs-lookup"><span data-stu-id="a6947-158">Maintain financial reporting security</span></span> | <span data-ttu-id="a6947-159">Manažer zabezpečení</span><span class="sxs-lookup"><span data-stu-id="a6947-159">Security administrator</span></span>                                                          |
+| <span data-ttu-id="a6947-160">Udržovat finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-160">Maintain financial reports</span></span>            | <span data-ttu-id="a6947-161">Udržovat finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-161">Maintain financial reports</span></span>            | <span data-ttu-id="a6947-162">Hlavní účetní, Účetní supervizor, Finančním kontrolor, Správce rozpočtu</span><span class="sxs-lookup"><span data-stu-id="a6947-162">Accounting Manager, Accounting Supervisor, Financial Controller, Budget Manager</span></span> |
+| <span data-ttu-id="a6947-163">Generovat finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-163">Generate financial reports</span></span>            | <span data-ttu-id="a6947-164">Generovat finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-164">Generate financial reports</span></span>            | <span data-ttu-id="a6947-165">CEO, CFO, Účetní</span><span class="sxs-lookup"><span data-stu-id="a6947-165">CEO, CFO, Accountant</span></span>                                                            |
+| <span data-ttu-id="a6947-166">Zobrazit finanční sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-166">View financial reports</span></span>                | <span data-ttu-id="a6947-167">Posoudit finanční výkonnost</span><span class="sxs-lookup"><span data-stu-id="a6947-167">Review financial performance</span></span>          | <span data-ttu-id="a6947-168">Nepřiřazeno</span><span class="sxs-lookup"><span data-stu-id="a6947-168">None assigned</span></span>                                                                   |
+
+<span data-ttu-id="a6947-169">Jakmile je uživatel přidán nebo se změní role, měl by mít uživatel během několika minut možnost přístupu k finančnímu výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="a6947-169">After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes.</span></span> <span data-ttu-id="a6947-170">**Poznámka:** Role sysadmin je přidána do všech rolí ve finančních výkazech.</span><span class="sxs-lookup"><span data-stu-id="a6947-170">**Note:** The sysadmin role is added to all roles in financial reporting.</span></span>
+
+## <a name="default-reports"></a><span data-ttu-id="a6947-171">Výchozí sestavy</span><span class="sxs-lookup"><span data-stu-id="a6947-171">Default reports</span></span>
+<span data-ttu-id="a6947-172">Finanční vykazování poskytuje 22 výchozích finančních výkazů.</span><span class="sxs-lookup"><span data-stu-id="a6947-172">Financial reporting provides 22 default financial reports.</span></span> <span data-ttu-id="a6947-173">Každý výkaz používá výchozí kategorie hlavního účtu v aplikaci Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="a6947-173">Every report uses the default main account categories in Finance and Operations.</span></span> <span data-ttu-id="a6947-174">Tyto sestavy lze použít tak, jak jsou, nebo slouží jako výchozí bod vaše potřeby finančního vykazování.</span><span class="sxs-lookup"><span data-stu-id="a6947-174">You can use these reports as is or as a starting point for your financial reporting needs.</span></span> <span data-ttu-id="a6947-175">Kromě tradiční finančních výkazů, například výkaz zisků a ztrát nebo rozvaha, tyto výchozí sestavy zahrnují sestavy, které zobrazují různé typy finančních výkazů, které je možné vytvořit.</span><span class="sxs-lookup"><span data-stu-id="a6947-175">In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create.</span></span> 
+
+<!--Each report in the following table links to an Office Mix presentation about the report.-->
+
+| <span data-ttu-id="a6947-176">Výchozí sestava</span><span class="sxs-lookup"><span data-stu-id="a6947-176">Default report</span></span>                                                                                         | <span data-ttu-id="a6947-177">Popis</span><span class="sxs-lookup"><span data-stu-id="a6947-177">Description</span></span>                                                                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="a6947-178">12měsíční kumulativní výkaz příjmu s jedním sloupcem – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-178">12 Month Rolling Single Column Income Statement – Default</span></span> | <span data-ttu-id="a6947-179">Zobrazte ziskovost organizace za posledních 12 měsíců v jednom sloupci.</span><span class="sxs-lookup"><span data-stu-id="a6947-179">View an organization’s profitability for the past 12 months in a single column.</span></span>                                                                                                                                                                                                                                      |
+| <span data-ttu-id="a6947-180">12měsíční výkaz příjmu trendů – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-180">12 Month Trend Income Statement – Default</span></span>                 | <span data-ttu-id="a6947-181">Zobrazte ziskovost organizace za každý ze 12 posledních měsíců.</span><span class="sxs-lookup"><span data-stu-id="a6947-181">View an organization’s profitability for each of the last 12 months.</span></span> <span data-ttu-id="a6947-182">Těchto 12 měsíců může zahrnovat více než jeden fiskální rok.</span><span class="sxs-lookup"><span data-stu-id="a6947-182">These 12 months can span more than one fiscal year.</span></span>                                                                                                                                                                                             |
+| <span data-ttu-id="a6947-183">Skutečnost vs rozpočet – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-183">Actual vs Budget – Default</span></span>                                | <span data-ttu-id="a6947-184">Zobrazte podrobné informace o zůstatku pro všechny účty původního rozpočtu a porovnejte revidovaný rozpočet se skutečnými hodnotami, které vykazují odchylku.</span><span class="sxs-lookup"><span data-stu-id="a6947-184">View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.</span></span>                                                                                                                                                                          |
+| <span data-ttu-id="a6947-185">Podrobnosti auditu – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-185">Audit Details – Default</span></span>                                  | <span data-ttu-id="a6947-186">Zobrazte podrobné informace o zůstatku pro všechny účty.</span><span class="sxs-lookup"><span data-stu-id="a6947-186">View detailed balance information for all accounts.</span></span> <span data-ttu-id="a6947-187">Tato sestava zobrazuje debetní a kreditní zůstatky v měně vykazování a místní měně, společně s dalšími informacemi o transakci, jako je například ID uživatele, uživatel, který naposledy upravil data, datum poslední změny a kód ID deníku.</span><span class="sxs-lookup"><span data-stu-id="a6947-187">This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID.</span></span> |
+| <span data-ttu-id="a6947-188">Výpis zůstatků – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-188">Balance List – Default</span></span>                                   | <span data-ttu-id="a6947-189">Zobrazte podrobné informace o zůstatku pro všechny účty.</span><span class="sxs-lookup"><span data-stu-id="a6947-189">View detailed balance information for all accounts.</span></span> <span data-ttu-id="a6947-190">Tato sestava zobrazuje počáteční a konečné zůstatky a debetní a kreditní zůstatky pro aktuální období a rok k datu, společně s dalšími informacemi o transakci, jako je například doklad.</span><span class="sxs-lookup"><span data-stu-id="a6947-190">This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.</span></span>                                                                    |
+| <span data-ttu-id="a6947-191">Rozvaha – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-191">Balance Sheet – Default</span></span>                                   | <span data-ttu-id="a6947-192">Zobrazte přehled finanční pozice organizace pro rok.</span><span class="sxs-lookup"><span data-stu-id="a6947-192">View the organization's financial position for the year.</span></span>                                                                                                                                                                                                                                                             |
+| <span data-ttu-id="a6947-193">Rozvaha a výpis příjmu vedle sebe – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-193">Balance Sheet and Income Statement Side by Side - Default</span></span> | <span data-ttu-id="a6947-194">Zobrazte finanční pozici a ziskovost organizace za rok vedle sebe.</span><span class="sxs-lookup"><span data-stu-id="a6947-194">View the organization’s financial position and profitability for the year side by side.</span></span>                                                                                                                                                                                                                              |
+| <span data-ttu-id="a6947-195">Cashflow – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-195">Cash Flow – Default</span></span>                                       | <span data-ttu-id="a6947-196">Získejte přehled o hotovosti, která přichází do organizace a odchází z ní.</span><span class="sxs-lookup"><span data-stu-id="a6947-196">Gain insight into the cash that is coming in to and going out of the organization.</span></span>                                                                                                                                                                                                                                   |
+| <span data-ttu-id="a6947-197">Podrobná revize JE a TB – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-197">Detailed JE and TB Review – Default</span></span>                      | <span data-ttu-id="a6947-198">Zobrazte počáteční zůstatek a informace o aktivitě pro všechny účty.</span><span class="sxs-lookup"><span data-stu-id="a6947-198">View opening balance and activity information for all accounts.</span></span>                                                                                                                                                                                                                                                      |
+| <span data-ttu-id="a6947-199">Podrobná předvaha – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-199">Detailed Trial Balance - Default</span></span>                         | <span data-ttu-id="a6947-200">Zobrazte informace o zůstatku na všech účtech, které mají zůstatky má dáti a dal, a jejich čisté hodnoty, spolu s datem transakce, dokladem a popisem deníku.</span><span class="sxs-lookup"><span data-stu-id="a6947-200">View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.</span></span>                                                                                                                                  |
+| <span data-ttu-id="a6947-201">Čtvrtletní trend výdajů za tři roky – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-201">Expenses Three Year Quarterly Trend – Default</span></span>             | <span data-ttu-id="a6947-202">Získejte přehled o výdajích za posledních 12 čtvrtletí v předchozích třech letech.</span><span class="sxs-lookup"><span data-stu-id="a6947-202">Gain insight into expenses for the past 12 quarters over the previous three years.</span></span>                                                                                                                                                                                                                                   |
+| <span data-ttu-id="a6947-203">Podrobná revize finančních popisků JE a TB – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-203">Financial Captions JE and TB Review – Default</span></span>            | <span data-ttu-id="a6947-204">Zobrazte přehled zůstatků a aktivity pro finanční popisky aktiv, pasiv, jmění vlastníka, výnosů, výdajů, zisků nebo ztrát.</span><span class="sxs-lookup"><span data-stu-id="a6947-204">See an overview of the balances and activity for the asset, liability, owner’s equity, revenue, expense, gain, or loss financial captions.</span></span>                                                                                                                                                                           |
+| <span data-ttu-id="a6947-205">Výkaz příjmu – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-205">Income Statement – Default</span></span>                                | <span data-ttu-id="a6947-206">Umožňuje zobrazit ziskovost organizace za aktuální období a také od začátku roku.</span><span class="sxs-lookup"><span data-stu-id="a6947-206">View the organization’s profitability for the current period and the year to date.</span></span>                                                                                                                                                                                                                                   |
+| <span data-ttu-id="a6947-207">Seznam účetních transakcí – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-207">Ledger Transaction List – Default</span></span>                        | <span data-ttu-id="a6947-208">Zobrazte podrobné informace o zůstatku pro všechny účty.</span><span class="sxs-lookup"><span data-stu-id="a6947-208">View detailed balance information for all accounts.</span></span> <span data-ttu-id="a6947-209">Tato sestava zobrazuje zůstatky má dáti a dal a další informace o transakci, jako je například datum transakce, číslo deníku, doklad, typ zaúčtování a sledovací číslo.</span><span class="sxs-lookup"><span data-stu-id="a6947-209">This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.</span></span>                                                                            |
+| <span data-ttu-id="a6947-210">Poměry – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-210">Ratios – Default</span></span>                                          | <span data-ttu-id="a6947-211">Umožňuje zobrazit poměry solventnosti, ziskovosti a efektivnosti vaší organizace za rok.</span><span class="sxs-lookup"><span data-stu-id="a6947-211">View the solvency, profitability, and efficiency ratios for the organization for the year.</span></span>                                                                                                                                                                                                                           |
+| <span data-ttu-id="a6947-212">12měsíční kumulované výdaje – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-212">Rolling 12 Month Expenses – Default</span></span>                       | <span data-ttu-id="a6947-213">Získejte přehled o výdajích pro každý z posledních 12 měsíců.</span><span class="sxs-lookup"><span data-stu-id="a6947-213">Gain insight into expenses for each of the last 12 months.</span></span> <span data-ttu-id="a6947-214">Těchto 12 měsíců může zahrnovat více než jeden fiskální rok.</span><span class="sxs-lookup"><span data-stu-id="a6947-214">These 12 months can span more than one fiscal year.</span></span>                                                                                                                                                                                                       |
+| <span data-ttu-id="a6947-215">Kumulovaný výkaz čtvrtletích příjmů – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-215">Rolling Quarter Income Statement – Default</span></span>               | <span data-ttu-id="a6947-216">Zobrazte ziskovost organizace čtvrtletně za minulý rok a rok k datu.</span><span class="sxs-lookup"><span data-stu-id="a6947-216">View the organization’s profitability on a quarterly basis for the past year and the year to date.</span></span>                                                                                                                                                                                                                   |
+| <span data-ttu-id="a6947-217">Rozvaha vedle sebe – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-217">Side by Side Balance Sheet – Default</span></span>                      | <span data-ttu-id="a6947-218">Zobrazte přehled finanční pozice organizace pro rok.</span><span class="sxs-lookup"><span data-stu-id="a6947-218">View the organization's financial position for the year.</span></span> <span data-ttu-id="a6947-219">Tato sestava uvádí aktiva a pasiva a jmění akcionářů vedle sebe.</span><span class="sxs-lookup"><span data-stu-id="a6947-219">This report shows assets and liability, and shareholder equity side by side.</span></span>                                                                                                                                                                                |
+| <span data-ttu-id="a6947-220">Souhrnná předvaha – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-220">Summary Trial Balance – Default</span></span>                          | <span data-ttu-id="a6947-221">Obsahuje informace o zůstatku pro všechny účty s počátečními a závěrkovými zůstatky a zůstatky za má dáti a dal spolu s jejich čistým rozdílem.</span><span class="sxs-lookup"><span data-stu-id="a6947-221">View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.</span></span>                                                                                                                                                                  |
+| <span data-ttu-id="a6947-222">Souhrnná roční předvaha – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-222">Summary Trial Balance Year Over Year – Default</span></span>           | <span data-ttu-id="a6947-223">Obsahuje informace o zůstatku pro všechny účty s počátečními a závěrkovými zůstatky a zůstatky za má dáti a dal spolu s jejich čistým rozdílem pro aktuální a minulý rok.</span><span class="sxs-lookup"><span data-stu-id="a6947-223">View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.</span></span>                                                                                                                           |
+| <span data-ttu-id="a6947-224">Týdenní prodeje a slevy – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-224">Weekly Sales and Discounts - Default</span></span>                     | <span data-ttu-id="a6947-225">Získejte přehled o prodeji a slevách pro každý týden v měsíci.</span><span class="sxs-lookup"><span data-stu-id="a6947-225">Gain insight into sales and discounts for each week in a month.</span></span> <span data-ttu-id="a6947-226">Tato sestava zahrnuje součet za čtyři týdny.</span><span class="sxs-lookup"><span data-stu-id="a6947-226">This report includes a four-week total.</span></span>                                                                                                                                                                                                              |
+| <span data-ttu-id="a6947-227">Dostupné rozpočtové prostředky – výchozí</span><span class="sxs-lookup"><span data-stu-id="a6947-227">Budget Funds Available - Default</span></span>                         | <span data-ttu-id="a6947-228">Zobrazení podrobného porovnání revidovaného rozpočtu, skutečných výdajů, rezervací rozpočtu a rozpočtových prostředků, které jsou k dispozici pro všechny účty</span><span class="sxs-lookup"><span data-stu-id="a6947-228">View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts</span></span>                                                                                                                                                                                  |
+
+## <a name="opening-financial-reports"></a><span data-ttu-id="a6947-229">Otevření finančních výkazů</span><span class="sxs-lookup"><span data-stu-id="a6947-229">Opening financial reports</span></span>
+<span data-ttu-id="a6947-230">Po kliknutí na nabídku **Finanční vykazování** se zobrazí seznam výchozí finančních výkazů pro danou společnost.</span><span class="sxs-lookup"><span data-stu-id="a6947-230">When you click the **Financial reporting** menu, the list of default financial reports for the company is shown.</span></span> <span data-ttu-id="a6947-231">Poté můžete otevřít nebo upravit sestavu.</span><span class="sxs-lookup"><span data-stu-id="a6947-231">You can then open or modify a report.</span></span> <span data-ttu-id="a6947-232">Chcete-li otevřít jednu z výchozích sestav, vyberte název sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6947-232">To open one of the default reports, select the report name.</span></span> <span data-ttu-id="a6947-233">Při prvním otevření se sestava automaticky generuje pro předchozí měsíc.</span><span class="sxs-lookup"><span data-stu-id="a6947-233">The first time that a report is opened, it's automatically generated for the previous month.</span></span> <span data-ttu-id="a6947-234">Například pokud otevřete sestavu poprvé v srpnu 2016, je sestava generována pro 31. července 2016.</span><span class="sxs-lookup"><span data-stu-id="a6947-234">For example, if you open a report for the first time in August 2016, the report is generated for July 31, 2016.</span></span> <span data-ttu-id="a6947-235">Po otevření sestavy můžete začít s prohlížením rozbalením specifických částí dat a změnou možností sestavy.</span><span class="sxs-lookup"><span data-stu-id="a6947-235">After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.</span></span>
+
+## <a name="creating-and-modifying-financial-reports"></a><span data-ttu-id="a6947-236">Vytváření a úpravy finančních výkazů</span><span class="sxs-lookup"><span data-stu-id="a6947-236">Creating and modifying financial reports</span></span>
+<span data-ttu-id="a6947-237">Ze seznamu finančních výkazů lze vytvořit novou sestavu nebo upravit existující sestavu.</span><span class="sxs-lookup"><span data-stu-id="a6947-237">From the financial reports list, you can create a new report or modify an existing report.</span></span> <span data-ttu-id="a6947-238">Pokud máte příslušná oprávnění, můžete vytvořit novou finanční sestavu klepnutím na **Nové** v podokně akcí.</span><span class="sxs-lookup"><span data-stu-id="a6947-238">If you have the appropriate permissions, you can create a new financial report by clicking **New** on the Action Pane.</span></span> <span data-ttu-id="a6947-239">Program Sestava návrháře se stáhne do zařízení.</span><span class="sxs-lookup"><span data-stu-id="a6947-239">A report designer program is downloaded to your device.</span></span> <span data-ttu-id="a6947-240">Po spuštění Návrháře sestavy pak můžete vytvořit novou sestavu.</span><span class="sxs-lookup"><span data-stu-id="a6947-240">After the report designer starts you can then create the new report.</span></span> <span data-ttu-id="a6947-241">Po uložení nové sestavy se zobrazí v seznamu finančních výkazů.</span><span class="sxs-lookup"><span data-stu-id="a6947-241">After you save the new report, it appears in the financial reports list.</span></span> <span data-ttu-id="a6947-242">V seznamu se zobrazí pouze sestavy, které byly vytvořeny pro společnost, kterou právě používáte v aplikaci Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="a6947-242">The list shows only reports that were created for the company that you're using in Finance and Operations.</span></span> 
+
+> [!NOTE] 
+> <span data-ttu-id="a6947-243">Počítač, do kterého stahujete klienta návrháře sestav musí mít nainstalovanou verzi 4.6.2 rozhraní Microsoft .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="a6947-243">The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it.</span></span> <span data-ttu-id="a6947-244">Tuto verzi rozhraní Microsoft .NET Framework si můžete stáhnout a nainstalovat z [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345).</span><span class="sxs-lookup"><span data-stu-id="a6947-244">This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345).</span></span> <span data-ttu-id="a6947-245">Pokud používáte Chrome, je nutné nainstalovat rozšíření ClickOnce, abyste mohli stáhnout klienta návrháře sestav.</span><span class="sxs-lookup"><span data-stu-id="a6947-245">If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client.</span></span> <span data-ttu-id="a6947-246">Pokud používáte režim incognito, zkontrolujte, zda že je povoleno rozšíření ClickOnce pro režim incognito.</span><span class="sxs-lookup"><span data-stu-id="a6947-246">If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode.</span></span> <span data-ttu-id="a6947-247">Také lze upravit sestavu, která se zobrazí v seznamu finančních výkazů.</span><span class="sxs-lookup"><span data-stu-id="a6947-247">You can also modify a report that appears in the financial reports list.</span></span> <span data-ttu-id="a6947-248">Jakmile se vybere oblast kolem názvu sestavy, klikněte na tlačítko **Upravit** v podokně akcí.</span><span class="sxs-lookup"><span data-stu-id="a6947-248">When the area around the report name is selected, click **Edit** on the Action Pane.</span></span> <span data-ttu-id="a6947-249">Spustí se program Návrhář sestav.</span><span class="sxs-lookup"><span data-stu-id="a6947-249">The report designer program starts.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="a6947-250">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="a6947-250">Additional resources</span></span>
+- [<span data-ttu-id="a6947-251">Zobrazení finančních sestav</span><span class="sxs-lookup"><span data-stu-id="a6947-251">View financial reports</span></span>](view-financial-reports.md)
+
+
+

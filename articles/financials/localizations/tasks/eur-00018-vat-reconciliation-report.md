@@ -1,66 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="eur-00018-vat-reconciliation-report.md" target-language="cs-CZ">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>eur-00018-vat-reconciliation-report.b9f39f.5822a60456376647f2687fc2d211db3296575d47.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>5822a60456376647f2687fc2d211db3296575d47</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00018-vat-reconciliation-report.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>EUR-00018 VAT reconciliation report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00018 Sestava odsouhlasení DPH</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato procedura ukazuje, jak generovat sestavu odsouhlasení daně, která je k dispozici pro islandské a norské právnické osoby.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>EUR-00018 VAT reconciliation report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00018 Sestava odsouhlasení DPH</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato procedura ukazuje, jak generovat sestavu odsouhlasení daně, která je k dispozici pro islandské a norské právnické osoby.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Byla vytvořena za použití ukázkových dat společnosti DEMF s hodnotou země/oblasti právnické osoby aktualizovanou na Norsko.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Go to Tax &gt; Inquiries and reports &gt; Sales tax reports &gt; Tax reconciliation report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na Daň &gt; Dotazy a sestavy &gt; Sestavy DPH &gt; Sestava odsouhlasení daně.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>In the From account field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Z účtu zadejte nebo vyberte hodnotu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Select the value 200140.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte hodnotu 200140.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>In the To account field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Na účet zadejte nebo vyberte hodnotu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Select the value 600180.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte hodnotu 600180.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>In the Settlement period field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli Období vyrovnání zadejte nebo vyberte hodnotu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Select the value Mon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte hodnotu Pondělí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>In the From date field, enter a date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte datum do pole Od data.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Select the value 2015-11-01.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte hodnotu 2015-11-01.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Select Yes in the Show details field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte možnost Ano v poli Zobrazit podrobnosti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko OK.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: EUR-00018 Sestava odsouhlasení DPH
+description: Tato procedura ukazuje, jak generovat sestavu odsouhlasení daně, která je k dispozici pro islandské a norské právnické osoby.
+author: v-oloski
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: MainAccountLookup
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+ms.author: v-oloski
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5822a60456376647f2687fc2d211db3296575d47
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566685"
+---
+# <a name="eur-00018-vat-reconciliation-report"></a><span data-ttu-id="340b1-103">EUR-00018 Sestava odsouhlasení DPH</span><span class="sxs-lookup"><span data-stu-id="340b1-103">EUR-00018 VAT reconciliation report</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="340b1-104">Tato procedura ukazuje, jak generovat sestavu odsouhlasení daně, která je k dispozici pro islandské a norské právnické osoby.</span><span class="sxs-lookup"><span data-stu-id="340b1-104">This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.</span></span> <span data-ttu-id="340b1-105">Byla vytvořena za použití ukázkových dat společnosti DEMF s hodnotou země/oblasti právnické osoby aktualizovanou na Norsko.</span><span class="sxs-lookup"><span data-stu-id="340b1-105">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.</span></span>
+
+1. <span data-ttu-id="340b1-106">Přejděte na Daň > Dotazy a sestavy > Sestavy DPH > Sestava odsouhlasení daně.</span><span class="sxs-lookup"><span data-stu-id="340b1-106">Go to Tax > Inquiries and reports > Sales tax reports > Tax reconciliation report.</span></span>
+2. <span data-ttu-id="340b1-107">V poli Z účtu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="340b1-107">In the From account field, enter or select a value.</span></span>
+    * <span data-ttu-id="340b1-108">Vyberte hodnotu 200140.</span><span class="sxs-lookup"><span data-stu-id="340b1-108">Select the value 200140.</span></span>  
+3. <span data-ttu-id="340b1-109">V poli Na účet zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="340b1-109">In the To account field, enter or select a value.</span></span>
+    * <span data-ttu-id="340b1-110">Vyberte hodnotu 600180.</span><span class="sxs-lookup"><span data-stu-id="340b1-110">Select the value 600180.</span></span>  
+4. <span data-ttu-id="340b1-111">V poli Období vyrovnání zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="340b1-111">In the Settlement period field, enter or select a value.</span></span>
+    * <span data-ttu-id="340b1-112">Vyberte hodnotu Pondělí.</span><span class="sxs-lookup"><span data-stu-id="340b1-112">Select the value Mon.</span></span>  
+5. <span data-ttu-id="340b1-113">Zadejte datum do pole Od data.</span><span class="sxs-lookup"><span data-stu-id="340b1-113">In the From date field, enter a date.</span></span>
+    * <span data-ttu-id="340b1-114">Vyberte hodnotu 2015-11-01.</span><span class="sxs-lookup"><span data-stu-id="340b1-114">Select the value 2015-11-01.</span></span>  
+6. <span data-ttu-id="340b1-115">Vyberte možnost Ano v poli Zobrazit podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="340b1-115">Select Yes in the Show details field.</span></span>
+7. <span data-ttu-id="340b1-116">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="340b1-116">Click OK.</span></span>
+

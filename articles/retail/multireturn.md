@@ -1,54 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="multireturn.md" target-language="cs-CZ">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>multireturn.eabb2c.c201311028b11121d626e93859a2b98497c047d1.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>c201311028b11121d626e93859a2b98497c047d1</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\multireturn.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Return items across multiple customer orders and invoices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrácení položek napříč vícero objednávkami odběratele a fakturami</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes the functionality enabling returns across multiple customer orders and invoices in Microsoft Dynamics 365 for Retail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma popisuje funkci, která umožňuje vrácení napříč vícero objednávkami odběratele a fakturami v Microsoft Dynamics 365 for Retail.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Return items across multiple customer orders and invoices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vrácení položek napříč vícero objednávkami odběratele a fakturami</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>In Dynamics 365 for Finance and Operations version 10.0, returns can be made across multiple orders and invoices, whereas in releases prior to 10.0, returns could only be processed by a single invoice at a time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V aplikaci Dynamics 365 for Finance and Operations verze 10.0 lze provést vrácení napříč vícero objednávkami a fakturami, zatímco ve verzích předcházejících verzi 10.0 mohla být vrácení zpracovávána pouze pomocí jedné faktury současně.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Configure Retail to support returns across multiple customer order and invoices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace aplikace Retail pro podporu vrácení napříč vícero objednávkami a fakturami</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Go to <bpt id="p1">**</bpt>Retail parameters <ph id="ph1">\&gt;</ph> Customer orders<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejděte na <bpt id="p1">**</bpt>Parametry maloobchodu <ph id="ph1">\&gt;</ph> Objednávky odběratele<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Turn on the <bpt id="p1">**</bpt>Enable returns for multiple orders<ept id="p1">**</ept> parameter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zapněte parametr <bpt id="p1">**</bpt>Povolit vrácení pro více objednávek<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Process returns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zpracování vracení</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>After the parameter is turned on and the changes are synchronized to the stores, the cashier in the store can select multiple sales orders for a customer for their return.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poté, co je zapnut tento parametr a změny se synchronizují do obchodů, pokladník v obchodě může zvolit více prodejních objednávek pro odběratele k vrácení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>When the orders are selected, a list of all the returnable products across all the invoices for the orders will display.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Když jsou zvoleny objednávky, zobrazí se seznam všech vratných produktů napříč všemi fakturami pro objednávky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>The cashier can then select the products to return.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokladník může poté zvolit produkty, které mají být vráceny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>A single return order will be created for all the selected products.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro všechny zvolené produkty bude vytvořena jediná vratka.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Vrácení položek napříč vícero objednávkami odběratele a fakturami
+description: Toto téma popisuje funkci, která umožňuje vrácení napříč vícero objednávkami odběratele a fakturami v Microsoft Dynamics 365 for Retail.
+author: josaw1
+manager: AnnBe
+ms.date: 03/05/2019
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2019-01-15
+ms.dyn365.ops.version: 10
+ms.openlocfilehash: c201311028b11121d626e93859a2b98497c047d1
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565293"
+---
+# <a name="return-items-across-multiple-customer-orders-and-invoices"></a><span data-ttu-id="eb182-103">Vrácení položek napříč vícero objednávkami odběratele a fakturami</span><span class="sxs-lookup"><span data-stu-id="eb182-103">Return items across multiple customer orders and invoices</span></span>
+
+[!include [banner](includes/banner.md)]
+
+
+<span data-ttu-id="eb182-104">V aplikaci Dynamics 365 for Finance and Operations verze 10.0 lze provést vrácení napříč vícero objednávkami a fakturami, zatímco ve verzích předcházejících verzi 10.0 mohla být vrácení zpracovávána pouze pomocí jedné faktury současně.</span><span class="sxs-lookup"><span data-stu-id="eb182-104">In Dynamics 365 for Finance and Operations version 10.0, returns can be made across multiple orders and invoices, whereas in releases prior to 10.0, returns could only be processed by a single invoice at a time.</span></span> 
+
+## <a name="configure-retail-to-support-returns-across-multiple-customer-order-and-invoices"></a><span data-ttu-id="eb182-105">Konfigurace aplikace Retail pro podporu vrácení napříč vícero objednávkami a fakturami</span><span class="sxs-lookup"><span data-stu-id="eb182-105">Configure Retail to support returns across multiple customer order and invoices</span></span>
+
+1. <span data-ttu-id="eb182-106">Přejděte na **Parametry maloobchodu \> Objednávky odběratele**.</span><span class="sxs-lookup"><span data-stu-id="eb182-106">Go to **Retail parameters \> Customer orders**.</span></span>
+1. <span data-ttu-id="eb182-107">Zapněte parametr **Povolit vrácení pro více objednávek**.</span><span class="sxs-lookup"><span data-stu-id="eb182-107">Turn on the **Enable returns for multiple orders** parameter.</span></span> 
+
+## <a name="process-returns"></a><span data-ttu-id="eb182-108">Zpracování vracení</span><span class="sxs-lookup"><span data-stu-id="eb182-108">Process returns</span></span>
+
+<span data-ttu-id="eb182-109">Poté, co je zapnut tento parametr a změny se synchronizují do obchodů, pokladník v obchodě může zvolit více prodejních objednávek pro odběratele k vrácení.</span><span class="sxs-lookup"><span data-stu-id="eb182-109">After the parameter is turned on and the changes are synchronized to the stores, the cashier in the store can select multiple sales orders for a customer for their return.</span></span>
+
+<span data-ttu-id="eb182-110">Když jsou zvoleny objednávky, zobrazí se seznam všech vratných produktů napříč všemi fakturami pro objednávky.</span><span class="sxs-lookup"><span data-stu-id="eb182-110">When the orders are selected, a list of all the returnable products across all the invoices for the orders will display.</span></span> <span data-ttu-id="eb182-111">Pokladník může poté zvolit produkty, které mají být vráceny.</span><span class="sxs-lookup"><span data-stu-id="eb182-111">The cashier can then select the products to return.</span></span> <span data-ttu-id="eb182-112">Pro všechny zvolené produkty bude vytvořena jediná vratka.</span><span class="sxs-lookup"><span data-stu-id="eb182-112">A single return order will be created for all the selected products.</span></span>

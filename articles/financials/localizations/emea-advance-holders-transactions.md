@@ -1,177 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="emea-advance-holders-transactions.md" target-language="cs-CZ">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>emea-advance-holders-transactions.04f341.f71df6fff803855cf08ca0672604ae97efe3f40e.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>f71df6fff803855cf08ca0672604ae97efe3f40e</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-advance-holders-transactions.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Advance holder transactions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Transakce držitelů záloh</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zjistěte více o tom, jak pracovat s transakcemi držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Advance holder transactions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Transakce držitelů záloh</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zjistěte více o tom, jak pracovat s transakcemi držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Transactions for these workers who are advance holders can be posted by using advance holder accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Transakce pro tyto pracovníky, kteří jsou držitelé zálohy, mohou být zaúčtovány pomocí účtů držitele zálohy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The worker ID that is specified for each advance holder can be used to track all advance holder transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ID pracovníka, které je určeno pro každého držitele zálohy, lze použít ke sledování všech transakcí držitele zálohy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>This number is retrieved as an account number for advance holder transactions in the <bpt id="p1">**</bpt>General journals<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Advance holder transactions<ept id="p2">**</ept> pages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto číslo je načteno jako číslo účtu pro transakce držitele zálohy na stránkách <bpt id="p1">**</bpt>Hlavní deníky<ept id="p1">**</ept> a <bpt id="p2">**</bpt>Transakce držitele zálohy<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Create and post a purchase order with advance holder details</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tvorba a zaúčtování nákupních objednávek s podrobnostmi o držiteli zálohy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>For more general information about purchase orders, see <bpt id="p1">[</bpt>Purchase order overview<ept id="p1">](../../supply-chain/procurement/purchase-order-overview.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další obecné informace o nákupních objednávkách naleznete v tématu <bpt id="p1">[</bpt>Přehled nákupních objednávek<ept id="p1">](../../supply-chain/procurement/purchase-order-overview.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>If a vendor invoice is created and posted with advance holder details, the advance holder’s balances will be posted to the employee balance account instead of the vendor balance account.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud je faktura dodavatele vytvořena a zaúčtována s podrobnostmi držitele zálohy, zůstatky držitele zálohy budou zaúčtovány do účtu zůstatku zaměstnance namísto do účtu zůstatku dodavatele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>To add advance holder details to a purchase order, do the following:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li přidat podrobnosti držitele zálohy k nákupní objednávce, postupujte takto:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>In the <bpt id="p1">**</bpt>Terms of payment<ept id="p1">**</ept> field in the <bpt id="p2">**</bpt>Price and discount<ept id="p2">**</ept> section, select the payment term.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>Platební podmínky<ept id="p1">**</ept> v části <bpt id="p2">**</bpt>Ceny a slevy<ept id="p2">**</ept> vyberte platební podmínku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Select a payment term that has the <bpt id="p1">**</bpt>From advance holder<ept id="p1">**</ept> option selected on the <bpt id="p2">**</bpt>Terms of payment<ept id="p2">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte platební podmínku, která má na stránce <bpt id="p2">**</bpt>Platební podmínky<ept id="p2">**</ept> vybranou možnost <bpt id="p1">**</bpt>Od držitele zálohy<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>For more information about setting up terms of payment for advance holders, see <bpt id="p1">[</bpt>Advance holders<ept id="p1">](emea-advance-holders.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace o nastavení platebních podmínek pro držitele záloh naleznete v tématu <bpt id="p1">[</bpt>Držitelé zálohy<ept id="p1">](emea-advance-holders.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>In the <bpt id="p1">**</bpt>Advance holder<ept id="p1">**</ept> field on the <bpt id="p2">**</bpt>Price and discount<ept id="p2">**</ept> FastTab, select the advance holder for the purchase order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V poli <bpt id="p1">**</bpt>Držitel zálohy<ept id="p1">**</ept> na pevné záložce <bpt id="p2">**</bpt>Ceny a slevy<ept id="p2">**</ept> vyberte držitele zálohy pro nákupní objednávku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>The purchase order posting process creates two vendor transactions with opposite amounts and one advance holder transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proces zaúčtování nákupní objednávky vytvoří dvě transakce dodavatele s opačným částkami a jednu transakci držitele zálohy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Without advance holder details, only one vendor transaction is created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bez podrobností držitele zálohy je vytvořena pouze jedna transakce dodavatele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Settle advance holder balances via a bank</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyrovnání zůstatků držitele zálohy prostřednictvím banky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>When you settle advance holder balances via a bank, journal entries for closing the advance holder balances are created in the general journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Když vyrovnáte zůstatky držitelů záloh prostřednictvím banky, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvořeny v hlavním deníku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>You can set up the code for the journal and the bank in the <bpt id="p1">**</bpt>Advance holders<ept id="p1">**</ept> section on the <bpt id="p2">**</bpt>Accounts payable parameters<ept id="p2">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete nastavit kód pro deník a banky v části <bpt id="p1">**</bpt>Držitelé záloh<ept id="p1">**</ept> na stránce <bpt id="p2">**</bpt>Parametry závazků<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>For more information, see <bpt id="p1">[</bpt>Advance holders<ept id="p1">](emea-advance-holders.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">[</bpt>Držitelé záloh<ept id="p1">](emea-advance-holders.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>To close an advance holder’s balance via a bank, open <bpt id="p1">**</bpt>Accounts payable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Advance holders<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Advance holders<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro uzavření zůstatku držitele zálohy prostřednictvím banky, otevřete <bpt id="p1">**</bpt>Závazky<ept id="p1">**</ept><ph id="ph1">&amp;gt;</ph><bpt id="p2">**</bpt>Držitelé záloh<ept id="p2">**</ept><ph id="ph2">&amp;gt;</ph><bpt id="p3">**</bpt>Držitelé záloh<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Click the <bpt id="p1">**</bpt>Balance<ept id="p1">**</ept> button on the Action Pane, and then click <bpt id="p2">**</bpt>Close via bank<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko <bpt id="p1">**</bpt>Zůstatek<ept id="p1">**</ept> v podokně akcí a pak klikněte na tlačítko <bpt id="p2">**</bpt>Uzavřít v bance<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Enter the following information on the <bpt id="p1">**</bpt>Close via bank<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Uzavřít v bance<ept id="p1">**</ept> zadejte následující informace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source><bpt id="p1">**</bpt>Date of payment<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Datum platby<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Enter the date that the payment should be posted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte datum, ke kterému má být platba zaúčtována.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source><bpt id="p1">**</bpt>Amount to be transferred<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Převáděná částka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Enter the balance amount while closing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte částku zůstatku při zavírání.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>The amount that is indicated in the <bpt id="p1">**</bpt>Amount<ept id="p1">**</ept> field in the <bpt id="p2">**</bpt>Balance<ept id="p2">**</ept> form is displayed by default.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částka, která je uvedena v poli <bpt id="p1">**</bpt>Částka<ept id="p1">**</ept> ve formuláři <bpt id="p2">**</bpt>Zůstatek<ept id="p2">**</ept>, je ve výchozím nastavení zobrazena.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">**</bpt>Automatic<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Automaticky<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Select the <bpt id="p1">**</bpt>Automatic<ept id="p1">**</ept> check box to create and post a journal that is preset on the <bpt id="p2">**</bpt>Accounts payable parameters<ept id="p2">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte zaškrtávací políčko <bpt id="p1">**</bpt>Automaticky<ept id="p1">**</ept> pro vytvoření a zaúčtování deníku, který je přednastavený na stránce <bpt id="p2">**</bpt>Parametry závazků<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Settle advance holder balances via cash</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyrovnání zůstatků držitele zálohy prostřednictvím hotovosti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>When you settle advance holder balances via cash, journal entries for closing the advance holder balances are created in a slip journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Když vyrovnáte zůstatky držitelů záloh prostřednictvím hotovosti, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvořeny v deníku dokladů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>You can set up the code for the journal and the cash in the <bpt id="p1">**</bpt>Advance holders<ept id="p1">**</ept> tab on the <bpt id="p2">**</bpt>Accounts payable parameters<ept id="p2">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete nastavit kód pro deník a hotovost na kartě <bpt id="p1">**</bpt>Držitelé záloh<ept id="p1">**</ept> na stránce <bpt id="p2">**</bpt>Parametry závazků<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>For more information, see <bpt id="p1">[</bpt>Advance holders<ept id="p1">](emea-advance-holders.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">[</bpt>Držitelé záloh<ept id="p1">](emea-advance-holders.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>To close an advance holder’s balance via cash, open <bpt id="p1">**</bpt>Accounts payable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Advance holders<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Advance holders<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro uzavření zůstatku držitele zálohy prostřednictvím hotovosti, otevřete <bpt id="p1">**</bpt>Závazky<ept id="p1">**</ept><ph id="ph1">&amp;gt;</ph><bpt id="p2">**</bpt>Držitelé záloh<ept id="p2">**</ept><ph id="ph2">&amp;gt;</ph><bpt id="p3">**</bpt>Držitelé záloh<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Click the <bpt id="p1">**</bpt>Balance<ept id="p1">**</ept> button on the Action Pane, and then click <bpt id="p2">**</bpt>Close via cash<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na tlačítko <bpt id="p1">**</bpt>Zůstatek<ept id="p1">**</ept> v podokně akcí a pak klikněte na tlačítko <bpt id="p2">**</bpt>Uzavřít v hotovosti<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Enter the following information on the <bpt id="p1">**</bpt>Close via cash<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Uzavřít v hotovosti<ept id="p1">**</ept> zadejte následující informace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source><bpt id="p1">**</bpt>Date of payment<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Datum platby<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Enter the date that the payment should be posted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte datum, ke kterému má být platba zaúčtována.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source><bpt id="p1">**</bpt>Amount to be transferred<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Převáděná částka<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Enter the balance amount while closing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte částku zůstatku při zavírání.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>The amount that is indicated in the <bpt id="p1">**</bpt>Amount<ept id="p1">**</ept> field in the <bpt id="p2">**</bpt>Balance<ept id="p2">**</ept> form is displayed by default.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částka, která je uvedena v poli <bpt id="p1">**</bpt>Částka<ept id="p1">**</ept> ve formuláři <bpt id="p2">**</bpt>Zůstatek<ept id="p2">**</ept>, je ve výchozím nastavení zobrazena.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source><bpt id="p1">**</bpt>Automatic<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Automaticky<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Select the <bpt id="p1">**</bpt>Automatic<ept id="p1">**</ept> check box to create and post automatically a journal that is preset on the <bpt id="p2">**</bpt>Accounts payable parameters<ept id="p2">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte zaškrtávací políčko <bpt id="p1">**</bpt>Automaticky<ept id="p1">**</ept> pro automatické vytvoření a zaúčtování deníku, který je přednastavený na stránce <bpt id="p2">**</bpt>Parametry závazků<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>After the slip journal is processed, if the amount in the <bpt id="p1">**</bpt>Amount to be transferred<ept id="p1">**</ept> field was negative, a disbursement slip is generated for the advance holder when the balances are closed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po zpracování deníku dokladů, pokud částka v poli <bpt id="p1">**</bpt>Převáděná částka<ept id="p1">**</ept> je záporná, výdajový doklad je vygenerován pro držitele zálohy při uzavření zůstatků.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>If the amount in the <bpt id="p1">**</bpt>Amount to be transferred<ept id="p1">**</ept> field was positive, a reimbursement slip is generated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud částka v poli <bpt id="p1">**</bpt>Převáděná částka<ept id="p1">**</ept> byla pozitivní, vygeneruje se refundační doklad.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další zdroje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><bpt id="p1">[</bpt>Advance payment to an employee (Eastern Europe)<ept id="p1">](tasks/advance-payment-employee.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Záloha pro zaměstnance (východní Evropa)<ept id="p1">](tasks/advance-payment-employee.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Transakce držitelů záloh
+description: Zjistěte více o tom, jak pracovat s transakcemi držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: HcmWorkerAdvHolderTableListPage_RU
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 262554
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.author: v-elgolu
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: f71df6fff803855cf08ca0672604ae97efe3f40e
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564447"
+---
+# <a name="advance-holder-transactions"></a><span data-ttu-id="23cee-103">Transakce držitelů záloh</span><span class="sxs-lookup"><span data-stu-id="23cee-103">Advance holder transactions</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="23cee-104">Zjistěte více o tom, jak pracovat s transakcemi držitelů záloh v aplikaci Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="23cee-104">Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations.</span></span>
+
+<span data-ttu-id="23cee-105">Transakce pro tyto pracovníky, kteří jsou držitelé zálohy, mohou být zaúčtovány pomocí účtů držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="23cee-105">Transactions for these workers who are advance holders can be posted by using advance holder accounts.</span></span> <span data-ttu-id="23cee-106">ID pracovníka, které je určeno pro každého držitele zálohy, lze použít ke sledování všech transakcí držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="23cee-106">The worker ID that is specified for each advance holder can be used to track all advance holder transactions.</span></span> <span data-ttu-id="23cee-107">Toto číslo je načteno jako číslo účtu pro transakce držitele zálohy na stránkách **Hlavní deníky** a **Transakce držitele zálohy**.</span><span class="sxs-lookup"><span data-stu-id="23cee-107">This number is retrieved as an account number for advance holder transactions in the **General journals** and **Advance holder transactions** pages.</span></span>
+
+## <a name="create-and-post-a-purchase-order-with-advance-holder-details"></a><span data-ttu-id="23cee-108">Tvorba a zaúčtování nákupních objednávek s podrobnostmi o držiteli zálohy</span><span class="sxs-lookup"><span data-stu-id="23cee-108">Create and post a purchase order with advance holder details</span></span>
+<span data-ttu-id="23cee-109">Další obecné informace o nákupních objednávkách naleznete v tématu [Přehled nákupních objednávek](../../supply-chain/procurement/purchase-order-overview.md).</span><span class="sxs-lookup"><span data-stu-id="23cee-109">For more general information about purchase orders, see [Purchase order overview](../../supply-chain/procurement/purchase-order-overview.md).</span></span> <span data-ttu-id="23cee-110">Pokud je faktura dodavatele vytvořena a zaúčtována s podrobnostmi držitele zálohy, zůstatky držitele zálohy budou zaúčtovány do účtu zůstatku zaměstnance namísto do účtu zůstatku dodavatele.</span><span class="sxs-lookup"><span data-stu-id="23cee-110">If a vendor invoice is created and posted with advance holder details, the advance holder’s balances will be posted to the employee balance account instead of the vendor balance account.</span></span> <span data-ttu-id="23cee-111">Chcete-li přidat podrobnosti držitele zálohy k nákupní objednávce, postupujte takto:</span><span class="sxs-lookup"><span data-stu-id="23cee-111">To add advance holder details to a purchase order, do the following:</span></span>
+
+-   <span data-ttu-id="23cee-112">V poli **Platební podmínky** v části **Ceny a slevy** vyberte platební podmínku.</span><span class="sxs-lookup"><span data-stu-id="23cee-112">In the **Terms of payment** field in the **Price and discount** section, select the payment term.</span></span> <!---For more information about **Terms of payment**, see [Define vendor payment terms](../accounts-payable/tasks/define-vendor-payment-terms.md).--> <span data-ttu-id="23cee-113">Vyberte platební podmínku, která má na stránce **Platební podmínky** vybranou možnost **Od držitele zálohy**.</span><span class="sxs-lookup"><span data-stu-id="23cee-113">Select a payment term that has the **From advance holder** option selected on the **Terms of payment** page.</span></span> <span data-ttu-id="23cee-114">Další informace o nastavení platebních podmínek pro držitele záloh naleznete v tématu [Držitelé zálohy](emea-advance-holders.md).</span><span class="sxs-lookup"><span data-stu-id="23cee-114">For more information about setting up terms of payment for advance holders, see [Advance holders](emea-advance-holders.md).</span></span>
+-   <span data-ttu-id="23cee-115">V poli **Držitel zálohy** na pevné záložce **Ceny a slevy** vyberte držitele zálohy pro nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="23cee-115">In the **Advance holder** field on the **Price and discount** FastTab, select the advance holder for the purchase order.</span></span>
+
+<span data-ttu-id="23cee-116">Proces zaúčtování nákupní objednávky vytvoří dvě transakce dodavatele s opačným částkami a jednu transakci držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="23cee-116">The purchase order posting process creates two vendor transactions with opposite amounts and one advance holder transaction.</span></span> <span data-ttu-id="23cee-117">Bez podrobností držitele zálohy je vytvořena pouze jedna transakce dodavatele.</span><span class="sxs-lookup"><span data-stu-id="23cee-117">Without advance holder details, only one vendor transaction is created.</span></span>
+
+## <a name="settle-advance-holder-balances-via-a-bank"></a><span data-ttu-id="23cee-118">Vyrovnání zůstatků držitele zálohy prostřednictvím banky</span><span class="sxs-lookup"><span data-stu-id="23cee-118">Settle advance holder balances via a bank</span></span>
+<span data-ttu-id="23cee-119">Když vyrovnáte zůstatky držitelů záloh prostřednictvím banky, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvořeny v hlavním deníku.</span><span class="sxs-lookup"><span data-stu-id="23cee-119">When you settle advance holder balances via a bank, journal entries for closing the advance holder balances are created in the general journal.</span></span> <span data-ttu-id="23cee-120">Můžete nastavit kód pro deník a banky v části **Držitelé záloh** na stránce **Parametry závazků**.</span><span class="sxs-lookup"><span data-stu-id="23cee-120">You can set up the code for the journal and the bank in the **Advance holders** section on the **Accounts payable parameters** page.</span></span> <span data-ttu-id="23cee-121">Další informace naleznete v tématu [Držitelé záloh](emea-advance-holders.md).</span><span class="sxs-lookup"><span data-stu-id="23cee-121">For more information, see [Advance holders](emea-advance-holders.md).</span></span> <span data-ttu-id="23cee-122">Pro uzavření zůstatku držitele zálohy prostřednictvím banky, otevřete **Závazky**&gt;**Držitelé záloh**&gt;**Držitelé záloh**.</span><span class="sxs-lookup"><span data-stu-id="23cee-122">To close an advance holder’s balance via a bank, open **Accounts payable** &gt; **Advance holders** &gt; **Advance holders**.</span></span> <span data-ttu-id="23cee-123">Klikněte na tlačítko **Zůstatek** v podokně akcí a pak klikněte na tlačítko **Uzavřít v bance**.</span><span class="sxs-lookup"><span data-stu-id="23cee-123">Click the **Balance** button on the Action Pane, and then click **Close via bank**.</span></span> <span data-ttu-id="23cee-124">Na stránce **Uzavřít v bance** zadejte následující informace.</span><span class="sxs-lookup"><span data-stu-id="23cee-124">Enter the following information on the **Close via bank** page.</span></span>
+
+| <span data-ttu-id="23cee-125">Pole</span><span class="sxs-lookup"><span data-stu-id="23cee-125">Field</span></span>                    | <span data-ttu-id="23cee-126">popis</span><span class="sxs-lookup"><span data-stu-id="23cee-126">Description</span></span> |
+|------------------------------|-------------------|
+| <span data-ttu-id="23cee-127">**Datum platby**</span><span class="sxs-lookup"><span data-stu-id="23cee-127">**Date of payment**</span></span>          | <span data-ttu-id="23cee-128">Zadejte datum, ke kterému má být platba zaúčtována.</span><span class="sxs-lookup"><span data-stu-id="23cee-128">Enter the date that the payment should be posted.</span></span>|
+| <span data-ttu-id="23cee-129">**Převáděná částka**</span><span class="sxs-lookup"><span data-stu-id="23cee-129">**Amount to be transferred**</span></span> | <span data-ttu-id="23cee-130">Zadejte částku zůstatku při zavírání.</span><span class="sxs-lookup"><span data-stu-id="23cee-130">Enter the balance amount while closing.</span></span> <span data-ttu-id="23cee-131">Částka, která je uvedena v poli **Částka** ve formuláři **Zůstatek**, je ve výchozím nastavení zobrazena.</span><span class="sxs-lookup"><span data-stu-id="23cee-131">The amount that is indicated in the **Amount** field in the **Balance** form is displayed by default.</span></span> |
+| <span data-ttu-id="23cee-132">**Automaticky**</span><span class="sxs-lookup"><span data-stu-id="23cee-132">**Automatic**</span></span>                | <span data-ttu-id="23cee-133">Vyberte zaškrtávací políčko **Automaticky** pro vytvoření a zaúčtování deníku, který je přednastavený na stránce **Parametry závazků**.</span><span class="sxs-lookup"><span data-stu-id="23cee-133">Select the **Automatic** check box to create and post a journal that is preset on the **Accounts payable parameters** page.</span></span>|
+
+## <a name="settle-advance-holder-balances-via-cash"></a><span data-ttu-id="23cee-134">Vyrovnání zůstatků držitele zálohy prostřednictvím hotovosti</span><span class="sxs-lookup"><span data-stu-id="23cee-134">Settle advance holder balances via cash</span></span>
+<span data-ttu-id="23cee-135">Když vyrovnáte zůstatky držitelů záloh prostřednictvím hotovosti, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvořeny v deníku dokladů.</span><span class="sxs-lookup"><span data-stu-id="23cee-135">When you settle advance holder balances via cash, journal entries for closing the advance holder balances are created in a slip journal.</span></span> <span data-ttu-id="23cee-136">Můžete nastavit kód pro deník a hotovost na kartě **Držitelé záloh** na stránce **Parametry závazků**.</span><span class="sxs-lookup"><span data-stu-id="23cee-136">You can set up the code for the journal and the cash in the **Advance holders** tab on the **Accounts payable parameters** page.</span></span> <span data-ttu-id="23cee-137">Další informace naleznete v tématu [Držitelé záloh](emea-advance-holders.md).</span><span class="sxs-lookup"><span data-stu-id="23cee-137">For more information, see [Advance holders](emea-advance-holders.md).</span></span> <span data-ttu-id="23cee-138">Pro uzavření zůstatku držitele zálohy prostřednictvím hotovosti, otevřete **Závazky**&gt;**Držitelé záloh**&gt;**Držitelé záloh**.</span><span class="sxs-lookup"><span data-stu-id="23cee-138">To close an advance holder’s balance via cash, open **Accounts payable** &gt; **Advance holders** &gt; **Advance holders**.</span></span> <span data-ttu-id="23cee-139">Klikněte na tlačítko **Zůstatek** v podokně akcí a pak klikněte na tlačítko **Uzavřít v hotovosti**.</span><span class="sxs-lookup"><span data-stu-id="23cee-139">Click the **Balance** button on the Action Pane, and then click **Close via cash**.</span></span> <span data-ttu-id="23cee-140">Na stránce **Uzavřít v hotovosti** zadejte následující informace.</span><span class="sxs-lookup"><span data-stu-id="23cee-140">Enter the following information on the **Close via cash** page.</span></span>
+
+| <span data-ttu-id="23cee-141">Pole</span><span class="sxs-lookup"><span data-stu-id="23cee-141">Field</span></span>                    | <span data-ttu-id="23cee-142">popis</span><span class="sxs-lookup"><span data-stu-id="23cee-142">Description</span></span>
+|------------------------------|-----------------|
+| <span data-ttu-id="23cee-143">**Datum platby**</span><span class="sxs-lookup"><span data-stu-id="23cee-143">**Date of payment**</span></span>          | <span data-ttu-id="23cee-144">Zadejte datum, ke kterému má být platba zaúčtována.</span><span class="sxs-lookup"><span data-stu-id="23cee-144">Enter the date that the payment should be posted.</span></span>|
+| <span data-ttu-id="23cee-145">**Převáděná částka**</span><span class="sxs-lookup"><span data-stu-id="23cee-145">**Amount to be transferred**</span></span> | <span data-ttu-id="23cee-146">Zadejte částku zůstatku při zavírání.</span><span class="sxs-lookup"><span data-stu-id="23cee-146">Enter the balance amount while closing.</span></span> <span data-ttu-id="23cee-147">Částka, která je uvedena v poli **Částka** ve formuláři **Zůstatek**, je ve výchozím nastavení zobrazena.</span><span class="sxs-lookup"><span data-stu-id="23cee-147">The amount that is indicated in the **Amount** field in the **Balance** form is displayed by default.</span></span> |
+| <span data-ttu-id="23cee-148">**Automaticky**</span><span class="sxs-lookup"><span data-stu-id="23cee-148">**Automatic**</span></span>                | <span data-ttu-id="23cee-149">Vyberte zaškrtávací políčko **Automaticky** pro automatické vytvoření a zaúčtování deníku, který je přednastavený na stránce **Parametry závazků**.</span><span class="sxs-lookup"><span data-stu-id="23cee-149">Select the **Automatic** check box to create and post automatically a journal that is preset on the **Accounts payable parameters** page.</span></span>     |
+
+<span data-ttu-id="23cee-150">Po zpracování deníku dokladů, pokud částka v poli **Převáděná částka** je záporná, výdajový doklad je vygenerován pro držitele zálohy při uzavření zůstatků.</span><span class="sxs-lookup"><span data-stu-id="23cee-150">After the slip journal is processed, if the amount in the **Amount to be transferred** field was negative, a disbursement slip is generated for the advance holder when the balances are closed.</span></span> <span data-ttu-id="23cee-151">Pokud částka v poli **Převáděná částka** byla pozitivní, vygeneruje se refundační doklad.</span><span class="sxs-lookup"><span data-stu-id="23cee-151">If the amount in the **Amount to be transferred** field was positive, a reimbursement slip is generated.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="23cee-152">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="23cee-152">Additional resources</span></span>
+
+- [<span data-ttu-id="23cee-153">Záloha pro zaměstnance (východní Evropa)</span><span class="sxs-lookup"><span data-stu-id="23cee-153">Advance payment to an employee (Eastern Europe)</span></span>](tasks/advance-payment-employee.md)
+
