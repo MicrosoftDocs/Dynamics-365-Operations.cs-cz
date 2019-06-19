@@ -1,603 +1,155 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="emea-advance-invoice.md" target-language="cs-CZ">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>emea-advance-invoice.f8d309.03129177bca7d1a104d297cff70978c43f0bb9c7.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>03129177bca7d1a104d297cff70978c43f0bb9c7</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-advance-invoice.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Advance invoices for Eastern Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohové faktury pro východní Evropu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>An advance invoice is a document that you can create for a customer or vendor.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura je dokument, který vytvoříte pro odběratele nebo dodavatele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>It states the amount that must be prepaid on a sales order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura uvádí částku, která musí být předplacena na prodejní objednávce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104" restype="x-metadata">
-          <source>This topic provides information about advance invoices for Eastern Europe.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma obsahuje informace o zálohových fakturách pro východní Evropu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Advance invoices for Eastern Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohové faktury pro východní Evropu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>An advance invoice is a document that you can create for a customer or vendor.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura je dokument, který vytvoříte pro odběratele nebo dodavatele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>It states the amount that must be prepaid on a sales order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura uvádí částku, která musí být předplacena na prodejní objednávce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>This topic provides information about advance invoices for Eastern Europe.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma obsahuje informace o zálohových fakturách pro východní Evropu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Advance invoice functionality lets you perform the following tasks:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce zálohové faktury umožňuje provádět následující činnosti:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Issue advance invoices to customers, and track the status of those advance invoices (<bpt id="p1">**</bpt>Open<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Partially paid<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Closed<ept id="p3">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vydání zálohových faktur odběratelům a sledování stavu těchto zálohových faktur (<bpt id="p1">**</bpt>Otevřené<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Částečně zaplacené<ept id="p2">**</ept> nebo <bpt id="p3">**</bpt>Uzavřené<ept id="p3">**</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Post advance invoice transactions and value-added tax (VAT) transactions (for Poland only).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaúčtování transakcí zálohové faktury a transakcí daně z přidané hodnoty (DPH) (pouze pro Polsko).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Generate payment journal lines automatically, based on an advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generování řádků deníku plateb automaticky v závislosti na zálohové faktuře.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Link prepayments that are received from customers to advance invoices (either before or after you post the prepayment).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Propojení záloh přijatých od odběratelů k zálohovým fakturám (před nebo po zaúčtování zálohy).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Change the VAT posting in posted prepayments (that is, convert a prepayment to a payment or a payment to a prepayment, or change the posting date, tax rate, or amount).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Změna zaúčtování DPH do zaúčtované zálohy (tj. převést zálohu na platbu nebo platbu na zálohu, nebo změnit datum zaúčtování, sazby daně nebo částky).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Create a tax document for the VAT liable delivery (for Czech Republic only).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvořte daňový doklad pro dodávku podléhající DPH (pouze pro Českou republiku).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Advance invoices for Poland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohové faktury pro Polsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Polish companies that receive prepayments must create an invoice for prepayments for the customer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Polské společnosti přijímající zálohy musí vytvořit fakturu pro platbu záloh pro odběratele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>This advance invoice is posted to the general ledger and is a mandatory document for VAT tax purposes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato zálohová faktura je zaúčtována do hlavní knihy a je to povinný dokument pro daňové účely DPH.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>The tax that is calculated on the advance invoice must be reported to the tax authority.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daň, která se vypočítává na zálohové faktuře, musí být nahlášena finančnímu úřadu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>When the final sale of goods is performed, the advance invoice should be specified on the sales invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při provádění konečného prodeje zboží by měla zálohová faktura být zadána na prodejní faktuře.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The total amount of sales must include prepayments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Celková částka prodeje musí obsahovat zálohy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>When the sales invoice is posted, the settled advance invoice will be reversed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při zaúčtování prodejní faktury bude vyrovnaná zálohová faktura stornována.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>The original advance invoice will be settled with an advance invoice reversal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Původní zálohová faktura bude vyrovnána se stornem zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Set up Accounts receivable for advance invoices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení parametrů modulu Pohledávky pro zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>On the <bpt id="p1">**</bpt>Accounts receivable parameters<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Updates<ept id="p2">**</ept> tab, specify the following parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Parametry závazků<ept id="p1">**</ept> na kartě <bpt id="p2">**</bpt>Aktualizace<ept id="p2">**</ept> určete následující parametry.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>FastTab</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pevná záložka</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Parameter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametr</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Posting profile</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účetní profil</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Select the posting profile to use with advance invoicing (for Poland only).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte účetní profil, který chcete používat pro zálohovou fakturaci (pouze Polsko).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Important:<ept id="p1">&lt;/strong&gt;</ept> For the Czech Republic and Hungary, advance invoices aren't treated as accounting or tax documents, and they aren't posted to the general ledger.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Důležité:<ept id="p1">&lt;/strong&gt;</ept> Pro Českou republiku a Maďarsko nejsou zálohové faktury považovány za účetní nebo daňové doklady a nejsou zaúčtovány do hlavní knihy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Therefore, you should leave this field blank for these countries to prevent advance invoices from being posted to the general ledger.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proto byste měli toto pole pro tyto země ponechat prázdné, aby se zabránilo zaúčtování zálohových faktur do hlavní knihy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Off</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vypnuto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>set account</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">protiúčet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Sales tax group</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skupina prodejní daně</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Select the sales tax group to use when sales tax is calculated for advance invoicing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte skupinu DPH, která má být použita, když se pro zálohovou fakturaci vypočítává DPH:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Reversal as correction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno jako oprava</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Select this check box if the reversal of an advance invoice should be considered a correction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto políčko zaškrtněte, pokud storno zálohové faktury má být považováno za opravu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Reverse on invoice date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stornovat k datu faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Select this check box to reverse the prepayment on the date when the invoice is posted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaškrtnutím tohoto políčka zajistíte stornování zálohy k datu zaúčtování faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Payment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platba</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Multiple prepayment dates</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Více dat zálohy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Select from the following options: <bpt id="p1">&lt;strong&gt;</bpt>Accept<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Warning<ept id="p2">&lt;/strong&gt;</ept>, or <bpt id="p3">&lt;strong&gt;</bpt>Error<ept id="p3">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte některou z následujících možností: <bpt id="p1">&lt;strong&gt;</bpt>přijmout<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>upozornění<ept id="p2">&lt;/strong&gt;</ept>, nebo <bpt id="p3">&lt;strong&gt;</bpt>chyba<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Payment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platba</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Date mismatch</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Neshoda data</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Select from the following options: <bpt id="p1">&lt;strong&gt;</bpt>Accept<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Warning<ept id="p2">&lt;/strong&gt;</ept>, or <bpt id="p3">&lt;strong&gt;</bpt>Error<ept id="p3">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte některou z následujících možností: <bpt id="p1">&lt;strong&gt;</bpt>přijmout<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>upozornění<ept id="p2">&lt;/strong&gt;</ept>, nebo <bpt id="p3">&lt;strong&gt;</bpt>chyba<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Payment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platba</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Amount mismatch</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Neshoda částky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Select from the following options: <bpt id="p1">&lt;strong&gt;</bpt>Accept<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Warning<ept id="p2">&lt;/strong&gt;</ept>, or <bpt id="p3">&lt;strong&gt;</bpt>Error<ept id="p3">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte některou z následujících možností: <bpt id="p1">&lt;strong&gt;</bpt>přijmout<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>upozornění<ept id="p2">&lt;/strong&gt;</ept>, nebo <bpt id="p3">&lt;strong&gt;</bpt>chyba<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Payment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platba</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Linking to posted advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Propojení na zaúčtovanou zálohovou fakturu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Select from the following options: <bpt id="p1">&lt;strong&gt;</bpt>Accept<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>Warning<ept id="p2">&lt;/strong&gt;</ept>, or <bpt id="p3">&lt;strong&gt;</bpt>Error<ept id="p3">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte některou z následujících možností: <bpt id="p1">&lt;strong&gt;</bpt>přijmout<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>upozornění<ept id="p2">&lt;/strong&gt;</ept>, nebo <bpt id="p3">&lt;strong&gt;</bpt>chyba<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Payment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platba</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>(CZE), (POL) Prepayment handling</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(CZE), (POL) Zpracování záloh</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Select <bpt id="p1">&lt;strong&gt;</bpt>Advanced<ept id="p1">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte <bpt id="p1">&lt;strong&gt;</bpt>Upřesnit<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>On the <bpt id="p1">**</bpt>Number sequences<ept id="p1">**</ept> tab, set up number sequences for the following references:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na kartě <bpt id="p1">**</bpt>Číselné řady<ept id="p1">**</ept> nastavte číselné řady pro následující reference:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Tax document</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daňový doklad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Tax credit memo</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daňový dobropis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Advance invoice credit note</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dobropis zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Advance invoice reversal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Storno zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Advance invoice voucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doklad zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Advance invoice credit note voucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doklad dobropisu zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Advance invoice reversal voucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doklad stornování zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Create a customer advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření zálohové faktury odběratele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Click <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Advance invoices<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>All advance invoices<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na <bpt id="p1">**</bpt>Pohledávky<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Běžné<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Zálohové faktury<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Všechny zálohové faktury<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>To create a new advance invoice, on the Action Pane, on the <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Advance invoice<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li vytvořit novou zálohovou fakturu, v podokně akcí na kartě <bpt id="p1">**</bpt>Zálohová faktura<ept id="p1">**</ept> klikněte na <bpt id="p2">**</bpt>Zálohová faktura<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Enter the required information, and then click <bpt id="p1">**</bpt>Post<ept id="p1">**</ept> to post the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte požadovanou informaci a poté klikněte na možnost <bpt id="p1">**</bpt>Zaúčtovat<ept id="p1">**</ept> k zaúčtování zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>An advance invoice can have one of the following statuses: <bpt id="p1">**</bpt>Opened<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Partially paid<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Closed<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura může mít některý z následujících stavů: <bpt id="p1">**</bpt>Otevřená<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Částečně zaplacená<ept id="p2">**</ept> nebo <bpt id="p3">**</bpt>Uzavřená<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>You can manually change the status of an advance invoice that has been posted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stav zálohové faktury, která byla zaúčtována, můžete ručně změnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Click <bpt id="p1">**</bpt>Status<ept id="p1">**</ept>, and then, on the <bpt id="p2">**</bpt>Change the status of an advance invoice<ept id="p2">**</ept> page, in the <bpt id="p3">**</bpt>New status<ept id="p3">**</ept> field, select the new status of the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko <bpt id="p1">**</bpt>stav<ept id="p1">**</ept>a poté na stránce <bpt id="p2">**</bpt>Změnit stav zálohové faktury<ept id="p2">**</ept> stránky v poli <bpt id="p3">**</bpt>Nový stav<ept id="p3">**</ept> vyberte nový stav zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can change the status of an advance invoice at any time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka:<ept id="p1">**</ept> Kdykoli můžete změnit stav zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>You can't process closed advance invoices in transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nelze zpracovat uzavřené zálohové faktury v transakcích.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka:<ept id="p1">**</ept> Pro Polsko jsou zálohové faktury vygenerovány, pokud nastavíte účetní profil pro zálohové faktury v parametrech pohledávek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>To view transactions that have been posted, on the <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Voucher<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">K zobrazení transakcí, které byly zaúčtovány, na stránce <bpt id="p1">**</bpt>Zálohová faktura<ept id="p1">**</ept> klepněte na <bpt id="p2">**</bpt>Doklad<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>VAT on advance invoices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DPH na zálohových fakturách</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Companies must record VAT on prepayments from customers, even though the sale hasn't been completed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Společnosti musí zaznamenat DPH při platbách záloh od odběratelů, i když prodej nebyl dokončen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>To post VAT from a prepayment, you can add a line that contains specifications of VAT to an advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete zaúčtovat DPH ze zálohy, můžete přidat řádek, který obsahuje specifikace DPH do zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>An advance invoice can have several lines, and the lines can contain VAT specifications that are taken from sales order lines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura může mít několik řádků a řádky mohou obsahovat specifikace DPH, které jsou převzaty z řádků prodejní objednávky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Therefore, you can post VAT from a prepayment in strict accordance to sales order lines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proto lze zaúčtovat DPH ze zálohy přísně v souladu s řádky prodejní objednávky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The VAT specifications are copied to the advance invoice lines only if the <bpt id="p2">**</bpt>Type of tax<ept id="p2">**</ept> field on the <bpt id="p3">**</bpt>Sales tax codes<ept id="p3">**</ept> page is set to <bpt id="p4">**</bpt>Standard VAT<ept id="p4">**</ept> or <bpt id="p5">**</bpt>Reduced VAT<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka:<ept id="p1">**</ept> specifikace DPH budou zkopírovány do zálohové faktury řádky pouze v případě, že je hodnota v poli <bpt id="p2">**</bpt>typ daně<ept id="p2">**</ept> na stránce <bpt id="p3">**</bpt>Kódy DPH<ept id="p3">**</ept> nastavena na <bpt id="p4">**</bpt>Standardní daň DPH<ept id="p4">**</ept> nebo <bpt id="p5">**</bpt>Snížená DPH<ept id="p5">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Otherwise, the line is copied to the advance invoice as if the VAT amount is 0 (zero).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jinak je řádek zkopírován do zálohové faktury, jako by částka DPH byla 0 (nula).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Link an advance invoice to a sales order or a free text invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Propojení zálohové faktury s prodejní objednávkou nebo volnou fakturou</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Each advance invoice can be linked with only one sales order or free text invoice at a time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Každou zálohovou fakturu lze spojit pouze s jednou prodejní objednávkou nebo fakturou s volným textem najednou.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>You can reassign an existing advance invoice to another sales order or free text invoice, provided that no prepayments are linked to the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete také změnit přidružení stávající zálohové faktury s jinou prodejní objednávkou nebo fakturou s volným textem za předpokladu, že žádné zálohy nejsou spojeny se zálohovou fakturou.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>To link an advance invoice to a sales order, on the <bpt id="p1">**</bpt>All advance invoices<ept id="p1">**</ept> page, select the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete provést propojení zálohové faktury s prodejní objednávkou, na stránce <bpt id="p1">**</bpt>Všechny zálohové faktury<ept id="p1">**</ept> vyberte zálohovou fakturu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>On the Action Pane, click <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Sales order<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V podokně akcí klepněte na tlačítko <bpt id="p1">**</bpt>Zálohová faktura<ept id="p1">**</ept>a klepněte na tlačítko <bpt id="p2">**</bpt>Prodejní objednávka<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Then select the sales order to link to the advance invoice, and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potom vyberte prodejní objednávku k propojení se zálohovou fakturou a klepněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>To link an advance invoice to a free text invoice, on the <bpt id="p1">**</bpt>All advance invoices<ept id="p1">**</ept> page, select the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete provést propojení faktury s volným textem s prodejní objednávkou, na stránce <bpt id="p1">**</bpt>Všechny zálohové faktury<ept id="p1">**</ept> vyberte zálohovou fakturu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>On the Action Pane, click <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Free text invoice<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V podokně akcí klepněte na tlačítko <bpt id="p1">**</bpt>Zálohová faktura<ept id="p1">**</ept>a klepněte na tlačítko <bpt id="p2">**</bpt>Faktura s volným textem<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Then select the free text invoice to link to the advance invoice, and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potom vyberte fakturu s volným textem k propojení se zálohovou fakturou a klepněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Create a customer advance invoice from a sales order</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření zálohové faktury odběratele z prodejní objednávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Create a sales order, or select an existing sales order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvořte novou prodejní objednávku nebo vyberte stávající.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Click <bpt id="p1">**</bpt>Invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Generate<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Advance invoice<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko <bpt id="p1">**</bpt>Faktura<ept id="p1">**</ept> a potom na tlačítko <bpt id="p2">**</bpt>Generovat<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Zálohová faktura<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>On the <bpt id="p1">**</bpt>Create advance invoice<ept id="p1">**</ept> page, set following fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Vytvořit zálohovou fakturu<ept id="p1">**</ept> nastavte následující pole.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Percent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Procento</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Specify the percentage of the prepayment for the sales order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte procento zálohy pro prodejní objednávku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Offset account</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Protiúčet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Select the default offset account to use with advanced invoicing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte výchozí protiúčet pro použití s rozšířenou fakturací.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Update order</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktualizace objednávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Select from the following options: <bpt id="p1">**</bpt>All<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Deliver now<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Picked<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Packing slip<ept id="p4">**</ept>, or <bpt id="p5">**</bpt>Picked quantity and non-stocked products<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte některou z následujících možností: <bpt id="p1">**</bpt>Vše<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Dodat nyní<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Vyskladněno<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Dodací list<ept id="p4">**</ept> nebo <bpt id="p5">**</bpt>Vyskladněné množství a produkty mimo sklad<ept id="p5">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>The advance invoice amount will be calculated based on the Sales order amounts for the items.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částka zálohové faktury se vypočítá na základě částky prodejní objednávku pro položky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Post VAT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zaúčtovat DPH</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Specify whether VAT should be posted during advance invoice posting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Určete, zda se má DPH zaúčtovat při zaúčtování zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Post VAT date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum zaúčtování DPH</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Specify the date for posting VAT.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Upřesněte datum zaúčtování DPH.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Posting profile with prepayment journal voucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účetní profil se zálohovým dokladem deníku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Specify the posting profile for the prepayment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte účetní profil pro zálohu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Create tax document</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvořit daňový doklad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Specify whether a tax document should be created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Určete, zda se má vytvořit daňový doklad.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>[!NOTE} For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">[!POZNÁMKA} Pro Polsko jsou zálohové faktury vygenerovány, pokud nastavíte účetní profil pro zálohové faktury v parametrech pohledávek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Create a customer advance invoice from a free text invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření zálohové faktury odběratele z faktury s volným textem</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Create a free text invoice, or select an existing free text invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvořte fakturu s volným textem nebo vyberte stávající fakturu s volným textem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>On <bpt id="p1">**</bpt>Invoice<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>New<ept id="p2">**</ept> section, click <bpt id="p3">**</bpt>Advance invoice<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na kartě <bpt id="p1">**</bpt>Faktury<ept id="p1">**</ept> v části <bpt id="p2">**</bpt>Nová<ept id="p2">**</ept> klepněte na položku <bpt id="p3">**</bpt>Zálohová faktura<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>You can then create a new advance invoice that will be linked to the free text invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">pak můžete vytvořit novou zálohovou fakturu, která bude spojená s fakturou s volným textem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka:<ept id="p1">**</ept> Pro Polsko jsou zálohové faktury vygenerovány, pokud nastavíte účetní profil pro zálohové faktury v parametrech pohledávek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Print an advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tisk zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>To print an advance invoice, on the <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Print<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete vytisknout zálohovou fakturu, na stránce <bpt id="p1">**</bpt>Zálohová faktura<ept id="p1">**</ept> klepněte na možnost <bpt id="p2">**</bpt>Vytisknout<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>For Poland, you can print an advance invoice document of the fiscal document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro Polsko můžete vytisknout dokument zálohové faktury fiskálního dokumentu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Select an option during advance invoice posting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte možnost při zaúčtování zálohových faktur.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>For Poland, the layout of the sales invoice and free text invoice documents should include the following information about the advance invoice that is settled:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro Polsko zahrnuje rozvržení prodejní faktury a dokumentů faktur s volným textem následující informace o vyrovnanou zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Number of the advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Číslo zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Date of the advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Amount without VAT, VAT amount, amount with VAT, and currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částka bez DPH, Částka DPH, částka včetně DPH a Měna</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Tax percentage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Procento daně</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>The summary of VAT amounts should include <bpt id="p1">**</bpt>Tax from Advance Invoice<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Souhrn částek DPH musí obsahovat <bpt id="p1">**</bpt>daň ze zálohové faktury<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>The amount that is due should be reduced by the amount of the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částka, která je splatná, by měla být snížena o částku zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Create a payment proposal from an advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření návrhu platby ze zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>You can generate payment journal lines automatically, based on an advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete generovat řádky deníku plateb automaticky v závislosti na zálohové faktuře.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>When you create a new payment journal, on the <bpt id="p1">**</bpt>Payment journal<ept id="p1">**</ept> page, select the <bpt id="p2">**</bpt>Prepayment journal voucher<ept id="p2">**</ept> option, and then click <bpt id="p3">**</bpt>Lines<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při vytváření nového deníku plateb na stránce <bpt id="p1">**</bpt>Deník plateb<ept id="p1">**</ept> vyberte možnost <bpt id="p2">**</bpt>Zálohový doklad deníku<ept id="p2">**</ept> a klepněte na tlačítko <bpt id="p3">**</bpt>Řádky<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>On the <bpt id="p1">**</bpt>Journal voucher<ept id="p1">**</ept> page, you can click <bpt id="p2">**</bpt>Payment proposal<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Payment proposal from advance invoice<ept id="p3">**</ept> to create a payment proposal from advance invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Doklad deníku<ept id="p1">**</ept> můžete kliknout na možnosti <bpt id="p2">**</bpt>Návrh platby<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Návrh platby ze zálohové faktury<ept id="p3">**</ept>, abyste otevřeli formulář návrhu platby ze zálohových faktur.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Information such as the posting profile and sales tax groups is taken from the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Informace jako například účetní profil a skupiny DPH jsou převzaty ze zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> New prepayments will be linked automatically to advance invoices if the <bpt id="p2">**</bpt>Link prepayments<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Change status<ept id="p3">**</ept> options are selected on the <bpt id="p4">**</bpt>Create payment proposal from advance invoices<ept id="p4">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka:<ept id="p1">**</ept> Nové zálohy budou automaticky propojeny se zálohovými fakturami, pokud budou zaškrtnuta políčka <bpt id="p2">**</bpt>Propojení záloh<ept id="p2">**</ept> a <bpt id="p3">**</bpt>Změna stavu<ept id="p3">**</ept> na stránce <bpt id="p4">**</bpt>Vytvořit návrh platby ze zálohových faktur<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Link a prepayment to an advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Připojení zálohy k zálohové faktuře</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>To link a prepayment to an advance invoice from the payment journal, open the payment journal, select the line that has the prepayment, and then click <bpt id="p1">**</bpt>Functions<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Link to advance invoices<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete propojit zálohu se zálohovou fakturou z deníku plateb, otevřete deník plateb, vyberte řádek, který obsahuje zálohu, a klepněte na tlačítko <bpt id="p1">**</bpt>Funkce<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Propojit se zálohovými fakturami<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>To link a prepayment to an advance invoice from the <bpt id="p1">**</bpt>Customer transactions<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>All customers<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Customer<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Transactions<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete propojit zálohu se zálohovou fakturou ze stránky <bpt id="p1">**</bpt>Transakce odběratele<ept id="p1">**</ept>, klikněte na <bpt id="p2">**</bpt>Všichni odběratelé<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Odběratel<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Transakce<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Select the payment journal, select the line that has the prepayment, and then click <bpt id="p1">**</bpt>Functions<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Link to advance invoices<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte deník plateb, vyberte řádek, který má zálohu, a klikněte na <bpt id="p1">**</bpt>Funkce<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Propojit se zálohovými fakturami<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Link an advance invoice to a prepayment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Připojení zálohové faktury k záloze</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>To link an advance invoice to a prepayment line, on the <bpt id="p1">**</bpt>All advance invoices<ept id="p1">**</ept> page, select the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete provést propojení zálohové faktury s řádkem zálohy, na stránce <bpt id="p1">**</bpt>Všechny zálohové faktury<ept id="p1">**</ept> vyberte zálohovou fakturu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>On the Action Pane, click <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Prepayment<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V podokně akcí klepněte na tlačítko <bpt id="p1">**</bpt>Zálohová faktura<ept id="p1">**</ept>a klepněte na tlačítko <bpt id="p2">**</bpt>Záloha<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>Then select the prepayment line to link to the advance invoice, and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potom vyberte řádek zálohy k propojení se zálohovou fakturou a klepněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Advance invoice credit note</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dobropis zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>(POL) To cancel an advance invoice you can create an advance invoice credit note and post it to the general ledger.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(POL) Pokud chcete zálohovou fakturu zrušit, můžete vytvořit dobropis zálohové faktury a zaúčtovat jej do hlavní knihy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>To create a credit note, you can create a new advance invoice and then click <bpt id="p1">**</bpt>Credit note<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete vytvořit dobropis, můžete vytvořit novou zálohovou fakturu a klikknout na tlačítko <bpt id="p1">**</bpt>Dobropis<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>You can then select the advance invoice to cancel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poté můžete vybrat zálohovou fakturu ke zrušení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>You can also create a credit note of a sales invoice that has advance invoice settlement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete také vytvořit dobropis prodejní faktury s vyrovnáním zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>The layout of advance invoice credit note invoices contains information about the lines both before and after correction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozložení faktur dobropisu zálohové faktury obsahuje informace o řádcích před a po opravě.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>(POL) General ledger transactions are created after the advance invoice credit note is posted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(POL) Po zaúčtování dobropisu zálohové faktury se vytvářejí transakce hlavní knihy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>(CZE) Tax documents</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(CZE) Daňové doklady</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>For the Czech Republic, you can create a tax document that is based on prepayment information for the VAT liable delivery.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro Českou republiku můžete vytvořit daňový doklad, který je založen na informacích o záloze pro doručení podléhající DPH.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>You can create, create and show, or create and print the tax document from the prepayment page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete vytvořit, vytvořit a zobrazit nebo vytvořit a vytisknout daňový doklad ze stránky zálohy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Click <bpt id="p1">**</bpt>Functions<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Tax document<ept id="p2">**</ept>, and select one of the options.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko <bpt id="p1">**</bpt>Funkce<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Daňový doklad<ept id="p2">**</ept>a vyberte jednu z možností.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>The tax document contains detailed information about the VAT, such as the VAT type, the value, and its basis in the accounting currency and the transaction currency.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daňový doklad obsahuje podrobné informace o DPH jako například typ DPH, hodnotu a základ v zúčtovací měně a měně transakce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Set up Accounts payable for advance invoices</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení parametrů modulu Závazky pro zálohové faktury</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>On the <bpt id="p1">**</bpt>Accounts payable parameters<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Number sequences<ept id="p2">**</ept> tab, specify a number sequence for advance invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Parametry závazků<ept id="p1">**</ept> na kartě <bpt id="p2">**</bpt>Číselné řady<ept id="p2">**</ept> určete číselnou řadu pro zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Create a vendor advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tvorba zálohové faktury dodavatele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>You can manually create an advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete ručně vytvořit zálohovou fakturu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Alternatively, the new advance invoice can be based on an existing purchase order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Případně může být nová zálohová faktura založena na stávající nákupní objednávce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Manually create a vendor advance invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ruční tvorba zálohové faktury dodavatele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Click <bpt id="p1">**</bpt>Accounts payable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Advance invoices<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>All advance invoices<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klikněte na <bpt id="p1">**</bpt>Závazky<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Běžné<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Zálohové faktury<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Všechny zálohové faktury<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>To create a new advance invoice, on the Action Pane, on the <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept> tab, click <bpt id="p2">**</bpt>Advance invoice<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li vytvořit novou zálohovou fakturu, v podokně akcí na kartě <bpt id="p1">**</bpt>Zálohová faktura<ept id="p1">**</ept> klikněte na <bpt id="p2">**</bpt>Zálohová faktura<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Then enter the required information, and click <bpt id="p1">**</bpt>Post<ept id="p1">**</ept> to post the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potom zadejte požadovanou informaci a poté klikněte na možnost <bpt id="p1">**</bpt>Zaúčtovat<ept id="p1">**</ept> k zaúčtování zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>An advance invoice can have one of the following statuses: <bpt id="p1">**</bpt>Opened<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Partially paid<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Closed<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zálohová faktura může mít některý z následujících stavů: <bpt id="p1">**</bpt>Otevřená<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Částečně zaplacená<ept id="p2">**</ept> nebo <bpt id="p3">**</bpt>Uzavřená<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>You can manually change the status of an advance invoice that has been posted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stav zálohové faktury, která byla zaúčtována, můžete ručně změnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Click <bpt id="p1">**</bpt>Status<ept id="p1">**</ept>, and then, on the <bpt id="p2">**</bpt>Change the status of an advance invoice<ept id="p2">**</ept> page, in the <bpt id="p3">**</bpt>New status<ept id="p3">**</ept> field, select the new status of the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko <bpt id="p1">**</bpt>stav<ept id="p1">**</ept>a poté na stránce <bpt id="p2">**</bpt>Změnit stav zálohové faktury<ept id="p2">**</ept> stránky v poli <bpt id="p3">**</bpt>Nový stav<ept id="p3">**</ept> vyberte nový stav zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> You can change the status of an advance invoice at any time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka:<ept id="p1">**</ept> Kdykoli můžete změnit stav zálohové faktury.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>You can't process closed advance invoices in transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nelze zpracovat uzavřené zálohové faktury v transakcích.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The VAT specifications are copied to the advance invoice lines only if the <bpt id="p2">**</bpt>Type of tax<ept id="p2">**</ept> field on the <bpt id="p3">**</bpt>Sales tax codes<ept id="p3">**</ept> page is set to <bpt id="p4">**</bpt>Standard VAT<ept id="p4">**</ept> or <bpt id="p5">**</bpt>Reduced VAT<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poznámka:<ept id="p1">**</ept> specifikace DPH budou zkopírovány do zálohové faktury řádky pouze v případě, že je hodnota v poli <bpt id="p2">**</bpt>typ daně<ept id="p2">**</ept> na stránce <bpt id="p3">**</bpt>Kódy DPH<ept id="p3">**</ept> nastavena na <bpt id="p4">**</bpt>Standardní daň DPH<ept id="p4">**</ept> nebo <bpt id="p5">**</bpt>Snížená DPH<ept id="p5">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Otherwise, the line is copied to the advance invoice as if the VAT amount is 0 (zero).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jinak je řádek zkopírován do zálohové faktury, jako by částka DPH byla 0 (nula).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Link an advance invoice to a purchase order</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Propojení zálohové faktury s nákupní objednávkou</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Each advance invoice can be linked with only one purchase order at a time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Každou zálohovou fakturu lze spojit pouze s jednou nákupní objednávkou nebo fakturou s volným textem najednou.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>You can reassign an existing advance invoice to another purchase order, provided that no prepayments are linked to the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete také změnit přidružení stávající zálohové faktury k jiné nákupní objednávce za předpokladu, že žádné zálohy nejsou spojeny se zálohovou fakturou.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>To link an advance invoice to a purchase order, on the <bpt id="p1">**</bpt>All advance invoices<ept id="p1">**</ept> page, select the advance invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud chcete provést propojení zálohové faktury s nákupní objednávkou, na stránce <bpt id="p1">**</bpt>Všechny zálohové faktury<ept id="p1">**</ept> vyberte zálohovou fakturu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>On the Action Pane, click <bpt id="p1">**</bpt>Advance invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Purchase order<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V podokně akcí klepněte na tlačítko <bpt id="p1">**</bpt>Zálohová faktura<ept id="p1">**</ept>a klepněte na tlačítko <bpt id="p2">**</bpt>Nákupní objednávka<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Then select the purchase order to link to the advance invoice, and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Potom vyberte nákupní objednávku k propojení se zálohovou fakturou a klepněte na tlačítko <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Create a vendor advance invoice from a purchase order</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvoření zálohové faktury dodavatele z nákupní objednávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>Create a purchase order, or select an existing purchase order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vytvořte nákupní objednávku nebo vyberte stávající nákupní objednávku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Click <bpt id="p1">**</bpt>Invoice<ept id="p1">**</ept>, and then click <bpt id="p2">**</bpt>Generate<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Advance invoice<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klepněte na tlačítko <bpt id="p1">**</bpt>Faktura<ept id="p1">**</ept> a potom na tlačítko <bpt id="p2">**</bpt>Generovat<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Zálohová faktura<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>On the <bpt id="p1">**</bpt>Create advance invoice<ept id="p1">**</ept> page, set following fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na stránce <bpt id="p1">**</bpt>Vytvořit zálohovou fakturu<ept id="p1">**</ept> nastavte následující pole.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pole</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">popis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Percent</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Procento</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>Specify the percentage of the prepayment for the purchase order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte procento zálohy pro nákupní objednávku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Update purchase</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktualizovat nákup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>Select from the options.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vyberte některou z následujících možností:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>The advance invoice amount will be calculated based on the Purchase order amount for the items.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částka zálohové faktury se vypočítá na základě částky nákupní objednávky pro položky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>Posting profile with prepayment journal voucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účetní profil se zálohovým dokladem deníku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>Specify the posting profile for the prepayment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zadejte účetní profil pro zálohu.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Zálohové faktury pro východní Evropu
+description: Zálohová faktura je dokument, který vytvoříte pro odběratele nebo dodavatele. Zálohová faktura uvádí částku, která musí být předplacena na prodejní objednávce. Toto téma obsahuje informace o zálohových fakturách pro východní Evropu.
+author: EvgenyPopovMBS
+manager: AnnBe
+ms.date: 04/10/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustParameters
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 272643
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
+ms.author: epopov
+ms.dyn365.ops.version: Version 1611
+ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 03129177bca7d1a104d297cff70978c43f0bb9c7
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565352"
+---
+# <a name="advance-invoices-for-eastern-europe"></a><span data-ttu-id="27a68-105">Zálohové faktury pro východní Evropu</span><span class="sxs-lookup"><span data-stu-id="27a68-105">Advance invoices for Eastern Europe</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="27a68-106">Zálohová faktura je dokument, který vytvoříte pro odběratele nebo dodavatele.</span><span class="sxs-lookup"><span data-stu-id="27a68-106">An advance invoice is a document that you can create for a customer or vendor.</span></span> <span data-ttu-id="27a68-107">Zálohová faktura uvádí částku, která musí být předplacena na prodejní objednávce.</span><span class="sxs-lookup"><span data-stu-id="27a68-107">It states the amount that must be prepaid on a sales order.</span></span> <span data-ttu-id="27a68-108">Toto téma obsahuje informace o zálohových fakturách pro východní Evropu.</span><span class="sxs-lookup"><span data-stu-id="27a68-108">This topic provides information about advance invoices for Eastern Europe.</span></span>
+
+<span data-ttu-id="27a68-109">Funkce zálohové faktury umožňuje provádět následující činnosti:</span><span class="sxs-lookup"><span data-stu-id="27a68-109">Advance invoice functionality lets you perform the following tasks:</span></span>
+
+-   <span data-ttu-id="27a68-110">Vydání zálohových faktur odběratelům a sledování stavu těchto zálohových faktur (**Otevřené**, **Částečně zaplacené** nebo **Uzavřené**).</span><span class="sxs-lookup"><span data-stu-id="27a68-110">Issue advance invoices to customers, and track the status of those advance invoices (**Open**, **Partially paid**, or **Closed**).</span></span>
+-   <span data-ttu-id="27a68-111">Zaúčtování transakcí zálohové faktury a transakcí daně z přidané hodnoty (DPH) (pouze pro Polsko).</span><span class="sxs-lookup"><span data-stu-id="27a68-111">Post advance invoice transactions and value-added tax (VAT) transactions (for Poland only).</span></span>
+-   <span data-ttu-id="27a68-112">Generování řádků deníku plateb automaticky v závislosti na zálohové faktuře.</span><span class="sxs-lookup"><span data-stu-id="27a68-112">Generate payment journal lines automatically, based on an advance invoice.</span></span>
+-   <span data-ttu-id="27a68-113">Propojení záloh přijatých od odběratelů k zálohovým fakturám (před nebo po zaúčtování zálohy).</span><span class="sxs-lookup"><span data-stu-id="27a68-113">Link prepayments that are received from customers to advance invoices (either before or after you post the prepayment).</span></span>
+-   <span data-ttu-id="27a68-114">Změna zaúčtování DPH do zaúčtované zálohy (tj. převést zálohu na platbu nebo platbu na zálohu, nebo změnit datum zaúčtování, sazby daně nebo částky).</span><span class="sxs-lookup"><span data-stu-id="27a68-114">Change the VAT posting in posted prepayments (that is, convert a prepayment to a payment or a payment to a prepayment, or change the posting date, tax rate, or amount).</span></span>
+-   <span data-ttu-id="27a68-115">Vytvořte daňový doklad pro dodávku podléhající DPH (pouze pro Českou republiku).</span><span class="sxs-lookup"><span data-stu-id="27a68-115">Create a tax document for the VAT liable delivery (for Czech Republic only).</span></span>
+
+## <a name="advance-invoices-for-poland"></a><span data-ttu-id="27a68-116">Zálohové faktury pro Polsko</span><span class="sxs-lookup"><span data-stu-id="27a68-116">Advance invoices for Poland</span></span>
+<span data-ttu-id="27a68-117">Polské společnosti přijímající zálohy musí vytvořit fakturu pro platbu záloh pro odběratele.</span><span class="sxs-lookup"><span data-stu-id="27a68-117">Polish companies that receive prepayments must create an invoice for prepayments for the customer.</span></span> <span data-ttu-id="27a68-118">Tato zálohová faktura je zaúčtována do hlavní knihy a je to povinný dokument pro daňové účely DPH.</span><span class="sxs-lookup"><span data-stu-id="27a68-118">This advance invoice is posted to the general ledger and is a mandatory document for VAT tax purposes.</span></span> <span data-ttu-id="27a68-119">Daň, která se vypočítává na zálohové faktuře, musí být nahlášena finančnímu úřadu.</span><span class="sxs-lookup"><span data-stu-id="27a68-119">The tax that is calculated on the advance invoice must be reported to the tax authority.</span></span> <span data-ttu-id="27a68-120">Při provádění konečného prodeje zboží by měla zálohová faktura být zadána na prodejní faktuře.</span><span class="sxs-lookup"><span data-stu-id="27a68-120">When the final sale of goods is performed, the advance invoice should be specified on the sales invoice.</span></span> <span data-ttu-id="27a68-121">Celková částka prodeje musí obsahovat zálohy.</span><span class="sxs-lookup"><span data-stu-id="27a68-121">The total amount of sales must include prepayments.</span></span> <span data-ttu-id="27a68-122">Při zaúčtování prodejní faktury bude vyrovnaná zálohová faktura stornována.</span><span class="sxs-lookup"><span data-stu-id="27a68-122">When the sales invoice is posted, the settled advance invoice will be reversed.</span></span> <span data-ttu-id="27a68-123">Původní zálohová faktura bude vyrovnána se stornem zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-123">The original advance invoice will be settled with an advance invoice reversal.</span></span>
+
+## <a name="set-up-accounts-receivable-for-advance-invoices"></a><span data-ttu-id="27a68-124">Nastavení parametrů modulu Pohledávky pro zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-124">Set up Accounts receivable for advance invoices</span></span>
+<span data-ttu-id="27a68-125">Na stránce **Parametry závazků** na kartě **Aktualizace** určete následující parametry.</span><span class="sxs-lookup"><span data-stu-id="27a68-125">On the **Accounts receivable parameters** page, on the **Updates** tab, specify the following parameters.</span></span>
+
+
+|     <span data-ttu-id="27a68-126">Pevná záložka</span><span class="sxs-lookup"><span data-stu-id="27a68-126">FastTab</span></span>     |             <span data-ttu-id="27a68-127">Parametr</span><span class="sxs-lookup"><span data-stu-id="27a68-127">Parameter</span></span>             |                                                                                                                                                                                           <span data-ttu-id="27a68-128">popis</span><span class="sxs-lookup"><span data-stu-id="27a68-128">Description</span></span>                                                                                                                                                                                           |
+|-----------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="27a68-129">Zálohová faktura</span><span class="sxs-lookup"><span data-stu-id="27a68-129">Advance invoice</span></span> |          <span data-ttu-id="27a68-130">Účetní profil</span><span class="sxs-lookup"><span data-stu-id="27a68-130">Posting profile</span></span>          | <span data-ttu-id="27a68-131">Vyberte účetní profil, který chcete používat pro zálohovou fakturaci (pouze Polsko).</span><span class="sxs-lookup"><span data-stu-id="27a68-131">Select the posting profile to use with advance invoicing (for Poland only).</span></span> <span data-ttu-id="27a68-132"><strong>Důležité:</strong> Pro Českou republiku a Maďarsko nejsou zálohové faktury považovány za účetní nebo daňové doklady a nejsou zaúčtovány do hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="27a68-132"><strong>Important:</strong> For the Czech Republic and Hungary, advance invoices aren't treated as accounting or tax documents, and they aren't posted to the general ledger.</span></span> <span data-ttu-id="27a68-133">Proto byste měli toto pole pro tyto země ponechat prázdné, aby se zabránilo zaúčtování zálohových faktur do hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="27a68-133">Therefore, you should leave this field blank for these countries to prevent advance invoices from being posted to the general ledger.</span></span> |
+|                 |                                   |                                                                                                                                                                                                                                                                                                                                                                                                 |
+| <span data-ttu-id="27a68-134">Zálohová faktura</span><span class="sxs-lookup"><span data-stu-id="27a68-134">Advance invoice</span></span> |                <span data-ttu-id="27a68-135">Vypnuto</span><span class="sxs-lookup"><span data-stu-id="27a68-135">Off</span></span>                |                                                                                                                                                                                           <span data-ttu-id="27a68-136">protiúčet</span><span class="sxs-lookup"><span data-stu-id="27a68-136">set account</span></span>                                                                                                                                                                                           |
+| <span data-ttu-id="27a68-137">Zálohová faktura</span><span class="sxs-lookup"><span data-stu-id="27a68-137">Advance invoice</span></span> |          <span data-ttu-id="27a68-138">Skupina prodejní daně</span><span class="sxs-lookup"><span data-stu-id="27a68-138">Sales tax group</span></span>          |                                                                                                                                                      <span data-ttu-id="27a68-139">Vyberte skupinu DPH, která má být použita, když se pro zálohovou fakturaci vypočítává DPH:</span><span class="sxs-lookup"><span data-stu-id="27a68-139">Select the sales tax group to use when sales tax is calculated for advance invoicing.</span></span>                                                                                                                                                      |
+| <span data-ttu-id="27a68-140">Zálohová faktura</span><span class="sxs-lookup"><span data-stu-id="27a68-140">Advance invoice</span></span> |      <span data-ttu-id="27a68-141">Storno jako oprava</span><span class="sxs-lookup"><span data-stu-id="27a68-141">Reversal as correction</span></span>       |                                                                                                                                                 <span data-ttu-id="27a68-142">Toto políčko zaškrtněte, pokud storno zálohové faktury má být považováno za opravu.</span><span class="sxs-lookup"><span data-stu-id="27a68-142">Select this check box if the reversal of an advance invoice should be considered a correction.</span></span>                                                                                                                                                  |
+| <span data-ttu-id="27a68-143">Zálohová faktura</span><span class="sxs-lookup"><span data-stu-id="27a68-143">Advance invoice</span></span> |      <span data-ttu-id="27a68-144">Stornovat k datu faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-144">Reverse on invoice date</span></span>      |                                                                                                                                                     <span data-ttu-id="27a68-145">Zaškrtnutím tohoto políčka zajistíte stornování zálohy k datu zaúčtování faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-145">Select this check box to reverse the prepayment on the date when the invoice is posted.</span></span>                                                                                                                                                     |
+|     <span data-ttu-id="27a68-146">Platba</span><span class="sxs-lookup"><span data-stu-id="27a68-146">Payment</span></span>     |     <span data-ttu-id="27a68-147">Více dat zálohy</span><span class="sxs-lookup"><span data-stu-id="27a68-147">Multiple prepayment dates</span></span>     |                                                                                                                                        <span data-ttu-id="27a68-148">Vyberte některou z následujících možností: <strong>přijmout</strong>, <strong>upozornění</strong>, nebo <strong>chyba</strong>.</span><span class="sxs-lookup"><span data-stu-id="27a68-148">Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.</span></span>                                                                                                                                         |
+|     <span data-ttu-id="27a68-149">Platba</span><span class="sxs-lookup"><span data-stu-id="27a68-149">Payment</span></span>     |           <span data-ttu-id="27a68-150">Neshoda data</span><span class="sxs-lookup"><span data-stu-id="27a68-150">Date mismatch</span></span>           |                                                                                                                                        <span data-ttu-id="27a68-151">Vyberte některou z následujících možností: <strong>přijmout</strong>, <strong>upozornění</strong>, nebo <strong>chyba</strong>.</span><span class="sxs-lookup"><span data-stu-id="27a68-151">Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.</span></span>                                                                                                                                         |
+|     <span data-ttu-id="27a68-152">Platba</span><span class="sxs-lookup"><span data-stu-id="27a68-152">Payment</span></span>     |          <span data-ttu-id="27a68-153">Neshoda částky</span><span class="sxs-lookup"><span data-stu-id="27a68-153">Amount mismatch</span></span>          |                                                                                                                                        <span data-ttu-id="27a68-154">Vyberte některou z následujících možností: <strong>přijmout</strong>, <strong>upozornění</strong>, nebo <strong>chyba</strong>.</span><span class="sxs-lookup"><span data-stu-id="27a68-154">Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.</span></span>                                                                                                                                         |
+|     <span data-ttu-id="27a68-155">Platba</span><span class="sxs-lookup"><span data-stu-id="27a68-155">Payment</span></span>     | <span data-ttu-id="27a68-156">Propojení na zaúčtovanou zálohovou fakturu</span><span class="sxs-lookup"><span data-stu-id="27a68-156">Linking to posted advance invoice</span></span> |                                                                                                                                        <span data-ttu-id="27a68-157">Vyberte některou z následujících možností: <strong>přijmout</strong>, <strong>upozornění</strong>, nebo <strong>chyba</strong>.</span><span class="sxs-lookup"><span data-stu-id="27a68-157">Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.</span></span>                                                                                                                                         |
+|     <span data-ttu-id="27a68-158">Platba</span><span class="sxs-lookup"><span data-stu-id="27a68-158">Payment</span></span>     | <span data-ttu-id="27a68-159">(CZE), (POL) Zpracování záloh</span><span class="sxs-lookup"><span data-stu-id="27a68-159">(CZE), (POL) Prepayment handling</span></span>  |                                                                                                                                                                                <span data-ttu-id="27a68-160">Vyberte <strong>Upřesnit</strong>.</span><span class="sxs-lookup"><span data-stu-id="27a68-160">Select <strong>Advanced</strong>.</span></span>                                                                                                                                                                                |
+
+<span data-ttu-id="27a68-161">Na kartě **Číselné řady** nastavte číselné řady pro následující reference:</span><span class="sxs-lookup"><span data-stu-id="27a68-161">On the **Number sequences** tab, set up number sequences for the following references:</span></span>
+
+-   <span data-ttu-id="27a68-162">Daňový doklad</span><span class="sxs-lookup"><span data-stu-id="27a68-162">Tax document</span></span>
+-   <span data-ttu-id="27a68-163">Daňový dobropis</span><span class="sxs-lookup"><span data-stu-id="27a68-163">Tax credit memo</span></span>
+-   <span data-ttu-id="27a68-164">Zálohová faktura</span><span class="sxs-lookup"><span data-stu-id="27a68-164">Advance invoice</span></span>
+-   <span data-ttu-id="27a68-165">Dobropis zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-165">Advance invoice credit note</span></span>
+-   <span data-ttu-id="27a68-166">Storno zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-166">Advance invoice reversal</span></span>
+-   <span data-ttu-id="27a68-167">Doklad zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-167">Advance invoice voucher</span></span>
+-   <span data-ttu-id="27a68-168">Doklad dobropisu zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-168">Advance invoice credit note voucher</span></span>
+-   <span data-ttu-id="27a68-169">Doklad stornování zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-169">Advance invoice reversal voucher</span></span>
+
+## <a name="create-a-customer-advance-invoice"></a><span data-ttu-id="27a68-170">Vytvoření zálohové faktury odběratele</span><span class="sxs-lookup"><span data-stu-id="27a68-170">Create a customer advance invoice</span></span>
+<span data-ttu-id="27a68-171">Klikněte na **Pohledávky** &gt; **Běžné** &gt; **Zálohové faktury** &gt; **Všechny zálohové faktury**.</span><span class="sxs-lookup"><span data-stu-id="27a68-171">Click **Accounts receivable** &gt; **Common** &gt; **Advance invoices** &gt; **All advance invoices**.</span></span> <span data-ttu-id="27a68-172">Chcete-li vytvořit novou zálohovou fakturu, v podokně akcí na kartě **Zálohová faktura** klikněte na **Zálohová faktura**.</span><span class="sxs-lookup"><span data-stu-id="27a68-172">To create a new advance invoice, on the Action Pane, on the **Advance invoice** tab, click **Advance invoice**.</span></span> <span data-ttu-id="27a68-173">Zadejte požadovanou informaci a poté klikněte na možnost **Zaúčtovat** k zaúčtování zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-173">Enter the required information, and then click **Post** to post the advance invoice.</span></span> <span data-ttu-id="27a68-174">Zálohová faktura může mít některý z následujících stavů: **Otevřená**, **Částečně zaplacená** nebo **Uzavřená**.</span><span class="sxs-lookup"><span data-stu-id="27a68-174">An advance invoice can have one of the following statuses: **Opened**, **Partially paid**, or **Closed**.</span></span> <span data-ttu-id="27a68-175">Stav zálohové faktury, která byla zaúčtována, můžete ručně změnit.</span><span class="sxs-lookup"><span data-stu-id="27a68-175">You can manually change the status of an advance invoice that has been posted.</span></span> <span data-ttu-id="27a68-176">Klepněte na tlačítko **stav**a poté na stránce **Změnit stav zálohové faktury** stránky v poli **Nový stav** vyberte nový stav zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-176">Click **Status**, and then, on the **Change the status of an advance invoice** page, in the **New status** field, select the new status of the advance invoice.</span></span> <span data-ttu-id="27a68-177">**Poznámka:** Kdykoli můžete změnit stav zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-177">**Note:** You can change the status of an advance invoice at any time.</span></span> <span data-ttu-id="27a68-178">Nelze zpracovat uzavřené zálohové faktury v transakcích.</span><span class="sxs-lookup"><span data-stu-id="27a68-178">You can't process closed advance invoices in transactions.</span></span> <span data-ttu-id="27a68-179">**Poznámka:** Pro Polsko jsou zálohové faktury vygenerovány, pokud nastavíte účetní profil pro zálohové faktury v parametrech pohledávek.</span><span class="sxs-lookup"><span data-stu-id="27a68-179">**Note:** For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</span></span> <span data-ttu-id="27a68-180">K zobrazení transakcí, které byly zaúčtovány, na stránce **Zálohová faktura** klepněte na **Doklad**.</span><span class="sxs-lookup"><span data-stu-id="27a68-180">To view transactions that have been posted, on the **Advance invoice** page, click **Voucher**.</span></span>
+
+## <a name="vat-on-advance-invoices"></a><span data-ttu-id="27a68-181">DPH na zálohových fakturách</span><span class="sxs-lookup"><span data-stu-id="27a68-181">VAT on advance invoices</span></span>
+<span data-ttu-id="27a68-182">Společnosti musí zaznamenat DPH při platbách záloh od odběratelů, i když prodej nebyl dokončen.</span><span class="sxs-lookup"><span data-stu-id="27a68-182">Companies must record VAT on prepayments from customers, even though the sale hasn't been completed.</span></span> <span data-ttu-id="27a68-183">Pokud chcete zaúčtovat DPH ze zálohy, můžete přidat řádek, který obsahuje specifikace DPH do zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-183">To post VAT from a prepayment, you can add a line that contains specifications of VAT to an advance invoice.</span></span> <span data-ttu-id="27a68-184">Zálohová faktura může mít několik řádků a řádky mohou obsahovat specifikace DPH, které jsou převzaty z řádků prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="27a68-184">An advance invoice can have several lines, and the lines can contain VAT specifications that are taken from sales order lines.</span></span> <span data-ttu-id="27a68-185">Proto lze zaúčtovat DPH ze zálohy přísně v souladu s řádky prodejní objednávky.</span><span class="sxs-lookup"><span data-stu-id="27a68-185">Therefore, you can post VAT from a prepayment in strict accordance to sales order lines.</span></span> <span data-ttu-id="27a68-186">**Poznámka:** specifikace DPH budou zkopírovány do zálohové faktury řádky pouze v případě, že je hodnota v poli **typ daně** na stránce **Kódy DPH** nastavena na **Standardní daň DPH** nebo **Snížená DPH**.</span><span class="sxs-lookup"><span data-stu-id="27a68-186">**Note:** The VAT specifications are copied to the advance invoice lines only if the **Type of tax** field on the **Sales tax codes** page is set to **Standard VAT** or **Reduced VAT**.</span></span> <span data-ttu-id="27a68-187">Jinak je řádek zkopírován do zálohové faktury, jako by částka DPH byla 0 (nula).</span><span class="sxs-lookup"><span data-stu-id="27a68-187">Otherwise, the line is copied to the advance invoice as if the VAT amount is 0 (zero).</span></span>
+
+## <a name="link-an-advance-invoice-to-a-sales-order-or-a-free-text-invoice"></a><span data-ttu-id="27a68-188">Propojení zálohové faktury s prodejní objednávkou nebo volnou fakturou</span><span class="sxs-lookup"><span data-stu-id="27a68-188">Link an advance invoice to a sales order or a free text invoice</span></span>
+<span data-ttu-id="27a68-189">Každou zálohovou fakturu lze spojit pouze s jednou prodejní objednávkou nebo fakturou s volným textem najednou.</span><span class="sxs-lookup"><span data-stu-id="27a68-189">Each advance invoice can be linked with only one sales order or free text invoice at a time.</span></span> <span data-ttu-id="27a68-190">Můžete také změnit přidružení stávající zálohové faktury s jinou prodejní objednávkou nebo fakturou s volným textem za předpokladu, že žádné zálohy nejsou spojeny se zálohovou fakturou.</span><span class="sxs-lookup"><span data-stu-id="27a68-190">You can reassign an existing advance invoice to another sales order or free text invoice, provided that no prepayments are linked to the advance invoice.</span></span> <span data-ttu-id="27a68-191">Pokud chcete provést propojení zálohové faktury s prodejní objednávkou, na stránce **Všechny zálohové faktury** vyberte zálohovou fakturu.</span><span class="sxs-lookup"><span data-stu-id="27a68-191">To link an advance invoice to a sales order, on the **All advance invoices** page, select the advance invoice.</span></span> <span data-ttu-id="27a68-192">V podokně akcí klepněte na tlačítko **Zálohová faktura**a klepněte na tlačítko **Prodejní objednávka**.</span><span class="sxs-lookup"><span data-stu-id="27a68-192">On the Action Pane, click **Advance invoice**, and then click **Sales order**.</span></span> <span data-ttu-id="27a68-193">Potom vyberte prodejní objednávku k propojení se zálohovou fakturou a klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="27a68-193">Then select the sales order to link to the advance invoice, and click **OK**.</span></span> <span data-ttu-id="27a68-194">Pokud chcete provést propojení faktury s volným textem s prodejní objednávkou, na stránce **Všechny zálohové faktury** vyberte zálohovou fakturu.</span><span class="sxs-lookup"><span data-stu-id="27a68-194">To link an advance invoice to a free text invoice, on the **All advance invoices** page, select the advance invoice.</span></span> <span data-ttu-id="27a68-195">V podokně akcí klepněte na tlačítko **Zálohová faktura**a klepněte na tlačítko **Faktura s volným textem**.</span><span class="sxs-lookup"><span data-stu-id="27a68-195">On the Action Pane, click **Advance invoice**, and then click **Free text invoice**.</span></span> <span data-ttu-id="27a68-196">Potom vyberte fakturu s volným textem k propojení se zálohovou fakturou a klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="27a68-196">Then select the free text invoice to link to the advance invoice, and click **OK**.</span></span>
+
+## <a name="create-a-customer-advance-invoice-from-a-sales-order"></a><span data-ttu-id="27a68-197">Vytvoření zálohové faktury odběratele z prodejní objednávky</span><span class="sxs-lookup"><span data-stu-id="27a68-197">Create a customer advance invoice from a sales order</span></span>
+<span data-ttu-id="27a68-198">Vytvořte novou prodejní objednávku nebo vyberte stávající.</span><span class="sxs-lookup"><span data-stu-id="27a68-198">Create a sales order, or select an existing sales order.</span></span> <span data-ttu-id="27a68-199">Klepněte na tlačítko **Faktura** a potom na tlačítko **Generovat** &gt; **Zálohová faktura**.</span><span class="sxs-lookup"><span data-stu-id="27a68-199">Click **Invoice**, and then click **Generate** &gt; **Advance invoice**.</span></span> <span data-ttu-id="27a68-200">Na stránce **Vytvořit zálohovou fakturu** nastavte následující pole.</span><span class="sxs-lookup"><span data-stu-id="27a68-200">On the **Create advance invoice** page, set following fields.</span></span>
+
+| <span data-ttu-id="27a68-201">Pole</span><span class="sxs-lookup"><span data-stu-id="27a68-201">Field</span></span>                                           | <span data-ttu-id="27a68-202">popis</span><span class="sxs-lookup"><span data-stu-id="27a68-202">Description</span></span>                                                                                                                                                                                                                               |
+|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="27a68-203">Procento</span><span class="sxs-lookup"><span data-stu-id="27a68-203">Percent</span></span>                                         | <span data-ttu-id="27a68-204">Zadejte procento zálohy pro prodejní objednávku.</span><span class="sxs-lookup"><span data-stu-id="27a68-204">Specify the percentage of the prepayment for the sales order.</span></span>                                                                                                                                                                             |
+| <span data-ttu-id="27a68-205">Protiúčet</span><span class="sxs-lookup"><span data-stu-id="27a68-205">Offset account</span></span>                                  | <span data-ttu-id="27a68-206">Vyberte výchozí protiúčet pro použití s rozšířenou fakturací.</span><span class="sxs-lookup"><span data-stu-id="27a68-206">Select the default offset account to use with advanced invoicing.</span></span>                                                                                                                                                                         |
+| <span data-ttu-id="27a68-207">Aktualizace objednávky</span><span class="sxs-lookup"><span data-stu-id="27a68-207">Update order</span></span>                                    | <span data-ttu-id="27a68-208">Vyberte některou z následujících možností: **Vše**, **Dodat nyní**, **Vyskladněno**, **Dodací list** nebo **Vyskladněné množství a produkty mimo sklad**.</span><span class="sxs-lookup"><span data-stu-id="27a68-208">Select from the following options: **All**, **Deliver now**, **Picked**, **Packing slip**, or **Picked quantity and non-stocked products**.</span></span> <span data-ttu-id="27a68-209">Částka zálohové faktury se vypočítá na základě částky prodejní objednávku pro položky.</span><span class="sxs-lookup"><span data-stu-id="27a68-209">The advance invoice amount will be calculated based on the Sales order amounts for the items.</span></span> |
+| <span data-ttu-id="27a68-210">Zaúčtovat DPH</span><span class="sxs-lookup"><span data-stu-id="27a68-210">Post VAT</span></span>                                        | <span data-ttu-id="27a68-211">Určete, zda se má DPH zaúčtovat při zaúčtování zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-211">Specify whether VAT should be posted during advance invoice posting.</span></span>                                                                                                                                                                      |
+| <span data-ttu-id="27a68-212">Datum zaúčtování DPH</span><span class="sxs-lookup"><span data-stu-id="27a68-212">Post VAT date</span></span>                                   | <span data-ttu-id="27a68-213">Upřesněte datum zaúčtování DPH.</span><span class="sxs-lookup"><span data-stu-id="27a68-213">Specify the date for posting VAT.</span></span>                                                                                                                                                                                                         |
+| <span data-ttu-id="27a68-214">Účetní profil se zálohovým dokladem deníku</span><span class="sxs-lookup"><span data-stu-id="27a68-214">Posting profile with prepayment journal voucher</span></span> | <span data-ttu-id="27a68-215">Zadejte účetní profil pro zálohu.</span><span class="sxs-lookup"><span data-stu-id="27a68-215">Specify the posting profile for the prepayment.</span></span>                                                                                                                                                                                           |
+| <span data-ttu-id="27a68-216">Vytvořit daňový doklad</span><span class="sxs-lookup"><span data-stu-id="27a68-216">Create tax document</span></span>                             | <span data-ttu-id="27a68-217">Určete, zda se má vytvořit daňový doklad.</span><span class="sxs-lookup"><span data-stu-id="27a68-217">Specify whether a tax document should be created.</span></span>                                                                                                                                                                                         |
+
+> <span data-ttu-id="27a68-218">[!POZNÁMKA} Pro Polsko jsou zálohové faktury vygenerovány, pokud nastavíte účetní profil pro zálohové faktury v parametrech pohledávek.</span><span class="sxs-lookup"><span data-stu-id="27a68-218">[!NOTE} For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</span></span>
+
+## <a name="create-a-customer-advance-invoice-from-a-free-text-invoice"></a><span data-ttu-id="27a68-219">Vytvoření zálohové faktury odběratele z faktury s volným textem</span><span class="sxs-lookup"><span data-stu-id="27a68-219">Create a customer advance invoice from a free text invoice</span></span>
+<span data-ttu-id="27a68-220">Vytvořte fakturu s volným textem nebo vyberte stávající fakturu s volným textem.</span><span class="sxs-lookup"><span data-stu-id="27a68-220">Create a free text invoice, or select an existing free text invoice.</span></span> <span data-ttu-id="27a68-221">Na kartě **Faktury** v části **Nová** klepněte na položku **Zálohová faktura**.</span><span class="sxs-lookup"><span data-stu-id="27a68-221">On **Invoice** tab, in the **New** section, click **Advance invoice**.</span></span> <span data-ttu-id="27a68-222">pak můžete vytvořit novou zálohovou fakturu, která bude spojená s fakturou s volným textem.</span><span class="sxs-lookup"><span data-stu-id="27a68-222">You can then create a new advance invoice that will be linked to the free text invoice.</span></span> <span data-ttu-id="27a68-223">**Poznámka:** Pro Polsko jsou zálohové faktury vygenerovány, pokud nastavíte účetní profil pro zálohové faktury v parametrech pohledávek.</span><span class="sxs-lookup"><span data-stu-id="27a68-223">**Note:** For Poland, advance invoice transactions are generated if you set up a posting profile for advance invoices in the Accounts receivable parameters.</span></span>
+
+## <a name="print-an-advance-invoice"></a><span data-ttu-id="27a68-224">Tisk zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-224">Print an advance invoice</span></span>
+<span data-ttu-id="27a68-225">Pokud chcete vytisknout zálohovou fakturu, na stránce **Zálohová faktura** klepněte na možnost **Vytisknout**.</span><span class="sxs-lookup"><span data-stu-id="27a68-225">To print an advance invoice, on the **Advance invoice** page, click **Print**.</span></span> <span data-ttu-id="27a68-226">Pro Polsko můžete vytisknout dokument zálohové faktury fiskálního dokumentu.</span><span class="sxs-lookup"><span data-stu-id="27a68-226">For Poland, you can print an advance invoice document of the fiscal document.</span></span> <span data-ttu-id="27a68-227">Vyberte možnost při zaúčtování zálohových faktur.</span><span class="sxs-lookup"><span data-stu-id="27a68-227">Select an option during advance invoice posting.</span></span> <span data-ttu-id="27a68-228">Pro Polsko zahrnuje rozvržení prodejní faktury a dokumentů faktur s volným textem následující informace o vyrovnanou zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-228">For Poland, the layout of the sales invoice and free text invoice documents should include the following information about the advance invoice that is settled:</span></span>
+
+-   <span data-ttu-id="27a68-229">Číslo zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-229">Number of the advance invoice</span></span>
+-   <span data-ttu-id="27a68-230">Datum zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-230">Date of the advance invoice</span></span>
+-   <span data-ttu-id="27a68-231">Částka bez DPH, Částka DPH, částka včetně DPH a Měna</span><span class="sxs-lookup"><span data-stu-id="27a68-231">Amount without VAT, VAT amount, amount with VAT, and currency</span></span>
+-   <span data-ttu-id="27a68-232">Procento daně</span><span class="sxs-lookup"><span data-stu-id="27a68-232">Tax percentage</span></span>
+
+<span data-ttu-id="27a68-233">Souhrn částek DPH musí obsahovat **daň ze zálohové faktury**.</span><span class="sxs-lookup"><span data-stu-id="27a68-233">The summary of VAT amounts should include **Tax from Advance Invoice**.</span></span> <span data-ttu-id="27a68-234">Částka, která je splatná, by měla být snížena o částku zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-234">The amount that is due should be reduced by the amount of the advance invoice.</span></span>
+
+## <a name="create-a-payment-proposal-from-an-advance-invoice"></a><span data-ttu-id="27a68-235">Vytvoření návrhu platby ze zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-235">Create a payment proposal from an advance invoice</span></span>
+<span data-ttu-id="27a68-236">Můžete generovat řádky deníku plateb automaticky v závislosti na zálohové faktuře.</span><span class="sxs-lookup"><span data-stu-id="27a68-236">You can generate payment journal lines automatically, based on an advance invoice.</span></span> <span data-ttu-id="27a68-237">Při vytváření nového deníku plateb na stránce **Deník plateb** vyberte možnost **Zálohový doklad deníku** a klepněte na tlačítko **Řádky**.</span><span class="sxs-lookup"><span data-stu-id="27a68-237">When you create a new payment journal, on the **Payment journal** page, select the **Prepayment journal voucher** option, and then click **Lines**.</span></span> <span data-ttu-id="27a68-238">Na stránce **Doklad deníku** můžete kliknout na možnosti **Návrh platby** &gt; **Návrh platby ze zálohové faktury**, abyste otevřeli formulář návrhu platby ze zálohových faktur.</span><span class="sxs-lookup"><span data-stu-id="27a68-238">On the **Journal voucher** page, you can click **Payment proposal** &gt; **Payment proposal from advance invoice** to create a payment proposal from advance invoices.</span></span> <span data-ttu-id="27a68-239">Informace jako například účetní profil a skupiny DPH jsou převzaty ze zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-239">Information such as the posting profile and sales tax groups is taken from the advance invoice.</span></span> <span data-ttu-id="27a68-240">**Poznámka:** Nové zálohy budou automaticky propojeny se zálohovými fakturami, pokud budou zaškrtnuta políčka **Propojení záloh** a **Změna stavu** na stránce **Vytvořit návrh platby ze zálohových faktur**.</span><span class="sxs-lookup"><span data-stu-id="27a68-240">**Note:** New prepayments will be linked automatically to advance invoices if the **Link prepayments** and **Change status** options are selected on the **Create payment proposal from advance invoices** page.</span></span>
+
+## <a name="link-a-prepayment-to-an-advance-invoice"></a><span data-ttu-id="27a68-241">Připojení zálohy k zálohové faktuře</span><span class="sxs-lookup"><span data-stu-id="27a68-241">Link a prepayment to an advance invoice</span></span>
+<span data-ttu-id="27a68-242">Pokud chcete propojit zálohu se zálohovou fakturou z deníku plateb, otevřete deník plateb, vyberte řádek, který obsahuje zálohu, a klepněte na tlačítko **Funkce** &gt; **Propojit se zálohovými fakturami**.</span><span class="sxs-lookup"><span data-stu-id="27a68-242">To link a prepayment to an advance invoice from the payment journal, open the payment journal, select the line that has the prepayment, and then click **Functions** &gt; **Link to advance invoices**.</span></span> <span data-ttu-id="27a68-243">Pokud chcete propojit zálohu se zálohovou fakturou ze stránky **Transakce odběratele**, klikněte na **Všichni odběratelé** &gt; **Odběratel** &gt; **Transakce**.</span><span class="sxs-lookup"><span data-stu-id="27a68-243">To link a prepayment to an advance invoice from the **Customer transactions** page, click **All customers** &gt; **Customer** &gt; **Transactions**.</span></span> <span data-ttu-id="27a68-244">Vyberte deník plateb, vyberte řádek, který má zálohu, a klikněte na **Funkce** &gt; **Propojit se zálohovými fakturami**.</span><span class="sxs-lookup"><span data-stu-id="27a68-244">Select the payment journal, select the line that has the prepayment, and then click **Functions** &gt; **Link to advance invoices**.</span></span>
+
+## <a name="link-an-advance-invoice-to-a-prepayment"></a><span data-ttu-id="27a68-245">Připojení zálohové faktury k záloze</span><span class="sxs-lookup"><span data-stu-id="27a68-245">Link an advance invoice to a prepayment</span></span>
+<span data-ttu-id="27a68-246">Pokud chcete provést propojení zálohové faktury s řádkem zálohy, na stránce **Všechny zálohové faktury** vyberte zálohovou fakturu.</span><span class="sxs-lookup"><span data-stu-id="27a68-246">To link an advance invoice to a prepayment line, on the **All advance invoices** page, select the advance invoice.</span></span> <span data-ttu-id="27a68-247">V podokně akcí klepněte na tlačítko **Zálohová faktura**a klepněte na tlačítko **Záloha**.</span><span class="sxs-lookup"><span data-stu-id="27a68-247">On the Action Pane, click **Advance invoice**, and then click **Prepayment**.</span></span> <span data-ttu-id="27a68-248">Potom vyberte řádek zálohy k propojení se zálohovou fakturou a klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="27a68-248">Then select the prepayment line to link to the advance invoice, and click **OK**.</span></span>
+
+## <a name="advance-invoice-credit-note"></a><span data-ttu-id="27a68-249">Dobropis zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-249">Advance invoice credit note</span></span>
+-   <span data-ttu-id="27a68-250">(POL) Pokud chcete zálohovou fakturu zrušit, můžete vytvořit dobropis zálohové faktury a zaúčtovat jej do hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="27a68-250">(POL) To cancel an advance invoice you can create an advance invoice credit note and post it to the general ledger.</span></span>
+-   <span data-ttu-id="27a68-251">Pokud chcete vytvořit dobropis, můžete vytvořit novou zálohovou fakturu a klikknout na tlačítko **Dobropis**.</span><span class="sxs-lookup"><span data-stu-id="27a68-251">To create a credit note, you can create a new advance invoice and then click **Credit note**.</span></span> <span data-ttu-id="27a68-252">Poté můžete vybrat zálohovou fakturu ke zrušení.</span><span class="sxs-lookup"><span data-stu-id="27a68-252">You can then select the advance invoice to cancel.</span></span>
+-   <span data-ttu-id="27a68-253">Můžete také vytvořit dobropis prodejní faktury s vyrovnáním zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-253">You can also create a credit note of a sales invoice that has advance invoice settlement.</span></span>
+-   <span data-ttu-id="27a68-254">Rozložení faktur dobropisu zálohové faktury obsahuje informace o řádcích před a po opravě.</span><span class="sxs-lookup"><span data-stu-id="27a68-254">The layout of advance invoice credit note invoices contains information about the lines both before and after correction.</span></span>
+-   <span data-ttu-id="27a68-255">(POL) Po zaúčtování dobropisu zálohové faktury se vytvářejí transakce hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="27a68-255">(POL) General ledger transactions are created after the advance invoice credit note is posted.</span></span>
+
+## <a name="cze-tax-documents"></a><span data-ttu-id="27a68-256">(CZE) Daňové doklady</span><span class="sxs-lookup"><span data-stu-id="27a68-256">(CZE) Tax documents</span></span>
+<span data-ttu-id="27a68-257">Pro Českou republiku můžete vytvořit daňový doklad, který je založen na informacích o záloze pro doručení podléhající DPH.</span><span class="sxs-lookup"><span data-stu-id="27a68-257">For the Czech Republic, you can create a tax document that is based on prepayment information for the VAT liable delivery.</span></span> <span data-ttu-id="27a68-258">Můžete vytvořit, vytvořit a zobrazit nebo vytvořit a vytisknout daňový doklad ze stránky zálohy.</span><span class="sxs-lookup"><span data-stu-id="27a68-258">You can create, create and show, or create and print the tax document from the prepayment page.</span></span> <span data-ttu-id="27a68-259">Klepněte na tlačítko **Funkce** &gt; **Daňový doklad**a vyberte jednu z možností.</span><span class="sxs-lookup"><span data-stu-id="27a68-259">Click **Functions** &gt; **Tax document**, and select one of the options.</span></span> <span data-ttu-id="27a68-260">Daňový doklad obsahuje podrobné informace o DPH jako například typ DPH, hodnotu a základ v zúčtovací měně a měně transakce.</span><span class="sxs-lookup"><span data-stu-id="27a68-260">The tax document contains detailed information about the VAT, such as the VAT type, the value, and its basis in the accounting currency and the transaction currency.</span></span>
+
+## <a name="set-up-accounts-payable-for-advance-invoices"></a><span data-ttu-id="27a68-261">Nastavení parametrů modulu Závazky pro zálohové faktury</span><span class="sxs-lookup"><span data-stu-id="27a68-261">Set up Accounts payable for advance invoices</span></span>
+<span data-ttu-id="27a68-262">Na stránce **Parametry závazků** na kartě **Číselné řady** určete číselnou řadu pro zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-262">On the **Accounts payable parameters** page, on the **Number sequences** tab, specify a number sequence for advance invoices.</span></span>
+
+## <a name="create-a-vendor-advance-invoice"></a><span data-ttu-id="27a68-263">Tvorba zálohové faktury dodavatele</span><span class="sxs-lookup"><span data-stu-id="27a68-263">Create a vendor advance invoice</span></span>
+<span data-ttu-id="27a68-264">Můžete ručně vytvořit zálohovou fakturu.</span><span class="sxs-lookup"><span data-stu-id="27a68-264">You can manually create an advance invoice.</span></span> <span data-ttu-id="27a68-265">Případně může být nová zálohová faktura založena na stávající nákupní objednávce.</span><span class="sxs-lookup"><span data-stu-id="27a68-265">Alternatively, the new advance invoice can be based on an existing purchase order.</span></span>
+
+## <a name="manually-create-a-vendor-advance-invoice"></a><span data-ttu-id="27a68-266">Ruční tvorba zálohové faktury dodavatele</span><span class="sxs-lookup"><span data-stu-id="27a68-266">Manually create a vendor advance invoice</span></span>
+<span data-ttu-id="27a68-267">Klikněte na **Závazky** &gt; **Běžné** &gt; **Zálohové faktury** &gt; **Všechny zálohové faktury**.</span><span class="sxs-lookup"><span data-stu-id="27a68-267">Click **Accounts payable** &gt; **Common** &gt; **Advance invoices** &gt; **All advance invoices**.</span></span> <span data-ttu-id="27a68-268">Chcete-li vytvořit novou zálohovou fakturu, v podokně akcí na kartě **Zálohová faktura** klikněte na **Zálohová faktura**.</span><span class="sxs-lookup"><span data-stu-id="27a68-268">To create a new advance invoice, on the Action Pane, on the **Advance invoice** tab, click **Advance invoice**.</span></span> <span data-ttu-id="27a68-269">Potom zadejte požadovanou informaci a poté klikněte na možnost **Zaúčtovat** k zaúčtování zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-269">Then enter the required information, and click **Post** to post the advance invoice.</span></span> <span data-ttu-id="27a68-270">Zálohová faktura může mít některý z následujících stavů: **Otevřená**, **Částečně zaplacená** nebo **Uzavřená**.</span><span class="sxs-lookup"><span data-stu-id="27a68-270">An advance invoice can have one of the following statuses: **Opened**, **Partially paid**, or **Closed**.</span></span> <span data-ttu-id="27a68-271">Stav zálohové faktury, která byla zaúčtována, můžete ručně změnit.</span><span class="sxs-lookup"><span data-stu-id="27a68-271">You can manually change the status of an advance invoice that has been posted.</span></span> <span data-ttu-id="27a68-272">Klepněte na tlačítko **stav**a poté na stránce **Změnit stav zálohové faktury** stránky v poli **Nový stav** vyberte nový stav zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-272">Click **Status**, and then, on the **Change the status of an advance invoice** page, in the **New status** field, select the new status of the advance invoice.</span></span> <span data-ttu-id="27a68-273">**Poznámka:** Kdykoli můžete změnit stav zálohové faktury.</span><span class="sxs-lookup"><span data-stu-id="27a68-273">**Note:** You can change the status of an advance invoice at any time.</span></span> <span data-ttu-id="27a68-274">Nelze zpracovat uzavřené zálohové faktury v transakcích.</span><span class="sxs-lookup"><span data-stu-id="27a68-274">You can't process closed advance invoices in transactions.</span></span> <span data-ttu-id="27a68-275">**Poznámka:** specifikace DPH budou zkopírovány do zálohové faktury řádky pouze v případě, že je hodnota v poli **typ daně** na stránce **Kódy DPH** nastavena na **Standardní daň DPH** nebo **Snížená DPH**.</span><span class="sxs-lookup"><span data-stu-id="27a68-275">**Note:** The VAT specifications are copied to the advance invoice lines only if the **Type of tax** field on the **Sales tax codes** page is set to **Standard VAT** or **Reduced VAT**.</span></span> <span data-ttu-id="27a68-276">Jinak je řádek zkopírován do zálohové faktury, jako by částka DPH byla 0 (nula).</span><span class="sxs-lookup"><span data-stu-id="27a68-276">Otherwise, the line is copied to the advance invoice as if the VAT amount is 0 (zero).</span></span>
+
+## <a name="link-an-advance-invoice-to-a-purchase-order"></a><span data-ttu-id="27a68-277">Propojení zálohové faktury s nákupní objednávkou</span><span class="sxs-lookup"><span data-stu-id="27a68-277">Link an advance invoice to a purchase order</span></span>
+<span data-ttu-id="27a68-278">Každou zálohovou fakturu lze spojit pouze s jednou nákupní objednávkou nebo fakturou s volným textem najednou.</span><span class="sxs-lookup"><span data-stu-id="27a68-278">Each advance invoice can be linked with only one purchase order at a time.</span></span> <span data-ttu-id="27a68-279">Můžete také změnit přidružení stávající zálohové faktury k jiné nákupní objednávce za předpokladu, že žádné zálohy nejsou spojeny se zálohovou fakturou.</span><span class="sxs-lookup"><span data-stu-id="27a68-279">You can reassign an existing advance invoice to another purchase order, provided that no prepayments are linked to the advance invoice.</span></span> <span data-ttu-id="27a68-280">Pokud chcete provést propojení zálohové faktury s nákupní objednávkou, na stránce **Všechny zálohové faktury** vyberte zálohovou fakturu.</span><span class="sxs-lookup"><span data-stu-id="27a68-280">To link an advance invoice to a purchase order, on the **All advance invoices** page, select the advance invoice.</span></span> <span data-ttu-id="27a68-281">V podokně akcí klepněte na tlačítko **Zálohová faktura**a klepněte na tlačítko **Nákupní objednávka**.</span><span class="sxs-lookup"><span data-stu-id="27a68-281">On the Action Pane, click **Advance invoice**, and then click **Purchase order**.</span></span> <span data-ttu-id="27a68-282">Potom vyberte nákupní objednávku k propojení se zálohovou fakturou a klepněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="27a68-282">Then select the purchase order to link to the advance invoice, and click **OK**.</span></span>
+
+## <a name="create-a-vendor-advance-invoice-from-a-purchase-order"></a><span data-ttu-id="27a68-283">Vytvoření zálohové faktury dodavatele z nákupní objednávky</span><span class="sxs-lookup"><span data-stu-id="27a68-283">Create a vendor advance invoice from a purchase order</span></span>
+<span data-ttu-id="27a68-284">Vytvořte nákupní objednávku nebo vyberte stávající nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="27a68-284">Create a purchase order, or select an existing purchase order.</span></span> <span data-ttu-id="27a68-285">Klepněte na tlačítko **Faktura** a potom na tlačítko **Generovat** &gt; **Zálohová faktura**.</span><span class="sxs-lookup"><span data-stu-id="27a68-285">Click **Invoice**, and then click **Generate** &gt; **Advance invoice**.</span></span> <span data-ttu-id="27a68-286">Na stránce **Vytvořit zálohovou fakturu** nastavte následující pole.</span><span class="sxs-lookup"><span data-stu-id="27a68-286">On the **Create advance invoice** page, set following fields.</span></span>
+
+| <span data-ttu-id="27a68-287">Pole</span><span class="sxs-lookup"><span data-stu-id="27a68-287">Field</span></span>                                           | <span data-ttu-id="27a68-288">popis</span><span class="sxs-lookup"><span data-stu-id="27a68-288">Description</span></span>                                                                                                              |
+|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="27a68-289">Procento</span><span class="sxs-lookup"><span data-stu-id="27a68-289">Percent</span></span>                                         | <span data-ttu-id="27a68-290">Zadejte procento zálohy pro nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="27a68-290">Specify the percentage of the prepayment for the purchase order.</span></span>                                                         |
+| <span data-ttu-id="27a68-291">Aktualizovat nákup</span><span class="sxs-lookup"><span data-stu-id="27a68-291">Update purchase</span></span>                                 | <span data-ttu-id="27a68-292">Vyberte některou z následujících možností:</span><span class="sxs-lookup"><span data-stu-id="27a68-292">Select from the options.</span></span> <span data-ttu-id="27a68-293">Částka zálohové faktury se vypočítá na základě částky nákupní objednávky pro položky.</span><span class="sxs-lookup"><span data-stu-id="27a68-293">The advance invoice amount will be calculated based on the Purchase order amount for the items.</span></span> |
+| <span data-ttu-id="27a68-294">Účetní profil se zálohovým dokladem deníku</span><span class="sxs-lookup"><span data-stu-id="27a68-294">Posting profile with prepayment journal voucher</span></span> | <span data-ttu-id="27a68-295">Zadejte účetní profil pro zálohu.</span><span class="sxs-lookup"><span data-stu-id="27a68-295">Specify the posting profile for the prepayment.</span></span>                                                                          |
+
+
+
+
+
+
