@@ -1,4029 +1,1282 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="deprecated-features.md" target-language="cs-CZ">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>deprecated-features.a8ef67.9daba2449b6a20634c13117cedb6b63fcc8ee674.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>9daba2449b6a20634c13117cedb6b63fcc8ee674</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>fcae2e7938d7dbd94b76b0948b084d90d5fc919c</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\migration-upgrade\deprecated-features.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Removed or deprecated features</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněné nebo zastaralé funkce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes features that have been removed, or that are planned for removal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Removed or deprecated features</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněné nebo zastaralé funkce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto téma popisuje funkce, které byly odebrány nebo jsou zastaralé pro aplikaci Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>A <bpt id="p1">*</bpt>removed<ept id="p1">*</ept> feature is no longer available in the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Odstraněná<ept id="p1">*</ept> funkce již není k dispozici v produktu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>A <bpt id="p1">*</bpt>deprecated<ept id="p1">*</ept> feature is not in active development and may be removed in a future update.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Zastaralá<ept id="p1">*</ept> funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>This list is intended to help you consider these removals and deprecations for your own planning.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Počínaje vydáním Dynamics 365 for Finance and Operations z července 2017 s aktualizací Platform Update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>All of the previous releases mentioned in this topic supported cloud deployments only.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Detailed information about objects in Finance and Operations can be found in the <bpt id="p1">[</bpt>Technical reference reports<ept id="p1">](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části <bpt id="p1">[</bpt>Sestavy technických informací<ept id="p1">](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Dynamics 365 for Finance and Operations 10.0.4</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>France: FEC Accounting data export in XML</source><target logoport:matchpercent="73" state="translated" state-qualifier="fuzzy-match">Francie: Export účetních dat v FEC ve formátu XML</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Replaced by TXT format, <bpt id="p1">**</bpt>French FEC audit file<ept id="p1">**</ept> is available through <bpt id="p2">**</bpt>General ledger<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Periodic tasks<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Data export<ept id="p4">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Francouzský soubor auditu FEC<ept id="p1">**</ept> je nahrazen formátem TXT a je k dispozici pomocí voleb <bpt id="p2">**</bpt>Hlavní kniha<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Periodické úlohy<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Export dat<ept id="p4">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Yes</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ano</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>General ledger</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>All</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Deprecated.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Zastaralé.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Target timeframe for the functionality to be removed is July 2020.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Plánovaná doba pro odstranění funkcionality je červenec 2020.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28 jsou k dispozici pro cílené uživatele jako součást verze Preview.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The content and the functionality are subject to change.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsah a funkce se mohou změnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>For more information about preview releases, see <bpt id="p1">[</bpt>Service update availability<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Další informace o předchozích verzích naleznete v tématu <bpt id="p1">[</bpt>Dostupnost aktualizací služby<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Legacy navigation bar</source><target logoport:matchpercent="69" state="translated" state-qualifier="fuzzy-match">Starší verze navigačníh panelu</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Header alignment with other Dynamics and Office products.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Zarovnání záhlaví s jinými produkty Dynamics a Office.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>For more details, see <bpt id="p1">[</bpt>Updated navigation bar that aligns with the Office header<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar)</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Další informace naleznete v tématu <bpt id="p1">[</bpt>Aktualizovaný navigační panel zarovnaný se záhlavím Office<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar)</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Starting in Platform update 24, a restyled navigation bar that features search was introduced.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Počínaje aktualizací Platform Update 24 byl zaveden navigační panel s novým stylem a vyhledáváním.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Web client</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Webový klient</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>All</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Deprecated: Starting in April 2020, the legacy navigation bar will no longer be available.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Zastaralé: Od dubna 2020 již starší navigační panel nebude k dispozici.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Until that point, customers can revert to the legacy navigation bar through the <bpt id="p1">**</bpt>Client performance options<ept id="p1">**</ept> page.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Do tohoto okamžiku se mohou zákazníci vrátit ke staršímu navigačnímu panelu prostřednictvím stránky <bpt id="p1">**</bpt>Možnosti výkonu klienta<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.2 s aktualizací Platform Update 26</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.2 s aktualizací Platform Update 26 jsou k dispozici pro cílené uživatele jako součást verze Preview.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>The content and the functionality are subject to change.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsah a funkce se mohou změnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>For more information about preview releases, see <bpt id="p1">[</bpt>Service update availability<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace o předchozích verzích naleznete v tématu <bpt id="p1">[</bpt>Dostupnost aktualizací služby<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Legacy default action behavior</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Starší výchozí chování akce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Starší chování výchozích akcí v mřížkách vede k nečekanému sloupci s výchozím odkazem na akci po změně pořadí sloupců mřížky přes přizpůsobení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>The new sticky default action feature corrects this.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuto akci napravuje nová výchozí akce jedním prstem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>For more details, see <bpt id="p1">[</bpt>Sticky default actions in grids<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">[</bpt>Výchozí akce jedním prstem v mřížce<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Starting in Platform update 21, a feature for "sticky default actions" was introduced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Od aktualizace Platformy 21 byla zavedena funkce výchozích akcí jedním prstem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>This feature can be enabled on the <bpt id="p1">**</bpt>Client performance options<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuto funkci lze povolit na stránce <bpt id="p1">**</bpt>Možnosti výkonu klienta<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Grids in the web client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mřížky ve webovém klientovi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Od dubna 2020 budou výchozí akce jedním prstem výchozím chováním bez mechanismu výchozího chování.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Legacy "is one of" filtering experience</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastarání "je jedna z" možností filtrování</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnost "je jedna" filtrování prošla v aktualizaci Platform 22 změnou, přičemž plán je pravděpodobně možnost filtrování "je jedním z".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Starting in Platform update 22, an improved "is one of" filtering experience became available on the <bpt id="p1">**</bpt>Client performance options<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Počínaje aktualizací Platform update 22 je vylepšená možnost filtrování "je jedním z" k dispozici na stránce <bpt id="p1">**</bpt>Možnosti výkonu klienta<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>For more information, see <bpt id="p1">[</bpt>Optimized is one of filtering experience<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Více informací viz <bpt id="p1">[</bpt>Optimalizovaná možnost filtrování „je jeden z“<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Web client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Webový klient</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Od dubna 2020 bude možnost "je jedním z" výchozím chováním bez mechanismu výchozího chování.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Parameter to enable sales orders with multiple project contract funding sources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametr umožňující prodejní objednávky s více zdroji financování projektové smlouvy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the <bpt id="p1">**</bpt>Project management parameters<ept id="p1">**</ept> setting <bpt id="p2">**</bpt>Allow sales orders for project with multiple funding sources<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podpora pro vytváření prodejních objednávek na základě projektů, kde měla projektová smlouva více zdrojů financování s nastavením <bpt id="p1">**</bpt>parametrů řízení projektů<ept id="p1">**</ept> <bpt id="p2">**</bpt>Povolit prodejní objednávky pro projekt v více zdroji financování<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>By default, this parameter is not enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento parametr není ve výchozím nastavení povolen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>The functionality will always be enabled after the parameter is removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce bude vždy povolena po odebrání parametru.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>The functionality to support project-based sales orders with multiple funding sources will always be enabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce pro podporu prodejních objednávek založených na projektu s více zdroji financování bude povolena vždy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>The <bpt id="p1">**</bpt>Allow sales orders for projects with multiple funding sources<ept id="p1">**</ept> parameter will be removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametr <bpt id="p1">**</bpt>Povolit prodejní objednávky pro projekty s více zdroji financování<ept id="p1">**</ept> bude odebrán.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>The following methods will be modified when the parameter is removed: <bpt id="p1">**</bpt>ctrlSalesOrderTable<ept id="p1">**</ept> method in <bpt id="p2">**</bpt>ProjStatusType<ept id="p2">**</ept> class, <bpt id="p3">**</bpt>validate<ept id="p3">**</ept> method for <bpt id="p4">**</bpt>ProjId<ept id="p4">**</ept> field, and <bpt id="p5">**</bpt>run<ept id="p5">**</ept> method in <bpt id="p6">**</bpt>SalescreateOrder<ept id="p6">**</ept> form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Po odebrání parametru budou modifikovány následující metody: metoda <bpt id="p1">**</bpt>ctrlSalesOrderTable<ept id="p1">**</ept> ve třídě <bpt id="p2">**</bpt>ProjStatusType<ept id="p2">**</ept>, metoda <bpt id="p3">**</bpt>validate<ept id="p3">**</ept> pro pole <bpt id="p4">**</bpt>ProjId<ept id="p4">**</ept> a metoda <bpt id="p5">**</bpt>run<ept id="p5">**</ept> ve formuláři <bpt id="p6">**</bpt>SalescreateOrder<ept id="p6">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>The following methods will be deprecated when the parameter is removed: <bpt id="p1">**</bpt>IsSalesOrderAllowedForMultipleFundingSources<ept id="p1">**</ept> in <bpt id="p2">**</bpt>ProjTable<ept id="p2">**</ept> table file, <bpt id="p3">**</bpt>IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled<ept id="p3">**</ept> method in <bpt id="p4">**</bpt>ProjTable<ept id="p4">**</ept> table file, <bpt id="p5">**</bpt>AllowSalesOrdersForMultipleFundingSources<ept id="p5">**</ept> data field in <bpt id="p6">**</bpt>ProjParameters<ept id="p6">**</ept> form and <bpt id="p7">**</bpt>ProjParameterEntity<ept id="p7">**</ept> files, <bpt id="p8">**</bpt>IsAssociatedToMultipleFundingSourcesContract<ept id="p8">**</ept> private method in <bpt id="p9">**</bpt>ProjTable<ept id="p9">**</ept> table file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Následující metody budou po odebrání parametru zastaralé: metoda <bpt id="p1">**</bpt>IsSalesOrderAllowedForMultipleFundingSources<ept id="p1">**</ept> v souboru tabulky <bpt id="p2">**</bpt>ProjTable<ept id="p2">**</ept>, metoda <bpt id="p3">**</bpt>IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled<ept id="p3">**</ept> v souboru tabulky <bpt id="p4">**</bpt>ProjTable<ept id="p4">**</ept>, datové pole <bpt id="p5">**</bpt>AllowSalesOrdersForMultipleFundingSources<ept id="p5">**</ept> ve formuláři <bpt id="p6">**</bpt>ProjParameters<ept id="p6">**</ept> a v souborech <bpt id="p7">**</bpt>ProjParameterEntity<ept id="p7">**</ept>, soukromá metoda <bpt id="p8">**</bpt>IsAssociatedToMultipleFundingSourcesContract<ept id="p8">**</ept> v souboru tabulky <bpt id="p9">**</bpt>ProjTable<ept id="p9">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Deprecation is planned for the April 2020 release wave.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odpisování je plánováno pro vlnu vydání v dubnu 2020.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Legacy workflow reports for tracking and instance status</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé sestavy workflowu pro sledování stavu instance</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>The legacy workflow reports for tracking and instance status are being deprecated because they are no longer referenced from the navigation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sestavy ze starší verze workflowu pro sledování a stav instance jsou odepsané, protože na ně již není odkazováno z navigace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>The report names are WorkflowWorkflowInstanceByStatusReport and WorkflowWorkflowTrackingReport.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Názvy sestavy jsou WorkflowWorkflowInstanceByStatusReport a WorkflowWorkflowTrackingReport.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>The workflow history form can be used instead.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Místo toho lze použít formulář Historie workflowu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Web client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Webový klient</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Deprecated: Target timeframe for the functionality to be removed is April 2020.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Plánovaná doba pro odstranění funkcionality je duben 2020.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Dynamics 365 for Finance and Operations 10.0.1 with platform update 25</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25 jsou k dispozici pro cílené uživatele jako součást verze Preview.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>The content and the functionality are subject to change.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsah a funkce se mohou změnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>For more information about preview releases, see <bpt id="p1">[</bpt>Service update availability<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace o předchozích verzích naleznete v tématu <bpt id="p1">[</bpt>Dostupnost aktualizací služby<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Deprecated APIs and potential breaking changes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralá rozhraní API a možná přerušení změn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Deriving from internal classes is deprecated</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odvození z interních tříd je zastaralé</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Před aktualizací Platform Update 25 bylo možné vytvořit třídu nebo tabulku odvozenou z interní třídy/tabulky, která je definována v jiném balíčku/modulu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>This is not a safe coding practice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nejedná se o bezpečný postup kódování.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>As of Platform update 25, the compiler will display a warning.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Od aktualizace Platform update 25 bude kompilátor zobrazovat upozornění.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>The compiler warning will be replaced by an error in Platform update 26.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Upozornění kompilátoru bude nahrazeno chybou v příští aktualizaci Platform update 26.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Platform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>This change only affects development and compile time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato změna ovlivní čas nasazení a kompilace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Visual Studio development tools</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vývojové nástroje Visual Studio</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Deprecated: The warning will become a compilation error in Platform update 26.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Overriding internal methods is deprecated</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přepsání interních metod je zastaralé</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Před aktualizací Platform Update 25 bylo možné přepsat interní metodu v odvozené třídě, která je definována v jiném balíčku/modulu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>This is not a safe coding practice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nejedná se o bezpečný postup kódování.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>As of Platform update 25, the compiler will display a warning.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Od aktualizace Platform update 25 bude kompilátor zobrazovat upozornění.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>This warning will be replaced by a compile error in Platform update 26.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto upozornění kompilátoru bude nahrazeno chybou sestavení v příští aktualizaci Platform update 26.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Platform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>This change only affects development and compile time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato změna ovlivní čas nasazení a kompilace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Visual Studio development tools</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vývojové nástroje Visual Studio</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Deprecated: The warning will become a compilation error in Platform update 26.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Dynamics 365 for Finance and Operations 8.1.3 with platform update 23</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 8.1.3 s aktualizací Platform Update 23</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>SQL Server Reporting Services ReportViewer Control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontrola SQL Server Reporting Services ReportViewer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Customers can use the <bpt id="p1">**</bpt>Export<ept id="p1">**</ept> action provided by the embedded SQL Server Reporting Services (SSRS) ReportViewer control to download documents produced by Finance and Operations applications.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zákazníci mohou použít akci <bpt id="p1">**</bpt>Exportovat<ept id="p1">**</ept> poskytovanou vestavěným ovládacím prvkem SQL Server Reporting Services (SSRS) ReportViewe ke stažení dokumentů vyprodukovaných aplikacemi Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>This HTML-based presentation of the report offers users a non-paginated preview of the document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato prezentace sestavy na bázi HTML nabízí uživatelům náhled dokumentu bez číslování stránek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>The non-paginated nature of the HTML-based preview experience does <bpt id="p1">**</bpt>not<ept id="p1">**</ept> deliver fidelity with the physical documents ultimately produced by Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Povaha náhledu na bázi HTML bez čísel stránek <bpt id="p1">**</bpt>neposkytuje<ept id="p1">**</ept> věrnost s fyzickými dokumenty produkovanými aplikací Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>By fully embracing PDF as the standard format for business documents, users are able to take advantage of a modern viewing experience with improved performance when producing application reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Plným začleněním PDF jako standardního formátu pro obchodní dokumenty mohou uživatelé využívat moderní zobrazení prostředí se zvýšením výkonu při vytváření sestav aplikace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Do budoucna budou dokumenty PDF výchozím formátem pro sestavy vykreslované aplikací Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>This change does <bpt id="p1">**</bpt>not<ept id="p1">**</ept> impact customer scenarios where reports are distributed electronically or sent directly to printers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato změna <bpt id="p1">**</bpt>nemá<ept id="p1">**</ept> vliv na scénáře, kdy jsou sestavy rozesílány elektronicky nebo odesílány přímo na tiskárny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>The functionality to automatically preview application reports using an embedded PDF viewer is planned for the May 2019 Platform update.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce automatického náhledu sestav aplikací pomocí vestavěného prohlížeče ve formátu PDF je plánována na aktualizaci Platform Update v květnu 2019.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Client KPI controls</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ovládací prvky klíčových ukazatelů výkonu klienta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vložené klíčové indikátory výkonnosti (KPI) mohou být vývojářem modelovány v aplikaci Visual Studio a dále upravovány koncovým uživatelem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>The native client controls used to define KPIs have low customer uptake and rely on a developer to add trackable metrics.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nativní ovládací prvky klienta používané k definování KPI mají nízký vstup od zákazníka a spoléhají na vývojáře, který přidává sledovatelné metriky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Služba PowerBI.com poskytuje nástroje světové třídy pro definování a správu indikátorů KPI na základě dat z externích zdrojů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>In an upcoming release, we plan to enable you to embed solutions hosted on PowerBI.com in application workspaces.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V nadcházející verzi plánujeme umožnit vkládání řešení hostovaných na PowerBI.com v pracovních prostorech aplikací.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>This update will prevent developers from introducing new KPI controls in Visual Studio designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato aktualizace zabrání vývojářům vkládání nových ovládacích prvků KPI v návrháři Visual Studio.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Deprecated APIs and future breaking changes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralá rozhraní API a budoucí přerušení změn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Field groups containing invalid field references</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skupiny polí obsahující neplatné odkazy na pole</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>It is possible for table metadata definitions to have field groups containing invalid field references.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definice tabulkových metadat mohou mít skupiny polí obsahující neplatné odkazy na pole.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>This issue is currently categorized as a <bpt id="p1">*</bpt>compiler warning<ept id="p1">*</ept> rather than an <bpt id="p2">*</bpt>error<ept id="p2">*</ept>, meaning that the deployable package creation and deployment can proceed without fixing the issue.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento problém je v současné době kategorizován jako <bpt id="p1">*</bpt>varování kompilátoru<ept id="p1">*</ept>, nikoli jako <bpt id="p2">*</bpt>chyba<ept id="p2">*</ept>, což znamená, že vytvoření a nasazení zaváděcího balíčku může pokračovat bez opravení problému.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při nasazení to může způsobit chyby runtime ve finančním výkaznictví a službě SQL Server Reporting Services (SSRS).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>To fix this issue:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Chcete-li vyřešit tento problém:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>1. Remove the invalid field reference from the table field group definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1. Odeberte neplatný odkaz na pole z definice skupiny pole tabulky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>2. Recompile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2. Proveďte kompilaci znovu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>3. Ensure any warnings or errors are addressed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3. Ujistěte se, že jsou adresovány veškeré chyby nebo upozornění.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>This warning will be replaced by a compile error in the future.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Upozornění bude nahrazeno kompilační chybou v budoucnosti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Visual Studio development tools.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vývojové nástroje Visual Studio.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>All.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Deprecated: The warning will become a compile-time error in the future.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Upozornění se v budoucnu stane chybou při kompilaci.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>We're currently targeting Platform update 30.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Plánujeme to v aktualizaci Platform Update 30.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Complete list</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úplný seznam</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>To access the full list of APIs that are being deprecated, see <bpt id="p1">[</bpt>Deprecation of methods and meta data elements<ept id="p1">](deprecation-deletion-apis.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro přístup k úplnému seznamu zastaralých rozhraní API nahlédněte do části <bpt id="p1">[</bpt>Zastarání metod a prvků metadat<ept id="p1">](deprecation-deletion-apis.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Dynamics 365 for Finance and Operations 8.1 with platform update 20</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Batch transfer rules for subledger journal account entries</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pravidla dávkových převodů pro položky účtu dílčí hlavní knihy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>The Synchronous transfer mode is being deprecated in the General ledger parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Režim synchronního převodu je zastaralý v parametrech hlavní knihy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento režim je nahrazen pouze možnostmi Asynchronní a plánovaná dávka, které již existují jako možnosti pro převod.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>For additional information, see the <bpt id="p1">[</bpt>General Ledger Parameters – Batch transfer rules<ept id="p1">](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules)</ept> blog.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v blogu <bpt id="p1">[</bpt>Parametry hlavní knihy - pravidla dávkového přenosu <ept id="p1">](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>We are removing the synchronous option due to performance impact to the system.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraňujeme synchronní možnost kvůli dopadu na výkon systému.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>Asynchronous and scheduled batch are options to use in place of Synchronous.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asynchronní a plánovaná dávka jsou možnosti, které mají být použity místo synchronní možnosti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha, Závazky, Pohledávky, Zásobování, Výdaje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Deprecated: Target timeframe for the functionality to be removed is the 10.0 version.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Plánovaná doba pro odstranění funkcionality je verze 10.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Electronic reporting for Russia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronické výkaznictví pro Rusko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Feature for configuring .txt and .xml file formats of declarations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce pro konfiguraci formátů souborů TXT a XML prohlášení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Replaced with Electronic reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nahrazeno elektronickým výkaznictvím.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>General Ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Financial reports generator for Russia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generátor finančních sestav pro Rusko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>A tool for setting up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nástroj pro nastavení shromažďování dat pro účetnictví a daňové sestavy a export dat do šablon sestavy XLS a DOC.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>Functional parts: Export data to XLS and DOC report templates, queries, fixed requisites are removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkční části: jsou odstraněny export dat do šablon sestavy XLS , dotazy a pevné požadavky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>Removed parts are replaced with Electronic reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odebrané části jsou nahrazeny elektronickým výkaznictvím.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Financial reports setup user interface should be used for setting up data collection rules by GL accounts or tax registers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uživatelské rozhraní nastavení finančních sestav by mělo být použito pro nastavení pravidel shromažďování dat účty hlavní knihy a daňovými registry.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>Export data to various file types, fixed requisites and query-like data collection rules should be configured in Electronic reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Export dat do různých typů souborů, pevné požadavky a pravidla shromažďování dat podobná dotazům musí být nakonfigurovány v elektronickém výkaznictví.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>General ledger.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>Integration with external providers for sending electronic reporting through communication channels for Russia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integrování s externími poskytovateli pro odeslání elektronických sestav prostřednictvím komunikačních kanálů pro Rusko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>Feature exporting generated electronic files of declarations to folder for further sending to official providers of electronic reporting as well as importing state back.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce exportující generované elektronické soubory deklarací do složky pro další zasílání oficiálním poskytovatelům elektronického výkaznictví, stejně jako import stavu zpět.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>Replaced with electronic messages configurable feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nahrazeno konfigurovatelnou funkcí elektronických zpráv.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>General Ledger, Tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha, daň</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>Profit tax register wizard</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Průvodce registrem daně ze zisku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>Feature for creating templates for new profit tax registers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce pro vytvoření šablony pro nové registry daně ze zisku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>This feature creates X++ objects for new registers, which are then  created as templates with the appropriate calculation logic added in.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce vytváří objekty X ++ pro nové registry, které jsou pak vytvořeny jako šablony s přidanou odpovídající výpočetní logikou.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>Feature is not compatible with the Dynamics 365 for Finance and Operations extensibility model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce není kompatibilní s modelem rozšiřitelnosti Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>Tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daň</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>Dynamics 365 for Finance and Operations 8.0 with platform update 15</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 8.0 s aktualizací Platform Update 15</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>No features have been removed or deprecated with this release.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V této verzi nebyly odebrány ani odepsány žádné funkce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktualizace platformy 15 je kumulativní a obsahuje nové a změněné funkce aktualizace platformy 13, aktualizace platformy 14 a aktualizace platformy 15.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 s aktualizací Platform Update 12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>Personalized product recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doporučení přizpůsobeného produktu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>For more information, see <bpt id="p1">[</bpt>Personalized product recommendations<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">[</bpt>Doporučení přizpůsobeného produktu<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nicméně po jaru 2018 plánujeme vrátit tuto funkci, abychom využili novou službu doporučení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="364">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="365">
-          <source>Personalized product recommendations in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doporučení přizpůsobeného produktu v POS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="366">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="367">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechna</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="368">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="369">
-          <source>Removed as of February 15, 2018.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od 15. února 2018.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="370">
-          <source>This affects customers running Dynamics 365 for Operations 1611 and later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">To má vliv na zákazníky s verzí Dynamics 365 for Operations 1611 a vyšší.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="371">
-          <source>Extension of the list of Electronic reporting (ER) functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozšíření seznamu funkcí elektronického vykazování</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="372">
-          <source>The possibility to introduce custom functions to be used in the ER expression builder (for more information, see <bpt id="p1">[</bpt>Extend the list of Electronic reporting functions<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)</ept>) is not supported any more.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnost zavést vlastní funkce pro použití v tvůrci výrazů ER (další informace naleznete v tématu <bpt id="p1">[</bpt>Rozšíření seznamu funkcí elektronického výkaznictví<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)</ept>) již není nadále podporována.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="373">
-          <source>Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Z důvodu změn rozhraní API pro elektronické výkaznictví se stalo API volající vestavěné funkce z tvůrce výkazů ER interním a již nelze rozšířit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="374">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="375">
-          <source>Code sealing initiative</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Iniciativa uzavření kódu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="376">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="377">
-          <source>None.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="378">
-          <source>Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kdykoliv je potřeba nová vestavěná funkce, musí být adresován nová požadavek na rozšíření týmu architektury elektronického výkaznictví.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="379">
-          <source>As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jako dočasné řešení pro dobu, kdy je požadovaná funkce vyvíjena týmem elektronického výkaznictví, lze požadovanou logiku naprogramovat jako metodu vlastní třídy aplikace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="380">
-          <source>This method can be accessed in an ER expression as a property of the added ER data source of the <bpt id="p1">**</bpt>Application\Class<ept id="p1">**</ept> type that refers to that custom application class.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">K této metodě lze získat přístup ve výrazu elektronické výkaznictví jako vlastnost přidaného datového zdroje dat elektronické výkaznictví typu <bpt id="p1">**</bpt>Aplikace\Třída<ept id="p1">**</ept>, který se vztahuje k této vlastní třídě aplikace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="381">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="382">
-          <source>Electronic reporting framework</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Architektura elektronického výkaznictví</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="383">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="384">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="385">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="386">
-          <source>Removed as of Dynamics 365 for Finance and Operations, Enterprise edition 7.3.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odebráno od verze Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="387">
-          <source>Inventory by item group and Inventory by inventory dimension aging reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zásoby podle prodlení skupiny zboží a Zásoby podle doby uskladnění za dimenzi zásob</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="388">
-          <source>These two reports are no longer supported in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto dvě sestavy již nejsou podporovány v aplikaci Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="389">
-          <source>Instead, the <bpt id="p1">**</bpt>Inventory aging<ept id="p1">**</ept> report can be used to improve the user experience.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Namísto toho lze použít sestavu <bpt id="p1">**</bpt>Prodlení zásob<ept id="p1">**</ept> k vylepšení uživatelské zkušenosti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="390">
-          <source><bpt id="p1">**</bpt>Reason for deprecation<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="391">
-          <source>Duplicate functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Duplicitní funkce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="392">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="393">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="394">
-          <source>The two reports have been replaced by the <bpt id="p1">**</bpt>Inventory aging<ept id="p1">**</ept> report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto dvě sestavy byly nahrazeny sestavou <bpt id="p1">**</bpt>Prodlení zásob<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="395">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="396">
-          <source>Inventory management, Cost management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení zásob, řízení nákladů</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="397">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="398">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechna</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="399">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="400">
-          <source>Deprecated: The menu items for the two reports have been removed in version 7.3.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Položky nabídky pro tyto dvě sestavy byly odstraněny ve verzi 7.3.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="401">
-          <source>However, the code for the reports remains in the product.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód pro sestavy však zůstane v produktu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="402">
-          <source>The plan is to remove the code in a future release.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V plánu je kód odstranit v budoucích verzích.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="403">
-          <source>Power BI content packs available on AppSource</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balíčky obsahu Power BI dostupné v AppSource</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="404">
-          <source>The <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Financial performance<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Retail channel performance<ept id="p3">**</ept> content packs, available on the <bpt id="p4">[</bpt>Microsoft AppSource<ept id="p4">](https://appsource.microsoft.com)</ept> site, are deprecated as a consequence of product updates in Microsoft Power BI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balíčky obsahu <bpt id="p1">**</bpt>Řízení nákladů<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Finanční výkonnost<ept id="p2">**</ept> a <bpt id="p3">**</bpt>Výkonnost maloobchodního kanálu<ept id="p3">**</ept>, dostupné na webu <bpt id="p4">[</bpt>Microsoft AppSource<ept id="p4">](https://appsource.microsoft.com)</ept>, jsou zastaralé v důsledku aktualizace produktů v Microsoft Power BI.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="405">
-          <source>System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formuláře správy systému používané k nasazení těchto balíčků obsahu do PowerBI.com obsahu jsou také zastaralé v aplikaci Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="406">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="407">
-          <source>Product updates in Microsoft Power BI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktualizace produktu v Microsoft Power BI.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="408">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="409">
-          <source>The <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Financial performance<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Retail channel performance<ept id="p3">**</ept> content packs, available on the <bpt id="p4">[</bpt>AppSource<ept id="p4">](https://appsource.microsoft.com)</ept> site, are being replaced by analytical applications which allow for solution integrations at the database level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balíčky obsahu <bpt id="p1">**</bpt>Řízení nákladů<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Finanční výkonnost<ept id="p2">**</ept> a <bpt id="p3">**</bpt>Výkonnost maloobchodního kanálu<ept id="p3">**</ept>, které jsou k dispozici na webu <bpt id="p4">[</bpt>AppSource<ept id="p4">](https://appsource.microsoft.com)</ept>, jsou nahrazeny analytickými aplikacemi umožňujícími integrace řešení na úrovni databáze.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="410">
-          <source>For more information about analytical applications, see <bpt id="p1">[</bpt>Embedded Power BI in workspackes<ept id="p1">](../../dev-itpro/analytics/embed-power-bi-workspaces.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace o analytických aplikacích naleznete v tématu <bpt id="p1">[</bpt>Power BI Embedded v pracovních prostorech<ept id="p1">](../../dev-itpro/analytics/embed-power-bi-workspaces.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="411">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="412">
-          <source>Cost management, Finance, and Retail</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení nákladů, Finance a Maloobchod</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="413">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="414">
-          <source>Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pouze cloud (Inntegrace s PowerBI.com není podporována v místních nasazeních).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="415">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="416">
-          <source>Deprecated: Target timeframe for the functionality removal is Q2 2018.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Plánovaná doba pro odstranění funkcionality je druhé čtvrtletí roku 2018.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="417">
-          <source>Standard UI in data management workspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardní uživatelské rozhraní v pracovním prostoru správy dat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="418">
-          <source>The standard UI in data management is the legacy UI, which is the default UI presented to the users when they visit the data management workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardní uživatelské rozhraní ve správě dat je starší verze rozhraní, což je výchozí uživatelské rozhraní zobrazované uživatelům při návštěvě pracovního prostoru Správa dat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="419">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="420">
-          <source>We are investing in providing new user experiences in the new UI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Investujeme do poskytnutí nových uživatelských možností v novém uživatelském rozhraní.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="421">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="422">
-          <source>The new UI called <bpt id="p1">*</bpt>Enhanced views<ept id="p1">*</ept> is replacing the old UI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nové uživatelské rozhraní s názvem <bpt id="p1">*</bpt>Rozšířené zobrazení<ept id="p1">*</ept> nahrazuje staré uživatelské rozhraní.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="423">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="424">
-          <source>Data management workspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pracovní prostor správy dat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="425">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="426">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechna</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="427">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="428">
-          <source>Deprecated: Target timeframe for the functionality to be removed is Q2 2018.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Plánovaná doba pro odstranění funkcionality je první čtvrtletí roku 2018.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="429">
-          <source>Excise, Sales Tax, Service Tax for India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Spotřební daň, DPH, daň ze služeb pro Indii</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="430">
-          <source>These taxes have been subsumed into Indian GST.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto daně byly zahrnuty do indické GST.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="431">
-          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení nebo odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="432">
-          <source>These taxes have been subsumed into Indian GST.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto daně byly zahrnuty do indické GST.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="433">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="434">
-          <source>Indian GST</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indická GST</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="435">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="436">
-          <source>Tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daň</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="437">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="438">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="439">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="440">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="441">
-          <source>File Validation Utility (FVU) for India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nástroj ověření souboru (FVU) pro Indii</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="442">
-          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení nebo odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="443">
-          <source>Lack of customer usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nepoužíváno odběrateli.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="444">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="445">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="446">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="447">
-          <source>Indian withholding tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Srážková daň pro Indii</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="448">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="449">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="450">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="451">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="452">
-          <source>TDS/TCS certificate for India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Certifikát TDS/STK pro Indii</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="453">
-          <source>Users can download this from the government portal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uživatelé si mohou stáhnout tento formulář ze státního portálu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="454">
-          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení nebo odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="455">
-          <source>Lack of customer usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nepoužíváno odběrateli.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="456">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="457">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="458">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="459">
-          <source>Indian withholding tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Srážková daň pro Indii</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="460">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="461">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="462">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="463">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="464">
-          <source>Export/import (EXIM) incentive scheme for India</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Export/import (EXIM) motivační schématu pro Indii</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="465">
-          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení nebo odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="466">
-          <source>Lack of customer usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nepoužíváno odběrateli.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="467">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="468">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="469">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="470">
-          <source>Import and export</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import a export</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="471">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="472">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="473">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="474">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="475">
-          <source>Dynamics 365 for Retail 7.2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Retail 7.2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="476">
-          <source>Personalized product recommendations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doporučení přizpůsobeného produktu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="477">
-          <source>Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="478">
-          <source>For more information, see <bpt id="p1">[</bpt>Personalized product recommendations<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">[</bpt>Doporučení přizpůsobeného produktu<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="479">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="480">
-          <source>We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="481">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="482">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="483">
-          <source>However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nicméně po jaru 2018 plánujeme vrátit tuto funkci, abychom využili novou službu doporučení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="484">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="485">
-          <source>Personalized product recommendations in POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doporučení přizpůsobeného produktu v POS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="486">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="487">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechna</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="488">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="489">
-          <source>Removed as of February 15, 2018.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od 15. února 2018.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="490">
-          <source>This affects customers running Dynamics 365 for Retail 7.2  and later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">To má vliv na zákazníky s verzí Dynamics 365 for Retail 7.2 a vyšší.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="491">
-          <source>Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations, Enterprise Edition červenec 2017 s aktualizací Platform Update 8</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="492">
-          <source>Currency conversion for accounting and reporting currencies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převod měny pro účetnictví a měny vykazování</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="493">
-          <source>Currency conversion for accounting and reporting currencies was introduced when the euro was introduced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Převod měny pro účetnictví a měny vykazování byl zaveden se zavedením eura.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="494">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="495">
-          <source>Limited usage and addition of the Copy legal entity functionality as a replacement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezené použití a přidání funkce kopírování právnické osoby jako náhrady.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="496">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="497">
-          <source>No, but the Copy legal entity and Configurations features were added to make it easier to move to a company that has changing core requirements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne, ale byly přidány funkce Kopírovat právnickou osobu a Konfigurace, aby se usnadnilo přesunutí společnosti, která má zásadní požadavky na změnu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="498">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="499">
-          <source>Financial management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa financí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="500">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="501">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="502">
-          <source>Warehouse mobile devices portal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Portál skladu pro mobilní zařízení</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="503">
-          <source>Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="504">
-          <source>This component is no longer supported in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato komponenta již není podporována v aplikaci Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="505">
-          <source>A native app that improves the user experience has replaced the functionality of WMDP.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce portálu skladu pro mobilní zařízení byla nahrazena nativní aplikací, která vylepšuje uživatelské prostředí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="506">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="507">
-          <source>Duplicate functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Duplicitní funkce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="508">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="509">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="510">
-          <source>This feature has been replaced by Finance and Operations - Warehousing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="511">
-          <source>For more information about setup and prerequisites, see <bpt id="p1">[</bpt>Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing<ept id="p1">](../../supply-chain/warehousing/install-configure-warehousing-app.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace o nastavení a předpokladech naleznete v tématu <bpt id="p1">[</bpt>Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations – Sklady<ept id="p1">](../../supply-chain/warehousing/install-configure-warehousing-app.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="512">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="513">
-          <source>Warehouse management, Transportation management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení skladu, Správa přepravy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="514">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="515">
-          <source>Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="516">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="517">
-          <source>Deprecated: Target timeframe for the functionality to be removed is Q4 2019.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Plánovaná doba pro odstranění funkcionality je čtvrté čtvrtletí roku 2019.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="518">
-          <source>Advanced bank reconciliation matching rule for manual matching</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pravidlo párování rozšířeného odsouhlasení banky pro ruční párování</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="519">
-          <source>A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bylo použito pravidlo párování k výběru a označení bankovního dokumentu při manuálním párování dokumentů v listu pro odsouhlasení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="520">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="521">
-          <source>Limited usage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezené použití.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="522">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="523">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="524">
-          <source>Column filtering capabilities should be used to find documents for reconciliation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro nalezení dokumentů k odsouhlasení je třeba použít možnosti filtrování sloupce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="525">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="526">
-          <source>Cash and bank management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokladna a banka</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="527">
-          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Možnost nasazení<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="528">
-          <source>All</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vše</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="529">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="530">
-          <source>Removed as of July 2017.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od července 2017.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="531">
-          <source>Dynamics 365 for Operations 1611 with platform update 3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Operations 1611 s aktualizací Platform Update 3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="532">
-          <source>AEB payment formats for Spain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AEB formáty plateb pro Španělsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="533">
-          <source>The Consejo Superior Bancario payment formats were used to send remittance files to the bank for customer payments and vendor payments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pro odesílání souborů úhrad s platbami odběratelů a dodavatelů do banky se používaly formáty CSB (Consejo Superior Bancario).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="534">
-          <source>The content of these formats was determined by the Asociación Española de Banca.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obsah těchto formátů byl stanoven asociací AEB (Asociación Española de Banca).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="535">
-          <source>It covers Cuaderno 19, 32, 58, 34.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zahrnuty jsou také Cuaderno 19, 32, 58, 34.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="536">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="537">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb se již nepoužívají.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="538">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="539">
-          <source>Yes, ISO20022 Credit transfer and Direct debit payment formats for Spain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, ISO20022 formáty bezhotovostních převodů a přímých debetních plateb pro Španělsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="540">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="541">
-          <source>Accounts payable, Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky, závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="542">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="543">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="544">
-          <source>Bank payments transfer for Lithuania</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bankovní převod plateb pro Litvu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="545">
-          <source>Bank payment transfers were generated and printed by using the Payment transfer (LT) export format for Lithuania.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bankovní platební převody byly generované a tisknuté za použití formátu exportu platebního převodu pro Litvu (LT).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="546">
-          <source>The Lithuanian market began to use LITAS, the unified electronic banking system, in 2005.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Litevský trh začal v roce 2005 používat LITAS, sjednocený elektronický bankovní systém.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="547">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="548">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb se již nepoužívají.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="549">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="550">
-          <source>Yes, ISO20022 Credit transfer payment format for Lithuania</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, Litevský formát platby peněžního převodu ISO20022.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="551">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="552">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="553">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="554">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="555">
-          <source>BBS Direkte Remittering payment formats for Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb BBS Direkte Remittering pro Norsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="556">
-          <source>BBS Direkte Remittering payment formats include customer payment collection export (direct debit) and return message import.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb BBS Direkte Remittering zahrnují export inkasní platby odběratele (inkaso) a import zprávy o vrácení.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="557">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="558">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb se již nepoužívají.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="559">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="560">
-          <source>The AvtaleGiro customer payment format for Norway can be used to generate direct debit messages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát platby odběratele AvtaleGiro pro Norsko lze využít ke generování zprávy o souhlasu s inkasem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="561">
-          <source>Return message import will be implemented in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import zprávy o vrácení bude zahrnut do příštích verzí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="562">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="563">
-          <source>Accounts payable, Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky, závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="564">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="565">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="566">
-          <source>Chart of Accounts tool for Spain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nástroj účtové osnovy pro Španělsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="567">
-          <source>This tool is used when a chart of accounts in Spain requires major changes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento nástroj se používá, když účtová osnova ve Španělsku vyžaduje zásadní změny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="568">
-          <source>Users can import a new chart of accounts in Microsoft Excel or text format, and can also import financial statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uživatelé mohou importovat nové účtové osnovy v aplikaci Microsoft Excel nebo v textovém formátu a mohou také importovat finanční výkazy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="569">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="570">
-          <source>Limited usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezené použití</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="571">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="572">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="573">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="574">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="575">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="576">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="577">
-          <source>Dom80 payment format for Belgium</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dom80 formát platby pro Belgii</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="578">
-          <source>Legacy Belgian payment format for payment collection (direct debit).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Starý belgický formát platby pro inkaso platby (přímý debet).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="579">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="580">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát plateb se již nepoužívá.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="581">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="582">
-          <source>Yes, ISO 20022 Direct debit payment format for Belgium</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, specificky belgický formát inkasní platby ISO 20022.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="583">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="584">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="585">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="586">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="587">
-          <source>DTA/EZAG payment formats for Switzerland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DTA/EZAG formáty plateb pro Švýcarsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="588">
-          <source>DTA/EZAG formats are integrated into the ESR system, because they can carry on the reference number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty odložených daňových aktiv/EZAG jsou integrovány do systému ESR, jelikož mohou obsahovat referenční číslo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="589">
-          <source>Because the reference number isn’t mandatory, these formats can be used to process any vendor payments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jelikož referenční číslo není povinné, mohou být pomocí těchto formátů zpracovány všechny platby dodavatele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="590">
-          <source>These formats are used by companies that have a bank account in a location other than “Postfinance.”</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyto formáty využívají společnosti, které máte bankovní účet ve skladovém místě jiném než "Postfinance".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="591">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="592">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb se již nepoužívají.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="593">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="594">
-          <source>Yes, ISO20022 Credit transfer payment format for Switzerland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, švýcarský formát platby peněžního převodu ISO20022</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="595">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="596">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="597">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="598">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="599">
-          <source>EDIFACT-DIRDEB payment format for Austria</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Specificky rakouský formát inkasní platby EDIFACT-DIRDEB.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="600">
-          <source>EDIFACT-DIRDEB payment format for payment collection (direct debit).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDIFACT-DIRDEB formát platby pro inkaso platby (přímý debet).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="601">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="602">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát plateb se již nepoužívá.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="603">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="604">
-          <source>Yes, ISO 20022 Direct debit payment format for Austria</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, specificky rakouský formát inkasní platby ISO 20022.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="605">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="606">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="607">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="608">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="609">
-          <source>EDIVAT for Belgium</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDIVAT pro Belgii</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="610">
-          <source>EDIVAT is an obsolete Belgian standard for electronic declaration via secure mail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDIVAT je starý standard pro elektronické prohlášení prostřednictvím zabezpečení pošty v Belgii.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="611">
-          <source>Microsoft Dynamics AX 2012 retains the read-only solution to enable access to the historical data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 zachovává řešení jen pro čtení pro umožnění přístupu k historickým datům.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="612">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="613">
-          <source>The functionality is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce se již nepoužívá.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="614">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="615">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="616">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="617">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="618">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="619">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="620">
-          <source>eGiro EDIFACT CREMUL payment import format for Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importní formát platby eGiro EDIFACT CREMUL pro Norsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="621">
-          <source>eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Message) standard that is used for automatic posting of customer payments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eGiro je založeno na mezinárodních standardech SN EDIFACT CREMUL (Multiple Credit Advice Message), které slouží pro automatické zaúčtování plateb odběratele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="622">
-          <source>In Microsoft Dynamics AX, eGiro is implemented as a customer payment import format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V aplikaci Microsoft Dynamics AX je implementováno eGiro jako formát importu platby odběratele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="623">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="624">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát plateb se již nepoužívá.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="625">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="626">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="627">
-          <source>The format will be replaced by ISO 20022 statement import formats in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="628">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="629">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="630">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="631">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="632">
-          <source>External inventory for Poland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Externí zásoby v Polsku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="633">
-          <source>Evidence of goods that are taken from a vendor for sales without purchase.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Doklad o zboží, který je přijatý od dodavatele pro účely prodeje bez nákupu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="634">
-          <source>Goods that are handled in external inventory don’t affect standard inventory, and can be sold and then purchased automatically.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zboží, které je zpracováno v externím skladu, nemá vliv na standardní zásoby a lze ho prodat a pak zakoupit automaticky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="635">
-          <source>This process creates real inventory movements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento proces vytváří skutečné pohyby zásob.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="636">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="637">
-          <source>Replaced by another feature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nahrazeno jinou funkcí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="638">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="639">
-          <source>Yes, the core Inbound consignment functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, základní funkce příchozí zásilky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="640">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="641">
-          <source>Accounts payable, Inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky, řízení zásob</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="642">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="643">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="644">
-          <source>Financial reports generator for Eastern Europe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generátor finančních sestav pro východní Evropu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="645">
-          <source>A tool is used to set up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nástroj se používá pro nastavení shromažďování dat pro účetnictví a daňové sestavy a export dat do šablon sestavy XLS a DOC</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="646">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="647">
-          <source>Limited usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezené použití</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="648">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="649">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="650">
-          <source>The tool will be replaced by Electronic reporting configurations in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento nástroj bude nahrazen konfigurací elektronických sestav v budoucích verzích.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="651">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="652">
-          <source>General Ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="653">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="654">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="655">
-          <source>Import of customer payment transactions for Finland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import transakce plateb odběratelů pro Finsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="656">
-          <source>You can select an import format for Finnish payments to import customer payment transactions from an external file that the bank provides.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Můžete vybrat formát importu pro platby ve Finsku, ve kterém se importují platební transakce odběratelů z externího souboru, který zajišťuje banka.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="657">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="658">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát plateb se již nepoužívá.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="659">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="660">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="661">
-          <source>The format will be replaced by ISO 20022 statement import formats in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="662">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="663">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="664">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="665">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="666">
-          <source>Import of payment transactions into a general ledger journal for Finland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Import platebních transakcí do deníku hlavní knihy pro Finsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="667">
-          <source>A format that is specific to Finland is used to import accounting transactions into the general ledger.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát, který je specifický pro Finsko, se používá k importu transakcí účtování do hlavní knihy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="668">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="669">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát plateb se již nepoužívá.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="670">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="671">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="672">
-          <source>The format will be replaced by ISO 20022 statement import formats in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="673">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="674">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="675">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="676">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="677">
-          <source>Integration with Isabel synchronized (CIS) for Belgium</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integrace s Isabel synchronizována (CIS) pro Belgii</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="678">
-          <source>Isabel is the framework for electronic banking in Europe and is a de-facto standard in Belgium.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Isabel je platforma pro elektronické bankovnictví v Evropě a je de facto standardní v Belgii.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="679">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="680">
-          <source>Integration with Isabel client has been discontinued.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integrace s klientem Isabel již není nabízena.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="681">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="682">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="683">
-          <source>The payment formats that are no longer used are replaced by ISO20022 Credit transfer payment format for Belgium.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb, které se již nepoužívají, jsou nahrazeny ISO20022 formátem platebního převod platby pro Belgii.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="684">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="685">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="686">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="687">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="688">
-          <source>Modifications in the chart of accounts and accounting rules for Spain</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Změny v účetní osnově a účetních pravidlech pro Španělsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="689">
-          <source>This feature is used for changes in the chart of accounts and accounting rules in Spain.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce se používá pro změny v účtové osnově a účetních pravidlech ve Španělsku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="690">
-          <source>It maps accounts to help transform the old chart of accounts into the new chart of accounts, and compares the previous fiscal year with the new fiscal year, even if they were posted to different account numbers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mapuje účty, aby pomohla transformovat původní účtovou osnovu do nové účtové osnovy a porovnává předchozí fiskální rok s novým fiskálním rokem i v případě, že byly zaúčtovány na různá čísla účtů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="691">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="692">
-          <source>Limited usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omezené použití</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="693">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="694">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="695">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="696">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="697">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="698">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="699">
-          <source>Pagamento Fornittori vendor payment format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát platby dodavatele Pagamento Fornittori</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="700">
-          <source>Legacy Italian payment format for credit transfers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Starý italský formát platby peněžních převodů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="701">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="702">
-          <source>The payment format is no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát plateb se již nepoužívá.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="703">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="704">
-          <source>Yes, ISO20022 Credit transfer payment format for Italy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, italský formát platby peněžního převodu ISO20022.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="705">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="706">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="707">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="708">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="709">
-          <source>Payment export formats for Estonia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty pro export plateb v Estonsku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="710">
-          <source>The Telehansa and Teleservice formats are used for bank payment export.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty Telehansa a Teleservice se používají pro export bankovních plateb.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="711">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="712">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb se již nepoužívají.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="713">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="714">
-          <source>Yes, ISO20022 Credit transfer payment format for Estonia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, specificky estonský formát platby peněžního převodu ISO20022.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="715">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="716">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="717">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="718">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="719">
-          <source>Payment file archive for Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Archiv souborů plateb pro Norsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="720">
-          <source>When payment files are generated, the file archive automatically archives all files that are created, even files that were previously written or read.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Když dojde ke generování souborů plateb, archiv souborů automaticky archivuje všechny soubory, které jsou vytvořeny, i soubory, které byly dříve zapsány nebo načteny.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="721">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="722">
-          <source>Replaced by another feature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nahrazeno jinou funkcí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="723">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="724">
-          <source>Yes, Electronic reporting archived jobs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, archivované úlohy elektronického výkaznictví</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="725">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="726">
-          <source>Accounts payable, Accounts receivable, Organization administration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky, pohledávky, správa organizace</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="727">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="728">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="729">
-          <source>Payment import formats for Estonia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty pro import plateb v Estonsku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="730">
-          <source>The Telehansa and TeleTeenus formats are used for bank payment import.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty Telehansa a TeleTeenus se používají pro import bankovních plateb.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="731">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="732">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb se již nepoužívají.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="733">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="734">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="735">
-          <source>The formats will be replaced by ISO 20022 statement import formats in future releases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty budou nahrazeny formátem importu výpisu ISO 20022 v příštích verzích.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="736">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="737">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="738">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="739">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="740">
-          <source>Payroll information in Human Resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mzdové informace v modulu Lidské zdroje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="741">
-          <source>Human Resources Payroll information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mzdové informace lidských zdrojů</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="742">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="743">
-          <source>This functionality has been replaced by core Payroll and Human Resources pages.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce byla nahrazena základními stránkami Mzdy a Lidské zdroje.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="744">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="745">
-          <source><bpt id="p1">**</bpt>Benefits<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Earnings<ept id="p2">**</ept>, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Výhody<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Příjmy<ept id="p2">**</ept> a další související stránky, které byly dříve v modulu Mzdy v USA, byly překonfigurovány a jsou nyní součásti základní konfigurace modulu Lidské zdroje pro podporu zpracování externích mezd.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="746">
-          <source>This functionality is accessed by using the <bpt id="p1">**</bpt>Human Resources 1<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Payroll<ept id="p2">**</ept> configuration key.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">K této funkci se dostanete pomocí konfiguračního klíče <bpt id="p1">**</bpt>Lidské zdroje 1<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Mzdy<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="747">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="748">
-          <source>Human Resources, Payroll</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lidské zdroje, Mzdy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="749">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="750">
-          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics 365 for Operations 1611.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="751">
-          <source>Performance management goal workflow</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pracovní postup cíle řízení výkonnosti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="752">
-          <source>Performance management includes goal management and integration with performance reviews.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení výkonnosti zahrnuje správu cílů a integraci s hodnocením výkonu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="753">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="754">
-          <source>Performance management was redesigned, and the number of goal pages was reduced to simplify the process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení výkonnosti bylo změněno a počet stránek cílů se snížil, aby došlo ke zjednodušení procesu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="755">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="756">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="757">
-          <source>Goals are visible to managers through the Manager Self Service portal, and can be changed and viewed by the manager.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Cíle jsou viditelné pro vedoucí pracovníky pomocí portálu samoobslužných stránek správce a lze je změnit a zobrazit manažerem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="758">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="759">
-          <source>Human capital management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa lidského kapitálu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="760">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="761">
-          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics 365 for Operations 1611.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="762">
-          <source>Postgirot and Postgirot Utland payment formats for Sweden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty platby Postgirot a Postgirot Utland pro Švédsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="763">
-          <source>Postgirot and Postgirot Utland payment formats for Sweden.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty platby Postgirot a Postgirot Utland pro Švédsko.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="764">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="765">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb se již nepoužívají.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="766">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="767">
-          <source>Yes, ISO20022 Credit transfer payment format for Sweden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, specificky švédský formát platby peněžního převodu ISO20022.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="768">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="769">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="770">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="771">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="772">
-          <source>Radio frequency identifier</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Radiofrekvenční identifikátor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="773">
-          <source>Radio Frequency Identification (RFID) is a data-collection technology that uses electronic tags to store identification data and a no-line-of-sight requirement reader to capture the identification data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Radiofrekvenční identifikace (RFID) představuje technologii shromažďování dat, která využívá elektronických značek k uložení identifikačních dat a nevyžaduje žádné zařízení ke čtení identifikačních dat, které by muselo být v přímé viditelnosti k označenému předmětu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="774">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="775">
-          <source>Low customer usage and a limited feature set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Málo používáno odběrateli a omezená sada funkcí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="776">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="777">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="778">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="779">
-          <source>Inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení zásob</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="780">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="781">
-          <source>Removed as of Dynamics 365 for Operations 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics 365 for Operations 1611.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="782">
-          <source>Report about state invoices numbering for Latvia</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zpráva o číslování státních faktur Lotyšska</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="783">
-          <source>Latvian legislation provides specific rules about the numbering of sales invoices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lotyšská legislativa poskytuje konkrétní pravidla týkající se číslování prodejních faktur.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="784">
-          <source>The functionality lets you assign specific numbers to sales invoices, based on the user or user group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce umožňuje přiřadit specifická čísla do prodejních faktur na základě uživatele nebo skupiny uživatelů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="785">
-          <source>You can then generate a report or an XML file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pak lze vygenerovat sestavu nebo soubor XML.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="786">
-          <source>You can also print a report about invoice numbers that are used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lze také vytisknout sestavy s informacemi o použitých číslech faktur.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="787">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="788">
-          <source>The state invoice numbering no longer has to be maintained.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Není už nutné zachovávat číslování státních faktur.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="789">
-          <source>The report about used invoice numbers is no longer required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlášení o použitých číslech faktur již není požadováno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="790">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="791">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="792">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="793">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="794">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="795">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="796">
-          <source>Set up the names of the manager and general accountant of a company for Lithuania</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení jmen správce a hlavního účetního společnosti pro Litvu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="797">
-          <source>The names of the manager and the general accountant of a company can be specified in the company information and used in different local report printouts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jména správce a hlavního účetního společnosti mohou být určena v informacích o společnosti a využita ve výtiscích různých místních sestav.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="798">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="799">
-          <source>Replaced by another feature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nahrazeno jinou funkcí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="800">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="801">
-          <source>Yes, the setup of officials can be used for the same purpose.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, nastavení úředních osob lze použít k tomuto účelu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="802">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="803">
-          <source>Accounts payable, Accounts receivable, Cash and bank management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky, Pohledávky, Řízení zásob, Pokladna a banka</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="804">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="805">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="806">
-          <source>Shipping carrier interface</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rozhraní dopravce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="807">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="808">
-          <source>Duplicate functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Duplicitní funkce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="809">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="810">
-          <source>Partially replaced by Transportation management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Částečně nahrazeno správou přepravy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="811">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="812">
-          <source>Sales and marketing, Inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prodeje a marketing, Řízení zásob</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="813">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="814">
-          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics 365 for Operations 1611.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="815">
-          <source>Telepay payment formats for Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Telepay formáty plateb pro Norsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="816">
-          <source>Telepay payment formats include vendor payment export (credit transfer) and customer payment collection (direct debit).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Telepay formáty plateb zahrnují exporty plateb dodavatele (převod) a inkasa plateb odběratele (přímý debet).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="817">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="818">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb se již nepoužívají.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="819">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="820">
-          <source>Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, formátu platby platebního převodu ISO20022 a formát platby odběratele AvtaleGiro pro Norsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="821">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="822">
-          <source>Accounts payable, Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky, závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="823">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="824">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="825">
-          <source>Vendor payment export formats for Finland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty exportu plateb dodavatele pro Finsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="826">
-          <source>Two formats for exporting payments are available for Finland.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Existují dva formáty pro export plateb pro Finsko.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="827">
-          <source>LM02 (FI) is used for domestic payments, and LUM2 (FI) is used for foreign payments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LM02 (FI) se používá pro domácí platby a LUM2 (FI) se používá pro zahraniční platby.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="828">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="829">
-          <source>The payment formats are no longer used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formáty plateb se již nepoužívají.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="830">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="831">
-          <source>Yes, ISO20022 Credit transfer payment format for Finland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, finský formát platby peněžního převodu ISO20022</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="832">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="833">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="834">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="835">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="836">
-          <source>Warehouse management II</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení skladu II</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="837">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="838">
-          <source>The Warehouse management II solution (WMS II) that was available in the <bpt id="p1">**</bpt>Inventory management<ept id="p1">**</ept> module duplicates functionality that is in the <bpt id="p2">**</bpt>Warehouse management<ept id="p2">**</ept> module that was released in Microsoft Dynamics AX 2012 R3.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řešení Řízení skladu II (WMS II), které bylo k dispozici v modulu <bpt id="p1">**</bpt>Řízení zásob<ept id="p1">**</ept>, duplikuje funkce, které jsou v modulu <bpt id="p2">**</bpt>Řízení skladu<ept id="p2">**</ept> a byly vydány v aplikaci Microsoft Dynamics AX 2012 R3.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="839">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="840">
-          <source>The <bpt id="p1">**</bpt>Warehouse management<ept id="p1">**</ept> module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modul <bpt id="p1">**</bpt>Řízení skladu<ept id="p1">**</ept>, který byl vydán v aplikaci AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 a Dynamics AX 2012 R3 CU9, nahrazuje funkce modulu Řízení skladu II.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="841">
-          <source>The new module has more advanced features and more flexible warehouse management processes than Warehouse management II.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V porovnání s funkcemi modulu Řízení skladu II má nový modul více rozšířené funkce a flexibilnější procesy řízení skladu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="842">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="843">
-          <source>Inventory management, Sales and marketing, Procurement and sourcing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení zásob, prodeje a marketing, zásobování a zdroje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="844">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="845">
-          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics 365 for Operations 1611.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="846">
-          <source>Worker reminders in Human Resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Připomenutí pracovníka v modulu Lidské zdroje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="847">
-          <source>Human Resources Payroll information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mzdové informace lidských zdrojů</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="848">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="849">
-          <source>Low usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Malé využití</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="850">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="851">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="852">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="853">
-          <source>Human resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lidské zdroje</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="854">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="855">
-          <source>Removed as of Dynamics 365 for Operations version 1611</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics 365 for Operations 1611</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="856">
-          <source>Workflow for creating goals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Postup pro vytváření cíle</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="857">
-          <source>A workflow for managing the creation of employee goals is one of several workflows that were available to help coordinate the performance management process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Workflow správy vytvoření cílů zaměstnanců je jednou z několika workflowů, které byly k dispozici pro pomoc koordinovat proces řízení výkonnosti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="858">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="859">
-          <source>Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení výkonnosti bylo zcela přepracováno v aplikaci Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="860">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="861">
-          <source>The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Upravená funkce řízení výkonnosti poskytuje větší kontrolu nad obsahem cílů, měřeními, která se používají ke sledování vývoje, a připojováním podpůrné dokumentace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="862">
-          <source>Goals can be stored as templates and then reused.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Cíle lze ukládat jako šablony a pak znovu použít.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="863">
-          <source>This feature can help you set up additional goals for your employees more quickly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce vám pomůže rychleji nastavit další cíle pro zaměstnance.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="864">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="865">
-          <source>Human capital management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa lidského kapitálu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="866">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="867">
-          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics 365 for Operations 1611.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="868">
-          <source>Dynamics AX 7.0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 7.0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="869">
-          <source>Ability to cancel changes to a vendor invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnost zrušení změn na faktuře dodavatele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="870">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="871">
-          <source>Performance enhancement</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zvýšení výkonnosti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="872">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="873">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="874">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="875">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="876">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="877">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="878">
-          <source>AIF, AxD, and AxBC integrations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integrace rozhraní AIF, AxD a AxBC</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="879">
-          <source>In Application Integration Framework (AIF), data can be exchanged with external systems through business logic that is exposed as services.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V rozhraní AIF (Application Integration Framework) mohou být data vyměňována s externími systémy pomocí obchodní logiky, která je zveřejněna jako služba.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="880">
-          <source>Dynamics AX includes services that are based on documents and .NET Business Connector (AxBC).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX obsahuje služby, které jsou založeny na dokumentech a programu .NET Business Connector (AxBC).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="881">
-          <source>A document is created by using XML.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dokument je vytvářen pomocí kódu XML.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="882">
-          <source>The XML includes header information that is added to create a <bpt id="p1">*</bpt>message<ept id="p1">*</ept> that can be transferred into or out of Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Soubor XML obsahuje informace v záhlaví, jež jsou přidány pro vytvoření <bpt id="p1">*</bpt>zprávy<ept id="p1">*</ept>, kterou lze přenést do a z aplikace Dynamics AX.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="883">
-          <source>Examples of documents include sales orders and purchase orders.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příkladem takovýchto dokumentů mohou být prodejní objednávky nebo nákupní objednávky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="884">
-          <source>However, almost any entity, such as a customer, can be represented by a document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dokumentem však může být reprezentována téměř jakákoliv entita, například odběratel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="885">
-          <source>Services that are based on documents use the <bpt id="p1">**</bpt>Axd <ph id="ph1">\&lt;</ph>Document<ph id="ph2">\&gt;</ph><ept id="p1">**</ept> classes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Služby, které jsou založeny na dokumentech, používají třídy <bpt id="p1">**</bpt>Axd <ph id="ph1">\&lt;</ph>Dokument<ph id="ph2">\&gt;</ph><ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="886">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="887">
-          <source>The architecture of AIF and AxDs could not be scaled to a cloud service.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Architekturu rozhraní AIF a AxDs nelze škálovat do cloudové služby.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="888">
-          <source>There were performance issues around bulk import.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Při hromadném importu docházelo k problémům s výkonem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="889">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="890">
-          <source>This feature is replaced by the Data Import/Export framework, which supports recurring bulk import/export.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce je nahrazena architekturou pro import a export dat, která podporuje opakovaný hromadný import/export.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="891">
-          <source>For AxBC, we recommend that you use the actual tables.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">U rozhraní AxBC doporučujeme používat skutečné tabulky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="892">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="893">
-          <source>AxDs, AxBCs, and AIF</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AxDs, AxBCs a AIF</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="894">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="895">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="896">
-          <source>Billing code rate scripts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skripty sazby účtovacího kódu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="897">
-          <source>Billing scripts were used to calculate billing rates for billing codes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Účtovací skripty se používaly k výpočtu sazeb fakturace pro kódy fakturace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="898">
-          <source>This scripts required custom development in the C Sharp or Visual Basic programming language.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">To skripty vyžadovaly vlastní vývoj v programovacím jazyce C Sharp nebo Visual Basic.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="899">
-          <source>In the current version of Dynamics AX, the <bpt id="p1">**</bpt>billing code rate scripts<ept id="p1">**</ept> are not supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V aktuální verzi aplikace Dynamics AX nejsou <bpt id="p1">**</bpt>kódy skriptu fakturační sazby<ept id="p1">**</ept> podporovány.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="900">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="901">
-          <source>The support for the custom C Sharp or Visual Basic scripts was not added in Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podpora vlastních skriptů v jazyce C Sharp nebo Visual Basic snebyla v Dynamics AX 7.0 přidána.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="902">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="903">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="904">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="905">
-          <source>Public sector, Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Veřejný sektor (pohledávky)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="906">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="907">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="908">
-          <source>BOMs without BOM versions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kusovníky bez verze kusovníku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="909">
-          <source>When the <bpt id="p1">**</bpt>BOM versions<ept id="p1">**</ept> configuration key was disabled, bill of materials (BOM) versions were hidden in all forms, and the system forced a 1:1 relationship between released products and BOMs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokud byl konfigurační klíč <bpt id="p1">**</bpt>Verze kusovníku<ept id="p1">**</ept> zakázán, byly ve všech formulářích skryty verze kusovníku a systém vynutil vztahy 1:1 mezi uvolněnými produkty a kusovníky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="910">
-          <source>In the current version of Dynamics AX, the <bpt id="p1">**</bpt>BOM versions<ept id="p1">**</ept> configuration key can't be disabled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V aktuální verzi aplikace Dynamics AX nelze konfigurační klíč <bpt id="p1">**</bpt>Verze kusovníku<ept id="p1">**</ept> zakázat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="911">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="912">
-          <source>Using a configuration key to control BOM versions doesn't scale in a cloud environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení verzí kusovníku pomocí konfiguračního klíče nelze škálovat v cloudovém prostředí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="913">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="914">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="915">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="916">
-          <source>Product information management, Inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení informací o produktech, Řízení zásob</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="917">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="918">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="919">
-          <source>Brazilian Bordero</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brazilský doklad Bordero</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="920">
-          <source>Specific method of payment for Brazilian companies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Specifická metoda platby pro brazilské společnosti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="921">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="922">
-          <source>Support for the Brazilian Bordero method of payment has been discontinued from Brazilian localization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podpora pro brazilskou metodu platby Bordero již není k dispozici v brazilské lokalizaci</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="923">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="924">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="925">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="926">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="927">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="928">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="929">
-          <source>Brazilian Sintegra statement</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brazilský výpis Sintegra</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="930">
-          <source>Federal tax statement for ICMS tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Federální daňový výkaz ICMS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="931">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="932">
-          <source>This statement is no longer applicable in some Brazilian states.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toto prohlášení se již v některých brazilských státech nepoužívá.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="933">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="934">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="935">
-          <source>Users can use Generic Electronic reporting tool to configure the statement if required under specific situations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uživatelé mohou používat nástroj obecného elektronického vykazování pro konfiguraci výkazu, pokud je v určitých situacích požadován.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="936">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="937">
-          <source>Fiscal books</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fiskální knihy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="938">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="939">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="940">
-          <source>Brazilian SCAN contingency mode for NF-e</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brazilský pohotovostní režim SCAN pro NF e</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="941">
-          <source>(SCAN) contingency environment is used to generate, export, and import the status of a Nota Fiscal eletrônica (NF-e) when the environment of Secretaria da Fazenda (SEFAZ) is not available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohotovostní prostředí (SCAN) slouží k vygenerování, exportování a importování stavu Nota Fiscal eletrônica (NF-e), pokud není k dispozici prostředí Secretaría da Fazenda (SEFAZ).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="942">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="943">
-          <source>This method of contingency is no longer applicable in all Brazilian states</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato záložní metoda už nebude k dispozici v žádném brazilském státě</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="944">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="945">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="946">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="947">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="948">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="949">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="950">
-          <source>Business Analyzer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obchodní analýza</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="951">
-          <source>This mobile application let users review key business metrics.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">S touto mobilní aplikací mohou uživatelé kontrolovat klíčoví obchodní metriky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="952">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="953">
-          <source>This functionality has been replaced by another feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce byla nahrazena jinou funkcí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="954">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="955">
-          <source>The Monitor financial performance content pack for Microsoft Power BI will include key financial metrics that were previously available in Business Analyzer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Balíček obsahu Sledování finanční výkonnosti pro Microsoft Power BI bude zahrnovat klíčové finanční metriky, které byly dříve dostupné v aplikaci Business Analyzer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="956">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="957">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="958">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="959">
-          <source>Deprecated: The use of Business Analyzer has been deprecated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Použití aplikace Business Analyzer je zastaralé.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="960">
-          <source>Business statistics</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Obchodní statistika</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="961">
-          <source>The setup of business statistics inquiries that can help you analyze the performance of the organization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nastavení dotazů na obchodní statistiky, která vám mohou pomoct s analýzou výkonnosti organizace</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="962">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="963">
-          <source>Legacy approach to business intelligence (BI), low customer usage, and a limited feature set</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Starší přístup k obchodnímu zpravodajství (BI), málo používáno odběrateli a omezená sada funkcí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="964">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="965">
-          <source>New BI solutions for the current version of Dynamics AX</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nové řešení Power BI pro aktuální verzi aplikace Dynamics AX</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="966">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="967">
-          <source>Procurement and sourcing, Accounts payable, Sales and marketing, Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zásobování a zdroje, Závazky, Prodej a marketing, Pohledávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="968">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="969">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="970">
-          <source>Change document date function in Invoice approval journal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce změny data dokumentu v modulu Deník schválených faktur</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="971">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="972">
-          <source>Low usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Malé využití</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="973">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="974">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="975">
-          <source>The document date on the posted vendor transaction can be changed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum dokumentu na zaúčtované transakci dodavatele lze změnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="976">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="977">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="978">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="979">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="980">
-          <source>ClieOp03 payment format for the Netherlands</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát platby ClieOp03 pro Nizozemsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="981">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="982">
-          <source>The format is no longer applicable in the Netherlands, because it has been replaced by SEPA functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát se již v Nizozemsku nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="983">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="984">
-          <source>SEPA payments export</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Export plateb SEPA</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="985">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="986">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="987">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="988">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="989">
-          <source>Compliance Center</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Centrum kompatibility</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="990">
-          <source>The Compliance Center was an Enterprise Portal site for managing the documentation requirements for compliance initiatives that are related to the Sarbanes-Oxley law.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Centrum kompatibility byly stránky podnikového portálu pro správu požadavků na dokumentaci pro iniciativy kompatibility související se Sarbanes-Oxleyho zákonem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="991">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="992">
-          <source>Lack of customer usage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nepoužíváno odběrateli.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="993">
-          <source>Microsoft SharePoint includes the same capability that was available in the Compliance Center.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Služba Microsoft SharePoint zahrnuje stejné možnosti, jaké byly k dispozici v centru kompatibility.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="994">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="995">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="996">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="997">
-          <source>Compliance and internal controls</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dodržování předpisů a vnitřní kontroly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="998">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="999">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1000">
-          <source>Connector for Microsoft Dynamics</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Connector pro aplikaci Microsoft Dynamics</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1001">
-          <source>This tool was used to integrate key data from Microsoft Dynamics CRM to Microsoft Dynamics ERP applications.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tento nástroj byl použit k integraci klíčových dat z aplikace Microsoft Dynamics CRM do aplikace Microsoft Dynamics ERP.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1002">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1003">
-          <source>This functionality has been replaced by another feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce byla nahrazena jinou funkcí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1004">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1005">
-          <source>Common data service</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CDS (Common Data Service)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1006">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1007">
-          <source>Connector for Microsoft Dynamics</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Connector pro aplikaci Microsoft Dynamics</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1008">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1009">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1010">
-          <source>Container unit and multi dimension on-hand</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jednotka kontejneru a více dimenzí zásob</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1011">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1012">
-          <source>Duplicate functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Duplicitní funkce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1013">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1014">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1015">
-          <source>Since AX 2012, this functionality has been replaced by the consolidated batch orders feature set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuto funkce byla nahrazena od verze AX 2012 sadou funkcí konsolidované dávkové objednávky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1016">
-          <source>This feature set includes the consolidated on-hand view.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato sada funkcí zahrnuje konsolidované zobrazení zásob na skladě.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1017">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1018">
-          <source>Product information management, Production control, Inventory management, Sales and marketing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení informací o produktech, Řízení výroby, Řízení zásob, Prodej a marketing</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1019">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1020">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1021">
-          <source>Cue group metadata</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metadata skupiny hromádek</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1022">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1023">
-          <source>Cue groups were used to display one or more Cues in the FactBox area.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skupiny hromádek byly použity k zobrazení jedné nebo více hromádek v oblasti okna s fakty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1024">
-          <source>There was limited uptake, and there were also performance concerns, because a record change in a parent form caused one query per Cue in the Cue group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Byl omezený příjem a došlo k také k potížím s výkonem kvůli změně záznamu v nadřazeném formuláři, což způsobilo jeden dotaz na každou hromádku ve skupině hromádek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1025">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1026">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1027">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1028">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1029">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1030">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1031">
-          <source>Cue metadata</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metadata hromádky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1032">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1033">
-          <source>Cue metadata was limited to count or sum information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metadata hromádky byla omezena na informace o počtu nebo součtu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1034">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1035">
-          <source>Tile metadata was introduced to provide more flexibility for modeling.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kvůli flexibilnějším možnostem modelování byla zavedena metadata dlaždice.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1036">
-          <source>For example, you can model current counts, navigation, and key performance indicators (KPIs).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modelova můžete například aktuální počty, navigaci a klíčové indikátory výkonnosti (KPI).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1037">
-          <source>Count tile metadata is the direct replacement of the Cue metadata.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metadata dlaždice počtu jsou přímou náhradou za metadata hromádky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1038">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1039">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1040">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1041">
-          <source>Removed as of Dynamics AX 7.0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1042">
-          <source>Danish check format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát šeku – Dánsko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1043">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1044">
-          <source>Support for the Danish check format layout has been discontinued, and the report has been removed from DK localization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Byla zrušena podpora pro rozvržení dánského formátu šeku a sestava byla odebrána z dánské lokalizace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1045">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1046">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1047">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1048">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1049">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1050">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1051">
-          <source>Data partitions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datové oddíly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1052">
-          <source>Data partitions provide a logical separation of data in the Microsoft Dynamics AX database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datové oddíly poskytují logické oddělení dat v databázi aplikace Microsoft Dynamics AX.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1053">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1054">
-          <source>Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datové oddíly byly zavedeny v aplikaci Microsoft Dynamics AX 2012 R2 a umožňují izolaci dat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1055">
-          <source>In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V běžné situaci má společnost pobočky a data z jedné dceřiné společnosti by neměla být viditelná pro jiné dceřiné společnosti, přestože obě pobočky jsou spravovány ve stejném oddělení IT.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1056">
-          <source>However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nicméně by byly vyžadovány dodatečné skripty a další správní režie v celém programu pro vytvoření nových oddílů, naplnění je daty a zálohování data oddílu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1057">
-          <source>In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V cloudu, kde máte přístup k databázové službě Platforma jako služba (PaaS) (Microsoft Azure SQL Database), je mnohem efektivnější použít databázi pro izolační kontejner, než provádět izolaci v programu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1058">
-          <source>Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple instances of Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bez ohledu na to, zda je rozdělení dat požadované pro dceřiné společnosti, pro více klientů nebo pouze pro škálování, věříme, že situace je možné vyřešit efektivněji s využitím více instancí aplikace Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1059">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1060">
-          <source>Customers using data partitions must use multiple instances of Finance and Operations if database level separation is a critical issue.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odběratelé používající datové oddíly musí použít více instancí aplikace Finance and Operations, pokud je oddělení úrovně databáze kritickým problémem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1061">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1062">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1063">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1064">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1065">
-          <source>Database and file share storage for attachments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úložiště databáze a sdílené složky souborů pro přílohy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1066">
-          <source>Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Povolené úložiště příloh v databázi a sdílených složkách souborů povolené v Microsoft Dynamics AX 2012.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1067">
-          <source>Both of those options are no longer supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ani jedna z těchto možností již není podporována.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1068">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1069">
-          <source>Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úložiště sdílených složek souborů již není podporováno, protože prostředí hostovaná v cloudu nemohou komunikovat s místními sdílenými souborovými složkami.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1070">
-          <source>Database storage has been deprecated in favor of Azure Blob storage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Databáze úložiště je zastaralá a nahradilo ji úložiště Azure Blob.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1071">
-          <source>Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Dynamics 365 for Finance and Operations client forms.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úložiště Azure Blob odpovídá úložišti v databázi, protože dokumenty jsou přístupné pouze pro formuláře klientů Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1072">
-          <source>This provides the added benefit of providing storage that doesn't negatively affect the performance of the database.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">To zajišťuje další výhodu poskytování úložiště, které negativně neovlivňuje výkonnost databáze.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1073">
-          <source>Blob storage is the default storage mechanism for Document Management and works immediately.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Úložiště objektů blob je výchozí mechanismus úložiště pro správu dokumentů a funguje okamžitě.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1074">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1075">
-          <source>Database storage has been deprecated in favor of Azure Blob storage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Databáze úložiště je zastaralá a nahradilo ji úložiště Azure Blob.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1076">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1077">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1078">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1079">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1080">
-          <source>Delimitation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vymezení</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1081">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1082">
-          <source>No use of the functionality was found.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce nebyla shledána potřebnou.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1083">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1084">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1085">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1086">
-          <source>Time and attendance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Čas a docházka</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1087">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1088">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1089">
-          <source>Desktop client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klient pro stolní počítače</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1090">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1091">
-          <source>The Dynamics AX client experience has been redesigned to improve usability across multiple platforms and devices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prostředí klienta aplikace Dynamics AX bylo přepracováno, aby se lépe používalo na různých platformách a v různých zařízeních.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1092">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1093">
-          <source>The new web client is based on the desktop Form metadata and programming model that have been modified to provide a rich web platform.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nový webový klient je založen na metadatech formuláře pracovní plochy a programovacím modelu, které byly změněny tak, aby poskytovaly bohatou webovou platformu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1094">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1095">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1096">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1097">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1098">
-          <source>Direct database connection</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přímé připojení k databázi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1099">
-          <source>In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel DB in similar fashion to Enterprise POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V aplikaci Dynamics AX 2012 R3 se Retail Modern POS připojoval přímo k databázi Channel DB podobným způsobem jako k Enterprise POS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1100">
-          <source>This was in addition to the standard communication method of Retail Modern POS communicating through Retail Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Byla to nástavba ke standardní metodě komunikace Retail Modern POS prostřednictvím Retail Serveru.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1101">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1102">
-          <source>Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přímé připojení k databázi vyžadovalo nižší protokoly zabezpečení a primárně sloužilo k dosahování nejvyšších úrovní výkonnosti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1103">
-          <source>Due to the performance and security enhancements that have occurred in Finance and Operations, this functionality now causes more issues than it solves.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vzhledem k výkonu a vylepšení zabezpečení, ke kterým došlo v aplikaci Finance and Operations tato funkce nyní způsobuje mnohem více problémů, než řeší.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1104">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1105">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1106">
-          <source>Only standard Retail Server communication is now supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V současné době se podporuje pouze standardní komunikace Retail Server.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1107">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1108">
-          <source>Channel DB/Retail Modern POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Databáze kanálů/Retail Modern POS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1109">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1110">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1111">
-          <source>Dutch SWIFT MT940</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nizozemský SWIFT MT940</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1112">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1113">
-          <source>Generic functionality is now used instead of localized functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Namísto lokalizované funkce se nyní používá obecná funkce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1114">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1115">
-          <source>Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1116">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1117">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1118">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1119">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1120">
-          <source>eBilanz (XBRL for Germany)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eBilanz (XBRL pro Německo)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1121">
-          <source>This functionality provided eXtensible Business Reporting Language (XBRL) output that is intended specifically for the German eBilanz taxonomy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce poskytuje výstup v jazyce eXtensible Business Reporting Language (XBRL), který je určený konkrétně pro německou taxonomii eBilanz.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1122">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1123">
-          <source>Lack of customer usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nepoužíváno odběrateli.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1124">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1125">
-          <source>This feature hasn't been replaced by another feature, but multiple specialized XBRL packages that provide rich XBRL functionality are available for the German market.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce nebyla nahrazena jinou funkcí, avšak pro německý trh je k dispozici několik speciálních balíčků XBRL obsahujících mnoho funkcí XBRL.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1126">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1127">
-          <source>Management Reporter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1128">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1129">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1130">
-          <source>Enterprise Portal client</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klient podnikového portálu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1131">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1132">
-          <source>A single client platform has been provided.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Byla poskytnuta jediná platforma klienta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1133">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1134">
-          <source>The new web client is based on the desktop form metadata and programming model that have been modified to provide a rich web platform.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nový webový klient je založen na metadatech formuláře pracovní plochy a programovacím modelu, které byly změněny tak, aby poskytovaly bohatou webovou platformu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1135">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1136">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1137">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1138">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1139">
-          <source>Environmental sustainability</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Udržitelnost životního prostředí</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1140">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1141">
-          <source>Low customer usage and a limited feature set</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Málo používáno odběrateli a omezená sada funkcí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1142">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1143">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1144">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1145">
-          <source>Compliance and internal controls, Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dodržování předpisů a vnitřní kontroly, Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1146">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1147">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1148">
-          <source>Form ActiveX and Managed Host controls</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ovládací prvky formuláře ActiveX a spravovaného hostitele</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1149">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1150">
-          <source>The ActiveX and Managed Host controls are based on the deprecated desktop client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ovládací prvky formuláře ActiveX a spravovaného hostitele jsou založeny na zastaralém klientovi pro stolní počítače.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1151">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1152">
-          <source>The extensible control framework supports building new controls that are based on HTML, CSS, and JavaScript, and is a first-class control in the Microsoft Visual Studio Tooling environment.</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">Rozšířitelná architektura ovládacích prvků podporuje vytváření nových ovládacích prvků založených na HTML, CSS a JavaScriptu a slouží k prvotřídnímu ovládání v prostředí nástroje Microsoft Visual Studio.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1153">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1154">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1155">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1156">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1157">
-          <source>Generate prenotes by using a batch</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generování verifikačních transakcí pomocí dávky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1158">
-          <source>Prenote generation can't be done by using a batch, but it can still be done by a user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verifikační transakce nelze generovat pomocí dávky, ale mohou být generovány uživatelem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1159">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1160">
-          <source>No form exists to persist and display the resulting prenote file when it's generated by using a batch.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Neexistuje žádný formulář, který by po vygenerování pomocí dávky zachovával a zobrazoval výsledný soubor verifikačních transakcí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1161">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1162">
-          <source>Prenotes can still be generated, and the user has control over the location where the file is saved.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verifikační transakce lze i nadále generovat a uživatel může nastavit umístění, kam má být soubor uložen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1163">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1164">
-          <source>Accounts payable, Accounts receivable, Cash and bank management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky, Pohledávky, Řízení zásob, Pokladna a banka</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1165">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1166">
-          <source>Removed as of AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1167">
-          <source>German DTAUS payment export and account statement import (totals and transactions)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Export německé platby DTAUS a import výpisu z účtu (souhrny a transakce)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1168">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1169">
-          <source>The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát se již v Německu nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1170">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1171">
-          <source>Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, tato funkce byla nahrazena exportem plateb SEPA a rozšířenou funkcí odsouhlasení banky pro import výpisů z účtu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1172">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1173">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1174">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1175">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1176">
-          <source>German DTAZV payment format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Německý formát platby DTAZV</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1177">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1178">
-          <source>The format is no longer applicable in Germany, because it has been replaced by SEPA functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát se již v Německu nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1179">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1180">
-          <source>SEPA payments export</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Export plateb SEPA</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1181">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1182">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1183">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1184">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1185">
-          <source>German MT940 import</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Německý import MT940</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1186">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1187">
-          <source>Generic functionality is now used instead of localized functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Namísto lokalizované funkce se nyní používá obecná funkce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1188">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1189">
-          <source>Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1190">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1191">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1192">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1193">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1194">
-          <source>German XML EU Sales list</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Německé souhrnné hlášení (EU) ve formátu XML</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1195">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1196">
-          <source>The XML format for German EU Sales List reporting is no longer supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formát XML pro německé souhrnné hlášení již není podporován.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1197">
-          <source>Only the ELMA5 text file format can be used to submit the EU Sales List report to the German Tax Office.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">K odeslání německého souhrnného hlášení německému daňovému úřadu lze použít pouze formát textového souboru ELMA5.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1198">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1199">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1200">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1201">
-          <source>Tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daň</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1202">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1203">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1204">
-          <source>GL SSRS reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sestavy GL SSRS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1205">
-          <source>Reports that include the following menu items have been removed: <bpt id="p1">**</bpt>Summary trial balance<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Detailed trial balance<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Chart of accounts<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Audit trail<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Balances<ept id="p5">**</ept>, and <bpt id="p6">**</bpt>Balance list<ept id="p6">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Byly odebrány sestavy, které zahrnují následující položky nabídky: <bpt id="p1">**</bpt>Souhrnná předvaha<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Podrobná předvaha<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Účtové osnovy<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Záznam pro audit<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Zůstatky<ept id="p5">**</ept> a <bpt id="p6">**</bpt>Výpis zůstatků<ept id="p6">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1206">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1207">
-          <source>Financial Microsoft SQL Server Reporting Services (SSRS) reports have been replaced by Management Reporter capabilities and default reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finanční sestavy Microsoft SQL Server Reporting Services (SSRS) byly nahrazeny funkcemi nástroje Management Reporter a výchozími sestavami.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1208">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1209">
-          <source>Management Reporter (labeled <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> in the current version of Dynamics AX)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter (v aktuální verzi aplikace Dynamics AX označeno jako <bpt id="p1">**</bpt>Finanční výkaznictví<ept id="p1">**</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1210">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1211">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1212">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1213">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1214">
-          <source>InfoPart and FormPart metadata</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metadata InfoPart a FormPart</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1215">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1216">
-          <source>InfoPart and FormPart metadata enabled the creation of FactBoxes for two different clients.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metadata InfoPart a FormPart povolovala vytváření okna s fakty pro dva různé klienty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1217">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1218">
-          <source>InfoPart metadata, which was a simplified form definition, is converted into a Form by upgrade tooling.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metadata InfoPart, která byla zjednodušenou definicí formuláře, je převedena do formuláře při upgradu nástrojů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1219">
-          <source>FormPart metadata, which referenced a Form, is replaced by a more direct reference that is created by upgrade tooling.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metadata FormPart, která odkazovala na formulář, jsou nahrazena přímějším odkazem, který je vytvářen při upgradu nástrojů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1220">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1221">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1222">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1223">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1224">
-          <source>Main account list page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stránka seznamu hlavních účtů</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1225">
-          <source>A list of accounts for the legal entity and related balance information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seznam účtů pro právnickou osobu a související informace o zůstatku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1226">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1227">
-          <source>Balance information is available on the <bpt id="p1">**</bpt>Trial balance<ept id="p1">**</ept> list page by account and dimension.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Informace o zůstatku jsou k dispozici na stránce seznamu <bpt id="p1">**</bpt>Předvaha<ept id="p1">**</ept> podle účtu a dimenze.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1228">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1229">
-          <source><bpt id="p1">**</bpt>Main accounts<ept id="p1">**</ept> contains the same list of accounts that the <bpt id="p2">**</bpt>Main account<ept id="p2">**</ept> list page contained.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Hlavní účty<ept id="p1">**</ept> obsahuje seznamu účtů, <bpt id="p2">**</bpt>hlavní účet<ept id="p2">**</ept> obsahuje stránku se seznamem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1230">
-          <source>The grid view in <bpt id="p1">**</bpt>Main accounts<ept id="p1">**</ept> also shows an even smaller, grid-like view.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V zobrazení v podobě mřížky se na stránce <bpt id="p1">**</bpt>Hlavní účty<ept id="p1">**</ept> zobrazuje rovněž i menší pohled podobný mřížce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1231">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1232">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1233">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1234">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1235">
-          <source>Malaysia and Singapore bank cash flow report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sestava bankovního cashflowu v Malajsii a Singapuru</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1236">
-          <source>This feature let the user print a cash flow report that shows transactions and details of the cash inflows and outflows for a specific date range for selected bank accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">S touto funkcí mohou uživatelé tisknout sestavu cashflowu, v níž jsou uvedeny transakce a podrobnosti o přírůstcích a úbytcích hotovosti pro určený časový interval pro vybraný bankovní účet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1237">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1238">
-          <source>The same information can be obtained from the Inquiry bank transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stejné informace lze získat z funkce Dotaz na bankovní transakce.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1239">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1240">
-          <source>The Inquiry bank transaction</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dotaz na bankovní transakce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1241">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1242">
-          <source>Cash and bank management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pokladna a banka</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1243">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1244">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1245">
-          <source>Mexican CFD electronic invoice</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mexická elektronická faktura CFD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1246">
-          <source>This feature enabled the generation of Mexican electronic invoices by using the Comprobante Fiscal Digital (CFD) method, where the company signs the invoice by requesting the related authorization from the government.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce povolovala generování mexické elektronické faktury pomocí metody CFD (Comprobante Fiscal Digital), u které společnost podepisuje faktury žádostí o příslušné schválení od vlády.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1247">
-          <source>This feature also provides a monthly report that includes all electronics invoices that were issued in the period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce rovněž poskytuje měsíční sestavu, která obsahuje všechny elektronické faktury, které byly v daném období vydány.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1248">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1249">
-          <source>The method is no longer applicable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metoda již není použitelná.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1250">
-          <source>The generation of electronic invoices by using the CFD method was deprecated by the tax authorities and replaced by the Comprobante Fiscal Digital a través de Internet (CFDI) method, where the signing is delegated to the third-party provider (PAC).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Generování elektronických faktur metodou CFD bylo zrušeno ze strany finančního úřadu a nahrazeno metodou Comprobante Fiscal Digital a través de Internet (CFDI), u které je podepisování delegováno na poskytovatele třetí strany (PAC).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1251">
-          <source>The monthly report has been removed, and an inquiry option lets users inquire about historical transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Měsíční sestava byla odebrána, uživatelé mohou prostřednictvím dotazu získat informace o historických transakcích.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1252">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1253">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1254">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1255">
-          <source>Account receivables, Project</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohledávky, Projekt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1256">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1257">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1258">
-          <source>Mexico realized and unrealized VAT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uplatněná a neuplatněná DPH v Mexiku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1259">
-          <source>Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for unrealized tax.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aplikace Microsoft Dynamics AX 2012 spravovala neuplatněnou daň z přidané hodnoty (DPH) pomocí funkce pro neuplatněnou daň specifické pro Mexiko.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1260">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1261">
-          <source>Duplicate functionality</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Duplicitní funkce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1262">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1263">
-          <source>Yes, this functionality has been replaced by standard conditional sales tax functionality that is provided by Core.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano, tato funkce byla nahrazena standardní funkcí podmíněné DPH, která je k dispozici ve verzi Core.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1264">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1265">
-          <source>Tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daň</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1266">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1267">
-          <source>Deprecated: A removal date has not been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1268">
-          <source>Microsoft Outlook integration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integrace sady Microsoft Outlook</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1269">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1270">
-          <source>This functionality has been replaced by Microsoft Exchange Server integration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce byla nahrazena integrací Microsoft Exchange Server.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1271">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1272">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1273">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1274">
-          <source>Sales and marketing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prodej a marketing</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1275">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1276">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1277">
-          <source>Private blocking of inventory and warehouse management journals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Soukromé blokování deníků řízení zásob a skladu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1278">
-          <source>The inventory and warehouse journals no longer support the ability to mark a journal as private for a selected user.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Deníky skladů a zásob již nepodporují možnost označení deníku jako soukromého pro vybraného uživatele.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1279">
-          <source>Only the process of blocking journals as private for user groups and blocking during editing is supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je podporován pouze proces blokování deníků jako soukromých pro skupiny uživatelů a blokování během úprav.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1280">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1281">
-          <source>No use of the functionality was found.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce nebyla shledána potřebnou.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1282">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1283">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1284">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1285">
-          <source>Inventory management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení zásob</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1286">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1287">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1288">
-          <source>Product builder</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurátor výrobku</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1289">
-          <source>Product builder was used to dynamically configure items from a sales order, purchase order, production order, sales quotation, project quotation, or item requirement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurátor výrobku byl používán k dynamické konfiguraci položek z prodejní objednávky, nákupní objednávky, výrobní zakázky, prodejní nabídky, nabídky projektu nebo požadavku na položku.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1290">
-          <source>Based on a product model that had modeling variables, the user could select values to meet the customer requirements and get a unique product variant that had a BOM and route.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Na základě modelu produktu s proměnnými modelování mohl uživatel volit hodnoty podle potřeb odběratele a získat jedinečnou variantu produktu s vlastním kusovníkem a postupem.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1291">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1292">
-          <source>Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurátor výrobku zveřejňoval kód X ++ koncovým uživatelům a není v aktuální verzi aplikace Dynamics AX podporován.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1293">
-          <source>It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Byl odebrán kvůli zamezení duplicitní údržby na překrývajících se kódech.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1294">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1295">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1296">
-          <source>The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurace založená na omezeních byla uvedena v aplikaci Dynamics AX 2012, kde již byl oznámen odpis konfigurátoru výrobku v budoucích verzích.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1297">
-          <source>The constraint-based configuration technology is selected on the product masters to enable the configuration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Technologie konfigurace založené na omezeních je zvolena na základních produktech k umožnění konfigurace.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1298">
-          <source>To learn more, see <bpt id="p1">[</bpt>Build a product configuration model<ept id="p1">](../../supply-chain/pim/build-product-configuration-model.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Další informace naleznete v tématu <bpt id="p1">[</bpt>Vytvoření modelu konfigurace produktu<ept id="p1">](../../supply-chain/pim/build-product-configuration-model.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1299">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1300">
-          <source>Product information management, Sales and marketing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení informací o produktech, Prodej a marketing</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1301">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1302">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1303">
-          <source>Production Floor app</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aplikace Production Floor</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1304">
-          <source>This is the app for tablet devices running Windows 8.1 RT and Windows 8.1 Pro.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jedná se o aplikaci pro tablety se systémem Windows 8.1 RT a Windows 8.1 Pro.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1305">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1306">
-          <source>With the change to a web-based client, it is possible to deliver similar functionality through the native Dynamics AX 7.0 client.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se změnou webového klienta je možné doručit podobnou funkci prostřednictvím nativního klienta Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1307">
-          <source>The Job Card Device provides a production floor user interface that is optimized for touch and tablet form factors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zařízení úkolového lístku poskytuje aplikaci Production Floor rozhraní, které je optimalizováno pro provedení dotykových zařízení a tabletů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1308">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1309">
-          <source>Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ano.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1310">
-          <source>The Job Card Device, which is a native part of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zařízení úkolového lístku, které je nativní součástí Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1311">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1312">
-          <source>Production control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení výroby</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1313">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1314">
-          <source>Deprecated: A removal date from the Microsoft store has not yet been set for this feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zastaralé: Datum odstranění z obchodu Microsoft nebylo dosud stanoveno pro tuto funkci.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1315">
-          <source>Rename product dimension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Změnit název dimenze produktu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1316">
-          <source>This feature let you change the name of one of the three standard product dimensions (size, color, or style) to a name that better suited your business requirements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Touto funkcí lze měnit název jedné ze tří standardních dimenzí produktu (velikosti, barva nebo styl) tak, aby lépe vyhovoval obchodním požadavkům.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1317">
-          <source>Renaming included all the labels where the product dimension name was used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Přejmenování zahrnovalo všechny popisky, kde by použit název dimenze produktu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1318">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1319">
-          <source>The current version of Dynamics AX doesn't support label changes at run time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktuální verze aplikace Dynamics AX nepodporuje změny popisků v době běhu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1320">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1321">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1322">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1323">
-          <source>Product information management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Řízení informací o produktech</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1324">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1325">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1326">
-          <source>Retail Server connectivity using HTTP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konektivita Retail Server u využívající HTTP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1327">
-          <source>In Dynamics AX 2012 R3, the Retail Server could function using HTTP communication (non-secured).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V aplikaci Dynamics AX 2012 R3 může Retail Server fungovat pomocí komunikace HTTP (nezabezpečené).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1328">
-          <source>This was in addition to the standard communication using HTTPS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Byl to dodatek ke standardní komunikaci pomocí připojení HTTPS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1329">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1330">
-          <source>Due to new security requirements, only secured communication using TLS 1.2 (or above, as available) is now supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Z důvodu nových požadavků na zabezpečení je nyní podporována pouze zabezpečená komunikace pomocí TLS 1.2 (nebo vyšší podle dostupnosti).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1331">
-          <source>The self-service installer will automatically configure the computer for this communication.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Samoobslužný instalační program bude automaticky konfigurovat počítač na tuto komunikaci.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1332">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1333">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1334">
-          <source>Only standard HTTPS communication is now supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V současné době se podporuje pouze standardní komunikace HTTPS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1335">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1336">
-          <source>Retail Server</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Server maloobchodu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1337">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1338">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1339">
-          <source>Role Center pages</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stránky pracovní plochy role</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1340">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1341">
-          <source>Role Center pages were built on the deprecated Enterprise Portal platform, which has been replaced by the new web client platform in the current version of Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stránky pracovní plochy rolí byly vytvořeny na zastaralé platformě podnikového portálu, která byla v aktuální verzi aplikace Dynamics AX nahrazena novou platformu webového klienta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1342">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1343">
-          <source>The new Workspace form pattern provides users with a process-centered design that provides easy access to commonly used tasks within that process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nový vzor formulářů v pracovním prostoru nabízí uživatelům možnost návrhu zaměřeného na procesy, který zajišťuje snadný přístup k často používaným úkolům v rámci tohoto procesu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1344">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1345">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1346">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1347">
-          <source>Removed as of Dynamics AX 7.0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1348">
-          <source>Sales tax jurisdictions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Příslušnosti k dani</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1349">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1350">
-          <source>Low customer usage and a limited feature set</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Málo používáno odběrateli a omezená sada funkcí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1351">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1352">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1353">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1354">
-          <source>US sales tax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DPH v USA</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1355">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1356">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1357">
-          <source>Sites Services</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Služba Sites Services</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1358">
-          <source>Sites Services let you build websites that extend your business processes to the Internet without IT support.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Služba Sites Services umožňuje vytvářet webové stránky, které rozšiřují obchodní procesy na Internet bez IT podpory.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1359">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1360">
-          <source>The Microsoft Azure infrastructure that is used by Dynamics AX has new capabilities that can be used instead (for example, Azure sites).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Infrastruktura Microsoft Azure používaná aplikací Dynamics AX má nové funkce, které lze použít (například weby Azure).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1361">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1362">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Žádný</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1363">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1364">
-          <source>HR recruiting, Case management, Request for quotes, Vendor registration, Collaborative workspaces for opportunities and campaigns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nábor HR, správa případů, požadavek na cenovou nabídku, registrace dodavatele, pracovní prostory pro spolupráci pro příležitosti a kampaně</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1365">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1366">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1367">
-          <source>SSAS demand forecasting strategy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strategie prognózy poptávky SSAS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1368">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1369">
-          <source>The design of the feature cannot be supported in the new cloud architecture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Návrh funkce nemůže být podporován v nové cloudové architektuře.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1370">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1371">
-          <source>Azure Machine Learning demand forecasting strategy</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Strategie prognózy poptávky Azure Machine Learning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1372">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1373">
-          <source>Master planning</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní plánování</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1374">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1375">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1376">
-          <source>Vendor invoice pool excluding posting details</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Podrobnosti evidence faktur dodavatelů bez zaúčtování</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1377">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1378">
-          <source>Low usage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Malé využití.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1379">
-          <source>This functionality has been replaced by the Invoice journal that has workflow functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce byla nahrazena deníkem faktur s funkcí workflowu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1380">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1381">
-          <source>Workflow capabilities of the Invoice journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Možnosti workflowu v modulu Deník faktur.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1382">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1383">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Závazky</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1384">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1385">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1386">
-          <source>Virtual company accounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virtuální účty společnosti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1387">
-          <source>The virtual companies feature is no longer supported in Dynamics AX.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce virtuálních společností není aplikací Dynamics AX již podporována.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1388">
-          <source>The virtual companies feature let users set up tables that could be shared by a set of companies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce virtuálních společností umožňovala uživatelům nastavit tabulky, které mohlo sdílet více společností.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1389">
-          <source>For a description of the feature, see <bpt id="p1">[</bpt>Company accounts and Virtual company accounts<ept id="p1">](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Popis funkce naleznete zde: <bpt id="p1">[</bpt>Účty společnosti a virtuální účty společnosti<ept id="p1">](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1390">
-          <source>The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funkce funguje tak, že seskupuje tabulky do kolekcí, které jsou přiřazeny k virtuálním společnostem, což jsou skupiny skutečně existujících společností.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1391">
-          <source>Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dotazy jsou vytvářeny tak, aby všechny společnosti ve virtuální společnosti měli přístup k datům v tabulkách souvisejících kolekcí tabulek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1392">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1393">
-          <source>- Virtual companies must be set up before data is stored in the tables.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Virtuální společnosti je nutné nastavit před uložením dat do tabulek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1394">
-          <source>Retrofitting virtual companies onto an existing implementation is very difficult.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zpětné začlenění virtuálních společností do existující implementace je velmi obtížné.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1395">
-          <source>- Because there has been so much data normalization in the current version of Dynamics AX, it has become difficult to know what to add to the table collections.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Vzhledem k tomu, že v aktuální verzi aplikace Microsoft Dynamics AX je spousta normalizací dat, je nyní těžké poznat, co přidat do kolekce tabulek.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1396">
-          <source>For example, it's difficult to know which tables to share.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Například je obtížné poznat, které tabulky se mají sdílet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1397">
-          <source>All the tables referenced from tables that are in a virtual company must also added.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Také je nutné přidat všechny tabulky, na které je odkazováno z tabulek, které jsou ve virtuální společnosti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1398">
-          <source>Because of table normalization, even simple master data that is spread across multiple tables must be part of the virtual company.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kvůli normalizaci tabulky musí být i jednoduchá hlavní data, která jsou rozdělená do více tabulek, součástí virtuální společnosti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1399">
-          <source>Any mistake that is made here will cause functional issues.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jakákoli zde provedená chyba způsobí funkční problémy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1400">
-          <source>- When a table is part of a virtual company, it loses information about the origin of the data, and only the virtual company is recorded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Pokud je tabulka součástí virtuální společnosti, ztratí informace o původu dat a je zaznamenána pouze virtuální společnosti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1401">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1402">
-          <source>Global tables can be used to make tables accessible from all companies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Globální tabulky mohou být použity k zpřístupnění tabulek ze všech společností.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1403">
-          <source>Currently, there is no replacement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">V současné době neexistuje žádná náhrada.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1404">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1405">
-          <source>All modules</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Všechny moduly</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1406">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1407">
-          <source>Removed as of Dynamics AX 7.0.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 7.0.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1408">
-          <source>Windows 8 tablet app</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows 8 - aplikace pro tablety</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1409">
-          <source>The Windows 8 tablet app provided functionality for expense entry and approval.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aplikace pro tablety Windows 8 poskytovala funkci pro zadání a schválení výdajů.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1410">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1411">
-          <source>Finance and Operations is compatible with tablets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations je kompatibilní s tablety.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1412">
-          <source>The tablet app is no longer required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aplikace pro tablety již není požadována.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1413">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1414">
-          <source>No.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Č.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1415">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1416">
-          <source>Expense management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Správa výdajů</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1417">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1418">
-          <source>Removed: This functionality is only available for Dynamics AX 2012 R3.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno: Tato funkce je k dispozici pouze pro Dynamics AX 2012 R3.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1419">
-          <source>Workplanner</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Plánovač práce</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1420">
-          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Důvod pro zrušení/odstranění<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1421">
-          <source>Low usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Malé využití</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1422">
-          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nahrazeno jinou funkcí?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1423">
-          <source>No, but the <bpt id="p1">**</bpt>Profile relation<ept id="p1">**</ept> page, which is opened from the <bpt id="p2">**</bpt>Profile groups<ept id="p2">**</ept> page, supports the same business scenario as the deprecated <bpt id="p3">**</bpt>Workplanner<ept id="p3">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne, ale stránka <bpt id="p1">**</bpt>Vztah profilu<ept id="p1">**</ept>, kterou lze otevřít ze stránky <bpt id="p2">**</bpt>Skupiny profilů<ept id="p2">**</ept>, podporuje stejný obchodní scénář jako zastaralá stránka <bpt id="p3">**</bpt>Plánovač práce<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1424">
-          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ovlivněné oblasti produktu<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1425">
-          <source>Time and attendance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Čas a docházka</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1426">
-          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Stav<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1427">
-          <source>The code has not been removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kód nebyl odstraněn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1428">
-          <source>However, the form, JmgWorkPlanner, was not migrated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formulář JmgWorkPlanner však nebyl migrován.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1429">
-          <source>X++ financial statements</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finanční výkazy X++</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1430">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Reason for deprecation/removal<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Důvod pro zrušení/odstranění<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1431">
-          <source>This functionality has been replaced by another feature.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tato funkce byla nahrazena jinou funkcí.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1432">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Replaced by another feature?<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Nahrazeno jinou funkcí?<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1433">
-          <source>Management Reporter (labeled <bpt id="p1">&lt;strong&gt;</bpt>Financial reporting<ept id="p1">&lt;/strong&gt;</ept> in the current version of Dynamics AX)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter (v aktuální verzi aplikace Dynamics AX označeno jako <bpt id="p1">&lt;strong&gt;</bpt>Finanční výkaznictví<ept id="p1">&lt;/strong&gt;</ept>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1434">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Product areas affected<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Ovlivněné oblasti produktu<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1435">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hlavní kniha</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1436">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Status<ept id="p1">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Stav<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="1437">
-          <source>Removed as of Dynamics AX 2012</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Odstraněno od verze Dynamics AX 2012</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Odstraněné nebo zastaralé funkce
+description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
+author: sericks007
+manager: AnnBe
+ms.date: 06/05/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: sericks
+ms.search.scope: Operations
+ms.custom: 21821
+ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620638"
+---
+# <a name="removed-or-deprecated-features"></a><span data-ttu-id="45cc7-103">Odstraněné nebo zastaralé funkce</span><span class="sxs-lookup"><span data-stu-id="45cc7-103">Removed or deprecated features</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="45cc7-104">Toto téma popisuje funkce, které byly odebrány nebo jsou zastaralé pro aplikaci Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-104">This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</span></span>
+
+- <span data-ttu-id="45cc7-105">*Odstraněná* funkce již není k dispozici v produktu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-105">A *removed* feature is no longer available in the product.</span></span>
+- <span data-ttu-id="45cc7-106">*Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.</span><span class="sxs-lookup"><span data-stu-id="45cc7-106">A *deprecated* feature is not in active development and may be removed in a future update.</span></span>
+
+<span data-ttu-id="45cc7-107">Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování.</span><span class="sxs-lookup"><span data-stu-id="45cc7-107">This list is intended to help you consider these removals and deprecations for your own planning.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="45cc7-108">Počínaje vydáním Dynamics 365 for Finance and Operations z července 2017 s aktualizací Platform Update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci.</span><span class="sxs-lookup"><span data-stu-id="45cc7-108">Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature.</span></span> <span data-ttu-id="45cc7-109">Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.</span><span class="sxs-lookup"><span data-stu-id="45cc7-109">All of the previous releases mentioned in this topic supported cloud deployments only.</span></span>
+
+> <span data-ttu-id="45cc7-110">Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).</span><span class="sxs-lookup"><span data-stu-id="45cc7-110">Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).</span></span> <span data-ttu-id="45cc7-111">Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-111">You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.</span></span>
+
+## <a name="dynamics-365-for-finance-and-operations-1004"></a><span data-ttu-id="45cc7-112">Dynamics 365 for Finance and Operations 10.0.4</span><span class="sxs-lookup"><span data-stu-id="45cc7-112">Dynamics 365 for Finance and Operations 10.0.4</span></span> 
+
+### <a name="france-fec-accounting-data-export-in-xml"></a><span data-ttu-id="45cc7-113">Francie: Export účetních dat v FEC ve formátu XML</span><span class="sxs-lookup"><span data-stu-id="45cc7-113">France: FEC Accounting data export in XML</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-114">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-114">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-115">**Francouzský soubor auditu FEC** je nahrazen formátem TXT a je k dispozici pomocí voleb **Hlavní kniha** \> **Periodické úlohy** \> **Export dat**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-115">Replaced by TXT format, **French FEC audit file** is available through **General ledger** \> **Periodic tasks** \> **Data export**.</span></span>
+| <span data-ttu-id="45cc7-116">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-116">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-117">Ano</span><span class="sxs-lookup"><span data-stu-id="45cc7-117">Yes</span></span> |
+| <span data-ttu-id="45cc7-118">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-118">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-119">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="45cc7-119">General ledger</span></span> |
+| <span data-ttu-id="45cc7-120">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-120">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-121">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-121">All</span></span> |
+| <span data-ttu-id="45cc7-122">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-122">**Status**</span></span>                         | <span data-ttu-id="45cc7-123">Zastaralé.</span><span class="sxs-lookup"><span data-stu-id="45cc7-123">Deprecated.</span></span> <span data-ttu-id="45cc7-124">Plánovaná doba pro odstranění funkcionality je červenec 2020.</span><span class="sxs-lookup"><span data-stu-id="45cc7-124">Target timeframe for the functionality to be removed is July 2020.</span></span> |
+
+=======
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a><span data-ttu-id="45cc7-125">Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28</span><span class="sxs-lookup"><span data-stu-id="45cc7-125">Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="45cc7-126">Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28 jsou k dispozici pro cílené uživatele jako součást verze Preview.</span><span class="sxs-lookup"><span data-stu-id="45cc7-126">Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release.</span></span> <span data-ttu-id="45cc7-127">Obsah a funkce se mohou změnit.</span><span class="sxs-lookup"><span data-stu-id="45cc7-127">The content and the functionality are subject to change.</span></span> <span data-ttu-id="45cc7-128">Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).</span><span class="sxs-lookup"><span data-stu-id="45cc7-128">For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).</span></span>
+
+### <a name="legacy-navigation-bar"></a><span data-ttu-id="45cc7-129">Starší verze navigačníh panelu</span><span class="sxs-lookup"><span data-stu-id="45cc7-129">Legacy navigation bar</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-130">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-130">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-131">Zarovnání záhlaví s jinými produkty Dynamics a Office.</span><span class="sxs-lookup"><span data-stu-id="45cc7-131">Header alignment with other Dynamics and Office products.</span></span> <span data-ttu-id="45cc7-132">Další informace naleznete v tématu [Aktualizovaný navigační panel zarovnaný se záhlavím Office](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).</span><span class="sxs-lookup"><span data-stu-id="45cc7-132">For more details, see [Updated navigation bar that aligns with the Office header](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).</span></span>
+| <span data-ttu-id="45cc7-133">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-133">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-134">Počínaje aktualizací Platform Update 24 byl zaveden navigační panel s novým stylem a vyhledáváním.</span><span class="sxs-lookup"><span data-stu-id="45cc7-134">Starting in Platform update 24, a restyled navigation bar that features search was introduced.</span></span> |
+| <span data-ttu-id="45cc7-135">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-135">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-136">Webový klient</span><span class="sxs-lookup"><span data-stu-id="45cc7-136">Web client</span></span> |
+| <span data-ttu-id="45cc7-137">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-137">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-138">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-138">All</span></span> |
+| <span data-ttu-id="45cc7-139">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-139">**Status**</span></span>                         | <span data-ttu-id="45cc7-140">Zastaralé: Od dubna 2020 již starší navigační panel nebude k dispozici.</span><span class="sxs-lookup"><span data-stu-id="45cc7-140">Deprecated: Starting in April 2020, the legacy navigation bar will no longer be available.</span></span> <span data-ttu-id="45cc7-141">Do tohoto okamžiku se mohou zákazníci vrátit ke staršímu navigačnímu panelu prostřednictvím stránky **Možnosti výkonu klienta**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-141">Until that point, customers can revert to the legacy navigation bar through the **Client performance options** page.</span></span> |
+
+
+## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a><span data-ttu-id="45cc7-142">Dynamics 365 for Finance and Operations 10.0.2 s aktualizací Platform Update 26</span><span class="sxs-lookup"><span data-stu-id="45cc7-142">Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="45cc7-143">Dynamics 365 for Finance and Operations 10.0.2 s aktualizací Platform Update 26 jsou k dispozici pro cílené uživatele jako součást verze Preview.</span><span class="sxs-lookup"><span data-stu-id="45cc7-143">Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release.</span></span> <span data-ttu-id="45cc7-144">Obsah a funkce se mohou změnit.</span><span class="sxs-lookup"><span data-stu-id="45cc7-144">The content and the functionality are subject to change.</span></span> <span data-ttu-id="45cc7-145">Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).</span><span class="sxs-lookup"><span data-stu-id="45cc7-145">For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).</span></span>
+
+### <a name="legacy-default-action-behavior"></a><span data-ttu-id="45cc7-146">Starší výchozí chování akce</span><span class="sxs-lookup"><span data-stu-id="45cc7-146">Legacy default action behavior</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-147">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-147">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-148">Starší chování výchozích akcí v mřížkách vede k nečekanému sloupci s výchozím odkazem na akci po změně pořadí sloupců mřížky přes přizpůsobení.</span><span class="sxs-lookup"><span data-stu-id="45cc7-148">The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization.</span></span> <span data-ttu-id="45cc7-149">Tuto akci napravuje nová výchozí akce jedním prstem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-149">The new sticky default action feature corrects this.</span></span> <span data-ttu-id="45cc7-150">Další informace naleznete v tématu [Výchozí akce jedním prstem v mřížce](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action).</span><span class="sxs-lookup"><span data-stu-id="45cc7-150">For more details, see [Sticky default actions in grids](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action).</span></span> |
+| <span data-ttu-id="45cc7-151">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-151">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-152">Od aktualizace Platformy 21 byla zavedena funkce výchozích akcí jedním prstem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-152">Starting in Platform update 21, a feature for "sticky default actions" was introduced.</span></span> <span data-ttu-id="45cc7-153">Tuto funkci lze povolit na stránce **Možnosti výkonu klienta**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-153">This feature can be enabled on the **Client performance options** page.</span></span> |
+| <span data-ttu-id="45cc7-154">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-154">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-155">Mřížky ve webovém klientovi</span><span class="sxs-lookup"><span data-stu-id="45cc7-155">Grids in the web client</span></span> |
+| <span data-ttu-id="45cc7-156">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-156">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-157">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-157">All</span></span> |
+| <span data-ttu-id="45cc7-158">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-158">**Status**</span></span>                         | <span data-ttu-id="45cc7-159">Zastaralé: Od dubna 2020 budou výchozí akce jedním prstem výchozím chováním bez mechanismu výchozího chování.</span><span class="sxs-lookup"><span data-stu-id="45cc7-159">Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior.</span></span> |
+
+### <a name="legacy-is-one-of-filtering-experience"></a><span data-ttu-id="45cc7-160">Zastarání "je jedna z" možností filtrování</span><span class="sxs-lookup"><span data-stu-id="45cc7-160">Legacy "is one of" filtering experience</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-161">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-161">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-162">Možnost "je jedna" filtrování prošla v aktualizaci Platform 22 změnou, přičemž plán je pravděpodobně možnost filtrování "je jedním z".</span><span class="sxs-lookup"><span data-stu-id="45cc7-162">The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience.</span></span> |
+| <span data-ttu-id="45cc7-163">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-163">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-164">Počínaje aktualizací Platform update 22 je vylepšená možnost filtrování "je jedním z" k dispozici na stránce **Možnosti výkonu klienta**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-164">Starting in Platform update 22, an improved "is one of" filtering experience became available on the **Client performance options** page.</span></span> <span data-ttu-id="45cc7-165">Více informací viz [Optimalizovaná možnost filtrování „je jeden z“](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).</span><span class="sxs-lookup"><span data-stu-id="45cc7-165">For more information, see [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).</span></span> |
+| <span data-ttu-id="45cc7-166">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-166">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-167">Webový klient</span><span class="sxs-lookup"><span data-stu-id="45cc7-167">Web client</span></span> |
+| <span data-ttu-id="45cc7-168">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-168">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-169">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-169">All</span></span> |
+| <span data-ttu-id="45cc7-170">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-170">**Status**</span></span>                         | <span data-ttu-id="45cc7-171">Zastaralé: Od dubna 2020 bude možnost "je jedním z" výchozím chováním bez mechanismu výchozího chování.</span><span class="sxs-lookup"><span data-stu-id="45cc7-171">Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior.</span></span> |
+
+### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a><span data-ttu-id="45cc7-172">Parametr umožňující prodejní objednávky s více zdroji financování projektové smlouvy</span><span class="sxs-lookup"><span data-stu-id="45cc7-172">Parameter to enable sales orders with multiple project contract funding sources</span></span>
+<span data-ttu-id="45cc7-173">Podpora pro vytváření prodejních objednávek na základě projektů, kde měla projektová smlouva více zdrojů financování s nastavením **parametrů řízení projektů** **Povolit prodejní objednávky pro projekt v více zdroji financování**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-173">Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **Allow sales orders for project with multiple funding sources**.</span></span> <span data-ttu-id="45cc7-174">Tento parametr není ve výchozím nastavení povolen.</span><span class="sxs-lookup"><span data-stu-id="45cc7-174">By default, this parameter is not enabled.</span></span> 
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-175">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-175">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-176">Funkce bude vždy povolena po odebrání parametru.</span><span class="sxs-lookup"><span data-stu-id="45cc7-176">The functionality will always be enabled after the parameter is removed.</span></span> |
+| <span data-ttu-id="45cc7-177">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-177">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-178">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-178">No.</span></span> <span data-ttu-id="45cc7-179">Funkce pro podporu prodejních objednávek založených na projektu s více zdroji financování bude povolena vždy.</span><span class="sxs-lookup"><span data-stu-id="45cc7-179">The functionality to support project-based sales orders with multiple funding sources will always be enabled.</span></span>   |
+| <span data-ttu-id="45cc7-180">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-180">**Product areas affected**</span></span>         |<span data-ttu-id="45cc7-181">Parametr **Povolit prodejní objednávky pro projekty s více zdroji financování** bude odebrán.</span><span class="sxs-lookup"><span data-stu-id="45cc7-181">The **Allow sales orders for projects with multiple funding sources** parameter will be removed.</span></span> <span data-ttu-id="45cc7-182">Po odebrání parametru budou modifikovány následující metody: metoda **ctrlSalesOrderTable** ve třídě **ProjStatusType**, metoda **validate** pro pole **ProjId** a metoda **run** ve formuláři **SalescreateOrder**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-182">The following methods will be modified when the parameter is removed: **ctrlSalesOrderTable** method in **ProjStatusType** class, **validate** method for **ProjId** field, and **run** method in **SalescreateOrder** form.</span></span> <span data-ttu-id="45cc7-183">Následující metody budou po odebrání parametru zastaralé: metoda **IsSalesOrderAllowedForMultipleFundingSources** v souboru tabulky **ProjTable**, metoda **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** v souboru tabulky **ProjTable**, datové pole **AllowSalesOrdersForMultipleFundingSources** ve formuláři **ProjParameters** a v souborech **ProjParameterEntity**, soukromá metoda **IsAssociatedToMultipleFundingSourcesContract** v souboru tabulky **ProjTable**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-183">The following methods will be deprecated when the parameter is removed: **IsSalesOrderAllowedForMultipleFundingSources** in **ProjTable** table file, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** method in **ProjTable** table file, **AllowSalesOrdersForMultipleFundingSources** data field in **ProjParameters** form and **ProjParameterEntity** files, **IsAssociatedToMultipleFundingSourcesContract** private method in **ProjTable** table file.</span></span> |
+| <span data-ttu-id="45cc7-184">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-184">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-185">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-185">All</span></span>  |
+| <span data-ttu-id="45cc7-186">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-186">**Status**</span></span>                         | <span data-ttu-id="45cc7-187">Odpisování je plánováno pro vlnu vydání v dubnu 2020.</span><span class="sxs-lookup"><span data-stu-id="45cc7-187">Deprecation is planned for the April 2020 release wave.</span></span> |
+
+### <a name="legacy-workflow-reports-for-tracking-and-instance-status"></a><span data-ttu-id="45cc7-188">Zastaralé sestavy workflowu pro sledování stavu instance</span><span class="sxs-lookup"><span data-stu-id="45cc7-188">Legacy workflow reports for tracking and instance status</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-189">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-189">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-190">Sestavy ze starší verze workflowu pro sledování a stav instance jsou odepsané, protože na ně již není odkazováno z navigace.</span><span class="sxs-lookup"><span data-stu-id="45cc7-190">The legacy workflow reports for tracking and instance status are being deprecated because they are no longer referenced from the navigation.</span></span> <span data-ttu-id="45cc7-191">Názvy sestavy jsou WorkflowWorkflowInstanceByStatusReport a WorkflowWorkflowTrackingReport.</span><span class="sxs-lookup"><span data-stu-id="45cc7-191">The report names are WorkflowWorkflowInstanceByStatusReport and WorkflowWorkflowTrackingReport.</span></span> |
+| <span data-ttu-id="45cc7-192">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-192">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-193">Místo toho lze použít formulář Historie workflowu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-193">The workflow history form can be used instead.</span></span> |
+| <span data-ttu-id="45cc7-194">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-194">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-195">Webový klient</span><span class="sxs-lookup"><span data-stu-id="45cc7-195">Web client</span></span> |
+| <span data-ttu-id="45cc7-196">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-196">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-197">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-197">All</span></span> |
+| <span data-ttu-id="45cc7-198">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-198">**Status**</span></span>                         | <span data-ttu-id="45cc7-199">Zastaralé: Plánovaná doba pro odstranění funkcionality je duben 2020.</span><span class="sxs-lookup"><span data-stu-id="45cc7-199">Deprecated: Target timeframe for the functionality to be removed is April 2020.</span></span> |
+
+## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a><span data-ttu-id="45cc7-200">Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25</span><span class="sxs-lookup"><span data-stu-id="45cc7-200">Dynamics 365 for Finance and Operations 10.0.1 with platform update 25</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="45cc7-201">Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25 jsou k dispozici pro cílené uživatele jako součást verze Preview.</span><span class="sxs-lookup"><span data-stu-id="45cc7-201">Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release.</span></span> <span data-ttu-id="45cc7-202">Obsah a funkce se mohou změnit.</span><span class="sxs-lookup"><span data-stu-id="45cc7-202">The content and the functionality are subject to change.</span></span> <span data-ttu-id="45cc7-203">Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).</span><span class="sxs-lookup"><span data-stu-id="45cc7-203">For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).</span></span>
+
+### <a name="deprecated-apis-and-potential-breaking-changes"></a><span data-ttu-id="45cc7-204">Zastaralá rozhraní API a možná přerušení změn</span><span class="sxs-lookup"><span data-stu-id="45cc7-204">Deprecated APIs and potential breaking changes</span></span>
+
+
+#### <a name="deriving-from-internal-classes-is-deprecated"></a><span data-ttu-id="45cc7-205">Odvození z interních tříd je zastaralé</span><span class="sxs-lookup"><span data-stu-id="45cc7-205">Deriving from internal classes is deprecated</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-206">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-206">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-207">Před aktualizací Platform Update 25 bylo možné vytvořit třídu nebo tabulku odvozenou z interní třídy/tabulky, která je definována v jiném balíčku/modulu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-207">Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module.</span></span> <span data-ttu-id="45cc7-208">Nejedná se o bezpečný postup kódování.</span><span class="sxs-lookup"><span data-stu-id="45cc7-208">This is not a safe coding practice.</span></span> <span data-ttu-id="45cc7-209">Od aktualizace Platform update 25 bude kompilátor zobrazovat upozornění.</span><span class="sxs-lookup"><span data-stu-id="45cc7-209">As of Platform update 25, the compiler will display a warning.</span></span> |
+| <span data-ttu-id="45cc7-210">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-210">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-211">Upozornění kompilátoru bude nahrazeno chybou v příští aktualizaci Platform update 26.</span><span class="sxs-lookup"><span data-stu-id="45cc7-211">The compiler warning will be replaced by an error in Platform update 26.</span></span> <span data-ttu-id="45cc7-212">Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Platform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód.</span><span class="sxs-lookup"><span data-stu-id="45cc7-212">This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</span></span> <span data-ttu-id="45cc7-213">Tato změna ovlivní čas nasazení a kompilace.</span><span class="sxs-lookup"><span data-stu-id="45cc7-213">This change only affects development and compile time.</span></span>|
+| <span data-ttu-id="45cc7-214">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-214">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-215">Vývojové nástroje Visual Studio</span><span class="sxs-lookup"><span data-stu-id="45cc7-215">Visual Studio development tools</span></span> |
+| <span data-ttu-id="45cc7-216">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-216">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-217">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-217">All</span></span> |
+| <span data-ttu-id="45cc7-218">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-218">**Status**</span></span>                         | <span data-ttu-id="45cc7-219">Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26.</span><span class="sxs-lookup"><span data-stu-id="45cc7-219">Deprecated: The warning will become a compilation error in Platform update 26.</span></span> |
+
+#### <a name="overriding-internal-methods-is-deprecated"></a><span data-ttu-id="45cc7-220">Přepsání interních metod je zastaralé</span><span class="sxs-lookup"><span data-stu-id="45cc7-220">Overriding internal methods is deprecated</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-221">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-221">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-222">Před aktualizací Platform Update 25 bylo možné přepsat interní metodu v odvozené třídě, která je definována v jiném balíčku/modulu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-222">Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module.</span></span> <span data-ttu-id="45cc7-223">Nejedná se o bezpečný postup kódování.</span><span class="sxs-lookup"><span data-stu-id="45cc7-223">This is not a safe coding practice.</span></span> <span data-ttu-id="45cc7-224">Od aktualizace Platform update 25 bude kompilátor zobrazovat upozornění.</span><span class="sxs-lookup"><span data-stu-id="45cc7-224">As of Platform update 25, the compiler will display a warning.</span></span> |
+| <span data-ttu-id="45cc7-225">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-225">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-226">Toto upozornění kompilátoru bude nahrazeno chybou sestavení v příští aktualizaci Platform update 26.</span><span class="sxs-lookup"><span data-stu-id="45cc7-226">This warning will be replaced by a compile error in Platform update 26.</span></span> <span data-ttu-id="45cc7-227">Tato změna je zpětně kompatibilní za běhu, což znamená, že pokud používáte aktualizaci Platform Update 25 nebo novější, můžete ji nasadit do libovolného prostředí sandbox nebo do produkčního prostředí bez nutnosti upravovat vlastní kód.</span><span class="sxs-lookup"><span data-stu-id="45cc7-227">This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</span></span> <span data-ttu-id="45cc7-228">Tato změna ovlivní čas nasazení a kompilace.</span><span class="sxs-lookup"><span data-stu-id="45cc7-228">This change only affects development and compile time.</span></span> |
+| <span data-ttu-id="45cc7-229">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-229">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-230">Vývojové nástroje Visual Studio</span><span class="sxs-lookup"><span data-stu-id="45cc7-230">Visual Studio development tools</span></span> |
+| <span data-ttu-id="45cc7-231">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-231">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-232">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-232">All</span></span> |
+| <span data-ttu-id="45cc7-233">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-233">**Status**</span></span>                         | <span data-ttu-id="45cc7-234">Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26.</span><span class="sxs-lookup"><span data-stu-id="45cc7-234">Deprecated: The warning will become a compilation error in Platform update 26.</span></span> |
+
+
+## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a><span data-ttu-id="45cc7-235">Dynamics 365 for Finance and Operations 8.1.3 s aktualizací Platform Update 23</span><span class="sxs-lookup"><span data-stu-id="45cc7-235">Dynamics 365 for Finance and Operations 8.1.3 with platform update 23</span></span>
+
+### <a name="sql-server-reporting-services-reportviewer-control"></a><span data-ttu-id="45cc7-236">Kontrola SQL Server Reporting Services ReportViewer</span><span class="sxs-lookup"><span data-stu-id="45cc7-236">SQL Server Reporting Services ReportViewer Control</span></span>
+<span data-ttu-id="45cc7-237">Zákazníci mohou použít akci **Exportovat** poskytovanou vestavěným ovládacím prvkem SQL Server Reporting Services (SSRS) ReportViewe ke stažení dokumentů vyprodukovaných aplikacemi Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-237">Customers can use the **Export** action provided by the embedded SQL Server Reporting Services (SSRS) ReportViewer control to download documents produced by Finance and Operations applications.</span></span> <span data-ttu-id="45cc7-238">Tato prezentace sestavy na bázi HTML nabízí uživatelům náhled dokumentu bez číslování stránek.</span><span class="sxs-lookup"><span data-stu-id="45cc7-238">This HTML-based presentation of the report offers users a non-paginated preview of the document.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-239">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-239">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-240">Povaha náhledu na bázi HTML bez čísel stránek **neposkytuje** věrnost s fyzickými dokumenty produkovanými aplikací Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-240">The non-paginated nature of the HTML-based preview experience does **not** deliver fidelity with the physical documents ultimately produced by Finance and Operations.</span></span> <span data-ttu-id="45cc7-241">Plným začleněním PDF jako standardního formátu pro obchodní dokumenty mohou uživatelé využívat moderní zobrazení prostředí se zvýšením výkonu při vytváření sestav aplikace.</span><span class="sxs-lookup"><span data-stu-id="45cc7-241">By fully embracing PDF as the standard format for business documents, users are able to take advantage of a modern viewing experience with improved performance when producing application reports.</span></span> |
+| <span data-ttu-id="45cc7-242">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-242">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-243">Do budoucna budou dokumenty PDF výchozím formátem pro sestavy vykreslované aplikací Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-243">Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.</span></span>   |
+| <span data-ttu-id="45cc7-244">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-244">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-245">Tato změna **nemá** vliv na scénáře, kdy jsou sestavy rozesílány elektronicky nebo odesílány přímo na tiskárny.</span><span class="sxs-lookup"><span data-stu-id="45cc7-245">This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.</span></span>    |
+| <span data-ttu-id="45cc7-246">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-246">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-247">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-247">All</span></span>  |
+| <span data-ttu-id="45cc7-248">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-248">**Status**</span></span>                         | <span data-ttu-id="45cc7-249">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-249">Deprecated: A removal date has not been set for this feature.</span></span> <span data-ttu-id="45cc7-250">Funkce automatického náhledu sestav aplikací pomocí vestavěného prohlížeče ve formátu PDF je plánována na aktualizaci Platform Update v květnu 2019.</span><span class="sxs-lookup"><span data-stu-id="45cc7-250">The functionality to automatically preview application reports using an embedded PDF viewer is planned for the May 2019 Platform update.</span></span> |
+
+### <a name="client-kpi-controls"></a><span data-ttu-id="45cc7-251">Ovládací prvky klíčových ukazatelů výkonu klienta</span><span class="sxs-lookup"><span data-stu-id="45cc7-251">Client KPI controls</span></span>
+<span data-ttu-id="45cc7-252">Vložené klíčové indikátory výkonnosti (KPI) mohou být vývojářem modelovány v aplikaci Visual Studio a dále upravovány koncovým uživatelem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-252">Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-253">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-253">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-254">Nativní ovládací prvky klienta používané k definování KPI mají nízký vstup od zákazníka a spoléhají na vývojáře, který přidává sledovatelné metriky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-254">The native client controls used to define KPIs have low customer uptake and rely on a developer to add trackable metrics.</span></span> |
+| <span data-ttu-id="45cc7-255">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-255">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-256">Služba PowerBI.com poskytuje nástroje světové třídy pro definování a správu indikátorů KPI na základě dat z externích zdrojů.</span><span class="sxs-lookup"><span data-stu-id="45cc7-256">PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.</span></span>  <span data-ttu-id="45cc7-257">V nadcházející verzi plánujeme umožnit vkládání řešení hostovaných na PowerBI.com v pracovních prostorech aplikací.</span><span class="sxs-lookup"><span data-stu-id="45cc7-257">In an upcoming release, we plan to enable you to embed solutions hosted on PowerBI.com in application workspaces.</span></span>   |
+| <span data-ttu-id="45cc7-258">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-258">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-259">Tato aktualizace zabrání vývojářům vkládání nových ovládacích prvků KPI v návrháři Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="45cc7-259">This update will prevent developers from introducing new KPI controls in Visual Studio designer.</span></span>    |
+| <span data-ttu-id="45cc7-260">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-260">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-261">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-261">All</span></span>  |
+| <span data-ttu-id="45cc7-262">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-262">**Status**</span></span>                         | <span data-ttu-id="45cc7-263">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-263">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="deprecated-apis-and-future-breaking-changes"></a><span data-ttu-id="45cc7-264">Zastaralá rozhraní API a budoucí přerušení změn</span><span class="sxs-lookup"><span data-stu-id="45cc7-264">Deprecated APIs and future breaking changes</span></span>
+
+#### <a name="field-groups-containing-invalid-field-references"></a><span data-ttu-id="45cc7-265">Skupiny polí obsahující neplatné odkazy na pole</span><span class="sxs-lookup"><span data-stu-id="45cc7-265">Field groups containing invalid field references</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-266">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-266">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-267">Definice tabulkových metadat mohou mít skupiny polí obsahující neplatné odkazy na pole.</span><span class="sxs-lookup"><span data-stu-id="45cc7-267">It is possible for table metadata definitions to have field groups containing invalid field references.</span></span> <span data-ttu-id="45cc7-268">Tento problém je v současné době kategorizován jako *varování kompilátoru*, nikoli jako *chyba*, což znamená, že vytvoření a nasazení zaváděcího balíčku může pokračovat bez opravení problému.</span><span class="sxs-lookup"><span data-stu-id="45cc7-268">This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue.</span></span> <span data-ttu-id="45cc7-269">Při nasazení to může způsobit chyby runtime ve finančním výkaznictví a službě SQL Server Reporting Services (SSRS).</span><span class="sxs-lookup"><span data-stu-id="45cc7-269">If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS).</span></span> <span data-ttu-id="45cc7-270">Chcete-li vyřešit tento problém:</span><span class="sxs-lookup"><span data-stu-id="45cc7-270">To fix this issue:</span></span><br><br><span data-ttu-id="45cc7-271">1. Odeberte neplatný odkaz na pole z definice skupiny pole tabulky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-271">1. Remove the invalid field reference from the table field group definition.</span></span><br><br><span data-ttu-id="45cc7-272">2. Proveďte kompilaci znovu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-272">2. Recompile.</span></span><br><br><span data-ttu-id="45cc7-273">3. Ujistěte se, že jsou adresovány veškeré chyby nebo upozornění.</span><span class="sxs-lookup"><span data-stu-id="45cc7-273">3. Ensure any warnings or errors are addressed.</span></span> |
+| <span data-ttu-id="45cc7-274">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-274">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-275">Upozornění bude nahrazeno kompilační chybou v budoucnosti.</span><span class="sxs-lookup"><span data-stu-id="45cc7-275">This warning will be replaced by a compile error in the future.</span></span>  |
+| <span data-ttu-id="45cc7-276">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-276">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-277">Vývojové nástroje Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="45cc7-277">Visual Studio development tools.</span></span> |
+| <span data-ttu-id="45cc7-278">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-278">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-279">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-279">All.</span></span> |
+| <span data-ttu-id="45cc7-280">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-280">**Status**</span></span>                         | <span data-ttu-id="45cc7-281">Zastaralé: Upozornění se v budoucnu stane chybou při kompilaci.</span><span class="sxs-lookup"><span data-stu-id="45cc7-281">Deprecated: The warning will become a compile-time error in the future.</span></span> <span data-ttu-id="45cc7-282">Plánujeme to v aktualizaci Platform Update 30.</span><span class="sxs-lookup"><span data-stu-id="45cc7-282">We're currently targeting Platform update 30.</span></span> |
+
+#### <a name="complete-list"></a><span data-ttu-id="45cc7-283">Úplný seznam</span><span class="sxs-lookup"><span data-stu-id="45cc7-283">Complete list</span></span>
+<span data-ttu-id="45cc7-284">Pro přístup k úplnému seznamu zastaralých rozhraní API nahlédněte do části [Zastarání metod a prvků metadat](deprecation-deletion-apis.md).</span><span class="sxs-lookup"><span data-stu-id="45cc7-284">To access the full list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).</span></span>
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a><span data-ttu-id="45cc7-285">Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20</span><span class="sxs-lookup"><span data-stu-id="45cc7-285">Dynamics 365 for Finance and Operations 8.1 with platform update 20</span></span>
+
+### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a><span data-ttu-id="45cc7-286">Pravidla dávkových převodů pro položky účtu dílčí hlavní knihy</span><span class="sxs-lookup"><span data-stu-id="45cc7-286">Batch transfer rules for subledger journal account entries</span></span>
+<span data-ttu-id="45cc7-287">Režim synchronního převodu je zastaralý v parametrech hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="45cc7-287">The Synchronous transfer mode is being deprecated in the General ledger parameters.</span></span>  <span data-ttu-id="45cc7-288">Tento režim je nahrazen pouze možnostmi Asynchronní a plánovaná dávka, které již existují jako možnosti pro převod.</span><span class="sxs-lookup"><span data-stu-id="45cc7-288">This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer.</span></span> <span data-ttu-id="45cc7-289">Další informace naleznete v blogu [Parametry hlavní knihy - pravidla dávkového přenosu ](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules).</span><span class="sxs-lookup"><span data-stu-id="45cc7-289">For additional information, see the [General Ledger Parameters – Batch transfer rules](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules) blog.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-290">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-290">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-291">Odstraňujeme synchronní možnost kvůli dopadu na výkon systému.</span><span class="sxs-lookup"><span data-stu-id="45cc7-291">We are removing the synchronous option due to performance impact to the system.</span></span> |
+| <span data-ttu-id="45cc7-292">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-292">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-293">Asynchronní a plánovaná dávka jsou možnosti, které mají být použity místo synchronní možnosti.</span><span class="sxs-lookup"><span data-stu-id="45cc7-293">Asynchronous and scheduled batch are options to use in place of Synchronous.</span></span>   |
+| <span data-ttu-id="45cc7-294">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-294">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-295">Hlavní kniha, Závazky, Pohledávky, Zásobování, Výdaje</span><span class="sxs-lookup"><span data-stu-id="45cc7-295">General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense</span></span>    |
+| <span data-ttu-id="45cc7-296">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-296">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-297">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-297">All</span></span>  |
+| <span data-ttu-id="45cc7-298">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-298">**Status**</span></span>                         | <span data-ttu-id="45cc7-299">Zastaralé: Plánovaná doba pro odstranění funkcionality je verze 10.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-299">Deprecated: Target timeframe for the functionality to be removed is the 10.0 version.</span></span>|
+
+### <a name="electronic-reporting-for-russia"></a><span data-ttu-id="45cc7-300">Elektronické výkaznictví pro Rusko</span><span class="sxs-lookup"><span data-stu-id="45cc7-300">Electronic reporting for Russia</span></span>
+<span data-ttu-id="45cc7-301">Funkce pro konfiguraci formátů souborů TXT a XML prohlášení.</span><span class="sxs-lookup"><span data-stu-id="45cc7-301">Feature for configuring .txt and .xml file formats of declarations.</span></span> 
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-302">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-302">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-303">Nahrazeno elektronickým výkaznictvím.</span><span class="sxs-lookup"><span data-stu-id="45cc7-303">Replaced with Electronic reporting.</span></span> |
+| <span data-ttu-id="45cc7-304">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-304">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-305">Ano.</span><span class="sxs-lookup"><span data-stu-id="45cc7-305">Yes.</span></span> |
+| <span data-ttu-id="45cc7-306">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-306">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-307">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="45cc7-307">General Ledger</span></span> |
+| <span data-ttu-id="45cc7-308">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-308">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-309">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-309">All</span></span> |
+| <span data-ttu-id="45cc7-310">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-310">**Status**</span></span>                         | <span data-ttu-id="45cc7-311">Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20.</span><span class="sxs-lookup"><span data-stu-id="45cc7-311">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
+
+### <a name="financial-reports-generator-for-russia"></a><span data-ttu-id="45cc7-312">Generátor finančních sestav pro Rusko</span><span class="sxs-lookup"><span data-stu-id="45cc7-312">Financial reports generator for Russia</span></span>
+<span data-ttu-id="45cc7-313">Nástroj pro nastavení shromažďování dat pro účetnictví a daňové sestavy a export dat do šablon sestavy XLS a DOC.</span><span class="sxs-lookup"><span data-stu-id="45cc7-313">A tool for setting up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</span></span> <span data-ttu-id="45cc7-314">Funkční části: jsou odstraněny export dat do šablon sestavy XLS , dotazy a pevné požadavky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-314">Functional parts: Export data to XLS and DOC report templates, queries, fixed requisites are removed.</span></span> 
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-315">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-315">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-316">Odebrané části jsou nahrazeny elektronickým výkaznictvím.</span><span class="sxs-lookup"><span data-stu-id="45cc7-316">Removed parts are replaced with Electronic reporting.</span></span> |
+| <span data-ttu-id="45cc7-317">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-317">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-318">Ano.</span><span class="sxs-lookup"><span data-stu-id="45cc7-318">Yes.</span></span> <span data-ttu-id="45cc7-319">Uživatelské rozhraní nastavení finančních sestav by mělo být použito pro nastavení pravidel shromažďování dat účty hlavní knihy a daňovými registry.</span><span class="sxs-lookup"><span data-stu-id="45cc7-319">Financial reports setup user interface should be used for setting up data collection rules by GL accounts or tax registers.</span></span> <span data-ttu-id="45cc7-320">Export dat do různých typů souborů, pevné požadavky a pravidla shromažďování dat podobná dotazům musí být nakonfigurovány v elektronickém výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="45cc7-320">Export data to various file types, fixed requisites and query-like data collection rules should be configured in Electronic reporting.</span></span> |
+| <span data-ttu-id="45cc7-321">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-321">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-322">Hlavní kniha.</span><span class="sxs-lookup"><span data-stu-id="45cc7-322">General ledger.</span></span> |
+| <span data-ttu-id="45cc7-323">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-323">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-324">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-324">All</span></span> |
+| <span data-ttu-id="45cc7-325">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-325">**Status**</span></span>                         | <span data-ttu-id="45cc7-326">Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20.</span><span class="sxs-lookup"><span data-stu-id="45cc7-326">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
+
+### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a><span data-ttu-id="45cc7-327">Integrování s externími poskytovateli pro odeslání elektronických sestav prostřednictvím komunikačních kanálů pro Rusko</span><span class="sxs-lookup"><span data-stu-id="45cc7-327">Integration with external providers for sending electronic reporting through communication channels for Russia</span></span>
+<span data-ttu-id="45cc7-328">Funkce exportující generované elektronické soubory deklarací do složky pro další zasílání oficiálním poskytovatelům elektronického výkaznictví, stejně jako import stavu zpět.</span><span class="sxs-lookup"><span data-stu-id="45cc7-328">Feature exporting generated electronic files of declarations to folder for further sending to official providers of electronic reporting as well as importing state back.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-329">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-329">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-330">Nahrazeno konfigurovatelnou funkcí elektronických zpráv.</span><span class="sxs-lookup"><span data-stu-id="45cc7-330">Replaced with electronic messages configurable feature.</span></span> |
+| <span data-ttu-id="45cc7-331">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-331">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-332">Ano.</span><span class="sxs-lookup"><span data-stu-id="45cc7-332">Yes.</span></span>  |
+| <span data-ttu-id="45cc7-333">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-333">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-334">Hlavní kniha, daň</span><span class="sxs-lookup"><span data-stu-id="45cc7-334">General Ledger, Tax</span></span> |
+| <span data-ttu-id="45cc7-335">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-335">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-336">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-336">All</span></span> |
+| <span data-ttu-id="45cc7-337">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-337">**Status**</span></span>                         | <span data-ttu-id="45cc7-338">Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20.</span><span class="sxs-lookup"><span data-stu-id="45cc7-338">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
+
+
+### <a name="profit-tax-register-wizard"></a><span data-ttu-id="45cc7-339">Průvodce registrem daně ze zisku</span><span class="sxs-lookup"><span data-stu-id="45cc7-339">Profit tax register wizard</span></span>
+<span data-ttu-id="45cc7-340">Funkce pro vytvoření šablony pro nové registry daně ze zisku.</span><span class="sxs-lookup"><span data-stu-id="45cc7-340">Feature for creating templates for new profit tax registers.</span></span> <span data-ttu-id="45cc7-341">Tato funkce vytváří objekty X ++ pro nové registry, které jsou pak vytvořeny jako šablony s přidanou odpovídající výpočetní logikou.</span><span class="sxs-lookup"><span data-stu-id="45cc7-341">This feature creates X++ objects for new registers, which are then  created as templates with the appropriate calculation logic added in.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-342">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-342">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-343">Funkce není kompatibilní s modelem rozšiřitelnosti Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-343">Feature is not compatible with the Dynamics 365 for Finance and Operations extensibility model.</span></span> |
+| <span data-ttu-id="45cc7-344">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-344">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-345">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-345">No</span></span> |
+| <span data-ttu-id="45cc7-346">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-346">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-347">Daň</span><span class="sxs-lookup"><span data-stu-id="45cc7-347">Tax</span></span> |
+| <span data-ttu-id="45cc7-348">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-348">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-349">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-349">All</span></span> |
+| <span data-ttu-id="45cc7-350">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-350">**Status**</span></span>                         | <span data-ttu-id="45cc7-351">Odebráno od verze Dynamics 365 for Finance and Operations 8.1 s aktualizací Platform Update 20.</span><span class="sxs-lookup"><span data-stu-id="45cc7-351">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
+
+
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a><span data-ttu-id="45cc7-352">Dynamics 365 for Finance and Operations 8.0 s aktualizací Platform Update 15</span><span class="sxs-lookup"><span data-stu-id="45cc7-352">Dynamics 365 for Finance and Operations 8.0 with platform update 15</span></span>
+<span data-ttu-id="45cc7-353">V této verzi nebyly odebrány ani odepsány žádné funkce.</span><span class="sxs-lookup"><span data-stu-id="45cc7-353">No features have been removed or deprecated with this release.</span></span> <span data-ttu-id="45cc7-354">Aktualizace platformy 15 je kumulativní a obsahuje nové a změněné funkce aktualizace platformy 13, aktualizace platformy 14 a aktualizace platformy 15.</span><span class="sxs-lookup"><span data-stu-id="45cc7-354">Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.</span></span>
+
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a><span data-ttu-id="45cc7-355">Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 s aktualizací Platform Update 12</span><span class="sxs-lookup"><span data-stu-id="45cc7-355">Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12</span></span>
+
+### <a name="personalized-product-recommendations"></a><span data-ttu-id="45cc7-356">Doporučení přizpůsobeného produktu</span><span class="sxs-lookup"><span data-stu-id="45cc7-356">Personalized product recommendations</span></span> 
+<span data-ttu-id="45cc7-357">Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS.</span><span class="sxs-lookup"><span data-stu-id="45cc7-357">Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</span></span> <span data-ttu-id="45cc7-358">Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](../../retail/personalized-product-recommendations.md).</span><span class="sxs-lookup"><span data-stu-id="45cc7-358">For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).</span></span>  
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-359">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-359">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-360">Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod.</span><span class="sxs-lookup"><span data-stu-id="45cc7-360">We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</span></span>  |
+| <span data-ttu-id="45cc7-361">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-361">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-362">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-362">No.</span></span> <span data-ttu-id="45cc7-363">Nicméně po jaru 2018 plánujeme vrátit tuto funkci, abychom využili novou službu doporučení.</span><span class="sxs-lookup"><span data-stu-id="45cc7-363">However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</span></span>   |
+| <span data-ttu-id="45cc7-364">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-364">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-365">Doporučení přizpůsobeného produktu v POS.</span><span class="sxs-lookup"><span data-stu-id="45cc7-365">Personalized product recommendations in POS.</span></span>                                                    |
+| <span data-ttu-id="45cc7-366">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-366">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-367">Všechna</span><span class="sxs-lookup"><span data-stu-id="45cc7-367">All</span></span>                                                                                      |
+| <span data-ttu-id="45cc7-368">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-368">**Status**</span></span>                         |<span data-ttu-id="45cc7-369">Odstraněno od 15. února 2018.</span><span class="sxs-lookup"><span data-stu-id="45cc7-369">Removed as of February 15, 2018.</span></span> <span data-ttu-id="45cc7-370">To má vliv na zákazníky s verzí Dynamics 365 for Operations 1611 a vyšší.</span><span class="sxs-lookup"><span data-stu-id="45cc7-370">This affects customers running Dynamics 365 for Operations 1611 and later.</span></span>  |
+
+### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a><span data-ttu-id="45cc7-371">Rozšíření seznamu funkcí elektronického vykazování</span><span class="sxs-lookup"><span data-stu-id="45cc7-371">Extension of the list of Electronic reporting (ER) functions</span></span>
+<span data-ttu-id="45cc7-372">Možnost zavést vlastní funkce pro použití v tvůrci výrazů ER (další informace naleznete v tématu [Rozšíření seznamu funkcí elektronického výkaznictví](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) již není nadále podporována.</span><span class="sxs-lookup"><span data-stu-id="45cc7-372">The possibility to introduce custom functions to be used in the ER expression builder (for more information, see [Extend the list of Electronic reporting functions](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) is not supported any more.</span></span> <span data-ttu-id="45cc7-373">Z důvodu změn rozhraní API pro elektronické výkaznictví se stalo API volající vestavěné funkce z tvůrce výkazů ER interním a již nelze rozšířit.</span><span class="sxs-lookup"><span data-stu-id="45cc7-373">Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-374">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-374">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-375">Iniciativa uzavření kódu</span><span class="sxs-lookup"><span data-stu-id="45cc7-375">Code sealing initiative</span></span>  |
+| <span data-ttu-id="45cc7-376">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-376">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-377">Žádný.</span><span class="sxs-lookup"><span data-stu-id="45cc7-377">None.</span></span> <span data-ttu-id="45cc7-378">Kdykoliv je potřeba nová vestavěná funkce, musí být adresován nová požadavek na rozšíření týmu architektury elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="45cc7-378">Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.</span></span><br><br><span data-ttu-id="45cc7-379">Jako dočasné řešení pro dobu, kdy je požadovaná funkce vyvíjena týmem elektronického výkaznictví, lze požadovanou logiku naprogramovat jako metodu vlastní třídy aplikace.</span><span class="sxs-lookup"><span data-stu-id="45cc7-379">As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class.</span></span> <span data-ttu-id="45cc7-380">K této metodě lze získat přístup ve výrazu elektronické výkaznictví jako vlastnost přidaného datového zdroje dat elektronické výkaznictví typu **Aplikace\Třída**, který se vztahuje k této vlastní třídě aplikace.</span><span class="sxs-lookup"><span data-stu-id="45cc7-380">This method can be accessed in an ER expression as a property of the added ER data source of the **Application\Class** type that refers to that custom application class.</span></span>  |
+| <span data-ttu-id="45cc7-381">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-381">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-382">Architektura elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="45cc7-382">Electronic reporting framework</span></span>                                                      |
+| <span data-ttu-id="45cc7-383">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-383">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-384">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-384">All</span></span>                                                                                      |
+| <span data-ttu-id="45cc7-385">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-385">**Status**</span></span>                         | <span data-ttu-id="45cc7-386">Odebráno od verze Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.</span><span class="sxs-lookup"><span data-stu-id="45cc7-386">Removed as of Dynamics 365 for Finance and Operations, Enterprise edition 7.3.</span></span>    |
+
+### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a><span data-ttu-id="45cc7-387">Zásoby podle prodlení skupiny zboží a Zásoby podle doby uskladnění za dimenzi zásob</span><span class="sxs-lookup"><span data-stu-id="45cc7-387">Inventory by item group and Inventory by inventory dimension aging reports</span></span>
+
+<span data-ttu-id="45cc7-388">Tyto dvě sestavy již nejsou podporovány v aplikaci Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-388">These two reports are no longer supported in Finance and Operations.</span></span> <span data-ttu-id="45cc7-389">Namísto toho lze použít sestavu **Prodlení zásob** k vylepšení uživatelské zkušenosti.</span><span class="sxs-lookup"><span data-stu-id="45cc7-389">Instead, the **Inventory aging** report can be used to improve the user experience.</span></span>
+
+|   |  |
+|--------------|-----------------------|
+| <span data-ttu-id="45cc7-390">**Důvod pro zrušení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-390">**Reason for deprecation**</span></span>       | <span data-ttu-id="45cc7-391">Duplicitní funkce</span><span class="sxs-lookup"><span data-stu-id="45cc7-391">Duplicate functionality</span></span>  |
+| <span data-ttu-id="45cc7-392">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-392">**Replaced by another feature?**</span></span> | <span data-ttu-id="45cc7-393">Ano.</span><span class="sxs-lookup"><span data-stu-id="45cc7-393">Yes.</span></span> <span data-ttu-id="45cc7-394">Tyto dvě sestavy byly nahrazeny sestavou **Prodlení zásob**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-394">The two reports have been replaced by the **Inventory aging** report.</span></span>     |
+| <span data-ttu-id="45cc7-395">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-395">**Product areas affected**</span></span>       | <span data-ttu-id="45cc7-396">Řízení zásob, řízení nákladů</span><span class="sxs-lookup"><span data-stu-id="45cc7-396">Inventory management, Cost management</span></span>        |
+| <span data-ttu-id="45cc7-397">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-397">**Deployment option**</span></span>        | <span data-ttu-id="45cc7-398">Všechna</span><span class="sxs-lookup"><span data-stu-id="45cc7-398">All</span></span>|
+| <span data-ttu-id="45cc7-399">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-399">**Status**</span></span>                       | <span data-ttu-id="45cc7-400">Zastaralé: Položky nabídky pro tyto dvě sestavy byly odstraněny ve verzi 7.3.</span><span class="sxs-lookup"><span data-stu-id="45cc7-400">Deprecated: The menu items for the two reports have been removed in version 7.3.</span></span> <span data-ttu-id="45cc7-401">Kód pro sestavy však zůstane v produktu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-401">However, the code for the reports remains in the product.</span></span> <span data-ttu-id="45cc7-402">V plánu je kód odstranit v budoucích verzích.</span><span class="sxs-lookup"><span data-stu-id="45cc7-402">The plan is to remove the code in a future release.</span></span> |
+
+### <a name="power-bi-content-packs-available-on-appsource"></a><span data-ttu-id="45cc7-403">Balíčky obsahu Power BI dostupné v AppSource</span><span class="sxs-lookup"><span data-stu-id="45cc7-403">Power BI content packs available on AppSource</span></span>
+<span data-ttu-id="45cc7-404">Balíčky obsahu **Řízení nákladů**, **Finanční výkonnost** a **Výkonnost maloobchodního kanálu**, dostupné na webu [Microsoft AppSource](https://appsource.microsoft.com), jsou zastaralé v důsledku aktualizace produktů v Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="45cc7-404">The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [Microsoft AppSource](https://appsource.microsoft.com) site, are deprecated as a consequence of product updates in Microsoft Power BI.</span></span> <span data-ttu-id="45cc7-405">Formuláře správy systému používané k nasazení těchto balíčků obsahu do PowerBI.com obsahu jsou také zastaralé v aplikaci Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-405">System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-406">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-406">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-407">Aktualizace produktu v Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="45cc7-407">Product updates in Microsoft Power BI.</span></span> |
+| <span data-ttu-id="45cc7-408">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-408">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-409">Balíčky obsahu **Řízení nákladů**, **Finanční výkonnost** a **Výkonnost maloobchodního kanálu**, které jsou k dispozici na webu [AppSource](https://appsource.microsoft.com), jsou nahrazeny analytickými aplikacemi umožňujícími integrace řešení na úrovni databáze.</span><span class="sxs-lookup"><span data-stu-id="45cc7-409">The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level.</span></span> <span data-ttu-id="45cc7-410">Další informace o analytických aplikacích naleznete v tématu [Power BI Embedded v pracovních prostorech](../../dev-itpro/analytics/embed-power-bi-workspaces.md).</span><span class="sxs-lookup"><span data-stu-id="45cc7-410">For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).</span></span>    |
+| <span data-ttu-id="45cc7-411">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-411">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-412">Řízení nákladů, Finance a Maloobchod</span><span class="sxs-lookup"><span data-stu-id="45cc7-412">Cost management, Finance, and Retail</span></span>                                                                                               |
+| <span data-ttu-id="45cc7-413">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-413">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-414">Pouze cloud (Inntegrace s PowerBI.com není podporována v místních nasazeních).</span><span class="sxs-lookup"><span data-stu-id="45cc7-414">Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)</span></span>                                                                                                            |
+| <span data-ttu-id="45cc7-415">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-415">**Status**</span></span>                         | <span data-ttu-id="45cc7-416">Zastaralé: Plánovaná doba pro odstranění funkcionality je druhé čtvrtletí roku 2018.</span><span class="sxs-lookup"><span data-stu-id="45cc7-416">Deprecated: Target timeframe for the functionality removal is Q2 2018.</span></span>    |
+
+### <a name="standard-ui-in-data-management-workspace"></a><span data-ttu-id="45cc7-417">Standardní uživatelské rozhraní v pracovním prostoru správy dat</span><span class="sxs-lookup"><span data-stu-id="45cc7-417">Standard UI in data management workspace</span></span>
+
+<span data-ttu-id="45cc7-418">Standardní uživatelské rozhraní ve správě dat je starší verze rozhraní, což je výchozí uživatelské rozhraní zobrazované uživatelům při návštěvě pracovního prostoru Správa dat.</span><span class="sxs-lookup"><span data-stu-id="45cc7-418">The standard UI in data management is the legacy UI, which is the default UI presented to the users when they visit the data management workspace.</span></span>
+
+|   |  |
+|------------------|-------------------------|
+| <span data-ttu-id="45cc7-419">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-419">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-420">Investujeme do poskytnutí nových uživatelských možností v novém uživatelském rozhraní.</span><span class="sxs-lookup"><span data-stu-id="45cc7-420">We are investing in providing new user experiences in the new UI.</span></span>             |
+| <span data-ttu-id="45cc7-421">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-421">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-422">Nové uživatelské rozhraní s názvem *Rozšířené zobrazení* nahrazuje staré uživatelské rozhraní.</span><span class="sxs-lookup"><span data-stu-id="45cc7-422">The new UI called *Enhanced views* is replacing the old UI.</span></span>            |
+| <span data-ttu-id="45cc7-423">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-423">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-424">Pracovní prostor správy dat</span><span class="sxs-lookup"><span data-stu-id="45cc7-424">Data management workspace</span></span>                                                     |
+| <span data-ttu-id="45cc7-425">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-425">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-426">Všechna</span><span class="sxs-lookup"><span data-stu-id="45cc7-426">All</span></span>                                                                           |
+| <span data-ttu-id="45cc7-427">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-427">**Status**</span></span>                         | <span data-ttu-id="45cc7-428">Zastaralé: Plánovaná doba pro odstranění funkcionality je první čtvrtletí roku 2018.</span><span class="sxs-lookup"><span data-stu-id="45cc7-428">Deprecated: Target timeframe for the functionality to be removed is Q2 2018.</span></span> |
+
+### <a name="excise-sales-tax-service-tax-for-india"></a><span data-ttu-id="45cc7-429">Spotřební daň, DPH, daň ze služeb pro Indii</span><span class="sxs-lookup"><span data-stu-id="45cc7-429">Excise, Sales Tax, Service Tax for India</span></span>
+
+<span data-ttu-id="45cc7-430">Tyto daně byly zahrnuty do indické GST.</span><span class="sxs-lookup"><span data-stu-id="45cc7-430">These taxes have been subsumed into Indian GST.</span></span>
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| <span data-ttu-id="45cc7-431">**Důvod pro zrušení nebo odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-431">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="45cc7-432">Tyto daně byly zahrnuty do indické GST.</span><span class="sxs-lookup"><span data-stu-id="45cc7-432">These taxes have been subsumed into Indian GST.</span></span>                          |
+| <span data-ttu-id="45cc7-433">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-433">**Replaced by another feature?**</span></span>            | <span data-ttu-id="45cc7-434">Indická GST</span><span class="sxs-lookup"><span data-stu-id="45cc7-434">Indian GST</span></span>                                                              |
+| <span data-ttu-id="45cc7-435">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-435">**Product areas affected**</span></span>                  | <span data-ttu-id="45cc7-436">Daň</span><span class="sxs-lookup"><span data-stu-id="45cc7-436">Tax</span></span>                                                                     |
+| <span data-ttu-id="45cc7-437">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-437">**Deployment option**</span></span>                       | <span data-ttu-id="45cc7-438">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-438">All modules</span></span>                                                   |
+| <span data-ttu-id="45cc7-439">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-439">**Status**</span></span>                                  | <span data-ttu-id="45cc7-440">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-440">Deprecated: A removal date has not been set for this feature.</span></span> |    
+
+### <a name="file-validation-utility-fvu-for-india"></a><span data-ttu-id="45cc7-441">Nástroj ověření souboru (FVU) pro Indii</span><span class="sxs-lookup"><span data-stu-id="45cc7-441">File Validation Utility (FVU) for India</span></span>
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| <span data-ttu-id="45cc7-442">**Důvod pro zrušení nebo odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-442">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="45cc7-443">Nepoužíváno odběrateli.</span><span class="sxs-lookup"><span data-stu-id="45cc7-443">Lack of customer usage</span></span>                                                  |
+| <span data-ttu-id="45cc7-444">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-444">**Replaced by another feature?**</span></span>            | <span data-ttu-id="45cc7-445">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-445">No</span></span>                                                                      |
+| <span data-ttu-id="45cc7-446">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-446">**Product areas affected**</span></span>                  | <span data-ttu-id="45cc7-447">Srážková daň pro Indii</span><span class="sxs-lookup"><span data-stu-id="45cc7-447">Indian withholding tax</span></span>                                                  |
+| <span data-ttu-id="45cc7-448">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-448">**Deployment option**</span></span>                       | <span data-ttu-id="45cc7-449">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-449">All modules</span></span>                                                                    |
+| <span data-ttu-id="45cc7-450">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-450">**Status**</span></span>                                  | <span data-ttu-id="45cc7-451">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-451">Deprecated: A removal date has not been set for this feature.</span></span>   |        
+
+### <a name="tdstcs-certificate-for-india"></a><span data-ttu-id="45cc7-452">Certifikát TDS/STK pro Indii</span><span class="sxs-lookup"><span data-stu-id="45cc7-452">TDS/TCS certificate for India</span></span>
+
+<span data-ttu-id="45cc7-453">Uživatelé si mohou stáhnout tento formulář ze státního portálu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-453">Users can download this from the government portal.</span></span>
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| <span data-ttu-id="45cc7-454">**Důvod pro zrušení nebo odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-454">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="45cc7-455">Nepoužíváno odběrateli.</span><span class="sxs-lookup"><span data-stu-id="45cc7-455">Lack of customer usage</span></span>                                                  |
+| <span data-ttu-id="45cc7-456">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-456">**Replaced by another feature?**</span></span>            | <span data-ttu-id="45cc7-457">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-457">No</span></span>                                                                      |
+| <span data-ttu-id="45cc7-458">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-458">**Product areas affected**</span></span>                  | <span data-ttu-id="45cc7-459">Srážková daň pro Indii</span><span class="sxs-lookup"><span data-stu-id="45cc7-459">Indian withholding tax</span></span>                                                  |
+| <span data-ttu-id="45cc7-460">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-460">**Deployment option**</span></span>                       | <span data-ttu-id="45cc7-461">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-461">All modules</span></span>                                                                   |
+| <span data-ttu-id="45cc7-462">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-462">**Status**</span></span>                                  | <span data-ttu-id="45cc7-463">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-463">Deprecated: A removal date has not been set for this feature.</span></span>     |    
+
+### <a name="exportimport-exim-incentive-scheme-for-india"></a><span data-ttu-id="45cc7-464">Export/import (EXIM) motivační schématu pro Indii</span><span class="sxs-lookup"><span data-stu-id="45cc7-464">Export/import (EXIM) incentive scheme for India</span></span>
+
+
+|                                             |                                                                         |
+|---------------------------------------------|-------------------------------------------------------------------------|
+| <span data-ttu-id="45cc7-465">**Důvod pro zrušení nebo odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-465">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="45cc7-466">Nepoužíváno odběrateli.</span><span class="sxs-lookup"><span data-stu-id="45cc7-466">Lack of customer usage</span></span>                                                  |
+| <span data-ttu-id="45cc7-467">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-467">**Replaced by another feature?**</span></span>            | <span data-ttu-id="45cc7-468">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-468">No</span></span>                                                                      |
+| <span data-ttu-id="45cc7-469">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-469">**Product areas affected**</span></span>                  | <span data-ttu-id="45cc7-470">Import a export</span><span class="sxs-lookup"><span data-stu-id="45cc7-470">Import and export</span></span>                                                       |
+| <span data-ttu-id="45cc7-471">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-471">**Deployment option**</span></span>                       | <span data-ttu-id="45cc7-472">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-472">All modules</span></span>                                                                    |
+| <span data-ttu-id="45cc7-473">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-473">**Status**</span></span>                                  | <span data-ttu-id="45cc7-474">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-474">Deprecated: A removal date has not been set for this feature.</span></span>  |    
+
+
+## <a name="dynamics-365-for-retail-72"></a><span data-ttu-id="45cc7-475">Dynamics 365 for Retail 7.2</span><span class="sxs-lookup"><span data-stu-id="45cc7-475">Dynamics 365 for Retail 7.2</span></span>
+
+### <a name="personalized-product-recommendations"></a><span data-ttu-id="45cc7-476">Doporučení přizpůsobeného produktu</span><span class="sxs-lookup"><span data-stu-id="45cc7-476">Personalized product recommendations</span></span> 
+<span data-ttu-id="45cc7-477">Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS.</span><span class="sxs-lookup"><span data-stu-id="45cc7-477">Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</span></span> <span data-ttu-id="45cc7-478">Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](../../retail/personalized-product-recommendations.md).</span><span class="sxs-lookup"><span data-stu-id="45cc7-478">For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).</span></span>  
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-479">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-479">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-480">Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod.</span><span class="sxs-lookup"><span data-stu-id="45cc7-480">We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</span></span>  |
+| <span data-ttu-id="45cc7-481">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-481">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-482">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-482">No.</span></span> <span data-ttu-id="45cc7-483">Nicméně po jaru 2018 plánujeme vrátit tuto funkci, abychom využili novou službu doporučení.</span><span class="sxs-lookup"><span data-stu-id="45cc7-483">However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</span></span>   |
+| <span data-ttu-id="45cc7-484">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-484">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-485">Doporučení přizpůsobeného produktu v POS.</span><span class="sxs-lookup"><span data-stu-id="45cc7-485">Personalized product recommendations in POS.</span></span>                                                    |
+| <span data-ttu-id="45cc7-486">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-486">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-487">Všechna</span><span class="sxs-lookup"><span data-stu-id="45cc7-487">All</span></span>                                                                                      |
+| <span data-ttu-id="45cc7-488">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-488">**Status**</span></span>                         |<span data-ttu-id="45cc7-489">Odstraněno od 15. února 2018.</span><span class="sxs-lookup"><span data-stu-id="45cc7-489">Removed as of February 15, 2018.</span></span> <span data-ttu-id="45cc7-490">To má vliv na zákazníky s verzí Dynamics 365 for Retail 7.2 a vyšší.</span><span class="sxs-lookup"><span data-stu-id="45cc7-490">This affects customers running Dynamics 365 for Retail 7.2  and later.</span></span> |
+
+
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a><span data-ttu-id="45cc7-491">Dynamics 365 for Finance and Operations, Enterprise Edition červenec 2017 s aktualizací Platform Update 8</span><span class="sxs-lookup"><span data-stu-id="45cc7-491">Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8</span></span>
+
+### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a><span data-ttu-id="45cc7-492">Převod měny pro účetnictví a měny vykazování</span><span class="sxs-lookup"><span data-stu-id="45cc7-492">Currency conversion for accounting and reporting currencies</span></span>
+
+<span data-ttu-id="45cc7-493">Převod měny pro účetnictví a měny vykazování byl zaveden se zavedením eura.</span><span class="sxs-lookup"><span data-stu-id="45cc7-493">Currency conversion for accounting and reporting currencies was introduced when the euro was introduced.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-494">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-494">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-495">Omezené použití a přidání funkce kopírování právnické osoby jako náhrady.</span><span class="sxs-lookup"><span data-stu-id="45cc7-495">Limited usage and addition of the Copy legal entity functionality as a replacement.</span></span>      |
+| <span data-ttu-id="45cc7-496">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-496">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-497">Ne, ale byly přidány funkce Kopírovat právnickou osobu a Konfigurace, aby se usnadnilo přesunutí společnosti, která má zásadní požadavky na změnu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-497">No, but the Copy legal entity and Configurations features were added to make it easier to move to a company that has changing core requirements.</span></span> |
+| <span data-ttu-id="45cc7-498">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-498">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-499">Správa financí</span><span class="sxs-lookup"><span data-stu-id="45cc7-499">Financial management</span></span>     |
+| <span data-ttu-id="45cc7-500">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-500">**Status**</span></span>                         | <span data-ttu-id="45cc7-501">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-501">Deprecated: A removal date has not been set for this feature.</span></span>   |
+
+
+### <a name="warehouse-mobile-devices-portal"></a><span data-ttu-id="45cc7-502">Portál skladu pro mobilní zařízení</span><span class="sxs-lookup"><span data-stu-id="45cc7-502">Warehouse mobile devices portal</span></span>
+
+<span data-ttu-id="45cc7-503">Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení.</span><span class="sxs-lookup"><span data-stu-id="45cc7-503">Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</span></span> <span data-ttu-id="45cc7-504">Tato komponenta již není podporována v aplikaci Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-504">This component is no longer supported in Finance and Operations.</span></span> <span data-ttu-id="45cc7-505">Funkce portálu skladu pro mobilní zařízení byla nahrazena nativní aplikací, která vylepšuje uživatelské prostředí.</span><span class="sxs-lookup"><span data-stu-id="45cc7-505">A native app that improves the user experience has replaced the functionality of WMDP.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-506">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-506">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-507">Duplicitní funkce.</span><span class="sxs-lookup"><span data-stu-id="45cc7-507">Duplicate functionality.</span></span>       |
+| <span data-ttu-id="45cc7-508">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-508">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-509">Ano.</span><span class="sxs-lookup"><span data-stu-id="45cc7-509">Yes.</span></span> <span data-ttu-id="45cc7-510">Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing.</span><span class="sxs-lookup"><span data-stu-id="45cc7-510">This feature has been replaced by Finance and Operations - Warehousing.</span></span> <span data-ttu-id="45cc7-511">Další informace o nastavení a předpokladech naleznete v tématu [Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations – Sklady](../../supply-chain/warehousing/install-configure-warehousing-app.md).</span><span class="sxs-lookup"><span data-stu-id="45cc7-511">For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](../../supply-chain/warehousing/install-configure-warehousing-app.md).</span></span> |
+| <span data-ttu-id="45cc7-512">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-512">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-513">Řízení skladu, Správa přepravy</span><span class="sxs-lookup"><span data-stu-id="45cc7-513">Warehouse management, Transportation management</span></span>     |
+| <span data-ttu-id="45cc7-514">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-514">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-515">Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení.</span><span class="sxs-lookup"><span data-stu-id="45cc7-515">Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</span></span>               |
+| <span data-ttu-id="45cc7-516">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-516">**Status**</span></span>                         | <span data-ttu-id="45cc7-517">Zastaralé: Plánovaná doba pro odstranění funkcionality je čtvrté čtvrtletí roku 2019.</span><span class="sxs-lookup"><span data-stu-id="45cc7-517">Deprecated: Target timeframe for the functionality to be removed is Q4 2019.</span></span>   |
+
+### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a><span data-ttu-id="45cc7-518">Pravidlo párování rozšířeného odsouhlasení banky pro ruční párování</span><span class="sxs-lookup"><span data-stu-id="45cc7-518">Advanced bank reconciliation matching rule for manual matching</span></span>
+
+<span data-ttu-id="45cc7-519">Bylo použito pravidlo párování k výběru a označení bankovního dokumentu při manuálním párování dokumentů v listu pro odsouhlasení.</span><span class="sxs-lookup"><span data-stu-id="45cc7-519">A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-520">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-520">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-521">Omezené použití.</span><span class="sxs-lookup"><span data-stu-id="45cc7-521">Limited usage.</span></span>                                                                         |
+| <span data-ttu-id="45cc7-522">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-522">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-523">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-523">No.</span></span> <span data-ttu-id="45cc7-524">Pro nalezení dokumentů k odsouhlasení je třeba použít možnosti filtrování sloupce.</span><span class="sxs-lookup"><span data-stu-id="45cc7-524">Column filtering capabilities should be used to find documents for reconciliation.</span></span> |
+| <span data-ttu-id="45cc7-525">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-525">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-526">Pokladna a banka</span><span class="sxs-lookup"><span data-stu-id="45cc7-526">Cash and bank management</span></span>                                                               |
+| <span data-ttu-id="45cc7-527">**Možnost nasazení**</span><span class="sxs-lookup"><span data-stu-id="45cc7-527">**Deployment option**</span></span>              | <span data-ttu-id="45cc7-528">Vše</span><span class="sxs-lookup"><span data-stu-id="45cc7-528">All</span></span>                                                                                    |
+| <span data-ttu-id="45cc7-529">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-529">**Status**</span></span>                         | <span data-ttu-id="45cc7-530">Odstraněno od července 2017.</span><span class="sxs-lookup"><span data-stu-id="45cc7-530">Removed as of July 2017.</span></span>                                                               |
+
+## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a><span data-ttu-id="45cc7-531">Dynamics 365 for Operations 1611 s aktualizací Platform Update 3</span><span class="sxs-lookup"><span data-stu-id="45cc7-531">Dynamics 365 for Operations 1611 with platform update 3</span></span>
+
+### <a name="aeb-payment-formats-for-spain"></a><span data-ttu-id="45cc7-532">AEB formáty plateb pro Španělsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-532">AEB payment formats for Spain</span></span>
+
+<span data-ttu-id="45cc7-533">Pro odesílání souborů úhrad s platbami odběratelů a dodavatelů do banky se používaly formáty CSB (Consejo Superior Bancario).</span><span class="sxs-lookup"><span data-stu-id="45cc7-533">The Consejo Superior Bancario payment formats were used to send remittance files to the bank for customer payments and vendor payments.</span></span> <span data-ttu-id="45cc7-534">Obsah těchto formátů byl stanoven asociací AEB (Asociación Española de Banca).</span><span class="sxs-lookup"><span data-stu-id="45cc7-534">The content of these formats was determined by the Asociación Española de Banca.</span></span> <span data-ttu-id="45cc7-535">Zahrnuty jsou také Cuaderno 19, 32, 58, 34.</span><span class="sxs-lookup"><span data-stu-id="45cc7-535">It covers Cuaderno 19, 32, 58, 34.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-536">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-536">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-537">Formáty plateb se již nepoužívají.</span><span class="sxs-lookup"><span data-stu-id="45cc7-537">The payment formats are no longer used.</span></span>                                  |
+| <span data-ttu-id="45cc7-538">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-538">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-539">Ano, ISO20022 formáty bezhotovostních převodů a přímých debetních plateb pro Španělsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-539">Yes, ISO20022 Credit transfer and Direct debit payment formats for Spain</span></span> |
+| <span data-ttu-id="45cc7-540">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-540">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-541">Pohledávky, závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-541">Accounts payable, Accounts receivable</span></span>                                    |
+| <span data-ttu-id="45cc7-542">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-542">**Status**</span></span>                         | <span data-ttu-id="45cc7-543">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-543">Deprecated: A removal date has not been set for this feature.</span></span>           |
+
+### <a name="bank-payments-transfer-for-lithuania"></a><span data-ttu-id="45cc7-544">Bankovní převod plateb pro Litvu</span><span class="sxs-lookup"><span data-stu-id="45cc7-544">Bank payments transfer for Lithuania</span></span>
+
+<span data-ttu-id="45cc7-545">Bankovní platební převody byly generované a tisknuté za použití formátu exportu platebního převodu pro Litvu (LT).</span><span class="sxs-lookup"><span data-stu-id="45cc7-545">Bank payment transfers were generated and printed by using the Payment transfer (LT) export format for Lithuania.</span></span> <span data-ttu-id="45cc7-546">Litevský trh začal v roce 2005 používat LITAS, sjednocený elektronický bankovní systém.</span><span class="sxs-lookup"><span data-stu-id="45cc7-546">The Lithuanian market began to use LITAS, the unified electronic banking system, in 2005.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-547">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-547">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-548">Formáty plateb se již nepoužívají.</span><span class="sxs-lookup"><span data-stu-id="45cc7-548">The payment formats are no longer used.</span></span>                        |
+| <span data-ttu-id="45cc7-549">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-549">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-550">Ano, Litevský formát platby peněžního převodu ISO20022.</span><span class="sxs-lookup"><span data-stu-id="45cc7-550">Yes, ISO20022 Credit transfer payment format for Lithuania</span></span>     |
+| <span data-ttu-id="45cc7-551">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-551">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-552">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-552">Accounts payable</span></span>                                               |
+| <span data-ttu-id="45cc7-553">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-553">**Status**</span></span>                         | <span data-ttu-id="45cc7-554">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-554">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="bbs-direkte-remittering-payment-formats-for-norway"></a><span data-ttu-id="45cc7-555">Formáty plateb BBS Direkte Remittering pro Norsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-555">BBS Direkte Remittering payment formats for Norway</span></span>
+
+<span data-ttu-id="45cc7-556">Formáty plateb BBS Direkte Remittering zahrnují export inkasní platby odběratele (inkaso) a import zprávy o vrácení.</span><span class="sxs-lookup"><span data-stu-id="45cc7-556">BBS Direkte Remittering payment formats include customer payment collection export (direct debit) and return message import.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-557">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-557">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-558">Formáty plateb se již nepoužívají.</span><span class="sxs-lookup"><span data-stu-id="45cc7-558">The payment formats are no longer used.</span></span>  |
+| <span data-ttu-id="45cc7-559">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-559">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-560">Formát platby odběratele AvtaleGiro pro Norsko lze využít ke generování zprávy o souhlasu s inkasem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-560">The AvtaleGiro customer payment format for Norway can be used to generate direct debit messages.</span></span> <span data-ttu-id="45cc7-561">Import zprávy o vrácení bude zahrnut do příštích verzí.</span><span class="sxs-lookup"><span data-stu-id="45cc7-561">Return message import will be implemented in future releases.</span></span> |
+| <span data-ttu-id="45cc7-562">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-562">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-563">Pohledávky, závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-563">Accounts payable, Accounts receivable</span></span>   |
+| <span data-ttu-id="45cc7-564">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-564">**Status**</span></span>                         | <span data-ttu-id="45cc7-565">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-565">Deprecated: A removal date has not been set for this feature.</span></span>                                                                                                 |
+
+### <a name="chart-of-accounts-tool-for-spain"></a><span data-ttu-id="45cc7-566">Nástroj účtové osnovy pro Španělsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-566">Chart of Accounts tool for Spain</span></span>
+
+<span data-ttu-id="45cc7-567">Tento nástroj se používá, když účtová osnova ve Španělsku vyžaduje zásadní změny.</span><span class="sxs-lookup"><span data-stu-id="45cc7-567">This tool is used when a chart of accounts in Spain requires major changes.</span></span> <span data-ttu-id="45cc7-568">Uživatelé mohou importovat nové účtové osnovy v aplikaci Microsoft Excel nebo v textovém formátu a mohou také importovat finanční výkazy.</span><span class="sxs-lookup"><span data-stu-id="45cc7-568">Users can import a new chart of accounts in Microsoft Excel or text format, and can also import financial statements.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-569">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-569">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-570">Omezené použití</span><span class="sxs-lookup"><span data-stu-id="45cc7-570">Limited usage</span></span>                                                  |
+| <span data-ttu-id="45cc7-571">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-571">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-572">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-572">No</span></span>                                                             |
+| <span data-ttu-id="45cc7-573">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-573">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-574">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="45cc7-574">General ledger</span></span>                                                 |
+| <span data-ttu-id="45cc7-575">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-575">**Status**</span></span>                         | <span data-ttu-id="45cc7-576">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-576">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="dom80-payment-format-for-belgium"></a><span data-ttu-id="45cc7-577">Dom80 formát platby pro Belgii</span><span class="sxs-lookup"><span data-stu-id="45cc7-577">Dom80 payment format for Belgium</span></span>
+
+<span data-ttu-id="45cc7-578">Starý belgický formát platby pro inkaso platby (přímý debet).</span><span class="sxs-lookup"><span data-stu-id="45cc7-578">Legacy Belgian payment format for payment collection (direct debit).</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-579">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-579">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-580">Formát plateb se již nepoužívá.</span><span class="sxs-lookup"><span data-stu-id="45cc7-580">The payment format is no longer used.</span></span>                          |
+| <span data-ttu-id="45cc7-581">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-581">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-582">Ano, specificky belgický formát inkasní platby ISO 20022.</span><span class="sxs-lookup"><span data-stu-id="45cc7-582">Yes, ISO 20022 Direct debit payment format for Belgium</span></span>         |
+| <span data-ttu-id="45cc7-583">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-583">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-584">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="45cc7-584">Accounts receivable</span></span>                                            |
+| <span data-ttu-id="45cc7-585">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-585">**Status**</span></span>                         | <span data-ttu-id="45cc7-586">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-586">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="dtaezag-payment-formats-for-switzerland"></a><span data-ttu-id="45cc7-587">DTA/EZAG formáty plateb pro Švýcarsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-587">DTA/EZAG payment formats for Switzerland</span></span>
+
+<span data-ttu-id="45cc7-588">Formáty odložených daňových aktiv/EZAG jsou integrovány do systému ESR, jelikož mohou obsahovat referenční číslo.</span><span class="sxs-lookup"><span data-stu-id="45cc7-588">DTA/EZAG formats are integrated into the ESR system, because they can carry on the reference number.</span></span> <span data-ttu-id="45cc7-589">Jelikož referenční číslo není povinné, mohou být pomocí těchto formátů zpracovány všechny platby dodavatele.</span><span class="sxs-lookup"><span data-stu-id="45cc7-589">Because the reference number isn’t mandatory, these formats can be used to process any vendor payments.</span></span> <span data-ttu-id="45cc7-590">Tyto formáty využívají společnosti, které máte bankovní účet ve skladovém místě jiném než "Postfinance".</span><span class="sxs-lookup"><span data-stu-id="45cc7-590">These formats are used by companies that have a bank account in a location other than “Postfinance.”</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-591">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-591">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-592">Formáty plateb se již nepoužívají.</span><span class="sxs-lookup"><span data-stu-id="45cc7-592">The payment formats are no longer used.</span></span>                        |
+| <span data-ttu-id="45cc7-593">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-593">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-594">Ano, švýcarský formát platby peněžního převodu ISO20022</span><span class="sxs-lookup"><span data-stu-id="45cc7-594">Yes, ISO20022 Credit transfer payment format for Switzerland</span></span>   |
+| <span data-ttu-id="45cc7-595">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-595">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-596">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-596">Accounts payable</span></span>                                               |
+| <span data-ttu-id="45cc7-597">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-597">**Status**</span></span>                         | <span data-ttu-id="45cc7-598">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-598">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="edifact-dirdeb-payment-format-for-austria"></a><span data-ttu-id="45cc7-599">Specificky rakouský formát inkasní platby EDIFACT-DIRDEB.</span><span class="sxs-lookup"><span data-stu-id="45cc7-599">EDIFACT-DIRDEB payment format for Austria</span></span>
+
+<span data-ttu-id="45cc7-600">EDIFACT-DIRDEB formát platby pro inkaso platby (přímý debet).</span><span class="sxs-lookup"><span data-stu-id="45cc7-600">EDIFACT-DIRDEB payment format for payment collection (direct debit).</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-601">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-601">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-602">Formát plateb se již nepoužívá.</span><span class="sxs-lookup"><span data-stu-id="45cc7-602">The payment format is no longer used.</span></span>                          |
+| <span data-ttu-id="45cc7-603">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-603">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-604">Ano, specificky rakouský formát inkasní platby ISO 20022.</span><span class="sxs-lookup"><span data-stu-id="45cc7-604">Yes, ISO 20022 Direct debit payment format for Austria</span></span>         |
+| <span data-ttu-id="45cc7-605">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-605">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-606">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="45cc7-606">Accounts receivable</span></span>                                            |
+| <span data-ttu-id="45cc7-607">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-607">**Status**</span></span>                         | <span data-ttu-id="45cc7-608">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-608">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="edivat-for-belgium"></a><span data-ttu-id="45cc7-609">EDIVAT pro Belgii</span><span class="sxs-lookup"><span data-stu-id="45cc7-609">EDIVAT for Belgium</span></span>
+
+<span data-ttu-id="45cc7-610">EDIVAT je starý standard pro elektronické prohlášení prostřednictvím zabezpečení pošty v Belgii.</span><span class="sxs-lookup"><span data-stu-id="45cc7-610">EDIVAT is an obsolete Belgian standard for electronic declaration via secure mail.</span></span> <span data-ttu-id="45cc7-611">Microsoft Dynamics AX 2012 zachovává řešení jen pro čtení pro umožnění přístupu k historickým datům.</span><span class="sxs-lookup"><span data-stu-id="45cc7-611">Microsoft Dynamics AX 2012 retains the read-only solution to enable access to the historical data.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-612">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-612">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-613">Tato funkce se již nepoužívá.</span><span class="sxs-lookup"><span data-stu-id="45cc7-613">The functionality is no longer used.</span></span>                           |
+| <span data-ttu-id="45cc7-614">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-614">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-615">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-615">No</span></span>                                                             |
+| <span data-ttu-id="45cc7-616">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-616">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-617">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="45cc7-617">General ledger</span></span>                                                 |
+| <span data-ttu-id="45cc7-618">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-618">**Status**</span></span>                         | <span data-ttu-id="45cc7-619">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-619">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a><span data-ttu-id="45cc7-620">Importní formát platby eGiro EDIFACT CREMUL pro Norsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-620">eGiro EDIFACT CREMUL payment import format for Norway</span></span>
+
+<span data-ttu-id="45cc7-621">eGiro je založeno na mezinárodních standardech SN EDIFACT CREMUL (Multiple Credit Advice Message), které slouží pro automatické zaúčtování plateb odběratele.</span><span class="sxs-lookup"><span data-stu-id="45cc7-621">eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Message) standard that is used for automatic posting of customer payments.</span></span> <span data-ttu-id="45cc7-622">V aplikaci Microsoft Dynamics AX je implementováno eGiro jako formát importu platby odběratele.</span><span class="sxs-lookup"><span data-stu-id="45cc7-622">In Microsoft Dynamics AX, eGiro is implemented as a customer payment import format.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-623">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-623">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-624">Formát plateb se již nepoužívá.</span><span class="sxs-lookup"><span data-stu-id="45cc7-624">The payment format is no longer used.</span></span>                                                     |
+| <span data-ttu-id="45cc7-625">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-625">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-626">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-626">No.</span></span> <span data-ttu-id="45cc7-627">Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích.</span><span class="sxs-lookup"><span data-stu-id="45cc7-627">The format will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
+| <span data-ttu-id="45cc7-628">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-628">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-629">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="45cc7-629">Accounts receivable</span></span>                                                                       |
+| <span data-ttu-id="45cc7-630">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-630">**Status**</span></span>                         | <span data-ttu-id="45cc7-631">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-631">Deprecated: A removal date has not been set for this feature.</span></span>                            |
+
+### <a name="external-inventory-for-poland"></a><span data-ttu-id="45cc7-632">Externí zásoby v Polsku</span><span class="sxs-lookup"><span data-stu-id="45cc7-632">External inventory for Poland</span></span>
+
+<span data-ttu-id="45cc7-633">Doklad o zboží, který je přijatý od dodavatele pro účely prodeje bez nákupu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-633">Evidence of goods that are taken from a vendor for sales without purchase.</span></span> <span data-ttu-id="45cc7-634">Zboží, které je zpracováno v externím skladu, nemá vliv na standardní zásoby a lze ho prodat a pak zakoupit automaticky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-634">Goods that are handled in external inventory don’t affect standard inventory, and can be sold and then purchased automatically.</span></span> <span data-ttu-id="45cc7-635">Tento proces vytváří skutečné pohyby zásob.</span><span class="sxs-lookup"><span data-stu-id="45cc7-635">This process creates real inventory movements.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-636">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-636">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-637">Nahrazeno jinou funkcí</span><span class="sxs-lookup"><span data-stu-id="45cc7-637">Replaced by another feature</span></span>                                    |
+| <span data-ttu-id="45cc7-638">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-638">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-639">Ano, základní funkce příchozí zásilky</span><span class="sxs-lookup"><span data-stu-id="45cc7-639">Yes, the core Inbound consignment functionality</span></span>                |
+| <span data-ttu-id="45cc7-640">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-640">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-641">Závazky, řízení zásob</span><span class="sxs-lookup"><span data-stu-id="45cc7-641">Accounts payable, Inventory management</span></span>                         |
+| <span data-ttu-id="45cc7-642">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-642">**Status**</span></span>                         | <span data-ttu-id="45cc7-643">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-643">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="financial-reports-generator-for-eastern-europe"></a><span data-ttu-id="45cc7-644">Generátor finančních sestav pro východní Evropu</span><span class="sxs-lookup"><span data-stu-id="45cc7-644">Financial reports generator for Eastern Europe</span></span>
+
+<span data-ttu-id="45cc7-645">Nástroj se používá pro nastavení shromažďování dat pro účetnictví a daňové sestavy a export dat do šablon sestavy XLS a DOC</span><span class="sxs-lookup"><span data-stu-id="45cc7-645">A tool is used to set up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-646">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-646">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-647">Omezené použití</span><span class="sxs-lookup"><span data-stu-id="45cc7-647">Limited usage</span></span>                                                                            |
+| <span data-ttu-id="45cc7-648">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-648">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-649">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-649">No.</span></span> <span data-ttu-id="45cc7-650">Tento nástroj bude nahrazen konfigurací elektronických sestav v budoucích verzích.</span><span class="sxs-lookup"><span data-stu-id="45cc7-650">The tool will be replaced by Electronic reporting configurations in future releases.</span></span> |
+| <span data-ttu-id="45cc7-651">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-651">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-652">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="45cc7-652">General Ledger</span></span>                                                                           |
+| <span data-ttu-id="45cc7-653">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-653">**Status**</span></span>                         | <span data-ttu-id="45cc7-654">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-654">Deprecated: A removal date has not been set for this feature.</span></span>                           |
+
+### <a name="import-of-customer-payment-transactions-for-finland"></a><span data-ttu-id="45cc7-655">Import transakce plateb odběratelů pro Finsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-655">Import of customer payment transactions for Finland</span></span>
+
+<span data-ttu-id="45cc7-656">Můžete vybrat formát importu pro platby ve Finsku, ve kterém se importují platební transakce odběratelů z externího souboru, který zajišťuje banka.</span><span class="sxs-lookup"><span data-stu-id="45cc7-656">You can select an import format for Finnish payments to import customer payment transactions from an external file that the bank provides.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-657">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-657">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-658">Formát plateb se již nepoužívá.</span><span class="sxs-lookup"><span data-stu-id="45cc7-658">The payment format is no longer used.</span></span>                                                     |
+| <span data-ttu-id="45cc7-659">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-659">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-660">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-660">No.</span></span> <span data-ttu-id="45cc7-661">Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích.</span><span class="sxs-lookup"><span data-stu-id="45cc7-661">The format will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
+| <span data-ttu-id="45cc7-662">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-662">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-663">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="45cc7-663">Accounts receivable</span></span>                                                                       |
+| <span data-ttu-id="45cc7-664">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-664">**Status**</span></span>                         | <span data-ttu-id="45cc7-665">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-665">Deprecated: A removal date has not been set for this feature.</span></span>                            |
+
+### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a><span data-ttu-id="45cc7-666">Import platebních transakcí do deníku hlavní knihy pro Finsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-666">Import of payment transactions into a general ledger journal for Finland</span></span>
+
+<span data-ttu-id="45cc7-667">Formát, který je specifický pro Finsko, se používá k importu transakcí účtování do hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="45cc7-667">A format that is specific to Finland is used to import accounting transactions into the general ledger.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-668">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-668">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-669">Formát plateb se již nepoužívá.</span><span class="sxs-lookup"><span data-stu-id="45cc7-669">The payment format is no longer used.</span></span>                                                     |
+| <span data-ttu-id="45cc7-670">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-670">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-671">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-671">No.</span></span> <span data-ttu-id="45cc7-672">Formát bude nahrazen formátem importu výpisu ISO 20022 v příštích verzích.</span><span class="sxs-lookup"><span data-stu-id="45cc7-672">The format will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
+| <span data-ttu-id="45cc7-673">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-673">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-674">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="45cc7-674">Accounts receivable</span></span>                                                                       |
+| <span data-ttu-id="45cc7-675">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-675">**Status**</span></span>                         | <span data-ttu-id="45cc7-676">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-676">Deprecated: A removal date has not been set for this feature.</span></span>                            |
+
+### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a><span data-ttu-id="45cc7-677">Integrace s Isabel synchronizována (CIS) pro Belgii</span><span class="sxs-lookup"><span data-stu-id="45cc7-677">Integration with Isabel synchronized (CIS) for Belgium</span></span>
+
+<span data-ttu-id="45cc7-678">Isabel je platforma pro elektronické bankovnictví v Evropě a je de facto standardní v Belgii.</span><span class="sxs-lookup"><span data-stu-id="45cc7-678">Isabel is the framework for electronic banking in Europe and is a de-facto standard in Belgium.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-679">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-679">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-680">Integrace s klientem Isabel již není nabízena.</span><span class="sxs-lookup"><span data-stu-id="45cc7-680">Integration with Isabel client has been discontinued.</span></span>   |
+| <span data-ttu-id="45cc7-681">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-681">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-682">Ne.</span><span class="sxs-lookup"><span data-stu-id="45cc7-682">No.</span></span> <span data-ttu-id="45cc7-683">Formáty plateb, které se již nepoužívají, jsou nahrazeny ISO20022 formátem platebního převod platby pro Belgii.</span><span class="sxs-lookup"><span data-stu-id="45cc7-683">The payment formats that are no longer used are replaced by ISO20022 Credit transfer payment format for Belgium.</span></span> |
+| <span data-ttu-id="45cc7-684">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-684">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-685">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-685">Accounts payable</span></span>     |
+| <span data-ttu-id="45cc7-686">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-686">**Status**</span></span>                         | <span data-ttu-id="45cc7-687">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-687">Deprecated: A removal date has not been set for this feature.</span></span>    |
+
+### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a><span data-ttu-id="45cc7-688">Změny v účetní osnově a účetních pravidlech pro Španělsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-688">Modifications in the chart of accounts and accounting rules for Spain</span></span>
+
+<span data-ttu-id="45cc7-689">Tato funkce se používá pro změny v účtové osnově a účetních pravidlech ve Španělsku.</span><span class="sxs-lookup"><span data-stu-id="45cc7-689">This feature is used for changes in the chart of accounts and accounting rules in Spain.</span></span> <span data-ttu-id="45cc7-690">Mapuje účty, aby pomohla transformovat původní účtovou osnovu do nové účtové osnovy a porovnává předchozí fiskální rok s novým fiskálním rokem i v případě, že byly zaúčtovány na různá čísla účtů.</span><span class="sxs-lookup"><span data-stu-id="45cc7-690">It maps accounts to help transform the old chart of accounts into the new chart of accounts, and compares the previous fiscal year with the new fiscal year, even if they were posted to different account numbers.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-691">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-691">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-692">Omezené použití</span><span class="sxs-lookup"><span data-stu-id="45cc7-692">Limited usage</span></span>                                                  |
+| <span data-ttu-id="45cc7-693">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-693">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-694">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-694">No</span></span>                                                             |
+| <span data-ttu-id="45cc7-695">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-695">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-696">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="45cc7-696">General ledger</span></span>                                                 |
+| <span data-ttu-id="45cc7-697">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-697">**Status**</span></span>                         | <span data-ttu-id="45cc7-698">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-698">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="pagamento-fornittori-vendor-payment-format"></a><span data-ttu-id="45cc7-699">Formát platby dodavatele Pagamento Fornittori</span><span class="sxs-lookup"><span data-stu-id="45cc7-699">Pagamento Fornittori vendor payment format</span></span>
+
+<span data-ttu-id="45cc7-700">Starý italský formát platby peněžních převodů.</span><span class="sxs-lookup"><span data-stu-id="45cc7-700">Legacy Italian payment format for credit transfers.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-701">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-701">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-702">Formát plateb se již nepoužívá.</span><span class="sxs-lookup"><span data-stu-id="45cc7-702">The payment format is no longer used.</span></span>                          |
+| <span data-ttu-id="45cc7-703">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-703">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-704">Ano, italský formát platby peněžního převodu ISO20022.</span><span class="sxs-lookup"><span data-stu-id="45cc7-704">Yes, ISO20022 Credit transfer payment format for Italy</span></span>         |
+| <span data-ttu-id="45cc7-705">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-705">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-706">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-706">Accounts payable</span></span>                                               |
+| <span data-ttu-id="45cc7-707">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-707">**Status**</span></span>                         | <span data-ttu-id="45cc7-708">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-708">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="payment-export-formats-for-estonia"></a><span data-ttu-id="45cc7-709">Formáty pro export plateb v Estonsku</span><span class="sxs-lookup"><span data-stu-id="45cc7-709">Payment export formats for Estonia</span></span>
+
+<span data-ttu-id="45cc7-710">Formáty Telehansa a Teleservice se používají pro export bankovních plateb.</span><span class="sxs-lookup"><span data-stu-id="45cc7-710">The Telehansa and Teleservice formats are used for bank payment export.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-711">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-711">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-712">Formáty plateb se již nepoužívají.</span><span class="sxs-lookup"><span data-stu-id="45cc7-712">The payment formats are no longer used.</span></span>                        |
+| <span data-ttu-id="45cc7-713">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-713">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-714">Ano, specificky estonský formát platby peněžního převodu ISO20022.</span><span class="sxs-lookup"><span data-stu-id="45cc7-714">Yes, ISO20022 Credit transfer payment format for Estonia</span></span>       |
+| <span data-ttu-id="45cc7-715">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-715">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-716">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-716">Accounts payable</span></span>                                               |
+| <span data-ttu-id="45cc7-717">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-717">**Status**</span></span>                         | <span data-ttu-id="45cc7-718">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-718">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="payment-file-archive-for-norway"></a><span data-ttu-id="45cc7-719">Archiv souborů plateb pro Norsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-719">Payment file archive for Norway</span></span>
+
+<span data-ttu-id="45cc7-720">Když dojde ke generování souborů plateb, archiv souborů automaticky archivuje všechny soubory, které jsou vytvořeny, i soubory, které byly dříve zapsány nebo načteny.</span><span class="sxs-lookup"><span data-stu-id="45cc7-720">When payment files are generated, the file archive automatically archives all files that are created, even files that were previously written or read.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-721">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-721">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-722">Nahrazeno jinou funkcí</span><span class="sxs-lookup"><span data-stu-id="45cc7-722">Replaced by another feature</span></span>                                        |
+| <span data-ttu-id="45cc7-723">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-723">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-724">Ano, archivované úlohy elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="45cc7-724">Yes, Electronic reporting archived jobs</span></span>                            |
+| <span data-ttu-id="45cc7-725">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-725">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-726">Závazky, pohledávky, správa organizace</span><span class="sxs-lookup"><span data-stu-id="45cc7-726">Accounts payable, Accounts receivable, Organization administration</span></span> |
+| <span data-ttu-id="45cc7-727">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-727">**Status**</span></span>                         | <span data-ttu-id="45cc7-728">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-728">Deprecated: A removal date has not been set for this feature.</span></span>     |
+
+### <a name="payment-import-formats-for-estonia"></a><span data-ttu-id="45cc7-729">Formáty pro import plateb v Estonsku</span><span class="sxs-lookup"><span data-stu-id="45cc7-729">Payment import formats for Estonia</span></span>
+
+<span data-ttu-id="45cc7-730">Formáty Telehansa a TeleTeenus se používají pro import bankovních plateb.</span><span class="sxs-lookup"><span data-stu-id="45cc7-730">The Telehansa and TeleTeenus formats are used for bank payment import.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-731">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-731">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-732">Formáty plateb se již nepoužívají.</span><span class="sxs-lookup"><span data-stu-id="45cc7-732">The payment formats are no longer used.</span></span>                                                    |
+| <span data-ttu-id="45cc7-733">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-733">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-734">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-734">No.</span></span> <span data-ttu-id="45cc7-735">Formáty budou nahrazeny formátem importu výpisu ISO 20022 v příštích verzích.</span><span class="sxs-lookup"><span data-stu-id="45cc7-735">The formats will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
+| <span data-ttu-id="45cc7-736">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-736">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-737">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="45cc7-737">Accounts receivable</span></span>                                                                        |
+| <span data-ttu-id="45cc7-738">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-738">**Status**</span></span>                         | <span data-ttu-id="45cc7-739">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-739">Deprecated: A removal date has not been set for this feature.</span></span>                             |
+
+### <a name="payroll-information-in-human-resources"></a><span data-ttu-id="45cc7-740">Mzdové informace v modulu Lidské zdroje</span><span class="sxs-lookup"><span data-stu-id="45cc7-740">Payroll information in Human Resources</span></span>
+
+<span data-ttu-id="45cc7-741">Mzdové informace lidských zdrojů</span><span class="sxs-lookup"><span data-stu-id="45cc7-741">Human Resources Payroll information</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-742">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-742">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-743">Tato funkce byla nahrazena základními stránkami Mzdy a Lidské zdroje.</span><span class="sxs-lookup"><span data-stu-id="45cc7-743">This functionality has been replaced by core Payroll and Human Resources pages.</span></span>  |
+| <span data-ttu-id="45cc7-744">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-744">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-745">**Výhody**, **Příjmy** a další související stránky, které byly dříve v modulu Mzdy v USA, byly překonfigurovány a jsou nyní součásti základní konfigurace modulu Lidské zdroje pro podporu zpracování externích mezd.</span><span class="sxs-lookup"><span data-stu-id="45cc7-745">**Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing.</span></span> <span data-ttu-id="45cc7-746">K této funkci se dostanete pomocí konfiguračního klíče **Lidské zdroje 1** \> **Mzdy**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-746">This functionality is accessed by using the **Human Resources 1** \> **Payroll** configuration key.</span></span> |
+| <span data-ttu-id="45cc7-747">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-747">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-748">Lidské zdroje, Mzdy</span><span class="sxs-lookup"><span data-stu-id="45cc7-748">Human Resources, Payroll</span></span>   |
+| <span data-ttu-id="45cc7-749">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-749">**Status**</span></span>                         | <span data-ttu-id="45cc7-750">Odstraněno od verze Dynamics 365 for Operations 1611.</span><span class="sxs-lookup"><span data-stu-id="45cc7-750">Removed as of Dynamics 365 for Operations version 1611.</span></span>    |
+
+### <a name="performance-management-goal-workflow"></a><span data-ttu-id="45cc7-751">Pracovní postup cíle řízení výkonnosti</span><span class="sxs-lookup"><span data-stu-id="45cc7-751">Performance management goal workflow</span></span>
+
+<span data-ttu-id="45cc7-752">Řízení výkonnosti zahrnuje správu cílů a integraci s hodnocením výkonu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-752">Performance management includes goal management and integration with performance reviews.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-753">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-753">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-754">Řízení výkonnosti bylo změněno a počet stránek cílů se snížil, aby došlo ke zjednodušení procesu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-754">Performance management was redesigned, and the number of goal pages was reduced to simplify the process.</span></span>                 |
+| <span data-ttu-id="45cc7-755">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-755">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-756">Ne.</span><span class="sxs-lookup"><span data-stu-id="45cc7-756">No.</span></span> <span data-ttu-id="45cc7-757">Cíle jsou viditelné pro vedoucí pracovníky pomocí portálu samoobslužných stránek správce a lze je změnit a zobrazit manažerem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-757">Goals are visible to managers through the Manager Self Service portal, and can be changed and viewed by the manager.</span></span> |
+| <span data-ttu-id="45cc7-758">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-758">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-759">Správa lidského kapitálu</span><span class="sxs-lookup"><span data-stu-id="45cc7-759">Human capital management</span></span>       |
+| <span data-ttu-id="45cc7-760">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-760">**Status**</span></span>                         | <span data-ttu-id="45cc7-761">Odstraněno od verze Dynamics 365 for Operations 1611.</span><span class="sxs-lookup"><span data-stu-id="45cc7-761">Removed as of Dynamics 365 for Operations version 1611.</span></span>    |
+
+### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a><span data-ttu-id="45cc7-762">Formáty platby Postgirot a Postgirot Utland pro Švédsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-762">Postgirot and Postgirot Utland payment formats for Sweden</span></span>
+
+<span data-ttu-id="45cc7-763">Formáty platby Postgirot a Postgirot Utland pro Švédsko.</span><span class="sxs-lookup"><span data-stu-id="45cc7-763">Postgirot and Postgirot Utland payment formats for Sweden.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-764">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-764">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-765">Formáty plateb se již nepoužívají.</span><span class="sxs-lookup"><span data-stu-id="45cc7-765">The payment formats are no longer used.</span></span>                        |
+| <span data-ttu-id="45cc7-766">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-766">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-767">Ano, specificky švédský formát platby peněžního převodu ISO20022.</span><span class="sxs-lookup"><span data-stu-id="45cc7-767">Yes, ISO20022 Credit transfer payment format for Sweden</span></span>        |
+| <span data-ttu-id="45cc7-768">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-768">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-769">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-769">Accounts payable</span></span>                                               |
+| <span data-ttu-id="45cc7-770">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-770">**Status**</span></span>                         | <span data-ttu-id="45cc7-771">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-771">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="radio-frequency-identifier"></a><span data-ttu-id="45cc7-772">Radiofrekvenční identifikátor</span><span class="sxs-lookup"><span data-stu-id="45cc7-772">Radio frequency identifier</span></span>
+
+<span data-ttu-id="45cc7-773">Radiofrekvenční identifikace (RFID) představuje technologii shromažďování dat, která využívá elektronických značek k uložení identifikačních dat a nevyžaduje žádné zařízení ke čtení identifikačních dat, které by muselo být v přímé viditelnosti k označenému předmětu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-773">Radio Frequency Identification (RFID) is a data-collection technology that uses electronic tags to store identification data and a no-line-of-sight requirement reader to capture the identification data.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-774">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-774">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-775">Málo používáno odběrateli a omezená sada funkcí.</span><span class="sxs-lookup"><span data-stu-id="45cc7-775">Low customer usage and a limited feature set.</span></span>   |
+| <span data-ttu-id="45cc7-776">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-776">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-777">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-777">No</span></span>                                              |
+| <span data-ttu-id="45cc7-778">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-778">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-779">Řízení zásob</span><span class="sxs-lookup"><span data-stu-id="45cc7-779">Inventory management</span></span>                            |
+| <span data-ttu-id="45cc7-780">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-780">**Status**</span></span>                         | <span data-ttu-id="45cc7-781">Odstraněno od verze Dynamics 365 for Operations 1611.</span><span class="sxs-lookup"><span data-stu-id="45cc7-781">Removed as of Dynamics 365 for Operations 1611.</span></span> |
+
+### <a name="report-about-state-invoices-numbering-for-latvia"></a><span data-ttu-id="45cc7-782">Zpráva o číslování státních faktur Lotyšska</span><span class="sxs-lookup"><span data-stu-id="45cc7-782">Report about state invoices numbering for Latvia</span></span>
+
+<span data-ttu-id="45cc7-783">Lotyšská legislativa poskytuje konkrétní pravidla týkající se číslování prodejních faktur.</span><span class="sxs-lookup"><span data-stu-id="45cc7-783">Latvian legislation provides specific rules about the numbering of sales invoices.</span></span> <span data-ttu-id="45cc7-784">Funkce umožňuje přiřadit specifická čísla do prodejních faktur na základě uživatele nebo skupiny uživatelů.</span><span class="sxs-lookup"><span data-stu-id="45cc7-784">The functionality lets you assign specific numbers to sales invoices, based on the user or user group.</span></span> <span data-ttu-id="45cc7-785">Pak lze vygenerovat sestavu nebo soubor XML.</span><span class="sxs-lookup"><span data-stu-id="45cc7-785">You can then generate a report or an XML file.</span></span> <span data-ttu-id="45cc7-786">Lze také vytisknout sestavy s informacemi o použitých číslech faktur.</span><span class="sxs-lookup"><span data-stu-id="45cc7-786">You can also print a report about invoice numbers that are used.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-787">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-787">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-788">Není už nutné zachovávat číslování státních faktur.</span><span class="sxs-lookup"><span data-stu-id="45cc7-788">The state invoice numbering no longer has to be maintained.</span></span> <span data-ttu-id="45cc7-789">Hlášení o použitých číslech faktur již není požadováno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-789">The report about used invoice numbers is no longer required.</span></span> |
+| <span data-ttu-id="45cc7-790">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-790">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-791">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-791">No</span></span>       |
+| <span data-ttu-id="45cc7-792">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-792">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-793">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="45cc7-793">Accounts receivable</span></span>    |
+| <span data-ttu-id="45cc7-794">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-794">**Status**</span></span>                         | <span data-ttu-id="45cc7-795">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-795">Deprecated: A removal date has not been set for this feature.</span></span>  |
+
+### <a name="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania"></a><span data-ttu-id="45cc7-796">Nastavení jmen správce a hlavního účetního společnosti pro Litvu</span><span class="sxs-lookup"><span data-stu-id="45cc7-796">Set up the names of the manager and general accountant of a company for Lithuania</span></span>
+
+<span data-ttu-id="45cc7-797">Jména správce a hlavního účetního společnosti mohou být určena v informacích o společnosti a využita ve výtiscích různých místních sestav.</span><span class="sxs-lookup"><span data-stu-id="45cc7-797">The names of the manager and the general accountant of a company can be specified in the company information and used in different local report printouts.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-798">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-798">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-799">Nahrazeno jinou funkcí</span><span class="sxs-lookup"><span data-stu-id="45cc7-799">Replaced by another feature</span></span>                                     |
+| <span data-ttu-id="45cc7-800">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-800">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-801">Ano, nastavení úředních osob lze použít k tomuto účelu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-801">Yes, the setup of officials can be used for the same purpose.</span></span>   |
+| <span data-ttu-id="45cc7-802">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-802">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-803">Závazky, Pohledávky, Řízení zásob, Pokladna a banka</span><span class="sxs-lookup"><span data-stu-id="45cc7-803">Accounts payable, Accounts receivable, Cash and bank management</span></span> |
+| <span data-ttu-id="45cc7-804">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-804">**Status**</span></span>                         | <span data-ttu-id="45cc7-805">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-805">Deprecated: A removal date has not been set for this feature.</span></span>  |
+
+### <a name="shipping-carrier-interface"></a><span data-ttu-id="45cc7-806">Rozhraní dopravce</span><span class="sxs-lookup"><span data-stu-id="45cc7-806">Shipping carrier interface</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-807">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-807">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-808">Duplicitní funkce</span><span class="sxs-lookup"><span data-stu-id="45cc7-808">Duplicate functionality</span></span>   |
+| <span data-ttu-id="45cc7-809">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-809">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-810">Částečně nahrazeno správou přepravy</span><span class="sxs-lookup"><span data-stu-id="45cc7-810">Partially replaced by Transportation management</span></span> |
+| <span data-ttu-id="45cc7-811">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-811">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-812">Prodeje a marketing, Řízení zásob</span><span class="sxs-lookup"><span data-stu-id="45cc7-812">Sales and marketing, Inventory management</span></span>  |
+| <span data-ttu-id="45cc7-813">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-813">**Status**</span></span>                         | <span data-ttu-id="45cc7-814">Odstraněno od verze Dynamics 365 for Operations 1611.</span><span class="sxs-lookup"><span data-stu-id="45cc7-814">Removed as of Dynamics 365 for Operations version 1611.</span></span>  |
+
+### <a name="telepay-payment-formats-for-norway"></a><span data-ttu-id="45cc7-815">Telepay formáty plateb pro Norsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-815">Telepay payment formats for Norway</span></span>
+
+<span data-ttu-id="45cc7-816">Telepay formáty plateb zahrnují exporty plateb dodavatele (převod) a inkasa plateb odběratele (přímý debet).</span><span class="sxs-lookup"><span data-stu-id="45cc7-816">Telepay payment formats include vendor payment export (credit transfer) and customer payment collection (direct debit).</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-817">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-817">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-818">Formáty plateb se již nepoužívají.</span><span class="sxs-lookup"><span data-stu-id="45cc7-818">The payment formats are no longer used.</span></span>                                                        |
+| <span data-ttu-id="45cc7-819">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-819">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-820">Ano, formátu platby platebního převodu ISO20022 a formát platby odběratele AvtaleGiro pro Norsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-820">Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway</span></span> |
+| <span data-ttu-id="45cc7-821">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-821">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-822">Pohledávky, závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-822">Accounts payable, Accounts receivable</span></span>                                                          |
+| <span data-ttu-id="45cc7-823">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-823">**Status**</span></span>                         | <span data-ttu-id="45cc7-824">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-824">Deprecated: A removal date has not been set for this feature.</span></span>                                 |
+
+### <a name="vendor-payment-export-formats-for-finland"></a><span data-ttu-id="45cc7-825">Formáty exportu plateb dodavatele pro Finsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-825">Vendor payment export formats for Finland</span></span>
+
+<span data-ttu-id="45cc7-826">Existují dva formáty pro export plateb pro Finsko.</span><span class="sxs-lookup"><span data-stu-id="45cc7-826">Two formats for exporting payments are available for Finland.</span></span> <span data-ttu-id="45cc7-827">LM02 (FI) se používá pro domácí platby a LUM2 (FI) se používá pro zahraniční platby.</span><span class="sxs-lookup"><span data-stu-id="45cc7-827">LM02 (FI) is used for domestic payments, and LUM2 (FI) is used for foreign payments.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-828">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-828">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-829">Formáty plateb se již nepoužívají.</span><span class="sxs-lookup"><span data-stu-id="45cc7-829">The payment formats are no longer used.</span></span>                        |
+| <span data-ttu-id="45cc7-830">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-830">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-831">Ano, finský formát platby peněžního převodu ISO20022</span><span class="sxs-lookup"><span data-stu-id="45cc7-831">Yes, ISO20022 Credit transfer payment format for Finland</span></span>       |
+| <span data-ttu-id="45cc7-832">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-832">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-833">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-833">Accounts payable</span></span>                                               |
+| <span data-ttu-id="45cc7-834">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-834">**Status**</span></span>                         | <span data-ttu-id="45cc7-835">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-835">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="warehouse-management-ii"></a><span data-ttu-id="45cc7-836">Řízení skladu II</span><span class="sxs-lookup"><span data-stu-id="45cc7-836">Warehouse management II</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-837">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-837">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-838">Řešení Řízení skladu II (WMS II), které bylo k dispozici v modulu **Řízení zásob**, duplikuje funkce, které jsou v modulu **Řízení skladu** a byly vydány v aplikaci Microsoft Dynamics AX 2012 R3.</span><span class="sxs-lookup"><span data-stu-id="45cc7-838">The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.</span></span>                                                                         |
+| <span data-ttu-id="45cc7-839">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-839">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-840">Modul **Řízení skladu**, který byl vydán v aplikaci AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 a Dynamics AX 2012 R3 CU9, nahrazuje funkce modulu Řízení skladu II.</span><span class="sxs-lookup"><span data-stu-id="45cc7-840">The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features.</span></span> <span data-ttu-id="45cc7-841">V porovnání s funkcemi modulu Řízení skladu II má nový modul více rozšířené funkce a flexibilnější procesy řízení skladu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-841">The new module has more advanced features and more flexible warehouse management processes than Warehouse management II.</span></span> |
+| <span data-ttu-id="45cc7-842">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-842">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-843">Řízení zásob, prodeje a marketing, zásobování a zdroje</span><span class="sxs-lookup"><span data-stu-id="45cc7-843">Inventory management, Sales and marketing, Procurement and sourcing</span></span>   |
+| <span data-ttu-id="45cc7-844">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-844">**Status**</span></span>                         | <span data-ttu-id="45cc7-845">Odstraněno od verze Dynamics 365 for Operations 1611.</span><span class="sxs-lookup"><span data-stu-id="45cc7-845">Removed as of Dynamics 365 for Operations version 1611.</span></span>    |
+
+### <a name="worker-reminders-in-human-resources"></a><span data-ttu-id="45cc7-846">Připomenutí pracovníka v modulu Lidské zdroje</span><span class="sxs-lookup"><span data-stu-id="45cc7-846">Worker reminders in Human Resources</span></span>
+
+<span data-ttu-id="45cc7-847">Mzdové informace lidských zdrojů</span><span class="sxs-lookup"><span data-stu-id="45cc7-847">Human Resources Payroll information</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-848">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-848">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-849">Malé využití</span><span class="sxs-lookup"><span data-stu-id="45cc7-849">Low usage</span></span>                                                           |
+| <span data-ttu-id="45cc7-850">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-850">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-851">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-851">No</span></span>                                                                  |
+| <span data-ttu-id="45cc7-852">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-852">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-853">Lidské zdroje</span><span class="sxs-lookup"><span data-stu-id="45cc7-853">Human resources</span></span>                                                     |
+| <span data-ttu-id="45cc7-854">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-854">**Status**</span></span>                         | <span data-ttu-id="45cc7-855">Odstraněno od verze Dynamics 365 for Operations 1611</span><span class="sxs-lookup"><span data-stu-id="45cc7-855">Removed as of Dynamics 365 for Operations version 1611</span></span> |
+
+### <a name="workflow-for-creating-goals"></a><span data-ttu-id="45cc7-856">Postup pro vytváření cíle</span><span class="sxs-lookup"><span data-stu-id="45cc7-856">Workflow for creating goals</span></span>
+
+<span data-ttu-id="45cc7-857">Workflow správy vytvoření cílů zaměstnanců je jednou z několika workflowů, které byly k dispozici pro pomoc koordinovat proces řízení výkonnosti.</span><span class="sxs-lookup"><span data-stu-id="45cc7-857">A workflow for managing the creation of employee goals is one of several workflows that were available to help coordinate the performance management process.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-858">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-858">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-859">Řízení výkonnosti bylo zcela přepracováno v aplikaci Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-859">Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.</span></span>     |
+| <span data-ttu-id="45cc7-860">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-860">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-861">Upravená funkce řízení výkonnosti poskytuje větší kontrolu nad obsahem cílů, měřeními, která se používají ke sledování vývoje, a připojováním podpůrné dokumentace.</span><span class="sxs-lookup"><span data-stu-id="45cc7-861">The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation.</span></span> <span data-ttu-id="45cc7-862">Cíle lze ukládat jako šablony a pak znovu použít.</span><span class="sxs-lookup"><span data-stu-id="45cc7-862">Goals can be stored as templates and then reused.</span></span> <span data-ttu-id="45cc7-863">Tato funkce vám pomůže rychleji nastavit další cíle pro zaměstnance.</span><span class="sxs-lookup"><span data-stu-id="45cc7-863">This feature can help you set up additional goals for your employees more quickly.</span></span> |
+| <span data-ttu-id="45cc7-864">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-864">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-865">Správa lidského kapitálu</span><span class="sxs-lookup"><span data-stu-id="45cc7-865">Human capital management</span></span>                 |
+| <span data-ttu-id="45cc7-866">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-866">**Status**</span></span>                         | <span data-ttu-id="45cc7-867">Odstraněno od verze Dynamics 365 for Operations 1611.</span><span class="sxs-lookup"><span data-stu-id="45cc7-867">Removed as of Dynamics 365 for Operations version 1611.</span></span> |
+
+## <a name="dynamics-ax-70"></a><span data-ttu-id="45cc7-868">Dynamics AX 7.0</span><span class="sxs-lookup"><span data-stu-id="45cc7-868">Dynamics AX 7.0</span></span> 
+
+
+### <a name="ability-to-cancel-changes-to-a-vendor-invoice"></a><span data-ttu-id="45cc7-869">Možnost zrušení změn na faktuře dodavatele</span><span class="sxs-lookup"><span data-stu-id="45cc7-869">Ability to cancel changes to a vendor invoice</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-870">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-870">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-871">Zvýšení výkonnosti</span><span class="sxs-lookup"><span data-stu-id="45cc7-871">Performance enhancement</span></span>        |
+| <span data-ttu-id="45cc7-872">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-872">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-873">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-873">No</span></span>                             |
+| <span data-ttu-id="45cc7-874">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-874">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-875">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-875">Accounts payable</span></span>               |
+| <span data-ttu-id="45cc7-876">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-876">**Status**</span></span>                         | <span data-ttu-id="45cc7-877">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-877">Removed as of Dynamics AX 7.0.</span></span> |
+
+### <a name="aif-axd-and-axbc-integrations"></a><span data-ttu-id="45cc7-878">Integrace rozhraní AIF, AxD a AxBC</span><span class="sxs-lookup"><span data-stu-id="45cc7-878">AIF, AxD, and AxBC integrations</span></span>
+
+<span data-ttu-id="45cc7-879">V rozhraní AIF (Application Integration Framework) mohou být data vyměňována s externími systémy pomocí obchodní logiky, která je zveřejněna jako služba.</span><span class="sxs-lookup"><span data-stu-id="45cc7-879">In Application Integration Framework (AIF), data can be exchanged with external systems through business logic that is exposed as services.</span></span> <span data-ttu-id="45cc7-880">Dynamics AX obsahuje služby, které jsou založeny na dokumentech a programu .NET Business Connector (AxBC).</span><span class="sxs-lookup"><span data-stu-id="45cc7-880">Dynamics AX includes services that are based on documents and .NET Business Connector (AxBC).</span></span> <span data-ttu-id="45cc7-881">Dokument je vytvářen pomocí kódu XML.</span><span class="sxs-lookup"><span data-stu-id="45cc7-881">A document is created by using XML.</span></span> <span data-ttu-id="45cc7-882">Soubor XML obsahuje informace v záhlaví, jež jsou přidány pro vytvoření *zprávy*, kterou lze přenést do a z aplikace Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="45cc7-882">The XML includes header information that is added to create a *message* that can be transferred into or out of Dynamics AX.</span></span> <span data-ttu-id="45cc7-883">Příkladem takovýchto dokumentů mohou být prodejní objednávky nebo nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-883">Examples of documents include sales orders and purchase orders.</span></span> <span data-ttu-id="45cc7-884">Dokumentem však může být reprezentována téměř jakákoliv entita, například odběratel.</span><span class="sxs-lookup"><span data-stu-id="45cc7-884">However, almost any entity, such as a customer, can be represented by a document.</span></span> <span data-ttu-id="45cc7-885">Služby, které jsou založeny na dokumentech, používají třídy **Axd \<Dokument\>**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-885">Services that are based on documents use the **Axd \<Document\>** classes.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-886">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-886">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-887">Architekturu rozhraní AIF a AxDs nelze škálovat do cloudové služby.</span><span class="sxs-lookup"><span data-stu-id="45cc7-887">The architecture of AIF and AxDs could not be scaled to a cloud service.</span></span> <span data-ttu-id="45cc7-888">Při hromadném importu docházelo k problémům s výkonem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-888">There were performance issues around bulk import.</span></span>                                        |
+| <span data-ttu-id="45cc7-889">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-889">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-890">Tato funkce je nahrazena architekturou pro import a export dat, která podporuje opakovaný hromadný import/export.</span><span class="sxs-lookup"><span data-stu-id="45cc7-890">This feature is replaced by the Data Import/Export framework, which supports recurring bulk import/export.</span></span> <span data-ttu-id="45cc7-891">U rozhraní AxBC doporučujeme používat skutečné tabulky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-891">For AxBC, we recommend that you use the actual tables.</span></span> |
+| <span data-ttu-id="45cc7-892">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-892">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-893">AxDs, AxBCs a AIF</span><span class="sxs-lookup"><span data-stu-id="45cc7-893">AxDs, AxBCs, and AIF</span></span>   |
+| <span data-ttu-id="45cc7-894">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-894">**Status**</span></span>                         | <span data-ttu-id="45cc7-895">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-895">Removed as of Dynamics AX 7.0.</span></span>   |
+
+### <a name="billing-code-rate-scripts"></a><span data-ttu-id="45cc7-896">Skripty sazby účtovacího kódu</span><span class="sxs-lookup"><span data-stu-id="45cc7-896">Billing code rate scripts</span></span>
+
+<span data-ttu-id="45cc7-897">Účtovací skripty se používaly k výpočtu sazeb fakturace pro kódy fakturace.</span><span class="sxs-lookup"><span data-stu-id="45cc7-897">Billing scripts were used to calculate billing rates for billing codes.</span></span> <span data-ttu-id="45cc7-898">To skripty vyžadovaly vlastní vývoj v programovacím jazyce C Sharp nebo Visual Basic.</span><span class="sxs-lookup"><span data-stu-id="45cc7-898">This scripts required custom development in the C Sharp or Visual Basic programming language.</span></span> <span data-ttu-id="45cc7-899">V aktuální verzi aplikace Dynamics AX nejsou **kódy skriptu fakturační sazby** podporovány.</span><span class="sxs-lookup"><span data-stu-id="45cc7-899">In the current version of Dynamics AX, the **billing code rate scripts** are not supported.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-900">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-900">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-901">Podpora vlastních skriptů v jazyce C Sharp nebo Visual Basic snebyla v Dynamics AX 7.0 přidána.</span><span class="sxs-lookup"><span data-stu-id="45cc7-901">The support for the custom C Sharp or Visual Basic scripts was not added in Dynamics AX 7.0.</span></span> |
+| <span data-ttu-id="45cc7-902">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-902">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-903">Ne</span><span class="sxs-lookup"><span data-stu-id="45cc7-903">No</span></span>                                                                                      |
+| <span data-ttu-id="45cc7-904">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-904">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-905">Veřejný sektor (pohledávky)</span><span class="sxs-lookup"><span data-stu-id="45cc7-905">Public sector, Accounts receivable</span></span>                                    |
+| <span data-ttu-id="45cc7-906">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-906">**Status**</span></span>                         | <span data-ttu-id="45cc7-907">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-907">Removed as of Dynamics AX 7.0.</span></span>                                                          |
+
+### <a name="boms-without-bom-versions"></a><span data-ttu-id="45cc7-908">Kusovníky bez verze kusovníku</span><span class="sxs-lookup"><span data-stu-id="45cc7-908">BOMs without BOM versions</span></span>
+
+<span data-ttu-id="45cc7-909">Pokud byl konfigurační klíč **Verze kusovníku** zakázán, byly ve všech formulářích skryty verze kusovníku a systém vynutil vztahy 1:1 mezi uvolněnými produkty a kusovníky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-909">When the **BOM versions** configuration key was disabled, bill of materials (BOM) versions were hidden in all forms, and the system forced a 1:1 relationship between released products and BOMs.</span></span> <span data-ttu-id="45cc7-910">V aktuální verzi aplikace Dynamics AX nelze konfigurační klíč **Verze kusovníku** zakázat.</span><span class="sxs-lookup"><span data-stu-id="45cc7-910">In the current version of Dynamics AX, the **BOM versions** configuration key can't be disabled.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-911">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-911">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-912">Řízení verzí kusovníku pomocí konfiguračního klíče nelze škálovat v cloudovém prostředí.</span><span class="sxs-lookup"><span data-stu-id="45cc7-912">Using a configuration key to control BOM versions doesn't scale in a cloud environment.</span></span> |
+| <span data-ttu-id="45cc7-913">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-913">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-914">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-914">No</span></span>                                                                                      |
+| <span data-ttu-id="45cc7-915">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-915">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-916">Řízení informací o produktech, Řízení zásob</span><span class="sxs-lookup"><span data-stu-id="45cc7-916">Product information management, Inventory management</span></span>                                    |
+| <span data-ttu-id="45cc7-917">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-917">**Status**</span></span>                         | <span data-ttu-id="45cc7-918">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-918">Removed as of Dynamics AX 7.0.</span></span>                                                          |
+
+### <a name="brazilian-bordero"></a><span data-ttu-id="45cc7-919">Brazilský doklad Bordero</span><span class="sxs-lookup"><span data-stu-id="45cc7-919">Brazilian Bordero</span></span>
+
+<span data-ttu-id="45cc7-920">Specifická metoda platby pro brazilské společnosti</span><span class="sxs-lookup"><span data-stu-id="45cc7-920">Specific method of payment for Brazilian companies</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-921">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-921">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-922">Podpora pro brazilskou metodu platby Bordero již není k dispozici v brazilské lokalizaci</span><span class="sxs-lookup"><span data-stu-id="45cc7-922">Support for the Brazilian Bordero method of payment has been discontinued from Brazilian localization</span></span> |
+| <span data-ttu-id="45cc7-923">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-923">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-924">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-924">No</span></span>   |
+| <span data-ttu-id="45cc7-925">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-925">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-926">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-926">Accounts payable</span></span>   |
+| <span data-ttu-id="45cc7-927">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-927">**Status**</span></span>                         | <span data-ttu-id="45cc7-928">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-928">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="brazilian-sintegra-statement"></a><span data-ttu-id="45cc7-929">Brazilský výpis Sintegra</span><span class="sxs-lookup"><span data-stu-id="45cc7-929">Brazilian Sintegra statement</span></span>
+
+<span data-ttu-id="45cc7-930">Federální daňový výkaz ICMS</span><span class="sxs-lookup"><span data-stu-id="45cc7-930">Federal tax statement for ICMS tax</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-931">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-931">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-932">Toto prohlášení se již v některých brazilských státech nepoužívá.</span><span class="sxs-lookup"><span data-stu-id="45cc7-932">This statement is no longer applicable in some Brazilian states.</span></span> |
+| <span data-ttu-id="45cc7-933">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-933">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-934">Ne.</span><span class="sxs-lookup"><span data-stu-id="45cc7-934">No.</span></span> <span data-ttu-id="45cc7-935">Uživatelé mohou používat nástroj obecného elektronického vykazování pro konfiguraci výkazu, pokud je v určitých situacích požadován.</span><span class="sxs-lookup"><span data-stu-id="45cc7-935">Users can use Generic Electronic reporting tool to configure the statement if required under specific situations.</span></span> |
+| <span data-ttu-id="45cc7-936">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-936">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-937">Fiskální knihy</span><span class="sxs-lookup"><span data-stu-id="45cc7-937">Fiscal books</span></span>    |
+| <span data-ttu-id="45cc7-938">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-938">**Status**</span></span>                         | <span data-ttu-id="45cc7-939">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-939">Deprecated: A removal date has not been set for this feature.</span></span>   |
+
+### <a name="brazilian-scan-contingency-mode-for-nf-e"></a><span data-ttu-id="45cc7-940">Brazilský pohotovostní režim SCAN pro NF e</span><span class="sxs-lookup"><span data-stu-id="45cc7-940">Brazilian SCAN contingency mode for NF-e</span></span>
+
+<span data-ttu-id="45cc7-941">Pohotovostní prostředí (SCAN) slouží k vygenerování, exportování a importování stavu Nota Fiscal eletrônica (NF-e), pokud není k dispozici prostředí Secretaría da Fazenda (SEFAZ).</span><span class="sxs-lookup"><span data-stu-id="45cc7-941">(SCAN) contingency environment is used to generate, export, and import the status of a Nota Fiscal eletrônica (NF-e) when the environment of Secretaria da Fazenda (SEFAZ) is not available.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-942">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-942">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-943">Tato záložní metoda už nebude k dispozici v žádném brazilském státě</span><span class="sxs-lookup"><span data-stu-id="45cc7-943">This method of contingency is no longer applicable in all Brazilian states</span></span> |
+| <span data-ttu-id="45cc7-944">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-944">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-945">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-945">No</span></span>                                                                          |
+| <span data-ttu-id="45cc7-946">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-946">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-947">Pohledávky</span><span class="sxs-lookup"><span data-stu-id="45cc7-947">Accounts receivable</span></span>                                                         |
+| <span data-ttu-id="45cc7-948">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-948">**Status**</span></span>                         | <span data-ttu-id="45cc7-949">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-949">Deprecated: A removal date has not been set for this feature.</span></span>              |
+
+### <a name="business-analyzer"></a><span data-ttu-id="45cc7-950">Obchodní analýza</span><span class="sxs-lookup"><span data-stu-id="45cc7-950">Business Analyzer</span></span>
+
+<span data-ttu-id="45cc7-951">S touto mobilní aplikací mohou uživatelé kontrolovat klíčoví obchodní metriky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-951">This mobile application let users review key business metrics.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-952">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-952">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-953">Tato funkce byla nahrazena jinou funkcí.</span><span class="sxs-lookup"><span data-stu-id="45cc7-953">This functionality has been replaced by another feature.</span></span>   |
+| <span data-ttu-id="45cc7-954">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-954">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-955">Balíček obsahu Sledování finanční výkonnosti pro Microsoft Power BI bude zahrnovat klíčové finanční metriky, které byly dříve dostupné v aplikaci Business Analyzer.</span><span class="sxs-lookup"><span data-stu-id="45cc7-955">The Monitor financial performance content pack for Microsoft Power BI will include key financial metrics that were previously available in Business Analyzer.</span></span> |
+| <span data-ttu-id="45cc7-956">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-956">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-957">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="45cc7-957">General ledger</span></span>      |
+| <span data-ttu-id="45cc7-958">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-958">**Status**</span></span>                         | <span data-ttu-id="45cc7-959">Zastaralé: Použití aplikace Business Analyzer je zastaralé.</span><span class="sxs-lookup"><span data-stu-id="45cc7-959">Deprecated: The use of Business Analyzer has been deprecated.</span></span>    |
+
+### <a name="business-statistics"></a><span data-ttu-id="45cc7-960">Obchodní statistika</span><span class="sxs-lookup"><span data-stu-id="45cc7-960">Business statistics</span></span>
+
+<span data-ttu-id="45cc7-961">Nastavení dotazů na obchodní statistiky, která vám mohou pomoct s analýzou výkonnosti organizace</span><span class="sxs-lookup"><span data-stu-id="45cc7-961">The setup of business statistics inquiries that can help you analyze the performance of the organization</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-962">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-962">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-963">Starší přístup k obchodnímu zpravodajství (BI), málo používáno odběrateli a omezená sada funkcí</span><span class="sxs-lookup"><span data-stu-id="45cc7-963">Legacy approach to business intelligence (BI), low customer usage, and a limited feature set</span></span> |
+| <span data-ttu-id="45cc7-964">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-964">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-965">Nové řešení Power BI pro aktuální verzi aplikace Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="45cc7-965">New BI solutions for the current version of Dynamics AX</span></span>                                      |
+| <span data-ttu-id="45cc7-966">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-966">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-967">Zásobování a zdroje, Závazky, Prodej a marketing, Pohledávky</span><span class="sxs-lookup"><span data-stu-id="45cc7-967">Procurement and sourcing, Accounts payable, Sales and marketing, Accounts receivable</span></span>         |
+| <span data-ttu-id="45cc7-968">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-968">**Status**</span></span>                         | <span data-ttu-id="45cc7-969">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-969">Removed as of Dynamics AX 7.0.</span></span>                                                               |
+
+### <a name="change-document-date-function-in-invoice-approval-journal"></a><span data-ttu-id="45cc7-970">Funkce změny data dokumentu v modulu Deník schválených faktur</span><span class="sxs-lookup"><span data-stu-id="45cc7-970">Change document date function in Invoice approval journal</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-971">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-971">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-972">Malé využití</span><span class="sxs-lookup"><span data-stu-id="45cc7-972">Low usage</span></span>                                                               |
+| <span data-ttu-id="45cc7-973">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-973">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-974">Ano.</span><span class="sxs-lookup"><span data-stu-id="45cc7-974">Yes.</span></span> <span data-ttu-id="45cc7-975">Datum dokumentu na zaúčtované transakci dodavatele lze změnit.</span><span class="sxs-lookup"><span data-stu-id="45cc7-975">The document date on the posted vendor transaction can be changed.</span></span> |
+| <span data-ttu-id="45cc7-976">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-976">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-977">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-977">Accounts payable</span></span>                                                        |
+| <span data-ttu-id="45cc7-978">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-978">**Status**</span></span>                         | <span data-ttu-id="45cc7-979">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-979">Removed as of Dynamics AX 7.0.</span></span>                                          |
+
+### <a name="clieop03-payment-format-for-the-netherlands"></a><span data-ttu-id="45cc7-980">Formát platby ClieOp03 pro Nizozemsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-980">ClieOp03 payment format for the Netherlands</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-981">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-981">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-982">Formát se již v Nizozemsku nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA).</span><span class="sxs-lookup"><span data-stu-id="45cc7-982">The format is no longer applicable in the Netherlands, because it has been replaced by SEPA functionality.</span></span> |
+| <span data-ttu-id="45cc7-983">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-983">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-984">Export plateb SEPA</span><span class="sxs-lookup"><span data-stu-id="45cc7-984">SEPA payments export</span></span>  |
+| <span data-ttu-id="45cc7-985">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-985">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-986">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-986">All modules</span></span>     |
+| <span data-ttu-id="45cc7-987">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-987">**Status**</span></span>                         | <span data-ttu-id="45cc7-988">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-988">Deprecated: A removal date has not been set for this feature.</span></span>   |
+
+### <a name="compliance-center"></a><span data-ttu-id="45cc7-989">Centrum kompatibility</span><span class="sxs-lookup"><span data-stu-id="45cc7-989">Compliance Center</span></span>
+
+<span data-ttu-id="45cc7-990">Centrum kompatibility byly stránky podnikového portálu pro správu požadavků na dokumentaci pro iniciativy kompatibility související se Sarbanes-Oxleyho zákonem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-990">The Compliance Center was an Enterprise Portal site for managing the documentation requirements for compliance initiatives that are related to the Sarbanes-Oxley law.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-991">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-991">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-992">Nepoužíváno odběrateli.</span><span class="sxs-lookup"><span data-stu-id="45cc7-992">Lack of customer usage.</span></span> <span data-ttu-id="45cc7-993">Služba Microsoft SharePoint zahrnuje stejné možnosti, jaké byly k dispozici v centru kompatibility.</span><span class="sxs-lookup"><span data-stu-id="45cc7-993">Microsoft SharePoint includes the same capability that was available in the Compliance Center.</span></span> |
+| <span data-ttu-id="45cc7-994">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-994">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-995">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-995">No</span></span>   |
+| <span data-ttu-id="45cc7-996">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-996">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-997">Dodržování předpisů a vnitřní kontroly</span><span class="sxs-lookup"><span data-stu-id="45cc7-997">Compliance and internal controls</span></span>  |
+| <span data-ttu-id="45cc7-998">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-998">**Status**</span></span>                         | <span data-ttu-id="45cc7-999">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-999">Removed as of Dynamics AX 7.0.</span></span>    |
+
+### <a name="connector-for-microsoft-dynamics"></a><span data-ttu-id="45cc7-1000">Connector pro aplikaci Microsoft Dynamics</span><span class="sxs-lookup"><span data-stu-id="45cc7-1000">Connector for Microsoft Dynamics</span></span>
+
+<span data-ttu-id="45cc7-1001">Tento nástroj byl použit k integraci klíčových dat z aplikace Microsoft Dynamics CRM do aplikace Microsoft Dynamics ERP.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1001">This tool was used to integrate key data from Microsoft Dynamics CRM to Microsoft Dynamics ERP applications.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1002">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1002">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1003">Tato funkce byla nahrazena jinou funkcí.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1003">This functionality has been replaced by another feature.</span></span> |
+| <span data-ttu-id="45cc7-1004">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1004">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1005">CDS (Common Data Service)</span><span class="sxs-lookup"><span data-stu-id="45cc7-1005">Common data service</span></span>                                      |
+| <span data-ttu-id="45cc7-1006">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1006">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1007">Connector pro aplikaci Microsoft Dynamics</span><span class="sxs-lookup"><span data-stu-id="45cc7-1007">Connector for Microsoft Dynamics</span></span>                         |
+| <span data-ttu-id="45cc7-1008">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1008">**Status**</span></span>                         | <span data-ttu-id="45cc7-1009">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1009">Removed as of Dynamics AX 7.0.</span></span>                           |
+
+### <a name="container-unit-and-multi-dimension-on-hand"></a><span data-ttu-id="45cc7-1010">Jednotka kontejneru a více dimenzí zásob</span><span class="sxs-lookup"><span data-stu-id="45cc7-1010">Container unit and multi dimension on-hand</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1011">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1011">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1012">Duplicitní funkce</span><span class="sxs-lookup"><span data-stu-id="45cc7-1012">Duplicate functionality</span></span> |
+| <span data-ttu-id="45cc7-1013">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1013">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1014">Ano.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1014">Yes.</span></span> <span data-ttu-id="45cc7-1015">Tuto funkce byla nahrazena od verze AX 2012 sadou funkcí konsolidované dávkové objednávky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1015">Since AX 2012, this functionality has been replaced by the consolidated batch orders feature set.</span></span> <span data-ttu-id="45cc7-1016">Tato sada funkcí zahrnuje konsolidované zobrazení zásob na skladě.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1016">This feature set includes the consolidated on-hand view.</span></span> |
+| <span data-ttu-id="45cc7-1017">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1017">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1018">Řízení informací o produktech, Řízení výroby, Řízení zásob, Prodej a marketing</span><span class="sxs-lookup"><span data-stu-id="45cc7-1018">Product information management, Production control, Inventory management, Sales and marketing</span></span>  |
+| <span data-ttu-id="45cc7-1019">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1019">**Status**</span></span>                         | <span data-ttu-id="45cc7-1020">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1020">Removed as of Dynamics AX 7.0.</span></span> |
+
+### <a name="cue-group-metadata"></a><span data-ttu-id="45cc7-1021">Metadata skupiny hromádek</span><span class="sxs-lookup"><span data-stu-id="45cc7-1021">Cue group metadata</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1022">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1022">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1023">Skupiny hromádek byly použity k zobrazení jedné nebo více hromádek v oblasti okna s fakty.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1023">Cue groups were used to display one or more Cues in the FactBox area.</span></span> <span data-ttu-id="45cc7-1024">Byl omezený příjem a došlo k také k potížím s výkonem kvůli změně záznamu v nadřazeném formuláři, což způsobilo jeden dotaz na každou hromádku ve skupině hromádek.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1024">There was limited uptake, and there were also performance concerns, because a record change in a parent form caused one query per Cue in the Cue group.</span></span> |
+| <span data-ttu-id="45cc7-1025">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1025">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1026">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-1026">No</span></span>      |
+| <span data-ttu-id="45cc7-1027">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1027">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1028">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1028">All modules</span></span>    |
+| <span data-ttu-id="45cc7-1029">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1029">**Status**</span></span>                         | <span data-ttu-id="45cc7-1030">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1030">Removed as of Dynamics AX 7.0.</span></span>  |
+
+### <a name="cue-metadata"></a><span data-ttu-id="45cc7-1031">Metadata hromádky</span><span class="sxs-lookup"><span data-stu-id="45cc7-1031">Cue metadata</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1032">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1032">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1033">Metadata hromádky byla omezena na informace o počtu nebo součtu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1033">Cue metadata was limited to count or sum information.</span></span>    |
+| <span data-ttu-id="45cc7-1034">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1034">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1035">Kvůli flexibilnějším možnostem modelování byla zavedena metadata dlaždice.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1035">Tile metadata was introduced to provide more flexibility for modeling.</span></span> <span data-ttu-id="45cc7-1036">Modelova můžete například aktuální počty, navigaci a klíčové indikátory výkonnosti (KPI).</span><span class="sxs-lookup"><span data-stu-id="45cc7-1036">For example, you can model current counts, navigation, and key performance indicators (KPIs).</span></span> <span data-ttu-id="45cc7-1037">Metadata dlaždice počtu jsou přímou náhradou za metadata hromádky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1037">Count tile metadata is the direct replacement of the Cue metadata.</span></span> |
+| <span data-ttu-id="45cc7-1038">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1038">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1039">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1039">All modules</span></span>           |
+| <span data-ttu-id="45cc7-1040">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1040">**Status**</span></span>                         | <span data-ttu-id="45cc7-1041">Odstraněno od verze Dynamics AX 7.0</span><span class="sxs-lookup"><span data-stu-id="45cc7-1041">Removed as of Dynamics AX 7.0</span></span>      |
+
+### <a name="danish-check-format"></a><span data-ttu-id="45cc7-1042">Formát šeku – Dánsko</span><span class="sxs-lookup"><span data-stu-id="45cc7-1042">Danish check format</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1043">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1043">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1044">Byla zrušena podpora pro rozvržení dánského formátu šeku a sestava byla odebrána z dánské lokalizace.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1044">Support for the Danish check format layout has been discontinued, and the report has been removed from DK localization.</span></span> |
+| <span data-ttu-id="45cc7-1045">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1045">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1046">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-1046">No</span></span>    |
+| <span data-ttu-id="45cc7-1047">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1047">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1048">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1048">All modules</span></span>    |
+| <span data-ttu-id="45cc7-1049">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1049">**Status**</span></span>                         | <span data-ttu-id="45cc7-1050">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1050">Deprecated: A removal date has not been set for this feature.</span></span>  |
+
+### <a name="data-partitions"></a><span data-ttu-id="45cc7-1051">Datové oddíly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1051">Data partitions</span></span>
+
+<span data-ttu-id="45cc7-1052">Datové oddíly poskytují logické oddělení dat v databázi aplikace Microsoft Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1052">Data partitions provide a logical separation of data in the Microsoft Dynamics AX database.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1053">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1053">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1054">Datové oddíly byly zavedeny v aplikaci Microsoft Dynamics AX 2012 R2 a umožňují izolaci dat.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1054">Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation.</span></span> <span data-ttu-id="45cc7-1055">V běžné situaci má společnost pobočky a data z jedné dceřiné společnosti by neměla být viditelná pro jiné dceřiné společnosti, přestože obě pobočky jsou spravovány ve stejném oddělení IT.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1055">In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department.</span></span> <span data-ttu-id="45cc7-1056">Nicméně by byly vyžadovány dodatečné skripty a další správní režie v celém programu pro vytvoření nových oddílů, naplnění je daty a zálohování data oddílu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1056">However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data.</span></span> <span data-ttu-id="45cc7-1057">V cloudu, kde máte přístup k databázové službě Platforma jako služba (PaaS) (Microsoft Azure SQL Database), je mnohem efektivnější použít databázi pro izolační kontejner, než provádět izolaci v programu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1057">In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program.</span></span> <span data-ttu-id="45cc7-1058">Bez ohledu na to, zda je rozdělení dat požadované pro dceřiné společnosti, pro více klientů nebo pouze pro škálování, věříme, že situace je možné vyřešit efektivněji s využitím více instancí aplikace Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1058">Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple instances of Finance and Operations.</span></span> |
+| <span data-ttu-id="45cc7-1059">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1059">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1060">Odběratelé používající datové oddíly musí použít více instancí aplikace Finance and Operations, pokud je oddělení úrovně databáze kritickým problémem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1060">Customers using data partitions must use multiple instances of Finance and Operations if database level separation is a critical issue.</span></span>    |
+| <span data-ttu-id="45cc7-1061">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1061">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1062">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1062">All modules</span></span>  |
+| <span data-ttu-id="45cc7-1063">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1063">**Status**</span></span>                         | <span data-ttu-id="45cc7-1064">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1064">Removed as of Dynamics AX 7.0.</span></span>  |
+
+
+### <a name="database-and-file-share-storage-for-attachments"></a><span data-ttu-id="45cc7-1065">Úložiště databáze a sdílené složky souborů pro přílohy</span><span class="sxs-lookup"><span data-stu-id="45cc7-1065">Database and file share storage for attachments</span></span>
+
+<span data-ttu-id="45cc7-1066">Povolené úložiště příloh v databázi a sdílených složkách souborů povolené v Microsoft Dynamics AX 2012.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1066">Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares.</span></span> <span data-ttu-id="45cc7-1067">Ani jedna z těchto možností již není podporována.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1067">Both of those options are no longer supported.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1068">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1068">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1069">Úložiště sdílených složek souborů již není podporováno, protože prostředí hostovaná v cloudu nemohou komunikovat s místními sdílenými souborovými složkami.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1069">Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares.</span></span> <span data-ttu-id="45cc7-1070">Databáze úložiště je zastaralá a nahradilo ji úložiště Azure Blob.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1070">Database storage has been deprecated in favor of Azure Blob storage.</span></span> <span data-ttu-id="45cc7-1071">Úložiště Azure Blob odpovídá úložišti v databázi, protože dokumenty jsou přístupné pouze pro formuláře klientů Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1071">Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Dynamics 365 for Finance and Operations client forms.</span></span> <span data-ttu-id="45cc7-1072">To zajišťuje další výhodu poskytování úložiště, které negativně neovlivňuje výkonnost databáze.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1072">This provides the added benefit of providing storage that doesn't negatively affect the performance of the database.</span></span> <span data-ttu-id="45cc7-1073">Úložiště objektů blob je výchozí mechanismus úložiště pro správu dokumentů a funguje okamžitě.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1073">Blob storage is the default storage mechanism for Document Management and works immediately.</span></span> |
+| <span data-ttu-id="45cc7-1074">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1074">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1075">Databáze úložiště je zastaralá a nahradilo ji úložiště Azure Blob.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1075">Database storage has been deprecated in favor of Azure Blob storage.</span></span>   |
+| <span data-ttu-id="45cc7-1076">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1076">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1077">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1077">All modules</span></span>  |
+| <span data-ttu-id="45cc7-1078">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1078">**Status**</span></span>                         | <span data-ttu-id="45cc7-1079">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1079">Removed as of Dynamics AX 7.0.</span></span>   |
+
+### <a name="delimitation"></a><span data-ttu-id="45cc7-1080">Vymezení</span><span class="sxs-lookup"><span data-stu-id="45cc7-1080">Delimitation</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1081">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1081">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1082">Funkce nebyla shledána potřebnou.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1082">No use of the functionality was found.</span></span> |
+| <span data-ttu-id="45cc7-1083">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1083">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1084">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-1084">No</span></span>                                     |
+| <span data-ttu-id="45cc7-1085">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1085">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1086">Čas a docházka</span><span class="sxs-lookup"><span data-stu-id="45cc7-1086">Time and attendance</span></span>                    |
+| <span data-ttu-id="45cc7-1087">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1087">**Status**</span></span>                         | <span data-ttu-id="45cc7-1088">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1088">Removed as of Dynamics AX 7.0.</span></span>         |
+
+### <a name="desktop-client"></a><span data-ttu-id="45cc7-1089">Klient pro stolní počítače</span><span class="sxs-lookup"><span data-stu-id="45cc7-1089">Desktop client</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1090">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1090">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1091">Prostředí klienta aplikace Dynamics AX bylo přepracováno, aby se lépe používalo na různých platformách a v různých zařízeních.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1091">The Dynamics AX client experience has been redesigned to improve usability across multiple platforms and devices.</span></span>                      |
+| <span data-ttu-id="45cc7-1092">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1092">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1093">Nový webový klient je založen na metadatech formuláře pracovní plochy a programovacím modelu, které byly změněny tak, aby poskytovaly bohatou webovou platformu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1093">The new web client is based on the desktop Form metadata and programming model that have been modified to provide a rich web platform.</span></span> |
+| <span data-ttu-id="45cc7-1094">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1094">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1095">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1095">All modules</span></span>  |
+| <span data-ttu-id="45cc7-1096">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1096">**Status**</span></span>                         | <span data-ttu-id="45cc7-1097">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1097">Removed as of Dynamics AX 7.0.</span></span>   |
+
+### <a name="direct-database-connection"></a><span data-ttu-id="45cc7-1098">Přímé připojení k databázi</span><span class="sxs-lookup"><span data-stu-id="45cc7-1098">Direct database connection</span></span>
+
+<span data-ttu-id="45cc7-1099">V aplikaci Dynamics AX 2012 R3 se Retail Modern POS připojoval přímo k databázi Channel DB podobným způsobem jako k Enterprise POS.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1099">In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel DB in similar fashion to Enterprise POS.</span></span> <span data-ttu-id="45cc7-1100">Byla to nástavba ke standardní metodě komunikace Retail Modern POS prostřednictvím Retail Serveru.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1100">This was in addition to the standard communication method of Retail Modern POS communicating through Retail Server.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1101">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1101">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1102">Přímé připojení k databázi vyžadovalo nižší protokoly zabezpečení a primárně sloužilo k dosahování nejvyšších úrovní výkonnosti.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1102">Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance.</span></span> <span data-ttu-id="45cc7-1103">Vzhledem k výkonu a vylepšení zabezpečení, ke kterým došlo v aplikaci Finance and Operations tato funkce nyní způsobuje mnohem více problémů, než řeší.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1103">Due to the performance and security enhancements that have occurred in Finance and Operations, this functionality now causes more issues than it solves.</span></span> |
+| <span data-ttu-id="45cc7-1104">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1104">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1105">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1105">No.</span></span> <span data-ttu-id="45cc7-1106">V současné době se podporuje pouze standardní komunikace Retail Server.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1106">Only standard Retail Server communication is now supported.</span></span>  |
+| <span data-ttu-id="45cc7-1107">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1107">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1108">Databáze kanálů/Retail Modern POS</span><span class="sxs-lookup"><span data-stu-id="45cc7-1108">Channel DB/Retail Modern POS</span></span>   |
+| <span data-ttu-id="45cc7-1109">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1109">**Status**</span></span>                         | <span data-ttu-id="45cc7-1110">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1110">Removed as of Dynamics AX 7.0.</span></span>  |
+
+### <a name="dutch-swift-mt940"></a><span data-ttu-id="45cc7-1111">Nizozemský SWIFT MT940</span><span class="sxs-lookup"><span data-stu-id="45cc7-1111">Dutch SWIFT MT940</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1112">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1112">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1113">Namísto lokalizované funkce se nyní používá obecná funkce.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1113">Generic functionality is now used instead of localized functionality.</span></span>                    |
+| <span data-ttu-id="45cc7-1114">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1114">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1115">Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1115">Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</span></span> |
+| <span data-ttu-id="45cc7-1116">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1116">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1117">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1117">All modules</span></span>                                                                              |
+| <span data-ttu-id="45cc7-1118">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1118">**Status**</span></span>                         | <span data-ttu-id="45cc7-1119">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1119">Deprecated: A removal date has not been set for this feature.</span></span>                           |
+
+### <a name="ebilanz-xbrl-for-germany"></a><span data-ttu-id="45cc7-1120">eBilanz (XBRL pro Německo)</span><span class="sxs-lookup"><span data-stu-id="45cc7-1120">eBilanz (XBRL for Germany)</span></span>
+
+<span data-ttu-id="45cc7-1121">Tato funkce poskytuje výstup v jazyce eXtensible Business Reporting Language (XBRL), který je určený konkrétně pro německou taxonomii eBilanz.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1121">This functionality provided eXtensible Business Reporting Language (XBRL) output that is intended specifically for the German eBilanz taxonomy.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1122">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1122">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1123">Nepoužíváno odběrateli.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1123">Lack of customer usage</span></span>  |
+| <span data-ttu-id="45cc7-1124">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1124">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1125">Tato funkce nebyla nahrazena jinou funkcí, avšak pro německý trh je k dispozici několik speciálních balíčků XBRL obsahujících mnoho funkcí XBRL.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1125">This feature hasn't been replaced by another feature, but multiple specialized XBRL packages that provide rich XBRL functionality are available for the German market.</span></span> |
+| <span data-ttu-id="45cc7-1126">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1126">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1127">Management Reporter</span><span class="sxs-lookup"><span data-stu-id="45cc7-1127">Management Reporter</span></span>      |
+| <span data-ttu-id="45cc7-1128">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1128">**Status**</span></span>                         | <span data-ttu-id="45cc7-1129">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1129">Deprecated: A removal date has not been set for this feature.</span></span>  |
+
+### <a name="enterprise-portal-client"></a><span data-ttu-id="45cc7-1130">Klient podnikového portálu</span><span class="sxs-lookup"><span data-stu-id="45cc7-1130">Enterprise Portal client</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1131">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1131">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1132">Byla poskytnuta jediná platforma klienta.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1132">A single client platform has been provided.</span></span>  |
+| <span data-ttu-id="45cc7-1133">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1133">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1134">Nový webový klient je založen na metadatech formuláře pracovní plochy a programovacím modelu, které byly změněny tak, aby poskytovaly bohatou webovou platformu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1134">The new web client is based on the desktop form metadata and programming model that have been modified to provide a rich web platform.</span></span> |
+| <span data-ttu-id="45cc7-1135">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1135">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1136">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1136">All modules</span></span>  |
+| <span data-ttu-id="45cc7-1137">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1137">**Status**</span></span>                         | <span data-ttu-id="45cc7-1138">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1138">Removed as of Dynamics AX 7.0.</span></span>   |
+
+### <a name="environmental-sustainability"></a><span data-ttu-id="45cc7-1139">Udržitelnost životního prostředí</span><span class="sxs-lookup"><span data-stu-id="45cc7-1139">Environmental sustainability</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1140">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1140">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1141">Málo používáno odběrateli a omezená sada funkcí.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1141">Low customer usage and a limited feature set</span></span>  |
+| <span data-ttu-id="45cc7-1142">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1142">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1143">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-1143">No</span></span>              |
+| <span data-ttu-id="45cc7-1144">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1144">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1145">Dodržování předpisů a vnitřní kontroly, Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-1145">Compliance and internal controls, Accounts payable</span></span>  |
+| <span data-ttu-id="45cc7-1146">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1146">**Status**</span></span>                         | <span data-ttu-id="45cc7-1147">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1147">Removed as of Dynamics AX 7.0.</span></span> |
+
+### <a name="form-activex-and-managed-host-controls"></a><span data-ttu-id="45cc7-1148">Ovládací prvky formuláře ActiveX a spravovaného hostitele</span><span class="sxs-lookup"><span data-stu-id="45cc7-1148">Form ActiveX and Managed Host controls</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1149">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1149">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1150">Ovládací prvky formuláře ActiveX a spravovaného hostitele jsou založeny na zastaralém klientovi pro stolní počítače.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1150">The ActiveX and Managed Host controls are based on the deprecated desktop client.</span></span> |
+| <span data-ttu-id="45cc7-1151">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1151">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1152">Rozšířitelná architektura ovládacích prvků podporuje vytváření nových ovládacích prvků založených na HTML, CSS a JavaScriptu a slouží k prvotřídnímu ovládání v prostředí nástroje Microsoft Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1152">The extensible control framework supports building new controls that are based on HTML, CSS, and JavaScript, and is a first-class control in the Microsoft Visual Studio Tooling environment.</span></span> |
+| <span data-ttu-id="45cc7-1153">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1153">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1154">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1154">All modules</span></span>     |
+| <span data-ttu-id="45cc7-1155">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1155">**Status**</span></span>                         | <span data-ttu-id="45cc7-1156">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1156">Removed as of Dynamics AX 7.0.</span></span>       |
+
+### <a name="generate-prenotes-by-using-a-batch"></a><span data-ttu-id="45cc7-1157">Generování verifikačních transakcí pomocí dávky</span><span class="sxs-lookup"><span data-stu-id="45cc7-1157">Generate prenotes by using a batch</span></span>
+
+<span data-ttu-id="45cc7-1158">Verifikační transakce nelze generovat pomocí dávky, ale mohou být generovány uživatelem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1158">Prenote generation can't be done by using a batch, but it can still be done by a user.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1159">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1159">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1160">Neexistuje žádný formulář, který by po vygenerování pomocí dávky zachovával a zobrazoval výsledný soubor verifikačních transakcí.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1160">No form exists to persist and display the resulting prenote file when it's generated by using a batch.</span></span> |
+| <span data-ttu-id="45cc7-1161">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1161">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1162">Verifikační transakce lze i nadále generovat a uživatel může nastavit umístění, kam má být soubor uložen.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1162">Prenotes can still be generated, and the user has control over the location where the file is saved.</span></span>   |
+| <span data-ttu-id="45cc7-1163">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1163">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1164">Závazky, Pohledávky, Řízení zásob, Pokladna a banka</span><span class="sxs-lookup"><span data-stu-id="45cc7-1164">Accounts payable, Accounts receivable, Cash and bank management</span></span>  |
+| <span data-ttu-id="45cc7-1165">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1165">**Status**</span></span>                         | <span data-ttu-id="45cc7-1166">Odstraněno od verze AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1166">Removed as of AX 7.0.</span></span>    |
+
+### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a><span data-ttu-id="45cc7-1167">Export německé platby DTAUS a import výpisu z účtu (souhrny a transakce)</span><span class="sxs-lookup"><span data-stu-id="45cc7-1167">German DTAUS payment export and account statement import (totals and transactions)</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1168">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1168">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1169">Formát se již v Německu nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA).</span><span class="sxs-lookup"><span data-stu-id="45cc7-1169">The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.</span></span>                    |
+| <span data-ttu-id="45cc7-1170">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1170">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1171">Ano, tato funkce byla nahrazena exportem plateb SEPA a rozšířenou funkcí odsouhlasení banky pro import výpisů z účtu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1171">Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements.</span></span> |
+| <span data-ttu-id="45cc7-1172">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1172">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1173">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1173">All modules</span></span>  |
+| <span data-ttu-id="45cc7-1174">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1174">**Status**</span></span>                         | <span data-ttu-id="45cc7-1175">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1175">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="german-dtazv-payment-format"></a><span data-ttu-id="45cc7-1176">Německý formát platby DTAZV</span><span class="sxs-lookup"><span data-stu-id="45cc7-1176">German DTAZV payment format</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1177">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1177">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1178">Formát se již v Německu nepoužívá, protože byl nahrazen funkcí Jednotná oblast pro platby v eurech (SEPA).</span><span class="sxs-lookup"><span data-stu-id="45cc7-1178">The format is no longer applicable in Germany, because it has been replaced by SEPA functionality.</span></span> |
+| <span data-ttu-id="45cc7-1179">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1179">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1180">Export plateb SEPA</span><span class="sxs-lookup"><span data-stu-id="45cc7-1180">SEPA payments export</span></span>    |
+| <span data-ttu-id="45cc7-1181">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1181">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1182">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1182">All modules</span></span>   |
+| <span data-ttu-id="45cc7-1183">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1183">**Status**</span></span>                         | <span data-ttu-id="45cc7-1184">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1184">Deprecated: A removal date has not been set for this feature.</span></span>    |
+
+### <a name="german-mt940-import"></a><span data-ttu-id="45cc7-1185">Německý import MT940</span><span class="sxs-lookup"><span data-stu-id="45cc7-1185">German MT940 import</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1186">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1186">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1187">Namísto lokalizované funkce se nyní používá obecná funkce.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1187">Generic functionality is now used instead of localized functionality.</span></span>                    |
+| <span data-ttu-id="45cc7-1188">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1188">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1189">Ano, tato funkce byla nahrazena funkcí Rozšířené odsouhlasení banky.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1189">Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</span></span> |
+| <span data-ttu-id="45cc7-1190">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1190">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1191">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1191">All modules</span></span>                                                                              |
+| <span data-ttu-id="45cc7-1192">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1192">**Status**</span></span>                         | <span data-ttu-id="45cc7-1193">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1193">Deprecated: A removal date has not been set for this feature.</span></span>                           |
+
+### <a name="german-xml-eu-sales-list"></a><span data-ttu-id="45cc7-1194">Německé souhrnné hlášení (EU) ve formátu XML</span><span class="sxs-lookup"><span data-stu-id="45cc7-1194">German XML EU Sales list</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1195">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1195">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1196">Formát XML pro německé souhrnné hlášení již není podporován.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1196">The XML format for German EU Sales List reporting is no longer supported.</span></span> <span data-ttu-id="45cc7-1197">K odeslání německého souhrnného hlášení německému daňovému úřadu lze použít pouze formát textového souboru ELMA5.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1197">Only the ELMA5 text file format can be used to submit the EU Sales List report to the German Tax Office.</span></span> |
+| <span data-ttu-id="45cc7-1198">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1198">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1199">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-1199">No</span></span>         |
+| <span data-ttu-id="45cc7-1200">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1200">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1201">Daň</span><span class="sxs-lookup"><span data-stu-id="45cc7-1201">Tax</span></span>        |
+| <span data-ttu-id="45cc7-1202">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1202">**Status**</span></span>                         | <span data-ttu-id="45cc7-1203">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1203">Deprecated: A removal date has not been set for this feature.</span></span>   |
+
+### <a name="gl-ssrs-reports"></a><span data-ttu-id="45cc7-1204">Sestavy GL SSRS</span><span class="sxs-lookup"><span data-stu-id="45cc7-1204">GL SSRS reports</span></span>
+
+<span data-ttu-id="45cc7-1205">Byly odebrány sestavy, které zahrnují následující položky nabídky: **Souhrnná předvaha**, **Podrobná předvaha**, **Účtové osnovy**, **Záznam pro audit**, **Zůstatky** a **Výpis zůstatků**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1205">Reports that include the following menu items have been removed: **Summary trial balance**, **Detailed trial balance**, **Chart of accounts**, **Audit trail**, **Balances**, and **Balance list**.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1206">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1206">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1207">Finanční sestavy Microsoft SQL Server Reporting Services (SSRS) byly nahrazeny funkcemi nástroje Management Reporter a výchozími sestavami.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1207">Financial Microsoft SQL Server Reporting Services (SSRS) reports have been replaced by Management Reporter capabilities and default reports.</span></span> |
+| <span data-ttu-id="45cc7-1208">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1208">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1209">Management Reporter (v aktuální verzi aplikace Dynamics AX označeno jako **Finanční výkaznictví**)</span><span class="sxs-lookup"><span data-stu-id="45cc7-1209">Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX)</span></span>    |
+| <span data-ttu-id="45cc7-1210">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1210">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1211">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="45cc7-1211">General ledger</span></span>   |
+| <span data-ttu-id="45cc7-1212">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1212">**Status**</span></span>                         | <span data-ttu-id="45cc7-1213">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1213">Removed as of Dynamics AX 7.0.</span></span>   |
+
+### <a name="infopart-and-formpart-metadata"></a><span data-ttu-id="45cc7-1214">Metadata InfoPart a FormPart</span><span class="sxs-lookup"><span data-stu-id="45cc7-1214">InfoPart and FormPart metadata</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1215">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1215">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1216">Metadata InfoPart a FormPart povolovala vytváření okna s fakty pro dva různé klienty.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1216">InfoPart and FormPart metadata enabled the creation of FactBoxes for two different clients.</span></span> |
+| <span data-ttu-id="45cc7-1217">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1217">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1218">Metadata InfoPart, která byla zjednodušenou definicí formuláře, je převedena do formuláře při upgradu nástrojů.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1218">InfoPart metadata, which was a simplified form definition, is converted into a Form by upgrade tooling.</span></span> <span data-ttu-id="45cc7-1219">Metadata FormPart, která odkazovala na formulář, jsou nahrazena přímějším odkazem, který je vytvářen při upgradu nástrojů.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1219">FormPart metadata, which referenced a Form, is replaced by a more direct reference that is created by upgrade tooling.</span></span> |
+| <span data-ttu-id="45cc7-1220">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1220">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1221">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1221">All modules</span></span>    |
+| <span data-ttu-id="45cc7-1222">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1222">**Status**</span></span>                         | <span data-ttu-id="45cc7-1223">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1223">Removed as of Dynamics AX 7.0.</span></span>        |
+
+### <a name="main-account-list-page"></a><span data-ttu-id="45cc7-1224">Stránka seznamu hlavních účtů</span><span class="sxs-lookup"><span data-stu-id="45cc7-1224">Main account list page</span></span>
+
+<span data-ttu-id="45cc7-1225">Seznam účtů pro právnickou osobu a související informace o zůstatku</span><span class="sxs-lookup"><span data-stu-id="45cc7-1225">A list of accounts for the legal entity and related balance information</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1226">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1226">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1227">Informace o zůstatku jsou k dispozici na stránce seznamu **Předvaha** podle účtu a dimenze.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1227">Balance information is available on the **Trial balance** list page by account and dimension.</span></span>  |
+| <span data-ttu-id="45cc7-1228">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1228">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1229">**Hlavní účty** obsahuje seznamu účtů, **hlavní účet** obsahuje stránku se seznamem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1229">**Main accounts** contains the same list of accounts that the **Main account** list page contained.</span></span> <span data-ttu-id="45cc7-1230">V zobrazení v podobě mřížky se na stránce **Hlavní účty** zobrazuje rovněž i menší pohled podobný mřížce.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1230">The grid view in **Main accounts** also shows an even smaller, grid-like view.</span></span> |
+| <span data-ttu-id="45cc7-1231">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1231">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1232">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="45cc7-1232">General ledger</span></span>      |
+| <span data-ttu-id="45cc7-1233">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1233">**Status**</span></span>                         | <span data-ttu-id="45cc7-1234">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1234">Removed as of Dynamics AX 7.0.</span></span>    |
+
+### <a name="malaysia-and-singapore-bank-cash-flow-report"></a><span data-ttu-id="45cc7-1235">Sestava bankovního cashflowu v Malajsii a Singapuru</span><span class="sxs-lookup"><span data-stu-id="45cc7-1235">Malaysia and Singapore bank cash flow report</span></span>
+
+<span data-ttu-id="45cc7-1236">S touto funkcí mohou uživatelé tisknout sestavu cashflowu, v níž jsou uvedeny transakce a podrobnosti o přírůstcích a úbytcích hotovosti pro určený časový interval pro vybraný bankovní účet.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1236">This feature let the user print a cash flow report that shows transactions and details of the cash inflows and outflows for a specific date range for selected bank accounts.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1237">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1237">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1238">Stejné informace lze získat z funkce Dotaz na bankovní transakce.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1238">The same information can be obtained from the Inquiry bank transaction.</span></span> |
+| <span data-ttu-id="45cc7-1239">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1239">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1240">Dotaz na bankovní transakce</span><span class="sxs-lookup"><span data-stu-id="45cc7-1240">The Inquiry bank transaction</span></span>                                            |
+| <span data-ttu-id="45cc7-1241">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1241">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1242">Pokladna a banka</span><span class="sxs-lookup"><span data-stu-id="45cc7-1242">Cash and bank management</span></span>                                                |
+| <span data-ttu-id="45cc7-1243">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1243">**Status**</span></span>                         | <span data-ttu-id="45cc7-1244">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1244">Deprecated: A removal date has not been set for this feature.</span></span>          |
+
+### <a name="mexican-cfd-electronic-invoice"></a><span data-ttu-id="45cc7-1245">Mexická elektronická faktura CFD</span><span class="sxs-lookup"><span data-stu-id="45cc7-1245">Mexican CFD electronic invoice</span></span>
+
+<span data-ttu-id="45cc7-1246">Tato funkce povolovala generování mexické elektronické faktury pomocí metody CFD (Comprobante Fiscal Digital), u které společnost podepisuje faktury žádostí o příslušné schválení od vlády.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1246">This feature enabled the generation of Mexican electronic invoices by using the Comprobante Fiscal Digital (CFD) method, where the company signs the invoice by requesting the related authorization from the government.</span></span> <span data-ttu-id="45cc7-1247">Tato funkce rovněž poskytuje měsíční sestavu, která obsahuje všechny elektronické faktury, které byly v daném období vydány.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1247">This feature also provides a monthly report that includes all electronics invoices that were issued in the period.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1248">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1248">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1249">Metoda již není použitelná.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1249">The method is no longer applicable.</span></span> <span data-ttu-id="45cc7-1250">Generování elektronických faktur metodou CFD bylo zrušeno ze strany finančního úřadu a nahrazeno metodou Comprobante Fiscal Digital a través de Internet (CFDI), u které je podepisování delegováno na poskytovatele třetí strany (PAC).</span><span class="sxs-lookup"><span data-stu-id="45cc7-1250">The generation of electronic invoices by using the CFD method was deprecated by the tax authorities and replaced by the Comprobante Fiscal Digital a través de Internet (CFDI) method, where the signing is delegated to the third-party provider (PAC).</span></span> <span data-ttu-id="45cc7-1251">Měsíční sestava byla odebrána, uživatelé mohou prostřednictvím dotazu získat informace o historických transakcích.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1251">The monthly report has been removed, and an inquiry option lets users inquire about historical transactions.</span></span> |
+| <span data-ttu-id="45cc7-1252">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1252">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1253">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-1253">No</span></span>    |
+| <span data-ttu-id="45cc7-1254">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1254">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1255">Pohledávky, Projekt</span><span class="sxs-lookup"><span data-stu-id="45cc7-1255">Account receivables, Project</span></span>   |
+| <span data-ttu-id="45cc7-1256">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1256">**Status**</span></span>                         | <span data-ttu-id="45cc7-1257">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1257">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="mexico-realized-and-unrealized-vat"></a><span data-ttu-id="45cc7-1258">Uplatněná a neuplatněná DPH v Mexiku</span><span class="sxs-lookup"><span data-stu-id="45cc7-1258">Mexico realized and unrealized VAT</span></span>
+
+<span data-ttu-id="45cc7-1259">Aplikace Microsoft Dynamics AX 2012 spravovala neuplatněnou daň z přidané hodnoty (DPH) pomocí funkce pro neuplatněnou daň specifické pro Mexiko.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1259">Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for unrealized tax.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1260">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1260">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1261">Duplicitní funkce</span><span class="sxs-lookup"><span data-stu-id="45cc7-1261">Duplicate functionality</span></span>  |
+| <span data-ttu-id="45cc7-1262">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1262">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1263">Ano, tato funkce byla nahrazena standardní funkcí podmíněné DPH, která je k dispozici ve verzi Core.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1263">Yes, this functionality has been replaced by standard conditional sales tax functionality that is provided by Core.</span></span> |
+| <span data-ttu-id="45cc7-1264">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1264">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1265">Daň</span><span class="sxs-lookup"><span data-stu-id="45cc7-1265">Tax</span></span>   |
+| <span data-ttu-id="45cc7-1266">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1266">**Status**</span></span>                         | <span data-ttu-id="45cc7-1267">Zastaralé: Datum odebrání nebylo pro tuto funkci stanoveno.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1267">Deprecated: A removal date has not been set for this feature.</span></span> |
+
+### <a name="microsoft-outlook-integration"></a><span data-ttu-id="45cc7-1268">Integrace sady Microsoft Outlook</span><span class="sxs-lookup"><span data-stu-id="45cc7-1268">Microsoft Outlook integration</span></span>
+
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1269">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1269">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1270">Tato funkce byla nahrazena integrací Microsoft Exchange Server.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1270">This functionality has been replaced by Microsoft Exchange Server integration.</span></span> |
+| <span data-ttu-id="45cc7-1271">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1271">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1272">Ano</span><span class="sxs-lookup"><span data-stu-id="45cc7-1272">Yes</span></span>                                                                            |
+| <span data-ttu-id="45cc7-1273">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1273">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1274">Prodej a marketing</span><span class="sxs-lookup"><span data-stu-id="45cc7-1274">Sales and marketing</span></span>                                                            |
+| <span data-ttu-id="45cc7-1275">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1275">**Status**</span></span>                         | <span data-ttu-id="45cc7-1276">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1276">Removed as of Dynamics AX 7.0.</span></span>                                                 |
+
+### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a><span data-ttu-id="45cc7-1277">Soukromé blokování deníků řízení zásob a skladu</span><span class="sxs-lookup"><span data-stu-id="45cc7-1277">Private blocking of inventory and warehouse management journals</span></span>
+
+<span data-ttu-id="45cc7-1278">Deníky skladů a zásob již nepodporují možnost označení deníku jako soukromého pro vybraného uživatele.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1278">The inventory and warehouse journals no longer support the ability to mark a journal as private for a selected user.</span></span> <span data-ttu-id="45cc7-1279">Je podporován pouze proces blokování deníků jako soukromých pro skupiny uživatelů a blokování během úprav.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1279">Only the process of blocking journals as private for user groups and blocking during editing is supported.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1280">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1280">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1281">Funkce nebyla shledána potřebnou.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1281">No use of the functionality was found.</span></span> |
+| <span data-ttu-id="45cc7-1282">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1282">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1283">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-1283">No</span></span>                                     |
+| <span data-ttu-id="45cc7-1284">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1284">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1285">Řízení zásob</span><span class="sxs-lookup"><span data-stu-id="45cc7-1285">Inventory management</span></span>                   |
+| <span data-ttu-id="45cc7-1286">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1286">**Status**</span></span>                         | <span data-ttu-id="45cc7-1287">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1287">Removed as of Dynamics AX 7.0.</span></span>         |
+
+### <a name="product-builder"></a><span data-ttu-id="45cc7-1288">Konfigurátor výrobku</span><span class="sxs-lookup"><span data-stu-id="45cc7-1288">Product builder</span></span>
+
+<span data-ttu-id="45cc7-1289">Konfigurátor výrobku byl používán k dynamické konfiguraci položek z prodejní objednávky, nákupní objednávky, výrobní zakázky, prodejní nabídky, nabídky projektu nebo požadavku na položku.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1289">Product builder was used to dynamically configure items from a sales order, purchase order, production order, sales quotation, project quotation, or item requirement.</span></span> <span data-ttu-id="45cc7-1290">Na základě modelu produktu s proměnnými modelování mohl uživatel volit hodnoty podle potřeb odběratele a získat jedinečnou variantu produktu s vlastním kusovníkem a postupem.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1290">Based on a product model that had modeling variables, the user could select values to meet the customer requirements and get a unique product variant that had a BOM and route.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1291">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1291">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1292">Konfigurátor výrobku zveřejňoval kód X ++ koncovým uživatelům a není v aktuální verzi aplikace Dynamics AX podporován.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1292">Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX.</span></span> <span data-ttu-id="45cc7-1293">Byl odebrán kvůli zamezení duplicitní údržby na překrývajících se kódech.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1293">It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.</span></span>  |
+| <span data-ttu-id="45cc7-1294">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1294">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1295">Ano.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1295">Yes.</span></span> <span data-ttu-id="45cc7-1296">Konfigurace založená na omezeních byla uvedena v aplikaci Dynamics AX 2012, kde již byl oznámen odpis konfigurátoru výrobku v budoucích verzích.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1296">The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced.</span></span> <span data-ttu-id="45cc7-1297">Technologie konfigurace založené na omezeních je zvolena na základních produktech k umožnění konfigurace.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1297">The constraint-based configuration technology is selected on the product masters to enable the configuration.</span></span> <span data-ttu-id="45cc7-1298">Další informace naleznete v tématu [Vytvoření modelu konfigurace produktu](../../supply-chain/pim/build-product-configuration-model.md).</span><span class="sxs-lookup"><span data-stu-id="45cc7-1298">To learn more, see [Build a product configuration model](../../supply-chain/pim/build-product-configuration-model.md).</span></span> |
+| <span data-ttu-id="45cc7-1299">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1299">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1300">Řízení informací o produktech, Prodej a marketing</span><span class="sxs-lookup"><span data-stu-id="45cc7-1300">Product information management, Sales and marketing</span></span>  |
+| <span data-ttu-id="45cc7-1301">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1301">**Status**</span></span>                         | <span data-ttu-id="45cc7-1302">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1302">Removed as of Dynamics AX 7.0.</span></span>      |
+
+### <a name="production-floor-app"></a><span data-ttu-id="45cc7-1303">Aplikace Production Floor</span><span class="sxs-lookup"><span data-stu-id="45cc7-1303">Production Floor app</span></span>
+<span data-ttu-id="45cc7-1304">Jedná se o aplikaci pro tablety se systémem Windows 8.1 RT a Windows 8.1 Pro.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1304">This is the app for tablet devices running Windows 8.1 RT and Windows 8.1 Pro.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1305">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1305">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1306">Se změnou webového klienta je možné doručit podobnou funkci prostřednictvím nativního klienta Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1306">With the change to a web-based client, it is possible to deliver similar functionality through the native Dynamics AX 7.0 client.</span></span> <span data-ttu-id="45cc7-1307">Zařízení úkolového lístku poskytuje aplikaci Production Floor rozhraní, které je optimalizováno pro provedení dotykových zařízení a tabletů.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1307">The Job Card Device provides a production floor user interface that is optimized for touch and tablet form factors.</span></span> |
+| <span data-ttu-id="45cc7-1308">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1308">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1309">Ano.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1309">Yes.</span></span> <span data-ttu-id="45cc7-1310">Zařízení úkolového lístku, které je nativní součástí Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1310">The Job Card Device, which is a native part of Dynamics AX 7.0.</span></span>                                                                           |
+| <span data-ttu-id="45cc7-1311">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1311">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1312">Řízení výroby</span><span class="sxs-lookup"><span data-stu-id="45cc7-1312">Production control</span></span>                                                |
+| <span data-ttu-id="45cc7-1313">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1313">**Status**</span></span>                         | <span data-ttu-id="45cc7-1314">Zastaralé: Datum odstranění z obchodu Microsoft nebylo dosud stanoveno pro tuto funkci.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1314">Deprecated: A removal date from the Microsoft store has not yet been set for this feature.</span></span>                                                |
+
+
+### <a name="rename-product-dimension"></a><span data-ttu-id="45cc7-1315">Změnit název dimenze produktu</span><span class="sxs-lookup"><span data-stu-id="45cc7-1315">Rename product dimension</span></span>
+
+<span data-ttu-id="45cc7-1316">Touto funkcí lze měnit název jedné ze tří standardních dimenzí produktu (velikosti, barva nebo styl) tak, aby lépe vyhovoval obchodním požadavkům.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1316">This feature let you change the name of one of the three standard product dimensions (size, color, or style) to a name that better suited your business requirements.</span></span> <span data-ttu-id="45cc7-1317">Přejmenování zahrnovalo všechny popisky, kde by použit název dimenze produktu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1317">Renaming included all the labels where the product dimension name was used.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1318">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1318">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1319">Aktuální verze aplikace Dynamics AX nepodporuje změny popisků v době běhu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1319">The current version of Dynamics AX doesn't support label changes at run time.</span></span> |
+| <span data-ttu-id="45cc7-1320">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1320">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1321">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-1321">No</span></span>                                                                            |
+| <span data-ttu-id="45cc7-1322">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1322">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1323">Řízení informací o produktech</span><span class="sxs-lookup"><span data-stu-id="45cc7-1323">Product information management</span></span>                                                |
+| <span data-ttu-id="45cc7-1324">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1324">**Status**</span></span>                         | <span data-ttu-id="45cc7-1325">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1325">Removed as of Dynamics AX 7.0.</span></span>                                                |
+
+### <a name="retail-server-connectivity-using-http"></a><span data-ttu-id="45cc7-1326">Konektivita Retail Server u využívající HTTP</span><span class="sxs-lookup"><span data-stu-id="45cc7-1326">Retail Server connectivity using HTTP</span></span>
+
+<span data-ttu-id="45cc7-1327">V aplikaci Dynamics AX 2012 R3 může Retail Server fungovat pomocí komunikace HTTP (nezabezpečené).</span><span class="sxs-lookup"><span data-stu-id="45cc7-1327">In Dynamics AX 2012 R3, the Retail Server could function using HTTP communication (non-secured).</span></span> <span data-ttu-id="45cc7-1328">Byl to dodatek ke standardní komunikaci pomocí připojení HTTPS.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1328">This was in addition to the standard communication using HTTPS.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1329">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1329">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1330">Z důvodu nových požadavků na zabezpečení je nyní podporována pouze zabezpečená komunikace pomocí TLS 1.2 (nebo vyšší podle dostupnosti).</span><span class="sxs-lookup"><span data-stu-id="45cc7-1330">Due to new security requirements, only secured communication using TLS 1.2 (or above, as available) is now supported.</span></span> <span data-ttu-id="45cc7-1331">Samoobslužný instalační program bude automaticky konfigurovat počítač na tuto komunikaci.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1331">The self-service installer will automatically configure the computer for this communication.</span></span> |
+| <span data-ttu-id="45cc7-1332">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1332">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1333">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1333">No.</span></span> <span data-ttu-id="45cc7-1334">V současné době se podporuje pouze standardní komunikace HTTPS.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1334">Only standard HTTPS communication is now supported.</span></span> |
+| <span data-ttu-id="45cc7-1335">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1335">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1336">Server maloobchodu</span><span class="sxs-lookup"><span data-stu-id="45cc7-1336">Retail Server</span></span>  |
+| <span data-ttu-id="45cc7-1337">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1337">**Status**</span></span>                         | <span data-ttu-id="45cc7-1338">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1338">Removed as of Dynamics AX 7.0.</span></span> |
+
+### <a name="role-center-pages"></a><span data-ttu-id="45cc7-1339">Stránky pracovní plochy role</span><span class="sxs-lookup"><span data-stu-id="45cc7-1339">Role Center pages</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1340">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1340">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1341">Stránky pracovní plochy rolí byly vytvořeny na zastaralé platformě podnikového portálu, která byla v aktuální verzi aplikace Dynamics AX nahrazena novou platformu webového klienta.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1341">Role Center pages were built on the deprecated Enterprise Portal platform, which has been replaced by the new web client platform in the current version of Dynamics AX.</span></span> |
+| <span data-ttu-id="45cc7-1342">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1342">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1343">Nový vzor formulářů v pracovním prostoru nabízí uživatelům možnost návrhu zaměřeného na procesy, který zajišťuje snadný přístup k často používaným úkolům v rámci tohoto procesu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1343">The new Workspace form pattern provides users with a process-centered design that provides easy access to commonly used tasks within that process.</span></span>                       |
+| <span data-ttu-id="45cc7-1344">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1344">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1345">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1345">All modules</span></span>    |
+| <span data-ttu-id="45cc7-1346">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1346">**Status**</span></span>                         | <span data-ttu-id="45cc7-1347">Odstraněno od verze Dynamics AX 7.0</span><span class="sxs-lookup"><span data-stu-id="45cc7-1347">Removed as of Dynamics AX 7.0</span></span>   |
+
+### <a name="sales-tax-jurisdictions"></a><span data-ttu-id="45cc7-1348">Příslušnosti k dani</span><span class="sxs-lookup"><span data-stu-id="45cc7-1348">Sales tax jurisdictions</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1349">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1349">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1350">Málo používáno odběrateli a omezená sada funkcí.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1350">Low customer usage and a limited feature set</span></span> |
+| <span data-ttu-id="45cc7-1351">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1351">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1352">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-1352">No</span></span>                                           |
+| <span data-ttu-id="45cc7-1353">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1353">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1354">DPH v USA</span><span class="sxs-lookup"><span data-stu-id="45cc7-1354">US sales tax</span></span>                                 |
+| <span data-ttu-id="45cc7-1355">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1355">**Status**</span></span>                         | <span data-ttu-id="45cc7-1356">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1356">Removed as of Dynamics AX 7.0.</span></span>               |
+
+### <a name="sites-services"></a><span data-ttu-id="45cc7-1357">Služba Sites Services</span><span class="sxs-lookup"><span data-stu-id="45cc7-1357">Sites Services</span></span>
+
+<span data-ttu-id="45cc7-1358">Služba Sites Services umožňuje vytvářet webové stránky, které rozšiřují obchodní procesy na Internet bez IT podpory.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1358">Sites Services let you build websites that extend your business processes to the Internet without IT support.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1359">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1359">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1360">Infrastruktura Microsoft Azure používaná aplikací Dynamics AX má nové funkce, které lze použít (například weby Azure).</span><span class="sxs-lookup"><span data-stu-id="45cc7-1360">The Microsoft Azure infrastructure that is used by Dynamics AX has new capabilities that can be used instead (for example, Azure sites).</span></span> |
+| <span data-ttu-id="45cc7-1361">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1361">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1362">Žádný</span><span class="sxs-lookup"><span data-stu-id="45cc7-1362">No</span></span>   |
+| <span data-ttu-id="45cc7-1363">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1363">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1364">Nábor HR, správa případů, požadavek na cenovou nabídku, registrace dodavatele, pracovní prostory pro spolupráci pro příležitosti a kampaně</span><span class="sxs-lookup"><span data-stu-id="45cc7-1364">HR recruiting, Case management, Request for quotes, Vendor registration, Collaborative workspaces for opportunities and campaigns</span></span>  |
+| <span data-ttu-id="45cc7-1365">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1365">**Status**</span></span>                         | <span data-ttu-id="45cc7-1366">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1366">Removed as of Dynamics AX 7.0.</span></span>    |
+
+### <a name="ssas-demand-forecasting-strategy"></a><span data-ttu-id="45cc7-1367">Strategie prognózy poptávky SSAS</span><span class="sxs-lookup"><span data-stu-id="45cc7-1367">SSAS demand forecasting strategy</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1368">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1368">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1369">Návrh funkce nemůže být podporován v nové cloudové architektuře.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1369">The design of the feature cannot be supported in the new cloud architecture.</span></span> |
+| <span data-ttu-id="45cc7-1370">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1370">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1371">Strategie prognózy poptávky Azure Machine Learning</span><span class="sxs-lookup"><span data-stu-id="45cc7-1371">Azure Machine Learning demand forecasting strategy</span></span>                           |
+| <span data-ttu-id="45cc7-1372">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1372">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1373">Hlavní plánování</span><span class="sxs-lookup"><span data-stu-id="45cc7-1373">Master planning</span></span>                                                              |
+| <span data-ttu-id="45cc7-1374">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1374">**Status**</span></span>                         | <span data-ttu-id="45cc7-1375">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1375">Removed as of Dynamics AX 7.0.</span></span>                                               |
+
+### <a name="vendor-invoice-pool-excluding-posting-details"></a><span data-ttu-id="45cc7-1376">Podrobnosti evidence faktur dodavatelů bez zaúčtování</span><span class="sxs-lookup"><span data-stu-id="45cc7-1376">Vendor invoice pool excluding posting details</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1377">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1377">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1378">Malé využití.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1378">Low usage.</span></span> <span data-ttu-id="45cc7-1379">Tato funkce byla nahrazena deníkem faktur s funkcí workflowu.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1379">This functionality has been replaced by the Invoice journal that has workflow functionality.</span></span> |
+| <span data-ttu-id="45cc7-1380">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1380">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1381">Možnosti workflowu v modulu Deník faktur.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1381">Workflow capabilities of the Invoice journal.</span></span>     |
+| <span data-ttu-id="45cc7-1382">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1382">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1383">Závazky</span><span class="sxs-lookup"><span data-stu-id="45cc7-1383">Accounts payable</span></span> |
+| <span data-ttu-id="45cc7-1384">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1384">**Status**</span></span>                         | <span data-ttu-id="45cc7-1385">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1385">Removed as of Dynamics AX 7.0.</span></span>    |
+
+
+### <a name="virtual-company-accounts"></a><span data-ttu-id="45cc7-1386">Virtuální účty společnosti</span><span class="sxs-lookup"><span data-stu-id="45cc7-1386">Virtual company accounts</span></span>
+
+<span data-ttu-id="45cc7-1387">Funkce virtuálních společností není aplikací Dynamics AX již podporována.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1387">The virtual companies feature is no longer supported in Dynamics AX.</span></span> <span data-ttu-id="45cc7-1388">Funkce virtuálních společností umožňovala uživatelům nastavit tabulky, které mohlo sdílet více společností.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1388">The virtual companies feature let users set up tables that could be shared by a set of companies.</span></span> <span data-ttu-id="45cc7-1389">Popis funkce naleznete zde: [Účty společnosti a virtuální účty společnosti](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx).</span><span class="sxs-lookup"><span data-stu-id="45cc7-1389">For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx).</span></span> <span data-ttu-id="45cc7-1390">Funkce funguje tak, že seskupuje tabulky do kolekcí, které jsou přiřazeny k virtuálním společnostem, což jsou skupiny skutečně existujících společností.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1390">The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies.</span></span> <span data-ttu-id="45cc7-1391">Dotazy jsou vytvářeny tak, aby všechny společnosti ve virtuální společnosti měli přístup k datům v tabulkách souvisejících kolekcí tabulek.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1391">Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.</span></span>
+
+|   |  | 
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1392">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1392">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1393">- Virtuální společnosti je nutné nastavit před uložením dat do tabulek.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1393">- Virtual companies must be set up before data is stored in the tables.</span></span> <span data-ttu-id="45cc7-1394">Zpětné začlenění virtuálních společností do existující implementace je velmi obtížné.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1394">Retrofitting virtual companies onto an existing implementation is very difficult.</span></span><br><br><span data-ttu-id="45cc7-1395">- Vzhledem k tomu, že v aktuální verzi aplikace Microsoft Dynamics AX je spousta normalizací dat, je nyní těžké poznat, co přidat do kolekce tabulek.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1395">- Because there has been so much data normalization in the current version of Dynamics AX, it has become difficult to know what to add to the table collections.</span></span> <span data-ttu-id="45cc7-1396">Například je obtížné poznat, které tabulky se mají sdílet.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1396">For example, it's difficult to know which tables to share.</span></span> <span data-ttu-id="45cc7-1397">Také je nutné přidat všechny tabulky, na které je odkazováno z tabulek, které jsou ve virtuální společnosti.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1397">All the tables referenced from tables that are in a virtual company must also added.</span></span> <span data-ttu-id="45cc7-1398">Kvůli normalizaci tabulky musí být i jednoduchá hlavní data, která jsou rozdělená do více tabulek, součástí virtuální společnosti.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1398">Because of table normalization, even simple master data that is spread across multiple tables must be part of the virtual company.</span></span> <span data-ttu-id="45cc7-1399">Jakákoli zde provedená chyba způsobí funkční problémy.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1399">Any mistake that is made here will cause functional issues.</span></span><br><br><span data-ttu-id="45cc7-1400">- Pokud je tabulka součástí virtuální společnosti, ztratí informace o původu dat a je zaznamenána pouze virtuální společnosti.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1400">- When a table is part of a virtual company, it loses information about the origin of the data, and only the virtual company is recorded.</span></span>   |
+| <span data-ttu-id="45cc7-1401">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1401">**Replaced by another feature?**</span></span> | <span data-ttu-id="45cc7-1402">Globální tabulky mohou být použity k zpřístupnění tabulek ze všech společností.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1402">Global tables can be used to make tables accessible from all companies.</span></span> <span data-ttu-id="45cc7-1403">V současné době neexistuje žádná náhrada.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1403">Currently, there is no replacement.</span></span> |   
+| <span data-ttu-id="45cc7-1404">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1404">**Product areas affected**</span></span>       | <span data-ttu-id="45cc7-1405">Všechny moduly</span><span class="sxs-lookup"><span data-stu-id="45cc7-1405">All modules</span></span> |   
+| <span data-ttu-id="45cc7-1406">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1406">**Status**</span></span>                       | <span data-ttu-id="45cc7-1407">Odstraněno od verze Dynamics AX 7.0.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1407">Removed as of Dynamics AX 7.0.</span></span>   |   
+
+### <a name="windows-8-tablet-app"></a><span data-ttu-id="45cc7-1408">Windows 8 - aplikace pro tablety</span><span class="sxs-lookup"><span data-stu-id="45cc7-1408">Windows 8 tablet app</span></span>
+
+<span data-ttu-id="45cc7-1409">Aplikace pro tablety Windows 8 poskytovala funkci pro zadání a schválení výdajů.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1409">The Windows 8 tablet app provided functionality for expense entry and approval.</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1410">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1410">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1411">Finance and Operations je kompatibilní s tablety.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1411">Finance and Operations is compatible with tablets.</span></span> <span data-ttu-id="45cc7-1412">Aplikace pro tablety již není požadována.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1412">The tablet app is no longer required.</span></span>    |
+| <span data-ttu-id="45cc7-1413">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1413">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1414">Č.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1414">No.</span></span>          |
+| <span data-ttu-id="45cc7-1415">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1415">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1416">Správa výdajů</span><span class="sxs-lookup"><span data-stu-id="45cc7-1416">Expense management</span></span>   |
+| <span data-ttu-id="45cc7-1417">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1417">**Status**</span></span>                         | <span data-ttu-id="45cc7-1418">Odstraněno: Tato funkce je k dispozici pouze pro Dynamics AX 2012 R3.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1418">Removed: This functionality is only available for Dynamics AX 2012 R3.</span></span> |
+
+### <a name="workplanner"></a><span data-ttu-id="45cc7-1419">Plánovač práce</span><span class="sxs-lookup"><span data-stu-id="45cc7-1419">Workplanner</span></span>
+
+|   |  |
+|------------|--------------------|
+| <span data-ttu-id="45cc7-1420">**Důvod pro zrušení/odstranění**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1420">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="45cc7-1421">Malé využití</span><span class="sxs-lookup"><span data-stu-id="45cc7-1421">Low usage</span></span> |
+| <span data-ttu-id="45cc7-1422">**Nahrazeno jinou funkcí?**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1422">**Replaced by another feature?**</span></span>   | <span data-ttu-id="45cc7-1423">Ne, ale stránka **Vztah profilu**, kterou lze otevřít ze stránky **Skupiny profilů**, podporuje stejný obchodní scénář jako zastaralá stránka **Plánovač práce**.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1423">No, but the **Profile relation** page, which is opened from the **Profile groups** page, supports the same business scenario as the deprecated **Workplanner** page.</span></span> |
+| <span data-ttu-id="45cc7-1424">**Ovlivněné oblasti produktu**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1424">**Product areas affected**</span></span>         | <span data-ttu-id="45cc7-1425">Čas a docházka</span><span class="sxs-lookup"><span data-stu-id="45cc7-1425">Time and attendance</span></span>     |
+| <span data-ttu-id="45cc7-1426">**Stav**</span><span class="sxs-lookup"><span data-stu-id="45cc7-1426">**Status**</span></span>                         | <span data-ttu-id="45cc7-1427">Kód nebyl odstraněn.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1427">The code has not been removed.</span></span> <span data-ttu-id="45cc7-1428">Formulář JmgWorkPlanner však nebyl migrován.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1428">However, the form, JmgWorkPlanner, was not migrated.</span></span>    |
+
+### <a name="x-financial-statements"></a><span data-ttu-id="45cc7-1429">Finanční výkazy X++</span><span class="sxs-lookup"><span data-stu-id="45cc7-1429">X++ financial statements</span></span>
+
+|                                                 |                                                                                                          |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="45cc7-1430"><strong>Důvod pro zrušení/odstranění</strong></span><span class="sxs-lookup"><span data-stu-id="45cc7-1430"><strong>Reason for deprecation/removal</strong></span></span> |                         <span data-ttu-id="45cc7-1431">Tato funkce byla nahrazena jinou funkcí.</span><span class="sxs-lookup"><span data-stu-id="45cc7-1431">This functionality has been replaced by another feature.</span></span>                         |
+|  <span data-ttu-id="45cc7-1432"><strong>Nahrazeno jinou funkcí?</strong></span><span class="sxs-lookup"><span data-stu-id="45cc7-1432"><strong>Replaced by another feature?</strong></span></span>  | <span data-ttu-id="45cc7-1433">Management Reporter (v aktuální verzi aplikace Dynamics AX označeno jako <strong>Finanční výkaznictví</strong>)</span><span class="sxs-lookup"><span data-stu-id="45cc7-1433">Management Reporter (labeled <strong>Financial reporting</strong> in the current version of Dynamics AX)</span></span> |
+|     <span data-ttu-id="45cc7-1434"><strong>Ovlivněné oblasti produktu</strong></span><span class="sxs-lookup"><span data-stu-id="45cc7-1434"><strong>Product areas affected</strong></span></span>     |                                              <span data-ttu-id="45cc7-1435">Hlavní kniha</span><span class="sxs-lookup"><span data-stu-id="45cc7-1435">General ledger</span></span>                                              |
+|             <span data-ttu-id="45cc7-1436"><strong>Stav</strong></span><span class="sxs-lookup"><span data-stu-id="45cc7-1436"><strong>Status</strong></span></span>             |                                      <span data-ttu-id="45cc7-1437">Odstraněno od verze Dynamics AX 2012</span><span class="sxs-lookup"><span data-stu-id="45cc7-1437">Removed as of Dynamics AX 2012</span></span>                                      |
+
