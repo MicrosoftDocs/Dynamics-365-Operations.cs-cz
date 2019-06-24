@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571551"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577921"
 ---
 # <a name="retail-peripherals"></a>Periferní zařízení Retail
 
@@ -295,7 +295,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Síť
-<blockquote>POZNáMKA. Pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</blockquote>
+<p><strong>Poznámka:</strong> Pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</p>
 </li>
 </ul>
 </td>
@@ -306,7 +306,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Síť
-<blockquote>POZNáMKA. Pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</blockquote>
+<p><strong>Poznámka:</strong> Pouze jednu zásuvku lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</p>
 </li>
 </ul>
 </td>
@@ -374,7 +374,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Ovladač systému Windows
-<blockquote>POZNáMKA: U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</blockquote>
+<p><strong>Poznámka:</strong> U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</p>
 </li>
 <li>Síť</li>
 </ul>
@@ -404,7 +404,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Síť
-<blockquote>POZNáMKA. Pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong> .</blockquote>
+<p><strong>Poznámka:</strong> Pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</p>
 </li>
 </ul>
 </td>
@@ -469,7 +469,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Ovladač systému Windows
-<blockquote>POZNáMKA: U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</blockquote>
+<p><strong>Poznámka:</strong> U tiskáren Windows v síti musí mít uživatel hardwarové stanice oprávnění k přístupu k tiskárně.</p>
 </li>
 <li>Síť</li>
 </ul>
@@ -491,7 +491,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 <ul>
 <li>OPOS</li>
 <li>Síť
-<blockquote>POZNáMKA. Pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong> .</blockquote>
+<p><strong>Poznámka:</strong> Pouze jednu zásuvku na každý hardwarový profil lze nastavit v případě, pokud je nastaveno na zásuvce <strong>Použití sdílené směny</strong>.</p>
 </li>
 </ul>
 </td>

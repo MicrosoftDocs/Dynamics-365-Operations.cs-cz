@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553038"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606819"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Nastavení analýzy recency/frekvence/peněžního období
 
@@ -46,7 +46,7 @@ Například vaše organizace má nastavená hodnocení v rozsahu 1 až 5, kde 5 
 
 Pokud vaše organizace používá agregaci těchto čísel, individuální hodnocení se sečtou. Například má zákazník ohodnocení 13 (5 + 3 + 5).
 
-## <a name="to-set-up-rfm-analysis-for-the-customers-in-your-organization"></a>Chcete-li nastavit analýzu RFM pro odběratele v dané organizaci
+## <a name="set-up-rfm-analysis-for-the-customers-in-your-organization"></a>Nastavení analýzy RFM pro odběratele ve vaší organizaci
 
 1. Přejít na **Kontaktní středisko** \> **Periodická** \> **analýza RFM**.
 2. Na stránce **Analýza RFM** vyberte **Nový**. V poli **Definice RFM** zadejte název definice RFM. Můžete například definici nazvat RFM-A.

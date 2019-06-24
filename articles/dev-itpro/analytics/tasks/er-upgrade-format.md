@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 151b8936a46a1945e98bfe0ed040ca50c93db4b0
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544442"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595433"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>Elektronické výkaznictví - Upgrade formátu přijetím nové základní verze tohoto formátu
 
@@ -36,7 +36,7 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postup
 
 ## <a name="select-format-configuration-for-customization"></a>Výběr konfigurace formátu pro přizpůsobení
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-    * V tomto příkladu bude vzorová společnost Litware, Inc. (http://www.litware.com) bude sloužit jako poskytovatel konfigurace, který podporuje konfiguraci formátu pro elektronické platby pro určitou zemi.    Vzorová společnost Proseware, Inc. (http://www.proseware.com) bude jednat jako příjemce konfigurace formátu, který Litware, Inc. poskytl. Proseware, Inc. používá formáty v určitých oblastech v zemi.  
+    * V tomto příkladu bude vzorová společnost Litware, Inc. (https://www.litware.com) bude sloužit jako poskytovatel konfigurace, který podporuje konfiguraci formátu pro elektronické platby pro určitou zemi.    Vzorová společnost Proseware, Inc. (http://www.proseware.com) bude jednat jako příjemce konfigurace formátu, který Litware, Inc. poskytl. Proseware, Inc. používá formáty v určitých oblastech v zemi.  
 2. Klikněte na Konfigurace výkaznictví.
 3. Klepněte na tlačítko Zobrazit filtry.
 4. Použijte následující filtry: Do pole „Název" zadejte hodnotu filtru BACS (Velká Británie – fiktivní) a použijte operátor filtru „začíná na"

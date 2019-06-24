@@ -3,7 +3,7 @@ title: Finanční přehledy
 description: Finanční přehledy používají Microsoft Power BI pro spojení finančních klíčových indikátorů výkonnosti, grafů a finančních výkazů.
 author: kweekley
 manager: AnnBe
-ms.date: 08/14/2018
+ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9edcb192d2fac5acb954d8b87be691f0943e0db7
+ms.sourcegitcommit: 23ab3c99d05869ea2c73514754608e8684697d8c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554085"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595069"
 ---
 # <a name="financial-insights"></a>Finanční přehledy
 
@@ -67,10 +67,9 @@ Data pro **finanční přehledy** pocházejí z úložiště entit (**Správa sy
 
 Je nutné aktualizovat následující entity pro zobrazení dat v pracovních prostorech **Finanční přehledy** a **Přehled CFO**:
 
+- Data transakce finančního výkaznictví - verze 2 (**Poznámka:** Je nová s verzí 10.0.1 a nahradí předchozí entitu.)
+- Data transakce finančního výkaznictví
 - CustCollectionsBIMeasurements
-- FinancialReportingOtherData
-- FinancialReportingReferenceData
-- FinancialReportingTransactionData
 - LedgerCovLiquidityMeasurement
 - Krychle Nákup
 - Krychle Prodej

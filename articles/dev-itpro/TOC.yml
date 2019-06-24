@@ -227,8 +227,9 @@
             - name: Třídy X
               href: dev-ref/x-classes.md
     - name: Rozšiřitelnost
-      href: extensibility/extensibility-home-page.md
       items:
+        - name: Domovská stránka pro rozšiřitelnost
+          href: extensibility/extensibility-home-page.md
         - name: "Úvod a\_informace, jak začít"
           items:
             - name: Plán rozšíření aplikací
@@ -245,36 +246,38 @@
               href: extensibility/customization-overlayering-extensions.md
         - name: Novinky
           items:
-            - name: Změny rozšiřitelnosti - červenec 2017
-              href: extensibility/changes-july-2017.md
-            - name: Změny rozšiřitelnosti ve verzi 7.3
-              href: extensibility/extensibility-changes-73.md
-            - name: Změny rozšiřitelnosti ve verzi 8.0
-              href: extensibility/changes-80.md
-            - name: Změny rozšiřitelnosti – verze 8.0.1
-              href: extensibility/extensibility-changes-801.md
-            - name: Změny rozšiřitelnosti – verze 8.0.2
-              href: extensibility/extensibility-changes-802.md
-            - name: Změny rozšiřitelnosti – verze 8.0.3
-              href: extensibility/extensibility-changes-803.md
-            - name: Změny rozšiřitelnosti – verze 8.0.4
-              href: extensibility/extensibility-changes-804.md
-            - name: Změny rozšiřitelnosti – verze 8.1
-              href: extensibility/extensibility-changes-81.md
-            - name: Změny rozšiřitelnosti – verze 8.1.1
-              href: extensibility/extensibility-changes-811.md
-            - name: Změny rozšiřitelnosti – verze 8.1.2
-              href: extensibility/extensibility-changes-812.md
-            - name: Změny rozšiřitelnosti – verze 8.1.3
-              href: extensibility/extensibility-changes-813.md
-            - name: Změny rozšiřitelnosti – verze 10.0
-              href: extensibility/extensibility-changes-10.md
-            - name: Změny rozšiřitelnosti – verze 10.0.1
-              href: extensibility/extensibility-changes-10-1.md
-            - name: Změny rozšiřitelnosti – verze 10.0.2
-              href: extensibility/extensibility-changes-10-2.md
+            - name: Co je nového a co se změnilo pro rozšiřitelnost
+              href: extensibility/extensibility-new.md
             - name: Změny rozšiřitelnosti – verze 10.0.3
               href: extensibility/extensibility-changes-10-3.md
+            - name: Změny rozšiřitelnosti – verze 10.0.2
+              href: extensibility/extensibility-changes-10-2.md
+            - name: Změny rozšiřitelnosti – verze 10.0.1
+              href: extensibility/extensibility-changes-10-1.md
+            - name: Změny rozšiřitelnosti – verze 10.0
+              href: extensibility/extensibility-changes-10.md
+            - name: Změny rozšiřitelnosti – verze 8.1.3
+              href: extensibility/extensibility-changes-813.md
+            - name: Změny rozšiřitelnosti – verze 8.1.2
+              href: extensibility/extensibility-changes-812.md
+            - name: Změny rozšiřitelnosti – verze 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Změny rozšiřitelnosti – verze 8.1
+              href: extensibility/extensibility-changes-81.md
+            - name: Změny rozšiřitelnosti – verze 8.0.4
+              href: extensibility/extensibility-changes-804.md
+            - name: Změny rozšiřitelnosti – verze 8.0.3
+              href: extensibility/extensibility-changes-803.md
+            - name: Změny rozšiřitelnosti – verze 8.0.2
+              href: extensibility/extensibility-changes-802.md
+            - name: Změny rozšiřitelnosti – verze 8.0.1
+              href: extensibility/extensibility-changes-801.md
+            - name: Změny rozšiřitelnosti ve verzi 8.0
+              href: extensibility/changes-80.md
+            - name: Změny rozšiřitelnosti ve verzi 7.3
+              href: extensibility/extensibility-changes-73.md
+            - name: Změny rozšiřitelnosti - červenec 2017
+              href: extensibility/changes-july-2017.md
         - name: Základy
           items:
             - name: Narušující přizpůsobení
@@ -357,12 +360,18 @@
               href: extensibility/extensibility-attributes.md
             - name: Přerušení změn
               href: extensibility/breaking-changes.md
-    - name: Výkonnost
+    - name: Výkon
       items:
         - name: Sledování pomocí Trace parser
           href: perf-test/trace-trace-tutorial.md
-        - name: Výkonové SDK a testování více uživatelů pomocí Visual Studio Online
-          href: perf-test/perfsdk-tutorial.md
+        - name: Testování jednoho uživatele se záznamníkem úloh a výkonovým SDK
+          href: perf-test/single-user-test-perf-sdk.md
+        - name: Testování více uživatelů s výkonovým SDK a místním kontrolorem testů
+          href: perf-test/multi-user-testing-local-test-controller.md
+        - name: Testování více uživatelů s výkonovým SDK a Azure DevOps
+          href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+        - name: Průvodce řešením potíží pro testování jednoho uživatele nebo více uživatelů s výkonovým SDK
+          href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: Výkonové SDK a testování více uživatelů v místních prostředích
           href: perf-test/perfsdk-tutorial-lbd.md
         - name: Diagnostika problémů a analýza výkonnosti pomocí Trace parser
@@ -922,6 +931,8 @@
           href: financial/create-exchange-rate-providers.md
         - name: 'Vytvoření poskytovatele směnných kurzů v aplikaci Finance and Operations, verze 8.0'
           href: financial/create-exchange-rate-8.md
+    - name: 'Vyrovnání transakcí pomocí CustTrans::settleTransaction'
+      href: financial/settletransact-obsolete.md
 - name: Vývoj dodavatelsko-odběratelského řetězce
   items:
     - name: Průvodce vývojem Ganttova diagramu
@@ -1076,7 +1087,7 @@
       items:
         - name: Příprava na migraci kódu
           href: migration-upgrade/prepare-migration.md
-        - name: Konfigurovat mapování Azure DevOps
+        - name: Konfigurace mapování Azure DevOps
           href: migration-upgrade/configure-vso-solution.md
         - name: Rozdělení modelů
           href: dev-tools/model-split.md

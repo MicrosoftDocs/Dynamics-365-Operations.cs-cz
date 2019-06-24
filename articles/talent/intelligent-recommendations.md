@@ -3,7 +3,7 @@ title: Chytrá doporučení
 description: Toto téma vysvětluje, jak lze použít strojové učení pro poskytnutí doporučení pro práce a uchazeče o práci.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517505"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620613"
 ---
 # <a name="intelligent-recommendations"></a>Chytrá doporučení
 
@@ -33,7 +33,7 @@ Strojové učení může pomoci náborovým pracovníkům a náborovým manažer
 
 > [!NOTE] 
 > - Funkce chytrých doporučení jsou k dispozici pouze [s doplňkem Komplexní nábor](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Funkce pojednávaná v tomto tématu je k dispozici jako součást verze Preview. Obsah a funkce se mohou změnit. Chcete-li použít tuto funkci, požádejte správce o její povolení pomocí **Nastavení pro správu** v aplikaci Attract. Nastavte **Doporučení kandidáta**, **Doporučení práce** a **Doporučení potenciálního uchazeče** na **Zapnuto**. Další informace naleznete v tématu [Přístup k funkcím Preview v aplikaci Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> - Funkce pojednávaná v tomto tématu je k dispozici jako součást verze Preview. Obsah a funkce se mohou změnit. Chcete-li použít tuto funkci, požádejte správce o její povolení pomocí **Centrum pro správu** v aplikaci Attract. Nastavte **Doporučení kandidáta**, **Doporučení práce** a **Doporučení potenciálního uchazeče** na **Zapnuto**. Další informace naleznete v tématu [Přístup k funkcím Preview v aplikaci Talent](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Doporučení kandidáta

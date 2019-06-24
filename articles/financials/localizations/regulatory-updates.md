@@ -3,7 +3,7 @@ title: Povinné aktualizace
 description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
+ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530700"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "1593336"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -41,7 +41,8 @@ V případě pozdního oznámení, pozdní dostupnosti podrobností požadavku n
 
 Nejnovější plány povinné aktualizace naleznete v následující tabulce. 
 
-|Plánované datum vydání|Verze vydání|Země|Povinná aktualizace|
+|Plánované datum vydání|Verze vydání
+  |Země|Povinná aktualizace|
 |--------------------|---------------|-------|-------|
 |      2019. březen          |   10.0.0      | Rakousko      |   Změny v Kammerumlage 2019 (nákupní clo)    |
 |      2019. březen          |   10.0.0      |   Brazílie    |     Příspěvky SPED EFD - rozvržení 004 a 005  |
@@ -52,12 +53,23 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 |      2019. duben          |   10.0.1      |   Německo     |Elektronické faktury – Export faktur zákazníků ve formátu xRechnung 1.1         |
 |      2019. duben          |   10.0.1      |    Velká Británie     |[Změny odeslání výkazu DPH (Digitalizování daní)](emea-gbr-mtd-vat-integration.md)    |    
 |      2019. duben          |   10.0.1      |    Brazílie     |NF-e nové NT 2018.005         |
-|      2019. duben          |   10.0.1      |    Rusko     |Formát přiznání k DPH se mění od roku 2019         |
-|      2019. duben          |   10.0.1      |    Rusko     |Formát přiznání k DPH se mění od 2019 (knihy nákupu a prodeje) 
+|      2019. duben          |   10.0.1      |    Rusko     |[Formát přiznání k DPH se mění od roku 2019](rus-VAT-declaration.md) |
+|      2019. duben          |   10.0.1      |    Rusko     |Formát přiznání k DPH se mění od 2019 (knihy nákupu a prodeje) |
+|      2019. duben          |   10.0.1      |    Rusko     |Změny daňového přiznání daně z pozemku z roku 2018 |
+|      2019. duben          |   10.0.1      |    Rusko     |[Změny daňového přiznání daně z nemovitosti z roku 2019](rus-assessed-tax-declaration.md)|
+|      2019. duben          |   10.0.1      |    Rusko     |Změny daňového přiznání přepravní daně z roku 2019  |
+|      2019. duben            |   10.0.1      | Maďarsko      |  Maďarsko: online fakturace v.1.1 2019 v Microsoft Dynamics 365 for Finance and Operations  |
 |      2019. květen            |   10.0.2      | Brazílie      |   SPED ECD Layout 7   |
+|      Čeká na zpracování            |   10.0.3      | Brazílie      |   NF-e nové NT 2018.005 - v.1.20   |
+|      Čeká na zpracování            |   10.0.3      | Brazílie      |   SPED ECD Layout 7   |
+|      Čeká na zpracování            |   10.0.3      | Brazílie      |   SPED ECF - rozvržení 5 pro 2019   |
+|      Čeká na zpracování            |   10.0.3      | Litva    |   i.SAF sestava umožňuje uživateli definovat systémové kódy DPH spolu s legálními kódy daně    |
+|      Čeká na zpracování            |   10.0.3      | Polsko     |   SAF faktury (JPK_FA) v.2 z 1. července 2019  |
+|      Čeká na zpracování            |   10.0.3      | Brazílie   |   Úpravy fiskálního dokumentu ICMS povolují tabulku 5.2   |
+|      Čeká na zpracování            |   10.0.3      | Brazílie    |   NF-e dekret 54.308/18 (RS)   |
 
 
 ## <a name="additional-resources"></a>Další zdroje
-- Najděte všechny plánované a vydané povinné aktualizace v [Lifecycle Service - hledání problémů](https://lcs.dynamics.com/Logon/Index) (log in required).
+- Najděte všechny plánované a vydané povinné aktualizace v [Lifecycle Service - hledání problémů](https://lcs.dynamics.com/Logon/Index) (vyžaduje se přihlášení).
 - Seznam lokalizace, které jsou podporovány v Dynamics 365 for Finance and Operations naleznete v [příručce mezinárodní dostupnosti](https://aka.ms/dynamics_365_international_availability_deck).
 

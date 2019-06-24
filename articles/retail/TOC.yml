@@ -6,11 +6,11 @@
       href: get-started/whats-new.md
     - name: Funkce Preview v Dynamics 365 for Retail 10.0.3
       href: get-started/whats-new-10-0-3.md
-    - name: Funkce Preview v Dynamics 365 for Retail 10.0.2
+    - name: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.2
       href: get-started/whats-new-10-0-2.md
     - name: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.1
       href: get-started/whats-new-10-0-1.md
-    - name: Co je nového a upraveného v aplikaci Dynamics 365 for Retail (duben 2019)
+    - name: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail (duben 2019)
       href: get-started/april-whats-new.md
     - name: Před zakoupením aplikace Retail
       href: get-started/before-you-buy.md
@@ -47,7 +47,7 @@
       href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
     - name: Implementace více LCS projektů a produkčních prostředí na stejném klientovi služby Azure Active Directory
       href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
-    - name: Implementace projektů v aplikaci Finance and Operations Retail
+    - name: Implementace projektů Retail v aplikaci Finance and Operations
       href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
     - name: 'Nastavení nových prostředí, Azure DevOps a větví pro projekty Retail'
       href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
@@ -56,10 +56,14 @@
     - name: Testování a problémy s výkonností
       href: dev-itpro/retail-implementation-testing-performance.md
 - name: Distribuovaná správa objednávek (DOM)
-  href: dom.md
+  items:
+    - name: Přehled DOM
+      href: dom.md
+    - name: Konfigurace nákladů
+      href: cost.md
 - name: Platby
   items:
-    - name: Metody platby
+    - name: Způsoby platby
       href: payment-methods.md
     - name: 'Nastavení platební karty, autorizace a záznam'
       href: ../financials/accounts-receivable/credit-card-authorizations.md
@@ -67,6 +71,8 @@
       href: cash-denominations.md
     - name: Platební konektor Dynamics 365 pro Adyen
       href: dev-itpro/adyen-connector.md
+    - name: Úspora nástrojů online plateb s konektorem Adyen
+      href: dev-itpro/adyen-connector-listPI.md
     - name: Nastavení scénářů plateb faktur
       href: payinvoice.md
     - name: Časté dotazy k platbám
@@ -95,7 +101,9 @@
       href: tasks/create-calculate-post-statement-retail-store.md
     - name: Vylepšení funkcionality zaúčtování výkazů
       href: statement-posting-EOD.md
-    - name: 'Konfigurace parametrů Retail, které ovlivňují výkazy maloobchodu'
+    - name: Vylepšené zpracování položek sledovaných dávkou
+      href: batch.md
+    - name: 'Konfigurace parametrů maloobchodu, které ovlivňují výkazy maloobchodu'
       href: tasks/parameter-configurations-retail-statements.md
     - name: 'Konfigurace nastavení metod platby, které ovlivňují výkazy maloobchodu'
       href: tasks/payment-configurations-retail-statements.md
@@ -115,6 +123,8 @@
       href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
     - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
       href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Přehled omnikanálových plateb
+  href: omni-channel-payments.md
 - name: Omnikanálové rozšířené automatické náklady
   items:
     - name: Konfigurace a použití rozšířených automatických nákladů
@@ -137,7 +147,7 @@
       href: set-up-continuity-program.md
     - name: Konfigurace a práce s blokováním objednávek kontaktního střediska
       href: work-with-order-holds.md
-    - name: Metody platby
+    - name: Způsoby platby
       href: work-with-payments.md
 - name: Nastavení a správa kanálů
   items:
@@ -159,12 +169,14 @@
       href: MPOS-or-CPOS.md
     - name: Online a offline POS operace
       href: pos-operations.md
-    - name: Aktivace zařízení přizpůsobeného Retail Modern POS
+    - name: Aktivace zařízení přizpůsobeného Retail MPOS
       href: dev-itpro/retail-POS-activation-changes.md
     - name: Rozložení obrazovky ukázkových dat v MPOS a Cloud POS
       href: demo-data.md
     - name: Vyhledávání produktu a zákazníka v POS
       href: POS-search-improvements.md
+    - name: Vylepšení řízení hotovosti
+      href: cash-mgmt.md
     - name: Vyhledávání zásob v POS
       href: product-variants-POS.md
     - name: Pozastavení a obnovení transakcí v POS

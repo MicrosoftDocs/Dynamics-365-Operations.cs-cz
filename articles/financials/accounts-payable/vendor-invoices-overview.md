@@ -1,16 +1,16 @@
 ---
 title: Přehled faktur dodavatele
-description: V tomto článku jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
+description: V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
 author: abruer
 manager: AnnBe
-ms.date: 03/29/2019
+ms.date: 06/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -18,56 +18,60 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d7cec48b1e01d308cfc67260ac82a50a8d76844
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b57c18b5b2cf690111511e4c5a92d51fc23dd68c
+ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509491"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1618266"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-V tomto článku jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb. 
+
+V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
 
 ## <a name="vendor-invoices"></a>Faktury dodavatele
 
-Faktura dodavatele z nákupní objednávky je faktura, která je vytvořena při přijetí produktů nebo služeb podle nákupní objednávky, kterou jste uskutečnili s dodavatelem. Faktura dodavatele obsahuje hlavičku a jeden nebo více řádků se zbožím nebo službami. Faktura dodavatele představuje konec cyklu nákupní objednávky, příjemky produktu a faktury dodavatele. 
+Faktura dodavatele z nákupní objednávky je faktura, která je vytvořena při přijetí produktů nebo služeb podle nákupní objednávky, kterou jste uskutečnili s dodavatelem. Faktura dodavatele obsahuje hlavičku a jeden nebo více řádků se zbožím nebo službami. Faktura dodavatele představuje konec cyklu nákupní objednávky, příjemky produktu a faktury dodavatele.
 
-Ačkoliv jsou některé faktury dodavatele propojeny s nákupní objednávkou, mohou faktury dodavatele obsahovat také řádky, které neodpovídají řádkům nákupní objednávky. Můžete vytvořit také faktury dodavatele, které nejsou přidruženy k žádné nákupní objednávce. Tyto faktury dodavatele mohou představovat probíhající služby, jako například provozní účet, takže při jejich přidání nemusíte odkazovat na nákupní objednávku. 
+Ačkoliv jsou některé faktury dodavatele propojeny s nákupní objednávkou, mohou faktury dodavatele obsahovat také řádky, které neodpovídají řádkům nákupní objednávky. Můžete vytvořit také faktury dodavatele, které nejsou přidruženy k žádné nákupní objednávce. Tyto faktury dodavatele mohou představovat probíhající služby, jako například provozní účet, takže při jejich přidání nemusíte odkazovat na nákupní objednávku.
 
 Je několik způsobů, jak zadat fakturu dodavatele:
 
--   Registr faktur dodavatele umožňuje rychle zadat faktury, které neodkazují na nákupní objednávky, abyste mohli určovat časově rozlišené výdaje. Pomocí deníku schválení faktur dodavatelů můžete tyto faktury vybrat a zaúčtovat je do zůstatku dodavatele a časové rozlišení tak stornovat.
--   Deník faktur dodavatele slouží k rychlému zadání faktur, které neodkazují na nákupní objednávku, v jediném kroku.
--   Spolu s evidencí faktur dodavatele slouží registr faktur dodavatele k rychlému zadání faktur, které mají mít časově rozlišené výdaje. Přidružené nákupní objednávky můžete později otevřít k zaúčtování faktury na účet výdajů.
--   Stránky **Otevřít faktury dodavatele** a **Nevyřízené faktury dodavatele** slouží k vytváření faktur dodavatele z potvrzených nákupních objednávek.
+- Registr faktur dodavatele umožňuje rychle zadat faktury, které neodkazují na nákupní objednávky, abyste mohli určovat časově rozlišené výdaje. Pomocí deníku schválení faktur dodavatelů můžete tyto faktury vybrat a zaúčtovat je do zůstatku dodavatele a časové rozlišení tak stornovat.
+- Deník faktur dodavatele slouží k rychlému zadání faktur, které neodkazují na nákupní objednávku, v jediném kroku.
+- Spolu s evidencí faktur dodavatele slouží registr faktur dodavatele k rychlému zadání faktur, které mají mít časově rozlišené výdaje. Přidružené nákupní objednávky můžete později otevřít k zaúčtování faktury na účet výdajů.
+- Stránky **Otevřít faktury dodavatele** a **Nevyřízené faktury dodavatele** slouží k vytváření faktur dodavatele z potvrzených nákupních objednávek.
 
 V následující diskusi naleznete více informací o použití stránek **Otevřít faktury dodavatele** nebo **Nevyřízené faktury dodavatele** k vytvoření faktury dodavatele z nákupní objednávky.
 
 ## <a name="understanding-invoice-line-quantities"></a>Princip množství na řádcích faktury
+
 Při otevření faktury dodavatele ze související nákupní objednávky se řádky faktury vytvoří z nákupní objednávky. Dle výchozího nastavení se množství převezme z množství na příjemce produktu. Můžete však použít některé z následujících výchozích chování:
 
--   **Množství nynějšího příjmu** – tuto možnost použijte pro částečné dodávky. Výchozí hodnota v poli **Množství** se převezme z pole s množstvím **Přijmout nyní** na nákupní objednávce.
--   **Objednané množství** – tuto možnost použijte pro úplné dodávky. Výchozí hodnota v poli **Množství** se převezme z pole s množstvím **Objednáno** na nákupní objednávce.
--   **Registrované množství** – tuto možnost použijte, pokud položka vyžaduje registraci (určuje se na stránce **Skupiny modelů položek**. Výchozí hodnota v poli **Množství** je fyzické upravené množství, které bylo zaregistrováno.
--   **Množství v příjemce produktu** – tuto možnost použijte, pokud pro danou objednávku již byla přijata příjemka produktu. Výchozí hodnota v poli **Množství** se převezme z celkového množství dostupných příjemek produktu.
--   **Registrované množství a služby** – tuto možnost použijte, pokud byla množství registrována v deníku doručených položek pro položky na skladě nebo položky, které nejsou na skladě. Tato možnost zahrnuje také služby bez ohledu na to, zda jsou registrovány.
+- **Množství nynějšího příjmu** – tuto možnost použijte pro částečné dodávky. Výchozí hodnota v poli **Množství** se převezme z množství určeného v poli **Přijmout nyní** na nákupní objednávce.
+- **Objednané množství** – tuto možnost použijte pro úplné dodávky. Výchozí hodnota v poli **Množství** se převezme z množství určeného v poli **Objednáno** na nákupní objednávce.
+- **Registrované množství** – tuto možnost použijte, pokud položka vyžaduje registraci (určuje se na stránce **Skupiny modelů položek**. Výchozí hodnota v poli **Množství** je fyzické upravené množství, které bylo zaregistrováno.
+- **Množství v příjemce produktu** – tuto možnost použijte, pokud pro danou objednávku již byla přijata příjemka produktu. Výchozí hodnota v poli **Množství** se převezme z celkového množství dostupných příjemek produktu.
+- **Registrované množství a služby** – tuto možnost použijte, pokud byla množství registrována v deníku doručených položek pro položky na skladě nebo položky, které nejsou na skladě. Tato možnost zahrnuje také služby bez ohledu na to, zda jsou registrovány.
 
-Používá-li vaše právnická osoba párování faktur, můžete si zobrazit výsledky párování množství ve sloupci **Spárování množství v příjemce produktu**. K zobrazení výsledků párování množství můžete použít také příkaz nabídky **Podrobnosti o párování** na kartě **Kontrola**.
+Používá-li vaše právnická osoba párování faktur, můžete si zobrazit výsledky párování množství ve sloupci **Spárování množství v příjemce produktu**. K zobrazení výsledků párování množství můžete použít také tlačítko **Podrobnosti o párování** na kartě podokna akcí **Kontrola**.
 
 ## <a name="adding-a-line-that-wasnt-on-the-purchase-order"></a>Přidání řádku, který nebyl v nákupní objednávce
-Do faktury dodavatele můžete přidat nový řádek, který nebyl na nákupní objednávce. Je nutné vybrat číslo položky nebo kategorii zásobování. Poté lze na řádek přidat množství, ceny a částky. Řádek bude zahrnut pouze v zásadách párování pro součty faktur.
+
+Do faktury dodavatele můžete přidat řádek, který nebyl na nákupní objednávce. Je nutné vybrat číslo položky nebo kategorii zásobování. Poté lze na řádek přidat množství, ceny a částky. Řádek bude zahrnut pouze v zásadách párování pro součty faktur.
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Odeslání faktury dodavatele ke kontrole
-Vaše organizace může využívat workflowy ke správě procesu kontroly faktur dodavatele. Hlavička faktury, řádek faktury, nebo obojí může vyžadovat přezkoumání pracovního postupu. Ovládací prvky workflowu se použijí pro hlavičku nebo řádek podle toho, která část byla před kliknutím na ovládací prvek aktivní. Namísto tlačítka **Zaúčtovat** se zobrazí tlačítko **Odeslat**, které slouží k odeslání faktury dodavatele do procesu kontroly.
+
+Vaše organizace může využívat workflowy ke správě procesu kontroly faktur dodavatele. Hlavička faktury, řádek faktury, nebo obojí může vyžadovat přezkoumání pracovního postupu. Ovládací prvky workflow se použijí na záhlaví nebo řádek podle toho, která část byla před zvolením ovládacího prvku aktivní. Namísto tlačítka **Zaúčtovat** se zobrazí tlačítko **Odeslat**, které slouží k odeslání faktury dodavatele do procesu kontroly.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Spárování faktur dodavatele s příjemkami produktu
-Podle potřeby můžete zadávat a ukládat informace o fakturách dodavatele a porovnat řádky faktury s řádky příjemky produktu. Také můžete spárovat částečná množství pro řádek. 
 
-Fakturu dodavatele lze vytvořit na základě řádkových položek příjemek produktu, které byly přijaty k dnešnímu datu, a to i tehdy, když všechny položky určité nákupní objednávky nebyly dosud přijaty. Tuto možnost můžete využít například tehdy, když dodavatel zasílá jednou za měsíc fakturu, ve které jsou uvedeny všechny jím odeslané dodávky v daném měsíci. Každá příjemka produktu představuje částečnou nebo úplnou dodávku položek uvedených v nákupní objednávce. 
+Podle potřeby můžete zadávat a ukládat informace o fakturách dodavatele a porovnat řádky faktury s řádky příjemky produktu. Také můžete spárovat částečná množství pro řádek.
+
+Fakturu dodavatele lze vytvořit na základě řádkových položek příjemek produktu, které byly přijaty do dnešního data, a to i tehdy, když všechny položky určité nákupní objednávky nebyly dosud přijaty. Tuto možnost můžete využít například tehdy, když dodavatel zasílá jednou za měsíc fakturu pokrývající všechny jím odeslané dodávky v daném měsíci. Každá příjemka produktu představuje částečnou nebo úplnou dodávku položek uvedených v nákupní objednávce.
 
 Při zaúčtování faktury je množství v poli **Zůstatek faktury** u každé položky aktualizováno celkovým počtem přijatého množství z vybraných příjemek produktu. Pokud bude množství **Zůstatek faktury** i množství **Zbývá dodat** pro všechny položky na nákupní objednávce nulové (0), stav nákupní objednávky se změní na hodnotu **Fakturováno**. Pokud množství v poli **Zůstatek faktury** není nulové (0), stav nákupní objednávky se nezmění a k této objednávce je možné zadat další faktury.
 
@@ -77,9 +81,9 @@ Více informací naleznete v tématu [Zaznamenání faktury dodavatele a spáro
 
 ## <a name="working-with-multiple-invoices"></a>Práce s více fakturami
 
-Můžete pracovat s více fakturami současně a zaúčtovat je všechny najednou. Pokud je nutné vytvořit více faktur, použijte stránku **Nevyřízené faktury dodavatele**. Potřebujete-li zaúčtovat a vytisknout více faktur dodavatele, použijte stránku deníku pro schvalování faktur. Když používáte deník pro schvalování faktur, musí být pro nákupní objednávku zaúčtována alespoň jedna příjemka produktu a faktura pro nákupní objednávku musí být zaúčtována do registru faktur. Finanční informace pro fakturu pocházejí z faktury zaúčtované do registru.
+Můžete pracovat s více fakturami současně a zaúčtovat je všechny najednou. Pokud je nutné vytvořit více faktur, použijte stránku **Nevyřízené faktury dodavatele**. Potřebujete-li zaúčtovat a vytisknout více faktur dodavatele, použijte deník pro schvalování faktur. Když používáte deník pro schvalování faktur, musí být pro nákupní objednávku zaúčtována alespoň jedna příjemka produktu a faktura pro nákupní objednávku musí být zaúčtována do registru faktur. Finanční informace pro fakturu pocházejí z faktury zaúčtované do registru.
 
-## <a name="recovering-vendor-invoices-that-are-in-use"></a>Obnovení faktur dodavatele, které se používají
+## <a name="recovering-vendor-invoices-that-are-being-used"></a>Obnovení faktur dodavatele, které se používají
 
 Když se používá faktura dodavatele, nemůže být upravena jiným uživatelem. Stav faktury však může někdy znamenat, že se faktura používá, i když není aktivně upravována. Aplikace například mohla přestat odpovídat, když byla faktura upravována, nebo uživatel může nechtěně nechat otevřenou fakturu v aplikaci.
 
@@ -87,15 +91,18 @@ Můžete použít stránku **Obnovit faktury dodavatel** pro obnovení nebo uvol
 
 Na stránku **Obnovit faktury dodavatele** budete mít přístup pouze v případě, že vám je přiděleno funkční oprávnění zabezpečení **Obnovit používané faktury dodavatele**. Kromě toho musí být zapnutý parametr **Povolit obnovení faktury dodavatele** na stránce **Parametry závazků**.
 
+## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Resetování stavu workflow pro faktury dodavatele z Bez možnosti obnovy na Koncept
+
+Instance workflow, která byla zastavena kvůli neobnovitelné chybě, bude míst stav workflow **Bez možnosti obnovy**. Pokud je stav faktury dodavatele **Bez možnosti obnovy**, můžete ho obnovit do stavu **Koncept**. Poté můžete upravit fakturu dodavatele. Tato funkce je k dispozici, pokud je zapnutý parametr **Resetovat stav konceptu workflow faktury dodavatele** na stránce **Správa funkcí**.
+
+Na stránce **Resetovat stav workflow faktur dodavatele** můžete resetovat stav workflow na **Koncept**. Můžete otevřít tuto stránku z navigace **Periodická úloha**. Na stránce jsou zobrazeny všechny faktury dodavatele, které mají stav workflow **Bez možnosti obnovy** v aktuální právnické osobě. Dále zobrazuje uživatele, který odeslal každou fakturu do workflow, a identifikátor faktury, a poskytuje odkaz na historii workflow. Chcete-li resetovat stav workflow na **Koncept**, označte jednu nebo více faktur a poté vyberte **Aktualizovat na Koncept**. Po resetování stavu workflow na **Koncept** bude k dispozici pro úpravy na stránce **Faktura dodavatele**.
+
+Na stránku **Resetovat stav workflow faktur dodavatele** můžete přistoupit pouze tehdy, pokud je vám přiřazeno funkční oprávnění zabezpečení **Udržovat stav pro workflow faktury dodavatele** a oprávnění **Resetovat stav pro workflow faktury dodavatele**.
+
 ## <a name="additional-resources"></a>Další zdroje
 
- - [Nastavení zásad faktur dodavatele](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
-
- - [Zadání dat faktury do závazků s použitím faktury dodavatele](tasks/key-invoice-data-ap-system-vendor-invoice.md)
-
- - [Zadání dat faktury do závazků s použitím deníku schválení](tasks/key-invoice-data-into-ap-system-approval-journal.md)
-
- - [Zadání dat faktury do systému závazků s použitím evidence faktur](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
-
- - [Zaznamenání faktury dodavatele do deníku faktur](tasks/record-vendor-invoice-invoice-journal.md)
-
+- [Nastavení zásad faktur dodavatele](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
+- [Zadání dat faktury do závazků s použitím faktury dodavatele](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+- [Zadání dat faktury do závazků s použitím deníku schválení](tasks/key-invoice-data-into-ap-system-approval-journal.md)
+- [Zadání dat faktury do systému závazků s použitím evidence faktur](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
+- [Zaznamenání faktury dodavatele do deníku faktur](tasks/record-vendor-invoice-invoice-journal.md)

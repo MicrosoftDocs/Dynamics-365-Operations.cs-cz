@@ -3,7 +3,7 @@ title: Sestavy výdajů v nové podobě
 description: Toto téma obsahuje informace o přepracovaném a upraveném rozhraní pro zadávání sestavy výdajů v Microsoft Dynamics 365 for Finance and Operations. Nové rozhraní zjednodušuje proces dokončování sestav výdajů a snižuje požadovaný čas.
 author: ryansandness
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 3039cda3f2cf9259ca06207bdf941bc6b0fb28e1
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538676"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592630"
 ---
 # <a name="expense-reports-reimagined"></a>Sestavy výdajů v nové podobě
 
@@ -46,10 +46,9 @@ Chcete-li nové rozhraní zapnout, použijte pracovní prostor **Správa funkcí
 
 ## <a name="getting-started-video-for-new-users"></a>Začínáme s videem pro nové uživatele
 
-Můžete se podívat na krátké video, které ukazuje hlavní funkce zadávání výdajů.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO]
 
-> [!NOTE]
-> Video ještě není k dispozici. Toto téma bude aktualizováno, jakmile bude video k dispozici.
+Video [Rozhraní výdajů v aplikaci Dynamics 365 for Finance and Operations](https://youtu.be/Ocy-MsTvEE0) (zobrazené výše) je zahrnut do [playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
 
 ## <a name="new-features"></a>Nové funkce
 

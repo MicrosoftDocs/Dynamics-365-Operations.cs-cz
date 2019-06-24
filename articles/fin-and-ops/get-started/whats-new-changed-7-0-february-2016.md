@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5fb6b23d11ab263ed158a0a4476f77ed22b5084
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561802"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595655"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 
@@ -623,7 +623,7 @@ Pracovní prostor <strong>Správa katalogu</strong> disponuje těmito funkcemi:
 <ul>
 <li>Vytvoření a konfigurace nových kanálů a souvisejících entit.</li>
 <li>Správa denních aktivit obchodu.</li>
-<li>Zpracování maloobchodních transakcí v Microsoft DynamicsAX, generování výkazy maloobchodu a aktualizace zásob a finančních údajů Microsoft DynamicsAX.</li>
+<li>Zpracování maloobchodních transakcí v Microsoft Dynamics AX, generování výkazy maloobchodu a aktualizace zásob a finančních údajů Microsoft Dynamics AX.</li>
 </ul>
 </td>
 <td>Na pracovním prostoru <strong>Nasazení kanálu</strong> můžete provádět tyto činnosti:
@@ -678,7 +678,7 @@ Pracovní prostor <strong>Správa katalogu</strong> disponuje těmito funkcemi:
 <tr>
 <td>Analyzovat data prodeje přes maloobchodní kanály pomocí obsahu Power BI „Sledování výkonu maloobchodního kanálu“.</td>
 <td>Není k dispozici.</td>
-<td>Na stránce PowerBI.com vyberte možnost <strong>Načíst data</strong> a poté vyberte balíček obsahu <strong>Dynamics AXAX – výkonnost maloobchodního kanálu</strong>. Zadejte adresu URL koncového bodu Dynamics AX, aby se data zobrazovala na řídicím panelu.</td>
+<td>Na stránce PowerBI.com vyberte možnost <strong>Načíst data</strong> a poté vyberte balíček obsahu <strong>Dynamics AX – výkonnost maloobchodního kanálu</strong>. Zadejte adresu URL koncového bodu Dynamics AX, aby se data zobrazovala na řídicím panelu.</td>
 <td>Třemi až čtyřmi kliknutími mohou organizace nasadit do provozu řídicí panel Power BI obsahující důležitá finanční data. Obsah lze přizpůsobit podle požadavků organizace. Kromě toho mohou uživatelé vkládat dlaždice panelu Power BI na své vlastní pracovní prostory v aplikaci Dynamics AX, aby měli přehled o všech analytických informacích.</td>
 </tr>
 <tr>
@@ -733,7 +733,7 @@ Se serverem maloobchodu a správou dat mohou spotřebitelé a podniků vytváře
 <td>K dispozici jsou hostované a škálovatelné služby e-commerce, které lze použít s online obchody třetích stran.</td>
 </tr>
 <tr>
-<td>Přesun dat mezi záložní kanceláří Microsoft DynamicsAX a kanály pomocí Commerce Data Exchange.</td>
+<td>Přesun dat mezi záložní kanceláří Microsoft Dynamics AX a kanály pomocí Commerce Data Exchange.</td>
 <td>Commerce Data Exchange je systém, který přenáší data mezi aplikací Microsoft Dynamics AX a maloobchodními kanály, jako jsou například online obchody nebo kamenné obchody. Další informace naleznete v tématu <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Funkční parita s Microsoft Dynamics AX 2012 CU8. Upozorňujeme však na tyto skutečnosti:
 <ul>
@@ -971,7 +971,7 @@ K dispozici je zlepšená instalace součásti zlepšení odlehčeného klienta 
 </tr>
 <tr>
 <td>Sledovat stav systému a určit příčiny chyb a potíží.</td>
-<td>Tato funkce vyžaduje balíček <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>Tato funkce vyžaduje balíček <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Sledování a diagnostika pro součásti maloobchodu jsou nyní dostupné prostřednictvím řídicího panelu <strong>Provozní analytika</strong>v LCS.</td>
 <td>Řídicí panel <strong>Provozní analytika</strong> je cloudový sledovací portál, díky kterému není potřeba instalovat infrastrukturu System Center Operations Manager (SCOM).</td>
 </tr>

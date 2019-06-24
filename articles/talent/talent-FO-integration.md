@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517571"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617336"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Nejčastější dotazy týkající se integrace aplikace Dynamics 365 for Talent s Dynamics 365 for Finance and Operations
 
@@ -46,7 +46,7 @@ Finanční dimenze aktuálně nejsou v Common Data Service pro aplikace a proto 
 
 V případě dat, která existují v modulu Finance and Operations, ale ne v aplikaci Talent, spojte tyto dva systémy pomocí příkazu **Konfigurovat odkazy** v aplikaci Talent. Další informace o tom, jak konfigurovat propojení mezi aplikacemi Talent a Finance and Operations získáte v tématu [Co je nového nebo změněného v Dynamics 365 for Talent Core HR (October 31, 2018)](whats-new-talent-october-31.md).
 
-![](media/MapFinancialDimensions.png)
+![Mapovat finanční dimenze](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Někdy se stane, že když importuji zaměstnance, přejdou v modulu Finance and Operations mezi neaktivní zaměstnance. Proč?
 
@@ -60,14 +60,14 @@ Synchronizace dat řídí plán provedení. Integrace vyzvedne záznam, pokud se
 
 S použitím "Rozšířeného dotazu" můžete filtrovat a měnit tvar zdrojových dat před předáním do cíle.
 
-![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Rozšířený dotaz aktivních pracovníků](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Můžu určit pole, která chcete odeslat do modulu Finance and Operations pro konkrétní entitu?
 
 Pole lze přidat nebo odebrat z úkolu integrace. Ne všechna datová pole, která existují na Common Data Service budou doplněna z Core HR.
 Prostřednictvím PowerApps lze naplnit další data.
 
-![](media/SpecifyFieldsIncludedInIntegration.png)
+![Přidání do úkolu integrace a odstranění z něj](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-talent-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Mám nastavenou integraci jako dávkovou úlohu, ale Talent ztratil připojení do cílového systému. Jak se dá odeslat stejná sada změny do cílového systému?
 

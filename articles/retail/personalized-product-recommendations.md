@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c73bc10332329e81986a259969f8fe34b57f4ee6
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559551"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606989"
 ---
 # <a name="personalized-product-recommendations"></a>Přizpůsobená doporučení produktu
 
@@ -44,7 +44,7 @@ Doporučení produktu jsou povolena pro následující scénáře POS. Jsou k di
     - Pokud obchod asociuje návštěvy se stránkou **Podrobnosti o produktu** při vyhledávání předchozích transakcí napříč různými kanály, modul doporučení navrhuje další položky, které budou pravděpodobně nakoupeny společně.
     - Pokud pracovník obchodu přidá zákazníka k transakci a poté navštíví stránku **Podrobnosti o produktu**, modul doporučení poskytne individuální doporučení prostřednictvím historie transakcí zákazníka.
 
-    [![proddetails](./media/proddetails.png)](./media/proddetails.png)
+    [![Doporučení na stránce Podrobnosti produktu](./media/proddetails.png)](./media/proddetails.png)
 
 2. Na stránce **Transakce**:
 
@@ -54,13 +54,11 @@ Doporučení produktu jsou povolena pro následující scénáře POS. Jsou k di
     > [!NOTE]
     > Pokud chce maloobchodník zobrazit doporučení na stránce **Transakce**, musí aktualizovat rozložení obrazovky v Dynamics 365 for Retail. Ovládací prvek **Doporučení** musí být na stránce **Transakce**.
 
-    [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Doporučení na stránce Transakce](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3. Na stránce **Podrobnosti o zákazníkovi**:
+3. Na stránce **Podrobnosti o odběrateli** modul doporučení navrhuje položky na základě ID uživatele a položek na seznamu přání uživatele.
 
-    - Modul doporučení navrhuje položky na základě ID uživatele a položek na seznamu přání uživatele.
-
-    [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
+    [![Doporučení na stránce Podrobnosti o odběrateli](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
 ## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurace aplikace Dynamics 365 for Retail pro povolení doporučení POS
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541261"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592653"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Návrhář receptur v elektronickém výkaznictví
 
@@ -443,7 +443,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <tr>
 <td>INDEX (seznam, index)</td>
 <td>Tato funkce vrací záznam, který je vybrán určitým číselným indexem v seznamu. Výjimka je vyvolána v případě, že index je mimo rozsah záznamů v seznamu.</td>
-<td>Pokud zadáte zdroj dat <strong>DS</strong> pro typ <strong>vypočítaného pole</strong> a to obsahuje výraz <strong>SPLIT ("A|B|C", “|”), 2)</strong>, výraz <strong>DS.Value</strong> vrátí textovou hodnotu "B". Výraz <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> vrátí též textovou hodnotu “B”.</td>
+<td>Pokud zadáte zdroj dat <strong>DS</strong> pro typ <strong>vypočítaného pole</strong> a to obsahuje výraz <strong>SPLIT ("A|B|C", “|”), 2</strong>, výraz <strong>DS.Value</strong> vrátí textovou hodnotu "B". Výraz <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> vrátí též textovou hodnotu “B”.</td>
 </tr>
 </tbody>
 </table>

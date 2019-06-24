@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567969"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577837"
 ---
 # <a name="get-support-for-dynamics-365-for-retail"></a>Získání podpory pro Dynamics 365 for Retail
 
@@ -61,7 +61,7 @@ Chcete-li získat podporu pro aplikaci Retail, použijte zdroje v následující
 <li>Na kartě <strong>Aktivní problém</strong> vyberte problém a poté klikněte na tlačítko <strong>Odeslat do společnosti Microsoft</strong>.</li>
 <li>Na kartě <strong>Odesláno do společnosti Microsoft</strong> klikněte na možnost <strong>Odeslat nový incident</strong> k odeslání problému.</li>
 </ul>
-<blockquote>[!NOTE] Partneři a zákaznici s podporou Microsoft Premier mohou také odeslat lístky podpory Premier pomocí výše uvedených kroků.</blockquote>
+<p><strong>Poznámka:</strong> Partneři a zákaznici s podporou Microsoft Premier mohou také odeslat lístky podpory Premier pomocí výše uvedených kroků.</p>
 </td>
 </tr>
 <tr>
@@ -84,4 +84,4 @@ Ohledně technických dotazů, které se vztahují k přihlášení a přístupu
 </tbody>
 </table>
 
-Další informace o nabídkách podpory Microsoft Dynamics naleznete v tématu [Online podpora Microsoft Dynamics](https://dynamics.microsoft.com/en-us/support/).
+Další informace o nabídkách podpory Microsoft Dynamics naleznete v tématu [Online podpora Microsoft Dynamics](https://dynamics.microsoft.com/support/).

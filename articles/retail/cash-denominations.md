@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24775044e5a502a5615392a6a8c4030bdfafb0ab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a34ae8084c0ad55221f4ab93eb8c6481fa8c4771
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558566"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606749"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Konfigurace nominálních hodnot hotovosti pro pokladní místo (POS)
 
@@ -34,9 +34,9 @@ Nominální hodnoty hotovosti pro bankovky a mince lze definovat v účetním sy
 
 ## <a name="define-denominations"></a>Definování nominálních hodnot
 
-Nominální hodnoty se nastavují na úrovni obchodu na stránce **Nastavit** \> **Možnost výkazu hotovosti z vlastnosti** obchodu.
+Nominální hodnoty se nastavují na úrovni obchodu v možnosti **Nastavit** \> **Výkaz hotovosti** ze stránky vlastnosti obchodu.
 
-![nominální hodnoty hotovosti](./media/image1-denomination.png)
+![Možnost výkazu hotovosti](./media/image1-denomination.png)
 
 Jak definovat nominální hodnotu:
 
@@ -44,7 +44,7 @@ Jak definovat nominální hodnotu:
 1. Zadejte typ (mince nebo bankovka).
 1. Zadejte částku (hodnota).
 
-![nominální hodnoty hotovosti](./media/image2-denomination.png)
+![Stránka nominální hodnoty výkazu hotovosti](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>Konfigurace funkčního profilu
 

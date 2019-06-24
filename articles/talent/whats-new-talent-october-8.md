@@ -1,5 +1,5 @@
 ---
-title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (1. října 2018)
+title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (8. října 2018)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 92f06d29dfa8110106a2a0e71434b2c0c75110b5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34216e2181915cf615e6e77fa2a10d06a4e9db85
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517544"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617265"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-8-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (8. října 2018)
 

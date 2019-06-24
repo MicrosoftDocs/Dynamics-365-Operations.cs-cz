@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552710"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606888"
 ---
 # <a name="attributes-and-attribute-groups"></a>Atributy a skupiny atributů
 
@@ -176,8 +176,8 @@ Chcete-li přiřadit skupiny atributů ke kategoriím v hierarchii maloobchodní
 > [!NOTE]
 > Tento postup lze také použít k přiřazení skupin atributů ke kategoriím v hierarchii kategorie navigace kanálu a doplňkové hierarchii kategorií produktu. V kroku 2 použijte následující navigační cesty:
 >
-> - **Maloobchod** &gt; **Správa kategorií a produktů** &gt; **Navigační kategorie kanálu**
-> - **Maloobchod** &gt; **Správa kategorií a produktů** &gt; **Doplňkové kategorie produktů**
+> - Maloobchod &gt; Správa kategorií a produktů &gt; Navigační kategorie kanálu
+> - Maloobchod &gt; Správa kategorií a produktů &gt; Doplňkové kategorie produktů
 
 ### <a name="assign-attribute-groups-to-retail-stores"></a>Přiřazení skupin atributů k maloobchodním prodejnám
 

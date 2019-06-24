@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
 author: sericks007
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1527664"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620638"
 ---
 # <a name="removed-or-deprecated-features"></a>Odstraněné nebo zastaralé funkce
 
@@ -38,8 +38,35 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 > [!NOTE]
 > Počínaje vydáním Dynamics 365 for Finance and Operations z července 2017 s aktualizací Platform Update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci. Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.
 
-> [!NOTE]
 > Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+
+### <a name="france-fec-accounting-data-export-in-xml"></a>Francie: Export účetních dat v FEC ve formátu XML
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | **Francouzský soubor auditu FEC** je nahrazen formátem TXT a je k dispozici pomocí voleb **Hlavní kniha** \> **Periodické úlohy** \> **Export dat**.
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Hlavní kniha |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé. Plánovaná doba pro odstranění funkcionality je červenec 2020. |
+
+=======
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="legacy-navigation-bar"></a>Starší verze navigačníh panelu
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Zarovnání záhlaví s jinými produkty Dynamics a Office. Další informace naleznete v tématu [Aktualizovaný navigační panel zarovnaný se záhlavím Office](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).
+| **Nahrazeno jinou funkcí?**   | Počínaje aktualizací Platform Update 24 byl zaveden navigační panel s novým stylem a vyhledáváním. |
+| **Ovlivněné oblasti produktu**         | Webový klient |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: Od dubna 2020 již starší navigační panel nebude k dispozici. Do tohoto okamžiku se mohou zákazníci vrátit ke staršímu navigačnímu panelu prostřednictvím stránky **Možnosti výkonu klienta**. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 s aktualizací Platform Update 26
@@ -985,7 +1012,7 @@ Tato funkce poskytuje výstup v jazyce eXtensible Business Reporting Language (X
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Ovládací prvky formuláře ActiveX a spravovaného hostitele jsou založeny na zastaralém klientovi pro stolní počítače. |
-| **Nahrazeno jinou funkcí?**   | Rozšířitelná architektura ovládacích prvků podporuje vytváření nových ovládacích prvků založených na jazyku HTML, CSS a JavaScript a slouží k prvotřídnímu ovládání v prostředí nástroje Microsoft Visual Studio. |
+| **Nahrazeno jinou funkcí?**   | Rozšířitelná architektura ovládacích prvků podporuje vytváření nových ovládacích prvků založených na HTML, CSS a JavaScriptu a slouží k prvotřídnímu ovládání v prostředí nástroje Microsoft Visual Studio. |
 | **Ovlivněné oblasti produktu**         | Všechny moduly     |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.       |
 

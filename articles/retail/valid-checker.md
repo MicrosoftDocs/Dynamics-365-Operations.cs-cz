@@ -3,7 +3,7 @@ title: Kontrola konzistence maloobchodních transakcí
 description: Toto téma popisuje funkci kontroly konzistence maloobchodních transakcí v aplikaci Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 05/30/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 972c4d6b244eebc85cc801353ce8fb25ecbc0655
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517018"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617313"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Kontrola konzistence maloobchodních transakcí
 
@@ -33,12 +33,12 @@ ms.locfileid: "1517018"
 
 Toto téma popisuje funkci kontroly konzistence maloobchodních transakcí uvedenou v aplikaci Microsoft Dynamics 365 for Finance and Operations, verze 8.1.3. Kontrola konzistence identifikuje a izoluje nekonzistentní transakce před tím, než se dostanou k procesu zaúčtování výkazů.
 
-Při zaúčtování výkazu v aplikaci Retail může zaúčtování selhat kvůli nekonzistentním datům v tabulkách maloobchodních transakcí. Problém s daty může být způsoben nepředvídanými potížemi v aplikaci Point of Sale (POS), nebo tím, že transakce byly nesprávně naimportovány z POS systémů třetích stran. Příklady toho, jak mohou tyto nekonzistence vypadat, zahrnují: 
+Při zaúčtování výkazu v aplikaci Microsoft Dynamics 365 for Retail může zaúčtování selhat kvůli nekonzistentním datům v tabulkách maloobchodních transakcí. Problém s daty může být způsoben nepředvídanými potížemi v aplikaci Point of Sale (POS), nebo tím, že transakce byly nesprávně naimportovány z POS systémů třetích stran. Příklady toho, jak mohou tyto nekonzistence vypadat, zahrnují: 
 
-  - Celková částka transakce v tabulce záhlaví neodpovídá celkové částce transakce na řádcích.
-  - Počet řádků v tabulce záhlaví neodpovídá počtu řádků v tabulce transakcí.
-  - Daně v tabulce záhlaví neodpovídají celkové částce daně na řádcích. 
-  
+- Celková částka transakce v tabulce záhlaví neodpovídá celkové částce transakce na řádcích.
+- Počet řádků v tabulce záhlaví neodpovídá počtu řádků v tabulce transakcí.
+- Daně v tabulce záhlaví neodpovídají celkové částce daně na řádcích. 
+
 Když jsou nekonzistentní transakce přejaty procesem zaúčtování výkazů, vytvoří se nekonzistentní prodejní faktury a deníky plateb, následkem čehož celý proces zaúčtování výkazu selže. Obnovení výkazů z takového stavu představuje složité opravy dat napříč mnoha tabulkami transakcí. Kontrola konzistence maloobchodních transakcí těmto problémům zabraňuje.
 
 Následujíc tabulka znázorňuje proces zaúčtování s kontrolou konzistence transakcí.
@@ -47,13 +47,24 @@ Následujíc tabulka znázorňuje proces zaúčtování s kontrolou konzistence 
 
 Dávkové zpracování **Ověřit transakce obchodu** kontroluje konzistenci tabulek maloobchodních transakcí pro následující scénáře:
 
-- Účet odběratele - Ověřuje, že účet odběratele existuje v tabulce maloobchodních transakcí v HQ hlavních datech odběratele.
-- Počet řádků - Ověřuje, že počet řádků, jak je zaznamenaný v tabulce záhlaví transakcí, odpovídá počtu řádků v tabulce prodejních transakcí.
+- **Účet odběratele** - Ověřuje, že účet odběratele existuje v tabulce maloobchodních transakcí v HQ hlavních datech odběratele.
+- **Počet řádků** - Ověřuje, že počet řádků, jak je zaznamenaný v tabulce záhlaví transakcí, odpovídá počtu řádků v tabulce prodejních transakcí.
+- **Cena zahrnuje daň** – Ověřuje, zda je parametr **Cena zahrnuje daň** konzistentní napříč řádky transakce.
+- **Hrubá částka** – Ověřuje, že je hrubá částka v záhlaví součtem čistých částek na řádcích a částky daně.
+- **Čistá částka** – Ověřuje, že je čistá částka v záhlaví součtem čistých částek na řádcích.
+- **Nedoplatek/přeplatek** – Ověřuje, že rozdíl mezi hrubou částkou v záhlaví a částkou platby nepřekračuje konfiguraci maximálního nedoplatku/přeplatku.
+- **Částka slevy** – Ověřuje, že částka slevy v tabulkách slev a částka slevy v tabulkách řádků maloobchodních transakcí jsou konzistentní a že částka slevy v záhlaví je součtem částek slev na řádcích.
+- **Řádková sleva** - Ověřuje, že řádková sleva na řádku transakce je součtem všech řádků v tabulce slev, která odpovídá řádku transakce.
+- **Položka dárkového poukazu** – Retail nepodporuje vrácení položek dárkového poukazu. Nicméně zůstatek na dárkovém poukazu lze vyplatit v hotovosti. U jakékoliv položky dárkového poukazu, která je zpracována jako řádek vrácení namísto řádku vyplacení v hotovosti, se proces zaúčtování výkazů nezdaří. Proces ověřování pro položky dárkového poukazu pomáhá zaručit, že jediné položky řádku vrácení dárkového poukazu v tabulce maloobchodních transakcí jsou řádky vyplacení dárkového poukazu.
+- **Záporná cena** – Ověřuje, že neexistují žádné řádky transakce s negativní cenou.
+- **Položka a varianta** – Ověřuje, že položky a varianty na řádcích transakce existují v hlavním souboru položek a variant.
 
 ## <a name="set-up-the-consistency-checker"></a>Nastavení kontroly konzistence
+
 Nakonfigurujte dávkové zpracování „Ověřit transakce obchodu“ pro periodická spuštění pomocí možností **Maloobchod \> IT pro maloobchod \> Zaúčtování POS**. Dávkovou úlohu lze naplánovat na základě hierarchie organizace obchodu, podobným způsobem, jakým se nastavují zpracování „Vypočítat příkazy v dávkách“ a „Zaúčtovat příkazy v dávkách“. Doporučujeme, abyste nakonfigurovali toto dávkové zpracování tak, aby se spouštělo několikrát denně, a naplánovali jeho spuštění na konec každého provedení úlohy P.
 
 ## <a name="results-of-validation-process"></a>Výsledky procesu ověření
+
 Výsledky procesu ověření podle dávkového zpracování jsou označeny na příslušné maloobchodní transakci. Pole **Stav ověření** na záznamu maloobchodní transakce je buď nastaveno na **Úspěšný** nebo **Chyba** a datum posledního spuštění ověření se zobrazí v poli **Poslední čas ověření**.
 
 Chcete-li zobrazit popisnější text chyby související se selháním ověření, zvolte příslušný záznam maloobchodní transakce a klikněte na tlačítko **Chyby ověřování**.

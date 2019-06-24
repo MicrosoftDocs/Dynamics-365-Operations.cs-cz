@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 14f2c6eb3baf0de65de3b72e10b42b03a8c6b21a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6e295456838ca0195a472518b5979dfdc7819f74
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536703"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1617966"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/pivate-preview-banner.md)]
+[!include [banner](../includes/pivate-preview-banner.md)]
 
 
 ## <a name="feature-exposure"></a>Expozice funkce
@@ -138,10 +138,6 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
 - Ruční vytváření karanténních příkazů není podporováno pro produkty se skutečnou hmotností.
 - Ruční přesun zásob související s prací není podporováno pro produkty se skutečnou hmotností.
 - Konsolidace poznávacích značek není podporováno pro produkty se skutečnou hmotností.
-- Změny stavu skladu jako součást pravidelných úloh nejsou podporovány pro produkty se skutečnou hmotností.
-- Změny stavu zásob, které jsou definovány podle dotazu, nejsou podporovány pro produkty se skutečnou hmotností. (Nejsou podporovány ani změny stav zásob objednávky kvality.)
-- U produktů se skutečnou hmotností nelze změnit stav zásob ze stránky **Množství na skladě podle místa**.
-- U produktů se skutečnou hmotností nelze změnit stav zásob jako součást práce přesunu aplikace skladu.
 - Načtení poznávací značky pro inicializaci naskladnění skladu není podporováno pro produkty se skutečnou hmotností.
 - Procesy vyvážení dávky nejsou podporovány pro produkty se skutečnou hmotností.
 - Zpracování negativních fyzických zásob není podporováno pro produkty se skutečnou hmotností.
@@ -151,7 +147,6 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
 
 - Funkce pro výdej v seskupení není podporována pro produkty se skutečnou hmotností.
 - Zpracování výdeje a balení skladu není podporováno pro produkty se skutečnou hmotností.
-- Pro produkty se skutečnou hmotností nelze dokončit práci ze stránky **Práce**.
 - U produktů se skutečnou hmotností lze práci definovanou v šabloně práce spustit automaticky.
 - Funkce pro stornování práce není podporována pro produkty se skutečnou hmotností.
 - U produktů se skutečnou hmotnosti není podporováno ruční zpracování stanice balení, kde je práce vytvořena po uzavření kontejnerů.
@@ -163,7 +158,7 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
 - Funkce kanbanu není podporována pro produkty se skutečnou hmotností.
 - U produktů se skutečnou hmotností nelze registrovat sériová čísla před spotřebou.
 - Funkce pro stornování poznávacích značek není podporována pro produkty se skutečnou hmotností.
-- U produktů se skutečnou hmotností lze vykazování jako dokončené registrovat podle sériového čísla.
+- U produktů se skutečnou hmotností nelze vykazování jako dokončené registrovat podle sériového čísla.
 
 ### <a name="transportation-management-processing"></a>Zpracování správy přepravy
 

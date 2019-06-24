@@ -3,7 +3,7 @@ title: Ukázka integrace fiskální služby pro Českou republiku
 description: V tomto tématu je uveden přehled fiskální integrace pro Českou republiku.
 author: josaw
 manager: annbe
-ms.date: 04/01/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,25 +17,25 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: ebc083e538ac863e54a87bafea0090389a51d6dd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 82f7b6a0b8d6d4b517eb3480b1550b821e95ec46
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537625"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595303"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
-[!include[banner](../includes/preview-banner.md)]
+
 [!include[banner](../includes/banner.md)]
 
 ## <a name="introduction"></a>Úvod
 
-Pro účely splnění fiskálních požadavků na registrační pokladny v České republice obsahuje funkce Microsoft Dynamics 365 for Retail pro Českou republiku vzorovou integraci pokladního místa (POS) s externí fiskální registrační službou. Vzorek rozšiřuje [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Je založena na řešení [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/) od [EFSTA](http://efsta.org/) a umožňuje komunikaci se službou EFR přes protokol HTTPS. Služba EFR zajišťuje elektronickou registraci prodeje (EET - Elektronická evidence tržeb), tj. online převodu prodejních údajů do fiskální webové služby daňových úřadů.
+Pro účely splnění fiskálních požadavků na registrační pokladny v České republice obsahuje funkce Microsoft Dynamics 365 for Retail pro Českou republiku vzorovou integraci pokladního místa (POS) s externí fiskální registrační službou. Vzorek rozšiřuje [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Je založena na řešení [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) od [EFSTA](https://efsta.org/) a umožňuje komunikaci se službou EFR přes protokol HTTPS. Služba EFR zajišťuje elektronickou registraci prodeje (EET - Elektronická evidence tržeb), tj. online převodu prodejních údajů do fiskální webové služby daňových úřadů.
 
 Služba EFR by měla být hostitelem hardwarové stanice pro maloobchod nebo samostatný počítač, se kterým se lze propojit z hardwarové stanice. Ukázka je poskytnuta ve formě zdrojového kódu a je součástí sady software development kit (SDK) pro maloobchod.
 
-Společnost Microsoft nevydává žádný hardware, software nebo dokumentaci k EFSTA. Informace o tom, jak řešení EFR získat a provozovat, vám poskytne [EFSTA](http://efsta.org/kontakt/).
+Společnost Microsoft nevydává žádný hardware, software nebo dokumentaci k EFSTA. Informace o tom, jak řešení EFR získat a provozovat, vám poskytne [EFSTA](https://efsta.org/kontakt/).
 
 ## <a name="scenarios"></a>Scénáře
 
@@ -54,7 +54,7 @@ Následující scénáře uvádějí vzorek integrace fiskální registrační s
     - Vytvořte objednávku odběratele a registrujte zálohu pro objednávku.
     - Upravte objednávku odběratele a přepište zálohu pro objednávku.
     - Zrušte objednávku odběratele a refundujte zálohu pro objednávku.
-    
+
 - Zpracování chyb, jako jsou následující možnosti.
 
     - Opakujte fiskální registraci, pokud to je možné, například když není k dispozici služba fiskální registrace, není připravena nebo nereaguje.
@@ -68,15 +68,15 @@ Následující výchozí mapování dat je součástí konfigurace poskytovatele
 
 - Mapování sazeb daně z přidané hodnoty (DPH):
 
-  *A: 21,00; B: 15,00; C: 10,00; Z: 0,00*
+    *A: 21,00; B: 15,00; C: 10,00; Z: 0,00*
 
 - Výchozí mapování skupiny DPH. Jakékoli částky DPH, které nelze mapovat na některou z předem určených skupin DPH, budou připsány výchozí (základní) skupině DPH:
 
-  *O*
+    *O*
 
 - Vložte zálohu mapování skupiny DPH. Částky zálohy odběratele a zálohy objednávky odběratele budou připsány skupině DPH zálohy:
 
-  *Z*
+    *Z*
 
 ### <a name="gift-cards"></a>Dárkové poukazy
 
@@ -134,10 +134,11 @@ Nastavte funkční profily POS.
 
 ### <a name="set-up-registration-numbers"></a>Nastavení registračních čísel
 
-1. Přejděte na položky **Správa organizace > Globální adresář > Typy registrace > Typy registrace**. Vytvořte nový typ registrace. Určete pole **Země/oblast** na **CZE** (Česká republika) a omezte je na organizaci.
-2. Přejděte na položky **Správa organizace > Globální adresář > Typy registrace > Kategorie registrace**. Vytvořte novou kategorii registrace. Vyberte typ registrace z předchozího kroku a nastavte **kategorii registrace** na **ID místa obchodu**.
-3. Přejděte do nabídky **Správa organizace > Organizace > Provozní jednotky.** Pro každý obchod v rámci České republiky vyberte jednotku vztahující se k obchodu. Na pevné záložce **Adresa** rozbalte rozevírací seznam **Další možnosti** a vyberte **Upřesnit**. 
+1. Přejděte na položky **Správa organizace \> Globální adresář \> Typy registrace \> Typy registrace**. Vytvořte nový typ registrace. Určete pole **Země/oblast** na **CZE** (Česká republika) a omezte je na organizaci.
+2. Přejděte na položky **Správa organizace \> Globální adresář \> Typy registrace \> Kategorie registrace**. Vytvořte novou kategorii registrace. Vyberte typ registrace z předchozího kroku a nastavte **kategorii registrace** na **ID místa obchodu**.
+3. Přejděte do nabídky **Správa organizace \> Organizace \> Provozní jednotky**. Pro každý obchod v rámci České republiky vyberte jednotku vztahující se k obchodu. Na pevné záložce **Adresa** rozbalte rozevírací seznam **Další možnosti** a vyberte **Upřesnit**. 
 4. Na otevřené stránce **spravovat adresy** je nutné zadat následující nastavení.
+
     - Na pevné záložce **Adresa** nastavte pole **země/oblast** na **CZE**.
     - Na pevné záložce **ID registrace** vytvořte nový záznam. Vyberte dříve vytvořený typ registrace a nastavte registrační číslo.
 
@@ -149,14 +150,14 @@ Na stránce **jazykový text** přidejte následující záznamy popisků vlastn
 
 Přidejte následující štítky POS do oddílu **POS** v poli **Jazykový text** z tabulky:
 
-| ID jazyka | ID textu | Text                      |
-|-------------|---------|---------------------------|
-| cs       | 900001  | ID provozovny/pokladny    |
-| cs       | 900002  | BKP                       |
-| cs       | 900003  | FIK                       |
-| cs       | 900004  | PKP                       |
-| cs       | 900005  | Informace                      |
-| cs       | 900006  | Pořadové číslo           |
+| ID jazyka | ID textu | Text                   |
+|-------------|---------|------------------------|
+| cs       | 900001  | ID provozovny/pokladny |
+| cs       | 900002  | BKP                    |
+| cs       | 900003  | FIK                    |
+| cs       | 900004  | PKP                    |
+| cs       | 900005  | Informace                   |
+| cs       | 900006  | Pořadové číslo        |
 
 Na stránce **Vlastní pole** přidejte následující záznamy popisků vlastního pole rozvržení účtenky. Upozorňujeme, že hodnoty **ID textu titulku** musí odpovídat hodnotám **ID textu**, které jste zadali na stránce **jazykový text**:
 
@@ -184,13 +185,12 @@ V Návrháři formátu příjemky přidejte následující vlastní pole do př�
 - **Řádky:** Přidejte následující pole.
 
     - **Název položky**
-    - **Množ**.
+    - **Množství**
     - **Celková cena s daní**
 
 - **Zápatí:** Přidejte následující pole.
 
     - Pole platby, aby se vytiskly částky platby pro každou metodu platby. Například přidejte pole **název úhrady** a **Částka úhrady** na jeden řádek rozvržení.
-
     - **ID provozovny/pokladny**: toto pole vytiskne identifikátory obchodních prostorů a registrační pokladny.
     - **BKP**: Toto pole vytiskne bezpečnostní kód plátce daně, který přiřazuje služba daňové registrace.
     - **FIK**: toto pole vytiskne daňový identifikační kód transakce, který přiděluje webová služba daňového úřadu v případě úspěšné online registrace.
@@ -217,7 +217,7 @@ Tento postup slouží k nastavení vývojového prostředí, abyste mohli testov
 
 ### <a name="enable-commerce-runtime-extensions"></a>Povolit rozšíření služby Commerce runtime
 
-Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení následujících postupů otevřete řešení CRT, **CommerceRuntimeSamples.sln** v části **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení následujících postupů otevřete řešení CRT, **CommerceRuntimeSamples.sln**, v části **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
 #### <a name="documentproviderefrsample-component"></a>Komponenta DocumentProvider.EFRSample
 
@@ -233,7 +233,7 @@ Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení násl
     - **Server maloobchodu:** Soubor je nazván **commerceruntime.ext.config** a je uložen ve složce **bin\\ext.** pod umístěním webu IIS Retail Server.
     - **Místní CRT v Modern POS:** Soubor je nazván **CommerceRuntime.MPOSOffline.Ext.config** a nachází se v místní složce zprostředkovatele klienta CRT.
 
-5. Zaregistrujte změnu CRT změny v konfiguračním souboru rozšíření.
+5. Zaregistrujte změnu CRT v konfiguračním souboru rozšíření.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
@@ -253,7 +253,7 @@ Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení násl
     - **Server maloobchodu:** Soubor je nazván **commerceruntime.ext.config** a je uložen ve složce **bin\\ext.** pod umístěním webu IIS Retail Server.
     - **Místní CRT v Modern POS:** Soubor je nazván **CommerceRuntime.MPOSOffline.Ext.config** a nachází se v místní složce zprostředkovatele klienta CRT.
 
-5. Zaregistrujte změnu CRT změny v konfiguračním souboru rozšíření.
+5. Zaregistrujte změnu CRT v konfiguračním souboru rozšíření.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
@@ -266,7 +266,7 @@ Komponenty rozšíření CRT jsou součástí ukázek CRT. Pro dokončení násl
     - **Server maloobchodu:** Soubor je nazván **commerceruntime.ext.config** a je uložen ve složce **bin\\ext.** pod umístěním webu IIS Retail Server.
     - **Místní CRT v Modern POS:** Soubor je nazván **CommerceRuntime.MPOSOffline.Ext.config** a nachází se v místní složce zprostředkovatele klienta CRT.
 
-2. Zaregistrujte změnu CRT změny v konfiguračním souboru rozšíření.
+2. Zaregistrujte změnu CRT v konfiguračním souboru rozšíření.
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsCzechia" />
@@ -337,7 +337,7 @@ Předchozí postup umožňuje rozšíření, která jsou součástí ukázky int
 
 2. Proveďte následující změny v konfiguračním souboru balíčku přizpůsobení **BuildTools\\Customization.settings**.
 
-    - Přidáte následující řádky pro zahrnutí rozšíření CRT do balíčků pro nasazení.
+    - Přidejte následující řádky pro zahrnutí rozšíření CRT do nasaditelných balíčků.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
@@ -384,13 +384,13 @@ Tento soubor slouží k povolení nastavení pro zprostředkovatele dokumentu ke
 
 - Mapování sazeb DPH
 - Výchozí skupina DPH
-- Skupina DPH zálohy.
+- Skupina DPH zálohy
 
 ### <a name="hardware-station-extension-design"></a>Design rozšíření hardwarové stanice
 
 Účelem rozšíření je fiskální konektor určený ke komunikaci se službou daňové registrace.
 
-Rozšíření hardwarové stanice je **HardwareStation.Extension.EFRSample**. Rozšíření hardwarové stanice používá protokol HTTP k odesílání dokumentů, které rozšíření CRT generuje pro daňovou registrační službu. Také zpracovává odpovědi, které jsou přijaty ze služby daňové registrace.
+Rozšíření hardwarové stanice je **HardwareStation.Extension.EFRSample**. Rozšíření hardwarové stanice používá protokol HTTP k odesílání dokumentů, které rozšíření  CRT generuje pro daňovou registrační službu. Také zpracovává odpovědi, které jsou přijaty ze služby daňové registrace.
 
 #### <a name="request-handler"></a>Obslužná rutina požadavku
 

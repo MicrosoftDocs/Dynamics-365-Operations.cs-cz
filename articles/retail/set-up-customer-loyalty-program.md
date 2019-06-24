@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9b73c52a72c82c109a1ff874d2369ce9c0b3a6d2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 94f8cf5b5753c530c42327e251a2102b876c1c8a
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505880"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606865"
 ---
 # <a name="loyalty-overview"></a>Přehled věrnostního programu
 
@@ -93,10 +93,10 @@ Retail obsahuje novou funkci věrnostního programu jako součást verze z říj
 
     ![Generování věrnostní karty](./media/Generate%20loyalty%20card.png "Automatické vygenerování čísla věrnostní karty")
 
-- Získané a uplatněné věrnostní body jsou nyní ukládány pro každou transakci a prodejní objednávky proti řádku prodeje, takže je možné refundovat nebo vzít zpět stejnou částku v případě úplného nebo částečného vrácení. Navíc viditelnost bodů na úrovni řádku prodej poskytuje uživatelům kontaktního střediska možnost odpovědět na otázky zákazníků o tom, kolik bodů bylo získáno nebo uplatněno za každý řádek. Před touto změnou byly body odměn vždy přepočítány během vrácení, což vedlo k odlišné částce než původní, pokud se změnila pravidla získávání nebo uplatnění, a také uživatelé kontaktního střediska neměli viditelnost v rozdělení bodů. Body lze zobrazit ve formuláři **Transakce karty** pro každou věrnostní kartu. Chcete-li povolit tuto funkci, zapněte konfiguraci **Zaúčtovat věrnostní body pro prodejní řádek** na kartě **Sdílené parametry maloobchodu**  > **Obecné**.
+- Získané a uplatněné věrnostní body jsou nyní ukládány pro každou transakci a prodejní objednávky proti řádku prodeje, takže je možné refundovat nebo vzít zpět stejnou částku v případě úplného nebo částečného vrácení. Navíc viditelnost bodů na úrovni řádku prodej poskytuje uživatelům kontaktního střediska možnost odpovědět na otázky zákazníků o tom, kolik bodů bylo získáno nebo uplatněno za každý řádek. Před touto změnou byly body odměn vždy přepočítány během vrácení, což vedlo k odlišné částce než původní, pokud se změnila pravidla získávání nebo uplatnění, a také uživatelé kontaktního střediska neměli viditelnost v rozdělení bodů. Body lze zobrazit ve formuláři **Transakce karty** pro každou věrnostní kartu. Chcete-li povolit tuto funkci, zapněte konfiguraci **Zaúčtovat věrnostní body pro prodejní řádek** na kartě **Sdílené parametry maloobchodu** \> **Obecné**.
 
->[!NOTE]
-> Důrazně doporučujeme zapnout tuto funkci, aby bylo zajištěno, že v případě vrácení může být vrácen nebo odebrán správný počet bodů.
+    > [!NOTE]
+    > Důrazně doporučujeme zapnout tuto funkci, aby bylo zajištěno, že v případě vrácení může být vrácen nebo odebrán správný počet bodů.
 
 - Maloobchodní prodejci nyní mohou určit období připsání pro každý bod odměny. Konfigurace období připsání určí trvání od data získání, po kterém budou k dispozici body odměny pro zákazníky. Neudělené body lze zobrazit ve sloupci **Neudělené body** na stránce **Věrnostní karty**. Maloobchodní prodejci kromě toho mohou definovat maximální limit bodů věrnostní odměny na věrnostní kartu. Toto pole lze použít ke snížení dopadu podvodu s věrnostními body. Po dosažení maximálního počtu bodů odměn nemůže uživatel získat další body. Prodejce se může rozhodnout takovou kartu blokovat, dokud neprošetří možný podvod. Pokud prodejce zjistí podvod, nemůže pouze zablokovat věrnostní kartu zákazníka, ale musí také označit zákazníka jako blokovaného. To se provede nastavením vlastnosti **Blokovat zákazníka pro registraci k věrnostnímu programu** na **Ano** v rámci možnosti **Všichni odběratelé** na pevné záložce **Maloobchod**. Blokovaným zákazníkům nebude možné vystavit věrnostní kartu v žádném z kanálů.
 
@@ -120,31 +120,32 @@ Retail obsahuje novou funkci věrnostního programu jako součást verze z říj
     ![Body pokryté věrnostním zůstatkem](./media/Points%20covered%20by%20loyalty%20balance.png "Zobrazit zůstatek pokrytý věrnostními body")
 
     ![Body s končící platností](./media/Expiring%20points.png "Zobrazení bodů s končící platností")
-    
 
 - Ve verzi 8.1.3 jsme povolili možnost platby podle věrnosti v kanálu telefonického centra. Chcete-li tuto možnost povolit, vytvořte typ věrnostní úhrady a spojte ho s kontaktním střediskem. 
 
->[!NOTE]
-> Vzhledem k tomu, že věrnostní platby jsou nastaveny jako platby kartou, je nutné vybrat kartu ze stránky **nastavení karty**. 
+    > [!NOTE]
+    > Vzhledem k tomu, že věrnostní platby jsou nastaveny jako platby kartou, je nutné vybrat kartu ze stránky **nastavení karty**. 
 
-![Nastavení věrnostní karty](./media/LoyaltyCardSetup.png "Nastavení věrnostní karty")
+    ![Nastavení věrnostní karty](./media/LoyaltyCardSetup.png "Nastavení věrnostní karty")
 
-Po tomto nastavení mohou zákazníci znovu uplatnit své věrnostní body v kontaktním středisku. Dále vylepšujeme možnosti uživatelů na zobrazení částky pokryté věrnostními body, aby nemuseli uživatelé kontaktních středisek přecházet na jinou obrazovku, aby mohli zobrazit zůstatek věrnostních bodů.
+    Po tomto nastavení mohou zákazníci znovu uplatnit své věrnostní body v kontaktním středisku. Dále vylepšujeme možnosti uživatelů na zobrazení částky pokryté věrnostními body, aby nemuseli uživatelé kontaktních středisek přecházet na jinou obrazovku, aby mohli zobrazit zůstatek věrnostních bodů.
 
 - Mnoho maloobchodníků přiděluje věrnostní body pouze na základě prodejních transakcí, ale maloobchodníci více zaměření na zákazníka chtějí odměnit své zákazníky za jakoukoli aktivitu s jejich značkou. Například chtějí poskytnout odměny za vyplnění online průzkumu, návštěvu obchodu, přidělení značky Líbí se mi pro prodejce ve službě Facebook nebo tweetování o prodejci. Maloobchodní prodejce proto může definovat libovolný počet v okně Jiný typ aktivity a definovat odpovídající pravidla získávání bodů za tyto aktivity. Existuje také rozhraní API maloobchodního serveru "PostNonTransactionalActivityLoyaltyPoints", které lze volat, když je identifikovaná aktivita, která by měla odměnit zákazníka věrnostními body. Toto rozhraní API předpokládá ID věrnostní karty, ID kanálu a ID jiného typu aktivity, aby bylo možné vyhledat zákazníka, který by měl být odměněn, a aby bylo možné identifikovat pravidlo pro ocenění za aktivitu. 
 
     Obecně mají body za odměnu u aktivit mimo transakce dva hlavní kroky:
+
     - Realizace aktivity, která by měla být oceněna.
     - Udělení příslušných bodů.
 
     První krok je externí k aplikaci Microsoft Dynamics 365 for Retail, například tweet o značce nebo označení značky To se mi líbí ve službě Facebook. Po rozpoznání této aktivity mohou prodejci volat výše uvedené rozhraní API maloobchodnío serveru a udělit věrnostní body v reálném čase. V takovém případě není nutné provést krok kontroly vzhledem k tomu, že se aktivita uskutečnila a měly by být uděleny příslušné body. Existují však situace, kdy by chtěl prodejce zkontrolovat záznamy předtím, než body udělí. Prodejce například zavedl dílnu v prodejně, pro kterou se zákazníci přihlašují na webu elektronického obchodování nebo v jiné aplikaci pro registraci akcí. Věrnostní body však mohou získávat pouze zákazníci, kteří se dostaví. U takových scénářů jsme ve verzi 10.0 zavedli datovou entitu nazvanou **Ostatní řádky typu maloobchodní aktivity**. Tato entita data umožňuje maloobchodním prodejcům použít rámec importu/exportu dat (DIXF) nebo rozhraní API OData k záznamu aktivit, které mají odměnit odběratele věrnostními body. Entita dat obsahuje aktivity v deníku s názvem **věrnostní řádky pro ostatní aktivity**, které lze použít pro účely přezkoumání a úpravy. Poté, co bylo zkontrolováno data IT uživatele, lze ručně zaúčtovat řádky aktivity nebo spustit úlohu s názvem **zpracovat jiný typ aktivity pro věrnostní řádky**, které zaúčtují všechny řádky nezaúčtované aktivity a body odměny pro odběratele na základě pravidla příjmů. Ve výše uvedeném scénáři bude aplikace registrace události volat rozhraní OD API k odeslání informací o zákazníkovi do aplikace Dynamics 365 for Retail. Uživatel IT však může zaúčtovat řádky aktivity pro zákazníky, kteří navštívili seminář a odstranit řádky aktivity pro ostatní zákazníky. 
 
-> [!NOTE]
-> V současné době vynutí systém po uživateli, aby nastavil číselnou řadu pro "ostatní typy aktivit", ale nebude se jednat o povinný krok v příštích verzích. Chcete-li nastavit číselnou řadu, přejděte na **Sdílené maloobchodní parametry > číselné řady** a vyberte číselnou řadu pro **ID typu ostatních věrnostních aktivit**.
+    > [!NOTE]
+    > V současné době vynutí systém po uživateli, aby nastavil číselnou řadu pro "ostatní typy aktivit", ale nebude se jednat o povinný krok v příštích verzích. Chcete-li nastavit číselnou řadu, přejděte na **Sdílené maloobchodní parametry** \> **Číselné řady** a vyberte číselnou řadu pro **ID typu ostatních věrnostních aktivit**.
 
 - Pokud chcete poskytovat zákaznické služby a efektivně řešit dotazy zákazníků, je důležité, aby měli podkladní přístup k úplnému profilu zákazníka. Ve verzi 10.0 budou pokladní moci zobrazit detaily věrnostní historie spolu s přidruženým věrnostním programem a informacemi o vrstvě v POS.
-- Dodání zdarma nebo se slevou je jedním z vysoce motivačních faktorů pro zákazníky při nákupu online. Abychom umožnili maloobchodním prodejcům nastavení propagačních dodávek ve verzi 10.0, zavádíme nový typ promoakce nazvaný Sleva prahové hodnoty expedice, v němž může prodejce definovat prahové hodnoty, které při splnění kvalifikují zákazníka na bezplatné nebo zlevněné dodání. Například při útratě 35 USD získáte dopravu do dvou dnů zdarma nebo Bezplatná expedice do dvou dnů pro všechny věrné zákazníky Tato funkce využívá novou funkci rozšířených automatických nákladů. Informace naleznete v dokumentaci k rozšířeným automatickým nákladům zde: https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-auto-charges. Tyto rozšířené automatické náklady musí být povoleny, aby fungovala propagace doručení. Lze je povolit z karty **Objednávky zákazníka** na stránce **zákazníka** a zapnout na konfiguraci „Použít rozšířené automatické náklady“. Navíc vzhledem k tomu, že maloobchodní prodejce může nastavit více typů poplatků, jako je manipulační nebo instalační poplatek, musí určit, který poplatek je považován za poplatek za expedici. Přepravní slevy se vztahují pouze k poplatkům za expedici. K určení nákladů jako dopravného přejděte na formulář **Kódy nákladů** přítomný pod možnostmi **Maloobchod** > **IT pro maloobchod** > **Nastavení kanálu** > **Náklady** a povolte zaškrtávací políčko "Dopravné" pro požadované náklady. Nyní můžete přejít na formulář **Maloobchodní dodací mezní sleva** a nastavit slevu.
+- Dodání zdarma nebo se slevou je jedním z vysoce motivačních faktorů pro zákazníky při nákupu online. Abychom umožnili maloobchodním prodejcům nastavení propagačních dodávek ve verzi 10.0, zavádíme nový typ promoakce nazvaný Sleva prahové hodnoty expedice, v němž může prodejce definovat prahové hodnoty, které při splnění kvalifikují zákazníka na bezplatné nebo zlevněné dodání. Například při útratě 35 USD získáte dopravu do dvou dnů zdarma nebo Bezplatná expedice do dvou dnů pro všechny věrné zákazníky Tato funkce využívá novou funkci rozšířených automatických nákladů. Informace naleznete [v dokumentaci k rozšířeným automatickým nákladům](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Tyto rozšířené automatické náklady musí být povoleny, aby fungovala propagace doručení. Lze je povolit z karty **Objednávky zákazníka** na stránce **zákazníka** a zapnout na konfiguraci „Použít rozšířené automatické náklady“. Navíc vzhledem k tomu, že maloobchodní prodejce může nastavit více typů poplatků, jako je manipulační nebo instalační poplatek, musí určit, který poplatek je považován za poplatek za expedici. Přepravní slevy se vztahují pouze k poplatkům za expedici. K určení nákladů jako dopravného přejděte na formulář **Kódy nákladů** přítomný pod možnostmi **Maloobchod** \> **IT pro maloobchod** \> **Nastavení kanálu** \> **Náklady** a povolte zaškrtávací políčko Dopravné pro požadované náklady. Nyní můžete přejít na formulář **Maloobchodní dodací mezní sleva** a nastavit slevu.
+
     Stejně jako produktové slevy, tato sleva uznává všechny existující standardní možnosti slevy, jako je například umožnění prodejci omezit tyto slevy na poukazy, aby je získal pouze zákazník s poukazy. Tyto slevy také využívají schopnost cenové skupiny ceny k určení nároku na tyto slevy. Například prodejce může spustit tyto promoakce, pouze v online kanálech nebo napříč kanály pro určité skupiny zákazníků, jako jsou věrní zákazníci. Jakmile řádky objednávky s určeným režimem dodání splní definovanou prahovou hodnotu, použije se sleva za doručení a sníží se poplatek za doručení na základě nastavené slevy. 
 
-> [!NOTE]
-> Na rozdíl od jiných pravidelných slev, jako je například množství, jednotlivý produkt, shoda a porovnání a slevy prahové hodnoty, nevytvoří sleva za doručení řádky slevy. Spíše přímo upraví přepravní poplatek a připojí název slevy k popisu poplatku.
+    > [!NOTE]
+    > Na rozdíl od jiných pravidelných slev, jako je například množství, jednotlivý produkt, shoda a porovnání a slevy prahové hodnoty, nevytvoří sleva za doručení řádky slevy. Spíše přímo upraví přepravní poplatek a připojí název slevy k popisu poplatku.

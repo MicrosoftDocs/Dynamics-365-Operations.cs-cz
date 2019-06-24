@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571623"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595604"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
 
@@ -59,8 +59,10 @@ Tento oddíl uvádí další podrobnosti o úkolu 4 v předchozím oddílu.
 4. Vyberte dodavatele pro katalog. V seznamu **právnické osoby** existuje řádek pro každou právnickou osobu, kde je dodavatel nastaven. Pokud chcete uživatelům umožnit, aby požadovali produkty přímo z katalogu dodavatele v některých právnických osobách, ale ne v jiných, můžete použít tlačítko **Nepovolit přístup** nebo **Povolit přístup** pro každou právnickou osobu, které chcete tento katalog zpřístupnit nebo zamezit v přístupu.
 5. V poli **Výchozí konec platnosti (dny)** zadejte počet dní, po které je nabídka přijatá z externího katalogu platná a lze ji použít k nákupu od externího dodavatele. Když je nabídka vytvořena a načtena z místa katalogu externího dodavatele, nabídka je platná od aktuálního systémového data a zůstává v platnosti pro počet dnů, které zadáte v tomto poli.
 6. Kliknutím na tlačítko **Přidat** spusťte mapování kategorií zásobování na externí katalog.Potom v seznamu Název kategorie vyberte kategorii. Seznam kategorií je nadřazený kategoriím zásobování, na které je dodavatel namapován ve všech právnických osobách, které jsou nastaveny pro dodavatele.
-[!NOTE]
-Zásady nákupu slouží k povolení nebo zakázání přístupu ke kategoriím kupující právnické osoby nebo přijímající provozní jednotky.Funkce punchout pro externí katalog vyžaduje, aby přístup být povolen alespoň jedné kategorii zásobování, která je mapována na katalog.
+
+    > [!NOTE]
+    > Zásady nákupu slouží k povolení nebo zakázání přístupu ke kategoriím kupující právnické osoby nebo přijímající provozní jednotky.Funkce punchout pro externí katalog vyžaduje, aby přístup být povolen alespoň jedné kategorii zásobování, která je mapována na katalog.
+
 7. Nastavení zprávy s požadavkem cXML, který bude odeslán dodavateli. Automaticky generovaný formát zprávy je minimální šablona potřebné k zahájení relace. Vyplňte hodnoty štítků.
 
 Vždy můžete znovu načíst šablonu zprávy generované systémem klepnutím na **Obnovit formát zprávy**. 
@@ -85,7 +87,7 @@ Níže naleznete popis štítků, které jsou zahrnuty do šablony:
 
 Externí prvek představuje další informace jako uživatelské jméno uživatele, který provedl punchout. Je nastaven, když je provedena funkce punchout a může být zaslán ve zprávě o nastavení požadavku.
 Dodavatel může mít požadavek na příjem z vnějšího zdroje prvku v nastavení požadavku. V takovém případě byste měli přidat externí prvek do seznamu externích prvků v části **Formát zprávy** na stránce **Externí katalog**. Zadejte název pro externí prvek, který dodavatel rozpozná, a namapujte ho na hodnotu. Možnosti hodnot jsou: uživatelského jméno, uživatelský e-mail nebo náhodná hodnota.
-Další informace o službách protokolu cXML naleznete v tématu http://cxml.org/.
+Další informace o protokolu cXML protokolu naleznete na webu [cXML.org](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Zpráva zaslaná zpět
 Zpráva zaslaná zpět je zpráva přijatá od dodavatele v případě, že se uživatel odhlásí z externího webu a vrátí do aplikace Finance and Operations. Tyto zprávy nelze konfigurovat. Jsou založeny na definici cXML protokolu.Dále jsou uvedeny informace, které mohou být součástí takové zprávy přijaté na řádku žádanky:

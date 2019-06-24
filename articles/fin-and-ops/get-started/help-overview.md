@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
-ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
+ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1538949"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595632"
 ---
 # <a name="finance-and-operations-help-system"></a>Systém nápovědy pro aplikaci Finance and Operations
 
@@ -192,7 +192,7 @@ V následující tabulce jsou uvedeny naše weby. Weby s hvězdičkou (\*) u ná
 | [Docs.microsoft.com](/dynamics365/)                                                            | Hostitelé nebo odkazy na veškerou produktovou dokumentaci pro aplikaci Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Bezplatný web elektronického vzdělávání společnosti Microsoft. |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Poskytuje cloudový pracovní prostor spolupráce, který mohou použít odběratelé a jejich partneři ke správě projektů Dynamics 365 for Finance and Operations z předprodeje k implementaci a operacím. Tento web je užitečný ve všech fázích implementace. |
-| [Blog podpory](http://aka.ms/AXSupportBlog)                                                    | Obsahuje tipy a triky týmu podpory aplikace Dynamics 365 for Finance and Operations. |
+| [Blog podpory](https://aka.ms/AXSupportBlog)                                                    | Obsahuje tipy a triky týmu podpory aplikace Dynamics 365 for Finance and Operations. |
 | [Docs.microsoft.com/previous versions](https://docs.microsoft.com/previous-versions/dynamics/) | Hostuje obsah z předchozích verzí. |
 | [Komunita Dynamics](https://community.dynamics.com/)                                          | Je hostitelem blogů, fór a videí. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Obsahuje hodnocení a informace o prodeji. |

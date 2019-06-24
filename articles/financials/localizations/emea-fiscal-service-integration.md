@@ -16,12 +16,12 @@ ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8b51220b9fdfec0d99eae3245893d43fc7d846f4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f10413ce36b895a32ec0133887c43da42fcddbeb
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537652"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595573"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integrace fiskální služby (ESR)
 
@@ -70,7 +70,7 @@ Každá registrační pokladna musí být nastavena pro komunikaci s fiskální 
 <td>Zadejte adresu URL registrační pokladny, název instance Microsoft Azure Key Vault a název třídy.</td>
 <td><ul>
 <li><strong>URL adresa registrační pokladny</strong> – Zadejte adresu URL fiskální služby.
-<blockquote>[!WARNING]<br>Služby třetích stran nebo jiné služby, které zde nakonfigurujete, nevyžadují certifikaci, a nemusí splňovat standardy společnosti Microsoft týkající se ochrany osobních údajů. Měli byste ověřit dokumentaci týkající se ochrany osobních údajů každé služby a kontaktovat poskytovatele každé služby, abyste se dozvěděli více informací o úrovni shody, kterou každá služba poskytuje. Jste sami zodpovědní za to, že se ujistíte, zda tyto služby splňují vaše bezpečnostní, ochranné a právní standardy. Odpovědnost za používání těchto služeb je pouze na vás. Společnost Microsoft vám nedává žádné výslovné záruky, garance ani podmínky. Důrazně doporučujeme používat pouze služby, které poskytují zabezpečené a autorizované připojení (to znamená služby, které používají protokol HTTPS).</blockquote>
+<p><strong>Upozornění:</strong> Služby třetích stran nebo jiné služby, které zde nakonfigurujete, nevyžadují certifikaci, a nemusí splňovat standardy společnosti Microsoft týkající se ochrany osobních údajů. Měli byste ověřit dokumentaci týkající se ochrany osobních údajů každé služby a kontaktovat poskytovatele každé služby, abyste se dozvěděli více informací o úrovni shody, kterou každá služba poskytuje. Jste sami zodpovědní za to, že se ujistíte, zda tyto služby splňují vaše bezpečnostní, ochranné a právní standardy. Odpovědnost za používání těchto služeb je pouze na vás. Společnost Microsoft vám nedává žádné výslovné záruky, garance ani podmínky. Důrazně doporučujeme používat pouze služby, které poskytují zabezpečené a autorizované připojení (to znamená služby, které používají protokol HTTPS).</p>
 </li>
 <li><strong>Název úložiště klíčů</strong> – Je-li fiskální služba přístupná na zabezpečeném připojení (to znamená, že adresa URL začíná https://), je třeba nastavit certifikáty a správně je uložit na obou stranách (Finance and Operations a fiskální služba třetí strany). V tomto poli vyberte název instance Azure Key Vault, kde je uložen certifikát aplikace Finance and Operations. Další informace naleznete v tématu <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Nastavení klienta Azure Key Vault</a>.</li>
 <li><strong>Název třídy</strong> – Vyberte třídu, kde jsou implementována specifika integrace s fiskální službou. Dostupná třída je <strong>CashRegisterProcessingEFSTA_W</strong>.</li>
@@ -173,7 +173,7 @@ Když lze přijmout hotovostní platbu při zaúčtování faktury, můžete vyt
 
 ## <a name="example"></a>Příklad
 
-Tato část vás provede následujícími obchodními procesy a používá fiskální službu [EFSTA](http://public.efsta.net/efr/) jako příklad:
+Tato část vás provede následujícími obchodními procesy a používá fiskální službu [EFSTA](https://public.efsta.net/efr/) jako příklad:
 
 - Po zaúčtování platby v hotovosti, která podléhá registraci, je vytvořena transakce registrační pokladny obsahující data, která je třeba podepsat. Tato transakce je potom odeslána, v určeném XML formátu, fiskální službě k registraci.
 - Od fiskální služby obdržíte odezvu. Tato odezva má podpis a fiskální kódy, které fiskální služba generuje podle pravidel specifických pro zemi/oblast. Tato odezva je uložena ve finanční transakci registrační pokladny.

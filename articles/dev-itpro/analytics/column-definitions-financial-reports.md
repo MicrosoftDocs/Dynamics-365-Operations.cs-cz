@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bb08833cca843c370e2c845bce56d6f5a8b5f2ed
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502723"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595332"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definice sloupce ve finančních sestavách
 
@@ -120,7 +120,7 @@ Následující tabulka popisuje kódy omezení sloupce.
 | ADJ                     | Omezí částky v tomto sloupci na částky oprav za období, pokud jsou tyto částky k dispozici. |
 | XAD                     | Omezí částky v tomto sloupci tak, aby byly vyloučeny částky oprav za období. |
 | PT                      | Omezí částky ve sloupci tak, aby pouze zaúčtované transakce byly zahrnuty, pokud tyto transakce jsou k dispozici. |
-| UPT                     | Omezí částky ve sloupci tak, aby pouze nezaúčtované transakce byly zahrnuty, pokud tyto transakce jsou k dispozici.<blockquote>[!NOTE] Ne všichni zprostředkovatelé dat podporují nezaúčtované transakce. Další informace naleznete v <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>příručce pro integraci dat</a> pro váš systém Microsoft Dynamics ERP.</blockquote> |
+| UPT                     | Omezí částky ve sloupci tak, aby byly zahrnuty pouze nezaúčtované transakce, pokud jsou tyto transakce k dispozici.<p><strong>Poznámka:</strong> Ne všichni poskytovatelé dat podporují nezaúčtované transakce. Další informace naleznete v <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>příručce pro integraci dat</a> pro váš systém Microsoft Dynamics ERP.</p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Omezení sloupce na organizační jednotku
 
@@ -310,7 +310,7 @@ Buňka **Řízení tisku** může obsahovat kódy, které upraví zobrazení neb
 | Kód řízení tisku | Význam                                     | Popis |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Netisknout                                     | Částky v tomto sloupci se nebudou tisknout ani používat ve výpočtech. Chcete-li sloupec, který se netiskne, použít ve výpočtu, použijte ve výpočetním vzorci přímý odkaz na sloupec. Například netisknutý sloupec C je součástí následujícího výpočtu: **B+C+D**. Netisknutý sloupec C však není součástí následujícího výpočtu: **B:D**. |
-| XCR                | Změna znaménka, pokud obvyklý zůstatek řádku je typu Dal | Vytvoří rozpočet nebo porovnávací sestavu, ve které je nepříznivá odchylka (například deficit výnosů nebo překročení výdajů) vždy záporná. Použitím tohoto kódu na sloupec **CALC** obrátíte znaménko částky sloupce, pokud je typický zůstatek daného řádku typu Dal (dle určení hodnoty **C** ve sloupci **Normální zůstatek** v definici řádku).<blockquote>[!NOTE] Pro řádky <strong>TOT</strong> a </strong>CAL</strong>, které obvykle přenášejí kreditní zůstatek, je nutné zadat <strong>C</strong> ve sloupci <strong>Obvyklý zůstatek</strong> v definici řádku.</blockquote> |
+| XCR                | Změna znaménka, pokud obvyklý zůstatek řádku je typu Dal | Vytvoří rozpočet nebo porovnávací sestavu, ve které je nepříznivá odchylka (například deficit výnosů nebo překročení výdajů) vždy záporná. Použitím tohoto kódu na sloupec **CALC** obrátíte znaménko částky sloupce, pokud je typický zůstatek daného řádku typu Dal (dle určení hodnoty **C** ve sloupci **Normální zůstatek** v definici řádku).<p><strong>Poznámka:</strong> Pro řádky <strong>TOT</strong> a řádky </strong>CAL</strong>, které obvykle nesou zůstatek typu Dal, je třeba zadat hodnotu <strong>C</strong> do sloupce <strong>Normální zůstatek</strong> v definici řádku.</p> |
 | X0                 | Potlačit sloupec v případě, že obsahuje pouze nuly nebo prázdné hodnoty          | Vyloučí sloupec **FD** ze sestavy, pokud jsou všechny buňky ve sloupci prázdné nebo obsahují nuly. |
 | SR                 | Potlačit zaokrouhlování                               | Zabrání zaokrouhlení částek v tomto sloupci. |
 | XR                 | Potlačit zahrnutí                                 | Potlačí zahrnutí. Pokud sestava používá organizační strom, nebudou částky v tomto sloupci zahrnuty do následných nadřazených uzlů. |
@@ -546,8 +546,8 @@ Následující tabulka obsahuje výsledky sestavy, které mohou nastat pro různ
 | Buňka Zobrazení měny                        | Buňka Filtr měny | Výsledek sestavy |
 |----------------------------------------------|----------------------|---------------|
 | Měna transakce                 | **JEN**              | **6 000 Y** – výsledek ukazuje pouze transakce, které byly zadány v měně JPY. |
-| Zúčtovací měna z hlavní knihy | **JEN**              |**60 $** – výsledek zobrazí pouze transakce, které byly zadány v měně JPY, a tyto transakce zobrazí v měně USD.<blockquote>[!NOTE] Kurz převodu je přibližně 100 JPY za jeden USD.</blockquote> |
-| Zúčtovací měna z hlavní knihy | Prázdné                | **2 310 USD** – Výsledek zobrazí všechna data v zúčtovací měně, která je určena v hlavní knize.<blockquote>[!NOTE] Tato částka je součtem všech transakcí v zúčtovací měně.</blockquote> |
+| Zúčtovací měna z hlavní knihy | **JEN**              |**60 $** – výsledek zobrazí pouze transakce, které byly zadány v měně JPY, a tyto transakce zobrazí v měně USD.<p><strong>Poznámka:</strong> Směnný kurz je přibližně 100 JPY na USD.</p> |
+| Zúčtovací měna z hlavní knihy | Prázdné                | **2 310 USD** – Výsledek zobrazí všechna data v zúčtovací měně, která je určena v hlavní knize.<p><strong>Poznámka:</strong> Tato částka je součtem všech transakcí v zúčtovací měně.</p> |
 | Měna transakce                 | Prázdné                | **2 250 $** – výsledek obsahuje všechny částky v měně, ve které byla provedena transakce. To znamená, že součet skládá dohromady částky z různých měn. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Sloupec Výpočet v definici sloupců
@@ -565,7 +565,7 @@ Chcete-li sloupce sčítat, odečítat, násobit nebo dělit, zadejte písmena s
 |----------|---------------------|-------------|
 | +        | A+C                 | Přičte částku ve sloupci A k částce ve sloupci C. |
 | :        | A:C A:C-D           | Sečte rozsah po sobě jdoucích sloupců. Například vzorec **A:C** sečte součty sloupců od A do C a vzorec **A:C-D** sečte součty sloupců od A do C a potom odečte částku ve sloupci D. |
-| -        | A-C                 | Odečte částku ve sloupci A od částky ve sloupci C.<blockquote>[!NOTE] Pomocí znaménka minus (-) lze také převrátit znaménka ve sloupci. Například můžete použít vzorec <strong>-A+B</strong> k přičtení obrácené hodnoty částky ve sloupci A k částce ve sloupci B.</blockquote> |
+| -        | A-C                 | Odečte částku ve sloupci A od částky ve sloupci C.<p><strong>Poznámka:</strong> znaménko minus (-) lze také slouží k obrácení znamének ve sloupci. Například můžete použít vzorec <strong>-A+B</strong> k přičtení obrácené hodnoty částky ve sloupci A k částce ve sloupci B.</p> |
 | \*       | A\*C                | Vynásobí částku ve sloupci A částkou ve sloupci C. |
 | /        | A/C                 | Vydělí částku ve sloupci A částkou ve sloupci C. |
 

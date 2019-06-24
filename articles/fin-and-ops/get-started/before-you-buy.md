@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dc34ca33d2844eaedfa1734fe6d7c7f2ef4a622d
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546818"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595678"
 ---
 # <a name="before-you-buy"></a>Před zakoupením
 
@@ -63,7 +63,7 @@ Existují dva způsoby zakoupení předplatného pro místní nasazení
 
 ### <a name="buy-through-volume-licensing"></a>Nákup pomocí multilicence
 
-Pokud má vaše organizace 250 nebo více uživatelů Dynamics 365, může vás zajímat [smlouva o multilicenci](https://www.microsoft.com/en-us/Licensing/product-licensing/dynamics365).
+Pokud má vaše organizace 250 nebo více uživatelů Dynamics 365, může vás zajímat [smlouva o multilicenci](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
 Při využití multilicence je aplikace Finance and Operations dostupná následujícími způsoby:
 
@@ -87,7 +87,7 @@ Společnost Microsoft poskytuje flexibilní přední podporu, služby a zdroje, 
 Více informací:
 
 - [Podpora Dynamics 365](https://www.microsoft.com/dynamics365/support)
-- [Rychlý úvod do výhod podpory služby Microsoft Dynamics Cloud Service](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
+- [Rychlý úvod do výhod podpory služby Microsoft Dynamics Cloud Service](https://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Krok čtyři: Informace o pevné záložce a plánování nasazení
 

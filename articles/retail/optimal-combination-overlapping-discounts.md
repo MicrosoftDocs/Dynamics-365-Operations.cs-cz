@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: eebb532071e7c6bae7cfae93bfe795e79bb16c63
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e327f652855f898e50f1dd853ae20f3a0ff41d9e
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564988"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606981"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Určení optimální kombinace překrývajících se slev
 
@@ -42,11 +42,11 @@ Můžete vytvořit neomezený počet maloobchodních slev na společnou sadu pro
 
 V tomto příkladu jsou požadovány dva produkty ke kvalifikaci k získání každé slevy a slevy nelze kombinovat. Slevy v tomto příkladu jsou slevy za **nejlepší cenu**. Oba produkty jsou způsobilé pro obě slevy. Zde jsou dvě slevy.
 
-![Pole se seznamem Překrývající se slevy 01](./media/overlapping-discount-combo-01.jpg)
+![Příklad dvou nejlepších cenových slev](./media/overlapping-discount-combo-01.jpg)
 
 Pro libovolné dva výrobky lepší z obou slev závisí na cenách těchto dvou výrobků. Pokud je cena obou produktů stejná nebo téměř stejná, sleva 1 je lepší. Pokud je cena produktu významně nižší než ceny ostatních produktů, je lepší sleva 2. V tomto poli je matematické pravidlo pro vyhodnocení těchto dvou slev proti sobě.
 
-![Pole se seznamem Překrývající se slevy 02](./media/overlapping-discount-combo-02.jpg)
+![Pravidlo pro vyhodnocení slev](./media/overlapping-discount-combo-02.jpg)
 
 > [!NOTE]
 > Když se cena produktu 1 rovná dvěma třetinám ceny produktu 2, slevy se rovnají. V tomto příkladu se procento účinnosti slevy 1 liší o několik procent (jsou-li ceny těchto dvou výrobků daleko od sebe) na maximálně 25procent (pokud dva produkty mají stejnou cenu). Procento účinnosti slevy 2 je pevné. Jedná se vždy o 20 procent. Protože procento účinnosti slevy 1 má rozsah, který může být větší než nebo menší než sleva 2, nejlepší sleva závisí na ceně těchto dvou výrobků, které musí být odečtena. V tomto příkladu je výpočet dokončen rychleji, protože jsou použity pouze dvě slevy na pouze dva výrobky. Existují pouze dvě možné kombinace: jedna aplikace slevy 1 nebo jedna aplikace slevy 2. Není k dispozici pořadí pro výpočet. Hodnota každé slevy se vypočítá pomocí obou produktů a použije se nejlepší sleva.
@@ -60,11 +60,11 @@ Dále použijeme čtyři produkty a stejné dvě slevy. Všechny čtyři produkt
 
 Pokud chcete tabulky číst, použijte jeden produkt z řádku a jeden produkt ze sloupce. Například v tabulce pro slevu 1, pokud zkombinujete dva výrobky za $20, získáte $10. V tabulce pro slevu 2, pokud zkombinujete dva výrobky za $15 a jeden za $5, získáte slevu $4.
 
-![Pole se seznamem Překrývající se slevy 03](./media/overlapping-discount-combo-03.jpg)
+![Příklad, který používá čtyři produkty pro stejné dvě slevy](./media/overlapping-discount-combo-03.jpg)
 
 Nejprve najdeme největší slevu dostupnou z libovolných dvou produktů pomocí některé ze slev. Dvě tabulky zobrazují částku slevy pro všechny kombinace těchto dvou výrobků. Vystínované části tabulky představují buď případy, kde je produkt spárovaný se sebou sama, což nemůžeme udělat, nebo reverzní párování dvou výrobků, které vytváří stejnou částku slevy, která může být ignorována. Pohledem na tabulky uvidíte, že sleva 1 pro dvě položky po 20 USD je největší sleva, která je k dispozici pro jakoukoli slevu na všechny čtyři výrobky. (Tato sleva je zvýrazněna zeleně v první tabulce). To znamená pouze produkt za $15 a za $5. Dalším pohledem na dvě tabulky uvidíte, že u těchto dvou produktů znamená sleva 1 $2,50, zatímco sleva 2 $4. Proto vybereme slevu 2. Celková sleva činí $14. Abychom tuto diskusi snadno vizualizovali, této diskusi, zde jsou dva další tabulky zobrazující efektivní procento slevy pro všechny možné kombinace dvou produktů se slevou 1 i 2. Je zahrnuta pouze polovina seznamu kombinací, protože pro tyto dvě slevy není důležité pořadí, ve kterém jsou dva výrobky zlevněny. Nejvyšší efektivní sleva (25 procent) je zvýrazněna zeleně a nejnižší efektivní sleva (10 procent) červeně.
 
-![Pole se seznamem Překrývající se slevy 04](./media/overlapping-discount-combo-04.jpg)
+![Efektivní procento slevy pro všechny kombinace dvou produktů pro obě slevy](./media/overlapping-discount-combo-04.jpg)
 
 > [!NOTE]
 > Když se ceny liší a dvě nebo více slev soupeří, je jediný způsob, jak zaručit optimální kombinaci slev k vyhodnocení obou slev, jejich porovnání.
@@ -73,7 +73,7 @@ Nejprve najdeme největší slevu dostupnou z libovolných dvou produktů pomoc�
 
 Tato část pokračuje v příkladu z předchozího oddílu. Můžeme přidat další výrobky a jinou slevu a podívat se, kolik kombinací musí být vypočteno a porovnáno. Následující tabulka zobrazuje počet možných kombinací slev s tím, jak se zvyšuje množství produktu. Tabulka uvádí, co se stane, když existují dvě překrývající se slevy jako v předchozím příkladu, a když existují tři překrývající se slevy. Počet možných kombinací slev, které musí být vyhodnoceny, brzy překročí to, co nedokáže ani nejrychlejší počítač vypočítat porovnávat dostatečně rychle jako přijatelné pro maloobchodní transakce.
 
-![Pole se seznamem Překrývající se slevy 05](./media/overlapping-discount-combo-05.jpg)
+![Počet možných kombinací slev s tím, jak se zvyšuje množství produktu](./media/overlapping-discount-combo-05.jpg)
 
 Když jsou použita ještě větší množství nebo více překrývajících se slev, celkový počet možných kombinací slev rychle přejde do milionů a čas, který je nutný pro zhodnocení a výběru nejlepší možné kombinace se rychle. V modulu Maloobchodní ceny byly provedeny určité optimalizace na snížení celkového počtu kombinací, které musí být vyhodnoceny. Protože ale počet překrývajících se slev a množství v transakci nejsou omezeny, bude vždy potřeba vyhodnotit velký počet kombinací tam, kde existují překrývající se slevy. Tento problém je problém, který řeší metoda mezního hodnocení.
 
@@ -81,6 +81,6 @@ Když jsou použita ještě větší množství nebo více překrývajících se
 
 Chcete-li vyřešit problém exponenciálně rostoucího počtu kombinací, které musí být vyhodnoceny, existuje optimalizace, která vypočítá hodnotu pro každý sdílený produkt každé slevy v sadě produktů, u nichž lze použít dvě nebo více slev. Odkazujeme na tuto hodnotu jako na **Mezní hodnotu** slevy pro sdílené produkty. Mezní hodnota je průměr za zvýšení produktu v celkové částce slevy při zahrnutí sdílených produktů do každé slevy. Mezní hodnota se vypočte převzetím celkové částky slevy (DTotal) odečtením částky slevy bez sdílených produktů s využitím (DMinus\\ Shared) a tento rozdíl se vydělí počet sdílených produktů (ProductsShared).
 
-![Pole se seznamem Překrývající se slevy 06](./media/overlapping-discount-combo-06.jpg)
+![Vzorec pro výpočet mezní hodnoty](./media/overlapping-discount-combo-06.jpg)
 
 Po odečtení mezní hodnoty každé slevy ve sdílené sadě produktů se vypočte mezní hodnota, uplatní slevy na sdílené výrobky v pořadí, vyčerpávajícím způsobem, od nejvyšší mezní hodnoty k nejnižší mezní hodnotě. Pro tuto metodu nejsou porovnány všechny zbývající možnosti slev pokaždé, když je uplatněna jedna instance slevy. Místo toho jsou překrývající se slevy porovnány jednou a poté použity v pořadí. Nejsou prováděny žádné další porovnání. Můžete nakonfigurovat prahové hodnoty pro přepnutí na metodu mezní hodnoty na kartě **Sleva** stránky **Parametry maloobchodu**. Přijatelná doba při výpočtu celkové slevy se v rámci odvětví maloobchodu liší. Tentokrát však obecně spadá do rozsahu desítky milisekund na jednu sekundu.

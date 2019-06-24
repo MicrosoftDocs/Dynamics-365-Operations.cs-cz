@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1954b691d84b0aa8710da621af21415c6c116539
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
+ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517517"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1590498"
 ---
 # <a name="performance-management"></a>Řízení výkonnosti
 
@@ -109,7 +109,7 @@ Můžete zobrazit položky deníku výkonnosti související s přezkoumáním. 
 
 ### <a name="ratings"></a>Hodnocení
 
-Hodnotit můžete jakýkoli cíl či kompetenci, která je součástí přezkoumání. Pro každé přezkoumání můžete definovat modely hodnocení. Výchozí nastavení hodnocení jsou na kartě **Výkonnost** stránky **Parametry lidských zdrojů**.
+Hodnotit můžete jakýkoli cíl či kompetenci, která je součástí přezkoumání. Pro každé přezkoumání můžete definovat modely hodnocení. Výchozí nastavení hodnocení jsou na kartě **Výkonnost** stránky **Sdílené parametry lidských zdrojů**.
 
 ### <a name="sign-offs"></a>Podpisy
 

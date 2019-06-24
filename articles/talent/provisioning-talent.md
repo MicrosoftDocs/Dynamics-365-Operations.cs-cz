@@ -3,7 +3,7 @@ title: Zřízení aplikace Talent
 description: Toto téma vás povede procesem zřízení nového prostředí pro aplikaci Dynamics 365 for Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 00/05/2019
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 98f60e466b8b97215fdba0f48ca53ca57157283b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
+ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517527"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1576914"
 ---
 # <a name="provision-talent"></a>Zřízení aplikace Talent
 
@@ -47,13 +47,14 @@ Více informací o zahájení práce s aplikací Talent naleznete v metodologii 
 Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prostředí.
 
 1. Ve svém LCS projektu vyberte dlaždici **Správa aplikace Talent**.
-2. Talent bude vždy zřízen v prostředí Microsoft PowerApps, aby byla možná integrace a rozšiřitelnost PowerApps. Než budete pokračovat, přečtěte si část Výběr prostředí PowerApps v tomto tématu. Pokud již nemáte prostředí PowerApps, vyberte správu prostředí v LCS nebo přejděte do centra pro správu PowerApps. Poté postupujte podle kroků k [Vytvoření prostředí PowerApps](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
+2. Označte, zda se jedná o sandbox nebo produkční instanci aplikace Talent. Funkce předčasného náhledu mohou být k dispozici v instancích sandbox pro dřívější zpětnou vazbu a testování. 
+3. Pokud chcete, aby prostředí obsahovalo stejnou datovou sadu, jaká se používá ve zkušenosti talentové zkušební jednotky, zaškrtněte políčko **Zahrnout ukázková data**. To je vhodné pro dlouhodobá demonstrační nebo školicí prostředí a nikdy se nemá používat pro výrobní prostředí.  Tuto možnost musíte zvolit při počátečním nasazení. Existující nasazení nelze aktualizovat později.
+4. Talent bude vždy zřízen v prostředí Microsoft PowerApps, aby byla možná integrace a rozšiřitelnost PowerApps. Než budete pokračovat, přečtěte si část Výběr prostředí PowerApps v tomto tématu. Pokud již nemáte prostředí PowerApps, vyberte správu prostředí v LCS nebo přejděte do centra pro správu PowerApps. Poté postupujte podle kroků k [Vytvoření prostředí PowerApps](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > K zobrazení existujících prostředí nebo vytváření nových prostředí musí být správce klienta zřizujícího aplikaci Talent přiřazen k licenci PowerApps P2. Pokud vaše organizace nemá PowerApps P2 licenci, můžete jednu získat ze svého CSP nebo ze [stránky s cenami PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
 
-4. Vyberte **Přidat**a poté vyberte prostředí, do kterého chcete aplikaci Talent zřídit.
-5. Pokud chcete, aby prostředí obsahovalo stejnou datovou sadu, jaká se používá ve zkušenosti talentové zkušební jednotky, zaškrtněte políčko **Zahrnout ukázková data**. To je vhodné pro dlouhodobá demonstrační nebo školicí prostředí a nikdy se nemá používat pro výrobní prostředí.  Tuto možnost musíte zvolit při počátečním nasazení. Existující nasazení nelze aktualizovat později.
+5. Vyberte prostředí, do kterého chcete zřídit Talent.
 6. K odsouhlasení smluvních podmínek vyberte **Ano** a začněte s nasazením.
 
     Nové prostředí se zobrazí v seznamu prostředí v navigačním podokně na levé straně. Nelze však začít používat prostředí, dokud není stav nasazení aktualizován na **Nasazeno**. Tento proces trvá obvykle několik minut. Pokud není proces zřízení úspěšný, musíte kontaktovat podporu.

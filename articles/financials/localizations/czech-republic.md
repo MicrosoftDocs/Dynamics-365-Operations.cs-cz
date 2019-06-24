@@ -15,12 +15,12 @@ ms.search.region: Czech Republic
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b7d555afee6c36ce8256159bd3695aee516a02f4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 98a56021ea67623ee4dc1013913bc4b924c199fd
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537661"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565351"
 ---
 # <a name="czech-republic"></a>Česká republika
 

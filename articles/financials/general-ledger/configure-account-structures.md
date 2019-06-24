@@ -3,7 +3,7 @@ title: Konfigurovat účetní struktury
 description: Toto téma obsahuje informace o účetní struktuře a finančních dimenzích.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5fbd4b34d09b4ba8e1d34234c8e32268bba18778
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551992"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617289"
 ---
 # <a name="configure-account-structures"></a>Konfigurovat účetní struktury
 
@@ -70,6 +70,16 @@ Oddíl **podrobnosti povolené hodnoty** vás provede kritérii vytváření pom
 
 [![Povolit hodnoty](./media/account.png)](./media/account.png) 
 
+Pokud neexistují další možné hodnoty pro výběr v souladu s nastavením účetní struktury, budou povolené hodnoty se nastaví na výchozí na stránce zadání deníku nebo rozúčtování.
+
+Zde je příklad možnosti **Struktura účtu zisků a ztrát**.
+
+|Hlavní účet          | Obchodní jednotka    |Oddělení          | Nákladové středisko    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | 002 | 022 | 014 |
+
+Při zadávání deníku a výběru účtu v rozsahu zisků a ztrát způsobí výběr obchodní jednotky 002, že hodnoty 022 a 014 budou výchozí na ovládacím prvku účtu. K tomuto chování dojde také u stránky rozúčtování. 
+
 ## <a name="more-than-7-criteria-needed"></a>Je potřeba více než 7 kritérií.
 
 Pokud máte více než 7 kritérií, která jsou potřeba, můžete pokračovat v jejich přidávání na dalším řádku. Při práci v oddílu **podrobnosti povolené hodnoty** si všimnete, že kritérium **+ přidat nový** již není aktivní pro zadání sedmého kritéria. Je to způsobeno mnoha faktory jako: 
@@ -79,8 +89,6 @@ Pokud máte více než 7 kritérií, která jsou potřeba, můžete pokračovat 
  - Použitelnost  
  
 Chcete-li přidat další kritéria, klepněte na tlačítko **duplicitní v segmentu** a **Oddíl Povolené hodnoty**. Tím se kritéria zkopírují na nový řádek. Potom můžete přepsat nebo změnit oddíl **Podrobnosti povolené hodnoty**.
-
-(ODKAZ NA VIDEOZÁZNAM, KTERÝ BUDE VYTVOŘEN)
 
 ## <a name="best-practices"></a>Doporučené postupy
 Při nastavování účetních struktur existují doporučené postupy, které můžete následovat. Jde však pouze o pokyny, takže by měla být v rámci takové diskuse zvážena holistická diskuse o vaší firmě, plánu rozvoje a údržbě.

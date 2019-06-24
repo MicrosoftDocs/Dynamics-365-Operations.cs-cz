@@ -3,7 +3,7 @@ title: Vytvoření online sítě a definování atributů kanálu
 description: Tato procedura vás provede vytvářením nového online kanálu a jeho přidáním do organizační hierarchie.
 author: jashanno
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/04/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e066e9901a97bd5b72815a7af472247ef519ecb9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4547731d7e3bc56b1ba5e0a35ff4746c6c0e9863
+ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569514"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1618289"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>Vytvoření online sítě a definování atributů kanálu
 
@@ -60,4 +60,10 @@ Tato procedura vás provede vytvářením nového online kanálu a jeho přidán
 9. Kliknutím na možnost Publikovat otevřete dialog Zanechat.
 10. Do pole Datum platnosti zadejte datum a čas.
 11. Klikněte na tlačítko Publikovat.
+
+## <a name="configure-orders-for-near-realtime-notification"></a>Konfigurace objednávek pro blízké oznámení v reálném čase
+1. Přejděte na možnost Maloobchod > Nastavení centrály > Parametry > Parametry maloobchodu.
+2. Nastavte možnost Použít službu Realtime Service pro vytvoření obejdnávky eCommerce na Ano.
+3. Spusťte plán distribuce 1070 k synchronizování změn do databáze kanálů. 
+
 

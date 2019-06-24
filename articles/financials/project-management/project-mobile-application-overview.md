@@ -3,7 +3,7 @@ title: Přehled mobilních aplikací projektu
 description: Toto téma obsahuje obecné informace o aplikacích souvisejících s časem projektu pro Microsoft Dynamics 365, které jsou k dispozici na mobilním zařízení.
 author: KimANelson
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 5b0560a8be32962f94b24754458fb2cf714a15c8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 22ccc70e242ffc9a487720c6a25fa6c5b8d78073
+ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1529964"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "1608131"
 ---
 # <a name="project-mobile-applications-overview"></a>Přehled mobilních aplikací projektu
 
@@ -45,4 +45,4 @@ Moje časové rozvrhy (optimalizované pro mobilní telefon) a Časové rozvrhy 
 
 ## <a name="for-more-information"></a>Získání dalších informací
 
-Další informace naleznete v tématu [Mobilní aplikace Microsoft Dynamics 365 Project Timesheet](project-timesheet.md), [Časový záznam projektu]( project-time-entry-mobile-workspace.md) a [Časové rozvrhy projektu na mobilním zařízení](Mobile-timesheets.md).
+Další informace naleznete v tématu [Mobilní aplikace Microsoft Dynamics 365 Project Timesheet](project-timesheet.md), [Časový záznam projektu]( project-time-entry-mobile-workspace.md), [Časové rozvrhy na mobilním zařízení](Mobile-timesheets.md) a [Implementace vlastních polí pro mobilní aplikaci Časový rozvrh projektu](custom-fields-mobile.md).

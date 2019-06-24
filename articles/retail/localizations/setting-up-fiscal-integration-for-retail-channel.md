@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1525318"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577893"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Nastavení fiskální integrace pro maloobchodní kanály
 
@@ -88,7 +88,7 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
         Parametry mapování dat konektoru můžete změnit ve funkčním profilu konektoru. Chcete-li obnovit výchozí parametry, které jsou definovány v konfiguraci poskytovatele fiskálního dokumentu, vyberte **Aktualizovat**.
 
         **Příklady**
-    
+
         |   | Formát | Příklad |
         |---|--------|---------|
         | **Nastavení sazeb DPH** | hodnota : VATrate | 1 : 2000, 2 : 1800 |
@@ -111,7 +111,7 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
 4. Vytvořte skupiny fiskálních konektorů.
 
     Skupina fiskálních konektorů kombinuje fiskální konektory funkčních profilů, které provádí identické funkce a používají se ve stejné fázi v rámci procesu fiskální registrace. Například pokud lze v maloobchodě použít několik modelů fiskální tiskárny, lze fiskální konektory pro tyto tiskárny zkombinovat do skupiny fiskálního konektoru.
-    
+
     1. Na stránce **Skupina fiskálních konektorů** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Skupiny fiskálních konektorů**) vytvořte novou skupinu fiskálních konektorů.
     2. Přidání funkčních profilů do skupiny konektoru. Klikněte na **Přidat** na stránce **Funkční profily** a vyberte číslo profilu. Ve skupině konektoru může mít každý fiskální konektor pouze jeden funkční profil.
     3. Pokud chcete pozastavit použití funkčního profilu, nastavte možnost **Zakázat** na **Ano**. Tato změna ovlivní pouze aktuální skupinu konektoru. Můžete pokračovat s použitím stejného funkčního profilu v jiných skupinách konektoru.
@@ -119,7 +119,7 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
 5. Vytvořte proces fiskální registrace.
 
     Proces fiskální registrace je definován sledem registračních kroků a skupinou konektorů používaných v každém kroku.
-    
+
     1. Na stránce **Proces fiskální registrace** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Procesy fiskální registrace**) vytvořte nový záznam pro každý jedinečný proces fiskálních integrace.
     2. Přidejte kroky registrace do procesu:
 
@@ -145,7 +145,7 @@ Před použitím funkce fiskální integrace byste měli konfigurovat následuj�
 7. Na stránce **Proces fiskální registrace** (**Maloobchod \> Nastavení kanálu \> Fiskální integrace \> Procesy fiskální registrace**) vyberte **Ověřit** k ověření procesu fiskální registrace.
 
     Doporučujeme spustit tento typ ověření v následujících případech:
-    
+
     - Pro nový proces registrace po dokončení všech nastavení, včetně přiřazení procesů registrace funkčním a hardwarovým profilům POS.
     - Poté, co provedete změny v existujícím procesu daňové registrace a pokud tyto změny způsobí výběr jiného fiskálního konektoru v době běhu (například když změníte skupinu konektoru pro krok procesu fiskální registrace, povolte funkční profil konektoru ve skupině konektoru nebo přidejte nový funkční profil konektoru skupině konektoru).
     - Po provedení změn v přiřazení technických profilů konektoru hardwarovým profilům.

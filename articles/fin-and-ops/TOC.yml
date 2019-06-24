@@ -44,9 +44,11 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funkce neimplementované v místních nasazeních
               href: get-started/features-not-implemented-on-prem.md
+            - name: Funkce Preview v aplikaci Finance and Operations verze 10.0.4 (červenec 2019)
+              href: get-started/whats-new-changed-10-0-4.md
             - name: Funkce Preview v aplikaci Finance and Operations verze 10.0.3 (červen 2019)
               href: get-started/whats-new-changed-10-0-3.md
-            - name: Funkce Preview v aplikaci Finance and Operations verze 10.0.2 (květen 2019)
+            - name: Finance and Operations verze 10.0.2 (květen 2019)
               href: get-started/whats-new-changed-10-0-2.md
             - name: Finance and Operations verze 10.0.1 (duben 2019)
               href: get-started/whats-new-changed-10-0-1.md
@@ -54,9 +56,11 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations verze 8.1.3 (leden 2019)
               href: get-started/whats-new-changed-8-1-3.md
+            - name: 'Funkce Preview v aplikaci Finance and Operations, aktualizace Platform Update 28 (červenec 2019)'
+              href: get-started/whats-new-platform-update-28.md
             - name: 'Funkce Preview v aplikaci Finance and Operations, aktualizace Platform Update 27 (červen 2019)'
               href: get-started/whats-new-platform-update-27.md
-            - name: 'Funkce Preview v aplikaci Finance and Operations, aktualizace Platform Update 26 (květen 2019)'
+            - name: Platform update 26 (květen 2019)
               href: get-started/whats-new-platform-update-26.md
             - name: Platform update 25 (duben 2019)
               href: get-started/whats-new-platform-25.md
@@ -1261,6 +1265,8 @@
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: Vytvoření předběžného rozpočtu pro veřejný sektor
                   href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
+                - name: Sestava analýzy rozpočtu
+                  href: ../financials/public-sector/budget-analysis-report.md
                 - name: Analýza rozpočtu ve veřejném sektoru
                   href: ../financials/public-sector/budget-analysis-public-sector.md
                 - name: Předběžné rozpočty a rozdělení ve veřejném sektoru
@@ -1837,7 +1843,7 @@
               href: ../financials/localizations/emea-fra-print-lump-sum-recovery-text.md
             - name: Odpis RB/SL
               href: ../financials/localizations/emea-fra-rbsl-depreciation.md
-            - name: Nastavení metody platby
+            - name: Nastavení způsobu platby
               href: ../financials/localizations/tasks/fr-00004-setup-method-payment.md
             - name: Aktualizace způsobu platby pro odběratele
               href: ../financials/localizations/tasks/fr-00004-update-method-payment-customer.md
@@ -2277,6 +2283,7 @@
                   href: ../financials/localizations/rus-ledger-transactions-preview.md
                 - name: Nastavení směnných kurzů transakce měny
                   href: ../financials/localizations/rus-exchange-difference.md
+                - name: Import směnných kurzů z CBRF ../financials/general-ledger/import-currency-exchange-rates.md
             - name: Držitelé zálohy
               href: ../financials/localizations/rus-advance-holders.md
               items:
@@ -2638,7 +2645,6 @@
                   href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
                 - name: Nastavení zaměstnaneckých výhod
                   href: hr/localizations/noam-usa-benefit-set-up-tasks.md
-            - name: Intervaly a cykly
             - name: "Nastavení platebních cyklů a\_platebních období"
               href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
             - name: Nastavení intervalů výpočtu mezd
@@ -2922,6 +2928,8 @@
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
             - name: Analýza příchozích dokumentů ve formátu CSV
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
+            - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
+              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
             - name: Rozdělení generovaných XML souborů na základě velikosti souboru a množství obsahu
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
               items:
@@ -3334,7 +3342,7 @@
               href: organization-administration/tasks/create-organization-hierarchy.md
             - name: Vytvořit právnické osoby
               href: organization-administration/tasks/create-legal-entity.md
-            - name: Vytvoření provozní jednotky
+            - name: Vytvoření provozních jednotek
               href: organization-administration/tasks/create-operating-unit.md
         - name: Globální adresář
           href: organization-administration/overview-global-address-book.md
@@ -3352,7 +3360,7 @@
           items:
             - name: Architektura systému workflowu
               href: organization-administration/workflow-system-architecture.md
-            - name: Prvky workflowu
+            - name: Prvky workflow
               href: organization-administration/workflow-elements.md
             - name: Akce workflowu
               href: organization-administration/workflow-actions.md
@@ -3383,7 +3391,7 @@
               href: organization-administration/workflow-batch-job-critical.md
             - name: Delegování položek práce ve workflow
               href: organization-administration/tasks/delegate-work-items-workflow.md
-            - name: Zobrazení historie workflowu
+            - name: Zobrazení historie workflow
               href: organization-administration/tasks/view-workflow-history.md
             - name: Konfigurace systému pro odeslání e-mailů souvisejících s workflow uživatelům
               href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
@@ -3408,7 +3416,7 @@
         - name: Správa případů
           href: organization-administration/cases.md
           items:
-            - name: 'Plán bezpečnosti případu, procesů a kategorií'
+            - name: 'Plánování bezpečnosti případu, procesů a kategorií'
               href: organization-administration/plan-case-management.md
         - name: Šablony záznamu
           href: organization-administration/record-templates.md
@@ -3421,7 +3429,7 @@
           href: organization-administration/configure-document-management.md
         - name: Konfigurace a odeslání e-mailu
           href: organization-administration/configure-email.md
-        - name: Údaje data a času a časové pásmo
+        - name: Údaje data a času a časová pásma
           href: organization-administration/date-time-zones.md
     - name: Řízení výroby
       href: ../supply-chain/production-control/production-process-overview.md
@@ -3877,6 +3885,10 @@
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
         - name: Mobilní aplikace časového rozvrhu projektu
           href: ../financials/project-management/project-timesheet.md
+        - name: Časové rozvrhy na mobilním zařízení
+          href: ../financials/project-management/mobile-timesheets.md
+        - name: Implementace vlastních polí pro mobilní aplikaci Časový rozvrh projektu
+          href: ../financials/project-management/custom-fields-mobile.md
     - name: Prodej a marketing
       href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:

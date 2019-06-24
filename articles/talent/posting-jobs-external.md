@@ -3,7 +3,7 @@ title: Publikování pracovních míst z aplikace Attract na externí weby
 description: Toto téma vysvětluje postup použití aplikace Dynamics 365 for Talent - Attract pro publikování pracovních míst na externí náborové weby.
 author: pganapmsft
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: eca599ad189edae29ef2de496196b08799a5e745
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9c27d1810a89ed7d7a7745e41c5f118dbdfe5dda
+ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517529"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1590475"
 ---
 # <a name="post-jobs-to-external-career-sites-from-attract"></a>Publikování pracovních míst z aplikace Attract na externí weby
 
@@ -36,6 +36,7 @@ Před publikováním pracovních míst na Broadbean musíte nakonfigurovat integ
 
 > [!NOTE]
 > - Chcete-li publikovat pracovní místa na externí weby, musíte mít [doplněk komplexního náboru](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Chcete-li publikovat práce do služby Broadbean prostřednictvím aplikace Attract, musíte mít předplatné Broadbean.
 > - Tato funkce je aktuálně v náhledu Pokud chcete provést akci, musíte [ji zapnout v nastavení pro správu Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 ### <a name="configure-broadbean-integration"></a>Konfigurace integrace s Broadbean

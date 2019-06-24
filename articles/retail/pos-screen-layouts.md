@@ -3,7 +3,7 @@ title: Rozložení obrazovky pokladního místa (POS)
 description: Toto téma obsahuje informace o rozložení obrazovky pro prostředí POS aplikace Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549421"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607027"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Rozložení obrazovky pokladního místa (POS)
 
@@ -51,6 +51,7 @@ Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, kter
 - **Motiv** -můžete zvolit mezi světlým nebo tmavým motivem aplikace. Motiv ovlivní barvu písma a pozadí napříč aplikací.
 - **Barva zvýraznění** -barva zvýraznění v celém POS slouží k odlišení nebo zvýraznění konkrétních vizuálních prvků, jako jsou dlaždice, příkazová tlačítka a hypertextové odkazy. Tyto prvky typicky slouží k provádění akcí.
 - **Barva záhlaví** – lze konfigurovat barvu záhlaví stránky podle požadavků maloobchodníka týkajících se značky. Tato funkce je k dispozici pouze v Microsoft Dynamics 365 for Retail verze 1611.
+- **Zobrazit datum a čas** – V případě povolení se v záhlaví POS zobrazí aktuální datum a čas.
 - **Pozadí přihlašování** - můžete zadat obrázek pozadí pro přihlašovací obrazovku. Velikost obrázků na pozadí je třeba uchovávat co nejmenší, protože ukládání a načítání velkých souborů může mít vliv na chování a výkon aplikace.
 - **Pozadí aplikace** - můžete určit obrázek pozadí, který bude použit namísto plné barvy motivu v celé aplikaci. Pokud jde o pozadí při přihlašování, velikost souboru by měla být co nejmenší.
 
