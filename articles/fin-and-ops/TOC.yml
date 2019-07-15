@@ -44,9 +44,9 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funkce neimplementované v místních nasazeních
               href: get-started/features-not-implemented-on-prem.md
-            - name: Funkce Preview v aplikaci Finance and Operations verze 10.0.4 (červenec 2019)
+            - name: 'Finance and Operations, verze 10.0.4 (červenec 2019)'
               href: get-started/whats-new-changed-10-0-4.md
-            - name: Funkce Preview v aplikaci Finance and Operations verze 10.0.3 (červen 2019)
+            - name: 'Finance and Operations, verze 10.0.3 (červen 2019)'
               href: get-started/whats-new-changed-10-0-3.md
             - name: Finance and Operations verze 10.0.2 (květen 2019)
               href: get-started/whats-new-changed-10-0-2.md
@@ -56,9 +56,9 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations verze 8.1.3 (leden 2019)
               href: get-started/whats-new-changed-8-1-3.md
-            - name: 'Funkce Preview v aplikaci Finance and Operations, aktualizace Platform Update 28 (červenec 2019)'
+            - name: Platform update 28 (červenec 2019)
               href: get-started/whats-new-platform-update-28.md
-            - name: 'Funkce Preview v aplikaci Finance and Operations, aktualizace Platform Update 27 (červen 2019)'
+            - name: Platform update 27 (červen 2019)
               href: get-started/whats-new-platform-update-27.md
             - name: Platform update 26 (květen 2019)
               href: get-started/whats-new-platform-update-26.md
@@ -236,10 +236,16 @@
           href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
         - name: Automatizace datové úlohy
           href: ../dev-itpro/data-entities/data-task-automation.md
-        - name: Doručení řešení ISV pomocí One Version
+        - name: Doručení řešení nezávislých výrobců softwaru pomocí One Version
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: Regression Suite Automation Tool
-          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+        - name: Automatizace testování
+          items:
+            - name: Vytvoření a automatizace akceptačních testování uživatele
+              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+            - name: Nastavení kurzu pro nástroj Regression Suite Automation Tool
+              href: get-started/hol-set-up-regression-suite-automation-tool.md
+            - name: Použití kurzu pro nástroj Regression Suite Automation Tool
+              href: get-started/hol-use-regression-suite-automation-tool.md
     - name: Obchodní události
       href: ../dev-itpro/business-events/home-page.md
       items:
@@ -257,7 +263,11 @@
           href: ../dev-itpro/business-events/troubleshooting.md
         - name: Případy použití pro obchodní události
           href: ../dev-itpro/business-events/potential-use-cases.md
-    - name: Shoda
+        - name: Kurzy
+          items:
+            - name: Využití obchodních událostí pomocí Microsoft Flow
+              href: ../dev-itpro/business-events/how-to/how-to-flow.md
+    - name: Dodržování předpisů
       items:
         - name: Pravidla zásad auditu
           href: ../financials/general-ledger/audit-policy-rules.md
@@ -849,7 +859,7 @@
               href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
             - name: Finanční dimenze
               href: ../financials/general-ledger/financial-dimensions.md
-            - name: Účetní struktury
+            - name: Finanční dimenze a zaúčtování
               href: ../financials/general-ledger/Default-dimensions.md
             - name: Přidání finančních dimenzí k pracovnímu prostoru CFO
               href: ../financials/general-ledger/CFO-workspace.md
@@ -1080,6 +1090,8 @@
                   href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
                 - name: Vytvoření účetních struktur
                   href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: Finanční dimenze a zaúčtování
+                  href: ../financials/general-ledger/default-dimensions.md
                 - name: Vytvoření schémat časového rozlišení
                   href: ../financials/general-ledger/tasks/create-accrual-schemes.md
                 - name: Finanční konsolidace a převod měny
@@ -1936,10 +1948,144 @@
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: GST integrace pro registrační pokladny
                   href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Nákup zdanitelné položky od neregistrovaného dodavatele
-                  href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
-            - name: Pokyny k nasazení registračních pokladen
-              href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+                - name: Nastavení hlavních dat
+                  items:
+                    - name: Vytvoření obchodní vertikály
+                      href: ../financials/localizations/apac-ind-GST-create-business-vertical.md
+                    - name: Aktualizace kódu státu a svazového teritoria
+                      href: ../financials/localizations/apac-ind-GST-update-state-code-union-territory.md
+                    - name: Vytvoření základního GSTIN
+                      href: ../financials/localizations/apac-ind-GST-create-gstin-master.md
+                    - name: Definování GSTIN a posloupnost referenčních čísel
+                      href: ../financials/localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
+                    - name: Definování kódů HSN a kódů účetnictví služby
+                      href: ../financials/localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                    - name: Vytvoření hlavních účtů pro typ zaúčtování GST
+                      href: ../financials/localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
+                    - name: Vytvoření období daňového vyrovnání
+                      href: ../financials/localizations/apac-ind-GST-create-tax-settlement-period.md
+                    - name: Připojení GSTIN ke skupině daňové registrace
+                      href: ../financials/localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
+                - name: Nastavení daně
+                  items:
+                    - name: Nasazení konfigurace daně a její nasazení do právnických osob
+                      href: ../financials/localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
+                    - name: Mapování typů konfigurace daně - Cla
+                      href: ../financials/localizations/apac-ind-GST-map-configuration-tax-types.md
+                    - name: Nastavení tabulek sazeb a procent
+                      href: ../financials/localizations/apac-ind-GST-set-up-rate-percentage-tables.md
+                    - name: Nastavení hierarchie DPH a pravidel vyrovnání
+                      href: ../financials/localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
+                - name: Nákupní transakce
+                  items:
+                    - name: Nákupy od neregistrovaných dodavatelů
+                      href: ../financials/localizations/apac-ind-GST-purchases-unregistered-vendor.md
+                    - name: Nákup zdanitelné položky od neregistrovaného dodavatele
+                      href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
+                    - name: Nákupy od registrovaných dodavatelů
+                      href: ../financials/localizations/apac-ind-GST-purchases-registered-vendor.md
+                    - name: Nákupy zlevněného zboží
+                      href: ../financials/localizations/apac-ind-GST-purchase-discounted-goods.md
+                    - name: Nákupy osvobozeného zboží
+                      href: ../financials/localizations/apac-ind-GST-purchase-exempted-goods.md
+                    - name: Nákupy zboží s nulovou sazbou
+                      href: ../financials/localizations/apac-ind-GST-purchase-zero-rated-goods.md
+                    - name: Nákupy zboží bez GST
+                      href: ../financials/localizations/apac-ind-GST-purchase-non-gst-goods.md
+                    - name: Nákupy od kombinovaných prodejců
+                      href: ../financials/localizations/apac-ind-GST-purchase-from-composite-dealer.md
+                    - name: Nákup zboží podléhajícího dani s přepravními náklady
+                      href: ../financials/localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
+                    - name: Kontrola nákupní faktury se zbožím podléhajícím dani
+                      href: ../financials/localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
+                    - name: Nákupy dlouhodobého majetku
+                      href: ../financials/localizations/apac-ind-GST-purchase-fixed-asset.md
+                    - name: Vytvoření dobropisu proti nákupní faktuře
+                      href: ../financials/localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
+                    - name: Vytvoření dluhopisu proti nákupní faktuře
+                      href: ../financials/localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
+                    - name: Objednávky kvality zahrnující zničení vzorku
+                      href: ../financials/localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
+                    - name: Nákupní vratky
+                      href: ../financials/localizations/apac-ind-GST-purchase-return-order.md
+                    - name: Zálohové platby dodavatele se stornovacími poplatky
+                      href: ../financials/localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                - name: Prodejní transakce
+                  items:
+                    - name: Prodej zboží podléhajícího dani spotřebitelům
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+                    - name: Prodej registrovaným zákazníkům
+                      href: ../financials/localizations/apac-ind-GST-sell-registered-customer.md
+                    - name: Volné faktury
+                      href: ../financials/localizations/apac-ind-GST-free-text-invoices.md
+                    - name: Prodej zboží podléhajícího dani se stornovacím poplatkem
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+                    - name: Prodej osvobozených položek
+                      href: ../financials/localizations/apac-ind-GST-sales-exempted-item.md
+                    - name: Prodej zboží s nulovou sazbou
+                      href: ../financials/localizations/apac-ind-GST-sell-zero-rated-goods.md
+                    - name: Prodej zboží bez GST
+                      href: ../financials/localizations/apac-ind-GST-sell-non-gst-goods.md
+                    - name: Prodej zboží podléhajícího dani se slevou a provizorním ohodnocením
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+                    - name: Prodej zboží podléhajícího dani s daní na přepravních nákladech
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+                    - name: 'Prodej, kde ceny zahrnují a vylučují daň'
+                      href: ../financials/localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+                    - name: Vytvoření dluhopisu proti prodejní faktuře
+                      href: ../financials/localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+                    - name: Vytvoření dobropisu proti prodejní faktuře
+                      href: ../financials/localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+                    - name: Prodejní faktury rozdělené na základě adresy doručení
+                      href: ../financials/localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+                    - name: Vratky
+                      href: ../financials/localizations/apac-ind-GST-return-order-form.md
+                - name: Cizí transakce
+                  items:
+                    - name: Dovoz zboží s GST
+                      href: ../financials/localizations/apac-ind-GST-import-goods-gst.md
+                    - name: Dovoz služeb s GST
+                      href: ../financials/localizations/apac-ind-import-services-gst.md
+                    - name: Vývoz zboží s nulovou sazbou daně
+                      href: ../financials/localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+                    - name: Vývoz služeb s nulovou sazbou daně
+                      href: ../financials/localizations/apac-ind-GST-export-services-zero-rated-tax.md
+                - name: Skladová transakce
+                  items:
+                    - name: Skladové převodní příkazy s daní na mezipodnikové ceně
+                      href: ../financials/localizations/apac-ind-GST-stock-transfer-transactions.md
+                - name: Transakce plateb odběratelů
+                  items:
+                    - name: Platby záloh s daní
+                      href: ../financials/localizations/apac-ind-GST-advance-payment-includes-tax.md
+                    - name: Zálohové platby vyrovnané během zaúčtování faktury
+                      href: ../financials/localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+                    - name: Ruční vyrovnání zálohy a faktury zahrnující daň
+                      href: ../financials/localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+                    - name: Platby faktur s daní
+                      href: ../financials/localizations/apac-ind-GST-pay-invoice-includes-tax.md
+                    - name: Kontrola plateb záloh s daní
+                      href: ../financials/localizations/apac-ind-GST-revise-advanced-payment-tax.md
+                    - name: Refundace platby odběratele
+                      href: ../financials/localizations/apac-ind-GST-customer-payment-refund.md
+                - name: Transakce přímé daně
+                  items:
+                    - name: Zahrnutí GST při výpočtu daňových srážek
+                      href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                    - name: Zahrnutí GST při výpočtu daňových výběrů
+                      href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                - name: Úprava částky daně
+                  href: ../financials/localizations/apac-ind-GST-tax-adjustments.md
+                - name: Daňové vyrovnání na základě pravidel
+                  href: ../financials/localizations/apac-ind-GST-tax-settlement.md
+                - name: Vytvoření deníku daně
+                  href: ../financials/localizations/apac-ind-GST-tax-journal.md
+                - name: Generování dat sestavy GSTR pro vrácení daně
+                  href: ../financials/localizations/apac-ind-GST-tax-returns.md
+                - name: Daňový dotaz
+                  href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
+                - name: Pokyny k nasazení registračních pokladen
+                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: Přehled daňového modulu
               href: ../financials/general-ledger/tax-engine.md
               items:
@@ -2377,6 +2523,10 @@
                   href: ../financials/localizations/rus-accounting-reporting.md
                 - name: Vyměřené daňové přiznání
                   href: ../financials/localizations/rus-assessed-tax-declaration.md
+                - name: Přiznání přepravní daně
+                  href: ../financials/localizations/rus-transport-tax-declaration.md
+                - name: Přiznání daně z pozemku
+                  href: ../financials/localizations/rus-land-tax-declaration.md
             - name: Správa organizace
               items:
                 - name: Informace o registraci daně související s adresou
@@ -2791,166 +2941,228 @@
               href: ../dev-itpro/analytics/install-modern-report-design-templates.md?toc=/fin-and-ops/toc.json
             - name: Přizpůsobení sestav App Suite pomocí rozšíření
               href: ../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/fin-and-ops/toc.json
-            - name: Rozšíření datových sad sestavy Application Suite
+            - name: Rozšíření datových sad sestavy sady aplikací
               href: ../dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/fin-and-ops/toc.json
-            - name: Rozšíření položek nabídky sestavy pro přesměrování navigací uživatele
+            - name: Rozšíření položek nabídky sestavy pro přesměrování navigace uživatele
               href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
             - name: Vytvoření vlastních návrhů pro obchodní dokumenty
               href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
-        - name: Elektronické výkaznictví
+            - name: Náhled PDF dokumentů s integrovaným prohlížečem
+              href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
+    - name: Elektronické výkaznictví
+      items:
+        - name: Přehled elektronického výkaznictví
           href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
+        - name: Konfigurace
           items:
-            - name: Konfigurace architektury elektronického výkaznictví
-              href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
             - name: Vytvoření konfigurací
               href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
+            - name: Příprava komponent pro řešení elektronického výkaznictví
               items:
-                - name: Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních
-                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Návrh datových modelů specifických pro doménu
+                - name: Návrh datového modelu specifického pro doménu
                   href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
+                - name: Příprava metadat specifických pro aplikaci
+                  items:
+                    - name: (Elektronické výkaznictví) Příprava metadat aplikace k použití v RCS
+                      href: ../dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/fin-and-ops/toc.json
+                    - name: (RCS) Přístup k metadatům aplikace pomocí konfigurace elektronického výkaznictví
+                      href: ../dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/fin-and-ops/toc.json
+                    - name: (RCS) Přístup k metadatům aplikace pomocí připojených aplikací
+                      href: ../dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/fin-and-ops/toc.json
                 - name: Definování mapování modelů a výběr zdrojů dat
                   href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Namapování datových modelů na vybrané zdroje dat
+                - name: Namapování datového modelu na vybrané zdroje dat
                   href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Vytvoření konfigurací formátu
+                - name: Vytvoření konfigurace formátu
                   href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Mapování komponent formátu na prvky datového modelu
+                - name: Mapování komponent vytvořeného formátu na prvky datového modelu
                   href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Testování připraveného řešení elektronického výkaznictví v cílové aplikaci
+              items:
+                - name: (Elektronické výkaznictví) Import konfigurací z RSC
+                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/fin-and-ops/toc.json
                 - name: Generování elektronických dokumentů pro platby za použití konfigurace formátu
                   href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-                - name: Upgrade formátů přijetím nových základních verzí
-                  href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
-                - name: Návrh konfigurací elektronického výkaznictví pro vyplnění šablon PDF
-                  href: ../dev-itpro/analytics/er-fillable-pdf.md
-            - name: Návrhář receptur v elektronickém výkaznictví
-              href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-            - name: Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
-              href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
-            - name: Místa určení
-              href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Konfigurace míst určení
-                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Návrh konfigurací pro generování sestav ve formátu Word
-              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Návrh konfigurací pro generování sestav ve formátu OpenXML
+            - name: Upgrade formátu přijetím nové základní verze tohoto formátu
+              href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
+        - name: Návrhář receptur v elektronickém výkaznictví
+          href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
+        - name: Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
+          href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: Výběr definic datového modelu při vytváření formátů
+          href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: Generování sestavy přidáním obsahu v podobě neformátovaného dokumentu XML
+          href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
+        - name: (Elektronické výkaznictví) Datové zdroje mezi společnostmi v elektronickém výkaznictví
+          href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
+        - name: Návrh formátů elektronické výkaznictví pro generování odchozích elektronických dokumentů v různých formátech
+          items:
+            - name: (Elektronické výkaznictví) Návrh konfigurace pro generování sestav ve formátu OPENXML
               href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel
-              href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Výběr definice datového modelu při vytváření formátů
-              href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
-            - name: Definování závislosti konfigurace na jiných komponentách
-              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: (Elektronické výkaznictví) Návrh konfigurací pro generování sestav ve formátu Word
+              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Návrh konfigurací pro vyplnění šablon PDF
+              href: ../dev-itpro/analytics/er-fillable-pdf.md?toc=/fin-and-ops/toc.json
+        - name: Integrace obrázků a tvarů
+          items:
+            - name: (Elektronické výkaznictví) Integrace obrázků a tvarů v generovaných dokumentech
+              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
+            - name: Příklad integrace obrázků a tvarů
               items:
-                - name: Návrh datových modelů k používání finančních dimenzí jako zdrojů dat
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
-                - name: Mapování modelů k používání finančních dimenzí jako zdrojů dat
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
-                - name: Návrh sestav k používání finančních dimenzí jako zdrojů dat
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
-                - name: 'Spuštění sestav, které používají finanční dimenze jako zdroje dat'
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
-                - name: Vytvoření formátů pro provádění počítání a sčítání
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
-                - name: Konfigurace výpočtů pro provádění počítání a sčítání
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
-                - name: Použití výpočtů pro generování výstupu počítání a sčítání
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
-                - name: Spuštění formátů pro provádění počítání a sčítání
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
-                - name: Návrh formátů k dynamickému přidání sloupců jako horizontálně rozšířitelných rozsahů
-                  href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-                - name: Spuštění formátů k dynamickému přidání sloupců jako horizontálně rozšířitelných rozsahů
-                  href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
-                - name: Příprava datových modelů k použití souborů pro správu dokumentů ve výstupu
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-                - name: Rozšíření datových modelů k použití souborů pro správu dokumentů ve výstupu
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-                - name: Vytvoření formátů k použití souborů pro správu dokumentů ve výstupu
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-                - name: Spuštění formátů k použití souborů pro správu dokumentů ve výstupu
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-                - name: Úprava a spuštění formátů k použití souborů pro správu dokumentů ve výstupu
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
                 - name: Návrh konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
-                - name: Revize konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
+                - name: Kontrola konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
                 - name: Generování sestav ve formátech Office s integrovanými obrázky
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
+        - name: Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel
+          href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
+        - name: Návrh verze aplikace Finance and Operations závislé na konfiguracích elektronického výkaznictví
+          items:
+            - name: Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: Návrh řešení elektronického výkaznictví k používání finančních dimenzí
+          items:
+            - name: Návrh datových modelů k používání finančních dimenzí jako zdrojů dat
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
+            - name: Mapování modelů k používání finančních dimenzí jako zdrojů dat
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
+            - name: Návrh sestav k používání finančních dimenzí jako zdrojů dat
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
+            - name: 'Spuštění sestav, které používají finanční dimenze jako zdroje dat'
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
+        - name: Návrh formátů elektronického výkaznictví pro provedení počítání a sčítání pomocí informací z generovaného výstupu
+          items:
+            - name: Vytvoření formátů pro provádění počítání a sčítání
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
+            - name: Konfigurace formátu pro provádění počítání a sčítání
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
+            - name: Použití výpočtů pro generování výstupu počítání a sčítání
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
+            - name: Spuštění formátů pro provádění počítání a sčítání
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
+        - name: Dynamické přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
+          items:
+            - name: Návrh formátů k dynamickému přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
+              href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
+            - name: Spuštění formátů k dynamickému přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
+              href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
+        - name: Použití souborů pro správu dokumentů ve výstupech formátu
+          items:
+            - name: Příprava datových modelů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
+            - name: Rozšíření datových modelů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
+            - name: Vytvoření formátů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
+            - name: Spuštění formátů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
+            - name: Úprava a spuštění formátů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
+        - name: Aktualizace dat aplikace pomocí elektronického výkaznictví
+          items:
             - name: Generování elektronických dokumentů a aktualizace dat aplikace
               href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
+            - name: Import konfigurací pro generování dokumentů s daty aplikace
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
+            - name: Návrh konfigurací pro generování dokumentů s daty aplikace
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
+            - name: Úprava modelů a mapování pro generování dokumentů s daty aplikace
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
+            - name: Úprava formátů pro generování dokumentů s daty aplikace
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
+            - name: Generování dokumentů s daty aplikace
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
+        - name: Import dat z příchozích souborů pomocí řešení elektronického výkaznictví
+          items:
+            - name: Analýza příchozích dokumentů v různých formátech
+              href: ../dev-itpro/analytics/er-parse-incoming-documents.md?toc=/fin-and-ops/toc.json
+            - name: Konfigurace importu dat z ručně vybraných souborů
               items:
-                - name: Import konfigurací pro generování dokumentů s daty aplikace
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Návrh konfigurací pro generování dokumentů s daty aplikace
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-                - name: Úprava modelů a mapování pro generování dokumentů s daty aplikace
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
-                - name: Úprava formátů pro generování dokumentů s daty aplikace
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
-                - name: Generování dokumentů s daty aplikace
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
-            - name: Generovat formulářů FTI k tisku
-              href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
-            - name: Generování sestavy přidáním obsahu v podobě neformátovaného dokumentu XML
-              href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
-            - name: Sledování výsledků vygenerovaných sestav a porovnání se základními hodnotami
-              href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
-            - name: Datové zdroje mezi více společnostmi v modulu Elektronické výkaznictví
-              href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
-            - name: Integrace obrázků a tvarů v generovaných dokumentech
-              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
-            - name: Správa životního cyklu konfigurace
-              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: "Odeslání konfigurací do\_Lifecycle Services"
-                  href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: "Import konfigurací z\_Lifecycle Services"
-                  href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Import konfigurací elektronického výkaznictví ze služby RCS (Regulatory Configuration Services)
-                  href: ../dev-itpro/analytics/rcs-download-configurations.md
-                - name: "Stažení konfigurací z\_Lifecycle Services"
-                  href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
-                - name: Import konfigurací
-                  href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
-            - name: Správa konfigurací mapování modelu
-              href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Vytvoření konfigurací pro import dat z externích souborů
+                - name: Vytvoření konfigurací pro import dat z externího XML souboru
                   href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
-                - name: Konfigurace importu dat z aplikace SharePoint
-                  href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
-            - name: Analýza příchozích dokumentů ve formátu Excel
-              href: ../dev-itpro/analytics/parse-incoming-documents-excel.md?toc=/fin-and-ops/toc.json
-            - name: Analýza příchozích dokumentů k aktualizaci dat aplikace
-              href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
-            - name: Analýza příchozích dokumentů ve formátu CSV
-              href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-            - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
-              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
+            - name: Konfigurace importu dat v režimu dávky ze souborů umístěných na platformě SharePoint
+              href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
+            - name: Import souborů v XML formátu
+              items:
+                - name: Import souborů v XML formátu s volitelnými atributy
+                  href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurace formátů elektronického výkaznictví pro import souborů ve formátu XML s volitelnými atributy
+                  href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: Rozdělení generovaných XML souborů na základě velikosti souboru a množství obsahu
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
+        - name: Životní cyklus konfigurace
+          items:
+            - name: Správa životního cyklu konfigurace
+              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
+            - name: "Odeslání konfigurací do\_Lifecycle Services"
+              href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
+            - name: "Import konfigurací z\_Lifecycle Services"
+              href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+            - name: "Stažení konfigurací z\_Lifecycle Services"
+              href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
+            - name: Import konfigurací
+              href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
+            - name: Stažení konfigurací elektronického výkaznictví z úložiště RCS
               items:
-                - name: Rozšíření seznamu funkcí elektronického výkaznictví
-                  href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
-                - name: Změny rozhraní API architektury elektronického výkaznictví pro Application update 7.3
-                  href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
-                - name: Určení vlastního úložiště pro vygenerované dokumenty
-                  href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
+                - name: Stažení konfigurací z úložiště elektronického výkaznictví pro typ RCS
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md?toc=/fin-and-ops/toc.json
+                - name: Import konfigurací z RSC
+                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md
+        - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
+          items:
+            - name: Konfigurace architektury
+              items:
+                - name: Konfigurace architektury elektronického výkaznictví
+                  href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
+                - name: Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních
+                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Místa určení
+              items:
+                - name: Přehled míst určení
+                  href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurace míst určení
+                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Automatické ověření generovaných sestav
+              items:
+                - name: Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
+                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
+                - name: Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a porovnání se základními hodnotami
+                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
+                - name: Automatizace testování s elektronickým výkaznictvím
+                  href: ../dev-itpro/analytics/er-automate-testing.md?toc=/fin-and-ops/toc.json
+            - name: Automatizace obchodních procesů pomocí konfigurací elektronického výkaznictví
+              items:
+                - name: Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
+                  href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
+                - name: Generování tisknutelných formulářů volných faktur
+                  href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
+            - name: Sledování provedení formátů elektronického výkaznictví pro řešení problémů s výkonem
+              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+        - name: API rozhraní architektury elektronického výkaznictví
+          items:
+            - name: Rozšíření seznamu funkcí elektronického výkaznictví
+              href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
+            - name: Změny rozhraní API architektury elektronického výkaznictví pro Application update 7.3
+              href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+            - name: Určení místa vlastního úložiště pro vygenerované dokumenty
+              href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
         - name: Integrovaná analytická řešení
           items:
-            - name: "Power BI Embedded v\_pracovních prostorech"
+            - name: "Integrované Power BI v\_pracovních prostorech"
               href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
             - name: Integrace Power BI Embedded
               href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
+            - name: Volba analytických pracovních prostorů z PowerBI.com
+              href: ../dev-itpro/analytics/select-analytical-workspace.md
         - name: Možnosti individuálního nastavení s PowerBI.com
           items:
             - name: Funkce a služby dostupné prostřednictvím integrace Power BI
               href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
-            - name: Připnutí sestav Power BI do pracovních prostor
+            - name: Připnutí sestav Power BI do pracovních prostorů
               href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
+            - name: Přizpůsobení integrovaných sestav v analytických pracovních prostorech
+              href: ../dev-itpro/analytics/customize-analytical-workspace.md
         - name: Nástroje pro vytváření a rozšíření řešení
           items:
             - name: 'Analýzy, měrné systémy agregace a modelování klíčového indikátoru výkonnosti'
@@ -3067,13 +3279,17 @@
               href: ../supply-chain/cost-management/adjust-hand-inventory-cost-values.md
             - name: Sledování průběžných průměrných nákladů pro dimenzi zboží
               href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+    - name: Dodavatelsko-odběratelský řetězec
+      href: ../supply-chain/index.md
     - name: Hlavní plánování
       href: ../supply-chain/master-planning/master-planning-home-page.md
       items:
         - name: Hlavní plány
           href: ../supply-chain/master-planning/master-plans.md
           items:
-            - name: Nastavení distponibility
+            - name: Nastavení hlavních plánů
+              href: ../supply-chain/master-planning/master-planning-setup.md
+            - name: Nastavení disponibility
               href: ../supply-chain/master-planning/coverage-settings.md
             - name: Definování pravidel disponibility pro položky
               href: ../supply-chain/master-planning/tasks/define-coverage-rules-items.md
@@ -3099,6 +3315,8 @@
               href: ../supply-chain/master-planning/tasks/create-plan-site.md
             - name: Kalendáře a hlavní plánování
               href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
+            - name: Vylepšení výkonu hlavního plánování
+              href: ../supply-chain/master-planning/master-planning-performance.md
             - name: Hlavní plány a funkce více pracovišť
               href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
@@ -3114,6 +3332,8 @@
                   href: ../supply-chain/master-planning/master-plan-bom-version-determined.md
                 - name: Rozpad verze kusovníku
                   href: ../supply-chain/master-planning/master-plan-explosion-bom-version.md
+            - name: Záporné dny a dynamické záporné dny
+              href: ../supply-chain/master-planning/more-about-dynamic-negative-days.md
             - name: Vytvoření mezipodnikového plánu
               href: ../supply-chain/master-planning/tasks/create-intercompany-plan.md
             - name: Zobrazení výstupní plánované mezipodnikové poptávky

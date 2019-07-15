@@ -4,7 +4,7 @@
   items:
     - name: Co je nového a co se změnilo
       href: get-started/whats-new.md
-    - name: Funkce Preview v Dynamics 365 for Retail 10.0.3
+    - name: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.3
       href: get-started/whats-new-10-0-3.md
     - name: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.2
       href: get-started/whats-new-10-0-2.md
@@ -407,6 +407,10 @@
       items:
         - name: Vzor integrace fiskální tiskárny pro Itálii
           href: localizations/emea-ita-fpi-sample.md
+    - name: Mexiko
+      items:
+        - name: Globální elektronické faktury CFDI pro Mexiko
+          href: ../financials/localizations/latam-mex-global-cfdi-3-3.md
     - name: Norsko
       items:
         - name: Funkce registrační pokladny

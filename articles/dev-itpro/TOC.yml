@@ -413,9 +413,9 @@
               href: perf-test/atl-faq.md
     - name: Platnost od
       href: dev-tools/date-effectivity.md
-    - name: ISV licence
+    - name: Licencování nezávislých výrobců softwaru
       href: dev-tools/isv-licensing.md
-    - name: ISV licence on-premises
+    - name: Licencování nezávislých výrobců pro nasazení on-premises
       href: dev-tools/isv-licensing-on-prem.md
 - name: Vývoj uživatelského rozhraní
   href: user-interface/user-interface-development-home-page.md
@@ -997,6 +997,8 @@
               href: deployment/deploy-retail-onprem.md
         - name: Vývoj a nasazení vlastních modelů do místních prostředí
           href: deployment/develop-deploy-custom-models-on-premises.md
+        - name: Integrace PowerBI.com s místními prostředími
+          href: analytics/entity-store-on-prem.md
         - name: Konfigurace reverzní proxy pro místní prostředí
           href: deployment/onprem-reverseproxy.md
         - name: Použití aktualizací na místní nasazení
@@ -1013,6 +1015,8 @@
           href: user-interface/client-disconnected.md
         - name: Řešení problémů s místním nasazením
           href: deployment/troubleshoot-on-prem.md
+        - name: Rotace certifikátů
+          href: deployment/certificate-rotation-on-prem.md
     - name: Nasazení vlastního kódu
       items:
         - name: Vytvoření nasaditelných balíčků modelů
