@@ -3,7 +3,7 @@ title: Zajištění zdrojů uchazečů s využitím fondů talentů
 description: Toto téma vysvětluje, jak vytvořit a nastavit fondy talentů v aplikaci Attract.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
+ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517485"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "1711287"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Zajištění zdrojů uchazečů s využitím fondů talentů
 
@@ -110,8 +110,6 @@ Všichni uživatelé mají společný pohled na profily uchazečů. Na kartě **
 
 - Můžete zobrazit kontaktní údaje uchazeče. Podle potřeby můžete upravit nebo aktualizovat informace o pomocí tlačítka **Upravit podrobnosti**.
 
-- Můžete přidat další označení dovedností na pomoc s označením dovedností uchazeče.
-
 - Můžete zobrazit celou historii žádosti uchazeče. Můžete zobrazit všechna pracovní místa, o která uchazeč požádal ve vaší organizaci a stav těchto žádostí. Jestliže jste součástí náborového týmu na danou pozici, vyberte **zobrazit**, abyste se na žádost mohli podívat podrobněji.
 
 - Karta **Dokumenty** zobrazuje všechny dokumenty, které uchazeč přidal ze svého profilu nebo v průběhu žádosti o práci. Tato karta slouží ke správě životopisů, průvodních dopisů, pracovního portfolia atd. uchazeče. Na této kartě můžete také přidat dokumenty.
@@ -119,6 +117,9 @@ Všichni uživatelé mají společný pohled na profily uchazečů. Na kartě **
     Pokud chcete zobrazit dokument, vyberte název dokumentu ze seznamu dokumentů. Můžete zobrazit dokumenty Microsoft Word v aplikaci pomocí Microsoft Office 365. Také můžete stáhnout dokumenty do místního počítače pomocí možnosti **Stáhnout** pro každý dokument.
 
 - Karta **LinkedIn** ukazuje informace z webu LinkedIn. Pokud chcete tuto kartu použít, je nutné připojit účet LinkedIn v nastavení uživatele a je nutné navázat připojení k programu LinkedIn Recruiter. Další informace naleznete v tématu [Zajištění zdrojů z programu LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+
+> [!NOTE]
+> Pouze uchazeči mohou aktualizovat své dovednosti, historii vzdělání a pracovní zkušenosti.
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Přidání uchazečů z fondu talentů do pracovního místa
 

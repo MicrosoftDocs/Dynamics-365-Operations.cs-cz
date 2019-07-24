@@ -3,7 +3,7 @@ title: Obsah správy úvěru a inkasa v Power BI
 description: Toto téma popisuje, co je součástí obsahu správy úvěru a inkasa v Power BI. Vysvětluje přístup k sestavám Power BI a poskytuje informace o datovém modelu a entitách, které byly použity k sestavení obsahu.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547225"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702765"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Obsah správy úvěru a inkasa v Power BI
 
@@ -42,7 +42,17 @@ Všechny částky jsou zobrazeny v měně systému. Systémovou měnu můžete n
 
 Ve výchozím nastavení se zobrazují data úvěrů a inkas pro aktuální společnost. Abyste zobrazili data napříč všemi společnostmi, přiřaďte funkční oprávnění **CustCollectionsBICrossCompany** k roli.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Zobrazení obsahu Power BI vyžaduje instalační programu
+
+Následující nastavení je nutné dokončit, aby bylo možné zobrazit data ve vizuálech **Obrázky a kolekce kreditů** Power BI .
+
+1. Přejděte na **Správa systému > Nastavení > Systémové parametry** a nastavte hodnoty **Měna systému** a **Směnný kurz systému**.
+2. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** a nastavte **Měna účtování** a **Typ směnného kurzu**.
+3. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou, zúčtovací měnu a systémovou měnou. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
+4. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **CustCollectionsBIMeasurements**.
+
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
+
 Obsah **Správa kreditu a inkasa** v Power BI se zobrazí v pracovním prostoru **Kredit a inkasa odběratele**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
@@ -63,28 +73,3 @@ Obsah **CustCollectionsBICrossCompany** v Power BI obsahuje sestavu, která sest
 | Upomínky         | <ul><li>Částky kódu výběru</li><li>Podrobnosti částky kódu inkasa</li><li>Částka upomínky podle společnosti</li><li>Částka upomínky podle skupiny odběratelů</li><li>Částka upomínky podle oblasti</li></ul> |
 
 Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Můžete také použít základní funkci exportu dat pro export základních dat, jejichž souhrn je uveden na vizualizaci.
-
-## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-
-Následující data se používají k naplnění stránek sestavy v obsahu **Správa úvěru a inkasa** v Power BI Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI s úložištěm entit](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
-
-
-|                   Celek                    |      Klíčová opatření agregace      |             Zdroj dat              |                           Pole                            |                                    popis                                     |
-|---------------------------------------------|--------------------------------------|--------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
-| CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities, AveragecClosedTime  |            smmActivities             | AverageOfChildren(AverageClosedTime) Count(ActivityNumber) |     Počet uzavřených aktivit a průměrná doba k uzavření těchto aktivit.     |
-|       CustCollectionsBIActivitiesOpen       |            ActivityNumber            |            smmActivities             |                   Count(ActivityNumber)                    |                           Počet otevřených aktivit.                            |
-|        CustCollectionsBIAgedBalances        |             AgedBalances             |  CustCollectionsBIAgedBalancesView   |                 Sum(SystemCurrencyBalance)                 |                             Součet splatných zůstatků.                              |
-|        CustCollectionsBIBalancesDue         |         SystemCurrencyAmount         |   CustCollectionsBIBalanceDueView    |                 Sum(SystemCurrencyAmount)                  |                           Částky, které jsou po splatnosti.                            |
-|    CustCollectionsBICaseAverageCloseTIme    |  NumOfCases, CaseAverageClosedTime   |      CustCollectionsCaseDetail       | AverageOfChildren(CaseAverageClosedTime) Count(NumOfCases) |        Počet uzavřených případů a průměrná doba k uzavření těchto případů.        |
-|         CustCollectionsBICasesOpen          |                CaseId                |      CustCollectionsCaseDetail       |                       Count(CaseId)                        |                              Počet otevřených případů.                              |
-|      CustCollectionsBICollectionLetter      |         CollectionLetterNum          |       CustCollectionLetterJour       |                 Count(CollectionLetterNum)                 |                       Počet otevřených upomínek.                        |
-|   CustCollectionsBICollectionLetterAmount   |       CollectionLetterAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                     Zůstatek zaúčtovaných upomínek.                      |
-|      CustCollectionsBICollectionStatus      |       CollectionStatusAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                Zůstatek transakce se stavem inkasa.                 |
-|           CustCollectionsBICredit           | CreditExposed, AmountOverCreditLimit |     CustCollectionsBICreditView      |       Sum(CreditExposed), Sum(AmountOverCreditLimit)       | Součet vystavení úvěru a částek, o které odběratelé překročili limit úvěru. |
-|         CustCollectionsBICustOnHold         |               Blokováno                |      CustCollectionsBICustTable      |                       Count(Blocked)                       |                     Počet odběratelů, kteří jsou blokováni.                      |
-|            CustCollectionsBIDSO             |                DSO30                 |       CustCollectionsBIDSOView       |                  AverageOfChildren(DSO30)                  |                        Počet dnů neuhrazeného prodeje pro 30 dnů.                         |
-|      CustCollectionsBIExpectedPayment       |           ExpectedPayment            | CustCollectionsBIExpectedPaymentView |                 Sum(SystemCurrencyAmounts)                 |                 Součet očekávaných plateb v rámci dalšího roku.                 |
-|        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Počet oznámení úroků, která byly vytvořeny.                |
-|        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Počet celkových prodejních objednávek, které jsou blokovány.                 |
-|          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Součet transakcí, které byly odepsány.                 |
-

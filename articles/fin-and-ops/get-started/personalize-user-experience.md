@@ -3,7 +3,7 @@ title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit Microsoft Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 05/17/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67ba1a95299de09c74e2fa2808cb63f61acf5862
-ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
+ms.openlocfilehash: 51c4cbbba36ed4c93fbbba907031023060d51495
+ms.sourcegitcommit: 0273905ceb371ba17d3a37d690e1f568aa968b4f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620007"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625004"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -169,6 +169,6 @@ Uživatelé, kteří mají oprávnění správce, také mohou spravovat přizpů
 
 Když si přizpůsobíte nastavení dimenze zásob na stránce, zvažte nastavení, která byla vytvořena pomocí možnosti **Zobrazení dimenzí**. Například používáte přizpůsobení ke skrytí sloupce pro dimenzi čísla skladové dávky, ale sloupec se objeví při příštím otevření stránky K tomu dochází, protože nastavení **Zobrazení dimenzí** kontroluje dimenze zásob, které jsou zobrazeny.
 
-Nastavení **Zobrazení dimenzí** platí pro všechny stránky a přepíše všechna individuální nastavení polí dimenze zásob na jednotlivých stránkách.
+Nastavení **Zobrazení dimenzí** platí pro všechny stránky a přepíše všechna individuální nastavení polí dimenze zásob na každé jednotlivé stránce.
 
-V předchozím příkladu, pokud nechcete, aby se zobrazil sloupec dimenze zásob čísla dávky, musíte tuto dimenzi vymazat jako součást volby **Zobrazení dimenzí** pro tabulku. Tato změna by nakonec neplatila pouze pro jednu konkrétní stránku, ale pro všechny stránky.
+V předchozím příkladu, pokud nechcete, aby se zobrazil sloupec dimenze zásob čísla dávky na stránce, musíte tuto dimenzi vymazat jako součást volby **Zobrazení dimenzí** pro tuto stránku.

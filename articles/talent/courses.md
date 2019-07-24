@@ -3,7 +3,7 @@ title: Nastavení školících kurzů
 description: Správci lidských zdrojů a vedoucí pracovníci mohou funkce kurzů používat ke správě informací o školeních nabízených pracovníkům.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 83f88d17c744bb53dad975b77d169a09375d20d1
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 26e76d68c6d5c8bd965e65e65d57f239fb8a2918
+ms.sourcegitcommit: 87e8b811680b1f87a973ce1680f07d657fa23046
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517479"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "1701383"
 ---
 # <a name="set-up-training-courses"></a>Nastavení školících kurzů
 
@@ -128,12 +128,12 @@ V následující tabulce jsou uvedeny možné stavy kurzu a akce, které lze pro
 </table>
 
 ## <a name="course-participants"></a>Účastníci kurzu
-Účastníky kurzu jsou pracovníci, uchazeči nebo kontaktní osoby, kteří se účastní školicího kurzu nebo události. Účastníky můžete registrovat pouze pro otevřené kurzy. Maximální a minimální počty účastníků, které lze do kurzu registrovat, jsou uvedeny na pevné záložce **Obecné** na stránce **Kurzy**.
+Účastníci kurzu jsou pracovníci, kteří se účastní školicího kurzu nebo události. Účastníky můžete registrovat pouze pro otevřené kurzy. Maximální a minimální počty účastníků, které lze do kurzu registrovat, jsou uvedeny na pevné záložce **Obecné** na stránce **Kurzy**.
 
 <a name="workflow"></a>Workflow
 --------
 
-Zaměstnancům, kteří se do kurzu zaregistrují na stránce **Samoobsluha pro zaměstnance**, může být registrace nasměrována do workflowu pro schválení.  Workflow lze přiřadit ke kurzu na pevné záložce **Obecné** na stránce **Kurzy**.
+Zaměstnancům, kteří se do kurzu zaregistrují na stránce **Samoobsluha pro zaměstnance**, může být registrace nasměrována do workflowu pro schválení. Workflow lze přiřadit ke kurzu na pevné záložce **Obecné** na stránce **Kurzy**.
 
 
 

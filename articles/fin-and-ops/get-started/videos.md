@@ -3,7 +3,7 @@ title: Videa pro aplikaci Finance and Operations
 description: Tato stránka uvádí seznam postupů a technických videí vytvořených společností Microsoft, v souvislosti s aplikací Dynamics 365 for Finance and Operations, které jsou k dispozici ve službě YouTube a na dalších webech.
 author: josaw1
 manager: AnnBe
-ms.date: 05/15/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
-ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
+ms.openlocfilehash: 5ede5bfa3b7a61461adb1514b7e96c4eba5a75c7
+ms.sourcegitcommit: fdc37a3c2ca2bac5741e7017fb225344e64f041a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1591541"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625390"
 ---
 # <a name="videos-for-finance-and-operations"></a>Videa pro aplikaci Finance and Operations
 
@@ -64,6 +64,10 @@ Videa jsou seřazena podle funkcí, takže přejděte dolů, abyste viděli cel�
 - [Začínáme s modulem Nákladové účetnictví](https://youtu.be/1pUDtJQZ8FU)
 - [Používání aplikace Excel pro analýzu nákladů](https://youtu.be/-HKHYdClvx8)
 - [Rozhraní výdajů](https://youtu.be/Ocy-MsTvEE0)
+
+#### <a name="help-system"></a>Systém nápovědy
+
+- [Jak přispívat do dokumentace k Microsoft Dynamics 365](https://youtu.be/m5djioozRbg)
 
 #### <a name="intelligence"></a>Intelligence
 

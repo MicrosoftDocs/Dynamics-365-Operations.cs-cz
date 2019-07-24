@@ -3,7 +3,7 @@ title: Sledování provádění formátu elektronického výkaznictví za účel
 description: Toto téma obsahuje informace o způsobu použití funkce sledování výkonu v elektronickém výkaznictví pro řešení potíží s výkonem.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/08/2019
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: aa71db2752889bc905c22bab1cf2fa46d7ee07c7
-ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
+ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
+ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576539"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "1703868"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sledování provádění formátů elektronického výkaznictví za účelem řešení potíží s výkonem
 
@@ -346,3 +346,29 @@ Pokud používáte některou z těchto verzí Finance and Operations, můžete a
 Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto tématu, pro vygenerování nového sledování výkonu.
 
 Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tento soubor obsahuje sledování výkonu ve formátu PerfView. Poté můžete pomocí nástroje analýzy výkonu PerfView analyzovat podrobnosti provádění formátu elektronického výkaznictví.
+
+![Informace o sledování pro spuštěný formát elektronického výkaznictví v PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+
+## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Použití externích nástrojů ke kontrole sledování provádění, které obsahuje databázové dotazy
+
+Z důvodu vylepšení, které bylo provedeno v rámci architektury elektronického výkaznictví, nabízí sledování výkonu generované ve formátu PerfView nyní více podrobnostmi o provádění formátu elektronického výkaznictví. V aplikaci Microsoft Dynamics 365 for Finance and Operations verze 10.0.4 (červenec 2019) může toto sledování také zahrnovat podrobnosti o provedených dotazech SQL do aplikační databáze.
+
+### <a name="configure-user-parameters"></a>Konfigurace parametrů uživatele
+
+1. V aplikaci Finance and Operations přejděte na **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.
+2. Na stránce **Konfigurace** v podokně akcí na kartě **Konfigurace** ve skupině **Pokročilá nastavení** vyberte **Parametry uživatelů**.
+3. V dialogovém okně **Parametry uživatelů** v části **Sledování provádění** nastavte následující parametry:
+
+    - V poli **Formát sledování provádění** vyberte **PerfView XML**.
+    - Nastavte možnost **Shromáždit statistiky dotazů** na **Ano**.
+    - Nastavte možnost **Dotaz na sledování** na **Ano**.
+
+    ![Dialogové okno Parametry uživatelů v aplikaci Finance and Operations](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+
+### <a name="run-the-er-format"></a>Spuštění formátu elektronického výkaznictví
+
+Opakujte kroky v části [Spuštění formátu elektronického výkaznictví](#run-format) výše v tomto tématu, pro vygenerování nového sledování výkonu.
+
+Povšimněte si, že webový prohlížeč nabízí soubor zip ke stažení. Tento soubor obsahuje sledování výkonu ve formátu PerfView. Poté můžete pomocí nástroje analýzy výkonu PerfView analyzovat podrobnosti provádění formátu elektronického výkaznictví. Sledování nyní zahrnuje podrobné informace o přístupu k databázi SQL během provádění formátu elektronického výkaznictví.
+
+![Informace o sledování pro spuštěný formát elektronického výkaznictví v PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)

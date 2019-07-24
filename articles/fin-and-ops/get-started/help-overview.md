@@ -3,7 +3,7 @@ title: Systém nápovědy pro aplikaci Finance and Operations
 description: Toto téma poskytuje přehled součástí systému nápovědy aplikace Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: da5b67bd67ff1a227a5f1812d41cdad9f062dfd0
+ms.sourcegitcommit: ad4d378afd88028d2002633a3cc8a67313cbeddd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595632"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625322"
 ---
 # <a name="finance-and-operations-help-system"></a>Systém nápovědy pro aplikaci Finance and Operations
 
@@ -95,16 +95,18 @@ Máte-li nějakou zpětnou vazbu nebo otázky, nechte nám komentář v dolní �
 
     ![Publikovat komentář](./media/feedback.png)
 
-##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Navržení změny nebo přispění do obsahu prostřednictvím GitHub
+### <a name="contribute-to-the-documentation"></a>Přispívání do dokumentace
 
-Chcete-li navrhnout změnu, musíte mít účet GitHub a podepsat licenční smlouvu přispěvatele. Po odeslání požadavku na vložení zkontrolujeme navrhované změny. V případě potřeby je projednáme interně a ozveme se vám zpět.
+Do dokumentace Finance and Operations můžete přispívat a provádět v ní úpravy. Chcete-li začít, klikněte na tlačítko **Upravit** (tužka) na tématu nebo přejděte na naše úložiště <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>. Následující video ukazuje, jak lze do dokumentace přispívat.
 
-Chcete-li začít, klikněte na tlačítko **Upravit** (tužka) na tématu nebo přejděte na naše úložiště <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE36liB]
 
-Další informace naleznete v příručce našich přispěvatelů: <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
+Video [Jak přispět k dokumentaci Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (viz výše) je součástí [Co je nového v seznamu skladeb Dynamics 365](https://www.youtube.com/playlist?list=PLcakwueIHoT-ErQZPP80qNKuEAr0wAAD9) na YouTube.
+
+Další informace naleznete v příručce našich přispěvatelů na adrese <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
 
 > [!NOTE]
-> V současnosti přijímáme pouze příspěvky do naší anglické sady obsahu.
+> V současnosti přijímáme pouze příspěvky do našeho anglického obsahu.
 
 ## <a name="task-guides"></a>Průvodci záznamem úloh
 

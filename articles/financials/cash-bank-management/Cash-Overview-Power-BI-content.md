@@ -3,7 +3,7 @@ title: Obsah přehledu hotovosti v Power BI
 description: Toto téma popisuje obsah přehledu hotovosti v Microsoft Power BI. Popisuje, jak získat přístup k sestavám, které jsou obsaženy v obsahu, a uvádí informace o datovém modelu a entitách, které se používají k vytváření obsahu.
 author: saraschi2
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5dccb5c5c6c336607603dfc7a935c039e5ac4aa5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bff0b1b0a68eccec1cebf130bc40ec3e6d88c3a9
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568910"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702788"
 ---
 # <a name="cash-overview-power-bi-content"></a>Obsah přehledu hotovosti v Power BI
 
@@ -33,6 +33,17 @@ Toto téma popisuje obsah **Přehled hotovosti** v Microsoft Power BI. Popisuje,
 
 Obsah **Přehled hotovosti** v Power BI byl vytvořen pro jednotlivce, kteří zodpovídají za hotovost ve své organizaci. Obsah **Přehled hotovosti** v Power BI poskytuje vizibilitu vašeho cashflow. Rovněž poskytuje prognózy, které vám mohou pomoci lépe rozhodovat a tím vylepšovat stav vašeho cashflow. Můžete analyzovat hotovost podle právnické osoby, měny a bankovního účtu, abyste získali lepší pochopení k lepšímu pochopení přebytků a nedostatků.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Zobrazení obsahu Power BI vyžaduje instalační programu
+
+Následující nastavení musí být dokončeno, aby bylo možné zobrazit data ve vizuálech **Přehled hotovosti** a **Bankovní správa** Power BI.
+
+1. Přejděte na **Správa systému > Nastavení > Systémové parametry** a nastavte hodnoty **Měna systému** a **Směnný kurz systému**.
+2. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** k nastavení **Měna účtování** a **Typ směnného kurzu**.
+2. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou, zúčtovací měnu a systémovou měnou a zúčtovací měnou a bankovními měnami. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
+3. Nakonfigurujte a spusťte prognózu cashflow. Další informace o nastavení prognózy cashflow naleznete v tématu <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+">Prognóza cashflow</a>. 
+4. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **LedgerCovLiquidityMeasurement**.
+
 ## <a name="accessing-the-power-bi-content"></a>Přístup k obsahu Power BI
 
 Sestavy z obsahu **Přehled hotovosti** Power BI se zobrazí v pracovních prostorech **Přehled hotovosti** a **Správa banky**.
@@ -42,6 +53,7 @@ Aby bylo možné zobrazit sestavy hotovostního toku s datem, je nutné nejprve 
 Pro účely ukázky můžete přidat ukázková data prognózy hotovostního toku pomocí stránky **Generovat data** z modulu Ukázková data.  Tento skript data vloží do tabulek prognózy hotovostního toku, aby bylo možné rychle zadat informace nezbytné pro sestavy.  Tento modul je dostupný, pouze pokud máte v prostředí nasazený model sady ukázkových dat. 
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Sestavy, které jsou součástí obsahu Power BI
+
 Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispozici na každé stránce sestavy obsahu **Přehled hotovosti** v Power BI.
 
 | Sestava                                | Obsah |
@@ -67,5 +79,3 @@ Následující tabulka zobrazuje entity, na kterých je obsah **Přehled hotovos
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Souhrnné přírůstky, úbytky a zůstatek hotovosti s použitím zúčtovací měny každé společnosti |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Souhrnné přírůstky, úbytky a zůstatek hotovosti s použitím systémové měny pro všechny společnosti |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Souhrnná čistá částka transakce a zůstatek měn pomocí měny transakce |
-
-

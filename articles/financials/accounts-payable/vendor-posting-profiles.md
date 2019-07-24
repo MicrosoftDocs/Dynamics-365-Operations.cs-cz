@@ -3,7 +3,7 @@ title: Účetní profil dodavatele
 description: Účetní profil dodavatele řídí zaúčtování transakcí dodavatelů do hlavní knihy
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e81f8b472e7ac7578c184716dcb4e5f3d7aeb65d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c3f62df7ec5627556561db950d54ff4347d2b4d6
+ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512161"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625888"
 ---
 # <a name="vendor-posting-profiles"></a>Účetní profil dodavatele
 
@@ -34,22 +34,22 @@ ms.locfileid: "1512161"
 <a name="vendor-posting-profiles"></a>Účetní profil dodavatele
 -----------------------
 
-Účetní profily dodavatelů umožňují přiřazení účtů hlavní knihy a nastavení dokumentů ke všem dodavatelům, skupině dodavatelů nebo jednomu dodavateli. Toto nastavení se použije při vytváření nákupních objednávek, faktur dodavatele a plateb v hotovosti. U některých transakcí je možné vybrat účetní profil, který se odlišuje od účetních profilů nastavených pro transakce na této stránce a má před nimi přednost. Výchozí účetní profil je definován v pevné záložce Hlavní kniha a DPH na straně Parametry závazků. Výchozí účetní profil je poté následně automaticky zahrnut do záhlaví nových dokumentů, kde jej můžete změnit na jiný účetní profil v případě potřeby.
+Účetní profily dodavatelů umožňují přiřazení účtů hlavní knihy a nastavení dokumentů ke všem dodavatelům, skupině dodavatelů nebo jednomu dodavateli. Toto nastavení se použije při vytváření nákupních objednávek, faktur dodavatele a plateb v hotovosti. U některých transakcí je možné vybrat účetní profil, který se odlišuje od účetních profilů nastavených pro transakce na této stránce a má před nimi přednost. Výchozí účetní profil je definován na záložce s náhledem **Hlavní kniha a DPH** na stránce **Parametry závazků**. Výchozí účetní profil je poté následně automaticky zahrnut do záhlaví nových dokumentů, kde jej můžete změnit na jiný účetní profil v případě potřeby.
 
-Můžete také přiřadit definice účtování k typům účtování transakcí na stránce Definice účtování transakce. Definice účtování určují zaúčtování transakcí dodavatelů do hlavní knihy místo účetních profilů.
+Můžete také přiřadit definice účtování k typům účtování transakcí na stránce **Definice účtování transakce**. Definice účtování určují zaúčtování transakcí dodavatelů do hlavní knihy místo účetních profilů.
 
 ## <a name="creating-a-posting-profile"></a>Vytvoření účetního profilu
 ### <a name="setup"></a>**Nastavení**
 
-Určete účty hlavní knihy, které jsou použity při zaúčtování transakcí s vybraným účetním profilem. Vyberte kód účtu a je-li to možné, i číslo účtu nebo skupiny vybraného účetního profilu. V procesu zaúčtování bude nejvhodnější účetní profil pro každou transakci nalezen vyhledáním nejspecifičtější kombinace kódu účtu, čísla účtu nebo kombinace skupiny a čísla s následující prioritou:
+Určete účty hlavní knihy, které jsou použity při zaúčtování transakcí s vybraným účetním profilem. Vyberte kód účtu a je-li to možné, i číslo účtu nebo skupiny vybraného účetního profilu. V procesu zaúčtování bude nejvhodnější účetní profil pro každou transakci nalezen vyhledáním nejspecifičtější kombinace kódu účtu, čísla účtu nebo kombinace skupiny a čísla s následující prioritou.
 
 | Hodnota pole **Kód účtu** | Hodnota pole **Číslo účtu/skupiny**        | Priorita hledání |
 |------------------------------|---------------------------------------------|-----------------|
 | **Tabulka**                    | Konkrétní účet dodavatele                     | 1               |
-| **Skupina**                    | skupina dodavatelů, která je přiřazena dodavateli | 2               |
-| **Vše**                      | Prázdné                                       | 3               |
+| **Seskupit**                    | Skupina dodavatelů, která je přiřazena dodavateli | 2               |
+| **Vše**                      | Formulář                                       | 3               |
 
-Pokud chcete, aby všechny transakce dodavatele měly shodný účetní profil, nastavte pouze jeden účetní profil s hodnotou Vše v poli Kód účtu. Zadejte následující hodnoty pro nastavení účetního profilu:
+Pokud chcete, aby všechny transakce dodavatele měly shodný účetní profil, nastavte pouze jeden účetní profil s hodnotou **Vše** v poli **Kód účtu**. Zadejte následující hodnoty pro nastavení účetního profilu.
 
 <table>
 <thead>
@@ -71,32 +71,20 @@ Pokud chcete, aby všechny transakce dodavatele měly shodný účetní profil, 
 <td><strong>Kód účtu</strong></td>
 <td>Zadejte, zda se účetní profil týká specifického dodavatele, skupiny dodavatelů nebo všech dodavatelů:
 <ul>
-<li><strong>Tabulka</strong> – Účetní profil platí pro jednoho dodavatele. Vyberte účet dodavatele v poli Číslo účtu/skupiny.</li>
-<li><strong>Skupina</strong> – Účetní profil platí pro skupinu dodavatelů. Vyberte skupinu dodavatelů v poli Číslo účtu/skupiny.</li>
-<li><strong>Vše</strong> – Účetní profil platí pro všechny dodavatele. Pole Číslo účtu/skupiny ponechejte prázdné.</li>
+<li><strong>Tabulka</strong> – Účetní profil platí pro jednoho dodavatele. Vyberte účet dodavatele v poli <strong>Číslo účtu/skupiny</strong>.</li>
+<li><strong>Skupina</strong> – Účetní profil platí pro skupinu dodavatelů. Vyberte skupinu dodavatelů v poli <strong>Číslo účtu/skupiny</strong>.</li>
+<li><strong>Vše</strong> – Účetní profil platí pro všechny dodavatele. Pole <strong>Číslo účtu/skupiny</strong> ponechejte prázdné.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Číslo účtu/skupiny</strong></td>
-<td>Pokud vyberete možnost Tabulka v poli Kód účtu, zvolte číslo účtu dodavatele přiřazeného k účetnímu profilu. Pokud vyberete možnost Skupina, zvolte skupinu dodavatelů. Pokud je vybrána možnost Vše, ponechte toto pole prázdné.</td>
+<td>Pokud vyberete možnost <strong>Tabulka</strong> v poli <strong>Kód účtu</strong>, zvolte číslo účtu dodavatele přiřazeného k účetnímu profilu. Pokud vyberete možnost <strong>Skupina</strong>, zvolte skupinu dodavatelů. Pokud je vybrána možnost <strong>Vše</strong>, ponechte toto pole prázdné.</td>
 </tr>
 <tr class="odd">
 <td><strong>Součtový účet</strong></td>
-<td>Vyberte účet hlavní knihy, který se má použít jako součtový účet pro dodavatele, se kterým účetní profil souvisí.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Poznámka" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Poznámka</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Je-li na stránce Parametry hlavní knihy vybráno přepínání definic účtování, použije se místo souhrnného účtu definici účtování transakce pro faktury dodavatele.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
+<td>Vyberte účet hlavní knihy, který se má použít jako součtový účet pro dodavatele, se kterým účetní profil souvisí. Bude označen parametr <strong>Nepovolit ruční zadávání</strong> pro tento hlavní účet. Pokud následně tento účet odeberete z účetního profilu, ověřte nastavení možnost i<strong>Nepovolit ruční zadávání</strong> na stránce <strong>Hlavní účty</strong>. 
+<p><strong>Poznámka:</strong> Je-li na stránce <strong>Parametry hlavní knihy</strong> vybrána možnost <strong>Použít definice účtování</strong>, použije se místo souhrnného účtu definici účtování transakce pro faktury dodavatele.</p>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Účet vyrovnání</strong></td>
@@ -105,24 +93,12 @@ Pokud chcete, aby všechny transakce dodavatele měly shodný účetní profil, 
 <tr class="odd">
 <td><strong>Zálohy DPH</strong></td>
 <td>Vyberte účet pro zálohy na platby DPH.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Poznámka" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Poznámka</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Účetní profil používaný při označení platby jako zálohy vybrán v poli Účetní profil se zálohovým dokladem deníku v hlavní knize a oblasti DPH na stránce Parametry závazků.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
+<p><strong>Poznámka:</strong> Účetní profil používaný při označení platby jako zálohy je vybrán v poli <strong>Účetní profil</strong> s polem <strong>Zálohový doklad deníku</strong> v oblasti <strong>Hlavní kniha a DPH</strong> na stránce <strong>Parametry závazků</strong>.</p>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Doručení</strong></td>
-<td>Vyberte účet hlavní knihy, do kterého jsou zaúčtovány informace o neschválených fakturách dodavatele. Informace jsou zaznamenány do deníku registrů faktur. Uživatel například zadá zcela základní informace o fakturách dodavatele, když byly přijaty do registru faktur. Když je registr faktur zaúčtován, transakce jsou zaúčtovány na účet, který je zadán zde, a do pole Protiúčet. Když jsou faktury schváleny, dluh je přenesen z účtu doručení do souhrnného účtu dodavatele.</td>
+<td>Vyberte účet hlavní knihy, do kterého jsou zaúčtovány informace o neschválených fakturách dodavatele. Informace jsou zaznamenány do deníku registrů faktur. Uživatel například zadá zcela základní informace o fakturách dodavatele, když byly přijaty do registru faktur. Když je registr faktur zaúčtován, transakce jsou zaúčtovány na účet, který je zadán zde, a do pole <strong>Protiúčet</strong>. Když jsou faktury schváleny, dluh je přenesen z účtu doručení do souhrnného účtu dodavatele.</td>
 </tr>
 <tr class="odd">
 <td><strong>Protiúčet</strong></td>
@@ -136,15 +112,10 @@ Pokud chcete, aby všechny transakce dodavatele měly shodný účetní profil, 
 
 Pro transakce s vybraným účetním profilem určete, zda transakce budou vyrovnány automaticky, zda bude vypočten úrok a zda budou vydány upomínky. Můžete také vybrat účet, který se použije při uzavření transakcí s vybraným účetním profilem.
 
-Zadejte následující hodnoty pro nastavení účetního profilu:
+Zadání následujících hodnot pro nastavení účetního profilu
 
 | Pole          | Popis                                                                                                                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Vyrovnání** | Tuto možnost vyberte, chcete-li povolit automatické vyrovnání transakcí, které mají tento účetní profil. Není-li toto políčko zaškrtnuto, je nutné vyrovnat transakce ručně s použitím stránky Vyrovnat otevřené transakce. |
+| **Vyrovnání** | Tuto možnost vyberte, chcete-li povolit automatické vyrovnání transakcí, které mají tento účetní profil. Není-li toto políčko zaškrtnuto, je nutné vyrovnat transakce ručně s použitím stránky **Vyrovnat otevřené transakce**. |
 | Tlačítko **Zrušit**     | Tuto možnost vyberte, chcete-li mít možnost zrušit transakce, které mají tento účetní profil.                                                                                                               |
 | **Zavřít**      | Vyberte jiný účetní profil, na který se chcete přepnout při uzavření transakcí s tímto účetním profilem. Transakce je považována za uzavřenou, když byla plně vyrovnána.                                       |
-
-
-
-
-

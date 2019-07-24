@@ -3,7 +3,7 @@ title: Pracovní prostor plateb dodavatelů
 description: Toto téma obsahuje informace o pracovním prostoru Platby dodavatele. Pracovní prostor Platby dodavatele zobrazuje informace související se zpracováním dodavatelských plateb.
 author: abruer
 manager: AnnBe
-ms.date: 05/09/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 789acd3f403e322ec00388ca8184ccd30c3ea436
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6f5ffe65b2f9be7423f1fe420594c936e15550fb
+ms.sourcegitcommit: 6f0e5bf82a5f61bab52c3cf4c82849fae5c5d50b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509215"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702928"
 ---
 # <a name="vendor-payments-workspace"></a>Pracovní prostor plateb dodavatelů
 
 [!include [banner](../includes/banner.md)]
 
 Pracovní prostor **Platby dodavatele** zobrazuje informace související se zpracováním dodavatelských plateb. Tento pracovní prostor obsahuje zobrazení **Moje práce** a stránku **Analýzy**. Zobrazení **Moje práce** zobrazuje souhrnné dlaždice, mřížky transakce dodavatele a související informace o dodavateli. Stránka **Analýza** používá funkce Microsoft Power BI k zobrazení vizuálů, které se vztahují k platbám dodavatelům.
+
+## <a name="setup-needed-to-view-power-bi-content"></a>Zobrazení obsahu Power BI vyžaduje instalační programu
+
+Následující nastavení je nutné dokončit, aby bylo možné zobrazit data ve vizuálech Power BI **Platby dodavatele**.
+1. Přejděte na **Správa systému > Nastavení > Systémové parametry** a nastavte hodnoty **Měna systému** a **Směnný kurz systému**.
+2. Přejděte na **Hlavní kniha > Nastavení > Účetní kniha** k nastavení **Měna účtování** a **Typ směnného kurzu**. 
+2. Definujte směnné kurzy mezi měnami transakcí a zúčtovací měnou, zúčtovací měnu a systémovou měnou. Postup: Přejděte na: **Hlavní kniha > Měny > Směnné kurzy měn**.
+3. Přejděte na **Správa systému > Nastavení > Úložiště Entit**, pokud chcete aktualizovat agregované měření **VendPaymentBIMeasure**. 
 
 ## <a name="my-work-view"></a>Zobrazení Moje práce
 

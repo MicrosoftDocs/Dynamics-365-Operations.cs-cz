@@ -3,7 +3,7 @@ title: Online a offline operace pokladního místa (POS)
 description: Toto téma obsahuje podrobnosti týkající se operací pokladních míst (POS) v aplikaci Microsoft Dynamics 365 for Retail. Určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici v offline režimu.
 author: jblucher
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505089"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625658"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
@@ -160,9 +160,9 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 1211 | Odvod do trezoru | Provede odvod do trezoru při přesunu peněz z pokladny do trezoru. | Ano | Ano | Ano | Ano | Ne |
 | 516 | Prodejní faktura | Tato operace umožňuje odběrateli provést platby vůči vybrané prodejní faktuře. | Ano | Ano | Ne | Ne | Ne |
 | 502 | Prodejce | Tato operace umožňuje uživateli nastavit hodnotu **Osoba přebírající zboží** na prodejní objednávce pro objednávky odběratelů v POS. | Ano | Ano | Ne | Ano\* | Ne |
-| 2000 | Správa plánu | Tato operace umožňuje uživatelům vytvořit, upravit nebo zobrazit plány zaměstnance. | Ano | Ano | Ano | Ne | Ne |
-| 2001 | Požadavky na plán | Tato operace umožňuje uživateli požádat o volno, zaměnit směny nebo nabídnout směny jiným zaměstnancům. | Ano | Ano | Ano | Ne | Ne |
-| 622 | Vyhledat | Tato operace umožňuje uživatelům předem nakonfigurovat POS tlačítka k vyhledávání podle položek, odběratele nebo kategorie. | Ano | Ano | Ano | Ano | Ne |
+| 2000 | Správa plánu | Tato operace není ještě podporována. | Ano | Ano | Ano | Ne | Ne |
+| 2001 | Požadavky na plán | Tato operace není ještě podporována. | Ano | Ano | Ano | Ne | Ne |
+| 622 | Prohledat objednávky | Tato operace umožňuje uživatelům předem nakonfigurovat POS tlačítka k vyhledávání podle položek, odběratele nebo kategorie. | Ano | Ano | Ano | Ano | Ne |
 | 1213 | Hledat dodací adresu | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
 | 709 | Vybrat hardwarovou stanici | Tato operace uživateli umožňuje vybrat hardwarovou stanici v seznamu dostupných hardwarových stanic. | Ano | Ano | Ano | Ano | Ne |
 | 637 | Nastavit výchozího prodejního zástupce u transakce | Tato operace umožňuje uživateli vybrat jednu z možných skupin prodejní provize (obchodní zástupce) jako výchozího obchodního zástupce pro řádky, které jsou přidány později. | Ano | Ano | Ne | Ano | Ne |

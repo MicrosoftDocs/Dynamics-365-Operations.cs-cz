@@ -3,7 +3,7 @@ title: Synchronizace produktů přímo z aplikace Finance and Operations na pro
 description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci produktů z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff284585a2eb4c5cf55d2e3a3e0f317d1fb218bb
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572597"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624328"
 ---
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Synchronizace produktů přímo z aplikace Finance and Operations na produkty v aplikaci Sales
 
@@ -43,7 +43,7 @@ Toto téma popisuje šablony a základní úkoly, které se používají k synch
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
-Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu PowerApps](https://preview.admin.powerapps.com/dataintegration). Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
+Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu PowerApps](https://admin.powerapps.com/dataintegration). Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
 
 K synchronizaci produktů z aplikace Finance and Operations do aplikace Sales slouží následující šablona a základní úkoly:
 
