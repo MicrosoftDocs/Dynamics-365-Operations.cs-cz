@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577921"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624805"
 ---
 # <a name="retail-peripherals"></a>Periferní zařízení Retail
 
@@ -156,13 +156,13 @@ Typ zařízení **Windows** se používá pouze pro tiskárny. Když bude v hard
 
 ### <a name="network"></a>Síť
 
-Ze sítě adresovatelné zásuvky s hotovostí, tiskárny účtenek a platební terminály lze používat po síti buďto přímo prostřednictvím hardwarové stanice interprocesní komunikace (Interprocess Communications, IPC), která je integrována do aplikace Modern POS for Windows, nebo prostřednictvím hardwarové stanice služby IIS pro ostatní klienty Modern POS.
+Ze sítě adresovatelné zásuvky s hotovostí, tiskárny účtenek a platební terminály lze používat po síti buďto přímo prostřednictvím hardwarové stanice interprocesní komunikace (Interprocess Communications, IPC), která je integrována do aplikací Modern POS for Windows a Modern POS for Android, nebo prostřednictvím hardwarové stanice IIS pro ostatní klienty Modern POS.
 
 ## <a name="hardware-station-deployment-options"></a>Možnosti nasazení hardwarové stanice
 
 ### <a name="ipc-built-in"></a>IPC (vestavěný)
 
-Hardwarová stanice Interprocesní komunikace (Interprocess Communications, IPC) je součástí aplikace Modern POS for Windows. Chcete-li použít hardwarovou stanici IPC, přiřaďte k registru hardwarový profil, který bude používat aplikaci Modern POS for Windows. Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude registr používán. Když spustíte Modern POS, bude hardwarová stanice IPC aktivní a periferie POS, které byly nakonfigurovány, budou připraveny k použití. Jestliže z nějakého důvodu dočasně nepožadujete místní hardware, použijte operaci **Spravovat hardwarové stanice** k vypnutí schopností hardwarové stanice. Modern POS může také využívat hardwarovou stanici IPC k přímé komunikaci se síťovými periferními zařízeními.
+Hardwarová stanice Interprocesní komunikace (Interprocess Communications, IPC) je součástí aplikací Modern POS for Windows a Modern POS for Android. Chcete-li použít hardwarovou stanici IPC, přiřaďte k registru hardwarový profil, který bude používat aplikaci Modern POS for Windows. Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude registr používán. Když spustíte Modern POS, bude hardwarová stanice IPC aktivní a periferie POS, které byly nakonfigurovány, budou připraveny k použití. Jestliže z nějakého důvodu dočasně nepožadujete místní hardware, použijte operaci **Spravovat hardwarové stanice** k vypnutí schopností hardwarové stanice. Modern POS může také využívat hardwarovou stanici IPC k přímé komunikaci se síťovými periferními zařízeními.
 
 ### <a name="iis"></a>služba IIS,
 
@@ -190,7 +190,11 @@ Označení sítí pro zařízení v profilu hardwaru umožňuje připojit zásuv
 
 Můžete určit adresy IP síťových příslušenství na dvou místech. Pokud Moderní POS klient systému Windows používá jednu sadu síťových příslušenství, měli byste nastavit adresy IP těchto zařízení pomocí možnosti **konfigurace IP** v Podokně akcí u samotné registrační pokladny. V případě síťových zařízení, která budou sdílena mezi registry POS, může být hardwarový profil, který má přidělena síťová zařízení, mapován přímo na sdílenou hardwarovou stanici. Chcete-li přiřadit adresy IP, vyberte tuto hardwarovou stanici na stránce **Maloobchodní obchody**, potom použijte volbu **Konfigurace IP** v sekci **Hardwarové stanice** pro zadání síťových zařízení, která budou přiřazena k této hardwarové stanici. U hardwarových stanic, které mají pouze síťová zařízení, nemusíte instalovat samotnou hardwarovou stanici. V tomto případě je hardwarová stanice požadována pouze za účelem konceptuálního seskupení síťově adresovatelných zařízení podle jejich umístění v maloobchodě.
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloudový POS, Moderní POS pro iOS a Moderní POS pro Android
+#### <a name="modern-pos-for-android"></a>Modern POS pro Android
+
+Od verze 8.1.3 aplikace Dynamics 365 for Retail zahrnuje aplikace Modern POS for Android vestavěnou hardwarovou stanici IPC. Tato hardwarová stanice podporuje komunikaci se síťovými tiskárnami a platebními konektory. Další informace naleznete v [článku dokumentace Hybridní aplikace pro Android](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+
+#### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS a Modern POS for iOS
 
 Logika, která řídí fyzicky připojené a síťově adresovatelné periferie, je obsažena v hardwarové stanici. Proto pro všechny klienty POS kromě Moderního POS pro Windows musí být zavedena a aktivní hardwarová stanice IIS umožňující těmto POS komunikovat s periferními zařízeními bez ohledu na to, zda jsou tyto periferie fyzicky připojeny k hardwarové stanici nebo adresovány po síti.
 
@@ -222,9 +226,9 @@ V následující tabulce jsou uvedeny podporované topologie a scénáře nasaze
 | Klient      | Hardwarová stanice IPC | Hardwarová stanice IIS |
 |-------------|----------------------|----------------------|
 | Aplikace systému Windows | Ano                  | Ano                  |
-| Cloud POS   | Žádný                   | Ano                  |
-| Android     | Žádný                   | Ano                  |
-| iOS         | Žádný                   | Ano                  |
+| Cloud POS   | Ne                   | Ano                  |
+| Android     | Ano                  | Ano                  |
+| iOS         | Ne                   | Ano                  |
 
 ### <a name="network-peripherals"></a>Síťová příslušenství
 
@@ -233,9 +237,9 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 | Klient      | Hardwarová stanice IPC | Hardwarová stanice IIS |
 |-------------|----------------------|----------------------|
 | Aplikace systému Windows | Ano                  | Ano                  |
-| Cloud POS   | Žádný                   | Ano                  |
-| Android     | Žádný                   | Ano                  |
-| iOS         | Žádný                   | Ano                  |
+| Cloud POS   | Ne                   | Ano                  |
+| Android     | Ano                  | Ano                  |
+| iOS         | Ne                   | Ano                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Podporované druhy zařízení podle typu hardwaru stanice
 
@@ -661,14 +665,15 @@ Následující periferní zařízení byla testována pomocí hardwarové stanic
 
 #### <a name="printer"></a>Tiskárna
 
-| Výrobce | Model    | Rozhraní | Poznámky                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Vlastní    | Připojeno prostřednictvím sítě   |
-| Star         | mPOP     | OPOS      | Připojeno pomocí Bluetooth |
-| HP           | F7M67AA  | OPOS      | Napájené USB             |
+| Výrobce | Model      | Rozhraní | Poznámky                |
+|--------------|------------|-----------|-------------------------|
+| Epson        | Tm-T88IV   | OPOS      |                         |
+| Epson        | TM-T88V    | OPOS      |                         |
+| Epson        | ePOS-Print | Vlastní    | Připojeno prostřednictvím sítě   |
+| Star         | TSP650II   | OPOS      |                         |
+| Star         | TSP650II   | Vlastní    | Připojeno prostřednictvím sítě   |
+| Star         | mPOP       | OPOS      | Připojeno pomocí Bluetooth |
+| HP           | F7M67AA    | OPOS      | Napájené USB             |
 
 #### <a name="bar-code-scanner"></a>Skener čárových kódů
 
@@ -688,11 +693,12 @@ Následující periferní zařízení byla testována pomocí hardwarové stanic
 
 #### <a name="payment-terminal"></a>Patební terminál 
 
-| Výrobce | Model | Rozhraní | Poznámky                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Vlastní    | Vyžaduje úpravu konektoru platby                                |
-| VeriFone     | MX925 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
-| VeriFone     | MX915 | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+| Výrobce | Model        | Rozhraní | Poznámky                                                                       |
+|--------------|--------------|-----------|--------------------------------------------------------------------------------|
+| Equinox      | L5300        | Vlastní    | Vyžaduje úpravu konektoru platby                                |
+| VeriFone     | MX925        | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+| VeriFone     | MX915        | Vlastní    | Vyžaduje úpravu konektoru platby; připojeno prostřednictvím sítě a USB |
+| Verifone     | Viz komentáře | Adyen     | Konektor Adyen podporuje všechna zařízení uvedená [zde](https://www.adyen.com/pos-payments/terminals) |
 
 #### <a name="cash-drawer"></a>Zásuvka s hotovostí
 

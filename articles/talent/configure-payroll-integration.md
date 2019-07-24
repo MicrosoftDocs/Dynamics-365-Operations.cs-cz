@@ -3,7 +3,7 @@ title: Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
 description: Toto téma vysvětluje, jak nakonfigurovat integraci mezi aplikacemi Microsoft Dynamics 365 for Talent a Ceridian Dayforce pro zpracování výplat.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9a88bf61dbb12520b555ceb7363b1c646d95386e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517480"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702811"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
 
@@ -54,6 +54,16 @@ Další informace o účtech úložiště Azure a řetězcích připojení úlo�
 
 - [O účtech úložiště Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Konfigurace řetězců připojení Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+
+### <a name="technical-details-when-payroll-integration-is-enabled"></a>Technické podrobnosti při povolení integrace mezd
+
+Zapnutí integrace mezd má dva primární efekty:
+
+- Je vytvořen projekt exportu dat s názvem "Export integrací mezd". Tento projekt obsahuje entity a pole vyžadované pro integraci mezd. Chcete-li zkontrolovat projekt, přejděte na položky **Správa systému**, vyberte dlaždici **Správa dat** a poté otevřete datový projekt ze seznamu projektů.
+- Tato dávková úloha spustí projekt exportu dat, zašifruje výsledný balík dat a přenese soubor datového balíku do koncového bodu SFTP nakonfigurovaného na obrazovce **Konfigurace integrace**.
+
+> [!NOTE]
+> Datový balík převedený na koncový bod SFTP je šifrován pomocí klíče, který je pro daný balík jedinečný. Klíč je v úložišti klíčů Azure, který je přístupný pouze společnosti Ceridian. Není možné dešifrovat a prověřit obsah balíčku dat. Potřebujete-li zkontrolovat obsah balíčku dat, je třeba exportovat datový projekt integrace mezd ručně, stáhnout jej a poté jej otevřít. Ruční export nebude používat šifrování nebo nepřenese balíček.
 
 ## <a name="configure-your-data"></a>Konfigurace vašich dat 
 

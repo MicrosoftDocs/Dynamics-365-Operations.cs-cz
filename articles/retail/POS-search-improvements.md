@@ -3,7 +3,7 @@ title: Vyhledávání produktu a zákazníka v pokladním místě (POS)
 description: Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Microsoft Dynamics 365 for Retail ohledně funkce vyhledávání produktu a vyhledávání zákazníka.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530769"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625635"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Vyhledávání produktu a zákazníka v pokladním místě (POS)
 
@@ -40,7 +40,7 @@ Ve výchozím nastavení se vyhledávání produktů provádí v sortimentu obch
 Na stránce **Změnit katalog** mohou zaměstnanci snadno vybrat libovolný obchod, nebo mohou vyhledávat produkty ve všech obchodech.
 
 ![Změna katalogu](./media/Changecatalog.png "Změna katalogu")
- 
+
 Vyhledávání místních produktů vyhledává v rámci následujících vlastností produktu:
 
 - Číslo produktu
@@ -55,7 +55,7 @@ Vyhledávání místních produktů vyhledává v rámci následujících vlastn
 Zkušenosti při hledání místních produktů jsou uživatelsky přívětivější. Byla provedena následující vylepšení:
 
 - Rozbalovací nabídky produktu a zákazníka byly přidány do vyhledávacího panelu, takže zaměstnanci mohou před vyhledáváním vybrat buď **Produkt** nebo **Zákazník**. Ve výchozím nastavení je vybrán **Produkt**, jak je uvedeno na následujícím obrázku.
-- U vyhledávání s více klíčovými slovy (to znamená u vyhledávání, které používají hledané termíny) mohou prodejci nakonfigurovat, zda výsledky vyhledávání mají obsahovat výsledky, které odpovídají *libovolnému* hledanému termínu, nebo pouze výsledky, které odpovídají *všem* hledaným termínům. Toto nastavení je k dispozici v profilu funkce POS pod novou skupinu s názvem **Vyhledávání produktu**. Ve výchozím nastavení je **Spárovat jakékoli hledané termíny**. Toto nastavení je rovněž doporučené nastavení. Pokud je použito nastavení **Spárovat jakýkoli zadaný termín**, jsou vráceny všechny produkty, které plně nebo částečně odpovídají jednomu nebo více hledaným termínům. Výsledky se automaticky seřadí vzestupně podle produktů, které mají nejvíce shod klíčových slov (úplných nebo částečných).
+- U vyhledávání s více klíčovými slovy (to znamená u vyhledávání, které používají hledané termíny) mohou prodejci nakonfigurovat, zda výsledky vyhledávání mají obsahovat výsledky, které odpovídají *libovolnému* hledanému termínu, nebo pouze výsledky, které odpovídají *všem* hledaným termínům. Nastavení této funkce je k dispozici v profilu funkce POS pod novou skupinou s názvem **Vyhledávání produktu**. Ve výchozím nastavení je **Spárovat jakékoli hledané termíny**. Toto nastavení je rovněž doporučené nastavení. Pokud je použito nastavení **Spárovat jakýkoli zadaný termín**, jsou vráceny všechny produkty, které plně nebo částečně odpovídají jednomu nebo více hledaným termínům. Výsledky se automaticky seřadí vzestupně podle produktů, které mají nejvíce shod klíčových slov (úplných nebo částečných).
 
     Nastavení **Spárovat všechny hledané termíny** vrátí pouze produkty odpovídající všem hledaným termínům (úplné nebo částečné). Toto nastavení je užitečné, když jsou názvy produktu dlouhé a zaměstnanci potřebují zobrazit pouze omezené produkty ve výsledcích vyhledávání. Tento typ vyhledávání však má dvě omezení:
 
@@ -65,11 +65,20 @@ Zkušenosti při hledání místních produktů jsou uživatelsky přívětivěj
 - Maloobchodníci mohou nyní nakonfigurovat vyhledávání produktů pro zobrazení návrhů vyhledávání, když uživatelé zadávají názvy produktů. Nové nastavení této funkce je k dispozici v profilu funkce POS pod skupinu s názvem **Vyhledávání produktu**. Toto nastavení se nazývá **Zobrazit návrhy vyhledávání při zadávání**. Tato funkce pomůže zaměstnancům rychle najít produkt, který hledají, protože nemusí ručně zadávat celé jméno.
 - Algoritmus vyhledávání produktu nyní hledá vyhledávané termíny ve vlastnosti produktu **Vyhledávání jména**.
 
-    ![Návrhy produktu](./media/Productsuggestions.png "Návrhy produktu")
+![Návrhy produktu](./media/Productsuggestions.png "Návrhy produktu")
 
 ## <a name="customer-search"></a>Hledat zákazníka
 
-Vyhledávání zákazníka slouží k vyhledání zákazníků pro různé účely. Pokladníci například mohou chtít zobrazit seznam přání zákazníka nebo historii nákupů, nebo přidat zákazníka do transakce. Vyhledávací algoritmus páruje hledané termíny oproti hodnotám přítomným v následujících vlastnostech zákazníka: jméno, e-mail, telefon, číslo věrnostní karty, adresa a číslo účtu. Mezi těmito vlastnostmi poskytuje vlastnost jména největší flexibilitu, pokud jde o vyhledávání více klíčových slov, protože algoritmus vrací všechny zákazníky, kteří odpovídají některému z vyhledávaných klíčových slov, a zákazníci, kteří odpovídají většině klíčových slov se zobrazují v horní části výsledků. Toto chování pomáhá pokladníkům v situacích, kdy hledají zadáním celého jména, ale příjmení a křestní jméno byly při původním zadání zaměněna. Z důvodů výkonu však všechny ostatní vlastnosti zachovávají pořadí klíčových slov vyhledávání, takže pokud klíčová slova vyhledávání neodpovídají pořadí, ve kterém jsou data uložena, nebudou žádné výsledky vráceny.
+Vyhledávání zákazníka slouží k vyhledání zákazníků pro různé účely. Pokladníci například mohou chtít zobrazit seznam přání zákazníka nebo historii nákupů, nebo přidat zákazníka do transakce. Vyhledávací algoritmus spáruje hledané termíny oproti hodnotám uvedeným v následujících vlastnostech odběratele:
+
+- Název
+- E-mailová adresa
+- Telefonní číslo
+- Číslo věrnostní karty
+- Adresa
+- Číslo účtu
+
+V rámci těchto vlastností poskytuje název nejvyšší flexibilitu pro vyhledávání s více klíčovými slovy, protože algoritmus vrací všechny odběratele, kteří odpovídají jakémukoliv z hledaných klíčových slov. V horní části výsledků se objevují zákazníci, kteří odpovídají většině klíčových slov. Toto chování pomáhá pokladníkům v situacích, kdy hledají zadáním celého jména, ale příjmení a křestní jméno byly při původním zadání zaměněna. Z důvodu výkonu však všechny ostatní vlastnosti zachovávají pořadí klíčových slov pro vyhledávání. Pokud se tedy pořadí klíčových slov pro vyhledávání neshoduje s pořadím, ve kterém jsou data uložena, nebudou vráceny žádné výsledky.
 
 Ve výchozím nastavení se vyhledávání zákazníků provádí na adresářích zákazníků, které jsou přiřazeny k obchodu. Tento typ vyhledávání se nazývá *vyhledávání místních zákazníků*. Zaměstnanci však mohou také vyhledávat zákazníky globálně. Jinými slovy, mohou vyhledávat ve všech obchodech společnosti a ve všech ostatních právnických osobách. Tento typ vyhledávání se nazývá *vyhledávání vzdálených zákazníků*.
 
@@ -86,7 +95,7 @@ V případě vyhledávání vzdáleného zákazníka se ID zákazníka nezobrazu
 
 Hledání, které jsou založeny na telefonním čísle, byla zjednodušena. Tato hledání nyní ignorují speciální znaky, například mezery, pomlčky nebo hranaté závorky, které mohly být přidané při vytvoření odběratele. Pokladníci si tak nemusí dělat starosti s formátem telefonního čísla při hledání. Mohou také vyhledávat zákazníky zadáním částečného telefonního čísla. Pokud telefonní číslo zahrnuje speciální znaky, lze je najít také hledáním čísel, která se zobrazí za těmito znaky. Pokud telefonní číslo zákazníka byl zadáno například jako **123-456-7890**, pokladník můžete hledat zákazníka zadáním **123**, **456**, **7890**, nebo **1234567890**, nebo zadáním několika počátečních čísel telefonního čísla.
 
-Tradiční vyhledávání zákazníků může být časově náročné, protože vyhledává mezi více poli. Místo toho mohou pokladníci nyní hledat v jedné vlastní vlastnosti, jako je jméno, e-mailová adresa nebo telefonní číslo. Vlastnosti, které používá algoritmus hledání odběratele, jsou souhrnně označovány jako *kritéria hledání odběratele*. Správce systému může snadno konfigurovat jedno nebo více kritérií jako zástupce, který se zobrazí v POS. Vzhledem k tomu, že je hledání omezeno na jediné kritérium, jsou zobrazeny pouze relevantní výsledky hledání a výkon je mnohem lepší než výkon standardního hledání odběratele. Následující obrázek znázorňuje zkratky hledání odběratele v POS.
+Tradiční vyhledávání zákazníků může být časově náročné, protože vyhledává mezi více poli. Místo toho mohou pokladníci nyní hledat v jedné vlastnosti zákazníka, jako je jméno, e-mailová adresa nebo telefonní číslo. Vlastnosti, které používá algoritmus hledání odběratele, jsou souhrnně označovány jako *kritéria hledání odběratele*. Správce systému může snadno konfigurovat jedno nebo více kritérií jako zástupce, který se zobrazí v POS. Vzhledem k tomu, že je hledání omezeno na jediné kritérium, jsou zobrazeny pouze relevantní výsledky hledání a výkon je mnohem lepší než výkon standardního hledání odběratele. Následující obrázek znázorňuje zkratky hledání odběratele v POS.
 
 ![Zkratky hledání odběratele](./media/SearchShortcutsPOS.png "zkratky hledání odběratele")
 
@@ -101,3 +110,7 @@ Pole **Pořadí zobrazení** určuje pořadí, ve kterém jsou zobrazeny zkratky
 
 > [!NOTE]
 > Vlastní vlastnost, která je přidána do výčtu, neovlivní standardní algoritmus hledání odběratele. Jinými slovy, algoritmus hledání zákazníků nevyhledává ve vlastní vlastnosti. Uživatelé mohou vlastní vlastnosti použít k vyhledávání pouze v případě, že je vlastní vlastnost přidána jako zástupce, případně je přepsán výchozí algoritmus hledání.
+
+V nadcházející verzi aplikace Microsoft Dynamics 365 for Retail budou maloobchodní prodejci moci nastavit výchozí režim vyhledávání odběratelů v aplikaci POS pro možnost **Prohledat všechny obchody**. Tato konfigurace může být užitečná ve scénářích, ve kterých je nutné, aby zákazníci, kteří byli vytvořeni mimo POS, byli vyhledání okamžitě (například před spuštěním úlohy distribuce). Ve funkčním profilu POS bude k dispozici nová možnost **Výchozí režim vyhledávání odběratelů**. Nastavením této možnosti na **Zapnuto** nastavíte výchozí režim vyhledávání pro možnost **Prohledat všechny obchody**. Každý pokus o hledání odběratele poté provede volání do centrály v reálném čase.
+
+Aby se zabránilo neočekávaným problémům s výkonem, je tato konfigurace skryta za testovacím příznakem s názvem **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Chcete-li tedy zobrazit možnost **Výchozí režim vyhledávání odběratelů** nastavující uživatelské rozhraní (UI), měl by maloobchodní prodejce vytvořit lístek podpory pro akceptační testování uživatele a výrobní prostředí. Po obdržení lístku bude tým inženýrů spolupracovat s maloobchodním prodejcem, aby se ujistil, že prodejce provádí testování v nevýrobním prostředí, aby zhodnotil výkonnost a implementoval požadované optimalizace.

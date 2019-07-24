@@ -3,7 +3,7 @@ title: Správa prodejní ceny v aplikaci Retail
 description: Toto téma popisuje koncepty pro vytváření a správu prodejních cen v aplikaci Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afa553fd0562b306f720f2a30c7f901db7ad1b3a
-ms.sourcegitcommit: 0fbfb9b0ab78c804f3931a083028d2ce313d6521
+ms.openlocfilehash: 813547f522f5c69920eadf9df61e7f01b13ecd36
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1594063"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624782"
 ---
 # <a name="retail-sales-price-management"></a>Správa maloobchodní prodejní ceny
 
@@ -234,6 +234,6 @@ Maloobchodní cenový modul nepodporuje následující cenové funkce:
 
 ## <a name="pricing-api-enhancements"></a>Vylepšení rozhraní API pro ceny
 
-Cena je jedním z nejdůležitějších faktorů, které určují nákupní rozhodnutí mnoha odběratelů, a mnoho zákazníků porovnává ceny na různých webech, než něco nakoupí. Aby se zajistilo, že budou poskytovat konkurenční ceny, maloobchodníci pozorně sledují své konkurenty a často pořádají promoakce. Chcete-li tedy pomoci těmto prodejcům přilákat zákazníky, je velmi důležité, aby vyhledávání produktů, funkce procházení, seznamy a stránka podrobností o produktu zobrazovalo nejpřesnější ceny.
+Cena je jedním z nejdůležitějších faktorů, které kontrolují nákupní rozhodnutí mnoha odběratelů, a mnoho zákazníků porovnává ceny na různých webech, než něco nakoupí. Aby se zajistilo, že budou poskytovat konkurenční ceny, maloobchodníci pozorně sledují své konkurenty a často pořádají promoakce. Chcete-li tedy pomoci těmto prodejcům přilákat zákazníky, je velmi důležité, aby vyhledávání produktů, funkce procházení, seznamy a stránka podrobností o produktu zobrazovalo nejpřesnější ceny.
 
 V nadcházejícím vydání aplikace Retail bude rozhraní API **GetActivePrices** vracet ceny, které zahrnují jednoduché slevy (například jednořádkové slevy, které nezávisejí na jiných položkách nákupního košíku). Tímto způsobem jsou zobrazené ceny blízké skutečné částce, kterou odběratelé za položky zaplatí. Toto rozhraní API bude zahrnovat všechny typy jednoduchých slev: založené na místu, věrnostní, katalogové a založené na kanálu. Rozhraní API navíc vrátí názvy a informace o platnosti pro použité slevy, takže maloobchodní prodejci mohou poskytnout podrobnější popis ceny a vytvořit pocit naléhavosti, pokud platnost slevy brzy vyprší.

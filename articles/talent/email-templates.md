@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: b88ba4386dbf3513d75990acca1c07fa6f0dc9b0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517539"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729719"
 ---
 # <a name="email-templates"></a>Šablony e-mailů
 [!include[banner](../includes/banner.md)]
 
-Pomocí knihovny šablon e-mailu mohou správci vytvářet jednotný motiv a značky všech e-mailů zasílaných z aplikace Microsoft Dynamics 365 for Talent: Attract. Správci také mohou také uspořádat sadu šablon obsahu e-mailů, kterou mohou využívat ostatní uživatelé. Náborový tým může tyto šablony používat ve svém workflowu k efektivnějšímu odesílání e-mailů. Některé e-mailové zprávy v aplikaci Attract jsou nakonfigurovány na automatické odeslání a správce může použít knihovnu šablon e-mailu pro přizpůsobení obsahu těchto e-mailů.
+Pomocí knihovny šablon e-mailu mohou správci vytvářet jednotný motiv a značky všech e-mailů zasílaných z aplikace Microsoft Dynamics 365 for Talent: Attract and Offer. Správci také mohou také uspořádat sadu šablon obsahu e-mailů, kterou mohou využívat ostatní uživatelé. Náborový tým může tyto šablony používat ve svém workflowu k efektivnějšímu odesílání e-mailů. Některé e-mailové zprávy jsou nakonfigurovány na automatické odeslání a správce může použít knihovnu šablon e-mailu pro přizpůsobení obsahu těchto e-mailů.
 
 > [!NOTE]
 > Aby bylo možné E-mailové šablony používat, musí mít organizace doplněk Komplexní nábor.
@@ -37,7 +37,7 @@ Pomocí knihovny šablon e-mailu mohou správci vytvářet jednotný motiv a zna
 
 Aby bylo možné vytvořit konzistentní značkování veškeré e-mailové komunikace, musí správce nejprve nastavit globální záhlaví a zápatí pro všechny e-mailové šablony. V centru pro správu na kartě **Nastavení e-mailové šablony** v části **záhlaví** může správce nahrát obrázek, který bude použit jako záhlaví nebo banner u všech e-mailů. Obrázek může být logo společnosti, hlavička a nebo jiný reprezentativní obrázek. Doporučujeme šířku mezi 25 a 800 pixely a výšku mezi 25 a 150 pixely vzhledem k tomu, že tyto rozměry jsou optimální pro většinu e-mailových klientů, jako je například aplikace Microsoft Outlook. Obrázek musí být ve formátu JPEG, JPG, PNG nebo SVG a velikost souboru musí být menší než 1 MB (megabajt). Po nahrání obrázku se generuje a zobrazí náhled záhlaví. Pokud záhlaví obrázku musí odebráno a nahrazeno, může správce použít možnost **Odebrat** nad náhledem.
 
-V části **zápatí** může správce poskytnout odkazy na zásady ochrany osobních údajů společnosti pro komunikaci a podmínky. Tyto odkazy jsou zahrnuty do zápatí, které je automaticky generováno. Následně se zobrazí náhled tohoto zápatí.
+V části **zápatí** může správce poskytnout odkazy na zásady ochrany osobních údajů společnosti pro komunikaci a podmínky. Tyto odkazy jsou zahrnuty do zápatí, které je automaticky generováno. Následně se zobrazí náhled tohoto zápatí. Správce může také zvolit konkrétní jazyk, ve kterém budou e-mailová zápatí odeslána jako součást všech e-mailů. Pro shromáždění souhrnné tabulky s pohovorem bude také použita stejná konfigurace jazyka. 
 
 Je nutné před zavřením centra pro správu uložit změny.
 
@@ -46,7 +46,7 @@ Je nutné před zavřením centra pro správu uložit změny.
 
 ## <a name="email-template-library"></a>Knihovna šablon e-mailu 
 
-Po nastavení konfigurace globální šablony může správce začít vytvářet a pořádat šablony pro všechny e-mailové zprávy odeslané z aplikace Attract. Knihovna šablon e-mailu je k dispozici pouze pro správce. Pokud chcete otevřít knihovnu, v hlavní navigačního nabídce vyberte kartu **E-mailové šablony**. Knihovna je kategorizována podle různých aktivit v aplikaci Attract, pro které musí být odeslány e-maily, jako je například plánování, hodnocení a vytvoření pracovního místa. Správce může vybrat libovolnou kategorii k zobrazení všech typů e-mailů spojených s aktivitou. Vyberte například **plánování**, pokud chcete zobrazit různé typy e-mailových zpráv odeslaných během procesu plánování a všechny šablony, které jsou k dispozici pro každý typ e-mailu. Každý pododdíl kategorie představuje typ e-mailu.
+Po nastavení konfigurace globální šablony může správce začít vytvářet a pořádat šablony pro všechny e-mailové zprávy odeslané z aplikace Attract a Offer. Knihovna šablon e-mailu je k dispozici pouze pro správce. Pokud chcete otevřít knihovnu, v hlavní navigačního nabídce vyberte kartu **E-mailové šablony**. Knihovna je kategorizována podle různých aktivit v aplikaci Attract, pro které musí být odeslány e-maily, jako je například plánování, hodnocení a vytvoření pracovního místa a nabídky. Správce může vybrat libovolnou kategorii k zobrazení všech typů e-mailů spojených s aktivitou. Vyberte například **plánování**, pokud chcete zobrazit různé typy e-mailových zpráv odeslaných během procesu plánování a všechny šablony, které jsou k dispozici pro každý typ e-mailu. Každý pododdíl kategorie představuje typ e-mailu.
 
 Některé typy e-mailů mohou mít více příjemců. Například v kategorii **Plánování** jsou e-maily odeslané v případě, kdy je potřeba souhrn plánu pohovoru, uchazečům i vedoucím pohovorů. Každý oddíl má dva hlavní sloupce: **Název šablony** a **Příjemce**. Každý řádek v oddílu představuje jednu šablonu pro typ e-mailu. Nejprve se zobrazí symbol zámku na řádku pro každou šablonu. Tento symbol označuje, že šablona je standardní šablona, která je součástí aplikace Attract a nelze ji odstranit. Správce může pro všechny šablony použít tlačítko se třemi tečkami (**...**) k duplikování šablony, jejímu nastavení jako výchozí nebo odstranění. Pokud je šablona nastavená jako výchozí, může nastat jeden ze dvou typů chování. Chování je označeno odznakem nebo odznaky, které se zobrazí v řádku šablony:
 

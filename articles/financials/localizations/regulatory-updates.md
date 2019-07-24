@@ -3,7 +3,7 @@ title: Povinné aktualizace
 description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
-ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
+ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1593336"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624304"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -67,6 +67,13 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 |      Čeká na zpracování            |   10.0.3      | Polsko     |   SAF faktury (JPK_FA) v.2 z 1. července 2019  |
 |      Čeká na zpracování            |   10.0.3      | Brazílie   |   Úpravy fiskálního dokumentu ICMS povolují tabulku 5.2   |
 |      Čeká na zpracování            |   10.0.3      | Brazílie    |   NF-e dekret 54.308/18 (RS)   |
+  | Čeká na zpracování            |   10.0.4      | Brazílie    |   Příchozí fiskální dokument 66   |
+   | Čeká na zpracování            |   10.0.4      | Brazílie    |   NF-e and NFC-e - Usnesení 13/2019 a nařízení SUCIEF 55/2019- RJ - nové podmínky pro výstup značek osvobození od daně v NF-e.   |
+   | Čeká na zpracování            |   10.0.4      | Indie   |   Zobrazení Místo dodání a Státu ve faktuře daně GST  |
+   | Čeká na zpracování            |   10.0.4      | Mexiko   |  Deklarace třetí strany DIOT - změny v rozvržení 2019   |
+   | Čeká na zpracování            |   10.0.4      | Brazílie    |   NF-e ICMS-ST - nařízení CAT 42/18 pro stát SP - CAT 42/18
+   | Čeká na zpracování            |   10.0.4      | Brazílie    |   NF-e dekret 54.308/18 - RS NF   |
+   
 
 
 ## <a name="additional-resources"></a>Další zdroje

@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
-ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7eff0ce166785cb777fbf58ecf08ca8915be5af
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557322"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624877"
 ---
 # <a name="project-timesheets-on-a-mobile-device"></a>Časové rozvrhy na mobilním zařízení
 
 [!include [banner](../includes/banner.md)]
-
-# <a name="overview"></a>Přehled
 
 Volba **Moje časové rozvrhy (optimalizované pro mobilní zařízení)** umožňují zaměstnancům vytvořit a odeslat časové rozvrhy projektu, aby mohli zaznamenávat své hodiny pro daný projekt na mobilním zařízení. Zaměstnanci mohou vytvořit nový časový rozvrh nebo zkopírovat data z existujícího časového rozvrhu k zajištění rychlého, přesného časového záznamu. Pokud jste zvoleni jako delegát, můžete také zadat časový rozvrh pro jiného pracovníka. Aplikace umožňuje zaměstnancům filtrovat podle projektu, zdroje nebo stavu schválení, aby mohli rychle vyhledat a vyberat časový rozvrh. Také zaměstnancům umožňuje ukládat oblíbené položky, které ukládají informace o projektu a aktivitě do časového rozvrhu. Uložené oblíbené položky slouží k vytvoření budoucích časových rozvrhů, urychlení procesu zadávání času. Úprava nebo zobrazení informací o finanční dimenzi nejsou podporovány z mobilní aplikace. Volba **Moje časové rozvrhy (optimalizované pro mobilní zařízení)** je přístupná prostřednictvím webového prohlížeče mobilního zařízení.
 
@@ -35,8 +33,7 @@ Volba **Časové rozvrhy pro mé kontroly (optimalizovaná pro mobilní zaříze
 Tato mobilní aplikace je kompatibilní pro iPhone s aplikací Dynamics 365 for Finance and Operations s aktualizací Platform Update 15.
 Android bude kompatibilní s aktualizací Platform Update 16, až bude k dispozici.
 
-<a name="create-a-project-timesheet-on-your-mobile-device"></a>Vytvoření projektu časového rozvrhu pro mobilní zařízení
-------------------------------------------------
+## <a name="create-a-project-timesheet-on-your-mobile-device"></a>Vytvoření projektu časového rozvrhu pro mobilní zařízení
 
 1.  Poznamenejte si adresu URL Dynamics 365 pro stránku **Řízení a účtování projektu** \> **Časové rozvrhy** \> **Můj časový rozvrh (optimalizováno pro mobilní zařízení)**.
 

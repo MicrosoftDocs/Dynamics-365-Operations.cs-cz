@@ -3,7 +3,7 @@ title: Plánování operací
 description: Toto téma obsahuje obecné informace o plánování operací. Plánování operací můžete použít, když je třeba získat obecný odhad výrobního procesu v čase.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 298c07346427a949ffa544e66eb6b01995dadc38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9447474e0878077659a80dc49f7c7c1313db2cbe
+ms.sourcegitcommit: 8741b4b32ef32a54de3d064bf40a9c0179d4139a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560248"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "1691455"
 ---
 # <a name="operations-scheduling"></a>Plánování operací
 
@@ -67,6 +67,9 @@ Plán operací také řídí hlavní plánování a určuje výpočty požadavk�
 -   **Nedokončená výroba** – plánované, uvolněné nebo zahájené produkty
 -   **Dostupnost materiálu** – zásoby, dílčí výroba a dodavatelé
 -   **Dostupnost kapacity** – zdroje, které jsou nutné pro výrobu
+
+> [!NOTE]
+> Používáte-li hlavní plánování a plánování operací s více vlákny, nebude omezená kapacita brána v úvahu. 
 
 ## <a name="cancellations"></a>Zrušení
 Když spustíte plánování operací, můžete zrušit konkrétní částí postupu. Následující části obsahují dobu ve frontě, přípravný čas, dobu zpracování, čas překrytí a doby přepravy.

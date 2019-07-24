@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517563"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729696"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funkce kariérního webu v aplikaci Attract
 
@@ -48,11 +48,14 @@ Pokud chcete nastavit hodnoty pro následující položky, přihlaste se k syst�
  
 Pokud chcete nastavit hodnoty pro následující položky, přihlaste se k aplikaci Attract jako správce, vyberte **Centrum pro správu** v nabídce **Nastavení** a poté zvolte kartu **Správa kariérního webu**.
 
--   **Optimalizace pro vyhledávače** - Pokud je povolena, budou všechny nabídky práce publikované na kariérním webu Attract vyhledávatelné pomocí vyhledávačů, jako jsou Bing a Google.
+-   **Optimalizace pro vyhledávače** - Pokud je povolena, budou všechny nabídky práce publikované na kariérním webu Attract vyhledávatelné pomocí vyhledávačů, jako jsou Bing a Google. 
 
     > [!NOTE] 
     > Může dojít ke zpoždění mezi zapnutím tohoto nastavení a zobrazením výsledků vyhledávání, v závislosti na používaném vyhledávači.
-         
+    
+-   **Smluvní podmínky** – Pokud je to povoleno, musí všichni uchazeči při žádosti o zaměstnání souhlasit se smluvními podmínkami organizace. Správce systému Attract je schopen nakonfigurovat vlastní text souhlasu a odkaz na stránku Smluvní podmínky. 
+
+        
 ## <a name="career-site-urls"></a>URL adresy kariérního webu
 
 Následující seznam obsahuje běžně používané URL adresy kariérního webu a způsob přístupu.

@@ -3,7 +3,7 @@ title: Vytvoření nové obchodní smlouvy
 description: Tento postup popisuje vytvoření obchodní dohody, u které zaregistrujete novou prodejní cenu produktu odsouhlasenou se specifickým odběratelem.
 author: omulvad
 manager: AnnBe
-ms.date: 11/16/2018
+ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e132cd20437b7929e81fcaa123d70bb57fb320c8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e42383b237a60d41d3b4e09ffbbe1c1bb5ebbfd7
+ms.sourcegitcommit: 33e98f89294086334fe9c0a350abb6a52ef9dacb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549260"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "1711194"
 ---
 # <a name="create-a-new-trade-agreement"></a>Vytvoření nové obchodní smlouvy
 
@@ -30,40 +30,43 @@ Tento postup popisuje vytvoření obchodní dohody, u které zaregistrujete novo
 
 
 ## <a name="create-and-post-a-new-trade-agreement-journal"></a>Vytvoření a zaúčtování nového deníku obchodní smlouvy
-1. Přejděte do nabídky Prodej a marketing > Ceny a slevy > Deníky obchodních smluv.
-2. Klikněte na položku Nová.
-3. V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-5. Klikněte na odkaz na vybraném řádku v seznamu.
-6. Klikněte na položku Řádky.
-7. V poli Kód účtu vyberte možnost Tabulka.
-    * V tomto příkladu aktualizujete cenu pro určitého odběratele, což znamená, že je nutné vybrat tabulku. Pokud byste aktualizovali katalogovou cenu produktu, vybrali byste Vše, aby nová cena platila pro všechny odběratele. Pokud byste používali různé ceny v různých segmentech odběratelů, vybrali byste možnost Skupina. Chcete-li vybrat skupinu, musíte nastavit možnost Cenové skupiny odběratele.  
-8. V poli Výběr účtu kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-9. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-10. V poli Kód položky vyberte položku Tabulka.
-    * Při zadávání typu obchodní smlouvy Cena (prodej) je nutné vybrat pouze „Tabulka“ v poli Kód položky. Důvodem je skutečnost, že cena je absolutní hodnota a nesmí být stejná pro všechny produkty nebo skupinu produktů.  
-11. V poli Vztah položky kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-12. V seznamu vyberte produkt, který chcete do smlouvy zahrnout.
-    * Poznamenejte produkt, který jste vybrali.  
-13. Klikněte na odkaz na vybraném řádku v seznamu.
-14. Zadejte minimální množství do pole Od.
-    * Pokud odběratel musí objednávat minimální množství, je třeba zde zadat množství, jinak nebude mít na novou cenu nárok.  
-    * Zadáním hodnoty do pole Do určete maximální množství, nad které nebude cena ve smlouvě platit. Pokud nabízíte ceny a slevy založené na několika množstevních kategoriích, zadejte každou množstevní kategorii jako pár minimálního a maximálního množství do polí Od a Do.  
-15. Zadejte cenu do pole Částka v měně.
-16. V poli Od data zadejte datum, od kterého bude tato smlouva platit.
-17. Klikněte na položku Uložit.
-18. Klikněte na tlačítko Ověřit.
-19. Klikněte na možnost Ověřit vybrané řádky.
-20. Klikněte na tlačítko OK.
-21. Klikněte na položku Zaúčtovat.
-22. Klikněte na tlačítko OK.
+1. Přejděte do **navigačního podokna > Moduly > Prodej a marketing > Ceny a slevy > Deníky smluv o obchodu**.
+2. Klepněte na možnost **Nový**.
+3. V poli **Název** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+4. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+5. V **podokně akcí** klikněte na možnost **Řádky**.
+6. V poli **Kód účtu** vyberte možnost Tabulka.
+    
+    V tomto příkladu aktualizujete cenu pro určitého odběratele, což znamená, že je nutné vybrat tabulku. Pokud byste aktualizovali katalogovou cenu produktu, vybrali byste Vše, aby nová cena platila pro všechny odběratele. Pokud byste používali různé ceny v různých segmentech odběratelů, vybrali byste možnost Skupina. Chcete-li vybrat skupinu, musíte nastavit možnost Cenové skupiny odběratele.  
+
+7. V poli **Výběr účtu** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+8. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+9. V poli **Kód položky** vyberte položku Tabulka.
+    
+    Při zadávání typu obchodní smlouvy Cena (prodej) je nutné vybrat pouze „Tabulka“ v poli **Kód položky**. Důvodem je skutečnost, že cena je absolutní hodnota a nesmí být stejná pro všechny produkty nebo skupinu produktů.
+    
+10. V poli **Vztah položky** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+11. V seznamu vyberte produkt, který chcete do smlouvy zahrnout. Poznamenejte produkt, který jste vybrali.  
+12. V poli **Od** zadejte minimální množství.
+    - Pokud odběratel musí objednávat minimální množství, je třeba zde zadat množství, jinak nebude mít na novou cenu nárok.  
+    - Zadáním hodnoty do pole **Do** určete maximální množství, nad které nebude cena ve smlouvě platit. Pokud nabízíte ceny a slevy založené na několika množstevních kategoriích, zadejte každou množstevní kategorii jako pár minimálního a maximálního množství do polí **Od** a **Do**.
+13. Zadejte cenu do pole **Částka v měně.**
+14. V části **Detaily** zadejte do pole **Od data** datum, od kterého bude tato smlouva platná.
+15. Klikněte na možnost **Uložit**.
+16. Klikněte na tlačítko **Ověřit**.
+17. Klikněte na možnost **Ověřit vybrané řádky.**
+18. Klikněte na tlačítko **OK**.
+19. Klikněte na možnost **Zaúčtovat**.
+20. Klikněte na tlačítko **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Zobrazení obchodních smluv pro produkt
-1. Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.
+1. Klikněte na **Navigační podokno > Moduly > Řízení informací o produktech > Produkty > Vydané produkty**.
 2. V seznamu najděte a vyberte produkt, jehož cenu jste právě aktualizovali.
-3. V podokně akcí klikněte na možnost Prodej.
-4. Klikněte na možnost Zobrazit obchodní smlouvy.
-    * Zkontrolujte podrobnosti obchodní smlouvy o cenách, kterou jste právě vytvořili.    
+3. V **podokně akcí** klikněte na možnost **Prodej**.
+4. Klikněte na možnost **Zobrazit obchodní smlouvy**.
+    
+    Zkontrolujte podrobnosti obchodní smlouvy o cenách, kterou jste právě vytvořili.    
+
 5. Zavřete stránku.
 
 ## <a name="additional-resources"></a>Další prostředky

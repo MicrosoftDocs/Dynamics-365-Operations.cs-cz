@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
 author: sericks007
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620638"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624900"
 ---
 # <a name="removed-or-deprecated-features"></a>Odstraněné nebo zastaralé funkce
 
@@ -40,7 +40,10 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 
 > Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
 
-## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Francie: Export účetních dat v FEC ve formátu XML
 
@@ -52,17 +55,12 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé. Plánovaná doba pro odstranění funkcionality je červenec 2020. |
 
-=======
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="legacy-navigation-bar"></a>Starší verze navigačníh panelu
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Zarovnání záhlaví s jinými produkty Dynamics a Office. Další informace naleznete v tématu [Aktualizovaný navigační panel zarovnaný se záhlavím Office](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).
+| **Důvod pro zrušení/odstranění** | Zarovnání záhlaví s jinými produkty Dynamics a Office. Další informace naleznete v tématu [Aktualizovaný navigační panel zarovnaný se záhlavím Office](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Nahrazeno jinou funkcí?**   | Počínaje aktualizací Platform Update 24 byl zaveden navigační panel s novým stylem a vyhledáváním. |
 | **Ovlivněné oblasti produktu**         | Webový klient |
 | **Možnost nasazení**              | Vše |
@@ -71,8 +69,6 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 s aktualizací Platform Update 26
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.2 s aktualizací Platform Update 26 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="legacy-default-action-behavior"></a>Starší výchozí chování akce
 
@@ -116,9 +112,6 @@ Podpora pro vytváření prodejních objednávek na základě projektů, kde mě
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je duben 2020. |
 
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 s aktualizací Platform Update 25 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Zastaralá rozhraní API a možná přerušení změn
 

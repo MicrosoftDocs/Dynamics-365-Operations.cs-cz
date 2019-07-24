@@ -3,7 +3,7 @@ title: Přehled faktur dodavatele
 description: V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
 author: abruer
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b57c18b5b2cf690111511e4c5a92d51fc23dd68c
-ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
+ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
+ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1618266"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625072"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
@@ -91,13 +91,6 @@ Můžete použít stránku **Obnovit faktury dodavatel** pro obnovení nebo uvol
 
 Na stránku **Obnovit faktury dodavatele** budete mít přístup pouze v případě, že vám je přiděleno funkční oprávnění zabezpečení **Obnovit používané faktury dodavatele**. Kromě toho musí být zapnutý parametr **Povolit obnovení faktury dodavatele** na stránce **Parametry závazků**.
 
-## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Resetování stavu workflow pro faktury dodavatele z Bez možnosti obnovy na Koncept
-
-Instance workflow, která byla zastavena kvůli neobnovitelné chybě, bude míst stav workflow **Bez možnosti obnovy**. Pokud je stav faktury dodavatele **Bez možnosti obnovy**, můžete ho obnovit do stavu **Koncept**. Poté můžete upravit fakturu dodavatele. Tato funkce je k dispozici, pokud je zapnutý parametr **Resetovat stav konceptu workflow faktury dodavatele** na stránce **Správa funkcí**.
-
-Na stránce **Resetovat stav workflow faktur dodavatele** můžete resetovat stav workflow na **Koncept**. Můžete otevřít tuto stránku z navigace **Periodická úloha**. Na stránce jsou zobrazeny všechny faktury dodavatele, které mají stav workflow **Bez možnosti obnovy** v aktuální právnické osobě. Dále zobrazuje uživatele, který odeslal každou fakturu do workflow, a identifikátor faktury, a poskytuje odkaz na historii workflow. Chcete-li resetovat stav workflow na **Koncept**, označte jednu nebo více faktur a poté vyberte **Aktualizovat na Koncept**. Po resetování stavu workflow na **Koncept** bude k dispozici pro úpravy na stránce **Faktura dodavatele**.
-
-Na stránku **Resetovat stav workflow faktur dodavatele** můžete přistoupit pouze tehdy, pokud je vám přiřazeno funkční oprávnění zabezpečení **Udržovat stav pro workflow faktury dodavatele** a oprávnění **Resetovat stav pro workflow faktury dodavatele**.
 
 ## <a name="additional-resources"></a>Další zdroje
 
