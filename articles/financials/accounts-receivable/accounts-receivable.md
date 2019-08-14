@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 20671
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
@@ -18,98 +18,98 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98ec7d9a57cc39c22a31c025754c83dc1a95139e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e00f982a6fd75447d0dcbe60d98e9d65189cac92
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547249"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835279"
 ---
-# <a name="accounts-receivable-home-page"></a><span data-ttu-id="e9628-103">Domovská stránka Pohledávky</span><span class="sxs-lookup"><span data-stu-id="e9628-103">Accounts receivable home page</span></span>
+# <a name="accounts-receivable-home-page"></a><span data-ttu-id="010df-103">Domovská stránka Pohledávky</span><span class="sxs-lookup"><span data-stu-id="010df-103">Accounts receivable home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="e9628-104">Pohledávky lze použít při sledování faktur odběratelů a příchozích plateb.</span><span class="sxs-lookup"><span data-stu-id="e9628-104">Use Accounts receivable to track customer invoices and incoming payments.</span></span> 
+<span data-ttu-id="010df-104">Pohledávky lze použít při sledování faktur odběratelů a příchozích plateb.</span><span class="sxs-lookup"><span data-stu-id="010df-104">Use Accounts receivable to track customer invoices and incoming payments.</span></span> 
 
-<span data-ttu-id="e9628-105">Můžete vytvořit faktury odběratelů, které jsou založeny na prodejních objednávkách nebo na dodacích listech.</span><span class="sxs-lookup"><span data-stu-id="e9628-105">You can create customer invoices that are based on sales orders or packing slips.</span></span> <span data-ttu-id="e9628-106">Můžete také zadat volné faktury, které nesouvisejí s prodejními objednávkami.</span><span class="sxs-lookup"><span data-stu-id="e9628-106">You can also enter free text invoices that are not related to sales orders.</span></span> <span data-ttu-id="e9628-107">Platby lze přijímat pomocí několika různých typů plateb.</span><span class="sxs-lookup"><span data-stu-id="e9628-107">You can receive payments by using several different payment types.</span></span> <span data-ttu-id="e9628-108">Mezi ně patří cizí směnky, hotovost, šeky, kreditní karty a elektronické platby.</span><span class="sxs-lookup"><span data-stu-id="e9628-108">These include bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> <span data-ttu-id="e9628-109">Pokud vaše organizace zahrnuje více právnických osob, můžete použít centralizované platby k záznamu plateb v jedné právnické osobě jménem ostatních právnických osob.</span><span class="sxs-lookup"><span data-stu-id="e9628-109">If your organization includes multiple legal entities, you can use centralized payments to record payments in a single legal entity on behalf of the other legal entities.</span></span>
+<span data-ttu-id="010df-105">Můžete vytvořit faktury odběratelů, které jsou založeny na prodejních objednávkách nebo na dodacích listech.</span><span class="sxs-lookup"><span data-stu-id="010df-105">You can create customer invoices that are based on sales orders or packing slips.</span></span> <span data-ttu-id="010df-106">Můžete také zadat volné faktury, které nesouvisejí s prodejními objednávkami.</span><span class="sxs-lookup"><span data-stu-id="010df-106">You can also enter free text invoices that are not related to sales orders.</span></span> <span data-ttu-id="010df-107">Platby lze přijímat pomocí několika různých typů plateb.</span><span class="sxs-lookup"><span data-stu-id="010df-107">You can receive payments by using several different payment types.</span></span> <span data-ttu-id="010df-108">Mezi ně patří cizí směnky, hotovost, šeky, kreditní karty a elektronické platby.</span><span class="sxs-lookup"><span data-stu-id="010df-108">These include bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> <span data-ttu-id="010df-109">Pokud vaše organizace zahrnuje více právnických osob, můžete použít centralizované platby k záznamu plateb v jedné právnické osobě jménem ostatních právnických osob.</span><span class="sxs-lookup"><span data-stu-id="010df-109">If your organization includes multiple legal entities, you can use centralized payments to record payments in a single legal entity on behalf of the other legal entities.</span></span>
 
 
-<span data-ttu-id="e9628-110">**Obchodní procesy**</span><span class="sxs-lookup"><span data-stu-id="e9628-110">**Business processes**</span></span>
+<span data-ttu-id="010df-110">**Obchodní procesy**</span><span class="sxs-lookup"><span data-stu-id="010df-110">**Business processes**</span></span>
 
-<span data-ttu-id="e9628-111">[![Obchodní proces](./media/AR-process.PNG)](./media/AR-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="e9628-111">[![Business process](./media/AR-process.PNG)](./media/AR-process.PNG)</span></span>
+<span data-ttu-id="010df-111">[![Obchodní proces](./media/AR-process.PNG)](./media/AR-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="010df-111">[![Business process](./media/AR-process.PNG)](./media/AR-process.PNG)</span></span>
 
-## <a name="set-up-accounts-receivable"></a><span data-ttu-id="e9628-112">Nastavení modulu Pohledávky</span><span class="sxs-lookup"><span data-stu-id="e9628-112">Set up Accounts receivable</span></span>
+## <a name="set-up-accounts-receivable"></a><span data-ttu-id="010df-112">Nastavení modulu Pohledávky</span><span class="sxs-lookup"><span data-stu-id="010df-112">Set up Accounts receivable</span></span>
 
-<span data-ttu-id="e9628-113">Modul Pohledávky lze použít při sledování faktur odběratelů a plateb přijatých od odběratelů.</span><span class="sxs-lookup"><span data-stu-id="e9628-113">Use Accounts receivable to track customer invoices and payments that you receive from customers.</span></span> <span data-ttu-id="e9628-114">Můžete vytvořit skupiny odběratelů, odběratele, účetní profily, oznámení úroků, upomínky, provize, parametry týkající se odběratelů, poplatků, dodání a místa určení, cizí směnky nebo další typy informací o modulu Pohledávky.</span><span class="sxs-lookup"><span data-stu-id="e9628-114">You can set up customer groups, customers, posting profiles, interest notes, collection letters, commissions, and parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable information.</span></span> 
+<span data-ttu-id="010df-113">Modul Pohledávky lze použít při sledování faktur odběratelů a plateb přijatých od odběratelů.</span><span class="sxs-lookup"><span data-stu-id="010df-113">Use Accounts receivable to track customer invoices and payments that you receive from customers.</span></span> <span data-ttu-id="010df-114">Můžete vytvořit skupiny odběratelů, odběratele, účetní profily, oznámení úroků, upomínky, provize, parametry týkající se odběratelů, poplatků, dodání a místa určení, cizí směnky nebo další typy informací o modulu Pohledávky.</span><span class="sxs-lookup"><span data-stu-id="010df-114">You can set up customer groups, customers, posting profiles, interest notes, collection letters, commissions, and parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable information.</span></span> 
 
 :::row:::
     :::column:::
-        - [<span data-ttu-id="e9628-115">Rozúčtování a položky dílčích hlavních knih deníku pro textové faktury</span><span class="sxs-lookup"><span data-stu-id="e9628-115">Accounting distributions and subledger journal entries for free text invoices</span></span>](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
-        - [<span data-ttu-id="e9628-116">Účetní profily odběratele</span><span class="sxs-lookup"><span data-stu-id="e9628-116">Customer posting profiles</span></span>](customer-posting-profiles.md)
-        - [<span data-ttu-id="e9628-117">Nastavení platební karty, autorizace a záznam</span><span class="sxs-lookup"><span data-stu-id="e9628-117">Credit card setup, authorization, and capture</span></span>](credit-card-authorizations.md)
-        - [<span data-ttu-id="e9628-118">Vytvoření faktury odběratele</span><span class="sxs-lookup"><span data-stu-id="e9628-118">Create a customer invoice</span></span>](configure-customer-invoices.md)
-        - [<span data-ttu-id="e9628-119">Nastavení a zpracování opakovaných faktur</span><span class="sxs-lookup"><span data-stu-id="e9628-119">Set up and process recurring invoices</span></span>](set-up-process-recurring-invoices.md)
-        - [<span data-ttu-id="e9628-120">Oprava volné faktury</span><span class="sxs-lookup"><span data-stu-id="e9628-120">Correct a free text invoice</span></span>](correct-free-text-invoice.md)
+        - [<span data-ttu-id="010df-115">Rozúčtování a položky dílčích hlavních knih deníku pro textové faktury</span><span class="sxs-lookup"><span data-stu-id="010df-115">Accounting distributions and subledger journal entries for free text invoices</span></span>](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+        - [<span data-ttu-id="010df-116">Účetní profily odběratele</span><span class="sxs-lookup"><span data-stu-id="010df-116">Customer posting profiles</span></span>](customer-posting-profiles.md)
+        - [<span data-ttu-id="010df-117">Nastavení platební karty, autorizace a záznam</span><span class="sxs-lookup"><span data-stu-id="010df-117">Credit card setup, authorization, and capture</span></span>](credit-card-authorizations.md)
+        - [<span data-ttu-id="010df-118">Vytvoření faktury odběratele</span><span class="sxs-lookup"><span data-stu-id="010df-118">Create a customer invoice</span></span>](configure-customer-invoices.md)
+        - [<span data-ttu-id="010df-119">Nastavení a zpracování opakovaných faktur</span><span class="sxs-lookup"><span data-stu-id="010df-119">Set up and process recurring invoices</span></span>](set-up-process-recurring-invoices.md)
+        - [<span data-ttu-id="010df-120">Oprava volné faktury</span><span class="sxs-lookup"><span data-stu-id="010df-120">Correct a free text invoice</span></span>](correct-free-text-invoice.md)
     :::column-end:::
     :::column:::
-        - [<span data-ttu-id="e9628-121">Nastavení cizích směnek</span><span class="sxs-lookup"><span data-stu-id="e9628-121">Set up bills of exchange</span></span>](set-up-bills-exchange.md)
-        - [<span data-ttu-id="e9628-122">Nastavení úrokových sazeb pro kód úroku</span><span class="sxs-lookup"><span data-stu-id="e9628-122">Set up interest rates for an interest code</span></span>](set-up-interest-rates-interest-code.md)
-        - [<span data-ttu-id="e9628-123">Vzdát, obnovit nebo změnit úrokové poplatky</span><span class="sxs-lookup"><span data-stu-id="e9628-123">Waive, reinstate, or reverse interest fees</span></span>](waive-reinstate-reverse-interest-fees.md)
-        - [<span data-ttu-id="e9628-124">Přehled přímého inkasa SEPA</span><span class="sxs-lookup"><span data-stu-id="e9628-124">SEPA direct debit overview</span></span>](sepa-direct-debit-overview.md)
-        - [<span data-ttu-id="e9628-125">Nastavení zmocnění přímého inkasa SEPA</span><span class="sxs-lookup"><span data-stu-id="e9628-125">Set up SEPA direct debit mandate</span></span>](sepa-direct-debit-mandate.md)
-        - [<span data-ttu-id="e9628-126">Uzavření modulu Pohledávky</span><span class="sxs-lookup"><span data-stu-id="e9628-126">Close Accounts receivable</span></span>](close-accounts-receivable.md)
+        - [<span data-ttu-id="010df-121">Nastavení cizích směnek</span><span class="sxs-lookup"><span data-stu-id="010df-121">Set up bills of exchange</span></span>](set-up-bills-exchange.md)
+        - [<span data-ttu-id="010df-122">Nastavení úrokových sazeb pro kód úroku</span><span class="sxs-lookup"><span data-stu-id="010df-122">Set up interest rates for an interest code</span></span>](set-up-interest-rates-interest-code.md)
+        - [<span data-ttu-id="010df-123">Vzdát, obnovit nebo změnit úrokové poplatky</span><span class="sxs-lookup"><span data-stu-id="010df-123">Waive, reinstate, or reverse interest fees</span></span>](waive-reinstate-reverse-interest-fees.md)
+        - [<span data-ttu-id="010df-124">Přehled přímého inkasa SEPA</span><span class="sxs-lookup"><span data-stu-id="010df-124">SEPA direct debit overview</span></span>](sepa-direct-debit-overview.md)
+        - [<span data-ttu-id="010df-125">Nastavení zmocnění přímého inkasa SEPA</span><span class="sxs-lookup"><span data-stu-id="010df-125">Set up SEPA direct debit mandate</span></span>](sepa-direct-debit-mandate.md)
+        - [<span data-ttu-id="010df-126">Uzavření modulu Pohledávky</span><span class="sxs-lookup"><span data-stu-id="010df-126">Close Accounts receivable</span></span>](close-accounts-receivable.md)
     :::column-end:::
 :::row-end:::
 
 
-## <a name="set-up-credit-and-collections"></a><span data-ttu-id="e9628-127">Nastavení kreditu a inkas</span><span class="sxs-lookup"><span data-stu-id="e9628-127">Set up credit and collections</span></span>
+## <a name="set-up-credit-and-collections"></a><span data-ttu-id="010df-127">Nastavení kreditu a inkas</span><span class="sxs-lookup"><span data-stu-id="010df-127">Set up credit and collections</span></span>
 
-<span data-ttu-id="e9628-128">Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa.</span><span class="sxs-lookup"><span data-stu-id="e9628-128">Accounts receivable collections information is managed in one central view, the Collections page.</span></span> <span data-ttu-id="e9628-129">Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas.</span><span class="sxs-lookup"><span data-stu-id="e9628-129">Credit and collections managers can use this central view to manage collections.</span></span> <span data-ttu-id="e9628-130">Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé.</span><span class="sxs-lookup"><span data-stu-id="e9628-130">Collections agents can begin the collections process from customer lists that are generated by using predefined collection criteria, or from the Customers page.</span></span>
+<span data-ttu-id="010df-128">Informace o inkasu pohledávek jsou spravovány v jednom ústředním zobrazení pomocí stránky Inkasa.</span><span class="sxs-lookup"><span data-stu-id="010df-128">Accounts receivable collections information is managed in one central view, the Collections page.</span></span> <span data-ttu-id="010df-129">Vedoucí úvěrů a inkasa mohou používat toto centrální zobrazení ke správě inkas.</span><span class="sxs-lookup"><span data-stu-id="010df-129">Credit and collections managers can use this central view to manage collections.</span></span> <span data-ttu-id="010df-130">Inkasní agenti mohou zahájit proces kolekce ze seznamů odběratelů, které jsou generovány pomocí použitím předem definované kolekce kritérií nebo stránky Odběratelé.</span><span class="sxs-lookup"><span data-stu-id="010df-130">Collections agents can begin the collections process from customer lists that are generated by using predefined collection criteria, or from the Customers page.</span></span>
 
-[<span data-ttu-id="e9628-131">Úvěr a inkasa v modulu Pohledávky</span><span class="sxs-lookup"><span data-stu-id="e9628-131">Credit and collections in Accounts receivable</span></span>](collections-credit-accounts-receivable.md)
+[<span data-ttu-id="010df-131">Úvěr a inkasa v modulu Pohledávky</span><span class="sxs-lookup"><span data-stu-id="010df-131">Credit and collections in Accounts receivable</span></span>](collections-credit-accounts-receivable.md)
 
-[<span data-ttu-id="e9628-132">Konfigurace modulů Pohledávky a Kredit a inkasa</span><span class="sxs-lookup"><span data-stu-id="e9628-132">Configure Accounts receivables and Credit and collections</span></span>](accounts-receivables-set-up-overview.md)
+[<span data-ttu-id="010df-132">Konfigurace modulů Pohledávky a Kredit a inkasa</span><span class="sxs-lookup"><span data-stu-id="010df-132">Configure Accounts receivables and Credit and collections</span></span>](accounts-receivables-set-up-overview.md)
 
-[<span data-ttu-id="e9628-133">Nastavení modulu Kredit a inkasa</span><span class="sxs-lookup"><span data-stu-id="e9628-133">Set up Credit and collections</span></span>](set-up-collections.md)
+[<span data-ttu-id="010df-133">Nastavení kreditu a inkas</span><span class="sxs-lookup"><span data-stu-id="010df-133">Set up Credit and collections</span></span>](set-up-collections.md)
 
-## <a name="set-up-payments-and-settlements"></a><span data-ttu-id="e9628-134">Nastavení plateb a vyrovnání</span><span class="sxs-lookup"><span data-stu-id="e9628-134">Set up payments and settlements</span></span>
+## <a name="set-up-payments-and-settlements"></a><span data-ttu-id="010df-134">Nastavení plateb a vyrovnání</span><span class="sxs-lookup"><span data-stu-id="010df-134">Set up payments and settlements</span></span>
 
-<span data-ttu-id="e9628-135">Přijměte různé typy plateb od odběratelů, jako například cizí směnky, hotovost, šeky, kreditní karty a elektronické platby.</span><span class="sxs-lookup"><span data-stu-id="e9628-135">Accept different types of payments from customers, such as bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> 
+<span data-ttu-id="010df-135">Přijměte různé typy plateb od odběratelů, jako například cizí směnky, hotovost, šeky, kreditní karty a elektronické platby.</span><span class="sxs-lookup"><span data-stu-id="010df-135">Accept different types of payments from customers, such as bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> 
 
 :::row:::
     :::column:::
-        - [<span data-ttu-id="e9628-136">Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy</span><span class="sxs-lookup"><span data-stu-id="e9628-136">Use a customer payment to settle multiple invoices that span multiple discount periods</span></span>](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
-        - [<span data-ttu-id="e9628-137">Centralizované platby pro modul Pohledávky</span><span class="sxs-lookup"><span data-stu-id="e9628-137">Centralized payments for Accounts receivable</span></span>](centralized-payments-accounts-receivable.md)
-        - [<span data-ttu-id="e9628-138">Vyrovnání částečné platby odběratele a konečné platby před datem slevy</span><span class="sxs-lookup"><span data-stu-id="e9628-138">Settle a partial customer payment and the final payment in full before the discount date</span></span>](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [<span data-ttu-id="e9628-139">Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy</span><span class="sxs-lookup"><span data-stu-id="e9628-139">Settle a partial customer payment before the discount date with a final payment after the discount date</span></span>](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+        - [<span data-ttu-id="010df-136">Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy</span><span class="sxs-lookup"><span data-stu-id="010df-136">Use a customer payment to settle multiple invoices that span multiple discount periods</span></span>](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+        - [<span data-ttu-id="010df-137">Centralizované platby pro modul Pohledávky</span><span class="sxs-lookup"><span data-stu-id="010df-137">Centralized payments for Accounts receivable</span></span>](centralized-payments-accounts-receivable.md)
+        - [<span data-ttu-id="010df-138">Vyrovnání částečné platby odběratele a konečné platby před datem slevy</span><span class="sxs-lookup"><span data-stu-id="010df-138">Settle a partial customer payment and the final payment in full before the discount date</span></span>](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+        - [<span data-ttu-id="010df-139">Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy</span><span class="sxs-lookup"><span data-stu-id="010df-139">Settle a partial customer payment before the discount date with a final payment after the discount date</span></span>](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
     :::column-end:::
     :::column:::
-        - [<span data-ttu-id="e9628-140">Vyrovnání částečné platby zákazníka, u níž jsou slevy pro dobropisy dodavatele</span><span class="sxs-lookup"><span data-stu-id="e9628-140">Settle a partial customer payment that has discounts on credit notes</span></span>](settle-partial-customer-payment-discounts-credit-notes.md)
-        - [<span data-ttu-id="e9628-141">Vyrovnání částečné platby zákazníka, u níž je více období slev</span><span class="sxs-lookup"><span data-stu-id="e9628-141">Settle a partial customer payment that has multiple discount periods</span></span>](settle-partial-customer-payment-multiple-discount-periods.md)
-        - [<span data-ttu-id="e9628-142">Refundace odběratelům</span><span class="sxs-lookup"><span data-stu-id="e9628-142">Reimburse customers</span></span>](reimburse-customers.md)
-        - [<span data-ttu-id="e9628-143">Platby částečných částek zákazníkům</span><span class="sxs-lookup"><span data-stu-id="e9628-143">Customer payments for a partial amount</span></span>](customer-payments-partial-amount.md)
+        - [<span data-ttu-id="010df-140">Vyrovnání částečné platby zákazníka, u níž jsou slevy pro dobropisy dodavatele</span><span class="sxs-lookup"><span data-stu-id="010df-140">Settle a partial customer payment that has discounts on credit notes</span></span>](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [<span data-ttu-id="010df-141">Vyrovnání částečné platby zákazníka, u níž je více období slev</span><span class="sxs-lookup"><span data-stu-id="010df-141">Settle a partial customer payment that has multiple discount periods</span></span>](settle-partial-customer-payment-multiple-discount-periods.md)
+        - [<span data-ttu-id="010df-142">Refundace odběratelům</span><span class="sxs-lookup"><span data-stu-id="010df-142">Reimburse customers</span></span>](reimburse-customers.md)
+        - [<span data-ttu-id="010df-143">Platby částečných částek zákazníkům</span><span class="sxs-lookup"><span data-stu-id="010df-143">Customer payments for a partial amount</span></span>](customer-payments-partial-amount.md)
     :::column-end:::
 :::row-end:::
 
 
-### <a name="additional-resources"></a><span data-ttu-id="e9628-144">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="e9628-144">Additional resources</span></span>
+### <a name="additional-resources"></a><span data-ttu-id="010df-144">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="010df-144">Additional resources</span></span>
 
-#### <a name="whats-new-and-in-development"></a><span data-ttu-id="e9628-145">Co je nového a na čem se pracuje</span><span class="sxs-lookup"><span data-stu-id="e9628-145">What's new and in development</span></span>
+#### <a name="whats-new-and-in-development"></a><span data-ttu-id="010df-145">Co je nového a na čem se pracuje</span><span class="sxs-lookup"><span data-stu-id="010df-145">What's new and in development</span></span>
 
-<span data-ttu-id="e9628-146">Přejděte na [Přehled Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují.</span><span class="sxs-lookup"><span data-stu-id="e9628-146">Go to the [Microsoft Dynamics 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned.</span></span> 
+<span data-ttu-id="010df-146">Přejděte na [Přehled Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují.</span><span class="sxs-lookup"><span data-stu-id="010df-146">Go to the [Microsoft Dynamics 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned.</span></span> 
 
-#### <a name="blogs"></a><span data-ttu-id="e9628-147">Blogy</span><span class="sxs-lookup"><span data-stu-id="e9628-147">Blogs</span></span>
+#### <a name="blogs"></a><span data-ttu-id="010df-147">Blogy</span><span class="sxs-lookup"><span data-stu-id="010df-147">Blogs</span></span>
 
-<span data-ttu-id="e9628-148">Názory, novinky a jiné informace o pohledávkách a jiných řešeních naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="e9628-148">You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
+<span data-ttu-id="010df-148">Názory, novinky a jiné informace o pohledávkách a jiných řešeních naleznete na [blogu Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) a [blogu Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="010df-148">You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
 
-<span data-ttu-id="e9628-149">[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.</span><span class="sxs-lookup"><span data-stu-id="e9628-149">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
+<span data-ttu-id="010df-149">[Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) představuje pro partnery Microsoft Dynamics jediný zdroj informací o tom, co je nového a co se chystá v rámci MBS Operations.</span><span class="sxs-lookup"><span data-stu-id="010df-149">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
 
-#### <a name="task-guides"></a><span data-ttu-id="e9628-150">Průvodci záznamem úloh</span><span class="sxs-lookup"><span data-stu-id="e9628-150">Task guides</span></span>
-<span data-ttu-id="e9628-151">V aplikaci Finance and Operations je k dispozici další nápověda v podobě průvodců záznamem úloh.</span><span class="sxs-lookup"><span data-stu-id="e9628-151">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="e9628-152">Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.</span><span class="sxs-lookup"><span data-stu-id="e9628-152">To access task guides, click the Help button on any page.</span></span>
+#### <a name="task-guides"></a><span data-ttu-id="010df-150">Průvodci záznamem úloh</span><span class="sxs-lookup"><span data-stu-id="010df-150">Task guides</span></span>
+<span data-ttu-id="010df-151">V aplikaci Finance and Operations je k dispozici další nápověda v podobě průvodců záznamem úloh.</span><span class="sxs-lookup"><span data-stu-id="010df-151">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="010df-152">Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.</span><span class="sxs-lookup"><span data-stu-id="010df-152">To access task guides, click the Help button on any page.</span></span>
 
-#### <a name="videos"></a><span data-ttu-id="e9628-153">Videa</span><span class="sxs-lookup"><span data-stu-id="e9628-153">Videos</span></span>
+#### <a name="videos"></a><span data-ttu-id="010df-153">Videa</span><span class="sxs-lookup"><span data-stu-id="010df-153">Videos</span></span>
 
-<span data-ttu-id="e9628-154">Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="e9628-154">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
+<span data-ttu-id="010df-154">Prohlédněte si instruktážní videa, která jsou nyní k dispozici na [kanálu Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="010df-154">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
 
 
 

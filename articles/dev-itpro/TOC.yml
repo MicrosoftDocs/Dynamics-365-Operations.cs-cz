@@ -106,10 +106,28 @@
           items:
             - name: Jazykové reference pro X++
               href: dev-ref/xpp-language-reference.md
-            - name: Proměnné X++ a datové typy
-              href: dev-ref/xpp-variables-data-types.md
-            - name: 'X++ příkazy, cykly a ošetření výjimek'
-              href: dev-ref/xpp-statements-loops.md
+            - name: Proměnné a datové typy
+              items:
+                - name: Proměnné
+                  href: dev-ref/xpp-variables-data-types.md
+                - name: Typy primitivních dat
+                  href: dev-ref/xpp-data-primitive.md
+                - name: Typy složených dat
+                  href: dev-ref/xpp-data-composite.md
+                - name: Třídy kolekcí
+                  href: dev-ref/xpp-data-collection.md
+                - name: Rozšířené datové typy
+                  href: dev-ref/xpp-data-edt.md
+            - name: 'Příkazy, cykly a ošetření výjimek'
+              items:
+                - name: 'Komentáře, použití a tisk'
+                  href: dev-ref/xpp-statements-loops.md
+                - name: Podmínkové příkazy
+                  href: dev-ref/xpp-conditional.md
+                - name: Cyklické příkazy
+                  href: dev-ref/xpp-loops.md
+                - name: Ošetření výjimek
+                  href: dev-ref/xpp-exceptions.md
             - name: Chyba připojení SQL - výjimka X++
               href: dev-ref/sql-connection-error.md
             - name: X++ operátory
@@ -120,6 +138,8 @@
               href: dev-ref/xpp-classes-methods.md
             - name: X++ výběr dat a manipulace
               href: dev-ref/xpp-data-query.md
+            - name: Přístup k datům pomocí SysDa API
+              href: dev-ref/sysda.md
             - name: X++ makra
               href: dev-ref/xpp-macros.md
             - name: X++ třidy atributů
@@ -438,6 +458,10 @@
           href: user-interface/page-layout.md
         - name: Font symbolů Dynamics
           href: user-interface/symbol-font.md
+        - name: Uložená zobrazení
+          href: ../fin-and-ops/get-started/saved-views.md
+        - name: 'Vytváření formulářů, které plně využívají uložená zobrazení'
+          href: user-interface/understanding-saved-views.md
         - name: Testovací formuláře používající vlastní vzory
           href: user-interface/testing-forms-custom-patterns.md
         - name: 'Vytvoření zabezpečených URL adres, které lze sdílet (hluboký odkaz)'
@@ -496,7 +520,7 @@
           href: user-interface/messaging-api-center-bar-details.md
         - name: 'Časté dotazy pro centrum zpráv, panel zpráv a podrobnosti o zprávách'
           href: user-interface/messaging-user.md
-    - name: Pokyny pro primární vzor formuláře
+    - name: Pokyny pro vzor formuláře
       items:
         - name: Vzory formuláře pro migrované formuláře
           href: user-interface/select-form-pattern.md
@@ -1129,7 +1153,7 @@
           href: migration-upgrade/on-prem-upgrade.md
     - name: Opravy hotfix
       items:
-        - name: "Stažení oprav hotfix z\_Lifecycle Services"
+        - name: Získání aktualizací z Lifecycle Services
           href: migration-upgrade/download-hotfix-lcs.md
         - name: Použití aktualizací na cloudová prostředí
           href: deployment/apply-deployable-package-system.md
@@ -1160,14 +1184,16 @@
       href: sysadmin/maintenance-mode.md
     - name: Předkonfigurované systémové účty
       href: sysadmin/pre-configured-system-accounts.md
-    - name: Exportovat B2B uživatele do Azure AD
+    - name: Export B2B uživatelů do Azure AD
       href: sysadmin/implement-b2b.md
+    - name: Nastavení časového limitu nečinné relace
+      href: sysadmin/session-idle-timeout.md
     - name: Zabezpečení na základě rolí
       href: sysadmin/role-based-security.md
       items:
         - name: Architektura zabezpečení
           href: sysadmin/security-architecture.md
-        - name: Sestavy zabezpečení
+        - name: Výchozí sestavy zabezpečení
           href: sysadmin/security-reports.md
         - name: Vytvoření nových uživatelů
           href: sysadmin/tasks/create-new-users.md
@@ -1310,6 +1336,8 @@
   items:
     - name: Získání podpory pro aplikace Finance and Operations a Lifecycle Services
       href: lifecycle-services/lcs-support.md
+    - name: Přehled podpory Dynamics 365
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
     - name: Získání podpory pro aplikaci Finance and Operations provozovanou prostřednictvím 21Vianet v Číně
       href: lifecycle-services/21vianet-support.md
     - name: Zadání lístku podpory Premier
