@@ -8,6 +8,12 @@
         - name: Co je nového a co se změnilo v aplikaci Talent
           href: whats-new.md
           items:
+            - name: 23. července 2019
+              href: whats-new-talent-july-24-2019.md
+            - name: 16. července 2019
+              href: whats-new-talent-july-16-2019.md
+            - name: 9. července 2019
+              href: whats-new-talent-july-9-2019.md
             - name: 2. července 2019
               href: whats-new-talent-july-2-2019.md
             - name: 25. června 2019
@@ -102,8 +108,6 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR a Common Data Service
           href: CoreHREntities.md
-        - name: Přístup k funkcím Preview
-          href: access-preview-feature.md
         - name: Získání podpory pro Talent
           href: talent-support.md
     - name: Nabírání zaměstnanců do vaší organizace s aplikací Attract
@@ -112,48 +116,68 @@
           href: attract-comprehensive-hiring.md
         - name: Funkce a možnosti aplikace Attract
           href: attract-overview.md
-        - name: Často kladené otázky k řešení LinkedIn
-          href: attract-linkedin-faq.md
-        - name: Konfigurace nastavení e-mailu
-          href: attract-configure-email-settings.md
-        - name: Vytvoření šablony procesu v aplikaci Attract
-          href: Process-templates-Attract.md
+        - name: Časté dotazy
+          items:
+            - name: Integrace se službou LinkedIn - Často kladené dotazy
+              href: attract-linkedin-faq.md
+        - name: Konfigurace nastavení systému
+          items:
+            - name: Konfigurace informací o společnosti
+              href: admin-settings-attract.md
+            - name: Nastavení oprávnění uživatele
+              href: security-attract.md
+            - name: Správa funkcí
+              href: access-preview-feature.md
+            - name: Nastavení kariérního webu
+              href: career-site.md
+            - name: Povolit integraci s Broadbean
+              href: attract-admin-job-board-settings.md
+            - name: Konfigurace nastavení e-mailu
+              href: attract-configure-email-settings.md
+            - name: Nastavení integrace s řešením LinkedIn
+              href: attract-admin-linkedin.md
+        - name: Vytvoření náborového procesu
+          items:
+            - name: Vytvoření šablony procesu
+              href: process-templates-attract.md
+            - name: Aktivity v procesech náboru
+              href: activities-attract.md
+            - name: Šablony e-mailů
+              href: email-templates.md
+            - name: Použití analytických sestav
+              href: analytic-reports.md
         - name: Vytvoření a publikování pracovních míst
-          href: Creating-jobs-Attract.md
-        - name: Nastavení integrace s řešením LinkedIn
-          href: attract-admin-linkedin.md
-        - name: Publikování pracovních míst na LinkedIn z aplikace Attract
-          href: attract-post-jobs-to-linkedin.md
-        - name: Publikování pracovních míst na Broadbean z aplikace Attract
-          href: posting-jobs-external.md
-        - name: Zazdrojování kandidátů s využitím skupin talentů
-          href: attract-talent-pools.md
-        - name: Zazdrojování kandidátů s využitím LinkedIn Recruiter
-          href: attract-linkedin-recruiter.md
-        - name: Aktivity v procesech náboru
-          href: activities-attract.md
-        - name: Plánování pohovoru a zpětná vazba
-          href: interview-scheduling-feedback.md
+          items:
+            - name: Vytvoření práce
+              href: creating-jobs-attract.md
+            - name: Publikování pracovních míst na LinkedIn
+              href: attract-post-jobs-to-linkedin.md
+            - name: Publikování pracovních míst na Broadbean
+              href: posting-jobs-external.md
+            - name: Uzavření práce
+              href: attract-close-job.md
+        - name: Zazdrojování kandidátů
+          items:
+            - name: Zazdrojování kandidátů se skupinami talentů
+              href: attract-talent-pools.md
+            - name: Zazdrojování kandidátů s využitím LinkedIn Recruiter
+              href: attract-linkedin-recruiter.md
+            - name: Sledování zdrojů kandidátů
+              href: source-tracking.md
+            - name: Chytrá doporučení
+              href: Intelligent-Recommendations.md
+        - name: Nastavení pohovorů
+          items:
+            - name: Plánování pohovoru a zpětná vazba
+              href: interview-scheduling-feedback.md
+        - name: Vytvoření nabídky
+          items:
+            - name: Nastavení správy nabídek
+              href: offer-setup.md
+            - name: 'Vytvoření, schválení a podpis nabídek'
+              href: creating-offers.md
         - name: Rozšiřitelnost v aplikaci Attract
           href: extensibility-attract.md
-        - name: Funkce kariérního webu v aplikaci Attract
-          href: career-site.md
-        - name: Nastavení správy nabídek
-          href: offer-setup.md
-        - name: 'Vytvoření, schválení a podpis nabídek'
-          href: creating-offers.md
-        - name: Šablony e-mailů
-          href: email-templates.md
-        - name: Správa rolí a zabezpečení v aplikaci Attract
-          href: security-attract.md
-        - name: Nastavení pro správu v aplikaci Attract
-          href: Admin-Settings-Attract.md
-        - name: Chytrá doporučení
-          href: Intelligent-Recommendations.md
-        - name: Sledování zdrojů pro profily a žádosti kandidátů
-          href: source-tracking.md
-        - name: Použití analytických sestav pro přehledy náborového procesu
-          href: analytic-reports.md
     - name: Uvítání nových zaměstnanců s aplikací Onboard
       items:
         - name: Začínáme s aplikací Onboard
@@ -186,6 +210,8 @@
               href: set-up-hr-parameters-across-legal-entities.md
             - name: Nastavení parametrů lidských zdrojů pro konkrétní společnost
               href: set-up-company-specific-hr-parameters.md
+            - name: Pole data a času v aplikaci Talent
+              href: date-time-fields-in-talent.md
             - name: Často kladené dotazy k akcím personálu
               href: personnel-actions-faq.md
             - name: Formalizace obchodních procesů

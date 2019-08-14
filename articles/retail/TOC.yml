@@ -4,6 +4,8 @@
   items:
     - name: Co je nového a co se změnilo
       href: get-started/whats-new.md
+    - name: Funkce Preview v Dynamics 365 for Retail 10.0.5
+      href: get-started/whats-new-10-0-5.md
     - name: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.3
       href: get-started/whats-new-10-0-3.md
     - name: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail 10.0.2
@@ -255,8 +257,10 @@
       href: Order-fulfillment-POS-setup.md
     - name: Zobrazení oznámení o objednávkách v POS
       href: Notifications-POS.md
-- name: Vrácení
+- name: Vratky
   items:
+    - name: Propojené refundace
+      href: dev-itpro/linked-refunds.md
     - name: Prodej a vrácení produktů nezahrnutých v sortimentu obchodu
       href: sell-return-outside-assortments.md
     - name: Konfigurace a zpracování výměny u vratek
@@ -323,7 +327,7 @@
       href: set-up-bar-code-masks.md
     - name: Nastavení sortimentu
       href: set-up-assortments.md
-    - name: Prodej a návrat produktů nezahrnutých v sortimentu obchodu
+    - name: Prodej a vrácení produktů nezahrnutých v sortimentu obchodu
       href: sell-return-outside-assortments.md
     - name: Výchozí nastavení objednávky pro dimenze a varianty produktu
       href: ../supply-chain/production-control/default-order-settings.md
