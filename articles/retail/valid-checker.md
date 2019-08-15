@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
+ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617313"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "1790414"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Kontrola konzistence maloobchodních transakcí
 
@@ -50,6 +50,7 @@ Dávkové zpracování **Ověřit transakce obchodu** kontroluje konzistenci tab
 - **Účet odběratele** - Ověřuje, že účet odběratele existuje v tabulce maloobchodních transakcí v HQ hlavních datech odběratele.
 - **Počet řádků** - Ověřuje, že počet řádků, jak je zaznamenaný v tabulce záhlaví transakcí, odpovídá počtu řádků v tabulce prodejních transakcí.
 - **Cena zahrnuje daň** – Ověřuje, zda je parametr **Cena zahrnuje daň** konzistentní napříč řádky transakce.
+- **Částka platby** - Ověřuje, že se záznamy platby shodují s částkou platby na záhlaví.
 - **Hrubá částka** – Ověřuje, že je hrubá částka v záhlaví součtem čistých částek na řádcích a částky daně.
 - **Čistá částka** – Ověřuje, že je čistá částka v záhlaví součtem čistých částek na řádcích.
 - **Nedoplatek/přeplatek** – Ověřuje, že rozdíl mezi hrubou částkou v záhlaví a částkou platby nepřekračuje konfiguraci maximálního nedoplatku/přeplatku.
@@ -58,6 +59,7 @@ Dávkové zpracování **Ověřit transakce obchodu** kontroluje konzistenci tab
 - **Položka dárkového poukazu** – Retail nepodporuje vrácení položek dárkového poukazu. Nicméně zůstatek na dárkovém poukazu lze vyplatit v hotovosti. U jakékoliv položky dárkového poukazu, která je zpracována jako řádek vrácení namísto řádku vyplacení v hotovosti, se proces zaúčtování výkazů nezdaří. Proces ověřování pro položky dárkového poukazu pomáhá zaručit, že jediné položky řádku vrácení dárkového poukazu v tabulce maloobchodních transakcí jsou řádky vyplacení dárkového poukazu.
 - **Záporná cena** – Ověřuje, že neexistují žádné řádky transakce s negativní cenou.
 - **Položka a varianta** – Ověřuje, že položky a varianty na řádcích transakce existují v hlavním souboru položek a variant.
+- **Částka daně** - Ověřuje, že se záznamy daně shodují s částkami daně na řádcích. 
 
 ## <a name="set-up-the-consistency-checker"></a>Nastavení kontroly konzistence
 
