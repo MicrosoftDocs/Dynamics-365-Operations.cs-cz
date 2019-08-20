@@ -1,53 +1,51 @@
 ---
 title: Nastavení srážkové daně
-description: Srážková daň je daň uvalená na dodavatele, která nevytváří transakce prodejní daně.
+description: Toto téma vysvětluje, jak nastavit srážkovou daň.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxWithholdTable, TaxWithholdData, TaxWithholdGroup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 382b6332665af2491563960a75d498a4f007aba8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 10e7018c79e54841d0729636b08ad475a94d20d5
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562781"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834727"
 ---
-# <a name="set-up-withholding-tax"></a><span data-ttu-id="d2752-103">Nastavení srážkové daně</span><span class="sxs-lookup"><span data-stu-id="d2752-103">Set up withholding tax</span></span>
+# <a name="set-up-withholding-tax"></a><span data-ttu-id="87e79-103">Nastavení srážkové daně</span><span class="sxs-lookup"><span data-stu-id="87e79-103">Set up withholding tax</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d2752-104">Srážková daň je daň uvalená na dodavatele, která nevytváří transakce prodejní daně.</span><span class="sxs-lookup"><span data-stu-id="d2752-104">Withholding tax is a tax on vendors that does not create sales tax transactions.</span></span> <span data-ttu-id="d2752-105">Srážková daň vypočtená pro platby dodavatelů je povinná.</span><span class="sxs-lookup"><span data-stu-id="d2752-105">Withholding tax that is calculated on vendor payments is a liability.</span></span> <span data-ttu-id="d2752-106">Pro zaúčtování srážkové daně jsou proto platnými účty pouze účty rozvahy nebo závazků.</span><span class="sxs-lookup"><span data-stu-id="d2752-106">Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax.</span></span> <span data-ttu-id="d2752-107">Tento průvodce úkolem popisuje, jak nastavit srážkovou daň.</span><span class="sxs-lookup"><span data-stu-id="d2752-107">This task guide demonstrates how to set up withholding tax.</span></span>
+<span data-ttu-id="87e79-104">Toto téma vysvětluje, jak nastavit srážkovou daň.</span><span class="sxs-lookup"><span data-stu-id="87e79-104">This topic explains how to set up withholding tax.</span></span> <span data-ttu-id="87e79-105">*Srážková daň* je daň uvalená na dodavatele, která nevytváří transakce prodejní daně.</span><span class="sxs-lookup"><span data-stu-id="87e79-105">*Withholding tax* is a tax on vendors that does not create sales tax transactions.</span></span> <span data-ttu-id="87e79-106">Srážková daň vypočtená pro platby dodavatelů je povinná.</span><span class="sxs-lookup"><span data-stu-id="87e79-106">Withholding tax that is calculated on vendor payments is a liability.</span></span> <span data-ttu-id="87e79-107">Pro zaúčtování srážkové daně jsou proto platnými účty pouze účty rozvahy nebo závazků.</span><span class="sxs-lookup"><span data-stu-id="87e79-107">Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax.</span></span> <span data-ttu-id="87e79-108">Tento průvodce úkolem popisuje, jak nastavit srážkovou daň.</span><span class="sxs-lookup"><span data-stu-id="87e79-108">This task guide demonstrates how to set up withholding tax.</span></span>
 
-1. <span data-ttu-id="d2752-108">Přejděte na Daň > Nepřímé daně > Srážková daň > Kódy srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="d2752-108">Go to Tax > Indirect taxes > Withholding tax > Withholding tax codes.</span></span>
-2. <span data-ttu-id="d2752-109">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d2752-109">Click New.</span></span>
-3. <span data-ttu-id="d2752-110">V poli Kód srážkové daně zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d2752-110">In the Withholding tax code field, type a value.</span></span>
-4. <span data-ttu-id="d2752-111">Do pole Název srážkové daně zadejte název kódu srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="d2752-111">In the Withholding tax name field, enter the name of the withholding tax code.</span></span>
-5. <span data-ttu-id="d2752-112">V poli Hlavní účet vyberte hlavní účet pro zaúčtování povinnosti srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="d2752-112">In the Main account field, select the main account for posting the withholding tax liability.</span></span>
-6. <span data-ttu-id="d2752-113">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d2752-113">Click Save.</span></span>
-7. <span data-ttu-id="d2752-114">Klepněte na položku Hodnoty.</span><span class="sxs-lookup"><span data-stu-id="d2752-114">Click Values.</span></span>
-8. <span data-ttu-id="d2752-115">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="d2752-115">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="d2752-116">V poli Hodnota zadejte procento používané pro výpočet srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="d2752-116">In the Value field, enter a percentage used for the calculation of the withholding tax.</span></span>
-10. <span data-ttu-id="d2752-117">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d2752-117">Click Save.</span></span>
-11. <span data-ttu-id="d2752-118">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d2752-118">Close the page.</span></span>
-12. <span data-ttu-id="d2752-119">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d2752-119">Click Save.</span></span>
-13. <span data-ttu-id="d2752-120">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d2752-120">Close the page.</span></span>
-14. <span data-ttu-id="d2752-121">Přejděte na Daň > Nepřímé daně > Srážková daň > Skupiny srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="d2752-121">Go to Tax > Indirect taxes > Withholding tax > Withholding tax groups.</span></span>
-15. <span data-ttu-id="d2752-122">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d2752-122">Click New.</span></span>
-16. <span data-ttu-id="d2752-123">Do pole Skupina srážkové daně zadejte identifikátor skupiny srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="d2752-123">In the Withholding tax group field, enter the identifier of the withholding tax group.</span></span>
-17. <span data-ttu-id="d2752-124">Do pole Popis zadejte název skupiny srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="d2752-124">In the Description field, enter the name of the withholding tax group.</span></span>
-18. <span data-ttu-id="d2752-125">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="d2752-125">In the list, mark the selected row.</span></span>
-19. <span data-ttu-id="d2752-126">V poli Kód srážkové daně vyberte kód srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="d2752-126">In the Withholding tax code field, select the withholding tax code.</span></span>
-20. <span data-ttu-id="d2752-127">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="d2752-127">In the list, click the link in the selected row.</span></span>
-21. <span data-ttu-id="d2752-128">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d2752-128">Click Save.</span></span>
+1. <span data-ttu-id="87e79-109">Přejděte na **Navigační podokno > Moduly > Daň > Nepřímé daně > Srážková daň > Kódy srážkové daně**.</span><span class="sxs-lookup"><span data-stu-id="87e79-109">Go to **Navigation pane > Modules > Tax > Indirect taxes > Withholding tax > Withholding tax codes**.</span></span>
+2. <span data-ttu-id="87e79-110">Zvolte **Nové**.</span><span class="sxs-lookup"><span data-stu-id="87e79-110">Select **New**.</span></span>
+3. <span data-ttu-id="87e79-111">V poli **Kód srážkové daně** zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="87e79-111">In the **Withholding tax code** field, type a value.</span></span>
+4. <span data-ttu-id="87e79-112">Do pole **Název srážkové daně** zadejte název kódu srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="87e79-112">In the **Withholding tax name** field, enter the name of the withholding tax code.</span></span>
+5. <span data-ttu-id="87e79-113">V poli **Hlavní účet** vyberte hlavní účet pro zaúčtování povinnosti srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="87e79-113">In the **Main account** field, select the main account for posting the withholding tax liability.</span></span>
+6. <span data-ttu-id="87e79-114">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="87e79-114">Select **Save**.</span></span>
+7. <span data-ttu-id="87e79-115">V seznamu vyberte **Hodnoty** a označte požadovaný záznam.</span><span class="sxs-lookup"><span data-stu-id="87e79-115">Select **Values** and mark the desired record in the list.</span></span>
+8. <span data-ttu-id="87e79-116">V poli **Hodnota** zadejte procento používané pro výpočet srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="87e79-116">In the **Value** field, enter a percentage used for the calculation of the withholding tax.</span></span>
+9. <span data-ttu-id="87e79-117">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="87e79-117">Select **Save**.</span></span>
+10. <span data-ttu-id="87e79-118">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="87e79-118">Close the page.</span></span>
+11. <span data-ttu-id="87e79-119">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="87e79-119">Select **Save**.</span></span>
+12. <span data-ttu-id="87e79-120">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="87e79-120">Close the page.</span></span>
+13. <span data-ttu-id="87e79-121">Přejděte na **Navigační podokno > Moduly > Daň > Nepřímé daně > Srážková daň > Skupiny srážkové daně**.</span><span class="sxs-lookup"><span data-stu-id="87e79-121">Go to **Navigation pane > Modules > Tax > Indirect taxes > Withholding tax > Withholding tax groups**.</span></span>
+14. <span data-ttu-id="87e79-122">Zvolte **Nové**.</span><span class="sxs-lookup"><span data-stu-id="87e79-122">Select **New**.</span></span>
+15. <span data-ttu-id="87e79-123">Do pole **Skupina srážkové daně** zadejte identifikátor skupiny srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="87e79-123">In the **Withholding tax group** field, enter the identifier of the withholding tax group.</span></span>
+16. <span data-ttu-id="87e79-124">Do pole **Popis** zadejte název skupiny srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="87e79-124">In the **Description** field, enter the name of the withholding tax group.</span></span>
+17. <span data-ttu-id="87e79-125">V poli **Kód srážkové daně** vyberte kód srážkové daně.</span><span class="sxs-lookup"><span data-stu-id="87e79-125">In the **Withholding tax code** field, select the withholding tax code.</span></span>
+18. <span data-ttu-id="87e79-126">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="87e79-126">Select **Save**.</span></span>
+19. <span data-ttu-id="87e79-127">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="87e79-127">Close the page.</span></span>
 

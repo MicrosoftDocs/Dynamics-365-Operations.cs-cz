@@ -10,79 +10,79 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c6f8c8dcf7a301c7fb2d095658ac96cd4a24dff
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a2f2e7d401e97aeab9dbc74f65e1a0c03eb0c880
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567001"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835395"
 ---
-# <a name="researchresolve-exceptions"></a><span data-ttu-id="aad5c-103">Prozkoumání/vyřešení výjimek</span><span class="sxs-lookup"><span data-stu-id="aad5c-103">Research/Resolve exceptions</span></span>
+# <a name="researchresolve-exceptions"></a><span data-ttu-id="e9371-103">Prozkoumání/vyřešení výjimek</span><span class="sxs-lookup"><span data-stu-id="e9371-103">Research/Resolve exceptions</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="aad5c-104">Zásady faktur dodavatele se spouští při zaúčtování faktury dodavatele na stránce Faktura dodavatele, a při otevření stránky s porušením zásad faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="aad5c-104">Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page.</span></span> <span data-ttu-id="aad5c-105">Můžete také konfigurovat workflow faktury dodavatele tak, aby spustila zásady faktury dodavatele při každém odeslání faktury do workflowu.</span><span class="sxs-lookup"><span data-stu-id="aad5c-105">You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow.</span></span> 
+<span data-ttu-id="e9371-104">Zásady faktur dodavatele se spouští při zaúčtování faktury dodavatele na stránce Faktura dodavatele, a při otevření stránky s porušením zásad faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="e9371-104">Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page.</span></span> <span data-ttu-id="e9371-105">Můžete také konfigurovat workflow faktury dodavatele tak, aby spustila zásady faktury dodavatele při každém odeslání faktury do workflowu.</span><span class="sxs-lookup"><span data-stu-id="e9371-105">You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow.</span></span> 
 
-<span data-ttu-id="aad5c-106">Zásady faktur dodavatele se nevztahují na faktury, které byly vytvořeny v registru faktur a deníku faktur.</span><span class="sxs-lookup"><span data-stu-id="aad5c-106">Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.</span></span> 
+<span data-ttu-id="e9371-106">Zásady faktur dodavatele se nevztahují na faktury, které byly vytvořeny v registru faktur a deníku faktur.</span><span class="sxs-lookup"><span data-stu-id="e9371-106">Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.</span></span> 
 
-<span data-ttu-id="aad5c-107">Ověření párování faktur nepoužívá zásady faktur dodavatele, ale namísto toho nastaví údaje na stránce s parametry závazků.</span><span class="sxs-lookup"><span data-stu-id="aad5c-107">Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.</span></span>
+<span data-ttu-id="e9371-107">Ověření párování faktur nepoužívá zásady faktur dodavatele, ale namísto toho nastaví údaje na stránce s parametry závazků.</span><span class="sxs-lookup"><span data-stu-id="e9371-107">Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.</span></span>
 
-<span data-ttu-id="aad5c-108">Tento záznam používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="aad5c-108">This recording uses the USMF demo company.</span></span> <span data-ttu-id="aad5c-109">Manažer závazků nebo osoba s rolí vedoucího účetnictví by prováděl tyto kroky.</span><span class="sxs-lookup"><span data-stu-id="aad5c-109">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="aad5c-110">Před prvním krokem ověřte, že je vybraný konfigurační klíč Párování faktur.</span><span class="sxs-lookup"><span data-stu-id="aad5c-110">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span>
+<span data-ttu-id="e9371-108">Tento záznam používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="e9371-108">This recording uses the USMF demo company.</span></span> <span data-ttu-id="e9371-109">Manažer závazků nebo osoba s rolí vedoucího účetnictví by prováděl tyto kroky.</span><span class="sxs-lookup"><span data-stu-id="e9371-109">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="e9371-110">Před prvním krokem ověřte, že je vybraný konfigurační klíč Párování faktur.</span><span class="sxs-lookup"><span data-stu-id="e9371-110">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span>
 
 
-## <a name="prepare-to-create-vendor-invoice-policies"></a><span data-ttu-id="aad5c-111">Příprava na vytvoření zásad faktur dodavatele</span><span class="sxs-lookup"><span data-stu-id="aad5c-111">Prepare to create vendor invoice policies</span></span>
-1. <span data-ttu-id="aad5c-112">Přejděte do nabídky Závazky > Nastavení > Parametry závazků.</span><span class="sxs-lookup"><span data-stu-id="aad5c-112">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
-2. <span data-ttu-id="aad5c-113">Klikněte na kartu Ověření faktury.</span><span class="sxs-lookup"><span data-stu-id="aad5c-113">Click the Invoice validation tab.</span></span>
-3. <span data-ttu-id="aad5c-114">Zaškrtněte nebo zrušte označení pole Automaticky aktualizovat stav záhlaví faktury.</span><span class="sxs-lookup"><span data-stu-id="aad5c-114">Select or clear the Automatically update invoice header status check box.</span></span>
-4. <span data-ttu-id="aad5c-115">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="aad5c-115">Click OK.</span></span>
-5. <span data-ttu-id="aad5c-116">V poli Zaúčtovat fakturu s odchylkami: vyberte požadovanou možnost.</span><span class="sxs-lookup"><span data-stu-id="aad5c-116">In the Post invoice with discrepancies field, select an option.</span></span>
-6. <span data-ttu-id="aad5c-117">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="aad5c-117">Close the page.</span></span>
-7. <span data-ttu-id="aad5c-118">Přejděte na Závazky > Nastavení zásad > Zásady faktur dodavatele.</span><span class="sxs-lookup"><span data-stu-id="aad5c-118">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
-8. <span data-ttu-id="aad5c-119">Klikněte na Parametry.</span><span class="sxs-lookup"><span data-stu-id="aad5c-119">Click Parameters.</span></span>
-9. <span data-ttu-id="aad5c-120">Klepněte na tlačítko btnAdd.</span><span class="sxs-lookup"><span data-stu-id="aad5c-120">Click btnAdd.</span></span>
-10. <span data-ttu-id="aad5c-121">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="aad5c-121">Close the page.</span></span>
+## <a name="prepare-to-create-vendor-invoice-policies"></a><span data-ttu-id="e9371-111">Příprava na vytvoření zásad faktur dodavatele</span><span class="sxs-lookup"><span data-stu-id="e9371-111">Prepare to create vendor invoice policies</span></span>
+1. <span data-ttu-id="e9371-112">Přejděte do nabídky Závazky > Nastavení > Parametry závazků.</span><span class="sxs-lookup"><span data-stu-id="e9371-112">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
+2. <span data-ttu-id="e9371-113">Klikněte na kartu Ověření faktury.</span><span class="sxs-lookup"><span data-stu-id="e9371-113">Click the Invoice validation tab.</span></span>
+3. <span data-ttu-id="e9371-114">Zaškrtněte nebo zrušte označení pole Automaticky aktualizovat stav záhlaví faktury.</span><span class="sxs-lookup"><span data-stu-id="e9371-114">Select or clear the Automatically update invoice header status check box.</span></span>
+4. <span data-ttu-id="e9371-115">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e9371-115">Click OK.</span></span>
+5. <span data-ttu-id="e9371-116">V poli Zaúčtovat fakturu s odchylkami: vyberte požadovanou možnost.</span><span class="sxs-lookup"><span data-stu-id="e9371-116">In the Post invoice with discrepancies field, select an option.</span></span>
+6. <span data-ttu-id="e9371-117">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e9371-117">Close the page.</span></span>
+7. <span data-ttu-id="e9371-118">Přejděte na Závazky > Nastavení zásad > Zásady faktur dodavatele.</span><span class="sxs-lookup"><span data-stu-id="e9371-118">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
+8. <span data-ttu-id="e9371-119">Klikněte na Parametry.</span><span class="sxs-lookup"><span data-stu-id="e9371-119">Click Parameters.</span></span>
+9. <span data-ttu-id="e9371-120">Klepněte na tlačítko btnAdd.</span><span class="sxs-lookup"><span data-stu-id="e9371-120">Click btnAdd.</span></span>
+10. <span data-ttu-id="e9371-121">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e9371-121">Close the page.</span></span>
 
-## <a name="create-policy-rule-types-for-vendor-invoices"></a><span data-ttu-id="aad5c-122">Vytvoření nebo aktualizace typů pro faktury dodavatele</span><span class="sxs-lookup"><span data-stu-id="aad5c-122">Create policy rule types for vendor invoices</span></span>
-1. <span data-ttu-id="aad5c-123">Přejděte na Závazky > Nastavení zásad > Typy pravidel zásad pro faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="aad5c-123">Go to Accounts payable > Policy setup > Vendor invoice policy rule types.</span></span>
-2. <span data-ttu-id="aad5c-124">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="aad5c-124">Click New.</span></span>
-3. <span data-ttu-id="aad5c-125">Zadejte hodnotu do pole Název pravidla.</span><span class="sxs-lookup"><span data-stu-id="aad5c-125">In the Rule name field, type a value.</span></span>
-4. <span data-ttu-id="aad5c-126">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="aad5c-126">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="aad5c-127">V poli Název dotazu kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="aad5c-127">In the Query name field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="aad5c-128">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="aad5c-128">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="aad5c-129">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="aad5c-129">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="aad5c-130">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="aad5c-130">Click Save.</span></span>
-9. <span data-ttu-id="aad5c-131">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="aad5c-131">Close the page.</span></span>
+## <a name="create-policy-rule-types-for-vendor-invoices"></a><span data-ttu-id="e9371-122">Vytvoření nebo aktualizace typů pro faktury dodavatele</span><span class="sxs-lookup"><span data-stu-id="e9371-122">Create policy rule types for vendor invoices</span></span>
+1. <span data-ttu-id="e9371-123">Přejděte na Závazky > Nastavení zásad > Typy pravidel zásad pro faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="e9371-123">Go to Accounts payable > Policy setup > Vendor invoice policy rule types.</span></span>
+2. <span data-ttu-id="e9371-124">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e9371-124">Click New.</span></span>
+3. <span data-ttu-id="e9371-125">Zadejte hodnotu do pole Název pravidla.</span><span class="sxs-lookup"><span data-stu-id="e9371-125">In the Rule name field, type a value.</span></span>
+4. <span data-ttu-id="e9371-126">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e9371-126">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="e9371-127">V poli Název dotazu kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="e9371-127">In the Query name field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="e9371-128">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e9371-128">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="e9371-129">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="e9371-129">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="e9371-130">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e9371-130">Click Save.</span></span>
+9. <span data-ttu-id="e9371-131">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e9371-131">Close the page.</span></span>
 
-## <a name="define-a-vendor-invoice-policy"></a><span data-ttu-id="aad5c-132">Definování zásad faktur dodavatele</span><span class="sxs-lookup"><span data-stu-id="aad5c-132">Define a vendor invoice policy</span></span>
-1. <span data-ttu-id="aad5c-133">Přejděte na Závazky > Nastavení zásad > Zásady faktur dodavatele.</span><span class="sxs-lookup"><span data-stu-id="aad5c-133">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
-2. <span data-ttu-id="aad5c-134">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="aad5c-134">Click New.</span></span>
-3. <span data-ttu-id="aad5c-135">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="aad5c-135">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="aad5c-136">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="aad5c-136">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="aad5c-137">Rozbalte nebo sbalte část Organizace zásad.</span><span class="sxs-lookup"><span data-stu-id="aad5c-137">Expand or collapse the Policy organizations section.</span></span>
-6. <span data-ttu-id="aad5c-138">Ve stromovém zobrazení vyberte systém Contoso Entertainment System USA.</span><span class="sxs-lookup"><span data-stu-id="aad5c-138">In the tree, select 'Contoso Entertainment System USA'.</span></span>
-7. <span data-ttu-id="aad5c-139">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="aad5c-139">Click Add.</span></span>
-8. <span data-ttu-id="aad5c-140">Rozbalte nebo sbalte část Pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="aad5c-140">Expand or collapse the Policy rules section.</span></span>
-9. <span data-ttu-id="aad5c-141">Klikněte na Vytvořit pravidlo zásad.</span><span class="sxs-lookup"><span data-stu-id="aad5c-141">Click Create policy rule.</span></span>
-10. <span data-ttu-id="aad5c-142">Zadejte hodnotu do pole Popis pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="aad5c-142">In the Policy rule description field, type a value.</span></span>
-11. <span data-ttu-id="aad5c-143">Klepněte na tlačítko Filtr.</span><span class="sxs-lookup"><span data-stu-id="aad5c-143">Click Filter.</span></span>
-12. <span data-ttu-id="aad5c-144">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="aad5c-144">Click Add.</span></span>
-13. <span data-ttu-id="aad5c-145">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="aad5c-145">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="aad5c-146">V poli Tabulka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="aad5c-146">In the Table field, click the drop-down button to open the lookup.</span></span>
-15. <span data-ttu-id="aad5c-147">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="aad5c-147">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="aad5c-148">V poli Odvozená tabulka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="aad5c-148">In the Derived table field, click the drop-down button to open the lookup.</span></span>
-17. <span data-ttu-id="aad5c-149">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="aad5c-149">In the list, click the link in the selected row.</span></span>
-18. <span data-ttu-id="aad5c-150">V poli Pole kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="aad5c-150">In the Field field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="aad5c-151">Zadejte hodnotu do pole Pole.</span><span class="sxs-lookup"><span data-stu-id="aad5c-151">In the Field field, type a value.</span></span>
-20. <span data-ttu-id="aad5c-152">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="aad5c-152">Close the page.</span></span>
-21. <span data-ttu-id="aad5c-153">Zadejte hodnotu do pole Kritéria.</span><span class="sxs-lookup"><span data-stu-id="aad5c-153">In the Criteria field, type a value.</span></span>
-22. <span data-ttu-id="aad5c-154">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="aad5c-154">Click OK.</span></span>
-23. <span data-ttu-id="aad5c-155">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="aad5c-155">Click OK.</span></span>
-24. <span data-ttu-id="aad5c-156">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="aad5c-156">Close the page.</span></span>
-25. <span data-ttu-id="aad5c-157">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="aad5c-157">Close the page.</span></span>
+## <a name="define-a-vendor-invoice-policy"></a><span data-ttu-id="e9371-132">Definování zásad faktur dodavatele</span><span class="sxs-lookup"><span data-stu-id="e9371-132">Define a vendor invoice policy</span></span>
+1. <span data-ttu-id="e9371-133">Přejděte na Závazky > Nastavení zásad > Zásady faktur dodavatele.</span><span class="sxs-lookup"><span data-stu-id="e9371-133">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
+2. <span data-ttu-id="e9371-134">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e9371-134">Click New.</span></span>
+3. <span data-ttu-id="e9371-135">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="e9371-135">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="e9371-136">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e9371-136">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="e9371-137">Rozbalte nebo sbalte část Organizace zásad.</span><span class="sxs-lookup"><span data-stu-id="e9371-137">Expand or collapse the Policy organizations section.</span></span>
+6. <span data-ttu-id="e9371-138">Ve stromovém zobrazení vyberte systém Contoso Entertainment System USA.</span><span class="sxs-lookup"><span data-stu-id="e9371-138">In the tree, select 'Contoso Entertainment System USA'.</span></span>
+7. <span data-ttu-id="e9371-139">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="e9371-139">Click Add.</span></span>
+8. <span data-ttu-id="e9371-140">Rozbalte nebo sbalte část Pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="e9371-140">Expand or collapse the Policy rules section.</span></span>
+9. <span data-ttu-id="e9371-141">Klikněte na Vytvořit pravidlo zásad.</span><span class="sxs-lookup"><span data-stu-id="e9371-141">Click Create policy rule.</span></span>
+10. <span data-ttu-id="e9371-142">Zadejte hodnotu do pole Popis pravidla zásad.</span><span class="sxs-lookup"><span data-stu-id="e9371-142">In the Policy rule description field, type a value.</span></span>
+11. <span data-ttu-id="e9371-143">Klepněte na tlačítko Filtr.</span><span class="sxs-lookup"><span data-stu-id="e9371-143">Click Filter.</span></span>
+12. <span data-ttu-id="e9371-144">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="e9371-144">Click Add.</span></span>
+13. <span data-ttu-id="e9371-145">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="e9371-145">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="e9371-146">V poli Tabulka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="e9371-146">In the Table field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="e9371-147">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="e9371-147">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="e9371-148">V poli Odvozená tabulka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="e9371-148">In the Derived table field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="e9371-149">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="e9371-149">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="e9371-150">V poli Pole kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="e9371-150">In the Field field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="e9371-151">Zadejte hodnotu do pole Pole.</span><span class="sxs-lookup"><span data-stu-id="e9371-151">In the Field field, type a value.</span></span>
+20. <span data-ttu-id="e9371-152">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e9371-152">Close the page.</span></span>
+21. <span data-ttu-id="e9371-153">Zadejte hodnotu do pole Kritéria.</span><span class="sxs-lookup"><span data-stu-id="e9371-153">In the Criteria field, type a value.</span></span>
+22. <span data-ttu-id="e9371-154">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e9371-154">Click OK.</span></span>
+23. <span data-ttu-id="e9371-155">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e9371-155">Click OK.</span></span>
+24. <span data-ttu-id="e9371-156">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e9371-156">Close the page.</span></span>
+25. <span data-ttu-id="e9371-157">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e9371-157">Close the page.</span></span>
 
