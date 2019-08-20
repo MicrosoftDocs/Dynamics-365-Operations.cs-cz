@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 23004930d2377a3d647435b53b6809cd500f44ac
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551476"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741348"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Návrh konfigurací elektronického výkaznictví pro analýzu příchozích dokumentů
 
@@ -30,7 +30,7 @@ Kroky v tomto postupu popisují postup návrhu konfigurace elektronického vykaz
 
 Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. 
 
-Tyto kroky lze dokončit za použití libovolné datové sady. Než začnete, stáhněte a uložte soubory uvedené v tématu Analýza příchozích dokumentů pro aktualizaci dat aplikace (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Soubory jsou: EFSTA model.xml, EFSTA format.xml Response1.xml Response2.xml, Response3.xml, Response4.xml.
+Tyto kroky lze dokončit za použití libovolné datové sady. Než začnete, stáhněte a uložte soubory uvedené v tématu Analýza příchozích dokumentů pro aktualizaci dat aplikace (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Soubory jsou: EFSTA model.xml, EFSTA format.xml Response1.xml Response2.xml, Response3.xml, Response4.xml.
 
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
     * Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako Aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního“.  
