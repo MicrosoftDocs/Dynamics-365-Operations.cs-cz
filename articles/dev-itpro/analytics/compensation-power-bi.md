@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8457182fee49e28256f2a1102ba77b2b4e89d5b2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fad076ae61da4845b65518f75747fec791b3b78c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548689"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848416"
 ---
 # <a name="compensation-power-bi-content"></a>Obsah kompenzací v Power BI
 
@@ -45,7 +45,7 @@ Sestavy, které jsou součástí obsahu **Kompenzace** v Power BI, mají grafy a
 | Analýza platů pozice      | Nejvyšší a nejnižší hodinová a stálá mzda, pozice s nejvyšší a nejnižší mzdou a pozice na plný úvazek a na částečný úvazek |
 | Analýza plánu kompenzací | Přihlášení zaměstnance podle vybrané zaměstnanecké výhody |
 
-Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 Následující data se používají k vyplňování sestav v obsahu **Kompenzace** v Power BI. Tato tabulka zobrazuje entity, na kterých je balíček obsahu založen.

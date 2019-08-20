@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
-ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
+ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625865"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849502"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Návrhář receptur v elektronickém výkaznictví
 
@@ -215,12 +215,12 @@ V následující tabulce jsou popsány funkce pro manipulaci s daty, které lze 
 | TODAY () | Vrátí aktuální datum relace aplikačního serveru Finance and Operations jako hodnotu data. | |
 | NULLDATE () | Vrátí hodnotu data **null**. | |
 | NULLDATETIME () | Vrátí hodnotu data a času **null**. | |
-| DATETIMEFORMAT (datum a čas, formát) | Převede zadanou hodnotu data a času na řetězec v zadaném formátu. (Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015 jako **"24-12-2015"** na základě zadaného vlastního formátu. |
-| DATETIMEFORMAT (datum a čas, jazyková verze) | Převede zadanou hodnotu data a času na řetězec v zadaném formátu a [jazykové verzi](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015, jako **"24.12.2015"**, na základě vybraného německého prostředí. |
+| DATETIMEFORMAT (datum a čas, formát) | Převede zadanou hodnotu data a času na řetězec v zadaném formátu. (Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015 jako **"24-12-2015"** na základě zadaného vlastního formátu. |
+| DATETIMEFORMAT (datum a čas, jazyková verze) | Převede zadanou hodnotu data a času na řetězec v zadaném formátu a [jazykové verzi](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** vrátí aktuální datum aplikačního serveru Finance and Operations, například 24. prosince 2015, jako **"24.12.2015"**, na základě vybraného německého prostředí. |
 | SESSIONTODAY () | Vrátí aktuální datum relace aplikace Finance and Operations jako hodnotu data. | |
 | SESSIONNOW () | Vrátí aktuální datum a čas relace aplikace Finance and Operations jako hodnotu data a času. | |
 | DATEFORMAT (datum, formát) | Vrátí znázornění řetězce zadaného data v zadaném formátu. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")**  vrátí aktuální datum aplikace Finance and Operations, například 24. prosince 2015 jako **"24-12-2015"** na základě zadaného vlastního formátu. |
-| DATEFORMAT (datum, formát, jazyková verze) | Převede zadanou hodnotu data na řetězec v zadaném formátu [jazykové verzi](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** vrátí aktuální datum aplikace Finance and Operations, například 24. prosince 2015, jako **"24.12.2015"**, na základě vybraného německého prostředí. |
+| DATEFORMAT (datum, formát, jazyková verze) | Převede zadanou hodnotu data na řetězec v zadaném formátu [jazykové verzi](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Informace o podporovaných formátech: [standardní](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) a [vlastní](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** vrátí aktuální datum aplikace Finance and Operations, například 24. prosince 2015, jako **"24.12.2015"**, na základě vybraného německého prostředí. |
 | DAYOFYEAR (datum) | Vrátí celočíselnou reprezentaci počtu dní mezi 1. lednem a zadaným datem. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** vrátí **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** vrátí **1**. |
 | DAYS (datum 1, datum 2) | Vrátí počet dní mezi prvním a druhým určeným datem. Vrátí kladnou hodnotu, pokud je první datum pozdější než druhé datum, vrátí **0** (nulu), když se první datum shoduje s druhým datem, nebo vrátí zápornou hodnotu, když je první datum dřívější než druhé. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** vrátí **-1**. |
 
@@ -649,12 +649,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>NUMBERFORMAT (číslo, formát)</td>
-<td>Vrátí znázornění řetězce zadaného čísla v zadaném formátu. (Informace o podporovaných formátech naleznete v tématu <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standardní</a> a <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">vlastní</a>.) Spuštění této funkce v rámci určuje jazykovou verzi, která je použita k formátování čísla.</td>
+<td>Vrátí znázornění řetězce zadaného čísla v zadaném formátu. (Informace o podporovaných formátech naleznete v tématu <a href="https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx">standardní</a> a <a href="https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx">vlastní</a>.) Spuštění této funkce v rámci určuje jazykovou verzi, která je použita k formátování čísla.</td>
 <td>Pro jazykovou verzi EN-US vrátí <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> hodnotu <strong>&quot;45,00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> vrátí hodnotu <strong>&quot;10&quot;</strong>.</td>
 </tr>
 <tr>
 <td>NUMBERFORMAT (číslo, formát, kultura)</td>
-<td>Vrátí znázornění řetězce daného čísla ve specifikovaném formátu a dané jazykové verzi. (Informace o podporovaných formátech: <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">standardní</a> a <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">vlastní</a>.).</td>
+<td>Vrátí znázornění řetězce daného čísla ve specifikovaném formátu a dané jazykové verzi. (Informace o podporovaných formátech: <a href="https://docs.microsoft.com/dotnet/standard/base-types/standard-numeric-format-strings">standardní</a> a <a href="https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings">vlastní</a>.).</td>
 <td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> vrací <strong>3,33</strong> zatímco <strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> vrací <strong>3,33</strong>.</td>
 </tr>
 <tr>

@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a190e15dc304f60739c80d75222830ee737c5a32
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5cfb2377ad290bff9c50819876d79a9d4b2a73d8
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548178"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848590"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 
@@ -45,10 +45,10 @@ Ať rozšíříte existující pracovní prostor aplikace nebo zadáte nový pra
 4. Volitelné: Přidejte rozšíření pro přizpůsobení zobrazení.
 
 > [!NOTE]
-> Další informace o postupu vytváření analytických sestav naleznete v tématu [Začínáme s Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Tato stránka je skvělý zdroj informací, které pomáhají vytvořit přinutit řešení generování analytických sestav.
+> Další informace o postupu vytváření analytických sestav naleznete v tématu [Začínáme s Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). Tato stránka je skvělý zdroj informací, které pomáhají vytvořit přinutit řešení generování analytických sestav.
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>Přidejte soubor .pbix jako prostředek
-Dříve než začnete, musíte vytvořit nebo získat sestavu Power BI, kterou vložíte do pracovního prostoru. Další informace o postupu vytváření analytických sestav naleznete v tématu [Začínáme s Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
+Dříve než začnete, musíte vytvořit nebo získat sestavu Power BI, kterou vložíte do pracovního prostoru. Další informace o postupu vytváření analytických sestav naleznete v tématu [Začínáme s Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
 
 Tento postup slouží k přidání souboru .pbix jako artefaktů projektu Visual Studio.
 

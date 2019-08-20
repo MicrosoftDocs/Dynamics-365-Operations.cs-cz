@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e704c27d7cea658be6fa06cc078488b0d5a3b0dc
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548759"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848488"
 ---
 # <a name="benefits-power-bi-content"></a>Obsah zaměstnaneckých výhod v Power BI
 
@@ -43,7 +43,7 @@ Sestavy, které jsou součástí obsahu **zaměstnaneckých výhod** v Power BI,
 | Přehled registrací k zaměstnaneckým výhodám | Nejvíce a nejméně registrované plány, registrace podle skupiny zaměstnanců a vybrané možnosti zaměstnaneckých výhod |
 | Zaměstnanecké výhody           | Přihlášení zaměstnance podle vybrané zaměstnanecké výhody                                                        |
 
-Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Grafy a dlaždice v těchto sestavách můžete filtrovat a ukotvit je na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 Následující data se používají k vyplňování sestav v obsahu **zaměstnaneckých výhod** v Power BI. Tato tabulka zobrazuje entity, na kterých je balíček obsahu založen.
