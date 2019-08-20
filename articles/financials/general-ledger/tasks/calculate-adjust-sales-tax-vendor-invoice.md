@@ -1,52 +1,46 @@
 ---
 title: Výpočet a úprava DPH na faktuře dodavatele
-description: Pokud původní zdrojový dokument zobrazí různé částky daně tak, jak se vypočítají, můžete je upravit před zaúčtováním.
+description: V tomto tématu je vysvětleno, jak upravit DPH u faktury dodavatele v aplikaci Dynamics 365 for Finance and Operations.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, VendTableLookup, TaxTmpWorkTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 803c038d907b68a3c72a83a3e035c4e08b8a8661
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 684529087d5348c9e02310f812f8aa6f64c6655f
+ms.sourcegitcommit: 016832198c306e8329ad21b5254e7d1cdff74c2f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545164"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862607"
 ---
-# <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a><span data-ttu-id="a3f46-103">Výpočet a úprava DPH na faktuře dodavatele</span><span class="sxs-lookup"><span data-stu-id="a3f46-103">Calculate and adjust sales tax on a vendor invoice</span></span>
+# <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a><span data-ttu-id="fb05b-103">Výpočet a úprava DPH na faktuře dodavatele</span><span class="sxs-lookup"><span data-stu-id="fb05b-103">Calculate and adjust sales tax on a vendor invoice</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a3f46-104">Pokud původní zdrojový dokument zobrazí různé částky daně tak, jak se vypočítají, můžete je upravit před zaúčtováním.</span><span class="sxs-lookup"><span data-stu-id="a3f46-104">If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting.</span></span> <span data-ttu-id="a3f46-105">Tento úkol používá ukázkovou společnost DEMF.</span><span class="sxs-lookup"><span data-stu-id="a3f46-105">This task uses the DEMF demo company.</span></span>
+<span data-ttu-id="fb05b-104">V tomto tématu je vysvětleno, jak upravit DPH u faktury dodavatele v aplikaci Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="fb05b-104">This topic explains how to adjust sales tax on a vendor invoice in Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="fb05b-105">Pokud původní zdrojový dokument zobrazí různé částky daně tak, jak se vypočítají, můžete je upravit před zaúčtováním.</span><span class="sxs-lookup"><span data-stu-id="fb05b-105">If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting.</span></span> <span data-ttu-id="fb05b-106">Tento úkol používá ukázkovou společnost DEMF.</span><span class="sxs-lookup"><span data-stu-id="fb05b-106">This task uses the DEMF demo company.</span></span>
 
-1. <span data-ttu-id="a3f46-106">Přejděte na Závazky > Faktury > Deník faktur.</span><span class="sxs-lookup"><span data-stu-id="a3f46-106">Go to Accounts payable > Invoices > Invoice journal.</span></span>
-2. <span data-ttu-id="a3f46-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="a3f46-107">Click New.</span></span>
-3. <span data-ttu-id="a3f46-108">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="a3f46-108">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="a3f46-109">V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="a3f46-109">In the Name field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="a3f46-110">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="a3f46-110">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="a3f46-111">Klikněte na možnost Řádky.</span><span class="sxs-lookup"><span data-stu-id="a3f46-111">Click Lines.</span></span>
-7. <span data-ttu-id="a3f46-112">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="a3f46-112">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="a3f46-113">Zadejte požadované hodnoty do pole Účet.</span><span class="sxs-lookup"><span data-stu-id="a3f46-113">In the Account field, specify the desired values.</span></span>
-9. <span data-ttu-id="a3f46-114">Zadejte hodnotu do pole Faktura.</span><span class="sxs-lookup"><span data-stu-id="a3f46-114">In the Invoice field, type a value.</span></span>
-10. <span data-ttu-id="a3f46-115">V poli Dobropis zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="a3f46-115">In the Credit field, enter a number.</span></span>
-11. <span data-ttu-id="a3f46-116">Zadejte požadované hodnoty do pole Protiúčet.</span><span class="sxs-lookup"><span data-stu-id="a3f46-116">In the Offset account field, specify the desired values.</span></span>
-12. <span data-ttu-id="a3f46-117">Klikněte na DPH.</span><span class="sxs-lookup"><span data-stu-id="a3f46-117">Click Sales tax.</span></span>
-13. <span data-ttu-id="a3f46-118">V poli Celková částka skutečné DPH zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="a3f46-118">In the Total actual sales tax amount field, enter a number.</span></span>
-14. <span data-ttu-id="a3f46-119">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="a3f46-119">Click OK.</span></span>
-15. <span data-ttu-id="a3f46-120">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="a3f46-120">Click Save.</span></span>
-16. <span data-ttu-id="a3f46-121">Klikněte na DPH.</span><span class="sxs-lookup"><span data-stu-id="a3f46-121">Click Sales tax.</span></span>
-17. <span data-ttu-id="a3f46-122">Na kartě Úprava lze upravit částky DPH podle kódu DPH.</span><span class="sxs-lookup"><span data-stu-id="a3f46-122">On the Adjustment tab, the sales tax amounts can be adjusted per sales tax code.</span></span>
-18. <span data-ttu-id="a3f46-123">Klikněte na Resetovat skutečné částky z vypočítaných částek.</span><span class="sxs-lookup"><span data-stu-id="a3f46-123">Click Reset actual from calculated amounts.</span></span>
-19. <span data-ttu-id="a3f46-124">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="a3f46-124">Click OK.</span></span>
-20. <span data-ttu-id="a3f46-125">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="a3f46-125">Click Save.</span></span>
+1. <span data-ttu-id="fb05b-107">V navigačním podokně přejděte na **Moduly > Závazky > Faktury > Deník faktury**.</span><span class="sxs-lookup"><span data-stu-id="fb05b-107">In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice journal**.</span></span>
+2. <span data-ttu-id="fb05b-108">Zvolte **Nové**.</span><span class="sxs-lookup"><span data-stu-id="fb05b-108">Select **New**.</span></span>
+3. <span data-ttu-id="fb05b-109">V poli **Název** nového řádku vyberte některou z možností v rozevírací nabídce.</span><span class="sxs-lookup"><span data-stu-id="fb05b-109">In the **Name** field of the new row, select an option in the drop-down menu.</span></span>
+4. <span data-ttu-id="fb05b-110">V podokně akcí zvolte **Řádky**.</span><span class="sxs-lookup"><span data-stu-id="fb05b-110">In the Action Pane, select **Lines**.</span></span>
+5. <span data-ttu-id="fb05b-111">Zadejte požadované hodnoty do pole **Účet**.</span><span class="sxs-lookup"><span data-stu-id="fb05b-111">In the **Account** field, specify the desired values.</span></span>
+6. <span data-ttu-id="fb05b-112">Zadejte hodnotu do pole **Faktura**.</span><span class="sxs-lookup"><span data-stu-id="fb05b-112">In the **Invoice** field, type a value.</span></span>
+7. <span data-ttu-id="fb05b-113">V poli **Dobropis** zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="fb05b-113">In the **Credit** field, enter a number.</span></span>
+8. <span data-ttu-id="fb05b-114">Zadejte požadované hodnoty do pole **Protiúčet**.</span><span class="sxs-lookup"><span data-stu-id="fb05b-114">In the **Offset account** field, specify the desired values.</span></span>
+9. <span data-ttu-id="fb05b-115">Vyberte **DPH**.</span><span class="sxs-lookup"><span data-stu-id="fb05b-115">Select **Sales tax**.</span></span>
+10. <span data-ttu-id="fb05b-116">V poli **Celková částka skutečné DPH** zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="fb05b-116">In the **Total actual sales tax amount** field, enter a number.</span></span>
+11. <span data-ttu-id="fb05b-117">Na kartě **Úprava** lze upravit částky DPH podle kódu DPH.</span><span class="sxs-lookup"><span data-stu-id="fb05b-117">On the **Adjustment** tab, the sales tax amounts can be adjusted per sales tax code.</span></span>
+12. <span data-ttu-id="fb05b-118">Vyberte **Resetovat skutečné částky z vypočítaných částek**.</span><span class="sxs-lookup"><span data-stu-id="fb05b-118">Select **Reset actual from calculated amounts**.</span></span>
+13. <span data-ttu-id="fb05b-119">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="fb05b-119">Select **OK**.</span></span>
+14. <span data-ttu-id="fb05b-120">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="fb05b-120">Select **Save**.</span></span>
 

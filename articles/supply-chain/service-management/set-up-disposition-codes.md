@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96fb8bd2ce7fed6962563773ad63a7a48943e1ca
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566487"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743180"
 ---
-# <a name="set-up-disposition-codes"></a><span data-ttu-id="99adc-103">Nastavit dispoziční kódy</span><span class="sxs-lookup"><span data-stu-id="99adc-103">Set up disposition codes</span></span> 
+# <a name="set-up-disposition-codes"></a><span data-ttu-id="b9b76-103">Nastavit dispoziční kódy</span><span class="sxs-lookup"><span data-stu-id="b9b76-103">Set up disposition codes</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="99adc-104">Můžete nastavit kódy dispozice k určení způsobu zpracování zboží vráceného zákazníkem.</span><span class="sxs-lookup"><span data-stu-id="99adc-104">You can set up disposition codes to specify how to process an item that is returned by a customer.</span></span> <span data-ttu-id="99adc-105">Můžete například vytvořit kód dispozice s názvem **opravit a vrátit**, čímž označíte, že vrácené zboží bude opraveno a poté vráceno zákazníkovi.</span><span class="sxs-lookup"><span data-stu-id="99adc-105">For example, create a disposition code named **Repair and return** to indicate that the returned item will be repaired and then returned to the customer.</span></span> <span data-ttu-id="99adc-106">Další příklady kódů dispozice, které se obvykle používají pro zboží vrácené zákazníky, naleznete v tématu [Určení způsobu likvidace vráceného zboží](specify-how-to-dispose-of-returned-items.md).</span><span class="sxs-lookup"><span data-stu-id="99adc-106">For more examples of disposition codes that are typically used for items that are returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).</span></span>
+<span data-ttu-id="b9b76-104">Můžete nastavit kódy dispozice k určení způsobu zpracování zboží vráceného zákazníkem.</span><span class="sxs-lookup"><span data-stu-id="b9b76-104">You can set up disposition codes to specify how to process an item that is returned by a customer.</span></span> <span data-ttu-id="b9b76-105">Můžete například vytvořit kód dispozice s názvem **opravit a vrátit**, čímž označíte, že vrácené zboží bude opraveno a poté vráceno zákazníkovi.</span><span class="sxs-lookup"><span data-stu-id="b9b76-105">For example, create a disposition code named **Repair and return** to indicate that the returned item will be repaired and then returned to the customer.</span></span> <span data-ttu-id="b9b76-106">Další příklady kódů dispozice, které se obvykle používají pro zboží vrácené zákazníky, naleznete v tématu [Určení způsobu likvidace vráceného zboží](specify-how-to-dispose-of-returned-items.md).</span><span class="sxs-lookup"><span data-stu-id="b9b76-106">For more examples of disposition codes that are typically used for items that are returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).</span></span>
 
-<span data-ttu-id="99adc-107">Můžete také nastavit kód příčiny vysvětlující, proč bylo zboží vráceno .</span><span class="sxs-lookup"><span data-stu-id="99adc-107">You can also set up a reason code to help explain why an item was returned.</span></span> <span data-ttu-id="99adc-108">Další informace o kódech důvodů naleznete v tématu [nastavení kódů důvodů vrácení](set-up-return-reason-code.md).</span><span class="sxs-lookup"><span data-stu-id="99adc-108">For more information about reason codes, see [Set up return reason code](set-up-return-reason-code.md).</span></span>
+<span data-ttu-id="b9b76-107">Můžete také nastavit kód příčiny vysvětlující, proč bylo zboží vráceno .</span><span class="sxs-lookup"><span data-stu-id="b9b76-107">You can also set up a reason code to help explain why an item was returned.</span></span> <span data-ttu-id="b9b76-108">Další informace o kódech důvodů naleznete v tématu [nastavení kódů důvodů vrácení](set-up-return-reason-code.md).</span><span class="sxs-lookup"><span data-stu-id="b9b76-108">For more information about reason codes, see [Set up return reason code](set-up-return-reason-code.md).</span></span>
 
-1.  <span data-ttu-id="99adc-109">Klepněte na tlačítko **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **Kódy likvidace**.</span><span class="sxs-lookup"><span data-stu-id="99adc-109">Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Disposition codes**.</span></span>
+1.  <span data-ttu-id="b9b76-109">Klepněte na tlačítko **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **Kódy likvidace**.</span><span class="sxs-lookup"><span data-stu-id="b9b76-109">Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Disposition codes**.</span></span>
 
-2.  <span data-ttu-id="99adc-110">Nový kód dispozice vytvoříte kliknutím na možnost **Nový** nebo stisknutím kláves CTRL+N.</span><span class="sxs-lookup"><span data-stu-id="99adc-110">Click **New** or press CTRL+N to create a new disposition code.</span></span>
+2.  <span data-ttu-id="b9b76-110">Nový kód dispozice vytvoříte kliknutím na možnost **Nový** nebo stisknutím kláves CTRL+N.</span><span class="sxs-lookup"><span data-stu-id="b9b76-110">Click **New** or press CTRL+N to create a new disposition code.</span></span>
 
-3.  <span data-ttu-id="99adc-111">Zadejte jedinečný, popisný název, vyberte akci a zadejte popis kódu dispozice.</span><span class="sxs-lookup"><span data-stu-id="99adc-111">Enter a unique, descriptive name, select an action, and enter a description for the disposition code.</span></span>
+3.  <span data-ttu-id="b9b76-111">Zadejte jedinečný, popisný název, vyberte akci a zadejte popis kódu dispozice.</span><span class="sxs-lookup"><span data-stu-id="b9b76-111">Enter a unique, descriptive name, select an action, and enter a description for the disposition code.</span></span>
 
-4.  <span data-ttu-id="99adc-112">Pokud chcete k tomuto dispozičními kódu přidružit jakékoli poplatky odběratele, klepněte na tlačítko **Poplatky** a otevřete formulář **Nastavení poplatků**.</span><span class="sxs-lookup"><span data-stu-id="99adc-112">If you want to associate any customer charges with this disposition code, click the **Charges** button to open the **Set up charges** form.</span></span>
+4.  <span data-ttu-id="b9b76-112">Pokud chcete k tomuto dispozičními kódu přidružit jakékoli poplatky odběratele, klepněte na tlačítko **Poplatky** a otevřete formulář **Nastavení poplatků**.</span><span class="sxs-lookup"><span data-stu-id="b9b76-112">If you want to associate any customer charges with this disposition code, click the **Charges** button to open the **Set up charges** form.</span></span>
 
-5.  <span data-ttu-id="99adc-113">Chcete-li definovat jakékoli externí kódy, které mají odpovídat vlastním dispozičním kódům vaší společnosti, klepněte na tlačítko **Externí kódy** a otevřete formulář **Externí kódy**.</span><span class="sxs-lookup"><span data-stu-id="99adc-113">If you want to define any external codes to match with the company's own disposition codes, click the **External codes** button to open the **External codes** form.</span></span>
+5.  <span data-ttu-id="b9b76-113">Chcete-li definovat jakékoli externí kódy, které mají odpovídat vlastním dispozičním kódům vaší společnosti, klepněte na tlačítko **Externí kódy** a otevřete formulář **Externí kódy**.</span><span class="sxs-lookup"><span data-stu-id="b9b76-113">If you want to define any external codes to match with the company's own disposition codes, click the **External codes** button to open the **External codes** form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="99adc-114">Viz také</span><span class="sxs-lookup"><span data-stu-id="99adc-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b9b76-114">Viz také</span><span class="sxs-lookup"><span data-stu-id="b9b76-114">See also</span></span>
 
-[<span data-ttu-id="99adc-115">Dispoziční kódy a kódy důvodu vrácení</span><span class="sxs-lookup"><span data-stu-id="99adc-115">Disposition codes and return reason codes</span></span>](disposition-and-return-reason-codes.md)
+[<span data-ttu-id="b9b76-115">Dispoziční kódy a kódy důvodu vrácení</span><span class="sxs-lookup"><span data-stu-id="b9b76-115">Disposition codes and return reason codes</span></span>](disposition-and-return-reason-codes.md)
 
-<span data-ttu-id="99adc-116">[Dispoziční kódy (formulář)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="99adc-116">[Disposition codes (form)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))</span></span>
+<span data-ttu-id="b9b76-116">[Dispoziční kódy (formulář)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="b9b76-116">[Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span></span>
 
-<span data-ttu-id="99adc-117">[Automatické náklady (formulář)](https://technet.microsoft.com/en-us/library/aa582856\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="99adc-117">[Auto charges (form)](https://technet.microsoft.com/en-us/library/aa582856\(v=ax.60\))</span></span>
+<span data-ttu-id="b9b76-117">[Automatické náklady (formulář)](https://technet.microsoft.com/library/aa582856\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="b9b76-117">[Auto charges (form)](https://technet.microsoft.com/library/aa582856\(v=ax.60\))</span></span>
 
-<span data-ttu-id="99adc-118">[Externí kódy (formulář)](https://technet.microsoft.com/en-us/library/aa583814\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="99adc-118">[External codes (form)](https://technet.microsoft.com/en-us/library/aa583814\(v=ax.60\))</span></span>
+<span data-ttu-id="b9b76-118">[Externí kódy (formulář)](https://technet.microsoft.com/library/aa583814\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="b9b76-118">[External codes (form)](https://technet.microsoft.com/library/aa583814\(v=ax.60\))</span></span>
 
   
 

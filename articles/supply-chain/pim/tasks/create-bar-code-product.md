@@ -1,53 +1,45 @@
 ---
 title: Vytvoření čárového kódu pro produkt
-description: Tato procedura ukazuje, jak ručně vytvořit čárový kód pomocí čísla položky M0001 jako příklad.
+description: Toto téma ukazuje, jak ručně vytvořit čárový kód pomocí čísla položky M0001 jako příklad.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ae2765a125045d60566267d01e380069d5d527c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55801b2355eeee7dc136a1812a68e825b99098a4
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568597"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844938"
 ---
-# <a name="create-a-bar-code-for-a-product"></a><span data-ttu-id="4123f-103">Vytvoření čárového kódu pro produkt</span><span class="sxs-lookup"><span data-stu-id="4123f-103">Create a bar code for a product</span></span>
+# <a name="create-a-bar-code-for-a-product"></a><span data-ttu-id="42b8f-103">Vytvoření čárového kódu pro produkt</span><span class="sxs-lookup"><span data-stu-id="42b8f-103">Create a bar code for a product</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="4123f-104">Tato procedura ukazuje, jak ručně vytvořit čárový kód pomocí čísla položky M0001 jako příklad.</span><span class="sxs-lookup"><span data-stu-id="4123f-104">This procedure shows how to manually create a bar code using the item number M0001 as an example.</span></span> <span data-ttu-id="4123f-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="4123f-105">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="42b8f-104">Toto téma ukazuje, jak ručně vytvořit čárový kód pomocí čísla položky M0001 jako příklad.</span><span class="sxs-lookup"><span data-stu-id="42b8f-104">This topic shows how to manually create a bar code using the item number M0001 as an example.</span></span> <span data-ttu-id="42b8f-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="42b8f-105">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="4123f-106">Klikněte na možnost Údržba uvolněného produktu.</span><span class="sxs-lookup"><span data-stu-id="4123f-106">Click Released product maintenance.</span></span>
-2. <span data-ttu-id="4123f-107">Klepněte na možnost Uvolněné produkty.</span><span class="sxs-lookup"><span data-stu-id="4123f-107">Click Released products.</span></span>
-3. <span data-ttu-id="4123f-108">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="4123f-108">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="4123f-109">V podokně akcí klikněte na možnost Spravovat sklad.</span><span class="sxs-lookup"><span data-stu-id="4123f-109">On the Action Pane, click Manage inventory.</span></span>
-5. <span data-ttu-id="4123f-110">Klikněte na Čárové kódy.</span><span class="sxs-lookup"><span data-stu-id="4123f-110">Click Bar codes.</span></span>
-6. <span data-ttu-id="4123f-111">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="4123f-111">Click New.</span></span>
-7. <span data-ttu-id="4123f-112">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="4123f-112">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="4123f-113">V poli Nastavení čárového kódu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4123f-113">In the Barcode setup field, enter or select a value.</span></span>
-9. <span data-ttu-id="4123f-114">V poli Čárový kód zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4123f-114">In the Bar code field, enter or select a value.</span></span>
-10. <span data-ttu-id="4123f-115">Zadejte hodnotu do pole Čárový kód.</span><span class="sxs-lookup"><span data-stu-id="4123f-115">In the Bar code field, type a value.</span></span>
-    * <span data-ttu-id="4123f-116">Stiskněte klávesu Tab.</span><span class="sxs-lookup"><span data-stu-id="4123f-116">Press the Tab key.</span></span>  
-11. <span data-ttu-id="4123f-117">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="4123f-117">Close the page.</span></span>
-12. <span data-ttu-id="4123f-118">Zadejte číslo do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="4123f-118">In the Quantity field, enter a number.</span></span>
-13. <span data-ttu-id="4123f-119">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="4123f-119">Click Save.</span></span>
-    * <span data-ttu-id="4123f-120">Když klepnete na tlačítko Uložit, je spuštěna kontrola čárového kódu a v takovém případě se zobrazí chybová zpráva s informací, že očekávaná kontrolní číslice je 8, ale byla nalezena 3.</span><span class="sxs-lookup"><span data-stu-id="4123f-120">When you click Save, the barcode check is run, and in this case it will display an error stating that the expected check digit is 8, but that 3 was found.</span></span> <span data-ttu-id="4123f-121">Ručně aktualizujte číslo čárového kódu, aby bylo na konci číslo 8.</span><span class="sxs-lookup"><span data-stu-id="4123f-121">Manually update the barcode number so that 8 is at the end.</span></span>  
-14. <span data-ttu-id="4123f-122">V poli Čárový kód zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4123f-122">In the Bar code field, enter or select a value.</span></span>
-15. <span data-ttu-id="4123f-123">Zadejte hodnotu do pole Čárový kód.</span><span class="sxs-lookup"><span data-stu-id="4123f-123">In the Bar code field, type a value.</span></span>
-    * <span data-ttu-id="4123f-124">Stiskněte klávesu Tab.</span><span class="sxs-lookup"><span data-stu-id="4123f-124">Press the Tab key.</span></span>  
-16. <span data-ttu-id="4123f-125">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="4123f-125">Close the page.</span></span>
-17. <span data-ttu-id="4123f-126">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="4123f-126">Click Save.</span></span>
-18. <span data-ttu-id="4123f-127">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="4123f-127">Close the page.</span></span>
+1. <span data-ttu-id="42b8f-106">Na domovské stránce vyberte **Údržba uvolněného produktu**.</span><span class="sxs-lookup"><span data-stu-id="42b8f-106">Select **Released product maintenance** on the homepage.</span></span>
+2. <span data-ttu-id="42b8f-107">Přejděte na **Produkty > Vydané produkty** v části **Odkazy**.</span><span class="sxs-lookup"><span data-stu-id="42b8f-107">Go to **Products > Released products** under the **Links** section.</span></span>
+3. <span data-ttu-id="42b8f-108">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="42b8f-108">In the list, find and select the desired record.</span></span> <span data-ttu-id="42b8f-109">V tomto příkladu vyberte číslo položky **M0001**.</span><span class="sxs-lookup"><span data-stu-id="42b8f-109">For this example, select item number **M0001**.</span></span>
+4. <span data-ttu-id="42b8f-110">V podokně akcí klikněte na možnost **Spravovat sklad**.</span><span class="sxs-lookup"><span data-stu-id="42b8f-110">On the Action Pane, select **Manage inventory**.</span></span>
+5. <span data-ttu-id="42b8f-111">Vyberte **Čárové kódy**.</span><span class="sxs-lookup"><span data-stu-id="42b8f-111">Select **Bar codes**.</span></span>
+6. <span data-ttu-id="42b8f-112">Zvolte **Nové**.</span><span class="sxs-lookup"><span data-stu-id="42b8f-112">Select **New**.</span></span>
+7. <span data-ttu-id="42b8f-113">V seznamu níže označte vybraný řádek, který je vytvořen.</span><span class="sxs-lookup"><span data-stu-id="42b8f-113">Mark the selected row that is created in the list below.</span></span>
+8. <span data-ttu-id="42b8f-114">V poli **Nastavení čárového kódu** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="42b8f-114">In the **Barcode setup** field, enter or select a value.</span></span>
+9. <span data-ttu-id="42b8f-115">V poli **Čárový kód** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="42b8f-115">In the **Bar code** field, enter or select a value.</span></span>
+10. <span data-ttu-id="42b8f-116">Do pole **Čárový kód** zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="42b8f-116">In the **Bar code** field, type a value.</span></span>  
+11. <span data-ttu-id="42b8f-117">Zadejte číslo do pole **Množství**.</span><span class="sxs-lookup"><span data-stu-id="42b8f-117">In the **Quantity** field, enter a number.</span></span>
+12. <span data-ttu-id="42b8f-118">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="42b8f-118">Select **Save**.</span></span>
+13. <span data-ttu-id="42b8f-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="42b8f-119">Close the page.</span></span> 
 

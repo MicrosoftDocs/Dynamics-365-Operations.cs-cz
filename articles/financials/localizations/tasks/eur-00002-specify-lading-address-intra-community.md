@@ -10,66 +10,66 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, TransportationDocument, LogisticsPostalAddress, SysLookupMultiSelectGrid,  VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, Intrastat, SysQueryForm
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4db22444bee1590770a47ca5946941b530ae85ce
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6eea2a905a59842b6f39c5b1e1c78ae6801b28e0
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564409"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852712"
 ---
-# <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a><span data-ttu-id="3d90f-103">EUR-00002 Zadání adresy nakládky pro intrakomunitární transakci</span><span class="sxs-lookup"><span data-stu-id="3d90f-103">EUR-00002 Specifying a lading address for an intra-community transaction</span></span>
+# <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a><span data-ttu-id="d3f7c-103">EUR-00002 Zadání adresy nakládky pro intrakomunitární transakci</span><span class="sxs-lookup"><span data-stu-id="d3f7c-103">EUR-00002 Specifying a lading address for an intra-community transaction</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="3d90f-104">Tato procedura ukazuje, jak zadat adresu nakládky pro interní obchodní transakci.</span><span class="sxs-lookup"><span data-stu-id="3d90f-104">This procedure shows how to specify a lading address for an intra-community trade transaction.</span></span> <span data-ttu-id="3d90f-105">Německá firma si například objedná zboží od dodavatele s firemní adresou v Německu.</span><span class="sxs-lookup"><span data-stu-id="3d90f-105">For example, a Germany company orders items from a vendor with a German business address.</span></span> <span data-ttu-id="3d90f-106">Tento dodavatel má sklad v Itálii a odtud dodává zboží.</span><span class="sxs-lookup"><span data-stu-id="3d90f-106">This vendor has a warehouse in Italy and ships the items from there.</span></span> <span data-ttu-id="3d90f-107">Tato dodávka musí být vykázána v Intrastatu.</span><span class="sxs-lookup"><span data-stu-id="3d90f-107">This delivery must be reported in the Intrastat.</span></span> <span data-ttu-id="3d90f-108">Stejné chování platí pro vrácené položky odběratele.</span><span class="sxs-lookup"><span data-stu-id="3d90f-108">The same behavior is valid for customer returns.</span></span>
-<span data-ttu-id="3d90f-109">Postup se vztahuje na všechny evropské země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="3d90f-109">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="3d90f-110">Úkol byl vytvořen za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu.</span><span class="sxs-lookup"><span data-stu-id="3d90f-110">The task was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="3d90f-111">Před dokončením této procedury je nutné nakonfigurovat výkaznictví Intrastat.</span><span class="sxs-lookup"><span data-stu-id="3d90f-111">Before you can complete this procedure, you must configure Intrastat reporting.</span></span> <span data-ttu-id="3d90f-112">Tento postup je určen pouze pro účetní.</span><span class="sxs-lookup"><span data-stu-id="3d90f-112">This procedure is intended for accountants.</span></span> <span data-ttu-id="3d90f-113">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="3d90f-113">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="d3f7c-104">Tato procedura ukazuje, jak zadat adresu nakládky pro interní obchodní transakci.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-104">This procedure shows how to specify a lading address for an intra-community trade transaction.</span></span> <span data-ttu-id="d3f7c-105">Německá firma si například objedná zboží od dodavatele s firemní adresou v Německu.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-105">For example, a Germany company orders items from a vendor with a German business address.</span></span> <span data-ttu-id="d3f7c-106">Tento dodavatel má sklad v Itálii a odtud dodává zboží.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-106">This vendor has a warehouse in Italy and ships the items from there.</span></span> <span data-ttu-id="d3f7c-107">Tato dodávka musí být vykázána v Intrastatu.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-107">This delivery must be reported in the Intrastat.</span></span> <span data-ttu-id="d3f7c-108">Stejné chování platí pro vrácené položky odběratele.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-108">The same behavior is valid for customer returns.</span></span>
+<span data-ttu-id="d3f7c-109">Postup se vztahuje na všechny evropské země/oblasti.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-109">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="d3f7c-110">Úkol byl vytvořen za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-110">The task was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="d3f7c-111">Před dokončením této procedury je nutné nakonfigurovat výkaznictví Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-111">Before you can complete this procedure, you must configure Intrastat reporting.</span></span> <span data-ttu-id="d3f7c-112">Tento postup je určen pouze pro účetní.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-112">This procedure is intended for accountants.</span></span> <span data-ttu-id="d3f7c-113">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-113">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. <span data-ttu-id="3d90f-114">Přejděte na Závazky > Nákupní objednávky > Všechny nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="3d90f-114">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="3d90f-115">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="3d90f-115">Click New.</span></span>
-3. <span data-ttu-id="3d90f-116">Zadání nebo výběr hodnoty</span><span class="sxs-lookup"><span data-stu-id="3d90f-116">Enter or select a value</span></span>
-    * <span data-ttu-id="3d90f-117">Vyberte například DE-001.</span><span class="sxs-lookup"><span data-stu-id="3d90f-117">For example, select DE-001.</span></span> <span data-ttu-id="3d90f-118">Tento dodavatel má adresu firmy v Německu.</span><span class="sxs-lookup"><span data-stu-id="3d90f-118">This vendor has a German business address.</span></span>  
-4. <span data-ttu-id="3d90f-119">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="3d90f-119">Click OK.</span></span>
-5. <span data-ttu-id="3d90f-120">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="3d90f-120">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="3d90f-121">V poli Číslo zboží zadejte nebo vyberte hodnotu D0001.</span><span class="sxs-lookup"><span data-stu-id="3d90f-121">In the Item number field, enter or select a value D0001.</span></span>
-7. <span data-ttu-id="3d90f-122">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="3d90f-122">Click Save.</span></span>
-8. <span data-ttu-id="3d90f-123">V podokně akcí klikněte na možnost Přijmout.</span><span class="sxs-lookup"><span data-stu-id="3d90f-123">On the Action Pane, click Receive.</span></span>
-9. <span data-ttu-id="3d90f-124">Klikněte na Podrobnosti přepravy.</span><span class="sxs-lookup"><span data-stu-id="3d90f-124">Click Transportation details.</span></span>
-10. <span data-ttu-id="3d90f-125">Do pole Datum a čas nakládky zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="3d90f-125">In the Loading date and time field, enter a date and time.</span></span>
-11. <span data-ttu-id="3d90f-126">Klikněte na Přidat adresu.</span><span class="sxs-lookup"><span data-stu-id="3d90f-126">Click Add address.</span></span>
-12. <span data-ttu-id="3d90f-127">Klepněte na tlačítko Nový a vytvořte novou adresu s účelem Nakládka.</span><span class="sxs-lookup"><span data-stu-id="3d90f-127">Click New and create new address with purpose Lading.</span></span>
-13. <span data-ttu-id="3d90f-128">Do pole Název nebo popis zadejte Italština.</span><span class="sxs-lookup"><span data-stu-id="3d90f-128">In the Name or description field, type 'Italian'.</span></span>
-14. <span data-ttu-id="3d90f-129">Vyberte Nakládka jako hodnotu.</span><span class="sxs-lookup"><span data-stu-id="3d90f-129">Select Lading as the value.</span></span>
-    * <span data-ttu-id="3d90f-130">Všimněte si, že účel adresy musí být Nakládka.</span><span class="sxs-lookup"><span data-stu-id="3d90f-130">Note that that address purpose must be Lading.</span></span>  
-15. <span data-ttu-id="3d90f-131">V poli Země/oblast zadejte nebo vyberte hodnotu ITA.</span><span class="sxs-lookup"><span data-stu-id="3d90f-131">In the Country/region field, enter or select a value ITA.</span></span>
-16. <span data-ttu-id="3d90f-132">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="3d90f-132">Click Save.</span></span>
-17. <span data-ttu-id="3d90f-133">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="3d90f-133">Close the page.</span></span>
-18. <span data-ttu-id="3d90f-134">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="3d90f-134">Click Save.</span></span>
-    * <span data-ttu-id="3d90f-135">Ověřte správnost adresy nakládky.</span><span class="sxs-lookup"><span data-stu-id="3d90f-135">Verify that the lading address is correct.</span></span>  
-19. <span data-ttu-id="3d90f-136">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="3d90f-136">Close the page.</span></span>
-20. <span data-ttu-id="3d90f-137">V podokně akcí klikněte na položku Nákup.</span><span class="sxs-lookup"><span data-stu-id="3d90f-137">On the Action Pane, click Purchase.</span></span>
-21. <span data-ttu-id="3d90f-138">Klikněte na tlačítko Potvrdit.</span><span class="sxs-lookup"><span data-stu-id="3d90f-138">Click Confirm.</span></span>
-22. <span data-ttu-id="3d90f-139">V podokně akcí klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="3d90f-139">On the Action Pane, click Invoice.</span></span>
-23. <span data-ttu-id="3d90f-140">Klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="3d90f-140">Click Invoice.</span></span>
-24. <span data-ttu-id="3d90f-141">Zadejte hodnotu do pole Číslo.</span><span class="sxs-lookup"><span data-stu-id="3d90f-141">In the Number field, type a value.</span></span>
-25. <span data-ttu-id="3d90f-142">Do pole Datum faktury zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="3d90f-142">In the Invoice date field, enter a date.</span></span>
-26. <span data-ttu-id="3d90f-143">Kliknutím na Výchozí od: Množství v příjemce produktu otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="3d90f-143">Click Default from: Product receipt quantity to open the drop dialog.</span></span>
-27. <span data-ttu-id="3d90f-144">V poli Výchozí množství pro řádky vyberte Objednané množství.</span><span class="sxs-lookup"><span data-stu-id="3d90f-144">In the Default quantity for lines field, select 'Ordered quantity'.</span></span>
-28. <span data-ttu-id="3d90f-145">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="3d90f-145">Click OK.</span></span>
-29. <span data-ttu-id="3d90f-146">Klikněte na Podrobnosti přepravy.</span><span class="sxs-lookup"><span data-stu-id="3d90f-146">Click Transportation details.</span></span>
-    * <span data-ttu-id="3d90f-147">Ověřte, že zboží bylo dodáno z Itálie.</span><span class="sxs-lookup"><span data-stu-id="3d90f-147">Verify that goods were shipped from Italy.</span></span> <span data-ttu-id="3d90f-148">V případě potřeby můžete upravit podrobnosti o nakládce.</span><span class="sxs-lookup"><span data-stu-id="3d90f-148">If necessary, you can edit the lading details.</span></span>  
-30. <span data-ttu-id="3d90f-149">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="3d90f-149">Close the page.</span></span>
-31. <span data-ttu-id="3d90f-150">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="3d90f-150">Click Post.</span></span>
-32. <span data-ttu-id="3d90f-151">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="3d90f-151">Close the page.</span></span>
-33. <span data-ttu-id="3d90f-152">Přejděte na Daň > Deklarace > Zahraniční obchod > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="3d90f-152">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
-34. <span data-ttu-id="3d90f-153">Klepněte na položku Převod.</span><span class="sxs-lookup"><span data-stu-id="3d90f-153">Click Transfer.</span></span>
-35. <span data-ttu-id="3d90f-154">Vyberte možnost Ano v poli Tisk faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="3d90f-154">Select Yes in the Vendor invoice field.</span></span>
-36. <span data-ttu-id="3d90f-155">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="3d90f-155">Click OK.</span></span>
-37. <span data-ttu-id="3d90f-156">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="3d90f-156">Click the General tab.</span></span>
-    * <span data-ttu-id="3d90f-157">Vyhledejte nově vytvořený řádek a ověřte, že odesílatel dodal zboží z Itálie.</span><span class="sxs-lookup"><span data-stu-id="3d90f-157">Find a newly created line and verify that the sender shipped the goods from Italy.</span></span>  
+1. <span data-ttu-id="d3f7c-114">Přejděte na Závazky > Nákupní objednávky > Všechny nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-114">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="d3f7c-115">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-115">Click New.</span></span>
+3. <span data-ttu-id="d3f7c-116">Zadání nebo výběr hodnoty</span><span class="sxs-lookup"><span data-stu-id="d3f7c-116">Enter or select a value</span></span>
+    * <span data-ttu-id="d3f7c-117">Vyberte například DE-001.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-117">For example, select DE-001.</span></span> <span data-ttu-id="d3f7c-118">Tento dodavatel má adresu firmy v Německu.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-118">This vendor has a German business address.</span></span>  
+4. <span data-ttu-id="d3f7c-119">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-119">Click OK.</span></span>
+5. <span data-ttu-id="d3f7c-120">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-120">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="d3f7c-121">V poli Číslo zboží zadejte nebo vyberte hodnotu D0001.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-121">In the Item number field, enter or select a value D0001.</span></span>
+7. <span data-ttu-id="d3f7c-122">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-122">Click Save.</span></span>
+8. <span data-ttu-id="d3f7c-123">V podokně akcí klikněte na možnost Přijmout.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-123">On the Action Pane, click Receive.</span></span>
+9. <span data-ttu-id="d3f7c-124">Klikněte na Podrobnosti přepravy.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-124">Click Transportation details.</span></span>
+10. <span data-ttu-id="d3f7c-125">Do pole Datum a čas nakládky zadejte datum a čas.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-125">In the Loading date and time field, enter a date and time.</span></span>
+11. <span data-ttu-id="d3f7c-126">Klikněte na Přidat adresu.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-126">Click Add address.</span></span>
+12. <span data-ttu-id="d3f7c-127">Klepněte na tlačítko Nový a vytvořte novou adresu s účelem Nakládka.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-127">Click New and create new address with purpose Lading.</span></span>
+13. <span data-ttu-id="d3f7c-128">Do pole Název nebo popis zadejte Italština.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-128">In the Name or description field, type 'Italian'.</span></span>
+14. <span data-ttu-id="d3f7c-129">Vyberte Nakládka jako hodnotu.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-129">Select Lading as the value.</span></span>
+    * <span data-ttu-id="d3f7c-130">Všimněte si, že účel adresy musí být Nakládka.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-130">Note that that address purpose must be Lading.</span></span>  
+15. <span data-ttu-id="d3f7c-131">V poli Země/oblast zadejte nebo vyberte hodnotu ITA.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-131">In the Country/region field, enter or select a value ITA.</span></span>
+16. <span data-ttu-id="d3f7c-132">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-132">Click Save.</span></span>
+17. <span data-ttu-id="d3f7c-133">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-133">Close the page.</span></span>
+18. <span data-ttu-id="d3f7c-134">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-134">Click Save.</span></span>
+    * <span data-ttu-id="d3f7c-135">Ověřte správnost adresy nakládky.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-135">Verify that the lading address is correct.</span></span>  
+19. <span data-ttu-id="d3f7c-136">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-136">Close the page.</span></span>
+20. <span data-ttu-id="d3f7c-137">V podokně akcí klikněte na položku Nákup.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-137">On the Action Pane, click Purchase.</span></span>
+21. <span data-ttu-id="d3f7c-138">Klikněte na tlačítko Potvrdit.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-138">Click Confirm.</span></span>
+22. <span data-ttu-id="d3f7c-139">V podokně akcí klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-139">On the Action Pane, click Invoice.</span></span>
+23. <span data-ttu-id="d3f7c-140">Klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-140">Click Invoice.</span></span>
+24. <span data-ttu-id="d3f7c-141">Zadejte hodnotu do pole Číslo.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-141">In the Number field, type a value.</span></span>
+25. <span data-ttu-id="d3f7c-142">Do pole Datum faktury zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-142">In the Invoice date field, enter a date.</span></span>
+26. <span data-ttu-id="d3f7c-143">Kliknutím na Výchozí od: Množství v příjemce produktu otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-143">Click Default from: Product receipt quantity to open the drop dialog.</span></span>
+27. <span data-ttu-id="d3f7c-144">V poli Výchozí množství pro řádky vyberte Objednané množství.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-144">In the Default quantity for lines field, select 'Ordered quantity'.</span></span>
+28. <span data-ttu-id="d3f7c-145">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-145">Click OK.</span></span>
+29. <span data-ttu-id="d3f7c-146">Klikněte na Podrobnosti přepravy.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-146">Click Transportation details.</span></span>
+    * <span data-ttu-id="d3f7c-147">Ověřte, že zboží bylo dodáno z Itálie.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-147">Verify that goods were shipped from Italy.</span></span> <span data-ttu-id="d3f7c-148">V případě potřeby můžete upravit podrobnosti o nakládce.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-148">If necessary, you can edit the lading details.</span></span>  
+30. <span data-ttu-id="d3f7c-149">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-149">Close the page.</span></span>
+31. <span data-ttu-id="d3f7c-150">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-150">Click Post.</span></span>
+32. <span data-ttu-id="d3f7c-151">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-151">Close the page.</span></span>
+33. <span data-ttu-id="d3f7c-152">Přejděte na Daň > Deklarace > Zahraniční obchod > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-152">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
+34. <span data-ttu-id="d3f7c-153">Klepněte na položku Převod.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-153">Click Transfer.</span></span>
+35. <span data-ttu-id="d3f7c-154">Vyberte možnost Ano v poli Tisk faktury dodavatele.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-154">Select Yes in the Vendor invoice field.</span></span>
+36. <span data-ttu-id="d3f7c-155">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-155">Click OK.</span></span>
+37. <span data-ttu-id="d3f7c-156">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-156">Click the General tab.</span></span>
+    * <span data-ttu-id="d3f7c-157">Vyhledejte nově vytvořený řádek a ověřte, že odesílatel dodal zboží z Itálie.</span><span class="sxs-lookup"><span data-stu-id="d3f7c-157">Find a newly created line and verify that the sender shipped the goods from Italy.</span></span>  
 

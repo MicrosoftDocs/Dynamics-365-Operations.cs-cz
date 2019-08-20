@@ -1,59 +1,53 @@
 ---
 title: Kontrola kvality zboží
-description: Tato procedura popisuje způsob zpracování objednávky kvality.
+description: Toto téma vysvětluje, jak zpracovat objednávku kvality.
 author: perlynne
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9e9d750f116db62519ac7148f19bf62050430e9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 10acb9aadfeb11ede1d66dd525ace7b70db3bd1c
+ms.sourcegitcommit: fbaccf72df82e6b6927f0c9f0d35af0ca3ecbc2d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545398"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1855679"
 ---
-# <a name="inspect-the-quality-of-goods"></a><span data-ttu-id="fac6c-103">Kontrola kvality zboží</span><span class="sxs-lookup"><span data-stu-id="fac6c-103">Inspect the quality of goods</span></span>
+# <a name="inspect-the-quality-of-goods"></a><span data-ttu-id="7554d-103">Kontrola kvality zboží</span><span class="sxs-lookup"><span data-stu-id="7554d-103">Inspect the quality of goods</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="fac6c-104">Tato procedura popisuje způsob zpracování objednávky kvality.</span><span class="sxs-lookup"><span data-stu-id="fac6c-104">This procedure shows you how to process a quality order.</span></span> <span data-ttu-id="fac6c-105">Tohoto průvodce můžete použít s ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="fac6c-105">You can run this guide in demo data company USMF.</span></span> <span data-ttu-id="fac6c-106">Před zahájením tohoto vzorového postupu je nutné potvrdit nákupní objednávku "000016" a zaúčtovat příjemku produktu.</span><span class="sxs-lookup"><span data-stu-id="fac6c-106">Before you start this example procedure, you need to confirm purchase order “000016” and post a product receipt.</span></span> <span data-ttu-id="fac6c-107">To způsobí automatické vytvoření objednávky kvality.</span><span class="sxs-lookup"><span data-stu-id="fac6c-107">This will automatically create a quality order.</span></span> <span data-ttu-id="fac6c-108">Kontroly kvality obvykle provádějí pracovníci pro kontrolu kvality.</span><span class="sxs-lookup"><span data-stu-id="fac6c-108">Quality inspections are typically carried out by a quality clerk.</span></span>
+<span data-ttu-id="7554d-104">Toto téma vysvětluje, jak zpracovat objednávku kvality.</span><span class="sxs-lookup"><span data-stu-id="7554d-104">This topic explains how to process a quality order.</span></span> <span data-ttu-id="7554d-105">Tohoto průvodce můžete použít s ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="7554d-105">You can run this guide in demo data company USMF.</span></span> <span data-ttu-id="7554d-106">Před zahájením tohoto vzorového postupu je nutné potvrdit nákupní objednávku "000016" a zaúčtovat příjemku produktu.</span><span class="sxs-lookup"><span data-stu-id="7554d-106">Before you start this example procedure, you need to confirm purchase order “000016” and post a product receipt.</span></span> <span data-ttu-id="7554d-107">To způsobí automatické vytvoření objednávky kvality.</span><span class="sxs-lookup"><span data-stu-id="7554d-107">This will automatically create a quality order.</span></span> <span data-ttu-id="7554d-108">Kontroly kvality obvykle provádějí pracovníci pro kontrolu kvality.</span><span class="sxs-lookup"><span data-stu-id="7554d-108">Quality inspections are typically carried out by a quality clerk.</span></span>
 
 
-## <a name="select-a-quality-order"></a><span data-ttu-id="fac6c-109">Vyberte objednávku kvality</span><span class="sxs-lookup"><span data-stu-id="fac6c-109">Select a quality order</span></span>
-1. <span data-ttu-id="fac6c-110">Přejděte na Řízení zásob > Periodické úlohy > Správa kvality > Objednávky kvality.</span><span class="sxs-lookup"><span data-stu-id="fac6c-110">Go to Inventory management > Periodic tasks > Quality management > Quality orders.</span></span>
-2. <span data-ttu-id="fac6c-111">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="fac6c-111">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="fac6c-112">Vyberte objednávku kvality, která byla vytvořena před zahájením tohoto postupu.</span><span class="sxs-lookup"><span data-stu-id="fac6c-112">Select the quality order that was created before you started this procedure.</span></span>  
+## <a name="select-a-quality-order"></a><span data-ttu-id="7554d-109">Vyberte objednávku kvality</span><span class="sxs-lookup"><span data-stu-id="7554d-109">Select a quality order</span></span>
+1. <span data-ttu-id="7554d-110">V podokně navigace přejděte na **Moduly > Řízení zásob > Periodické úlohy > Správa kvality > Objednávky kvality**.</span><span class="sxs-lookup"><span data-stu-id="7554d-110">In the navigation pane, go to **Modules > Inventory management > Periodic tasks > Quality management > Quality orders**.</span></span>
+2. <span data-ttu-id="7554d-111">Vyberte objednávku kvality, která byla vytvořena před zahájením tohoto postupu.</span><span class="sxs-lookup"><span data-stu-id="7554d-111">Select the quality order that was created before you started this procedure.</span></span>  
 
-## <a name="record-test-results"></a><span data-ttu-id="fac6c-113">Záznam výsledků testu</span><span class="sxs-lookup"><span data-stu-id="fac6c-113">Record test results</span></span>
-1. <span data-ttu-id="fac6c-114">Klikněte na možnost Výsledky.</span><span class="sxs-lookup"><span data-stu-id="fac6c-114">Click Results.</span></span>
-2. <span data-ttu-id="fac6c-115">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="fac6c-115">Click Edit.</span></span>
-3. <span data-ttu-id="fac6c-116">V poli Výsledné množství zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="fac6c-116">In the Result quantity field, enter a number.</span></span>
-4. <span data-ttu-id="fac6c-117">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="fac6c-117">In the list, mark the selected row.</span></span>
-5. <span data-ttu-id="fac6c-118">V poli Výsledek kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="fac6c-118">In the Outcome field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="fac6c-119">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="fac6c-119">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="fac6c-120">V tomto příkladu vychází výsledek z předem definovaného výsledku.</span><span class="sxs-lookup"><span data-stu-id="fac6c-120">In this example the result is based on a pre-defined outcome.</span></span> <span data-ttu-id="fac6c-121">Běžně byste vytvořili záznam s mnohem přesnějšími výsledky, jako například s velikostí nebo jinou dimenzí.</span><span class="sxs-lookup"><span data-stu-id="fac6c-121">Normally you would record a more specific test result, for example a size or other dimension.</span></span>  
-7. <span data-ttu-id="fac6c-122">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="fac6c-122">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="fac6c-123">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="fac6c-123">Click Save.</span></span>
-9. <span data-ttu-id="fac6c-124">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="fac6c-124">Close the page.</span></span>
+## <a name="record-test-results"></a><span data-ttu-id="7554d-112">Záznam výsledků testu</span><span class="sxs-lookup"><span data-stu-id="7554d-112">Record test results</span></span>
+1. <span data-ttu-id="7554d-113">Vyberte **Výsledky**</span><span class="sxs-lookup"><span data-stu-id="7554d-113">Select **Results**.</span></span>
+2. <span data-ttu-id="7554d-114">Vyberte možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="7554d-114">Select **Edit**.</span></span>
+3. <span data-ttu-id="7554d-115">V poli **Výsledné množství** zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="7554d-115">In the **Result quantity** field, enter a number.</span></span>
+4. <span data-ttu-id="7554d-116">V poli **Výsledek** vyberte požadovaný záznam v rozevírací nabídce.</span><span class="sxs-lookup"><span data-stu-id="7554d-116">In the **Outcome** field, select the desired record in the drop-down menu.</span></span>  
+- <span data-ttu-id="7554d-117">V tomto příkladu vychází výsledek z předem definovaného výsledku.</span><span class="sxs-lookup"><span data-stu-id="7554d-117">In this example the result is based on a pre-defined outcome.</span></span> <span data-ttu-id="7554d-118">Běžně byste vytvořili záznam s mnohem přesnějšími výsledky, jako například s velikostí nebo jinou dimenzí.</span><span class="sxs-lookup"><span data-stu-id="7554d-118">Normally you would record a more specific test result, for example a size or other dimension.</span></span>  
+5. <span data-ttu-id="7554d-119">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="7554d-119">Select **Save**.</span></span>
+6. <span data-ttu-id="7554d-120">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7554d-120">Close the page.</span></span>
 
-## <a name="validate-the-quality-order"></a><span data-ttu-id="fac6c-125">Ověřit objednávku kvality</span><span class="sxs-lookup"><span data-stu-id="fac6c-125">Validate the quality order</span></span>
-1. <span data-ttu-id="fac6c-126">Klikněte na tlačítko Ověřit.</span><span class="sxs-lookup"><span data-stu-id="fac6c-126">Click Validate.</span></span>
-2. <span data-ttu-id="fac6c-127">V poli Ověřil(a) kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="fac6c-127">In the Validated by field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="fac6c-128">Vyberte uživatele provádějícího kontrolu.</span><span class="sxs-lookup"><span data-stu-id="fac6c-128">Select the user performing the inspection.</span></span>  
-3. <span data-ttu-id="fac6c-129">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="fac6c-129">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="fac6c-130">Klepněte na tlačítko Vybrat.</span><span class="sxs-lookup"><span data-stu-id="fac6c-130">Click Select.</span></span>
-5. <span data-ttu-id="fac6c-131">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fac6c-131">Click OK.</span></span>
-6. <span data-ttu-id="fac6c-132">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="fac6c-132">Close the page.</span></span>
+## <a name="validate-the-quality-order"></a><span data-ttu-id="7554d-121">Ověřit objednávku kvality</span><span class="sxs-lookup"><span data-stu-id="7554d-121">Validate the quality order</span></span>
+1. <span data-ttu-id="7554d-122">Vyberte **Ověřit**.</span><span class="sxs-lookup"><span data-stu-id="7554d-122">Select **Validate**.</span></span>
+2. <span data-ttu-id="7554d-123">V poli **Ověřil/a** vyberte uživatele provádějícího kontrolu z rozevírací nabídky.</span><span class="sxs-lookup"><span data-stu-id="7554d-123">In the **Validated by** field, select the user performing the inspection from the drop-down menu.</span></span>  
+3. <span data-ttu-id="7554d-124">Klepněte na tlačítko **Vybrat**.</span><span class="sxs-lookup"><span data-stu-id="7554d-124">Click **Select**.</span></span>
+4. <span data-ttu-id="7554d-125">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="7554d-125">Select **OK**.</span></span>
+5. <span data-ttu-id="7554d-126">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="7554d-126">Close the page.</span></span>
 
