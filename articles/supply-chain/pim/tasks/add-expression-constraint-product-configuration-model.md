@@ -10,44 +10,44 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, SysClientPolymorphicCreateSelector, PCConstraintEditor, PCRuntimeConfiguratorValidate
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 56f94b82f8b2642b12a993bde7d6bb323da79f98
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f67d912b3349d4b5dd861b97533a7722a2b02fa4
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547141"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845130"
 ---
-# <a name="add-an-expression-constraint-to-a-product-configuration-model"></a><span data-ttu-id="c856c-103">Přidání omezení výrazu do modelu konfigurace produktu</span><span class="sxs-lookup"><span data-stu-id="c856c-103">Add an expression constraint to a product configuration model</span></span>
+# <a name="add-an-expression-constraint-to-a-product-configuration-model"></a><span data-ttu-id="db2e7-103">Přidání omezení výrazu do modelu konfigurace produktu</span><span class="sxs-lookup"><span data-stu-id="db2e7-103">Add an expression constraint to a product configuration model</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="c856c-104">Tento postup popisuje, jak můžete přidat nový výraz omezení pro model konfigurace produktu.</span><span class="sxs-lookup"><span data-stu-id="c856c-104">This procedure shows how you can add a new constraint expression to a product configuration model.</span></span> <span data-ttu-id="c856c-105">Ukazuje, jak se můžete vyhlásit, že ochrana rohu musí být uplatněna na reproduktor, pokud uživatel vybral přední mřížkou kovovou.</span><span class="sxs-lookup"><span data-stu-id="c856c-105">It shows how you can mandate that corner protection must be applied to a speaker if the user has selected a front grill in metal.</span></span> <span data-ttu-id="c856c-106">Postup používá komponentu špičkového reproduktoru v ukázkové společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="c856c-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
+<span data-ttu-id="db2e7-104">Tento postup popisuje, jak můžete přidat nový výraz omezení pro model konfigurace produktu.</span><span class="sxs-lookup"><span data-stu-id="db2e7-104">This procedure shows how you can add a new constraint expression to a product configuration model.</span></span> <span data-ttu-id="db2e7-105">Ukazuje, jak se můžete vyhlásit, že ochrana rohu musí být uplatněna na reproduktor, pokud uživatel vybral přední mřížkou kovovou.</span><span class="sxs-lookup"><span data-stu-id="db2e7-105">It shows how you can mandate that corner protection must be applied to a speaker if the user has selected a front grill in metal.</span></span> <span data-ttu-id="db2e7-106">Postup používá komponentu špičkového reproduktoru v ukázkové společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="db2e7-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
 
 
-## <a name="create-an-expression-constraint"></a><span data-ttu-id="c856c-107">Vytvoření omezení výrazu</span><span class="sxs-lookup"><span data-stu-id="c856c-107">Create an expression constraint</span></span>
-1. <span data-ttu-id="c856c-108">Klepněte na Definice modelu varianty produktu.</span><span class="sxs-lookup"><span data-stu-id="c856c-108">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="c856c-109">Klepněte na Modely konfigurace produktu.</span><span class="sxs-lookup"><span data-stu-id="c856c-109">Click Product configuration models.</span></span>
-3. <span data-ttu-id="c856c-110">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="c856c-110">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="c856c-111">Tento příklad používá model Špičkového reproduktoru.</span><span class="sxs-lookup"><span data-stu-id="c856c-111">This example uses the high end speaker model.</span></span>  
-4. <span data-ttu-id="c856c-112">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="c856c-112">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="c856c-113">Rozbalte sekci Omezení.</span><span class="sxs-lookup"><span data-stu-id="c856c-113">Expand the Constraints section.</span></span>
-6. <span data-ttu-id="c856c-114">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="c856c-114">Click Add.</span></span>
-7. <span data-ttu-id="c856c-115">Klikněte na položku Vytvořit.</span><span class="sxs-lookup"><span data-stu-id="c856c-115">Click Create.</span></span>
-8. <span data-ttu-id="c856c-116">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="c856c-116">In the Name field, type a value.</span></span>
+## <a name="create-an-expression-constraint"></a><span data-ttu-id="db2e7-107">Vytvoření omezení výrazu</span><span class="sxs-lookup"><span data-stu-id="db2e7-107">Create an expression constraint</span></span>
+1. <span data-ttu-id="db2e7-108">Klepněte na Definice modelu varianty produktu.</span><span class="sxs-lookup"><span data-stu-id="db2e7-108">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="db2e7-109">Klepněte na Modely konfigurace produktu.</span><span class="sxs-lookup"><span data-stu-id="db2e7-109">Click Product configuration models.</span></span>
+3. <span data-ttu-id="db2e7-110">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="db2e7-110">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="db2e7-111">Tento příklad používá model Špičkového reproduktoru.</span><span class="sxs-lookup"><span data-stu-id="db2e7-111">This example uses the high end speaker model.</span></span>  
+4. <span data-ttu-id="db2e7-112">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="db2e7-112">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="db2e7-113">Rozbalte sekci Omezení.</span><span class="sxs-lookup"><span data-stu-id="db2e7-113">Expand the Constraints section.</span></span>
+6. <span data-ttu-id="db2e7-114">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="db2e7-114">Click Add.</span></span>
+7. <span data-ttu-id="db2e7-115">Klikněte na položku Vytvořit.</span><span class="sxs-lookup"><span data-stu-id="db2e7-115">Click Create.</span></span>
+8. <span data-ttu-id="db2e7-116">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="db2e7-116">In the Name field, type a value.</span></span>
 
-## <a name="enter-expression"></a><span data-ttu-id="c856c-117">Zadat výraz</span><span class="sxs-lookup"><span data-stu-id="c856c-117">Enter expression</span></span>
-1. <span data-ttu-id="c856c-118">Klepněte na Upravit výraz.</span><span class="sxs-lookup"><span data-stu-id="c856c-118">Click Edit expression.</span></span>
-    * <span data-ttu-id="c856c-119">Pokud odemknete uživatelské rozhraní v záznamu úkolů v této fázi, můžete používat IntelliSense a seznam symbolů k vytváření omezení výrazu.</span><span class="sxs-lookup"><span data-stu-id="c856c-119">If you unlock the user interface in the task recording at this stage, you can use IntelliSense and the list of symbols to build the constraint expression .</span></span>  
-2. <span data-ttu-id="c856c-120">V poli Základ omezení zadejte hodnotu „Implikuje [Přední mřížka == "Kov", Ochrana rohu]“.</span><span class="sxs-lookup"><span data-stu-id="c856c-120">In the ConstraintBody field, enter 'Implies[FrontGrill=="Metal", CornerProtection] '.</span></span>
-    * <span data-ttu-id="c856c-121">Tento logický výraz uvádí: Pokud přední mřížka je kovová, je nutné vybrat možnost ochrany rohu.</span><span class="sxs-lookup"><span data-stu-id="c856c-121">This expression logic states: If the Front grill is  metal, then the corner protection option must be selected.</span></span>  
-3. <span data-ttu-id="c856c-122">Klikněte na tlačítko Ověřit.</span><span class="sxs-lookup"><span data-stu-id="c856c-122">Click Validate.</span></span>
-    * <span data-ttu-id="c856c-123">Ověřovací funkce je spuštěna prostřednictvím omezení výrazu a kontroluje chyby syntaxe.</span><span class="sxs-lookup"><span data-stu-id="c856c-123">The validate function runs through the constraint expression and checks for syntax errors.</span></span>  
-4. <span data-ttu-id="c856c-124">Klikněte na tlačítko Zavřít.</span><span class="sxs-lookup"><span data-stu-id="c856c-124">Click Close.</span></span>
-5. <span data-ttu-id="c856c-125">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="c856c-125">Click OK.</span></span>
+## <a name="enter-expression"></a><span data-ttu-id="db2e7-117">Zadat výraz</span><span class="sxs-lookup"><span data-stu-id="db2e7-117">Enter expression</span></span>
+1. <span data-ttu-id="db2e7-118">Klepněte na Upravit výraz.</span><span class="sxs-lookup"><span data-stu-id="db2e7-118">Click Edit expression.</span></span>
+    * <span data-ttu-id="db2e7-119">Pokud odemknete uživatelské rozhraní v záznamu úkolů v této fázi, můžete používat IntelliSense a seznam symbolů k vytváření omezení výrazu.</span><span class="sxs-lookup"><span data-stu-id="db2e7-119">If you unlock the user interface in the task recording at this stage, you can use IntelliSense and the list of symbols to build the constraint expression .</span></span>  
+2. <span data-ttu-id="db2e7-120">V poli Základ omezení zadejte hodnotu „Implikuje [Přední mřížka == "Kov", Ochrana rohu]“.</span><span class="sxs-lookup"><span data-stu-id="db2e7-120">In the ConstraintBody field, enter 'Implies[FrontGrill=="Metal", CornerProtection] '.</span></span>
+    * <span data-ttu-id="db2e7-121">Tento logický výraz uvádí: Pokud přední mřížka je kovová, je nutné vybrat možnost ochrany rohu.</span><span class="sxs-lookup"><span data-stu-id="db2e7-121">This expression logic states: If the Front grill is  metal, then the corner protection option must be selected.</span></span>  
+3. <span data-ttu-id="db2e7-122">Klikněte na tlačítko Ověřit.</span><span class="sxs-lookup"><span data-stu-id="db2e7-122">Click Validate.</span></span>
+    * <span data-ttu-id="db2e7-123">Ověřovací funkce je spuštěna prostřednictvím omezení výrazu a kontroluje chyby syntaxe.</span><span class="sxs-lookup"><span data-stu-id="db2e7-123">The validate function runs through the constraint expression and checks for syntax errors.</span></span>  
+4. <span data-ttu-id="db2e7-124">Klikněte na tlačítko Zavřít.</span><span class="sxs-lookup"><span data-stu-id="db2e7-124">Click Close.</span></span>
+5. <span data-ttu-id="db2e7-125">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="db2e7-125">Click OK.</span></span>
 

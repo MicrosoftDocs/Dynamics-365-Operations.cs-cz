@@ -10,43 +10,43 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec5bbe37aa06f18172c417e903538cadc8a6f312
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0c58755be2c927de1d308576a2bff2ed3340db34
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559404"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846264"
 ---
-# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="242c2-103">Nastavení skupin DPH a skupin DPH položky</span><span class="sxs-lookup"><span data-stu-id="242c2-103">Set up sales tax groups and item sales tax groups</span></span>
+# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="27514-103">Nastavení skupin DPH a skupin DPH položky</span><span class="sxs-lookup"><span data-stu-id="27514-103">Set up sales tax groups and item sales tax groups</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="242c2-104">Tento záznam úkolu vás provede nastavením DPH a skupin prodejní daně položky.</span><span class="sxs-lookup"><span data-stu-id="242c2-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="242c2-105">Skupiny DPH jsou skupiny kódů DPH, které jsou připojeny k odběratelům a dodavatelům.</span><span class="sxs-lookup"><span data-stu-id="242c2-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="242c2-106">Dále jsou připojeny k účtům hlavní knihy pro transakce, které nejsou zaúčtovány pro konkrétního dodavatele ani odběratele.</span><span class="sxs-lookup"><span data-stu-id="242c2-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="242c2-107">Skupiny prodejní daně položky jsou skupiny kódů DPH, které jsou připojeny k produktům používaným jako prostředky.</span><span class="sxs-lookup"><span data-stu-id="242c2-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="242c2-108">DPH pro danou transakci se určuje podle kódů DPH zahrnutých ve skupině DPH a ve skupině DPH položky v transakci.</span><span class="sxs-lookup"><span data-stu-id="242c2-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="242c2-109">DPH je možné vypočítat pouze pokud je vybrána skupina DPH i skupina DPH položky pro každou transakci, u níž je třeba vypočítat nebo zaznamenat DPH.</span><span class="sxs-lookup"><span data-stu-id="242c2-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
+<span data-ttu-id="27514-104">Tento záznam úkolu vás provede nastavením DPH a skupin prodejní daně položky.</span><span class="sxs-lookup"><span data-stu-id="27514-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="27514-105">Skupiny DPH jsou skupiny kódů DPH, které jsou připojeny k odběratelům a dodavatelům.</span><span class="sxs-lookup"><span data-stu-id="27514-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="27514-106">Dále jsou připojeny k účtům hlavní knihy pro transakce, které nejsou zaúčtovány pro konkrétního dodavatele ani odběratele.</span><span class="sxs-lookup"><span data-stu-id="27514-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="27514-107">Skupiny prodejní daně položky jsou skupiny kódů DPH, které jsou připojeny k produktům používaným jako prostředky.</span><span class="sxs-lookup"><span data-stu-id="27514-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="27514-108">DPH pro danou transakci se určuje podle kódů DPH zahrnutých ve skupině DPH a ve skupině DPH položky v transakci.</span><span class="sxs-lookup"><span data-stu-id="27514-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="27514-109">DPH je možné vypočítat pouze pokud je vybrána skupina DPH i skupina DPH položky pro každou transakci, u níž je třeba vypočítat nebo zaznamenat DPH.</span><span class="sxs-lookup"><span data-stu-id="27514-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
 
-1. <span data-ttu-id="242c2-110">Přejděte na Daň > Nepřímé daně > DPH > Skupiny DPH.</span><span class="sxs-lookup"><span data-stu-id="242c2-110">Go to Tax > Indirect taxes > Sales tax > Sales tax groups.</span></span>
-2. <span data-ttu-id="242c2-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="242c2-111">Click New.</span></span>
-3. <span data-ttu-id="242c2-112">V poli Skupina prodejní daně zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="242c2-112">In the Sales tax group field, type a value.</span></span>
-4. <span data-ttu-id="242c2-113">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="242c2-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="242c2-114">Přepněte rozšíření oddílu Nastavení.</span><span class="sxs-lookup"><span data-stu-id="242c2-114">Toggle the expansion of the Setup section.</span></span>
-6. <span data-ttu-id="242c2-115">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="242c2-115">Click Add.</span></span>
-7. <span data-ttu-id="242c2-116">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="242c2-116">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="242c2-117">V poli Kód prodejní daně kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="242c2-117">In the Sales tax code field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="242c2-118">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="242c2-118">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="242c2-119">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="242c2-119">Click Save.</span></span>
-11. <span data-ttu-id="242c2-120">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="242c2-120">Close the page.</span></span>
-12. <span data-ttu-id="242c2-121">Přejděte na Daň > Nepřímé daně > DPH > Skupiny prodejní daně položky.</span><span class="sxs-lookup"><span data-stu-id="242c2-121">Go to Tax > Indirect taxes > Sales tax > Item sales tax groups.</span></span>
-13. <span data-ttu-id="242c2-122">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="242c2-122">Click New.</span></span>
-14. <span data-ttu-id="242c2-123">V poli Skupina DPH zboží zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="242c2-123">In the Item sales tax group field, type a value.</span></span>
-15. <span data-ttu-id="242c2-124">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="242c2-124">In the Description field, type a value.</span></span>
-16. <span data-ttu-id="242c2-125">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="242c2-125">Click Add.</span></span>
-17. <span data-ttu-id="242c2-126">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="242c2-126">In the list, mark the selected row.</span></span>
-18. <span data-ttu-id="242c2-127">V poli Kód prodejní daně kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="242c2-127">In the Sales tax code field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="242c2-128">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="242c2-128">In the list, click the link in the selected row.</span></span>
-20. <span data-ttu-id="242c2-129">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="242c2-129">Click Save.</span></span>
+1. <span data-ttu-id="27514-110">Přejděte na Daň > Nepřímé daně > DPH > Skupiny DPH.</span><span class="sxs-lookup"><span data-stu-id="27514-110">Go to Tax > Indirect taxes > Sales tax > Sales tax groups.</span></span>
+2. <span data-ttu-id="27514-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="27514-111">Click New.</span></span>
+3. <span data-ttu-id="27514-112">V poli Skupina prodejní daně zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="27514-112">In the Sales tax group field, type a value.</span></span>
+4. <span data-ttu-id="27514-113">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="27514-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="27514-114">Přepněte rozšíření oddílu Nastavení.</span><span class="sxs-lookup"><span data-stu-id="27514-114">Toggle the expansion of the Setup section.</span></span>
+6. <span data-ttu-id="27514-115">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="27514-115">Click Add.</span></span>
+7. <span data-ttu-id="27514-116">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="27514-116">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="27514-117">V poli Kód prodejní daně kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="27514-117">In the Sales tax code field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="27514-118">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="27514-118">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="27514-119">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="27514-119">Click Save.</span></span>
+11. <span data-ttu-id="27514-120">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="27514-120">Close the page.</span></span>
+12. <span data-ttu-id="27514-121">Přejděte na Daň > Nepřímé daně > DPH > Skupiny prodejní daně položky.</span><span class="sxs-lookup"><span data-stu-id="27514-121">Go to Tax > Indirect taxes > Sales tax > Item sales tax groups.</span></span>
+13. <span data-ttu-id="27514-122">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="27514-122">Click New.</span></span>
+14. <span data-ttu-id="27514-123">V poli Skupina DPH zboží zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="27514-123">In the Item sales tax group field, type a value.</span></span>
+15. <span data-ttu-id="27514-124">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="27514-124">In the Description field, type a value.</span></span>
+16. <span data-ttu-id="27514-125">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="27514-125">Click Add.</span></span>
+17. <span data-ttu-id="27514-126">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="27514-126">In the list, mark the selected row.</span></span>
+18. <span data-ttu-id="27514-127">V poli Kód prodejní daně kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="27514-127">In the Sales tax code field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="27514-128">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="27514-128">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="27514-129">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="27514-129">Click Save.</span></span>
 
