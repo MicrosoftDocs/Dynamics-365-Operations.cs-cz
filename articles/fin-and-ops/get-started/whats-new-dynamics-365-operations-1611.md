@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: 221294
 ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b200f6b8a636a5e7c4ee2625226510f538ff023c
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548025"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863486"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Operations verze 1611 (listopad 2016)
 
@@ -623,7 +623,7 @@ Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynami
 | Konfigurujte sestavy ER a generujte elektronické dokumenty do formátu aplikace Excel, Microsoft Word nebo PDF. | Jediná konfigurace umožňuje ER sestavám generovat elektronické dokumenty ve třech různých formátech: OpenXML list (aplikace Excel), Word a formuláře dat formátu XML (XFDF) (PDF). Uživatelé mohou vybrat formát přidáním šablony formátu k sestavě ER ve formě dokumentu aplikace Excel, aplikace Word a PDF. |
 | Konfigurujte sestavy ER pro vložení dat do záhlaví a zápatí elektronických dokumentů, které jsou generovány ve formátu listu OpenXML. Můžete tak také určovat zalomení stránky. | Sestavy ER mohou zadávat obchodní data do záhlaví a zápatí a také určit, kde bude zalomení stránky. Sestavy proto mohou podporovat statické horní a dolní části stránek generovaných elektronických dokumentů. Mohou také podporovat specifické stránkování těchto dokumentů tak, aby splňovaly právní předpisy. |
 | Konfigurujte cíle sestavy ER tak, aby se výstup posílal jako e-mail a aby obchodní data i ER logika (výrazy) sloužily k průběžnému určení použité e-mailové adresy. | Když jste v předchozích verzích konfigurovali cíle ER, mohla být e-mailová adresa příjemce definována už v době návrhu. Nyní můžete nakonfigurovat výrazy ve formátu ER. Tento výraz lze vybrat v cíli jako zdroj e-mailové adresy pro každou konfiguraci formátu a každý výstupní komponent (složku nebo soubor) samostatně. Proto pokud je spuštěn výkaz ER, každý generovaný soubor může být odeslán různým příjemcům a e-mailovou adresu lze definovat podle logiky ER a obchodních dat. |
-| Konfigurujte cíl sestavy ER tak, aby se výstup odesílal do složky aplikace Microsoft SharePoint SharePoint jako buď nový pojmenovaný soubor nebo jako nová verze existujícího souboru, a aby se obchodní data dala použít v rámci Microsoft Power BI jako sada dat nebo jako sestava. | Při konfiguraci sestav ER můžete nyní snadno (bez kódování) připravit požadovaná obchodní data, tak aby je šlo snadno použít v rozhraní Power BI. Při spuštění těchto sestav ER můžete pro rozhraní Power BI zajistit odpovídající obchodní data a/nebo Excelové sestavy, které jsou již k dispozici. Při plánování v režimu opakované spuštění sestavy, můžete vytvořit plánované vypuštění obchodních dat z Dynamics 365 for Operations do Power BI a podpořit tak plán aktualizace sestav na základě Power BI. |
+| Konfigurujte cíl sestavy ER tak, aby se výstup odesílal do složky aplikace Microsoft SharePoint jako buď nový pojmenovaný soubor nebo jako nová verze existujícího souboru, a aby se obchodní data dala použít v rámci Microsoft Power BI jako sada dat nebo jako sestava. | Při konfiguraci sestav ER můžete nyní snadno (bez kódování) připravit požadovaná obchodní data, tak aby je šlo snadno použít v rozhraní Power BI. Při spuštění těchto sestav ER můžete pro rozhraní Power BI zajistit odpovídající obchodní data a/nebo Excelové sestavy, které jsou již k dispozici. Při plánování v režimu opakované spuštění sestavy, můžete vytvořit plánované vypuštění obchodních dat z Dynamics 365 for Operations do Power BI a podpořit tak plán aktualizace sestav na základě Power BI. |
 | Konfigurujte sestavy ER pomocí části elektronického dokumentu, který již byl generován jako zdroj dat pro generování zbytku onoho dokumentu. | Můžete konfigurovat ER sestavy, které tvoří výstup v textovém formátu, a připravit řádek inventáře. Tyto údaje pak lze použít v jiných oddílech dokumentu a vytvořit řádky, které zahrnují podrobnosti souhrnu. Souhrnné informace (součty a čísla) můžete vypočítat a vytisknout do generovaných elektronických dokumentů, aniž by bylo nutné dodatečné transformování dat. Tato funkce tedy zlepšuje výkon při spuštění sestavy a usnadňuje budoucí údržbu konfigurovaného formátu ER. |
 | Konfigurujte sestavy ER a určujte příponu názvu souboru pro elektronické dokumenty, které jsou generovány v textovém formátu. | Můžete konfigurovat sestavy ER a vytvořit výstup v textovém formátu, aby šel uložit jako soubor se specifickou příponou. Kromě výchozí .txt přípony můžete konfigurovat rozšíření např. csv a .prn v souladu se specifikací formátu. |
 | Tvořte nové sestavy ER, které jsou založeny na konkrétní verzi modelu ER. | Když jste dříve tvořili nový formát ER, mohli jste jako umístění dat zdroje formátu použít pouze nejnovější verzi vybraného modelu ER. Nyní můžete vybrat jakoukoli dostupnou verzi vybraného modelu ER. Tato funkce vám umožní spravovat ER sestavy pro aktuální rok a současně navrhovat novou verzi modelu ER pro příští rok. |
@@ -757,9 +757,9 @@ Perfektní obchodní omni-channel odkazuje ke správě a zpracovávání objedn�
 
 | Co můžete dělat | Proč je to důležité |
 |-----------------|-----------------------|
-| CRT / Server maloobchodu: Maloobchodní sítě nebo ISV mohou rozšířit CRT prostřednictvím rozšiřovacích vzorků. Vložené změny kódů již nejsou nepodporovány. | Chcete-li povolit souvislou integraci a souvislé nasazení, měli byste se zcela vyhnout vloženým změnám kódů. Také pro usnadnění příjmu opravy hotfix bez jakýchkoli kódů sloučení a nasazení pro CRT komponenty. |
+| CRT/ Server maloobchodu: Maloobchodní sítě nebo ISV mohou rozšířit CRT prostřednictvím rozšiřovacích vzorků. Vložené změny kódů již nejsou nepodporovány. | Chcete-li povolit souvislou integraci a souvislé nasazení, měli byste se zcela vyhnout vloženým změnám kódů. Také pro usnadnění příjmu opravy hotfix bez jakýchkoli kódů sloučení a nasazení pro CRT komponenty. |
 
-### <a name="personalized-product-recommendations"></a>Přizpůsobená doporučení produktu
+### <a name="personalized-product-recommendations"></a>Doporučení přizpůsobeného produktu
 
 | Co můžete dělat | Proč je to důležité |
 |-----------------|-----------------------|

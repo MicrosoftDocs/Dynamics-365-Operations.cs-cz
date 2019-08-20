@@ -1,6 +1,6 @@
 ---
-title: " Vytvoření, výpočet a zaúčtování výkazu pro maloobchod"
-description: Tento postup vás provede manuálním postupem pro vytvoření, výpočet a zaúčtování výpisu pro obchod.
+title: Vytvoření, výpočet a zaúčtování výkazů pro maloobchod
+description: Toto téma popisuje ruční postup pro vytvoření, výpočet a zaúčtování výpisu pro obchod.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
@@ -17,34 +17,34 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 693d1821779d5f7af95b900daa3bb7a2c38a6354
+ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548317"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "1755516"
 ---
-# <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a> Vytvoření, výpočet a zaúčtování výkazu pro maloobchod
+# <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Vytvoření, výpočet a zaúčtování výkazů pro maloobchod
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tento postup vás provede manuálním postupem pro vytvoření, výpočet a zaúčtování výpisu pro obchod. Existují také dávkové úlohy, které lze konfigurovat pro stejné úkoly. Postup pro konfiguraci a spuštění dávkových úlohy můžete najít v jiných tématech. Chcete-li provést tento postup, musíte mít transakce, které byly dokončeny v POS a potom převedeny do aplikace Dynamics AX. Tento záznam používá v ukázkových datech společnost USRT. Tento postup se může vztahovat na Microsoft Dynamics AX. Mějte na paměti, že Dynamics AX se nyní nazývá Microsoft Dynamics 365 for Operations.
+Toto téma popisuje ruční postup pro vytvoření, výpočet a zaúčtování výpisu pro obchod. Existují také dávkové úlohy, které lze konfigurovat pro stejné úkoly. Postup pro konfiguraci a spuštění dávkových úlohy můžete najít v jiných tématech. Pokud chcete tento postup dokončit, musíte mít transakce, které byly dokončeny v POS a pak odeslány do aplikace Dynamics 365 for Finance and Operations. Tento záznam používá v ukázkových datech společnost USRT.
 
-1. Přejděte na Všechny pracovní prostory > .. > Finance maloobchodu.
-2. Klikněte na Nový výkaz.
-3. V poli Číslo obchodu kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Klikněte na odkaz na vybraném řádku v seznamu.
-5. Klikněte na tlačítko OK.
-    * Nastavení skupiny obsahuje nastavení, která řídí, které transakce budou zahrnuty do výkazu a způsob jejich seskupení do řádků výkazu. Můžete otevřít nastavení skupiny a tato nastavení změnit, nebo můžete použít výchozí hodnoty.  
-    * Pole Metoda výkazu definuje způsob, jak budou seskupeny řádky výkazu.  
-    * Pokud chcete vypočítat výkaz pouze pro konkrétního zaměstnance nebo registr, vyberte zaměstnance nebo registrační pokladnu.  
-6. Vyberte možnost v poli Metoda uzávěrky.
-7. Klikněte na Vypočítat výkaz.
-8. Klepněte na tlačítko Ano.
-    * Po výpočtu výkazu, by měly být vytvořený řádky s celkovými částkami pro každý použitý způsob platby a metodu výkazu.  
-    * Zadejte do každého řádku spočtenou částka, pokud je nutné ji zadávat nebo aktualizovat. Vypočtená pole budou vyplněna částkami z výkazů úhrad provedených v POS.  
-9. Klikněte na Zaúčtovat výkaz.
-10. Klikněte na tlačítko Zavřít.
-11. Přejděte na Maloobchodní a velkoobchodní prodej > Kanály > Finance maloobchodu.
-12. Klepněte na kartu Zaúčtované výpisy.
+1. Na domovské stránce vyberte **Maloobchodní finance**.
+2. Vyberte **Nový výpis**.
+3. V poli **Uložit číslo** vyberte z rozevíracího seznamu požadovanou možnost.
+4. Vyberte **OK**.
+5. Skupina **Nastavení** obsahuje nastavení, která řídí, které transakce budou zahrnuty do výkazu a způsob jejich seskupení do řádků výkazu. Můžete otevřít skupinu **Nastavení** a tato nastavení změnit, nebo můžete použít výchozí hodnoty.  
+    - Pole **Metoda výkazu** definuje způsob, jak budou seskupeny řádky výkazu.  
+    - Pokud chcete vypočítat výkaz pouze pro konkrétního zaměstnance nebo registr, v poli **zaměstnanec/registr** vyberte zaměstnance nebo registrační pokladnu.  
+6. Vyberte možnost v poli **Metoda uzávěrky**.
+7. V podokně akcí vyberte **Vypočítat výkaz**.
+8. Vyberte **Ano**.
+    - Po výpočtu výkazu, by měly být vytvořený řádky s celkovými částkami pro každý použitý způsob platby a metodu výkazu.  
+    - Zadejte do každého řádku spočtenou částka, pokud je nutné ji zadávat nebo aktualizovat. Vypočtená pole budou vyplněna částkami z výkazů úhrad provedených v POS.  
+9. V podokně akcí vyberte **Publikovat výkaz**.
+10. Vyberte **Zavřít**.
+11. Zavřete podokno.
+12. Na domovské stránce vyberte **Maloobchodní finance**.
+13. Vyberte kartu **Publikované výkazy**.
 

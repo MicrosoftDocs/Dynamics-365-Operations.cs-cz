@@ -3,14 +3,14 @@ title: Přehled faktur dodavatele
 description: V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
 author: abruer
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
-ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
+ms.openlocfilehash: c69291214796847af7169cf261865860998f0d27
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625072"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863316"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
 
@@ -90,6 +90,13 @@ Když se používá faktura dodavatele, nemůže být upravena jiným uživatele
 Můžete použít stránku **Obnovit faktury dodavatel** pro obnovení nebo uvolnění faktur dodavatele, které byly používány déle než čtyři hodiny, aby mohly být upraveny. Můžete otevřít tuto stránku z navigace **Periodická úloha** nebo dlaždice v pracovním prostoru **Záznam faktury dodavatele**. Po obnovení faktury bude k dispozici pro úpravy na stránce **Faktura dodavatele**.
 
 Na stránku **Obnovit faktury dodavatele** budete mít přístup pouze v případě, že vám je přiděleno funkční oprávnění zabezpečení **Obnovit používané faktury dodavatele**. Kromě toho musí být zapnutý parametr **Povolit obnovení faktury dodavatele** na stránce **Parametry závazků**.
+
+## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Resetování stavu workflow pro faktury dodavatele z Bez možnosti obnovy na Koncept
+
+Instance workflow, která byla zastavena kvůli neobnovitelné chybě, bude míst stav workflow **Bez možnosti obnovy**. Pokud je stav faktury dodavatele **Bez možnosti obnovy**, můžete ho obnovit do stavu **Koncept** výběrem možnosti **Obnovit**. Poté můžete upravit fakturu dodavatele. Tato funkce je k dispozici, pokud je zapnutý parametr **Resetovat stav konceptu workflow faktury dodavatele** na stránce **Správa funkcí**.
+
+Na stránce **Historie workflowu** můžete resetovat stav workflow na **Koncept**. Tuto stránku můžete otevřít **Faktury dodavatele** nebo z navigace **Obecné > Dotazy > Workflow**. Chcete-li obnovit stav workflow na **Koncept**, vyberte možnost **Obnovit**. Stav workflow můžete také resetovat na koncept výběrem akce **Obnovit** na stránce **Faktura dodavatele** nebo **Čekající faktury dodavatele**. Po resetování stavu workflow na **Koncept** bude k dispozici pro úpravy na stránce **Faktura dodavatele**.
+
 
 
 ## <a name="additional-resources"></a>Další zdroje

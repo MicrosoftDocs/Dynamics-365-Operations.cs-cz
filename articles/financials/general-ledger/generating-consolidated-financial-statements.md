@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557724"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863693"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Vytváření konsolidovaných finančních výkazů
 
@@ -49,11 +49,11 @@ Konsolidovaná sestava na následujícím obrázku znázorňuje, že když použ
 
 Můžete také vytvořit víceúrovňový organizační strom s tolika úrovněmi, kolik potřebujete. Následující obrázek znázorňuje víceúrovňový organizační strom, který obsahuje shrnutí podle celosvětové oblasti.
 
-![Definice víceúrovňového organizačního stromu se shrnutími podle oblasti](./media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png "Definice víceúrovňového organizačního stromu se shrnutími podle oblasti")
+![Definice víceúrovňového organizačního stromu se shrnutími podle oblasti](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Definice víceúrovňového organizačního stromu se shrnutími podle oblasti")
 
 Následující obrázek znázorňuje víceúrovňový organizační strom, který obsahuje shrnutí podle funkce.
 
-![Definice víceúrovňového organizačního stromu se shrnutími podle funkce](./media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png "Definice víceúrovňového organizačního stromu se shrnutími podle funkce")
+![Definice víceúrovňového organizačního stromu se shrnutími podle funkce](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Definice víceúrovňového organizačního stromu se shrnutími podle funkce")
 
 ### <a name="viewing-companies-side-by-side"></a>Zobrazení společností vedle sebe
 Mnozí zákazníci preferují sestavy, ve kterých se společnosti zobrazují vedle sebe a kde sloupce zobrazují celkové konsolidované součty. Tento formát lze jednoduše použít po vytvoření organizačního stromu. Zde jsou hlavní kroky, jak zobrazit společnosti vedle sebe na konsolidovaných finančních výkazech.
@@ -98,7 +98,7 @@ V definici organizačního stromu zadejte do sloupce **Zahrnutí (%)** (sloupec 
 > [!NOTE]
 > Tohle procento vlastnictví můžete použít na libovolnou organizační jednotku a nikoli pouze na úrovni společnosti. 
 
-![Použití procenta definice organizačního stromu](./media/Using-reporting%20tree-definition-percentage.png "Použití procenta definice organizačního stromu")
+![Použití procenta definice organizačního stromu](./media/Using-reporting-tree-definition-percentage.png "Použití procenta definice organizačního stromu")
 
 Ve vygenerované sestavě bude sestava společnosti Contoso Germany zobrazovat 100 procent prodejní částky a 80 procent částky bude přiděleno a zahrnuto na konsolidované úrovni pro prodej.
 

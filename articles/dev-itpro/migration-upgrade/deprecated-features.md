@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
 author: sericks007
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624900"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863376"
 ---
 # <a name="removed-or-deprecated-features"></a>Odstraněné nebo zastaralé funkce
 
@@ -40,10 +40,32 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 
 > Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
 
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28
+## <a name="dynamics-365-for-finance-and-operations-1005-with-platform-update-29"></a>Dynamics 365 for Finance and Operations 10.0.5 s aktualizací Platform Update 29
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).
+> Dynamics 365 for Finance and Operations 10.0.5 s aktualizací Platform Update 29 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="us-payroll-tax-updates"></a>Aktualizace daně ze mzdy USA
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Z důvodu nízkého využití a vylepšených funkcí, které jsou nyní nabízeny prostřednictvím strategických integrací, vyřazujeme daňové aktualizace pro funkci americké mzdy  |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Mzdy |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: do 1. října 2021 plánujeme, že nebudeme nadále poskytovat daňové aktualizace pro zákazníky mezd USA. Funkce zůstane v produktu, ale zdokonalení již nebude mít aktuální funkčnost a jakékoli vady produktu budou vyhodnoceny případ od případu. Další informace naleznete v tématu [Daňové aktualizace se vyřazují pro funkci mzdy v USA v aplikaci Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq). |
+
+
+### <a name="data-management-staging-clean-up"></a>Vyčištění fázování správy dat
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Nesplňuje základní požadavky nutné k plánování pravidelného vyčištění. |
+| **Nahrazeno jinou funkcí?**   | Ano, funkce Vyčištění historie úloh se přidává ke splnění scénářů holisticky. |
+| **Ovlivněné oblasti produktu**         | Správa dat |
+| **Možnost nasazení**              | Vše  |
+| **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je prosinec 2020. |
+
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 s aktualizací Platform Update 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Francie: Export účetních dat v FEC ve formátu XML
 
@@ -1235,7 +1257,7 @@ Služba Sites Services umožňuje vytvářet webové stránky, které rozšiřuj
 
 ### <a name="virtual-company-accounts"></a>Virtuální účty společnosti
 
-Funkce virtuálních společností není aplikací Dynamics AX již podporována. Funkce virtuálních společností umožňovala uživatelům nastavit tabulky, které mohlo sdílet více společností. Popis funkce naleznete zde: [Účty společnosti a virtuální účty společnosti](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). Funkce funguje tak, že seskupuje tabulky do kolekcí, které jsou přiřazeny k virtuálním společnostem, což jsou skupiny skutečně existujících společností. Dotazy jsou vytvářeny tak, aby všechny společnosti ve virtuální společnosti měli přístup k datům v tabulkách souvisejících kolekcí tabulek.
+Funkce virtuálních společností není aplikací Dynamics AX již podporována. Funkce virtuálních společností umožňovala uživatelům nastavit tabulky, které mohlo sdílet více společností. Popis funkce naleznete zde: [Účty společnosti a virtuální účty společnosti](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funkce funguje tak, že seskupuje tabulky do kolekcí, které jsou přiřazeny k virtuálním společnostem, což jsou skupiny skutečně existujících společností. Dotazy jsou vytvářeny tak, aby všechny společnosti ve virtuální společnosti měli přístup k datům v tabulkách souvisejících kolekcí tabulek.
 
 |   |  | 
 |------------|--------------------|

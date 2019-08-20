@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer, Application user
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 254844
 ms.assetid: 0e9471f9-4c2b-42f0-9b10-6578211f01d5
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 141e716f1f66e3b234b4d828c039b628c12e3750
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552480"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850646"
 ---
 # <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Získání podpory pro aplikace Finance and Operations nebo Lifecycle Services (LCS)
 
@@ -91,5 +91,5 @@ Ohledně technických dotazů, které se vztahují k přihlášení a přístupu
 ## <a name="additional-resources"></a>Další prostředky
 - [Získání podpory pro Dynamics 365 for Retail](../../retail/retail-support.md)
 - [Získání podpory pro Dynamics 365 for Talent](../../talent/talent-support.md)
-- Další informace o nabídkách podpory Microsoft Dynamics naleznete v tématu [Online podpora Microsoft Dynamics](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
+- Další informace o nabídkách podpory Microsoft Dynamics naleznete v tématu [Online podpora Microsoft Dynamics](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
 

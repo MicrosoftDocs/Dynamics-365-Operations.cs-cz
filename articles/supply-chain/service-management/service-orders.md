@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4da0b965f3719bc16b5a73538df111ff6df071be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b4d347556d25831bb3f9175e8606e0b41d98bdd8
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555345"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743236"
 ---
 # <a name="service-orders"></a>Servisní zakázky   
 
@@ -76,7 +76,7 @@ Jedna ze servisních zakázek, které byly vytvořeny v lednu, je zastaralá, pr
 
 ## <a name="post-from-projects"></a>Účtování z projektů
 
-Na konci každého týdne chce dispečerka zaúčtovat všechny servisní zakázky, které jsou připojené k určitému projektu. Proto dispečerka vyhledá příslušný projekt ve formuláři **projekty** a zaúčtuje servisní zakázky, které byly dokončeny. Další informace naleznete v tématu [Zaúčtování servisních zakázek (formulář třídy)](https://technet.microsoft.com/en-us/library/aa574685\(v=ax.60\)).
+Na konci každého týdne chce dispečerka zaúčtovat všechny servisní zakázky, které jsou připojené k určitému projektu. Proto dispečerka vyhledá příslušný projekt ve formuláři **projekty** a zaúčtuje servisní zakázky, které byly dokončeny. Další informace naleznete v tématu [Zaúčtování servisních zakázek (formulář třídy)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Odstranit servisní zakázky
 
@@ -84,7 +84,7 @@ Ve druhé polovině roku zákazník dospěje k závěru, že servisních zásah�
 
 ## <a name="see-also"></a>Viz také
 
-[Servisní zakázky (formulář)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[Servisní zakázky (formulář)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 

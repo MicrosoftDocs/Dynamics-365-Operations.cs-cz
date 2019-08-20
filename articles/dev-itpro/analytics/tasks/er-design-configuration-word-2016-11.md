@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd138fb5fea4098a862fbecba5e8ec226ed6afa9
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551501"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850296"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu Word
 
@@ -64,7 +64,7 @@ Tento postup je určený pro funkci, která byla přidána do Microsoft Dynamics
     * Kromě uložení změn v konfiguraci aktualizuje připojenou šablonu aplikace Word rovněž akce Uložit. Struktura navrženého formátu je přenesena do připojeného dokumentu aplikace Word jako nová vlastní část XML s názvem 'Sestava'. Všimněte si, že připojená šablona aplikace Word obsahuje nejen rozvržení dokumentu, který chceme generovat jako ER výstup, ale zároveň i strukturu dat, která budou ER předána do této šablony za běhu.  
 2. Klikněte na Přílohy.
     * Nyní je třeba navázat prvky vlastní části XML Sestava na části dokumentu aplikace Word.  
-    * Pokud jste obeznámeni s dokumenty Word, které lze navrhovat jako formuláře obsahující ovládací prvky obsahu provázané s prvky vlastních částí XML, projděte si všechny kroky dalšího dílčího úkolu pro vytvoření takového dokumentu. Další informace naleznete na odkazu https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. V opačném případě přeskočte všechny kroky v dalším dílčím úkolu.  
+    * Pokud jste obeznámeni s dokumenty Word, které lze navrhovat jako formuláře obsahující ovládací prvky obsahu provázané s prvky vlastních částí XML, projděte si všechny kroky dalšího dílčího úkolu pro vytvoření takového dokumentu. Další informace naleznete na odkazu https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. V opačném případě přeskočte všechny kroky v dalším dílčím úkolu.  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>Získání aplikace Word s vlastní částí XML pro provedení vazby dat
     * Otevřete teno dokument v aplikaci Word a proveďte následující:  – Otevřete kartu Vývojář v aplikaci Word (přizpůsobte si pás karet, pokud není ještě povolena).  - Vyberte podokno mapování XML.  - Vyberte ve vyhledávacím poli vlastní část XML ‘Sestava’.  - Proveďte mapování prvků vybrané vlastní části XML a ovládacích prvků obsahu dokumentu aplikace Word.  - Uložte aktualizovaný dokument Word na místní disk.  
