@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 275855f2fb4d32df91449d7ebb9ad9ba2bd3f36b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6501e8d809d12df421ad081662d23a6b5005f39c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558542"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742129"
 ---
 # <a name="cost-objects"></a>Nákladové objekty
 
@@ -70,11 +70,11 @@ Následující tabulka zobrazuje, co je nákladový objekt a co je objekt zásob
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Skupina dimenzí produktů](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[Skupina dimenzí produktů](https://technet.microsoft.com/library/aa499382.aspx)
 
-[Skupina dimenze úložiště](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[Skupina dimenze úložiště](https://technet.microsoft.com/library/hh209317.aspx)
 
-[Skupina sledovací dimenze](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[Skupina sledovací dimenze](https://technet.microsoft.com/library/hh209465.aspx)
 
 [Co je nového a co se změnilo](../../fin-and-ops/get-started/whats-new-changed.md)
 

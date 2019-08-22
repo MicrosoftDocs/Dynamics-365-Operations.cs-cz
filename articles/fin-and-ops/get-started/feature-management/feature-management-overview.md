@@ -3,7 +3,7 @@ title: Přehled správy funkcí
 description: V tomto tématu je popsána funkce správy funkcí a její použití.
 author: mikefalkner
 manager: AnnBe
-ms.date: 06/14/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d6aea8651c00b975cf158492e38bb147e908bc56
-ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
+ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "1632046"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862931"
 ---
 # <a name="feature-management-overview"></a>Přehled správy funkcí
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Funkce se přidávají a aktualizují v každém vydání aplikace Microsoft Dynamics 365 for Finance and Operations. Rozhraní Správa funkcí poskytuje pracovní prostor, ve kterém si můžete prohlédnout seznam funkcí, které byly dodány v jednotlivých vydáních. Ve výchozím nastavení jsou nové funkce vypnuté. Pracovní prostor slouží k jejich zapnutí a zobrazení odpovídající dokumentace.
 
@@ -38,7 +39,7 @@ Pracovní prostor **Správa funkcí** lze otevřít výběrem příslušné dla�
 Seznam funkcí obsahuje následující informace:
 
 - **Název funkce** – Popis přidané funkce.
-- **Stav Povoleno** – symbol označuje, zda byla funkce zapnutá (zaškrtnutí), nebyla zapnutá (prázdné pole), byla naplánována pro zapnutí (hodiny) nebo je povinně zapnutá (zámek). Nastavení, které je zobrazeno zde, je použito pro všechny právnické osoby. Všimněte si, že i když byla funkce zapnuta, je stále řízena zabezpečením. Tato funkce bude proto k dispozici pouze pro uživatele, kteří k ní mají přístup, na základě své role zabezpečení. Bude také k dispozici pouze v právnických osobách, ke kterým má uživatel přístup.
+- **Stav Povoleno** – symbol označuje, zda byla funkce zapnutá (zaškrtnutí), nebyla zapnutá (prázdné pole), byla naplánována pro zapnutí (hodiny), je povinně zapnutá (zámek), vyžaduje pozornost před zapnutím (upozornění), nebo ji nelze povolit (X). Nastavení, které je zobrazeno, je použito pro všechny právnické osoby. Všimněte si, že i když byla funkce zapnuta, je stále řízena zabezpečením. Tato funkce bude proto k dispozici pouze pro uživatele, kteří k ní mají přístup, na základě své role zabezpečení. Bude také k dispozici pouze v právnických osobách, ke kterým má uživatel přístup.
 - **Datum povolení** – datum, kdy byla funkce zapnuta nebo na kdy je naplánováno zapnutí.
 - **Přidaná funkce** – Datum, kdy byla funkce přidána do vašeho prostředí. Toto datum je automaticky zadáno při aktualizaci prostředí během měsíčního vydání verze.
 - **Modul** – Modul, který je touto novou funkcí ovlivněn.
@@ -59,6 +60,10 @@ Není-li funkce zapnutá, zobrazí se v podokně podrobností tlačítko **Povol
 - Vyberte funkci, kterou chcete zapnout, a poté v podokně podrobností vyberte možnost **Povolit nyní.** Funkce se zapne.
 
 Některé funkce nelze po zapnutí vypnout. Pokud nelze vypnout funkci, kterou se pokoušíte zapnout, zobrazí se upozornění. V tomto okamžiku můžete vybrat možnost **Zrušit**, chcete-li operaci zrušit a ponechat funkci vypnutou. Pokud však vyberete možnost **Povolit** a povolíte funkci, nebude možné ji později vypnout.
+
+Před zapnutím některých funkcí se zobrazí zpráva, která obsahuje další informace. Tyto funkce jsou označeny symbolem žlutého upozornění. Pozorně si přečtěte další informace, abyste lépe pochopili, co se stane, když je funkce povolena. Chcete-li však funkci zapnout, můžete také vybrat možnost **Povolit**.
+
+Některé funkce zobrazí zprávu, že funkci lze povolit až po provedení akce. Tyto funkce jsou označeny symbolem červeného X. Před povolením funkce je nutné podniknout akce popsané v popisu. Pokud například nemůžete použít funkci, dokud není zakázán konfigurační klíč, je nutné nejprve zakázat konfigurační klíč a potom se vrátit ke správě funkcí a povolit tak funkci.
 
 Po zapnutí funkce se pod odkazem **Další informace** v podokně podrobností zobrazí zpráva. Tato zpráva buď uvádí, že funkce byla zapnutá, nebo uvádí budoucí datum, na kdy je naplánováno zapnutí funkce. Zobrazí se při každém výběru funkce v seznamu funkcí.
 
@@ -84,12 +89,28 @@ Po vypnutí funkce se pod odkazem **Další informace** v podokně podrobností 
 
 Někdy je doručena kritická funkce, která musí být povolena automaticky při provedení aktualizace. Tyto funkce budou automaticky zapnuty k datu, které je uvedeno v poli **Datum povolení**. Po povolení těchto funkcí se pod odkazem **Další informace** v podokně podrobností zobrazí zpráva. Tato zpráva buď uvádí, že funkce byla zapnutá, nebo uvádí budoucí datum, na kdy je naplánováno zapnutí funkce. Zobrazí se při každém výběru funkce v seznamu funkcí.
 
+## <a name="enable-all-features"></a>Povolení všech funkcí
+
+Ve výchozím nastavení jsou všechny funkce přidané do vašeho prostředí vypnuty. Chcete-li povolit všechny funkce, zvolte tlačítko **Povolit vše**. 
+
+Vyberete-li možnost **Povolit vše**, zobrazí se možnost, kde je třeba zadat následující informace:
+- Seznam všech funkcí, které vyžadují potvrzení před tím, než mohou být povoleny. Chcete-li povolit funkce v seznamu, vyberte možnost **Ano** pro tlačítko **Povolit funkce vyžadující potvrzení**.
+- Zobrazí se seznam všech funkcí, které nelze povolit. Tyto funkce nebudou povoleny.
+
+Budou povoleny všechny funkce, které lze povolit. Pokud je již v budoucnu naplánováno povolení funkce, plán se nezmění. 
+
 ## <a name="turn-on-all-features-automatically"></a>Automaticky zapnout všechny funkce
 
 Ve výchozím nastavení jsou všechny funkce přidané do vašeho prostředí vypnuty, pokud nejsou povinné. Chcete-li však automaticky zapnout všechny nové funkce, můžete pomocí rozevíracího seznamu pod názvem pracovního prostoru změnit, k čemu dojde při přidání nových funkcí.
 
 - Výběr **všech nových funkcí bude standardně aktivován** tak, aby při přidání do vašeho prostředí automaticky zapnul všechny nové funkce.
 - Výběr **všech nových funkcí bude standardně deaktivován** tak, aby při přidání do vašeho prostředí automaticky vypnul všechny nové funkce.
+
+Pokud povolíte všechny funkce automaticky, budou zapnuty všechny funkce, které by byly povoleny při kliknutí na tlačítko **Povolit vše**. Nepovolí se funkce vyžadující potvrzení nebo funkce, které nelze povolit, dokud nebude provedena akce.
+
+## <a name="check-for-updates"></a>Zkontrolovat aktualizace
+
+Funkce jsou přidány do vašeho prostředí po každé aktualizaci. Aktualizace však můžete zkontrolovat ručně kliknutím na tlačítko **Vyhledat aktualizace**. Všechny funkce, které byly přidány do systému po aktualizaci, budou přidány do seznamu funkcí. Pokud je například po uvolnění aktivována testovací funkce, můžete vyhledat aktualizace a funkce bude přidána do seznamu.
 
 ## <a name="assigning-roles"></a>Přiřazení rolí
 

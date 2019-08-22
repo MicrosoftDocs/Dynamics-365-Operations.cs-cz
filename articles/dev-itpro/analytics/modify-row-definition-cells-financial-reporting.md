@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551830"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863717"
 ---
 # <a name="modify-row-definition-cells"></a>Úprava buněk definice řádku
 
@@ -402,7 +402,7 @@ Buňka **Odkaz na finanční dimenze** obsahuje odkazy na finanční data, kter�
 2. Dvakrát klikněte na některou buňku ve sloupci **Odkaz na finanční dimenze**.
 3. V dialogovém okně **Dimenze** dvakrát klikněte na buňku pod názvem dimenze.
 4. V dialogovém okně pro dimenzi vyberte položku **Jednotlivec nebo rozsah**.
-5. V poli **Od** zadejte počáteční dimenzi nebo klikněte na tlačítko ![Procházet](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Procházet") a vyhledejte dostupné dimenze. Chcete-li zadat rozsah dimenzí, zadejte koncové dimenze do pole **Do**.
+5. V poli **Od** zadejte počáteční dimenzi nebo klikněte na tlačítko ![Procházet](media/browse.gif "Procházet") a vyhledejte dostupné dimenze. Chcete-li zadat rozsah dimenzí, zadejte koncové dimenze do pole **Do**.
 6. Kliknutím na tlačítko **OK** zavřete dialogové okno pro dimenzi. Dialogové okno **Dimenze** zobrazuje aktualizovanou dimenzi nebo rozsah.
 7. Kliknutím na tlačítko **OK** zavřete dialogové okno **Dimenze**.
 
@@ -479,7 +479,7 @@ Pole dialogového okna **Dimenze** jsou popsána v následující tabulce.
 
 | Položka                | Popis |
 |---------------------|-------------|
-| Jednotlivě nebo jako rozsah | Do pole **Od** zadejte název účtu nebo klikněte na tlačítko **Procházet** ![Procházet](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Procházet") k vyhledání účtu. K výběru rozsahu zadejte nebo vyhledejte hodnotu pro pole **Do**. |
+| Jednotlivě nebo jako rozsah | Do pole **Od** zadejte název účtu nebo klikněte na tlačítko **Procházet** ![Procházet](media/browse.gif "Procházet") k vyhledání účtu. K výběru rozsahu zadejte nebo vyhledejte hodnotu pro pole **Do**. |
 | Sada hodnot dimenzí | Do pole **Název** zadejte název sady hodnot dimenze. Chcete-li vytvořit, upravit, kopírovat nebo odstranit sadu, klikněte na tlačítko **Správa sad hodnot dimenzí**. Pole **Vzorec** je vyplněno vzorcem z buňky **Odkaz na finanční dimenze** pro tuto sadu hodnot dimenze v definici řádku. |
 | Sčítání na účtech   | V poli **Název** zadejte nebo vyhledejte dimenzi účtů součtů. Pole **Vzorec** je vyplněno vzorcem z buňky **Odkaz na finanční dimenze** pro tento účet součtů v definici řádku. |
 

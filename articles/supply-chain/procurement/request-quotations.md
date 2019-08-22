@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 714715ccfbdd57e4450c301f5302e008c0c136b1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6a904529dccbe392793d0d108335b623bb1ed8b2
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571995"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742532"
 ---
 # <a name="requests-for-quotation-rfqs"></a>Požadavky na nabídku
 
@@ -48,7 +48,7 @@ Případ požadavku na nabídku můžete vytvořit z plánovaných objednávek, 
 
 Po přípravě případu požadavku na nabídku a přidání dodavatelů vyberte **Odeslat** (**Odeslat a publikovat** pro veřejný sektor) v případu požadavku na nabídku. Deník požadavku na nabídku se vygeneruje pro každého dodavatele, kterému jste odeslali požadavek na nabídku. Můžete nakonfigurovat možnosti tisku pro akci Odeslat, aby se buď vytiskla sestava pro každého dodavatele do archivu nebo odeslala sestava na e-mailovou adresu každého dodavatele. Deník požadavku na nabídku pro každého dodavatele lze navíc použít k vytvoření sestavy, kterou lze odeslat nebo později znovu odeslat dodavateli. Také můžete nakonfigurovat akci Odeslat, aby se vygeneroval list odpovědí, který mohou dodavatelé vyplnit.
 
-V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li systém nastaven pro spolupráci dodavatelů, mohou dodavatelé zadávat nabídky přímo v aplikaci Microsoft Dynamics 365 for Finance and Operations. Další informace viz [Spolupráce dodavatelů se zákazníky](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
+V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li systém nastaven pro spolupráci dodavatelů, mohou dodavatelé zadávat nabídky přímo v aplikaci Microsoft Dynamics 365 for Finance and Operations. Další informace viz [Spolupráce dodavatelů se zákazníky](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
 
 Pokud musíte změnit požadavek na nabídku po jeho odeslání, můžete opět odeslat požadavek na nabídku dodavatelům po jeho dokončení s použitím dvou akcí úprav: Vytvoření a Dokončení.+
 
@@ -179,7 +179,7 @@ Pokud konfigurujete proces dodatku tak, aby byl více omezující, před úpravo
 
 Pokud nakonfigurujete proces dodatku tak, aby byl méně omezující, nemusíte zvolit **Vytvořit** předtím, než bude možné upravit pole v případu požadavku na nabídku, který již byl odeslán. Musíte však ručně přidat poznámku o změně do požadavku na nabídku a odeslat případ znovu. Počítejte s tím, že tento přístup lze použít pouze v případě, že žádná z odpovědí (nabídek) nebyla upravována. Pokud jste zadali odpověď a je ve stavu **Přijato**, tlačítko **Odeslat** není k dispozici. V takovém případě je nutné vybrat **Vytvořit** a pak **Dokončit**, jako to musíte provést ve více omezujícím procesu. Odpověď se potom resetuje, aby odrážela změny případu požadavku na nabídku.
 
-Pokud dodavatelé používají rozhraní dodavatelské spolupráce k zadávání nabídek, musíte vždy použít proces dodatku, abyste informovali dodavatele o změnách případu požadavku na nabídku. Tento proces pomáhá zabránit situaci, kdy dodavatelé vytvoří nabídku na zastaralý případ požadavku na nabídku, zatímco probíhá jejich nabídka. Další informace o dodavatelské spolupráci naleznete v tématu [Dodavatelská spolupráce s externími dodavateli](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Pokud dodavatelé používají rozhraní dodavatelské spolupráce k zadávání nabídek, musíte vždy použít proces dodatku, abyste informovali dodavatele o změnách případu požadavku na nabídku. Tento proces pomáhá zabránit situaci, kdy dodavatelé vytvoří nabídku na zastaralý případ požadavku na nabídku, zatímco probíhá jejich nabídka. Další informace o dodavatelské spolupráci naleznete v tématu [Dodavatelská spolupráce s externími dodavateli](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Pokud chcete pozvat další dodavatele k nabídce a nebyly provedeny žádné změny případu požadavku na nabídku, lze použít tlačítko **Odeslat**. Dodavatele, které jste přidali, se zobrazí na stránce **Odeslat** a dostanou pozvání e-mailem.
 

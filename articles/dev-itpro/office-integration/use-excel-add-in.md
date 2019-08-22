@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85cb5c5618346f1e5132f818911be21df86fbfcb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554983"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741103"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
 
@@ -60,7 +60,7 @@ Doplněk aplikace Excel automaticky načte data entity, kterou jste vybrali. Vš
 
 6. Zvolte **OK** a potom zvolením **Ano** potvrďte změnu. Doplněk aplikace Excel se restartuje a načte metadata.
 
-    Tlačítko **Návrh** je teď dostupné. Pokud má doplněk aplikace Excel tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Další informace naleznete v tématu "Zobrazuje se tlačítko Načíst aplety" v části e [Poradce při potížích](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) tohoto tématu.
+    Tlačítko **Návrh** je teď dostupné. Pokud má doplněk aplikace Excel tlačítko **Načíst aplety**, pravděpodobně nejste přihlášeni jako správný uživatel. Další informace naleznete v tématu "Zobrazuje se tlačítko Načíst aplety" v části e [Poradce při potížích](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) tohoto tématu.
 
 7. Zvolte **Návrh**. Doplněk aplikace Excel načte metadata entity.
 8. Zvolte **Přidat tabulku**. Zobrazí se seznam entit. Entity jsou uvedeny ve formátu "Název – popisek".

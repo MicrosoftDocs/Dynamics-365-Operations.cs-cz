@@ -3,25 +3,25 @@ title: Nastavit období vyrovnání DPH
 description: Období vyrovnání DPH obsahuje informace o intervalech období, pro které se musí DPH vykazovat a platit.
 author: twheeloc
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 08/05/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8304d9e8997a5d31740ee1203aa4bf0603014056
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569579"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862981"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Nastavit období vyrovnání DPH
 
@@ -50,6 +50,8 @@ Tento úkol používá ukázkovou společnost USMF.
 12. Zadejte počet jednotek intervalu období pro každé období. Například čtvrtletí má 3 měsíce.
 13. Zaškrtněte nebo zrušte zaškrtnutí políčka Použít dávkové zpracování pro vyrovnání DPH.
     * Proces vyrovnání pro období vyrovnání lze zpracovat jako dávkovou úlohu na pozadí. Tato možnost je vhodná velký počet daňových transakcí v rámci intervalu období.  
+    > [!NOTE]
+    > V současné době to není podporováno v Rakousku, Belgii, Španělsku, Itálii, Japonsku a Nizozemsku.
 14. Zaškrtněte nebo odškrtněte políčko Zabránit generování daňové transakce protiúčtu.
     * Ve výchozím nastavení systém generuje daňové transakce protiúčtu během procesu vyrovnání, což může způsobit problémy s výkonností, pokud je v určitém časovém intervalu velký počet daňových transakcí. Zaškrtněte toto políčko, abyste zabránili generování daňové transakce protiúčtu.
 15. Rozbalte kartu Intervaly období.

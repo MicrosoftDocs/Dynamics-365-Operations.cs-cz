@@ -1,71 +1,61 @@
 ---
 title: Vytvoření a přiřazení struktur rozšířeného pravidla
-description: Tento průvodce úkoly vás provede vytvářením a přiřazením struktury rozšířeného pravidla do účetní struktury.
+description: Toto téma vysvětluje, jak vytvořit pokročilou strukturu pravidel a přiřadit ji k účetní struktuře.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountRuleStructure, DimensionCreateAccountRuleStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate, DimensionConfigureAccountStructure, DimensionConfigureAccountRule, DimensionCreateAccountRule, DimensionSelectAccountRuleStructure
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd62254c20cf5d77677d03c7d7335fb793d7f5f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cff07c13553ea140f537160da7f93820d5e3f77a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558899"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834878"
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Vytvoření a přiřazení struktur rozšířeného pravidla
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento průvodce úkoly vás provede vytvářením a přiřazením struktury rozšířeného pravidla do účetní struktury. Tento průvodce používá ukázkovou společnost USMF.
-
+Toto téma vysvětluje, jak vytvořit pokročilou strukturu pravidel a přiřadit ji k účetní struktuře. Tento průvodce používá ukázkovou společnost USMF.
 
 ## <a name="create-an-advanced-rule-structure"></a>Vytvořit strukturu rozšířeného pravidla
-1. Přejděte do části Hlavní kniha > Účtová osnova > Struktury > Rozšířené struktury pravidel.
-2. Kliknutím na možnost Nový otevřete dialogové okno.
-3. V poli Rozšířené struktury pravidel zadejte název k popisu struktury pravidla.
-4. V poli Popis zadejte hodnotu k popisu struktury.
-5. Klepněte na tlačítko OK.
-6. Klepněte na Přidat segment.
-7. V seznamu segmentů vyberte finanční dimenzi.
-    * Například Obchod.  
-8. Klepněte na Přidat segment.
-9. Pro zobrazení klepněte v seznamu na odkaz struktura rozšířeného pravidla.
-10. Klepněte na tlačítko Aktivovat.
-11. Klepněte na tlačítko Aktivovat.
+1. Přejděte na **Navigační podokno > Moduly > Hlavní kniha > Účetní osnovy > Struktury > Pokročilé struktury pravidel**.
+2. Kliknutím na možnost **Nový** otevřete dialogové okno.
+3. V poli **Rozšířené struktury pravidel** zadejte název k popisu struktury pravidla.
+4. Vyberte **OK**.
+5. Vyberte **Přidat segment**.
+6. V seznamu segmentů vyberte finanční dimenzi. Například **Obchod**.  
+7. Vyberte **Přidat segment**.
+8. Vyberte **Aktivovat**.
 
 ## <a name="apply-an-advanced-rule-structure-to-an-account-structure"></a>Použití struktury rozšířeného pravidla na účetní strukturu
-1. Zavřete formulář.
-2. Zavřete stránku.
-3. Přejděte do části Hlavní kniha > Účtová osnova > Struktury > Konfigurovat účetní struktury.
-4. V seznamu vyhledejte a vyberte účetní struktury, na které chcete uplatnit rozšířené pravidlo.
-5. Účetní strukturu otevřete klepnutím na její název.
-6. Klikněte na položku Upravit.
-    * Můžete také klepnout na Rozšířená pravidla a budete vyzváni vložit účetní strukturu do stavu konceptu.  
-7. Klepněte na Rozšířená pravidla.
-8. Kliknutím na možnost Nový otevřete dialogové okno.
-9. Zadejte hodnotu do pole Rozšířené pravidlo.
-10. Zadejte hodnotu do pole Název.
-11. Klepněte na volbu Nový.
-12. Klepněte na Přidat nová kritéria.
-13. V poli Kde vyberte hlavní účet nebo finanční dimenzi.
-14. V poli Operátor vyberte možnost, jako je „mezi“ a „zahrnuje“.
-15. Zadejte hodnotu do pole Hodnota.
-16. Zadejte hodnotu do pole „prostřednictvím“.
-17. Klepnutím na možnost Přidat otevřete dialogové okno.
-18. V seznamu vyhledejte pokročilé pravidlo, které chcete použít, když jsou splněna zadaná kritéria.
-19. Klepněte na možnost Přidat.
-20. Zavřete stránku.
-21. Klepněte na tlačítko Aktivovat.
-22. Klepněte na tlačítko Aktivovat.
+1. Přejděte na **navigační podokno > Moduly > Hlavní kniha > Účetní osnovy > Struktury > Konfigurovat účetní struktury**.
+2. V seznamu vyhledejte a vyberte účetní struktury, na které chcete uplatnit rozšířené pravidlo.
+3. Vyberte možnost **Upravit**. Můžete také vybrat **Pokročilá pravidla** a budete vyzváni vložit účetní strukturu v **režimu konceptu**.  
+4. Vyberte **Upřesnit pravidla**.
+5. Kliknutím na možnost **Nový** otevřete dialogové okno.
+6. Zadejte hodnotu do pole **Upřesnit pravidlo**.
+7. Zadejte hodnotu do pole **Název**.
+8. Vyberte **Vytvořit**.
+9. Vyberte **Přidat nová kritéria**.
+10. V poli **Kde** vyberte hlavní účet nebo finanční dimenzi.
+11. V poli **Operátor** vyberte možnost, jako **je mezi** a **zahrnuje**.
+12. Zadejte hodnotu do pole **Hodnota**.
+13. Zadejte hodnotu do pole **prostřednictvím**.
+14. Kliknutím na **Přidat** otevřete dialogové okno pro přetažení.
+15. V seznamu vyhledejte pokročilé pravidlo, které chcete použít, když jsou splněna zadaná kritéria.
+16. Vyberte **přidat**.
+17. Zavřete stránku.
+18. Vyberte **Aktivovat**.
 

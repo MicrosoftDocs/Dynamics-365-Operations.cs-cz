@@ -1,6 +1,6 @@
 ---
 title: Upgrade plánování rozpočtu
-description: Existují významné rozdíly mezi plánování rozpočtu v aplikaci Microsoft DynamicsAX 2012 a Microsoft Dynamics 365 for Finance and Operations. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu.
+description: Existují významné rozdíly mezi plánování rozpočtu v aplikaci Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Finance and Operations. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu.
 author: ryansandness
 manager: AnnBe
 ms.date: 04/10/2017
@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 3d57419ca5c59be185c87b869302b41bef05a3c7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1cbc2468c0eb6cd70b9ea792c1b5eafa8652e59f
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554489"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851700"
 ---
 # <a name="upgrade-budget-planning"></a>Upgrade plánování rozpočtu
 
 [!include [banner](../includes/banner.md)]
 
-Existují významné rozdíly mezi plánování rozpočtu v aplikaci Microsoft DynamicsAX 2012 a Microsoft Dynamics 365 for Finance and Operations. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu.  
+Existují významné rozdíly mezi plánování rozpočtu v aplikaci Microsoft Dynamics AX 2012 a Microsoft Dynamics 365 for Finance and Operations. Některé funkce nebyly upgradovány a proto vyžadují rekonfiguraci. Toto téma vysvětluje, co je nutné rekonfigurovat, a také popisuje nové funkce, které mají být brány v úvahu po dokončení upgradu.  
 
 Plánování rozpočtu v aplikaci Microsoft Dynamics 365 for Finance and Operations obsahuje mnoho vylepšení, která nebyla k dispozici v aplikaci Microsoft Dynamics AX 2012. Toto téma vysvětluje změny, které musíte provést zákazníci, kteří upgradují. Rovněž zdůrazňuje nové funkce, které by měla být vzaty v úvahu při procesu upgradu. Z důvodu rozsahu změn nebude možné otevřít jakékoliv existující plány rozpočtu, dokud nebudou provedeny změny popsané v tomto tématu. Sestavy však budou fungovat a nebudou vyžadovat žádné změny.
 

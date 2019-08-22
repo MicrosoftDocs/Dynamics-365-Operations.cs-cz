@@ -3,28 +3,29 @@ title: Úlohy importu a exportu dat
 description: Použijte pracovní prostor Správa dat k vytvoření a správě úloh importu a exportu dat.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 07/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b16966fe1c3a48d772c7c9982f8802119675255f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505787"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862897"
 ---
 # <a name="data-import-and-export-jobs"></a>Úlohy importu a exportu dat
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Použijte pracovní prostor **Správa dat** k vytvoření a správě úloh importu a exportu dat v aplikaci Microsoft Dynamics 365 for Finance and Operations. Ve výchozím nastavení proces importu a exportu dat vytvoří tabulky fázování pro každou entitu v cílové databázi. Tabulky fázování umožňují ověřit, vyčistit anebo převést dat předtím, než budou přesunuta.
 
@@ -129,8 +130,8 @@ Organizace však může potřebovat mít týmy zpracovávající faktury podle p
 ## <a name="run-the-import-or-export-job"></a>Spuštění úlohy importu nebo exportu
 Spustit úlohu můžete jednou výběrem tlačítka **Importovat** nebo **Exportovat** poté, co nadefinujete úlohu. Chcete-li nastavit opakovanou úlohu, zvolte **Vytvořit opakovanou datovou úlohu**.
 
-[!NOTE]
-Úlohu importu nebo exportu lze spustit asynchronně výběrem tlačítka **Importovat** nebo **Exportovat**. Spuštění v asynchronním režimu používá asynchronní rozhraní v aplikaci Finance and Operations, která se liší od rozhraní dávek. Stejně jako rozhraní dávek však může asynchronní rozhraní projít omezeními a úlohy nelze proto provést okamžitě. Úlohy můžete také provádět synchronně výběrem **Importovat nyní** nebo **Exportovat nyní**. Úloha se spustí ihned a je to užitečné, pokud se asynchronní způsob nebo dávka nespustí z důvodu omezení. Úlohy mohou být provedeny také v dávce výběrem možnosti **Spustit v dávce**. Zdroje dávky podléhají omezení, takže dávková úloha nemusí začít okamžitě. Asynchronní možnost je užitečná, když uživatelé interagují s uživatelským rozhraním a nejsou uživatelé typu power pro pochopení plánování dávky. Použití dávky je alternativní možnost, pokud je třeba exportovat nebo importovat velké objemy. Dávkové úlohy lze naplánovat tak, aby se spouštěly na určité skupině dávek, což umožňuje větší kontrolu z pohledu vyvažování zátěže. Pokud asynchronní možnost a dávka procházejí omezením kvůli vysokému využití zdrojů v systému, lze jako okamžité řešení použít synchronní verzi importu/exportu. Synchronní možnost se spustí okamžitě a zablokuje uživatelské rozhraní, protože probíhá synchronně. Okna prohlížeče musí zůstat otevřené, když probíhá synchronní operace.
+> [!NOTE]
+> Úlohu importu nebo exportu lze spustit asynchronně výběrem tlačítka **Importovat** nebo **Exportovat**. Spuštění v asynchronním režimu používá asynchronní rozhraní v aplikaci Finance and Operations, která se liší od rozhraní dávek. Stejně jako rozhraní dávek však může asynchronní rozhraní projít omezeními a úlohy nelze proto provést okamžitě. Úlohy můžete také provádět synchronně výběrem **Importovat nyní** nebo **Exportovat nyní**. Úloha se spustí ihned a je to užitečné, pokud se asynchronní způsob nebo dávka nespustí z důvodu omezení. Úlohy mohou být provedeny také v dávce výběrem možnosti **Spustit v dávce**. Zdroje dávky podléhají omezení, takže dávková úloha nemusí začít okamžitě. Asynchronní možnost je užitečná, když uživatelé interagují s uživatelským rozhraním a nejsou uživatelé typu power pro pochopení plánování dávky. Použití dávky je alternativní možnost, pokud je třeba exportovat nebo importovat velké objemy. Dávkové úlohy lze naplánovat tak, aby se spouštěly na určité skupině dávek, což umožňuje větší kontrolu z pohledu vyvažování zátěže. Pokud asynchronní možnost a dávka procházejí omezením kvůli vysokému využití zdrojů v systému, lze jako okamžité řešení použít synchronní verzi importu/exportu. Synchronní možnost se spustí okamžitě a zablokuje uživatelské rozhraní, protože probíhá synchronně. Okna prohlížeče musí zůstat otevřené, když probíhá synchronní operace.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Ověření, zda byla úloha spuštěna podle očekávání
 Historie úloh je dostupná pro řešení potíží a analýzu na úlohách importu i exportu. Historie spuštění úloh je organizována podle časových rozsahů.
@@ -144,15 +145,17 @@ Spuštění každé úlohy poskytuje následující podrobnosti:
 
 Podrobnosti o spuštění zobrazují stav každé datové entity, kterou úloha zpracovala. Díky tomu můžete rychle vyhledat následující informace:
 
-- Jaké entity byly zpracovány
-- Kolik záznamů bylo pro danou entitu zpracováno a kolik se jich nezdařilo
-- Záznamy fázování pro každou entitu
+- Jaké entity byly zpracovány.
+- Kolik záznamů bylo pro danou entitu zpracováno a kolik se jich nezdařilo.
+- Záznamy fázování pro každou entitu.
 
 Můžete stáhnout data fázování do souboru pro úlohy exportu, nebo je můžete stáhnout jako balíček pro úlohy importu a exportu.
 
 Chcete-li znát podrobnosti spuštění, můžete rovněž otevřít protokol provádění.
 
 ## <a name="clean-up-the-staging-tables"></a>Vyčištění tabulek fázování
+Od aktualizace platformy 29 se tato funkce již nepoužívá. Je nahrazena novou verzí funkce Vyčištění historie úloh, která je vysvětlena níže.
+
 Můžete vyčistit tabulky fázování pomocí funkce **Vyčištění fázování** v pracovním prostoru **Správa dat**. Chcete-li zvolit, jaké záznamy by měly být odstraněny z konkrétní tabulky fázování, můžete použít následující možnosti:
 
 - **Entita** – Pokud je zadaná pouze entita, všechny záznamy z této tabulky fázování se odstraní. Zvolte tuto možnost, abyste vyčistili všechna data z entity napříč všemi datovými projekty a všemi úlohami.
@@ -160,3 +163,37 @@ Můžete vyčistit tabulky fázování pomocí funkce **Vyčištění fázován�
 - **Datové projekty** – Pokud je vybrán datový projekt, budou odstraněny všechny záznamy pro všechny entity a napříč všemi úlohami pro zvolený datový projekt.
 
 Také můžete kombinovat možnosti pro další omezení sady záznamů, která je odstraněna.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Vyčištění historie úloh (k dispozici v aktualizaci platformy 29 a novější)
+
+Funkce vyčištění historie úlohy ve správě dat musí být použita k naplánování pravidelného mazání historie provedení. Tato funkce nahrazuje předchozí funkci Vyčištění pracovní tabulky, která je nyní zastaralá. Následující tabulky budou vyčištěny procesem vyčištění.
+
+-   Všechny tabulky fází
+
+-   DMFSTAGINGVALIDATIONLOG
+
+-   DMFSTAGINGEXECUTIONERRORS
+
+-   DMFSTAGINGLOGDETAIL
+
+-   DMFSTAGINGLOG
+
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+
+-   DMFEXECUTION
+
+-   DMFDEFINITIONGROUPEXECUTION
+
+K funkci lze přistupovat z okna **Správa dat \> Vymazání historie úloh**.
+
+### <a name="scheduling-parameters"></a>Parametry plánování
+
+Při plánování procesu čištění je nutné zadat následující parametry definující kritéria pro vyčištění.
+
+-   **Počet dnů pro uchování historie** – toto nastavení slouží k řízení rozsahu historie provádění, která má být zachována. Specifikuje se v počtech dní. Pokud je úloha čištění naplánována jako opakovaná dávková úloha, toto nastavení bude fungovat jako neustálé přesouvání okna, takže vždy zůstala historie zadaného počtu dnů při odstranění zbývající položky. Výchozí hodnota je 7 dní.
+
+-   **Počet hodin pro provedení úlohy** – v závislosti na množství historie, která má být vyčištěna, se může celková doba provádění úlohy čištění pohybovat v rozsahu od několika minut až po několik hodin. Vzhledem k tomu, že je nutné provést vyčištění uvedených tabulek v případě, že v systému není žádná jiná aktivita správy dat, je důležité se ujistit, že úloha vyčištění byla spuštěna a dokončena před zahájením obchodní aktivity.
+
+    Maximální čas provedení lze určit nastavením maximálního počtu hodin, které musí úloha spustit pomocí tohoto nastavení. Logika čištění projde v čase s chronologicky uspořádaným pořadím jedno ID spuštění úlohy a nejstarší je nejprve pro vyčištění související historie spuštění. Ukončí vyzvednutí nového ID provedení vyčištění, když je zbývající doba trvání během posledních 10 % zadané doby trvání. V některých případech se očekává, že úloha vyčištění bude pokračovat i po uplynutí určené maximální doby. To bude převážně záviset na počtu záznamů, které mají být odstraněny pro aktuální ID spuštění, které bylo zahájeno před dosažením prahové hodnoty 10 %. Čištění, které bylo zahájeno, musí být dokončeno, aby byla zajištěna integrita dat, což znamená, že vyčištění bude pokračovat navzdory překročení stanoveného limitu. Po dokončení operace nebudou nová ID spuštění vydána a úloha vyčištění skončí. Zbývající historie spuštění, která nebyla vyčištěna z důvodu nedostatečné doby provádění, bude vybrána při příštím plánování úlohy čištění. Výchozí a minimální hodnota pro toto nastavení je 2 hodiny.
+
+-   **Opakovaná dávka** – úlohu čištění lze spustit jako jednorázové, ruční spuštění nebo je také možné naplánovat její opakované provedení v dávce. Dávku lze naplánovat pomocí nastavení **Spustit na pozadí**, což je standardní nastavení dávky.

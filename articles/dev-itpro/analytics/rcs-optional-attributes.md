@@ -1,5 +1,5 @@
 ---
-title: Příprava metadat specifických pro aplikaci pro RCS a ER
+title: Import souborů v XML formátu s volitelnými atributy
 description: Toto téma obsahuje informace o navrhování formátů elektronického výkaznictví, které určují atributy XML pro analýzu příchozích elektronických dokumentů ve formátu XML.
 author: NickSelin
 manager: AnnBe
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a6fc1e54444584895aa75ae91d39143f27e34d8
-ms.sourcegitcommit: d0fa7eb2166a30314205e7f70bbeaff6fbd5fb55
+ms.openlocfilehash: eb5d721784f45097ab466f75d43256495aac36ca
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "1726568"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849988"
 ---
-# <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Příprava metadat specifických pro aplikaci pro RCS a ER
+# <a name="import-files-in-xml-format-with-optional-attributes"></a>Import souborů v XML formátu s volitelnými atributy
 
 Formáty elektronického výkaznictví můžete navrhovat pro analyzování příchozích dokumentů ve formátu XML. Některé atributy prvků XML lze zadat v navrženém formátu elektronického výkaznictví jako volitelné. To vám umožní zpracovat správně příchozí soubory s takovými atributy XML a bez nich. Poté můžete obsah z těchto souborů použít k aktualizaci dat aplikace.
 
@@ -97,7 +97,7 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 5.  Klikněte na možnost **Uložit**.
 6.  Klikněte na možnost **Návrhář**.
 7.  Ve stromové struktuře rozbalte **formát**.
-8.  Ve stromovém zobrazení **format\root: XML Element(root)**.
+8.  Ve stromovém zobrazení rozbalte **format\root: XML Element(root)**.
 9.  Ve stromovém zobrazení vyberte **format\root: XML Element(root)\document: XML Element 1..* (document)**.
 10. Klikněte na **Vazba**.
 11. Ve stromovém zobrazení rozbalte **format\root: XML Element(root)\document: XML Element 1..* (document)**.

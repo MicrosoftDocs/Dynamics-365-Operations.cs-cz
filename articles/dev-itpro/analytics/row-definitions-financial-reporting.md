@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5b0b7b715bc2b3b90bcd6620c3fe0ad751313c06
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551594"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863741"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Definice řádku v návrháři finanční sestavy
 
@@ -161,7 +161,7 @@ Formátování určené v definici řádku přepíše formátování určené v 
 
 1. V Návrháři sestav otevřete definici řádků, kterou chcete změnit.
 2. Vyberte buňky k formátování. Chcete-li vybrat více buněk, podržte klávesu Ctrl a vyberte buňky.
-3. Na panelu nástrojů klikněte na tlačítko formátu, který chcete použít. Chcete-li například odsadit řádek, vyberte ho a klikněte na tlačítko **Zvětšit odsazení** ![Zvětšit odsazení](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zvětšit odsazení") na panelu nástrojů.
+3. Na panelu nástrojů klikněte na tlačítko formátu, který chcete použít. Chcete-li například odsadit řádek, vyberte ho a klikněte na tlačítko **Zvětšit odsazení** ![Zvětšit odsazení](media/indent.gif "Zvětšit odsazení") na panelu nástrojů.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Úprava sloupců během návrhu sestav
 

@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a4733dc4da7a8713ac7ddec5c96ae18c91edc18
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551736"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863664"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Uspořádání součástí zprávy v návrháři sestavy
 
@@ -50,7 +50,7 @@ Můžete seskupovat definice sestavy a generovat více sestav současně. Abyste
 ### <a name="create-a-report-group"></a>Vytvoření skupiny sestav
 
 1. V Návrháři sestav v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
-2. V nabídce **Soubor** klepněte na **Nový** &gt; **Definice skupiny sestav** a otevřete tak novou skupinu sestav v okně prohlížeče. Případně klikněte na tlačítko **Skupina sestav** ![Skupina sestav](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Skupina sestav") na panelu nástrojů.
+2. V nabídce **Soubor** klepněte na **Nový** &gt; **Definice skupiny sestav** a otevřete tak novou skupinu sestav v okně prohlížeče. Případně klikněte na tlačítko **Skupina sestav** ![Skupina sestav](media/report-group.gif "Skupina sestav") na panelu nástrojů.
 3. Klikněte na kartu **Skupina sestav**. Abyste přepsali informací v jednotlivých definicích sestavy pro generování této sestavy, zaškrtněte políčko **Přepsat nastavení společnosti, podrobností a data z jednotlivých definic sestavy**. Název společnosti, úroveň podrobností, nastavení předběžných údajů a datum jsou vyplněny automaticky, ale přesto můžete provést aktualizaci.
 4. Zaškrtněte políčko **Zahrnout všechny měny vykazování**, pokud chcete vygenerovat více sestav zobrazujících tyto měny. Více zobrazení pak bude k dispozici po kliknutí na tlačítko **Měna** ve Webovém prohlížeči při zobrazení sestavy.
 5. V poli **Sestavy ve skupině** kliknutím na tlačítko **Přidat** vyberte sestavy, které chcete zahrnout do skupiny sestav. Chcete-li vybrat více sestav v dialogovém okně **Přidat**, podržte klávesu Ctrl při výběru sestav. Po dokončení výběru sestav klepněte na tlačítko **OK**.
@@ -61,7 +61,7 @@ Můžete seskupovat definice sestavy a generovat více sestav současně. Abyste
 1. V Návrháři sestav v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
 2. Klikněte dvakrát na skupinu zásad, kterou chcete upravit.
 3. Klikněte na kartu **Skupina sestav** a proveďte požadované změny.
-4. V nabídce **Soubor** klikněte na příkaz **Uložit** pro uložení změněné skupiny sestav. Případně klikněte na tlačítko **Uložit** ![Uložit](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Uložit") na panelu nástrojů.
+4. V nabídce **Soubor** klikněte na příkaz **Uložit** pro uložení změněné skupiny sestav. Případně klikněte na tlačítko **Uložit** ![Uložit](media/save.gif "Uložit") na panelu nástrojů.
 
 > Pokud jste naplánovali sestavy tak, aby byly generovány v určitých intervalech, můžete přepsat tato nastavení a vygenerovat sestavu okamžitě.
 
@@ -69,7 +69,7 @@ Můžete seskupovat definice sestavy a generovat více sestav současně. Abyste
 
 1. V Návrháři sestav v navigačním podokně klikněte na tlačítko **Skupiny sestav**.
 2. Otevřete skupinu sestav k vygenerování.
-3. Klikněte na tlačítko **Generovat sestavu** ![Generovat sestavu](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generovat sestavu") pro generování sestav.
+3. Klikněte na tlačítko **Generovat sestavu** ![Generovat sestavu](media/generate-report.gif "Generovat sestavu") pro generování sestav.
 
 ### <a name="delete-a-report-group"></a>Odstranění skupiny sestav
 

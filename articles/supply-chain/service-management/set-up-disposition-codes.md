@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96fb8bd2ce7fed6962563773ad63a7a48943e1ca
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566487"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743180"
 ---
 # <a name="set-up-disposition-codes"></a>Nastavit dispoziční kódy 
 
@@ -48,11 +48,11 @@ Můžete také nastavit kód příčiny vysvětlující, proč bylo zboží vrá
 
 [Dispoziční kódy a kódy důvodu vrácení](disposition-and-return-reason-codes.md)
 
-[Dispoziční kódy (formulář)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))
+[Dispoziční kódy (formulář)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 
-[Automatické náklady (formulář)](https://technet.microsoft.com/en-us/library/aa582856\(v=ax.60\))
+[Automatické náklady (formulář)](https://technet.microsoft.com/library/aa582856\(v=ax.60\))
 
-[Externí kódy (formulář)](https://technet.microsoft.com/en-us/library/aa583814\(v=ax.60\))
+[Externí kódy (formulář)](https://technet.microsoft.com/library/aa583814\(v=ax.60\))
 
   
 

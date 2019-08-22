@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be23b99ddc224328cf067fe0bf36be93fcef4337
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561455"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846021"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronizace projektových smluv a projektů přímo z Project Service Automation do aplikace Finance and Operations
 
@@ -94,15 +94,15 @@ Když se použije řešení integrace Project Service Automation to Finance and 
 ## <a name="prerequisites-and-mapping-setup"></a>Nastavení mapování a předpokladů
 
 - Než dojde k synchronizaci projektů a projektových smluv, je nutné synchronizovat účty.
-- V nastavení připojení přidejte mapování pole integračního klíče pro **msdyn\_organizationalunits** do **msdyn\_name \[Name\]**. Nejprve bude pravděpodobně nutné přidat projekt k nastavení připojení. Další informace naleznete v tématu [Integrace dat do Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
-- V nastavení připojení přidejte mapování pole integračního klíče pro **msdyn\_projects** do **msdynce\_projectnumber \[Project Number\]**. Nejprve bude pravděpodobně nutné přidat projekt k nastavení připojení. Další informace naleznete v tématu [Integrace dat do Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+- V nastavení připojení přidejte mapování pole integračního klíče pro **msdyn\_organizationalunits** do **msdyn\_name \[Name\]**. Nejprve bude pravděpodobně nutné přidat projekt k nastavení připojení. Další informace naleznete v tématu [Integrace dat do Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+- V nastavení připojení přidejte mapování pole integračního klíče pro **msdyn\_projects** do **msdynce\_projectnumber \[Project Number\]**. Nejprve bude pravděpodobně nutné přidat projekt k nastavení připojení. Další informace naleznete v tématu [Integrace dat do Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 - **SourceDataID** pro projektové smlouvy a projekty může být aktualizováno na jinou hodnotu nebo odstraněno z mapování. Výchozí hodnota šablony je **Project Service Automation**.
 - Mapování **PaymentTerms** musí být aktualizováno tak, aby odráželo platné platební podmínky v aplikaci Finance and Operations. Dále je možné odebrat mapování z úkolu projektu. Výchozí mapa hodnot má výchozí hodnoty pro ukázková data. Následující tabulka zobrazuje hodnoty v Project Service Automation.
 
     | Hodnota | popis   |
     |-------|---------------|
     | 1     | Čistá 30        |
-    | 2     | 2%10, netto 30 |
+    | 2     | 2% 10, netto 30 |
     | 3     | Čistá 45        |
     | 4     | Čistá 60        |
 

@@ -1,53 +1,45 @@
 ---
 title: Vytvoření čárového kódu pro produkt
-description: Tato procedura ukazuje, jak ručně vytvořit čárový kód pomocí čísla položky M0001 jako příklad.
+description: Toto téma ukazuje, jak ručně vytvořit čárový kód pomocí čísla položky M0001 jako příklad.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ae2765a125045d60566267d01e380069d5d527c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55801b2355eeee7dc136a1812a68e825b99098a4
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568597"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844938"
 ---
 # <a name="create-a-bar-code-for-a-product"></a>Vytvoření čárového kódu pro produkt
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura ukazuje, jak ručně vytvořit čárový kód pomocí čísla položky M0001 jako příklad. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
+Toto téma ukazuje, jak ručně vytvořit čárový kód pomocí čísla položky M0001 jako příklad. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
-1. Klikněte na možnost Údržba uvolněného produktu.
-2. Klepněte na možnost Uvolněné produkty.
-3. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-4. V podokně akcí klikněte na možnost Spravovat sklad.
-5. Klikněte na Čárové kódy.
-6. Klepněte na možnost Nový.
-7. Označte v seznamu vybraný řádek.
-8. V poli Nastavení čárového kódu zadejte nebo vyberte hodnotu.
-9. V poli Čárový kód zadejte nebo vyberte hodnotu.
-10. Zadejte hodnotu do pole Čárový kód.
-    * Stiskněte klávesu Tab.  
-11. Zavřete stránku.
-12. Zadejte číslo do pole Množství.
-13. Klikněte na položku Uložit.
-    * Když klepnete na tlačítko Uložit, je spuštěna kontrola čárového kódu a v takovém případě se zobrazí chybová zpráva s informací, že očekávaná kontrolní číslice je 8, ale byla nalezena 3. Ručně aktualizujte číslo čárového kódu, aby bylo na konci číslo 8.  
-14. V poli Čárový kód zadejte nebo vyberte hodnotu.
-15. Zadejte hodnotu do pole Čárový kód.
-    * Stiskněte klávesu Tab.  
-16. Zavřete stránku.
-17. Klikněte na položku Uložit.
-18. Zavřete stránku.
+1. Na domovské stránce vyberte **Údržba uvolněného produktu**.
+2. Přejděte na **Produkty > Vydané produkty** v části **Odkazy**.
+3. Vyhledejte na seznamu požadovaný záznam a vyberte ho. V tomto příkladu vyberte číslo položky **M0001**.
+4. V podokně akcí klikněte na možnost **Spravovat sklad**.
+5. Vyberte **Čárové kódy**.
+6. Zvolte **Nové**.
+7. V seznamu níže označte vybraný řádek, který je vytvořen.
+8. V poli **Nastavení čárového kódu** zadejte nebo vyberte hodnotu.
+9. V poli **Čárový kód** zadejte nebo vyberte hodnotu.
+10. Do pole **Čárový kód** zadejte hodnotu.  
+11. Zadejte číslo do pole **Množství**.
+12. Zvolte **Uložit**.
+13. Zavřete stránku. 
 

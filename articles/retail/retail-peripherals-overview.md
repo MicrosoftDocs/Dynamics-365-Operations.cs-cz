@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
-ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
+ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624805"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742626"
 ---
 # <a name="retail-peripherals"></a>Periferní zařízení Retail
 
@@ -192,7 +192,7 @@ Můžete určit adresy IP síťových příslušenství na dvou místech. Pokud 
 
 #### <a name="modern-pos-for-android"></a>Modern POS pro Android
 
-Od verze 8.1.3 aplikace Dynamics 365 for Retail zahrnuje aplikace Modern POS for Android vestavěnou hardwarovou stanici IPC. Tato hardwarová stanice podporuje komunikaci se síťovými tiskárnami a platebními konektory. Další informace naleznete v [článku dokumentace Hybridní aplikace pro Android](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+Od verze 8.1.3 aplikace Dynamics 365 for Retail zahrnuje aplikace Modern POS for Android vestavěnou hardwarovou stanici IPC. Tato hardwarová stanice podporuje komunikaci se síťovými tiskárnami a platebními konektory. Další informace naleznete v [článku dokumentace Hybridní aplikace pro Android](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS a Modern POS for iOS
 
@@ -541,7 +541,7 @@ Tato konfigurace je nejtypičtější konfigurací tradičních pevných POS reg
 
 4. Klikněte na **Maloobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
 5. Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
-6. Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
+6. Vyberte plán distribuce **1070** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
 7. Instalace a aktivace moderní POS pro systém Windows.
 8. Spusťte moderní POS pro systém Windows spustit a začněte používat připojená periferní zařízení.
 

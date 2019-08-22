@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 37b338d5971395264bd2ff673ee7892814859846
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554432"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741152"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilní pracovní prostor adresáře společnosti
 
@@ -57,7 +57,7 @@ Před použitím tohoto mobilního pracovního prostoru musí být splněny nás
 </ul>
 </td>
 <td>Správce systému</td>
-<td>Pokud nemáte ve své organizaci nasazenou aplikaci Finance and Operations, nahlédněte do tématu <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí</a>. Pokud nemáte ve své organizaci nasazenou aplikaci Talent, správce systému může přistupovat ke zkušební verzi z <a href="https://www.microsoft.com/en-us/dynamics365/talent">webové stránky Talent</a>.
+<td>Pokud nemáte ve své organizaci nasazenou aplikaci Finance and Operations, nahlédněte do tématu <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí</a>. Pokud nemáte již ve své organizaci nasazenou aplikaci Talent, správce systému může přistupovat ke zkušební verzi z <a href="https://www.microsoft.com/dynamics365/talent">webové stránky Talent</a>.
 </td>
 </tr>
 <tr class="even">

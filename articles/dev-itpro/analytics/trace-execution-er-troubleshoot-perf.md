@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
-ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
+ms.openlocfilehash: 7ec16bea1e4f7685f95178f848ba7348a06c31f3
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "1703868"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741496"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sledování provádění formátů elektronického výkaznictví za účelem řešení potíží s výkonem
 
@@ -104,7 +104,7 @@ Předpokládejme, že jste dokončili návrh první verze řešení elektronick�
 ### <a id='import-configuration'></a>Import konfigurace elektronického výkaznictví z RCS do Finance and Operations
 
 1. Přihlaste se k instanci aplikace Finance and Operations.
-2. V tomto kurzu naimportujete konfigurace z vaší instance RCS (kde navrhujete komponenty elektronického výkaznictví) do své instance Finance and Operations (kde je otestujete a nakonec je použijete). Proto je nutné zajistit, aby byly připraveny všechny požadované artefakty. Další pokyny získáte v postupu [Import konfigurací elektronického výkaznictví ze služby RCS (Regulatory Configuration Services)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
+2. V tomto kurzu naimportujete konfigurace z vaší instance RCS (kde navrhujete komponenty elektronického výkaznictví) do své instance Finance and Operations (kde je otestujete a nakonec je použijete). Proto je nutné zajistit, aby byly připraveny všechny požadované artefakty. Další pokyny získáte v postupu [Import konfigurací elektronického výkaznictví ze služby RCS (Regulatory Configuration Services)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
 3. Pomocí následujícího postupu importujte konfigurace z RCS do Finance and Operations:
 
     1. V pracovním prostoru **Elektronické výkaznictví** na dlaždici pro poskytovatele konfigurace **Litware, Inc** . vyberte **Úložiště**.

@@ -1,53 +1,51 @@
 ---
 title: Nastavení srážkové daně
-description: Srážková daň je daň uvalená na dodavatele, která nevytváří transakce prodejní daně.
+description: Toto téma vysvětluje, jak nastavit srážkovou daň.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxWithholdTable, TaxWithholdData, TaxWithholdGroup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 382b6332665af2491563960a75d498a4f007aba8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 10e7018c79e54841d0729636b08ad475a94d20d5
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562781"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834727"
 ---
 # <a name="set-up-withholding-tax"></a>Nastavení srážkové daně
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Srážková daň je daň uvalená na dodavatele, která nevytváří transakce prodejní daně. Srážková daň vypočtená pro platby dodavatelů je povinná. Pro zaúčtování srážkové daně jsou proto platnými účty pouze účty rozvahy nebo závazků. Tento průvodce úkolem popisuje, jak nastavit srážkovou daň.
+Toto téma vysvětluje, jak nastavit srážkovou daň. *Srážková daň* je daň uvalená na dodavatele, která nevytváří transakce prodejní daně. Srážková daň vypočtená pro platby dodavatelů je povinná. Pro zaúčtování srážkové daně jsou proto platnými účty pouze účty rozvahy nebo závazků. Tento průvodce úkolem popisuje, jak nastavit srážkovou daň.
 
-1. Přejděte na Daň > Nepřímé daně > Srážková daň > Kódy srážkové daně.
-2. Klikněte na položku Nová.
-3. V poli Kód srážkové daně zadejte hodnotu.
-4. Do pole Název srážkové daně zadejte název kódu srážkové daně.
-5. V poli Hlavní účet vyberte hlavní účet pro zaúčtování povinnosti srážkové daně.
-6. Klikněte na položku Uložit.
-7. Klepněte na položku Hodnoty.
-8. Označte v seznamu vybraný řádek.
-9. V poli Hodnota zadejte procento používané pro výpočet srážkové daně.
-10. Klikněte na položku Uložit.
-11. Zavřete stránku.
-12. Klikněte na položku Uložit.
-13. Zavřete stránku.
-14. Přejděte na Daň > Nepřímé daně > Srážková daň > Skupiny srážkové daně.
-15. Klikněte na položku Nová.
-16. Do pole Skupina srážkové daně zadejte identifikátor skupiny srážkové daně.
-17. Do pole Popis zadejte název skupiny srážkové daně.
-18. Označte na seznamu vybraný řádek.
-19. V poli Kód srážkové daně vyberte kód srážkové daně.
-20. Klikněte na odkaz na vybraném řádku v seznamu.
-21. Klikněte na položku Uložit.
+1. Přejděte na **Navigační podokno > Moduly > Daň > Nepřímé daně > Srážková daň > Kódy srážkové daně**.
+2. Zvolte **Nové**.
+3. V poli **Kód srážkové daně** zadejte hodnotu.
+4. Do pole **Název srážkové daně** zadejte název kódu srážkové daně.
+5. V poli **Hlavní účet** vyberte hlavní účet pro zaúčtování povinnosti srážkové daně.
+6. Zvolte **Uložit**.
+7. V seznamu vyberte **Hodnoty** a označte požadovaný záznam.
+8. V poli **Hodnota** zadejte procento používané pro výpočet srážkové daně.
+9. Zvolte **Uložit**.
+10. Zavřete stránku.
+11. Zvolte **Uložit**.
+12. Zavřete stránku.
+13. Přejděte na **Navigační podokno > Moduly > Daň > Nepřímé daně > Srážková daň > Skupiny srážkové daně**.
+14. Zvolte **Nové**.
+15. Do pole **Skupina srážkové daně** zadejte identifikátor skupiny srážkové daně.
+16. Do pole **Popis** zadejte název skupiny srážkové daně.
+17. V poli **Kód srážkové daně** vyberte kód srážkové daně.
+18. Zvolte **Uložit**.
+19. Zavřete stránku.
 

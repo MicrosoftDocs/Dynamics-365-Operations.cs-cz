@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c526bc42595c20024016d0d7da78b8638b0daa4b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551664"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850090"
 ---
 # <a name="practice-manager-power-bi-content"></a>Obsah manažera školení v Power BI
 
@@ -54,7 +54,7 @@ Následující tabulka obsahuje podrobnosti o metrikách, které jsou k dispozic
 | EVM               | Stanovení nákladů a plánování indexu výkonnosti podle projektu |
 | Pracovní doba             | <ul><li>Skutečné fakturovatelné využité hodiny vs. skutečné fakturovatelné hodiny rozpočtu vs. hodiny rozpočtu</li><li>Skutečné fakturovatelné využité hodiny vs. skutečné fakturovatelné hodiny rozpočtu podle projektu</li><li>Skutečné fakturovatelné využité hodiny vs. skutečné fakturovatelné hodiny rozpočtu podle prostředku</li><li>Poměr skutečných fakturovatelných hodin podle projektu</li><li>Poměr skutečných fakturovatelných hodin podle prostředku</li></ul> |
 
-Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Můžete také použít základní funkci exportu dat pro export základních dat, jejichž souhrn je uveden ve vizualizaci.
+Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na řídicím panelu. Další informace o filtrování a ukotvení v Power BI naleznete v tématu [Vytvoření a konfigurace řídicího panelu](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Můžete také použít základní funkci exportu dat pro export základních dat, jejichž souhrn je uveden ve vizualizaci.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 
@@ -62,7 +62,7 @@ Následující data se používají k naplnění stránek sestavy v obsahu **Man
 
 V následujících oddílech jsou popsána agregační měření, která se používají v každé entitě.
 
-### <a name="entity-projectaccountingcubeactualhourutilization"></a>Entita: ProjectAccountingCube\_ActualHourUtilization
+### <a name="entity-projectaccountingcube_actualhourutilization"></a>Entita: ProjectAccountingCube\_ActualHourUtilization
 **Zdroj dat:** ProjEmplTrans
 
 | Klíčové měření agregace      | Pole                              | popis |
@@ -70,7 +70,7 @@ V následujících oddílech jsou popsána agregační měření, která se pou�
 | Skutečné fakturovatelné využité hodiny | Sum(ActualUtilizationBillableRate) | Součet skutečných fakturovatelných využitých hodin |
 | Skutečné fakturovatelné hodiny režie   | Sum(ActualBurdenBillableRate)      | Součet skutečné míry režie |
 
-### <a name="entity-projectaccountingcubeactuals"></a>Entita: ProjectAccountingCube\_Actuals
+### <a name="entity-projectaccountingcube_actuals"></a>Entita: ProjectAccountingCube\_Actuals
 **Zdroj dat:** ProjTransPosting
 
 | Klíčové měření agregace | Pole              | popis |
@@ -78,14 +78,14 @@ V následujících oddílech jsou popsána agregační měření, která se pou�
 | Skutečné výnosy            | Sum(ActualRevenue) | Součet zaúčtovaných výnosů pro všechny transakce. |
 | Skutečné náklady               | Sum(ActualCost)    | Součet zaúčtovaných nákladů pro všechny typy transakcí. |
 
-### <a name="entity-projectaccountingcubecustomer"></a>Entita: ProjectAccountingCube\_Customer
+### <a name="entity-projectaccountingcube_customer"></a>Entita: ProjectAccountingCube\_Customer
 **Zdroj dat:** CustTable
 
 | Klíčové měření agregace | Pole                                             | popis |
 |---------------------------|---------------------------------------------------|-------------|
 | Počet projektů        | COUNTA(ProjectAccountingCube\_Projects\[PROJECTS\]) | Počet dostupných projektů. |
 
-### <a name="entity-projectaccountingcubeforecasts"></a>Entita: ProjectAccountingCube\_Forecasts
+### <a name="entity-projectaccountingcube_forecasts"></a>Entita: ProjectAccountingCube\_Forecasts
 **Zdroj dat:** ProjTransBudget
 
 | Klíčové měření agregace | Pole                  | popis |
@@ -94,14 +94,14 @@ V následujících oddílech jsou popsána agregační měření, která se pou�
 | Rozpočtové výnosy            | Sum(BudgetRevenue)     | Celkový počet časově rozlišených/fakturovaných výnosů podle prognózy. |
 | Rozpočtová hrubá marže       | Sum(BudgetGrossMargin) | Rozdíl mezi součtem celkové prognózy výnosů a součtem celkových prognózovaných nákladů. |
 
-### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Entita: ProjectAccountingCube\_ProjectPlanCostsView
+### <a name="entity-projectaccountingcube_projectplancostsview"></a>Entita: ProjectAccountingCube\_ProjectPlanCostsView
 **Zdroj dat:** Project
 
 | Klíčové měření agregace | Pole                    | popis |
 |---------------------------|--------------------------|-------------|
 | Plánované náklady              | Sum(SumOfTotalCostPrice) | Celková nákladová cena v odhadech pro všechny typy transakcí projektu s plánovanými úlohami. |
 
-### <a name="entity-projectaccountingcubeprojects"></a>Entita: ProjectAccountingCube\_Projects
+### <a name="entity-projectaccountingcube_projects"></a>Entita: ProjectAccountingCube\_Projects
 **Zdroj dat:** Project
 
 | Klíčové měření agregace    | Pole | popis |
@@ -112,7 +112,7 @@ V následujících oddílech jsou popsána agregační měření, která se pou�
 | Skutečný poměr fakturovatelných hodin  | ProjectAccountingCube\_Projekty\[Celkové skutečné fakturovatelné využité hodiny projektu\] ÷ (ProjectAccountingCube\_Projekty\[Celkové skutečné fakturovatelné využité hodiny projektu\] + ProjectAccountingCube\_Projekty\[Celkové skutečné fakturovatelné hodiny režie\]) | Celkové skutečné fakturovatelné hodiny na základě využitých hodin a hodin režie. |
 | Získaná hodnota                 | ProjectAccountingCube\_Projekty\[Celkové plánované náklady na projekt\] * ProjectAccountingCube\_Projekty\[Procento dokončené práce\] | Celkové plánované náklady vydělené procentem dokončené práce. |
 
-### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Entita: ProjectAccountingCube\_TotalEstimatedCosts 
+### <a name="entity-projectaccountingcube_totalestimatedcosts"></a>Entita: ProjectAccountingCube\_TotalEstimatedCosts 
 **Zdroj dat:** ProjTable
 
 | Klíčové měření agregace       | Pole               | popis |

@@ -3,7 +3,7 @@ title: Konfigurace a spuštění úlohy pro zaúčtování výkazů
 description: Tento postup vás provede konfigurací a spuštěním opakované dávkové úlohy pro zaúčtování výkazů pro vybraný obchod nebo skupinu obchodů.
 author: josaw1
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 676216d90c50c0d3fa1a839cab7a734e624708ba
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a24014f7e1b925e0fdb20b91bcc9594feb8f4c5c
+ms.sourcegitcommit: fc40279d0e56f8a43c601bca6265fdde4c8c4c7e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550109"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "1792241"
 ---
 # <a name="configure-and-run-job-to-post-statements"></a>Konfigurace a spuštění úlohy pro zaúčtování výkazů
 
@@ -31,11 +31,12 @@ ms.locfileid: "1550109"
 Tento postup vás provede konfigurací a spuštěním opakované dávkové úlohy pro zaúčtování výkazů pro vybraný obchod nebo skupinu obchodů. Tato procedura používá v ukázkových datech společnost USRT.
 
 1. Přejděte na Všechny pracovní prostory > .. > Finance maloobchodu.
-2. Klikněte na Zaúčtovat výkazy.
+2. Klikněte na Zaúčtovat příkazy v dávkách.
     * Vyberte organizační hierarchii a poté ve stromu uzlů organizace vyberte jednotlivý obchod nebo do uzel. Pokud chcete vytvořit dávkovou úlohu pro skupinu obchodů, vyberte uzel.  
     * Kliknutím na šipku přidejte výběr.  
-3. Klikněte na kartu Spustit na pozadí.
+3. Klikněte na kartu Spustit na pozadí. ![Spustit na pozadí](../dev-itpro/media/runbackground.png "Spustit na pozadí") 
 4. Zaškrtněte nebo zrušte zaškrtnutí políčka Dávkové zpracování.
+![Dávkové zpracování](../dev-itpro/media/batchprocessing.png "Dávkové zpracování a opakování") 
 5. Klepněte na tlačítko Opakování.
 6. Zadejte datum do pole Počáteční datum.
 7. Zadejte čas do pole Počáteční čas.

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 94f8cf5b5753c530c42327e251a2102b876c1c8a
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606865"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863765"
 ---
 # <a name="loyalty-overview"></a>Přehled věrnostního programu
 
@@ -83,15 +83,15 @@ Retail obsahuje novou funkci věrnostního programu jako součást verze z říj
     > [!NOTE]
     > Pravidla příjmu v rámci věrnostního schématu jsou dodatečná. Například pokud vytvoříte pravidlo pro odměnu člena zlaté úrovně 10 bodů za každý americký dolar a také vytvoříte pravidlo pro zákazníka s přidělením veterána na odměnu za 5 bodů za každý dolar, pak veterán, který je také členem zlaté úrovně získá 15 bodů za 1 americký dolar, jelikož se zákazník kvalifikuje pro obě podmínky. Nicméně pokud by veteránský zákazník nebyl členem zlaté úrovně, pak by získal 5 bodů za každý dolar. Aby se projevily změny v kanálu, spusťte úlohy **Zpracovat věrnostní schémata** a **1050** (informace o věrnostním programu).
     
-    ![Příjmy podle přidělení](./media/Affiliation%20based%20earning.png "Příjmy podle přidělení")
+    ![Příjmy podle přidělení](./media/Affiliation-based-earning.png "Příjmy podle přidělení")
 
 - Maloobchodníci mají často speciální ceny pro určitou skupinu zákazníků, na kterou nechtějí používat věrnostní programy. Například velkoobchodníci nebo zaměstnanci, kteří dostávají zvláštní ceny a žádné věrnostní body. Běžně se „přidělení“ používají pro poskytnutí zvláštních cen takovým skupinám zákazníků. Pro omezení určité skupiny odběratelů při získávání věrnostních bodů může prodejce určit jedno nebo více přidělení v části věrnostního schématu **Vyloučená přidělení**. Tímto způsobem, když jsou zákazníci patřící do vyloučených přidělení stávajícími věrnostními členy, nebudou moci získat za své nákupy věrnostní body. Aby se projevily změny v kanálu, spusťte úlohy **Zpracovat věrnostní schémata** a **1050** (informace o věrnostním programu).
 
-    ![Vyloučená přidělení](./media/Excluded%20affiliations.png "Vyloučit přidělení ze získávání věrnostních bodů")
+    ![Vyloučená přidělení](./media/Excluded-affiliations.png "Vyloučit přidělení ze získávání věrnostních bodů")
     
 - Maloobchodní prodejci mohou generovat čísla věrnostních karet v kanálech. Před aktualizací v říjnu roku 2018 mohli maloobchodníci použít fyzické věrnostní karty nebo vygenerovat věrnostní kartu pomocí některých jedinečných informací o zákaznících, jako je například telefonní číslo. Chcete-li povolit automatické generování věrnostních karet v maloobchodních prodejnách, zapněte **Generovat číslo věrnostní karty** ve funkčním profilu, který je přidružen k obchodu. Pro online kanály mohou maloobchodní prodejci použít API rozhraní IssueLoyaltyCard pro vystavení věrnostních karet zákazníkům. Maloobchodní prodejci mohou buď zadat číslo věrnostní karty do tohoto rozhraní API, které se použije ke generování věrnostní kartu, nebo systém použije posloupnost čísel věrnostních karet v aplikaci Dynamics 365 for Retail. Pokud však není číselná řada k dispozici a prodejce neposkytne číslo věrnostní karty při volání rozhraní API, zobrazí se chyba.
 
-    ![Generování věrnostní karty](./media/Generate%20loyalty%20card.png "Automatické vygenerování čísla věrnostní karty")
+    ![Generování věrnostní karty](./media/Generate-loyalty-card.png "Automatické vygenerování čísla věrnostní karty")
 
 - Získané a uplatněné věrnostní body jsou nyní ukládány pro každou transakci a prodejní objednávky proti řádku prodeje, takže je možné refundovat nebo vzít zpět stejnou částku v případě úplného nebo částečného vrácení. Navíc viditelnost bodů na úrovni řádku prodej poskytuje uživatelům kontaktního střediska možnost odpovědět na otázky zákazníků o tom, kolik bodů bylo získáno nebo uplatněno za každý řádek. Před touto změnou byly body odměn vždy přepočítány během vrácení, což vedlo k odlišné částce než původní, pokud se změnila pravidla získávání nebo uplatnění, a také uživatelé kontaktního střediska neměli viditelnost v rozdělení bodů. Body lze zobrazit ve formuláři **Transakce karty** pro každou věrnostní kartu. Chcete-li povolit tuto funkci, zapněte konfiguraci **Zaúčtovat věrnostní body pro prodejní řádek** na kartě **Sdílené parametry maloobchodu** \> **Obecné**.
 
@@ -100,26 +100,26 @@ Retail obsahuje novou funkci věrnostního programu jako součást verze z říj
 
 - Maloobchodní prodejci nyní mohou určit období připsání pro každý bod odměny. Konfigurace období připsání určí trvání od data získání, po kterém budou k dispozici body odměny pro zákazníky. Neudělené body lze zobrazit ve sloupci **Neudělené body** na stránce **Věrnostní karty**. Maloobchodní prodejci kromě toho mohou definovat maximální limit bodů věrnostní odměny na věrnostní kartu. Toto pole lze použít ke snížení dopadu podvodu s věrnostními body. Po dosažení maximálního počtu bodů odměn nemůže uživatel získat další body. Prodejce se může rozhodnout takovou kartu blokovat, dokud neprošetří možný podvod. Pokud prodejce zjistí podvod, nemůže pouze zablokovat věrnostní kartu zákazníka, ale musí také označit zákazníka jako blokovaného. To se provede nastavením vlastnosti **Blokovat zákazníka pro registraci k věrnostnímu programu** na **Ano** v rámci možnosti **Všichni odběratelé** na pevné záložce **Maloobchod**. Blokovaným zákazníkům nebude možné vystavit věrnostní kartu v žádném z kanálů.
 
-    ![Připsání bodů a jejich maximální počet](./media/Vesting%20and%20maximum%20reward%20points.png "Definování připsání bodů a jejich maximálního počtu")
+    ![Připsání bodů a jejich maximální počet](./media/Vesting-and-maximum-reward-points.png "Definování připsání bodů a jejich maximálního počtu")
 
 - Přidělení se používají k poskytnutí speciálních cen a slev, ale existují některá přidělení, u kterých maloobchodní prodejci nechtějí, aby je viděli zákazníci. Například přidělení s názvem Zákazník s vysokou útratou nemusí být některými zákazníky dobře vnímáno. Kromě toho existují určitá přidělení, která by neměla být spravována v obchodě, například zaměstnanci, protože nechcete, aby pokladníci rozhodovali o tom, kdo je zaměstnancem a tudíž poskytovali slevy na základě zaměstnání. Maloobchodní prodejci nyní mohou vybrat přidělení, která mají být skryta ve maloobchodní síti. Umístění označen jako **Skrýt v kanálech** nelze zobrazit, přidat nebo odebrat v POS. Ceník a slevy přidružené k přidělení se však na produkty budou i nadále vztahovat.
 
-    ![Skrýt přidělení](./media/Hide%20affiliations.png "Skrýt přidělení v kanálech")
+    ![Skrýt přidělení](./media/Hide-affiliations.png "Skrýt přidělení v kanálech")
     
 - Uživatelé kontaktního střediska mohou nyní snadněji vyhledat zákazníka pomocí informací o jeho věrnostní kartě a přejít na stránky věrnostní karty zákazníka a stránky transakcí věrnostních karet ze stránky **Odběratelský servis**.
 
-    ![Odběratelský servis](./media/Customer%20service.png "Vyhledat informace o věrnostním programu pro zákazníka")
+    ![Odběratelský servis](./media/Customer-service.png "Vyhledat informace o věrnostním programu pro zákazníka")
     
 - Pokud je věrnostní karty porušena, je třeba vygenerovat náhradní kartu a převést existující body na novou kartu. V této verzi byl tok náhrady karty zjednodušen. Navíc zákazníci mohou věnovat některé nebo všechny své věrnostní body přátelům nebo rodině. Když jsou body převedeny, položky úprav bodů jsou vytvořeny pro jednotlivé věrnostní karty. K funkcím náhradní karty a převodu zůstatku lze přistoupit ze stránky **Věrnostní karty**.
 
-    ![Náhrada a převod bodů](./media/Replace%20and%20transfer%20points.png "Náhrada věrnostní karty nebo převod zůstatku")
+    ![Náhrada a převod bodů](./media/Replace-and-transfer-points.png "Náhrada věrnostní karty nebo převod zůstatku")
     
 - Maloobchodní prodejci mohou chtít zaznamenat účinnost určitého kanálu pro registraci zákazníků do věrnostního programu. Zdroj registrace pro věrnostní karty je nyní uložen, aby maloobchodní prodejci mohli na těchto datech spouštět sestavy. Zdroj registrací je automaticky zaznamenán pro všechny vydané věrnostní karty z kanálů MPOS/CPOS nebo e-Commerce. Pro věrnostní karty vydané z aplikace účetního systému může uživatel kontaktního střediska vybrat příslušný kanál.
 - V předchozích verzích maloobchodní prodejci mohli použít MPOS/CPOS pro uplatnění věrnostních bodů pro zákazníky v obchodě. Nicméně v těchto verzích, protože věrnostní zůstatek je zobrazen ve věrnostních bodech, pokladník nemohl zobrazit částku hodnoty měny, která by mohla být použita na aktuální transakci. Pokladník musel před vyplacením podle věrnostních bodů provést měnový převod bodů. V aktuálním vydání, po přidání řádků do transakce, může pokladník zobrazit částku, kterou věrnostní body mohou pokrýt pro aktuální transakci, což usnadňuje použití některých nebo všech věrnostních bodů na transakci. Navíc může pokladník zobrazit body, které vyprší v příštích 30 dnech, takže mohou provést následný a křížový prodej pro motivaci zákazníka, aby utratil body, jejichž platnost vyprší, při této transakci.
 
-    ![Body pokryté věrnostním zůstatkem](./media/Points%20covered%20by%20loyalty%20balance.png "Zobrazit zůstatek pokrytý věrnostními body")
+    ![Body pokryté věrnostním zůstatkem](./media/Points-covered-by-loyalty-balance.png "Zobrazit zůstatek pokrytý věrnostními body")
 
-    ![Body s končící platností](./media/Expiring%20points.png "Zobrazení bodů s končící platností")
+    ![Body s končící platností](./media/Expiring-points.png "Zobrazení bodů s končící platností")
 
 - Ve verzi 8.1.3 jsme povolili možnost platby podle věrnosti v kanálu telefonického centra. Chcete-li tuto možnost povolit, vytvořte typ věrnostní úhrady a spojte ho s kontaktním střediskem. 
 

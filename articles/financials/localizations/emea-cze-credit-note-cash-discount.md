@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters, PrintMgmtSetupUIMain, Reasons
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 273063
 ms.search.region: Czech Republic
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 64aa64cd487dfed1f8930a868da37e93761c2dd3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4e65de358d5635e5fac138123f14644712385aae
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550763"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852267"
 ---
 # <a name="credit-note-on-cash-discount"></a>Dobropis u hotovostní slevy
 
