@@ -26,9 +26,10 @@
       href: retail-support.md
     - name: Často kladené dotazy k aktualizacím služby One Version
       href: ../fin-and-ops/get-started/one-version.md
-- name: Vysvětlení životního cyklu implementace
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+- name: Implementace správy životního cyklu
   items:
+    - name: Domovská stránka Implementace správy životního cyklu
+      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
     - name: Microsoft FastTrack for Dynamics 365
       href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
     - name: Zaškolení
@@ -165,6 +166,8 @@
       href: retail-hardware-station-configuration-installation.md
     - name: Čas a docházka v aplikaci Retail
       href: retail-time-attendance.md
+    - name: Vytvoření a změna pracovní doby obchodu
+      href: dev-itpro/store-hours.md
 - name: Modern Point of Sale (MPOS) a Cloud POS
   items:
     - name: Výběr mezi MPOS a Cloud POS
@@ -317,8 +320,10 @@
       href: create-manage-attributes.md
     - name: Nastavení maloobchodních produktů
       href: set-up-retail-products.md
-    - name: Správa kategorií produktů a produktů v aplikaci Retail
+    - name: Správa maloobchodních kategorií produktů a produktů
       href: category-management-product-creation.md
+    - name: Změna pořadí řazení pro maloobchodní entity
+      href: custom-order-categories-nav-retail-prod-hierarchy.md
     - name: Dimenze produktu
       href: ../supply-chain/pim/product-dimensions.md
     - name: Nastavení čárových kódů
@@ -500,8 +505,9 @@
     - name: Konfigurace maloobchodních pracovníků
       href: tasks/worker.md
 - name: Vývoj a správa v aplikaci Retail
-  href: dev-itpro/dev-retail-home-page.md
   items:
+    - name: "Retail pro IT odborníky a\_vývojáře"
+      href: dev-itpro/dev-retail-home-page.md
     - name: Architektura
       items:
         - name: Komponenty aplikace Retail
@@ -598,6 +604,8 @@
           href: dev-itpro/view-pos-extension-package-details.md
     - name: Hardware Station a rozšiřitelnost
       href: dev-itpro/hardware-station-extensibility.md
+    - name: Integrace POS s novým hardwarovým zařízením
+      href: dev-itpro/hardware-device-extension.md
     - name: Rozšiřitelnost serveru Retail Server
       items:
         - name: Rozšíření kontroloru Retail Server OData
@@ -655,8 +663,9 @@
         - name: Povolení ochrany před duplicitní platbou pro platební konektor
           href: dev-itpro/duplicate-payment-protection.md
     - name: Retail SDK
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Architektura Retail SDK
+          href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Nadcházející změny v Retail SDK
           href: dev-itpro/UpcomingSDKChanges.md
         - name: Sloučení systémů sestavení pro Retail a Finance and Operations
@@ -667,9 +676,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Vzory sady Retail SDK
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
-          items:
-            - name: Body rozšíření pro dodací listy
-              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Body rozšíření pro dodací listy
+          href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Rozšíření databáze kanálů
           href: dev-itpro/channel-db-extensions.md
         - name: Povolení vlastní CDX synchronizace prostřednictvím rozšíření

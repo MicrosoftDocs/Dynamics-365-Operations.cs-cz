@@ -1,20 +1,23 @@
 - name: Dynamics 365 for Finance and Operations
-  href: index.md
   items:
+    - name: Dokumentace pro Dynamics 365 for Finance and Operations
+      href: index.md
     - name: Začínáme
       items:
         - name: Před zakoupením
-          href: get-started/before-you-buy.md
           items:
+            - name: Domovská stránka Před zakoupením
+              href: get-started/before-you-buy.md
             - name: Registrace ukázkového předplatného
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
             - name: Nasazení ukázkového prostředí
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Srovnání funkcí cloudu a on-premises
               href: get-started/cloud-prem-comparison.md
-            - name: Možnosti nasazení
-              href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
+            - name: Zvažování nasazení
               items:
+                - name: Možnosti nasazení
+                  href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
                 - name: Cloudové nasazení
                   href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/fin-and-ops/toc.json
                 - name: Systémové požadavky pro nasazení cloudu
@@ -36,8 +39,9 @@
                 - name: Zakoupení aplikace Finance and Operations (on-premises)
                   href: get-started/purchase-on-premises.md
         - name: Co je nového a co se změnilo
-          href: get-started/whats-new-changed.md
           items:
+            - name: Domovská stránka Co je nového a co se změnilo
+              href: get-started/whats-new-changed.md
             - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
               href: get-started/mainstream-support-ax-2009-2012.md
             - name: Odstraněné nebo zastaralé funkce
@@ -140,6 +144,8 @@
                   href: get-started/new-task-guides-available-february-2016.md
         - name: Prozkoumání uživatelského rozhraní
           items:
+            - name: Prvky uživatelského rozhraní
+              href: get-started/user-interface-elements.md
             - name: Funkce usnadnění přístupu
               href: get-started/accessibility-features.md
             - name: Přehled správy funkcí
@@ -197,8 +203,9 @@
         - name: Videa pro aplikaci Finance and Operations
           href: get-started/videos.md
     - name: Implementace správy životního cyklu
-      href: imp-lifecycle/implementation-lifecycle.md
       items:
+        - name: Domovská stránka Implementace správy životního cyklu
+          href: imp-lifecycle/implementation-lifecycle.md
         - name: Architektura Finance and Operations
           href: imp-lifecycle/architecture-overview.md
         - name: Microsoft FastTrack for Finance and Operations
@@ -224,8 +231,9 @@
         - name: Více LCS projektů a produkčních prostředí na jednom klientovi služby Azure AD
           href: get-started/implement-multiple-projects-aad-tenant.md
     - name: Aktualizace služby One Version
-      href: ../dev-itpro/lifecycle-services/oneversion-overview.md
       items:
+        - name: Přehled aktualizace služby One Version
+          href: ../dev-itpro/lifecycle-services/oneversion-overview.md
         - name: Často kladené dotazy k aktualizacím služby One Version
           href: get-started/one-version.md
         - name: Zásady životního cyklu softwaru - Cloud
@@ -246,17 +254,12 @@
           href: ../dev-itpro/data-entities/data-task-automation.md
         - name: Doručení řešení nezávislých výrobců softwaru pomocí One Version
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: Automatizace testování
-          items:
-            - name: Vytvoření a automatizace akceptačních testování uživatele
-              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Nastavení kurzu pro nástroj Regression Suite Automation Tool
-              href: get-started/hol-set-up-regression-suite-automation-tool.md
-            - name: Použití kurzu pro nástroj Regression Suite Automation Tool
-              href: get-started/hol-use-regression-suite-automation-tool.md
+        - name: Vytvoření a automatizace akceptačních testování uživatele
+          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
     - name: Obchodní události
-      href: ../dev-itpro/business-events/home-page.md
       items:
+        - name: Přehled obchodních událostí
+          href: ../dev-itpro/business-events/home-page.md
         - name: Obchodní události aplikace
           href: ../dev-itpro/business-events/app-business-events.md
         - name: Obchodní události workflow
@@ -273,22 +276,34 @@
           href: ../dev-itpro/business-events/potential-use-cases.md
         - name: Kurzy
           items:
-            - name: Využití obchodních událostí pomocí Microsoft Flow
+            - name: Obchodní události a Microsoft Flow
               href: ../dev-itpro/business-events/how-to/how-to-flow.md
-            - name: Využití obchodních událostí pomocí Azure Event Grid
+            - name: Obchodní události a Azure Event Grid
               href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
-            - name: Využití obchodních událostí pomocí Azure Service Bus
+            - name: Obchodní události a Azure Service Bus
               href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
-            - name: Využití obchodních událostí schválení workflow
+            - name: Obchodní události a schválení workflow
               href: ../dev-itpro/business-events/how-to/how-to-workflow.md
-            - name: Použití Microsoft Forms Pro s obchodními událostmi
+            - name: Obchodní události a Microsoft Forms Pro
               href: ../dev-itpro/business-events/how-to/FormsPro.md
-    - name: Správa nákladů
-      href: ../supply-chain/cost-management/cost-management-home-page.md
+            - name: Obchodní události a Azure Event Hubs
+              href: ../dev-itpro/business-events/how-to/event-hub.md
+    - name: Dodržování předpisů
       items:
+        - name: Pravidla zásad auditu
+          href: ../financials/general-ledger/audit-policy-rules.md
+        - name: Porušení a případy zásad auditu
+          href: ../financials/general-ledger/audit-policy-violations-cases.md
+        - name: Definování zásad auditu pro zdrojové dokumenty
+          href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+    - name: Správa nákladů
+      items:
+        - name: Domovská stránka Správa nákladů
+          href: ../supply-chain/cost-management/cost-management-home-page.md
         - name: Předpoklady pro standardní náklady
-          href: ../supply-chain/cost-management/prerequisites-standard-costs.md
           items:
+            - name: Přehled předpokladů pro standardní náklady
+              href: ../supply-chain/cost-management/prerequisites-standard-costs.md
             - name: Přehled převodu standardních nákladů
               href: ../supply-chain/cost-management/standard-cost-conversion-overview.md
             - name: Předpoklad pro převod standardních nákladů
@@ -308,8 +323,9 @@
             - name: Postup přípravy na správu standardních nákladů pro vyráběné položky
               href: ../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md
         - name: Nákladové verze
-          href: ../supply-chain/cost-management/costing-versions.md
           items:
+            - name: Přehled verzí výpočtu nákladů
+              href: ../supply-chain/cost-management/costing-versions.md
             - name: Nákladové formuláře
               href: ../supply-chain/cost-management/costing-sheets.md
             - name: Simulace změn nákladů pomocí nákladové verze pro plánované náklady
@@ -397,8 +413,9 @@
             - name: Balíček správy dat REST API
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Koncové body služeb
-              href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Přehled koncových bodů služeb
+                  href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
                 - name: Řešení problému s ověřením služby
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: OData
@@ -414,8 +431,9 @@
         - name: Vývoj pro integraci
           items:
             - name: "Integrace dat s\_použitím datových entit"
-              href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
               items:
+                - name: "Přehled integrace dat s\_použitím datových entit"
+                  href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
                 - name: Vývoj entity pro migraci dat
                   href: ../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
                 - name: Vývoj kombinovaných datových entit
@@ -428,7 +446,7 @@
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: Integrace dat pomocí Common Data Service
               items:
-                - name: Přehled integrace dat
+                - name: Přehled integrace dat pomocí Common Data Service
                   href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
                 - name: Synchronní obousměrná integrace
                   items:
@@ -448,9 +466,9 @@
                       href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
                 - name: Asynchronní jednosměrná integrace
                   items:
-                    - name: Zpeněžení potenciálního zákazníka
+                    - name: Konfigurace scénáře zpeněžení potenciálního zákazníka
                       items:
-                        - name: Konfigurace scénáře zpeněžení potenciálního zákazníka
+                        - name: Zpeněžení potenciálního zákazníka
                           href: ../supply-chain/sales-marketing/prospect-to-cash.md
                         - name: "Synchronizace obchodních vztahů přímo z\_aplikace Sales na odběratele v\_aplikaci Finance and Operations"
                           href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
@@ -464,9 +482,9 @@
                           href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
                         - name: "Synchronizace hlaviček a\_řádků prodejní faktury přímo z\_aplikace Finance and Operations do aplikace Sales"
                           href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                    - name: Field Service
+                    - name: Konfigurace integrace se službou Field Service
                       items:
-                        - name: Konfigurace integrace se službou Field Service
+                        - name: Přehled konfigurace integrace se službou Field Service
                           href: ../supply-chain/sales-marketing/field-service.md
                         - name: "Synchronizace produktů v\_aplikaci Finance and Operations do produktů ve službě Field Service"
                           href: ../supply-chain/sales-marketing/field-service-product.md
@@ -486,9 +504,9 @@
                           href: ../supply-chain/sales-marketing/synchronize-warehouse.md
                         - name: Synchronizace pracovních příkazů s projektem z aplikace Field Service do Finance and Operations
                           href: ../supply-chain/sales-marketing/synchronize-work-orders.md
-                    - name: Project Service Automation
+                    - name: Konfigurace integrace Project Service Automation
                       items:
-                        - name: Konfigurace integrace Project Service Automation
+                        - name: Přehled Project Service Automation
                           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
                         - name: Parametry integrace Project Service Automation
                           href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
@@ -507,16 +525,19 @@
         - name: Elektronické zprávy
           href: ../financials/general-ledger/electronic-messaging.md
     - name: Správa dat
-      href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Přehled správy dat
+          href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
         - name: Datové entity
-          href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Přehled datových entit
+              href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
             - name: Konfigurace datových projektů
               href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
             - name: Zkopírování dat konfigurace mezi společnostmi nebo právnickými osobami
-              href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Přehled kopírování konfiguračních dat
+                  href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
                 - name: Balíčky dat konfigurace
                   href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Balíčky dat konfigurace (pouze vydání z července 2017)
@@ -538,8 +559,9 @@
             - name: Balíčky dat konfigurace
               href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
         - name: "Úlohy importu a\_exportu dat"
-          href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
           items:
+            - name: "Přehled úloh importu a\_exportu dat"
+              href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
             - name: Osvědčené postupy pro import dokladů pomocí entity hlavního deníku
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Vývoj pro datové entity
@@ -581,16 +603,19 @@
         - name: Popisy chyb správy dat
           href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Správa financí
-      href: ../financials/index.md
       items:
+        - name: Domovská stránka Správy financí
+          href: ../financials/index.md
         - name: Závazky
-          href: ../financials/accounts-payable/accounts-payable.md
           items:
+            - name: Domovská stránka Závazků
+              href: ../financials/accounts-payable/accounts-payable.md
             - name: Přehled faktur dodavatele
               href: ../financials/accounts-payable/vendor-invoices-overview.md
             - name: Konfigurace závazků
-              href: ../financials/accounts-payable/accounts-payable-overview.md
               items:
+                - name: Přehled konfigurace závazků
+                  href: ../financials/accounts-payable/accounts-payable-overview.md
                 - name: "Zadání dat faktury do závazků s\_použitím faktury dodavatele"
                   href: ../financials/accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
                 - name: "Zadání dat faktury do závazků s\_použitím deníku schválení"
@@ -603,9 +628,10 @@
               href: ../financials/general-ledger/tasks/audit-invoices-key-data-ap-system.md
             - name: Zásady třícestného párování
               href: ../financials/accounts-payable/three-way-matching-policies.md
-            - name: Porovnání faktur závazků
-              href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
+            - name: Párování faktur závazků
               items:
+                - name: Přehled párování faktur závazků
+                  href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
                 - name: Nastavení ověření párování faktur závazků
                   href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
             - name: Rozúčtování a položky dílčí hlavní knihy pro faktury dodavatele
@@ -625,8 +651,9 @@
             - name: Workflow dodavatele
               href: ../financials/accounts-payable/vendor-workflow.md
             - name: Řešení nesrovnalostí během párování součtů faktur
-              href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
               items:
+                - name: Přehled řešení nesrovnalostí během párování součtů faktur
+                  href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
                 - name: Prozkoumání nebo vyřešení výjimek
                   href: ../financials/accounts-payable/tasks/research-resolve-exceptions.md
             - name: Účetní profil dodavatele
@@ -688,8 +715,9 @@
                 - name: Stránka se seznamem transakcí dodavatele
                   href: ../financials/accounts-payable/vendor-transaction-list-page.md
         - name: Pohledávky
-          href: ../financials/accounts-receivable/accounts-receivable.md
           items:
+            - name: Domovská stránka Pohledávky
+              href: ../financials/accounts-receivable/accounts-receivable.md
             - name: Úvěr a inkasa v modulu Pohledávky
               href: ../financials/accounts-receivable/collections-credit-accounts-receivable.md
             - name: Konfigurace modulu Pohledávky a kredit a inkasa
@@ -783,13 +811,14 @@
                 - name: Stránka se seznamem transakcí odběratele
                   href: ../financials/accounts-receivable/customer-transactions-list-page.md
         - name: Rozpočtování
-          href: ../financials/budgeting/budgeting-overview.md
           items:
+            - name: Domovská stránka Rozpočtování
+              href: ../financials/budgeting/budgeting-overview.md
             - name: Přehled plánování rozpočtu
               href: ../financials/budgeting/budget-planning-overview-configuration.md
             - name: Přehled kontroly rozpočtu
               href: ../financials/budgeting/budget-control-overview-configuration.md
-            - name: 'Přehled rozpočtování '
+            - name: Přehled rozpočtování
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
             - name: Prognóza pozice
               href: ../financials/budgeting/position-forecasting.md
@@ -808,8 +837,9 @@
             - name: Integrace plánování rozpočtu s jinými moduly
               href: ../financials/budgeting/budget-planning-integration-other-modules.md
         - name: Pokladna a banka
-          href: ../financials/cash-bank-management/cash-bank-management.md
           items:
+            - name: Domovská stránka Pokladna a banka
+              href: ../financials/cash-bank-management/cash-bank-management.md
             - name: Prognóza cashflow
               href: ../financials/cash-bank-management/cash-flow-forecasting.md
             - name: Pracovní prostor správy banky
@@ -885,8 +915,9 @@
                 - name: Aktualizace složité entity bankovního deníku
                   href: ../financials/cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Nákladové účetnictví
-          href: ../financials/cost-accounting/cost-accounting-home-page.md
           items:
+            - name: Domovská stránka nákladového účetnictví
+              href: ../financials/cost-accounting/cost-accounting-home-page.md
             - name: Terminologie týkající se účtování nákladů
               href: ../financials/cost-accounting/terms-cost-accounting.md
             - name: 'Fiskální kalendáře, fiskální roky a období'
@@ -958,8 +989,9 @@
             - name: Použití pracovního prostoru řízení nákladů pro mobilní aplikaci Finance and Operations
               href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
         - name: Správa výdajů
-          href: ../financials/expense-management/expense-management.md
           items:
+            - name: Přehled správy výdajů
+              href: ../financials/expense-management/expense-management.md
             - name: Sestavy výdajů v nové podobě
               href: ../financials/expense-management/ExpenseWorkspaceNew.md
             - name: Plánování správy výdajů
@@ -995,8 +1027,9 @@
             - name: Osobní výdaje v sestavě výdajů
               href: ../financials/expense-management/personal-expenses.md
         - name: Dlouhodobý majetek
-          href: ../financials/fixed-assets/fixed-assets.md
           items:
+            - name: Domovská stránka Dlouhodobý majetek
+              href: ../financials/fixed-assets/fixed-assets.md
             - name: Vytvoření dlouhodobého majetku
               href: ../financials/fixed-assets/tasks/create-fixed-asset.md
             - name: Zadání příslušenství dlouhodobého majetku
@@ -1100,15 +1133,187 @@
                 - name: Lineární odpisování
                   href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
         - name: Hlavní kniha
-          href: ../financials/general-ledger/general-ledger.md
           items:
+            - name: Přehled hlavní knihy
+              href: ../financials/general-ledger/general-ledger.md
+            - name: Účty
+              items:
+                - name: Přehled časově rozlišených částek
+                  href: ../financials/general-ledger/accruals-overview.md
+                - name: Pravidla eliminace
+                  href: ../financials/general-ledger/elimination-rules.md
+                - name: Kombinace dimenzí a účtů
+                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                - name: Vyrovnané deníky pro účetnictví interunit
+                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
+                - name: Definice účtování
+                  href: ../financials/general-ledger/posting-definitions.md
+                - name: Příklady definice účtování
+                  href: ../financials/general-ledger/example-posting-definitions.md
+                - name: Účetní zůstatky hlavní knihy
+                  href: ../financials/general-ledger/general-ledger-account-balances.md
+                - name: Definování finančních dimenzí
+                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
+                - name: Udržování výchozích šablon finančních dimenzí
+                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Vytvoření účetních struktur
+                  href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: Finanční dimenze a zaúčtování
+                  href: ../financials/general-ledger/default-dimensions.md
+                - name: Vytvoření schémat časového rozlišení
+                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
+                - name: Finanční konsolidace a převod měny
+                  items:
+                    - name: Přehled finančních konsolidací a převodu měny
+                      href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+                    - name: Konsolidovat online
+                      href: ../financials/general-ledger/consolidate-online.md
+                    - name: Generování konsolidovaných finančních výkazů
+                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+                - name: "Vytvoření konsolidačních skupin a\_dalšího konsolidačního účtu"
+                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
+                - name: Typy hlavního účtu
+                  href: ../financials/general-ledger/main-account-types.md
+                - name: Vytvoření hlavního účtu
+                  href: ../financials/general-ledger/tasks/create-main-account.md
+                - name: Plánování účetní osnovy
+                  href: ../financials/general-ledger/plan-chart-of-accounts.md
+                - name: Vyrovnání transakcí mezi účty hlavní knihy
+                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+                - name: Nastavení aliasu účtu hlavní knihy
+                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
+                - name: Nastavení kategorií hlavního účtu
+                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
+                - name: Průzkumník zdroje účetnictví
+                  href: ../financials/accounts-payable/accounting-source-explorer.md
+                - name: Rozúčtování
+                  href: ../financials/accounts-payable/accounting-distributions.md
+                - name: Zpracování přidělení
+                  href: ../financials/general-ledger/process-allocations.md
+                - name: Finanční dimenze
+                  href: ../financials/general-ledger/financial-dimensions.md
+                - name: Převod měn účetnictví nebo vykazování
+                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
+                - name: Konsolidace skupin účtů a účtů
+                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: Přehled konsolidace a vyloučení
+                  href: ../financials/budgeting/consolidation-elimination-overview.md
+                - name: 'Fiskální kalendáře, fiskální roky a období'
+                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+                - name: Konfigurovat účetní struktury
+                  href: ../financials/general-ledger/configure-account-structures.md
+                - name: Duální měna
+                  href: ../financials/general-ledger/dual-currency.md
+            - name: Deníky a hlavní knihy
+              items:
+                - name: Zpracování hlavního deníku
+                  href: ../financials/general-ledger/general-journal-processing.md
+                - name: Účtování periodických deníků
+                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
+                - name: Zpracování deníku přidělení hlavní knihy
+                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: Nastavení mezipodnikového účetnictví
+                  href: ../financials/general-ledger/intercompany-accounting-setup.md
+                - name: Pravidla přidělení hlavní knihy
+                  href: ../financials/general-ledger/ledger-allocation-rules.md
+                - name: Vytvoření rozšířených pravidel pro deníky
+                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
+                - name: "Vytvoření a\_přiřazení struktur rozšířeného pravidla"
+                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
+                - name: Typy deníku hlavní knihy
+                  href: ../financials/general-ledger/ledger-journal-types.md
+                - name: "Vytváření a\_ověřování deníků"
+                  href: ../financials/general-ledger/tasks/create-validate-journals.md
+                - name: Zobrazení položek nebo transakcí deníku
+                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
+                - name: "Zobrazení souvisejícího mezipodnikového dokladu z\_deníku"
+                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                - name: Vytvoření položky deníku pomocí šablony
+                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
+                - name: Vytvoření transakcí časového rozlišení hlavní knihy
+                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Publikování řádek deníku a dokumentů z Excelu
+                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
+                - name: Zobrazení položek a transakcí
+                  href: ../financials/general-ledger/view-journal-entries-transactions.md
+                - name: Zapsání zaúčtovaných položek deníku do deníku
+                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: Přecenění měny v konsolidační společnosti
+                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
+                - name: Přecenění cizí měny pro hlavní knihu
+                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: Importovat směnné kurzy měn
+                  href: ../financials/general-ledger/import-currency-exchange-rates.md
+                - name: Jeden doklad
+                  href: ../financials/general-ledger/one-voucher.md
+                - name: Vyrovnání hlavní knihy
+                  href: ../financials/general-ledger/ledger-settlements.md
+            - name: Závěrka období
+              items:
+                - name: Uzávěrka hlavní knihy na konci období
+                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
+                - name: Pracovní prostor uzavření finančního období
+                  href: ../financials/general-ledger/financial-period-close-workspace.md
+                - name: Roční uzávěrka
+                  href: ../financials/general-ledger/year-end-close.md
+                - name: Uzavření fiskálního roku
+                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
+                - name: Hromadné uzavření finančního období
+                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
+            - name: DPH
+              items:
+                - name: Přehled DPH
+                  href: ../financials/general-ledger/indirect-taxes-overview.md
+                - name: Sazby daně z prodeje na základě základu marže a metod výpočtu
+                  href: ../financials/general-ledger/marginal-base-field.md
+                - name: Platby DPH a pravidla zaokrouhlení
+                  href: ../financials/general-ledger/round-sales-tax-payments.md
+                - name: Metody výpočtu DPH v poli Zdroj
+                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+                - name: Možnosti výpočtu celé částky a intervalu pro kódy daně z prodeje
+                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: "Výpočet a\_úprava DPH na faktuře dodavatele"
+                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: Vytvoření platby DPH
+                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
+                - name: "Vytváření transakcí DPH v\_dokladech"
+                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
+                - name: Nastavení účetních skupin hlavní knihy pro DPH
+                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                - name: Nastavení finančních úřadů
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
+                - name: Nastavit kódy DPH
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
+                - name: "Nastavení skupin DPH a\_skupin DPH položky"
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                - name: Nastavení kódů vykazování DPH
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Nastavení období vyrovnání DPH
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                - name: Nastavení srážkové daně
+                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
+                - name: Zobrazení zaúčtovaných transakcí DPH
+                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
+            - name: Pracovní plocha auditu
+              items:
+                - name: Pravidla zásad auditu
+                  href: ../financials/general-ledger/audit-policy-rules.md
+                - name: Porušení a případy zásad auditu
+                  href: ../financials/general-ledger/audit-policy-violations-cases.md
+                - name: Definování zásad auditu pro zdrojové dokumenty
+                  href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Veřejný sektor
+          items:
+            - name: Domovská stránka veřejného sektoru
+              href: ../financials/public-sector/public-sector-functionality.md
             - name: Plán pro funkci veřejného sektoru
               href: ../financials/public-sector/plan-public-sector-functionality.md
             - name: "Vytvoření titulní stránky a\_podpisové stránky pro sestavu plateb pro veřejný sektor"
               href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
             - name: Závazky ve veřejném sektoru
-              href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
+                - name: Přehled závazků ve veřejném sektoru
+                  href: ../financials/public-sector/accounts-payable-public-sector.md
                 - name: Kódy nákupní objednávky ve veřejném sektoru
                   href: ../financials/public-sector/purchase-order-codes-public-sector.md
                 - name: "Vytvoření a\_přiřazení kódu obchodního partnera ve veřejném sektoru"
@@ -1130,8 +1335,9 @@
                 - name: Nastavení klasifikace nákupních smluv ve veřejném sektoru
                   href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
             - name: Pohledávky ve veřejném sektoru
-              href: ../financials/public-sector/accounts-receivable-public-sector.md
               items:
+                - name: Přehled pohledávek ve veřejném sektoru
+                  href: ../financials/public-sector/accounts-receivable-public-sector.md
                 - name: Účtovací klasifikace a účtovací kódy ve veřejném sektoru
                   href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
                 - name: Vytvoření účtovací klasifikace ve veřejném sektoru
@@ -1145,8 +1351,9 @@
                 - name: Náhrady ve veřejném sektoru
                   href: ../financials/public-sector/reimbursements-public-sector.md
             - name: Rozpočtování ve veřejném sektoru
-              href: ../financials/public-sector/budgeting-public-sector.md
               items:
+                - name: Přehled rozpočtování ve veřejném sektoru
+                  href: ../financials/public-sector/budgeting-public-sector.md
                 - name: "Vytvoření původního rozpočtu a\_stornování předběžných položek rozpočtu ve veřejném sektoru"
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: Vytvoření předběžného rozpočtu pro veřejný sektor
@@ -1172,8 +1379,9 @@
             - name: Dlouhodobý majetek ve veřejném sektoru
               href: ../financials/public-sector/fixed-asset-public-sector.md
             - name: Hlavní kniha ve veřejném sektoru
-              href: ../financials/public-sector/general-ledger-public-sector.md
               items:
+                - name: Přehled hlavní knihy ve veřejném sektoru
+                  href: ../financials/public-sector/general-ledger-public-sector.md
                 - name: Pokročilé záznamy hlavní knihy ve veřejném sektoru
                   href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
                 - name: Vytvoření pokročilého zadávání do hlavní knihy ve veřejném sektoru
@@ -1199,8 +1407,9 @@
             - name: "Přidání typu certifikátu k\_dodavateli ve veřejném sektoru"
               href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
         - name: Finanční výkaznictví
-          href: ../financials/general-ledger/financial-reporting-getting-started.md
           items:
+            - name: Přehled finančního výkaznictví
+              href: ../financials/general-ledger/financial-reporting-getting-started.md
             - name: Přehled finančního výkaznictví
               href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
             - name: Součásti finančních sestav
@@ -1236,13 +1445,15 @@
         - name: Elektronické zprávy
           href: ../financials/general-ledger/electronic-messaging.md
     - name: Globalizace
-      href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
-        - name: Regulační aktualizace
+        - name: Zdroje globalizace
+          href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
+        - name: Povinné aktualizace
           href: ../financials/localizations/regulatory-updates.md
         - name: Austrálie
-          href: ../financials/localizations/australia.md
           items:
+            - name: Austrálie - přehled
+              href: ../financials/localizations/australia.md
             - name: Výkaz podnikatelské činnosti (BAS)
               href: ../financials/localizations/apac-aus-business-activity-statement.md
             - name: Přidání polí sestavy a generování BAS
@@ -1252,8 +1463,9 @@
             - name: Nastavení kódů důvodů pro BAS
               href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
         - name: Rakousko
-          href: ../financials/localizations/austria.md
           items:
+            - name: Rakousko - přehled
+              href: ../financials/localizations/austria.md
             - name: Půlroční způsob odpisů u dodatečných pořízení
               href: ../financials/localizations/emea-aut-half-year-depreciation.md
             - name: Poplatky za obalový materiál
@@ -1261,8 +1473,9 @@
             - name: Výkaz DPH
               href: ../financials/localizations/emea-aut-vat-statement-details.md
         - name: Belgie
-          href: ../financials/localizations/belgium.md
           items:
+            - name: Belgie - přehled
+              href: ../financials/localizations/belgium.md
             - name: Bankovní výpis CODA
               href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
             - name: Vytvoření a přenos transakcí do systému BLWI
@@ -1276,13 +1489,15 @@
             - name: Vytvoření a údržba PRODCOM
               href: ../financials/localizations/emea-bel-prodcom-report.md
         - name: Brazílie
-          href: ../financials/localizations/brazil.md
           items:
+            - name: Brazílie - přehled
+              href: ../financials/localizations/brazil.md
             - name: Rozsah lokalizace
               href: ../financials/localizations/latam-bra-scope.md
             - name: Fiskální knihy
-              href: ../financials/localizations/latam-bra-fiscal-books.md
               items:
+                - name: Přehled brazilských fiskálních knih
+                  href: ../financials/localizations/latam-bra-fiscal-books.md
                 - name: Konfigurace fiskálních knih
                   href: ../financials/localizations/latam-bra-configure-fiscal-books.md
                 - name: ICMS daňové fiskální dokumenty
@@ -1350,8 +1565,9 @@
                 - name: Dluhopisy projektů
                   href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
             - name: Proces NF-e
-              href: ../financials/localizations/latam-bra-nf-e-process.md
               items:
+                - name: Přehled procesu NF-e pro Brazílii
+                  href: ../financials/localizations/latam-bra-nf-e-process.md
                 - name: Automatické předávání fiskálních dokumentů NF-e
                   href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
                 - name: "Generování e-mailů pro schválený dokument NF-e a\_připojení souborů DANFE PDF a\_souborů NF-e XML k\_e-mailům"
@@ -1397,8 +1613,9 @@
             - name: "Výpočet úroků a\_pokut pro platby odběratelů"
               href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
             - name: Daně
-              href: ../financials/localizations/latam-bra-calculate-taxes.md
               items:
+                - name: Přehled brazilských daní
+                  href: ../financials/localizations/latam-bra-calculate-taxes.md
                 - name: "Výpočet daně v\_nákupních nabídkách"
                   href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
                 - name: Vytvoření vyměření daně – ICMS
@@ -1444,8 +1661,9 @@
                 - name: Srážkové daně pro platby dodavatelů
                   href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
         - name: Čína
-          href: ../financials/localizations/china.md
           items:
+            - name: Čína - přehled
+              href: ../financials/localizations/china.md
             - name: Aplikace Finance and Operations provozovaná prostřednictvím 21Vianet v Číně
               href: ../dev-itpro/deployment/china-local-deployment.md
             - name: Porovnání kusovníků
@@ -1485,8 +1703,9 @@
             - name: Nejčastější dotazy týkající se faktur odběratele s DPH
               href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
         - name: Česká republika
-          href: ../financials/localizations/czech-republic.md
           items:
+            - name: Česká republika
+              href: ../financials/localizations/czech-republic.md
             - name: Dobropis na platební slevu
               href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
             - name: Dlouhodobý majetek
@@ -1514,8 +1733,9 @@
             - name: Roční uzávěrka
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: Dánsko
-          href: ../financials/localizations/denmark.md
           items:
+            - name: Dánsko - přehled
+              href: ../financials/localizations/denmark.md
             - name: "Přiřazení formátu platebního dokladu k\_účtu odběratele"
               href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
             - name: "Vytvoření a\_zaúčtování faktury odběratele pro odběratele z\_veřejného sektoru"
@@ -1539,18 +1759,21 @@
             - name: Nastavení formátu platebního dokladu
               href: ../financials/localizations/tasks/set-up-payment-slip-format.md
         - name: Estonsko
-          href: ../financials/localizations/estonia.md
           items:
+            - name: Estonsko - přehled
+              href: ../financials/localizations/estonia.md
             - name: Požadavky na osobní informace
               href: ../financials/localizations/emea-est-personal-info.md
             - name: Výkaz DPH
               href: ../financials/localizations/emea-est-vat-statement-details.md
         - name: Evropa
-          href: ../financials/localizations/europe.md
           items:
+            - name: Evropa - přehled
+              href: ../financials/localizations/europe.md
             - name: Držitelé zálohy
-              href: ../financials/localizations/emea-advance-holders.md
               items:
+                - name: Přehled držitelů záloh
+                  href: ../financials/localizations/emea-advance-holders.md
                 - name: Transakce držitelů záloh
                   href: ../financials/localizations/emea-advance-holders-transactions.md
                 - name: Záloha pro zaměstnance (východní Evropa)
@@ -1606,8 +1829,9 @@
                 - name: "Vytváření a\_export plateb dodavatelů s\_použitím formátu platby ISO20022"
                   href: ../financials/localizations/tasks/create-export-vendor-payments-iso20022-payment-format.md
             - name: Intrastat
-              href: ../financials/localizations/emea-intrastat.md
               items:
+                - name: Intrastat - přehled
+                  href: ../financials/localizations/emea-intrastat.md
                 - name: Převod transakcí do systému Intrastat
                   href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
                 - name: Zadání adresy nakládky pro intrakomunitární transakci
@@ -1685,8 +1909,9 @@
             - name: Zobrazení transakcí u vyrovnání
               href: ../financials/localizations/emea-transactions-settlement-form.md
         - name: Francie
-          href: ../financials/localizations/france.md
           items:
+            - name: Francie - přehled
+              href: ../financials/localizations/france.md
             - name: Veřejný sektor
               items:
                 - name: Účetnictví ve veřejném sektoru
@@ -1740,13 +1965,15 @@
                 - name: Pokyny k nasazení registračních pokladen
                   href: ../retail/localizations/emea-fra-deployment.md
         - name: Německo
-          href: ../financials/localizations/germany.md
           items:
+            - name: Německo - přehled
+              href: ../financials/localizations/germany.md
             - name: Další odpisy pořízení
               href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
             - name: Soubor auditu
-              href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
               items:
+                - name: Přehled souboru auditu pro Německo
+                  href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
                 - name: Přizpůsobení konfigurace souboru auditu
                   href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
                 - name: Vygenerování souboru auditu
@@ -1762,8 +1989,9 @@
             - name: Nastavit elektronická daňová přiznání
               href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
         - name: Maďarsko
-          href: ../financials/localizations/hungary.md
           items:
+            - name: Maďarsko - přehled
+              href: ../financials/localizations/hungary.md
             - name: Výpočet směnného kurzu
               href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
             - name: Metody odpisu dlouhodobého majetku
@@ -1777,8 +2005,9 @@
             - name: Roční uzávěrka
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: Island
-          href: ../financials/localizations/iceland.md
           items:
+            - name: Island - přehled
+              href: ../financials/localizations/iceland.md
             - name: "Vytvoření účtu dodavatele a\_připojení kategorie prohlášení k\_faktuře"
               href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
             - name: "Nastavení prohlášení k\_faktuře pro dodavatele"
@@ -1788,11 +2017,15 @@
             - name: "Aktualizace prohlášení k\_faktuře dodavatele a\_vygenerování sestavy"
               href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
         - name: Indie
-          href: ../financials/localizations/india.md
           items:
+            - name: Indie - přehled
+              href: ../financials/localizations/india.md
+            - name: Rozsah indické lokalizace
+              href: ../financials/localizations/apac-ind-scope.md
             - name: Dlouhodobý majetek
-              href: ../financials/localizations/apac-ind-fixed-assets.md
               items:
+                - name: Přehled dlouhodobého majetku pro Indii
+                  href: ../financials/localizations/apac-ind-fixed-assets.md
                 - name: Připojení kalendáře podle dní ke knize dlouhodobého majetku
                   href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
                 - name: Vypočítat posuv odpisů
@@ -1816,8 +2049,9 @@
                 - name: Převod kapitálových položek do dlouhodobého majetku
                   href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
             - name: Indická daň GST
-              href: ../financials/localizations/apac-ind-gst.md
               items:
+                - name: Přehled indické daně GST
+                  href: ../financials/localizations/apac-ind-gst.md
                 - name: Referenční skupiny indické daně GST
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: GST integrace pro registrační pokladny
@@ -1960,22 +2194,27 @@
                   href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
                 - name: Pokyny k nasazení registračních pokladen
                   href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: Přehled daňového modulu
-              href: ../financials/general-ledger/tax-engine.md
+            - name: Daňový modul
               items:
-                - name: Importovat konfiguraci
-                  href: ../financials/general-ledger/tax-engine-import-configuration.md
-                - name: Použitelnost daňového modulu
-                  href: ../financials/general-ledger/tax-engine-applicability.md
-                - name: Integrace daňového modulu
-                  href: ../financials/general-ledger/tax-engine-integration.md
-                - name: Rozšíření daňového modulu
-                  href: ../financials/general-ledger/extend-tax-engine-configurations.md
+                - name: Přehled daňového modulu
+                  href: ../financials/general-ledger/tax-engine.md
+                  items:
+                    - name: Importovat konfiguraci
+                      href: ../financials/general-ledger/tax-engine-import-configuration.md
+                    - name: Použitelnost daňového modulu
+                      href: ../financials/general-ledger/tax-engine-applicability.md
+                    - name: Integrace daňového modulu
+                      href: ../financials/general-ledger/tax-engine-integration.md
+                    - name: Rozšíření daňového modulu
+                      href: ../financials/general-ledger/extend-tax-engine-configurations.md
             - name: Často kladené dotazy týkající se prahových hodnot daní
               href: ../financials/localizations/apac-ind-tax-thresholds.md
+            - name: Skladové převody
+              href: ../financials/localizations/apac-ind-stock-transfer.md
         - name: Itálie
-          href: ../financials/localizations/italy.md
           items:
+            - name: Itálie - přehled
+              href: ../financials/localizations/italy.md
             - name: Podrobnosti výpisů DPH
               href: ../financials/localizations/emea-ita-vat-statements-details.md
             - name: Sestava černé listiny
@@ -1997,8 +2236,9 @@
             - name: Srážková daň
               href: ../financials/localizations/emea-ita-withholding-tax.md
         - name: Japonsko
-          href: ../financials/localizations/japan.md
           items:
+            - name: Japonsko - přehled
+              href: ../financials/localizations/japan.md
             - name: "Pořízení dlouhodobého majetku a\_nárokování subvencí státního grantu"
               href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
             - name: "Pořízení dlouhodobého majetku s\_povinností vyřazení majetku"
@@ -2156,8 +2396,9 @@
             - name: Použití seznamu rozložení pro dlouhodobý majetek
               href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
         - name: Lotyšsko
-          href: ../financials/localizations/latvia.md
           items:
+            - name: Lotyšsko - přehled
+              href: ../financials/localizations/latvia.md
             - name: Účtování dlouhodobého majetku
               href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
             - name: Sledování změn umístění dlouhodobého majetku
@@ -2169,8 +2410,9 @@
             - name: Podrobnosti výpisu DPH
               href: ../financials/localizations/emea-lva-vat-statement-details.md
         - name: Litva
-          href: ../financials/localizations/lithuania.md
           items:
+            - name: Litva - přehled
+              href: ../financials/localizations/lithuania.md
             - name: Výkaz dlouhodobého majetku (sestava)
               href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
             - name: Vygenerování dokumentu převodu dlouhodobého majetku mezi sklady
@@ -2180,8 +2422,9 @@
             - name: Podrobnosti výpisu DPH
               href: ../financials/localizations/emea-ltu-vat-statement-details.md
         - name: Malajsie
-          href: ../financials/localizations/malaysia.md
           items:
+            - name: Malajsie - přehled
+              href: ../financials/localizations/malaysia.md
             - name: Vygenerování dobropisu odběratele pro prodeje projektu
               href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
             - name: Vygenerování dluhopisu odběratele pro prodeje projektu
@@ -2203,8 +2446,9 @@
             - name: Nastavení klauzulí úlevy daně GST
               href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
         - name: Mexiko
-          href: ../financials/localizations/mexico.md
           items:
+            - name: Mexiko- přehled
+              href: ../financials/localizations/mexico.md
             - name: Rozsah lokalizace
               href: ../financials/localizations/latam-mex-scope.md
             - name: Sestava prohlášení o úpravě inflace
@@ -2242,15 +2486,17 @@
             - name: ID registrace dodavatele
               href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
         - name: Nizozemsko
-          href: ../financials/localizations/netherlands.md
           items:
+            - name: Nizozemí - přehled
+              href: ../financials/localizations/netherlands.md
             - name: Elektronické daňové přiznání (EVAT)
               href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
             - name: Integrace Semansys XBRL
               href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: Norsko
-          href: ../financials/localizations/norway.md
           items:
+            - name: Norsko - přehled
+              href: ../financials/localizations/norway.md
             - name: "Formáty plateb odběratelů a\_dodavatelů"
               href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
             - name: Platba odběratele na základě ID platby
@@ -2264,8 +2510,9 @@
             - name: Pokyny k nasazení registračních pokladen
               href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Polsko
-          href: ../financials/localizations/poland.md
           items:
+            - name: Polsko - přehled
+              href: ../financials/localizations/poland.md
             - name: Aktivace záporného storna
               href: ../financials/localizations/emea-pol-red-storno.md
             - name: Výpočet slev řádku z jednotkové ceny
@@ -2293,8 +2540,9 @@
             - name: Výkaz obratu
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
         - name: Rusko
-          href: ../financials/localizations/russia.md
           items:
+            - name: Rusko - přehled
+              href: ../financials/localizations/russia.md
             - name: Hlavní kniha
               items:
                 - name: Korespondence účtů
@@ -2306,8 +2554,9 @@
                 - name: Importovat směnné kurzy měn z CBRF
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
             - name: Držitelé zálohy
-              href: ../financials/localizations/rus-advance-holders.md
               items:
+                - name: Přehled držitelů záloh pro Rusko
+                  href: ../financials/localizations/rus-advance-holders.md
                 - name: Vytvoření držitele zálohy
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Denní operace pro držitele záloh
@@ -2318,18 +2567,26 @@
                   href: ../financials/localizations/rus-advance-adjustment-parameters.md
                 - name: Sestavy držitelů záloh
                   href: ../financials/localizations/rus-local-management-reports-primary-forms.md
-            - name: Banka
+            - name: Pokladna a banka
               items:
                 - name: Nastavení bankovních účtů
                   href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
                 - name: Nastavení a zpracování platebních příkazů
                   href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: Vyrovnání kurzových rozdílů
+                  href: ../financials/localizations/rus-exchange-adjustment.md
                 - name: 'Prodej, nákup a převod cizí měny'
                   href: ../financials/localizations/rus-currency-sale-purchase.md
+                - name: Pokladní hotovost
+                  href: ../financials/localizations/emea-petty-cash.md
             - name: DPH
               items:
                 - name: Místní specifické zaúčtování prodejní DPH
                   href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
+                - name: Tisk a zpracování faktur a dílčích faktur
+                  href: ../financials/localizations/rus-invoice-facture-process-print.md
+                - name: Revize dílčích faktur a opravných dílčích faktur
+                  href: ../financials/localizations/rus-revise-invoice-facture.md
                 - name: DPH pro daňové poradce
                   href: ../financials/localizations/rus-tax-agent.md
                 - name: Přiznání k DPH
@@ -2382,6 +2639,8 @@
                   href: ../financials/localizations/rus-not-valuable-assets.md
             - name: Pohledávky a závazky
               items:
+                - name: Opravy dobropisu (Rusko)
+                  href: ../financials/localizations/rus-credit-note-correction.md
                 - name: Faktury pro platbu
                   href: ../financials/localizations/rus-invoice-payment.md
                 - name: Nastavení řízení dimenze pro vyrovnání
@@ -2429,20 +2688,23 @@
                 - name: Vykazování pro časově rozlišené položky
                   href: ../financials/localizations/rus-reporting-deferrals.md
         - name: Saúdská Arábie
-          href: ../financials/localizations/saudi-arabia.md
           items:
+            - name: Saúdská Arábie - přehled
+              href: ../financials/localizations/saudi-arabia.md
             - name: DPH
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Vykazování zakátu pro Saúdskou Arábii
               href: ../financials/localizations/emea-sau-zakat-reporting.md
         - name: Singapur
-          href: ../financials/localizations/singapore.md
           items:
+            - name: Singapur - přehled
+              href: ../financials/localizations/singapore.md
             - name: Generovat sestavu GST-05
               href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
         - name: Španělsko
-          href: ../financials/localizations/spain.md
           items:
+            - name: Španělsko - přehled
+              href: ../financials/localizations/spain.md
             - name: Použití platebních slev na faktuře
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Možnosti cizí směnky
@@ -2472,8 +2734,9 @@
             - name: Speciální záznamy a počáteční stavy
               href: ../financials/localizations/emea-esp-opening-sheets-spain.md
         - name: Švédsko
-          href: ../financials/localizations/sweden.md
           items:
+            - name: Švédsko - přehled
+              href: ../financials/localizations/sweden.md
             - name: Export finančních informací pro auditory ve Švédsku
               href: ../financials/localizations/emea-swe-sie-standard-report.md
             - name: Import formátů plateb
@@ -2481,13 +2744,15 @@
             - name: Registrační pokladny
               href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
         - name: Švýcarsko
-          href: ../financials/localizations/switzerland.md
           items:
+            - name: Švýcarsko - přehled
+              href: ../financials/localizations/switzerland.md
             - name: Import plateb odběratelů v ESR
               href: ../financials/localizations/emea-che-esr-customer-payments-import.md
         - name: Thajsko
-          href: ../financials/localizations/thailand.md
           items:
+            - name: Thajsko - přehled
+              href: ../financials/localizations/thailand.md
             - name: Sestavy karet zásob
               href: ../financials/localizations/apac-tha-stock-card-reports.md
             - name: Nahrazení nebo úprava daňové faktury
@@ -2497,8 +2762,9 @@
             - name: Srážková daň
               href: ../financials/localizations/apac-tha-withholding-tax.md
         - name: Velká Británie
-          href: ../financials/localizations/united-kingdom.md
           items:
+            - name: Velká Británie - přehled
+              href: ../financials/localizations/united-kingdom.md
             - name: Schéma pro obor stavebnictví
               href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
             - name: Vytvoření dobropisu pro slevu při vyrovnání
@@ -2516,15 +2782,17 @@
             - name: Digitalizování daní pro DPH
               href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
         - name: Spojené státy
-          href: ../financials/localizations/united-states.md
           items:
+            - name: Spojené státy - přehled
+              href: ../financials/localizations/united-states.md
             - name: Vykazování 1099 pro USA ke konci roku
               href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
             - name: Formulář 1099 pro veřejný sektor
               href: ../financials/localizations/noam-usa-form-1099-public-sector.md
     - name: Lidské zdroje
-      href: hr/hr-landing-page.md
       items:
+        - name: Přehled lidských zdrojů
+          href: hr/hr-landing-page.md
         - name: Vytvoření strategie lidských zdrojů
           items:
             - name: Vytvořit cíle
@@ -2676,8 +2944,9 @@
             - name: "Udržování informací o\_zraněních a\_onemocněních zaměstnanců"
               href: hr/tasks/maintain-employee-injury-illness-information.md
         - name: "Mzdy v\_USA"
-          href: hr/localizations/noam-usa-payroll.md
           items:
+            - name: Přehled mezd v USA
+              href: hr/localizations/noam-usa-payroll.md
             - name: Nastavení mezd
               items:
                 - name: Nastavení mezd pro pracovníky
@@ -2743,13 +3012,15 @@
                 - name: Standardní mzdové sestavy
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
     - name: Intelligence
-      href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Domovská stránka Intelligence
+          href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
         - name: Přístup k informacím a vykazování
           href: ../dev-itpro/analytics/information-access-reporting.md?toc=/fin-and-ops/toc.json
         - name: Obsah Power BI
-          href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Domovská stránka obsahu Power BI
+              href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
             - name: Skutečnost a rozpočet
               href: ../dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Zaměstnanecké výhody
@@ -2763,8 +3034,9 @@
             - name: Kompenzace a zaměstnanecké výhody
               href: ../dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Analýza nákladového účetnictví
-              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Obsah Power BI analýzy nákladového účetnictví
+                  href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
                 - name: Nastavení zabezpečení pro obsah Power BI analýzy nákladového účetnictví
                   href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Správa nákladů
@@ -2812,8 +3084,9 @@
             - name: Konfigurace služby SSRS pro místní nasazení
               href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
             - name: Tisk
-              href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Přehled tisku dokumentu
+                  href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
                 - name: Instalace agenta směrování dokumentu pro aktivaci síťového tisku
                   href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
                 - name: Upgrade agenta směrování dokumentů
@@ -2910,10 +3183,8 @@
                       href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
             - name: Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel
               href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Návrh verze aplikace Finance and Operations závislé na konfiguracích elektronického výkaznictví
-              items:
-                - name: Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách
-                  href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
             - name: Návrh řešení elektronického výkaznictví k používání finančních dimenzí
               items:
                 - name: Návrh datových modelů k používání finančních dimenzí jako zdrojů dat
@@ -3032,6 +3303,8 @@
                       href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
                 - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
                   href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+                - name: Přehled správy obchodních dokumentů
+                  href: ../dev-itpro/analytics/er-business-document-management.md?toc=/fin-and-ops/toc.json
             - name: API rozhraní architektury elektronického výkaznictví
               items:
                 - name: Rozšíření seznamu funkcí elektronického výkaznictví
@@ -3081,16 +3354,19 @@
             - name: Použití vlastní databáze
               href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Řízení zásob
-      href: ../supply-chain/inventory/inventory-home-page.md
       items:
-        - name: Přehled doručení
-          href: ../supply-chain/inventory/arrival-overview.md
+        - name: Přehled řízení zásob
+          href: ../supply-chain/inventory/inventory-home-page.md
+        - name: Doručení
           items:
+            - name: Přehled doručení
+              href: ../supply-chain/inventory/arrival-overview.md
             - name: Nastavení profilu přehledu doručení zboží
               href: ../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md
         - name: Správa kvality
-          href: ../supply-chain/inventory/enable-quality-management.md
           items:
+            - name: Přehled správy kvality
+              href: ../supply-chain/inventory/enable-quality-management.md
             - name: Procesy správy kvality
               href: ../supply-chain/inventory/quality-management-processes.md
             - name: Řízení neshody
@@ -3156,8 +3432,9 @@
             - name: Mobilní pracovní prostor zásob na skladě
               href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
         - name: Odchozí proces
-          href: ../supply-chain/inventory/outbound-process.md
           items:
+            - name: Přehled odchozího procesu
+              href: ../supply-chain/inventory/outbound-process.md
             - name: Rezervace skladových množství
               href: ../supply-chain/inventory/reserve-inventory-quantities.md
             - name: Rezervace stejné dávky pro prodejní objednávku
@@ -3265,12 +3542,140 @@
               href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
             - name: Sestavy požadavků na údržbu
               href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
-    - name: Hlavní plánování
-      href: ../supply-chain/master-planning/master-planning-home-page.md
-      items:
-        - name: Hlavní plány
-          href: ../supply-chain/master-planning/master-plans.md
+        - name: Nastavení pracovních příkazů
           items:
+            - name: 'Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby'
+              href: ../supply-chain/asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+            - name: Stavy životního cyklu pracovního příkazu
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+            - name: Typy pracovních příkazů
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-types.md
+            - name: Nastavení projektu pracovního příkazu
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-project-setup.md
+            - name: Úroveň a popis služby
+              href: ../supply-chain/asset-management/setup-for-work-orders/service-level-and-description.md
+            - name: Plánované provedení
+              href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
+            - name: Správa chyb
+              href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+        - name: Pracovní příkazy
+          items:
+            - name: Úvod do pracovních příkazů
+              href: ../supply-chain/asset-management/work-orders/introduction-to-work-orders.md
+            - name: Ručně vytvořené pracovní příkazy
+              href: ../supply-chain/asset-management/work-orders/manually-created-workorders.md
+            - name: Prognózy údržby
+              href: ../supply-chain/asset-management/work-orders/maintenance-forecasts.md
+            - name: Zásobování
+              href: ../supply-chain/asset-management/work-orders/procurement.md
+            - name: Ruční aktualizace čítačů majetku
+              href: ../supply-chain/asset-management/work-orders/manual-update-of-asset-counters.md
+            - name: Automatická aktualizace čítačů majetku
+              href: ../supply-chain/asset-management/work-orders/automatic-update-of-asset-counters.md
+            - name: Kontrolní seznamy údržby
+              href: ../supply-chain/asset-management/work-orders/maintenance-checklists.md
+            - name: Prostoj údržby
+              href: ../supply-chain/asset-management/work-orders/maintenance-downtime.md
+            - name: Přidání chyby do pracovního příkazu
+              href: ../supply-chain/asset-management/work-orders/add-fault-to-work-order.md
+            - name: Zpráva pracovního příkazu
+              href: ../supply-chain/asset-management/work-orders/work-order-report.md
+            - name: Skupiny pracovních příkazů
+              href: ../supply-chain/asset-management/work-orders/work-order-pools.md
+            - name: Aktivní úlohy údržby pracovního příkazu
+              href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
+            - name: Pracovní příkazy a dlouhodobý majetek
+              href: ../supply-chain/asset-management/work-orders/work-orders-and-fixed-assets.md
+        - name: Integrace do řízení a účetnictví projektu
+          items:
+            - name: 'Prognózy, pracovní příkazy a projekty'
+              href: ../supply-chain/asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+        - name: Preventivní a reaktivní údržba
+          items:
+            - name: Preventivní údržba
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+            - name: Plány údržby
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+            - name: Rozvrhnout plány údržby
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+            - name: Pořadí údržby
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+            - name: Rozvrh údržby
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+            - name: Náklady rozvrhu údržby
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+            - name: Vytvořit pracovní příkazy
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+            - name: Prostoj údržby
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+        - name: Plánování kapacity
+          items:
+            - name: Vypočítat vytížení kapacity
+              href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
+            - name: Vypočítat prognózu položky
+              href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
+        - name: Plánování pracovního příkazu
+          items:
+            - name: Kalendář a plánování pracovníka údržby
+              href: ../supply-chain/asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+            - name: Preferovaní pracovníci údržby
+              href: ../supply-chain/asset-management/work-order-scheduling/preferred-maintenance-workers.md
+            - name: Naplánovat pracovní příkazy
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-orders.md
+            - name: Expedice pracovního příkazu
+              href: ../supply-chain/asset-management/work-order-scheduling/dispatch-work-order.md
+            - name: Naplánování pracovního příkazu na konkrétní datum a čas
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+            - name: Naplánované práce údržby pracovního příkazu
+              href: ../supply-chain/asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+            - name: Výpočet vytížení kapacity na plánovaných pracovních příkazech
+              href: ../supply-chain/asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+        - name: Spotřeba
+          items:
+            - name: Registrace spotřeby
+              href: ../supply-chain/asset-management/consumption/register-consumption.md
+            - name: Vytvoření sestav spotřeby
+              href: ../supply-chain/asset-management/consumption/create-consumption-reports.md
+        - name: Záruka
+          items:
+            - name: Záruční smlouva
+              href: ../supply-chain/asset-management/warranty/warranty-agreement.md
+            - name: Záruka na majetek a typy majetku
+              href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
+        - name: Rozpočty údržby
+          items:
+            - name: Rozpočty údržby
+              href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
+            - name: Aktualizace rozpočtů údržby
+              href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
+        - name: "Kontrola a\_vykazování"
+          items:
+            - name: Kontrola data a nákladů
+              href: ../supply-chain/asset-management/controlling-and-reporting/cost-and-date-control.md
+            - name: Kontrola pracovní doby
+              href: ../supply-chain/asset-management/controlling-and-reporting/work-hour-control.md
+            - name: Řízení nákladů závad majetku
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-cost-control.md
+            - name: Analýza závady majetku
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-analysis.md
+            - name: Ukazatele KPI majetku
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-kpis.md
+            - name: Kde byla položka použita
+              href: ../supply-chain/asset-management/controlling-and-reporting/item-where-used.md
+            - name: Stav údržby
+              href: ../supply-chain/asset-management/controlling-and-reporting/maintenance-status.md
+        - name: Správa dat
+          items:
+            - name: Entity cíle
+              href: ../supply-chain/asset-management/data-management/target-entities.md
+    - name: Hlavní plánování
+      items:
+        - name: Domovská stránka Hlavní plánování
+          href: ../supply-chain/master-planning/master-planning-home-page.md
+        - name: Hlavní plány
+          items:
+            - name: Přehled hlavních plánů
+              href: ../supply-chain/master-planning/master-plans.md
             - name: Nastavení hlavních plánů
               href: ../supply-chain/master-planning/master-planning-setup.md
             - name: Průvodce nastavením hlavního plánování
@@ -3304,8 +3709,9 @@
             - name: Vylepšení výkonu hlavního plánování
               href: ../supply-chain/master-planning/master-planning-performance.md
             - name: Hlavní plány a funkce více pracovišť
-              href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
+                - name: Přehled hlavního plánování a funkce více pracovišť
+                  href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
                 - name: 'Hlavní plánování pro disponibilitu pracoviště, povinný sklad'
                   href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md
                 - name: 'Hlavní plánování pro disponibilitu pracoviště, sklad není povinný'
@@ -3327,8 +3733,9 @@
             - name: "Spolupráce s\_odběrateli interního dodavatelského řetězce"
               href: ../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md
         - name: Prognóza poptávky
-          href: ../supply-chain/master-planning/introduction-demand-forecasting.md
           items:
+            - name: Přehled prognózy poptávky
+              href: ../supply-chain/master-planning/introduction-demand-forecasting.md
             - name: Nastavení prognózy poptávky
               href: ../supply-chain/master-planning/demand-forecasting-setup.md
             - name: Import historických dat pro prognózy poptávky
@@ -3349,12 +3756,14 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Ruční úprava prognózy poptávky
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Aplikace pro mobilní zařízení
-      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+    - name: Aplikace Dynamics 365 for Unified Operations Mobile
       items:
-        - name: Dostupné mobilní pracovní prostory
-          href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
+        - name: Domovská stránka Aplikace Dynamics 365 for Unified Operations Mobile
+          href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+        - name: Mobilní pracovní prostory
           items:
+            - name: Dostupné mobilní pracovní prostory
+              href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
             - name: Adresář společnosti
               href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: Řízení nákladů
@@ -3371,7 +3780,7 @@
               href: ../financials/project-management/project-mobile-application-overview.md
             - name: Časový záznam projektu
               href: ../financials/project-management/project-time-entry-mobile-workspace.md
-            - name: Časový rozvrh projektu
+            - name: Project Timesheet
               href: ../financials/project-management/project-timesheet.md
             - name: Schválení nákupní objednávky
               href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
@@ -3382,8 +3791,9 @@
         - name: Publikování mobilních pracovních prostorů
           href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
     - name: Integrace s Office
-      href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Přehled integrace Office
+          href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
         - name: Kurz integrace s Office
           href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
         - name: Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
@@ -3400,26 +3810,30 @@
           href: ../dev-itpro/dev-tools/sysmailer-develop.md
         - name: Řešení problémů s integrací s Office
           href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
-    - name: "Zásobování a\_zdroje"
-      href: ../supply-chain/procurement/procurement-sourcing-overview.md
+    - name: Zásobování a zdroje
       items:
+        - name: Přehled zásobování a zdrojů
+          href: ../supply-chain/procurement/procurement-sourcing-overview.md
         - name: Workflow zásobování a zdrojů
           href: ../supply-chain/procurement/procurement-sourcing-workflows.md
         - name: Zásobovací katalogy
-          href: ../supply-chain/procurement/procurement-catalogs.md
           items:
+            - name: Přehled zásobovacích katalogů
+              href: ../supply-chain/procurement/procurement-catalogs.md
             - name: Vytvoření zásobovacího katalogu
               href: ../supply-chain/procurement/tasks/create-procurement-catalog.md
             - name: Nastavení hierarchie kategorií zásobování
               href: ../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md
         - name: Nákupní žádanky
-          href: ../supply-chain/procurement/purchase-requisitions-overview.md
           items:
+            - name: Přehled nákupních žádanek
+              href: ../supply-chain/procurement/purchase-requisitions-overview.md
             - name: Workflow nákupní žádanky
               href: ../supply-chain/procurement/purchase-requisitions-workflow.md
         - name: Požadavek na nabídky (RFQ)
-          href: ../supply-chain/procurement/request-quotations.md
           items:
+            - name: Přehled požadavků na nabídky
+              href: ../supply-chain/procurement/request-quotations.md
             - name: Vytvoření požadavku na nabídku
               href: ../supply-chain/procurement/tasks/create-request-quotation.md
             - name: Vytvoření žádanky používající požadavek na nabídku
@@ -3471,8 +3885,9 @@
             - name: Rabaty dodavatele
               href: ../supply-chain/procurement/vendor-rebates.md
         - name: Zásady nákupu
-          href: ../supply-chain/procurement/purchase-policies.md
           items:
+            - name: Přehled zásad nákupu
+              href: ../supply-chain/procurement/purchase-policies.md
             - name: Vytvoření zásad nákupu
               href: ../supply-chain/procurement/tasks/create-purchasing-policies.md
             - name: Nastavení zásad pro hierarchie kategorií zásobování
@@ -3530,18 +3945,21 @@
             - name: "Odesílání a\_schvalování revizí projektových rozpočtů"
               href: ../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md
     - name: Správa organizace
-      href: organization-administration/organization-administration-home-page.md
       items:
+        - name: Domovská stránka Správa organizace
+          href: organization-administration/organization-administration-home-page.md
         - name: Číselné řady
-          href: organization-administration/number-sequence-overview.md
           items:
+            - name: Přehled číselných řad
+              href: organization-administration/number-sequence-overview.md
             - name: Nastavení číselných řad na jednotlivém základě
               href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
             - name: Nastavení číselných řad pomocí průvodce
               href: organization-administration/tasks/set-up-number-sequences-wizard.md
         - name: "Organizace a\_organizační hierarchie"
-          href: organization-administration/organizations-organizational-hierarchies.md
           items:
+            - name: "Přehled organizací a\_organizačních hierarchií"
+              href: organization-administration/organizations-organizational-hierarchies.md
             - name: Plánování organizační hierarchie
               href: organization-administration/plan-organizational-hierarchy.md
             - name: Vytvoření organizační hierarchie
@@ -3551,8 +3969,9 @@
             - name: Vytvoření provozních jednotek
               href: organization-administration/tasks/create-operating-unit.md
         - name: Globální adresář
-          href: organization-administration/overview-global-address-book.md
           items:
+            - name: Přehled globálního adresáře
+              href: organization-administration/overview-global-address-book.md
             - name: Plán pro globální adresář a další adresáře
               href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
             - name: Konfigurace globálního adresáře
@@ -3561,9 +3980,10 @@
               href: organization-administration/qa-address-books.md
             - name: Konfigurace adresářů
               href: organization-administration/tasks/address-books.md
-        - name: Systémový workflowu
-          href: organization-administration/overview-workflow-system.md
+        - name: Systém workflow
           items:
+            - name: Přehled systému workflow
+              href: organization-administration/overview-workflow-system.md
             - name: Architektura systému workflowu
               href: organization-administration/workflow-system-architecture.md
             - name: Prvky workflow
@@ -3571,8 +3991,9 @@
             - name: Akce workflowu
               href: organization-administration/workflow-actions.md
             - name: Vytvoření workflow
-              href: organization-administration/create-workflow.md
               items:
+                - name: Přehled vytvoření workflow
+                  href: organization-administration/create-workflow.md
                 - name: Konfigurace vlastností workflow
                   href: organization-administration/configure-workflow-properties.md
                 - name: Konfigurace ručních úkolů
@@ -3624,8 +4045,9 @@
             - name: Workflow – Často kladené otázky
               href: organization-administration/workflow-FAQ.md
         - name: Výstrahy
-          href: get-started/alerts-overview.md
           items:
+            - name: Přehled výstrah
+              href: get-started/alerts-overview.md
             - name: Vytváření pravidel výstrah
               href: get-started/create-alerts.md
             - name: Dávkové zpracování výstrah
@@ -3633,18 +4055,21 @@
             - name: Emailové oznámení výstrah klientovi
               href: get-started/alert-email-notifications.md
         - name: Elektronické podpisy
-          href: organization-administration/electronic-signature-overview.md
           items:
+            - name: Přehled elektronických podpisů
+              href: organization-administration/electronic-signature-overview.md
             - name: Nastavení elektronických podpisů
               href: organization-administration/tasks/set-up-electronic-signatures.md
         - name: Správa případů
-          href: organization-administration/cases.md
           items:
+            - name: Přehled správy případů
+              href: organization-administration/cases.md
             - name: 'Plánování bezpečnosti případu, procesů a kategorií'
               href: organization-administration/plan-case-management.md
         - name: Šablony záznamu
-          href: organization-administration/record-templates.md
           items:
+            - name: Přehled šablon záznamu
+              href: organization-administration/record-templates.md
             - name: Vytvoření šablony záznamů
               href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
             - name: "Vytvoření nového záznamu s\_použitím šablony záznamu"
@@ -3656,8 +4081,9 @@
         - name: Údaje data a času a časová pásma
           href: organization-administration/date-time-zones.md
     - name: Řízení výroby
-      href: ../supply-chain/production-control/production-process-overview.md
       items:
+        - name: Přehled výrobního procesu
+          href: ../supply-chain/production-control/production-process-overview.md
         - name: 'Plánování kombinovaného režimu: kombinování diskrétního, procesního a štíhlého zajištění zdrojů'
           href: ../supply-chain/production-control/mixed-mode-plan.md
         - name: Správa subdodavatelské práce ve výrobě
@@ -3721,8 +4147,9 @@
             - name: Provozování výrobních úloh
               items:
                 - name: Správa životního cyklu výrobní zakázky
-                  href: ../supply-chain/production-control/create-production-orders.md
                   items:
+                    - name: Přehled životního cyklu výrobní zakázky
+                      href: ../supply-chain/production-control/create-production-orders.md
                     - name: Vytvoření výrobní zakázky
                       href: ../supply-chain/production-control/tasks/create-production-order.md
                     - name: Odhad výrobní zakázky
@@ -3782,8 +4209,9 @@
                 - name: Zaúčtování výroby
                   href: ../supply-chain/cost-management/production-posting.md
             - name: Registrace času a docházky
-              href: ../supply-chain/production-control/time-attendance-registrations.md
               items:
+                - name: Přehled registrace času a docházky
+                  href: ../supply-chain/production-control/time-attendance-registrations.md
                 - name: Plat na základě registrace
                   href: ../supply-chain/production-control/pay-based-on-registrations.md
                 - name: Registrace absence v modulu Čas a docházka
@@ -3945,8 +4373,9 @@
                 - name: Zaúčtování výroby
                   href: ../supply-chain/cost-management/production-posting.md
     - name: Řízení informací o produktech
-      href: ../supply-chain/pim/product-information.md
       items:
+        - name: Přehled informací o produktech
+          href: ../supply-chain/pim/product-information.md
         - name: Informace o produktu
           items:
             - name: Identifikátory produktu
@@ -3972,8 +4401,9 @@
             - name: Vytvoření uvolněného produktu pro jednu společnost
               href: ../supply-chain/pim/tasks/create-released-product-single-company.md
             - name: Stav životního cyklu produktu
-              href: ../supply-chain/pim/product-lifecycle.md
               items:
+                - name: Přehled životního cyklu produktu
+                  href: ../supply-chain/pim/product-lifecycle.md
                 - name: Vytvoření nového stavu životního cyklu produktu
                   href: ../supply-chain/pim/tasks/new-product-lifecycle-state.md
                 - name: Vytvoření výchozího stavu životního cyklu produktu
@@ -4017,11 +4447,13 @@
             - name: Výpočty kusovníku
               href: ../supply-chain/cost-management/bom-calculations.md
         - name: Konfigurace produktu
-          href: ../supply-chain/pim/build-product-configuration-model.md
           items:
+            - name: Přehled konfigurace produktu
+              href: ../supply-chain/pim/build-product-configuration-model.md
             - name: Vytváření konfigurace založené na dimenzích
-              href: ../supply-chain/pim/dimension-based-product-configuration.md
               items:
+                - name: Přehled konfigurace produktu založeného na dimenzích
+                  href: ../supply-chain/pim/dimension-based-product-configuration.md
                 - name: Dimenze produktu
                   href: ../supply-chain/pim/product-dimensions.md
                 - name: Vytvoření základního produktu založeného na dimenzích
@@ -4041,8 +4473,9 @@
                 - name: Vytváření konfigurací založených na dimenzích
                   href: ../supply-chain/pim/tasks/create-dimension-based-configurations.md
             - name: Vytvoření konfigurace založené na omezeních
-              href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
               items:
+                - name: Nastavení modelu konfigurace produktu
+                  href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
                 - name: Nejčastější dotazy týkající se výpočtu pro model konfigurace produktu
                   href: ../supply-chain/pim/calculate-product-configuration-models.md
                 - name: Konfigurační pravidlo
@@ -4072,8 +4505,9 @@
                 - name: Převedení dat pro modely produktu
                   href: ../supply-chain/pim/tasks/transfer-data-product-models.md
     - name: "Řízení projektů a\_účetnictví"
-      href: ../financials/project-management/overview-project-management-accounting.md
       items:
+        - name: Přehled řízení a účetnictví projektu
+          href: ../financials/project-management/overview-project-management-accounting.md
         - name: Mezipodnikové fakturování
           href: ../financials/project-management/intercompany-invoicing.md
         - name: Konfigurace fakturování mezipodnikového projektu
@@ -4099,23 +4533,25 @@
         - name: "Přijetí položek na nákupní objednávce z\_požadavku na položku"
           href: ../financials/project-management/tasks/receive-items-purchase-order-item-requirement.md
         - name: Strukturované rozpisy prací
-          href: ../financials/project-management/work-breakdown-structures.md
           items:
-            - name: Klientská integrace aplikace Microsoft Project
+            - name: Přehled struktur rozpisu prací
+              href: ../financials/project-management/work-breakdown-structures.md
+            - name: Integrace Microsoft Project Client
               href: ../financials/project-management/project-integration.md
         - name: Přehled mobilních aplikací projektu
           href: ../financials/project-management/project-mobile-application-overview.md
         - name: Mobilní pracovní prostor zadání času projektu
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
-        - name: Mobilní aplikace časového rozvrhu projektu
+        - name: Mobilní aplikace Project Timesheet
           href: ../financials/project-management/project-timesheet.md
         - name: Časové rozvrhy na mobilním zařízení
           href: ../financials/project-management/mobile-timesheets.md
-        - name: Implementace vlastních polí pro mobilní aplikaci Časový rozvrh projektu
+        - name: Implementace vlastních polí pro mobilní aplikaci Project Timesheet
           href: ../financials/project-management/custom-fields-mobile.md
     - name: Prodej a marketing
-      href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:
+        - name: Přehled prodeje a marketingu
+          href: ../supply-chain/sales-marketing/overview-sales-marketing.md
         - name: Prodejní objednávky
           items:
             - name: Příslib objednávky
@@ -4149,8 +4585,9 @@
             - name: Potvrzení prodejních objednávek
               href: ../supply-chain/sales-marketing/tasks/confirm-sales-orders.md
         - name: Prodejní smlouvy
-          href: ../supply-chain/sales-marketing/sales-agreements.md
           items:
+            - name: Přehled prodejních smluv
+              href: ../supply-chain/sales-marketing/sales-agreements.md
             - name: Zadávání prodejních smluv
               href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
             - name: Plnění prodejních smluv
@@ -4184,13 +4621,15 @@
         - name: Vytvoření nové obchodní smlouvy
           href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
     - name: Správa servisu
-      href: ../supply-chain/service-management/service-management-home-page.md
       items:
+        - name: Přehled správy servisu
+          href: ../supply-chain/service-management/service-management-home-page.md
         - name: Nastavení služby pro odběratele
           items:
             - name: Nastavení servisní smlouvy
-              href: ../supply-chain/service-management/service-agreement-groups.md
               items:
+                - name: Přehled servisních smluv
+                  href: ../supply-chain/service-management/service-agreement-groups.md
                 - name: Vytváření servisních smluv
                   href: ../supply-chain/service-management/create-service-agreements.md
                 - name: Intervaly servisu
@@ -4204,13 +4643,15 @@
                 - name: Vytvoření skupiny šablon servisu
                   href: ../supply-chain/service-management/create-service-template-group.md
             - name: Nastavit servisní úkoly
-              href: ../supply-chain/service-management/service-tasks.md
               items:
+                - name: Přehled servisních úloh
+                  href: ../supply-chain/service-management/service-tasks.md
                 - name: Vytvoření relací servisních úloh
                   href: ../supply-chain/service-management/create-service-task-relations.md
             - name: Nastavit předměty servisu
-              href: ../supply-chain/service-management/service-objects.md
               items:
+                - name: Přehled předmětů servisu
+                  href: ../supply-chain/service-management/service-objects.md
                 - name: Tvorba předmětů servisu
                   href: ../supply-chain/service-management/create-service-task-relations.md
                 - name: Připojení skladových položek k servisním předmětům
@@ -4230,8 +4671,9 @@
                 - name: Připojení šablon k předmětům servisu
                   href: ../supply-chain/service-management/attach-templates-service-objects.md
             - name: Definice kódů důvodů pro servisní zakázky
-              href: ../supply-chain/service-management/reason-codes-service-orders.md
               items:
+                - name: Kódy důvodů pro servisní zakázky
+                  href: ../supply-chain/service-management/reason-codes-service-orders.md
                 - name: Fáze servisních zakázek
                   href: ../supply-chain/service-management/service-order-stages.md
                 - name: Nastavení fází servisních zakázek
@@ -4239,8 +4681,9 @@
                 - name: Vytvoření kódů rozhodnutí
                   href: ../supply-chain/service-management/create-reason-codes.md
             - name: Nastavení servisních smluv a předplatného
-              href: ../supply-chain/service-management/service-level-agreements.md
               items:
+                - name: Přehled smluv o úrovni služeb
+                  href: ../supply-chain/service-management/service-level-agreements.md
                 - name: Prodejní cena předplatného
                   href: ../supply-chain/service-management/subscription-sales-prices.md
                 - name: Skupiny předplatného
@@ -4254,8 +4697,9 @@
             - name: Nastavení správy oprav
               href: ../supply-chain/service-management/repair-management.md
             - name: Nastavit vrácené položky odběratele
-              href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
               items:
+                - name: Přehled vrácených položek odběratelů
+                  href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
                 - name: Nastavení dispozičních kódů
                   href: ../supply-chain/service-management/set-up-disposition-codes.md
                 - name: Nastavení kódů důvodu vrácení
@@ -4263,14 +4707,17 @@
                 - name: Určení způsobu nakládání s vrácenými položkami
                   href: ../supply-chain/service-management/specify-how-to-dispose-of-returned-items.md
         - name: Práce s odběratelským servisem
-          href: ../supply-chain/service-management/working-with-customer-service.md
           items:
+            - name: Přehled práce s odběratelským servisem
+              href: ../supply-chain/service-management/working-with-customer-service.md
             - name: Plnění servisních smluv
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: Přehled plnění servisních smluv
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: Příprava a přijetí smlouvy
-                  href: ../supply-chain/service-management/service-agreements.md
                   items:
+                    - name: Přehled přípravy a zřízení servisních smluv
+                      href: ../supply-chain/service-management/service-agreements.md
                     - name: Vytváření servisních smluv
                       href: ../supply-chain/service-management/create-service-agreements.md
                     - name: Předplatné servisu
@@ -4296,8 +4743,9 @@
                     - name: Aktualizace a indexování prodejních cen předplatného
                       href: ../supply-chain/service-management/update-and-index-subscription-sales-prices.md
             - name: Zpracování dotazů od odběratele
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: Přehled plnění servisních smluv
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: Zahájení a ukončení záznamu času v servisní zakázce
                   href: ../supply-chain/service-management/start-and-stop-time-recording-on-a-service-order.md
                 - name: Zobrazení času zahájení a doby trvání servisní zakázky
@@ -4407,8 +4855,9 @@
                     - name: Transakce faktur odběru
                       href: ../supply-chain/service-management/invoice-subscription-transactions.md
     - name: Správa přepravy
-      href: ../supply-chain/transportation/transportation-management-overview.md
       items:
+        - name: Přehled správy přepravy
+          href: ../supply-chain/transportation/transportation-management-overview.md
         - name: Moduly správy přepravy
           href: ../supply-chain/transportation/transportation-management-engines.md
         - name: Vytvoření nového modulu správy přepravy
@@ -4420,8 +4869,9 @@
         - name: Plánování tras přepravy s dopravným
           href: ../supply-chain/transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: Plánování nákladů pomocí konsolidace centra
-          href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
           items:
+            - name: Přehled plánování vytížení pomocí konsolidace centra
+              href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
             - name: "Plánování vytížení a\_dodávek s\_použitím pracovní plochy plánování vytížení"
               href: ../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
         - name: Zahrnutí hmotnosti kontejneru a objemu při naložení
@@ -4451,11 +4901,13 @@
         - name: Nastavení omezení přepravy pro položku
           href: ../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md
     - name: Řízení skladu
-      href: ../supply-chain/warehousing/warehouse-management-overview.md
       items:
+        - name: Přehled řízení skladu
+          href: ../supply-chain/warehousing/warehouse-management-overview.md
         - name: Konfigurace skladu
-          href: ../supply-chain/warehousing/warehouse-configuration.md
           items:
+            - name: Přehled konfigurace skladu
+              href: ../supply-chain/warehousing/warehouse-configuration.md
             - name: Nastavení skladu pomocí šablony konfigurace skladu
               href: ../supply-chain/inventory/warehouse-template.md
             - name: Řízení práce pomocí šablon práce a směrnice pro místa
@@ -4485,8 +4937,9 @@
             - name: Nastavení skladu pro převodní příkazy
               href: ../supply-chain/warehousing/transfer-orders-warehouse.md
         - name: Zásady práce ve skladu
-          href: ../supply-chain/warehousing/warehouse-work-policies.md
           items:
+            - name: Přehled zásad práce ve skladu
+              href: ../supply-chain/warehousing/warehouse-work-policies.md
             - name: Nastavení zásad práce ve skladu
               href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
             - name: "Pohyb zásob s\_přidruženou prací v řízení skladu"
@@ -4546,8 +4999,9 @@
             - name: Počet označení zásob
               href: ../supply-chain/inventory/inventory-tag-counting.md
         - name: Doplnění
-          href: ../supply-chain/warehousing/replenishment.md
           items:
+            - name: Přehled doplnění
+              href: ../supply-chain/warehousing/replenishment.md
             - name: Okamžité doplnění
               href: ../supply-chain/warehousing/immediate-replenishment.md
             - name: Doplnění s kanbany odběru
@@ -4555,8 +5009,9 @@
             - name: Vytvoření procesu minimálního nebo maximálního doplňování
               href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
         - name: Instalace a konfigurace skladové aplikace
-          href: ../supply-chain/warehousing/install-configure-warehousing-app.md
           items:
+            - name: Přehled instalace a konfigurace
+              href: ../supply-chain/warehousing/install-configure-warehousing-app.md
             - name: Konfigurace názvů polí ve skladové aplikaci
               href: ../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md
             - name: Nastavení mobilních zařízení pro práci ve skladu

@@ -1,9 +1,9 @@
 ---
-title: Globalizace
+title: Zdroje globalizace
 description: Toto téma obsahuje seznam zdrojů, které vám pomohou dozvědět se více o funkci a nabídkách specifických pro zemi/oblast.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d2fe0b357edf3594aa7d795eb2a15f03a886d79
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 668a24c54ded798658a136b8482823b595962306
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850608"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864959"
 ---
-# <a name="globalization"></a>Globalizace
+# <a name="globalization-resources"></a>Zdroje globalizace
 
 ## <a name="local-and-regional-deployments"></a>Místní a oblastní nasazení
 Pokud vaše vládní předpisy vyžadují, aby byla data uložena odlišně nebo servisována jiným způsobem, než je požadováno pro jiné země/oblasti, mohou být při nasazení aplikace Finance and Operations existovat požadavky země/oblasti, které musíte zvážit. Zvažte následující zdroje, které pro vás mohou být relevantní:
