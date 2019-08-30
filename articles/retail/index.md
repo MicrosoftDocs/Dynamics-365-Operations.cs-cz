@@ -3,7 +3,7 @@ title: Vítejte v Dynamics 365 for Retail
 description: Domovská stránka pro Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572155"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874920"
 ---
 # <a name="welcome-to-dynamics-365-for-retail"></a>Vítejte v Dynamics 365 for Retail
 
@@ -38,7 +38,7 @@ V levém podokně vyberte funkční oblast, o které se chcete dozvědět více.
 
 ## <a name="channel-management"></a>Správa kanálu
 
-Při nastavování prostředí modulu Retail budete rozhodovat, jak definovat a konfigurovat své obchody. Mohou sem patřit kamenné obchody, online obchody nebo kontaktní střediska.
+Když nastavíte Retail Experience, rozhodnete se, jak nadefinovat a nakonfigurovat své obchody, které mohou být buď kamennými obchody, online obchody nebo kontaktními středisky.
 
 Každý maloobchod může mít vlastní způsoby platby, způsoby dodání, cenové skupiny, účty příjmů a výdajů a zaměstnance. Po vytvoření svého maloobchodu vytvoříte sortiment produktů, které má obchod obsahovat. Můžete také definovat ceny specifické pro obchod a slevy, které se uplatňují u produktů dostupných v obchodě.
 

@@ -5,13 +5,15 @@
 - name: Systémové požadavky pro místní nasazení
   href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json
 - name: Ukázková data
-  href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
   items:
+    - name: Přehled ukázkových dat
+      href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
     - name: Generování ukázkových pomocí datových balíčků
       href: data-entities/generate-demo-data-packages.md
 - name: Vývoj a přizpůsobení
-  href: dev-tools/developer-home-page.md
   items:
+    - name: Domovská stránka Vývoj a přizpůsobení
+      href: dev-tools/developer-home-page.md
     - name: Zásobník aplikace a architektura serveru
       href: dev-tools/application-stack-server-architecture.md
     - name: Získání zkušebních kopií
@@ -19,8 +21,9 @@
     - name: Registrace ukázkového předplatného
       href: dev-tools/sign-up-preview-subscription.md
     - name: Nasazení a přístup k vývojovým prostředím
-      href: dev-tools/access-instances.md
       items:
+        - name: Vývojová prostředí
+          href: dev-tools/access-instances.md
         - name: Konfigurace samostatných vývojových prostředí
           href: dev-tools/configure-developer-vm.md
         - name: Vytvoření nových uživatelů na vývojových počítačích
@@ -58,8 +61,9 @@
         - name: Funkce editoru kódu
           href: dev-tools/code-editor.md
         - name: Vytvoření modelů a prvků datového modelu
-          href: dev-tools/create-data-model-elements.md
           items:
+            - name: Přehled vytvoření modelů a prvků datového modelu
+              href: dev-tools/create-data-model-elements.md
             - name: "Pokyny k\_názvům pro rozšíření"
               href: extensibility/NamingGuidelines.md
             - name: Vypnutí přizpůsobení modelu a neschválení funkce
@@ -86,8 +90,6 @@
       items:
         - name: X++ a funkce ladicího programu
           href: dev-tools/new-x-debugger-features.md
-        - name: Ladění X++ proti kopiím produkčních databází
-          href: dev-tools/debug-x-issue-against-copy-of-production.md
         - name: Ladění kódu X++
           href: dev-tools/debug-xpp.md
         - name: Třídy EventHandlerResult ve scénářích požadavku nebo odezvy
@@ -104,7 +106,7 @@
           href: dev-ref/application-explorer-aot-properties.md
         - name: Jazykové reference pro X++
           items:
-            - name: Jazykové reference pro X++
+            - name: Přehled jazykové reference pro X++
               href: dev-ref/xpp-language-reference.md
             - name: Proměnné a datové typy
               items:
@@ -135,7 +137,19 @@
             - name: X++ priorita operátorů
               href: dev-ref/xpp-operator-precedence.md
             - name: X++ třídy a metody
-              href: dev-ref/xpp-classes-methods.md
+              items:
+                - name: Třídy a metody
+                  href: dev-ref/xpp-classes-methods.md
+                - name: Dědičnost
+                  href: dev-ref/xpp-inheritance.md
+                - name: Statické členy třídy
+                  href: dev-ref/xpp-static-classes.md
+                - name: Rozhraní
+                  href: dev-ref/xpp-interfaces.md
+                - name: Knihovny
+                  href: dev-ref/xpp-library-objects.md
+                - name: Události
+                  href: dev-ref/xpp-events.md
             - name: X++ výběr dat a manipulace
               href: dev-ref/xpp-data-query.md
             - name: Přístup k datům pomocí SysDa API
@@ -149,13 +163,15 @@
             - name: Syntaxe X++
               href: dev-ref/xpp-syntax.md
     - name: 'API, třída a odkazy na tabulku'
-      href: dev-ref/api-reference.md
       items:
+        - name: 'API, třída a zdroje tabulky'
+          href: dev-ref/api-reference.md
         - name: Funkce X++ za kompilace
           href: dev-ref/xpp-compile-time-functions.md
         - name: Funkce X++ za běhu
-          href: dev-ref/xpp-run-time-functions.md
           items:
+            - name: Zdroje funkce runtime X++
+              href: dev-ref/xpp-run-time-functions.md
             - name: Funkce X++ za běhu obchodu
               href: dev-ref/xpp-business-run-time-functions.md
             - name: Funkce X++ za běhu kontejneru
@@ -409,8 +425,9 @@
         - name: Filtrování SysTest pomocí třídy a atributů metody
           href: perf-test/systest-filtering.md
         - name: Knihovna akceptačních testů
-          href: perf-test/acceptance-test-library.md
           items:
+            - name: Zdroje knihovny akceptačních testů
+              href: perf-test/acceptance-test-library.md
             - name: Navigační koncepty
               href: perf-test/concepts-navigation.md
             - name: Metody testování dat
@@ -438,8 +455,9 @@
     - name: Licencování nezávislých výrobců pro nasazení on-premises
       href: dev-tools/isv-licensing-on-prem.md
 - name: Vývoj uživatelského rozhraní
-  href: user-interface/user-interface-development-home-page.md
   items:
+    - name: Domovská stránka Vývoj uživatelského rozhraní
+      href: user-interface/user-interface-development-home-page.md
     - name: Kurzy
       items:
         - name: Vytvoření formuláře Typ nákladů na vypůjčení
@@ -633,18 +651,21 @@
         - name: Ukládání seznamů a dlaždic do mezipaměti pro pracovní prostory
           href: user-interface/tile-list-caching-workspaces.md
     - name: Záznamník úloh
-      href: user-interface/task-recorder.md
       items:
+        - name: Zdroje záznamníku úloh
+          href: user-interface/task-recorder.md
         - name: Rychlý odkaz na záznamník úloh
           href: user-interface/task-recorder-quick-reference.md
         - name: Vytváření dokumentace nebo školení pomocí záznamů úloh
           href: user-interface/task-recorder-training-docs.md
 - name: Mobilní platforma
-  href: mobile-apps/platform/mobile-platform-home-page.md
   items:
+    - name: Zdroje mobilní platformy
+      href: mobile-apps/platform/mobile-platform-home-page.md
     - name: Začínáme
-      href: mobile-apps/platform/mobile-platform-getting-started.md
       items:
+        - name: Začínáme s mobilní platformou
+          href: mobile-apps/platform/mobile-platform-getting-started.md
         - name: Informace o architektuře a návrhu
           href: mobile-apps/platform/mobile-platform-architecture.md
         - name: Události obchodní logiky
@@ -678,8 +699,9 @@
         - name: API návrhy na straně klienta
           href: mobile-apps/platform/scenarios/client-api-design-overview.md
         - name: API klienta
-          href: mobile-apps/platform/client-apis/client-apis-reference.md
           items:
+            - name: Domovská stránka rozhraní APi klienta
+              href: mobile-apps/platform/client-apis/client-apis-reference.md
             - name: Výčet PageState
               href: mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md
             - name: Modul aplikace
@@ -843,11 +865,13 @@
             - name: Typ ValueMetadata
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
 - name: Obecné nařízení o ochraně osobních údajů (GDPR)
-  href: gdpr/gdpr-guide.md
   items:
-    - name: Zdroje pro odpověď na požadavky na data GDPR
-      href: gdpr/gdpr-home-page.md
+    - name: Přehled obecného nařízení o ochraně osobních údajů (GDPR)
+      href: gdpr/gdpr-guide.md
+    - name: Odpovědi na požadavky na data GDPR
       items:
+        - name: Odpovědi na zdroje požadavků na data GDPR
+          href: gdpr/gdpr-home-page.md
         - name: Klasifikace majetku
           href: gdpr/gdpr-asset-classification-values.md
         - name: Sestava vyhledávání osob
@@ -863,8 +887,9 @@
         - name: Požadavky na data GDPR pro LCS
           href: gdpr/gdpr-lcs.md
 - name: Průběžné doručování
-  href: dev-tools/continuous-delivery-home-page.md
   items:
+    - name: Domovská stránka Průběžné doručování
+      href: dev-tools/continuous-delivery-home-page.md
     - name: "Časté otázky k\_vývoji a průběžnému doručování"
       href: dev-tools/continuous-delivery-faq.md
     - name: Vyloučení testovacích balíčků z výstupu sestavení
@@ -873,6 +898,24 @@
       href: dev-tools/manage-runtime-packages.md
     - name: Aktualizace verzí modelu v automatizovaném sestavení
       href: dev-tools/version-models-build.md
+- name: Regression Suite Automation Tool
+  items:
+    - name: Přehled nástroje Regression Suite Automation Tool
+      href: perf-test/rsat/rsat-overview.md
+    - name: Instalace a konfigurace
+      href: perf-test/rsat/rsat-install-configure.md
+    - name: Spouštění testovacích případů
+      href: perf-test/rsat/rsat-run.md
+    - name: Ověření očekávaných hodnot
+      href: perf-test/rsat/rsat-validate-expected.md
+    - name: Řetězcové testovací případy
+      href: perf-test/rsat/rsat-chain-test-cases.md
+    - name: Odvozené testovací případy
+      href: perf-test/rsat/rsat-derived-test-cases.md
+    - name: Doporučené postupy
+      href: perf-test/rsat/rsat-best-practices.md
+    - name: Řešení potíží
+      href: perf-test/rsat/rsat-troubleshooting.md
 - name: Řešení vydávání pomocí služby Lifecycle Services
   items:
     - name: Vývoj a vydávání
@@ -892,23 +935,25 @@
     - name: Zálohování databází řešení
       href: lcs-solutions/database-backup-lcs-solutions.md
     - name: Lokalizace a funkce týkající se předpisů
-      href: lcs-solutions/country-region.md
       items:
+        - name: Zdroje globalizace
+          href: lcs-solutions/country-region.md
         - name: Klasifikace lokalizačních funkcí
           href: lcs-solutions/classify-localization-features.md
         - name: Použití kontextu země nebo oblasti
           href: lcs-solutions/apply-country-context.md
         - name: Informace o regulační certifikaci v názvech funkcí
           href: lcs-solutions/regulatory-certifications.md
-        - name: Regulační aktualizace
+        - name: Povinné aktualizace
           href: lcs-solutions/regulatory-watch-communication.md
         - name: Oddělení lokalizačních modelů
           href: lcs-solutions/separate-localization-models.md
         - name: Odeslání regulačních výstrah
           href: lcs-solutions/submit-localization-alerts.md
 - name: Vývoj financí
-  href: financial/financial-dev-home-page.md
   items:
+    - name: Domovská stránka Vývoj financí
+      href: financial/financial-dev-home-page.md
     - name: Architektura finanční dimenze
       items:
         - name: Kombinace účtů hlavní knihy
@@ -968,11 +1013,13 @@
     - name: Nasazení ukázkových prostředí
       href: deployment/deploy-demo-environment.md
     - name: Cloudové nasazení
-      href: deployment/cloud-deployment-overview.md
       items:
+        - name: Přehled cloudového nasazení
+          href: deployment/cloud-deployment-overview.md
         - name: Samoobslužné nasazení
-          href: deployment/infrastructure-stack.md
           items:
+            - name: Přehled samoobslužného nasazení
+              href: deployment/infrastructure-stack.md
             - name: Nasazení nového prostředí
               href: deployment/deployenvironment-newinfrastructure.md
             - name: Často kladené dotazy k nasazení
@@ -1000,9 +1047,10 @@
         - name: Umístění dat aplikace Retail
           href: deployment/retail-data-residency.md
     - name: Místní nasazení
-      href: deployment/on-premises-deployment-landing-page.md
       items:
-        - name: Možnost místního nasazení
+        - name: Domovská stránka Místní nasazení
+          href: deployment/on-premises-deployment-landing-page.md
+        - name: Přehled místního nasazení
           href: deployment/on-premises-overview.md
         - name: Plán a příprava pro místní nasazení
           href: deployment/plan-onprem-deployment.md
@@ -1011,8 +1059,9 @@
         - name: Nastavení místních projektů
           href: lifecycle-services/lbd-create-lcs-on-prem-project.md
         - name: Nastavení a nasazení místních prostředí
-          href: deployment/setup-deploy-on-premises-environments.md
           items:
+            - name: Domovská stránka Nastavení a nasazení místních prostředí
+              href: deployment/setup-deploy-on-premises-environments.md
             - name: Nasazení místních prostředí (Platform update 12 a novější)
               href: deployment/setup-deploy-on-premises-pu12.md
             - name: Nasazení místních prostředí (Platform update 8 a 11)
@@ -1031,8 +1080,14 @@
           href: deployment/on-premises-diagnostics.md
         - name: Opětovné nasazení místních nasazení
           href: deployment/redeploy-on-prem.md
-        - name: Aktualizace místního agenta
-          href: lifecycle-services/update-local-agent.md
+        - name: Místní agent
+          items:
+            - name: Kompatibilita AD FS Office 365
+              href: deployment/onprem-adfscompatibility.md
+            - name: Předběžné nasazení místního agenta a skripty po nasazení
+              href: lifecycle-services/pre-post-scripts.md
+            - name: Aktualizace místního agenta
+              href: lifecycle-services/update-local-agent.md
         - name: Rekonfigurace prostředí
           href: lifecycle-services/reconfigure-environment.md
         - name: Připojení klienta k internetu
@@ -1052,11 +1107,13 @@
         - name: Řešení potíží s použitím balíčku
           href: deployment/deployable-package-troubleshooting.md
 - name: 'Upgrady, aktualizace a opravy hotfix'
-  href: migration-upgrade/upgrade-home-page.md
   items:
-    - name: Upgrade z aplikace AX 2012 na aplikaci Finance and Operations
-      href: migration-upgrade/upgrade-overview-2012.md
+    - name: 'Zdroje upgradů, aktualizací a oprav hotfix'
+      href: migration-upgrade/upgrade-home-page.md
+    - name: Upgrade z AX 2012
       items:
+        - name: Upgrade z aplikace AX 2012 na aplikaci Finance and Operations
+          href: migration-upgrade/upgrade-overview-2012.md
         - name: Upgrade AX 2012 – Plánování pomocí nástroje Upgrade Analyzer
           href: migration-upgrade/upgrade-analyzer-tool.md
         - name: Upgrade AX 2012 – Odhad úsilí pomocí služby upgradu kódu
@@ -1095,9 +1152,10 @@
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: Upgrade plánování rozpočtu
               href: migration-upgrade/upgrade-budget-planning.md
-    - name: Migrace dat z aplikace AX 2009 do aplikace Finance and Operations
-      href: migration-upgrade/data-migration-tool.md
+    - name: Migrace dat z AX 2009
       items:
+        - name: Migrace dat z aplikace AX 2009 do aplikace Finance and Operations
+          href: migration-upgrade/data-migration-tool.md
         - name: Migrace AX 2009 - Instalace nástroje pro migraci dat
           href: migration-upgrade/install-dmt.md
         - name: Migrace AX 2009 - Generování map
@@ -1111,8 +1169,9 @@
         - name: Migrace AX 2009 - Import balíčků
           href: migration-upgrade/ax2009-upgrade-import-package.md
     - name: "Migrace a\_upgrade kódu"
-      href: migration-upgrade/code-migration-home-page.md
       items:
+        - name: "Domovská stránka Migrace a\_upgrade kódu"
+          href: migration-upgrade/code-migration-home-page.md
         - name: Příprava na migraci kódu
           href: migration-upgrade/prepare-migration.md
         - name: Konfigurace mapování Azure DevOps
@@ -1135,8 +1194,6 @@
           href: migration-upgrade/versions-update-policy.md
         - name: Použití nejnovější aktualizace platformy na prostředí
           href: migration-upgrade/upgrade-latest-platform-update.md
-        - name: Upgrade platformy Dynamics AX na vydání ze srpna 2016
-          href: migration-upgrade/update-platform-each-release.md
         - name: Upgrade dat ve vývojovém nebo ukázkovém prostředí
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Aktualizace vývojových nástrojů
@@ -1172,8 +1229,9 @@
         - name: Zastaralá API (červen 2017)
           href: migration-upgrade/deprecated-apis.md
 - name: Správa systému
-  href: sysadmin/system-administration-home-page.md
   items:
+    - name: Domovská stránka Správa systému
+      href: sysadmin/system-administration-home-page.md
     - name: Přidání odkazů na právní podmínky a zásady ochrany osobních údajů
       href: sysadmin/legal-terms-privacy-statement.md
     - name: Licenční kódy a sestava konfiguračních klíčů
@@ -1186,13 +1244,14 @@
       href: sysadmin/pre-configured-system-accounts.md
     - name: Export B2B uživatelů do Azure AD
       href: sysadmin/implement-b2b.md
-    - name: Nastavení časového limitu nečinné relace
-      href: sysadmin/session-idle-timeout.md
-    - name: Zabezpečení na základě rolí
-      href: sysadmin/role-based-security.md
+    - name: Zabezpečení
       items:
+        - name: Zabezpečení na základě rolí
+          href: sysadmin/role-based-security.md
         - name: Architektura zabezpečení
           href: sysadmin/security-architecture.md
+        - name: Nastavení časového limitu nečinné relace
+          href: sysadmin/session-idle-timeout.md
         - name: Výchozí sestavy zabezpečení
           href: sysadmin/security-reports.md
         - name: Vytvoření nových uživatelů
@@ -1206,8 +1265,9 @@
         - name: Přiřazení uživatelů k rolím zabezpečení
           href: sysadmin/tasks/assign-users-security-roles.md
     - name: Dávkové zpracování
-      href: sysadmin/batch-processing-overview.md
       items:
+        - name: Přehled dávkového zpracování
+          href: sysadmin/batch-processing-overview.md
         - name: "Dávkové zpracování a\_dávkové servery"
           href: sysadmin/batch-server-overview.md
         - name: Vytvoření dávkových úloh
@@ -1229,8 +1289,9 @@
         - name: Přerušení provádění dávkové úlohy
           href: sysadmin/batch-abort.md
     - name: Poradce při optimalizaci
-      href: sysadmin/optimization-advisor-overview.md
       items:
+        - name: Přehled poradce při optimalizaci
+          href: sysadmin/optimization-advisor-overview.md
         - name: Vytvoření pravidel pro poradce při optimalizaci
           href: sysadmin/create-rules-optimization-advisor.md
     - name: Nahlásit výpadek výroby
@@ -1238,8 +1299,9 @@
 - name: Lifecycle Services
   items:
     - name: Zdroje pro Lifecycle Services
-      href: lifecycle-services/lcs.md
       items:
+        - name: Zdroje pro Lifecycle Services
+          href: lifecycle-services/lcs.md
         - name: LCS pro zákazníky
           href: lifecycle-services/lcs-works-lcs.md
         - name: LCS pro partnery
@@ -1257,8 +1319,9 @@
     - name: Hledání problémů
       href: lifecycle-services/issue-search-lcs.md
     - name: Správce konfigurace
-      href: lifecycle-services/configuration-manager-lcs.md
       items:
+        - name: Přehled správce konfigurace
+          href: lifecycle-services/configuration-manager-lcs.md
         - name: Nastavení správce konfigurace
           href: lifecycle-services/set-up-configuration-manager-lcs.md
     - name: Konfigurace služby upgradu kódu
@@ -1298,8 +1361,9 @@
     - name: Návod pro dotazy
       href: lifecycle-services/querycookbook.md
     - name: Microsoft Dynamics 365 Translation Service
-      href: lifecycle-services/translation-service-overview.md
       items:
+        - name: Přehled služby Dynamics 365 Translation Service
+          href: lifecycle-services/translation-service-overview.md
         - name: Překlad souborů uživatelské rozhraní
           href: lifecycle-services/use-translation-service.md
         - name: Překlad souborů dokumentace
