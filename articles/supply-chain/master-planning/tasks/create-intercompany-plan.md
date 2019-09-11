@@ -3,7 +3,7 @@ title: Vytvoření mezipodnikového plánu
 description: Tato procedura ukazuje, jak vytvořit mezipodnikový plán.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,48 +16,41 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 194bb78eed5a673030f7cead031cf286cddbe77c
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f7fe8d155b39190f6c0ee1ee310a5edd2400623c
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845202"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916707"
 ---
-# <a name="create-an-intercompany-plan"></a><span data-ttu-id="2dc0d-103">Vytvoření mezipodnikového plánu</span><span class="sxs-lookup"><span data-stu-id="2dc0d-103">Create an intercompany plan</span></span>
+# <a name="create-an-intercompany-plan"></a><span data-ttu-id="e03a3-103">Vytvoření mezipodnikového plánu</span><span class="sxs-lookup"><span data-stu-id="e03a3-103">Create an intercompany plan</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="2dc0d-104">Tato procedura ukazuje, jak vytvořit mezipodnikový plán.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-104">This procedure shows how to create an intercompany plan.</span></span> <span data-ttu-id="2dc0d-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-105">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="e03a3-104">Tato procedura ukazuje, jak vytvořit mezipodnikový plán.</span><span class="sxs-lookup"><span data-stu-id="e03a3-104">This procedure shows how to create an intercompany plan.</span></span> <span data-ttu-id="e03a3-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="e03a3-105">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="set-up-an-intercompany-planning-group"></a><span data-ttu-id="2dc0d-106">Nastavení skupiny mezipodnikového plánování</span><span class="sxs-lookup"><span data-stu-id="2dc0d-106">Set up an intercompany planning group</span></span> 
-1. <span data-ttu-id="2dc0d-107">Přejděte na Skupiny mezipodnikového plánování.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-107">Go to Intercompany planning groups.</span></span>
-    * <span data-ttu-id="2dc0d-108">Hlavní plánování > Nastavení > Skupiny mezipodnikového plánování</span><span class="sxs-lookup"><span data-stu-id="2dc0d-108">Master planning > Setup > Intercompany planning groups</span></span>  
-2. <span data-ttu-id="2dc0d-109">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-109">Use the Quick Filter to find records.</span></span> <span data-ttu-id="2dc0d-110">Můžete například filtrovat v poli Jméno pomocí hodnoty „10“.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-110">For example, filter on the Name field with a value of '10'.</span></span>
-3. <span data-ttu-id="2dc0d-111">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-111">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="2dc0d-112">Klepněte na tlačítko Odstranit.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-112">Click Delete.</span></span>
-    * <span data-ttu-id="2dc0d-113">Tento krok je nezbytný pro účely zkrácení mezipodnikového plánování.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-113">This step is necessary in order to shorten the intercompany planning run.</span></span>   <span data-ttu-id="2dc0d-114">Mezipodnikové plánování spustí hlavní plánování ve všech společnostech ve skupině plánování, počínaje nejnižší sekvencí plánování.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-114">Intercompany planning will run master planning in all the companies in a planning group, starting from the lowest scheduling sequence.</span></span>  
-5. <span data-ttu-id="2dc0d-115">Klepněte na tlačítko Ano.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-115">Click Yes.</span></span>
-6. <span data-ttu-id="2dc0d-116">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-116">Close the page.</span></span>
+## <a name="set-up-an-intercompany-planning-group"></a><span data-ttu-id="e03a3-106">Nastavení skupiny mezipodnikového plánování</span><span class="sxs-lookup"><span data-stu-id="e03a3-106">Set up an intercompany planning group</span></span> 
+1. <span data-ttu-id="e03a3-107">V **navigačním podokně** přejděte na **Modules > Hlavní plánování > Nastavení > Skupiny mezipodnikového plánování**.</span><span class="sxs-lookup"><span data-stu-id="e03a3-107">In the **Navigation pane**, go to **Modules > Master planning > Setup > Intercompany planning groups**.</span></span> 
+2. <span data-ttu-id="e03a3-108">Použijte rychlý filtr pro hledání záznamů.</span><span class="sxs-lookup"><span data-stu-id="e03a3-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="e03a3-109">Můžete například filtrovat v poli Jméno pomocí hodnoty „10“.</span><span class="sxs-lookup"><span data-stu-id="e03a3-109">For example, filter on the Name field with a value of '10'.</span></span>
+3. <span data-ttu-id="e03a3-110">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="e03a3-110">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="e03a3-111">Klepněte na tlačítko **Odstranit**.</span><span class="sxs-lookup"><span data-stu-id="e03a3-111">Click **Delete**.</span></span> <span data-ttu-id="e03a3-112">Tento krok je nezbytný pro účely zkrácení mezipodnikového plánování.</span><span class="sxs-lookup"><span data-stu-id="e03a3-112">This step is necessary in order to shorten the intercompany planning run.</span></span>   <span data-ttu-id="e03a3-113">Mezipodnikové plánování spustí hlavní plánování ve všech společnostech ve skupině plánování, počínaje nejnižší sekvencí plánování.</span><span class="sxs-lookup"><span data-stu-id="e03a3-113">Intercompany planning will run master planning in all the companies in a planning group, starting from the lowest scheduling sequence.</span></span>  
+5. <span data-ttu-id="e03a3-114">Klepněte na tlačítko **Ano**.</span><span class="sxs-lookup"><span data-stu-id="e03a3-114">Click **Yes**.</span></span>
+6. <span data-ttu-id="e03a3-115">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e03a3-115">Close the page.</span></span>
 
-## <a name="create-an-intercompany-plan"></a><span data-ttu-id="2dc0d-117">Vytvoření mezipodnikového plánu</span><span class="sxs-lookup"><span data-stu-id="2dc0d-117">Create an intercompany plan</span></span>
-1. <span data-ttu-id="2dc0d-118">Klikněte na Mezipodnikové hlavní plánování.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-118">Click Intercompany master planning.</span></span>
-    * <span data-ttu-id="2dc0d-119">Jedná se o pracovní prostor hlavního plánování.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-119">This is on the Master planning workspace.</span></span>  
-2. <span data-ttu-id="2dc0d-120">V poli Skupina mezipodnikového plánování kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-120">In the Intercompany planning group field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="2dc0d-121">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-121">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="2dc0d-122">Vyberte skupinu 10 mezipodnikového plánování.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-122">Select intercompany planning group 10.</span></span>  
-4. <span data-ttu-id="2dc0d-123">V poli Počet iterací mezipodnikového plánování zadejte 2.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-123">In the Number of intercompany planning iterations field, enter '2'.</span></span>
-    * <span data-ttu-id="2dc0d-124">Skupina 10 mezipodnikového plánování má dva členy.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-124">Intercompany planning group 10 has two members.</span></span> <span data-ttu-id="2dc0d-125">K rozšíření propagace zpoždění ze zdrojové společnosti (USMF) vůči společnosti zákazníka (DEMF) je třeba spustit dvakrát mezipodnikové plánování v obou společnostech dvakrát.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-125">In order to propagate the delays from the source company (USMF) to the customer company (DEMF), you will need to run intercompany in both companies two times.</span></span> <span data-ttu-id="2dc0d-126">První iterace bude rozšiřovat poptávku a identifikovat zpoždění ve zdrojové společnosti (USMF).</span><span class="sxs-lookup"><span data-stu-id="2dc0d-126">The first iteration will propagate the demand and identify the delays in the source company (USMF).</span></span> <span data-ttu-id="2dc0d-127">Druhá iterace rozšíří zpoždění z USMF na DEMF.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-127">The second iteration will propagate the delays from USMF to DEMF.</span></span>  
-5. <span data-ttu-id="2dc0d-128">Vyberte volbu v poli První iterace.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-128">In the First iteration field, select an option.</span></span>
-6. <span data-ttu-id="2dc0d-129">V poli První iterace vyberte Obnovení.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-129">In the First iteration field, select 'Regeneration'.</span></span>
-7. <span data-ttu-id="2dc0d-130">V poli Další iterace vyberte "Regenerace".</span><span class="sxs-lookup"><span data-stu-id="2dc0d-130">In the Subsequent iterations field, select 'Regeneration'.</span></span>
-8. <span data-ttu-id="2dc0d-131">Do pole Počet vláken zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-131">In the Number of threads field, enter a number.</span></span>
-    * <span data-ttu-id="2dc0d-132">To představuje počet paralelních podprocesů použitých pro plánování.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-132">This represents the number of parallel threads used for planning.</span></span>  
-9. <span data-ttu-id="2dc0d-133">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-133">Click OK.</span></span>
+## <a name="create-an-intercompany-plan"></a><span data-ttu-id="e03a3-116">Vytvoření mezipodnikového plánu</span><span class="sxs-lookup"><span data-stu-id="e03a3-116">Create an intercompany plan</span></span>
+1. <span data-ttu-id="e03a3-117">V **navigačním podokně** přejděte na **Modules > Hlavní plánování > Pracovní prostory > Hlavní plánování**.</span><span class="sxs-lookup"><span data-stu-id="e03a3-117">In the **Navigation pane**, go to **Modules > Master planning > Workspaces > Master planning**.</span></span>
+2. <span data-ttu-id="e03a3-118">Klikněte na **Mezipodnikové hlavní plánování**.</span><span class="sxs-lookup"><span data-stu-id="e03a3-118">Click **Intercompany master planning**.</span></span>  
+3. <span data-ttu-id="e03a3-119">V poli **Skupina mezipodnikového plánování** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="e03a3-119">In the **Intercompany planning group** field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="e03a3-120">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="e03a3-120">In the list, click the link in the selected row.</span></span> <span data-ttu-id="e03a3-121">Vyberte skupinu 10 mezipodnikového plánování.</span><span class="sxs-lookup"><span data-stu-id="e03a3-121">Select intercompany planning group 10.</span></span>  
+5. <span data-ttu-id="e03a3-122">V poli **Počet iterací mezipodnikového plánování** zadejte 2.</span><span class="sxs-lookup"><span data-stu-id="e03a3-122">In the **Number of intercompany planning iterations** field, enter '2'.</span></span> <span data-ttu-id="e03a3-123">Skupina 10 mezipodnikového plánování má dva členy.</span><span class="sxs-lookup"><span data-stu-id="e03a3-123">Intercompany planning group 10 has two members.</span></span> <span data-ttu-id="e03a3-124">K rozšíření propagace zpoždění ze zdrojové společnosti (USMF) vůči společnosti zákazníka (DEMF) je třeba spustit dvakrát mezipodnikové plánování v obou společnostech dvakrát.</span><span class="sxs-lookup"><span data-stu-id="e03a3-124">In order to propagate the delays from the source company (USMF) to the customer company (DEMF), you will need to run intercompany in both companies two times.</span></span> <span data-ttu-id="e03a3-125">První iterace bude rozšiřovat poptávku a identifikovat zpoždění ve zdrojové společnosti (USMF).</span><span class="sxs-lookup"><span data-stu-id="e03a3-125">The first iteration will propagate the demand and identify the delays in the source company (USMF).</span></span> <span data-ttu-id="e03a3-126">Druhá iterace rozšíří zpoždění z USMF na DEMF.</span><span class="sxs-lookup"><span data-stu-id="e03a3-126">The second iteration will propagate the delays from USMF to DEMF.</span></span>  
+6. <span data-ttu-id="e03a3-127">V poli **První iterace** vyberte Obnovení.</span><span class="sxs-lookup"><span data-stu-id="e03a3-127">In the **First iteration** field, select 'Regeneration'.</span></span>
+7. <span data-ttu-id="e03a3-128">V poli **Další iterace** vyberte "Regenerace".</span><span class="sxs-lookup"><span data-stu-id="e03a3-128">In the **Subsequent iterations** field, select 'Regeneration'.</span></span>
+8. <span data-ttu-id="e03a3-129">Do pole **Počet vláken** zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="e03a3-129">In the **Number of threads** field, enter a number.</span></span> <span data-ttu-id="e03a3-130">To představuje počet paralelních podprocesů použitých pro plánování.</span><span class="sxs-lookup"><span data-stu-id="e03a3-130">This represents the number of parallel threads used for planning.</span></span>  
+9. <span data-ttu-id="e03a3-131">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="e03a3-131">Click **OK**.</span></span>
 
-## <a name="view-the-result-of-the-plan"></a><span data-ttu-id="2dc0d-134">Zobrazení výsledku plánování</span><span class="sxs-lookup"><span data-stu-id="2dc0d-134">View the result of the plan</span></span>
-1. <span data-ttu-id="2dc0d-135">V poli Plán kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-135">In the Plan field, click the drop-down button to open the lookup.</span></span>
-2. <span data-ttu-id="2dc0d-136">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-136">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="2dc0d-137">Klepněte na odkaz StaticPlan.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-137">Click the link for StaticPlan.</span></span> <span data-ttu-id="2dc0d-138">Musíte být ve společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-138">You need to be in company USMF.</span></span>  
-3. <span data-ttu-id="2dc0d-139">Klikněte na Plánované objednávky.</span><span class="sxs-lookup"><span data-stu-id="2dc0d-139">Click Planned orders.</span></span>
+## <a name="view-the-result-of-the-plan"></a><span data-ttu-id="e03a3-132">Zobrazení výsledku plánování</span><span class="sxs-lookup"><span data-stu-id="e03a3-132">View the result of the plan</span></span>
+1. <span data-ttu-id="e03a3-133">V poli **Plán** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="e03a3-133">In the **Plan** field, click the drop-down button to open the lookup.</span></span>
+2. <span data-ttu-id="e03a3-134">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="e03a3-134">In the list, click the link in the selected row.</span></span> <span data-ttu-id="e03a3-135">Klepněte na odkaz StaticPlan.</span><span class="sxs-lookup"><span data-stu-id="e03a3-135">Click the link for StaticPlan.</span></span> <span data-ttu-id="e03a3-136">Musíte být ve společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="e03a3-136">You need to be in company USMF.</span></span>  
+3. <span data-ttu-id="e03a3-137">Klikněte na **Plánované objednávky**.</span><span class="sxs-lookup"><span data-stu-id="e03a3-137">Click **Planned orders**.</span></span>
 

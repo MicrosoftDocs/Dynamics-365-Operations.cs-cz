@@ -1,9 +1,9 @@
 ---
 title: Správa šablon e-mailů
-description: Můžete přenést informace z databáze organizace do záložek v novém dokumentu a použít je v rámci šablon, které vám pomohou efektivně komunikovat s uchazeči a kandidáty.
+description: Toto téma vysvětluje, jak spravovat e-mailové šablony.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,38 +16,35 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4667d0506c5ae6bea87b982c7feebab8963797a6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3ecfa720dfa9b3ed6ee15ec68498d2a46612a9ae
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508026"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867480"
 ---
-# <a name="manage-email-templates"></a><span data-ttu-id="8e63a-103">Správa šablon e-mailů</span><span class="sxs-lookup"><span data-stu-id="8e63a-103">Manage email templates</span></span>
+# <a name="manage-email-templates"></a><span data-ttu-id="d8bea-103">Správa šablon e-mailů</span><span class="sxs-lookup"><span data-stu-id="d8bea-103">Manage email templates</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="8e63a-104">Můžete přenést informace z databáze organizace do záložek v novém dokumentu a použít je v rámci šablon, které vám pomohou efektivně komunikovat s uchazeči a kandidáty.</span><span class="sxs-lookup"><span data-stu-id="8e63a-104">You can transfer information from your organization’s database to the bookmarks in a new document and use it in templates that help you communicate efficiently with applicants and candidates.</span></span> <span data-ttu-id="8e63a-105">Chcete-li to provést, vytvořte šablonu, která obsahuje nějaký standardní text a několik záložek, kam mají být vložena systémová data.</span><span class="sxs-lookup"><span data-stu-id="8e63a-105">To do this, you create a template that contains standard text and some bookmarks where the system data should be inserted.</span></span> <span data-ttu-id="8e63a-106">Můžete například vložit adresu a kontaktní informace uchazeče do dokumentu aplikace Microsoft Word, který lze použít při komunikaci s daným uchazečem.</span><span class="sxs-lookup"><span data-stu-id="8e63a-106">For example, you can insert address and contact information for an applicant into a Microsoft Word document that you can use when communicating with that applicant.</span></span> <span data-ttu-id="8e63a-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="8e63a-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="d8bea-104">Můžete přenést informace z databáze organizace do záložek v novém dokumentu a použít je v rámci šablon, které vám pomohou efektivně komunikovat s uchazeči a kandidáty.</span><span class="sxs-lookup"><span data-stu-id="d8bea-104">You can transfer information from your organization’s database to the bookmarks in a new document and use it in templates that help you communicate efficiently with applicants and candidates.</span></span> <span data-ttu-id="d8bea-105">Chcete-li to provést, vytvořte šablonu, která obsahuje nějaký standardní text a několik záložek, kam mají být vložena systémová data.</span><span class="sxs-lookup"><span data-stu-id="d8bea-105">To do this, you create a template that contains standard text and some bookmarks where the system data should be inserted.</span></span> <span data-ttu-id="d8bea-106">Můžete například vložit adresu a kontaktní informace uchazeče do dokumentu aplikace Microsoft Word, který lze použít při komunikaci s daným uchazečem.</span><span class="sxs-lookup"><span data-stu-id="d8bea-106">For example, you can insert address and contact information for an applicant into a Microsoft Word document that you can use when communicating with that applicant.</span></span> <span data-ttu-id="d8bea-107">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="d8bea-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="select-which-bookmarks-to-use-in-your-email-templates"></a><span data-ttu-id="8e63a-108">Výběr toho, které záložky se mají použít v šablonách pro e-mail</span><span class="sxs-lookup"><span data-stu-id="8e63a-108">Select which bookmarks to use in your email templates</span></span>
-1. <span data-ttu-id="8e63a-109">Přejděte na Záložky přihlášek.</span><span class="sxs-lookup"><span data-stu-id="8e63a-109">Go to Application bookmarks.</span></span>
-2. <span data-ttu-id="8e63a-110">Vyhledejte na seznamu požadovanou korespondenční akci a vyberte ji.</span><span class="sxs-lookup"><span data-stu-id="8e63a-110">In the list, find and select the desired correspondence action.</span></span>
-3. <span data-ttu-id="8e63a-111">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="8e63a-111">Click Edit.</span></span>
-4. <span data-ttu-id="8e63a-112">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="8e63a-112">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="8e63a-113">Vyberte pole, která chcete být schopni používat v šabloně e-mailu pro vybranou akci Korespondence a přesuňte je do pole Záložka.</span><span class="sxs-lookup"><span data-stu-id="8e63a-113">Select the fields you would like to be able to use in an email template for the selected Correspondence action and move them to the Bookmark fields.</span></span>  
-5. <span data-ttu-id="8e63a-114">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="8e63a-114">Close the page.</span></span>
+## <a name="select-which-bookmarks-to-use-in-your-email-templates"></a><span data-ttu-id="d8bea-108">Výběr toho, které záložky se mají použít v šablonách pro e-mail</span><span class="sxs-lookup"><span data-stu-id="d8bea-108">Select which bookmarks to use in your email templates</span></span>
+1. <span data-ttu-id="d8bea-109">V navigačním podokně přejděte na **Moduly > Lidské zdroje > Nábor > Komunikace > Záložky aplikací**.</span><span class="sxs-lookup"><span data-stu-id="d8bea-109">In the navigation pane, go to **Modules > Human Resources > Recruitment > Communication > Application bookmarks**.</span></span>
+2. <span data-ttu-id="d8bea-110">Vyhledejte na seznamu požadovanou korespondenční akci a vyberte ji.</span><span class="sxs-lookup"><span data-stu-id="d8bea-110">In the list, find and select the desired correspondence action.</span></span>
+3. <span data-ttu-id="d8bea-111">Vyberte možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="d8bea-111">Select **Edit**.</span></span>
+4. <span data-ttu-id="d8bea-112">Vyberte pole, která chcete být schopni používat v šabloně e-mailu pro vybranou akci Korespondence a přesuňte je do pole Záložka.</span><span class="sxs-lookup"><span data-stu-id="d8bea-112">Select the fields you would like to be able to use in an email template for the selected Correspondence action and move them to the Bookmark fields.</span></span>  
+5. <span data-ttu-id="d8bea-113">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="d8bea-113">Close the page.</span></span>
 
-## <a name="create-an-email-template"></a><span data-ttu-id="8e63a-115">Vytvoření šablony e-mailů</span><span class="sxs-lookup"><span data-stu-id="8e63a-115">Create an email template</span></span>
-1. <span data-ttu-id="8e63a-116">Přejděte na Lidské zdroje > Nábor > Komunikace > Šablony e-mailových přihlášek.</span><span class="sxs-lookup"><span data-stu-id="8e63a-116">Go to Human resources > Recruitment > Communication > Application e-mail templates.</span></span>
-2. <span data-ttu-id="8e63a-117">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8e63a-117">Click New.</span></span>
-3. <span data-ttu-id="8e63a-118">V poli Korespondenční akce vyberte Pohovor.</span><span class="sxs-lookup"><span data-stu-id="8e63a-118">In the Correspondence action field, select 'Interview'.</span></span>
-    * <span data-ttu-id="8e63a-119">Vyberte akci korespondence, která obsahuje záložky pro tento typ e-mailové komunikace.</span><span class="sxs-lookup"><span data-stu-id="8e63a-119">Select the correspondence action that contains the bookmarks to use for this type of email communication.</span></span>  
-4. <span data-ttu-id="8e63a-120">Zadejte hodnotu do pole Šablona e-mailu.</span><span class="sxs-lookup"><span data-stu-id="8e63a-120">In the E-mail template field, type a value.</span></span>
-5. <span data-ttu-id="8e63a-121">Zadejte hodnotu do pole Předmět.</span><span class="sxs-lookup"><span data-stu-id="8e63a-121">In the Subject field, type a value.</span></span>
-6. <span data-ttu-id="8e63a-122">Zadejte hodnotu do pole Text.</span><span class="sxs-lookup"><span data-stu-id="8e63a-122">In the Text field, type a value.</span></span>
-7. <span data-ttu-id="8e63a-123">Vyhledejte na seznamu požadované pole záložek a vyberte je.</span><span class="sxs-lookup"><span data-stu-id="8e63a-123">In the list, find and select the desired bookmark field.</span></span>
-8. <span data-ttu-id="8e63a-124">Pokračujte v zadávání e-mailové zprávy vložením polí záložky v místě potřeby.</span><span class="sxs-lookup"><span data-stu-id="8e63a-124">Continue typing your email message, inserting the bookmark fields where you need them.</span></span>
-    * <span data-ttu-id="8e63a-125">Pokračujte v zadávání e-mailové zprávy vložením polí záložky v místě potřeby.</span><span class="sxs-lookup"><span data-stu-id="8e63a-125">Continue typing your email message inserting the bookmark fields where desired.</span></span>  
-9. <span data-ttu-id="8e63a-126">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8e63a-126">Click Save.</span></span>
+## <a name="create-an-email-template"></a><span data-ttu-id="d8bea-114">Vytvoření šablonu e-mailu</span><span class="sxs-lookup"><span data-stu-id="d8bea-114">Create an email template</span></span>
+1. <span data-ttu-id="d8bea-115">V navigačním podokně přejděte na **Moduly > Lidské zdroje > Nábor > Komunikace > Šablony e-mailu aplikace**.</span><span class="sxs-lookup"><span data-stu-id="d8bea-115">In the navigation pane, go to **Modules > Human resources > Recruitment > Communication > Application e-mail templates**.</span></span>
+2. <span data-ttu-id="d8bea-116">Zvolte **Nové**.</span><span class="sxs-lookup"><span data-stu-id="d8bea-116">Select **New**.</span></span>
+3. <span data-ttu-id="d8bea-117">V poli **Korespondenční akce** vyberte **Pohovor**.</span><span class="sxs-lookup"><span data-stu-id="d8bea-117">In the **Correspondence action** field, select **Interview**.</span></span> <span data-ttu-id="d8bea-118">Vyberte akci korespondence, která obsahuje záložky pro tento typ e-mailové komunikace.</span><span class="sxs-lookup"><span data-stu-id="d8bea-118">Select the correspondence action that contains the bookmarks to use for this type of email communication.</span></span>  
+4. <span data-ttu-id="d8bea-119">Zadejte hodnotu do pole **Šablona e-mailu**.</span><span class="sxs-lookup"><span data-stu-id="d8bea-119">In the **E-mail template** field, type a value.</span></span>
+5. <span data-ttu-id="d8bea-120">Zadejte hodnotu do pole **Předmět**.</span><span class="sxs-lookup"><span data-stu-id="d8bea-120">In the **Subject** field, type a value.</span></span>
+6. <span data-ttu-id="d8bea-121">Zadejte hodnotu do pole **Text**.</span><span class="sxs-lookup"><span data-stu-id="d8bea-121">In the **Text** field, type a value.</span></span>
+7. <span data-ttu-id="d8bea-122">Vyhledejte na seznamu požadované pole záložek a vyberte je.</span><span class="sxs-lookup"><span data-stu-id="d8bea-122">In the list, find and select the desired bookmark field.</span></span>
+8. <span data-ttu-id="d8bea-123">Pokračujte v zadávání e-mailové zprávy vložením polí záložky v místě potřeby.</span><span class="sxs-lookup"><span data-stu-id="d8bea-123">Continue typing your email message, inserting the bookmark fields where you need them.</span></span>
+9. <span data-ttu-id="d8bea-124">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="d8bea-124">Select **Save**.</span></span>
 
