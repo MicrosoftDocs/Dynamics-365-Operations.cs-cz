@@ -1,9 +1,9 @@
 ---
 title: Vytvoření šablony záznamu pro usnadnění zadávání dat
-description: Tento postup ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam.
+description: Toto téma ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam.
 author: margoc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,37 +16,31 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3b2ba56b6146f2495fb6a53c3cef9f549b1ad837
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 08ee7d0f0ce7e92eaa85137dcd2761bfd702eb8c
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1848200"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866921"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Vytvoření šablony záznamu pro usnadnění zadávání dat
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam. V tomto postupu vytvoříte nový záznam pro nové laptopy, které mají být přidány do dlouhodobého majetku. Tento postup používá ukázkovou společnost USMF.
+Toto téma ukazuje, jak vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam. V tomto postupu vytvoříte nový záznam pro nové laptopy, které mají být přidány do dlouhodobého majetku. Tento postup používá ukázkovou společnost USMF.
 
-1. Přejděte do části Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek.
-2. Klikněte na položku Nová.
-3. Zadejte nebo vyberte hodnotu v poli Skupina dlouhodobého majetku.
-4. Zadejte hodnotu do pole Název.
-    * Zadejte například 'laptop potenciálního zákazníka společnosti'.  
-5. Do pole Vyhledávání jména zadejte hodnotu.
-    * Například zadejte 'laptop.'  
-6. Rozbalte oddíl Technické informace.
-7. Zadejte hodnotu do pole Značka.
-8. Zadejte hodnotu do pole Model.
-9. Zadejte hodnotu do pole Rok výroby modelu.
-10. V podokně akcí klikněte na Možnosti.
-11. Klikněte na Informace o záznamu
-12. Klikněte na možnost Uživatelská šablona.
-13. Zadejte hodnotu do pole Název.
-    * Zadejte například 'firemní laptop.'  
-14. Zadejte nějakou hodnotu do pole Popis.
-    * Zadejte například 'firemní laptop'.  
-15. Klikněte na tlačítko OK.
-16. Klikněte na tlačítko Zavřít.
+1. V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek**.
+2. Zvolte **Nové**.
+3. Zadejte nebo vyberte hodnotu v poli **Skupina dlouhodobého majetku**.
+4. Zadejte hodnotu do pole **Název**. Zadejte například **laptop potenciálního zákazníka společnosti**.  
+5. Do pole **Vyhledávání jména** zadejte hodnotu. Například zadejte **laptop**.  
+6. Rozbalte oddíl **Technické informace**.
+7. V polích **Značka**, **Model** a **Rok modelu** zadejte hodnoty.
+8. V podokně akcí vyberte **Možnosti**.
+9. Vyberte **Informace o záznamu**.
+10. Vyberte **Šablona uživatele**.
+11. Zadejte hodnotu do pole **Název**.
+12. Zadejte hodnotu do pole **Popis**.
+13. Vyberte **OK**.
+14. Vyberte **Zavřít**.
 

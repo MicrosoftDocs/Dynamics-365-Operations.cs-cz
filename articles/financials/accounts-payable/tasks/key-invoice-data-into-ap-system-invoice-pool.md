@@ -1,9 +1,9 @@
 ---
 title: Zadání dat faktury do systému závazků s použitím evidence faktur
-description: Tento průvodce úkolem popisuje postup použití registru faktur k vytvoření faktur.
+description: Tohle téma popisuje použití registru faktur k vytváření faktur.
 author: abruer
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,66 +15,56 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b870613512a8f4a5c19a0a05cd72b35ea32861b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f7d72c1d98100d1313109e8b5e55df02e2163174
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843206"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867695"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>Zadání dat faktury do systému závazků s použitím evidence faktur
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento průvodce úkolem popisuje postup použití registru faktur k vytvoření faktur.  Potom použije evidenci faktur pro spárování faktury s nákupní objednávkou a dokončení výdajů na stránce faktury dodavatele.
+Tohle téma popisuje použití registru faktur k vytváření faktur. Potom použije evidenci faktur pro spárování faktury s nákupní objednávkou a dokončení výdajů na stránce faktury dodavatele.
 
 
 ## <a name="create-a-purchase-order"></a>Vytvoření nákupní objednávky
-1. Přejděte na Závazky > Nákupní objednávky > Nákupní objednávky.
-2. Klepnutím na příkaz Nový vytvořte nákupní objednávku.
-3. V poli Účet dodavatele kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Vyberte dodavatele ze seznamu. Příklad dodavatele 1001.
-5. Klepněte na tlačítko OK.
-6. V poli Číslo zboží kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-7. najděte v seznamu číslo položky služby. Vyberte například S0001.
-8. Klepněte číslo položky a vyberte je.
-    * Čistá částka je 75,00.  Jedná se o částku, která se očekává na faktuře.  
-9. V podokně akcí klikněte na možnost Zakoupit.
-10. Klikněte na tlačítko Potvrdit.
+1. V navigačním podokně přejděte na **Moduly > Závazky > Nákupní objednávky > Nákupní objednávky**.
+2. Klepnutím na možnost **Nová** vytvořte novou objednávku.
+3. V poli **Účet dodavatele** v rozevíracím seznamu vyberte dodavatele. Vyberte například dodavatele **1001**.
+4. Vyberte **OK**.
+5. V poli **Číslo položky** vyberte z rozevíracího seznamu číslo položky služeb. Vyberte například **S0001**. Čistá částka je 75,00.  Jedná se o částku, která se očekává na faktuře.  
+6. V podokně akcí klikněte na možnost **Zakoupit**.
+7. Vyberte **Potvrdit**.
 
 ## <a name="create-and-post-and-invoice"></a>Vytvoření a zaúčtování faktury
-1. Přejděte na Závazky > Faktury > Registr faktur.
-2. Klikněte na položku Nová.
+1. V navigačním podokně přejděte na **Moduly > Závazky > Faktury > Registr faktur**.
+2. Zvolte **Nové**.
 3. Otevřete vyhledávání a vyberte název registru faktury, který chcete použít.
 4. Vyberte název registru faktury, který chcete použít.
-5. Kliknutím na Řádky otevřete registr a zadejte řádky výdajů.
-6. Ve vyhledávání vyberte dodavatele. Například klepněte na dodavatele 1001.
-7. Do pole Faktura zadejte číslo faktury.
-8. Zadejte hodnotu do pole Popis.
-9. V poli Dobropis zadejte číslo.
-10. V poli Nákupní objednávka kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-11. Vyberte nákupní objednávku, kterou jste vytvořili dříve.
-12. V poli Schválil(a) kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-13. Vyberte schvalujícího a kliknutím na tlačítko Vybrat tohoto schvalovatele vyberte.
-14. Klikněte na položku Zaúčtovat.
-15. Zavřete formulář.
-16. Zavřete formulář.
+5. Kliknutím na **Řádky** otevřete registr a zadejte řádky výdajů.
+6. Ve vyhledávání vyberte dodavatele. Vyberte například dodavatele **1001**.
+7. Do pole **Faktura** zadejte číslo faktury.
+8. Zadejte hodnotu do pole **Popis**.
+9. V poli **Dobropis** zadejte číslo.
+10. V poli **Nákupní objednávka** otevřete rozevírací seznam a vyberte nákupní objednávku, kterou jste dříve vytvořili.
+11. V poli **Schválil/a** zvýrazněte schvalujícího v rozevíracím seznamu a kliknutím na tlačítko **Vybrat** vyberte tohoto schvalujícího.
+12. Zvolte **Zaúčtovat**.
 
 ## <a name="open-an-invoice-from-the-pool-and-match-it-to-a-purchase-order-to-complete-the-invoice-process"></a>otevřete fakturu z evidence a spárujte ji s nákupní objednávkou pro dokončení procesu fakturace
-1. Přejděte na Závazky > Faktury > Evidence faktur.
-2. Kliknutím na nákupní objednávku vytvořte fakturu dodavatele z faktury v evidenci.
+1. V navigačním podokně přejděte na **Moduly > Závazky > Faktury > Evidence faktur**.
+2. Kliknutím na možnost **Nákupní objednávka** vytvořte fakturu dodavatele z faktury v evidenci.
 3. Vyberte fakturu, kterou chcete zkontrolovat.
-4. Klepnutím na tlačítko Aktualizovat stav párování dokončete párování.
-5. V podokně akcí klikněte na Možnosti.
-6. Klikněte na tlačítko Změnit zobrazení.
-7. Klikněte na Zobrazení mřížky.
-8. Klikněte na položku Zaúčtovat.
+4. Kliknutím na možnost **Aktualizovat stav párování** dokončete párování.
+5. V podokně akcí vyberte **Možnosti**.
+6. Vyberte **Změnit zobrazení**.
+7. Vyberte **Zobrazení mřížky**.
+8. Zvolte **Zaúčtovat**.
 9. Zavřete formulář.
-10. Přejděte do části Závazky > Dodavatelé > Dodavatelé.
-11. Vyberte dodavatele, který se nacházel na nákupní objednávce. Vyberte například dodavatele 1001.
-12. Klikněte na odkaz na vybraném řádku v seznamu.
-13. V podokně akcí klikněte na možnost Dodavatel.
-14. Klikněte na Transakce.
-15. Vyberte fakturu, kterou jste vytvořili.
-    * Časové rozlišení registru faktur bylo stornováno a zaúčtováno na příslušný účet výdajů.  
+10. V navigačním podokně přejděte na **Moduly > Závazky > Dodavatelé > Dodavatelé**.
+11. Vyberte dodavatele, který se nacházel na nákupní objednávce. Vyberte například dodavatele **1001**.
+12. V podokně akcí vyberte možnost **Dodavatel**.
+13. Vyberte **Transakce**.
+14. Vyberte fakturu, kterou jste vytvořili. Časové rozlišení registru faktur bylo stornováno a zaúčtováno na příslušný účet výdajů.  
 

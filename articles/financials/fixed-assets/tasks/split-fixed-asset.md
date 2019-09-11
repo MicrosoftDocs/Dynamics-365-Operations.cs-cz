@@ -1,9 +1,9 @@
 ---
 title: Rozdělení dlouhodobého majetku
-description: Tento průvodce záznamem úloh rozdělí procento jedné knihy majetku na novou knihu majetku.
+description: Toto téma vysvětluje, jak rozdělit procento jedné knihy majetku na novou knihu majetku.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,46 +16,47 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d8e5fdc8a7b326daca1fc0f0962c69bb8fb1ff64
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a4e001a6fdf390c6211ba85aa327b60dcdf16d9e
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839706"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867576"
 ---
 # <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento průvodce záznamem úloh rozdělí procento jedné knihy majetku na novou knihu majetku.  Používá účetní roli a vzorová data USMF.
+Toto téma vysvětluje, jak rozdělit procento jedné knihy majetku na novou knihu majetku. Používá účetní roli a vzorová data USMF.
 
 
 ## <a name="create-a-new-fixed-asset"></a>Vytvořit nový dlouhodobý majetek
-1. Přejděte do části Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek.
-2. Klikněte na položku Nová.
-3. Zadejte nebo vyberte hodnotu v poli Skupina dlouhodobého majetku.
-4. Poznamenejte si číslo dlouhodobého majetku pro pozdější použití v procesu rozdělení.
-5. Zadejte hodnotu do pole Název.
-6. Zavřete formulář.
+1. V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Dlouhodobý majetek > Dlouhodobý majetek**.
+2. Zvolte **Nové**.
+3. Zadejte nebo vyberte hodnotu v poli **Skupina dlouhodobého majetku**. Poznamenejte si číslo dlouhodobého majetku pro pozdější použití v procesu rozdělení.  
+4. Zadejte hodnotu do pole **Název**.
+5. Zavřete formulář.
 
 ## <a name="split-a-fixed-asset"></a>Rozdělení dlouhodobého majetku
-1. V seznamu najděte a vyberte dlouhodobý majetek, který chcete rozdělit.
-2. Klikněte na odkaz na vybraném řádku v seznamu.
-3. Klepněte na Knihy.
-    * Vyberte knihu určenou pro rozdělení na nový majetek.  
-4. Klepněte na možnost Funkce.
-5. Klikněte na Rozdělit dlouhodobý majetek.
-6. Zadejte nebo vyberte hodnotu v poli Do dlouhodobého majetku.
-7. V poli Do knihy kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-8. Zadejte datum do pole Datum transakce.
-9. Zadejte číslo do pole Procento.
-10. V poli Název deníku zadejte nebo vyberte hodnotu.
-11. Klikněte na tlačítko OK.
+1. V seznamu najděte a vyberte odkaz na dlouhodobý majetek, který chcete rozdělit.
+2. Vyberte **Knihy**. Vyberte knihu určenou pro rozdělení na nový majetek.  
+3. Vyberte **Funkce**.
+4. Vyberte **Rozdělit dlouhodobý majetek**.
+5. Zadejte nebo vyberte hodnotu v poli **Do dlouhodobého majetku**.
+6. V poli **Do knihy** vyberte tlačítko rozevíracího seznamu otevřete vyhledávání.
+7. Zadejte datum do pole **Datum transakce**.
+8. Zadejte číslo do pole **Procento**.
+9. V poli **Název deníku** zadejte nebo vyberte hodnotu.
+10. Vyberte **OK**.
 
 ## <a name="post-the-journal-transaction"></a>Zaúčtování transakce deníku
-1. Přejděte na Dlouhodobý majetek > Položky deníku > Deník dlouhodobého majetku.
+1. V navigačním podokně přejděte na **Moduly > Dlouhodobý majetek > Položky deníku > Deník dlouhodobého majetku**.
 2. V seznamu vyberte deník vytvořený pomocí procesu rozdělení.
-3. Klikněte na položku Řádky.
-    * Ověřte, že byly vytvořeny řádky deníku.  Transakce Oprava pořizovací ceny byla vytvořena pro původní majetek s cílem snížit hodnotu o procento uvedené během procesu rozdělení.  Je vytvořena transakce pořízení pro nový majetek na stejnou částku.  
-4. Klikněte na položku Zaúčtovat.
+3. Vybrat **řádky**.
+
+    - Ověřte, že byly vytvořeny řádky deníku.  
+    - Transakce Oprava pořizovací ceny byla vytvořena pro původní majetek s cílem snížit hodnotu o procento uvedené během procesu rozdělení.  
+    - Je vytvořena transakce pořízení pro nový majetek na stejnou částku.  
+
+4. Zvolte **Zaúčtovat**.
 

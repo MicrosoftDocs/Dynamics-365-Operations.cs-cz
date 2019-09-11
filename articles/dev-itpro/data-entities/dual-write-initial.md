@@ -19,50 +19,55 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b74bc2d3133af7e87663a4e6bafb8780e0a6a66f
-ms.sourcegitcommit: efcc0dee8bde5f8f93f6291e7f059ad426843e57
+ms.openlocfilehash: 1473c3bad55734d5f83ee3e4c1654921b872f3bb
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "1797291"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873121"
 ---
-# <a name="execution-order-for-initial-sychronization-of-finance-and-operations-and-common-data-service"></a>Pořadí provádění pro počáteční synchronizaci aplikací Finance and Operations a Common Data Service
+# <a name="execution-order-for-initial-synchronization-of-finance-and-operations-and-common-data-service"></a>Pořadí provádění pro počáteční synchronizaci aplikací Finance and Operations a Common Data Service
 
-Před použitím integrace dat je nutné vytvořit počáteční data potřebná pro zákazníky, dodavatele a kontakty. Chcete-li například vytvořit novou položku **Skupina dodavatelů** a nastavit její **platební podmínky** jako **Net30**, pak před pokusem o vytvoření položky **skupiny dodavatelů** je nutné zajistit, aby **Net30** existovala jak v aplikaci Finance and Operations, tak v Common Data Service. (V budoucnu bude vydána funkce platformy pro duální zápis nazvaná **Počáteční synchronizace**. Bude provádět jednočasovou synchronizaci dat mezi Finance and Operations a Common Data Service jako součást nastavení pro duální zápis.)
+[!include [banner](../includes/banner.md)]
 
-Tipy: Vydáváme mapu dvojího zápisu pro všechna referenční data včetně **platebních podmínek**. Pokud již máte počáteční data v jednom systému, může malá operace aktualizace na záznamu spustit pro tento záznam dvojí zápis. 
+[!include [preview](../includes/preview-banner.md)]
 
-Je nutné postupovat podle následujícího pořadí priorit a zajistit, aby počáteční data byla k dispozici jak pro Finance and Operations, tak pro Common Data Service.   
+Před použitím integrace dat je nutné vytvořit počáteční data potřebná pro zákazníky, dodavatele a kontakty. Chcete například vytvořit novou položku **Skupina dodavatelů** a nastavit její hodnotu **Platebních podmínek** na **Net30**. V takovém případě se před pokusem o vytvoření položky **Skupiny dodavatelů** ujistěte, že **Net30** existuje v obou aplikacích  Microsoft Dynamics 365 for Finance and Operations a Common Data Service. (V budoucnu vydá Microsoft funkce platformy pro duální zápis nazvanou Počáteční synchronizace. Ta bude provádět jednočasovou synchronizaci dat mezi Finance and Operations a Common Data Service jako součást nastavení pro duální zápis.)
+
+> [!TIP]
+> Microsoft vydává mapu dvojího zápisu pro všechna referenční data, včetně **platebních podmínek** (podmínek platby). Pokud již máte počáteční data v jednom systému, může malá operace aktualizace na záznamu spustit pro tento záznam dvojí zápis.
+
+Je nutné postupovat podle následujícího pořadí priorit a zajistit, aby počáteční data byla k dispozici jak pro Finance and Operations, tak pro Common Data Service.
 
 ## <a name="vendor"></a>Dodavatel
 
-Pořadí provedení pro dodavatele je následující:
+Zde je pořadí provádění entity **Dodavatel**:
 
-```
-Vendor Group
-    Terms of payment
-        Payment day & lines
-        Payment schedule
-Vendor payment method
-```
+1. Skupina dodavatelů
+
+    1. Platební podmínky
+
+        1. Den a řádky platby
+        2. Platební kalendář
+
+2. Platební metoda dodavatele
 
 ## <a name="customer-organization"></a>Odběratel (organizace)
 
-Pořadí provedení pro odběratele je následující:
+Zde je pořadí provádění entity **Odběratel**:
 
-```
-Customer Group
-    Terms of payment
-        Payment day & lines
-        Payment 
-Customer payment method
-```
+1. Skupina odběratelů
+
+    1. Platební podmínky
+
+        1. Den a řádky platby
+        2. Platba 
+
+2. Způsob platby odběratele
 
 ## <a name="contact-person"></a>Kontakt (osoba)
 
-Pořadí provedení pro kontakt je následující:
+Zde je pořadí provádění entity **Kontakt**:
 
-```
-Customer
-Vendor               
-```
+1. Zákazník
+2. Dodavatel

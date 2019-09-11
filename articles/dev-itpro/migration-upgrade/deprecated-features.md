@@ -3,7 +3,7 @@ title: Odstraněné nebo zastaralé funkce
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
 author: sericks007
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 4aad4f2cf42b72256b5c4727bfd145d16af033ed
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863376"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867094"
 ---
 # <a name="removed-or-deprecated-features"></a>Odstraněné nebo zastaralé funkce
 
@@ -157,6 +157,17 @@ Podpora pro vytváření prodejních objednávek na základě projektů, kde mě
 | **Ovlivněné oblasti produktu**         | Vývojové nástroje Visual Studio |
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26. |
+
+## <a name="dynamics-365-for-finance-and-operations-1000-with-platform-update-24"></a>Dynamics 365 for Finance and Operations 10.0.0 s aktualizací Platform Update 24
+
+### <a name="renaming-released-products"></a>Přejmenování vydaných produktů 
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Použijete-li funkci **Přejmenovat primární klíč** klíč ke změně ItemID vydaného produktu, budou aktualizovány pouze přímé odkazy cizího klíče. Všechny další odkazy na vydaný produkt, jako například z výrobních zakázek, si ponechají původní ID položky. Výsledkem mohou být nekonzistentní data, která by nakonec blokovala obchodní procesy. |
+| **Nahrazeno jinou funkcí?**   | Č. |
+| **Ovlivněné oblasti produktu**         | Řízení informací o produktech |
+| **Možnost nasazení**              | Vše  |
+| **Stav**                         | Odebráno od verze Dynamics 365 for Finance and Operations 10.0.0 s aktualizací Platform Update 24. Ve výjimečných případech, například pro obnovení z předchozího přejmenování primárního klíče vydaného produktu, je možné požádat společnost Microsoft o dočasné odebrání tohoto omezení pro operaci přejmenování primárního klíče pro vydané produkty. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 s aktualizací Platform Update 23

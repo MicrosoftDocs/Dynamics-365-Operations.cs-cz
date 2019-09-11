@@ -1,9 +1,9 @@
 ---
 title: Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu OPENXML (listopad 2016)
-description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci pro elektronické výkaznictví, která obsahuje šablonu pro generování elektronických dokladů ve formátu OPENXML.
+description: Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci pro elektronické výkaznictví, která obsahuje šablonu pro generování elektronických dokladů ve formátu OPENXML.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,206 +16,138 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e6b6b16f202af051ccff02051eb438ea49ff6da
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d1229c89f43f9ded955dadf2f4d87825c9ab4e71
+ms.sourcegitcommit: e552111e148a80544a3468da60ea0464f02a658d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551547"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "1875265"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu OPENXML (listopad 2016)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci pro elektronické výkaznictví, která obsahuje šablonu pro generování elektronických dokladů ve formátu OPENXML. Tato konfigurace se použije ke zpracování plateb dodavatele.
-
-
+Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci pro elektronické výkaznictví, která obsahuje šablonu pro generování elektronických dokladů ve formátu OPENXML. Tato konfigurace se použije ke zpracování plateb dodavatele.
 
 V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. Tyto kroky lze provést ve společnosti GBSI.
-
-
 
 K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". Je třeba mít k dispozici soubor aplikace Excel, který bude importován při vytváření šablony. K tomuto souboru lze přistoupit ze [šablony sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266).
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Odeslání konfigurace modelu platebních dat
-1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-2. Označte v seznamu vybraný řádek.
-    * Vyberte poskytovatele konfigurace pro vzorovou společnost 'Litware, Inc.' Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".  
-3. Klikněte na možnost Nastavit jako aktivní.
-4. Klikněte na možnost Úložiště.
-    * Vyberte úložiště pro typ Provozní prostředky (pokud je k dispozici). Pokud k dispozici je, přeskočte následující kroky týkající se vytváření nového úložiště.  
-5. Klepnutím na možnost Přidat otevřete dialogové okno.
-6. V poli Typ úložiště konfigurace zadejte "Provozní prostředky".
-7. Klikněte na Vytvořit úložiště.
-8. Klikněte na tlačítko OK.
-9. Klikněte na možnost Otevřít.
-10. Ve stromovém zobrazení vyberte „Model platby“.
-11. Klepněte na tlačítko Importovat.
-    * Importujte tento model dat. Použije se jako zdroj dat v nové konfiguraci formátu. Tento krok vynechejte, je-li tato konfigurace již importována.  
-12. Klepněte na tlačítko Ano.
-13. Zavřete stránku.
-14. Zavřete stránku.
+1. V navigačním podokně přejděte na **Moduly > Správa organizace > Pracovní prostory > Elektronické vykazování**.
+2. V seznamu označte konfiguraci pro vzorovou společnost Litware, Inc. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](er-configuration-provider-mark-it-active-2016-11.md).
+3. Vyberte **Nastavit jako aktivní**.
+4. Vyberte **Úložiště**. Vyberte úložiště pro typ Provozní prostředky (pokud je k dispozici). Pokud k dispozici je, přeskočte následující kroky týkající se vytváření nového úložiště.  
+5. Kliknutím na **Přidat** otevřete dialogové okno pro přetažení.
+6. V poli **Typ úložiště konfigurace** zadejte `Operations resourcesdd`.
+7. Zvolte **Vytvořit úložiště**.
+8. Vyberte **OK**.
+9. Zvolte **Otevřít**.
+10. Ve stromovém zobrazení vyberte **Model platby**.
+11. Vyberte **Import**. Importujte tento model dat. Použije se jako zdroj dat v nové konfiguraci formátu. Tento krok vynechejte, je-li tato konfigurace již importována.  
+12. Vyberte **Ano**.
+13. Zavřete stránky, dokud se nevrátíte na stránku elektronického výkaznictví.
 
 ## <a name="create-a-new-format-configuration"></a>Vytvoření nové konfigurace formátu
-1. Klikněte na Konfigurace výkaznictví.
-2. Ve stromovém zobrazení vyberte „Model platby“.
-3. Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.
-4. V poli Nový zadejte "Formát založený na datovém modelu PaymentModel".
-    * Vytvořte formát, který vychází z modelu dat PaymentModel.  
-5. V poli Název zadejte „Ukázková sestava listu“.
-    * Ukázková sestava listu  
-6. V poli Popis zadejte Ukázková sestavu listu pro platby dodavatelů.
-    * Ukázková sestavu listu pro platby dodavatelů.  
-7. V poli Definice datového modelu zadejte nebo vyberte hodnotu.
-    * Vyberte definici „CustomerCreditTransferInitiation“.  
-8. Klepněte na možnost Vytvořit konfiguraci.
+1. Vyberte **Konfigurace vykazování**.
+2. Ve stromovém zobrazení vyberte **Model platby**.
+3. Výběrem možnosti **Vytvořit konfiguraci** otevřete dialogové okno.
+4. Do pole **Nový** zadejte `Format based on data model PaymentModel`. Vytvořte formát, který vychází z modelu dat PaymentModel.
+5. Do pole **Název** zadejte `Sample worksheet report`. Ukázková sestava listu  
+6. Do pole **Popis** zadejte `Sample worksheet report for vendors’ payments`. Ukázková sestavu listu pro platby dodavatelů.  
+7. V poli **Definice datového modelu** zadejte nebo vyberte hodnotu. Vyberte definici **CustomerCreditTransferInitiation**.  
+8. Vyberte **Vytvořit konfiguraci**.
 
 ## <a name="design-a-new-document-in-openxml-worksheet-format"></a>Návrh nového dokumentu ve formátu listu OPENXML
-1. Ve stromovém zobrazení vyberte Model platby\Ukázková sestava listu.
-2. Klikněte na možnost Návrhář.
-3. V podokně akcí klikněte na možnost Importovat.
-4. Klikněte na Import z aplikace Excel.
-5. Klikněte na Přílohy.
-    * Připojte existující dokument Excel jako šablonu.  
-6. Klikněte na položku Nová.
-7. Klepněte na volby Soubor.
-    * Odkažte na existující soubor aplikace Excel.  
+1. Ve stromovém zobrazení vyberte **Model platby\Ukázková sestava listu**.
+2. Vyberte možnost **Návrhář**.
+3. V podokně akcí klikněte na možnost **Import**.
+4. Vyberte možnost **Import z aplikace Excel**.
+5. Vyberte **Přílohy**. Připojte existující dokument Excel jako šablonu.  
+6. Zvolte **Nové**.
+7. Vyberte možnost **Soubor**. Odkažte na existující soubor aplikace Excel.  
 8. Zavřete stránku.
-9. V poli Šablona zadejte nebo vyberte hodnotu.
-    * Určete, že chcete použít připojený soubor aplikace Excel jako šablonu.  
-10. Klikněte na tlačítko OK.
-    * Všimněte si, že komponenty formátu ER byly vytvořeny v navrženém formátu v závislosti na struktuře odkazovaného dokumentu aplikace MS Excel (rozsahy s názvy).  
+9. V poli **Šablona** zadejte nebo vyberte hodnotu. Určete, že chcete použít připojený soubor aplikace Excel jako šablonu.  
+10. Vyberte **OK**. Všimněte si, že komponenty formátu ER byly vytvořeny v navrženém formátu v závislosti na struktuře odkazovaného dokumentu aplikace MS Excel (rozsahy s názvy).  
 
 ## <a name="create-a-new-data-source-to-calculate-totals-by-currency-codes"></a>Vytvoření nového zdroje dat pro výpočet součtů podle kódů měn
-1. Klikněte na kartu Mapování.
-2. Klepnutím na možnost Přidat kořen otevřete dialogové okno.
-3. Ve stromovém zobrazení vyberte možnost „Funkce\Seskupit podle “.
-4. Do pole Název zadejte PaymentByCurrency.
-    * PaymentByCurrency  
-5. Klikněte na „Upravit skupinu podle“.
-6. Ve stromovém zobrazení rozbalte „model“.
-7. Ve stromovém zobrazení vyberte „model\Platby“.
-8. Klikněte na „Přidat pole do“.
-9. Klikněte na „Skupina Co“.
-10. Ve stromovém zobrazení rozbalte „model\Platby“.
-11. Ve stromovém zobrazení vyberte „model\Platby\Měna“.
-12. Klikněte na „Přidat pole do“.
-13. Klikněte na „Seskupená pole“.
-14. Ve stromovém zobrazení vyberte „model\Platby\Požadovaná částka(InstructedAmount)“.
-15. Klikněte na „Přidat pole do“.
-16. Klikněte na „Seskupená pole“.
-17. Vyberte volbu v poli Metoda.
-    * Vyberte funkci agregace SUM.  
-18. Do pole Název zadejte TotalInstructuredAmount.
-    * TotalInstructuredAmount  
-19. Klikněte na položku Uložit.
-20. Zavřete stránku.
-21. Klikněte na tlačítko OK.
+1. Zvolte kartu **Mapování**.
+2. Výběrem možnosti **Přidat kořen** otevřete dialogové okno.
+3. Ve stromovém zobrazení vyberte možnost **Funkce\Seskupit podle**.
+4. Do pole **Název** zadejte `PaymentByCurrency`.
+5. Vyberte možnost **Upravit skupinu podle**.
+6. Ve stromové struktuře rozbalte **model**a pak vyberte **model\Platby**.
+7. Vyberte **Přidat pole do**.
+8. Vyberte možnost **Skupina Co**.
+9. Ve stromové struktuře rozbalte **model\Platby**a pak vyberte **model\Platby\Měna**.
+10. Vyberte **Přidat pole do**.
+11. Vyberte **Seskupená pole**.
+12. Ve stromovém zobrazení vyberte **model\Platby\Požadovaná částka(InstructedAmount)**.
+13. Vyberte možnost **Přidat pole do** a poté vyberte **Pole agregace**.
+14. Vyberte volbu v poli **Metoda**. Vyberte funkci **Agregace SUM**.  
+15. Do pole **Název** zadejte `TotalInstructuredAmount`.
+16. Zvolte **Uložit**.
+17. Zavřete stránku.
+18. Vyberte **OK**.
 
 ## <a name="map-format-components-to-data-sources"></a>Mapování součástí formátu na zdroje dat
-1. Ve stromovém zobrazení rozbalte „model“.
-2. Ve stromovém zobrazení rozbalte „model\Platby“.
-3. Ve stromovém zobrazení rozbalte „model\Platby\Strana příkazce(InitiatingParty)“.
-4. Ve stromovém zobrazení vyberte „model\Platby\Strana příkazce(InitiatingParty)\Název“.
-5. Ve stromové struktuře rozbalte 'Excel\ReportHeader'.
-6. Ve stromové struktuře zvolte 'Excel\ReportHeader\CompanyName'.
-7. Klikněte na možnost Vazba.
-8. Ve stromovém zobrazení rozbalte „model\Platby\Věřitel“.
-9. Ve stromovém zobrazení rozbalte „model\Platby\Věřitel\Identifikace“.
-10. Ve stromovém zobrazení vyberte „model\Platby\Účet věřitele (Účet věřitele)\Identifikace\ID zdroje(SourceID)“.
-11. Ve stromové struktuře rozbalte 'Excel\PaymLines'.
-12. Ve stromové struktuře zvolte 'Excel\PaymLines\VendAccountName'.
-13. Klikněte na možnost Vazba.
-14. Ve stromovém zobrazení vyberte „model\Platby\Věřitel\Název“.
-15. Ve stromové struktuře zvolte 'Excel\PaymLines\VendName'.
-16. Klikněte na možnost Vazba.
-17. Ve stromovém zobrazení rozbalte „model\Platby\Agent věřitele(CreditorAgent)“.
-18. Ve stromovém zobrazení vyberte „model\Platby\Agent věřitele(CreditorAgent)\Název“.
-19. Ve stromové struktuře zvolte 'Excel\PaymLines\Banka'.
-20. Klikněte na možnost Vazba.
-21. Ve stromovém zobrazení vyberte „model\Platby\Agent věřitele(CreditorAgent)\Směrový kód(RoutingNumber)“.
-22. Ve stromové struktuře zvolte 'Excel\PaymLines\RoutingNumber'.
-23. Klikněte na možnost Vazba.
-24. Ve stromovém zobrazení rozbalte „model\Platby\Účet věřitele (Účet věřitele)“.
-25. Ve stromovém zobrazení rozbalte „model\Platby\Účet věřitele (Účet věřitele)\Identifikace“.
-26. Ve stromovém zobrazení vyberte „model\Platby\Účet věřitele (Účet věřitele)\Identifikace\Číslo“.
-27. Ve stromové struktuře zvolte 'Excel\PaymLines\AccountNumber'.
-28. Klikněte na možnost Vazba.
-29. Ve stromovém zobrazení vyberte „model\Platby\Požadovaná částka(InstructedAmount)“.
-30. Ve stromové struktuře zvolte 'Excel\PaymLines\MD'.
-31. Klikněte na možnost Vazba.
-32. Ve stromovém zobrazení rozbalte „model\Platby\Věřitel“.
-33. Ve stromovém zobrazení rozbalte „model\Platby\Účet věřitele (Účet věřitele)“.
-34. Ve stromovém zobrazení rozbalte „model\Platby\Agent věřitele(CreditorAgent)“.
-35. Ve stromovém zobrazení vyberte „model\Platby\Měna“.
-36. Ve stromové struktuře zvolte 'Excel\PaymLines\Měna'.
-37. Klikněte na možnost Vazba.
-38. Ve stromu rozbalte PaymentByCurrency.
-39. Ve stromu rozbalte PaymentByCurrency\seskupeno.
-40. Ve stromovém zobrazení vyberte „PaymentByCurrency\seskupeno\Měna“.
-41. Ve stromové struktuře rozbalte 'Excel\SummaryLines'.
-42. Ve stromové struktuře zvolte 'Excel\SummaryLines\SummaryCurrency'.
-43. Klikněte na možnost Vazba.
-44. Ve stromu rozbalte PaymentByCurrency\agregováno.
-45. Ve stromovém zobrazení vyberte „PaymentByCurrency\agregováno\TotalInstructuredAmount“.
-46. Ve stromové struktuře zvolte 'Excel\SummaryLines\SummaryAmount'.
-47. Klikněte na možnost Vazba.
-48. Ve stromu vyberte PaymentByCurrency.
-49. Ve stromové struktuře zvolte 'Excel\SummaryLines'.
-50. Klikněte na možnost Vazba.
-51. Ve stromovém zobrazení vyberte „model\Platby“.
-52. Ve stromové struktuře zvolte 'Excel\PaymLines'.
-53. Klikněte na možnost Vazba.
-54. Klikněte na položku Uložit.
-55. Zavřete stránku.
+1. Ve stromovém zobrazení vyberte **model\Platby\Strana příkazce(InitiatingParty)\Název** a **Excel\ReportHeader\CompanyName**.
+2. Vyberte možnost **vazba**.
+3. Ve stromovém zobrazení vyberte **model\Platby\Účet věřitele\Identifikace\ID zdroje(SourceID)** a **Excel\PaymLines\VendAccountName**.
+4. Vyberte možnost **vazba**.
+5. Ve stromovém zobrazení vyberte **model\Platby\Účet věřitele\Název** a **Excel\PaymLines\VendName**.
+6. Vyberte možnost **vazba**.
+7. Ve stromovém zobrazení vyberte **model\Platby\Agent věřitele(CreditorAgent)\Název** a **Excel\PaymLines\Bank**.
+8. Vyberte možnost **vazba**.
+9. Ve stromovém zobrazení vyberte **model\Platby\Agent věřitele(CreditorAgent)\Směrový kód(RoutingNumber)** a **Excel\PaymLines\RoutingNumber**.
+10. Vyberte možnost **vazba**.
+11. Ve stromovém zobrazení vyberte **model\Platby\Účet věřitele(CreditorAccount)\Identifikace\Číslo** a **Excel\PaymLines\AccountNumber**.
+12. Vyberte možnost **vazba**.
+13. Ve stromovém zobrazení vyberte **model\Platby\Požadovaná částka(InstructedAmount)** a **Excel\PaymLines\Debit**.
+14. Vyberte možnost **vazba**.
+15. Ve stromovém zobrazení vyberte **model\Platby\Měna** a **Excel\PaymLines\Currency**.
+16. Vyberte možnost **vazba**.
+17. Ve stromové struktuře vyberte **PaymentByCurrency\grouped\Currency** a **Excel\SummaryLines\SummaryCurrency**.
+18. Vyberte možnost **vazba**.
+19. Ve stromové struktuře vyberte **PaymentByCurrency\aggregated\TotalInstructuredAmount** a **Excel\SummaryLines\SummaryAmount**.
+20. Vyberte možnost **vazba**.
+21. Ve stromové struktuře vyberte **PaymentByCurrency** a **Excel\SummaryLines**.
+22. Vyberte možnost **vazba**.
+23. Ve stromovém zobrazení vyberte **model\Platby** a **Excel\PaymLines**.
+24. Vyberte možnost **vazba**.
+25. Zvolte **Uložit** a poté zavřete stránku.
 
 ## <a name="use-the-created-configuration-for-payments-processing"></a>Použití vytvořené konfigurace pro zpracování plateb
-1. Klikněte na položku Změnit stav.
-2. Klikněte na tlačítko Dokončit.
-3. Klikněte na tlačítko OK.
-4. Zavřete stránku.
-5. Zavřete stránku.
-6. Přejděte do nabídky Závazky > Nastavení platby > Metody platby.
-7. Použijte rychlý filtr k filtrování v poli Metoda platby s hodnotou 'Elektronická'.
-    * Elektronicky  
-8. Klikněte na položku Upravit.
-9. Rozbalte oddíl Formáty souborů.
-10. Vyberte možnost Ano v poli Obecné elektronické výkaznictví.
-11. V poli Exportovat konfiguraci formátu zadejte nebo vyberte hodnotu.
-    * Vyberte konfiguraci Ukázková sestava listu.  
-12. Klikněte na položku Uložit.
-13. Zavřete stránku.
+1. Vyberte **Změnit stav**.
+2. Zvolte **Dokončit**.
+3. Vyberte **OK**.
+4. V navigačním podokně přejděte na **Moduly > Závazky > Nastavení platby > Metody platby**.
+5. Použijte rychlý filtr k filtrování v poli **Metoda platby** s hodnotou **Elektronická**.
+6. Vyberte možnost **Upravit**.
+7. Rozbalte oddíl **Formáty souborů**.
+8. Vyberte možnost **Ano** v poli **Obecné elektronické výkaznictví**.
+9. V poli **Exportovat konfiguraci formátu** zadejte nebo vyberte hodnotu. Vyberte konfiguraci **Ukázková sestava listu**.  
+10. Zvolte **Uložit**.
+11. Zavřete stránku.
 
 ## <a name="use-the-created-configuration-for-testing-of-payment-journals-processing"></a>Použití vytvořené konfigurace pro testování zpracování deníků plateb
-1. Přejděte na Závazky > Platby > Deník plateb.
-2. Klikněte na položku Nová.
-    * Vytvořte nový deník plateb.  
-3. Zadejte text „VendPay“ do pole Název.
-    * VendPay  
-4. Klikněte na položku Řádky.
-5. Zadejte hodnoty „GB_SI_000001“ do pole Účet.
-    * GB_SI_000001  
-6. Nastavte Má dáti na 1000.
-7. Klikněte na položku Nová.
-8. Zadejte hodnoty „GB_SI_000005“ do pole Účet.
-    * GB_SI_000005  
-9. Nastavte Má dáti na 2000.
-10. Zadejte hodnotu EUR do pole Měna.
-    * EUR  
-11. Zadejte hodnotu „GBSI OPER“ do pole Protiúčet.
-    * GBSI OPER  
-12. V poli Způsob platby zadejte „Elektronicky“.
-    * Elektronicky  
-13. Klikněte na položku Uložit.
-14. Klepněte na Generovat platby.
-15. V poli Způsob platby zadejte „Elektronicky“.
-    * Elektronicky  
-16. Do pole Název souboru zadejte 'Platby'.
-    * Zadejte například Platby.  
-17. V poli Bankovní účet zadejte „GBSI OPER“.
-    * GBSI OPER  
-18. Klikněte na tlačítko OK.
-19. Klikněte na tlačítko OK.
-    * Zkontrolujte vytvořený list, včetně podrobností na řádcích platby, stejně tak jako součty pro každý kód měny používaný v této platební zprávě.  
+1. V navigačním podokně přejděte na **Moduly > Závazky > Platby > Deník plateb**.
+2. Zvolte **Nový** pro vytvoření nového deníku plateb.
+3. Zadejte text **VendPay** do pole **Název**.
+4. Vybrat **řádky**.
+5. Zadejte hodnotu `GB_SI_000001` do pole **Účet**.
+6. Nastavte **Má dáti** na `1000`.
+7. Zvolte **Nové**.
+8. Zadejte hodnotu `GB_SI_000005` do pole **Účet**.
+9. Nastavte **Má dáti** na `2000`.
+10. Zadejte `EUR` do pole **Měna**.
+11. Zadejte hodnoty `GBSI OPER` do pole **Protiúčet**.
+12. Do pole **Metoda platby** zadejte `Electronic`.
+13. Zvolte **Uložit**.
+14. Vyberte **Generovat platby**.
+15. Do pole **Metoda platby** zadejte `Electronic`.
+16. Do pole **Název souboru** zadejte `Payments`.
+17. V poli **Bankovní účet** zadejte `GBSI OPER`.
+18. Vyberte **OK** a potom znovu **OK**. Zkontrolujte vytvořený list, včetně podrobností na řádcích platby, stejně tak jako součty pro každý kód měny používaný v této platební zprávě.  
 

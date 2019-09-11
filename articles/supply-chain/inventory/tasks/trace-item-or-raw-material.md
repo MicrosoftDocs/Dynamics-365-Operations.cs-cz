@@ -3,7 +3,7 @@ title: Sledování položky nebo suroviny
 description: Tento postup uvádí použití sledování položky k určení, kde bylo zboží nebo suroviny použity nebo jsou používány.
 author: pjacobse
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44f87834a1ffb587299ae9092f13ee9f7c19f658
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: fe0fd9a7c27efb71f15cca9d3a0341b550bf9698
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845226"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916661"
 ---
 # <a name="trace-an-item-or-raw-material"></a>Sledování položky nebo suroviny
 
@@ -32,27 +32,31 @@ Tento postup uvádí použití sledování položky k určení, kde bylo zboží
 
 
 ## <a name="trace-an-item-backwards-using-a-known-batch-number"></a>Sledujte položky zpětně za použití známého čísla dávky
-1. Přejděte do Řízení zásob > Dotazy a sestavy > Sledovací dimenze > Sledování zboží.
-2. V poli Číslo položky vyberte „P9100“.
+1. V **Navigačním podokně**přejděte na **Moduly > Řízení zásob > Dotazy a sestavy > Sledovací dimenze > Sledování zboží**.
+2. V poli **Číslo položky** vyberte „P9100“.
 3. Klikněte na odkaz na vybraném řádku v seznamu.
-4. V poli Dopředu nebo dozadu vyberte „Dozadu“.
-5. V poli Číslo dávky vyberte „as-12-344-01“.
+4. V poli **Dopředu nebo dozadu** vyberte „Dozadu“.
+5. V poli **Číslo dávky** vyberte „as-12-344-01“.
 6. Klikněte na odkaz na vybraném řádku v seznamu.
-7. Klikněte na tlačítko OK.
+7. Klikněte na tlačítko **OK**.
 
 ## <a name="identify-an-item-trace-it-forward-and-make-an-analysis"></a>Identifikujte zboží, sledujte ho dopředu a proveďte analýzu
-    * Nejvyšší uzel stromové struktury představuje množství vybraných položek na skladě a dávky. Je nutné rozbalit uzly ve stromu a vyhledat tak položku, u které má být provedeno dopředné sledování.   
+
+Nejvyšší uzel stromové struktury představuje množství vybraných položek na skladě a dávky. Je nutné rozbalit uzly ve stromu a vyhledat tak položku, u které má být provedeno dopředné sledování.   
 1. Ve stromovém zobrazení rozbalte níže popsané uzly a pak vyberte poslední uzel.
-    * Rozbalení „P9100 / 1 / 10 / as-12-344-01 ● 2 sudy ● 7,00 galonů \P9100 ● Vyskladněno ● Prodejní objednávka 000072 ● 22. 12. 2015 ● -1 sud ● -4,00 galony ● Pracoviště = 1, sklad = 10, číslo dávky = as-12-344-01 \P9100 ● Výroba B-000050 ● 9. 12. 2015 ● 7 sudů ● 27,00 galonů ● Pracoviště = 1, sklad = 10, číslo dávky = as-12-344-01 ● Vedlejší produkty: P9101“ a pak vyberte uzel.     
+    
+    Rozbalení „P9100 / 1 / 10 / as-12-344-01 ● 2 sudy ● 7,00 galonů \P9100 ● Vyskladněno ● Prodejní objednávka 000072 ● 22. 12. 2015 ● -1 sud ● -4,00 galony ● Pracoviště = 1, sklad = 10, číslo dávky = as-12-344-01 \P9100 ● Výroba B-000050 ● 9. 12. 2015 ● 7 sudů ● 27,00 galonů ● Pracoviště = 1, sklad = 10, číslo dávky = as-12-344-01 ● Vedlejší produkty: P9101“ a pak vyberte uzel.     
 2. Ve stromovém zobrazení rozbalte níže popsaný uzel a pak jej vyberte.
-    * Od uzlu, který jste právě vybrali, rozbalte „M9103 ● Řádek výroby B-000050 ● 9. 12. 2015 ● -160,00 liber ● velikost = 70, barva = OK, pracoviště = 1, sklad = 10, číslo dávky = App01“ a pak vyberte daný uzel.  
-3. Klepněte na Sledovat z uzlu.
-4. Klepněte na tlačítko Vpřed.
-5. V podokně akcí klepněte na možnost Sledování.
-    * Existuje několik možností sledování, které poskytují informace o odběratelích, a které jsou ovlivněny vámi sledovaným zbožím a prodejními objednávkami souvisejícími s položkou, která byla nebo nebyla zatím expedována.   
-6. Klepněte na Zákazníci.
+    
+    Od uzlu, který jste právě vybrali, rozbalte „M9103 ● Řádek výroby B-000050 ● 9. 12. 2015 ● -160,00 liber ● velikost = 70, barva = OK, pracoviště = 1, sklad = 10, číslo dávky = App01“ a pak vyberte daný uzel.  
+3. Klepněte na **Sledovat z uzlu**.
+4. Klikněte na **Vpřed**.
+5. V **Podokně akcí** klepněte na možnost **Sledování**.
+    
+    Existuje několik možností sledování, které poskytují informace o odběratelích, a které jsou ovlivněny vámi sledovaným zbožím a prodejními objednávkami souvisejícími s položkou, která byla nebo nebyla zatím expedována.   
+6. Klikněte na **Zákazníci**.
 7. Zavřete stránku.
-8. V podokně akcí klepněte na možnost Sledování.
-9. Klepněte na Prodejní objednávky za expedované zboží.
+8. V **Podokně akcí** klepněte na možnost **Sledování**.
+9. Klikněte na **Prodejní objednávky za expedované zboží**.
 10. Zavřete stránku.
 

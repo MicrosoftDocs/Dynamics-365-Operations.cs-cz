@@ -1,9 +1,9 @@
 ---
-title: Elektronické výkaznictví (EV)
+title: Přehled elektronického výkaznictví
 description: Toto téma poskytuje přehled o nástroji Elektronické výkaznictví (ER). Zahrnuje informace o klíčových konceptech, scénářích, které EV podporuje, a vyjmenovává formáty, které jsou navržené a vydané jako součást řešení.
 author: NickSelin
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9504af391656e2515d34d18a15fab74f1698fa2
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 73a8f44d75c9a6778cfa4c547b4b32dbebcad825
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849478"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864711"
 ---
-# <a name="electronic-reporting-er"></a>Elektronické výkaznictví (EV)
+# <a name="electronic-reporting-er-overview"></a>Přehled elektronického výkaznictví
 
 [!include [banner](../includes/banner.md)]
 

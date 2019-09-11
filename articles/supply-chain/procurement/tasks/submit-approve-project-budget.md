@@ -3,7 +3,7 @@ title: Odeslání a schválení rozpočtu projektu
 description: Tento postup ukazuje způsob vytvoření a odeslání rozpočtu projektu.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Service industries
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ffa7b4f23e63196947fef1b2180145702531e0a6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 798bbc68e625c58d56cdd769f48ba734ace1d028
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843906"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914852"
 ---
 # <a name="submit-and-approve-project-budget"></a>Odeslání a schválení rozpočtu projektu
 
@@ -34,26 +34,26 @@ Při vytvoření rozpočtu projektu můžete zadat odhadované výnosy a náklad
 
 Tento úkol byl vytvořen pomocí sady dat USSI.
 
-1. Přejděte na Řízení projektu a účetnictví > Projekty > Všechny projekty.
+1. V **navigačním podokně** přejděte na **Moduly > Řízení projektů a účetnictví > Projekty > Všechny projekty**.
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 3. Klikněte na odkaz na vybraném řádku v seznamu.
-4. V podokně akcí klikněte na možnost Plán.
-5. Klikněte na Rozpočet projektu.
-6. Zadejte nějakou hodnotu do pole Popis.
-7. Rozbalte sekci Náklady
-8. Klikněte na možnost Nový.
-9. V poli Typ transakce vyberte možnost.
-10. V poli Kategorie zadejte nebo vyberte hodnotu.
-11. Zadejte číslo do pole Původní rozpočet.
-12. Rozbalte sekci Výnosy.
-13. Klepněte na možnost Nový.
-14. Označte v seznamu vybraný řádek.
-15. V poli Typ transakce vyberte možnost.
-16. V poli Kategorie zadejte nebo vyberte hodnotu.
-17. Zadejte číslo do pole Původní rozpočet.
-18. Klikněte na položku Uložit.
-19. Klikněte na Workflow.
-20. Klepněte na tlačítko Odeslat.
-21. Zadejte hodnotu do pole Komentář.
-22. Klepněte na tlačítko Odeslat.
+4. V **podokně akcí** klikněte na možnost **Plán**.
+5. Klikněte na **Rozpočet projektu**.
+6. Zadejte hodnotu do pole **Popis**.
+7. Rozbalte pevnou záložku **Náklady**.
+8. Klepněte na možnost **Nový**.
+9. V poli **Typ transakce** vyberte možnost.
+10. V poli **Kategorie** zadejte nebo vyberte hodnotu.
+11. Zadejte číslo do pole **Původní rozpočet**.
+12. Rozbalte pevnou záložku **Výnosy**.
+13. Klepněte na možnost **Nový**.
+14. Označte na seznamu vybraný řádek.
+15. V poli **Typ transakce** vyberte možnost.
+16. V poli **Kategorie** zadejte nebo vyberte hodnotu.
+17. Zadejte číslo do pole **Původní rozpočet**.
+18. Klikněte na možnost **Uložit**.
+19. Klikněte na **Workflow**.
+20. Klepněte na tlačítko **Odeslat**.
+21. Zadejte hodnotu do pole **Komentář**.
+22. Klepněte na tlačítko **Odeslat**.
 

@@ -3,7 +3,7 @@ title: Nastavení číselných řad na jednotlivém základě
 description: Toto téma vysvětluje nastavení číselných řad na jednotlivém základě.
 author: sericks007
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58e69b680c006c814e9408135b6947161ad7c4f3
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738874"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886593"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Nastavení číselných řad na jednotlivém základě
 
@@ -33,7 +33,7 @@ Toto téma vysvětluje nastavení číselných řad na jednotlivém základě. �
 2. Vyberte **Číselnou řadu**.
 3. Zadejte hodnotu do pole **Kód číselné řady**.
 4. Zadejte hodnotu do pole **Název**.
-5. Na pevné záložce **Parametry rozsahu** vyberte rozsah pro číselnou řadu a vyberte obor hodnot z rozvíracího seznamu. Rozsah určuje, které organizace používají číselnou řadu. Kromě toho číselné řady, které mají rozsah jiný než **Sdílený**, mohou mít segmenty, které odpovídají jejich rozsahu. Například číselná řada s rozsahem **Právnická osoba** může obsahovat segment právnické osoby. Další informace o oborech naleznete v tématu nápovědy [Přehled číselné řady](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/fin-and-ops/organization-administration/number-sequence-overview.md).  
+5. Na pevné záložce **Parametry rozsahu** vyberte rozsah pro číselnou řadu a vyberte obor hodnot z rozvíracího seznamu. Rozsah určuje, které organizace používají číselnou řadu. Kromě toho číselné řady, které mají rozsah jiný než **Sdílený**, mohou mít segmenty, které odpovídají jejich rozsahu. Například číselná řada s rozsahem **Právnická osoba** může obsahovat segment právnické osoby. Další informace o oborech naleznete v tématu nápovědy [Přehled číselné řady](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
 6. Rozbalte sekci **Segmenty**.
     - Určete formát pro číselné řady přidáním, odebráním a změnou uspořádání segmentů.  
     - Číselné řady všech oborů mohou obsahovat *Konstantní segmenty* a *Alfanumerické segmenty*. Konstantní segmenty obsahují sadu alfanumerických znaků, které se nemění. Pomocí tohoto typu segmentu můžete přidat pomlčky nebo jiné oddělovače mezi segmenty číselných řad. Alfanumerické segmenty obsahují kombinaci symbolů čísel (#) a ampersandy (&). Tyto znaky představují písmena a čísla, která se zvýší pokaždé, když se použije číslo z řady. Použijte znak čísla (#) k označení rostoucích čísel a znak ampersand (&) k označení rostoucích písmen. Formát `#####_2014` například vytvoří řadu `00001_2014`, `00002_2014` atd. Musí obsahovat alespoň jeden alfanumerický segment. Segmenty oboru, například společnost nebo právnická osoba, nejsou povinné. Nicméně v případě, že formát neobsahuje segmenty oboru, čísla pro vybraný odkaz jsou stále generována pro obor.  

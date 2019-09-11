@@ -3,7 +3,7 @@ title: Zapsání zaúčtovaných položek deníku do deníku
 description: Tento postup ukazuje zapisováním do deníku zaúčtovaných položek deníku.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cbf7ee8063487303cd4c8d2b76a8b44bacc86193
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e20229ca910aa0d7d820434c22edf5a27030bba5
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846384"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916246"
 ---
 # <a name="journalize-posted-journal-entries"></a>Zapsání zaúčtovaných položek deníku do deníku
 
@@ -29,16 +29,14 @@ ms.locfileid: "1846384"
 
 Tento postup ukazuje zapisováním do deníku zaúčtovaných položek deníku. Tato procedura používá data ukázkové společnosti USMF.
 
-1. Ověřte nastavení pro deník hlavní knihy v části Hlavní kniha > Nastavení hlavní knihy > Parametry hlavní knihy.
-2. Pole Rozšířený deník hlavní knihy lze nastavit na Ano nebo Ne. Pokud ano, bude výstup sestavy jiný.
-3. Vyberte, zda období lze uzavřít, pokud nebyl spuštěn proces zařazení do deníku.
-    * Pokud je tato možnost nastavena na hodnotu Ano, období nelze zavřít, dokud neskončí proces zapisování do deníku pro toto období.  
+1. V **navigačním podokně** přejděte na **Moduly > Hlavní kniha > Nastavení hlavní knihy > Parametry hlavní knihy**.
+2. Pole **Rozšířený deník hlavní knihy** lze nastavit na Ano nebo Ne. Pokud ano, bude výstup sestavy jiný.
+3. Vyberte, zda období lze uzavřít, pokud nebyl spuštěn proces zařazení do deníku. Pokud je tato možnost nastavena na hodnotu Ano, období nelze zavřít, dokud neskončí proces zapisování do deníku pro toto období.  
 4. Zavřete stránku.
-5. Přejděte do hlavní knihy > Periodické úkoly > Zapisování do deníku.
-6. Klepněte na tlačítko Filtr.
+5. V **navigačním podokně** přejděte na **Moduly > Hlavní kniha > Periodické úlohy > Zapisování do deníku**.
+6. Klikněte na tlačítko **Filtr**.
 7. Vyberte řádek obsahující kritéria filtru, která chcete definovat.
-8. V poli Kritéria zadejte nebo vyberte kritéria filtrování.
-9. Kliknutím na tlačítko OK stránku filtru zavřete.
-10. Kliknutím na tlačítko OK spusťte proces zařazení do deníku.
-    * Po dokončení procesu se vygeneruje sestava.  
+8. V poli **Kritéria** zadejte nebo vyberte kritéria filtrování.
+9. Kliknutím na tlačítko **OK** stránku filtru zavřete.
+10. Kliknutím na tlačítko **OK** spusťte proces zařazení do deníku. Po dokončení procesu se vygeneruje sestava.  
 

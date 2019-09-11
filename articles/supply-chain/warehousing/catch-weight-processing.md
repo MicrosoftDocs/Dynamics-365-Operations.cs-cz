@@ -3,7 +3,7 @@ title: Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 description: Toto téma popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
 author: perlynne
 manager: AnnBe
-ms.date: 03/18/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ed588ea28bec3e734f9648c1fbd7551ab0b3cdda
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836096"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887128"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 
@@ -136,7 +136,6 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
 
 - Ruční vytváření karanténních příkazů není podporováno pro produkty se skutečnou hmotností.
 - Ruční přesun zásob související s prací není podporováno pro produkty se skutečnou hmotností.
-- Konsolidace poznávacích značek není podporováno pro produkty se skutečnou hmotností.
 - Načtení poznávací značky pro inicializaci naskladnění skladu není podporováno pro produkty se skutečnou hmotností.
 - Procesy vyvážení dávky nejsou podporovány pro produkty se skutečnou hmotností.
 - Zpracování negativních fyzických zásob není podporováno pro produkty se skutečnou hmotností.
@@ -147,7 +146,6 @@ Ne všechna workflow podporují zpracování produktu se skutečnou hmotností p
 - Funkce pro výdej v seskupení není podporována pro produkty se skutečnou hmotností.
 - Zpracování výdeje a balení skladu není podporováno pro produkty se skutečnou hmotností.
 - U produktů se skutečnou hmotností lze práci definovanou v šabloně práce spustit automaticky.
-- Funkce pro stornování práce není podporována pro produkty se skutečnou hmotností.
 - U produktů se skutečnou hmotnosti není podporováno ruční zpracování stanice balení, kde je práce vytvořena po uzavření kontejnerů.
 - Funkce pro skenování kus po kusu není podporována pro produkty se skutečnou hmotností.
  

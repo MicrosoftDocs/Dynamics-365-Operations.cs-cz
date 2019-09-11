@@ -1,9 +1,9 @@
 ---
 title: Definování zásad auditu pro zdrojové dokumenty
-description: Tento postup popisuje způsob nastavení a spuštění pravidel zásad auditu.
+description: Toto téma vysvětluje způsob nastavení a spuštění pravidel zásad auditu.
 author: ryansandness
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,80 +16,75 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17b712f07a0ffe6874eb6d98b47ced96f5a54483
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a6b0fa28d778a4d9fa1f718b1d50bf1dce00be00
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846480"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914803"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definování zásad auditu pro zdrojové dokumenty
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup popisuje způsob nastavení a spuštění pravidel zásad auditu. Příklad využívá sestavu výdajů s typem Výdaje hotelu. Tato procedura používá ukázkovou společnost USMF. Role auditora obsahuje dostatečná oprávnění k provedení těchto úloh.
+Toto téma vysvětluje způsob nastavení a spuštění pravidel zásad auditu. Příklad využívá sestavu výdajů s typem Výdaje hotelu. Tato procedura používá ukázkovou společnost USMF. Role auditora obsahuje dostatečná oprávnění k provedení těchto úloh.
 
-1. Přejděte na pracovní plochu pro Audit > Nastavení > Typ pravidla zásad.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Název pravidla.
-4. Zadejte nějakou hodnotu do pole Popis.
-5. V poli Název dotazu vyberte řádek Sestava výdajů
-6. V poli typ dotazu vyberte Agregovat
-7. V poli Právnická osoba vyberte právnickou osobu
-8. V poli Odkaz na datum dokumentu vyberte Datum a čas úpravy
-9. Klikněte na položku Uložit.
-10. Přejděte na pracovní plochu pro Audit > Nastavení > Zásady auditu.
-11. Klikněte na položku Nová.
-12. Zadejte hodnotu do pole Název.
-13. Rozbalte část Organizace zásad.
-14. Ve stromovém zobrazení vyberte systém Contoso Entertainment System USA.
-15. Klepněte na možnost Přidat.
-16. Ve stromovém zobrazení vyberte Contoso Consulting.
-17. Klepněte na možnost Přidat.
-18. Ve stromovém zobrazení vyberte Contoso Retail USA.
-19. Klepněte na možnost Přidat.
-20. Sbalte část Organizace zásad.
-21. Rozbalte část Pravidla zásad.
-22. V seznamu vyhledejte a vyberte pravidlo zásad, které již bylo vytvořeno.
-23. Klikněte na Vytvořit pravidlo zásad.
-24. Do pole Datum platnosti zadejte datum a čas.
-25. Klepněte na tlačítko Filtr.
-26. V seznamu vyberte řádek pro kategorii výdajů a nastavte podrobnosti o hotelu
-27. V poli Kritéria zadejte nebo vyberte hodnotu.
-28. Klikněte na kartu Agregovat.
-29. Klepněte na možnost Přidat.
-30. V seznamu vyberte hodnotu pole pro Částka transakce
-31. V poli Pole zadejte nebo vyberte hodnotu.
-32. V poli Agregační funkce vyberte "Součet".
-33. Klikněte na kartu Seskupit podle.
-34. Klepněte na možnost Přidat.
-35. V seznamu vyberte hodnotu Zaměstnanec  
-36. Klepněte na možnost Přidat.
-37. V seznamu vyberte hodnotu Kategorie výdaje
-38. V poli Pole zadejte nebo vyberte hodnotu.
-39. Klikněte na kartu Má.
-40. Klepněte na možnost Přidat.
-41. Vyberte Částka transakce
-42. V poli Pole zadejte nebo vyberte hodnotu.
-43. V poli Agregační funkce vyberte "Součet".
-44. Zadejte hodnotu >2000 do pole Kritéria.
-45. Klikněte na tlačítko OK.
-46. Klepněte na možnost Test.
-47. Do pole Počáteční datum pro výběr dokumentů zadejte datum a čas.
-48. Do pole Konečné datum pro výběr dokumentů zadejte datum a čas.
-49. Klikněte na Spustit test.
-50. V podokně akcí klikněte na možnost Zásady auditu.
-51. Klikněte na Další možnosti.
-52. Do pole Počáteční datum zadejte datum a čas.
-53. Do pole Konečné datum zadejte datum a čas.
-54. Klepněte na možnost Dávka.
-55. Rozbalte sekci Spustit na pozadí.
-56. V poli Dávkové zpracování vyberte hodnotu Ano.
-57. Klikněte na tlačítko OK.
-58. Přejděte na Pracovní plocha auditu > Auditní případy.
-59. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-60. Klikněte na odkaz na vybraném řádku v seznamu.
-61. Rozbalte sekci Přidružení.
-62. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-63. Klikněte na odkaz na vybraném řádku v seznamu.
+1. V navigačním podokně přejděte na **Moduly > Pracovní plocha auditu > Nastavení > Typ pravidla zásad**.
+2. Zvolte **Nové**.
+3. Zadejte hodnotu do pole **Název pravidla**.
+4. Zadejte hodnotu do pole **Popis**.
+5. V poli **Název dotazu** vyberte **Řádek sestavy výdajů**
+6. V poli **Typ dotazu** vyberte **Agregovat**
+7. V poli **Právnická osoba** vyberte **právnickou osobu**
+8. V poli **Odkaz na datum dokumentu** vyberte **Datum a čas úpravy**
+9. Zvolte **Uložit**.
+10. V navigačním podokně přejděte na **Moduly > Pracovní plocha auditu > Nastavení > Zásady auditu**.
+11. Zvolte **Nové**.
+12. Zadejte hodnotu do pole **Název**.
+13. Rozbalte část **Organizace zásad**.
+14. Ve stromovém zobrazení vyberte **Contoso Entertainment System USA** a pak zvolte **Přidat**.
+15. Ve stromovém zobrazení vyberte **Contoso Consulting USA** a pak zvolte **Přidat**.
+16. Ve stromovém zobrazení vyberte **Contoso Retail USA** a pak zvolte **Přidat**.
+17. Sbalte část **Organizace zásad**.
+18. Rozbalte část **Pravidla zásad**.
+19. V seznamu vyhledejte a vyberte pravidlo zásad, které již bylo vytvořeno.
+20. Vyberte **Vytvořit pravidlo zásad**.
+21. Do pole **Datum platnosti** zadejte datum a čas.
+22. Vyberte **Filtr**.
+23. V seznamu vyberte řádek pro **kategorii výdajů** a nastavte podrobnosti o **hotelu**.
+24. V poli **Kritéria** zadejte nebo vyberte hodnotu.
+25. Vyberte karu **Agregovat**.
+26. Vyberte **přidat**.
+27. V seznamu vyberte hodnotu pole **Částka transakce**.
+28. V poli **Pole** zadejte nebo vyberte hodnotu.
+29. V poli **Agregační funkce** vyberte **Součet**.
+30. Vyberte kartu **Seskupit podle**.
+31. Vyberte **přidat**.
+32. V seznamu vyberte hodnotu **Zaměstnanec**.
+33. Vyberte **přidat**.
+34. V seznamu vyberte hodnotu **Kategorie výdaje**.
+35. V poli **Pole** zadejte nebo vyberte hodnotu.
+36. Vyberte kartu **Má**.
+37. Vyberte **přidat**.
+38. Vyberte **Částka transakce**.
+39. V poli **Pole** zadejte nebo vyberte hodnotu.
+40. V poli **Agregační funkce** vyberte **Součet**.
+41. Zadejte hodnotu `>2000` do pole **Kritéria**.
+42. Vyberte **OK**.
+43. Vyberte **Test**.
+44. Do pole **Počáteční datum pro výběr dokumentů** zadejte datum a čas.
+45. Do pole **Konečné datum pro výběr dokumentů** zadejte datum a čas.
+46. Vyberte **Spustit test**.
+47. V podokně akcí zvolte **Zásady auditu**.
+48. Vyberte **Další možnosti**.
+49. Do pole **Počáteční datum** zadejte datum a čas.
+50. Do pole **Koncové datum** zadejte datum a čas.
+51. Vyberte **Dávka**.
+52. Rozbalte sekci **Spustit na pozadí**.
+53. V poli **Dávkové zpracování** vyberte hodnotu **Ano**.
+54. Vyberte **OK**.
+55. V navigačním podokně přejděte na **Moduly > Pracovní plocha auditu > Nastavení > Případy auditu**.
+56. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
+57. Rozbalte sekci **Přidružení**.
+58. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 

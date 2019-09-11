@@ -1,9 +1,9 @@
 ---
-title: Správa servisu
+title: Přehled správy servisu
 description: Za pomoci správy servisu můžete sestavit servisní smlouvy a předplatné služeb, zpracování servisních zakázek, dotazů odběratelů a ke správě a analýze poskytování služeb odběratelům.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2fc5361b1b30db29789ff67b56a15eb66a919f5
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 20751acfc012e2ac1eef99c778c5b0353baf1827
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843282"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865842"
 ---
-# <a name="service-management"></a>Správa servisu 
+# <a name="service-management-overview"></a>Přehled správy servisu
 
 [!include [banner](../includes/banner.md)]
 

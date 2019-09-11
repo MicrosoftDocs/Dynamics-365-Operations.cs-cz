@@ -1,9 +1,9 @@
 ---
-title: Zásady práce ve skladu
+title: Přehled zásad práce ve skladu
 description: Zásady práce ve skladu řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0710eac8daba7f51f6b5d1522476b812a130960d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0a9e05fd2a08921d2718fc239afd56a957f80915
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567025"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865105"
 ---
-# <a name="warehouse-work-policies"></a>Zásady práce ve skladu
+# <a name="warehouse-work-policies-overview"></a>Přehled zásad práce ve skladu
 
 [!include [banner](../includes/banner.md)]
 

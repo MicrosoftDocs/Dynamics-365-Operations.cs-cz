@@ -3,7 +3,7 @@ title: Nastavit kódy vykazování DPH
 description: Kódy vykazování DPH odkazují na číslo pole v sestavě DPH.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 830a3465944b32cc17feee60e3cbc5ad0a4dc9d7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 4751256858da417ec9bb1b7d9ccd16fb6bef1cac
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834766"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916084"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Nastavit kódy vykazování DPH
 
@@ -31,14 +31,11 @@ Kódy vykazování DPH odkazují na číslo pole v sestavě DPH. Používají se
 
 Tento záznam používá ukázkovou společnost DEMF.
 
-
-
-1. Přejděte na Daň > Nastavení > DPH > Kódy vykazování DPH.
-2. Klikněte na položku Nová.
-3. Vyberte rozvržení sestavy, do které patří kód vykazování.
-    * Toto rozvržení slouží k filtrování dostupných kódů vykazování pro kód DPH. Každý kód DPH patří do období vyrovnání, které patří finančnímu úřadu používajícímu rozvržení sestavy.  
-4. Zadejte číslo, které odkazuje na pole v sestavě DPH.
-5. V poli Text sestavy zadejte popis, který se zobrazí v sestavách.
-6. V poli Stručný popis zadejte popis pro interní účely.
-7. Klikněte na položku Uložit.
+1. V **Navigačním podokně** přejděte na **Daň > Nepřímé daně > DPH > Kódy vykazování DPH**.
+2. Klepněte na možnost **Nový**.
+3. Vyberte rozvržení sestavy, do které patří kód vykazování. Toto rozvržení slouží k filtrování dostupných kódů vykazování pro kód DPH. Každý kód DPH patří do období vyrovnání, které patří finančnímu úřadu používajícímu rozvržení sestavy.  
+4. Zadejte číslo do pole **Kód vykazování-**.
+5. V poli **Text sestavy** zadejte popis, který se zobrazí v sestavách.
+6. V poli **Stručný popis** zadejte popis pro interní účely.
+7. Klikněte na možnost **Uložit**.
 

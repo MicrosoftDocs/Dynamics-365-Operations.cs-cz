@@ -3,7 +3,7 @@ title: Povinné aktualizace
 description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a33212acce6bf53b1077e54b9556e4d5e933519c
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: a9d107fa57bdc2edf2dc1a69081e02b3c4321551
+ms.sourcegitcommit: b7f70ee1e54c65c19e1d33c76d2428f9c6c05c66
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849325"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "1918458"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -51,30 +51,32 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 |      2019. duben          |   10.0.1      |    Evropa     |Elektronické faktury – Import faktur dodavatele z formátu PEPPOL BIS 3         |
 |      2019. duben          |   10.0.1      |   Německo     |Elektronické faktury – Export faktur zákazníků ve formátu xRechnung 1.1         |
 |      2019. duben          |   10.0.1      |    Velká Británie     |[Změny odeslání výkazu DPH (Digitalizování daní)](emea-gbr-mtd-vat-integration.md)    |    
-|      2019. duben          |   10.0.1      |    Brazílie     |NF-e nové NT 2018.005         |
 |      2019. duben          |   10.0.1      |    Rusko     |[Formát přiznání k DPH se mění od roku 2019](rus-VAT-declaration.md) |
 |      2019. duben          |   10.0.1      |    Rusko     |Formát přiznání k DPH se mění od 2019 (knihy nákupu a prodeje) |
 |      2019. duben          |   10.0.1      |    Rusko     |Změny daňového přiznání daně z pozemku z roku 2018 |
 |      2019. duben          |   10.0.1      |    Rusko     |[Změny daňového přiznání daně z nemovitosti z roku 2019](rus-assessed-tax-declaration.md)|
 |      2019. duben          |   10.0.1      |    Rusko     |Změny daňového přiznání přepravní daně z roku 2019  |
-|      2019. duben            |   10.0.1      | Maďarsko      |  Maďarsko: online fakturace v.1.1 2019 v Microsoft Dynamics 365 for Finance and Operations  |
-|      2019. květen            |   10.0.2      | Brazílie      |   SPED ECD Layout 7   |
-|      2019. června            |   10.0.3      | Brazílie      |   NF-e nové NT 2018.005 - v.1.20   |
-|      2019. června            |   10.0.3      | Brazílie      |   SPED ECD Layout 7   |
+|      2019. duben          |   10.0.1      |    Litva     |i.SAF sestava umožňuje uživateli definovat systémové kódy DPH spolu s legálními kódy daně  |
+|      2019. duben          |   10.0.1      | Maďarsko      |  Maďarsko: online fakturace v.1.1 2019  |
+|      2019. duben          |   10.0.1      | Japonsko      |  2019 japonský kalendář Změna období  |
+|      2019. duben          |   10.0.1/10.0.2/10.0.3      | Indie      |  Změna verze formátu IEC  |
+|      2019. června           |   10.0.1 HF/10.0.2 HF/10.0.3      | Brazílie      |   NF-e nové NT 2018.005 - v.1.20   |
+|      2019. června           |   10.0.1 HF/10.0.2 HF/10.0.3      | Brazílie      |   SPED ECD Layout 7   |
+|      2019. června           |   10.0.1HF/10.0.2HF/10.0.3HF/10.0.4      | Brazílie    |   NF-e dekret 54.308/18 (RS)   |
+|      Červenec 2019           |   10.0.1HF/10.0.2HF/10.0.3HF/10.0.4      | Brazílie    |   NF-e and NFC-e - Usnesení 13/2019 a nařízení SUCIEF 55/2019- RJ - nové podmínky pro výstup značek osvobození od daně v NF-e.   |
+|      2019. června           |   10.0.2     | Itálie      |   "New Spesometro" (Esterometro) pro podporu rozdělování souborů podle objemu souboru a omezení počtu záznamů   |
+ | Srpen 2019            |   10.0.2HF/10.0.3HF/10.0.4HF/10.0.5      | Brazílie    |   Nová verze technických poznámek pro NF-e: NT 2019.001 verze 1.00   |
+|      Červenec 2019            |   10.0.3/10.0.4      | Indie   |   Zobrazení „Místo dodání“ a „Státu“ ve faktuře daně GST  | Červenec 2019            |   10.0.2HF/10.0.3HF/10.0.4HF/10.0.5HF/10.0.6      | Brazílie    |   NF-e ICMS-ST - nařízení CAT 42/18 pro stát SP - CAT 42/18   |
 |      2019. června            |   10.0.3      | Brazílie      |   SPED ECF - rozvržení 5 pro 2019   |
-|      2019. června            |   10.0.3      | Litva    |   i.SAF sestava umožňuje uživateli definovat systémové kódy DPH spolu s legálními kódy daně    |
 |      2019. června            |   10.0.3      | Polsko     |   SAF faktury (JPK_FA) v.2 z 1. července 2019  |
 |      2019. června            |   10.0.3      | Brazílie   |   Úpravy fiskálního dokumentu ICMS povolují tabulku 5.2   |
-|      2019. června            |   10.0.3      | Brazílie    |   NF-e dekret 54.308/18 (RS)   |
+|      2019. června            |   10.0.3      | Indie    |   Úprava daně v celní měně v SMN namísto provedení v měně transakce  |
   | Červenec 2019            |   10.0.4      | Brazílie    |   Příchozí fiskální dokument 66   |
-   | Červenec 2019            |   10.0.4      | Brazílie    |   NF-e and NFC-e - Usnesení 13/2019 a nařízení SUCIEF 55/2019- RJ - nové podmínky pro výstup značek osvobození od daně v NF-e.   |
-   | Červenec 2019            |   10.0.4      | Indie   |   Zobrazení Místo dodání a Státu ve faktuře daně GST  |
-   | Červenec 2019            |   10.0.4      | Mexiko   |  Deklarace třetí strany DIOT - změny v rozvržení 2019   |
-   | Červenec 2019            |   10.0.4      | Brazílie    |   NF-e ICMS-ST - nařízení CAT 42/18 pro stát SP - CAT 42/18
-   | Červenec 2019            |   10.0.4      | Brazílie    |   NF-e dekret 54.308/18 - RS NF   |
-       | Čeká na zpracování            |   10.0.5      | Brazílie    |   Sped příspěvky – praktické pokyny 1.31. nové pokyny   |
-         | Čeká na zpracování            |   10.0.5      | Brazílie    |   Nová verze technických poznámek pro NF-e: NT 2019.001 verze 1.00   |
-          | Čeká na zpracování            |   10.0.5      | Španělsko    |   Ověřovací pravidla se mění od 1. října 2019   |
+  | Červenec 2019            |   10.0.4      | Mexiko   |  Deklarace třetí strany DIOT - změny v rozvržení 2019   |  
+  | Srpen 2019            |   10.0.5      | Brazílie    |   Sped příspěvky – technické pokyny 1.31. nové pokyny   | 
+  | Srpen 2019            |   10.0.5      | Španělsko    |   Ověřovací pravidla se mění od 1. října 2019   |
+  | Srpen 2019          |   10.0.5      | Mexiko    |   CFDI 3.3 – podrobné informace o daňových transakcích IEPS v kódu XML by měly být v závislosti na profilu odběratele volitelné. |
+  |      Srpen 2019           |   10.0.5      | Velká Británie    |   DCR – Digitalizování daní – parametry prevence podvodům týkající se původního zařízení  |
    
 
 

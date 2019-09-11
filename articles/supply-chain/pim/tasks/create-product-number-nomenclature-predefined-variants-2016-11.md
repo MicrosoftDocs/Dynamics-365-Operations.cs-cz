@@ -1,9 +1,9 @@
 ---
 title: Vytvoření názvosloví čísel produktů pro předdefinované varianty produktu
-description: Tato příručka ukazuje, jak nastavit názvosloví čísel produktu pro předdefinované varianty produktu a jak je přiřadit vhodné skupině dimenzí produktu.
+description: Toto téma vysvětluje, jak nastavit názvosloví čísel produktu pro předdefinované varianty produktu a jak je přiřadit vhodné skupině dimenzí produktu.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,45 +16,45 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a2e61fd99cb80a1a9cc3d8e985fb0f14e3c2fc2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5cf0efeac2851e6ead6fc5e15a016370dfa620bc
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844674"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914900"
 ---
 # <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a>Vytvoření názvosloví čísel produktů pro předdefinované varianty produktu
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tato příručka ukazuje, jak nastavit názvosloví čísel produktu pro předdefinované varianty produktu a jak je přiřadit vhodné skupině dimenzí produktu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Nové názvosloví čísel produktů je přiřazeno skupině dimenzí produktu Barva a Velikost. Tento úkol obvykle provádí návrhář produktu.
+Toto téma vysvětluje, jak nastavit názvosloví čísel produktu pro předdefinované varianty produktu a jak je přiřadit vhodné skupině dimenzí produktu. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Nové názvosloví čísel produktů je přiřazeno skupině dimenzí produktu Barva a Velikost. Tento úkol obvykle provádí návrhář produktu.
 
 
 ## <a name="create-a-product-number-nomenclature"></a>Vytvoření názvosloví čísla produktu
-1. Klepněte na Definice modelu varianty produktu.
-2. Klikněte na Zobrazit názvosloví produktu.
-3. Klepněte na možnost Nový.
-4. V poli Název zadejte název názvosloví, který pomáhá identifikovat cílovou skupinu dimenzí produktu, například ColorSize.
-5. Zadejte nějakou hodnotu do pole Popis.
-6. Klepněte na možnost Přidat.
-7. Klikněte na Číslo základního produktu.
-8. Klepněte na možnost Přidat.
-9. Klikněte na Textová konstanta.
-10. Zadejte hodnotu do pole Text.
-11. Klepněte na možnost Přidat.
-12. Klikněte na Barva.
-13. Klepněte na možnost Přidat.
-14. Klikněte na Textová konstanta.
-15. Zadejte hodnotu do pole Text.
-16. Klepněte na možnost Přidat.
-17. Klepněte na Velikost.
+1. Zvolte **Definice modelu varianty produktu**.
+2. Zvolte **Názvosloví produktu**.
+3. Zvolte **Nové**.
+4. V poli **Název** zadejte název názvosloví, který pomáhá identifikovat cílovou skupinu dimenzí produktu, například `ColorSize`.
+5. Zadejte hodnotu do pole **Popis**.
+6. Vyberte **přidat**.
+7. Zvolte **Číslo základního produktu**.
+8. Vyberte **přidat**.
+9. Zvolte **Textová konstanta**.
+10. Zadejte hodnotu do pole **Text**.
+11. Vyberte **přidat**.
+12. Vyberte **Barva**.
+13. Vyberte **přidat**.
+14. Zvolte **Textová konstanta**.
+15. Zadejte hodnotu do pole **Text**.
+16. Vyberte **přidat**.
+17. Vyberte **Velikost**.
 18. Zavřete stránku.
 
 ## <a name="assign-the-nomenclature-to-a-product-master"></a>Přiřazení názvosloví základnímu produktu
-1. Klikněte na Skupiny dimenzí produktů.
-2. Vyberte skupinu dimenzí produktu SizeCol.
-3. Klikněte na možnost Upravit.
-4. Vyberte možnost Ano v poli Použít názvosloví.
-5. V poli Názvosloví čísla varianty produktu zadejte nebo vyberte hodnotu.
+1. Vyberte **Skupiny dimenzí produktů**.
+2. Vyberte **skupinu dimenzí produktu SizeCol**.
+3. Vyberte možnost **Upravit**.
+4. Vyberte možnost **Ano** v poli **Použít názvosloví**.
+5. V poli **Názvosloví čísla varianty produktu** zadejte nebo vyberte hodnotu.
 6. Zavřete stránku.
 
