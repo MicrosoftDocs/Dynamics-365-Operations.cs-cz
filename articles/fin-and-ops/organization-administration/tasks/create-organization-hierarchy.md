@@ -3,7 +3,7 @@ title: Vytvoření organizační hierarchie
 description: Následující postup použijte k vytvoření organizační hierarchie.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 203a586b06a13a7c67f246384152d17627e22041
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 48c8564694b22a5110341d853a79096fbe805c91
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545538"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916454"
 ---
 # <a name="create-an-organization-hierarchy"></a>Vytvoření organizační hierarchie
 
@@ -29,31 +29,23 @@ ms.locfileid: "1545538"
 
 Následující postup použijte k vytvoření organizační hierarchie. Organizační hierarchii můžete použít k zobrazení a tvorbě sestav vašeho podnikání z různých perspektiv. Můžete například nastavit jednu hierarchii pro daňové, právní nebo statutární vykazování. Potom můžete nastavit jinou hierarchii pro finanční informace sestavy, které nejsou vyžadovány zákonem, ale které se používají pro interní výkaznictví. 
 
-
-
 Dříve než vytvoříte organizační hierarchií, musíte vytvořit organizace. Další informace naleznete v úloze "Vytvoření právnické osoby" nebo "Vytvoření provozní jednotky". Můžete také vytvořit oddělení nebo týmy. 
 
-
-
-K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
-
+K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
 ## <a name="create-a-hierarchy"></a>Vytvořit hierarchii
-1. Přejděte do nabídky Správa organizace > Organizace > Organization hierarchies.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Název.
-4. Klikněte na Přiřadit účel.
-5. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Vyberte účel, který chcete přiřadit k hierarchii organizace.  
-6. Klepněte na možnost Přidat.
-7. Označte v seznamu vybraný řádek.
-    * Vyhledejte hierarchii, kterou jste právě vytvořili.  
-8. Klikněte na tlačítko OK.
+1. Přejděte na **Navigační podokno > Moduly > Správa organizace > Organizace > Organizační hierarchie**.
+2. V **podokně akcí** klikněte na možnost **Nový**.
+3. Zadejte hodnotu do pole **Název**.
+4. V sekci **Účel** klikněte na **Přiřadit účel**.
+5. Vyhledejte na seznamu požadovaný záznam a vyberte ho. Vyberte účel, který chcete přiřadit k hierarchii organizace.  
+6. V sekci **Přiřazené hierarchie** klikněte na **Přidat**.
+7. Označte na seznamu vybraný řádek. Vyhledejte hierarchii, kterou jste právě vytvořili.  
+8. Klikněte na tlačítko **OK**.
 
 ## <a name="add-organizations-to-the-hierarchy"></a>Přidání organizací do hierarchie
-1. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Vyberte svoji hierarchii.  
-2. Klikněte na Zobrazit hierarchii.
-    * Podle potřeby přidejte organizace.  
-    * Pokud chcete přidat organizaci, klepněte na tlačítko Upravit a Vložit a přidejte tak organizaci.     Po dokončení provádění změn můžete uložit návrh a publikovat změny.  
+1. Vyhledejte na seznamu požadovaný záznam a vyberte ho. Vyberte svoji hierarchii.  
+2. V sekci **Přiřazené hierarchie** klikněte na **Zobrazit hierarchii**.
+    - Podle potřeby přidejte organizace.  
+    - Pokud chcete přidat organizaci, klikněte na tlačítko **Upravit** a pak **Vložit** a přidejte organizaci. Po dokončení provádění změn můžete **uložit** návrh a **publikovat** změny.  
 

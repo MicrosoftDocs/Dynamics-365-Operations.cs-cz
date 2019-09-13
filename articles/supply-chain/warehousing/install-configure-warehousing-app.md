@@ -1,9 +1,9 @@
 ---
-title: Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations &#8211; Sklady
+title: Přehled instalace a konfigurace skladové aplikace
 description: Toto téma popisuje, jak nainstalovat a nakonfigurovat aplikaci Microsoft Dynamics 365 for Finance and Operations – Sklady.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/12/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f5e99351d79cb5898c6d5565d3d3197a8fe860df
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 742e8753aafca670b94c9f0361ef1dbbe42f0eb8
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559179"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1866106"
 ---
-# <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations &#8211; Sklady
+# <a name="install-and-configure-the-warehousing-app-overview"></a>Přehled instalace a konfigurace skladové aplikace
 
 [!include [banner](../includes/banner.md)]
 

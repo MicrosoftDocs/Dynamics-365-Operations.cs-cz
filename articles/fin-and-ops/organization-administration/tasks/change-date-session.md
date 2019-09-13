@@ -1,9 +1,9 @@
 ---
 title: Změna data pro relaci
-description: Standardně se při zadávání a publikování položek deníku nebo zdrojových dokumentů používá aktuální datum.
+description: V tomto tématu je vysvětleno, jak lze změnit datum relace v aplikaci Dynamics 365 for Finance and Operations.
 author: pvillads
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d27a4d36ff8c8192d2342cd97f29c556540d00b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 81b45f71cda7c682e7a9dee241e483890a80d487
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545617"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867345"
 ---
-# <a name="change-the-date-for-the-session"></a>Změna data pro relaci
+# <a name="change-the-date-for-a-session"></a>Změna data pro relaci
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Standardně se při zadávání a publikování položek deníku nebo zdrojových dokumentů používá aktuální datum. Můžete změnit datum používané pro aktuální relaci. Použijte tuto funkci k antedatování položek deníku nebo zdrojových dokumentů podle potřeby.
+V tomto tématu je vysvětleno, jak lze změnit datum relace v aplikaci Dynamics 365 for Finance and Operations. Standardně se při zadávání a publikování položek deníku nebo zdrojových dokumentů používá aktuální datum. Můžete změnit datum používané pro aktuální relaci. Použijte tuto funkci k antedatování položek deníku nebo zdrojových dokumentů podle potřeby.
 
-1. Přejděte na Společné > Společné > Datum a čas relace.
-2. Do pole Datum zadejte datum.
-3. Klikněte na tlačítko OK.
+1. V navigačním podokně přejděte na **Moduly > Společné > Společné > Datum a čas relace**.
+2. Do pole **Datum** zadejte datum.
+3. Vyberte **OK**.
 

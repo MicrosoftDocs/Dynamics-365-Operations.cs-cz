@@ -3,7 +3,7 @@ title: Duální měna
 description: Toto téma obsahuje informace o duální měně, kdy je měna vykazování použita jako druhá zúčtovací měna pro aplikaci Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,31 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dfd4c116552510ee42cd2f3e8a0f31100826b9d2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d5128ea9daaf22ee962ca5fc70a05cba05c7edb
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839394"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867504"
 ---
 # <a name="dual-currency"></a>Duální měna
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Funkce, jež byla představena v aplikaci Microsoft Dynamics 365 for Finance and Operations verze 8.1 (říjen 2018) umožňuje změnu účelu zúčtovací měny a její použití jako druhé zúčtovací měny. Tato funkce je někdy označována jako *duální měna*. Změny pro duální měnu nelze vypnout pomocí konfiguračního klíče nebo parametru. Vzhledem k tomu, že se měna vykazování používá jako druhá zúčtovací měna, způsob výpočtu zúčtovací měny v logice zaúčtování byl změněn.
 
-Byly navíc zdokonaleny různé moduly pro sledování, vykazování a používání měny vykazování v různých procesech. K ovlivněným modulům patří **Hlavní kniha**, **Finanční výkaznictví**, **Závazky**, **Pohledávky**, **Hotovostní a bankovní správa** a **Investiční majetek**. Po upgradu je třeba provést konkrétní kroky pro správu hotovosti a banky a dlouhodobý majetek. Proto si nezapomeňte pozorně přečíst příslušné části tohoto tématu.
+Byly navíc zdokonaleny různé moduly pro sledování, vykazování a používání měny vykazování v různých procesech. Mezi ovlivněné moduly patří:
+
+- Hlavní kniha 
+- Finanční výkaznictví 
+- Závazky
+- Pohledávky 
+- Pokladna a banka 
+- Dlouhodobý majetek 
+- Konsolidace
+
+Po upgradu je třeba provést konkrétní kroky pro správu hotovosti a banky a dlouhodobý majetek. Proto si nezapomeňte přečíst a porozumět příslušné části tohoto tématu.
 
 ## <a name="posting-process"></a>Proces zaúčtování
 
@@ -75,6 +86,7 @@ Následující moduly používají měnu vykazování jako druhou zúčtovací m
 - [Pohledávky](#accounts-payable-and-accounts-receivable)
 - [Pokladna a banka](#cash-and-bank-management)
 - [Dlouhodobý majetek](#fixed-assets)
+- [Konsolidace](#consolidations)
 
 ### <a name="general-ledger"></a>Hlavní kniha
 
@@ -124,6 +136,8 @@ V předchozích verzích modul **Dlouhodobý majetek** nesledoval žádné čás
 Kromě toho byly provedeny zásadní změny procesu odpisování. Tyto změny vyžadují akci uživatele po upgradu. Je důležité, abyste si přečetli a pochopili následující změny, i když ještě dlouhodobý majetek nepoužíváte.
 
 - Způsob, jakým proces odpisu určuje částky v měně vykazování, se změnil. Následující scénář porovnává způsob, jakým odpis dříve určoval částku v měně vykazování a jak určuje částku v měně vykazování nyní.
+
+
 
     **Scénář odpisů**
 
@@ -186,3 +200,13 @@ Kromě toho byly provedeny zásadní změny procesu odpisování. Tyto změny vy
     - Je-li typ transakce odpisování je zadán v deníku dlouhodobého majetku, částky v měně vykazování se zobrazí v nových sloupcích. Tyto částky lze změnit.
     - Pokud je zúčtovací měna a měna vykazování v hlavní knize stejná, budou částky průběžně synchronizovány. Změníte-li částku **Dal**, částka **Dal v měně vykazování** se automaticky změní tak, aby jí odpovídala.
     - Pokud je do deníku dlouhodobého majetku zadán jakýkoli jiný typ transakce, částky **má dáti v měně vykazování** a **Dal v měně vykazování** se nikdy nezobrazí, ani před, ani po zaúčtování. Částky v zúčtovací měně a měně vykazování jsou stále k dispozici na dokladu, ve kterém se má zaúčtovat do hlavní knihy.
+    
+### <a name="consolidations"></a>Konsolidace
+    
+Funkce, které byly zavedeny v Microsoft Dynamics 365 for Finance and Operations verzi 10.0.5 (říjen 2019), umožňují funkcionalitu prostřednictvím správy funkcí pro zvýšenou flexibilitu pro konsolidaci a duální měnu. Chcete-li tuto funkci povolit, přejděte do pracovního prostoru **Správa funkcí** a vyberte možnost **Povolit funkci duální měny v konsolidaci hlavní knihy**.
+
+V konsolidaci hlavní knihy byla přidána nová možnost pro konsolidaci částek ve zúčtovací měně nebo měně vykazování ze zdrojových společností. Pokud je zúčtovací měna nebo měna vykazování shodná se zúčtovací měnou nebo měnou vykazování v konsolidační společnosti, budou částky kopírovány přímo namísto převodu.
+
+-  Nyní můžete zvolit, zda chcete použít zúčtovací měnu nebo měnu vykazování ze zdrojové společnosti jako transakční měnu v konsolidační společnosti.
+
+- Částky zúčtovací měny nebo měny vykazování ze zdrojové společnosti budou zkopírovány přímo do částek zúčtovací měny nebo měny vykazování v konsolidační společnosti, pokud je některá z měn stejná. Pokud žádná z měn není stejná, jsou částky zúčtovací měny nebo měny vykazování v konsolidační společnosti vypočteny pomocí směnného kurzu.

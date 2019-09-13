@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 9d19987a44c467381828acb81b6161601268d84f
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 43f25796e6271f14acfc72f931398ab63338a307
+ms.sourcegitcommit: b068b17ef708a0b349db8df1542e4244bb983d13
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863053"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "1870826"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
@@ -153,11 +153,13 @@ Chcete-li povolit uložená zobrazení, když je tato funkce v náhledu, postupu
 
 1.  **Povolit let**: spustit následující příkaz SQL: 
 
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLISavedViewsEnableFeature', 1, 0, 5637144576);`
 
-2.  **Najít funkci**: přejděte do pracovního prostoru **Správa funkcí**. Pokud se **Uložená zobrazení** v seznamu neobjeví, vyberte tlačítko **Vyhledat aktualizace**.   
+2. **Obnovit IIS** pro vyprázdnění statickou mezipaměť testovací verze. 
 
-3.  **Povolit funkci**: vyhledejte funkci **Uložená zobrazení** v seznamu funkcí a v podokně podrobností klepněte na tlačítko **Povolit nyní**.
+3.  **Najít funkci**: přejděte do pracovního prostoru **Správa funkcí**. Pokud se **Uložená zobrazení** v seznamu neobjeví, vyberte **Vyhledat aktualizace**.   
+
+4.  **Povolit funkci**: vyhledejte funkci **Uložená zobrazení** v seznamu funkcí a v podokně podrobností vyberte **Povolit nyní**.
 
 Všechny následující uživatelské relace budou začínat uloženým zobrazením.  
 

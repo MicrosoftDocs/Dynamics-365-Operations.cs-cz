@@ -1,9 +1,9 @@
 ---
 title: Vytvoření nákupní smlouvy
-description: Tento postup vám pomůže vytvořit nákupní smlouvu.
+description: Toto téma vás provede vytvořením nákupní smlouvy.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,72 +16,59 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df74eaad51fc4ef28caf96e4bcdc7b03f7e6ec3b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec792ca27bf0245ff25e59cfe28122f17caec7fc
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836346"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866843"
 ---
 # <a name="create-a-purchase-agreement"></a>Vytvoření nákupní smlouvy
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup vám pomůže vytvořit nákupní smlouvu. Toto by obvykle prováděl vedoucí nákupu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Než začnete, je třeba nastavit klasifikace nákupní smlouvy. Vytvořenou smlouvu můžete použít při vytváření nákupní objednávky; tím se zkopírují podmínky nákupní smlouvy do záhlaví a jakýchkoli řádků objednávky ovlivněných touto smlouvou.
+Toto téma vás provede vytvořením nákupní smlouvy. Toto by obvykle prováděl vedoucí nákupu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Než začnete, je třeba nastavit klasifikace nákupní smlouvy. Vytvořenou smlouvu můžete použít při vytváření nákupní objednávky; tím se zkopírují podmínky nákupní smlouvy do záhlaví a jakýchkoli řádků objednávky ovlivněných touto smlouvou.
 
 
 ## <a name="create-a-new-purchase-agreement"></a>Vytvoření nové nákupní smlouvy
-1. Přejděte do nabídky Zásobování a zdroje > Nákupní smlouvy > Nákupní smlouvy.
-2. Klikněte na položku Nová.
-3. V poli Účet dodavatele kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-5. Klikněte na odkaz na vybraném řádku v seznamu.
-6. V poli Klasifikace nákupní smlouvy kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-7. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-8. Klikněte na odkaz na vybraném řádku v seznamu.
-9. Rozbalte sekci Obecné.
-10. Do pole Datum vypršení platnosti zadejte datum.
-    * Toto datum vypršení platnosti bude výchozí pro všechny řádky závazků a určí, jak dlouho budou jednotlivé závazky platné.  
-11. V poli Název dokumentu zadejte název nákupní smlouvy.
-    * Ponechejte pole Výchozí závazek nastavené na hodnotu Závazek – množství produktu (nebo pokud je nastavená jiná hodnota, změňte ji).  
-    * Výchozí hodnota závazku určuje možnosti na řádcích smlouvy. Pokud potřebujete nový typ závazku při vytváření řádků smlouvy, je nutné změnit výchozí závazek v záhlaví.  Jsou k dispozici 4 typy závazků: „Závazek – množství produktu“ pro určité množství produktu; „Závazek – hodnota produktu“ pro konkrétní částku měny pro produkt; „Závazek – hodnota kategorie produktu“ pro konkrétní částku měny v kategorii zásobování, kde částka může být pro katalogovou položku nebo nekatalogovou položku; „Závazek ohledně hodnoty“ pro konkrétní částku měny, která může být splněna jakýmkoli produktem nebo jakoukoli kategorií zásobování.  
-12. Klikněte na tlačítko OK.
+1. Přejděte na **Navigační podokno > Moduly > Zásobování a zdroje > Nákupní smlouvy > Nákupní smlouvy**.
+2. Klepněte na možnost **Nový**.
+3. V poli **Účet dodavatele** vyberte rozevírací nabídku a zvolte řádek požadovaného záznamu.
+4. V poli **Klasifikace nákupní smlouvy** vyberte rozevírací nabídku a zvolte řádek požadovaného záznamu.
+5. Rozbalte pevnou záložku **Obecné**.
+6. Do pole **Datum vypršení platnosti** zadejte datum.
+
+    - Toto datum vypršení platnosti bude výchozí pro všechny řádky závazků a určí, jak dlouho budou jednotlivé závazky platné.  
+
+7. V poli **Název dokumentu** zadejte název nákupní smlouvy.
+
+    - Ponechejte pole **Výchozí závazek** nastavené na hodnotu **Závazek – množství produktu** (nebo pokud je nastavená jiná hodnota, změňte ji).  
+    - Výchozí hodnota závazku určuje možnosti na řádcích smlouvy. Pokud potřebujete nový typ závazku při vytváření řádků smlouvy, je nutné změnit výchozí závazek v záhlaví. Jsou k dispozici 4 typy závazků: **Závazek – množství produktu** pro určité množství produktu; **Závazek – hodnota produktu** pro konkrétní částku měny pro produkt; **Závazek – hodnota kategorie produktu** pro konkrétní částku měny v kategorii zásobování, kde částka může být pro katalogovou položku nebo nekatalogovou položku; **Závazek ohledně hodnoty** pro konkrétní částku měny, která může být splněna jakýmkoli produktem nebo jakoukoli kategorií zásobování.  
+
+8. Vyberte **OK**.
 
 ## <a name="add-a-commitment"></a>Přidání závazku
-1. Klikněte na položku Přidat řádek.
-2. Označte v seznamu vybraný řádek.
-3. V poli Číslo zboží kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-4. Vyberte produkt, pro který chcete přidat závazek.
-5. Klikněte na odkaz na vybraném řádku v seznamu.
-6. Zadejte číslo do pole Množství.
-    * Toto je celkového množství, které podle dohody zakoupíte od dodavatele.  
-7. Zadejte číslo do pole Jednotková cena.
-8. Rozbalte sekci Podrobnosti řádku.
-9. Nastavte možnost Max je vynuceno na hodnotu Ano.
-    * Možnost Max je vynuceno omezuje použití závazku. Můžete produkt zakoupit pouze do množství zadaného v poli Množství pro daný řádek.  
-10. Sbalte oddíl Podrobnosti řádku.
+1. Vyberte **Přidat řádek**.
+2. V poli **Číslo položky** vyberte z rozevírací nabídky požadovaný záznam.
+3. Zadejte číslo do pole **Množství**. Toto je celkového množství, které podle dohody zakoupíte od dodavatele.  
+4. Zadejte číslo do pole **Jednotková cena**.
+5. Rozbalte sekci **Podrobnosti řádku**.
+6. Nastavte možnost **Max je vynuceno** na hodnotu **Ano**. Možnost **Max je vynuceno** omezuje použití závazku. Můžete produkt zakoupit pouze do množství zadaného v poli **Množství** pro daný řádek.  
 
 ## <a name="add-header-conditions"></a>Přidání podmínek záhlaví
-1. V podokně akcí klikněte na Možnosti.
-2. Klikněte na tlačítko Změnit zobrazení.
-3. Klikněte na možnost Zobrazení záhlaví.
-4. Rozbalte část Podmínky.
-5. V poli Způsob platby kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-    * Zde jsou ve výchozím nastavení zobrazené platební podmínky z účtu dodavatele.       
-6. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-7. Klikněte na odkaz na vybraném řádku v seznamu.
-8. V poli Způsob dodání kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-9. Klikněte na odkaz na vybraném řádku v seznamu.
-10. V poli Dodací podmínky kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-11. Klikněte na odkaz na vybraném řádku v seznamu.
+1. V podokně akcí vyberte **Možnosti**.
+2. Vyberte **Změnit zobrazení**.
+3. Vyberte **Zobrazení záhlaví**.
+4. Rozbalte část **Podmínky**.
+5. V poli **Metoda platby** vyberte požadovaný záznam v rozevírací nabídce. Zde jsou ve výchozím nastavení zobrazené platební podmínky z účtu dodavatele.  
+6. V poli **Způsob dodání** vyberte požadovaný záznam v rozevírací nabídce.
+7. V poli **Dodací podmínky** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 
 ## <a name="confirm-and-activate-the-agreement"></a>Potvrzení a aktivace smlouvy
-1. V podokně akcí klikněte na možnost Nákupní smlouva.
-2. Klikněte na možnost Potvrzení.
-    * Nastavte možnost Označit smlouvu jako platnou na hodnotu Ano.  
-3. Klepněte na tlačítko OK.
-4. V podokně akcí klikněte na možnost Nákupní smlouva.
-5. Klikněte na možnost Potvrzení nákupní smlouvy.
-    * Možnost Náhled/tisk umožňuje generovat dokument pro nákupní smlouvu, který pak můžete vytisknout nebo odeslat dodavateli. Pokud smlouvu aktualizujete a znovu potvrdíte později, zobrazí se zde obě verze.  
+1. V podokně akcí klikněte na možnost **Nákupní smlouva**.
+2. Vyberte **Potvrzení**. Nastavte možnost **Označit smlouvu jako platnou** na hodnotu **Ano**.  
+3. Vyberte **OK**.
+4. V podokně akcí klikněte na možnost **Nákupní smlouva**.
+5. Zvolte **Potvrzení nákupní smlouvy**. Možnost **Náhled/tisk** umožňuje generovat dokument pro nákupní smlouvu, který pak můžete vytisknout nebo odeslat dodavateli. Pokud smlouvu aktualizujete a znovu potvrdíte později, zobrazí se zde obě verze.  
 6. Zavřete stránku.
 

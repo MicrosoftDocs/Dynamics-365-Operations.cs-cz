@@ -1,9 +1,9 @@
 ---
-title: Česká republika
+title: Přehled – Česká republika
 description: Toto téma poskytuje přehled o funkci aplikace Dynamics 365 for Finance and Operations, která je specifická pro Českou republiku.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Czech Republic
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 862c55c6bd22db96e505d144477599860350452c
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 67675ce8eba655fd98125e4f45239156a064b6ff
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1852145"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865713"
 ---
-# <a name="czech-republic"></a>Česká republika
+# <a name="czech-republic-overview"></a>Přehled – Česká republika
 
 [!include [banner](../includes/banner.md)]
 

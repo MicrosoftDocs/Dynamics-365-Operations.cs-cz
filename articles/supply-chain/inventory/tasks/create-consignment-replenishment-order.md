@@ -1,9 +1,9 @@
 ---
 title: Vytvoření nové zakázky na doplnění stavu zásob dodávky
-description: Tato procedura ukazuje, jak vytvořit objednávku doplnění stavu zásob dodávky, kde můžete sledovat očekávanou dodávku od dodavatele do skladu dodávky.
+description: Tto téma vysvětluje, jak vytvořit objednávku doplnění stavu zásob dodávky, kde můžete sledovat očekávanou dodávku od dodavatele do skladu dodávky.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,58 +17,48 @@ ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cf2e8f742fee2dedaac72902d207af0081700ca
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f426dbf00eace23da2f26eb50dd9675fe22ed445
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845539"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914762"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>Vytvoření nové zakázky na doplnění stavu zásob dodávky
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tato procedura ukazuje, jak vytvořit objednávku doplnění stavu zásob dodávky, kde můžete sledovat očekávanou dodávku od dodavatele do skladu dodávky. Také ukazuje, jak zaznamenávat příjem produktů tak, aby byla zásoba dodávky registrována jako zásoby na skladě ve vlastnictví dodavatele. Tuto proceduru obvykle provádí zásobovací pracovník. Tohoto průvodce můžete použít s ukázkových dat společnosti USMF. Tento postup je určen pro funkci, která byla přidána do Dynamics 365 for Operations, verze 1611.
-
-
-
+Tto téma vysvětluje, jak vytvořit objednávku doplnění stavu zásob dodávky, kde můžete sledovat očekávanou dodávku od dodavatele do skladu dodávky. Také ukazuje, jak zaznamenávat příjem produktů tak, aby byla zásoba dodávky registrována jako zásoby na skladě ve vlastnictví dodavatele. Tuto proceduru obvykle provádí zásobovací pracovník. Tohoto průvodce můžete použít s ukázkových dat společnosti USMF. Tento postup je určen pro funkci, která byla přidána do Dynamics 365 for Operations, verze 1611.
 
 ## <a name="create-a-consignment-replenishment-order"></a>Vytvoření nové zakázky na doplnění stavu zásob dodávky
-1. Přejděte do nabídky Zásobování a zdroje > Zásilka > Zakázky na doplnění stavu zásob dodávky.
-2. Klikněte na položku Nová.
-3. V poli Účet dodavatele vyberte dodavatele US-104.
-    * Je nutné vybrat dodavatele, který je registrován jako vlastník na stránce Vlastníci zásob.  
-4. Klikněte na tlačítko OK.
-5. Klikněte na položku Přidat řádek.
-6. Do pole Číslo položky zadejte M9211CI.
-    * Je nutné vybrat položku, která je nastavena pro zásoby dodávky.  
-7. Zadejte číslo do pole Množství.
-8. Zadejte datum do pole Požadované datum dodání.
-    * Požadované a potvrzené datum používá modul MRP pro očekávané přijetí zboží.  
-9. Zadejte datum do pole Potvrzené datum dodání.
-10. Rozbalte sekci Podrobnosti řádku.
-11. Klepněte na kartu Dimenze zásob.
-12. Chcete-li zobrazit vlastníka v poli Vlastník dimenze zásob, aktualizujte stránku.
-    * Dodavatel US-104 je nyní uveden jako vlastník.  
+1. V navigačním podokně přejděte na **Moduly > Zásobování a zdroje > Stav zásob dodávky > Zakázky na doplnění stavu zásob dodávky**.
+2. Zvolte **Nové**.
+3. V poli **Účet dodavatele** vyberte dodavatele **US-104** (musíte vybrat dodavatele, který je zaregistrován jako vlastník na stránce **Vlastníci zásob**). 
+4. Vyberte **OK**.
+5. Vyberte **Přidat řádek**.
+6. Do pole **Číslo položky** zadejte `M9211CI` (je nutné vybrat položku, která je nastavena pro zásoby dodávky).
+7. Zadejte číslo do pole **Množství**.
+8. Zadejte datum do pole **Požadované datum dodání**. Požadované a potvrzené datum používá modul MRP pro očekávané přijetí zboží.  
+9. Zadejte datum do pole **Potvrzené datum dodání**.
+10. Rozbalte sekci **Podrobnosti řádku**.
+11. Vyberte kartu **Dimenze zásob**.
+12. Chcete-li zobrazit vlastníka v poli **Vlastník dimenze zásob**, aktualizujte stránku. Dodavatel US-104 je nyní uveden jako vlastník.  
 
 ## <a name="check-the-inventory-transaction-status"></a>Zkontrolujte stav transakce zásob.
-1. Klepněte na položku Zásoby.
-2. Klikněte na Transakce.
-3. Označte v seznamu vybraný řádek.
-    * Všimněte si, že pole Příjem je nastaveno na Objednáno.  
+1. Vyberte **skladový model**.
+2. Vyberte **Transakce**.
+3. Všimněte si, že pole **Příjemka** je nastaveno na **Objednáno** v požadovaném řádku.  
 4. Zavřete stránku.
 
 ## <a name="receive-items"></a>Přijmout položky
-1. Klikněte na položku Příjemka produktu.
-2. Zadejte hodnotu do pole Externí příjemka produktu.
-3. Do pole Množství zadejte číslo, které je nižší než číslo, které je zde uvedeno. 
-4. Klikněte na tlačítko OK.
+1. Vyberte **Příjemka produktu**.
+2. Zadejte hodnotu do pole **Externí příjemka produktu**.
+3. Do pole **Množství** zadejte číslo, které je nižší než číslo, které je zde uvedeno. 
+4. Vyberte **OK**.
 
 ## <a name="check-the-on-hand-inventory"></a>Zkontrolujte množství na skladě.
-1. Klepněte na položku Zásoby.
-2. Klikněte na Na skladě.
-3. Klepněte na tlačítko Přehled.
-    * Položky, které byly přijaty jako zásoby dodávky ve vlastnictví dodavatele, jsou k dispozici na skladě. Zbývající množství na objednávce doplnění stavu zásob dodávky je uvedeno v poli Celkem objednáno.  
+1. Vyberte **skladový model**.
+2. Vyberte **Na skladě**.
+3. Vyberte **Přehled**. Položky, které byly přijaty jako zásoby dodávky ve vlastnictví dodavatele, jsou k dispozici na skladě. Zbývající množství na objednávce doplnění stavu zásob dodávky je uvedeno v poli **Celkem objednáno**.  
 4. Zavřete stránku.
-5. Klikněte na tlačítko Zavřít.
 

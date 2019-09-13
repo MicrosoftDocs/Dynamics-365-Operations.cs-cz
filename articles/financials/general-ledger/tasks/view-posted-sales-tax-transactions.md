@@ -1,9 +1,9 @@
 ---
-title: Zobrazit zaúčtované transakce DPH
-description: Můžete zobrazit transakce zaúčtovaného DPH z různých stránek v závislosti na tom, co chcete zobrazit.
+title: Zobrazení zaúčtovaných transakcí DPH
+description: V tomto tématu jsou popsány některé způsoby zobrazení zaúčtovaných transakcí DPH.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,36 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c5668c1cd4325f557d83a2291c8139f65c4d170e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5a2ff8b46d20fa012cbce817ae4e95b4799149ec
+ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846192"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "1870861"
 ---
-# <a name="view-posted-sales-tax-transactions"></a>Zobrazit zaúčtované transakce DPH
+# <a name="view-posted-sales-tax-transactions"></a>Zobrazení zaúčtovaných transakcí DPH
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Můžete zobrazit transakce zaúčtovaného DPH z různých stránek v závislosti na tom, co chcete zobrazit. Tento úkol používá ukázkovou společnost USMF.
+V tomto tématu jsou popsány některé způsoby zobrazení zaúčtovaných transakcí DPH. Můžete zobrazit transakce zaúčtovaného DPH z různých stránek v závislosti na tom, co chcete zobrazit. Tento úkol využívá ukázkovou společnost USMF.
 
-1. Přejděte na Daň > Dotazy a sestavy > Dotazy na DPH > Zaúčtované DPH.
-2. Klepněte na tlačítko Zobrazit filtry.
+# <a name="posted-sales-tax-page"></a>Zaúčtovaná stránka DPH
+
+1. V navigačním podokně přejděte na **Moduly > Daň > Dotazy a sestavy > Dotazy na DPH > Zaúčtování DPH**.
+2. Chcete-li zúžit zobrazení na určité transakce, vyberte možnost **Zobrazit filtry**.
 3. Zavřete stránku.
-4. Přejděte na Daň > Nepřímé daně > DPH > Období vyrovnání DPH.
-5. Rozbalte oddíl Intervaly období.
-6. Vyberte interval, který vás zajímá.
-7. Prohlédněte si transakce zaúčtované prodejní daně pro vybraný interval období vyrovnání.
-8. Seznam transakcí zaúčtovaných DPH lze dále filtrovat.
-9. Zavřete stránku.
-10. Přejděte na Daň > Nepřímé daně > DPH > Kódy DPH.
-11. V podokně akcí klikněte na možnost Kód prodejní daně.
-12. Klikněte na Zaúčtované DPH.
+
+# <a name="sales-tax-settlement-periods-page"></a>Stránka období vyrovnání DPH
+
+1. V navigačním podokně přejděte na **Moduly > Daň > Nepřímé daně > DPH > Období vyrovnání DPH**.
+2. Rozbalte oddíl **Intervaly období**.
+3. Vyberte interval, který vás zajímá.
+4. Seznam transakcí zaúčtovaných DPH lze dále filtrovat.
+5. Zavřete stránku.
+
+# <a name="sales-tax-codes-page"></a>Stránka Kódy DPH
+
+1. V navigačním podokně přejděte na **Moduly > Daň > Nepřímé daně > DPH > Kódy DPH**.
+2. V podokně akcí klikněte na možnost **Kód prodejní daně**.
+3. Vyberte **Zaúčtovaná DPH**.
 

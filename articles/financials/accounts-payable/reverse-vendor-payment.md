@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6587505fc5a729ffd82ab65aca7d5aa6ca4a265
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: db9208c8e76d963d5b8f6bee6b7c73268af68734
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837245"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867743"
 ---
 # <a name="reverse-a-vendor-payment"></a>Vrácení platby dodavatele
 
@@ -48,7 +48,7 @@ Informace o metodě, kterou vaše organizace používá, naleznete na stránce *
 Pokud vaše organizace chce zaúčtovat stornování šeků ihned po klepnutí na tlačítko **Storno plateb** na stránce **Šeky**. Na stránce **Parametry řízení hotovosti a banky** nastavte možnost **Použít proces kontroly pro storna plateb** na **Ne**. Na stránce **Šeky** lze vybrat šek, který chcete stornovat, a vybrat **Storno platby**. Můžete zadat datum a vybrat důvod stornování.
 
 ## <a name="reverse-posted-checks-after-they-are-reviewed-in-the-check-reversal-journal"></a>Stornování zaúčtovaných šeků po jejich zkontrolování v deníku stornování šeků
-Pokud vaše organizace chce zkontrolovat stornování šeků před jejich zaúčtováním, vytvořte deník stornování šeků ke kontrole a na stránce **Parametry řízení hotovosti a banky** nastavte možnost **Použít proces kontroly pro storna plateb** na **Ano**. Na stránce **Šeky** lze vybrat šek, který chcete stornovat, a vybrat **Storno platby**. Můžete zadat datum a vybrat důvod stornování. Musíte vybrat také název deníku pro vytvoření deníku v deníku stornování šeku.
+Pokud vaše organizace chce zkontrolovat stornování šeků před jejich zaúčtováním, vytvořte deník stornování šeků ke kontrole a na stránce **Parametry řízení hotovosti a banky** nastavte možnost **Použít proces kontroly pro storna plateb** na **Ano**. Na stránce **Šeky** lze vybrat šek, který chcete stornovat, a vybrat **Storno platby**. Můžete zadat datum a vybrat důvod stornování. Finanční důvod musí být nastaven pro typy bank i dodavatelů. Musíte vybrat také název deníku pro vytvoření deníku v deníku stornování šeku.
 
 ### <a name="review-a-reversal"></a>Kontrola storna
 

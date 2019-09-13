@@ -2,8 +2,8 @@
 title: Návrhář receptur v elektronickém výkaznictví
 description: Toto téma popisuje, jak lze používat návrháře receptur v elektronickém výkaznictví.
 author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 1f6caa6afd0ce36340caf237c1acca0ea343824f
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849502"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864287"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Návrhář receptur v elektronickém výkaznictví
 
@@ -113,6 +113,33 @@ Návrhář receptur elektronického výkaznictví lze také použít k vygenerov
 - Výraz umožňuje (vrácením hodnoty **TRUE**) proces vytváření souborů pro dávky, které obsahují alespoň jeden záznam.
 
 [![Kontrola souboru](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+
+### <a name="documents-content-control"></a>Řízení obsahu dokumentů
+
+Návrhář receptur elektronického výkaznictví lze použít ke konfiguraci výrazů, které určují, která data budou vložena do generovaných elektronických dokumentů za běhu. Tyto výrazy mohou povolit nebo zakázat výstup konkrétních prvků formátu, v závislosti na zpracování dat a konfigurované logice. Tyto výrazy lze zadat pro jediný prvek formátu v poli **Povoleno** na kartě **Mapování** na stránce **Návrhář operací** jako logickou podmínku vracející **logickou** hodnotu:
+
+-   Při vrácení hodnoty **pravda** je proveden aktuální prvek formátu.
+-   Při vrácení hodnoty **nepravda** je přeskočen aktuální prvek formátu.
+
+Následující obrázek znázorňuje výrazy tohoto typu (verze **11.12.11** konfigurace formátu **peněžního převodu ISO20022 (NO)**, kterou poskytuje společnost Microsoft, je jen příklad). Formát komponenty **XMLHeader** je nakonfigurován tak, aby popisoval strukturu zprávy o peněžním převodu, a to podle standardů zpráv ISO 20022 XML. Komponent formátu **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** je konfigurována pro přidání do generované zprávy, prvku XML **Ustrd** a vložení informací o úhradě v nestrukturovaném formátu jako textu následujících prvků XML:
+
+-   Komponent **PaymentNotes** slouží k výstupu textu poznámek k platbě.
+-   Komponent **DelimitedSequence** vrací čísla faktur oddělených čárkou, která slouží k vyrovnání aktuálního peněžního převodu.
+
+[![Návrhář operací](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+
+> [!NOTE]
+> Komponenty **PaymentNotes** a **DelimitedSequence** jsou označeny otazníkem. To znamená, že použití obou komponent je podmíněné na základě následujících kritérií:
+
+-   Výraz **@.PaymentsNotes<>""** definovaný pro komponentu **PaymentNotes** umožňuje (vrácením hodnoty **pravda**) naplnění prvku XML **Ustrd**, což je text poznámek k platbám, když tento text pro aktuální peněžní převod není prázdný.
+
+[![Návrhář operací](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+
+-   Výraz **@.PaymentsNotes=""** definovaný pro komponentu **DelimitedSequence** umožňuje (vrácením hodnoty **pravda**) naplnění prvku XML **Ustrd**, odděleného čísly faktur, která jsou použita k účtování aktuálního peněžního převodu v případě, že text platby poznámek k platbám k tomuto peněžnímu převodu je prázdný.
+
+[![Návrhář operací](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+
+V závislosti na tomto nastavení bude generovaná zpráva pro každou platbu dlužníka – prvek XML **Ustrd** – obsahovat buď text poznámek k platbě, nebo, je-li tento text prázdný, text čísly faktur použitými k účtování této platby.
 
 ### <a name="basic-syntax"></a>Základní syntaxe
 

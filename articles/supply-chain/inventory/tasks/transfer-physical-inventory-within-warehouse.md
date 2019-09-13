@@ -3,7 +3,7 @@ title: Převedení fyzických zásob ve skladu
 description: Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu zásob za účelem registrace pohybu zboží z jednoho umístění ve skladu do druhého.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7344bfa3be0d7345d3ac68202c7bc26bcac8ebb9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7715c8e7a56703993e8512af03f2ab8d6802a987
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845250"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916569"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Převedení fyzických zásob ve skladu
 
@@ -32,40 +32,30 @@ Tento postup vás provede procesem vytvoření a zaúčtování deníku převodu
 
 
 ## <a name="create-an-inventory-transfer-journal"></a>Vytvořit deník převodu zásob
-1. Přejít do převodu.
-2. Klikněte na položku Nová.
-3. V poli Název zadejte nebo vyberte hodnotu.
-4. Klikněte na tlačítko OK.
-    * Pro každý řádek deníku je možné zadat hodnotu dimenzí „od“ a „do“. Ty jsou pro tento typ deníku nezbytné. Položky můžete převést do umístění pomocí různých pravidel. V tomto příkladu přeneseme položku v rámci stejného skladu, z umístění řízeného registrační značkou do umístění, která není řízeno registrační značkou.   
+1. V **Navigačním podokně** přejděte na **Řízení zásob > Položky deníku > Položky > Převod**.
+2. Klepněte na možnost **Nový**.
+3. V poli **Název** zadejte nebo vyberte hodnotu.
+4. Klikněte na tlačítko **OK**. Pro každý řádek deníku je možné zadat hodnotu dimenzí „od“ a „do“. Ty jsou pro tento typ deníku nezbytné. Položky můžete převést do umístění pomocí různých pravidel. V tomto příkladu přeneseme položku v rámci stejného skladu, z umístění řízeného registrační značkou do umístění, která není řízeno registrační značkou.   
 
-## <a name="create-journal-lines"></a>Vytvoření řádků deníku
-1. Klikněte na položku Nová.
-2. V poli Číslo zboží zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat položku „A0001“.  
-3. V poli Zdrojové pracoviště zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat položku „2“.  
-4. V poli Cílové pracoviště zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat položku „2“.  
-5. V poli Ze skladu zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat „24“.  
-6. V poli Do skladu zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat „24“.  
-7. V poli Ze skladového místa zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat „FL-001“.  
-8. V poli Do skladového místa zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat „BULK-001“.  
-9. Zadejte číslo do pole Množství.
-10. Klepněte na kartu Dimenze zásob.
-11. V poli Registrační značka zadejte nebo vyberte hodnotu.
-    * Pokud používáte data USMF, můžete vybrat „24“.  
-12. Klikněte na položku Uložit.
+## <a name="create-journal-lines"></a>Vytvořit řádky deníku
+1. Na pevné záložce **Řádky deníku** klikněte klepněte na položku **Nový**.
+2. V poli **Číslo položky** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat položku „A0001“.  
+3. V poli **Zdrojové pracoviště** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat položku „2“.  
+4. V poli **Cílové pracoviště** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat položku „2“.  
+5. V poli **Ze skladu zadejte** nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat „24“.  
+6. V poli **Do skladu** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat „24“.  
+7. V poli **Ze skladového místa** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat „FL-001“.  
+8. V poli **Do skladového místa** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat „BULK-001“.  
+9. Zadejte číslo do pole **Množství**.
+10. Na pevné záložce **Podrobnosti řádku** klikněte na kartu **Dimenze zásob**.
+11. V možnosti **Z dimenzí zásob** v poli **Registrační značka** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat „24“.  
+12. Klikněte na možnost **Uložit**.
 
 ## <a name="post-the-inventory-transfer-journal"></a>Zaúčtovat deník převodu zásob
-1. Klikněte na položku Zaúčtovat.
-2. Klikněte na tlačítko OK.
+1. V **podokně akcí** klikněte na **Zaúčtovat**.
+2. Klikněte na tlačítko **OK**.
 
 ## <a name="view-inventory-transactions"></a>Zobrazit skladové transakce
-1. Klepněte na položku Zásoby.
-2. Klikněte na Transakce.
-    * V tomto poli se zobrazí transakce, které byly vytvořeny při zaúčtování deníku.  
+1. Klikněte na položku **Zásoby**.
+2. Klikněte **Transakce**. V tomto poli se zobrazí transakce, které byly vytvořeny při zaúčtování deníku.  
 

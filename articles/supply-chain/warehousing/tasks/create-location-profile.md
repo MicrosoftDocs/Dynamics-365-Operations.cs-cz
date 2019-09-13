@@ -1,9 +1,9 @@
 ---
 title: Vytvoření profilu skladového místa
-description: Každé umístění ve skladu musí mít přidružený profil umístění, který popisuje vlastnosti umístění, například zda umístění povoluje smíšené zboží.
+description: Toto téma vysvětluje, jak vytvořit profil skladového místa v aplikaci Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,28 +17,29 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a9e1217a1105e1d53fc937f927e066e392f1ef14
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 46aa1001c21ae39c158062444303ca02c0f41a45
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847320"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866972"
 ---
 # <a name="create-a-location-profile"></a>Vytvoření profilu skladového místa
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Každé umístění ve skladu musí mít přidružený profil umístění, který popisuje vlastnosti umístění, například zda umístění povoluje smíšené zboží. V této proceduře vytvoříte profil pro umístění, které nevyžaduje kontrolu registrační značky. Povolíme stav Smíšené zboží a Smíšené zásoby a také periodickou inventuru. Tento postup můžete projít v ukázkových datech společnosti USMF.
+Toto téma vysvětluje, jak vytvořit profil skladového místa v aplikaci Dynamics 365 for Finance and Operations. Každé umístění ve skladu musí mít přidružený profil umístění, který popisuje vlastnosti umístění, například zda umístění povoluje smíšené zboží. V této proceduře vytvoříte profil pro umístění, které nevyžaduje kontrolu registrační značky. Povolíme stav Smíšené zboží a Smíšené zásoby a také periodickou inventuru. Tento postup můžete projít v ukázkových datech společnosti USMF.
 
-1. Klikněte na položku Nová.
-2. Zadejte hodnotu do pole ID profilu skladového místa.
-3. Zadejte hodnotu do pole Název.
-4. V poli Formát skladového místa zadejte nebo vyberte hodnotu.
-5. V poli Typ místa zadejte nebo vyberte hodnotu.
-6. V poli ID profilu správy dokování zadejte nebo vyberte hodnotu.
-7. Vyberte možnost Ano v poli Povolit smíšené položky.
-8. Vyberte možnost Ano v poli Povolit smíšené stavy zásob.
-9. Vyberte možnost Ano v poli Povolit cyklickou inventuru.
-10. Klikněte na položku Uložit.
-11. Přejděte do nabídky Řízení skladu > Nastavení > Sklad > Profily umístění.
+
+1. V navigačním podokně přejděte na **Moduly > Řízení skladu > Nastavení > Sklad > Profily skladového místa**.
+2. Zvolte **Nové**.
+3. Zadejte hodnotu do pole **ID profilu skladového místa**.
+4. Zadejte hodnotu do pole **Název**.
+5. V poli **Formát skladového místa** zadejte nebo vyberte hodnotu.
+6. V poli **Typ skladového místa** zadejte nebo vyberte hodnotu.
+7. V poli **ID profilu správy dokování** zadejte nebo vyberte hodnotu.
+8. Vyberte možnost **Ano** v poli **Povolit smíšené položky**.
+9. Vyberte možnost **Ano** v poli **Povolit smíšené stavy zásob**.
+10. Vyberte možnost **Ano** v poli **Povolit cyklickou inventuru**.
+11. Zvolte **Uložit**.
 

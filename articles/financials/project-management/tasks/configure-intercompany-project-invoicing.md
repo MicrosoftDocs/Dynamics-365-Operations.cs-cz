@@ -1,9 +1,9 @@
 ---
 title: Konfigurace fakturování mezipodnikového projektu
-description: Tento postup popisuje nastavení fakturace projektu mezi dvěma společnostmi v rámci organizace.
+description: Toto téma popisuje nastavení fakturace projektu mezi dvěma společnostmi v rámci organizace.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,54 +17,50 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 53871db9223eef6ba78f2e327e60f45110891478
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c89b17c09a4f145b5a4ca9cdd127b4e635447d4b
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838264"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867312"
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Konfigurace fakturování mezipodnikového projektu
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup popisuje nastavení fakturace projektu mezi dvěma společnostmi v rámci organizace. Tato úloha používá sadu dat USSI.
+Toto téma popisuje nastavení fakturace projektu mezi dvěma společnostmi v rámci organizace. Tato úloha používá sadu dat USSI.
 
-1. Přejděte do části Závazky > Dodavatelé > Všichni dodavatelé.
-2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-3. V podokně akcí klikněte na možnost Obecné.
-4. Klikněte na možnost Mezipodnikové.
-5. Nastavte položku Aktivní na hodnotu Ano, chcete-li povolit mezipodnikové obchodování.
-6. V poli Společnost odběratele zadejte nebo vyberte hodnotu.
-7. V poli Můj účet zadejte nebo vyberte hodnotu.
-8. Klikněte na položku Uložit.
-9. Zavřete stránku.
-10. Zavřete stránku.
-11. Přejděte na Řízení a účetnictví projektů > Nastavení > Parametry modulu Řízení a účetnictví projektu.
-12. Klikněte na kartu Mezipodnikové.
-13. Posuňte posuvník na Ano, abyste povolili mezipodnikové plánování prostředků a časové rozvrhy.
-14. Označte v seznamu vybraný řádek.
-15. Klikněte na možnost Nový.
-16. Označte v seznamu vybraný řádek.
-17. V poli Právnická osoba, která si půjčuje, zadejte nebo vyberte hodnotu.
-18. Zaškrtněte pole Časově rozlišené výnosy.
-19. V poli Výchozí kategorie časového rozvrhu zadejte nebo vyberte hodnotu.
-20. V poli Výchozí kategorie výdajů zadejte nebo vyberte hodnotu.
-21. Klikněte na položku Uložit.
-22. Zavřete stránku.
-23. Přejděte k Řízení a účetnictví projektu > Nastavení > Zaúčtování > Nastavení účtování hlavní knihy.
-24. V poli Typy účtů hlavní knihy vyberte možnost.
-25. Klepněte na možnost Nový.
-26. Označte na seznamu vybraný řádek.
-27. Označte v seznamu vybraný řádek.
-28. Zadejte požadované hodnoty do pole Hlavní účet.
-29. Klikněte na položku Uložit.
-30. Zavřete stránku.
-31. Přejděte na Řízení a účetnictví projektu > Nastavení > Ceny > Převést cenu.
-32. Klikněte na položku Nová.
-33. Zadejte datum do pole Datum platnosti.
-34. V poli Právnická osoba, která si půjčuje, zadejte nebo vyberte hodnotu.
-35. V poli Model přenosu ceny zvolte možnost.
-36. Do pole Oceňování zadejte číslo.
-37. Klikněte na položku Uložit.
+1. V navigačním podokně přejděte na **Moduly > Závazky > Dodavatelé > Všichni dodavatelé**.
+2. V seznamu **Všichni dodavatelé** vyhledejte a vyberte požadovaný záznam.
+3. V podokně akcí klikněte na možnost **Obecné**.
+4. Vyberte **Mezipodnikový**.
+5. Nastavte položku **Aktivní** na hodnotu **Ano**, chcete-li povolit mezipodnikové obchodování.
+6. V poli **Společnost odběratele** zadejte nebo vyberte hodnotu.
+7. V poli **Můj účet** zadejte nebo vyberte hodnotu.
+8. Zvolte **Uložit**.
+9. Zavřete stránky a vraťte se na domovskou stránku.
+10. V navigačním podokně přejděte na **Moduly > Řízení a účetnictví projektů > Nastavení > Parametry modulu Řízení a účetnictví**.
+11. Vyberte kartu **Mezipodnikové**.
+12. Posuňte posuvník na **Ano**, abyste povolili mezipodnikové plánování prostředků a časové rozvrhy.
+13. Označte na seznamu vybraný řádek.
+14. Zvolte **Nové**.
+15. V poli **Právnická osoba, která si půjčuje**, zadejte nebo vyberte hodnotu.
+16. Zaškrtněte pole **Časově rozlišené výnosy**.
+17. V poli **Výchozí kategorie časového rozvrhu** zadejte nebo vyberte hodnotu.
+18. V poli **Výchozí kategorie výdajů** zadejte nebo vyberte hodnotu.
+19. Zvolte **Uložit**.
+20. Zavřete stránku.
+21. V navigačním podokně přejděte na **Moduly > Řízení a účetnictví projektů > Nastavení > Zaúčtování > Nastavení účtování hlavní knihy**.
+22. V poli **Typy účtů hlavní knihy** vyberte možnost.
+23. Zvolte **Nové**.
+24. Zadejte požadované hodnoty do pole nového řádku **Hlavní účet**.
+25. Zvolte **Uložit**.
+26. Zavřete stránku.
+27. V navigačním podokně přejděte na **Moduly > Řízení a účetnictví projektů > Nastavení > Ceny > Převést cenu**.
+28. Zvolte **Nové**.
+29. Zadejte datum do pole **Datum platnosti**.
+30. V poli **Právnická osoba, která si půjčuje**, zadejte nebo vyberte hodnotu.
+31. V poli **Model přenosu ceny** zvolte možnost.
+32. Do pole **Oceňování** zadejte číslo.
+33. Zvolte **Uložit**.
 

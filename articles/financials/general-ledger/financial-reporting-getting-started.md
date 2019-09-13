@@ -1,9 +1,9 @@
 ---
-title: Finanční výkaznictví
+title: Přehled finančního výkaznictví
 description: Toto téma popisuje, kde získat přístup k účetnímu výkaznictví v Microsoft Dynamics 365 for Finance and Operations a jak používat finanční možnosti vytváření sestav. Obsahuje popis výchozích finančních sestav, které jsou k dispozici.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a55c0a1ac8ac833315afa179c1b6d4eb78195fc
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e3727907c2ff5f51ef3e5132a78836b5e699221b
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839200"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865746"
 ---
-# <a name="financial-reporting"></a>Finanční výkaznictví
+# <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
 
 [!include [banner](../includes/banner.md)]
 

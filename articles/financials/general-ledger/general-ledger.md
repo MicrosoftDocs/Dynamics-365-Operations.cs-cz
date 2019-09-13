@@ -1,5 +1,5 @@
 ---
-title: Domovská stránka Hlavní kniha a Finanční výkaznictví
+title: Přehled hlavní knihy a finančního výkaznictví
 description: Pomocí hlavní knihy definujte a spravujte finanční záznamy právnické osoby.
 author: ShylaThompson
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee8597dfbb8b86ff770516ac8787fb07f1d4cbd5
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2e50c09d37f34f60b4453ce6bc7df6497dbc070a
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839128"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865722"
 ---
-# <a name="general-ledger"></a>Hlavní kniha 
+# <a name="general-ledger-overview"></a>Přehled hlavní knihy
 
 [!include [banner](../includes/banner.md)]
 

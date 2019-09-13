@@ -1,9 +1,9 @@
 ---
 title: Vyřazení dlouhodobého majetku s použitím volné faktury
-description: Tento postup popisuje získání dlouhodobého majetku pomocí návrhu pořízení v deníku dlouhodobého majetku.
+description: Toto téma vysvětluje získání dlouhodobého majetku pomocí návrhu pořízení v deníku dlouhodobého majetku.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,28 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26446df21a3b55abcdd5f163ae84f8e35d853965
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 179a6e45d57baf810068cb5c14aed670ebb94706
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846984"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914646"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Vyřazení dlouhodobého majetku s použitím volné faktury
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tento postup popisuje vyřazení dlouhodobého majetku pomocí volné faktury.
+Toto téma vysvětluje vyřazení dlouhodobého majetku pomocí volné faktury.
 
-1. Přejděte na Pohledávky > Faktury > Všechny volné faktury.
-2. Klikněte na položku Nová.
-3. V poli Účet odběratele zadejte nebo vyberte hodnotu.
-4. Ověřte výchozí datum faktury a podle potřeby ho upravte.
-5. Ověřte zbývající výchozí pole záhlaví, jako je například Měna, a podle potřeby ho upravte.
-6. Zadejte popis do řádku faktury.
-7. Zadejte nebo zvolte Hlavní účet pro řádek faktury.
-8. Ověřte výchozí skupinu DPH a skupinu DPH položky.
-9. Zadejte jednotkovou cenu nebo množství prodeje dlouhodobého majetku.
-10. Klikněte na Podrobnosti řádku.  
-11. Vyberte číslo dlouhodobého majetku k prodeji.
-12. Klikněte na položku Zaúčtovat.
+1. V podokně navigace přejděte na **Moduly > Pohledávky > Faktury > Všechny otevřené faktury**.
+2. Zvolte **Nové**.
+3. V poli **Účet odběratele** zadejte nebo vyberte hodnotu.
+4. Ověřte výchozí datum **faktury** a podle potřeby ho upravte.
+5. Ověřte zbývající výchozí pole záhlaví, jako je například **Měna**, a podle potřeby ho upravte.
+6. V části **Řádky faktury** ověřte pole **Popis** a **Hlavní účet**.
+7. Ověřte výchozí pole **Skupina DPH** a **Skupina DPH položky**.
+8. Zadejte **jednotkovou cenu** nebo **množství** prodeje dlouhodobého majetku.
+9. Zvolte sekci **Podrobnosti řádku**.  
+10. Zadejte nebo vyberte hodnotu v poli **Dlouhodobý majetek**.
+11. Zvolte **Zaúčtovat**. 
 

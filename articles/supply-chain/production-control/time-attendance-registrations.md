@@ -1,9 +1,9 @@
 ---
-title: Registrace času a docházky
+title: Přehled registrace času a docházky
 description: Pracovníci z oblasti registrace času mohou zadat různé typy registrace pracovní doby, například registraci příchodu, odchodu, registraci nepřímých aktivit a registraci absencí. Toto téma popisuje registrace, jejich výpočet, schválení a použití workflowu pro přidání struktury a automatického schválení pro proces schválení časových rozvrhů.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5fac917362fe4aa2be675133528a7108647ecc00
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 0e88d64340a7f4963956d1dce3c31f3542cc30f8
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838408"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865225"
 ---
-# <a name="time-and-attendance-registration"></a>Registrace času a docházky
+# <a name="time-and-attendance-registration-overview"></a>Přehled registrace času a docházky
 
 [!include [banner](../includes/banner.md)]
 
