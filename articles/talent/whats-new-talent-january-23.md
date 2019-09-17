@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f27698c257301f52e5c77eaa8a04ca13a0315825
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4e492095d5269ec81c0c22145b7af356937c256b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517493"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742509"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-january-23-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (23. ledna 2019)
 
@@ -54,4 +54,4 @@ Při změně práce pro pozici, budou pole úlohy použita jako výchozí pro po
 Při této změně byla přidána pole **Zkušební období** a **kalendář** na stránku **Správa změn** s cílem umožnit zadávání dat pro budoucí a minulé zaměstnance.
 
 ### <a name="platform-update-23"></a>Aktualizace platformy 23
-Dílčí opravy chyb byly zahrnuty jako součást aktualizace platformy 23. Další informace naleznete v tématu [Co je nového nebo změněného v Dynamics 365 for Finance and Operations aktualizace platformy 23 (leden 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+Dílčí opravy chyb byly zahrnuty jako součást aktualizace platformy 23. Další informace naleznete v tématu [Co je nového nebo změněného v Dynamics 365 for Finance and Operations aktualizace platformy 23 (leden 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

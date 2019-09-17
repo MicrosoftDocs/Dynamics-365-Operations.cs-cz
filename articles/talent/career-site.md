@@ -1,6 +1,6 @@
 ---
-title: Funkce kariérního webu v aplikaci Attract
-description: Toto téma poskytuje přehled funkce kariérního webu vystaveného kandidátům v aplikaci Attract
+title: Nastavení kariérního webu v aplikaci Microsoft Dynamics 365 for Talent - Attract
+description: Toto téma poskytuje přehled funkce kariérního webu vystaveného kandidátům v aplikaci Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729696"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739764"
 ---
-# <a name="career-site-functionality-in-attract"></a>Funkce kariérního webu v aplikaci Attract
+# <a name="set-up-your-career-site"></a>Nastavení kariérního webu
 
 [!include[banner](../includes/banner.md)]
 

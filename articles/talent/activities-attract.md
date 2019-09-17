@@ -1,9 +1,9 @@
 ---
-title: Aktivity v procesech
-description: Toto téma obsahuje informace o různých typech aktivit, které lze použít v procesu náboru.
+title: Aktivity v procesech v aplikaci Microsoft Dynamics 365 for Talent - Attract
+description: Toto téma obsahuje informace o různých typech aktivit, které lze použít v procesu náboru v aplikaci Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
-ms.date: 04/10/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c975b95e4195c795ec4c816b1f3a50461715feea
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517558"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739701"
 ---
-# <a name="activities-in-the-hiring-processes"></a>Aktivity v procesech náboru
+# <a name="activities-in-hiring-processes"></a>Aktivity v procesech náboru
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,6 +37,9 @@ Aktivity lze přidat jako součást procesu náboru v aplikaci Microsoft Dynamic
 ## <a name="prospect-activity"></a>Aktivita potenciálního zákazníka
 
 Aktivita potenciálního zákazníka určuje, zda lze do pracovní pozice přidávat potenciální zákazníky. Podle výchozího nastavení lze do pracovní pozice přidávat potenciální zákazníky. Pokud chcete aktivitu potenciálního zákazníka vypnout, nastavte možnost **Povolit potenciální zákazníky** na **Vypnuto**. Když je aktivita potenciálního zákazníka zapnutá, můžou manažeři náboru přidávat a zobrazovat potenciální zákazníky a v pracovní pozici se zobrazí karta **Potenciální zákazník**.
+
+> [!NOTE]
+> Chcete-li povolit přidávání kandidátů do úlohy ze služby LinkedIn, je nutné nastavit možnost **Povolit potenciální zákazníky** na **On**.
 
 ## <a name="application-activity"></a>Aktivita žádosti
 

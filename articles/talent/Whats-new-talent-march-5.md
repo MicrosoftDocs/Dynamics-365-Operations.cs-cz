@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517559"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741883"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (5. března 2019)
 
@@ -43,10 +43,10 @@ V aplikaci Attract existuje několik polí, která jsou sadami možností v rám
 ## <a name="changes-in-onboarding"></a>Změny v aplikaci Onboard
 
 ### <a name="private-preview-for-onboard-teams"></a>Soukromá verze Preview pro týmy aplikace Onboard
-Nyní můžete snadno sdílet a spolupracovat na šablonách napříč celou organizací. Další informace naleznete v tématu [Sdílení doporučených postupů napříč vaší organizací pomocí zaškolovacích týmů](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
+Nyní můžete snadno sdílet a spolupracovat na šablonách napříč celou organizací. Další informace naleznete v tématu [Sdílení doporučených postupů napříč vaší organizací pomocí zaškolovacích týmů](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
 
 ### <a name="private-preview-for-assignee-placeholders"></a>Soukromá verze Preview pro zástupné texty zmocněnce
-Šablony můžete obohatit přiřazením aktivit rolím namísto jednotlivců. Role jsou pak přiřazeny jednotlivcům v době vytvoření průvodce. Další informace naleznete v tématu [Zefektivnění správy průvodců přiřazením aktivit rolím](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
+Šablony můžete obohatit přiřazením aktivit rolím namísto jednotlivců. Role jsou pak přiřazeny jednotlivcům v době vytvoření průvodce. Další informace naleznete v tématu [Zefektivnění správy průvodců přiřazením aktivit rolím](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
 
 ## <a name="changes-in-core-hr"></a>Změny v Core HR
 **Sestavení 8.1.2178**
@@ -71,7 +71,7 @@ Při této změně se při požadavku na změny stávajících pozic pole mzdy n
 V této verzi existují jiné menší opravy chyb.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade na Common Data Service
-Konečné termíny pro upgrade na Common Data Service se rychle blíží. Přihlaste se do centra pro správu PowerApps k určení, zda je třeba provést upgrade databáze. Další informace o konečných termínech a nutných krocích k upgradu naleznete v tématu [Upgrade na Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Konečné termíny pro upgrade na Common Data Service se rychle blíží. Přihlaste se do centra pro správu PowerApps k určení, zda je třeba provést upgrade databáze. Další informace o konečných termínech a nutných krocích k upgradu naleznete v tématu [Upgrade na Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Již brzy
 
@@ -79,4 +79,4 @@ Konečné termíny pro upgrade na Common Data Service se rychle blíží. Přihl
 V mnoha organizacích mohou manažeři kompenzací a zaměstnaneckých výhod získat přístup pouze k určitým záznamům o kompenzacích, jako jsou záznamy pro vedoucí pracovníky nebo regionální zaměstnance. Díky této změně můžete spravovat a udržovat plány kompenzace pro různé skupiny zaměstnanců v organizaci. Fixním a variabilním plánům lze přiřadit role zabezpečení, které určí přístup k plánům a údajům zaměstnance souvisejících s plány, jako jsou například záznamy o mzdě nebo bonusech. Kompenzace pro tyto zaměstnance budou moci zpracovávat pouze role s daným přístupem.
 
 ###  <a name="platform-update-24"></a>Aktualizace platformy 24
-Další podrobnosti o aktualizaci Platform Update 24 naleznete v tématu [Co je nového a co se změnilo v aplikaci Finance and Operations, Platform Update 24 (březen 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Další podrobnosti o aktualizaci Platform Update 24 naleznete v tématu [Co je nového a co se změnilo v aplikaci Finance and Operations, Platform Update 24 (březen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

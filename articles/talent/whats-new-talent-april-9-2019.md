@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 25ef0d49c2600833aefa84d404e00c0c57cfbf52
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517497"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856417"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent (9. dubna 2019)
 
@@ -37,10 +37,10 @@ Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynami
 V aplikacích Attract a Onboard problémy zaznamenané koncovými uživateli pomocí funkce nahlášení problému nyní automaticky vytváří problémy pro podporu v projektu LCS zákazníka. Správci pak mohou tyto problémy roztřídit a v případě potřeby je odeslat společnosti Microsoft. To odpovídá způsobu, kterým Core HR zpracovává problémy podpory koncových uživatelů.
 
 ### <a name="relevance-search"></a>Vyhledávání podle relevance
-Ve skupinách talentů můžete nyní prohledávat celou databázi kandidátů ohledně konkrétních dovedností, jmen nebo vzdělání. Již nemusíte specifikovat, kterou část profilu kandidáta chcete prohledat. Attract prohledá celý profil a zvýrazní všechny nalezené shody. Attract také prohledává všechny dokumenty, které jsou pro kandidáta k dispozici, a inteligentně řadí výsledky vyhledávání. Kromě toho můžete výsledky filtrovat podle zdroje nebo podle toho, zda jsou druhými v pořadí. Další informace naleznete v tématu [Vyhledávání a zobrazení profilů kandidáta](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
+Ve skupinách talentů můžete nyní prohledávat celou databázi kandidátů ohledně konkrétních dovedností, jmen nebo vzdělání. Již nemusíte specifikovat, kterou část profilu kandidáta chcete prohledat. Attract prohledá celý profil a zvýrazní všechny nalezené shody. Attract také prohledává všechny dokumenty, které jsou pro kandidáta k dispozici, a inteligentně řadí výsledky vyhledávání. Kromě toho můžete výsledky filtrovat podle zdroje nebo podle toho, zda jsou druhými v pořadí. Další informace naleznete v tématu [Vyhledávání a zobrazení profilů kandidáta](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
 
 ### <a name="prospect-recommendations"></a>Doporučení potenciálního uchazeče
-Attract může pomoci k nastartování hledání zdroje pro práci, jakmile ho aktivujete tím, že vytvoříte inteligentní doporučení kandidáta z databáze kandidátů vaší organizace. Doporučení zahrnují informace o dovednostech a vzdělání, které byly zjištěny při hledání relevantních potenciálních uchazečů. Tato doporučení se zobrazí na kartě **Potenciální uchazeči** pod prací, pokud ho povolíte během náborového procesu pro práci. Další informace naleznete v tématu [Doporučení potenciálního uchazeče](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
+Attract může pomoci k nastartování hledání zdroje pro práci, jakmile ho aktivujete tím, že vytvoříte inteligentní doporučení kandidáta z databáze kandidátů vaší organizace. Doporučení zahrnují informace o dovednostech a vzdělání, které byly zjištěny při hledání relevantních potenciálních uchazečů. Tato doporučení se zobrazí na kartě **Potenciální uchazeči** pod prací, pokud ho povolíte během náborového procesu pro práci. Další informace naleznete v tématu [Doporučení potenciálního uchazeče](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
 
 ### <a name="interviewer-availability-statuses"></a>Stavy dostupnosti tazatele
 Plánovači pohovoru budou moci brzy zobrazit stavy **Mimo kancelář, práce jinde** pro tazatele, které pomohou plánovat časy, které budou tazatelům lépe vyhovovat.

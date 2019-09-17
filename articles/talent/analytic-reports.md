@@ -1,6 +1,6 @@
 ---
-title: Použití analytických sestav pro přehledy náborového procesu
-description: Toto téma popisuje analytické sestavy v aplikaci Attract.
+title: Použití analytických sestav v aplikaci společnosti Microsoft Dynamics 365 for Talent - Attract
+description: V tomto tématu je popsána analytická sestava pro přehled procesu náboru v aplikaci společnosti Microsoft Dynamics 365 for Talent - Attract
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: 33ed6072a9ad99144fb96ad19389a57461324f71
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516553"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742880"
 ---
-# <a name="use-analytic-reports-for-hiring-process-insights"></a>Použití analytických sestav pro přehledy náborového procesu
+# <a name="use-analytic-reports"></a>Použití analytických sestav
 
 Analytické sestavy v aplikaci Attract poskytují vestavěné řešení (OOTB) pro přehledy náborových procesů. Mezi dostupné funkce patří:
 
@@ -81,8 +81,8 @@ Sestavy Analytika práce zobrazují data pro vybranou práci. Sestavy centra ana
 
 ## <a name="cross-filter"></a>Křížové filtrování
 
-Jednou z skvělých funkcí aplikace Power BI je způsob, jakým jsou vzájemně propojeny všechny vizuální prvky na stránce sestavy. Pokud vyberete datový bod na jednom z vizuálních prvků, změní se na základě tohoto výběru všechny ostatní vizuální prvky na stránce, které obsahují tato data. Další informace a příklady naleznete v tématu [Jak se vizuální prvky křížově filtrují navzájem v sestavě Power BI](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-interactions).
+Jednou z skvělých funkcí aplikace Power BI je způsob, jakým jsou vzájemně propojeny všechny vizuální prvky na stránce sestavy. Pokud vyberete datový bod na jednom z vizuálních prvků, změní se na základě tohoto výběru všechny ostatní vizuální prvky na stránce, které obsahují tato data. Další informace a příklady naleznete v tématu [Jak se vizuální prvky křížově filtrují navzájem v sestavě Power BI](https://docs.microsoft.com/power-bi/consumer/end-user-interactions).
 
 ## <a name="export-to-excel"></a>Export do aplikace Excel
 
-Chcete-li zobrazit data sestav v aplikaci Excel, můžete kliknout na nabídku možností (tři tečky) na vizuálním prvku a zvolit **Exportovat podkladová data**. Exportovaná data budou exportována jako filtrovaná s ohledem na uživatelská oprávnění v aplikaci Attract. Další informace naleznete v tématu [Export dat z vizualizací](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data).
+Chcete-li zobrazit data sestav v aplikaci Excel, můžete kliknout na nabídku možností (tři tečky) na vizuálním prvku a zvolit **Exportovat podkladová data**. Exportovaná data budou exportována jako filtrovaná s ohledem na uživatelská oprávnění v aplikaci Attract. Další informace naleznete v tématu [Export dat z vizualizací](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).

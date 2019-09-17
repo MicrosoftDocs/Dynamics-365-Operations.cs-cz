@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: andreabichsel
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8f488b0bf844fc04f07fedfa447073cdeabacc15
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f224114b132ae54dddb7766268c1fc5ec49e109d
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517495"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795237"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-2-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent (2. dubna 2019)
 
@@ -57,13 +57,13 @@ V aplikacích Attract a Onboard problémy zaznamenané koncovými uživateli pom
 Změny popsané v této části se vztahují na číslo sestavení 8.1.2216.
 
 ### <a name="platform-update-25"></a>Aktualizace platformy 25
-Další informace o aktualizaci Platform Update 25 naleznete v tématu [Funkce Preview v aktualizaci Platform Update 25 aplikace Dynamics 365 for Finance and Operations (duben 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+Další informace o aktualizaci Platform Update 25 naleznete v tématu [Funkce Preview v aktualizaci Platform Update 25 aplikace Dynamics 365 for Finance and Operations (duben 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Rozšířené zabezpečení kompenzace (fixní a variabilní)
 V mnoha organizacích mohou mít manažeři kompenzací a zaměstnaneckých výhod přístup pouze k určitým záznamům o kompenzacích. To může zahrnovat záznamy pro vedoucí pracovníky nebo regionální zaměstnance. Díky této změně může oddělení lidských zdrojů spravovat a udržovat plány kompenzace pro různé skupiny zaměstnanců v organizaci. Můžete přiřadit role zabezpečení fixním i variabilním plánům. Tyto role zabezpečení určují přístup k plánům a souvisejícím zaměstnaneckým datům, jako jsou záznamy o platech nebo bonusech, takže pouze tyto role mohou zpracovávat kompenzace pro skupiny zaměstnanců.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade na Common Data Service
-Konečné termíny pro upgrade na Common Data Service se rychle blíží. Přihlaste se do centra pro správu PowerApps k určení, zda je třeba provést upgrade databáze. Další informace o konečných termínech a nutných krocích k upgradu naleznete v tématu [Upgrade na Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Konečné termíny pro upgrade na Common Data Service se rychle blíží. Přihlaste se do centra pro správu PowerApps k určení, zda je třeba provést upgrade databáze. Další informace o konečných termínech a nutných krocích k upgradu naleznete v tématu [Upgrade na Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Náhled
 

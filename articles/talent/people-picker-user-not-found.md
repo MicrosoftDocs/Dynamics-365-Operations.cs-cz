@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d5a2c61fc21578d1db4c1bf0c3dfaf0c7a93298c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517514"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742742"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Uživatelé Azure Active Directory nenalezení v nástroji pro výběr osob
 
@@ -36,9 +36,9 @@ Někteří platní uživatelé v aplikaci Microsoft Azure Active Directory (Azur
 
 Některé typy uživatelů nejsou aktuálně podporovány v aplikacích Attract či Onboard. Ověřte, zda uživatel není typem hosta Azure AD B2B. Informace o typu uživatele lze najít v listu Azure Active Directory na portálu Azure.
 
-Další informace o Azure B2B naleznete v tématu [Co je přístup uživatele typu host v Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).
+Další informace o Azure B2B naleznete v tématu [Co je přístup uživatele typu host v Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
-U uživatelů jiných než B2B jsou určití uživatelé, kteří mohou mít neúplnou vlastnost Typ uživatele na objektu **Uživatel**. To lze ověřit a opravit pomocí modulu Azure AD Powershell. Další informace naleznete v tématu [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+U uživatelů jiných než B2B jsou určití uživatelé, kteří mohou mít neúplnou vlastnost Typ uživatele na objektu **Uživatel**. To lze ověřit a opravit pomocí modulu Azure AD Powershell. Další informace naleznete v tématu [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
 
 ## <a name="resolution"></a>Rozlišení
 

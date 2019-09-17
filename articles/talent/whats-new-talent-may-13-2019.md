@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: dac453ee83492655b6681b9784af4712bf39fc2a
-ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
+ms.openlocfilehash: ffeeb3e2f5279a84c4c060b04fe46836b778f6c5
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1591495"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856441"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-13-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (13. května 2019)
 
@@ -47,7 +47,7 @@ Změny popsané v této části se vztahují na číslo sestavení 8.1.2297. Č�
 
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Označení typu instance při zřizování aplikace Talent
 
-Při zřizování nové instance aplikace Talent můžete označit, zda je typem instance **Produkční** nebo **Sandbox**, což umožňuje včasné testování nových funkcí. Všechny existující instance aplikace Talent budou aktualizovány na typ instance **Produkční**. Chcete-li, aby byla jedna z existujících instancí aktualizována na typu instance **Sandbox**, obraťte se na [podporu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) a inicializujte požadavek na změnu.
+Při zřizování nové instance aplikace Talent můžete označit, zda je typem instance **Produkční** nebo **Sandbox**, což umožňuje včasné testování nových funkcí. Všechny existující instance aplikace Talent budou aktualizovány na typ instance **Produkční**. Chcete-li, aby byla jedna z existujících instancí aktualizována na typu instance **Sandbox**, obraťte se na [podporu](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) a inicializujte požadavek na změnu.
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Podpora entity Common Data Service pro vlastní pole
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 32eb177da53ffa4cf8ecdc73a93e88f30778f69c
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 7c474b0ba40db238db33cfa45ddde55cd0724a9b
+ms.sourcegitcommit: f5556189a80ad9f23f1af3333837eae034ddb247
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729768"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "1791969"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-02-2019"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 for Talent (2. července 2019)
 
@@ -37,13 +37,18 @@ Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Micros
 
 Nyní můžete konfigurovat nastavení e-mailu tak, aby e-maily pro kandidáty, tazatele, náborové pracovníky a náborové manažery byly odesílány z účtu e-mailové služby vaší organizace. Další informace naleznete v [Připojení účtu e-mailové služby](./attract-configure-email-settings.md#connect-an-email-service-account).
 
-#### <a name="offer-email-templates"></a>Nabídka šablon e-mailů 
+### <a name="offer-email-templates"></a>Nabídka šablon e-mailů 
 
 Nyní můžete konfigurovat e-mailové šablony vaší organizace pro všechny fáze během přípravy nabídky, schválení a přijetí. Uživatelé mohou buď použít výchozí šablonu, nebo ji před odesláním e-mailu přizpůsobit. Další informace naleznete v tématu [Konfigurace nastavení e-mailové šablony](./attract-configure-email-settings.md#configure-email-template-settings).
 
 ### <a name="candidate-consent-on-application"></a>Souhlas uchazeče na žádosti
 
 Nyní můžete povolit odkaz na podmínky a ujednání pro vaši organizaci. Je-li toto nastavení povoleno, kandidáti musí před odesláním žádostí o práci souhlasit s podmínkami. 
+
+### <a name="coming-soon-in-attract"></a>Již brzy v aplikaci Attract
+#### <a name="job-approvals-appear-on-the-home-page"></a>Schválení práce se zobrazí na domovské stránce
+
+Schválení se zobrazují v části **Schválení** na řídicím panelu. Schvalovatelé mohou zkontrolovat svá schválení v části **Přiřazeno vám**, která zobrazuje ID práce, pracovní pozici, ostatní schvalovatele a datum přiřazení práce. Uživatelé, kteří odesílají práci ke schválení, mohou revidovat své práce v části **Vyžádáno vámi**, která zobrazuje schvalovatele, kteří musí schválit odeslanou práci.
 
 ## <a name="changes-in-onboard"></a>Změny v aplikaci Onboard
 

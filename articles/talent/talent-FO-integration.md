@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617336"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742696"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Nejčastější dotazy týkající se integrace aplikace Dynamics 365 for Talent s Dynamics 365 for Finance and Operations
 
@@ -38,7 +38,7 @@ V případě Attract a Onboard jsou všechna data nativní pro Common Data Servi
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Je možné vytvořit nové mapování bez použití šablon
 
-Šablony jsou počátečním bodem. Můžete vytvořit vlastní šablonu, ale při vytváření projektu integrace je šablona potřeba vždy. Další informace o šablonách integrátoru dat (DI) a projektech naleznete v tématu [Integrace dat v Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+Šablony jsou počátečním bodem. Můžete vytvořit vlastní šablonu, ale při vytváření projektu integrace je šablona potřeba vždy. Další informace o šablonách integrátoru dat (DI) a projektech naleznete v tématu [Integrace dat v Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Lze mapovat finanční dimenze k přenosu mezi aplikacemi Talent and Finance and Operations?
 
@@ -133,7 +133,7 @@ Integrace s aplikací Finance and Operations je proces ve dvou krocích. Nejprve
 
 Pokud se data v Common Data Service nezobrazují požadovaným způsobem, ověřte, že je entita v integraci podporovaná. Pokud chcete zahrnout do Common Data Service další data, bude požadována změna na straně společnosti Microsoft.
 
-Pokud je entita podporovaná a data jsou v Common Data Service k dispozici, ověřte, zda je v integrátoru dat správné mapování. Pokud se mapování integrátoru zdá v pořádně, ověřte, zda jsou úspěšně spuštěné úlohy správy dat. Během zpracování dávkových úloh může dojít k chybám. Další informace o způsobu použití nástroje pro správu dat naleznete v tématu [Správa dat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Pokud je entita podporovaná a data jsou v Common Data Service k dispozici, ověřte, zda je v integrátoru dat správné mapování. Pokud se mapování integrátoru zdá v pořádně, ověřte, zda jsou úspěšně spuštěné úlohy správy dat. Během zpracování dávkových úloh může dojít k chybám. Další informace o způsobu použití nástroje pro správu dat naleznete v tématu [Správa dat](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Údaje o adrese mých zaměstnanců nejdou po importu do aplikace Finance and Operations správné. Co mám dělat?
 
@@ -145,7 +145,7 @@ Při implementaci aplikace Talent ověřte, zda číselné řady v aplikaci Tale
 
 Při vytváření připojení zvolte Dynamics 365 for Finance and Operations (aktuálně v náhledu) a Common Data Service.
 
-## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Při synchronizaci zaměstnání se zobrazují chyby "CompanyInfo_FK neexistuje" nebo "Hodnota 31/12 a 2154 23:59:59: 00 ' v poli Koncové datum zaměstnání nebyla nalezena v související tabulce"Zaměstnání"." Co mám dělat?
+## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Při synchronizaci zaměstnání se zobrazují chyby "CompanyInfo_FK neexistuje" nebo "Hodnota 31/12 a 2154 23:59:59: 00 ' v poli Koncové datum zaměstnání nebyla nalezena v související tabulce"Zaměstnání"." Co mám dělat?
 
 Mapujte na správné právnické osoby. Synchronizace právnické osoby není součástí výchozí šablony, takže se očekává, že každá právnická osoba přítomná v aplikacích Talent a Common Data Service je dostupná také v aplikaci Finance and Operations.
 Dále také vyberte správné právnické osoby pro přidruženou sadu připojení.
@@ -160,12 +160,12 @@ Aktualizujte entity dat v aplikaci Finance and Operations v části **Správa da
 
 - Integrátor dat (Di): 
 
-  - [Integrace dat do Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Integrace dat do Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
-  - [Správa chyb a řešení problémů integrátoru dat](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+  - [Správa chyb a řešení problémů integrátoru dat](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Odpovídání na požadavky DSR u systémem generovaných protokolů v Microsoft Flow a Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Odpovídání na požadavky DSR u systémem generovaných protokolů v Microsoft Flow a Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Správa dat:
 
-  - [Správa dat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Správa dat](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)

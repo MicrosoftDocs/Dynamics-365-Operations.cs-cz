@@ -17,42 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 9c27d1810a89ed7d7a7745e41c5f118dbdfe5dda
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 936ff85a4dabb715cb83b875a5c58c9fb7a0ac26
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590475"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739810"
 ---
-# <a name="post-jobs-to-external-career-sites-from-attract"></a>Publikování pracovních míst z aplikace Attract na externí weby
+# <a name="post-jobs-to-broadbean"></a>Publikování pracovních míst na Broadbean
 
 [!include [banner](../includes/banner.md)]
 
-Chcete dostat své otevřené pozice před co největší množství kvalifikovaných kandidátů. Náborové weby, například Broadbean, vám pomohou dosáhnout tohoto cíle. Microsoft Dynamics 365 Talent: Attract vám nyní umožní publikovat pracovní místa na Broadbean a Microsoft neustále v této oblasti poskytuje nové nabídky.
+Microsoft Dynamics 365 for Talent: Attract vám pomůže získat talenty, které potřebujete, a to tak, že vám umožnít publilkovat pracovní místa přímo z Attract na Broadbean. Po [vytvoření pracovního místa](./creating-jobs-attract.md) stačí vybrat tlačítko, které přivede vaši pracovní pozici k očím tisíců možných kandidátů na pracovní pozici ve službě Broadbean.
+
+Zveřejňování pracovních míst ve službě Broadbean vyžaduje příslušnou licenci Broadbean. Broadbean nabízí různé produkty a plány. Další informace o licencování a cenách ve službě Broadbean [vám poskytne společnost Broadbean](https://www.broadbean.com/contact-us/).
+
+Pokud jste správce, který potřebuje více informací o postupu konfigurace integrace Broadbean s Attract, získáte informace v části [Zadání nastavení pro externí pracovní vývěsky](./attract-admin-job-board-settings.md).
 
 ## <a name="post-jobs-to-broadbean"></a>Publikování pracovních míst na Broadbean
-
-Před publikováním pracovních míst na Broadbean musíte nakonfigurovat integraci Broadbean.
-
-> [!NOTE]
-> - Chcete-li publikovat pracovní místa na externí weby, musíte mít [doplněk komplexního náboru](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Chcete-li publikovat práce do služby Broadbean prostřednictvím aplikace Attract, musíte mít předplatné Broadbean.
-> - Tato funkce je aktuálně v náhledu Pokud chcete provést akci, musíte [ji zapnout v nastavení pro správu Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
-
-### <a name="configure-broadbean-integration"></a>Konfigurace integrace s Broadbean
-
-1. Přihlaste se do aplikace Attract jako správce.
-2. Zvolte tlačítko **Nastavení** tlačítko (symbol ozubeného kola) v pravém horním rohu stránky a vyberte **Centrum pro správu**.
-3. Na kartě **Nastavení pracovní vývěsky** v části **Povolit integraci s Broadbean** zapněte integraci.
-4. Kontaktujte Broadbean a zadejte informace do **uživatelského jména, ID klienta a tokenu šifrování**.
-
-> [!WARNING]
-> Vaše přihlašovací údaje do Broadbean jsou citlivé a důvěrné. Proto je uchovávejte a sdílejte zodpovědně. Tyto údaje může zobrazit kdokoli, kdo má roli správce v aplikaci Attract.
-
-> [!NOTE]
-> Společnost Microsoft a Attract nejsou zahrnuty při vytváření a údržbě těchto hodnot. Je to vaše zodpovědnost udržovat je v aktuálním stavu v aplikaci Attract a pracovat s Broadbeanem na řešení problémů, které se týkají vašich přihlašovacích údajů.
-
-### <a name="post-a-job-to-broadbean"></a>Publikování pracovního místa na Broadbean
 
 Po zapnutí Broadbean mohou náboroví pracovníci a správci na tomto webu publikovat pracovní místo. Pro úlohu musíte mít adresu URL žádosti.
 
@@ -80,7 +62,7 @@ Po úspěšném dokončení publikace na Broadbeanu zobrazí část práce **Pub
 Po publikování pracovního místa ho můžete zobrazit z aplikace Attract.
 
 1. V aplikaci Attract otevřete práci, kterou chcete zobrazit na Broadbeanu.
-2. V části **Publikování** zvolte tlačítko s třemi tečkami (**...**), které odpovídá Broadbeanu, a poté vyberte **Zobrazit**.
+2. Na kartě **Publikování** vyberte tlačítko s třemi tečkami (**...**), které odpovídá Broadbeanu, a poté vyberte **Zobrazit**.
 
 Publikování pracovního místa na Broadbeanu se zobrazí v novém okně.
 
@@ -107,10 +89,16 @@ Můžete odstranit publikované pracovní místo z Broadbeanu podle potřeby.
 
 Poté, co Broadbean odebere práci, bude mít položka Broadbean v aplikaci Attract tlačítko **Publikovat nyní**. Přítomnost tohoto tlačítka označuje, že práce byla odstraněna a lze ji znovu publikovat.
 
-### <a name="troubleshoot-the-broadbean-integration"></a>Řešení problémů s integrací s Broadbean
+### <a name="troubleshoot-job-posting-to-broadbean"></a>Poradce při potížích se zveřejňováním pracovních nabídek ve službě Broadbean
 
 Pokud máte problémy s publikováním pracovního místa na Broadbean, vyzkoušejte následující kroky.
 
 1. Ověřte, zda jsou přihlašovací údaje Broadbean, které jste zadali v aplikaci Attract, platné a správné.
 2. Pokud jsou přihlašovací údaje platné a správné, kontaktujte [Broadbean podporu](https://www.broadbean.com/resources/support/).
 3. Pokud problém přetrvává, obraťte se na [podporu společnosti Microsoft](./talent-support.md).
+
+## <a name="see-also"></a>Viz také
+
+[Vytvoření prací](./creating-jobs-attract.md)
+
+[Zadání nastavení pro externí pracovní vývěsky](./attract-admin-job-board-settings.md)

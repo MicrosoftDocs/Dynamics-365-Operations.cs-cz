@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
+ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577788"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1781435"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Rozšíření aplikace Talent pomocí PowerApps a Microsoft Flow - příkladové scénáře
 
@@ -101,24 +101,15 @@ Tuto šablonu lze rozšířit, aby ji bylo možné použít pro všechny scéná
 
 Chcete-li stáhnout šablonu **Tok - Integrace SharePoint**, přejděte na [Tok - Integrace SharePoint](https://go.microsoft.com/fwlink/?linkid=2082109) v Microsoft Download Center.
 
-## <a name="admin-console-to-manage-talent-pools"></a>Konzola správce pro správu skupin talentů
+## <a name="referral-app"></a>Referenční aplikace
+Pomocí Referenční aplikace můžete přidat kandidáty do sdílené skupiny talentů. Poskytovatel reference může zadat **Křestní jméno**, **Příjmení**, **E-mail** a **Adresa URL LinkedIn** při odesílání uchazeče. Zdrojová metadata kandidáta jsou poté naplněna informacemi o poskytovateli reference.
 
-Když povolíte integraci se službou LinkedIn, Attract automaticky vytvoří skupinu talentů LinkedIn. Když náborový pracovník vymění InMail za nábor prostřednictvím služby LinkedIn, Attract vytvoří profil a nábor se stane členem skupiny talentu LinkedIn. Tato aplikace PowerApps je užitečná pro reorganizaci kandidátů ve skupinách talentů na základě dovedností.
+Tuto aplikaci můžete vložit do samoobsluhy zaměstnanců (ESS) pro odesílání poskytovatelů reference nebo ji můžete použít jako hypertextový odkaz na podnikovém portálu a spustit jako samostatnou aplikaci.
 
-Spusťte tuto aplikaci PowerApps jako konzolu správce, která provede následující úkoly:
-
-- Uvede seznam kandidátů ve skupině talentů
-- Přidá a odstraní kandidáty ze skupiny talentů
-- Přesune kandidáty z jedné skupiny talentů do druhé
-- Určí, zda kandidáti jsou již součástí skupiny talentů před jejich přesunutím
-- Ověří dovednosti kandidátů před jejich přesunutím do jiných skupin talentů
-
-Tato aplikace PowerApps používá vztahy N:N, takže ji můžete použít jako šablonu pro jiné scénáře, kde potřebujete extrahovat záznamy, které mají vztahy N:N.
-
-Chcete-li stáhnout šablonu **Konzola správce pro správu skupin talentů**, přejděte na [Konzola správce pro správu skupin talentů](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) v Microsoft Download Center.
+Chcete-li stáhnout **Referenční aplikaci**, přejděte na [Řešení rozšiřitelnosti Dynamics 365 for Talent: Referenční aplikace](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) na webu Microsoft Download Center. Chcete-li přidat další funkce, můžete tuto aplikaci importovat a přizpůsobit ji.
 
 ## <a name="additional-resources"></a>Další zdroje
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
 
-[Migrace aplikace mezi klienty a prostředími](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
+[Migrace aplikace mezi klienty a prostředími](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
