@@ -1,6 +1,6 @@
 ---
-title: Zajištění zdrojů uchazečů s využitím fondů talentů
-description: Toto téma vysvětluje, jak vytvořit a nastavit fondy talentů v aplikaci Attract.
+title: Zazdrojování kandidátů se skupinami talentů v Microsoft Dynamics 365 for Talent - Attract
+description: Toto téma vysvětluje, jak vytvořit a nastavit skupiny talentů v aplikaci Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/28/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
-ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
+ms.openlocfilehash: 98b93f69c4f4c8ca6c9a0fc2530578afed4b967c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "1711287"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741860"
 ---
-# <a name="source-candidates-by-using-talent-pools"></a>Zajištění zdrojů uchazečů s využitím fondů talentů
+# <a name="source-candidates-with-talent-pools"></a>Zazdrojování kandidátů se skupinami talentů
 
 [!include[banner](../includes/banner.md)]
 
@@ -79,7 +79,7 @@ Vlastník a přispěvatelé do fondu majetku mohou přidávat uchazeče do fondu
 ## <a name="search-and-view-candidate-profiles"></a>Vyhledání a zobrazení profilů uchazeče
 
 > [!NOTE] 
-> Tato funkce je aktuálně v náhledu Pokud chcete provést akci, musíte [ji zapnout v nastavení pro správu Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> Tato funkce je aktuálně v náhledu Pokud chcete provést akci, musíte [ji zapnout v nastavení pro správu Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). 
 
 Fondy talentů vám umožňují zobrazit profil uchazeče, informace ve službě LinkedIn, související dokumenty a historii žádosti. Můžete prohledávat celou databázi všech uchazečů, kteří jsou přidáni do libovolné skupiny uchazečů, včetně uzavřených a aktivních uchazečů.
 
@@ -116,7 +116,7 @@ Všichni uživatelé mají společný pohled na profily uchazečů. Na kartě **
 
     Pokud chcete zobrazit dokument, vyberte název dokumentu ze seznamu dokumentů. Můžete zobrazit dokumenty Microsoft Word v aplikaci pomocí Microsoft Office 365. Také můžete stáhnout dokumenty do místního počítače pomocí možnosti **Stáhnout** pro každý dokument.
 
-- Karta **LinkedIn** ukazuje informace z webu LinkedIn. Pokud chcete tuto kartu použít, je nutné připojit účet LinkedIn v nastavení uživatele a je nutné navázat připojení k programu LinkedIn Recruiter. Další informace naleznete v tématu [Zajištění zdrojů z programu LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+- Karta **LinkedIn** ukazuje informace z webu LinkedIn. Pokud chcete tuto kartu použít, je nutné připojit účet LinkedIn v nastavení uživatele a je nutné navázat připojení k programu LinkedIn Recruiter. Další informace naleznete v tématu [Zajištění zdrojů z programu LinkedIn Recruiter](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Pouze uchazeči mohou aktualizovat své dovednosti, historii vzdělání a pracovní zkušenosti.

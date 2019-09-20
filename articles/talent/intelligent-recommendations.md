@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620613"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741745"
 ---
 # <a name="intelligent-recommendations"></a>Chytrá doporučení
 
@@ -32,7 +32,7 @@ ms.locfileid: "1620613"
 Strojové učení může pomoci náborovým pracovníkům a náborovým manažerům k rychlé identifikaci nejlepších kandidátů na pozici. Také může pomoci potenciálním uchazečům najít pozici, která nejlépe odpovídá jejich profilu a zájmům. Když se tyto funkce používají a poskytuje se zpětná vazba, doporučení se zdokonalují.
 
 > [!NOTE] 
-> - Funkce chytrých doporučení jsou k dispozici pouze [s doplňkem Komplexní nábor](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Funkce chytrých doporučení jsou k dispozici pouze [s doplňkem Komplexní nábor](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 > - Funkce pojednávaná v tomto tématu je k dispozici jako součást verze Preview. Obsah a funkce se mohou změnit. Chcete-li použít tuto funkci, požádejte správce o její povolení pomocí **Centrum pro správu** v aplikaci Attract. Nastavte **Doporučení kandidáta**, **Doporučení práce** a **Doporučení potenciálního uchazeče** na **Zapnuto**. Další informace naleznete v tématu [Přístup k funkcím Preview v aplikaci Talent](./access-preview-feature.md). 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7e00a6e4fc01f72e1ef2347e08754997135215ed
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8e7348a515b08523c15aa8f74d5616a3daf645b7
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517540"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741791"
 ---
 # <a name="reporting-options-in-talent"></a>Možnosti vykazování v aplikaci Talent
 
@@ -42,7 +42,7 @@ Uživatel nemůže přizpůsobit integrované sestavy Microsoft Power BI.
 
 **Řešení**
 
-- Data aplikace Core HR, která přechází do Common Data Service, lze dále vykazovat prostřednictvím konektoru PowerApps Common Data Service do Power BI Desktop. Všimněte si, že Common Data Service obsahuje podmnožinu dat aplikace Core HR. Další informace o Power BI a řídicích panelech uvádí téma [Vytváření sestav a řídicích panelů Power BI pomocí PowerApps Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi).
+- Data aplikace Core HR, která přechází do Common Data Service, lze dále vykazovat prostřednictvím konektoru PowerApps Common Data Service do Power BI Desktop. Všimněte si, že Common Data Service obsahuje podmnožinu dat aplikace Core HR. Další informace o Power BI a řídicích panelech uvádí téma [Vytváření sestav a řídicích panelů Power BI pomocí PowerApps Common Data Service](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi).
 - Elektronické výkaznictví je k dispozici pro některé sestavy v aplikaci Talent. Přizpůsobení požadované zákazníky lze provádět pomocí možností konfigurace elektronického výkaznictví.
 - Data lze exportovat do aplikace Microsoft Excel nebo Microsoft Word pomocí různých datových entit, které aplikace Talent nabízí prostřednictvím integrace s Microsoft Office.
 

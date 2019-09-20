@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d69294b64c841c5486d694b129cf6c0f26fd93fd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d316aff83bd9f60f054a970e223777db5e214adb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517534"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741615"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-20-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (20. března 2019)
 
@@ -46,7 +46,7 @@ Pokud kandidát zapomněl přihlašovací údaje, které používal pro žádost
 Byl vyřešen problém, kdy externí uchazeči mohli vidět jméno náborového pracovníka nebo náborového manažera. Nyní mohou vidět členy náborového týmu u práce pouze interní kandidáti. Je rovněž snazší pro interní kandidáty zobrazit pouze interní páce a zažádat o ně. Pokud se kandidát pokusí o přístup k odkazu na zobrazení nebo žádost o interní práci, je nucen se ověřit pomocí přihlašovacích údajů služby Azure Active Directory. Interní kandidáti mají také možnost kontaktovat člena náborového týmu a projevit zájem o práci nebo se o ní dozvědět více. Tato možnost je k dispozici pro všechny práce pro pouze interní kandidáty. Další informace naleznete v tématu [Funkce kariérního webu v aplikaci Attract](./career-site.md).
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Označení druhých v pořadí pro přiřazení vysoce ceněných žadatelů pro budoucí práce
-Náboroví pracovníci a náboroví manažeři si často udržují aktuální seznam žadatelů, kteří byli vhodnými kandidáty na pozici, ale nemohli dostat nabídku, protože pozice byla již obsazena. Tito uchazeči, označovaní jako druzí v pořadí, jsou užiteční, protože při příštím náboru, když se otevře podobná pozice, mohou snížit dobu potřebnou k přijetí. Attract nyní umožňuje náborovým pracovníkům a náborovým manažerům určit druhé v pořadí na seznamu uchazečů, pokud uchazeč prošel do fáze nabídky. Určení druhých v pořadí se zobrazí na seznamu uchazečů o práci, ale rovněž v zobrazení skupiny talentů, když jsou tito uchazeči členy jakýchkoliv skupin náborových pracovníků nebo náborových manažerů. Kromě toho se toto označení objeví v historii práce jako součást profilu skupiny talentů kandidáta. Tuto funkci můžete vyzkoušet v náhledu, když ji zapne správce pomocí [Správy funkcí v centru pro správu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature).
+Náboroví pracovníci a náboroví manažeři si často udržují aktuální seznam žadatelů, kteří byli vhodnými kandidáty na pozici, ale nemohli dostat nabídku, protože pozice byla již obsazena. Tito uchazeči, označovaní jako druzí v pořadí, jsou užiteční, protože při příštím náboru, když se otevře podobná pozice, mohou snížit dobu potřebnou k přijetí. Attract nyní umožňuje náborovým pracovníkům a náborovým manažerům určit druhé v pořadí na seznamu uchazečů, pokud uchazeč prošel do fáze nabídky. Určení druhých v pořadí se zobrazí na seznamu uchazečů o práci, ale rovněž v zobrazení skupiny talentů, když jsou tito uchazeči členy jakýchkoliv skupin náborových pracovníků nebo náborových manažerů. Kromě toho se toto označení objeví v historii práce jako součást profilu skupiny talentů kandidáta. Tuto funkci můžete vyzkoušet v náhledu, když ji zapne správce pomocí [Správy funkcí v centru pro správu](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 ### <a name="add-applicants-to-talent-pools"></a>Přidání uchazečů do skupin talentů
 Nyní je snazší přidat uchazeče do skupin talentů vytvořením nové akce v seznamu uchazečů. Výběrem ikony **Přidat do skupiny talentů** si mohou náboroví pracovníci nebo manažeři vybírat ze svého seznamu skupin talentů a snadno přidávat uchazeče do skupin talentů přímo ze seznamu uchazečů o práci.
@@ -58,7 +58,7 @@ Na základě zpětné vazby od zákazníků mohou nyní náboráři konfigurovat
 Kandidáti, kteří již mají svůj aktuální profil na LinkedIn, se mohou ucházet o pracovní místa jedním kliknutím pomocí tohoto profilu.
 
 ### <a name="track-how-a-candidate-profile-originated-in-the-system-and-where-your-applicants-discover-the-jobs-they-applied-for"></a>Sledujte, jak profil uchazeče vznikl v systému a kde vaši uchazeči naleznou pracovní místa, o která požádali
-Nyní se můžete dozvědět, jak profil konkrétního kandidáta vznikl v systému Attract, a to tak, že se podíváte na zdroj profilu v podrobnostech kandidáta na stránce **Profil** žádosti nebo profilu skupiny talentu. Podobně můžete zjistit, jak každý uchazeč nalezl práci, a to tak, že se podíváte na zdroj žádosti uvedený v **Aktivitě žádosti** v kanálu aktivity žádosti. Tyto informace jsou také k dispozici v historii práce v profilu skupiny talentů. Když náboroví pracovníci nebo manažeři přidávají kandidáty ručně, budou také vyzváni k určení zdroje žádosti nebo profilu kandidáta. Pokud kandidát žádá poprvé, bude jeho zdroj profilu stejný jako původ jeho žádosti. Tuto funkci můžete vyzkoušet v náhledu, když ji zapne správce pomocí [Správy funkcí v centru pro správu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). Mějte na paměti, že existující kandidáti a uchazeči nebudou mít žádnou informaci o zdroji. Náboroví pracovníci však mohou tyto údaje přidat ručně.
+Nyní se můžete dozvědět, jak profil konkrétního kandidáta vznikl v systému Attract, a to tak, že se podíváte na zdroj profilu v podrobnostech kandidáta na stránce **Profil** žádosti nebo profilu skupiny talentu. Podobně můžete zjistit, jak každý uchazeč nalezl práci, a to tak, že se podíváte na zdroj žádosti uvedený v **Aktivitě žádosti** v kanálu aktivity žádosti. Tyto informace jsou také k dispozici v historii práce v profilu skupiny talentů. Když náboroví pracovníci nebo manažeři přidávají kandidáty ručně, budou také vyzváni k určení zdroje žádosti nebo profilu kandidáta. Pokud kandidát žádá poprvé, bude jeho zdroj profilu stejný jako původ jeho žádosti. Tuto funkci můžete vyzkoušet v náhledu, když ji zapne správce pomocí [Správy funkcí v centru pro správu](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). Mějte na paměti, že existující kandidáti a uchazeči nebudou mít žádnou informaci o zdroji. Náboroví pracovníci však mohou tyto údaje přidat ručně.
 
 ## <a name="changes-in-onboard"></a>Změny v aplikaci Onboard
 

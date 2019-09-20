@@ -1,9 +1,9 @@
 ---
-title: Vytvoření zaškolení, které zaujme
-description: Když je zaškolení provedeno dobře, pomůže novým zaměstnancům vytvářet pocit, že patří k nové organizaci.
+title: Začínáme s aplikací Onboard
+description: Toto téma vám pomůže začít pracovat s aplikací Microsoft Dynamics 365 for Talent - Onboard. Onboard pomáhá vašim novým zaměstnancům úspěšně začít tím, že jim přiřadí průvodce, který je hladce provede procesem zaškolení.
 author: andreabichsel
 manager: ''
-ms.date: 11/14/2017
+ms.date: 06/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -16,77 +16,36 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 805f74a0cf618254b7d5fb9a1195dc75832dc0ca
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6526f320be7d18af92406149633b3e15d0be2291
+ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517487"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1731206"
 ---
-# <a name="create-an-engaging-onboarding-experience"></a>Vytvoření zaškolení, které zaujme
+# <a name="get-started-with-onboard"></a>Začínáme s aplikací Onboard
 
 [!include [banner](includes/banner.md)]
 
-Je-li provedeno efektivně, pomáhá zaškolení nových zaměstnanců jejich efektivnějším výkonům a noví zaměstnanci získají pocit, že do své nové role patří. Zaškolení pomůže novým zaměstnancům přesněji a rychleji pochopit svou roli, než by tomu bylo v opačném případě, a vytvořit si hned od začátku vztahy, které jim pomohou uspět. Zkušenost s neefektivním zaškolení může naopak vést zaměstnance k pochybám, zda se stát součástí vaší organizace. Studie Gartner z roku 2014 zjistila, že téměř třetina z 1 005 respondentů, kteří opustili své zaměstnání během prvních šesti měsíců, tak učinili proto, že jim nebyly jasné pokyny, které dostávali od svého vedení, jejich zaškolení bylo neefektivní nebo proto, že si ve svém novém prostředí nevytvořili potřebné vztahy.
+Pomocí aplikace Microsoft Dynamics 365 for Talent: Onboard můžete svým novým zaměstnancům pomoci pracovat efektivněji a získat pocit, že do své nové role patří. Účinný proces zaškolení pomáhá novým zaměstnancům porozumět svým novým rolím. Rovněž jim dává náskok k navázání cenných vztahů, které jim pomohou zajistit úspěch.
 
-## <a name="have-an-onboarding-program-in-place"></a>Mějte k dispozici program zaškolení
-Je třeba pochopit, jak a kde lze vylepšit proces zaškolení. Následující otázky vám mohou pomoci analyzovat a zlepšit proces zaškolení systematickým způsobem.
+Proces zaškolení vám umožní rychle vytvořit průvosce zaškolením, který bude vítat nové zaměstnane dodá jim nadšení z připojení se k vaší organizaci.
 
-- Jaká je vaše míra odcházejících zaměstnanců?
-- Dokončují noví zaměstnanci úspěšně všechny požadované úlohy během procesu zaškolení?
-- Jak dlouho trvá novému zaměstnanci, než se plně zapojí do své práce?
-- Jak hodnotí noví zaměstnanci svou spokojenost?
+[![Průvodce zaškolením](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)
 
-Nečekejte se zaškolením až na první zaměstnancův den. Zaškolení by mělo začít v okamžiku, kdy váš nový zaměstnance zná datum nástupu. Tomu se často říká příprava na zaškolení. Máte možnost udržet zaměstnance nadšeného ze své volby nastoupit do vaší organizace, rozvíjet vztahy a ukázat hodnoty a kulturu vaší společnosti.
+Informace o tom, jak získat a používat aplikaci Onboard, naleznete v následujících tématech:
 
-Jednou z nejdůležitějších činností při přípravě zaškolení je příprava nového zaměstnance na jeho první pracovní den. Tento den pro ně může být náročný. Snižte jejich stres a vytvořte agendu a kontrolní seznam pro jejich první den.
+- [Získání aplikace Onboard](./onboard-get-app.md)
+- [Vytvoření průvodce zaškolení](./onboard-create-guide.md)
+- [Vytvoření šablony zaškolení](./onboard-create-template.md)
+- [Úprava průvodců a šablon zaškolení](./onboard-edit-guides-templates.md)
+- [Sdílení obsahu s jinými přispěvateli](./onboard-share-template.md)
+- [Zobrazit stav úkolů a zaškolení zaměstnanců](./onboard-view-status.md)
+- [Vytvořit náborové týmy v Onboard](./onboard-create-team.md)
 
-### <a name="what-to-include-in-a-checklist"></a>Co má být zahrnuto v kontrolním seznamu
+## <a name="see-also"></a>Viz také
 
-- Co si s sebou přinést, jako například občanský průkaz a bankovní údaje.
-- Kodex oblékání, pokud ho vaše společnost vyžaduje.
-- Jak se dostat do kanceláře.
-- Jméno kontaktní osoby nebo ještě lépe jeho průvodce zaškolením.
-- Příručky a zásady společnosti, které si musí nastudovat.
-
-**Bonus**
-
-- Pošlete jim nějaký reklamní předmět své společnosti, jako například tričko nebo hrneček.
-- Odešlete jim video zprávu od týmu s uvítáním do společnosti.
-- Nezapomeňte na individuální uvítání generálním ředitelem nebo jiným vedoucím pracovníkem.
-- Postarejte se, ať na svůj první den nezapomenou.
-
-Nedopusťte, aby nový zaměstnanec kvůli špatnému dojmu ze svého prvního dne nezačal zpochybňovat své rozhodnutí nastoupit do společnosti.
-
-## <a name="create-a-good-first-impression"></a>Vytvoření dobrého prvního dojmu
-
-Vytvořit agendu pro první den a nasdílejte ji s novým zaměstnancem. Nesoustřeďte se pouze na první schůzku. Ujistěte se, že se nebudou nudit, představte je kolegům a proveďte je po pracovišti. Informujte další zaměstnance. Dejte jim vědět, že do společnosti nastoupil někdo nový. Nevynechejte zaměstnance v IT oddělení, v mzdovém oddělení a dalších administrativních odděleních. Ujistěte se, že má nový zaměstnanec pro svůj začátek vše, co potřebuje. To znamená pracovní místo, počítač a požadované přihlašovací údaje, software a nástroje. Místo papírování se soustřeďte na vztahy.
-
-Vztahy jsou klíčovým prvkem při začlenění nového zaměstnance. Ba co víc, pomáhají vytvořit pocit sounáležitosti a toho, že zaměstnanec se stává součástí vaší společnosti.
-
-- Najděte ve své společnosti odborníka, který se stane poradcem nového zaměstnance.
-- Zapojte nově přijaté zaměstnance do komunit souvisejících s prací nebo do zájmových skupin. To je ideální příležitost, jak najít školitele nebo mentory.
-- Nasdílejte profily členů týmu (v ideálním případě předem), aby se urychlila komunikace a sdílení znalostí.
-- Nezapomeňte na sociální komunity nebo události, které jsou ve shodě s osobními cíli daného zaměstnance.
-
-## <a name="provide-training"></a>Poskytnutí školení
-
-Dejte novému zaměstnanci důvěru a nástroje, které potřebuje k tomu, aby byl úspěšný. Začněte s tím, že jasně definujete jejich zodpovědnosti a nastavíte způsoby, jakými lze dosáhnout vašich očekávání. Dále vytvořte plán školení, který se zaměřuje na dovednosti, které jsou nutné ke splnění vašich očekávání. Nesoustřeďte se pouze na školení založená na dodržování předpisů.
-
-## <a name="set-clear-milestones"></a>Nastavení srozumitelných milníků
-
-Nastavte jasná kritéria a způsob hodnotící komunikace mezi vámi a vaším novým zaměstnancem. Vytvořte co nejvíce příležitostí k tomu, abyste mohli správně zasáhnout a zaměstnance patřičně směrovat. Jistě stojíte o to potíže řešit, než se z nich stanou velké problémy, nebo v horším případě dojde ke ztrátě zaměstnance.
-
-Naplánovat individuální schůzku s novým zaměstnancem před skončením jejich prvního týdne. To je ideálním doba pro debatu o očekáváních, pracovním stylu a kariérním růstu.
-
-Definujte cíle na 30, 60 a 90 dnů pro nejnovější členy týmu. Po nastavení cílů pravidelně kontrolujte jejich průběh a sledujte jejich plnění.
-
-## <a name="measure-and-optimize"></a>Měření a optimalizace
-
-Když zavádíte nový program zaškolení, věnujte zvýšenou pozornost následujícím otázkám. 
-
-- Vylepšujete míru odcházejících zaměstnanců?
-- Zvyšuje se mezi nově přijatými zaměstnanci spokojenost? 
-
-Měřte tyto údaje a provádějte s každým novým zaměstnancem drobná zlepšení.
-
+- [Vyzkoušejte nebo kupte aplikaci Onboard](https://dynamics.microsoft.com/talent/onboard/)
+- [Novinky](./whats-new.md)
+- [Poznámky k verzi](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Zskejte podporu](./talent-support.md)

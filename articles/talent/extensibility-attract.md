@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichsew
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505857"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795213"
 ---
 # <a name="extensibility-in-attract"></a>Rozšiřitelnost v aplikaci Attract
 
@@ -33,7 +33,7 @@ Aplikace Microsoft Dynamics 365 for Talent je vytvořena na platformě Common Da
 
 ## <a name="extending-option-sets-in-attract"></a>Rozšíření sad možností v aplikaci Attract
 
-**Sada možností** (rozevírací seznam) je typem pole, který může být zahrnut do entity. Definuje sadu možností. Když se sada možností zobrazí ve formuláři, používá ovládací prvek rozevíracího seznamu.  V aplikaci Attract existuje více polí, která jsou sadami možností.  Začínáme zavádět funkce pro rozšíření sad možností, počínaje polem Důvodu zamítnutí, polem Typ zaměstnání a polem Typ služebního věku.   Můžete také přidat lokalizované zobrazované popisky možnosti, které přidáte. Další informace naleznete v tématu [Přizpůsobení popisků sady možností](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
+**Sada možností** (rozevírací seznam) je typem pole, který může být zahrnut do entity. Definuje sadu možností. Když se sada možností zobrazí ve formuláři, používá ovládací prvek rozevíracího seznamu.  V aplikaci Attract existuje více polí, která jsou sadami možností.  Začínáme zavádět funkce pro rozšíření sad možností, počínaje polem Důvodu zamítnutí, polem Typ zaměstnání a polem Typ služebního věku.   Můžete také přidat lokalizované zobrazované popisky možnosti, které přidáte. Další informace naleznete v tématu [Přizpůsobení popisků sady možností](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > Funkce publikování pracovní nabídky na LinkedIn vyžaduje použití polí **Typ zaměstnání** a **Typ služebního věku** na stránce **Podrobnosti práce**. Výchozí hodnoty v těchto polích jsou podporovány službou LinkedIn a jsou zobrazeny při publikování nabídky práce. Proto pokud publikujete nabídku práce na LinkedIn a upravujete existující hodnoty sady možností pro tato pole, práce bude nadále publikována, ale LinkedIn nezobrazí vlastní hodnoty **Typ zaměstnání** a **Typ služebního věku**.  
@@ -62,15 +62,15 @@ Protože se všechna data z aplikace Attract nacházejí v Common Data Service, 
 
 Pomocí PowerApps můžete snadno vytvořit aplikace, které se připojí k datům aplikace Attract a které používají stejné výrazy jako Microsoft Excel. Aplikace, které vytvoříte pomocí PowerApps, můžete spustit na webu a na zařízení Apple iOS a Google Android.
 
-Například můžete zjednodušit univerzitní trhy práce pro náboráře tak, že vytvoříte jednoduchou aplikaci, která jim umožní skenovat životopisy a přiřazovat kandidáty na pozici v aplikaci Attract. Popřípadě můžete vytvořit aplikaci umožňující splnění potřeb organizace na shodu s předpisy. Další informace o PowerApps a způsobu použití pro vytváření aplikací naleznete v části [Integrace dat do Common Data Service](https://docs.microsoft.com/en-us/powerapps).
+Například můžete zjednodušit univerzitní trhy práce pro náboráře tak, že vytvoříte jednoduchou aplikaci, která jim umožní skenovat životopisy a přiřazovat kandidáty na pozici v aplikaci Attract. Popřípadě můžete vytvořit aplikaci umožňující splnění potřeb organizace na shodu s předpisy. Další informace o PowerApps a způsobu použití pro vytváření aplikací naleznete v části [Integrace dat do Common Data Service](https://docs.microsoft.com/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Můžete použít Microsoft Flow pro vytvoření automatizovaných workflow, která běží nad daty aplikace Attract. Můžete se snadno připojit ke stovkám oblíbených aplikací a služeb, aniž by bylo nutné psát kód. Vytvářením toků, které v Common Data Service interagují s entitami Práce, Kandidát a Žádost v aplikaci Attracts můžete automatizovat různé akce. Například když kandidát přijme nabídku, může být náborovému týmu odesláno oznámení, nebo může být oznámena novinka na Twitteru. Další informace o tocích naleznete v [dokumentaci k aplikaci Microsoft Flow](https://docs.microsoft.com/en-us/flow/).
+Můžete použít Microsoft Flow pro vytvoření automatizovaných workflow, která běží nad daty aplikace Attract. Můžete se snadno připojit ke stovkám oblíbených aplikací a služeb, aniž by bylo nutné psát kód. Vytvářením toků, které v Common Data Service interagují s entitami Práce, Kandidát a Žádost v aplikaci Attracts můžete automatizovat různé akce. Například když kandidát přijme nabídku, může být náborovému týmu odesláno oznámení, nebo může být oznámena novinka na Twitteru. Další informace o tocích naleznete v [dokumentaci k aplikaci Microsoft Flow](https://docs.microsoft.com/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
-Power BI vám umožňuje vytvořit a zobrazit vlastní sestavy a řídicí panely, které vám dávají podrobnější přehled o datech v aplikaci Attract. Další informace o Power BI a způsobu vytváření interaktivních sestav a řídicích panelů naleznete v části [Dokumentace k Power BI](https://docs.microsoft.com/en-us/power-bi/).
+Power BI vám umožňuje vytvořit a zobrazit vlastní sestavy a řídicí panely, které vám dávají podrobnější přehled o datech v aplikaci Attract. Další informace o Power BI a způsobu vytváření interaktivních sestav a řídicích panelů naleznete v části [Dokumentace k Power BI](https://docs.microsoft.com/power-bi/).
 
 ### <a name="custom-activities"></a>Custom activities 
 

@@ -3,7 +3,7 @@ title: Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Attr
 description: Toto téma popisuje prvky pracovního místa v aplikaci Attract. Také vysvětluje, jakým způsobem vytvořit pracovní místo.
 author: hasrivas
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
+ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517508"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "1773242"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Attract
+# <a name="create-a-job"></a>Vytvoření práce
 
 [!include [banner](includes/banner.md)]
 
@@ -81,33 +81,6 @@ Další informace o nabídce volných pracovních míst naleznete v tématu [Fun
 > [!NOTE]
 > Funkce zveřejnění nabídky volných míst je k dispozici pouze s doplňkem Comprehensive Hiring pro systém Attract.
 
-### <a name="posting-jobs-to-linkedin"></a>Publikování pracovních nabídek na LinkedIn 
-
-Před publikováním pracovní nabídky z aplikace Attract na LinkedIn musí správce přidat ID společnosti LinkedIn a název společnosti LinkedIn v **Nastavení pro správu**. ID společnosti LinkedIn je vyžadováno, aby se zajistilo, že vaše práce publikované z aplikace Attract jsou namapovány na správnou stránku společnosti.
-
-Vaše ID společnosti ve službě LinkedIn je řetězec čísel, který jednoznačně identifikuje vaši společnost na službě LinkedIn. Další informace o vyhledávání ID společnosti na službe LinkedIn naleznete na [webu LinkedIn](https://aka.ms/findID).
-
-Pokud chcete vaši společnost na službě LinkedIn, vyberte **Centrum pro správu** v nabídce **Nastavení**  (symbol ozubeného kola) a pak vyberte kartu **Integrace LinkedIn** . Ve části **připojení ke službě LinkedIn** zadejte ID a název společnosti na službě LinkedIn a uložte nastavení.
-
-> [!NOTE]
-> Při publikování procesu ve službě LinkedIn je důležité všimnout si čtyř důležitých věcí.
-> 1. Pracovní nabídky publikované ve službě LinkedIn se publikují jako pracovní nabídky s omezeným výpisem. Nelze je propagovat na celém webu LinkedIn. Pokud chcete propagovat pracovní nabídky s omezeným výpisem ve službě LinkedIn z Attract, měli byste spolupracovat s LinkedIn a umožnit sbalení pracovní nabídky. Podrobnější informace získáte z následujících odkazů a může vám je poskytnout podpora společnosti LinkedIn.
->
->    [Omezené seznamy vs. prémiové nabídky volných míst ke sbalení pracovních nabídek](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
->
->    [Časté otázky týkající se sbalení pracovní nabídky](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
->
-> 1. Při publikování pracovních nabídek ve službě LinkedIn Attract předá organizaci Microsoft 365 jméno u pracovní nabídky. LinkedIn propojí volná místa se společností na straně LinkedIn na základě předaného jména organizace. Pokud je vaše nabídka na webu LinkedIn spojená se špatnou společností, ověřte, zda název organizace Microsoft 365 odpovídá názvu společnosti ve službě LinkedIn.  
->
->    [Změna kontaktní adresy a další](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
->
->    Pokud máte po dokončení tohoto kroku potíže, obraťte se na podporu LinkedIn. 
-> 
-> 1. Publikované pracovní nabídky na službě LinkedIn se objeví na živém webu LinkedIn. Neexistuje žádné testovací prostředí pro publikování pracovních pozic na webu LinkedIn. 
->
-> 1. Může trvat až 24 hodin, než se nabídky volných míst publikované ve službě LinkedIn zobrazí uchazečům. Důvodem je současný proces dávkového publikování volných míst službou LinkedIn.
-
-
 ## <a name="activate"></a>Aktivovat
 
 Po aktivaci pracovního místa je možné ho zveřejnit a přidat do něho potenciální zákazníky a uchazeče. Možnost přidání potenciálních zákazníků do nabídky volného místa je nastaven v aktivitě Potenciální zákazník v procesu náboru.
@@ -142,7 +115,7 @@ Pokud uživatel nabídku upraví po schválení, ale neaktivuje ji, bude stav pr
 Osoby, které jsou uvedeny jako schvalovatelé, obdrží upozornění v aplikaci Attract a e-mailovou zprávu s informací, že se mají položku ke schválení.  Schvalující může v e-mailu kliknutím na odkaz práci otevřít, zkontrolovat podrobnosti a schválit ji nebo zamítnout. Po nastavení stavu práce na **Schváleno** nebo **Zamítnuto**, předkladatel bude upozorněn v systému Attract a obdrží e-mail. Schvalující také obdrží e-mailové připomenutí, pokud na žádost o schválení neodpoví do 24 hodin.
 
 > [!NOTE]
-> Můžete vytvořit vlastní e-mailové šablony ke schvalování emailů. Další informace získáte v části [Vytvoření a správa e-mailových šablon](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
+> Můžete vytvořit vlastní e-mailové šablony ke schvalování emailů. Další informace získáte v části [Vytvoření a správa e-mailových šablon](https://docs.microsoft.com/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Vytvoření práce
 
