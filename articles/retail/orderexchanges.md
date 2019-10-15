@@ -1,6 +1,6 @@
 ---
 title: Konfigurace a zpracování výměny u vratek
-description: Toto téma vysvětluje, jak nakonfigurovat výměnu u vratky v aplikaci Microsoft Dynamics 365 for Retail.
+description: Toto téma vysvětluje, jak nakonfigurovat výměnu u vratky v aplikaci Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ce327a918159771df0acab276b1169d2ad77825
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561380"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025372"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurace a zpracování výměny u vratek
 
 [!include [banner](includes/banner.md)]
 
-V předchozích verzích aplikace Microsoft Dynamics 365 for Retail se vrácení proti objednávkám odběratele zpracovávala pomocí dokumentu vratky v modulu Retail Headquarters. Dokument vratky lze však použít pouze pro zpracování produktů, které jsou vráceny. Vrácené produkty jsou označeny negativním množstvím na řádcích vratky. Naopak prodej je označen kladným množstvím. Dokument vratky však nepodporuje kladná množství. Kvůli této limitaci předchozí verze aplikace Retail nepodporovali scénáře, kde dochází k výměně produktu pomocí dokumentu vratky.
+V předchozích verzích aplikace Dynamics 365 Retail se vrácení proti objednávkám odběratele zpracovávala pomocí dokumentu vratky v modulu Retail Headquarters. Dokument vratky lze však použít pouze pro zpracování produktů, které jsou vráceny. Vrácené produkty jsou označeny negativním množstvím na řádcích vratky. Naopak prodej je označen kladným množstvím. Dokument vratky však nepodporuje kladná množství. Kvůli této limitaci předchozí verze aplikace Retail nepodporovali scénáře, kde dochází k výměně produktu pomocí dokumentu vratky.
 
 Byla však přidána funkcionality pro podporu scénářů, kde jsou výměny prováděny u vratek. Retail nyní používá dokument prodejní objednávky namísto dokumentu vratky pro zpracování těchto typů transakcí.
 

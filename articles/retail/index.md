@@ -1,6 +1,6 @@
 ---
-title: Vítejte v Dynamics 365 for Retail
-description: Domovská stránka pro Dynamics 365 for Retail
+title: Zdroje nápovědy pro Dynamics 365 Retail
+description: Domovská stránka pro Dynamics 365 Retail
 author: josaw1
 manager: AnnBe
 ms.date: 08/14/2019
@@ -18,23 +18,26 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
-ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
+ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "1874920"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278099"
 ---
-# <a name="welcome-to-dynamics-365-for-retail"></a>Vítejte v Dynamics 365 for Retail
+# <a name="help-resources-for-dynamics-365-retail"></a>Zdroje nápovědy pro Dynamics 365 Retail
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail je komplexní maloobchodní řešení, které zajišťuje sjednocené obchodování napříč všemi prodejními kanály. Zahrnuje prodeje, mobilitu, zpravodajství a produktivitu, které obchodníkům a pracovníkům pomáhají dosahovat lepších výsledků způsobem využívajícím především cloudová úložiště a mobilní zařízení. Modul Retail nabízí rozsáhlou podporu pro provoz celé řady obchodních procesů, jako jsou možnosti nákupu, skladů a správa prodejních kanálů. Poskytuje také dokonalé zkušenosti uživatelům napříč všemi styčnými body.
-
-> [!NOTE]
-> Dynamics 365 for Retail je úzce spojen s Dynamics 365 for Finance and Operations a Dynamics 365 for Talent. Stejné funkce se mohou objevit ve všech třech produktech. Proto bude v tématech, která primárně souvisí s modulem Retail, název produktu Microsoft Dynamics 365 for Retail. V tématech, která primárně souvisí se základním produktem (Finance and Operations), bude název produktu Microsoft Dynamics 365 for Finance and Operations. V tématech, která primárně souvisí s lidskými zdroji bude název produktu Dynamics 365 for Talent.
+Microsoft Dynamics 365 Retail je komplexní maloobchodní řešení, které zajišťuje sjednocené obchodování napříč všemi prodejními kanály. Zahrnuje prodeje, mobilitu, zpravodajství a produktivitu, které obchodníkům a pracovníkům pomáhají dosahovat lepších výsledků způsobem využívajícím především cloudová úložiště a mobilní zařízení. Modul Retail nabízí rozsáhlou podporu pro provoz celé řady obchodních procesů, jako jsou možnosti nákupu, skladů a správa prodejních kanálů. Poskytuje také dokonalé zkušenosti uživatelům napříč všemi styčnými body.
 
 V levém podokně vyberte funkční oblast, o které se chcete dozvědět více.
+
+## <a name="dynamics-365-commerce-preview"></a>Dynamics 365 Commerce (Preview)
+
+Dynamics 365 Commerce - aplikace vytvořená na prokázaných schopnostech aplikace Dynamics 365 Retail - poskytuje komplexní omnikanálové řešení, které sjednocuje administrativu, obchod, kontaktní středisko a digitální zkušenosti. Commerce je momentálně k dispozici zákazníkům pouze ve verzi Preview. Stávající zákazníci Dynamics 365 Retail budou moci aktualizovat na aplikaci Commerce, jakmile bude obecně dostupná.
+
+Pro více informací o Dynamics 365 Commerce, přejděte na stránku [Zdroje nápovědy pro Dynamics 365 Commerce](../commerce/index.md).
 
 ## <a name="channel-management"></a>Správa kanálu
 
@@ -78,8 +81,8 @@ Budete nastavovat několik komponent k definování vztahů mezi obchodem, POS p
 
 Pokud jste byli požádáni o přizpůsobení vašeho prostředí nebo pokud zodpovídáte za nasazení a údržbu vašeho systému, seznamte se s konkrétním obsahem pro vývojáře a správce aplikace Retail, stejně jako s obecnějším obsahem.
 
-- [Dynamics 365 for Retail pro IT odborníky a vývojáře](dev-itpro/dev-retail-home-page.md)
-- [Vývoj a správa pro Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 Retail pro IT odborníky a vývojáře](dev-itpro/dev-retail-home-page.md)
+- [Vývoj a správa pro Dynamics 365 Finance](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Další zdroje
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurace nákladů pro distribuovanou správu objednávek
-description: Toto téma popisuje konfiguraci nákladů pro funkcionalitu distribuované správy objednávek v aplikaci Microsoft Dynamics 365 for Retail.
+description: Toto téma popisuje konfiguraci nákladů pro funkcionalitu distribuované správy objednávek v aplikaci Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80e7a033467c3d94d55f06daa05f99bd27e19a29
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: b5e3e1997f3d3b61b7b3c7486f5531e386293537
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606772"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019432"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>Konfigurace nákladů pro distribuovanou správu objednávek
 
@@ -31,7 +31,7 @@ ms.locfileid: "1606772"
 
 Organizace zvažují více komponent nákladů, aby určily optimální umístění, odkud se bude plnit objednávka. Některými z těchto komponent nákladů jsou náklady na přepravu, náklady na zpracování a náklady balení. Pro určení místa plnění se vypočítává kombinace těchto nákladů.
 
-Když první iterace správy distribuovaných objednávek v aplikaci Microsoft Dynamics 365 for Retail optimalizovala přiřazení objednávek do míst plnění, byla tato skutečnost zohledněna pouze ve vzdálenosti. Ačkoli vzdálenost může vzájemně souviset s náklady, není totéž jako náklady. Například náklady metody doručení na druhý den stojí více, než doručení na tutéž vzdálenost do tří nebo do sedmi dnů.
+Když první iterace správy distribuovaných objednávek v aplikaci Dynamics 365 Retail optimalizovala přiřazení objednávek do míst plnění, byla tato skutečnost zohledněna pouze ve vzdálenosti. Ačkoli vzdálenost může vzájemně souviset s náklady, není totéž jako náklady. Například náklady metody doručení na druhý den stojí více, než doručení na tutéž vzdálenost do tří nebo do sedmi dnů.
 
 Funkce konfigurace nákladů umožňuje maloobchodníkům definovat a konfigurovat další komponenty nákladů, které budou vypočítány a zohledněny při určování optimálního umístění, odkud se budou plnit řádky objednávky.
 
