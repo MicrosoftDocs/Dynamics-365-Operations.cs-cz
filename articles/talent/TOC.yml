@@ -1,5 +1,5 @@
 - name: Dynamics 365 for Talent
-  href: index.md
+  href: index.yml
   items:
     - name: Začínáme
       items:
@@ -8,6 +8,14 @@
         - name: Co je nového a co se změnilo v aplikaci Talent
           href: whats-new.md
           items:
+            - name: 1. října 2019
+              href: whats-new-talent-october-1-2019.md
+            - name: 17. září 2019
+              href: whats-new-talent-september-17-2019.md
+            - name: 10. září 2019
+              href: whats-new-talent-september-12-2019.md
+            - name: 27. srpna 2019
+              href: whats-new-talent-august-28-2019.md
             - name: 22. srpna 2019
               href: whats-new-talent-august-21-2019.md
             - name: 13. srpna 2019
@@ -24,16 +32,16 @@
               href: whats-new-talent-july-9-2019.md
             - name: 2. července 2019
               href: whats-new-talent-july-2-2019.md
-            - name: 25. června 2019
-              href: whats-new-talent-june-25-2019.md
-            - name: 18. června 2019
-              href: whats-new-talent-june-18-2019.md
-            - name: 11. června 2019
-              href: whats-new-talent-june-11-2019.md
-            - name: 4. června 2019
-              href: whats-new-talent-june-4-2019.md
             - name: Archivy novinek 2019
               items:
+                - name: 25. června 2019
+                  href: whats-new-talent-june-25-2019.md
+                - name: 18. června 2019
+                  href: whats-new-talent-june-18-2019.md
+                - name: 11. června 2019
+                  href: whats-new-talent-june-11-2019.md
+                - name: 4. června 2019
+                  href: whats-new-talent-june-4-2019.md
                 - name: 28. května 2019
                   href: whats-new-talent-may-28-2019.md
                 - name: 21. května 2019
@@ -405,7 +413,7 @@
               href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Rozšiřitelnost
       items:
-        - name: "Integrované Power BI v\_pracovních prostorech"
+        - name: "Power BI Embedded v\_pracovních prostorech"
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Rozšíření aplikace Talent pomocí PowerApps a Microsoft Flow - příkladové scénáře
           href: extensibility-examples.md
@@ -427,6 +435,8 @@
           href: corehr-custom-fields.md
     - name: Řešení potíží s aplikací Talent
       items:
+        - name: Optimalizace výkonu pomocí úloh automatického vyčištění
+          href: talent-batch-history-cleanup.md
         - name: Řešení potíží s publikováním pracovních míst v řešení LinkedIn
           href: attract-troubleshoot-linkedin.md
         - name: Analytické sestavy nejsou aktualizovány
