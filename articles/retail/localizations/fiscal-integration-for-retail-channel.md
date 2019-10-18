@@ -1,6 +1,6 @@
 ---
 title: Přehled fiskální integrace pro maloobchodní sítě
-description: Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Microsoft Dynamics 365 for Retail.
+description: Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Retail.
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516231"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025400"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Přehled fiskální integrace pro maloobchodní sítě
 
@@ -30,13 +30,13 @@ ms.locfileid: "1516231"
 
 ## <a name="introduction"></a>Úvod
 
-Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Microsoft Dynamics 365 for Retail. Fiskální integrace zahrnuje integraci s různými fiskálními zařízeními a službami, které umožňují fiskální registraci maloobchodního prodeje v souladu s místními fiskálními zákony, které mají za cíl zabránit daňovým podvodům v maloobchodním průmyslu. Zde je několik typických scénářů, které lze pokrýt pomocí fiskální integrace:
+Toto téma obsahuje přehled funkcí fiskální integrace dostupných v Dynamics 365 Retail. Fiskální integrace zahrnuje integraci s různými fiskálními zařízeními a službami, které umožňují fiskální registraci maloobchodního prodeje v souladu s místními fiskálními zákony, které mají za cíl zabránit daňovým podvodům v maloobchodním průmyslu. Zde je několik typických scénářů, které lze pokrýt pomocí fiskální integrace:
 
 - Zaregistrujte maloobchodní prodej na fiskálním zařízení, které je připojeno k pokladnímu místu Retail (POS), jako je například fiskální tiskárna, a vytiskněte pro zákazníka příjmový doklad.
 - Bezpečně odešlete informace, které souvisejí s prodejem a vráceními, které jsou dokončeny v Retail POS do externí webové službě, kterou provozuje daňový úřad.
 - Pomozte zaručit nezaměnitelnost dat prodejních transakcí prostřednictvím digitálních podpisů.
 
-Funkce fiskální integrace v aplikaci Retail je rámcem, který poskytuje společné řešení pro další vývoj a přizpůsobení integrace mezi Retail POS a fiskálními zařízeními a službami. Funkčnost zahrnuje také ukázky fiskální integrace, které podporují základní maloobchodní scénáře pro konkrétní země nebo oblasti a které pracují se specifickými fiskálními zařízeními nebo službami. Ukázka fiskální integrace se skládá z několika rozšíření komponent aplikace Retail a je zahrnuta v sadě SDK aplikace Retail. Další informace o ukázkách fiskální integrace, které jsou k dispozici v sadě SDK aplikace Retail, naleznete v tématu [Ukázky fiskální integrace v Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Informace o instalaci a použití sady Retail SDK naleznete v tématu [Přehled doplňku Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Funkce fiskální integrace je rámcem, který poskytuje společné řešení pro další vývoj a přizpůsobení integrace mezi Retail POS a fiskálními zařízeními a službami. Funkčnost zahrnuje také ukázky fiskální integrace, které podporují základní maloobchodní scénáře pro konkrétní země nebo oblasti a které pracují se specifickými fiskálními zařízeními nebo službami. Ukázka fiskální integrace se skládá z několika rozšíření komponent aplikace Retail a je zahrnuta v sadě software development kit (SDK). Další informace o ukázkách fiskální integrace naleznete v tématu [Ukázky fiskální integrace v Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Informace o instalaci a použití sady Retail SDK naleznete v tématu [Přehled doplňku Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Chcete-li podporovat jiné scénáře, které nejsou podporovány ukázkou fiskální integrace, integrovat Retail POS s jinými fiskálními zařízeními nebo službami, nebo pokrýt požadavky jiných zemí nebo oblastí, musíte buď rozšířit existující ukázku fiskální integrace, nebo vytvořit novou ukázku pomocí příkladu existujícího ukázky jako příkladu.
 
@@ -132,7 +132,7 @@ Funkce fiskální integrace podporuje generování výkazů na konci dne, které
 
 ## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Ukázky fiskální integrace v Retail SDK
 
-Následující ukázky fiskální integrace jsou v současné době k dispozici v sadě Retail SDK, která je vydána s aplikací Retail:
+Následující ukázky fiskální integrace jsou v současné době k dispozici v sadě Retail SDK:
 
 - [Vzor integrace fiskální tiskárny pro Itálii](emea-ita-fpi-sample.md)
 - [Vzor integrace fiskální tiskárny pro Polsko](emea-pol-fpi-sample.md)

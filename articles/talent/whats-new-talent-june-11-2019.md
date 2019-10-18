@@ -1,6 +1,6 @@
 ---
-title: Co je nového a co se změnilo v aplikaci Dynamics 365 for Talent (11. června 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Talent (11. června 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/11/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b06dc0556bd1461573cd56abed602d72333a3f39
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741607"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023923"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 for Talent (11. června 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Talent (11. června 2019)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Změny v aplikaci Attract
 
 ### <a name="search-engine-optimization-for-job-posts"></a>Optimalizace webového vyhledávače pro nabídky volných míst
 
-Po zapnutí **Optimalizace webového vyhledávače** v aplikaci Dynamics 365 for Talent: centrum správy Attract informuje aplikace Attract rozhraní API indexování Google, aby zaindexovalo webovou stránku, kdykoliv aktivujete a uveřejníte novou nabídku práce nebo aktualizujete stávající práci. Tato úloha se pak zobrazí ve výsledcích hledání pro Google a další vyhledávače.
+Po zapnutí **Optimalizace webového vyhledávače** v centru pro správu aplikace Dynamics 365 Talent: Attract informuje aplikace Attract rozhraní API indexování Google, aby zaindexovalo webovou stránku, kdykoliv aktivujete a uveřejníte novou nabídku práce nebo aktualizujete stávající práci. Tato úloha se pak zobrazí ve výsledcích hledání pro Google a další vyhledávače.
 
 Podobně platí, že při zrušení nabídky práce aplikace Attract informuje API indexování, aby se zrušené práce neobjevovaly ve výsledcích hledání.
 
@@ -50,15 +50,15 @@ Schválení se zobrazují v části **Schválení** na řídicím panelu. Schval
 
 ## <a name="changes-in-onboard"></a>Změny v aplikaci Onboard
 
-Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 for Talent: Onboard.
+Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Změny v Core HR
 
 Změny popsané v této části se vztahují na číslo sestavení 8.1.2337.
 
-### <a name="platform-update-27"></a>Aktualizace platformy 27
+### <a name="platform-update-27-for-finance-and-operations"></a>Ajtzakuzace Platform Update 27 for Finance and Operations
 
-Další podrobnosti o aktualizaci Platform Update 27 naleznete v tématu [Funkce Preview v aktualizaci Platform Update 27 aplikace Dynamics 365 for Finance and Operations (červen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+Další podrobnosti o aktualizaci Platform Update 27 for Finance and Operations naleznete v tématu [Funkce Preview v aktualizaci Platform Update 27 aplikace Dynamics 365 Finance and Operations (červen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>Pracovní prostor správy funkcí v aplikaci Talent
 

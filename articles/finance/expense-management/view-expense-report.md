@@ -1,0 +1,36 @@
+---
+title: Zobrazení sestavy výdajů z hlavní knihy nebo ze zásobování a zdrojů
+description: Toto téma vysvětluje, jak zobrazit původní sestavu výdajů, na které se nacházela transakce.
+author: saraschi2
+manager: AnnBe
+ms.date: 02/26/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: TrvPerDiems
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: saraschi
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5e5f6794c11811ad69725acb22a324a6bb1f2ab9
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2187491"
+---
+# <a name="view-an-expense-report"></a>Zobrazit sestavu výdajů
+
+[!include [banner](../includes/banner.md)]
+
+Po spuštění dotazu pro zobrazení transakcí v hlavní knize nebo zásobování a zdrojích může dotaz vrátit příliš mnoho informací. Můžete tedy vyhledávání zúžit. Chcete-li získat požadované informace, můžete procházet podrobnostmi transakce, chcete-li zobrazit sestavu výdajů, na které se nacházela transakce.
+
+Pro sestavy výdajů je možné přejít z transakce na původní sestavu, která je uložena v modulu Správa výdajů. Kromě celkové částky výdajů je možné zobrazit rozepsané transakce, transakce, které mají nárok na vratku DPH, a účtenky, které jsou připojeny k výdajům.
+
+Chcete-li přejít k podrobnostem původní sestavy výdajů, na které se nacházela transakce, zvolte transakci a poté zvolte **Původní dokument**.
+
+Při zobrazení jednotlivých transakcí můžete také zobrazit další data, která jsou připojena k transakci. Například u rozepsaného výdaje za hotel můžete zobrazit podrobný seznam výdajů, jako jsou internet, telefonáty a pokojová služba.

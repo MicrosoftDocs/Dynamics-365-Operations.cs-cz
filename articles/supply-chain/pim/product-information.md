@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f4e378bc0a72e05f940ae352ad0f1c0709d9d3a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563521"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249464"
 ---
 # <a name="product-information-overview"></a>Přehled informací o produktech
 
@@ -57,17 +57,17 @@ Produkt je definován především číslem, názvem a popisem. Jsou však poža
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Distribuce, export a import dat produktu
 
-Definici výrobků lze vytvořit v aplikaci Microsoft Dynamics 365 for Finance and Operations. Lze ji také importovat ze správy životního cyklu produktu (PLM), správy dat správy produktů (PDM) nebo systémů správy informací o produktu (PIM). Při použití více než jedné instance aplikace Finance and Operations se jedna instance běžně používá jako předloha dat produktu pro všechny ostatní instance. Tato metoda je podpořena velkou sadou datových entit, které umožňují export a import dat definice produktů z jedné instance na jinou.
+Definici výrobků lze vytvořit v aplikaci Supply Chain Management. Lze ji také importovat ze správy životního cyklu produktu (PLM), správy dat správy produktů (PDM) nebo systémů správy informací o produktu (PIM). Při použití více než jedné instance aplikace Supply Chain Management se jedna instance běžně používá jako předloha dat produktu pro všechny ostatní instance. Tato metoda je podpořena velkou sadou datových entit, které umožňují export a import dat definice produktů z jedné instance na jinou.
 
-Na podporu distribuce dat produktu do mnoha instancí umožňuje aplikace Finance and Operations použití služby Common Data Service. Definice produktů lze exportovat službu běžné dat z instance aplikace Finance and Operations do služby Common Data Service. Definice produktů lze použít k zajištění jinými obchodními aplikacemi, jako například aplikace Microsoft Dynamics 365 for Sales, s daty produktu.
+Na podporu distribuce dat produktu do mnoha instancí umožňuje aplikace Supply Chain Management použití služby Common Data Service. Definice produktů lze exportovat službu běžné dat z instance aplikace Supply Chain Management do služby Common Data Service. Definice produktů lze použít k zajištění jinými obchodními aplikacemi, jako například Dynamics 365 Sales, s daty produktu.
 
 Všimněte si, že v dynamických a pružných organizacích se informace o produktech mění denně. Údržba přesných a skutečných dat je tedy důležitý obchodní proces sám o sobě.
 
 ## <a name="product-masters-and-product-variants"></a>Hlavní produkty a varianty produktů
 
-V agilním, kde se produkty musí rychle podřizovat požadavkům zákazníka, určují definice produktů sadu produktů místo jedinečných produktů. V aplikaci Microsoft Dynamics 365 for Finance and Operations se tyto obecné produkty označují jako *základní produkty*. Hlavní produkty mají definici a pravidla definující způsob popisu jedinečných produktů a jejich chování v obchodních procesech. Na základě těchto definicí mohou být generovány jedinečné produkty. Tyto jedinečné produkty se označují jako *varianty produktu*.
+V agilním, kde se produkty musí rychle podřizovat požadavkům zákazníka, určují definice produktů sadu produktů místo jedinečných produktů. V aplikaci Supply Chain Management se tyto obecné produkty označují jako *základní produkty*. Hlavní produkty mají definici a pravidla definující způsob popisu jedinečných produktů a jejich chování v obchodních procesech. Na základě těchto definicí mohou být generovány jedinečné produkty. Tyto jedinečné produkty se označují jako *varianty produktu*.
 
-V aplikaci Finance and Operations je hlavní produkt přidružen ke skupině dimenzí produktu a technologii konfigurace k určení obchodních pravidel. Dimenze produktu (barva, velikost, styl a konfigurace) jsou konkrétní sada atributů, které lze použít v celé aplikaci k definování a sledování konkrétního chování souvisejících produktů. Tyto dimenze také pomáhají uživatelům vyhledat a určit produkty.
+Hlavní produkt je přidružen ke skupině dimenzí produktu a technologii konfigurace k určení obchodních pravidel. Dimenze produktu (barva, velikost, styl a konfigurace) jsou konkrétní sada atributů, které lze použít v celé aplikaci k definování a sledování konkrétního chování souvisejících produktů. Tyto dimenze také pomáhají uživatelům vyhledat a určit produkty.
 
 ## <a name="configuration-technologies"></a>Technologie konfigurace
 
@@ -77,7 +77,7 @@ Můžete vybírat mezi třemi technologiemi konfigurace:
 - Konfigurace založené na dimenzích se obvykle používají ve scénářích výroby a umožňují používání dimenze konfigurace v definici kusovníků (BOM). Po výběru konkrétní konfigurace systém použije podmnožinu řádků kusovníku, které jsou platné pro danou konfiguraci plánování a výroby. Tento koncept je známý také jako *globální kusovníku*, protože se jeden sdílený kusovník používá pro všechny konfigurace produktu.
 - Konfigurace založená na omezeních používá k popisu všech možných atributů a součástí, které jsou požadovány pro všechny možné varianty produktu, jeden modul konfigurace produktu. Omezení kombinací atributů lze popsat pomocí regulárních výrazů nebo omezení na základě tabulky. Modely konfigurace a konfigurátory začnou být důležitější v modulu řízení informací o produktu a používají se ve všech odvětvích.
 
-Při plánování implementace aplikace Finance and Operations je velmi důležité zvolit správnou technologii konfigurace pro obchodní proces. Produkt nelze převést z jednoho modelu na jiný po implementaci.
+Při plánování implementace aplikace Supply Chain Management je velmi důležité zvolit správnou technologii konfigurace pro obchodní proces. Produkt nelze převést z jednoho modelu na jiný po implementaci.
 
 ## <a name="product-variant-model-definition-workspace"></a>Pracovní prostor Definice modelu varianty produktu
 

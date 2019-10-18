@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07fbc5fea1fd44769a29bcc40297ffd02812a1e5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555144"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248973"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Spolupráce s dodavateli pomocí portálu pro dodavatele
 
@@ -31,7 +31,7 @@ ms.locfileid: "1555144"
 
 Toto téma vysvětluje, jak nákupčí mohou použít portál pro dodavatele pro spolupráci s externím dodavatelem během procesu potvrzení nákupní objednávky. Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016.
 
-Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016. Funkce portálu dodavatele byla v Dynamics 365 for Operations verze 1611 nahrazena rozšířenou funkcí spolupráce dodavatelů. Další informace o nové funkci spolupráce s dodavatelem naleznete v tématu [Používání spolupráce s dodavateli k práci s externími dodavateli](vendor-collaboration-work-external-vendors.md).  
+Informace v tomto tématu platí pouze pro verze aplikace Dynamics AX z února a května 2016. Další informace o nové funkci spolupráce s dodavatelem naleznete v tématu [Používání spolupráce s dodavateli k práci s externími dodavateli](vendor-collaboration-work-external-vendors.md).  
 
 Portál pro dodavatele je zaměřen na dodavatele, kteří nemají elektronické výměny dat (EDI) k dispozici v aplikaci Microsoft Dynamics AX pro výměnu informací o nákupních objednávkách. Portál umožňuje nákupčím odeslání nákupní objednávky dodavateli a obdržet odpovědi s potvrzením nebo odmítnutím přímo v Dynamics AX.  
 

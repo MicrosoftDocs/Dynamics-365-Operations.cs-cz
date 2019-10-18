@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 0a31ea7d1df33d3f42e95d5e1152f00687954b04
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3a6e7556705249296d4f5e5fb56f25b444f8f71a
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517482"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008144"
 ---
 # <a name="create-fixed-compensation-plans"></a>Vytvoření plánů fixní kompenzace
 
@@ -31,7 +31,7 @@ ms.locfileid: "1517482"
 
 Fixní kompenzace odkazuje na pravidelný hrubý plat nebo mzdy zaměstnance. Toto téma popisuje součásti, které je nutné nastavit před vytvořením plánu fixní kompenzace a přihlášením zaměstnanců.
 
-Částky fixní kompenzace lze vypočítat pro zaměstnance na základě faktorů, jako je výkon, oblast a zvýšení rozpočtu. Microsoft Talent podporuje typy kompenzace kroku, stupně a pásma.
+Částky fixní kompenzace lze vypočítat pro zaměstnance na základě faktorů, jako je výkon, oblast a zvýšení rozpočtu. Dynamics 365 Talent podporuje typy kompenzace kroku, stupně a pásma.
 
 ## <a name="fixed-compensation-components"></a>Komponenty fixní kompenzace
 ### <a name="compensation-levels"></a>Úrovně kompenzace

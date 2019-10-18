@@ -1,6 +1,6 @@
 ---
-title: Synchronizace produktů v aplikaci Finance and Operations do produktů ve službě Field Service
-description: Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
+title: Synchronizace produktů v Supply Chain Management do produktů ve Field Service
+description: Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
@@ -19,34 +19,34 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 06d7ff272ecb79abded3c3d3ade1f6bc0ef1f095
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f5f6d41f3e65a3cf5b8c7c96f54b1c8c6cdfaefb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742348"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249766"
 ---
-# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>Synchronizace produktů v aplikaci Finance and Operations do produktů ve službě Field Service
+# <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>Synchronizace produktů v Supply Chain Management do produktů ve Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
+Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 
-Používaná šablona **Produkty Field Service (Fin and Ops do Field Service)** je založena na šabloně **Produkty (Fin a Ops do Sales) – Direct** z modulu Prospect to Cash. Další informace naleznete v tématu [Produkty (Fin and Ops na Sales) – přímé](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+Používaná šablona **Produkty Field Service (Supply Chain Management do Field Service)** je založena na šabloně **Produkty (Supply Chain Management do Sales) – Direct** z modulu Prospect to Cash. Další informace naleznete v tématu [Produkty (Supply Chain Management do Sales) – přímé](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
-Toto téma pouze popisuje rozdíl mezi šablonami **Produkty Field Service (Fin and Ops do Field Service)** je založena na šabloně **Produkty (Fin a Ops do Sales) – Direct**.
+Toto téma pouze popisuje rozdíl mezi šablonami **Produkty Field Service (Supply Chain Management do Field Service)** je založena na šabloně **Produkty (Supply Chain Management do Sales) – Direct**.
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
-**Název šablony v integraci dat:**
+**Název šablony v integraci dat**
 
-- Produkty Field Service (Fin and Ops do Field Service)
+- Produkty Field Service (Supply Chain Management do Field Service)
 
-**Název úkolu v projektu integrace dat:**
+**Název úkolu v projektu integrace dat**
 
 - Produkty – produkty
 
-Šablona **Produkty Field Service (Fin and Ops do Field Service)** zahrnuje jedno mapování, které není zahrnuto do šablony **Produkty (Fin a Ops do Sales) – Direct**. Toto mapování zajišťuje, že povinné poleField Service **typ produktu služba** je správně nastaveno.
+Šablona **Produkty Field Service (Supply Chain Management do Field Service)** obsahuje jedno mapování, které není obsaženo v **Produktech (Supply Chain Management do Sales) – Direct**. Toto mapování zajišťuje, že povinné poleField Service **typ produktu služba** je správně nastaveno.
 
 ```
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
@@ -60,7 +60,7 @@ nonInventory  :  690970001
 service       :  690970002 
 ```
 
-Hodnota **Typ produktu Field Service** se v aplikaci Finance and Operations v datové entitě **Prodejné vydané produkty** vypočítává takto:
+Hodnota **Typ produktu Field Service** se v aplikaci Supply Chain Management v datové entitě **Prodejné vydané produkty** vypočítává takto:
 
 - **Zásoby:** Typ produktu = skupina modelu Produkt a položka, Produkt na skladě = True
 - **NonInventory:** Typ produktu = skupina modelu Produkt a položka, Produkt na skladě = False
@@ -70,6 +70,6 @@ Hodnota **Typ produktu Field Service** se v aplikaci Finance and Operations v da
 
 Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
-### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>Produkty Field Service (Fin and Ops do Field Service) : Produkty - Produkty
+### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Produkty Field Service (Supply Chain Management do Field Service): Products - Products
 
 [![Mapování šablony v integraci dat](./media/FSProduct.png)](./media/FSProduct.png)

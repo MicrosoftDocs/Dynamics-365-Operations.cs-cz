@@ -1,6 +1,6 @@
 ---
 title: Časté dotazy týkající se integrace Attract s řešením LinkedIn
-description: Toto téma obsahuje odpovědi na otázky, které můžete mít v souvislosti s integrací LinkedIn a Microsoft Dynamics 365 for Talent - Attract.
+description: Toto téma obsahuje odpovědi na otázky, které můžete mít v souvislosti s integrací LinkedIn a Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 07/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c49181fe7e9359fb9d7d43f479273080f90542f4
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: d66ebc01597f8038a38b46a9f1b70feaa5dc505e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756192"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008632"
 ---
 # <a name="linkedin-integration-faq"></a>Integrace se službou LinkedIn - Často kladené dotazy
 
 [!include [banner](includes/banner.md)]
 
-LinkedIn je největší světová síť profesionálů. Microsoft Dynamics for Talent: Attract se integruje s LinkedIn, aby vám umožnil přístup k nejlepším světovým talentům. Attract vám umožní publikovaat pracovní nabídky přímo na LinkedIn a zároveň vám umožňuje získávat informace o uchazečích z LinkedIn do aplikace Attract.
+LinkedIn je největší světová síť profesionálů. Microsoft Dynamics Talent: Attract se integruje s LinkedIn, aby vám umožnil přístup k nejlepším světovým talentům. Attract vám umožní publikovaat pracovní nabídky přímo na LinkedIn a zároveň vám umožňuje získávat informace o uchazečích z LinkedIn do aplikace Attract.
 
 ## <a name="for-recruiters-and-hiring-managers"></a>Pro pracovníky a manažery náboru
 

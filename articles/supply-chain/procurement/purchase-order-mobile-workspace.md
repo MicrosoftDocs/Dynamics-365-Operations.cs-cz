@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 75a38b99fe0aee7d4dd386191be236e54097e867
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561252"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249418"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobilní pracovní prostor schvalování nákupních objednávek
 
@@ -35,13 +35,13 @@ Toto téma obsahuje informace o mobilním pracovním prostoru **Schválení ná
 ## <a name="overview"></a>Přehled 
 Nákupní objednávky, které vyžadují schválení, procházejí workflowem schválení. Workflow může obsahovat různé kroky, které vyžadují, aby jedna nebo více osob provedly akci. Osoba může například muset dokončit úlohu nebo schválit nákupní objednávku. 
 
-Mobilní pracovní prostor **Schválení nákupní objednávky** umožňuje snadno zobrazit a odpovědět na nákupní objednávky z mobilního zařízení. Tento pracovní prostor také umožňuje přijmout stejné akce workflowu, které lze provést z webového klienta Microsoft Dynamics 365 for Finance and Operations.
+Mobilní pracovní prostor **Schválení nákupní objednávky** umožňuje snadno zobrazit a odpovědět na nákupní objednávky z mobilního zařízení. Tento pracovní prostor také umožňuje přijmout stejné akce workflowu, které lze provést z webového klienta.
 
 ## <a name="prerequisites"></a>Předpoklady
-Předpoklady se liší podle verze aplikace Finance and Operations, která byla nasazena ve vaší organizaci.
+Předpoklady se liší podle verze aplikace Supply Chain Management, která byla nasazena ve vaší organizaci.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Předpoklady při použití Microsoft Dynamics 365 for Finance and Operations 
-Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Finance and Operations, správce systému musí publikovat mobilní pracovní prostor **Schválení nákupní objednávky**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Předpoklady při použití aplikace Supply Chain Management 
+Pokud je ve vaší organizaci nasazena aplikace Finance and Operations, správce systému musí publikovat mobilní pracovní prostor **Schválení nákupní objednávky**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Předpoklady při použití Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform Update 3 nebo vyšší
 Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform update 3 nebo novější, správce systému musí dokončit následující předpoklady. 
@@ -75,7 +75,7 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
-Stáhněte a nainstalujte mobilní aplikaci Microsoft Dynamics 365 for Unified Operations:
+Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 
 - [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

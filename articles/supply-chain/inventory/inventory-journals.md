@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7acf4e5397ee7276b0f881f4859267371266de0
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553431"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249533"
 ---
 # <a name="inventory-journals"></a>Skladové deníky
 
@@ -33,7 +33,7 @@ ms.locfileid: "1553431"
 
 Toto téma popisuje, jak můžete použít deníky zásob k zaúčtování různých typů transakcí fyzických zásob.
 
-Deníky zásob v aplikaci Microsoft Dynamics 365 for Finance and Operations se používají k zaúčtování různých typů transakcí fyzických zásob, jako například zaúčtování výdejů a příjmů, skladové pohyby, vytvoření kusovníku a odsouhlasení fyzických zásob. Všechny tyto deníky zásob se používají podobným způsobem, avšak rozděleny jsou do různých typů.
+Deníky zásob v aplikaci Supply Chain Management se používají k zaúčtování různých typů transakcí fyzických zásob, jako například zaúčtování výdejů a příjmů, skladové pohyby, vytvoření kusovníku a odsouhlasení fyzických zásob. Všechny tyto deníky zásob se používají podobným způsobem, avšak rozděleny jsou do různých typů.
 
 ## <a name="types-of-inventory-journals"></a>Typy deníků zásob
 K dispozici jsou následující typy deníků zásob:
@@ -68,7 +68,7 @@ Pokud vykážete kusovník jako dokončený, můžete vytvořit deník kusovník
 
 ### <a name="item-arrival"></a>Doručení položky
 
-Deník doručení položek slouží k evidenci příjmu položek (například z nákupní objednávky). Deník doručení položky může být vytvořen v rámci řízení doručení na stránce **Přehled doručení** nebo můžete položku deníku vytvořit ručně na stránce **Doručení položky**. Pokud umožníte, aby deník doručení položek kontroloval výdejní skladová místa, aplikace Finance and Operations vyhledá místo pro přijaté položky a (pokud je v něm prostor) vygeneruje cílová skladová místa pro příchozí položky.
+Deník doručení položek slouží k evidenci příjmu položek (například z nákupní objednávky). Deník doručení položky může být vytvořen v rámci řízení doručení na stránce **Přehled doručení** nebo můžete položku deníku vytvořit ručně na stránce **Doručení položky**. Pokud umožníte, aby deník doručení položek kontroloval výdejní skladová místa, aplikace Supply Chain Management vyhledá místo pro přijaté položky a (pokud je v něm prostor) vygeneruje cílová skladová místa pro příchozí položky.
 
 ### <a name="production-input"></a>Výrobní vstup
 
@@ -103,7 +103,7 @@ Datové entity podporují scénáře integrace mezi následujícími typy:
 Další informace viz [Datové entity](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
-> Ne všechny deníky zásob mají povolen OData, proto nemůžete použít konektor excelových dat k publikování, aktualizaci a importu dat zpět do aplikace Dynamics 365 for Finance and Operations. 
+> Ne všechny deníky zásob mají povolen OData, proto nemůžete použít konektor excelových dat k publikování, aktualizaci a importu dat zpět do aplikace Supply Chain Management. 
 
 Další rozdíl mezi datovými entitami deníku je schopnost používat složené entity, které zahrnují záhlaví a řádků data. Nyní můžete složené entity používat pro:
 -   Deník úprav zásob

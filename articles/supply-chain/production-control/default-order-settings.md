@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b7c36553c9ad5bf4b061285d617be85ce77d0fcd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e6d4e9a3ac5635e292b20eba60fe4f010562fdba
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552640"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250088"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Výchozí nastavení objednávky pro dimenze a varianty produktu
 
@@ -32,7 +32,7 @@ ms.locfileid: "1552640"
 
 [!include [retail name](../includes/retail-name.md)]
 
-Výchozí nastavení objednávky v Microsoft Dynamics 365 for Finance and Operations definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek. Výchozí nastavení objednávek se používají při vytváření nákupních objednávek, prodejních objednávek, převodních příkazů, deníků zásob a na základě hlavního plánování pro generování plánovaných objednávek. Výchozích nastavení objednávek může být specifické podle položky, pracovišť, variant produktu nebo dimenze produktu.
+Výchozí nastavení objednávky v Dynamics 365 Supply Chain Management definuje pracoviště a sklad, odkud pocházející nebo kde jsou uloženy položky, minimální, maximální, násobná a standardní množství, která budou použita pro obchodování nebo řízení skladu, doby realizace, příznaky pro zastavení a metody příslibu objednávek. Výchozí nastavení objednávek se používají při vytváření nákupních objednávek, prodejních objednávek, převodních příkazů, deníků zásob a na základě hlavního plánování pro generování plánovaných objednávek. Výchozích nastavení objednávek může být specifické podle položky, pracovišť, variant produktu nebo dimenze produktu.
 
 Výchozí nastavení objednávky můžete definovat na stránce **Výchozí nastavení objednávky**. Chcete-li otevřít tuto stránku, přejděte na **Řízení informací o produktech** &gt; **Produkty** &gt; **Uvolněné produkty** &gt; **Vyberte uvolněný produkt** &gt; na **Plán** nebo **Správa skladu** Podokna akcí &gt; **Nastavení objednávky** &gt; **Výchozí nastavení objednávky**.
 
@@ -74,7 +74,7 @@ Výchozí nastavení objednávky pro zásoby se dále používá při vytvářen
 -   Plánované výrobní zakázky
 
 ## <a name="full-definition-of-a-released-product"></a>Úplná definice uvolněného produktu
-Při vytváření transakce je třeba zadat úplnou definici uvolněného produktu na řádku před tím, než se aplikace Finance and Operations pokusí zjistit výchozí nastavení objednávky. Úplné definování uvolněného produktu znamená, že se číslo položky a všechny aktivní dimenze produktu, například konfigurace, velikost, styl a barva zadají v transakci. Pokud například ručně vytvoříte řádek nákupní objednávky pro variantu uvolněného produktu, je nutné zadat všechny dimenze požadovaného produktu předtím, než se pracoviště, sklad, množství a doba realizace zobrazí ve výchozím nastavení na řádku objednávky. 
+Při vytváření transakce je třeba zadat úplnou definici uvolněného produktu na řádku, aby se aplikace Supply Chain Management pokusila zjistit výchozí nastavení objednávky. Úplné definování uvolněného produktu znamená, že se číslo položky a všechny aktivní dimenze produktu, například konfigurace, velikost, styl a barva zadají v transakci. Pokud například ručně vytvoříte řádek nákupní objednávky pro variantu uvolněného produktu, je nutné zadat všechny dimenze požadovaného produktu předtím, než se pracoviště, sklad, množství a doba realizace zobrazí ve výchozím nastavení na řádku objednávky. 
 
 Ne všechny parametry výchozí nastavení objednávky jsou použity při vytváření řádků objednávky nebo deníku. Ve výchozím nastavení budou zobrazeny pouze množství a doby realizace v případě potřeby. Například při výpočtu řádky deníku se zobrazí ve výchozím nastavení při vytvoření řádku pouze pracoviště a sklad. Samozřejmě neprobíhají žádná výchozí nastavení množství nebo kontroly na násobcích a minimech při vytváření řádku nebo účtování deníku. 
 
@@ -97,7 +97,7 @@ Pro různé uvolněné produkty můžete definovat obecné nastavení objednávk
 
 Pro vytvoření nastavení objednávky specifické pro pracoviště, klepněte na tlačítko **Nový**. V **Zobrazení podrobností** vyplňte pracoviště do pole **Nastavení je použitelné pro** &gt; **Pracoviště**. V **Zobrazení mřížky** vyplňte pracoviště ve sloupci **Pracoviště**. Nové pravidlo získá automaticky novou hodnotu kategorie vyšší než nula. Můžete vytvořit tolik pravidel specifických podle pracovišť, kolik potřebujete a můžete přiřadit všechna specifická pravidla podle pracovišť, abyste vymodelovali, že jsou stejně důležitá. 
 
-Pokud jste v **Zobrazení podrobností** nemůžete získat přehled pravidel, které jsou vytvořena pro položku. Přepněte tlačítkem **Zobrazit seznam** pro zobrazení informací o přehledu. Při vytváření řádku objednávky libovolného typu, pokud nemá zadané žádné pracoviště, hledá Finance and Operations pravidlo bez určeného pracoviště. To může pomoci určit výchozí pracoviště na řádku objednávky. Toto pracoviště se pak používá k vyhledávání pravidla specifického pro pracoviště, pokud může být nastaven výchozí sklad. Tento sklad je použit pro daný řádek objednávky.
+Pokud jste v **Zobrazení podrobností** nemůžete získat přehled pravidel, které jsou vytvořena pro položku. Přepněte tlačítkem **Zobrazit seznam** pro zobrazení informací o přehledu. Při vytváření řádku objednávky libovolného typu, pokud nemá zadané žádné pracoviště, hledá Supply Chain Management pravidlo bez určeného pracoviště. To může pomoci určit výchozí pracoviště na řádku objednávky. Toto pracoviště se pak používá k vyhledávání pravidla specifického pro pracoviště, pokud může být nastaven výchozí sklad. Tento sklad je použit pro daný řádek objednávky.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Specifické nastavení objednávky pro dimenzi produktu
 
@@ -134,7 +134,7 @@ Můžete vytvořit následující výchozí pravidla nastavení objednávky.
 
 Obě pravidla pro ukončení starých revizí mají stejnou kategorii, což znamená, že jsou stejně důležitá. Obě mají vyšší kategorii než pravidla konfigurace C1, což znamená, že mají přednost před pravidly konfigurace C1. 
 
-Tento příklad vysvětluje potřebu kategorií. Když vzniká nákupní objednávka pro konfiguraci C1 a revizi R2, bez kategorií, budou obě pravidla pro R2 a C1 nejednoznačná. Pro vyřešení nejednoznačnosti bude Finance and Operations hledat pravidla v sestupném pořadí kategorií a použije první vhodné pravidlo. V tomto příkladu, když se tvoří řádku nákupní objednávky pro konfiguraci C1 a revizi R2, získá uživatel zprávu s upozorněním, že položka je blokována a že je to způsobeno hodnotou revize. Pokud má pravidlo pro konfiguraci a vyšší kategorii než pro revize, potom bude následovat vytvoření řádku nákupní objednávky pro konfiguraci C1 a revizi R2 a žádná zpráva o 'blokování položky' nebude uživateli odeslána. 
+Tento příklad vysvětluje potřebu kategorií. Když vzniká nákupní objednávka pro konfiguraci C1 a revizi R2, bez kategorií, budou obě pravidla pro R2 a C1 nejednoznačná. Pro vyřešení nejednoznačnosti bude Supply Chain Management hledat pravidla v sestupném pořadí kategorií a použije první vhodné pravidlo. V tomto příkladu, když se tvoří řádku nákupní objednávky pro konfiguraci C1 a revizi R2, získá uživatel zprávu s upozorněním, že položka je blokována a že je to způsobeno hodnotou revize. Pokud má pravidlo pro konfiguraci a vyšší kategorii než pro revize, potom bude následovat vytvoření řádku nákupní objednávky pro konfiguraci C1 a revizi R2 a žádná zpráva o 'blokování položky' nebude uživateli odeslána. 
 
 Zvažte následující výchozí pravidla nastavení objednávky.
 

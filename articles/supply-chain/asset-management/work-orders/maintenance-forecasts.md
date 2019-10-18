@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a416bbb79be3f25998d3c0da8d231d0df808685
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875549"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024492"
 ---
 # <a name="maintenance-forecasts"></a>Prognózy údržby
 
@@ -104,7 +104,7 @@ Existují tři způsoby přidání položek do prognózy údržby pracovního p�
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatická aktualizace prognóz pracovních příkazů
 
-V modulu Správa majetku můžete automaticky aktualizovat všechny změny prognóz pracovních příkazů ohledně hodinových nákladů, nákladů na položky a výdajů, které byly aktualizovány v jiných modulech aplikace Dynamics 365 for Finance and Operations. Je to proto, aby v prognózách pracovního příkazu byly vždy nejnovější nákladové ceny. Je také možné provést podobné aktualizace pro [prognózy typů práce údržby](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+V modulu Správa majetku můžete automaticky aktualizovat všechny změny prognóz pracovních příkazů ohledně hodinových nákladů, nákladů na položky a výdajů, které byly aktualizovány v jiných modulech. Je to proto, aby v prognózách pracovního příkazu byly vždy nejnovější nákladové ceny. Je také možné provést podobné aktualizace pro [prognózy typů práce údržby](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 1. Klikněte na položky **Správa majetku** > **Pravidelně** > **Prognóza** > **Aktualizovat prognózu pracovního příkazu**.
 

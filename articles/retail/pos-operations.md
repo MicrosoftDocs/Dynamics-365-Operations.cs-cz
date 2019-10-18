@@ -1,6 +1,6 @@
 ---
 title: Online a offline operace pokladního místa (POS)
-description: Toto téma obsahuje podrobnosti týkající se operací pokladních míst (POS) v aplikaci Microsoft Dynamics 365 for Retail. Určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici v offline režimu.
+description: Toto téma obsahuje podrobnosti týkající se operací pokladních míst (POS) v aplikaci Dynamics 365 Retail. Určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici v offline režimu.
 author: jblucher
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,22 +18,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: fcb933438ec30ebe6d3b499b53e64c58ecec3626
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625658"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025303"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
 [!include [banner](includes/banner.md)]
 
-Většina akcí, které uživatel provede v pokladním místě, se považuje za operace. Operace jsou konfigurovány a spravovány v účetním systému Microsoft Dynamics 365 for Retail. Mnohé operace lze přidat k tlačítkům v POS mřížce tlačítek. Uživatelé mohou potom vybírat tlačítka k vyvolání operací a provádění jejich funkcí. Další operace jsou součástí hlavní aplikace POS a jsou vyvolávány buď pomocí tlačítek na obrazovce nebo jako součást jiných workflow nebo procesů.
+Většina akcí, které uživatel provede v pokladním místě, se považuje za operace. Operace jsou konfigurovány a spravovány v účetním systému Dynamics 365 Retail. Mnohé operace lze přidat k tlačítkům v POS mřížce tlačítek. Uživatelé mohou potom vybírat tlačítka k vyvolání operací a provádění jejich funkcí. Další operace jsou součástí hlavní aplikace POS a jsou vyvolávány buď pomocí tlačítek na obrazovce nebo jako součást jiných workflow nebo procesů.
 
-Následující tabulka obsahuje podrobnosti o operacích, které jsou k dispozici v Retail Modern POS a Cloud POS pro Dynamics 365 for Retail. Tabulka rovněž určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici, když je pokladní místo (POS) v offline režimu.
+Následující tabulka obsahuje podrobnosti o operacích, které jsou k dispozici v Retail Modern POS a Cloud POS. Tabulka rovněž určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici, když je pokladní místo (POS) v offline režimu.
 
-Některé operace nejsou v současné době dostupné v Retail Modern POS nebo Cloud POS pro Dynamics 365 for Retail. Některé z těchto operací jsou buď operacemi specifickými pro národní prostředí, která vyžadují další rozšíření a konfigurace. Jiné jsou funkce aplikace Microsoft Dynamics AX 2012, které nejsou aktuálně podporovány.
+Některé operace nejsou v současné době dostupné v Retail Modern POS nebo Cloud POS. Některé z těchto operací jsou buď operacemi specifickými pro národní prostředí, která vyžadují další rozšíření a konfigurace. Jiné jsou funkce aplikace Microsoft Dynamics AX 2012, které nejsou aktuálně podporovány.
 
 Následující sloupce určují, kde lze operace vyvolat:
 
@@ -42,7 +42,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 - **Uvítací obrazovka** – Operaci lze vyvolat z mřížek tlačítek POS, které jsou konfigurovány na uvítací obrazovce POS.
 
 > [!NOTE]
-> Následující operace se vztahují na nejnovější verzi aplikace Dynamics 365 for Retail. Některé operace se mohly změnit, nebo nemusí být k dispozici v předchozích verzích.
+> Následující operace se vztahují na nejnovější verzi aplikace Retail. Některé operace se mohly změnit, nebo nemusí být k dispozici v předchozích verzích.
 
 | ID | Operace | popis | Mřížka tlačítek | Obrazovka transakce | Uvítací obrazovka | K dispozici offline | Specifické pro národní prostředí |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

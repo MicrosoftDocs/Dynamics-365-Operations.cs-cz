@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a9e05fd2a08921d2718fc239afd56a957f80915
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 7476cf797685feb4c50e3cefef4c53ca37b82dff
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865105"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251401"
 ---
 # <a name="warehouse-work-policies-overview"></a>Přehled zásad práce ve skladu
 
 [!include [banner](../includes/banner.md)]
 
-Zásady práce ve skladu v aplikaci Microsoft Dynamics 365 for Finance and Operations řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu.
+Zásady práce ve skladu řídí, zda je skladová práce vytvářena skladovými procesy ve výrobě na základě typu pracovního příkazu, skladového místa a produktu.
 
 Tato pracovní zásada řídí, zda je vytvořena práce skladu pro procesy skladu při výrobě. Zásadu práce můžete nastavit použitím kombinace **typů pracovního příkazu**, **skladového místa** a **produktu**. Například produkt L0101 je vykazován jako dokončený na umístění výstupu 001. Hotového výrobek je později spotřebován v jiné výrobní zakázce v umístění výstupu 001. V tomto případě můžete nastavením pracovní zásady zabránit vytvoření práce pro zaskladnění hotových výrobků, když nahlásíte produkt L0101 jako dokončený v umístění výstupu 001. Zásady práce označují individuální entitu, kterou lze popsat pomocí následujících informací:
 

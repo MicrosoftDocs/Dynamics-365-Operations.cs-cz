@@ -1,6 +1,6 @@
 ---
 title: Uživatel nebyl nalezen v nástroji pro výběr osob v aplikacích Attract nebo Onboard
-description: Toto téma vysvětluje, jak postupovat, když se uživatelé v klientovi společnosti nezobrazují v nástroji pro výběr osob v aplikacích Dynamics 365 for Talent Attract nebo Onboard.
+description: Toto téma vysvětluje, jak postupovat, když se uživatelé v klientovi společnosti nezobrazují v nástroji pro výběr osob v aplikacích Dynamics 365 Talent - Attract nebo Onboard.
 author: andreabichsel
 manager: AnnBe
 ms.date: 01/22/2019
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 2a3c83fcc3f48aa235ffb2db2dc492b34a306c4c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742742"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024178"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Uživatelé Azure Active Directory nenalezení v nástroji pro výběr osob
 
 [!include [banner](includes/banner.md)]
 
-## <a name="issue"></a>Výdej
+## <a name="issue"></a>Vydání
 
-Někteří platní uživatelé v aplikaci Microsoft Azure Active Directory (Azure AD) pro klienta se nezobrazují při hledání jména v nástroji pro výběr osob v aplikacích Dynamics 365 for Talent Attract nebo Onboard.
+Někteří platní uživatelé v aplikaci Microsoft Azure Active Directory (Azure AD) pro klienta se nezobrazují při hledání jména v nástroji pro výběr osob v aplikacích Dynamics 365 Talent: Attract nebo Dynamics 365 Talent: Onboard.
 
 ## <a name="cause"></a>Příčina
 
-Některé typy uživatelů nejsou aktuálně podporovány v aplikacích Attract či Onboard. Ověřte, zda uživatel není typem hosta Azure AD B2B. Informace o typu uživatele lze najít v listu Azure Active Directory na portálu Azure.
+Některé typy uživatelů nejsou aktuálně podporovány v aplikacích Attract a Onboard. Ověřte, zda uživatel není typem hosta Azure AD B2B. Informace o typu uživatele lze najít v listu Azure Active Directory na portálu Azure.
 
 Další informace o Azure B2B naleznete v tématu [Co je přístup uživatele typu host v Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 

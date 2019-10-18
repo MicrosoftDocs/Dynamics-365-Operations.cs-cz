@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548991"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250129"
 ---
 # <a name="onboard-vendors"></a>Nábor dodavatelů
 [!include [banner](../includes/banner.md)]
 
 ---
 
-Nové dodavatele lze nabrat a registrovat jako dodavatele v aplikaci Microsoft Dynamics 365 for Finance and Operations na základě informací získaných od osoby, která zastupuje dodavatele.
+Nové dodavatele lze nabrat a registrovat jako dodavatele v aplikaci Microsoft Dynamics 365 Supply Chain Management na základě informací získaných od osoby, která zastupuje dodavatele.
 
 Proces se skládá z následujících kroků, kde různé role provádějí akce v systému.
 
 1. **Správa dat OData** – Import entit – Počáteční požadavek je požadavek na registraci potenciálního dodavatele. Tento požadavek obvykle pocházejí ze zdroje, jako je například odběratelem hostovaný web umožňující anonymní přístup. Dodavatelé se mohou zaregistrovat zadáním základních informací, jako je název dodavatele, odůvodnění, číslo organizace a jméno a e-mailová adresa kontaktní osoby. Požadavky jsou importovány prostřednictvím rozhraní pro správu dat.
-2. **Stránka se seznamem požadavků na registraci potenciálního dodavatele** - Na základě informací, které jsou zadané v požadavku na registraci potenciálního dodavatele, se pracovník zásobování rozhodne, zda bude dodavatel nově přijat. Pracovník zásobování zobrazí příchozí požadavek na stránce se seznamem **Požadavky na registraci potenciálního dodavatele** v aplikaci Finance and Operations.
+2. **Stránka se seznamem požadavků na registraci potenciálního dodavatele** - Na základě informací, které jsou zadané v požadavku na registraci potenciálního dodavatele, se pracovník zásobování rozhodne, zda bude dodavatel nově přijat. Pracovník zásobování zobrazí příchozí požadavek na stránce se seznamem **Požadavky na registraci potenciálního dodavatele**.
 3. **Workflow zřízení uživatele** – pokud pracovník zásobování ověřil informace v příchozím požadavku a rozhodl se pokračovat s procesem náboru, workflow požadavku uživatele zřídí nového uživatele a odešle e-mailovou pozvánku k přijetí kontaktní osoby jako ověřeného uživatele aplikace Microsoft Dynamics 365.
-4. **Průvodce registrace potenciálního dodavatele** - kontaktní osoba dodavatele se přihlásí do aplikace Finance and Operations pomocí nového uživatelského účtu. Tato osoba dokončí průvodce registrace potenciálního dodavatele pro poskytnutí informací, jako jsou adresy, obchodní informace, kategorie zásobování a odpovědi na dotazník.
+4. **Průvodce registrace potenciálního dodavatele** - kontaktní osoba dodavatele se přihlásí pomocí nového uživatelského účtu. Tato osoba dokončí průvodce registrace potenciálního dodavatele pro poskytnutí informací, jako jsou adresy, obchodní informace, kategorie zásobování a odpovědi na dotazník.
 5. **Workflow schválení** - je vytvořen požadavek na dodavatele, který obsahuje informace o registraci. Požadavek na dodavatele je odeslán do workflowu a přesměrován na kontrolu a schválení.
 6. **Vytvoření hlavních dat dodavatele a úprava uživatelské role** – když je schválen požadavek na dodavatele, je vytvořen záznam dodavatele. Uživatelský účet kontaktní osoby dodavatele má buď uděleno oprávnění k dodavatelské spolupráci nebo je deaktivován.
 
@@ -45,14 +45,14 @@ Následující tabulka zobrazuje kroky a role, které jsou zahrnuty v procesu.
 |--------------------------|---|---|---|---|---|---|
 | System                   | Žádost o nového dodavatele je importována. | | | | | Po přijetí oslovení dodavatele je vytvořen záznam dodavatele. |
 | Pracovník zásobování | | Spusťte proces náboru. | | | Zkontrolujte a přijměte nebo odmítněte oslovení dodavatele. | |
-| Správce            | | | Vytvořte uživatele v aplikaci Finance and Operations a Microsoft Azure. | | | |
+| Správce            | | | Vytvořte uživatele v aplikacích Supply Chain Management a Microsoft Azure. | | | |
 | Kontaktní osoba dodavatele    | | | Odešlete e-mail kontaktní osobě. | Zaregistruje informace o dodavateli. | | |
 
-Pro rychlou demonstraci náborového procesu dodavatele se podívejte na toto krátké video na YouTube: [Onboard a new vendor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+Pro rychlou ukázku náborového procesu dodavatele se podívejte na toto krátké video na YouTube: [Příjem nového dodavatele v aplikaci Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Import požadavků na registraci potenciálního dodavatele
 
-Požadavek na registraci potenciálního dodavatele je entita v aplikaci Finance and Operations. Systém lze nastavit k importu data prostřednictvím této entity. 
+Požadavek na registraci potenciálního dodavatele je entita v aplikaci Supply Chain Management. Systém lze nastavit k importu data prostřednictvím této entity. 
 
 Následující tabulka zobrazuje informace, které tato entita obsahuje a které mohou být importovány.
 
@@ -65,18 +65,18 @@ Následující tabulka zobrazuje informace, které tato entita obsahuje a které
 | Křestní jméno kontaktní osoby  | Křestní jméno osoby, která bude pozvána k registraci informací o dodavateli. |
 | Druhé jméno kontaktní osoby | Druhé jméno osoby, která bude pozvána k registraci informací o dodavateli. |
 | Příjmení kontaktní osoby   | Příjmení osoby, která bude pozvána k registraci informací o dodavateli. |
-| E-mail kontaktní osoby       | E-mailová adresa, která se použije k vytvoření nového uživatele v aplikaci Finance and Operations a která bude registrována u klientského účtu Azure Active Directory (Azure AD). |
+| E-mail kontaktní osoby       | E-mailová adresa, která se použije k vytvoření nového uživatele v aplikaci Supply Chain Management a která bude registrována u klientského účtu Azure Active Directory (Azure AD). |
 | Odeslané datum               | Datum vytvoření požadavku v externím systému. |
-| Právnická osoba                 | Právnická osoba, u které se dodavatel uchází o to, aby se stal jejím dodavatelem. Tato hodnota musí být kód právnické osoby, který byl registrováno v aplikaci Finance and Operations. Pokud není žádná hodnota přijata prostřednictvím procesu importu, použije se hodnota z parametrů modulu Zásobování a zdroje. |
+| Právnická osoba                 | Právnická osoba, u které se dodavatel uchází o to, aby se stal jejím dodavatelem. Tato hodnota musí být kód právnické osoby, který byl registrováno v aplikaci Supply Chain Management. Pokud není žádná hodnota přijata prostřednictvím procesu importu, použije se hodnota z parametrů modulu Zásobování a zdroje. |
 | Typ dodavatele                  | Dodavatel může být buď organizace, nebo osoba. Typ dodavatele určuje, jak je nakonec dodavatel vytvořen. |
 
 Po importu požadavku na registraci potenciálního dodavatele se tento zobrazí na stránce se seznamem **Požadavek na registraci potenciálního dodavatele**. Z této stránky může pracovník zásobování pozvat uživatele. Požadavek uživatele na zřízení uživatele je odeslání do workflowu.
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Odeslání požadavku na potenciálního dodavatelského uživatele
 
-Účelem požadavku na potenciálního dodavatelského uživatele je zřízení osoby, která odeslal původní požadavek, aby se mohla přihlásit do aplikace Finance and Operations pomocí e-mailového účtu, který je poskytnut v požadavku na registraci potenciálního dodavatele.
+Účelem požadavku na potenciálního dodavatelského uživatele je zřízení osoby, která odeslal původní požadavek, aby se mohla přihlásit do aplikace Supply Chain Management pomocí e-mailového účtu, který je poskytnut v požadavku na registraci potenciálního dodavatele.
 
-Požadavek potenciálního dodavatelského uživatele bude zpracován workflowem požadavku uživatele. Tento workflow komunikuje prostřednictvím spolupráce Azure AD B2B. Vytvoří uživatele v aplikaci Finance and Operations, který má odpovídající nastavení zabezpečení.
+Požadavek potenciálního dodavatelského uživatele bude zpracován workflowem požadavku uživatele. Tento workflow komunikuje prostřednictvím spolupráce Azure AD B2B. Vytvoří uživatele v aplikaci Supply Chain Management, který má odpovídající nastavení zabezpečení.
 
 Noví uživatelé, kteří jsou nastaveni, mají následující role zabezpečení:
 
@@ -89,7 +89,7 @@ Informace o konfiguraci e-mailu a workflow obecně naleznete v popisu workflow p
 
 ## <a name="vendor-registration"></a>Registrace dodavatele
 
-Potenciální dodavatelský uživatel, který se přihlásí do aplikace Finance and Operations, uvidí první stránku průvodce registrací dodavatele, kde si může zadat informace o dodavateli.
+Potenciální dodavatelský uživatel, který se přihlásí do aplikace Supply Chain Management, uvidí první stránku průvodce registrací dodavatele, kde si může zadat informace o dodavateli.
 
 Průvodce odráží konfiguraci požadavku na dodavatele. Země nebo oblasti, kde dodavatel provozuje své podnikání, určuje , jaké informace jsou požadovány v průvodci a jaké informace jsou povinné.
 
@@ -119,7 +119,7 @@ Požadavky na dodavatele jsou k dispozici na stránce **Uživatelské žádosti 
 
 Požadavek na dodavatele obsahuje informace zadané uživatelem potenciálního dodavatele v průvodci registrací dodavatele.
 
-Požadavek vám umožní zkontrolovat informace o dodavateli a rozhodnout, zda by se měl dodavatel stát registrovaným dodavatelem v aplikaci Finance and Operations.
+Požadavek vám umožní zkontrolovat informace o dodavateli a rozhodnout, zda by se měl dodavatel stát registrovaným dodavatelem.
 
 Požadavek na dodavatele má být odeslán do workflowu a měl by být směrován k příslušné kontrolorům a schvalovatelům. Další základní informace o způsobu nastavení workflowů naleznete v části [Workflowy zásobování a zdrojů](procurement-sourcing-workflows.md).
 
@@ -141,7 +141,7 @@ Když je požadavek na dodavatele schválen, je vytvořen účet dodavatele a st
 
 Před schválením požadavku na dodavatele na stránce **Nový dodavatel**, na pevné záložce **Obecné** vyberte **Skupina dodavatelů** a vyberte skupinu dodavatelů.
 
-Pokud má mít potenciální dodavatelský uživatel přístup k aplikaci Finance and Operations jako uživatel dodavatelské spolupráce představující dodavatele, nastavte oprávnění k přístupu dodavatelské spolupráce na **Ano**. Chcete-li deaktivovat uživatelský účet, který potenciální dodavatele použil k registraci, nastavte toto oprávnění na **Ne**.
+Pokud má mít potenciální dodavatelský uživatel přístup k aplikaci Supply Chain Management jako uživatel dodavatelské spolupráce představující dodavatele, nastavte oprávnění k přístupu dodavatelské spolupráce na **Ano**. Chcete-li deaktivovat uživatelský účet, který potenciální dodavatele použil k registraci, nastavte toto oprávnění na **Ne**.
 
 Je-li oprávnění pro přístup k dodavatelské spolupráci nastaven na **Ano**, je po schválení požadavku na dodavatele odeslána žádost na úpravu role uživatele, aby měl uživatel role, které jsou definovány pro typ **Dodavatel** v položce **Externí role**. Je-li toto oprávnění nastaveno na **Ne**, je po schválení požadavku na dodavatele odeslána žádost na deaktivaci uživatele. V takovém případě musí být nastaveno workflow k deaktivaci požadavku uživatele.
 

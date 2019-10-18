@@ -1,5 +1,5 @@
 ---
-title: Upgrade procesů řízení skladu z aplikace Microsoft Dynamics AX 2012 na aplikaci Finance and Operations
+title: Upgrade správy skladu z Microsoft Dynamics AX 2012 do Supply Chain Management
 description: Toto téma poskytuje přehled možností migrace produktů a řízení skladu.
 author: perlynne
 manager: AnnBe
@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c3dcb75653743d0d135eda197c6330f3ee9c5383
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554039"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251424"
 ---
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Upgrade procesů řízení skladu z aplikace Microsoft Dynamics AX 2012 na aplikaci Finance and Operations
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Upgrade správy skladu z Microsoft Dynamics AX 2012 do Supply Chain Management 
 
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma uvádí přehled procesu upgradu z Microsoft Dynamics AX 2012 R3 s modulem WMSII na Microsoft Dynamics 365 for Finance and Operations.
+Toto téma uvádí přehled procesu upgradu z Microsoft Dynamics AX 2012 R3, s modulem WMSII do Supply Chain Management.
 
-Finance and Operations již nepodporuje zastaralý modul **WMSII** aplikace Microsoft Dynamics AX 2012. Místo toho můžete použít modul **Řízení skladu**. V modulu WMSII by mohlo být možné vybrat dimenze Skladové místo a ID palety pro finanční zásoby, dimenzi zásob ID palety však nelze použít pro finanční zásoby v modulu Finance and Operations.
+Supply Chain Management již nepodporuje zastaralý modul **WMSII** aplikace Microsoft Dynamics AX 2012. Místo toho můžete použít modul **Řízení skladu**. V modulu WMSII by mohlo být možné vybrat dimenze Skladové místo a ID palety pro finanční zásoby, dimenzi zásob ID palety však nelze použít pro finanční zásoby v modulu Supply Chain Management.
 
 Během upgradu jsou všechny produkty, které jsou přiřazeny ke skupině dimenzí úložiště, která používá dimenzi zásob ID palety, označené jako blokované a Nezpracováno pro upgrade.
 
-## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Upgrade na Finance and Operations při použití aplikace AX 2012 R3 WMSII
+## <a name="upgrading-to-supply-chain-management-when-ax-2012-r3-wmsii-is-used"></a>Upgrade na Supply Chain Management při použití AX 2012 R3 WMSII
 Po upgradu však můžete možnosti sady migrace v procesu **změnit skupinu dimenzí úložiště položek** použít k odblokování produktů, které byly zablokovány během upgradu, a následně zpracovat transakce pro tyto produkty.
 
-### <a name="enabling-items-in-finance-and-operations"></a>Povolení položek v aplikaci Finance and Operations
-V aplikaci Finance and Operations je tato změna potřeba, protože sledování položky je součástí procesů řízení skladu. Pro tyto procesy musí být všechny sklady a jejich umístění spojena s profilem skladového místa. Konceptuálně platí, že pokud chcete používat procesy řízení skladů, je nutné nakonfigurovat následující:
+### <a name="enabling-items-in-supply-chain-management"></a>Povolení položek v Supply Chain Management 
+V aplikaci Supply Chain Management je tato změna potřeba, protože sledování položky je součástí procesů řízení skladu. Pro tyto procesy musí být všechny sklady a jejich umístění spojena s profilem skladového místa. Konceptuálně platí, že pokud chcete používat procesy řízení skladů, je nutné nakonfigurovat následující:
 -   Existují sklady musí být povoleny, aby bylo možné používat procesy správy skladu. 
 -   Existující uvolněné produkty musí mít přiřazenu skupinu dimenzí úložiště, která používá procesy správy skladu. 
 

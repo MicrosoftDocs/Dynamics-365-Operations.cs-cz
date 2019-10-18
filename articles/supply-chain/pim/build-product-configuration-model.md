@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b50aa1df7a169e71d3e2e477bd1515d70cedccab
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865369"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249487"
 ---
 # <a name="product-configuration-overview"></a>Přehled konfigurace produktu
 
@@ -60,6 +60,9 @@ Model konfigurace produktu obsahuje jednu nebo více součástí, které jsou sp
 
 Každá komponenta má jeden nebo více atributů určující její vlastnosti. Vlastnosti jsou uživateli vybírány během procesu konfigurace. Atributy řídí vztahy mezi komponentami a uvnitř komponent prostřednictvím zařazení do omezení nebo výpočtů. Prostřednictvím podmínek, které jsou použity na řádcích kusovníku, lze atributy použít k určení fyzickým částem, které tvoří konfigurovaný produkt. Kromě toho atribut dokáže řídit vlastnosti řádku kusovníku pomocí mechanismu mapování. Podobná funkce existuje pro operace postupu týkající se nastavení zařazení a vlastností.
 
+>[!NOTE]
+> Při vytváření typů atributů se vyhněte vytváření vysokého počtu hodnot pro doménu typu atributu. To může způsobit zpomalování konfigurátoru produktu. 
+
 ### <a name="expression-constraints"></a>Omezení výrazu
 
 Použití modelu konfigurace produktu založené na omezeních znamená, že existují určitá omezení, když uživatel vybere hodnoty pro různé atributy. Tato omezení lze implementovat jako omezení výrazu modelu OML. Případně omezení lze provést ve formuláři tabulky omezení.
@@ -70,7 +73,7 @@ Omezení tabulek mohou být definovaná uživatelem nebo systémem.
 
 Omezení tabulky uživatelem je vytvořeno uživatelem. Uživatel vybere kombinaci typů atributů k představení sloupců tabulky a poté zadá hodnoty z domén typů vybraných atributů k vytvoření řádků v omezeních tabulky.  
 
-Omezení tabulky definované systémem je definována výběrem, kterou tabulku produktu Microsoft Dynamics 365 for Finance and Operations použít jako odkaz, a poté výběrem polí z této tabulky k seřazení sloupce v omezení. Omezení řádků tabulky jsou řádky tabulky Finance and Operations, které jsou k dispozici v době konfigurace.  
+Omezení tabulky definované systémem je definována výběrem, kterou tabulku produktu použít jako odkaz, a poté výběrem polí z této tabulky k seřazení sloupce v omezení. Omezení řádků tabulky jsou řádky tabulky Finance and Operations, které jsou k dispozici v době konfigurace.  
 
 Omezení tabulky je zahrnuto v modelu konfigurace produktu odkazováním na definici omezení tabulky a mapováním odpovídajících atributů v modelu do sloupců v omezení tabulky.
 

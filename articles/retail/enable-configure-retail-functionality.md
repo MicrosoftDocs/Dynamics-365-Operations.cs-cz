@@ -1,6 +1,6 @@
 ---
 title: Inicializace počátečních dat v nových prostředích Retail
-description: Tento článek popisuje data, která se vytváří v rámci inicializačního procesu pro aplikaci Microsoft Dynamics 365 for Retail.
+description: Tento článek popisuje data, která se vytváří v rámci inicializačního procesu pro aplikaci Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 49b21d81437ebd7cc55076444ee71ae1143bfac0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556891"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025509"
 ---
 # <a name="initialize-seed-data-in-new-retail-environments"></a>Inicializace počátečních dat v nových prostředích Retail
 
 [!include [banner](includes/banner.md)]
 
-Tento článek popisuje data, která se vytváří v rámci inicializačního procesu pro aplikaci Microsoft Dynamics 365 for Retail.
+Tento článek popisuje data, která se vytváří v rámci inicializačního procesu pro aplikaci Dynamics 365 Retail.
 
 Po zavedení maloobchodního řešení pomocí aplikace Microsoft Dynamics Lifecycle Services (LCS), musíte k vytvoření základních dat konfigurace inicializovat maloobchodní konfiguraci.
 
@@ -39,7 +39,7 @@ Po zavedení maloobchodního řešení pomocí aplikace Microsoft Dynamics Lifec
 
 Pro inicializaci konfigurace maloobchodu, postupujte takto.
 
-1. Spusťte klienta aplikace Dynamics 365 for Retail.
+1. Spusťte klienta aplikace Retail.
 2. Klikněte na možnost **Maloobchod** &gt; **Nastavení centrály** &gt; **Parametery** &gt; **Parametry maloobchodu**.
 3. Klepněte na tlačítko **Inicializovat**.
 
@@ -57,7 +57,7 @@ Inicializace vytvoří následující výchozí data konfigurace:
 - Šablony ověření entity
 - Dávková úloha pro vymazání historie relace Commerce Data Exchange
 
-Dále protokolování, které se vztahuje k odvětví platební karty (PCI) je povoleni pro databázi aplikace Dynamics 365 for Retail.
+Dále protokolování, které se vztahuje k odvětví platební karty (PCI) je povoleni pro databázi aplikace Retail.
 
 > [!NOTE]
 > Je možné Maloobchodní plánovač konfigurovat samostatně. Tato možnost umožňuje obnovíte konfiguraci maloobchodního plánovače na výchozí nastavení.

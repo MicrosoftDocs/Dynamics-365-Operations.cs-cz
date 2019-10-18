@@ -1,6 +1,6 @@
 ---
-title: Publikování pracovních míst na LinkedIn z aplikace Microsoft Dynamics 365 for Talent - Attract
-description: Toto téma vysvětluje postup použití aplikace Dynamics 365 for Talent - Attract pro publikování pracovních míst na LinkedIn.
+title: Publikování pracovních míst na LinkedIn z aplikace Microsoft Dynamics 365 Talent - Attract
+description: Toto téma vysvětluje postup použití aplikace Dynamics 365 Talent - Attract pro publikování pracovních míst na LinkedIn.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: f2109f5e90321598eb2317140eef6bcd86ab82f5
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 014202ca49e5bd6204d450b2a43c7372ed84ff33
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756169"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008236"
 ---
 # <a name="post-jobs-to-linkedin"></a>Publikování pracovních míst na LinkedIn
 
 [!include [banner](../includes/banner.md)]
 
-LinkedIn je nejvyšší světová síť profesionálů, která poskytuje přístup k nejlepším talentům. Microsoft Dynamics 365 for Talent: Attract vám pomůže získat talenty, které potřebujete, a to tak, že vám umožnít publilkovat pracovní místa přímo z Attract na LinkedIn.
+LinkedIn je nejvyšší světová síť profesionálů, která poskytuje přístup k nejlepším talentům. Microsoft Dynamics 365 Talent: Attract vám pomůže získat talenty, které potřebujete, a to tak, že vám umožnít publilkovat pracovní místa přímo z Attract na LinkedIn.
 
 Attract vám umožní zasílat omezené výpisy do LinkedIn bez dalších nákladů. Tyto výpisy jsou k dispozici pouze prostřednictvím softwarových partnerů LinkedIn, jako je například systém Attract. Nezobrazí se na panelu **Kariéra** na LinkedIn stránce vaší společnosti, protože zde jsou zobrazeny pouze placené výpisy. Zobrazí se však v případě, že potenciální kandidáti zobrazí všechna dostupná pracovní místa. Omezený výpisy jsou také zobrazeny ve vyhledávání práce na LinkedIn.
 

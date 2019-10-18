@@ -1,6 +1,6 @@
 ---
-title: Co je nového a co se změnilo v aplikaci Dynamics 365 for Talent (13. srpna 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Talent (13. srpna 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/13/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 1c10d5d7639c1606b00f95e0bd2b3b3fec326787
-ms.sourcegitcommit: db84eeef6f0bd531ba45b5e66bdacfd0398472e6
+ms.openlocfilehash: b813f3e4707724c262a32aca1227b3d91d1a229f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887476"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025972"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-13-2019"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 for Talent (13. srpna 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-august-13-2019"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Talent (13. srpna 2019)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 for Talent.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Změny v aplikaci Attract
 Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Attract.
@@ -54,9 +54,9 @@ Nová možnost umožní, aby manažeři zobrazili výkon svých přímých podř
 
 ## <a name="coming-soon"></a>Již brzy
 
-### <a name="platform-update-29"></a>Aktualizace platformy 29
+### <a name="platform-update-29-for-finance-and-operations"></a>Ajtzakuzace Platform Update 29 for Finance and Operations
 
-Další podrobnosti o aktualizaci Platform Update 29 naleznete v tématu [Funkce Preview v aktualizaci Platform Update 29 aplikace Dynamics 365 for Finance and Operations (říjen 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Další podrobnosti o aktualizaci Platform Update 29 for Finance and Operations naleznete v tématu [Funkce Preview v aktualizaci Platform Update 29 aplikace Dynamics 365 Finance and Operations (říjen 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
 ### <a name="streamlined-employee-entry-and-navigation"></a>Zjednodušené zadávání zaměstnance a navigace
 

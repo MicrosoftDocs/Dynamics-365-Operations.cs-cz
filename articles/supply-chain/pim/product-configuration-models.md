@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d908b9e58da06646e07ddc5fc4d937cc1f1849cd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 883337979201b3059b301b7aebf9952a70016989
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563590"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250611"
 ---
 # <a name="product-configuration-models-overview"></a>Přehled modelů konfigurace produktu
 
@@ -118,7 +118,7 @@ Pokud je typ atributu <strong>Logická hodnota</strong>, <strong>Celé číslo</
 </tr>
 </tbody>
 </table>
-Systémem definované omezení tabulek představuje mapování mezi typem atributu a polem v tabulce aplikace Finance and Operations. Omezení tabulky definované systémem dynamicky propojuje typ atributu s polem. Propojení umožňuje, aby atribut v modelu konfigurace produktu odrážel data v poli pro tabulku Finance and Operations.</td>
+Systémem definované omezení tabulek představuje mapování mezi typem atributu a polem v tabulce aplikace Finance and Operations. Omezení tabulky definované systémem dynamicky propojuje typ atributu s polem. Propojení umožňuje, aby atribut v modelu konfigurace produktu odrážel data v poli pro tabulku Supply Chain Management.</td>
 </tr>
 <tr class="odd">
 <td>Výpočty</td>

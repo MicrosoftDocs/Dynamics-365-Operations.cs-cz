@@ -1,6 +1,6 @@
 ---
 title: Lean manufacturing - přehled
-description: Tento článek poskytuje přehled a popis funkcí lean manufacturing v aplikaci Dynamics 365 for Finance and Operations.
+description: Tento článek poskytuje přehled a popis funkcí lean manufacturing v aplikaci Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,29 +19,29 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6db940548018c9d6bbb31891c21f7c334ba8956
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d338318d3f7a1b56fe98e5c093ccbe795bd8de44
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562385"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250065"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing – přehled
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek poskytuje přehled a popis funkcí lean manufacturing v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Tento článek poskytuje přehled a popis funkcí lean manufacturing v aplikaci Dynamics 365 Supply Chain Management.
 
 Lean manufacturing nabízí nástroje, které lze použít k modelování štíhlých operací. Tyto nástroje podporují následující koncepce a podnikatelské činnosti:
 -   Vytvoření základu pro lean manufacturing modelováním výroby a logistických procesů do podoby výrobních toků.
 -   Implementace štíhlého poptávkového systému pomocí kanbanů pro signalizaci požadavků poptávky.
 -   Sledování a správa kanbanovových úloh.
 
-Architektura lean manufacturing v aplikaci Finance and Operations obsahuje výrobní toky, aktivity a kanbanová pravidla. Tyto struktury jsou plně integrovány do procesů Finance and Operations. Lean manufacturing můžete použít ve smíšeném výrobní prostředí, ve kterém se kombinují různé strategie dodávek, výroby a zdrojů. Tyto strategie zahrnují výrobní zakázky, dávkové objednávky pro zpracovatelské odvětví, nákupní objednávky a převodní příkazy.
+Architektura lean manufacturing obsahuje výrobní toky, aktivity a kanbanová pravidla. Tyto struktury jsou plně integrovány do procesů Supply Chain Management. Lean manufacturing můžete použít ve smíšeném výrobní prostředí, ve kterém se kombinují různé strategie dodávek, výroby a zdrojů. Tyto strategie zahrnují výrobní zakázky, dávkové objednávky pro zpracovatelské odvětví, nákupní objednávky a převodní příkazy.
 
 | **Důležité**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aplikaci Finance and Operations můžete použít k podpoře implementace lean manufacturingu s kanbany. Úspěšná implementace zásad štíhlé výroby však závisí na vnitřních obchodních procesech, které používáte, a skutečných výrobních podmínkách a prostředí. |
+| Aplikaci Supply Chain Management můžete použít k podpoře implementace lean manufacturingu s kanbany. Úspěšná implementace zásad štíhlé výroby však závisí na vnitřních obchodních procesech, které používáte, a skutečných výrobních podmínkách a prostředí. |
 
 ## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a> Modelování procesů výroby a logistiky do podoby výrobních toků
 Základ pro lean manufacturing lze vytvořit modelováním výroby a logistických procesů do podoby výrobních toků. Tato aktivita se skládá z následujících úloh:
@@ -69,8 +69,8 @@ V následujícím seznamu jsou popsány speciální kanbanové desky:
 -   Kanbanová deska pro úlohy převodu – dává přehled o aktuálních úlohách převodu. Můžete aktualizovat a registrovat výdejky, zahajovat a dokončovat úlohy převodu a provádět další úlohy.
 -   Kanbanová deska pro úlohy procesu – tato deska slouží k podpoře normálního výrobního toku a dává přehled o aktuální situaci v jedné nebo více pracovních buňkách. Na této desce lze kanbanům určit prioritu, vyskladnit je nebo vyrobit. Správní slouží také k podpoře snímání čárových kódů pro potřeby vykazování kanbanů.
 
-## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>Kanbanové úlohy a integrace s procesy aplikace Finance and Operations
-Kanbanové úlohy jsou plně integrovány do aktuálních procesů pro skladové transakce v aplikaci Finance and Operations.
+## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanbanové úlohy a integrace s procesy Supply Chain Management
+Kanbanové úlohy jsou plně integrovány do aktuálních procesů pro skladové transakce v aplikaci Supply Chain Management.
 -   Můžete provádět aktivity vyskladnění k doplnění materiálu, který se používá ke splnění požadavků kanbanových úloh.
 -   Můžete vytisknout kanbanové karty, kolující kanbanové karty a výdejky, aby se kanbany lépe používaly. Tyto dokumenty představují sledování a registraci kanbanových úloh ve skladu a Dílenské výrobě.
 -   Sejmutím čárového kódu můžete zaregistrovat aktivity výdeje a převodu ve skladu.

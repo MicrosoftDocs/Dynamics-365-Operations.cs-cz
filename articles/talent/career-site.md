@@ -1,6 +1,6 @@
 ---
-title: Nastavení kariérního webu v aplikaci Microsoft Dynamics 365 for Talent - Attract
-description: Toto téma poskytuje přehled funkce kariérního webu vystaveného kandidátům v aplikaci Microsoft Dynamics 365 for Talent - Attract.
+title: Nastavení kariérního webu v aplikaci Microsoft Dynamics 365 Talent - Attract
+description: Toto téma poskytuje přehled funkce kariérního webu vystaveného kandidátům v aplikaci Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ec5fe31c6547b008b29e656729c35863d90bffc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739764"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026272"
 ---
 # <a name="set-up-your-career-site"></a>Nastavení kariérního webu
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled funkce kariérního webu vystaveného kandidátům v aplikaci Microsoft Dynamics 365 for Talent: Attract. Také vysvětluje, jak tuto funkci nastavit.
+Toto téma poskytuje přehled funkce kariérního webu vystaveného kandidátům v aplikaci Microsoft Dynamics 365 Talent: Attract. Také vysvětluje, jak tuto funkci nastavit.
 
 Attract poskytuje jeden kariérní web pro každé prostředí v klientovi. Pokud například organizace používá prostředí pro vývoj a testovací prostředí, je zřízen jeden kariérní web pro vývojové prostředí a jiný pro testovací prostředí. Každý kariérní web je zcela nezávislý a má vlastní mechanismus ověřování. Mezi kariérními weby nejsou sdíleny pracovní pozice a profily kandidátů.
 

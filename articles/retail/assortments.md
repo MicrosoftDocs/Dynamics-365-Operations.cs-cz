@@ -1,6 +1,6 @@
 ---
 title: Správa sortimentu
-description: Toto téma vysvětluje základní koncepty správy sortimentu v aplikaci Microsoft Dynamics 365 for Retail a poskytuje úvahy nad implementací pro váš projekt.
+description: Toto téma vysvětluje základní koncepty správy sortimentu v aplikaci Dynamics 365 Retail a poskytuje úvahy nad implementací pro váš projekt.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4652641be0a1edaac919d36c7f127cd62c355a57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558821"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025833"
 ---
 # <a name="assortment-management"></a>Správa sortimentu
 
@@ -28,7 +28,7 @@ ms.locfileid: "1558821"
 
 ## <a name="overview"></a>Přehled
 
-Microsoft Dynamics 365 for Retail nabízí *sortimenty*, které umožňují spravovat dostupnost produktu mezi kanály. Sortimenty určují, které produkty jsou k dispozici v konkrétních obchodech a v konkrétním období.
+Dynamics 365 Retail nabízí *sortimenty*, které umožňují spravovat dostupnost produktu mezi kanály. Sortimenty určují, které produkty jsou k dispozici v konkrétních obchodech a v konkrétním období.
 
 V aplikaci Retail je sortiment mapováním jednoho nebo více kanálů (nebo skupin kanálů při použití hierarchií organizace) na jeden nebo více produktů (nebo skupin produktů, pokud jsou použity hierarchie kategorií).
 

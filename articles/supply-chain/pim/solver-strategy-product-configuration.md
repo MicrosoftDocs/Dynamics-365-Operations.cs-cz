@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a548d3536bbc0056ee22c07c464af062029da81
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560294"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250569"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Strategie řešitele pro konfiguraci produktů
 
@@ -45,7 +45,7 @@ Koncept strategie řešitele se nyní skládá z následujících strategií:
 
 Model konfigurace výrobku může být formulován jako [problém omezení spokojenosti](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf). Microsoft Solver Foundation (MSF) nabízí dva typy strategie řešitele k vyřešení problémů omezení spokojenosti, které lze používat z modelů konfigurace produktu. Tyto strategie řešitele využívají [heuristiky](https://techterms.com/definition/heuristic), která se používá k určení pořadí, ve kterém se proměnné problémů omezení spokojenosti zvažují při řešení problémů. Heuristika může významně ovlivnit výkon při řešení problému nebo třídy problémů.
 
-V aplikaci Finance and Operations strategie řešitele pro modely konfigurace produktu určuje řešitele, který se používá s heuristikou. Strategie **Výchozí**, **Minimální domény jako první** a **Shora dolů** používají dva řešitele z MSF, zatímco strategie **Z3** používá Z3 řešitele. 
+Strategie řešitele pro modely konfigurace produktu určuje řešitele, který se používá s heuristikou. Strategie **Výchozí**, **Minimální domény jako první** a **Shora dolů** používají dva řešitele z MSF, zatímco strategie **Z3** používá Z3 řešitele. 
 
 Reálné studie implementace odběratele ukázaly, že změna strategii řešitele pro model konfigurace produktu může zkrátit čas odezvy z minut na milisekundy. Je proto vhodné se pokusit o jinou strategii řešitele k nalezení nejúčinnější strategie pro konfiguraci modelu produktu.
 

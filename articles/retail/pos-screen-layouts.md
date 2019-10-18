@@ -1,6 +1,6 @@
 ---
 title: Rozložení obrazovky pokladního místa (POS)
-description: Toto téma obsahuje informace o rozložení obrazovky pro prostředí POS aplikace Microsoft Dynamics 365 for Retail.
+description: Toto téma obsahuje informace o rozložení obrazovky pro prostředí POS aplikace Dynamics 365 Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 05/20/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1607027"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025258"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Rozložení obrazovky pokladního místa (POS)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma obsahuje informace o rozložení obrazovky pro prostředí POS aplikace Microsoft Dynamics 365 for Retail.
+Toto téma obsahuje informace o rozložení obrazovky pro prostředí POS aplikace Dynamics 365 Retail.
 
 Uživatelské rozhraní Retail POS lze konfigurovat pomocí kombinace vizuálních profilů a rozložení obrazovky, které jsou přiřazeny k obchodům, registračním pokladnám nebo uživatelům.
 
@@ -50,7 +50,7 @@ Vizuální profily jsou přiřazeny registrům a určují vizuální prvky, kter
 - **Popis** -můžete zadat smysluplný název, který vám pomůže identifikovat správný profil pro danou situaci.
 - **Motiv** -můžete zvolit mezi světlým nebo tmavým motivem aplikace. Motiv ovlivní barvu písma a pozadí napříč aplikací.
 - **Barva zvýraznění** -barva zvýraznění v celém POS slouží k odlišení nebo zvýraznění konkrétních vizuálních prvků, jako jsou dlaždice, příkazová tlačítka a hypertextové odkazy. Tyto prvky typicky slouží k provádění akcí.
-- **Barva záhlaví** – lze konfigurovat barvu záhlaví stránky podle požadavků maloobchodníka týkajících se značky. Tato funkce je k dispozici pouze v Microsoft Dynamics 365 for Retail verze 1611.
+- **Barva záhlaví** – lze konfigurovat barvu záhlaví stránky podle požadavků maloobchodníka týkajících se značky. Tato funkce je k dispozici pouze v aplikaci Retail verze 1611.
 - **Zobrazit datum a čas** – V případě povolení se v záhlaví POS zobrazí aktuální datum a čas.
 - **Pozadí přihlašování** - můžete zadat obrázek pozadí pro přihlašovací obrazovku. Velikost obrázků na pozadí je třeba uchovávat co nejmenší, protože ukládání a načítání velkých souborů může mít vliv na chování a výkon aplikace.
 - **Pozadí aplikace** - můžete určit obrázek pozadí, který bude použit namísto plné barvy motivu v celé aplikaci. Pokud jde o pozadí při přihlašování, velikost souboru by měla být co nejmenší.

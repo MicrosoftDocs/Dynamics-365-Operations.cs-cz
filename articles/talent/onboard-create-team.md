@@ -1,6 +1,6 @@
 ---
-title: Vytvoření náborového týmu za použití Dynamics 365 for Talent - Onboard
-description: V tomto tématu je vysvětleno, jak pomocí aplikace Microsoft Dynamics 365 for Talent - Onboard vytvořit náborové týmy.
+title: Vytvoření náborového týmu za použití Dynamics 365 Talent - Onboard
+description: V tomto tématu je vysvětleno, jak pomocí aplikace Microsoft Dynamics 365 Talent - Onboard vytvořit náborové týmy.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 996fc42881ce708992614c58877927e03bbf78bf
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: b22bf5fb5b2a2756684304d1cb26c0f8a7419c00
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731390"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010814"
 ---
-# <a name="create-a-hiring-team-by-using-dynamics-365-for-talent-onboard"></a>Vytvoření náborového týmu za použití Dynamics 365 for Talent: Onboard
+# <a name="create-a-hiring-team-by-using-onboard"></a>Vytvoření náborového týmu za použití Onboard
 
 [!include [banner](includes/banner.md)]
 
-Ve aplikaci Microsoft Dynamics 365 for Talent: Onboard můžete vytvářet náborové týmy. Poté můžete jednotlivým týmům přiřadit průvodce zaškolením a šablony.
+Ve aplikaci Microsoft Dynamics 365 Talent: Onboard můžete vytvářet náborové týmy. Poté můžete jednotlivým týmům přiřadit průvodce zaškolením a šablony.
 
 ## <a name="create-a-hiring-team"></a>Vytvoření náborového týmu
 

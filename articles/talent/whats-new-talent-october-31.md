@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (31. října 2018)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent Core HR.
+title: Co je nového nebo upraveného v aplikaci Dynamics 365 Talent – Core HR (31. října 2018)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 10/31/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d6942f8e4dc86f18a081b347df0567b1358a87ab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2ad9be740d917a760815718a1473d7bcba97968
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517548"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025925"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-31-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (31. října 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-october-31-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent: Core HR (31. října 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -33,15 +33,15 @@ ms.locfileid: "1517548"
 
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Core HR.
 
-## <a name="create-links-from-talent-to-finance-and-operations"></a>Vytvoření propojení z aplikace Talent do aplikace Finance and Operations
-Tato nová navigační funkce vám umožní propojit se z aplikace Talent do aplikace Finance and Operations, což vám umožní přímý přechod na stránky aplikace Finance and Operations. Po nastavení propojení můžete zadat název a skupinu propojení, kde se má propojení objevit v aplikaci Talent a cílovou stránku, která se otevře v aplikaci Finance and Operations.
+## <a name="create-links-from-talent-to-finance"></a>Vytvoření propojení z aplikace Talent do aplikace Finance
+Tato nová navigační funkce vám umožní propojit se z aplikace Talent do aplikace Finance, což vám umožní přímý přechod na stránky aplikace Finance. Po nastavení propojení můžete zadat název a skupinu propojení, kde se má propojení objevit v aplikaci Talent a cílovou stránku, která se otevře v aplikaci Finance.
 
 #### <a name="coming-soon"></a>Již brzy
-Kontext pole bude přidán později, aby umožnil přímý přechod na odpovídající záznamy v aplikaci Finance and Operations. Například můžete použít **Odkaz na pole** pro poskytnutí kontextu k přímému přechodu na konkrétního zaměstnance nebo pozici v aplikaci Finance and Operations.
+Kontext pole bude přidán později, aby umožnil přímý přechod na odpovídající záznamy v aplikaci Finance. Například můžete použít **Odkaz na pole** pro poskytnutí kontextu k přímému přechodu na konkrétního zaměstnance nebo pozici v aplikaci Finance.
 
 ### <a name="configure-target-systems"></a>Konfigurace cílových systémů
 
-V aplikaci Talent mohou definovat správci systému propojení, která se zobrazí, prostřednictvím pracovního prostoru Správa systému. Součástí konfigurace je prostředí Finance and Operations, do kterého chcete přejít jako do cíle propojení. Toho dosáhnete přiřazením názvu cílovému systému a zadáním URL adresy prostředí Finance and Operations. Zde je příklad URL adresy Finance and Operations, kterou můžete zadat: https://devax00124aos.cloud.test.dynamics.com/. Po nakonfigurování cílových systémů můžete nadefinovat svá propojení.
+V aplikaci Talent mohou definovat správci systému propojení, která se zobrazí, prostřednictvím pracovního prostoru Správa systému. Součástí konfigurace je prostředí Finance, do kterého chcete přejít jako do cíle propojení. Toho dosáhnete přiřazením názvu cílovému systému a zadáním URL adresy prostředí Finance. Zde je příklad URL adresy Finance, kterou můžete zadat: https://devax00124aos.cloud.test.dynamics.com/. Po nakonfigurování cílových systémů můžete nadefinovat svá propojení.
 
 ### <a name="configure-links"></a>Konfigurovat odkaz
 
@@ -51,27 +51,27 @@ Každé propojení, které je vytvořeno, má definovány následující informa
 
 - Povolit toto propojení - Nastavte tuto možnost na **Ano**, pokud chcete zobrazit toto propojení pro uživatele aplikace Talent.
 
-- Zobrazovaný název – Definujte název, který se zobrazí jako propojení do aplikace Finance and Operations. Tato data nejsou momentálně přeložena.
+- Zobrazovaný název – Definujte název, který se zobrazí jako propojení do aplikace Finance. Tato data nejsou momentálně přeložena.
 
 - Odkaz na místo zobrazení ve formuláři - Vyberte, na které stránce se má zobrazit propojení.
 
 - Skupina - Skupiny nejsou vyžadovány, ale pokud chcete uspořádat svá propojení pomocí skupin, vyberte existující skupinu, nebo vytvořte novou pomocí pole **Skupina**.
 
-- Cílový systém - Vyberte cílový systém, který byl vytvořen pomocí možnosti **Konfigurace cílového systému**. Bude se jednat o prostředí Finance and Operations, které bude použito při navigaci pomocí propojení.
+- Cílový systém - Vyberte cílový systém, který byl vytvořen pomocí možnosti **Konfigurace cílového systému**. Bude se jednat o prostředí Finance, které bude použito při navigaci pomocí propojení.
 
-- Použít aktuální společnosti uživatele – Vyberte **Ano**, budete-li chtít používat kontext aktuální společnosti uživatele při navigaci do Finance and Operations. Pokud zvolíte **Ne**, můžete vybrat společnost, která má být použita.
+- Použít aktuální společnosti uživatele – Vyberte **Ano**, budete-li chtít používat kontext aktuální společnosti uživatele při navigaci do Finance. Pokud zvolíte **Ne**, můžete vybrat společnost, která má být použita.
 
-- Cílová položka nabídky- Zadejte položku nabídky z Finance and Operation, kterou má používat propojení při navigaci. K dispozici jsou položky nabídky, ke kterým můžete přímo navigovat. Chcete-li vyhledat požadovanou položku nabídky, otevřete Finance and Operations a otevřete stránku, která je cílem navigace. Zkopírujte položku nabídky z adresy URL. Například pokud chcete, aby vás odkaz navedl na seznam zaměstnanců v aplikaci Finance and Operations, zadejte hodnotu, které se objeví v URL adrese za „&mi“. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. Položka nabídky pro navigaci na stránku se seznamem zaměstnanců v tomto příkladu je: HcmWorkerListPage_Employees.
+- Cílová položka nabídky- Zadejte položku nabídky z Finance, kterou má používat propojení při navigaci. K dispozici jsou položky nabídky, ke kterým můžete přímo navigovat. Chcete-li vyhledat požadovanou položku nabídky, otevřete Finance a otevřete stránku, která je cílem navigace. Zkopírujte položku nabídky z adresy URL. Například pokud chcete, aby vás odkaz navedl na seznam zaměstnanců v aplikaci Finance and Operations, zadejte hodnotu, které se objeví v URL adrese za „&mi“. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. Položka nabídky pro navigaci na stránku se seznamem zaměstnanců v tomto příkladu je: HcmWorkerListPage_Employees.
 
 - Odkaz na zdroj dat – Vyberte zdroj dat, na která se odkaz odkazuje. Nejběžnější zdroje, jako je například **Pracovník** a **Pozice**, jsou k dispozici.
 
-- Odkaz na pole - (připravuje se) Tento výběr pole umožní přímou navigaci z jednoho záznamu v aplikaci Talent do jednoho záznamu v aplikaci Finance and Operations.
+- Odkaz na pole - (připravuje se) Tento výběr pole umožní přímou navigaci z jednoho záznamu v aplikaci Talent do jednoho záznamu v aplikaci Finance.
 
 ### <a name="access-to-links"></a>Přístup k odkazům
 
 Správci systému uvidí nově vytvořené odkazy na definovaných stránkách, i když je možnost **Povolit tento odkaz** nastavena na **Ne**. To lze použít k testování odkazů předtím, než budou vystaveny k použití pro jiné zaměstnance. Všechny ostatní role uvidí jen konfigurované odkazy poté, co bude možnost **Povolit teto odkaz** nastavena na **Ano**. Zaměstnanci, kteří mají přístup ke stránkám, na kterých jsou odkazy k dispozici, budou mít přístup k odkazům.
 
-Uživatelé také mají bezpečnostní oprávnění v rámci aplikace Finance and Operations definované pro přístup ke stránkám v aplikaci Finance and Operations. Pokud ne, zobrazí se při použití odkazu dialogové okno zabezpečení.
+Uživatelé také mají bezpečnostní oprávnění v rámci aplikace Finance definované pro přístup ke stránkám v aplikaci Finance and Operations. Pokud ne, zobrazí se při použití odkazu dialogové okno zabezpečení.
 
 
 ## <a name="other-changesfixes"></a>Další změny/opravy

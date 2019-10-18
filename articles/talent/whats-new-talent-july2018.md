@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (červenec 2018)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent Core HR.
+title: Co je nového nebo upraveného v aplikaci Dynamics 365 Talent - Core HR (červenec 2018)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent - Core HR.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/31/2018
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: c0867fcf6203c303a700723d8c190378f495dac0
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: ba06183f32e9a788432bae640d1997f2ffb127f1
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856250"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010215"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-july-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (červenec 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-july-2018"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Talent: Core HR (červenec 2018)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent Core HR.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent: Core HR.
 
 ## <a name="powerapps-personalization"></a>Individuální nastavení PowerApps
 
-Aplikace Microsoft Dynamics 365 for Talent podporuje integraci se službou Microsoft PowerApps. PowerApps umožňují vývojářům i netechnickým uživatelům vytvářet vlastní obchodní aplikace pro mobilní zařízení, tablety a web, aniž by bylo nutné psát kód. Aplikace, které jste vytvořili vy, vaše organizace nebo širší ekosystém pomocí PowerApps, lze poté vložit do klienta aplikace Talent, aby bylo možné vylepšit funkce produktu. Například může vytvořit aplikaci pro doplnění aplikace Talent s informacemi získanými z jiného systému.
+Aplikace Talent podporuje integraci se službou Microsoft PowerApps. PowerApps umožňují vývojářům i netechnickým uživatelům vytvářet vlastní obchodní aplikace pro mobilní zařízení, tablety a web, aniž by bylo nutné psát kód. Aplikace, které jste vytvořili vy, vaše organizace nebo širší ekosystém pomocí PowerApps, lze poté vložit do klienta aplikace Talent, aby bylo možné vylepšit funkce produktu. Například může vytvořit aplikaci pro doplnění aplikace Talent s informacemi získanými z jiného systému.
 
 Další informace naleznete v tématu [Integrace aplikací PowerApps](../fin-and-ops/get-started/embed-power-apps.md).
 

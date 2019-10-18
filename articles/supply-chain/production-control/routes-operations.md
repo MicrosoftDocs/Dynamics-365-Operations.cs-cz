@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522190"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249949"
 ---
 # <a name="routes-and-operations"></a>Postupy a operace
 
@@ -35,7 +35,7 @@ Toto téma obsahuje obecné informace o postupech a operacích. Postup definuj
 <a name="overview"></a>Přehled
 --------
 
-Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. U každé operace postup také definuje požadované provozní prostředky, čas, který je nutný k nastavení a provedení operace, a způsob výpočtu nákladů. Stejný postup lze použít k výrobě více produktů nebo můžete definovat jedinečný postup pro každý produkt či variantu produktu. Můžete používat i více postupů pro stejný produkt. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je vyráběné množství. Definice postupu v aplikaci Microsoft Dynamics 365 for Finance and Operations se skládá ze čtyř samostatných prvků, které společně popisují výrobní proces:
+Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. U každé operace postup také definuje požadované provozní prostředky, čas, který je nutný k nastavení a provedení operace, a způsob výpočtu nákladů. Stejný postup lze použít k výrobě více produktů nebo můžete definovat jedinečný postup pro každý produkt či variantu produktu. Můžete používat i více postupů pro stejný produkt. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je vyráběné množství. Definice postupu v aplikaci Finance and Operations se skládá ze čtyř samostatných prvků, které společně popisují výrobní proces:
 
 -   **Postup** – definuje strukturu výrobního procesu. Jinými slovy určuje pořadí operací.
 -   **Operace** – určuje konkrétní pojmenovaný krok v postupu, například **Sestavení**. Stejná operace se může vyskytovat v několika různých postupech a může mít přiřazena různá čísla.
@@ -43,7 +43,7 @@ Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu.
 -   **Verze postupu** – definuje postup, který se používá k výrobě produktu nebo varianty produktu. Verze postupů umožňují průběžné úpravy nebo opakované používání postupů u různých produktů. Umožňují také použití různých postupů k výrobě stejného produktu. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je místo nebo vyráběné množství.
 
 ## <a name="routes"></a>Postupy
-Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. Každé operaci se přiřadí číslo a následná operace. Pořadí operací tvoří síťový postup, který lze znázornit pomocí diagramu s jedním nebo několika počátečními body a jedním koncovým bodem. V aplikaci Finance and Operations se postupy rozlišují podle typu struktury. Existují dva typy postupů: jednoduché postupy a síťové postupy. Ve formuláři Parametry modulu Řízení výroby můžete určit, zda lze použít pouze jednoduché postupy nebo i složitější síťové postupy.
+Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. Každé operaci se přiřadí číslo a následná operace. Pořadí operací tvoří síťový postup, který lze znázornit pomocí diagramu s jedním nebo několika počátečními body a jedním koncovým bodem. V aplikaci Supply Chain Management se postupy rozlišují podle typu struktury. Existují dva typy postupů: jednoduché postupy a síťové postupy. Ve formuláři Parametry modulu Řízení výroby můžete určit, zda lze použít pouze jednoduché postupy nebo i složitější síťové postupy.
 
 ### <a name="simple-routes"></a>Jednoduché postupy
 
@@ -51,7 +51,7 @@ Jednoduchý postup je sekvenční a existuje u něj pouze jeden počáteční 
 
 [![Jednoduchý postup](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Pokud ve formuláři Parametry modulu Řízení výroby povolíte pouze jednoduché postupy, aplikace Finance and Operations při definování postupu automaticky vygeneruje čísla operací (10, 20, 30 a tak dále).
+Pokud ve formuláři Parametry modulu Řízení výroby povolíte pouze jednoduché postupy, aplikace Supply Chain Management při definování postupu automaticky vygeneruje čísla operací (10, 20, 30 a tak dále).
 
 ### <a name="route-networks"></a>Síťové postupy
 
@@ -85,7 +85,7 @@ Každý postup lze schválit nebo zamítnout samostatně. Při zamítnutí postu
 Pokud potřebujete uchovávat záznamy o tom, kdo jednotlivé postupy schvaluje, můžete si při jejich schvalování vyžádat elektronické podpisy. V takovém případě musí uživatelé [elektronickým podpisem](../../fin-and-ops/organization-administration/electronic-signature-overview.md) potvrzovat svou identitu.
 
 ## <a name="operations"></a>Operations
-Operace představuje krok ve výrobním procesu. V aplikaci Finance and Operations má každá operace ID a jednoduchý popis. Následující tabulka ukazuje typické příklady operací ze strojní dílny.
+Operace představuje krok ve výrobním procesu. Každá operace má ID a jednoduchý popis. Následující tabulka ukazuje typické příklady operací ze strojní dílny.
 
 | Operace  | Popis        |
 |------------|--------------------|
@@ -126,7 +126,7 @@ Vztahy operací zajišťují při definici postupů velkou flexibilitu. Možnost
 
 ### <a name="modifying-product-specific-routes"></a>Změna postupů u konkrétních produktů
 
-Po otevření stránky **Postup** na stránce **Podrobnosti o uvolněném produktu** se zobrazí verze postupu spojené s vybraným uvolněným produktem. V tomto kontextu zobrazuje aplikace Finance and Operations u každé operace provozní vlastnosti ze vztahu operace, který co nejlépe odpovídá verzi postupu. Seznam operací obsahuje vlastnosti **Kód položky** a **Kód postupu** ze vztahu operace. Je tedy možné určit, který vztah operace se zobrazuje.  
+Po otevření stránky **Postup** na stránce **Podrobnosti o uvolněném produktu** se zobrazí verze postupu spojené s vybraným uvolněným produktem. V tomto kontextu zobrazuje aplikace Supply Chain Management u každé operace provozní vlastnosti ze vztahu operace, který co nejlépe odpovídá verzi postupu. Seznam operací obsahuje vlastnosti **Kód položky** a **Kód postupu** ze vztahu operace. Je tedy možné určit, který vztah operace se zobrazuje.  
 
 Na stránce **Postup** můžete změnit provozní vlastnosti operace, například operační čas nebo nákladové kategorie. Provedené změny se uloží do vztahu operace specifického pro postup a uvolněný produkt, na které se aktuální verze postupu odkazuje. Pokud zobrazený vztah operace není specifický pro daný postup a uvolněný produkt, systém před uložením změn vytvoří jeho kopii. Tato kopie *je* specifická pro daný postup a uvolněný produkt. Její změny tedy neovlivní jiné postupy nebo uvolněné produkty. Chcete-li si ověřit, který vztah operace se na stránce **Postup** upravuje, podívejte se na pole **Kód položky** a **Kód postupu**.  
 
@@ -149,9 +149,9 @@ Pokud váš podnik používá standardní operace a provozní parametry jsou u�
 
 ### <a name="applying-operation-relations"></a>Používání vztahů operací
 
-V některých případech musí aplikace Finance and Operations najít provozní vlastnosti operace. Například při vytvoření nákupní objednávky je třeba zkopírovat provozní vlastnosti každé operace ze vztahů operací do výrobního postupu. V těchto situacích aplikace Finance and Operations hledá příslušné vztahy operací od nejkonkrétnější k nejméně konkrétní kombinaci.  
+V některých případech musí aplikace Supply Chain Management najít provozní vlastnosti operace. Například při vytvoření nákupní objednávky je třeba zkopírovat provozní vlastnosti každé operace ze vztahů operací do výrobního postupu. V těchto situacích aplikace Supply Chain Management hledá příslušné vztahy operací od nejkonkrétnější k nejméně konkrétní kombinaci.  
 
-Když aplikace Finance and Operations hledá nejrelevantnější vztah operace u uvolněného produktu, upřednostňuje přitom vztah, který odpovídá ID položky uvolněného produktu, před vztahem, který odpovídá ID skupiny položek. Vztah operace, který odpovídá ID skupiny položek, má zase přednost před výchozím vztahem operace. Hledání se provádí v tomto pořadí:
+Když aplikace Supply Chain Management hledá nejrelevantnější vztah operace u uvolněného produktu, upřednostňuje přitom vztah, který odpovídá ID položky uvolněného produktu, před vztahem, který odpovídá ID skupiny položek. Vztah operace, který odpovídá ID skupiny položek, má zase přednost před výchozím vztahem operace. Hledání se provádí v tomto pořadí:
 
 1.  **Kód položky**=**Tabulka** a **Vztah položky**=&lt;ID položky&gt;
 2.  **Kód položky**=**Skupina** a **Vztah položky**=&lt;ID skupiny položek&gt;
@@ -198,7 +198,7 @@ Podle toho, jaké jsou požadavky vašeho podnikání, se vám může podařit z
 
 ### <a name="making-routes-independent-of-resources"></a>Vytváření postupů nezávislých na prostředcích
 
-U mnoha systémů je v postupu nutné určit provozní prostředek nebo skupinu prostředků, které mají provádět operace. V aplikaci Finance and Operations však lze definovat požadavky, které musí provozní prostředek splňovat, aby ho bylo možné při operaci použít. Konkrétní provozní prostředky nebo skupiny prostředků, které se mají použít, tedy není nutné určovat, dokud nebude operace ve skutečnosti naplánována. Tato funkce je užitečná zvláště v případě, že máte k dispozici mnoho strojů pracovníků, kteří mohou provádět stejnou operaci.  
+U mnoha systémů je v postupu nutné určit provozní prostředek nebo skupinu prostředků, které mají provádět operace. V aplikaci Supply Chain Management však lze definovat požadavky, které musí provozní prostředek splňovat, aby ho bylo možné při operaci použít. Konkrétní provozní prostředky nebo skupiny prostředků, které se mají použít, tedy není nutné určovat, dokud nebude operace ve skutečnosti naplánována. Tato funkce je užitečná zvláště v případě, že máte k dispozici mnoho strojů pracovníků, kteří mohou provádět stejnou operaci.  
 
 Můžete například určit, že operace vyžaduje provozní prostředek typu **Stroj**, který má funkci **Lisování** s kapacitou 20 tun. Plánovací modul pak při plánování operace podle těchto požadavků vybere konkrétní provozní prostředek nebo skupinu prostředků. Díky tomu, že stačí zadat pouze tyto požadavky a není nutné spojovat celou operaci s konkrétním strojem, máte mnohem větší flexibilitu. Údržba při přesouvání nebo přidávání nových prostředků je navíc snazší.  
 

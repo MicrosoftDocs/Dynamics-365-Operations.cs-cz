@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572018"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248865"
 ---
 # <a name="purchase-requisition-overview"></a>Přehled nákupních žádanek
 
@@ -38,7 +38,7 @@ Po schválení nákupní žádanky ho lze použít k vytvoření nákupní objed
 ## <a name="creating-purchase-requisitions"></a>Vytvoření nákupních žádanek
 Můžete vytvořit nákupní požadavek na stránce **Mé nákupní žádanky** a vybrat položky a služby, které požadujete. Můžete vybrat položky ze zásobovacího katalogu, který vytvořila vaše organizace, nebo si můžete vyžádat položky, které nejsou k dispozici v katalogu, výběrem kategorie zásobování a zadáním podrobností o produktu.  
 
-Před tím, než bude možné odeslat nákupní žádanku ke kontrole, musí být nakonfigurovány workflowy v Microsoft Dynamics 365 for Finance and Operations. Workflow se používá k přesouvání nákupní žádanky v procesu kontroly od počátečního stavu **Koncept** do konečného stavu **Schváleno**.
+Před tím, než bude možné odeslat nákupní žádanku ke kontrole, musí být nakonfigurovány workflowy. Workflow se používá k přesouvání nákupní žádanky v procesu kontroly od počátečního stavu **Koncept** do konečného stavu **Schváleno**.
 
 ### <a name="purchase-requisition-statuses"></a>Stavy nákupních požadavků
 
@@ -141,7 +141,7 @@ V rámci zásad zásobování můžete určit účely žádanky, které budou do
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Žádanky, které mají účel spotřeby
 
-Žádanka, kterou má účel spotřeby představuje poptávku po zboží nebo službách, které bude interně používat vaše organizace. Poptávka, která je vytvořena tímto typem žádanky, je vždy splněna prostřednictvím nákupní objednávky. Pokud je aplikace Microsoft Dynamics 365 for Finance and Operations nastavena na automatické generování nákupních objednávek, budou nákupní objednávky vytvořeny po schválení nákupní žádanky.
+Žádanka, kterou má účel spotřeby představuje poptávku po zboží nebo službách, které bude interně používat vaše organizace. Poptávka, která je vytvořena tímto typem žádanky, je vždy splněna prostřednictvím nákupní objednávky. Pokud je aplikace Supply Chain Management nastavena na automatické vytváření nákupních objednávek, budou nákupní objednávky vytvořeny po schválení nákupní žádanky.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Požadavky, které mají účel doplnění
 

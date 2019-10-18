@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 60f0a2e5fa2dc2bc37a04b159a4834a52117893d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 65b59e1cc215d582fdaf02ff4746fe2158ace76e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559597"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025349"
 ---
 # <a name="payment-methods"></a>Metody platby
 
@@ -32,7 +32,7 @@ ms.locfileid: "1559597"
 
 Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému. Tento článek popisuje typy plateb, které lze nastavit, a také proces jejich nastavení.
 
-Maloobchodní prodejci mohou přijímat různé typy plateb za výrobky a služby, které prodávají. I když jsou hotovostní platby nejčastěji používaným typem platby, maloobchodní prodejci mohou také přijímat platby ve formě šeků, karet, kuponů apod. Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému v aplikaci Dynamics 365 for Retail. Následující seznam popisuje každý typ platby, který lze nastavit v části Maloobchodní a velkoobchodní prodej v aplikaci Dynamics 365 for Retail:
+Maloobchodní prodejci mohou přijímat různé typy plateb za výrobky a služby, které prodávají. I když jsou hotovostní platby nejčastěji používaným typem platby, maloobchodní prodejci mohou také přijímat platby ve formě šeků, karet, kuponů apod. Každý typ platby, kterou prodejce přijímá, musí být nakonfigurován při nastavení systému v aplikaci Dynamics 365 Retail. Následující seznam popisuje každý typ platby, který lze nastavit:
 
 - **Hotovost** – peníze v podobě fyzické měny, například bankovky a mince. Měnou může být měna společnosti nebo místní měna obchodu.
 - **Šek** – převoditelný nástroj opravňující k výběru určité částky v určité měně z uvedené banky. Šek má obvykle platnost neomezeně nebo šest měsíců od data vystavení, pokud není určena jiná doba platnosti. Toto období závisí na tom, z jaké banky se šek vybírá. Existují různé druhy šeků, například šeky na jméno, šekové formuláře, šeky na doručitele, šeky na řad. Můžete nastavit šeky jako způsob platby pro každý obchod. Šeky lze přijímat v měně definované na úrovni společnosti nebo na úrovni obchodu. Musíte nastavit šeky jako způsob platby dříve, než budete moci jako platbu v obchodě přijímat šeky.

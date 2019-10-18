@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
-ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
+ms.openlocfilehash: 64871eb5f7175701cfe1c9fefcc04b9da488748b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773242"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008448"
 ---
 # <a name="create-a-job"></a>Vytvoření práce
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje prvky pracovního místa v aplikaci Microsoft Dynamics 365 for Talent: Attract. Také vysvětluje, jakým způsobem vytvořit pracovní místo.
+Toto téma popisuje prvky pracovního místa v aplikaci Microsoft Dynamics 365 Talent: Attract. Také vysvětluje, jakým způsobem vytvořit pracovní místo.
 
 ## <a name="job-creation"></a>Vytvoření práce
 
@@ -74,7 +74,7 @@ Další informace o aktivitách, které lze přidat do procesu náboru, naleznet
 
 ## <a name="postings"></a>Zaúčtování
 
-Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveřejnit jen náborář a správce. Pracovní místo lze zveřejnit na webu Talent Careers (kariérní web systému Dynamics 365 for Talent) nebo LinkedIn. Tým Attract průběžně pracuje na partnerství s agregátory vývěsky volných míst. Tento seznam se bude průběžně rozšiřovat. Když je práce zveřejněna pouze jako interní, uchazeči potřebují účet AAD k zobrazení pracovní nabídky a podání žádosti. Pokud je nabídka práce uvedena jako veřejná, uchazeči mohou zobrazit nabídky a zažádat za ně pomocí všech možností ověřování. 
+Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveřejnit jen náborář a správce. Pracovní místo lze zveřejnit na webu Talent Careers (kariérní web systému Dynamics 365 Talent) nebo LinkedIn. Tým Attract průběžně pracuje na partnerství s agregátory vývěsky volných míst. Tento seznam se bude průběžně rozšiřovat. Když je práce zveřejněna pouze jako interní, uchazeči potřebují účet AAD k zobrazení pracovní nabídky a podání žádosti. Pokud je nabídka práce uvedena jako veřejná, uchazeči mohou zobrazit nabídky a zažádat za ně pomocí všech možností ověřování. 
 
 Další informace o nabídce volných pracovních míst naleznete v tématu [Funkce Kariérní web v aplikaci Attract](career-site.md).
 

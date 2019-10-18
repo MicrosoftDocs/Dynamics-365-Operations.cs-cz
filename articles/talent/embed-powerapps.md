@@ -1,5 +1,5 @@
 ---
-title: Integrace aplikací PowerApps v Core HR
+title: Integrace aplikací PowerApps v Dynamics 365 - Core HR
 description: Toto téma vysvětluje, jak vyřešit problém, kdy položka nabídky PowerApps zmizela z modulu správy systému.
 author: andreabichsel
 manager: AnnBe
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7c0dcdd7e2f407267cf99906b4d0b317858710af
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 4fbc24c5ceb73389b84b125eb942ac31757928aa
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742812"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008423"
 ---
 # <a name="embed-powerapps-apps-in-core-hr"></a>Integrace aplikací PowerApps v Core HR
 
 [!include [banner](includes/banner.md)]
 
-**Problém**
+**Vydání**
 
 Položka nabídky **PowerApps** zmizela z modulu **Správa systému**.
 
@@ -38,7 +38,7 @@ Došlo ke změně návrhu uživatelského rozhraní a Microsoft PowerApps je nyn
 
 **Rozlišení**
 
-Způsob integrace PowerApps se změnil. Aplikace PowerApps jsou nyní přidávány prostřednictvím modelu přizpůsobení. Aplikace PowerApps můžete přidat téměř na všechny stránky aplikace Microsoft Dynamics 365 for Talent.
+Způsob integrace PowerApps se změnil. Aplikace PowerApps jsou nyní přidávány prostřednictvím modelu přizpůsobení. Aplikace PowerApps můžete přidat téměř na všechny stránky aplikace Microsoft Dynamics 365 Talent.
 
 Podrobné informace o tom, jak integrovat aplikace PowerApps do aplikace Talent, najdete v tématu [Integrace aplikací PowerApps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 

@@ -1,6 +1,6 @@
 ---
 title: Odstranění prostředí Talent
-description: Toto téma vás povede procesem odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Dynamics 365 for Talent.
+description: Toto téma vás povede procesem odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/20/2017
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 904c8eb1254a65e1627c33f14488a1a8e12f7c2b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517525"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010608"
 ---
 # <a name="remove-talent-environments"></a>Odstranění prostředí Talent
 
 [!include [banner](includes/banner.md)]
 
-Toto téma vás povede procesem odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Dynamics 365 for Talent.
+Toto téma vás povede procesem odebrání zkušební jednotky nebo výrobního prostředí pro aplikaci Dynamics 365 Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Odstranění testovacího prostředí
 
 Testovací jednotky Talent jsou zřizovány s 60denním vypršením platnosti. Vlastníci prostředí testovací jednotky však mají možnost ukončit své zkušební verze dříve podle následujícího postupu. 
 
-1. Přejděte na [Centrum správy PowerApps](https://admin.businessplatform.microsoft.com/).
+1. Přejděte do [Centra pro správu PowerApps](https://admin.businessplatform.microsoft.com/).
 2. Vyberte **Prostředí**.
 3. Vyberte testovací prostředí, které má podobný vzorec pojmenování jako tento: TestDrive - alias@domain
 4. Vyberte **Odstranit** a potvrďte rozhodnutí. 
@@ -52,7 +52,7 @@ Vzhledem k tomu, že jedno prostředí Talent je obsaženo v jednom prostředí 
 
 Chcete-li odebrat celé prostředí PowerApps, včetně prostředí Talent a přidružených aplikací a toků:
 
-1. Přejděte na [Centrum správy PowerApps](https://admin.businessplatform.microsoft.com/).
+1. Přejděte do [Centra pro správu PowerApps](https://admin.businessplatform.microsoft.com/).
 2. Vyberte **Prostředí**.
 3. Vyberte prostředí, které má být odstraněno.
 4. Vyberte **Odstranit** a potvrďte rozhodnutí. 

@@ -17,18 +17,19 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f96c79558c3248406a1b5988f9c9dc9783db4406
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 099c1d97db97659d55070b1058f3e0b5b44df107
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564338"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024722"
 ---
 # <a name="manage-assortments-november-2016"></a>Správa sortimentů (listopad 2016)
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tato procedura ukazuje, jak vytvářet a publikovat nový sortiment produktů a používá ukázkovou datovou firmu USRT. Tato procedura vyžaduje aplikaci Dynamics AX 7.0.1 nebo novější a platformu Dynamics AX 7.1.  
+Tato procedura ukazuje, jak vytvářet a publikovat nový sortiment produktů a používá ukázkovou datovou firmu USRT. 
+
 
 1. Klikněte na Správa kategorií a produktů.
 

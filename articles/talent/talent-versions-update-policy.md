@@ -1,6 +1,6 @@
 ---
 title: Systémové požadavky aplikace Talent a zásady aktualizace
-description: Toto téma obsahuje požadavky na Dynamics 365 for Talent. Jsou zde také popsány zásady aktualizací.
+description: Toto téma obsahuje požadavky na Dynamics 365 Talent. Jsou zde také popsány zásady aktualizací.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/02/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6c881bf25e7145228ccf7ef73a7ef3637c115a49
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741768"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024153"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Systémové požadavky aplikace Talent a zásady aktualizace
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu jsou popsány požadavky pro aplikaci Microsoft Dynamics 365 for Talent, včetně aplikací Attract, Onboard a Core HR. Dále jsou zde uvedeny země a oblasti, ve kterých je Talent k dispozici, a informace o jazycích a lokalizaci dat aplikace Talent. Navíc toto téma obsahuje zásady aktualizace pro aplikaci Talent.
+V tomto tématu jsou popsány požadavky pro aplikaci Microsoft Dynamics 365 Talent, včetně aplikací Attract, Onboard a Core HR. Dále jsou zde uvedeny země a oblasti, ve kterých je Talent k dispozici, a informace o jazycích a lokalizaci dat aplikace Talent. Navíc toto téma obsahuje zásady aktualizace pro aplikaci Talent.
 
 ## <a name="supported-web-browsers"></a>Podporované webové prohlížeče
 
-Webová aplikace Microsoft Dynamics 365 for Talent může běžet v kterémkoli z následujících webových prohlížečů v určeném operačním systému: 
+Aplikace Microsoft Dynamics 365 Talent může běžet v kterémkoli z následujících webových prohlížečů v určeném operačním systému: 
 
 *   Microsoft Edge (nejnovější veřejně dostupná verze) v systému Windows 10
 *   Internet Explorer 11 v systému Windows 10, Windows 8.1 nebo Windows 7
@@ -46,11 +46,11 @@ Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce soft
 > * Editor pracovního postupu je spuštěn jako aplikace ClickOnce. Pouze Microsoft Edge a Internet Explorer (podporované verze Microsoft Windows) podporují aplikace ClickOnce. Editor pracovního postupu aplikace ClickOnce vyžaduje 64bitový kompatibilní operační systém.
 > * K zobrazení náhledu souborů PDF doporučujeme používat moderní prohlížeče, jako je Microsoft Edge (nejnovější veřejně dostupnou verzi) na operačním systému Windows 10, nebo Google Chrome (nejnovější veřejně dostupnou verzi) na operačních systémech Windows 10, Windows 8.1, Windows 8, Windows 7 nebo na tabletu Google Nexus 10.
 >   Požadavky na síť
-> * Dynamics 365 for Talent je navržena pro sítě s latencí 250 - 300 milisekund (ms) nebo méně. Tato latence představuje latenci z prohlížeče do datového centra Microsoft Azure, které hostuje Dynamics 365 for Talent. Doporučujeme otestovat latenci sítě na stránkách [www.azurespeed.com](https://www.azurespeed.com "Test latence Azure").
-> * Požadavky na šířku pásma pro Dynamics 365 for Talent závisí na danému scénáři. Některé běžné scénáře vyžadují šířku pásma větší než 50 kilobajtů za sekundu (kb/s).
+> * Dynamics 365 Talent je navržena pro sítě s latencí 250 - 300 milisekund (ms) nebo méně. Tato latence představuje latenci z prohlížeče do datového centra Microsoft Azure, které hostuje aplikaci Talent. Doporučujeme otestovat latenci sítě na stránkách [www.azurespeed.com](https://www.azurespeed.com "Test latence Azure").
+> * Požadavky na šířku pásma pro Talent závisí na danému scénáři. Některé běžné scénáře vyžadují šířku pásma větší než 50 kilobajtů za sekundu (kb/s).
 > 
 > [!WARNING]
-> Nepočítejte požadavky na šířku pásma z klientského umístění tím, že vynásobíte počet uživatelů minimálními požadavky na šířku pásma. Souběžné využití daného umístění je velmi obtížné vypočítat. Pro zákazníky, kteří mají pochybnosti ohledně požadavků na šířku pásma, použijte zkušební verzi aplikace Dynamics 365 for Talent.
+> Nepočítejte požadavky na šířku pásma z klientského umístění tím, že vynásobíte počet uživatelů minimálními požadavky na šířku pásma. Souběžné využití daného umístění je velmi obtížné vypočítat. Pro zákazníky, kteří mají pochybnosti ohledně požadavků na šířku pásma, použijte zkušební verzi aplikace Talent.
 
 ## <a name="supported-microsoft-office-applications"></a>Podporované aplikace Microsoft Office
 
@@ -68,6 +68,6 @@ Pokud jste vývojáři a máte zájem o vytváření vlastních nastavení speci
 
 ## <a name="update-policy"></a>Zásady aktualizace
 
-Microsoft Dynamics 365 for Talent využívá služby jako cloudová nabídka. Aktualizace pro aplikaci Dynamics 365 for Talent jsou nepřetržité a automaticky aplikované společností Microsoft.
+Talent využívá služby jako cloudová nabídka. Aktualizace pro aplikaci Talent jsou nepřetržité a automaticky aplikované společností Microsoft.
 
-Aktualizace jsou vydávány v pravidelných intervalech a použijí se na všechna prostředí. Dynamics 365 for Talent je podporována podle [zásad správy cyklu životnosti podpory Microsoft](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Cyklus životnosti podpory Microsoft"), které poskytují konzistentní a předvídatelné pokyny pro dostupnost podpory produktu.
+Aktualizace jsou vydávány v pravidelných intervalech a použijí se na všechna prostředí. Aplikace Talent je podporována podle [zásad správy cyklu životnosti podpory Microsoft](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Cyklus životnosti podpory Microsoft"), které poskytují konzistentní a předvídatelné pokyny pro dostupnost podpory produktu.

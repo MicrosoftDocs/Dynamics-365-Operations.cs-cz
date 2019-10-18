@@ -1,6 +1,6 @@
 ---
-title: Publikování pracovních míst z aplikace Attract na externí weby
-description: Toto téma vysvětluje postup použití aplikace Dynamics 365 for Talent - Attract pro publikování pracovních míst na externí náborové weby.
+title: Publikování pracovních míst na externí kariérní weby z aplikace Attract
+description: Toto téma vysvětluje postup použití aplikace Dynamics 365 Talent - Attract pro publikování pracovních míst na externí náborové weby.
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 936ff85a4dabb715cb83b875a5c58c9fb7a0ac26
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 919cec773d5e57e8f5429e31872db7ed658e969b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739810"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008075"
 ---
 # <a name="post-jobs-to-broadbean"></a>Publikování pracovních míst na Broadbean
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract vám pomůže získat talenty, které potřebujete, a to tak, že vám umožnít publilkovat pracovní místa přímo z Attract na Broadbean. Po [vytvoření pracovního místa](./creating-jobs-attract.md) stačí vybrat tlačítko, které přivede vaši pracovní pozici k očím tisíců možných kandidátů na pracovní pozici ve službě Broadbean.
+Microsoft Dynamics 365 Talent: Attract vám pomůže získat talenty, které potřebujete, a to tak, že vám umožní publikovat pracovní místa přímo z Attract na Broadbean. Po [vytvoření pracovního místa](./creating-jobs-attract.md) stačí vybrat tlačítko, které přivede vaši pracovní pozici k očím tisíců možných kandidátů na pracovní pozici ve službě Broadbean.
 
 Zveřejňování pracovních míst ve službě Broadbean vyžaduje příslušnou licenci Broadbean. Broadbean nabízí různé produkty a plány. Další informace o licencování a cenách ve službě Broadbean [vám poskytne společnost Broadbean](https://www.broadbean.com/contact-us/).
 

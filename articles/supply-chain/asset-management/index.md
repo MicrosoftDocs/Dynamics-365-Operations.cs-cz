@@ -1,6 +1,6 @@
 ---
 title: Přehled správy majetku
-description: Toto téma popisuje funkcionalitu Správa majetku v aplikaci Dynamics 365 for Finance and Operations.
+description: Toto téma popisuje funkcionalitu Správa majetku v aplikaci Dynamics 365 Supply Chain Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/24/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b8a619d787a2d43e843b574edf77b3153d53005
-ms.sourcegitcommit: 829b6dc145197cc565d40469f6a1522f8dccac9f
+ms.openlocfilehash: f98185fbabefedd2a545bd1c3e15b9e180363469
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "1788273"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024699"
 ---
 # <a name="asset-management-overview"></a>Přehled správy majetku
 
@@ -32,7 +32,7 @@ ms.locfileid: "1788273"
 [!include [banner](../includes/preview-banner.md)]
 
 
-Správa majetku je rozšířený modul pro správu majetku a úloh údržby v aplikaci Microsoft Dynamics 365 for Finance and Operations. Správa majetku je bezproblémově integrována s několika moduly v aplikaci Finance and Operations. 
+Správa majetku je rozšířený modul pro správu majetku a úloh údržby v aplikaci Dynamics 365 Supply Chain Management. Správa majetku je bezproblémově integrována s několika moduly v aplikaci Finance and Operations. 
 
 Níže uvedený obrázek znázorňuje rozhraní k jiným modulům v aplikaci Finance and Operations.
 

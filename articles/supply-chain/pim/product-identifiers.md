@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546218"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250592"
 ---
 # <a name="product-identifiers"></a>Identifikátory produktu 
 
@@ -36,13 +36,13 @@ Při práci s produkty v dílně nebo ve skladu v aplikaci Microsoft Dynamics ER
 
 ## <a name="unique-product-numberproduct-id"></a>Jedinečné číslo produktu/ID produktu
 
-V aplikaci Microsoft Dynamics 365 for Finance and Operations je primárním identifikátorem produktu číslo produktu (tedy jedinečné ID produktu). Toto číslo lze generovat automaticky podle číselné řady, nebo ho lze ručně přiřadit k produktu. Pro varianty produktu lze definovat čísla pomocí šablony klasifikace produktu.
+V aplikaci Dynamics 365 Supply Chain Management je primárním identifikátorem produktu číslo produktu (tedy jedinečné ID produktu). Toto číslo lze generovat automaticky podle číselné řady, nebo ho lze ručně přiřadit k produktu. Pro varianty produktu lze definovat čísla pomocí šablony klasifikace produktu.
 
-V mnoha případech není číslo produktu původně vytvořeno v modulu Finance and Operations. Namísto toho je přidružen k produktu v systému správy (PLM) životního cyklu produktu nebo systém pro správu dat produktu (PDM). V takovém případě používáte data entity k importu produktů a variant produktu. Finance and Operations pak použije čísla ve všech operacích.
+V mnoha případech není číslo produktu původně vytvořeno v modulu Dynamics 365 Supply Chain Management. Namísto toho je přidružen k produktu v systému správy (PLM) životního cyklu produktu nebo systém pro správu dat produktu (PDM). V takovém případě používáte data entity k importu produktů a variant produktu. Aplikace Supply Chain Management pak tato čísla použije ve všech operacích.
 
-Při implementaci aplikace Finance and Operations je třeba obzvláště zvážit strategii čísel produktů. Systém číslování zboží vylepšuje toky logistiky a pomáhá předcházet chybám. Dobrý identifikátor produktu může mít nejvýše 15 znaků. V optimálním případě má méně než 10 znaků a obsahuje více než pět klasifikačních znaků. Můžete také použít vyhledávací pro účely rychlého vyhledávání. Vyhledávací název je další název představující klasifikaci produktu.
+Při implementaci aplikace  Supply Chain Management je třeba obzvláště zvážit strategii čísel produktů. Systém číslování zboží vylepšuje toky logistiky a pomáhá předcházet chybám. Dobrý identifikátor produktu může mít nejvýše 15 znaků. V optimálním případě má méně než 10 znaků a obsahuje více než pět klasifikačních znaků. Můžete také použít vyhledávací pro účely rychlého vyhledávání. Vyhledávací název je další název představující klasifikaci produktu.
 
-Při použití služby Common Data Service je číslo produktu v aplikaci Finance and Operations rovněž číslem produktu v CDS. Varianty produktu jsou synchronizovány do CDS jako odlišné produkty.
+Pokud použijete Common Data Service, je číslo produktu v modulu Supply Chain Management také číslo produktu v poli Common Data Service. Varianty produktu jsou synchronizovány do Common Data Service jako odlišné produkty.
 
 ## <a name="item-number-and-product-dimensions"></a>Dimenze čísla položky a produktů
 
@@ -56,19 +56,19 @@ Kromě toho budete moci vyhledávat a filtrovat číslo produktu, název produkt
 
 ## <a name="product-name-and-description"></a>Název a popis produktu
 
-Název produktu a popis jsou identifikátory produktu, čitelné pro osoby, a lze je udržovat ve více jazycích. Ve výchozím nastavení zobrazuje klient Finance and Operations všechny informace o produktu ve výchozím jazyce společnosti, nikoli v jazyce uživatele. Přeložené názvy a popisy produktů se však používají ve veškeré komunikaci s odběrateli a dodavateli. Překlady jsou založeny na kódu jazyka účtů odběratelů a dodavatelů.
+Název produktu a popis jsou identifikátory produktu, čitelné pro osoby, a lze je udržovat ve více jazycích. Ve výchozím nastavení zobrazuje klient Supply Chain Management všechny informace o produktu ve výchozím jazyce společnosti, nikoli v jazyce uživatele. Přeložené názvy a popisy produktů se však používají ve veškeré komunikaci s odběrateli a dodavateli. Překlady jsou založeny na kódu jazyka účtů odběratelů a dodavatelů.
 
 Pro varianty produktu lze generovat název produktu pomocí šablony klasifikace produktu. Protože neexistuje žádný požadavek na jedinečnost názvů produktu, může se objevit více produktů, které mají stejné názvy.
 
 ## <a name="product-and-item-search-names"></a>Vyhledávací názvy produktů a položek
 
-Finance and Operations nabízí sekundární vyhledávací název pro produkty a pro položky (uvolněné produkty). Tento vyhledávací název nemusí být jedinečný a lze ho změnit po vytvoření produktu nebo varianty produktu. Doporučujeme použít vyhledávací název pro hledání produktů podle kategorie. Vyhledávací názvy umožňují rychlé vyhledávání, zejména v prodejních a nákupních procesech.
+Supply Chain Management nabízí sekundární vyhledávací název pro produkty a pro položky (uvolněné produkty). Tento vyhledávací název nemusí být jedinečný a lze ho změnit po vytvoření produktu nebo varianty produktu. Doporučujeme použít vyhledávací název pro hledání produktů podle kategorie. Vyhledávací názvy umožňují rychlé vyhledávání, zejména v prodejních a nákupních procesech.
 
 Vyhledávací název může obsahovat odběratele nebo ID produktu dodavatele, nebo některé jiné externí ID produktu, pokud je toto externí ID primárním vyhledávacím kritériem pro produkt.
 
 ## <a name="external-product-identifiers-customer-and-vendor-identifiers"></a>Externí identifikátory produkut (identifikátory odběratele a dodavatele)
 
-Pro uvolněné produkty můžete udržovat čísla položek, názvy položek a popisy položky, používané odběratele nebo dodavatele. Odkazy jsou zobrazeny v externích dokumentech, například prodejních objednávkách, nákupních objednávkách, dodacích listech a fakturách. V aktuální verzi aplikace Finance and Operations se nezobrazí externí odkazy na stránkách základních operací. Jedinou výjimkou je číslo položky dodavatele. Toto číslo je zobrazeno v dialogovém okně **Informace o produktu**, pokud je pro uvolněný produkt definován dodavatel.
+Pro uvolněné produkty můžete udržovat čísla položek, názvy položek a popisy položky, používané odběratele nebo dodavatele. Odkazy jsou zobrazeny v externích dokumentech, například prodejních objednávkách, nákupních objednávkách, dodacích listech a fakturách. V aktuální verzi aplikace Supply Chain Management se nezobrazí externí odkazy na stránkách základních operací. Jedinou výjimkou je číslo položky dodavatele. Toto číslo je zobrazeno v dialogovém okně **Informace o produktu**, pokud je pro uvolněný produkt definován dodavatel.
 
 Můžete spravovat externí identifikátory produktu podle uvolněného produktu, varianty uvolněného produktu, odběratele nebo skupiny odběratelů, či dodavatele nebo skupiny dodavatelů.
 
@@ -77,7 +77,7 @@ Na stránce **uvolněné produkty** proveďte jeden z následujících kroků.
 - Pro odběratele na kartě **prodávat** ve skupině **Související informace** vyberte **Externí popis položky**.
 - Pro dodavatele na kartě **Nákup** ve skupině **Související informace** vyberte **Popis externí položky**.
 
-Na stránce **Externí popisy položek** můžete přidružit číslo položky odběratele nebo dodavatele k uvolněnému produktu. Toto přiřazení je nutné provést pro každou právnickou osobu. Lze zaznamenat následující informace. Bohužel popisky jsou v současné verzi aplikace Finance and Operations mírně zavádějící. Tyto štítky však můžete změnit v příští verzi.
+Na stránce **Externí popisy položek** můžete přidružit číslo položky odběratele nebo dodavatele k uvolněnému produktu. Toto přiřazení je nutné provést pro každou právnickou osobu. Lze zaznamenat následující informace. Bohužel popisky jsou v současné verzi aplikace Supply Chain Management mírně zavádějící. Tyto štítky však můžete změnit v příští verzi.
 
 | Pole | Odpovídající informace o odběrateli | Odpovídající informace o dodavateli |
 |-------|------------------------------------|----------------------------------|
@@ -104,15 +104,15 @@ Chcete-li spravovat čárové kódy, zvolte na stránce **Uvolněné produkty** 
 
 V elektronickém obchodování je důležité, aby všechny strany mluvily společným jazykem a odkazovaly na produkty pomocí společné sady identifikátorů. Proto některá odvětví spoléhají na [GTIN](https://www.gs1.org/id-keys/gtin), což je globální systém čísel položek zprostředkovaný GS1.
 
-Doporučujeme, abyste v modulu Finance and Operations udržovat GTIN jako čárový kód. Lze ho však dále udržovat také na stránce **Položka – GTIN**. Chcete-li otevřít tuto stránku, zvolte na stránce **Uvolněné produkty** na kartě **Správa skladu** ve skupině **Sklad** možnost **Kódy GTIN**. Všimněte si, že není GTIN udržováno jako globální číslo. Namísto toho se spravuje podle právnické osoby.
+Doporučujeme udržovat číslo GTIN jako čárový kód. Lze ho však dále udržovat také na stránce **Položka – GTIN**. Chcete-li otevřít tuto stránku, zvolte na stránce **Uvolněné produkty** na kartě **Správa skladu** ve skupině **Sklad** možnost **Kódy GTIN**. Všimněte si, že není GTIN udržováno jako globální číslo. Namísto toho se spravuje podle právnické osoby.
 
-V modulu Finance and Operations lze určit varianty balení pro skladové operace definováním konkrétní měrné jednotky. Například položka by mohla být uložena po kusech, sadách po šesti, v zásobnících po 18 nebo na plných paletách. Konkrétní jednotka měření bude určena pro každou z těchto varianty balení. Vzhledem k tomu, že GTIN obvykle souvisí s jednotkou balení produktů, stránka **Položka – GTIN** stránce umožňuje spravovat více kódů GTIN pro produkt a měrnou jednotku. Nemůžete však použít stejný kód GTIN opakovaně pro různé položky nebo varianty produktu právnické osoby.
+V modulu Supply Chain Management lze určit varianty balení pro skladové operace definováním konkrétní měrné jednotky. Například položka by mohla být uložena po kusech, sadách po šesti, v zásobnících po 18 nebo na plných paletách. Konkrétní jednotka měření bude určena pro každou z těchto varianty balení. Vzhledem k tomu, že GTIN obvykle souvisí s jednotkou balení produktů, stránka **Položka – GTIN** stránce umožňuje spravovat více kódů GTIN pro produkt a měrnou jednotku. Nemůžete však použít stejný kód GTIN opakovaně pro různé položky nebo varianty produktu právnické osoby.
 
 Chcete-li spravovat **Kódy GTIN**, zvolte na stránce **Uvolněné produkty** na kartě **Správa skladu** ve skupině **Sklad** možnost **GTIN**.
 
 ## <a name="external-codes"></a>Externí kódy
 
-Externí kódy lze definovat pro mnoho entit ve Finance and Operations. Například je možné definovat externí kódy pro identifikaci produktů a uvolněných produktů. Tyto externí kódy lze použít k přiřazení statistických kódů nebo daňových kódů k uvolněným produktům a uvolněným variantám produktu. Externí kódy jsou definovány podle právnické osoby a typu kódu. Musí být jedinečné podle právnické osoby, typu kódu a odkazu na tabulku.
+Externí kódy mohou být definovány pro mnoho entit. Například je možné definovat externí kódy pro identifikaci produktů a uvolněných produktů. Tyto externí kódy lze použít k přiřazení statistických kódů nebo daňových kódů k uvolněným produktům a uvolněným variantám produktu. Externí kódy jsou definovány podle právnické osoby a typu kódu. Musí být jedinečné podle právnické osoby, typu kódu a odkazu na tabulku.
 
 Bohužel neexistuje standardní funkce, která by vám umožnila vyhledávání produktů podle externích kódů.
 
@@ -136,13 +136,13 @@ Bohužel neexistuje standardní funkce, která by vám umožnila vyhledávání 
 
 ### <a name="product-and-item-number-sequences"></a>Číselné řady produkt a položka
 
-V modulu Finance and Operations můžete definovat dvě různé číselné řady:
+Můžete definovat dvě různé číselné řady:
 
 - Číselná řada **Číslo produktu** pro globální číslo produktu
 - Číselná řada **Číslo položky** pro číslo položky podle právnické osoby
 
 > [!NOTE]
-> Měli byste použít číslo položky jako samostatný identifikátor pouze tehdy, když migrujete různé právnické osoby z různých zdrojů s různými systémy číslování. Měli byste se vždy snažit použít identifikátor produktu, který je jedinečný pro všechny právnické osoby. Proto je třeba nastavit možnost **Ruční** na **Ano** pro číselnou řadu **Číslo položky**. Tímto způsobem bude číslo položky vycházet z čísla produktu při vytvoření. Pokud modul Finance and Operations není vedoucí systém nových čísel produktů, je třeba nastavit možnost **Ruční** na **Ano** pro číselné řady **č. položky** i **číslo produktu**.
+> Měli byste použít číslo položky jako samostatný identifikátor pouze tehdy, když migrujete různé právnické osoby z různých zdrojů s různými systémy číslování. Měli byste se vždy snažit použít identifikátor produktu, který je jedinečný pro všechny právnické osoby. Proto je třeba nastavit možnost **Ruční** na **Ano** pro číselnou řadu **Číslo položky**. Tímto způsobem bude číslo položky vycházet z čísla produktu při vytvoření. Pokud modul Supply Chain Management není vedoucí systém nových čísel produktů, je třeba nastavit možnost **Ruční** na **Ano** pro číselné řady **č. položky** i **číslo produktu**.
 
 Použijete-li entitu **Uvolněný produkt V2** k vytvoření produktů, mohou mnohá nastavení ovlivnit použití číselných řad při vytvoření čísla položky a čísla produktu:
 

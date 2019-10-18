@@ -1,6 +1,6 @@
 ---
-title: Získání aplikace Dynamics 365 for Talent - Onboard
-description: V tomto tématu je vysvětleno, jak získat samostatnou verzi aplikace Microsoft Dynamics 365 for Talent - Onboard nebo verzi, která obsahuje doplněk Komplexní nábor.
+title: Získání aplikace Dynamics 365 Talent - Onboard
+description: V tomto tématu je vysvětleno, jak získat samostatnou verzi aplikace Microsoft Dynamics 365 Talent - Onboard nebo verzi, která obsahuje doplněk Komplexní nábor.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,30 +16,30 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: e83bbd71089b145c6c99780ea9516793c5238b33
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 7bf2e421445e5ca92e995ef581bf61c7978746d2
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731396"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010768"
 ---
-# <a name="get-the-dynamics-365-for-talent-onboard-app"></a>Získání aplikace Dynamics 365 for Talent: Onboard
+# <a name="get-the-dynamics-365-talent-onboard-app"></a>Získání aplikace Dynamics 365 Talent: Onboard
 
 [!include [banner](includes/banner.md)]
 
-Můžete zobrazit ukázku a vyzkoušet aplikaci Microsoft Dynamics 365 for Talent: Onboard bez [stránky produktu Onboard](https://dynamics.microsoft.com/talent/onboard/).
+Můžete zobrazit ukázku a vyzkoušet aplikaci Microsoft Dynamics 365 Talent: Onboard bez [stránky produktu Onboard](https://dynamics.microsoft.com/talent/onboard/).
 
 > [!NOTE]
 > Zkušební období vyžaduje firemní e-mailový účet.
 
-Předplatné aplikace Onboard lze zakoupit jako samostatnou aplikaci nebo jako součást aplikace Dynamics 365 for Talent. Talent je komplexní systém pro správu lidského kapitálu (HCM), který zahrnuje Dynamics 365 for Talent: Attract, Onboard, a Core HR. Další informace o možnostech nákupu produktu Onboard naleznete na [stránce produktu Onboard](https://dynamics.microsoft.com/talent/onboard/)produkt na kartě.
+Předplatné aplikace Onboard lze zakoupit jako samostatnou aplikaci nebo jako součást aplikace Dynamics 365 Talent. Talent je komplexní systém pro správu lidského kapitálu (HCM), který zahrnuje Dynamics 365 Talent: Attract, Onboard, a Core HR. Další informace o možnostech nákupu produktu Onboard naleznete na [stránce produktu Onboard](https://dynamics.microsoft.com/talent/onboard/)produkt na kartě.
 
 Během procesu zkušebního období nebo nákupu nastavíte e-mailovou adresu a heslo pro Microsoft 365. Nezapomeňte si tyto hodnoty poznamenat.
 
 > [!WARNING]
 > Nelze migrovat data ze zkušební verze do prostředí placeného předplatného. <!--Reviewers: please verify.-->
 
-Další informace o nových funkcích v aplikaci Talent získáte v části [Co je nového nebo změněného v aplikaci Dynamics 365 for Talent](./whats-new.md) a [Poznámky k verzi Dynamics 365 a Power Platform](https://docs.microsoft.com/business-applications-release-notes/index). Chcete-li zobrazit náhled nových funkcí v aplikaci Onboard, viz [Přístup k funkcím náhledu aplikace Talent](./access-preview-feature.md).
+Další informace o nových funkcích v aplikaci Talent získáte v části [Co je nového nebo změněného v aplikaci Dynamics 365 Talent](./whats-new.md) a [Poznámky k verzi Dynamics 365 a Power Platform](https://docs.microsoft.com/business-applications-release-notes/index). Chcete-li zobrazit náhled nových funkcí v aplikaci Onboard, viz [Přístup k funkcím náhledu aplikace Talent](./access-preview-feature.md).
 
 Pokud jste odborník na IT a chcete se dozvědět více o tom, jak jsou tyto dvě verze aplikace Onboard zřizovány, získáte informace v části [Zřizování pro aplikaci Onboard](./modular-app-tech-faq.md).
 

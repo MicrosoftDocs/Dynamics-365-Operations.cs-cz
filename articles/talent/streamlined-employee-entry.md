@@ -1,6 +1,6 @@
 ---
 title: Zjednodušené zadávání zaměstnance a navigace
-description: Zadávání dat pro pracovníky v aplikaci Dynamics 365 for Talent bylo rozšířeno tak, aby umožňovalo rychlé zadání pro všechny zaměstnance, minulé, aktivní nebo budoucí. Byl aktualizován zjednodušený nebo konsolidovaný navigační model s cílem rychlého vyhledání souvisejících informací a zobrazení a provedení nezbytných aktualizací.
+description: Zadávání dat pro pracovníky v aplikaci Dynamics 365 Talent bylo rozšířeno tak, aby umožňovalo rychlé zadání pro všechny zaměstnance, minulé, aktivní nebo budoucí. Byl aktualizován zjednodušený nebo konsolidovaný navigační model s cílem rychlého vyhledání souvisejících informací a zobrazení a provedení nezbytných aktualizací.
 author: andreabichsel
 manager: AnnBe
 ms.date: 08/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: be0253ffc4396f36050ef02c51a20d378e44473d
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918189"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009415"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Zjednodušené zadávání zaměstnance a navigace
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Talent umožňuje efektivní zadávání údajů o zaměstnancích a zaměstnání. Informace o historii práce můžete rychle aktualizovat pro minulé, aktivní a budoucí zaměstnance a dodavatele.
+Dynamics 365 Talent umožňuje efektivní zadávání údajů o zaměstnancích a zaměstnání. Informace o historii práce můžete rychle aktualizovat pro minulé, aktivní a budoucí zaměstnance a dodavatele.
 
 Můžete také povolit zjednodušenou navigaci s rychlým vyhledáváním informací souvisejících s uživatelem a provést potřebné změny. Tato funkce je nyní k dispozici v prostředích izolovaného prostoru. Chcete-li tuto funkci zapnout, přejděte na **Správa systému > Odkazy > Nastavení > Systémové parametry > Funkce náhledu**. Vyberte **Rozšířený formulář pracovníka a navigace**. To povolí tyto změny pro všechny uživatele. Tuto možnost můžete kdykoli vypnout.
 

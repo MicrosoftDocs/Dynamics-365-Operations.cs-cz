@@ -1,6 +1,6 @@
 ---
 title: Prodej a návrat produktů, které nejsou součástí sortimentu obchodu
-description: V aplikaci Dynamics 365 for Retail můžete prodávat a vracet produkty mimo sortiment.
+description: V aplikaci Dynamics 365 Retail můžete prodávat a vracet produkty mimo sortiment.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ae6bac983ddb4d4a217fe83c8f68c5a87ccd6a47
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567900"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024930"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Prodej a návrat produktů, které nejsou součástí sortimentu obchodu
 
@@ -37,7 +37,7 @@ Zde jsou některé typické scénáře:
 + Prodejce nemá konkrétní produkty ve svém obchodě nebo je nemá na skladě v obchodě, který zákazník navštívil, ale produkty jsou k dispozici v jiných obchodech. Zaměstnanec obchodu může pomoci zákazníkovi vyhledáním a procházením produktů v jiném obchodě, jejich přidáním do nákupního košíku a dokončením rezervace výběrem způsob dodání.
 + Prodejce má více obchodů v konkrétním městě nebo na konkrétním poštovním směrovacím čísle a nechce nutit zákazníky, aby vraceli produkty do stejného obchodu, kde nakupovali. Místo toho mohou zákazníci vracet produkty v libovolném obchodě.
 
-Běžné scénáře jsou k dispozici pro prodejce používající aplikaci Dynamics 365 for Retail. V aplikaci Retail můžete:
+Běžné scénáře jsou k dispozici pro prodejce používající aplikaci Retail. V aplikaci Retail můžete:
 
 + Vyhledávat nebo procházet produkty v dalších obchodech.
 + Vyhledávat nebo procházet všechny vydané produkty.

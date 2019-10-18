@@ -1,6 +1,6 @@
 ---
-title: Která verze aplikace Microsoft Dynamics 365 for Talent - Attract
-description: Toto téma obsahuje informace o možnostech v různých verzích aplikace Microsoft Dynamics 365 for Talent - Attract.
+title: Která verze aplikace Microsoft Dynamics 365 Talent - Attract
+description: Toto téma obsahuje informace o možnostech v různých verzích aplikace Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/04/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 59ab9f418c4d9039ca08a71de0dba0f96216aabb
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 59f3e78efa8801c81dccff2f45751b47fb30481f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739696"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009939"
 ---
-# <a name="which-version-of-attract"></a>Která verze Attract?
+# <a name="which-version-of-attract"></a>Která verze aplikace Attract?
 
 [!include[banner](../includes/banner.md)]
 
-Verze aplikace Microsoft Dynamics 365 for Talent: Attract, která je pro vás správná, závisí na velikosti a potřebách vaší organizace. Základní verze Attract obsahuje podmnožinu funkcí, která je zaměřena na menší týmy nebo organizace, kde je primárním uživatelem manažer náboru. Můžete začít používat základní verzi Attract s jednou nebo více licencemi.
+Verze aplikace Microsoft Dynamics 365 Talent: Attract, která je pro vás správná, závisí na velikosti a potřebách vaší organizace. Základní verze Attract obsahuje podmnožinu funkcí, která je zaměřena na menší týmy nebo organizace, kde je primárním uživatelem manažer náboru. Můžete začít používat základní verzi Attract s jednou nebo více licencemi.
 
 Attract s komplexním doplňkem náboru je zaměřen na střední až velké týmy nebo organizace, kde je primárním uživatelem náborář nebo odborník na talenty. Komplexní zařazení náborového doplňku vyžaduje zakoupení licencí prostřednictvím [partnera Microsoft Dynamics 365](https://dynamics.microsoft.com/partners/find-a-partner/).
 

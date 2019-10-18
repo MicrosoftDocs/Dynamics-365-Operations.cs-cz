@@ -1,6 +1,6 @@
 ---
-title: Vytvoření šablony zaškolení pomocí aplikace Dynamics 365 for Talent - Onboard
-description: Toto téma vysvětluje, jak pomocí aplikace Microsoft Dynamics 365 for Talent - Onboard vytvořit šablonu průvodce zaškolením pro nové zaměstnance. Tento úkol je zásadním prvním krokem strategie pro nakládání s lidským kapitálem (HCM).
+title: Vytvoření šablony zaškolení pomocí aplikace Dynamics 365 Talent - Onboard
+description: Toto téma vysvětluje, jak pomocí aplikace Microsoft Dynamics 365 Talent - Onboard vytvořit šablonu průvodce zaškolením pro nové zaměstnance. Tento úkol je zásadním prvním krokem strategie pro nakládání s lidským kapitálem (HCM).
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c53c24b2913e3ca30cfc6491556b49d5d9230128
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 63f13380f3d2c31c4cc9009142f320ad8a41e8ee
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731395"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009870"
 ---
-# <a name="create-an-onboarding-template-by-using-dynamics-365-for-talent-onboard"></a>Vytvoření šablony zaškolení pomocí aplikace Dynamics 365 for Talent: Onboard
+# <a name="create-an-onboarding-template"></a>Vytvoření šablony zaškolení
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard poskytuje různé šablony, které vám mohou pomoci při co nejrychlejší tvorbě průvodce. Můžete použít jednu nebo více těchto šablon, nebo můžete vytvořit vlastní šablony. Onboard poskytuje vzorový text, který lze použít při vytváření vlastních šablon. Tento postup je tedy jednoduchý, i když začnete úplně od začátku.
+Microsoft Dynamics 365 Talent: Onboard poskytuje různé šablony, které vám mohou pomoci při co nejrychlejší tvorbě průvodce. Můžete použít jednu nebo více těchto šablon, nebo můžete vytvořit vlastní šablony. Onboard poskytuje vzorový text, který lze použít při vytváření vlastních šablon. Tento postup je tedy jednoduchý, i když začnete úplně od začátku.
 
 ## <a name="create-an-onboarding-template-from-an-existing-template"></a>Vytvoření šablony zaškolení z existující šablony
 

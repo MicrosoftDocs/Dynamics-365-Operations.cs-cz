@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1aaae7a276d098587b5b9c73e433694e3a6f9bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554327"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248904"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Příjemka produktu proti nákupním objednávkám
 
@@ -52,7 +52,7 @@ Můžete vytvořit řádky nákupní objednávky, kde je povolena možnost **Nov
 
 Můžete vybrat více objednávek a zpracovat příjem u všech těchto objednávek společně. Tento postup není velmi často používány, ale můžete jej použít, pokud má dodavatel vaše dodávky konsolidované do jediného balíčku. Během příjmu produktu u nákupu je vám k dispozici funkce pro provedení souhrnné aktualizace. Souhrnné aktualizace umožňují zaúčtovat jeden dodacího list od dodavatele pro více než jednu nákupní objednávku.  
 
-Nákupní objednávky můžete vytvořit z prodejní objednávky, kde byla vybrána možnost **Přímá dodávka**. Při použití přímé dodávky nejsou produkty nikdy doručeny do skladu, ale jsou dodány přímo od dodavatele k zákazníkovi. V tomto případě je příjem obvykle zaznamenán přímo v nákupní objednávce. Příjem může probíhat automaticky, například pomocí integrace EDI s dodavatelem. Případně pokud je nákupní objednávka mezipodnikovou nákupní objednávkou, aplikace Microsoft Dynamics 365 for Finance and Operations automatizuje příjem v mezipodnikové prodejní objednávce, když dojde k dodávce. Při použití přímého dodání jsou výrobky i nadále zpracovány jako zásoby, i když nejsou fyzicky přijaty ve skladu. Proto při registraci příjemky produktu z nákupní objednávky je prodejní objednávka automaticky aktualizována v dodacím listu tak, aby celkové změny zásob byly 0 (nulové). V případech využívajících přímé doručení byste neměly vyžadovat předběžnou registraci. Pokud používáte sklady, které jsou povoleny pro řízení skladu, můžete obejít požadavek na registraci registrační značky zadáním virtuálního skladu. Tento sklad určíte v poli **Sklad pro přímé dodávky** u produktu. 
+Nákupní objednávky můžete vytvořit z prodejní objednávky, kde byla vybrána možnost **Přímá dodávka**. Při použití přímé dodávky nejsou produkty nikdy doručeny do skladu, ale jsou dodány přímo od dodavatele k zákazníkovi. V tomto případě je příjem obvykle zaznamenán přímo v nákupní objednávce. Příjem může probíhat automaticky, například pomocí integrace EDI s dodavatelem. Případně pokud je nákupní objednávka mezipodnikovou nákupní objednávkou, aplikace Supply Chain Management automatizuje příjem v mezipodnikové prodejní objednávce, když dojde k dodávce. Při použití přímého dodání jsou výrobky i nadále zpracovány jako zásoby, i když nejsou fyzicky přijaty ve skladu. Proto při registraci příjemky produktu z nákupní objednávky je prodejní objednávka automaticky aktualizována v dodacím listu tak, aby celkové změny zásob byly 0 (nulové). V případech využívajících přímé doručení byste neměly vyžadovat předběžnou registraci. Pokud používáte sklady, které jsou povoleny pro řízení skladu, můžete obejít požadavek na registraci registrační značky zadáním virtuálního skladu. Tento sklad určíte v poli **Sklad pro přímé dodávky** u produktu. 
 
 Po zpracování příjemky produktu na nákupní objednávce je stav nákupní objednávky nastaven na **Přijato**, což označuje, že lze fakturu zpracovat pro objednávku. Můžete zkontrolovat podrobnosti o produktech, které již byly přijaty, pomocí stránky **Deníky příjemek produktu**.  
 

@@ -1,6 +1,6 @@
 ---
-title: Aktivity v procesech v aplikaci Microsoft Dynamics 365 for Talent - Attract
-description: Toto téma obsahuje informace o různých typech aktivit, které lze použít v procesu náboru v aplikaci Microsoft Dynamics 365 for Talent - Attract.
+title: Aktivity v procesech v aplikaci Microsoft Dynamics 365 Talent – Attract
+description: Toto téma obsahuje informace o různých typech aktivit, které lze použít v procesu náboru v aplikaci Microsoft Dynamics 365 Talent – Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 05/28/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 2e40250bb801f6222d16400b2698e5b0df47a404
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739701"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008678"
 ---
 # <a name="activities-in-hiring-processes"></a>Aktivity v procesech náboru
 
 [!include[banner](../includes/banner.md)]
 
-Aktivity lze přidat jako součást procesu náboru v aplikaci Microsoft Dynamics 365 for Talent: Attract. Aktivity lze přidat do šablony procesu nebo přidávat přímo do procesu náboru v pracovní pozici. Při definování pracovní pozice je vybrána šablona procesu a u pracovní pozice jsou použity aktivity, které jsou součástí šablony. Pokud šablona není vybraná, použije se výchozí šablona. Proces náboru lze v pracovní pozici po použití šablony také změnit.
+Aktivity lze přidat jako součást procesu náboru v aplikaci Microsoft Dynamics 365 Talent: Attract. Aktivity lze přidat do šablony procesu nebo přidávat přímo do procesu náboru v pracovní pozici. Při definování pracovní pozice je vybrána šablona procesu a u pracovní pozice jsou použity aktivity, které jsou součástí šablony. Pokud šablona není vybraná, použije se výchozí šablona. Proces náboru lze v pracovní pozici po použití šablony také změnit.
 
 > [!NOTE] 
 > Šablony procesu jsou k dispozici s doplňkem komplexního náboru. Další informace získáte v části [Funkce doplňku komplexního náboru aplikace Attract](./attract-comprehensive-hiring.md).
@@ -49,11 +49,11 @@ Aktivita žádosti je povinná v šabloně procesu náboru. Pokud chcete odeslat
 
 Tato aktivita obsahuje tři složky: požadavek na dostupnost kandidáta, plán a zpětnou vazbu. Použijte aktivitu pohovoru v šabloně práce, pokud chcete zahrnout požadavek na dostupnost kandidáta, plán a zpětnou vazbu jako součást procesu, namísto jejich individuálního použití jako součástí náborového procesu. Další informace naleznete v tématu [Plánování pohovoru a zpětná vazba](interview-scheduling-feedback.md).
 
-## <a name="powerapps-activity"></a>Aktivity PowerApps
+## <a name="powerapps-activity"></a>Aktvita PowerApps
 
 Aktivita PowerApps umožňuje vložit aplikaci Microsoft PowerApps do procesu náboru. Aplikace může být požadována pro všechny uchazeče, pouze interní uchazeče, pouze externí uchazečů nebo žádné uchazeče. Pokud je aplikace označena jako povinná, musí být dokončena předtím, než může fáze pokračovat. Aby byla práce považována za dokončenou, musí být v poli **JobApplicationStatus** zadána hodnota **Dokončeno**. Toto pole se nachází v entitě JobApplicationActivity, takže aplikace PowerApps bude muset aktualizovat toto pole, než bude možné pokračovat. Pokud aplikace není označena jako povinná, je aktivita volitelný krok a fáze můžete pokračovat, i když není aplikace dokončena.
 
-Pokud chcete uložit aktivitu PowerApps do procesu náboru, je nutné zadat ID PowerApps. Pokud chcete vyhledat ID PowerApps, přejděte na [PowerApps](https://web.powerapps.com), vyberte **Aplikace** a pak vyberte **Detaily**.
+Pokud chcete uložit aktivitu PowerApps do procesu náboru, je nutné zadat ID PowerApps. Pokud chcete vyhledat ID PowerApps, přejděte na [PowerApps](https://web.powerapps.com) , vyberte **Aplikace** a pak vyberte **Detaily**.
 
 Aktivita PowerApps je ve výchozím nastavení k dispozici pro náborového manažera, náborového pracovníka a jejich pověřené osoby. Vyberete-li možnost **Povolit přidání účastníků pro tuto aktivitu**, lze přidat další účastníky z náborového týmu pro aplikaci, která používá aktivitu PowerApps. Organizace má například vytvořenou aplikaci PowerApps, která je knihovnou otázek pohovoru pro technické funkce. Organizace nyní vypisuje výběrové řízení na nového vývojáře softwaru a přidala aktivitu PowerApps do procesu náboru na roli vývojáře softwaru. Pokud je vybraná možnost **Povolit přidávání účastníků pro tuto aktivitu**, náborář nebo manažer náboru, který zobrazuje uchazeče o roli vývojáře softwaru, může přidávat vedoucí pohovoru do aktivity PowerApps. Tyto osoby pak mohou zobrazit aplikaci, která obsahuje otázky pohovoru.
 

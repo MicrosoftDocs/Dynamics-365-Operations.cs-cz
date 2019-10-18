@@ -3,7 +3,7 @@ title: Přehled výrobního procesu
 description: Toto téma poskytuje přehled procesů výroby. Popisuje různé fáze výrobní zakázky, dávkové objednávky a kanbany od vytvoření objednávky po uzavření finančního období.
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd529afa5d8117e01784ed267709e1ac8c43290d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5b586a02d79fbbee698f32ab2ace3f86e7262fa7
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546656"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250004"
 ---
 # <a name="production-process-overview"></a>Přehled výrobního procesu
 
@@ -34,14 +34,14 @@ Toto téma poskytuje přehled procesů výroby. Popisuje různé fáze výrobní
 
 Výroba produktů – proces nazýván také jako výrobní cyklus, řídí konkrétní kroky, které jsou nutné k dokončení výroby položky. Životní cyklus začíná vytvořením výrobní zakázky, dávkové objednávky nebo kanbanu. Na konci je dokončená vyrobená položka připravená pro zákazníka nebo do jiné fáze výroby. Dokončení jednotlivých kroků životního cyklu vyžaduje různé druhy informací. Dokončení jednotlivých kroků se ve výrobní zakázce, dávkové objednávce nebo kanbanu odrazí zobrazením změny ve stavu výroby. Různé typy produktů vyžadují různé výrobní procesy.  
 
-Modul **Řízení výroby** v aplikaci Microsoft Dynamics AX je propojen s jinými moduly, jako je například **Řízení informací o produktech**, **Řízení zásob**, **Hlavní kniha**, **Řízení skladu**, **Účetnictví projektu** a **Správa organizace**. Tato integrace podporuje tok informací, který je požadován k dokončení výroby dokončené položky.  
+Modul **Řízení výroby** je propojen s jinými moduly, jako je například **Řízení informací o produktech**, **Řízení zásob**, **Hlavní kniha**, **Řízení skladu**, **Účetnictví projektu** a **Správa organizace**. Tato integrace podporuje tok informací, který je požadován k dokončení výroby dokončené položky.  
 
-Výrobní proces je obvykle ovlivněn nákladovým účetnictvím a metodami ocenění zásob, které byly vybrány pro konkrétní výrobní proces. Aplikace Finance and Operations podporuje metodu skutečných nákladů (model \[FIFO\]; model \[LIFO\]; klouzavý průměr a periodický vážený průměr) i standardních nákladů. Štíhlá výroba je implementována na základě pravidla pro zpětné účtování nákladů.  
+Výrobní proces je obvykle ovlivněn nákladovým účetnictvím a metodami ocenění zásob, které byly vybrány pro konkrétní výrobní proces. Aplikace Supply Chain Management podporuje metodu skutečných nákladů (model \[FIFO\]; model \[LIFO\]; klouzavý průměr a periodický vážený průměr) i standardních nákladů. Štíhlá výroba je implementována na základě pravidla pro zpětné účtování nákladů.  
 
 Výběr metod měření nákladů také definuje požadavky pro vytváření sestav o spotřebě materiálu a zdrojů během výrobního procesu. Obvykle metoda skutečných nákladů vyžaduje přesné vytváření sestav na úrovni úlohy, zatímco periodická metoda umožňuje méně podrobné vykazování spotřeby materiálu a zdrojů.
 
 ## <a name="mixed-mode-manufacturing"></a>Kombinovaný režim výroby
-Jiné produkty a topologie výroby vyžadují použití různých typů objednávek. Finance and Operations umožňuje použít různé typy objednávek ve smíšeném režimu. Jinými slovy ke všem objednávkám může dojít od začátku do konce při výrobě jednoho konečného produktu.
+Jiné produkty a topologie výroby vyžadují použití různých typů objednávek. Supply Chain Management umožňuje použít různé typy objednávek ve smíšeném režimu. Jinými slovy ke všem objednávkám může dojít od začátku do konce při výrobě jednoho konečného produktu.
 
 -   **Výrobní zakázka** – jedná se o klasický typ objednávky umožňující vyprodukovat určitý produkt nebo variantu produktu v daném množství k určitému datu. Výrobní zakázky jsou založeny na kusovnících a postupech.
 -   **Dávková objednávka** – tento typ objednávky se používá pro odvětví zpracování a diskrétní procesy, kde je převod výroby založen na receptuře, nebo kde souběžné a vedlejší produkty mohou být konečné produkty jako doplněk nebo náhrada za hlavní produkt. Dávkové objednávky používají typ **Vzorec** pro kusovníky a postupy.

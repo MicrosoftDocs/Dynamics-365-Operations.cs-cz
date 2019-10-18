@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (17. září 2018)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent Core HR.
+title: Co je nového nebo upraveného v aplikaci Dynamics 365 Talent - Core HR (17. září 2018)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 213324f9074f88d9fdc8efdfa46bc3ed7817d1e8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 558c2cdb4addce54af937ff862535d65f1ebd602
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517546"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026010"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (17. září 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-september-17-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent: Core HR (17. září 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -37,13 +37,13 @@ Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Core H
 
 Nový typ časové rozlišení byl přidán k plánům pracovního volna. Plán časového rozlišení může být nyní založen na odpracovaných měsících nebo hodinách. Další informace naleznete v tématu [Časové rozlišení volna na základě odpracovaných hodin](leave-accrue-hours-worked.md).
 
-## <a name="platform-update-18"></a>Aktualizace platformy 18
+## <a name="platform-update-18-for-finance-and-operations"></a>Ajtzakuzace Platform Update 18 for Finance and Operations
 
-Platform update 18 je nyní součástí vydání aplikace Talent. 
+Platform update 18 for Finance and Operations je nyní součástí vydání aplikace Talent. 
 
 -   Povinná a další pole lze skrýt pomocí individuálního nastavení. To umožňuje uživateli vytvářet zjednodušené rozhraní, kde nejsou povinná pole převzatá obchodní logikou zobrazená. Skrytá povinná pole jsou rovněž dočasně viditelná,. když jsou při pokusu o uložení prázdná.
 
--   V aktualizaci Platform update 18 má nyní webový klient aplikace Talent stejné vizuální prvky jako Microsoft Fluent Design.
+-   V aktualizaci Platform update 18 for Finance and Operations má nyní webový klient aplikace Talent stejné vizuální prvky jako Microsoft Fluent Design.
 
     -   Když jsou pole v režimu čtení, můžete jednoduše vybrat možnost úpravy v polích pro přepnutí formuláře k úpravám.
 

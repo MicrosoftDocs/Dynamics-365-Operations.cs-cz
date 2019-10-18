@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40539d649d3ee43fea8dc71f608dd6281d1c0e39
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553992"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251677"
 ---
 # <a name="transportation-management-engines"></a>Moduly správy přepravy
 
@@ -31,15 +31,15 @@ ms.locfileid: "1553992"
 
 Moduly správy přepravy definují logiku, které slouží ke generování a zpracování přepravní sazby v rámci správy přepravy. 
 
-Modul správy přepravy vypočítá úlohy, například sazbu přepravy dopravce. Systém modulu vám umožní změnit strategie výpočtu za běhu, které jsou založeny na údajích v aplikaci Microsoft Dynamics 365 for Finance and Operations. Modulu správy přepravy se podobá modulu plug-in souvisejícímu s určitou smlouvou dopravce.
+Modul správy přepravy vypočítá úlohy, například sazbu přepravy dopravce. Systém modulu vám umožní změnit strategie výpočtu za běhu, které jsou založeny na údajích v rámci aplikace Supply Chain Management. Modulu správy přepravy se podobá modulu plug-in souvisejícímu s určitou smlouvou dopravce.
 
 ## <a name="what-engines-are-available"></a>Které moduly jsou k dispozici?
-Následující tabulka obsahuje moduly správy přepravy, které jsou k dispozici v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Následující tabulka obsahuje moduly správy přepravy, které jsou k dispozici.
 
-| Modul správy přepravy | popis                                                                                                                                                                                                                                                                                                                 |
+| Modul správy přepravy | Popis                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Modul sazeb**                  | Vypočítá sazby.                                                                                                                                                                                                                                                                                                           |
-| **Obecný modul**               | Jednoduché pomocné moduly používané jinými moduly, které nevyžadují data z aplikace Microsoft Dynamics 365 for Finance and Operations, například modul pro výpočet rozdělení nákladů. Moduly pro výpočet rozdělení nákladů se používají ke snížení finálních nákladů na přepravu pro určité zakázky a řádky, které jsou založené na dimenzích, jako je například množství a hmotnost. |
+| **Obecný modul**               | Jednoduché pomocné moduly používané jinými moduly, které nevyžadují data z aplikace Supply Chain Management, například modul pro výpočet rozdělení nákladů. Moduly pro výpočet rozdělení nákladů se používají ke snížení finálních nákladů na přepravu pro určité zakázky a řádky, které jsou založené na dimenzích, jako je například množství a hmotnost. |
 | **Modul kilometrovného**               | Vypočítá vzdálenost přepravy.                                                                                                                                                                                                                                                                                     |
 | **Modul mezioperačního času**          | Vypočítá potřebný pro cestovní od začátku až do konce.                                                                                                                                                                                                                                       |
 | **Modul zóny**                  | Vypočítá zónu na základě aktuální adresy a počet zón, které je třeba překročit při cestě z adresy A na adresu B.                                                                                                                                                                    |
@@ -62,23 +62,23 @@ Ve většině případů můžete klepnout na tlačítko **Parametry** ve formul
 |          Parametr           |                                                                                  Popis                                                                                  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  <em>PřidělovatelZákladuSazby</em>   | Typ rozhraní .NET, který interpretuje data pro přiřazení základní sazby v konkrétním schématu. Syntaxe hodnoty parametru se skládá ze dvou segmentů oddělených svislou čárou ( |
-|  <em>KódRegistruUjetéVzdálenosti</em>  |                       Modul pro výpočet kilometrovného, který identifikuje záznam v modulu kilometrovného v databázi aplikace Microsoft Dynamics 365 for Finance and Operations.                        |
-| <em>PřidělovacíStroj</em> |                        Modul pro výpočet rozdělení nákladů, který identifikuje záznam ve výpočtu rozdělení nákladů v databázi aplikace Microsoft Dynamics 365 for Finance and Operations.                        |
+|  <em>KódRegistruUjetéVzdálenosti</em>  |                       Modul pro výpočet kilometrovného, který identifikuje záznam v modulu kilometrovného v databázi.                        |
+| <em>PřidělovacíStroj</em> |                        Modul pro výpočet rozdělení nákladů, který identifikuje záznam ve výpočtu rozdělení nákladů v databázi.                        |
 
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Jaké je použití metadat v modulech správy přepravy?
 ----------------------------------------------------------
 
-Moduly správy přepravy, které pracují s daty, která jsou definovány v aplikaci Dynamics 365 for Finance and Operations, mohou používat různá datová schémata. Systém správy přepravy umožňuje různým modulům správy přepravy používat stejné obecné fyzické databázové tabulky. Abyste byla zajištěna správnost výkladu běhových dat modulu, můžete definovat metadata pro databázové tabulky. Tím lze snížit náklady na sestavení nových modulů správy přepravy, protože další struktury tabulky a formuláře nejsou v rámci operací zapotřebí.
+Moduly správy přepravy, které pracují s daty, která jsou definovány v rámci Supply Chain Management, mohou používat různá datová schémata. Systém správy přepravy umožňuje různým modulům správy přepravy používat stejné obecné fyzické databázové tabulky. Abyste byla zajištěna správnost výkladu běhových dat modulu, můžete definovat metadata pro databázové tabulky. Tím lze snížit náklady na sestavení nových modulů správy přepravy, protože další struktury tabulky a formuláře nejsou v rámci operací zapotřebí.
 
 ## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Co lze použít jako vyhledávací data ve výpočtech sazby?
-Data, která lze použít při výpočtu sazby v aplikaci Microsoft Dynamics 365 for Finance and Operations, jsou řízena prostřednictvím konfigurace metadat. Například pokud chcete vyhledávat sazby podle PSČ, nastavte metadata podle typu vyhledávání poštovního směrovacího čísla.
+Data, která lze použít při výpočtu sazby, jsou řízena prostřednictvím konfigurace metadat. Například pokud chcete vyhledávat sazby podle PSČ, nastavte metadata podle typu vyhledávání poštovního směrovacího čísla.
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Vyžadují všechny konfigurace modulu metadata?
 Ne. Moduly správy přepravy, které slouží k načtení dat, která jsou vyžadována pro výpočet sazby z externích systémů, nebudou metadat požadovat. Data sazby pro tyto moduly lze získávat z externích přepravních systémů dopravce, obvykle pomocí webové služby. Například můžete používat modul pro výpočet kilometrovného načítající data přímo z map služby Bing a metadata pro tento modul tak nepotřebujete.
 
 | **Poznámka**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Moduly správy přepravy, které jsou dodávány s aplikací Finance and Operations pracují s daty, která se načítají z aplikace. Moduly, které se připojují k externím systémům, nejsou součástí operací. Model rozšíření využívající moduly však umožňují sestavení rozšíření pomocí nástrojů Microsoft Dynamics 365 for Finance and Operations Visual Studio. |
+| Moduly správy přepravy, které jsou dodávány s aplikací Supply Chain Management pracují s daty, která se načítají z aplikace. Moduly, které se připojují k externím systémům, nejsou součástí operací. Model rozšíření využívající moduly však umožňují sestavení rozšíření pomocí nástrojů Visual Studio. |
 
 ## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>Jak mohu nastavit metadata pro modul správy přepravy?
 Metadata pro moduly správy přepravy jsou nakonfigurovány odlišně pro různé typy modulů.
@@ -99,8 +99,3 @@ Metadata pro moduly správy přepravy jsou nakonfigurovány odlišně pro různ�
 | 3        | Cílové PSČ | Přiřazení | Řetězec    | PSČ    | Vybrané  |
 | 4        | Cílové koncové PSČ   | Přiřazení | Řetězec    | PSČ    | Vybrané  |
 | 5        | Cílová země           | Přiřazení | Řetězec    | Země / oblast |           |
-
-
-
-
-

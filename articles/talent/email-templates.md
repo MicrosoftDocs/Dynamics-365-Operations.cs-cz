@@ -1,6 +1,6 @@
 ---
 title: Šablony e-mailů
-description: Toto téma obsahuje informace o šablonách e-mailu, které lze vytvořit a používat v aplikaci Microsoft Dynamics 365 for Talent - Attract.
+description: Toto téma obsahuje informace o šablonách e-mailu, které lze vytvořit a používat v aplikaci Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/19/2018
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 7174fd96e5ddc9ba5a91eb423d08afd1daa45f48
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729719"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008029"
 ---
 # <a name="email-templates"></a>Šablony e-mailů
 [!include[banner](../includes/banner.md)]
 
-Pomocí knihovny šablon e-mailu mohou správci vytvářet jednotný motiv a značky všech e-mailů zasílaných z aplikace Microsoft Dynamics 365 for Talent: Attract and Offer. Správci také mohou také uspořádat sadu šablon obsahu e-mailů, kterou mohou využívat ostatní uživatelé. Náborový tým může tyto šablony používat ve svém workflowu k efektivnějšímu odesílání e-mailů. Některé e-mailové zprávy jsou nakonfigurovány na automatické odeslání a správce může použít knihovnu šablon e-mailu pro přizpůsobení obsahu těchto e-mailů.
+Pomocí knihovny šablon e-mailu mohou správci vytvářet jednotný motiv a značky všech e-mailů zasílaných z aplikace Microsoft Dynamics 365 Talent: Attract and Offer. Správci také mohou také uspořádat sadu šablon obsahu e-mailů, kterou mohou využívat ostatní uživatelé. Náborový tým může tyto šablony používat ve svém workflowu k efektivnějšímu odesílání e-mailů. Některé e-mailové zprávy jsou nakonfigurovány na automatické odeslání a správce může použít knihovnu šablon e-mailu pro přizpůsobení obsahu těchto e-mailů.
 
 > [!NOTE]
 > Aby bylo možné E-mailové šablony používat, musí mít organizace doplněk Komplexní nábor.

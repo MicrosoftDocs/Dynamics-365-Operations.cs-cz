@@ -1,6 +1,6 @@
 ---
 title: Přehled správy kvality
-description: Toto téma popisuje, jak lze použít správu kvality v aplikaci Microsoft Dynamics 365 for Finance and Operations za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce.
+description: Toto téma popisuje, jak lze použít správu kvality v aplikaci Dynamics 365 Supply Chain Management za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
@@ -19,24 +19,24 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1630d13437d7e930fdf32ed5fdc61fc62bc33817
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557493"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249566"
 ---
 # <a name="quality-management-overview"></a>Přehled správy kvality
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak lze použít správu kvality v aplikaci Microsoft Dynamics 365 for Finance and Operations za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce.
+Toto téma popisuje, jak lze použít správu kvality v aplikaci Dynamics 365 Supply Chain Management za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce.
 
-Správa kvality pomáhá se správou doby oběhu objednávky při zpracování nevyhovujících produktů bez ohledu na místo jejich původu. Vzhledem k tomu, že typy diagnostiky jsou propojeny s vykazováním oprav, aplikace Microsoft Dynamics 365 for Finance and Operations může naplánovat úlohy pro nápravu problémů a zabránění jejich opakování.
+Správa kvality pomáhá se správou doby oběhu objednávky při zpracování nevyhovujících produktů bez ohledu na místo jejich původu. Vzhledem k tomu, že typy diagnostiky jsou propojeny s vykazováním oprav, aplikace Finance and Operations může naplánovat úlohy pro nápravu problémů a zabránění jejich opakování.
 
 Kromě funkcí pro správu neshod obsahuje moduly správy kvality také funkce pro sledování problémů podle jejich typu (včetně interních potíží) a pro určování krátkodobých a dlouhodobých řešení. Statistické údaje o klíčových ukazatelů výkonnosti (KPI) nabízí náhled na historii předchozích potíží s neshodami a řešení, která byla použita k jejich nápravě. Historická data můžete použít ke kontrole účinnosti předchozích opatření pro zajištění kvality a k rozhodnutí o tom, zda tato opatření použít i v budoucnu.
 
-Při nastavování přidružení kvality může aplikace Finance and Operations vygenerovat objednávky kvality pro různé obchodní procesy, události a podmínky. Přiřazení kvality může zahrnovat určitou položku, určitou skupinu položek nebo všechny položky.
+Při nastavování přidružení kvality může aplikace Supply Chain Management vygenerovat objednávky kvality pro různé obchodní procesy, události a podmínky. Přiřazení kvality může zahrnovat určitou položku, určitou skupinu položek nebo všechny položky.
 
 ## <a name="examples-of-the-use-of-quality-management"></a>Příklady použití správy kvality
 Správa kvality je flexibilní a lze ji implementovat různými způsoby, aby byly splněny požadavky konkrétních úrovní operací dodavatelsko-odběratelského řetězce. V následujících příkladech jsou znázorněna možná použití těchto funkcí:

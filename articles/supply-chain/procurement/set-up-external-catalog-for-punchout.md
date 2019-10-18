@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595604"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249374"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
 
@@ -37,12 +37,12 @@ Při nastavování komunikace vám musí dodavatel poskytnout informace, které 
 
 ## <a name="setting-up-an-external-catalog"></a>Nastavení externího katalogu
 
-Externí katalog by měl zaměstnanci, který zadá nákupní žádanku, umožnit přesměrování na externí web pro výběr produktů. Produkty, které zaměstnanec vybere z externího katalogu, jsou vráceny do aplikace Dynamics 365 for Finance and Operations s aktuálními informacemi o ceně a odsud je lze předat do nákupní žádanky. Záměrem je nedovolit zaměstnancům zadat objednávku na externí server. Při nastavování externího katalogu se musíte ujistit, že účel pracoviště, k němuž má přístup externí katalog, je shromažďování informací o nabídce a ne zadání skutečné objednávky.
+Externí katalog by měl zaměstnanci, který zadá nákupní žádanku, umožnit přesměrování na externí web pro výběr produktů. Produkty, které zaměstnanec vybere z externího katalogu, jsou vráceny s aktuálními informacemi o ceně a odsud je lze předat do nákupní žádanky. Záměrem je nedovolit zaměstnancům zadat objednávku na externí server. Při nastavování externího katalogu se musíte ujistit, že účel pracoviště, k němuž má přístup externí katalog, je shromažďování informací o nabídce a ne zadání skutečné objednávky.
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>K nastavení externího katalogu dodavatelů je třeba dokončit následující úlohy:
 
 1. Nastavte hierarchii kategorií zásobování. Další informace o tom, jak nastavit hierarchii kategorií zásobování, najdete v tématu [Nastavení zásad pro hierarchie kategorie nákupu](tasks/set-up-policies-procurement-category-hierarchies.md).
-2. Zaregistrujte dodavatele v modulu Finance and Operations. Dříve, než budete moci nastavit konfigurace pro přístup k externímu katalogu dodavatele, musíte nastavit dodavatele a kontakty dodavatele v aplikaci Microsoft Dynamics 365. Navíc musí být dodavatel externího katalogu přidán do vybrané kategorie zásobování. Další informace o registraci dodavatelů v aplikaci Microsoft Dynamics 365 naleznete v tématu [Správa uživatelů pro spolupráci dodavatele](manage-vendor-collaboration-users.md). Informace o postupu při přidělování dodavatelů ke kategorii zásobování získáte v tématu [Schválení dodavatelů pro konkrétní kategorie zásobování](tasks/approve-vendors-specific-procurement-categories.md).
+2. Zaregistrujte dodavatele v aplikaci Supply Chain Management. Dříve, než budete moci nastavit konfigurace pro přístup k externímu katalogu dodavatele, musíte nastavit dodavatele a kontakty dodavatele v aplikaci Microsoft Dynamics 365. Navíc musí být dodavatel externího katalogu přidán do vybrané kategorie zásobování. Další informace o registraci dodavatelů naleznete v tématu [Správa uživatelů pro spolupráci dodavatele](manage-vendor-collaboration-users.md). Informace o postupu při přidělování dodavatelů ke kategorii zásobování získáte v tématu [Schválení dodavatelů pro konkrétní kategorie zásobování](tasks/approve-vendors-specific-procurement-categories.md).
 3. Musí být nastavené měrné jednotky a měna používané dodavatelem. Pro informaci, jak vytvořit měrnou jednotku, přejděte na [Správa měrných jednotek](../pim/tasks/manage-unit-measure.md).
 4. Nakonfigurujte katalog externích dodavatelů na základě požadavků webu katalogu externích dodavatelů. Další informace o této úloze naleznete v části [Konfigurace katalogu externího dodavatele](#configure-the-external-vendor-catalog).
 5. Otestujte konfigurace katalogu externích dodavatelů k ověření, že nastavení jsou platná a máte přístup k externímu katalogu dodavatele. Pomocí akce **Ověřit nastavení** ověřte zprávu o nastavení požadavku, kterou jste definovali. Tato zpráva by měla zajistit, že se web externího katalogu otevře v novém okně prohlížeče. Při ověřování nelze objednávat položky a služby od dodavatele. Chcete-li objednat položky a služby, je nutné přejít ke katalogu dodavatele z nákupní žádanky.
@@ -90,9 +90,9 @@ Dodavatel může mít požadavek na příjem z vnějšího zdroje prvku v nastav
 Další informace o protokolu cXML protokolu naleznete na webu [cXML.org](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Zpráva zaslaná zpět
-Zpráva zaslaná zpět je zpráva přijatá od dodavatele v případě, že se uživatel odhlásí z externího webu a vrátí do aplikace Finance and Operations. Tyto zprávy nelze konfigurovat. Jsou založeny na definici cXML protokolu.Dále jsou uvedeny informace, které mohou být součástí takové zprávy přijaté na řádku žádanky:
+Zpráva zaslaná zpět je zpráva přijatá od dodavatele v případě, že se uživatel odhlásí z externího webu a vrátí do aplikace Supply Chain Management. Tyto zprávy nelze konfigurovat. Jsou založeny na definici cXML protokolu.Dále jsou uvedeny informace, které mohou být součástí takové zprávy přijaté na řádku žádanky.
 
-| Zpráva přijatá od dodavatele | Zkopírovaná do řádku žádanky v aplikaci Finance and Operations.|
+| Zpráva přijatá od dodavatele | Zkopírováno do řádku žádanky|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Množství|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|ID externí položky|

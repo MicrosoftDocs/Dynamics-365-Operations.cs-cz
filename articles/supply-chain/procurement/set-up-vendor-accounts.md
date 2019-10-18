@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547668"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249377"
 ---
 # <a name="set-up-vendor-accounts"></a>Nastavení účtů dodavatele
 
@@ -60,13 +60,13 @@ U dodavatelů lze uložit kontakty. Tyto kontakty lze použít v dokumentech, ja
 
 Pokud budete chtít přidat kontakty k dodavateli, na stránce **Všichni dodavatelé** na kartě **Dodavatel** klikněte ve skupině **Nastavení** na tlačítko **Kontakty** &gt; **Přidat kontakty**.  
 
-Kontakty dodavatelů můžete vytvářet zcela od začátku. Také můžete zkopírovat informace od jiného uživatele, který je již registrován v aplikaci Microsoft Dynamics 365 for Finance and Operations, a informace podle potřeby upravit.  
+Kontakty dodavatelů můžete vytvářet zcela od začátku. Také můžete zkopírovat informace od jiného uživatele, který je již registrován v aplikaci Supply Chain Management, a informace podle potřeby upravit.  
 
 **Poznámka:** přidáním kontaktu k dodavateli není to stejné, jako přidání kontaktních údajů k danému dodavateli. Ačkoli jste mohli u dodavatele přidat obecné kontaktní údaje, mohou existovat další konkrétní osoby, které působí jako kontakty v dané společnosti, které mají své vlastní kontaktní údaje.  
 
 Záznam kontaktní osoby nelze odstranit, pokud je na tento kontakt v dokumentu odkazováno. Namísto toho lze kontakt deaktivovat.  
 
-Kontakty dodavatele můžete přidat do osobních kontaktů ve službách Microsoft Office 365. Nejprve je však nutné nastavit synchronizaci mezi aplikací Finance and Operations a službami Office 365 v rámci synchronizace serveru Microsoft Exchange Server a průvodci instalací pro aplikaci Microsoft Outlook.
+Kontakty dodavatele můžete přidat do osobních kontaktů ve službách Microsoft Office 365. Nejprve je však nutné nastavit synchronizaci mezi aplikací Supply Chain Management a službami Office 365 v rámci synchronizace serveru Microsoft Exchange Server a průvodci instalací pro aplikaci Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Dodavatelé z různých právnických osob
 Dodavatel je ve vaší organizaci registrován pouze pro jednu právnickou osobu a ostatní právnické osoby si musí zaregistrovat stejného dodavatele. Ke konfiguraci dodavatele pro jinou právnickou osobu lze použít stránku **Přidat dodavatele k jiné právnické osobě**. U dodavatele je ve vybrané právnické osobě nutné určit skupinu dodavatelů, měnu a stav blokování.  

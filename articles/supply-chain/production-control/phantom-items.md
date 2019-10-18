@@ -1,6 +1,6 @@
 ---
 title: Fiktivní položky
-description: Toto téma podrobně popisuje, jakým způsobem lze použít fiktivní typ řádku pro řádky kusovníku a receptury v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+description: Toto téma podrobně popisuje, jakým způsobem lze použít fiktivní typ řádku pro řádky kusovníku a receptury v aplikaci Dynamics 365 Supply Chain Management.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f01a0321740365c23cbc117be42c0a5137960af7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7c39b0ac2eb8a2293c828fee23ed6a78cb5fe2c9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843882"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249997"
 ---
 # <a name="phantom-items"></a>Fiktivní položky
 
@@ -51,7 +51,7 @@ V této struktuře můžete vidět, že neexistuje zmínka o částech F a G, a 
 
 Na rozdíl od vývojového kusovníku, který měl dva listy operací, výrobní kusovník obsahuje pouze jeden list operací. Operace balení, která byla navázána na část G, byla také povýšena a je nyní součástí listu operací pro produkt H. Sestavení elektrické jednotky je první operace. Tento výrobní příkaz dává smysl, vzhledem k tomu, že tato jednotka se používá v další operace, kterou je sestavení stroje. Poslední operace je operace balení, které spotřebuje dva obalové materiály (C a D).
 
-V aplikaci Microsoft Dynamics 365 for Finance and Operations je přechod mezi vývojovým kusovníkem a výrobním kusovníkem povolen prostřednictvím typu řádku kusovníku Phantom. Jako naznačuje termín „fiktivní“, části F a G během převodu mezi dvěma typy kusovníku zmizely. V tomto příkladu je fiktivní typ řádku použit na řádky kusovníku pro části F a G ve vývojovém kusovníku. Když je vytvořena výrobní zakázka nebo dávková objednávka, je vývojový kusovník zkopírován do výrobní zakázky nebo dávkové objednávky. Když je pak zakázka oceněna, dojde k přechodu z vývojového kusovníku na výrobní kusovník, jak je uvedeno na předchozím obrázku. Z listu operace na druhém obrázku jsou obalové materiály C a D vstupem pro operaci. 
+Přechod mezi vývojovým kusovníkem a výrobním kusovníkem povolen prostřednictvím typu řádku kusovníku Phantom. Jako naznačuje termín „fiktivní“, části F a G během převodu mezi dvěma typy kusovníku zmizely. V tomto příkladu je fiktivní typ řádku použit na řádky kusovníku pro části F a G ve vývojovém kusovníku. Když je vytvořena výrobní zakázka nebo dávková objednávka, je vývojový kusovník zkopírován do výrobní zakázky nebo dávkové objednávky. Když je pak zakázka oceněna, dojde k přechodu z vývojového kusovníku na výrobní kusovník, jak je uvedeno na předchozím obrázku. Z listu operace na druhém obrázku jsou obalové materiály C a D vstupem pro operaci. 
 
 ## <a name="multilevel-phantom-bom-structures"></a>Víceúrovňové struktury fiktivního kusovníku
 Fiktivní typ řádku typu lze použít ve víceúrovňových strukturách kusovníku, jak je uvedeno na následujícím obrázku. Na tomto obrázku je (a) kusovník pro produkt G a (b) je tabulka postupů pro části E a F a produkt G. 

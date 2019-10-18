@@ -1,6 +1,6 @@
 ---
-title: Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci Finance and Operations
-description: Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci smluvních faktur v Microsoft Dynamics 365 for Field Service do volných faktur v Microsoft Dynamics 365 for Finance and Operations.
+title: Synchronizace smluvních faktur v Field Service na volné textové faktury v Supply Chain Management
+description: Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci smluvních faktur v Dynamics 365 Field Service do volných faktur v Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2018
@@ -19,46 +19,46 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 55301ba39dd28fbae5b6c21b1da3c3d9cf6afd8a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ca0014dc8bc1c70670a3cf85527eee0ef44865f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560156"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249858"
 ---
-# <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-finance-and-operations"></a>Synchronizace smluvních faktur ve službě Field Service do volných faktur v aplikaci Finance and Operations
+# <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synchronizace smluvních faktur v Field Service na volné textové faktury v Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci smluvních faktur v Microsoft Dynamics 365 for Field Service do volných faktur v Microsoft Dynamics 365 for Finance and Operations.
+Toto téma popisuje šablony a základní úlohy, které se používají k synchronizaci smluvních faktur v Dynamics 365 Field Service do volných faktur v Dynamics 365 Supply Chain Management.
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
-Následující šablona a základní úlohy se používají ke spuštění synchronizace faktur dohod pracovních příkazů v modulu Field Service do prodejních objednávek v modulu Finance and Operations.
+Následující šablona a základní úlohy se používají ke spuštění synchronizace faktur dohod pracovních příkazů v modulu Field Service do prodejních objednávek v modulu Supply Chain Management.
 
-**Název šablony v integraci dat:**
+**Název šablony v integraci dat**
 
-- Faktury dohod (Field Service do Fin and Ops)
+- Smluvní faktury (Field Service do Supply Chain Management)
 
-**Názvy úkolů v projektu integrace dat:**
+**Názvy úkolů v projektu integrace dat**
 
 - Záhlaví faktury
 - Řádky faktury
 
 Následující úlohy synchronizace jsou vyžadovány před zobrazením synchronizace faktur dohod:
 
-- Účty (Sales do Fin and Ops) - přímé
+- Obchodní vztahy (Sales do Supply Chain Management) – Přímo
 
 ## <a name="entity-set"></a>Sada entit
 
-| Field Service  | Finance and Operations                 |
+| Field Service  | Správa dodavatelsko-odběratelského řetězce                 |
 |----------------|----------------------------------------|
 | faktury       | Záhlaví volné faktury CDS odběratele |
 | invoicedetails | Řádky volné faktury CDS odběratele   |
 
 ## <a name="entity-flow"></a>Tok entity
 
-Faktury vytvořené z dohody v aplikaci Field Service lze synchronizovat s modulem Finance and Operations prostřednictvím projektu integrace dat Common Data Service (CDS). Aktualizace těchto faktur budou synchronizovány s volnými textovými fakturami v modulu Finance and Operations, pokud je stav účtování volné textové faktury **Zpracovává se**. Po zaúčtování volných textových faktur v modulu Finance and Operations a aktualizaci stavu účetnictví na **Dokončeno** již nemůžete synchronizovat aktualizace z Field Service.
+Faktury vytvořené z dohody v aplikaci Field Service lze synchronizovat s modulem Supply Chain Management prostřednictvím projektu integrace dat Common Data Service. Aktualizace těchto faktur budou synchronizovány s volnými textovými fakturami v modulu Supply Chain Management, pokud je stav účtování volné textové faktury **Zpracovává se**. Po zaúčtování volných textových faktur v modulu Supply Chain Management a aktualizaci stavu účetnictví na **Dokončeno** již nemůžete synchronizovat aktualizace z Field Service.
 
 ## <a name="field-service-crm-solution"></a>Řešení Field Service CRM
 
@@ -66,18 +66,18 @@ Bylo přidáno pole **Má řádky s původem smlouvy** bylo přidáno do entity 
 
 Pole **Má původ faktury** bylo přidáno do entity **Řádek faktury**. Toto pole pomáhá zajistit, že jsou synchronizovány pouze řádky faktury, které jsou vytvořeny z dohody. Hodnota je **true**, pokud řádek faktury pochází z dohody.
 
-**Datum faktury** je povinné pole v modulu Finance and Operations. Proto musí mít pole hodnotu v poli Field Service předtím, než dojde k synchronizaci. Aby bylo možné tento požadavek splnit, je přidána následující logika:
+**Datum faktury** je povinné pole v modulu Supply Chain Management. Proto musí mít pole hodnotu v poli Field Service předtím, než dojde k synchronizaci. Aby bylo možné tento požadavek splnit, je přidána následující logika:
 
 - Pokud je pole **Datum faktury** v entitě **Faktura** prázdné (tj. neobsahuje žádnou hodnotu), je nastaveno na současné datum, když je přidán řádek faktury pocházející z dohody.
 - Uživatel může pole **Datum faktury** změnit. Avšak pokud se uživatel pokusí uložit fakturu, která pochází z dohody, přijímá chybu obchodního procesu v případě, že je pole **datum faktury** na faktuře prázdné.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Nastavení mapování a předpokladů
 
-### <a name="in-finance-and-operations"></a>V aplikaci Finance and Operations
+### <a name="in-supply-chain-management"></a>V Supply Chain Management
 
-Původ faktury je nutné nastavit pro integraci, aby bylo možné rozlišit volné textové faktury v modulu Finance and Operations, které jsou vytvořeny z faktury dohod v modulu Field Service. Když má faktura původ **Integrace faktury dohody**, je pole **Externí faktura** zobrazeno v záhlaví **Prodejní faktura**.
+Původ faktury je nutné nastavit pro integraci, aby bylo možné rozlišit volné textové faktury v modulu Supply Chain Management, které jsou vytvořeny z faktury dohod v modulu Field Service. Když má faktura původ **Integrace faktury dohody**, je pole **Externí faktura** zobrazeno v záhlaví **Prodejní faktura**.
 
-Kromě zobrazení v záhlaví faktury lze použít informace **číslo externí faktury**, které slouží k zajištění, že faktury vytvořené z faktur dohod Field Service jsou filtrovány během synchronizace faktury z Finance and Operations do Field Service.
+Kromě zobrazení v záhlaví faktury lze použít informace **číslo externí faktury**, které slouží k zajištění, že faktury vytvořené z faktur dohod Field Service jsou filtrovány během synchronizace faktury z Supply Chain Management do Field Service.
 
 1. Přejděte do nabídky **Pohledávky** \> **Nastavení** \> **Kódy původu faktury**.
 2. Vyberte **nový** pro vytvoření nového původu faktury.
@@ -91,7 +91,7 @@ Kromě zobrazení v záhlaví faktury lze použít informace **číslo externí 
 
 Úloha: **Řádky faktury**  
 
-Ujistěte se, že výchozí hodnota pro pole Finance and Operations **Zobrazená hodnota hlavního účtu** je aktualizována, aby odpovídala požadované hodnotě.
+Ujistěte se, že výchozí hodnota pro pole Supply Chain Management **Zobrazená hodnota hlavního účtu** je aktualizována, aby odpovídala požadované hodnotě.
 
 Výchozí hodnota šablony je **401100**.
 
@@ -99,10 +99,10 @@ Výchozí hodnota šablony je **401100**.
 
 Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
-### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-headers"></a>Smluvní faktury (Field Service do Fin a Ops): Záhlaví faktury
+### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Smluvní faktury (Field Service do Supply Chain Management): záhlaví faktur
 
 [![Mapování šablony v integraci dat](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
-### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Smluvní faktury (Field Service do Fin a Ops): Řádky záhlaví faktury
+### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Smluvní faktury (Field Service do Supply Chain Management): řádky faktur
 
 [![Mapování šablony v integraci dat](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)

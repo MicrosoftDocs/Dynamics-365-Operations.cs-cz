@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent (23. dubna 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (23. dubna 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/23/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5ec10820761cb22cbff6229babe8a250848214b7
-ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
+ms.openlocfilehash: 1a70be88e3ab65bb0bdd844347e8ba69e4ba61a5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624574"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024107"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-23-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent (23. dubna 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-23-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (23. dubna 2019)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 for Talent.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Změny v aplikaci Attract
-Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 for Talent: Attract.
+Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Attract.
 
 ## <a name="changes-in-onboard"></a>Změny v aplikaci Onboard
-Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 for Talent: Onboard.
+Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Změny v Core HR
 Změny popsané v této části se vztahují na číslo sestavení 8.1.2253. Čísla v závorkách se vztahují na čísla podpory v Lifecycle Services (LCS).
@@ -79,4 +79,4 @@ S touto změnou se při zadávání polí názvů zjistí duplicity a stav zobra
 ## <a name="known-issues"></a>Známé problémy
 
 ### <a name="email-support-for-alerts"></a>Podpora e-mailu pro výstrahy
-S aktualizací Platform Update 26 mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěny událostí.
+V aktualizaci Platform Update 26 for Finance and Operations mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěna událostí.

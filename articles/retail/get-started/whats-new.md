@@ -1,6 +1,6 @@
 ---
-title: Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail
-description: Tato stránka obsahuje odkazy na zdroje, které můžete pomoci k získání informací o nových funkcích v nejnovější verzi aplikace Microsoft Dynamics 365 for Retail.
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Retail
+description: Tato stránka obsahuje odkazy na zdroje, které můžete pomoci k získání informací o nových funkcích v nejnovější verzi aplikace Microsoft Dynamics 365 Retail.
 author: sericks007
 manager: AnnBe
 ms.date: 10/20/2018
@@ -16,22 +16,22 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 23156e4f19beaf1bfe6ab9a66a326d55e7d85213
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d0f89cc5ec0a0a1bb174a031aa9b6c059d608be4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845690"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025484"
 ---
-# <a name="whats-new-and-changed-in-dynamics-365-for-retail"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 for Retail
+# <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Retail
 
 [!include [banner](../../includes/banner.md)]
 
-Tato stránka obsahuje odkazy na zdroje, které můžete pomoci k získání informací o nových funkcích a změnách v nejnovější verzi aplikace Microsoft Dynamics 365 for Retail.
+Tato stránka obsahuje odkazy na zdroje, které můžete pomoci k získání informací o nových funkcích a změnách v nejnovější verzi aplikace Microsoft Dynamics 365 Retail.
 
 [!include [release notes](../includes/release-notes.md)]
 
-## <a name="releases-of-dynamics-365-for-retail"></a>Vydání Dynamics 365 for Retail
+## <a name="releases-of-dynamics-365-retail"></a>Vydání Dynamics 365 Retail
 
 | Uvolnit | Číslo sestavení | Dostupnost | Další informace |
 |---------|--------------|--------------|------------|

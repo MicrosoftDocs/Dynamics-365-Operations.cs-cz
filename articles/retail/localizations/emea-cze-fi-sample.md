@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 82f7b6a0b8d6d4b517eb3480b1550b821e95ec46
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 4bd1eaa1211574c25d7d77c0f8d37c9978ca7c32
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595303"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025432"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
@@ -31,7 +31,7 @@ ms.locfileid: "1595303"
 
 ## <a name="introduction"></a>Úvod
 
-Pro účely splnění fiskálních požadavků na registrační pokladny v České republice obsahuje funkce Microsoft Dynamics 365 for Retail pro Českou republiku vzorovou integraci pokladního místa (POS) s externí fiskální registrační službou. Vzorek rozšiřuje [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Je založena na řešení [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) od [EFSTA](https://efsta.org/) a umožňuje komunikaci se službou EFR přes protokol HTTPS. Služba EFR zajišťuje elektronickou registraci prodeje (EET - Elektronická evidence tržeb), tj. online převodu prodejních údajů do fiskální webové služby daňových úřadů.
+Pro účely splnění fiskálních požadavků na registrační pokladny v České republice obsahuje funkce Dynamics 365 Retail pro Českou republiku vzorovou integraci pokladního místa (POS) s externí fiskální registrační službou. Vzorek rozšiřuje [funkci fiskální integrace](fiscal-integration-for-retail-channel.md). Je založena na řešení [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) od [EFSTA](https://efsta.org/) a umožňuje komunikaci se službou EFR přes protokol HTTPS. Služba EFR zajišťuje elektronickou registraci prodeje (EET - Elektronická evidence tržeb), tj. online převodu prodejních údajů do fiskální webové služby daňových úřadů.
 
 Služba EFR by měla být hostitelem hardwarové stanice pro maloobchod nebo samostatný počítač, se kterým se lze propojit z hardwarové stanice. Ukázka je poskytnuta ve formě zdrojového kódu a je součástí sady software development kit (SDK) pro maloobchod.
 
@@ -115,7 +115,9 @@ Zadejte také následující nastavení pro Českou republiku. Po dokončení in
 
 ### <a name="set-up-vat-per-czech-republic"></a>Nastavení DPH pro Českou republiku
 
-Musíte vytvořit kódy DPH, skupiny daní DPH a skupiny DPH za zboží. Musíte také nastavit informace o DPH pro produkty a služby. Další informace o způsobu nastavení a použití DPH v aplikaci Microsoft Dynamics 365 for Finance and Operations a v aplikaci Retail získáte v části [Přehled DPH](../../financials/general-ledger/indirect-taxes-overview.md).
+
+Musíte vytvořit kódy DPH, skupiny daní DPH a skupiny DPH za zboží. Musíte také nastavit informace o DPH pro produkty a služby. Další informace o způsobu nastavení a použití funkcí DPH získáte v části [Přehled DPH](../../financials/general-ledger/indirect-taxes-overview.md).
+
 
 ### <a name="set-up-retail-stores"></a>Nastavení maloobchodních prodejen
 

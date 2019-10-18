@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b6555086d6c86c17b501af9d4d8155e9c08a447
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 14b0661c4c1fa8f2bc197a8a3983b71d73199b2a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536542"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251539"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
@@ -163,7 +163,7 @@ Po provedení počáteční akce pro mobilním zařízení můžete nastavit pol
 </tr>
 <tr>
 <td>Pohyb podle šablony</td>
-<td>Přesunete položky z jednoho místa na jiné částečně automatizovaným postupem. Pracovník vybere skladové místo, ze kterého budou položky přesunuty, a aplikace Finance and Operations použije směrnice skladového místa pro určení místa, kam budou položky přeneseny.</td>
+<td>Přesunete položky z jednoho místa na jiné částečně automatizovaným postupem. Pracovník vybere skladové místo, ze kterého budou položky přesunuty, a systém použije směrnice skladového místa pro určení místa, kam budou položky přeneseny.</td>
 </tr>
 <tr>
 <td>Převod skladu</td>
@@ -207,12 +207,12 @@ Kromě nastavení položek nabídky pro vytvoření skladové práce můžete na
 </thead>
 <tbody>
 <tr class="odd">
-<td>Neomezeno</td>
+<td>Žádní</td>
 <td>Tato výchozí hodnota práci nezpracuje.</td>
 </tr>
 <tr class="even">
 <td>Řízeno systémem</td>
-<td>Microsoft Dynamics 365 for Finance and Operations určuje typ práce, která je přiřazena k pracovníkovi, a pořadí, ve kterém pracovník provádí práci. Pokud vyberete tuto možnost, můžete klepnout na <strong>Práce řízená systémem</strong> v podokně Akce a otevřít tak stránku <strong>Pořadí řazení řízené systémem</strong>, kde můžete nastavit kritéria pro pracovní třídění. Kritéria třídění řídí pořadí, ve kterém pracovník provádí práci. Můžete přidat tolik kritérií, kolik potřebujete.</td>
+<td>Supply Chain Management určuje typ práce, která je přiřazena k pracovníkovi, a pořadí, ve kterém pracovník provádí práci. Pokud vyberete tuto možnost, můžete klepnout na <strong>Práce řízená systémem</strong> v podokně Akce a otevřít tak stránku <strong>Pořadí řazení řízené systémem</strong>, kde můžete nastavit kritéria pro pracovní třídění. Kritéria třídění řídí pořadí, ve kterém pracovník provádí práci. Můžete přidat tolik kritérií, kolik potřebujete.</td>
 </tr>
 <tr class="odd">
 <td>Řízeno uživatelem</td>
@@ -224,7 +224,7 @@ Kromě nastavení položek nabídky pro vytvoření skladové práce můžete na
 </tr>
 <tr class="odd">
 <td>Systémové seskupení</td>
-<td>Microsoft Dynamics 365 for Finance and Operations seskupí práci pro pracovníka na základě zadaného pole. Například výdej bude seskupen, jakmile pracovník naskenuje ID dodávky, ID vytížení nebo jinou hodnotu, kterou lze propojit každá pracovní položka. Pokud tuto možnost vyberete, budou k dispozici následující pole:
+<td>Supply Chain Management seskupí práci pro pracovníka na základě zadaného pole. Například výdej bude seskupen, jakmile pracovník naskenuje ID dodávky, ID vytížení nebo jinou hodnotu, kterou lze propojit každá pracovní položka. Pokud tuto možnost vyberete, budou k dispozici následující pole:
 <ul>
 <li><strong>Pole systémového seskupení</strong> - vyberte pole, které pracovník naskenuje pro seskupení práce.</li>
 <li><strong>Popisek systémového seskupení</strong> - zadejte text, který informuje pracovníka o tom, co při seskupení práce naskenovat.</li>
@@ -245,7 +245,7 @@ Tato možnost je užitečná například po připravení více palet k nákladu.
 </tr>
 <tr class="even">
 <td>Seskupení cyklické inventury</td>
-<td>Pracovník vybere zónu, fond práce nebo umístění a aplikace Microsoft Dynamics 365 for Finance and Operations přiřadí práci na základě tohoto výběru. Pokud vyberete tuto možnost, můžete také klepnout na tlačítko <strong>Cyklická inventura</strong> v podokně Akce a zadat další informace ke zobrazení nebo také určit počet opakování inventury, které pracovník musí provést v případě rozdílu v množství.</td>
+<td>Pracovník vybere zónu, fond práce nebo umístění a aplikace Supply Chain Management přiřadí práci na základě tohoto výběru. Pokud vyberete tuto možnost, můžete také klepnout na tlačítko <strong>Cyklická inventura</strong> v podokně Akce a zadat další informace ke zobrazení nebo také určit počet opakování inventury, které pracovník musí provést v případě rozdílu v množství.</td>
 </tr>
  <tr class="odd">
 <td>Nakládání přepravy</td>
@@ -333,7 +333,7 @@ Následující tabulka obsahuje popis těchto možností.
 </tr>
 <tr class="odd">
 <td>Odložená skupina</td>
-<td>Výběrem této možnosti můžete seskupit pracovní vyskladnění. Tato možnost je k dispozici, pokud byla práce seskupena pracovníkem nebo v aplikaci Microsoft Dynamics 365 for Finance and Operations. Pokud pracovník dokončí všechny práce výdeje ve skupině, ve stejné skupině se vytvoří pracovní vyskladnění.</td>
+<td>Výběrem této možnosti můžete seskupit pracovní vyskladnění. Tato možnost je k dispozici, pokud byla práce seskupena pracovníkem nebo v aplikaci Supply Chain Management. Jakmile pracovník dokončí všechny práce výdeje ve skupině, ve stejné skupině se vytvoří pracovní vyskladnění.</td>
 </tr>
 <tr class="even">
 <td>Typy úprav zásob</td>
@@ -366,11 +366,11 @@ Následující tabulka obsahuje popis těchto možností.
 </tr>
 <tr class="even">
 <td>Pole systémového seskupení</td>
-<td>Vyberte pole, které určuje způsob, jak aplikace Microsoft Dynamics 365 for Finance and Operations seskupí práci výdeje pro pracovníky. Pokud například vyberete pole <strong>ShipmentId</strong>, pracovník naskenuje ID dodávky pro seskupení práce výdeje. Všechna práce pro dodávku bude přiřazena pracovníkovi. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Musíte také zadat text do pole <strong>Popisek systémového seskupení</strong> a informovat tak pracovníka o tom, co naskenovat.</td>
+<td>Vyberte pole, které určuje způsob, jak aplikace Supply Chain Management seskupí práci výdeje pro pracovníka. Pokud například vyberete pole <strong>ShipmentId</strong>, pracovník naskenuje ID dodávky pro seskupení práce výdeje. Všechna práce pro dodávku bude přiřazena pracovníkovi. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Musíte také zadat text do pole <strong>Popisek systémového seskupení</strong> a informovat tak pracovníka o tom, co naskenovat.</td>
 </tr>
 <tr class="odd">
 <td>Popisek systémového seskupení</td>
-<td>Zadejte text, který informuje o tom, jakou práci naskenovat při seskupení práce výdeje v aplikaci Microsoft Dynamics 365 for Finance and Operations. Používáte-li například pole <strong>ShipmentId</strong> pro seskupení práce výdeje podle dodávky, měli byste do pole zadat <strong>ID dodávky</strong>. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Je nutné zaškrtnout pole definující seskupení v poli <strong>Pole systémového seskupení</strong>.</td>
+<td>Zadejte text, který informuje o tom, jakou práci naskenovat při seskupení práce výdeje v aplikaci Supply Chain Management. Používáte-li například pole <strong>ShipmentId</strong> pro seskupení práce výdeje podle dodávky, měli byste do pole zadat <strong>ID dodávky</strong>. Toto pole vyžaduje, abyste vytvořili položku nabídky pro stávající práci, která je seskupena podle systému. Je nutné zaškrtnout pole definující seskupení v poli <strong>Pole systémového seskupení</strong>.</td>
 </tr>
 <tr class="even">
 <td>Použít výchozí data</td>
@@ -386,13 +386,13 @@ Následující tabulka obsahuje popis těchto možností.
 </tr>
 <tr class="odd">
 <td>Kód šablony práce</td>
-<td>Vyberte šablonu práce, která v procesu vytvoří práci. Pokud například obdržíte položku pro nákupní objednávku, práce vyskladnění se vytvoří na základě šablony práce. Pokud nevyberete šablonu práce, aplikace Microsoft Dynamics 365 for Finance and Operations přiřadí šablonu na základě kritérií dotazu. Další informace týkající se šablon práce naleznete v tématu <a href="control-warehouse-location-directives.md">Řízení práce ve skladu pomocí šablon práce a směrnic umístění</a>.</td>
+<td>Vyberte šablonu práce, která v procesu vytvoří práci. Pokud například obdržíte položku pro nákupní objednávku, práce vyskladnění se vytvoří na základě šablony práce. Pokud nevyberete šablonu práce, aplikace Supply Chain Management přiřadí šablonu na základě kritérií dotazu. Další informace týkající se šablon práce naleznete v tématu <a href="control-warehouse-location-directives.md">Řízení práce ve skladu pomocí šablon práce a směrnic umístění</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Požadovat po zaměstnancích potvrzení výrobku, umístění a množství při vyskladňování zboží
-Můžete nastavit potvrzení práce vyžadující po pracovníkovi, aby při práci ve skladu pomocí mobilního zařízení zaregistroval skladové místo nebo množství. Potvrzení práce pomáhá zajistit, aby byl pracovník na správném skladovém místě, nebo aby zpracoval správné množství položek. Můžete také povolit aplikaci Microsoft Dynamics 365 for Finance and Operations automaticky potvrdit registraci pracovníka. Pokud zapnete automatické potvrzení, nelze současně požadovat potvrzení skladového místa nebo množství. Pracovní potvrzení bude také zahrnovat produkty a varianty produktů. Kromě toho můžete zaregistrovat potvrzení naskenováním čárového kódu. Pro potvrzení produktů a variant produktů je nutné zadat ID produktu nebo varianty produktu. Může se jednat o ID produktu, ID vyhledávání produktu, externí ID, GTIN nebo čárový kód. Po zadání ID nebo naskenování čárového kódu se v mobilním zařízení zobrazí dimenze pro varianty produktu. 
+Můžete nastavit potvrzení práce vyžadující po pracovníkovi, aby při práci ve skladu pomocí mobilního zařízení zaregistroval skladové místo nebo množství. Potvrzení práce pomáhá zajistit, aby byl pracovník na správném skladovém místě, nebo aby zpracoval správné množství položek. Můžete také povolit aplikaci Supply Chain Management automaticky potvrdit registraci pracovníka. Pokud zapnete automatické potvrzení, nelze současně požadovat potvrzení skladového místa nebo množství. Pracovní potvrzení bude také zahrnovat produkty a varianty produktů. Kromě toho můžete zaregistrovat potvrzení naskenováním čárového kódu. Pro potvrzení produktů a variant produktů je nutné zadat ID produktu nebo varianty produktu. Může se jednat o ID produktu, ID vyhledávání produktu, externí ID, GTIN nebo čárový kód. Po zadání ID nebo naskenování čárového kódu se v mobilním zařízení zobrazí dimenze pro varianty produktu. 
 
 Následující tabulka popisuje různé typy práce, se kterým můžete použít potvrzení práce.
 

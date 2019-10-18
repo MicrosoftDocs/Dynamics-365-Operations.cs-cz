@@ -1,6 +1,6 @@
 ---
-title: Nastavení integrace s řešením LinkedIn pro aplikaci Microsoft Dynamics 365 for Talent - Attract
-description: V tomto tématu je vysvětleno, jak konfigurovat integraci řešení LinkedIn v aplikaci Microsoft Dynamics 365 for Talent - Attract, aby bylo možné snadno publikovat práce na LinkedIn z aplikace Attract a aby vaši pracovníci náboru mohli synchronizovat své informace o náboru s profilem kandidáta na LinkedIn.
+title: Nastavení integrace s řešením LinkedIn pro aplikaci Microsoft Dynamics 365 Talent - Attract
+description: V tomto tématu je vysvětleno, jak konfigurovat integraci řešení LinkedIn v aplikaci Microsoft Dynamics 365 Talent - Attract, aby bylo možné snadno publikovat práce na LinkedIn z aplikace Attract a aby vaši pracovníci náboru mohli synchronizovat své informace o náboru s profilem kandidáta na LinkedIn.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8e42ec7d0bb74089b4e915b5a30277401e694cf9
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 6b86cafdf364f2de051f3d8ceab7413c2c13c3a5
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756215"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009962"
 ---
 # <a name="set-up-linkedin-integration"></a>Nastavení integrace s řešením LinkedIn
 
 [!include[banner](../includes/banner.md)]
 
-Pomozte pracovníkům náboru a vedoucím týmů přilákat nejlepší talenty konfigurací integrace LinkedIn s Microsoft Dynamics 365 for Talent: Attract. Attract umožňuje publikovat nabídky práce přímo na LinkedIn, největší online síti profesionálů.
+Pomozte pracovníkům náboru a vedoucím týmů přilákat nejlepší talenty konfigurací integrace LinkedIn s Microsoft Dynamics 365 Talent: Attract. Attract umožňuje publikovat nabídky práce přímo na LinkedIn, největší online síti profesionálů.
 
 Úlohy, které publikujete na LinkedIn prostřednictvím Attract, jsou omezenýmy zápisy a nezpůsobí vaší společnosti žádné dodatečné náklady. Tyto výpisy jsou k dispozici pouze prostřednictvím softwarových partnerů LinkedIn, jako je například systém Attract. Nezobrazí se na panelu **Kariéra** na LinkedIn stránce vaší společnosti, protože zde jsou zobrazeny pouze placené výpisy. Zobrazí se však v případě, že potenciální kandidáti zobrazí všechna dostupná pracovní místa. Omezený výpisy jsou také zobrazeny ve vyhledávání práce na LinkedIn.
 

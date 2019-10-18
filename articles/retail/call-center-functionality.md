@@ -1,6 +1,6 @@
 ---
 title: Funkce prodeje kontaktního střediska
-description: Toto téma obsahuje přehled prodejní funkce kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail.
+description: Toto téma obsahuje přehled prodejní funkce kontaktního střediska v aplikaci Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/03/2018
@@ -19,26 +19,28 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8b78762ce70b318e1f77e1e49ffaa7b72f01667f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549473"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025764"
 ---
 # <a name="call-center-sales-functionality"></a>Funkce prodeje kontaktního střediska
 
 [!include [banner](includes/banner.md)]
 
-V aplikaci Dynamics 365 for Retail je kontaktní středisko typu maloobchodní sítě, které lze definovat v aplikaci. Definování konkrétního kanálu pro entity kontaktního střediska umožňuje systému navázat několik výchozích hodnot specifických dat a výchozích nastavení pro prodejní objednávky vytvořené uživatelem kanálu kontaktního střediska.
+
+V aplikaci Dynamics 365 Retail je kontaktní středisko typu maloobchodní sítě, které lze definovat v aplikaci. Definování konkrétního kanálu pro entity kontaktního střediska umožňuje systému navázat několik výchozích hodnot specifických dat a výchozích nastavení pro prodejní objednávky vytvořené uživatelem kanálu kontaktního střediska.
 
 Kontaktní středisko, které zahrnuje moderní maloobchodní ceny a promoakce, katalogy, dárkové poukazy, věrnostní programy a kupóny. Objednávky kontaktního střediska jsou rovněž využity aplikací pokladních míst (POS) na podporu scénáře splnění objednávky mezi více kanály.
 
-Je důležité poznamenat, zatímco modul kontaktního střediska lze využít v jiných odvětvích mimo Retail, aktuální verze call centra aplikace Dynamics 365 for Retail nebyla optimalizována pro použití ve zpracování – business-to-business (B2B) scénáři nebo scénáři, kde mají objednávky velký počet řádků prodeje. Doporučujeme, aby uživatelé, kteří chtějí využívat funkce call center pro zpracování objednávek mimo typické zpracování přímých transakcí zákazníka, vynaložili dostatečný čas na testování a ověření, že povolení funkce kontaktního střediska splní funkční požadavky a požadavky na výkon.
+Je důležité poznamenat, zatímco modul kontaktního střediska lze využít v jiných odvětvích mimo Retail, aktuální verze call centra aplikace Retail nebyla optimalizována pro použití ve zpracování – business-to-business (B2B) scénáři nebo scénáři, kde mají objednávky velký počet řádků prodeje. Doporučujeme, aby uživatelé, kteří chtějí využívat funkce call center pro zpracování objednávek mimo typické zpracování přímých transakcí zákazníka, vynaložili dostatečný čas na testování a ověření, že povolení funkce kontaktního střediska splní funkční požadavky a požadavky na výkon.
 
 Kromě podpory vytvoření objednávky modul kontaktního střediska také obsahuje praktickou aplikaci zákaznického servisu, která umožňuje uživatelům ověřit všechny příslušné zákaznické účty a zkontrolovat všechny související objednávky zákazníků a atributy. Servisní obrazovka odběratele je navržena tak, aby uživateli umožnila rychlý přístup k souvisejícím datům objednávky, která umožní odpovídat na nejčastější dotazy související s objednávkami přijatými od odběratelů.
 
-Tato stránka obsahuje odkazy na relevantní dokumentaci týkající se nastavení, konfigurace a funkčního použití funkcí kontaktního střediska aplikace Dynamics 365 for Retail.
+Tato stránka obsahuje odkazy na relevantní dokumentaci týkající se nastavení, konfigurace a funkčního použití funkcí kontaktního střediska aplikace Retail.
+
 
 ## <a name="configure-the-call-center"></a>Konfigurace parametrů kontaktního střediska.
 

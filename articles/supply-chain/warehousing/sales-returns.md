@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1f5658de1da8a0b6c36d99e4bb9cf401c09ad0b
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559137"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249789"
 ---
 # <a name="sales-returns"></a>Prodejní vratky
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559137"
 
 Toto téma obsahuje informace o procesu pro vratky. Obsahuje informace o zboží vraceném zákazníkem a o vlivu vracení na oceňování a na skladové množství zásob.
 
-Zákazníci mohou zboží vracet z různých důvodů. Například může být nějaký kus zboží vadný nebo může nesplňovat očekávání zákazníka. Proces vracení začíná tím, když zákazník vydá požadavek na vrácení zboží. Po obdržení požadavku zákazníka je v aplikaci Microsoft Dynamics 365 for Finance and Operations vytvořena objednávka vrácení.
+Zákazníci mohou zboží vracet z různých důvodů. Například může být nějaký kus zboží vadný nebo může nesplňovat očekávání zákazníka. Proces vracení začíná tím, když zákazník vydá požadavek na vrácení zboží. Po obdržení požadavku zákazníka je vytvořena objednávka vrácení.
 
 ## <a name="return-order-process"></a>Proces objednávky vrácení
 Následující obrázek podává přehled procesu objednávky vrácení.  
@@ -281,7 +281,7 @@ Tento scénář zahrnuje dva podniky ve stejné organizaci, jak je znázorněno 
 
 ![Jednoduché mezipodnikové vrácení](./media/SalesReturn07.png)
 
-Řetězec objednávky lze založit tehdy, když bude v kupující společnosti vytvořena objednávka vrácení dodavateli nebo když bude v prodávající společnosti vytvořena objednávka vrácení zákazníkovi. Finance and Operations vytvoří příslušnou objednávku v opačné společnosti a zajistí, aby informace hlavičky a řádku na objednávce vrácení dodavateli reflektovaly nastavení na objednávce vrácení zákazníkovi. Objednávka vrácení, která je zavedena, může obsahovat nebo vylučovat referenci (**Najít objednávku vrácení**) na stávající zákaznickou fakturu. Dodací listy a faktury obou objednávek lze zpracovat individuálně. Například není nutné generovat dodací list pro objednávku vrácení dodavateli před vytvořením dodacího listu pro objednávku vrácení zákazníkovi.
+Řetězec objednávky lze založit tehdy, když bude v kupující společnosti vytvořena objednávka vrácení dodavateli nebo když bude v prodávající společnosti vytvořena objednávka vrácení zákazníkovi. Je vytvořena příslušná objednávka v opačné společnosti a zajištěno, aby informace hlavičky a řádku na objednávce vrácení dodavateli reflektovaly nastavení na objednávce vrácení zákazníkovi. Objednávka vrácení, která je zavedena, může obsahovat nebo vylučovat referenci (**Najít objednávku vrácení**) na stávající zákaznickou fakturu. Dodací listy a faktury obou objednávek lze zpracovat individuálně. Například není nutné generovat dodací list pro objednávku vrácení dodavateli před vytvořením dodacího listu pro objednávku vrácení zákazníkovi.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Vrácení zásilky přímé dodávky mezi třema stranami
 

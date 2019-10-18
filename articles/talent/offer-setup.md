@@ -1,6 +1,6 @@
 ---
 title: Nastavení správy nabídek
-description: Toto téma popisuje, jak nastavit nabídky v aplikaci Talent.
+description: Toto téma popisuje, jak nastavit nabídky v aplikaci Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa0e5d30c06db16e105631e492af022acfcfd66
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517513"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010837"
 ---
 # <a name="set-up-offer-management"></a>Nastavení správy nabídek 
 
 [!include [banner](includes/banner.md)]
 
-Když je kandidát posunut do fáze nabídky v aplikaci Dynamics 365 for Talent: Attract, musíte zajistit, aby bylo možné nabídky kandidátům rychle vytvořit, schválit podle potřeby a zaslat kandidátovi. Vzhledem k tomu, že většina nabídek je standardní, lze je vytvořit z opětovně použitelných šablon. V aplikaci Attract budou všechny nabídky sbaleny do balíčku nabídky, což je kolekce jednoho nebo více dokumentů nabídky. 
+Když je kandidát posunut do fáze nabídky v aplikaci Dynamics 365 Talent: Attract, musíte zajistit, aby bylo možné nabídky kandidátům rychle vytvořit, schválit podle potřeby a zaslat kandidátovi. Vzhledem k tomu, že většina nabídek je standardní, lze je vytvořit z opětovně použitelných šablon. V aplikaci Attract budou všechny nabídky sbaleny do balíčku nabídky, což je kolekce jednoho nebo více dokumentů nabídky. 
 
 Toto téma uvádí seznam všech kroků, které by měl správce aplikace Attract provést pro nastavení různých šablon balíčku nabídky jako součást funkce správy nabídky v aplikaci Attract. Uživatelé bez role správce nemají přístup k těmto funkcím.
 

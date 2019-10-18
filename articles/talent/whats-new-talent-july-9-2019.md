@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 for Talent (9. července 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Talent (9. července 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/09/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e5bb02a7128cb920a79a5f04ac910be205aeed41
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: b3eb53943546166eee845749a070ed2fca1a03b8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856370"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023946"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-9-2019"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 for Talent (9. července 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Talent (9. července 2019)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 for Talent.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Změny v aplikaci Attract
 
@@ -48,9 +48,9 @@ Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Onboa
 
 Změny popsané v této části se vztahují na číslo sestavení 8.1.2374.
 
-### <a name="platform-update-28"></a>Aktualizace platformy 28
+### <a name="platform-update-28-for-finance-and-operations"></a>Ajtzakuzace Platform Update 28 for Finance and Operations
 
-Další podrobnosti o aktualizaci Platform Update 28 naleznete v tématu [Funkce Preview v aktualizaci Platform Update 28 aplikace Dynamics 365 for Finance and Operations (červenec 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+Další podrobnosti o aktualizaci Platform Update 28 for Finance and Operations naleznete v tématu [Funkce Preview v aktualizaci Platform Update 28 aplikace Dynamics 365 Finance and Operations (červenec 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Podpora vlastních polí entity v Common Data Service 
 

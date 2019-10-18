@@ -1,6 +1,6 @@
 ---
 title: Vyhledávání produktu a zákazníka v pokladním místě (POS)
-description: Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Microsoft Dynamics 365 for Retail ohledně funkce vyhledávání produktu a vyhledávání zákazníka.
+description: Toto téma poskytuje přehled vylepšení, která byla provedena v aplikaci Dynamics 365 Retail ohledně funkce vyhledávání produktu a vyhledávání zákazníka.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: 60db9e9936f7728d76f5c7a0d0c31b33477c7c61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625635"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023675"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Vyhledávání produktu a zákazníka v pokladním místě (POS)
 
@@ -99,7 +99,10 @@ Tradiční vyhledávání zákazníků může být časově náročné, protože
 
 ![Zkratky hledání odběratele](./media/SearchShortcutsPOS.png "zkratky hledání odběratele")
 
-Aby bylo možné nastavit kritérium hledání jako zástupce, musí správce otevřít stránku **Parametry maloobchodu** v aplikaci Microsoft Dynamics 365 for Finance and Operations a poté na kartě **Kritéria vyhledávání POS** vybrat všechna kritéria, která se mají zobrazit jako zástupci.
+
+
+Aby bylo možné nastavit kritérium hledání jako zástupce, musí správce otevřít stránku **Parametry maloobchodu** v aplikaci Microsoft Dynamics 365 Retail a poté na kartě **Kritéria vyhledávání POS** vybrat všechna kritéria, která se mají zobrazit jako zástupci.
+
 
 ![Konfigurace vyhledávání zástupců](./media/ConfigureShortcutsAX.png "Konfigurace vyhledávání zástupců")
 
@@ -111,6 +114,6 @@ Pole **Pořadí zobrazení** určuje pořadí, ve kterém jsou zobrazeny zkratky
 > [!NOTE]
 > Vlastní vlastnost, která je přidána do výčtu, neovlivní standardní algoritmus hledání odběratele. Jinými slovy, algoritmus hledání zákazníků nevyhledává ve vlastní vlastnosti. Uživatelé mohou vlastní vlastnosti použít k vyhledávání pouze v případě, že je vlastní vlastnost přidána jako zástupce, případně je přepsán výchozí algoritmus hledání.
 
-V nadcházející verzi aplikace Microsoft Dynamics 365 for Retail budou maloobchodní prodejci moci nastavit výchozí režim vyhledávání odběratelů v aplikaci POS pro možnost **Prohledat všechny obchody**. Tato konfigurace může být užitečná ve scénářích, ve kterých je nutné, aby zákazníci, kteří byli vytvořeni mimo POS, byli vyhledání okamžitě (například před spuštěním úlohy distribuce). Ve funkčním profilu POS bude k dispozici nová možnost **Výchozí režim vyhledávání odběratelů**. Nastavením této možnosti na **Zapnuto** nastavíte výchozí režim vyhledávání pro možnost **Prohledat všechny obchody**. Každý pokus o hledání odběratele poté provede volání do centrály v reálném čase.
+V nadcházející verzi aplikace Retail budou maloobchodní prodejci moci nastavit výchozí režim vyhledávání odběratelů v aplikaci POS pro možnost **Prohledat všechny obchody**. Tato konfigurace může být užitečná ve scénářích, ve kterých je nutné, aby zákazníci, kteří byli vytvořeni mimo POS, byli vyhledání okamžitě (například před spuštěním úlohy distribuce). Ve funkčním profilu POS bude k dispozici nová možnost **Výchozí režim vyhledávání odběratelů**. Nastavením této možnosti na **Zapnuto** nastavíte výchozí režim vyhledávání pro možnost **Prohledat všechny obchody**. Každý pokus o hledání odběratele poté provede volání do centrály v reálném čase.
 
 Aby se zabránilo neočekávaným problémům s výkonem, je tato konfigurace skryta za testovacím příznakem s názvem **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Chcete-li tedy zobrazit možnost **Výchozí režim vyhledávání odběratelů** nastavující uživatelské rozhraní (UI), měl by maloobchodní prodejce vytvořit lístek podpory pro akceptační testování uživatele a výrobní prostředí. Po obdržení lístku bude tým inženýrů spolupracovat s maloobchodním prodejcem, aby se ujistil, že prodejce provádí testování v nevýrobním prostředí, aby zhodnotil výkonnost a implementoval požadované optimalizace.

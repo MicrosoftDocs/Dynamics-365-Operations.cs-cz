@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c9392263e8c113c541b64e8e79853520a13d11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517478"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026249"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Distribuce a plánování dotazníků
 
@@ -83,7 +83,7 @@ Typy plánování dotazníku pro plán dotazníku je možné určit na stránce 
 
 Typy odkazů slouží k zadání kritérií pro respondenty, které můžete vybrat při plánování dotazníku. 
 
-Stránku **Typy odkazů** lze použít k nastavení typů odkazů pro dotazník. Každý typ odkazu odpovídá tabulce v aplikaci Microsoft Dynamics 365 for Finance and Operations. Když vytváříte plány dotazníků, můžete zadat jednotlivé záznamy do tabulky nebo vybrané záznamy, ke kterým bude dotazník přiřazen. 
+Stránku **Typy odkazů** lze použít k nastavení typů odkazů pro dotazník. Každý typ odkazu odpovídá tabulce v aplikaci Microsoft Dynamics 365 Finance. Když vytváříte plány dotazníků, můžete zadat jednotlivé záznamy do tabulky nebo vybrané záznamy, ke kterým bude dotazník přiřazen. 
 
 Například pokud vyberete tabulku Kurzy, můžete se rozhodnout, kterých konkrétních kurzů se bude dotazník týkat. Při nastavování odkaz pro tabulku kurzů budou k dispozici některá pole a tlačítka na stránce **Kurzy**.
 
