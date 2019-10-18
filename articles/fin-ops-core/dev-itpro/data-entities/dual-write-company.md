@@ -1,0 +1,73 @@
+---
+title: Koncept společnosti v Common Data Service
+description: Toto téma popisuje integraci dat společnosti mezi aplikacemi Finance and Operations a Common Data Service.
+author: RamaKrishnamoorthy
+manager: AnnBe
+ms.date: 07/15/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User, IT Pro
+ms.reviewer: rhaertle
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: ''
+ms.author: ramasri
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2019-07-15
+ms.openlocfilehash: aa4d54fd7b3ab407751ad6ca1032d742c23eed41
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2184524"
+---
+## <a name="company-concept-in-common-data-service"></a><span data-ttu-id="3885b-103">Koncept společnosti v Common Data Service</span><span class="sxs-lookup"><span data-stu-id="3885b-103">Company concept in Common Data Service</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+[!include [preview](../includes/preview-banner.md)]
+
+<span data-ttu-id="3885b-104">V aplikaci Finance and Operations je koncept *společnosti* právní i obchodní konstrukt.</span><span class="sxs-lookup"><span data-stu-id="3885b-104">In Finance and Operations, the concept of a *company* is both a legal construct and a business construct.</span></span> <span data-ttu-id="3885b-105">Je to také hranice pro zabezpečení a viditelnost dat.</span><span class="sxs-lookup"><span data-stu-id="3885b-105">It's also a security and visibility boundary for data.</span></span> <span data-ttu-id="3885b-106">Uživatelé pracují vždy v kontextu jedné společnosti a většina dat je rozdělena podle společnosti.</span><span class="sxs-lookup"><span data-stu-id="3885b-106">Users always work in the context of a single company, and most of the data is striped by company.</span></span>
+
+<span data-ttu-id="3885b-107">Common Data Service nemá ekvivalentní koncepci.</span><span class="sxs-lookup"><span data-stu-id="3885b-107">Common Data Service doesn't have an equivalent concept.</span></span> <span data-ttu-id="3885b-108">Nejbližší koncept je *organizační jednotka*, která je primárně hranicí zabezpečení a viditelnosti pro uživatelská data.</span><span class="sxs-lookup"><span data-stu-id="3885b-108">The closest concept is *business unit*, which is primarily a security and visibility boundary for user data.</span></span> <span data-ttu-id="3885b-109">Tento koncept nemá stejné právní nebo obchodní důsledky jako koncepce společnosti.</span><span class="sxs-lookup"><span data-stu-id="3885b-109">This concept doesn't have the same legal or business implications as the company concept.</span></span>
+
+<span data-ttu-id="3885b-110">Vzhledem k tomu, že organizační jednotka a společnost nejsou rovnocennými koncepty, není možné vynutit mapování mezi nimi (1:1) pro účely integrace Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="3885b-110">Because business unit and company aren't equivalent concepts, it isn't possible to force a one-to-one (1:1) mapping between them for the purpose of Common Data Service integration.</span></span> <span data-ttu-id="3885b-111">Protože však uživatelé musí mít ve výchozím nastavení možnost zobrazit stejné záznamy v aplikaci a Common Data Service, společnost Microsoft zavedla novou entitu v aplikaci Common Data Service s názvem cdm\_Company.</span><span class="sxs-lookup"><span data-stu-id="3885b-111">However, because users must, by default, be able to see the same records in the application and Common Data Service, Microsoft has introduced a new entity in Common Data Service that is named cdm\_Company.</span></span> <span data-ttu-id="3885b-112">Tato entita je ekvivalentní s entitou společnosti v aplikaci.</span><span class="sxs-lookup"><span data-stu-id="3885b-112">This entity is equivalent to the Company entity in the application.</span></span> <span data-ttu-id="3885b-113">Chcete-li zajistit, aby viditelnost záznamů byla ekvivalentní mezi aplikací a Common Data Service, doporučujeme následující nastavení dat v aplikaci Common Data Service:</span><span class="sxs-lookup"><span data-stu-id="3885b-113">To help guarantee that visibility of records is equivalent between the application and Common Data Service out of the box, we recommend the following setup for data in Common Data Service:</span></span>
+
++ <span data-ttu-id="3885b-114">Pro každý záznam společnosti Finance and Operations, který je povolen pro duální zápis, je vytvořen přidružený záznam cdm\_Company.</span><span class="sxs-lookup"><span data-stu-id="3885b-114">For each Finance and Operations Company record that is enabled for dual-write, an associated cdm\_Company record is created.</span></span>
++ <span data-ttu-id="3885b-115">Když je vytvořen záznam cdm\_Company a je povolen pro duální zápis, je vytvořena výchozí organizační jednotka se stejným názvem.</span><span class="sxs-lookup"><span data-stu-id="3885b-115">When a cdm\_Company record is created and enabled for dual-write, a default business unit is created that has the same name.</span></span> <span data-ttu-id="3885b-116">Přestože je pro tuto organizační jednotku automaticky vytvořen výchozí tým, není tato organizační jednotka použita.</span><span class="sxs-lookup"><span data-stu-id="3885b-116">Although a default team is automatically created for that business unit, the business unit isn't used.</span></span>
++ <span data-ttu-id="3885b-117">Je vytvořen samostatný tým vlastníků se stejným názvem.</span><span class="sxs-lookup"><span data-stu-id="3885b-117">A separate owner team is created that has the same name.</span></span> <span data-ttu-id="3885b-118">Je také spojen s organizační jednotkou.</span><span class="sxs-lookup"><span data-stu-id="3885b-118">It's also associated with the business unit.</span></span>
++ <span data-ttu-id="3885b-119">Ve výchozím nastavení je vlastník libovolného záznamu vytvořeného a s dvojím zápisem do Common Data Service nastaven na tým "DW Owner", který je propojen s přidruženou organizační jednotkou.</span><span class="sxs-lookup"><span data-stu-id="3885b-119">By default, the owner of any record that is created and dual-written to Common Data Service is set to the "DW Owner" team that is linked to the associated business unit.</span></span>
+
+<span data-ttu-id="3885b-120">Následující obrázek znázorňuje příklad nastavení dat v Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="3885b-120">The following illustration shows an example of this data setup in Common Data Service.</span></span>
+
+![Nastavení dat v Common Data Service](media/dual-write-company-1.png)
+
+<span data-ttu-id="3885b-122">Z důvodu této konfigurace bude každý záznam, který se týká společnosti USMF, vlastněn týmem, který je propojen s organizační jednotkou USMF v aplikaci Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="3885b-122">Because of this configuration, any record that is related to the USMF company will be owned by a team that is linked to the USMF business unit in Common Data Service.</span></span> <span data-ttu-id="3885b-123">Každý uživatel, který má přístup k této organizační jednotce prostřednictvím role zabezpečení nastavené na zobrazení na úrovni organizační jednotky, je tedy nyní schopen tyto záznamy zobrazit.</span><span class="sxs-lookup"><span data-stu-id="3885b-123">Therefore, any user who has access to that business unit through a security role that is set to business unit–level visibility can now see those records.</span></span> <span data-ttu-id="3885b-124">Následující příklad ukazuje, jak lze týmy použít k zajištění správného přístupu k těmto záznamům.</span><span class="sxs-lookup"><span data-stu-id="3885b-124">The following example shows how teams can be used to provide the correct access to those records.</span></span>
+
++ <span data-ttu-id="3885b-125">Role Manažer prodeje je přidělena členům týmu USMF Sales.</span><span class="sxs-lookup"><span data-stu-id="3885b-125">The "Sales Manager" role is assigned to members of the "USMF Sales" team.</span></span>
++ <span data-ttu-id="3885b-126">Uživatelé, kteří mají roli manažer prodeje, mohou přistupovat ke všem záznamům obchodních vztahů, které jsou členy stejné organizační jednotky, v níž jsou členy.</span><span class="sxs-lookup"><span data-stu-id="3885b-126">Users who have the "Sales Manager" role can access any account records that are members of the same business unit that they are members of.</span></span>
++ <span data-ttu-id="3885b-127">Tým USMF Sales je propojen s dříve uvedenou organizační jednotkou USMF.</span><span class="sxs-lookup"><span data-stu-id="3885b-127">The "USMF Sales" team is linked to the USMF business unit that was mentioned earlier.</span></span>
++ <span data-ttu-id="3885b-128">Proto mohou členové týmu USMF Sales zobrazit jakýkoli obchodní vztah, který je vlastněn uživatelem USMF DW, který by pocházel z entity společnosti USMF v aplikaci Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="3885b-128">Therefore, members of the "USMF Sales" team can see any account that is owned by the "USMF DW" user, which would have come from the USMF Company entity in Finance and Operations.</span></span>
+
+![Jak lze použít týmy](media/dual-write-company-2.png)
+
+<span data-ttu-id="3885b-130">Jak ukazuje předchozí ilustrace, toto mapování 1:1 mezi organizační jednotkou, společností a týmem je pouze výchozím bodem.</span><span class="sxs-lookup"><span data-stu-id="3885b-130">As the preceding illustration shows, this 1:1 mapping between business unit, company, and team is just a starting point.</span></span> <span data-ttu-id="3885b-131">V tomto příkladu je nová obchodní jednotka Europe vytvořena ručně v aplikaci Common Data Service jako nadřazená pro DEMF i ESMF.</span><span class="sxs-lookup"><span data-stu-id="3885b-131">In this example, a new "Europe" business unit is manually created in Common Data Service as the parent for both DEMF and ESMF.</span></span> <span data-ttu-id="3885b-132">Tato nová kořenová organizační jednotka nesouvisí s dvojím zápisem.</span><span class="sxs-lookup"><span data-stu-id="3885b-132">This new root business unit is unrelated to dual-write.</span></span> <span data-ttu-id="3885b-133">Lze ji však použít k tomu, aby členové týmu EUR Sales měli přístup k datům obchodních vztahů v DEMF i v ESMF nastavením viditelnosti dat na **Nadřazená/podřízená OJ** v přidružené roli zabezpečení.</span><span class="sxs-lookup"><span data-stu-id="3885b-133">However, it can be used to give members of the "EUR Sales" team access to account data in both DEMF and ESMF by setting the data visibility to **Parent/Child BU** in the associated security role.</span></span>
+
+<span data-ttu-id="3885b-134">Závěrečným tématem, které je třeba projednat, je jak dvojí zápis určuje, kterému týmu vlastníků se mají přiřadit záznamy.</span><span class="sxs-lookup"><span data-stu-id="3885b-134">A final topic to discuss is how dual-write determines which owner team it should assign records to.</span></span> <span data-ttu-id="3885b-135">Toto chování je řízeno polem **Výchozí vlastnící tým** v záznamu cdm\_Company.</span><span class="sxs-lookup"><span data-stu-id="3885b-135">This behavior is controlled by the **Default owning team** field on the cdm\_Company record.</span></span> <span data-ttu-id="3885b-136">Je-li záznam cdm\_Company povolen pro duální zápis, modul plug-in automaticky vytvoří přidruženou organizační jednotku a tým vlastníků (pokud již neexistuje) a nastaví pole **Výchozí vlastnící tým**.</span><span class="sxs-lookup"><span data-stu-id="3885b-136">When a cdm\_Company record is enabled for dual-write, a plug-in automatically creates the associated business unit and owner team (if it doesn't already exist), and sets the **Default owning team** field.</span></span> <span data-ttu-id="3885b-137">Správce může toto pole změnit na jinou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="3885b-137">The admin can change this field to a different value.</span></span> <span data-ttu-id="3885b-138">Správce však nemůže vymazat pole, pokud je entita povolena pro duální zápis.</span><span class="sxs-lookup"><span data-stu-id="3885b-138">However, the admin can't clear the field as long as the entity is enabled for dual-write.</span></span>
+
+![Pole výchozího vlastnícího týmu](media/dual-write-default-owning-team.jpg)
+
+## <a name="company-striping-and-bootstrapping"></a><span data-ttu-id="3885b-140">Prokládání a zavádění společnosti</span><span class="sxs-lookup"><span data-stu-id="3885b-140">Company striping and bootstrapping</span></span>
+
+<span data-ttu-id="3885b-141">Integrace Common Data Service přináší paritu společnosti použitím identifikátoru společnosti k prokládání dat.</span><span class="sxs-lookup"><span data-stu-id="3885b-141">Common Data Service integration brings company parity by using a company identifier to stripe data.</span></span> <span data-ttu-id="3885b-142">Jak ukazuje následující ilustrace, všechny entity specifické pro společnost jsou rozšířeny tak, aby měly vztah N:1 s entitou cdm\_Company.</span><span class="sxs-lookup"><span data-stu-id="3885b-142">As the following illustration shows, all company-specific entities are extended so that they have a many-to-one (N:1) relationship with the cdm\_Company entity.</span></span>
+
+![Vztah N:1 mezi entitou specifickou pro společnost a entitou cdm_Company](media/dual-write-bootstrapping.png)
+
++ <span data-ttu-id="3885b-144">U záznamů se po přidání a uložení společnosti hodnota změní na jen pro čtení.</span><span class="sxs-lookup"><span data-stu-id="3885b-144">For records, after a company is added and saved, the value becomes read-only.</span></span> <span data-ttu-id="3885b-145">Uživatelé by proto měli zajistit, aby vybrali správnou firmu.</span><span class="sxs-lookup"><span data-stu-id="3885b-145">Therefore, users should make sure that they select the correct company.</span></span>
++ <span data-ttu-id="3885b-146">Pouze záznamy s daty společnosti jsou způsobilé pro duální zápis mezi aplikací a Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="3885b-146">Only records that have company data are eligible for dual-write between the application and Common Data Service.</span></span>
++ <span data-ttu-id="3885b-147">Pro existující data Common Data Service bude brzy k dispozici zaváděcí praxe vedená správcem.</span><span class="sxs-lookup"><span data-stu-id="3885b-147">For existing Common Data Service data, an admin-led bootstrapping experience will soon be available.</span></span>
