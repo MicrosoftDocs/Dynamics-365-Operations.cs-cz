@@ -1,0 +1,50 @@
+---
+title: Rozdělení generovaných souborů XML na základě velikosti souboru a množství obsahu
+description: Toto téma obsahuje informace o rozdělení generovaných souborů na základě velikost souboru a množství položek obsahu.
+author: NickSelin
+manager: AnnBe
+ms.date: 05/25/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.region: Global
+ms.author: nselin
+ms.search.validFrom: 2018-04-01
+ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: cde95430022d94c42bdd985b5e4a8f9f5147d000
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2181351"
+---
+# <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a><span data-ttu-id="b561d-103">Rozdělení generovaných souborů XML na základě velikosti souboru a množství obsahu</span><span class="sxs-lookup"><span data-stu-id="b561d-103">Split generated XML files based on file size and content quantity</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="b561d-104">Formáty elektronického výkaznictví (ER) můžete navrhovat pro generování odchozích dokumentů ve formátu XML.</span><span class="sxs-lookup"><span data-stu-id="b561d-104">You can design Electronic reporting (ER) formats to generate outgoing documents in XML format.</span></span> <span data-ttu-id="b561d-105">V některých případech je možné tyto dokumenty přijmout, pouze pokud splňují konkrétní kritéria, jako je maximální velikost souboru nebo maximální počet některých uzlů XML.</span><span class="sxs-lookup"><span data-stu-id="b561d-105">Sometimes, those documents can be accepted only when they meet specific criteria, such a maximum file size or a maximum number of some XML nodes.</span></span> <span data-ttu-id="b561d-106">Můžete navrhovat formáty ER ke generování elektronických dokumentů, které splňují požadavky, které určují příjemci těchto dokumentů.</span><span class="sxs-lookup"><span data-stu-id="b561d-106">You can design ER formats to generate electronic documents that satisfy the requirements that the recipients of those documents specify.</span></span>
+
+- <span data-ttu-id="b561d-107">Pro prvek formátu SOUBORU můžete definovat limit velikosti souboru jako výraz ER.</span><span class="sxs-lookup"><span data-stu-id="b561d-107">For the FILE format element, you can define a limit on the file size as an ER expression.</span></span> <span data-ttu-id="b561d-108">Pokud je při generování vyúčtování ER překročen definovaný limit, ER dokončí vytvoření aktuálního souboru a pak se přesune k vytvoření dalšího souboru.</span><span class="sxs-lookup"><span data-stu-id="b561d-108">If the defined limit is exceeded when an ER report is generated, ER finishes creating the current file and then moves on to create the next file.</span></span>
+- <span data-ttu-id="b561d-109">Pro libovolný formát prvku XML můžete definovat limit počtu prvků jako výraz ER.</span><span class="sxs-lookup"><span data-stu-id="b561d-109">For any XML ELEMENT format, you can define a limit on the number of elements as an ER expression.</span></span> <span data-ttu-id="b561d-110">Pokud počet uzlů XML v generovaném souboru překročí definovaný limit, když je spuštěná sestava ER, ER dokončí vytvoření aktuálního souboru a pak se přesune k vytvoření dalšího souboru.</span><span class="sxs-lookup"><span data-stu-id="b561d-110">If the number of XML nodes in the file that is generated exceeds the defined limit when an ER report is run, ER finishes creating the current file and then moves on to create the next file.</span></span>
+- <span data-ttu-id="b561d-111">Pro libovolný prvek formátu XML SEQUENCE můžete definovat limit počtu podržízených prvků jako výraz ER.</span><span class="sxs-lookup"><span data-stu-id="b561d-111">For any XML SEQUENCE format element, you can define a limit on the number of child elements as an ER expression.</span></span> <span data-ttu-id="b561d-112">Pokud počet vnořených uzlů XML prvku formátu v generovaném souboru překročí definovaný limit, když je spuštěná sestava ER, ER dokončí vytvoření aktuálního souboru a pak se přesune k vytvoření dalšího souboru.</span><span class="sxs-lookup"><span data-stu-id="b561d-112">If the number of nested XML nodes of the format element in the generated file exceeds the defined limit when an ER report is run, ER finishes creating the current file and then moves on to create the next file.</span></span>
+- <span data-ttu-id="b561d-113">Libovolný prvek formátu XML ELEMENT můžete označit jako nerozdělitelný.</span><span class="sxs-lookup"><span data-stu-id="b561d-113">You can mark any XML ELEMENT format element as non-breakable.</span></span> <span data-ttu-id="b561d-114">Tímto způsobem můžete udržovat vnořené položky XML uzlů, které jsou generovány v rámci formátu prvku v jednom generované souboru.</span><span class="sxs-lookup"><span data-stu-id="b561d-114">In this way, you can keep the nested items of XML nodes that are generated under the format element in a single generated file.</span></span>
+
+<span data-ttu-id="b561d-115">Kromě použití prvků formátu XML ELEMENT a XML SEQUENCE pro přidání uzlů XML do generovaného souboru můžete použít prvek formátu RAW XML.</span><span class="sxs-lookup"><span data-stu-id="b561d-115">In addition to using the XML ELEMENT and XML SEQUENCE format elements to add XML nodes to the generated file, you can use the RAW XML format element.</span></span> <span data-ttu-id="b561d-116">Uzly, které přidáte pomocí prvku formátu RAW XML nejsou však brány v úvahu, když je vypočten počet uzlů pro posouzení limitu počtu prvků.</span><span class="sxs-lookup"><span data-stu-id="b561d-116">However, nodes that you add by using the RAW XML format element aren't considered when the number of nodes is calculated to evaluate the limits on the number of elements.</span></span>
+
+<span data-ttu-id="b561d-117">Pokud jste nakonfigurovali cíle souboru pro prvek formátu FILE, který byl konfigurován pro rozdělení generovaného výstupu při každém překročení určitého limitu, každá část generovaného výstupu je zaslána do konfigurovaného cíle souboru jako samostatný soubor.</span><span class="sxs-lookup"><span data-stu-id="b561d-117">If you configured file destinations for a FILE format element that has been configured to split the generated output whenever specific limits are exceeded, each piece of generated output is sent to the configured file destination as an individual file.</span></span> <span data-ttu-id="b561d-118">Aby bylo možné jedinečně pojmenovat soubory, které jsou vytvořeny rozdělením výstupu, musíte nakonfigurovat výraz ER pro prvek formátu FILE.</span><span class="sxs-lookup"><span data-stu-id="b561d-118">To uniquely name the files that are created by splitting the output, you must configure an ER expression for the FILE format element.</span></span> <span data-ttu-id="b561d-119">Pokud zahrnete zdroj dat ER typu NUMBER SEQUENCE, číselná řada se zvýší pro každou část rozděleného výstupu.</span><span class="sxs-lookup"><span data-stu-id="b561d-119">If you include an ER data source of the NUMBER SEQUENCE type, the number sequence will be incremented for each piece of the split output.</span></span>
+
+<span data-ttu-id="b561d-120">Další informace o této funkci zobrazíte přehráním Průvodce záznamem úloh **ER rozdělení souborů xml na základě velikosti souboru nebo množství položek obsahu**, která je součástí obchodního procesu **7.5.4.3 Acquire/Develop IT service/solution components (10677)** a dá se stáhnout ze [služby Stažení softwaru Microsoft](https://go.microsoft.com/fwlink/?linkid=874684).</span><span class="sxs-lookup"><span data-stu-id="b561d-120">To learn more about this feature, play the **ER Split XML files based on the file size or content item quantity** task guide, which is part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process and can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).</span></span> <span data-ttu-id="b561d-121">Tento průvodce záznamem úloh vás provede procesem konfigurace formátu ER pro rozdělení generovaných souborů na základě limitů velikosti souboru a množství položek obsahu.</span><span class="sxs-lookup"><span data-stu-id="b561d-121">This task guide walks you through the process of configuring an ER format to split generated files based on limits on the file size and content item quantity.</span></span> <span data-ttu-id="b561d-122">Pro dokončení průvodce záznamem úloh si musíte stáhnout následující soubory:</span><span class="sxs-lookup"><span data-stu-id="b561d-122">To complete the task guide, you must download the following files:</span></span>
+
+- [<span data-ttu-id="b561d-123">Konfigurace modelu ER - XmlFilesSplittingModel.xml</span><span class="sxs-lookup"><span data-stu-id="b561d-123">ER model configuration - XmlFilesSplittingModel.xml</span></span>](https://go.microsoft.com/fwlink/?linkid=874111)
+- [<span data-ttu-id="b561d-124">Konfigurace formátu ER – XmlFilesSplittingFormat.xml</span><span class="sxs-lookup"><span data-stu-id="b561d-124">ER format configuration - XmlFilesSplittingFormat.xml</span></span>](https://go.microsoft.com/fwlink/?linkid=874111)
+
+## <a name="additional-resources"></a><span data-ttu-id="b561d-125">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="b561d-125">Additional resources</span></span>
+[<span data-ttu-id="b561d-126">Místa určení elektronického výkaznictví</span><span class="sxs-lookup"><span data-stu-id="b561d-126">Electronic reporting destinations</span></span>](electronic-reporting-destinations.md)
+
+[<span data-ttu-id="b561d-127">Návrhář vzorců v elektronickém výkaznictví</span><span class="sxs-lookup"><span data-stu-id="b561d-127">Formula designer in Electronic reporting</span></span>](general-electronic-reporting-formula-designer.md)
