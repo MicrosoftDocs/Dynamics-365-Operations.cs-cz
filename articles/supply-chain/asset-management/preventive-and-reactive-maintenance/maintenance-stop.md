@@ -3,7 +3,7 @@ title: Prostoj údržby
 description: Tohle téma popisuje prostoje údržby v modulu Správa majetku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a831d56116c57b640993162473e74e5ce181f09c
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875537"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922176"
 ---
 # <a name="maintenance-downtime"></a>Prostoj údržby
-
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,12 +43,12 @@ Pokud byly při registraci prostojů údržby vybrány položky majetku, do regi
 
 ## <a name="maintenance-downtime-activities"></a>Aktivity prostoje údržby
 
-Kliknutím na položky **Správa majetku** > **Společné** > **Aktivity prostojů údržby** > **Všechny aktivity prostojů údržby** otevřete seznam všech aktivit prostojů údržby a prohlédněte si některé informace související s aktivitami. Kliknutím na odkaz ve sloupci **Aktivity prostojů údržby** otevřete podrobné zobrazení.
+Kliknutím na položky **Správa majetku** > **Společné** > **Aktivity prostojů údržby** > **Všechny aktivity prostojů údržby** otevřete seznam všech aktivit prostojů údržby a prohlédněte si některé informace související s aktivitami. Kliknutím na odkaz ve sloupci **Aktivity prostojů údržby** otevřete podrobné zobrazení. Následující ilustrace znázorňuje příklad stránky **Aktivity prostoje údržby**.
 
 ![Obrázek č. 1](media/19-preventive-maintenance.png)
 
 
-## <a name="create-a-maintenance-downtime-registration"></a>Vytvoření registraci prostoje údržby
+## <a name="create-a-maintenance-downtime-activity"></a>Vytvoření aktivity prostoje údržby
 
 1. Klikněte na položky **Správa majetku** > **Společné** > **Aktivity prostojů údržby** > **Všechny aktivity prostojů údržby** nebo **Aktivní aktivity prostojů údržby**.
 
@@ -61,9 +60,11 @@ Kliknutím na položky **Správa majetku** > **Společné** > **Aktivity prostoj
 
 5. Na pevné záložce **Majetek aktivit prostojů údržby** kliknutím na **Přidat řádek** přidejte jednu po druhé položky majetku do aktivity prostoje údržby.
 
-6. Po přidání všech položek majetku klikněte na **Uložit**.
+6. Po přidání všech položek majetku klikněte na **Uložit**. Na následujícím obrázku je znázorněn příklad aktivity prostoje údržby se souvisejícími aktivy a úlohami údržby.
 
 7. Práce údržby pracovních příkazů a otevřené řádky rozvrhu údržby související s vybranými položkami majetku zobrazených na pevných kartách **Výsledné práce údržby pracovních příkazů** a **Řádky rozvrhu údržby**. Klikněte na pevné záložce **Obecné** > ve skupině **Pracovní příkazy** > v poli **Hodiny prognózy údržby** a pevné záložce **Obecné** > ve skupině **Rozvrh údržby** > v poli **Hodiny prognózy údržby** vidíte celkový počet hodin prognózovaných pro práce údržby pracovních příkazů a řádky rozvrhu údržby.
+
+Následující ilustrace znázorňuje zobrazení podrobností okna **Aktivity prostoje údržby**.
 
 ![Obrázek č. 2](media/20-preventive-maintenance.png)
 
@@ -74,7 +75,7 @@ Kliknutím na položky **Správa majetku** > **Společné** > **Aktivity prostoj
 
 9. V dialogovém **Výpočet vytížení kapacity** upravte v případě potřeby počáteční a koncové časy a vyberte, zda chcete do výpočtu zahrnout pracovní příkazy a rozvrhy údržby. V poli **Úroveň** určete, jak detailní má být výpočet vytížení kapacity v případě funkčních míst. Pokud například do pole zadáte číslo „1“ a máte strukturu funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny položky majetku pro funkční místo, která jsou vybrána v aktivitě prostoje údržby, a proto lze navýšit hodiny na řádku z funkčních míst na nižší úrovni. Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky vytížení kapacity na všech úrovních funkčních míst, ke kterým se vztahují.
 
-10. Výpočet zahájíte klepnutím na tlačítko **OK**. Celkový počet hodin je zobrazen v přehledu **Vytížení kapacity**. Na kartě **Vytížení kapacity** > ve skupinách podokna akce **Seskupit podle...** klikněte na příslušná tlačítka, čímž získáte podrobnější přehled o přidělení prognózovaných hodin.
+10. Výpočet zahájíte klepnutím na tlačítko **OK**. Celkový počet hodin je zobrazen v přehledu **Vytížení kapacity**. Na kartě **Vytížení kapacity** > ve skupinách podokna akce **Seskupit podle...** klikněte na příslušná tlačítka, čímž získáte podrobnější přehled o přidělení prognózovaných hodin. Na následujícím obrázku jsou uvedeny výsledky výpočtu nákladů **vytížení kapacity**.
 
 ![Obrázek č. 3](media/21-preventive-maintenance.png)
 
@@ -91,7 +92,7 @@ Kliknutím na položky **Správa majetku** > **Společné** > **Aktivity prostoj
 
 15. V dialogovém **Výpočet prognózu položky** upravte v případě potřeby počáteční a koncové časy a vyberte, zda chcete do výpočtu zahrnout pracovní příkazy a rozvrhy údržby. V poli **Úroveň** určete, jak detailní má být výpočet vytížení kapacity v případě funkčních míst. Pokud například do pole zadáte číslo „1“ a máte strukturu funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny položky majetku pro funkční místo, která jsou vybrána v aktivitě prostoje údržby, a proto lze navýšit hodiny na řádku z funkčních míst na nižší úrovni. Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky vytížení kapacity na všech úrovních funkčních míst, ke kterým se vztahují.
 
-16. Výpočet zahájíte klepnutím na tlačítko **OK**. Celkový počet prognóz položky je zobrazen v přehledu **Prognóza položky**. Na kartě **Prognóza položky** > ve skupinách podokna akce **Seskupit podle...** klikněte na příslušná tlačítka, čímž získáte podrobnější přehled o přidělení prognózovaných položek.
+16. Výpočet zahájíte klepnutím na tlačítko **OK**. Celkový počet prognóz položky je zobrazen v přehledu **Prognóza položky**. Na kartě **Prognóza položky** > ve skupinách podokna akce **Seskupit podle**... klikněte na příslušná tlačítka, čímž získáte podrobnější přehled o přidělení prognózovaných položek. Následující obrázek ukazuje výsledky výpočtu **Prognóza položky**.
 
 ![Obrázek č. 4](media/22-preventive-maintenance.png)
 

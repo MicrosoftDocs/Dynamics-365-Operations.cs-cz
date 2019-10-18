@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bd55988578be2b0287b399549f17642bfb1693b
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 24d75000e2c4b604e1acee94e9581291e156fa5d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783120"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017404"
 ---
 # <a name="assets-and-work-orders"></a>Majetek a pracovní příkazy
 
@@ -54,4 +54,4 @@ Chcete-li naplánovat a spustit úlohu údržby v pracovním příkazu, je nutn�
 ![Obrázek č. 4](media/08-overview-image.png)
 
 > [!NOTE]
-> Obecně, když pracujete v aplikaci Microsoft Dynamics 365 for Finance and Operations a modulu **Správa majetku**, vyberete **Nový** pro vytvoření nového záznamu, vyberete možnost **Upravit** pro aktualizaci existujícího záznamu a vyberete možnost **Uložit** pro uložení nových nebo upravených dat.
+> Obecně, když pracujete v aplikaci Dynamics 365 Supply Chain Management a modulu **Správa majetku**, vyberete **Nový** pro vytvoření nového záznamu, vyberete možnost **Upravit** pro aktualizaci existujícího záznamu a vyberete možnost **Uložit** pro uložení nových nebo upravených dat.

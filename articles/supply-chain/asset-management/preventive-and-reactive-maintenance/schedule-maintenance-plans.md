@@ -3,7 +3,7 @@ title: Rozvrhnout plány údržby
 description: Toto téma popisuje rozvrhování plánů údržby v modulu Správa majetku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b6e5bde83474fe8971e482af518f7cee23a2220
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 698888533bf503838f455585f61cc7afc7239b05
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875542"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922038"
 ---
 # <a name="schedule-maintenance-plans"></a>Rozvrhnout plány údržby
 
@@ -49,11 +49,11 @@ Preventivní plánování údržby vygeneruje položky kalendáře na majetku na
 
 - V souvislosti s rozvrhováním plánů údržby ve funkčních místech: Pokud aktualizujete nastavení typů majetku, výrobců a modelů v plánech údržby na pevné záložce **Všechna funkční umístění** > **Plány údržby** po provedení plánovaných plánů údržby, existující položky plánu údržby vztahující se k tomuto funkčnímu umístění jsou automaticky odstraněny. Chcete-li vytvořit nové položky kalendáře, které odpovídají nastavení aktualizovaného plánu údržby na funkčním místě, musíte pro toto funkční místo spustit nový plán plánu údržby. Další informace o nastavení typů majetku, výrobců a modelů ve funkčních umístěních naleznete v části [Vytváření funkčních míst](../functional-locations/create-functional-locations.md).
 
->*Příklad:* chcete vytvořit plán údržby pro konkrétní funkční místo, což znamená, že všechny majetky nastavené v tomto funkčním místě budou při plánování plánu údržby zahrnuty v daném čase. V takovém případě vytvořte plán údržby a vyberte konkrétní funkční místo, ale nepřidávejte do plánu údržby žádné objekty. Výsledkem je, že při rozvrhování plánu údržby budou pro všechny majetky související se funkčním místem v daném okamžiku vytvořeny řádky plánu údržby.
+>*Příklad:* chcete vytvořit plán údržby pro konkrétní funkční místo, což znamená, že všechny majetky nastavené v tomto funkčním místě budou při plánování plánu údržby zahrnuty v daném čase. V takovém případě vytvořte plán údržby a vyberte konkrétní funkční místo, ale NEPŘIDÁVEJTE do plánu údržby žádná aktiva. Výsledkem je, že při rozvrhování plánu údržby budou pro všechny majetky související se funkčním místem v daném okamžiku vytvořeny řádky plánu údržby.
 
 - Pokud provedete změny typů majetku, výrobců a modelů v **Typech majetku**, budou tyto změny mít vliv pouze na nový majetek, který používá aktualizovaný typ majetku. Další informace o nastavení typu majetku v [Typech majetku](../setup-for-objects/object-types.md)  
 
-5. Kliknutím na tlačítko **OK** zahájíte generování položek plánu údržby na majetku. Vygenerované položky budou zobrazeny na stránce se seznamem **Všechny plány údržby**.
+5. Kliknutím na tlačítko **OK** zahájíte generování položek plánu údržby na majetku. Vygenerované položky budou zobrazeny na stránce se seznamem **Všechny plány údržby**. Následující ilustrace znázorňuje příklad sestavy **Plány rozvrhu údržby**.
 
 ![Obrázek č. 1](media/09-preventive-maintenance.png)
 
@@ -75,3 +75,4 @@ Zde popsané příklady znázorňují, že všechny registrace čítačů proved
 ![Obrázek č. 3](media/11-preventive-maintenance.png)
 
 ![Obrázek č. 4](media/12-preventive-maintenance.png)
+

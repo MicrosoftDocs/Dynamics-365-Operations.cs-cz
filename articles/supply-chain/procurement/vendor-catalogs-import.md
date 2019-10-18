@@ -18,19 +18,19 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: cf81823de46da9a834f0214896b9e634989cac0e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9f85b1d1f0b1c2378dd3f278640d984c31923c35
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569769"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017867"
 ---
 # <a name="import-vendor-catalogs"></a>Import katalogů dodavatele
 [!include[banner](../includes/banner.md)]
 
 ## <a name="vendor-catalogs-import"></a>Import katalogů dodavatele
 
-V aplikaci Microsoft Dynamics 365 for Finance and Operations mohou nakupující profesionálové vytvářet a udržovat katalogy, které zaměstnanci společnosti mohou použít při objednání položek a služeb pro interní použití. Chcete-li vytvořit zásobovací katalog, můžete přidat položky a služby, které chcete zpřístupnit zaměstnancům, buď importem dat katalogu produktů nebo ručním přidáním dat katalogu produktů do základního produktu. 
+V aplikaci Dynamics 365 Supply Chain Management mohou nakupující profesionálové vytvářet a udržovat katalogy, které zaměstnanci společnosti mohou použít při objednání položek a služeb pro interní použití. Chcete-li vytvořit zásobovací katalog, můžete přidat položky a služby, které chcete zpřístupnit zaměstnancům, buď importem dat katalogu produktů nebo ručním přidáním dat katalogu produktů do základního produktu. 
 
 Můžete načíst data katalogu odeslaná dodavatelem z klienta aplikace Microsoft Dynamics 365.
 
@@ -52,7 +52,7 @@ Chcete-li importovat data katalogu dodavatele, je nutné provést následující
 
 6.  Odešlete soubor CMR.
 
-7.  Zrevidujte, schvalte nebo zamítněte produkty v katalogu dodavatele. Produkty, které jsou automaticky přiřazeny do kategorie zásobování Dynamics 365 for Finance and Operations. 
+7.  Zrevidujte, schvalte nebo zamítněte produkty v katalogu dodavatele. Produkty jsou automaticky přiřazeny do kategorie zásobování. 
     
 Schválené produkty jsou přidány do základního produktu a jsou uvolněny pro vybrané právnické osoby. Pouze schválené produkty lze přidat do zásobovacího katalogu.
 

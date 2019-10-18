@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6939ed56944ecafb29c1cadd2744b5746b19cb46
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572120"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023357"
 ---
 # <a name="info-codes-and-info-code-groups"></a>Informační kódy a skupiny informačních kódů
 
@@ -42,7 +42,7 @@ Informační kódy poskytují způsob zaznamenání dat na registrační pokladn
 
 ## <a name="info-codes-group"></a>Skupina informačních kódů
 
-V Dynamics 365 for Retail můžete vytvořit skupiny informačních kódů. Skupiny informačních kódů přidávají flexibilitu tím, že umožňují definovat méně informačních kódů a poté je používat univerzálněji. Skupiny informačních kódů lze použít následujícími způsoby:
+V Retail můžete vytvořit skupiny informačních kódů. Skupiny informačních kódů přidávají flexibilitu tím, že umožňují definovat méně informačních kódů a poté je používat univerzálněji. Skupiny informačních kódů lze použít následujícími způsoby:
 
 - Definovat méně informačních kódů a snadno ke znovu použít. Informační kódy, které jsou součástí skupiny informačních kódů, nemají žádné předdefinované závislosti na jiných informačních kódech. Stejný informační kód lze zahrnout do více skupin informačních kódů a poté podle priorit ukazovat stejné informační kódy v pořadí, které dává v konkrétní situaci smysl.
 - Spojit informační kódy s jinými informačními kódy nebo skupinami informačních kódů ke shromažďování informací o produktu nebo transakci, aniž by bylo nutné definovat samostatný informační kód nebo propojený informační kód pro každý scénář.

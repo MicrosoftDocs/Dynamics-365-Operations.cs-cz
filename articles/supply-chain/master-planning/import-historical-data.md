@@ -18,18 +18,18 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 018694c79c6dd64e19b010848aad8acd36b0a9a8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 69e5511507512f62a4a6d8b1d189f0bf12f0b0a8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555126"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017428"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Import historických dat pro prognózy poptávky
 
 [!include [banner](../includes/banner.md)]
 
-K zajištění přesnosti prognózy poptávky je nutné mít tolik historických daty poptávky, kolik můžete získat na jednotlivou položku nebo alokační klíč položky. Pokud historická data poptávky dosud nebyla importována, použijte k jejich importu datovou entitu **Historická externí poptávka** (ReqDemPlanHistoricalExternalDemandEntity) v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+K zajištění přesnosti prognózy poptávky je nutné mít tolik historických daty poptávky, kolik můžete získat na jednotlivou položku nebo alokační klíč položky. Pokud historická data poptávky dosud nebyla importována, použijte k jejich importu datovou entitu **Historická externí poptávka** (ReqDemPlanHistoricalExternalDemandEntity) v aplikaci Dynamics 365 Supply Chain Management.
 
 V pracovním prostoru **Správa dat** lze zobrazit přehled všech polí v entitě.
 

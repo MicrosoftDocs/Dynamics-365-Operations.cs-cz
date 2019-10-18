@@ -1,6 +1,6 @@
 ---
 title: Konfigurace způsobů dodání a poplatků call centra
-description: Toto téma popisuje způsob nastavení režimů dodání a poplatků objednávky kontaktního střediska v Microsoft Dynamics 365 for Retail.
+description: Toto téma popisuje způsob nastavení režimů dodání a poplatků objednávky kontaktního střediska v Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b67a1d91e41e1a4c21e0e877c06812dededbe731
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553592"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019478"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurace způsobů dodání a poplatků call centra
 
 [!INCLUDE [banner](includes/banner.md)]
 
-Když je zadaná objednávka v aplikaci Microsoft Dynamics 365 for Retail a osoba, která ji zadala, je spojená s kanálem kontaktního centra, je použita logika a pravidla k ověření způsobu dodání a výpočtu poplatků za objednávku.
+Když je zadaná objednávka v aplikaci Dynamics 365 Retail a osoba, která ji zadala, je spojená s kanálem kontaktního centra, je použita logika a pravidla k ověření způsobu dodání a výpočtu poplatků za objednávku.
 
 Když vytvoříte prodejní objednávku, můžete vybrat způsob dodání v záhlaví prodejní objednávky a řádku prodejní objednávky. Výchozí způsob dodání, který jste vybrali v záhlaví, se používá pro všechny řádky prodejní objednávky. Lze však přepsat výchozí způsob dodání v jednotlivých řádcích prodejních podle potřeby. Rovněž můžete definovat způsob dodání v záznamu odběratele. Potom, když jsou vytvářeny objednávky pro zákazníka, je tento režim dodání použit ve výchozím nastavení v záhlaví prodejní objednávky.
 

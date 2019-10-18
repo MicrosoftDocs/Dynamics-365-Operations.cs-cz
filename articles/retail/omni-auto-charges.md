@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 47829a6fcae37e03510929dc46b942455016df0b
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 829fa771003de7759b237d4499aa038040b46a3f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577862"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018031"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanálové rozšířené automatické náklady
 
@@ -34,7 +34,7 @@ Toto téma obsahuje informace o konfiguraci a nasazení funkce rozšířených a
 
 Pokud jsou funkce rozšířených automatických nákladů povoleny, objednávky vytvořené v libovolném podporovaném kanálu Retail (pokladní místo (POS), kontaktní středisko a online) mohou využít konfigurací [automatických nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) definovaných v aplikaci ERP pro související náklady záhlaví a úrovně řádku.
 
-Ve vydáních před Dynamics 365 for Retail verze 10.0 jsou konfigurace [automatických nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) přístupné pouze pro objednávky vytvořené v kanálech e-Commerce a kontaktního střediska. Ve verzi 10.0 a novějších mohou objednávky vytvořené v POS využít konfigurace automatických nákladů. Tímto způsobem další vedlejší náklady mohou být systematicky přidány do prodejních transakcí.
+Ve verzích předcházejících aplikaci 10.0 bývaly konfigurace [automatických nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) přístupné pouze pro objednávky vytvořené v kanálech e-Commerce a kontaktního střediska. Ve verzi 10.0 a novějších mohou objednávky vytvořené v POS využít konfigurace automatických nákladů. Tímto způsobem další vedlejší náklady mohou být systematicky přidány do prodejních transakcí.
 
 Používáte-li verze starší než je verze 10.0, uživatel POS je vyzván k ručnímu zadání dopravného během vytváření transakcí POS „expedovat vše“ nebo „expedovat vybrané“. Zatímco funkce vedlejších nákladů v aplikaci se používají s ohledem na to, jak jsou náklady zapsány do objednávky, není poskytován systematický výpočet - výpočet se opírá o vstup uživatele, který určuje hodnotu nákladů. Náklady lze přidat pouze jako jeden kód nákladů souvisejících s expedicí a nelze je snadno upravit ani změnit v POS po jejich vytvoření.
 

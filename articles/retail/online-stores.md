@@ -1,6 +1,6 @@
 ---
 title: Nastavení online obchodů
-description: Tento článek obsahuje informace o online maloobchodech a jejich nastavení v aplikaci Microsoft Dynamics 365 for Retail.
+description: Tento článek obsahuje informace o online maloobchodech a jejich nastavení v aplikaci Dynamics 365 Retail.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2b736b5e5ce5b5b384181a73c72bbb89b072a284
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 02402269a6976ff856e703cc8e94fbf0758ea771
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543599"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017959"
 ---
 # <a name="set-up-online-stores"></a>Nastavit online obchodů
 
 [!include [banner](includes/banner.md)]
 
-Tento článek obsahuje informace o online maloobchodech a jejich nastavení v aplikaci Microsoft Dynamics 365 for Retail.
+Tento článek obsahuje informace o online maloobchodech a jejich nastavení v aplikaci Dynamics 365 Retail.
 
-Dynamics 365 for Retail podporuje více maloobchodních sítí. Tyto maloobchodní kanály zahrnují online obchody, kontaktní střediska a maloobchody (neboli kamenné obchody). Online obchody nabízí maloobchodnímu prodejci možnost být online, aby zákazníci mohli zakoupit produkty prodejce online i v maloobchodě. Pokud zákazníci zakoupí produkty z online obchodu, mohou tyto produkty nechat zaslat nebo si je vyzvednout v místním maloobchodě. Online obchod lze vytvořit v rámci Dynamics 365 for Retail klienta. Tento online obchod je pak publikován v online obchodě třetí strany, která je integrována v aplikaci Dynamics 365 for Retail. Online obchod třetí strany slouží jako výkladní skříň (uživatelské rozhraní) pro online obchod, a poskytuje nabídku ze systémů pro správu odběratele a možností uživatelského rozhraní. Několik integrace tohoto typu je k dispozici pro aplikaci Dynamics 365 for Retail. Vlastnosti, které definujete pro online obchod řídí chování online obchodu. Například můžete definovat hierarchii navigační kategorie v rámci aplikace Dynamics 365 for Retail a přiřadit ji k online obchodu. Při publikování online obchodu do online obchodu třetí strany se v online verzi obchodu zobrazí hierarchie navigační kategorie. Zákazníci používají hierarchii navigační kategorie pro procházení online obchodu a hledání produktů. Pokud chcete vytvořit online obchod, nastavte součásti, které umožňují zpracování transakcí pro obchod. Například musíte přidat sortimenty, použít atributy a nastavit platební metody a způsoby dodání. Můžete také definovat ceny, promoakce, slevy, obchodní smlouvy a dodací podmínky, které jsou specifické pro online obchod. Po publikování online obchodu do online obchodu třetí strany můžete vytvořit prodejní katalogy produktů pro online obchod. Produkty v katalogu se stanou výpisem produktů v online obchodu. Poté, co zákazník zakoupí produkty v online obchodě, dojde k aktualizaci a synchronizaci zásob v rámci klienta. Dále se vygenerují prodejní objednávky pro nákupy a odešlou se do klienta pro potřeby splnění objednávky a zpracování.
+Retail podporuje více maloobchodních kanálů. Tyto maloobchodní kanály zahrnují online obchody, kontaktní střediska a maloobchody (neboli kamenné obchody). Online obchody nabízí maloobchodnímu prodejci možnost být online, aby zákazníci mohli zakoupit produkty prodejce online i v maloobchodě. Pokud zákazníci zakoupí produkty z online obchodu, mohou tyto produkty nechat zaslat nebo si je vyzvednout v místním maloobchodě. Online obchod lze vytvořit v rámci klienta Retail. Tento online obchod je pak publikován v online obchodě třetí strany, která je integrována v aplikaci Retail. Online obchod třetí strany slouží jako výkladní skříň (uživatelské rozhraní) pro online obchod, a poskytuje nabídku ze systémů pro správu odběratele a možností uživatelského rozhraní. K dispozici je několik integrací tohoto typu. Vlastnosti, které definujete pro online obchod řídí chování online obchodu. Například můžete definovat hierarchii navigační kategorie v rámci aplikace Retail a přiřadit ji k online obchodu. Při publikování online obchodu do online obchodu třetí strany se v online verzi obchodu zobrazí hierarchie navigační kategorie. Zákazníci používají hierarchii navigační kategorie pro procházení online obchodu a hledání produktů. Pokud chcete vytvořit online obchod, nastavte součásti, které umožňují zpracování transakcí pro obchod. Například musíte přidat sortimenty, použít atributy a nastavit platební metody a způsoby dodání. Můžete také definovat ceny, promoakce, slevy, obchodní smlouvy a dodací podmínky, které jsou specifické pro online obchod. Po publikování online obchodu do online obchodu třetí strany můžete vytvořit prodejní katalogy produktů pro online obchod. Produkty v katalogu se stanou výpisem produktů v online obchodu. Poté, co zákazník zakoupí produkty v online obchodě, dojde k aktualizaci a synchronizaci zásob v rámci klienta. Dále se vygenerují prodejní objednávky pro nákupy a odešlou se do klienta pro potřeby splnění objednávky a zpracování.
 
 ## <a name="set-up-an-online-store"></a>Nastavení obchodu online
 

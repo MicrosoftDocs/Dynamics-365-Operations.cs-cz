@@ -3,7 +3,7 @@ title: Vytvoření účtu dodavatele
 description: Tento postup popisuje vytvoření účtu dodavatele a přidání adresy a kontaktních informací.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 98a7c6d209400b754064f2176d1ebca291093304
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 116085a71e872c13bbf2820f4408e3c7d1261d17
+ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838039"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "1924408"
 ---
 # <a name="create-a-vendor-account"></a>Vytvoření účtu dodavatele
 
@@ -31,35 +31,31 @@ Tento postup popisuje vytvoření účtu dodavatele a přidání adresy a kontak
 
 
 ## <a name="create-a-vendor-account"></a>Vytvoření účtu dodavatele
-1. Přejděte na Zásobování a zdroje > Dodavatelé > Všichni dodavatelé.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Účet dodavatele.
-    * Hodnota může být vyplněna automaticky. Pokud tomu tak je, můžete tento krok vynechat.  
-    * Můžete vytvořit účty dodavatelů pro osobu nebo organizaci. Tato akce ovlivní dostupnost polí. V tomto příkladu vytvoříte účet dodavatele pro organizaci.   
-4. V poli Název zadejte nebo vyberte hodnotu.
-    * Pokud je daný dodavatel již registrovanou stranou v systému, můžete použít rozevírací seznam a vybrat jej v tomto poli, přičemž nový účet dodavatele převezme adresu a kontaktní informace, které jsou již registrované.  
-5. V poli Skupina zadejte nebo vyberte hodnotu.
-    * Skupina dodavatelů se používá pro seskupení dodavatelů, kteří mají společné následující parametry: platební podmínky, období vyrovnání, skladové účty hlavní knihy včetně skupiny DPH, výchozí účty hlavní knihy, kódy filtru produktu a konfigurace prognózy dodávek.  
-6. Do pole Počet zaměstnanců zadejte číslo.
-7. Zadejte hodnotu do pole Číslo organizace.
+1. Přejděte na **Navigační podokno > Moduly > Zásobování a zdroje > Dodavatelé > Všichni dodavatelé**.
+2. Klepněte na možnost **Nový**.
+3. Zadejte hodnotu do pole **Účet dodavatele**.
+    - Hodnota může být vyplněna automaticky. Pokud tomu tak je, můžete tento krok vynechat.  
+    - Můžete vytvořit účty dodavatelů pro osobu nebo organizaci. Tato akce ovlivní dostupnost polí. V tomto příkladu vytvoříte účet dodavatele pro organizaci.   
+4. V poli **Název** zadejte nebo vyberte hodnotu. Pokud je daný dodavatel již registrovanou stranou v systému, můžete použít rozevírací seznam a vybrat jej v tomto poli, přičemž nový účet dodavatele převezme adresu a kontaktní informace, které jsou již registrované.
+5. V poli **Skupina** zadejte nebo vyberte hodnotu. Skupina dodavatelů se používá pro seskupení dodavatelů, kteří mají společné následující parametry: platební podmínky, období vyrovnání, skladové účty hlavní knihy včetně skupiny DPH, výchozí účty hlavní knihy, kódy filtru produktu a konfigurace prognózy dodávek.
+6. Do pole **Počet zaměstnanců** zadejte číslo.
+7. Zadejte hodnotu do pole **Číslo organizace**.
 
 ## <a name="add-an-address"></a>Přidání adresy
-1. Rozbalte sekci Adresy.
-2. Klepněte na možnost Přidat.
-3. V poli Účel zadejte nebo vyberte hodnotu.
-    * Lze vybrat jeden nebo více účelů. Ty se používají k výběru správné adresy pro daný účel. Například pokud je účelem "Faktura", daná adresa bude použita při odesílání faktur.  
-4. Zadejte hodnotu do pole Název nebo popis.
-5. V poli Země/oblast zadejte nebo vyberte hodnotu.
-    * Zadejte podrobnosti adresy. Vámi vybraná země/oblast určuje pole, která se zobrazí, a budou odpovídat formátu adresy pro danou zemi nebo oblast.   
-6. Klikněte na tlačítko OK.
+1. Rozbalte sekci **Adresy**.
+2. Klikněte na tlačítko **Přidat**.
+3. V poli **Účel** zadejte nebo vyberte hodnotu. Lze vybrat jeden nebo více účelů. Ty se používají k výběru správné adresy pro daný účel. Například pokud je účelem "Faktura", daná adresa bude použita při odesílání faktur.
+4. Zadejte hodnotu do pole **Název nebo popis**.
+5. V poli **Země/oblast** zadejte nebo vyberte hodnotu. Zadejte podrobnosti adresy. Vámi vybraná země/oblast určuje pole, která se zobrazí, a budou odpovídat formátu adresy pro danou zemi nebo oblast. 
+6. Klikněte na tlačítko **OK**.
 
 ## <a name="add-contact-information"></a>Přidání kontaktních informací
-1. Klepněte na možnost Přidat.
-2. Zadejte nějakou hodnotu do pole Popis.
-3. Vyberte volbu v poli Typ.
-4. Zadejte hodnotu do pole Kontaktní číslo/adresa.
-    * Pole Primární můžete vybrat, je-li daná adresa primární adresou kontaktní osoby.  
-5. Klikněte na položku Uložit.
-6. Zavřete stránku.
+1. Rozbalte oddíl **Kontaktní informace**.
+2. Klikněte na tlačítko **Přidat**.
+3. Zadejte hodnotu do pole **Popis**.
+4. Vyberte volbu v poli **Typ**.
+5. Zadejte hodnotu do pole **Kontaktní číslo/adresa**. Pole Primární můžete vybrat, je-li daná adresa primární adresou kontaktní osoby.  
+6. Klikněte na možnost **Uložit**.
 7. Zavřete stránku.
+8. Zavřete stránku.
 

@@ -3,7 +3,7 @@ title: Pořadí údržby
 description: Toto téma popisuje pořadí údržby v modulu Správa majetku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a0ac4820d2efa37387382c2890e3ddc7dbc0878b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875543"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922015"
 ---
 # <a name="maintenance-rounds"></a>Pořadí údržby
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 V modulu **Správa majetku** můžete vytvořit pořadí údržby pro různé položky majetku, u kterých je třeba v pravidelných intervalech provádět podobné úkoly. Například úlohy namazání nebo úlohy bezpečnostní prohlídky, které je třeba provést na několika strojích ve stejných intervalech. Prvním krokem je vytvoření pořadí údržby, včetně majetku, který vyžaduje stejný formulář práce údržby. Dále naplánujete pořadí údržby. Po vytvoření rozvrhu pořadí údržby můžete zobrazit všechny záznamy úloh, které se týkají pořadí, v částech **Všechny rozvrhy údržby** a **Otevřené řádky rozvrhu údržby**.
 
@@ -83,6 +81,8 @@ V modulu **Správa majetku** můžete vytvořit pořadí údržby pro různé po
 >[!NOTE]
 >Pole **Majetek** a **Řádky** umístěné ve skupině **Podrobnosti** na záložce s náhledem **Záhlaví** zobrazují celkový počet položek majetku a řádků souvisejících s vybraným pořadím údržby.
 
+Následující obrázek znázorňuje ukázku a příklad pořadí údržby obsahující tři aktiva.
+
 ![Obrázek č. 1](media/13-preventive-maintenance.png)
 
 
@@ -106,6 +106,8 @@ Když nastavíte pořadí údržby, spusťte úlohu plánu, která plánuje vše
 6. Klikněte na tlačítko **OK**.
 
 7. Nyní můete zobrazit úlohy pořadí údržby v částech **Správa majetku** > **Společné** > **Rozvrh údržby** > **Všechny rozvrhy údržby** nebo **Otevřené řádky rozvrhu údržby**. Jsou-li pořadí údržby připojena k fondu pracovních příkazů, zobrazí se také řádky rozrvhu údržby v části **Otevřené fondy rozvrhu údržby**. Řádky rozvrhu údržby vytvořené z pořadí mají typ odkazu „Rozvrhy údržby“.
+
+Následující dvě ilustrace zobrazují **úlohu plánování v** dialogovém okně Naplánovat pořadí údržby a řádky plánu údržby vytvořené ve **všech plánech** údržby na základě této úlohy plánu.
 
 ![Obrázek č. 2](media/14-preventive-maintenance.png)
 

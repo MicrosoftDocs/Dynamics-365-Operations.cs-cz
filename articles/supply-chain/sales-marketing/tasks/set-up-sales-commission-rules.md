@@ -3,7 +3,7 @@ title: Nastavení pravidel prodejních provizí
 description: Tento postup popisuje, jak nastavit a povolit výpočet prodejní provize a sledování.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16b0525c0fd133b2f41013e9b7daf47466e15ffe
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7d575e609ac5289f9acb219322c9df93972e5dfc
+ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833923"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "1995206"
 ---
 # <a name="set-up-sales-commission-rules"></a>Nastavení pravidel prodejních provizí
 
@@ -31,70 +31,68 @@ Tento postup popisuje, jak nastavit a povolit výpočet prodejní provize a sled
 
 
 ## <a name="set-up-commission-groups-and-commission-rates"></a>Nastavení skupiny provize a sazeb provizí
-1. Přejděte na Prodej a marketing > Provize > Skupiny odběratelů pro provizi.
-2. Klikněte na položku Nová.
-3. Zadejte hodnotu do pole Skupina.
-4. Zadejte hodnotu do pole Název.
-5. Klikněte na položku Uložit.
+1. Přejděte na **Navigační podokno > Prodej a marketing > Provize > Skupiny odběratelů pro provizi**.
+2. Zvolte **Nové**.
+3. Zadejte hodnotu do pole **Skupina**.
+4. Zadejte hodnotu do pole **Název**.
+5. Zvolte **Uložit**.
 6. Zavřete stránku.
-7. Přejděte na Prodej a marketing > Provize > Skupiny zboží.
-8. Klikněte na položku Nová.
-9. Zadejte hodnotu do pole Skupina.
-10. Zadejte hodnotu do pole Název.
-11. Zavřete stránku.
-12. Přejděte na Prodej a marketing > Provize > Prodejní skupiny.
-    * Skupina provizního prodeje určuje zaměstnance v rolích prodejních zástupců, kteří mohou získat provize, když odběratel přidružený ke odpovídající prodejní skupině nakupuje určité položky.  
-    * V ukázkové společnosti USMF je prodejní skupina s názvem „Prodejní zástupci USA“.  
-13. V podokně akcí klikněte na položku Obecné.
-14. Klepněte na Obchodní zástupce.
-    * Na stránce Prodejní zástupce se zobrazí seznam osob společnosti z oblasti prodeje, které jsou přidruženy ke konkrétní skupině provize. Můžete přiřadit více prodejních zástupců do stejné skupiny a definovat jejich odpovídající podíl z celkové provize jako procentuální hodnotu. Celková provize sdílená napříč všemi zaměstnanci nesmí překročit 100.  
-15. Označte v seznamu vybraný řádek.
-16. Klikněte na položku Upravit.
-17. Nastavte podíl na provizi na „50“.
-18. Klikněte na položku Nová.
-19. V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-20. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat v poli Jméno pomocí hodnoty „Susan Burk“.
-21. Klepněte na tlačítko Vybrat.
-22. Nastavte podíl na provizi na „50“.
-23. Klikněte na položku Uložit.
-24. Přejděte na Prodej a marketing > Provize > Výpočet provize.
-    * Na stránce výpočtu provize definujete sazbu provize, kterou zaměstnanec obdrží za prodejní transakci, když obsahuje přednastavenou kombinaci odběratele a produktu. Při nastavení sazby provize je nutné zadat základ pro výpočet provize, a zda má zahrnovat nebo vylučovat slevy. Můžete také zadat období platnosti, pokud je sazba provize aktivní.  
-25. Klikněte na položku Nová.
-26. V poli Kód položky vyberte Skupina.
-27. V poli Vztah položky kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-28. V seznamu najděte a vyberte skupinu, kterou jste vytvořili dříve.
-29. Klikněte na odkaz na vybraném řádku v seznamu.
-30. V poli Kód odběratele vyberte „Skupina“.
-31. V poli Vztah odběratele klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+7. Přejděte na **Navigační podokno > Prodej a marketing > Provize > Skupiny položek**.
+8. Zvolte **Nové**.
+9. Zadejte hodnotu do pole **Skupina**.
+10. Zadejte hodnotu do pole **Název**.
+11. Zvolte **Uložit**.
+12. Zavřete stránku.
+13. Přejděte na **Prodej a marketing > Provize > Prodejní skupiny**.
+    - Skupina provizního prodeje určuje zaměstnance v rolích prodejních zástupců, kteří mohou získat provize, když odběratel přidružený ke odpovídající prodejní skupině nakupuje určité položky.  
+    - V ukázkové společnosti USMF je prodejní skupina s názvem „Prodejní zástupci USA“.  
+14. V **podokně akcí** klikněte na možnost **Obecné**.
+15. Klikněte na **Obchodní zástupce**. Na stránce Prodejní zástupce se zobrazí seznam osob společnosti z oblasti prodeje, které jsou přidruženy ke konkrétní skupině provize. Můžete přiřadit více prodejních zástupců do stejné skupiny a definovat jejich odpovídající podíl z celkové provize jako procentuální hodnotu. Celková provize sdílená napříč všemi zaměstnanci nesmí překročit 100. 
+16. Označte na seznamu vybraný řádek.
+17. Vyberte možnost **Upravit**.
+18. Nastavte **podíl na provizi** na „50“.
+19. Klepněte na možnost **Nový**.
+20. V poli **Název** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+21. Použijte **rychlý filtr** k hledání záznamů. Můžete například filtrovat v poli Jméno pomocí hodnoty „Susan Burk“.
+22. Klepněte na tlačítko **Vybrat**.
+23. Nastavte **podíl na provizi** na „50“.
+24. Klikněte na možnost **Uložit**.
+25. Přejděte na **Prodej a marketing > Provize > Výpočet provize**. Na stránce **Výpočet provize** definujete sazbu provize, kterou zaměstnanec obdrží za prodejní transakci, když obsahuje přednastavenou kombinaci odběratele a produktu. Při nastavení sazby provize je nutné zadat základ pro výpočet provize, a zda má zahrnovat nebo vylučovat slevy. Můžete také zadat období platnosti, pokud je sazba provize aktivní.  
+26. Klepněte na možnost **Nový**.
+27. V poli **Kód položky** vyberte Skupina.
+28. V poli **Vztah položky** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+29. V seznamu najděte a vyberte skupinu, kterou jste vytvořili dříve.
+30. V poli **Kód odběratele** vyberte „Skupina“.
+31. V poli **Vztah odběratele** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 32. V seznamu vyberte skupinu, kterou jste nastavili dříve.
-33. V poli Prodejní zástupce klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání. 
+33. V poli **Prodejní zástupce** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 34. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-    * Zachovejte možnost „Před řádkovou slevou“.  
-    * Zachovejte možnosti „Výnosu“ jako základ pro výpočet hodnoty provize.    
+    - Zachovejte možnost „Před řádkovou slevou“.  
+    - Zachovejte možnosti „Výnosu“ jako základ pro výpočet hodnoty provize.    
 35. V poli Procento provize je třeba zadat číslo.
-36. Klikněte na položku Uložit.
+36. Klikněte na možnost **Uložit**.
 
 ## <a name="setting-up-commission-posting"></a>Nastavení zaúčtování provize
-1. Přejděte na Prodej a marketing > Provize > Zaúčtování provize.
-    * Provize se vyplácejí zaměstnancům a musí proto být nastaveny pro zajištění správného finančního účtování do příslušných účtů v hlavní knize. To se provádí na stránce zaúčtování provizí. Zkontrolujte nastavení, které je k dispozici pro aktuální společnost. Obvykle jsou částky provize zaúčtovány do vyhrazeného účtu výdajů a jsou vyrovnány do vyhrazených účtů závazků. Pokud nemáte nastavena pravidla zaúčtování provize, systém nedokončí fakturaci prodejní objednávky, která má nárok na provizi.  
+1. Přejděte na **Navigační podokno > Prodej a marketing > Provize > Zaúčtování provize**. Provize se vyplácejí zaměstnancům a musí proto být nastaveny pro zajištění správného finančního účtování do příslušných účtů v **hlavní knize**. To se provádí na stránce **Zaúčtování provizí**. Zkontrolujte nastavení, které je k dispozici pro aktuální společnost. Obvykle jsou částky provize zaúčtovány do vyhrazeného účtu výdajů a jsou vyrovnány do vyhrazených účtů závazků. Pokud nemáte nastavena pravidla zaúčtování provize, systém nedokončí fakturaci prodejní objednávky, která má nárok na provizi.  
 2. Zavřete stránku.
 
 ## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a>Přiřazení skupiny provize k odběrateli a produktu
-1. Přejděte na Prodej a marketing > Odběratelé > Všichni odběratelé.
+1. Přejděte na **Navigační podokno > Moduly > Prodej a marketing > Zákazníci > Všichni zákazníci**.
 2. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 3. Klikněte na odkaz na vybraném řádku v seznamu.
-4. Klikněte na možnost Upravit.
-5. Rozbalte položku Výchozí nastavení prodejních objednávek.
-6. V poli Skupina provize klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+4. Klikněte na možnost **Upravit**.
+5. Rozbalte položku **Výchozí nastavení prodejních objednávek**.
+6. V poli **Skupina provize** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 7. V seznamu vyberte skupinu, kterou jste vytvořili dříve.
-8. V poli Skupina prodeje klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+8. V poli **Skupina prodeje** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 9. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
-10. Klikněte na položku Uložit.
-11. Přejděte na možnosti Řízení informací o produktech > Produkty > Uvolněné produkty.
-12. Použijte rychlý filtr pro hledání záznamů. Můžete například filtrovat pole Číslo položky pomocí hodnoty „T0020“.
+10. Klikněte na možnost **Uložit**.
+11. Klikněte na **Navigační podokno > Moduly > Řízení informací o produktech > Produkty > Vydané produkty**.
+12. Použijte **rychlý filtr** k hledání záznamů. Můžete například filtrovat pole Číslo položky pomocí hodnoty „T0020“.
 13. Klikněte na odkaz na vybraném řádku v seznamu.
-14. Klikněte na možnost Upravit.
-15. Rozbalte sekci Prodej.
-16. V poli Skupina provize klepnutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+14. Klikněte na možnost **Upravit**.
+15. Rozbalte sekci **Prodej**.
+16. V poli **Skupina provize** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 17. V seznamu vyberte skupinu provize, kterou jste vytvořili dříve.
+18. Zvolte **Uložit**.
 

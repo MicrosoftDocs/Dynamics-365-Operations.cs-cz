@@ -1,6 +1,6 @@
 ---
 title: Platební metody v kontaktních střediscích
-description: Toto téma popisuje různé platební metody, které lze použít v kontaktním středisku v aplikaci Microsoft Dynamics 365 for Retail.
+description: Toto téma popisuje různé platební metody, které lze použít v kontaktním středisku v aplikaci Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 825ad4ba3e72e5b34c2ff29f36f88a518810ce49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 551a3cc9c0def1c67ab930dbff7cd1c0d296bd21
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571512"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018221"
 ---
 # <a name="payment-methods-in-call-centers"></a>Platební metody v kontaktních střediscích
 
 [!include [banner](includes/banner.md)]
 
-V aplikaci Microsoft Dynamics 365 for Retail zahrnuje konfigurace kanálu kontaktního střediska nastavení s názvem **Povolit dokončení objednávky**. Toto nastavení pomáhá zajistit, aby všechny objednávky, které vytvořili uživatelé kanálu, byly uvolněny ke zpracování objednávek pouze v případě, že mají předplacenou nebo předběžně autorizovánou platbu ve schválených tolerancích. Pokud je nastavení **Povolit dokončení objednávky** zapnuté, uživatelé kontaktního střediska mohou zadat platby proti prodejním objednávkám pro odběratele pomocí funkcí zpracování plateb kontaktního střediska. Pokud je nastavení vypnuto, uživatelé kontaktního střediska nemohou používat funkce zpracování plateb kontaktního střediska, ale mohou stále použít zálohy na prodejní objednávky pomocí standardních funkcí pohledávek.
+V aplikaci Dynamics 365 Retail zahrnuje konfigurace kanálu kontaktního střediska nastavení s názvem **Povolit dokončení objednávky**. Toto nastavení pomáhá zajistit, aby všechny objednávky, které vytvořili uživatelé kanálu, byly uvolněny ke zpracování objednávek pouze v případě, že mají předplacenou nebo předběžně autorizovánou platbu ve schválených tolerancích. Pokud je nastavení **Povolit dokončení objednávky** zapnuté, uživatelé kontaktního střediska mohou zadat platby proti prodejním objednávkám pro odběratele pomocí funkcí zpracování plateb kontaktního střediska. Pokud je nastavení vypnuto, uživatelé kontaktního střediska nemohou používat funkce zpracování plateb kontaktního střediska, ale mohou stále použít zálohy na prodejní objednávky pomocí standardních funkcí pohledávek.
 
 Jako součást konfigurace kanálu může společnost definovat způsoby platby, které jsou povoleny pro kanál kontaktního střediska. Kanál kontaktního střediska používá stejné metody platby, které jsou definovány pro maloobchodní kanály.
 

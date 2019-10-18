@@ -3,7 +3,7 @@ title: Náklady rozvrhu údržby
 description: Toto téma popisuje náklady rozvrhu údržby v modulu Správa majetku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71b958839a914d90a86a0dcd16a09285ca6dcfa4
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: b2f53a4a64b06efc9269c607bfe1fc3a41c90cdd
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875536"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922061"
 ---
 # <a name="maintenance-schedule-cost"></a>Náklady rozvrhu údržby
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 V modulu Správa majetku lze vypočítat rozpočtové náklady na řádcích rozvrhu údržby. To je užitečné v případě, že chcete získat přehled o očekávaných nákladech, například nákladech na plánované preventivní práce údržby pro další rok. Výpočty jsou založeny na stávajících řádcích rozvrhu údržby typu „Plány údržby“ a „Pořadí údržby“ a „Požadavky na údržbu“.
 
@@ -48,10 +46,11 @@ V modulu Správa majetku lze vypočítat rozpočtové náklady na řádcích roz
 
 5. Výpočet nákladů zahájíte klepnutím na tlačítko **OK**.
 
-6. Na kartě **Náklady rozvrhu údržby** ve skupinách podokna akce **Seskupit podle...** vyberte odpovídající tlačítka pro zobrazení požadované úrovně podrobností výpočtu nákladů. Vybraná tlačítka skupiny podokna akcí jsou zvýrazněna modrou barvou. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
+6. Na kartě **Náklady rozvrhu údržby** ve skupinách podokna akce **Seskupit podle...** vyberte odpovídající tlačítka pro zobrazení požadované úrovně podrobností výpočtu nákladů. Vybraná tlačítka skupiny podokna akcí jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
 
 7. Chcete-li provést nový výpočet nákladů, klikněte na tlačítko **Vypočítat náklady**.
 
+Na následujícím obrázku jsou uvedeny výsledky výpočtu nákladů rozvrhu údržby.
 
 ![Obrázek č. 1](media/17-preventive-maintenance.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Definování a udržování maloobchodní sítě
-description: V tomto tématu je přehled procesu pro nastavení kamenných obchodů, které se v aplikaci Microsoft Dynamics 365 for Retail označují jako maloobchody. Jsou zde informace o úkolech, které je nutné dokončit před a po nastavení maloobchodu.
+description: V tomto tématu je přehled procesu pro nastavení kamenných obchodů, které se v aplikaci Dynamics 365 Retail označují jako maloobchody. Jsou zde informace o úkolech, které je nutné dokončit před a po nastavení maloobchodu.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/14/2017
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 53ba6cdb2378ce9011c6e7e3ce4e67c789adb1e6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560341"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019363"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definování a udržování maloobchodní sítě
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je přehled procesu pro nastavení kamenných obchodů, které se v aplikaci Microsoft Dynamics 365 for Retail označují jako maloobchody. Jsou zde informace o úkolech, které je nutné dokončit před a po nastavení maloobchodu.
+V tomto tématu je přehled procesu pro nastavení kamenných obchodů, které se v aplikaci Dynamics 365 Retail označují jako maloobchody. Jsou zde informace o úkolech, které je nutné dokončit před a po nastavení maloobchodu.
 
-Dynamics 365 for Retail podporuje více maloobchodních sítí, jako například online obchody, kontaktní střediska a kamenné obchody. Kamenný obchod se nazývá maloobchod. Každý maloobchod může mít vlastní metodu plateb, cenové skupiny, pokladny na pokladních místech (POS), účty příjmů a výdajů a zaměstnance. Všechny tyto prvky je třeba nastavit pro maloobchod před jeho vytvořením. Po vytvoření maloobchodu přiřadíte produkty, které má obchod obsahovat. K obchodu můžete také přiřadit zaměstnance, pokladny a odběratele. Nakonec přidejte nový obchod do organizační hierarchie.
+Retail podporuje více maloobchodních sítí, jako např. online obchody, call centra a kamenné obchody. Kamenný obchod se nazývá maloobchod. Každý maloobchod může mít vlastní metodu plateb, cenové skupiny, pokladny na pokladních místech (POS), účty příjmů a výdajů a zaměstnance. Všechny tyto prvky je třeba nastavit pro maloobchod před jeho vytvořením. Po vytvoření maloobchodu přiřadíte produkty, které má obchod obsahovat. K obchodu můžete také přiřadit zaměstnance, pokladny a odběratele. Nakonec přidejte nový obchod do organizační hierarchie.
 
 ## <a name="setting-up-retail-stores"></a>Nastavení maloobchodů
 
-Před nastavením maloobchodu v Dynamics 365 for Retail je nutné dokončit některé předpoklady. Poté můžete vytvořit maloobchod a přidat podrobné informace.
+Před nastavením maloobchodu v aplikaci Retail je nutné dokončit některé předpoklady. Poté můžete vytvořit maloobchod a přidat podrobné informace.
 
 ### <a name="prerequisites"></a>Požadavky
 
@@ -55,7 +55,7 @@ Před nastavením maloobchodu je nutné dokončit následující úkoly:
 11. Nastavení zaměstnanců.
 
     > [!NOTE]
-    > Poznámka: Je nutné také přiřadit příslušná oprávnění zaměstnancům, aby se mohli přihlásit a provést úlohy pomocí aplikace Dynamics 365 for Retail pro systém Retail POS.
+    > Poznámka: Je nutné také přiřadit příslušná oprávnění zaměstnancům, aby se mohli přihlásit a provést úlohy pomocí systému Retail POS.
 
 12. Konfigurace profilů Retail POS pro přiřazení k obchodu. Tato úloha zahrnuje mnoho dalších úloh, například nastavení pokladny, nastavení profilu offline a nastavení formátů a profilů účtenky.
 
