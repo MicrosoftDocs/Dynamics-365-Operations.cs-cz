@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 84b6d3c3caa09b9601701ca4ac1992b151c0b8d4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558993"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249743"
 ---
 [!include[banner](../includes/banner.md)]
 
@@ -34,7 +34,7 @@ Toto téma popisuje, jak umožnit zaměstnancům používat mobilní zařízení
 
 Po uvolnění pracovních příkazů do skladu, pracovník použije mobilní zařízení k přiřazení objednávek k seskupení. Seskupení bude organizovat výdejní práci pracovníka. Když je pracovní objednávka přiřazena k seskupení, pracovník musí používat výdej v seskupení k provádění práce výdeje pro danou objednávku. Pracovník nemůže použít jinou metodu výdeje. Je-li pracovní objednávka přiřazena seskupení omylem, musí pracovník rozdělit seskupení a znovu jej vytvořit.
 
-V případě potřeby pracovník může předat seskupení jinému pracovníkovi. Tím se změní stav seskupení na Předáno. Používá-li pracovník mobilní zařízení k označení, že je práce výdeje a příjmu dokončena, musí potvrdit dodávku nebo náklad v klientovi Dynamics 365 for Finance and Operations.
+V případě potřeby pracovník může předat seskupení jinému pracovníkovi. Tím se změní stav seskupení na Předáno. Používá-li pracovník mobilní zařízení k označení, že je práce výdeje a příjmu dokončena, musí potvrdit dodávku nebo náklad v klientovi.
 
 ## <a name="set-up-cluster-picking"></a>Nastavení výdejů v seskupení
 

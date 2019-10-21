@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35ec47a13d9119c755702e019d09c76e1281b4a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549306"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250194"
 ---
 # <a name="activity-based-subcontracting"></a>Subdodávky na základě aktivit
 
@@ -32,7 +32,7 @@ ms.locfileid: "1549306"
 
 Toto téma podrobně popisuje, jak používat subdodavatelské aktivity ve výrobním toku pro lean manufacturing.
 
-V aplikaci Microsoft Dynamics 365 for Finance and Operations existují dva přístupy k subdodávkám: výrobní zakázky a lean manufacturing. V přístupu lean manufacturing je subdodavatelská práce modelována jako služba, která souvisí s aktivitou výrobního toku. Zavádíme speciální typ nákladové skupiny s názvem **Přímý outsourcing** a subdodavatelské služby již nebudou součástí kusovníku. Nákladové účetnictví subdodavatelské práce je plně integrováno do řešení výpočtu nákladů pro lean manufacturing.
+V aplikaci Microsoft Dynamics 365 Supply Chain Management existují dva přístupy k subdodávkám: výrobní zakázky a lean manufacturing. V přístupu lean manufacturing je subdodavatelská práce modelována jako služba, která souvisí s aktivitou výrobního toku. Zavádíme speciální typ nákladové skupiny s názvem **Přímý outsourcing** a subdodavatelské služby již nebudou součástí kusovníku. Nákladové účetnictví subdodavatelské práce je plně integrováno do řešení výpočtu nákladů pro lean manufacturing.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Výrobní toky, které zahrnují subdodavatele
 Základní princip výrobního toku se při subdodavatelských aktivitách nijak nemění. Materiál se stále pohybuje mezi lokacemi, aktivity proces převádí materiál na výrobky a aktivity převodu přesouvají materiál nebo výrobky z jednoho místa do druhého. Můžete modelovat lokace a pracovní buňky jako spravované dodavateli přiřazením účtu dodavatele ke skladu nebo prostředku skupiny prostředků.  
@@ -102,7 +102,7 @@ Lidé často považují dopravu za nevýrobní a domnívají se, že nepřináš
 
 Subdodávky na základě aktivit v lean manufacturingu vám umožňují integrovat dopravce a dodavatele přepravy, kteří přesouvají materiál a výrobky mezi místy výrobního toku. Modelováním aktivity převodu můžete přiřadit dopravce nebo dodavatele. Aktivity/úlohy převodu jsou založeny na službě a nákupní smlouvě a lze vytvořit nákupní objednávky a avíza o přijetí na základě skutečných úloh převodu. Tato funkce je stejná jako funkce pro proces subdodavatelských aktivit.  
 
-Proto Finance and Operations nyní podporuje výpočet kusovníku, který zahrnuje přepravní služby, vytvoření souvisejících nákupních objednávek, integrovanou registraci příjmu a integraci nákladů na přepravní služby do výpočtu nákladů výrobního toku.
+Supply Chain Management nyní podporuje výpočet kusovníku, který zahrnuje přepravní služby, vytvoření souvisejících nákupních objednávek, integrovanou registraci příjmu a integraci nákladů na přepravní služby do výpočtu nákladů výrobního toku.
 
 
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5b91d8589fa4226a2c28e6935b32109e702afc1a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5722099f8f146b9c5cc1fd427ccc57e040d2ff8a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571533"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025423"
 ---
 # <a name="petty-cash-management-for-retail-for-eastern-europe"></a>Správa pokladní hotovosti pro Retail pro východní Evropu
 
@@ -50,7 +50,7 @@ Na stránce **Zaúčtované výkazy** v podokně akcí můžete provést násled
 
 Následující postup nastavení je nutné dokončit před použitím řízení hotovosti v maloobchodu:
 
-- Nastavení metody platby pro každý typ platby, kterou přijímá prodejce na stránce **Metody platby**. Pro zaúčtování transakcí v Retail POS můžete použít různé metody platby. Další informace o metodách platby v aplikaci Retail naleznete v tématu [Metody platby](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
+- Nastavení metody platby pro každý typ platby, kterou přijímá prodejce na stránce **Metody platby**. Pro zaúčtování transakcí v Retail POS můžete použít různé metody platby. Další informace o metodách platby naleznete v tématu [Metody platby](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
 - Nastavení parametrů maloobchodu pro hotovostní operace.
 - Nastavení metody platby pro platby v hotovosti v programu maloobchodě.
 

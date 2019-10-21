@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bcc5989edd9913fce414c0c24068f111d8c1aeb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 27870fe6172479b891b885d9e84ca10b250e3399
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553616"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019497"
 ---
-# <a name="manage-retail-product-categories-and-products"></a>Správa kategorií a produktů maloobchodu
+# <a name="manage-retail-product-categories-and-products"></a>Správa maloobchodních kategorií produktů a produktů
 
 [!include [banner](./includes/banner.md)]
 
-Toto téma popisuje rozšířený způsob správy kategorií maloobchodních produktů a produktů v aplikaci Microsoft Dynamics 365 for Retail. Tato zlepšení umožní obchodním manažerům zobrazit společnou strukturu vlastností produktu sdílenou mezi hierarchií maloobchodních produktů a podrobnostmi uvolněného produktu.
+Toto téma popisuje rozšířený způsob správy kategorií produktů a produktů v aplikaci Dynamics 365 Retail. Tato zlepšení umožní obchodním manažerům zobrazit společnou strukturu vlastností produktu sdílenou mezi hierarchií produktů a podrobnostmi uvolněného produktu.
 
-Další informace o správě v kategoriích maloobchodního produktu získáte tak, že v pracovním prostoru **Správa kategorie a produktu** vyberete dlaždici **Maloobchodní hierarchie produktů**.
+Další informace o správě v kategoriích produktu získáte tak, že v pracovním prostoru **Správa kategorie a produktu** vyberete dlaždici **Maloobchodní hierarchie produktů**.
 
-Všimněte si vylepšené struktury rozšířené stránky **maloobchodní hierarchie produktů**, která se zobrazí. V předchozích verzích aplikace Retail byly vlastnosti produktu rozděleny na *základní vlastnosti základních* a *vlastností maloobchodních produktů*, podle rozsahu použitelnosti. Vlastnosti maloobchodních produktů jsou *globální* v rozsahu použitelnosti. Jinými slovy, pro danou vlastnost maloobchodního produktu se stejná hodnota sdílí mezi všemi právnickými osobami. Naproti tomu, vlastnosti základních produktů jsou *specifické pro právnickou osobu*. Jinými slovy, pro danou vlastnost základního produktu se může hodnota lišit napříč právnickými osobami, v závislosti na obchodních požadavcích každého právního subjektu.
+Všimněte si vylepšené struktury rozšířené stránky **maloobchodní hierarchie produktů**, která se zobrazí. V předchozích verzích aplikace Retail byly vlastnosti produktu rozděleny na *základní vlastnosti základních* a *vlastností maloobchodních produktů*, podle rozsahu použitelnosti. Vlastnosti maloobchodních produktů jsou *globální* v rozsahu použitelnosti. Jinými slovy, pro danou vlastnost produktu se stejná hodnota sdílí mezi všemi právnickými osobami. Naproti tomu, vlastnosti základních produktů jsou *specifické pro právnickou osobu*. Jinými slovy, pro danou vlastnost základního produktu se může hodnota lišit napříč právnickými osobami, v závislosti na obchodních požadavcích každého právního subjektu.
 
-V rozšířené struktuře kategorie maloobchodních produktů jsou vlastnosti produktu logicky odděleny podle jejich použitelnosti v rámci skupiny tak, aby odrážely strukturu formuláře podrobností uvolněného produktu.
+V rozšířené struktuře kategorie produktů jsou vlastnosti produktu logicky odděleny podle jejich použitelnosti v rámci skupiny tak, aby odrážely strukturu formuláře podrobností uvolněného produktu.
 
 ![Seskupení polí podle jejich rozsahu použitelnosti](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
@@ -50,7 +50,7 @@ Abyste mohli spravovat vlastnosti pro určitou právnickou osobu, vyberte **zobr
 
 ![Zobrazit nebo upravit pro specifickou právnickou osobu](media/ToggleToEditForAllLegalEntities.PNG)
 
-Dále pak ve vylepšené kategorii maloobchodních produktů může ve srovnání s předchozími verzemi v nové struktuře kategorií maloobchodních produktů obchodní manažer také definovat výchozí hodnoty pro další sadu vlastností produktů na individuální úrovni kategorií. Po vytvoření produktů se tyto výchozí hodnoty vlastností produktu dědí podle produktu na základě jejich přidružení k jednotlivé kategorii z hierarchie maloobchodních produktů. Tyto zděděné vlastnosti produktu lze upravit pro každý produkt za účelem splnění jednotlivých obchodních požadavků.
+Dále pak ve vylepšené kategorii maloobchodních produktů může ve srovnání s předchozími verzemi v nové struktuře kategorií maloobchodních produktů obchodní manažer také definovat výchozí hodnoty pro další sadu vlastností produktů na individuální úrovni kategorií. Po vytvoření produktů se tyto výchozí hodnoty vlastností produktu dědí podle produktu na základě jejich přidružení k jednotlivé kategorii z hierarchie produktů. Tyto zděděné vlastnosti produktu lze upravit pro každý produkt za účelem splnění jednotlivých obchodních požadavků.
 
 ## <a name="selecting-properties-to-update-products-on-the-retail-product-hierarchy-page"></a>Výběr vlastností pro aktualizaci produktů ze stránky hierarchie maloobchodních produktů
 

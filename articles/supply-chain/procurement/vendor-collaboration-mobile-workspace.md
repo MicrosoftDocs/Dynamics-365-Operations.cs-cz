@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 253ba0bd991e8db17940d3d4b9ade599800bf924
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2c2ba1f23cc068daf20474f05519c3c6865fd183
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843858"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250249"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilní pracovní prostor dodavatelské spolupráce
 
@@ -30,10 +30,10 @@ ms.locfileid: "1843858"
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Spolupráce dodavatele**. Tento pracovní prostor pomáhá udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech.
 
-Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Microsoft Dynamics 365 for Unified Operations.
+Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Finance and Operations.
 
 ## <a name="overview"></a>Přehled 
-Mobilní pracovní prostor **Dodavatelská spolupráce** informuje dodavatele o nových nákupních objednávkách. Dodavatelé si je mohou prohlížet a reagovat na ně pomocí webového klienta Microsoft Dynamics 365 for Finance and Operations. 
+Mobilní pracovní prostor **Dodavatelská spolupráce** informuje dodavatele o nových nákupních objednávkách. Dodavatelé si je mohou prohlížet a reagovat na ně pomocí webového klienta pracovní prostor. 
 
 >[!NOTE]
 > Mobilní pracovní prostor slouží jako doplněk webového rozhraní dodavatelské spolupráce, nikoli jako jeho náhrada. 
@@ -59,8 +59,8 @@ Mobilní pracovní prostor **Spolupráce dodavatele** umožňuje dodavateli prov
 ## <a name="prerequisites"></a>Předpoklady
 Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Předpoklady při použití Microsoft Dynamics 365 for Finance and Operations 
-Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Finance and Operations , správce systému musí publikovat mobilní pracovní prostor **Spolupráce dodavatelů**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Předpoklady při použití aplikace Supply Chain Management
+Pokud je ve vaší organizaci nasazena aplikace Supply Chain Management, správce systému musí publikovat mobilní pracovní prostor **Dodavatelská spolupráce**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Předpoklady při použití Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform Update 3 nebo vyšší
 Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform update 3 nebo novější, správce systému musí dokončit následující předpoklady. 
@@ -104,7 +104,7 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 <li><a href="vendor-collaboration-work-external-vendors.md">Dodavatelská spolupráce s externími dodavateli</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Správa uživatelů dodavatelské spolupráce</a></li>
 <li><a href="set-up-maintain-vendor-collaboration.md">Nastavení a správa dodavatelské spolupráce</a></li>
-<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Práce s odběrateli v aplikaci Finance and Operations pomocí dodavatelské spolupráce</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Práce s odběrateli v aplikaci Supply Chain Management pomocí dodavatelské spolupráce</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -112,7 +112,7 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
 
-Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
+Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

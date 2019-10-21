@@ -1,6 +1,6 @@
 ---
 title: Správa subdodavatelské práce při výrobě
-description: Toto téma vysvětluje, jak se spravují subdodavatelské operace v Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
+description: Toto téma vysvětluje, jak se spravují subdodavatelské operace v Dynamics 365 Supply Chain Management. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ea2feccf9f74c0f035b8a46dc87eb41bdf85900a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569746"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023534"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Správa subdodavatelské práce při výrobě
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak se spravují subdodavatelské operace v Microsoft Dynamics 365 for Finance and Operations. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
+Toto téma vysvětluje, jak se spravují subdodavatelské operace v Dynamics 365 Supply Chain Management. Jinými slovy vysvětluje, jak dodavatel spravuje výrobní operace přiřazené prostředku.
 
 Ve [výrobních procesech](production-process-overview.md) mohou práci provádět zdroje, které jsou vlastněné nebo spravované dodavateli. Prostředky dodavatele se používají k vyrovnání pravidelné nadměrné poptávky, která překračuje dostupnou kapacitu vlastních prostředků společnosti. Dodavatel může být také schopen nabídnout konkrétní [schopnosti prostředku](resource-capabilities.md) nebo prostředky za nižší cenu.  
 
@@ -40,7 +40,7 @@ Pokud jsou použity subdodávky operací nebo činnosti, mají vliv na všechny 
 
 Pro vnitřní zdroje je pro období typicky přidělena pevná sazba nákladů. Naopak náklady na nasmlouvaný subodavatelský prostředek vycházejí z nákupní ceny souvisejících služeb. Služba je definována jako jiný produkt a používá se k řízení zásobování veřejných zakázek a nákupních procesů pro dané operace subdodávek.  
 
-V současné době v aplikaci Microsoft Dynamics 365 for Finance and Operations neexistuje žádný explicitní koncept polotovarů. U výrobních zakázek, které vyžadují více než jednu operaci pro účely transformace surovin na hotový výrobek, je hotové zboží účtováno zpět do zásob pouze u poslední operace. Rozpracované výrobky, které vyvolávají dřívější operace jsou zaúčtovány nedokončené výroby (NV), ale nejsou zaúčtovány nebo sledovány ve skladu. Přestože postupy a kusovníky (BOM) můžete rozdělit na několik menších jednotek, tento přístup zvyšuje počet produktů, kusovníky a postupy, které musí být spravovány.  
+V současné době v aplikaci  neexistuje žádný explicitní koncept polotovarů v Supply Chain Management. U výrobních zakázek, které vyžadují více než jednu operaci pro účely transformace surovin na hotový výrobek, je hotové zboží účtováno zpět do zásob pouze u poslední operace. Rozpracované výrobky, které vyvolávají dřívější operace jsou zaúčtovány nedokončené výroby (NV), ale nejsou zaúčtovány nebo sledovány ve skladu. Přestože postupy a kusovníky (BOM) můžete rozdělit na několik menších jednotek, tento přístup zvyšuje počet produktů, kusovníky a postupy, které musí být spravovány.  
 
 Existují dvě metody pro modelování subdodavatelské práce pro výrobní činnosti. Tyto metody se liší ve způsobu, jakým lze modelovat subdodávky procesu, ve způsobu, jakým jsou rozpracované výrobky zastoupeny v procesu a ve způsobu řízení nákladů.
 

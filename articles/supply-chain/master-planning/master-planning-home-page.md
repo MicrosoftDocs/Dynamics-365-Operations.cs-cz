@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543576"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250684"
 ---
 # <a name="master-planning-home-page"></a>Domovská stránka Hlavního plánování
 
@@ -74,7 +74,7 @@ Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a
 Názory, novinky a další informace o hlavním plánování a jiných řešeních naleznete na [blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) a v [blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Průvodci záznamem úloh
-V aplikaci Finance and Operations je k dispozici další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko **Nápověda** na kterékoliv stránce.
+K dispozici je další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko **Nápověda** na kterékoliv stránce.
 
 ### <a name="webinars"></a>Webináře
 [Použití strojového učení Azure pro prognózu poptávky](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e6a2d428e433256339fff07f3805449a2604213
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 3336a3357578b25522e1ac457a48349f88b7318d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783117"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024561"
 ---
 # <a name="asset-management-parameters"></a>Parametry správy majetku
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783117"
 
 Ve správě majetku musí být nastaveny obecné parametry týkající se majetku, pracovních příkazů a plánování pracovních příkazů. Toto téma vysvětluje, jak je nastavit. Vyberte **Správa majetku** > **Nastavení** > **Parametry správy majetku** pro otevření formuláře.
 
-Tlačítko **Vytvořit datového průvodce** lze použít k automatickému vytvoření dat nastavení pro účely testování nebo ukázky dat ve společnosti v aplikaci Dynamics 365 for Finance and Operations. Informace o použití průvodce naleznete v dokumentu white paper „Nastavení testovacích dat ve správě majetku“.
+Tlačítko **Vytvořit datového průvodce** lze použít k automatickému vytvoření dat nastavení pro účely testování nebo ukázky dat ve společnosti v aplikaci Dynamics 365 Supply Chain Management. Informace o použití průvodce naleznete v dokumentu white paper „Nastavení testovacích dat ve správě majetku“.
 
 Odkaz **Majetek**
 
@@ -57,7 +57,7 @@ Odkaz **Pracovní příkazy**
 - Pokud chcete automaticky kopírovat chyby registrované na pracovních příkazech do souvisejících požadavků na údržbu, vyberte možnost Ano na přepínacím tlačítku **Kopírovat chyby**.  
 - V poli **Úroveň** definujete úroveň funkčních míst, která je automaticky vložena do pracovního příkazu, pokud všechny související úlohy pracovních příkazů odkazují na stejné funkční místo. Pokud úlohy pracovních příkazů nesouvisí všechny se stejným funkčním místem na definované úrovni, pole **Funkční místo** zůstane na pracovním příkazu prázdné. Příklad: Pokud do tohoto pole vložíte číslo 1, jedná se o nejvyšší úroveň ve struktuře funkčních míst. Pokud do tohoto pole vložíte číslo 0, nedefinovali jste specifickou úroveň funkčního místa, ale pouze to, že všechny úlohy pracovních příkazů na pracovním příkazu musí souviset se stejným funkčním místem, které má být přidáno do pracovního příkazu.  
 - Deníky používané při účtování spotřeby na pracovním příkazu lze vybrat na záložce s náhledem **Obecné** v polích **Hodina**, **Položka** a **Výdaje**.  
-- V poli **Zdroj jazyka produktu** vyberte jazyk, který chcete použít pro názvy produktů v sestavách správy majetku. Můžete vybrat jazyk nastavený na účtu společnosti nebo jazyk nastavený pro aktuálně přihlášeného uživatele v Dynamics 365 for Finance and Operations.  
+- V poli **Zdroj jazyka produktu** vyberte jazyk, který chcete použít pro názvy produktů v sestavách správy majetku. Můžete vybrat jazyk nastavený na účtu společnosti nebo jazyk nastavený pro aktuálně přihlášeného uživatele.  
 - Chcete-li automaticky aktualizovat změny ve výchozích hodnotách typu práce, plánech údržby a pořadí údržby, zvolte Ano na přepínacím tlačítku **Aktualizace v reálném čase**.
 > - Pokud vyberete možnost Ne, změny výchozího nastavení typu úlohy, plánů údržby a pořadí údržby nebudou automaticky aktualizovány v modulu Správa majetku.  
 > - Pokud máte velké množství synchronizovaných dat, například mnoho majetku nebo funkčních míst nastavených v plánech údržby nebo v pořadích údržby, nebo velký počet plánů nebo pořadí údržby, vyberte na přepínacím tlačítku Ne.  
@@ -75,7 +75,7 @@ Odkaz **Plánování pracovního příkazu**
 - **Hlavní plán** se vztahuje ke zdrojům v modulu **Správy organizace**. Pokud v tomto poli vyberete hlavní plán, budete moci zobrazit rezervace kapacity vztahující se k pracovním příkazům v možnosti **Rezervace kapacity** (**Správa organizace** > **Zdroje** > **Zdroje** > volba zdroje > karta **Zdroj** > tlačítko **Rezervace kapacity**). Pokud toto pole ponecháte prázdné, budete moci zobrazit vytížení kapacity vztahující se k pracovním příkazům v možnosti **Vytížení kapacity** (**Správa organizace** \> **Zdroje** \> **Zdroje** \> volba zdroje \> karta **Zdroj** \> tlačítko **Vytížení kapacity**).  
 
 >[!NOTE]
->Výběr týkající se použití nebo nepoužití hlavního plánu v modulu **Správa majetku** a souvisejícího formuláře používaného k získání přehledu rezervací kapacity nebo vytížení kapacity je standardní nastavení aplikace Dynamics 365 for Finance and Operations. V závislosti na nastavení v poli **Hlavní plán** budete moci získat přístup k informacím o kapacitě buď v možnosti **Rezervace kapacity** nebo **Vytížení kapacity** v modulu **Správa organizace**. Není možné vytvořit nastavení, ve kterém jsou v obou zobrazeních zobrazeny rezervace kapacity.  
+>Výběr týkající se použití nebo nepoužití hlavního plánu v modulu **Správa majetku** a souvisejícího formuláře používaného k získání přehledu rezervací kapacity nebo vytížení kapacity je standardní nastavení. V závislosti na nastavení v poli **Hlavní plán** budete moci získat přístup k informacím o kapacitě buď v možnosti **Rezervace kapacity** nebo **Vytížení kapacity** v modulu **Správa organizace**. Není možné vytvořit nastavení, ve kterém jsou v obou zobrazeních zobrazeny rezervace kapacity.  
 
 Pole popsaná v seznamu odrážek se vztahují k vypočítaným skóre hodnocení, která se používají k výpočtu priority pracovního příkazu během plánování pracovního příkazu.
 

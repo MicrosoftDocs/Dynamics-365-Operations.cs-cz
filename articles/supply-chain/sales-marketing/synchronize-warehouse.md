@@ -1,6 +1,6 @@
 ---
-title: Synchronizujte sklady z aplikace Finance and Operations do služby Field Service
-description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci skladů z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
+title: Synchronizace skladů z aplikace Supply Chain Management do služby Field Service
+description: Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci skladů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -19,41 +19,41 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: ae99624076eecda2969961d0361d1adf42c6c5f3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 94fb6720152cbf6aec58d2b8d9d02fc5343c05e2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835663"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251171"
 ---
-# <a name="synchronize-warehouses-from-finance-and-operations-to-field-service"></a>Synchronizace skladů z aplikace Finance and Operations do služby Field Service
+# <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Synchronizace skladů z aplikace Supply Chain Management do služby Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci skladů z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
+Toto téma popisuje šablony a základní úkoly, které se používají k synchronizaci skladů z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 
-[![Synchronizace obchodních procesů mezi aplikacemi Finance a Operations and Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
-Následující šablona a základní úlohy slouží ke spuštění synchronizace skladů z Microsoft Dynamics 365 for Finance and Operations k Microsoft Dynamics 365 for Field Service.
+Následující šablona a základní úlohy se používají k synchronizaci skladů ze Supply Chain Management do Field Service.
 
 **Šablona v integraci dat**
-- Sklady (Fin and Ops do Field Service)
+- Sklady (z aplikace Supply Chain Management do služby Field Service)
 
 **Úkol v projektu integrace dat**
 - Sklad
 
 ## <a name="entity-set"></a>Sada entit
-| Field Service    | Finance and Operations                 |
+| Field Service    | Správa dodavatelsko-odběratelského řetězce                 |
 |------------------|----------------------------------------|
 | msdyn_warehouses | Sklady                             |
 
 ## <a name="entity-flow"></a>Tok entity
-Sklady vytvořené a spravované v aplikaci Finance and Operations lze synchronizovat se službu Field Service prostřednictvím projektu integrace dat Common Data Service (CDS). Požadované sklady, které chcete synchronizovat do služby Field Service, je možné v projektu řídit pomocí funkce filtrování a pokročilých dotazů. Sklady, které se synchronizují z aplikace Finance and Operations, jsou vytvořeny ve službě **Field Service, kde je pole Je spravováno externě** nastaveno na **Ano** a záznam je určen pouze pro čtení.
+Sklady vytvořené a spravované v aplikaci Supply Chain Management lze synchronizovat se službu Field Service prostřednictvím projektu integrace dat Common Data Service (CDS). Požadované sklady, které chcete synchronizovat do služby Field Service, je možné v projektu řídit pomocí funkce filtrování a pokročilých dotazů. Sklady, které se synchronizují z aplikace Supply Chain Management, jsou vytvořeny ve službě **Field Service, kde je pole Je spravováno externě** nastaveno na **Ano** a záznam je určen pouze pro čtení.
 
 ## <a name="field-service-crm-solution"></a>Řešení Field Service CRM
-K podpoře integrace mezi moduly Field Service a Finance and Operations jsou požadovány další funkce z řešení služby CRM Field Service. V řešení bylo pole **Je externě udržováno** přidáno do entity **Sklad (msdyn_warehouses)**. Toto pole napomáhá identifikovat, zda je sklad řízen z modulu Finance and Operations nebo zda existuje pouze ve službě Field Service. Nastavení tohoto pole zahrnuje:
-- **Ano** – Sklad pochází z aplikace Finance and Operations a nebude ho možné upravovat v aplikaci Sales.
+K podpoře integrace mezi moduly Field Service a Finance and Operations jsou požadovány další funkce z řešení služby CRM Field Service. V řešení bylo pole **Je externě udržováno** přidáno do entity **Sklad (msdyn_warehouses)**. Toto pole napomáhá identifikovat, zda je sklad řízen z aplikace Supply Chain Management nebo zda existuje pouze ve službě Field Service. Nastavení tohoto pole zahrnuje:
+- **Ano** – Sklad pochází z aplikace Supply Chain Management a nebude ho možné upravovat v aplikaci Sales.
 - **Ne** – Sklad byl zadán přímo do služby Field Service a je zde udržován.
 
 Pole **Je externě spravován** pomáhá řídit synchronizaci úrovní zásob, úprav, převody a použití u pracovních příkazů. Pouze sklady se stavem **Je externě spravován** je nastaveno na **Ano** lze použít k synchronizaci přímo ke stejnému skladu v jiném systému. 
@@ -63,7 +63,7 @@ Pole **Je externě spravován** pomáhá řídit synchronizaci úrovní zásob, 
 
 ## <a name="prerequisites-and-mapping-setup"></a>Nastavení mapování a předpokladů
 ### <a name="data-integration-project"></a>Projekt integrace dat
-Před synchronizací skladů je nutné aktualizovat rozšířený dotaz a filtrování projektu, aby byly zahrnuty pouze sklady, které chcete převést z aplikace Finance and Operations do služby Field Service. Upozorňujeme, že budete potřebovat sklad ve službě Field Service, abyste jej mohli použít na pracovní příkazy, úpravy a převody.  
+Před synchronizací skladů je nutné aktualizovat rozšířený dotaz a filtrování projektu, aby byly zahrnuty pouze sklady, které chcete převést z aplikace Supply Chain Management do služby Field Service. Upozorňujeme, že budete potřebovat sklad ve službě Field Service, abyste jej mohli použít na pracovní příkazy, úpravy a převody.  
 
 Ujistěte se, že **klíč integrace** existuje pro **msdyn_warehouses**:
 1. Přjděte na integraci dat.
@@ -76,6 +76,6 @@ Ujistěte se, že **klíč integrace** existuje pro **msdyn_warehouses**:
 
 Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
-### <a name="warehouses-fin-and-ops-to-field-service-warehouse"></a>Sklady (Fin and Ops do Field Service): Sklad
+### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Sklady (z aplikace Supply Chain Management do služby Field Service): Sklad
 
 [![Mapování šablony v integraci dat](./media/Warehouse1.png)](./media/Warehouse1.png)

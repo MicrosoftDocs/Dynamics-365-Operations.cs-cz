@@ -1,6 +1,6 @@
 ---
-title: Dodavatelská spolupráce s odběrateli
-description: Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami v aplikaci Microsoft Dynamics 365 for Finance and Operations ke sledování zásob na skladě.
+title: Dodavatelská spolupráce se zákazníky
+description: Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci s nákupními objednávkami ke sledování zásob na skladě.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bd3967da105b3cec4a722ee8e04fac13c798feec
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e968a57c09837a5cfa5a0476426a274021122959
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567577"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250111"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Dodavatelská spolupráce se zákazníky
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Dynamics 365 for Finance and Operations. Dodavatelé mohou dokončit řadu obchodních procesů z následujících pracovních prostorů:
+Toto téma popisuje, jak můžete využít spolupráci s dodavatelem k práci se zákazníky v aplikaci Microsoft Dynamics 365 Supply Chain Management. Dodavatelé mohou dokončit řadu obchodních procesů z následujících pracovních prostorů:
 
 - **Potvrzení nákupní objednávky** – sledování nákupních objednávek a odpovídání na ně.
 - **Nabídky dodavatele** – zobrazení požadavků na nabídku a odpovídání na ně zadáním nabídky.

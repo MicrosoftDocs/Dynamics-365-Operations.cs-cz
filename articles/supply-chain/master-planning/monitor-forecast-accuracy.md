@@ -1,6 +1,6 @@
 ---
-title: Sledování přesnosti prognózy
-description: Tento článek popisuje typy přesnosti prognózy, které aplikace Microsoft Dynamics 365 for Finance and Operations vypočítává, a popisuje způsob, jakým lze hodnoty přesnosti zobrazit.
+title: Monitorování přesnosti prognózy
+description: Toto téma popisuje typy přesnosti prognózy, které aplikace Dynamics 365 Supply Chain Management vypočítává, a popisuje způsob, jakým lze hodnoty přesnosti zobrazit.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,25 +19,26 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7070c15f9ee23cfdba871af68d1fc5954735651
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6f238afadfa064e972ef11a95fdad073f63ff20c
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556799"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250661"
 ---
-# <a name="monitor-forecast-accuracy"></a>Sledování přesnosti prognózy
+# <a name="monitor-forecast-accuracy"></a>Monitorování přesnosti prognózy
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje typy přesnosti prognózy, které aplikace Microsoft Dynamics 365 for Finance and Operations vypočítává, a popisuje způsob, jakým lze hodnoty přesnosti zobrazit.
+Toto téma popisuje typy přesnosti prognózy, které aplikace Microsoft Dynamics 365 Supply Chain Management vypočítává, a popisuje způsob, jakým lze hodnoty přesnosti zobrazit.
 
-Aplikace Finance and Operations provádí výpočet následujících typů přesnosti prognózy:
+Aplikace Supply Chain Management provádí výpočet následujících typů přesnosti prognózy:
 
 -   Historická přesnost prognózy porovnáním historické prognózy, kterou hlavní plánování používá s historickou poptávkou. K zobrazení hodnot (absolutní hodnoty a hodnoty v procentech) pro historickou přesnost prognózy klepněte na tlačítko **Zobrazit přesnost** na stránce **Podrobnosti prognózy poptávky**.
 -   Odhadovaná přesnost modelu prognózy, který slouží ke generování předpovědi. Procento přesnosti lze zobrazit v části **Podrobnosti modelu – MAPE** na stránce **Podrobnosti prognózy poptávky**. 
 
-**Poznámka:**: Pokud používáte službu strojového učení Microsoft Azure prognózy poptávky aplikace Finance and Operations, přesnost výpočtu interního modelu vychází ze sady testovaných dat. Pokud chcete určit velikost sady testovaných dat, nastavte parametr **TEST\_SET\_SIZE\_PERCENT** na stránce **Parametry tvorby prognóz poptávky**. Pokud je nastavena hodnota na **20**, posledních 20 procent historických dat se použije k výpočtu přesnosti interního modelu.
+> [!NOTE]
+> Pokud používáte službu strojového učení Microsoft Azure prognózy poptávky, přesnost výpočtu interního modelu vychází ze sady testovaných dat. Pokud chcete určit velikost sady testovaných dat, nastavte parametr **TEST\_SET\_SIZE\_PERCENT** na stránce **Parametry tvorby prognóz poptávky**. Pokud je nastavena hodnota na **20**, posledních 20 procent historických dat se použije k výpočtu přesnosti interního modelu.
 
 
 <a name="additional-resources"></a>Další zdroje

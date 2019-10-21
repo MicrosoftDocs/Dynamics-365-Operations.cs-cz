@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 07eea8fd7af4da611b4bd0c9340923f8894fab2c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9f36da025528272b1a95456acf597dd5d923819
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1526008"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025165"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje
 
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkci pro seskupení automatických nákladů na úrovni řádku a jejich poměrné rozdělení na maloobchodní prodejní řádky. Tato funkce je k dispozici pro transakce vytvořené v pokladním místu (POS) v aplikaci Microsoft Dynamics 365 for Retail verze 10.0.1 a prodeje, které byly vytvořeny v kontaktním středisku v Microsoft Dynamics 365 for Retail verze 10.0.2.
+Toto téma popisuje funkci pro seskupení automatických nákladů na úrovni řádku a jejich poměrné rozdělení na maloobchodní prodejní řádky. Tato funkce je k dispozici pro transakce vytvořené v pokladním místu (POS) v aplikaci Retail verze 10.0.1 a prodeje, které byly vytvořeny v kontaktním středisku v aplikaci Retail verze 10.0.2.
 
 Tato funkce je k dispozici pouze tehdy, pokud je funkce [rozšířených automatických nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) zapnuta pomocí možnosti na stránce **Parametry maloobchodu**. Kromě toho může být rozšířený způsob výpočtu pro automatické náklady použit pouze na maloobchodní prodejní objednávky, které jsou vytvořeny prostřednictvím maloobchodních kanálů (POS, kontaktní středisko a platforma Dynamics e-Commerce).
 
 Tato nová funkce poskytuje organizacím větší flexibilitu ve způsobu, jakým jsou automatické náklady na úrovni záhlaví vypočítávány a aplikovány na transakce maloobchodního prodeje.
 
-Ve verzích aplikace Microsoft Dynamics 365 for Retail, které jsou starší než verze 10.0.1, se automatické náklady na úrovni záhlaví, které mají specifický režim relace doručení, počítají pouze v případě, že existuje shoda se způsobem doručení, který je definován na záhlaví prodejní objednávky.
+Ve verzích aplikace Retail, které jsou starší než verze 10.0.1, se automatické náklady na úrovni záhlaví, které mají specifický režim relace doručení, počítají pouze v případě, že existuje shoda se způsobem doručení, který je definován na záhlaví prodejní objednávky.
 
 Například automatické náklady na úrovni záhlaví jsou definované pro způsob dodání **99** a způsob dodání **11**. Prodejní objednávka je vytvořena a způsob dodání **99** je definován v záhlaví objednávky. Avšak některé řádky prodeje jsou nastaveny tak, aby byly expedovány pomocí způsobu dodání **11**. V takovém případě se zvažují pouze náklady na úrovni záhlaví propojené se způsobem dodání **99** a použijí se na prodejní objednávku.
 
-V aplikaci Dynamics 365 for Retail mají náklady na úrovni záhlaví další funkci, která umožňuje definovat [konfiguraci vrstvených nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) založenu na hodnotě objednávky. Pokud je například hodnota objednávky mezi 50,00 USD a 200 USD, organizace může chtít účtovat poplatek za přepravu ve výši 5 USD. Pokud je však hodnota objednávky mezi 200,01 USD a 500,00 USD, přepravné může být 4,00 USD.
+V aplikaci Retail mají náklady na úrovni záhlaví další funkci, která umožňuje definovat [konfiguraci vrstvených nákladů](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) založenu na hodnotě objednávky. Pokud je například hodnota objednávky mezi 50,00 USD a 200 USD, organizace může chtít účtovat poplatek za přepravu ve výši 5 USD. Pokud je však hodnota objednávky mezi 200,01 USD a 500,00 USD, přepravné může být 4,00 USD.
 
 Některé organizace chtějí výhody výpočtu vrstvených nákladů, která je poskytována s náklady na úrovní záhlaví. Ve scénářích, které zahrnují smíšené způsoby dodání, se však také chtějí ujistit, že vypočítané náklady jsou založeny na shodě se způsobem doručení, který je definován na každém řádku prodeje.
 

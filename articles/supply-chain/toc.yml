@@ -1,0 +1,2396 @@
+- name: Dynamics 365 Supply Chain Management
+  items:
+    - name: Dynamics 365 Supply Chain Management
+      items:
+        - name: Dynamics 365 Supply Chain Management
+          href: index.md
+        - name: Začínáme
+          items:
+            - name: Před zakoupením
+              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Registrace ukázkového předplatného
+              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Aktualizace služby One Version
+              items:
+                - name: Přehled aktualizace služby One Version
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Často kladené dotazy k aktualizacím služby One Version
+                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zásady životního cyklu softwaru - Cloud
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zásady životního cyklu softwaru - On-premises
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dostupnost aktualizace služby
+                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Použití aktualizací na cloudová prostředí
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace aktualizací služby
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zastavení aktualizací služby
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Informujte se o aktualizacích služeb
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Automatizace datové úlohy
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Doručení řešení nezávislých výrobců softwaru pomocí One Version
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytvoření a automatizace akceptačních testování uživatele
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nasazení ukázkového prostředí
+              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Zvažování nasazení
+              items:
+                - name: Možnosti nasazení
+                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Cloudové nasazení
+                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Systémové požadavky pro nasazení cloudu
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Místní nasazení
+                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Systémové požadavky pro místní nasazení
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zakoupení Finance + Operations (on-premises)
+                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace skladů pro místní nasazení
+                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aplikace Finance and Operations provozovaná prostřednictvím 21Vianet v Číně
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aplikace Finance and Operations ve Francii
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Co je nového a co se změnilo
+              items:
+                - name: Domovská stránka Co je nového a co se změnilo
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
+                - name: Funkce Preview v aplikacích Finance and Operations 10.0.6 (listopad 2019)
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aplikace Finance and Operations 10.0.5 (říjen 2019)
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Finance and Operations, 10.0.4 (červenec 2019)'
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Finance and Operations, Enterprise Edition 7.3'
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Odstraněné nebo zastaralé funkce
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Odložené funkce AX 2012
+                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funkce neimplementované v místních nasazeních
+                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
+                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Zdroje dokumentace
+              items:
+                - name: Systém nápovědy
+                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: "Připojení k\_systému nápovědy"
+                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Připojení vlastního webu nápovědy
+                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zobrazení a export popisů polí
+                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Záznamník úloh
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytváření dokumentace nebo školení pomocí záznamníku úloh
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Videa
+                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Glosář
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Výukový katalog
+              items:
+                - name: Domovská stránka Výukový katalog
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Obchodníci s rozhodovací pravomocí
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Obchodní uživatelé
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Správci projektu implementace
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Správci
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vývojáři
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                - name: "Partnerství prodeje a\_marketingu"
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funkční poradci
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Architekti řešení
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Prozkoumání uživatelského rozhraní
+              items:
+                - name: Prvky uživatelského rozhraní
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funkce usnadnění přístupu
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přehled správy funkcí
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Často kladené dotazy ke klientovi
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vyhledání akce
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Pokročilé filtrování a syntaxe dotazu
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace a filtrování pracovních prostorů
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zobrazení stránek vedle sebe pomocí funkce Otevřít v novém okně
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Klávesové zkratky
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Změna bannerů a obrázků s logem pro právnické osoby
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hledání za účelem navigace
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přizpůsobení uživatelského prostředí
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Uložená zobrazení
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytvoření vlastních polí a práce s nimi
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Integrace aplikací PowerApps
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nalezení informací pomocí vyhledávání
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Změna data pro relaci
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nastavení upřednostňovaného časového pásma uživatele
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vysvětlení služeb Lifecycle Services
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/supply-chain/toc.json
+            - name: Implementace správy životního cyklu
+              items:
+                - name: Domovská stránka Implementace správy životního cyklu
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Architektura pro aplikace Finance and Operations
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft FastTrack for Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nasazení projektu implementace
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Plánování prostředí
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Příprava pro ostré nasazení
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Často kladené dotazy týkající se ostrého nasazení
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Odeslání požadavku na službu
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Často kladené dotazy týkající se předplatného, projektů LCS a klientů Azure AD'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přesun prostředí mezi datovými centry
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přesun licencí mezi typy smlouvy
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přesun projektů implementace LCS do jiných klientů služby Azure AD
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Více LCS projektů a produkčních prostředí na jednom klientovi služby Azure AD
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Globalizace
+          items:
+            - name: Zdroje globalizace
+              href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Povinné aktualizace
+              href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Rusko
+              items:
+                - name: Rusko - přehled
+                  href: ../finance/localizations/russia.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zásoby
+                  items:
+                    - name: Přepravované zboží od dodavatele
+                      href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Správa majetku
+          items:
+            - name: Přehled správy majetku
+              href: asset-management/index.md
+              items:
+                - name: Funkční místa a majetek
+                  href: asset-management/overview/functional-locations-and-objects.md
+                - name: Majetek a pracovní příkazy
+                  href: asset-management/overview/objects-and-work-orders.md
+            - name: Nastavení funkčních míst
+              items:
+                - name: Stavy životního cyklu funkčních míst
+                  href: asset-management/setup-for-functional-locations/functional-location-stages.md
+                - name: Typy atributů údržby
+                  href: asset-management/setup-for-functional-locations/functional-location-types.md
+                - name: Typy funkčních míst
+                  href: asset-management/setup-for-functional-locations/specification-types.md
+            - name: Funkční místa
+              items:
+                - name: Úvod do funkčních míst
+                  href: asset-management/functional-locations/introduction-to-functional-locations.md
+                - name: Vytvoření funkčních míst
+                  href: asset-management/functional-locations/create-functional-locations.md
+                - name: Instalace majetku na funkčních místech
+                  href: asset-management/functional-locations/install-objects-on-functional-locations.md
+            - name: Nastavení majetku
+              items:
+                - name: Typy majetku
+                  href: asset-management/setup-for-objects/object-types.md
+                - name: Vyhodnocení stavu
+                  href: asset-management/setup-for-objects/condition-assessment.md
+                - name: Výrobce majetku a model
+                  href: asset-management/setup-for-objects/product-and-model.md
+                - name: Čítače
+                  href: asset-management/setup-for-objects/counters.md
+                - name: Parametry správy majetku
+                  href: asset-management/setup-for-objects/enterprise-asset-management-parameters.md
+                - name: Stavy životního cyklu majetku
+                  href: asset-management/setup-for-objects/object-stages.md
+                - name: Úrovně služeb majetku
+                  href: asset-management/setup-for-objects/object-priorities.md
+                - name: Kritičnost majetku
+                  href: asset-management/setup-for-objects/object-criticalities.md
+                - name: Dokumenty majetku
+                  href: asset-management/setup-for-objects/object-documents.md
+                - name: Pracovníci údržby a skupiny pracovníků
+                  href: asset-management/setup-for-objects/workers-and-worker-groups.md
+            - name: Majetek
+              items:
+                - name: Úvod do majetku
+                  href: asset-management/objects/introduction-to-objects.md
+                - name: Vytvoření majetku
+                  href: asset-management/objects/create-an-object.md
+                - name: Víceúrovňový majetek
+                  href: asset-management/objects/multi-level-objects.md
+                - name: 'Pohyb, nahrazení a instalace majetku'
+                  href: asset-management/objects/move-replace-and-install-objects.md
+                - name: Vytvoření majetku na základě nákupních objednávek
+                  href: asset-management/objects/create-objects-based-on-purchase-orders.md
+                - name: Kusovník majetku
+                  href: /asset-management/objects/object-bom.md
+                - name: Historie událostí majetku
+                  href: asset-management/objects/object-timeline.md
+                - name: Zobrazení majetku
+                  href: asset-management/objects/object-view.md
+                - name: Přehled atributů majetku
+                  href: asset-management/objects/object-specification-overview.md
+            - name: Nastavení požadavků na údržbu
+              items:
+                - name: Požadavky na údržbu
+                  href: asset-management/setup-for-maintenance-requests/requests.md
+                - name: Stavy životního cyklu požadavku na údržbu
+                  href: asset-management/setup-for-maintenance-requests/request-stages.md
+                - name: Typy požadavků na údržbu
+                  href: asset-management/setup-for-maintenance-requests/request-types.md
+                - name: Zodpovědní pracovníci údržby
+                  href: asset-management/setup-for-maintenance-requests/responsible-workers.md
+            - name: Správa požadavků na údržbu
+              items:
+                - name: Požadavky na údržbu
+                  href: asset-management/manage-maintenance-requests/maintenance-request-overview.md
+                - name: Vytvoření požadavku na údržbu
+                  href: asset-management/manage-maintenance-requests/create-a-maintenance-request.md
+                - name: Vytvoření pracovního příkazu z požadavku na údržbu
+                  href: asset-management/manage-maintenance-requests/create-work-order-from-a-maintenance-request.md
+                - name: Zapůjčený majetek
+                  href: asset-management/manage-maintenance-requests/asset-loan.md
+                - name: Příchozí a odchozí majetek
+                  href: asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
+                - name: Sestavy požadavků na údržbu
+                  href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
+            - name: Nastavení pracovních příkazů
+              items:
+                - name: 'Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby'
+                  href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+                - name: Stavy životního cyklu pracovního příkazu
+                  href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+                - name: Typy pracovních příkazů
+                  href: asset-management/setup-for-work-orders/work-order-types.md
+                - name: Nastavení projektu pracovního příkazu
+                  href: asset-management/setup-for-work-orders/work-order-project-setup.md
+                - name: Úroveň a popis služby
+                  href: asset-management/setup-for-work-orders/service-level-and-description.md
+                - name: Plánované provedení
+                  href: asset-management/setup-for-work-orders/scheduled-execution.md
+                - name: Správa chyb
+                  href: asset-management/setup-for-work-orders/fault-management.md
+            - name: Pracovní příkazy
+              items:
+                - name: Úvod do pracovních příkazů
+                  href: asset-management/work-orders/introduction-to-work-orders.md
+                - name: Ručně vytvořené pracovní příkazy
+                  href: asset-management/work-orders/manually-created-workorders.md
+                - name: Prognózy údržby
+                  href: asset-management/work-orders/maintenance-forecasts.md
+                - name: Zásobování
+                  href: asset-management/work-orders/procurement.md
+                - name: Ruční aktualizace čítačů majetku
+                  href: asset-management/work-orders/manual-update-of-asset-counters.md
+                - name: Automatická aktualizace čítačů majetku
+                  href: asset-management/work-orders/automatic-update-of-asset-counters.md
+                - name: Kontrolní seznamy údržby
+                  href: asset-management/work-orders/maintenance-checklists.md
+                - name: Prostoj údržby
+                  href: asset-management/work-orders/maintenance-downtime.md
+                - name: Přidání chyby do pracovního příkazu
+                  href: asset-management/work-orders/add-fault-to-work-order.md
+                - name: Zpráva pracovního příkazu
+                  href: asset-management/work-orders/work-order-report.md
+                - name: Skupiny pracovních příkazů
+                  href: asset-management/work-orders/work-order-pools.md
+                - name: Aktivní úlohy údržby pracovního příkazu
+                  href: asset-management/work-orders/active-work-order-jobs-overview.md
+                - name: Pracovní příkazy a dlouhodobý majetek
+                  href: asset-management/work-orders/work-orders-and-fixed-assets.md
+            - name: Integrace do řízení a účetnictví projektu
+              items:
+                - name: 'Prognózy, pracovní příkazy a projekty'
+                  href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: Preventivní a reaktivní údržba
+              items:
+                - name: Přehled preventivní údržby
+                  href: asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+                - name: Plány údržby
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+                - name: Plány rozvrhu údržby
+                  href: asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+                - name: Pořadí údržby
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+                - name: Rozvrh údržby
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+                - name: Náklady rozvrhu údržby
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+                - name: Vytvořit pracovní příkazy
+                  href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+                - name: Prostoj údržby
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+            - name: Plánování kapacity
+              items:
+                - name: Vypočítat vytížení kapacity
+                  href: asset-management/capacity-planning/calculate-capacity-load.md
+                - name: Vypočítat prognózu položky
+                  href: asset-management/capacity-planning/calculate-item-forecast.md
+            - name: Plánování pracovního příkazu
+              items:
+                - name: Kalendář a plánování pracovníka údržby
+                  href: asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+                - name: Preferovaní pracovníci údržby
+                  href: asset-management/work-order-scheduling/preferred-maintenance-workers.md
+                - name: Naplánovat pracovní příkazy
+                  href: asset-management/work-order-scheduling/schedule-work-orders.md
+                - name: Expedice pracovního příkazu
+                  href: asset-management/work-order-scheduling/dispatch-work-order.md
+                - name: Naplánování pracovního příkazu na konkrétní datum a čas
+                  href: asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+                - name: Naplánované práce údržby pracovního příkazu
+                  href: asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+                - name: Výpočet vytížení kapacity na plánovaných pracovních příkazech
+                  href: asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+            - name: Spotřeba
+              items:
+                - name: Registrace spotřeby
+                  href: asset-management/consumption/register-consumption.md
+                - name: Vytvoření sestav spotřeby
+                  href: asset-management/consumption/create-consumption-reports.md
+            - name: Záruka
+              items:
+                - name: Záruční smlouva
+                  href: asset-management/warranty/warranty-agreement.md
+                - name: Záruka na majetek a typy majetku
+                  href: asset-management/warranty/warranty-on-assets-and-asset-types.md
+            - name: Rozpočty údržby
+              items:
+                - name: Rozpočty údržby
+                  href: asset-management/maintenance-budgets/create-maintenance-budget.md
+                - name: Aktualizace rozpočtů údržby
+                  href: asset-management/maintenance-budgets/update-maintenance-budget.md
+            - name: "Kontrola a\_vykazování"
+              items:
+                - name: Kontrola data a nákladů
+                  href: asset-management/controlling-and-reporting/cost-and-date-control.md
+                - name: Kontrola pracovní doby
+                  href: asset-management/controlling-and-reporting/work-hour-control.md
+                - name: Řízení nákladů závad majetku
+                  href: asset-management/controlling-and-reporting/asset-fault-cost-control.md
+                - name: Analýza závady majetku
+                  href: asset-management/controlling-and-reporting/asset-fault-analysis.md
+                - name: Ukazatele KPI majetku
+                  href: asset-management/controlling-and-reporting/asset-kpis.md
+                - name: Kde byla položka použita
+                  href: asset-management/controlling-and-reporting/item-where-used.md
+                - name: Stav údržby
+                  href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Mobilní pracovní prostor správy majetku
+              href: asset-management/asset-management-mobile-workspace.md
+        - name: Správa dat
+          items:
+            - name: Entity cíle
+              href: asset-management/data-management/target-entities.md
+        - name: Nákladové účetnictví
+          items:
+            - name: Domovská stránka nákladového účetnictví
+              href: ../finance/cost-accounting/cost-accounting-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Terminologie týkající se účtování nákladů
+              href: ../finance/cost-accounting/terms-cost-accounting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 'Fiskální kalendáře, fiskální roky a období'
+              href: ../finance/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Finanční dimenze
+              href: ../finance/general-ledger/financial-dimensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Finanční dimenze a zaúčtování
+              href: ../finance/general-ledger/Default-dimensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Přidání finančních dimenzí k pracovnímu prostoru CFO
+              href: ../finance/general-ledger/CFO-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Vytvoření účetních struktur
+              href: ../finance/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Přehled rozpočtování
+              href: ../finance/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Vytvoření dimenzí a import členů dimenze
+              href: ../finance/cost-accounting/cost-dimension.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dimenze prvku nákladů
+              href: ../finance/cost-accounting/cost-elements.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Vytváření prvků nákladů
+              href: ../finance/cost-accounting/tasks/create-cost-elements.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dimenze objektu nákladů
+              href: ../finance/cost-accounting/cost-objects.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Vytváření objektů nákladů
+              href: ../finance/cost-accounting/tasks/create-cost-objects.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Mapování členů dimenze prvků nákladů na společnou sadu členů dimenze
+              href: ../finance/cost-accounting/map-cost-elements-dimension-members.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Namapování dimenze prvku nákladů
+              href: ../finance/cost-accounting/tasks/map-cost-element-dimension.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Hierarchie dimenzí
+              href: ../finance/cost-accounting/dimension-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Vytvoření organizační hierarchie vykazování
+              href: ../finance/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Přístupová práva kontrolora objektu nákladů
+              href: ../finance/cost-accounting/access-rights-cost-object-controller.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurace přístupových práv pro kontrolora objektu nákladů
+              href: ../finance/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Definování jednotek řízení nákladů
+              href: ../finance/cost-accounting/tasks/define-cost-control-units.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Vytvoření hlavní knihy nákladového účetnictví
+              href: ../finance/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/dynamics365/supply-chain/toc.json
+            - name: "Členy statistické dimenze a\_šablony poskytovatelů statistických měření"
+              href: ../finance/cost-accounting/statistical-measure-provider-template.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Základy přidělení
+              href: ../finance/cost-accounting/allocation-bases.md?toc=/dynamics365/supply-chain/toc.json
+            - name: "Vytvoření zásad přidělování nákladů a\_jejich přiřazení jednotce řízení nákladů"
+              href: ../finance/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: "Vytvoření zásad chování nákladů a\_jejich přiřazení jednotce řízení nákladů"
+              href: ../finance/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: "Vytvoření zásad distribuce nákladů a\_jejich přiřazení jednotce řízení nákladů"
+              href: ../finance/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Vytvoření zásad shrnutí nákladů
+              href: ../finance/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Správa zdroje dat pro hlavní knihu nákladového účetnictví
+              href: ../finance/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/dynamics365/supply-chain/toc.json
+            - name: "Zpracování a\_sledování zdrojových dat"
+              href: ../finance/cost-accounting/tasks/process-trace-source-data.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Výpočet režijních nákladů
+              href: ../finance/cost-accounting/overhead-calculation.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Zásady shrnutí nákladů a výpočet režijních nákladů
+              href: ../finance/cost-accounting/cost-rollup.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurace pracovního prostoru řízení nákladů
+              href: ../finance/cost-accounting/cost-control-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurace parametrů pracovního prostoru řízení nákladů
+              href: ../finance/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Pochopení zabezpečení přístupového seznamu a RLS v Microsoft Power BI
+              href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Použití balíčku obsahu pro výkaznictví v Microsoft Power BI
+              href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Použití pracovního prostoru řízení nákladů pro mobilní aplikaci Finance and Operations
+              href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Správa nákladů
+          items:
+            - name: Domovská stránka Správa nákladů
+              href: cost-management/cost-management-home-page.md
+            - name: Předpoklady pro standardní náklady
+              items:
+                - name: Přehled předpokladů pro standardní náklady
+                  href: cost-management/prerequisites-standard-costs.md
+                - name: Přehled převodu standardních nákladů
+                  href: cost-management/standard-cost-conversion-overview.md
+                - name: Předpoklad pro převod standardních nákladů
+                  href: cost-management/prerequisites-standard-cost-conversion.md
+                - name: Správa aktualizací standardních nákladů
+                  href: cost-management/manage-standard-cost-updates.md
+                - name: Omezení verzí výpočtu nákladů pro standardní náklady
+                  href: cost-management/restrictions-costing-versions-standard-costs.md
+                - name: Údaje použité ve výpočtech kusovníku se standardními náklady
+                  href: cost-management/information-used-bom-calculations-standard-costs.md
+                - name: Aktualizace standardních nákladů ve výrobním prostředí
+                  href: cost-management/update-standard-costs-manufacturing-environment.md
+                - name: Aktualizace standardních nákladů pro nově vyrobené položky
+                  href: cost-management/update-standard-costs-new-manufactured-item.md
+                - name: Aktualizace standardních nákladů v nevýrobním prostředí
+                  href: cost-management/update-standard-costs-non-manufacturing-environment.md
+                - name: Postup přípravy na správu standardních nákladů pro vyráběné položky
+                  href: cost-management/prepare-maintain-standard-costs-manufactured-items.md
+            - name: Nákladové verze
+              items:
+                - name: Přehled verzí výpočtu nákladů
+                  href: cost-management/costing-versions.md
+                - name: Nákladové formuláře
+                  href: cost-management/costing-sheets.md
+                - name: Simulace změn nákladů pomocí nákladové verze pro plánované náklady
+                  href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+            - name: Skladové účetnictví
+              items:
+                - name: Nákladové objekty
+                  href: cost-management/cost-object.md
+                - name: Zobrazení zůstatku objektu nákladů
+                  href: cost-management/tasks/view-cost-object-balance.md
+                - name: "Zobrazení výkazu zásob a\_ukazatele KPI podle objektů nákladů"
+                  href: cost-management/tasks/view-inventory-statement-kpi-cost-object.md
+                - name: Položky nákladů
+                  href: cost-management/cost-entries.md
+                - name: Zobrazení nákladových položek pro objekt nákladů
+                  href: cost-management/tasks/view-cost-entries-cost-object.md
+                - name: Nákladové skupiny
+                  href: cost-management/cost-groups.md
+                - name: Metoda FIFO s fyzickou hodnotou a označením
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: Zahrnovat fyzickou hodnotu
+                  href: cost-management/include-physical-value.md
+                - name: Hodnoty objektu zásob
+                  href: cost-management/physical-quantity.md
+                - name: Datum LIFO s fyzickou hodnotou a označením
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: Metoda LIFO s fyzickou hodnotou a označením
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Klouzavý průměr
+                  href: cost-management/moving-average.md
+                - name: Fyzické a finanční aktualizace
+                  href: cost-management/physical-financial-updates.md
+                - name: Průběžná průměrná nákladová cena
+                  href: cost-management/running-average-cost-price.md
+                - name: Sledování průběžných průměrných nákladů pro dimenzi zásob
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: Datum váženého průměru
+                  href: cost-management/weighted-average-date.md
+                - name: Vážený průměr s fyzickou hodnotou a označením
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Uzavřít zásoby
+                  href: cost-management/inventory-close.md
+                - name: Úprava nákladové ceny množství na skladě
+                  href: cost-management/adjust-hand-inventory-cost-values.md
+            - name: Účetnictví pro výrobu
+              items:
+                - name: Výpočty kusovníku
+                  href: cost-management/bom-calculations.md
+                - name: Skupiny výpočtů kusovníku
+                  href: cost-management/bom-calculation-groups.md
+                - name: Zpětné účtování nákladů
+                  href: cost-management/backflush-costing.md
+                - name: Běžné zdroje výrobních odchylek
+                  href: cost-management/common-sources-of-production-variances.md
+                - name: Nákladové kategorie použité ve výrobních postupech
+                  href: cost-management/cost-categories-used-production-routings.md
+                - name: 'Nákladové kategorie, které se používají v modulu Řízení výroby a Řízení a účetnictví projektů'
+                  href: cost-management/cost-categories-used-production-control-project-management-accounting.md
+                - name: Zobrazení nákladů na vyráběnou položku
+                  href: cost-management/charges-manufactured-item.md
+                - name: Analýza nákladů ve výrobní zakázce
+                  href: cost-management/production-order-cost-analysis.md
+                - name: Odhad nákladů výrobní zakázky
+                  href: /cost-management/production-order-cost-estimation.md
+                - name: "Zobrazení aktuálního stavu NV u\_výrobní zakázky"
+                  href: cost-management/tasks/view-current-wip-status-production-order.md
+                - name: "Porovnání aktivních, odhadovaných a\_realizovaných nákladů u\_výrobní zakázky"
+                  href: cost-management/tasks/compare-active-estimated-realized-costs.md
+                - name: Zaúčtování výroby
+                  href: cost-management/production-posting.md
+                - name: 'Nastavení produktů, které mohou být vyrobeny nebo pořízeny'
+                  href: cost-management/manufactured-items-treated-as-purchased-items.md
+                - name: Metoda přidělení celkových nákladů
+                  href: cost-management/methodology-total-cost-allocation.md
+                - name: Amortizace konstantních nákladů na vyráběnou položku
+                  href: cost-management/amortize-constant-costs-manufactured-item.md
+            - name: Balíček obsahu Power BI správy nákladů
+              href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Intelligence
+          items:
+            - name: Domovská stránka Intelligence
+              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Přístup k informacím a vykazování
+              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Obsah Power BI
+              items:
+                - name: Domovská stránka obsahu Power BI
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skutečnost a rozpočet
+                  href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zaměstnanecké výhody
+                  href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přehled hotovosti
+                  href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přehled CFO
+                  href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kompenzace
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kompenzace a zaměstnanecké výhody
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Analýza nákladového účetnictví
+                  items:
+                    - name: Obsah Power BI analýzy nákladového účetnictví
+                      href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Nastavení zabezpečení pro obsah Power BI analýzy nákladového účetnictví
+                      href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Správa nákladů
+                  href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: "Správa kreditu a\_inkasa"
+                  href: ../finance/accounts-receivable/credit-collections-power-bi.md
+                - name: Kompetence a rozvoj zaměstnance
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Rozvoj zaměstnanců
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Obsah správy výdajů v Power BI
+                  href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finanční výkonnost
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finanční přehledy
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Správa dlouhodobého majetku
+                  href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
+                - name: Výuka
+                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Školení organizace
+                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Manažer školení
+                  href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Výkonnost výroby
+                  href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Analýza nákupu a výdajů
+                  href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nábor
+                  href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Výkonnost maloobchodního kanálu '
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Výkon prodeje a ziskovosti
+                  href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Platby dodavatelů
+                  href: ../finance/accounts-payable/Vendor-payments-workspace.md
+                - name: Výkonnost skladu
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Metriky zaměstnanců
+                  href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Vykazování a tisk dokumentů
+              items:
+                - name: Přehled služby Document Reporting Services
+                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace služby SSRS pro místní nasazení
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tisk
+                  items:
+                    - name: Přehled tisku dokumentu
+                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Instalace agenta směrování dokumentu pro aktivaci síťového tisku
+                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Upgrade agenta směrování dokumentů
+                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+                    - name: Instalace zařízení síťové tiskárny v místních prostředích
+                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Generování dokumentů, publikování a tisk v nasazeních on-premises'
+                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Spuštění agenta směrování dokumentu jako služby Windows
+                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nápověda k zabránění vypršení časového limitu u dlouhodobých sestav
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dostupné sestavy služby Microsoft SQL Server Reporting Services
+                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytvoření řešení výkaznictví
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Instalace šablon návrhu sestavy
+                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přizpůsobení sestav App Suite pomocí rozšíření
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Rozšíření datových sad sestavy sady aplikací
+                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Rozšíření položek nabídky sestavy pro přesměrování navigace uživatele
+                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytvoření vlastních návrhů pro obchodní dokumenty
+                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Náhled PDF dokumentů s integrovaným prohlížečem
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Elektronické výkaznictví
+              items:
+                - name: Přehled elektronického výkaznictví
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace
+                  items:
+                    - name: Vytvoření konfigurací
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Příprava komponent pro řešení elektronického výkaznictví
+                      items:
+                        - name: Návrh datového modelu specifického pro doménu
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Příprava metadat specifických pro aplikaci
+                          items:
+                            - name: (Elektronické výkaznictví) Příprava metadat aplikace k použití v RCS
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                            - name: (RCS) Přístup k metadatům aplikace pomocí konfigurace elektronického výkaznictví
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                            - name: (RCS) Přístup k metadatům aplikace pomocí připojených aplikací
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Definování mapování modelů a výběr zdrojů dat
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Namapování datového modelu na vybrané zdroje dat
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Vytvoření konfigurace formátu
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Mapování komponent vytvořeného formátu na prvky datového modelu
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Testování připraveného řešení elektronického výkaznictví v cílové aplikaci
+                      items:
+                        - name: (Elektronické výkaznictví) Import konfigurací z RSC
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generování elektronických dokumentů pro platby za použití konfigurace formátu
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Upgrade formátu přijetím nové základní verze tohoto formátu
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Návrhář receptur v elektronickém výkaznictví
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Výběr definic datového modelu při vytváření formátů
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Generování sestavy přidáním obsahu v podobě neformátovaného dokumentu XML
+                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
+                - name: (Elektronické výkaznictví) Datové zdroje mezi společnostmi v elektronickém výkaznictví
+                  href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Návrh formátů elektronické výkaznictví pro generování odchozích elektronických dokumentů v různých formátech
+                  items:
+                    - name: (Elektronické výkaznictví) Návrh konfigurace pro generování sestav ve formátu OPENXML
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: (Elektronické výkaznictví) Návrh konfigurací pro generování sestav ve formátu Word
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Návrh konfigurací pro vyplnění šablon PDF
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Integrace obrázků a tvarů
+                  items:
+                    - name: (Elektronické výkaznictví) Integrace obrázků a tvarů v generovaných dokumentech
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Příklad integrace obrázků a tvarů
+                      items:
+                        - name: Návrh konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Kontrola konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generování sestav ve formátech Office s integrovanými obrázky
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Úprava formátů elektronického výkaznictví opětovným použitím šablon aplikace Excel
+                  href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Definování závislosti konfigurací elektronického výkaznictví na jiných komponentách
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Návrh řešení elektronického výkaznictví k používání finančních dimenzí
+                  items:
+                    - name: Návrh datových modelů k používání finančních dimenzí jako zdrojů dat
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Mapování modelů k používání finančních dimenzí jako zdrojů dat
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Návrh sestav k používání finančních dimenzí jako zdrojů dat
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Spuštění sestav, které používají finanční dimenze jako zdroje dat'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Návrh formátů elektronického výkaznictví pro provedení počítání a sčítání pomocí informací z generovaného výstupu
+                  items:
+                    - name: Vytvoření formátů pro provádění počítání a sčítání
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace formátu pro provádění počítání a sčítání
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Použití výpočtů pro generování výstupu počítání a sčítání
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Spuštění formátů pro provádění počítání a sčítání
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dynamické přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
+                  items:
+                    - name: Návrh formátů k dynamickému přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Spuštění formátů k dynamickému přidání sloupců do sestav v aplikaci Excel jako horizontálně rozšířitelných rozsahů
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Použití souborů pro správu dokumentů ve výstupech formátu
+                  items:
+                    - name: Příprava datových modelů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Rozšíření datových modelů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vytvoření formátů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Spuštění formátů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Úprava a spuštění formátů k použití souborů pro správu dokumentů ve výstupech elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aktualizace dat aplikace pomocí elektronického výkaznictví
+                  items:
+                    - name: Generování elektronických dokumentů a aktualizace dat aplikace
+                      href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Import konfigurací pro generování dokumentů s daty aplikace
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Návrh konfigurací pro generování dokumentů s daty aplikace
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Úprava modelů a mapování pro generování dokumentů s daty aplikace
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Úprava formátů pro generování dokumentů s daty aplikace
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Generování dokumentů s daty aplikace
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Import dat z příchozích souborů pomocí řešení elektronického výkaznictví
+                  items:
+                    - name: Analýza příchozích dokumentů v různých formátech
+                      href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace importu dat z ručně vybraných souborů
+                      items:
+                        - name: Vytvoření konfigurací pro import dat z externího XML souboru
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace importu dat v režimu dávky ze souborů umístěných na platformě SharePoint
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Import souborů v XML formátu
+                      items:
+                        - name: Import souborů v XML formátu s volitelnými atributy
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurace formátů elektronického výkaznictví pro import souborů ve formátu XML s volitelnými atributy
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                - name: Rozdělení generovaných XML souborů na základě velikosti souboru a množství obsahu
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Podpora parametrizovaných volání datových zdrojů elektronického výkaznictví typu vypočítaného pole
+                  href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Životní cyklus konfigurace
+                  items:
+                    - name: Správa životního cyklu konfigurace
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: "Odeslání konfigurací do\_Lifecycle Services"
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: "Import konfigurací z\_Lifecycle Services"
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: "Stažení konfigurací z\_Lifecycle Services"
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Import konfigurací
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Stažení konfigurací elektronického výkaznictví z úložiště RCS
+                      items:
+                        - name: Stažení konfigurací z úložiště elektronického výkaznictví pro typ RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Import konfigurací z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
+                  items:
+                    - name: Konfigurace architektury
+                      items:
+                        - name: Konfigurace architektury elektronického výkaznictví
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Záloha a obnovení šablon elektronického výkaznictví
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Místa určení
+                      items:
+                        - name: Přehled míst určení
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurace míst určení
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Automatické ověření generovaných sestav
+                      items:
+                        - name: Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a porovnání se základními hodnotami
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Automatizace testování s elektronickým výkaznictvím
+                          href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Automatizace obchodních procesů pomocí konfigurací elektronického výkaznictví
+                      items:
+                        - name: Konfigurace elektronického výkaznictví pro doplňování dat do Power BI
+                          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generování tisknutelných formulářů volných faktur
+                          href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Přehled správy obchodních dokumentů
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                - name: API rozhraní architektury elektronického výkaznictví
+                  items:
+                    - name: Rozšíření seznamu funkcí elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Změny rozhraní API architektury elektronického výkaznictví pro Application update 7.3
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Určení místa vlastního úložiště pro vygenerované dokumenty
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Integrovaná analytická řešení
+              items:
+                - name: "Power BI Embedded v\_pracovních prostorech"
+                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Integrace Power BI Embedded
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přizpůsobení integrovaných sestav v analytických pracovních prostorech
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Možnosti individuálního nastavení s PowerBI.com
+              items:
+                - name: Funkce a služby dostupné prostřednictvím integrace Power BI
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Připnutí sestav Power BI do pracovních prostorů
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Volba analytických pracovních prostorů z PowerBI.com
+                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nástroje pro vytváření a rozšíření řešení
+              items:
+                - name: 'Analýzy, měrné systémy agregace a modelování klíčového indikátoru výkonnosti'
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytváření analytických sestav pomocí Power BI Desktop
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Modelování agregovaných dat
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přidání finančních dimenzí k měrným systémům agregace
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přidání analýz do pracovního prostoru pomocí Power BI Embedded
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Pomoc se zabezpečením analytických pracovních prostorů a sestav pomocí Power BI Embedded
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nástroje správy pro uživatele Power user
+              items:
+                - name: Integrace Power BI s úložištěm entit
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Řešení problémů po údržbě úložiště entit
+                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+                - name: Konfigurace integrace Power BI pro pracovní prostory
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Použití vlastní databáze
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Řízení zásob
+          items:
+            - name: Přehled řízení zásob
+              href: inventory/inventory-home-page.md
+            - name: Doručení
+              items:
+                - name: Přehled doručení
+                  href: inventory/arrival-overview.md
+                - name: Nastavení profilu přehledu doručení zboží
+                  href: inventory/tasks/set-up-item-arrival-overview-profile.md
+            - name: Správa kvality
+              items:
+                - name: Přehled správy kvality
+                  href: inventory/enable-quality-management.md
+                - name: Procesy správy kvality
+                  href: inventory/quality-management-processes.md
+                - name: Řízení neshody
+                  href: inventory/enable-nonconformance-management.md
+                - name: Nastavení požadavků pro správu
+                  href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
+                - name: "Vytvoření a\_zpracování neshody"
+                  href: inventory/tasks/create-process-non-conformance.md
+                - name: Karanténní příkazy
+                  href: inventory/quarantine-orders.md
+                - name: Nastavení objednávek kvality
+                  href: inventory/tasks/set-up-quality-orders.md
+                - name: Kontrola kvality zboží
+                  href: inventory/tasks/inspect-quality-goods.md
+                - name: Blokování zásob
+                  href: inventory/inventory-blocking.md
+                - name: "Vytvoření a\_správa blokování zásob"
+                  href: inventory/tasks/create-maintain-inventory-blocking.md
+            - name: Skladové operace
+              items:
+                - name: Skladové deníky
+                  href: inventory/inventory-journals.md
+                - name: Skladová místa
+                  href: inventory/inventory-locations.md
+                - name: Stavy zásob
+                  href: inventory/inventory-statuses.md
+                - name: Vytvoření nového rozvržení skladu
+                  href: inventory/tasks/create-new-warehouse-layout.md
+                - name: Udržování typů čárových kódů
+                  href: inventory/tasks/maintain-barcode-types.md
+                - name: Kontrola dostupnosti zásob
+                  href: inventory/tasks/check-availability-stock.md
+                - name: Inicializace úrovní zásob ve skladu
+                  href: inventory/tasks/initialize-stock-levels-warehouse.md
+                - name: Převedení fyzických zásob ve skladu
+                  href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
+                - name: Úprava úrovně zásob ve skladu (základní správa skladu)
+                  href: inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md
+                - name: Počet označení zásob
+                  href: inventory/inventory-tag-counting.md
+                - name: Inventura zásob ve skladu
+                  href: inventory/tasks/count-inventory-warehouse.md
+                - name: Definování procesů inventur zásob
+                  href: inventory/tasks/define-inventory-counting-processes.md
+                - name: Nastavení zásilky
+                  href: inventory/consignment.md
+                - name: Změna vlastnictví zásob dodávky na základě výrobní poptávky
+                  href: inventory/tasks/change-ownership-consignment.md
+                - name: Vytvoření nové zakázky na doplnění stavu zásob dodávky
+                  href: inventory/tasks/create-consignment-replenishment-order.md
+                - name: "Sledování zásob dodávky s\_použitím dodavatelské spolupráce"
+                  href: inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md
+                - name: 'Sledování zboží a surovin ve skladu, při výrobě a prodeji'
+                  href: inventory/trace-items-raw-materials-inventory-production-sales.md
+                - name: Sledování položky nebo suroviny
+                  href: inventory/tasks/trace-item-or-raw-material.md
+                - name: Sloučení dávky skladových zásob
+                  href: inventory/merge-inventory-batches.md
+                - name: "Oprava informací o\_sledování zásob"
+                  href: inventory/tasks/correct-inventory-tracking-information.md
+                - name: Registrace sériového čísla v prodejním procesu
+                  href: sales-marketing/register-serial-numbers-sales-process.md
+                - name: Mobilní pracovní prostor zásob na skladě
+                  href: inventory/inventory-on-hand-mobile-workspace.md
+            - name: Odchozí proces
+              items:
+                - name: Přehled odchozího procesu
+                  href: inventory/outbound-process.md
+                - name: Rezervace skladových množství
+                  href: inventory/reserve-inventory-quantities.md
+                - name: Rezervace stejné dávky pro prodejní objednávku
+                  href: sales-marketing/reserve-same-batch-sales-order.md
+            - name: Řízení skladu
+              items:
+                - name: Uzavřít zásoby
+                  href: cost-management/inventory-close.md
+                - name: Průběžná průměrná nákladová cena
+                  href: cost-management/running-average-cost-price.md
+                - name: Úprava hodnoty nákladové ceny množství na skladě
+                  href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Sledování průběžných průměrných nákladů pro dimenzi zásob
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: Hlavní plánování
+          items:
+            - name: Domovská stránka Hlavní plánování
+              href: master-planning/master-planning-home-page.md
+            - name: Hlavní plány
+              items:
+                - name: Přehled hlavních plánů
+                  href: master-planning/master-plans.md
+                - name: Nastavení hlavních plánů
+                  href: master-planning/master-planning-setup.md
+                - name: Průvodce nastavením hlavního plánování
+                  href: master-planning/master-planning-setup-wizard.md
+                - name: Nastavení disponibility
+                  href: master-planning/coverage-settings.md
+                - name: Definování pravidel disponibility pro položky
+                  href: master-planning/tasks/define-coverage-rules-items.md
+                - name: "Vygenerování plánu s\_omezeními"
+                  href: master-planning/tasks/constrained-plan.md
+                - name: Vytvoření materiálového plánu pro vedlejší produkty
+                  href: master-planning/tasks/create-material-plan-co-products.md
+                - name: Spravovat plánované objednávky
+                  href: master-planning/maintain-planned-orders.md
+                - name: Splnění rezervních zásob položek
+                  href: master-planning/safety-stock-replenishment.md
+                - name: Zpoždění
+                  href: master-planning/delays.md
+                - name: Použití sledování pro rozpad
+                  href: master-planning/trace-explosion.md
+                - name: Zprávy akce
+                  href: master-planning/action-messages.md
+                - name: Sledování běhu hlavního plánování
+                  href: master-planning/tasks/monitor-master-planning-run.md
+                - name: Vytvoření rozvrhu pro pracoviště
+                  href: master-planning/tasks/create-schedule-site.md
+                - name: Vytvoření plánu pro pracoviště
+                  href: master-planning/tasks/create-plan-site.md
+                - name: Kalendáře a hlavní plánování
+                  href: master-planning/supply-chain-calendars-master-planning.md
+                - name: Vylepšení výkonu hlavního plánování
+                  href: master-planning/master-planning-performance.md
+                - name: Hlavní plány a funkce více pracovišť
+                  items:
+                    - name: Přehled hlavního plánování a funkce více pracovišť
+                      href: master-planning/master-plan-multisite-functionality.md
+                    - name: 'Hlavní plánování pro disponibilitu pracoviště, povinný sklad'
+                      href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+                    - name: 'Hlavní plánování pro disponibilitu pracoviště, sklad není povinný'
+                      href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+                    - name: 'Hlavní plánování pro disponibilitu pracoviště a skladu, sklad je povinný'
+                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+                    - name: 'Hlavní plánování pro disponibilitu pracoviště a skladu, sklad není povinný'
+                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+                    - name: Určení verze kusovníku
+                      href: master-planning/master-plan-bom-version-determined.md
+                    - name: Rozpad verze kusovníku
+                      href: master-planning/master-plan-explosion-bom-version.md
+                - name: Záporné dny a dynamické záporné dny
+                  href: master-planning/more-about-dynamic-negative-days.md
+                - name: Vytvoření mezipodnikového plánu
+                  href: master-planning/tasks/create-intercompany-plan.md
+                - name: Zobrazení výstupní plánované mezipodnikové poptávky
+                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: "Spolupráce s\_odběrateli interního dodavatelského řetězce"
+                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+            - name: Prognóza poptávky
+              items:
+                - name: Přehled prognózy poptávky
+                  href: master-planning/introduction-demand-forecasting.md
+                - name: Nastavení prognózy poptávky
+                  href: master-planning/demand-forecasting-setup.md
+                - name: Import historických dat pro prognózy poptávky
+                  href: master-planning/import-historical-data.md
+                - name: Generování statistické základní prognózy
+                  href: master-planning/generate-statistical-baseline-forecast.md
+                - name: Ruční úpravy základní prognózy
+                  href: master-planning/manual-adjustments-baseline-forecast.md
+                - name: Autorizace upravené prognózy
+                  href: master-planning/authorize-adjusted-forecast.md
+                - name: Monitorování přesnosti prognózy
+                  href: master-planning/monitor-forecast-accuracy.md
+                - name: Odebrání odlehlých hodnot z historických dat transakcí při výpočtu prognózy poptávky
+                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                - name: Redukční klíče
+                  href: master-planning/reduction-keys.md
+                - name: Vytvoření základní prognózy
+                  href: master-planning/tasks/create-baseline-forecast.md
+                - name: Ruční úprava prognózy poptávky
+                  href: master-planning/tasks/modify-demand-forecast-manually.md
+        - name: Aplikace pro mobilní zařízení
+          items:
+            - name: Domovská stránka mobilní aplikace
+              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Mobilní pracovní prostory
+              items:
+                - name: Dostupné mobilní pracovní prostory
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Správa majetku
+                  href: asset-management/asset-management-mobile-workspace.md
+                - name: Adresář společnosti
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Řízení nákladů
+                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Správa výdajů
+                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zásoby na skladě
+                  href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Schválení faktur
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Můj tým
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Přehled mobilních aplikací projektu
+                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Časový záznam projektu
+                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Project Timesheet
+                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Schválení nákupní objednávky
+                  href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Prodejní objednávky
+                  href: sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dodavatelská spolupráce
+                  href: procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Publikování mobilních pracovních prostorů
+              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Integrace s Office
+          items:
+            - name: Přehled integrace Office
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kurz integrace s Office
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Otevření dat entity v aplikaci Excel a jejich aktualizace pomocí doplňku aplikace Excel
+              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Vytvoření zkušeností s otevíráním v Excelu
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Přidání šablon do otevřených řádků v nabídce Excel
+              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Přizpůsobení nabídky Otevřít v Microsoft Office
+              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurace a odeslání e-mailu
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Rozšíření zkušeností s e-mailem
+              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Řešení problémů s integrací s Office
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Správa organizace
+          items:
+            - name: Domovská stránka Správa organizace
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Číselné řady
+              items:
+                - name: Přehled číselných řad
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nastavení číselných řad na jednotlivém základě
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nastavení číselných řad pomocí průvodce
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+            - name: "Organizace a\_organizační hierarchie"
+              items:
+                - name: "Přehled organizací a\_organizačních hierarchií"
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Plánování organizační hierarchie
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytvoření organizační hierarchie
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytvořit právnické osoby
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytvoření provozních jednotek
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Globální adresář
+              items:
+                - name: Přehled globálního adresáře
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Plán pro globální adresář a další adresáře
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace globálního adresáře
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Často kladené dotazy o adresáři
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace adresářů
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Systém workflow
+              items:
+                - name: Přehled systému workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Architektura systému workflowu
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Prvky workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Akce workflowu
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytvoření workflow
+                  items:
+                    - name: Přehled vytvoření workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace vlastností workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace ručních úkolů
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace automatizovaných úkolů
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace procesu schválení
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace kroků schválení
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace ručních rozhodnutí
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace podmíněných rozhodnutí
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace paralelních aktivit
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace paralelních větví
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurace workflow položky řádku
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace dávkových úloh zpracování zprávy workflowu jako kritických
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Delegování položek práce ve workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Zobrazení historie workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace systému pro odeslání e-mailů souvisejících s workflow uživatelům
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Typy workflow
+                  items:
+                    - name: Vytvoření typu workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Kontrolní seznam typu workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vytvoření kategorie workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vytvoření dotazu pro typ workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vytvoření nového typu workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vytvoření třídy dokumentu workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vytvoření třídy SubmitToWorkflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Přidružení třídy dokumentu workflow k typu workflow
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Sestava typů workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Workflow – Často kladené otázky
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Výstrahy
+              items:
+                - name: Přehled výstrah
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytváření pravidel výstrah
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dávkové zpracování výstrah
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Emailové oznámení výstrah klientovi
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Elektronické podpisy
+              items:
+                - name: Přehled elektronických podpisů
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nastavení elektronických podpisů
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Správa případů
+              items:
+                - name: Přehled správy případů
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Plánování bezpečnosti případu, procesů a kategorií'
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Šablony záznamu
+              items:
+                - name: Přehled šablon záznamu
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vytvoření šablony záznamů
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/supply-chain/toc.json
+                - name: "Vytvoření nového záznamu s\_použitím šablony záznamu"
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurace správy dokumentů
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurace a odeslání e-mailu
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Údaje data a času a časová pásma
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Zásobování a zdroje
+          items:
+            - name: Přehled zásobování a zdrojů
+              href: procurement/procurement-sourcing-overview.md
+            - name: Workflow zásobování a zdrojů
+              href: procurement/procurement-sourcing-workflows.md
+            - name: Zásobovací katalogy
+              items:
+                - name: Přehled zásobovacích katalogů
+                  href: procurement/procurement-catalogs.md
+                - name: Vytvoření zásobovacího katalogu
+                  href: procurement/tasks/create-procurement-catalog.md
+                - name: Nastavení hierarchie kategorií zásobování
+                  href: procurement/tasks/set-up-procurement-category-hierarchy.md
+            - name: Nákupní žádanky
+              items:
+                - name: Přehled nákupních žádanek
+                  href: procurement/purchase-requisitions-overview.md
+                - name: Workflow nákupní žádanky
+                  href: procurement/purchase-requisitions-workflow.md
+            - name: Požadavek na nabídky (RFQ)
+              items:
+                - name: Přehled požadavků na nabídky
+                  href: procurement/request-quotations.md
+                - name: Vytvoření požadavku na nabídku
+                  href: procurement/tasks/create-request-quotation.md
+                - name: Vytvoření žádanky používající požadavek na nabídku
+                  href: procurement/tasks/create-requisition-uses-rfq.md
+                - name: Vytvoření metody hodnocení pro požadavky na nabídku
+                  href: procurement/tasks/create-scoring-method-rfqs.md
+                - name: "Vytvoření typů oslovení a\_kritérií hodnocení pro požadavky na nabídku"
+                  href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+                - name: "Zadání a\_porovnání nabídek pro požadavek na nabídku a\_přidělení smlouvy"
+                  href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
+            - name: Nákupní objednávky
+              items:
+                - name: Přehled nákupních objednávek
+                  href: procurement/purchase-order-overview.md
+                - name: Schválení a potvrzení nákupních objednávek
+                  href: procurement/purchase-order-approval-confirmation.md
+                - name: Mobilní pracovní prostor schvalování nákupních objednávek
+                  href: procurement/purchase-order-mobile-workspace.md
+                - name: Zaznamenání příjmu zboží na nákupní objednávce
+                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+            - name: Vytvoření nákupní objednávky
+              items:
+                - name: Ruční vytvoření nákupních objednávek
+                  href: procurement/purchase-order-creation.md
+                - name: Vytvoření nákupní objednávky
+                  href: procurement/tasks/create-purchase-order.md
+                - name: "Vytvoření nákupní objednávky s\_plánem dodávek"
+                  href: procurement/tasks/create-purchase-order-delivery-schedule.md
+                - name: Vytvoření nákupní objednávky pro jednorázového dodavatele
+                  href: procurement/tasks/create-purchase-order-one-time-supplier.md
+                - name: Vytvoření dílčí nákupní objednávky při vytváření nákupní objednávky
+                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
+                - name: "Vytvoření dílčí nákupní objednávky z\_nákupní smlouvy"
+                  href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
+                - name: Vytvoření nákupní vratky
+                  href: procurement/tasks/create-purchase-return-order.md
+                - name: Vytvoření nákupní objednávky projektu
+                  href: procurement/tasks/create-project-purchase-order.md
+                - name: Vytvoření opakované nákupní objednávky
+                  href: procurement/tasks/create-repeat-purchase-order.md
+                - name: Vytvoření žádanky pro spotřebu
+                  href: procurement/tasks/create-requisition-consumption.md
+            - name: "Ceny, slevy a\_rabaty"
+              items:
+                - name: Nákupní smlouvy
+                  href: procurement/purchase-agreements.md
+                - name: Vytvoření nákupní smlouvy
+                  href: procurement/tasks/create-purchase-agreement.md
+                - name: Rabaty dodavatele
+                  href: procurement/vendor-rebates.md
+            - name: Zásady nákupu
+              items:
+                - name: Přehled zásad nákupu
+                  href: procurement/purchase-policies.md
+                - name: Vytvoření zásad nákupu
+                  href: procurement/tasks/create-purchasing-policies.md
+                - name: Nastavení zásad pro hierarchie kategorií zásobování
+                  href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Příjemky a fakturace produktů
+              items:
+                - name: Příjemka produktu proti nákupním objednávkám
+                  href: procurement/product-receipt-against-purchase-orders.md
+                - name: Přehled faktur dodavatele
+                  href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Správa a spolupráce dodavatelů
+              items:
+                - name: Nastavení a správa dodavatelské spolupráce
+                  href: procurement/set-up-maintain-vendor-collaboration.md
+                - name: Správa uživatelů dodavatelské spolupráce
+                  href: procurement/manage-vendor-collaboration-users.md
+                - name: Nastavení účtů dodavatele
+                  href: procurement/set-up-vendor-accounts.md
+                - name: Vytvoření účtu dodavatele
+                  href: procurement/tasks/create-vendor-account.md
+                - name: Vytvoření bankovního účtu dodavatele
+                  href: procurement/tasks/create-vendor-bank-account.md
+                - name: Účetní profil dodavatele
+                  href: ../finance/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurace oslovení dodavatele
+                  href: procurement/vendor-request-configurations.md
+                - name: Zaškolení dodavatele
+                  href: procurement/vendor-onboarding.md
+                - name: Dodavatelská spolupráce s externími dodavateli
+                  href: procurement/vendor-collaboration-work-external-vendors.md
+                - name: Dodavatelská spolupráce se zákazníky
+                  href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+                - name: Import katalogů dodavatele
+                  href: procurement/vendor-catalogs-import.md
+                - name: Nastavení externího katalogu pro funkci PunchOut eProcurement
+                  href: procurement/set-up-external-catalog-for-punchout.md
+                - name: Použití externích katalogů pro funkci PunchOut eProcurement
+                  href: procurement/use-external-catalogs-for-punchout.md
+                - name: Mobilní pracovní prostor dodavatelské spolupráce
+                  href: procurement/vendor-collaboration-mobile-workspace.md
+                - name: Schválení dodavatelů pro konkrétní kategorie zásobování
+                  href: procurement/tasks/approve-vendors-specific-procurement-categories.md
+                - name: Schválení dodavatelů pro konkrétní produkty
+                  href: procurement/tasks/approve-vendors-specific-products.md
+                - name: Vyhledání dodavatelů
+                  href: procurement/tasks/search-vendors.md
+                - name: Nastavení oprávnění pro objednávání produktů jménem jiného uživatele
+                  href: procurement/tasks/set-up-permissions-ordering-products.md
+            - name: "Úkoly zásobování a\_zdrojů"
+              items:
+                - name: "Nastavení informací o\_prostředku projektu"
+                  href: procurement/tasks/set-up-project-resource-information.md
+                - name: "Odesílání a\_schvalování rozpočtů projektů"
+                  href: procurement/tasks/submit-approve-project-budget.md
+                - name: "Odesílání a\_schvalování revizí projektových rozpočtů"
+                  href: procurement/tasks/submit-approve-project-budget-revision.md
+        - name: Řízení informací o produktech
+          items:
+            - name: Přehled informací o produktech
+              href: pim/product-information.md
+            - name: Informace o produktu
+              items:
+                - name: Identifikátory produktu
+                  href: pim/product-identifiers.md
+                - name: Vytvoření hierarchie klasifikace produktu
+                  href: pim/tasks/create-hierarchy-product-classification.md
+                - name: "Klasifikace produktu s\_použitím hierarchií kategorií"
+                  href: pim/tasks/classify-product-category-hierarchies.md
+                - name: Názvosloví čísla produktu
+                  href: pim/product-variant-identification-nomenclature.md
+                - name: Vytvoření názvosloví čísel produktů pro předdefinované varianty produktu
+                  href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
+                - name: Vytvoření názvosloví čísel produktů pro nakonfigurované varianty produktu
+                  href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
+                - name: Vytvoření nového produktu
+                  href: pim/tasks/create-new-product.md
+                - name: Vytvoření základního produktu
+                  href: pim/tasks/create-product-master.md
+                - name: Vytváření předdefinovaných variant produktů
+                  href: pim/tasks/create-predefined-product-variants.md
+                - name: Převod měrné jednotky pro variantu produktu
+                  href: pim/uom-conversion-per-product-variant.md
+                - name: Vytvoření uvolněného produktu pro jednu společnost
+                  href: pim/tasks/create-released-product-single-company.md
+                - name: Stav životního cyklu produktu
+                  items:
+                    - name: Přehled životního cyklu produktu
+                      href: pim/product-lifecycle.md
+                    - name: Vytvoření nového stavu životního cyklu produktu
+                      href: pim/tasks/new-product-lifecycle-state.md
+                    - name: Vytvoření výchozího stavu životního cyklu produktu
+                      href: pim/tasks/default-product-lifecycle-state.md
+                    - name: Přiřazení stavu životního cyklu produktu k uvolněnému hlavnímu produktu
+                      href: pim/tasks/product-lifecycle-state-released-product-master.md
+                    - name: Přiřazení stavu životního cyklu produktu k uvolněnému produktu
+                      href: pim/tasks/product-lifecycle-state-released-product.md
+                    - name: Nalezení zastaralých variant produktů
+                      href: pim/tasks/obsolete-product-variants.md
+                    - name: Vyjmutí produktů z hlavního plánu
+                      href: pim/tasks/exclude-products-master-planning.md
+                - name: Vytvoření čárového kódu pro produkt
+                  href: pim/tasks/create-bar-code-product.md
+                - name: Zadání kódu GTIN pro produkt
+                  href: pim/tasks/enter-gtin-code-product.md
+                - name: Vytvoření atributů dávky pro produkt
+                  href: pim/tasks/create-batch-attributes-product.md
+                - name: "Přidání obrázku k\_produktu"
+                  href: pim/tasks/add-image-product.md
+                - name: Nejčastější otázky o překladech produktových informací
+                  href: pim/translations-product-related-information.md
+                - name: Vyhledávání produktu během zadání objednávky
+                  href: pim/search-products-product-variants.md
+                - name: Výchozí nastavení objednávky pro dimenze a varianty produktu
+                  href: production-control/default-order-settings.md
+                - name: "Kusovníky a\_receptury"
+                  href: production-control/bill-of-material-bom.md
+                - name: Použití návrháře kusovníků
+                  href: production-control/bom-designer-functionality.md
+                - name: Použití návrháře receptur
+                  href: production-control/formula-designer.md
+                - name: "Přidávání variant produktů do nákupních objednávek s\_použitím různých hmotností"
+                  href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
+                - name: Vytvoření prodejní objednávky pro konfigurovatelný produkt
+                  href: pim/tasks/create-sales-order-configurable-product.md
+                - name: Vytvoření kritérií pro výběr prodejní ceny
+                  href: pim/tasks/create-sales-price-selection-criteria.md
+                - name: Nastavení ocenění podle atributů pro konfigurovatelné produkty
+                  href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
+                - name: Výpočty kusovníku
+                  href: cost-management/bom-calculations.md
+            - name: Konfigurace produktu
+              items:
+                - name: Přehled konfigurace produktu
+                  href: pim/build-product-configuration-model.md
+                - name: Vytváření konfigurace založené na dimenzích
+                  items:
+                    - name: Přehled konfigurace produktu založeného na dimenzích
+                      href: pim/dimension-based-product-configuration.md
+                    - name: Dimenze produktu
+                      href: pim/product-dimensions.md
+                    - name: Vytvoření základního produktu založeného na dimenzích
+                      href: pim/tasks/create-dimension-based-product-master.md
+                    - name: Uvolnění základního produktu založeného na dimenzích
+                      href: pim/tasks/release-dimension-based-product-master.md
+                    - name: Základní nastavení uvolněného základního produktu
+                      href: pim/tasks/complete-basic-setup-released-product-master.md
+                    - name: Definování konfiguračních skupin
+                      href: pim/tasks/define-configuration-groups.md
+                    - name: Vytvoření kusovníku pro základní produkt založený na dimenzích
+                      href: pim/tasks/create-bill-materials-dimension-based-product-master.md
+                    - name: Definování konfiguračních postupů
+                      href: pim/tasks/define-configuration-route.md
+                    - name: Vytváření konfiguračních pravidel
+                      href: pim/tasks/create-configuration-rules.md
+                    - name: Vytváření konfigurací založených na dimenzích
+                      href: pim/tasks/create-dimension-based-configurations.md
+                - name: Vytvoření konfigurace založené na omezeních
+                  items:
+                    - name: Nastavení modelu konfigurace produktu
+                      href: pim/set-up-maintain-product-configuration-model.md
+                    - name: Nejčastější dotazy týkající se výpočtu pro model konfigurace produktu
+                      href: pim/calculate-product-configuration-models.md
+                    - name: Konfigurační pravidlo
+                      href: pim/configuration-rules.md
+                    - name: Omezení výrazu a omezení tabulky
+                      href: pim/expression-constraints-table-constraints-product-configuration-models.md
+                    - name: Strategie řešitele pro konfiguraci produktů
+                      href: pim/solver-strategy-product-configuration.md
+                    - name: Opětovné použití konfigurace produktu
+                      href: pim/reuse-product-configurations.md
+                    - name: Omezení systémem definované a uživatelem definované tabulky
+                      href: pim/system-defined-user-defined-table-constraints.md
+                    - name: Vytváření komponent modelu produktu
+                      href: pim/tasks/create-product-model-components.md
+                    - name: Vytvoření modelu konfigurace produktu
+                      href: pim/tasks/create-product-configuration-model.md
+                    - name: Přidání omezení výrazu do modelu konfigurace produktu
+                      href: pim/tasks/add-expression-constraint-product-configuration-model.md
+                    - name: Přidání výpočtu do modelu konfigurace produktu
+                      href: pim/tasks/add-calculation-product-configuration-model.md
+                    - name: Udržování kusovníku pro model konfigurace produktu
+                      href: pim/tasks/maintain-bom-product-configuration-model.md
+                    - name: Udržování postupu pro model produktu
+                      href: pim/tasks/maintain-route-product-model.md
+                    - name: Schválení modelu konfigurace produktu
+                      href: pim/tasks/approve-product-configuration-model.md
+                    - name: Převedení dat pro modely produktu
+                      href: pim/tasks/transfer-data-product-models.md
+        - name: Řízení výroby
+          items:
+            - name: Přehled výrobního procesu
+              href: production-control/production-process-overview.md
+            - name: 'Plánování kombinovaného režimu: kombinování diskrétního, procesního a štíhlého zajištění zdrojů'
+              href: production-control/mixed-mode-plan.md
+            - name: Správa subdodavatelské práce ve výrobě
+              href: production-control/manage-subcontract-work-production.md
+            - name: Diskrétní výroba
+              items:
+                - name: Správa hlavních dat výroby
+                  items:
+                    - name: Požadavky na nastavení výroby
+                      href: production-control/production-set-up-requirements.md
+                    - name: "Kusovníky a\_receptury"
+                      href: production-control/bill-of-material-bom.md
+                    - name: Funkce návrháře kusovníku
+                      href: production-control/bom-designer-functionality.md
+                    - name: Fiktivní položky
+                      href: production-control/phantom-items.md
+                    - name: Výpočty kusovníku
+                      href: cost-management/bom-calculations.md
+                    - name: Správa měrných jednotek
+                      href: pim/tasks/manage-unit-measure.md
+                    - name: Parametry výroby v modulu Provádění výroby
+                      href: production-control/production-parameters-manufacturing-execution.md
+                    - name: Prostředky aplikace Operations
+                      href: production-control/operations-resources.md
+                    - name: Vytvoření provozního prostředku
+                      href: production-control/tasks/create-operations-resource.md
+                    - name: Schopnosti prostředku
+                      href: production-control/resource-capabilities.md
+                    - name: Definování schopností prostředku
+                      href: production-control/tasks/define-resource-capabilities.md
+                    - name: Postupy a operace
+                      href: production-control/routes-operations.md
+                    - name: Zásady práce ve skladu
+                      href: warehousing/warehouse-work-policies.md
+                    - name: Vytváření vlastností plánování pracovní doby
+                      href: production-control/tasks/create-working-time-scheduling-properties.md
+                    - name: Vytváření šablon pracovní doby
+                      href: production-control/tasks/create-working-time-templates.md
+                    - name: Definování skupin prostředků diskrétní výroby
+                      href: production-control/tasks/define-discrete-manufacturing-resource-group.md
+                    - name: "Přidání existující aktivity k\_verzi výrobního toku"
+                      href: production-control/tasks/add-existing-activity-production-flow-version.md
+                    - name: Deaktivace verze výrobního toku
+                      href: production-control/tasks/deactivate-production-flow-version.md
+                    - name: Definování data vypršení platnosti verze výrobního toku
+                      href: production-control/tasks/define-expiry-date-production-flow-version.md
+                    - name: Definování modelů výrobních toků
+                      href: production-control/tasks/define-production-flow-models.md
+                - name: Plánování výrobních operací
+                  items:
+                    - name: Plánování operací
+                      href: production-control/operations-scheduling.md
+                    - name: Plánování úlohy
+                      href: production-control/job-scheduling.md
+                    - name: Ganttův diagram pro plánování úloh
+                      href: production-control/visual-scheduling-production.md
+                    - name: Možnosti plánování v aplikaci Operations
+                      href: production-control/operation-scheduling-options.md
+                    - name: "Naplánování výrobní zakázky s\_naplánováním operací a\_úloh"
+                      href: production-control/tasks/schedule-production-order-operations-job-scheduling.md
+                - name: Provozování výrobních úloh
+                  items:
+                    - name: Správa životního cyklu výrobní zakázky
+                      items:
+                        - name: Přehled životního cyklu výrobní zakázky
+                          href: production-control/create-production-orders.md
+                        - name: Vytvoření výrobní zakázky
+                          href: production-control/tasks/create-production-order.md
+                        - name: Odhad výrobní zakázky
+                          href: production-control/tasks/estimate-production-order.md
+                        - name: Naplánování výrobní zakázky
+                          href: production-control/tasks/schedule-production-order.md
+                        - name: Uvolnění výrobní zakázky
+                          href: production-control/tasks/release-production-order.md
+                        - name: Spuštění výrobní zakázky
+                          href: production-control/tasks/start-production-order.md
+                        - name: Ohlášení výrobní zakázky jako dokončené
+                          href: production-control/tasks/report-production-order-finished.md
+                        - name: Ukončení výrobní zakázky
+                          href: production-control/tasks/end-production-order.md
+                    - name: Uvolnění výrobních zakázek
+                      href: production-control/release-production-orders.md
+                    - name: Vykázání výrobních zakázek jako dokončených
+                      href: production-control/report-production-orders-as-finished.md
+                    - name: Ohlášení jako dokončené do skladového místa řízeného registrační značkou
+                      href: production-control/report-finished-job-device.md
+                    - name: Vrácení stavu výrobní zakázky
+                      href: production-control/reverse-production-order-status.md
+                    - name: Viditelnost výjimek materiálu
+                      href: production-control/improved-visibility-into-material-exceptions.md
+                    - name: Uvolnění kusovníku a řádků receptury do skladu
+                      href: production-control/releasing-bom-and-formula-lines-to-warehouse.md
+                    - name: Registrace spotřeby materiálu pomocí mobilního zařízení
+                      href: production-control/register-material-consumption-hand-held-device.md
+                    - name: Kontrola spotřeby surovin pomocí principů vyprazdňování
+                      href: production-control/flushing-principles.md
+                    - name: Cross docking z výrobních příkazů na výstupní překladiště
+                      href: production-control/cross-docking-opportunities.md
+                    - name: Nastavení výstupního místa výroby pro dokončené zboží
+                      href: production-control/production-output-location.md
+                    - name: Vykázání kusovníku jako dokončeného
+                      href: production-control/report-boms-as-finished.md
+                    - name: Ohlášení jako dokončené pro skladové místo bez řízení na základě registračních značek
+                      href: production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md
+                    - name: Hlášení průběhu na mobilním pracovním zařízení
+                      href: production-control/tasks/report-progress-mobile-job-device.md
+                    - name: Použití deníku pojistných zásob pro aktualizaci minimální disponibility
+                      href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
+                    - name: Nahrazení materiálů ve výrobě
+                      href: production-control/substitute-items-bom-lines.md
+                    - name: Registrace pro realizaci výroby
+                      href: production-control/registration-manufacturing-execution.md
+                    - name: Zpětná vazba z výroby
+                      href: production-control/production-feedback.md
+                    - name: "Povolení procesu mezd pro čas a\_docházku"
+                      href: production-control/tasks/payroll-process-time-attendance.md
+                    - name: "Konfigurace pracovníka s\_použitím mobilního pracovního zařízení"
+                      href: production-control/tasks/worker-mobile-job-device.md
+                - name: Správa financí ve výrobě
+                  items:
+                    - name: Přidělení času úlohám v sadě úloh
+                      href: production-control/allocate-time-jobs-job-bundle.md
+                    - name: Výpočet spotřeby materiálu
+                      href: production-control/consumption.md
+                    - name: Zaúčtování výroby
+                      href: cost-management/production-posting.md
+                - name: Registrace času a docházky
+                  items:
+                    - name: Přehled registrace času a docházky
+                      href: production-control/time-attendance-registrations.md
+                    - name: Plat na základě registrace
+                      href: production-control/pay-based-on-registrations.md
+                    - name: Registrace absence v modulu Čas a docházka
+                      href: production-control/absence-registration-in-time-and-attendance.md
+                    - name: Pružné skupiny
+                      href: production-control/time-attendance-flex-groups.md
+            - name: Lean manufacturing
+              items:
+                - name: Lean manufacturing – přehled
+                  href: production-control/lean-manufacturing-overview.md
+                - name: Subdodávky založené na aktivitě
+                  href: production-control/activity-based-subcontracting.md
+                - name: Správa hlavních dat výroby
+                  items:
+                    - name: Modelování organizace úsporné výroby
+                      href: production-control/lean-manufacturing-modeling-lean-organization.md
+                    - name: Prostředky aplikace Operations
+                      href: production-control/operations-resources.md
+                    - name: Definování pracovních buněk pro lean manufacturing
+                      href: production-control/tasks/define-lean-manufacturing-work-cells.md
+                    - name: Definování skupin štíhlého plánu
+                      href: production-control/tasks/define-lean-schedule-groups.md
+                - name: Plánování kanbanových úloh
+                  items:
+                    - name: Vizuální plánování pro lean manufacturing
+                      href: production-control/visual-scheduling-lean-manufacturing.md
+                    - name: Plánování kanbanové úlohy pro lean manufacturing
+                      href: production-control/lean-manufacturing-kanban-job-scheduling.md
+                    - name: Plánování úlohy
+                      href: production-control/job-scheduling.md
+                - name: Provoz kanbanových úloh
+                  items:
+                    - name: Podpora desky převodů kanbanu pro čtečky čárového kódu
+                      href: production-control/kanban-transfer-board-support-barcode-scanner.md
+                    - name: Zpětná vazba z výroby
+                      href: production-control/production-feedback.md
+                    - name: Vytvoření verze výrobního toku
+                      href: production-control/tasks/create-production-flow-version.md
+                    - name: Vytváření aktivit procesu pro lean manufacturing
+                      href: production-control/tasks/create-process-activities-lean-manufacturing.md
+                    - name: Vytváření aktivit převodu pro lean manufacturing
+                      href: production-control/tasks/create-transfer-activities-lean-manufacturing.md
+                    - name: "Ověření výrobního toku a\_verze"
+                      href: production-control/tasks/validate-production-flow-version.md
+                    - name: Aktivace verze výrobního toku
+                      href: production-control/tasks/activate-production-flow-version.md
+                    - name: 'Vytvoření relace aktivity: následník'
+                      href: production-control/tasks/create-activity-relation-successor.md
+                    - name: "Přidání předchůdce k\_aktivitě výrobního toku"
+                      href: production-control/tasks/add-predecessor-production-flow-activity.md
+                    - name: Vytvoření hodnotového proudu
+                      href: production-control/tasks/create-value-stream.md
+                    - name: "Doložení z\_prodejních objednávek štíhlé výroby"
+                      href: production-control/tasks/lean-pegging-sales-orders.md
+                    - name: Vytvoření subdodavatelské pracovní buňky pro lean manufacturing
+                      href: production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md
+                    - name: Přidání zásad výpočtu kanbanového množství ke kanbanovému pravidlu
+                      href: production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md
+                    - name: Výpočet návrhů kanbanového množství
+                      href: production-control/tasks/calculate-kanban-quantity-suggestions.md
+                    - name: Změna kanbanových pravidel pro úlohu procesu
+                      href: production-control/tasks/change-kanban-rules-process-job.md
+                    - name: Vytvoření kanbanového pravidla události řádku kusovníku
+                      href: production-control/tasks/create-bom-line-event-kanban-rule.md
+                    - name: Vytvoření kanbanového pravidla pro pevné množství pro výrobu
+                      href: production-control/tasks/create-fixed-quantity-kanban-rule-manufacturing.md
+                    - name: "Vytvoření kanbanového pravidla s\_použitím události řádku kanbanu"
+                      href: production-control/tasks/create-kanban-rule-kanban-line-event.md
+                    - name: "Vytvoření kanbanového pravidla s\_použitím události pro minimální úroveň zásob"
+                      href: production-control/tasks/create-kanban-rule-minimum-stock-event.md
+                    - name: Vytvoření kanbanového pravidla pro více aktivit
+                      href: production-control/tasks/create-kanban-rule-multiple-activities.md
+                    - name: Vytvoření nového kanbanového pravidla duplikováním existujícího kanbanového pravidla
+                      href: production-control/tasks/create-new-kanban-rule-duplicating-existing-kanban-rule.md
+                    - name: Vytvoření nahrazujícího kanbanového pravidla
+                      href: production-control/tasks/create-replacement-kanban-rule.md
+                    - name: Vytvoření kanbanového pravidla události prodeje
+                      href: production-control/tasks/create-sales-event-kanban-rule.md
+                    - name: Vytvoření nového kanbanového pravidla odběru
+                      href: production-control/tasks/create-withdrawal-kanban-rule.md
+                    - name: Provádění úloh kanbanových procesů
+                      href: production-control/tasks/execute-kanban-process-jobs.md
+                    - name: Přesunutí naplánovaných kanbanových úloh
+                      href: production-control/tasks/move-scheduled-kanban-jobs.md
+                    - name: "Příprava kanbanové úlohy procesu, když pro pracovní buňku jsou k\_dispozici materiály"
+                      href: production-control/tasks/prepare-kanban-job-materials.md
+                    - name: "Příprava kanbanové úlohy procesu, když pro pracovní buňku nejsou k\_dispozici materiály"
+                      href: production-control/tasks/prepare-process-kanban-job-materials-not-available.md
+                    - name: "Odebrání kanbanové úlohy z\_plánu"
+                      href: production-control/tasks/remove-kanban-job-schedule.md
+                    - name: Vrácení stavu kanbanové úlohy
+                      href: production-control/tasks/revert-kanban-job-status.md
+                    - name: Plánování kanbanových úloh
+                      href: production-control/tasks/schedule-kanban-jobs.md
+                    - name: Převedení materiálu s kanbanovými úlohami
+                      href: production-control/tasks/transfer-materials-kanban-jobs.md
+                    - name: Aktualizace stavu kanbanu
+                      href: production-control/tasks/update-kanban-status.md
+            - name: Zpracování výroby
+              items:
+                - name: Správa hlavních dat výroby
+                  items:
+                    - name: "Kusovníky a\_receptury"
+                      href: production-control/bill-of-material-bom.md
+                    - name: "Receptury a\_verze receptury"
+                      href: production-control/formulas-versions.md
+                    - name: Prostředky aplikace Operations
+                      href: production-control/operations-resources.md
+                    - name: Schopnosti prostředku
+                      href: production-control/resource-capabilities.md
+                    - name: Atributy dávky
+                      href: production-control/batch-attributes.md
+                    - name: Vyvážení dávky
+                      href: production-control/batch-balancing.md
+                    - name: Zpracování produktu se skutečnou hmotností
+                      href: warehousing/catch-weight-processing.md
+                    - name: Zkopírování receptury
+                      href: production-control/tasks/copy-formula.md
+                    - name: "Zkopírování vedlejších produktů z\_existující verze receptury"
+                      href: production-control/tasks/copy-co-products-existing-formula-version.md
+                    - name: "Vytvoření receptury kopírováním z\_existující receptury"
+                      href: production-control/tasks/create-formula-copying-existing-formula.md
+                    - name: Parametry výroby v modulu Provádění výroby
+                      href: production-control/production-parameters-manufacturing-execution.md
+                    - name: Požadavky na nastavení výroby
+                      href: production-control/production-set-up-requirements.md
+                - name: Plánování výrobních operací
+                  items:
+                    - name: Plánování operací
+                      href: production-control/operations-scheduling.md
+                    - name: Možnosti plánování v aplikaci Operations
+                      href: production-control/operation-scheduling-options.md
+                    - name: Plánování úlohy
+                      href: production-control/job-scheduling.md
+                - name: Provozování výrobních úloh
+                  items:
+                    - name: Konsolidované dávkové objednávky
+                      href: production-control/consolidated-batch-orders.md
+                    - name: Životní cyklus dávkové objednávky od vytvoření po spuštění
+                      href: production-control/tasks/batch-order-lifecycle-start.md
+                    - name: Seřazení výrobních úloh pro procesní výrobu
+                      href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
+                    - name: Nahrazení materiálů ve výrobě
+                      href: production-control/substitute-items-bom-lines.md
+                    - name: Registrace pro realizaci výroby
+                      href: production-control/registration-manufacturing-execution.md
+                    - name: Zpětná vazba z výroby
+                      href: production-control/production-feedback.md
+                    - name: Registrace času a docházky
+                      href: production-control/time-attendance-registrations.md
+                - name: Správa financí ve výrobě
+                  items:
+                    - name: Přidělení času úlohám v sadě úloh
+                      href: production-control/allocate-time-jobs-job-bundle.md
+                    - name: Výpočet spotřeby materiálu
+                      href: production-control/consumption.md
+                    - name: Zaúčtování výroby
+                      href: cost-management/production-posting.md
+        - name: Prodej a marketing
+          items:
+            - name: Přehled prodeje a marketingu
+              href: sales-marketing/overview-sales-marketing.md
+            - name: Prodejní objednávky
+              items:
+                - name: Příslib objednávky
+                  href: sales-marketing/delivery-dates-available-promise-calculations.md
+                - name: Konečné termíny zadání objednávek
+                  href: sales-marketing/order-entry-deadlines.md
+                - name: Alternativní dodání
+                  href: sales-marketing/delivery-alternatives.md
+                - name: Přímé dodávky
+                  href: sales-marketing/direct-deliveries.md
+                - name: Plány dodávek
+                  href: sales-marketing/delivery-schedules.md
+                - name: Vytvoření plánu dodávek
+                  href: sales-marketing/tasks/create-delivery-schedule.md
+                - name: Sériová čísla v prodejním procesu
+                  href: sales-marketing/register-serial-numbers-sales-process.md
+                - name: Rezervace ze stejné dávky
+                  href: sales-marketing/reserve-same-batch-sales-order.md
+                - name: Mobilní pracovní prostor prodejních objednávek
+                  href: sales-marketing/sales-orders-mobile-workspace.md
+                - name: Expedování objednávek jako přímých dodávek
+                  href: sales-marketing/tasks/ship-orders-direct-deliveries.md
+                - name: Expedování prodejních objednávek bez skladování
+                  href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: Vytvoření nákupní objednávky z prodejní objednávky
+                  href: sales-marketing/tasks/create-purchase-order-sales-order.md
+                - name: Vytvářet prodejní objednávky
+                  href: sales-marketing/tasks/create-sales-orders.md
+                - name: Správa blokování objednávek
+                  href: sales-marketing/tasks/manage-order-holds.md
+                - name: Potvrzení prodejních objednávek
+                  href: sales-marketing/tasks/confirm-sales-orders.md
+            - name: Prodejní smlouvy
+              items:
+                - name: Přehled prodejních smluv
+                  href: sales-marketing/sales-agreements.md
+                - name: Zadávání prodejních smluv
+                  href: sales-marketing/tasks/enter-sales-agreements.md
+                - name: Plnění prodejních smluv
+                  href: sales-marketing/tasks/fulfill-sales-agreements.md
+                - name: "Generování a\_zpracování rabatů odběratelů"
+                  href: sales-marketing/tasks/process-customer-rebates.md
+                - name: Zpracování rabatu pro platbu
+                  href: sales-marketing/tasks/process-rebates-payment.md
+                - name: "Vyhledání platných cen a\_slev"
+                  href: sales-marketing/tasks/look-up-applicable-prices-discounts.md
+            - name: Prodejní nabídky
+              items:
+                - name: Simulace ceny
+                  href: sales-marketing/price-simulation.md
+                - name: Hromadné vytváření prodejních nabídek
+                  href: sales-marketing/tasks/mass-sales-quotations.md
+                - name: "Vytváření a\_úpravy prodejních nabídek"
+                  href: sales-marketing/tasks/create-edit-sales-quotations.md
+            - name: Vratky
+              items:
+                - name: Prodejní vratky
+                  href: warehousing/sales-returns.md
+            - name: Provize
+              items:
+                - name: Registrace prodejních provizí
+                  href: sales-marketing/tasks/register-sales-commissions.md
+                - name: Nastavení pravidel prodejních provizí
+                  href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Obchodní náhrady
+              href: sales-marketing/trade-allowance.md
+            - name: Vytvoření nové obchodní smlouvy
+              href: sales-marketing/tasks/create-new-trade-agreement.md
+        - name: Správa servisu
+          items:
+            - name: Přehled správy servisu
+              href: service-management/service-management-home-page.md
+            - name: Nastavení služby pro odběratele
+              items:
+                - name: Nastavení servisní smlouvy
+                  items:
+                    - name: Přehled servisních smluv
+                      href: service-management/service-agreement-groups.md
+                    - name: Vytváření servisních smluv
+                      href: service-management/create-service-agreements.md
+                    - name: Intervaly servisu
+                      href: service-management/service-intervals.md
+                    - name: Nastavení intervalů servisu
+                      href: service-management/set-up-service-intervals.md
+                    - name: Časová okna
+                      href: service-management/time-windows.md
+                    - name: Tvorba časových oken
+                      href: service-management/create-time-windows.md
+                    - name: Vytvoření skupiny šablon servisu
+                      href: service-management/create-service-template-group.md
+                - name: Nastavit servisní úkoly
+                  items:
+                    - name: Přehled servisních úloh
+                      href: service-management/service-tasks.md
+                    - name: Vytvoření relací servisních úloh
+                      href: service-management/create-service-task-relations.md
+                - name: Nastavit předměty servisu
+                  items:
+                    - name: Přehled předmětů servisu
+                      href: service-management/service-objects.md
+                    - name: Tvorba předmětů servisu
+                      href: service-management/create-service-task-relations.md
+                    - name: Připojení skladových položek k servisním předmětům
+                      href: service-management/attach-inventory-items-service-objects.md
+                    - name: Skupiny předmětů servisu
+                      href: service-management/service-object-groups.md
+                    - name: Vytvoření šablony představující objekty u odběratele
+                      href: service-management/set-up-template-to-represent-objects-at-customer-site.md
+                    - name: Vztahy předmětu servisu
+                      href: service-management/service-object-relations.md
+                    - name: Vytvoření vztahů předmětů servisu
+                      href: service-management/create-service-object-relations.md
+                    - name: Kusovníky šablony
+                      href: service-management/template-boms.md
+                    - name: Vytvoření šablony kusovníku
+                      href: service-management/create-template-bom.md
+                    - name: Připojení šablon k předmětům servisu
+                      href: service-management/attach-templates-service-objects.md
+                - name: Definice kódů důvodů pro servisní zakázky
+                  items:
+                    - name: Kódy důvodů pro servisní zakázky
+                      href: service-management/reason-codes-service-orders.md
+                    - name: Fáze servisních zakázek
+                      href: service-management/service-order-stages.md
+                    - name: Nastavení fází servisních zakázek
+                      href: service-management/set-up-service-order-stages.md
+                    - name: Vytvoření kódů rozhodnutí
+                      href: service-management/create-reason-codes.md
+                - name: Nastavení servisních smluv a předplatného
+                  items:
+                    - name: Přehled smluv o úrovni služeb
+                      href: service-management/service-level-agreements.md
+                    - name: Prodejní cena předplatného
+                      href: service-management/subscription-sales-prices.md
+                    - name: Skupiny předplatného
+                      href: service-management/subscription-groups.md
+                    - name: Nastavení skupin předplatného
+                      href: service-management/set-up-subscription-groups.md
+                    - name: Použití kódů důvodu fáze
+                      href: service-management/use-stage-reason-codes.md
+                    - name: Integrace pro servisní smlouvy a projekty
+                      href: service-management/integration-service-agreements-projects.md
+                - name: Nastavení správy oprav
+                  href: service-management/repair-management.md
+                - name: Nastavit vrácené položky odběratele
+                  items:
+                    - name: Přehled vrácených položek odběratelů
+                      href: service-management/disposition-and-return-reason-codes.md
+                    - name: Nastavení dispozičních kódů
+                      href: service-management/set-up-disposition-codes.md
+                    - name: Nastavení kódů důvodu vrácení
+                      href: service-management/set-up-return-reason-code.md
+                    - name: Určení způsobu nakládání s vrácenými položkami
+                      href: service-management/specify-how-to-dispose-of-returned-items.md
+            - name: Práce s odběratelským servisem
+              items:
+                - name: Přehled práce s odběratelským servisem
+                  href: service-management/working-with-customer-service.md
+                - name: Plnění servisních smluv
+                  items:
+                    - name: Přehled plnění servisních smluv
+                      href: service-management/fulfill-service-agreements-overview.md
+                    - name: Příprava a přijetí smlouvy
+                      items:
+                        - name: Přehled přípravy a zřízení servisních smluv
+                          href: service-management/service-agreements.md
+                        - name: Vytváření servisních smluv
+                          href: service-management/create-service-agreements.md
+                        - name: Předplatné servisu
+                          href: service-management/service-subscriptions.md
+                        - name: Šablony servisu
+                          href: service-management/service-template.md
+                        - name: Kopírování řádků šablon servisu
+                          href: service-management/copy-service-template-lines.md
+                    - name: Změna fáze servisní zakázky
+                      href: service-management/change-service-order-stage.md
+                    - name: Aktualizace a vyhodnocení smluv
+                      items:
+                        - name: Správa šablon kusovníku pro vztahy předmětu
+                          href: service-management/manage-template-boms-on-object-relations.md
+                        - name: Odstranění servisního kusovníku
+                          href: service-management/delete-service-bom.md
+                        - name: Indexované prodejní ceny
+                          href: service-management/indexed-sales-prices.md
+                        - name: Snížení počtu dnů u poplatků za odběr
+                          href: service-management/reduce-the-days-on-subscription-fees.md
+                        - name: Příklad dnů snížení
+                          href: service-management/reduction-days-example.md
+                        - name: Aktualizace a indexování prodejních cen předplatného
+                          href: service-management/update-and-index-subscription-sales-prices.md
+                - name: Zpracování dotazů od odběratele
+                  items:
+                    - name: Přehled plnění servisních smluv
+                      href: service-management/fulfill-service-agreements-overview.md
+                    - name: Zahájení a ukončení záznamu času v servisní zakázce
+                      href: service-management/start-and-stop-time-recording-on-a-service-order.md
+                    - name: Zobrazení času zahájení a doby trvání servisní zakázky
+                      href: service-management/view-the-start-time-and-duration-of-a-service-order.md
+                    - name: Zobrazení kódů rozhodnutí fáze
+                      href: service-management/view-stage-reason-codes.md
+                    - name: Zobrazení shody se smlouvou na úrovni služeb
+                      href: service-management/view-compliance-with-service-level-agreements.md
+                - name: Schválení vrácení odběratele
+                  items:
+                    - name: Dispoziční kódy a kódy důvodu vrácení
+                      href: service-management/disposition-and-return-reason-codes.md
+                    - name: Nákladová cena vrácení a ID vrácené šarže
+                      href: service-management/return-cost-price-and-return-lot-id.md
+                    - name: Zrušení vratky
+                      href: service-management/cancel-return-order.md
+                    - name: Vytvoření objednávky náhrady položky
+                      href: service-management/create-item-replacement-order.md
+                    - name: Odstranění vratky
+                      href: service-management/delete-return-order.md
+                    - name: Postoupení vrácených položek ke kontrole
+                      href: service-management/pass-returned-items-on-to-inspection.md
+                    - name: Zaúčtování deník doručení u vrácených produktů
+                      href: service-management/post-arrival-journal-for-returned-products.md
+                    - name: Příjem částečných dodávek vrácených položek
+                      href: service-management/receive-partial-deliveries-returned-items.md
+                    - name: Příjem vrácených položek
+                      href: service-management/receiving-returned-items.md
+                    - name: Registrace příjmu vrácených položek
+                      href: service-management/register-the-receipt-of-returned-items.md
+                    - name: Podrobení vrácených položek kontrole
+                      href: service-management/take-returned-items-through-inspection.md
+                    - name: Aktualizace dodacího listu pro vrácení
+                      href: service-management/packing-slip-updates-returns.md
+                    - name: Provádění aktualizací faktur pro vrácení
+                      href: service-management/perform-invoice-updates-for-returns.md
+                - name: Dodání služeb
+                  items:
+                    - name: Plánování a přidělování servisních zakázek
+                      items:
+                        - name: Servisní zakázky
+                          href: service-management/service-orders.md
+                        - name: Automaticky vytvářené servisní zakázky
+                          href: service-management/auto-create-service-orders.md
+                        - name: Interakce stavu služby a pole postupu
+                          href: service-management/service-status-and-progress-field-interaction.md
+                        - name: Automatické vytvoření servisních zakázek
+                          href: service-management/create-service-orders-automatically.md
+                        - name: Vytvoření požadavků položky pro servisní zakázky
+                          href: service-management/create-item-requirements-service-orders.md
+                        - name: Požadavky na položku servisní objednávky
+                          href: service-management/service-order-item-requirements.md
+                        - name: Přehled workflowu odběru
+                          href: service-management/subscription-workflow-overview.md
+                        - name: Kombinace servisních zakázek
+                          href: service-management/combine-service-orders.md
+                        - name: Vytvoření odběru servisu ze skupiny odběru
+                          href: service-management/create-service-subscriptions-from-subscription-group.md
+                        - name: Projekt připojený k servisní smlouvě
+                          href: service-management/project-attached-to-service-agreement.md
+                        - name: Vytvoření předplatného služby z projektu
+                          href: service-management/create-service-subscriptions-from-project.md
+                    - name: Aktivity expedice servisních zakázek
+                      items:
+                        - name: Servisní aktivity
+                          href: service-management/service-activities.md
+                        - name: Expediční vývěska
+                          href: service-management/dispatch-board.md
+                        - name: Nastavení typů servisní aktivity
+                          href: service-management/set-up-service-activity-types.md
+                        - name: Nastavení upřednostňovaného technika
+                          href: service-management/set-up-preferred-technician.md
+                        - name: Nastavit expediční týmy
+                          href: service-management/set-up-dispatch-teams.md
+                        - name: Určení priorit servisních zakázek
+                          href: service-management/prioritize-service-orders.md
+                        - name: Zobrazení stavu servisních zakázek
+                          href: service-management/view-the-status-of-service-orders.md
+                        - name: Sledování servisních aktivit
+                          href: service-management/monitor-service-activities.md
+                        - name: Opětovné přiřazení aktivit
+                          href: service-management/reassign-activities.md
+                        - name: Stornovací změny na expediční vývěsce
+                          href: service-management/reverse-changes-in-a-dispatch-board.md
+                        - name: Zobrazení neexpedovaných servisních zakázek
+                          href: service-management/view-undispatched-service-orders.md
+                        - name: 'Změna servisního kusovníku '
+                          href: service-management/modify-service-bom.md
+                    - name: Dodání služby
+                      items:
+                        - name: Zápis transakcí předplatného na stranu Dal
+                          href: service-management/credit-subscription-transactions.md
+                        - name: Vytvoření transakcí poplatků předplatného
+                          href: service-management/create-subscription-fee-transactions.md
+                        - name: Časové rozlišení předplatného
+                          href: service-management/accruing-subscriptions.md
+                        - name: Přesunout řádky servisní zakázky
+                          href: service-management/move-service-order-lines.md
+                        - name: Zrušit servisní zakázky
+                          href: service-management/cancel-service-orders.md
+                        - name: Ruční vytvoření servisních objednávek
+                          href: service-management/create-service-orders-manually.md
+                        - name: Časově rozlišené výnosy předplatného
+                          href: service-management/accrue-subscription-revenue.md
+                        - name: Odstranit servisní zakázky
+                          href: service-management/delete-service-orders.md
+                        - name: Transakce faktur odběru
+                          href: service-management/invoice-subscription-transactions.md
+        - name: Správa přepravy
+          items:
+            - name: Přehled správy přepravy
+              href: transportation/transportation-management-overview.md
+            - name: Moduly správy přepravy
+              href: transportation/transportation-management-engines.md
+            - name: Vytvoření nového modulu správy přepravy
+              href: transportation/create-new-transportation-management-engine.md
+            - name: "Přidružení indexu paliva k\_dopravci jako nákladů na dodatečné služby"
+              href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+            - name: Vytvoření přepravního dokladu
+              href: transportation/create-bill-of-lading.md
+            - name: Plánování tras přepravy s dopravným
+              href: transportation/plan-freight-transportation-routes-multiple-stops.md
+            - name: Plánování nákladů pomocí konsolidace centra
+              items:
+                - name: Přehled plánování vytížení pomocí konsolidace centra
+                  href: transportation/plan-loads-hub-consolidation.md
+                - name: "Plánování vytížení a\_dodávek s\_použitím pracovní plochy plánování vytížení"
+                  href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
+            - name: Zahrnutí hmotnosti kontejneru a objemu při naložení
+              href: transportation/include-container-weight-volume-on-load.md
+            - name: Ruční odsouhlasení dopravného
+              href: transportation/tasks/reconcile-freight-manually.md
+            - name: Odsouhlasení dopravného
+              href: transportation/reconcile-freight-transportation-management.md
+            - name: "Registrace přihlášení a\_odhlášení řidiče k\_události"
+              href: transportation/tasks/register-driver-check-check-out-appointment.md
+            - name: Nastavení indexu paliva dopravce
+              href: transportation/tasks/set-up-carrier-fuel-index.md
+            - name: Nastavení úhrady přepravy
+              href: transportation/tasks/set-up-transportation-tender.md
+            - name: Nastavení přiřazení dodatečných služeb
+              href: transportation/tasks/set-up-accessorial-assignments.md
+            - name: Naplánování události pro vytížení
+              href: transportation/tasks/set-up-appointment-load.md
+            - name: Nastavení automatického odsouhlasení dopravného
+              href: transportation/tasks/set-up-automatic-freight-reconciliation.md
+            - name: "Nastavení nákladů na dodatečnou službu centra a\_hlavních dodatečných služeb"
+              href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
+            - name: Nastavení hlavních sazeb
+              href: transportation/tasks/set-up-rate-masters.md
+            - name: Nastavení dopravců
+              href: transportation/tasks/set-up-shipping-carriers.md
+            - name: Nastavení omezení přepravy pro položku
+              href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: Řízení skladu
+          items:
+            - name: Přehled řízení skladu
+              href: warehousing/warehouse-management-overview.md
+            - name: Konfigurace skladu
+              items:
+                - name: Přehled konfigurace skladu
+                  href: warehousing/warehouse-configuration.md
+                - name: Nastavení skladu pomocí šablony konfigurace skladu
+                  href: inventory/warehouse-template.md
+                - name: Řízení práce pomocí šablon práce a směrnice pro místa
+                  href: warehousing/control-warehouse-location-directives.md
+                - name: Kódy kroku vlny
+                  href: warehousing/wave-step-codes.md
+                - name: Konfigurace zpracování vlny
+                  href: warehousing/tasks/configure-wave-processing.md
+                - name: Automatická aktualizace dodávek
+                  href: warehousing/auto-update-shipment.md
+                - name: Vytvoření profilu skladového místa
+                  href: warehousing/tasks/create-location-profile.md
+                - name: "Konfigurace umístění ve skladu s\_povolenými procesy řízení skladu"
+                  href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+                - name: Naplánovat využití vytížení
+                  href: warehousing/schedule-load-utilization.md
+                - name: Plánování pracovního vytížení
+                  href: warehousing/schedule-workload-capacity.md
+                - name: Nastavení dispozičních kódů
+                  href: warehousing/tasks/set-up-dispositions-codes.md
+                - name: Měrná jednotka a zásady uskladnění
+                  href: warehousing/unit-measure-stocking-policies.md
+                - name: Obsah skladu v Power BI
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+                - name: Systémové seskupení na otevřeném seznamu úkolů
+                  href: warehousing/system-group-on-open-work-list.md
+                - name: Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations
+                  href: warehousing/scan-bar-codes-using-a-camera.md
+                - name: Mobilní podpora čárového kódu
+                  href: warehousing/mobile-barcode-support.md
+                - name: Nastavení skladu pro převodní příkazy
+                  href: warehousing/transfer-orders-warehouse.md
+            - name: Zásady práce ve skladu
+              items:
+                - name: Přehled zásad práce ve skladu
+                  href: warehousing/warehouse-work-policies.md
+                - name: Nastavení zásad práce ve skladu
+                  href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+                - name: "Pohyb zásob s\_přidruženou prací v řízení skladu"
+                  href: warehousing/move-inventory-associated-work.md
+                - name: Vytvoření pracovní třídy
+                  href: warehousing/tasks/create-work-class.md
+                - name: Řízení pracovníků skladu
+                  href: warehousing/manage-warehouse-workers.md
+                - name: Odložené zpracování práce skladu
+                  href: warehousing/deferred-put.md
+            - name: Částečné uvolnění a částečná dodávka
+              items:
+                - name: Částečná dodávka nákladu přepravy
+                  href: warehousing/partial-shipping-of-transport-loads.md
+                - name: Vydání dávky částečně rezervovaných převodních příkazů
+                  href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+            - name: "Výdej a\_balení"
+              items:
+                - name: Nastavení výdejů v seskupení
+                  href: warehousing/set-up-cluster-picking.md
+                - name: Nastavení vytváření kontejnerů
+                  href: warehousing/tasks/set-up-containerization.md
+                - name: Potvrzení dávky a poznávací značky
+                  href: warehousing/batch-and-license-plate-confirmation.md
+                - name: Povolení tisku popisku registrační značky
+                  href: warehousing/tasks/license-plate-label-printing.md
+                - name: Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations
+                  href: warehousing/scan-bar-codes-using-a-camera.md
+                - name: Potvrzení výdeje kusů
+                  href: warehousing/piece-picking-confirmation.md
+                - name: Obalové materiály a poplatky
+                  href: warehousing/pack-materials-packing-material-fees.md
+                - name: "Nastavení ručního balení (jen ve verzi z\_února 2016 a\_května 2016)"
+                  href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                - name: Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění
+                  href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+            - name: Inventura skladu
+              items:
+                - name: Kódy důvodů pro inventury zásob
+                  href: warehousing/reason-codes-for-counting-journals.md
+                - name: Blokovat zásoby
+                  href: inventory/inventory-blocking.md
+                - name: Cyklická inventura
+                  href: warehousing/cycle-counting.md
+                - name: 'Definování cyklické inventury '
+                  href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+                - name: Částečná cyklická inventura místa
+                  href: warehousing/partial-location-cycle-counting.md
+                - name: 'Definování procesu částečné cyklické inventury skladového místa '
+                  href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Deník inventáře
+                  href: inventory/inventory-journals.md
+                - name: Skladové místo
+                  href: inventory/inventory-locations.md
+                - name: Stav skladu
+                  href: inventory/inventory-statuses.md
+                - name: Počet označení zásob
+                  href: inventory/inventory-tag-counting.md
+            - name: Doplnění
+              items:
+                - name: Přehled doplnění
+                  href: warehousing/replenishment.md
+                - name: Okamžité doplnění
+                  href: warehousing/immediate-replenishment.md
+                - name: Doplnění s kanbany odběru
+                  href: warehousing/material-replenishment-withdrawal-kanban.md
+                - name: Vytvoření procesu minimálního nebo maximálního doplňování
+                  href: warehousing/tasks/set-up-min-max-replenishment-process.md
+                - name: Nastavení šablony práce pro nákupní objednávky
+                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
+            - name: Instalace a konfigurace skladové aplikace
+              items:
+                - name: Přehled instalace a konfigurace
+                  href: warehousing/install-configure-warehousing-app.md
+                - name: Konfigurace názvů polí ve skladové aplikaci
+                  href: warehousing/configure-app-field-names-priorities-warehouse.md
+                - name: Nastavení mobilních zařízení pro práci ve skladu
+                  href: warehousing/configure-mobile-devices-warehouse.md
+                - name: "Nastavení položky nabídky na mobilním zařízení pro dokončení práce v\_nákupní objednávce"
+                  href: warehousing/tasks/set-up-mobile-device-menu.md
+                - name: Nastavení položky nabídky na mobilním zařízení pro registraci přijatých položek
+                  href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                - name: Vytvoření položky nabídky na mobilním zařízení pro konsolidaci registračních značek
+                  href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                - name: Přijetí smíšené registrační značky na mobilním zařízení
+                  href: warehousing/mixed-license-plate-receiving.md
+                - name: Konfigurace možnosti Zobrazení starších dávek v rámci skladu na mobilním zařízení
+                  href: warehousing/display-older-batches-within-warehouses.md
+                - name: Vyskladnění nejstarší dávky na mobilním zařízení
+                  href: warehousing/pick-oldest-batch.md
+                - name: Architektura průvodce procesem
+                  href: warehousing/process-guide-framework.md
+            - name: "Upgrade a\_migrace"
+              items:
+                - name: "Upgrade procesů řízení skladu z\_aplikace Microsoft Dynamics AX 2012 na aplikaci Finance and Operations"
+                  href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Příjemky pro registraci a výdej
+              items:
+                - name: "Registrace položek pro položky umožňující pokročilé uskladnění s\_použitím deníku doručení zboží"
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: "Registrace položek pro položky umožňující základní uskladnění s\_použitím deníku doručení zboží"
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: "Používání cross dockingu pro distribuci produktů z\_přijímacího skladu do obchodů"
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: "Nastavení směrnice skladového místa pro vyskladnění v\_rámci nákupní objednávky"
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: Nastavení šablony práce pro nákupní objednávky
+        - name: Vývoj aplikace Supply Chain Management
+          items:
+            - name: Průvodce vývojem Ganttova diagramu
+              href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Vytvoření nového modulu správy přepravy
+              href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+    - name: Vývoj a správa aplikací Finance and Operations
+      href: ../fin-ops-core/dev-itpro/index.md
+    - name: Dynamics 365 Finance
+      href: ../finance/index.md
+    - name: Dynamics 365 Retail
+      href: ../retail/index.md

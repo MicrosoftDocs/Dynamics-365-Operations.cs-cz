@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 609f5f13f3af4a7621fe7ee152800dac4d68a9fc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572042"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025142"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Vyhledávání zásob v pokladním místě (POS)
 
@@ -52,7 +52,7 @@ Pro každé skladové místo se rovněž zobrazují **Rezervovaná** a **Objedna
 Seznam skladových míst obsahuje dva typy entit:
 
 - **Maloobchody** – Seznam zobrazuje obchody, které jsou nakonfigurovány pomocí skupiny lokátoru obchodů pro aktuální obchod v modulu Retail headquarters.
-- **Distribuční centra** – Různé typy distribučních center (například sklady) lze konfigurovat v aplikaci Microsoft Dynamics 365 for Retail. Seznam však zobrazuje informace o dostupnosti zásob pouze pro distribuční centra výchozího typu **Standardní**.
+- **Distribuční centra** – Různé typy distribučních center (například sklady) lze konfigurovat v aplikaci Retail. Seznam však zobrazuje informace o dostupnosti zásob pouze pro distribuční centra výchozího typu **Standardní**.
 
     > [!NOTE]
     > Informace o dostupnosti zásob se nezobrazuje pro sklady typu **Tranzit**, **Karanténa** a **Zboží v postupu** pro pokladní místo.

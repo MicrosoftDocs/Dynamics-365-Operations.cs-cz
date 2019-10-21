@@ -1,6 +1,6 @@
 ---
 title: Nastavení kanálů kontaktního střediska
-description: Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Microsoft Dynamics 365 for Retail.
+description: Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549352"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024814"
 ---
 # <a name="set-up-call-center-channels"></a>Nastavení kanálů kontaktního střediska
 
 [!include [banner](includes/banner.md)]
 
-Společnost může definovat ve více kanálů kontaktního střediska v aplikaci Microsoft Dynamics 365 for Retail. Kanály kontaktního střediska jsou konfigurovány v **Retail** \> **Kanály** \> **Kontaktní střediska** \> **Všechna kontaktní střediska** a jsou specifické pro právnickou osobu.
+Společnost může definovat ve více kanálů kontaktního střediska v aplikaci Dynamics 365 Retail. Kanály kontaktního střediska jsou konfigurovány v **Retail** \> **Kanály** \> **Kontaktní střediska** \> **Všechna kontaktní střediska** a jsou specifické pro právnickou osobu.
 
 Po vytvoření nového kanálu kontaktního střediska je systematicky přiřazeno číslo provozní jednotky. Vzhledem k tomu, že kontaktní střediska jsou vytvořena jako provozní jednotky, uživatelé mohou propojit kontaktní střediska s různými funkcemi aplikace Retail, jako jsou například sortimenty, katalogy a určité způsoby dodání.
 
@@ -76,6 +76,8 @@ Při definování kanálu kontaktního střediska je nutné propojit uživatele 
 
 Ve výchozím nastavení je příznak **Maloobchodní prodej** na záhlaví prodejní objednávky je zapnutý pro všechny objednávky, které uživatelé kontaktního střediska vytvoří. Objednávky poté mohou využít systémových funkcí promoakce a cen specifických pro maloobchod.
 
-Uživatelé, kteří nejsou spojení s kanálem kontaktního střediska, používají standardní funkce zadání objednávky aplikace Microsoft Dynamics 365 for Finance and Operations. Objednávky, které tito uživatelé zadávají prostřednictvím formuláře pro zadání prodejní objednávky, nebudou systematicky identifikovány jako objednávky aplikace Retail. Navíc tyto objednávky zadané těmito uživateli nebudou podléhat žádným pravidlům zpracování dokončení objednávek, maloobchodní cenové logice nebo jiným ověřením objednávek, které lze definovat v konfiguraci kanálu kontaktního střediska nebo v parametrech systému kontaktního střediska.
+
+Uživatelé, kteří nejsou spojení s kanálem kontaktního střediska, používají standardní funkce zadání objednávky aplikace Microsoft Dynamics 365 Finance. Objednávky, které tito uživatelé zadávají prostřednictvím formuláře pro zadání prodejní objednávky, nebudou systematicky identifikovány jako objednávky aplikace Retail. Navíc tyto objednávky zadané těmito uživateli nebudou podléhat žádným pravidlům zpracování dokončení objednávek, maloobchodní cenové logice nebo jiným ověřením objednávek, které lze definovat v konfiguraci kanálu kontaktního střediska nebo v parametrech systému kontaktního střediska.
+
 
 Po dokončení konfigurace kanálu kontaktního střediska a definování uživatelů kanálu k zajištění požadovaného chování systému se ujistěte, že všechny požadované parametry kontaktního střediska jsou definovány v možnostech **Retail** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Parametry kontaktního střediska**. Ujistěte se, že související číselné řady jsou rovněž definovány.

@@ -1,6 +1,6 @@
 ---
 title: Monitorování výkonnosti prodeje a marže
-description: Objem prodeje a marže lze sledovat v reálném čase pomocí aplikace Microsoft Dynamics 365 for Retail.
+description: Objem prodeje a marže lze sledovat v reálném čase pomocí aplikace Dynamics 365 Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46ecefdd15a3a208588aaf630571764047464cdb
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555643"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018057"
 ---
 # <a name="monitor-sales-and-margin-performance"></a>Monitorování výkonnosti prodeje a marží
 
 [!include [banner](includes/banner.md)]
 
-Objem prodeje a marže lze sledovat v reálném čase pomocí aplikace Microsoft Dynamics 365 for Retail.
+Objem prodeje a marže lze sledovat v reálném čase pomocí aplikace Dynamics 365 Retail.
 
-Jako součást aplikace Dynamics 365 for Retail mohou uživatelé sledovat objem prodejů marže v reálném čase napříč rozdílnou organizační hierarchií pro následující dimenze:
+Jako součást aplikace Retail mohou uživatelé sledovat objem prodejů marže v reálném čase napříč rozdílnou organizační hierarchií pro následující dimenze:
 
 - Produkty
 - Kategorie

@@ -1,6 +1,6 @@
 ---
-title: Práce s datem a časem v Microsoft Dynamics 365 for Talent
-description: Zjistěte, co je třeba očekávat při používání polí data a času v aplikaci Microsoft Dynamics 365 for Talent. Získejte srozumitelnost, co by bylo možné očekávat při interakci s daty data a času ve formuláři Dynamics 365 for Talent v aplikaci, v externím zdroji nebo v Common Data Service.
+title: Práce s datem a časem v Microsoft Dynamics 365 Talent
+description: Zjistěte, co je třeba očekávat při používání polí data a času v aplikaci Microsoft Dynamics 365 Talent. Získejte srozumitelnost, co by bylo možné očekávat při interakci s daty data a času ve formuláři v aplikaci Talent, v externím zdroji nebo v Common Data Service.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/24/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b4c652992272ed1a5aecbb4c78f0d11f077149d1
-ms.sourcegitcommit: 46bded82aa072adfedcf443629c2adc69f512c09
+ms.openlocfilehash: 1a1d1a47bfe6bd58b1e1a0d4d46c2133f3bf48ad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1791198"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2007960"
 ---
 # <a name="date-and-time-fields-in-talent"></a>Pole data a času v aplikaci Talent
 
 [!include [banner](includes/banner.md)]
 
-Pole **Datum a čas** jsou základním konceptem v aplikaci Dynamics 365 for Talent. Je důležité pochopit, jak pracovat s údaji **Datum a čas** ve formuláři Dynamics 365, Common Data Service a v externích zdrojích.
+Pole **Datum a čas** jsou základním konceptem v aplikaci Dynamics 365 Talent. Je důležité pochopit, jak pracovat s údaji **Datum a čas** ve formuláři Dynamics 365, Common Data Service a v externích zdrojích.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Vysvětlení rozdílu mezi datovými typy v polích Datum a Čas
 

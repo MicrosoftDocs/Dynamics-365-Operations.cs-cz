@@ -1,6 +1,6 @@
 ---
 title: Výběr mezi Retail Modern POS (MPOS) a Cloud POS
-description: Toto téma vysvětluje klíčové rozdíly mezi Retail Modern POS a Cloud POS. Také popisuje různé faktory, které prodejci implementující aplikaci Microsoft Dynamics 365 for Retail musí zvážit, aby mohli vytěžit pro své požadavky maximum.
+description: Toto téma vysvětluje klíčové rozdíly mezi Retail Modern POS a Cloud POS. Také popisuje různé faktory, které prodejci implementující aplikaci Dynamics 365 Retail musí zvážit, aby mohli vytěžit pro své požadavky maximum.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 69cf6d2b7a9bb09a848f2a0c870f5e7e59c61e91
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557007"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025902"
 ---
 # <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Výběr mezi Retail Modern POS (MPOS) a Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje implementátorům dodatečné tipy a návody pro faktory, které je třeba při nasazení aplikace Microsoft Dynamics 365 for Retail zvážit. Zrevidováním a dodržováním těchto pokynů v rámci procesu nasazení se mohou implementátoři vyhnout problémům, které by mohly ovlivnit spokojenost nebo výkon uživatele.
+Toto téma poskytuje implementátorům dodatečné tipy a návody pro faktory, které je třeba při nasazení aplikace Dynamics 365 Retail zvážit. Zrevidováním a dodržováním těchto pokynů v rámci procesu nasazení se mohou implementátoři vyhnout problémům, které by mohly ovlivnit spokojenost nebo výkon uživatele.
 
 ## <a name="insights"></a>Informace
 
@@ -76,7 +76,7 @@ Kromě platformy a provedení musí prodejci také zvolit možnost nasazení v o
 | MPOS pro iOS nebo Android | Cloud nebo RSSU | Žádný                |
 | Cloud POS               | Cloud nebo RSSU | Žádný                |
 
-#### <a name="retail-server"></a>Server maloobchodu
+#### <a name="retail-server"></a>Retail server
 
 Retail Server je komponenta, která je hostitelem CRT. CRT obsahuje veškerou obchodní logiku, kterou POS používá, a poskytuje přístup k databázi kanálů. Když jsou online, všichni klienti POS v obchodě používají Retail Server. Retail Server lze nasadit buď do cloudu nebo do obchodu (RSSU).
 

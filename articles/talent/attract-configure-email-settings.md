@@ -1,6 +1,6 @@
 ---
-title: Konfigurace nastavení e-mailu v Microsoft Dynamics 365 for Talent - Attract
-description: V tomto tématu je vysvětleno, jak nakonfigurovat nastavení e-mailu odeslaného v aplikaci Microsoft Dynamcis 365 for Talent - Attract.
+title: Konfigurace nastavení e-mailu v Microsoft Dynamics 365 Talent - Attract
+description: V tomto tématu je vysvětleno, jak nakonfigurovat nastavení e-mailu odeslaného v aplikaci Microsoft Dynamcis 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/04/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a8cf59064dd2f66ee50a0b0566aa712ba1f72dea
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: c891a36f01d36774bd921475fa5995d207cd2d51
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739488"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008655"
 ---
 # <a name="configure-email-settings"></a>Konfigurace nastavení e-mailu
 
 [!include[banner](../includes/banner.md)]
 
-Vaše značka vytváří vztah důvěryhodnosti a pomůže vám vytvořit vztah s uchazeči ještě než zažádají o pozice u vás. Pozitivní vnímání značky přitahuje nejlepší talenty a zvyšuje loajalitu stávajících zaměstnanců. Microsoft Dynamics 365 for Talent: Attract umožňuje konfigurovat e-maily tak, aby odrážely značku vaší společnosti. Proto můžete poskytnout konzistentní zkušenosti uchazečům o práci při procházení procesu žádosti.
+Vaše značka vytváří vztah důvěryhodnosti a pomůže vám vytvořit vztah s uchazeči ještě než zažádají o pozice u vás. Pozitivní vnímání značky přitahuje nejlepší talenty a zvyšuje loajalitu stávajících zaměstnanců. Microsoft Dynamics 365 Talent: Attract umožňuje konfigurovat e-maily tak, aby odrážely značku vaší společnosti. Proto můžete poskytnout konzistentní zkušenosti uchazečům o práci při procházení procesu žádosti.
 
 Attract umožňuje provést následující akce:
 

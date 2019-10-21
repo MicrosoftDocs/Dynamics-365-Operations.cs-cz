@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8138b6144cc6ba09834f2bfb61cc7334767307d6
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 45d3d962958d0487c9e65910a2dce24097a83773
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916546"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017751"
 ---
 # <a name="base-price-and-trade-agreements"></a> Základní cena a obchodní smlouvy
 
@@ -56,7 +56,7 @@ Tato procedura vás provede postupem vytváření obchodních smluv prodejních 
 24. Klikněte na **Vytvořit obchodní smlouvy**.
 25. Klepněte na možnost **Nový**.
 26. V poli **Název** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
-27. Vyberte ze seznamu možnost „Maloobchod“. V ukázkových datech má deník s názvem „Maloobchod“ výchozí vztah „Cena (prodej)“. To znamená, že všechny vytvořené nové řádky budou přednastaveny jako výchozí prodejní ceny obchodních smluv.  
+27. Vyberte ze seznamu možnost **Maloobchod**. V ukázkových datech má deník s názvem **Maloobchod** výchozí vztah **Cena (prodej)**. To znamená, že všechny vytvořené nové řádky budou přednastaveny jako výchozí prodejní ceny obchodních smluv.  
 28. V **Podokně akcí** klikněte na **Řádky**.
 29. V poli **Kód účtu** vyberte možnost „Skupina“.
 30. V poli **Výběr účtu** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 00facce5913fb82f67c5844d74d29032735db707
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d95429dde38a7a528b1c1d9036194a3bf8e6f986
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506096"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009438"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Nastavení parametrů lidských zdrojů pro konkrétní společnost
 
@@ -34,7 +34,7 @@ Nastavení některých parametrů lidských zdrojů nesmí být sdílena napří
 Dvě stránky slouží k nastavení parametrů lidských zdrojů. Pro parametry, které jsou sdíleny napříč společnostmi, použijte stránku **Sdílené parametry lidských zdrojů**. Pro parametry, které jsou specifické pro společnost (jinými slovy nastavení se použije pro jednu společnost), můžete použít stránku **Parametry lidských zdrojů**. Na stránce **Parametry lidských zdrojů** jsou nastavení rozdělena mezi šest karet:
 
 -   Obecné
--   Nábor - není součástí Dynamics 365 for Talent
+-   Nábor - není součástí Dynamics 365 Talent
 -   Kompenzace
 -   Číselné řady
 -   Opuštění z rodinných a lékařských důvodu (FMLA)
@@ -49,7 +49,7 @@ Nastavení na kartě **Kompenzace** definuje, zda uživatelé musí potvrzovat, 
 ### <a name="previously-released-functionality"></a>Dříve vydané funkce
 Nastavení na kartě **Číselná řada** určují sekvence, které lze použít k automatickému přiřazení identifikátorů k položkám v modulu Lidské zdroje, například přihlášky, záznamy o absenci, výsledky procesu kompenzace, čísla případů, kurzy a agendy kurzů. Spravovat odkazy číselných řad a kódy můžete na stránce se seznamem **Číselné řady** (klikněte na **Správa organizace** &gt; **Číselné řady** &gt; **Číselné řady**).
 
-### <a name="if-youre-using-dynamics-365-for-talent"></a>Pokud používáte Dynamics 365 for Talent
+### <a name="if-youre-using-dynamics-365-talent"></a>Pokud používáte Dynamics 365 Talent
 Nastavení na kartě **Číselná řada** určují sekvence, které lze použít k automatickému přiřazení identifikátorů k položkám v modulu Lidské zdroje, například přihlášky, záznamy o absenci, výsledky procesu kompenzace, čísla případů, kurzy a agendy kurzů. Spravovat odkazy číselných řad a kódy můžete na stránce se seznamem **Číselné řady** (klikněte na **Správa systému** &gt; **karta Odkazy** &gt; **Číselné řady** &gt; **Číselné řady**). 
 
 Nastavení na kartě **Pracovní volno** definují počet hodin, které musí zaměstnanec odpracovat má-li mít nárok na výhody pracovního volna. Délka zaměstnání, která je nutná pro vznik nároku a počáteční datum zaměstnání se používá k určení délky zaměstnání. Nastavení také definují počet hodin pracovního volna, na které mají zaměstnanci nárok a kalendář pracovního volna, který se používá k výpočtu počtu hodin využitého pracovního volna zaměstnancem. Karta **Pracovní volno** je k dispozici pouze pro společnosti v USA. 

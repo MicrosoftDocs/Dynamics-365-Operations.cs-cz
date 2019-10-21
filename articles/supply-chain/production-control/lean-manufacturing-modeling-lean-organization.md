@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40664936382f5edcb3c1680aa4af245bdef539a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560133"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250190"
 ---
 # <a name="modeling-a-lean-organization"></a>Modelování úsporné organizace
 
@@ -39,7 +39,7 @@ Ve scénářích výroby založených na výrobních zakázkách je materiálu v
 
 Ke snížení doby realizace dodávky a nadbytečných zásob mezi pracovními středisky, které jsou způsobené výrobními dávkami, zavádí lean manufacturing doplnění kanbanu a supermarkety ve výrobě a doplnění skladu. Tyto prvky obvykle naruší výrobu částečně nezávislých kanbanových cyklů. Doplnění kanbanu pro polotovar již není aktivováno objednávkou hotového výrobku. 
 
-Chcete-li znovu vytvořit kontext výroby a nákladů pro různé scénáře kanbanu navržených v aplikaci Microsoft Dynamics 365 for Finance and Operations, výrobní toky na základě aktivity jsou vkládány jako základní stavební prvky lean manufacturingu. Všechna kanbanová pravidla naleznete v této předdefinované struktuře. Model založený na aktivitách podporuje nastavení široké škály scénářů. Avšak tento model nezvyšuje náročnost pro dílenské pracovníky, protože všechny scénáře používají stejné uživatelské rozhraní založené na aktivitách.
+Chcete-li znovu vytvořit kontext výroby a nákladů pro různé scénáře kanbanu navržených, výrobní toky na základě aktivity jsou vkládány jako základní stavební prvky lean manufacturingu. Všechna kanbanová pravidla naleznete v této předdefinované struktuře. Model založený na aktivitách podporuje nastavení široké škály scénářů. Avšak tento model nezvyšuje náročnost pro dílenské pracovníky, protože všechny scénáře používají stejné uživatelské rozhraní založené na aktivitách.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Polotovary (bez úrovní kusovníku)
 Lean manufacturing integruje kanbany pro produkty na skladě a polotovary v jednom rámci, tudíž nabízí ve všech případech sjednocené uživatelské prostředí. Díky této architektuře není třeba zavádět další úrovně kusovníku, aby bylo možné použít kanbany pro polotovary. Tato architektura také umožňuje omezit skladové transakce na minimum.
@@ -50,7 +50,7 @@ Omezení velikosti dávky na ideální stav jednoho kusu toku lean manufacturing
 ## <a name="value-streams-and-value-stream-mapping"></a>Hodnotové proudy a mapování hodnotových proudů
 Architektura lean manufacturingu je inspirovaná pěti štíhlými zásadami formulovanými autory Womack a Jones: hodnota pro odběratele, hodnotový proud, tok, vyžádání a jakost. Jednou schválenou metodou pro implementaci řešení lean manufacturingu ve fyzickém světě výroby je mapování hodnotových proudů. Tato metoda byl představena Rotherem a Shookem v jejich publikaci "Learning to See" v institutu Lean Manufacturing. 
 
-Hodnotový proud budoucího stavu může být modelován v aplikaci Finance and Operations jako verze výrobního toku. Všechny procesy hodnotového proudu jsou modelovány jako aktivity procesu. Pohyby nebo převody umožňují modelování jako aktivity převodu, pokud stav převodu musí být registrován nebo pokud je požadována integrace do výdeje zásob nebo konsolidovaných dodávek. 
+Hodnotový proud budoucího stavu může být modelován v aplikaci Dynamics AX jako verze výrobního toku. Všechny procesy hodnotového proudu jsou modelovány jako aktivity procesu. Pohyby nebo převody umožňují modelování jako aktivity převodu, pokud stav převodu musí být registrován nebo pokud je požadována integrace do výdeje zásob nebo konsolidovaných dodávek. 
 
 Samotný hodnotový proud je modelován jako provozní jednotka. Proto lze hodnotový proud použít jako finanční dimenzi.
 

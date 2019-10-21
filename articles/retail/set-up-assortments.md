@@ -1,6 +1,6 @@
 ---
 title: Nastavení sortimentu
-description: Tento článek popisuje, co je sortiment, a vysvětluje, jak nastavit sortimenty v aplikaci Microsoft Dynamics 365 for Retail.
+description: Tento článek popisuje, co je sortiment, a vysvětluje, jak nastavit sortimenty v aplikaci Dynamics 365 Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a9578a0784d4f4fbfca27ec4093a3f61d1068a47
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fb0ca55478d0676f46fee70082645523b6bfdb78
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546402"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024907"
 ---
 # <a name="set-up-assortments"></a>Nastavení sortimentu
 
 [!include [banner](includes/banner.md)]
 
-Tento článek popisuje, co je sortiment, a vysvětluje, jak nastavit sortimenty v aplikaci Microsoft Dynamics 365 for Retail.
+Tento článek popisuje, co je sortiment, a vysvětluje, jak nastavit sortimenty v aplikaci Dynamics 365 Retail.
 
 Sortiment je sada souvisejících produktů, které přiřadíte do maloobchodní sítě, jako například kamenný obchod nebo online obchod. Sortimenty slouží k určení výrobků, které jsou k dispozici v každém obchodě. Sortiment může obsahovat kategorie produktů. Proto jsou v sortimentu zahrnuty všechny produkty, které jsou přiřazeny k vybrané kategorii. Sortiment může obsahovat také konkrétní produkty a varianty produktů. Nastavením sortimentu lze přiřadit tisíce produktů k maloobchodním kanálům najednou, v libovolné kombinaci vyžadované obchodem. Lze nastavit tolik sortimentů produktů, kolik potřebujete. Každý výrobek může být zahrnut do jednoho nebo více sortimentů, a každý sortiment může být přiřazen jednomu nebo více maloobchodním kanálům. Například můžete definovat jeden sortiment zahrnující základní sadu produktů. Všechny obchody obdrží tento sortiment. Dále určíte jiný sortiment obsahující pouze velké sportovní zařízení. Pouze vyšší obchody obdrží tento sortiment. Následující diagram znázorňuje, jak mohou být výrobky přiřazeny k sortimentům, a jak lze tyto sortimenty přiřadit do maloobchodních sítí.
 
@@ -44,7 +44,7 @@ Než je možné vytvořit sortiment a přiřadit jej do maloobchodní sítě, je
 |-----------------------------------|-------------|
 | Nastavení maloobchodního kanálu.          | Maloobchodní kanál představuje kamenný obchod, online obchod nebo třeba online tržiště. Musíte nastavit alespoň jednu maloobchodní síť a nakonfigurovat možnosti úložiště. Sortimenty jsou přiřazeny k obchodům k identifikaci produktů, které určitý obchod nabízí. |
 | Vytvořte organizační hierarchii. | Po nastavení maloobchodních sítí v organizaci je nutné konfigurovat maloobchodní organizační hierarchii představující organizační strukturu maloobchodních kanálů. Hierarchii organizace lze použít pro sortiment, doplňování nebo výkaznictví. Přidáte-li maloobchodní kanály organizační hierarchie, můžete přiřadit sortimenty ke skupinám obchodů. Namísto přiřazení sortimentů zvlášť pro každý obchod přiřaďte sortiment k nejvyšší úrovně uzlu organizace. Poté pokaždé, když je k uzlu organizace nejvyšší úrovně přidána nová maloobchodní síť, daná maloobchodní síť automaticky zdědí sortimenty, které byly přiřazeny k uzlu organizace vyšší úrovně. Můžete přiřadit pouze ty sortimenty k maloobchodním sítím, které jsou zahrnuty v organizační hierarchii, která je přiřazena k účelu **Maloobchodní sortiment**. |
-| Definujte produkty.                  | Předtím, než lze přidávat produkty do sortimentu, je třeba přidat je v aplikaci Microsoft Dynamics 365 for Retail. Produkty lze přidávat ručně, nebo je můžete importovat od dodavatele. Po přidání produktů je musíte vydat právnické osobě. Pouze produkty, které byly uvolněny pro právnické osoby, mohou být přidány do maloobchodních sítí. Produkty, které ještě nebyly uvolněny pro právnickou osobu, lze přidat do sortimentu, a sortiment může být schválen. Nicméně dokud produkty nebudou uvolněny pro právnické osoby, nemohou být přidány do maloobchodních sítí. |
+| Definujte produkty.                  | Předtím, než lze přidávat produkty do sortimentu, je třeba přidat je v aplikaci Retail. Produkty lze přidávat ručně, nebo je můžete importovat od dodavatele. Po přidání produktů je musíte vydat právnické osobě. Pouze produkty, které byly uvolněny pro právnické osoby, mohou být přidány do maloobchodních sítí. Produkty, které ještě nebyly uvolněny pro právnickou osobu, lze přidat do sortimentu, a sortiment může být schválen. Nicméně dokud produkty nebudou uvolněny pro právnické osoby, nemohou být přidány do maloobchodních sítí. |
 | Nastavení hierarchie kategorií.      | Při vytváření maloobchodních produktů lze seskupit a kategorizovat je pomocí funkce hierarchie kategorií. Můžete vytvořit jednu hlavní hierarchii pro seskupení a kategorizování všech produktů, které distribuujete prostřednictvím prodejních kanálů. Můžete také vytvořit samostatné doplňkové kategorie hierarchií k seskupení nebo kategorizaci produktů pro zvláštní účely, jako povýšení nebo sortimenty. Pomocí hierarchií kategorií můžete přiřadit všechny produkty v specifické kategorii k sortimentu. Všechny produkty, které jsou přidány do kategorie, která je zahrnuta v sortimentu, jsou automaticky zahrnuty do sortimentu. Poté při příštím spuštění plánovače sortimentu maloobchodu budou tyto produkty k dispozici pro maloobchodní kanály, ke kterým je sortiment přiřazen. |
 
 ## <a name="setting-up-an-assortment"></a>Nastavení sortimentu

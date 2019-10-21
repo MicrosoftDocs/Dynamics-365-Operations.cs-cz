@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b3eeda217e00b33962561bcb2ee6185275f52fe2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3b66369e57e006c9e2fe0a43e4b781c619a65c4a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556937"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025856"
 ---
 # <a name="store-order-fulfillment"></a>Plnění objednávek obchodu
 
@@ -96,7 +96,7 @@ Po přijetí objednávky lze vybrat řádky a označit je jako **Výdej**. Ozna�
 
 Výdejky lze vytisknout na pokladním místě, aby se pomohlo pracovníkům při provádění procesu výdeje. Vytištěnou výdejku může mít u sebe pracovníka provádějící výdej, a jakmile jsou produkty vydány, pracovníka je ručně označí na výdejce jako vyskladněné.
 
-Formát výdejky je nakonfigurován v aplikaci Dynamics 365 for Retail a přidán do profilu příjemek. Další informace o nastavení profilů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Formát výdejky je nakonfigurován v aplikaci Retail a přidán do profilu příjemek. Další informace o nastavení profilů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 Jestliže jsou vybrané řádky a u těchto řádků se vytiskne výdejka, jsou automaticky aktualizovány se stavem **Výdej**.
 
@@ -105,7 +105,7 @@ Jestliže jsou vybrané řádky a u těchto řádků se vytiskne výdejka, jsou 
 - **Výsledný stav:** Vyskladněno nebo částečně vyskladněno
 - **Výsledný stav v účetním systému:** Vyskladněno nebo částečně vyskladněno
 
-Poté, co bylo provedeno fyzické vyskladnění, lze řádky označit jako **Vyskladněno**. Výběrem řádku a jeho označením stavem **Vyskladněno** provedete volání v reálném čase k aktualizaci řádku objednávky v aplikaci Dynamics 365 for Retail. Poté, co byl řádek označen jako **Vyskladněno** na pokladním místě, je také aktualizován stav v účetním systému na **Vyskladněno** a skladové transakce budou odrážet to, že určené množství bylo sníženo.
+Poté, co bylo provedeno fyzické vyskladnění, lze řádky označit jako **Vyskladněno**. Výběrem řádku a jeho označením stavem **Vyskladněno** provedete volání v reálném čase k aktualizaci řádku objednávky. Poté, co byl řádek označen jako **Vyskladněno** na pokladním místě, je také aktualizován stav v účetním systému na **Vyskladněno** a skladové transakce budou odrážet to, že určené množství bylo sníženo.
 
 Při zpracování objednávek v čase můžete pro konkrétní řádek zpracovat částečná množství. Pokud je vybrán řádek a je provedena akce **Označit jako vyskladněné**, a množství jě větší než jedna, bude uživatel vyzván k množství. Zbývající množství k výdeji je vyplněno automaticky. Je-li určeno množství menší než zbývající, stav řádku se změní na **Částečně vyskladněno**. Když je v účetním systému aktualizován řádek objednávky, bude to také odrážet stav částečného vyskladnění, a množství zadané uživatelem se použije pro aktualizaci skladu.
 
@@ -122,7 +122,7 @@ Pokud je řádek objednávky vyskladněn s chybou, je nutné provést na řádku
 - **Výsledný stav:** Zabaleno nebo částečně zabaleno
 - **Výsledný stav v účetním systému:** Dodáno nebo částečně dodáno
 
-Tato akce označí řádky jako zabalené nebo částečně zabalené a vytiskne dodací list. Dodací list lze vytisknout pro ověření produktů, které jsou zabaleny dohromady. Formát dodacího listu je nakonfigurován v aplikaci Dynamics 365 for Retail a přidán do profilu příjemek. Další informace o nastavení profilů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Tato akce označí řádky jako zabalené nebo částečně zabalené a vytiskne dodací list. Dodací list lze vytisknout pro ověření produktů, které jsou zabaleny dohromady. Formát dodacího listu je nakonfigurován v aplikaci Retail a přidán do profilu příjemek. Další informace o nastavení profilů příjemek naleznete v tématu [Šablony pro příjemky a tisk](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Akce: Označit jako zabaleno**
 

@@ -19,18 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c642e4f1b29ac21b6736e770c84f343e9265961d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606888"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023629"
 ---
 # <a name="attributes-and-attribute-groups"></a>Atributy a skupiny atributů
 
 [!include [banner](includes/banner.md)]
 
-*Atributy* poskytují způsob k dalšímu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí (jako například **Velikost paměti**, **Kapacita pevného disku**, **Je kompatibilní se standardem Energy Star** atd). V aplikaci Microsoft Dynamics 365 for Finance and Operations lze atributy přidružit k různým entitám aplikace Retail, jako jsou kategorie produktů a maloobchodní sítě, a lze jim nastavit výchozí hodnoty. Produkty pak dědí atributy a výchozí hodnoty při přidružení ke kategorii produktu nebo maloobchodní síti. Výchozí hodnoty lze přepsat na úrovni jednotlivých produktů, na úrovni maloobchodní sítě nebo v maloobchodním katalogu.
+*Atributy* poskytují způsob k dalšímu popisu produktu a jeho vlastností prostřednictvím uživatelem definovaných polí (jako například **Velikost paměti**, **Kapacita pevného disku**, **Je kompatibilní se standardem Energy Star** atd). Atributy lze přidružit k různým maloobchodním entitám, jako jsou kategorie produktů a maloobchodní sítě, a lze jim nastavit výchozí hodnoty. Produkty pak dědí atributy a výchozí hodnoty při přidružení ke kategorii produktu nebo maloobchodní síti. Výchozí hodnoty lze přepsat na úrovni jednotlivých produktů, na úrovni maloobchodní sítě nebo v maloobchodním katalogu.
+
 
 Například typický televizní produkt může mít následující atributy.
 
@@ -53,7 +54,7 @@ Například typický televizní produkt může mít následující atributy.
 
 ## <a name="attributes-and-attribute-types"></a>Atributy a typy atributů.
 
-Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, které lze zadat pro určitý atribut. Aplikace Finance and Operations aktuálně podporují následující typy atributů:
+Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, které lze zadat pro určitý atribut. Podporovány jsou následující typy atributů:
 
 - **Měna** – Tento typ podporuje hodnotu měny. Může být vázaná (může tedy podporovat rozsah hodnot), nebo může zůstat otevřená.
 - **Datum a čas** – Tento typ podporuje hodnotu data a času. Může být vázaná nebo zůstat otevřená.
@@ -63,9 +64,9 @@ Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, kte
 - **Logická hodnota** – Tento typ podporuje binární hodnotu (**pravda** nebo **nepravda**).
 - **Odkaz** – Tento typ odkazuje na další atributy.
 
-### <a name="set-up-attribute-types-in-finance-and-operations"></a>Nastavení typů atributů v aplikaci Finance and Operations
+### <a name="set-up-attribute-types"></a>Nastavit typy atributů
 
-1. Přihlaste se ke klientovi účetního systému Finance and Operations jako manažer maloobchodního prodeje.
+1. Přihlaste se ke klientovi účetního systému jako manažer maloobchodního prodeje.
 2. Přejděte do nabídky **Řízení informací o produktech** &gt; **Nastavení** &gt; **Kategorie a atributy** &gt; **Typy atributů**.
 3. Vytvořte dva typy atributů typu **Text** typu, nastavte možnost **Pevný seznam** na **Yes**a poté přidejte seznam hodnot:
 
@@ -74,7 +75,7 @@ Atributy jsou založeny na *typech atributů*. Typ atributu určuje typ dat, kte
 
 ![Typy atributů](media/AttributeType.png)
 
-### <a name="set-up-an-attribute-in-finance-and-operations"></a>Nastavení atributu v aplikaci Finance and Operations
+### <a name="set-up-an-attribute"></a>Nastavit atribut
 
 1. Přihlaste se ke klientovi účetního systému jako manažer maloobchodního prodeje.
 2. Přejděte do nabídky **Řízení informací o produktech** &gt; **Nastavení** &gt; **Kategorie a atributy** &gt; **Atributy**.
@@ -101,13 +102,13 @@ Zde jsou uvedeny zbývající možnosti metadat atributů na stárnce **Atributy
 - Ignorovat velikost písmen a formát
 - Úplná shoda
 
-Tyto možnosti byly původně určené k vylepšení funkce vyhledávání pro online poutače. Ačkoli aplikace Finance and Operations neobsahuje online poutače, obsahuje eCommerce Publishing Software Development Kit (SDK). Odběratele mohou použít tuto sadu SDK pro vložení produktů do libovolných vyhledávacích indexů. I když jsou data produktu importována, odběratelé by stále měli mít možnost rozlišit prohledávatelná dat, data, na která se lze dotazovat atd. Tímto způsobem mohou vytvářet optimální index, aby zajistili, že na indexu budou pouze atributy, které by tam měly *podle jejich názoru* být.
+Tyto možnosti byly původně určené k vylepšení funkce vyhledávání pro online poutače. Ačkoli aplikace Retail neobsahuje online poutače, obsahuje eCommerce Publishing Software Development Kit (SDK). Odběratele mohou použít tuto sadu SDK pro vložení produktů do libovolných vyhledávacích indexů. I když jsou data produktu importována, odběratelé by stále měli mít možnost rozlišit prohledávatelná dat, data, na která se lze dotazovat atd. Tímto způsobem mohou vytvářet optimální index, aby zajistili, že na indexu budou pouze atributy, které by tam měly *podle jejich názoru* být.
 
 Informace o účelu těchto zbývajících možností naleznete v tématu [Přehled schématu vyhledávání ve službě SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Nastavení filtrů pro atributy
 
-Nastavení filtrů pro atributy vám umožňí určit, jak jsou zobrazeny filtry pro atributy v maloobchodním pokladním místě. Chcete-li přistoupit k nastavení filtru pro atribut, zvolte na stránce **Atributy** v aplikaci Finance and Operations atribut a poté vyberte v podokně akcí **Nastavení filtru**.
+Nastavení filtrů pro atributy vám umožňí určit, jak jsou zobrazeny filtry pro atributy v maloobchodním pokladním místě. Chcete-li přistoupit k nastavení filtru pro atribut, zvolte na stránce **Atributy** atribut a poté vyberte v podokně akcí **Nastavení filtru**.
 
 Stránka **Předvolby zobrazení filtru** obsahuje následující pole:
 
@@ -233,7 +234,7 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
     - Atributy produktu kanálu
 
     > [!NOTE]
-    > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
+    > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu, vztahují se na všechny maloobchodní produkty.
 
 ![Skupiny atributu produktu katalogu](media/CatalogProdAttrValues.png)
 
@@ -255,4 +256,4 @@ Výchozí hodnoty atributů lze přepsat na úrovni produktu pro jednotlivé vý
     - Atributy produktu kanálu
 
     > [!NOTE]
-    > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu v aplikaci Finance and Operations, vztahují se na všechny maloobchodní produkty.
+    > Pokud jsou vytvořeny sdílené atributy produktu a sdílená média produktu, vztahují se na všechny maloobchodní produkty.

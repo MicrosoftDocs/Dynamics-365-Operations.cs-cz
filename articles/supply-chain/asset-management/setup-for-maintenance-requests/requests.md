@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d238bb31537a21f46c252fbee400fe61901e650
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: dfd62a18d6b4cfc8c41d9025a8fc5deb8768ed3f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790471"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250914"
 ---
 # <a name="maintenance-requests"></a>Požadavky na údržbu
 
@@ -31,7 +31,7 @@ ms.locfileid: "1790471"
 
 [!include [banner](../../includes/preview-banner.md)]
 
-Můžete nastavit různé typy požadavků pro použití ve vaší firmě. Požadavky na údržbu jsou jeden typ. Požadavky na údržbu se používají k požadavku, aby byl pro konkrétní úlohu požadován pracovní příkaz. Požadavek na údržbu může vytvořit kterýkoli uživatel, který má přístup k funkcím správy majetku v aplikaci Microsoft Dynamics 365 for Finance and Operations. Plánovač nebo manažer může rozhodnout, zda má být požadavek na údržbu převeden na pracovní příkaz nebo zda má dokončit svůj životní cyklus.
+Můžete nastavit různé typy požadavků pro použití ve vaší firmě. Požadavky na údržbu jsou jeden typ. Požadavky na údržbu se používají k požadavku, aby byl pro konkrétní úlohu požadován pracovní příkaz. Požadavek na údržbu může vytvořit kterýkoli uživatel, který má přístup k funkcím správy majetku. Plánovač nebo manažer může rozhodnout, zda má být požadavek na údržbu převeden na pracovní příkaz nebo zda má dokončit svůj životní cyklus.
 
 ## <a name="view-maintenance-requests"></a>Zobrazit požadavky na údržbu
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10c8b548f2e295bf344459370ab6eecd577a0efb
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 5d55dfe26cd298372701aeb98a6aafc49977f381
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865986"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248624"
 ---
 # <a name="sales-and-marketing-overview"></a>Přehled prodeje a marketingu
 
@@ -41,7 +41,7 @@ V okně Prodej a marketing může v různých situacích dojít k počátečním
 
 ### <a name="campaigns"></a>Kampaně
 
-Kampaň cílí na kontakty od potenciálních zákazníků, zájemce, příležitosti a zákazníky, kteří byli vybráni k účasti v kampani. V aplikaci Microsoft Dynamics 365 for Finance and Operations můžete vytvořit několik typů kampaní, jako je telemarketing, poštovní kampaň a e-mailové kampaně a maximalizovat tak potenciál zákazníků. V průběhu kampaně a jak budete přijímat kladné odpovědi, můžete začít s prodejem u těchto příjemců, kteří na kampaň odpověděli kladně.
+Kampaň cílí na kontakty od potenciálních zákazníků, zájemce, příležitosti a zákazníky, kteří byli vybráni k účasti v kampani. V aplikaci Supply Chain Management můžete vytvořit několik typů kampaní, jako je telemarketing, poštovní kampaň a e-mailové kampaně a maximalizovat tak potenciál zákazníků. V průběhu kampaně a jak budete přijímat kladné odpovědi, můžete začít s prodejem u těchto příjemců, kteří na kampaň odpověděli kladně.
 
 ## <a name="sales"></a>Prodeje
 Prodejní funkce můžete použít k vytvoření nabídek, návaznému a křížovému prodeji u nových a stávajících zákazníků, pro vytváření prodejních objednávek a vytváření prodejních faktur pro zákazníky. Následující vývojový diagram znázorňuje obchodní proces pro prodej. [![Obchodní proces pro prodej](./media/sales01.jpg)](./media/sales01.jpg)

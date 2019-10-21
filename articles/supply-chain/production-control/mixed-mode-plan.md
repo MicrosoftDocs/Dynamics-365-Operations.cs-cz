@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e6a896b2a073e189b956ef189f63908f08606ed
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9186d69e86798a5bd6541432518e407eff5700cc
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543415"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250042"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Kombinovaný režim plánování – Kombinování zdrojů samostatné výroby, zpracování a štíhlé výroby
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma obsahuje informace o plánování ve smíšeném režimu. Při plánování ve smíšeném režimu můžete modelovat svůj dodavatelsko-odběratelský řetězec podle toku materiálu. Microsoft Dynamics 365 for Finance and Operations zajišťuje, že tok materiálu bude probíhat podle vašich modelů bez ohledu na vybrané zásady dodávek (kanbany, výrobní zakázky, nákupní objednávky, dávkové objednávky nebo převodní příkazy). 
+Toto téma obsahuje informace o plánování ve smíšeném režimu. Při plánování ve smíšeném režimu můžete modelovat svůj dodavatelsko-odběratelský řetězec podle toku materiálu. Dynamics 365 Supply Chain Management zajišťuje, že tok materiálu bude probíhat podle vašich modelů bez ohledu na vybrané zásady dodávek (kanbany, výrobní zakázky, nákupní objednávky, dávkové objednávky nebo převodní příkazy). 
 
 Můžete vybrat celkové strategie pro dodávání produktu bez ohledu na strukturu výrobku.  
 
@@ -39,7 +39,7 @@ Například máte ovládací prvek kanbanu ve shromáždění, kde jsou odebír�
 Rozlišovací schopnost zásad dodávek, které jsou použity při hlavním plánování závisí na dimenzích uskladnění, které jsou povoleny jako dimenze disponibility. K povolení hlavního plánování za účelem řízení doplňování a dodávání z různých typů skladových míst, (například oddělením dílenské výroby pro jiné výrobní jednotky, nebo rozdělením různých typů skladů materiálu a hotových výrobků) doporučujeme, abyste povolili pracoviště a sklad jako dimenze disponibility. Případně lze jako dimenzi disponibility vynechat sklad. V takovém případě při použití rozšířené správy skladu budou všechny přesuny ve skladu řízeny prací ve skladu, zatímco všech přesuny mezi sklady budou řízeny příslušnými kanbany.
 
 ## <a name="supply-policies"></a>Zásady zásobování
-Smíšený způsob plánování v aplikaci Finance and Operations řídí způsob dodávání výrobku na základě toho, jak jsou vydávány odvozené požadavky (spotřeba položek z kusovníku \[BOM\]). Podle typu objednávky systém automaticky kontroluje prostředky materiálů, které odpovídají požadavkům.  
+Smíšený způsob plánování řídí způsob dodávání výrobku na základě toho, jak jsou vydávány odvozené požadavky (spotřeba položek z kusovníku \[BOM\]). Podle typu objednávky systém automaticky kontroluje prostředky materiálů, které odpovídají požadavkům.  
 
 Zásady dodávek lze definovat na úrovni produktu nebo na libovolné rozlišovací schopnosti, která podporuje vaše požadavky. Rozlišovací schopnost zásady dodávek jsou definovány na stránce **Výchozí nastavení objednávky**.  
 
@@ -47,9 +47,9 @@ Zásady dodávek mohou být řízeny produktem, dimenzemi položek (konfigurace,
 
 Výchozí typ objednávky určuje, jaké objednávky vygeneruje hlavní plánování.  
 
-Bez ohledu na to, jak je modelován dodavatelsko-odběratelského řetězec, aplikace Finance and Operations podporuje vaši kompilaci zásad dodávek. Můžete mít výrobních zakázky, které byly vytvořeny z kanbanů. Případně lze nastavit dávkovou objednávku, která vyžaduje produkt, který se dodává převodem nebo kanbanem.  
+Bez ohledu na to, jak je modelován dodavatelsko-odběratelského řetězec, aplikace Supply Chain Management podporuje vaši kompilaci zásad dodávek. Můžete mít výrobních zakázky, které byly vytvořeny z kanbanů. Případně lze nastavit dávkovou objednávku, která vyžaduje produkt, který se dodává převodem nebo kanbanem.  
 
-Aplikace Finance and Operations zajišťuje, že tok materiálu se řídí modelem.  
+Aplikace Supply Chain Management zajišťuje, že tok materiálu se řídí modelem.  
 
 Sklad pro výdej materiálu je dynamicky přidělován za běhu po definování zásad dodávky.  
 
@@ -62,7 +62,7 @@ Spotřeba prostředků je důležitá funkce. Spotřeba prostředků umožňuje 
 
 Spotřeba prostředků vyžaduje, aby sklad, jehož materiály se vybírají ze skladu, byly přiřazeny na základě způsobu,jakým je produkt dodáván. Jinak řečeno systém za běhu najde prostředky, které by měly být použity pro výrobu. Na základě těchto prostředků, systém poté vyhledá výdejní sklad.  
 
-Pro práci, která je nezávislá na zásadách zásobování, není nutné změnit informace v Kusovníku, pokud dojde ke změně dodávky. Pro změny ad hoc se aplikace Finance and Operations ujistí, že materiály pocházejí ze správného skladu.
+Pro práci, která je nezávislá na zásadách zásobování, není nutné změnit informace v Kusovníku, pokud dojde ke změně dodávky. Pro změny ad hoc se aplikace Supply Chain Management ujistí, že materiály pocházejí ze správného skladu.
 
 ## <a name="process-manufacturing--the-production-type"></a>Procesní výroba – typ výroby
 Pro zajištění plné flexibility v kombinovaném režimu doporučujeme použít kusovníky výrobního typu pro všechny produkty. Potom můžete použít výrobní zakázky, kanbany, objednávky přenosu nebo nákupní objednávky k dodání produktu. Pro výrobní proces je nutné použít typ výroby **vzorce**, **souběžného produktu**, **vedlejšího produktu** nebo **položky plánování**. Kanbany a výrobní zakázky nelze použít pro tyto typy výroby.

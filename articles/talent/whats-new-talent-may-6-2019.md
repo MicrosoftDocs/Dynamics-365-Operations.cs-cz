@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (6. května 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového nebo změněného v aplikaci Dynamics 365 Talent (6. května 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/06/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c541bac532e878c8493a60d95c05c9104d4b96e1
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 6a4571abdb0e104af0a0657c75bf5a6b5764345a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741537"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023854"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-6-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (6. května 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-may-6-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Talent (6. května 2019)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 for Talent.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Změny v aplikaci Attract
 
@@ -45,9 +45,9 @@ Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Onboa
 
 Změny popsané v této části se vztahují na číslo sestavení 8.1.2282. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Microsoft Dynamics Lifecycle Services (LCS).
 
-### <a name="platform-update-26"></a>Aktualizace platformy 26
+### <a name="platform-update-26-for-finance-and-operations"></a>Ajtzakuzace Platform Update 26 for Finance and Operations
 
-Další podrobnosti o aktualizaci Platform Update 26 naleznete v tématu [Funkce Preview v aktualizaci Platform Update 26 aplikace Dynamics 365 for Finance and Operations (květen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+Další podrobnosti o aktualizaci Platform Update 26 for Finance and Operations naleznete v tématu [Funkce Preview v aktualizaci Platform Update 26 aplikace Dynamics 365 Finance and Operations (květen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Podpora entity Common Data Service pro vlastní pole
 
@@ -67,7 +67,7 @@ V této verzi můžete nyní aktualizovat finanční dimenzi pomocí možnosti *
 
 ### <a name="worker-address-created-in-common-data-service-isnt-synced-to-talent-317555"></a>Adresa pracovníka vytvořená v Common Data Service není synchronizovaná do aplikace Talent (317555)
 
-S touto změnou se adresy vytvořené v Common Data Service aktualizují v aplikace Talent Core HR.
+S touto změnou se adresy vytvořené v Common Data Service aktualizují v aplikace Talent: Core HR.
 
 
 ## <a name="in-preview"></a>Náhled

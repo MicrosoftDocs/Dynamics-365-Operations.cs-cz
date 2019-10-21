@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dd51fa667fd48b7bab64c3566b616631c6f9bcd1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557632"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249625"
 ---
 # <a name="cost-management-home-page"></a>Domovská stránka správy nákladů
 
@@ -69,5 +69,5 @@ Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a
 Názory, novinky a další informace o správě nákladů naleznete na [blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) a v [blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Ačkoliv některé z těchto článků byly vytvořeny pro předchozí verzi modulu Správa nákladů, stále se používají stejné koncepty a postupy jsou podobné jako v aktuální verzi.
 
 #### <a name="task-guides"></a>Průvodci záznamem úloh
-V aplikaci Finance and Operations je k dispozici další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.
+K dispozici je další nápověda v podobě průvodců záznamem úloh. Průvodce záznamem úloh zobrazíte kliknutím na tlačítko Nápověda na kterékoliv stránce.
 

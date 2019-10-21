@@ -1,6 +1,6 @@
 ---
-title: Co je nového a co se změnilo v aplikaci Dynamics 365 for Talent (18. června 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Talent (18. června 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/18/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-18
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: bfc90d6eec27e55364d4bf2279ffd32fb8d53ca8
-ms.sourcegitcommit: f21b2349967feb3db2016c8ff83a2b11957f8863
+ms.openlocfilehash: 059a0bad2f56b97a1708b64eab9d2adda6d2c8ad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "1691963"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009046"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-18-2019"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 for Talent (18. června 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-18-2019"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Talent (18. června 2019)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Změny v aplikaci Attract
 

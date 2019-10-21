@@ -1,6 +1,6 @@
 ---
-title: Získání podpory pro Dynamics 365 for Retail
-description: Tento článek vysvětluje, jak získat pomoc s Microsoft Dynamics 365 for Retail.
+title: Získání podpory pro Dynamics 365 Retail
+description: Tento článek vysvětluje, jak získat pomoc pro aplikaci Microsoft Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 225b39bb03fa3bbd0b3c3a24e4eb09a114d01904
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577837"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024999"
 ---
-# <a name="get-support-for-dynamics-365-for-retail"></a>Získání podpory pro Dynamics 365 for Retail
+# <a name="get-support-for-dynamics-365-retail"></a>Získání podpory pro Dynamics 365 Retail
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek vysvětluje, jak získat pomoc s Dynamics 365 for Retail.
+Tento článek vysvětluje, jak získat pomoc s Dynamics 365 Retail.
 
 ## <a name="contact-support"></a>Kontaktovat podporu
 
@@ -48,7 +48,7 @@ Chcete-li získat podporu pro aplikaci Retail, použijte zdroje v následující
 <tbody>
 <tr>
 <td>Zeptejte se komunity.</td>
-<td>Přejděte na stránku komunity <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> a vyhledejte odpovědi na své otázky od komunity Dynamics.</td>
+<td>Přejděte na stránku komunity <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a> a vyhledejte odpovědi na své otázky od komunity Dynamics.</td>
 </tr>
 <tr>
 <td>Použijte nástroj Hledání problému.</td>
@@ -74,7 +74,7 @@ Chcete-li získat podporu pro aplikaci Retail, použijte zdroje v následující
 Ohledně technických dotazů, které se vztahují k přihlášení a přístupu do CustomerSource, kurzů elektronického vzdělávání, vyhledávání, znalostní bázi, stahování souborů a chybám stránky nebo systému, přejděte na <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Web podpory</a>.</td>
 </tr>
 <tr>
-<td>Získejte nápovědu k dotazům týkajícím se licencí k aplikacím Retail nebo Finance and Operations.</td>
+<td>Získejte nápovědu k dotazům týkajících se licencí.</td>
 <td>Obraťte na partnera, prodejce pro velké zákazníky nebo prodejce společnosti Microsoft.</td>
 </tr>
 <tr>

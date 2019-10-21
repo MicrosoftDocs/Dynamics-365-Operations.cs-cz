@@ -1,6 +1,6 @@
 ---
-title: Přístup k funkcím náhledu v aplikaci Microsoft Dynamics 365 for Talent
-description: Toto téma popisuje, jak může správce povolit funkce náhledu, a uvádí seznam funkcí v aplikaci Microsoft Dynamics 365 for Talent, které jsou nyní povoleny pro náhled.
+title: Přístup k funkcím náhledu v aplikaci Microsoft Dynamics 365 Talent
+description: Toto téma popisuje, jak může správce povolit funkce náhledu, a uvádí seznam funkcí v aplikaci Microsoft Dynamics 365 Talent, které jsou nyní povoleny pro náhled.
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 6a5aa8d6ea72ec3d3910edea291c4340ab607326
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: e607c2ba4b544d60c97d98bd49b07d912d83ebc6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739580"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008695"
 ---
 # <a name="manage-preview-features"></a>Správa funkcí verze Preview
 
 [!include[banner](../includes/banner.md)]
 
-V rámci našeho průběžného přidávání schopností cyklu správy lidského kapitálu v aplikaci Microsoft Dynamics 365 for Talent chceme, aby zákazníci co nejdříve měli k dispozici nové funkce. Správci mohou zobrazit a používat funkce náhledu v rámci prostředí. Tyto funkce jsou téměř připraveny k obecné dostupnosti a prošly rozsáhlým testováním. Právě hledáme další z zpětnou vazbu od zákazníků a ověření před tím, než budou dostupné široké veřejnosti.
+V rámci našeho průběžného přidávání schopností cyklu správy lidského kapitálu v aplikaci Microsoft Dynamics 365 Talent chceme, aby zákazníci co nejdříve měli k dispozici nové funkce. Správci mohou zobrazit a používat funkce náhledu v rámci prostředí. Tyto funkce jsou téměř připraveny k obecné dostupnosti a prošly rozsáhlým testováním. Právě hledáme další z zpětnou vazbu od zákazníků a ověření před tím, než budou dostupné široké veřejnosti.
 
-Toto téma popisuje, jak lze povolit funkce náhledu, a uvádí seznam funkcí, které jsou nyní k dispozici pro náhled. Tento seznam bude aktualizován s tím, jak budou vydávány nové funkce pro všeobecnou dostupnost a nové funkce, které budou uvolněny k zobrazení náhledu. Při uvolnění funkcí k náhledu není vydáno žádné upozornění. Uživatelé jen uvidí funkce. Další informace o nových funkcích v aplikaci Talent získáte v části [Co je nového nebo změněného v aplikaci Dynamics 365 for Talent](./whats-new.md) a [Poznámky k verzi Dynamics 365 a Power Platform](https://docs.microsoft.com/business-applications-release-notes).
+Toto téma popisuje, jak lze povolit funkce náhledu, a uvádí seznam funkcí, které jsou nyní k dispozici pro náhled. Tento seznam bude aktualizován s tím, jak budou vydávány nové funkce pro všeobecnou dostupnost a nové funkce, které budou uvolněny k zobrazení náhledu. Při uvolnění funkcí k náhledu není vydáno žádné upozornění. Uživatelé jen uvidí funkce. Další informace o nových funkcích v aplikaci Talent získáte v části [Co je nového nebo změněného v aplikaci Dynamics 365 Talent](./whats-new.md) a [Poznámky k verzi Dynamics 365 a Power Platform](https://docs.microsoft.com/business-applications-release-notes).
 
 ## <a name="enable-or-disable-preview-features"></a>Povolit nebo zakázat funkce náhledu
 
@@ -40,9 +40,9 @@ Chcete-li získat přístup k funkcím náhledu, je nutné je nejprve povolit ve
 > [!IMPORTANT]
 > Když zapnete nastavení **Funkce náhledu**, povolíte tím funkce Náhledu pro všechny uživatele ve vaší organizaci, kteří jsou v prostředí. Vypnutím nastavení zakážete funkce náhledu a způsobíte, že budou uživatelům nepřístupné. Funkce náhledu mají v aplikaci Talent omezenou podporu. Mohou používat méně opatření pro soukromí a bezpečnostních opatření a nejsou zahrnuty do smlouvy o úrovni služeb (SLA) aplikace Talent. Neměli byste je používat ke zpracování osobních údajů (to znamená všech informací, které vás mohou identifikovat), nebo ke zpracování jiných dat, které podléhají požadavkům na vyhovění zákonům nebo předpisům.
 
-### <a name="attract"></a>Upoutat
+### <a name="attract"></a>Attract
 
-1. Přihlaste se do aplikace Microsoft Dynamics 365 for Talent: Attract.
+1. Přihlaste se do aplikace Microsoft Dynamics 365 Talent: Attract.
 2. V nabídce **Nastavení** (symbol ozubeného kola) v pravém horním rohu vyberte **Centrum pro správu**.
 3. Na kartě **Správa funkcí** vyberte možnost vedle položky **náhled funkce**, aby se zbarvila modře a uváděla informaci **Zapnuto**.
 
@@ -69,11 +69,11 @@ Chcete-li získat přístup k funkcím náhledu, je nutné je nejprve povolit ve
 
 ### <a name="onboard"></a>Zaškolení
 
-V současné době nejsou k dispozici žádné funkce náhledu pro Microsoft Dynamics 365 for Talent: Onboard.
+V současné době nejsou k dispozici žádné funkce náhledu pro Microsoft Dynamics 365 Talent: Onboard.
 
 ## <a name="features-that-are-currently-in-preview"></a>Funkce, které jsou aktuálně v náhledu
 
-### <a name="attract"></a>Upoutat
+### <a name="attract"></a>Attract
 
 - [Doporučení uchazeče](./intelligent-recommendations.md#candidate-recommendations) – Pokud je více než deset kandidátů nebo uchazečů, kteří mají životopisy nebo kompletní profily, se kandidáti nebo uchazeči, kteří nejvíce splňují požadavky na práci, objeví v části **Uchazeči k uvážení** na stránce dané práce.
 - [Doporučení práce](./intelligent-recommendations.md#job-recommendations) – Pokud je na vašem kariérním webu zveřejněno více než deset nabídek práce, Attract nabízí potenciálním uchazečům návrhy práce.

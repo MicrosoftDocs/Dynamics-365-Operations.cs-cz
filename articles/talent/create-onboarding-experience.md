@@ -1,6 +1,6 @@
 ---
 title: Začínáme s aplikací Onboard
-description: Toto téma vám pomůže začít pracovat s aplikací Microsoft Dynamics 365 for Talent - Onboard. Onboard pomáhá vašim novým zaměstnancům úspěšně začít tím, že jim přiřadí průvodce, který je hladce provede procesem zaškolení.
+description: Toto téma vám pomůže začít pracovat s aplikací Microsoft Dynamics 365 Talent - Onboard. Onboard pomáhá vašim novým zaměstnancům úspěšně začít tím, že jim přiřadí průvodce, který je hladce provede procesem zaškolení.
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 6526f320be7d18af92406149633b3e15d0be2291
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731206"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008121"
 ---
 # <a name="get-started-with-onboard"></a>Začínáme s aplikací Onboard
 
 [!include [banner](includes/banner.md)]
 
-Pomocí aplikace Microsoft Dynamics 365 for Talent: Onboard můžete svým novým zaměstnancům pomoci pracovat efektivněji a získat pocit, že do své nové role patří. Účinný proces zaškolení pomáhá novým zaměstnancům porozumět svým novým rolím. Rovněž jim dává náskok k navázání cenných vztahů, které jim pomohou zajistit úspěch.
+Pomocí aplikace Microsoft Dynamics 365 Talent: Onboard můžete svým novým zaměstnancům pomoci pracovat efektivněji a získat pocit, že do své nové role patří. Účinný proces zaškolení pomáhá novým zaměstnancům porozumět svým novým rolím. Rovněž jim dává náskok k navázání cenných vztahů, které jim pomohou zajistit úspěch.
 
 Proces zaškolení vám umožní rychle vytvořit průvosce zaškolením, který bude vítat nové zaměstnane dodá jim nadšení z připojení se k vaší organizaci.
 
@@ -48,4 +48,4 @@ Informace o tom, jak získat a používat aplikaci Onboard, naleznete v následu
 - [Vyzkoušejte nebo kupte aplikaci Onboard](https://dynamics.microsoft.com/talent/onboard/)
 - [Novinky](./whats-new.md)
 - [Poznámky k verzi](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Zskejte podporu](./talent-support.md)
+- [Získání podpory](./talent-support.md)

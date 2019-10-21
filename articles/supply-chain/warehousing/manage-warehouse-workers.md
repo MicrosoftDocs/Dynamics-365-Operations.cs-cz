@@ -1,6 +1,6 @@
 ---
 title: Řízení pracovníků skladu
-description: Tento článek popisuje, jak aplikace Dynamics 365 for Finance and Operations pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
+description: Tento článek popisuje, jak aplikace Dynamics 365 Supply Chain Management - Sklady pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f0de87e10f9213838dd5e5436b8b5699b19547bf
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572551"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018614"
 ---
 # <a name="manage-warehouse-workers"></a>Řízení pracovníků skladu
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje, jak aplikace Microsoft Dynamics 365 for Finance and Operations pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
+Tento článek popisuje, jak aplikace Dynamics 365 Supply Chain Management - Sklady pomáhá řídit a sledovat práci, kterou provádí zaměstnanci ve skladech.
 
 Používáte-li funkci řízení skladu, všechny skladové operace pracovníků jsou označovány jako *práce*. Práce jako například výdej, přemístění a inventura zásob na skladě se zaznamenává pomocí mobilního zařízení. Předtím, než pracovník skladu může pracovat, musí být přidružen k pracovníkovi v modulu Lidské zdroje. Každý účet **Pracovník** může mít asociováno více skladů, se kterými jsou uživatelé přidruženi. Tito pracovní uživatelé mohou pracovat v různých skladech a mohou mít různé úrovně přístupu do různých nabídek mobilního zařízení. Můžete považovat pracovní uživatele skladu jako více přihlášení pro vybraného pracovníka. Každý pracovní uživatel má výchozí sklad a konkrétní workflow jsou zveřejněny pomocí položek nabídky, které jsou k dispozici pro pracovní uživatele. 
 

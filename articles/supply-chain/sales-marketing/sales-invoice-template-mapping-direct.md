@@ -1,6 +1,6 @@
 ---
-title: Synchronizace hlaviček a řádků prodejní faktury přímo z aplikace Finance and Operations do Sales
-description: Toto téma se věnuje šablonám a základní úloze, které se používají k synchronizaci záhlaví a řádek prodejní faktury přímo z aplikace Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Sales.
+title: Synchronizace hlaviček a řádků faktury přímo z aplikace Supply Chain Management do aplikace Sales
+description: Toto téma se věnuje šablonám a základní úloze, které se používají k synchronizaci záhlaví a řádek prodejní faktury přímo z aplikace Dynamics 365 Supply Chain Management do Dynamics 365 Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -19,22 +19,22 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70fc842463254b02d812447f93970a9da676057d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 94442eb11aac3faf8a412944617686853a12128d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552923"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251654"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synchronizace hlaviček a řádků prodejní faktury přímo z aplikace Finance and Operations do aplikace Sales
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma se věnuje šablonám a základní úloze, které se používají k synchronizaci záhlaví a řádek prodejní faktury přímo z aplikace Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Sales.
+Toto téma se věnuje šablonám a základní úloze, které se používají k synchronizaci záhlaví a řádek prodejní faktury přímo z aplikace Dynamics 365 Supply Chain Management do Dynamics 365 Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Tok dat ve zpeněžení potenciálního zákazníka
 
-Řešení Zpeněžení potenciálního zákazníka používá funkci Integrace dat k synchronizaci dat mezi instancemi aplikací Finance and Operations a Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Finance and Operations a Sales. Následující obrázek znázorňuje, jak jsou data synchronizována mezi aplikacemi Finance and Operations a Sales.
+Řešení Zpeněžení potenciálního zákazníka používá funkci Integrace dat k synchronizaci dat mezi instancemi aplikací Supply Chain Management a Sales. Šablony zpeněžení potenciálního zákazníka dostupné v rámci funkce integrace dat umožňují tok dat účtů, kontaktů, produktů, prodejních kvót, prodejních objednávek a prodejních faktur mezi aplikacemi Finance and Operations a Sales. Následující obrázek znázorňuje, jak jsou data synchronizována mezi aplikacemi Supply Chain Management a Sales.
 
 [![Tok dat ve zpeněžení potenciálního zákazníka](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -52,30 +52,30 @@ K synchronizaci hlaviček a řádků prodejních faktur z aplikace Finance and O
 
 Následující úlohy synchronizace jsou vyžadovány před synchronizací záhlaví prodejní faktury a mohou se objevit řádky:
 
-- Produkty (Fin and Ops do Sales) - přímo
-- Účty (Sales do Fin and Ops) - přímo (pokud se používají)
-- Kontakty (Sales do Fin and Ops) - přímo (pokud se používají)
-- Záhlaví a řádky prodejní objednávky (Fin and Ops do Sales) - přímo
+- Produkty (Supply Chain Management do Sales) – Přímo
+- Obchodní vztahy (Sales do Supply Chain Management) – Přímo (pokud se používá)
+- Kontakty (Sales do Supply Chain Management) – Přímo (pokud se používá)
+- Hlavička a řádky prodejní objednávky (Supply Chain Management do Sales): OrderHeader
 
 ## <a name="entity-set"></a>Sada entit
 
-| Finance and Operations                               | Prodej.          |
+| Správa dodavatelsko-odběratelského řetězce                              | Prodej.          |
 |------------------------------------------------------|----------------|
 | Záhlaví prodejní faktury odběratele udržované externě | Faktury       |
 | Řádky prodejní faktury odběratele udržované externě   | InvoiceDetails |
 
 ## <a name="entity-flow"></a>Tok entity
 
-Prodejní faktury jsou vytvořeny v aplikaci Finance and Operations a jsou synchronizovány do aplikace Sales.
+Prodejní faktury jsou vytvořeny v aplikaci Supply Chain Management a jsou synchronizovány do aplikace Sales.
 
 > [!NOTE]
-> Aktuálně není daň související s náklady na záhlaví prodejní faktury zahrnuta do synchronizace z aplikace Finance and Operations do aplikace Sales. Aplikace Sales nepodporuje daňové informace na úrovni záhlaví. Daň, která souvisí s náklady na úrovni řádku, bude zahrnuta do procesu synchronizace.
+> Aktuálně není daň související s náklady na záhlaví prodejní faktury zahrnuta do synchronizace z aplikace Supply Chain Management do aplikace Sales. Aplikace Sales nepodporuje daňové informace na úrovni záhlaví. Daň, která souvisí s náklady na úrovni řádku, bude zahrnuta do procesu synchronizace.
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Řešení Potenciální zákazník pro hotovost v aplikaci Sales
 
 - Pole **Číslo faktury** bylo přidáno do entity **Faktura** a zobrazí se na stránce.
-- Tlačítko **Vytvořit fakturu** je na stránce **Prodejní objednávka** skryto, protože faktury budou vytvořeny v aplikaci Finance and Operations a synchronizovány do aplikace Sales. Stránku **Faktura** nelze upravovat, protože faktury budou synchronizovány z aplikace Finance and Operations
-- Hodnota **Stav prodejní objednávky** se změní automaticky na **Vyfakturováno**, když byla související faktura synchronizována z aplikace Finance and Operations do aplikace Sales. Vlastník prodejní objednávky, ze které byla faktura vytvořena, je přiřazen jako vlastník faktury. Vlastník prodejní objednávky tudíž může zobrazit fakturu.
+- Tlačítko **Vytvořit fakturu** je na stránce **Prodejní objednávka** skryto, protože faktury budou vytvořeny v aplikaci Supply Chain Management a synchronizovány do aplikace Sales. Stránku **Faktura** nelze upravovat, protože faktury budou synchronizovány z aplikace Supply Chain Management.
+- Hodnota **Stav prodejní objednávky** se změní automaticky na **Vyfakturováno**, když byla související faktura synchronizována z aplikace Supply Chain Management do aplikace Sales. Vlastník prodejní objednávky, ze které byla faktura vytvořena, je přiřazen jako vlastník faktury. Vlastník prodejní objednávky tudíž může zobrazit fakturu.
 
 ## <a name="preconditions-and-mapping-setup"></a>Nastavení mapování a předpokladů
 
@@ -103,7 +103,7 @@ Přejděte na **Nastavení** > **Správa** > **Nastavení systému** > **Prodej*
 #### <a name="salesinvoiceline-task"></a>Úloha SalesInvoiceLine
 
 - Ujistěte se, že existuje požadované mapování pro položku **Měrná jednotka**.
-- Ujistěte se, že existuje požadovaná mapa hodnot pro **SalesUnitSymbol** v aplikaci Finance and Operations.
+- Ujistěte se, že existuje požadovaná mapa hodnot pro **SalesUnitSymbol** v aplikaci Supply Chain Management.
 
     Hodnota šablony, která má mapu hodnoty, je definována pro o**SalesUnitSymbol** do **Quantity\_UOM**.
 
@@ -115,7 +115,7 @@ Přejděte na **Nastavení** > **Správa** > **Nastavení systému** > **Prodej*
 Na následujícím obrázku je příklad mapování šablony v integraci dat. 
 
 > [!NOTE]
-> Mapování ukazuje, jaké informace o poli budou synchronizovány z aplikace Sales do aplikace Finance and Operations.
+> Mapování ukazuje, jaké informace o poli budou synchronizovány z aplikace Sales do aplikace Supply Chain Management.
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
@@ -129,18 +129,12 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 ## <a name="related-topics"></a>Související témata
 
-[zpeněžení potenciálního zákazníka](prospect-to-cash.md)
+[Zpeněžení potenciálního zákazníka](prospect-to-cash.md)
 
-[Synchronizace účtů přímo z aplikace Sales na odběratele v aplikaci Finance and Operations](accounts-template-mapping-direct.md)
+[Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v Supply Chain Management.](accounts-template-mapping-direct.md)
 
-[Synchronizace produktů přímo z aplikace Finance and Operations na produkty v aplikaci Sales](products-template-mapping-direct.md)
+[Synchronizace produktů přímo z aplikace Supply Chain Management do produktů v Sales](products-template-mapping-direct.md)
 
-[Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Finance and Operations](contacts-template-mapping-direct.md)
+[Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synchronizace hlaviček a řádků prodejní objednávky přímo z aplikace Finance and Operations do aplikace Sales](sales-order-template-mapping-direct-two-ways.md)
-
-
-
-
-
-
+[Synchronizace hlaviček a řádků prodejní objednávky přímo z aplikace Supply Chain Management do aplikace Sales](sales-order-template-mapping-direct-two-ways.md)

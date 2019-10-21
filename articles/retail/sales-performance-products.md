@@ -1,6 +1,6 @@
 ---
 title: Posouzení prodejních výsledků podle produktu
-description: V aplikaci Microsoft Dynamics 365 for Retail máte možnost studovat ziskovost pro předních 10 produktů.
+description: V aplikaci Dynamics 365 Retail máte možnost studovat ziskovost pro předních 10 produktů.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7796aa830c99bd0fd5784ff95e509767a3b55b44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546379"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024947"
 ---
 # <a name="assess-sales-performance-by-product"></a>Posouzení prodejních výsledků podle produktu
 
 [!include [banner](includes/banner.md)]
 
-V aplikaci Microsoft Dynamics 365 for Retail máte možnost studovat ziskovost pro předních 10 produktů.
+V aplikaci Dynamics 365 Retail máte možnost studovat ziskovost pro předních 10 produktů.
 
-V rámci aplikace Dynamics 365 for Retail mohou uživatelé také studovat ziskovost nejlepších produktů (10 až 100) v rámci rozdílných úrovní organizační hierarchie na základě jednoho z následujících kritérií:
+V rámci aplikace Retail mohou uživatelé také studovat ziskovost nejlepších produktů (10 až 100) v rámci rozdílných úrovní organizační hierarchie na základě jednoho z následujících kritérií:
 
 - Prodejní částka
 - Množství

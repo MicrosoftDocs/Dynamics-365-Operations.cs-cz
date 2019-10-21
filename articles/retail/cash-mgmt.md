@@ -1,6 +1,6 @@
 ---
 title: Vylepšení v řízení hotovosti
-description: Toto téma popisuje vylepšení řízení hotovosti v POS pro Dynamics 365 for Retail.
+description: Toto téma popisuje vylepšení řízení hotovosti v POS pro Dynamics 365 Retail.
 author: anpurush
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 845cba3b536b0f800b7c7c4eecee46a068ca8cff
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 49d70a8d983bf3475e01f8fcb80d569b13568485
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1630046"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019522"
 ---
 # <a name="cash-management-improvements"></a>Vylepšení v řízení hotovosti
 
@@ -32,9 +32,11 @@ ms.locfileid: "1630046"
 
 Řízení hotovosti je klíčovou funkcí pro maloobchodní prodejce ve fyzických prodejnách. Maloobchodní prodejci chtějí, aby jejich obchody měly systémy, které jim mohou poskytnout úplnou sledovatelnost a zodpovědnost za hotovost a její pohyb mezi různými registračními pokladnami a pokladníky v obchodě. Musí být schopni odsouhlasit všechny rozdíly a určit zodpovědnosti.
 
-Microsoft Dynamics 365 for Retail má schopnosti řízení hotovosti ve své aplikaci POS. Avšak ve verzích aplikace Retail starších než 10.0.3 funkce řízení hotovosti není dostatečně robustní, aby poskytovala úplnou sledovatelnost pohybů hotovosti v obchodech. Ačkoliv maloobchodní prodejci mohou odsouhlasit hotovost obchodu, nemohou v případě nesrovnalostí v hotovosti přesně stanovit zodpovědnost.
 
-V aplikaci Microsoft Dynamics 365 for Retail verze 10.0.3 a novějších získají maloobchodní prodejci sledovatelnost pro zpracování hotovosti. Jako součást této sledovatelnosti mohou maloobchodní prodejci definovat trezory, vytvářet dvoustranné hotovostní transakce a odsouhlasit transakce řízení hotovosti.
+Microsoft Dynamics 365 Retail má schopnosti řízení hotovosti ve své aplikaci POS. Avšak ve verzích aplikace Retail starších než 10.0.3 funkce řízení hotovosti není dostatečně robustní, aby poskytovala úplnou sledovatelnost pohybů hotovosti v obchodech. Ačkoliv maloobchodní prodejci mohou odsouhlasit hotovost obchodu, nemohou v případě nesrovnalostí v hotovosti přesně stanovit zodpovědnost.
+
+
+V aplikaci Retail verze 10.0.3 a novějších získají maloobchodní prodejci sledovatelnost pro zpracování hotovosti. Jako součást této sledovatelnosti mohou maloobchodní prodejci definovat trezory, vytvářet dvoustranné hotovostní transakce a odsouhlasit transakce řízení hotovosti.
 
 ## <a name="set-up-traceability-and-define-safes"></a>Nastavení sledovatelnosti a definování trezorů
 

@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent (16. dubna 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (16. dubna 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/16/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: adf8f470b00a565c62a27f857d490c6c000b21d8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 0781a479ebf37334d8eba18ea6d69d7cfb9db9ea
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517499"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024130"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-16-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent (16. dubna 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (16. dubna 2019)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 for Talent.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Změny v aplikaci Attract
 
@@ -47,11 +47,11 @@ Změny popsané v této části se vztahují na číslo sestavení 8.1.2239. Č�
 
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Entity oblast kompenzace, úroveň kompenzace, možnost zaměstnaneckých výhod a typ dovedností v Common Data Service jsou aktualizovány a zahrnují podporu polí odběratelů
 
-V tomto vydání byly tyto entity Common Data Service aktualizovány tak, aby obsahovaly možnost zahrnout vlastní pole přidané prostřednictvím aplikace Talent (Core HR).
+V tomto vydání byly tyto entity Common Data Service aktualizovány tak, aby obsahovaly možnost zahrnout vlastní pole přidané prostřednictvím aplikace Talent: Core HR.
 
 ### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Nová entita Common Data Service podporuje: pravidla připsání kompenzace, plán variabilní kompenzace, variabilní kompenzaci
 
-V této verzi byly do Common Data Service přidány entity pravidla připsání kompenzace, plánu variabilní kompenzace a variabilní kompenzace. Tyto entity rovněž podporují vlastní pole přidaná prostřednictvím aplikace Talent (Core HR).
+V této verzi byly do Common Data Service přidány entity pravidla připsání kompenzace, plánu variabilní kompenzace a variabilní kompenzace. Tyto entity rovněž podporují vlastní pole přidaná prostřednictvím aplikace Talent: Core HR.
 
 ### <a name="powerbi-refresh-issues-314342"></a>Problémy s aktualizací PowerBI (314342)
 
@@ -95,6 +95,6 @@ S touto změnou se při zadávání polí názvů zjistí duplicity a stav zobra
 
 ### <a name="email-support-for-alerts"></a>Podpora e-mailu pro výstrahy
 
-S aktualizací Platform Update 25 mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěny událostí.
+V aktualizaci Platform Update 25 for Finance and Operations mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěna událostí.
 
 

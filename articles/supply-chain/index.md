@@ -1,9 +1,9 @@
 ---
-title: Domovská stránka správy dodavatelsko-odběratelského řetězce
-description: Tato stránka poskytuje seznam témat nápovědy a dalších zdrojů pro funkce správy dodavatelsko-odběratelského řetězce v Microsoft Dynamics 365 for Finance and Operations.
-author: ShylaThompson
+title: Zdroje nápovědy pro Supply Chain Management
+description: Tato stránka poskytuje seznam témat nápovědy a dalších zdrojů pro funkce aplikace Supply Chain Management.
+author: josaw1
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557585"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278317"
 ---
-# <a name="supply-chain-management-home-page"></a>Domovská stránka správy dodavatelsko-odběratelského řetězce
+# <a name="help-resources-for-supply-chain-management"></a>Zdroje nápovědy pro Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
-Toto téma poskytuje seznam témat nápovědy a dalších zdrojů pro funkce správy dodavatelsko-odběratelského řetězce v Microsoft Dynamics 365 for Finance and Operations. 
+Toto téma poskytuje seznam témat nápovědy a dalších zdrojů v Dynamics 365 Supply Chain Management. 
 
 ## <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 Přejděte na web <a href="https://roadmap.dynamics.com/">Přehled Microsoft Dynamics 365</a> a zjistěte, jaké nové funkce se vydávají a jaké se chystají. 
@@ -38,6 +38,7 @@ Přejděte na web <a href="https://roadmap.dynamics.com/">Přehled Microsoft Dyn
 
 Vyberte oblast funkce, o které chcete získat informace.
 
+- [Správa majetku](asset-management/index.md)
 - [Nákladové účetnictví](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Správa nákladů](cost-management/cost-management-home-page.md)  
 - [Řízení zásob](inventory/inventory-home-page.md)
@@ -49,6 +50,10 @@ Vyberte oblast funkce, o které chcete získat informace.
 - [Řízení služeb](service-management/service-management-home-page.md)
 - [Správa přepravy](transportation/transportation-management-overview.md)
 - [Řízení skladu](warehousing/warehouse-configuration.md)
+
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
+
+Pro více informací o Dynamics 365 Finance přejděte na stránku [Zdroje nápovědy pro Dynamics 365 Finance](../finance/index.md).
 
 ## <a name="videos"></a>Videa
 
@@ -113,6 +118,6 @@ Výrobě a správě dodavatelského řetězce se věnuje spousta témat v <a hr
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilita ve skladu usnadněná aplikací Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## <a name="elearning-courses"></a>Kurzy elektronického vzdělávání
-Informace o školeních Microsoft Dynamics 365 for Finance and Operations naleznete na <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Výukovém portálu Microsoft Dynamics</a>. (vyžaduje účet CustomerSource) 
+Informace o školeních Dynamics 365 naleznete na <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Výukovém portálu Microsoft Dynamics</a>. (vyžaduje účet CustomerSource) 
 
 

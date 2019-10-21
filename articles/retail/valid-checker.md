@@ -1,6 +1,6 @@
 ---
 title: Kontrola konzistence maloobchodních transakcí
-description: Toto téma popisuje funkci kontroly konzistence maloobchodních transakcí v aplikaci Microsoft Dynamics 365 for Retail.
+description: Toto téma popisuje funkci kontroly konzistence maloobchodních transakcí v aplikaci Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790414"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018406"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Kontrola konzistence maloobchodních transakcí
 
@@ -31,9 +31,9 @@ ms.locfileid: "1790414"
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-Toto téma popisuje funkci kontroly konzistence maloobchodních transakcí uvedenou v aplikaci Microsoft Dynamics 365 for Finance and Operations, verze 8.1.3. Kontrola konzistence identifikuje a izoluje nekonzistentní transakce před tím, než se dostanou k procesu zaúčtování výkazů.
+Toto téma popisuje funkci kontroly konzistence maloobchodních transakcí. Kontrola konzistence identifikuje a izoluje nekonzistentní transakce před tím, než se dostanou k procesu zaúčtování výkazů.
 
-Při zaúčtování výkazu v aplikaci Microsoft Dynamics 365 for Retail může zaúčtování selhat kvůli nekonzistentním datům v tabulkách maloobchodních transakcí. Problém s daty může být způsoben nepředvídanými potížemi v aplikaci Point of Sale (POS), nebo tím, že transakce byly nesprávně naimportovány z POS systémů třetích stran. Příklady toho, jak mohou tyto nekonzistence vypadat, zahrnují: 
+Při zaúčtování výkazu v aplikaci Retail může zaúčtování selhat kvůli nekonzistentním datům v tabulkách maloobchodních transakcí. Problém s daty může být způsoben nepředvídanými potížemi v aplikaci Point of Sale (POS), nebo tím, že transakce byly nesprávně naimportovány z POS systémů třetích stran. Příklady toho, jak mohou tyto nekonzistence vypadat, zahrnují: 
 
 - Celková částka transakce v tabulce záhlaví neodpovídá celkové částce transakce na řádcích.
 - Počet řádků v tabulce záhlaví neodpovídá počtu řádků v tabulce transakcí.

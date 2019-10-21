@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14801f3aa486da3af252695a3e2ccd58c0e9059
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 37378b85b90f91c74da717f0a25c1847ac0b1598
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865962"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251286"
 ---
 # <a name="sales-agreements-overview"></a>Přehled prodejních smluv
 
@@ -99,14 +99,14 @@ Pokud jste vytvořili (vydali) prodejní objednávku proti prodejní smlouvě, n
 | Množství                                                          | Pokud zadáte množství přesahující množství, které je specifikováno na řádku prodejní smlouvy, kde je označeno pole **Max je vynuceno**, zobrazí se zpráva s dotazem, zda chcete uložit upravené množství. Klepněte na tlačítko **Ano** pro odebrání odkazu na řádek prodejní smlouvy a přepočítání ceny. Klepněte na tlačítko **Ne** pro odebrání odkazu na řádek prodejní smlouvy bez přepočítání ceny.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Vrácení zboží objednaného z prodejní smlouvy
-Když odběratel vrací produkt, který byl objednán z prodejní smlouvy, Microsoft Dynamics 365 for Finance and Operations může vyhledat a automaticky aktualizovat závazek prodejní smlouvy tak, aby odrážel změny v množství nebo částce. Vytvořením vratky na základě původní prodejní objednávky, která je propojena s prodejní smlouvou, vytvoříte vztah mezi závazkem prodejní smlouvy, řádkem prodejní objednávky a fakturou vratky.  
+Když odběratel vrací produkt, který byl objednán z prodejní smlouvy, aplikace Supply Chain Management může vyhledat a automaticky aktualizovat závazek prodejní smlouvy tak, aby odrážel změny v množství nebo částce. Vytvořením vratky na základě původní prodejní objednávky, která je propojena s prodejní smlouvou, vytvoříte vztah mezi závazkem prodejní smlouvy, řádkem prodejní objednávky a fakturou vratky.  
 
 Pokud nechcete odečíst množství vrácených položek ze závazku prodejní smlouvy, můžete použít ovládací prvek **Odebrat odkaz** na stránce **Vratka** k odebrání propojení mezi vratkou a závazkem prodejní smlouvy. Pokud budete muset obnovit propojení později, klepněte na tlačítko **Vytvořit odkaz**.  
 
 **Poznámka:** Vratku lze propojit pouze s jednou prodejní smlouvou. Pokud odběratel vrací více než jeden produkt, který byl objednán z více než jedné prodejní smlouvy, musíte vytvořit novou vratku pro každý produkt a vytvořit odkaz na odpovídající prodejní smlouvy.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatické hledání prodejní smlouvy
-V některých situacích, kdy vytváření prodejních objednávek proběhlo nepřímo, například když vytvoříte dobropis nebo mezipodnikové prodejní objednávky, můžete určit, zda aplikace Microsoft Dynamics 365 for Finance and Operations automaticky vyhledá použitelné prodejní smlouvy.
+V některých situacích, kdy vytváření prodejních objednávek proběhlo nepřímo, například když vytvoříte dobropis nebo mezipodnikové prodejní objednávky, můžete určit, zda systém automaticky vyhledá použitelné prodejní smlouvy.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Finanční dimenze pro prodejní smlouvy
 Můžete kopírovat finanční dimenze, záhlaví dokladů nebo jednotlivé řádky prodejní smlouvy. Dimenze pro záhlaví smlouvy nebo řádku smlouvy lze změnit kdykoliv. V takovém případě dimenze jsou automaticky zkopírovány do záhlaví vydání nebo řádku vydání u vydané objednávky.

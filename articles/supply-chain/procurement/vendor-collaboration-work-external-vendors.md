@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546702"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250180"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Dodavatelská spolupráce s externími dodavateli
 
 [!include [banner](../includes/banner.md)]
 
-Modul **Spolupráce s dodavateli** je zaměřen na dodavatele, kteří nemají integraci výměny elektronických data (EDI) s aplikací Microsoft Dynamics 365 for Finance and Operations. To umožňuje dodavatelům práci s nákupními objednávkami, fakturami, informace o zásobách dodávek a požadavky na nabídku a také jim dává možnost mít přístup k části jejich dodavatelských hlavních dat. Toto téma vysvětluje, jak můžete spolupracovat s externími dodavateli, kteří používají rozhraní dodavatelské spolupráce k práci s nákupními objednávkami, požadavky na nabídku a zásobami dodávek. Také vysvětluje, jak konkrétnímu dodavateli umožnit používání dodavatelské spolupráce a definovat informace, které dodavatelé uvidí při odpovídání na nákupní objednávku.
+Modul **Spolupráce s dodavateli** je zaměřen na dodavatele, kteří nemají integraci výměny elektronických data (EDI) s aplikací Microsoft Dynamics 365 Supply Chain Management. To umožňuje dodavatelům práci s nákupními objednávkami, fakturami, informace o zásobách dodávek a požadavky na nabídku a také jim dává možnost mít přístup k části jejich dodavatelských hlavních dat. Toto téma vysvětluje, jak můžete spolupracovat s externími dodavateli, kteří používají rozhraní dodavatelské spolupráce k práci s nákupními objednávkami, požadavky na nabídku a zásobami dodávek. Také vysvětluje, jak konkrétnímu dodavateli umožnit používání dodavatelské spolupráce a definovat informace, které dodavatelé uvidí při odpovídání na nákupní objednávku.
 
 Další informace o tom, co mohou externí dodavatelé provádět v rozhraní spolupráce dodavatelů, uvádí téma [Spolupráce dodavatelů s odběrateli](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informace v tomto tématu o dodavatelské spolupráci se vztahují pouze na aktuální verzi aplikace Finance and Operations. V aplikaci Microsoft Dynamics AX 7.0 (únor 2016) a Microsoft Dynamics AX 7.0.1 (květen 2016) můžete spolupracovat s dodavateli pomocí modulu **Portál pro dodavatele**. Informace o modulu **Portál pro dodavatele** naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md).
+> Informace v tomto tématu o dodavatelské spolupráci se vztahují pouze na aktuální verzi aplikace Supply Chain Management. V aplikaci Microsoft Dynamics AX 7.0 (únor 2016) a Microsoft Dynamics AX 7.0.1 (květen 2016) můžete spolupracovat s dodavateli pomocí modulu **Portál pro dodavatele**. Informace o modulu **Portál pro dodavatele** naleznete v tématu [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md).
 
 Další informace o tom, jak mohou dodavatelé používat spolupráci s dodavateli v procesech fakturace, uvádí téma [Pracovní prostor fakturace dodavatelské spolupráce](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Informace o zřizování nových uživatelů pro spolupráci s dodavateli uvádí téma [Správa uživatelů dodavatelské spolupráce](manage-vendor-collaboration-users.md).
 
@@ -51,7 +51,7 @@ Pokud musíte přidat zprávy ve více jazycích, vytvořte samostatné zprávy 
 
 ## <a name="setting-the-vendor-collaboration-options-for-a-specific-vendor"></a>Nastavení možností spolupráce pro konkrétního dodavatele
 
-Správce konfiguruje obecná nastavení pro dodavatelskou spolupráce v aplikaci Finance and Operations, jako jsou například role zabezpečení, které jsou k dispozici pro všechny dodavatele, se kterými spolupracujete. Existují však také nastavení, která se můžou lišit pro každý účet dodavatele. Tato nastavení byste měli nakonfigurovat.
+Správce konfiguruje obecná nastavení pro dodavatelskou spolupráci, jako jsou například role zabezpečení, které jsou k dispozici pro všechny dodavatele, se kterými spolupracujete. Existují však také nastavení, která se můžou lišit pro každý účet dodavatele. Tato nastavení byste měli nakonfigurovat.
 
 - Povolte spolupráci s dodavatelem.
 - Určete, zda má dodavatel vidět informace o ceně.
@@ -71,7 +71,7 @@ Pokud chcete sdílet informace o ceně pro nákupní objednávky prostřednictv�
 
 ### <a name="sending-a-po-to-a-vendor"></a>Odeslání nákupní objednávky dodavateli
 
-Nákupní objednávky jsou připravovány v modulu Finance and Operations. Pokud nákupní objednávka bude mít stav **Schváleno**, odesíláte ji dodavateli zvolením možnosti **Odeslat potvrzení** na stránce **Nákupní objednávka**. Stav nákupní objednávky se změní na **V externí revizi**. Po odeslání nákupní objednávky ji dodavatel může zobrazit na stránce **Nákupní objednávky ke kontrole** v rozhraní spolupráce dodavatele. Dodavatel pak může nákupní objednávku přijmout, odmítnout nebo pro ni navrhnout změny. Dodavatel může také přidat komentáře pro předávání informací, jako jsou například změny v nákupní objednávce. Pokud chcete tohoto dodavatele upozornit na novou nákupní objednávku, můžete také nákupní objednávky odeslat e-mailem pomocí systému správy tisku.
+Nákupní objednávky se připravují v Supply Chain Management. Pokud nákupní objednávka bude mít stav **Schváleno**, odesíláte ji dodavateli zvolením možnosti **Odeslat potvrzení** na stránce **Nákupní objednávka**. Stav nákupní objednávky se změní na **V externí revizi**. Po odeslání nákupní objednávky ji dodavatel může zobrazit na stránce **Nákupní objednávky ke kontrole** v rozhraní spolupráce dodavatele. Dodavatel pak může nákupní objednávku přijmout, odmítnout nebo pro ni navrhnout změny. Dodavatel může také přidat komentáře pro předávání informací, jako jsou například změny v nákupní objednávce. Pokud chcete tohoto dodavatele upozornit na novou nákupní objednávku, můžete také nákupní objednávky odeslat e-mailem pomocí systému správy tisku.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Potvrzení a přijetí nákupní objednávky dodavatelem
 
@@ -92,13 +92,13 @@ Následující tabulka zobrazuje typické výměny informací v závislosti na o
 </thead>
 <tbody>
 <tr class="even">
-<td>Dodavatel <strong>přijímá</strong> objednávku a aplikace Finance and Operations je nakonfigurována tak, aby automaticky potvrdila nákupní objednávky, které dodavatel přijme.</td>
+<td>Dodavatel <strong>přijímá</strong> objednávku a aplikace Supply Chain Management je nakonfigurována tak, aby automaticky potvrdila nákupní objednávky, které dodavatel přijme.</td>
 <td>Stav objednávky bude aktualizován na hodnotu <strong>Potvrzeno</strong>. Pokud nelze z nějakého důvodu objednávku aktualizovat, odpověď dodavatele i tak bude zaznamenána jako<strong> Přijato</strong>, ale nákupní objednávka zůstane ve stavu <strong>Externí revize</strong>. 
 
 Nákupní objednávka, která byla odeslána dodavateli a má stav <strong>Externí revize</strong>, se aktualizuje s potvrzenými daty dodání na řádcích. Tato aktualizace zahájí novou verzi, která bude automaticky nastavena na stav <strong>potvrzeno</strong>. Potvrzená nákupní objednávka se zobrazí v rozhraní dodavatelské spolupráce.</td>
 </tr>
 <tr class="odd">
-<td>Dodavatel <strong>přijímá</strong> objednávku, ale aplikace Finance and Operations není nakonfigurována tak, aby automaticky potvrdila nákupní objednávky, které dodavatel přijme.</td>
+<td>Dodavatel <strong>přijímá</strong> objednávku, ale aplikace Supply Chain Management není nakonfigurována tak, aby automaticky potvrdila nákupní objednávky, které dodavatel přijme.</td>
 <td>Odpověď dodavatele bude zaznamenána jako <strong>Přijato</strong>, ale nákupní objednávka zůstane ve stavu <strong>Na externí kontrole</strong>.
 
 Nákupní objednávka, která byla odeslána dodavateli a má stav <strong>Externí revize</strong>, se aktualizuje s potvrzenými daty dodání na řádcích. Tato aktualizace zahájí novou verzi, která bude automaticky nastavena na stav <strong>V externí revizi</strong>. Poté lze ručně potvrdit nákupní objednávku.</td>
@@ -180,14 +180,14 @@ Následující tabulka zobrazuje příklad změn stavu a verze, kterou objednáv
 
 | Akce | Stav a verze |
 |--------|--------------------|
-| Počáteční verze nákupní objednávky je vytvořena v aplikaci Finance and Operations. | Stav je **Schváleno**. |
+| Počáteční verze nákupní objednávky je vytvořena v aplikaci Supply Chain Management. | Stav je **Schváleno**. |
 | Nákupní objednávka je odeslána dodavateli. | Verze je registrována v rozhraní spolupráce dodavatele a stav se změní na **Na externí kontrole**. |
 | Dodavatel odešle odpověď **Přijata se změnami**. | Stav bude stále **Na externí kontrole**. |
 | Provedete změny, které jsou požadovány dodavatelem. | Stav je změněn na **Schváleno**. |
 | Odešlete novou verzi nákupní objednávky dodavateli. | Nová verze je registrována v rozhraní spolupráce dodavatele a stav se změní na **Na externí kontrole**. |
 | Dodavatel přijme novou verzi nákupní objednávky. | Stav bude stále **V externí revizi**, pokud není nakonfigurován účet dodavatele na nákupní objednávce na automatické nastavení stavu na **Potvrzeno** při přijetí dodavatelem. |
 
-Dodavatelé nemusí nákupní objednávku potvrdit pomocí rozhraní spolupráce pro dodavatele. Mohou také odeslat e-mailovou zprávu nebo sdělit jejich přijetí nákupní objednávky prostřednictvím jiných kanálů. Potvrďte objednávku ručně v aplikaci Finance and Operations. V tomto případě se zobrazí upozornění, že objednávka má být potvrzena, přestože není reakce od dodavatele. Nákupní objednávka se poté zobrazí v historii potvrzení jako otevřená potvrzená objednávka, která nemá žádné odpovědi. V tomto okamžiku dodavatel již nemá možnost nákupní objednávku potvrdit nebo odmítnout.
+Dodavatelé nemusí nákupní objednávku potvrdit pomocí rozhraní spolupráce pro dodavatele. Mohou také odeslat e-mailovou zprávu nebo sdělit jejich přijetí nákupní objednávky prostřednictvím jiných kanálů. Poté lze ručně potvrdit objednávku. V tomto případě se zobrazí upozornění, že objednávka má být potvrzena, přestože není reakce od dodavatele. Nákupní objednávka se poté zobrazí v historii potvrzení jako otevřená potvrzená objednávka, která nemá žádné odpovědi. V tomto okamžiku dodavatel již nemá možnost nákupní objednávku potvrdit nebo odmítnout.
 
 > [!NOTE]
 > Poznámka: verze nákupní objednávky, která je dostupná pro jiné procesy v aplikaci Finance and Operations, je vždy nejnovější verze, a to i v případě, že tato nebyla registrována v rozhraní pro spolupráci dodavatele.
@@ -200,7 +200,7 @@ Pokud je povolena Správa změn, následující tabulka zobrazuje příklad změ
 
 | Akce | Stav a verze |
 |--------|--------------------|
-| Počáteční verze nákupní objednávky je vytvořena v aplikaci Finance and Operations. | Stav majetku je **Koncept**. |
+| Počáteční verze nákupní objednávky je vytvořena v aplikaci Supply Chain Management. | Stav majetku je **Koncept**. |
 | Nákupní objednávka je odeslána do schvalovacího procesu. (Schvalovací proces je interním procesem, do kterého dodavatel nevstupuje.) | Stav je změněn z hodnoty **Koncept** na **Na kontrole** a na **Schválení**, pokud nákupní objednávky není během procesu schvalování zamítnuta. Schválená nákupní objednávka je registrována jako verze. | 
 | Nákupní objednávka je odeslána dodavateli. | Verze je registrována v rozhraní spolupráce dodavatele a stav se změní na **Na externí kontrole**. |
 | Provedete některé změny požadované dodavatelem, ať už manuálně nebo použitím akce **Zpracovat aktualizaci nákupní objednávky** v odpovědi na aktualizaci nákupní objednávky. | Stav je opět změněn na **Koncept**. |
@@ -237,13 +237,13 @@ Tato část popisuje interakce mezi odběrateli a dodavateli při zpracování p
 
 ## <a name="public-sector-extensions"></a>Rozšíření veřejného sektoru
 
-Pro veřejný sektor rozšířená funkce umožňuje odeslání případu požadavku na nabídku dodavatelům a jeho publikování. Když publikujete požadavek na nabídku, kdokoliv kdo požádá o informace, může zobrazit práci, která je v souladu s předpisy z veřejného sektoru. Všechny dostupné práce se promítnou na stránce se seznamem **Otevřené publikované požadavky na nabídky** a zrušené, čekající nebo přidělené požadavky na nabídku lze zobrazit na stránce se seznamem **Uzavřené publikované požadavky na nabídky** stránku se seznamem. Tyto dokumenty lze zobrazit také na webu mimo aplikaci Finance and Operations pomocí integrací s následujícími datovými entitami:
+Pro veřejný sektor rozšířená funkce umožňuje odeslání případu požadavku na nabídku dodavatelům a jeho publikování. Když publikujete požadavek na nabídku, kdokoliv kdo požádá o informace, může zobrazit práci, která je v souladu s předpisy z veřejného sektoru. Všechny dostupné práce se promítnou na stránce se seznamem **Otevřené publikované požadavky na nabídky** a zrušené, čekající nebo přidělené požadavky na nabídku lze zobrazit na stránce se seznamem **Uzavřené publikované požadavky na nabídky** stránku se seznamem. Tyto dokumenty lze zobrazit také na webu mimo aplikaci Supply Chain Management pomocí integrací s následujícími datovými entitami:
 
 - Publikované požadavky na nabídky
 - Řádek publikovaných požadavků na nabídky
 - Přílohy záhlaví publikovaných požadavků na nabídky
 
-Tyto entity umožnují osobám, které nejsou zřízení uživatelé v aplikaci Finance and Operations, ale mají anonymní přístup k externímu webu, zobrazovat dostupnou a uzavřenou práci. Kromě toho rozšířená funkce v **Odeslat a publikovat** poskytuje uživateli, který nastavuje parametry pro proces požadavku na nabídku, definovat šablonu e-mailu. Když pak pracovník zásobování vytvoří případ požadavku na nabídku, musí zvolit šablonu e-mailu pro odeslání požadovaných informací dodavatelům ohledně případu požadavku na nabídku. 
+Tyto entity umožnují lidem, kteří nejsou zřízení uživatelé v aplikaci Supply Chain Management, ale mají anonymní přístup k externímu webu, zobrazovat dostupnou a uzavřenou práci. Kromě toho rozšířená funkce v **Odeslat a publikovat** poskytuje uživateli, který nastavuje parametry pro proces požadavku na nabídku, definovat šablonu e-mailu. Když pak pracovník zásobování vytvoří případ požadavku na nabídku, musí zvolit šablonu e-mailu pro odeslání požadovaných informací dodavatelům ohledně případu požadavku na nabídku. 
 
 Uživatel, který nastavuje parametry pro proces požadavku na nabídku, může vytvořit více šablon e-mailu. Tyto e-mailové šablony mohou obsahovat statický text i následující tokeny nahrazení. Tokeny budou nahrazeny kontextovými hodnotami při vytvoření e-mailu.
 

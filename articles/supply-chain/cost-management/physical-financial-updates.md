@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ba628dbf63d3b124583e6b873530f1459b07562
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4360f9132d31c9d0038f51c68c1f6c3fcaaa2025
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547879"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250851"
 ---
 # <a name="physical-and-financial-updates"></a>Fyzické a finanční aktualizace
 
@@ -32,7 +32,7 @@ ms.locfileid: "1547879"
 
 Toto téma poskytuje přehled typů transakcí, které zvyšují nebo snižují skladové množství. 
 
-Skladové transakce lze fyzicky nebo finančně aktualizovat v aplikaci Microsoft Dynamics 365 for Finance and Operations. Některé typy fyzických a finančních transakcí zvyšují skladové množství, zatímco jiné je snižují.
+Skladové transakce lze fyzicky nebo finančně aktualizovat v aplikaci Dynamics 365 Supply Chain Management. Některé typy fyzických a finančních transakcí zvyšují skladové množství, zatímco jiné je snižují.
 
 ## <a name="physical-increases"></a>Fyzické zvýšení
 Při zaúčtování fyzické transakce se záznam transakce nachází ve stavu **Přijato**. Skladové množství fyzicky zvyšují následující transakce:
@@ -51,10 +51,13 @@ Při zaúčtování finanční příjmové transakce se záznam transakce zvyšu
 -   skladové deníky s kladným množstvím, jako je například pohyb, ztráta a zisk, inventura, kusovníky a převod.
 
 ## <a name="transactions-that-increase-quantity"></a>Transakce, které zvyšují množství
-Transakce zvyšují množství jsou zaúčtovány podle klouzavého průměru nákladové ceny. Aplikace Dynamics 365 for Finance and Operations vypočítá průběžnou průměrnou nákladovou cenu založenou na cenách jednotlivých transakcí pro jednotlivé dimenze zásob, které jsou finančně sledovány. Informace o průběžných průměrných nákladových cenách naleznete v tématu [Průběžné průměrné nákladové ceny](running-average-cost-price.md).
+Transakce zvyšují množství jsou zaúčtovány podle klouzavého průměru nákladové ceny. Vypočtená průběžná průměrná nákladová cena je založena na cenách jednotlivých transakcí pro jednotlivé dimenze zásob, které jsou finančně sledovány. Informace o průběžných průměrných nákladových cenách naleznete v tématu [Průběžné průměrné nákladové ceny](running-average-cost-price.md).
 
 ## <a name="transactions-that-decrease-quantity"></a>Transakce, které snižují množství
-Aplikace Finance and Operations používá vypočtený klouzavý průměr nákladové ceny, když je transakce snižující množství zúčtována, bez ohledu na to, který skladový model je k těmto zásobám přiřazen. Transakce snižující množství nesmí být označeny pro jinou transakci před zaúčtováním. Je-li fyzické množství na skladě záporné, aplikace Finance and Operations použije náklady zásob definované pro danou položku na stránce **Zboží**. **Poznámka:** Je-li povolena funkce několika pracovišť, náklady budou představovat náklady na zásoby definované pro pracoviště na stránce **Výchozí nastavení objednávky**.
+Vypočtený klouzavý průměr nákladové ceny se použije, když je transakce snižující množství zúčtována, bez ohledu na to, který skladový model je k těmto zásobám přiřazen. Transakce snižující množství nesmí být označeny pro jinou transakci před zaúčtováním. Je-li fyzické množství na skladě záporné, použijí se náklady zásob definované pro danou položku na stránce **Zboží**. 
+
+> [!NOTE]
+> Je-li povolena funkce několika pracovišť, náklady budou představovat náklady na zásoby definované pro pracoviště na stránce **Výchozí nastavení objednávky**.
 
 ## <a name="physical-issues-vs-financial-issues"></a>Fyzické výdeje vs finanční výdeje
 Při zaúčtování transakce fyzického výdeje se záznam transakce nachází ve stavu **Odečteno**. Mezi fyzické výdeje patří následující transakce:
@@ -71,6 +74,3 @@ Při zaúčtování finanční transakce se záznam transakce nachází ve stavu
 -   skladové deníky se záporným množstvím, jako je například pohyb, ztráta a zisk, inventura, kusovníky a převod.
 
 Transakce snižující množství jsou zaúčtovány podle klouzavého průměru nákladové ceny. Proces uzávěrky skladu je tedy vyžadován pro vyrovnání výdejových transakcí příjmovými transakcemi podle modelu zásob, která je přiřazen jednotlivým položkám.
-
-
-

@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (23. ledna 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent Core HR.
+title: Co je nového nebo upraveného v aplikaci Dynamics 365 Talent – Core HR (23. ledna 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 01/23/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4e492095d5269ec81c0c22145b7af356937c256b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f1983d5a58fb2e6b1984727e1d7b44803b94cdce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742509"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023969"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-january-23-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (23. ledna 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-january-23-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Talent: Core HR (23. ledna 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -53,5 +53,5 @@ Při změně práce pro pozici, budou pole úlohy použita jako výchozí pro po
 ### <a name="probation-period-and-calendar-are-not-displayed-for-future-hired-employees"></a>Období zaškolení a kalendáře se nezobrazují pro zaměstnance přijaté v budoucnu.
 Při této změně byla přidána pole **Zkušební období** a **kalendář** na stránku **Správa změn** s cílem umožnit zadávání dat pro budoucí a minulé zaměstnance.
 
-### <a name="platform-update-23"></a>Aktualizace platformy 23
-Dílčí opravy chyb byly zahrnuty jako součást aktualizace platformy 23. Další informace naleznete v tématu [Co je nového nebo změněného v Dynamics 365 for Finance and Operations aktualizace platformy 23 (leden 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+### <a name="platform-update-23-for-finance-and-operations"></a>Ajtzakuzace Platform Update 23 for Finance and Operations
+Dílčí opravy chyb byly zahrnuty jako součást aktualizace Platform update 23 pro Finance and Operations. Další informace naleznete v tématu [Co je nového nebo změněného v Dynamics 365 Finance and Operations aktualizace platformy 23 (leden 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

@@ -1,9 +1,9 @@
 ---
 title: Přidání ovládacího prvku doporučení na obrazovku transakce na zařízeních POS
 description: Toto téma popisuje, jak přidat ovládací prvek doporučení na obrazovku transakcí na zařízení POS pomocí návrháře rozložení obrazovky v aplikaci Microsoft Dynamics 365 for Retail.
-author: ashishmsft
+author: bebeale
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 10/01/19
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,23 +19,22 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f17da3db6fbc19548544a0c6c090a0b6db093673
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: d646c8ba559ba3e8d2175911e76c57d25eff02ca
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606842"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278122"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Přidání ovládacího prvku doporučení na obrazovku transakce na zařízeních POS
 
 [!include [banner](includes/banner.md)]
 
-> [!NOTE]
-> Aktuální verzi služby doporučení produktu odstraňujeme, protože předěláváme tuto funkci s lepším algoritmem a novějšími funkčnostmi orientovanými na maloobchod. Další informace naleznete v části [Odstraněné nebo zastaralé funkce](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).
 
-Toto téma popisuje, jak přidat ovládací prvek doporučení na obrazovku transakcí na zařízení POS pomocí návrháře rozložení obrazovky v aplikaci Microsoft Dynamics 365 for Retail.
+Toto téma popisuje, jak přidat ovládací prvek doporučení na obrazovku transakcí na zařízení POS pomocí návrháře rozložení obrazovky v aplikaci Microsoft Dynamics 365 Retail. Další informace o doporučeních produktů naleznete v dokumentaci [doporučení produktu v dokumentaci POS.](product.md)
 
-Když používáte Microsoft Dynamics 365 for Retail, můžete zobrazit na svém zařízení POS doporučení produktu. *Doporučení* jsou položky, které mohou vaše zákazníky zajímat na základě jejich historie nákupů, položky v jejich seznamu požadovaných položek a položky, které jiní zákazníci nakoupili online nebo v kamenných obchodech. Abyste mohli zobrazit doporučení produktu, musíte přidat ovládací prvek na obrazovce transakce pomocí návrháře rozložení obrazovky.
+
+Když používáte Microsoft Dynamics 365 Retail, můžete zobrazit na svém zařízení POS doporučení produktu. Abyste mohli zobrazit doporučení produktu, musíte přidat ovládací prvek na obrazovce transakce pomocí návrháře rozložení obrazovky. 
 
 ## <a name="open-layout-designer"></a>Otevřete návrháře rozložení
 
@@ -45,6 +44,7 @@ Když používáte Microsoft Dynamics 365 for Retail, můžete zobrazit na svém
 4. Klikněte na možnost **Návrhář rozložení**.
 5. Podle pokynů spusťte návrháře rozložení. Po zobrazení výzvy k zadání přihlašovacích údajů zadejte stejné přihlašovací údaje, které jste použili při spuštění návrháře rozložení ze stránky **Rozložení obrazovky**.
 6. Při přihlášení se zobrazí stránka podobná té na obrázku. Rozložení se bude lišit podle přizpůsobení, která jste pro svůj obchod provedli.
+
 
     [![Návrhář rozložení](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
@@ -57,7 +57,9 @@ K dispozici jsou dvě možnosti konfigurace. Vyberte možnost, která nejlépe v
 
 ### <a name="make-recommendations-always-visible"></a>Nastavení, aby byla doporučení vždy viditelná
 
+
 1. Zmenšete výšku oblasti podrobností řádků transakce tak, aby byla stejná jako výška panelu odběratele po levé straně.
+
 
     [![Snížená výška oblasti podrobností řádků transakce](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
@@ -65,15 +67,18 @@ K dispozici jsou dvě možnosti konfigurace. Vyberte možnost, která nejlépe v
 
     [![Ovládací prvek doporučení přidaný do rozvržení](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
+
 3. Návrháře rozložení uložíte a zavřete kliknutím na **X**.
 4. V aplikaci Dynamics 365 for Retail přejděte do **Maloobchod** &gt; **IT pro maloobchod** &gt; **Plány distribuce**.
-5. V seznamu vyberte možnost  **1090, Pokladny**.
+5. V seznamu vyberte možnost **1090, Pokladny**.
 6. Klikněte na možnost **Spustit**.
+
 
 ### <a name="add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Jak přidat kartu Doporučení na mřížku tlačítek na pravé straně obrazovky
 
 1. Klikněte pravým tlačítkem myši do prázdného místa pod poslední kartou na mřížce tlačítek umístěné na pravé straně stránky.
-2. Klepněte na tlačítko **přizpůsobit**.
+
+2. Klikněte na tlačítko**přizpůsobit**.
 
     [![Přizpůsobení – dialogové okno ovládacího prvku karty](./media/pic-5.png)](./media/pic-5.png)
 
@@ -85,12 +90,14 @@ K dispozici jsou dvě možnosti konfigurace. Vyberte možnost, která nejlépe v
 
 6. Do pole **Popisek** zadejte název pro kartu doporučení. Zadejte například "Doporučené produkty".
 7. V poli **Obrázek** zvolte obrázek, který se zobrazí na kartě.
-8. Klepněte na tlačítko **OK**. Nová karta se zobrazí v mřížce tlačítek.
+8. Klikněte na tlačítko **OK**. Nová karta se zobrazí v mřížce tlačítek.
 9. Návrháře rozložení uložíte a zavřete kliknutím na **X**.
 10. V aplikaci Dynamics 365 for Retail přejděte do **Maloobchod** &gt; **IT pro maloobchod** &gt; **Plány distribuce**.
-11. V seznamu vyberte možnost  **1090, Pokladny**.
+11. V seznamu vyberte možnost **1090, Pokladny**.
 12. Klikněte na možnost **Spustit**.
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Přehled doporučení přizpůsobeného produktu](personalized-product-recommendations.md)
+[poporučení produktu na POS](product.md)
+
+[přehled doporučení produktu](../commerce/product-recommendations.md)

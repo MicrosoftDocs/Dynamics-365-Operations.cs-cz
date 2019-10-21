@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a00e69a589ffe744f88edb6a8b3709c4029fc1ec
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 92be01210b677228f4c096ffef09d7109ba2b332
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572236"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023386"
 ---
 # <a name="hybrid-customer-orders"></a>Hybridní objednávky odběratele
 
@@ -31,7 +31,7 @@ ms.locfileid: "1572236"
 
 Hybridní objednávka odběratele je jedna objednávka, která obsahuje produkty, které si může zákazník odnést z obchodu, jakož i výrobky, které budou dodány nebo vyzvednuty později.
 
-V aplikaci Microsoft Dynamics 365 for Retail můžete u objednávky odběratele vybrat realizaci všech produktů nebo vybraných produktů. Řádky produktu označené jako řádky k provedení, jsou automaticky fakturovány po vytvoření objednávky. Podobně to platí pro objednávku, která má být vyzvednuta po vytvoření objednávky. Částka splatná u hybridních objednávek je určena přidáním procenta zálohy k řádkám produktu pro vyskladnění a dodávku s plnou částkou prováděcích linek. U hybridních objednávek systém přepíná mezi režimem objednávky zákazníka a režimem Cash and Carry takto:
+V aplikaci Retail můžete u objednávky odběratele vybrat realizaci všech produktů nebo vybraných produktů. Řádky produktu označené jako řádky k provedení, jsou automaticky fakturovány po vytvoření objednávky. Podobně to platí pro objednávku, která má být vyzvednuta po vytvoření objednávky. Částka splatná u hybridních objednávek je určena přidáním procenta zálohy k řádkám produktu pro vyskladnění a dodávku s plnou částkou prováděcích linek. U hybridních objednávek systém přepíná mezi režimem objednávky zákazníka a režimem Cash and Carry takto:
 
 - Pokud mají všechny produkty v košíku hodnotu **Provádět dodávku**, objednávka bude zpracovávána jako transakce Cash and Carry.
 - Pokud některé nebo všechny řádky v košíku jsou nastaveny na hodnotu **Vybrat** nebo **Expedice dodávky**, objednávka bude zpracovávána jako transakce objednávky zákazníka.

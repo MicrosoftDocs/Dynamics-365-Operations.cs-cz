@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 551a8408aa730bc1916f1c57b7cfd773966ce8bf
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c5da94e02b2381bbd058221567172cd428931c45
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606796"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024676"
 ---
 # <a name="store-inventory-management"></a>Správa skladových zásob
 
 [!include [banner](includes/banner.md)]
 
-Při práci se zásobami v aplikaci Dynamics 365 for Retail a používání aplikace Retail POS je důležité poznamenat, že POS poskytuje omezenou podporu pro dimenze zásob a určité typy skladových položek.
+Při práci se zásobami v aplikaci Dynamics 365 Retail a používání aplikace Retail POS je důležité poznamenat, že POS poskytuje omezenou podporu pro dimenze zásob a určité typy skladových položek.
 
 Řešení POS nepodporuje následující konfigurace položek:
 
@@ -56,7 +56,7 @@ Aplikace Retail POS v současné době nepodporuje následující sledovací dim
 
 ## <a name="purchase-orders"></a>Nákupní objednávky
 
-Nákupní objednávky se vytvářejí v ústředí. Pokud je maloobchodní sklad zahrnut v záhlaví nákupní objednávky, objednávku lze přijmout v obchodě pomocí řešení Modern POS (MPOS) nebo Cloud POS v aplikaci Microsoft Dynamics 365 for Retail pomocí operace **Výdej/Příjem**. Po zadání množství přijatých v obchodě do pole **Přijmout nyní** v POS pro dokument nákupní objednávky mohou být tyto údaje uloženy místně nebo potvrzeny. Uložení těchto dat lokálně nemá žádný dopad na zásoby na skladě. Ukládání by mělo být provedeno pouze v případě, že uživatel není připraven zaúčtovat příjemku do HQ a pouze potřebuje způsob, jak dočasně uložit dříve zadaná **Přijmout nyní**. Tím se uloží data z přijetí místně do databáze kanálů uživatele. Po zpracování dokumentu s použitím možnosti **Potvrdit** budou data **Přijmout nyní** odeslána do HQ a bude zaúčtována příjemka nákupní objednávky. 
+Nákupní objednávky se vytvářejí v ústředí. Pokud je maloobchodní sklad zahrnut v záhlaví nákupní objednávky, objednávku lze přijmout v obchodě pomocí řešení Modern POS (MPOS) nebo Cloud POS v aplikaci pomocí operace **Výdej/Příjem**. Po zadání množství přijatých v obchodě do pole **Přijmout nyní** v POS pro dokument nákupní objednávky mohou být tyto údaje uloženy místně nebo potvrzeny. Uložení těchto dat lokálně nemá žádný dopad na zásoby na skladě. Ukládání by mělo být provedeno pouze v případě, že uživatel není připraven zaúčtovat příjemku do HQ a pouze potřebuje způsob, jak dočasně uložit dříve zadaná **Přijmout nyní**. Tím se uloží data z přijetí místně do databáze kanálů uživatele. Po zpracování dokumentu s použitím možnosti **Potvrdit** budou data **Přijmout nyní** odeslána do HQ a bude zaúčtována příjemka nákupní objednávky. 
 
 ## <a name="transfer-orders"></a>Převodní příkazy
 

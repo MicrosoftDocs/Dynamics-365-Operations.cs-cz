@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 68b285ba78a9bd654e7bfcfe8d4c6b0207346eab
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 05881b6e6e501ff3ac5a622d99fd1aaa311727a1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845587"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249510"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilní pracovní prostor zásob na skladě
 
@@ -31,7 +31,7 @@ ms.locfileid: "1845587"
 
 Toto téma obsahuje informace o mobilním pracovním prostoru **Zásoby na skladě**. Díky tomuto pracovnímu prostor získáte přehled o rezervovaných a dostupných zásobách, a to kdykoli a kdekoli.
 
-Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Microsoft Dynamics 365 for Unified Operations.
+Tento mobilní pracovní prostor je určen k použití s mobilní aplikací Finance and Operations.
 
 ## <a name="overview"></a>Přehled
 Firmy mají obvykle více dodávek a příjmů zásob každý den. Tyto pohyby neustále mění stav zásob na skladě. Mobilní pracovní prostor **Zásoby na skladě** umožňuje zobrazit stav zásob na skladě ve společnosti. Můžete tak získat nejnovější informace o skladových zásobách na mobilních zařízeních vašeho výběru. Bez ohledu na to, zda pracujete ve skladu, nákupu, prodeji, výrobě nebo řízení nebo mají jiné role, můžete přistupovat k datům na skladě kdykoli a kdekoli. 
@@ -58,11 +58,11 @@ Mobilní pracovní prostor konkrétně poskytuje následující funkce:
 ## <a name="prerequisites"></a>Předpoklady
 Předpoklady se liší podle verze aplikace Microsoft Dynamics 365, která byla nasazena ve vaší organizaci.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Předpoklady při použití Microsoft Dynamics 365 for Finance and Operations 
-Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Finance and Operations , správce systému musí publikovat mobilní pracovní prostor **Zásoby na skladě**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-finance-and-operations"></a>Předpoklady při použití Finance and Operations 
+Pokud je ve vaší organizaci nasazena aplikace Supply Chain Management, správce systému musí publikovat mobilní pracovní prostor **Zásoby na skladě**. Více pokynů naleznete v tématu [Publikování mobilního pracovního prostoru](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Předpoklady při použití Microsoft Dynamics 365 for Operations verze 1611 s aktualizací Platform Update 3 nebo vyšší
-Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Operations verze 1611 s aktualizací platformy 3 nebo novější, správce systému musí dokončit následující předpoklady. 
+### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a>Předpoklady při použití Platform Update 3 nebo vyšší 
+Pokud je ve vaší organizaci nasazena Platform Update 3 nebo novější, správce systému musí splnit následující předpoklady. 
 
 <table>
 <thead>
@@ -96,7 +96,7 @@ Pokud je ve vaší organizaci nasazena aplikace Microsoft Dynamics 365 for Opera
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
 
-Stáhněte a nainstalujte mobilní aplikaci 365 Dynamics for Unified Operations:
+Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

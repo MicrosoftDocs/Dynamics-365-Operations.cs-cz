@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7c7d1fcaaeef7a01b43886e4d69458dbd942439
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: df9692dc168e9efb653b20c677cd6e3bb0bd8756
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556868"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250707"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Ruční úpravy základní prognózy
 
@@ -71,7 +71,7 @@ Stránka **Podrobnosti prognózy poptávky** popisuje následující informace v
 **Poznámky:**
 
 -   Interval jistoty, který se zobrazí v části **Prognóza** na stránce, představuje rozdíl mezi horním limitem intervalu jistoty a dolním limitem intervalu jistoty. Pokud chcete zobrazit hodnoty pro dolní a horní limit, umístěte ukazatel myši do grafu v části **Historická poptávka a prognóza – graficky**.
--   Pokud používáte službu pro prognózu poptávky strojového učení Microsoft Azure v aplikaci Finance and Operations, můžete určit podíl úrovně jistoty, který by měla mít generovaná prognóza. Interval jistoty obsahuje určitý úsek hodnot, které fungují jako vhodné odhady pro prognózu poptávky. 95% úroveň jistoty například označuje existenci 5% riziko, že prognóza poptávky se bude nacházet mimo rozsah intervalu jistoty.
+-   Pokud používáte službu pro prognózu poptávky strojového učení Microsoft Azure, můžete určit podíl úrovně jistoty, který by měla mít generovaná prognóza. Interval jistoty obsahuje určitý úsek hodnot, které fungují jako vhodné odhady pro prognózu poptávky. 95% úroveň jistoty například označuje existenci 5% riziko, že prognóza poptávky se bude nacházet mimo rozsah intervalu jistoty.
 
 Musíte také provést ruční úpravy prognózy na stránce **Podrobnosti prognózy poptávky** tím, že změníte hodnoty na řádku **Prognóza** v části **Prognóza**.
 

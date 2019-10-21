@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 63cad6b2f7240bb14fe7a9237498c0140df77774
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567992"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025022"
 ---
 # <a name="retail-statements"></a>Příkazy maloobchodu
 
 [!include [banner](includes/banner.md)]
 
-V aplikaci Microsoft Dynamics 365 for Retail proces zaúčtování výkazů slouží k zaúčtování transakcí, které se mohou vyskytovat v Cloudovém pokladním místě (POS) nebo v Modern POS (MPOS). Proces zaúčtování výkazu používá plán distribuce k vyžádání sady transakcí Retail POS do klienta centrály (HQ). Parametry, které jsou definovány na stránkách **Parametry maloobchodu** a **Obchody** se používají k výběru transakcí, které budou převedeny na jednotlivé výkazy.
+V aplikaci Dynamics 365 Retail proces zaúčtování výkazů slouží k zaúčtování transakcí, které se mohou vyskytovat v Cloudovém pokladním místě (POS) nebo v Modern POS (MPOS). Proces zaúčtování výkazu používá plán distribuce k vyžádání sady transakcí Retail POS do klienta centrály (HQ). Parametry, které jsou definovány na stránkách **Parametry maloobchodu** a **Obchody** se používají k výběru transakcí, které budou převedeny na jednotlivé výkazy.
 
 Proces zaúčtování je znázorněn na následujícím obrázku. V tomto procesu jsou transakce, které jsou zaznamenány v POS, předávány klientovi pomocí modulu Maloobchodní plánovač. Po přijetí transakcí klientem můžete vytvářet, kalkulovat a zaúčtovávat výkazy transakce pro daný obchod.
 
@@ -85,6 +85,6 @@ Pokud je stejný obchod nakonfigurován bez zaškrtnutého políčka **Zaúčtov
 Při zaúčtování výkazu prodejní objednávky a faktury jsou vytvořeny pro maloobchodní prodej ve výkazu.
 
 - Prodej cash and carry jsou agregován na jedné prodejní objednávce a fakturován pro výchozího odběratele, který je přiřazen k obchodu.
-- Maloobchodní prodeje, pro které byl přidání odběratel do transakce v Microsoft Dynamics 365 for Retail POS, generují samostatné prodejní objednávky a faktury, jednu pro každého jedinečného odběratele.
+- Maloobchodní prodeje, pro které byl přidání odběratel do transakce v Retail POS, generují samostatné prodejní objednávky a faktury, jednu pro každého jedinečného odběratele.
 
 Pro platby ve výkazu jsou automaticky vytvořeny deníky plateb a zásoby jsou automaticky aktualizovány pro obchod POS.

@@ -1,6 +1,6 @@
 ---
-title: Synchronizace produktů s jednotkou zásob z aplikace Finance and Operations do služby Field Service
-description: Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů se skladovou jednotkou z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
+title: Synchronizace produktů ve skladové jednotce z aplikace Supply Chain Management do služby Field Service
+description: Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů se skladovou jednotkou z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -19,38 +19,38 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 78e8d8fa609b015cf2fceaf498279fe091325dbb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8b65e9640106c5d351270074e39c121e70917228
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835687"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251217"
 ---
-# <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Synchronizace produktů ve skladové jednotce z aplikace Finance and Operations do služby Field Service
+# <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a>Synchronizace produktů ve skladové jednotce z aplikace Supply Chain Management do služby Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů se skladovou jednotkou z Microsoft Dynamics 365 for Finance and Operations do Microsoft Dynamics 365 for Field Service.
+Toto téma popisuje šablony a základní úkol, které se používají k synchronizaci produktů se skladovou jednotkou z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 
-[![Synchronizace obchodních procesů mezi aplikacemi Finance a Operations and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
+[![Synchronizace obchodních procesů mezi Supply Chain Management a Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-Použitá šablona **Produkty Field Service s jednotkou zásob (Fin and Ops do Field Service)** je založena na šabloně **Produkty Field Service (Fin and Ops do Field Service)**. Další informace naleznete v tématu [Produkty Field Service (Finance and Operations do Field Service)](field-service-product.md).
+Použitá šablona **Produkty Field Service s jednotkou zásob (Supply Chain Management Field Service)** je založena na šabloně **Produkty Field Service ( Supply Chain Management do Field Service)**. Další informace naleznete v tématu [Produkty Field Service (Supply Chain Management do Field Service)](field-service-product.md).
 
 V tomto tématu jsou popsány pouze rozdíly mezi dvěma šablonami: 
-- **Produkty služby Field Service s jednotkou zásob (Fin and Ops do služby Prodej)**
-- **Produkty Field Service (Fin and Ops do Field Service)** 
+- **Produkty Field Service se skladovou jednotkou (Supply Chain Management do Sales)**
+- **Produkty Field Service (Supply Chain Management do Field Service)** 
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
 **Název šablony v integraci dat:**
 
-- Produkty služby Field Service s jednotkou zásob (Fin and Ops do služby Prodej)
+- Produkty Field Service se skladovou jednotkou (Supply Chain Management do Sales)
 
 **Název úkolu v projektu integrace dat:**
 
 - Produkty
 
-Šablona **Produkty Field Service s jednotkou zásob (Fin and Ops do Field Service)** šablona obsahuje jedno mapování, které není zahrnuto v šabloně **Produkty Field Service (Fin and Ops do Field Service)**. Toto mapování zajišťuje, že je zahrnuta skladová jednotka potřebná pro synchronizaci úrovně zásob.
+Použitá šablona **Produkty Field Service s jednotkou zásob (Supply Chain Management Field Service)** zahrnuje jedno mapování, které není zahrnuto v šabloně **Produkty Field Service ( Supply Chain Management do Field Service)**. Toto mapování zajišťuje, že je zahrnuta skladová jednotka potřebná pro synchronizaci úrovně zásob.
 
 ```
 INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryunit.name [Inventory Unit(Name)] 
@@ -60,6 +60,6 @@ INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryuni
 
 Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
-### <a name="field-service-products-with-inventory-unit-fin-and-ops-to-field-service-products"></a>Produkty Field Service s jednotkou zásob (Fin and Ops do Field Service): produkty
+### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a>Produkty Field Service s jednotkou zásob (Supply Chain Management do Field Service): Products
 
 [![Mapování šablony v integraci dat](./media/FSProduct1.png)](./media/FSProduct1.png)

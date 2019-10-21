@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 17016d015925cd31117231799b8741ffddb793f7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3a6645bc55dfd4f03ce9872ff5017f1659b1f11c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562431"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017590"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Nastavení skladu s použitím šablony konfigurace skladu
 
@@ -93,7 +93,7 @@ U datového balíčku můžete stáhnout soubor ZIP. Tento soubor obsahuje všec
 
 Možnost **Zobrazit protokol provádění** obsahuje podrobné informace o každé datové entitě, která je importována. Můžete použít zobrazení dat fázování, abyste se dostali rychle k cílovým datům. V takovém případě se zobrazí, jak vypadají importovaná data na souvisejících stránkách v aplikaci. Při použití výchozích datových šablon pracuje pořadí importu pro každou datovou entitu předem definovaným způsobem, aby se zajistilo, že všechna závislá data budou importována nejdříve. Jsou-li vlastní datové entity součástí projektu, je třeba zkontrolovat, že je definováno správné pořadí. Další informace naleznete v tématu[Šablony dat konfigurací](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Chcete-li se dozvědět více o tom, jak používat šablonu skladu pro zkopírování konfigurace skladu z jedné společnosti do nové společnosti ve stejné instanci, podívejte se na toto 3minutové video na YouTube: [Použití šablony skladu ke kopírování konfigurace v aplikaci Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Chcete-li se dozvědět více o tom, jak používat šablonu skladu pro zkopírování konfigurace skladu z jedné společnosti do nové společnosti ve stejné instanci, podívejte se na toto 3minutové video na YouTube nazvané [Použití šablony skladu ke kopírování konfigurace v aplikaci Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Související téma
 

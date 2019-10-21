@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 72f4d248f3ac49bbfd8e5a7a12352d92b89bb0eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb02bdeca2d71d84ebdddfd16d471a532823e42
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564940"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025188"
 ---
 # <a name="retail-price-reports"></a>Sestavy maloobchodních cen
 
 [!include [banner](includes/banner.md)]
 
 
-S cílem poskytnout konkurenční ceny pro své zákazníky maloobchodní prodejci často mění ceny produktů. Manažeři obchodu vyžadují možnost snadný přístup k nedávným nebo nadcházejícím cenovým změnám, aby mohly plánovat požadovaným zdrojům aktualizace cenových štítků zobrazených na policích obchodu. S verzí 10.0 aplikace Dynamics 365 for Retail může manažer obchodu otevřít sestavu **Cena** přechodem na **Všechny maloobchody \> Obchod \> Sestava cen** a zobrazením aktualizovaných cen pro produkty přidružené k obchodu. 
+S cílem poskytnout konkurenční ceny pro své zákazníky maloobchodní prodejci často mění ceny produktů. Manažeři obchodu vyžadují možnost snadný přístup k nedávným nebo nadcházejícím cenovým změnám, aby mohly plánovat požadovaným zdrojům aktualizace cenových štítků zobrazených na policích obchodu. S verzí 10.0 aplikace Retail může manažer obchodu otevřít sestavu **Cena** přechodem na **Všechny maloobchody \> Obchod \> Sestava cen** a zobrazením aktualizovaných cen pro produkty přidružené k obchodu. 
 
 Pro povolení sestavy cen musí být zapnut parametr **Povolit sestavu cen pro maloobchod**. Tento parametr se nachází na kartě **Parametry maloobchodu \> Slevy \> Různé**. Otevření stránky **Sestava cen** zobrazí dialogové okno s různými konfiguracemi. Dostupné konfigurace jsou uvedené níže.
 

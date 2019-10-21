@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (6. prosince 2018)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent Core HR.
+title: Co je nového nebo upraveného v aplikaci Dynamics 365 Talent - Core HR (6. prosince 2018)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f3d53440c5d19dd52fbab17305c3e99a73e570be
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 73e0875c3e072bc29050a096888459c6e4bb1b7b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742579"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025949"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent Core HR (6. prosince 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-6-2018"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent: Core HR (6. prosince 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "1742579"
 Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Core HR.
 
 
-## <a name="platform-update-22"></a>Aktualizace platformy 22
+## <a name="platform-update-22-for-finance-and-operations"></a>Ajtzakuzace Platform Update 22 for Finance and Operations
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Export až 1 milionu řádků do aplikace Excel
 
@@ -42,7 +42,7 @@ Funkci Export do aplikace Excel lze nyní konfigurovat, aby uživatelům umožni
 
 ### <a name="restyled-personalization-toolbar"></a>Upravený Panel nástrojů
 
-Panel nástrojů byl upraven v rámci aktualizace platformy 22, aby uživatelům pomohl snadněji si přizpůsobit prostředí aplikace Talent. Byly provedeny tyto změny: 
+Panel nástrojů byl upraven v rámci aktualizace platformy 22 for Finance and Operations, aby uživatelům pomohl snadněji si přizpůsobit prostředí aplikace Talent. Byly provedeny tyto změny: 
 
 -  Název každého nástroje přizpůsobení je nyní zobrazen s ikonou, která uživatelům pomáhá rychle rozpoznat nástroj, o který mají zájem.
 -  Popis způsobu použití nástroje je odteď také zobrazen a pomáhá uživatelům pochopit, jak potřebné změny provést.  
@@ -50,19 +50,19 @@ Panel nástrojů byl upraven v rámci aktualizace platformy 22, aby uživatelům
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>Optimalizované filtrování "je jeden z“
 
-Filtr "je jeden z“ lze použít pro většinu polí, když používáte podokno filtru a rozevírací seznamy záhlaví mřížky. Tento operátor umožňuje filtrovat pole podle vícera hodnot. Novinka operátoru "je jeden z" je k dispozici s aktualizací platformy 22. Pro více informací viz [Optimalizovaná možnost filtrování „je jeden z“](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+Filtr "je jeden z“ lze použít pro většinu polí, když používáte podokno filtru a rozevírací seznamy záhlaví mřížky. Tento operátor umožňuje filtrovat pole podle vícera hodnot. Novinka operátoru "je jeden z" je k dispozici s aktualizací platformy 22 for Finance and Operations. Pro více informací viz [Optimalizovaná možnost filtrování „je jeden z“](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Vkládání seznamů z Excelu do polí filtru s operátorem "je jeden z"
 
 U některých úkolů mohou uživatelé pracovat se seznamem hodnot v Excelu, který si přejít použít k filtrování dat v aplikaci Talent. Například může uživatel lidských zdrojů identifikovat sadu zaměstnanců ze sestavy, kteří vyžadují další průzkum v systému a bylo by vhodné pro tohoto uživatele, aby bylo možné zkopírovat seznam přímo z Excelu do pole filtru v aplikaci Talent.
 
-S aktualizací platformy 22 nyní operátor "je jeden z" v podokně filtru a sloupci mřížky filtrování nyní rozpozná seznamy zkopírované z aplikace Excel, aby je bylo možné přímo vložit do pole filtr. To zahrnuje řadu hodnot zkopírovaných z různých řádků a sloupců v Excelu. Další informace o této funkci naleznete v tématu [Vkládání seznamů z Excelu do polí filtru s operátorem "je jeden z"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+S aktualizací platformy 22 for Finance and Operations nyní operátor "je jeden z" v podokně filtru a sloupci mřížky filtrování nyní rozpozná seznamy zkopírované z aplikace Excel, aby je bylo možné přímo vložit do pole filtr. To zahrnuje řadu hodnot zkopírovaných z různých řádků a sloupců v Excelu. Další informace o této funkci naleznete v tématu [Vkládání seznamů z Excelu do polí filtru s operátorem "je jeden z"](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>Náhled
 
 ### <a name="configure-uk-payroll-integration-between-talent-and-dayforce"></a>Konfigurace integrace mezd UK mezi aplikacemi Talent a Dayforce
 
-Integrace aplikace Microsoft Dynamics 365 for Talent a Ceridian Dayforce je k dispozici v náhledu pro Velkou Británii. Další informace naleznete v tématu [konfigurovat integraci mezd mezi aplikacemi Talent a Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
+Integrace aplikace Talent a Ceridian Dayforce je k dispozici v náhledu pro Velkou Británii. Další informace naleznete v tématu [konfigurovat integraci mezd mezi aplikacemi Talent a Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
 
 ## <a name="coming-soon"></a>Již brzy
 
@@ -90,9 +90,9 @@ Za účelem nápravy příloh byly provedeny změny. Při přidávání nové p�
 
 ## <a name="known-issues"></a>Známé problémy
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Chyby mapování integrace s aplikací Finance and Operations
+### <a name="mapping-errors-in-the-integration-with-finance"></a>Chyby mapování integrace s aplikací Finance
 
-Byly zjištěny následující chyby v aktuální šabloně pro integraci aplikace Talent s aplikací Finance ad Operations. Nová šablona bude publikována brzy a bude použita pro všechny nové integrace projektů, které jsou vytvořeny. Pro existující integrace projektů lze mapování úkolu aktualizovat. Aktualizované mapování naleznete v následující tabulce. 
+Byly zjištěny následující chyby v aktuální šabloně pro integraci aplikace Talent s aplikací Finance. Nová šablona bude publikována brzy a bude použita pro všechny nové integrace projektů, které jsou vytvořeny. Pro existující integrace projektů lze mapování úkolu aktualizovat. Aktualizované mapování naleznete v následující tabulce. 
 
 >[!NOTE]
 > Úkol Pracovní pozice do  přiřazení práce nadřazené pozice neintegruje data. Toto je problém, který je právě zkoumán. Aktuální mapování nelze nijak obejít. 

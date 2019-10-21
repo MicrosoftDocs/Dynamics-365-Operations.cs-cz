@@ -3,7 +3,7 @@ title: Spravovat plánované objednávky
 description: Toto téma obsahuje informace o postupu správy plánovaných objednávek. Popisuje, jak můžete aktualizovat stav plánovaných objednávek, upevnit je a zobrazit filtr plánovaných objednávek, které mají stejný stav, jako vybraná plánovaná objednávka.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 10/02/2018
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf578d98abc4825c5607ec031da6ab6737c3183a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
+ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560365"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "1993433"
 ---
 # <a name="maintain-planned-orders"></a>Spravovat plánované objednávky
 
@@ -32,19 +32,32 @@ ms.locfileid: "1560365"
 
 Toto téma obsahuje informace o postupu správy plánovaných objednávek. Popisuje, jak můžete aktualizovat stav plánovaných objednávek, upevnit je a zobrazit filtr plánovaných objednávek, které mají stejný stav, jako vybraná plánovaná objednávka.
 
-Naplánované objednávky lze spravovat v pracovním prostoru **Hlavní plánování**, na seznamu **Plánovaná objednávka** nebo na seznamech **Plánované výrobní zakázky**, **Plánované nákupní objednávky** a **Plánovaný převod**. Pole **Stav** lze použít ke sledování průběhu. Používají se následující hodnoty:
+Naplánované objednávky lze spravovat v pracovním prostoru **Hlavní plánování**, na seznamu **Plánovaná objednávka** nebo na seznamech **Plánované výrobní zakázky**, **Plánované nákupní objednávky** a **Plánovaný převod**. 
+
+## <a name="planned-order-status"></a>Stav plánované objednávky
+Pole **Stav** lze použít ke sledování průběhu. Používají se následující hodnoty:
 
 -   Když hlavní plánování vytvoří naplánované objednávky, mají stav **Nezpracovaná**.
 -   Když se rozhodnete plánovanou objednávku nepotvrdit, můžete jí přiřadit stav **Dokončeno**.
--   Když se rozhodnete plánovanou objednávku potvrdit, můžete jí přiřadit stav **Schváleno**. Tento stav označuje, že schvalujete potvrzení plánované objednávky, ale ta však ještě není potvrzena.
+-   Chcete-li potvrdit plánovanou objednávku, můžete její stav změnit na **Schváleno**. Plánované objednávky se stavem **Schváleno** jsou respektovány hlavním plánováním, takže nebudou změněny ani odstraněny. 
 
-**Poznámka:** Schválená plánovaná objednávka je přesunuta v aktuálním stavu k dalšímu výpočtu hlavního plánování. Plánované objednávky lze potvrdit kliknutím na položku **Potvrdit**. Upevnit lze následující plánované objednávky:
+## <a name="firming-planned-orders"></a>Potvrzení plánovaných objednávek 
+Při potvrzení plánovaných objednávek jsou vytvořeny reálné objednávky. Tyto informace jsou také známy jako *vydané* nebo *otevřené* objednávky. Když je plánovaná objednávka potvrzena, přesune se do částí objednávek příslušného modulu.
 
--   Plánovaná objednávka, která je vybrána.
--   Více plánovaných objednávek.
--   Plánované objednávky vytvořené rozpadem na stránce **Rozpad**. Klikněte na možnost **Plánované objednávky**, vyberte plánovanou objednávku a klikněte na položku **Potvrdit**.
+Na stránce **plánované objednávky** můžete vybrat dvě možnosti potvrzení:
 
-Když je plánovaná objednávka potvrzena, přesune se do částí objednávek příslušného modulu. 
+-   **Pevné** – tímto potvrdíte jednu nebo více vybraných plánovaných objednávek.
+-   **Potvrdit vše** – Tato akce potvrdí všech plánovaných objednávek ve filtru. Když použijete možnost **Potvrdit vše**, nemusíte vybírat plánovanou objednávku, všechny plánované objednávky v rámci tohoto filtru budou potvrzeny. Tato možnost může být užitečná v případě, že potvrzujete vysoký počet plánovaných objednávek.
+
+> [!NOTE]
+> Můžete sledovat plánovanou objednávku, která byla potvrzena v **Historii potvrzení** v části **Formulář plánované objednávky > Zobrazení > Historie potvrzení**.
+
+## <a name="parallelize-firming"></a>Paralelizovat potvrzení
+Pokud plánujete potvrdit více objednávek najednou, může paralelní provedení zlepšit dobu provádění nebo výkon. Tato možnost je k dispozici při potvrzování více plánovaných objednávek pomocí možnosti **Potvrdit** nebo **Potvrdit vše**. K dispozici jsou následující parametry:
+
+-   **Paralelizovat potvrzení** – Pokud je nastaveno **Ano**, proces potvrzování bude paralelizován s počtem podprocesů definovaných v poli **Počet podprocesů**.
+-   **Počet podprocesů** – řídí počet podprocesů použitých k parallelize procesu potvrzování. Parametr se zobrazuje pouze tehdy, je-li volba **Paralelizovat potvrzení** nastavena na **Ano**.
+
 
 <a name="additional-resources"></a>Další zdroje
 --------

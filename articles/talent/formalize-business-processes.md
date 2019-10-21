@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 85950a1413cfd8745bb78a52eb9f7c81b8976605
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 51f8102afc28b3836d5fee13aa1e950351af3c4f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517509"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008355"
 ---
 # <a name="formalize-business-processes"></a>Formalizace obchodních procesů
 
@@ -43,7 +43,7 @@ Vlastníka procesu lze definovat pro každý obchodní proces. Vlastník procesu
 Vlastník procesu nemůže vytvořit nové obchodní procesy nebo šablony obchodních procesů, nebo odstranit aktivní obchodní procesy nebo šablony obchodních procesů.
 
 ## <a name="tasks"></a>Úlohy
-Obchodní proces se často sklád z více úkolů. Některé úlohy, jako je například kontrola nabídek interních kurzů, lze dokončit v rámci aplikace Dynamics 365 for Talent[?]. V tomto případě je možnost zvolena v poli **Odkaz na úkol**. Ostatní úlohy mohou zahrnovat revize nebo vyplňování stránek na webové stránce. V tomto případě je zvoleno **URL** v poli **Odkaz na úkol** a poté lze zadat webovou adresu. Pro externí a interní weby můžete zadat adresy URL. Můžete také vytvořit úkoly pro aktivity, které provádíte ručně, například kontrolu přístupu všech struktur. V takovém případě není požadován odkaz na úkol. Tato flexibilita vám umožňuje sledovat více druhů úloh v komplexním procesu.
+Obchodní proces se často sklád z více úkolů. Některé úlohy, jako je například kontrola nabídek interních kurzů, lze dokončit v rámci aplikace Microsoft Dynamics 365 Talent. V tomto případě je možnost zvolena v poli **Odkaz na úkol**. Ostatní úlohy mohou zahrnovat revize nebo vyplňování stránek na webové stránce. V tomto případě je zvoleno **URL** v poli **Odkaz na úkol** a poté lze zadat webovou adresu. Pro externí a interní weby můžete zadat adresy URL. Můžete také vytvořit úkoly pro aktivity, které provádíte ručně, například kontrolu přístupu všech struktur. V takovém případě není požadován odkaz na úkol. Tato flexibilita vám umožňuje sledovat více druhů úloh v komplexním procesu.
 
 Úlohy lze přiřadit buď ke konkrétnímu pracovníkovi nebo pozici. Například manažer kompenzací a zaměstnaneckých výhod bude vždy osoba, která provádí kontrolu náhrad pojistného. Proto když vytvoříte tuto úlohu, vyberte **Pozice** v poli **Typ přiřazení** a poté zvolte **Manažer kompenzací a zaměstnaneckých výhod** v seznamu **Pozice**. Po spuštění obhodního procesu se přiřadí úloha k pracovníkovi, který je na pozici **Manažer kompenzací a zaměstnaneckých výhod**. Chcete-li přiřadit úkol konkrétnímu pracovníkovi, zvolte **Pracovník** v poli **Typ přiřazení** a poté vyberte příslušnou osobu.
 

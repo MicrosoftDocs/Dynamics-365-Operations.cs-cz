@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe8c4bc8f2efb06de4cb6fd727df93ba1a5d14bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554637"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251332"
 ---
 # <a name="price-simulation"></a>Simulace ceny
 
@@ -51,7 +51,7 @@ Aby byl zajištěn správný výpočet slev a cen, je nutné dbát při spuště
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typy slev v obchodních smlouvách
 
-Obchodní slevy v aplikaci Microsoft Dynamics 365 for Finance and Operations mohou mít čtyři typy slev. Tyto slevy mohou být nastaveny pro různé položky, zákazníky či cenové skupiny a mohou být omezeny datem. Při spuštění cenové simulace je nutné brát ohled na obchodní smlouvy, aby nedošlo k chybnému výpočtu. U obchodních smluv jsou k dispozici tyto čtyři typy slev:
+Obchodní slevy v aplikaci Supply Chain Management mohou mít čtyři typy slev. Tyto slevy mohou být nastaveny pro různé položky, zákazníky či cenové skupiny a mohou být omezeny datem. Při spuštění cenové simulace je nutné brát ohled na obchodní smlouvy, aby nedošlo k chybnému výpočtu. U obchodních smluv jsou k dispozici tyto čtyři typy slev:
 
 -   **Prodejní cena** – pro položky lze zadat zvláštní prodejní ceny. Při vytváření řádků nabídky program vyhledá správnou prodejní cenu pro určitou položku a převede ji do řádků nabídky. Obchodní smlouva s tímto typem slevy tedy neovlivní simulaci ceny. Prodejní cena, která je použita na řádku nabídky, odpovídá obchodní smlouvě.
 -   **Řádková sleva** – v závislosti na objednaném množství jsou určeny speciální slevy pro položky. Částky na řádku jsou obvykle sníženy o řádkovou slevu ještě před spuštěním simulace ceny. Obchodní smlouva s tímto typem slevy tedy ovlivní simulaci ceny.

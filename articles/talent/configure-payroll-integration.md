@@ -1,6 +1,6 @@
 ---
 title: Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
-description: Toto téma vysvětluje, jak nakonfigurovat integraci mezi aplikacemi Microsoft Dynamics 365 for Talent a Ceridian Dayforce pro zpracování výplat.
+description: Toto téma vysvětluje, jak nakonfigurovat integraci mezi aplikacemi Microsoft Dynamics 365 Talent a Ceridian Dayforce pro zpracování výplat.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/24/2019
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ec1d14cb14ab709dfc1bead4be0785904efcce4e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742902"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251032"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
 
 [!include [banner](includes/banner.md)]
 
-Integrace mezi aplikacemi Microsoft Dynamics 365 for Talent a Ceridian Dayforce závisí na několika krocích konfigurace popsaných v tomto tématu. Před zpracováním výplat je nutné nakonfigurovat integraci v aplikaci Talent i Dayforce.
+Integrace mezi aplikacemi Microsoft Dynamics 365 Talent a Ceridian Dayforce závisí na několika krocích konfigurace popsaných v tomto tématu. Před zpracováním výplat je nutné nakonfigurovat integraci v aplikaci Talent i Dayforce.
 
 Pokud používáte službu, jako je Dayforce, pro dokončení zpracování výplat, je nutné povolit integraci v aplikaci Talent. Integrace vyžaduje specifická data z aplikace Talent. Z tohoto důvodu musí ověřit, zda data, která jsou mapována do Dayforce, jsou v aplikaci Talent nakonfigurována tak, aby podporovala integraci. Integrace používá následující rozsáhlé kategorie dat:
 
@@ -39,7 +39,7 @@ Toto téma popisuje postup, který je třeba provést při povolení integrace. 
 
 ## <a name="enable-the-integration"></a>Povolení integrace
 
-V aplikaci Talent musíte zapnout integraci a zadat informace o konfiguraci pro připojení k aplikaci Dayforce. Pokud chcete, aby transakce hlavní knihy, která byla vytvořena, byla naimportována do aplikace Microsoft Dynamics 365 for Finance and Operations, musíte také nastavit účet úložiště Microsoft Azure a zadat řetězec připojení Azure Storage v aplikaci Finance and Operations.
+V aplikaci Talent musíte zapnout integraci a zadat informace o konfiguraci pro připojení k aplikaci Dayforce. Pokud chcete, aby transakce hlavní knihy, která byla vytvořena, byla naimportována do aplikace Microsoft Dynamics 365 Finance, musíte také nastavit účet úložiště Microsoft Azure a zadat řetězec připojení Azure Storage v aplikaci Finance and Operations.
 
 Pro zapnutí integrace v aplikaci Talent postupuje podle těchto kroků.
 

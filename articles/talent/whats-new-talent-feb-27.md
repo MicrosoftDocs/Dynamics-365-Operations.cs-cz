@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (27. února 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového nebo změněného v aplikaci Dynamics 365 Talent (27. února 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/27/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f175c6e60cf87c7dcbde0eaf35357130fa035712
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517510"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023992"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (27. února 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Talent (27. února 2019)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Změny v aplikaci Attract
 
@@ -77,9 +77,9 @@ Tato verze obsahuje jiné menší opravy chyb.
 
 V mnoha organizacích mohou manažeři kompenzací a zaměstnaneckých výhod mít přístup pouze k určitým záznamům o kompenzacích. Tyto záznamy mohou být pro vedoucí pracovníky nebo regionální zaměstnance. Tato změna umožní oddělení lidských zdrojů spravovat a udržovat plány kompenzace pro různé skupiny zaměstnanců v organizaci. Fixním a variabilním plánům lze přiřadit role zabezpečení, které určí přístup k plánům a údajům zaměstnance souvisejících s těmito plány (jako jsou například informace o mzdě a záznamy o bonusech). Kompenzace pro tyto zaměstnance budou moci zpracovávat pouze role s určeným přístupem.
 
-### <a name="platform-update-24"></a>Aktualizace platformy 24
+### <a name="platform-update-24-for-finance-and-operations"></a>Ajtzakuzace Platform Update 24 for Finance and Operations
 
-Další informace o aplikaci Microsoft Dynamics 365 for Finance and Operations v aktualizaci Platform Update 24 (březen 2019) naleznete v části [Funkce Preview v aplikaci Finance and Operations, aktualizace Platform Update 24 (březen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Další informace o aktualizaci Platform Update 24 aplikace Microsoft Dynamics 365 Finance and Operations (březen 2019) naleznete v části [Funkce Preview v aplikaci Finance and Operations, aktualizace Platform Update 24 (březen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Zpřístupnění fixní kompenzace zaměstnance pro budoucí přiřazení pozice
 
@@ -87,10 +87,10 @@ Je obvyklé, že zaměstnanec je přijat do organizace s budoucím počáteční
 
 ## <a name="known-issues"></a>Známé problémy
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Změny šablony integrace Core HR (Talent Common Data Service do Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance"></a>Změny šablony integrace Core HR (Talent Common Data Service do Finance)
 Šablona pro Core HR byla aktualizována na šablonu rozšířeného dotazu. Ve výchozím nastavení bude proto rozšířený dotaz k dispozici pro projekty vytvořené pomocí této šablony. Všechny výchozí funkce mapování budou navíc viditelné pouze v editoru rozšířených dotazů. (Výchozí funkce mapování se zobrazí v mapování jako FN.)
 
-Další informace o chybách mapování naleznete v tématu [Co je nového a co se změnilo v Dynamics 365 for Talent Core HR (14. prosince 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+Další informace o chybách mapování naleznete v tématu [Co je nového a co se změnilo v Dynamics 365 Talent: Core HR (14. prosince 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
 Chcete-li použít novou šablonu, vytvořte nový projekt a vyberte novou šablonu integrace aplikace Talent.
 

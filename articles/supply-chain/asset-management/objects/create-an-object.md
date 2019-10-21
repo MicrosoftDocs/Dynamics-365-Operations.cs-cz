@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f15c6c5ccdcddebe7aa428cff48ca6e3b120d7f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: bd963caed7f49db5dd7550dd30c3f831318d2b7a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783125"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250891"
 ---
 # <a name="create-an-asset"></a>Vytvoření majetku
 
@@ -63,12 +63,12 @@ Pole **Úroveň služby** a **Závažnost** se vztahují k pracovním příkazů
 
 ## <a name="asset"></a>Majetek
 
-Pro majetek můžete vybrat **zdroj**. Výběr zdroje určuje, který kalendář se použije pro plánování pracovního příkazu. Výběr zdrojů se často používá pro dlouhodobý majetek. V aplikaci Dynamics 365 for Finance and Operations jsou zdroje a skupiny zdrojů nastavené v části **Správa organizace** > **Zdroje** > **Skupiny zdrojů** nebo **Zdroje**.
+Pro majetek můžete vybrat **zdroj**. Výběr zdroje určuje, který kalendář se použije pro plánování pracovního příkazu. Výběr zdrojů se často používá pro dlouhodobý majetek. Zdroje a skupiny zdrojů jsou nastavené v části **Správa organizace** > **Zdroje** > **Skupiny zdrojů** nebo **Zdroje**.
 
 V poli **číslo dlouhodobého majetku** můžete vybrat dlouhodobý majetek, který chcete s majetkem spojit. To platí, pokud váš majetek souvisí s investičním projektem.
 
 - Pokud majetek souvisí s dlouhodobým majetkem, můžete vytvořit typ pracovního příkazu, který se použije pro pracovní příkazy spojené s investičním projektem. 
-- Informace o dlouhodobém majetku pro majetek se vztahují k modulu **Dlouhodobý majetek** v aplikaci Dynamics 365 for Finance and Operations. To znamená, že v okně **Dlouhodobý majetek** > **Dlouhodobý majetek** > **Dlouhodobý majetek** můžete získat přehled projektů správy majetku, které mohou souviset s dlouhodobým majetkem, výběrem majetku v seznamu a zobrazením obsahu v podokně **Související informace** > **Související projekty**.
+- Informace o dlouhodobém majetku pro majetek se vztahují k modulu **Dlouhodobý majetek** v aplikaci Dynamics 365 Supply Chain Management. To znamená, že v okně **Dlouhodobý majetek** > **Dlouhodobý majetek** > **Dlouhodobý majetek** můžete získat přehled projektů správy majetku, které mohou souviset s dlouhodobým majetkem, výběrem majetku v seznamu a zobrazením obsahu v podokně **Související informace** > **Související projekty**.
 
 
 ## <a name="details"></a>Podrobnosti

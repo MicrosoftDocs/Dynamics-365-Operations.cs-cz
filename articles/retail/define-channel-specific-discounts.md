@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a136e245beaf8dfd8bcf19d49f8a355c8871cde7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a23176cefde1f4d119828c9b124750d6106a3bfa
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568061"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019340"
 ---
 # <a name="define-channel-specific-discounts"></a>Definovat slevy specifické pro kanál
 
@@ -36,7 +36,7 @@ Maloobchodní prodejci často nastavují různé slevy v různých kanálech. To
 
 Maloobchodní prodejci často nabízejí různé slevy v různých kanálech. Činí tak z důvodu přizpůsobení místním tržním podmínkám nebo v rámci konkurenčního souboje s jinými maloobchodními prodejci.
 
-Microsoft Dynamics 365 for Retail používá cenové skupiny pro definování slev specifických pro kanál. Cenové skupiny lze přiřadit následujícím entitám (jedné entitě nebo více entitám): kanály, katalogy, umístění a věrnostní programy. V tomto článku jsou popsány kanály, ale stejné principy se týkají také slevových katalogů, slev podle umístění a věrnostních slev.
+Retail používá cenové skupiny pro definování slev specifických pro kanál. Cenové skupiny lze přiřadit následujícím entitám (jedné entitě nebo více entitám): kanály, katalogy, umístění a věrnostní programy. V tomto článku jsou popsány kanály, ale stejné principy se týkají také slevových katalogů, slev podle umístění a věrnostních slev.
 
 ## <a name="price-groups"></a>Cenové skupiny
 

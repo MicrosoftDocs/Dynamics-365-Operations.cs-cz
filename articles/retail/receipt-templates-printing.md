@@ -1,6 +1,6 @@
 ---
 title: Nastavení a návrh formátů příjemek
-description: Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určovat tak, jak se mají tisknout účtenky, faktury a další doklady. Microsoft Dynamics 365 for Retail obsahuje návrháře rozvržení formulářů, který umožňuje snadné vytváření a úpravu různých druhů rozvržení formulářů.
+description: Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určovat tak, jak se mají tisknout účtenky, faktury a další doklady. Dynamics 365 Retail obsahuje návrháře rozvržení formulářů, který umožňuje snadné vytváření a úpravu různých druhů rozvržení formulářů.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eb85752b53d0d48f07bfed9423637cb6c646ab61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553061"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025118"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Nastavení a návrh formátů příjemek
 
 [!include [banner](includes/banner.md)]
 
-Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určovat tak, jak se mají tisknout účtenky, faktury a další doklady. Microsoft Dynamics 365 for Retail obsahuje návrháře rozvržení formulářů, který umožňuje snadné vytváření a úpravu různých druhů rozvržení formulářů.
+Tento článek popisuje, jak můžete upravovat rozvržení formulářů a určovat tak, jak se mají tisknout účtenky, faktury a další doklady. Dynamics 365 Retail obsahuje návrháře rozvržení formulářů, který umožňuje snadné vytváření a úpravu různých druhů rozvržení formulářů.
 
 > [!IMPORTANT]
 > Musíte nastavit rozvržení formulářů a profily příjemek, chcete-li tisknout příjemky a další dokumenty z Retail Modern POS a Cloudového POS. Můžete zahrnout více rozložení formuláře do profilu účtenky. Můžete pak přiřadit profil účtenky k tiskárně úpravou profilu hardwaru.
@@ -55,7 +55,7 @@ Použijte návrháře rozvržení formuláře ke grafickému vytvoření rozvrž
 2. Na stránce **Formát příjemky** vyberte rozvržení formuláře a klepněte na tlačítko **Návrhář**.
 3. Klepnutím na tlačítko **Spustit** zahájíte instalaci hostitele maloobchodního návrháře.
 4. Na panelu Oznámení, který se zobrazí v dolní části okna Internet Explorer, klepněte na tlačítko **Otevřít** a spusťte tak instalaci předdefinovaného návrháře. (Oznamovací pruh se může zobrazit v jiném umístění v jiných prohlížečích). Indikátor průběhu ukazuje průběh procesu instalace.
-5. Po dokončení instalace zadejte na stránce Přihlásit své uživatelské jméno a heslo aplikace Dynamics 365 for Retail a klikněte na tlačítko **Přihlásit** pro spuštění návrháře.
+5. Po dokončení instalace zadejte na stránce Přihlásit své uživatelské jméno a heslo aplikace Retail a klikněte na tlačítko **Přihlásit** pro spuštění návrháře.
 6. Po ověření pověření a spuštění návrháře můžete začít navrhovat formát příjemky nebo změnit existující formát.
 7. Chcete-li vytvořit prvky formuláře, vyberte oddíl **Záhlaví**, **Řádky** nebo **Zápatí** a potom přetáhněte prvek z oddílu do pracovního prostoru. Většina prvků obsahuje proměnné, které jsou automaticky vyplněny daty z databáze. Další prvky, jako **Text**, vám umožňují vytisknout vlastní text na příjemce.
 

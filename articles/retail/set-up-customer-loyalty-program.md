@@ -1,6 +1,6 @@
 ---
 title: Přehled věrnostního programu
-description: Toto téma popisuje funkce věrnostního programu v aplikaci Microsoft Dynamics 365 for Retail odpovídající kroky nastavení, které pomáhají maloobchodníkům začít se svými věrnostními programy.
+description: Toto téma popisuje funkce věrnostního programu v aplikaci Dynamics 365 Retail odpovídající kroky nastavení, které pomáhají maloobchodníkům začít se svými věrnostními programy.
 author: scott-tucker
 manager: AnnBe
 ms.date: 03/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
-ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
+ms.openlocfilehash: 9fbb5d6db16e2e145c4970b5dd6417d9e99f78b2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1863765"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250960"
 ---
 # <a name="loyalty-overview"></a>Přehled věrnostního programu
 
 [!include [banner](includes/banner.md)]
 
-Věrnostní programy mohou posílit věrnost odběratele pomocí odměn odběratelům za jejich interakce se značkou maloobchodníka. V aplikaci Microsoft Dynamics 365 for Retail můžete nastavit jednoduché nebo komplexní věrnostní programy, které platí pro různé právnické osoby v libovolné maloobchodní síti. Toto téma popisuje funkce věrnostního programu v aplikaci Microsoft Dynamics 365 for Retail odpovídající kroky nastavení, které pomáhají maloobchodníkům začít se svými věrnostními programy.
+Věrnostní programy mohou posílit věrnost odběratele pomocí odměn odběratelům za jejich interakce se značkou maloobchodníka. V aplikaci Dynamics 365 Retail můžete nastavit jednoduché nebo komplexní věrnostní programy, které platí pro různé právnické osoby v libovolné maloobchodní síti. Toto téma popisuje funkce věrnostního programu v aplikaci Retail odpovídající kroky nastavení, které pomáhají maloobchodníkům začít se svými věrnostními programy.
 
 Věrnostní program lze nastavit tak, aby zahrnoval následující možnosti.
 
@@ -42,7 +42,7 @@ Věrnostní program lze nastavit tak, aby zahrnoval následující možnosti.
 
 ## <a name="setting-up-loyalty-programs"></a>Nastavení věrnostních programů
 
-Je nutné nastavit několik součástí, aby bylo možné funkci věrnostního programu v aplikaci Dynamics 365 for Retail zapnout. Následující diagram znázorňuje věrnostní součásti a jejich vzájemný vztah.
+Je nutné nastavit několik součástí, aby bylo možné funkci věrnostního programu v aplikaci Retail zapnout. Následující diagram znázorňuje věrnostní součásti a jejich vzájemný vztah.
 
 ![Tok procesu nastavení věrnostního programu](./media/loyaltyprocess.gif "Komponenty věrnostního programu a jak spolu souvisí mezi sebou")
 
@@ -69,9 +69,9 @@ Následující tabulka popisuje procesy, které je nutné provést k odeslání 
 
 | Název procesu                         | Popis | Název webové stránky |
 |--------------------------------------|-------------|-----------|
-| 1050 (informace o věrnostním programu)           | Spuštěním tohoto procesu odešlete data konfigurace věrnostního programu z aplikace Dynamics 365 for Retail do maloobchodů. Je vhodné naplánovat časté spouštění tohoto procesu, aby data věrnostních programů byla odesílána do všech obchodů. | Plán distribuce |
+| 1050 (informace o věrnostním programu)           | Spuštěním tohoto procesu odešlete data konfigurace věrnostního programu z aplikace Retail do maloobchodů. Je vhodné naplánovat časté spouštění tohoto procesu, aby data věrnostních programů byla odesílána do všech obchodů. | Plán distribuce |
 | Zpracovat věrnostní schémata              | Spuštěním tohoto procesu lze přidružit věrnostní schémata maloobchodním sítím, ke kterým je přiřazeno věrnostní schéma. Tento proces může být naplánován jako dávkový proces. Tento proces musíte spustit při změně dat konfigurace věrnostních programů, například věrnostních schémat, věrnostních programů nebo bodů věrnostních odměn. | Zpracovat věrnostní schémata |
-| Zpracovat věrnostní transakce offline | Spusťte tento proces, chcete-li aktualizovat věrnostní karty, aby zahrnovaly transakce, které byly zpracovány offline. Tento postup se použije pouze v případě, že zaškrtnete políčko **Získat offline** na stránce **Sdílené parametry maloobchodu**, aby bylo možné odměny získat offline. | Zpracovat věrnostní transakce offline |
+| Zaúčtování získaných věrnostních bodů v dávkách | Spusťte tento proces, chcete-li aktualizovat věrnostní karty, aby zahrnovaly transakce, které byly zpracovány offline. Tento postup se použije pouze v případě, že zaškrtnete políčko **Zaúčtovat získané body v dávkách** na stránce **Sdílené parametry maloobchodu**, aby bylo možné odměny získat offline. | Zaúčtování získaných věrnostních bodů v dávkách |
 | Aktualizovat úrovně věrnostních karet            | Spusťte tento proces, chcete-li vyhodnotit aktivitu získávání odběratele ve srovnání s pravidly úrovně pro věrnostní program a aktualizovat stav úrovně odběratele. Tento proces je nutný pouze v případě, že změníte pravidla úrovně ve věrnostních programech a chcete aktualizovaná pravidla zpětně použít na věrnostní karty, které již byly vystaveny. Tento proces může být naplánován jako dávkový proces nebo pro jednotlivé karty. | Aktualizovat úrovně věrnostních karet |
 
 ## <a name="loyalty-enhancements"></a>Vylepšení věrnostního programu
@@ -89,7 +89,7 @@ Retail obsahuje novou funkci věrnostního programu jako součást verze z říj
 
     ![Vyloučená přidělení](./media/Excluded-affiliations.png "Vyloučit přidělení ze získávání věrnostních bodů")
     
-- Maloobchodní prodejci mohou generovat čísla věrnostních karet v kanálech. Před aktualizací v říjnu roku 2018 mohli maloobchodníci použít fyzické věrnostní karty nebo vygenerovat věrnostní kartu pomocí některých jedinečných informací o zákaznících, jako je například telefonní číslo. Chcete-li povolit automatické generování věrnostních karet v maloobchodních prodejnách, zapněte **Generovat číslo věrnostní karty** ve funkčním profilu, který je přidružen k obchodu. Pro online kanály mohou maloobchodní prodejci použít API rozhraní IssueLoyaltyCard pro vystavení věrnostních karet zákazníkům. Maloobchodní prodejci mohou buď zadat číslo věrnostní karty do tohoto rozhraní API, které se použije ke generování věrnostní kartu, nebo systém použije posloupnost čísel věrnostních karet v aplikaci Dynamics 365 for Retail. Pokud však není číselná řada k dispozici a prodejce neposkytne číslo věrnostní karty při volání rozhraní API, zobrazí se chyba.
+- Maloobchodní prodejci mohou generovat čísla věrnostních karet v kanálech. Před aktualizací v říjnu roku 2018 mohli maloobchodníci použít fyzické věrnostní karty nebo vygenerovat věrnostní kartu pomocí některých jedinečných informací o zákaznících, jako je například telefonní číslo. Chcete-li povolit automatické generování věrnostních karet v maloobchodních prodejnách, zapněte **Generovat číslo věrnostní karty** ve funkčním profilu, který je přidružen k obchodu. Pro online kanály mohou maloobchodní prodejci použít API rozhraní IssueLoyaltyCard pro vystavení věrnostních karet zákazníkům. Maloobchodní prodejci mohou buď zadat číslo věrnostní karty do tohoto rozhraní API, které se použije ke generování věrnostní kartu, nebo systém použije posloupnost čísel věrnostních karet v aplikaci Retail. Pokud však není číselná řada k dispozici a prodejce neposkytne číslo věrnostní karty při volání rozhraní API, zobrazí se chyba.
 
     ![Generování věrnostní karty](./media/Generate-loyalty-card.png "Automatické vygenerování čísla věrnostní karty")
 
@@ -137,7 +137,7 @@ Retail obsahuje novou funkci věrnostního programu jako součást verze z říj
     - Realizace aktivity, která by měla být oceněna.
     - Udělení příslušných bodů.
 
-    První krok je externí k aplikaci Microsoft Dynamics 365 for Retail, například tweet o značce nebo označení značky To se mi líbí ve službě Facebook. Po rozpoznání této aktivity mohou prodejci volat výše uvedené rozhraní API maloobchodnío serveru a udělit věrnostní body v reálném čase. V takovém případě není nutné provést krok kontroly vzhledem k tomu, že se aktivita uskutečnila a měly by být uděleny příslušné body. Existují však situace, kdy by chtěl prodejce zkontrolovat záznamy předtím, než body udělí. Prodejce například zavedl dílnu v prodejně, pro kterou se zákazníci přihlašují na webu elektronického obchodování nebo v jiné aplikaci pro registraci akcí. Věrnostní body však mohou získávat pouze zákazníci, kteří se dostaví. U takových scénářů jsme ve verzi 10.0 zavedli datovou entitu nazvanou **Ostatní řádky typu maloobchodní aktivity**. Tato entita data umožňuje maloobchodním prodejcům použít rámec importu/exportu dat (DIXF) nebo rozhraní API OData k záznamu aktivit, které mají odměnit odběratele věrnostními body. Entita dat obsahuje aktivity v deníku s názvem **věrnostní řádky pro ostatní aktivity**, které lze použít pro účely přezkoumání a úpravy. Poté, co bylo zkontrolováno data IT uživatele, lze ručně zaúčtovat řádky aktivity nebo spustit úlohu s názvem **zpracovat jiný typ aktivity pro věrnostní řádky**, které zaúčtují všechny řádky nezaúčtované aktivity a body odměny pro odběratele na základě pravidla příjmů. Ve výše uvedeném scénáři bude aplikace registrace události volat rozhraní OD API k odeslání informací o zákazníkovi do aplikace Dynamics 365 for Retail. Uživatel IT však může zaúčtovat řádky aktivity pro zákazníky, kteří navštívili seminář a odstranit řádky aktivity pro ostatní zákazníky. 
+    První krok je externí k aplikaci Retail, například tweet o značce nebo označení značky To se mi líbí ve službě Facebook. Po rozpoznání této aktivity mohou prodejci volat výše uvedené rozhraní API maloobchodnío serveru a udělit věrnostní body v reálném čase. V takovém případě není nutné provést krok kontroly vzhledem k tomu, že se aktivita uskutečnila a měly by být uděleny příslušné body. Existují však situace, kdy by chtěl prodejce zkontrolovat záznamy předtím, než body udělí. Prodejce například zavedl dílnu v prodejně, pro kterou se zákazníci přihlašují na webu elektronického obchodování nebo v jiné aplikaci pro registraci akcí. Věrnostní body však mohou získávat pouze zákazníci, kteří se dostaví. U takových scénářů jsme ve verzi 10.0 zavedli datovou entitu nazvanou **Ostatní řádky typu maloobchodní aktivity**. Tato entita data umožňuje maloobchodním prodejcům použít rámec importu/exportu dat (DIXF) nebo rozhraní API OData k záznamu aktivit, které mají odměnit odběratele věrnostními body. Entita dat obsahuje aktivity v deníku s názvem **věrnostní řádky pro ostatní aktivity**, které lze použít pro účely přezkoumání a úpravy. Poté, co bylo zkontrolováno data IT uživatele, lze ručně zaúčtovat řádky aktivity nebo spustit úlohu s názvem **zpracovat jiný typ aktivity pro věrnostní řádky**, které zaúčtují všechny řádky nezaúčtované aktivity a body odměny pro odběratele na základě pravidla příjmů. Ve výše uvedeném scénáři bude aplikace registrace události volat rozhraní OD API k odeslání informací o zákazníkovi do aplikace Dynamics 365 Retail. Uživatel IT však může zaúčtovat řádky aktivity pro zákazníky, kteří navštívili seminář a odstranit řádky aktivity pro ostatní zákazníky. 
 
     > [!NOTE]
     > V současné době vynutí systém po uživateli, aby nastavil číselnou řadu pro "ostatní typy aktivit", ale nebude se jednat o povinný krok v příštích verzích. Chcete-li nastavit číselnou řadu, přejděte na **Sdílené maloobchodní parametry** \> **Číselné řady** a vyberte číselnou řadu pro **ID typu ostatních věrnostních aktivit**.

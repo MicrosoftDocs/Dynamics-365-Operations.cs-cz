@@ -1,6 +1,6 @@
 ---
 title: Subdodávka
-description: Toto téma vás provede subdodávkami ve výrobě v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+description: Toto téma vás provede subdodávkami ve výrobě v aplikaci Dynamics 365 Supply Chain Management.
 author: christophernread
 manager: AnnBe
 ms.date: 09/28/2018
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 55b516f928eadea9b7ddbb1192db79f3ab7fa204
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d1d7adf91c246ecad574043cbb60ca260bb328
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568376"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249904"
 ---
 # <a name="subcontracting"></a>Subdodávka
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vás provede subdodávkami ve výrobě v aplikaci Microsoft Dynamics 365 for Finance and Operations. První část tohoto tématu popisuje nastavení dat. Druhá část vás provede kroky v této ukázce.
+Toto téma vás provede subdodávkami ve výrobě v aplikaci Microsoft Dynamics 365 Supply Chain Management. První část tohoto tématu popisuje nastavení dat. Druhá část vás provede kroky v této ukázce.
 
 ## <a name="target-audience"></a>Cílová skupina
 

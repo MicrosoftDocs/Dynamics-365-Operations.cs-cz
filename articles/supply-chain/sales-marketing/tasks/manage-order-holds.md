@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 00ce4a31c0b0f466911658c79f6e32788273c127
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a7168d13ef0b24d06aa28fbbc22bbb4e6093df24
+ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833995"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "1994903"
 ---
 # <a name="manage-order-holds"></a>Správa blokování objednávek
 
@@ -33,45 +33,40 @@ Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomoc�
 
 
 ## <a name="set-up-order-holds"></a>Nastavení blokování objednávky
-1. Přejděte na Prodej a marketing > Nastavení > Prodejní objednávky > Kódy blokování objednávek.
-2. Klikněte na položku Nová.
-3. V poli Kód blokování zadejte hodnotu.
-    * Zadejte například Zpětné volání.  
-4. Zadejte nějakou hodnotu do pole Popis.
-    * Například blokovaná objednávka čekající na zpětné volání odběratele.  
-    * Volitelně zaškrtněte políčko Odebrat rezervace, abyste odstranili všechny fyzické rezervace z objednávky, když je přidán kód blokování.  
-5. Klikněte na položku Uložit.
+1. Přejděte na **Navigační podokno > Moduly > Prodej a marketing > Nastavení > Prodejní objednávky > Kódy blokování objednávky**.
+2. Klepněte na možnost **Nový**.
+3. V poli **Kód blokování** zadejte hodnotu. Zadejte například Zpětné volání.  
+4. Zadejte hodnotu do pole **Popis**.
+    - Například blokovaná objednávka čekající na zpětné volání odběratele.  
+    - Volitelně zaškrtněte políčko **Odebrat rezervace**, abyste odstranili všechny fyzické rezervace z objednávky, když je přidán kód blokování.  
+5. Klikněte na možnost **Uložit**.
 
 ## <a name="place-order-on-hold"></a>Zablokování objednávky
-1. Přejděte na Prodej a marketing > Prodejní objednávky > Všechny prodejní objednávky.
-2. Klikněte na položku Nová.
-3. V poli Účet odběratele zadejte nebo vyberte hodnotu.
-4. Klepněte na tlačítko OK.
-5. V poli Číslo zboží zadejte nebo vyberte hodnotu.
-6. Zadejte číslo do pole Množství.
-7. V podokně akcí klikněte na položku Prodejní objednávka.
-8. Klikněte na Blokování objednávky.
-9. Klikněte na položku Nová.
-10. V poli Kód blokování vyberte kód, který jste vytvořili v předchozím dílčím úkolu.
-11. Klikněte na položku Uložit.
+1. Přejděte na **Navigační podokno > Moduly > Prodej a marketing > Prodejní objednávky > Všechny prodejní objednávky**.
+2. Klepněte na možnost **Nový**.
+3. V poli **Účet odběratele** zadejte nebo vyberte hodnotu.
+4. Klikněte na tlačítko **OK**.
+5. V poli **Číslo položky** zadejte nebo vyberte hodnotu.
+6. Zadejte číslo do pole **Množství**.
+7. V **podokně akcí** klikněte na možnost **Prodejní objednávka**.
+8. Klikněte na **Blokování objednávky**.
+9. Klepněte na možnost **Nový**.
+10. V poli **Kód blokování** vyberte kód, který jste vytvořili v předchozím dílčím úkolu.
+11. Klikněte na možnost **Uložit**.
 12. Zavřete stránku.
-13. Přejděte na Prodej a marketing > Prodejní objednávky > Všechny prodejní objednávky.
-14. Označte v seznamu vybraný řádek.
-    * Objednávky, které jsou aktuálně blokovány, mají označena pole „Nezpracovávat a „Blokace“.    
-15. V podokně akcí klikněte na položku Vyskladnit a zabalit.
+13. Přejděte na **Prodej a marketing > Prodejní objednávky > Všechny prodejní objednávky**.
+14. Označte v seznamu vybraný řádek. Objednávky, které jsou aktuálně blokovány, mají označena pole „Nezpracovávat a „Blokace“.
+15. V podokně akcí klikněte na tlačítko **Vyskladnit a zabalit**.
 
 ## <a name="manage-order-holds"></a>Správa blokování objednávek
-1. Přejděte na Prodej a marketing > Prodejní objednávky > Otevřené objednávky > Blokování objednávky.
-    * Stránka s blokovanými objednávkami funguje jako pracovní plocha, kde můžete získat přehled všech aktuálních a zpracovaných blokování, se kterými zde můžete pracovat, a přidružených prodejních objednávek.      
+1. Přejděte na **Prodej a marketing > Prodejní objednávky > Otevřené objednávky > Blokování objednávky**. Stránka s **blokovanými objednávkami** funguje jako pracovní plocha, kde můžete získat přehled všech aktuálních a zpracovaných blokování, se kterými zde můžete pracovat, a přidružených prodejních objednávek.     
 2. Označte v seznamu vybraný řádek.
-3. V podokně akcí klikněte na Rezervace blokování.
-4. Klikněte na možnost Rezervace.
-5. Odznačte vybraný řádek na seznamu.
-    * Pole Rezervovat komu nyní zobrazuje vaše uživatelské ID.   
-6. Klikněte na možnost Vymazat rezervaci.
-7. V podokně akcí klikněte na možnost Vymazat blokování.
-    * Když jste připraveni odebrat blokování a umožnit objednávce, aby pokračovala k dalšímu kroku plnění, musíte blokování vymazat. Nevyžaduje-li objednávka žádné změny, můžete spustit akci Vymazat blokování. Můžete však použít akci Vymazat a upravit, pokud je třeba při vymazání blokování objednávku aktualizovat.      
-    * Akce Vymazat a odeslat je použitelná pouze při použití funkce kontaktního střediska.  
-8. Klikněte na možnost Vymazat blokování.
-    * Blokování nyní bylo z objednávky vymazáno a odebráno ze seznamu aktivních blokací. Všechna blokování a jejich podmnožinu podle specifického stavu zobrazíte změnou hodnoty v poli Zobrazit.     
+3. V **podokně akcí** klikněte na **Rezervace blokování**.
+4. Klikněte na možnost **Rezervace**.
+5. Odznačte vybraný řádek na seznamu. Pole **Rezervovat komu** nyní zobrazuje vaše uživatelské ID.   
+6. Klikněte na možnost **Vymazat rezervaci**.
+7. V **podokně akcí** klikněte na možnost **Vymazat blokování**.
+    - Když jste připraveni odebrat blokování a umožnit objednávce, aby pokračovala k dalšímu kroku plnění, musíte blokování vymazat. Nevyžaduje-li objednávka žádné změny, můžete spustit akci Vymazat blokování. Můžete však použít akci Vymazat a upravit, pokud je třeba při vymazání blokování objednávku aktualizovat.      
+    - Akce **Vymazat a odeslat** je použitelná pouze při použití funkce kontaktního střediska.  
+8. Klikněte na možnost **Vymazat blokování**. Blokování nyní bylo z objednávky vymazáno a odebráno ze seznamu aktivních blokací. Všechna blokování a jejich podmnožinu podle specifického stavu zobrazíte změnou hodnoty v poli Zobrazit.     
 

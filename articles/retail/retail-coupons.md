@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 449a1f574cd32860cbdc2e43f21be1d3d692768f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553546"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025095"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Natavení kupónů pro maloobchodní prodej
 
@@ -37,10 +37,10 @@ Každý kupón se vztahuje k jedné maloobchodní slevě. Cenové skupiny, kter�
 
 Kupóny v zásadě představují další ověření nad rámec maloobchodních slev. Kupón obsahuje kódy kupónu a čárové kódy, které jsou vyžadovány, spolu s rozsahy kalendářních dat pro tyto kódy. Kupón také poskytuje volitelné limity použití a vlastnosti definované zákazníkem. Sleva obsahuje sadu produktů, pro které kupón platný. Cenové skupiny pro slevu poskytují sadu zákazníků, kanálů nebo katalogů, pro které je kupón platný.
 
-Kupón vytvoříte tak, že vytvoříte slevu a kupón samostatně. Pak je spojíte výběrem slevy na stránce kupónu v Microsoft Dynamics 365 for Retail.
+Kupón vytvoříte tak, že vytvoříte slevu a kupón samostatně. Pak je spojíte výběrem slevy na stránce kupónu v aplikaci Retail.
 
 > [!NOTE]
-> Po propojení kupónu se slevou začne být několik polí na stránce slevy v Microsoft Dynamics 365 for Retail jen pro čtení, vzhledem k tomu, že jsou spravována nastavením kupónu. Tato pole zahrnují pole pro stav a standardní rozsahy dat.
+> Po propojení kupónu se slevou začne být několik polí na stránce slevy v aplikaci Retail jen pro čtení, vzhledem k tomu, že jsou spravována nastavením kupónu. Tato pole zahrnují pole pro stav a standardní rozsahy dat.
 
 ### <a name="limited-use-coupons"></a>Kupóny s omezeným použitím
 
@@ -75,7 +75,7 @@ Před nastavením kupónu je nutné nakonfigurovat čárový kód kupónu a dvě
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Vliv částečných aktualizací na kupóny
 
-Funkce kupón zahrnuje více různých funkcí v Dynamics 365 for Retail. Centrály Microsoft Dynamics 365 for Retail (HQ) a kanál lze částečně aktualizovat napříč komponentami. Proto je důležité pochopit, částečné aktualizace ovlivňují funkčnost kupónu jako celek.
+Funkce kupón zahrnuje více různých funkcí. Centrály Dynamics 365 Retail (HQ) a kanál lze částečně aktualizovat napříč komponentami. Proto je důležité pochopit, částečné aktualizace ovlivňují funkčnost kupónu jako celek.
 
 - **HQ se aktualizuje částečně, ale nejsou aktualizovány databáze serveru Retail a POS.** V aktualizaci HQ se aktualizují stránky kupónu a slev a modul maloobchodní ceny je rovněž aktualizován. Pokud je aktualizována pouze jedna z těchto dvou komponent, některé stránky v modulu Retail nebudou odpovídat datům výpočtu ceny. Při výpočtech slevy tak mohou nastat neočekávané výpočty slevy nebo chyby.
 - **HQ se aktualizuje částečně, ale nejsou aktualizovány databáze serveru Retail a POS (N-1).** Vzhledem k tomu, že zároveň nemohou být aktualizovány všechny maloobchody, doporučujeme, abyste provedli aktualizaci HQ před aktualizací maloobchodů. V případě scénáře N-1 nebude nová funkčnosti vztahující se ke kupónům k dispozici v obchodech, které dosud nebyly aktualizovány. Funkce kupónu například zavádí řádky vyloučení. Používáte-li u slevy vyloučené řádky, nebudou použity v maloobchodě, ve kterém je spuštěna dřívější verze.

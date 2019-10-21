@@ -1,6 +1,6 @@
 ---
-title: Uživatel má přístup k aplikaci Core HR, ale nikoliv k aplikacím Onboard nebo Attract
-description: Toto téma vysvětluje, jak vyřešit problém, kdy má uživatel přístup k aplikaci Dynamics 365 for Talent Core HR, nikoliv však k aplikacím Attract nebo Onboard.
+title: Uživatel má přístup k Core HR, ale nikoliv k aplikacím Onboard nebo Attract
+description: Toto téma vysvětluje, jak vyřešit problém, kdy má uživatel přístup k aplikaci Dynamics 365 Talent - Core HR, nikoliv však k aplikacím Attract nebo Onboard.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6fc27a4c137fef2f8d204d90366c316389da08e6
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 80b1f8aeabfd033f393463f4be5a61447377f2d9
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741703"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009299"
 ---
-# <a name="user-can-access-core-hr-but-not-the-onboard-or-attract-app"></a>Uživatel má přístup k Core HR, ale nikoliv k aplikacím Onboard nebo Attract
+# <a name="user-can-access-core-hr-but-not-onboard-or-attract"></a>Uživatel má přístup k Core HR, ale nikoliv k aplikacím Onboard nebo Attract
 
 [!include [banner](includes/banner.md)]
 
 **Podrobnosti o prostředí**
 
 - Nasazení služeb Microsoft Dynamics Lifecycle Services bylo provedeno uživatelem A.
-- Uživatel A přidal uživatele B jako uživatele do aplikace Microsoft Dynamics 365 for Talent Core HR.
+- Uživatel A přidal uživatele B jako uživatele do aplikace Microsoft Dynamics 365 Talent: Core HR.
 
-**Výdej**
+**Vydání**
 
 Uživatel B má přístup do Core HR, ale nedostane se do aplikací Talent: Attract nebo Talent: Onboard. Pokud se uživatel pokusí přejít na **Vyzkoušení aplikací**, je zaveden místo toho do zkušebního prostředí.
 

@@ -1,9 +1,9 @@
 ---
-title: Nejčastější dotazy týkající se integrace aplikace Dynamics 365 for Talent s Dynamics 365 for Finance and Operations
-description: Toto téma vysvětluje, jaká data jsou synchronizována v rámci integrace aplikací Talent a Finance and Operations.
+title: Nejčastější dotazy týkající se integrace aplikace Dynamics 365 Talent s Dynamics 365 Finance
+description: Toto téma vysvětluje, jaká data jsou synchronizována v rámci integrace aplikací Talent a Finance.
 author: andreabichsel
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 5bb855e6dd7ff236b7bda9e59e12ed8cc8ab9bc9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742696"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251007"
 ---
-# <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Nejčastější dotazy týkající se integrace aplikace Dynamics 365 for Talent s Dynamics 365 for Finance and Operations
+# <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Nejčastější dotazy týkající se integrace aplikace Dynamics 365 Talent s Dynamics 365 Finance
 
 [!include [banner](includes/banner.md)]
 
-Toto téma uvádí odpovědi na časté otázky spojené s tím, jaká data jsou synchronizována při integraci aplikace Dynamics 365 for Talent s Dynamics 365 for Finance and Operations.
+Toto téma uvádí odpovědi na časté otázky spojené s tím, jaká data jsou synchronizována při integraci aplikace Dynamics 365 Talent s Dynamics 365 Finance.
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Jsou synchronizovaná všechna data nebo jenom některé datové entity?
 
-S aplikací Core Human Resources (HR) je synchronizována dílčí skupina dat. Seznam všech entit uvádí téma [Integrace z aplikace Dynamics 365 for Talent do Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
+S aplikací Core HR je synchronizována dílčí skupina dat. Seznam všech entit uvádí téma [Integrace z aplikace Dynamics 365 Talent do Dynamics 365 Finance](talent-financeandoperations-integration.md).
 
 V případě Attract a Onboard jsou všechna data nativní pro Common Data Service.
 
@@ -40,15 +40,15 @@ V případě Attract a Onboard jsou všechna data nativní pro Common Data Servi
 
 Šablony jsou počátečním bodem. Můžete vytvořit vlastní šablonu, ale při vytváření projektu integrace je šablona potřeba vždy. Další informace o šablonách integrátoru dat (DI) a projektech naleznete v tématu [Integrace dat v Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Lze mapovat finanční dimenze k přenosu mezi aplikacemi Talent and Finance and Operations?
+## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance"></a>Lze mapovat finanční dimenze k přenosu mezi aplikacemi Talent a Finance?
 
 Finanční dimenze aktuálně nejsou v Common Data Service pro aplikace a proto nejsou součástí výchozí šablony. Tato entita je plánována, ale v současné době není k dispozici žádná časová osa pro uvolnění.
 
-V případě dat, která existují v modulu Finance and Operations, ale ne v aplikaci Talent, spojte tyto dva systémy pomocí příkazu **Konfigurovat odkazy** v aplikaci Talent. Další informace o tom, jak konfigurovat propojení mezi aplikacemi Talent a Finance and Operations získáte v tématu [Co je nového nebo změněného v Dynamics 365 for Talent Core HR (October 31, 2018)](whats-new-talent-october-31.md).
+V případě dat, která existují v modulu Finance, ale ne v aplikaci Talent, spojte tyto dva systémy pomocí příkazu **Konfigurovat odkazy** v aplikaci Talent. Další informace o tom, jak konfigurovat propojení mezi aplikacemi Talent a Finance získáte v tématu [Co je nového nebo změněného v Dynamics 365 Talent: Core HR Core HR (31. října 2018)](whats-new-talent-october-31.md).
 
 ![Mapovat finanční dimenze](media/MapFinancialDimensions.png)
 
-## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Někdy se stane, že když importuji zaměstnance, přejdou v modulu Finance and Operations mezi neaktivní zaměstnance. Proč?
+## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Někdy se stane, že když importuji zaměstnance, přejdou v modulu Finance. Proč?
 
 Jestliže zaměstnanci nemají záznam podrobností o aktivním zaměstnání v aplikaci Talent může dojít k této chybě. Chybu vyřešíte tak, že přejdete na položky **Správa zaměstnanců \> Zaměstnanci \> Historie zaměstnání \> Správce dat** a ověříte, že existuje aktivní záznam detailů zaměstnání.
 
@@ -62,7 +62,7 @@ S použitím "Rozšířeného dotazu" můžete filtrovat a měnit tvar zdrojový
 
 ![Rozšířený dotaz aktivních pracovníků](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
-## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Můžu určit pole, která chcete odeslat do modulu Finance and Operations pro konkrétní entitu?
+## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Můžu určit pole, která chcete odeslat do modulu Finance pro konkrétní entitu?
 
 Pole lze přidat nebo odebrat z úkolu integrace. Ne všechna datová pole, která existují na Common Data Service budou doplněna z Core HR.
 Prostřednictvím PowerApps lze naplnit další data.
@@ -75,7 +75,7 @@ Není potřeba žádné speciální nastavení pro zpracování výjimek. Integr
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Můžu nastavit integraci obousměrně?
 
-Ne, integrace je v současné době jednosměrná (z aplikace Talent do aplikace Finance and Operations). Je však k dispozici výchozí šablona pro odeslání dat z aplikace Talent do Finance and Operations.
+Ne, integrace je v současné době jednosměrná (z aplikace Talent do aplikace Finance and Operations). Je však k dispozici výchozí šablona pro odeslání dat z aplikace Talent do Finance.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Můžu povolit odstranění záznamu v rámci Moje integrace?
 
@@ -93,13 +93,13 @@ Při použití výchozí šablony budou integrační klíče automaticky importo
 
 ## <a name="if-i-have-n-number-of-legal-entities-where-workers-have-employments-do-i-need-to-create-a-mapping-for-each-of-them"></a>Pokud mám nekonečný počet právnických osob, kde mají zaměstnanci zaměstnání, je nutné vytvořit mapování pro každý z nich?
 
-Ano, pro každou právnickou osobu v modulu Finance and Operations je nutný samostatný integrační projekt v integraci dat.
+Ano, pro každou právnickou osobu v modulu Finance je nutný samostatný integrační projekt v integraci dat.
 
 ## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Je třeba převést data, která nejsou součástí výchozí šablony od společnosti Microsoft. Lze to provést?
 
 Ano, pole můžete přidat do existující šablony nebo z ní odebrat. Šablony lze upravit tak, aby obsahovaly další data z jiných entit Common Data Service. Entita musí být Common Data Service, aby byla zahrnuta do šablony. 
 
-## <a name="i-just-created-new-finance-and-operations-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Právě jsem vytvořil nová prostředí Finance and Operations a Talent a zobrazuje se chyba Hodnota data porušuje omezení integrity. Proč?
+## <a name="i-just-created-new-finance-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Právě jsem vytvořil nová prostředí Finance a Talent a zobrazuje se chyba Hodnota data porušuje omezení integrity. Proč?
 
 Důvody této chyby mohou zahrnovat:
 
@@ -109,9 +109,9 @@ Důvody této chyby mohou zahrnovat:
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Pokud došlo k chybám provedení a neproběhla synchronizace ID zaměstnance, jak lze najít úlohu historie s neúspěšným záznamem zaměstnance?
 
-Integrátor dat v modulu Finance and Operations vytvoří více projektů. Vztah mezi úlohou integrátoru dat a projektem Finance and Operations je jedna ku jedné.
+Integrátor dat v modulu Finance vytvoří více projektů. Vztah mezi úlohou integrátoru dat a projektem Finance je jedna ku jedné.
 
-Sledujte čas od historie provedení integrátoru dat a hledejte projekt index - 1 v modulu Finance and Operations. Pokud je číslo úlohy v integrátoru dat 9, index modulu operace Finance and Operations je 8.
+Sledujte čas od historie provedení integrátoru dat a hledejte projekt index - 1 v modulu Finance. Pokud je číslo úlohy v integrátoru dat 9, index modulu operace Finance je 8.
 
 1. Zaznamenejte index úkolů z integrátoru dat (v tomto případě je to "9").
 
@@ -121,13 +121,13 @@ Sledujte čas od historie provedení integrátoru dat a hledejte projekt index -
 
 ![Sledování času provádění projektu.](media/CaptureTimeOfExecution.png)
 
-3. V aplikaci Finance and Operations vyhledejte index -1. V tomto příkladu projekt bude mít příponu 8 a čas provedení projektu indexu 0 odpovídá času provedení v kroku 2.
+3. V modulu finance určete index - 1. V tomto příkladu projekt bude mít příponu 8 a čas provedení projektu indexu 0 odpovídá času provedení v kroku 2.
 
 ![Identifikace indexu](media/IdentifyIndex.png)
 
-## <a name="after-integrating-talent-and-finance-and-operations-i-dont-see-my-talent-data-in-finance-and-operations-what-do-i-do"></a>Po integraci aplikací Talent a Finance and Operations nevidím data Talent v aplikaci Finance and Operations. Co udělat?
+## <a name="after-integrating-talent-and-finance-i-dont-see-my-talent-data-in-finance-what-do-i-do"></a>Po integraci aplikací Talent a Finance nevidím data Talent v aplikaci Finance and Operations. Co udělat?
 
-Integrace s aplikací Finance and Operations je proces ve dvou krocích. Nejprve ověřte, že jsou data aplikace Talent aktualizovaná a dostupná v Common Data Service. To je synchronizace v reálném čase a lze ji ověřit v PowerApps pohledem na data v rámci datových entit.
+Integrace s aplikací Finance je proces ve dvou krocích. Nejprve ověřte, že jsou data aplikace Talent aktualizovaná a dostupná v Common Data Service. To je synchronizace v reálném čase a lze ji ověřit v PowerApps pohledem na data v rámci datových entit.
 
 ![Data v Common Data Service](media/DataInCDS.png)
 
@@ -135,24 +135,24 @@ Pokud se data v Common Data Service nezobrazují požadovaným způsobem, ověř
 
 Pokud je entita podporovaná a data jsou v Common Data Service k dispozici, ověřte, zda je v integrátoru dat správné mapování. Pokud se mapování integrátoru zdá v pořádně, ověřte, zda jsou úspěšně spuštěné úlohy správy dat. Během zpracování dávkových úloh může dojít k chybám. Další informace o způsobu použití nástroje pro správu dat naleznete v tématu [Správa dat](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
-## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Údaje o adrese mých zaměstnanců nejdou po importu do aplikace Finance and Operations správné. Co mám dělat?
+## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Údaje o adrese mých zaměstnanců nejdou po importu do aplikace Finance správné. Co mám dělat?
 
-Číselná řada pro **ID skladového místa** používá stejný vzorec v aplikacích Talent i Finance and Operations. Číselné řady musí být jedinečný na obou stranách tak, aby nebyla žádná kolize adres při integraci dat z Common Data Service do Finance and Operations.
+Číselná řada pro **ID skladového místa** používá stejný vzorec v aplikacích Talent i Finance. Číselné řady musí být jedinečný na obou stranách tak, aby nebyla žádná kolize adres při integraci dat z Common Data Service do Finance and Operations.
 
-Při implementaci aplikace Talent ověřte, zda číselné řady v aplikaci Talent a Finance and Operations nejsou stejné. Ověřte, zda nejsou všechny číselné řady stejné, když lze udržovat data v obou systémech.
+Při implementaci aplikace Talent ověřte, zda číselné řady v aplikaci Talent a Finance nejsou stejné. Ověřte, zda nejsou všechny číselné řady stejné, když lze udržovat data v obou systémech.
 
 ## <a name="when-creating-my-connection-set-i-am-unable-to-see-the-connection-in-the-connection-drop-down-list-what-do-i-do"></a>Při vytvoření sady připojení nevidím připojení v rozevíracím seznamu připojení. Co udělat?
 
-Při vytváření připojení zvolte Dynamics 365 for Finance and Operations (aktuálně v náhledu) a Common Data Service.
+Při vytváření připojení zvolte Dynamics 365 Finance a Common Data Service.
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Při synchronizaci zaměstnání se zobrazují chyby "CompanyInfo_FK neexistuje" nebo "Hodnota 31/12 a 2154 23:59:59: 00 ' v poli Koncové datum zaměstnání nebyla nalezena v související tabulce"Zaměstnání"." Co mám dělat?
 
-Mapujte na správné právnické osoby. Synchronizace právnické osoby není součástí výchozí šablony, takže se očekává, že každá právnická osoba přítomná v aplikacích Talent a Common Data Service je dostupná také v aplikaci Finance and Operations.
+Mapujte na správné právnické osoby. Synchronizace právnické osoby není součástí výchozí šablony, takže se očekává, že každá právnická osoba přítomná v aplikacích Talent a Common Data Service je dostupná také v aplikaci Finance.
 Dále také vyberte správné právnické osoby pro přidruženou sadu připojení.
 
-## <a name="after-setting-up-my-project-the-field-mapping-for-finance-and-operations-appears-to-be-empty-what-should-i-do"></a>Po nastavení projektu se zdá mapování polí pro Finance and Operations prázdné. Co mám dělat?
+## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>Po nastavení projektu se zdá mapování polí pro Finance prázdné. Co mám dělat?
 
-Aktualizujte entity dat v aplikaci Finance and Operations v části **Správa dat \> Parametry systému \> Nastavení entity \> Aktualizovat seznam entit.** Mělo by to trvat několik minut a poté by se mělo zobrazit toto mapování. K tomuto problému dochází při vytváření nových projektů.
+Aktualizujte entity dat v aplikaci Finance v části **Správa dat \> Parametry systému \> Nastavení entity \> Aktualizovat seznam entit.** Mělo by to trvat několik minut a poté by se mělo zobrazit toto mapování. K tomuto problému dochází při vytváření nových projektů.
 
 ![Mapování chybějících polí](media/MissingFieldMapping.png)
 
@@ -164,7 +164,7 @@ Aktualizujte entity dat v aplikaci Finance and Operations v části **Správa da
 
   - [Správa chyb a řešení problémů integrátoru dat](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Odpovídání na požadavky DSR u systémem generovaných protokolů v Microsoft Flow a Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Odpovídání na požadavky DSR u systémem generovaných protokolů v PowerApps, Microsoft Flow a Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Správa dat:
 

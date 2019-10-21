@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b3247f693f5934b3fbf83b7b831c7ed221514cb
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 067d1085d9afa04cb76b78393a8a8b9834ce4d8c
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783118"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250937"
 ---
 # <a name="maintenance-attribute-types"></a>Typy atributů údržby
 
@@ -42,10 +42,10 @@ Atributy, které můžete nastavit, se mohou lišit v závislosti na prvku. Nap�
 
 ## <a name="create-attribute-types"></a>Tvorba typů atributů
 
-Můžete vytvořit vlastní typy atributů. Dále je možné převést dimenze produktu ze Microsoft Dynamics 365 for Finance and Operations na stránku **Typů atributů**.
+Můžete vytvořit vlastní typy atributů. Dále je možné převést dimenze produktu na stránku **Typy atributů**.
 
 1. Vyberte **Správa majetku** \> **Nastavení** \> **Typy atributů**.
-2. Při prvním nastavení typů atributů vyberte možnost **Vytvořit dimenze produktů**, aby se automaticky přesunuly standardní dimenze produktů Finance and Operations.
+2. Při prvním nastavení typů atributů vyberte možnost **Vytvořit dimenze produktů**, aby se automaticky přesunuly standardní dimenze produktů.
 3. Zvolte **Nový** pro vytvoření nového typu atributu.
 4. Do pole **Typ atributu** zadejte název typu atributu.
 5. Zadejte popis do pole **Popis**.

@@ -1,6 +1,6 @@
 ---
 title: Odsouhlasení nákladu ve správě přepravy
-description: Tento článek popisuje proces odsouhlasení dopravného.
+description: Toto téma popisuje proces odsouhlasení dopravného.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f92808f904ba93513e20b74bd2b597712cb93d4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eb3ba06f4fa8cc4af952619d06a58e605ff87e2a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560925"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251562"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>Odsouhlasení nákladu ve správě přepravy
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje proces odsouhlasení dopravného.
+Toto téma popisuje proces odsouhlasení dopravného.
 
 Odsouhlasení dopravného lze provádět ručně, nebo je můžete nastavit automaticky. Chcete-li použít automatické odsouhlasení dopravného, musíte vytvořit předlohu auditu, kde definujete kritéria určující, které účty dopravného jsou spárovány automaticky.
 
@@ -40,8 +40,8 @@ Sazby dopravného se vypočítají podle sazebního modulu, který je spojen s o
 [![Proces odsouhlasení dopravného](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
 
 ## <a name="manual-reconciliation"></a>Ruční odsouhlasení
-Pokud provádíte odsouhlasení dopravného ručně, musíte spárovat každý řádek faktury s řádkem/řádky účtu dopravného pro náklad, který se fakturuje. Toto párování provádíte na stránce **Spárování účtů dopravného a faktur**. Pokud částka na řádku faktury neodpovídá částce na účtu dopravného, je nutné vybrat důvod odsouhlasení pro tento rozdíl. Pokud existuje více důvodů k odsouhlasení, je možné rozdělit nespárované částky mezi ně. Důvod odsouhlasení určuje, jak jsou rozdílné částky zaúčtovány v hlavní knize. Pokud zohledňujete odsouhlasení celé fakturované částky, je částka odeslána ke schválení, a následně je zaúčtován deník. Následující obrázek ukazuje, jak generovat fakturu za dopravné a provádět odsouhlasení dopravného v aplikaci Microsoft Dynamics 365 for Finance and Operations. 
-[![Odsouhlasení dopravného v aplikaci Dynamics AX](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
+Pokud provádíte odsouhlasení dopravného ručně, musíte spárovat každý řádek faktury s řádkem/řádky účtu dopravného pro náklad, který se fakturuje. Toto párování provádíte na stránce **Spárování účtů dopravného a faktur**. Pokud částka na řádku faktury neodpovídá částce na účtu dopravného, je nutné vybrat důvod odsouhlasení pro tento rozdíl. Pokud existuje více důvodů k odsouhlasení, je možné rozdělit nespárované částky mezi ně. Důvod odsouhlasení určuje, jak jsou rozdílné částky zaúčtovány v hlavní knize. Pokud zohledňujete odsouhlasení celé fakturované částky, je částka odeslána ke schválení, a následně je zaúčtován deník. Následující obrázek ukazuje, jak generovat fakturu za dopravné a provádět odsouhlasení dopravného. 
+[![Úlohy odsouhlasení dopravného](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
 ## <a name="automatic-reconciliation"></a>Automatické odsouhlasení
 Chcete-li použít automatické odsouhlasení, je nutné zadat plán odsouhlasení, stejně jako faktury a dopravce, které chcete použít. Párování řádků faktury a účtů dopravného se provádí podle nastavení v hlavním auditu a podle typu účtu dopravného. Po spuštění automatického odsouhlasení musíte zpracovat všechny faktury, které systém nespáruje. Tyto faktury musíte poté ručně zpracovat, než budete moci zaúčtovat všechny faktury pro platbu.
 

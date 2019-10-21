@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c900ef715b62484c1fb6576b7f0c97cdea4e4284
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: abb78c9ac43dad80e45729f4b42651d9807f71f1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865129"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251055"
 ---
-# <a name="warehouse-management-overview"></a>Řízení skladu – přehled
+# <a name="warehouse-management-overview"></a>Přehled řízení skladu
 
 [!include [banner](../includes/banner.md)]
 
-Modul správy skladu pro Dynamics 365 for Finance and Operations umožňuje spravovat procesy skladu ve výrobě, distribuci a maloobchodních společnostech. Tento modul má celou řadu funkcí pro podporu skladového areálu na optimální úrovni v jakémkoliv čase. Řízení skladu je plně integrováno s ostatními obchodními procesy v aplikaci Finance and Operation, jako je například přeprava, výroba, řízení kvality, nákup, převod, prodej a vrácení.
+Modul Řízení skladu slouží ke správě procesů skladu ve výrobě, distribuci a maloobchodních společnostech. Tento modul má celou řadu funkcí pro podporu skladového areálu na optimální úrovni v jakémkoliv čase. Řízení skladu je plně integrováno s ostatními obchodními procesy v aplikaci, jako je například přeprava, výroba, řízení kvality, nákup, převod, prodej a vrácení.
 
 ## <a name="get-started"></a>Začínáme
 Abyste mohli začít pracovat s modulem Řízení skladu, je třeba dokončit nastavení obecných parametrů skladu pro podporu obchodních procesů vaší společnosti.

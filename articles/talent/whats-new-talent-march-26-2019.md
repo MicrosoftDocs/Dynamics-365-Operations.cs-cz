@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (26. března 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového nebo změněného v aplikaci Dynamics 365 Talent (26. března 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/26/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24070d1efa3299c378d7a4a328531817a598d272
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741560"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023877"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-26-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (26. března 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Talent (26. března 2019)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 for Talent.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Změny v aplikaci Attract
 
@@ -53,9 +53,9 @@ Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Onboa
 
 ### <a name="custom-field-support-available-for-select-entities-in-common-data-service"></a>Podpora vlastních polí pro vybrané entity ve službě Common Data Service 
 
-Následující entity Common Data Service nyní podporují vlastní pole vytvořená v Dynamics 365 for Talent:
+Následující entity Common Data Service nyní podporují vlastní pole vytvořená v Talent:
 
-- Pracovník
+- Pracovní podproces
 - Etnický původ
 - Statut veterána
 - Kód jazyka
@@ -72,7 +72,7 @@ S touto změnou nyní stránka historie zaměstnání zobrazuje záznamy o zamě
 V této verzi se plány fixní kompenzace nyní zobrazují při omezení uživatelů podle společnosti v oblasti zabezpečení. Všechna nastavení zabezpečení budou respektována a pro tyto společnosti, ke kterým má uživatel oprávnění přístupu, se zobrazí fixní plány. 
 
 ### <a name="cant-delete-job-records-using-open-in-excel-option-in-talent"></a>V aplikaci Talent nelze odstranit záznamy o práci pomocí možnosti Otevřít v aplikaci Excel
-V této verzi můžete nyní odstranit záznamy o práci pomocí možnosti **Otevřít v aplikaci Excel** v aplikaci Dynamics 365 for Talent.
+V této verzi můžete nyní odstranit záznamy o práci pomocí možnosti **Otevřít v aplikaci Excel** v aplikaci Talent.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade na Common Data Service
 Konečné termíny pro upgrade na Common Data Service se rychle blíží. Přihlaste se do centra pro správu PowerApps k určení, zda je třeba provést upgrade databáze. Další informace o konečných termínech a nutných krocích k upgradu naleznete v tématu [Upgrade na Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
@@ -93,7 +93,7 @@ Organizace mohou vyžadovat, aby byly kódy důvodu nastaveny na konkrétních t
 V mnoha organizacích mohou mít manažeři kompenzací a zaměstnaneckých výhod přístup pouze k určitým záznamům o kompenzacích. Tyto záznamy mohou být pro vedoucí pracovníky nebo regionální zaměstnance. Díky této změně může oddělení lidských zdrojů spravovat a udržovat plány kompenzace pro různé skupiny zaměstnanců v organizaci. Fixním a variabilním plánům lze přiřadit role zabezpečení, které určí přístup k plánům a údajům zaměstnance souvisejících s plány, jako jsou například záznamy o mzdě nebo bonusech. Kompenzace pro tyto zaměstnance mohou zpracovávat pouze role, kterým byl udělen přístup.
 
 ###  <a name="email-support-for-alerts"></a>Podpora e-mailu pro výstrahy
-S aktualizací Platform Update 25 mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěny událostí. 
+V aktualizaci Platform Update 25 for Finance and Operations mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěna událostí. 
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Kontrola duplicitních zaměstnanců: změny uživatelského rozhraní
 S touto změnou se při zadávání polí názvů zjistí duplicity a stav zobrazí počet nalezených duplicit. Chcete-li otevřít novou stránku, můžete vybrat poskytnutý odkaz a vyhodnotit, zda chcete použít detekovanou shodu. Aby nedošlo k přerušení zadávání dat, formulář duplicit se neotevře automaticky.

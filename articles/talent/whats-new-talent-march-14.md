@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (14. března 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového nebo změněného v aplikaci Dynamics 365 Talent (14. března 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/14/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee8e076174acba8e706991f3086d6299a10945ec
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 5c3beef9ef4e73eaf76f861735bb154fa630703f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742486"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023900"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-14-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 for Talent (14. března 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-14-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Talent (14. března 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -46,8 +46,8 @@ Změny provedené v této verzi umožňují scénáře správy výkonu při pou�
 ### <a name="mass-assign-checklists-to-workers"></a>Hromadné přiřazení kontrolních seznamů pracovníkům
 S touto změnou můžete nyní vybrat více zaměstnanců a hromadně jim přidělit jeden nebo více kontrolních seznamů. 
 
-### <a name="platform-update-24"></a>Aktualizace platformy 24
-Další podrobnosti o aktualizaci Platform Update 24 naleznete v tématu [Co je nového a co se změnilo v aplikaci Finance and Operations, Platform Update 24 (březen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Podstatné změny v aktualizaci Platform Update 24 obsahují: 
+### <a name="platform-update-24-for-finance-and-operations"></a>Ajtzakuzace Platform Update 24 for Finance and Operations
+Další podrobnosti o aktualizaci Platform Update 24 for Finance and Operations naleznete v tématu [Co je nového a co se změnilo v aplikaci Finance and Operations, Platform Update 24 (březen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Podstatné změny v aktualizaci Platform Update 24 obsahují: 
 
 - V aplikaci Talent jsou povoleny výstrahy.
 - Aktualizovaný navigační panel je nyní zarovnán se záhlavím Office.
@@ -67,7 +67,7 @@ Entity Common Data Service se nyní synchronizují správně při aktualizaci po
 V mnoha organizacích mohou mít manažeři kompenzací a zaměstnaneckých výhod přístup pouze k určitým záznamům o kompenzacích. Tyto záznamy mohou být pro vedoucí pracovníky nebo regionální zaměstnance. Díky této změně může oddělení lidských zdrojů spravovat a udržovat plány kompenzace pro různé skupiny zaměstnanců v organizaci. Fixním a variabilním plánům lze přiřadit role zabezpečení, které určí přístup k plánům a údajům zaměstnance souvisejících s plány, jako jsou například záznamy o mzdě nebo bonusech. Kompenzace pro tyto zaměstnance mohou zpracovávat pouze role, kterým byl udělen přístup.
 
 ###  <a name="email-support-for-alerts"></a>Podpora e-mailu pro výstrahy
-S aktualizací Platform Update 24 mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěny událostí.
+V aktualizaci Platform Update 24 for Finance and Operations mohou uživatelé vytvářet pravidla výstrah, která automaticky odesílají e-mailová oznámení kontaktům, pokud jsou spuštěna událostí.
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Kontrola duplicitních zaměstnanců: změny rozhraní
 S touto změnou se při zadávání polí názvů zjistí duplicity a stav zobrazí počet nalezených duplicit. Chcete-li otevřít novou stránku, můžete vybrat poskytnutý odkaz a vyhodnotit, zda chcete použít detekovanou shodu. Aby nedošlo k přerušení zadávání dat, formulář duplicit se neotevře automaticky.

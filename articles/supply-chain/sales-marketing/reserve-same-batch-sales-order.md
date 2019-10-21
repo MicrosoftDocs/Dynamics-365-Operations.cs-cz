@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d6089d07b0f8bc1a36703b5b1c2f24af72770d5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 067dd6d3c337378a610ee1fcf6a7812716813bab
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568298"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251723"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Rezervace stejné dávky pro prodejní objednávku
 
@@ -38,7 +38,7 @@ Rezervace stejné dávky umožňuje rezervovat zásoby pro řádek prodejní obj
 -   **Skupiny sledovací dimenze** – Skupina sledovací dimenze musí mít vybráno pole **Plán disponibility podle dimenzí** pro číslo dávky.
 -   **Skupiny dimenze úložiště** – Skupina dimenze úložiště musí mít vybráno pole **Plán disponibility podle dimenzí** pro pole **Lokalita** a **Sklad**.
 
-Když rezervujete zásoby pro produkt na řádku prodejní objednávky, který je nastaven pro výběr ze stejné dávky, aplikace Microsoft Dynamics 365 for Finance and Operations se pokusí rezervovat objednané množství z jediné dávky zásob. Dále jsou zvažovány jakékoli požadavky atributů dávek. Pokud nelze množství vyplnit z jedné dávky, zobrazí se strana **Konflikt rezervací stejné dávky**. Tato stránka popisuje problémy a také akce, které lze provést, chcete-li pokračovat v rezervaci. Následující podmínky mohou bránit rezervaci dávky:
+Když rezervujete zásoby pro produkt na řádku prodejní objednávky, který je nastaven pro výběr ze stejné dávky, systém se pokusí rezervovat objednané množství z jediné dávky zásob. Dále jsou zvažovány jakékoli požadavky atributů dávek. Pokud nelze množství vyplnit z jedné dávky, zobrazí se strana **Konflikt rezervací stejné dávky**. Tato stránka popisuje problémy a také akce, které lze provést, chcete-li pokračovat v rezervaci. Následující podmínky mohou bránit rezervaci dávky:
 
 -   Dispoziční kód dávky má možnost **Blokovat rezervaci** pro prodej označenu jako **Blokováno**.
 -   Platnost dávky vypršela, na základě data vypršení platnosti a všech dnů prodejnosti příslušného odběratele. Položky lze stále ještě považována za rezervaci, pokud se skupina modelu zboží pro položku „nejdříve končící platnost – nejdříve ze skladu“ (FEFO) – řízenou podle data a pokud je jako kritérium pro výdej vybráno datum doporučené spotřeby.

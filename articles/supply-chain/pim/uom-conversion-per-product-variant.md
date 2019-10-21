@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 36fc98c44625cce03945d76973de67021d53353e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844362"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249441"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Převod měrné jednotky pro variantu produktu
 
@@ -90,6 +90,6 @@ Varianty zveřejněného produktu S, M a L mají stejný převod jednotek mezi j
 
 ### <a name="using-excel-to-update-the-unit-conversions"></a>Použití aplikace Excel pro aktualizaci převodů jednotek
 
-Pokud má produkt mnoho variant s různými převody jednotek, je vhodné exportovat převody jednotek ze stránky **Převod jednotek** do tabulky aplikace Excel, aktualizovat převody a publikovat je zpět v aplikaci Finance and Operations.
+Pokud má produkt mnoho variant s různými převody jednotek, je vhodné exportovat převody jednotek ze stránky **Převod jednotek** do tabulky aplikace Excel, aktualizovat převody a publikovat je zpět v aplikaci Supply Chain Mangement.
 
-Možnost exportovat do aplikace Excel a publikovat úpravy zpět do aplikace Finance and Operations je povolena z nabídky **Otevřít v aplikaci Microsoft office** v podokně Akce na stránce **Převod jednotek**.
+Možnost exportovat do aplikace Excel a publikovat úpravy zpět do aplikace Supply Chain Mangement je povolena z nabídky **Otevřít v aplikaci Microsoft office** v podokně Akce na stránce **Převod jednotek**.

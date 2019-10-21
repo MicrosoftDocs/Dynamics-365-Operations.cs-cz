@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560647"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251516"
 ---
 # <a name="cycle-counting"></a>Cyklická inventura
 
@@ -34,7 +34,7 @@ Tento článek popisuje postup použití cyklické inventury v rámci řešení 
 Cyklická inventura je skladový proces, který slouží k auditu skladových položek na skladě. Proces cyklické inventury lze popsat ve třech krocích:
 
 1.  **Vytvoření cyklické inventury** ─ cyklické inventury se vytváří automaticky na základě parametrů prahové hodnoty položek nebo můžete použít plán cyklické inventury. Případně práci cyklické inventury můžete vytvořit ručně pomocí parametrů položky nebo skladu na stránce **Práce cyklické inventury podle zboží** nebo **Práci cyklické inventury podle skladového místa**.
-2.  **Zpracování cyklické inventury** ─ po vytvoření cyklické inventury provedete cyklickou inventuru prostřednictvím inventury položek v umístění ve skladu a zadáním výsledku v rámci aplikace Microsoft Dynamics 365 for Finance and Operations pomocí mobilního zařízení. Případně můžete provést inventuru položek v umístění ve skladu, aniž by byla vytvořena cyklická inventura. Tento proces se nazývá *místní cyklická inventura*.
+2.  **Zpracování cyklické inventury** ─ po vytvoření cyklické inventury provedete cyklickou inventuru prostřednictvím inventury položek v umístění ve skladu a zadáním výsledku v rámci aplikace Dynamics 365 Supply Chain Management pomocí mobilního zařízení. Případně můžete provést inventuru položek v umístění ve skladu, aniž by byla vytvořena cyklická inventura. Tento proces se nazývá *místní cyklická inventura*.
 3.  **Vyřešení rozdílu v cyklicky vypočtené hodnotě** ─ po cyklické inventuře budou mít všechny položky, které se liší ve vypočítané hodnotě, stav práce **Čeká na kontrolu** na stránce **Veškerá práce**. Tyto rozdíly můžete vyřešit na stránce **Cyklická inventura práce čeká na kontrolu**.
 
 Následující obrázek znázorňuje proces cyklické inventury. ![Procesní tok pro cyklickou inventuru](./media/performcyclecountinginawarehouselocation.jpg)
@@ -113,10 +113,10 @@ Plány cyklické inventury lze nastavit pro vytvoření páce cyklické inventur
 Chcete-li vytvořit práci cyklické inventury ručně, můžete použít stránku **Práce cyklické inventury podle zboží** nebo **Práci cyklické inventury podle skladového místa**. Můžete určit maximální počet cyklických inventur, které lze vytvořit současně. Například pokud vedoucí skladu určí hodnotu **5**, cyklická inventura se vytvoří pro pět umístění i v případě, že se položka nachází v 10 místech. Můžete také vybrat ID fondu práce , do kterého můžete přiřadit ID vytvořené cyklické inventury. Po zpracování ID fondu práce v rámci cyklické inventury se ID cyklické inventury přiřazené k tomuto fondu práce zpracují jako skupina.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Provedení cyklické inventury pomocí mobilního zařízení
-Existuje několik způsobů, jak zpracovat cyklickou inventuru pomocí aplikace Finance and Operations v mobilním zařízení:
+Existuje několik způsobů, jak zpracovat cyklickou inventuru pomocí aplikace Supply Chain Management v mobilním zařízení:
 
 -   **Řízené uživatelem** ─ pracovník může zadat ID cyklické inventury uvedené ve stavu **Otevřeno**.
--   **Řízené systémem** ─ aplikace Finance and Operations pracovníkovi přiřadí ID cyklické inventury.
+-   **Řízené systémem** ─ aplikace Supply Chain Management pracovníkovi přiřadí ID cyklické inventury.
 -   **Seskupení cyklické inventury** ─ pracovník může seskupit ID cyklické inventury specifické pro určité místo, zónu nebo fond práce.
 -   **Místní cyklická inventura**: pracovník může provádět cyklickou inventuru v umístění ve skladu kdykoliv, aniž by vytvořil cyklickou inventuru. Pokud chcete provádět cyklickou inventuru v daném místě, pracovník musí zadat ID tohoto místa.
 

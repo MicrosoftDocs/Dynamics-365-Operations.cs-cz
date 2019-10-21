@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2276f5296a77d620e0084c0247b1e25071fe029
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: bb5255236fc48132d4d68dc6f515f32e7ec71dae
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865273"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248835"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Přehled požadavků na nabídku
 
@@ -48,16 +48,13 @@ Případ požadavku na nabídku můžete vytvořit z plánovaných objednávek, 
 
 Po přípravě případu požadavku na nabídku a přidání dodavatelů vyberte **Odeslat** (**Odeslat a publikovat** pro veřejný sektor) v případu požadavku na nabídku. Deník požadavku na nabídku se vygeneruje pro každého dodavatele, kterému jste odeslali požadavek na nabídku. Můžete nakonfigurovat možnosti tisku pro akci Odeslat, aby se buď vytiskla sestava pro každého dodavatele do archivu nebo odeslala sestava na e-mailovou adresu každého dodavatele. Deník požadavku na nabídku pro každého dodavatele lze navíc použít k vytvoření sestavy, kterou lze odeslat nebo později znovu odeslat dodavateli. Také můžete nakonfigurovat akci Odeslat, aby se vygeneroval list odpovědí, který mohou dodavatelé vyplnit.
 
-V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li systém nastaven pro spolupráci dodavatelů, mohou dodavatelé zadávat nabídky přímo v aplikaci Microsoft Dynamics 365 for Finance and Operations. Další informace viz [Spolupráce dodavatelů se zákazníky](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
+V tomto tématu je popsán postup zpracování požadavku na nabídku, když se nepoužívá dodavatelská spolupráce. Je-li systém nastaven pro spolupráci dodavatelů, mohou dodavatelé zadávat nabídky přímo v aplikaci Supply Chain Management. Další informace viz [Spolupráce dodavatelů se zákazníky](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) a [Dodavatelská spolupráce s externími dodavateli](vendor-collaboration-work-external-vendors.md).
 
 Pokud musíte změnit požadavek na nabídku po jeho odeslání, můžete opět odeslat požadavek na nabídku dodavatelům po jeho dokončení s použitím dvou akcí úprav: Vytvoření a Dokončení.+
 
 Jakmile obdržíte nabídky e-mailem, můžete s nimi pracovat na stránce **Odpovědi na požadavky na nabídku**.
 
 Pokud je druhá iterace odpovědi vyžadována od dodavatele, zvolte **Vrácení** na stránce **Odpověď na požadavek na nabídku**. Akce Vrácení vytvoří nový deník a sestavu, která bude vytištěna, archivována a odeslána podle nastavení tisku.
-
-> [!NOTE]
-> Název stránky **požadavek na nabídku** se změnil. V dřívějších verzích aplikace Dynamics 365 for Finance and Operations se tato stránka nazývala **Požadavky na odpovědi na nabídku**.
 
 Pokud jste přidali kritéria hodnocení do případu požadavku na nabídku, požadavek na nabídku bude mít panel hodnocení, kde můžete zadat výsledky. Celkové hodnocení se zobrazí na RFQ a při porovnání odpovědí na stránce **Porovnat odpovědi**. Na stránce **Porovnat odpovědi** můžete také porovnat jiná data odpovědi, například řádkovou cenu, datum dodání a celkovou cenu.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 03e090633276cd264ad03f561ddb425a9816357e
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847498"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024630"
 ---
 # <a name="create-maintenance-requests"></a>Vytvoření požadavků na údržbu
 
@@ -41,7 +41,7 @@ Požadavky na údržbu lze použít, pokud pracovníci údržby nebo výrobní p
 2. Zvolte **Nové**.
 3. V dialogovém okně **Vytvořit požadavek** vyberte typ požadavku na údržbu v poli **Typ požadavku na údržbu**. Je navržen výchozí typ.
 4. Do pole **Popis** zadejte název nebo titul, který stručně popisuje požadavek na údržbu.
-5. V polích **Funkční místo** a **Majetek** vyberte podle potřeby funkční místo nebo majetek nebo kombinaci funkčního místa a majetku. Požadavek na údržbu můžete vytvořit bez výběru majetku a majetek lze později přidat do požadavku na údržbu. Pokud pracovník údržby, který je přihlášený k aplikaci Microsoft Dynamics 365 for Finance and Operations, souvisí se zdrojem, který souvisí s majetkem, bude pole **Majetek** nastaveno automaticky.
+5. V polích **Funkční místo** a **Majetek** vyberte podle potřeby funkční místo nebo majetek nebo kombinaci funkčního místa a majetku. Požadavek na údržbu můžete vytvořit bez výběru majetku a majetek lze později přidat do požadavku na údržbu. Pokud pracovník údržby, který je přihlášený, souvisí se zdrojem, který souvisí s majetkem, bude pole **Majetek** nastaveno automaticky.
 
     Pokud je požadavek na údržbu již připojen k vybranému majetku, zobrazí se v horní části dialogového okna **Vytvořit požadavek** panel zpráv s upozorněním na ID existujícího požadavku na údržbu. Panel zpráv vás také upozorní, když je majetek kryt záruční smlouvou.
 

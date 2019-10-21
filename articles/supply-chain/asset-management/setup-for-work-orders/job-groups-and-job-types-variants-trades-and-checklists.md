@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9efbd9651f6a2fa57e761238c6acfe6111e986e6
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874755"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249602"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby
 
@@ -225,7 +225,7 @@ Když vytváříte řádky kontrolního seznamu údržby ve výchozím nastaven�
 26. Chcete-li nastavit přílohy pro vybraný výchozí řádek typu práce údržby, vyberte možnost **Připojit dokumenty**. Přílohy nastavené pro výchozí řádek typu práce údržby jsou automaticky zahrnuty na řádcích pracovního příkazu, které používají tento výchozí řádek typu práce údržby.
 27. Vyberte **Nový** a poté vyberte typ dokumentu.
 28. Nahrajte dokument nebo soubor.
-29. Na stránce **Přílohy** nastavte pole. Nastavení přílohy používá standardní funkce nastavení dokumentu v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+29. Na stránce **Přílohy** nastavte pole. Nastavení přílohy používá standardní funkce nastavení dokumentu.
 30. Kliknutím na tlačítko **Uložit** uložte přílohu.
 
     > [!NOTE]
@@ -261,7 +261,7 @@ Po vytvoření požadovaných výchozích kombinací typů práce údržby můž
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Automatická aktualizace prognóz typu práce údržby
 
-V modulu Správa majetku můžete automaticky aktualizovat všechny změny typu práce údržby. prognózy pro hodinové náklady, náklady na položky a výdaje, které byly aktualizovány v jiných modulech aplikace Finance and Operations. Tímto způsobem pomůžete zaručit, že prognózy typů práce údržby vždy používají nejaktuálnější nákladové ceny.
+V modulu Správa majetku můžete automaticky aktualizovat všechny změny prognózy typů práce údržby pro hodinové náklady, náklady na položky a výdaje, které byly aktualizovány v jiných modulech. Tímto způsobem pomůžete zaručit, že prognózy typů práce údržby vždy používají nejaktuálnější nákladové ceny.
 
 1. Vyberte možnosti **Správa majetku** \> **Pravidelně** \> **Prognóza** \> **Aktualizovat prognózu typu práce údržby**.
 2. V dialogovém okně **Aktualizovat prognózu typu práce údržby** na záložce s náhledem **Záznamy k zahrnutí** můžete dle potřeby přidat výběr pro konkrétní typy práce údržby. Vyberte **Filtr** a poté volbou **Vybrat** proveďte výběr.

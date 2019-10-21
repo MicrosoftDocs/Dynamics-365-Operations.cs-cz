@@ -3,7 +3,7 @@ title: Vytváření a úpravy prodejních nabídek
 description: Tento postup ukazuje, jak vytvořit a aktualizovat prodejní nabídku.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f66ec29cc0afd6e1ba5a65b241e3aac42a3c59b5
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2e9db489383d9c6ef05bc25d190d380b3150d311
+ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835619"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "1994997"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Vytváření a úpravy prodejních nabídek
 
@@ -31,49 +31,42 @@ Tento postup ukazuje, jak vytvořit a aktualizovat prodejní nabídku. Tento pos
 
 
 ## <a name="create-a-sales-quotation"></a>Vytvoření prodejní nabídky
-1. Přejděte na Prodej a marketing > Prodejní nabídky > Všechny nabídky.
-2. Klikněte na položku Nová.
-3. V poli Typ účtu vyberte „Potenciální zákazník“.
-4. V poli Potenciální zákazník zadejte nebo vyberte hodnotu.
-5. Rozbalte sekci Obecné.
-    * Vzhledem k tomu, že jste zvolili vytvoření nabídky z oblasti prodeje a marketingu, je typ nastaven automaticky na prodejní nabídku. K vytvoření nabídky pro projekt k ní musíte mít přístup z modulu Řízení a účetnictví projektů.   
-6. Klikněte na tlačítko OK.
-    * Pole a akce pro řádky nabídky se velmi podobají položkám na řádcích prodejní objednávky.   Stejně jako prodejní objednávky lze nabídky vytvářet pro konkrétní zboží nebo pro neznámé či neexistující číslo zboží, které v době vytvoření nabídky není k dispozici, nabídky lze vytvářet pro kategorii prodeje.  
-7. V poli Zboží zadejte nebo vyberte hodnotu.
-8. Zadejte hodnotu do pole Zboží.
-9. Zavřete stránku.
-10. Zadejte číslo do pole Množství.
-    * Pokud existují platné obchodní smlouvy pro vybrané zboží v řádku, použití cena a slevy se automaticky zkopírují řádku nabídky. Ujistěte se, že pole Jednotková cena obsahuje hodnotu a chcete-li můžete také zadat hodnotu slevy.  
-11. Klikněte na položku Uložit.
-12. V podokně akcí klikněte na položku Prodejní nabídka.
-13. Klikněte na položku Součty.
-14. Klikněte na tlačítko OK.
-15. Klikněte na položku Řádek prodejní nabídky.
-16. Klikněte na položku Ceny.
-    * Na stránce Spustit simulaci ceny můžete vyzkoušet úpravami očekávané výnosy nebo ziskovost vaší nabídky na základě požadované jednotkové ceny, částku slevy, procento slevy, celkovou částku, marži nebo příspěvkový poměr.   Pokud jste spokojeni s cílovými hodnotami, lze návrh použít pro daný řádek nabídky a její pole související s cenami bude odpovídajícím způsobem aktualizováno.  
-    * Simulací cen můžete vytvářet, kolik chcete. Klepnete-li na Nový, cenové podmínky z aktuálního řádku nabídky se zkopírují na stránku. Můžete pak upravit hodnoty v jakémkoli poli souvisejícím s cenami do cílových hodnot. Změny v jednom z polí spustí přepočet ve všech ostatních polích. Aby systém vypočítal prodejní marže a příspěvkový poměr, musí znát pořizovací cenu produktu. Použijte kartu Simulované ceny pro podrobné zobrazení původních cen, navržených změn a jejich vlivu na celkové hodnoty nabídky.   Obecně platí, že když simulace určuje nové množství pro daný řádek nabídky, systém přepočítá a zadá novou hodnotu v poli Jednotková cena. Pokud simulace vychází z nové marže nebo nového příspěvkového poměru, je aktualizováno pouze pole Čistá částka a pole Jednotková cena je prázdné. V obou případech budou odstraněny všechny slevy, které byly na řádku nabídky před simulací.  
-17. Zavřete stránku.
-18. V podokně akcí klikněte na položku Nabídka.
-19. Klikněte na položku Odeslat nabídku.
-20. Vyberte možnost Ano v poli Tisk nabídky.
-21. Klikněte na tlačítko OK.
-    * Generování sestavy může trvat několik minut. Dokud proces nebude dokončen, stránku nezavírejte.  
-22. Zavřete stránku.
+1. Přejděte na **Navigační podokno > Moduly > Prodej a marketing > Prodejní nabídky > Všechny nabídky**.
+2. Klepněte na možnost **Nový**.
+3. V poli **Typ účtu** vyberte „Potenciální zákazník“.
+4. V poli **Potenciální zákazník** zadejte nebo vyberte hodnotu.
+5. Rozbalte sekci **Obecné**. Vzhledem k tomu, že jste zvolili vytvoření nabídky z oblasti prodeje a marketingu, je typ nastaven automaticky na ‚prodejní nabídku‘. K vytvoření nabídky pro projekt k ní musíte mít přístup z modulu **Řízení a účetnictví projektů**.
+6. Klikněte na tlačítko **OK**. Pole a akce pro řádky nabídky se velmi podobají položkám na řádcích prodejní objednávky.   Stejně jako prodejní objednávky lze nabídky vytvářet pro konkrétní zboží nebo pro neznámé či neexistující číslo zboží, které v době vytvoření nabídky není k dispozici, nabídky lze vytvářet pro kategorii prodeje.     
+7. V poli **Zboží** zadejte nebo vyberte hodnotu.
+8. Zadejte hodnotu do pole **Pracoviště**.
+9. Zadejte číslo do pole **Množství**. Pokud existují platné obchodní smlouvy pro vybrané zboží v řádku, použití cena a slevy se automaticky zkopírují řádku nabídky. Ujistěte se, že pole Jednotková cena obsahuje hodnotu a chcete-li můžete také zadat hodnotu slevy. 
+10. Klikněte na možnost **Uložit**.
+11. V **podokně akcí** klikněte na možnost **Prodejní nabídka**.
+12. Klepněte na možnost **Součet**.
+13. Klikněte na tlačítko **OK**.
+14. Vyberte řádek prodejní nabídky.
+15. V **podokně akcí** klikněte na možnost **Nabídka**.
+16. Klikněte na **Simulaci ceny**.
+    - Na stránce **Spustit simulaci** ceny můžete vyzkoušet úpravami očekávané výnosy nebo ziskovost vaší nabídky na základě požadované jednotkové ceny, částku slevy, procento slevy, celkovou částku, marži nebo příspěvkový poměr. Pokud jste spokojeni s cílovými hodnotami, lze návrh použít pro daný řádek nabídky a její pole související s cenami bude odpovídajícím způsobem aktualizováno.  
+    - Simulací cen můžete vytvářet, kolik chcete. Klepnete-li na **Nový**, cenové podmínky z aktuálního řádku nabídky se zkopírují na stránku. Můžete pak upravit hodnoty v jakémkoli poli souvisejícím s cenami do cílových hodnot. Změny v jednom z polí spustí přepočet ve všech ostatních polích. Aby systém vypočítal prodejní marže a příspěvkový poměr, musí znát pořizovací cenu produktu. Použijte kartu Simulované ceny pro podrobné zobrazení původních cen, navržených změn a jejich vlivu na celkové hodnoty nabídky. Obecně platí, že když simulace určuje nové množství pro daný řádek nabídky, systém přepočítá a zadá novou hodnotu v poli Jednotková cena. Pokud simulace vychází z nové marže nebo nového příspěvkového poměru, je aktualizováno pouze pole Čistá částka a pole Jednotková cena je prázdné. V obou případech budou odstraněny všechny slevy, které byly na řádku nabídky před simulací.
+17. V **Podokně akcí** klikněte na možnost **Nabídka**.
+18. Klikněte na **Odeslat nabídku**.
+19. Vyberte možnost ‚Ano‘ v poli **Tisk nabídky**.
+20. Klikněte na tlačítko **OK**. Generování sestavy může trvat několik minut. Dokud proces nebude dokončen, stránku nezavírejte.
 
 ## <a name="update-a-sales-quotation"></a>Aktualizace prodejní nabídky
-1. V podokně akcí klikněte na položku Zpracovat.
-2. Klepněte na Převést na odběratele.
-3. V poli Účet odběratele zadejte hodnotu.
-4. Klepněte na možnost Kontrola.
-    * Ujistěte se, že se zobrazí zpráva, že číslo účtu, které jste zadali, lze volně použít.  
-5. Klikněte na tlačítko OK.
-    * Systém právě vytvořil účet nového odběratele pro potenciálního zákazníka z nabídky.  
-6. Zavřete stránku.
-7. V podokně akcí klikněte na položku Zpracovat.
-8. Klikněte na tlačítko Potvrdit.
-9. V poli Důvod zadejte nebo vyberte hodnotu.
-10. Klikněte na tlačítko OK.
-11. V podokně akcí klikněte na položku Obecné.
-12. Klikněte na položku Prodejní objednávky.
-13. Zavřete stránku.
+1. Přejděte na **Navigační podokno > Moduly > Prodej a marketing > Prodejní nabídky > Všechny nabídky**.
+2. V **podokně akcí** klikněte na možnost **Zpracování**.
+3. Klikněte na **Převést na odběratele**.
+4. V poli **Účet odběratele** zadejte hodnotu.
+5. Klikněte na možnost **Kontrola**. Ujistěte se, že se zobrazí zpráva, že číslo účtu, které jste zadali, lze volně použít.  
+6. Klikněte na tlačítko **OK**. Systém právě vytvořil účet nového odběratele pro potenciálního zákazníka z nabídky.  
+7. Zavřete stránku.
+8. V **podokně akcí** klikněte na možnost **Zpracování**.
+9. Klikněte na tlačítko **Potvrdit**.
+10. V poli **Důvod** zadejte nebo vyberte hodnotu.
+11. Klikněte na tlačítko **OK**.
+12. V **podokně akcí** klikněte na **Obecné**.
+13. Klikněte na **Prodejní objednávky**.
+14. Zavřete stránku.
 

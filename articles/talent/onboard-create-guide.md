@@ -1,6 +1,6 @@
 ---
-title: Vytvoření a odeslání průvodce zaškolením za použití Dynamics 365 for Talent - Onboard
-description: V tomto tématu je vysvětleno, jak pomocí aplikace Microsoft Dynamics 365 for Talent - Onboard vytvořit průvodce zaškolením pro nové zaměstnance. Tento úkol je zásadním prvním krokem strategie pro nakládání s lidským kapitálem (HCM).
+title: Vytvoření a odeslání průvodce zaškolením za použití Dynamics 365 Talent - Onboard
+description: V tomto tématu je vysvětleno, jak pomocí aplikace Microsoft Dynamics 365 Talent - Onboard vytvořit průvodce zaškolením pro nové zaměstnance. Tento úkol je zásadním prvním krokem strategie pro nakládání s lidským kapitálem (HCM).
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: de5d584e3b7edba2751aa0c83b0465df2c3e4f7d
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: e4dbfcc3b3fd611eea36109a516a7b9361a9f654
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731397"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009847"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-for-talent-onboard"></a>Vytvoření a odeslání průvodce zaškolením za použití Dynamics 365 for Talent: Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Vytvoření a odeslání průvodce zaškolením
 
 [!include [banner](includes/banner.md)]
 
-Aplikace Microsoft Dynamics 365 for Talent: Onboard umožňuje vytvářet průvodce zaškolením na základě šablon, které jste vytvořili sami, z šablon, které jsou k dispozici v galerii, nebo od začátku.
+Aplikace Microsoft Dynamics 365 Talent: Onboard umožňuje vytvářet průvodce zaškolením na základě šablon, které jste vytvořili sami, z šablon, které jsou k dispozici v galerii, nebo od začátku.
 
 Jakmile vytvoříte průvodce zaškolením, můžete ji odeslat novému zaměstnanci. Případně jej můžete odeslat více novým zaměstnancům, které zadáte v souboru Microsoft Excel, který stáhnete z aplikace Onboard.
 

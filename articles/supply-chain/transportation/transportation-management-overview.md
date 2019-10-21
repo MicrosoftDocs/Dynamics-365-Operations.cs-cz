@@ -1,6 +1,6 @@
 ---
 title: Přehled správy přepravy
-description: Toto téma poskytuje přehled správy přepravy v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+description: Toto téma poskytuje přehled správy přepravy v aplikaci Finance and Operations.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 918167a3ab72b3d3665cf710d8e509417b94a056
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d976ec4d3c294f0ce8e9732b21b9a429f1e47315
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561144"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2027054"
 ---
 # <a name="transportation-management-overview"></a>Přehled správy přepravy
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma poskytuje přehled správy přepravy v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Toto téma poskytuje přehled správy přepravy v aplikaci Finance and Operations.
 
-Modul Správa přepravy slouží ke správě přepravy ve vaší společnosti a zároveň určování dodavatelů a řešení trasy pro vstupní a výstupní objednávky. Můžete například určit nejrychlejší trasu nebo nejlevnější sazbu pro dodávku. V následující tabulce jsou popsány základní scénáře používání modulu Správa přepravy v aplikaci Microsoft Dynamics 365 for Finance and Operations.
+Modul Správa přepravy slouží ke správě přepravy ve vaší společnosti a zároveň určování dodavatelů a řešení trasy pro vstupní a výstupní objednávky. Můžete například určit nejrychlejší trasu nebo nejlevnější sazbu pro dodávku. V následující tabulce jsou popsány základní scénáře používání modulu Správa přepravy.
 
 <table>
 <colgroup>

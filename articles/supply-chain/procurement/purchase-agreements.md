@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7024104dfc76a33735199ad0871fe7ce29f8e011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570381"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248916"
 ---
 # <a name="purchase-agreements"></a>Nákupní smlouvy
 
@@ -78,7 +78,7 @@ Při potvrzení nákupní smlouvy bude aktuální verze nákupní smlouvy ulože
 Při vytváření nákupní objednávky můžete použít nákupní smlouvu. Informace ze smlouvy, jako jsou například platební podmínky, dodací podmínky nebo adresa dodání, se poté zkopírují do záhlaví nákupní objednávky. Pokud nákupní objednávka obsahuje jeden nebo více řádků pro produkty nebo kategorie, které jsou kryty smlouvou, použijí se pro tyto řádky ceny a slevy z nákupní smlouvy. Částka nebo množství v řádku objednávky přispívá k plnění závazku V nákupní smlouvě. Stejná nákupní objednávka může zahrnovat řádky, které nesouvisí s nákupní smlouvou, i řádky, které mají závazek pro nákupní smlouvu.  
 
 Nákupní smlouvu můžete vybrat pouze, když vytváříte nákupní objednávku. Po vytvoření nákupní objednávky nelze vybrat nákupní smlouvu.  
-V některých situacích, kdy jsou nákupní objednávky vytvářeny nepřímo, můžete určit, zda aplikace Finance and Operations automaticky vyhledá příslušné nákupní smlouvy. Provést to můžete například při automatickém potvrzování plánovaných nákupních objednávek nebo při vytváření nákupních objednávek, které jsou založeny na prodejních objednávkách.
+V některých situacích, kdy jsou nákupní objednávky vytvářeny nepřímo, můžete určit, zda aplikaceSupply Chain Management automaticky vyhledá příslušné nákupní smlouvy. Provést to můžete například při automatickém potvrzování plánovaných nákupních objednávek nebo při vytváření nákupních objednávek, které jsou založeny na prodejních objednávkách.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Nákupní smlouvy a mezipodnikový obchod
 Mezipodnikové obchodní vztahy lze vytvořit mezi účty dodavatele a účty zákazníků, které se u různých právnických osob liší. Po vytvoření prodejní objednávky nebo nákupní objednávky pro jednu ze stran se vytvoří mezipodnikový řetězec objednávek. V řetězci objednávek se prodejní objednávka a nákupní objednávka vytváří v příslušných právnických osobách.  

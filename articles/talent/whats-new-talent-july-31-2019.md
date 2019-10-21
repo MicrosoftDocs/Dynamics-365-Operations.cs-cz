@@ -1,6 +1,6 @@
 ---
-title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 for Talent (31. července 2019)
-description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 for Talent.
+title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Talent (31. července 2019)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 7/30/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 1fffe1bd8739723294c027c174d5e959c1c6010a
-ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
+ms.openlocfilehash: 83f3339e6cea1448f5b257acf602fe5ca3449555
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1864572"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010238"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-30-2019"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 for Talent (30. července 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Talent (30. července 2019)
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 for Talent.
+Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Změny v aplikaci Attract
 Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Attract.
@@ -43,7 +43,7 @@ Změny popsané v této části se vztahují na číslo sestavení 8.1.2409.
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Regionální podpora pro Kanadu a jihovýchodní Asii
 
-S radostí oznamujeme, že od 1. srpna 2019 bude Microsoft Dynamics 365 for Talent k dispozici pro Kanadu a jihovýchodní Asii. Tato změna umožňuje vytvářet prostředí v kanadských a asijských oblastech a všechna data aplikace Talent budou zachována pouze v těchto umístěních. Prostředí v těchto nových oblastech můžete vytvořit výběrem umístění v dialogovém okně Nové prostředí a použitím tohoto prostředí ke zřizování aplikace v rámci LCS, jak je popsáno v tématu [Zřizování aplikace Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+S radostí oznamujeme, že od 1. srpna 2019 bude Talent k dispozici pro Kanadu a jihovýchodní Asii. Tato změna umožňuje vytvářet prostředí v kanadských a asijských oblastech a všechna data aplikace Talent budou zachována pouze v těchto umístěních. Prostředí v těchto nových oblastech můžete vytvořit výběrem umístění v dialogovém okně Nové prostředí a použitím tohoto prostředí ke zřizování aplikace v rámci LCS, jak je popsáno v tématu [Zřizování aplikace Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
 Migrace dat existujících projektů z jiných oblastí do kanadských a asijských oblastí není podporována. Pro tyto nové podporované oblasti lze zřizovat pouze nové projekty.
 

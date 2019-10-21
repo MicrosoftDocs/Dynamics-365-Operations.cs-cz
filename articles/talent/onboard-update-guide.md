@@ -1,6 +1,6 @@
 ---
-title: Aktualizace průvodců zaškolením v Dynamics 365 for Talent - Onboard
-description: V tomto tématu je vysvětleno, jak aktualizovat průvodce zaškolením v aplikaci Microsoft Dynamics 365 for Talent - Onboard a jak provádět změny stávajících průvodců.
+title: Aktualizace průvodců zaškolením v Dynamics 365 Talent - Onboard
+description: V tomto tématu je vysvětleno, jak aktualizovat průvodce zaškolením v aplikaci Microsoft Dynamics 365 Talent - Onboard a jak provádět změny stávajících průvodců.
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d2be450685724510db2f0fd2af8545f8f40278e7
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731394"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010722"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-for-talent-onboard"></a>Aktualizace průvodců zaškolením v Dynamics 365 for Talent: Onboard
+# <a name="update-onboarding-guides"></a>Aktualizace průvodců zaškolením
 
 [!include [banner](includes/banner.md)]
 
-Pokud je nutné provést změny v průvodcích zaškolením Microsoft Dynamics 365 for Talent: Onboard, můžete je aktualizovat a provádět změny i v případě, že jste průvodce již odeslali. Průvodce zaškolením můžete aktualizovat dvěma způsoby:
+Pokud je nutné provést změny v průvodcích zaškolením Microsoft Dynamics 365 Talent: Onboard, můžete je aktualizovat a provádět změny i v případě, že jste průvodce již odeslali. Průvodce zaškolením můžete aktualizovat dvěma způsoby:
 
 - Průvodce zaškolením přímo upravte a uložte provedené změny.
 - Upravte šablonu zaškolení a poté změny rozešlete do všech průvodců, kteří z ní byli vytvořeni.

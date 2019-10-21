@@ -1,6 +1,6 @@
 ---
 title: Správa rolí a zabezpečení v aplikaci Attract
-description: Toto téma poskytuje informace o zabezpečení datových entit v Microsoft Dynamics 365 for Talent - Attract.
+description: Toto téma poskytuje informace o zabezpečení datových entit v Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3f804b5f79b813cf504c3deb4a95e678c6fcbf87
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ad94a7511afef0c68fb8f2a70402babb80b0f9ad
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739833"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024181"
 ---
 # <a name="set-user-permissions"></a>Nastavení oprávnění uživatele
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract vyžaduje zabezpečení na základě rolí. Jinými slovy, přístup není udělován jednotlivým uživatelům, nýbrž rolím zabezpečení, ke kterým jsou uživatelé přiřazeni. Uživatel, který je přiřazen k roli zabezpečení, má přístup k sadě oprávnění, která je přidružena k této roli.
+Microsoft Dynamics 365 Talent: Attract vyžaduje zabezpečení na základě rolí. Jinými slovy, přístup není udělován jednotlivým uživatelům, nýbrž rolím zabezpečení, ke kterým jsou uživatelé přiřazeni. Uživatel, který je přiřazen k roli zabezpečení, má přístup k sadě oprávnění, která je přidružena k této roli.
 
 Attract poskytuje pět základních uživatelských rolí:
 

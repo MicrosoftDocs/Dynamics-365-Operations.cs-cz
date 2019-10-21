@@ -1,6 +1,6 @@
 ---
-title: Povolit integraci Broadbean v aplikaci Microsoft Dynamics 365 for Talent - Attract
-description: V tomto tématu je vysvětleno, jak nakonfigurovat aplikaci Microsoft Dynamics 365 for Talent - Attract, aby publikovala práce na externí pracovní vývěsky, jako je Broadbean.
+title: Povolit integraci Broadbean v aplikaci Microsoft Dynamics 365 Talent - Attract
+description: V tomto tématu je vysvětleno, jak nakonfigurovat aplikaci Microsoft Dynamics 365 Talent - Attract, aby publikovala práce na externí pracovní vývěsky, jako je Broadbean.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2334c2bd0edccf3000f8d91651afafd4619ad0b8
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 808f91fb4b68ba9b5cee54d86423d23232df23a4
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739672"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008586"
 ---
 # <a name="enable-broadbean-integration"></a>Povolit integraci s Broadbean
 
 [!include[banner](../includes/banner.md)]
 
-Chcete dostat své otevřené pozice před co největší množství kvalifikovaných kandidátů. Náborové weby, například Broadbean, vám pomohou dosáhnout tohoto cíle. Microsoft Dynamics 365 for Talent: Attract vám nyní umožní publikovat pracovní místa na Broadbean a společnost Microsoft neustále v této oblasti poskytuje nové nabídky.
+Chcete dostat své otevřené pozice před co největší množství kvalifikovaných kandidátů. Náborové weby, například Broadbean, vám pomohou dosáhnout tohoto cíle. Microsoft Dynamics 365 Talent: Attract vám nyní umožní publikovat pracovní místa na Broadbean a společnost Microsoft neustále v této oblasti poskytuje nové nabídky.
 
 > [!NOTE]
 > - Chcete-li publikovat pracovní místa na externí weby, musíte mít [doplněk komplexního náboru](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).

@@ -17,18 +17,19 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 57f4b58a11606a1193a1124a426c837ddfab9533
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577973"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023690"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Zobrazení oznámení objednávek v pokladním místě (POS)
 
 [!include [banner](includes/banner.md)]
 
-V moderním prostředí maloobchodu jsou zaměstnancům obchodu přiřazovány různé úkoly, jako je pomoc zákazníkům, zadávání transakcí, provádění inventur a přijímání objednávek v obchodě. Klient pokladního místa poskytuje aplikaci, kde mohou zaměstnanci provádět provádět všechny tyto úlohy a mnohé další. Protože během dne je třeba provést různé úlohy, může být pro zaměstnance nutné dostávat oznámení, pokud cokoliv vyžaduje jejich pozornost. Architektura oznámení v POS pomáhá tak, že maloobchodní prodejci mohou nakonfigurovat oznámení na základě rolí. V aplikaci Microsoft Dynamics 365 for Retail s aktualizací 5 lze tato oznámení nakonfigurovat pouze pro POS operace.
+V moderním prostředí maloobchodu jsou zaměstnancům obchodu přiřazovány různé úkoly, jako je pomoc zákazníkům, zadávání transakcí, provádění inventur a přijímání objednávek v obchodě. Klient pokladního místa poskytuje aplikaci, kde mohou zaměstnanci provádět provádět všechny tyto úlohy a mnohé další. Protože během dne je třeba provést různé úlohy, může být pro zaměstnance nutné dostávat oznámení, pokud cokoliv vyžaduje jejich pozornost. Architektura oznámení v POS pomáhá tak, že maloobchodní prodejci mohou nakonfigurovat oznámení na základě rolí. V aplikaci Dynamics 365 for Retail s aktualizací 5 lze tato oznámení nakonfigurovat pouze pro POS operace.
+
 
 V současné době systém může zobrazit upozornění pouze pro operace plnění objednávky. Protože je však architektura navržena jako rozšiřitelná, vývojáři případně budou moci napsat obslužné rutiny oznámení pro veškeré operace a zobrazit oznámení pro danou operaci v POS.
 
@@ -68,7 +69,8 @@ Následující obrázek znázorňuje nastavení aktivního obsahu v návrháři 
 
 ![Nastavení aktivního obsahu v návrháři mřížky tlačítek](./media/ButtonGridDesigner.png "Nastavení aktivního obsahu v návrháři mřížky tlačítek")
 
-Chcete-li zobrazit počet oznámení na tlačítku, je nutné zajistit, aby bylo aktualizováno správné rozvržení obrazovky. Chcete-li určit rozvržení obrazovky, které používá POS, vyberte ikonu **Nastavení** v pravém horním rohu a poznamenejte si **ID rozvržení obrazovky** a **Rozlišení rozvržení**. Nyní pomocí prohlížeče Edge přejděte na stránku **Rozvržení obrazovky** v aplikaci Dynamics 365 for Finance and Operations, najděte výše uvedené **ID rozvržení obrazovky** a **Rozlišení rozvržení** a zaškrtněte políčko **Povolit živý obsah**. Přejděte na **Maloobchod \> IT pro maloobchod \> Plán distribuce** a spusťte úlohu 1090 (Registry) pro synchronizaci změn rozvržení.
+Chcete-li zobrazit počet oznámení na tlačítku, je nutné zajistit, aby bylo aktualizováno správné rozvržení obrazovky. Chcete-li určit rozvržení obrazovky, které používá POS, vyberte ikonu **Nastavení** v pravém horním rohu a poznamenejte si **ID rozvržení obrazovky** a **Rozlišení rozvržení**. Nyní pomocí prohlížeče Edge přejděte na stránku **Rozvržení obrazovky**, najděte výše uvedené **ID rozvržení obrazovky** a **Rozlišení rozvržení** a zaškrtněte políčko **Povolit živý obsah**. Přejděte na **Maloobchod \> IT pro maloobchod \> Plán distribuce** a spusťte úlohu 1090 (Registry) pro synchronizaci změn rozvržení.
+
 
 ![Vyhledání rozvržení obrazovky, které používá POS](./media/Choose_screen_layout.png "Vyhledání rozvržení obrazovky, které používá POS")
 

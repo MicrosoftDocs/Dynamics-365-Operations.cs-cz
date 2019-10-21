@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e600e1d2bb4bc1a49d55fb58b3e74fa7e13fc2af
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556429"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017890"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Správa směn a zásuvky s hotovostí
 
@@ -32,7 +32,7 @@ ms.locfileid: "1556429"
 
 Toto téma vysvětluje, jak nastavit a používat směny v maloobchodním pokladním místě (POS).
 
-V aplikaci Microsoft Dynamics 365 for Retail termín *směna* popisuje kolekci transakčních dat POS a aktivit mezi dvěma místy v čase. Pro každou směnu se porovnává očekáváná částka peněz oproti spočítané a deklarované částce.
+V aplikaci Dynamics 365 Retail termín *směna* popisuje kolekci transakčních dat POS a aktivit mezi dvěma místy v čase. Pro každou směnu se porovnává očekáváná částka peněz oproti spočítané a deklarované částce.
 
 Směny se obvykle otevírají na začátku pracovního dne. Uživatel v daném okamžiku deklaruje počáteční částku, kterou obsahuje zásuvka s hotovostí. Prodejní transakce jsou pak prováděny v průběhu dne. Na konci dne se spočítá zásuvka a jsou deklarovány uzávěrkové částky. Je uzavřena směna a bude vytvořena sestava Z. Sestava Z označuje, zda nějaká částka chybí nebo přebývá.
 
@@ -69,7 +69,7 @@ Aby mohly být v obchodě použity sdílené směny, musí být zásuvka s hotov
 
 ## <a name="shift-and-drawer-operations"></a>Operace směny a zásuvky
 
-Chcete-li změnit stav směny nebo zvýšit či snížit množství peněz v zásuvce, lze provést různé operace. Tato část popisuje tyto operace směny pro Microsoft Dynamics 365 for Retail Modern POS a Cloud POS.
+Chcete-li změnit stav směny nebo zvýšit či snížit množství peněz v zásuvce, lze provést různé operace. Tato část popisuje tyto operace směny pro Retail Modern POS a Cloud POS.
 
 ### <a name="open-shift"></a>Otevřená směna
 

@@ -3,7 +3,7 @@ title: Nastavení distponibility
 description: Toto téma poskytuje informace o nastavení disponibility, které hlavní plánování používá k výpočtu požadavků na položky.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
-ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
+ms.openlocfilehash: 3a63184852751bb65fb7e80d721f8c48fd847609
+ms.sourcegitcommit: edfd805356894710488ce07cb1c89313f448b222
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538887"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "1998964"
 ---
 # <a name="coverage-settings"></a>Nastavení distponibility
 
@@ -49,6 +49,19 @@ Existuje několik způsobů, jak zadat nastavení disponibility:
 - Nastavení disponibility pro skupinu dimenzí.
 
     Přejděte na **Řízení informací o produktech &gt; Produkty &gt; Uvolněné produkty**. Na stránce **Podrobnosti o uvolněném produktu** na záložce s náhledem **Obecné** v části **Správa** zvolte odkaz v poli **Skupina dimenze úložiště**. Na stránce **Skupiny dimenze úložiště** vyberte zaškrtávací pole **Plán disponibility podle dimenzí** a vytvořte tak nastavení disponibility pro dimenzi ve skupině dimenzí úložiště. Pole **Plán disponibility podle dimenzí** musí mít vybráno pro všechny dimenze produktu, jako je například konfigurace, barva, velikost nebo styl.
+
+
+## <a name="coverage-codes"></a>Kódy pokrytí
+
+Hlavní plánování lze nakonfigurovat tak, aby používalo různé metody doplnění. Metody doplnění nebo metody určení velikosti šarží jsou techniky používanými systémem ke stanovení velikosti dávky pro nakoupené nebo vyráběné položky. 
+
+Každá metoda doplnění je přiřazena k jednomu z následujících kódů pokrytí:
+
+- **Ruční** - určení velikosti šarže, při kterém systém nenavrhuje nákup, převod nebo výrobní objednávky pro danou položku. Plánovač pro danou položku bude mít na starosti vytváření požadovaných objednávek pro doplnění položky.
+- **Podle požadavku** – velikost šarže, při které systém vytváří plánovaný nákup, převod nebo výrobní zakázku podle požadavků na položku. Obvykle se používá pro nákladné položky s nárazovou poptávkou.  
+- **Za období** - určení velikosti šarže, které kombinuje všechny požadavky na období do jedné objednávky pro danou položku. Zakázka bude naplánována pro první den období a její množství bude plnit čisté požadavky během stanoveného období. Toto období začíná první poptávkou položky a pokrývá určenou délku v čase. Další období bude začínat následujícími požadavky položky.
+- **Min/max** – metoda velikosti šarže, která obsahuje doplnění zásob na určitou úroveň, pokud je odhadovaná zásoba nižší než prahová hodnota. Množství doplnění bude rozdíl mezi maximální úrovní a předpokládanou úrovní zásob na skladě.
+
 
 ## <a name="additional-resources"></a>Další zdroje
 

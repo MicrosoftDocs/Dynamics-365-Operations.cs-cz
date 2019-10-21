@@ -1,6 +1,6 @@
 ---
-title: Použití analytických sestav v aplikaci společnosti Microsoft Dynamics 365 for Talent - Attract
-description: V tomto tématu je popsána analytická sestava pro přehled procesu náboru v aplikaci společnosti Microsoft Dynamics 365 for Talent - Attract
+title: Použití analytických sestav v aplikaci Microsoft Dynamics 365 Talent– Attract
+description: V tomto tématu je popsána analytická sestava pro přehled procesu náboru v aplikaci Microsoft Dynamics 365 Talent - Attract
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: be62fe9a5021cfa83a465d316b182c0a154c0c50
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742880"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009998"
 ---
 # <a name="use-analytic-reports"></a>Použití analytických sestav
 
-Analytické sestavy v aplikaci Attract poskytují vestavěné řešení (OOTB) pro přehledy náborových procesů. Mezi dostupné funkce patří:
+Analytické sestavy v aplikaci Microsoft Dynamics 365 Talent: Attract poskytují vestavěné řešení (OOTB) pro přehledy náborových procesů. Mezi dostupné funkce patří:
 
 - **Analytika práce** – Klikněte na kartu **Analytika** v rámci práce pro metriky na uchazečích o práci.
 - **Centrum analýz:** Klikněte na **Analytika** na levém navigačním panelu pro agregované metriky napříč pracemi.
