@@ -3,7 +3,7 @@ title: Vylepšené zpracování položek sledovaných dávkou
 description: Toto téma popisuje vylepšení provedená u zpracování dávek pro položky sledované dávkou během procesu zaúčtování maloobchodního výkazu.
 author: josaw1
 manager: AnnBe
-ms.date: 05/28/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,14 +18,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 35823efa2844898d3eecbf91624b3e37d308b63c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 70d78f86f1df057d14d821a8c967e62eeeb4ff92
+ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025787"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622543"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Vylepšené zpracování položek sledovaných dávkou
+
+
+[!include [banner](includes/banner.md)]
+
+[!include [banner](includes/preview-banner.md)]
+
 
 V Retail Point of Sale (POS) nelze zaznamenat čísla dávek pro položky sledované dávkou v okamžiku prodeje. Nicméně pro konkrétní konfigurace při zaúčtování prodejů v centrále prostřednictvím objednávek zákazníků nebo zaúčtování výkazů očekává systém Microsoft Dynamics, že platná čísla dávky pro položky sledované dávkou existují a že budou použity během procesu fakturace.
 
@@ -39,3 +45,6 @@ Chcete-li definovat výchozí ID dávky, které se používá pro fakturaci prod
 
 > [!NOTE]
 > Tato funkce je k dispozici pouze tehdy, když je zapnuta rozšířená správa skladu pro konkrétní sklad obchodu a položky. V novější verzi bude tato funkcionalita podporována též pro scénáře, kde se rozšířená správa skladu nepoužívá.
+
+> [!NOTE]
+> Podpora pro zlepšené zpracování položek sledovaných dávkou při zaúčtování výkazů pro nerozšířené scénáře správy skladu byla představena v aplikaci Retail verze 10.0.5.

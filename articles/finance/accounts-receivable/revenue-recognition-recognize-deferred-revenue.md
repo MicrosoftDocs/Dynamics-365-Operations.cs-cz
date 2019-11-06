@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 244321e1eb246c46260326a8892924d9d9da75d3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175859"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570349"
 ---
 # <a name="recognize-deferred-revenue"></a>Uznání odložených výnosů
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Funkci uznání výnosů nelze ještě zapnout pomocí správy funkcí. Pro její zapnutí musíte momentálně použít konfigurační klíče.
+> Funkci uznání výnosů nelze zapnout pomocí správy funkcí. Pro její zapnutí musíte momentálně použít konfigurační klíče.
 
 Toto téma popisuje proces uznání výnosů v plánu uznání výnosů. Po zaúčtování faktury pro prodejní objednávku se pro každý řádek prodejní objednávky, který má plán výnosů, vytvoří plán uznání výnosů. Plán výnosů na řádku se používá k určení, zda by měl být výnos řádku odložen.
 

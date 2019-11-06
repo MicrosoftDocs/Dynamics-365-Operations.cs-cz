@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: f0a5e4c01b34b2adb8e7e0af967af2c2562b4d87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f7d2cfb8e58221004ae5662aae3850adc577dc88
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175860"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570303"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Uznání výnosů na prodejních objednávkách
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Funkci uznání výnosů nelze ještě zapnout pomocí správy funkcí. Pro její zapnutí musíte momentálně použít konfigurační klíče.
+> Funkci uznání výnosů nelze zapnout pomocí správy funkcí. Pro její zapnutí musíte momentálně použít konfigurační klíče.
 
 Toto téma popisuje základní funkci pro uznání výnosů na prodejních objednávkách a fakturách. Uznání výnosů je k dispozici na prodejní objednávce a příslušné faktuře, která je vytvořena z prodejní objednávky. Prodejní objednávku lze rovněž vytvořit prostřednictvím projektů určených materiálem a časem.
 

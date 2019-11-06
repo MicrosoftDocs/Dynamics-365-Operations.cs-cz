@@ -3,7 +3,7 @@ title: Distribuovaná správa objednávek (DOM)
 description: Toto téma popisuje funkcionalitu distribuované správy objednávek v aplikaci Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fee0d9257af86a734a60b469db3a006435f1d3d2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
+ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023412"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578477"
 ---
 # <a name="distributed-order-management-dom"></a>Distribuovaná správa objednávek (DOM)
 
@@ -94,6 +94,7 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
         - **Plnit částečné řádky?** – Pokud je tato možnost nastavena na **Ano**, distribuovaná správa objednávek může plnit částečné množství řádků objednávky. Toto částečné plnění je dosaženo rozdělením řádku objednávky.
         - **Plnit objednávku pouze z jednoho místa** – Pokud je tato možnost nastavena na **Ano**, distribuovaná správa objednávek se ujistí, že všechny řádky na objednávce jsou plněny z jednoho místa.
 
+
         V následující tabulce je vysvětleno chování, kdy je definována kombinace těchto parametrů.
 
         |      | Plnění částečných objednávek | Plnění částečných řádků | Plnění objednávky pouze z jednoho místa | Popis |
@@ -110,19 +111,22 @@ Následující příklad ilustruje životní cyklus prodejní objednávky v syst
 
         \* Pokud je možnost **Plnit částečné objednávky** nastavena na **Ne**, možnost **Plnit částečné řádky** je vždy považována za nastavenou na **Ne**, bez ohledu na to, jak je ve skutečnosti nastavena.
 
-    - **Pravidlo místa plnění offline** – Toto pravidlo umožňuje organizacím určit místo nebo skupinu míst jako offline nebo nedostupné pro distribuovanou správu objednávek, aby objednávky nemohly být přiřazeny k plnění.
+> [!NOTE]
+> Ve verzi 10.0.5 aplikace Retail byl změněn parametr **Plnění objednávky pouze z jednoho místa** na **Maximální počet míst plnění**. Namísto toho, aby uživatel mohl konfigurovat, zda lze objednávky plnit pouze z jednoho místa nebo zda lze plnit z libovolného počtu skladových míst, mohou uživatelé nyní určit, zda má být plnění z dané sady míst (nejvýše 5) nebo z libovolného počtu míst. To poskytuje větší flexibilitu ohledně toho, z kolika míst lze objednávku plnit.
+
+   - **Pravidlo místa plnění offline** – Toto pravidlo umožňuje organizacím určit místo nebo skupinu míst jako offline nebo nedostupné pro distribuovanou správu objednávek, aby objednávky nemohly být přiřazeny k těmto místům pro plnění.
     - **Pravidlo maximálního počtu zamítnutí** – Toto pravidlo umožňuje organizacím určit prahovou hodnotu zamítnutí. Když je dosažena prahová hodnota, proces distribuované správy objednávek označí objednávku nebo řádek objednávky jako výjimku a vyloučí je z dalšího zpracování.
 
         Poté, co jsou řádky objednávky přiřazeny k místu, místo může odmítnout přiřazená řádek objednávky, protože nemusí být schopno z nějakých důvodů plnit tento řádek. Zamítnuté řádky jsou označené jako výjimka a vrácené zpět do skupiny pro zpracování v dalším spuštění. Během dalšího spuštění se distribuovaná správa objednávek pokusí přiřadit zamítnutý řádek k jinému místu. Nové místo může rovněž zamítnout přiřazený řádek objednávky. Tento cyklus přiřazení a zamítnutí se může přihodit několikrát. Když počet zamítnutí dosáhne definované prahové hodnoty, distribuovaná správa objednávek označí řádek objednávky jako stálou výjimku a již znovu nevybere řádek pro přirazení. Distribuovaná správa objednávek bude zvažovat řádek objednávky znovu pro opětovné přiřazení pouze tehdy, když uživatel ručně resetuje stav řádku objednávky.
 
-    - **Pravidlo maximální vzdálenosti** – Toto pravidlo umožňuje organizacím určit maximální vzdálenost, do které může být místo nebo skupina míst pro plnění objednávky. Pokud jsou pro místo definována překrývající se pravidla maximální vzdálenosti. distribuovaná správa objednávek použije nejnižší maximální vzdálenost definovanou pro toto místo.
+   - **Pravidlo maximální vzdálenosti** – Toto pravidlo umožňuje organizacím určit maximální vzdálenost, do které může být místo nebo skupina míst pro plnění objednávky. Pokud jsou pro místo definována překrývající se pravidla maximální vzdálenosti. distribuovaná správa objednávek použije nejnižší maximální vzdálenost definovanou pro toto místo.
     - **Pravidlo maximální počtu objednávek** – Toto pravidlo umožňuje organizacím určit maximální počet objednávek, který může místo nebo skupina míst zpracovat během kalendářního dne. Pokud je maximální počet objednávek přiřazen k místu v jednom dni, distribuovaná správa objednávek nepřiřadí více objednávek tomuto místu po zbytek tohoto kalendářního dne.
 
-    Zde je uvedeno několik společných atributů, které lze definovat pro všechny předchozí typy pravidel:
+   Zde je uvedeno několik společných atributů, které lze definovat pro všechny předchozí typy pravidel:
 
-    - **Počáteční datum** a **Koncové datum** – Každé pravidlo může být účinné podle data použitím těchto polí.
-    - **Zakázáno** – Pouze pravidla, která mají hodnotu **Ne** pro toto pole, jsou zvažována při spuštění distribuované správy objednávek.
-    - **Vážné omezení** – Pravidlo lze definovat buď jako vážné omezení, nebo bez vážného omezení. Každé spuštění distribuované správy objednávek prochází dvěma iteracemi. V první iteraci je každé pravidlo považováno jako pravidlo s vážným omezením, bez ohledu na nastavení tohoto pole. Jinými slovy, je použito každé pravidlo. Jedinou výjimkou je pravidlo **Priorita místa**. V druhé iteraci jsou pravidla, která nebyla definována jako pravidla s vážným omezením, odstraněna, a objednávka nebo řádky objednávky nepřiřazené k místům, když byla použita všechna pravidla, jsou přiřazeny k místům.
+   - **Počáteční datum** a **Koncové datum** – Každé pravidlo může být účinné podle data použitím těchto polí.
+   - **Zakázáno** – Pouze pravidla, která mají hodnotu **Ne** pro toto pole, jsou zvažována při spuštění distribuované správy objednávek.
+   - **Vážné omezení** – Pravidlo lze definovat buď jako vážné omezení, nebo bez vážného omezení. Každé spuštění distribuované správy objednávek prochází dvěma iteracemi. V první iteraci je každé pravidlo považováno jako pravidlo s vážným omezením, bez ohledu na nastavení tohoto pole. Jinými slovy, je použito každé pravidlo. Jedinou výjimkou je pravidlo **Priorita místa**. V druhé iteraci jsou pravidla, která nebyla definována jako pravidla s vážným omezením, odstraněna, a objednávka nebo řádky objednávky nepřiřazené k místům, když byla použita všechna pravidla, jsou přiřazeny k místům.
 
 10. Profily plnění se použijí k seskupení kolekce pravidel, právnických osob, původů prodejní objednávky a způsobů dodání. Každé spuštění distribuované správy objednávek je pro konkrétní profil plnění. Tímto způsobem organizace mohou určit a spustit sadu pravidel pro sadu právnických osob na objednávkách, které mají specifické původy prodejní objednávky a způsoby dodání. Proto když musí být spuštěna různá sada pravidel na různé sady původů prodejní objednávky nebo způsoby dodání, profily plnění lze definovat odpovídajícím způsobem. Chcete-li nastavit profily plnění, postupujte následujícím způsobem:  
 
