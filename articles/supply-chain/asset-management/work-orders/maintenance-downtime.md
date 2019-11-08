@@ -3,7 +3,7 @@ title: Prostoj údržby
 description: Tohle téma popisuje prostoje údržby v modulu Správa majetku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/23/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,40 +16,39 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc79dc1b5911679586fa560142ada5add1a881d2
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: ad9f1b2a0e63b4fb0d6daceb451c3a1dc1ec7de7
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918237"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626139"
 ---
 # <a name="maintenance-downtime"></a>Prostoj údržby
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-Registrace prostojů údržby můžete vytvořit u majetku vybraného v pracovním příkazu. To je užitečné v případě, že chcete zaznamenávat prostoje údržby na jednom nebo více počítačích v produkční oblasti. Nejprve vytvořte kódy důvodů prostojů údržby, které chcete použít, například porucha nebo plánované zastavení. To se provádí v části **Kódy důvodů prostojů údržby**. Dále můžete vytvořit registrace prostojů údržby v části **Prostoje údržby** a přidat odpovídající kódy důvodů.
+Registrace prostojů údržby můžete vytvořit u majetku vybraného v pracovním příkazu. Tato schopnost je užitečná v případě, že chcete zaznamenávat prostoje údržby na jednom nebo více počítačích v produkční oblasti. Nejprve vytvořte kódy důvodů prostojů údržby, které chcete použít, například **Rozdělení** a **Plálnované zastavení**. Tento krok se provádí na stránce **Kódy důvodů prostojů údržby**. Dále můžete vytvořit registrace prostojů údržby na stránce **Prostoje údržby** a přidat příslušné kódy důvodů prostoje údržby.
 
 ## <a name="create-maintenance-downtime-reason-codes"></a>Vytváření kódů důvodů prostojů údržby
 
-1. Klikněte na položky **Správa majetku** > **Nastavení** > **Pracovní příkazy** > **Kódy důvodů prostojů údržby**.
+1. Vyberte položky **Správa majetku** > **Nastavení** > **Pracovní příkazy** > **Kódy důvodů prostojů údržby**.
 
-2. Klepněte na možnost **Nový**.
+2. Zvolte **Nové**.
 
-3. Do pole **Kód důvodu prostoje údržby** zadejte ID.
+3. Do pole **Kód důvodu prostojů údržby** zadejte ID pro kód důvodu prostojů údržby.
 
-4. Do pole **Název** zadejte název kódu důvodu.
+4. Do pole **Název** zadejte název.
 
-5. Chcete-li, aby byl kód důvodu zahrnut do výpočtů klíčového indikátoru výkonu, zaškrtněte políčko **Zahrnout do ukazatele KPI**. Obvykle by plánované zastavení výroby nemělo být zahrnuto do výpočtů ukazatelů KPI, protože neovlivňují očekávaný výkon.
+5. Zaškrtněte políčko **Zahrnutí KPI**, pokud by měl být kód důvodu zahrnut do výpočtů klíčových ukazatelů výkonu (KPI) pro majetek. Obecně platí, že by plánované zastavení výroby nemělo být zahrnuto do výpočtů ukazatelů KPI, protože neovlivňují očekávaný výkon.
 
-6. Klikněte na možnost **Uložit**.
+6. Zvolte **Uložit**.
+
+Následující ilustrace znázorňuje příklad stránky **Kódy důvodu prostoje údržby**.
 
 ![Obrázek č. 1](media/15-work-orders.png)
-
 
 Po vytvoření kódů důvodů prostojů údržby, které chcete použít, můžete vytvořit registrace prostojů údržby pro pracovní příkazy a majetek.
 
@@ -58,35 +57,34 @@ Po vytvoření kódů důvodů prostojů údržby, které chcete použít, můž
 
 1. Klikněte na **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
-2. Vyberte pracovní příkaz a klikněte na položku **Prostoj údržby**.
+2. Vyberte pracovní příkaz a pak na kartě **Pracovní příkaz** ve skupině **Majetek** vyberte **Prostoj údržby**.
 
-3. Klepněte na možnost **Nový**.
+3. Zvolte **Nové**.
 
 4. Do polí **Od** a **Do** zadejte interval data a času pro registraci prostoje údržby.
 
-5. Když ponecháte pole **Do** prázdné, do pole **Doba trvání** bude automaticky vložena doba trvání v hodinách.
+>[!NOTE]
+>Když ponecháte pole **Do** prázdné, do pole **Doba trvání** bude automaticky vložena doba trvání v hodinách.
 
-6. V poli **Kód důvodu prostoje údržby** vyberte kód důvodu.
+5. V poli **Kód důvodu prostoje údržby** vyberte kód důvodu.
 
-7. Chcete-li přidat další registrace, zopakujte kroky 3–6.
+6. Opakováním kroků 3 až 5 přidejte další registrace.
 
-8. Klikněte na možnost **Uložit**.
+7. Zvolte **Uložit**.
 
+Následující ilustrace znázorňuje příklad stránky registrace prostoje údržby.
 
 ![Obrázek č. 2](media/16-work-orders.png)
 
-
-Kalendář použitý k výpočtu registrace prostoje údržby závisí na výběru v nastavení majetku a parametrů. Pokud je prostředek vybrán pro majetek v umístění **Všechen majetek** >  záložka s náhledem **Dlouhodobý majetek** > pole **Prostředek**, použije se nastavený kalendář pro přidruženou skupinu prostředků, jak je znázorněno na následujícím obrázku.
+Kalendář použitý k výpočtu registrace prostoje údržby závisí na výběru v nastavení majetku a parametrů. Pokud je prostředek vybrán pro majetek v poli **Prostředek** pevné záložky **Investiční majetek** na stránce **Veškerý majetek**, použije se nastavený kalendář pro přidruženou skupinu prostředků, jak je znázorněno na následujícím obrázku.
 
 ![Obrázek č. 3](media/17-work-orders.png)
-
 
 Není-li pro majetek vybrán žádný prostředek, použije se standardní kalendář vybraný v části **Parametry správy majetku**, jak je znázorněno na následujícím obrázku.
 
 ![Obrázek č. 4](media/18-work-orders.png)
 
-
-Kliknutím na položky **Správa podnikového majetku** > **Dotazy** > **Prostoj údržby** zobrazíte přehled všech registrací prostojů údržby.
+Pokud chcete zobrazit přehled všech registrací prostojů údržby, klikněte na **Správa majetku** > **Dotazy** > **Prostoj údržby**.
 
 >[!NOTE]
 >Všechny kalendáře používané v modulu **Správa majetku** se nastavují v umístění **Správa organizace** > **Nastavení** > **Kalendáře** > **Kalendáře**.

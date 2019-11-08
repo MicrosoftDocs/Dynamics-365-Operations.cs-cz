@@ -18,20 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6fad4d57b8e08c839ac0ffac2324c02304335ef
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 953c4bb17329205c5d8d14b6570a6bac152e9320
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887221"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652142"
 ---
 # <a name="schedule-work-orders"></a>Naplánovat pracovní příkazy
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Toto téma vysvětluje, jak plánovat pracovní příkazy v modulu Správa majetku. Požadovaný počet hodin pro pracovní příkaz je definován součtem předpokládaných hodin pro úlohy pracovních příkazů minus zaúčtované hodiny. Je-li vyžadováno více času, musí být prognóza pro pracovní příkaz upravena odpovídajícím způsobem. Ve volbě **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy** můžete zobrazit nebo upravit prognózy na pracovním příkazu výběrem pracovního příkazu a kliknutím na **Prognóza** na kartě **Pracovní příkaz**. Po vytvoření a odhadu pracovních příkazů je dalším krokem přidělení požadovaných pracovníků a nástrojů údržby, které dokončí pracovní příkazy.
+Toto téma vysvětluje, jak plánovat pracovní příkazy v modulu Správa majetku. 
+
+Požadovaný počet hodin pro pracovní příkaz je definován součtem předpokládaných hodin minus zaúčtované hodiny. Je-li vyžadováno více času, musí být prognóza upravena odpovídajícím způsobem. Ve volbě **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy** můžete zobrazit nebo upravit prognózy na pracovním příkazu výběrem pracovního příkazu a kliknutím na **Prognóza** na kartě **Pracovní příkaz**. Po vytvoření a odhadu pracovních příkazů je dalším krokem přidělení požadovaných pracovníků a nástrojů údržby, které dokončí pracovní příkazy.
 
 Je možné naplánovat pouze pracovní příkazy se stavem životního cyklu pracovního příkazu, který umožňuje plánování. Možnost Povolit plánování je nastaveno ve **Správa majetku** > **Nastavení** > **Pracovní příkazy** > **Stavy životního cyklu** >  pevná záložka **Obecné** > přepínací tlačítko **Povolit plánování**.
 
@@ -43,8 +45,8 @@ Je možné naplánovat pouze pracovní příkazy se stavem životního cyklu pra
 
 4. V dialogovém okně **Naplánovat pracovní příkazy** můžete přidat výběr týkající se očekávaného data zahájení a úrovně služeb, je-li to nutné. Pokud by proces plánování měl zohledňovat omezení kapacity týkající se již naplánovaných zdrojů pro jiné úlohy, zkontrolujte, zda jsou přepínací tlačítka **Majetek**, **Nástroj** a **Pracovník** nastavena na hodnotu „Ano“.
 
->[!NOTE]
->Nastavíte-li přepínací tlačítka **Majetek**, **Nástroj** a **Pracovník** a pracovník na hodnotu „Ne“, existující rezervace budou ignorovány. V informačním protokolu se zobrazí seznam překrývajících se plánů pracovních příkazů a kliknutím na zprávy otevřete pracovní příkaz a v případě potřeby přeplánujte.
+    [!NOTE]
+    Nastavíte-li přepínací tlačítka **Majetek**, **Nástroj** a **Pracovník** a pracovník na hodnotu „Ne“, existující rezervace budou ignorovány. V informačním protokolu se zobrazí seznam překrývajících se plánů pracovních příkazů a kliknutím na zprávy otevřete pracovní příkaz a v případě potřeby přeplánujte.
 
 5. Chcete-li zobrazit podrobné informace o procesu plánování, vyberte v přepínacím tlačítku **Podrobný** možnost „Ano“. To znamená, že v informačním protokolu budou zobrazeny podrobné informace o vypočtených hodnotách pro pracovní příkazy a pracovníky údržby.
 
@@ -114,5 +116,7 @@ Skóre hodnocení, která se týkají výpočtu, kteří pracovníci údržby ma
 
 ## <a name="competencies-used-in-work-order-scheduling"></a>Kompetence použité při plánování pracovního příkazu
 
-Požadavky na dovednosti a certifikáty lze nastavit na typech prací údržby (**Správa majetku** > **Nastavení** > **Úlohy** > **Typy prací údržby**) a oborech prací údržby (**Správa majetku** > **Nastavení** > **Úlohy** > **Obory prací údržby**). Typ prací údržby a obory prací údržby se vybírají u úloh pracovních příkazů. Pokud byly pro práci údržby nebo na obor práce údržby vybrány dovednosti nebo certifikáty a v úloze pracovního příkazu je použit typ práce údržby nebo obor úloha údržby, jsou naplánováni pouze pracovníci s odpovídajícími dovednostmi a certifikáty na pracovní příkaz.
+Požadavky na dovednosti a certifikáty lze nastavit na typech prací údržby (**Správa majetku** > **Nastavení** > **Úlohy** > **Typy prací údržby**) a oborech prací údržby (**Správa majetku** > **Nastavení** > **Úlohy** > **Obory prací údržby**). 
+
+Typ prací údržby a obory prací údržby se vybírají u úloh pracovních příkazů. Pokud byly pro práci údržby nebo na obor práce údržby vybrány dovednosti nebo certifikáty a v úloze pracovního příkazu je použit typ práce údržby nebo obor úloha údržby, jsou naplánováni pouze pracovníci s odpovídajícími dovednostmi a certifikáty na pracovní příkaz.
 
