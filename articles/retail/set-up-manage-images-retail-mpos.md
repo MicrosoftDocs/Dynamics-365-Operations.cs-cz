@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8f4658696a2e6c2959b87aa852c25c108b9ba302
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 1776220766984339c7c289f7b55252fb0c0bb2a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024837"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570649"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Nastavení a správa obrázků pro Retail Modern POS (MPOS)
 
@@ -83,9 +83,7 @@ V následujících procedurách jsou obrázky nastaveny jako příklad pro entit
     [![Dialogové okno Obrázky](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
-> Stejný postup lze použít pro všech pět entit, které jsou podporovány: pracovníka, odběratele, katalog, kategorie a produkty. „Katalogové produkty“ (produkty, které jsou nastaveny na úrovni katalogu) a „Produkty kanálu“ (produkty, které jsou nastaveny na úroveň kanálu) používají šablonu média, která je nastavena pro entitu produktů. Pro šablonu médií produktů můžete vybrat číslo obrázků produktů, které mají být zobrazeny po produktu. Můžete také nastavit pro daný produkt výchozí obrázek. Tímto způsobem lze zabránit prázdným obrázkům v MPOS a pomoci řídit, který obrázek se používá jako výchozí obrázek vyráběnou položku. V následujícím příkladu má každý produkt pět obrázků a první obrázek je nastaven jako výchozí obrázek. Varianty produktů jsou zpracovány stejným způsobem jako hlavní produkty. Název souboru obrazového souboru má být založen na čísle produktu. Některé znaky také unikly, zatímco byl vytvářen název souboru. Je tedy dobré ověřit název souboru za použití oddílu **Generovat adresy URL obrázku pro Excel**.
->
-> [![Dialogové okno Definovat šablonu média](./media/prods.png)](./media/prods.png)
+> Stejný postup lze použít pro všech pět entit, které jsou podporovány: pracovníka, odběratele, katalog, kategorie a produkty. „Katalogové produkty“ (produkty, které jsou nastaveny na úrovni katalogu) a „Produkty kanálu“ (produkty, které jsou nastaveny na úroveň kanálu) používají šablonu média, která je nastavena pro entitu produktů. Pro šablonu médií produktů můžete vybrat číslo obrázků produktů, které mají být zobrazeny po produktu. Můžete také nastavit pro daný produkt výchozí obrázek. Tímto způsobem lze zabránit prázdným obrázkům v MPOS a pomoci řídit, který obrázek se používá jako výchozí obrázek vyráběnou položku. V následujícím příkladu má každý produkt pět obrázků a první obrázek je nastaven jako výchozí obrázek. Varianty produktů jsou zpracovány stejným způsobem jako hlavní produkty. Název souboru obrazového souboru má být založen na čísle produktu. Některé znaky také unikly, zatímco byl vytvářen název souboru. Je tedy dobré ověřit název souboru za použití oddílu **Generovat adresy URL obrázku pro Excel**. Další informace naleznete v části [Přepis pomocí úprav v aplikaci Excel](#overwrite-by-using-edit-in-excel) dále v tomto článku.
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Úlohy pro synchronizaci k odeslání šablony média na stránku kanálu
 
@@ -110,8 +108,6 @@ Jak jste se již dozvěděli v předchozím oddílu, šablona média dané entit
 
     > [!IMPORTANT]
     > Kdykoli při změně šablony média je před použitím funkcí úpravy v aplikaci Excel nutné klepnout na **Generovat**.
-
-    [![Generování URL adres obrázků pro záložku s náhledem Excel](./media/excel1.jpg)](./media/excel1.jpg)
 
     Nyní můžete zobrazit náhled adres URL obrázků, které byly vygenerovány na základě naposledy uložené šablony média.
 

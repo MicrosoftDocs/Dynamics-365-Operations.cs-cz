@@ -3,7 +3,7 @@ title: Nejčastější dotazy týkající se integrace aplikace Dynamics 365 Tal
 description: Toto téma vysvětluje, jaká data jsou synchronizována v rámci integrace aplikací Talent a Finance.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5bb855e6dd7ff236b7bda9e59e12ed8cc8ab9bc9
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251007"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622761"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Nejčastější dotazy týkající se integrace aplikace Dynamics 365 Talent s Dynamics 365 Finance
 
@@ -35,6 +35,10 @@ Toto téma uvádí odpovědi na časté otázky spojené s tím, jaká data jsou
 S aplikací Core HR je synchronizována dílčí skupina dat. Seznam všech entit uvádí téma [Integrace z aplikace Dynamics 365 Talent do Dynamics 365 Finance](talent-financeandoperations-integration.md).
 
 V případě Attract a Onboard jsou všechna data nativní pro Common Data Service.
+
+## <a name="why-dont-i-see-any-data-synced-to-common-data-service"></a>Proč se nezobrazují žádná data synchronizovaná s touto funkcí Common Data Service?
+
+Ve výchozím nastavení je integrace Common Data Service v nových prostředích, která nezahrnují zadaná ukázková data, zakázána. Ve výchozím nastavení je tato možnost zapnutá v nových prostředích zahrnujících ukázková data a synchronizace dat je zahájena při zřizování prostředí. Jakmile bude prostředí připraveno k synchronizaci dat, můžete zapnout integraci. Další informace naleznete v tématu [Konfigurace integrace Common Data Service](hr-common-data-service-integration.md).
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Je možné vytvořit nové mapování bez použití šablon
 

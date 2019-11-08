@@ -18,19 +18,19 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 69d06ff649f4453df22d55062b43bcc8d4ecd763
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: f531f51d7f42f88e4da2d046e61313e9ada2b259
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874709"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569793"
 ---
 # <a name="work-order-lifecycle-states"></a>Stavy životního cyklu pracovního příkazu
 
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Stavy životního cyklu pracovního příkazu určují stavy, kterými může pracovní příkaz projít. Příkladem může být **Vytvořeno**, **Naplánováno**, **Probíhá** a **Ukončeno**. Stavy životního cyklu pracovního příkazu lze aktualizovat ručně v rámci pracovního příkazu nebo je lze aktualizovat automaticky (například během plánování pracovních příkazů).
 
@@ -38,7 +38,7 @@ Stavy životního cyklu pracovního příkazu, které jsou vyžadovány pro vaš
 
 V následující tabulce jsou popsány možnosti v oddílech **Pracovní příkaz** a **Plánovat** na pevné záložce **Obecné** na stránce **Stav životního cyklu pracovního příkazu** (**Správa majetku** \> **Nastavení** \> **Pracovní příkazy** \> **Stavy životního cyklu**).
 
-![Obrázek č. 1](media/09-setup-for-work-orders.png)
+![Stav životního cyklu pracovního příkazu](media/09-setup-for-work-orders.png)
 
 | Název možnosti                   | Popis |
 |-------------------------------|-------------|
@@ -96,7 +96,7 @@ V následující tabulce jsou popsány možnosti v oddílech **Pracovní příka
     - Je-li možnost **Prostoj údržby** nastavena na **Ano** pro stav životního cyklu, na který je aktualizován pracovní příkaz, bude ověření prostoje údržby provedeno u majetku souvisejícího s tímto pracovním příkazem. Pokud byla provedena registrace prostojů údržby, ale nedošlo k žádnému **Ukončení** registrace, zobrazí se při aktualizaci pracovního příkazu do tohoto stavu životního cyklu zpráva.
     - Pokud standardní nastavení projektu nezahrnuje všechny fáze, které požadujete pro nastavení správy majetku, můžete nastavit uživatelem definované fáze projektu na kartě **Fáze projektu** na stránce **Parametry modulu Řízení a účetnictví projektu**. Na následujícím obrázku je zobrazena karta **Fáze projektu** na stránce **Parametry modulu Řízení a účetnictví projektu**.
 
-    ![Obrázek č. 2](media/10-setup-for-work-orders.png)
+    ![Stránka Nastavit fáze projektu pro různé typy projektů](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Pokud stav životního cyklu, na který aktualizujete pracovní příkaz, je neaktivní, deníky související s tímto pracovním příkazem, které dosud nebyly zaúčtovány, budou automaticky odstraněny. Toto chování pomáhá zaručit automatické vyčištění nepoužívaných dat. (Stav životního cyklu je neaktivní, pokud je možnost **Aktivní** nastavena na **Ne** na pevné záložce **Obecné** na stránce **Stav životního cyklu pracovního příkazu**.)
@@ -114,7 +114,7 @@ Důvodem pro použití typů je to, že při definování typu, například podl
 
 Na následujícím obrázku je znázorněn vztah mezi typy pracovních příkazů, modely životního cyklu a stavy životního cyklu.
 
-![Obrázek č. 3](media/11-setup-for-work-orders.png)
+![Stránka typ pracovní objednávky ve srovnání s pracovní objednávkou – stránka Modely životního cyklu](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Modely životního cyklu pracovního příkazu
 
@@ -138,4 +138,4 @@ Po vytvoření stavů životního cyklu pracovního příkazu, které jsou poža
 8. V poli **Neplánovaný stav životného cyklu** vyberte stav životního cyklu, který by měl být vybrán vždy pro pracovní příkaz v případě, že je odstraněno plánování pracovního příkazu.
 9. Uložte model životního cyklu pracovních příkazů.
 
-![Obrázek č. 4](media/15-setup-for-work-orders.png)
+![Stránka Modely životního cyklu pracovního příkazu](media/15-setup-for-work-orders.png)

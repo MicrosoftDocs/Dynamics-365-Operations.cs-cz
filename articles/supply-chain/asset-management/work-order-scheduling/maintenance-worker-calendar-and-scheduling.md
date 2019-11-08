@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f86f6475e5226443f5e4d43fb91acafe2afdbb9
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: aa2d50a976af7ee7dde5335f94336b995fdc2d11
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887381"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652050"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Kalendář a plánování pracovníka údržby
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Při plánování pracovních objednávek vytváříte plán pro pracovníky údržby, nástroje a majetek. Chcete-li provést plánování pracovníků údržby, je nutné pro každého pracovníka údržby nastavit kalendář. Pracovníci údržby souvisejí s prostředkem a kalendáře pracovní doby se nastavují na prostředky. Můžete nastavit zdroj a kalendář vztahující se k pracovníkovi ve **Správa majetku** > **Nastavení** > **Pracovníci** > **Pracovníci**, který je popsán v tématu [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md).
+Při plánování pracovních objednávek vytváříte plán pro pracovníky údržby, nástroje a majetek. Chcete-li provést plánování pracovníků údržby, je nutné pro každého pracovníka údržby nastavit kalendář. Pracovníci údržby souvisejí s prostředkem a kalendáře pracovní doby se nastavují na prostředky. Můžete nastavit zdroj a kalendář ve **Správa majetku** > **Nastavení** > **Pracovníci** > **Pracovníci**, který je popsán v tématu [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md).
 
 Na snímku obrazovky níže je uveden příklad pracovníka údržby, který souvisí se prostředkem, který používá kalendář pracovní doby "výroba".
 

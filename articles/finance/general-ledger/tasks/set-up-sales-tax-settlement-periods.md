@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cff84f8f6c42fd064258b8ca53e24acc8059977
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c17a0240c29dad58c958ab1ce844ee5d8384bd1f
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175326"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658922"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Nastavení období vyrovnání DPH
 
@@ -42,7 +42,7 @@ Tento úkol využívá ukázkovou společnost USMF.
 9. Zadejte počet jednotek intervalu období pro každé období. Například čtvrtletí má 3 měsíce.
 10. Zaškrtněte nebo zrušte zaškrtnutí políčka **Použít dávkové zpracování pro vyrovnání DPH**. Proces vyrovnání pro období vyrovnání lze zpracovat jako dávkovou úlohu na pozadí. Tato možnost je vhodná velký počet daňových transakcí v rámci intervalu období.  
     > [!NOTE]
-    > V současné době to není podporováno v Rakousku, Belgii, Španělsku, Itálii, Japonsku a Nizozemsku.
+    > V současné době to není podporováno ve Španělsku, Japonsku a Nizozemsku.
 11. Zaškrtněte nebo odškrtněte políčko **Zabránit generování daňové transakce protiúčtu**. Ve výchozím nastavení systém generuje daňové transakce protiúčtu během procesu vyrovnání, což může způsobit problémy s výkonností, pokud je v určitém časovém intervalu velký počet daňových transakcí. Zaškrtněte toto políčko, abyste zabránili generování daňové transakce protiúčtu.
 12. Rozbalte kartu **Intervaly období**.
 13. Vyberte **přidat**.

@@ -18,19 +18,19 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 82f65293679591f278e0e3b79c112ba36debc3bb
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: da737cedfcd678a835e85a2b82a05394d771f8cc
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2277936"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652257"
 ---
 # <a name="calculate-capacity-load"></a>Vypočítat vytížení kapacity
 
 [!include [banner](../../includes/banner.md)]
 
 
-Ve správě majetku lze vypočítat vytížení kapacity na
+Ve správě majetku lze vypočítat vytížení kapacity na:
 
 - řádcích rozvrhu údržby  
 - pracovních příkazech, které ještě nebyly naplánovány  
@@ -46,15 +46,17 @@ To je užitečné v případě, že chcete získat přehled očekávaného vytí
 
 4. Chcete-li do výpočtu zahrnout práce pracovního příkazu, vyberte Ano na přepínači **Zahrnout pracovní příkaz**.
 
-5. V poli **Úroveň** určete, jak detailní mají být řádky vytížení kapacity v případě funkčních míst. Pokud například do pole zadáte číslo „1“ a máte strukturu funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky rozvrhu údržby a pracovní příkazy pro funkční místo, a proto lze hodiny na řádku navýšit z funkčních míst na nižší úrovni. Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky rozvrhu údržby a všechny pracovní příkazy na všech úrovních funkčních míst, ke kterým se vztahují.
+5. V poli **Úroveň** určete, jak detailní mají být řádky vytížení kapacity v případě funkčních míst. 
+
+    Pokud například do pole zadáte číslo „1“ a máte strukturu funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky rozvrhu údržby a pracovní příkazy pro funkční místo, a proto lze hodiny na řádku navýšit z funkčních míst na nižší úrovni. 
+    
+    Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky rozvrhu údržby a všechny pracovní příkazy na všech úrovních funkčních míst, ke kterým se vztahují.
 
 6. Výpočet zahájíte klepnutím na tlačítko **OK**.
 
-7. Ve skupině podoken akcí **Seskupit podle...** klikněte na odpovídající tlačítka pro zobrazení požadované úrovně podrobností výpočtu. Vybraná tlačítka skupiny podokna akcí jsou zvýrazněna modrou barvou. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
+7. Ve skupině **Seskupit podle...** klikněte na odpovídající tlačítka pro zobrazení požadované úrovně podrobností výpočtu. Na snímku obrazovky níže jsou vybraná tlačítka **Seskupit podle** označena modře. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
 
-Následující obrázek ukazuje příklad rozhraní.
-
-![Obrázek č. 1](media/01-capacity-planning.png)
+    ![Obrázek č. 1](media/01-capacity-planning.png)
 
 >[!NOTE]
 >Chcete-li se zaměřit pouze na plánování kapacity týkající se plánovaných pracovních příkazů, nahlédněte do části [Výpočet vytížení kapacity na plánovaných pracovních příkazech](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).

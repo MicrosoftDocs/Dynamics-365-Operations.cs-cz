@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdfc5eda1ebf78abe823908324ed9c35215e562e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249556"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653504"
 ---
 # <a name="demand-forecasting-setup"></a>Nastavení prognózy poptávky
 
@@ -72,7 +72,7 @@ Pokud chcete generovat prognózu, aplikace Supply Chain Management používá we
 
 **Poznámka:** Název účtu úložiště Azure a klíč jsou nutné pouze při použití vlastního účtu pro úložiště. Při nasazování místní verze musíte mít vlastní účet úložiště ve službě Azure, abyste mohli používat službu Machine Learning pro přístup k historickým datům. 
 
-Pokud chcete vytvořit předpovědi poptávky, můžete nasadit vlastní službu pomocí experimentů s prognózou poptávky v rámci Machine Learning Studio nebo aplikace Supply Chain Management. Pokyny pro nasazení experimentů s prognózou poptávky v podobě webové služby jsou k dispozici v aplikaci Finance and Operations. Na stránce **Parametry vytváření prognózy poptávky** klepněte na kartu **Azure Machine Learning**.
+Pokud chcete vytvořit předpovědi poptávky, můžete nasadit vlastní službu pomocí experimentů s prognózou poptávky v rámci Machine Learning Studio nebo aplikace Supply Chain Management. Pokyny pro nasazení experimentů s prognózou poptávky v podobě webové služby jsou k dispozici v aplikaci Supply Chain Management. Na stránce **Parametry vytváření prognózy poptávky** klepněte na kartu **Azure Machine Learning**.
 
 ## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>Nastavení pro službu Machine Learning pro vytváření prognózy poptávky.
 Chcete-li zobrazit parametry, které lze konfigurovat pro službu vytváření prognózy poptávky, přejděte na **Hlavní plánování** &gt; **Nastavení** &gt; **Prognóza poptávky** &gt; **Parametry algoritmu prognózy**. Stránka **Parametry algoritmu prognózy** popisuje výchozí hodnoty parametrů. Tyto parametry lze přepsat na stránce **Parametry vytváření prognózy poptávky**. Na kartě **Hlavní** můžete parametry přepsat globálně, nebo použít kartu **Alokační klíče položek** a přepsat tak parametry pro každý alokační klíč položky. Parametry, které budou přepsány pro alokační klíč položky, ovlivní pouze prognózu položek, které jsou přidruženy k danému alokačnímu klíči položky.

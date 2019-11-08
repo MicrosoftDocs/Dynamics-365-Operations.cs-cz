@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c22137ad29bf947bc7a9e4c9a4d1332e03b1298
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 1e3fc0e8cb5c9a6cc7729dfbddd5d918a1d6bdb5
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606957"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653364"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Vylepšení funkcionality zaúčtování výkazů
 
@@ -37,7 +37,7 @@ Ve výchozím nastavení při nasazení aplikace Finance and Operations 7.3.2. j
 
 Když je zapnutý konfigurační klíč pro nové **maloobchodní výpisy**, bude k dispozici nová položka nabídky, s názvem **maloobchodní výpisy**. Tato položka nabídky umožňuje ručně vytvořit, vypočítat a zaúčtovat výkazy. Všechny výkazy, které způsobují chyby při zaúčtování dávkového zpracování budou také k dispozici prostřednictvím této položky. (Když je zapnutý konfigurační klíč pro nové **maloobchodní výpisy (zastaralé)**, bude název položky **Otevřené výpisy**.
 
-Aplikace Finance and Operations zahrnuje následující ověření, která souvisí s těmito konfiguračními klíči:
+Aplikace Retail zahrnuje následující ověření, která souvisí s těmito konfiguračními klíči:
 
 - Oba konfigurační klíče nelze spustit současně.
 - Stejný konfigurační klíč musí být použit pro všechny operace, které se provádí v daném výpisu během jeho cyklu životnosti (vytvořit, vypočítat, vymazat, zaúčtovat a tak dále). Nelze například vytvořit a vypočítat výkaz, když je zapnutý konfigurační klíč **maloobchodní výkaz (starší verze)** konfigurační a vy se pokusíte o zaúčtování stejného výpisu, když je zapnutý konfigurační klíč **maloobchodní výkaz**.

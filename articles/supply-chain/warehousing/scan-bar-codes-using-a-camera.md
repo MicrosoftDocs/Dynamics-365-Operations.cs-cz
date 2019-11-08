@@ -1,6 +1,6 @@
 ---
-title: Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 Supply Chain Management – sklady
-description: Toto téma vysvětluje, jak nastavit Dynamics 365 Supply Chain Management – Sklady pro skenování čárových kódů pomocí fotoaparátu na mobilním zařízení.
+title: Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations – Sklady
+description: Toto téma vysvětluje, jak nastavit Dynamics 365 for Finance and Operations – Sklady pro skenování čárových kódů pomocí fotoaparátu na mobilním zařízení.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 58cf27a250778d68bdffa1eefa5e939276e467fc
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251448"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578142"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 Supply Chain Management – sklady
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma vysvětluje, jak nastavit Dynamics 365 Supply Chain Management – Sklady pro skenování čárových kódů pomocí fotoaparátu na mobilním zařízení. 
+Toto téma vysvětluje, jak nastavit Dynamics 365 for Finance and Operations – Sklady pro skenování čárových kódů pomocí fotoaparátu na mobilním zařízení. 
 
 ## <a name="prerequisites"></a>Předpoklady
 Chcete-li použít tuto funkci, musíte mít nainstalovanou verzi 1.2.0.0 aplikace Sklady a vaše zařízení musí mít fotoaparát. Když otevřete aplikaci po aktualizaci, budete vyzváni, abyste povolili aplikaci použít fotoaparát. Pokud vaše zařízení nemá fotoaparát, nezobrazí se výzva a nebude možné používat fotoaparát jako skener. 
@@ -49,7 +49,7 @@ Stránka fotoaparátu bude spuštěna na každé stránce, kde má vstupní pole
 
 | Stránka úloh a podrobností | Stránka fotoaparátu | 
 | :---------------------: | :--------------------: |
-| ![camera-scanning-example-task-detail-page](./media/camera-scanning-example-task-detail-page50.png)          | ![camera-scanning-example-camera-page-smaller](./media/camera-scanning-example-camera-page50.png)          |
+| ![Podrobná stránka s úkolem skenování pomocí kamery](./media/camera-scanning-example-task-detail-page50.png)          | ![Menší příklad stránky skenování pomocí kamery](./media/camera-scanning-example-camera-page50.png)          |
 
 Na stránce fotoaparátu po kliknutí na tlačítko fotoaparátu bude toto tlačítko šedé při pokusu o identifikaci čárového kódu. Pokud čárový kód není identifikován do 5 sekund, proces vyprší a tlačítko fotoaparátu bude opět dostupné. Budete pak moci se pokusit znovu o naskenování čárového kódu.
 

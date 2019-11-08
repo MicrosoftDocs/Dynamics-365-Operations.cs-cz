@@ -3,7 +3,7 @@ title: Odebrané nebo zastaralé funkce pro Finance and Operations
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70bb8404c5b0e2422948d0b89311c384e3686710
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181075"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658683"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Odebrané nebo zastaralé funkce pro Finance and Operations
 
@@ -38,13 +38,42 @@ Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zast
 > [!NOTE]
 > Počínaje vydáním Finance and Operations z července 2017 s aktualizací Platform Update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci. Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.
 
-> Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
+Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
 
+## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 s aktualizací Platform update 31
+
+### <a name="chinese-voucher-types-without-account-groups-selection"></a>Čínské typy dokladů bez výběru účetních skupin
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Změněno na funkci s výběrem skupiny účtů. |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Přihláška |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: do 1. prosince 2020 plánujeme nadále nepodporovat nastavení čínských typů dokladů bez výběru skupin účtů. Vyhledání dalších podrobností o designu nové funkce ve verzi 10.0.7 |
 
 ## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 aktualizace Platform Update 30
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.6 s aktualizací Platform Update 30 jsou k dispozici pro cílené uživatele jako součást verze Preview. Obsah a funkce se mohou změnit. Další informace o předchozích verzích naleznete v tématu [Dostupnost aktualizací služby](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="dimensionhashgethashstr-_message"></a>DimensionHash.getHash(str _message)
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Systém Windows vyřazuje použití algoritmu SHA1, jak je zdokumentováno v [vynucení systému Windows pro certifikáty SHA1](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Přihláška |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: do 1. dubna 2020 musí vývojáři používat nové rozhraní API. |
+
+### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(řetězcová zpráva)
+
+|   |  |
+|------------|--------------------|
+| **Důvod pro zrušení/odstranění** | Systém Windows vyřazuje použití algoritmu SHA1, jak je zdokumentováno v [vynucení systému Windows pro certifikáty SHA1](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
+| **Nahrazeno jinou funkcí?**   | Ano |
+| **Ovlivněné oblasti produktu**         | Platforma |
+| **Možnost nasazení**              | Vše |
+| **Stav**                         | Zastaralé: do 1. dubna 2020 musí vývojáři používat nové rozhraní API. |
+
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()
 
@@ -308,7 +337,7 @@ V této verzi nebyly odebrány ani odepsány žádné funkce. Aktualizace platfo
 ## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 aktualizace Platform Update 12
 
 ### <a name="personalized-product-recommendations"></a>Doporučení přizpůsobeného produktu 
-Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](../../retail/personalized-product-recommendations.md).  
+Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace viz [Přehled doporučení produktů](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -413,7 +442,7 @@ Uživatelé si mohou stáhnout tento formulář ze státního portálu.
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>Doporučení přizpůsobeného produktu 
-Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace naleznete v tématu [Doporučení přizpůsobeného produktu](../../retail/personalized-product-recommendations.md).  
+Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace viz [Přehled doporučení produktů](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -445,7 +474,7 @@ Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, urč
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Duplicitní funkce.       |
-| **Nahrazeno jinou funkcí?**   | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a předpokladech naleznete v tématu [Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations – Sklady](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Nahrazeno jinou funkcí?**   | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a předpokladech naleznete v tématu [Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations – Sklady](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Ovlivněné oblasti produktu**         | Řízení skladu, Správa přepravy     |
 | **Možnost nasazení**              | Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení.               |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je čtvrté čtvrtletí roku 2019.   |
@@ -1215,7 +1244,7 @@ Konfigurátor výrobku byl používán k dynamické konfiguraci položek z prode
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Konfigurátor výrobku zveřejňoval kód X ++ koncovým uživatelům a není v aktuální verzi aplikace Dynamics AX podporován. Byl odebrán kvůli zamezení duplicitní údržby na překrývajících se kódech.  |
-| **Nahrazeno jinou funkcí?**   | Ano. Konfigurace založená na omezeních byla uvedena v aplikaci Dynamics AX 2012, kde již byl oznámen odpis konfigurátoru výrobku v budoucích verzích. Technologie konfigurace založené na omezeních je zvolena na základních produktech k umožnění konfigurace. Další informace naleznete v tématu [Vytvoření modelu konfigurace produktu](../../supply-chain/pim/build-product-configuration-model.md). |
+| **Nahrazeno jinou funkcí?**   | Ano. Konfigurace založená na omezeních byla uvedena v aplikaci Dynamics AX 2012, kde již byl oznámen odpis konfigurátoru výrobku v budoucích verzích. Technologie konfigurace založené na omezeních je zvolena na základních produktech k umožnění konfigurace. Další informace naleznete v tématu [Vytvoření modelu konfigurace produktu](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Ovlivněné oblasti produktu**         | Řízení informací o produktech, Prodej a marketing  |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.      |
 

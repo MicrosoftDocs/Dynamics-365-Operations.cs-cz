@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f7af87f359cfe3a606c8be857dd905bfef75e97
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: c42f259a57675c3dbac829d6d671e91982ef9011
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847452"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571684"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Vytvoření pracovních příkazů z požadavků na údržbu
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Po vytvoření požadavků na údržbu je lze snadno převést na pracovní příkazy. Toto téma popisuje nejrychlejší způsob, jak pracovat s požadavky na údržbu, aktualizovat několik požadavků na údržbu současně a pak vytvořit pracovní příkaz pro několik požadavků na údržbu současně. Na stránce **aktivní požadavky na údržbu** nebo **Moje požadavky na správu mého funkčního místa** je možné také současně pracovat s jedním požadavkem na údržbu a převést jeden požadavek na údržbu na pracovní příkaz.
@@ -53,5 +53,5 @@ Po vytvoření požadavků na údržbu je lze snadno převést na pracovní př�
 
 6. Vyberte **Správa majetku** \> **Společné** \> **Pracovní příkazy** \> **Všechny pracovní příkazy** a otevřete nový pracovní příkaz.
 
-    ![Obrázek č. 1](media/05-manage-maintenance-requests.png)
+    ![Otevření nového pracovního příkazu](media/05-manage-maintenance-requests.png)
 

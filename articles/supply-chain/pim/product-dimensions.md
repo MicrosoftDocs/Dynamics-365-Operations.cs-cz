@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3391679696c0e1dd84840821480ccbfb544829a6
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: f226329b774344a3de5c8f115ffb358611bf7d60
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863029"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570764"
 ---
 # <a name="product-dimensions"></a>Dimenze produktu
 
 [!include [banner](../includes/banner.md)]
-
-[!include [Retail name](../includes/retail-name.md)]
 
 Existují čtyři dimenze produktu – barva, konfigurace, velikost a styl. Kombinujte dimenze produktu ve skupinách dimenzí a přiřazujte skupiny dimenzí k základním produktům. Kombinace dimenzí produktu určuje způsob definování variant produktu.
 

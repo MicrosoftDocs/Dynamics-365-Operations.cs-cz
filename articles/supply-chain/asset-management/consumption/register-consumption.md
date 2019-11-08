@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024653"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653316"
 ---
 # <a name="register-consumption"></a>Registrace spotřeby
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Když byla úloha údržby dokončena na pracovním příkazu, následující krok provede registraci spotřeby a zaúčtuje deníky. Registrace můžete provést u následujících typů spotřeby: hodiny, položky a výdaje. Různé typy spotřeby jsou registrovány a zaúčtovány na stránce **Deníky pracovních příkazů**. Nastavení deníku ve **Správě majetku** se používá k vytváření a zaúčtování samostatných deníků pro hodiny, položky a výdaje v modulu **Řízení a účetnictví projektu**.
 
-Řádky prognózy můžete přidávat nebo odstraňovat v rámci pracovního příkazu. Nastavení stavu životního cyklu pracovního příkazu, související typ projektu a pravidla fáze související s typem projektu určují, zda lze přidávat nebo upravovat řádky deníku. Další informace o stavech životního cyklu pracovního příkazu a souvisejících fází najdete v tématu [Integrace do řízení a účetnictví projektu](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+Řádky prognózy můžete v některých případech přidávat nebo odstraňovat v rámci pracovního příkazu. Nastavení stavu životního cyklu pracovního příkazu, související typ projektu a pravidla fáze související s typem projektu určují, zda lze přidávat nebo upravovat řádky deníku. Další informace o stavech životního cyklu pracovního příkazu a souvisejících fází najdete v tématu [Integrace do řízení a účetnictví projektu](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Je možné nastavit automatické zaúčtování deníků ve stavu životního cyklu pracovního příkazu. Další informace najdete v části [Stavy životního cyklu pracovního příkazu](../setup-for-work-orders/work-order-lifecycle-states.md).
@@ -50,10 +50,10 @@ Když byla úloha údržby dokončena na pracovním příkazu, následující kr
 
 6. K zaúčtování řádků deníku klikněte na možnost **Zaúčtovat deníky**.
 
-7. Po zaúčtování deníků spotřeby je možné aktualizovat stav životního cyklu pracovního příkazu, například "Ukončeno", což znamená, že daný pracovní příkaz byl dokončen.
+7. Po zaúčtování deníků spotřeby je možné aktualizovat stav životního cyklu pracovního příkazu. Chcete-li například označit, že byl pracovní příkaz dokončen, můžete stav životního cyklu aktualizovat na hodnotu ukončeno.
 
-- V poli **Zobrazit** v horní části stránky **Deníky pracovních příkazů** vyberte řádky deníku, které chcete zobrazit: všechny, nezaúčtované nebo zaúčtované. Zaúčtované deníky mají zaškrtnutí v poli **Zaúčtováno**.  
-- Při vytvoření řádků položek v deníku pracovních příkazů se dimenze produktu a sledovací dimenze související s danou položkou automaticky přesunou do řádku deníku.  
+    - V poli **Zobrazit** v horní části stránky **Deníky pracovních příkazů** vyberte řádky deníku, které chcete zobrazit: **všechny**, **nezaúčtované** nebo **zaúčtované**. Zaúčtované deníky mají zaškrtnutí v poli **Zaúčtováno**.  
+    - Při vytvoření řádků položek v deníku pracovních příkazů se dimenze produktu a sledovací dimenze související s danou položkou automaticky přesunou do řádku deníku.  
 
 Snímek obrazovky níže ukazuje příklad registrace hodin a položek na pracovním příkazu v **Denících pracovních příkazů**.
 
@@ -76,7 +76,7 @@ Obsahuje-li pracovní příkaz několik úloh pracovního příkazu, můžete za
 
 6. Zadejte počet odpracovaných hodin, které mají být rozděleny v poli **Hodiny**.
 
-![Obrázek č. 2](media/02-consumption.png)
+    ![Obrázek č. 2](media/02-consumption.png)
 
 7. Klikněte na tlačítko **OK**.
 
@@ -88,10 +88,10 @@ Obsahuje-li pracovní příkaz několik úloh pracovního příkazu, můžete za
 
 Při provádění registrace spotřeby se do registrací v určitém pořadí přidají finanční dimenze související s různými typy registrací. 
 
-*Registrace hodin a výdajů:* nejprve se přidají finanční dimenze ze záhlaví deníku, pokud existují. Dále se přidají finanční dimenze z souvisejícího projektu pracovního příkazu. Nakonec se přidají finanční dimenze od zdroje (pracovník).
+- *Registrace hodin a výdajů:* nejprve se přidají finanční dimenze ze záhlaví deníku, pokud existují. Dále se přidají finanční dimenze z souvisejícího projektu pracovního příkazu. Nakonec se přidají finanční dimenze od zdroje (pracovník).
 
-*Registrace položek:* nejprve se přidají finanční dimenze ze záhlaví deníku, pokud existují. Potom se přidají finanční dimenze z souvisejícího projektu pracovního příkazu. Dále budou přidány finanční dimenze z pracoviště. Nakonec se přidají finanční dimenze z položky.
+- *Registrace položek:* nejprve se přidají finanční dimenze ze záhlaví deníku, pokud existují. Potom se přidají finanční dimenze z souvisejícího projektu pracovního příkazu. Dále budou přidány finanční dimenze z pracoviště. Nakonec se přidají finanční dimenze z položky.
 
 >[!NOTE]
->Pro všechny tři typy registrace je ověřována kombinace finančních dimenzí a neplatné kombinace jsou prázdné. Jedná se o standardní nastavení v aplikaci Finance and Operations.
+>Pro všechny tři typy registrace je ověřována kombinace finančních dimenzí a neplatné kombinace jsou prázdné. Jedná se o standardní nastavení v ostatních aplikacích Finance and Operations.
 

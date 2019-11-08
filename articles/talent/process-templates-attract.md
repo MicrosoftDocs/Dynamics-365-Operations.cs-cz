@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 694835d20e3401aaeb22aa19082a2cd0e3a0163a
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010699"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622711"
 ---
-# <a name="create-a-process-template"></a>Vytvoření šablony procesu
+# <a name="create-a-process-template-in-attract"></a>Vytvoření šablony procesu v aplikaci Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +43,7 @@ Pouze správci mohou nastavit výchozí šablonu. Výchozí šablona se použív
 
 ## <a name="create-a-process-template"></a>Vytvoření šablony procesu
 
-Správci, náboroví pracovníci a náboroví manažeři mohou vytvářet šablony procesu. Šablona procesu se skládá z *fází* a *aktivit*. Fáze seskupují dohromady jednu nebo více aktivit. Ve výchozím nastavení má každá šablona procesu aktivity Potenciální uchazeč, Žádost a Nabídka. Fáze, které obsahují tyto činnosti, lze přejmenovat. Můžete přidat další fáze výběrem **+ Nová fáze**. Aktivity můžete přidat do fáze buď jejich přetažením do příslušné fáze, nebo dvojitým kliknutím na aktivitu v seznamu aktivit.
+Správci, náboroví pracovníci a náboroví manažeři mohou vytvářet šablony procesu. Šablona procesu se skládá z *fází* a *aktivit*. Fáze seskupují dohromady jednu nebo více aktivit. Ve výchozím nastavení má každá šablona procesu aktivity Potenciální uchazeč, Žádost a Nabídka. Fáze, které obsahují tyto činnosti, lze přejmenovat. Můžete přidat další fáze výběrem **+ Nová fáze**. Aktivity můžete přidávat do fáze buď jejich přetažením do příslušné fáze, nebo dvojitým kliknutím na aktivitu v seznamu aktivit.
 
 > [!NOTE]
 > Názvy fází jsou viditelné pro kandidáty na stránce **Stav přihlášky**. Tuto skutečnost je třeba zvážit při výběru názvů fází.

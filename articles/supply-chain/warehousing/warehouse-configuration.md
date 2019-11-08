@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026709"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653411"
 ---
 # <a name="warehouse-configuration-overview"></a>Přehled konfigurace skladu
 
@@ -34,7 +34,7 @@ Tento článek popisuje konfiguraci skladu. Obsahuje informace o postupu při p
 **Poznámka:** Tento článek se vztahuje k funkcím v modulu **Řízení skladu** (pokročilé uskladnění). Nevztahuje se na funkce skladu v modulu **Řízení zásob**.
 
 ## <a name="warehouse-layout"></a>Rozvržení skladu
-Systému správy skladu v aplikaci Finance and Operations umožňuje flexibilní způsoby definování rozvržení skladu podle měnících se potřeb, aby bylo možné dosáhnout optimální efektivity skladu.
+Systému správy skladu v aplikaci Supply Chain Management umožňuje flexibilní způsoby definování rozvržení skladu podle měnících se potřeb, aby bylo možné dosáhnout optimální efektivity skladu.
 
 -   Je možné vytvořit úložné prostory vysoké a nízké priority pro optimální umístění zboží.
 -   Sklad lze rozdělit do zón a přizpůsobit je různým požadavkům na skladování, jako je například teplota či různé sazby obratu pro zboží.
@@ -42,7 +42,7 @@ Systému správy skladu v aplikaci Finance and Operations umožňuje flexibilní
 -   Umístění lze seskupit pomocí nastavení fyzických omezení kapacity.
 -   Můžete řídit způsob skladování a výdeje zboží podle pravidel definovaných dotazem.
 
-Chcete-li použít správu skladu v aplikaci Finance and Operations, musíte vytvořit skladu a povolit jej pro pokročilejší nebo specializovanější aktivity správy skladu. Na stránce **Sklady** vyberte možnost **Použít procesy správy skladu**.
+Chcete-li použít správu skladu v aplikaci Supply Chain Management, musíte vytvořit skladu a povolit jej pro pokročilejší nebo specializovanější aktivity správy skladu. Na stránce **Sklady** vyberte možnost **Použít procesy správy skladu**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Skupiny zón, zóny, typy skladových míst a skladová místa
 
@@ -54,7 +54,7 @@ V rámci procesu povolení rozvržení skladu je nutné definovat skupiny zón s
 -   **Typy skladových míst** – Logické či fyzické seskupení skladových míst ve skladu. Můžete například vytvořit typ skladového místa pro všechna přechodná skladová místa. Povinná nastavení na stránce **Parametry správy skladu** řídí proces stanovení typu přechodných skladových míst a typ konečného skladového místa.
 -   **Místa** – Nejnižší úroveň informací o skladovém místě. Místa se používají ke sledování toho, kde budou zásoby na skladě uloženy a vyzvednuty ve skladu.
 
-Entity, které vytvoříte k definování rozvržení skladu, se používají v dotazech, které nastavíte v šablonách práce a které řídí pracovní zakázky ve skladu. Proto definujte zóny, typy skladových míst a tak dále a zvažte, jak se různé oblasti ve skladu postupy používají pro různé postupy. Dále zvažte faktory, jako jsou například fyzické vlastnosti konkrétní oblasti. Například mohou existovat místa, kde lze použít pouze určitý typ vysokozdvižného vozíku. Nebo pokud vaše společnost má výrobu a hotové výrobky v rámci stejného zařízení, můžete vytvořit jeden sklad v aplikaci Finance and Operations, ale pak můžete tyto dvě operace oddělit vytvořením dvou skupin zón. Zadejte pro entity popisné názvy, aby bylo možné je snadno identifikovat při použití v dotazech šablony.
+Entity, které vytvoříte k definování rozvržení skladu, se používají v dotazech, které nastavíte v šablonách práce a které řídí pracovní zakázky ve skladu. Proto definujte zóny, typy skladových míst a tak dále a zvažte, jak se různé oblasti ve skladu postupy používají pro různé postupy. Dále zvažte faktory, jako jsou například fyzické vlastnosti konkrétní oblasti. Například mohou existovat místa, kde lze použít pouze určitý typ vysokozdvižného vozíku. Nebo pokud vaše společnost má výrobu a hotové výrobky v rámci stejného zařízení, můžete vytvořit jeden sklad v aplikaci Supply Chain Management, ale pak můžete tyto dvě operace oddělit vytvořením dvou skupin zón. Zadejte pro entity popisné názvy, aby bylo možné je snadno identifikovat při použití v dotazech šablony.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Limity skladových míst, profily skladových míst a pevná výdejní místa
 

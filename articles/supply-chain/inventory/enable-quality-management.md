@@ -3,7 +3,7 @@ title: Přehled správy kvality
 description: Toto téma popisuje, jak lze použít správu kvality v aplikaci Dynamics 365 Supply Chain Management za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce.
 author: perlynne
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ba38f9c43fed81768155a27dda88a4bfb4a7828e
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249566"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653549"
 ---
 # <a name="quality-management-overview"></a>Přehled správy kvality
 
@@ -32,7 +32,7 @@ ms.locfileid: "2249566"
 
 Toto téma popisuje, jak lze použít správu kvality v aplikaci Dynamics 365 Supply Chain Management za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce.
 
-Správa kvality pomáhá se správou doby oběhu objednávky při zpracování nevyhovujících produktů bez ohledu na místo jejich původu. Vzhledem k tomu, že typy diagnostiky jsou propojeny s vykazováním oprav, aplikace Finance and Operations může naplánovat úlohy pro nápravu problémů a zabránění jejich opakování.
+Správa kvality pomáhá se správou doby oběhu objednávky při zpracování nevyhovujících produktů bez ohledu na místo jejich původu. Vzhledem k tomu, že typy diagnostiky jsou propojeny s vykazováním oprav, aplikace Supply Chain Management může naplánovat úlohy pro nápravu problémů a zabránění jejich opakování.
 
 Kromě funkcí pro správu neshod obsahuje moduly správy kvality také funkce pro sledování problémů podle jejich typu (včetně interních potíží) a pro určování krátkodobých a dlouhodobých řešení. Statistické údaje o klíčových ukazatelů výkonnosti (KPI) nabízí náhled na historii předchozích potíží s neshodami a řešení, která byla použita k jejich nápravě. Historická data můžete použít ke kontrole účinnosti předchozích opatření pro zajištění kvality a k rozhodnutí o tom, zda tato opatření použít i v budoucnu.
 
@@ -294,6 +294,256 @@ V následující tabulce jsou uvedeny další informace o způsobu, jak lze gene
 </tbody>
 </table>
 
+## <a name="quality-order-auto-generation-examples"></a>Příklady automatického generování objednávek kvality
+
+### <a name="purchasing"></a>Nákup
+
+Pokud v nákupu nastavíte pole **Typ události** na hodnotu **Příjemka produktu** a pole **Spuštění** na **Po** na stránce **Přidružení kvality**, získáte následující výsledky: 
+
+- Pokud je možnost **Podle aktualizovaného množství** nastavená na **Ano**, objednávka kvality se vygeneruje pro každý příjem na základě nákupní objednávky podle přijatého množství a nastavení ve vzorku položky. Při každém příjmu množství na základě nákupní objednávky jsou nové objednávky kvality generovány na základě nově přijatého množství.
+- Pokud je možnost **Podle aktualizovaného množství** nastavená na **Ne**, objednávka kvality se vygeneruje pro první příjem na základě nákupní objednávky podle přijatého množství a nastavení ve vzorku položky. Dále se vytvoří jedna nebo více objednávek kvality na základě zbývajícího množství v závislosti na sledovacích dimenzích. Objednávky kvality nejsou vygenerovány pro následné příjmy s nákupní objednávkou.
+
+<table>
+<tbody>
+<tr>
+<th>Specifikace kvality</th>
+<th>Na aktualizované množství</th>
+<th>Na sledovací dimenzi</th>
+<th>Výsledek</th>
+</tr>
+<tr>
+<td>Počet procent: 10 %</td>
+<td>Ano</td>
+<td>
+<p>Číslo dávky: Ne</p>
+<p>Sériové číslo: Ne</p>
+</td>
+<td>
+<p>Množství na objednávce: 100</p>
+<ol>
+<li>Vykázat jako dokončené pro 30
+<ul>
+<li>Objednávka kvality č. 1 na 3 (10 % z 30)</li>
+</ul>
+</li>
+<li>Vykázat jako dokončené pro 70
+<ul>
+<li>Objednávka kvality č.2 na 7 (10 % ze zbývajícího množství objednávky, které se v tomto případě rovná 70)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fixní množství: 1</td>
+<td>Ne</td>
+<td>
+<p>Číslo dávky: Ne</p>
+<p>Sériové číslo: Ne</p>
+</td>
+<td>Množství na objednávce: 100
+<ol>
+<li>Vykázat jako dokončené pro 30
+<ul>
+<li>Objednávka kvality č. 1 je vytvořena pro 1 (pro první vykázané množství jako dokončené, které má pevnou hodnotu 1).</li>
+<li>Žádné další objednávky kvality nebudou vytvořeny proti zbývajícímu množství.</li>
+</ul>
+</li>
+<li>Vykázat jako dokončené pro 10
+<ul>
+<li>Nejsou vytvořeny žádné objednávky kvality.</li>
+</ul>
+</li>
+<li>Vykázat jako dokončené pro 60
+<ul>
+<li>Nejsou vytvořeny žádné objednávky kvality.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fixní množství: 1</td>
+<td>Ano</td>
+<td>
+<p>Číslo dávky: Ano</p>
+<p>Sériové číslo: Ano</p>
+</td>
+<td>
+<p>Množství na objednávce: 10</p>
+<ol>
+<li>Vykázat jako dokončené pro 3
+<ul>
+<li>Pořadí kvality č 1 pro 1 z dávky #b1, sériové #s1</li>
+<li>Pořadí kvality č 2 pro 1 z dávky #b2, sériové #s2</li>
+<li>Pořadí kvality č 3 pro 1 z dávky #b3, sériové #s3</li>
+</ul>
+</li>
+<li>Vykázat jako dokončené pro 2
+<ul>
+<li>Pořadí kvality č 4 pro 1 z dávky #b4, sériové #s4</li>
+<li>Pořadí kvality č 5 pro 1 z dávky #b5, sériové #s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Poznámka:</strong> Dávku lze znovu použít.</p>
+</td>
+</tr>
+<tr>
+<td>Fixní množství: 2</td>
+<td>Ne</td>
+<td>
+<p>Číslo dávky: Ano</p>
+<p>Sériové číslo: Ano</p>
+</td>
+<td>
+<p>Množství na objednávce: 10</p>
+<ol>
+<li>Vykázat jako dokončené pro 4
+<ul>
+<li>Pořadí kvality č 1 pro 1 z dávky #b1, sériové #s1.</li>
+<li>Pořadí kvality č 2 pro 1 z dávky #b2, sériové #s2.</li>
+<li>Pořadí kvality č 3 pro 1 z dávky #b3, sériové #s3.</li>
+<li>Pořadí kvality č 4 pro 1 z dávky #b4, sériové #s4.</li>
+<li>Žádné další objednávky kvality nebudou vytvořeny proti zbývajícímu množství.</li>
+</ul>
+</li>
+<li>Vykázat jako dokončené pro 6
+<ul>
+<li>Nejsou vytvořeny žádné objednávky kvality.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+### <a name="production"></a>Výroba
+
+Pokud ve výrobě nastavíte pole **Typ události** na hodnotu **Vykázat jako dokončené** a pole **Spuštění** na **Po** na stránce **Přidružení kvality**, získáte následující výsledky:
+
+- Pokud je možnost **Podle aktualizovaného množství** nastavená na **Ano**, objednávka kvality se vygeneruje podle každého dokončeného množství a nastavení ve vzorku položky. Při každém vykázání množství jako dokončeného na základě výrobní zakázky jsou nové objednávky kvality generovány na základě nově dokončeného množství. Tato logika generování je konzistentní s nákupem.
+- Pokud je možnost **Podle aktualizovaného množství** nastavená na **Ne**, objednávka kvality se vygeneruje při přvní vykázání množství jako dokončeného na základě dokončeného množství. Dále se vytvoří jedna nebo více objednávek kvality na základě zbývajícího množství v závislosti na sledovacích dimenzích vzorku položky. Objednávky kvality nejsou vygenerovány pro následná dokončená množství.
+
+<table>
+<tbody>
+<tr>
+<th>Specifikace kvality</th>
+<th>Na aktualizované množství</th>
+<th>Na sledovací dimenzi</th>
+<th>Výsledek</th>
+</tr>
+<tr>
+<td>Počet procent: 10 %</td>
+<td>Ano</td>
+<td>
+<p>Číslo dávky: Ne</p>
+<p>Sériové číslo: Ne</p>
+</td>
+<td>
+<p>Množství na objednávce: 100</p>
+<ol>
+<li>Vykázat jako dokončené pro 30
+<ul>
+<li>Objednávka kvality č. 1 na 3 (10 % z 30)</li>
+</ul>
+</li>
+<li>Vykázat jako dokončené pro 70
+<ul>
+<li>Objednávka kvality č.2 na 7 (10 % ze zbývajícího množství objednávky, které se v tomto případě rovná 70)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fixní množství: 1</td>
+<td>Ne</td>
+<td>
+<p>Číslo dávky: Ne</p>
+<p>Sériové číslo: Ne</p>
+</td>
+<td>Množství na objednávce: 100
+<ol>
+<li>Vykázat jako dokončené pro 30
+<ul>
+<li>Objednávka kvality č. 1 pro 1 (pro první vykázané množství jako dokončené, které má pevnou hodnotu 1)</li>
+<li>Objednávka kvality č. 2 pro 1 (pro zbývající množství, které má stabilně pevnou hodnotu 1)</li>
+</ul>
+</li>
+<li>Vykázat jako dokončené pro 10
+<ul>
+<li>Nejsou vytvořeny žádné objednávky kvality.</li>
+</ul>
+</li>
+<li>Vykázat jako dokončené pro 60
+<ul>
+<li>Nejsou vytvořeny žádné objednávky kvality.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fixní množství: 1</td>
+<td>Ano</td>
+<td>
+<p>Číslo dávky: Ano</p>
+<p>Sériové číslo: Ano</p>
+</td>
+<td>
+<p>Množství na objednávce: 10</p>
+<ol>
+<li>Vykázat jako dokončené pro 3: 1 pro #b1, #s1; 1 pro #b2, #s2 a 1 pro #b3, #s3
+<ul>
+<li>Pořadí kvality č 1 pro 1 z dávky #b1, sériové #s1</li>
+<li>Pořadí kvality č 2 pro 1 z dávky #b2, sériové #s2</li>
+<li>Pořadí kvality č 3 pro 1 z dávky #b3, sériové #s3</li>
+</ul>
+</li>
+<li>Vykázat jako dokončené pro 2:1 pro #b4, #s4 a 1 pro #b5, #s5
+<ul>
+<li>Pořadí kvality č 4 pro 1 z dávky #b4, sériové #s4</li>
+<li>Pořadí kvality č 5 pro 1 z dávky #b5, sériové #s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Poznámka:</strong> Dávku lze znovu použít.</p>
+</td>
+</tr>
+<tr>
+<td>Fixní množství: 2</td>
+<td>Ne</td>
+<td>
+<p>Číslo dávky: Ano</p>
+<p>Sériové číslo: Ano</p>
+</td>
+<td>
+<p>Množství na objednávce: 10</p>
+<ol>
+<li>Vykázat jako dokončené 4: 1 pro #b1, #s1; 1 pro #b2, #s2; 1 pro #b3, #s3 a 1 pro #b4, #s4
+<ul>
+<li>Pořadí kvality č 1 pro 1 z dávky #b1, sériové #s1</li>
+<li>Pořadí kvality č 2 pro 1 z dávky #b2, sériové #s2</li>
+<li>Pořadí kvality č 3 pro 1 z dávky #b3, sériové #s3</li>
+<li>Pořadí kvality č 4 pro 1 z dávky #b4, sériové #s4</li>
+</ul>
+<ul>
+<li>Objednávka kvality #5 pro 2, bez reference na dávku a sériové číslo</li>
+</ul>
+</li>
+<li>Vykázat jako dokončené pro 6: 1 pro #b5, #s5; 1 pro #b6, #s6; 1 pro #b7, #s7; 1 pro #b8, #s8; 1 pro #b9, #s9 a 1 pro #b10, #s10
+<ul>
+<li>Nejsou vytvořeny žádné objednávky kvality.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## <a name="quality-management-pages"></a>Stránky modulu Správa kvality
 <table>
 <colgroup>
@@ -303,7 +553,7 @@ V následující tabulce jsou uvedeny další informace o způsobu, jak lze gene
 </colgroup>
 <thead>
 <tr class="header">
-<th>Strana</th>
+<th>Stránka</th>
 <th>Popis</th>
 <th>Příklad</th>
 </tr>

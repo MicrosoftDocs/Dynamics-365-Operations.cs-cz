@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 4c9a2fee7d43142f8bb17f4e819c9949a2a20c41
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922015"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570023"
 ---
 # <a name="maintenance-rounds"></a>Pořadí údržby
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 V modulu **Správa majetku** můžete vytvořit pořadí údržby pro různé položky majetku, u kterých je třeba v pravidelných intervalech provádět podobné úkoly. Například úlohy namazání nebo úlohy bezpečnostní prohlídky, které je třeba provést na několika strojích ve stejných intervalech. Prvním krokem je vytvoření pořadí údržby, včetně majetku, který vyžaduje stejný formulář práce údržby. Dále naplánujete pořadí údržby. Po vytvoření rozvrhu pořadí údržby můžete zobrazit všechny záznamy úloh, které se týkají pořadí, v částech **Všechny rozvrhy údržby** a **Otevřené řádky rozvrhu údržby**.
 
