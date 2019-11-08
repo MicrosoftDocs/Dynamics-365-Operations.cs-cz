@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660038060826ade9301e50143e49b53ba3fcd3ab
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f96fcc7ebb8928c6d6b17b30465ad1625d9b5be4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783129"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571063"
 ---
-# <a name="asset-criticalities"></a>Typy kritičnosti
+# <a name="asset-criticality-types"></a>Typy kritičnosti majetku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Téma vysvětluje typy kritičnosti majetku v modulu Správa majetku. Kritičnost majetku se vztahuje k majetku a je převedena na pracovní příkazy. Nelze ji změnit v pracovním příkazu. Kritičnost majetku se používá k výpočtu kritičnosti pracovního příkazu během plánování pracovního příkazu. Jinými slovy, používá se k výpočtu míry, do jaké ovlivňuje práce údržby na majetku plán výroby a produktivitu vaší firmy. Další informace o nastavení, které souvisí s výpočtem skóre hodnocení pro plánování pracovních příkazů, naleznete v tématu [Parametry Správy majetku](../setup-for-objects/enterprise-asset-management-parameters.md).
 
@@ -43,7 +43,7 @@ Chcete-li nastavit kritičnost, nejprve vytvořte typy kritičnosti, které by m
 4. V poli **Název** zadejte název typu kritičnosti.
 5. Do pole **Faktor** zadejte faktor. Tento faktor se používá při výpočtu plánování pracovních příkazů k určení záznamu kritičnosti, který by měl být použit. (Záznam s nejvyšším faktorem je vždy použit.) Toto nastavení je důležité, pokud, jak je znázorněno na následujícím obrázku, jsou vytvořeny řádky kritičnosti, které mají stejnou hodnotu kritičnosti.
 
-    ![Obrázek č. 1](media/23-setup-for-objects.png)
+    ![Stránky Typy kritických záležitostí](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Nastavení kritičnosti majetku
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 7fc9ec2f6a9a8a11d824e4b5c13d5aa173541454
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024630"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571914"
 ---
 # <a name="create-maintenance-requests"></a>Vytvoření požadavků na údržbu
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Požadavky na údržbu lze použít, pokud pracovníci údržby nebo výrobní pracovníci zjistí, že zařízení vyžaduje opravu, ale opravu nelze provést ihned.
 
@@ -55,7 +55,7 @@ Požadavky na údržbu lze použít, pokud pracovníci údržby nebo výrobní p
 11. Do pole **Poznámky** zadejte libovolné další požadované poznámky.
 12. Vyberte **OK**.
 
-![Obrázek č. 1](media/03-manage-maintenance-requests.png)
+![Vytvořit požadavek na údržbu](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Následné zpracování požadavků na údržbu
 
@@ -70,7 +70,7 @@ V zobrazení podrobností lze aktualizovat různé informace. Několik příklad
 - Vyberte typ práce údržby, a pokud jsou tyto informace relevantní, pak příslušnou variantu údržby a odvětví práce.
 - Do polí **zeměpisná šířka** a **Zeměpisná délka** zadejte zeměpisné souřadnice. Všechny souřadnice přidané k požadavku na údržby jsou automaticky převedeny do související pracovní objednávky. 
 
-![Obrázek č. 2](media/04-manage-maintenance-requests.png)
+![Aktualizace požadavku na údržbu](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Pokud při vytváření požadavku na údržbu vyberete určitý majetek, můžete k majetku přidat jednu chybu. Po vytvoření požadavku na údržbu můžete podle potřeby přidat další chyby. Pokud chcete přidat chyby, vyberte **Chyba majetku** na stránce **Všechny požadavky na údržbu**.

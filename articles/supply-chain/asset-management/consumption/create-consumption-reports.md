@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3d978f8b991211e477dd8f766fe67432d9d493d0
-ms.sourcegitcommit: c0b581e4c647b6c47bc14d1d7bfe267832afecba
+ms.openlocfilehash: eecfb101af9a91f515aab221181c54d53e358a68
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1913076"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652418"
 ---
 # <a name="create-consumption-reports"></a>Vytvoření sestav spotřeby
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Pokud jste vytvořili a zaúčtovali registrace spotřeby na pracovních příkazech ve správě majetku, budou k dispozici dvě sestavy pro zobrazení podrobností o spotřebě.
 
@@ -40,9 +40,14 @@ Pokud jste zaúčtovali spotřebu v pracovních příkazech, můžete vytisknout
 
 1. Klikněte na **Správa majetku** > **Sestavy** > **Majetek** > **Spotřeba majetku**.
 
-2. V dialogovém okně **Spotřeba majetku** vyberte parametry a úroveň podrobností, které chcete zobrazit, výběrem možnosti Ano na příslušných přepínačích a vložením úrovně funkčního místa do sekce **Zobrazit**.
-    - V poli **Úrovně** určete, jak detailní mají být řádky majetku v případě funkčních míst. Pokud například do pole zadáte číslo „1“ a máte strukturu funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny majetky pro funkční místo, a proto lze řádek navýšit z funkčních míst na nižší úrovni. Pokud do pole **Úrovně** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechnymajetky na všech úrovních funkčních míst, ke kterým se vztahují. 
-    - Chcete-li zobrazit součty jednotlivých dílčích majetků v sestavě, vyberte možnost Ano na přepínači **Součet na veškerém dílčím majetku**.
+2. V dialogovém okně **Spotřeba majetku** vyberte parametry a úroveň podrobností, které chcete zobrazit, výběrem možnosti **Ano** na příslušných přepínačích a vložením úrovně funkčního místa do sekce **Zobrazit**.
+    - V poli **Úrovně** určete, jak detailní mají být řádky majetku v případě funkčních míst. 
+    
+        Pokud například do pole zadáte číslo „1“ a máte strukturu funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny majetky pro funkční místo, a proto lze řádek navýšit z funkčních míst na nižší úrovni. 
+        
+        Pokud do pole **Úrovně** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechnymajetky na všech úrovních funkčních míst, ke kterým se vztahují. 
+        
+    - Chcete-li zobrazit součty jednotlivých dílčích majetků v sestavě, vyberte možnost **Ano** na přepínači **Součet na veškerém dílčím majetku**.
 
 3. V části **Data** vyberte časový interval.
 
@@ -59,7 +64,7 @@ Pokud jste zaúčtovali spotřebu v pracovních příkazech, můžete vytisknout
 
 1. Klikněte na možnost **Správa majetku** > **Sestavy** > **Pracovní příkazy** > **Spotřeba pracovních příkazů**.
 
-2. V dialogovém okně **Spotřeba pracovního příkazu** vyberte parametry, které chcete zahrnout do sestavy, výběrem možnosti Ano v příslušných přepínacích tlačítkách v části **Zobrazit.**
+2. V dialogovém okně **Spotřeba pracovního příkazu** vyberte parametry, které chcete zahrnout do sestavy, výběrem možnosti **Ano** v příslušných přepínacích tlačítkách v části **Zobrazit**.
 
 3. V části **Data** vyberte časový interval.
 

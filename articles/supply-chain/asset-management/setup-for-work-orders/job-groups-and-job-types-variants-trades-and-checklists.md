@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249602"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570994"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Typ majetku je připojen ke každému majetku. Typy majetku definují typy práce údržby (a tudíž i práce údržby), které lze provést na majetku. Při vytvoření pracovního příkazu musíte vybrat typ práce údržby. Můžete vybrat pouze typy prací údržby, které souvisí s nastavením typu majetku použitém pro daný majetek.
 
@@ -59,7 +59,7 @@ Nejprve nastavíte požadované kategorie typů práce údržby, varianty typů 
 
     Po přidružení kategorií typů práce údržby k typům práce údržby se v poli **Typy práce** zobrazí počet typů práce údržby, které se vztahují k této kategorii typů práce údržby.
 
-![Obrázek č. 1](media/01-setup-for-work-orders.png)
+![Stránka Kategorie typu práce údržby](media/01-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type-variant"></a>Vytvoření varianty typu práce údržby
 
@@ -73,7 +73,7 @@ Nejprve nastavíte požadované kategorie typů práce údržby, varianty typů 
 
     Na záložce s náhledem **Podrobnosti** zobrazuje pole **Typy práce** počet typů prací údržby, které byly přidány do této varianty typu práce údržby.
 
-![Obrázek č. 2](media/02-setup-for-work-orders.png)
+![Stránka Varianty typu práce údržby](media/02-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-trade"></a>Vytvoření oboru práce údržby
 
@@ -94,7 +94,7 @@ Nejprve nastavíte požadované kategorie typů práce údržby, varianty typů 
 
     Na záložce s náhledem **Podrobnosti** zobrazuje pole **Certifikáty** počet certifikátů, které byly přidány do tohoto oboru práce údržby.
 
-![Obrázek č. 3](media/03-setup-for-work-orders.png)
+![Stránka Vytvoření oboru práce údržby](media/03-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-variable"></a>Vytvoření proměnné kontrolního seznamu údržby
 
@@ -115,7 +115,7 @@ Když vytváříte řádky kontrolního seznamu údržby ve výchozím nastaven�
 6. V poli **Hodnota** zadejte popis hodnoty.
 7. V poli **Výsledek** vyberte pro řádek výsledek.
 
-![Obrázek č. 4](media/04-setup-for-work-orders.png)
+![Stránka Proměnné kontrolního seznamu údržby](media/04-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-template"></a>Vytvoření šablony kontrolního seznamu údržby
 
@@ -144,7 +144,7 @@ Když vytváříte řádky kontrolního seznamu údržby ve výchozím nastaven�
 
     Na záložce s náhledem **Podrobnosti** zobrazuje pole **Kontroly** celkový počet řádků kontrolního seznamu ve vaší šabloně. Toto číslo zahrnuje vnořené řádky v jakékoli existující šabloně, na kterou jste odkazovali ve své šabloně.
 
-![Obrázek č. 5](media/05-setup-for-work-orders.png)
+![Stránka Šablona kontrolního seznamu údržby](media/05-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type"></a>Vytvoření typu práce údržby
 
@@ -167,7 +167,7 @@ Když vytváříte řádky kontrolního seznamu údržby ve výchozím nastaven�
 
 11. Na záložce s náhledem **Typy majetku** můžete k typu práce údržby přidat typy majetku.
 
-![Obrázek č. 6](media/06-setup-for-work-orders.png)
+![Stránka Typy práce údržby](media/06-setup-for-work-orders.png)
 
 ## <a name="create-maintenance-job-type-default-lines-and-related-forecasts-maintenance-checklists-tools-description-and-attachments"></a>Vytvoření výchozích řádků typu práce údržby a související prognózy, kontrolní seznamy údržby, nástroje, popis a přílohy
 
@@ -236,7 +236,7 @@ Když vytváříte řádky kontrolního seznamu údržby ve výchozím nastaven�
 31. Chcete-li zkopírovat výchozí typ práce údržby do jiného typu práce údržby, vyberte výchozí řádek typu práce údržby, do kterého se má kopírovat další nastavení, vyberte možnost, **Kopírovat nastavení** a poté vyberte výchozí typ práce údržby, který chcete kopírovat.
 32. Chcete-li zobrazit seznam majetku, plánů údržby nebo pořadí údržby, které aktuálně používají výchozí řádek typu práce údržby, vyberte tento řádek a pak vyberte položku **Používá**.
 
-![Obrázek č. 7](media/07-setup-for-work-orders.png)
+![Stránka Výchozí hodnoty typu práce údržby](media/07-setup-for-work-orders.png)
 
 Když systém vybere dostupný výchozí typ práce údržby, který se má použít na řádku pracovního příkazu, výběr bude založen na majetku a na nastavení souvisejícího typu majetku. Správa majetku projde všechny výchozí záznamy typu práce údržby, které souvisejí s typem práce údržby, který souvisí s typem majetku a zkontroluje možné shody. Vždy zkontroluje nejdříve nejkonkrétnější kombinaci. Jinými slovy, aby bylo možné najít co nejkonkrétnější kombinace, modul Správa majetku nejprve zkontroluje možné shody v poli **Obor**. Pokud není nalezena shoda, zkontroluje shodu v poli **Varianta typu práce údržby**. Pokud není nalezena žádná shoda, aplikace hledá shodu pro pole **Typ práce údržby** a tak dále (**Obor**, poté **Varianta typu práce údržby**, poté **Typ práce údržby**, poté **Majetek**, poté **Model**, poté **Výrobce** a poté **Typ majetku**). Není-li nalezena žádná shoda, použije se výchozí záznam, v němž je vybrán pouze typ práce údržby.
 
@@ -257,7 +257,7 @@ Po vytvoření požadovaných výchozích kombinací typů práce údržby můž
 4. Výběrem kombinace typů práce údržby zobrazíte související nastavení pro kontrolní seznamy údržby, prognózy a nástroje. V části **Podrobnosti** na záložce s náhledem **Výchozí nastavení typu práce údržby** se zobrazuje počet souvisejících kontrolních seznamů údržby, prognózované hodiny, položky atd., které souvisejí s vybranou kombinací typů práce údržby.
 5. Chcete-li zobrazit podrobnosti pro vybraný typ práce údržby, vyberte možnost **Typy práce údržby**.
 
-![Obrázek č. 8](media/08-setup-for-work-orders.png)
+![Stránka Typy práce údržby](media/08-setup-for-work-orders.png)
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Automatická aktualizace prognóz typu práce údržby
 

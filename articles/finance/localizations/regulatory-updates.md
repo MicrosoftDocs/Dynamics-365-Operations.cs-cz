@@ -3,7 +3,7 @@ title: Povinné aktualizace
 description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 10/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dc5a9669a9c6c298a4f9df52346b8a075ba177e0
-ms.sourcegitcommit: a4e1a28b4733f3356e5a2237c8ba5d93f9799391
+ms.openlocfilehash: adb88a5fb79b24a26aa2976464d3e838922322c6
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2517304"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653197"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -28,9 +28,7 @@ ms.locfileid: "2517304"
 
 V tomto tématu je uveden seznam povinných aktualizací, které jsou plánovány a vydány v podporovaných lokalizacích Dynamics 365 Finance. Doby dodání se mohou změnit a plánované funkce mohou být jiné nebo nemusí být vydány. Další informace uvádějí [Zásady společnosti Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Povinné aktualizace jsou funkce, které jsou implementovány k podpoře nových nebo změněných legislativ specifických pro zemi. Další informace o plánovaných a vydaných funkcích specifických pro zemi uvádějí následující zdroje:
-- [Poznámky k verzi Dynamics 365 a Power Platform](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Co je nového v Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
+Povinné aktualizace jsou funkce, které jsou implementovány k podpoře nových nebo změněných legislativ specifických pro zemi. Další informace o plánovaných a vydaných funkcích specifických pro zemi uvádějí následující zdroje [Dynamics 365 and Power Platform release plans](https://docs.microsoft.com/business-applications-release-notes/index).
 
 Microsoft se snaží implementovat nové legislativní požadavky co nejdříve. Skutečný termín dodání závisí na datu oznámení zákona, dostupnosti podrobností o požadavcích od místních úřadů, dostupnosti validačních nástrojů a na velikosti a složitosti změny.
 
@@ -44,13 +42,19 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 
 |Plánované datum vydání|Verze vydání|Země|Povinná aktualizace|
 |--------------------|---------------|-------|-------|
-|      Srpen 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazílie      |   Nová verze technických poznámek pro NF-e: NT 2019.001 verze 1.10    |
-|      Srpen 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazílie      |   Nová verze technických poznámek pro NF-e: NT 2019.001 verze 1.20    |
-|      Srpen 2019          |   10.0.6 (PEAP)      | Brazílie      |   Prohlášení SC DRCST   |
-|      Srpen 2019          |   10.0.6(PEAP), 10.0.5HF      | Brazílie     |   Nové právní předpisy jsou implementovány prostřednictvím konektoru RJ, který se týká EFD-ICMS/IPI. Implementace 13/19 v rámci Rio de Janeiro (RJ) je určena pro zvláštní postupy, které je třeba použít pro Exoneration     |
-|      Srpen 2019          |   10.0.6 (PEAP)      | Brazílie      |   Daňový výkaz CAT 42/18    |
-|      Srpen 2019          |   10.0.6 (PEAP)      | Itálie      |   Změny ve správě DPH podle D.L. 119 z 23. října 2018 Dynamics 365 for Finance and Operations v. 10.0.6  |
-|      Srpen 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japonsko      |   Byla zavedena změna sazby spotřební daně a snížená daňová sazba.    |
+|      Listopad 2019          |   10.0.7 (PEAP)      | Itálie      |   Změny ve správě DPH podle D.L. 119 z 23 října 2019: čtvrtletní sdělení o DPH ("Lipe 2018")    |
+|      Listopad 2019          |   10.0.7 (PEAP)      | Itálie      |   Maloobchod - správa informací o odběrateli v POS |
+|      Listopad 2019          |   10.0.7 (PEAP)      | Itálie      |   Maloobchod – tisk informací o odběrateli ve fiskální příjemce | 
+|      Listopad 2019          |   10.0.7 (PEAP)      | Japonsko      |   Byla zavedena změna sazby spotřební daně a snížená daňová sazba (rozvržení faktury) | 
+|      Listopad 2019          |   10.0.7 (PEAP)      | Mexiko      |   Aktualizace pravidla 2.7.2.9 – použití časového pásma zařízení, které vydává dokument algoritmus CFDI. | 
+|      Listopad 2019          |   10.0.7 (PEAP)      | Velká Británie     |   Vytváření daňových digitálních vratek-DPH vytvoření sestavy pro společnosti, které jsou považovány za skupinu DPH v rámci stejné systémové databáze v. 10 | 
+|      Listopad - srpen 2019          |   10.0.7(PEAP), 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazílie      |   Nová verze technických poznámek pro NF-e: NT 2019.001 verze 1.20    |
+|      Listopad - srpen 2019          |   10.0.7(PEAP), 10.0.6      | Brazílie      |   Prohlášení SC DRCST   |
+|      Listopad - srpen 2019          |   10.0.7(PEAP), 10.0.6      | Itálie      |   Změny ve správě DPH podle D.L. 119 ze 23 zámořských zemí a území 2018 - Dynamics 365 for Finance and Operations  |
+|      Srpen 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazílie      |   Nová verze technických poznámek pro NF-e: NT 2019.001 verze 1.10    |
+|      Srpen 2019          |   10.0.6, 10.0.5HF      | Brazílie     |   Nové právní předpisy jsou implementovány prostřednictvím konektoru RJ, který se týká EFD-ICMS/IPI. Implementace 13/19 v rámci Rio de Janeiro (RJ) je určena pro zvláštní postupy, které je třeba použít pro Exoneration     |
+|      Srpen 2019          |   10.0.6      | Brazílie      |   Daňový výkaz CAT 42/18    |
+|      Srpen 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japonsko      |   Byla zavedena změna sazby spotřební daně a snížená daňová sazba.    |
 |      Srpen až červenec 2019          |   10.0.5, 10.0.4HF, 10.0.3HF      | Španělsko      |   Španělsko: SII: Ověřovací pravidla se mění od 1. října 2019    |
 |      Červenec 2019          |   10.0.5, 10.0.4HF, 10.0.2HF      | Brazílie      |   Nová verze technických poznámek pro NF-e: NT 2019.001 verze 1.00  |
 |      Červenec 2019          |   10.0.5      | Brazílie      |   Sped příspěvky – praktické pokyny 1.31. nové pokyny    |
@@ -66,7 +70,7 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 |      2019. duben          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brazílie     |   SPED ECD Layout 7    |
 |      2019. duben          |   10.0.3      | Brazílie      |   SPED ECF - rozvržení 5 pro 2019    |
 |      2019. duben          |   10.0.3      | Indie      |   Úprava daně v celní měně v SMN namísto provedení v měně transakce    |
-|      2019. duben          |   10.0.3      | Indie      |   Výpočet daně v celní měně v SMN namísto provedení v měně transakce    |
+|      2019. duben          |   10.0.3      | Indie      |   Výpočet daně v celní měně v SMN namísto provedení v měně transakce   |
 |      2019. duben          |   10.0.3, 10.02HF, 10.0.1HF      | Indie      |   Změna verze formátu IEC    |
 |      2019. duben          |   10.0.3      | Litva      |   Lotyšsko.SAF sestava umožňuje uživateli definovat systémové kódy DPH spolu s legálními kódy daně)    |
 |      2019. duben          |   10.0.3      | Polsko      |   SAF faktury (JPK_FA) v. 2 od 1. července 2019    |

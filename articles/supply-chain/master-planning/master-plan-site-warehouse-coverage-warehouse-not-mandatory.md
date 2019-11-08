@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45796049cddef137eb2ca1e4331197e4b4a65071
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 34a1a2cec9f86932fe2de9f3886059621903b262
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546287"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578165"
 ---
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a>Hlavní plánování pro disponibilitu pracoviště a skladu, sklad není povinný
 
@@ -45,9 +45,6 @@ Následující obrázek ilustruje postup hlavního plánování. V obrázku jsou
 -   Výchozí typ objednávky je nastaven na možnost Výroba, Nákupní objednávka nebo Kanban. Klikněte na možnosti **Řízení informací o produktech &gt; Produkty&gt; Uvolněné produkty**. Zvolte položku a poté v podokně Akce na kartě **Plán** klikněte na možnost **Výchozí nastavení objednávky**. Ve formuláři **Výchozí nastavení objednávky** zkontrolujte pole **Výchozí typ objednávky**.
 
 ![Požadavek na pracoviště a sklad, sklad není](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousenotmandatory.jpg)
-
-
--
 
 
 

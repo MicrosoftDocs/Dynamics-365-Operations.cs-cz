@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 828de71da3f16db9024b08c724eb784127b080dc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d9db36b528de097aae613a5fbf5ee94f4cc79a0f
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176905"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553156"
 ---
 # <a name="human-resources-overview"></a>Přehled lidských zdrojů
 
@@ -45,9 +45,9 @@ Modul Lidské zdroje lze použít k těmto úkolům:
 
 Při práci s lidskými zdroji budete rozhodovat o tom, jak nastavit strukturu organizace pomocí prvků, jako jsou oddělení, práce a pozice. Ty patří mezi základní prvky, které budete konfigurovat v lidských zdrojích. Jednotliví zaměstnanci se přiřazují k pozicím, které jsou přidruženy k pracím.
 
-- [Uspořádání zaměstnanců podle oddělení, prací a pozic](../../talent/departments-jobs-positions.md)
-- [Nastavení parametrů lidských zdrojů pro konkrétní společnost](../../talent/set-up-company-specific-hr-parameters.md)
-- [Nastavení parametrů lidských zdrojů mezi právnickými osobami](../../talent/set-up-hr-parameters-across-legal-entities.md)
+- [Uspořádání zaměstnanců podle oddělení, prací a pozic](../../../talent/departments-jobs-positions.md)
+- [Nastavení parametrů lidských zdrojů pro konkrétní společnost](../../../talent/set-up-company-specific-hr-parameters.md)
+- [Nastavení parametrů lidských zdrojů mezi právnickými osobami](../../../talent/set-up-hr-parameters-across-legal-entities.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Nábor, zařazení a motivace zaměstnanců
 
@@ -58,25 +58,25 @@ Náborové projekty slouží ke správě obsahu použitého v reklamě na otevř
 
 Poté, co jste přijali zaměstnance, můžete nastavit plány pro efektivní a spravedlivé řízení kompenzací, stejně jako správu položek, jako jsou počítače nebo telefony, které organizace poskytuje zaměstnancům. Je možné vytvářet pevné a variabilní plány kompenzace, jakož i definovat pravidla týkající se plánu kompenzace, která splňují kritéria pro tento plán.
 
-- [Plány kompenzace](../../talent/compensation-plans.md)
-- [Vytvoření plánů fixní kompenzace](../../talent/create-fixed-compensation-plans.md)
-- [Vytvoření plánů variabilní kompenzace](../../talent/create-variable-compensation-plans.md)
+- [Plány kompenzace](../../../talent/compensation-plans.md)
+- [Vytvoření plánů fixní kompenzace](../../../talent/create-fixed-compensation-plans.md)
+- [Vytvoření plánů variabilní kompenzace](../../../talent/create-variable-compensation-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Vytvoření pracovních pozic zaměstnanců a jejich zaškolení
 
 Chcete-li pomoci svým zaměstnancům dosáhnout svých kariérních cílů a přitom poskytovat kritické obchodní potřeby, můžete nastavit cíle, vytvořit hodnocení výkonu a sledovat zpětnou vazbu. Abyste pomohli zaměstnancům rozvíjet potřebné schopnosti, můžete nastavit instruktory, typy kurzů, kurzy, popisy kurzů, agendy, cvičení a relace před přiřazením instruktora ke kurzu nebo registrací osoby do kurzu. Instruktoři musí již existovat jako pracovníci, uchazeči nebo kontakty.
 
-- [Řízení výkonnosti](../../talent/performance-management-overview.md)
-- [Sladění dovedností zaměstnanců s potřebami společnosti](../../talent/skills.md)
-- [Správa školení prostřednictvím kurzů](../../talent/courses.md)
+- [Řízení výkonnosti](../../../talent/performance-management-overview.md)
+- [Sladění dovedností zaměstnanců s potřebami společnosti](../../../talent/skills.md)
+- [Správa školení prostřednictvím kurzů](../../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Vytvoření a správa výhod
 
 Kromě kompenzací zaměstnanců skrze mzdy, platy a odměny můžete vyvíjet programy zaměstnaneckých výhod, jako je zdravotní pojištění a důchodové plány. Můžete také spravovat výhody, jako jsou například výpůjčky, ve kterých vaše společnost poskytuje svým zaměstnancům věci, jako jsou počítače nebo telefony, .
 
-- [Správa programu zaměstnaneckých výhod](../../talent/manage-benefit-program.md)
-- [Zásady způsobilosti k zaměstnaneckým výhodám](../../talent/benefit-eligibility-policies.md)
-- [Správa položek půjčených zaměstnancům](../../talent/loan-items.md)
+- [Správa programu zaměstnaneckých výhod](../../../talent/manage-benefit-program.md)
+- [Zásady způsobilosti k zaměstnaneckým výhodám](../../../talent/benefit-eligibility-policies.md)
+- [Správa položek půjčených zaměstnancům](../../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Zachování bezpečnosti na pracovišti a dodržování předpisů
 
@@ -90,7 +90,7 @@ Microsoft Dynamics AX umožňuje udržovat bezpečné pracovní prostředí, kte
 
 Můžete navrhovat a rozdávat dotazníky, které slouží ke shromažďování informací pro různé účely. Funkce Dotazník umožňuje navrhovat a vytvářet dotazníky. Když je dotazník připraven, můžete jej distribuovat k vyplnění plošně nebo určité sadě respondentů. Poté, co respondenti poskytnou své odpovědi, můžete zobrazit a analyzovat výsledky.
 
-- [Dotazníky](../../talent/questionnaires.md)
-- [Návrh dotazníku](../../talent/design-questionnaires.md)
-- [Distribuce a vyplnění dotazníku](../../talent/distribute-questionnaires.md)
-- [Zobrazení a vyhodnocení výsledků dotazníku](../../talent/evaluate-questionnaire-results.md)
+- [Dotazníky](../../../talent/questionnaires.md)
+- [Návrh dotazníku](../../../talent/design-questionnaires.md)
+- [Distribuce a vyplnění dotazníku](../../../talent/distribute-questionnaires.md)
+- [Zobrazení a vyhodnocení výsledků dotazníku](../../../talent/evaluate-questionnaire-results.md)

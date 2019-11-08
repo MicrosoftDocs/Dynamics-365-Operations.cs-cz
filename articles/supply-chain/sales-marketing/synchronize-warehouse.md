@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 94fb6720152cbf6aec58d2b8d9d02fc5343c05e2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: b55a0b9e54eabdcdbd3f858cf3725b8fe833f65d
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251171"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653387"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Synchronizace skladů z aplikace Supply Chain Management do služby Field Service
 
@@ -52,14 +52,14 @@ Následující šablona a základní úlohy se používají k synchronizaci skla
 Sklady vytvořené a spravované v aplikaci Supply Chain Management lze synchronizovat se službu Field Service prostřednictvím projektu integrace dat Common Data Service (CDS). Požadované sklady, které chcete synchronizovat do služby Field Service, je možné v projektu řídit pomocí funkce filtrování a pokročilých dotazů. Sklady, které se synchronizují z aplikace Supply Chain Management, jsou vytvořeny ve službě **Field Service, kde je pole Je spravováno externě** nastaveno na **Ano** a záznam je určen pouze pro čtení.
 
 ## <a name="field-service-crm-solution"></a>Řešení Field Service CRM
-K podpoře integrace mezi moduly Field Service a Finance and Operations jsou požadovány další funkce z řešení služby CRM Field Service. V řešení bylo pole **Je externě udržováno** přidáno do entity **Sklad (msdyn_warehouses)**. Toto pole napomáhá identifikovat, zda je sklad řízen z aplikace Supply Chain Management nebo zda existuje pouze ve službě Field Service. Nastavení tohoto pole zahrnuje:
+K podpoře integrace mezi Field Service a Supply Chain Management jsou požadovány další funkce z řešení služby CRM Field Service. V řešení bylo pole **Je externě udržováno** přidáno do entity **Sklad (msdyn_warehouses)**. Toto pole napomáhá identifikovat, zda je sklad řízen z aplikace Supply Chain Management nebo zda existuje pouze ve službě Field Service. Nastavení tohoto pole zahrnuje:
 - **Ano** – Sklad pochází z aplikace Supply Chain Management a nebude ho možné upravovat v aplikaci Sales.
 - **Ne** – Sklad byl zadán přímo do služby Field Service a je zde udržován.
 
 Pole **Je externě spravován** pomáhá řídit synchronizaci úrovní zásob, úprav, převody a použití u pracovních příkazů. Pouze sklady se stavem **Je externě spravován** je nastaveno na **Ano** lze použít k synchronizaci přímo ke stejnému skladu v jiném systému. 
 
 > [!NOTE]
-> Poznámka: Je možné vytvořit více skladů ve službě Field Service (pomocí **Je externě spravován** = Ne) a poté je namapovat do jediného skladu v aplikaci Finance and Operations pomocí funkce filtrování a pokročilých dotazů. Používá se v situacích, kdy si přejete, aby služba Field Service spravovala podrobné informace o zásobách a jen odesílala aktuální informace do aplikace Finance and Operations. V tomto případě neobdrží služba Field Service aktualizace úrovně zásob z aplikace Finance and Operations. Další informace získáte v části [Synchronizace skladových úprav z aplikace Field Service do Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) and [Synchronizace pracovních příkazů z Field Service na prodejní objednávky navázané na projekt ve Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Poznámka: Je možné vytvořit více skladů ve službě Field Service (pomocí **Je externě spravován** = Ne) a poté je namapovat do jediného skladu pomocí funkce filtrování a pokročilých dotazů. Používá se v situacích, kdy si přejete, aby služba Field Service spravovala podrobné informace o zásobách a jen odesílala aktuální informace do aplikace Supply Chain Management. V tomto případě neobdrží služba Field Service aktualizace úrovně zásob z aplikace Supply Chain Management. Další informace získáte v části [Synchronizace skladových úprav z aplikace Field Service do Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) and [Synchronizace pracovních příkazů z Field Service na prodejní objednávky navázané na projekt ve Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="prerequisites-and-mapping-setup"></a>Nastavení mapování a předpokladů
 ### <a name="data-integration-project"></a>Projekt integrace dat

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8b4e783f79b02c77a27fc59c2f4be8a192f2f476
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248693"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553084"
 ---
 # <a name="backup-storage-of-er-templates"></a>Úložiště záloh šablon ER
 
@@ -33,7 +33,7 @@ ms.locfileid: "2248693"
 
 Každý konfigurovaný formát lze publikovat jako součást řešení elektronického vykazování. Každé řešení ER lze exportovat z jedné instance Finance and Operations a importovat do jiné instance.
 
-Systém ER používá [Architekturu správy dokumentů](../../fin-and-ops/organization-administration/configure-document-management.md), která uchovává požadované šablony pro aktuální instanci Finance and Operations. V závislosti na nastavení architektury ER, ukládání objektů Blob Microsoft Azure nebo složku Microsoft SharePoint lze vybrat jako fyzické umístění primárního úložiště pro šablony. (Další informace naleznete v tématu [Konfigurace architektury ER](electronic-reporting-er-configure-parameters.md).) Tabulka DocuValue obsahuje pro každou šablonu samostatný záznam. V každém záznamu ukládá pole **AccessInformation** cestu k souboru šablony, který je umístěn v konfigurovaném umístění úložiště.
+Systém ER používá [Architekturu správy dokumentů](../../fin-ops/organization-administration/configure-document-management.md), která uchovává požadované šablony pro aktuální instanci Finance and Operations. V závislosti na nastavení architektury ER, ukládání objektů Blob Microsoft Azure nebo složku Microsoft SharePoint lze vybrat jako fyzické umístění primárního úložiště pro šablony. (Další informace naleznete v tématu [Konfigurace architektury ER](electronic-reporting-er-configure-parameters.md).) Tabulka DocuValue obsahuje pro každou šablonu samostatný záznam. V každém záznamu ukládá pole **AccessInformation** cestu k souboru šablony, který je umístěn v konfigurovaném umístění úložiště.
 
 Při správě instancí Finance and Operations se můžete rozhodnout migrovat aktuální instanci do jiného umístění. Můžete například migrovat instanci výroby do nového prostředí sandbox. Pokud jste nakonfigurovali platformu ER pro ukládání šablon v úložišti objektů Blob, bude tabulka DocuValue v novém prostředí sandbox odkazovat na instanci ukládání objektů Blob v produkčním prostředí. K této instanci však nelze přistupovat z prostředí izolovaného prostoru (sandbox), protože proces migrace nepodporuje migraci artefaktů v úložišti objektů BLOB. Pokud se tedy pokusíte spustit formát ER, který používá šablonu pro generování obchodních dokumentů, dojde k výjimce a zobrazí se upozornění na chybějící šablonu. Také budete navedeni pomocí nástroje čištění ER odstranit a poté znovu importovat konfiguraci formátu ER obsahující šablonu. Vzhledem k tomu, že je možné provést několik konfigurací formátu ER, může být tento proces časově náročný.
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62998da7f541379296d5ac325ae29f24a42f9b7c
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: bb318c24424c291f08ba7527b2258c0da4cba9a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847544"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571661"
 ---
 # <a name="inbound-and-outbound-assets"></a>Příchozí a odchozí majetek
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Pokud vaše společnost provádí úlohy oprav nebo údržby u majetku, který byl přijat z jiných míst nebo od jiných zákazníků, může správa majetku sledovat jak vstupní majetek, který je na cestě do vaší firmy, a příchozí majetek, který se vrací.
 
@@ -45,7 +45,7 @@ Nastavení správy majetku určuje, zda můžete pracovat s příchozím nebo od
 3. Zvolte **Aktualizovat stav požadavku na údržbu**.
 4. Vyberte **Příchozí** (nebo jiný stav životního cyklu, který jste vytvořili pro příchozí majetek) a pak zvolte **OK**.
 
-![Obrázek č. 1](media/07-manage-maintenance-requests.png)
+![Registrace majetku jako příchozího](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Registrace příchozího majetku jako přijatého
 
@@ -54,7 +54,7 @@ Nastavení správy majetku určuje, zda můžete pracovat s příchozím nebo od
 3. Zvolte **Přijmout majetek**.
 4. V poli **Přijato** zadejte datum a čas. Pak vyberte **OK**. Záznam bude odebrán ze stránky se seznamem **Příchozí majetek**.
 
-![Obrázek č. 2](media/08-manage-maintenance-requests.png)
+![Registrace příchozího majetku jako přijatého](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Registrace majetku jako odchozího
 

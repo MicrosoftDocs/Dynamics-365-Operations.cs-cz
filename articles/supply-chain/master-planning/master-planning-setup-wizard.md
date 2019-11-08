@@ -3,7 +3,7 @@ title: Průvodce nastavením hlavního plánování
 description: Toto téma popisuje různé důležité strategie a parametry, které se používají k nastavení hlavního plánování.
 author: t-benebo
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 0310ac55d35421d8ad9080739fc5a393660ce520
-ms.sourcegitcommit: 261dc882710f29303b14f9be8a26d71d85d25345
+ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
+ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "1999527"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "2635119"
 ---
 # <a name="master-planning-setup-wizard"></a>Průvodce nastavením hlavního plánování
 
 [!include [banner](../includes/banner.md)]
 
 Toto téma obsahuje pokyny pro **Průvodce nastavením hlavního plánování**. Vysvětluje způsob výpočtu návrhů parametrů a také obsahuje příklady, které ukazují, jak různé společnosti nastavují hlavní plánování na základě svých obchodních potřeb.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+
+[Průvodce nastavením hlavního plánování v aplikaci Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) (zobrazené výše) je zahrnut do [playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
+
 
 ## <a name="specific-requirements-of-your-company"></a>Specifické požadavky vaší společnosti
 

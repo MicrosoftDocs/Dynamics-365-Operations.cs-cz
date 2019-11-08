@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 432a235668bbd969f497003a98b7f66390e5308f
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 63f436ffd01ac56bb4bc0021e226dad46d7c3377
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790472"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569908"
 ---
 # <a name="responsible-maintenance-workers"></a>Zodpovědní pracovníci údržby
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Zodpovědní pracovníci údržby mohou být spřízněni s typy majetku, majetkem, funkčními místy, kategoriemi typů údržby, typy prací údržby, variantami typů prací údržby a obchody. Mohou být použity v pracovních příkazech a požadavcích na údržbu, aby označovali preference týkající se pracovníků údržby, kteří by měli být zodpovědní za pracovní příkaz. (Tito pracovníci údržby však nemusí být nutně stejnými zaměstnanci, kteří mají v plánu provést pracovní příkaz.) Použití této funkce je nepovinné. Lze jej například použít k výběru odpovědných pracovníků nebo skupin pracovníků pro určité typy práce nebo pracovní oblasti.
 
@@ -53,4 +53,4 @@ Před nastavením zodpovědných pracovníků údržby je nutné nastavit pracov
 
 Následující ilustrace znázorňuje příklad stránky **Zodpovědní pracovníci údržby**.
 
-![Obrázek č. 1](media/08-setup-for-requests.png)
+![Stránka Zodpovědní pracovníci údržby](media/08-setup-for-requests.png)

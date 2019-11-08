@@ -3,7 +3,7 @@ title: Zásobování
 description: Tohle téma popisuje zásobování v modulu Správa majetku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,85 +16,87 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1678dbe2432e4be46aebb40a12e73dfd695c3e77
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: ec14f645af5dfdb3e840624e4cec95c46cfbbc25
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875544"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626424"
 ---
 # <a name="procurement"></a>Zásobování
 
-
 [!include [banner](../../includes/banner.md)]
-
-[!include [banner](../../includes/preview-banner.md)]
 
 V modulu Správa majetku můžete získat přehled o nákupních žádankách a nákupních objednávkách souvisejících s pracovními příkazy. Je rovněž možné vytvořit nákupní objednávku nebo nákupní žádanku z pracovního příkazu.
 
-V seznamu **Nákupních žádanek na pracovním příkazu** (**Správa majetku** > **Společné** > **Zásobování** > **Nákupní žádanka na pracovním příkazu**) se zobrazí seznam nákupních žádanek souvisejících s pracovními příkazy.
+Na stránce se seznamem **Nákupní žádanky na pracovním příkazu** (**Správa majetku** > **Společné** > **Zásobování** > **Nákupní žádanka na pracovním příkazu**) se zobrazuje seznam nákupních žádanek souvisejících s pracovními příkazy. Když na této stránce vyberete úlohu pracovního příkazu, můžete použít tlačítka ve skupině **Zobrazit** na kartě podokna akcí **Nákupní žádanka pracovního příkazu** k provádění různých akcí:
 
-- Vyberte úlohu pracovního příkazu v seznamu **Nákupních žádanek na pracovním příkazu** a kliknutím na tlačítko **Nákupní žádanka** otevřete související nákupní žádanku.  
-- Vyberte úlohu pracovního příkazu v seznamu **Nákupních žádanek na pracovním příkazu** a kliknutím na tlačítko **Pracovní příkaz** otevřete související pracovní příkaz.  
-- Vyberte úlohu pracovního příkazu v seznamu **Nákupních žádanek na pracovním příkazu** a klikněte na tlačítko **Kde byla položka použita** v případě, že chcete získat přehled o tom, zda je položka ve vybraném řádku použita ve Správě majetku ve vztahu k aktivům, výchozím hodnotám typu práce údržby, náhradním dílům a pracovním příkazům. 
+- Chcete-li otevřít související nákupní žádanku, vyberte možnost **Nákupní žádanka**. 
+- Chcete-li otevřít související pracovní příkaz, vyberte možnost **Pracovní příkaz**.
+- Chcete-li získat přehled o tom, kde se ve správě majetku používá položka na vybraném řádku, ve vztahu k majetku, výchozím typům práce, náhradním dílům a pracovním příkazům, vyberte **Položka, kde se používá**. Další informace o tomto přehledu naleznete v tématu [Položka, kde se používá](../controlling-and-reporting/item-where-used.md)se používá.
+
+Na následujícím obrázku je uveden příklad stránky se seznamem **Nákupní žádanka pracovního příkazu**.
 
 ![Obrázek č. 1](media/08-work-orders.png)
 
 
-V seznamu **Nákupních pracovních příkazů** (**Správa podnikového majetku** > **Společné** > **Zásobování** > **Nákupní pracovní příkaz**) se zobrazí seznam nákupních objednávek souvisejících s pracovními příkazy.
+Na stránce se seznamem **Nákupní v pracovním příkazu** (**Správa majetku** > **Společné** > **Zásobování** > **Nákupní v pracovním příkazu**) se zobrazuje seznam nákupních objednávek souvisejících s pracovními příkazy. Když na této stránce vyberete úlohu pracovního příkazu, můžete použít tlačítka ve skupině **Zobrazit** na kartě podokna akcí **Nákupní objednávka pracovního příkazu** k provádění různých akcí:
 
-- Vyberte úlohu pracovního příkazu v seznamu **Nákupních pracovních příkazů** a kliknutím na tlačítko **Nákupní objednávka** otevřete související nákupní objednávku.  
-- Vyberte úlohu pracovního příkazu v seznamu **Nákupních pracovních příkazů** a kliknutím na tlačítko **Pracovní příkaz** otevřete související pracovní příkaz.  
-- Vyberte úlohu pracovního příkazu v nákupním seznamu **na pracovním příkazu** a klikněte na tlačítko **Kde byla položka použita** v případě, že chcete získat přehled o tom, zda je položka ve vybraném řádku použita ve Správě majetku ve vztahu k aktivům, výchozím hodnotám typu práce údržby, náhradním dílům a pracovním příkazům. 
+- Chcete-li otevřít související nákupní objednávku, vyberte možnost **Nákupní objednávka**. 
+- Chcete-li otevřít související pracovní příkaz, vyberte možnost **Pracovní příkaz**.
+- Chcete-li získat přehled o tom, kde se ve správě majetku používá položka na vybraném řádku, ve vztahu k majetku, výchozím typům práce, náhradním dílům a pracovním příkazům, vyberte **Položka, kde se používá**. Další informace o tomto přehledu naleznete v tématu [Položka, kde se používá](../controlling-and-reporting/item-where-used.md)se používá.
+
+Na následujícím obrázku je uveden příklad stránky se seznamem **Nákup pracovního příkazu**.
 
 ![Obrázek č. 2](media/09-work-orders.png)
 
 
-V výše uvedených seznamech je ikona týkající se řízení data dodání umístěna vpravo na každém řádku. Pokud ikona zobrazuje vykřičník v červeném kruhu, znamená to, že dodávka v související nákupní žádance nebo nákupní objednávce může být zpožděna.
+Na stránce se seznamem **Nákup pracovního příkazu** a na stránce se seznamem **Nákupní žádanka pracovního příkazu** se zobrazí symbol související s ovládacím prvkem data doručení, a to na pravé straně každého řádku. Pokud má ikona podobu vykřičníku v červeném kruhu, znamená to, že dodávka v související nákupní žádance nebo nákupní objednávce může být zpožděna.
 
-V nákupní žádance se datum použité k výpočtu možného zpoždění nachází ve formuláři **Nákupní žádanky** > pevná záložka **Záhlaví nákupní žádanky** > pole **Požadované datum**. Toto datum se porovnává s dostupným datem na pracovním příkazu nebo na úloze pracovního příkazu stejným způsobem jako datum nákupní objednávky.
+Pro nákupní objednávku se použije datum související s řádkem nákupní objednávky k výpočtu možného zpoždění. Chcete-li zobrazit toto datum, vyberte na stránce **Nákupní objednávka** řádek nákupní objednávky. Toto datum je uvedeno v poli **Potvrzené datum dodání** na kartě **Nastavení** pevné záložky **Podrobnosti žádku**. Pokud není nastaveno pole **Potvrzené datum dodání**, bude pro výpočet použito datum uvedené v poli **Datum dodání** na pevné záložce **Záhlaví nákupní objednávky**. Jedno z těchto dat se porovnává s dostupným datem na pracovním příkazu nebo na úloze pracovního příkazu v následujícím pořadí:
 
-Na nákupní objednávce je datum použité k výpočtu možné prodlevy datem souvisejícím s řádkem nákupní objednávky, který je zobrazen ve formuláři **Nákupní objednávka** > výběr řádku nákupní objednávky > pevná záložka **Podrobnosti řádku** > karta **Nastavení** > pole **Potvrzené datum dodání**. Není-li toto pole vyplněno, použije se datum uvedené v poli **Datum dodání** na pevní záložce **Záhlaví nákupní objednávky**. Jedno z těchto dat se porovnává s dostupným datem na pracovním příkazu nebo na úloze pracovního příkazu v následujícím pořadí:
+1. Skutečné datum zahájení na pracovním příkazu  
 
-- Skutečné datum zahájení na pracovním příkazu nebo  
+2. Naplánované datum zahájení na související úloze pracovního příkazu 
 
-- Naplánované datum zahájení na související úloze pracovního příkazu nebo  
+3. Naplánované datum zahájení na pracovním příkazu 
 
-- Naplánované datum zahájení na pracovním příkazu nebo  
+4. Očekávané datum zahájení na pracovním příkazu nebo 
 
-- Očekávané datum zahájení na pracovním příkazu nebo  
+Datum v poli **Požadované datum** u nákupní žádanky na pevné záložce **Záhlaví nákupní objednávky** na stránce **Nákupní žádanky** slouží k výpočtu možného zpoždění. Datum v tomto poli se porovnává s dostupným datem v pracovním příkazu nebo v úloze pracovního příkazu ve stejném pořadí jako datum nákupní objednávky.
 
 
-## <a name="create-purchase-order-from-a-work-order"></a>Vytvoření nákupní objednávky z pracovního příkazu
+## <a name="create-a-purchase-order-from-a-work-order"></a>Vytvoření nákupní objednávky z pracovního příkazu
 
-Ve **Všech pracovních příkazech** vyberete úlohu pracovního příkazu a vytvoříte související nákupní objednávku nebo nákupní žádanku. To je prováděno za účelem zajištění vztahů projektů mezi nákupní objednávkou nebo nákupní žádankou a pracovním příkazem.
+Na stránce se seznamem **Všechny pracovní příkazy** můžete vybrat úlohu pracovního příkazu a pak vytvořit související nákupní objednávku nebo nákupní žádanku. Tímto způsobem pomáháte zaručit, že existují vztahy projektů mezi nákupní objednávkou nebo nákupní žádankou a pracovním příkazem.
 
-1. Klikněte na **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
-2. V seznamu **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy** vyberte pracovní příkaz, pro který chcete vytvořit nákupní objednávku, a klikněte na tlačítko **Upravit**.
+2. Vyberte pracovní příkaz, pro který chcete vytvořit nákupní objednávku, a pak vyberte možnost **Upravit**.
 
-3. Ve formuláři **Pracovní příkaz** > pevná záložka **Práce údržby na pracovním příkazu** vyberte úlohu pracovního příkazu, pro kterou chcete vytvořit nákupní objednávku.
+3. Na pevné záložce **Práce údržby na pracovním příkazu** vyberte úlohu pracovního příkazu, pro kterou chcete vytvořit nákupní objednávku.
 
-4. Klikněte na **Úlohy položky** > **Nákupní objednávka na základě úlohy pracovního příkazu**.
+4. Vyberte **Úlohy položky** > **Nákupní objednávka na základě úlohy pracovního příkazu**.
 
 5. Na stránce se seznamem **Nákupních objednávek projektu** klikněte na položku **Nová**.
 
 6. Vytvořte nákupní objednávku.
 
 >[!NOTE]
->Vytvoření nákupní žádanky je téměř totožné s vytvořením nákupní objednávky. Jediným rozdílem je, že ve výše uvedeném postupu kliknete na **Úlohy položky** > **Nákupní žádanka na základě úlohy pracovního příkazu** v kroku 2.
+>Chcete-li vytvořit související nákupní žádanku, postupujte stejným způsobem. V kroku 4 věak vyberte **Úlohy položky** > **Nákupní žádanka z úlohy pracovního příkazu**.
+
 
 ## <a name="project-relation-between-work-order-and-purchase-order-or-purchase-requisition"></a>Vztah projektu mezi pracovním příkazem a nákupní objednávkou nebo nákupní žádankou
 
-Řádek nákupní objednávky nebo řádek nákupní žádanky souvisí s úlohou pracovního příkazu pomocí projektu pracovního příkazu a souvisejícím číslem aktivity projektu. Při vytvoření nákupní objednávky nebo nákupní žádanky z úlohy pracovního příkazu je číslo související aktivity projektu povinné. Číslo aktivity projektu je automaticky vloženo do nákupní objednávky nebo nákupní žádanky, pokud související pracovní příkaz obsahuje úlohy pracovního příkazu, které používají stejný typ úlohy údržby. Pokud úlohy pracovního příkazu obsahují různé typy úloh údržby, musí být číslo aktivity projektu vloženo ručně.
+Řádek nákupní objednávky nebo řádek nákupní žádanky souvisí s úlohou pracovního příkazu pomocí projektu pracovního příkazu a souvisejícím číslem aktivity projektu. Při vytvoření nákupní objednávky nebo nákupní žádanky z úlohy pracovního příkazu je číslo související aktivity projektu povinné. Pokud mají všechny úlohy pracovního příkazu v souvisejícím pracovním příkazu stejný typ práce údržby, číslo aktivity projektu je automaticky zadáno do nákupní objednávky nebo nákupní žádanky. Pokud mají úlohy pracovního příkazu různé typy práce údržby, musíte ručně zadat číslo aktivity projektu do nákupní objednávky nebo nákupní žádanky.
 
-Chcete-li zobrazit nebo vložit číslo aktivity související s řádkem nákupní objednávky, otevřete **Nákupní pracovní příkaz** > vyberte záznam nákupní objednávky > klikněte na nákupní objednávku ve sloupci **Nákupní objednávka** > pevná záložka **Podrobnosti řádku** > karta **Projekt** > pole **Číslo aktivity**.
+Chcete-li zobrazit nebo zadat číslo aktivity související s řádkem nákupní objednávky, na stránce se seznamem **Nákup pracovního příkazu** vyberte záznam nákupní objednávky a pak ve sloupci **Nákupní objednávka** vyberte odkaz na nákupní objednávku. Pole **Číslo aktivity** najdete na kartě **Projekt** pevné záložky **Podrobnosti řádku**.
 
+Následující obrázek ukazuje příklad stránky **Nákupní objednávka** se zaměřením na **číslo aktivity**.
 
 ![Obrázek č. 3](media/10-work-orders.png)
 
-
-Podobně, chcete-li zobrazit nebo vložit číslo aktivity související s řádkem nákupní žádanky na pracovním příkazu, otevřete **Nákupní žádanka na pracovním příkazu** > vyberte záznam nákupní žádanky > klikněte na nákupní žádanku ve sloupci **Nákupní žádanka** > pevná záložka **Podrobnosti řádku** > karta **Projekt** > pole **Číslo aktivity**.
+Podobně platí, že chcete-li zobrazit nebo zadat číslo aktivity související s řádkem nákupní žádanky pracovního příkazu, na stránce se seznamem **Nákup pracovního příkazu** vyberte záznam nákupní objednávky a pak ve sloupci **Nákupní žádanka** vyberte odkaz na nákupní žádanku. Pole **Číslo aktivity** najdete na kartě **Projekt** pevné záložky **Podrobnosti řádku**.
 

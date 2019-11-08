@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f68e11a1cd14bc35282b957a4262cbecdd627b3b
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 151db9ca8a121759e39b690ec296b36a18dc1729
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790474"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571155"
 ---
-# <a name="maintenance-request-states"></a>Stavy požadavků na údržbu
+# <a name="maintenance-request-lifecycle-states"></a>Stavy životního cyklu požadavku na údržbu
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Stavy životního cyklu požadavků údržby definují fáze, kterými může požadavek projít. Příklady zahrnují **Vytvořené**, **Aktivní**a **Ukončené**. Když je požadavek na údržbu převeden na pracovní příkaz, stav životního cyklu požadavku údržby by měl být aktualizován na **Ukončený** nebo **Uzavřený**, aby bylo možné označit, že požadavek na údržbu již není aktivní. Na stránce seznamu **Všechny požadavky na údržbu** můžete vidět všechny požadavky na údržbu bez ohledu na jejich stav životního cyklu.
@@ -51,7 +51,7 @@ Stavy životního cyklu požadavků údržby definují fáze, kterými může po
 
 Následující ilustrace znázorňuje příklad stránky **Stavy životního cyklu požadavků na údržbu**.
 
-![Obrázek č. 1](media/02-setup-for-requests.png)
+![Stránka Stavy životního cyklu požadavku na údržbu](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Stavy životního cyklu požadavků na údržbu, skupiny stavů životního cyklu a typy jsou propojeny a používány stejným způsobem jako stavy životního cyklu pracovních příkazů, skupiny stavů životního cyklu a typy. 
@@ -80,4 +80,4 @@ Po vytvoření stavů životního cyklu, které jsou požadovány pro vaše pož
 
 Následující ilustrace znázorňuje příklad stránky **Modely životního cyklu požadavků na údržbu**.
 
-![Obrázek č. 2](media/06-setup-for-requests.png)
+![Stránka Modely životního cyklu požadavku na údržbu](media/06-setup-for-requests.png)

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c85fc24cdf0b3cd1a188ccf0f477ffbfa5fab960
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f0a8fcf26da02bd42f6ee45687c585091e3b945e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783114"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570971"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Pracovníci údržby a skupiny pracovníků
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Toto téma vysvětluje, jak nastavit pracovníky údržby skupiny pracovníků v modulu Správa majetku. V modulu Správa majetku můžete pracovníky údržby připojit k funkčním místům. (Další informace o funkčních umístěních naleznete v tématu [Tvorba funkčních míst](../functional-locations/create-functional-locations.md).) Tato funkce může být užitečná například v případě, že plánujete úlohu údržby stroje, který je umístěn na funkčním místě 01, a chcete práci přidělit pracovníkům údržby ze stejného místa.
 

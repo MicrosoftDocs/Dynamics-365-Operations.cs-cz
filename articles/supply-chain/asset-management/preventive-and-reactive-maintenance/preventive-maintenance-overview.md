@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 02ea3affca727802b241f87b801e0742ac0aa41a
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 2d079c10331360c035ff800650ed3102c2cc3ad4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922084"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569977"
 ---
 # <a name="preventive-maintenance-overview"></a>Přehled preventivní údržby
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Toto téma popisuje preventivní údržbu v modulu Správa majetku. Preventivní údržba je oborem zahrnujícím plánované úlohy údržby, například pravidelný servis, kalibraci a kontroly. V modulu **Správa majetku** můžete vytvářet plány údržby a nastavovat je na majetku a na funkční místa. Můžete také nastavit pořadí údržby na funkčních místech. Plány údržby majetku jsou aktivní bez ohledu na to, kde je majetek instalován. Plány údržby a pořadí údržby ve funkčním místě jsou aktivní pro majetek aktuálně nainstalovaný v daném umístění. Namísto nastavování plánů údržby na majetek nebo nastavení pořadí údržby na funkčních místech můžete vytvořit pořadí údržby zahrnující více majetků, na kterých je třeba provádět související typy úloh údržby v rámci stejné pracovní procedury. Funkce údržby vytvořená z majetku – namísto vytvoření ve funkčních místech, znamená, že můžete vybrat množství majetku pro jedno pořadí údržby, který není nainstalován ve stejném funkčním místě.
 

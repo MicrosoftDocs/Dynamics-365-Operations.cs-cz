@@ -3,7 +3,7 @@ title: Definice stromu výkaznictví ve finančních sestavách
 description: Tento článek obsahuje informace o definicích stromu výkaznictví. Definice stromu výkaznictví je součástí sestavy nebo stavební blok, který pomáhá definovat strukturu a hierarchii vaší organizace.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8127c694d21064392b1932525a87044b9554973d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181811"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564160"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definice stromu výkaznictví ve finančních sestavách
 
@@ -50,7 +50,7 @@ Definice stromu výkaznictví obsahuje sloupce popsané v následující tabulce
 
 | Sloupec sestavy výkaznictví | Popis |
 |-----------------------|-------------|
-| Společnost               | Název společnosti pro organizační jednotku. Hodnota **@ANY**, která je obvykle přiřazena jen souhrnné úrovni, umožňuje používat organizační strom pro všechny společnosti. Všechny větve podřízených jednotek mají přiřazenu společnost. |
+| Společnost               | Název společnosti pro organizační jednotku. Hodnota **\@ANY**, která je obvykle přiřazena jen souhrnné úrovni, umožňuje používat organizační strom pro všechny společnosti. Všechny větve podřízených jednotek mají přiřazenu společnost. |
 | Název jednotky             | Kód identifikující tuto jednotku výkaznictví v grafickém stromu výkaznictví. Nezapomeňte vytvořit jedinečný systém kódování, který je konzistentní, a které bude snadno pochopitelný pro uživatele. |
 | Popis jednotky      | Název jednotky výkaznictví se zobrazí v záhlaví nebo zápatí sestavy, když zadáte hodnotu **UnitDesc** jako kód na kartě **Záhlaví a zápatí** v definici sestavy. Nadpis se zobrazí v sestavě v řádku popisu, pokud zadáte hodnotu **UnitDesc** do buňky **Popis** v definici řádku. |
 | Dimenze            | Jednotka výkaznictví, která získává informace přímo z finančních dat. Definuje logické umístění a délky pro účet a související segmenty. Každý řádek sestavy musí mít uveden rozměr v tomto sloupci. Dimenzi můžete vložit také do řádku Souhrn jednotky (například pro výdaje, které přímo souvisejí s touto jednotkou). Zadáte-li dimenzi v řádku jednotky souhrnu, účty, které se používají v nadřazených jednotkách nepoužívejte v podřízených jednotkách. Jinak může docházet ke zdvojování částek. |
