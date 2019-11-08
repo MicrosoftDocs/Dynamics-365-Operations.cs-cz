@@ -1,5 +1,5 @@
 ---
-title: Vytvoření formátů k použití souborů pro správu dokumentů ve výstupu elektronického výkaznictví
+title: Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 3 - Vytvoření formátu)
 description: Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví k souborů správy dokumentů ve výstupu elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
@@ -16,107 +16,107 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05c0c4a38f34774e7018504c5e3fab834a2ec1b1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 618fabc96bdfeb0c2b577aa686702d9f1257ed70
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182524"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550710"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-3-create-format"></a><span data-ttu-id="b1b52-103">Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 3: Vytvoření formátu)</span><span class="sxs-lookup"><span data-stu-id="b1b52-103">ER Use Document Management files in format outputs (Part 3: Create format)</span></span>
+# <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a><span data-ttu-id="f6148-103">Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 3 - Vytvoření formátu)</span><span class="sxs-lookup"><span data-stu-id="f6148-103">ER Use Document Management files in format outputs (Part 3 - Create format)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b1b52-104">Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví (ER) k souborů správy dokumentů (příloh) ve výstupu elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="b1b52-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="b1b52-105">Tyto kroky lze provést v rámci libovolné společnosti.</span><span class="sxs-lookup"><span data-stu-id="b1b52-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="f6148-104">Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví (ER) k souborů správy dokumentů (příloh) ve výstupu elektronického výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f6148-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="f6148-105">Tyto kroky lze provést v rámci libovolné společnosti.</span><span class="sxs-lookup"><span data-stu-id="f6148-105">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="b1b52-106">K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Soubory správy dokumentů použití ER soubory ve výstupech formátu (Část 2: Rozšíření datového modelu).</span><span class="sxs-lookup"><span data-stu-id="b1b52-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 2: Extend data model” procedure.</span></span>
+<span data-ttu-id="f6148-106">K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Soubory správy dokumentů použití ER soubory ve výstupech formátu (Část 2: Rozšíření datového modelu).</span><span class="sxs-lookup"><span data-stu-id="f6148-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 2: Extend data model” procedure.</span></span>
 
-<span data-ttu-id="b1b52-107">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="b1b52-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="f6148-107">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="f6148-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-format-to-process-invoices"></a><span data-ttu-id="b1b52-108">Vytvoření formátu pro zpracování faktur</span><span class="sxs-lookup"><span data-stu-id="b1b52-108">Create a format to process invoices</span></span>
-1. <span data-ttu-id="b1b52-109">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="b1b52-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="b1b52-110">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="b1b52-110">Click Reporting configurations.</span></span>
-3. <span data-ttu-id="b1b52-111">Ve stromovém zobrazení rozbalte možnost Model faktury odběratele.</span><span class="sxs-lookup"><span data-stu-id="b1b52-111">In the tree, expand 'Customer invoice model'.</span></span>
-4. <span data-ttu-id="b1b52-112">Ve stromu vyberte položku "Model faktury odběratele\Model faktury odběratele (vlastní)".</span><span class="sxs-lookup"><span data-stu-id="b1b52-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
-    * <span data-ttu-id="b1b52-113">Vytvoříte formát pro generování elektronických zpráv s informacemi o všech souborech, které byly připojeny k prodejní objednávce, která se vztahuje k elektronickému zpracování faktur.</span><span class="sxs-lookup"><span data-stu-id="b1b52-113">You will create a format to generate electronic messages with information about any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
-5. <span data-ttu-id="b1b52-114">Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="b1b52-114">Click Create configuration to open the drop dialog.</span></span>
-6. <span data-ttu-id="b1b52-115">V poli Nový zadejte Formát založený na datovém modelu Faktura odběratele (vlastní).</span><span class="sxs-lookup"><span data-stu-id="b1b52-115">In the New field, enter 'Format based on data model Customer invoice model (custom)'.</span></span>
-7. <span data-ttu-id="b1b52-116">Do pole Název zadejte Vzorová zpráva elektronické faktury.</span><span class="sxs-lookup"><span data-stu-id="b1b52-116">In the Name field, type 'Electronic invoice sample message'.</span></span>
-    * <span data-ttu-id="b1b52-117">Vzorová zpráva s elektronickou fakturou</span><span class="sxs-lookup"><span data-stu-id="b1b52-117">Electronic invoice sample message</span></span>  
-8. <span data-ttu-id="b1b52-118">V poli Definice datového modelu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="b1b52-118">In the Data model definition field, enter or select a value.</span></span>
-    * <span data-ttu-id="b1b52-119">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="b1b52-119">InvoiceCustomer</span></span>  
-9. <span data-ttu-id="b1b52-120">Klepněte na možnost Vytvořit konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="b1b52-120">Click Create configuration.</span></span>
+## <a name="create-a-format-to-process-invoices"></a><span data-ttu-id="f6148-108">Vytvoření formátu pro zpracování faktur</span><span class="sxs-lookup"><span data-stu-id="f6148-108">Create a format to process invoices</span></span>
+1. <span data-ttu-id="f6148-109">Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f6148-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="f6148-110">Klikněte na Konfigurace výkaznictví.</span><span class="sxs-lookup"><span data-stu-id="f6148-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="f6148-111">Ve stromovém zobrazení rozbalte možnost Model faktury odběratele.</span><span class="sxs-lookup"><span data-stu-id="f6148-111">In the tree, expand 'Customer invoice model'.</span></span>
+4. <span data-ttu-id="f6148-112">Ve stromu vyberte položku "Model faktury odběratele\Model faktury odběratele (vlastní)".</span><span class="sxs-lookup"><span data-stu-id="f6148-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+    * <span data-ttu-id="f6148-113">Vytvoříte formát pro generování elektronických zpráv s informacemi o všech souborech, které byly připojeny k prodejní objednávce, která se vztahuje k elektronickému zpracování faktur.</span><span class="sxs-lookup"><span data-stu-id="f6148-113">You will create a format to generate electronic messages with information about any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
+5. <span data-ttu-id="f6148-114">Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="f6148-114">Click Create configuration to open the drop dialog.</span></span>
+6. <span data-ttu-id="f6148-115">V poli Nový zadejte Formát založený na datovém modelu Faktura odběratele (vlastní).</span><span class="sxs-lookup"><span data-stu-id="f6148-115">In the New field, enter 'Format based on data model Customer invoice model (custom)'.</span></span>
+7. <span data-ttu-id="f6148-116">Do pole Název zadejte Vzorová zpráva elektronické faktury.</span><span class="sxs-lookup"><span data-stu-id="f6148-116">In the Name field, type 'Electronic invoice sample message'.</span></span>
+    * <span data-ttu-id="f6148-117">Vzorová zpráva s elektronickou fakturou</span><span class="sxs-lookup"><span data-stu-id="f6148-117">Electronic invoice sample message</span></span>  
+8. <span data-ttu-id="f6148-118">V poli Definice datového modelu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="f6148-118">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="f6148-119">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="f6148-119">InvoiceCustomer</span></span>  
+9. <span data-ttu-id="f6148-120">Klepněte na možnost Vytvořit konfiguraci.</span><span class="sxs-lookup"><span data-stu-id="f6148-120">Click Create configuration.</span></span>
 
-## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a><span data-ttu-id="b1b52-121">Návrh formátu k vyplnění příloh do generování zprávy ve formátu MIME</span><span class="sxs-lookup"><span data-stu-id="b1b52-121">Design a format to populate attachments into generating a message in MIME format</span></span>
-1. <span data-ttu-id="b1b52-122">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="b1b52-122">Click Designer.</span></span>
-2. <span data-ttu-id="b1b52-123">Klepnutím na možnost Přidat kořen otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="b1b52-123">Click Add root to open the drop dialog.</span></span>
-3. <span data-ttu-id="b1b52-124">Ve stromovém zobrazení vyberte „XML\Prvek“.</span><span class="sxs-lookup"><span data-stu-id="b1b52-124">In the tree, select 'XML\Element'.</span></span>
-4. <span data-ttu-id="b1b52-125">Do pole Název zadejte Faktura.</span><span class="sxs-lookup"><span data-stu-id="b1b52-125">In the Name field, type 'Invoice'.</span></span>
-    * <span data-ttu-id="b1b52-126">Faktura</span><span class="sxs-lookup"><span data-stu-id="b1b52-126">Invoice</span></span>  
-5. <span data-ttu-id="b1b52-127">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b1b52-127">Click OK.</span></span>
-6. <span data-ttu-id="b1b52-128">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="b1b52-128">Click Add to open the drop dialog.</span></span>
-7. <span data-ttu-id="b1b52-129">Ve stromovém zobrazení vyberte „XML\Atribut“.</span><span class="sxs-lookup"><span data-stu-id="b1b52-129">In the tree, select 'XML\Attribute'.</span></span>
-8. <span data-ttu-id="b1b52-130">Do pole Název zadejte „SalesOrder“.</span><span class="sxs-lookup"><span data-stu-id="b1b52-130">In the Name field, type 'SalesOrder'.</span></span>
-    * <span data-ttu-id="b1b52-131">SalesOrder</span><span class="sxs-lookup"><span data-stu-id="b1b52-131">SalesOrder</span></span>  
-9. <span data-ttu-id="b1b52-132">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b1b52-132">Click OK.</span></span>
-10. <span data-ttu-id="b1b52-133">Klikněte na možnost Přidat atributy.</span><span class="sxs-lookup"><span data-stu-id="b1b52-133">Click Add Attribute.</span></span>
-11. <span data-ttu-id="b1b52-134">Do pole Název zadejte InvoiceNumber.</span><span class="sxs-lookup"><span data-stu-id="b1b52-134">In the Name field, type 'InvoiceNumber'.</span></span>
-    * <span data-ttu-id="b1b52-135">InvoiceNumber</span><span class="sxs-lookup"><span data-stu-id="b1b52-135">InvoiceNumber</span></span>  
-12. <span data-ttu-id="b1b52-136">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b1b52-136">Click OK.</span></span>
-13. <span data-ttu-id="b1b52-137">Klikněte na možnost Přidat atributy.</span><span class="sxs-lookup"><span data-stu-id="b1b52-137">Click Add Attribute.</span></span>
-14. <span data-ttu-id="b1b52-138">Do pole Název zadejte InvoiceAmount.</span><span class="sxs-lookup"><span data-stu-id="b1b52-138">In the Name field, type 'InvoiceAmount'.</span></span>
-    * <span data-ttu-id="b1b52-139">InvoiceAmount</span><span class="sxs-lookup"><span data-stu-id="b1b52-139">InvoiceAmount</span></span>  
-15. <span data-ttu-id="b1b52-140">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b1b52-140">Click OK.</span></span>
-16. <span data-ttu-id="b1b52-141">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="b1b52-141">Click Add to open the drop dialog.</span></span>
-17. <span data-ttu-id="b1b52-142">Ve stromovém zobrazení vyberte „XML\Prvek“.</span><span class="sxs-lookup"><span data-stu-id="b1b52-142">In the tree, select 'XML\Element'.</span></span>
-18. <span data-ttu-id="b1b52-143">Do pole Název zadejte „EnclosedDocs“.</span><span class="sxs-lookup"><span data-stu-id="b1b52-143">In the Name field, type 'EnclosedDocs'.</span></span>
-    * <span data-ttu-id="b1b52-144">EnclosedDocs</span><span class="sxs-lookup"><span data-stu-id="b1b52-144">EnclosedDocs</span></span>  
-19. <span data-ttu-id="b1b52-145">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b1b52-145">Click OK.</span></span>
-20. <span data-ttu-id="b1b52-146">Ve stromovém zobrazení vyberte možnost Faktura\EnclosedDocs.</span><span class="sxs-lookup"><span data-stu-id="b1b52-146">In the tree, select 'Invoice\EnclosedDocs'.</span></span>
-21. <span data-ttu-id="b1b52-147">Klepněte na Přidat prvek.</span><span class="sxs-lookup"><span data-stu-id="b1b52-147">Click Add Element.</span></span>
-22. <span data-ttu-id="b1b52-148">Do pole Název zadejte Dokument.</span><span class="sxs-lookup"><span data-stu-id="b1b52-148">In the Name field, type 'Document'.</span></span>
-    * <span data-ttu-id="b1b52-149">Doklad</span><span class="sxs-lookup"><span data-stu-id="b1b52-149">Document</span></span>  
-23. <span data-ttu-id="b1b52-150">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b1b52-150">Click OK.</span></span>
-24. <span data-ttu-id="b1b52-151">Ve stromovém zobrazení vyberte možnost Faktura\EnclosedDocs\Dokument.</span><span class="sxs-lookup"><span data-stu-id="b1b52-151">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
-25. <span data-ttu-id="b1b52-152">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="b1b52-152">Click Add to open the drop dialog.</span></span>
-26. <span data-ttu-id="b1b52-153">Ve stromovém zobrazení vyberte „XML\Atribut“.</span><span class="sxs-lookup"><span data-stu-id="b1b52-153">In the tree, select 'XML\Attribute'.</span></span>
-27. <span data-ttu-id="b1b52-154">Do pole Název zadejte FileName.</span><span class="sxs-lookup"><span data-stu-id="b1b52-154">In the Name field, type 'FileName'.</span></span>
-    * <span data-ttu-id="b1b52-155">Název souboru</span><span class="sxs-lookup"><span data-stu-id="b1b52-155">FileName</span></span>  
-28. <span data-ttu-id="b1b52-156">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b1b52-156">Click OK.</span></span>
-29. <span data-ttu-id="b1b52-157">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="b1b52-157">Click Add to open the drop dialog.</span></span>
-30. <span data-ttu-id="b1b52-158">Ve stromovém zobrazení vyberte „XML\Prvek“.</span><span class="sxs-lookup"><span data-stu-id="b1b52-158">In the tree, select 'XML\Element'.</span></span>
-31. <span data-ttu-id="b1b52-159">Do pole Název zadejte FileContent.</span><span class="sxs-lookup"><span data-stu-id="b1b52-159">In the Name field, type 'FileContent'.</span></span>
-    * <span data-ttu-id="b1b52-160">FileContent</span><span class="sxs-lookup"><span data-stu-id="b1b52-160">FileContent</span></span>  
-32. <span data-ttu-id="b1b52-161">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b1b52-161">Click OK.</span></span>
-33. <span data-ttu-id="b1b52-162">Ve stromovém zobrazení vyberte možnost Faktura\EnclosedDocs\Dokument\FileContent.</span><span class="sxs-lookup"><span data-stu-id="b1b52-162">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent'.</span></span>
-34. <span data-ttu-id="b1b52-163">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="b1b52-163">Click Add to open the drop dialog.</span></span>
-35. <span data-ttu-id="b1b52-164">Ve stromu vyberte 'Text\Base64'.</span><span class="sxs-lookup"><span data-stu-id="b1b52-164">In the tree, select 'Text\Base64'.</span></span>
-36. <span data-ttu-id="b1b52-165">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="b1b52-165">Click OK.</span></span>
+## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a><span data-ttu-id="f6148-121">Návrh formátu k vyplnění příloh do generování zprávy ve formátu MIME</span><span class="sxs-lookup"><span data-stu-id="f6148-121">Design a format to populate attachments into generating a message in MIME format</span></span>
+1. <span data-ttu-id="f6148-122">Klikněte na možnost Návrhář.</span><span class="sxs-lookup"><span data-stu-id="f6148-122">Click Designer.</span></span>
+2. <span data-ttu-id="f6148-123">Klepnutím na možnost Přidat kořen otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="f6148-123">Click Add root to open the drop dialog.</span></span>
+3. <span data-ttu-id="f6148-124">Ve stromovém zobrazení vyberte „XML\Prvek“.</span><span class="sxs-lookup"><span data-stu-id="f6148-124">In the tree, select 'XML\Element'.</span></span>
+4. <span data-ttu-id="f6148-125">Do pole Název zadejte Faktura.</span><span class="sxs-lookup"><span data-stu-id="f6148-125">In the Name field, type 'Invoice'.</span></span>
+    * <span data-ttu-id="f6148-126">Faktura</span><span class="sxs-lookup"><span data-stu-id="f6148-126">Invoice</span></span>  
+5. <span data-ttu-id="f6148-127">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f6148-127">Click OK.</span></span>
+6. <span data-ttu-id="f6148-128">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="f6148-128">Click Add to open the drop dialog.</span></span>
+7. <span data-ttu-id="f6148-129">Ve stromovém zobrazení vyberte „XML\Atribut“.</span><span class="sxs-lookup"><span data-stu-id="f6148-129">In the tree, select 'XML\Attribute'.</span></span>
+8. <span data-ttu-id="f6148-130">Do pole Název zadejte „SalesOrder“.</span><span class="sxs-lookup"><span data-stu-id="f6148-130">In the Name field, type 'SalesOrder'.</span></span>
+    * <span data-ttu-id="f6148-131">SalesOrder</span><span class="sxs-lookup"><span data-stu-id="f6148-131">SalesOrder</span></span>  
+9. <span data-ttu-id="f6148-132">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f6148-132">Click OK.</span></span>
+10. <span data-ttu-id="f6148-133">Klikněte na možnost Přidat atributy.</span><span class="sxs-lookup"><span data-stu-id="f6148-133">Click Add Attribute.</span></span>
+11. <span data-ttu-id="f6148-134">Do pole Název zadejte InvoiceNumber.</span><span class="sxs-lookup"><span data-stu-id="f6148-134">In the Name field, type 'InvoiceNumber'.</span></span>
+    * <span data-ttu-id="f6148-135">InvoiceNumber</span><span class="sxs-lookup"><span data-stu-id="f6148-135">InvoiceNumber</span></span>  
+12. <span data-ttu-id="f6148-136">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f6148-136">Click OK.</span></span>
+13. <span data-ttu-id="f6148-137">Klikněte na možnost Přidat atributy.</span><span class="sxs-lookup"><span data-stu-id="f6148-137">Click Add Attribute.</span></span>
+14. <span data-ttu-id="f6148-138">Do pole Název zadejte InvoiceAmount.</span><span class="sxs-lookup"><span data-stu-id="f6148-138">In the Name field, type 'InvoiceAmount'.</span></span>
+    * <span data-ttu-id="f6148-139">InvoiceAmount</span><span class="sxs-lookup"><span data-stu-id="f6148-139">InvoiceAmount</span></span>  
+15. <span data-ttu-id="f6148-140">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f6148-140">Click OK.</span></span>
+16. <span data-ttu-id="f6148-141">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="f6148-141">Click Add to open the drop dialog.</span></span>
+17. <span data-ttu-id="f6148-142">Ve stromovém zobrazení vyberte „XML\Prvek“.</span><span class="sxs-lookup"><span data-stu-id="f6148-142">In the tree, select 'XML\Element'.</span></span>
+18. <span data-ttu-id="f6148-143">Do pole Název zadejte „EnclosedDocs“.</span><span class="sxs-lookup"><span data-stu-id="f6148-143">In the Name field, type 'EnclosedDocs'.</span></span>
+    * <span data-ttu-id="f6148-144">EnclosedDocs</span><span class="sxs-lookup"><span data-stu-id="f6148-144">EnclosedDocs</span></span>  
+19. <span data-ttu-id="f6148-145">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f6148-145">Click OK.</span></span>
+20. <span data-ttu-id="f6148-146">Ve stromovém zobrazení vyberte možnost Faktura\EnclosedDocs.</span><span class="sxs-lookup"><span data-stu-id="f6148-146">In the tree, select 'Invoice\EnclosedDocs'.</span></span>
+21. <span data-ttu-id="f6148-147">Klepněte na Přidat prvek.</span><span class="sxs-lookup"><span data-stu-id="f6148-147">Click Add Element.</span></span>
+22. <span data-ttu-id="f6148-148">Do pole Název zadejte Dokument.</span><span class="sxs-lookup"><span data-stu-id="f6148-148">In the Name field, type 'Document'.</span></span>
+    * <span data-ttu-id="f6148-149">Doklad</span><span class="sxs-lookup"><span data-stu-id="f6148-149">Document</span></span>  
+23. <span data-ttu-id="f6148-150">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f6148-150">Click OK.</span></span>
+24. <span data-ttu-id="f6148-151">Ve stromovém zobrazení vyberte možnost Faktura\EnclosedDocs\Dokument.</span><span class="sxs-lookup"><span data-stu-id="f6148-151">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
+25. <span data-ttu-id="f6148-152">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="f6148-152">Click Add to open the drop dialog.</span></span>
+26. <span data-ttu-id="f6148-153">Ve stromovém zobrazení vyberte „XML\Atribut“.</span><span class="sxs-lookup"><span data-stu-id="f6148-153">In the tree, select 'XML\Attribute'.</span></span>
+27. <span data-ttu-id="f6148-154">Do pole Název zadejte FileName.</span><span class="sxs-lookup"><span data-stu-id="f6148-154">In the Name field, type 'FileName'.</span></span>
+    * <span data-ttu-id="f6148-155">Název souboru</span><span class="sxs-lookup"><span data-stu-id="f6148-155">FileName</span></span>  
+28. <span data-ttu-id="f6148-156">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f6148-156">Click OK.</span></span>
+29. <span data-ttu-id="f6148-157">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="f6148-157">Click Add to open the drop dialog.</span></span>
+30. <span data-ttu-id="f6148-158">Ve stromovém zobrazení vyberte „XML\Prvek“.</span><span class="sxs-lookup"><span data-stu-id="f6148-158">In the tree, select 'XML\Element'.</span></span>
+31. <span data-ttu-id="f6148-159">Do pole Název zadejte FileContent.</span><span class="sxs-lookup"><span data-stu-id="f6148-159">In the Name field, type 'FileContent'.</span></span>
+    * <span data-ttu-id="f6148-160">FileContent</span><span class="sxs-lookup"><span data-stu-id="f6148-160">FileContent</span></span>  
+32. <span data-ttu-id="f6148-161">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f6148-161">Click OK.</span></span>
+33. <span data-ttu-id="f6148-162">Ve stromovém zobrazení vyberte možnost Faktura\EnclosedDocs\Dokument\FileContent.</span><span class="sxs-lookup"><span data-stu-id="f6148-162">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent'.</span></span>
+34. <span data-ttu-id="f6148-163">Klepnutím na možnost Přidat otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="f6148-163">Click Add to open the drop dialog.</span></span>
+35. <span data-ttu-id="f6148-164">Ve stromu vyberte 'Text\Base64'.</span><span class="sxs-lookup"><span data-stu-id="f6148-164">In the tree, select 'Text\Base64'.</span></span>
+36. <span data-ttu-id="f6148-165">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="f6148-165">Click OK.</span></span>
 
-## <a name="map-format-elements-to-data-model-as-data-source"></a><span data-ttu-id="b1b52-166">Namapování prvků formátu na datový model jako zdroje dat</span><span class="sxs-lookup"><span data-stu-id="b1b52-166">Map format elements to data model as data source</span></span>
-1. <span data-ttu-id="b1b52-167">Ve stromovém zobrazení vyberte možnost 'Faktura\SalesOrder'.</span><span class="sxs-lookup"><span data-stu-id="b1b52-167">In the tree, select 'Invoice\SalesOrder'.</span></span>
-2. <span data-ttu-id="b1b52-168">Klikněte na kartu Mapování.</span><span class="sxs-lookup"><span data-stu-id="b1b52-168">Click the Mapping tab.</span></span>
-3. <span data-ttu-id="b1b52-169">Ve stromovém zobrazení rozbalte „model“.</span><span class="sxs-lookup"><span data-stu-id="b1b52-169">In the tree, expand 'model'.</span></span>
-4. <span data-ttu-id="b1b52-170">Ve stromové struktuře vyberte 'model\Číslo prodejní objednávky(SalesId)'.</span><span class="sxs-lookup"><span data-stu-id="b1b52-170">In the tree, select 'model\Sales order number(SalesId)'.</span></span>
-5. <span data-ttu-id="b1b52-171">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="b1b52-171">Click Bind.</span></span>
-6. <span data-ttu-id="b1b52-172">Ve stromovém zobrazení vyberte možnost Faktura\InvoiceNumber.</span><span class="sxs-lookup"><span data-stu-id="b1b52-172">In the tree, select 'Invoice\InvoiceNumber'.</span></span>
-7. <span data-ttu-id="b1b52-173">Ve stromovém zobrazení rozbalte možnost 'model\Základní faktura(InvoiceBase)'.</span><span class="sxs-lookup"><span data-stu-id="b1b52-173">In the tree, expand 'model\Base invoice(InvoiceBase)'.</span></span>
-8. <span data-ttu-id="b1b52-174">Ve stromové struktuře vyberte model\Základní faktura(InvoiceBase)\Číslo faktury(Id).</span><span class="sxs-lookup"><span data-stu-id="b1b52-174">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice number(Id)'.</span></span>
-9. <span data-ttu-id="b1b52-175">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="b1b52-175">Click Bind.</span></span>
-10. <span data-ttu-id="b1b52-176">Ve stromovém zobrazení vyberte možnost 'Faktura\InvoiceAmount'.</span><span class="sxs-lookup"><span data-stu-id="b1b52-176">In the tree, select 'Invoice\InvoiceAmount'.</span></span>
-11. <span data-ttu-id="b1b52-177">Ve stromové struktuře vyberte 'model\Základní faktura(InvoiceBase)\Částka faktury(Amount)'.</span><span class="sxs-lookup"><span data-stu-id="b1b52-177">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice amount(Amount)'.</span></span>
-12. <span data-ttu-id="b1b52-178">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="b1b52-178">Click Bind.</span></span>
-13. <span data-ttu-id="b1b52-179">Ve stromovém zobrazení rozbalte možnost 'model\Přílohy faktury'.</span><span class="sxs-lookup"><span data-stu-id="b1b52-179">In the tree, expand 'model\Invoice attachments'.</span></span>
-14. <span data-ttu-id="b1b52-180">Ve stromové struktuře vyberte model\Přílohy faktury\Obsah souboru.</span><span class="sxs-lookup"><span data-stu-id="b1b52-180">In the tree, select 'model\Invoice attachments\File content'.</span></span>
-15. <span data-ttu-id="b1b52-181">Ve stromovém zobrazení vyberte možnost 'Faktura\EnclosedDocs\Dokument\FileContent\Base64'.</span><span class="sxs-lookup"><span data-stu-id="b1b52-181">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent\Base64'.</span></span>
-16. <span data-ttu-id="b1b52-182">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="b1b52-182">Click Bind.</span></span>
-17. <span data-ttu-id="b1b52-183">Ve stromovém zobrazení vyberte možnost 'modelPřílohy faktury\Název souboru'.</span><span class="sxs-lookup"><span data-stu-id="b1b52-183">In the tree, select 'model\Invoice attachments\File name'.</span></span>
-18. <span data-ttu-id="b1b52-184">Ve stromovém zobrazení vyberte možnost Faktura\EnclosedDocs\Dokument\FileName.</span><span class="sxs-lookup"><span data-stu-id="b1b52-184">In the tree, select 'Invoice\EnclosedDocs\Document\FileName'.</span></span>
-19. <span data-ttu-id="b1b52-185">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="b1b52-185">Click Bind.</span></span>
-20. <span data-ttu-id="b1b52-186">Ve stromovém zobrazení vyberte možnost 'model\Přílohy faktury'.</span><span class="sxs-lookup"><span data-stu-id="b1b52-186">In the tree, select 'model\Invoice attachments'.</span></span>
-21. <span data-ttu-id="b1b52-187">Ve stromovém zobrazení vyberte možnost Faktura\EnclosedDocs\Dokument.</span><span class="sxs-lookup"><span data-stu-id="b1b52-187">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
-22. <span data-ttu-id="b1b52-188">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="b1b52-188">Click Bind.</span></span>
-23. <span data-ttu-id="b1b52-189">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="b1b52-189">Click Save.</span></span>
-24. <span data-ttu-id="b1b52-190">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="b1b52-190">Close the page.</span></span>
+## <a name="map-format-elements-to-data-model-as-data-source"></a><span data-ttu-id="f6148-166">Namapování prvků formátu na datový model jako zdroje dat</span><span class="sxs-lookup"><span data-stu-id="f6148-166">Map format elements to data model as data source</span></span>
+1. <span data-ttu-id="f6148-167">Ve stromovém zobrazení vyberte možnost 'Faktura\SalesOrder'.</span><span class="sxs-lookup"><span data-stu-id="f6148-167">In the tree, select 'Invoice\SalesOrder'.</span></span>
+2. <span data-ttu-id="f6148-168">Klikněte na kartu Mapování.</span><span class="sxs-lookup"><span data-stu-id="f6148-168">Click the Mapping tab.</span></span>
+3. <span data-ttu-id="f6148-169">Ve stromovém zobrazení rozbalte „model“.</span><span class="sxs-lookup"><span data-stu-id="f6148-169">In the tree, expand 'model'.</span></span>
+4. <span data-ttu-id="f6148-170">Ve stromové struktuře vyberte 'model\Číslo prodejní objednávky(SalesId)'.</span><span class="sxs-lookup"><span data-stu-id="f6148-170">In the tree, select 'model\Sales order number(SalesId)'.</span></span>
+5. <span data-ttu-id="f6148-171">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="f6148-171">Click Bind.</span></span>
+6. <span data-ttu-id="f6148-172">Ve stromovém zobrazení vyberte možnost Faktura\InvoiceNumber.</span><span class="sxs-lookup"><span data-stu-id="f6148-172">In the tree, select 'Invoice\InvoiceNumber'.</span></span>
+7. <span data-ttu-id="f6148-173">Ve stromovém zobrazení rozbalte možnost 'model\Základní faktura(InvoiceBase)'.</span><span class="sxs-lookup"><span data-stu-id="f6148-173">In the tree, expand 'model\Base invoice(InvoiceBase)'.</span></span>
+8. <span data-ttu-id="f6148-174">Ve stromové struktuře vyberte model\Základní faktura(InvoiceBase)\Číslo faktury(Id).</span><span class="sxs-lookup"><span data-stu-id="f6148-174">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice number(Id)'.</span></span>
+9. <span data-ttu-id="f6148-175">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="f6148-175">Click Bind.</span></span>
+10. <span data-ttu-id="f6148-176">Ve stromovém zobrazení vyberte možnost 'Faktura\InvoiceAmount'.</span><span class="sxs-lookup"><span data-stu-id="f6148-176">In the tree, select 'Invoice\InvoiceAmount'.</span></span>
+11. <span data-ttu-id="f6148-177">Ve stromové struktuře vyberte 'model\Základní faktura(InvoiceBase)\Částka faktury(Amount)'.</span><span class="sxs-lookup"><span data-stu-id="f6148-177">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice amount(Amount)'.</span></span>
+12. <span data-ttu-id="f6148-178">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="f6148-178">Click Bind.</span></span>
+13. <span data-ttu-id="f6148-179">Ve stromovém zobrazení rozbalte možnost 'model\Přílohy faktury'.</span><span class="sxs-lookup"><span data-stu-id="f6148-179">In the tree, expand 'model\Invoice attachments'.</span></span>
+14. <span data-ttu-id="f6148-180">Ve stromové struktuře vyberte model\Přílohy faktury\Obsah souboru.</span><span class="sxs-lookup"><span data-stu-id="f6148-180">In the tree, select 'model\Invoice attachments\File content'.</span></span>
+15. <span data-ttu-id="f6148-181">Ve stromovém zobrazení vyberte možnost 'Faktura\EnclosedDocs\Dokument\FileContent\Base64'.</span><span class="sxs-lookup"><span data-stu-id="f6148-181">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent\Base64'.</span></span>
+16. <span data-ttu-id="f6148-182">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="f6148-182">Click Bind.</span></span>
+17. <span data-ttu-id="f6148-183">Ve stromovém zobrazení vyberte možnost 'modelPřílohy faktury\Název souboru'.</span><span class="sxs-lookup"><span data-stu-id="f6148-183">In the tree, select 'model\Invoice attachments\File name'.</span></span>
+18. <span data-ttu-id="f6148-184">Ve stromovém zobrazení vyberte možnost Faktura\EnclosedDocs\Dokument\FileName.</span><span class="sxs-lookup"><span data-stu-id="f6148-184">In the tree, select 'Invoice\EnclosedDocs\Document\FileName'.</span></span>
+19. <span data-ttu-id="f6148-185">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="f6148-185">Click Bind.</span></span>
+20. <span data-ttu-id="f6148-186">Ve stromovém zobrazení vyberte možnost 'model\Přílohy faktury'.</span><span class="sxs-lookup"><span data-stu-id="f6148-186">In the tree, select 'model\Invoice attachments'.</span></span>
+21. <span data-ttu-id="f6148-187">Ve stromovém zobrazení vyberte možnost Faktura\EnclosedDocs\Dokument.</span><span class="sxs-lookup"><span data-stu-id="f6148-187">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
+22. <span data-ttu-id="f6148-188">Klikněte na možnost Vazba.</span><span class="sxs-lookup"><span data-stu-id="f6148-188">Click Bind.</span></span>
+23. <span data-ttu-id="f6148-189">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="f6148-189">Click Save.</span></span>
+24. <span data-ttu-id="f6148-190">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="f6148-190">Close the page.</span></span>
 

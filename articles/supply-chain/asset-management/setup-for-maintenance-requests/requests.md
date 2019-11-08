@@ -18,27 +18,27 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfd62a18d6b4cfc8c41d9025a8fc5deb8768ed3f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 609146ebc5a31e5b28ca9ed6e04ed82b6bb1b03e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250914"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571109"
 ---
-# <a name="maintenance-requests"></a><span data-ttu-id="a8038-103">Požadavky na údržbu</span><span class="sxs-lookup"><span data-stu-id="a8038-103">Maintenance requests</span></span>
+# <a name="maintenance-requests"></a><span data-ttu-id="12b8f-103">Požadavky na údržbu</span><span class="sxs-lookup"><span data-stu-id="12b8f-103">Maintenance requests</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-<span data-ttu-id="a8038-104">Můžete nastavit různé typy požadavků pro použití ve vaší firmě.</span><span class="sxs-lookup"><span data-stu-id="a8038-104">You can set up various types of requests to use in your company.</span></span> <span data-ttu-id="a8038-105">Požadavky na údržbu jsou jeden typ.</span><span class="sxs-lookup"><span data-stu-id="a8038-105">Maintenance requests are one type.</span></span> <span data-ttu-id="a8038-106">Požadavky na údržbu se používají k požadavku, aby byl pro konkrétní úlohu požadován pracovní příkaz.</span><span class="sxs-lookup"><span data-stu-id="a8038-106">Maintenance requests are used to request that a work order be required for a specific job.</span></span> <span data-ttu-id="a8038-107">Požadavek na údržbu může vytvořit kterýkoli uživatel, který má přístup k funkcím správy majetku.</span><span class="sxs-lookup"><span data-stu-id="a8038-107">A maintenance request can be created by any user who has access to Asset Management functionality.</span></span> <span data-ttu-id="a8038-108">Plánovač nebo manažer může rozhodnout, zda má být požadavek na údržbu převeden na pracovní příkaz nebo zda má dokončit svůj životní cyklus.</span><span class="sxs-lookup"><span data-stu-id="a8038-108">A planner or manager can then decide whether a maintenance request should be converted to a work order, or whether it should complete its own lifecycle.</span></span>
+<span data-ttu-id="12b8f-104">Můžete nastavit různé typy požadavků pro použití ve vaší firmě.</span><span class="sxs-lookup"><span data-stu-id="12b8f-104">You can set up various types of requests to use in your company.</span></span> <span data-ttu-id="12b8f-105">Požadavky na údržbu jsou jeden typ.</span><span class="sxs-lookup"><span data-stu-id="12b8f-105">Maintenance requests are one type.</span></span> <span data-ttu-id="12b8f-106">Požadavky na údržbu se používají k požadavku, aby byl pro konkrétní úlohu požadován pracovní příkaz.</span><span class="sxs-lookup"><span data-stu-id="12b8f-106">Maintenance requests are used to request that a work order be required for a specific job.</span></span> <span data-ttu-id="12b8f-107">Požadavek na údržbu může vytvořit kterýkoli uživatel, který má přístup k funkcím správy majetku.</span><span class="sxs-lookup"><span data-stu-id="12b8f-107">A maintenance request can be created by any user who has access to Asset Management functionality.</span></span> <span data-ttu-id="12b8f-108">Plánovač nebo manažer může rozhodnout, zda má být požadavek na údržbu převeden na pracovní příkaz nebo zda má dokončit svůj životní cyklus.</span><span class="sxs-lookup"><span data-stu-id="12b8f-108">A planner or manager can then decide whether a maintenance request should be converted to a work order, or whether it should complete its own lifecycle.</span></span>
 
-## <a name="view-maintenance-requests"></a><span data-ttu-id="a8038-109">Zobrazit požadavky na údržbu</span><span class="sxs-lookup"><span data-stu-id="a8038-109">View maintenance requests</span></span>
+## <a name="view-maintenance-requests"></a><span data-ttu-id="12b8f-109">Zobrazit požadavky na údržbu</span><span class="sxs-lookup"><span data-stu-id="12b8f-109">View maintenance requests</span></span>
 
-- <span data-ttu-id="a8038-110">Vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="a8038-110">Select **Asset management** \> **Common** \> **Maintenance requests** \> **All maintenance requests** or **Active maintenance requests**.</span></span>
+- <span data-ttu-id="12b8f-110">Vyberte **Správa majetku** \> **Společné** \> **Požadavky na údržbu** \> **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="12b8f-110">Select **Asset management** \> **Common** \> **Maintenance requests** \> **All maintenance requests** or **Active maintenance requests**.</span></span>
 
-    <span data-ttu-id="a8038-111">Na stránce seznamu **Všechny požadavky na údržbu** jsou zobrazeny všechny požadavky na údržbu bez ohledu na jejich stav životního cyklu.</span><span class="sxs-lookup"><span data-stu-id="a8038-111">The **All maintenance requests** list page shows all maintenance requests, regardless of their lifecycle state.</span></span> <span data-ttu-id="a8038-112">Na stránce seznamu **Aktivní požadavky na údržbu** jsou zobrazeny pouze požadavky na údržbu, které jsou v aktivním stavu.</span><span class="sxs-lookup"><span data-stu-id="a8038-112">The **Active maintenance requests** lists page shows only maintenance requests that are in an active state.</span></span>
+    <span data-ttu-id="12b8f-111">Na stránce seznamu **Všechny požadavky na údržbu** jsou zobrazeny všechny požadavky na údržbu bez ohledu na jejich stav životního cyklu.</span><span class="sxs-lookup"><span data-stu-id="12b8f-111">The **All maintenance requests** list page shows all maintenance requests, regardless of their lifecycle state.</span></span> <span data-ttu-id="12b8f-112">Na stránce seznamu **Aktivní požadavky na údržbu** jsou zobrazeny pouze požadavky na údržbu, které jsou v aktivním stavu.</span><span class="sxs-lookup"><span data-stu-id="12b8f-112">The **Active maintenance requests** lists page shows only maintenance requests that are in an active state.</span></span>
 
-<span data-ttu-id="a8038-113">Následující ilustrace znázorňuje příklad stránky **Všechny požadavky na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="a8038-113">The following illustration shows an example of the **All maintenance requests** list page.</span></span>
+<span data-ttu-id="12b8f-113">Následující ilustrace znázorňuje příklad stránky **Všechny požadavky na údržbu**.</span><span class="sxs-lookup"><span data-stu-id="12b8f-113">The following illustration shows an example of the **All maintenance requests** list page.</span></span>
 
-![Obrázek č. 1](media/01-setup-for-requests.png)
+![Stránka Všechny požadavky na údržbu](media/01-setup-for-requests.png)
