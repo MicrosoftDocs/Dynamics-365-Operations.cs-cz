@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 29f9975d8270b3f79d0aac0c62609b4a9c71ae89
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 322e3ac6f7c37fffdd4d59ed86bccec10559f4b9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874617"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569770"
 ---
 # <a name="work-order-project-setup"></a>Nastavení projektu pracovního příkazu
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 V modulu **Správa majetku** je pro každou úlohu pracovního příkazu požadován vztah projektu. Projekt, který je přidružený k úloze pracovního příkazu, umožňuje sledovat náklady na různých projektech, které souvisejí se správou majetku, jako jsou například projekty interní údržby, projekty správy servisu a investiční projekty. 
 
@@ -72,7 +72,7 @@ Nastavení umožňuje úplnou integraci s modulem **Řízení projektů a úče
 
     Ve výchozím nastavení je počátečním datem datum přidání projektu pracovní objednávky na stránku. Je ovládáno polem **Platné od**, které je ve výchozím nastavení skryto. Chcete-li zobrazit pole **Platné od**, vyberte **Zobrazit** \> **Vše**. Poté můžete použít pole **Platné od** spolu s polem **Koncové datum** pro nastavení omezené doby platnosti pro projekt pracovního příkazu.
 
-    ![Obrázek č. 1](media/17-setup-for-work-orders.png)
+    ![Stránka Nastavení projektu pracovních příkazů](media/17-setup-for-work-orders.png)
 
 6. Na kartě **Skupina projektů** vyberte **Přidat**.
 7. V poli **Typ pracovního příkazu** vyberte typ pracovního příkazu.
@@ -80,7 +80,7 @@ Nastavení umožňuje úplnou integraci s modulem **Řízení projektů a úče
 9. V poli **Skupina projektů** vyberte skupinu projektů, která by měla souviset s typem pracovního příkazu. Například typ pracovního příkazu s názvem **Preventivní údržba** může být přidružen ke skupině projektů s názvem **Předchozí údr.** nebo **Interní.** Alternativně, typ pracovního příkazu **Investice**, který se používá pro pracovní příkazy související s investicemi a s dlouhodobým majetkem, může být přidružen ke skupině projektů s názvem **Investovat** nebo **Investice**.
 10. Zvolte **Uložit**.
 
-![Obrázek č. 2](media/18-setup-for-work-orders.png)
+![Stránka nastavení projektu pracovních příkazů, přidání pracovního příkazu](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Při každém vytvoření řádku pracovního příkazu vyhledá Správa majetku skupinu projektů, která by měla souviset s projektem pracovního příkazu. Hledání je založeno na nastavení popsaném v tomto tématu. Každá skupina projektů má související typ projektu. Skupiny projektů s **Časem a materiálem** nebo typem projektu **S pevnou cenou** jsou platné pouze pro majetek, který souvisí s účtem odběratele.

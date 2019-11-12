@@ -3,7 +3,7 @@ title: Uložená zobrazení
 description: V tomto tématu je popsán způsob použití funkcí uložených zobrazení.
 author: jasongre
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 4b1bd7b869b68f82ce8056ac9f87a0d3bdce4102
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2f76c4e50649d3eda951940a2186348c29474dc6
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190872"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658660"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
@@ -37,9 +37,11 @@ S tradičním individuálním nastavením mohou uživatelé používat pouze jed
 
 -    Zobrazení vytvořená pro určité typy stránek mohou zahrnovat také filtry přidané uživatelem, což uživatelům umožňuje rychle se vrátit k běžně filtrovaným datovým sadám. Další informace naleznete v části [Které stránky podporují zobrazení](saved-views.md#what-pages-support-views). 
 
--    Zobrazení lze publikovat do rolí zabezpečení, což znamená, že každý uživatel s touto rolí bude moci přistupovat k tomuto zobrazení a používat je bez ohledu na možnost přizpůsobení. Tato schopnost publikování umožňuje organizacím definovat standardní podniková zobrazení optimalizovaná pro jejich podnikání. Další informace naleznete v části [Správa individuálních nastavení na organizační úrovni se zobrazeními](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
+-    Zobrazení mohou být publikována uživatelům v určitých rolích zabezpečení a konkrétních právnických osob. Proto může libovolný uživatel, který má zadanou roli v zadané právnické osobě, přistupovat k tomuto zobrazení a používat ho, i když tento uživatel nemusí být schopen jej přizpůsobit. Tato schopnost publikování umožňuje organizacím definovat standardní podniková zobrazení optimalizovaná pro jejich podnikání. Další informace naleznete v části [Správa individuálních nastavení na organizační úrovni se zobrazeními](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
 
 -    Na rozdíl od tradičního přizpůsobení nejsou zobrazení automaticky uložena, když uživatel provádí explicitní přizpůsobení nebo filtruje seznam. Explicitní ukládání je nutné k zajištění pružnosti při vytváření zobrazení před nebo po provedení změn souvisejících s tímto zobrazením a zajištění, že definice zobrazení nejsou neúmyslně změněny filtry nebo přizpůsobeními, které nejsou určeny pro dlouhodobé použití.  
+
+-    Zobrazení lze přidat do pracovních prostorů jako dlaždice, seznamy nebo odkazy. Filtrovanou datovou sadu je tedy možné rozdělit do pracovního prostoru a uživatelé mohou přidružit sadu individuálních nastavení, která jsou relevantní pro danou datovou sadu s dlaždicí nebo propojením.
 
 ## <a name="switching-between-views"></a>Přepínání mezi zobrazeními
 Po povolení zobrazení pro prostředí bude libovolná stránka, která podporuje zobrazení, obsahovat sbalený ovládací prvek voliče zobrazení v horní části formuláře, který zobrazuje název aktuálního zobrazení.  
@@ -52,9 +54,9 @@ Výběr zobrazení obsahuje dvě varianty velikosti:
  
 Kliknete-li na název zobrazení, otevře se výběr zobrazení a zobrazí se seznam dostupných zobrazení pro tuto stránku.
 
--    **Klasické zobrazení**: klasické zobrazení je zobrazení stránky bez explicitního přizpůsobení, které jste použili.  
+-    **Standardní zobrazení**: **Standardní** zobrazení (dříve známé jako **klasické** zobrazení) je přímé zobrazení stránky, kde není použito explicitní přizpůsobení.
 -    **Osobní zobrazení**: Zobrazení bez zámků představují vaše osobní zobrazení. Jedná se o zobrazení, která jste vytvořili, nebo která vám dal správce.  
--    **Zamčená zobrazení**: Některá zobrazení (jako klasické zobrazení a všechna zobrazení publikovaná v dané roli) mají ve voliči zobrazení vedle sebe visací zámek, což znamená, že tato zobrazení nelze upravovat. Implicitní vlastní nastavení, která odrážejí využití stránky, jsou však automaticky uložena, například změna šířky sloupce mřížky nebo rozbalení či sbalení pevné záložky. Můžete však vytvořit individuální zobrazení založené na uzamčeném zobrazení s použitím akce **Uložit kopii**, pokud máte oprávnění pro individuální nastavení.
+-    **Uzamknutá zobrazení**: Některá zobrazení (například **Standardní** zobrazení a všechna zobrazení publikovaná u vaší role) mají vedle sebe v selektoru zobrazení symbol zámku. Tento symbol označuje, že tato zobrazení nelze upravit. Implicitní přizpůsobení, která odrážejí využití stránky, jsou však automaticky uložena. Tato implicitní přizpůsobení zahrnují změnu šířky sloupce mřížky nebo rozbalení či sbalení pevné záložky. Pokud však máte oprávnění pro individuální nastavení, můžete pomocí akce **Uložit jako** vytvořit osobní zobrazení založené na uzamknutém zobrazení.
 -    **Nová zobrazení**: Publikovaná zobrazení, která ještě nebyla otevřena, jsou vymezena pomocí podnícení nalevo od názvu zobrazení.  
 
 Chcete-li přepnout do jiného zobrazení, otevřete nejprve selektor zobrazení a poté vyberte zobrazení, které chcete načíst. 
@@ -69,7 +71,7 @@ Chcete-li tyto změny uložit, postupujte podle následujících kroků.
 2.  Změna stávajícího zobrazení:
      1. Zvolte **Uložit**. Všimněte si, že tato akce nebude povolena pro zamčená zobrazení. 
 3.  Vytvoření nového zobrazení:
-     1.    Vyberte **Uložit kopii**. 
+     1.    Zvolte **Uložit jako**. 
      2.    Zadejte název (a volitelně) popis zobrazení.
      3.    Zvolte **Uložit**.
 
@@ -81,7 +83,7 @@ Pokud chcete změnit výchozí zobrazení stránky, postupujte takto:
 2.  Chcete-li otevřít selektor zobrazení, vyberte název zobrazení. 
 3.  Vyberte **Více** a potom **Připnout jako výchozí**.  
 
-Případně můžete při vytváření nového zobrazení (pomocí akce **Uložit kopii**) nastavit toto nové zobrazení jako výchozí nastavením možnosti **Připnout jako výchozí** před uložením zobrazení.  
+Případně můžete při vytváření nového zobrazení (pomocí akce **Uložit jako**) nastavit toto nové zobrazení jako výchozí nastavením možnosti **Připnout jako výchozí** před uložením zobrazení.
 
 Všimněte si, že v některých případech se dotaz přidružený k výchozímu zobrazení nespustí při prvním přechodu na stránku. Pokud například přejdete v dlaždici na stránku, bude dotaz dlaždice proveden bez ohledu na dotaz přidružený k výchozímu zobrazení. Pokud také přejdete na stránku, jejíž klasické zobrazení již má definovaný dotaz, bude původní dotaz proveden místo dotazu výchozího zobrazení. Pokud k tomu dojde, zobrazí se při načítání zobrazení výstražná informační zpráva. Přepnutí zobrazení po načtení stránky by umožnilo spuštění dotazu zobrazení očekávaným způsobem.
 
@@ -97,24 +99,27 @@ Chcete-li zobrazit seznam dostupných zobrazení pro tuto stránku, je k dispozi
 Změny provedené v tomto dialogovém okně se projeví po výběru tlačítka **Uložit**.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Správa individuálních nastavení na organizační úrovni se zobrazeními
-Chcete-li porozumět zlepšení správy osobních nastavení na úrovni organizace, podívejme se nejprve, jak Správa přizpůsobení pro vlastní nastavení fungovala před zobrazením.  
+Na pomoc s pochopením, jak uložená zobrazení pomáhají zlepšit správu vlastních nastavení na organizační úrovni, popisuje tato část, jak fungovala správa individuálních nastavení předtím, než byla zobrazení k dispozici.
 
 Bez zobrazení mohli správci pro stránku použít sadu individuálních nastavení pro uživatele nebo skupinu uživatelů pomocí stránky pro individuální nastavení. Pokud mají tito uživatelé práva pro individuální nastavení, používalo se na této stránce individuální nastavení. Nebylo však možné zabránit uživatelům v další personalizaci stránky, což znamenalo, že organizace nemohla uživatelům zajistit konzistentní uživatelské rozhraní. Pokud některý z těchto uživatelů neměl práva pro individuální nastavení, nebyla zavedena individuální nastavení, která jim byla přidělena správcem. Když navíc byli do určité organizace zařazeni noví uživatelé, bylo nutné, aby správci ručně načetli sadu individuálních nastavení pro daného uživatele. Neexistoval žádný automatický mechanismus pro určení, že určitá sada individuálních nastavení by měla být dostupná pro uživatele v dané roli.
 
-Pomocí funkce uložená zobrazení je Správa organizace individuálního nastavení podstatně snadnější, především kvůli možnosti publikování zobrazení rolím zabezpečení. Po publikování zobrazení bude každý uživatel s touto rolí moci přistupovat k tomuto zobrazení a používat je bez ohledu na možnost přizpůsobení. Zatímco má každý uživatel kopii v publikovaném zobrazení, v němž je použito automatické přizpůsobení stránky (implicitní individuální nastavení), nemůže žádný uživatel uložit explicitní přizpůsobení nebo aktualizace dotazu do publikovaného zobrazení (tj. publikovaná zobrazení jsou uzamčena). Pokud navíc novému uživateli byla přidělena role, do kterého bylo zobrazení publikováno, budou automaticky zobrazena zobrazení přidružená k jejich rolím bez zásahu správce. Podobně pokud uživatel změní role v organizaci, zobrazení přidružená k původní roli již nebudou dostupná, a to ani bez zásahu správce. Aktualizace publikovaného zobrazení lze uživatelům snadno distribuovat tím, že zobrazení znovu publikujete do příslušných rolí zabezpečení.
+Pomocí funkce uložená zobrazení je správa organizace individuálního nastavení podstatně snadnější, především díky možnosti publikování zobrazení rolím zabezpečení. Po publikování zobrazení budou mít všichni uživatelé, kteří mají jednu z definovaných rolí zabezpečení a jsou v zadaných právnických osobách, přístup k zobrazení a jeho používání i přesto, že tento uživatel nemusí být schopen jej přizpůsobit. Zatímco má každý uživatel kopii v publikovaném zobrazení, v němž je použito automatické přizpůsobení stránky (implicitní individuální nastavení), nemůže žádný uživatel uložit explicitní přizpůsobení nebo aktualizace dotazu do publikovaného zobrazení. (Jinými slovy, publikovaná zobrazení jsou uzamčena.) Pokud navíc noví uživatele dostanou role v právnických osobách, do nichž byla publikována zobrazení, budou automaticky zobrazena zobrazení přidružená k jejich rolím a právnickým osobám. Od správce se nevyžaduje žádná další akce. Podobně platí, že pokud uživatelé změní role v organizaci nebo mají přístup k různým právnickým osobám, může se stát, že již nebudou moci získat přístup k zobrazením, která byla k nim dříve publikována. Znovu není potřeba žádná akce správce.
+
+Aktualizace publikovaného zobrazení lze uživatelům snadno distribuovat tím, že zobrazení znovu publikujete do příslušných rolí zabezpečení a právnických osob.
 
 Tato schopnost publikování umožňuje organizacím definovat standardní podniková zobrazení optimalizovaná pro jejich podnikání zaměřené na uživatele s konkrétními rolemi zabezpečení.  
 
 ## <a name="publishing-views"></a>Publikování zobrazení
-Během procesu publikování lze zobrazení přiřadit k jedné nebo více rolím zabezpečení, což znamená, že každý uživatel s touto rolí bude moci přistupovat k tomuto zobrazení a používat je, ale nemůže upravit zobrazení. V současné době mají v rozevírací nabídce selektoru práva k akci **Publikování** pouze správci systému, ale v budoucí aktualizaci bude k dispozici nová role zabezpečení, která poskytne práva pro publikování jiným důvěryhodným uživatelům.  
+Během procesu publikování lze zobrazení přiřadit k jedné nebo více rolím zabezpečení pro jednu nebo více právnických osob. Z toho vyplývá, že každý uživatel, který má přístup k právnické osobě a který je přiřazen k jedné z těchto rolí, má přístup k zobrazení a k jejich používání, přestože je nemůže upravovat. V současné době mají práva k akci **publikovat** v rozevírací nabídce zobrazení výběru správci systému. Ostatní důvěryhodní uživatelé ve vaší organizaci však mohou mít také přístup k zobrazení publikování pomocí nové role **Správce uložených zobrazení**.
 
 Zobrazení publikujete takto. 
 1.  Vytvořte a uložte osobní kopii zobrazení, kterou chcete publikovat. 
 2.  V zobrazení, které je aktuálně načteno, vyberte název zobrazení pro otevření rozevírací nabídky selektoru zobrazení. 
 3.  Vyberte tlačítko **Další** a potom **Publikovat**. Otevře se dialogové okno Publikovat.  
-4.  Zadejte název a (volitelně) popis zobrazení. Toto jméno se zobrazí uživatelům, kteří toto zobrazení obdrží, v jejich selektorech zobrazení. Na stránce nejsou povoleny žádné duplicitní názvy pro publikovaná zobrazení, a to ani v případě, že se seznam rolí, které se používají, liší.  
-5.  Přidejte všechny role zabezpečení, které odpovídají uživatelům, kteří budou moci zobrazit toto zobrazení.  
-6.  Zvolte **Publikovat**.
+4.  Zadejte název a (volitelně) popis zobrazení. Jméno, které zadáte, se zobrazí uživatelům, kteří toto zobrazení obdrží, v jejich selektorech zobrazení. Názvy publikovaných zobrazení pro stránku musí být jedinečné. Na stránce nejsou povoleny žádné duplicitní názvy, a to ani v případě, že se seznam rolí nebo právnických osob, na něž jsou zobrazení aplikována, liší.
+5.  Přidejte role zabezpečení, které odpovídají uživatelům, na něž je toto zobrazení zaměřeno.
+6. Přidejte právnické osoby, pro které má být toto zobrazení k dispozici. 
+7.  Zvolte **Publikovat**.
 
 Všimněte si, že v některých prostředích může tato doba trvat dlouho (až hodinu), než uživatelé uvidí publikované zobrazení.
 
@@ -142,7 +147,7 @@ Zatímco všichni uživatelé vidí kartu **Moje zobrazení** s osobními zobraz
 
 Chcete-li zobrazit seznam všech dostupných zobrazení pro tuto stránku, je k dispozici následující soubor akcí. 
 
--    **Publikování**: chcete-li znovu publikovat zobrazení s upravenými parametry publikování (název, popis, role zabezpečení), použijte akci **Publikování**.  
+-    **Publikovat**: Použijte akci **Publikovat**, pokud chdete znovu publikovat zobrazení s upravenými parametry publikování (název, popis, role zabezpečení).
 -    **Odebrat**: k trvalému odstranění publikovaného zobrazení použijte akci **odebrat**. Tato akce odebere zobrazení pro všechny uživatele v systému.  
  
 Změny provedené v tomto dialogovém okně se projeví až po výběru tlačítka **Uložit**.
@@ -161,7 +166,9 @@ Chcete-li povolit uložená zobrazení, když je tato funkce v náhledu, postupu
 
 4.  **Povolit funkci**: vyhledejte funkci **Uložená zobrazení** v seznamu funkcí a v podokně podrobností vyberte **Povolit nyní**.
 
-Všechny následující uživatelské relace budou začínat uloženým zobrazením.  
+Všechny následující uživatelské relace budou začínat uloženým zobrazením.
+
+Uložená zobrazení slouží pro použití pouze v prostředí vrstvy 1 (Dev/Test) a vrstvy 2 (Sandbox), aby bylo možné poskytnout další testování a změny návrhu. V budoucím vydání bude k dispozici náhled uložených pohledů v provozním prostředí.
 
 Všimněte si, že pokud je individuální nastavení pro dané prostředí vypnuto, zobrazení budou zakázána i v případě, že provedete výše uvedené kroky. Důvodem je, že funkce zobrazení je postavena na podsystému individuálního nastavení.
 
@@ -172,7 +179,7 @@ Jsou-li povolena zobrazení, budou všechna existující individuální nastaven
 Zobrazení jsou k dispozici ve většině, ale ne na všech stránkách. Zobrazení jsou aktuálně k dispozici na všech stránkách na celé obrazovce s výjimkou řídicích panelů a pracovních prostorů. Neúplné stránky obrazovky, které obsahují dialogová okna, rozevírací dialogová okna, vyhledávání, rozšířené náhledy, aktuálně nepodporují zobrazení. Zobrazení podpory pro další typy stránek, jako jsou například pracovní prostory a dialogová okna, může být vzato v úvahu pro budoucí aktualizaci.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Kdo smí publikovat zobrazení?
-V současné době představují správci systému jediné uživatele, kteří mají práva k publikování v zobrazeních.  V budoucí aktualizaci je plánována nová role zabezpečení, která poskytne zákazníkům větší flexibilitu, jakou mohou publikovat.  
+Pouze správci a uživatelé, kteří byli přiřazeni k roli **Správce uložených zobrazení**, mají práva pro publikování. 
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Proč nemohu uložit filtry s tímto zobrazením? 
 Existuje několik důvodů, proč se filtr nemusí zobrazit pro uložení se zobrazením: 

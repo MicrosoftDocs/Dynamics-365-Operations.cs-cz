@@ -3,70 +3,67 @@ title: Měrný systém majetku
 description: Toto téma vysvětluje, jak vytvořit typy měrného systému majetku v modulu Správa majetku.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9c445832a649c4f6a6642036ecab325e8aa2079
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.search.validFrom: 2019-09-30
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: bc6b9e944a7ecf6b769a8e3c2f9b1fbafaa60734
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783133"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626101"
 ---
-# <a name="asset-measures"></a>Mšrné systémy majetku
+# <a name="counters"></a>Čítače
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+Toto téma vysvětluje, jak vytvořit typy čítačů v modulu Správa majetku. Typy čítačů majetku se používají k provádění registrací čítačů u majetku, například pokud jde o počet hodin výroby nebo množství vyrobeného majetku. Typy majetku souvisí s typy čítačů. To znamená, že čítačů majetku lze použít u majetku použít pouze v případě, že je u typu majetku použitého pro daný majetek nastaven čítač majetku.
 
-Toto téma vysvětluje, jak vytvořit typy měrného systému majetku v modulu Správa majetku. Typy měrných systémů majetku se používají k provádění registrací měrného systému u majetku, například pokud jde o počet hodin výroby nebo množství vyrobeného majetku. Typy majetku souvisí s typy měrného systému majetku. To znamená, že měrný systém majetku lze použít u majetku použít pouze v případě, že je u typu majetku použitého pro daný majetek nastaven měrný systém majetku.
+Před provedením registrací čítače u majetku nejprve vytvořte typy čítače majetku, které chcete použít, v části **Čítače**. Dále můžete vytvořit registrace čítače u majetku v okně **Čítače**. 
 
-Před provedením registrací měrného systému u majetku nejprve vytvořte typy měrného systému majetku, které chcete použít, v části **Čítače**. Dále můžete vytvořit registrace měrného systému u majetku v okně **Měrný systém majetku**. 
+Čítače je možné používat v plánech údržby. Řádek Plán údržby může být typu Čítač, například v souvislosti s počtem hodin výroby nebo vyrobeného množství. 
 
-Měrný systém majetku je možné používat v plánech údržby. Řádek Plán údržby může být typu Čítač, například v souvislosti s počtem hodin výroby nebo vyrobeného množství. 
-
-Registraci měrného systému majetku lze aktualizovat ručně nebo automaticky na základě hodin výroby nebo vyrobeného množství. Měrný systém majetku lze nastavit pro použití jedné ze tří metod aktualizace (vybraných v poli **Aktualizovat** v **čítačích**):
+Registraci čítače majetku lze aktualizovat ručně nebo automaticky na základě hodin výroby nebo vyrobeného množství. Čítač lze nastavit pro použití jedné ze tří metod aktualizace (vybraných v poli **Aktualizovat** v **čítačích**):
   
-- Ručně - hodnoty měrného systému majetku je nutné registrovat ručně.  
+- Ručně - hodnoty čítače je nutné registrovat ručně.  
 - Výrobní hodiny - čítač je automaticky aktualizován na základě počtu výrobních hodin.  
 - Množství výroby - čítač je automaticky aktualizován na základě počtu vyrobeného množství.  
 
 >[!NOTE]
->Pokud se použije vyrobené množství, *všechny* registrované položky jsou zahrnuty do registrace měrného systému, dobrého množství i chybového množství. V případě potřeby je vždy možné provést ruční registraci měrného systému majetku.
+>Pokud se použije vyrobené množství, *všechny* registrované položky jsou zahrnuty do registrace čítače, dobrého množství i chybového množství. V případě potřeby je vždy možné provést ruční registraci čítače.
 
 ## <a name="create-counter-types-for-asset-counter-registrations"></a>Vytvoření typů čítačů pro registrace čítačů majetku
 
 1. Vyberte **Správa majetku** > **Nastavení** > **Typy majetku** > **Čítače**.
-2. Zvolte **Nový** pro vytvoření nového typu měrného systému majetku.
+2. Zvolte **Nový** pro vytvoření nového typu čítače.
 3. Zadejte ID do pole **Čítač** a název čítače do pole **Název**.
-4. Na pevné záložce **Obecné** vyberte měrnou jednotku v poli **Jednotka**.
-5. V poli **Aktualizovat** vyberte metodu aktualizace, která bude použita pro měrný systém majetku.
-6. Vyberte Ano u přepínacího tlačítka **Zdědit hodnoty čítače**, pokud má podřízený majetek ve struktuře majetku automaticky zdědit registrace měření majetku provedené v nadřízeném majetku.
-7. V poli **Agregovaný součet** vyberte metodu sumarizace, která má být použita pro měrný systém majetku s použitím tohoto typu měrného systému majetku. "Součet" je standardní výběr použitý pro nepřetržité přidávání registrovaných hodnot k celkové hodnotě. "Průměr" lze použít, pokud je měrný systém majetku nastaven na sledování prahové hodnoty, například ohledně teploty, vibrací nebo opotřebení majetku. 
-8. Do pole **Odchylka nad** zadejte horní úroveň v procentech pro ověření, zda jsou položky ručního měrného systému majetku v očekávaném rozsahu. Ověření je založeno na lineárním nárůstu ve stávajících registracích měrného systému majetku.
-9. Do pole **Odchylka pod** zadejte dolní úroveň v procentech pro ověření, zda jsou položky ručního měrného systému majetku v očekávaném rozsahu. Ověření je založeno na lineárním snížení ve stávajících registracích měrného systému majetku.
-10. V poli **Typ** vyberte typ zprávy (informace, upozornění, chyba), která se zobrazí, pokud se při provádění ručních registrací měrného systému majetku vyskytnou odchylky mimo definovaný rozsah.
-11. Na pevné záložce **Typy majetku** přidejte typy majetku, které by měly být schopny používat měrný systém majetku.
-12. Na pevné záložce **Související měrné jednotky majetku** přidejte měrné systémy majetku, který chcete automaticky aktualizovat při aktualizaci tohoto měrného systému majetku.
+4. Na pevné záložce **Obecné** vyberte čítač v poli **Jednotka**.
+5. V poli **Aktualizovat** vyberte metodu aktualizace, která bude použita pro čítač.
+6. Vyberte Ano u přepínacího tlačítka **Zdědit hodnoty čítače**, pokud má podřízený majetek ve struktuře majetku automaticky zdědit registrace čítače provedené v nadřízeném majetku.
+7. V poli **Agregovaný součet** vyberte metodu sumarizace, která má být použita pro čítač s použitím tohoto typu čítače. "Součet" je standardní výběr použitý pro nepřetržité přidávání registrovaných hodnot k celkové hodnotě. "Průměr" lze použít, pokud je čítač nastaven na sledování prahové hodnoty, například ohledně teploty, vibrací nebo opotřebení majetku. 
+8. Do pole **Odchylka nad** zadejte horní úroveň v procentech pro ověření, zda jsou položky ručního čítače v očekávaném rozsahu. Ověření je založeno na lineárním nárůstu ve stávajících registracích čítače.
+9. Do pole **Odchylka pod** zadejte dolní úroveň v procentech pro ověření, zda jsou položky ručního čítače v očekávaném rozsahu. Ověření je založeno na lineárním snížení ve stávajících registracích čítače.
+10. V poli **Typ** vyberte typ zprávy (informace, upozornění, chyba), která se zobrazí, pokud se při provádění ručních registrací čítače vyskytnou odchylky mimo definovaný rozsah.
+11. Na pevné záložce **Typy majetku** přidejte typy majetku, které by měly být schopny používat čítač.
+12. Na pevné záložce **Související čítače majetku** přidejte čítač, který chcete automaticky aktualizovat při aktualizaci tohoto čítače.
 
 
 >[!NOTE]
->Související měrný systém majetku je automaticky aktualizován pouze v případě, že má odpovídající měrný systém majetku typ majetku, ke kterému se vztahuje, v nastavení měrného systému majetku. Například: nastavíte měrný systém majetku na "výrobní hodiny" a přidáte typ majetku " Motor nákladního automobilu". Při aktualizaci tohoto měrného systému majetku je aktualizován také související čítač "benzín" se stejnými hodnotami měrného systému majetku. Nastavení v poli **čítače** zahrnuje nastavení v poli "hodiny". U měrného systému majetku "Benzín" by měl být na pevnou záložku **Typy majetku** přidán typ majetku Motor nákladního automobilu pro zajištění vztahu měrného systému majetku. Na následujících snímcích obrazovky je uveden příklad nastavení v měrném systému Hodiny a Benzín.
+>Související čítač je automaticky aktualizován pouze v případě, že má odpovídající čítač typ majetku, ke kterému se vztahuje, v nastavení měrného systému majetku. Například: nastavíte čítač na "výrobní hodiny" a přidáte typ majetku " Motor nákladního automobilu". Při aktualizaci tohoto čítače je aktualizován také související čítač "benzín" se stejnými hodnotami čítače. Nastavení v poli **čítače** zahrnuje nastavení v poli "hodiny". U čítače "Benzín" by měl být na pevnou záložku **Typy majetku** přidán typ majetku Motor nákladního automobilu pro zajištění vztahu čítače. Na následujících snímcích obrazovky je uveden příklad nastavení v čítačích Hodiny a Benzín.
 
-Když jsou typy majetku přidány k typu měrného systému majetku v poli **Čítače**, je tento měrný systém majetku automaticky přidán k typům majetku na pevné záložce v okně **čítače** v poli [Typy majetku](../setup-for-objects/object-types.md).
+Když jsou typy majetku přidány k typu čítače v poli **Čítače**, je tento čítač automaticky přidán k typům majetku na pevné záložce v okně **čítače** v poli [Typy majetku](../setup-for-objects/object-types.md).
 
 ![Obrázek č. 1](media/071-setup-for-objects.png)
-
 

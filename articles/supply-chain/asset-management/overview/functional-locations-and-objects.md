@@ -18,32 +18,32 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5271b673d758608cae8e43d72b7e75b259d5f142
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: e3a42d36fd137aa780886276a4235f1b8f3a3680
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024607"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653340"
 ---
 # <a name="functional-locations-and-assets"></a>Funkční místa a majetek
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Toto téma popisuje funkční místa a majetek v modulu Správa majetku. Správa majetku je rozšířený modul pro správu majetku a úloh údržby v aplikaci Dynamics 365 Supply Chain Management.
 
 ## <a name="overview"></a>Přehled
 
-Správa majetku je bezproblémově integrována s několika moduly v aplikaci Finance and Operations. Následující ilustrace znázorňuje rozhraní s jinými moduly.
+Správa majetku je bezproblémově integrována s několika moduly v dalších aplikacích Finance and Operations. Následující ilustrace znázorňuje rozhraní s jinými moduly.
 
-![Obrázek č. 1](media/01-overview-image.png)
+![Diagram znázorňující způsob, jakým jsou rozhraní správy majetku s jinými moduly](media/01-overview-image.png)
 
 Správa majetku umožňuje efektivně spravovat a provádět všechny úkoly související se správou a údržbou mnoha typů zařízení ve vaší firmě. Toto zařízení zahrnuje stroje, výrobní zařízení a vozidla. Správa majetku též podporuje řešení napříč četnými průmyslovými odvětvími.
 
 Následující ilustrace znázorňuje přehled hlavních funkcí, které jsou pokryty správou majetku.
 
-![Obrázek č. 2](media/02-overview-image.png)
+![Diagram znázorňující hlavní funkce ve správě majetku](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Funkční místa a majetek
 
@@ -53,8 +53,8 @@ Náklady na majetek se vždy řídí místem majetku. Jinými slovy, pokud je ma
 
 Způsob vytvoření hierarchie funkčních míst závisí na požadavcích vaší společnosti na údržbu interního vybavení nebo na údržbě vybavení zákazníka. Následující obrázek znázorňuje příklad funkčních míst, která jsou založena na zeměpisných lokalitách.
 
-![Obrázek č. 3](media/03-overview-image.png)
+![Diagram znázorňující funkční místa na základě geografických umístění](media/03-overview-image.png)
 
 Následující obrázek znázorňuje příklad funkčních míst, která jsou založena na zákaznících.
 
-![Obrázek č. 4](media/04-overview-image.png)
+![Diagram znázorňující funkční místa na základě zákazníků](media/04-overview-image.png)

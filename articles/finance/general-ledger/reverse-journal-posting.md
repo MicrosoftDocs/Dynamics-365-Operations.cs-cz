@@ -3,7 +3,7 @@ title: Stornování zaúčtování deníků
 description: V tomto tématu jsou popsány funkce, které umožňují stornovat doklady ze seznamu transakcí dokladu nebo z finančních deníků.
 author: MikeFalkner
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,51 +18,56 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a5456e60f1f3cee5f83ac7f725f7e01ba5bd7a1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: bc2ff30ef5d08759af700d683c207b0f5ed65d5b
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248578"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658964"
 ---
 # <a name="reverse-journal-posting"></a>Stornování zaúčtování deníků
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Toto téma popisuje funkce schopnosti Microsoft Dynamics 365 Finance, které umožňují stornovat celý deník nebo stornovat jeden nebo více dokladů ze seznamu transakcí dokladu bez ohledu na jejich původ. 
+Toto téma popisuje funkce schopnosti Microsoft Dynamics 365 Finance, které umožňují stornovat celý deník nebo jeden nebo více dokladů ze seznamu transakcí dokladu bez ohledu na jejich původ. 
 
 ## <a name="reversing-journals"></a>Storno deníků
 
 Řádky deníku můžete stornovat jednotlivě. Při zaúčtování storna deníku můžete také stornovat celý finanční deník. Postup stornování deníku: 
-- Otevření finančního deníku a filtrování podle zaúčtovaných deníků
-- Klikněte na nabídku Stornovat v horní části stránky
+
+- Otevřete finanční deník a filtrujte podle zaúčtovaných deníků.
+- Vyberte na nabídku **Stornovat** v horní části stránky.
 - Zobrazí se celkový počet dokladů a řádků dokladů a také celková částka stornovaných řádků.
-- Vyberte možnost Ano, chcete-li použít existující data transakcí nebo hodnotu Ne a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
-- Pokud jste vybrali možnost Ne, zadejte datum transakce pro stornování. 
+- Vyberte možnost **Ano**, chcete-li použít existující data transakcí nebo hodnotu **Ne** a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
+- Pokud vyberete možnost **Ne**, zadejte datum transakce pro stornování. 
 - Zadejte poznámku, kterou chcete přidat k transakci storna.
-- Klikněte na tlačítko Stornovat.
+- Zvolte tlačítko **Stornovat**.
 
 Transakce budou stornovány. 
 
-Pokud počet řádků dokladu překročí 100 řádků, bude proces storna proveden pomocí dávkového zpracování. Výsledky stornování můžete zkontrolovat zobrazením komentářů v dávkové úloze, která byla spuštěna. Všechny chyby budou zaznamenány v historii dávkové úlohy.
+Pokud počet řádků dokladu obsahuje více než 100 řádků, bude proces storna proveden pomocí dávkového zpracování. Výsledky můžete zkontrolovat zobrazením komentářů v dávkové úloze. Všechny transakce, u nichž nelze provést stornování, budou uvedeny v historii dávkové úlohy.
 
-Pokud je počet řádků dokladu 100 nebo méně, bude proces storna spuštěn okamžitě. Výsledky budou uvedeny v dialogovém okně, ve kterém je zobrazen libovolný doklad, který nelze vrátit, a důvod, proč jej nelze stornovat. Kliknutím na tlačítko OK dialogové okno zavřete.
+Pokud doklad obsahuje 100 nebo méně řádků, bude proces storna spuštěn okamžitě. Výsledky budou uvedeny v dialogovém okně, ve kterém je zobrazen libovolný doklad, který nelze vrátit, a důvod, proč jej nelze stornovat. Zvolte **OK** a zavřete dialogové okno.
 
 ## <a name="reversing-vouchers-from-the-voucher-transaction-list"></a>Stornování dokladů ze seznamu transakcí dokladu. 
 
 Můžete také stornovat doklady ze **seznamu transakcí dokladu** ve všech dílčích knihách. Kromě toho lze najednou stornovat více dokladů. 
 
 Chcete-li stornovat jeden nebo více dokladů, postupujte takto: 
-- Klikněte na nabídku Stornovat v horní části stránky
+
+- Vyberte na nabídku **Stornovat** v horní části stránky.
 - Zobrazí se celkový počet dokladů a řádků dokladů a také celková částka stornovaných řádků.
-- Vyberte možnost Ano, chcete-li použít existující data transakcí nebo hodnotu Ne a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
-- Pokud jste vybrali možnost Ne, zadejte datum transakce pro stornování. 
-- Zadejte poznámku, kterou chcete přidat k transakci storna.
-- Klikněte na tlačítko Stornovat.
+- Vyberte možnost **Ano**, chcete-li použít existující data transakcí nebo hodnotu **Ne** a zadat novou. V některých případech může být období původní transakce uzavřeno a pro stornování bude nutné zadat nové datum transakce.
+- Pokud vyberete možnost **Ne**, zadejte datum transakce pro stornování. 
+- Zadejte komentář popisující transakci stornování.
+- Zvolte tlačítko **Stornovat**.
 
 Transakce budou stornovány. 
 
-Pokud počet řádků dokladu překročí 100 řádků, bude proces storna proveden pomocí dávkového zpracování. Výsledky stornování můžete zkontrolovat zobrazením komentářů v dávkové úloze, která byla spuštěna. Všechny chyby budou zaznamenány v historii dávkové úlohy.
+Pokud počet řádků dokladu obsahuje více než 100 řádků dokladu, bude proces storna proveden pomocí dávkového zpracování. Výsledky můžete zkontrolovat zobrazením komentářů v dávkové úloze. Všechny transakce, u nichž nelze provést stornování, budou uvedeny v historii dávkové úlohy.
 
-Pokud je počet řádků dokladu 100 nebo méně, bude proces storna spuštěn okamžitě. Výsledky budou uvedeny v dialogovém okně, ve kterém je zobrazen libovolný doklad, který nelze vrátit, a důvod, proč jej nelze stornovat. Kliknutím na tlačítko OK dialogové okno zavřete.
+Pokud je počet řádků dokladu 100 nebo méně, bude proces storna spuštěn okamžitě. Výsledky se zobrazí v dialogovém okně, ve kterém je zobrazen libovolný doklad, který nelze vrátit, a důvod, proč jej nelze stornovat. Zvolte **OK** a zavřete dialogové okno.
+
+Transakce lze stornovat pouze v případě, že vyhovují obchodním pravidlům pro jejich stornování. Platby dodavatele nelze stornovat pomocí možnosti popsané v tomto tématu. Platby dodavatelů je nutné stornovat podle kroků uvedených v části [Stornování platby dodavatele](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 

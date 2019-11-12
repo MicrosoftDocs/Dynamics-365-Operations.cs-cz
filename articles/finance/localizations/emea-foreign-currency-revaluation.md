@@ -16,14 +16,14 @@ ms.search.region: Czech Republic, Estonia, Latvia, Lithuania, Poland
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d61fd9fa59f45ac022cb7a884951f4d40d7cf68
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3cc02e12e619342097891fdd0c851176ee0bcd4d
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183485"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2552351"
 ---
-# <a name="currency-revaluation-for-bank-account-transactions"></a>Přecenění měny pro transakce bankovních účtů
+# <a name="foreign-currency-revaluation-for-bank-accounts"></a>Přecenění cizí měny pro bankovní účty
 
 [!include [banner](../includes/banner.md)]
 

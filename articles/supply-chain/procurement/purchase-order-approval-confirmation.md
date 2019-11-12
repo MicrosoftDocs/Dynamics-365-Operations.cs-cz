@@ -19,45 +19,43 @@ ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58ff596314d348a465ba6ee23369f09e74d580eb
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 265e4dd4be63f70a29e46b6acf7db514feb599a4
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248859"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652165"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Schválení a potvrzení nákupních objednávek
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Toto téma popisuje stavy, kterými prochází nákupní objednávka poté, co byla vytvořena, a efekt umožňující správu změn v nákupních objednávkách.
 
 Po vytvoření by měla nákupní objednávka projít schvalovacím procesem. Jakmile dodavatel odsouhlasí s objednávku, nákupní objednávka bude nastavena na stav **Potvrzeno**.
 
 ## <a name="approval-of-purchase-orders"></a>Schválení nákupních objednávek
-Nákupní objednávky, které nepoužívají správu změn, mají stav **Schváleno** ihned po jejich vytvoření, zatímco nákupní objednávky, které používají správu změn, jsou po vytvoření ve stavu **Návrh**. Nákupní objednávka, která byla vytvořena při potvrzení plánované objednávky z hlavního plánování, je vždy nastavena na stav **Schváleno** bez ohledu na nastavení správy změn. Nákupní objednávka vytváří skladové transakce pouze v případě, že dosáhne stavu **Schváleno**. Proto se dané zásoby nezobrazují jako dostupné pro rezervaci nebo označení, dokud objednávka nebude přijata.  
+Nákupní objednávky, které nepoužívají správu změn, mají stav **Schváleno** ihned po jejich vytvoření, zatímco nákupní objednávky, které používají správu změn, jsou po vytvoření ve stavu **Návrh**. Nákupní objednávka, která byla vytvořena při potvrzení plánované objednávky z hlavního plánování, je vždy nastavena na stav **Schváleno** bez ohledu na nastavení správy změn. Nákupní objednávka vytváří skladové transakce pouze v případě, že dosáhne stavu **Schváleno**. Proto se dané zásoby nezobrazují jako dostupné pro rezervaci nebo označení, dokud objednávka nebude přijata.
 
-Správu změn pro nákupní objednávky povolíte nastavením možnosti **Aktivovat správu změn** na stránce **Parametry modulu Zásobování a zdroje**. Pokud je povolena správa změn, nákupní objednávky musí po dokončení projít workflowem schválení. Aplikace Supply Chain Management má editor procesu workflowu, kde můžete definovat workflow představující proces schválení. Tento pracovní postup může zahrnovat pravidla pro automatické schválení, pravidla, která určují, kdo bude přiřazen ke schválení konkrétních nákupních objednávek, a pravidla pro předání pracovního postupu, který čekal dlouhou dobu na schválení. Můžete povolit proces řízení změn pro všechny dodavatele nebo jen pro konkrétní dodavatele. Proces lze také nastavit tak, aby jej bylo možné přepsat pro jednotlivé nákupní objednávky.  
+Správu změn pro nákupní objednávky povolíte nastavením možnosti **Aktivovat správu změn** na stránce **Parametry modulu Zásobování a zdroje**. Pokud je povolena správa změn, nákupní objednávky musí po dokončení projít workflowem schválení. Aplikace Supply Chain Management má editor procesu workflowu, kde můžete definovat workflow představující proces schválení. Tento pracovní postup může zahrnovat pravidla pro automatické schválení, pravidla, která určují, kdo bude přiřazen ke schválení konkrétních nákupních objednávek, a pravidla pro předání pracovního postupu, který čekal dlouhou dobu na schválení. Můžete povolit proces řízení změn pro všechny dodavatele nebo jen pro konkrétní dodavatele. Proces lze také nastavit tak, aby jej bylo možné přepsat pro jednotlivé nákupní objednávky.
 
 Pokud je povolena správa změn, nákupní objednávky prochází šesti stavy schválení od **Návrh** po **Dokončeno**. Po schválení objednávky musí uživatelé, kteří ji chtějí změnit, použít akci **Požadavek na změnu**.
 
 | Stav schválení | Popis                                                                      | Požadavek na změnu je povolen |
 |-----------------|----------------------------------------------------------------------------------|---------------------------|
-| Koncept           | Nákupní objednávka je ve stavu Návrh a nebyla odeslána ke schválení v pracovním postupu nákupní objednávky.     | Č.                        |
+| Koncept           | Nákupní objednávka je ve stavu Návrh a nebyla odeslána ke schválení v pracovním postupu nákupní objednávky.     | Ne                        |
 | Probíhá kontrola       | Nákupní objednávka byla předložena ke schválení v pracovním postupu nákupní objednávky. Čeká se na schválení.       | Č.                        |
 | Odmítnuto        | Nákupní objednávka byla odmítnuta během procesu schvalování.                                 | Č.                        |
 | Schváleno        | Nákupní objednávka byla schválena.                                                             | Ano                       |
 | Potvrzeno       | Nákupní objednávka byla potvrzena. Nákupní objednávky nelze potvrdit, dokud nedojde k jejich schválení.        | Ano                       |
-| Dokončeno       | Nákupní objednávka byla dokončena. Nyní je finančně uzavřena a nemůže již být změněna. | Č.                        |
+| Finalizováno       | Nákupní objednávka byla dokončena. Nyní je finančně uzavřena a nemůže již být změněna. | Ne                        |
 
 ## <a name="confirming-purchase-orders"></a>Potvrzení nákupních objednávek
-Nákupní objednávky, které mají stav schválení **Schváleno**, mohou projít dalšími kroky před jejich potvrzením. Například může být nutné odeslat dotaz na nákup dodavateli s dotazem na cenu, slevy nebo data dodání. V takovém případě můžete nastavit nákupní objednávku na stav **Na externí kontrole** pomocí akce **Nákupní dotaz**.  
+Nákupní objednávky, které mají stav schválení **Schváleno**, mohou projít dalšími kroky před jejich potvrzením. Například může být nutné odeslat dotaz na nákup dodavateli s dotazem na cenu, slevy nebo data dodání. V takovém případě můžete nastavit nákupní objednávku na stav **Na externí kontrole** pomocí akce **Nákupní dotaz**.
 
-Dodavatelé, kteří jsou nastaveni pro použití portálu pro dodavatele, mohou kontrolovat objednávky z portálu, a zde je také schválit nebo zamítnout. Během tohoto procesu kontroly mají nákupní objednávky stav **Na externí kontrole**. Je možné nakonfigurovat portál pro dodavatele tak, aby potvrzení od dodavatele automaticky potvrdilo objednávku v aplikaci Supply Chain Management. Případně můžete ručně ověřit nákupní objednávku po obdržení potvrzení od dodavatele. Jestliže dodavatel odmítne nákupní objednávku, odmítnutí je přijato společně s důvodem zamítnutí a návrhy na změny. V tomto případě zůstává stav nákupní objednávky **Na externí kontrole**.  
+Dodavatelé, kteří jsou nastaveni pro použití portálu pro dodavatele, mohou kontrolovat objednávky z portálu, a zde je také schválit nebo zamítnout. Během tohoto procesu kontroly mají nákupní objednávky stav **Na externí kontrole**. Je možné nakonfigurovat portál pro dodavatele tak, aby potvrzení od dodavatele automaticky potvrdilo objednávku v aplikaci Supply Chain Management. Případně můžete ručně ověřit nákupní objednávku po obdržení potvrzení od dodavatele. Jestliže dodavatel odmítne nákupní objednávku, odmítnutí je přijato společně s důvodem zamítnutí a návrhy na změny. V tomto případě zůstává stav nákupní objednávky **Na externí kontrole**.
 
-Existuje také možnost vygenerovat proforma potvrzení pro objednávku ještě před skutečným zpracováním potvrzení. Tato volba vytvoří jednoduše sestavu, kterou můžete sdílet s dodavatelem. Nevytváří žádné informace v deníku.  
+Existuje také možnost vygenerovat proforma potvrzení pro objednávku ještě před skutečným zpracováním potvrzení. Tato volba vytvoří jednoduše sestavu, kterou můžete sdílet s dodavatelem. Nevytváří žádné informace v deníku.
 
 Poté, co dodavatel souhlasil s objednávkou, je dalším krokem označení nákupní objednávky jako potvrzené. Dokončení tohoto kroku je možné buď pomocí akce **Potvrzení** nebo **Potvrdit**. Obě tyto akce nastaví stav schválení objednávky na **Potvrzeno**. Potvrzení objednávky iniciuje další dva procesy:
 
@@ -67,13 +65,25 @@ Poté, co dodavatel souhlasil s objednávkou, je dalším krokem označení nák
 Dodavatel může požádat o nějaký typ záruky toho, že bude odeslána platba za nákup. Existují různé metody poskytnutí této záruky v rámci zpracování závazků. Například akce **Záloha** si vyhradí finanční prostředky pro nákupní objednávku, a tato záloha je zaznamenána v nákupní objednávce.
 
 ## <a name="changing-purchase-orders"></a>Změna nákupních objednávek
-V některých případech může být nutné změnit nákupní objednávku poté, co dosáhne stavu schválení **Schváleno** nebo **Potvrzeno**.  
+V některých případech může být nutné změnit nákupní objednávku poté, co dosáhne stavu schválení **Schváleno** nebo **Potvrzeno**.
 
-Pokud byla nákupní objednávka vytvořena pomocí procesu řízení změn, můžete provádět změny vyvoláním objednávky, nebo pokud objednávka již byla schválena, tak pomocí akce **Požadavek na změnu**. V takovém případě je stav schválení upraven zpět na **Návrh**, a vy pak můžete změnit pořadí. Po provedení změn bude pravděpodobně nutné předložit nákupní objednávku k opětovnému schválení. Můžete nakonfigurovat typy změn, které vyžadují opětovné schválení, pomocí pravidla zásad **Pravidlo opětovného schválení pro nákupní objednávky** na stránce **Zásady nákupu**.  
+Pokud byla nákupní objednávka vytvořena pomocí procesu řízení změn, můžete provádět změny vyvoláním objednávky, nebo pokud objednávka již byla schválena, tak pomocí akce **Požadavek na změnu**. V takovém případě je stav schválení upraven zpět na **Návrh**, a vy pak můžete změnit pořadí. Po provedení změn bude pravděpodobně nutné předložit nákupní objednávku k opětovnému schválení. Můžete nakonfigurovat typy změn, které vyžadují opětovné schválení, pomocí pravidla zásad **Pravidlo opětovného schválení pro nákupní objednávky** na stránce **Zásady nákupu**.
 
 Pokud byla dodána část objednaného množství pro řádek nákupní objednávky, nelze již objednané množství změnit. Můžete však změnit množství **Zbývá dodat** na řádku. Poté můžete použít akci **Dokončit** ke zrušení řádků a zabránění dalšímu zpracování. 
 
 Jakmile je objednávka potvrzena, nemůžete ji již odstranit. Můžete však zrušit celkové množství nebo libovolné zbývající množství na objednávce, a to za předpokladu, že množství nebylo přijato nebo fakturováno.
+
+## <a name="canceling-purchase-orders"></a>Zrušení nákupních objednávek
+
+Nákupní objednávku lze zrušit pomocí akce **Storno** v záhlaví.
+
+Pokud bylo množství částečně registrováno, přijato nebo fakturováno, můžete zrušit pouze zbývající množství, které nebylo zaregistrováno, přijato nebo fakturováno. Objednané množství se pak sníží odpovídajícím způsobem. Po aktualizaci množství na řádku se také aktualizuje stav řádku. Původní množství na řádku je například 5 a je přijato množství 3. V takovém případě lze zrušit pouze dvě. Řádek bude poté aktualizován na stav **Přijato**.
+
+Pokud je do řádku objednávky přidán zůstatek k dodání, který překračuje množství na řádku objednávky, akce **stornování** neodstraní nadbytečné množství. Místo toho zůstane řádek ve stavu **Otevřená objednávka**, protože má zbývající množství. Původní množství na řádku je například 5 a zbývající část dodávky je 7. Pokud je objednávka zrušena, pět se zruší a množství 2 zůstane, jak lze zobrazit ve skladových transakcích.
+
+Chcete-li zrušit celé množství na řádku NO, zrušte v řádku zbývající množství dodání. Řádek bude poté aktualizován na stav **Zrušeno**.
+
+Pokud PO prochází správou změn, každá změna, například zrušení objednávky nebo zůstatek dodávky, musí být před dokončením procesu odeslána do systému workflowu a schválena a skladové transakce mohou být aktualizovány jako zrušené.
 
 <a name="additional-resources"></a>Další zdroje
 --------
@@ -84,7 +94,7 @@ Jakmile je objednávka potvrzena, nemůžete ji již odstranit. Můžete však z
 
 [Příjemka produktu proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 
-[Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Přehled faktur dodavatele](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

@@ -3,7 +3,7 @@ title: Ručně vytvořené pracovní příkazy
 description: Toto téma vysvětluje, jak vytvořit pracovní příkazy ručně v modulu Správa majetku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,131 +16,153 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 261448a134a7c1aacfbb4ea6f954ce03a63c23e2
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875545"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626240"
 ---
 # <a name="manually-created-work-orders"></a>Ručně vytvořené pracovní příkazy
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
-
 
 Pracovní příkazy lze vytvořit ručně dvěma způsoby:
 
-- ve **Všech pracovních příkazech** nebo **Aktivních pracovních příkazech**  
-- ve **Všech požadavcích na údržbu** nebo **Aktivních požadavcích na údržbu** nebo **Požadavcích na údržbu v mém funkčním místě**  
+- Na stránce **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy** 
+- Ze stránky **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu** nebo **Požadavky na údržbu v mém funkčním místě**. 
 
 ## <a name="create-work-order"></a>Vytvořit pracovní příkaz
 
-1. Klikněte na **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
-2. Klikněte na tlačítko **Nový**.
+2. Zvolte **Nové**.
 
-3. V rozevíracím seznamu **Vytvořit pracovní příkaz** vyberte typ pracovního příkazu.
+3. V dialogovém okně **Vytvořit pracovní příkaz** vyberte typ pracovního příkazu v poli **Typ pracovního příkazu**.
 
-4. Pokud je to nutné, vyberte popis.
+4. Pokud je to nutné, vyberte **popis**.
 
-5. Vyberte majetek pro pracovní příkaz a typ práce údržby.
+5. V poli **Majetek** vyberte majetek.
 
 >[!NOTE]
->Když vyberete majetek, jsou k dispozici tři karty: karta **Můj majetek** obsahuje majetek související s funkčními místy, do kterých můžete být přidělení (pracovník údržby, který je přihlášen k systému) (nastavení v [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md)). Nejsou-li u pracovníka údržby ve formuláři [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md) nastavena žádná funkční umístění, nebude karta **můj majetek** viditelná. Karta **Aktivní majetek** obsahuje seznam všech datových zdrojů, které jsou aktivní pro stav životnosti majetku. Karta **Zobrazení majetku** zobrazuje stromové zobrazení funkčních míst a datových zdrojů nainstalovaných v těchto umístěních.
+>Vyberete-li majetek, mohou být v rozevíracím seznamu **Majetek** k dispozici tři karty: 
 
-6. V případě potřeby vyberte **Varianta typu práce údržby** a **Obchod**.
+- **Aktivní majetek** - obsahuje seznam všech datových zdrojů, které jsou aktivní pro stav životnosti majetku. 
+- **Zobrazení majetku** - zobrazuje stromové zobrazení funkčních míst a datových zdrojů nainstalovaných v těchto umístěních.
+- **Můj majetek** – Tato karta obsahuje majetek související s funkčními místy, ke kterým může být přiřazen (pracovník, který je přihlášený do systému). (Informace o nastavení naleznete v tématu [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md).) Pokud pro pracovníka nejsou nastavena žádná funkční místa v části [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md), karta **Můj majetek** není dostupná. 
 
-7. V případě potřeby lze úroveň služeb pracovního příkazu v poli **Úroveň služeb** změnit.
+6. V poli **Typ práce údržby** vyberte typ práce údržby pro pracovní příkaz.
 
-8. V souvisejících polích vyberte očekávaná počáteční a koncová data.
+7. V případě potřeby vyberte **Varianta typu práce údržby** a **Obchod**.
 
-9. Klepnutím na **OK** vytvořte nový pracovní příkaz.
+8. V případě potřeby lze úroveň služeb pracovního příkazu v poli **Úroveň služeb** změnit.
 
-10. Upravte pracovní příkaz ve **Všech pracovních příkazech**, je-li to vyžadováno.
+9. V příslušných polích vyberte **Očekávané počáteční** a **očekávané koncové** datum.
 
-- Ve **Všech pracovních příkazech** můžete přidat několik majetků do pracovního příkazu v zobrazení Podrobností přidáním řádků na pevné záložce **Práce údržby pracovního příkazu**. U majetku můžete vybrat pouze typy prací údržby, které jsou definovány v typu majetku vybraném pro daný majetek.  
-- Pokud jste změnili úroveň služby Majetek nebo kritičnost majetku po jejich použití v pracovním příkazu (viz informace [Úrovně služby Majetek](../setup-for-objects/object-priorities.md) a [Kritičnosti majetku](../setup-for-objects/object-criticalities.md)), nebude se úroveň služeb nebo kritičnost v pracovním příkazu odpovídajícím způsobem aktualizovat.
-- Kritičnost na pracovním příkazu je přepočítána pokaždé, když je v pracovním příkazu přidán nebo odstraněn řádek.
-- V zobrazení podrobností **Všechny pracovní příkazy** > zobrazení **Záhlaví** > pevné záložce **Plán** můžete vybrat skupinu odpovědného pracovníka údržby nebo odpovědného pracovníka údržby v poli **Odpovědná skupina** nebo **Odpovědný**. Toto nastavení lze změnit, pokud je pracovní příkaz aktivní, například při změně stavu životního cyklu pracovního příkazu. Automatický výběr provedený při vytvoření pracovního příkazu je založen na nastavení v položce **Odpovědní pracovníci údržby**. Pokud přidáte nebo odeberete úlohy pracovní objednávky po vytvoření pracovní objednávky a pole **Odpovědná skupina** a pole **Odpovědný** jsou při aktualizaci pracovního příkazu prázdné, vyhledá Správa majetku možné párování ve formuláři nastavení pro skupinu odpovědných pracovníků údržby nebo odpovědného pracovníka údržby. Pokud je pole **Odpovědná skupina** nebo **Odpovědný** po aktualizaci pracovního příkazu vyplněno, nebudou provedeny žádné změny. 
+10. Kliknutím na **OK** vytvořte pracovní příkaz.
 
-- Ve **Stavu údržby** můžete provést výpočet pro získání přehledu pracovního vytížení, které se týkají příchozích a dokončených pracovních příkazů.  
+11. Na stránce se seznamem **Všechny pracovní příkazy** můžete podle potřeby upravit požadovaný pracovní příkaz.
 
-- Na pevné záložce **Podrobnosti řádku** použijte pole **Zeměpisná šířka** a **Zeměpisná délka** k přidání geografických souřadnic pro majetek vybraný na pracovním příkazu.  
+Mějte na paměti následující body:
+
+- V podrobném zobrazení na stránce **Všechny pracovní příkazy** můžete přidat několik majetků do pracovního příkazu v zobrazení Podrobností přidáním řádků na pevné záložce **Práce údržby pracovního příkazu**. U majetku můžete vybrat pouze typy prací údržby, které jsou definovány v typu majetku vybraném pro daný majetek.  
+
+- Změníte-li v tomto nastavení kritičnost majetku poté, co jste jej již použili v pracovním příkazu, nebude tato servisní úroveň kritičnost v pracovním příkazu odpovídajícím způsobem aktualizována. Další informace o úrovních servisu a závažností naleznete v tématu [Úrovně servisu majetku](../setup-for-objects/object-priorities.md) a [Závažnosti majetku](../setup-for-objects/object-criticalities.md).
+
+- Závažnost v pracovním příkazu je přepočítána pokaždé, když je v pracovním příkazu přidán nebo odstraněn řádek.
+
+- V podrobném zobrazení **Všechny pracovní příkazy** > karta **Záhlaví** > pevná záložka **Plán** ve skupině **Zodpovědná osoba** nebo v poli **Zodopovědná osoba** můžete vybrat skupinu odpovědného pracovníka údržby nebo odpovědného pracovníka údržby. Tato nastavení lze změnit, pokud je pracovní příkaz aktivní. Lze je například změnit, když se změní stav životního cyklu pracovního příkazu. Automatický výběr provedený při vytvoření pracovního příkazu je založen na nastavení na stránce **Odpovědní pracovníci údržby**. Pokud přidáte nebo odeberete úlohy pracovní objednávky po vytvoření pracovní objednávky a pole **Odpovědná skupina** a pole **Odpovědný** jsou při aktualizaci pracovního příkazu prázdné, vyhledá Správa majetku možné párování ve formuláři nastavení pro skupinu odpovědných pracovníků údržby nebo odpovědného pracovníka údržby pro možnou shodu na stránce nastavení. Pokud je pole **Odpovědná skupina** nebo **Odpovědný pracovník** po aktualizaci pracovního příkazu už nastaveno, nebudou provedeny žádné změny. Další informace o tom, jak nastavit zodpovědné pracovníky pdržby a skupiny pracovníků, naleznete v tématu [Zodpovědní pracovníci údržby](../setup-for-maintenance-requests/responsible-workers.md).
+
+- Ze stránky [Stav údržby](../controlling-and-reporting/maintenance-status.md) můžete provést výpočet pro získání přehledu pracovního vytížení, které se týkají příchozích a dokončených pracovních příkazů.  
+
+- V zobrazení podrobností na stránce **Všechny pracovní příkazy** na pevné záložce **Podrobnosti řádku** můžete pomocí polí **Zeměpisná šířka** a **Zeměpisná délka** přidat zeměpisné souřadnice majetku vybraného v úloze pracovního příkazu.  
+
 
 ## <a name="create-related-work-order"></a>Vytvořit související pracovní příkaz
 
-Související pracovní příkaz můžete vytvořit pro existující pracovní příkaz, pokud například chcete pracovat s primárními a sekundárními pracovními příkazy. Nový pracovní příkaz je založen na úloze pracovního příkazu z existujícího pracovního příkazu.
+Můžete vytvořit pracovní příkaz na základě stávajícího pracovního příkazu. To je užitečné třeba v případě, že chcete registrovat primární a sekundární pracovní příkazy. Nový pracovní příkaz je založen na úloze pracovního příkazu z existujícího pracovního příkazu.
 
-1. Klikněte na **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 2. Vyberte pracovní příkaz, pro který chcete vytvořit související pracovní příkaz.
 
-3. Klikněte na **Související pracovní příkaz**.
+3. V podokně akcí na kartě **Pracovní příkaz** ve skupině **Nový** vyberte **Související pracovní příkaz**.
 
-4. V rozevíracím dialogovém okně **Vytvořit související pracovní příkaz** vyberte úlohu pracovního příkazu, pro kterou chcete vytvořit související pracovní příkaz v poli **Úloha pracovního příkazu**.
+4. V dialogovém okně **Vytvořit související pracovní příkaz** vyberte úlohu pracovního příkazu, pro kterou chcete vytvořit související pracovní příkaz v poli **Úloha pracovního příkazu**.
 
-5. Vyberte typ úlohy údržby v poli **Typ úlohy údržby** a v případě potřeby i související variantu typu úlohy údržby a obchod v polích **Varianta typu práce údržby** a **Oobchod**.
+5. V poli **Typ práce údržby** vyberte typ práce údržby.
 
-6. Pokud se jedná o první související pracovní příkaz, klikněte na přepínač **Nový pracovní příkaz**.
+6. V polích **Varianta typu práce údržby** a **Obor** vyberte pro typ práce údržby související variantu typu práce údržby a obor.
 
-7. V souvisejících polích vyberte **Typ pracovního příkazu** a **Popis**.
+7. Je-li tento pracovní příkaz první související pracovní příkaz, který byl vytvořen pro vybraný pracovní příkaz, postupujte takto:
+    1. Vyberte možnost **Nový pracovní příkaz**.
+    2. V poli **Typ pracovního příkazu** vyberte typ pracovního příkazu.
+    3. Zadejte popis do pole **Popis**.
+    4. V případě potřeby změňte úroveň služeb pracovního příkazu v poli **Úroveň služeb**.
+    5. V polích **Očekávaný začátek** a **Očekávaný konec** vyberte počáteční a koncové datum.
+    6. Vyberte **OK**. Nový související pracovní příkaz se zobrazí na stránce seznamu **Všechny pracovní příkazy**.  
 
-8. V případě potřeby změňte úroveň služeb pracovního příkazu v poli **Úroveň služeb**.
+8. Pokud se jedná o pracovní příkaz, pro který vytváříte tent související pracovní příkaz, pro již existují související pracovní příkazy, přidejte pomocí následujících kroků novou úlohu pracovního příkazu do existujícího souvisejícího pracovního příkazu:
+    1. Vyberte možnost **Přidat do souvisejícího pracovního příkazu**.
+    2. Pak v poli **pracovní příkaz** vyberte související pracovní příkaz, ke kterému chcete přidat novou úlohu pracovního příkazu.
+    3. V případě potřeby změňte úroveň služeb pracovního příkazu v poli **Úroveň služeb**.
+    4. V polích **Očekávaný začátek** a **Očekávaný konec** změňte podle potřeby očekávané počáteční a koncové datum.
+    5. Vyberte **OK**. Úloha pracovního příkazu se přidá do existujícího souvisejícího pracovního příkazu.
 
-9. Vložte očekávaná počáteční a koncová data v souvisejících polích.
-
-10. Klikněte na tlačítko **OK**. Nový související pracovní příkaz se zobrazí v seznamu **Všechny pracovní příkazy**.
-
-11. Pokud vytvoříte související pracovní příkaz na pracovním příkazu, který již obsahuje související pracovní příkazy, můžete úlohu pracovního příkazu přidat do již souvisejícího pracovního příkazu. To lze provést kliknutím na přepínač **Přidat k souvisejícímu pracovnímu příkazu** v kroku 6. Poté vyberte související pracovní příkaz, ke kterému chcete přidat novou úlohu pracovního příkazu. Podle potřeby upravte pole **Úroveň služeb**, **Očekávané zahájení** a **Očekávaný konec** a klikněte na tlačítko **OK**. Úloha pracovního příkazu se přidá do existujícího souvisejícího pracovního příkazu.
-
+Na následujícím obrázku je uveden příklad dialogu **Vytvořit související pracovní příkaz**.
 
 ![Obrázek č. 1](media/03-work-orders.png)
 
-**Poznámka:** Pokud jste nastavili související masku pracovního příkazu v **Parametry správy majetku** > **Pracovní příkazy** > **Související maska pracovního příkazu**, budou v souladu s nastavením masky vytvořeny ID pracovních příkazů. Není-li nastavena žádná související maska pracovního příkazu, bude pro související pracovní příkazy použito další dostupné ID pracovního příkazu.
+>[!NOTE]
+>Pokud jste nastavili související masku pracovního příkazu na kartě **Parametry správy majetku** > **Pracovní příkazy** > **Související maska pracovního příkazu**, budou v souladu s nastavením masky vytvořena ID pracovních příkazů. Není-li nastavena žádná související maska pracovního příkazu, bude pro související pracovní příkazy použito další dostupné ID pracovního příkazu.
 
-## <a name="copy-work-order"></a>Zkopírovat pracovní příkaz
+## <a name="copy-a-work-order"></a>Zkopírování pracovního příkazu
 
-Nový pracovní příkaz lze rychle vytvořit z existujícího pracovního příkazu. Tento postup práce s pracovními příkazy se liší od vytváření pracovních příkazů na základě plánů údržby. To je užitečné například v případě, že máte pracovní příkaz obsahující mnoho úloh pracovního příkazu s různými úlohami v různých majetcích, které by měly být v pravidelných intervalech dokončeny.
+Nový pracovní příkaz lze rychle vytvořit z existujícího pracovního příkazu. Tento postup práce s pracovními příkazy se liší od vytváření pracovních příkazů na základě [plánů údržby](../preventive-and-reactive-maintenance/maintenance-plans.md). To je užitečné například v případě, že máte pracovní příkaz obsahující mnoho úloh pracovního příkazu s různými úlohami v různých majetcích, které by měly být v pravidelných intervalech dokončeny.
 
-1. Klikněte na **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
+1. Vyberte **Správa majetku** > **Společné** > **Pracovní příkazy** > **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
 2. Vyberte pracovní příkaz, ze kterého chcete kopírovat obsah.
 
-3. Klikněte na **Kopírovat pracovní příkaz**. Zobrazí se nastavení pracovního příkazu z vybraného pracovního příkazu. V případě potřeby můžete některá pole upravit.
+3. V podokně akcí na kartě > **Pracovní příkaz** ve skupině > **Nový** vyberte **Kopírovat pracovní příkaz**.
 
-4. Klepnutím na **OK** vytvořte nový pracovní příkaz.
+4. Zobrazí se nastavení pracovního příkazu z vybraného pracovního příkazu. V případě potřeby můžete některá pole upravit.
 
-5. Upravte pracovní příkaz ve **Všech pracovních příkazech**, je-li to vyžadováno.
+5. Výběrem **OK** vytvořte nový pracovní příkaz.
+
+6. Na stránce se seznamem **Všechny pracovní příkazy** můžete podle potřeby upravit požadovaný pracovní příkaz.
 
 >[!NOTE]
->Při vytvoření nového pracovního příkazu se některé informace zkopírují přímo z existujícího pracovního příkazu. Informace týkající se prognóz, nástrojů, kontrolních seznamů údržby, funkčního umístění, adres a plánování nejsou zkopírovány, ale inicializovány z aktuálního nastavení v modulu Správa majetku. To znamená, že pokud byly změny provedeny v datech od vytvoření prvního pracovního příkazu až po dobu jeho kopie, budou tyto změny zahrnuty do nově vytvořeného pracovního příkazu. Příkladem jsou změny v prognózách nebo aktualizované kontrolní seznamy údržby.
+>Při vytvoření nového pracovního příkazu se některé informace zkopírují přímo z existujícího pracovního příkazu. Informace o prognózách, nástrojích, kontrolních seznamech údržby, funkčním místě, adresách a plánování nejsou kopírovány. Místo toho je inicializován z aktuálního nastavení v modulu Správa majetku. Proto, pokud byly tyto informace změněny mezi časem vytvoření prvního pracovního příkazu a časem, kdy jste provedli kopii pracovní objednávky, budou změny zahrnuty do nového pracovního příkazu. Příkladem jsou změny v prognózách nebo aktualizace kontrolních seznamů údržby.
 
+Na následujícím obrázku je uveden příklad dialogového okna **Kopírovat pracovní příkaz**.
 
 ![Obrázek č. 2](media/04-work-orders.png)
 
 
-## <a name="create-work-order-based-on-a-maintenance-request"></a>Vytvoření pracovního příkazu na základě požadavku na údržbu
+## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Vytvoření pracovního příkazu na základě požadavku na údržbu
 
-1. Klikněte na **Správa majetku** > **Společné** > **Požadavky na údržbu** > **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu**.
+1. Vyberte **Správa majetku** > **Společné** > **Požadavky na údržbu** > **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu**.
 
 2. Vyberte požadavek na údržbu, pro který chcete vytvořit pracovní příkaz, a klikněte na tlačítko **Upravit**.
 
-3. Ve **Všech požadavcích** klikněte na **Pracovní příkaz**.
+3. V podokně akcí na kartě > **Požadavek na údržbu** ve skupině > **Nový** vyberte **Pracovní příkaz**.
 
-4. Vyplňte rozevírací nabídku **Pracovní příkaz**. Pokud byl v požadavku na údržbu vybrán typ úlohy údržby, můžete v případě potřeby vybrat jiný typ úlohy údržby při vytvoření pracovního příkazu.
+4. V dialogovém okně **Pracovní příkaz** nastavte pole. Pokud byl v požadavku na údržbu vybrán typ úlohy údržby, můžete v případě potřeby vybrat jiný typ úlohy údržby při vytvoření pracovního příkazu.
 
-5. Klikněte na tlačítko **OK**. Zobrazí se zpráva s informacemi o tom, že byl vytvořen daný pracovní příkaz.
+5. Vyberte **OK**. Zpráva vás informuje o tom, že byl pracovní příkaz vytvořen.
 
-6. Chcete-li zobrazit, které pracovní příkazy jsou spojeny s požadavkem na údržbu, vyberte požadavek na údržbu v seznamech **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu** a klikněte na tlačítko **Pracovní příkazy**.
+6. Chcete-li zobrazit, které pracovní příkazy jsou spojeny s požadavkem na údržbu, vyberte požadavek na údržbu v seznamech **Všechny požadavky na údržbu** nebo **Aktivní požadavky na údržbu** a klikněte na tlačítko Pracovní příkazy. Pak v podokně akcí na kartě **Požadavek na údržbu** ve skupině **Zobrazit** vyberte **Pracovní příkazy**.
 
+
+Na následujícím obrázku je uveden příklad dialogového okna **Vytvořit pracovní příkaz**.
 
 ![Obrázek č. 3](media/05-work-orders.png)
 
 
 >[!NOTE]
->Pracovní příkazy lze vytvářet také automaticky úlohami plánu údržby, nebo nastavením "automatického vytváření" plánů údržby nebo pořadí údržby majetku. Pracovní příkazy vytvořené z požadavků na údržbu v **Rozvrhu údržby** jsou vytvořeny s typy úloh údržby vybranými v požadavcích na údržbu.
+>Pokud chcete, aby se pracovní příkazy vytvářely automaticky, můžete naplánovat úlohy plánu údržby nebo nastavit automatické vytvoření [plánů údržby](../preventive-and-reactive-maintenance/maintenance-plans.md) nebo [pořadí údržby](../preventive-and-reactive-maintenance/maintenance-rounds.md) u majetku. Pracovní příkazy vytvořené z požadavků na údržbu na stránce se seznamem **Rozvrh veškeré údržby** jsou vytvořeny s typy úloh údržby vybranými v požadavcích na údržbu.
 

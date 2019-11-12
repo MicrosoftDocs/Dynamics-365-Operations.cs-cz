@@ -3,7 +3,7 @@ title: Přehled DPH
 description: Toto téma podává přehled o systému DPH. Vysvětluje prvky nastavení DPH a jejich společné fungování.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2741eb51f93f2f0b627dd8676629077b6df0f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
+ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186456"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2666823"
 ---
 # <a name="sales-tax-overview"></a>Přehled DPH
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Toto téma podává přehled o systému DPH. Vysvětluje prvky nastavení DPH a jejich společné fungování.
 
@@ -94,5 +92,8 @@ Obvykle je nutné vyrovnat a zaplatí 2 500 finančnímu úřadu při zaúčtov
 
 Pokud však používáte podmíněnou DPH, provedete se vyrovnání u finančního úřadu, když obdržíte platbu od zákazníka 30. července.
 
+### <a name="postdated-check"></a>Postdatovaný šek
+
+Pokud použijete postdatovaný šek jako způsob platby, dojde při vytvoření platby k vymazání bankovního účtu. V některých zemích se DPH stane "realizovanou" odpovědností, když se platba zúčtuje v bance, což znamená, že postdatovaný šek je vyrovnán. Můžete ho povolit výběrem možnosti **Realizovat podmíněnou DPH při zaúčtování postdatovaných šeků** v části **Správa hotovosti a banky > Nastavení > Parametry správy hotovosti a banky > Postdatované šeky**.
 
 Další informace naleznete v tématu [Nastavení srážkové daně](tasks/set-up-withholding-tax.md).

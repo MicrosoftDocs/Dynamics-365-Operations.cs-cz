@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d3a2de4aa1a49eaef43fca385033dd2bab4c9849
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 9af92ea64b98581b02c2ed1797332281dccc74b3
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2277959"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553014"
 ---
 # <a name="available-mobile-workspaces"></a>Dostupné mobilní pracovní prostory
 
@@ -34,11 +34,11 @@ Toto téma uvádí seznam mobilních pracovních prostorů, které jsou k použi
 |[Adresář společnosti](company-directory-mobile-workspace.md)| Umožňuje vám zobrazit a kontaktovat ostatní zaměstnance ve vaší organizaci.| 2017. června |    
 |[Můj tým](manager-self-service-mobile-workspace.md)| Můžete zobrazit své přímé podřízené i ostatní zaměstnance a oceňovat jednotlivé uživatele v rámci svého dodavatelsko-odběratelského řetězce.|2017. června |     
 |[Schválení faktury](invoice-approval-mobile-workspace.md)| Obsahuje seznam faktur, které vám byly přiřazeny v pracovním procesu záhlaví faktury dodavatele.| 2017. června   |
-| [Správa výdajů](../../financials/expense-management/expense-management-mobile-workspace.md) | Můžete zdokumentovat a odeslat účtenku, abyste ji mohli připojit později k sestavě výdajů. Mobilní pracovní prostor vám také umožní rychle vytvářet řádek výdajů pomocí připojené účtenky. | 2017. duben |
-| [Schválení nákupní objednávky](../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Zobrazte a reagujte na nákupní objednávky akcemi, jako je například schválení nebo zamítnutí. | 2017. duben |
-| [Časový záznam projektu](../../financials/project-management/project-time-entry-mobile-workspace.md) | Můžete zadat a uložit čas na projekt pomocí svých mobilních zařízení. | 2017. březen |
-| [Řízení nákladů](../../financials/cost-accounting/cost-controlling-mobile-workspace.md)     | Manažeři nákladových středisek mohou vidět výkonnost nákladových středisek.                                                                                               |  2017. leden        |
-| [Zásoby na skladě](../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Získáte vhled do rezervovaných a dostupných zásob.                                                                                                    |   2017. leden       |
-| [Prodejní objednávky](../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Můžete být informováni o svých prodejních objednávkách.                                                                                                                          |  2017. leden                  |
-| [Dodavatelská spolupráce](../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Dodavatelé mohou udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech. |2017. leden    |
-| [Správa majetku](../../supply-chain/procurement/asset-management-mobile-workspace.md) | Tento pracovní prostor umožňuje uživatelům zobrazovat a vytvářet požadavky na údržbu a pracovní příkazy. Uživatelé mohou také zobrazit přiřazené úlohy pracovního příkazu v kalendáři nebo v seznamu. Majetek a funkční místa lze také zobrazit a vyhledat. |2019. říjen    |
+| [Správa výdajů](../../../finance/expense-management/expense-management-mobile-workspace.md) | Můžete zdokumentovat a odeslat účtenku, abyste ji mohli připojit později k sestavě výdajů. Mobilní pracovní prostor vám také umožní rychle vytvářet řádek výdajů pomocí připojené účtenky. | 2017. duben |
+| [Schválení nákupní objednávky](../../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Zobrazte a reagujte na nákupní objednávky akcemi, jako je například schválení nebo zamítnutí. | 2017. duben |
+| [Časový záznam projektu](../../../finance/project-management/project-time-entry-mobile-workspace.md) | Můžete zadat a uložit čas na projekt pomocí svých mobilních zařízení. | 2017. březen |
+| [Řízení nákladů](../../../finance/cost-accounting/cost-controlling-mobile-workspace.md)     | Manažeři nákladových středisek mohou vidět výkonnost nákladových středisek.                                                                                               |  2017. leden        |
+| [Zásoby na skladě](../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Získáte vhled do rezervovaných a dostupných zásob.                                                                                                    |   2017. leden       |
+| [Prodejní objednávky](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Můžete být informováni o svých prodejních objednávkách.                                                                                                                          |  2017. leden                  |
+| [Dodavatelská spolupráce](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Dodavatelé mohou udržovat přehled o nákupních objednávkách, které byly odeslány ke schválení dodavatelům. Dále mohou prohlížet informace o nových a aktualizovaných nákupních objednávkách a kontaktech. |2017. leden    |
+| [Správa majetku](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | Tento pracovní prostor umožňuje uživatelům zobrazovat a vytvářet požadavky na údržbu a pracovní příkazy. Uživatelé mohou také zobrazit přiřazené úlohy pracovního příkazu v kalendáři nebo v seznamu. Majetek a funkční místa lze také zobrazit a vyhledat. |2019. říjen    |

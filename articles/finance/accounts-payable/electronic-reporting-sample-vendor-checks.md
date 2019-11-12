@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 61d558ab0337e124065d194f42e0a81465d96a45
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ae42c9012a430aeeed6adb78b33776c727e4a3f8
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176862"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551142"
 ---
 [!include [banner](../includes/banner.md)]
 
-# <a name="electronic-reporting-sample-check-formats"></a>Formáty ukázkových šeků v elektronickém výkaznictví
+# <a name="electronic-reporting-sample-vendor-checks"></a>Ukázkové šeky dodavatele v elektronickém výkaznictví
 
 Elektronické výkaznictví můžete použít k formátování šeků dodavatele. Na trhu existuje mnoho formátů šeků specifických pro různé banky a poskytovatele šeků. Do úložiště nástrojů elektronického výkaznictví v modelu platebních šeků byly zahrnuty formáty ukázkových šeků. Tyto ukázkové šeky jsou označeny **Šek uprostřed (USA)** a **Šek nahoře a útržek dole (USA)**.
 

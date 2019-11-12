@@ -3,7 +3,7 @@ title: Fakturování projektu
 description: V tomto článku najdete přehled fakturace projektu pro časové a materiálové projekty a projekty s pevnou cenou. Zahrnuje informace o návrzích faktur (předběžné faktury), řízení faktur, fakturování na účet, fakturaci dodavatele a dobropisech.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d91f6b1ccc3254e2c04d24c5f9bf2014c64e50
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176860"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658613"
 ---
 # <a name="project-invoicing"></a>Fakturování projektu
 
@@ -55,6 +55,9 @@ Návrhy faktury mohou být vytvořeny pro následující transakce:
 -   Částky, které jsou zadrženy odběrateli na předchozích fakturách projektů
 -   Dobropisy
 -   Částky, které jsou vám zaplaceny odběratelem před zahájením projektu
+
+> [!NOTE]
+> Funkce **Povolit řazení podle zdroje během funkce vytvoření návrhu faktury projektu** umožňuje účetním projektu řadit transakce projektu, které jsou k dispozici pro účtování zdroje při vytváření nového návrhu faktury projektu. Mřížka zobrazující dostupné projektové transakce bude mít samostatné pole pro ID prostředku a prostředek, což uživateli umožňuje filtrovat a řadit podle názvu prostředku. Tato funkce je ve výchozím nastavení zakázána a lze ji povolit v části **Pracovní prostory > Správa funkcí**. Chcete-li pomoci s povolením této funkce, obraťte se na správce systému.
 
 V návrhu faktury lze vytvořit transakce poplatků. Můžete také změnit prodejní cenu za hodinu, výdaj, položku a transakce poplatků. Při zaúčtování návrhu faktury jsou přidány aktualizované ceny a transakce do sestav projektů a historie transakcí. 
 

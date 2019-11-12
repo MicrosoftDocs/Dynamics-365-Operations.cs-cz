@@ -3,7 +3,7 @@ title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 author: jasongre
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,53 +18,59 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edf698b12f2d0bcb6035bc644537cf9ca2bb87c9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 124609041163bbcaf1b86a6964fa3f56fcd8f755
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190895"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658753"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 
 Existují tři základní třídy přizpůsobení.
 
 - Individuální nastavení provedené na stránce nastavení. Mezi příklady patří barevný motiv a časové pásmo.
-- Individuální nastavení týkající se využití stránky, kterému se říká *implicitní*. Například systém uchovává informace o šířce sloupců mřížky, upravíte-li je a rozbalíte a sbalíte stav pevné záložky.
-- Individuální nastavení, které uživatel provádí pro úpravu vzhledu stránky změnou způsobu zobrazení nebo působení prvku na stránce, často prostřednictvím interaktivního režimu individuálního nastavení. Tato individuální nastavení se nazývají *explicitní*. Uživatel může například přidat, skrýt nebo změnit pořadí prvků na stránce.
+- Individuální nastavení související s použitím stránky. Tato individuální nastavení jsou známá jako *implicitní*. Například systém uchovává informace o šířce sloupců mřížky, upravíte-li je a rozbalíte a sbalíte stav pevné záložky.
+- Individuální nastavení, které uživatel provádí ve vzhledu stránky změnou způsobu zobrazení nebo působení prvku na stránce, často prostřednictvím interaktivního režimu individuálního nastavení. Tato individuální nastavení jsou známá jako *explicitní*. Uživatel může například přidat, skrýt nebo změnit uspořádání prvků na stránce.
 
 Všechna individuální nastavení, která uživatel udělá, jsou určena pouze pro daného uživatele, bez ohledu na typ individuálního nastavení nebo společnost, se kterými uživatel pracuje. Změny, které uživatel provede na stránce, neovlivní ostatní uživatelé v systému.
 
 ## <a name="system-wide-options-for-the-current-user"></a>Systémové možnosti pro aktuálního uživatele
 
-Stránka **Uživatelské možnosti** obsahuje několik systémových nastavení pro aktuálního uživatele. Chcete-li otevřít stránku **Uživatelské možnosti**, vyberte nabídku **Nastavení** (symbol ozubeného kola) na navigační panelu a pak vyberte **Uživatelské možnosti**. Stránka **Uživatelské možnosti** má čtyři karty, které obsahují různá uživatelské nastavení:
+Stránka **Uživatelské možnosti** obsahuje několik systémových nastavení pro aktuálního uživatele. Chcete-li otevřít stránku **Uživatelské možnosti**, vyberte tlačítko **Nastavení** (symbol ozubeného kola) na navigační panelu a pak vyberte **Uživatelské možnosti**. Stránka **Uživatelské možnosti** má čtyři karty, které obsahují různá uživatelské nastavení:
 
 - **Vizuální** - Vyberte barvu motivu a výchozí velikost prvků na svých stránkách.
-- **Předvolby** – Vyberte výchozí hodnoty, které se používají při každém otevření systému. Tyto hodnoty zahrnují společnosti, úvodní stránku a výchozí režim zobrazení/úprav. (Režim zobrazení/úprav určuje, zda je stránka uzamčena pro zobrazení nebo otevřena pro úpravy při každém otevření.) Tato karta také obsahuje možnosti pro jazyk, časové pásmo a datum, čas a formát čísel. Konečně jsou také na této kartě zahrnuty různé předvolby, které se liší podle verze.
+- **Předvolby** – Vyberte výchozí hodnoty, které se používají při každém otevření systému. Tyto hodnoty zahrnují společnosti, úvodní stránku a výchozí režim zobrazení/úprav. (Režim zobrazení/úprav určuje, zda je stránka uzamčena pro zobrazení nebo otevřena pro úpravy při každém otevření.) Tato karta také obsahuje možnosti pro jazyk, časové pásmo a datum, čas a formáty čísel. Konečně jsou také na této kartě zahrnuty různé předvolby, které se liší podle verze.
 - **Účet**- Upravte jméno uživatele a ostatní možnosti vztahující se k účtu.
 - **Workflow** – Vyberte možnosti týkající se workflowu.
 
-Kromě úpravy uživatelských nastavení můžete také zobrazit a odstranit data o používání a přizpůsobení kliknutím na tlačítko **Údaje o využití**. Když používáte aplikaci, mnoho z vašich voleb se zapamatuje, aby byl systém v budoucnu jednodušší pro vaše použití. Karta **Individuální nastavení** zejména umožňuje zobrazit a spravovat osobní změny provedené na stránkách v systému. Z této karty lze také obnovit popisky funkcí, vyskakovací okna, která vás seznámí s novými funkcemi systému (k dispozici v Platform Update 26), abyste byli znovu upozorněni na dříve nalezené funkce.  
+Kromě změny uživatelských nastavení můžete také pomocí stránky **Uživatelské možnosti** zobrazit a odstranit data o používání a přizpůsobení. V podokně akcí vyberte **Údaje o využití**.
+
+Když používáte aplikaci, mnoho z vašich voleb se uloží, aby byl systém v budoucnu jednodušší pro vaše použití. Na kartě **Individuální nastavení** můžete zobrazit a spravovat osobní změny provedené na stránkách v systému. Na této kartě můžete také vynulovat vysvětlivky k funkcím (tj. překryvná okna, která zavádějí nové funkce systému). Poté budete znovu upozorněni na dříve nalezené funkce.
+
+> [!NOTE]
+> Pokud je funkce [Uložená zobrazení](saved-views.md) zapnutá, můžete zobrazit a spravovat svá individulální nastavení výběrem možnosti **Individuální nastavení** v podokně akcí na stránce **Možnosti uživatele**.
 
 ## <a name="implicit-personalizations"></a>Implicitní individuální nastavení
 
-Implicitní individuální nastavení jsou ta přizpůsobení, která provádíte pouhou spoluprací s některými ovládací prvky, které pamatují jejich aktuální viditelný stav.
+Implicitní individuální nastavení jsou ta přizpůsobení, která provádíte pouhou spoluprací s některými ovládací prvky, které ukládají jejich aktuální viditelný stav.
 
-- **Sloupce mřížky** - Šířku sloupce v mřížce můžete upravit výběrem na ukazateli velikosti vlevo nebo vpravo od záhlaví a jeho posunem doleva nebo doprava na požadovanou šířku sloupce. Aplikace ukládá šířku, kterou jste pro sloupec nastavili. Změní pak sloupec na tuto šířku pokaždé, když otevřete stránku, která obsahuje dané tuto mřížku.
-- **Pevné záložky** - Některé stránky mají možnost rozbalení oddílů, kterým se říká *pevné záložky*. Aplikace ukládá informace o pevných záložkách, které jste rozbalili a sbalili. Pokaždé, když se vrátíte na stránku, stejné pevné záložky budou buď rozbaleny nebo sbaleny, podle poslední interakce se stránkou. V některých případech můžete zlepšit výkon systému sbalením pevné záložky, protože aplikace nebude muset načítat informace o dané pevné záložce, dokud záložka nebude rozbalena. Jak bude vysvětleno dále v tomto tématu, můžete také změnit pořadí pevných záložek na stránce.
-- **Okna s fakty** - Některé stránky obsahují oddíl s názvem *okna s fakty*. Toto podokno obsahuje jen informace pro čtení související s aktuálním předmětem stránky. Každý oddíl v podokně okna s fakty se nazývá *okno s fakty*. Lze skrýt nebo zobrazit celé podokno s fakty a lze rozbalit nebo sbalit jednotlivá okna s fakty. Aplikace ukládá vaše předvolby. Pokaždé, když se vrátíte na stránku, stav podokna okna s fakty a jednotlivá okna s fakty budou obnovena podle poslední interakce se stránkou. V některých případech můžete zlepšit výkon systému sbalením okna s fakty, protože aplikace nebude muset načítat informace o oknu s fakty, dokud okno s fakty nebude rozbaleno.
-- **Podokna akcí** – *Podokno akcí* se zobrazí v horní části většiny stránek. Podokno akcí obsahuje tlačítka pro řadu akcí, které lze provést na aktuální stránce. Tato tlačítka jsou často organizována na kartách. Můžete připojit otevřené celé podokno akcí, nebo ho můžete mít sbaleno ve výchozím nastavení. Poté při příštím otevření stránky aplikace obnoví připnutý stav podokna akcí. Pokud je podokno akcí připnuto otevřené, aplikace zobrazí také naposledy použitou kartu akcí.
-- **QuickFilters** – *QuickFilter* se zobrazuje nad mnohými mřížkami. QuickFilter vám umožní filtrovat mřížku na základě sloupce, který jste vybrali. Aplikace uloží sloupec, který jste vyfiltrovali. Poté při příštím otevření stránky, která obsahuje danou mřížky, bude mřížka vyfiltrována na stejném sloupci. Poté však můžete filtrovat na mřížku na jiný sloupec.
-- **Filtry záhlaví sloupce** – Při filtrování mřížky pomocí *filtrů záhlaví sloupce* můžete změnit operátor filtru, pokud potřebujete vyhledat data, která chcete. Lze například změnit operátor z **začíná** na **je přesně**. Při každém použít filtru záhlaví sloupce a úpravě operátoru filtru aplikace uloží změny. Poté se obnoví operátor filtru při příštím filtrování na v daném sloupci.
-- **Navigační podokno** – Můžete otevřít *Navigační podokno* výběrem tlačítka **Nabídka** tlačítko v levé části každé stránky. (Tlačítku **Nabídka** se někdy říká *hamburger*, *hamburger nabídka*, nebo *hamburger tlačítko*.) Můžete připojit navigační podokno otevřené nebo ho můžete mít ve výchozím nastavení sbalené. Poté, co je připnuto navigační podokno otevřené, aplikace ho zachová otevřené, dokud ho nesbalíte.
+- **Sloupce mřížky** - Šířku sloupce v mřížce můžete upravit výběrem na ukazateli velikosti vlevo nebo vpravo od záhlaví a jeho posunem doleva nebo doprava na požadovanou šířku sloupce. Aplikace ukládá šířku, kterou jste pro sloupec nastavili. Při příštím otevření stránky obsahující tuto mřížku se pak změní velikost sloupce na tuto šířku.
+- **Pevné záložky** - Některé stránky mají možnost rozbalení oddílů, kterým se říká *pevné záložky*. Aplikace ukládá informace o pevných záložkách, které jste rozbalili a sbalili. Když pak příště otevřete stránku, stejné pevné záložky budou buď rozbaleny nebo sbaleny, podle poslední interakce se stránkou. V některých případech můžete zlepšit výkon systému sbalením pevné záložky, protože aplikace nebude muset načítat informace o dané pevné záložce, dokud záložka nebude rozbalena. Jak je vysvětleno dále v tomto tématu, můžete také změnit pořadí pevných záložek na stránce.
+- **Pole s fakty** – některé stránky mají podokno **Související informace**, které obsahuje informace určené pouze pro čtení, které souvisejí s aktuálním předmětem stránky. Každý oddíl v podokně **Související informace** je známé jako *Pole s fakty*. Podokno **Související informace** můžete rozbalit nebo sbalit stejně jako jednotlivá okna s fakty. Aplikace tyto předvolby uloží. Potom se při příštím otevření stránky podokno **Související informace** a jednotlivá okna s fakty rozbalí nebo sbalí na základě vaší poslední interakce se stránkou. V některých případech můžete zlepšit výkon systému sbalením okna s fakty, protože aplikace nebude muset načítat informace o dané pevné záložce, dokud okno s fakty nebude rozbaleno.
+- **Podokna akcí** – *Podokno akcí* se zobrazí v horní části většiny stránek. Podokno akcí obsahuje tlačítka pro řadu akcí, které lze provést na aktuální stránce. Tato tlačítka jsou často organizována na kartách. Můžete připnout celé otevřené podokno akcí nebo ho můžete mít sbalené ve výchozím nastavení. Když pak příště otevřete stránku, podokno akcí bude otevřeno nebo sbaleno, podle poslední interakce se stránkou. Pokud jste připnuli podokno akcí v otevřeném stavu, zobrazí se poslední použitá karta.
+- **QuickFilters** – *QuickFilter* se zobrazuje nad mnohými mřížkami. QuickFilter vám umožní filtrovat mřížku na základě sloupce, který jste vybrali. Aplikace uloží sloupec, který jste vyfiltrovali. Poté při příštím otevření stránky, která obsahuje danou mřížky, bude mřížka vyfiltrována na stejném sloupci. Poté však můžete vybrat jiný sloupec pro filtrování mřížky.
+- **Filtry záhlaví sloupce** – Při filtrování mřížky pomocí *filtrů záhlaví sloupce* můžete změnit operátor filtru, pokud potřebujete vyhledat data, která chcete. Lze například změnit operátor z **začíná** na **je přesně**. Při každém použít filtru záhlaví sloupce a změně operátora filtru aplikace uloží změny. Poté se operátor filtru obnoví při příštím filtrování v daném sloupci.
+- **Navigační podokno** – Můžete otevřít *navigační podokno* výběrem tlačítka **Rozbalit navigační podokno** vlevo nahoře na každé stránce. (Tomuto tlačítku se někdy říká tlačítko _**nabídky**_, *hamburger*, *hamburgerová nabídka* nebo *hamburgerové tlačítko*.) Navigační podokno můžete připnout v otevřeném stavu nebo ho můžete mít ve výchozím nastavení sbalené. Poté, co je připnuto navigační podokno otevřené, aplikace ho zachová otevřené, dokud ho nesbalíte.
 
 ## <a name="explicit-personalizations"></a>Explicitní individuální nastavení
 
-Různí lidé a společnosti mají jiný pohled na data, která jsou pro ně nejdůležitější, nebo údaje, které nevyžadují pro způsob, jakým provozují svou firmu. Můžete si přesně přizpůsobit způsob, jakým se informace uspořádají a jak s nimi budete nakládat. Můžete také určit, že některé informace mají být skryty. Tyto funkce jsou klíčem k osobní a produktivnímu rozhraní a jsou to příklady explicitního přizpůsobení. Explicitní individuální nastavení jsou taková, která provádíte explicitně s úmyslem změnit vzhled nebo chování prvku nebo stránky.
+Různí lidé a společnosti mají jiný pohled na data, která jsou pro ně nejdůležitější, a údaje, které nevyžadují pro způsob, jakým provozují svou firmu. Můžete si přesně přizpůsobit způsob, jakým se informace uspořádají a jak s nimi budete nakládat. Můžete také určit, že některé informace mají být skryty. Tyto funkce jsou klíčem k osobní a produktivnímu rozhraní a jsou to příklady explicitního přizpůsobení. Explicitní individuální nastavení jsou taková, která provádíte explicitně, protože chcete změnit vzhled nebo chování prvku nebo stránky.
 
 ### <a name="shortcut-menu-options"></a>Možnosti místní nabídky
 
@@ -81,94 +87,103 @@ Můžete použít okno vlastností pro individuální nastavení prvku následuj
 - Změna popisku prvku.
 - Skrytí prvku, takže není zobrazen na stránce. Data v poli nejsou odstraněna nebo upravena. Informace se nezobrazuje na stránce déle.
 - Zahrňte informace v oddílu souhrnu pevné záložky (pokud je prvkem o pevná záložka).
-- Přeskočte pole, po stisknutí klávesy Tab pro procházení polí na stránce.
+- Přeskočte pole, aby nikdy nezískalo výběr při přechodu na stránku.
 - Zabraňte úpravě data v poli (pro jakýkoliv záznam).
 
 Okna vlastností mohou obsahovat další možnosti přizpůsobení, v závislosti na prvku. Například okno vlastností pro dlaždici umožňuje promítnout dlaždici do řídicího panelu a okno vlastnosti pro řídicí panel umožňuje vytvořit nový pracovní prostor na tomto řídicím panelu.
 
 ### <a name="the-personalization-toolbar"></a>Panel nástrojů individuálních nastavení
 
-Pokud chcete provést více změn stránky nebo provést změny, které nejsou k dispozici prostřednictvím dalších mechanismů (jako je například změnou uspořádání prvků), lze použít panel nástrojů **Individuální nastavení**. Chcete-li otevřít panel nástrojů **Přizpůsobení**, vyberte **Přizpůsobit tento formulář** v okně vlastnosti prvku. Můžete také vybrat **Přizpůsobit tento formulář** ve skupině **Přizpůsobit** na kartě **Možnosti** každého podokna akcí.
+Pokud chcete provést více změn stránky nebo provést změny, které nejsou k dispozici prostřednictvím dalších mechanismů (jako je například změna uspořádání prvků), lze použít panel nástrojů **Individuální nastavení**. Chcete-li otevřít panel nástrojů **Individuální nastavení**, proveďte jeden z následujících kroků:
+
+- V okně vlastností prvku vyberte **Přizpůsobit tento formulář**.
+- Vyberte **Přizpůsobit tuto stránku** ve skupině **Přizpůsobit** na kartě **Možnosti** podokna akcí libovolné stránky.
+- Na navigačním panelu vyberte tlačítko **nastavení** (symbol ozubeného kola) a pak vyberte volbu **přizpůsobit**.
 
 [![Panel nástrojů individuálních nastavení](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigace na stránce
 
-Vaše možnosti navigace na stránce při otevření **Panelu nástrojů individuálních nastavení** závisí na verzi platformy, kterou používáte.
-
-- Před aktualizací Platform update 19 je při otevření panelu nástrojů **individuálního nastavení** stránka pouze ke čtení (není možné nic zadat) a neinteraktivní (lze pouze provádět změny viditelných prvků na stránce). Pokud chcete provést změny prvků ve sbalené části nebo na jiné kartě, je třeba zavřít panel nástrojů **individuálního nastavení**, rozbalit část nebo přepnout na požadovanou kartu a poté znovu otevřít panel nástrojů **individuálního nastavení**.
-
-- Od aktualizace Platform Update 19 je při otevření panelu nástrojů **individuálního nastavení** stránka stále pouze ke čtení, ale je mnohem interaktivnější. Konkrétně lze rozbalit nebo sbalit okno s fakty, přepnout karty a rozbalit nebo sbalit části, když je panel nástrojů **individuálního nastavení** otevřen, stejným způsobem jako je to na stránce obvyklé. Chcete-li použít změnu individuálního nastavení na sbalitelnou část nebo kartu, (jako například skrýt pevnou záložku), spustíte tlačítko, které se zobrazí vedle sbalitelné části nebo karty, když je na něm zaměřena klávesnice nebo na něj najedete kurzorem myši.
+Pokud je panel nástrojů **Přizpůsobení** otevřený, je podkladová stránka jen pro čtení (jinými slovy, data nelze upravovat), ale je stále interaktivní. Konkrétně můžete rozbalit nebo sbalit podokno **související informace**, přepnout karty, rozbalit nebo sbalit oddíly stejně, jako obvykle provádíte tyto akce na stránce. Chcete-li použít změnu individuálního nastavení na sbalitelnou část nebo kartu, (například skrýt pevnou záložku), stačí vybrat tlačítko, které se zobrazí vedle sbalitelné části nebo karty, když je na něm zaměřena klávesnice nebo na něj najedete kurzorem myši.
 
 #### <a name="personalization-tools"></a>Nástroje individuálních nastavení
 
 Jsou k dispozici následující nástroje na panelu nástrojů **Přizpůsobení**:
 
-- Použijte nástroj **Vybrat** k výběru a změně vlastností prvku. Zvolte nástroj **Vybrat** a poté vyberte prvek, jehož vlastnosti chcete změnit. Při výběru prvku se otevře okno vlastností prvku a můžete upravit jakékoli vlastnosti pro daný prvek. Proces můžete opakovat pro další prvky, které je možné přizpůsobit na této stránce. Vzhledem k tomu, jakým způsobem jsou některé prvky používány, aplikace vám nedovolí změnit některé z jejich vlastností. Proto při výběru prvku se můžete pravděpodobně setkat s tím, že některé vlastnosti nelze změnit. Nemůžete například skrýt pole, které je povinné.
-- Zvolte nástroj pro **Přesunutí**, pokud chcete přesunout prvek na jiné místo v rámci aktuální skupiny prvků. (Prvek nelze přesunout mimo nadřazenou skupinu). Zvolte nástroj **Přesunutí** a poté vyberte prvek, který chcete přesunout. Při výběru prvku aplikace kontroluje stránku a určí, kdy lze přesunout prvek. Poté vytvoří řadu zón k přetažení. Když přetahujete prvek z aktuální skupiny, každá zóna k přetažení je zobrazena jako vybarvená a tučná oblast, kam lze prvek přetáhnout.
-- Chcete-li skrýt prvek na stránce, zvolte nástroj **Skrýt**. Zvolte nástroj **Skrýt** a poté vyberte prvek, který chcete skrýt. Když vyberete nástroj **Skrýt**, všechny prvky, které jsou nyní skryté, jsou viditelné a jsou zobrazeny v šedém kontejneru. Poté je lze zrušit jejich skrytí. Výběrem nástroje **Výběr** si můžete prohlédnout, jak bude vypadat stránka s vybranými skrytými prvky.
+- Použijte nástroj **Vybrat** k výběru a změně vlastností prvku. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **vybrat** a pak vyberte požadovaný prvek. Při výběru prvku se otevře okno vlastností prvku a můžete změnit jakékoli vlastnosti pro daný prvek. Proces můžete opakovat pro další prvky, které je možné přizpůsobit na této stránce. Všimněte si, že některé vlastnosti přizpůsobení nemusí být v některých scénářích k dispozici. Nemůžete například zamknout pole, které je povinné.
+- Chcete-li skrýt prvek na stránce, zvolte nástroj **Skrýt**. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **Skrýt** a pak vyberte požadovaný prvek ke skrytí. Když použijete nástroj **Skrýt**, všechny prvky, které jsou nyní skryté, jsou viditelné a jsou zobrazeny v šedém kontejneru. Poté můžete prvek zviditelnit jeho výběrem. Chcete-li vidět, jak bude stránka vypadat po skrytí prvků, přepněte do jiného nástroje pro individuální nastavení.
 
-    - Od aktualizace Platform Update 18 můžete skrýt povinná pole a části, které obsahují povinná pole. To vám umožňuje vytvářet zjednodušené rozhraní, kde nejsou povinná pole převzatá obchodní logikou zobrazená. Skrytá povinná pole jsou rovněž dočasně viditelná,. když jsou při pokusu o uložení prázdná.
+    Můžete skrýt povinná pole a části, které obsahují povinná pole. To vám umožňuje vytvářet zjednodušené rozhraní, kde nejsou povinná pole zobrazená, pokud mají výchozí hodnoty vyplněné obchodní logikou. Skrytá povinná pole se dočasně zobrazí, pokud budou při pokusu uživatele o uložení stránky prázdná.
 
-- Použijte nástroj **Souhrn**, když chcete zobrazit v oddílu souhrnu pevné záložky prvek. Nástroj Souhrn platí pouze pro pole, která jsou obsažena na oddílu pevné záložky. Když vyberete nástroj **Souhrn**, všechna pole, která byla vybrána jako souhrnná pole, jsou zobrazena v šedém kontejneru. Lze interaktivně přidat pole na souhrn pevné záložky a odstranit pole ze souhrnu pevných záložek výběrem pole.
-- Použijte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Když vyberete nástroj **Přeskočit**, všechny prvky, které jsou nyní přeskočené, jsou viditelné a jsou zobrazeny v šedém kontejneru. Můžete je pak znovu přidat do řady karet.
-- Zvolte nástroj **Upravit**, když chcete označit prvek jako upravitelný nebo neupravitelný. Když vyberete nástroj **Upravit**, všechny prvky, které jsou nyní neupravitelné, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak je můžete znovu udělat upravitelnými. Všimněte si, že některá pole jsou povinná a nelze je upravovat. Vedle těchto polí se zobrazí symbol visacího zámku.
-- Použijte tlačítko **Vložit** a zobrazíte seznam prvků, které lze vložit na stránku.
-
-    - Vyberte nástroj **Pole** pod možností **Vložit** pro přidání pole na stránku. Když použijete nástroj **Pole**, lze přidat pouze pole, která jsou součástí definice stránky, ale nejsou nyní zobrazeny na stránce. Informace o postupu při vytváření nových polí, které nejsou součástí aktuální definice stránky, naleznete v tématu [Vlastní pole](user-defined-fields.md). Po výběru nástroje **Pole** je nutné nejprve vybrat skupinu nebo oblast, kam chcete pole přidat. Dialogové okno zobrazí seznam polí souvisejících se zvolenou skupinou nebo oblastí. V dialogovém okně vyberte jedno nebo více polí pro přidání a zvolte **Vložit**. Chcete-li odebrat pole, které jste dříve přidali, opakujte proces, ale v dialogovém okně zrušte výběr pole.
-    - Vyberte nástroj **PowerApp** pod možností **Vložit** a vložte aplikaci vytvořenou pomocí Microsoft PowerApps na stránce. Podrobné informace o tom, jak aplikace PowerApps vkládá na stránku, najdete v části [Vložení PowerApps](embed-power-apps.md).
-
-- Zvolte tlačítko **Správa** k zobrazení seznamu možností řízení týkající se všech individuálních nastavení pro aktuální stránku.
-
-    - Zvolte **Vymazat**, pokud chcete obnovit výchozí nainstalovaný stav stránky. Vymaže všechna individuální nastavení na aktuální stránce. Neexistuje akce vrácení. Tuto možnost použijte pouze v případě, že jste si jisti, že chcete resetovat stránku.
-    - Použijte možnost **Import** k načtení přizpůsobení ze souboru, který jste vy nebo někdo jiný dříve vytvořili pro tuto stránku. Všechna aktuální přizpůsobení stránky budou nahrazena individuálním nastavením z vybraného souboru.
-    - Vyberte **Export** pro uložení vašeho přizpůsobení stránky do souboru. Individuální nastavení můžete sdílet s jinými uživateli. Tito uživatelé musí importovat soubor, který obsahuje vaše přizpůsobení stránky.
-
+- Použijte nástroj **Přidat pole** pro přidání pole na stránku. Použijete-li tento nástroj, můžete přidat pouze pole, která jsou součástí definice stránky. Informace o postupu při vytváření nových polí, které nejsou součástí aktuální definice stránky, naleznete v tématu [Vlastní pole](user-defined-fields.md). Po výběru tlačítka **Přidat pole** na panelu nástrojů je nutné nejprve vybrat skupinu nebo oblast, kam chcete pole přidat. Dialogové okno zobrazí seznam polí souvisejících se zvolenou skupinou nebo oblastí. V dialogovém okně vyberte jedno nebo více polí pro přidání a zvolte **Vložit**. Chcete-li odebrat pole, které jste dříve přidali, opakujte proces, ale v dialogovém okně zrušte výběr pole.
+- Zvolte nástroj pro **Přesunutí**, pokud chcete přesunout prvek na jiné místo v rámci aktuální skupiny prvků. Všimněte si, že prvek nelze přesunout mimo nadřazenou skupinu. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **Přesunout** a pak vyberte požadovaný prvek k přesunutí. Při výběru prvku aplikace kontroluje stránku a určuje místa, do nichž lze prvek přesunout. Tato umístění se nazývají *zóny přetažení*. Když přetahujete prvek z aktuální skupiny, každá zóna k přetažení je zobrazena jako vybarvená a tučná oblast, kam lze prvek přetáhnout.
+- Použijte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Když na panelu nástrojů vyberete tlačítko **Přeskočit**, všechny prvky, které jsou nyní přeskočené, jsou viditelné a jsou zobrazeny v šedém kontejneru. Můžete interaktivně odebrat nebo přidat pole do pořadí polí.
+- Použijte nástroj **Zobrazit v záhlaví**, když chcete zobrazit v oddílu souhrnu pevné záložky prvek. Když vyberete na panelu nástrojů tlačítko **Zobrazit v záhlaví**, všechna pole, která byla vybrána jako souhrnná pole, jsou zobrazena v šedém kontejneru. Lze interaktivně přidat pole na souhrn pevné záložky a odstranit pole ze souhrnu pevných záložek výběrem pole.
+- Zvolte nástroj **Zamknout**, když chcete označit prvek jako upravitelný nebo neupravitelný. Když na panelu nástrojů vyberete tlačítko **Zamnkout**, všechny prvky, které jsou nyní neupravitelné, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak je můžete znovu udělat upravitelnými. Všimněte si, že některá pole jsou povinná a nelze je upravovat. Vedle těchto polí se zobrazí symbol visacího zámku.
+- Pomocí tlačítka **Přidat PowerApp** přidejte aplikaci vytvořenou pomocí Microsoft PowerApps na stránku. Podrobné informace o tom, jak aplikace PowerApps vkládá na stránku, najdete v části [Vložení PowerApps](embed-power-apps.md).
+- Zvolte nástroj **Vymazat**, pokud chcete obnovit výchozí nainstalovaný stav stránky. Vymaže všechna individuální nastavení na aktuální stránce. Neexistuje akce vrácení. Tento nástroj použijte pouze v případě, že jste si jisti, že chcete resetovat stránku.
+- Použijte nástroj **Import** k načtení přizpůsobení ze souboru, který jste vy nebo někdo jiný dříve vytvořili pro tuto stránku. Při importu přizpůsobení pro stránku můžete zvolit, zda mají být přidána nebo nahrazena všechna existující přizpůsobení pro danou stránku. Neexistuje akce vrácení. Po importu přizpůsobení je tedy nutné ručně vymazat nebo zrušit všechny požadované změny.
+- Použijte nástroj **Export** pro uložení vašeho přizpůsobení stránky do souboru. Individuální nastavení pak můžete sdílet s jinými uživateli. Tito uživatelé musí importovat soubor, který obsahuje vaše přizpůsobení stránky.
 - Zvolte tlačítko **Zavřít** k zavření panelu nástrojů **Přizpůsobení** a návratu stránky do jejího předchozího interaktivního stavu.
 
-Když použijete panel nástrojů **Přizpůsobení**, operace ukládání jsou implicitní. Vaše individuální nastavení bude účinné ihned po jeho provedení a není nutné vybírat tlačítko **Uložit**. V některých případech se zobrazí ikona visacího zámku s prvkem pro výběr nástroje. Tento symbol označuje, že nemůžete změnit vlastnosti prvku, které se vztahují k vybranému nástroji, protože změny těchto vlastností zabrání tomu, aby stránka fungovala správně.
+Při použití panelu nástrojů **Individuální nastavení** se vaše přizpůsobení běžně uplatní, jakmile je provedete. Je-li však funkce [Uložená zobrazení](saved-views.md) zapnutá, musíte individuální nastavení výslovně uložit do zvoleného zobrazení.
+
+V některých případech se zobrazí ikona visacího zámku s prvkem pro výběr nástroje. Tento symbol označuje, že nemůžete změnit vlastnosti prvku, které se vztahují k vybranému nástroji, protože změny těchto vlastností zabrání tomu, aby stránka fungovala správně.
 
 ### <a name="adding-a-tile-list-or-link-to-a-workspace"></a>Přidání dlaždice, seznamu nebo odkazu do pracovního prostoru
 
-U některých stránek, které obsahují seznamy, je další funkce přizpůsobení k dispozici. Tlačítko **Přidat do pracovního prostoru** ve skupině **Přizpůsobit** na kartě **Možnosti** podokna akcí zobrazuje informace z aktuálního seznamu v konkrétním pracovním prostoru. Můžete zobrazit filtrované a seřazené zobrazení informací v pracovním prostoru nebo můžete zobrazit výchozí zobrazení. Můžete také určit, zda se informace se zobrazí v pracovním prostoru jako seznam, jako souhrnná dlaždice, která zobrazí počet položek v seznamu, nebo jako odkaz.
+U některých stránek, které obsahují seznamy, je funkce individuálního nastavení **Přidat do pracovního prostoru** k dispozici ve skupině **Přizpůsobit** na kartě **Možnosti** v podokně akcí. Tato funkce umožňuje nabízení relevantních informací z aktuálního seznamu do konkrétního pracovního prostoru. Informace zobrazené v pracovním prostoru mohou být založeny buď na celém seznamu, nebo na filtrované a seřazené verzi seznamu. Můžete také určit, zda se informace se zobrazí v pracovním prostoru jako seznam, jako souhrnná dlaždice, která zobrazí počet položek v seznamu, nebo jako odkaz.
+
+> [!NOTE]
+> Pokud je zapnutá funkce [Uložená zobrazení](saved-views.md), bude obsah, který zadáte do pracovního prostoru, přímo propojen se zobrazením. Dotaz zobrazení se používá k načtení dat v pracovním prostoru a odpovídající dlaždice nebo odkaz v pracovním prostoru otevře stránku s tímto zobrazením, takže se na něj uplatní dotazy a přizpůsobení zobrazení.
 
 [![Přidat na pracovní prostor](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
-- Chcete-li přidat seznam do pracovního prostoru, nejprve seřaďte nebo filtrujte seznam na stránce tak, aby zobrazoval informace, jak chcete, aby se zobrazovaly v pracovním prostoru. Pak vyberte **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Seznam**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete vybrat sloupce, které se mají zobrazit na seznamu v pracovním prostoru. Můžete také určit popisek pro seznam v pracovním prostoru.
-- Chcete-li přidat dlaždici do pracovního prostoru, nejprve vyfiltrujte seznam na stránce, aby ukázal data, která chcete sumarizovat, nebo k nim mít rychlý přístup. Pak vyberte **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Dlaždice**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete určit popisek pro dlaždici v pracovním prostoru. Můžete také určit, zda má dlaždice ukazovat počet. Po přidání dlaždice do pracovního prostoru jej můžete vybrat, chcete-li otevřít aktuální stránku z pracovního prostoru a zobrazit filtrovaný seznam, který je spojen s dlaždicí.
-- Chcete-li přidat odkaz na pracovní prostor, nejprve filtrujte na stránce seznam tak, aby zobrazoval data, která vás zajímají. Pak vyberte **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Odkaz**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete určit popisek pro odkaz. Můžete také volitelně zadat popisek pro nový oddíl, který bude tento odkaz obsahovat.
+- Chcete-li přidat seznam do pracovního prostoru, nejprve seřaďte nebo filtrujte seznam na stránce tak, aby zobrazoval informace, jak chcete, aby se zobrazovaly v pracovním prostoru. (Pokud je funkce Uložená zobrazení zapnuta, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Seznam**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete vybrat sloupce, které se mají zobrazit na seznamu v pracovním prostoru. Můžete také určit popisek použitý pro seznam v pracovním prostoru.
+- Chcete-li přidat dlaždici do pracovního prostoru, nejprve vyfiltrujte seznam na stránce, aby ukázal data, která chcete sumarizovat, nebo k nim mít rychlý přístup. (Pokud je funkce Uložená zobrazení zapnuta, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Dlaždice**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete určit popisek, který by měl být použit pro dlaždici v pracovním prostoru. Můžete také určit, zda má dlaždice ukazovat počet. Po přidání dlaždice do pracovního prostoru ji můžete vybrat k otevření aktuální stránky z pracovního prostoru. Poté můžete zobrazit filtrovaný seznam, který je spojený s dlaždicí.
+- Chcete-li přidat odkaz na pracovní prostor, nejprve filtrujte na stránce seznam tak, aby zobrazoval data, která vás zajímají. (Pokud je funkce Uložená zobrazení zapnuta, nemůžete pokračovat, dokud neuložíte zobrazení s těmito podmínkami.) Poté vyberte možnost **Přidat do pracovního prostoru**. Vyberte pracovní prostor a potom v poli **Prezentace** zvolte **Odkaz**. Po výběru **Konfigurovat** se zobrazí se dialogové okno, kde můžete určit popisek, který se má použít pro odkaz. Můžete také volitelně zadat popisek pro nový oddíl, který bude tento odkaz obsahovat.
 
-Po přidání seznamu, dlaždice nebo odkazu do pracovního prostoru můžete otevřít pracovní prostor a uspořádat jeho prvky podle potřeby.
+Po přidání seznamu, dlaždice nebo odkazu do pracovního prostoru můžete otevřít pracovní prostor a přeuspořádat jeho prvky podle potřeby.
 
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Přidání souhrnu z pracovního prostoru do řídicího panelu
 
-Některé pracovní prostory obsahují dlaždice s početem (tzn. dlaždice s čísly na nich) a můžete také nechat dlaždice zobrazit na řídicím panelu. V pracovním prostoru klepněte pravým tlačítkem na dlaždici s počtem a vyberte **Přizpůsobit**. V okně vlastností dlaždice vyberte **Připnout na řídicí panel**. Příště, až budete otevírat (a aktualizovat) vybraný řídicí panel, zobrazí se vám tento počet pod navigační dlaždicí daného pracovního prostoru. Tento počet můžete vybrat pro přechod přímo na data, která reprezentuje.
+Některé pracovní prostory obsahují dlaždice s početem (tzn. dlaždice s čísly na nich) a můžete také nechat dlaždice zobrazit na řídicím panelu. V pracovním prostoru klikněte pravým tlačítkem na dlaždici s počtem, vyberte **Přizpůsobit** a poté v okně vlastností dlaždice vyberte **Připnout na řídicí panel**. Příště, až budete otevírat (a aktualizovat) vybraný řídicí panel, zobrazí se vám tento počet pod navigační dlaždicí daného pracovního prostoru. Tento počet můžete vybrat pro přechod přímo na data, která reprezentuje.
 
 ### <a name="personalizing-your-dashboard"></a>Individuální nastavení řídicího panelu
 
-Řídicí panel je často první stránkou, která se zobrazí při otevření aplikace. Řídicí panel lze přizpůsobit, aby zobrazil pouze dlaždice pracovního prostoru, které chcete zobrazit. Dlaždice můžete také uspořádat tak, aby byly v pořadí, v němž je chcete vidět, přejmenovat navigační dlaždice pracovního prostoru nebo přidat zcela nový pracovní prostor.
+Řídicí panel je často první stránkou, která se zobrazí při otevření aplikace. Řídicí panel lze přizpůsobit, aby zobrazil pouze dlaždice pracovního prostoru, které chcete zobrazit. Dlaždice můžete také uspořádat tak, aby se zobrazovaly v pořadí, v němž je chcete vidět, přejmenovat navigační dlaždice pracovního prostoru nebo přidat nový pracovní prostor.
 
 Chcete-li přizpůsobit řídicí panel, klikněte pravým tlačítkem na libovolnou dlaždici, a pak vyberte **Přizpůsobit** pro otevření okna vlastností dlaždice.
 
 - Chcete-li vybranou dlaždici skrýt nebo přejmenovat, můžete tuto změnu provést přímo v okně vlastností.
-- Pokud chcete přeuspořádat dlaždice pracovního prostoru, vyberte v okně vlastností možnost **Přizpůsobit** a otevřete panel nástrojů **Přizpůsobení**. Dlaždice můžete uspořádat pomocí nástroje **Přesun** podle vaší potřeby.
-- Chcete-li vytvořit novou dlaždici pracovního prostoru, v okně vlastností vyberte **Přidat pracovní prostor**. V dolní části řídicího panelu se vytvoří nová dlaždice pracovního prostoru. Tuto novou dlaždici pracovního prostoru můžete přejmenovat, jak chcete. Můžete také přidat seznamy, odkazy a dlaždice do pracovního prostoru, jak je popsáno v části tématu [Přidání seznamů, odkazů nebo dlaždic do pracovního prostoru](personalize-user-experience.md#adding-a-tile-list-or-link-to-a-workspace).
+- Pokud chcete přeuspořádat dlaždice pracovního prostoru, vyberte v okně vlastností možnost **Přizpůsobit** a otevřete panel nástrojů **Přizpůsobení**. Dlaždice můžete přeuspořádat pomocí nástroje **Přesun** podle vaší potřeby.
+- Chcete-li přidat novou dlaždici pracovního prostoru, v okně vlastností vyberte **Přidat pracovní prostor**. V dolní části řídicího panelu se vytvoří nová dlaždice pracovního prostoru. Tuto novou dlaždici pracovního prostoru můžete přejmenovat, jak chcete. Můžete také přidat seznamy, odkazy a dlaždice do pracovního prostoru, jak je popsáno v části tématu [Přidání seznamů, odkazů nebo dlaždic do pracovního prostoru](#adding-a-tile-list-or-link-to-a-workspace).
 
-## <a name="administration-of-personalization"></a>Správa přizpůsobení
+## <a name="administration-of-personalizations"></a>Správa přizpůsobení
 
 Poté, co jste přizpůsobili stránku, můžete svá individuální nastavení sdílet s dalšími uživateli prostřednictvím exportu přizpůsobené stránky. Pak můžete požádat ostatní uživatele, aby otevřeli přizpůsobenou stránku a importovali přizpůsobený soubor, který jste vytvořili. Případně můžete dát vaše přizpůsobení uživateli s oprávněními správce. Tento uživatel pak může použít soubor personalizace pro mnoho uživatelů najednou.
 
-Uživatelé, kteří mají oprávnění správce, také mohou spravovat přizpůsobení ostatních uživatelů na stránce **Nastavení přizpůsobení**. Tato stránka obsahuje čtyři karty:
+Uživatelé, kteří mají oprávnění správce, také mohou spravovat přizpůsobení ostatních uživatelů na stránce **Nastavení přizpůsobení**.
+
+U zákazníků, kteří nezapnuli funkci [Uložená zobrazení](saved-views.md), má tato stránka čtyři karty:
 
 - **Použít** – můžete importovat nebo zvolit individuální nastavení pro jednoho nebo více uživatelů. Chcete-li použít přizpůsobení pro jednoho nebo více uživatelů, nejprve vyberte roli a uživatele, kteří tuto roli mají. Poté buď vyberte existující personalizaci, která se bude vztahovat na vybrané uživatele, nebo importovat soubor personalizace. Přizpůsobení bude ověřeno a použito pro všechny vybrané uživatele, když příště otevřou vybrané stránky.
 - **Vymazat** – Můžete vymazat všechna přizpůsobení stránky nebo pracovního prostoru pro jednoho nebo více uživatelů. Nejprve vyberte stránku nebo pracovní prostor, aby se zobrazil seznam uživatelů, kteří u nich provedli individuální nastavení. Poté vyberte uživatele, kteří by měli mít individuální nastavení pro tuto stránku nebo pracovní prostor odstraněno, a vyberte **Vymazat**. Všechna přizpůsobení, která vybraní uživatelé použili u vybrané stránky nebo pracovního prostoru, se smažou. Tuto akci nelze vrátit zpět. Pokud však byla personalizace uložena pro stránku nebo pracovní prostor, může být tato personalizace znovu importována.
-- **Manažer podle uživatele** – vyberte uživatele a zobrazte seznam stránek, pro které má uživatel individuální nastavení. Můžete povolit nebo zakázat možnost zvoleného uživatele použít přizpůsobení pro specifické stránky nebo pro celý systém. Rovněž můžete vymazat, importovat nebo exportovat individuální nastavení pro vybraného uživatele. Kromě toho můžete resetovat popisky funkcí pro vybraného uživatele, což umožní, aby se všechny dříve vynechaná vyskakovací okna, která zavedly nové funkce, znovu zobrazila při příště, kdy se uživatel s těmito funkcemi setká.   
-- **Systém:** – Zde můžete dočasně zakázat veškerá přizpůsobení v systému pro všechny uživatele. V takovém případě se přizpůsobení odstraní. Všechny stránky se resetují na výchozí nastavení pro všechny uživatele. Pokud později znovu povolíte přizpůsobení, veškerá přizpůsobení budou znovu použita. Můžete trvale odstranit veškerá přizpůsobení v systému pro všechny uživatele. Neexistuje žádný způsob obnovení individuálního nastavení, které bylo odstraněno. Proto se před provedením tohoto úkolu ujistěte, že jste exportovali všechna individuální nastavení, která můžete chtít později.
+- **Uživatelé** – vyberte uživatele a zobrazte seznam stránek, pro které má uživatel individuální nastavení. Pak můžete zapnout možnost zvoleného uživatele zapnout nebo vypnout přizpůsobení pro specifické stránky nebo pro celý systém. Rovněž můžete vymazat, importovat nebo exportovat individuální nastavení pro uživatele. Kromě toho můžete vynulovat vysvětlivky k funkcím pro uživatele. V takovém případě, pokud uživatel předtím odstranil všechna překryvná okna, která zavádějí nové funkce, zobrazí se znovu při příštím výskytu těchto funkcí uživatelem.
+- **Systém:** – Zde můžete dočasně vypnout přizpůsobení v systému pro všechny uživatele. V tomto případě budou všechna individuální nastavení odstraněna pro všechny uživatele a všechny stránky budou obnoveny do výchozího stavu. Pokud později zapnete přizpůsobení znovu, veškerá přizpůsobení budou znovu použita. Můžete trvale odstranit veškerá přizpůsobení v systému pro všechny uživatele. Neexistuje žádný způsob obnovení individuálního nastavení, které bylo odstraněno. Proto se před provedením tohoto úkolu ujistěte, že jste exportovali všechna individuální nastavení, která můžete chtít později.
 
-## <a name="personalization-of-inventory-dimensions"></a>Přizpůsobení dimenzí zásob
+Pro zákazníky, kteří zapnuli funkci [Uložená zobrazení](saved-views.md), nabízí stránka **Individuální nastavení** pět karet:
 
-Když si přizpůsobíte nastavení dimenze zásob na stránce, zvažte nastavení, která byla vytvořena pomocí možnosti **Zobrazení dimenzí**. Například používáte přizpůsobení ke skrytí sloupce pro dimenzi čísla skladové dávky, ale sloupec se objeví při příštím otevření stránky K tomu dochází, protože nastavení **Zobrazení dimenzí** kontroluje dimenze zásob, které jsou zobrazeny.
+- **Publikovaná zobrazení** – tato zobrazení byla publikována ve vaší organizaci. Chcete-li změnit uživatele, kteří jsou cílem těchto zobrazení, můžete změnit role zabezpečení nebo právnické osoby, které jsou přidruženy k jednotlivým zobrazením. Můžete také exportovat nebo odstranit jedno nebo více publikovaných zobrazení.
+- **Nepublikovaná zobrazení** – tato zobrazení jsou náhledy šablon, které byly importovány do systému, ale ještě nebyly publikovány. Tato zobrazení můžete publikovat, exportovat nebo odstranit.
+- **Osobní zobrazení** – tato zobrazení byla vytvořena uživateli v systému. Do organizace můžete publikovat osobní zobrazení nebo je zkopírovat z jednoho či více těchto zobrazení do jiných uživatelů. Tato zobrazení můžete také exportovat nebo odstranit podle potřeby.
+- **Uživatelé** – vyberte uživatele a zobrazte seznam stránek, pro které má uživatel individuální nastavení. Pak můžete zapnout možnost zvoleného uživatele zapnout nebo vypnout přizpůsobení pro specifické stránky nebo pro celý systém. Rovněž můžete vymazat, importovat nebo exportovat individuální nastavení pro uživatele. Kromě toho můžete vynulovat vysvětlivky k funkcím pro uživatele. V takovém případě, pokud uživatel předtím odstranil všechna překryvná okna, která zavádějí nové funkce, zobrazí se znovu při příštím výskytu těchto funkcí uživatelem.
+- **Systém:** – Zde můžete dočasně vypnout přizpůsobení v systému pro všechny uživatele. V tomto případě budou všechna individuální nastavení odstraněna pro všechny uživatele a všechny stránky budou obnoveny do výchozího stavu. Pokud později zapnete přizpůsobení znovu, veškerá přizpůsobení budou znovu použita. Můžete trvale odstranit veškerá přizpůsobení v systému pro všechny uživatele. Neexistuje žádný způsob obnovení individuálního nastavení, které bylo odstraněno. Proto se před provedením tohoto úkolu ujistěte, že jste exportovali všechna individuální nastavení, která můžete chtít později.
 
-Nastavení **Zobrazení dimenzí** platí pro všechny stránky a přepíše všechna individuální nastavení polí dimenze zásob na každé jednotlivé stránce.
+Uživatelé, kteří mají přístup na stránku **Individuální nastavení**, mohou také importovat osobní zobrazení nebo zobrazení šablony pomocí tlačítka **Importovat zobrazení** v podokně akcí.
+
+## <a name="personalizing-inventory-dimensions"></a>Individuální nastavení dimenzí zásob
+
+Když si přizpůsobíte nastavení dimenze zásob na stránce, zvažte nastavení, která byla vytvořena pomocí možnosti **Zobrazení dimenzí**. Například používáte přizpůsobení ke skrytí sloupce pro dimenzi čísla skladové dávky, ale sloupec se objeví při příštím otevření stránky K tomu dochází, protože nastavení **Zobrazení dimenzí** kontroluje dimenze zásob, které jsou zobrazeny. Nastavení **Zobrazení dimenzí** platí pro všechny stránky a přepíše všechna individuální nastavení polí dimenze zásob na jednotlivých stránkách.
 
 V předchozím příkladu, pokud nechcete, aby se zobrazil sloupec dimenze zásob čísla dávky na stránce, musíte tuto dimenzi vymazat jako součást volby **Zobrazení dimenzí** pro tuto stránku.

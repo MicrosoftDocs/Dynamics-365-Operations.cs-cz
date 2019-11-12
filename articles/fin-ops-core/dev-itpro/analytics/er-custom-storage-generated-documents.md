@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a1c41cd4440eaf70f720bfd64884e6ef4662f87a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f65118b6a7393ced9d80c30fad7540a7b27da6c7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181466"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569077"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Určení umístění vlastního úložiště pro vygenerované dokumenty
 
@@ -56,7 +56,7 @@ V aktuální topologii [vytvořte nový formát elektronického výkaznictví](t
 
 Chcete-li určit, jak jsou směrovány dokumenty, které generují formát elektronického výkaznictví, musíte nakonfigurovat [umístění elektronického výkaznictví](electronic-reporting-destinations.md). V každém cílovém umístění elektronického výkaznictví, které je nakonfigurováno pro ukládání generovaných dokumentů jako souborů, musíte zadat typ dokumentu v rámci architektury správy dokumentů. Různé typy dokumentů mohou být použity pro směrování dokumentů, které různé formáty elektronického výkaznictví generují.
 
-1. Přidejte nový [typ dokumentu](../../fin-and-ops/organization-administration/configure-document-management.md) pro formát elektronického výkaznictví, který jste předtím vytvořili, nebo importovali. Na následujícím obrázku je typ dokumentu **FileX**.
+1. Přidejte nový [typ dokumentu](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) pro formát elektronického výkaznictví, který jste předtím vytvořili, nebo importovali. Na následujícím obrázku je typ dokumentu **FileX**.
 2. Chcete-li tento typ dokumentu odlišit od jiných typů dokumentů, zahrňte do jeho názvu konkrétní klíčové slovo. Například v následujícím příkladu je název **složka (LOCAL)**.
 3. V poli **Třída** určete **Připojit soubor**.
 4. V poli **Skupina** určete **Soubor**.

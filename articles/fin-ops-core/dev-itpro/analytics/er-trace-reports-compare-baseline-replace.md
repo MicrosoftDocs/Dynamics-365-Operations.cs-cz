@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a260be0f8659106907b26bf69bee3b33b09d0c24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181328"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578211"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Vylepšení ve sledování výsledků vygenerovaných sestav elektronického výkaznictví a jejich porovnání s hodnotami směrného plánu
 
@@ -71,9 +71,6 @@ Směrný plán byl přidán k vybranému **Formátu pro osvojení si směrných 
 5. Do pole **Zadat ID** zadejte **1**.
 6. Nastavte volbu **vytvořit soubory směrného plánu** na **Ano**.
 7. Vyberte **OK**.
-
-    ![Dialogové okno parametry elektronické sestavy](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "– obrazovka dialogového okna parametry elektronické sestavy")
-
 8. Vyberte **Směrné plány**.
 
     ![Stránka směrného plánu formátu elektronického výkaznictví](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Snímek obrazovky stránky směrného plánu formátu elektronického výkaznictví")
@@ -140,9 +137,6 @@ Chcete-li dokončit kroky v tomto příkladu, musíte nejprve dokončit kroky v 
 
 1. Na stránce **Konfigurace** na pevné záložce **Náhrady** vyberte **Vybrat komponenty**.
 2. Ve stromu komponent formátu rozbalte **Výstup**, rozbalte **Výstup\\Dokument** a zaškrtněte políčko **Výstup\\Dokument\\ProcessingDateTime**.
-
-    ![Dialogové okno Vybrat komponenty](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "– snímek obrazovky dialogového okna Vybrat komponenty")
-
 3. Vyberte **OK**.
 
 ![Stránka směrného plánu formátu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline4.PNG "Snímek obrazovky stránky směrného plánu formátu elektronického výkaznictví")
@@ -162,19 +156,14 @@ Nastavením specifických parametrů ER můžete potlačit upozornění na nahra
 1. Na stránce **Konfigurace** v podokně akcí na kartě **Konfigurace** vyberte **Parametry uživatelů**.
 2. Nastavte volbu **potlačit upozornění** podle směrného plánu na hodnotu **Ano** a pak klikněte na tlačítko **OK**.
 
-![Dialogové okno Parametry uživatele](media/GER-BaselineSample-ERUserParameters1.png "Obrázek dialogového okna Parametry uživatele")
-
 ### <a name="review-the-generated-baseline-file"></a>Kontrola generovaného souboru směrného plánu
 
 1. Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.
 2. Vyberte **Směrné plány**.
 3. Vyberte **Přílohy**.
-
-    ![Stránka Přílohy](media/GER-BaselineSample-AttachedBaselineFile.PNG "Snímek obrazovky stránky Přílohy")
-
     > [!NOTE]
     > Vygenerovaný soubor obsahuje text data a času zpracování (**"#"**) z vazby, která byla nakonfigurována v přidaném základním pravidlu, ne z vazby formátu.
-
+    
 4. Zavřete stránku **Přílohy**.
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Spuštění navrženého formát ER a kontrola protokolu pro analýzu výsledků

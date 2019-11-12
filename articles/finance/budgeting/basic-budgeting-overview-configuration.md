@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 349f720ee4cfb612ca4f4f50a9e081f3343f756d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
+ms.sourcegitcommit: 1eaa3451275fe4223d4d25b37aaa1cd2b183e803
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188687"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2667453"
 ---
 # <a name="budgeting-overview"></a>Přehled rozpočtování 
 
@@ -69,6 +69,12 @@ Vytvořte *kódy rozpočtu*, které určují typ transakcí rozpočtu pro zázna
 Kódy rozpočtu umožňují mít záznam auditu schválených úprav rozpočtu v průběhu kurzu rozpočtového cyklu. Pokud je workflow spojeno s kódem rozpočtu, bude k dispozici pro všechny položky registru rozpočtu, které používají tento kód rozpočtu, a kroky workflow musí být dokončeny dříve, než položka registru rozpočtu dosáhne fáze **Dokončeno**.  
 
 Můžete také libovolně nastavit *pravidla převodu rozpočtu*. Pro použití pravidel převodu rozpočtu, vyberte možnost **Použít pravidla pro rozpočtové převody** na stránce **Parametry rozpočtu**. Když jsou používány pravidla převodu rozpočtu, když uživatel vytvoří dokument za použití kód rozpočtu typu **Převod**, zůstatky rozpočtu nebudou aktualizovány, pokud budou narušena pravidla převodu rozpočtu. Například můžete povolit dokumenty převodu rozpočtu, kde je převeden rozpočet výdajů mezi hlavní účty pro oddělení prodeje a marketingu, ale lze zabránit přenášení rozpočtu z nebo do daného oddělení, pokud nebylo uděleno schválení workflowu pro daný typ účetní položku rozpočtu.
+
+Funkce, která byla představena v aplikaci Microsoft Dynamics 365 Finance verze 10.0.7 (leden 2020), přidala schopnost a flexibilitu pro položky registru rozpočtu. Chcete-li tato zlepšení povolit, přejděte do pracovního prostoru **Správa funkcí** a vyberte **položky registru rozpočtu pro pouze množství** a/nebo **Položky registru rozpočtu pro výchozí typ částky**.
+
+Funkce **Položky registru rozpočtu pro pouze množství** umožňuje zaúčtovat položku registru rozpočtu s částkami pouze množství. Můžete například zaúčtovat položku rozpočtu s množstvím 32 a s nulovou cenou, což vede k nulovému množství. Toto množství pak můžete použít v kontextu finanční sestavy k určení ceny za množství. Všimněte si, že v rámci této funkce nebyly aktualizovány žádné dotazy ani sestavy, funkce pouze umožňuje zaúčtovat nulovou částku.
+
+Funkce **Položky registru rozpočtu pro výchozí typ částky** umožňuje, aby výchozí typ částky v rámci položky registru rozpočtu byl jiný než výdaj. Řádek položky registru rozpočtu bude ve výchozím nastavení vyúčtování výdajů v případě, že typ hlavního účtu je výdaje, výchozí nastavení je výnos, pokud je typem hlavního účtu výdaj a výchozí nastavení výdajů pro všechny ostatní typy účtů.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Použití pracovní plochy a stránek s dotazy ke sledování rozpočtu a skutečných hodnot
 Správce rozpočtu může kontrolovat aktuální stav rozpočtu v pracovním prostoru **Rozpočty hlavní knihy a prognózy**. Karty **Výdaje nad rozpočet** a **Výnosy pod rozpočtem** poskytují rychlý přehled o kombinacích finančních dimenzí, kde cíle rozpočtu nedosáhly nebo se blížily prahové hodnotě. Prahovou procentuální hodnotu rozpočtu a sady finančních dimenzí, které se používají na těchto kartách, můžete přizpůsobit klepnutím na možnost **Konfigurovat můj pracovní prostor**. Můžete klepnout na možnost **Manažeři jednotky** a zobrazíte pracovníky, kteří odpovídají za kombinace specifických finančních dimenzí, které jsou na těchto kartách vybrány. Například pokud vidíte, že rozpočet výdajů oddělení Operace překročí rozpočtový práh, lze snadno najít a kontaktovat správce oddělení operací a problém probrat. 

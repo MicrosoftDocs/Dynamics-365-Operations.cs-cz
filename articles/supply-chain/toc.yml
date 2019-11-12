@@ -42,6 +42,8 @@
               items:
                 - name: Možnosti nasazení
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Srovnání funkcí cloudu a on-premises
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Cloudové nasazení
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Systémové požadavky pro nasazení cloudu
@@ -60,16 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Co je nového a co se změnilo
               items:
-                - name: Domovská stránka Co je nového a co se změnilo
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                - name: Funkce Preview v aplikacích Finance and Operations 10.0.6 (listopad 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Aplikace Finance and Operations 10.0.5 (říjen 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations, 10.0.4 (červenec 2019)'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations, Enterprise Edition 7.3'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funkce Preview v aplikaci Supply Chain Management verze 10.0.7 (prosinec 2019)
+                  href: get-started/whats-new-scm-10-0-7.md
+                - name: Supply Chain Management 10.0.6 (listopad 2019)
+                  href: get-started/whats-new-scm-10-0-6.md
+                - name: Co je nového a co se změnilo v předchozích verzích
+                  items:
+                    - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Aplikace Finance and Operations 10.0.5 (říjen 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Finance and Operations, 10.0.4 (červenec 2019)'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Finance and Operations, Enterprise Edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Odstraněné nebo zastaralé funkce
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Odložené funkce AX 2012
@@ -1687,8 +1693,6 @@
                       href: production-control/register-material-consumption-hand-held-device.md
                     - name: Kontrola spotřeby surovin pomocí principů vyprazdňování
                       href: production-control/flushing-principles.md
-                    - name: Cross docking z výrobních příkazů na výstupní překladiště
-                      href: production-control/cross-docking-opportunities.md
                     - name: Nastavení výstupního místa výroby pro dokončené zboží
                       href: production-control/production-output-location.md
                     - name: Vykázání kusovníku jako dokončeného
@@ -2285,6 +2289,12 @@
                   href: warehousing/manage-warehouse-workers.md
                 - name: Odložené zpracování práce skladu
                   href: warehousing/deferred-put.md
+            - name: Cross-docking
+              items:
+                - name: Cross-docking z výrobních příkazů na výstupní překladiště
+                  href: production-control/cross-docking-opportunities.md
+                - name: Dodávka automatického uvolnění pro cross-docking
+                  href: warehousing/auto-release-shipment-for-cross-docking.md
             - name: Částečné uvolnění a částečná dodávka
               items:
                 - name: Částečná dodávka nákladu přepravy
@@ -2311,6 +2321,8 @@
                   href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
                 - name: Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                - name: Zrušení práce skladu pro zpracování výjimek
+                  href: warehousing/cancel-warehouse-work.md
             - name: Inventura skladu
               items:
                 - name: Kódy důvodů pro inventury zásob
@@ -2377,7 +2389,7 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: "Registrace položek pro položky umožňující základní uskladnění s\_použitím deníku doručení zboží"
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: "Používání cross dockingu pro distribuci produktů z\_přijímacího skladu do obchodů"
+                - name: "Používání cross-dockingu pro distribuci produktů z\_přijímacího skladu do obchodů"
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: "Nastavení směrnice skladového místa pro vyskladnění v\_rámci nákupní objednávky"
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md

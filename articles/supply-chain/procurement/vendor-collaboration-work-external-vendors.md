@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250180"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653595"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Dodavatelská spolupráce s externími dodavateli
 
@@ -190,7 +190,7 @@ Následující tabulka zobrazuje příklad změn stavu a verze, kterou objednáv
 Dodavatelé nemusí nákupní objednávku potvrdit pomocí rozhraní spolupráce pro dodavatele. Mohou také odeslat e-mailovou zprávu nebo sdělit jejich přijetí nákupní objednávky prostřednictvím jiných kanálů. Poté lze ručně potvrdit objednávku. V tomto případě se zobrazí upozornění, že objednávka má být potvrzena, přestože není reakce od dodavatele. Nákupní objednávka se poté zobrazí v historii potvrzení jako otevřená potvrzená objednávka, která nemá žádné odpovědi. V tomto okamžiku dodavatel již nemá možnost nákupní objednávku potvrdit nebo odmítnout.
 
 > [!NOTE]
-> Poznámka: verze nákupní objednávky, která je dostupná pro jiné procesy v aplikaci Finance and Operations, je vždy nejnovější verze, a to i v případě, že tato nebyla registrována v rozhraní pro spolupráci dodavatele.
+> Poznámka: verze nákupní objednávky, která je dostupná pro jiné procesy v aplikaci Supply Chain Management, je vždy nejnovější verze, a to i v případě, že tato nebyla registrována v rozhraní pro spolupráci dodavatele.
 
 ### <a name="versions-and-statuses-if-you-use-change-management"></a>Verze a stavy, jestliže používáte správu změn
 

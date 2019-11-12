@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 571f443b02268cbee8fe787f25419e046ba99aeb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d25bacc2ec1f8e13376b96e188b099a184f7f8c6
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182846"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569125"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Analýza obsahu výdajů na nákup v Power BI
 
@@ -62,7 +62,7 @@ Následující sekce poskytují přehled vizualizací.
 - Celkový počet aktivních dodavatelů
 
 **Příklad**
-<img src="media/spend1.PNG" alt="Purchase by vendor">
+<img src="media/spend1.png" alt="Purchase by vendor">
 
 ### <a name="purchase-by-product-report-page"></a>Stránka sestavy nákupu podle produktu
 
@@ -79,7 +79,7 @@ Následující sekce poskytují přehled vizualizací.
 **Příklad**
 
 
-<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+<img src="media/purchaseByProduct.png" alt="Purchase by Product">
 
 ### <a name="purchase-by-period-report-page"></a>Stránka sestavy nákupu podle období
 Tato stránka zobrazuje nákupy v tomto a minulém roce a růst podle kategorie zásobování.
@@ -95,7 +95,7 @@ Tato stránka zobrazuje nákupy v tomto a minulém roce a růst podle kategorie 
 - Meziroční růst nákupů v %
 
 **Příklad**
-<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+<img src="media/purchaseByPeriod.png" alt="Purchase by Period">
 
 ### <a name="purchase-by-vendor-location-report-page"></a>Stránka sestavy nákupu podle místa dodavatele
 
@@ -105,7 +105,7 @@ Tato stránka zobrazuje nákupy v tomto a minulém roce a růst podle kategorie 
 - Nákup podle země
 
 **Příklad**
-<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+<img src="media/purchByVendorLocation.png" alt="Purchase by Vendor Location">
 
 ### <a name="purchase-spend-analysis-by-time-report-page"></a>Stránka sestavy analýzy výdajů při nákupu podle času
 
@@ -114,7 +114,7 @@ Tato stránka zobrazuje nákupy v tomto a minulém roce a růst podle kategorie 
 - Nákup za aktuální a předchozí rok (řádkový a sloupcový graf)
 
 **Příklad**
-<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+<img src="media/PurchByTIme.png" alt="Purchase by Time">
 
 ### <a name="purchase-spend-analysis-by-vendor-report-page"></a>Stránka sestavy analýzy výdajů při nákupu podle dodavatele
 
@@ -124,7 +124,7 @@ Tato stránka zobrazuje nákupy v tomto a minulém roce a růst podle kategorie 
 - Top 10 dodavatelů se sníženými investicemi meziročně
 
 **Příklad** 
-<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+<img src="media/PurchSpendAnalysisByVendor.png" alt="Purchase spend by vendor">
 
 
 ## <a name="data-model-and-entities"></a>Datový model a entity

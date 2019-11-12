@@ -3,7 +3,7 @@ title: Kontrola konzistence maloobchodních transakcí
 description: Toto téma popisuje funkci kontroly konzistence maloobchodních transakcí v aplikaci Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b956565ac15b3d7b638cedaadc20923ee87b9c61
+ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018406"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622590"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Kontrola konzistence maloobchodních transakcí
 
@@ -59,7 +59,10 @@ Dávkové zpracování **Ověřit transakce obchodu** kontroluje konzistenci tab
 - **Položka dárkového poukazu** – Retail nepodporuje vrácení položek dárkového poukazu. Nicméně zůstatek na dárkovém poukazu lze vyplatit v hotovosti. U jakékoliv položky dárkového poukazu, která je zpracována jako řádek vrácení namísto řádku vyplacení v hotovosti, se proces zaúčtování výkazů nezdaří. Proces ověřování pro položky dárkového poukazu pomáhá zaručit, že jediné položky řádku vrácení dárkového poukazu v tabulce maloobchodních transakcí jsou řádky vyplacení dárkového poukazu.
 - **Záporná cena** – Ověřuje, že neexistují žádné řádky transakce s negativní cenou.
 - **Položka a varianta** – Ověřuje, že položky a varianty na řádcích transakce existují v hlavním souboru položek a variant.
-- **Částka daně** - Ověřuje, že se záznamy daně shodují s částkami daně na řádcích. 
+- **Částka daně** - Ověřuje, že se záznamy daně shodují s částkami daně na řádcích.
+- **Sériové číslo** - Ověřuje, že se sériové číslo nachází v řádcích transakce pro položky řízené sériovým číslem.
+- **Podepsat** - Ověřuje, že znaménko množství a čistá částka budou stejné ve všech řádcích transakce.
+- **Obchodní datum** – Ověřuje, zda jsou finanční období pro všechna obchodní data pro maloobchodní transakce otevřená.
 
 ## <a name="set-up-the-consistency-checker"></a>Nastavení kontroly konzistence
 

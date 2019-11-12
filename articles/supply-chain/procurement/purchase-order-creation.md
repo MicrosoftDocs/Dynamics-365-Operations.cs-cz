@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb703ff7419a59aa174e16d8d988a96814e4fec6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5454b9003105e4b44ec7577e5f8989c75554aeb9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572666"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2572192"
 ---
 # <a name="create-purchase-orders"></a>Vytváření nákupních objednávek
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Tento článek popisuje proces a možnosti při ručním vytvoření nákupní objednávky.
 
@@ -94,7 +92,7 @@ Bude pravděpodobně nutné zpozdit dokončení nákupní objednávky. Napříkl
 
 [Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 
-[Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Přehled faktur dodavatele](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: a8183dd834b1f39773d25fa7c546d5db1c7b7749
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 219bb1b5ac8360acf267fb792b8e23f961096abc
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249019"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553061"
 ---
 # <a name="mobile-app-home-page"></a>Domovská stránka mobilní aplikace
 
@@ -90,12 +90,12 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci při 
 <td>Další informace naleznete v následujících tématech:
 <ul>
 
-<li><a href="../../financials/cost-accounting/cost-controlling-mobile-workspace.md">Mobilní pracovní prostory Řízení nákladů</a></li>
-<li><a href="../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilní pracovní prostor zásob na skladě</a></li>
-<li><a href="../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobilní pracovní prostory prodejních objednávek</a></li>
-<li><a href="../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobilní pracovní prostor dodavatelské spolupráce</a></li>
-<li><a href="../../financials/project-management/project-time-entry-mobile-workspace.md">Mobilní pracovní prostor zadání času projektu</a></li>
-<li><a href="../../financials/expense-management/expense-management-mobile-workspace.md">Pracovnímu prostor správy výdajů</a></li>
+<li><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Mobilní pracovní prostory Řízení nákladů</a></li>
+<li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilní pracovní prostor zásob na skladě</a></li>
+<li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobilní pracovní prostory prodejních objednávek</a></li>
+<li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobilní pracovní prostor dodavatelské spolupráce</a></li>
+<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobilní pracovní prostor zadání času projektu</a></li>
+<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Pracovnímu prostor správy výdajů</a></li>
 
 </ul></td>
 </tr>

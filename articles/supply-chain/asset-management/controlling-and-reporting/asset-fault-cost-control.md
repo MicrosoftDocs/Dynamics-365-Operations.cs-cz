@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2fe75c327cdc2bdd76173430ed551895f5941c7b
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 3c34180ad99db29147587bb002aaa6badc918717
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918296"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652234"
 ---
 # <a name="asset-fault-cost-control"></a>Řízení nákladů závad majetku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-V modulu Správa majetku můžete vypočítat náklady na registrace závad majetku pro získání přehledu o skutečných nákladech ve srovnání s rozpočtovými náklady na závadách. Skutečné náklady jsou založeny na zaúčtovaných transakcích. Datum je datum závady, kdy byl zaznamenán příznak.
+V modulu Správa majetku můžete vypočítat náklady na registrace závad majetku pro získání přehledu o skutečných nákladech ve srovnání s rozpočtovými náklady. Skutečné náklady jsou založeny na zaúčtovaných transakcích. Datum je datum závady, kdy byl zaznamenán příznak.
 
 1. Klikněte na **Správa majetku** > **Dotazy** > **Závada majetku** > **Řízení nákladů závad majetku**.
 
@@ -39,20 +39,26 @@ V modulu Správa majetku můžete vypočítat náklady na registrace závad maje
 
 4. Nechcete-li zobrazit výsledky obsahující nulové náklady, vyberte možnost Ano na přepínacím tlačítku **Přeskočit nulu**.
 
-5. V poli **Úroveň** určete, jak detailní mají být řádky řízení nákladů v případě funkčních míst. Pokud například do pole zadáte číslo „1“ a máte strukturu funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky řízení nákladů závad majetku pro funkční místo, a proto lze hodiny na řádku navýšit z funkčních míst na nižší úrovni. Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky řízení nákladů závad majetku na všech úrovních funkčních míst, ke kterým se vztahují.
+5. V poli **Úroveň** určete, jak detailní mají být řádky řízení nákladů v případě funkčních míst. 
+
+    Pokud například do pole zadáte číslo „1“ a máte strukturu funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky řízení nákladů závad majetku pro funkční místo, a proto lze hodiny na řádku navýšit z funkčních míst na nižší úrovni. 
+    
+    Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky řízení nákladů závad majetku na všech úrovních funkčních míst, ke kterým se vztahují.
 
 6. Chcete-li hledání omezit, můžete vybrat konkrétní majetek, data závad a příčiny závad na záložce s náhledem **Záznamy, které mají být zahrnuty**.
 
 7. Výpočet zahájíte klepnutím na tlačítko **OK**.
 
-8. Ve skupině podoken akcí **Seskupit podle...** klikněte na odpovídající tlačítka pro zobrazení požadované úrovně podrobností výpočtu. Vybraná tlačítka podokna akcí jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
+8. Ve skupině **Seskupit podle** klikněte na odpovídající tlačítka pro zobrazení požadované úrovně podrobností výpočtu. Vybraná tlačítka **Seskupit podle** jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
 
-Následující obrázek ukazuje příklad výpočtu řízení nákladů závad majetku.
+## <a name="example"></a>Příklad
 
-![Obrázek č. 1](media/05-controlling-and-reporting.png)
+V tomto příkladu je zobrazen výpočet kontroly nákladů majetku.
 
-Více informací o nastavení závad získáte v části [Správa poruch](../setup-for-work-orders/fault-management.md).
+- V poli **Původní rozpočet** jsou uvedeny rozpočtové náklady z prognózy pracovního příkazu. 
+- Pole **Skutečné náklady** zobrazuje zaúčtované náklady na pracovních příkazech. 
+- Pole **Potvrzené náklady** zobrazuje celkové množství nákladů, které vaše společnost potvrdila ve vztahu k pracovním příkazům.
 
->[!NOTE]
->V poli **Původní rozpočet** jsou uvedeny rozpočtové náklady z prognózy pracovního příkazu. Pole **Skutečné náklady** zobrazuje zaúčtované náklady na pracovních příkazech. Pole **Potvrzené náklady** zobrazuje celkové množství nákladů, které vaše společnost potvrdila ve vztahu k pracovním příkazům.
+    ![Obrázek č. 1](media/05-controlling-and-reporting.png)
 
+Více informací o nastavení závad získáte v části [Správa závad](../setup-for-work-orders/fault-management.md).

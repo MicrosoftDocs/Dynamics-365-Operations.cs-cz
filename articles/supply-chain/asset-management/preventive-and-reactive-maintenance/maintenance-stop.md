@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 4a7c57452b2f639b1f1b76bc79959c620c58ace1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922176"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571293"
 ---
 # <a name="maintenance-downtime"></a>Prostoj údržby
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Prostoj údržby slouží k získání přehledu o kapacitě potřebné k provádění prací údržby určitých položek majetku během určitého období. Můžete například vytvořit registraci prostoje údržby pro řádek výroby 10 ve výrobní hale 29-A na výrobním pracovišti 02. Registrace prostojů údržby má počáteční a koncový čas označující období, ve kterém položky majetku související se zastavením údržby nejsou dostupné pro výrobu.
 

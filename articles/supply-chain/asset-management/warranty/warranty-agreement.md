@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71905d5b362c80d48b78210b59cacfb1e7899757
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: da60d098aff96780ca1e40832db34e3c9cc835e7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874686"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569678"
 ---
 # <a name="warranty-agreements"></a>Záruční smlouvy
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 V modulu Správa majetku můžete nastavit záruční podmínky, které mohou být spojeny s majetkem nebo typem majetku. Jsou vytvořeny záruční podmínky pro určité období. Záruku lze nastavit tak, aby poskytovala úplné pokrytí nebo částečné pokrytí, a můžete nastavit podmínky, které souvisejí s hodinami, výdaji a položkami.
@@ -54,4 +54,4 @@ Záruční smlouva může zahrnovat několik řádků smlouvy, které pokryjí z
     3. V poli **Interval** zadejte požadované číslo. Toto pole definuje počet období, pro která má být záruka platná.
     4. V poli **Procento** zadejte procento disponibility pro řádek záruky. Procentuální hodnota označuje, kolik je kryto vaší společností.
 
-![Obrázek č. 1](media/01-warranty.png)
+![Stránka Záruka](media/01-warranty.png)

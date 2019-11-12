@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 792ff4d7b72ce092fe1ad92e53172cf40f0ecf26
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565689"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569264"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>Metoda LIFO s fyzickou hodnotou a označením
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 U skladového modelu LIFO (Last in, First out) jsou poslední (nejnovější) příjmy vydány jako první. Výdeje ze skladu jsou vyrovnávány vůči posledním příjmům na sklad podle data skladové transakce. 
 
@@ -56,7 +54,9 @@ V tomto příkladu není skupina modelů položek označena, aby obsahovala fyzi
 -   5b. Finanční výdej 1 kusu za 20 Kč (průběžný průměr z finančně zaúčtovaných transakcí).
 -   6. Je provedena uzávěrka skladu. Podle metody LIFO bude poslední finančně zaúčtovaný výdej vyrovnán posledním finančně zaúčtovaným příjmem. K transakci výdeje bude vytvořena úprava ve výši 10 Kč.
 
-Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně aktualizovaných transakcí ve výši 15,00 USD. Následující obrázky ukazují účinky skladového modelu LIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. ![Metoda LIFO bez funkce Zahrnovat fyzickou hodnotu](./media/lifowithoutincludephysicalvalue.gif) 
+Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně aktualizovaných transakcí ve výši 15,00 USD. Následující obrázky ukazují účinky skladového modelu LIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. 
+
+![Metoda LIFO bez funkce Zahrnovat fyzickou hodnotu](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 
@@ -90,7 +90,9 @@ Následující obrázek znázorňuje tyto transakce:
 
 Transakce 6a bude upravena podle příjmové transakce 4b. Systém tyto transakce nevyrovná, protože příjem je zaúčtován pouze fyzicky, ale nikoli finančně. Místo toho bude k transakci fyzického výdeje zaúčtována úprava ve výši 8,75 Kč. Transakce 5b bude opravena podle transakce fyzického příjmu 3a. Systém tyto transakce nevyrovná, protože ani jedna není finančně zaúčtované. Místo toho bude k této transakci výdeje zaúčtována úprava ve výši -3,75 Kč. Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 20,00 Kč. 
 
-Následující obrázek ukazuje účinek skladového modelu LIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. ![Metoda LIFO s funkcí Zahrnovat fyzickou hodnotu](./media/lifowithincludephysicalvalue.gif) 
+Následující obrázek ukazuje účinek skladového modelu LIFO na tuto sérii transakcí, když není použita možnost **Zahrnovat fyzickou hodnotu**. 
+
+![Metoda LIFO s funkcí Zahrnovat fyzickou hodnotu](./media/lifowithincludephysicalvalue.gif) 
 
 **Klíč k diagramu**
 
@@ -132,7 +134,9 @@ Následující obrázek znázorňuje tyto transakce:
 
 Nová průběžná průměrná cena bude odrážet průměrnou hodnotu finančně a fyzicky aktualizovaných transakcí ve výši 27,50 Kč. 
 
-Následující obrázek ukazuje účinek volby skladového modelu LIFO na tuto sérii transakcí při použití označení propojení mezi výdeji a příjmy. ![Metoda LIFO s označením](./media/lifowithmarking.gif) 
+Následující obrázek ukazuje účinek volby skladového modelu LIFO na tuto sérii transakcí při použití označení propojení mezi výdeji a příjmy. 
+
+![Metoda LIFO s označením](./media/lifowithmarking.gif) 
 
 **Klíč k diagramu**
 
@@ -146,7 +150,4 @@ Následující obrázek ukazuje účinek volby skladového modelu LIFO na tuto s
 - Každá svislá šipka je označena průběžným identifikátorem (například *1a*). Identifikátory označují pořadí zaúčtování skladových transakcí na časové ose.
 - Uzávěrky skladu jsou reprezentovány červenou svislou přerušovanou čarou a označeny popiskem *Uzávěrka skladu*.
 - Vyrovnání, která jsou provedena při uzávěrce skladu, jsou reprezentována červenými šikmými přerušovanými šipkami směřujícími od určitého příjmu k výdeji.
-
-
-
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 916e7b8d5d494dbae0659504957f7f0798a6834b
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 1a59b4bbf1a4612cea1ba3bd536ba4b018fc621f
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918365"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652326"
 ---
 # <a name="work-hour-control"></a>Kontrola pracovní doby
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 V modulu Správa majetku můžete vypočítat počet hodin pro získání přehledu o skutečných hodinách ve srovnání s rozpočtovými hodinami na majetku, funkčních místech nebo pracovních příkazech. Skutečné hodiny jsou založeny na zaúčtovaných transakcích.
 
@@ -47,7 +47,11 @@ Výpočty vytvořené pro majetek, funkční místa a pracovní příkazy jsou t
 
 5. Nechcete-li zobrazit výsledky obsahující nula hodin, vyberte možnost Ano na přepínacím tlačítku **Přeskočit nulu**.
 
-6. V poli **Úroveň** určete, jak detailní mají být řádky řízení hodin v případě funkčních míst. Pokud například do pole zadáte číslo „1“ a máte hierarchii funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky řízení hodin pro funkční místo, a proto lze navýšit hodiny na řádku z funkčních míst na nižší úrovni. Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky řízení hodin na všech úrovních funkčních míst, ke kterým se vztahují.
+6. V poli **Úroveň** určete, jak detailní mají být řádky řízení hodin v případě funkčních míst. 
+
+    Pokud například do pole zadáte číslo „1“ a máte hierarchii funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky řízení hodin pro funkční místo, a proto lze navýšit hodiny na řádku z funkčních míst na nižší úrovni. 
+    
+    Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky řízení hodin na všech úrovních funkčních míst, ke kterým se vztahují.
 
 7. Chcete-li zobrazit náklady související s dílčími aktivy jako samostatné řádky, vyberte možnost Ano na přepínacím tlačítku **Zahrnout dílčí aktiva**.
 
@@ -55,14 +59,18 @@ Výpočty vytvořené pro majetek, funkční místa a pracovní příkazy jsou t
 
 9. Výpočet zahájíte klepnutím na tlačítko **OK**.
 
-10. Na stránce **Řízení hodin majetku**, ve skupinách podokna akce **Seskupit podle...** vyberte odpovídající tlačítka pro zobrazení požadované úrovně podrobností výpočtu. Vybraná tlačítka podokna akcí jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
+10. Na kartě **Kontrola hodin majetku** klikněte na tlačítka **Seskupit podle** pro zobrazení požadované úrovně podrobností výpočtu. Vybraná tlačítka **Seskupit podle** jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
 
-Následující obrázek ukazuje příklad výpočtu **Řízení hodin majetku**.
+## <a name="example"></a>Příklad
 
-![Obrázek č. 1](media/04-controlling-and-reporting.png)
+Následující snímek obrazovky ukazuje příklad výpočtu **Řízení hodin majetku**.
+
+- V poli **Původní rozpočet** jsou uvedeny rozpočtové hodiny z prognózy pracovního příkazu. 
+- Pole **Skutečné hodiny** zobrazuje zaúčtované hodiny na pracovních příkazech. 
+- Pole **Potvrzené hodiny** zobrazuje celkové množství hodin, které vaše společnost potvrdila ve vztahu k pracovním příkazům.
+
+![Příklad výpočtu kontrolního času majetku](media/04-controlling-and-reporting.png)
 
 Dalším způsobem provedení výpočtu hodin je vybrat více majetku v možnosti **Všechen majetek** nebo **Aktivní majetek**. Poté klikněte na tlačítko **Řízení hodin** na pevné záložce **Obecné**. Vybraný majetek je automaticky vložen do pole **Majetek** na pevné záložce **Záznamy, které mají být zahrnuty**. Klikněte na tlačítko **OK** v dialogovém okně **Řízení hodin majetku** a zobrazí se výpočet pro vybraný majetek. Stejný postup lze provést pro funkční místa ve volbě **Všechna funkční místa** nebo **Aktivní funkční místa** a pro pracovní příkazy ve volbě **Všechny pracovní příkazy** nebo **Aktivní pracovní příkazy**.
 
->[!NOTE]
->V poli **Původní rozpočet** jsou uvedeny rozpočtové hodiny z prognózy pracovního příkazu. Pole **Skutečné hodiny** zobrazuje zaúčtované hodiny na pracovních příkazech. Pole **Potvrzené hodiny** zobrazuje celkové množství hodin, které vaše společnost potvrdila ve vztahu k pracovním příkazům.
 

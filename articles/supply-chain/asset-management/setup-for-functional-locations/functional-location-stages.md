@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11f784e4c17ad5b764cadd914f4959f4be160913
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: d4804d5f38fb65aa8ab3eafceccbbc6f52f2e81b
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783119"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569931"
 ---
 # <a name="functional-location-lifecycle-states"></a>Stavy životního cyklu funkčních míst
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Toto téma popisuje, jak nastavit stavy životního cyklu funkčních míst a modely životního cyklu v modulu Správa majetku. Stavy životního cyklu funkčního místa definují stavy, ve kterých může být funkční místo, například vytvořeno, aktivní a ukončeno. Všechna funkční místa, bez ohledu na jejich stav životního cyklu, můžete zobrazit na stránce se seznamem **Všechna funkční místa**. Stav funkčního místa můžete změnit tak, že ho vyberete na stránce se seznamem **Všechna funkční místa** a vyberete možnost **Aktualizovat stav funkčního místa**.
 

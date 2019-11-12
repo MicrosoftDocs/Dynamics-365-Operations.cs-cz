@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b13f8aba7e1d2448495f97a4772eb573e08c025
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6e69b471af0853159ba807af5f39db64dbbb04f8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874594"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569701"
 ---
-# <a name="warranty-on-assets-and-asset-types"></a>Záruka na majetek a typy majetku
+# <a name="warranties-on-assets-and-asset-types"></a>Záruky na majetek a typy majetku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Toto téma vysvětluje, jak nastavit záruky na majetek a typy majetku v modulu Správa majetku.
@@ -50,7 +50,7 @@ Toto téma vysvětluje, jak nastavit záruky na majetek a typy majetku v modulu 
     > [!IMPORTANT]
     > Pokud je v poli **Začátek záruky** na pracovním příkazu vybráno datum, záruka bude platit pro tento pracovní příkaz k tomuto datu. Při vytvoření pracovního příkazu je pole **Začátek záruky** automaticky nastaveno na datum vytvoření. Datum však můžete změnit tak, aby odpovídalo například počátečnímu datu záruční smlouvy.
     >
-    > ![Obrázek č. 1](media/02-warranty.png)
+    > ![Stránka Pracovní příkaz](media/02-warranty.png)
 
 > [!NOTE]
 > Když vytvoříte pracovní příkaz pro majetek, který je pokryt záruční smlouvou dodavatele, a pokud má pracovní příkaz očekávané počáteční datum během záruční doby, obdržíte oznámení o záruční smlouvě. Poté můžete požadovaný pracovní příkaz zrušit podle potřeby.

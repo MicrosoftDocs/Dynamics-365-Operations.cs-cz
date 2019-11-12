@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d541de550df41b7d4616492960bd4f2aae46d45e
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 887b0ff8bf78cd99b3a2ec34416f0265297f556a
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024976"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570092"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Správa času a docházky v aplikaci Retail
 
@@ -100,7 +100,7 @@ Informace o konfiguraci naleznete v tématu [Nastavení modulu čas a docházka]
         </tbody>
         </table>
 
-        [![StavyČasomíry](./media/timeclockstates.png)](./media/timeclockstates.png)
+        [![Stavy času](./media/timeclockstates.png)](./media/timeclockstates.png)
 
 - Prohlédněte si zprávu s ověřením a ověřte správnost času aktuální aktivity.
 - Protokolový deník:

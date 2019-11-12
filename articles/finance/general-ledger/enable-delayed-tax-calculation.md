@@ -1,6 +1,6 @@
 ---
-title: Povolit výpočet opožděné daně v deníku
-description: Toto téma vysvětluje, jak pomocí funkce **Povolit výpočet opožděné daně v deníku** zvýšit výkonnost výpočtu daně, pokud je objem řádků deníku velmi velký.
+title: Povolení výpočtu opožděné daně v denících
+description: Toto téma vysvětluje, jak pomocí funkce Povolit výpočet výpočet opožděné daně v deníku zvýšit výkonnost výpočtu daně, pokud je objem řádků deníku velmi velký.
 author: ericwang
 manager: Ann Beebe
 ms.date: 09/18/2019
@@ -18,55 +18,50 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5a8ae30a007d3e2b8b7a9bc9eb7786f6e58246d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e336be5468106007e1f5adf26bf272c88b8b413b
+ms.sourcegitcommit: bc9b65b73bf6443581c2869a9ecfd0675f0be566
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176749"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2623514"
 ---
-# <a name="enable-delayed-tax-calculation-on-journal"></a>Povolit výpočet opožděné daně v deníku
+# <a name="enable-delayed-tax-calculation-on-journals"></a>Povolení výpočtu opožděné daně v denících
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Toto téma vysvětluje, jak pomocí funkce **Povolit výpočet opožděné daně v deníku** zvýšit výkonnost výpočtu daně, pokud je objem řádků deníku velmi velký.
+V tomto tématu je vysvětleno, jak lze zpozdit výpočet DPH v denících. Tato schopnost pomáhá zvýšit výkon při výpočtech daně v případě, že existuje mnoho řádků deníku.
 
-Aktuální chování při výpočtu DPH v deníku je v reálném čase spuštěno při aktualizaci polí daně, např. skupiny DPH nebo skupiny DPH položky. Každá aktualizace na úrovni řádku deníku znovu vypočítá částku daně na všech řádcích deníku. Pomáhá uživateli zobrazit vypočítanou částku daně v reálném čase, ale může také vést k potížím s výkonem v případě, že objem řádků deníku je velmi velký.
+Ve výchozím nastavení jsou částky DPH na řádcích deníku vypočteny při aktualizaci polí vztahujících se k dani. Mezi tato pole patří pole pro skupiny DPH a skupiny DPH položky. Jakákoli aktualizace řádku deníku způsobí přepočítání částek daně pro všechny řádky deníku. Ačkoli toto chování pomáhá uživateli zobrazit částky daně vypočtené v reálném čase, může také ovlivňovat výkonnost v případě, že je počet řádků deníku velmi velký.
 
-Tato funkce poskytuje možnost odložit výpočet daně za účelem vyřešení problému s výkonem. Je-li tato funkce zapnuta, bude částka daně vypočtena pouze v případě, že uživatel klikne na příkaz „DPH“ nebo zaúčtuje deník.
+Funkce výpočtu opožděné daně umožňuje zpozdit výpočet daně v denících, a proto může pomoci vyřešit problémy s výkonem. Je-li tato funkce zapnuta, budou částky daně vypočteny pouze v případě, že uživatel klikne na příkaz **DPH** nebo zaúčtuje deník.
 
-Uživatel může parametr zapnout nebo vypnout ve třech úrovních:
-- Podle právnické osoby
-- Dle názvu deníku
-- Dle záhlaví deníku
+Výpočet DPH můžete zpozdit ze tří úrovní:
 
-Systém převezme hodnotu parametru v záhlaví deníku jako konečný. Hodnota parametru v záhlaví deníku bude převzata z názvu deníku. Hodnota parametru v názvu deníku bude při vytvoření názvu deníku přepsána z parametru hlavní knihy.
+- Právnická osoba
+- Název deníku
+- Záhlaví deníku
 
-Je-li tento parametr zapnutý, skryje se pole ‚Skutečná částka DPH‘ a ‚Vypočítaná částka DPH‘ v deníku. Účelem je , aby nedošlo ke zmatení uživatele, protože hodnota těchto dvou polí vždy zobrazí 0 před spuštěním výpočtu daně uživatelem.
+Systém dává prioritu nastavení pro záhlaví deníku. Ve výchozím nastavení je toto nastavení převzato z názvu deníku. Ve výchozím nastavení je nastavení názvu deníku převzato z nastavení na stránce **Parametry hlavní knihy** při vytvoření názvu deníku. V následujících oddílech je vysvětleno, jak zapnout výpočet zpožděné daně pro právnické osoby, názvy deníků a záhlaví deníků.
 
-## <a name="enable-delayed-tax-calculation-by-legal-entity"></a>Povolit výpočet zpožděné daně podle právnické osoby
+## <a name="turn-on-delayed-tax-calculation-at-the-legal-entity-level"></a>Zapnutí výpočtu opožděné daně na úrovni právnické osoby
 
-1. Přejděte do **Hlavní knihy > Nastavení hlavní knihy > Parametry hlavní knihy**
-2. Klikněte na kartu **DPH**
-3. Na pevné kartě **Obecné** vyhledejte parametr **Výpočet opožděné daně** a zapněte jej nebo vypněte.
+1. Přejděte na **Hlavní kniha \> Nastavení hlavní knihy \> Parametry hlavní knihy**.
+2. Na kartě **DPH** na pevné záložce **Obecné** nastavte možnost **Výpočet opožděné daně** na **Ano**.
 
-![](media/delayed-tax-calculation-gl.png)
+![Obrázek Parametry hlavní knihy](media/delayed-tax-calculation-gl.png)
 
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Zapnutí výpočtu opožděné daně na úrovni názvu deníku
 
+1. Přejděte na položky **Hlavní kniha \> Nastavení deníku \> Názvy deníku**.
+2. Na pevné záložce **Obecné** v části **DPH** nastavte možnost **DVýpočet opožděné daně** na **Ano**.
 
-## <a name="enable-delayed-tax-calculation-by-journal-name"></a>Povolit výpočet opožděné daně dle názvu deníku
+![Obrázek Názvy deníků](media/delayed-tax-calculation-journal-name.png)
 
-1. Přejděte do **Hlavní knihy > Nastavení deníku > Názvy deníků**
-2. Na pevné kartě **Obecné** vyhledejte parametr **Výpočet opožděné daně** a zapněte jej nebo vypněte.
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Zapnutí výpočtu opožděné daně na úrovni záhlaví deníku
 
-![](media/delayed-tax-calculation-journal-name.png)
-
-## <a name="enable-delayed-tax-calculation-by-journal"></a>Povolit výpočet opožděné daně dle deníku
-
-1. Přejděte do nabídky **Hlavní kniha > Položky deníku > Hlavní deníky**
-2. Klepněte na možnost **Nový**
+1. Přejděte na **Hlavní kniha \> Položky deníku \> Hlavní deníky**.
+2. Zvolte **Nové**.
 3. Vyberte název deníku.
-4. Klikněte na možnost **Nastavení**
-5. Vyhledej parametr **Výpočet opožděné daně** a zapněte jej nebo vypněte.
+4. Na kartě **Nastavení** nastavte možnost **Výpočet opožděné daně** na hodnotu **Ano**.
 
-![](media/delayed-tax-calculation-journal-header.png)
+![Obrázek stránky hlavního deníku](media/delayed-tax-calculation-journal-header.png)

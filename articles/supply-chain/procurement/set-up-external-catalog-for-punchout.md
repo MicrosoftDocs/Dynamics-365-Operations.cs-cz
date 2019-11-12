@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: e1bddb65fd5fd73e879d8a95decc9f3e4f7f37e4
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249374"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653434"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
 
 [!include [banner](../includes/banner.md)]
 
-Pomocí externího katalogu můžete zajistit, zda jsou informace o produktu a cenách, které následně zpracováváte v aplikaci Dynamics 365 for Finance and Operations z července 2017, přesné a aktuální. Žádanku poté lze schválit a převést na nákupní objednávku a tuto objednávku následně zadat u dodavatele.
+Pomocí externího katalogu můžete zajistit, zda jsou informace o produktu a cenách, které následně zpracováváte v aplikaci Supply Chain Management, přesné a aktuální. Žádanku poté lze schválit a převést na nákupní objednávku a tuto objednávku následně zadat u dodavatele.
 
 Když při nastavování externího katalogu zaměstnanec připravuje žádanku, bude mít možnost přesměrovat ji na externí web, do externího katalogu a vrátit košík, který byl vytvořen na externím webu. Tato komunikace vychází z protokolu cXML a je nutné ji nastavit mezi systémy nákupní a prodejní organizace.
 

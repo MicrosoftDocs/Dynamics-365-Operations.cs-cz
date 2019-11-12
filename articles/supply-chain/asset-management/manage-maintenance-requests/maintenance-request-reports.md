@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5f1860907e3cc3c4830cc385771d5924c609ea6
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: 0734416eccf149330b390cce897d2c254f6c698b
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847521"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571615"
 ---
 # <a name="maintenance-request-reports"></a>Sestavy požadavků na údržbu
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 V modulu Správa majetku můžete vygenerovat dvě sestavy, které souvisejí s požadavky na údržbu. Jedna sestava zobrazuje podrobnosti a druhá sestava obsahuje seznam, který lze použít pro plánování a následný postup.
 
@@ -44,7 +44,7 @@ Sestava **Podrobnosti požadavku na údržbu** zobrazuje různé informace týka
 
 Následující ilustrace znázorňuje příklad sestavy **Podrobnosti požadavků na údržbu**.
 
-![Obrázek č. 1](media/09-manage-maintenance-requests.png)
+![Sestava podrobností požadavku na údržbu](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Vytvoření sestavy seznamu požadavků na údržbu
 
@@ -57,4 +57,4 @@ Sestava **Seznam požadavků na údržbu** zobrazuje seznam všech požadavků n
 
 Na následujícím obrázku je znázorněn příklad sestavy **Seznam požadavků na údržbu** pro všechny aktivní požadavky na údržbu.
 
-![Obrázek č. 2](media/10-manage-maintenance-requests.png)
+![Sestava seznamu požadavků na údržbu](media/10-manage-maintenance-requests.png)

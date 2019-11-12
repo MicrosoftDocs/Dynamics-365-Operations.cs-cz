@@ -18,37 +18,45 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7c9330cc7b3a8839d94c8945418548033254786b
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 43772903f6845409cb33c7f2a13a049a3e9aa208
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918434"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652395"
 ---
 # <a name="asset-fault-analysis"></a>Analýza závady majetku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 V modulu Správa majetku můžete analyzovat registrace závad majetku s cílem získat přehled o celkovém počtu závad zaregistrovaných během určitého období. Registrace závad lze analyzovat z různých perspektiv, například se zaměřením na majetek, typy majetku, funkční místa, příznaky závad nebo typy závad.
 
 1. Klikněte na **Správa majetku** > **Dotazy** > **Závada majetku** > **Analýza závad majetku**.
 
-2. V dialogovém okně **Výpočet analýzy závad majetku** můžete pomocí pole **Úroveň** označit, jak detailní mají být řádky závad majetku, pokud jde o funkční místa. Pokud například do pole zadáte číslo „1“ a máte strukturu funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky závad majetku pro funkční místo, a proto lze hodiny na řádku navýšit z funkčních míst na nižší úrovni. Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky závad majetku na všech úrovních funkčních míst, ke kterým se vztahují.
+2. V dialogovém okně **Výpočet analýzy závad majetku** můžete pomocí pole **Úroveň** označit, jak detailní mají být řádky závad majetku, pokud jde o funkční místa. 
+
+    Pokud například do pole zadáte číslo „1“ a máte strukturu funkčních míst o více úrovních, budou na nejvyšší úrovni zobrazeny všechny řádky závad majetku pro funkční místo, a proto lze hodiny na řádku navýšit z funkčních míst na nižší úrovni. 
+        
+    Pokud do pole **Úroveň** zadáte číslo „0“, zobrazí se podrobný výsledek znázorňující všechny řádky závad majetku na všech úrovních funkčních míst, ke kterým se vztahují.
 
 3. Chcete-li hledání omezit, můžete vybrat konkrétní majetek, data závad, příčiny závad a nápravy závad na záložce s náhledem **Záznamy k zahrnutí**.
 
 4. Výpočet zahájíte klepnutím na tlačítko **OK**.
 
-5. Na kartě **Analýza závad majetku** klikněte na jedno nebo více tlačítek ve skupinách podokna akcí **Seskupit podle...** pro zobrazení úrovně podrobností, které chcete zobrazit. Aktivovaná tlačítka jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
+5. Na kartě **Analýza závad majetku** klikněte na jedno nebo více tlačítek v podokně akcí **Seskupit podle** pro zobrazení úrovně podrobností, které chcete zobrazit. Aktivovaná tlačítka jsou zvýrazněna. Kliknutím na tlačítko jej aktivujte nebo deaktivujte.
 
 6. Kliknutím na **Aktualizovat výpočty** zobrazíte své výběry na obrazovce. 
 
 >[!NOTE]
->Při každém aktivaci nebo deaktivaci tlačítek ve skupině podoken akcí **Seskupit podle...** nezapomeňte po změně výběrů kliknout na tlačítko **Aktualizovat výpočty**. To je nutné, protože při přepočtu pravděpodobnosti závady se zpracovává velké množství dat.
+>Při každé aktivaci nebo deaktivaci tlačítka **Seskupit podle** nezapomeňte kliknout na tlačítko **aktualizovat výpočty**. To je nutné, protože při přepočtu pravděpodobnosti závady se zpracovává velké množství dat.
 
-Existuje mnoho způsobů analýzy registrací závad. Níže vidíte příklady na pěti snímcích obrazovek, v nichž různé výběry dat poskytují různé informace. Zjistíte, jakým způsobem různé výběry poskytují lepší přehled a podrobnosti při analýze registrací závad majetku.
+## <a name="examples"></a>Příklad
+
+Existuje mnoho způsobů analýzy registrací závad. Tato část uvádí pět příkladů, jak různé výběry poskytují lepší přehled a podrobnosti při analýze registrací závad majetku.
+
+### <a name="group-by-symptoms"></a>Seskupit podle příznaků
 
 Na níže uvedeném snímku obrazovky je vybráno pouze tlačítko **Příznak**.
 
@@ -57,6 +65,7 @@ Na níže uvedeném snímku obrazovky je vybráno pouze tlačítko **Příznak**
 
 ![Obrázek č. 1](media/06-controlling-and-reporting.png)
 
+### <a name="group-by-symptoms-and-time-period"></a>Seskupit podle příznaků a časového období
 
 Na níže uvedeném snímku obrazovky se přidají **Rok** a **Měsíc**, aby se zobrazil způsob zobrazení registrace závad během vybraného období.
 
@@ -65,9 +74,13 @@ Na níže uvedeném snímku obrazovky se přidají **Rok** a **Měsíc**, aby se
 
 ![Obrázek č. 2](media/07-controlling-and-reporting.png)
 
+### <a name="group-by-multiple-symptoms-and-assets"></a>Seskupit podle více příznaků a majetku
 
-- Kombinace majetku a typu majetku se používá jako základ pro výpočty zobrazené na třech snímcích obrazovek, což zvýší úroveň podrobností.  
-- Obecně tlačítka ve skupině podoken akcí **Seskupit podle data**, **Seskupit podle majetku**, **Seskupit podle funkčního místa**, stejně jako tlačítko **Závada** (ID závady) obsahují období nebo relace majetku. Tlačítka **Příznak**, **Oblast**, **Typ**, **Příčina** a **Náprava** jsou kategorizace používané ve správě závad pro analýzu registrací závad majetku a poukázání na problémové oblasti.  
+Kombinace majetku a typu majetku se používá jako základ pro výpočty zobrazené na třech snímcích obrazovek, což zvýší úroveň podrobností.  
+
+Obecně tlačítka ve skupině podoken akcí **Seskupit podle data**, **Seskupit podle majetku**, **Seskupit podle funkčního místa**, stejně jako tlačítko **Závada** (ID závady) obsahují období nebo relace majetku. Tlačítka **Příznak**, **Oblast**, **Typ**, **Příčina** a **Náprava** jsou kategorizace používané ve správě závad pro analýzu registrací závad majetku a poukázání na problémové oblasti.  
+
+**Seskupit podle příznaku, majetku a typu majetku**
 
 Na níže uvedeném snímku obrazovky byl přidán **Majetek** a **Typ majetku**, kde jsou uvedeny další podrobnosti týkající se registrací závad.
 
@@ -76,6 +89,7 @@ Na níže uvedeném snímku obrazovky byl přidán **Majetek** a **Typ majetku**
 
 ![Obrázek č. 3](media/08-controlling-and-reporting.png)
 
+**Seskupit podle dvou příznaků, majetku a typu majetku**
 
 Na níže uvedeném snímku obrazovky byla přidána **Oblast** k možnostem **Příznak**, **Majatek** a **Typ majetku**, kde jsou uvedeny další podrobnosti týkající se registrací závad.
 
@@ -83,6 +97,7 @@ Na níže uvedeném snímku obrazovky byla přidána **Oblast** k možnostem **P
 
 ![Obrázek č. 4](media/09-controlling-and-reporting.png)
 
+**Seskupit podle tří příznaků, majetku a typu majetku**
 
 Na snímku obrazovky níže byl přidán **Typ** a v tomto příkladu je zobrazen nejpřesnější výpočet.
  

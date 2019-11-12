@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ba9cc4dcdfcfbc1bdb933336e85da9b4b6d97a40
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: de075899547d194fb9eb0e68947efd005c101851
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182501"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550687"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format"></a>Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 5: Změna a spuštění formátu)
+# <a name="er-use-document-management-files-in-format-outputs-part-5---modify-and-run-format"></a>Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 5 - Změna a spuštění formátu)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 143cd51a3ea34a6b05da049d87819b3dfee95725
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181512"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564930"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurace importu dat z aplikace SharePoint
 
@@ -62,9 +62,9 @@ Přehrajte si průvodce záznamem úloh **ER Import dat ze souboru aplikace Micr
 > Formát pro import transakcí dodavatele je vybrán jako výchozí mapování modelu. Proto když spustíte mapování modelu **model platby 1099**, které je typu **Do cíle**, mapování modelu spustít tento formát pro import dat z externích souborů. Následně tato data použije k aktualizaci tabulek aplikace.
 
 ## <a name="configure-access-to-sharepoint-for-file-storage"></a>Konfigurace přístupu na web služby SharePoint pro uložení souboru
-Pokud chcete uložit elektronické soubory s výkazy do umístění ve službě SharePoint, musíte nakonfigurovat přístup k instanci serveru SharePoint, kterou bude používat aktuální společnost. V tomto příkladu je společnost USMF. Pokyny naleznete v tématu [Konfigurace úložiště služby SharePoint](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+Pokud chcete uložit elektronické soubory s výkazy do umístění ve službě SharePoint, musíte nakonfigurovat přístup k instanci serveru SharePoint, kterou bude používat aktuální společnost. V tomto příkladu je společnost USMF. Pokyny naleznete v tématu [Konfigurace úložiště služby SharePoint](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-1. Dokončete jednotlivé kroky v části [Konfigurovat úložiště služby SharePoint](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+1. Dokončete jednotlivé kroky v části [Konfigurovat úložiště služby SharePoint](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 2. Otevřete konfigurovanou stránku SharePoint.
 3. Vytvořte následující složky, do kterých lze uložit příchozí soubory elektronického vykazování:
 
@@ -80,7 +80,7 @@ Pokud chcete uložit elektronické soubory s výkazy do umístění ve službě 
     - Složka chyb souborů - tato složka je určená pro neúspěšně importované soubory.
 
 4. Přejděte na **Správa dokumentů > Správa dokumentů > Typy dokumentů**.
-5. Vytvořte následující typy dokumentů, které budou použity pro přístup k složkám služby SharePoint, které jste právě vytvořili. Pokyny naleznete v tématu [Konfigurovat typy dokumentů](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
+5. Vytvořte následující typy dokumentů, které budou použity pro přístup k složkám služby SharePoint, které jste právě vytvořili. Pokyny naleznete v tématu [Konfigurovat typy dokumentů](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Typ dokumentu        | Seskupit              | Místo konání      | Složka SharePoint      |
 |--------------------|--------------------|---------------|------------------------|

@@ -1,5 +1,5 @@
 ---
-title: Co je nového a co se změnilo v aplikaci Dynamics 365 Talent (25. června 2019)
+title: Co je nového nebo co se změnilo v aplikaci Dynamics 365 Talent (02. července 2019)
 description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a5de33a3a4f22f2a5be672c492fc59a6429b49e1
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 72ab29aff7f762c095c414e6edd0e49870e4a500
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010284"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551788"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-02-2019"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Talent (02. července 2019)
 

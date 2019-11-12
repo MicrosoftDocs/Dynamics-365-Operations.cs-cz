@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6ecdece43b9d609e70e385dc5c3ec70b82f582ab
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249949"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653664"
 ---
 # <a name="routes-and-operations"></a>Postupy a operace
 
@@ -35,7 +35,7 @@ Toto téma obsahuje obecné informace o postupech a operacích. Postup definuj
 <a name="overview"></a>Přehled
 --------
 
-Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. U každé operace postup také definuje požadované provozní prostředky, čas, který je nutný k nastavení a provedení operace, a způsob výpočtu nákladů. Stejný postup lze použít k výrobě více produktů nebo můžete definovat jedinečný postup pro každý produkt či variantu produktu. Můžete používat i více postupů pro stejný produkt. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je vyráběné množství. Definice postupu v aplikaci Finance and Operations se skládá ze čtyř samostatných prvků, které společně popisují výrobní proces:
+Postup popisuje pořadí operací při výrobě produktu nebo varianty produktu. U každé operace postup také definuje požadované provozní prostředky, čas, který je nutný k nastavení a provedení operace, a způsob výpočtu nákladů. Stejný postup lze použít k výrobě více produktů nebo můžete definovat jedinečný postup pro každý produkt či variantu produktu. Můžete používat i více postupů pro stejný produkt. V takovém případě konkrétní použitý postup závisí na různých faktorech, jako je vyráběné množství. Definice postupu v aplikaci Supply Chain Management se skládá ze čtyř samostatných prvků, které společně popisují výrobní proces:
 
 -   **Postup** – definuje strukturu výrobního procesu. Jinými slovy určuje pořadí operací.
 -   **Operace** – určuje konkrétní pojmenovaný krok v postupu, například **Sestavení**. Stejná operace se může vyskytovat v několika různých postupech a může mít přiřazena různá čísla.

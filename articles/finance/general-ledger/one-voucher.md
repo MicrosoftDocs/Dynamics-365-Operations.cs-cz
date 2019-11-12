@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 2b755dcfbcdf41ada0302fc04f527ce7c309f4bb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186387"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553180"
 ---
 # <a name="one-voucher"></a>Jeden doklad
 
@@ -51,7 +51,7 @@ Existující funkce pro finanční deníky (deník hlavní knihy, deník dlouhod
 
 ## <a name="issues-with-one-voucher"></a>Potíže s jedním číslem dokladu
 
-Funkce Jeden doklad způsobuje problémy při vyrovnání, výpočtu daně, stornu tranakce, odsouhlasení dílčí hlavní knihy do hlavní knihy, finančním výkaznictví atd. (Další informace o problémech, které mohou nastat během vyrovnání, získáte například v části [Jeden doklad s více záznamy odběratele nebo dodavatele](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) Správná práce a vykazování vyžaduje detaily transakce v těchto procesech a sestavách. Ačkoli některé scénáře mohou i nadále správně fungovat, v závislosti na nastavení vaší organizace dochází k častým problémům při zadávání více transakcí v jednom dokladu.
+Funkce Jeden doklad způsobuje problémy při vyrovnání, výpočtu daně, stornu tranakce, odsouhlasení dílčí hlavní knihy do hlavní knihy, finančním výkaznictví atd. (Další informace o problémech, které mohou nastat během vyrovnání, získáte například v části [Jeden doklad s více záznamy odběratele nebo dodavatele](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) Správná práce a vykazování vyžaduje detaily transakce v těchto procesech a sestavách. Ačkoli některé scénáře mohou i nadále správně fungovat, v závislosti na nastavení vaší organizace dochází k častým problémům při zadávání více transakcí v jednom dokladu.
 
 Předpokládejme například, že zaúčtujete následující víceřádkový doklad:
 

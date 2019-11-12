@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aba85b63abc11c9f32023e8499a02728dfc86bd1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4d9a2f6efad6b8ddf3a445fe7831244e161c35d5
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188250"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578188"
 ---
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Nastavení procesu importu rozšířené bankovního odsouhlasení
 
@@ -36,7 +36,7 @@ Nastavení import bankovního výpisu závisí na formátu vašeho elektronické
 ## <a name="set-time-zone-preference"></a>Nastavení upřednostňovaného časového pásma
 Při konfiguraci nastavení importu bankovního výpisu může být důležité zvážit časové pásmo v rámci souborů bankovních výpisů, které budou importovány. Ve výchozím nastavení se předpokládá, že hodnoty data a času jsou již v koordinovaném světovém čase (standard UTC) a při importu dat se nepoužije žádný převod časového pásma. 
 
-K dispozici je možnost pro určení časového pásma, které se má použít pro import dat. Tato možnost je k dispozici v poli **předvolba časového pásma** na každé stránce **Podrobnosti o zdrojovém formátu data** (pevná záložka **Pracovní prostor > Správa dat data > Konfigurovat zdroje dat > Výběr formátu dat > Místní nastavení**). Tato předvolba časového pásma se použije pro všechny importy, které používají tento formát zdrojových dat. Chcete-li importovat data z více časových pásem, můžete vytvořit libovolný počet formátů zdroje dat. Předvolbou časového pásma by mělo být místní časové pásmo data a času v souboru importu. Předvolbou časového pásma by mělo být místní časové pásmo data a času v souboru importu. 
+K dispozici je možnost pro určení časového pásma, které se má použít pro import dat. Tato možnost je k dispozici v poli **předvolba časového pásma** na každé stránce **Podrobnosti o zdrojovém formátu data** (pevná záložka **Pracovní prostor > Správa dat data > Konfigurovat zdroje dat > Výběr formátu dat > Místní nastavení**). Tato předvolba časového pásma se použije pro všechny importy, které používají tento formát zdrojových dat. Chcete-li importovat data z více časových pásem, můžete vytvořit libovolný počet formátů zdroje dat.  
 
 Toto časové pásmo nemusí být stejné jako časové pásmo uživatele nebo společnosti, proto je nutné vyjasnit, jaké časové pásmo aplikace data a času používá. Při nastavování předvoleb časového pásma doporučujeme zvážit následující body. 
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b1621cf0f1e47d7bd5fe2fa0b41fbcd61f14def
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 026b34934d6527416a4632d8e1aee76a8836dcb0
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887198"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652004"
 ---
 # <a name="dispatch-work-order"></a>Expedice pracovního příkazu
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Pomocí funkce **Expedovat** můžete naplánovat jeden pracovní příkaz nebo úlohy pracovního příkaz pro jednoho pracovníka.
 
@@ -45,16 +45,18 @@ Pomocí funkce **Expedovat** můžete naplánovat jeden pracovní příkaz nebo 
 
 6. V poli **Plánované zahájení** můžete upravit počáteční datum a čas v případě potřeby.
 
-7. Pokud by proces plánování měl zohledňovat omezení kapacity týkající se již naplánovaných zdrojů na jiné úlohy, zkontrolujte, zda jsou přepínací tlačítka **Majetek**, **Nástroj** a **Pracovník** nastavena na hodnotu „Ano“. Chcete-li zobrazit podrobné informace o procesu plánování, vyberte v přepínacím tlačítku **Podrobný** možnost „Ano“. To znamená, že v informačním protokolu budou zobrazeny podrobné informace o vypočteném skóre na pracovním příkazu.
+7. Pokud by proces plánování měl zohledňovat omezení kapacity týkající se již naplánovaných zdrojů na jiné úlohy, zkontrolujte, zda jsou přepínací tlačítka **Majetek**, **Nástroj** a **Pracovník** nastavena na hodnotu **Ano**. Chcete-li zobrazit podrobné informace o procesu plánování, vyberte v přepínacím tlačítku **Podrobný** možnost **Ano**. To znamená, že v informačním protokolu budou zobrazeny podrobné informace o vypočteném skóre na pracovním příkazu.
 
-8. Chcete-li ignorovat uzavřené dny v kalendáři (platí pro majetek, pracovníka a nástroje), vyberte možnost Ano na přepínacím tlačítku **Ignorvat plán**. Výběrem možnosti Ano na přepínacím tlačítku **Ignorovat plánované provádění** můžete ignorovat omezení, která byla vybrána v pracovním příkazu týkajícím se plánování. Informace o nastavení plánovaného provádění naleznete v části [Plánované provádění](../setup-for-work-orders/scheduled-execution.md).
+8. Chcete-li ignorovat uzavřené dny v kalendáři (platí pro majetek, pracovníka a nástroje), vyberte možnost **Ano** na přepínacím tlačítku **Ignorvat plán**. Výběrem možnosti **Ano** na přepínacím tlačítku **Ignorovat plánované** provádění můžete ignorovat omezení, která byla vybrána v pracovním příkazu týkajícím se plánování. 
 
-9. Klikněte na tlačítko **OK**. Stav životního cyklu pracovního příkazu je automaticky aktualizován do stavu životního Naplánováno, který je určen v **Správa majetku** > **Nastavení** > **Pracovní příkazy** > **Modely životního cyklu**.
+    Informace o nastavení plánovaného provádění naleznete v části [Plánované provádění](../setup-for-work-orders/scheduled-execution.md) section.
+
+9. Klikněte na tlačítko **OK**. Stav životního cyklu pracovního příkazu je automaticky aktualizován do stavu životního **Naplánováno**, který je určen v cestě **Správa majetku** > **Nastavení** > **Pracovní příkazy** > **Modely životního cyklu**.
 
 Na následujícím obrázku je uveden příklad výběru expedice v dialogovém okně **Naplánovat pracovní příkaz**.
 
 ![Obrázek č. 1](media/04-work-order-scheduling.png)
 
->[!NOTE]
->Pokud chcete odstranit plán na pracovním příkazu, proveďte to výběrem pracovního příkazu v možnosti **Všechny pracovní příkazy** a kliknutím možnost **Odstranit plán** na kartě **Obecné** . Nezapomeňte ručně aktualizovat stav životního cyklu pracovního příkazu, pokud jste plán odstranili.
+[!NOTE]
+Pokud chcete odstranit plán v pracovním příkazu, vyberte pracovní příkaz v možnosti **Všechny pracovní příkazy** a kliknutím možnost **Odstranit plán** na kartě **Obecné** . Nezapomeňte ručně aktualizovat stav životního cyklu pracovního příkazu, pokud jste plán odstranili.
 

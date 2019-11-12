@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: de105e061712540fc8e3d720a65c029f865b8948
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 42eaa3df5ab09278ed96506d17e1b42d4fc2a9e1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187284"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570257"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Zlikvidovat dlouhodobý majetek jako odpad
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 V tématu je popsán postup při odstranění transakcí dlouhodobého majetku, který byl odstraněn jako odpad. Typy transakcí, které lze eliminovat, zahrnují pořízení majetku a kumulované transakce odpisů a další transakce dlouhodobého majetku. Eliminace těchto transakcí má vliv na rozvahové účty, jako je například množství úpravy pořizovací ceny, množství úpravy odpisů, přecenění, navýšení a odpisy.
 

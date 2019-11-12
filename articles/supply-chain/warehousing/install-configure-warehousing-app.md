@@ -1,6 +1,6 @@
 ---
-title: Přehled instalace a konfigurace skladové aplikace
-description: Toto téma popisuje, jak nainstalovat a nakonfigurovat aplikaci Dynamics 365 Supply Chain Management – Sklady.
+title: Přehled instalace a konfigurace aplikace Warehousing
+description: Toto téma popisuje, jak nainstalovat a nakonfigurovat aplikaci Dynamics 365 for Finance and Operations – Sklady.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b8eb8dee88d8664391d2dcf485dff9dee4722cac
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
+ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251493"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2548961"
 ---
-# <a name="install-and-configure-the-warehousing-app-overview"></a>Přehled instalace a konfigurace skladové aplikace
+# <a name="install-and-configure-the-warehousing-app-overview"></a>Přehled instalace a konfigurace aplikace Warehousing
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "2251493"
 > Toto téma popisuje způsob konfigurace skladu pro nasazení v cloudu. Postup konfigurace skladu pro místní nasazení naleznete v tématu [Sklady pro místní nasazení](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
-Toto téma popisuje, jak nainstalovat a nakonfigurovat aplikaci Dynamics 365 Supply Chain Management – Sklady.
+Toto téma popisuje, jak nainstalovat a nakonfigurovat aplikaci Dynamics 365 for Finance and Operations – Sklady.
 
 Aplikace Warehousing je k dispozici v obchodě Google Play a v systému Windows Store. Pro aktuální verzi aplikace Dynamics 365 Supply Chain Management je tato aplikace k dispozici jako samostatná komponenta, což znamená samostatné nasazení na zařízeních pro úlohy skladu. Abyste mohli aplikaci v prostředí Finance and Operations použít, je nutné stáhnout aplikaci do každého zařízení a nakonfigurovat ho pro připojení k prostředí Supply Chain Management. Toto téma popisuje, jak nainstalovat aplikace na vašem zařízení. Také vysvětluje, jak nakonfigurovat aplikaci pro připojení k prostředí Supply Chain Management.
 
@@ -58,7 +58,7 @@ Aplikace je k dispozici v operačních systémech Android a Windows. Chcete-li p
 > Zebra App Gallery byla vyřazena, což znamená, že aplikace Warehousing již nebude k dispozici ke stažení z tohoto umístění.
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a>Vytvoření aplikace webové služby v Azure Active Directory
-Pokud chcete povolit interakci aplikace s konkrétním serverem Supply Chain Management, je nutné zaregistrovat aplikaci webové služby v Azure Active Directory pro klienta Supply Chain Management. Z bezpečnostních důvodů doporučujeme vytvořit webovou aplikaci služby pro každé zařízení, které používáte. Chcete-li vytvořit aplikaci webové služby v Azure Active Directory (Azure AD), proveďte následující kroky:
+Pokud chcete povolit interakci aplikace s konkrétním serverem Supply Chain Management, je nutné zaregistrovat aplikaci webové služby v Azure Active Directory pro klienta Supply Chain Management. Z bezpečnostních důvodů doporučujeme vytvořit webovou aplikaci služby pro každé zařízení, které používáte. Chcete-li vytvořit aplikaci webové služby v Azure Active Directory (Azure AD), proveďte následující kroky:
 
 1.  Přejděte ve webovém prohlížeči na <https://portal.azure.com>.
 2.  Zadejte jméno a heslo pro uživatele, kteří mají přístup k předplatnému Azure.
@@ -81,7 +81,7 @@ Aby mohla aplikace Supply Chain Management používat vaši aplikaci Azure AD, j
     3.  Přiřaďte uživatele mobilního zařízení skladu, jak je znázorněno na následujícím snímku obrazovky. [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
 2.  Přidružte aplikaci služby Azure Active Directory k uživateli aplikace Sklady.
-    1.  V aplikaci Supply Chain Management přejděte na **Správa systému** &gt; **Nastavení** &gt; **Aplikace Azure Active Directory**.
+    1.  V aplikaci Supply Chain Management přejděte na **Správa systému** &gt; **Nastavení** &gt; **Azure Active Directory aplikace**.
     2.  Vytvořit nový řádek.
     3.  Zadejte **ID klienta** (získané v poslední části), zadejte jeho název a vyberte dříve vytvořeného uživatele. Doporučujeme označit všechna zařízení, abyste jim v případě ztráty mohli z této stránky snadno odebrat přístup k aplikaci Supply Chain Management. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
@@ -91,8 +91,8 @@ Aplikaci je třeba nakonfigurovat v zařízení, aby se připojovala k serveru
 1.  V aplikaci přejděte na **Nastavení připojení**.
 2.  Zrušte zaškrtnutí políčka **Demo režim**. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Zadejte následující informace: 
-    + **ID klienta služby Azure Active Directory** – ID klienta získáte v kroku 9 v postupu „Vytvoření aplikace webové služby ve službě Active Directory“. 
-    + **Tajný klíč klienta služby Azure Active Directory** – Tajný klíč získáte v kroku 11 v postupu „Vytvoření aplikace webové služby ve službě Active Directory“. 
+    + **ID klienta Azure Active directory client ID** - ID klienta získáte v kroku 9 v postupu „Vytvoření aplikace webové služby ve službě Active Directory“. 
+    + **Tajný klíč klienta Azure Active** - Tajný klíč získáte v kroku 11 v postupu „Vytvoření aplikace webové služby ve službě Active Directory“. 
     + **Prostředek služby Azure Active Directory** - Prostředek Azure AD určuje adresu URL aplikace Supply Chain Management. **Poznámka:**: na konci tohoto pole nepoužívejte znak lomítka (/). 
     + **Klient služby Azure Active Directory** - klient adresáře Azure AD, který se používá se serverem Supply Chain Management: `https://login.windows.net/your-AD-tenant-ID`. Například: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Poznámka:**: na konci tohoto pole nepoužívejte znak lomítka (/). 
@@ -104,7 +104,7 @@ Další informace o způsobu nastavení aplikace Warehousing pro skenování č�
 ## <a name="remove-access-for-a-device"></a>Odebrání přístupu k zařízení
 Ztraceným nebo narušeným zařízením je nutné odebrat přístup k aplikaci Supply Chain Management. Následující kroky popisují doporučený postup odebrání přístupu.
 
-1.  Přejděte do nabídky **Správa systému** &gt; **Nastavení** &gt; **Aplikace Azure Active Directory**.
+1.  Přejděte do nabídky **Správa systému** &gt; **Nastavení** &gt; **Azure Active Directory aplikace**.
 2.  Odstraň řádek, který odpovídá zařízení, kterému chcete odebrat přístup. Pamatujte, že **ID klienta** se používá pro odebrané zařízení, budete ho potřebovat později.
 3.  Přihlaste se do portálu Azure na <https://portal.azure.com>.
 4.  Klikněte na ikonu **Active Directory** v levé nabídce a ujistěte se, že jste ve správném adresáři.

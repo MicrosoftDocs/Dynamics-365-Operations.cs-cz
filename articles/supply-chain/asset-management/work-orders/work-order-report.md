@@ -3,7 +3,7 @@ title: Zpráva pracovního příkazu
 description: Toto téma popisuje sestavy pracovních příkazů v modulu Správa majetku.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,41 +16,38 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d2843a57aad7cc8525a689d4643875970849e31
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 6eb5c5156898fc826376ae35745ff4a7451d00c6
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875539"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626378"
 ---
 # <a name="work-order-report"></a>Zpráva pracovního příkazu
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
+Můžete vygenerovat sestavu pracovních příkazů, která zobrazuje podrobné informace o jednom nebo více vybraných pracovních příkazech.
 
-Můžete vygenerovat sestavu pracovních příkazů, která zobrazuje podrobné informace o pracovním příkazu. V sestavě je možné vybrat jeden nebo několik pracovních příkazů, které mají být zobrazeny.
+1. Vyberte **Správa majetku** > **Sestavy** > **Pracovní příkazy** > **Sestava pracovního příkazu**.
 
-1. Klikněte na možnost **Správa majetku** > **Sestavy** > **Pracovní příkazy** > **Sestava pracovních příkazů**.
-
-2. Chcete-li určit podrobnosti, které mají být zahrnuty do sestavy, vyberte možnost Ano/ne u přepínacích tlačítek a vyplňte požadovaná pole.  
-  a. V části **Nastavení tisku** můžete vybrat, zda chcete do tisku zahrnout přílohy ze souvisejících typů úloh údržby.
+2. Chcete-li určit podrobnosti, které mají být zahrnuty do sestavy, vyberte možnost Ano/ne u přepínacích tlačítek, která požadujete, a vyplňte požadovaná pole.  
+    - V části **Nastavení tisku** můžete vybrat, zda chcete do tisku zahrnout přílohy z nastavení souvisejícího typu úloh údržby.
 
 3. Na pevné záložce **Záznamy, které mají být zahrnuty** můžete obsah sestavy filtrovat podle **Pracovního příkazu**.
 
-4. V případě potřeby můžete vygenerování sestavy pracovního příkazu nastavit jako dávkovou úlohu vyplněním polí na pevné záložce **Spustit na pozadí**.
+4. Na pevné záložce **Spustit na pozadí** můžete nastavit generování sestavy pracovního příkazu jako dávkovou úlohu, jak budete potřebovat.
 
 5. Klepnutím na tlačítko **OK** sestavu vygenerujte.
 
-Níže je zobrazen příklad způsobu nastavení parametrů a související sestavy pracovních příkazů.
+Na následujícím obrázku je znázorněn příklad nastavení parametrů sestavy.
 
 ![Obrázek č. 1](media/20-work-orders.png)
 
+Na následujícím obrázku je znázorněn příklad sestavy pracovního příkazu, která je vygenerována na základě tohoto nastavení.
 
 ![Obrázek č. 2](media/21-work-orders.png)
-
 

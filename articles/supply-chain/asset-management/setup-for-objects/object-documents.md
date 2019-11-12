@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5b791fd3e060c4f4ecdb1ca599a6041d421db74
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 5b830d835d99122a8c0572481f4c229c37d97d0c
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024516"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653244"
 ---
 # <a name="asset-documents"></a>Dokumenty majetku
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 V tomto tématu jsou vysvětleny dokumenty majetku v modulu Správa majetku.
 
-V modulu Správa majetku můžete vytvořit dokumenty tak, že budou automaticky spojeny např. s typy úloh, výrobci majetku, typy majetku nebo majetkem. Tato funkce je užitečná, když jsou vydány aktualizované verze dokumentů. V takovém případě stačí pouze vložit aktualizovaný dokument do standardního umístění, které používáte pro dokumenty Finance and Operations, a připojit dokument k záznamu o majetku, který jste vytvořili. K aktualizovanému dokumentu pak lze získat přístup z položek nabídky **Všechen majetek**, **Aktivní majetek**, **Můj aktivní majetek** a **Všechny pracovní příkazy** a **Aktivní úlohy pracovního příkazu**. Proces připojování dokumentů k záznamu dokumentu aktiv používá standardní systém zpracování dokumentů.
+V modulu Správa majetku můžete vytvořit dokumenty tak, že budou automaticky spojeny např. s typy úloh, výrobci majetku, typy majetku nebo majetkem. Tato funkce je užitečná, když jsou vydány aktualizované verze dokumentů. V takovém případě stačí pouze vložit aktualizovaný dokument do standardního umístění, které používáte pro dokumenty Supply Chain Management, a připojit dokument k záznamu o majetku, který jste vytvořili. K aktualizovanému dokumentu pak lze získat přístup z položek nabídky **Všechen majetek**, **Aktivní majetek**, **Můj aktivní majetek** a **Všechny pracovní příkazy** a **Aktivní úlohy pracovního příkazu**. Proces připojování dokumentů k záznamu dokumentu aktiv používá standardní systém zpracování dokumentů.
 
 **Příklad 1:** dokument, který souvisí s typem práce, může popisovat postup pro tento typ úlohy.
 

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 510a36668bf131b48733e486a43f1d630ae9f3ea
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278317"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653687"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Zdroje nápovědy pro Supply Chain Management
 
@@ -39,7 +39,7 @@ Přejděte na web <a href="https://roadmap.dynamics.com/">Přehled Microsoft Dyn
 Vyberte oblast funkce, o které chcete získat informace.
 
 - [Správa majetku](asset-management/index.md)
-- [Nákladové účetnictví](../financials/cost-accounting/cost-accounting-home-page.md)
+- [Nákladové účetnictví](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Správa nákladů](cost-management/cost-management-home-page.md)  
 - [Řízení zásob](inventory/inventory-home-page.md)
 - [Hlavní plánování](master-planning/master-planning-home-page.md)
@@ -109,7 +109,7 @@ Tyto nahrávky z technické konference se zabývají funkcionalitou produktu v p
 -  [Správa přepravy (TMS) v nové aplikaci Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogy
-Výrobě a správě dodavatelského řetězce se věnuje spousta témat v <a href="https://blogs.msdn.microsoft.com/axmfg/">blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX</a> a v <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX</a>. Většina jich je napsána pro předchozí verzi aplikace Finance and Operations, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 
+Výrobě a správě dodavatelského řetězce se věnuje spousta témat v <a href="https://blogs.msdn.microsoft.com/axmfg/">blogu Tým výzkumu a vývoje pro výrobu v Dynamics AX</a> a v <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">blogu Tým výzkumu a vývoje pro správu dodavatelského řetězce v Dynamics AX</a>. Většina jich je napsána pro předchozí verzi, ale stále platí stejné koncepty a postupy jsou ve stávající verzi podobné. 
 
 ## <a name="white-papers"></a>Dokumenty white paper
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktická cvičení zaměřená na nákladové účetnictví</a> 

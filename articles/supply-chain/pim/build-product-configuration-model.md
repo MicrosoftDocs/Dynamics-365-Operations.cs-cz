@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f8e0e98cf1a953355515f9145483aed8cbaa2ad2
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249487"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653641"
 ---
 # <a name="product-configuration-overview"></a>Přehled konfigurace produktu
 
@@ -73,7 +73,7 @@ Omezení tabulek mohou být definovaná uživatelem nebo systémem.
 
 Omezení tabulky uživatelem je vytvořeno uživatelem. Uživatel vybere kombinaci typů atributů k představení sloupců tabulky a poté zadá hodnoty z domén typů vybraných atributů k vytvoření řádků v omezeních tabulky.  
 
-Omezení tabulky definované systémem je definována výběrem, kterou tabulku produktu použít jako odkaz, a poté výběrem polí z této tabulky k seřazení sloupce v omezení. Omezení řádků tabulky jsou řádky tabulky Finance and Operations, které jsou k dispozici v době konfigurace.  
+Omezení tabulky definované systémem je definována výběrem, kterou tabulku produktu použít jako odkaz, a poté výběrem polí z této tabulky k seřazení sloupce v omezení. Omezení řádků tabulky jsou řádky tabulky produktu Supply Chain Management, které jsou k dispozici v době konfigurace.  
 
 Omezení tabulky je zahrnuto v modelu konfigurace produktu odkazováním na definici omezení tabulky a mapováním odpovídajících atributů v modelu do sloupců v omezení tabulky.
 
