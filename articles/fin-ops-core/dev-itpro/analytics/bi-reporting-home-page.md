@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92fec444834be8ca4943932730b94beb8a1902e7
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536840"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771557"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Domovská stránka analytických nástrojů a vykazování
 
@@ -48,7 +48,7 @@ Další informace naleznete v následujících tématech:
 - [Integrace Power BI Embedded](power-bi-embedded-integration.md)
 - [Přidání analýz do pracovního prostoru pomocí Power BI Embedded](add-analytics-tab-workspaces.md)
 - [Pomoc se zabezpečením analytických pracovních prostorů a sestav pomocí Power BI Embedded](secure-analytical-workspaces.md)
-- [Obsah Power BI pro aplikaci Finance and Operations](power-bi-home-page.md)
+- [Domovská stránka obsahu Power BI](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Obchodní dokumenty a tisk
 Řešení vykazování se často používají pro zachycení a komunikování podrobností o obchodních transakcích. Proto musí být řešení vykazování schopno vyprodukovat fyzický projev obchodních dat pomocí existujících zařízení, jako jsou například síťové tiskárny. Příklady obchodních dokumentů zahrnují prodejní faktury, výpisy z účtu zákazníka a šeky.
@@ -57,9 +57,9 @@ Další informace naleznete v následujících tématech:
 
 Další informace naleznete v následujících tématech:
 
-- [Přehled služby Document Reporting Services](document-reporting-services.md)
-- [Tisk v aplikacích Finance and Operations](print-documents.md)
-- [Instalace agenta směrování dokumentu pro aktivaci zařízení síťové tiskárny](install-document-routing-agent.md)
+- [Služba Document Reporting Services](document-reporting-services.md)
+- [Přehled tisku dokumentu](print-documents.md)
+- [Instalace agenta směrování dokumentu pro aktivaci síťového tisku](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Elektronické výkaznictví
 Elektronické výkaznictví (ER) je nástroj, který používáte ke konfiguraci formátů pro elektronické dokumenty v souladu s právními požadavky různých zemí a oblastí. Aplikace elektronického výkaznictví obsahují finanční audit, daňové vykazování a elektronické výkaznictví.
@@ -79,14 +79,14 @@ Poskytnuté standardní finanční sestavy používají výchozí kategorie hlav
 
 Další informace naleznete v následujících tématech:
 
-- [Finanční výkaznictví pro aplikaci Finance and Operations](financial-reporting-intro.md)
-- [Generování finanční sestavy](generate-financial-report.md)
+- [Finanční výkaznictví](financial-reporting-intro.md)
+- [Generování finančních sestav](generate-financial-report.md)
 - [Součásti finančních sestav](financial-report-components.md)
 
 ## <a name="technical-reference-reports"></a>Sestavy technických informací
 Následující sestavy poskytují referenční informace o objektech:
 
-- [Sestava datových entit](../data-entities/data-entities-report.md)
+- [Hledání informací o standardních datových entitách](../data-entities/data-entities-report.md)
 - [Licenční kódy a sestavy konfiguračních klíčů](../sysadmin/license-codes-configuration-keys-report.md)
-- [Sestava služby SQL Server Reporting Services](SSRS-report.md)
+- [Dostupné sestavy služby Microsoft SQL Server Reporting Services](SSRS-report.md)
 - [Sestava typů workflow](../../fin-ops/organization-administration/workflow-types-report.md)

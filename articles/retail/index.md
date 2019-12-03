@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e77fd279ddec5eb02e226776eecb1223283313c3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278099"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811919"
 ---
 # <a name="help-resources-for-dynamics-365-retail"></a>Zdroje nápovědy pro Dynamics 365 Retail
 
@@ -81,7 +81,7 @@ Budete nastavovat několik komponent k definování vztahů mezi obchodem, POS p
 
 Pokud jste byli požádáni o přizpůsobení vašeho prostředí nebo pokud zodpovídáte za nasazení a údržbu vašeho systému, seznamte se s konkrétním obsahem pro vývojáře a správce aplikace Retail, stejně jako s obecnějším obsahem.
 
-- [Dynamics 365 Retail pro IT odborníky a vývojáře](dev-itpro/dev-retail-home-page.md)
+- [Retail pro IT odborníky a vývojáře](dev-itpro/dev-retail-home-page.md)
 - [Vývoj a správa pro Dynamics 365 Finance](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Další zdroje

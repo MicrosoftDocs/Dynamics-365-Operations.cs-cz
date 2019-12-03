@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: edc2f59752a32b9cd20902d0b7a1edfe3ba4d15b
-ms.sourcegitcommit: ff160a9f9879f3ec015ffef11fbc8b7c1b84a59d
+ms.openlocfilehash: 841ef8f2b7c319e0a6b3a9ce9a9e4959e70aa8cd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552943"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812757"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Vítejte v Dynamics 365 Talent
 
@@ -52,11 +52,11 @@ Prozkoumejte Dynamics 365 Talent ve videu [Začínáme s aplikací Dynamics 365 
 
 Při práci s modulem Talent se budete rozhodovat, jak nastavit strukturu organizace pomocí různých prvků (například oddělení, práce a pozice). Ty patří mezi základní prvky, které budete konfigurovat. Jednotliví zaměstnanci se přiřazují k pozicím, které jsou přidruženy k pracím.
 
--   [Uspořádání zaměstnanců podle oddělení, prací a pozic](departments-jobs-positions.md)
+-   [Uspořádání zaměstnanců pomocí oddělení, prací a pozic](departments-jobs-positions.md)
 -   [Nastavení parametrů lidských zdrojů pro konkrétní společnost](set-up-company-specific-hr-parameters.md)
 -   [Nastavení parametrů lidských zdrojů mezi právnickými osobami](set-up-hr-parameters-across-legal-entities.md) 
 -   [Často kladené dotazy k akcím personálu](personnel-actions-faq.md)
--   [Přehled pracovního volna a absencí](leave-absence-overview.md)
+-   [Správa pracovního volna a absencí](leave-absence-overview.md)
 -   [Používání aplikace Dynamics 365 Talent: pracovní volno a absence (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [Správa pracovníků v aplikaci Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
@@ -64,8 +64,8 @@ Při práci s modulem Talent se budete rozhodovat, jak nastavit strukturu organ
 
 Talent obsahuje aplikaci Attract, která vám pomůže identifikovat kandidáty, vést s nimi pohovory a najmout kandidáty s dovednostmi, které vaše organizace potřebuje. Na cestě od náboru po přijet vám aplikace Onboard pomůže provést nového zaměstnance vaší organizací - nastavením přesných očekávání, poskytnutím informací potřebných pro začátek zaměstnání, propojením s kolegy a zajištěním úspěšné kariéry v jejich nové roli.  
 
-- [Přehled aplikace Attract](attract-overview.md)
-- [Přehled aplikace Onboard](create-onboarding-experience.md)
+- [Microsoft Dynamics 365 Talent - Funkce a možnosti aplikace Attract](attract-overview.md)
+- [Začínáme s aplikací Onboard](create-onboarding-experience.md)
 
 ## <a name="retain-and-motivate-employees"></a>Udržení a motivace zaměstnanců
 
@@ -82,17 +82,17 @@ Můžete nastavit plány pro efektivní a spravedlivé řízení kompenzací, st
 Chcete-li pomoci svým zaměstnancům dosáhnout svých kariérních cílů a přitom poskytovat kritické obchodní potřeby, můžete nastavit cíle, vytvořit hodnocení výkonu a sledovat zpětnou vazbu. Abyste pomohli zaměstnancům rozvíjet potřebné schopnosti, můžete nastavit instruktory, typy kurzů, kurzy, popisy kurzů, agendy, cvičení a relace před přiřazením instruktora ke kurzu nebo registrací osoby do kurzu. Instruktoři musí již existovat jako pracovníci, uchazeči nebo kontakty.
 
 -   [Řízení výkonnosti](performance-management-overview.md)
--   [Sladění dovedností zaměstnanců s potřebami společnosti](skills.md)
--   [Správa školení prostřednictvím kurzů](courses.md)
+-   [Vyrovnání dovedností zaměstnanců s obchodními potřebami](skills.md)
+-   [Nastavení školicích kurzů](courses.md)
 -   [Správa rozvoje zaměstnanců v aplikaci Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Vytvoření a správa zaměstnaneckých výhod
 
 Kromě kompenzací zaměstnanců skrze mzdy, platy a odměny můžete vyvíjet programy zaměstnaneckých výhod, jako je zdravotní pojištění a důchodové plány. Můžete také spravovat výhody, jako jsou například výpůjčky, ve kterých vaše společnost poskytuje svým zaměstnancům věci, jako jsou počítače nebo telefony, .
 
--   [Správa programu zaměstnaneckých výhod](manage-benefit-program.md)
+-   [Definování a správa programu zaměstnaneckých výhod](manage-benefit-program.md)
 -   [Zásady způsobilosti k zaměstnaneckým výhodám](benefit-eligibility-policies.md)
--   [Správa položek zapůjčených pracovníkům](loan-items.md)
+-   [Správa položek zapůjčených zaměstnancům](loan-items.md)
 -   [Správa zaměstnaneckých výhod v aplikaci Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Zachování bezpečnosti na pracovišti a dodržování předpisů
@@ -107,6 +107,6 @@ Aplikace Talent umožňuje udržovat bezpečné pracovní prostředí, které je
 Můžete navrhovat a rozdávat dotazníky, které slouží ke shromažďování informací pro různé účely. Funkce Dotazník umožňuje navrhovat a vytvářet dotazníky. Když je dotazník připraven, můžete jej distribuovat k vyplnění plošně nebo určité sadě respondentů. Poté, co respondenti poskytnou své odpovědi, můžete zobrazit a analyzovat výsledky.
 
 -   [Dotazníky](questionnaires.md)
--   [Návrh dotazníku](design-questionnaires.md)
--   [Distribuce a vyplnění dotazníku](distribute-questionnaires.md)
--   [Zobrazení a vyhodnocení výsledků dotazníku](evaluate-questionnaire-results.md)
+-   [Návrh dotazníků](design-questionnaires.md)
+-   [Distribuce a plánování dotazníků](distribute-questionnaires.md)
+-   [Zobrazení a vyhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
