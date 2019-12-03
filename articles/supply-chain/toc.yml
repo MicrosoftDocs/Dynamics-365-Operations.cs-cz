@@ -571,6 +571,8 @@
                   href: cost-management/inventory-close.md
                 - name: Úprava nákladové ceny množství na skladě
                   href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Sestava prodlení zásob
+                  href: cost-management/inventory-aging-report-storage.md
             - name: Účetnictví pro výrobu
               items:
                 - name: Výpočty kusovníku
@@ -868,7 +870,13 @@
                         - name: Stažení konfigurací z úložiště elektronického výkaznictví pro typ RCS
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Import konfigurací z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Kurzy
+                      items:
+                        - name: Použití zdrojů dat JOIN v mapování modelu elektrického výkaznictví k získání dat z více aplikačních tabulek
+                          href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
+                          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
                   items:
                     - name: Konfigurace architektury
@@ -903,6 +911,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Přehled správy obchodních dokumentů
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Přidání nových polí do šablony obchodního dokumentu v aplikaci Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
                 - name: API rozhraní architektury elektronického výkaznictví
                   items:
                     - name: Rozšíření seznamu funkcí elektronického výkaznictví
@@ -1051,6 +1061,22 @@
           items:
             - name: Domovská stránka Hlavní plánování
               href: master-planning/master-planning-home-page.md
+            - name: Optimalizace plánování
+              items:
+                - name: Přehled optimalizace plánování
+                  href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: Začínáme s optimalizací plánování
+                  href: master-planning/planning-optimization/get-started.md
+                - name: Analýza přizpůsobení pro optimalizaci plánování
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Použití filtrů na plán
+                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Zobrazení historie pánů a plánovacích protokolů
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Automatické potvrzení s optimalizací plánování
+                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Zrušení plánovací úlohy
+                  href: master-planning/planning-optimization/cancel-planning-job.md
             - name: Hlavní plány
               items:
                 - name: Přehled hlavních plánů

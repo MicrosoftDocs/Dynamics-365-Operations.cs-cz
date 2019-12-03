@@ -850,6 +850,8 @@
           items:
             - name: Přehled věrnostního programu
               href: set-up-customer-loyalty-program.md
+            - name: Přehled clientelingu
+              href: clienteling-overview.md
         - name: Platby
           items:
             - name: Metody platby
@@ -1268,8 +1270,6 @@
                   href: Open-URL-in-POS.md
                 - name: Instalace návrháře rozložení POS
                   href: install-pos-layout-designer.md
-                - name: Retail Modern POS v offline režimu
-                  href: dev-itpro/retail-modern-pos-offline.md
                 - name: Rozšíření zobrazení displeje POS Dual
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: Rozšiřitelnost spouštění Retail Modern POS a Cloud POS
@@ -1332,6 +1332,8 @@
                   href: dev-itpro/trigger-example-blocking-transaction.md
                 - name: Implementace zásad vracení pomocí spouštění
                   href: dev-itpro/trigger-example-return-policy.md
+                - name: Události rozšíření protokolu do Application Insights
+                  href: dev-itpro/commerce-application-insights.md
             - name: Rozšiřitelnost e-Commerce
               items:
                 - name: Konfigurace online obchodů

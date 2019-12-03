@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Registrace ukázkového předplatného
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+            - name: Přehledy plateb odběratele (náhled)
+              href: accounts-receivable/payment-insights-overview.md
             - name: Aktualizace služby One Version
               items:
                 - name: Přehled aktualizace služby One Version
@@ -2239,6 +2241,8 @@
                       href: localizations/rus-currency-sale-purchase.md
                     - name: Pokladní hotovost
                       href: localizations/emea-petty-cash.md
+                    - name: Hotovost - místní primární formuláře a sjednocené sestavy
+                      href: localizations/rus-local-primary-forms-and-unified-reports.md
                 - name: DPH
                   items:
                     - name: Místní specifické zaúčtování prodejní DPH
@@ -2255,6 +2259,8 @@
                       href: localizations/rus-sales-books-purchase-books.md
                     - name: Správa záloh
                       href: localizations/rus-prepayments-management.md
+                    - name: Obnovení DPH na vstupu
+                      href: localizations/rus-incoming-VAT-restoring.md
                 - name: Dlouhodobý majetek
                   items:
                     - name: Správa dlouhodobého majetku
@@ -2313,6 +2319,14 @@
                       href: localizations/rus-cash-flow.md
                     - name: Přidělení vedlejších nákladů v poměru ke hmotnosti a objemu
                       href: localizations/rus-miscellaneous-charges.md
+                    - name: Vedlejší náklady třetích stran
+                      href: localizations/rus-third-party-misc-charges.md
+                - name: Zásoby
+                  items:
+                    - name: Přepravované zboží od dodavatele
+                      href: localizations/rus-goods-transit-vendor.md
+                    - name: Čísla celního prohlášení
+                      href: localizations/rus-custom-declaration-number.md
                 - name: Vykazování
                   items:
                     - name: Finanční výkaznictví
@@ -2335,6 +2349,8 @@
                       href: localizations/rus-officials.md
                     - name: Divize společnosti
                       href: localizations/rus-company-divisions.md
+                    - name: Ruské formáty adres a import z FIAS
+                      href: localizations/rus-russian-address-format-and-import-from-FIAS.md
                 - name: Časově rozlišené položky
                   items:
                     - name: Nastavení časově rozlišených položek
@@ -2869,6 +2885,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Import konfigurací z RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Kurzy
+                  items:
+                    - name: Použití zdrojů dat JOIN v mapování modelu elektrického výkaznictví k získání dat z více aplikačních tabulek
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                    - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
                 - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
                   items:
                     - name: Konfigurace architektury
@@ -2903,6 +2925,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Přehled správy obchodních dokumentů
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                    - name: Přidání nových polí do šablony obchodního dokumentu v aplikaci Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
                 - name: API rozhraní architektury elektronického výkaznictví
                   items:
                     - name: Rozšíření seznamu funkcí elektronického výkaznictví
