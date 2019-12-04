@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce6ce9c3c08a165ca19eb8d83643fd87b970f1ca
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658729"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772230"
 ---
 # <a name="accounts-payable-home-page"></a>Domovská stránka Závazků
 
@@ -41,7 +41,7 @@ Faktury dodavatele můžete zadat ručně nebo je lze obdržet elektronickou ces
 
 Nastavte skupiny dodavatelů, dodavatele, účetní profily, různé možnosti plateb, parametry týkající se dodavatelů, poplatky, místa expedice a příjmu, vlastní směnky a jiné druhy informací o modulu Závazky. 
 
-[Konfigurace modulu Závazky](accounts-payable-overview.md)
+[Přehled konfigurace závazků](accounts-payable-overview.md)
 
 [Účetní distribuce a účetní položky dílčí hlavní knihy pro faktury dodavatele](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
@@ -51,7 +51,7 @@ Nastavte skupiny dodavatelů, dodavatele, účetní profily, různé možnosti p
 
 Modul Závazky slouží ke sledování faktur a průběžných výdajů pro dodavatele.
 
-[Porovnání faktur v modulu Závazky](accounts-payable-invoice-matching.md)
+[Přehled párování faktur závazků](accounts-payable-invoice-matching.md)
 
 [Účetní profily dodavatele](vendor-posting-profiles.md)
 
@@ -61,7 +61,7 @@ Modul Závazky slouží ke sledování faktur a průběžných výdajů pro doda
 
 [Párování faktur a mezipodnikové nákupní objednávky](invoice-matching-intercompany-purchase-orders.md)
 
-[Řešení nesrovnalostí během párování součtů faktur](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[Přehled řešení nesrovnalostí během párování součtů faktur](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
 [Výchozí protiúčty pro deníky faktur dodavatele a deníky schvalování faktur](default-offset-accounts-vendor-invoice-journals.md)
 
@@ -93,11 +93,11 @@ Přiřaďte typy platby definované systémem, jako je Šek, elektronická platb
 
 [Provedení platební slevy mimo období platební slevy](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[Elektronické výkaznictví pro šeky dodavatele](electronic-reporting-sample-vendor-checks.md)
+[Vzorové šeky dodavatele elektronického výkaznictví](electronic-reporting-sample-vendor-checks.md)
 
 [Stornování platby dodavatele](reverse-vendor-payment.md)
 
-[Přehled zálohových faktur a záloh](prepayments-invoices-vs-prepayments.md)
+[Zálohové faktury a zálohy](prepayments-invoices-vs-prepayments.md)
 
 [Centralizované platby pro modul Závazky](centralized-payments-accounts-payable.md)
 
@@ -107,13 +107,13 @@ Následující témata obsahují informace o vyrovnání. Vyrovnání je proces 
 
 [Konfigurace vyrovnání](../cash-bank-management/configure-settlement.md)
 
-[Vyrovnání částečné platby dodavatele před datem slevy](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[Vyrovnání částečné platby dodavatele před datem slevy s konečnou platbou po datu slevy](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
 [Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy dodavatele](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
 [Vyrovnání částečné platby dodavatele, u níž je více období slev](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[Vyrovnání částečné platby dodavatele nebo konečné platby před slevou](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[Vyrovnání částečné platby dodavatele a konečné platby před datem slevy](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
 [Jeden doklad se záznamy několika odběratelů nebo dodavatelů](single-voucher-multiple-customer-vendor-records.md)
 
@@ -123,7 +123,7 @@ Následující témata obsahují informace o vyrovnání. Vyrovnání je proces 
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte [poznámky k verzi aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
+Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
 
 #### <a name="blogs"></a>Blogy
 

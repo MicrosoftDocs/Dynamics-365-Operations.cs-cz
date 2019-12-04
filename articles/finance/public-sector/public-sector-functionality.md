@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5493c46183e7b599e82153f5b3ac36c81faa4955
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f850b28c4d6ed6ce13438f4de87ef0c04065c7f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174689"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770226"
 ---
 # <a name="public-sector-home-page"></a>Domovská stránka veřejného sektoru
 
@@ -42,13 +42,13 @@ Použijte funkci veřejného sektoru pro dodržování požadavků týkajících
 
   Další informace naleznete v následujících tématech:
 
-- [Plánování pro funkci veřejného sektoru](plan-public-sector-functionality.md)
-- [Závazky ve veřejném sektoru](accounts-payable-public-sector.md)
-- [Pohledávky ve veřejném sektoru](accounts-receivable-public-sector.md)
-- [Rozpočtování ve veřejném sektoru](budgeting-public-sector.md)
+- [Plán pro funkci veřejného sektoru](plan-public-sector-functionality.md)
+- [Přehled závazků ve veřejném sektoru](accounts-payable-public-sector.md)
+- [Přehled pohledávek ve veřejném sektoru](accounts-receivable-public-sector.md)
+- [Přehled rozpočtování ve veřejném sektoru](budgeting-public-sector.md)
 - [Dlouhodobý majetek ve veřejném sektoru](fixed-asset-public-sector.md)
-- [Funkce týkající se předpisů pro Francii](../localizations/emea-fra-public-sector-accounting.md)
-- [Hlavní kniha ve veřejném sektoru](general-ledger-public-sector.md)
+- [Účtování veřejného sektoru ve Francii](../localizations/emea-fra-public-sector-accounting.md)
+- [Přehled hlavní knihy ve veřejném sektoru](general-ledger-public-sector.md)
 - [Zásobování a zdroje ve veřejném sektoru](procurement-sourcing-public-sector.md)
 - [Role zabezpečení ve veřejném sektoru](security-roles-public-sector.md)
 
@@ -70,7 +70,7 @@ Následující tabulka obsahuje informace o způsobu, jakým tento konfiguračn�
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Plánování pro funkci veřejného sektoru](plan-public-sector-functionality.md)
+[Plán pro funkci veřejného sektoru](plan-public-sector-functionality.md)
 
 
 

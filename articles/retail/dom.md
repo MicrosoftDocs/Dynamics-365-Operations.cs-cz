@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
-ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
+ms.openlocfilehash: 10d894bb65031741a5ec8365f7f8db76b58ab334
+ms.sourcegitcommit: 92322167f57b66d2accc134aaf862e6b9931ec94
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578477"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2693105"
 ---
 # <a name="distributed-order-management-dom"></a>Distribuovaná správa objednávek (DOM)
 
@@ -37,9 +37,9 @@ Distribuovaná správa objednávek optimalizuje plnění objednávek v rámci ko
 
 Následující příklad ilustruje životní cyklus prodejní objednávky v systému distribuované správy objednávek.
 
-![Životní cyklus prodejní objednávky v kontextu distribuované správy objednávek](./media/flow.png "Životní cyklus prodejní objednávky v kontextu distribuované správy objednávek")
+![Životní cyklus prodejní objednávky v kontextu DOM](./media/flow.png "Životní cyklus prodejní objednávky v kontextu DOM")
 
-## <a name="set-up-dom"></a>Nastavení distribuované správy objednávek
+## <a name="set-up-dom"></a>Nastavit DOM
 
 1. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**.
 2. Na kartě **Konfigurační klíče** rozbalte uzel **Maloobchod** a poté vyberte zaškrtávací políčko **Distribuovaná správa objednávek**.
@@ -179,7 +179,7 @@ V průběhu zpracování bude distribuovaná správa objednávek zvažovat objed
 
 Poté, co použije pravidla, omezení zásob a optimalizaci, distribuovaná správa objednávek vybere místo, které je nejblíže adrese dodání odběrateli.
 
-![Kritéria prodejní objednávky](./media/ordercriteria.png "Kritéria prodejní objednávky")
+![Kritéria prodejních objednávek](./media/ordercriteria.png "Kritéria prodejních objednávek")
 
 ## <a name="results-of-dom-runs"></a>Výsledky spuštění distribuované správy objednávek
 

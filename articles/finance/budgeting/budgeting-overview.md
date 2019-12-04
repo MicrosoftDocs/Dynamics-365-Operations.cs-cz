@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c6a9e4dd3f3182c98a9f5491b07f8687c21e5c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184064"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772644"
 ---
 # <a name="budgeting-home-page"></a>Domovská stránka Rozpočtování
 
@@ -42,12 +42,12 @@ Procesy pro dlouhodobé strategické plánování a plánování ročního rozpo
 
 Velmi vyspělé organizace mohou vytvořit organizační kulturu, ve které se zaměstnanci vzdělávají v otázkách organizačních cílů a postupují podle cílů prostřednictvím pravidel, jako je „Zvažte online schůzky namísto cest.” Aplikace zahrnuje architekturu kontroly rozpočtu, která umožňuje vedoucím pracovníkům společnosti zvolit buď důslednou kontrolu (ta zabraňuje zaúčtování, která by překročila rozpočet), nebo uvolněnou kontrolu (ta uživatele upozorní, že překročí dostupné rozpočtové prostředky, ale oni sami určí další postup). Můžete použít také postupné prognózy. Postupná prognóza je pravidelné porovnání rozpočtu a skutečných hodnot a slouží k určení míry, do jaké společnost operuje oproti rozpočtu. Postupná prognóza se také používá k identifikaci trendů. V aplikaci Finance and Operations jsou podporovány postupné prognózy pomocí dokumentu plánu rozpočtu jako počáteční aktivity plánování. Postupné prognózy lze provádět současně s plánováním nadcházejícího rozpočtového cyklu.
 
--   [Základní rozpočtování: Přehled a konfigurace](basic-budgeting-overview-configuration.md)
--   [Kontrola rozpočtu: Přehled a konfigurace](budget-control-overview-configuration.md)
--   [Plánování rozpočtu: Přehled a konfigurace](budget-planning-overview-configuration.md)
+-   [Přehled rozpočtování](basic-budgeting-overview-configuration.md)
+-   [Přehled kontroly rozpočtu](budget-control-overview-configuration.md)
+-   [Přehled plánování rozpočtu](budget-planning-overview-configuration.md)
 -   [Prognóza pozice](position-forecasting.md)
 -   [Dokumenty odůvodnění plánování rozpočtu](budget-planning-justification-docs.md)
--   [Šablony Microsoft Excel pro plánování rozpočtu](budget-planning-excel-templates.md)
+-   [Šablony plánování rozpočtu pro Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Nástroje pro rozpočtování
 [![Nástroje pro rozpočtování](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 

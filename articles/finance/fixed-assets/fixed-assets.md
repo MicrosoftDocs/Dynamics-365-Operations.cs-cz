@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd1488fc6b2c29a4cfa4be18b9a88a07d693d7fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bfa6dcbd8d75c1a6c40896311ed367a835eccc7f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175856"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770751"
 ---
 # <a name="fixed-assets-home-page"></a>Domovská stránka Dlouhodobý majetek
 
@@ -41,7 +41,7 @@ Můžete nastavit a zadávat informace o pořízení pro dlouhodobý majetek a 
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte [poznámky k verzi aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
+Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
 
 #### <a name="blogs"></a>Blogy
 

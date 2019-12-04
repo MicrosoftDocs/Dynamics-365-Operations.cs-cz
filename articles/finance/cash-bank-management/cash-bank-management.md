@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51a27f5ecdb4d4903ac0b76c5682ea7f9ab0d8c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1d074b9450a4dfc72f60f97ccaf03610ce54315d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175858"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772575"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Domovská stránka Pokladna a banka
 
@@ -49,36 +49,36 @@ Tyto nástroje zahrnují vkladové složenky, šeky, cizí směnky a vlastní sm
 ### <a name="bank-reconciliation"></a>Odsouhlasení banky
 
 -   [Přehled rozšířeného odsouhlasení banky](advanced-bank-reconciliation-overview.md)
--   [Konfigurace rozšířeného odsouhlasení banky](configure-advanced-bank-reconciliation.md)
--   [Nastavení importu rozšířeného odsouhlasení banky](set-up-advanced-bank-reconciliation-import-process.md)
+-   [Proces nastavení rozšířeného odsouhlasení banky](configure-advanced-bank-reconciliation.md)
+-   [Nastavení procesu importu rozšířené bankovního odsouhlasení](set-up-advanced-bank-reconciliation-import-process.md)
 -   [Odsouhlasení bankovního výpisu pomocí rozšířeného odsouhlasení banky](reconcile-bank-statements-advanced-bank-reconciliation.md)
 -   [Nastavení pravidel párování pro odsouhlasení banky](set-up-bank-reconciliation-matching-rules.md)
 
 
 ## <a name="accounts-payable-payments-and-settlements"></a>Účty plateb závazků a vyrovnání
 -   [Centralizované platby pro modul Závazky](../accounts-payable/centralized-payments-accounts-payable.md)
--   [Vytvoření faktur dodavatele pomocí návrhu platby](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [Vytvoření plateb dodavatelů pomocí návrhu platby](../accounts-payable/create-vendor-payments-payment-proposal.md)
 -   [Stornování platby dodavatele](../accounts-payable/reverse-vendor-payment.md)
 -   [Platby částečných částek dodavatele](../accounts-payable/vendor-payments-partial-amount.md)
--   [Přehled zálohových faktur a záloh](../accounts-payable/prepayments-invoices-vs-prepayments.md)
--   [Situace: Vyrovnání částečné platby dodavatele a plné vyrovnání konečné platby před datem slevy](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [Situace: Vyrovnání částečné platby dodavatele před datem slevy s konečnou platbou po datu slevy](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
--   [Situace: Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy dodavatele](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
--   [Situace: Vyrovnání částečné platby dodavatele, u níž je více období slev](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
--   [Situace: Použití slevy, která je větší než vypočítaná sleva pro platbu dodavatele](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
--   [Situace: Provedení platební slevy mimo období platební slevy](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+-   [Zálohové faktury a zálohy](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [Vyrovnání částečné platby dodavatele a konečné platby před datem slevy](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [Vyrovnání částečné platby dodavatele před datem slevy s konečnou platbou po datu slevy](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [Vyrovnání částečné platby dodavatele, u níž jsou slevy pro dobropisy dodavatele](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [Vyrovnání částečné platby dodavatele, u níž je více období slev](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [Použití slevy, která je větší, než vypočítaná sleva pro platbu dodavatele](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [Provedení platební slevy mimo období platební slevy](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 
 ## <a name="accounts-receivable-payments-and-settlements"></a>Účty plateb pohledávek a vyrovnání
 -   [Centralizované platby pro pohledávky](../accounts-receivable/centralized-payments-accounts-receivable.md)
 -   [Platby částečných částek odběratele](../accounts-receivable/customer-payments-partial-amount.md)
 -   [Refundace odběratelům](../accounts-receivable/reimburse-customers.md)
--   [Scénář: Automatické vyrovnání a stanovení priority](../accounts-receivable/automatic-settlement-prioritization.md)
--   [Scénář: zpracování platební slevy u přeplatků](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [Situace: Vyrovnání částečné platby odběratele a plné vyrovnání konečné platby před datem slevy](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
--   [Situace: Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
--   [Situace: Vyrovnání částečné platby odběratele, u níž jsou slevy pro dobropisy](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
--   [Situace: Vyrovnání částečné platby odběratele, u níž je více období slev](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
--   [Situace: Použijte jednu platbu odběratele na úhradu několika faktur, které zasahují do více období slevy](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+-   [Automatické vyrovnání a stanovení priorit](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [Práce s platební slevou u přeplatků](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [Vyrovnání částečné platby odběratele a konečné platby před datem slevy](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [Vyrovnání částečné platby zákazníka, u níž jsou slevy pro dobropisy dodavatele](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [Vyrovnání částečné platby zákazníka, u níž je více období slev](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
 
@@ -86,7 +86,7 @@ Tyto nástroje zahrnují vkladové složenky, šeky, cizí směnky a vlastní sm
 
 #### <a name="whats-new-and-in-development"></a>Co je nového a na čem se pracuje
 
-Přejděte [poznámky k verzi aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
+Přejděte na [plány vydání verzí aplikace Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) a zjistěte, jaké nové funkce se plánují. 
 
 #### <a name="blogs"></a>Blogy
 

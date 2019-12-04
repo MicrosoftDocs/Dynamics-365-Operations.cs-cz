@@ -2,6 +2,8 @@
   items:
     - name: Vývoj a správa aplikací Finance and Operations
       items:
+        - name: Dokumentace pro aplikaci Finance and Operations
+          href: ../fin-ops/index.md
         - name: Vývoj a správa aplikací Finance and Operations
           href: index.md
         - name: Co je nového a co se změnilo
@@ -128,16 +130,28 @@
                           href: data-entities/dual-write-overview.md
                         - name: Organizační hierarchie na Common Data Service
                           href: data-entities/dual-write-organization.md
-                        - name: Koncept společnosti v Common Data Service
-                          href: data-entities/dual-write-company.md
+                        - name: Integrace společnosti
+                          items:
+                            - name: Koncept společnosti v Common Data Service
+                              href: data-entities/dual-write-company.md
+                            - name: Spuštění s daty společnosti
+                              href: data-entities/dual-write-bootstrap.md
                         - name: Integrovaná hlavní data odběratelů
                           href: data-entities/dual-write-customer.md
+                        - name: Integrovaná hlavní kniha
+                          href: data-entities/dual-write-ledger.md
                         - name: Sjednocené prostředí produktu
                           href: data-entities/dual-write-product.md
-                        - name: Integrovaná hlavní data dodavatelů
-                          href: data-entities/dual-write-vendor.md
+                        - name: Integrace dodavatele
+                          items:
+                            - name: Integrovaná hlavní data dodavatelů
+                              href: data-entities/dual-write-vendor.md
+                            - name: Přepínání mezi návrhy dodavatele
+                              href: data-entities/dual-write-vendor-switch.md
                         - name: Integrované sklady a pracoviště
                           href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: Integrovaná hlavní data daní
+                          href: data-entities/dual-write-tax.md
                         - name: Počáteční synchronizace
                           href: data-entities/dual-write-initial.md
                         - name: Řešení potíží s integrací dat
@@ -418,6 +432,8 @@
                   href: user-interface/client-disconnected.md
                 - name: Řešení problémů s místním nasazením
                   href: deployment/troubleshoot-on-prem.md
+                - name: Skripty pro řešení problémů v místních prostředích
+                  href: deployment/onprem-tsg-implementations.md
                 - name: Rotace certifikátů
                   href: deployment/certificate-rotation-on-prem.md
             - name: Nasazení vlastního kódu

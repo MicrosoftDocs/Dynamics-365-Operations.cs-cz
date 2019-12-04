@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 058adaef91a7b30e25bea603625116e97009cf55
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 795e9f5b843ba8e50dc091949c9732b8b033355e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537017"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812081"
 ---
 # <a name="globalization-resources"></a>Zdroje globalizace
 
@@ -45,9 +45,9 @@ Toto téma zahrnuje zdroje, které vám pomohou:
 
 ### <a name="developing-localized-solutions"></a>Vývoj lokalizovaných řešení
 Následující zdroje obsahují pokyny a informace, které mohou pomoci vývojářům a nezávislým výrobcům softwaru, kteří vytvářejí vlastní přizpůsobení specifické pro zemi/oblast nebo vytvářejí řešení pro zemi, kterou společnost Microsoft nepodporuje.
--   [Samostatné lokalizační modely](separate-localization-models.md)
+-   [Oddělení lokalizačních modelů](separate-localization-models.md)
 -   [Použití kontextu země nebo oblasti](apply-country-context.md)
--   [Regulační certifikace](regulatory-certifications.md)
+-   [Informace o regulační certifikaci v názvech funkcí](regulatory-certifications.md)
 -   [Klasifikace lokalizačních funkcí](classify-localization-features.md)
 -   [Kódy zemí - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
@@ -57,17 +57,17 @@ Následující zdroje obsahují informace o plánovaných a nových lokalizačn�
 #### <a name="regulatory-updates"></a>Povinné aktualizace
 -   [Povinné aktualizace](../../../finance/localizations/regulatory-updates.md)
 -   [Lokalizační portál](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (aktualizováno týdně)
--   [Hledání problémů LCS](../lifecycle-services/issue-search-lcs.md) (aktualizováno denně)
+-   [Hledání problémů v Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (Aktualizováno denně)
 
 #### <a name="communication-and-alerts"></a>Komunikace a výstrahy
--   [Sledování předpisů a komunikace nových informací o předpisech](regulatory-watch-communication.md)
--   [Informování společnosti Microsoft o výstrahách týkajících se předpisů země/oblasti a sledování stavu regulačních funkcí](submit-localization-alerts.md)
+-   [Sledování předpisů a komunikace o povinných aktualizacích](regulatory-watch-communication.md)
+-   [Odeslání výstrah o funkcích týkajících se předpisů specifických pro zemi nebo oblast](submit-localization-alerts.md)
 
-#### <a name="dynamics-365-release-notes"></a>Poznámky k verzi Dynamics 365
-[Poznámky k verzi Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) poskytují popis nových a rozšířených funkcí plánovaných pro obchodní aplikace a platformy aplikací Dynamics 365. 
+#### <a name="dynamics-365-release-plans"></a>Plány vydání verzí Dynamics 365
+[Plány vydání verzí Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) poskytují popis nových a rozšířených funkcí plánovaných pro obchodní aplikace a platformy aplikací Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Co je nového v aplikacích Finance and Operations
-Obsah části [Co je nového](../../fin-ops/get-started/whats-new-changed.md) uvádí seznam funkcí, které jsou obsaženy v konkrétních vydáních aplikací Finance and Operations.
+Obsah [domovské stránky Co je nového a co se změnilo v aplikaci Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) uvádí seznam funkcí, které jsou obsaženy v konkrétních vydáních aplikací Finance and Operations.
 
 ### <a name="electronic-reporting"></a>Elektronické výkaznictví
 Nástroj Elektronické výkaznictví slouží ke konfiguraci formátů pro elektronické dokumenty v souladu s právními požadavky různých zemí a oblastí. Elektronické výkaznictví umožňuje spravovat tyto formáty během jejich životního cyklu. Další informace naleznete v jednom z následujících témat:
@@ -79,14 +79,14 @@ Nástroj Elektronické výkaznictví slouží ke konfiguraci formátů pro elekt
 -   [Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
 -   [Import konfigurací elektronického výkaznictví](../analytics/electronic-reporting-import-ger-configurations.md)
 -   [Konfigurace elektronického výkaznictví pro doplňování dat do Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [Generování elektronických dokumentů a aktualizace dat aplikací pomocí nástroje elektronického výkaznictví](../analytics/generate-electronic-documents-update-application-data.md)
+-   [Generování elektronických dokumentů a aktualizace dat aplikace pomocí elektronického výkaznictví](../analytics/generate-electronic-documents-update-application-data.md)
 
 ### <a name="task-guides"></a>Průvodci záznamem úloh
 Průvodci záznamem úloh jsou k dispozici v podokně nápovědy k produktu a provedou vás jednotlivými kroky klíčových obchodních procesů. Můžete si buď otevřít průvodce záznamem úloh a přečíst si jednotlivé kroky obchodního procesu nebo si můžete průvodce záznamem úloh přehrát, nechat se obchodním procesem provést a zadat data.
 
 Průvodce záznamem úloh naleznete přechodem na stránku v aplikaci a kliknutím na tlačítko Nápověda. Průvodci záznamem úloh používající takovou stránku, jsou uvedeni na seznamu v podokně nápovědy. Podokno nápovědy můžete také použít pro vyhledávání průvodců záznamem úloh podle názvu.
 
-Další informace naleznete v tématu [Průvodci záznamem úloh](../../fin-ops/get-started/help-overview.md#task-guides).
+Další informace naleznete v tématu [Systém nápovědy](../../fin-ops/get-started/help-overview.md#task-guides).
 
 
 ### <a name="countryregion-specific-help-content"></a>Obsah nápovědy specifický pro zemi nebo oblast
