@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: ''
+ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
-ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
+ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2652610"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824513"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
 
-Podnikový uživatelů používá [architekturu elektronického výkaznictví](general-electronic-reporting.md) ke konfiguraci formátů pro odchozí dokumenty v souladu s právními požadavky různých zemí a oblastí. Uživatelé mohou rovněž definovat tok dat, který určuje, která data aplikace budou umístěna do generovaných dokumentů. Architektura elektronického výkaznictví generuje odchozí dokumenty ve formátech Microsoft Office (sešity aplikace Excel nebo dokumenty aplikace Word) pomocí předdefinovaných šablon. Šablony jsou naplněny požadovanými daty v souladu s konfigurovaným tokem dat, když jsou vygenerovány požadované dokumenty. Každý konfigurovaný formát lze publikovat jako součást řešení elektronického vykazování pro generování určitých odchozích dokumentů. To je představováno konfigurací formátu elektronického vykazování, která může obsahovat šablony, které lze použít k vygenerování různých odchozích dokumentů. Podnikoví uživatelé mohou pomocí této architektury spravovat požadované obchodní dokumenty.
+Podnikový uživatelů používá [přehled elektronického výkaznictví](general-electronic-reporting.md) ke konfiguraci formátů pro odchozí dokumenty v souladu s právními požadavky různých zemí a oblastí. Uživatelé mohou rovněž definovat tok dat, který určuje, která data aplikace budou umístěna do generovaných dokumentů. Architektura elektronického výkaznictví generuje odchozí dokumenty ve formátech Microsoft Office (sešity aplikace Excel nebo dokumenty aplikace Word) pomocí předdefinovaných šablon. Šablony jsou naplněny požadovanými daty v souladu s konfigurovaným tokem dat, když jsou vygenerovány požadované dokumenty. Každý konfigurovaný formát lze publikovat jako součást řešení elektronického vykazování pro generování určitých odchozích dokumentů. To je představováno konfigurací formátu elektronického vykazování, která může obsahovat šablony, které lze použít k vygenerování různých odchozích dokumentů. Podnikoví uživatelé mohou pomocí této architektury spravovat požadované obchodní dokumenty.
 
 **Správa obchodních dokumentů** je vytvořena na vrcholu systému architektury elektronického výkaznictví a umožňuje podnikovým uživatelům upravovat šablony obchodních dokumentů pomocí služby Microsoft Office 365 nebo příslušné desktopové aplikace Microsoft Office. Úpravy dokumentů mohou zahrnovat změny návrhů obchodních dokumentů a přidávání zástupných symbolů pro další data bez změn zdrojových kódů a nových nasazení. K aktualizaci šablon obchodních dokumentů nejsou vyžadovány žádné znalosti architektury elektronického vykazování.
 
@@ -58,21 +59,17 @@ Při vydání veřejné verze Preview budou k dispozici následující sestavy s
 
 Budou k dispozici další sestavy. Zvláštní oznámení o dalších sestavách budou odeslána samostatně. 
 
-Úplný seznam všech sestav plánovaných pro vydání v říjnu 2019 lze najít v části [Konfigurovatelné vykazování obchodních dokumentů v aplikacích Word a Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
-
-# <a name="example-enable-configure-and-use-business-document-management"></a>Příklad: Povolení, konfigurace a použití správy obchodních dokumentů
-
-Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu.
+Úplný seznam všech sestav plánovaných pro vydání v říjnu 2019 lze najít v části [Konfigurovatelné vykazování obchodních dokumentů v aplikacích Word a Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu.
 
 ## <a name="configure-er-parameters"></a>Konfigurace parametrů ER
 
-Vzhledem k tomu, že správa obchodních dokumentů je na vrcholu architektury elektronického výkaznictví, je nutné parametry elektronického výkaznictví nakonfigurovat tak, aby začaly spolupracovat se správou obchodních dokumentů. Nejprve je třeba nastavit parametry elektronického výkaznictví, jak je popsáno v tématu [Konfigurace architektury elektronického výkaznictví](electronic-reporting-er-configure-parameters.md). Je také nutné přidat nového poskytovatele konfigurace, jak je popsáno v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+Vzhledem k tomu, že správa obchodních dokumentů je na vrcholu architektury elektronického výkaznictví, je nutné parametry elektronického výkaznictví nakonfigurovat tak, aby začaly spolupracovat se správou obchodních dokumentů. Nejprve je třeba nastavit parametry elektronického výkaznictví, jak je popsáno v tématu [Konfigurace architektury elektronického výkaznictví (ER)](electronic-reporting-er-configure-parameters.md). Je také nutné přidat nového poskytovatele konfigurace, jak je popsáno v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![Pracovní prostor elektronického výkaznictví](./media/BDM-Overview-ERSetting.png)
 
 ## <a name="import-er-solutions"></a>Import řešení elektronického výkaznictví
 
-Je nutné importovat konfigurace elektronického výkaznictví, které obsahují šablony obchodních dokumentů, do aktuální instance. Chcete-li provést tento postup, stáhněte a místně uložte následující soubory.
+V příkladu tohoto postupu jsou použity ukázkové konfigurace ER. Do aktuální instance aplikace Dynamics 365 Finance je nutné importovat konfigurace ER obsahující šablony obchodních dokumentů, které lze upravit pomocí správy obchodních dokumentů. Chcete-li provést tento postup, stáhněte a uložte následující soubory.
 
 **Ukázka fakturačního řešení elektronického výkaznictví pro zákazníky**
 
@@ -105,7 +102,13 @@ K importu každého souboru použijte následující postup. Před importem odpo
 
 ![Stránka konfigurací elektronického výkaznictví](./media/BDM-Overview-ERSolutions.png)
 
+
+Případně můžete importovat oficiálně publikovaná konfigurace formátu ER ze služby Microsoft Dynamics Lifecycle Service (LCS). Chcete-li například dokončit tento postup, můžete importovat nejnovější verzi konfigurace formátu ER **Volná textová faktura (Excel)**. Odpovídající datové modely ER a konfigurace mapování modelu ER budou importovány automaticky.
+
+![Stránka obsahu Knihovna sdílených datových zdrojů LCS](./media/BDM-Overview-SharedAssetLibrary.png)
+
 Další informace o importu konfigurací elektronického výkaznictví naleznete v tématu [Správa životního cyklu konfigurace elektronického výkaznictví](general-electronic-reporting-manage-configuration-lifecycle.md).
+
 
 ## <a name="enable-business-document-management"></a>Povolení správy obchodních dokumentů
 
@@ -118,9 +121,12 @@ Chcete-li povolit funkci správy obchodních dokumentů pro všechny právnické
 3. Výběrem možnosti **Povolit nyní** zapněte vybranou funkci.
 4. K nové funkci budete mít přístup po aktualizaci stránky.
 
+>[!NOTE]
+> Je také nutné povolit **prostředí UI podobné systému Office pro správu obchodního dokumentu** k používání nového rozhraní správy obchodních dokumentů
+
 ![Pracovní prostor Správa funkcí](./media/BDM-Overview-FMEnabling.png)
 
-Další informace o aktivaci nových funkcí naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Další informace o aktivaci nových funkcí naleznete v tématu [Přehled správy funkcí](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="configure-parameters"></a>Konfigurace parametrů
 
@@ -137,7 +143,7 @@ Pro tento typ dokumentu je nutné vybrat následující hodnoty atributů.
 | Seskupit               | Soubor                  |
 | Umístění            | SharePoint            |
 
-Informace o nastavení požadovaných parametrů správy dokumentů a typů dokumentů naleznete v tématu [Konfigurace správy dokumentů](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+Informace o nastavení požadovaných parametrů správy dokumentů a typů dokumentů naleznete v tématu [Konfigurace správy dokumentů](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Nastavení typu dokumentu pro správu dokumentů](./media/BDM-Overview-DMSetting.png)
 
@@ -179,21 +185,21 @@ Chcete-li povolit nastavit přístupová oprávnění ke správě obchodních do
 1. Přihlaste se jako uživatel s přístupem na stránku **Konfigurátor přístupových oprávnění**.
 2. Přejděte do části **Správa organizace** \> **Elektronické vykazování** \> **Správu obchodních dokumentů** \> **Správa přístupových oprávnění**.
 
-Věnujte pozornost oznámením, která vás informují, že použití přístupových oprávnění pro správu obchodních dokumentů není aktuálně povoleno.
+    Věnujte pozornost oznámením, která vás informují, že použití přístupových oprávnění pro správu obchodních dokumentů není aktuálně povoleno.
 
-![Stránka konfigurátoru přístupových oprávnění ke správě obchodních dokumentů](./media/BDM-Overview-TemplatesAccess1.png)
+    ![Stránka konfigurátoru přístupových oprávnění ke správě obchodních dokumentů](./media/BDM-Overview-TemplatesAccess1.png)
 
-Při tomto nastavení může každý uživatel s libovolnou rolí zabezpečení s oprávněním pro **správu šablon obchodních dokumentů** (název AOT **ERBDManageTemplates**) otevřít pracovní prostor správy obchodních dokumentů a upravit libovolnou šablonu, která je k dispozici.
+    Při tomto nastavení může každý uživatel s libovolnou rolí zabezpečení s oprávněním pro **správu šablon obchodních dokumentů** (název AOT **ERBDManageTemplates**) otevřít pracovní prostor správy obchodních dokumentů a upravit libovolnou šablonu, která je k dispozici.
 
-Následující obrázek zobrazuje informace, které jsou k dispozici v pracovním prostoru Správa obchodních dokumentů pro uživatele s rolí **Úředník pohledávek**. S aktuálním nastavením přístupových oprávnění může uživatel upravovat šablony obchodních dokumentů z různých funkčních oblastí, včetně fakturace, regulačního vykazování a plateb.
+    Následující obrázek zobrazuje informace, které jsou k dispozici v pracovním prostoru Správa obchodních dokumentů pro uživatele s rolí **Úředník pohledávek**. S aktuálním nastavením přístupových oprávnění může uživatel upravovat šablony obchodních dokumentů z různých funkčních oblastí, včetně fakturace, regulačního vykazování a plateb.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. Na stránce **Konfigurátor přístupových oprávnění** vyberte možnost **Nastavení oprávnění přístupu**.
 4. V dialogovém okně **Nastavení přístupových oprávnění pro úpravy šablon** povolte možnost **Použít konfigurovaná přístupová oprávnění**.
 5. Klepnutím na tlačítko **OK** potvrďte, že byla povolena oprávnění přístupu ke správě obchodních dokumentů.
 
-![Stránka s konfigurací přístupových oprávnění ke správě obchodních dokumentů](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Stránka s konfigurací přístupových oprávnění ke správě obchodních dokumentů](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Chcete-li zadat novou obchodní roli, pro kterou mají být konfigurována oprávnění pro přístup k šablonám správy obchodních dokumentů, vyberte možnost **Přidat**.
 7. V dialogovém okně **Role zabezpečení** vyberte roli **Úředník pohledávek** a poté klepnutím na tlačítko **OK** potvrďte výběr role.
@@ -201,11 +207,11 @@ Následující obrázek zobrazuje informace, které jsou k dispozici v pracovní
 9. V poli **Typ značky** vyberte možnost **Funkční oblast** a v poli **ID** vyberte možnost **Fakturace**.
 10. Chcete-li uložit konfigurovaná přístupová oprávnění pro vybranou roli, vyberte možnost **Uložit**.
 
-  Aktuální nastavení znamená, že pro každého uživatele, který má roli **Úředník pohledávek** a funkční oprávnění **Správa šablon obchodních dokumentů** (název AOT **ERBDManageTemplates**), šablony konfigurací elektronického výkaznictví, které mají hodnotu **Fakturace** pro značku **Funkční oblast**, budou k dispozici pro úpravy v pracovním prostoru Správa obchodních dokumentů.
+    Aktuální nastavení znamená, že pro každého uživatele, který má roli **Úředník pohledávek** a funkční oprávnění **Správa šablon obchodních dokumentů** (název AOT **ERBDManageTemplates**), šablony konfigurací elektronického výkaznictví, které mají hodnotu **Fakturace** pro značku **Funkční oblast**, budou k dispozici pro úpravy v pracovním prostoru Správa obchodních dokumentů.
 
 11. Přepněte podokno **Související informace** z pravé strany aktuální stránky. V podokně **Související informace** je zobrazen způsob použití konfigurovaných přístupových oprávnění včetně informací o tom, jaké konfigurační šablony elektronického výkaznictví budou k dispozici pro uživatele s rolí **Úředník pohledávek**.
 
-![Stránka s konfigurací přístupových oprávnění ke správě obchodních dokumentů](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Stránka s konfigurací přístupových oprávnění ke správě obchodních dokumentů](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. Na kartě **Přístupová oprávnění dle konfigurací** vyberte možnost **Přidat**.
 13. V dialogovém **Výběr konfigurace** označte konfiguraci formátu elektronického výkaznictví jako **Sestavu Intrastat**.
@@ -252,21 +258,31 @@ Pro vybranou šablonu je k dispozici možnost **Upravit šablonu**. Tato možnos
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Zahájení úprav šablon vlastněných ostatními poskytovateli
 
-1. V pracovním prostoru Správa obchodních dokumentů vyberte v seznamu šablonu **Sestava FTI odběratele (GER)**.
-2. Zvolte kartu **Podrobnosti**.
+1. V pracovním prostoru správy obchodních dokumentů vyberte **nový dokument**.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate3.png)
+![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM_overview_new_template1.png)
 
-Pro vybranou šablonu je k dispozici možnost **Nový dokument**. Tato možnost je vždy k dispozici pro šablonu v konfiguraci formátu elektronického výkaznictví poskytované jiným poskytovatelem (v tomto případě **Microsoft**). Je -li vybrána možnost **Nový dokument**, bude k dispozici nová šablona pro úpravy. Upravená šablona bude poté uložena do nové konfigurace formátu elektronického výkaznictví, která bude automaticky vygenerována.
+2. Vyberte dokument, který chcete použít jako šablonu.
+
+![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM_overview_new_template2.png)
+
+3. Klikněte na **Vytvořit dokument**
+4. V poli **Název** změňte v případě potřeby název upravitelné šablony. Text se použije k pojmenování konfigurace formátu elektronického výkaznictví, která je automaticky vytvořena. Všimněte si, že verze konceptu této konfigurace **(Kopie sestavy FTI odběratele (GER)kopie**), která bude obsahovat upravenou šablonu, bude automaticky označena pro spuštění tohoto formátu elektronického výkaznictví pro aktuálního uživatele. Zároveň bude původní neupravená šablona ze základní konfigurace formátu elektronického výkaznictví použita ke spuštění tohoto formátu elektronického výkaznictví pro libovolného jiného uživatele.
+5. V poli **Název** změňte název první revize upravitelné šablony, která bude automaticky vytvořena.
+6. V poli **Komentář** změňte poznámku pro automaticky vytvořenou revizi upravitelné šablony.
+7. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav
+
+![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM_overview_new_template3.png)
+
+Možnost **Nový dokument** je vždy k dispozici pro šablonu v konfiguraci formátu elektronického výkaznictví poskytovanou jiným poskytovatelem (v tomto případě Microsoft). Když kliknete na **Nový dokument**, zobrazí se všechny šablony vlastněné aktuálními a jinými poskytovateli. Po výběru bude šablona otevřena pro úpravy. Upravená šablona bude poté uložena do nové konfigurace formátu elektronického výkaznictví, která bude automaticky vygenerována.
 
 ### <a name="start-editing-a-template"></a>Zahájení úpravy šablony
 
-1. Z vybrané šablony vyberte možnost **Nový dokument**.
-2. V poli **Název** změňte v případě potřeby název upravitelné šablony. Text se použije k pojmenování konfigurace formátu elektronického výkaznictví, která je automaticky vytvořena. Všimněte si, že verze konceptu této konfigurace **(Kopie sestavy FTI odběratele (GER)kopie**), která bude obsahovat upravenou šablonu, bude automaticky označena pro spuštění tohoto formátu elektronického výkaznictví pro aktuálního uživatele. Zároveň bude původní neupravená šablona ze základní konfigurace formátu elektronického výkaznictví použita ke spuštění tohoto formátu elektronického výkaznictví pro libovolného jiného uživatele.
-3. V poli **Název** změňte název první revize upravitelné šablony, která bude automaticky vytvořena.
-4. V poli **Komentář** změňte poznámku pro automaticky vytvořenou revizi upravitelné šablony.
+1. Z vybrané šablony vyberte možnost **Upravit dokument**.
+2. V poli **Název** změňte název první revize upravitelné šablony, která bude automaticky vytvořena.
+3. V poli **Komentář** změňte poznámku pro automaticky vytvořenou revizi upravitelné šablony.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate4.png)
+    ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM_overview_new_template4.png)
 
 5. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav.
 
@@ -285,15 +301,15 @@ Otevře se stránka **Editor šablony BDM**. Vybraná šablona bude k dispozici 
 1. Chcete- li upravit šablonu pomocí funkce desktopové aplikace Office (v tomto příkladu aplikace Excel), vyberte možnost **Otevřít v desktopové aplikaci**. Upravitelná šablona je zkopírována z trvalého úložiště do dočasného úložiště konfigurovaného v parametrech správy obchodních dokumentů jako složka SharePoint.
 2. Potvrďte, že chcete otevřít šablonu z dočasného úložiště souborů v desktopové aplikaci Office Excel.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingLayout3.png)
+    ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingLayout3.png)
 
 3. Upravte šablonu. Například změňte barvu písma výzev polí v záhlaví šablony z **Černá** na **Modrá**.
 
-![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout4.png)
+    ![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout4.png)
 
 4. Volbou **Uložit** v desktopové aplikaci Excel uložte změny šablony do dočasného úložiště.
 
-![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout5.png)
+    ![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout5.png)
 
 5. Zavřete desktopovou aplikaci Excel.
 6. Výběrem možnosti **Synchronizovat uloženou kopii** synchronizujte dočasné úložiště šablon s trvalým úložištěm šablon.
@@ -307,7 +323,7 @@ Otevře se stránka **Editor šablony BDM**. Vybraná šablona bude k dispozici 
 2. Chcete-li zobrazit aktuální strukturu formátu ze základní konfigurace formátu elektronického výkaznictví, která musí být zarovnána s upravitelnou šablonou, vyberte možnost **Zobrazit formát**. 
 3. Chcete-li podokno zavřít, vyberte možnost **Skrýt formát**.
 
-![Stránka Editor šablony BDM](./media/BDM-Overview-EditingTemplate6.png)
+    ![Stránka Editor šablony BDM](./media/BDM-Overview-EditingTemplate6.png)
 
 4. Zavřete stránku **Editor šablony BDM**.
 
@@ -323,7 +339,7 @@ Aktualizovaná šablona je zobrazena na kartě **Šablona** . Všimněte si, že
 4. Chcete-li určit rozsah faktur, které mají být zpracovány, vyberte **Modul – Pohledávky** \> **Dokumenty** \> **Volná faktura** \> **Původní dokument**.
 5. V poli **Formát sestavy** vyberte formát elektronického výkaznictví **Kopie sestavy FTI odběratele (GER)** pro zadanou úroveň dokumentu.
 
-![Stránka nastavení správy tisku](./media/BDM-Overview-TestRun1.png)
+    ![Stránka nastavení správy tisku](./media/BDM-Overview-TestRun1.png)
 
 6. Stisknutím klávesy **Escape** zavřete aktuální stránku.
 7. Vyberte možnost **Tisk** a poté klepněte namožnost **Vybráno**.
@@ -340,9 +356,9 @@ Upravená šablona slouží k vygenerování sestavy volné faktury pro vybranou
 3. V případě potřeby změňte v poli **Název** název druhé revize a založte jej na aktuálně aktivní první revizi.
 4. Pokud je třeba, v poli **Komentář** změňte poznámku pro automaticky vytvořenou revizi upravitelné šablony.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-AddRevision.png)
+    ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-AddRevision.png)
 
-Vytvořili jste novou revizi šablony, která byla uložena v trvalém úložišti šablon. Nyní můžete pokračovat v úpravách šablony druhé revize, která je aktuálně vybrána jako aktivní.
+    Vytvořili jste novou revizi šablony, která byla uložena v trvalém úložišti šablon. Nyní můžete pokračovat v úpravách šablony druhé revize, která je aktuálně vybrána jako aktivní.
 
 5. Vyberte první revizi a poté vyberte **Nastavitjako aktivní**. Chcete-li se kdykoli vrátit k revizi šablony, můžete vybrat jinou revizi jako aktivní.
 6. Vyberte druhou revizi a poté vyberte možnost **Odstranit**.
@@ -370,7 +386,7 @@ Při úpravě šablony z formátu elektronického výkaznictví, který vlastní
 
 ## <a name="frequently-asked-questions"></a>Časté dotazy
 
-#### <a name="i-selected-new-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Vybral jsem možnost **Nový dokument**, ale namísto otevření stránky **Editor šablon BDM** v aplikaci Finance and Operations jsem byl přesměrován na webovou stránku Office 365.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Vybral jsem možnost **Upravit dokument**, ale namísto otevření stránky **Editor šablon BDM** v aplikaci Finance and Operations jsem byl přesměrován na webovou stránku Office 365.
 Jedná se o známý problém s přesměrováním Office 365. To se stává při prvním přihlášení k Office 365. Chcete-li tento problém vyřešit, v prohlížeči vyberte tlačítko **Zpět**, čímž přejdete zpět.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Rozumím, jak upravit šablonu pomocí Office 365 v první relaci aplikace a jak používat šablonu v druhé relaci aplikace upravením šablony tak, abych mohl vidět, jaký vliv mají změny na vygenerovaný obchodní dokument. Mohu to provést pomocí desktopové aplikace Office?
@@ -388,7 +404,7 @@ Pravděpodobně jste se přihlásili k aktuální instanci aplikace v doméně A
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 
-[Návrh konfigurace pro generování sestav ve formátu OPENXML](tasks/er-design-reports-openxml-2016-11.md)
+[Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu OPENXML (listopad 2016)](tasks/er-design-reports-openxml-2016-11.md)
 
 [Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu Word](tasks/er-design-configuration-word-2016-11.md)
 

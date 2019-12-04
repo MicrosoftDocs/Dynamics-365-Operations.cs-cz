@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2bfe007995c894d6cc86d07ef2b52da65e32e950
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aa8444b081650e3d375e6f28f47866c8d4853721
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182731"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772456"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Přístup k metadatům aplikace pomocí konfigurace elektronického výkaznictví
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Následující kroky vysvětlují, jak může uživatel služby Regulatory Configuration Service s rolí Správce systému nebo Návrhář elektronického výkaznictví navrhnout nové mapování modelu elektronického výkaznictví (ER) pro pomocí metadat aplikace. K metadatům aplikace se přistupuje pomocí konfigurace metadat ER, která obsahuje ukázkovou sadu metadat pro přístup k transakcím zahraničního obchodu. Provedení těchto kroků vyžaduje, abyste nejprve dokončili kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md). Pak proveďte kroky uvedené v tématu [(ER) Příprava použití metadat aplikace v RCS](prepare-application-metadata-rcs.md).
+Následující kroky vysvětlují, jak může uživatel služby Regulatory Configuration Service s rolí Správce systému nebo Návrhář elektronického výkaznictví navrhnout nové mapování modelu elektronického výkaznictví (ER) pro pomocí metadat aplikace. K metadatům aplikace se přistupuje pomocí konfigurace metadat ER, která obsahuje ukázkovou sadu metadat pro přístup k transakcím zahraničního obchodu. Provedení těchto kroků vyžaduje, abyste nejprve dokončili kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md). Pak proveďte kroky uvedené v tématu [Příprava použití metadat aplikace v RCS](prepare-application-metadata-rcs.md).
 
 ## <a name="prerequisites"></a>Předpoklady
 1. Přejděte na **Všechny pracovní prostory** > **Elektronické výkaznictví**. 
@@ -35,7 +35,7 @@ Následující kroky vysvětlují, jak může uživatel služby Regulatory Confi
 
 ## <a name="import-metadata-configuration"></a>Import konfigurace metadat 
 1. Klikněte na **Konfigurace metadat**. 
-2. Importujte konfiguraci metadat ER obsahující metadata, která jsou nakonfigurována pro generování elektronických dokumentů pro zahraniční obchod. Konfigurace metadat ER byla exportována jako soubor XML, zatímco byly dokončeny kroky v proceduře [(ER) Příprava metadat aplikace k použití v RCS](prepare-application-metadata-rcs.md). 
+2. Importujte konfiguraci metadat ER obsahující metadata, která jsou nakonfigurována pro generování elektronických dokumentů pro zahraniční obchod. Konfigurace metadat ER byla exportována jako soubor XML, zatímco byly dokončeny kroky v proceduře [Příprava metadat aplikace k použití v RCS](prepare-application-metadata-rcs.md). 
 3. Klikněte na **Exchange**. 
 4. Klikněte na **Načíst ze souboru XML**. 
 5. Klikněte na **Procházet** a vyberte soubor Foreign trade metadata.xml. 

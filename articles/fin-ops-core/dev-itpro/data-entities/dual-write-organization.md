@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a12ab249129dce24cdca5e29d737fa9f68c0eac
-ms.sourcegitcommit: 6e0909e95f38b7487a4b7f68cc62b723f8b59bd4
+ms.openlocfilehash: 9efc63c385c31a6d8848d016c1a8689460908dcc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572442"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769653"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Organizační hierarchie v Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Vzhledem k tomu, že Dynamics 365 Finance, je finanční systém, *organizace* je hlavním konceptem a nastavení systému začíná konfigurací hierarchie organizací. Obchodní finance lze poté sledovat na úrovni organizace a také na libovolné úrovni v hierarchii organizací.
 
@@ -46,85 +44,35 @@ Podnikatelský ekosystém, který se skládá z aplikací Finance and Operations
 
 Mapování entity organizační hierarchie jsou k dispozici pro jednosměrnou synchronizaci dat z aplikací Finance and Operations do Common Data Service.
 
+## <a name="templates"></a>Šablony
+
+Informace o produktu obsahují všechny informace související s produktem a jeho definici, jako jsou například dimenze produktů nebo dimenze sledování a úložiště. Jak je ukázáno v následující tabulce, je vytvořena kolekce map entit pro synchronizaci produktů a souvisejících informací.
+
+Finance and Operations | Jiné aplikace Dynamics 365 | Popis
+-----------------------|--------------------------------|---
+Účely organizační hierarchie | msdyn_internalorganizationhierarchypurposes | Tato šablona poskytuje jednosměrnou synchronizaci entity účelu hierarchie organizace.
+Typ organizační hierarchie | msdyn_internalorganizationhierarchytypes | Tato šablona poskytuje jednosměrnou synchronizaci entity typu hierarchie organizace.
+Organizační hierarchie - publikovaná | msdyn_internalorganizationhierarchies | Tato šablona poskytuje jednosměrnou synchronizaci entity publikované hierarchie organizace.
+Provozní jednotka | msdyn_internalorganizations | 
+Právnické osoby | msdyn_internalorganizations | 
+Právnické osoby | cdm_companies | Poskytuje obousměrnou synchronizaci informací o právnické osobě (společnosti).
+
+
 [!include [banner](../includes/dual-write-symbols.md)]
 
-## <a name="internal-organization-hierarchy-purpose"></a>Interní účel hierarchie organizací
+[!include [Organization hierarchy purposes](dual-write/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
 
-Tato šablona poskytuje jednosměrnou synchronizaci entity účel hierarchie organizace z Finance and Operations do dalších aplikací Dynamics 365.
+[!include [Organization hierarchy type](dual-write/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
 
-<!-- ![architecture image](media/dual-write-purpose.png) -->
-
-Zdrojové pole | Typ mapování | Cílové pole
----|---|---
-HIERARCHYTYPE | \> | msdyn\_hierarchypurposetypename
-HIERARCHYTYPE | \> | msdyn\_hierarchytype.msdyn\_name
-HIERARCHYPURPOSE | \>\> | msdyn\_hierarchypurpose
-IMMUTABLE | \>\> | msdyn\_immutable
-SETASDEFAULT | \>\> | msdyn\_setasdefault
-
-## <a name="internal-organization-hierarchy-type"></a>Typ interní organizační hierarchie
-
-Tato šablona poskytuje jednosměrnou synchronizaci entity Typ hierarchie organizace z Finance and Operations do dalších aplikací Dynamics 365.
-
-<!-- ![architecture image](media/dual-write-type.png) -->
-
-Zdrojové pole | Typ mapování | Cílové pole
----|---|---
-NÁZEV | \> | msdyn\_name
-
-## <a name="internal-organization-hierarchy"></a>Interní organizační hierarchie
-
-Tato šablona poskytuje jednosměrnou synchronizaci entity Publikovaná hierarchie organizace z Finance and Operations do dalších aplikací Dynamics 365.
-
-<!-- ![architecture image](media/dual-write-organization.png) -->
-
-Zdrojové pole | Typ mapování | Cílové pole
----|---|---
-VALIDTO | \> | msdyn\_validto
-VALIDFROM | \> | msdyn\_validfrom
-HIERARCHYTYPE | \> | msdyn\_hierarchytypename
-PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentpartyid
-CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childpartyid
-HIERARCHYTYPE | \> | msdyn\_hierarchytypeid.msdyn\_name
-CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childid.msdyn\_partynumber
-PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentid.msdyn\_partynumber
+[!include [Organization hierarchy - published](dual-write/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
 
 ## <a name="internal-organization"></a>Interní organizace
 
 Informace o interní organizaci v Common Data Service pocházejí ze dvou entit, **provozní jednotka** a **právnická osoba**.
 
-<!-- ![architecture image](media/dual-write-operating-unit.png) -->
+[!include [Operating unit](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
 
-<!-- ![architecture image](media/dual-write-legal-entities.png) -->
+[!include [Legal entities](dual-write/LegalEntities-msdyn-internalorganizations.md)]
 
-### <a name="operating-unit"></a>Provozní jednotka
+[!include [Legal entities](dual-write/LegalEntities-Companies.md)]
 
-Zdrojové pole | Typ mapování | Cílové pole
----|---|---
-LANGUAGEID | \> | msdyn\_languageid
-NAMEALIAS | \> | msdyn\_namealias
-NÁZEV | \> | msdyn\_name
-PARTYNUMBER | \> | msdyn\_partynumber
-OPERATINGUNITTYPE | \>\> | msdyn\_type
-
-### <a name="legal-entity"></a>Právnická osoba
-
-Zdrojové pole | Typ mapování | Cílové pole
----|---|---
-NAMEALIAS | \> | msdyn\_namealias
-LANGUAGEID | \> | msdyn\_languageid
-NÁZEV | \> | msdyn\_name
-PARTYNUMBER | \> | msdyn\_partynumber
-žádná | \>\> | msdyn\_type
-LEGALENTITYID | \> | msdyn\_companycode
-
-## <a name="company"></a>Společnost
-
-Poskytuje obousměrnou synchronizaci informací o právnické osobě (společnosti) mezi Finance and Operations a dalšími aplikacemi Dynamics 365.
-
-<!-- ![architecture image](media/dual-write-company.png) -->
-
-Zdrojové pole | Typ mapování | Cílové pole
----|---|---
-NÁZEV | = | cdm\_name
-LEGALENTITYID | = | cdm\_companycode

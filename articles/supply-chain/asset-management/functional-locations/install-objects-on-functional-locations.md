@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c585bce468f87a32204893ea20ce6954e92b0e38
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8619c6cde484c41ec01e96eb4626366f1955b5d4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571799"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811810"
 ---
 # <a name="install-assets-on-functional-locations"></a>Instalace majetku na funkčních místech
 
@@ -31,7 +31,7 @@ ms.locfileid: "2571799"
 
  
 
-Další krok po vytvoření struktur funkčních míst je instalace majetku do příslušných funkčních míst. Toto téma vysvětluje, jak nainstalovat majetek na tato funkční místa v modulu Správa majetku. Informace o způsobu vytvoření majetku naleznete v tématu [Majetek](../objects/introduction-to-objects.md).
+Další krok po vytvoření struktur funkčních míst je instalace majetku do příslušných funkčních míst. Toto téma vysvětluje, jak nainstalovat majetek na tato funkční místa v modulu Správa majetku. Informace o způsobu vytvoření majetku naleznete v tématu [Úvod do modulu Majetek](../objects/introduction-to-objects.md).
 
 Pokud jste vytvořili strukturu majetku, musí být celá struktura majetku nainstalována na funkčním místě. Proto lze na funkčním místě vybrat pouze nadřazený majetek (majetek nejvyšší úrovně, který nemá žádný nadřazený majetek). Všechny související podřízené majetky (dílčí majetky) budou také instalovány do funkčního místa. Při instalaci majetku do funkčního místa mohou být do nich automaticky převedeny finanční dimenze funkčního místa, a to v závislosti na nastavení typu funkčního místa, které je vybráno pro funkční místo. Další informace o nastavení typů funkčního místa naleznete v tématu [Typy funkčního místa](../setup-for-functional-locations/functional-location-types.md).
 

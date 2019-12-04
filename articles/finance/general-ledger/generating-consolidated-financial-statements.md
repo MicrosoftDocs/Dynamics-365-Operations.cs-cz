@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176743"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770682"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Vytváření konsolidovaných finančních výkazů
 
@@ -45,15 +45,15 @@ Následující obrázek znázorňuje použití definice organizačního stromu v
 
 Konsolidovaná sestava na následujícím obrázku znázorňuje, že když použijete organizační strom spolu definicí sestavy, každou společnost můžete zobrazit zvlášť. Konsolidované částky jsou zobrazeny na souhrnné úrovni.
 
-![Souhrnná úroveň konsolidované částky](./media/consolidate-amount-summary-level.png "Souhrnná úroveň konsolidované částky")
+![Úroveň souhrnu konsolidované částky](./media/consolidate-amount-summary-level.png "Úroveň souhrnu konsolidované částky")
 
 Můžete také vytvořit víceúrovňový organizační strom s tolika úrovněmi, kolik potřebujete. Následující obrázek znázorňuje víceúrovňový organizační strom, který obsahuje shrnutí podle celosvětové oblasti.
 
-![Definice víceúrovňového organizačního stromu se shrnutími podle oblasti](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Definice víceúrovňového organizačního stromu se shrnutími podle oblasti")
+![Definice stromu víceúrovňového vykazování se zahrnutím podle oblasti](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Definice stromu víceúrovňového vykazování se zahrnutím podle oblasti")
 
 Následující obrázek znázorňuje víceúrovňový organizační strom, který obsahuje shrnutí podle funkce.
 
-![Definice víceúrovňového organizačního stromu se shrnutími podle funkce](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Definice víceúrovňového organizačního stromu se shrnutími podle funkce")
+![Definice stromu víceúrovňového vykazování se zahrnutím podle funkce](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Definice stromu víceúrovňového vykazování se zahrnutím podle funkce")
 
 ### <a name="viewing-companies-side-by-side"></a>Zobrazení společností vedle sebe
 Mnozí zákazníci preferují sestavy, ve kterých se společnosti zobrazují vedle sebe a kde sloupce zobrazují celkové konsolidované součty. Tento formát lze jednoduše použít po vytvoření organizačního stromu. Zde jsou hlavní kroky, jak zobrazit společnosti vedle sebe na konsolidovaných finančních výkazech.
@@ -69,14 +69,14 @@ Následující obrázek znázorňuje definici sloupce ve formátu vedle sebe.
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Konsolidace, které používají organizační struktury vytvořené právnických osob
 Organizační hierarchie, které obsahují dimenze nebo právnické osoby, dynamicky vytváří definice organizačního stromu v rámci finančního výkaznictví. Snadným způsobem, jak zefektivnit konsolidace, je přidat organizační hierarchii do vaší sestavy v rámci finančního výkaznictví. Podle data sestavy pak finanční výkaznictví vybere organizační hierarchii k datu účinnosti nebo před datem účinnosti, jak je znázorněno na následujícím obrázku.
 
-![Dynamické vytvoření definice organizačního stromu](./media/dynamically-create-reporting-tree-definitions.png "Dynamické vytvoření definice organizačního stromu")
+![Dynamické vytváření definice stromu výkaznictví](./media/dynamically-create-reporting-tree-definitions.png "Dynamické vytváření definice stromu výkaznictví")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Konsolidace zahrnující eliminace
 Transakce eliminací jsou běžnou součástí procesu konsolidace. V tomto příkladu je během konsolidace eliminováno pět účtů: 142600 211400, 401420, 401180 a 510820. Společnosti mohou mít mezi vnitropodnikové účty nastaveny různě. Některé společnosti například používají jako poslední číslici 9, pokud je účet používán pro vnitropodnikové transakce. Bez ohledu na metodu – pokud znáte vnitropodnikové účty, na svých konsolidovaných finančních výkazech můžete zobrazovat eliminace.
 
 Následující obrázek znázorňuje definici sloupce pro konsolidovanou výsledovku. Tři vnitropodnikové účty zisků a ztrát jsou definovány pro každou společnost s použitím filtru dimenze. Sloupec D obsahuje eliminace účtů pouze pro společnost USMF a sloupec E obsahuje eliminace pouze pro společnost DEMF. Sloupce E i D jsou nastaveny tak, aby **nebyly** vytištěny ve finančním výkazu.
 
-![Definice sloupce pro konsolidovanou výsledovku](./media/column-definition-consolidated-income-statement.png "Definice sloupce pro konsolidovanou výsledovku")
+![Definice sloupce - konsolidovaný výpis příjmů](./media/column-definition-consolidated-income-statement.png "Definice sloupce - konsolidovaný výpis příjmů")
 
 Ve vygenerované sestavě jsou eliminované částky vypočteny ve sloupcích F, G a H a jejich součet je uveden ve sloupci I. Sloupec J zobrazuje konsolidované částky. Tyto konsolidované částky vylučují eliminace pro společnosti USMF, USRT a DEMF.
 
@@ -85,7 +85,7 @@ Ve vygenerované sestavě jsou eliminované částky vypočteny ve sloupcích F,
 
 Následující obrázek znázorňuje konsolidovanou sestavu.
 
-![Konsolidovaná sestava výsledovky](./media/consolidated-report-income-statement.png "Konsolidovaná sestava výsledovky")
+![Konsolidovaná sestava výpisu příjmů](./media/consolidated-report-income-statement.png "Konsolidovaná sestava výpisu příjmů")
 
 Zda používáte účty, dimenze nebo obojí, finanční výkaznictví vám umožňuje filtrovat položky eliminace pomocí funkce filtrování dimenzí.
 
@@ -98,7 +98,7 @@ V definici organizačního stromu zadejte do sloupce **Zahrnutí (%)** (sloupec 
 > [!NOTE]
 > Tohle procento vlastnictví můžete použít na libovolnou organizační jednotku a nikoli pouze na úrovni společnosti. 
 
-![Použití procenta definice organizačního stromu](./media/Using-reporting-tree-definition-percentage.png "Použití procenta definice organizačního stromu")
+![Procento použití definice organizačního stromu](./media/Using-reporting-tree-definition-percentage.png "Procento použití definice organizačního stromu")
 
 Ve vygenerované sestavě bude sestava společnosti Contoso Germany zobrazovat 100 procent prodejní částky a 80 procent částky bude přiděleno a zahrnuto na konsolidované úrovni pro prodej.
 
@@ -129,7 +129,7 @@ Do každého řádku v definici řádku lze pro každou jedinečnou účtovou os
 
 Organizační strom můžete použít k definování, který odkaz na finanční dimenze z definice řádku se použije na jednotlivé společnosti. Ve sloupci E vyberte definici řádku a poté vyberte příslušný odkaz na řádek ve sloupci F, jak je ukázáno na následujícím obrázku.
 
-![Použitá definice odkazu na řádek finančních dimenzí](./media/link-financial-dimensions-row-definition-used.png "Použitá definice odkazu na řádek finančních dimenzí")
+![Propojení použité definice řádku finančních dimenzí](./media/link-financial-dimensions-row-definition-used.png "Propojení použité definice řádku finančních dimenzí")
 
 > [!TIP]
 > Při vytváření odkazů na finanční dimenze použijte popisy k identifikaci společností, na které se vztahují jednotlivé odkazy. Tímto způsobem můžete snadněji vybrat správnou společnost při vytváření organizačního stromu. Ve definici sloupce vám pole **Organizační jednotka** umožňuje omezit každý sloupec na jednotku organizačního stromu, takže můžete zobrazit data vedle sebe. Pokud pro sloupec neoznačíte konkrétní společnost, budou zobrazeny konsolidovaná data pro všechny společnosti.
@@ -171,7 +171,7 @@ V hlavním účtu musejí být pro každý účet nastavena pole **Typ směnnéh
 - V poli **Typ směnného kurzu finančního výkaznictví** vyberte typ směnného kurzu, který obsahuje měny a směnné kurzy, které mají být použity pro účet. Tato tabulka měn a směnné kurzy se použijí pro skutečná data v rámci finančního výkaznictví.
 - V poli **Typ převodu měny** vyberte metodu pro výpočet směnného kurzu pro účet. Tato metoda měny se používá pro skutečná a rozpočtová data v rámci finančního výkaznictví.
 
-![Hlavní účty finanční výkaznictví](./media/Financial-reporting-main-accounts.png "Hlavní účty finanční výkaznictví")
+![Hlavní účty finančního výkaznictví](./media/Financial-reporting-main-accounts.png "Hlavní účty finančního výkaznictví")
 
 Pro data rozpočtu, data kontroly rozpočtu a data plánování rozpočtu je definován typ směnného kurzu na stránce **Hlavní kniha**. Tato tabulka se použije pro vytáhnutí směnných kurzů a dále se použije typ převodu měny přiřazený k účtu.
 
@@ -202,15 +202,15 @@ Možnosti definice sestavy umožňují sestavu snadno převést na všechny měn
 
 - Použijte stránku **Vyrovnání rozdílů po zaokrouhlení** v definici řádku, jak je ukazuje následující obrázek.
 
-    ![Úprava převodu měny v podobě vyrovnání rozdílů po zaokrouhlení](./media/Currency-translation-adjustment-rounding-adjustments.png "Úprava převodu měny v podobě vyrovnání rozdílů po zaokrouhlení")
+    ![Úpravy zaokrouhlení úprav měny](./media/Currency-translation-adjustment-rounding-adjustments.png "Úpravy zaokrouhlení úprav měny")
 
     Když zadáte řádek, který má zobrazovat vyrovnání rozdílů po zaokrouhlení (CTA), řádek celkového majetku, řádek celkových závazků a akciového jmění a prahovou hodnotu, která vám vyhovuje, finanční výkaznictví vypočítá daný rozdíl a umístí jej na požadovaný řádek. Vytvoří se řádek s názvem **Vyrovnání rozdílů po zaokrouhlení** a zobrazí po rozbalení, jak je ukázáno na následujícím obrázku.
 
-    ![Vyrovnání rozdílů po zaokrouhlení po rozbalení](./media/rounding-adjustment-drill-down.png "Vyrovnání rozdílů po zaokrouhlení po rozbalení")
+    ![Procházení úprav zaokrouhlení](./media/rounding-adjustment-drill-down.png "Procházení úprav zaokrouhlení")
 
 - Všechny účty umístí do rozsahu, od majetku po výdaje. Jak je uvedeno v následujícím obrázku, rozdíl bude stejná částka jako vyrovnání rozdílů po zaokrouhlení (CTA). Z toho vyplývá, že jej můžete použít jako kontrolní součet a máte jistotu, že na stránce pro vyrovnání rozdílů po zaokrouhlení nebudou chybět žádné zůstatky na účtu.
 
-    ![Kontrola formuláře vyrovnání rozdílů po zaokrouhlení](./media/rounding-adjustment-form-check.png "Kontrola formuláře vyrovnání rozdílů po zaokrouhlení")
+    ![Kontrola formuláře – úprava zaokrouhlení](./media/rounding-adjustment-form-check.png "Kontrola formuláře – úprava zaokrouhlení")
 
 ### <a name="balance-calculation-approach"></a>Přístup k výpočtu zůstatku
 Chcete-li získat správně převedené částky při použití měn, finanční výkaznictví používá následující metody výpočtu zůstatků:
@@ -221,6 +221,6 @@ Chcete-li získat správně převedené částky při použití měn, finanční
 
 ## <a name="additional-resources"></a>Další zdroje
 
-Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Finanční konsolidace a převod měny](./financial-consolidations-currency-translation.md).
+Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Přehled finanční konsolidace a převodu měny](./financial-consolidations-currency-translation.md).
 
-Další informace o zadání podrobností online konsolidace získáte v části [Konsolidace online](./consolidate-online.md).
+Další informace o zadání podrobností online konsolidace získáte v části [Online finanční konsolidace](./consolidate-online.md).

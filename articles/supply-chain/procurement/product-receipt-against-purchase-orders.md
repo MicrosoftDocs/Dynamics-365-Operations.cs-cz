@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b01e7e8e79061c7a306f00f041413cc1c5185cfe
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2f39ce63b6d9d57e245fbdce27bd11a8cbc3eebf
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572260"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813401"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Příjemka produktu proti nákupním objednávkám
 
@@ -61,9 +61,9 @@ Přístup k této stránce je pomocí skupiny akci **Příjem** na stránce **N�
 
 [Přehled nákupních objednávek](purchase-order-overview.md)
 
-[Vytvoření nákupní objednávky](purchase-order-creation.md)
+[Vytváření nákupních objednávek](purchase-order-creation.md)
 
-[Potvrzení a odmítnutí nákupní objednávky](purchase-order-approval-confirmation.md)
+[Schválení a potvrzení nákupních objednávek](purchase-order-approval-confirmation.md)
 
 [Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
 

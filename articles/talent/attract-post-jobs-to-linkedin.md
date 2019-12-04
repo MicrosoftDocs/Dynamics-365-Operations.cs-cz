@@ -1,5 +1,5 @@
 ---
-title: Publikování pracovních míst na LinkedIn z aplikace Microsoft Dynamics 365 Talent - Attract
+title: Publikování pracovních míst na LinkedIn z aplikace Attract
 description: Toto téma vysvětluje postup použití aplikace Dynamics 365 Talent - Attract pro publikování pracovních míst na LinkedIn.
 author: andreabichsel
 manager: AnnBe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: e2b8065fe2521694efb30478a5a41676cff45127
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 782a2e5de6edf0e85c4d32a0910f5f3c01981a01
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551488"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832993"
 ---
-# <a name="post-jobs-to-linkedin-from-microsoft-dynamics-365-talent---attract"></a>Publikování pracovních míst na LinkedIn z aplikace Microsoft Dynamics 365 Talent - Attract
+# <a name="post-jobs-to-linkedin-from-attract"></a>Publikování pracovních míst na LinkedIn z aplikace Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 LinkedIn je nejvyšší světová síť profesionálů, která poskytuje přístup k nejlepším talentům. Microsoft Dynamics 365 Talent: Attract vám pomůže získat talenty, které potřebujete, a to tak, že vám umožnít publilkovat pracovní místa přímo z Attract na LinkedIn.
 
@@ -46,7 +46,7 @@ V následující tabulce jsou uvedeny akce, které lze provádět na LinkedIn v 
 
 Další informace o uživatelských rolích v Attract naleznete v tématu [Zabezpečení a správa rolí v aplikaci Attract](./security-attract.md).
 
-Pokud jste správce a potřebujete další informace o konfiguraci integrace LinkedIn s aplikací Attract, viz [Nastavení integrace s LinkedIn](./attract-admin-linkedin.md).
+Pokud jste správce a potřebujete další informace o konfiguraci integrace LinkedIn s aplikací Attract, viz [Nastavení integrace s LinkedIn pro Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md).
 
 Publikované pracovní nabídky na službě LinkedIn se objeví na živém webu LinkedIn. LinkedIn nemá žádné testovací prostředí pro publikování pracovních pozic. Proto se ujistěte, že nepublikujete žádné testovací úlohy omylem.
 
@@ -67,15 +67,15 @@ Pokud zájemci vyberou **Zobrazit** vedle vaší pracovní nabídky, zobrazí se
 
 Všechna publikování pracovních pozic prostřednictvím Attract jsou omezené výpisy. Další informace o omezeném výpisu na LinkedIn naleznete v tématu [Omezené seznamy vs. prémiové nabídky volných míst ke sbalení pracovních nabídek](https://www.linkedin.com/help/recruiter/answer/79049).
 
-Pokud máte potíže s publikováním prací na LinkedIn, informace naleznete v tématu [Odstraňování potíží s publikováním pracovních nabídek na LinkedIn](./attract-troubleshoot-linkedin.md).
+Pokud máte potíže s publikováním prací na LinkedIn, nahlédněte do části [Odstraňování problémů s integrací s LinkedIn a aplikací Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
 ## <a name="see-also"></a>Viz také
 
-[Často kladené otázky k řešení LinkedIn](./attract-linkedin-faq.md)
+[Časté dotazy týkající se integrace Attract s řešením LinkedIn](./attract-linkedin-faq.md)
 
-[Nastavení integrace s řešením LinkedIn](./attract-admin-linkedin.md)
+[Nastavení integrace s řešením LinkedIn pro aplikaci Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Vytvoření prací](./creating-jobs-attract.md)
+[Vytvoření, schválení a zveřejnění pracovních míst v aplikaci Attract](./creating-jobs-attract.md)
 
 [Zazdrojování kandidátů s využitím LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2922b00dffe8e99f8331d7aaa7e2f1b7dc4f9ea6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 405af4e3e122953bbfa74e7e91d2feef8f068708
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176816"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772621"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Proces nastavení rozšířeného odsouhlasení banky
 
@@ -31,7 +31,7 @@ ms.locfileid: "2176816"
 
 Funkce Rozšířené odsouhlasení banky umožňuje importovat elektronické bankovní výpisy a automaticky je odsouhlasit z bankovních transakcí v aplikaci Microsoft Dynamics 365 Finance. Tento článek vysvětluje nastavení procesů odsouhlasení.  
 
-Existuje několik prvků, které musí být nastaveny před použitím funkce Rozšířené bankovního odsouhlasení. Další informace o nastavení importu bankovního výpisu naleznete v tématu [Nastavení procesu importu výpisu banky](set-up-advanced-bank-reconciliation-import-process.md).  Požadavky pro nastavení procesu odsouhlasení jsou podrobně popsány níže.
+Existuje několik prvků, které musí být nastaveny před použitím funkce Rozšířené bankovního odsouhlasení. Další informace o nastavení importu bankovního výpisu naleznete v tématu [Nastavení procesu importu rozšířené bankovního odsouhlasení](set-up-advanced-bank-reconciliation-import-process.md).  Požadavky pro nastavení procesu odsouhlasení jsou podrobně popsány níže.
 
 ## <a name="transaction-codes"></a>Kódy transakce
 Kódy transakcí lze použít jako součást pravidel párování pro odsouhlasení banky. Kódy transakcí vám pomohou spárovat pouze stejné typy transakcí mezi aplikací Finance a vaším bankovním výpisem. Abyste mohli provést tento typ párování, je nutné nejprve definovat typy transakcí pro bankovní transakce z aplikace Finance a potom namapovat tyto typy na kódy transakcí výpisu používané vaší bankou. Typy transakcí pro bankovní transakce jsou definovány na stránce **Typ bankovní transakce**. To je také místo, kde můžete definovat hlavní účet pro účtování přiřazený k tomuto typu transakce. 

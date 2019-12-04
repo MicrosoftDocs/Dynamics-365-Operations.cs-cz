@@ -1,5 +1,5 @@
 ---
-title: Která verze aplikace Microsoft Dynamics 365 Talent - Attract
+title: Volba verze aplikace Attract
 description: Toto téma obsahuje informace o možnostech v různých verzích aplikace Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 54f206aed196be5bbfa0de5b632f20519c2680ea
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 701ce0d710c20deb793534581c276edf02426a4b
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550429"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833154"
 ---
-# <a name="which-version-of-microsoft-dynamics-365-talent---attract"></a>Která verze aplikace Microsoft Dynamics 365 Talent - Attract
+# <a name="choose-a-version-of-attract"></a>Volba verze aplikace Attract
 
-[!include[banner](../includes/banner.md)]
+[[!include [banner](includes/banner.md)]
 
 Verze aplikace Microsoft Dynamics 365 Talent: Attract, která je pro vás správná, závisí na velikosti a potřebách vaší organizace. Základní verze Attract obsahuje podmnožinu funkcí, která je zaměřena na menší týmy nebo organizace, kde je primárním uživatelem manažer náboru. Můžete začít používat základní verzi Attract s jednou nebo více licencemi.
 

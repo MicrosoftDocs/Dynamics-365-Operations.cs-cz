@@ -1,5 +1,5 @@
 ---
-title: Sledování zdrojů pro profily a žádosti kandidátů
+title: Sledování zdrojů kandidátů v aplikaci Attract
 description: Toto téma obsahuje informace o sledování zdroje pro profily kandidáta a žádosti.
 author: hachandr
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5b368e97a716cd1ce4f668c2a97326877a2d3dff
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 8860f508eebc377042c4e101eeb08a14a737ba0c
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551880"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832637"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Sledování zdrojů pro profily a žádosti kandidátů
+# <a name="track-candidate-sources-in-attract"></a>Sledování zdrojů kandidátů v aplikaci Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 > [!NOTE] 
 > Funkce pojednávaná v tomto tématu je k dispozici jako součást verze Preview. Obsah a funkce se mohou změnit. Chcete-li použít tuto funkci, požádejte správce o její povolení pomocí **Nastavení pro správu** v aplikaci Attract. Budoucí verze nabídne sestavy sledování zdrojů. Další informace naleznete v tématu [Přístup k funkcím Preview v aplikaci Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

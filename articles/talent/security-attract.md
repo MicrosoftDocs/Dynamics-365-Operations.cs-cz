@@ -1,5 +1,5 @@
 ---
-title: Správa rolí a zabezpečení v aplikaci Attract
+title: Nastavení uživatelských oprávnění v aplikaci Attract
 description: Toto téma poskytuje informace o zabezpečení datových entit v Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7db2ac241db121f07eb3524c7c5c9a8f64e78537
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: efac512cfa07bb2183f06b8be45f74bef9af0767
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551419"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832691"
 ---
-# <a name="security-and-role-management-in-attract"></a>Správa rolí a zabezpečení v aplikaci Attract
+# <a name="set-user-permissions-in-attract"></a>Nastavení uživatelských oprávnění v aplikaci Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract vyžaduje zabezpečení na základě rolí. Jinými slovy, přístup není udělován jednotlivým uživatelům, nýbrž rolím zabezpečení, ke kterým jsou uživatelé přiřazeni. Uživatel, který je přiřazen k roli zabezpečení, má přístup k sadě oprávnění, která je přidružena k této roli.
 
@@ -52,7 +52,7 @@ Následující části poskytují stručný popis každé role. Tabulky dále v 
 
 ## <a name="administrator"></a>Správce
 
-Uživatelé, kteří jsou přiřazeni k roli správce, mají přístup ke všem datům v aplikaci Attract a mohou je měnit. Správci mohou vytvářet, číst, aktualizovat a odstranit data. Mají také přístup do centra pro správu, kde mohou konfigurovat aplikaci Attract a nastavit informace o uživateli. Doporučujeme přiřadit alespoň jednu osobu k roli správce. Ve výchozím nastavení je správce prostředí v Microsoft PowerApps nastaven jako správce v aplikaci Attract. Pokud jste se přihlásili ke zkušební verzi aplikace Attract, role správce je vám automaticky přiřazena. V současné době pro vytváření prací musí mít uživatelé, kteří mají roli administrátora, také roli náborového pracovníka nebo náborového manažera.
+Uživatelé, kteří jsou přiřazeni k roli správce, mají přístup ke všem datům v aplikaci Attract a mohou je měnit. Správci mohou vytvářet, číst, aktualizovat a odstranit data. Mají také přístup do centra pro správu, kde mohou konfigurovat aplikaci Attract a nastavit informace o uživateli. Doporučujeme přiřadit alespoň jednu osobu k roli správce. Ve výchozím nastavení je správce prostředí v Microsoft Power Apps nastaven jako správce v aplikaci Attract. Pokud jste se přihlásili ke zkušební verzi aplikace Attract, role správce je vám automaticky přiřazena. V současné době pro vytváření prací musí mít uživatelé, kteří mají roli administrátora, také roli náborového pracovníka nebo náborového manažera.
 
 ## <a name="hiring-manager"></a>Náborový manažer
 

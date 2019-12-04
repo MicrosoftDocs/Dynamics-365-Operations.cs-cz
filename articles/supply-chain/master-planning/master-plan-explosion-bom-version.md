@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f3c800d96805df38a2e31018f2d6c305e3ed7da
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dbdfc169365cb73e13383b11efcd8983aef4bbca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564570"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815311"
 ---
 # <a name="explosion-of-a-bom-version"></a>Rozpad verze kusovníku
 
@@ -42,9 +42,9 @@ Následující obrázek ilustruje, jakým způsobem postupuje rozpad poptávky p
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Hlavní plánování – jak se určuje verze kusovníku](master-plan-bom-version-determined.md)
+[Určení verze kusovníku](master-plan-bom-version-determined.md)
 
-[Hlavní plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
+[Přehled hlavního plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
 
 
 

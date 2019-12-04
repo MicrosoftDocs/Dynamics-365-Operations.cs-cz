@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c526bc42595c20024016d0d7da78b8638b0daa4b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6e6b8d6243c1f7c5831baaee91baf38d51e0c26
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185237"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769990"
 ---
 # <a name="practice-manager-power-bi-content"></a>Obsah manažera školení v Power BI
 
@@ -58,7 +58,7 @@ Grafy a dlaždice ve všech těchto sestavách můžete filtrovat a ukotvit na �
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
 
-Následující data se používají k naplnění stránek sestavy v obsahu **Manažer školení** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
+Následující data se používají k naplnění stránek sestavy v obsahu **Manažer školení** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
 
 V následujících oddílech jsou popsána agregační měření, která se používají v každé entitě.
 

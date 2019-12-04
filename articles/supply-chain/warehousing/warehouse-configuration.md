@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: aa503f2ce3ae8ff6b221ea1d26a1c62d0ba37646
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653411"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814897"
 ---
 # <a name="warehouse-configuration-overview"></a>Přehled konfigurace skladu
 
@@ -31,7 +31,8 @@ ms.locfileid: "2653411"
 
 Tento článek popisuje konfiguraci skladu. Obsahuje informace o postupu při povolení rozvržení skladu a procesů skladu.
 
-**Poznámka:** Tento článek se vztahuje k funkcím v modulu **Řízení skladu** (pokročilé uskladnění). Nevztahuje se na funkce skladu v modulu **Řízení zásob**.
+> [!NOTE]
+> Tento článek se vztahuje k funkcím v modulu **Řízení skladu** (pokročilé uskladnění). Nevztahuje se na funkce skladu v modulu **Řízení zásob**.
 
 ## <a name="warehouse-layout"></a>Rozvržení skladu
 Systému správy skladu v aplikaci Supply Chain Management umožňuje flexibilní způsoby definování rozvržení skladu podle měnících se potřeb, aby bylo možné dosáhnout optimální efektivity skladu.
@@ -114,7 +115,7 @@ Chcete-li usnadnit a urychlit definování akcí, které jsou přidruženy k jed
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Konfigurujte umístění ve skladu s povoleným WMS (Průvodce záznamů úloh)](tasks/configure-locations-wms-enabled-warehouse.md)
+[Konfigurace umístění ve skladu s povolenými procesy řízení skladu](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 

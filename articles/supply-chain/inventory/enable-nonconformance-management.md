@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc1e1eb9d8ede1d07a873ca98a1c385cf0126c3f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5985042567a29f5a9cac38912cbf9c3c0eb9c8bd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557516"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814460"
 ---
 # <a name="nonconformance-management"></a>Správa neshod
 
@@ -49,8 +49,8 @@ Pokud chcete zapnout správu neshody, postupujte takto:
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Vytvoření a zpracování neshody (Průvodce záznamem úloh)](tasks/create-process-non-conformance.md)
+[Vytvoření a zpracování neshody](tasks/create-process-non-conformance.md)
 
 [Procesy správy kvality](quality-management-processes.md)
 
-[Nastavení předpokladů pro správu neshody (Průvodce záznamem úloh)](tasks/set-up-prerequisites-nonconformance-management.md)
+[Nastavení předpokladů pro správu neshody](tasks/set-up-prerequisites-nonconformance-management.md)

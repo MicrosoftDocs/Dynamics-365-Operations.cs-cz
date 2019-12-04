@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7c8831203ae30991ff8acf1926aafc2d1839aeb2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c91a3b7e28bc55046ff6eeb37a5fddc8637aa230
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251263"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773304"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management
 
@@ -40,7 +40,7 @@ Toto téma se věnuje šablonám a základním úlohám, které se používají 
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
-Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu PowerApps](https://preview.admin.powerapps.com/dataintegration). Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
+Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu Power Apps](https://preview.admin.powerapps.com/dataintegration). Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
 
 Ke spuštění synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management slouží následující šablony a základní úkoly:
 

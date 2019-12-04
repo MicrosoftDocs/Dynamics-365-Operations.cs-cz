@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cce822f76323b6ce514d3793ce19f0160957e7a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558212"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813379"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Domovská stránka modulu Zásobování a zdroje
 
@@ -39,11 +39,11 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 -   [Nastavení oprávnění pro objednávání produktů jménem jiného uživatele](tasks/set-up-permissions-ordering-products.md)
 
 ## <a name="requests-for-quotation"></a>Požadavky na nabídku
--   [Požadavek na nabídky](request-quotations.md)
--   [Vytvořit požadavek na nabídku](tasks/create-request-quotation.md)
--   [Zadejte a porovnejte požadavky na nabídku a zvolte nejlepší smlouvy](tasks/enter-compare-rfq-bids-award-contracts.md)
+-   [Přehled požadavků na nabídku](request-quotations.md)
+-   [Vytvoření požadavku na nabídku](tasks/create-request-quotation.md)
+-   [Zadání a porovnání nabídek pro požadavek na nabídku a přidělení smlouvy](tasks/enter-compare-rfq-bids-award-contracts.md)
 -   [Vytvoření metody hodnocení pro požadavky na nabídku](tasks/create-scoring-method-rfqs.md)
--   [Vytvoření typů oslovení a způsobu hodnocení pro požadavky na nabídku](tasks/create-solicitation-types-scoring-criteria-rfqs.md)
+-   [Vytvoření typů oslovení a kritérií hodnocení pro požadavky na nabídku](tasks/create-solicitation-types-scoring-criteria-rfqs.md)
 
 ## <a name="vendor-management-and-collaboration"></a>Správa a spolupráce dodavatelů
 -   [Nastavení účtů dodavatele](set-up-vendor-accounts.md)
@@ -58,12 +58,12 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 -   [Ukázkový skript příchozích zásob dodávky pro Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)
 -   [Sledování zásob dodávky s použitím dodavatelské spolupráce](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Spolupráce s dodavateli pomocí portálu pro dodavatele](collaborate-vendors-vendor-portal.md) (pouze verze Dynamics AX z února a května 2016)
--   [Konfigurace zabezpečení pro uživatele na portálu pro dodavatele](configure-security-vendor-portal-users.md) (pouze verze Finance and Operations z února a května 2016)
--   [Mobilní pracovní prostor dodavatelské spolupráce pro aplikaci Microsoft Dynamics 365 for Finance and Operations](vendor-collaboration-mobile-workspace.md)
+-   [Zabezpečení pro uživatele na portálu pro dodavatele](configure-security-vendor-portal-users.md) (pouze verze Finance and Operations z února a května 2016)
+-   [Mobilní pracovní prostor dodavatelské spolupráce](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Správa produktů nákupu
--   [Zásobovací katalogy](procurement-catalogs.md)
--   [Vytvoření zásobovacího katalogu](tasks/create-procurement-catalog.md)
+-   [Přehled zásobovacích katalogů](procurement-catalogs.md)
+-   [Vytváření nákupních objednávek](tasks/create-procurement-catalog.md)
 -   [Import katalogů dodavatele](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (příspěvek blogu)
 -   [Nastavení hierarchie kategorií zásobování](tasks/set-up-procurement-category-hierarchy.md)
 -   [Nastavení zásad pro hierarchie kategorie zásobování](tasks/set-up-policies-procurement-category-hierarchies.md)
@@ -72,9 +72,9 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 ## <a name="procurement"></a>Zásobování
 -   [Přehled nákupních objednávek](purchase-order-overview.md)
 -   [Vytvoření nákupní objednávky](purchase-order-creation.md)
--   [Potvrzení a odmítnutí nákupní objednávky](purchase-order-approval-confirmation.md)
+-   [Schválení a potvrzení nákupních objednávek](purchase-order-approval-confirmation.md)
 -   [Vytvoření nákupní objednávky](tasks/create-purchase-order.md)
--   [Vytvoření opakující se nákupní objednávky](tasks/create-repeat-purchase-order.md)
+-   [Vytvoření opakované nákupní objednávky](tasks/create-repeat-purchase-order.md)
 -   [Vytvoření nákupní objednávky z prodejní objednávky](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 -   [Vytvoření nákupní objednávky pro jednorázového dodavatele](tasks/create-purchase-order-one-time-supplier.md)
 -   [Vytvoření nákupní objednávky s plánem dodávek](tasks/create-purchase-order-delivery-schedule.md)
@@ -99,11 +99,8 @@ Zásobování a zdroje zahrnují všechny kroky od identifikace potřeby produkt
 -   [Zaznamenání příjmu zboží na nákupní objednávce](tasks/record-receipt-goods-purchase-order.md)
 -   [Workflow nákupního požadavku](purchase-requisitions-workflow.md)
 -   [Definování workflowů pracovních postupů pro nákupní žádanky](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (dokumentace)
--   [Zásady nákupu](purchase-policies.md)
+-   [Přehled zásad nákupu](purchase-policies.md)
 -   [Vytvoření zásad nákupu](tasks/create-purchasing-policies.md)
-
-
-
 
 
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9afa98156c58d10c19454430769a3d60343661dc
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 654685a382ca5f3f462ad8a9c506b51b52c3758c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550950"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811642"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Použití kurzu pro Regression Suite Automation Tool
 
@@ -44,7 +44,7 @@ Další informace o této funkci naleznete v tématu [Úprava existujícího zá
 
 ### <a name="derived-test-case"></a>Odvozený testovací případ
 
-1. Spusťte Regression Suite Automation Tool (RSAT) a vyberte oba testovací případy, které jste vytvořili v [Nastavení a instalace nístroje Regression Suite Automation Tool](./hol-set-up-regression-suite-automation-tool.md).
+1. Spusťte Regression Suite Automation Tool (RSAT) a vyberte oba testovací případy, které jste vytvořili v [kurzu Nastavení a instalace nástroje Regression Suite Automation Tool](./hol-set-up-regression-suite-automation-tool.md).
 2. Vyberte **Nový \> Odložit testovací případ**.
 
     ![Vytvoření příkazu odvozeného testovacího případu v nabídce Nový](./media/use_rsa_tool_01.png)

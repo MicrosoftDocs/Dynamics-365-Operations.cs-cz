@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 124609041163bbcaf1b86a6964fa3f56fcd8f755
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: d3cf2b82470887ee617704b72e47a53d299911e3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658753"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811524"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -112,15 +112,12 @@ Jsou k dispozici následující nástroje na panelu nástrojů **Přizpůsobení
 
 - Použijte nástroj **Vybrat** k výběru a změně vlastností prvku. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **vybrat** a pak vyberte požadovaný prvek. Při výběru prvku se otevře okno vlastností prvku a můžete změnit jakékoli vlastnosti pro daný prvek. Proces můžete opakovat pro další prvky, které je možné přizpůsobit na této stránce. Všimněte si, že některé vlastnosti přizpůsobení nemusí být v některých scénářích k dispozici. Nemůžete například zamknout pole, které je povinné.
 - Chcete-li skrýt prvek na stránce, zvolte nástroj **Skrýt**. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **Skrýt** a pak vyberte požadovaný prvek ke skrytí. Když použijete nástroj **Skrýt**, všechny prvky, které jsou nyní skryté, jsou viditelné a jsou zobrazeny v šedém kontejneru. Poté můžete prvek zviditelnit jeho výběrem. Chcete-li vidět, jak bude stránka vypadat po skrytí prvků, přepněte do jiného nástroje pro individuální nastavení.
-
-    Můžete skrýt povinná pole a části, které obsahují povinná pole. To vám umožňuje vytvářet zjednodušené rozhraní, kde nejsou povinná pole zobrazená, pokud mají výchozí hodnoty vyplněné obchodní logikou. Skrytá povinná pole se dočasně zobrazí, pokud budou při pokusu uživatele o uložení stránky prázdná.
-
-- Použijte nástroj **Přidat pole** pro přidání pole na stránku. Použijete-li tento nástroj, můžete přidat pouze pole, která jsou součástí definice stránky. Informace o postupu při vytváření nových polí, které nejsou součástí aktuální definice stránky, naleznete v tématu [Vlastní pole](user-defined-fields.md). Po výběru tlačítka **Přidat pole** na panelu nástrojů je nutné nejprve vybrat skupinu nebo oblast, kam chcete pole přidat. Dialogové okno zobrazí seznam polí souvisejících se zvolenou skupinou nebo oblastí. V dialogovém okně vyberte jedno nebo více polí pro přidání a zvolte **Vložit**. Chcete-li odebrat pole, které jste dříve přidali, opakujte proces, ale v dialogovém okně zrušte výběr pole.
+- Použijte nástroj **Přidat pole** pro přidání pole na stránku. Použijete-li tento nástroj, můžete přidat pouze pole, která jsou součástí definice stránky. Informace o postupu při vytváření nových polí, které nejsou součástí aktuální definice stránky, naleznete v tématu [Vytvoření a práce s vlastními poli](user-defined-fields.md). Po výběru tlačítka **Přidat pole** na panelu nástrojů je nutné nejprve vybrat skupinu nebo oblast, kam chcete pole přidat. Dialogové okno zobrazí seznam polí souvisejících se zvolenou skupinou nebo oblastí. V dialogovém okně vyberte jedno nebo více polí pro přidání a zvolte **Vložit**. Chcete-li odebrat pole, které jste dříve přidali, opakujte proces, ale v dialogovém okně zrušte výběr pole.
 - Zvolte nástroj pro **Přesunutí**, pokud chcete přesunout prvek na jiné místo v rámci aktuální skupiny prvků. Všimněte si, že prvek nelze přesunout mimo nadřazenou skupinu. Chcete-li použít tento nástroj, vyberte na panelu nástrojů tlačítko **Přesunout** a pak vyberte požadovaný prvek k přesunutí. Při výběru prvku aplikace kontroluje stránku a určuje místa, do nichž lze prvek přesunout. Tato umístění se nazývají *zóny přetažení*. Když přetahujete prvek z aktuální skupiny, každá zóna k přetažení je zobrazena jako vybarvená a tučná oblast, kam lze prvek přetáhnout.
 - Použijte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Když na panelu nástrojů vyberete tlačítko **Přeskočit**, všechny prvky, které jsou nyní přeskočené, jsou viditelné a jsou zobrazeny v šedém kontejneru. Můžete interaktivně odebrat nebo přidat pole do pořadí polí.
 - Použijte nástroj **Zobrazit v záhlaví**, když chcete zobrazit v oddílu souhrnu pevné záložky prvek. Když vyberete na panelu nástrojů tlačítko **Zobrazit v záhlaví**, všechna pole, která byla vybrána jako souhrnná pole, jsou zobrazena v šedém kontejneru. Lze interaktivně přidat pole na souhrn pevné záložky a odstranit pole ze souhrnu pevných záložek výběrem pole.
 - Zvolte nástroj **Zamknout**, když chcete označit prvek jako upravitelný nebo neupravitelný. Když na panelu nástrojů vyberete tlačítko **Zamnkout**, všechny prvky, které jsou nyní neupravitelné, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak je můžete znovu udělat upravitelnými. Všimněte si, že některá pole jsou povinná a nelze je upravovat. Vedle těchto polí se zobrazí symbol visacího zámku.
-- Pomocí tlačítka **Přidat PowerApp** přidejte aplikaci vytvořenou pomocí Microsoft PowerApps na stránku. Podrobné informace o tom, jak aplikace PowerApps vkládá na stránku, najdete v části [Vložení PowerApps](embed-power-apps.md).
+- Pomocí tlačítka **Přidat PowerApp** přidejte aplikaci vytvořenou pomocí Microsoft PowerApps na stránku. Podrobné informace o tom, jak vložit aplikaci PowerApps na stránku, získáte v tématu [Vkládání PowerApps](embed-power-apps.md).
 - Zvolte nástroj **Vymazat**, pokud chcete obnovit výchozí nainstalovaný stav stránky. Vymaže všechna individuální nastavení na aktuální stránce. Neexistuje akce vrácení. Tento nástroj použijte pouze v případě, že jste si jisti, že chcete resetovat stránku.
 - Použijte nástroj **Import** k načtení přizpůsobení ze souboru, který jste vy nebo někdo jiný dříve vytvořili pro tuto stránku. Při importu přizpůsobení pro stránku můžete zvolit, zda mají být přidána nebo nahrazena všechna existující přizpůsobení pro danou stránku. Neexistuje akce vrácení. Po importu přizpůsobení je tedy nutné ručně vymazat nebo zrušit všechny požadované změny.
 - Použijte nástroj **Export** pro uložení vašeho přizpůsobení stránky do souboru. Individuální nastavení pak můžete sdílet s jinými uživateli. Tito uživatelé musí importovat soubor, který obsahuje vaše přizpůsobení stránky.

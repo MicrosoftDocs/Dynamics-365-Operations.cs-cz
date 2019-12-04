@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 578aa96de28758a4dfff9f8c5f7782705ddd5f70
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 65c5702514a3bc9fe943959fd4ca032eb19bfe4c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556039"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814437"
 ---
 # <a name="set-up-consignment"></a>Nastavení zásilky
 
@@ -97,7 +97,7 @@ Deník **Změny vlastnictví zásob**se používá k zaznamenání k přesunu vl
 [![Deník-změn-vlastnictví-zásob](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Dodavatelská spolupráce v procesech zásilky
-Pokud vaši dodavatelé využívají rozhraní dodavatelské spolupráce, mohou ho využívat ke sledování spotřeby zásob vaší společnosti. Další informace o nastavení dodavatelů pro použití dodavatelské spolupráce naleznete v tématu [Konfigurace zabezpečení pro uživatele portálu Spolupráce dodavatele](../procurement/configure-security-vendor-portal-users.md).
+Pokud vaši dodavatelé využívají rozhraní dodavatelské spolupráce, mohou ho využívat ke sledování spotřeby zásob vaší společnosti. Další informace o nastavení dodavatelů pro použití dodavatelské spolupráce naleznete v tématu [Zabezpečení uživatele dodavatelského portálu](../procurement/configure-security-vendor-portal-users.md).
 
 
 

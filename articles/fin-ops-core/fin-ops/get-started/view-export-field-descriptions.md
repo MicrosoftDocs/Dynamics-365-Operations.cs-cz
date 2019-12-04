@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 974f99632738cfc6eec5ff85965f4e9f9608a8b5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3e110c7fe6881825fe2b075c1795bc4f7e938da4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176909"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811500"
 ---
 # <a name="view-and-export-field-descriptions"></a>Zobrazení a export popisů polí
 
@@ -35,7 +35,7 @@ Některá složitější pole mají popisy. Tyto popisy se zobrazí při přesun
 
 Ne všechny stránky obsahují popis polí. Chceme poskytnout popisy pro složitější pole a nikoliv pro ty, kde je jejich použití zřejmé. Proto některé stránky nemají žádné popisy pole, některé stránky mají několik popisů a některé složitější stránky, například mnoho stránek s parametry, mají mnoho popisů.
 
-Pokud máte přístup k vývojovému prostředí, můžete přidat nový popis polí nebo stávající popisy přizpůsobit. Můžete například přidat informace specifické pro společnost do popisu pole. Další informace naleznete viz [Přizpůsobení nápovědy pole](../../dev-itpro/user-interface/customize-field-help.md).
+Pokud máte přístup k vývojovému prostředí, můžete přidat nový popis polí nebo stávající popisy přizpůsobit. Můžete například přidat informace specifické pro společnost do popisu pole. Další informace naleznete viz [Přizpůsobení popisů pole](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Zobrazení popisu pole v uživatelském rozhraní
 
@@ -107,4 +107,4 @@ Informace o různých způsobech, jak vyhledat stránky, naleznete v části "Hl
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Přizpůsobení nápovědy pole](../../dev-itpro/user-interface/customize-field-help.md)
+[Přizpůsobení popisů pole](../../dev-itpro/user-interface/customize-field-help.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f7d98d7ab9b375bfeb8784596753ca956f96e36
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e9f185ac95371bb841e55184650b8089040676c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189722"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772253"
 ---
 # <a name="accounting-distributions"></a>Rozúčtování
 
@@ -55,6 +55,6 @@ Obecné možnosti rozúčtování poskytují následující možnosti zpracován
 -   **Zobrazit distribuce** – zobrazení rozúčtování pro všechny řádky a peněžní částky v dokumentu. V tomto zobrazení nelze rozúčtování upravit.
 
 
-Více informací naleznete v části [Rozúčtování a záznamy v dílčí hlavní knize pro volné faktury](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
+Více informací naleznete v části [Rozúčtování a záznamy v dílčí hlavní knize pro faktury dodavatele](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
 
 

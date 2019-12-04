@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a73f49064911a2b28c742cfc19469f4bf95e74
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b77605070387871335c480e25cbe23af1155d6e8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569954"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812161"
 ---
 # <a name="asset-manufacturers-and-models"></a>Výrobci a modely majetku
 
@@ -45,7 +45,7 @@ Toto téma vysvětluje, jak nastavit výrobce majetku a související modely v m
 8. V poli **Typ majetku** vyberte typ majetku, ke kterému by se měl vztahovat model výrobce.
 
     > [!NOTE]
-    > Ve vyhledání **Typ majetku** můžete také nastavit vztahy pro typy majetku, výrobce a modely. Další informace naleznete v tématu [Vytvoření typu majetku](../setup-for-objects/object-types.md).
+    > Ve vyhledání **Typ majetku** můžete také nastavit vztahy pro typy majetku, výrobce a modely. Další informace naleznete v tématu [Typy majetku](../setup-for-objects/object-types.md).
 
     Na záložce **Podrobnosti** zobrazuje pole **Modely** počet modelů majetku nastavených pro vybraného výrobce majetku. Pole **Majetek** zobrazuje množství majetku, který používá vybraného výrobce.
     

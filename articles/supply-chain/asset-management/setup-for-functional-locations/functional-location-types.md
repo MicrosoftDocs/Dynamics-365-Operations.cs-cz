@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74ccda77a97d1e104940bb10a605d3ebbf45af75
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 0468cb0b1717b7cf0ccb391da09a4e7d788124f3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571247"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812207"
 ---
 # <a name="functional-location-types"></a>Typy funkčních míst
 
@@ -56,7 +56,7 @@ Nyní je vytvořen výchozí typ funkčního místa, který se použije pouze na
 3. Do pole **Typ funkčního místa** vložte ID typu funkčního místa a název do pole **Název**.
 4. Zvolte model životního cyklu v poli **Model životního cyklu funkčních míst**. Další informace o stavech životního cyklu funkčních míst a modelech životního cyklu naleznete v tématu [Stavy životního cyklu funkčních míst](../setup-for-functional-locations/functional-location-stages.md).
 5. Zvolte Ano na přepínacím tlačítku **Více majetků**, pokud má být možné instalovat několik majetků na funkční místo pomocí tohoto typu funkčního místa. Pokud vyberete možnost Ne, můžete pomocí tohoto typu funkčního místa nainstalovat pouze *jeden* majetek na funkční místo.
-6. Chcete-li, aby majetek byl nainstalován na funkčním místě tohoto typu pro automatické použití finančních dimenzí vztahujících se k funkčnímu místu, zvolte Ano na přepínacím tlačítku **Aktualizovat dimenzi majetku**. To znamená, že pokud změníte finanční dimenze ve formuláři [Funkční místo](../functional-locations/create-functional-locations.md) a funkční místo používá typ funkčního místa s tímto přepínacím tlačítkem nastaveným na Ano, finanční dimenze se automaticky aktualizují u všech majetků instalovaných v tomto funkčním místě.
+6. Chcete-li, aby majetek byl nainstalován na funkčním místě tohoto typu pro automatické použití finančních dimenzí vztahujících se k funkčnímu místu, zvolte Ano na přepínacím tlačítku **Aktualizovat dimenzi majetku**. To znamená, že pokud změníte finanční dimenze ve formuláři [Vytvoření funkčních míst](../functional-locations/create-functional-locations.md) a funkční místo používá typ funkčního místa s tímto přepínacím tlačítkem nastaveným na Ano, finanční dimenze se automaticky aktualizují u všech majetků instalovaných v tomto funkčním místě.
 7. Pole **Typ majetku** se používá v případě, že chcete automaticky vytvořit *jeden* majetek pro funkční místo se stejným ID a názvem jako vytvářené funkční místo. To může být důležité například v případě, že vytvoříte statické funkční místo, například budovu nebo potrubí. V takovém případě vyberte typ majetku, který chcete použít pro automaticky vytvořený majetek. Mějte na paměti, že pokud v tomto poli provedete výběr, musí být přepínací tlačítko nastaven na **Více majetků**.
 8. Na záložce s náhledem **Typy majetku** vyberte typy majetku, které mají souviset s typem funkčního místa. Vyberte **Přidat řádek** a vyberte typy majetku. Pokud sem přidáte typy majetku, mohou být pomocí tohoto typu funkčního místa na funkčním místě nainstalovány pouze majetky používající tyto typy majetku. Pokud nejsou na záložce s náhledem **Typy majetku** zvoleny žádné typy majetku, mohou být nainstalovány všechny typy majetku.
 9. Na záložce s náhledem **Plány údržby** vyberte plány údržby, které mají být automaticky nastaveny na nových funkčních místech pomocí tohoto typu funkčního místa. Vyberte **Přidat řádek** a vyberte plány údržby. Přidáte-li sem plány údržby, lze použít pouze tyto plány na funkčním místě s použitím tohoto typu funkčního místa.

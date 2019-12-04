@@ -1,9 +1,9 @@
 ---
-title: Systémové požadavky aplikace Talent a zásady aktualizace
-description: Toto téma obsahuje požadavky na Dynamics 365 Talent. Jsou zde také popsány zásady aktualizací.
+title: Systémové požadavky aplikace Talent
+description: Toto téma obsahuje požadavky na Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
+ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024153"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2818472"
 ---
-# <a name="talent-system-requirements-and-update-policy"></a>Systémové požadavky aplikace Talent a zásady aktualizace
+# <a name="talent-system-requirements"></a>Systémové požadavky aplikace Talent
 
 [!include [banner](includes/banner.md)]
 
@@ -46,7 +46,7 @@ Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce soft
 > * Editor pracovního postupu je spuštěn jako aplikace ClickOnce. Pouze Microsoft Edge a Internet Explorer (podporované verze Microsoft Windows) podporují aplikace ClickOnce. Editor pracovního postupu aplikace ClickOnce vyžaduje 64bitový kompatibilní operační systém.
 > * K zobrazení náhledu souborů PDF doporučujeme používat moderní prohlížeče, jako je Microsoft Edge (nejnovější veřejně dostupnou verzi) na operačním systému Windows 10, nebo Google Chrome (nejnovější veřejně dostupnou verzi) na operačních systémech Windows 10, Windows 8.1, Windows 8, Windows 7 nebo na tabletu Google Nexus 10.
 >   Požadavky na síť
-> * Dynamics 365 Talent je navržena pro sítě s latencí 250 - 300 milisekund (ms) nebo méně. Tato latence představuje latenci z prohlížeče do datového centra Microsoft Azure, které hostuje aplikaci Talent. Doporučujeme otestovat latenci sítě na stránkách [www.azurespeed.com](https://www.azurespeed.com "Test latence Azure").
+> * Dynamics 365 Talent je navržena pro sítě s latencí 250 - 300 milisekund (ms) nebo méně. Tato latence představuje latenci z prohlížeče do datového centra Microsoft Azure, které hostuje aplikaci Talent. Doporučujeme otestovat čekací dobu v síti na stránkách [www.azurespeed.com](https://www.azurespeed.com "Test latence Azure").
 > * Požadavky na šířku pásma pro Talent závisí na danému scénáři. Některé běžné scénáře vyžadují šířku pásma větší než 50 kilobajtů za sekundu (kb/s).
 > 
 > [!WARNING]
@@ -54,7 +54,7 @@ Poslední verzi pro každý webový prohlížeč naleznete na webu výrobce soft
 
 ## <a name="supported-microsoft-office-applications"></a>Podporované aplikace Microsoft Office
 
-* Chcete-li používat doplňky aplikace Microsoft Excel a Word, musíte mít nainstalovanou sadu Microsoft Office 2016 pro Windows nebo Mac. Další informace o požadavcích na verzi naleznete v tématu [Řešení problémů s integrací se sadou Office](../dev-itpro/office-integration/office-integration-troubleshooting.md "Řešení problémů s integrací se sadou Office").
+* Chcete-li používat doplňky aplikace Microsoft Excel a Word, musíte mít nainstalovanou sadu Microsoft Office 2016 pro Windows nebo Mac. Další informace o požadavcích na verzi naleznete v tématu [řešení problémů s integrací se sadou Office](../dev-itpro/office-integration/office-integration-troubleshooting.md "Řešení problémů s integrací s Office").
 * Chcete-li zobrazit dokumenty, které jsou generovány pomocí funkce exportu do aplikace Excel nebo Word funkce, musíte mít nainstalovanou sadu Microsoft Office 2007 nebo novější.
 
 ## <a name="regional-availability-languages-and-localization"></a>Regionální dostupnost, jazyky a lokalizace
@@ -66,8 +66,3 @@ Můžete si stáhnout PDF soubor se zeměmi, oblastmi a jazyky, které Talent po
 
 Pokud jste vývojáři a máte zájem o vytváření vlastních nastavení specifických pro zemi nebo oblast, nebo o vytváření řešení pro zemi nebo oblast, která není aktuálně podporována společností Microsoft, prohlédněte si část [Globalizace](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
-## <a name="update-policy"></a>Zásady aktualizace
-
-Talent využívá služby jako cloudová nabídka. Aktualizace pro aplikaci Talent jsou nepřetržité a automaticky aplikované společností Microsoft.
-
-Aktualizace jsou vydávány v pravidelných intervalech a použijí se na všechna prostředí. Aplikace Talent je podporována podle [zásad správy cyklu životnosti podpory Microsoft](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Cyklus životnosti podpory Microsoft"), které poskytují konzistentní a předvídatelné pokyny pro dostupnost podpory produktu.

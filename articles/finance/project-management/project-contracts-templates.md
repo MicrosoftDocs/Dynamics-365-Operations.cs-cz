@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 76c62f3a503ff2a8c93143390fc91ef81fbf7d0f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: b44fc116f1dcaa1275b2262487ef9114bce639c6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250454"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773847"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronizace projektových smluv a projektů přímo z Project Service Automation do aplikace Finance and Operations
 
@@ -42,11 +42,11 @@ Toto téma popisuje šablonu a základní úkoly, které se používají k synch
 
 Následující obrázek znázorňuje, jak jsou synchronizována data mezi Project Service Automation a Finance.
 
-[![Tok dat pro integraci Project Service Automation s aplikací Finance](./media/ProjectsAndContractsFlow.JPG)](./media/ProjectsAndContractsFlow.JPG)
+[![Tok dat pro integraci Project Service Automation s aplikací Finance](./media/ProjectsAndContractsFlow_upd.JPG)](./media/ProjectsAndContractsFlow.JPG)
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
-Chcete-li získat přístup k dostupným šablonám, zvolte v centru správy Microsoft PowerApps **Projekty** a v pravém horním rohu vyberte **Nový projekt** pro volbu veřejných šablon.
+Chcete-li získat přístup k dostupným šablonám, zvolte v centru správy Microsoft Power Apps **Projekty** a v pravém horním rohu vyberte **Nový projekt** pro volbu veřejných šablon.
 
 K synchronizaci projektových smluv a projektů z aplikace Project Service Automation do aplikace Finance slouží následující šablony a základní úkoly:
 

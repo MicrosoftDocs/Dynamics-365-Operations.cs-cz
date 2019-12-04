@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c29adc87b9ef435b714a46ba1a96ef8226759b6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8fac49cde1a6098b99e6373bf9221d3357a053a2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550670"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814506"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>Omezení tabulek definovaná uživatelem nebo systémem
 
@@ -63,7 +63,7 @@ Aby mohlo mít omezení tabulky vliv na model konfigurace produktu, je nutno zah
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Základní koncepty v modelech konfigurace produktu](product-configuration-models.md)
+[Přehled modelů konfigurace produktu](product-configuration-models.md)
 
 
 

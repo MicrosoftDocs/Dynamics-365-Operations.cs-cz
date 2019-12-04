@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 491024c9c3d6c7d20ef212e167ceab6abac8dac7
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537848"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812573"
 ---
 # <a name="connect-the-help-system"></a>Připojení k systému nápovědy
 
@@ -54,7 +54,7 @@ Na stránce **Systémové parametry** proveďte následující kroky:
 > [!IMPORTANT]
 > Při prvním otevření karty **Nápověda** je nutné se připojit k službě Lifecycle Services. Klikněte na odkaz uprostřed formuláře, počkejte na připojení, zavřete dialogové okno a kliknutím na tlačítko **OK** otevřete stránku **Parametry** systému.
 >
-> [![Připojení k LCS](./media/connect-to-lcs-crop-1024x365.png "Připojení k LCS")](./media/connect-to-lcs-crop.png)
+> [![Připojit k LCS](./media/connect-to-lcs-crop-1024x365.png "Připojit k LCS")](./media/connect-to-lcs-crop.png)
 
 1. Vyberte projekt služby Lifecycle Services pro připojení.
 2. Vyberte knihovny BPM (v rámci vybraného projektu), ze kterých chcete načíst záznamy úkolů.
@@ -80,7 +80,7 @@ Můžete použít průvodce záznamem úloh k vytvoření vlastní nápovědy, n
 
 Vlastní nápovědu pro aplikace Finance, Supply Chain Management a Retail můžete vytvořit tak, že vytvoříte záznamy úloh, které odpovídají vaší implementaci, a uložíte je do knihovny obchodního procesu LCS. Pro aplikaci Talent nelze vlastní průvodce záznamem úloh vytvořit.
 
-Pro partnery platí, že pokud knihovnu nastavíte jako podnikovou knihovnu a zahrnete ji do řešení, bude k dispozici vašim odběratelům. Můžete vytvořit také kopii sjednocené globální knihovny APQC a poté otevřít kopii z ní otevřít záznamy úloh, upravit je a uložit záznamy s provedenými změnami. Další informace naleznete v tématu [Vytvoření záznamu úkolu jako dokumentace nebo školení](../../dev-itpro/user-interface/task-recorder.md).
+Pro partnery platí, že pokud knihovnu nastavíte jako podnikovou knihovnu a zahrnete ji do řešení, bude k dispozici vašim odběratelům. Můžete vytvořit také kopii sjednocené globální knihovny APQC a poté otevřít kopii z ní otevřít záznamy úloh, upravit je a uložit záznamy s provedenými změnami. Více informací viz [Zdroje záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md).
 
 ### <a name="connect-a-custom-site"></a>Připojení vlastního webu
 
@@ -91,8 +91,8 @@ Společnost Microsoft poskytla dokument white paper a vzorový kód, které popi
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Přehled nápovědy](help-overview.md)
+[Systém nápovědy](help-overview.md)
 
-[Přehled záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md)
+[Zdroje záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md)
 
-[Postup vytvoření záznamu úloh pro použití jako dokumentace nebo školení](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Vytváření dokumentace nebo školení pomocí záznamníku úloh](../../dev-itpro/user-interface/task-recorder-training-docs.md)

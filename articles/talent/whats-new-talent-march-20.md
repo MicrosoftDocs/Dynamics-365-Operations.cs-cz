@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025995"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812688"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Talent (20. března 2019)
 
@@ -43,7 +43,7 @@ Tato funkce umožňuje nástrojům pro indexaci dat ve vyhledávačích najít a
 Pokud kandidát zapomněl přihlašovací údaje, které používal pro žádost o práci při otevírání odkazu, který mu byl uložen nebo odeslán e-mailem, zobrazí se nyní nápověda se jménem poskytovatele a uživatelským jménem (zakrytým). To pomůže kandidátům použít správné přihlašovací údaje pro přístup k jejich žádostem o práci.
 
 ### <a name="help-internal-candidates-explore-internal-jobs"></a>Pomoc interním kandidátům při hledání interních pracovních nabídek
-Byl vyřešen problém, kdy externí uchazeči mohli vidět jméno náborového pracovníka nebo náborového manažera. Nyní mohou vidět členy náborového týmu u práce pouze interní kandidáti. Je rovněž snazší pro interní kandidáty zobrazit pouze interní páce a zažádat o ně. Pokud se kandidát pokusí o přístup k odkazu na zobrazení nebo žádost o interní práci, je nucen se ověřit pomocí přihlašovacích údajů služby Azure Active Directory. Interní kandidáti mají také možnost kontaktovat člena náborového týmu a projevit zájem o práci nebo se o ní dozvědět více. Tato možnost je k dispozici pro všechny práce pro pouze interní kandidáty. Další informace naleznete v tématu [Funkce kariérního webu v aplikaci Attract](./career-site.md).
+Byl vyřešen problém, kdy externí uchazeči mohli vidět jméno náborového pracovníka nebo náborového manažera. Nyní mohou vidět členy náborového týmu u práce pouze interní kandidáti. Je rovněž snazší pro interní kandidáty zobrazit pouze interní páce a zažádat o ně. Pokud se kandidát pokusí o přístup k odkazu na zobrazení nebo žádost o interní práci, je nucen se ověřit pomocí přihlašovacích údajů služby Azure Active Directory. Interní kandidáti mají také možnost kontaktovat člena náborového týmu a projevit zájem o práci nebo se o ní dozvědět více. Tato možnost je k dispozici pro všechny práce pro pouze interní kandidáty. Další informace naleznete v tématu [Nastavení kariérního webu v aplikaci Microsoft Dynamics 365 Talent - Attract](./career-site.md).
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Označení druhých v pořadí pro přiřazení vysoce ceněných žadatelů pro budoucí práce
 Náboroví pracovníci a náboroví manažeři si často udržují aktuální seznam žadatelů, kteří byli vhodnými kandidáty na pozici, ale nemohli dostat nabídku, protože pozice byla již obsazena. Tito uchazeči, označovaní jako druzí v pořadí, jsou užiteční, protože při příštím náboru, když se otevře podobná pozice, mohou snížit dobu potřebnou k přijetí. Attract nyní umožňuje náborovým pracovníkům a náborovým manažerům určit druhé v pořadí na seznamu uchazečů, pokud uchazeč prošel do fáze nabídky. Určení druhých v pořadí se zobrazí na seznamu uchazečů o práci, ale rovněž v zobrazení skupiny talentů, když jsou tito uchazeči členy jakýchkoliv skupin náborových pracovníků nebo náborových manažerů. Kromě toho se toto označení objeví v historii práce jako součást profilu skupiny talentů kandidáta. Tuto funkci můžete vyzkoušet v náhledu, když ji zapne správce pomocí [Správy funkcí v centru pro správu](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

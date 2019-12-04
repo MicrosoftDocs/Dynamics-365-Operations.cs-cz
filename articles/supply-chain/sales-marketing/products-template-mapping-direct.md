@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 38f0db7db0cc4f65d46cd241f75a7274f19f62cf
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 1a96fda4e7f7b6407c51ee4056088d05027462cf
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251378"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813240"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Synchronizace produktů přímo z aplikace Supply Chain Management do produktů v Sales
 
@@ -43,7 +43,7 @@ Toto téma popisuje šablony a základní úkoly, které se používají k synch
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
-Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu PowerApps](https://admin.powerapps.com/dataintegration). Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
+Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu Power Apps](https://admin.powerapps.com/dataintegration). Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
 
 K synchronizaci účtů z aplikace Supply Chain Management do aplikace Sales slouží následující šablony a základní úkoly:
 
@@ -116,7 +116,7 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 [Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synchronizace hlaviček a řádků prodejní objednávky přímo z aplikace Supply Chain Management do aplikace Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
 
 [Synchronizace hlaviček a řádků faktury přímo z aplikace Supply Chain Management do aplikace Sales](sales-invoice-template-mapping-direct.md)
 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 4bd1eaa1211574c25d7d77c0f8d37c9978ca7c32
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0e51be7ea6d40f951b84f5ac8f74ee52b57088b3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025432"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811912"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
@@ -104,7 +104,7 @@ Služba daňové registrace podporuje pouze scénáře, kde je součástí ceny 
 
 ## <a name="set-up-retail-for-czech-republic"></a>Natavení maloobchodu pro Českou republiku
 
-Tato část popisuje nastavení maloobchodu, která jsou specifická a doporučená pro Českou republiku. Další informace o nastavení maloobchodních produktů získáte v [Microsoft Dynamics 365 for Retail dokumentaci](../index.md).
+Tato část popisuje nastavení maloobchodu, která jsou specifická a doporučená pro Českou republiku. Další informace o tom, jak nastavit výchozí sklad pro maloobchod, získáte v části [Zdroje nápovědy pro Dynamics 365 Retail](../index.md).
 
 Chcete-li použít funkci specifickou pro český maloobchod, je nutné zadat následující nastavení.
 
@@ -199,7 +199,7 @@ V Návrháři formátu příjemky přidejte následující vlastní pole do př�
     - **PKP**: Toto pole vytiskne kód podpisu správce daně, který je generován v případě offline registrace u služby daňové registrace.
     - **Informace**: Toto pole vytiskne doplňkové informace ze služby daňové registrace.
 
-Další informace o tom, jak pracovat s formáty příjemek, naleznete v tématu [Šablony pro příjemky a tisk](../receipt-templates-printing.md).
+Další informace o tom, jak pracovat s formáty příjemek, naleznete v tématu [Nastavení a návrh formátů příjmu](../receipt-templates-printing.md).
 
 ### <a name="configure-fiscal-integration"></a>Konfigurace fiskální integrace
 
@@ -211,7 +211,7 @@ Postupujte podle kroků pro nastavení fiskální integrace popsané v části [
 
 ## <a name="deployment-guidelines-for-cash-registers-for-czech-republic"></a>Pokyny k nasazení registračních pokladen pro Českou republiku
 
-Ukázka integrace fiskální služby pro Českou republiku je součástí sady Retail SDK. Informace o instalaci a použití sady Retail SDK naleznete v tématu [Dokumentace k Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Ukázka integrace fiskální služby pro Českou republiku je součástí sady Retail SDK. Informace o instalaci a použití sady Retail SDK naleznete v tématu [Architektura sady Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Tento příklad sestává z rozšíření pro CRT a hardwarovou stanici. Ke spuštění tohoto příkladu musíte změnit a sestavit projekty CRT a hardwarové stanice. Doporučujeme používat nemodifikovanou sadu Retail SDK k provedení změn, které jsou popsány v tomto tématu. Rovněž doporučujeme používat zdrojový systému kontroly, jako je například Azure DevOps, kde žádné soubory nebyly dosud změněny.
 

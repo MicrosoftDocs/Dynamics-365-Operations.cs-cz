@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553084"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771414"
 ---
 # <a name="backup-storage-of-er-templates"></a>Úložiště záloh šablon ER
 
 [!include [banner](../includes/banner.md)]
 
-[Architektura elektronického výkaznictví](general-electronic-reporting.md) umožňuje podnikovým uživatelům konfiguraci formátů pro odchozí dokumenty v souladu s právními požadavky různých zemí a oblastí. Konfigurované formáty ER mohou používat předdefinované šablony pro generování odchozích dokumentů v různých formátech, například sešity Microsoft Excel, dokumenty Microsoft Word nebo dokumenty PDF. Šablony jsou vyplněny daty, které vyžaduje nakonfigurovaný datový tok pro generované dokumenty.
+[Přehled elektronického výkaznictví](general-electronic-reporting.md) umožňuje podnikovým uživatelům konfiguraci formátů pro odchozí dokumenty v souladu s právními požadavky různých zemí a oblastí. Konfigurované formáty ER mohou používat předdefinované šablony pro generování odchozích dokumentů v různých formátech, například sešity Microsoft Excel, dokumenty Microsoft Word nebo dokumenty PDF. Šablony jsou vyplněny daty, které vyžaduje nakonfigurovaný datový tok pro generované dokumenty.
 
 Každý konfigurovaný formát lze publikovat jako součást řešení elektronického vykazování. Každé řešení ER lze exportovat z jedné instance Finance and Operations a importovat do jiné instance.
 
-Systém ER používá [Architekturu správy dokumentů](../../fin-ops/organization-administration/configure-document-management.md), která uchovává požadované šablony pro aktuální instanci Finance and Operations. V závislosti na nastavení architektury ER, ukládání objektů Blob Microsoft Azure nebo složku Microsoft SharePoint lze vybrat jako fyzické umístění primárního úložiště pro šablony. (Další informace naleznete v tématu [Konfigurace architektury ER](electronic-reporting-er-configure-parameters.md).) Tabulka DocuValue obsahuje pro každou šablonu samostatný záznam. V každém záznamu ukládá pole **AccessInformation** cestu k souboru šablony, který je umístěn v konfigurovaném umístění úložiště.
+Systém ER používá [Konfigurace správy dokumentů](../../fin-ops/organization-administration/configure-document-management.md), která uchovává požadované šablony pro aktuální instanci Finance and Operations. V závislosti na nastavení architektury ER, ukládání objektů Blob Microsoft Azure nebo složku Microsoft SharePoint lze vybrat jako fyzické umístění primárního úložiště pro šablony. (Další informace naleznete v tématu [Konfigurace systému elektronického výkaznictví (ER)](electronic-reporting-er-configure-parameters.md).) Tabulka DocuValue obsahuje pro každou šablonu samostatný záznam. V každém záznamu ukládá pole **AccessInformation** cestu k souboru šablony, který je umístěn v konfigurovaném umístění úložiště.
 
 Při správě instancí Finance and Operations se můžete rozhodnout migrovat aktuální instanci do jiného umístění. Můžete například migrovat instanci výroby do nového prostředí sandbox. Pokud jste nakonfigurovali platformu ER pro ukládání šablon v úložišti objektů Blob, bude tabulka DocuValue v novém prostředí sandbox odkazovat na instanci ukládání objektů Blob v produkčním prostředí. K této instanci však nelze přistupovat z prostředí izolovaného prostoru (sandbox), protože proces migrace nepodporuje migraci artefaktů v úložišti objektů BLOB. Pokud se tedy pokusíte spustit formát ER, který používá šablonu pro generování obchodních dokumentů, dojde k výjimce a zobrazí se upozornění na chybějící šablonu. Také budete navedeni pomocí nástroje čištění ER odstranit a poté znovu importovat konfiguraci formátu ER obsahující šablonu. Vzhledem k tomu, že je možné provést několik konfigurací formátu ER, může být tento proces časově náročný.
 
@@ -96,4 +96,4 @@ Ve Finance and Operations verze 10.0.5 je ukládání záloh šablon ER k dispoz
 
 [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 
-[Konfigurace architektury elektronického výkaznictví](electronic-reporting-er-configure-parameters.md)
+[Konfigurace architektury elektronického výkaznictví (ER)](electronic-reporting-er-configure-parameters.md)

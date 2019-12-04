@@ -1,6 +1,6 @@
 ---
-title: Chytrá doporučení
-description: Toto téma vysvětluje, jak lze použít strojové učení pro poskytnutí doporučení pro práce a uchazeče o práci.
+title: Chytrá doporučení v aplikaci Attract
+description: Tento článek vysvětluje, jak lze použít strojové učení pro poskytnutí doporučení pro práce a uchazeče o práci v aplikaci Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/16/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: fa06821c98e42dcd8590a764db9beb4a5c33fca2
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741745"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832784"
 ---
-# <a name="intelligent-recommendations"></a>Chytrá doporučení
+# <a name="intelligent-recommendations-in-attract"></a>Chytrá doporučení v aplikaci Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Strojové učení může pomoci náborovým pracovníkům a náborovým manažerům k rychlé identifikaci nejlepších kandidátů na pozici. Také může pomoci potenciálním uchazečům najít pozici, která nejlépe odpovídá jejich profilu a zájmům. Když se tyto funkce používají a poskytuje se zpětná vazba, doporučení se zdokonalují.
 
 > [!NOTE] 
 > - Funkce chytrých doporučení jsou k dispozici pouze [s doplňkem Komplexní nábor](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Funkce pojednávaná v tomto tématu je k dispozici jako součást verze Preview. Obsah a funkce se mohou změnit. Chcete-li použít tuto funkci, požádejte správce o její povolení pomocí **Centrum pro správu** v aplikaci Attract. Nastavte **Doporučení kandidáta**, **Doporučení práce** a **Doporučení potenciálního uchazeče** na **Zapnuto**. Další informace naleznete v tématu [Přístup k funkcím Preview v aplikaci Talent](./access-preview-feature.md). 
+> - Funkce pojednávaná v tomto tématu je k dispozici jako součást verze Preview. Obsah a funkce se mohou změnit. Chcete-li použít tuto funkci, požádejte správce o její povolení pomocí **Centrum pro správu** v aplikaci Attract. Nastavte **Doporučení kandidáta**, **Doporučení práce** a **Doporučení potenciálního uchazeče** na **Zapnuto**. Další informace naleznete v tématu [Přístup k funkcím Preview v aplikaci Microsoft Dynamics 365 Talent](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Doporučení kandidáta

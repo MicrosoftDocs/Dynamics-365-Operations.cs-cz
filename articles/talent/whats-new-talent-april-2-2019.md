@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 9cc45a3ed468541fc0a5c8e80e745854148165e4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 86d81d60fcbc77375f3b8c525e8c084e3a3d8a99
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026064"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773686"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (2. dubna 2019)
 
@@ -63,7 +63,7 @@ Další informace o aktualizaci Platform Update 25 for Finance and Operations na
 V mnoha organizacích mohou mít manažeři kompenzací a zaměstnaneckých výhod přístup pouze k určitým záznamům o kompenzacích. To může zahrnovat záznamy pro vedoucí pracovníky nebo regionální zaměstnance. Díky této změně může oddělení lidských zdrojů spravovat a udržovat plány kompenzace pro různé skupiny zaměstnanců v organizaci. Můžete přiřadit role zabezpečení fixním i variabilním plánům. Tyto role zabezpečení určují přístup k plánům a souvisejícím zaměstnaneckým datům, jako jsou záznamy o platech nebo bonusech, takže pouze tyto role mohou zpracovávat kompenzace pro skupiny zaměstnanců.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade na Common Data Service
-Konečné termíny pro upgrade na Common Data Service se rychle blíží. Přihlaste se do centra pro správu PowerApps k určení, zda je třeba provést upgrade databáze. Další informace o konečných termínech a nutných krocích k upgradu naleznete v tématu [Upgrade na Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Konečné termíny pro upgrade na Common Data Service se rychle blíží. Přihlaste se do centra pro správu Microsoft Power Apps k určení, zda je třeba provést upgrade databáze. Další informace o konečných termínech a nutných krocích k upgradu naleznete v tématu [Upgrade na Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Náhled
 

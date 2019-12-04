@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8c11186ff3f95a7f1e00f9e42d7b78f5a68957b0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008121"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813930"
 ---
 # <a name="get-started-with-onboard"></a>Začínáme s aplikací Onboard
 
@@ -35,17 +35,17 @@ Proces zaškolení vám umožní rychle vytvořit průvosce zaškolením, který
 
 Informace o tom, jak získat a používat aplikaci Onboard, naleznete v následujících tématech:
 
-- [Získání aplikace Onboard](./onboard-get-app.md)
-- [Vytvoření průvodce zaškolení](./onboard-create-guide.md)
-- [Vytvoření šablony zaškolení](./onboard-create-template.md)
-- [Úprava průvodců a šablon zaškolení](./onboard-edit-guides-templates.md)
-- [Sdílení obsahu s jinými přispěvateli](./onboard-share-template.md)
-- [Zobrazit stav úkolů a zaškolení zaměstnanců](./onboard-view-status.md)
-- [Vytvořit náborové týmy v Onboard](./onboard-create-team.md)
+- [Získání aplikace Dynamics 365 Talent - Onboard](./onboard-get-app.md)
+- [Vytvoření a odeslání průvodce zaškolením za použití Dynamics 365 Talent - Onboard](./onboard-create-guide.md)
+- [Vytvoření šablony zaškolení pomocí aplikace Dynamics 365 Talent - Onboard](./onboard-create-template.md)
+- [Úprava průvodců a šablon zaškolení v aplikaci Dynamics 365 Talent - Onboard](./onboard-edit-guides-templates.md)
+- [Sdílení obsahu s jinými přispěvateli v aplikaci Dynamics 365 Talent - Onboard](./onboard-share-template.md)
+- [Zobrazení stavu úkolů zaškolení zaměstnanců a vašich úkolů](./onboard-view-status.md)
+- [Vytvoření náborového týmu za použití Dynamics 365 Talent - Onboard](./onboard-create-team.md)
 
 ## <a name="see-also"></a>Viz také
 
 - [Vyzkoušejte nebo kupte aplikaci Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Novinky](./whats-new.md)
-- [Poznámky k verzi](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Získání podpory](./talent-support.md)
+- [Co je nového a co se změnilo v aplikaci Dynamics 365 Talent](./whats-new.md)
+- [Plány vydání](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Získání podpory pro Microsoft Dynamics 365 Talent](./talent-support.md)

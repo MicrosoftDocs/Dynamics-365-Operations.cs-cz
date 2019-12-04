@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 977037f0e2b313ebf05a3e1616d34567f82e82d7
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ba475721b69e7c75dfd2197597b54050a3598d37
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250385"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770259"
 ---
 # <a name="synchronize-project-tasks-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronizace projektových úloh přímo z Project Service Automation do aplikace Finance and Operations.
 
@@ -45,7 +45,7 @@ Následující obrázek znázorňuje, jak jsou synchronizována data mezi Projec
 
 ## <a name="template-and-task"></a>Šablona a úkol
 
-Chcete-li získat přístup k šabloně, zvolte v centru správy Microsoft PowerApps **Projekty** a v pravém horním rohu vyberte **Nový projekt** pro volbu veřejných šablon.
+Chcete-li získat přístup k šabloně, zvolte v centru správy Microsoft Power Apps **Projekty** a v pravém horním rohu vyberte **Nový projekt** pro volbu veřejných šablon.
 
 K synchronizaci projektových úkolů z aplikace Project Service Automation do aplikace Finance slouží následující šablona a základní úkol:
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658803"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812642"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Vytváření dokumentace nebo školení pomocí záznamníku úloh
 
@@ -84,7 +84,7 @@ Toto je vzhled poznámky v bublině v průvodci záznamem úloh.
 
 [![Vzhled anotace Poznámky v Průvodci záznamem úloh](./media/screen4.png)](./media/screen4.png)
 
--   **Krok informací**: Tyto poznámky jsou vytvářeny kliknutím pravým tlačítkem na ovládací prvek nebo kdekoliv ve formuláři &lt; **Záznamník úloh** &lt; **Přidat krok informací. **Krok informací se zobrazí jako očíslovaný krok v jakémkoli bodě, kam jej vložíte, i v případě, že žádná akce nebyla zaznamenána v uživatelském rozhraní. Můžete přidat krok informací na úrovni formuláře nebo krok informací přidružený k ovládacímu prvku. Je-li krok informací přidružen k formuláři, zobrazí se "bublina" průvodce úkolem jinde ve formuláři, bez ukazatele, když je přehráván průvodce úkolem. Je-li informační krok přidružen k formuláři, bude "bublina" průvodce záznamem úloh odkazovat na ovládací prvek, kde se průvodce záznamem úloh přehrává.V podokně Nápověda se poznámka informačního kroku zobrazuje jako očíslovaný krok s jakýmkoli zadaným textem. Kroky informací slouží k přípravě uživatele na následující kroky, k popisu kroků, které je třeba provést mimo aplikaci, nebo pro účely odkazování na jiné záznamy (však v poznámkách nelze vytvořit hypertextové odkazy).
+-   **Krok informace**: Tyto poznámky se vytvářejí kliknutím pravým tlačítkem na ovládací prvek nebo na libovolné místo ve formuláři &lt; **Záznamník úloh** &lt; **Přidat informační krok.** Informační kroky se zobrazují v jakémkoli kroku vložení, i když nebyla zaznamenána žádná akce v uživatelském rozhraní. Můžete přidat krok informací na úrovni formuláře nebo krok informací přidružený k ovládacímu prvku. Je-li krok informací přidružen k formuláři, zobrazí se "bublina" průvodce úkolem jinde ve formuláři, bez ukazatele, když je přehráván průvodce úkolem. Je-li informační krok přidružen k formuláři, bude "bublina" průvodce záznamem úloh odkazovat na ovládací prvek, kde se průvodce záznamem úloh přehrává.V podokně Nápověda se poznámka informačního kroku zobrazuje jako očíslovaný krok s jakýmkoli zadaným textem. Kroky informací slouží k přípravě uživatele na následující kroky, k popisu kroků, které je třeba provést mimo aplikaci, nebo pro účely odkazování na jiné záznamy (však v poznámkách nelze vytvořit hypertextové odkazy).
 
 **Určete, jak dlouho budete záznam provádět**
 
@@ -97,7 +97,7 @@ Toto je vzhled poznámky v bublině v průvodci záznamem úloh.
 **Rozhodněte, kde v uživatelském rozhraní spustit nahrávání** Stránka, na kterou přejdete při spuštění nahrávání záznamu úkolu, ovlivní, pro kterou stránku se průvodce záznamem úloh přehraje.Například pokud chcete uvést záznam úlohy v podokně Nápověda při kliknutí na tlačítko Nápověda na stránce Parametry hlavní knihy, je nutné spustit nahrávání na stránce parametry hlavní knihy. **Uložte záznamy jako soubory AXT** Jakmile dokončíte vytvoření nebo úpravu záznamu úkolu, máte k dispozici několik možností pro stažení nebo uložení záznamu. Soubor lze stáhnout jako balíček záznamu úkolu (AXTR), jako neupravený soubor záznamu (XML) nebo jako dokument aplikace Word a uložit soubor do knihovny LCS. Je vhodné záznam úkolu vždy uložit jako souboru balíčku záznamu úkolů (AXTR). To vám usnadní údržbu souborů, pokud bude později nutné změnit postupy nebo poznámky. Chcete-li stáhnout soubor jako dokument aplikace Word, uložte jej také jako soubor balíčku záznamu úlohy.
 
 ## <a name="create-your-task-recording"></a>Vytvoření záznamu úkolu
-Podrobný přehled kroků naleznete v tématu [Vytvoření záznamu úloh](task-recorder.md).
+Podrobný přehled kroků naleznete v tématu [Zdroje záznamníku úloh](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopírování a přizpůsobení záznamu úkolů společnosti Microsoft
 Můžete stáhnout a upravovat záznamy úkolů společnosti Microsoft a použít je pro vlastní dokumentaci k nápovědě nebo výukové materiály. Při stažení záznamu úkolu Microsoft postupujte takto:
@@ -120,9 +120,9 @@ Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy, aby je byl
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Přehled nápovědy](../../fin-ops/get-started/help-overview.md)
+[Systém nápovědy](../../fin-ops/get-started/help-overview.md)
 
-[Připojení nápovědy](../../fin-ops/get-started/help-connect.md)
+[Připojení k systému nápovědy](../../fin-ops/get-started/help-connect.md)
 
 [Záznamník úloh](task-recorder.md)
 

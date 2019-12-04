@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 15a645c98fe38e8ddaa34c0c21581eac6636502f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190964"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811594"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Noví nebo aktualizovaní průvodci záznamem úloh (listopad 2016)
 
@@ -30,7 +30,7 @@ ms.locfileid: "2190964"
 
 Toto téma obsahuje nové nebo aktualizované průvodce úkolem vydané pro knihovnu Microsoft APQC Unified Library (listopad 2016 – všechny jazyky) pro aplikaci Microsoft Dynamics 365 for Operations. Nebyly vydány žádné nové knihovny Začínáme.
 
-Knihovna APQC Unified Library (listopad 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations, aktualizace Platform Update 3, Microsoft Dynamics AX aktualizace Platform Update 2, aktualizace Dynamics AX z května 2016 a vydání Microsoft Dynamics AX z února 2016. Další informace o těchto verzích najdete v tématu [Co je nového nebo co se změnilo](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Začínáme s nápovědou](help-overview.md).
+Knihovna APQC Unified Library (listopad 2016 – všechny jazyky) obsahuje průvodce úkolem, kteří jsou určeni k použití pro nápovědu v Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations, aktualizace Platform Update 3, Microsoft Dynamics AX aktualizace Platform Update 2, aktualizace Dynamics AX z května 2016 a vydání Microsoft Dynamics AX z února 2016. Další informace o těchto vydáních naleznete v tématu [Co je nového nebo změněné na domovské stránce Finance and Operations](whats-new-changed.md). V této knihovně jsou k dispozici lokalizované verze průvodců záznamem úloh. Další informace o tom, jak připojit systém nápovědy ke knihovně průvodců záznamem úloh viz [Systém nápovědy](help-overview.md).
 
 > [!NOTE]
 > Hvězdička (\*) vedle názvu řádku pro modelování podnikových procesů (BPM) označuje, že průvodce úkolem pro tento obchodní proces byl vytvořen pro aktualizaci Dynamics 365 for Operations listopad 2016 a není podporován v dřívějších verzích aplikace Microsoft Dynamics AX.
@@ -541,10 +541,10 @@ Knihovna APQC Unified Library (listopad 2016 – všechny jazyky) obsahuje prův
 | Nastavení automatického odsouhlasení dopravného                                     | Globální         |
 | \*Nastavení opakovaného přidělení zboží při krátkodobém vyskladnění                                    | Globální         |
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
-[Nový průvodce úkolem je k dispozici (únor 2016)](new-task-guides-available-february-2016.md)
+[Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)
 
-[Noví nebo aktualizovaní dostupní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
+[Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Noví nebo aktualizovaní dostupní průvodci úkolem (srpen 2016)](new-updated-task-guides-available-august-2016.md)

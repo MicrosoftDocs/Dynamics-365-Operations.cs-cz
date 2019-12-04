@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 2652458a5fea9e46b8b68d3b197d2ccb1385731d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626240"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811728"
 ---
 # <a name="manually-created-work-orders"></a>Ručně vytvořené pracovní příkazy
 
@@ -70,7 +70,7 @@ Mějte na paměti následující body:
 
 - V podrobném zobrazení na stránce **Všechny pracovní příkazy** můžete přidat několik majetků do pracovního příkazu v zobrazení Podrobností přidáním řádků na pevné záložce **Práce údržby pracovního příkazu**. U majetku můžete vybrat pouze typy prací údržby, které jsou definovány v typu majetku vybraném pro daný majetek.  
 
-- Změníte-li v tomto nastavení kritičnost majetku poté, co jste jej již použili v pracovním příkazu, nebude tato servisní úroveň kritičnost v pracovním příkazu odpovídajícím způsobem aktualizována. Další informace o úrovních servisu a závažností naleznete v tématu [Úrovně servisu majetku](../setup-for-objects/object-priorities.md) a [Závažnosti majetku](../setup-for-objects/object-criticalities.md).
+- Změníte-li v tomto nastavení kritičnost majetku poté, co jste jej již použili v pracovním příkazu, nebude tato servisní úroveň kritičnost v pracovním příkazu odpovídajícím způsobem aktualizována. Další informace o úrovních servisu a závažností naleznete v tématu [Úrovně servisu majetku](../setup-for-objects/object-priorities.md) a [Typy závažností majetku](../setup-for-objects/object-criticalities.md).
 
 - Závažnost v pracovním příkazu je přepočítána pokaždé, když je v pracovním příkazu přidán nebo odstraněn řádek.
 

@@ -1,5 +1,5 @@
 ---
-title: Vytvoření, schválení a zveřejnění pracovích míst v aplikaci Attract
+title: Vytvoření práce v aplikaci Attract
 description: Toto téma popisuje prvky pracovního místa v aplikaci Attract. Také vysvětluje, jakým způsobem vytvořit pracovní místo.
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: db725c230de5e3dfe971098249b280d9da47ae20
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9dcdbcea995285c879f91c0bff435103865cc10f
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551065"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832924"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Vytvoření, schválení a zveřejnění pracovních míst v aplikaci Attract
+# <a name="create-a-job-in-attract"></a>Vytvoření práce v aplikaci Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Pokud je v centru pro správu zapnutá správa pracovních míst, je k dispozici
 > [!NOTE]
 > Správa pozice je k dispozici s doplňkem Comprehensive Hiring.
 
-V závislosti na nastavení v aktivitě nabídky procesu náboru lze číslo pozice v nabídce použít dvakrát. Další informace naleznete v tématu [Proces náboru](./activities-attract.md).
+V závislosti na nastavení v aktivitě nabídky procesu náboru lze číslo pozice v nabídce použít dvakrát. Další informace naleznete v tématu [Aktivity v procesech náboru](./activities-attract.md).
 
 Aplikace Attract obsahuje výchozí sadu **dovedností**. Tyto dovednosti se při psaní zobrazují jako návrhy. Můžete přidat více dovedností tak, že zadáte do tohoto pole text nové dovednosti a pak stisknete klávesu Enter.
 
@@ -67,7 +67,7 @@ Po aktivaci pracovního místu lze náborový tým aktualizovat.
 
 Výchozí informace týkající se procesu náboru jsou založeny na šabloně procesu, která byla vybrána při vytvoření pracovního místa. Pokud v té době nebyla vybrána konkrétní šablona, použije se výchozí šablona. Při definování procesu náboru můžete přidat nebo odebrat různé fáze, s výjimkou fáze Potenciální zákazník, žádost a Nabídka. Ačkoli fázi Potenciální zákazník nelze odebrat, je možné ji vypnout. V každé fázi lze přidat nebo odebrat jednu nebo více předdefinovaných aktivit.
 
-Další informace o aktivitách, které lze přidat do procesu náboru, naleznete v tématu [Aktivity náborového procesu v aplikaci Attract](./activities-attract.md).
+Další informace o aktivitách, které lze přidat do procesu náboru, naleznete v tématu [Aktivity v procesech náboru](./activities-attract.md).
 
 > [!NOTE]
 > Po aktivaci pracovního místu lze proces náboru aktualizovat.
@@ -76,7 +76,7 @@ Další informace o aktivitách, které lze přidat do procesu náboru, naleznet
 
 Po aktivaci pracovního místa je lze zveřejnit. Pracovní místa může zveřejnit jen náborář a správce. Pracovní místo lze zveřejnit na webu Talent Careers (kariérní web systému Dynamics 365 Talent) nebo LinkedIn. Tým Attract průběžně pracuje na partnerství s agregátory vývěsky volných míst. Tento seznam se bude průběžně rozšiřovat. Když je práce zveřejněna pouze jako interní, uchazeči potřebují účet AAD k zobrazení pracovní nabídky a podání žádosti. Pokud je nabídka práce uvedena jako veřejná, uchazeči mohou zobrazit nabídky a zažádat za ně pomocí všech možností ověřování. 
 
-Další informace o nabídce volných pracovních míst naleznete v tématu [Funkce Kariérní web v aplikaci Attract](career-site.md).
+Další informace o nabídce pracovních míst naleznete v tématu [Nastavení kariérního webu v aplikaci Microsoft Dynamics 365 Talent - Attract](career-site.md).
 
 > [!NOTE]
 > Funkce zveřejnění nabídky volných míst je k dispozici pouze s doplňkem Comprehensive Hiring pro systém Attract.
@@ -90,7 +90,7 @@ Po aktivaci pracovního místa je možné ho zveřejnit a přidat do něho poten
 
 ## <a name="prospects-and-applicants"></a>Potenciální zákazníci a uchazeči
 
-Možnost přidání potenciálních zákazníků do nabídky volného místa je nastavena v [aktivitě Potenciální zákazník](./activities-attract.md#prospect-activity) v procesu náboru. Tato možnost by měla být nastavena před aktivací pracovního místa. Po aktivaci pracovního místa do něho lze přidat potenciální zákazníky a uchazeče.
+Možnost přidání potenciálních zákazníků do nabídky volného místa je nastavena v [Aktivity v procesech náboru](./activities-attract.md#prospect-activity) v procesu náboru. Tato možnost by měla být nastavena před aktivací pracovního místa. Po aktivaci pracovního místa do něho lze přidat potenciální zákazníky a uchazeče.
 
 ## <a name="approvals"></a>Schválení
 

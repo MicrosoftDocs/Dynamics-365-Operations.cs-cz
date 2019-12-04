@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658683"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811986"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Odebrané nebo zastaralé funkce pro Finance and Operations
 
@@ -474,7 +474,7 @@ Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, urč
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Duplicitní funkce.       |
-| **Nahrazeno jinou funkcí?**   | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a předpokladech naleznete v tématu [Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations – Sklady](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Nahrazeno jinou funkcí?**   | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a předpokladech naleznete v tématu [Přehled instalace a konfigurace aplikace Warehousing](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Ovlivněné oblasti produktu**         | Řízení skladu, Správa přepravy     |
 | **Možnost nasazení**              | Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení.               |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je čtvrté čtvrtletí roku 2019.   |
@@ -1244,7 +1244,7 @@ Konfigurátor výrobku byl používán k dynamické konfiguraci položek z prode
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Konfigurátor výrobku zveřejňoval kód X ++ koncovým uživatelům a není v aktuální verzi aplikace Dynamics AX podporován. Byl odebrán kvůli zamezení duplicitní údržby na překrývajících se kódech.  |
-| **Nahrazeno jinou funkcí?**   | Ano. Konfigurace založená na omezeních byla uvedena v aplikaci Dynamics AX 2012, kde již byl oznámen odpis konfigurátoru výrobku v budoucích verzích. Technologie konfigurace založené na omezeních je zvolena na základních produktech k umožnění konfigurace. Další informace naleznete v tématu [Vytvoření modelu konfigurace produktu](../../../supply-chain/pim/build-product-configuration-model.md). |
+| **Nahrazeno jinou funkcí?**   | Ano. Konfigurace založená na omezeních byla uvedena v aplikaci Dynamics AX 2012, kde již byl oznámen odpis konfigurátoru výrobku v budoucích verzích. Technologie konfigurace založené na omezeních je zvolena na základních produktech k umožnění konfigurace. Další informace naleznete v tématu [Přehled konfigurace produktu](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Ovlivněné oblasti produktu**         | Řízení informací o produktech, Prodej a marketing  |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.      |
 

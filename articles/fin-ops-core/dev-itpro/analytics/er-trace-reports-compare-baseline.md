@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1643e7fb3128faf6ad638d4cdad313b3667463b1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6cdfbbd7d4f41503e97620b8738679ad572b2a4a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181673"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771230"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
 
@@ -44,10 +44,10 @@ Další informace o této funkci získáte přehráním průvodců záznamů úl
 
 Tento postup vysvětluje, jak konfigurovat architekturu ER tak, aby byly shromažďovány informace o provádění formátu ER, a poté vyhodnotit výsledky těchto provedení. Jako součást tohoto vyhodnocení budou vygenerované dokumenty porovnány se svými soubory směrného plánu. V tomto příkladu vytvoříte požadované konfigurace ER pro vzorovou společnost Litware, Inc. Tento postup je navržen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Tyto kroky lze dokončit za použití libovolné datové sady.
 
-K provedení kroků z tohoto příkladu musíte nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+K provedení kroků z tohoto příkladu musíte nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 1. Přejděte do části **Správa organizace** \> **Pracovní prostory** \> **Elektronické výkaznictví**.
-2. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden poskytovatel konfigurace ukázkové společnosti Litware, Inc. a že je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, proveďte kroky v postupu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Na stránce **Konfigurace lokalizace** v části **Poskytovatelé konfigurace** ověřte, že je uveden poskytovatel konfigurace ukázkové společnosti Litware, Inc. a že je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, proveďte kroky v postupu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ### <a name="configure-document-management-parameters"></a>Konfigurujte parametry správy dokumentů
 
@@ -55,7 +55,7 @@ K provedení kroků z tohoto příkladu musíte nejprve dokončit jednotlivé kr
 2. V poli **Třída** zadejte **Připojit soubor**.
 3. V poli **Skupina** zadejte **Soubor**.
 
-![Stránka Typy dokumentů](media/GER-BaselineSample-SetupDocumentType.PNG "Snímek obrazovky stránky Typy dokumentů")
+![Stránka typu dokumentu](media/GER-BaselineSample-SetupDocumentType.PNG "Snímek obrazovky stránky Typy dokumentů")
 
 > [!NOTE]
 > Pro každou sadu dat, ve které plánujete použít funkci směrného plánu ER, je nutné nakonfigurovat nový typ dokumentu se stejným názvem.
@@ -64,11 +64,11 @@ K provedení kroků z tohoto příkladu musíte nejprve dokončit jednotlivé kr
 
 1. V pracovním prostoru **Elektronické výkaznictví** v části **Související odkazy** vyberte **Parametry elektronického výkaznictví**.
 
-    ![Pracovní prostor Elektronické výkaznictví](media/GER-BaselineSample-ERWorkspace.PNG "Snímek obrazovky pracovního prostoru Elektronické výkaznictví")
+    ![Pracovní prostor elektronického vykazování](media/GER-BaselineSample-ERWorkspace.PNG "Obrazovka pracovního prostoru Elektronické výkaznictví")
 
 2. Na kartě **Přílohy** zadejte do pole **Směrný plán** typ dokumentu, který jste právě vytvořili, nebo ho vyberte.
 
-    ![Karta přílohy stránky Parametry elektronického výkaznictví](media/GER-BaselineSample-ERParameters.PNG "Snímek obrazovky stránky Parametry elektronického výkaznictví")
+    ![Karta přílohy na stránce parametry elektronického výkaznictví](media/GER-BaselineSample-ERParameters.PNG "Snímek obrazovky Parametry elektronického výkaznictví")
 
 3. Vyberte **Uložit** a zavřete stránku **Parametry elektronického výkaznictví**.
 
@@ -79,7 +79,7 @@ K provedení kroků z tohoto příkladu musíte nejprve dokončit jednotlivé kr
 3. V rozevíracím dialogovém okně v poli **Název** zadejte **Model pro učení směrných plánů ER**.
 4. Vyberte **Vytvořit konfiguraci** pro potvrzení vytvoření nové položky datového modelu ER.
 
-![Dialogové okno s rozevíracím seznamem Vytvořit konfiguraci](media/GER-BaselineSample-ModelAdd.PNG "Snímek obrazovky dialogového okna s rozevíracím seznamem Vytvořit konfiguraci")
+![Dialogové okno Vytvořit konfiguraci – rozevírací seznam](media/GER-BaselineSample-ModelAdd.PNG "Snímek obrazovky dialogového okna Vytvořit konfiguraci s rozevíracím seznamem")
 
 ### <a name="design-a-data-model"></a>Navržení datového modelu
 
@@ -93,7 +93,7 @@ K provedení kroků z tohoto příkladu musíte nejprve dokončit jednotlivé kr
 8. Vyberte **Změnit stav**.
 9. Vyberte **Dokončit** a potom **OK**.
 
-![Stránka Konfigurace](media/GER-BaselineSample-ModelComplete.PNG "Snímek obrazovky stránky konfigurace")
+![Stránka Konfigurace](media/GER-BaselineSample-ModelComplete.PNG "Snímek obrazovky stránky Konfigurace")
 
 ### <a name="add-a-new-er-format-configuration"></a>Přidání nové konfigurace formátu ER
 
@@ -102,7 +102,7 @@ K provedení kroků z tohoto příkladu musíte nejprve dokončit jednotlivé kr
 3. Do pole **Název** zadejte **Formát pro učení směrných plánů ER**.
 4. Vyberte **Vytvořit konfiguraci** pro potvrzení vytvoření nové položky formátu ER.
 
-![Dialogové okno s rozevíracím seznamem Vytvořit konfiguraci](media/GER-BaselineSample-FormatAdd.PNG "Snímek obrazovky dialogového okna s rozevíracím seznamem Vytvořit konfiguraci")
+![Dialogové okno Vytvořit konfiguraci – rozevírací seznam](media/GER-BaselineSample-FormatAdd.PNG "Snímek obrazovky dialogového okna Vytvořit konfiguraci s rozevíracím seznamem")
 
 ### <a name="design-a-format"></a>Návrh formátu
 
@@ -131,7 +131,7 @@ V tomto příkladu vytvoříte jednoduchý formát ER pro generování dokument�
     2. Do pole **Název** zadejte **ID**.
     3. Vyberte **OK**.
 
-    ![Stránka návrháře formátu](media/GER-BaselineSample-FormatLayoutDesign.PNG "Snímek obrazovky stránky návrháře formátu")
+    ![Stránka návrháře formátu](media/GER-BaselineSample-FormatLayoutDesign.PNG "Snímek obrazovky stránky Návrhář formátu")
 
 8. Na kartě **Mapování** vyberte **Odstranit**.
 9. Vyberte **Přidat kořen**.
@@ -144,7 +144,7 @@ V tomto příkladu vytvoříte jednoduchý formát ER pro generování dokument�
 11. Ve stromovém zobrazení vyberte **Výstup\\Dokument\\Id**.
 12. Vyberte **Vazba** a potom **Uložit**.
 
-![Stránka návrháře formátu](media/GER-BaselineSample-FormatMappingDesign.PNG "Snímek obrazovky stránky návrháře formátu")
+![Stránka návrháře formátu](media/GER-BaselineSample-FormatMappingDesign.PNG "Snímek obrazovky stránky Návrhář formátu")
 
 Na základě navržené struktury vygeneruje konfigurovaný formát soubor XML. Tento sobor XML obsahuje prvek **Kořen** s atributem **ID** nastaveným na hodnotu, kterou uživatel zadá do dialogového okna ER runtime.
 
@@ -154,7 +154,7 @@ Na základě navržené struktury vygeneruje konfigurovaný formát soubor XML. 
 2. Do pole **Zadat ID** zadejte **1**.
 3. Vyberte **OK**.
 
-    ![Dialogové okno parametry elektronické sestavy](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "– obrazovka dialogového okna parametry elektronické sestavy")
+    ![Dialogové okno parametrů elektronického výkaznictví](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Snímek obrazovky dialogového okna Parametry elektronického výkaznictví")
 
 4. Uloží místní kopii souboru **out.Admin.xml**, který je vygenerován, aby jej bylo možné použít později jako základ pro tento formát ER.
 
@@ -166,20 +166,20 @@ Na základě navržené struktury vygeneruje konfigurovaný formát soubor XML. 
 2. Nastavte možnost **Spustit v režimu ladění** na **Ano**.
 3. Vyberte **OK**.
 
-![Dialogové okno Parametry uživatele](media/GER-BaselineSample-ERUserParameters.PNG "Obrázek dialogového okna Parametry uživatele")
+![Dialogové okno Parametry uživatele](media/GER-BaselineSample-ERUserParameters.PNG "Snímek obrazovky dialogového okna Parametry uživatele")
 
 ### <a name="add-a-new-baseline-for-designed-er-format"></a>Přidání nového směrného plánu pro navržený formát ER
 
 1. Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurace**.
 2. V podokně akcí zvolte **Směrné plány**.
 
-    ![Tlačítko Směrné plány na stránce Konfigurace](media/GER-BaselineSample-OpenBaselinePage.PNG "Snímek tlačítka Směrné plány na stránce Konfigurace")
+    ![Tlačítko Směrné plány na stránce Konfigurace](media/GER-BaselineSample-OpenBaselinePage.PNG "Snímek obrazovky tlačítka Směrné plány na stránce Konfigurace")
 
 3. V podokně akcí zvolte **Nový**.
 4. Vyberte dříve navržený formát ER **Formát pro učení směrných plánů ER**.
 5. Zvolte **Uložit**.
 
-![Stránka směrného plánu formátu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline.PNG "Snímek obrazovky stránky směrného plánu formátu elektronického výkaznictví")
+![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-AddBaseline.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
 Je přidán směrný plán pro formát **Formát pro učení směrných plánů ER**.
 
@@ -204,7 +204,7 @@ Je přidán směrný plán pro formát **Formát pro učení směrných plánů 
 10. V poli **Směrný plán** zadejte nebo vyberte přílohu **out.Admin**.
 11. Zvolte **Uložit**.
 
-![Stránka směrného plánu formátu elektronického výkaznictví](media/GER-BaselineSample-SetupBaselineLine.PNG "Snímek obrazovky stránky směrného plánu formátu elektronického výkaznictví")
+![Stránka směrného plánu elektronického výkaznictví](media/GER-BaselineSample-SetupBaselineLine.PNG "Obrazovka stránky se směrným plánem formátu elektronického výkaznictví")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Spuštění navrženého formát ER a kontrola protokolu pro analýzu výsledků
 
@@ -215,7 +215,7 @@ Je přidán směrný plán pro formát **Formát pro učení směrných plánů 
 5. Vyberte **OK**.
 6. Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurovat protokoly ladění**.
 
-    ![Stránka protokoly spuštění elektronického výkaznictví](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Snímek obrazovky stránky Protokoly spuštění elektronického výkaznictví")
+    ![Stránka protokolů spouštění elektronického výkaznictví](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Snímek obrazovky stránky protokolů spuštění Parametry elektronického výkaznictví")
 
     > [!NOTE]
     > Protokol spuštění obsahuje informace o výsledcích porovnání generovaného souboru s nakonfigurovaným směrným plánem. V tomto příkladu protokol udává, že vygenerovaný soubor a směrný plán jsou stejné.
@@ -231,7 +231,7 @@ Je přidán směrný plán pro formát **Formát pro učení směrných plánů 
 5. Vyberte **OK**.
 6. Přejděte do části **Správa organizace** \> **Elektronické výkaznictví** \> **Konfigurovat protokoly ladění**.
 
-    ![Stránka protokoly spuštění elektronického výkaznictví](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Snímek obrazovky stránky Protokoly spuštění elektronického výkaznictví")
+    ![Stránka protokolů spouštění elektronického výkaznictví](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Snímek obrazovky stránky protokolů spuštění Parametry elektronického výkaznictví")
 
     > [!NOTE]
     > Protokol spuštění obsahuje informace o výsledcích porovnání generovaného souboru s nakonfigurovaným směrným plánem. V tomto příkladu protokol udává, že vygenerovaný soubor a směrný plán nejsou stejné.
@@ -243,4 +243,4 @@ Je přidán směrný plán pro formát **Formát pro učení směrných plánů 
 
 ## <a name="additional-resources"></a>Další zdroje
 
-- [Konfigurace architektury ER](electronic-reporting-er-configure-parameters.md)
+- [Konfigurace architektury elektronického výkaznictví (ER)](electronic-reporting-er-configure-parameters.md)

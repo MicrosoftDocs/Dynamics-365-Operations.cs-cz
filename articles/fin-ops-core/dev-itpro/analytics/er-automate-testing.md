@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6da9447386e8e56e20507d985ebcdbfce934debd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181604"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771437"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatizace testování s elektronickým výkaznictvím
 
@@ -44,8 +44,8 @@ Další informace o tom, jak vytvořit vlastní verzi formátu, která je založ
 Funkční členové skupiny Power Users mohou vytvářet přijímání uživatelů a testování integrace bez nutnosti vytvářet zdrojový kód.
 
 - Pomocí funkce směrného plánu ER můžete porovnat generované dokumenty s hlavními kopiemi. Více informací získáte v tématu [Sledování výsledků vygenerovaných sestav a jejich porovnání s hodnotami směrného plánu](er-trace-reports-compare-baseline.md).
-- Pomocí záznamníku úloh můžete zaznamenávat testovací případy a zahrnovat hodnocení směrného plánu. Více informací viz [Záznamník úloh](../user-interface/task-recorder.md).
-- Seskupte testovací případy pro požadované scénáře testování. Další informace naleznete v tématu [Vytvoření knihoven testů přijetí uživateli pomocí záznamů úkolů a BPM](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
+- Pomocí záznamníku úloh můžete zaznamenávat testovací případy a zahrnovat hodnocení směrného plánu. Více informací viz [Zdroje záznamníku úloh](../user-interface/task-recorder.md).
+- Seskupte testovací případy pro požadované scénáře testování. Další informace naleznete v tématu [Vytvoření a automatizace testů](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
     - K vytvoření knihoven pro testy přijetí uživatelů použijte modelování podnikových procesů v LCS.
     - Pomocí testovacích knihoven BPM vytvořte testovací plán a testovací sady ve službě Microsoft Azure DevOps Services (Azure DevOps).
@@ -59,7 +59,7 @@ Funkční členové skupiny Power Users mohou spustit testy přijetí a integrac
 
 Před provedením úkolů v tomto tématu je třeba splnit následující předpoklady:
 
-- Nasaďte topologii, která podporuje automatizaci testování. Musíte mít přístup do instance této topologie pro roli **Správce systému**. Tato topologie musí obsahovat ukázková data, která budou použita v tomto příkladu. Další informace naleznete v tématu [Nasazení topologií, které podporují automatizaci průběžného sestavení a testů](../perf-test/continuous-build-test-automation.md).
+- Nasaďte topologii, která podporuje automatizaci testování. Musíte mít přístup do instance této topologie pro roli **Správce systému**. Tato topologie musí obsahovat ukázková data, která budou použita v tomto příkladu. Další informace naleznete v tématu [Nasazení a použití prostředí, které podporuje automatizaci průběžného sestavení a testů](../perf-test/continuous-build-test-automation.md).
 - Chcete-li automaticky spustit testy přijetí a integrace s uživatelem, je nutné nainstalovat RSAT do používané topologie a odpovídajícím způsobem ji nakonfigurovat. Informace o tom, jak instalovat RSAT pro práci s aplikacemi Finance and Operations a Azure DevOps, získáte v tématu [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Věnujte pozornost předpokladům pro používání nástroje. Následující obrázek znázorňuje příklad nastavení RSAT. Modrý obdélník ohraničuje parametry, které určují přístup do Azure DevOps. Zelený obdélník označuje parametry, které určují přístup k instanci.
 
     ![Nastavení RSAT](media/GER-Configure.png "Snímek obrazovky dialogového okna Nastavení RSAT")
@@ -81,7 +81,7 @@ Před provedením úkolů v tomto tématu je třeba splnit následující předp
     - **Mapování modelu platby 1611** Konfigurace mapování modelu ER
     - **BACS (UK)** Konfigurace formátu ER
 
-    ![Konfigurace elektronického výkaznictví](media/GER-Configurations.png "Snímek obrazovky stránky Konfigurace elektronického výkaznictví")
+    ![Konfigurace elektronického výkaznictví](media/GER-Configurations.png "Snímek obrazovky stránky se směrným plánem v elektronickém výkaznictví")
 
 3. Vyberte ukázkovou datovou společnost **GBSI**, která má kontext země/oblasti ve Velké Británii.
 4. Konfigurace parametrů závazků:
@@ -93,7 +93,7 @@ Před provedením úkolů v tomto tématu je třeba splnit následující předp
         1. Na pevné záložce **Formáty souboru** nastavte volbu **Obecný formát elektronického exportu** na **Ano**.
         2. V poli **Exportovat konfiguraci formátu** vyberte **BACS (UK)**.
 
-    ![Stránka Metody platby](media/GER-APParameters.png "Snímek obrazovky stránky Metody platby")
+    ![Stránka Metody platby](media/GER-APParameters.png "Snímek obrazovky stránky platebních metod")
 
     > [!NOTE]
     > Pokud používáte odvozenou verzi tohoto formátu ER, která byla vytvořena pro podporu vlastního nastavení, můžete tuto konfiguraci vybrat v **elektronické** metodě platby.
@@ -103,7 +103,7 @@ Před provedením úkolů v tomto tématu je třeba splnit následující předp
     1. Přejděte na **Závazky \> Platby \> Deník plateb**.
     2. Ujistěte se, že jste deník plateb nezaúčtovali.
 
-        ![Stránka Deník platby](media/GER-APJournal.png "Snímek obrazovky stránky Deník platby")
+        ![Stránka Deník plateb](media/GER-APJournal.png "Snímek obrazovky stránky deníku platby")
 
     3. Vyberte **Řádky** a zadejte řádek, který obsahuje následující informace.
 
@@ -116,7 +116,7 @@ Před provedením úkolů v tomto tématu je třeba splnit následující předp
         | Protiúčet      | GBSI OPER       |
         | Metoda platby   | Elektronicky      |
 
-    ![Stránka Platby dodavatele](media/GER-APJournalLines.png "Snímek obrazovky stránky Platby dodavatele")
+    ![Stránka Platby dodavatelů](media/GER-APJournalLines.png "Snímek obrazovky stránky Platby dodavatele")
 
 ## <a name="prepare-the-er-framework-to-test-vendor-payment-processing"></a>Příprava architektury ER pro testování zpracování plateb dodavatele
 
@@ -125,7 +125,7 @@ Před provedením úkolů v tomto tématu je třeba splnit následující předp
 1. Přejděte do nabídky **Správa organizace \> Elektronické výkaznictví \> Parametry elektronického výkaznictví**.
 2. Na kartě **přílohy** vyberte v poli **směrný plán** možnost **soubor** jako typ dokumentu, který používá systém správy dokumentů (DM) pro uchovávání dokumentů souvisejících se základní funkcí jako přílohy DM.
 
-    ![Stránka parametry elektronického výkaznictví](media/GER-ERParameters.png "Snímek obrazovky stránky parametry elektronického výkaznictv")
+    ![Stránka parametrů elektronického výkaznictví](media/GER-ERParameters.png "Snímek obrazovky stránky Parametry elektronického výkaznictví")
 
 ### <a name="generate-baseline-copies-of-vendor-paymentrelated-documents"></a>Generování kopií směrného plánu pro dokumenty související s platbami dodavatele
 
@@ -180,7 +180,7 @@ Zapnutím parametru **spustit v režimu ladění** vynutíte, aby architektura E
     3. Přejděte k výběru místně uloženého kontrolního souboru sestavy **ERVendOutPaymControlReport** ve formátu XLSX.
     4. Do pole **Popis** zadejte **Kontrolní sestava XLS platby**.
 
-    ![Směrné plány pro soubor plateb dodavatele a kontrolní sestavu](media/GER-BaselineAttachments.png "Snímek obrazovky stránky Konfigurace s vybranou kontrolní sestavou Platba XLSX")
+    ![Směrné plány pro soubor a řídicí sestavu platby dodavatele](media/GER-BaselineAttachments.png "Snímek obrazovky se stránkou konfigurace s vybranou sestavou platebního modulu XLSX")
 
 8. Zavřete stránku.
 9. Na pevné záložce **Směrné plány** vyberte **Nový** ke konfiguraci směrného plánu pro soubor platby:
@@ -229,15 +229,15 @@ Tento záznam úloh provádí následující akce:
 
 1. Nastavte stav zpracovaného řádku platby na hodnotu **Žádný**.
 
-    ![Kroky 3 až 4 záznamu úloh](media/GER-Recording1Review1.png "Snímek obrazovky kroků 3 až 4 záznamů úloh")
+    ![Záznam úkolu kroky 3 až 4](media/GER-Recording1Review1.png "Snímek obrazovky záznamu úkolu kroky 3 až 4")
 
 2. Zapněte parametr uživatele ER **Spustit v režimu ladění**.
 
-    ![Kroky 9 až 10 záznamu úloh](media/GER-Recording1Review2.png "Snímek obrazovky kroků 9 až 10 záznamů úloh")
+    ![Záznam úkolu kroky 9 až 10](media/GER-Recording1Review2.png "Snímek obrazovky záznamu úkolu kroky 9 až 10")
 
 3. Vyčistěte protokol ladění ER, který obsahuje výsledky porovnání vygenerovaných souborů do směrných plánů.
 
-    ![Kroky 13 až 15 záznamu úloh](media/GER-Recording1Review3.png "Snímek obrazovky kroků 13 až 15 záznamů úloh")
+    ![Záznam úkolu kroky 13 až 15](media/GER-Recording1Review3.png "Snímek obrazovky záznamu úkolu kroky 13 až 15")
 
 ### <a name="record-the-steps-to-test-vendor-payment-processing"></a>Zaznamenejte kroky k testování zpracování plateb dodavatele
 
@@ -256,21 +256,21 @@ Tento záznam úloh provádí následující akce:
 1. Spusťte zpracování platby dodavateli.
 2. Vyberte správné parametry modulu runtime a zapněte generování kontrolní sestavy.
 
-    ![Kroky 3 až 8 záznamu úloh](media/GER-Recording2Review1.png "Snímek obrazovky kroků 3 až 8 záznamů úloh")
+    ![Záznam úkolu kroky 3 až 8](media/GER-Recording2Review1.png "Snímek obrazovky záznamu úkolu kroky 3 až 8")
 
 3. Přejděte k protokolu ladění ER pro zaznamenání výsledků porovnání vygenerovaných výstupů do odpovídajících směrných plánů.
 
     V protokolu ladění ER se výsledky porovnání zobrazí v poli **Generovaný text**. Pole **Komponenta formátu** a **Cesta formátu, která způsobila záznam do protokolu**, odkazují na komponentu souboru, pro kterou byl vygenerovaný výstup porovnán se směrným plánem.
 
-    ![Položky na stránce Protokoly spuštění elektronického výkaznictví](media/GER-ERDebugLog.png "Snímek obrazovky položek Protokoly spuštění elektronického výkaznictví")
+    ![Položky na stránce Protokoly spuštění elektronického výkaznictví](media/GER-ERDebugLog.png "Snímek položek na stránce Protokoly spuštění Parametry elektronického výkaznictví")
 
 4. Porovnání aktuálního výstupu se směrným plánem je zaznamenáno pomocí možnosti **Ověřit** záznamník úloh a výběrem možnosti **Aktuální hodnota**.
 
-    ![Použití možnosti Ověřit pro porovnání s aktuální hodnotou](media/GER-TRRecordValidation.png "Snímek obrazovky použití možnosti Ověřit pro porovnání s aktuální hodnotou")
+    ![Použití možnosti ověření pro porovnání s aktuální hodnotou](media/GER-TRRecordValidation.png "Snímek obrazovky použití možnosti ověření pro porovnání s aktuální hodnotou")
 
     Následující obrázek ukazuje, jak vypadají zaznamenané kroky ověření v záznamu úloh.
 
-    ![Kroky 13 až 15 záznamu úloh](media/GER-Recording2Review2.png "Snímek obrazovky kroků 13 až 15 záznamů úloh")
+    ![Záznam úkolu kroky 13 a 15](media/GER-Recording2Review2.png "Snímek obrazovky záznamu úkolu kroky 13 a 15")
 
 ## <a name="add-the-recorded-tests-to-azure-devops"></a>Přidání zaznamenaných testů do Azure DevOps
 
@@ -287,7 +287,7 @@ Tento záznam úloh provádí následující akce:
     1. Pojmenujte testovací případ **Zkušební zpracování plateb dodavatelů pomocí formátu systému BACS (UK)**.
     2. Připojte soubor **Record. XML** ze složky **Proces**, kterou jste stáhli dříve.
 
-    ![Nové testovací případy pro vybraný testovací plán](media/GER-RSAT-DevOps-Tests-Passed.png "Snímek obrazovky nových testovacích případů pro vybraný testovací plán")
+    ![Nové testovací případy pro vybraný zkušební plán](media/GER-RSAT-DevOps-Tests-Passed.png "Snímek obrazovky Nové testovací případy pro vybraný zkušební plán")
 
 > [!NOTE]
 > Věnujte pozornost správnému pořadí provedení přidaných testů.
@@ -299,14 +299,14 @@ Tento záznam úloh provádí následující akce:
 1. Otevřete v aktuální topologii místní aplikaci RSAT.
 2. Vyberte možnost **Load** k načtení testů, které se aktuálně nacházejí v aplikaci Azure DevOps, do RSAT.
 
-    ![Testy, které byly nahrány do RSAT](media/GER-RSAT-RSAT-Tests-Loaded.png "Snímek obrazovky testů nahraných do RSAT")
+    ![Testy načtené na RSAT](media/GER-RSAT-RSAT-Tests-Loaded.png "Snímek obrazovky testů načtených na RSAT")
 
 ### <a name="create-automation-and-parameters-files"></a>Vytvoření souborů automatizace a parametrů
 
 1. V RSAT vyberte testy, které jste načetli z Azure DevOps.
 2. Vyberte **Nový** k vytvoření souborů automatizace a parametrů RSAT.
 
-    ![Soubory automatizace a parametrů vytvořené v RSAT](media/GER-RSAT-RSAT-Tests-Initiated.png "Snímek obrazovky souborů automatizace a parametrů vytvořené v RSAT")
+    ![Automatizace RSAT a soubory parametrů vytvořené v RSAT](media/GER-RSAT-RSAT-Tests-Initiated.png "Snímek obrazovky Automatizace RSAT a soubory parametrů vytvořené v RSAT")
 
 ### <a name="modify-the-parameters-files"></a>Změna souborů parametrů
 
@@ -333,11 +333,11 @@ Všimněte si, že testovací případy jsou automaticky spuštěny v aplikaci p
 
 Výsledky testu se ukládají na RSAT. Povšimněte si, že byly oba testy předány.
 
-![Testy předané v RSAT](media/GER-RSAT-RSAT-Tests-Passed.png "Snímek obrazovky testů, které byly předány do RSAT")
+![Testy předané v RSAT](media/GER-RSAT-RSAT-Tests-Passed.png "Snímek obrazovky testů, které byly předány v RSAT")
 
 Všimněte si, že výsledky spuštění testu jsou také odesílány do Azure DevOps, aby bylo možné provádět další analýzu.
 
-![Výsledky spuštění testu v Azure DevOps](media/GER-RSAT-DevOps-Tests-Added.png "Snímek obrazovky s výsledky spuštění testu v Azure DevOps")
+![Výsledky spuštění testu v Azure DevOps](media/GER-RSAT-DevOps-Tests-Added.png "Obrazovka výsledků spuštění testu v Azure DevOps")
 
 ### <a name="simulate-a-situation-where-tests-fail"></a>Simulace situace, kdy se testy nedaří
 
@@ -360,24 +360,24 @@ Všimněte si, že testovací případy jsou automaticky spuštěny v aplikaci p
 
 Výsledky testu se ukládají na RSAT. Všimněte si, že druhý test selhal při druhém spuštění.
 
-![Neúspěšné výsledky testů na obrazovce RSAT](media/GER-RSAT-RSAT-Tests-Failed.png "Snímek obrazovky neúspěšných výsledků testu v RSAT")
+![Neúspěšné výsledky testů v RSAT](media/GER-RSAT-RSAT-Tests-Failed.png "Snímek obrazovky neúspěšných výsledků testů v RSAT")
 
 Všimněte si, že výsledky spuštění testu jsou také odesílány do Azure DevOps, aby bylo možné provádět další analýzu.
 
-![Neúspěšné výsledky testů v Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed.png "Snímek obrazovky neúspěšných výsledků testů v Azure DevOps")
+![Neúspěšné výsledky testů v RSAT Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed.png "Snímek obrazovky neúspěšných výsledků testů v Azure DevOps")
 
 Můžete mít přístup ke stavu každého testu. K protokolu spuštění můžete také přistupovat, abyste analyzovali důvody selhání. Na následujícím obrázku protokol spuštění ukazuje, že k chybě došlo kvůli rozdílu v obsahu mezi vygenerovaným souborem platby a jeho směrným plánem.
 
-![Protokol provádění pro analýzu selhání Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Snímek obrazovky protokolu spuštění pro analýzu chyby v Azure DevOps")
+![Protokol provádění pro analýzu chyb v Azure DevOps](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Snímek obrazovky protokolu provádění s analýzou chyby v Azure DevOps")
 
 Proto, jak jste viděli, lze fungování formátu ER vyhodnotit automaticky pomocí RSAT jako testovací platformy a pomocí testovacích případů na základě záznamníku úloh, které používají funkci ER.
 
 ## <a name="additional-resources"></a>Další zdroje
 
-- [Záznamník úkolů](../user-interface/task-recorder.md)
+- [Zdroje záznamníku úloh](../user-interface/task-recorder.md)
 - [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357)
-- [Vytvoření knihoven akceptačního testování pomocí záznamu úloh a BPM](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
-- [Nasazení topologií podporujících průběžné sestavování a automatizace testování](../perf-test/continuous-build-test-automation.md)
-- [Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami ER](er-trace-reports-compare-baseline.md)
-- [Upgradujte formát elektronického výkaznictví přijetím nové základní verze tohoto formátu](tasks/er-upgrade-format.md)
+- [Vytvoření a automatizace akceptačních testování uživatele](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
+- [Nasazení a používání prostředí podporujícího průběžné sestavování a automatizace testování](../perf-test/continuous-build-test-automation.md)
+- [Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami](er-trace-reports-compare-baseline.md)
+- [Elektronické výkaznictví - Upgrade formátu přijetím nové základní verze tohoto formátu](tasks/er-upgrade-format.md)
 - [Import konfigurace ER ze služby Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)

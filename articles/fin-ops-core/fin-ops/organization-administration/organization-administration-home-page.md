@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36784311294f80f56f680cd6d14cc989b629ba12
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b1b519d116a55c255cf90d9478ee1714de90264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176877"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811304"
 ---
 # <a name="organization-administration-home-page"></a>Domovská stránka Správa organizace
 
@@ -46,7 +46,7 @@ Organizace představuje skupinu lidí, kteří spolupracují na provádění obc
 
 Před nastavením organizací a organizačních hierarchií se ujistěte, že máte plán, jak bude vaše společnost modelována. Organizační model má podstatný vliv na implementaci a obchodní procesy.
 
-- [Organizace a organizační hierarchie](organizations-organizational-hierarchies.md)
+- [Přehled organizací a organizačních hierarchií](organizations-organizational-hierarchies.md)
 - [Plánování organizační hierarchie](plan-organizational-hierarchy.md)
 - [Vytvoření organizační hierarchie](tasks/create-organization-hierarchy.md) (Průvodce záznamem úloh)
 - [Vytvoření právnické osoby](tasks/create-legal-entity.md) (Průvodce záznamem úloh)
@@ -58,8 +58,8 @@ Globální adresář je centralizovaným úložištěm pro hlavní data, která 
 
 Po vytvoření globálního adresáře můžete vytvořit další adresáře podle potřeby, například samostatný adresář pro každou společnost v organizaci a pro každé odvětví obchodu.
 
-- [Globální adresář](overview-global-address-book.md)
-- [Plán konfigurace globálního adresáře a dalších adresářů](plan-configuration-global-address-book-additional-address-books.md)
+- [Přehled globálního adresáře](overview-global-address-book.md)
+- [Plán pro globální adresář a další adresáře](plan-configuration-global-address-book-additional-address-books.md)
 - [Konfigurace globálního adresáře](tasks/configure-global-address-book.md)
 - [Často kladené dotazy o adresáři](qa-address-books.md)
 
@@ -67,10 +67,10 @@ Po vytvoření globálního adresáře můžete vytvořit další adresáře pod
 
 Workflow je systém, který nabízí funkce, pomocí kterých lze vytvářet individuální workflowy nebo obchodní procesy. Když vytváříte workflow, určete tok dokumentu nebo jeho procházení systémem pomocí zobrazení toho, kdo musí splnit úkol, provádět rozhodování nebo schválení dokumentu.
 
-- [Přehled workflowu](overview-workflow-system.md)
-- [Prvky workflowu](workflow-elements.md)
-- [Akce workflowu](workflow-actions.md)
-- [Vytvoření workflow](create-workflow.md)
+- [Přehled systému workflow](overview-workflow-system.md)
+- [Prvky workflow](workflow-elements.md)
+- [Akce v procesech schválení workflow](workflow-actions.md)
+- [Přehled vytvoření workflow](create-workflow.md)
 
 ## <a name="electronic-signatures"></a>Elektronické podpisy
 
@@ -85,14 +85,14 @@ Můžete používat elektronické podpisy pro důležité obchodní procesy. Ně
 
 Plánováním, sledováním a analýzou případů můžete vytvořit efektivní řešení, která lze použít pro podobné případy. Například když zástupci servisu zákazníka nebo pracovníci lidských zdrojů vytváří případy, mohou najít informace v článcích znalostní databáze o tom, jak pracovat nebo vyřešit případy efektivněji.
 
-- [Přehled správy příkazů](cases.md)
-- [Konfigurace bezpečnosti případu, procesů a kategorií](plan-case-management.md)
+- [Přehled správy případů](cases.md)
+- [Plánování bezpečnosti kategorie případu, procesů případu a kategorií případu](plan-case-management.md)
 
 ## <a name="record-templates"></a>Šablony záznamu
 
 Šablony záznamu vám mohou pomoci vytvořit záznamy rychleji. Můžete vytvořit šablonu záznamu tak, že hodnoty pole, které jsou často používány, nemusí být zadány explicitně pro každý nový záznam.
 
-- [Šablony záznamu](record-templates.md)
+- [Přehled šablon záznamu](record-templates.md)
 - [Vytvoření šablony záznamu pro usnadnění zadávání dat](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (Průvodce záznamem úloh)
 - [Vytvoření nového záznamu s použitím šablony záznamu](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Průvodce záznamem úloh)
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 4624f7e31c6dca616ff4ee824453b8971c1865e7
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ebca416e94f44d0448a4f4d0be08f13e30e749e9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249881"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813217"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v Supply Chain Management.
 
@@ -43,7 +43,7 @@ Toto téma se věnuje šablonám a základní úloze, které se používají k s
 
 ## <a name="templates-and-tasks"></a>Šablony a úkoly
 
-Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu PowerApps](https://preview.admin.powerapps.com/dataintegration). Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
+Chcete-li získat přístup k dostupným šablonám, otevřete [Centrum pro správu Power Apps](https://preview.admin.powerapps.com/dataintegration). Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony.
 
 K synchronizaci účtů z aplikace Sales do aplikace Supply Chain Management slouží následující šablony a základní úkol:
 
@@ -111,7 +111,7 @@ Na následujícím obrázku je příklad mapování šablony v integraci dat.
 
 [Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synchronizace hlaviček a řádků prodejní objednávky přímo z aplikace Supply Chain Management do aplikace Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
 
 [Synchronizace hlaviček a řádků faktury přímo z aplikace Supply Chain Management do aplikace Sales](sales-invoice-template-mapping-direct.md)
 

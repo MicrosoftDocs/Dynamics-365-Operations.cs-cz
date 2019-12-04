@@ -1,5 +1,5 @@
 ---
-title: Nastavení správy nabídek
+title: Nastavení správy nabídek v aplikaci Attract
 description: Toto téma popisuje, jak nastavit nabídky v aplikaci Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010837"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832715"
 ---
-# <a name="set-up-offer-management"></a>Nastavení správy nabídek 
+# <a name="set-up-offer-management-in-attract"></a>Nastavení správy nabídek v aplikaci Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -206,4 +206,4 @@ Existuje několik částí procesu vytváření nabídky, které může konfigur
     - ESign – Toto je výchozí možnost poskytovaná přímo po vybalení, kde může uživatel podepsat nabídku zadáním svého jména a iniciál.
 
 
-Další informace o procesu vytváření nabídky naleznete v tématu [Vytvoření, schválení a podepisování nabídek](./creating-offers.md).
+Další informace o procesu vytváření nabídky naleznete v tématu [Vytvoření, schválení a podepsání nabídek](./creating-offers.md).

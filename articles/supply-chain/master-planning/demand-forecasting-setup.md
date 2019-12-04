@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653504"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813792"
 ---
 # <a name="demand-forecasting-setup"></a>Nastavení prognózy poptávky
 
@@ -70,7 +70,8 @@ Pokud chcete generovat prognózu, aplikace Supply Chain Management používá we
 -   Název účtu úložiště Azure
 -   Klíč účtu úložiště Azure
 
-**Poznámka:** Název účtu úložiště Azure a klíč jsou nutné pouze při použití vlastního účtu pro úložiště. Při nasazování místní verze musíte mít vlastní účet úložiště ve službě Azure, abyste mohli používat službu Machine Learning pro přístup k historickým datům. 
+> [!NOTE]
+> Název účtu úložiště Azure a klíč jsou nutné pouze při použití vlastního účtu pro úložiště. Při nasazování místní verze musíte mít vlastní účet úložiště ve službě Azure, abyste mohli používat službu Machine Learning pro přístup k historickým datům. 
 
 Pokud chcete vytvořit předpovědi poptávky, můžete nasadit vlastní službu pomocí experimentů s prognózou poptávky v rámci Machine Learning Studio nebo aplikace Supply Chain Management. Pokyny pro nasazení experimentů s prognózou poptávky v podobě webové služby jsou k dispozici v aplikaci Supply Chain Management. Na stránce **Parametry vytváření prognózy poptávky** klepněte na kartu **Azure Machine Learning**.
 
@@ -93,7 +94,7 @@ Na kartě **Alokační klíče** lze nastavit **Parametry algoritmu prognózy** 
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Úvod do prognózy poptávky](introduction-demand-forecasting.md)
+[Přehled prognózy poptávky](introduction-demand-forecasting.md)
 
 [Generování statistické základní prognózy](generate-statistical-baseline-forecast.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e9fe8f78121428770e6516159f5eceb6976c4c9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdfa9ed24d0456d9beaec03ebac89098131d0675
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181788"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771135"
 ---
 # <a name="financial-reporting"></a>Finanční výkaznictví
 
@@ -47,14 +47,14 @@ Následující součásti finančního výkaznictví umožňují snadné vytvá�
 | Součást        | Funkce | Doplňkové informace |
 |------------------|-----------|------------------------|
 | Návrhář sestav  | Vytváření stavebních bloků sestav, které v kombinaci definují a generují sestavy. Průvodce sestavou provádí méně zkušené uživatele procesem návrhu. Pokročilí uživatelé mohou vytvořit nové stavební bloky sestav nebo upravit existující stavební bloky podle svých potřeb. | |
-| Plánování sestav | Naplánujte jednu sestavu nebo skupinu sestav tak, aby se generovala v pravidelných intervalech. | [Generování finanční sestavy](generate-financial-report.md) |
+| Plánování sestav | Naplánujte jednu sestavu nebo skupinu sestav tak, aby se generovala v pravidelných intervalech. | [Generování finančních sestav](generate-financial-report.md) |
 
 ## <a name="features"></a>Funkce
 <table>
 <thead>
 <tr>
 <th>Funkce</th>
-<th>popis</th>
+<th>Popis</th>
 </tr>
 </thead>
 <tbody>
@@ -96,4 +96,4 @@ Následující součásti finančního výkaznictví umožňují snadné vytvá�
 </table>
 
 ## <a name="additional-resources"></a>Další zdroje
-[Generování finanční sestavy](generate-financial-report.md)
+[Generování finančních sestav](generate-financial-report.md)

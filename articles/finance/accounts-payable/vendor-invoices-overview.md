@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 616d3f5560d18c7fdd8a092c3fbca0fde44be069
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b9708c37f10cd08e6b98167fe24d9ae0380c3dac
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570418"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772161"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
@@ -101,7 +101,7 @@ Na stránce **Historie workflowu** můžete resetovat stav workflow na **Koncept
 ## <a name="additional-resources"></a>Další zdroje
 
 - [Nastavení zásad faktur dodavatele](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
-- [Zadání dat faktury do závazků s použitím faktury dodavatele](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+- [Zadání dat faktur do systému závazků pomocí faktury dodavatele](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [Zadání dat faktury do závazků s použitím deníku schválení](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Zadání dat faktury do systému závazků s použitím evidence faktur](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Zaznamenání faktury dodavatele do deníku faktur](tasks/record-vendor-invoice-invoice-journal.md)

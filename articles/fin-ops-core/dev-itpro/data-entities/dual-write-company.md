@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: aa4d54fd7b3ab407751ad6ca1032d742c23eed41
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 21c2143f4fa58d51f64e349c7963cb17e04bad97
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184524"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772430"
 ---
 ## <a name="company-concept-in-common-data-service"></a>Koncept společnosti v Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 V aplikaci Finance and Operations je koncept *společnosti* právní i obchodní konstrukt. Je to také hranice pro zabezpečení a viditelnost dat. Uživatelé pracují vždy v kontextu jedné společnosti a většina dat je rozdělena podle společnosti.
 
@@ -60,12 +58,14 @@ Jak ukazuje předchozí ilustrace, toto mapování 1:1 mezi organizační jednot
 
 Závěrečným tématem, které je třeba projednat, je jak dvojí zápis určuje, kterému týmu vlastníků se mají přiřadit záznamy. Toto chování je řízeno polem **Výchozí vlastnící tým** v záznamu cdm\_Company. Je-li záznam cdm\_Company povolen pro duální zápis, modul plug-in automaticky vytvoří přidruženou organizační jednotku a tým vlastníků (pokud již neexistuje) a nastaví pole **Výchozí vlastnící tým**. Správce může toto pole změnit na jinou hodnotu. Správce však nemůže vymazat pole, pokud je entita povolena pro duální zápis.
 
+> [!div class="mx-imgBorder"]
 ![Pole výchozího vlastnícího týmu](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Prokládání a zavádění společnosti
 
 Integrace Common Data Service přináší paritu společnosti použitím identifikátoru společnosti k prokládání dat. Jak ukazuje následující ilustrace, všechny entity specifické pro společnost jsou rozšířeny tak, aby měly vztah N:1 s entitou cdm\_Company.
 
+> [!div class="mx-imgBorder"]
 ![Vztah N:1 mezi entitou specifickou pro společnost a entitou cdm_Company](media/dual-write-bootstrapping.png)
 
 + U záznamů se po přidání a uložení společnosti hodnota změní na jen pro čtení. Uživatelé by proto měli zajistit, aby vybrali správnou firmu.

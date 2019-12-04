@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76bae24a975c922ea49ee2584e87cf43ccca61c7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 22a7b0acae02738e4f14905edb13fac1da0d0213
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176737"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770590"
 ---
 # <a name="posting-definitions"></a>Definice účtování
 
@@ -59,6 +59,6 @@ Tato omezení platí v případě, že vytvoříte odkazy v definicích účtov�
 -   Definici účtování můžete přiřadit k libovolnému typu transakce, ale tento typ transakce musí být ve stejném modulu jako definice účtování. Použijte stránku **Definice účtování transakcí** a podívejte se, v kterém modulu typ transakce je.
 
 
-Další informace získáte v části [Příklady definic účtování](example-posting-definitions.md). 
+Další informace získáte v části [Příklady definice účtování](example-posting-definitions.md). 
 
 

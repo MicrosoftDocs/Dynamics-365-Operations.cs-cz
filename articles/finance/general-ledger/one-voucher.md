@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
+ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553180"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "2810692"
 ---
 # <a name="one-voucher"></a>Jeden doklad
 
@@ -83,6 +83,9 @@ Na základě rozhovorů s odběrateli společnost Microsoft zkompilovala násled
 
 Následujících scénářů lze dosáhnout pouze pomocí funkce jednoho dokladu. Pokud vaše organizace má některý z uvedených scénářů, je nutné povolit více transakcí, které mají být zadány do dokladu změnou nastavení parametru **Povolit více transakcí v rámci jednoho dokladu** na stránce **Parametry hlavní knihy**. Tyto funkční mezery budou vyplněny pomocí dalších funkcí v novějších verzích.
 
+> [!Note]
+> [Pro každý z následujících scénářů musí být pole **Povolit více transakcí v rámci jednoho dokladu** musí být nastaveno na Ano na pevné záložce **Obecné** na stránce **Parametry hlavní knihy**.]
+
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Zaúčtování plateb dodavatelů v souhrnné formě na bankovní účet
 
 **Scénář** Organizace komunikuje seznam dodavatelů a částky do jeho banky a banka používá tento seznam pro platby dodavatelů jménem organizace. Banka zaúčtuje součet plateb jako jeden výběr na bankovním účtu.
@@ -120,6 +123,9 @@ Následujících transakce dlouhodobého majetku také vytvoří více transakc�
 - Majetek je rozdělen.
 - Je zapnutý parametr k vypočtení odpisu pro vyřazení, a pak je majetek vyřazen.
 - Datum uvedení majetku do služby je před datem pořízení. Z tohoto důvodu je zaúčtována oprava odpisu.
+
+> [!Note]
+> Při zadávání transakcí zkontrolujte, zda se všechny transakce vztahují ke stejnému dlouhodobému majetku. Doklad nebude zaúčtován, pokud zahrnuje více než jeden dlouhodobý majetek, a to i v případě, že je pole **Nový doklad** nastaveno na jedno číslo dokladu pouze na stránce **Názvy deníku** v hlavní knize. Pokud do dokladu zahrnete více než jeden dlouhodobý majetek, může se zobrazit zpráva **Na doklad může existovat jen jedna transakce dlouhodobého majetku** a tento doklad nebude možné zaúčtovat.  
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Cizí směnky a vlastní směnky
 Cizí směnky a vlastní směnky vyžadují, aby byl použit jeden doklad, protože transakce přesouvají zůstatek zákazníka nebo dodavatele z jednoho účtu hlavní knihy pohledávek/závazků na jiný, na základě stavu platby.

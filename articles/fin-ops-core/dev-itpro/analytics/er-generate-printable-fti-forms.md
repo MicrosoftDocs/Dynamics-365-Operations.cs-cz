@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 731b6a61bd78388f3db0a7007478e3a5e9629a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181420"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771276"
 ---
 # <a name="generate-printable-fti-forms"></a>Generovat formulářů FTI k tisku
 
@@ -70,7 +70,7 @@ V instanci aplikace musíte mít konfiguraci formátu elektronického výkaznict
 > [!NOTE]
 > Tato konfigurace formátu musí být vytvořena pro datový model CustomersInvoicing a musí používat mapování modelu, které má kořenový popisovač **FreeTextInvoice**.
 
-Více informací o konfiguraci formátů elektronického výkaznictví naleznete v části [Vytvoření konfigurace formátů pro elektronické výkaznictví](tasks/er-format-configuration-2016-11.md). Informace o tom, jak navrhovat formáty elektronického výkaznictví pro generování sestav ve formátu OpenXML, naleznete v části [Návrh konfigurace pro generování sestav ve formátu OpenXML pro elektronické výkaznictví](tasks/er-design-reports-openxml-2016-11.md).
+Více informací o konfiguraci formátů elektronického výkaznictví naleznete v části [Vytvoření konfigurace formátů pro elektronické výkaznictví (listopad 2016)](tasks/er-format-configuration-2016-11.md). Informace o tom, jak navrhovat formáty elektronického výkaznictví pro generování sestav ve formátu OpenXML, naleznete v části [Návrh konfigurace pro generování sestav ve formátu OPENXML pro elektronické výkaznictví (listopad 2016)](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="configure-print-management"></a>Konfigurace správy tisku
 Chcete-li generovat formuláře FTI pomocí architektury elektronického výkaznictví, můžete přiřadit formáty elektronického výkaznictví stejným způsobem jako sestavy SSRS. Chcete-li přidružit formát elektronického výkaznictví ke všem FTI pohledávek, přejděte na **Pohledávky** \> **Nastavení** \> **Formuláře** \> **Nastavení formuláře** \> **Obecné** \> **Správa tisku** \> **Volná faktura** \> **Originál**. Chcete-li přidružit formát elektronického výkaznictví ke konkrétnímu odběrateli nebo faktuře, postupujte podle následujících kroků.
@@ -94,7 +94,7 @@ Chcete-li generovat formuláře FTI, můžete vybrat faktury podle rozsahu nebo 
 
 ![Náhled faktury](media/FTIbyGER-InvoiceExcelPreview.png)
 
-Pokud používáte formáty elektronického výkaznictví pro tisk formulářu FTI tímto způsobem, použijí se výchozí cíloví umístění souboru elektronického výkaznictví. Cílové umístění nelze změnit. Více informací o konfiguraci cílových umístění elektronického výkaznictví pro formáty elektronického výkaznictví naleznete v části [Cílová umístění elektronického výkaznictví](electronic-reporting-destinations.md).
+Pokud používáte formáty elektronického výkaznictví pro tisk formulářu FTI tímto způsobem, použijí se výchozí cíloví umístění souboru elektronického výkaznictví. Cílové umístění nelze změnit. Více informací o konfiguraci cílových umístění elektronického výkaznictví pro formáty elektronického výkaznictví (ER) naleznete v části [Cílová umístění elektronického výkaznictví](electronic-reporting-destinations.md).
 
 Můžete také generovat formuláře FTI při zaúčtování FTI zapnutím možnosti **Tisknout fakturu** a vypnutím možnoti **Použít cílová umístění správy tisku**.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 242e9fd5fd4b22f3081367cf33ff18ff5e4174a5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026249"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814736"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Distribuce a plánování dotazníků
 
@@ -54,7 +54,8 @@ Chcete-li přiřadit skupinu dotazníků k dotazníku, na stránce **Dotazníky*
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Plánované relace odpovědí v dotazníku
 Plánované relace odpovědí jsou dotazníky, pro které jste navrhli a vybrali respondenty. 
 
-> **Poznámka:** Než nastavíte plánované relace odpovědí, je nutné navrhnout dotazník. 
+> [!NOTE]
+>   Než nastavíte plánované relace odpovědí, je nutné navrhnout dotazník. 
 
 Na stránce **Plánovaná relace odpovědí** můžete vytvořit plánovanou relaci odpovědí pro jednotlivé zaměstnance. V seznamu na stránce jsou zobrazeny všechny plánované dotazníky. 
 
@@ -108,12 +109,14 @@ Pokud používáte plánovou relaci odpovědí, je nutné to dané osobě oznám
 
 Na stránce **Plány dotazníků** lze připravit a odeslat e-mail všem respondentům přiřazeným k dotazníku. Zadejte text e-mailu na kartě **E-mail pro samoobsluhu pro zaměstnance** kartu. Po spuštění plánu klikněte na **Funkce** &gt; **Odeslat e-mail** pro vygenerování a odeslání e-mailu respondentům. Respondenti se pak mohou přihlásit na webové stránce a vyplnit dotazník. 
 
-> **Poznámka:** Před použitím funkce e-mailu musí správce IT zadat nastavení e-mailu na stránce **Parametry e-mailu**.
+> [!NOTE]
+>   Před použitím funkce e-mailu musí správce IT zadat nastavení e-mailu na stránce **Parametry e-mailu**.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Ukončení plánovaného dotazníku
 Plánovaný dotazník lze ukončit, jakmile všichni respondenti vyplní jim přiřazené relace odpovědí. Po ukončení plánovaného dotazníku není možné zkopírovat jeho nastavení do nového plánu. 
 
-> **Poznámka:** Pokud některý z respondentů nevyplnil dotazník a přesto chcete ukončit plánování, odstraňte nejprve příslušné respondenty ze seznamu na stránce **Plánovaná relace odpovědí**. Poté můžete ukončit plánování.
+> [!NOTE]
+>   Pokud některý z respondentů nevyplnil dotazník a přesto chcete ukončit plánování, odstraňte nejprve příslušné respondenty ze seznamu na stránce **Plánovaná relace odpovědí**. Poté můžete ukončit plánování.
 
 ## <a name="completing-questionnaires"></a>Vyplňování dotazníků
 Po návrhu a distribuci dotazníku mohou vybraní respondenti dotazník vyplnit. Dotazníky, které máte k dispozici, můžete vyplnit ze dvou míst:
@@ -126,10 +129,10 @@ Dotazníky lze zpřístupnit pro určité uživatele, skupiny uživatelů nebo v
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Vytváření dotazníků](design-questionnaires.md)
+[Návrh dotazníků](design-questionnaires.md)
 
-[Používání dotazníků](questionnaires.md)
+[Dotazníky](questionnaires.md)
 
-[Zobrazení a zhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
+[Zobrazení a vyhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
 
 

@@ -1,5 +1,5 @@
 ---
-title: Povolit integraci Broadbean v aplikaci Microsoft Dynamics 365 Talent - Attract
+title: Povolení integraci Broadbean v aplikaci Attract
 description: V tomto tématu je vysvětleno, jak nakonfigurovat aplikaci Microsoft Dynamics 365 Talent - Attract, aby publikovala práce na externí pracovní vývěsky, jako je Broadbean.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0ca655655f79ddf88b6f6c7377a1b596477c35a7
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 10b612711e81b2b368ed23fdd95ab6a66451f0ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552133"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833201"
 ---
-# <a name="enable-broadbean-integration-in-microsoft-dynamics-365-talent---attract"></a>Povolit integraci Broadbean v aplikaci Microsoft Dynamics 365 Talent - Attract
+# <a name="enable-broadbean-integration-in-attract"></a>Povolení integraci Broadbean v aplikaci Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Chcete dostat své otevřené pozice před co největší množství kvalifikovaných kandidátů. Náborové weby, například Broadbean, vám pomohou dosáhnout tohoto cíle. Microsoft Dynamics 365 Talent: Attract vám nyní umožní publikovat pracovní místa na Broadbean a společnost Microsoft neustále v této oblasti poskytuje nové nabídky.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
-ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
+ms.openlocfilehash: c11123c0d53fcf4ba67e83fe64d2d6e692d5b6f1
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564930"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771345"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurace importu dat z aplikace SharePoint
 
@@ -43,7 +43,7 @@ Pro dokončení příkladů v tomto tématu musíte mít následující přístu
 - Konfigurace formátu a modelu ER pro platby 1099.
 
 ### <a name="create-required-er-configurations"></a>Vytvoření požadovaných konfigurací ER
-Přehrajte si průvodce záznamem úloh **ER Import dat ze souboru aplikace Microsoft Excel**, které jsou součástí obchodního procesu **7.5.4.3 Acquire/Develop IT service/solution components (10677)**. Tito průvodci záznamem úloh vás provedou procesem navrhování a použití konfigurací ER pro interaktivní import transakcí dodavatele z externích souborů aplikace Microsoft Excel. Další informace naleznete v tématu [Analýza příchozích dokumentů v aplikaci Microsoft Excel](parse-incoming-documents-excel.md). Po dokončení průvodců záznamem úloh, bude mít následující nastavení.
+Přehrajte si průvodce záznamem úloh **ER Import dat ze souboru aplikace Microsoft Excel**, které jsou součástí obchodního procesu **7.5.4.3 Acquire/Develop IT service/solution components (10677)**. Tito průvodci záznamem úloh vás provedou procesem navrhování a použití konfigurací ER pro interaktivní import transakcí dodavatele z externích souborů aplikace Microsoft Excel. Další informace naleznete v tématu [analýza příchozích dokumentů do formátu Excel](parse-incoming-documents-excel.md). Po dokončení průvodců záznamem úloh, bude mít následující nastavení.
 
 #### <a name="er-configurations"></a>Konfigurace ER
 

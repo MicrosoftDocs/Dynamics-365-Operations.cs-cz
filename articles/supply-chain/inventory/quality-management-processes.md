@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22372bd2d42b526d10e39174e7fb5ec5281d1b73
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 544721af404775a6d8b65628848caa84ceaebe30
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572781"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813815"
 ---
 # <a name="quality-management-processes"></a>Procesy správy kvality
 
@@ -90,14 +90,14 @@ Je vhodné definovat jedinečný typ dokumentu pro opravy pomocí stránky **Typ
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Povolení správy kvality](enable-quality-management.md)
+[Přehled správy kvality](enable-quality-management.md)
 
-[Povolení správy neshod](enable-nonconformance-management.md)
+[Řízení neshody](enable-nonconformance-management.md)
 
 [Blokování zásob](inventory-blocking.md)
 
 [Karanténní příkazy](quarantine-orders.md)
 
-[Nastavení objednávky kvality (Průvodce záznamem úloh)](tasks/set-up-quality-orders.md)
+[Nastavení objednávek kvality](tasks/set-up-quality-orders.md)
 
-[Kontrola kvality zboží (průvodce záznamem úloh)](tasks/inspect-quality-goods.md)
+[Kontrola kvality zboží](tasks/inspect-quality-goods.md)

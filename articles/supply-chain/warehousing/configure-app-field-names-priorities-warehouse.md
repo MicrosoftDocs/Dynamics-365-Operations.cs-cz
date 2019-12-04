@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 11f6c96cc07c63d2c0c6a94385916b3396a77ed5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251078"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814966"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurace názvů polí aplikace v aplikaci Warehousing
 
@@ -32,7 +32,8 @@ ms.locfileid: "2251078"
 
 Toto téma popisuje, jak definovat a konfigurovat názvy polí aplikace skladu a priority v aplikaci Dynamics 365 Supply Chain Management. 
 
-**Poznámka:** Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Warehousing je aplikace, která slouží k provádění úloh skladu. Je možné definovat a konfigurovat názvy polí použitých v aplikaci, jakož i konfigurovat priority, do kterých by měly být přiřazeny názvy polí. Toto téma vysvětluje, jak definovat a konfigurovat tyto názvy polí aplikace skladu a priority, a zároveň způsob jejich použití v aplikaci Warehousing. Podrobné informace o konfiguraci připojení k aplikaci Warehousing naleznete v kurzu [Instalace a konfigurace aplikace Finance and Operations - Warehousing](install-configure-warehousing-app.md).
+> [!NOTE]
+> Toto téma se vztahuje k funkcím v modulu Řízení skladu. Nevztahuje se na funkce v modulu Řízení zásob. Warehousing je aplikace, která slouží k provádění úloh skladu. Je možné definovat a konfigurovat názvy polí použitých v aplikaci, jakož i konfigurovat priority, do kterých by měly být přiřazeny názvy polí. Toto téma vysvětluje, jak definovat a konfigurovat tyto názvy polí aplikace skladu a priority, a zároveň způsob jejich použití v aplikaci Warehousing. Podrobné informace o konfiguraci připojení k aplikaci Warehousing naleznete v kurzu [Přehled instalace a konfigurace aplikace Warehousing](install-configure-warehousing-app.md).
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurace názvů polí aplikace skladu
 
@@ -139,7 +140,7 @@ Na základě nastavení priority pole aplikace skladu ve výše uvedené tabulce
 
 Zbývající metadata, například umístění, se nezobrazí na stránce úloh, ale budou zobrazena na stránce podrobností. Další informace a příklady uživatelského rozhraní naleznete v příspěvku blogu [Oznámení aplikace Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-<a name="additional-resources"></a>Další prostředky
+<a name="additional-resources"></a>Další zdroje
 --------
 
-[Instalace a konfigurace Microsoft Dynamics 365 for Finance and Operations – Sklady](install-configure-warehousing-app.md)
+[Přehled instalace a konfigurace aplikace Warehousing](install-configure-warehousing-app.md)

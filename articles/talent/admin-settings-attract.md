@@ -1,5 +1,5 @@
 ---
-title: Konfigurace informací o společnosti v aplikaci společnosti Microsoft Dynamics 365 Talent – Attract
+title: Konfigurace informací o společnosti v aplikaci Attract
 description: Toto téma vysvětluje, jak konfigurovat informace o společnosti a výrobce pro aplikaci společnosti Microsoft Dynamics 365 Talent – Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7013065a9494cb407020de2ebcad4058dd57c6c4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: db3ec965f3a52810d5f310697b9ed830c3abe681
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551584"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833247"
 ---
-# <a name="configure-company-information-in-microsoft-dynamics-365-talent---attract"></a>Konfigurace informací o společnosti v aplikaci společnosti Microsoft Dynamics 365 Talent – Attract
-[!include[banner](../includes/banner.md)]
+# <a name="configure-company-information-in-attract"></a>Konfigurace informací o společnosti v aplikaci Attract
+
+[!include [banner](includes/banner.md)]
 
 Centrum pro správu v aplikaci Microsoft Dynamics 365 Talent: Attract obsahuje nastavení konfigurace, možnosti integrace a možnosti nastavení aplikace Attract.
 
@@ -48,11 +49,11 @@ Při přidávání nových funkcí se může zobrazit jejich vydání ve veřejn
 
 ## <a name="template-management"></a>Správa šablony
 
-Šablona procesu obsahuje všechny aktivity, které mají být zahrnuty jako součást náborového procesu na danou pracovní pozici. Vaše organizace může povolit vytváření šablon procesu náboru všem členům týmu nebo jen správcům. Pokud chcete členům týmu povolit vytváření vlastních šablon procesu náboru, zapněte funkci Správa šablon. Další informace o šablonách procesu naleznete v tématu [Šablony procesu v aplikaci Attract](./process-templates-attract.md).
+Šablona procesu obsahuje všechny aktivity, které mají být zahrnuty jako součást náborového procesu na danou pracovní pozici. Vaše organizace může povolit vytváření šablon procesu náboru všem členům týmu nebo jen správcům. Pokud chcete členům týmu povolit vytváření vlastních šablon procesu náboru, zapněte funkci Správa šablon. Další informace o šablonách procesu naleznete v tématu [Vytvoření šablony procesu v aplikaci Attract](./process-templates-attract.md).
 
 ## <a name="email-template-settings"></a>Nastavení šablony e-mailu
 
-Organizace mohou vytvořit šablony e-mailu pro různé scénáře. Můžete vybrat obrázek v záhlaví, který má být zahrnut do šablon e-mailu. Vybrané záhlaví se pak zobrazí ve všech e-mailových šablonách. V zápatí šablony můžete přidat odkaz na prohlášení o zásadách ochrany osobních údajů organizace a podmínky použití při komunikaci. Další informace naleznete v tématu [Šablony e-mailu v aplikaci Attract](./email-templates.md).
+Organizace mohou vytvořit šablony e-mailu pro různé scénáře. Můžete vybrat obrázek v záhlaví, který má být zahrnut do šablon e-mailu. Vybrané záhlaví se pak zobrazí ve všech e-mailových šablonách. V zápatí šablony můžete přidat odkaz na prohlášení o zásadách ochrany osobních údajů organizace a podmínky použití při komunikaci. Další informace naleznete v tématu [Šablony e-mailů](./email-templates.md).
 
 ## <a name="offer-process"></a>Proces nabídky
 

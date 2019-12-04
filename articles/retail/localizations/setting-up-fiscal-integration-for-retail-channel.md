@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a987e75834ddde486421a425a621e66f0b6e063f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577893"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811158"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Nastavení fiskální integrace pro maloobchodní kanály
 
@@ -210,7 +210,7 @@ Možnosti zpracování chyb, které jsou dostupné ve fiskální integraci, jsou
 
 Pokud chcete povolit spouštění fiskálních sestav z POS, měli byste do rozložení POS přidat nová tlačítka.
 
-- Na stránce **Mřížky tlačítka** proveďte postup v části [Přidání vlastního operačního tlačítka do rozložení POS v centrále maloobchodu](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) k instalaci návrháře a aktualizaci rozložení POS.
+- Na stránce **Mřížky tlačítka** proveďte postup v části [Přidání operací POS do rozložení POS pomocí návrháře mřížky tlačítka](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) k instalaci mřížky tlačítka a aktualizaci rozložení POS.
 
     1. Výběr rozložení k aktualizaci 
     2. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Tisknout fiskální X**.
@@ -221,7 +221,7 @@ Pokud chcete povolit spouštění fiskálních sestav z POS, měli byste do rozl
 
 Chcete-li povolit ruční provedení odložené fiskální registrace, měli byste přidat nové tlačítko do rozvržení POS.
 
-- Na stránce **Mřížky tlačítka** proveďte postup v části [Přidání vlastního operačního tlačítka do rozložení POS v centrále maloobchodu](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) k instalaci návrháře a aktualizaci rozložení POS.
+- Na stránce **Mřížky tlačítka** proveďte postup v části [Přidání operací POS do rozložení POS pomocí návrháře mřížky tlačítka](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) k instalaci mřížky tlačítka a aktualizaci rozložení POS.
 
     1. Výběr rozložení k aktualizaci
     2. Přidejte nové tlačítko a nastavte vlastnost tlačítka **Dokončit proces fiskální registrace**.

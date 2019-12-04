@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a59ff16555bfcb55d2f21c09675e7ae0637bca8f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188595"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772138"
 ---
 # <a name="budget-planning"></a>Plánování rozpočtu
 
@@ -60,21 +60,19 @@ Julie používá následující šablonu aplikace Excel k přípravě rozpočtu:
 ## <a name="exercise-1-configuration"></a>Cvičení 1: Konfigurace
 
 ### <a name="task-1-create-organizational-hierarchy"></a>**Úkol 1: Vytvoření organizační hierarchie**
-Protože se proces rozpočtování odehrává ve finančním oddělení, Julie potřebuje vytvořit velmi jednoduchou organizační hierarchii tvořenou pouze finančním oddělením. 1.1. Přejděte k Organizačním hierarchiím (Správa organizace &gt; Organizace &gt; Organizační hierarchie) a klikněte na tlačítko Nový
+Protože se proces rozpočtování odehrává ve finančním oddělení, Julie potřebuje vytvořit velmi jednoduchou organizační hierarchii tvořenou pouze finančním oddělením. 
 
-![Hierarchie organizace](./media/screenshot3.png) 
+1.1. Přejděte k Organizačním hierarchiím (Správa organizace &gt; Organizace &gt; Organizační hierarchie) a klikněte na tlačítko Nová.
 
-1.2. Zadejte název organizační hierarchie a klikněte na tlačítko Přiřadit účel
+![Organizační hierarchie](./media/screenshot3.png) 
 
-[![Název](./media/screenshot4.png)](./media/screenshot4.png) 
+1.2. Zadejte název organizační hierarchie do pole Název a klikněte na tlačítko Přiřadit účel.
 
-1.3. Vyberte účel plánování rozpočtu, klikněte na tlačítko Přidat a přiřaďte nově vytvořenou organizační hierarchii: 
+1.3. Vyberte účel plánování rozpočtu, klikněte na tlačítko Přidat a přiřaďte nově vytvořenou organizační hierarchii. 
 
-[![Účel přidělení](./media/screenshot5.png)](./media/screenshot5.png)
+[![Přiřadit účel](./media/screenshot5.png)](./media/screenshot5.png)
 
-1.4. Zopakujte krok výše s účelem zabezpečení organizace. Po dokončení formulář zavřete.
-
-[![Organizace zabezpečení](./media/screenshot6.png)](./media/screenshot6.png)
+1.4. Zopakujte výše uvedený krok s účelem zabezpečení organizace. Po dokončení formulář zavřete.
 
 1.5. Ve formuláři Organizační hierarchie klikněte na tlačítko Zobrazit. Klikněte na tlačítko Upravit v Návrháři hierarchie a vytvořte hierarchii kliknutím na tlačítko Vložit.
 
@@ -84,9 +82,9 @@ Protože se proces rozpočtování odehrává ve finančním oddělení, Julie p
 
 [![Finance](./media/screenshot8.png)](./media/screenshot8.png)
 
-1.7. Po dokončení klikněte na tlačítko Publikovat a zavřít. 1/1/2015 vyberte jako datum účinnosti pro publikování hierarchie.
+1.7. Po dokončení klikněte na tlačítko Publikovat a zavřít. Vyberte 1. 1. 2015 jako datum účinnosti pro publikování hierarchie.
 
-[![Datum platnosti](./media/screenshot9.png)](./media/screenshot9.png)
+[![Platný od](./media/screenshot9.png)](./media/screenshot9.png)
 
 ### <a name="task-2-configure-user-security"></a>Úkol 2: Konfigurace zabezpečení pro uživatele
 Plánování rozpočtu používá zvláštní zásady zabezpečení pro konfiguraci přístupu k datům rozpočtových plánů. Julie musí udělit přístup k finančním plánům rozpočtu sama sobě. 
@@ -102,11 +100,11 @@ Plánování rozpočtu používá zvláštní zásady zabezpečení pro konfigur
 
 [![Správce rozpočtu](./media/screenshot12.png)](./media/screenshot12.png) 
 
-2.4. Vyberte roli uživatele a klikněte na tlačítko Přiřadit organizace 
+2.4. Vyberte roli uživatele a klikněte na tlačítko Přiřadit organizace. 
 
 [![Přiřadit organizace](./media/screenshot13.png)](./media/screenshot13.png)
 
-2.5. Zvolte možnost „Udělit přístup ke specifickým organizacím”. Vyberte organizační hierarchii vytvořenou v prvním kroku. Vyberte finanční uzel a klikněte na tlačítko Udělit přístup s podřízenými organizacemi 
+2.5. Zvolte možnost „Udělit přístup ke specifickým organizacím”. Vyberte organizační hierarchii vytvořenou v prvním kroku. Vyberte finanční uzel a klikněte na tlačítko Udělit přístup s podřízenými organizacemi. 
 
 ***Důležité!*** *Ujistěte se, že jste v kontextu právnické osoby DEMF při provádění tohoto úkolu, protože zabezpečení organizace se aplikuje za právnickou osobu* 
 
@@ -122,31 +120,23 @@ Plánování rozpočtu používá zvláštní zásady zabezpečení pro konfigur
 ### <a name="task-4-create-budget-plan-columns"></a>Úkol 4: Vytvoření sloupců plánu rozpočtu
 Sloupce plánu rozpočtu jsou buď peněžní, nebo množstevní sloupce, které lze použít v rozvržení dokumentu plánu rozpočtu. V našem příkladu je nutné vytvořit sloupec pro skutečné hodnoty předchozího roku a 12 sloupců představujících každý měsíc rozpočtu předchozího roku. Sloupce lze vytvářet buď kliknutím na tlačítko Přidat a zadáním hodnot, nebo využitím datové entity. V tomto semináři použijeme datovou entitu k vyplnění hodnot. 
 
-4.1. V části Rozpočtování&gt;Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu otevřete stránku Sloupce. Klikněte na tlačítko Office v pravém horním rohu formuláře a vyberte Sloupce (nefiltrováno) 
+4.1. V části Rozpočtování&gt;Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu otevřete stránku Sloupce. Klikněte na tlačítko Office v pravém horním rohu formuláře a vyberte Sloupce (nefiltrováno). 
 
 [![Nefiltrované sloupce](./media/screenshot16.png)](./media/screenshot16.png) 
 
-4.2. Systém otevře sešit aplikace Excel pro vyplnění hodnot. Pokud se zobrazí výzva, klikněte na Povolit úpravy a Důvěřovat této aplikaci 
+4.2. Systém otevře sešit aplikace Excel pro vyplnění hodnot. Pokud se zobrazí výzva, klikněte na Povolit úpravy a Důvěřovat této aplikaci. 
 
-[![Povolit úpravy](./media/screenshot18.png)](./media/screenshot18.png) 
-
-[![Důvěřovat této aplikaci](./media/screenshot17.png)](./media/screenshot17.png)
-
-4.3. Budeme potřebovat více sloupců k vyplnění hodnot. Klikněte na Návrh na pravém podokně pro přidání sloupců do mřížky: 
+4.3. Budeme potřebovat více sloupců k vyplnění hodnot. Klikněte na Návrh na pravém podokně pro přidání sloupců do mřížky. 
 
 [![Návrh](./media/screenshot19.png)](./media/screenshot19.png) 
 
-4.4. Klikněte na symbol malé tužky vedle volby PlanColumns a zobrazte dostupné sloupce k přidání do mřížky. 
+4.4. Klikněte na symbol tužky vedle volby PlanColumns a zobrazte dostupné sloupce k přidání do mřížky. 
 
 [![Upravit](./media/screenshot20.png)](./media/screenshot20.png) 
 
 4.5. Dvojitým kliknutím na každé dostupné pole je přidáte k vybraným polím, a poté klikněte na tlačítko Aktualizovat. 
 
-![Aktualizace](./media/screenshot21.png)](./media/screenshot21.png) 
-
 4.6. Do tabulky aplikace Excel přidejte všechny sloupců, které je třeba vytvořit. Použijte funkci automatického vyplňování v aplikaci Excel pro rychlé přidání řádků. Ujistěte se, že řádky jsou přidány jako součást tabulky (používáte-li svislý posuvník, měli byste vidět záhlaví sloupců v horní části mřížky). 
-
-[![Automatické vyplnění](./media/screenshot22.png)](./media/screenshot22.png) 
 
 4.7. Vraťte se do aplikace a obnovte stránku. Zobrazí se publikované hodnoty. 
 
@@ -170,7 +160,8 @@ Na základě definice rozložení plánu rozpočtu můžeme vytvořit šablonu a
 *Poznámka: Je nutné vybrat možnost „Uložit jako” a vybrat umístění, kam se má šablona uložit, aby bylo možné ji upravit. Pokud uživatel vybere možnost „Otevřít” v dialogovém okně bez uložení změn, nebudou změny v souboru zachovány po zavření souboru..* 
 [![Zobrazení šablony](./media/screenshot25.png)](./media/screenshot25.png) 
 
-5.3. &lt; Nepovinný krok&gt; Upravte šablonu aplikace Excel, aby byla uživatelsky přívětivější – přidejte vzorce součtu, pole záhlaví, formátování atd. Uložte změny a odešlete soubor do rozvržení plánu rozpočtu kliknutím na možnost Rozvržení &gt; Odeslat [![Nahrát](./media/screenshot26.png)](./media/screenshot26.png)
+5.3. &lt; Nepovinný krok&gt; Upravte šablonu aplikace Excel, aby byla uživatelsky přívětivější – přidejte vzorce součtu, pole záhlaví, formátování atd. Uložte změny a odešlete soubor do rozvržení plánu rozpočtu kliknutím na možnost Rozvržení &gt; Odeslat. 
+
 
 ### <a name="task-6-create-a-budget-planning-process"></a>Úkol 6: Vytvoření procesu plánování rozpočtu
 Julie potřebuje vytvořit a aktivovat nový procesu plánování rozpočtu spojením celého nastavení uvedeného výše, aby mohla začít zadávat plány rozpočtu. Proces plánování rozpočtu definuje, které rozpočtovací organizace workflow, rozvržení a šablony se použijí pro vytváření plánů rozpočtu. 
@@ -198,24 +189,22 @@ Julie potřebuje vytvořit a aktivovat nový procesu plánování rozpočtu spoj
 ### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Úkol 7: Generování počátečních dat pro plán rozpočtu z hlavní knihy
 7.1. Přejděte do Rozpočtování &gt; Periodicky &gt; Generovat plán rozpočtu z hlavní knihy. Zadejte parametry periodického procesu a klikněte na tlačítko Generovat. 
 
-[![Generovat](./media/screenshot29.png)](./media/screenshot29.png) 
-
 7.2. Přejděte do Rozpočtování &gt; Plány rozpočtu a vyhledejte plán rozpočtu vytvoření v procesu generování. 
 
 [![Plán rozpočtu](./media/screenshot30.png)](./media/screenshot30.png) 
 
-7.3. Otevřete podrobnosti dokumentu kliknutím na odkaz Číslo dokladu. Plán rozpočtu se zobrazí podle definovaného rozvržení vytvořeného během tohoto semináře 
+7.3. Otevřete podrobnosti dokumentu kliknutím na odkaz Číslo dokladu. Plán rozpočtu se zobrazí podle definovaného rozvržení vytvořeného během tohoto semináře. 
 
 [![Zobrazení plánu rozpočtu](./media/screenshot31.png)](./media/screenshot31.png)
 
 ### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Úkol 8: Vytvoření rozpočtu pro aktuální rok podle skutečných hodnot předchozího roku
 Metody přidělení lze použít v plánu rozpočtu ke snadnému kopírování informací pro plány rozpočtu z jednoho scénáře do jiného / jejich rozdělení do období / přidělení k dimenzím. Použijeme přidělení k vytvoření rozpočtu pro aktuální rok ze skutečných hodnot předchozího roku. 
 
-8.1. Vyberte všechny řádky v mřížce dokumentu plánu rozpočtu a klikněte na tlačítko pro přidělení rozpočtu 
+8.1. Vyberte všechny řádky v mřížce dokumentu plánu rozpočtu a klikněte na tlačítko Přidělit rozpočet. 
 
 [![Všechny řádky](./media/screenshot32.png)](./media/screenshot32.png) 
 
-8.2. Vyberte metodu přidělení, klíč období, zdrojový a cílový scénář a klikněte na tlačítko Přidělit 
+8.2. Vyberte metodu přidělení, klíč období, zdrojový a cílový scénář a klikněte na tlačítko Přidělit. 
 
 [![Přidělit](./media/screenshot33.png)](./media/screenshot33.png)
 
@@ -224,15 +213,11 @@ Skutečné částky z předchozího roku se zkopírují do aktuálního rozpočt
 [![Křivka prodeje](./media/screenshot34.png)](./media/screenshot34.png)
 
 ### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Úkol 9: Úprava dokumentu plánu rozpočtu pomocí aplikace Excel a dokončení dokumentu
-9.1. Klikněte na tlačítko list a otevřete obsah dokumentu v aplikaci Excel
-
-[![Excel](./media/screenshot35.png)](./media/screenshot35.png)
+9.1. Klikněte na tlačítko List a otevřete obsah dokumentu v aplikaci Excel.
 
 9.2. Po otevření sešitu aplikace Excel upravte čísla v dokumentu plánu rozpočtu a klikněte na tlačítko Publikovat.
 
-[![Publikovat](./media/screenshot36.png)](./media/screenshot36.png)
-
-9.3. Vraťte se k dokumentu plánu rozpočtu. Klikněte na tlačítko Workflow &gt; Odeslat dokument k automatickému schválení
+9.3. Vraťte se k dokumentu plánu rozpočtu. Klikněte na tlačítko Workflow &gt; Odeslat dokument k automatickému schválení.
 
 [![Automaticky schválit](./media/screenshot37.png)](./media/screenshot37.png) 
 
@@ -242,21 +227,21 @@ Po dokončení workflowu se fáze dokumentu plánu rozpočtu změní na Schvále
 
 ### <a name="auto-approve-workflow-configuration"></a>Konfigurace automatického schválení workflow
 
-A. Rozpočtování &gt; Nastavení &gt; Plánování rozpočtu &gt; Workflowy rozpočtování Vytvořte nový workflow pomocí šablony Workflowy plánování rozpočtu:
+A. Rozpočtování &gt; Nastavení &gt; Plánování rozpočtu &gt; Workflow rozpočtování. Vytvořit nové workflow pomocí šablony workflow plánování rozpočtu:
 
 [![Vytvořit nový workflow](./media/screenshot39.png)](./media/screenshot39.png)
 
-Tento workflow bude obsahovat pouze jednu úlohu – Přechod fáze plánu rozpočtu 
+Tento workflow bude obsahovat pouze jednu úlohu – Přechod fáze plánu rozpočtu. 
 
 [![Přechod fáze plánu rozpočtu](./media/screenshot40.png)](./media/screenshot40.png) 
 
 Uložte a aktivujte workflow. 
 
-B. Přejděte do části Rozpočtování &gt; Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu. Na kartě Fáze vytvořte 2 fáze – Počáteční a Odesláno 
+B. Přejděte do části Rozpočtování &gt; Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu. Na kartě Fáze vytvořte 2 fáze – Počáteční a Odesláno. 
 
 [![Počáteční a odesláno](./media/screenshot41.png)](./media/screenshot41.png)
 
-C. Přejděte do části Rozpočtování &gt; Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu. Na kartě Fáze workflowu přidružte automatické schválení workflowu vytvořené v kroku A fázím Počáteční a Odesláno 
+C. Přejděte do části Rozpočtování &gt; Nastavení &gt; Plánování rozpočtu &gt; Konfigurace plánování rozpočtu. Na kartě Fáze workflowu přidružte automatické schválení workflowu vytvořené v kroku A fázím Počáteční a Odesláno.
 
 [![Tvorba rozpočtu a plánování rozpočtu](./media/screenshot42.png)](./media/screenshot42.png)  
 

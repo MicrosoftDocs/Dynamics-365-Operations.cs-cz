@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4524eb14ff06561ad186cf63654e6a716632a3f4
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 715e0f8d08c6abbde35eb917cddc4ecf4b7b67ed
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627606"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811449"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX verze 7.0.1 (květen 2016)
 
@@ -104,6 +104,6 @@ Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Mi
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Co je nového a co se změnilo](whats-new-changed.md)
+[Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations](whats-new-changed.md)
 
 [Noví nebo aktualizovaní průvodci úkolem (květen 2016)](new-updated-task-guides-available-may-2016.md)

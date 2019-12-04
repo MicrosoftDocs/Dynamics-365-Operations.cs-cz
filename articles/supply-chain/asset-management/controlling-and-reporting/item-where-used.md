@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511108e689c10e27a42253d95b02e5394f9eb713
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 476b01a4bae34a271203f34481ff18042783d4df
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652349"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811256"
 ---
 # <a name="item-where-used"></a>Kde byla položka použita
 
@@ -33,15 +33,15 @@ ms.locfileid: "2652349"
 
 Můžete provést výpočet pro určitou položku, abyste získali přehled o tom, kde je použita položka v modulu Správa majetku. Ve výsledcích se zobrazuje kontext, ve kterém byla položka použita během její životnosti. Stránku **Kde byla položka použita** lze otevřít z hlavní nabídky modulu Správa majetku a lze ji také otevřít z následujících stránek:
 
-- [Kusovník majetku](../objects/object-BOM.md)
+- [Kusovníky majetku](../objects/object-BOM.md)
 
-- [Náhradní díly ve výchozích nastaveních typu majetku](../setup-for-objects/object-types.md)
+- [Náhradní díly ve výchozích nastaveních typu majetku](../setup-for-objects/object-types.md#spare-parts-on-the-asset-type-setup)
 
-- [Prognóza položky v prognóze výchozích nastavení typu práce údržby](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
+- [Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
-- [Prognóza údržby pracovního příkazu](../work-orders/maintenance-forecasts.md)
+- [Prognóza údržby](../work-orders/maintenance-forecasts.md)
 
-- [Nákupní žádanka pracovního příkazu](../work-orders/procurement.md)
+- [Zásobování](../work-orders/procurement.md)
 
 - [Nákup pracovního příkazu](../work-orders/procurement.md)
 

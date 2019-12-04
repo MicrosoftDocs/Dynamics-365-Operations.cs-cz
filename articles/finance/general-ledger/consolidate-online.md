@@ -16,25 +16,25 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: eadf0af285213a972cac83d7b6fc6a47317b21bb
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551650"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770728"
 ---
 # <a name="online-financial-consolidations"></a>Finanční konsolidace online
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje online finanční konsolidace v hlavní knize. Než si přečtete toto téma, seznamte se s tématem [Finanční konsolidace a převod měny](financial-consolidations-currency-translation.md).
+Toto téma popisuje online finanční konsolidace v hlavní knize. Než si přečtete toto téma, seznamte se s tématem [Přehled finančních konsolidací a převodu měny](financial-consolidations-currency-translation.md).
 
 Po dokončení nastavení zadejte podrobnosti konsolidace na stránce **Konsolidace [Online]**. Po dokončení můžete kliknout na **OK** nebo **Dávka** pro zpracování konsolidace.
 
 ## <a name="criteria"></a>Kritéria
 Na kartě **Kritéria** na stránce **Konsolidace [Online]** definujete účty, období a typ dat, která jsou konsolidována.
 
-![Karta Kritéria](./media/criteria-consolidate-online.png "Karta kritéria")
+![Karta Kritéria](./media/criteria-consolidate-online.png "Karta Kritéria")
 
 Zde je vysvětlení různých polí na této kartě:
 
@@ -60,14 +60,14 @@ Zde je vysvětlení různých polí na této kartě:
 ## <a name="financial-dimensions"></a>Finanční dimenze
 Na kartě **Finanční dimenze** definujete dimenze, které mají být zahrnuty v konsolidační společnosti. Chcete-li vybrat dimenze, nastavte pole **Specifikace** na **dimenze** a pak definujte pořadí dimenze v konsolidační společnosti.
 
-![Karta Finanční dimenze](./media/financial-dimensions-cons.png "karta Finanční dimenze")
+![Karta Finanční dimenze](./media/financial-dimensions-cons.png "Karta Finanční dimenze")
 
 Bez ohledu na pořadí, které definujete, bude **Hlavní účet** vždy prvním segmentem.
 
 ## <a name="legal-entities"></a>Právnické osoby
 Na kartě **Právnické osoby** definujete společnosti, které mají být zahrnuty v konsolidační společnosti. Můžete také definovat procento vlastnictví těchto společností. Zadáte-li nižší než 100% vlastnictví, zadané procento bude zahrnuto do konsolidační společnosti. Pro všechny rozdíly převodu se použije pole **Typ účtu pro rozdíly převodu** k výběru hlavního účtu z nastavení na stránce **Účty pro automatické transakce**.
 
-![Karta Právnické osoby](./media/legal-entities-cons.png "Karta Právnické osoby")
+![(Karta Právnické osoby)](./media/legal-entities-cons.png "Karta Právnické osoby")
 
 ![Stránka Účty pro automatické transakce](./media/accounts-for-automatic-cons.png "Stránka Účty pro automatické transakce")
 
@@ -93,6 +93,6 @@ Na kartě **Převod měny** definujete právnickou osobu, účet a typ směnnéh
 
 ## <a name="additional-resources"></a>Další zdroje
 
-Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Finanční konsolidace a převod měny](./financial-consolidations-currency-translation.md).
+Další informace o konsolidaci a převodech měn naleznete v nadřazeném tématu [Přehled finanční konsolidace a převodu měny](./financial-consolidations-currency-translation.md).
 
 Další informace o scénářích, kde můžete vygenerovat konsolidační finanční výkazy naleznete v tématu [Generování konsolidovaných finančních výkazů](./generating-consolidated-financial-statements.md).

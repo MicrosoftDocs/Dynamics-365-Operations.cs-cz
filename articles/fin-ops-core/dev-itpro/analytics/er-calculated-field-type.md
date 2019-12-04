@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 20d48795b23628bbba2896bf48940936a25e0435
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550077"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771322"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Podpora parametrizovaných volání zdrojů dat ER typu vypočítaného pole
 
@@ -55,7 +55,7 @@ Z [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) st
 | Vzorová konfigurace formátu elektronického výkaznictví        | Formát pro informace o volání s parametry calls.version.1.1.xml  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Přihlaste se k instanci RCS.
-V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. Nejprve musíte v RCS dokončit krok v proceduře [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. Nejprve musíte v RCS dokončit krok v proceduře [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 1. Na výchozím řídicím panelu vyberte **Elektronické vykazování**.
 2. Vyberte **Konfigurace vykazování**.
@@ -75,21 +75,21 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc
 3. Vyberte možnost **Návrhář**.
 4. Vyberte možnost **Návrhář**.  
    
-Toto mapování modelu ER je navrženo k následujícím akcím:
+    Toto mapování modelu ER je navrženo k následujícím akcím:
 
-- Načtení seznamu daňových kódů (**Daňový** zdroj dat) nacházející se v tabulce **TaxTable**.
-- Načtení seznamu daňových transakcí (**Trans** zdroj dat) nacházející se v tabulce **TaxTrans**:
+    - Načtení seznamu daňových kódů (**Daňový** zdroj dat) nacházející se v tabulce **TaxTable**.
+    - Načtení seznamu daňových transakcí (**Trans** zdroj dat) nacházející se v tabulce **TaxTrans**:
     
-    - Seskupit seznam načtených transakcí (**Gr** zdroj dat) podle kódu daně
-    - Vypočítat pro seskupené transakce po agregovaných hodnotách podle kódu daně:
+        - Seskupit seznam načtených transakcí (**Gr** zdroj dat) podle kódu daně
+        - Vypočítat pro seskupené transakce po agregovaných hodnotách podle kódu daně:
 
-        - Součet hodnot základu daně.
-        - Součet hodnot daně.
-        - Minimální hodnota uplatněné sazby daně.
+            - Součet hodnot základu daně.
+            - Součet hodnot daně.
+            - Minimální hodnota uplatněné sazby daně.
 
-Mapování modelu v této konfiguraci implementuje základní datový model pro všechny formáty ER vytvořené pro tento model a prováděné ve Finance and Operations. V důsledku toho je obsah zdrojů dat **Daň** a **Gr** vystaven pro formáty ER, jako jsou například abstraktní zdroje dat.
+    Mapování modelu v této konfiguraci implementuje základní datový model pro všechny formáty ER vytvořené pro tento model a prováděné ve Finance and Operations. V důsledku toho je obsah zdrojů dat **Daň** a **Gr** vystaven pro formáty ER, jako jsou například abstraktní zdroje dat.
 
-  ![Stránka Návrhář mapování modelu zobrazující zdroje dat Daň a Gr](media/er-calculated-field-type-01.png)
+    ![Stránka Návrhář mapování modelu zobrazující zdroje dat Daň a Gr](media/er-calculated-field-type-01.png)
 
 5.  Zavřete stránku **Návrhář mapování modelu**.
 6.  Zavřete stránku **Mapování modelu**.
@@ -100,25 +100,25 @@ Mapování modelu v této konfiguraci implementuje základní datový model pro 
 2. Vyberte **Formát pro informace o voláních s parametry**.
 3. Vyberte možnost **Návrhář**. Tento formát ER je navržen k následujícím akcím:
 
-  - Generujte daňový výkaz ve formátu XML.
-  - V daňovém výkazu prezentujte následující úrovně zdanění: normální, snížené a žádné.
-  - Prezentujte více podrobností na každé úrovni zdanění, které mají různý počet podrobností na každé úrovni.
+    - Generujte daňový výkaz ve formátu XML.
+    - V daňovém výkazu prezentujte následující úrovně zdanění: normální, snížené a žádné.
+    - Prezentujte více podrobností na každé úrovni zdanění, které mají různý počet podrobností na každé úrovni.
 
-  ![Stránka návrháře formátu](media/er-calculated-field-type-02.png)
+    ![Stránka návrháře formátu](media/er-calculated-field-type-02.png)
 
 4. Vyberte **Mapování**.
 5. Rozbaltepoložky **Model**, **Data** a **Souhrnné** . 
 
-   Vpočítané pole **Model.Data.Summary.Leve** obsahuje výraz vracející kód úrovně zdanění (**Pravidelný**, **Snížený**, **Žádný** nebo **Jiný**) jako textovou hodnotu pro libovolný kód daně, který lze načíst ze zdroje dat **Model.Data.Summary** za běhu.
+    Vpočítané pole **Model.Data.Summary.Leve** obsahuje výraz vracející kód úrovně zdanění (**Pravidelný**, **Snížený**, **Žádný** nebo **Jiný**) jako textovou hodnotu pro libovolný kód daně, který lze načíst ze zdroje dat **Model.Data.Summary** za běhu.
 
-  ![Stránka návrháře formátu s podrobnostmi o modelu datového modelu pro zjištění parametrizovaných hovorů](media/er-calculated-field-type-03.png)
+    ![Stránka návrháře formátu s podrobnostmi o modelu datového modelu pro zjištění parametrizovaných hovorů](media/er-calculated-field-type-03.png)
 
 6. Rozbalte položku **Model**.**Data2**.
 7. Rozbalte položku **Model**.**Data2.Summary2**.
    
-   Datový zdroj **Model**.**Data2.Summary2** je konfigurováno pro seskupení podrobností transakcí datového zdroje **Model.Data.Summary** podle úrovně zdanění (vráceno vypočítaným polem **Model.Data.Summary.Level**) a výpočet agregací.
+    Datový zdroj **Model**.**Data2.Summary2** je konfigurováno pro seskupení podrobností transakcí datového zdroje **Model.Data.Summary** podle úrovně zdanění (vráceno vypočítaným polem **Model.Data.Summary.Level**) a výpočet agregací.
 
-  ![Stránka návrháře formátu s podrobnostmi o zdroji dat Model.Data2.Summary2](media/er-calculated-field-type-04.png)
+    ![Stránka návrháře formátu s podrobnostmi o zdroji dat Model.Data2.Summary2](media/er-calculated-field-type-04.png)
 
 8. Zkontrolujte vypočítaná pole **Model**.**Data2.Level1**, **Model**.**Data2.Level2** a **Model**.**Data2.Level3.** Tato vypočítaná pole slouží k filtrování seznamu záznamů **Model**.**Data2.Summary2** a vrátí pouze záznamy, které reprezentují určitou úroveň zdanění.
 9. Zavřete stránku **Návrhář formátu**.
@@ -309,7 +309,7 @@ Pokud parametrizované pole vrací záznam, je nutné podporovat vazby jednotliv
 Chcete-li se ujistit, že nakonfigurovaná počítaná pole fungují správně, můžete spustit počáteční a vylepšené formáty ER.
 
 ### <a name="import-er-configurations"></a>Import konfigurací ER
-Revidované konfigurace lze importovat z RCS pomocí úložiště ER typu **RCS**. Pokud jste již provedli kroky v tématu, [Import konfigurace elektronického vykazování z Regulatory Configuration Service](rcs-download-configurations.md), použijte nakonfigurované úložiště ER pro import konfigurací popsaných dříve v tomto tématu do vašeho prostředí. V opačném případě postupujte takto:
+Revidované konfigurace lze importovat z RCS pomocí úložiště ER typu **RCS**. Pokud jste již provedli kroky v tématu, [Import konfigurací elektronického výkaznictví (ER) z Regulatory Configuration Services (RCS)](rcs-download-configurations.md), použijte nakonfigurované úložiště ER pro import konfigurací popsaných dříve v tomto tématu do vašeho prostředí. V opačném případě postupujte takto:
 
 1. Vyberte společnost **DEMF** a na výchozím řídicím panelu vyberte možnost **Elektronické vykazování**.
 2. Vyberte **Konfigurace vykazování**.

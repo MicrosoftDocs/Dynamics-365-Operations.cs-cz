@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: dd88537506521fd37aa170c7e8f43bcf5a106836
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1a357c4623f4f9dc441fe328ec0d5481c14ae4af
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174344"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771626"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 
@@ -102,7 +102,7 @@ Poté, co jste přidali ovládací prvky formuláře, které budou použity pro 
 > [!NOTE]
 > Pro vložené pracovní prostory doporučujeme použití rozšíření ke skrytí stránky **Podokno Filtry** i **Karta**.
 
-Nyní jste dokončili úlohu rozšíření definice formuláře aplikace. Další informace o tom, jak používáte rozšíření přizpůsobení naleznete v tématu [přizpůsobení: rozšíření a vrstvy](../extensibility/customization-overlayering-extensions.md).
+Nyní jste dokončili úlohu rozšíření definice formuláře aplikace. Další informace o tom, jak používáte rozšíření přizpůsobení naleznete v tématu [Přizpůsobení pomocí rozšíření a překrývání vrstev](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Přidání obchodní logiky X ++ pro vložení ovládacího prvku prohlížeče
 Pomocí těchto kroků přidejte obchodní logiku, která inicializuje ovládací prvek prohlížeče sestav, který je vložen do pracovního prostoru **řízení rezervací**.

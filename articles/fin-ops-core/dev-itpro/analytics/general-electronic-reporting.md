@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11ed2101304c4e09744bbd10e94e9cd2a8db4da5
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578234"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771066"
 ---
 # <a name="electronic-reporting-er-overview"></a>Přehled elektronického výkaznictví
 
@@ -71,7 +71,7 @@ Mapování modelu, které podporuje odchozí elektronické dokumenty, má tyto f
 
 - Může využívat různé typy dat aplikace jako zdroje dat pro datový model. Například může používat tabulky, datové entity, metody nebo výčty.
 - Podporuje vstupní parametry uživatele lze definovat jako datové zdroje modelu dat, když je při spuštění nutné zadat některá data.
-- Podporuje transformaci dat aplikace do požadovaných skupin. Umožňuje také filtrování, řazení a sčítání dat a připojování logických vypočítaných polí určených pomocí vzorců podobně jako v aplikaci Microsoft Excel. Další informace najdete v tématu [Návrhář receptur elektronického výkaznictví](general-electronic-reporting-formula-designer.md).
+- Podporuje transformaci dat aplikace do požadovaných skupin. Umožňuje také filtrování, řazení a sčítání dat a připojování logických vypočítaných polí určených pomocí vzorců podobně jako v aplikaci Microsoft Excel. Další informace najdete v tématu [Návrhář receptur elektronického výkaznictví (ER)](general-electronic-reporting-formula-designer.md).
 
 
 Mapování modelu, které podporuje příchozí elektronické dokumenty, má tyto funkce:
@@ -362,5 +362,5 @@ EV podporuje schopnost automaticky přijmout změny poslední verze základní k
 
 ## <a name="additional-resources"></a>Další zdroje
 
-- [Požadavky na lokalizaci – vytvoření konfigurace elektronického výkaznictví](electronic-reporting-configuration.md)
+- [Vytvoření konfigurací elektronického výkaznictví (ER)](electronic-reporting-configuration.md)
 - [Správa životního cyklu konfigurace elektronického vykazování](general-electronic-reporting-manage-configuration-lifecycle.md)

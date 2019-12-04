@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5454b9003105e4b44ec7577e5f8989c75554aeb9
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: e6126c62f3768871550a056c2c7670ec801e3b7d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572192"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815381"
 ---
 # <a name="create-purchase-orders"></a>Vytváření nákupních objednávek
 
@@ -88,9 +88,9 @@ Bude pravděpodobně nutné zpozdit dokončení nákupní objednávky. Napříkl
 
 [Přehled nákupních objednávek](purchase-order-overview.md)
 
-[Potvrzení a odmítnutí nákupní objednávky](purchase-order-approval-confirmation.md)
+[Schválení a potvrzení nákupních objednávek](purchase-order-approval-confirmation.md)
 
-[Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
+[Příjemka produktu proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 
 [Přehled faktur dodavatele](../../finance/accounts-payable/vendor-invoices-overview.md)
 

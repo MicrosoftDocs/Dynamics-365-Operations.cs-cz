@@ -16,18 +16,18 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: eb5d721784f45097ab466f75d43256495aac36ca
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5e2989906c5aa3ead9e46b8ed5333e880e5cf1c6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182823"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769940"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Import souborů v XML formátu s volitelnými atributy
 
 Formáty elektronického výkaznictví můžete navrhovat pro analyzování příchozích dokumentů ve formátu XML. Některé atributy prvků XML lze zadat v navrženém formátu elektronického výkaznictví jako volitelné. To vám umožní zpracovat správně příchozí soubory s takovými atributy XML a bez nich. Poté můžete obsah z těchto souborů použít k aktualizaci dat aplikace.
 
-Chcete-li získat další informace o této funkci, proveďte kroky v tématu [RCS Import souborů v XML formátu s volitelnými atributy](tasks/import-files-xml-format-optional-attributes.md), které je součástí obchodního procesu 7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677). Tohoto průvodce záznamem úloh a přidružený vzorový soubor můžete stáhnout z [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
+Chcete-li získat další informace o této funkci, proveďte kroky v tématu [(RCS) Import souborů v XML formátu s volitelnými atributy](tasks/import-files-xml-format-optional-attributes.md), které je součástí obchodního procesu 7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677). Tohoto průvodce záznamem úloh a přidružený vzorový soubor můžete stáhnout z [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 
 
 | Popis obsahu       | Soubor                                                         |
@@ -36,10 +36,10 @@ Chcete-li získat další informace o této funkci, proveďte kroky v tématu [R
 | Průvodce úkolem                | RCS Import souborů v XML formátu s volitelnými atributy.axtr |
 
 
-Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhovat konfiguraci elektronického výkaznictví pro import souborů v XML formátu obsahujícím volitelné atributy. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md). Než začnete, stáhněte a uložte místně soubor IncomingDocumentToLearnHowToHandleOptionalAttributes.xml z Microsoft Download Center (https://go.microsoft.com/fwlink/?linkid=874684).
+Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhovat konfiguraci elektronického výkaznictví pro import souborů v XML formátu obsahujícím volitelné atributy. K provedení těchto kroků musíte v RCS nejprve dokončit jednotlivé kroky v postupu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md). Než začnete, stáhněte a uložte místně soubor IncomingDocumentToLearnHowToHandleOptionalAttributes.xml z Microsoft Download Center (https://go.microsoft.com/fwlink/?linkid=874684).
 
 1. Přejděte na **Správa organizace** > **Pracovní prostory** > **Elektronické výkaznictví**.
-2. Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Klikněte na **Konfigurace výkaznictví**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Vytvoření nové konfigurace datového modelu

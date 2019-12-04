@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8e5fd05f3114eb99b7e8b4390827d5ccd52832a
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c527735ea65dad84c5d3d405eac2ead35d3c792d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572186"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815358"
 ---
 # <a name="purchase-order-overview"></a>Přehled nákupních objednávek
 
@@ -41,9 +41,9 @@ Pracovní prostory **Příprava nákupní objednávky** a **Příjem a zpracová
 
 Následující články poskytují přehled o různých fázích, kterými prochází nákupní objednávky:
 
--   [Vytvoření nákupní objednávky](purchase-order-creation.md)
--   [Potvrzení a odmítnutí nákupní objednávky](purchase-order-approval-confirmation.md)
--   [Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
+-   [Vytváření nákupních objednávek](purchase-order-creation.md)
+-   [Schválení a potvrzení nákupních objednávek](purchase-order-approval-confirmation.md)
+-   [Příjemka produktu proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 -   [Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Typy nákupních objednávek
@@ -82,11 +82,11 @@ Pole **Stav schválení** se používá, když nákupní objednávka prochází 
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Vytvoření nákupní objednávky](purchase-order-creation.md)
+[Vytváření nákupních objednávek](purchase-order-creation.md)
 
-[Potvrzení a odmítnutí nákupní objednávky](purchase-order-approval-confirmation.md)
+[Schválení a potvrzení nákupních objednávek](purchase-order-approval-confirmation.md)
 
-[Příjem produktů proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
+[Příjemka produktu proti nákupním objednávkám](product-receipt-against-purchase-orders.md)
 
 [Přehled faktur dodavatele](../../financials/accounts-payable/vendor-invoices-overview.md)
 

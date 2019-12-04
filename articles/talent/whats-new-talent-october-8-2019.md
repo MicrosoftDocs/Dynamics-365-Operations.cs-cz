@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 159320dcbdf257862378b347172ef71832e293dc
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 496603731eb343a64be1e8d9482ac8d42e6aa79a
+ms.sourcegitcommit: 7ef9e61f0388b5241894d40ff39f84a112232a5f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626055"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2694399"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-8-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (8. října 2019)
 
@@ -57,15 +57,15 @@ Funkce pro položku a navigaci zaměstnanců jsou nyní k dispozici ve všech pr
 
 Další informace naleznete v tématu [zjednodušené zadávání údajů o zaměstnancích](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry) v plánu Dynamics 365:2019 Release Wave 2.
 
-### <a name="issue-attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Problém: Aplikace Attract a Onboard vytvářejí neaktivní pracovníky v Core HR (380517)
+### <a name="attract-and-onboard-create-inactive-workers-in-core-hr-380517"></a>Aplikace Attract a Onboard vytvářejí neaktivní pracovníky v Core HR (380517)
 
 Vydání tohoto týdne opravuje problém, kdy aplikace Attract a Onboard vytvářejí neaktivní pracovníky v Core HR.
 
-### <a name="issue-the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>Problém: Workflow se nezdaří, pokud je manažer přihlášen k jiné společnosti při výpovědi zaměstnanci (346852)
+### <a name="the-workflow-fails-when-the-manager-is-signed-in-to-another-company-while-terminating-an-employee-346852"></a>Workflow se nezdaří, pokud je manažer přihlášen k jiné společnosti při výpovědi zaměstnanci (346852)
 
 Workflow již nefunguje na základě právnické osoby, ke které je přihlášený manažer.
 
-### <a name="issue-missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>Problém: Chybějící informace v HcmOnboardingWorkerChecklistTaskEntity (349591)
+### <a name="missing-information-on-hcmonboardingworkerchecklisttaskentity-349591"></a>Chybějící informace v HcmOnboardingWorkerChecklistTaskEntity (349591)
 
 Tato verze obsahuje další informace o **HcmOnboardingWorkerChecklistTaskEntity**. Několik příkladů:
 
@@ -73,35 +73,35 @@ Tato verze obsahuje další informace o **HcmOnboardingWorkerChecklistTaskEntity
 - **Jméno zaměstnance**, když je přiřazený typ **zaměstnanec**
 - **Jméno manažera**, když je přiřazený typ **manažer**
 
-### <a name="issue-entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Problém: Entity nejsou uvedeny v abecedním pořadí ve správě Common Data Service (377414)
+### <a name="entities-arent-listed-in-alphabetical-order-in-common-data-service-administration-377414"></a>Entity nejsou uvedeny v abecedním pořadí ve správě Common Data Service (377414)
 
 Problém: Entity jsou nyní uvedeny v abecedním pořadí na stránce **Správa CDS**.
 
-### <a name="issue-changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>Problém: Změna typu zaměstnání s budoucím datem neumožňuje přiřazení pozice (339958).
+### <a name="changing-the-employment-type-with-a-future-date-doesnt-allow-a-position-assignment-339958"></a>Změna typu zaměstnání s budoucím datem neumožňuje přiřazení pozice (339958).
 
 Tato změna umožňuje přiřazení pozice při změně typů pracovníků (například z zaměstnance na dodavatele).
 
-### <a name="issue-updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>Problém: Aktualizace entity Opustit bankovní transakci Common Data Service vytvoří nový záznam v aplikaci Talent (352938).
+### <a name="updating-the-common-data-service-leave-bank-transaction-entity-creates-a-new-record-in-talent-352938"></a>Aktualizace entity Opustit bankovní transakci Common Data Service vytvoří nový záznam v aplikaci Talent (352938).
 
 Transakce opuštění je nyní aktualizována, když je provedena aktualizace Common Data Service pro zanechané bankovní transakce.
 
-### <a name="issue-the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>Problém: Název příloh pro položky zpětné vazby zobrazuje popis zpětné vazby (343765).
+### <a name="the-title-of-attachments-for-feedback-items-shows-the-feedback-description-343765"></a>Název příloh pro položky zpětné vazby zobrazuje popis zpětné vazby (343765).
 
 Popis zpětné vazby se již v názvu přílohy nezobrazuje.
 
-### <a name="issue-compensation-workflow-comments-field-shows-incorrect-content-339297"></a>Problém: Pole Komentáře workflowu kompenzace zobrazuje nesprávný obsah (339297).
+### <a name="compensation-workflow-comments-field-shows-incorrect-content-339297"></a>Pole Komentáře workflowu kompenzace zobrazuje nesprávný obsah (339297).
 
 Tato změna zobrazí obsah pole **%HcmActionState.HcmWorkerActionComment.Comments%**.
 
-### <a name="issue-workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>Problém: WorkCalendarEntity a WorkCalendarDayEntity nejsou zveřejněny prostřednictvím OData (376329)
+### <a name="workcalendarentity-and-workcalendardayentity-arent-exposed-through-odata-376329"></a>WorkCalendarEntity a WorkCalendarDayEntity nejsou zveřejněny prostřednictvím OData (376329)
 
 V této verzi jsou **WorkCalendarEntity** a **WorkCalendarDayEntity** nyní k dispozici prostřednictvím Open Data Protocol (OData).
 
-### <a name="issue-hcmworkerentity-is-slow-when-odata-is-used-375221"></a>Problém: HCMWorkerEntity je pomalá při použití OData (375221).
+### <a name="hcmworkerentity-is-slow-when-odata-is-used-375221"></a>HCMWorkerEntity je pomalá při použití OData (375221).
 
 Změny zlepšují výkon **HCMWorkerEntity** při použití návrháře sešitu Microsoft Excel.
 
-### <a name="issue-manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>Problém: položka deníku výkonnosti správce zobrazuje chybu po odstranění deníku výkonnosti a vytvoření nového (336061)
+### <a name="manager-performance-journal-entry-shows-an-error-after-deleting-a-performance-journal-and-creating-a-new-one-336061"></a>Položka deníku výkonnosti správce zobrazuje chybu po odstranění deníku výkonnosti a vytvoření nového (336061)
 
 Tato verze opravuje problém, ke kterému dojde po odstranění jednoho deníku výkonnosti a následném okamžitém vytvoření nového. Tato oprava mění chování samoobslužné služby manažera.
 

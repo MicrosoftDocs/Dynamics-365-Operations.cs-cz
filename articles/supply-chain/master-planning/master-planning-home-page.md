@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0588ad24cb28a32557361e1a2e5391502a8b46d7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250684"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814254"
 ---
 # <a name="master-planning-home-page"></a>Domovská stránka Hlavního plánování
 
@@ -39,9 +39,9 @@ Hlavní plánování používá informace k výpočtu požadavků a vygenerován
 
 Tři hlavní procesy plánování jsou:
 
--  **Hlavní plánování** - Hlavní plán vypočítá čisté požadavky. To je založeno na skutečných aktuálních objednávkách a umožňuje společnostem řídit každodenního a každodenní doplňování skladu. Můžeme použít i termín *Plán čistých požadavků*. Více informací získáte v části [Hlavní plánování](master-plans.md). 
+-  **Hlavní plánování** - Hlavní plán vypočítá čisté požadavky. To je založeno na skutečných aktuálních objednávkách a umožňuje společnostem řídit každodenního a každodenní doplňování skladu. Můžeme použít i termín *Plán čistých požadavků*. Další informace o hlavních plánech naleznete v tématu [Přehled hlavních plánů](master-plans.md). 
 
--  **Plánování prognóz** - Plánu prognózy vypočítá hrubé požadavky. To je založeno na budoucích odhadech (prognózách) a umožňuje společnostem provádět dlouhodobé plánování materiálů a kapacity. Více informací získáte v části [Plánování prognóz](introduction-demand-forecasting.md). 
+-  **Plánování prognóz** - Plánu prognózy vypočítá hrubé požadavky. To je založeno na budoucích odhadech (prognózách) a umožňuje společnostem provádět dlouhodobé plánování materiálů a kapacity. Další informace viz [Přehled prognózy poptávky](introduction-demand-forecasting.md). 
 
 -  **Mezipodnikové hlavní plánování** - Mezipodnikový hlavní plán vypočítá čisté požadavky napříč právnickými osobami. Propojí poptávku a nabídku mezi společnostmi nejen z krátkodobého hlediska potvrzené poptávky a nabídky, ale i z dlouhodobého (ještě nepotvrzeného) hlediska poptávky a dodávek. Více informací naleznete v části [Mezipodnikové hlavní plánování](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (kurz elektronického vzdělávání) (vyžaduje účet CustomerSource). 
 
@@ -57,15 +57,15 @@ Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří r
 
 ## <a name="quick-links"></a>Rychlé odkazy
 
-- [Hlavní plány](master-plans.md)  
+- [Přehled hlavních plánů](master-plans.md)  
 - [Vygenerování plánu s omezeními](./tasks/constrained-plan.md)
 - [Vytvoření materiálového plánu pro vedlejší produkty](./tasks/create-material-plan-co-products.md)
-- [Hlavní plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
+- [Přehled hlavního plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
 - [Vytvoření mezipodnikového plánu](./tasks/create-intercompany-plan.md)
 - [Přehled prognózy poptávky](introduction-demand-forecasting.md)
-- [Redukční klíče](reduction-keys.md)
+- [Redukční klíče prognózy](reduction-keys.md)
                                   
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
 ### <a name="roadmaps"></a>Plánování
 Přejděte na [Přehled Microsoft Dynamics 365](https://roadmap.dynamics.com/) a zjistěte, jaké nové funkce se vydávají a jaké se chystají.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c4a2696b015611f4430ad5dfa1c61c1c4f913a9
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c6774a41887e74bfdb1fa6a9221264b0c8454c70
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570787"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814345"
 ---
 # <a name="inventory-journals"></a>Skladové deníky
 
@@ -74,7 +74,7 @@ Deníky výrobních vstupů fungují jako deníky doručení položek, ale použ
 
 ### <a name="counting"></a>Inventura
 
-Deníky inventur umožňují opravu aktuálních zásob na skladě, které jsou evidovány pro položky nebo skupiny položek, a následné zaúčtování skutečného fyzického počtu tak, aby bylo možné provést úpravy potřebné kvůli odsouhlasení rozdílů. Zásady inventury lze přidružit k inventurním skupinám pro usnadnění seskupení položek s různou charakteristikou tak, aby tyto položky mohly být zahrnuty do deníku inventur. Například můžete nastavením inventurních skupin provádět inventuru položek, které mají určité frekvence, nebo provádět inventuru položek, když zásoba klesne na danou úroveň. Více informací o definici inventurních skupin naleznete v tématu [Definování procesů inventur zásob (Průvodce záznamem úloh)](tasks/define-inventory-counting-processes.md).
+Deníky inventur umožňují opravu aktuálních zásob na skladě, které jsou evidovány pro položky nebo skupiny položek, a následné zaúčtování skutečného fyzického počtu tak, aby bylo možné provést úpravy potřebné kvůli odsouhlasení rozdílů. Zásady inventury lze přidružit k inventurním skupinám pro usnadnění seskupení položek s různou charakteristikou tak, aby tyto položky mohly být zahrnuty do deníku inventur. Například můžete nastavením inventurních skupin provádět inventuru položek, které mají určité frekvence, nebo provádět inventuru položek, když zásoba klesne na danou úroveň. Více informací o definici inventurních skupin naleznete v tématu [Definování procesů inventur zásob](tasks/define-inventory-counting-processes.md).
 
 ### <a name="tag-counting"></a>Inventura podle štítků
 

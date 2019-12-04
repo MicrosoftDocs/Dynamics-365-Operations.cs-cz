@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1a96b7cfa57ec72b25f21d94fadb2fbf9bc6ea3b
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: fb5abb983811ce736e3494bc85e8d9b23a2e373c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251342"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814068"
 ---
 # <a name="prospect-to-cash"></a>Zpeněžení potenciálního zákazníka
 
@@ -36,12 +36,12 @@ Další informace o integraci zpeněžení potenciálního zákazníka uvádí k
 
 V aktuální verzi poskytuje řešení zpeněžení potenciálního zákazníka následující typy přímé synchronizace:
 
-- [Správa účtů v aplikaci Sales a jejich synchronizace přímo z aplikace Sales do aplikace Supply Chain Management](accounts-template-mapping-direct.md)
-- [Správa produktů v aplikaci Supply Chain Management a jejich synchronizace přímo do aplikace Sales](products-template-mapping-direct.md)
-- [Správa kontaktů v aplikaci Sales a jejich přímá synchronizace na kontakty nebo odběratele v aplikaci Supply Chain Management](contacts-template-mapping-direct.md)
-- [Synchronizace prodejní nabídky přímo z aplikace Sales do Supply Chain Management](sales-quotation-template-mapping-sales-fin.md)
+- [Synchronizace obchodních vztahů přímo z aplikace Sales na odběratele v Supply Chain Management.](accounts-template-mapping-direct.md)
+- [Synchronizace produktů přímo z aplikace Supply Chain Management do produktů v Sales](products-template-mapping-direct.md)
+- [Synchronizace kontaktů přímo z aplikace Sales na kontakty nebo odběratele v aplikaci Supply Chain Management](contacts-template-mapping-direct.md)
+- [Synchronizace hlaviček a řádků prodejní nabídky přímo z aplikace Sales do Supply Chain Management](sales-quotation-template-mapping-sales-fin.md)
 - [Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
-- [Synchronizace prodejní faktury přímo z Supply Chain Management do Sales](sales-invoice-template-mapping-direct.md)
+- [Synchronizace hlaviček a řádků faktury přímo z aplikace Supply Chain Management do aplikace Sales](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-supply-chain-management"></a>Systémové požadavky pro Supply Chain Management
 Integrace zpeněžení potenciálního zákazníka je podporována v následujících verzích:

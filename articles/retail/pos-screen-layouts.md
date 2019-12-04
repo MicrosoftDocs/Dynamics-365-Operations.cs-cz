@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c4636f5a023786e3871eb5d907e2e9546181827a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025258"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811773"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Rozložení obrazovky pokladního místa (POS)
 
@@ -171,7 +171,7 @@ Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačíte
 
     - **Akce** – v seznamu použitelných POS operací vyberte operaci, která bude vyvolána při kliknutí na tlačítko v POS.
 
-        Ohledně seznamu podporovaných operací POS nahlédněte do části [Operace POS, online a offline](pos-operations.md).
+        Ohledně seznamu podporovaných operací POS nahlédněte do části [Online a offline operace pokladních míst (POS)](pos-operations.md).
 
     - **Parametry akce** – některé operace POS používají další parametry, když jsou vyvolány. Například pro operaci přidání produktů mohou uživatelé určit produkt, který má být přidán.
     - **Text na tlačítku** - zadejte text zobrazený na tlačítku v POS.
@@ -193,4 +193,4 @@ Návrhář mřížky tlačítek vám umožňuje konfigurovat mřížky tlačíte
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Instalace návrháře rozložení Retail POS](install-pos-layout-designer.md)
+[Instalace návrháře rozložení pokladního místa Retail (POS)](install-pos-layout-designer.md)

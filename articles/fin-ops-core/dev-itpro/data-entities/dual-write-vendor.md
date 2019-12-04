@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d33625b94e7611a256c389a6de4692ae8f4ff2a7
-ms.sourcegitcommit: 6e0909e95f38b7487a4b7f68cc62b723f8b59bd4
+ms.openlocfilehash: da451c63c23444da564307505d38699faf9df19a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572465"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770971"
 ---
 # <a name="integrated-vendor-master"></a>Integrovaná hlavní data dodavatelů
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Pojem *dodavatel* označuje dodavatelskou organizaci nebo jediného majitele, který je součástí procesu dodavatelského řetězce a který dodává zboží pro podnik. Ačkoli je *dodavatel* zavedeným konceptem v aplikacích Finance and Operations, koncept dodavatele neexistuje v ostatních aplikacích Dynamics 365. Místo toho některé firmy přetíží entitu Obchodní vztah a ukládají informace o zákaznících i informace o dodavateli. Jiné společnosti používají vlastní koncept dodavatele. Integrace Common Data Service podporuje oba tyto návrhy. Proto můžete povolit kterýkoli z návrhů v závislosti na vašem obchodním scénáři.
 
@@ -50,168 +48,26 @@ Kontaktní informace dodavatele se podobají kontaktním informacím o zákazní
 
 ## <a name="templates"></a>Šablony
 
-Data dodavatele zahrnují všechny informace o dodavateli, například skupinu dodavatelů, adresy, kontaktní informace, platební profil a profil faktury. Kolekce mapování entit pracuje společně během interakce s daty dodavatele, jak je uvedeno v následující tabulce.
+Data dodavatele zahrnují všechny informace o dodavateli, například skupinu dodavatelů, adresy, kontaktní informace, platební profil a profil faktury. Kolekce mapování entit pracují společně během interakce s daty dodavatele, jak je uvedeno v následující tabulce.
 
-Aplikace Finance and Operations  | Jiné aplikace Dynamics 365
-------------------------|---------------------------------
-Dodavatel V2               | Účet
-Dodavatel V2               | Msdyn\_vendors
-CDS kontakty V2         | Kontakt
-Skupiny dodavatelů           | Msdyn\_vendorgroups
-Platební metoda dodavatele   | Msdyn\_vendorpaymentmethods
-Platební kalendář        | Msdyn\_paymentschedules
-Platební kalendář        | Msdyn\_paymentschedulelines
-Den platby CDS         | Msdyn\_paymentdays
-Řádky dnů platby CDS   | Msdyn\_paymentdaylines
-Platební podmínky        | Msdyn\_paymentterms
-Přípony názvu            | Msdyn\_nameaffixes
+Aplikace Finance and Operations | Jiné aplikace Dynamics 365         | Popis
+----------------------------|---------------------------------|------------
+Dodavatel V2               | Účet | Firmy, které používají entitu obchodní vztah k ukládání informací o dodavateli, jí mohou nadále používat stejným způsobem. Mohou také využít explicitní funkce dodavatele, které přicházejí z důvodu integrace s aplikacemi Finance and Operations.
+Dodavatel V2               | Msdyn\_vendors | Firmy, které používají vlastní řešení pro dodavatele, mohou využít výhod integrované koncepce dodavatele, která je zaváděna v Common Data Service z důvodu integrace s aplikacemi Finance and Operations. 
+Skupiny dodavatelů | msdyn_vendorgroups | Tato šablona slouží k synchronizaci informací o skupinách dodavatele.
+Platební metoda dodavatele | msdyn_vendorpaymentmethods | Tato šablona slouží k synchronizaci informací o způsobu platby dodavatele.
+CDS kontakty V2             | kontakty                        | Šablona [kontakty](dual-write-customer.md#cds-contacts-v2-to-contacts) synchronizuje všechny primární, sekundární a terciární kontaktní informace pro odběratele i dodavatele.
+Řádky platebního kalendáře      | msdyn_paymentschedulelines      | Šablona [řádky platebního kalendáře](dual-write-customer.md#payment-schedule-lines-to-msdyn_paymentschedulelines) synchronizuje referenční data pro odběratele a dodavatele.
+Platební kalendář            | msdyn_paymentschedules          | Šablona [plány plateb](dual-write-customer.md#payment-schedule-to-msdyn_paymentschedules) synchronizuje referenční data pro odběratele a dodavatele.
+Řádky dnů platby CDS V2    | msdyn_paymentdaylines           | Šablona [řádky dní platby](dual-write-customer.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) synchronizuje referenční data řádků dní platby pro odběratele a dodavatele.
+Dny platby CDS            | msdyn_paymentdays               | Šablona [dny platby](dual-write-customer.md#payment-days-cds-to-msdyn_paymentdays) synchronizuje referenční data dní plateb pro odběratele a dodavatele.
+Platební podmínky            | msdyn_paymentterms              | Šablona [platební podmínky](dual-write-customer.md#terms-of-payment-to-msdyn_paymentterms) synchronizuje referenční data platebních podmínek pro odběratele a dodavatele.
+Přípony názvu                | msdyn_nameaffixes               | Šablona [přípony názvů](dual-write-customer.md#name-affixes-to-msdyn_nameaffixes) synchronizuje referenční data přípon názvů pro odběratele a dodavatele.
 
-[!include [banner](../includes/dual-write-symbols.md)]
+[!include [symbols](../includes/dual-write-symbols.md)]
 
-## <a name="vendor-v2-and-account"></a>Dodavatel V2 a obchodní vztah 
+[!include [Vendors](dual-write/VendorsV2-msdyn-vendors.md)]
 
-Firmy, které používají entitu obchodní vztah k ukládání informací o dodavateli, jí mohou nadále používat stejným způsobem. Mohou také využít explicitní funkce dodavatele, které přicházejí z důvodu integrace s aplikacemi Finance and Operations.
+[!include [Vendor groups](dual-write/VendVendorGroup-msdyn-vendorgroups.md)]
 
-## <a name="vendor-v2-and-msdyn_vendors"></a>Dodavate V2 a Msdyn\_vendors
-
-Firmy, které používají vlastní řešení pro dodavatele, mohou využít výhod integrované koncepce dodavatele, která je zaváděna v Common Data Service z důvodu integrace s aplikacemi Finance and Operations. 
-
-<!-- ![vendor mappings](media/dual-write-vendors-1.png) -->
-
-<!-- ![vendor mappings](media/dual-write-vendors-2.png) -->
-
-<!-- ![vendor mappings](media/dual-write-vendors-3.png) -->
-
-Zdrojové pole | Typ mapování | Cílové pole
----|---|---
-VENDORACCOUNTNUMBER | = | msdyn\_vendoraccountnumber
-VENDORGROUPID | = | msdyn\_vendorgroupid.msdyn\_vendorgroup
-VENDORORGANIZATIONNAME | = | msdyn\_name
-VENDORPARTYTYPE | \>\< | msdyn\_isperson
-PERSONFIRSTNAME | = | msdyn\_firstname
-PERSONLASTNAME | = | msdyn\_lastname
-CREDITLIMIT | = | msdyn\_vendorcreditlimit
-ISFOREIGNENTITY | \>\< | msdyn\_isforeignentity
-ISONETIMEVENDOR | \>\< | msdyn\_isonetimevendor
-ADDRESSBUILDINGCOMPLIMENT | = | msdyn\_addressbuildingcompliment
-PERSONCHILDRENNAMES | = | msdyn\_childrennames
-ADDRESSCITY | = | msdyn\_addresscity
-ADDRESSCOUNTRYREGIONID | = | msdyn\_addresscountryregionid
-ADDRESSCOUNTRYREGIONISOCODE | = | msdyn\_addresscountryregionisocode
-ADDRESSCOUNTYID | = | msdyn\_addresscountyid
-CREDITRATING | = | msdyn\_creditrating
-ADDRESSDESCRIPTION | = | msdyn\_addressdescription
-ADDRESSDISTRICTNAME | = | msdyn\_addressdistrictname
-DUNSNUMBER | = | msdyn\_dunsnumber
-ETHNICORIGINID | = | msdyn\_ethnicorigin
-FORMATTEDPRIMARYADDRESS | = | msdyn\_formattedprimaryaddress
-PERSONHOBBIES | = | msdyn\_hobbies
-PERSONINITIALS | = | msdyn\_initials
-LANGUAGEID | = | msdyn\_languageid
-PERSONLASTNAMEPREFIX | = | msdyn\_lastnameprefix
-PERSONMIDDLENAME | = | msdyn\_middlename
-ORGANIZATIONNUMBER | = | msdyn\_organizationnumber
-OURACCOUNTNUMBER | = | msdyn\_ourvendoraccountnumber
-PAYMENTID | = | msdyn\_paymentid
-PERSONPHONETICFIRSTNAME | = | msdyn\_phoneticfirstname
-PERSONPHONETICMIDDLENAME | = | msdyn\_phoneticmiddlename
-PERSONPHONETICLASTNAME | = | msdyn\_phoneticlastname
-ORGANIZATIONPHONETICNAME | = | msdyn\_organizationphoneticname
-ADDRESSPOSTBOX | = | msdyn\_addresspostbox
-PRIMARYURL | = | msdyn\_primarycontacturl
-PRIMARYEMAILADDRESS | = | msdyn\_primaryemailaddress
-PRIMARYEMAILADDRESSDESCRIPTION | = | msdyn\_primaryemailaddressdescription
-PRIMARYFACEBOOK | = | msdyn\_primaryfacebook
-PRIMARYFACEBOOKDESCRIPTION | = | msdyn\_primaryfacebookdescription
-PRIMARYFAXNUMBER | = | msdyn\_primaryfaxnumber
-PRIMARYFAXNUMBERDESCRIPTION | = | msdyn\_primaryfaxnumberdescription
-PRIMARYFAXNUMBEREXTENSION | = | msdyn\_primaryfaxnumberextension
-PRIMARYLINKEDIN | = | msdyn\_primarylinkedin
-PRIMARYLINKEDINDESCRIPTION | = | msdyn\_primarylinkedindescription
-PRIMARYPHONENUMBER | = | msdyn\_pimaryphonenumber
-PRIMARYPHONENUMBERDESCRIPTION | = | msdyn\_primaryphonenumberdescription
-PRIMARYPHONENUMBEREXTENSION | = | msdyn\_primaryphonenumberextension
-PRIMARYTELEX | = | msdyn\_primarytelex
-PRIMARYTELEXDESCRIPTION | = | msdyn\_primarytelexdescription
-PRIMARYTWITTER | = | msdyn\_primarytwitter
-PRIMARYTWITTERDESCRIPTION | = | msdyn\_primarytwitterdescription
-PRIMARYURLDESCRIPTION | = | msdyn\_primaryurldescription
-PERSONPROFESSIONALSUFFIX | = | msdyn\_professionalsuffix
-PERSONPROFESSIONALTITLE | = | msdyn\_professionatitle
-ADDRESSSTATEID | = | msdyn\_addressstateid
-ADDRESSSTREET | = | msdyn\_addressstreet
-ADDRESSSTREETNUMBER | = | msdyn\_addressstreetnumber
-VENDORKNOWNASNAME | = | msdyn\_vendorknownasname
-ADDRESSZIPCODE | = | msdyn\_addresszipcode
-DEFAULTPAYMENTDAYNAME | = | msdyn\_defaultpaymentdayname.msdyn\_name
-DEFAULTPAYMENTSCHEDULENAME | = | msdyn\_paymentschedule.msdyn\_name
-DEFAULTPAYMENTTERMSNAME | = | msdyn\_paymentterms.msdyn\_name
-HASONLYTAKENBIDS | \>\< | msdyn\_hasonlytakenbids
-ISMINORITYOWNED | \>\< | msdyn\_isminorityowned
-ISVENDORLOCALLYOWNED | \>\< | msdyn\_isvendorlocallyowned
-ISSERVICEVETERANOWNED | \>\< | msdyn\_isserviceveteranowned
-ISOWNERDISABLED | \>\< | msdyn\_ownerisdisabled
-ISWOMANOWNER | \>\< | msdyn\_womanowner
-PERSONANNIVERSARYDAY | = | msdyn\_personanniversaryday
-PERSONANNIVERSARYYEAR | = | msdyn\_anniversaryyear
-PERSONBIRTHDAY | = | msdyn\_birthday
-PERSONBIRTHYEAR | = | msdyn\_birthyear
-ORGANIZATIONEMPLOYEEAMOUNT | = | msdyn\_numberofemployees
-VENDORHOLDRELEASEDATE | = | msdyn\_vendoronholdreleasedate
-VENDORPARTYNUMBER | = | msdyn\_vendorpartynumber
-ADDRESSLOCATIONID | = | msdyn\_addresslocationid
-PERSONANNIVERSARYMONTH | = | msdyn\_vendorpersonanniversarymonth
-PERSONBIRTHMONTH | = | msdyn\_vendorpersonbirthmonth
-PERSONMARITALSTATUS | \>\< | msdyn\_maritalstatus
-ADDRESSLATITUDE | \>\> | msdyn\_addresslatitude
-ADDRESSLONGITUDE | \>\> | msdyn\_addresslongitude
-ONHOLDSTATUS | \>\< | msdyn\_onholdstatus
-CURRENCYCODE | = | msdyn\_currencycode.isocurrencycode
-ISVENDORLOCATEDINHUBZONE | \>\< | msdyn\_isvendorlocatedinhubzone
-DEFAULTVENDORPAYMENTMETHODNAME | = | msdyn\_vendorpaymentmethod.msdyn\_name
-INVOICEVENDORACCOUNTNUMBER | = | msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber
-PERSONGENDER | \>\< | msdyn\_gender
-AREPRICESINCLUDINGSALESTAX | \>\< | msdyn\_priceincludessalestax
-SALESTAXGROUPCODE | = | msdyn\_taxgroup.msdyn\_name
-VENDORPRICETOLERANCEGROUPID | = | msdyn\_pricetolerancegroup.msdyn\_groupid
-
-## <a name="contacts"></a>Kontakty
-
-Tato šablona synchronizuje všechny informace o primárních, sekundárních a terciárních kontaktech pro zákazníky i dodavatele, mezi aplikacemi Finance and Operations a dalšími aplikacemi Dynamics 365. Podrobné informace o mapování entit naleznete v tématu [Integrovaná hlavní data odběratelů](dual-write-customer.md#contacts).
-
-## <a name="vendor-groups"></a>Skupiny dodavatelů
-
-Tato šablona synchronizuje informace o skupinách dodavatelů mezi aplikacemi Finance and Operations a dalšími aplikacemi Dynamics 365.
-
-<!-- ![vendor groups mappings](media/dual-write-vendor-groups.png) -->
-
-Zdrojové pole | Typ mapování | Cílové pole
----|---|---
-DEFAULTPAYMENTTERMNAME | = | msdyn\_paymentterms.msdyn\_name
-POPIS | = | msdyn\_description
-VENDORGROUPID | = | msdyn\_vendorgroup
-CLEARINGPERIODPAYMENTTERMNAME | = | msdyn\_clearingperiodpaymentpermname.msdyn\_name
-
-### <a name="vendor-payment-method"></a>Platební metoda dodavatele
-
-Tato šablona synchronizuje informace o způsoby platby dodavatelů mezi Finance and Operations a dalšími aplikacemi Dynamics 365.
-
-<!-- ![vendor payment method mappings](media/dual-write-vendor-payment-method.png) -->
-
-Zdrojové pole | Typ mapování | Cílové pole
----|---|---
-NÁZEV | = | msdyn\_name
-POPIS | = | msdyn\_description
-SUMBYPERIOD | \>\< | msdyn\_sumbyperiod
-DISCOUNTGRACEPERIODDAYS | = | msdyn\_discountgraceperioddays
-PAYMENTSTATUS | \>\< | msdyn\_paymentstatus
-ALLOWPAYMENTCOPIES | \>\< | msdyn\_allowpaymentcopies
-PAYMENTTYPE | \>\< | msdyn\_paymenttype
-LASTFILENUMBER | = | msdyn\_lastfilenumber
-LASTFILENUMBERTODAY | = | msdyn\_lastfilenumbertoday
-ACCOUNTTYPE | \>\< | msdyn\_accounttype
-BRIDGINGPOSTINGENABLED | \>\< | msdyn\_bridgingposting
-ENABLEPOSTDATEDCHECKCLEARINGPOSTING | \>\< | msdyn\_postdatedcheckclearingposting
-PROMISSORYNOTEDRAFTTYPE | \>\< | msdyn\_promissorynotedrafttype
-DIRECTDEBIT | \>\< | msdyn\_directdebit
-
+[!include [Vendor payment methods](dual-write/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]

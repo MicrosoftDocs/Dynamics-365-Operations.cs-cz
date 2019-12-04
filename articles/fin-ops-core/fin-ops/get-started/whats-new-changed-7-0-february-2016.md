@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e39328c73fe3dd101e32ec04d895483335184ae7
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 54f07e7037f818862db4a44f9ad3e3fe8545f6f9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627644"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811475"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Co je nového nebo změněného v aplikaci Dynamics AX 7.0 (únor 2016)
 
@@ -322,7 +322,7 @@ Tato funkce pracuje nezávisle na metodě výpočtu nákladů, která je přiřa
 <tr>
 <td>Přístup k procesní nápovědě (průvodce úkolem) a rámcovým tématům kliknutím na tlačítko <strong>Nápověda</strong>.</td>
 <td>Systém nápovědy aplikace AX 2012 odkazuje na témata ve formátu HTML, která jsou uložena na místním webovém serveru. Zákazníci a partneři si mohou vytvářet svou vlastní nápovědu.</td>
-<td>Systém nápovědy v aktuální verzi aplikace Dynamics AX zobrazuje průvodce úkolem, kteří jsou uloženi v BPM služby Microsoft Dynamics Lifecycle Services (LCS). Systém nápovědy také zobrazuje témata z webu dokumentů společnosti Microsoft. Další infirmace uvádí nápověda pro <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Dynamics AX Help – začínáme</a> a <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Dostupní nový průvodci záznamem úloh (únor 2016)</a>.</td>
+<td>Systém nápovědy v aktuální verzi aplikace Dynamics AX zobrazuje průvodce úkolem, kteří jsou uloženi v BPM služby Microsoft Dynamics Lifecycle Services (LCS). Systém nápovědy také zobrazuje témata z webu dokumentů společnosti Microsoft. Další informace získáte v <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Systému nápovědy</a> a <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Nových průvodcích záznamem úloh (únor 2016)</a>.</td>
 <td>Průvodci úkolem vás interaktivním způsobem provedou kroky daného úkolu nebo obchodního procesu. Můžete stahovat a upravovat průvodce úkoly, které společnost Microsoft poskytuje. Téma nabízí rychlejší a pružnější způsob vytváření, dodávání a aktualizace dokumentace k produktu. Díky tomu pomáhá zajistit, že budete mít přístup k aktuálním technickým informacím.</td>
 </tr>
 </tbody>
@@ -1029,8 +1029,8 @@ Nebyly přidány následující nové funkce.
 |------------------|------------------|-----------------|------------------------|
 | Stáhnout, nainstalovat a nakonfigurovat Portál skladu pro mobilní zařízení. | Portál můžete stáhnout, nainstalovat a nakonfigurovat při instalaci aplikace Microsoft Dynamics AX pomocí standardního nastavení. Je navržen pro místní nasazení a konfiguraci vlastními silami. | Prostřednictvím položky nabídky v modulu Řízení skladu si můžete stáhnout samostatný instalační program. Je navržen pro místní nasazení a konfiguraci vlastními silami. | Pokud nastavíte možnost použití funkce mobilního zařízení, je nutné Portál skladu pro mobilní zařízení nainstalovat a nakonfigurovat místně a připojit se k aplikaci Dynamics AX v cloudu. |
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
-[Co je nového a co se změnilo](whats-new-changed.md)
+[Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations](whats-new-changed.md)
 
-[Nový průvodce úkolem je k dispozici (únor 2016)](new-task-guides-available-february-2016.md)
+[Noví průvodci úkolem (únor 2016)](new-task-guides-available-february-2016.md)

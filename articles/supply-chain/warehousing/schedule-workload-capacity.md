@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d5d878b0fe4e6b65aa2439d7ef7312eda1895823
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559018"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814920"
 ---
 # <a name="schedule-workload-capacity"></a>Plánování pracovního vytížení
 
@@ -30,7 +30,7 @@ ms.locfileid: "1559018"
 
 Můžete naplánovat kapacitu pracovního vytížení pro sklady a také projektovat současné i budoucí pracovní vytížení pro pracovníky v jednotlivých skladech. Můžete projektovat pracovní vytížení pro celý sklad, nebo můžete pracovní vytížení projektovat odděleně pro příchozí a odchozí pracovní vytížení.
 
-Aby bylo možné projektování výstupu pracovního vytížení pro vybrané sklady, data hlavního plánování musí být k dispozici pro tyto sklady. Další informace o hlavních plánech naleznete v tématu [Hlavní plány](../master-planning/master-plans.md).
+Aby bylo možné projektování výstupu pracovního vytížení pro vybrané sklady, data hlavního plánování musí být k dispozici pro tyto sklady. Další informace o hlavních plánech naleznete v tématu [Přehled hlavních plánů](../master-planning/master-plans.md).
 
 ## <a name="schedule-and-view-workloads-for-a-warehouse"></a>Plánování a zobrazení pracovního vytížení skladu
 

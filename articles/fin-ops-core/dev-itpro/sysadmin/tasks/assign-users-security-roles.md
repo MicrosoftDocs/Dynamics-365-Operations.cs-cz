@@ -3,7 +3,7 @@ title: Přiřazení uživatelů k rolím zabezpečení
 description: Uživatelé musí být přiřazeni k rolím zabezpečení, aby měli přístup k aplikacím Finance and Operations.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 11/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4daecc1acd589cd1656402244e5325382a407e7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e4f4ef4535de9e371829c2d86d4fdc1400510c7b
+ms.sourcegitcommit: 6aa74f66f1abd3a7977050a5339b0b17e62ff053
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180960"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "2807989"
 ---
 # <a name="assign-users-to-security-roles"></a>Přiřazení uživatelů k rolím zabezpečení
 
@@ -37,6 +37,9 @@ Chcete-li použít cokoli jiného než společné funkce, je nutné, aby byly u�
 5. V seznamu **Název pravidla členství** klikněte na odkaz ve vybraném řádku.
 6. Klikněte na **Upravit dotaz**. Podle potřeby upravte dotaz.  
 7. Klikněte na tlačítko **OK**.
+8. Klikněte na **Spustit automatické přiřazení role**.
+9. Přejděte na **Navigační podokno > Moduly > Správa systému > Uživatelé > Uživatelé** (nejlépe na kartě samostatného prohlížeče).
+10. Zkontrolujte role přiřazené různým uživatelům a potvrďte, že dotaz na přiřazení role byl správný. V případě potřeby je upravte a spusťte znovu.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Vyloučení uživatelů z automatického přiřazení k roli
 1. Zavřete stránku.

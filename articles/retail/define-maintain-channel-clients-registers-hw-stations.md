@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a21394daeb797995418c3b139191dd700c129e12
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 3f0180f63c32f3e88d7f5e245716ccc908cc026d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019386"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811233"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Připojení periferních zařízení k pokladnímu místu (POS).
 
@@ -33,7 +33,7 @@ ms.locfileid: "2019386"
 Toto téma popisuje postup připojení periferních zařízení k vaší pokladně POS.
 
 > [!NOTE]
-> Konkrétní pokyny k instalaci naleznete v tématu [Konfigurace a instalace Retail hardware station](retail-hardware-station-configuration-installation.md) a [Samoobslužné stažení/instalace Retail Modern POS a aktivace zařízení Modern POS a Cloud POS](retail-modern-pos-device-activation.md).
+> Konkrétní pokyny k instalaci naleznete v tématu [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md) a [Konfigurace, Instalace a aktivace Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Klíčové komponenty
 
@@ -139,7 +139,7 @@ Funkční profil je nastaven na úrovni obchodu. Slouží ke stanovení nastaven
 
 - Pevná záložka **Informační kódy**:
 
-    - Všechny aspekty toho, jak jsou informační kódy v systému POS spravovány. Další informace naleznete v tématu [Informační kódy](info-codes-retail.md).
+    - Všechny aspekty toho, jak jsou informační kódy v systému POS spravovány. Další podrobnosti naleznete v tématu [Informační kódy a skupiny informačních kódů](info-codes-retail.md).
 
 - Pevná záložka **Číslování účtenek**:
 

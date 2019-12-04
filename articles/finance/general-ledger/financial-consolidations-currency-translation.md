@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7b6b3cced92920ef5a253ca15793f26f244475fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186594"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771838"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Přehled finančních konsolidací a převodu měny
 
@@ -75,7 +75,7 @@ V předchozí organizační struktuře musíte mít pro konsolidaci v Severní A
 
 Když vytvoříte právnickou osobu, můžete specifikovat, zda je společnost použita jak pro konsolidační proces, tak pro proces eliminace, nebo pouze pro jeden z těchto procesů. Na následujícím obrázku se společnost používá pro oba tyto procesy. Všimněte si, že nelze zaúčtovat denní deníky v konsolidované společnosti, ale lze je zaúčtovat ve společnosti eliminace. Proto můžete chtít samostatnou společnost eliminace.
 
-![Právnická osoba, která je použita pro konsolidaci a eliminaci](./media/sep-elimination-company.png "Právnická osoba, která je použita pro konsolidaci a eliminaci")
+![Právnická osoba, která je použita pro konsolidaci i eliminaci](./media/sep-elimination-company.png "Právnická osoba, která je použita pro konsolidaci i eliminaci")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Hlavní účty a skupiny konsolidačních účtů
 Jednu volbu, kterou musíte provést, je to, jak chcete konsolidovat svou účtovou osnovu. Během procesu konsolidace existují tři možnosti pro konsolidaci hlavních účtů.
@@ -84,14 +84,14 @@ První možností je použití hlavních účtů ze zdrojové společnosti. V ta
 
 Druhou možností je zadat výchozí konsolidační účet na stránce **Hlavní účty**. Účet bude poté namapován na konsolidační účet. Tato možnost může být užitečná, pokud máte různé účtové osnovy nebo musíte mapovat na osnovu, která je definována ústředím.
 
-![Výchozí konsolidační účet zadaný na stránce Hlavní účty](./media/main-accounts.png "Výchozí konsolidační účet zadaný na stránce Hlavní účty")
+![Na stránce hlavního účtu byl zadán výchozí konsolidační účet](./media/main-accounts.png "Na stránce hlavního účtu byl zadán výchozí konsolidační účet")
 
 Třetí možností je použití skupiny konsolidačních účtů. Můžete definovat tolik skupin konsolidačních účtů, kolik potřebujete. Poté na stránce **Další konsolidační účty** jen namapujete hlavní účet z účetní osnovy na účet, který pro tuto skupinu vyžadujete.
 
 ![Mapování na stránce Další konsolidační účty](./media/additional-consolidation-accounts.png "Mapování na stránce Další konsolidační účty")
 
 ## <a name="consolidating-online"></a>Online konsolidace
-Chcete-li získat informace o zadání podrobností online konsolidace, přečtěte si téma [Konsolidace online](./consolidate-online.md).
+Chcete-li získat informace o zadání podrobností online konsolidace, přečtěte si téma [Online finanční konsolidace](./consolidate-online.md).
 
 ## <a name="managing-consolidation-transactions"></a>Správa konsolidačních transakcí
 Chcete-li zobrazit výsledky konsolidace, máte několik možností:
@@ -100,7 +100,7 @@ Chcete-li zobrazit výsledky konsolidace, máte několik možností:
 - Zkontrolujte stránku se seznamem **Předvaha** v konsolidační společnosti.
 - V seznamu transakcí konsolidace na stránce **Konsolidace** zobrazte zůstatky vytvořené podle data pro každou zdrojovou společnost pro každé období.
 
-    ![Konsolidační transakce na stránce Konsolidace](./media/managing-consolidation-transactions.png "Konsolidační transakce na stránce Konsolidace")
+    ![Transakce konsolidace na stránce konsolidace](./media/managing-consolidation-transactions.png "Transakce konsolidace na stránce konsolidace")
 
 Pokud chcete spustit konsolidaci znovu, můžete zpracovat pouze konsolidaci. Případně vyberte nejprve **Odebrat transakce** na stránce **Konsolidace**.
 
@@ -128,7 +128,7 @@ Vyberte zdrojové účty. Jako zástupný znak můžete použít hvězdičku (\*
 
 Po výběru zdrojových účtů použijte pole **Specifikace účtu** pro určení účtu, který se používá z cílové společnosti. Vyberte **Zdroj**, pokud chcete použít stejný hlavní účet definovaný ve zdrojovém účtu. Vyberete-li možnost **Definováno uživatelem**, je nutné zadat cílový účet.
 
-![Stránka s řádkem pravidla eliminace hlavní knihy](./media/ledger-elimination-rule-line.png "Stránka s řádkem pravidla eliminace hlavní knihy")
+![Stránka řádku pravidla eliminace hlavní knihy](./media/ledger-elimination-rule-line.png "Stránka řádku pravidla eliminace hlavní knihy")
 
 Pole **Specifikace dimenze** funguje jako pole **Specifikace účtu**. Vyberte **Zdroj** pro použití stejné dimenze v cílové společnosti a ve zdrojové společnosti. Vyberete-li **Definováno uživatelem**, je třeba určit dimenze v cílové společnosti volbou **Cílové dimenze**. Pak vyberte zdrojové dimenze, finanční dimenze a hodnoty, které slouží jako zdroj eliminace.
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba01f0d16341eb9b0ec0918798e458626b5ef90e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025046"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811186"
 ---
 # <a name="retail-peripherals"></a>Periferní zařízení Retail
 
@@ -35,11 +35,17 @@ Toto téma vysvětluje pojmy související s maloobchodními periferními zaří
 
 ### <a name="pos-registers"></a>Registry POS
 
-Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**. Registr místa prodeje (POS) je entita, která se používá k definování vlastností konkrétní instance POS. Tyto vlastnosti zahrnují hardwarový profil nebo nastavení maloobchodních periferních zařízení, která budou použita na pokladně, obchod, ke kterému je pokladna namapována a vizuální prostředí uživatele, který se k dané pokladně přihlásí.
+Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**. 
+
+Registr místa prodeje (POS) je entita, která se používá k definování vlastností konkrétní instance POS. Tyto vlastnosti zahrnují hardwarový profil nebo nastavení maloobchodních periferních zařízení, která budou použita na pokladně, obchod, ke kterému je pokladna namapována a vizuální prostředí uživatele, který se k dané pokladně přihlásí.
 
 ### <a name="devices"></a>Zařízení
 
-Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Zařízení**. Zařízení je entita, která představuje fyzickou instanci zařízení, která je namapována k pokladně POS. Při vytvoření je zařízení mapováno k pokladně POS. Zařízení sleduje informace o tom, kdy dojde k aktivaci pokladny POS, typu používaného klienta a balíčku aplikace, který byl nasazen na konkrétní zařízení. Zařízení mohou být mapována na aplikací následujících typů: Retail Modern POS, program Retail POS cloudu, Retail Modern POS – Windows Phone Retail Modern POS – Android a Retail Modern POS – iOS.
+Navigace: klikněte na tlačítko **Retail** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Zařízení**. 
+
+Zařízení je entita, která představuje fyzickou instanci zařízení, která je namapována k pokladně POS. Při vytvoření je zařízení mapováno k pokladně POS. Zařízení sleduje informace o tom, kdy dojde k aktivaci pokladny POS, typu používaného klienta a balíčku aplikace, který byl nasazen na konkrétní zařízení. 
+
+Zařízení mohou být mapována na aplikací následujících typů: Retail Modern POS, program Retail POS cloudu, Retail Modern POS – Windows Phone Retail Modern POS – Android a Retail Modern POS – iOS.
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -63,11 +69,15 @@ Periferní položky POS jsou zařízení, která jsou explicitně podporována p
 
 ### <a name="hardware-station"></a>Hardwarová stanice
 
-Navigace: klikněte na **Retail** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody**. Vyberte obchod a potom klikněte na pevnou záložku **Hardwarové stanice**. Nastavení **hardwarové stanice** je nastavení na úrovni kanálu, které slouží k definování instancí, kde bude nasazena maloobchodní periferní logika. Toto nastavení na úrovni kanálů se používá k určení vlastností hardwarové stanice. Slouží také k výpisu hardwarových stanic, které jsou k dispozici pro instanci Modern POS v daném obchodě. Hardwarová stanice je součástí programu Modern POS for Windows. Hardwarovou stanici lze také nasadit nezávisle jako samostatný program Internetové informační služby (IIS) Microsoft. V tomto případě je přístupný prostřednictvím sítě.
+Navigace: klikněte na **Retail** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody**. 
+
+Vyberte obchod a potom klikněte na pevnou záložku **Hardwarové stanice**. Nastavení **hardwarové stanice** je nastavení na úrovni kanálu, které slouží k definování instancí, kde bude nasazena maloobchodní periferní logika. Toto nastavení na úrovni kanálů se používá k určení vlastností hardwarové stanice. Slouží také k výpisu hardwarových stanic, které jsou k dispozici pro instanci Modern POS v daném obchodě. Hardwarová stanice je součástí programu Modern POS for Windows. Hardwarovou stanici lze také nasadit nezávisle jako samostatný program Internetové informační služby (IIS) Microsoft. V tomto případě je přístupný prostřednictvím sítě.
 
 ### <a name="hardware-profile"></a>Profil hardwaru
 
-Navigace: klikněte na **Maloobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarové profily**. Hardwarový profil je seznam zaříení, která jsou nakonfigurována pro pokladnu POS nebo hardwarovou stanici. Hardwarový profil lze přiřadit přímo k pokladně POS nebo k hardwarové stanici.
+Navigace: klikněte na **Maloobchodní prodej** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Hardwarové profily**. 
+
+Hardwarový profil je seznam zaříení, která jsou nakonfigurována pro pokladnu POS nebo hardwarovou stanici. Hardwarový profil lze přiřadit přímo k pokladně POS nebo k hardwarové stanici.
 
 ## <a name="devices-classes"></a>Třídy zařízení
 Periferie POS jsou obvykle rozděleny do tříd. Tato část popisuje a poskytuje přehled zařízení, která podporuje Modern POS.
@@ -206,7 +216,7 @@ Informace naleznete v tématu [Konfigurace a instalace maloobchodní hardwarové
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Instalace a konfigurace Moderního POS pro Windows
 
-Informace naleznete v tématu [Konfigurace a instalace Retail Modern POS](retail-modern-pos-device-activation.md).
+Informace naleznete v tématu [Konfigurace, instalace a aktivace Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Instalace a konfigurace zařízení OPOS
 
@@ -523,7 +533,7 @@ Periferní síťová zařízení mohou být podporována přímo prostřednictv�
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfigurace pro podporované scénáře
 
-Další informace o vytváření hardwarových profilů naleznete v tématu [Definování a udržování kanálových klientů, včetně registrů a hardwarových stanic](define-maintain-channel-clients-registers-hw-stations.md).
+Další informace o postupu při vytváření hardwarových profilů naleznete v tématu [Připojení periferních zařízení k pokladnímu místu (POS)](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
 > V aplikaci Retail verze 1611 se profil hardwarové stanice již nepoužívá. Atributy, které jste dříve nastavili v profilu hardwarové stanice, jsou nyní součástí samotné hardwarové stanice.
@@ -566,8 +576,8 @@ Tato konfigurace může být použita pro všechny moderní POS klienty, které 
 4. Klikněte na **Maloobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
 5. Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
 6. Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
-7. Instalace hardwarové stanice. Další informace o instalaci hardwarové stanice, viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
-8. Instalace a aktivace moderní POS. Další informace o instalaci Modern POS uvádí téma [Retail Modern POS – konfigurace a instalace](retail-modern-pos-device-activation.md).
+7. Instalace hardwarové stanice. Další informace o instalaci hardwarové stanice viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
+8. Instalace a aktivace moderní POS. Další informace o instalaci Modern POS uvádí téma [Konfigurace, instalace a aktivace Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9. Přihlášte se do moderní POS a vyberte **Provést operace bez zásuvky**.
 10. Spusťte operaci **Spravovat hardwarové stanice**.
 11. Klikněte na **Spravovat**.
@@ -595,8 +605,8 @@ Tato konfigurace může být použita pro všechny moderní POS klienty, které 
 5. Klikněte na **Maloobchodní prodej** &gt; **Maloobchodní IT** &gt; **Distribuční plán**.
 6. Vyberte plán distribuce **1090** pro synchronizování nového hardwarového profilu do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
 7. Vyberte plán distribuce **1040** pro synchronizování nové hardwarové stanice do úložiště. Klikněte na tlačítko **Nyní spustit** pro synchronizování změn do POS.
-8. Nainstalujte hardwarovou stanici na každý hostitelský počítač, který jste vytvořili v krocích 2 a 3. Další informace o instalaci hardwarové stanice, viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
-9. Instalace a aktivace moderní POS. Další informace o instalaci Modern POS uvádí téma [Retail Modern POS – konfigurace a instalace](retail-modern-pos-device-activation.md).
+8. Nainstalujte hardwarovou stanici na každý hostitelský počítač, který jste vytvořili v krocích 2 a 3. Další informace o instalaci hardwarové stanice viz [Konfigurace a instalace maloobchodní hardwarové stanice](retail-hardware-station-configuration-installation.md).
+9. Instalace a aktivace moderní POS. Další informace o instalaci Modern POS uvádí téma [Konfigurace, instalace a aktivace Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Přihlášte se do moderní POS a vyberte **Provést operace bez zásuvky**.
 11. Spusťte operaci **Spravovat hardwarové stanice**.
 12. Klikněte na **Spravovat**.
@@ -655,7 +665,7 @@ Podle aktuálních standardů zabezpečení by mělo být v provozním prostřed
 
 ## <a name="peripheral-simulator"></a>Simulátor periferních zařízení
 
-Informace naleznete v tématu [Maloobchodní simulátor periferií](dev-itpro/retail-peripheral-simulator.md).
+Informace naleznete v tématu [Periferní simulátor pro maloobchod](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsoft-tested-peripheral-devices"></a>Periferní zařízení otestována Microsoftem
 
@@ -896,4 +906,4 @@ Následující periferní zařízení byla testována pomocí sdílené hardwaro
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Simulátor periferních zařízení Retail](dev-itpro/retail-peripheral-simulator.md)
+[Simulátor periferních zařízení pro Retail](dev-itpro/retail-peripheral-simulator.md)

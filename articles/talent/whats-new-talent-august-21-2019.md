@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a3e2178dbc60582d6167898c4c3446feac49dd04
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024061"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814483"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Talent (20. srpna 2019)
 
@@ -35,7 +35,7 @@ Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynami
 
 ### <a name="simplified-apply-experience-for-candidates"></a>Zjednodušené zkušenosti s použitím pro uchazeče 
 
-Ve veřejném náhledu je nyní k dispozici zjednodušené používání pro kandidáty. Jakmile jsou uchazeči povoleni, mohou požádat o práci s využitím životopisu pomocí volby **Zažádat pomocí služby LinkedIn** (Pokud je povolena) nebo s využitím formuláře pro existující přihlášky. S těmito změnami mohou uchazeči rychle odesílat své žádosti o práci s minimem polí, která vyžadují ruční vstup. Informace o povolení této funkce naleznete v tématu [Povolení nebo zakázání funkcí náhledu](./access-preview-feature.md#enable-or-disable-preview-features).
+Ve veřejném náhledu je nyní k dispozici zjednodušené používání pro kandidáty. Jakmile jsou uchazeči povoleni, mohou požádat o práci s využitím životopisu pomocí volby **Zažádat pomocí služby LinkedIn** (Pokud je povolena) nebo s využitím formuláře pro existující přihlášky. S těmito změnami mohou uchazeči rychle odesílat své žádosti o práci s minimem polí, která vyžadují ruční vstup. Informace o povolení této funkce naleznete v tématu [Povolení nebo zakázání funkcí náhledu v Microsoft Dynamics 365 Talent](./access-preview-feature.md#enable-or-disable-preview-features).
 
 ### <a name="view-rejection-comments-as-part-of-application-activity"></a>Zobrazení komentáře k odmítnutí jako součást aktivity aplikace
 

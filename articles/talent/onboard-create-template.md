@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1fac239524d4873a782e6a3d177a573a382d0f6
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 55853418eacd179b7bb50b7e4385300bdcb27abe
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552022"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812895"
 ---
 # <a name="create-an-onboarding-template-by-using-dynamics-365-talent---onboard"></a>Vytvoření šablony zaškolení pomocí aplikace Dynamics 365 Talent - Onboard
 
@@ -59,6 +59,6 @@ Microsoft Dynamics 365 Talent: Onboard poskytuje různé šablony, které vám m
 ### <a name="see-also"></a>Viz také
 
 - [Vyzkoušejte nebo kupte aplikaci Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Novinky](./whats-new.md)
-- [Poznámky k verzi](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Získání podpory](./talent-support.md)
+- [Co je nového a co se změnilo v aplikaci Dynamics 365 Talent](./whats-new.md)
+- [Plány vydání](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Získání podpory pro Microsoft Dynamics 365 Talent](./talent-support.md)

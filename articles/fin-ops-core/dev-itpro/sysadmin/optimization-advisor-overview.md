@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4e47aea3a9d1ce62a85aac9a4acce398b5847f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191401"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811963"
 ---
 # <a name="optimization-advisor-overview"></a>Přehled poradce při optimalizaci
 
@@ -38,7 +38,7 @@ Dostupnost funkcí v aplikaci, výkon systému a hladký průběh obchodních pr
 
 Pracovní prostor **Poradce při optimalizaci** je nástroj, který umožňuje uživatelům power user, obchodním analytikům, funkčním konzultantům a funkcím IT podpory identifikovat problémy v konfiguraci modulu a obchodních datech. Poradce při optimalizaci navrhuje doporučené postupy pro konfiguraci a identifikuje obchodní údaje, které jsou zastaralé nebo chybné.
 
-Poradce při optimalizaci pravidelně spouští sadu pravidel doporučených postupů. K dispozici je výchozí sada pravidel, uživatelé však mohou vytvářet také pravidla, která jsou specifická pro svá vlastní nastavení, řešení od nezávislých dodavatelů softwaru (ISV) a o zaměstnání. Další informace o tom, jak vytvářet pravidla, naleznete v tématu [Vytvoření nových pravidel](./create-rules-optimization-advisor.md).
+Poradce při optimalizaci pravidelně spouští sadu pravidel doporučených postupů. K dispozici je výchozí sada pravidel, uživatelé však mohou vytvářet také pravidla, která jsou specifická pro svá vlastní nastavení, řešení od nezávislých dodavatelů softwaru (ISV) a o zaměstnání. Další informace o tom, jak vytvářet pravidla, naleznete v tématu [Vytvoření pravidel pro poradce optimalizací](./create-rules-optimization-advisor.md).
 
 Při zjištění narušení pravidla se vygeneruje příležitost optimalizace a zobrazí se v pracovním prostoru **Poradce při optimalizaci**. Uživatel může provést odpovídající opravnou akci přímo z pracovního prostoru **poradce pro optimalizaci**.
 
@@ -90,8 +90,8 @@ Jestli se možnost nevztahuje na vaši roli, můžete vybrat **skrýt z mého se
 
 Chcete-li deaktivovat vyhodnocení konkrétních pravidel, zvolte příležitost vygenerovanou pravidlem a poté zvolte **Deaktivovat analýzy**.
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
-[Vytvoření nových pravidel](./create-rules-optimization-advisor.md)
+[Vytvoření pravidel pro poradce při optimalizaci](./create-rules-optimization-advisor.md)
 
 [Poradce při optimalizaci v Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

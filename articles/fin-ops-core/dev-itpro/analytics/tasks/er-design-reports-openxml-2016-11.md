@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d1229c89f43f9ded955dadf2f4d87825c9ab4e71
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182570"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769848"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu OPENXML (listopad 2016)
 
@@ -36,7 +36,7 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postup
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Odeslání konfigurace modelu platebních dat
 1. V navigačním podokně přejděte na **Moduly > Správa organizace > Pracovní prostory > Elektronické vykazování**.
-2. V seznamu označte konfiguraci pro vzorovou společnost Litware, Inc. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](er-configuration-provider-mark-it-active-2016-11.md).
+2. V seznamu označte konfiguraci pro vzorovou společnost Litware, Inc. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu [Vytvoření poskytovatelů konfigurace a jejich označení za aktivní](er-configuration-provider-mark-it-active-2016-11.md).
 3. Vyberte **Nastavit jako aktivní**.
 4. Vyberte **Úložiště**. Vyberte úložiště pro typ Provozní prostředky (pokud je k dispozici). Pokud k dispozici je, přeskočte následující kroky týkající se vytváření nového úložiště.  
 5. Kliknutím na **Přidat** otevřete dialogové okno pro přetažení.

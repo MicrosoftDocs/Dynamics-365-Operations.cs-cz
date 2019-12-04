@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 2bb5dd5e29559807e40b66ad7f9c061bf510ed67
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba0d11efe868d57c74f6ae4b069d1cb8351f7213
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026134"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773050"
 ---
 # <a name="provision-talent"></a>Zřízení aplikace Talent
 
@@ -49,12 +49,12 @@ Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prost
 1. Ve svém LCS projektu vyberte dlaždici **Správa aplikace Talent**.
 2. Označte, zda se jedná o sandbox nebo produkční instanci aplikace Talent. Funkce předčasného náhledu mohou být k dispozici v instancích sandbox pro dřívější zpětnou vazbu a testování. 
     > [!NOTE]
-    > Typ instance aplikace Talent je oddělen od typu instance prostředí PowerApps, který jste nastavili v centru správy PowerApps.
+    > Typ instance aplikace Talent je oddělen od typu instance prostředí Microsoft Power Apps, který jste nastavili v centru správy Power Apps.
 3. Pokud chcete, aby prostředí obsahovalo stejnou datovou sadu, jaká se používá ve zkušenosti talentové zkušební jednotky, zaškrtněte políčko **Zahrnout ukázková data**. To je vhodné pro dlouhodobá demonstrační nebo školicí prostředí a nikdy se nemá používat pro výrobní prostředí.  Tuto možnost musíte zvolit při počátečním nasazení. Existující nasazení nelze aktualizovat později.
-4. Talent bude vždy zřízen v prostředí Microsoft PowerApps, aby byla možná integrace a rozšiřitelnost PowerApps. Než budete pokračovat, přečtěte si část Výběr prostředí PowerApps v tomto tématu. Pokud již nemáte prostředí PowerApps, vyberte správu prostředí v LCS nebo přejděte do centra pro správu PowerApps. Poté postupujte podle kroků k [Vytvoření prostředí PowerApps](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Talent bude vždy zřízen v prostředí Microsoft Power Apps, aby byla možná integrace a rozšiřitelnost Power Apps. Než budete pokračovat, přečtěte si část Výběr prostředí Power Apps v tomto tématu. Pokud již nemáte prostředí Power Apps, vyberte správu prostředí v LCS nebo přejděte do centra pro správu Power Apps. Poté postupujte podle kroků k [Vytvoření prostředí Power Apps](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
     > [!NOTE]
-    > K zobrazení existujících prostředí nebo vytváření nových prostředí musí být správce klienta zřizujícího aplikaci Talent přiřazen k licenci PowerApps P2. Pokud vaše organizace nemá PowerApps P2 licenci, můžete jednu získat ze svého CSP nebo ze stránky s cenami [PowerApps](https://powerapps.microsoft.com/pricing/).
+    > K zobrazení existujících prostředí nebo vytváření nových prostředí musí být správce klienta zřizujícího aplikaci Talent přiřazen k licenci Power Apps P2. Pokud vaše organizace nemá Power Apps P2 licenci, můžete jednu získat ze svého CSP nebo ze stránky s cenami [Power Apps](https://powerapps.microsoft.com/pricing/).
 
 5. Vyberte prostředí, do kterého chcete zřídit Talent.
 6. K odsouhlasení smluvních podmínek vyberte **Ano** a začněte s nasazením.
@@ -68,19 +68,19 @@ Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prost
 
     > Protože v rámci předplatného aplikace Talent jsou povolena pouze dvě prostředí LCS, můžete zvážit také využití 60denní zkušenbí verze [zkušební prostředí Talent](https://dynamics.microsoft.com/talent/overview/). Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Core HR. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Nejsou určena k použití jako produkční prostředí. Mějte na paměti, že po vypršení zkušebního prostředí po 60 dnech budou všechna data v prostředí smazána a nelze je obnovit. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
 
-## <a name="select-a-powerapps-environment"></a>Výběr prostředí PowerApps
+## <a name="select-a-power-apps-environment"></a>Výběr prostředí Power Apps
 
-Integrace mezi prostředími Talent a PowerApps umožňuje integraci a rozšíření použití dat aplikace Talent pomocí nástrojů PowerApps. Pochopení účelu prostředí PowerApps vám umožní nejen vytvořit aplikace pro rozšíření aplikace Talent, ale také provést vybrat správné prostředí při zřizování aplikace Talent. Informace o prostředí PowerApps, včetně rozsahu prostředí, přístupu k prostředí a k vytváření a volbě prostředí naleznete v tématu [Oznámení prostředí PowerApps](https://powerapps.microsoft.com/blog/powerapps-environments/). 
+Integrace mezi prostředími Talent a Power Apps umožňuje integraci a rozšíření použití dat aplikace Talent pomocí nástrojů Power Apps. Pochopení účelu prostředí Power Apps vám umožní nejen vytvořit aplikace pro rozšíření aplikace Talent, ale také provést vybrat správné prostředí při zřizování aplikace Talent. Informace o prostředí Power Apps, včetně rozsahu prostředí, přístupu k prostředí a k vytváření a volbě prostředí naleznete v tématu [Oznámení prostředí Power Apps](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
-Použijte následující pokyny při určování, do kterého prostředí PowerApps nasadit aplikaci Talent: 
+Použijte následující pokyny při určování, do kterého prostředí Power Apps nasadit aplikaci Talent: 
 
-1. V LCS vyberte **Prostředí pro správu** nebo přejděte přímo do centra pro správu PowerApps, ve kterém můžete zobrazit existující prostředí a vytvářet nová prostředí.
-2. Jedno prostředí Talent je mapováno na jedno prostředí PowerApps.
-3. Prostředí PowerApps "obsahuje" aplikaci Talent, spolu s odpovídajícími aplikacemi PowerApps, Flow a Common Data Service. Je-li prostředí PowerApps odstraněno, jsou s ním odstraněny i aplikace, které obsahuje. Při zřizování prostředí Talent můžete zřídit **zkušební** nebo **produkční** prostředí. Vyberte typ prostředí podle toho, jak bude prostředí používáno. 
-4. Měly být zohledněny strategie integrace dat a testování, například Sandbox, UAT nebo výroba. Doporučujeme zvážit různé implikace na vaše nasazení, protože není snadné později změnit, které prostředí Talent je namapováno na prostředí PowerApps.
-5. Následující prostředí PowerApps nelze použít pro aplikaci Talent a bude odfiltrováno ze seznamu voleb v rámci LCS:
+1. V LCS vyberte **Prostředí pro správu** nebo přejděte přímo do centra pro správu Power Apps, ve kterém můžete zobrazit existující prostředí a vytvářet nová prostředí.
+2. Jedno prostředí Talent je mapováno na jedno prostředí Power Apps.
+3. Prostředí Power Apps obsahuje aplikaci Talent, spolu s odpovídajícími aplikacemi Power Apps, Power Automate a Common Data Service. Je-li prostředí Power Apps odstraněno, jsou s ním odstraněny i aplikace, které obsahuje. Při zřizování prostředí Talent můžete zřídit **zkušební** nebo **produkční** prostředí. Vyberte typ prostředí podle toho, jak bude prostředí používáno. 
+4. Měly být zohledněny strategie integrace dat a testování, například Sandbox, UAT nebo výroba. Doporučujeme zvážit různé implikace na vaše nasazení, protože není snadné později změnit, které prostředí Talent je namapováno na prostředí Power Apps.
+5. Následující prostředí Power Apps nelze použít pro aplikaci Talent a bude odfiltrováno ze seznamu voleb v rámci LCS:
  
-    - **Výchozí prostředí Power Apps** - I když je každý klient automaticky vytvořen s výchozím prostředím PowerApps, nedoporučujeme je používat se systémem Talent, protože všichni uživatelé klientů mají přístup do prostředí PowerApps a mohou neúmyslně poškodit data výroby při testování a seznámení s integrací PowerApps nebo Flow.
+    - **Výchozí prostředí Power Apps** - I když je každý klient automaticky vytvořen s výchozím prostředím Power Apps, nedoporučujeme je používat se systémem Talent, protože všichni uživatelé klientů mají přístup do prostředí Power Apps a mohou neúmyslně poškodit provozní data při testování a seznámení s integrací Power Apps nebo Power Automate.
    
     - **Zkušební prostředí** Tato prostředí jsou vytvářena s dobou platnosti a vyprší po uplynutí této doby, což způsobí, že prostředí a všechny obsažené instance aplikace Talent budou odebrány automaticky.
    
