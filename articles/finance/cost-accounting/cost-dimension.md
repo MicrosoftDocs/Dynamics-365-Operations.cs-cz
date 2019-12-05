@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a7db93e1877034051b6add4c11ddfe7cd7d17e0b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 575b27de845d931c990b1d19254b5218fa6e4199
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187905"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770843"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Vytvoření dimenzí a import členů dimenze
 
@@ -44,11 +44,10 @@ Následující diagram znázorňuje dimenze, které se používají v nákladov�
 Po importu dat do nákladového účetnictví můžete vytvořit různé perspektivy, které poskytují informace manažerům na všech úrovních organizace. Následující témata obsahují informace o vytváření dimenzí a členech dimenze importu. 
 
 -  [Dimenze prvku nákladů](cost-elements.md)
--  [Vytváření prvků nákladů (průvodce záznamem úloh)](./tasks/create-cost-elements.md)
+-  [Vytváření prvků nákladů](./tasks/create-cost-elements.md)
 -  [Dimenze objektu nákladů](cost-objects.md)
--  [Vytváření prvků nákladů (průvodce záznamem úloh)](./tasks/create-cost-objects.md)
 -  [Mapování členů dimenze prvků nákladů na společnou sadu členů dimenze](map-cost-elements-dimension-members.md)
--  [Namapování dimenze prvku nákladů (průvodce záznamem úloh)](./tasks/map-cost-element-dimension.md)
+-  [Namapování dimenze prvku nákladů](./tasks/map-cost-element-dimension.md)
 -  [Členy statistické dimenze a šablony poskytovatelů statistických měření](statistical-measure-provider-template.md)
 
 

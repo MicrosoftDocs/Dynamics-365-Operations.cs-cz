@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: a85f804344abec37d85e1ce15f064c8a0b901546
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743180"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813102"
 ---
 # <a name="set-up-disposition-codes"></a>Nastavit dispoziční kódy 
 
@@ -32,7 +32,7 @@ ms.locfileid: "1743180"
 
 Můžete nastavit kódy dispozice k určení způsobu zpracování zboží vráceného zákazníkem. Můžete například vytvořit kód dispozice s názvem **opravit a vrátit**, čímž označíte, že vrácené zboží bude opraveno a poté vráceno zákazníkovi. Další příklady kódů dispozice, které se obvykle používají pro zboží vrácené zákazníky, naleznete v tématu [Určení způsobu likvidace vráceného zboží](specify-how-to-dispose-of-returned-items.md).
 
-Můžete také nastavit kód příčiny vysvětlující, proč bylo zboží vráceno . Další informace o kódech důvodů naleznete v tématu [nastavení kódů důvodů vrácení](set-up-return-reason-code.md).
+Můžete také nastavit kód příčiny vysvětlující, proč bylo zboží vráceno . Další informace o kódech důvodů naleznete v tématu [nastavení kódu důvodu vrácení](set-up-return-reason-code.md).
 
 1.  Klepněte na tlačítko **Prodej a marketing** \> **nastavení** \> **prodejní objednávky** \> **vrácení** \> **Kódy likvidace**.
 
@@ -46,7 +46,7 @@ Můžete také nastavit kód příčiny vysvětlující, proč bylo zboží vrá
 
 ## <a name="see-also"></a>Viz také
 
-[Dispoziční kódy a kódy důvodu vrácení](disposition-and-return-reason-codes.md)
+[Přehled vrácených položek odběratelů](disposition-and-return-reason-codes.md)
 
 [Dispoziční kódy (formulář)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 

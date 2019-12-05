@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9eef9d8c58d19b05901035f4c679ee7d9902819
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176765"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771906"
 ---
 # <a name="set-up-fixed-assets"></a>Nastavení dlouhodobého majetku
 
@@ -51,7 +51,7 @@ Po nastavení odpisových plánů je nutné vytvořit požadované knihy majetku
 
 Každá kniha má přiřazen primární odpisový plán. Knihy také mají alternativní nebo náhradní odpisový plán, pokud tento typ profilu je možné použít. Pokud chcete automaticky zahrnout knihu dlouhodobého majetku do spuštění odpisů, musíte povolit možnost **Vypočítat odpis**. Pokud tato možnost není povolena pro majetek, bude majetek při návrhu odpisu vynechán.
 
-Lze také nastavit odvozené knihy. Určené odvozené transakce jsou zaúčtovány oproti odvozeným knihám jako přesná kopie primární transakce. Z toho vyplývá, že odvozené transakce jsou obvykle nastaveny pro pořízení a likvidace, ne pro transakce odpisů. Další informace naleznete v tématu [Nastavení knih](tasks/set-up-value-models.md).
+Lze také nastavit odvozené knihy. Určené odvozené transakce jsou zaúčtovány oproti odvozeným knihám jako přesná kopie primární transakce. Z toho vyplývá, že odvozené transakce jsou obvykle nastaveny pro pořízení a likvidace, ne pro transakce odpisů. Další informace naleznete v tématu [Nastavení modelů ocenění](tasks/set-up-value-models.md).
 
 ## <a name="fixed-asset-posting-profiles"></a>Účetní profily dlouhodobého majetku
 

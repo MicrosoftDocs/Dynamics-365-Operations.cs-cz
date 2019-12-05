@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a63184852751bb65fb7e80d721f8c48fd847609
-ms.sourcegitcommit: edfd805356894710488ce07cb1c89313f448b222
+ms.openlocfilehash: 8b8263afd8469d9bf3f566c4c44a5976d7ff3e86
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "1998964"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815196"
 ---
 # <a name="coverage-settings"></a>Nastavení distponibility
 
@@ -65,4 +65,4 @@ Každá metoda doplnění je přiřazena k jednomu z následujících kódů pok
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Hlavní plány](master-plans.md)
+[Přehled hlavních plánů](master-plans.md)

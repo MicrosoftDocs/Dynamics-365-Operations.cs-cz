@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 21ff82df71e352ca176aa1635a5ffb478bbcaf0e
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 0fc9877fdca2d2f85f4f9609616d8d21ab7b5174
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536817"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771580"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Obsah analýzy nákladového účetnictví v Power BI
 
@@ -74,7 +74,7 @@ Obsah zahrnuje sadu stránek sestav. Každá stránka obsahuje sadu metrik, kter
 |                                  | Skutečné náklady podle názvu člena dimenze objektu nákladů a názvu člena dimenze prvku nákladů                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Následující data se používají k naplnění stránek sestavy v obsahu **Analýza nákladového účetnictví** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
+Následující data se používají k naplnění stránek sestavy v obsahu **Analýza nákladového účetnictví** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
 
 Následujících klíčové měrné systémy agregace byly použity jako základ obsahu.
 

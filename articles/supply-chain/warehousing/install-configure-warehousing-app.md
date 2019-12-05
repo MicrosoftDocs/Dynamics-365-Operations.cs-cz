@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
-ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
+ms.openlocfilehash: df0bc9ff2405cc2f370ea777a70e005a1ff338a0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2548961"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814943"
 ---
 # <a name="install-and-configure-the-warehousing-app-overview"></a>Přehled instalace a konfigurace aplikace Warehousing
 
@@ -62,15 +62,32 @@ Pokud chcete povolit interakci aplikace s konkrétním serverem Supply Chain Ma
 
 1.  Přejděte ve webovém prohlížeči na <https://portal.azure.com>.
 2.  Zadejte jméno a heslo pro uživatele, kteří mají přístup k předplatnému Azure.
-3.  Na portálu Azure v levém navigačním podokně klikněte na **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+3.  V aplikaci Azure Portal v levém navigačním podokně klikněte na položku **Azure Active Directory**.
+
+    [![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+
 4.  Ujistěte se, že instance služby Active Directory je ta, kterou používá aplikace Supply Chain Management.
-5.  V seznamu klikněte na **Registrace aplikací**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+5.  V seznamu klikněte na **Registrace aplikací**. 
+
+    [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+
 6.  V horním podokně klikněte na **Nová registrace**. Spustí se **Průvodce registrací aplikace**.
-7.  Zadejte název aplikace a vyberte **Pouze účty v tomto organizačním adresáři**. Klikněte na možnost **Registrovat**.  [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
-8.  Otevře se vaše nová registrace aplikace. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+7.  Zadejte název aplikace a vyberte **Pouze účty v tomto organizačním adresáři**. Klikněte na možnost **Registrovat**.  
+
+    [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+
+8.  Otevře se vaše nová registrace aplikace. 
+
+    [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+
 9.  Zapamatujte si **ID aplikace**, budete ho potřebovat později. Na **ID aplikace** se bude později odkazovat jako na **ID klienta**.
-10. Klikněte na **Certifikát a tajné kódy** v podokně **Spravovat**. Klikněte **Nový tajný klíč klienta**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
-11. Vytvořte klíč zadáním popisu klíče a trvání v části **Hesla**. Klikněte na **Přidat** a zkopírujte klíč. Tento klíč bude později označován jako **tajný klíč klienta**. [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
+10. Klikněte na **Certifikát a tajné kódy** v podokně **Spravovat**. Klikněte **Nový tajný klíč klienta**. 
+
+    [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
+
+11. Vytvořte klíč zadáním popisu klíče a trvání v části **Hesla**. Klikněte na **Přidat** a zkopírujte klíč. Tento klíč bude později označován jako **tajný klíč klienta**. 
+
+    [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Vytvoření a konfigurace uživatelských účtů v aplikaci Supply Chain Management
 Aby mohla aplikace Supply Chain Management používat vaši aplikaci Azure AD, je nutné provést následující kroky konfigurace:
@@ -78,26 +95,45 @@ Aby mohla aplikace Supply Chain Management používat vaši aplikaci Azure AD, j
 1.  Vytvořte uživatele, který odpovídá pověření uživatele aplikace Warehousing.
     1.  Přejděte do nabídky **Správa systému** &gt; **Společné** &gt; **Uživatelé**.
     2.  Vytvořte nového uživatele.
-    3.  Přiřaďte uživatele mobilního zařízení skladu, jak je znázorněno na následujícím snímku obrazovky. [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
+    3.  Přiřaďte uživatele mobilního zařízení skladu, jak je znázorněno na následujícím snímku obrazovky. 
+    
+        [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
 2.  Přidružte aplikaci služby Azure Active Directory k uživateli aplikace Sklady.
     1.  V aplikaci Supply Chain Management přejděte na **Správa systému** &gt; **Nastavení** &gt; **Azure Active Directory aplikace**.
     2.  Vytvořit nový řádek.
-    3.  Zadejte **ID klienta** (získané v poslední části), zadejte jeho název a vyberte dříve vytvořeného uživatele. Doporučujeme označit všechna zařízení, abyste jim v případě ztráty mohli z této stránky snadno odebrat přístup k aplikaci Supply Chain Management. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
+    3.  Zadejte **ID klienta** (získané v poslední části), zadejte jeho název a vyberte dříve vytvořeného uživatele. Doporučujeme označit všechna zařízení, abyste jim v případě ztráty mohli z této stránky snadno odebrat přístup k aplikaci Supply Chain Management. 
+    
+        [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
 ## <a name="configure-the-application"></a>Konfigurace aplikace
 Aplikaci je třeba nakonfigurovat v zařízení, aby se připojovala k serveru Supply Chain Management prostřednictvím aplikace Azure AD. To lze provést následovně:
 
 1.  V aplikaci přejděte na **Nastavení připojení**.
-2.  Zrušte zaškrtnutí políčka **Demo režim**. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+2.  Zrušte zaškrtnutí políčka **Demo režim**. <br>
+
+    [![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+
 3.  Zadejte následující informace: 
     + **ID klienta Azure Active directory client ID** - ID klienta získáte v kroku 9 v postupu „Vytvoření aplikace webové služby ve službě Active Directory“. 
     + **Tajný klíč klienta Azure Active** - Tajný klíč získáte v kroku 11 v postupu „Vytvoření aplikace webové služby ve službě Active Directory“. 
-    + **Prostředek služby Azure Active Directory** - Prostředek Azure AD určuje adresu URL aplikace Supply Chain Management. **Poznámka:**: na konci tohoto pole nepoužívejte znak lomítka (/). 
+    + **Prostředek služby Azure Active Directory** - Prostředek Azure AD určuje adresu URL aplikace Supply Chain Management. 
+    
+        > [!NOTE]
+        > Na konci tohoto pole nepoužívejte znak lomítka (/). 
+
     + **Klient služby Azure Active Directory** - klient adresáře Azure AD, který se používá se serverem Supply Chain Management: `https://login.windows.net/your-AD-tenant-ID`. Například: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
-    <br>**Poznámka:**: na konci tohoto pole nepoužívejte znak lomítka (/). 
-    + **Společnost** – Zadejte právnickou osobu v aplikaci Supply Chain Management, ke které se má aplikace připojovat. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
-4.  Vyberte tlačítko **Zpět** tlačítko v levém horním rohu aplikace. Aplikace se nyní připojí k vašemu serveru Supply Chain Management a zobrazí se přihlašovací obrazovka pro pracovníka skladu. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+    
+        > [!NOTE]
+        > Na konci tohoto pole nepoužívejte znak lomítka (/). 
+    
+    + **Společnost** – Zadejte právnickou osobu v aplikaci Supply Chain Management, ke které se má aplikace připojovat. <br>
+    
+    [![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
+
+4.  Vyberte tlačítko **Zpět** tlačítko v levém horním rohu aplikace. Aplikace se nyní připojí k vašemu serveru Supply Chain Management a zobrazí se přihlašovací obrazovka pro pracovníka skladu.
+
+    [![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
 
 Další informace o způsobu nastavení aplikace Warehousing pro skenování čárových kódů pomocí fotoaparátu na mobilním zařízení naleznete v tématu [Skenování čárových kódů pomocí fotoaparátu v aplikaci Dynamics 365 for Finance and Operations – Warehousing](scan-bar-codes-using-a-camera.md)
 

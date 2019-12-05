@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2168b33c8495eab61ec0c8262b042cd16420031c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a643be553f3fcdfbe53f2024982a596e498830a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190090"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811281"
 ---
 # <a name="create-workflows-overview"></a>Přehled vytvoření workflow
 
@@ -54,19 +54,19 @@ Nakonfigurujte vlastnosti workflowu pomocí následujících kroků.
 
 1. Klepnutím na plátno se ujistěte, že není vybrán žádný prvek workflowu.
 2. Kliknutím na **Vlastnosti** otevřete formulář **Vlastnosti** pro workflow.
-3. Postupujte podle pokynů v tématu [Konfigurace vlastností workflowu](configure-workflow-properties.md).
+3. Postupujte podle pokynů v tématu [Konfigurace vlastností workflow](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Konfigurace prvků workflowu
 
 Nakonfigurujte každý prvek, který jste přetáhli na plátno. Další informace o konfiguraci jednotlivých prvků workflowu naleznete v následujících tématech:
 
-- [Konfigurace ručního úkolu](configure-manual-task-workflow.md)
-- [Konfigurace automatizované úlohy](configure-automated-task-workflow.md)
-- [Konfigurace procesu schválení](configure-approval-process-workflow.md)
-- [Konfigurace kroku schválení](configure-approval-step-workflow.md)
-- [Konfigurace ručního rozhodnutí](configure-manual-decision-workflow.md)
-- [Konfigurace podmíněného rozhodnutí](configure-conditional-decision-workflow.md)
-- [Konfigurace paralelní aktivity](configure-parallel-activity-workflow.md)
+- [Konfigurace ručních úloh ve workflow](configure-manual-task-workflow.md)
+- [Konfigurace automatizovaných úloh ve workflowu](configure-automated-task-workflow.md)
+- [Konfigurace schvalovacích procesů ve workflowu](configure-approval-process-workflow.md)
+- [Konfigurace schvalovacích kroků ve workflowu](configure-approval-step-workflow.md)
+- [Konfigurace ručních rozhodnutí ve workflow](configure-manual-decision-workflow.md)
+- [Konfigurace podmíněných rozhodnutí ve workflow](configure-conditional-decision-workflow.md)
+- [Konfigurace paralelních větví ve workflow](configure-parallel-activity-workflow.md)
 - [Konfigurace paralelní větve](configure-parallel-branch-workflow.md)
 - [Konfigurace workflow položky řádku](configure-line-item-workflow.md)
 

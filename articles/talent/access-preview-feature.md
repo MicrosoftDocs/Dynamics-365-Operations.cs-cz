@@ -1,5 +1,5 @@
 ---
-title: Přístup k funkcím náhledu v aplikaci Microsoft Dynamics 365 Talent
+title: Správa funkcí
 description: Toto téma popisuje, jak může správce povolit funkce náhledu, a uvádí seznam funkcí v aplikaci Microsoft Dynamics 365 Talent, které jsou nyní povoleny pro náhled.
 author: tracykeya
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 0f9a83aeea3942d3c56d32956f79490c91565e9e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551583"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833293"
 ---
-# <a name="access-preview-features-in-microsoft-dynamics-365-talent"></a>Přístup k funkcím náhledu v aplikaci Microsoft Dynamics 365 Talent
+# <a name="manage-features"></a>Správa funkcí
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 V rámci našeho průběžného přidávání schopností cyklu správy lidského kapitálu v aplikaci Microsoft Dynamics 365 Talent chceme, aby zákazníci co nejdříve měli k dispozici nové funkce. Správci mohou zobrazit a používat funkce náhledu v rámci prostředí. Tyto funkce jsou téměř připraveny k obecné dostupnosti a prošly rozsáhlým testováním. Právě hledáme další z zpětnou vazbu od zákazníků a ověření před tím, než budou dostupné široké veřejnosti.
 
@@ -54,7 +54,7 @@ Chcete-li získat přístup k funkcím náhledu, je nutné je nejprve povolit ve
 > [!NOTE]
 > Některé funkce náhledu mohou vyžadovat další konfiguraci. Pomocí odkazů vedle funkce náhledu dokončete její instalaci.
 
-### <a name="core-hr"></a>Základní lidské zdroje
+### <a name="core-hr"></a>Core HR
 
 1. Přihlaste se do aplikace Talent.
 2. Vyberte **Správa systému** a poté vyberte kartu **Odkazy**.
@@ -117,6 +117,6 @@ Neuvádějte ve zpětné vazbě nebo recenzích na produkty své osobní údaje 
 ## <a name="see-also"></a>Viz také
 
 - [Vyzkoušení nebo nákup aplikací Talent](https://dynamics.microsoft.com/talent/overview/)
-- [Novinky](./whats-new.md)
-- [Poznámky k verzi](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Získání podpory pro Talent](./talent-support.md)
+- [Co je nového a co se změnilo v aplikaci Dynamics 365 Talent](./whats-new.md)
+- [Plány vydání](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Získání podpory pro Microsoft Dynamics 365 Talent](./talent-support.md)

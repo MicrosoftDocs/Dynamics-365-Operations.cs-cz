@@ -16,12 +16,12 @@ ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d84ce00ceaf126abd8c6e6a12bcdedbdc0bf01d5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d47016732dfb31b810f4e3bd3b1d534baee63a23
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175689"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773474"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integrace fiskální služby (ESR)
 
@@ -182,7 +182,7 @@ Tato část vás provede následujícími obchodními procesy a používá fisk�
 ### <a name="register-an-automatically-posted-cod-payment-for-a-free-text-invoice-and-print-a-cash-receipt"></a>Registrace automaticky zaúčtované platby na dobírku pro volnou fakturu a tisk hotovostní příjemky
 
 1. Zvolte **Pohledávky** &gt; **Volné faktury** &gt; **Všechny volné faktury**.
-2. Vytvořte volnou fakturu. Více informací naleznete v tématu [Vytvoření volné faktury](../accounts-receivable/create-free-text-invoice-new.md). 
+2. Vytvořte volnou fakturu. Více informací naleznete v tématu [Vytvoření volných faktur](../accounts-receivable/create-free-text-invoice-new.md). 
 3. Na pevné záložce **Platba** vyberte metodu platby, která je nastavena jako metoda platby pro registrační pokladnu.
 4. Vyberte platební podmínky, které jsou nastaveny pro platbu na dobírku.
 5. Zvolte **Zaúčtovat**.
@@ -198,7 +198,7 @@ Tato část vás provede následujícími obchodními procesy a používá fisk�
 ### <a name="register-an-automatically-posted-cod-payment-for-a-sales-order-invoice-and-print-a-cash-receipt"></a>Registrace automaticky zaúčtované platby na dobírku pro fakturu prodejní objednávky a tisk hotovostní příjemky
 
 1. Zvolte **Pohledávky** &gt; **Objednávky** &gt; **Všechny prodejní objednávky**.
-2. Vytvořte prodejní objednávku. Další informace naleznete v tématu [Vytvoření prodejní objednávky](../../supply-chain/sales-marketing/tasks/create-sales-orders.md).
+2. Vytvořte prodejní objednávku. Další informace naleznete v tématu [Vytvoření prodejních objednávek](../../supply-chain/sales-marketing/tasks/create-sales-orders.md).
 3. Na pevné záložce **Cena a sleva** vyberte metodu platby, která je nastavena jako metoda platby pro registrační pokladnu.
 4. V poli **Platba** vyberte podmínky platby nastavené pro platbu na dobírku.
 5. Zvolte **Faktura** &gt; **Faktura**.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 80b1f8aeabfd033f393463f4be5a61447377f2d9
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 1a86936d756d8375761ce50c9d9bf33dc638dfad
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009299"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772912"
 ---
 # <a name="user-can-access-core-hr-but-not-onboard-or-attract"></a>Uživatel má přístup k Core HR, ale nikoliv k aplikacím Onboard nebo Attract
 
@@ -39,7 +39,7 @@ Uživatel B má přístup do Core HR, ale nedostane se do aplikací Talent: Attr
 
 **Řešení**
 
-Uživatel B musí být přiřazena oprávnění k zobrazení prostředí Microsoft PowerApps, které vytvořil uživatel A během procesu zřizování.
+Uživatel B musí být přiřazena oprávnění k zobrazení prostředí Microsoft Power Apps, které vytvořil uživatel A během procesu zřizování.
 
 Informace naleznete v části Zřízení přístupu k prostředí v tématu [Zřízení aplikace Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 

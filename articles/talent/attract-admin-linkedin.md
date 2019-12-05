@@ -1,5 +1,5 @@
 ---
-title: Nastavení integrace s řešením LinkedIn pro aplikaci Microsoft Dynamics 365 Talent - Attract
+title: Nastavení integrace LinkedIn a aplikací Attract
 description: V tomto tématu je vysvětleno, jak konfigurovat integraci řešení LinkedIn v aplikaci Microsoft Dynamics 365 Talent - Attract, aby bylo možné snadno publikovat práce na LinkedIn z aplikace Attract a aby vaši pracovníci náboru mohli synchronizovat své informace o náboru s profilem kandidáta na LinkedIn.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5cdce69396d6972d810e65e15b27c79119a0a9e6
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4c518fb7036d44aa52c8db859ee3616fc4e58a06
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552110"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833177"
 ---
-# <a name="set-up-integration-with-linkedin-for-microsoft-dynamics-365-talent---attract"></a>Nastavení integrace s řešením LinkedIn pro aplikaci Microsoft Dynamics 365 Talent - Attract
+# <a name="set-up-linkedin-integration-with-attract"></a>Nastavení integrace LinkedIn a aplikací Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Pomozte pracovníkům náboru a vedoucím týmů přilákat nejlepší talenty konfigurací integrace LinkedIn s Microsoft Dynamics 365 Talent: Attract. Attract umožňuje publikovat nabídky práce přímo na LinkedIn, největší online síti profesionálů.
 
@@ -41,11 +41,11 @@ Attract nabízí dva způsoby integrace s LinkedIn, které vám pomohou získat 
 Obě možnosti lze konfigurovat na kartě **Integrace LinkedIn** v centru pro správu. Chcete-li otevřít centrum pro správu, přejděte na <https://attract.talent.dynamics.com/adminsettings>.
 
 > [!NOTE]
-> Aby bylo možné používat integraci programu LinkedIn Recruiter s aplikací Attract, je potřeba doplněk [Komplexní nábor](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) a [licence LinkedIn Recruiter](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). Další informace naleznete v tématu [Která verze aplikace Attract?](./attract-comprehensive-hiring.md).
+> Aby bylo možné používat integraci programu LinkedIn Recruiter s aplikací Attract, je potřeba doplněk [Komplexní nábor](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) a [licence LinkedIn Recruiter](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). Další informace naleznete v tématu [Která verze aplikace Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
-Pokud máte potíže s publikováním prací na LinkedIn, informace naleznete v tématu [Odstraňvání potíží s LinkedIn](./attract-troubleshoot-linkedin.md).
+Pokud máte potíže s publikováním prací na LinkedIn, nahlédněte do části [Odstraňování problémů s integrací s LinkedIn a aplikací Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
-Informace o dalších způsobech publikování prací na LinkedIn naleznete v tématu [Nejčastější dotazy týkající se LinkedIn](./attract-linkedin-faq.md).
+Informace o dalších způsobech publikování prací na LinkedIn naleznete v tématu [Nejčastější dotazy týkající se integrace aplikace Attract s LinkedIn](./attract-linkedin-faq.md).
 
 ## <a name="configure-job-posting-to-linkedin"></a>Konfigurovat publikování práce na LinkedIn
 
@@ -98,7 +98,7 @@ Chcete-li povolit pracovníkům náboru zdrojovat práce prostřednictvím Linke
 
 Můžete povolit kandidátům požádat o vaše práce pomocí svých LinkedIn profilů. Další informace o funci Požádat přes LinkedIn naleznete v [Síla LinkedIn všude: Požádat přes LinkedIn](https://blog.linkedin.com/2011/07/24/apply-with-linkedin).
 
-Tato funkce je aktuálně v náhledu Před provedením těchto kroků je nutné, aby byla povolena možnost Požádat přes LinkedIn. Další informace o povolení funkcí náhledu naleznete v části [Přístup k funkcím náhledu v aplikaci Talent](./access-preview-feature.md).
+Tato funkce je aktuálně v náhledu Před provedením těchto kroků je nutné, aby byla povolena možnost Požádat přes LinkedIn. Další informace o povolení funkcí náhledu naleznete v části [Přístup k funkcím verze Preview v Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
 1. V nabídce **Nastavení** (symbol ozubeného kola) v pravém horním rohu vyberte **Centrum pro správu**. Můžete také přejít na <https://attract.talent.dynamics.com/adminsettings>.
 2. Vyberte kartu **Integrace LinkedIn**.
@@ -109,12 +109,12 @@ Tato funkce je aktuálně v náhledu Před provedením těchto kroků je nutné,
 
 ## <a name="see-also"></a>Viz také
 
-[Často kladené otázky k řešení LinkedIn](./attract-linkedin-faq.md)
+[Časté dotazy týkající se integrace Attract s řešením LinkedIn](./attract-linkedin-faq.md)
 
-[Publikování pracovních míst na externí weby z aplikace Attract](./posting-jobs-external.md)
+[Publikování pracovních míst na externí kariérní weby z aplikace Attract](./posting-jobs-external.md)
 
-[Zazdrojování kandidátů s využitím LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Zdrojování kandidátů pomocí LinkedIn Recruiter v aplikaci Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
-[Vytvoření prací](./creating-jobs-attract.md)
+[Vytvoření, schválení a zveřejnění pracovních míst v aplikaci Attract](./creating-jobs-attract.md)
 
-[Odstraňování potíží s integrací s řešením LinkedIn](./attract-troubleshoot-linkedin.md)
+[Odstraňování problémů s integrací s LinkedIn a aplikací Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

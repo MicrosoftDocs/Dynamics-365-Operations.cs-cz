@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 92ef83bc1783b00a4d7d9739ca1c17e863c7ff44
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8be4e225507a18a92d642ff0f3a6ca3d0ff68564
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185260"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772528"
 ---
 # <a name="parse-incoming-documents-in-json-format"></a>Analýza příchozích dokumentů ve formátu JSON
 

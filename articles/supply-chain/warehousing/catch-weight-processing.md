@@ -3,7 +3,7 @@ title: Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 description: Toto téma popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
 author: perlynne
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 5800f95de0ec773f40c506662a031887810b8c92
+ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887128"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2696632"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 
@@ -181,7 +181,7 @@ V současné době je funkce štítků skutečné hmotnosti podporována pouze j
 - Když se zpracování stavu zásob změnilo pomocí aplikace skladu.
 - Když je převod skladu proveden pomocí aplikace skladu.
 - Při zpracování příchozích a odchozích úprav prostřednictvím aplikace skladu.
-- Když je práce výdeje zpracovávána pro prodejní objednávky a převodní příkazy. (Mějte na paměti, že štítky skutečné hmotnosti nelze zaznamenat pro výdej výrobních komponent.)
+- Když je práce výdeje zpracovávána pro řádky prodeje, převodu a výroby.
 - Když je vyskladněné množství sníženo z řádků vytížení, bez ohledu na to, zda se používají kontejnery.
 - Když jsou produkty zabaleny do kontejnerů ve stanici balení.
 - Když jsou kontejnery znovu otevřeny.

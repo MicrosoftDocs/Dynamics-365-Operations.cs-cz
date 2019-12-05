@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd5c80bc53029426d7e42c4854e0effc48ef202a
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: aa35037b435bafa3f22013e41f0692f836e99a14
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537801"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811548"
 ---
 # <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
@@ -238,5 +238,5 @@ Od aktualizace Platform update 11 mohou uživatelé nalézt aktuálně dostupné
 | Přechod na začátek/konec vyhledávání                                                                                    | Home/End                       |
 ## <a name="additional-resources"></a>Další zdroje
 
-- [Klávesové zkratky v Návrháři sestav](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+- [Klávesové zkratky pro analýzu chybějícího účtu](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

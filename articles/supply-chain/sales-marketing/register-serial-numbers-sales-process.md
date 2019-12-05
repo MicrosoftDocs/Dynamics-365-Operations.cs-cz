@@ -1,9 +1,9 @@
 ---
-title: Registrace sériových čísel v prodejním procesu
+title: Práce se serializovanými položkami
 description: Toto téma vysvětluje, jak lze registrovat sériová čísla v dodacích listech nebo fakturách během prodejního procesu. Tato funkce je užitečná, pokud mnoho společností chce jednoduše zaznamenat sériová čísla pro účely záruky a služeb, a nepotřebuje udržovat sériová čísla v zásobách od příjmu po vydání.
 author: omulvad
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d655015a2048bb8e7d85d8ea3679b8b2506caf10
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: d37d308eab1d29cd014599a3f812b1ee1ca49ea1
+ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572099"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2695022"
 ---
-# <a name="register-serial-numbers-in-the-sales-process"></a>Registrace sériových čísel v prodejním procesu
+# <a name="working-with-serialized-items"></a>Práce se serializovanými položkami
 
 [!include [banner](../includes/banner.md)]
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734db6f777de2bcd6ea024c9255f589c155e44f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec2874fb21184ccbf4f7039acf20db399e5cf5fb
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569815"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813332"
 ---
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>Použití externích katalogů pro funkci PunchOut eProcurement
 
@@ -41,7 +41,7 @@ Můžete použít akci na řádku **Externí katalogy** k otevření stránky, k
 
 V závislosti na svých oprávněních změňte žadatele, kupující právnickou osobu a přijímající provozní jednotku. Změna těchto hodnot může změnit seznam externích katalogů, které jsou k dispozici žadateli. Externí katalogy, které jsou k dispozici, závisí na aktuálních aktivních zásadách nákupu pro kupující právnickou osobu nebo přijímající provozní jednotku. Tyto zásady mohou povolit nebo zakázat přístup k určité kategorii zásobování. Z tohoto důvodu může být ovlivněn seznam externích katalogů, které jsou mapovány na tyto kategorie zásobování.
 
-Další informace o způsobech nastavení zásad naleznete v tématu [Zásady nákupu](../procurement/purchase-policies.md).
+Další informace o způsobech nastavení zásad naleznete v tématu [Přehled zásad nákupu](../procurement/purchase-policies.md).
 
 - Pokud chcete vyhledat externí katalogy pro konkrétní kategorie zásobování, zadejte text v poli pro vyhledávání katalogu.
 - Pokud chcete přidat produkty z externího katalogu dodavatele na web dodavatele, klikněte na externí katalog. Poté přidejte produkty do nákupního košíku a přejděte k pokladně. Řádky nákupního košíku se přesunou do aplikace Microsoft Dynamics 365.

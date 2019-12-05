@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d70bce4e47c05a7974c1b974fdca17682e5370aa
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550850"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772380"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Integrace dat téměř v reálném čase pomocí Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 V současném digitálním světě používají podnikatelské ekosystémy aplikace Microsoft Dynamics 365 jako celek. Protože data od osob, zákazníků, operací a zařízení s internetem věcí (IoT) proudí do jednoho zdroje, existuje příležitost pro digitální smyčky zpětné vazby. Pro dosažení těchto zkušeností je nezbytná integrace mezi aplikacemi Finance and Operations a dalšími aplikacemi Dynamics 365. Některé aplikace jsou postaveny nad službou Common Data Service. Integrace mezi daty aplikací Finance and Operations a Common Data Service umožňuje dalším aplikacím komunikovat vzájemně a plynně s aplikací Finance and Operations.
 
@@ -38,13 +36,16 @@ Aplikace Finance and Operations a Common Data Service poskytují synchronizaci d
 
 ![Diagram přehledu architektury](media/dual-write-overview.jpg)
 
-Pro zákazníky jsou k dispozici následující propozice hodnot:
+Jsou k dispozici následující propozice hodnot:
 
 + [Organizační hierarchie v Common Data Service](dual-write-organization.md)
 + [Koncept společnosti v Common Data Service](dual-write-company.md)
 + [Integrovaná hlavní data odběratelů](dual-write-customer.md)
++ [Integrovaná hlavní kniha](dual-write-ledger.md)
++ [Sjednocené prostředí produktu](dual-write-product.md)
 + [Integrovaná hlavní data dodavatelů](dual-write-vendor.md)
-+ Sjednocený hlavní produkt
++ [Integrované sklady a pracoviště](dual-write-sites-and-warehouses.md)
++ [Integrovaná hlavní data daní](dual-write-tax.md)
 
 ## <a name="system-requirements"></a>Systémové požadavky
 

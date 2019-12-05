@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 98784c11c7393bb4c3e022d5bff4cca2daa1636e
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 67d8ee101546470ff54404eeebd736233e34f26f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025437"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811871"
 ---
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Instalace návrháře rozložení pokladního místa Retail (POS)
 
@@ -60,6 +60,6 @@ Rozložení grafického návrhu pro MPOS nebo Cloud POS řídí rozložení pokl
 
 **Známý problém:** návrhář správně nefunguje v prohlížečích Google Chrome a Mozilla Firefox. Na opravě tohoto problému pracujeme.
 
-## <a name="additional-resources"></a>Další prostředky
+## <a name="additional-resources"></a>Další zdroje
 
-[Konfigurace, stažení, instalace a aktivace Retail Modern POS](retail-modern-pos-device-activation.md)
+[Konfigurace, Instalace a aktivace Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)

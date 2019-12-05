@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: af2066c095c675aa0003ac2cf66bebba48a1e8a5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190849"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812498"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Vytvoření vlastních polí a práce s nimi
 
@@ -103,7 +103,7 @@ Pro rozevírací seznam polí lze také změnit uspořádání sady platných ho
 
 ### <a name="exposing-custom-fields-on-data-entities"></a>Vystavení vlastních polí na datových entitách
 
-Je rovněž důležité umožnit, aby byla vlastní pole viditelná na datových entitách. Datové entity se používají ve funkci [Otevřít v aplikaci Office](../../dev-itpro/office-integration/office-integration.md), stejně jako u scénáře importu a exportu dat.
+Je rovněž důležité umožnit, aby byla vlastní pole viditelná na datových entitách. Datové entity se používají ve funkci [Přehled integrace Office](../../dev-itpro/office-integration/office-integration.md), stejně jako u scénáře importu a exportu dat.
 
 Pro vystavení vlastního pole na datové entitě postupujte podle těchto kroků:
 

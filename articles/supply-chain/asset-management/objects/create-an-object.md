@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4759f55eceba923b47d906a764edcad34bf2f2
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 80236da5220aa9c70d5c488c09b457a470f0225a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571592"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811842"
 ---
 # <a name="create-an-asset"></a>Vytvoření majetku
 
@@ -36,15 +36,15 @@ Toto téma popisuje, jak vytvořit majetek v modulu Správa majetku.
 1. Klikněte na **Správa majetku** > **Společný** > **majetek** > **Všechen majetek** nebo **Aktivní majetek**.
 2. Klikněte na tlačítko **Nový**.
 3. V dialogovém okně **Vytvořit majetek** zadejte data týkající se **majetku** (ID majetku) a název majetku. V poli **Platnost** vyberte datum a čas majetku. Od tohoto data můžete majetek nainstalovat do funkčního umístění a také přesunout a nahradit majetek ve struktuře majetku.
-4. V poli **typ** majetku vyberte typ majetku pro majetek (povinné pole). V případě potřeby vyberte **výrobce majetku** a **model majetku**. Pokud byl nastaven pouze jeden produkt, je tento produkt automaticky vybrán v poli **výrobce majetku**. Výběry dostupné v polích **Výrobce majetku** a **Model majetku** závisí na nastavení v poli [Výrobce a model majetku](../setup-for-objects/product-and-model.md).
+4. V poli **typ** majetku vyberte typ majetku pro majetek (povinné pole). V případě potřeby vyberte **výrobce majetku** a **model majetku**. Pokud byl nastaven pouze jeden produkt, je tento produkt automaticky vybrán v poli **výrobce majetku**. Výběry dostupné v polích **Výrobce majetku** a **Model majetku** závisí na nastavení v poli [Výrobci a modely majetku](../setup-for-objects/product-and-model.md).
 5. Ve skupině **Nadřazený majetek** je pole **Majetek** ve výchozím nastavení prázdné. V případě potřeby můžete vybrat nadřazený majetek a potom budou automaticky vyplněna všechna pole ve skupině **nadřazený majetek**.
 >[!NOTE]  
->Když vyberete nadřazený majetek, jsou k dispozici dvě nebo tři karty: karta **Můj majetek** obsahuje majetek související s funkčními místy, do kterých můžete být přidělení (pracovník údržby, který je přihlášen k systému). Nejsou-li u pracovníka údržby ve formuláři [Pracovníci údržby](../setup-for-objects/workers-and-worker-groups.md) nastavena žádná funkční umístění, nebude karta **můj majetek** viditelná. Karta **Aktivní majetek** obsahuje seznam všech datových zdrojů, které jsou aktivní pro stav životnosti majetku. Karta **Zobrazení majetku** zobrazuje stromové zobrazení funkčních míst a datových zdrojů nainstalovaných v těchto umístěních.
+>Když vyberete nadřazený majetek, jsou k dispozici dvě nebo tři karty: karta **Můj majetek** obsahuje majetek související s funkčními místy, do kterých můžete být přidělení (pracovník údržby, který je přihlášen k systému). Nejsou-li u pracovníka údržby ve formuláři [Pracovníci údržby a skupiny pracovníků](../setup-for-objects/workers-and-worker-groups.md) nastavena žádná funkční umístění, nebude karta **Můj majetek** viditelná. Karta **Aktivní majetek** obsahuje seznam všech datových zdrojů, které jsou aktivní pro stav životnosti majetku. Karta **Zobrazení majetku** zobrazuje stromové zobrazení funkčních míst a datových zdrojů nainstalovaných v těchto umístěních.
 
 6. Výchozí funkční umístění, které jste nastavili, je navrženo pro majetek v poli **Skupina majetku** > **Funkční místo**. V případě potřeby vyberte jiné funkční místo.
 
 >[!NOTE]
->Po vytvoření můžete majetek nainstalovat do jiného funkčního umístění, pokud je to vyžadováno. Do funkčního umístění lze nainstalovat pouze majetek nejvyšší úrovně (majetek bez aktuálního nadřazeného majetku). To znamená, že jste nainstalovali nejvyšší úroveň a také veškerý podřízený majetek ve vybraném funkčním místě. Přečtěte si další informace o instalaci majetku do funkčních míst v poli [Funkční místa](../functional-locations/introduction-to-functional-locations.md).
+>Po vytvoření můžete majetek nainstalovat do jiného funkčního umístění, pokud je to vyžadováno. Do funkčního umístění lze nainstalovat pouze majetek nejvyšší úrovně (majetek bez aktuálního nadřazeného majetku). To znamená, že jste nainstalovali nejvyšší úroveň a také veškerý podřízený majetek ve vybraném funkčním místě. Přečtěte si další informace o instalaci majetku do funkčních míst v poli [Úvod do funkčních míst](../functional-locations/introduction-to-functional-locations.md).
 
 7. Klikněte na tlačítko **OK**.
 8. Vyberte majetek v seznamu **Všechen majetek** a kliknutím na tlačítko **Upravit** přidejte k majetku další informace.
@@ -53,13 +53,13 @@ Toto téma popisuje, jak vytvořit majetek v modulu Správa majetku.
 
 Funkční místo, ke kterému se majetek vztahuje, se zobrazí v poli **funkční místo**. Pokud je majetek nadřazeným majetkem, zobrazí se počet podřízených položek majetku v poli **Děti**. Pokud je majetek podřízeným majetkem existujícího majetku, zobrazí se ID nadřazeného majetku v poli **Rodiče**.
 
-Můžete upravit informace o **výrobci majetku** a **modelu majetku**, který se používá ke správě náhradních dílů, alternativních náhradních dílů a výchozích hodnot typu práce. Další informace viz [výrobce a model majetku](../setup-for-objects/product-and-model.md). V případě potřeby můžete také přidat další informace o **roce modelu** a **sériovém čísle**.
+Můžete upravit informace o **výrobci majetku** a **modelu majetku**, který se používá ke správě náhradních dílů, alternativních náhradních dílů a výchozích hodnot typu práce. Další informace naleznete v tématu [Výrobci a modely majetku](../setup-for-objects/product-and-model.md). V případě potřeby můžete také přidat další informace o **roce modelu** a **sériovém čísle**.
 
 **Aktuální stav životního cyklu** se používají k definování, zda je majetek aktivní nebo neaktivní. Při vytváření majetku je tato fáze vždy nastavena na první fázi ve skupině fází majetku. Jakmile jste připraveni k aktivaci majetku, klikněte na možnost **aktualizovat stav majetku** a vyberte stav životního cyklu, který jste definovali jako aktivní, a klikněte na tlačítko **OK**.
 
 **Poznámka:** Pokud je majetek nastaven na "neaktivní", není již možné pro tento majetek vytvořit pracovní příkazy. Nelze navíc naplánovat úlohy preventivní údržby pro neaktivní majetek.
 
-Pole **Úroveň služby** a **Závažnost** se vztahují k pracovním příkazům vytvořeným pro majetek. Pole zobrazují hodnoty **úroveň služby** a **Závažnost** vypočítaná pro aktuální nastavení majetku. Informace o nastavení těchto hodnot získáte v části [Úrovně služeb majetku](../setup-for-objects/object-priorities.md) a [Závažnost majetku](../setup-for-objects/object-criticalities.md).
+Pole **Úroveň služby** a **Závažnost** se vztahují k pracovním příkazům vytvořeným pro majetek. Pole zobrazují hodnoty **úroveň služby** a **Závažnost** vypočítaná pro aktuální nastavení majetku. Informace o nastavení těchto hodnot získáte v části [Úrovně služeb majetku](../setup-for-objects/object-priorities.md) a [Typy kritičnosti majetku](../setup-for-objects/object-criticalities.md).
 
 ## <a name="asset"></a>Majetek
 

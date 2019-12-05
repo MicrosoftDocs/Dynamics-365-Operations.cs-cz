@@ -17,12 +17,12 @@ ms.search.region: Czech Republic
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e061b68592ae178ce82f9513c5ca45421c0f182a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: da404783d1d83ebe830e385b082597989a222f4e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183489"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773403"
 ---
 # <a name="vat-statement-for-the-czech-republic"></a>Výkaz DPH pro Českou republiku
 
@@ -30,9 +30,9 @@ ms.locfileid: "2183489"
 
 Nastavení a generování výkazu DPH pro uživatele v rolích právnických osob na území České republiky.
 
-Toto téma obsahuje informace o nastavení výkazu DPH pro uživatele ve funkcích právnických osob v České republice specifické pro tuto zemi. Další obecné informace o obecném vykazování DPH naleznete v tématu [Vykazování DPH](emea-vat-reporting.md).
+Toto téma obsahuje informace o nastavení výkazu DPH pro uživatele ve funkcích právnických osob v České republice specifické pro tuto zemi. Další obecné informace o obecném vykazování DPH naleznete v tématu [Vykazování DPH pro Evropu](emea-vat-reporting.md).
 
-## <a name="set-up-sales-tax-authorities"></a>Nastavení daňových úřadů
+## <a name="set-up-sales-tax-authorities"></a>Nastavení finančních úřadů
 Pokud chcete generovat deklaraci DPH v požadovaném formátu pro konkrétní daňový úřad, je nutné nastavit rozložení sestavy pro daňové úřady.
 
 - Na stránce <strong>Finanční úřady</strong> v části <strong>Obecné</strong> nastavte <strong>Rozložení sestavy **na **Výchozí</strong>.

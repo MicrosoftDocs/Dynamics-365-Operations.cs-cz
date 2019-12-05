@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 010d68b79300d15292dbcd4754eed8aac115cdce
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551442"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812826"
 ---
 # <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Sdílení obsahu s jinými přispěvateli v aplikaci Dynamics 365 Talent - Onboard
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 Talent: Onboard umožňuje sdílet průvodce a šablony z
 
 3. V části **Příjemce**, pokud by příjemci měli mít možnost revidovat šablonu, nastavte možnost **Mohou tyto osoby provádět úpravy?** na **Zapnuto**. Pokud mají být příjemci upozorněni e-mailem, že jste s nimi nasdíleli šablonu, nastavte možnost **Odeslat e-mailové oznámení příjemcům** na **Zapnuto**.
 
-    [!Nastavení předvoleb přístupu a e-mailů pro šablonu](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
+    [![Nastavení předvoleb přístupu a e-mailů pro šablonu](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
 
 4. Zadejte jméno nebo e-mailovou adresu a z rozevíracího seznamu vyberte požadovaného příjemce.
 5. Na kartě **Spravovat přístup** můžete zkontrolovat nebo změnit možnosti, které příjemci mohou s šablonou provádět. Chcete-li změnit přístup příjemce, vyberte v rozevíracím seznamu vedle jména příjemce podle potřeby možnost **Může prohlížet**, **Může upravovat** nebo **Odebrat**.
@@ -68,6 +68,6 @@ Microsoft Dynamics 365 Talent: Onboard umožňuje sdílet průvodce a šablony z
 ### <a name="see-also"></a>Viz také
 
 - [Vyzkoušejte nebo kupte aplikaci Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Novinky](./whats-new.md)
-- [Poznámky k verzi](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Získání podpory](./talent-support.md)
+- [Co je nového a co se změnilo v aplikaci Dynamics 365 Talent](./whats-new.md)
+- [Plány vydání](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Získání podpory pro Microsoft Dynamics 365 Talent](./talent-support.md)

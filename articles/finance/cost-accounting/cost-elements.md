@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 037d4971fe0a5a9d08f0ed20d2482b8feb9aa4f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 44d404aaafd124a5d5a9d92cac8add51f1ee846a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176798"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771977"
 ---
 # <a name="cost-element-dimensions"></a>Dimenze prvku nákladů
 
@@ -66,7 +66,7 @@ Existují dva typy prvků nákladů: primární prvky nákladů a sekundární p
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Dimenze prvku nákladů a členy dimenze prvku nákladů
 Prvky náklady se označují jako *dimenze prvků nákladů* . Hodnoty jednotlivých dimenzí se nazývají *členy dimenze prvku nákladů*. V USA máme například strukturu účtové osnovy (COA), která je základem pro statutární vykazování. Tato COA slouží jako dimenze prvku nákladů. Účty, které jsou primární prvky nákladů, jsou představovány jako členy dimenze prvku nákladů v nákladovém účetnictví. Následující obrázek znázorňuje příklad hlavního účtu jako dimenze prvku nákladů s jeho aktuálními hlavními účty jako členy dimenze prvku nákladů. 
 
-[![Dimenze prvku nákladů](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Snímek obrazovky hlavních účtů jako dimenze nákladových prvků](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Import členů dimenze prvků nákladů pomocí datových konektorů
 K usnadnění nastavení členů dimenze prvku nákladů v nákladovém účetnictví můžete použít datové konektory, které jsou předem připravené nebo vytvořené na míru, abyste získali zpět primární prvky nákladů z jednoho nebo více zdrojových systémů.

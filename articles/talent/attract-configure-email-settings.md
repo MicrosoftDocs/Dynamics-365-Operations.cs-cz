@@ -1,5 +1,5 @@
 ---
-title: Konfigurace nastavení e-mailu v Microsoft Dynamics 365 Talent - Attract
+title: Konfigurace nastavení e-mailu v aplikaci Attract
 description: V tomto tématu je vysvětleno, jak nakonfigurovat nastavení e-mailu odeslaného v aplikaci Microsoft Dynamcis 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a457deec757a5d5a3e01c6903b2dd7a9d975ef0b
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: c1ebfaeb2e9bc2836bb70e87afa93484c829b6cb
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551534"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833108"
 ---
-# <a name="configure-email-settings-in-microsoft-dynamics-365-talent---attract"></a>Konfigurace nastavení e-mailu v Microsoft Dynamics 365 Talent - Attract
+# <a name="configure-email-settings-in-attract"></a>Konfigurace nastavení e-mailu v aplikaci Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Vaše značka vytváří vztah důvěryhodnosti a pomůže vám vytvořit vztah s uchazeči ještě než zažádají o pozice u vás. Pozitivní vnímání značky přitahuje nejlepší talenty a zvyšuje loajalitu stávajících zaměstnanců. Microsoft Dynamics 365 Talent: Attract umožňuje konfigurovat e-maily tak, aby odrážely značku vaší společnosti. Proto můžete poskytnout konzistentní zkušenosti uchazečům o práci při procházení procesu žádosti.
 

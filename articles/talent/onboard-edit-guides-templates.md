@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 0f4c68acfe021e736c259e91a40ce7d43d401246
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551995"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812872"
 ---
 # <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Úprava průvodců a šablon zaškolení v aplikaci Dynamics 365 Talent - Onboard
 
@@ -124,7 +124,7 @@ Postup použití změn:
 
     - Chcete-li přidat video YouTube, přetáhněte položku **YouTube** do oblasti pro úpravy, zadejte název a popis aktivity a zadejte adresu URL videa na YouTube.
     - Chcete-li přidat prezentaci Sway nebo zpravodaj, přetáhněte položku **Sway** do oblasti pro úpravy, zadejte název a popis aktivity a zadejte vloženou adresu URL pro prezentaci Sway nebo zpravodaj.
-    - Chcete-li přidat aplikaci PowerApps, přetáhněte položku **PowerApps** do oblasti pro úpravy, zadejte název a popis aktivity a vyberte aplikaci PowerApps nebo zadejte ID aplikace PowerApps.
+    - Chcete-li přidat aplikaci Microsoft Power Apps, přetáhněte položku **Power Apps** do oblasti pro úpravy, zadejte název a popis aktivity a vyberte aplikaci Power Apps nebo zadejte ID aplikace Power Apps.
     - Chcete-li přidat video Microsoft Stream, přetáhněte položku **Microsoft Stream** do oblasti pro úpravy, zadejte název a popis aktivity a zadejte adresu URL videa na Microsoft Stream.
     - Chcete-li přidat formulář Microsoft Forms, přetáhněte položku **Microsoft Forms** do oblasti pro úpravy, zadejte název a popis aktivity, zadejte adresu URL formuláře Microsoft Forms a určete velikost oblasti obrazovky.
     - Chcete-li přidat iframe obsahující webový obsah, přetáhněte položku **Webový obsah (iframe)** do oblasti pro úpravy, zadejte název a popis aktivity, zadejte adresu URL webového obsahu a určete velikost oblasti obrazovky.
@@ -186,6 +186,6 @@ Chcete-li upravit zdroj, vyberte tlačítko **Upravit** (symbol pera) napravo od
 ### <a name="see-also"></a>Viz také
 
 - [Vyzkoušejte nebo kupte aplikaci Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Novinky](./whats-new.md)
-- [Poznámky k verzi](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Získání podpory](./talent-support.md)
+- [Co je nového a co se změnilo v aplikaci Dynamics 365 Talent](./whats-new.md)
+- [Plány vydání](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Získání podpory pro Microsoft Dynamics 365 Talent](./talent-support.md)

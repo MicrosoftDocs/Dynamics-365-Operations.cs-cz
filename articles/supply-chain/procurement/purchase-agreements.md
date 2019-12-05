@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248916"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813355"
 ---
 # <a name="purchase-agreements"></a>Nákupní smlouvy
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 V tomto článku jsou informace o nákupních smlouvách. Nákupní smlouva je smlouva, která organizaci zavazuje k nákupu určitého množství nebo částky v rámci několika nákupních objednávek v průběhu času. Výměnou za tento závazek odběratel obdrží zvláštní ceny a slevy. 
 
@@ -80,6 +81,9 @@ Při vytváření nákupní objednávky můžete použít nákupní smlouvu. Inf
 Nákupní smlouvu můžete vybrat pouze, když vytváříte nákupní objednávku. Po vytvoření nákupní objednávky nelze vybrat nákupní smlouvu.  
 V některých situacích, kdy jsou nákupní objednávky vytvářeny nepřímo, můžete určit, zda aplikaceSupply Chain Management automaticky vyhledá příslušné nákupní smlouvy. Provést to můžete například při automatickém potvrzování plánovaných nákupních objednávek nebo při vytváření nákupních objednávek, které jsou založeny na prodejních objednávkách.
 
+## <a name="matching-policy-on-purchase-agreements"></a>Zásady párování na nákupních smlouvách
+V záhlavní nákupní smlouvy můžete definovat zásady párování řádku. Tyto zásady párování řádků budou respektovat parametry závazků jako parametry párování řádků, když je pole **Povolit přepis zásad párování** na stránce **Parametry závazků** (na pevné záložce **Párování ceny a množství**) nastaveno na **Vyšší než zásady společnosti**. Dokumenty, které odkazují na nákupní smlouvu, budou používat zásady párování řádků, které jsou definovány v záhlaví nákupní smlouvy, pokud není pro odpovídající zásady nákupu položek, položek a dodavatelů nebo kategorie definováno jinak.
+
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Nákupní smlouvy a mezipodnikový obchod
 Mezipodnikové obchodní vztahy lze vytvořit mezi účty dodavatele a účty zákazníků, které se u různých právnických osob liší. Po vytvoření prodejní objednávky nebo nákupní objednávky pro jednu ze stran se vytvoří mezipodnikový řetězec objednávek. V řetězci objednávek se prodejní objednávka a nákupní objednávka vytváří v příslušných právnických osobách.  
 
@@ -93,9 +97,9 @@ Můžete kopírovat finanční dimenze do záhlaví dokladů nebo jednotlivých 
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Vytvoření nové nákupní smlouvy (Průvodce záznamem úloh)](tasks/create-purchase-agreement.md)
+[Vytvoření nákupní smlouvy](tasks/create-purchase-agreement.md)
 
-[Vytvoření dílčí nákupní objednávky z nákupní smlouvy (Průvodce záznamem úloh)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Vytvoření dílčí nákupní objednávky z nákupní smlouvy](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

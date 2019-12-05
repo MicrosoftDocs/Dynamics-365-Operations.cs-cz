@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11b541c3e159b2c38e4dd2fa9f2ad08e4c1e4500
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 14b4410a0bd177159817cd5116a5a0d959992ad5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176879"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812402"
 ---
 # <a name="configure-parallel-activities-in-a-workflow"></a>Konfigurace paralelních aktivit ve workflow
 
@@ -53,4 +53,4 @@ Pomocí následujících kroků přidejte a nakonfigurujte větve této paraleln
     > [!NOTE]
     > Pořadí větví není důležité, protože všechny větve paralelní aktivity běží současně.
 
-3. Informace o konfiguraci jednotlivých větví uvádí téma [Konfigurace paralelní větve](configure-parallel-branch-workflow.md).
+3. Informace o konfiguraci jednotlivých větví uvádí téma [Konfigurace paralelních větví ve workflow](configure-parallel-branch-workflow.md).

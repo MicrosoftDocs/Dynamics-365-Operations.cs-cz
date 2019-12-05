@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e5e795ca6f7831ecd3fa28be9782f0b287eea6e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189998"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812356"
 ---
 # <a name="workflow-system-overview"></a>Přehled systému workflow
 
@@ -57,18 +57,18 @@ Používání systému workflowu v organizaci má několik výhod:
 
 ## <a name="workflow-content"></a>Obsah workflowu
 
-+ [Architektura workflowu](workflow-system-architecture.md)
-+ [Prvky workflowu](workflow-elements.md)
-+ [Akce workflowu](workflow-actions.md)
-+ [Vytvoření workflowu](create-workflow.md)
-+ [Konfigurace vlastností workflowu](configure-workflow-properties.md)
-+ [Konfigurace ruční úlohy ve workflowu](configure-manual-task-workflow.md)
-+ [Konfigurace automatizované úlohy ve workflowu](configure-automated-task-workflow.md)
-+ [Konfigurace schvalovacího procesu ve workflowu](configure-approval-process-workflow.md)
-+ [Konfigurace schvalovacího kroku ve workflowu](configure-approval-step-workflow.md)
-+ [Konfigurace ručního rozhodnutí ve workflowu](configure-manual-decision-workflow.md)
-+ [Konfigurace podmíněného rozhodnutí ve workflowu](configure-conditional-decision-workflow.md)
-+ [Konfigurace paralelních aktivit ve workflowu](configure-parallel-activity-workflow.md)
-+ [Konfigurace paralelní větve ve workflowu](configure-parallel-branch-workflow.md)
++ [Architektura systému workflowu](workflow-system-architecture.md)
++ [Prvky workflow](workflow-elements.md)
++ [Akce v procesech schválení workflow](workflow-actions.md)
++ [Přehled vytvoření workflow](create-workflow.md)
++ [Konfigurace vlastností workflow](configure-workflow-properties.md)
++ [Konfigurace ručních úloh ve workflow](configure-manual-task-workflow.md)
++ [Konfigurace automatizovaných úloh ve workflowu](configure-automated-task-workflow.md)
++ [Konfigurace schvalovacích procesů ve workflowu](configure-approval-process-workflow.md)
++ [Konfigurace schvalovacích kroků ve workflowu](configure-approval-step-workflow.md)
++ [Konfigurace ručních rozhodnutí ve workflow](configure-manual-decision-workflow.md)
++ [Konfigurace podmíněných rozhodnutí ve workflow](configure-conditional-decision-workflow.md)
++ [Konfigurace paralelních aktivit ve workflow](configure-parallel-activity-workflow.md)
++ [Konfigurace paralelních větví ve workflow](configure-parallel-branch-workflow.md)
 + [Konfigurace workflow položky řádku](configure-line-item-workflow.md)
 + [Workflow – Často kladené otázky](workflow-FAQ.md)

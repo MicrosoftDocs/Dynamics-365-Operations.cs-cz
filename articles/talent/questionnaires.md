@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: b5c54d921e2955bc866ffd1ca516169790d33127
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c8655af567ef56c535ce0e43cb76c28c58dc1eb3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024222"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814598"
 ---
 # <a name="questionnaires"></a>Dotazníky
 
@@ -44,7 +44,7 @@ Následující tabulka obsahuje odkazy na informace o základních úlohách dot
 | Téma| popis|
 |------|------------|
 | [Návrh dotazníku](design-questionnaires.md)  | Tento článek obsahuje informace o způsobu návrhu dotazníku. Proces návrhu zahrnuje nastavení předpokladů, odpovědí a dotazů a poté je zkombinuje do dotazníku. |
-| [Distribuce a vyplnění dotazníku](distribute-questionnaires.md)  | Tento článek obsahuje informace o způsobu rozesílání dotazníku respondentům a vyplňování dotazníků.                                                                       |
+| [Distribuce a plánování dotazníků](distribute-questionnaires.md)  | Tento článek obsahuje informace o způsobu rozesílání dotazníku respondentům a vyplňování dotazníků.                                                                       |
 | [Zobrazení a vyhodnocení výsledků dotazníku](evaluate-questionnaire-results.md) | Tento článek obsahuje informace o způsobu zobrazení a vyhodnocování výsledků z vyplněných dotazníků.                                                                                        |
 
 
@@ -52,9 +52,9 @@ Následující tabulka obsahuje odkazy na informace o základních úlohách dot
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Vytváření dotazníků](design-questionnaires.md)
+[Návrh dotazníků](design-questionnaires.md)
 
-[Distribuování a vyplňování dotazníků](distribute-questionnaires.md)
+[Distribuce a plánování dotazníků](distribute-questionnaires.md)
 
-[Zobrazení a zhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
+[Zobrazení a vyhodnocení výsledků dotazníků](evaluate-questionnaire-results.md)
 

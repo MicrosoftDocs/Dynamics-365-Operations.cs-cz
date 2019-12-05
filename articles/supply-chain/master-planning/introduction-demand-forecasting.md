@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bea02c6fe7b8e50be22be89eeb43a913851ddbfb
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653526"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815150"
 ---
 # <a name="demand-forecasting-overview"></a>Přehled prognózy poptávky
 
@@ -80,9 +80,9 @@ Vytváření prognózy poptávky je nástroj, který usnadňuje odběratelům ve
 
 [Ruční úpravy základní prognózy](manual-adjustments-baseline-forecast.md)
 
-[Autorizování upravené prognózy](authorize-adjusted-forecast.md)
+[Autorizace upravené prognózy](authorize-adjusted-forecast.md)
 
-[Měření přesnosti prognózy](monitor-forecast-accuracy.md)
+[Monitorování přesnosti prognózy](monitor-forecast-accuracy.md)
 
 [Odebrání odlehlých hodnot z historických dat transakcí při výpočtu prognózy poptávky](remove-historical-outliers-calculating-demand-forecast.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 074132af2111debee4bea894b559744b4470454d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78b3b20ed56cbb6404f5526e90fdcefcaec9bf3f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176796"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771954"
 ---
 # <a name="cost-accounting-home-page"></a>Domovská stránka nákladového účetnictví
 
@@ -39,17 +39,17 @@ Následující mapa výuky zobrazuje hlavní koncepty a úkoly, které tvoří r
 
 |      |   |
 |------|---|
-|  [Konfigurace základních entit (kurz elektronického vzdělávání)](https://mbspartner.microsoft.com/Home) (vyžaduje účet CustomerSource)  |[Vytvořit dimenze](cost-elements.md)  |
-|  [Vytvoření hierarchie dimenzí](dimension-hierarchy.md)  |[Vytvoření základního nastavení](./tasks/define-cost-control-units.md)| 
-| [Definování základu přidělení](allocation-bases.md)|[Definovat zásady](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [Zdroj dat a poskytovatel dat](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Zdroj dat a poskytovatel dat](./tasks/process-trace-source-data.md)     | 
-|[Výpočet režijních nákladů](overhead-calculation.md)  | [Analýzy a výkaznictví](cost-control-workspace.md)   |
+|  [Konfigurace základních entit (kurz elektronického vzdělávání)](https://mbspartner.microsoft.com/Home) (vyžaduje účet CustomerSource)  |[Dimenze prvku nákladů](cost-elements.md)  |
+|  [Hierarchie dimenzí](dimension-hierarchy.md)  |[Definování jednotek řízení nákladů](./tasks/define-cost-control-units.md)| 
+| [Základy přidělení](allocation-bases.md)|[Vytvoření zásad přidělování nákladů a jejich přiřazení jednotce řízení nákladů](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [Správa datového zdroje pro hlavní knihu nákladového účetnictví](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Zpracování a sledování zdrojových dat](./tasks/process-trace-source-data.md)     | 
+|[Výpočet režijních nákladů](overhead-calculation.md)  | [Pracovní prostor kontroly nákladů](cost-control-workspace.md)   |
 
 ## <a name="get-started-videosbr"></a>Videa Začínáme<br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
 | [Začínáme s nákladovým účetnictvím](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Mobilní pracovní prostor účtování nákladů](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Použití aplikace Excel pro analýzy nákladového účetnictví](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
-|  |  |                             |
+
 
 

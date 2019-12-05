@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e74edfc5cf17499c080e825cf4b1fd39b6063e35
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f7929aeed9a1f1e334d8c75ef941b601d8c6b664
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182754"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769917"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Obsah výkonu prodeje a ziskovosti Power BI
 
@@ -77,7 +77,7 @@ Obsah **Výkon prodeje** a ziskovosti Power BI obsahuje sestavu, která obsahuje
 \* Výnosy v tomto a minulém roce a růst podle kategorie prodeje.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Informace o datovém modelu a entitách
-Následující data se používají k naplnění stránek sestavy v obsahu **Výkon prodeje a ziskovosti** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
+Následující data se používají k naplnění stránek sestavy v obsahu **Výkon prodeje a ziskovosti** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
 
 Souhrnná opatření v tomto balíčku obsahu jsou podmnožinou celkových opatření, která byla k dispozici v prodejní datové krychli v Microsoft Dynamics AX 2012 a Microsoft Dynamics AX 2012 R3. Příprava fází agregovaných opatření krychle v úložišti Entity vyžaduje, aby bylo možné je nasadit. Další informace získáte v postupu nastavování agregovaných opatření v úložišti entity v příspěvku v blogu [Integrace Power BI s úložištěm entit v aplikaci Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) 
 

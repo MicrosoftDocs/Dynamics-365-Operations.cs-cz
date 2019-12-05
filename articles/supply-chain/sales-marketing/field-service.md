@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 2a5c3e49f09bf4f1f90449db10d439f563ecc2c0
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: cf1c4cbc18728b6094f862792d20a893b2a8d6ea
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249822"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815265"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Přehled integrace s Microsoft Dynamics 365 Field Service
 
@@ -41,9 +41,9 @@ První fáze integrace mezi Field Service a Supply Chain Management se zaměřuj
 
 První fáze integrace mezi Field Service a Finance and Supply Chain Management umožňuje synchronizaci následujících položek:
 
-- [Produkty v modulu Supply Chain Management na produkty v modulu Field Service, které zahrnují informace o typu produktu](field-service-product.md)
-- [Pracovní příkazy ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management](field-service-work-order.md)
-- [Faktury v aplikaci Field Service na volné textové faktury v Supply Chain Management](field-service-invoice.md)
+- [Synchronizace produktů v Supply Chain Management do produktů ve Field Service](field-service-product.md)
+- [Synchronizace pracovních příkazů ve službě Field Service do prodejních objednávek v aplikaci Supply Chain Management](field-service-work-order.md)
+- [Synchronizace smluvních faktur v Field Service na volné textové faktury v Supply Chain Management](field-service-invoice.md)
 
 Příklad synchronizace výrobního příkazu mezi Field Service a Supply Chain Management uvádí krátké video na YouTube [Jak synchronizovat výrobní příkaz s integrací Microsoft Dynamics 365](https://www.youtube.com/watch?v=46ylO7raZAo).
 

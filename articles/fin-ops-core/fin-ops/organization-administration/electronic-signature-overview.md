@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2e5144517a880c41cf04998ed53a826a75ecefb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3d1d8952324bb16bcfa6a8b42fc4f157edb75cf1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176878"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811293"
 ---
 # <a name="electronic-signatures-overview"></a>Přehled elektronických podpisů
 
@@ -44,7 +44,7 @@ Elektronické podpisy jsou vyžadovány předpisy v několika průmyslových odv
 
 Můžete používat elektronické podpisy pro důležité obchodní procesy. Některé procesy obsahují vestavěné prvky pro práci s elektronickými podpisy. Kromě toho můžete vytvářet vlastní požadavky na podpisy, připojené k libovolné databázové tabulce a poli.
 
-Součástí digitálního podpisu jsou i elektronické podpisy. Každý uživatel, který podepisuje dokumenty, musí získat platný šifrovací certifikát. Při podepsání dokumentu proběhne ověření soukromého klíče přidruženého k použitému certifikátu. Údaje o elektronických podpisech se zaznamenávají do protokolu, který může sloužit jako záznam auditu. Popis nastavení elektronických podpisů viz [Nastavení elektronických podpisů (Průvodce záznamem úloh)](tasks/set-up-electronic-signatures.md).
+Součástí digitálního podpisu jsou i elektronické podpisy. Každý uživatel, který podepisuje dokumenty, musí získat platný šifrovací certifikát. Při podepsání dokumentu proběhne ověření soukromého klíče přidruženého k použitému certifikátu. Údaje o elektronických podpisech se zaznamenávají do protokolu, který může sloužit jako záznam auditu. Popis nastavení elektronických podpisů viz [Nastavení elektronických podpisů](tasks/set-up-electronic-signatures.md).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Uživatelé, kteří potřebují přístup k elektronickým podpisům
 

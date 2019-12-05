@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a4945f47c86d490f40a6b00cb823e6a6005e0ee4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e38d0bd75ad865b7885182f798beb43551576beb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550502"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770889"
 ---
 # <a name="add-location-and-party-relationship-types"></a>Přidání typů vztahu místa a strany 
 
@@ -41,7 +41,7 @@ Existují dva způsoby přidání nové role umístění adresy a kontaktních i
 
     1.  Vytvořte rozšíření výčtu **LogisticsLocationRoleType** a přidejte do něho novou roli. 
   
-        ![LogisticsLocationRoleType](media/Logistics.PNG)
+        ![Rozšíření na výčet LogisticsLocationRoleType](media/Logistics.PNG)
 
     2. Vytvořte nový soubor prostředků pro novou roli a přiřaďte hodnotu pro jeho vlastnosti.
      
@@ -69,7 +69,7 @@ Nový typ vztahu lze přidat dvěma způsoby:
 
     2. Vytvořte inicializátor pro tento nový typ. Několik příkladů naleznete v základním kódu, jeden z nich je **DirRelationshipTypeChildInitialize**. Jedná se o třídu inicializátoru typu vztahu strany "Podřízené". Inicializátor můžete spustit zkopírováním a vložením tohoto kódu a následnou aktualizací zvýrazněných oblastí.
     
-    ![DirRelationshipChild](media/DirRelationship.PNG)
+    ![Inicializátor DirRelationshipChild](media/DirRelationship.PNG)
 
     3.  Pokud chcete otestovat nový typ vztahu umístění, můžete vytvořit spustitelnou třídu a volat DirDataPopulation::insertDirRelationshipTypes() in Main(). Měli byste vidět nový typ vztahu v tabulce **DirRelationshipTypeTable** a nový typ vztahu, bude k dispozici na stránce **typy vztahů**.
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9475a7fbe40d7feb60c23e0d7164222469dffa75
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 43989f95764a60dc7f5662ef74c005c5fddaa275
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552315"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813724"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Hlavní plánování pro disponibilitu pracoviště, sklad není povinný
 
@@ -51,15 +51,15 @@ Následující obrázek ilustruje postup hlavního plánování. V obrázku jsou
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Hlavní plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
+[Přehled hlavního plánování a funkce více pracovišť](master-plan-multisite-functionality.md)
 
-[Hlavní plánování – disponibilita pracoviště, sklad povinný](master-plan-site-coverage-warehouse-mandatory.md)
+[Hlavní plánování pro disponibilitu pracoviště a skladu, sklad je povinný](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Hlavní plánování – disponibilita pracoviště a skladu, sklad není povinný](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[Hlavní plánování pro disponibilitu pracoviště, povinný sklad](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Hlavní plánování – disponibilita pracoviště a skladu, sklad povinný](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[Hlavní plánování pro disponibilitu pracoviště, sklad není povinný](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Hlavní plánování – jak se určuje verze kusovníku](master-plan-bom-version-determined.md)
+[Určení verze kusovníku](master-plan-bom-version-determined.md)
 
 
 

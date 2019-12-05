@@ -19,12 +19,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0383f78ea5cfa42183e0bfe8a96d7d3866766e7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 484471c6bbda1d7396dfcfa34c33f50d247dad98
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547714"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812665"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Omezení nákladových verzí pro standardní náklady
 
@@ -45,7 +45,7 @@ Data nákladů na položku pro standardní náklady mohou být zkopírována do 
 <a name="related-topics"></a>Související témata
 --------
 
-[Nákladové verze](costing-versions.md)
+[Přehled verzí výpočtu nákladů](costing-versions.md)
 
 [Aktualizace standardních nákladů v nevýrobním prostředí](update-standard-costs-non-manufacturing-environment.md)
 

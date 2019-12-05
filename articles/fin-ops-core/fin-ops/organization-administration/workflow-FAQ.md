@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14aa9b56da005e8e3ca121589d0e22c60f34343b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0188e8ed3cbbfd7dbccd7d13cf6129e146a919ac
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189768"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772690"
 ---
 # <a name="workflow-faq"></a>Workflow – Často kladené otázky
 
@@ -50,4 +50,4 @@ Zde je několik klíčových oblastí, které je třeba vzít do úvahy při př
     - Zprávy centra akcí lze vytvářet pro konkrétní uživatele, například zprávu vytvořenou z workflow v jazyce X + +.
     - [Workflow mají obchodní události](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), které může odběratel použít ke spuštění aplikace Flow s oznámeními, která hledají.   
 
-V souhrnu, pokud uživatel neobdrží správné oznámení z centra akcí, když jsou mu přiřazeny pracovní položky workflow, využijte [obchodní události workflow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) s aplikací Microsoft Flow s cílem poskytovat další nebo odlišná oznámení.
+V souhrnu, pokud uživatel neobdrží správné oznámení z centra akcí, když jsou mu přiřazeny pracovní položky workflow, využijte [obchodní události workflow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) s aplikací Microsoft Power Automate s cílem poskytovat další nebo odlišná oznámení.

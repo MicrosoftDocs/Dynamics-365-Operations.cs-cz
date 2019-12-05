@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c07f303b72f286c33979181fca1592b47efa1303
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 625e2c6a6b385c69d33ec4325a462310a37f1eed
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571224"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812184"
 ---
 # <a name="maintenance-attribute-types"></a>Typy atributů údržby
 
@@ -34,9 +34,9 @@ ms.locfileid: "2571224"
 Toto téma vysvětluje, jak vytvořit typy atributů v modulu Správa majetku. Atributy slouží k popisu vlastností různých prvků. Můžete nastavit atributy následujících prvků:
 
 - [Typy funkčních míst](../setup-for-functional-locations/functional-location-types.md)
-- [Funkční místa](../functional-locations/create-functional-locations.md)
+- [Vytvoření funkčních míst](../functional-locations/create-functional-locations.md)
 - [Typy majetku](../setup-for-objects/object-types.md)
-- Prostředky
+- Majetek
 
 Atributy, které můžete nastavit, se mohou lišit v závislosti na prvku. Například pro funkční umístění můžete nastavit atributy pro konfiguraci a fyzickou velikost skladového místa. U typu majetku nebo majetku můžete nastavit atributy pro objem motoru, spotřebu energie a maximální nosnost za různých podmínek.
 

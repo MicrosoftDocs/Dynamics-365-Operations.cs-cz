@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b23860a7eda0ec9d75cca04728b7fc11d01bf967
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023877"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812734"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Talent (26. března 2019)
 
@@ -75,11 +75,11 @@ V této verzi se plány fixní kompenzace nyní zobrazují při omezení uživat
 V této verzi můžete nyní odstranit záznamy o práci pomocí možnosti **Otevřít v aplikaci Excel** v aplikaci Talent.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade na Common Data Service
-Konečné termíny pro upgrade na Common Data Service se rychle blíží. Přihlaste se do centra pro správu PowerApps k určení, zda je třeba provést upgrade databáze. Další informace o konečných termínech a nutných krocích k upgradu naleznete v tématu [Upgrade na Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Konečné termíny pro upgrade na Common Data Service se rychle blíží. Přihlaste se do centra pro správu Power Apps k určení, zda je třeba provést upgrade databáze. Další informace o konečných termínech a nutných krocích k upgradu naleznete v tématu [Upgrade na Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Náhled
 
-Informace o povolení funkcí náhledu naleznete v části [Přístup k funkcím náhledu v aplikaci Talent](./access-preview-feature.md).
+Informace o povolení funkcí náhledu naleznete v části [Přístup k funkcím náhledu v aplikaci Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
 ### <a name="allow-reason-codes-to-be-specified-on-leave-types"></a>Povolení určení kódů důvodů na typech pracovního volna
 Organizace mohou potřebovat další informace týkající se požadavků na pracovní volno. Chcete-li získat tyto informace, je třeba, aby zaměstnanci zahrnuli do svých požadavků na pracovní čas kód důvodu. V této verzi můžete nyní určit kódy důvodu přidružené k danému typu pracovního volna a umožnit zaměstnancům vybrat kód důvodu v jejich požadavcích na volno.

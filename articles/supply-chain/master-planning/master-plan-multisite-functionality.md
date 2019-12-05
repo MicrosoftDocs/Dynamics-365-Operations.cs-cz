@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f05e3efd1716a27a659ae40145f37bb0b3d977f
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: d0b715e0c17263519a9bb1b3780170812271d93d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865393"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813746"
 ---
 # <a name="master-planning-and-multisite-functionality-overview"></a>Přehled hlavního plánování a funkce více pracovišť
 
@@ -40,15 +40,15 @@ Pokud není sklad nastavený jako povinný, je možné jej odvodit z počátečn
 
 Následující témata popisují, jak plánovací modul určuje používaný sklad při definici různých nastavení.
 
-[Hlavní plánování – disponibilita pracoviště a skladu, sklad povinný](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[Hlavní plánování pro disponibilitu pracoviště a skladu, sklad je povinný](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Hlavní plánování – disponibilita pracoviště, sklad povinný](master-plan-site-coverage-warehouse-mandatory.md)
+[Hlavní plánování pro disponibilitu pracoviště, povinný sklad](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Hlavní plánování – disponibilita pracoviště a skladu, sklad není povinný](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[Hlavní plánování pro disponibilitu pracoviště a skladu, sklad není povinný](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Hlavní plánování – disponibilita pracoviště, sklad není povinný](master-plan-site-coverage-warehouse-not-mandatory.md)
+[Hlavní plánování pro disponibilitu pracoviště, sklad není povinný](master-plan-site-coverage-warehouse-not-mandatory.md)
 
-[Hlavní plánování – jak se určuje verze kusovníku](master-plan-bom-version-determined.md)
+[Určení verze kusovníku](master-plan-bom-version-determined.md)
 
 
 

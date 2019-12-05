@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c5d07cb9fbb32a2d9b8be11179dbba00ee73d28b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b5fbe5ffa74953588a2357948319f5cf21f7ad36
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184570"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769754"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>Obsah výkonnosti skladu v Power BI
 
@@ -78,7 +78,7 @@ Obsah **Výkonu skladu** v Power BI zahrnuje sestavu. Tato sestava obsahuje sadu
 | Výkon expedice        | Expedováno podle pracoviště nebo skladu              | Procento dodávané předčasně, včas nebo pozdě podle pracoviště nebo skladu. |
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Informace o datovém modelu a výpočtech
-Následující data se používají k naplnění stránek sestavy v obsahu **Výkonn skladu** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Přehled integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
+Následující data se používají k naplnění stránek sestavy v obsahu **Výkonn skladu** v Power BI. Tato data jsou vyjádřena jako agregační měření, která jsou rozfázována v úložišti entit. Úložiště entit je databáze Microsoft SQL Server, která je optimalizována pro analýzu. Další informace naleznete v tématu [Integrace Power BI s úložištěm entit](power-bi-integration-entity-store.md).
 
 Následujících klíčové měrné systémy agregace byly použity jako základ obsahu.
 

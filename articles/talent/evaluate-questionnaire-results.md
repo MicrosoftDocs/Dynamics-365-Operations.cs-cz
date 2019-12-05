@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 38b694b6dd4b1b9a198452e409bd64d7934b4685
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6be2f79d4f0c234028c0cc98b81cfa8ff4fcc992
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517556"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813976"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Zobrazení a vyhodnocení výsledků dotazníků
 
@@ -57,7 +57,8 @@ Na stránce **Odpovědi** můžete zobrazit podrobnosti o odpovědích, získan�
 -   **Sestava odpovědí** - V této sestavě se zobrazí odpovědi vybrané respondentem pro každou otázku dotazníku.
 -   **Nesprávné odpovědi** – V této sestavě se zobrazí informace související s nesprávnými odpověďmi, které respondent vybral.
 
-**Poznámka:** Sestava **Výsledky** je k dispozici pouze v případě, že použijete skupiny výsledků v dotazníku a jestliže jste vybrali **stránku Výsledky** na stránce **Dotazníky**. Sestavy **Odpovědi** a **Nesprávné odpovědi** jsou k dispozici pouze v případě, že jste vybrali možnost **Sestava odpovědí** na stránce **Dotazníky**.
+> [!NOTE]
+> Sestava **Výsledky** je k dispozici pouze v případě, že použijete skupiny výsledků v dotazníku a jestliže jste vybrali stránku **Výsledky** na stránce **Dotazníky**. Sestavy **Odpovědi** a **Nesprávné odpovědi** jsou k dispozici pouze v případě, že jste vybrali možnost **Sestava odpovědí** na stránce **Dotazníky**.
 
 ## <a name="questionnaire-statistics"></a>Statistiky dotazníků
 Statistiky dotazníku slouží k analýze výsledků vyplněných dotazníků na základě výpočtů, které definujete. Chcete-li definovat výpočty, je nutné dokončit následující kroky:
@@ -75,9 +76,9 @@ Definovaná nastavení budou uložena a lze je použít k periodickému přepoč
 <a name="additional-resources"></a>Další zdroje
 --------
 
-[Vytváření dotazníků](design-questionnaires.md)
+[Návrh dotazníků](design-questionnaires.md)
 
-[Používání dotazníků](questionnaires.md)
+[Dotazníky](questionnaires.md)
 
-[Distribuování a vyplňování dotazníků](distribute-questionnaires.md)
+[Distribuce a plánování dotazníků](distribute-questionnaires.md)
 

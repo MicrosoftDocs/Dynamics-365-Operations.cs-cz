@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: b031fd95d2e7fc8405ad96139779091e00bb4d46
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 42065f3d6b7ae9e7ad99b26c7692e41f8c36934d
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551465"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832970"
 ---
 # <a name="troubleshoot-integration-with-linkedin-and-microsoft-dynamics-365-talent---attract"></a>Odstraňování problémů s integrací s LinkedIn a aplikací Microsoft Dynamics 365 Talent - Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Následující informace se používají k řešení potíží, které mohou nastat při pokusu o odeslání pracovních nabídek na LinkedIn z aplikace Microsoft Dynamics 365 Talent: Attract.
 
@@ -42,18 +42,18 @@ Pokud máte potíže s přihlášením k LinkedIn z aplikace Attract, zkuste pro
 
 Pokud se vaše úloha na LinkedIn po 24 hodinách neobjevila, zkuste provést následující kroky:
 
-1. Ujistěte se, že vaše ID společnosti na LinkedIn je mapováno na vaši stránku společnosti na LinkedIn a je správně zadáno v centru pro správu aplikace Attract. Další informace o tom, jak změnit nastavení LinkedIn v centru správy, naleznete v tématu [Nastavení integrace s LinkedIn](attract-admin-linkedin.md). Další informace o ID společnosti LinkedIn naleznete v tématu [Spojení vašeho ID společnosti LinkedIn s pracovní vývěskou – často kladené dotazy](https://www.linkedin.com/help/linkedin/answer/98972).
+1. Ujistěte se, že vaše ID společnosti na LinkedIn je mapováno na vaši stránku společnosti na LinkedIn a je správně zadáno v centru pro správu aplikace Attract. Další informace o tom, jak změnit nastavení LinkedIn v centru pro správu, naleznete v tématu [Nastavení integrace s LinkedIn pro Microsoft Dynamics 365 Talent - Attract](attract-admin-linkedin.md). Další informace o ID společnosti LinkedIn naleznete v tématu [Spojení vašeho ID společnosti LinkedIn s pracovní vývěskou – často kladené dotazy](https://www.linkedin.com/help/linkedin/answer/98972).
 2. Zkontrolujte podrobnosti o pracovní nabídce na LinkedIn, abyste se ujistili, že je adresa úplná. Chcete-li publikovat pracovní nabídku úspěšně, LinkedIn vyžaduje alespoň město a zemi nebo oblast pracovní pozice.
 3. Zkontrolujte, zda úloha neduplikuje jinou úlohu, která byla publikována na LinkedIn. LinkedIn nebude publikovat úlohy, které jsou duplicitní buď s prémiovými nabídkami práce LinkedIn nebo s omezenými výpisy z jiného zdroje. Ověřte, že jiná osoba ve vaší společnosti již nepublikovala pracovní pozici ručně.
 
 ## <a name="see-also"></a>Viz také
 
-[Často kladené otázky k řešení LinkedIn](./attract-linkedin-faq.md)
+[Časté dotazy týkající se integrace Attract s řešením LinkedIn](./attract-linkedin-faq.md)
 
-[Publikování pracovních míst na LinkedIn z aplikace Attract](./attract-post-jobs-to-linkedin.md)
+[Publikování pracovních míst na LinkedIn z aplikace Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Zazdrojování kandidátů s využitím LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Zdrojování kandidátů pomocí LinkedIn Recruiter v aplikaci Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
-[Vytvoření prací](./creating-jobs-attract.md)
+[Vytvoření, schválení a zveřejnění pracovních míst v aplikaci Attract](./creating-jobs-attract.md)
 
-[Odstraňování potíží s integrací s řešením LinkedIn](./attract-troubleshoot-linkedin.md)
+[Odstraňování problémů s integrací s LinkedIn a aplikací Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

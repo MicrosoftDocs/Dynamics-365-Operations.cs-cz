@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: adb88a5fb79b24a26aa2976464d3e838922322c6
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 480253d1401c567e27f636f8a2b19fa3937e89e5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653197"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770377"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -82,11 +82,11 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 |      2019. duben          |   10.0.1      | Maďarsko      |  Maďarsko: online fakturace v.1.1 2019  |
 |      2019. duben          |   10.0.1      | Japonsko      |  2019 japonský kalendář Změna období  |
 |      2019. duben          |   10.0.1      |    Rusko     |Změny daňového přiznání daně z pozemku z roku 2018 |
-|      2019. duben          |   10.0.1      |    Rusko     |[Změny daňového přiznání daně z nemovitosti z roku 2019](rus-assessed-tax-declaration.md)|
+|      2019. duben          |   10.0.1      |    Rusko     |[Vyměřené daňové přiznání](rus-assessed-tax-declaration.md)|
 |      2019. duben          |   10.0.1      |    Rusko     |Změny daňového přiznání přepravní daně z roku 2019  |
-|      2019. duben          |   10.0.1      |    Rusko     |[Formát přiznání k DPH se mění od roku 2019](rus-VAT-declaration.md) |
+|      2019. duben          |   10.0.1      |    Rusko     |[Přiznání k DPH](rus-VAT-declaration.md) |
 |      2019. duben          |   10.0.1      |    Rusko     |Formát přiznání k DPH se mění od 2019 (knihy nákupu a prodeje) |
-|      2019. duben          |   10.0.1      |    Velká Británie     |[Změny odeslání výkazu DPH (Digitalizování daní)](emea-gbr-mtd-vat-integration.md)    |    
+|      2019. duben          |   10.0.1      |    Velká Británie     |[Příprava modulu Finance and Operations na integraci s MTD pro DPH](emea-gbr-mtd-vat-integration.md)    |    
 |      2019. březen          |   10.0.0      |    Rakousko   |   Změny v Kammerumlage 2019 (nákupní clo)    |
 |      2019. březen          |   10.0.0      |    Brazílie    |     Příspěvky SPED EFD - rozvržení 004 a 005  |
 |      2019. březen          |   10.0.0      |    Malajsie     |Malajsie nahrazuje GST prodejní a servisní daní SST        |

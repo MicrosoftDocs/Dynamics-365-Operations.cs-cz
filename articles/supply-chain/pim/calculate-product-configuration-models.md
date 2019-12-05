@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00e1956950154051d4a916a013c2200029772e37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd57b702220374ef5ac48e1af7c42827a21e7517
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547094"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813586"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Výpočty pro modely konfigurace produktu - často kladené dotazy
 
@@ -37,7 +37,7 @@ Výpočty lze použít pro aritmetické nebo logické operace. Doplňují omezen
 ## <a name="what-is-a-calculation"></a>Co je výpočet?
 Výpočet je prvek, který můžete použít v modelu konfigurace produktu. Výpočty doplňují omezení tak, že vám při konfiguraci produktu umožňují pomocí desetinných čísel vypočítat hodnoty. Kromě toho výpočty mají k dispozici větší sadu operátorů než omezení.  
 
-Podobně jako omezení je výpočet přidružen k určité součásti ve modelu konfigurace produktu a nelze ho znovu použít nebo sdílet s jinou součástí. Jeden důležitý rozdíl mezi výpočty a omezení, je, že výpočty jsou imperativní (jednosměrné), zatímco omezení jsou deklarativní (obousměrné). Další informace o omezení viz [Omezení výrazu a omezení tabulky](expression-constraints-table-constraints-product-configuration-models.md).  
+Podobně jako omezení je výpočet přidružen k určité součásti ve modelu konfigurace produktu a nelze ho znovu použít nebo sdílet s jinou součástí. Jeden důležitý rozdíl mezi výpočty a omezení, je, že výpočty jsou imperativní (jednosměrné), zatímco omezení jsou deklarativní (obousměrné). Další informace o omezeních viz [Omezení výrazu a omezení tabulky v modelech konfigurace produktu](expression-constraints-table-constraints-product-configuration-models.md).  
 
 Výpočet se skládá z cílového atributu a vzorce výpočtu.
 
@@ -88,7 +88,7 @@ Pokud chcete nastavit atribut jako skrytý nebo jen pro čtení, postupujte takt
 Pokud odeberete vstupní hodnotu ve výpočtu, hodnota cílového atributu je rovněž odebrána.
 
 ## <a name="why-do-i-receive-an-error-message-that-says-that-my-model-is-in-contradiction"></a>Proč se zobrazila chybová zpráva s upozorněním, že tento model je v rozporu?
-Tato zpráva se zobrazí, když výpočet obsahuje chybu nebo v jedné nebo více omezeních existuje rozpor. Další informace o rozporech v omezeních viz [Omezení výrazu a omezení tabulky](expression-constraints-table-constraints-product-configuration-models.md). Zde jsou uvedeny situace, kdy může dojít k chybám ve výpočtu:
+Tato zpráva se zobrazí, když výpočet obsahuje chybu nebo v jedné nebo více omezeních existuje rozpor. Další informace o rozporech v omezeních viz [Omezení výrazu a omezení tabulky v modelech konfigurace produktu](expression-constraints-table-constraints-product-configuration-models.md). Zde jsou uvedeny situace, kdy může dojít k chybám ve výpočtu:
 
 -   Hodnota je dělena nulou.
 -   Došlo ke konfliktu mezi těmito dvěma prvky:

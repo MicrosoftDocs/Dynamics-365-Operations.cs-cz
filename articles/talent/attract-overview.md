@@ -1,5 +1,5 @@
 ---
-title: Funkce a možnosti aplikace Microsoft Dynamics 365 Talent - Attract
+title: Funkce a možnosti aplikace Attract
 description: Toto téma popisuje funkce, které aplikace Microsoft Dynamics 365 Talent - Attract nabízí pro správu procesu náboru nových talentů.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c8860602bd293c158aa33ea22b5f73de15a6b6f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4186dddc471de676cc6d26050f16711f581da7ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552064"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833062"
 ---
-# <a name="microsoft-dynamics-365-talent---attract-features-and-capabilities"></a>Funkce a možnosti aplikace Microsoft Dynamics 365 Talent - Attract
+# <a name="attract-features-and-capabilities"></a>Funkce a možnosti aplikace Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,4 @@ Aplikace Attract poskytuje předdefinovaný proces náboru, který obsahuje čty
 Jakmile jsou uchazeči přidáni k pracovnímu místu, obdrží e-mail s odkazem na webovou aplikaci. Tato aplikace poskytuje podrobnosti o práci. Je to současně nástroj pro komunikaci s náborovým týmem. Uchazeči mohou její pomocí také odesílat informace o své dostupnosti pro pohovory.
 
 ## <a name="analytic-reports"></a>Analytické sestavy
-Náborové týmy mohou použít klíčové metriky procesu náboru pro jednu práci nebo agregované přes všechny práce pomocí [analytických sestav v aplikaci Attract](analytic-reports.md). Tato funkce je momentálně ve verzi [Preview](access-preview-feature.md) pro zákazníky s [doplňkem komplexního náboru](attract-comprehensive-hiring.md).
+Náborové týmy mohou použít klíčové metriky procesu náboru pro jednu práci nebo agregované přes všechny práce pomocí [analytických sestav v aplikaci Attract](analytic-reports.md). Tato funkce je nyní v [ve verzi Preview](access-preview-feature.md) pro zákazníky s [verzí aplikace Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).

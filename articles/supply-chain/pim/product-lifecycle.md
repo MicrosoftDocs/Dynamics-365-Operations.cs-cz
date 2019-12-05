@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 83c523a23973f4fd146d8308fbb5ecb486224ad9
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865321"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813539"
 ---
 # <a name="product-lifecycle-state-overview"></a>Přehled životního cyklu produktu
 
@@ -107,9 +107,9 @@ Použijte následující kritéria pro výběr a aktualizaci uvolněných produk
 
 ## <a name="related-topics"></a>Související témata
 
--  [Vytvoření nového stavu životního cyklu produktu (Průvodce záznamem úloh)](tasks/new-product-lifecycle-state.md)
--  [Vytvoření výchozího stavu životního cyklu produktu (Průvodce záznamem úloh)](tasks/default-product-lifecycle-state.md)
--  [Přiřazení stavu životního cyklu produktu k uvolněnému základnímu produktu (Průvodce záznamem úloh)](tasks/product-lifecycle-state-released-product-master.md)
--  [Přiřazení stavu životního cyklu produktu k uvolněnému produktu (Průvodce záznamem úloh)](tasks/product-lifecycle-state-released-product.md)
--  [Nalezení zastaralých variant produktu a přiřazení stavu životního cyklu produktu (Průvodce záznamem úloh)](tasks/obsolete-product-variants.md)
--  [Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování (Průvodce záznamem úloh)](tasks/exclude-products-master-planning.md)
+-  [Vytvoření nového stavu životního cyklu produktu](tasks/new-product-lifecycle-state.md)
+-  [Vytvoření výchozího stavu životního cyklu produktu](tasks/default-product-lifecycle-state.md)
+-  [Přiřazení stavu životního cyklu produktu k uvolněnému hlavnímu produktu](tasks/product-lifecycle-state-released-product-master.md)
+-  [Přiřazení stavu životního cyklu produktu k uvolněnému produktu](tasks/product-lifecycle-state-released-product.md)
+-  [Nalezení zastaralých variant produktu a přiřazení stavu životního cyklu produktu](tasks/obsolete-product-variants.md)
+-  [Vytvoření stavu životního cyklu produktu k vyloučení produktů z hlavního plánování](tasks/exclude-products-master-planning.md)

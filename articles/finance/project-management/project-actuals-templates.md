@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0aeaa1ee4c35ca42a5382b3c7ff3519cba52996c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 302ac0f456dd8a24dc02948ee657e359f5a9c844
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250523"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770328"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Synchronizace skutečných hodnot projektu přímo z Project Service Automation do deníku integrace projektu pro zaúčtování v aplikaci Finance and Operations.
 
@@ -50,7 +50,7 @@ Následující obrázek znázorňuje, jak jsou synchronizována data mezi Projec
 
 ### <a name="template-and-tasks"></a>Šablona a úkoly
 
-Chcete-li získat přístup k dostupným šablonám, zvolte v centru správy Microsoft PowerApps **Projekty** a v pravém horním rohu vyberte **Nový projekt** pro volbu veřejných šablon.
+Chcete-li získat přístup k dostupným šablonám, zvolte v centru správy Microsoft Power Apps **Projekty** a v pravém horním rohu vyberte **Nový projekt** pro volbu veřejných šablon.
 
 K synchronizaci projektových skutečných hodnot z aplikace Project Service Automation do aplikace Finance slouží následující šablona a základní úkol:
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2becf8213cfa46e2c0cf0c553f0b5e503dfc3704
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570233"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771815"
 ---
 # <a name="general-journal-processing"></a>Zpracování hlavního deníku
 
@@ -85,11 +85,11 @@ Nastavení hlavního účtu poskytuje mnoho možností pro zpracování hlavníh
 Účetní struktury a struktury rozšířených pravidel jsou velice důležité pro zajištění toho, aby byla data potřebná pro finanční vykazování a sledování výkonu zachycována během zpracování hlavního deníku a jakékoli dokumentace. Účetní struktury a struktury rozšířených pravidel vám umožní přizpůsobit zadávání dat. Můžete povolit zadávání dat pouze pro finanční dimenze, které jsou relevantní v každé situaci a také můžete vynutit požadavek, aby byla vždy zaznamenána povinná a přesná data.
 
 Další informace naleznete v následujících tématech:
-- [Plánování: Účtová osnova](plan-chart-of-accounts.md). 
+- [Plánování účetní osnovy](plan-chart-of-accounts.md) 
 - [Vytvoření rozšířených pravidel pro deníky](tasks/create-advanced-rules-journals.md)
-- [Vytvoření položky deníku pomocí šablony](tasks/create-journal-entry-template.md)
+- [Vytvoření záznamu deníku pomocí šablony](tasks/create-journal-entry-template.md)
 - [Vytváření a ověřování deníků](tasks/create-validate-journals.md)
-- [Zaúčtování periodických deníků](tasks/post-periodic-journals.md)
+- [Účtování periodických deníků](tasks/post-periodic-journals.md)
 - [Zpracování deníku přidělení hlavní knihy](tasks/process-ledger-allocation-journal.md)
 
 ## <a name="simulate-posting"></a>Simulovat zaúčtování

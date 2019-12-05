@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 747922294eaf971795177beeb73839d453f6475a
+ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622761"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "2830179"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Nejčastější dotazy týkající se integrace aplikace Dynamics 365 Talent s Dynamics 365 Finance
 
@@ -48,7 +48,7 @@ Ve výchozím nastavení je integrace Common Data Service v nových prostředíc
 
 Finanční dimenze aktuálně nejsou v Common Data Service pro aplikace a proto nejsou součástí výchozí šablony. Tato entita je plánována, ale v současné době není k dispozici žádná časová osa pro uvolnění.
 
-V případě dat, která existují v modulu Finance, ale ne v aplikaci Talent, spojte tyto dva systémy pomocí příkazu **Konfigurovat odkazy** v aplikaci Talent. Další informace o tom, jak konfigurovat propojení mezi aplikacemi Talent a Finance získáte v tématu [Co je nového nebo změněného v Dynamics 365 Talent: Core HR Core HR (31. října 2018)](whats-new-talent-october-31.md).
+V případě dat, která existují v modulu Finance, ale ne v aplikaci Talent, spojte tyto dva systémy pomocí příkazu **Konfigurovat odkazy** v aplikaci Talent. Další informace o tom, jak konfigurovat propojení mezi aplikacemi Talent a Finance získáte v tématu [Co je nového nebo změněného v Dynamics 365 Talent - Core HR (31. října 2018)](whats-new-talent-october-31.md).
 
 ![Mapovat finanční dimenze](media/MapFinancialDimensions.png)
 
@@ -69,7 +69,7 @@ S použitím "Rozšířeného dotazu" můžete filtrovat a měnit tvar zdrojový
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Můžu určit pole, která chcete odeslat do modulu Finance pro konkrétní entitu?
 
 Pole lze přidat nebo odebrat z úkolu integrace. Ne všechna datová pole, která existují na Common Data Service budou doplněna z Core HR.
-Prostřednictvím PowerApps lze naplnit další data.
+Prostřednictvím Power Apps lze naplnit další data.
 
 ![Přidání do úkolu integrace a odstranění z něj](media/SpecifyFieldsIncludedInIntegration.png)
 
@@ -119,19 +119,19 @@ Sledujte čas od historie provedení integrátoru dat a hledejte projekt index -
 
 1. Zaznamenejte index úkolů z integrátoru dat (v tomto případě je to "9").
 
-![Zaznamenání indexu úkolů z integrátoru dat](media/CaptureTaskIndex.png)
+    ![Zaznamenání indexu úkolů z integrátoru dat](media/CaptureTaskIndex.png)
 
 2. Sledujte čas provádění projektu.
 
-![Sledování času provádění projektu.](media/CaptureTimeOfExecution.png)
+    ![Sledování času provádění projektu.](media/CaptureTimeOfExecution.png)
 
 3. V modulu finance určete index - 1. V tomto příkladu projekt bude mít příponu 8 a čas provedení projektu indexu 0 odpovídá času provedení v kroku 2.
 
-![Identifikace indexu](media/IdentifyIndex.png)
+    ![Identifikace indexu](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-talent-and-finance-i-dont-see-my-talent-data-in-finance-what-do-i-do"></a>Po integraci aplikací Talent a Finance nevidím data Talent v aplikaci Finance and Operations. Co udělat?
 
-Integrace s aplikací Finance je proces ve dvou krocích. Nejprve ověřte, že jsou data aplikace Talent aktualizovaná a dostupná v Common Data Service. To je synchronizace v reálném čase a lze ji ověřit v PowerApps pohledem na data v rámci datových entit.
+Integrace s aplikací Finance je proces ve dvou krocích. Nejprve ověřte, že jsou data aplikace Talent aktualizovaná a dostupná v Common Data Service. To je synchronizace v reálném čase a lze ji ověřit v Power Apps pohledem na data v rámci datových entit.
 
 ![Data v Common Data Service](media/DataInCDS.png)
 
@@ -168,7 +168,7 @@ Aktualizujte entity dat v aplikaci Finance v části **Správa dat \> Parametry 
 
   - [Správa chyb a řešení problémů integrátoru dat](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Odpovídání na požadavky DSR u systémem generovaných protokolů v PowerApps, Microsoft Flow a Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Odpovídání na požadavky DSR u systémem generovaných protokolů v Power Apps, Microsoft Power Automate a Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Správa dat:
 

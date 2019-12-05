@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: cde95430022d94c42bdd985b5e4a8f9f5147d000
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 804878150f035adc051e89ec6be44457ad58e87e
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181351"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771184"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Rozdělení generovaných souborů XML na základě velikosti souboru a množství obsahu
 
@@ -47,4 +47,4 @@ Další informace o této funkci zobrazíte přehráním Průvodce záznamem úl
 ## <a name="additional-resources"></a>Další zdroje
 [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)
 
-[Návrhář vzorců v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)
+[Návrhář receptur v elektronickém výkaznictví](general-electronic-reporting-formula-designer.md)

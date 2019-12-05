@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: bbc65a77b7c3df6545dfd7aa2109aba5c4e1b57b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010608"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773027"
 ---
 # <a name="remove-talent-environments"></a>Odstranění prostředí Talent
 
@@ -34,7 +34,7 @@ Toto téma vás povede procesem odebrání zkušební jednotky nebo výrobního 
 
 Testovací jednotky Talent jsou zřizovány s 60denním vypršením platnosti. Vlastníci prostředí testovací jednotky však mají možnost ukončit své zkušební verze dříve podle následujícího postupu. 
 
-1. Přejděte do [Centra pro správu PowerApps](https://admin.businessplatform.microsoft.com/).
+1. Přejděte do [Centra pro správu Power Apps](https://admin.businessplatform.microsoft.com/).
 2. Vyberte **Prostředí**.
 3. Vyberte testovací prostředí, které má podobný vzorec pojmenování jako tento: TestDrive - alias@domain
 4. Vyberte **Odstranit** a potvrďte rozhodnutí. 
@@ -45,14 +45,14 @@ Existující testovací prostředí bude odstraněno. Po odebrání se můžete 
 
 Toto téma předpokládá, že jste si zakoupili aplikaci Talent prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). 
 
-Vzhledem k tomu, že jedno prostředí Talent je obsaženo v jednom prostředí PowerApps, existují dvě možnosti ke zvážení. První možnost zahrnuje odebrání celého prostředí PowerApps; druhá možnost vyžaduje odebrání pouze aplikace Talent. První volba je upřednostňována při vytvoření prostředí PowerApps výslovně za účelem zřízení aplikace Talent a při začátku implementace, nebo když nemáte žádné ustavené integrace. Druhá možnost je vhodná, pokud máte zřízené prostředí PowerApps naplněné mnoha daty, která jsou využita v PowerApps a tocích.
+Vzhledem k tomu, že jedno prostředí Talent je obsaženo v jednom prostředí Power Apps, existují dvě možnosti ke zvážení. První možnost zahrnuje odebrání celého prostředí Power Apps; druhá možnost vyžaduje odebrání pouze aplikace Talent. První volba je upřednostňována při vytvoření prostředí Power Apps výslovně za účelem zřízení aplikace Talent a při začátku implementace, nebo když nemáte žádné ustavené integrace. Druhá možnost je vhodná, pokud máte zřízené prostředí Power Apps naplněné mnoha daty, která jsou využita v Power Apps a Power Automate.
 
 > [!Important]
-> Před odstraněním prostředí PowerApps ověřte, že se již nepoužívá pro bohaté datové integrace mimo aplikaci Talent. Povšimněte si též, že výchozí prostředí PowerApps nelze odstranit. 
+> Před odstraněním prostředí Power Apps ověřte, že se již nepoužívá pro bohaté datové integrace mimo aplikaci Talent. Povšimněte si též, že výchozí prostředí Power Apps nelze odstranit. 
 
-Chcete-li odebrat celé prostředí PowerApps, včetně prostředí Talent a přidružených aplikací a toků:
+Chcete-li odebrat celé prostředí Power Apps, včetně prostředí Talent a přidružených aplikací a toků:
 
-1. Přejděte do [Centra pro správu PowerApps](https://admin.businessplatform.microsoft.com/).
+1. Přejděte do [Centra pro správu Power Apps](https://admin.businessplatform.microsoft.com/).
 2. Vyberte **Prostředí**.
 3. Vyberte prostředí, které má být odstraněno.
 4. Vyberte **Odstranit** a potvrďte rozhodnutí. 
@@ -63,7 +63,7 @@ Chcete-li odebrat celé prostředí PowerApps, včetně prostředí Talent a př
 9. Vyberte instanci, kterou chcete odebrat. 
 10. Vyberte **Odebrat instanci** a potvrďte vaše rozhodnutí.  
 
-Chcete-li odebrat prostředí Talent z existujícího prostředí PowerApps, proveďte následující kroky. Všimněte si, že nutnost zahrnout podporu a kontaktovat tým Talent DevOps je dočasná, dokud tato funkce nebude povolena přímo v LCS.
+Chcete-li odebrat prostředí Talent z existujícího prostředí Power Apps, proveďte následující kroky. Všimněte si, že nutnost zahrnout podporu a kontaktovat tým Talent DevOps je dočasná, dokud tato funkce nebude povolena přímo v LCS.
 
 1. Požádejte podporu o zahájení požadavku na odebrání.
 2. Tým podpory iniciuje požadavek na odebrání s týmem Talent DevOps. 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9b7cd06d820522d8db83b5b1480b95db1400e9cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f8017ab23ce77a03469a6a6c82bc22986ec4478
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191240"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812619"
 ---
 # <a name="before-you-buy"></a>Před zakoupením
 
@@ -41,8 +41,8 @@ Pokud zvolíte místní nasazení jako možnost nasazení, musíte vzít v úvah
 
 - Potřeby shod s předpisy, které nejsou k dispozici v certifikátech cloudu
 - Odpojený obchodní proces s občasným připojením k Internetu požadovaná pro přístup ke službě Microsoft Dynamics Lifecycle Services pro správu životního cyklu aplikací
-- [Funkce momentálně neimplementované v místních nasazeních](features-not-implemented-on-prem.md)
-- [Minimální požadavky na infrastrukturu](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+- [Funkce neimplementované v místních nasazeních](features-not-implemented-on-prem.md)
+- [Systémové požadavky pro místní nasazení](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
 > Místní nasazení Microsoft Dynamics 365 for Finance and Operations nejsou podporována na žádném veřejném cloudu, včetně Azure.
@@ -78,7 +78,7 @@ Poskytovatele cloudového řešení Microsoft s vámi může spolupracovat, aby 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Nákup prostřednictvím partnera Dynamics (místní)
 
-Pokud chcete zakoupit místní aplikaci Finance and Operations, je nutná spolupráce s partnerem. Další informace naleznete v tématu [Nákup Dynamics 365 for Finance and Operations (on-premises)](purchase-on-premises.md)
+Pokud chcete zakoupit místní aplikaci Finance and Operations, je nutná spolupráce s partnerem. Další informace naleznete v tématu [Zakoupení Finance + Operations (on-premises)](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Zvolte možnost podpory
 
@@ -91,7 +91,7 @@ Více informací:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Krok čtyři: Informace o pevné záložce a plánování nasazení
 
-Microsoft FastTrack for Dynamics 365 je služba zajišťující zákazníkům úspěch, která umožňuje přesunout Dynamics 365 hladce a bezpečně, abyste si rychleji uvědomili obchodní hodnotu. Pokud se účastníte programu FastTrack, zobrazí se informace o doporučených postupech a plánování úspěšného zavedení. Zjistíte také způsoby povolení nových uživatelů a rozšíření možností – vše vlastním tempem. Také budete mít přístup k prostředkům pro technické zpracování společnosti Microsoft, které vám umožní zajistit úspěch aplikace Dynamics 365. Další informace: [Microsoft FastTrack pro Dynamics 365 – přehled](fasttrack-dynamics-365-overview.md)
+Microsoft FastTrack for Dynamics 365 je služba zajišťující zákazníkům úspěch, která umožňuje přesunout Dynamics 365 hladce a bezpečně, abyste si rychleji uvědomili obchodní hodnotu. Pokud se účastníte programu FastTrack, zobrazí se informace o doporučených postupech a plánování úspěšného zavedení. Zjistíte také způsoby povolení nových uživatelů a rozšíření možností – vše vlastním tempem. Také budete mít přístup k prostředkům pro technické zpracování společnosti Microsoft, které vám umožní zajistit úspěch aplikace Dynamics 365. Další informace: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md)
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Pokud provádíte upgrade aplikace Dynamics AX 2012 nebo migraci z aplikace AX 2009
 

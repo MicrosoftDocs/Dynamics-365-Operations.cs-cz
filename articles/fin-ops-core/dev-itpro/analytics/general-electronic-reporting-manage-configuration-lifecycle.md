@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6206b3a1ac298af98e4b69b6800b9a493658c4ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ecaeb80f3cda2ee24533ed263df63cc10c5ffc65
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181282"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771089"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Správa životního cyklu konfigurace elektronického vykazování
 
@@ -33,7 +33,7 @@ Toto téma popisuje způsob správy životního cyklu konfigurací elektronické
 
 ## <a name="overview"></a>Přehled
 
-Elektronické výkaznictví je modul pro podporu elektronických dokumentů specifických pro danou zemi a požadovaných zákonem. Obecně platí, že Elektronické výkaznictví předpokládá schopnost provádět následující činnosti pro jeden elektronický dokument. Další podrobnosti získáte v tématu [Přehled elektronického vykazování](general-electronic-reporting.md)
+Elektronické výkaznictví je modul pro podporu elektronických dokumentů specifických pro danou zemi a požadovaných zákonem. Obecně platí, že Elektronické výkaznictví předpokládá schopnost provádět následující činnosti pro jeden elektronický dokument. Další podrobnosti získáte v tématu [Přehled elektronického výkaznictví (ER)](general-electronic-reporting.md)
 
 - Návrh šablony pro elektronický dokument:
 

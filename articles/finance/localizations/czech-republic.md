@@ -15,12 +15,12 @@ ms.search.region: Czech Republic
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 768f8cd7a313962ec0af9e883f25a643ecab7d97
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6dd5b4602ee70fc627391b30b7d468f56975bb7a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183495"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773406"
 ---
 # <a name="czech-republic-overview"></a>Přehled – Česká republika
 
@@ -59,12 +59,12 @@ Informace o intrakomunitární DPH mohou být vypočteny a zaúčtovány automat
 Při zaúčtování nákupní faktury, pohledávka DPH a závazek DPH jsou účtovány ve stejnou dobu. V případě kladných transakcí daně z prodeje je datum registru DPH nastaveno na datum registru DPH ze stránky zaúčtování faktury a směrování daně z prodeje je **DPH na vstupu**. V případě záporných transakcí daně z prodeje je datum registru DPH nastaveno na datum dokumentu a směrování daně z prodeje je **DPH na výstupu**.
 
 ## <a name="credit-note-on-cash-discount"></a>Dobropis na platební slevu
-Informace o vytváření, zaúčtování a tisku dobropisů pro hotovostní slevy, které jsou přiřazeny odběratelům, naleznete v tématu [Platební slevy u dobropisu](emea-cze-credit-note-cash-discount.md).
+Informace o vytváření, zaúčtování a tisku dobropisů pro hotovostní slevy, které jsou přiřazeny odběratelům, naleznete v tématu [Dobropis na platební slevu](emea-cze-credit-note-cash-discount.md).
 
-## <a name="split-periods-in-periodic-journals"></a>Rozdělení období do periodických deníků
+## <a name="split-periods-in-periodic-journals"></a>Rozdělení období v periodických denících
 Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku je stránka **Periodické deníky** rozšířena o funkci rozdělení na období. Další informace naleznete v jednom z následujících témat:
 - [Rozdělení období v periodických denících](emea-create-post-periodic-journals.md)
-- [Zaúčtování periodického deníku](../general-ledger/tasks/post-periodic-journals.md)
+- [Účtování periodických deníků](../general-ledger/tasks/post-periodic-journals.md)
 
 ## <a name="signers-for-print-forms"></a>Podepisující uživatelé tištěných formulářů
 Pro právnické osoby v České republice, Estonsku, Maďarsku, Litvě, Lotyšsku, Polsku a Rusku můžete nastavit podepisující osoby a tituly pro odběratele a dodavatele, kteří tisknou dokumenty, jako jsou faktury a platební příkazy. Další informace naleznete v tématu [Nastavení podepisujících formulářů pro tisk](emea-set-up-signers-for-printing-forms.md).

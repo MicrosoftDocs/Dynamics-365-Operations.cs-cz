@@ -1,6 +1,6 @@
 ---
-title: Vytvoření šablony procesu v aplikaci Attract
-description: Toto téma poskytuje informace o způsobu vytvoření šablony procesu v aplikaci Attract.
+title: Vytvoření šablony procesu náboru v aplikaci Attract
+description: Toto téma poskytuje informace o způsobu vytvoření šablony procesu náboru v aplikaci Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 82046d43cf7366b760c140bdb8b017337b4f41da
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622711"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832551"
 ---
-# <a name="create-a-process-template-in-attract"></a>Vytvoření šablony procesu v aplikaci Attract
+# <a name="create-a-hiring-process-template-in-attract"></a>Vytvoření šablony procesu náboru v aplikaci Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -48,7 +48,7 @@ Správci, náboroví pracovníci a náboroví manažeři mohou vytvářet šablo
 > [!NOTE]
 > Názvy fází jsou viditelné pro kandidáty na stránce **Stav přihlášky**. Tuto skutečnost je třeba zvážit při výběru názvů fází.
 
-Další informace o aktivitách naleznete v tématu [Aktivity procesu náboru v aplikaci Attract](./activities-attract.md).
+Další informace o aktivitách naleznete v tématu [Aktivity procesu náboru](./activities-attract.md).
 
 Pro vytvoření šablony náborového procesu postupujte podle těchto kroků:
 

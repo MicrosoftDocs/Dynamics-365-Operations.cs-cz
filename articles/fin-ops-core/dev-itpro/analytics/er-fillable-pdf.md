@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13744df950040056ba03a3847d84f93e266ea6c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181443"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771299"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Návrh konfigurací elektronického výkaznictví pro vyplnění šablon PDF
 
@@ -46,7 +46,7 @@ Než začnete, musíte mít v závislosti na službě, kterou používáte k dok
     - Funkční konzultant elektronického výkaznictví
     - Správce systému
 
-Je také nutné dokončit postup [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+Je také nutné dokončit postup [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 Nakonec je nutné stáhnout následující soubory z [CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111).
 
@@ -300,5 +300,5 @@ Následující obrázek znázorňuje příklad další stránky vygenerované se
 
 ## <a name="additional-resources"></a>Další zdroje
 
-- [Návrh konfigurace ER pro generování sestav ve formátu OPENXML](tasks/er-design-reports-openxml-2016-11.md)
-- [Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu Microsoft WORD](tasks/er-design-configuration-word-2016-11.md)
+- [Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu OPENXML (listopad 2016)](tasks/er-design-reports-openxml-2016-11.md)
+- [Návrh konfigurací elektronického výkaznictví pro generování sestav ve formátu Word](tasks/er-design-configuration-word-2016-11.md)

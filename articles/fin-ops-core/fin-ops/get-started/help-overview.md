@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef630ca56888eb61ab0519a29c89c3ccb2f24a87
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537825"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811665"
 ---
 # <a name="help-system"></a>Systém nápovědy
 
@@ -82,7 +82,7 @@ Další informace naleznete v naší [příručce přispěvatelů](https://docs.
 
 Průvodce záznamem úloh je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky daného úkolu nebo obchodního procesu. Je možné otevřít (přehrát) Průvodce záznamem úloh v podokně Nápověda. Po prvním kliknutí na Průvodce záznamem úloh se v podokně Nápověda zobrazí podrobné pokyny pro úkol. K dispozici jsou lokalizovaní průvodci záznamem úloh.
 
-Microsoft vydal knihovny Průvodců záznamem úloh pro Dynamics 365 for Finance and Operations během prosince 2017. Část [Přístup k průvodcům záznamem úloh z podokna Nápověda](help-overview.md#accessing-task-guides-from-the-help-pane) popisuje, jak najít správné Průvodce pro daný produkt.
+Microsoft vydal knihovny Průvodců záznamem úloh pro Dynamics 365 for Finance and Operations během prosince 2017. Část [Systém nápovědy](help-overview.md#accessing-task-guides-from-the-help-pane) popisuje, jak najít správné Průvodce záznamem úloh pro daný produkt.
 
 ![Zobrazení pro čtení Průvodce záznamem úloh](./media/task-guide-ops.png)
 
@@ -93,7 +93,7 @@ Chcete-li zažít řízenou interaktivní zkušenost, klikněte na možnost **Sp
 > [!IMPORTANT]
 > Data, která zadáte při přehrávání Průvodce záznamem úloh, jsou skutečná. Pokud jste ve výrobním prostředí, budou zadána data, která skutečně používáte.
 
-Záznamník úloh můžete použít k vytvoření vlastního Průvodce záznamem úloh. Další informace naleznete v tématu [Vytvoření dokumentace nebo školení pomocí záznamu úloh](../../dev-itpro/user-interface/task-recorder-training-docs.md).
+Záznamník úloh můžete použít k vytvoření vlastního Průvodce záznamem úloh. Další informace naleznete v tématu [Vytvoření dokumentace nebo školení pomocí záznamníku úloh](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Nápověda v produktu
 
@@ -144,13 +144,12 @@ Přeložení průvodci záznamem úloh jsou v knihovnách "Všechny jazyky" v n�
 
 Můžete vytvořit nápovědu pro své uživatele pomocí vytvoření vlastních Průvodců záznamem úloh, nebo připojením své vlastní webové stránky do panelu Nápověda. Další informace viz:
 
-- [Postup vytvoření záznamu úloh pro použití jako dokumentace nebo školení](../../dev-itpro/user-interface/task-recorder.md).
+- [Zdroje záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md)
 - [Vytvoření vlastní nápovědy (dokument white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Další zdroje
 
-- [Záznamník úloh](../../dev-itpro/user-interface/task-recorder.md)
-- [Vytváření dokumentace nebo školení pomocí záznamu úkolů](../../dev-itpro/user-interface/task-recorder.md)
+- [Zdroje záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md)
 
 V následující tabulce jsou uvedeny naše weby. Weby s hvězdičkou (\*) u názvu vyžadují přihlášení pomocí účtu, který je přidružen k plánu služby.
 

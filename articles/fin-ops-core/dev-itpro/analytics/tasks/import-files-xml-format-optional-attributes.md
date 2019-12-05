@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e1290598d8dbd5b72d679ccf3e642e75b6dc3215
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f34302a32b2e06f281dc93d6df160b88ffac7123
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182179"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769778"
 ---
 # <a name="rcs-import-files-in-xml-format-with-optional-attributes"></a>(RCS) Import souborů v XML formátu s volitelnými atributy
 
@@ -30,7 +30,7 @@ ms.locfileid: "2182179"
 Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhovat konfiguraci elektronického výkaznictví pro import souborů v XML formátu obsahujícím volitelné atributy. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". Než začnete, stáhněte a uložte místně soubor IncomingDocumentToLearnHowToHandleOptionalAttributes.xml z [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 
 1.  Přejděte na **Všechny pracovní prostory** > **Elektronické výkaznictví**.
-2.  Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](er-configuration-provider-mark-it-active-2016-11.md).
+2.  Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md).
 3.  Klikněte na **Konfigurace výkaznictví**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Vytvoření nové konfigurace datového modelu

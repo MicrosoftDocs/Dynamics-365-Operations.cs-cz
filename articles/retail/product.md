@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c78fc1f2f1bb08d01828a8b71ad5d3c16ad31b86
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 98c84e987c40adf136d0240117f7b0f119bf2f59
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278366"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811110"
 ---
 # <a name="product-recommendations-on-pos"></a>Doporučení produktu na POS
 
@@ -40,13 +40,13 @@ Doporučení produktu jsou povolena pro následující scénáře POS. Jsou k di
 
 1. Na stránce **Podrobnosti o produktu**:
 
-    - • Pokud obchod asociuje návštěvy se stránkou **Podrobnosti o produktu** při vyhledávání předchozích transakcí napříč různými kanály, služba doporučení navrhuje další položky, které budou pravděpodobně nakoupeny společně.
+    - Pokud obchod asociuje návštěvy se stránkou **Podrobnosti o produktu** při vyhledávání předchozích transakcí napříč různými kanály, služba doporučení navrhuje další položky, které budou pravděpodobně nakoupeny společně.
 
     [![Doporučení na stránce Podrobnosti produktu](./media/proddetails.png)](./media/proddetails.png)
 
 2. Na stránce **Transakce**:
 
-    - • Modul doporučení navrhuje položky založené na celém seznamu položek v nákupním košíku, které se často nakupují.
+    - Modul doporučení navrhuje položky založené na celém seznamu položek v nákupním košíku, které se často nakupují.
 
     > [!NOTE]
     > Pokud chce maloobchodník zobrazit doporučení na stránce **Transakce**, musí aktualizovat rozložení obrazovky v Dynamics 365 for Retail. Ovládací prvek **Doporučení** musí být na stránce **Transakce**.
@@ -69,10 +69,12 @@ Chcete-li nastavit doporučení produktu, postupujte následujícím způsobem:
 
 - Přejděte na **Parametry maloobchodu** \> **Seznam doporučení** \> **Zakázat doporučení produktu** a spusťte **globální konfigurační úlohu \[9999\]**. 
 - Pokud jste přidali **Řízení doporučení** na svou obrazovku transakcí pomocí nástroje **Návrhář rozložení obrazovky**, odstraňte ho také.
-- Máte-li další dotazy, vyhledejte další informace [v nejčastějších dotazech k doporučením](../commerce/faq-recommendations.md).
+- Máte-li další dotazy, vyhledejte další informace [v nejčastějších dotazech k doporučením produktu](../commerce/faq-recommendations.md).
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Přidání ovládacího prvku doporučení na stránku transakce na zařízení POS](add-recommendations-control-pos-screen.md)
+[Přidání ovládacího prvku doporučení na obrazovku transakce na zařízeních POS](add-recommendations-control-pos-screen.md)
+
 [Přehled doporučení produktu](../commerce/product-recommendations.md)
-[Povolení doporučení produktu](../commerce/enable-product-recommendations.md) 
+
+[Povolit doporučení produktu](../commerce/enable-product-recommendations.md) 

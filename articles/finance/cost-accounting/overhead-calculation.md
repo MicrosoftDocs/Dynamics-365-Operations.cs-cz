@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 6c045f82f3288dba193721dd80c90e68750af9a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 954e0669c3d24bcc20fe667c22b7dcc367aba1e7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176801"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770797"
 ---
 # <a name="overhead-calculation"></a>Výpočet režijních nákladů
 
@@ -1411,7 +1411,7 @@ Ve finančním účtování se náklady za elektřinu ve výši 10 000 zaúčtuj
 </table>
 
 > [!NOTE]
-> Toto téma popisuje, jak primární prvek nákladů, 10001 Elektřina, prochází přes objekty nákladů. Tyto režijní náklady tedy budou přiděleny na nejnižší úroveň v organizaci. Jinak řečeno, objekty nákladů na nejnižší úrovni ponesou náklady. Chcete-li vizuální tok nákladů mezi objekty nákladů, můžete použít pravidla zásad shrnutí nákladů pro vizualizaci jejich toků. Podrobnější informace naleznete v tématu [Zásady shrnutí nákladů](cost-rollup.md).
+> Toto téma popisuje, jak primární prvek nákladů, 10001 Elektřina, prochází přes objekty nákladů. Tyto režijní náklady tedy budou přiděleny na nejnižší úroveň v organizaci. Jinak řečeno, objekty nákladů na nejnižší úrovni ponesou náklady. Chcete-li vizuální tok nákladů mezi objekty nákladů, můžete použít pravidla zásad shrnutí nákladů pro vizualizaci jejich toků. Další informace naleznete v tématu [Zásady shrnutí nákladů a výpočet režijních nákladů](cost-rollup.md).
 
 
 

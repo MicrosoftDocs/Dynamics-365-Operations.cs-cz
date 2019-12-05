@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d646c8ba559ba3e8d2175911e76c57d25eff02ca
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e6f0b75c8d81a5ac6ec90020375aec39120d4406
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278122"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811209"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Přidání ovládacího prvku doporučení na obrazovku transakce na zařízeních POS
 
 [!include [banner](includes/banner.md)]
 
 
-Toto téma popisuje, jak přidat ovládací prvek doporučení na obrazovku transakcí na zařízení POS pomocí návrháře rozložení obrazovky v aplikaci Microsoft Dynamics 365 Retail. Další informace o doporučeních produktů naleznete v dokumentaci [doporučení produktu v dokumentaci POS.](product.md)
+Toto téma popisuje, jak přidat ovládací prvek doporučení na obrazovku transakcí na zařízení POS pomocí návrháře rozložení obrazovky v aplikaci Microsoft Dynamics 365 Retail. Další informace o doporučeních produktů naleznete v dokumentaci [doporučení produktu v dokumentaci POS](product.md).
 
 
 Když používáte Microsoft Dynamics 365 Retail, můžete zobrazit na svém zařízení POS doporučení produktu. Abyste mohli zobrazit doporučení produktu, musíte přidat ovládací prvek na obrazovce transakce pomocí návrháře rozložení obrazovky. 
@@ -98,6 +98,6 @@ K dispozici jsou dvě možnosti konfigurace. Vyberte možnost, která nejlépe v
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[poporučení produktu na POS](product.md)
+[Doporučení produktu v POS](product.md)
 
-[přehled doporučení produktu](../commerce/product-recommendations.md)
+[Přehled doporučení produktu](../commerce/product-recommendations.md)

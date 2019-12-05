@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d461b85f89eff63c8747fb17b3ee34ebfeb2218
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 79e12f39589f9cf3f4b1515fa3ab10bb10ffb97f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185628"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770352"
 ---
 # <a name="project-management-and-accounting-overview"></a>Přehled řízení a účetnictví projektu
 
@@ -72,7 +72,7 @@ Další informace o projektových smlouvách naleznete v tématu [Projektové sm
 
 Úroveň podrobností ve WBS závisí na přesnosti, která je nutná v odhadech, a úrovni sledování, které je nutné pro tyto odhady. Projekty, které mají velmi nízkou toleranci pro zaostávání za plánem nebo náklady, obvykle vyžadují podrobnější WBS a také důkladné sledování průběhu práce a nákladů vzhledem k WBS. 
 
-Další informace naleznete v tématu [Strukturované rozpisy prací](work-breakdown-structures.md).
+Další informace naleznete v tématu [Přehled strukturovaných rozpisů prací](work-breakdown-structures.md).
 
 ### <a name="create-project-forecasts-and-budgets"></a>Vytvoření projektových prognóz a rozpočtů
 
@@ -134,7 +134,7 @@ Během provádění projektu členové týmu nebo manažeři zaznamenávají pr�
 
 WBS je popis práce, která bude dokončena pro projekt. WBS je hierarchie úkolů. Představuje nejen práci na každém úkolu, ale také velikost, náklady a dobu trvání úkolu. 
 
-Další informace naleznete v tématu [Strukturované rozpisy prací](work-breakdown-structures.md).
+Další informace naleznete v tématu [Přehled strukturovaných rozpisů prací](work-breakdown-structures.md).
 
 ### <a name="manage-project-forecasts-and-budgets"></a>Správa projektových prognóz a rozpočtů
 

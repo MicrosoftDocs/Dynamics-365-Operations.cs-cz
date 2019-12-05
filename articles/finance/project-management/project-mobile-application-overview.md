@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 521fdc98c8af51f6f244f9aa606ce047d014edf1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3cb3b25503b559f21c45c0232a8c0abd3e415eb3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250431"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773615"
 ---
 # <a name="project-mobile-applications-overview"></a>Přehled mobilních aplikací projektu
 
@@ -45,4 +45,7 @@ Moje časové rozvrhy (optimalizované pro mobilní telefon) a Časové rozvrhy 
 
 ## <a name="for-more-information"></a>Získání dalších informací
 
-Další informace naleznete v tématu [Mobilní aplikace Microsoft Dynamics 365 Project Timesheet](project-timesheet.md), [Časový záznam projektu]( project-time-entry-mobile-workspace.md), [Časové rozvrhy na mobilním zařízení](Mobile-timesheets.md) a [Implementace vlastních polí pro mobilní aplikaci Časový rozvrh projektu](custom-fields-mobile.md).
+- [Mobilní aplikace časového rozvrhu projektu](project-timesheet.md)
+- [Časový záznam projektu]( project-time-entry-mobile-workspace.md)
+- [Časové rozvrhy na mobilním zařízení](Mobile-timesheets.md)
+- [Implementace vlastních polí pro mobilní aplikaci Microsoft Dynamics 365 Project Timesheet v systémech iOS a Android](custom-fields-mobile.md)

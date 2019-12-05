@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 50ce332673e130dace38f596020973d37c34b566
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248950"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813493"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Správa uživatelů dodavatelské spolupráce
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248950"
 
 Toto téma popisuje, jak můžete požadovat zřízení nových uživatelů dodavatelské spolupráce a přidat nové kontakty dodavatelské spolupráce. 
 
-V aplikaci Dynamics 365 Supply Chain Management jsou k dispozici informace o nákupních objednávkách, fakturách a skladových zásobách pro externí dodavatele. Můžete vytvořit nové kontakty dodavatelské spolupráce a požadovat, aby byli noví uživatelé zajištění, pokud pracujete jako externí dodavatel s rolí zabezpečení **Správce dodavatele (externí)** nebo podobnými oprávněními. Tyto můžete provést také v případě, že pracujete jako odborník na nákup. V tomto tématu odkazuje tato role na odborníky na nákup, kteří pracují pro společnost, která vlastní instanci aplikace Supply Chain Management. Další informace o použití spolupráce dodavatele, pokud jste externí dodavatel, naleznete v tématu [Dodavatel se zákazníky](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+V aplikaci Dynamics 365 Supply Chain Management jsou k dispozici informace o nákupních objednávkách, fakturách a skladových zásobách pro externí dodavatele. Můžete vytvořit nové kontakty dodavatelské spolupráce a požadovat, aby byli noví uživatelé zajištění, pokud pracujete jako externí dodavatel s rolí zabezpečení **Správce dodavatele (externí)** nebo podobnými oprávněními. Tyto můžete provést také v případě, že pracujete jako odborník na nákup. V tomto tématu odkazuje tato role na odborníky na nákup, kteří pracují pro společnost, která vlastní instanci aplikace Supply Chain Management. Další informace o použití spolupráce dodavatele, pokud jste externí dodavatel, naleznete v tématu [Spolupráce dodavatele se zákazníky](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Další informace o použití spolupráce dodavatele, pokud jste odborník na nákup, viz [Spolupráce dodavatele s externími dodavateli](vendor-collaboration-work-external-vendors.md).
 

@@ -18,19 +18,19 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 7559ef3aa3ce816d375f263ff4a4e0cf3d632249
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e7a3d32ba9c9ac0f6497db78d125dc34b4cfbc61
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658706"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811426"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-home-page"></a>Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations
 [!include [banner](../includes/banner.md)]
 
 Od října 2019 tato stránka již nebude udržována. Informace v tomto tématu ukazují, kde hledat informace o funkcích pro aplikace Finance and Operations, které byly vydány před říjnem 2019.
 
-Informace o tom, jak upgradovat na nejnovější verzi, uvádí téma [Proces upgradu na poslední aktualizaci](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
+Informace o tom, jak upgradovat na nejnovější verzi, uvádí téma [Proces přechodu na poslední aktualizaci modulu Finance and Operations](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
 [!include [release notes](../includes/release-notes.md)]
 

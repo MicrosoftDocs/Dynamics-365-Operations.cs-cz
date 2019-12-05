@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 3d23375ec7ebe9b43c2d2e3e376e26c348131bd3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653316"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812253"
 ---
 # <a name="register-consumption"></a>Registrace spotřeby
 
@@ -33,7 +33,7 @@ ms.locfileid: "2653316"
 
 Když byla úloha údržby dokončena na pracovním příkazu, následující krok provede registraci spotřeby a zaúčtuje deníky. Registrace můžete provést u následujících typů spotřeby: hodiny, položky a výdaje. Různé typy spotřeby jsou registrovány a zaúčtovány na stránce **Deníky pracovních příkazů**. Nastavení deníku ve **Správě majetku** se používá k vytváření a zaúčtování samostatných deníků pro hodiny, položky a výdaje v modulu **Řízení a účetnictví projektu**.
 
-Řádky prognózy můžete v některých případech přidávat nebo odstraňovat v rámci pracovního příkazu. Nastavení stavu životního cyklu pracovního příkazu, související typ projektu a pravidla fáze související s typem projektu určují, zda lze přidávat nebo upravovat řádky deníku. Další informace o stavech životního cyklu pracovního příkazu a souvisejících fází najdete v tématu [Integrace do řízení a účetnictví projektu](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+Řádky prognózy můžete v některých případech přidávat nebo odstraňovat v rámci pracovního příkazu. Nastavení stavu životního cyklu pracovního příkazu, související typ projektu a pravidla fáze související s typem projektu určují, zda lze přidávat nebo upravovat řádky deníku. Další informace o stavech životního cyklu pracovního příkazu a souvisejících fázích projektu si můžete přečíst v tématu [Prognózy, pracovní příkazy a projekty](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Je možné nastavit automatické zaúčtování deníků ve stavu životního cyklu pracovního příkazu. Další informace najdete v části [Stavy životního cyklu pracovního příkazu](../setup-for-work-orders/work-order-lifecycle-states.md).

@@ -1,5 +1,5 @@
 ---
-title: Zdrojování kandidátů pomocí LinkedIn Recruiter v aplikaci Microsoft Dynamics 365 Talent - Attract
+title: Zdrojování kandidátů pomocí LinkedIn Recruiter v aplikaci Attract
 description: Použijte integraci LinkedIn poskytovanou aplikací Microsoft Dynamics 365 Talent - Attract ke zdrojování uchazečů o zaměstnání pomocí LinkedIn Recruiter.
 author: andreabichsel
 manager: AnnBe
@@ -19,15 +19,16 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8f2e95e74bbc8d78ed5d970f29b61150a45c6740
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551557"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833039"
 ---
-# <a name="source-candidates-with-linkedin-recruiter-in-microsoft-dynamics-365-talent---attract"></a>Zdrojování kandidátů pomocí LinkedIn Recruiter v aplikaci Microsoft Dynamics 365 Talent - Attract
-[!include[banner](../includes/banner.md)]
+# <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Zdrojování kandidátů pomocí LinkedIn Recruiter v aplikaci Attract
+
+[!include [banner](includes/banner.md)]
 
 LinkedIn je nejvyšší světová síť profesionálů, která poskytuje přístup k nejlepším talentům. Microsoft Dynamics 365 Talent: Attract vám umožní zdrojovat kandidáty přímo z LinkedIn. Proto je snazší než kdykoli dříve najít talenty, které potřebujete k obsazení otevřených pozic. Po nastavení připojení k LinkedIn prostřednictvím Attract můžete zobrazit potenciální kandidáty na LinkedIn a exportovat je do aplikace jediným kliknutím.
 
@@ -100,12 +101,12 @@ Pokud kandidáti souhlasí se sdílením svého LinkedIn profilu s libovolným u
 
 ## <a name="see-also"></a>Viz také
 
-[Často kladené otázky k řešení LinkedIn](./attract-linkedin-faq.md)
+[Časté dotazy týkající se integrace Attract s řešením LinkedIn](./attract-linkedin-faq.md)
 
-[Nastavení integrace s řešením LinkedIn](./attract-admin-linkedin.md)
+[Nastavení integrace s řešením LinkedIn pro aplikaci Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Vytvoření prací](./creating-jobs-attract.md)
+[Vytvoření, schválení a zveřejnění pracovních míst v aplikaci Attract](./creating-jobs-attract.md)
 
-[Publikování pracovních míst na LinkedIn z aplikace Attract](./attract-post-jobs-to-linkedin.md)
+[Publikování pracovních míst na LinkedIn z aplikace Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Odstraňování potíží s integrací s řešením LinkedIn](./attract-troubleshoot-linkedin.md)
+[Odstraňování problémů s integrací s LinkedIn a aplikací Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5b52e1765d3afbe1730e96f58b601aebccd12787
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7154a6e8aff62b1ebf79edfecb1e1b99048f7c44
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181259"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771462"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -122,7 +122,7 @@ Nastavíte-li **Povoleno** na **Ano**, vytvoří se náhled výstupu. Některé 
 
 ### <a name="power-bi-destination"></a>Cíl Power BI
 
-Nastavte **Povoleno** na **Ano** pro použití vaší konfigurace elektronického výkaznictví k uspořádání přenosu dat z instance do služeb Microsoft Power BI. Převedené soubory se ukládají na instanci serveru Microsoft SharePoint, který musí být konfigurován pro tento účel. Více informací získáte v části [Použití konfigurace elektronického výkaznictví k poskytnutí dat do Power BI z aplikace Finance](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+Nastavte **Povoleno** na **Ano** pro použití vaší konfigurace elektronického výkaznictví k uspořádání přenosu dat z instance do služeb Microsoft Power BI. Převedené soubory se ukládají na instanci serveru Microsoft SharePoint, který musí být konfigurován pro tento účel. Další informace získáte v tématu [Konfigurace elektronického výkaznictví (ER) pro doplňování dat do Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > Chcete-li přepsat výchozí chování (tj. dialogové okno pro konfiguraci), můžete vytvořit odkaz cíle a cíl souboru pro součást hlavního výstupu, a potom zakázat všechny cíle.

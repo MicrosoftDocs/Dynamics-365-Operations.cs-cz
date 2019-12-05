@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 733ecc7cfb4fee325560f5a6fe11612bb8ba57ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653595"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815288"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Dodavatelská spolupráce s externími dodavateli
 
@@ -218,7 +218,7 @@ Pokud používáte zásoby dodávky, dodavatelé mohou použít rozhraní spolup
 
 ## <a name="working-with-rfqs-when-you-use-vendor-collaboration"></a>Práce s požadavky na nabídku při použití dodavatelské spolupráce
 
-Tato část popisuje interakce mezi odběrateli a dodavateli při zpracování požadavku na nabídku. Také vysvětluje, jak jsou informace komunikovány dodavatelům. Základní přehled podpory pro zpracování požadavku na nabídku naleznete v tématu [Požadavky na nabídku](request-quotations.md).
+Tato část popisuje interakce mezi odběrateli a dodavateli při zpracování požadavku na nabídku. Také vysvětluje, jak jsou informace komunikovány dodavatelům. Základní přehled podpory pro zpracování požadavku na nabídku naleznete v tématu [Přehled požadavků na nabídku (RFQ)](request-quotations.md).
 
 ### <a name="alternates-attachments-amendments-and-returns"></a>Alternativy, přílohy, dodatky a vrácení
 

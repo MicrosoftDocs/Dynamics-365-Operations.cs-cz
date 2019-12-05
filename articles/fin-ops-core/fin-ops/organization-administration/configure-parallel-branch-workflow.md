@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2339c6f901a3ef39ad4f9586b2f391b966a3df98
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2058eaac77282946559cae11fcec8152658fc96b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190136"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811350"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>Konfigurace paralelních větví ve workflow
 
@@ -46,8 +46,8 @@ Pomocí následujících kroků zadejte název paralelní větve.
 Pomocí následujících kroků navrhněte a nakonfigurujte prvky této paralelní větve.
 
 1. Dvakrát klikněte na paralelní větev.
-2. Přetáhněte prvky workflowu na plátno a nakonfigurujte prvky, jako byste chtěli vytvořit jakýkoliv jiný workflow. Další informace naleznete v tématu [Vytvoření workflowu](create-workflow.md).
+2. Přetáhněte prvky workflowu na plátno a nakonfigurujte prvky, jako byste chtěli vytvořit jakýkoliv jiný workflow. Další informace naleznete v tématu [Přehled vytvoření workflow](create-workflow.md).
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Vytvoření workflow](create-workflow.md)
+[Přehled vytvoření workflow](create-workflow.md)

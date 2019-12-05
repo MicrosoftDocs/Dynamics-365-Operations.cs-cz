@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74750397dc344d74c018c27114357d3d05b95b7e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 89d36c305bc9210f7906cd4288e33e5028baecdb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550100"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771253"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Příprava metadat specifických pro aplikaci pro RCS a ER
 
@@ -43,7 +43,7 @@ V tomto příkladu chcete použít RCS pro návrh řešení ER pro aplikaci, kte
 > V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. Tyto kroky lze provést v libovolné společnosti.
 
 1. Přejděte do části **Správa organizace \> Pracovní prostory \> Elektronické výkaznictví**.
-2. Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md). 
+2. Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu [Vytvoření zprostředkovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md). 
 3. Vyberte **Konfigurace metadat**.
 4. Vyberte **Vytvořit konfiguraci**.
 5. V rozevíracím dialogovém okně do pole **Název** zadejte název. V tomto příkladu zadejte **metadata zahraničního obchodu**.
@@ -54,14 +54,14 @@ V tomto příkladu chcete použít RCS pro návrh řešení ER pro aplikaci, kte
     > [!NOTE]
     > Můžete vybrat všechna metadata buď pro celou aplikaci, nebo pro vybrané modely nebo moduly. V obou případech je třeba mít na paměti, že následující metadata budou automaticky přidána: tabulky záznamů, výčty a rozšířené datové typy (EDT). Pokud jsou požadovány další typy metadat, musí být přidány ručně.
 
-Je nutné přidat metadata, která se vztahují k transakcím zahraničního obchodu, a ručně vybrat položky metadat.
+    Je nutné přidat metadata, která se vztahují k transakcím zahraničního obchodu, a ručně vybrat položky metadat.
 
 9. Vyberte **Přidat zdroj dat \> Záznamy tabulky**.
 10. Vyfiltrujte hodnotu **Intrastat** v poli **Název**.
 11. Vyberte záznam tabulky **Intrastat**.
 12. Vyberte **OK**.
 
-Je nutné přidat informace o metadatech do tabulky záznamů Intrastat.
+    Je nutné přidat informace o metadatech do tabulky záznamů Intrastat.
 
 13. Ve stromové struktuře vyberte **Intrastat záznamů tabulky \> \>Vztahy \> IntrastatCommodity (záznamy tabulky EcoResCategory)**.
 14. Vyberte **Přidat metadata**.
@@ -95,11 +95,11 @@ Následující postup ukazuje, jak může uživatel RCS, který má roli **Sprá
 
 Než budete moci tuto proceduru dokončit, je nutné dokončit nejprve následující procedury:
 
-- [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md)
+- [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md)
 - [Příprava metadat aplikace k použití v RCS](#prepare-application-metadata-that-can-be-used-in-rcs)
 
 1. Přejděte na **Všechny pracovní prostory \> Elektronické výkaznictví**.
-2. Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md). 
+2. Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako **Aktivní**. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu [Vytvoření zprostředkovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md). 
 3. Importujte konfiguraci metadat ER obsahující metadata z aplikace, která je nakonfigurována pro generování elektronických dokumentů pro doménu zahraničního obchodu. Tato konfigurace metadat ER byla vytvořena a exportována jako soubor XML v proceduře [Příprava metadat aplikace, která lze použít v proceduře RCS](#prepare-application-metadata-that-can-be-used-in-rcs) dříve v tomto tématu.
 
     1. Vyberte **Konfigurace metadat**.
@@ -201,7 +201,7 @@ Podle požadavku můžete rozšířit existující sadu metadat v aplikaci Poté
 
 Následující postup ukazuje, jak může uživatel RCS, který má roli **Správce systému** nebo **Vývojář elektronického výkaznictví**, navrhnout nové mapování modelu ER pomocí metadat aplikace. Přístup k metadatům aplikace bude probíhat online pomocí aplikace připojené k RCS. Ukázkové mapování modelu ER bude konfigurováno pro přístup k transakcím zahraničního obchodu.
 
-K provedení kroků v tomto postupu musíte nejprve dokončit proceduru [Vytvoření poskytovatele konfigurace a jeho označení jako aktivního](tasks/er-configuration-provider-mark-it-active-2016-11.md) v RCS. Pokud jste nedokončili kroky uvedené v tématu [Přístup k metadatům aplikace pomocí konfigurace ER](#access-application-metadata-by-using-an-er-configuration), přejděte na stránku [Příklady elektronického výkaznictví Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) a stáhněte a uložte následující konfigurace ER a uložte je místně: **Foreign trade metadata.xml**, **Foreign trade model.xml** a **Foreign trade mapping.xml**.
+K provedení kroků v tomto postupu musíte nejprve dokončit proceduru [Vytvoření zprostředkovatelů konfigurace a jejich označení jako aktivních](tasks/er-configuration-provider-mark-it-active-2016-11.md) v RCS. Pokud jste nedokončili kroky uvedené v tématu [Přístup k metadatům aplikace pomocí konfigurace ER](#access-application-metadata-by-using-an-er-configuration), přejděte na stránku [Příklady elektronického výkaznictví Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) a stáhněte a uložte následující konfigurace ER a uložte je místně: **Foreign trade metadata.xml**, **Foreign trade model.xml** a **Foreign trade mapping.xml**.
 
 
 ### <a name="get-required-er-configurations"></a>Získání požadovaných konfigurací ER

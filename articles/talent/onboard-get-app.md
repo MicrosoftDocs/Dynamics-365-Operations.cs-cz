@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 28ed12bd8cf2df7c25e14a25465cad1229676cfd
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5849de38962967f0614ff7afd40296c0f12ff476
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551972"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812849"
 ---
 # <a name="get-the-dynamics-365-talent---onboard-app"></a>Získání aplikace Dynamics 365 Talent - Onboard
 
@@ -39,9 +39,9 @@ Během procesu zkušebního období nebo nákupu nastavíte e-mailovou adresu a 
 > [!WARNING]
 > Nelze migrovat data ze zkušební verze do prostředí placeného předplatného. <!--Reviewers: please verify.-->
 
-Další informace o nových funkcích v aplikaci Talent získáte v části [Co je nového nebo změněného v aplikaci Dynamics 365 Talent](./whats-new.md) a [Poznámky k verzi Dynamics 365 a Power Platform](https://docs.microsoft.com/business-applications-release-notes/index). Chcete-li zobrazit náhled nových funkcí v aplikaci Onboard, viz [Přístup k funkcím náhledu aplikace Talent](./access-preview-feature.md).
+Další informace o nových funkcích v aplikaci Talent získáte v části [Co je nového nebo změněného v aplikaci Dynamics 365 Talent](./whats-new.md) a [Poznámky k verzi Dynamics 365 a Power Platform](https://docs.microsoft.com/business-applications-release-notes/index). Chcete-li zobrazit náhled nových funkcí v aplikaci Onboard, získáte informace v tématu [Přístup k funkcím náhledu aplikace Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
-Pokud jste odborník na IT a chcete se dozvědět více o tom, jak jsou tyto dvě verze aplikace Onboard zřizovány, získáte informace v části [Zřizování pro aplikaci Onboard](./modular-app-tech-faq.md).
+Pokud jste odborník na IT a chcete se dozvědět více o tom, jak jsou tyto dvě verze aplikace Onboard zřizovány, získáte informace v části [Zřizování pro aplikaci Dynamics 365 Talent - Onboard](./modular-app-tech-faq.md).
 
 ## <a name="get-started-with-onboard"></a>Začínáme s aplikací Onboard
 
@@ -89,6 +89,6 @@ Pokud jste při přihlášení do aplikace Onboard přijali výchozí název dom
 ### <a name="see-also"></a>Viz také
 
 - [Vyzkoušejte nebo kupte aplikaci Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Novinky](./whats-new.md)
-- [Poznámky k verzi](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Získání podpory](./talent-support.md)
+- [Co je nového a co se změnilo v aplikaci Dynamics 365 Talent](./whats-new.md)
+- [Plány vydání](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Získání podpory pro Microsoft Dynamics 365 Talent](./talent-support.md)

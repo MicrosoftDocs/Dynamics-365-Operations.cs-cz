@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2a5da707069966ea0dac282b2a0b2074ec5a41ff
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570994"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812230"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorie typů práce údržby, typy práce údržby , varianty typů práce údržby, obory práce údržby a kontrolní seznamy údržby
 
@@ -33,7 +33,7 @@ ms.locfileid: "2570994"
 
 Typ majetku je připojen ke každému majetku. Typy majetku definují typy práce údržby (a tudíž i práce údržby), které lze provést na majetku. Při vytvoření pracovního příkazu musíte vybrat typ práce údržby. Můžete vybrat pouze typy prací údržby, které souvisí s nastavením typu majetku použitém pro daný majetek.
 
-Grafický přehled položek majetku a typů prací údržby a jejich propojení s pracovními příkazy naleznete v tématu [Majetek a pracovní příkazy](../overview/functional-locations-and-objects.md).
+Grafický přehled položek majetku a typů prací údržby a jejich propojení s pracovními příkazy naleznete v tématu [Funkční místa a majetek](../overview/functional-locations-and-objects.md).
 
 Pro typ práce údržby lze nastavit varianty typu práce údržby. Varianty typu práce údržby definují varianty typu práce, například z hlediska velikosti (malá, střední nebo velká), období (týdně, obtýden, měsíčně nebo každé tři měsíce) a konfigurace (nízký standard, pružná nebo vysoký výkon).
 

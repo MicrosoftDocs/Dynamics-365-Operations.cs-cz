@@ -1,5 +1,5 @@
 ---
-title: Plánování pohovoru a zpětná vazba
+title: Plánování pohovorů v aplikaci Attract
 description: Toto téma poskytuje informace o plánování pohovoru a aktivitách zpětné vazby v aplikaci Attract.
 author: hasrivas
 manager: AnnBe
@@ -14,16 +14,16 @@ ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
-ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 33eba9796ca997fde4be9a46050207d313551bde
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517511"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832738"
 ---
-# <a name="interview-scheduling-and-feedback"></a>Plánování pohovoru a zpětná vazba
+# <a name="schedule-interviews-in-attract"></a>Plánování pohovorů v aplikaci Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="scheduler-activity"></a>Aktivita plánovače
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9c177f7a7b713e7b8490b718650daafeca0e937
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d84e3ed050bacf7632d03cf0123f682c43fd7b58
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189377"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772736"
 ---
 # <a name="three-way-matching-policies"></a>Zásady třícestného párování
 
@@ -141,7 +141,7 @@ Mějte na paměti následující body:
 Pokud je schválení vyžadováno u faktur, které mají být zaúčtovány s odlišnostmi v párování faktur, je nutné vybrat možnost Schválit zaúčtování s odpovídajícími odlišnostmi na stránce Podrobnosti o párování faktur dříve, než bude možné zaúčtovat fakturu s chybou v párování ceny nebo párování množství. Pokud schválení není vyžadováno, zpracování faktury může pokračovat, pokud neexistují žádné chyby v zaúčtování.
 
 
-Další informace naleznete v tématu [Nastavení párování faktur závazků](accounts-payable-invoice-matching.md).
+Další informace naleznete v tématu [Přehled párování faktur závazků](accounts-payable-invoice-matching.md).
 
 
 

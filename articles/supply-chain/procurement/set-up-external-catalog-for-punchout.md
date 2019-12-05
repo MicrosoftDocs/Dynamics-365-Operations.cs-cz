@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1bddb65fd5fd73e879d8a95decc9f3e4f7f37e4
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: abf574293dac634bb4b4f6adc95b4598a66ed264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653434"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813286"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Nastavení externího katalogu pro funkci PunchOut eProcurement
 
@@ -43,7 +43,7 @@ Externí katalog by měl zaměstnanci, který zadá nákupní žádanku, umožni
 
 1. Nastavte hierarchii kategorií zásobování. Další informace o tom, jak nastavit hierarchii kategorií zásobování, najdete v tématu [Nastavení zásad pro hierarchie kategorie nákupu](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Zaregistrujte dodavatele v aplikaci Supply Chain Management. Dříve, než budete moci nastavit konfigurace pro přístup k externímu katalogu dodavatele, musíte nastavit dodavatele a kontakty dodavatele v aplikaci Microsoft Dynamics 365. Navíc musí být dodavatel externího katalogu přidán do vybrané kategorie zásobování. Další informace o registraci dodavatelů naleznete v tématu [Správa uživatelů pro spolupráci dodavatele](manage-vendor-collaboration-users.md). Informace o postupu při přidělování dodavatelů ke kategorii zásobování získáte v tématu [Schválení dodavatelů pro konkrétní kategorie zásobování](tasks/approve-vendors-specific-procurement-categories.md).
-3. Musí být nastavené měrné jednotky a měna používané dodavatelem. Pro informaci, jak vytvořit měrnou jednotku, přejděte na [Správa měrných jednotek](../pim/tasks/manage-unit-measure.md).
+3. Musí být nastavené měrné jednotky a měna používané dodavatelem. Pro informaci, jak vytvořit měrnou jednotku, přejděte na [Správa měrné jednotky](../pim/tasks/manage-unit-measure.md).
 4. Nakonfigurujte katalog externích dodavatelů na základě požadavků webu katalogu externích dodavatelů. Další informace o této úloze naleznete v části [Konfigurace katalogu externího dodavatele](#configure-the-external-vendor-catalog).
 5. Otestujte konfigurace katalogu externích dodavatelů k ověření, že nastavení jsou platná a máte přístup k externímu katalogu dodavatele. Pomocí akce **Ověřit nastavení** ověřte zprávu o nastavení požadavku, kterou jste definovali. Tato zpráva by měla zajistit, že se web externího katalogu otevře v novém okně prohlížeče. Při ověřování nelze objednávat položky a služby od dodavatele. Chcete-li objednat položky a služby, je nutné přejít ke katalogu dodavatele z nákupní žádanky.
 6. Aktivujte externí katalog tlačítkem **Aktivovat katalog** na stránce **Externí katalogy**. Externí katalog musí být aktivován před tím, než ho můžou používat zaměstnanci. Externí katalog lze kdykoli deaktivovat.

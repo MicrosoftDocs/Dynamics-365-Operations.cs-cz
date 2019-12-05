@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 50059f7e73f7e3a021cde068a4544746b24c4b49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a829c5b49292a4b14306dd9b851e082320e5e6c9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183494"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773417"
 ---
 # <a name="advance-holder-transactions"></a>Transakce držitelů záloh
 
@@ -35,13 +35,13 @@ Transakce pro tyto pracovníky, kteří jsou držitelé zálohy, mohou být zaú
 ## <a name="create-and-post-a-purchase-order-with-advance-holder-details"></a>Tvorba a zaúčtování nákupních objednávek s podrobnostmi o držiteli zálohy
 Další obecné informace o nákupních objednávkách naleznete v tématu [Přehled nákupních objednávek](../../supply-chain/procurement/purchase-order-overview.md). Pokud je faktura dodavatele vytvořena a zaúčtována s podrobnostmi držitele zálohy, zůstatky držitele zálohy budou zaúčtovány do účtu zůstatku zaměstnance namísto do účtu zůstatku dodavatele. Chcete-li přidat podrobnosti držitele zálohy k nákupní objednávce, postupujte takto:
 
--   V poli **Platební podmínky** v části **Ceny a slevy** vyberte platební podmínku. <!---For more information about **Terms of payment**, see [Define vendor payment terms](../accounts-payable/tasks/define-vendor-payment-terms.md).--> Vyberte platební podmínku, která má na stránce **Platební podmínky** vybranou možnost **Od držitele zálohy**. Další informace o nastavení platebních podmínek pro držitele záloh naleznete v tématu [Držitelé zálohy](emea-advance-holders.md).
+-   V poli **Platební podmínky** v části **Ceny a slevy** vyberte platební podmínku. <!---For more information about **Terms of payment**, see [Define vendor payment terms](../accounts-payable/tasks/define-vendor-payment-terms.md).--> Vyberte platební podmínku, která má na stránce **Platební podmínky** vybranou možnost **Od držitele zálohy**. Další informace o nastavení platebních podmínek pro držitele záloh naleznete v tématu [Přehled držitelů zálohy](emea-advance-holders.md).
 -   V poli **Držitel zálohy** na pevné záložce **Ceny a slevy** vyberte držitele zálohy pro nákupní objednávku.
 
 Proces zaúčtování nákupní objednávky vytvoří dvě transakce dodavatele s opačným částkami a jednu transakci držitele zálohy. Bez podrobností držitele zálohy je vytvořena pouze jedna transakce dodavatele.
 
 ## <a name="settle-advance-holder-balances-via-a-bank"></a>Vyrovnání zůstatků držitele zálohy prostřednictvím banky
-Když vyrovnáte zůstatky držitelů záloh prostřednictvím banky, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvořeny v hlavním deníku. Můžete nastavit kód pro deník a banky v části **Držitelé záloh** na stránce **Parametry závazků**. Další informace naleznete v tématu [Držitelé záloh](emea-advance-holders.md). Pro uzavření zůstatku držitele zálohy prostřednictvím banky, otevřete **Závazky**&gt;**Držitelé záloh**&gt;**Držitelé záloh**. Klikněte na tlačítko **Zůstatek** v podokně akcí a pak klikněte na tlačítko **Uzavřít v bance**. Na stránce **Uzavřít v bance** zadejte následující informace.
+Když vyrovnáte zůstatky držitelů záloh prostřednictvím banky, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvořeny v hlavním deníku. Můžete nastavit kód pro deník a banky v části **Držitelé záloh** na stránce **Parametry závazků**. Další informace naleznete v tématu [Přehled držitelů zálohy](emea-advance-holders.md). Pro uzavření zůstatku držitele zálohy prostřednictvím banky, otevřete **Závazky**&gt;**Držitelé záloh**&gt;**Držitelé záloh**. Klikněte na tlačítko **Zůstatek** v podokně akcí a pak klikněte na tlačítko **Uzavřít v bance**. Na stránce **Uzavřít v bance** zadejte následující informace.
 
 | Pole                    | popis |
 |------------------------------|-------------------|
@@ -50,7 +50,7 @@ Když vyrovnáte zůstatky držitelů záloh prostřednictvím banky, položky d
 | **Automaticky**                | Vyberte zaškrtávací políčko **Automaticky** pro vytvoření a zaúčtování deníku, který je přednastavený na stránce **Parametry závazků**.|
 
 ## <a name="settle-advance-holder-balances-via-cash"></a>Vyrovnání zůstatků držitele zálohy prostřednictvím hotovosti
-Když vyrovnáte zůstatky držitelů záloh prostřednictvím hotovosti, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvořeny v deníku dokladů. Můžete nastavit kód pro deník a hotovost na kartě **Držitelé záloh** na stránce **Parametry závazků**. Další informace naleznete v tématu [Držitelé záloh](emea-advance-holders.md). Pro uzavření zůstatku držitele zálohy prostřednictvím hotovosti, otevřete **Závazky**&gt;**Držitelé záloh**&gt;**Držitelé záloh**. Klikněte na tlačítko **Zůstatek** v podokně akcí a pak klikněte na tlačítko **Uzavřít v hotovosti**. Na stránce **Uzavřít v hotovosti** zadejte následující informace.
+Když vyrovnáte zůstatky držitelů záloh prostřednictvím hotovosti, položky deníku pro uzavření zůstatků držitele zálohy jsou vytvořeny v deníku dokladů. Můžete nastavit kód pro deník a hotovost na kartě **Držitelé záloh** na stránce **Parametry závazků**. Další informace naleznete v tématu [Přehled držitelů zálohy](emea-advance-holders.md). Pro uzavření zůstatku držitele zálohy prostřednictvím hotovosti, otevřete **Závazky**&gt;**Držitelé záloh**&gt;**Držitelé záloh**. Klikněte na tlačítko **Zůstatek** v podokně akcí a pak klikněte na tlačítko **Uzavřít v hotovosti**. Na stránce **Uzavřít v hotovosti** zadejte následující informace.
 
 | Pole                    | popis
 |------------------------------|-----------------|

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a06224e4babab8315ebd9de34e7ada570564e8ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 464fd211eb5417265f8c737b23456769137a7c13
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188618"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772667"
 ---
 # <a name="budget-control-overview"></a>Přehled kontroly rozpočtu
 
@@ -42,7 +42,7 @@ Výdaje lze zaznamenat pomocí hlavních účtů a finančních dimenzí. Může
 
 Následující graf znázorňuje místo kontroly rozpočtu ve fázích typického rozpočtového cyklu.
 
-[![Rozpočtový cyklus](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
+[![Typický cyklus rozpočtování](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
 
 Můžete konfigurovat kontrolu rozpočtu podle několika faktorů:
 

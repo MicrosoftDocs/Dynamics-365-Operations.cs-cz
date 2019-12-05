@@ -3,7 +3,7 @@ title: Odložené zpracování práce skladu
 description: Toto téma popisuje funkci, která umožňuje odložené zpracování operací vložení práce v aplikaci Dynamics 365 Supply Chain Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b67b3899a506c02b581d04f51691cb4408ee012e
+ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026907"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815781"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Odložené zpracování práce skladu
 
@@ -30,7 +30,6 @@ ms.locfileid: "2026907"
 [!include [banner](../includes/pivate-preview-banner.md)]
 
 Toto téma popisuje funkci, která umožňuje odložené zpracování operací vložení práce u skladové práce dostupné v aplikaci Dynamics 365 Supply Chain Management.
-
 
 Funkce odloženého zpracování umožňují pracovníkům skladu pokračovat v práci i v době, kdy na pozadí běží operace vložení. Odložené zpracování je užitečné, pokud je nutné zpracovat mnoho řádků práce a pracovník může nechat zpracování běžet asynchronně. Je také užitečná v případě, kdy server může mít v době zpracování ad hoc nebo neplánovaný nárůst doby zpracování a ta může ovlivnit produktivitu uživatele.
 
@@ -50,6 +49,8 @@ Zásady jsou konfigurovány na stránce **Zásady zpracování pracovních postu
 | Metoda zpracování práce          | Metoda používaná pro zpracování řádku práce. Pokud je metoda nastavena na **Okamžitě**, chování se podobá chování, když pro zpracování řádku nejsou použity žádné zásady zpracování práce. Je-li metoda nastavena na **odloženo**, použije se odložené zpracování využívající dávkový systém. |
 | Prahová hodnota odloženého zpracování   | Hodnota **0** (nula) označuje, že neexistuje žádná prahová hodnota. V tomto případě se použije odložené zpracování, pokud jej lze použít. Pokud je výpočet specifické prahové hodnoty nižší než práh, použije se metoda Immediate. V opačném případě se použije metoda odloženo, pokud ji lze použít. V případě práce související s prodejem a převodem je prahová hodnota vypočtena jako počet přidružených řádků zatížení zdroje, které jsou pro práci zpracovávány. Pro práci doplnění se práh vypočítá jako počet řádků práce, které jsou doplněny prací. Nastavením prahové hodnoty, například **5** pro prodej, nebudou menší práce, které mají méně než pět počátečních zdrojových řádků vytížení, používat odložené zpracování, ale větší práce jej budou používat. Prahová hodnota se uplatní pouze v případě, že je metoda zpracování práce nastavena na hodnotu **Odloženo**. |
 | Skupina dávky odloženého zpracování |Skupina dávky používaná pro úlohy zpracování vlny. |
+
+Pro odložené úlohy zpracování jsou podporovány následující typy pracovních příkazů: prodejní objednávka, výdej převodního příkazu a doplnění.
 
 ## <a name="assigning-the-work-creation-policy"></a>Přiřazení zásad vytváření pracovních míst
 
@@ -99,7 +100,7 @@ Existuje několik scénářů, kdy odložené zpracování není použito, i kdy
 - Použije se ruční doplňování práce.
 - Práce je dokončena pomocí automatického dokončování.
 - Používají se šablony auditu.
-- Práce používá kontejnery.
+
 
 ## <a name="monitoring-the-deferred-processing-tasks-from-the-outbound-work-monitoring-workspace"></a>Sledování úkolů odloženého zpracování z pracovního prostoru Sledování odchozích prací
 

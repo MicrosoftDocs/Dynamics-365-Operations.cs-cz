@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 039b5d7ace19fa93e6db4920153f4a1a67519c85
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d5bae90cf7c8f11fa5409014023d36cc68ae1bd0
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176820"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770866"
 ---
 # <a name="position-forecasting"></a>Prognóza pozice
 
@@ -33,7 +33,7 @@ Výdaje, které souvisejí s pracovníky, často tvoří velkou část nákladů
 
 ## <a name="position-forecasting-in-budget-planning"></a>Prognóza pozic v plánování rozpočtu
 
-[![Grafika nahoře](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Součásti prognózy pozic](./media/graphic-top.png)](./media/graphic-top.png) 
 
 Prognóza pozic používá tři hlavní složky pro zajištění přesných rozpočtových částek pro výdaje na pozice. Tyto částky mohou být potom přeneseny do plánu rozpočtu pro výpočty rozpočtu. 
 
@@ -45,14 +45,14 @@ Primární komponenta je **prognóza pozice**, která představuje všechna data
 
 ### <a name="position-forecasting-processes"></a>Zpracování prognózy pozic
 
-[![graphic1b](./media/graphic1b.png)](./media/graphic1b.png) 
+[![Ilustrace procesů prognózy pozice](./media/graphic1b.png)](./media/graphic1b.png) 
 
 V typickém procesu prognózy pozic nejprve vytvoříte součásti nastavení (prvky rozpočtových nákladů a skupiny kompenzací). Pozice prognóz, které se pak vytvoří, jsou založené na existujících pozicích. Poté můžete provést úpravy. Můžete například přidat nebo ukončit pozice, změnit mzdové sazby a náklady na zaměstnanecké výhody a přidat zvyšování mzdy. Můžete vytvořit více verzí prognózy pozic a usnadnit tak porovnání různých scénářů rozpočtování. Dále lze zahrnout pozice prognózy do plánů rozpočtu a přinést náklady z pozic prognózy jako řádky plánu rozpočtu.
 
 Můžete vytvořit další verze pozic prognózy v rámci revize plánů rozpočtu. Tyto nové verze poskytují základ pro revize.
 
 ## <a name="position-forecasting-setup"></a>Nastavení prognózy pozic
-[![graphic2](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![Ilustrace zvýrazňující nastavení](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>Prvky rozpočtových nákladů
 
@@ -89,7 +89,7 @@ Pole **Plán zvýšení** a **Datum zvýšení** ve skupině kompenzací se pou�
 Nákladový prvek příjmů vybraný ve skupině kompenzací se používá při vytváření příjmů pro pozice prognózy ve skupině, včetně základní mzdy a jakéhokoli zvýšení kroku. Pole **Plán fixní kompenzace** odkazuje skupinu kompenzací na plán fixních kompenzací v modulu Lidské zdroje. Tento odkaz umožňuje přiřadit informace o fixní kompenzaci pracovníka k pozici prognózy a proto umožňuje provádět plánování rozpočtu přesněji. Mějte na paměti, že struktura kompenzační mřížky (úrovně a kroky) pro skupinu kompenzací musí odpovídat struktuře plánu fixní kompenzace. V opačném případě systém nemůže správně propojit skupinu kompenzací s plánem fixní kompenzace.
 
 ## <a name="creating-forecast-positions"></a>Vytváření pozic prognózy
-[![graphic3](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![Ilustrace zvýrazňující "vytvoření pozic prognózy"](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Vytváření pozic prognózy pro existující pozice
 
@@ -105,7 +105,7 @@ Pokud je možnost **Přiřadit skupinu kompenzací** nastavena na **Ano** a poku
 
 Nastavení možnosti **Přiřadit skupinu kompenzací** má přednost před nastavením **Přiřazení prvku rozpočtových nákladů**. Tato dvě nastavení lze použít současně. 
 
-[![graphic4](./media/graphic4.png)](./media/graphic4.png) 
+[![Graf Přiřadit skupinu kompenzací](./media/graphic4.png)](./media/graphic4.png) 
 
 Další možností je přiřadit datum výročí. Vybrané datum (upravené datum zahájení, počáteční datum pracovníka, počátečním datum zaměstnání nebo datum zahájení služebního věku) přiřazeného pracovníka je nastaveno jako datum výročí pozice prognózy a slouží pouze pro informativní účely při vygenerování navýšení platby.
 
@@ -118,7 +118,7 @@ Pokud je vybrána pozice prognózy, výběrem možnosti **Kopírovat vybranou po
 Také můžete vytvořit zcela novou pozici prognózy. Vyberte existující úlohu a dále vyberte proces plánování rozpočtu a scénář plánu rozpočtu. Poté můžete přidat další podrobnosti, které chcete přidat. Zároveň se znovu vytvoří nová pozice v modulu Lidské zdroje.
 
 ## <a name="working-with-forecast-positions"></a>Práce s pozicemi prognózy
-[![graphic5](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![Ilustrace zvýrazňující "modifikace pozic prognózy"](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>Více verzí pozice prognózy
 
@@ -174,7 +174,7 @@ Proces přepočtu je automaticky použit pro všechny pozice prognózy, které s
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>Uvedení pozic prognózy do plánů rozpočtu
 
-[![graphic6](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![Ilustrace zvýraznění "přidání do plánu rozpočtu"](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Účelem vytváření a úpravy pozic prognózy je jejich přidání k plánům rozpočtu tak, aby plány rozpočtu zahrnovaly nejaktuálnější částky rozpočtu. Existují dvě metody přidání pozic prognózy k plánům rozpočtu. Můžete použít proces generování nebo proces výběru pro plán rozpočtu.
 

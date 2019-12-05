@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb318c24424c291f08ba7527b2258c0da4cba9a8
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 53100a897dc71758b8920672fea1e684817cb4b7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571661"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812276"
 ---
 # <a name="inbound-and-outbound-assets"></a>Příchozí a odchozí majetek
 
@@ -34,7 +34,7 @@ ms.locfileid: "2571661"
 Pokud vaše společnost provádí úlohy oprav nebo údržby u majetku, který byl přijat z jiných míst nebo od jiných zákazníků, může správa majetku sledovat jak vstupní majetek, který je na cestě do vaší firmy, a příchozí majetek, který se vrací.
 
 > [!NOTE]
-> Pokud chcete použít příchozí a odchozí stavy životního cyklu pro správu majetku, který přichází nebo se vrací, musíte pro podporu těchto akcí nastavit stavy životního cyklu požadavků na údržbu a modely životního cyklu. Další informace naleznete v tématu [Nastavení pro požadavky na údržbu](../setup-for-maintenance-requests/requests.md).
+> Pokud chcete použít příchozí a odchozí stavy životního cyklu pro správu majetku, který přichází nebo se vrací, musíte pro podporu těchto akcí nastavit stavy životního cyklu požadavků na údržbu a modely životního cyklu. Další informace naleznete v tématu [Požadavky na údržbu](../setup-for-maintenance-requests/requests.md).
 
 Nastavení správy majetku určuje, zda můžete pracovat s příchozím nebo odchozím majetkem.
 

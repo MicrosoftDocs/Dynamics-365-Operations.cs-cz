@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4ef97d30ca2d8a9c27ce656c82d2a415682ce075
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551216"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773424"
 ---
 # <a name="import-iso20022-files"></a>Import souborů ISO20022
 
@@ -49,7 +49,7 @@ Import zpráv s bankovními oznámeními ve formátu camt.054.001.002 do deníku
 
     - V poli **Platby odběratele, délky účtu** zadejte délku kódu odběratele, který se používá v referencích ISR nebo pro automatickou identifikaci odběratele.
     - Ujistěte se, že číslo odběratele a čísla faktury (číselné řady) obsahují pouze číslice. Nesmí obsahovat žádné jiné znaky. Číslo faktury nesmí obsahovat počáteční nuly.
-    - Zadejte ESR, BESR a směrové číslo pro bankovní účet pro právní subjekt. Další informace naleznete v tématu [starší funkce ESR](emea-che-esr-customer-payments-import.md), protože jsou požadována podobná nastavení.
+    - Zadejte ESR, BESR a směrové číslo pro bankovní účet pro právní subjekt. Další informace naleznete v tématu [import plateb odběratelů ESR](emea-che-esr-customer-payments-import.md), protože jsou požadována podobná nastavení.
     
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Import souboru kreditního avíza camt.054 do deníku plateb odběratele
 1. Na stránce **Řádky deníku plateb odběratele** klikněte na **Funkce** > **Import plateb**.
@@ -127,5 +127,5 @@ Další informace o elektronickém výkaznictví naleznete v tématu [Přehled e
 - [Nastavení bankovních účtů společnosti pro přímé debety ve formátu ISO20022](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
 - [Nastavení bankovních účtů odběratelů a zákazníků pro přímé debety ve formátu ISO20022](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
 - [Nastavení způsobu platby pro převody kreditu ve formátu ISO20022](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
-- [Nastavení způsobu platby pro přímý debet ve formátu ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Nastavení způsobu platby pro přímý debet ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Nastavení dodavatelů a bankovních účtů dodavatelů pro převody kreditu ve formátu ISO20022](./tasks/set-up-vendor-iso20022-credit-transfers.md)

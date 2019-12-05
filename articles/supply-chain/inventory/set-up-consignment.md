@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 24500ff46cc77ca8fa59c0c16427d9f05f33a87e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 04b3fb3038a1373e203ec240a0163cf67de655cc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549978"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813828"
 ---
 # <a name="set-up-consignment"></a>Konfigurace zásilky
 
@@ -31,7 +31,7 @@ ms.locfileid: "1549978"
 
 Toto téma vysvětluje, jak nakonfigurovat operace příchozí skladové zásilky.
 
-Zásoby dodávky jsou zásoby, které vlastní dodavatel, ale jsou uloženy ve vaší společnosti. Až budete připraveni spotřebovat nebo použít zásoby, převezmete vlastnictví zásob. Toto téma popisuje potřebné nastavení pro umožnění procesy dodávky. Další informace o procesech dodávek naleznete v tématu [Zásilka](consignment.md).
+Zásoby dodávky jsou zásoby, které vlastní dodavatel, ale jsou uloženy ve vaší společnosti. Až budete připraveni spotřebovat nebo použít zásoby, převezmete vlastnictví zásob. Toto téma popisuje potřebné nastavení pro umožnění procesy dodávky. Další informace o procesech dodávek naleznete v tématu [Nastavení zásilky](consignment.md).
 
 ## <a name="inventory-owners"></a>Vlastníci zásob
 Aby bylo možné zaznamenat fyzickou zásilku zásob, je třeba definovat dodavatele vlastníka. To se provádí na stránce **Vlastník zásob**. Při výběru **Účet dodavatele** se generují výchozí hodnoty pro pole **Název** a **Vlastník**. Hodnota v poli **Vlastník** se zobrazí dodavateli, takže ji můžete změnit v případě, že název účtu dodavatele se špatně rozpoznává externím uživatelům. Je možné upravit pole **Vlastník**, ale pouze do okamžiku, když ukládáte záznam **Vlastník zásob**. Pole **Název** se vyplňuje s názvem strany, k níž je přidružen účet dodavatele, a nemůže být změněno.
@@ -49,4 +49,4 @@ Deník **Změny vlastnictví zásob**se používá k zaznamenání k přesunu vl
 [![Deník-změn-vlastnictví-zásob](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Dodavatelská spolupráce v procesech zásilky
-Pokud vaši dodavatelé využívají rozhraní dodavatelské spolupráce, mohou ho využívat ke sledování spotřeby zásob vaší společnosti. Další informace o nastavení dodavatelů pro použití dodavatelské spolupráce naleznete v tématu [Konfigurace zabezpečení pro uživatele portálu Spolupráce dodavatele](../procurement/configure-security-vendor-portal-users.md).
+Pokud vaši dodavatelé využívají rozhraní dodavatelské spolupráce, mohou ho využívat ke sledování spotřeby zásob vaší společnosti. Další informace o nastavení dodavatelů pro použití dodavatelské spolupráce naleznete v tématu [Zabezpečení uživatele dodavatelského portálu](../procurement/configure-security-vendor-portal-users.md).
