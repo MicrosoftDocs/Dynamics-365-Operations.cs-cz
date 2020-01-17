@@ -8,6 +8,12 @@
         - name: Co je nového a co se změnilo v aplikaci Talent
           href: whats-new.md
           items:
+            - name: 17. prosince 2019
+              href: whats-new-talent-december-17-2019.md
+            - name: 12. prosince 2019
+              href: whats-new-talent-december-12-2019.md
+            - name: 3. prosince 2019
+              href: whats-new-talent-december-3-2019.md
             - name: 19. listopadu 2019
               href: whats-new-talent-november-19-2019.md
             - name: 12. listopadu 2019
@@ -26,16 +32,16 @@
               href: whats-new-talent-september-17-2019.md
             - name: 10. září 2019
               href: whats-new-talent-september-12-2019.md
-            - name: 27. srpna 2019
-              href: whats-new-talent-august-28-2019.md
-            - name: 22. srpna 2019
-              href: whats-new-talent-august-21-2019.md
-            - name: 13. srpna 2019
-              href: whats-new-talent-august-15-2019.md
-            - name: 6. srpna 2019
-              href: whats-new-talent-august-7-2019.md
             - name: Archivy novinek 2019
               items:
+                - name: 27. srpna 2019
+                  href: whats-new-talent-august-28-2019.md
+                - name: 22. srpna 2019
+                  href: whats-new-talent-august-21-2019.md
+                - name: 13. srpna 2019
+                  href: whats-new-talent-august-15-2019.md
+                - name: 6. srpna 2019
+                  href: whats-new-talent-august-7-2019.md
                 - name: 30. července 2019
                   href: whats-new-talent-july-31-2019.md
                 - name: 23. července 2019
@@ -134,47 +140,45 @@
           href: hr-copy-instance.md
         - name: Odstranění prostředí Talent
           href: remove-talent-environment.md
-        - name: Zřízení pro aplikaci Onboard
+        - name: Správa funkcí
+          href: access-preview-feature.md
+        - name: Zřízení aplikace Onboard
           href: modular-app-tech-faq.md
-        - name: Integrace aplikací PowerApps
+        - name: Integrace aplikací Power Apps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Core HR a Common Data Service
+        - name: Entity Core HR v Common Data Service
           href: CoreHREntities.md
         - name: Získání podpory pro Talent
           href: talent-support.md
     - name: Nabírání zaměstnanců do vaší organizace s aplikací Attract
       items:
-        - name: Která verze aplikace Attract?
+        - name: Volba verze aplikace Attract
           href: attract-comprehensive-hiring.md
         - name: Funkce a možnosti aplikace Attract
           href: attract-overview.md
-        - name: Časté dotazy
-          items:
-            - name: Integrace se službou LinkedIn - Často kladené dotazy
-              href: attract-linkedin-faq.md
         - name: Konfigurace nastavení systému
           items:
             - name: Konfigurace informací o společnosti
               href: admin-settings-attract.md
             - name: Nastavení oprávnění uživatele
               href: security-attract.md
-            - name: Správa funkcí
-              href: access-preview-feature.md
             - name: Nastavení kariérního webu
               href: career-site.md
             - name: Povolit integraci s Broadbean
               href: attract-admin-job-board-settings.md
             - name: Konfigurace nastavení e-mailu
               href: attract-configure-email-settings.md
-            - name: Nastavení integrace s řešením LinkedIn
+            - name: Nastavení integrace se službou LinkedIn
               href: attract-admin-linkedin.md
+            - name: Integrace se službou LinkedIn - Často kladené dotazy
+              href: attract-linkedin-faq.md
         - name: Vytvoření náborového procesu
           items:
-            - name: Vytvoření šablony procesu
+            - name: Vytvoření šablony procesu náboru
               href: process-templates-attract.md
-            - name: Aktivity v procesech náboru
+            - name: Přidání aktivit do procesu náboru
               href: activities-attract.md
-            - name: Šablony e-mailů
+            - name: Vytvoření šablon e-mailu
               href: email-templates.md
             - name: Použití analytických sestav
               href: analytic-reports.md
@@ -197,10 +201,10 @@
             - name: Sledování zdrojů kandidátů
               href: source-tracking.md
             - name: Chytrá doporučení
-              href: Intelligent-Recommendations.md
+              href: intelligent-recommendations.md
         - name: Nastavení pohovorů
           items:
-            - name: Plánování pohovoru a zpětná vazba
+            - name: Plánování pohovorů
               href: interview-scheduling-feedback.md
         - name: Vytvoření nabídky
           items:
@@ -433,7 +437,7 @@
       items:
         - name: "Power BI Embedded v\_pracovních prostorech"
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Rozšíření aplikace Talent pomocí PowerApps a Microsoft Flow - příkladové scénáře
+        - name: Rozšíření aplikace Talent o Power Apps a Power Automate
           href: extensibility-examples.md
         - name: Aplikace pro mobilní zařízení
           items:
@@ -443,8 +447,6 @@
                   href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Mobilní pracovní prostor Můj tým
                   href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Publikování mobilních pracovních prostorů
-              href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Sledování změn v náborových datech
           href: process-auditing.md
         - name: Rozšiřitelnost v aplikaci Attract
