@@ -46,7 +46,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/retail/toc.json
                 - name: Cloudové nasazení
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
-                - name: Systémové požadavky pro nasazení cloudu
+                - name: Systémové požadavky pro komponenty klienta Retail
                   href: get-started/system-requirements.md
                 - name: Místní nasazení
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
@@ -62,20 +62,14 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
             - name: Co je nového a co se změnilo
               items:
-                - name: Funkce Preview v Retail verzi 10.0.7
+                - name: Retail verze 10.0.7
                   href: get-started/whats-new-10-0-7.md
                 - name: Retail verze 10.0.6
                   href: get-started/whats-new-10-0-6.md
-                - name: Retail verze 10.0.5
-                  href: get-started/whats-new-10-0-5.md
                 - name: Co je nového a co se změnilo v předchozích verzích
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
-                    - name: Aplikace Finance and Operations 10.0.5 (říjen 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/retail/toc.json
-                    - name: 'Finance and Operations, 10.0.4 (červenec 2019)'
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/retail/toc.json
                     - name: 'Finance and Operations, Enterprise Edition 7.3'
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/retail/toc.json
                 - name: Odstraněné nebo zastaralé funkce
@@ -788,10 +782,8 @@
               href: ../supply-chain/pim/product-information.md?toc=/dynamics365/retail/toc.json
             - name: Hierarchie maloobchodu
               href: retail-hierarchies.md
-            - name: Atributy a skupiny atributů
+            - name: Správa atributů a skupin atributů
               href: attribute-attributegroups-lifecycle.md
-            - name: Vytvoření a správa atributů
-              href: create-manage-attributes.md
             - name: Nastavení maloobchodních produktů
               href: set-up-retail-products.md
             - name: Vytvoření produktu
@@ -1146,7 +1138,9 @@
               items:
                 - name: Funkce registrační pokladny
                   href: localizations/emea-swe-cash-registers.md
-                - name: Vzor pro integraci Retail POS s kontrolními jednotkami
+                - name: Ukázka integrace kontrolní jednotky pro Švédsko
+                  href: localizations/emea-swe-fi-sample.md
+                - name: Ukázka integrace Retail POS s kontrolními jednotkami (starší)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: "Úkoly v\_aplikaci Retail"
           items:
