@@ -3,7 +3,7 @@ title: Nastavení kanálů kontaktního střediska
 description: Toto téma poskytuje informace o zpracování objednávek pro kontaktní střediska pomocí aplikace Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 04/16/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4ebe25f91cd4228537254dc0b7891c8584981775
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024814"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934693"
 ---
 # <a name="set-up-call-center-channels"></a>Nastavení kanálů kontaktního střediska
 
@@ -81,3 +81,6 @@ Uživatelé, kteří nejsou spojení s kanálem kontaktního střediska, použí
 
 
 Po dokončení konfigurace kanálu kontaktního střediska a definování uživatelů kanálu k zajištění požadovaného chování systému se ujistěte, že všechny požadované parametry kontaktního střediska jsou definovány v možnostech **Retail** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Parametry kontaktního střediska**. Ujistěte se, že související číselné řady jsou rovněž definovány.
+
+> [!NOTE]
+> Chcete-li použít funkci kontaktního střediska, je nutné povolit konfigurační klíč **Více dodacích adres**. Tento konfigurační klíč je k dispozici v klíčích **Obchodní konfigurace** ve složce **Správa systému**\> **Nastavení** \> **Konfigurace licence**. To je vyžadováno z důvodu funkčnosti kontaktního střediska, která provádí různá ověření na základě dodací adresy nakonfigurované na úrovni řádku prodejní objednávky. 

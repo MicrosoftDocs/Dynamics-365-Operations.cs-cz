@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: abe921b8658322bcf77aeea8fa05843e539f97f8
+ms.sourcegitcommit: 523d22f31010339b4ff5b4fbe0a75aa909843ba6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813355"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902425"
 ---
 # <a name="purchase-agreements"></a>Nákupní smlouvy
 
@@ -36,7 +36,14 @@ Nákupní smlouvy lze použít pro určitý počet produktů, částku produktu 
 
 Na stránce **Nákupní smlouvy** můžete vytvořit, použít a zpracovat nákupní smlouvy, které existují mezi vaší organizací a dodavateli. Například po vytvoření nákupní smlouvy z ní můžete přímo objednávat. Každá nákupní smlouva má dobu platnosti definovanou uživatelem, který vytvořil nákupní smlouvu. Datum dodání nákupu musí spadat do doby platnosti.  
 
-Po vytvoření je nutné nákupní smlouvu aktivovat, aby se stala platnou. Aktivace nákupní smlouvy se provádí nastavením možnosti **Označit smlouvu jako platnou** na hodnotu **Ano**.
+Po vytvoření je nutné nákupní smlouvu aktivovat, aby se stala platnou. Aktivace nákupní smlouvy se provádí nastavením možnosti **Označit smlouvu jako platnou** na hodnotu **Ano**. 
+
+Chcete-li zabránit použití a potvrzení nákupní smlouvy, označte stav smlouvy jako **Uzavřený**. Stav můžete stále aktualizovat na **Platné** kdykoli po provedení této změny.
+
+## <a name="responsible-workers-on-purchase-agreements"></a>Odpovědní pracovníci v nákupních smlouvách
+
+Podle klasifikace nákupní smlouvy můžete určit primárního zodpovědného pracovníka a sekundárního odpovědného pracovníka. Tyto hodnoty budou zděděny výslednou nákupní smlouvou. Není nutné přidávat zodpovědné pracovníky do nákupní smlouvy a mohou být upraveny přímo pro jednotlivé případy na základě nákupní smlouvy. Nemůžete určit sekundárního zodpovědného pracovníka bez primárního odpovědného pracovníka, i když nemusíte mít sekundárního zodpovědného pracovníka. Stejného pracovníka nelze určit jako primárního i sekundárního odpovědného pracovníka. 
+
 
 ## <a name="commitment-types"></a>Typy závazků
 Každý řádek nákupní smlouvy vyjadřuje závazek koupit. Může používat řádky z více nákupních objednávek (NO), abyste splnili závazek. Existují čtyři typy závazků:

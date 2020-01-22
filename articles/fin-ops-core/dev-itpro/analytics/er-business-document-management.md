@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824513"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933901"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
 
-Podnikový uživatelů používá [přehled elektronického výkaznictví](general-electronic-reporting.md) ke konfiguraci formátů pro odchozí dokumenty v souladu s právními požadavky různých zemí a oblastí. Uživatelé mohou rovněž definovat tok dat, který určuje, která data aplikace budou umístěna do generovaných dokumentů. Architektura elektronického výkaznictví generuje odchozí dokumenty ve formátech Microsoft Office (sešity aplikace Excel nebo dokumenty aplikace Word) pomocí předdefinovaných šablon. Šablony jsou naplněny požadovanými daty v souladu s konfigurovaným tokem dat, když jsou vygenerovány požadované dokumenty. Každý konfigurovaný formát lze publikovat jako součást řešení elektronického vykazování pro generování určitých odchozích dokumentů. To je představováno konfigurací formátu elektronického vykazování, která může obsahovat šablony, které lze použít k vygenerování různých odchozích dokumentů. Podnikoví uživatelé mohou pomocí této architektury spravovat požadované obchodní dokumenty.
+Podnikový uživatelé používají [architekturu elektronického výkaznictví](general-electronic-reporting.md) ke konfiguraci formátů pro odchozí dokumenty v souladu s právními požadavky různých zemí a oblastí. Uživatelé mohou rovněž definovat tok dat, který určuje, která data aplikace budou umístěna do generovaných dokumentů. Architektura elektronického výkaznictví generuje odchozí dokumenty ve formátech Microsoft Office (sešity aplikace Excel nebo dokumenty aplikace Word) pomocí předdefinovaných šablon. Šablony jsou naplněny požadovanými daty v souladu s konfigurovaným tokem dat, když jsou vygenerovány požadované dokumenty. Každý konfigurovaný formát lze publikovat jako součást řešení elektronického vykazování pro generování určitých odchozích dokumentů. To je představováno konfigurací formátu elektronického vykazování, která může obsahovat šablony, které lze použít k vygenerování různých odchozích dokumentů. Podnikoví uživatelé mohou pomocí této architektury spravovat požadované obchodní dokumenty.
 
 **Správa obchodních dokumentů** je vytvořena na vrcholu systému architektury elektronického výkaznictví a umožňuje podnikovým uživatelům upravovat šablony obchodních dokumentů pomocí služby Microsoft Office 365 nebo příslušné desktopové aplikace Microsoft Office. Úpravy dokumentů mohou zahrnovat změny návrhů obchodních dokumentů a přidávání zástupných symbolů pro další data bez změn zdrojových kódů a nových nasazení. K aktualizaci šablon obchodních dokumentů nejsou vyžadovány žádné znalosti architektury elektronického vykazování.
 
@@ -59,7 +59,7 @@ Při vydání veřejné verze Preview budou k dispozici následující sestavy s
 
 Budou k dispozici další sestavy. Zvláštní oznámení o dalších sestavách budou odeslána samostatně. 
 
-Úplný seznam všech sestav plánovaných pro vydání v říjnu 2019 lze najít v části [Konfigurovatelné vykazování obchodních dokumentů v aplikacích Word a Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu.
+Úplný seznam všech sestav plánovaných pro vydání v říjnu 2019 lze najít v části [Konfigurovatelné vykazování obchodních dokumentů v aplikacích Word a Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Chcete-li získat další informace o této funkci, vyplňte příklad tomto tématu.
 
 ## <a name="configure-er-parameters"></a>Konfigurace parametrů ER
 

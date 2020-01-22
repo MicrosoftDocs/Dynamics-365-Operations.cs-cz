@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3e1281171a656a73a35d4990fd8a34b35c1c6db8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fdfc65d02d4468aee094a92e6760400c5e25af8f
+ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188273"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888648"
 ---
 # <a name="reconcile-a-bank-account"></a>Odsouhlasení bankovního účtu
 
@@ -64,7 +64,7 @@ V případě, že se některá z plateb šeků nebo vkladových složenek uveden
 
 8.  Chcete-li zobrazit bankovní transakce, které ještě nebyly odsouhlaseny, použijte sestavu **Neodsouhlasené bankovní transakce**. Chcete-li zobrazit bankovní výpis bankovního účtu, použijte sestavu **Bankovní výpis.**
 
-# <a name="cancel-bank-statement-reconciliation"></a>Zrušení odsouhlasení bankovního výpisu 
+## <a name="cancel-bank-statement-reconciliation"></a>Zrušení odsouhlasení bankovního výpisu 
 
 Funkce Zrušení odsouhlasení bankovního výpisu vám umožňuje zrušit odsouhlasení bankovního výpisu. Chcete-li použít tuto funkci, povolte funkci **Zrušení odsouhlasení bankovního výpisu** v pracovním prostoru **Správa funkcí**. Je také nutné povolit parametr **Povolit úpravy bankovního výpisu**. Chcete-li to udělat, přejděte na **Pokladna a banka > Nastavení > Parametry pokladny a banky > Odsouhlasení banky**.
  

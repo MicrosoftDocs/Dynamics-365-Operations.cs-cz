@@ -3,7 +3,7 @@ title: Přidání jazyků na web
 description: V tomto tématu je vysvětleno, jak přidat podporu pro další jazyky na webu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 26031d386d8e332c07752d8797416491a86649a8
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 111bcaba971b6223f670176135574633d2f1c5ec
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2696800"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914601"
 ---
 # <a name="add-languages-to-your-site"></a>Přidání jazyků na web
 
@@ -166,6 +166,8 @@ Jazyk, který jste přidali, bude nyní k dispozici, abyste mohli nakonfigurovat
 [Přidání loga](add-logo.md)
 
 [Volba motivu webu](select-site-theme.md)
+
+[Práce se soubory přepisu šablon CSS](css-override-files.md)
 
 [Přidání ikony oblíbené položky](add-favicon.md)
 

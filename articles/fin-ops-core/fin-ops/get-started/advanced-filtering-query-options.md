@@ -3,7 +3,7 @@ title: Syntax pokročilého filtrování a dotazů
 description: Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru shody v podokně filtru nebo filtrech záhlaví sloupce mřížky.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9e57cac740a26c6c5b451c92d856e533c6db33e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
+ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180822"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "2931281"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Pokročilé filtrování a syntaxe dotazu
 
@@ -114,6 +114,12 @@ Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozic
 <td>Shoduje se s hodnotami oddělenými čárkou</td>
 <td>Zadejte veškerá vaše kritéria a oddělte je čárkami.</td>
 <td><strong>A, D, F, G</strong> vyhledá přesně &quot;A&quot;, &quot;D&quot;, &quot;F&quot; a &quot;G&quot;. <strong>10, 20, 30, 100</strong> vyhledá přesně &quot;10, 20, 30, 100&quot;.</td>
+</tr>
+<tr>
+<td>"" (dvě dvojité uvozovky)</td>
+<td>Odpovídající prázdná hodnota</td>
+<td>Zadejte dvě po sobě jdoucí dvojité uvozovky pro filtrování prázdných hodnot v daném poli.</td>
+<td>Dvě po sobě jdoucí dvojité uvozovky (<strong>""</strong>) naleznou řádky bez hodnoty pro aktuální sloupec.</td>
 </tr>
 <tr>
 <td>(<span class="code">příkaz SQL</span>) (příkaz SQL v uvozovkách)</td>

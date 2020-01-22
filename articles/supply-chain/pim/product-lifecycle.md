@@ -3,7 +3,7 @@ title: Přehled životního cyklu produktu
 description: Stav životního cyklu produktu dokumentuje životní cyklus uvolněného produktu nebo varianty produktu.
 author: cvocph
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b5b0ceb1926de6efda239fdbc69fb36a9d4b28e0
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813539"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934833"
 ---
 # <a name="product-lifecycle-state-overview"></a>Přehled životního cyklu produktu
 
@@ -74,11 +74,7 @@ Podrobné informace o použití stavu životního cyklu produktu k vyloučení p
 
 ## <a name="default-migration-import-and-export"></a>Výchozí migrace, export a import 
 
-Stavy životního cyklu produktu nejsou podporovány datovými entitami a stav životního cyklu nelze nastavit na proměnlivý stav prostřednictvím datových entit uvolněného produktu.
-
--  Při migraci z předchozích vydání bude stav životního cyklu všech produktů a variant produktů prázdný.  
--  Při importu uvolněných produktů pomocí datové entity se použije při vytvoření výchozí stav životního cyklu.  
--  Při importu uvolněných variant produktu pomocí datové entity dat bude importován stav životního cyklu produktu hlavního uvolněného produktu.   
+Stavy životního cyklu produktu jsou podporovány datovými entitami a stav životního cyklu lze nastavit na proměnlivý stav prostřednictvím datových entit uvolněného produktu nebo datových entit uvolněné varianty.
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Nalezení zastaralých produktů a variant produktů 
 

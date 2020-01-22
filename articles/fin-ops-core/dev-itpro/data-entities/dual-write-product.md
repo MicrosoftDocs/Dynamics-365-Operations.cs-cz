@@ -3,7 +3,7 @@ title: Používání sjednoceného produktu
 description: Toto téma popisuje integraci dat produktů mezi aplikacemi Finance and Operations a Common Data Service.
 author: t-benebo
 manager: AnnBe
-ms.date: 09/3/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: bcc2c3d2530153a225a94fa0fb3cc990abbf65b4
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7df9097feeb9566705f50f8a62809aa79dc10cd7
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769722"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914764"
 ---
 # <a name="unified-product-experience"></a>Používání sjednoceného produktu
 
@@ -52,7 +52,7 @@ Informace o produktu obsahují všechny informace související s produktem a je
 
 Finance and Operations | Jiné aplikace Dynamics 365 | Popis
 -----------------------|--------------------------------|---
-Uvolněné produkty V2 | msdyn\_sharedproductdetails | Entita **msdyn\_Sharedproductdetails** obsahuje pole z aplikací Finance and Operations, které definují produkt a obsahují finanční a řídící informace o produktu. Následující tabulka zobrazuje mapování.
+Uvolněné produkty V2 | msdyn\_sharedproductdetails | Entita **msdyn\_Sharedproductdetails** obsahuje pole z aplikací Finance and Operations, které definují produkt a obsahují finanční a řídící informace o produktu. 
 Uvolněné jedinečné produkty v Common Data Service | Produkt | Entita **Produkt** obsahuje pole, která definují produkt. Zahrnuje jednotlivé produkty (produkty s dílčím typem produktu) a varianty produktu. Následující tabulka zobrazuje mapování.
 Identifikované čárové kódy čísla produktu | msdyn\_productbarcodes | Čárové kódy produktů se používají k jednoznačné identifikaci produktů.
 Výchozí nastavení objednávky | msdyn\_productdefaultordersettings
@@ -74,7 +74,7 @@ Převody jednotek | msdyn_ unitofmeasureconversions
 Převod měrné jednotky konkrétního produktu | msdyn_productspecificunitofmeasureconversion
 Kategorie produktu | msdyn_productcategories | Každá z kategorií produktů a informace o její struktuře a vlastnostech je obsažena v entitě kategorie produktu. 
 Hierarchie kategorií produktů | msdyn_productcategoryhierarhies | Hierarchie produktů slouží ke kategorizaci nebo seskupení produktů. Hierarchie kategorií jsou k dispozici v Common Data Service pomocí entity hierarchie kategorií produktu. 
-Role hierarchie kategorií produktů | msdyn_productcategoryhierarchies | Hierarchie produktů lze použít pro různé role v D365 Finance and Operations. Určují, která kategorie se použije v každé roli, kterou se použije entita role kategorie produktu s následujícími mapováními. 
+Role hierarchie kategorií produktů | msdyn_productcategoryhierarchies | Hierarchie produktů lze použít pro různé role v D365 Finance and Operations. Určují, která kategorie se použije v jednotlivých rolích, v nichž se používá entita role kategorie produktu. 
 Přiřazení kategorií produktů | msdyn_productcategoryassignments | Chcete-li přiřadit produkt do kategorie, lze použít entitu přiřazení kategorie produktu.
 
 ## <a name="integration-of-products"></a>Integrace produktů

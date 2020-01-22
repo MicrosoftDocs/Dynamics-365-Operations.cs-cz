@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7e32f408e5c68a3422906347981c6fc4a4579daf
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812300"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915240"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Přehled fiskální integrace pro maloobchodní sítě
 
@@ -138,9 +138,14 @@ Následující ukázky fiskální integrace jsou v současné době k dispozici 
 - [Vzor integrace fiskální tiskárny pro Polsko](emea-pol-fpi-sample.md)
 - [Ukázka integrace fiskální služby pro Rakousko](emea-aut-fi-sample.md)
 - [Ukázka integrace fiskální služby pro Českou republiku](emea-cze-fi-sample.md)
+- [Ukázka integrace kontrolní jednotky pro Švédsko](./emea-swe-fi-sample.md)
 
 Následující funkce fiskální integrace je k dispozici také v sadě Retail SDK, ale v současné době nevyužívá architekturu fiskální integrace. Migrace této funkce do architektury fiskální integrace je plánována po pozdější aktualizace.
 
-- [Funkce registrační pokladny pro Francii](emea-fra-cash-registers.md)
-- [Funkce registrační pokladny pro Norsko](emea-nor-cash-registers.md)
-- [Vzor pro integraci Retail POS s kontrolními jednotkami pro Švédsko](./retail-sdk-control-unit-sample.md)
+
+- [Digitální podpis pro Francii](emea-fra-cash-registers.md)
+- [Digitální podpis pro Norsko](emea-nor-cash-registers.md)
+
+Následující starší funkce fiskální integrace, která je k dispozici v aplikaci Retail SDK, nepoužívá architekturu fiskální integrace a bude v pozdějších aktualizacích zastaralá:
+
+- [Ukázka integrace kontrolní jednotky pro Švédsko (starší)](./retail-sdk-control-unit-sample.md)

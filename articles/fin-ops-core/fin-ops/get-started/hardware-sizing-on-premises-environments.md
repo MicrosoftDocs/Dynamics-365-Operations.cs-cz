@@ -1,9 +1,9 @@
 ---
 title: Požadavky nastavení velikosti hardwaru pro místní prostředí
 description: Toto téma uvádí požadavky nastavení velikosti hardwaru pro místní prostředí.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8fa644f35a086af99cde74fd6a2062f9b59a6ff7
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812550"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870257"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Požadavky nastavení velikosti hardwaru pro místní prostředí
 
@@ -137,7 +137,7 @@ Pro všeobecnou dostupnost lze nasadit pouze jeden uzel SSRS. Při testování s
 
 ## <a name="environment-orchestrator"></a>Orchestrátor prostředí
 
-Služba Orchestrator je služba pro správu nasazení a související komunikace s LCS. Tato služba je nasazena jako primární služba Service Fabric a vyžaduje alespoň tři virtuální počítače. Tato služba je umístěna společně se službami Service Fabric orchestration. Měly být nastaveny na velké vytížení clusteru. Další informace naleznete v tématu [Aspekty plánování kapacity clusteru Service Fabric](/azure/service-fabric/service-fabric-cluster-capacity).
+Služba Orchestrator je služba pro správu nasazení a související komunikace s LCS. Tato služba je nasazena jako primární služba Service Fabric a vyžaduje alespoň tři virtuální počítače. Tato služba je umístěna společně se službami Service Fabric orchestration. Měly být nastaveny na velké vytížení clusteru. Další informace najdete v části [Naplánujte a připravte nasazení svého samostatného clusteru Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualizace a předplatné
 

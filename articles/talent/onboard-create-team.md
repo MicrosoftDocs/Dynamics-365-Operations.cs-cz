@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8090fafc891d874c3f4fb646fe22a2b783ce37aa
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7057c5b24ee3ae03574ec106a0c7d268dfffb98e
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814828"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897182"
 ---
-# <a name="create-a-hiring-team-by-using-dynamics-365-talent---onboard"></a>Vytvoření náborového týmu za použití Dynamics 365 Talent - Onboard
+# <a name="create-a-hiring-team"></a>Vytvoření náborového týmu
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +35,7 @@ Ve aplikaci Microsoft Dynamics 365 Talent: Onboard můžete vytvářet náborov�
 2. V části **Týmy** vyberte dlaždici **Přidat** (znaménko \[**+**\]plus).
 3. V dialogovém okně **Vytvořit nový tým** zadejte do pole **Název týmu** název náborového týmu.
 
-    ![[Vytvoření nového týmu v Onboard](./media/onboard-create-team.png)](./media/onboard-create-team.png)
+    ![[Vytvoření nového týmu v Zaškolení](./media/onboard-create-team.png)](./media/onboard-create-team.png)
 
 4. V části **Vybrat členy týmu** zadejte jméno nebo e-mailovou adresu každého člena týmu.
 
@@ -51,11 +51,11 @@ Ve aplikaci Microsoft Dynamics 365 Talent: Onboard můžete vytvářet náborov�
 2. Vyberte tým.
 3. Na kartě **Průvodci** vyberte **Přidat průvodce**.
 
-    ![[Přidání průvodců zaškolením týmu](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
+    ![[Přidání průvodců zaškolením do týmu](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
 
 4. Zaškrtněte políčko pro každého průvodce zaškolením, kterého chcete přiřadit k týmu, a poté vyberte možnost **Přidat**.
 
-    ![[Výběr průvodců zaškolením pro přidání k týmu](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
+    ![[Výběr průvodců zaškolením, kteří budou přidáni do týmu](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
 
 ## <a name="assign-onboarding-templates-to-a-hiring-team"></a>Přiřazení šablon zaškolením náborovému týmu
 
@@ -63,11 +63,11 @@ Ve aplikaci Microsoft Dynamics 365 Talent: Onboard můžete vytvářet náborov�
 2. Vyberte tým.
 3. Na kartě **Šablony** vyberte **Přidat šablony**.
 
-    ![[Přidání šablon týmu](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
+    ![[Přidání šablon do týmu](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
 
 4. Zaškrtněte políčko pro každou šablonu, kterou chcete přiřadit k týmu, a poté vyberte možnost **Přidat**.
 
-    ![[Výběr šablon pro přidání k týmu](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
+    ![[Výběr šablon, které budou přidány do týmu](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
 
 ### <a name="see-also"></a>Viz také
 

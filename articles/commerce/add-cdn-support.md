@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fb757672fffb56892837c066d552773908dd1ec1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: d2d64f0de5287a764cb2e40b99a08084494bf53c
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2696961"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945621"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Přidání podpory pro síť CDN
 
@@ -140,16 +140,16 @@ Vaše síť CDN by měla být správně nakonfigurována, aby ji bylo možné po
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Přehled online obchodu](online-store-overview.md)
-
-[Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
+[Konfigurace názvu domény](configure-your-domain-name.md)
 
 [Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
 
+[Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
+
 [Přiřazení online webu ke kanálu](associate-site-online-store.md)
 
-[Konfigurace názvu domény](configure-your-domain-name.md)
-
-[Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
+[Správa souborů robots.txt](manage-robots-txt-files.md)
 
 [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
+
+[Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)

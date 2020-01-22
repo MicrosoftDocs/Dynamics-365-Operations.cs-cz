@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 30b09f09875e37a6a909d0aad04117e577c5cd98
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2faa5c02e3641a7b80e410e3b9cc05d08d99f92f
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517523"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898172"
 ---
 # <a name="process-compensation"></a>Proces kompenzace
-
-[!include [banner](includes/banner.md)]
 
 Zpracování kompenzace umožňuje vypočítat částky nové základní kompenzace pro zaměstnance na základě úpravy jmění, cílů zvýšení zásluh a výkonnosti. Teoto téma se věnuje základnímu zpracování toku kompenzace pro plány fixní kompenzace bez faktoringu ve výkonu zaměstnance.
 

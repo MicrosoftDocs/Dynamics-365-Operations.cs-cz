@@ -18,19 +18,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0f89c6098db9e2e3a9aa4ee3666e4b9ae608f054
-ms.sourcegitcommit: d8f1135cdbc2deca70bc4b2805a0519253c9a31f
+ms.openlocfilehash: 1a1a32495b63a5a67a49bf3b02710aba63c1e2f0
+ms.sourcegitcommit: bfd6142569196a060e3f37893c78f00c40a2a18c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "1992350"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2946183"
 ---
 # <a name="wave-step-codes"></a>Kódy kroku vlny
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
-
-## <a name="about-wave-step-codes"></a>Informace o kódech kroků vlny
 
 Kódy kroků vlny jsou kódy, které mohou uživatelé nastavit a použít k propojení určitých instancí metod vlny s odpovídající šablonou. Tyto šablony zahrnují šablony pro doplnění, vytváření kontejnerů, tisk štítků, sestavení a třídění.
 
@@ -39,7 +37,7 @@ Nejsou-li kódy kroků vlny použity, uživatelé musí zadat volný text, kter�
 Kódy kroků vlny pro určitý typ kroku vlny jsou nastaveny na samostatné stránce. Pro každou instanci metody kroku vlny v šabloně vlny, která vyžaduje kód kroku vlny, musí být v rozevíracím seznamu vybrán kód kroku vlny. Výběr v rozevíracím seznamu nahrazuje zadávání volného textu a pomáhá snižovat riziko a dopad lidských chyb. Kódy nastavení se používají k propojení metody kroku vlny v šabloně vlny s cílovou šablonou pro metodu.
 
 > [!NOTE]
-> Použití funkce kódů kroků vlny je volitelné a přijetí je pro právnickou osobu. Pokud tedy určitá právnická osoba používá funkci, budou všechny stávající kódy kroků vlny v dané právnické osobě upgradovány na novou strukturu.
+> Použití funkce kódů kroku vlny je nepovinné. Je povolena celá organizace pro všechny právnické osoby.
 
 ## <a name="setup-demo"></a>Nastavení ukázky 
 
@@ -49,20 +47,20 @@ Pro tuto ukázku musíte mít nainstalována ukázková data a musíte použít 
 
 Pomocí následujících kroků zapněte funkci kódů kroků vlny.
 
-1. Přejděte do nabídky **Řízení skladu \> Nastavení \> Parametry řízení skladu**.
-2. Na kartě **Obecné** na pevné záložce **Zpracování vlny** nastavte možnost **Povolit kódy vlny** na **Ano**.
+1. Přejděte na **Správu funkcí**.
+2. Výběrem této možnosti povolíte funkci nazvanou **Kód kroku vlny pro celou organizaci**.
 
-Všechny existující volné texty kódu vlny jsou upgradovány na novou strukturu. Po dokončení tohoto upgradu pro právnickou osobu již není na možnost **Povolit kódy kroku vlny** na stránce **Parametry řízení skladu** k dispozici.
+Všechny existující volné texty ve všech právnických osobách jsou upgradovány na novou strukturu. Po dokončení upgradu pro všechny právnické osoby je tato funkce povolena. Pokud funkci nelze povolit pro jednu nebo více právnických osob, nebude tato funkce povolena pro žádné právnické osoby.
 
-Ověření jsou prováděna během upgradu a pokud se upgrade nezdaří, zobrazí se chybová zpráva. Upgrade se nemusí zdařit kvůli následujícím konfliktům:
+Během upgradu jsou během inovace dat provedeny ověření. Pokud se inovace nezdaří, zobrazí se chybová zpráva. Upgrade se nemusí zdařit kvůli následujícím konfliktům:
 
 - Existují duplicitní texty volného kroku vlny.
 - Existují přizpůsobení.
 - Volný text v kroku vlny, který je přidružen k instanci metody kroku vlny, neodpovídá očekávanému typu šablony.
 
-Po vyřešení konfliktů, které byly zjištěny během ověření, můžete znovu spustit proces upgradu.
+Po vyřešení konfliktů, které byly zjištěny během ověření, můžete znovu zkusit povolit funkci.
 
-Po úspěšném dokončení upgradu bude k dispozici stránka **kódy kroků vlny** (**Řízení skladu \> Nastavení \> Vlny \> Kódy nastavení vlny**). Na této stránce jsou uvedeny kódy kroků vlny, které byly upgradovány při zapnutí funkce kódy kroků vlny.
+Po povolení funkce bude k dispozici stránka **kódy kroků vlny** (**Řízení skladu \> Nastavení \> Vlny \> Kódy nastavení vlny**). Na této stránce jsou uvedeny kódy kroků vlny, které byly upgradovány při zapnutí funkce kódy kroků vlny pro celou organizaci.
 
 ### <a name="create-new-wave-step-codes"></a>Vytvořit nové kódy kroků vlny
 
@@ -94,3 +92,5 @@ Následující postup vám pomůže zaručit, že vytvořená šablona doplněn�
 4. Přejděte na **Řízení skladu \> Nastavení \> Vlny \> Šablony vlny** a vyberte šablonu vlny, kterou chcete použít.
 5. V šabloně na pevné záložce **Metody** vyberte metodu **Doplnění**.
 6. V poli **Kód kroku vlny** vyberte kód kroku vlny, který jste vybrali v šabloně doplnění.
+
+Tyto kroky provedete pro každou právnickou osobu.

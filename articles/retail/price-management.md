@@ -3,7 +3,7 @@ title: Správa prodejní ceny v aplikaci Retail
 description: Toto téma popisuje koncepty pro vytváření a správu prodejních cen v aplikaci Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d8c6f8d7d368be8ffa192f8dee6b46a753b04cad
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025211"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934764"
 ---
 # <a name="retail-sales-price-management"></a>Správa maloobchodní prodejní ceny
 
@@ -221,11 +221,11 @@ Jediný cenový modul se používá k výpočtu maloobchodní ceny ve všech kan
 
 Maloobchodní ceny jsou určeny k práci s maloobchodními entitami namísto entit mimo maloobchod. Konkrétně je modul navržen pro nastavení cen podle obchodu, nikoli skladu.
 
-Maloobchodní cenový modul nepodporuje následující cenové funkce:
+Maloobchodní cenový modul **nepodporuje** následující cenové funkce:
 
-- Nastavení ceny s použitím dimenzí úložiště pracoviště a skladu
-- Ceny na základě atributů
-- Předání slev dodavatele
+- Nastavení cen podle dimenzí úložiště lokality nebo lokality a skladu není podporováno. Pokud zadáte dimenzi lokality pouze v obchodních smlouvách, budou maloobchodní ceny ignorovat lokalitu a budou používat obchodní smlouvu pro všechny lokality. Pokud určíte jak lokalitu, tak sklad, chování není definováno/testováno, protože se očekává, že maloobchodníci používají cenové skupiny obchodu k řízení cen pro každý obchod/sklad.
+- Ocenění založené na atributech není podporováno.
+- Předávání slev dodavatelů není podporováno.
 
 **Pouze** maloobchodní cenový modul podporuje následující cenové funkce:
 

@@ -1,9 +1,9 @@
 ---
 title: Vylepšení výkonu hlavního plánování
-description: V tomto tématu jsou vysvětleny různé možnosti, které vám mohou pomoci při zlepšení výkonnosti hlavního plánování a řešení problémů.
+description: V tomto tématu jsou vysvětleny různé možnosti, které vám mohou pomoci při zlepšení výkonnosti hlavního plánování či řešení problémů.
 author: t-benebo
 manager: AnnBe
-ms.date: 05/31/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,39 +19,39 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: f0d075bbcc8a6671054f227a13c75ca7fb1e954f
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 7e8c1d7ee51eb6e335554a01fd050bd80f2a070d
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1631536"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915217"
 ---
 # <a name="improve-master-planning-performance"></a>Vylepšení výkonu hlavního plánování
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou vysvětleny různé možnosti, které vám mohou pomoci při zlepšení výkonnosti hlavního plánování a řešení problémů. Obsahuje informace o parametrech a nastaveních a o doporučených konfiguracích a akcích. Obsahuje také souhrn všech důležitých parametrů, které byste měli zvážit v případě dlouhotrvajících úloh hlavního plánování.
+V tomto tématu jsou vysvětleny různé možnosti, které vám mohou pomoci při zlepšení výkonnosti hlavního plánování či řešení problémů. Obsahuje informace o parametrech a nastaveních a o doporučených konfiguracích a akcích. Obsahuje také souhrn všech důležitých parametrů, které byste měli zvážit v případě dlouhotrvajících úloh hlavního plánování.
 
 Toto téma je určeno pro správce systému nebo IT uživatele, kteří mají možnost odstraňovat potíže. Je také určen pro plánovače výroby nebo dodávek, protože obsahuje informace o parametrech souvisejících s požadavky na obchodní plánování. 
 
-## <a name="parameters-that-are-related-to-master-planning-performance"></a>Parametry související s výkonem hlavního plánování
+## <a name="parameters-related-to-master-planning-performance"></a>Parametry související s výkonem hlavního plánování
 
 Různé parametry ovlivňují operační dobu hlavního plánování a měly by být vzaty v úvahu.
 
 ### <a name="number-of-threads"></a>Počet vláken
 
-Parametr **Počet vláken** umožňuje upravit proces hlavního plánování, aby měl lepší výkon na určité sadě dat. Určuje celkový počet vláken, která budou použita ke spuštění hlavního plánování. To způsobuje paralelizaci spuštění hlavního plánování a tato paralelizace pomáhá snížit operační dobu. 
+Parametr **Počet vláken** umožňuje upravit proces hlavního plánování, aby se zlepšila výkonnost na určité sadě dat. Tento parametr určuje celkový počet vláken, která budou použita ke spuštění hlavního plánování. To způsobuje paralelizaci spuštění hlavního plánování, což pomáhá snížit operační dobu. 
 
 Parametr **Počet vláken** lze nastavit v dialogovém okně **Spuštění hlavního plánování**. Chcete-li otevřít toto dialogové okno, přejděte na **Hlavní plánování \> Hlavní plánování \> Spuštění \> Hlavní plánování** nebo vyberte **Spustit** v pracovním prostoru **Hlavní plánování**. Chcete-li určit nejlepší hodnotu pro tento parametr, musíte se spolehnout na proces pokus omyl. K výpočtu počáteční hodnoty však můžete použít následující vzorce:
 
-- **Pokud váš obor vyrábí:** počet vláken = počet plánovaných objednávek ÷ 1 000
-- **V opačném případě:** počet vláken = počet položek ÷ 1 000
+- **Pokud váš obor vyrábí:** (počet vláken) = (počet plánovaných objednávek ÷ 1 000)
+- **V opačném případě:** (počet vláken) = (počet položek ÷ 1 000)
 
 Počet pomocníků použitých během hlavního plánování musí být menší nebo rovný maximálnímu počtu vláken, které jsou povoleny na dávkovém serveru. Pokud počet pomocníků překročí počet vláken na dávkovém serveru, nebudou další vlákna provádět žádné práce.
 
 > [!NOTE]
-> Nastavení **0** (nula) pro parametr **Počet vláken** zvyšuje operační čas hlavního plánování. Proto doporučujeme, abyste vždy nastavili hodnotu, která je větší než 0.
+> Nastavení parametru **Počet vláken** na **0** (nula) zvyšuje operační čas hlavního plánování. Proto doporučujeme, abyste vždy nastavili hodnotu, která je větší než 0.
 
 ### <a name="number-of-tasks-in-helper-task-bundle"></a>Počet úkolů v sadě úkolů pomocníka
 
@@ -59,7 +59,7 @@ Změnou nastavení **Počet úkolů v sadě úkolů pomocníka** (tj. velikosti 
 
 Můžete nastavit parametr **Počet úkolů v sadě úkolů pomocníka** v části **Výkon** na kartě **Obecné** stránky **Parametry hlavního plánování** (**Hlavní plánování \> Nastavení \> Parametry hlavního plánování**). Nejlepší hodnota pro tento parametr závisí na vašich datech. Proto doporučujeme, abyste začínaly s hodnotou **1** a potom pomocí procesu pokus omyl určíte nejlepší hodnotu pro nastavení.
 
-Obecně doporučujeme, abyste zvýšili počet úkolů v případě, že je počet položek velmi velký (ve stovkách tisíc). V opačném případě byste měli snížit počet úkolů. U následujících konkrétních odvětví je třeba vzít v úvahu tyto body:
+Obecně doporučujeme, abyste zvýšili počet úkolů v případě, že je počet položek velmi velký (ve stovkách tisíc). V opačném případě byste měli snížit počet úkolů. U následujících konkrétních odvětví je třeba vzít v úvahu tato doporučení:
 
 - V odvětví maloobchodu a distribuce, kde existuje mnoho nezávislých položek, použijte mnoho pomocníků, protože mezi položkami neexistuje žádná závislost. 
 - Ve výrobním odvětví, kde existuje mnoho kusovníků a sdílených dílčích součástí, se používá méně pomocníků, protože závislosti mezi položkami mohou způsobovat čekací dobu.
@@ -87,7 +87,7 @@ Parametr **Počet objednávek v potvrzování sady** určuje celkový počet obj
 
 Můžete nastavit parametr **Počet objednávek v potvrzování sady** v části **Výkon** na kartě **Obecné** stránky **Parametry hlavního plánování** (**Hlavní plánování \> Nastavení \> Parametry hlavního plánování**). Paralelizace procesu automatického potvrzování je založena na objednávkách, které je nutné zpracovat společně. Je-li tento parametr nastaven například na **50**, každé vlákno nebo dávková úloha vybere 50 objednávek najednou a zpracuje je současně. Nejlepší hodnotu získáte pomocí procesu pokus omyl. K výpočtu počáteční hodnoty však můžete použít následující vzorec:
 
-Počet objednávek na sadu = počet položek poptávky ÷ počet vláken
+(Počet objednávek na sadu) = (počet položek poptávky ÷ počet vláken)
 
 > [!NOTE]
 > Nastavíte-li parametr **Počet objednávek v potvrzování sady** na **0** (nula), nebude docházet k žádné paralelizaci procesu automatického potvrzování. Celý proces bude spuštěn na jednom dávkovém úkolu a bude mít kumulativní operační dobu. Proto se zvýší operační doba hlavního plánování. Z tohoto důvodu doporučujeme nastavit tento parametr na hodnotu, která je větší než **0** (nula).
@@ -98,7 +98,7 @@ Ochranné doby určují, jak daleko v budoucnosti musí být výpočty a další
 
 ### <a name="actions"></a>Akce
 
-Mezi ochrannými dobami můžete také vyhledat parametr **Zpráva akce**. Výpočet zpráv akce má za následek delší operační dobu hlavního plánování. Nejsou-li zprávy akce pravidelně analyzovány a použity (denně, týdně atd.), zvažte při spuštění hlavního plánování vypnutí výpočtu. Chcete-li vypnout výpočet, na stránce **Hlavní plány** (**Hlavní plánování \> Nastavení \> Plány \> Hlavní plány**) nastavte ochrannou dobu **Zprávy akce** na **0** (nula) pro hlavní plán, který spouštíte. Rovněž zkontrolujte, zda je nastavení **Zprávy akce** vypnuto pro všechny skupiny disponibility.
+Mezi ochrannými dobami můžete také vyhledat parametr **Zpráva akce**. Výpočet zpráv akce má za následek delší operační dobu hlavního plánování. Nejsou-li zprávy akce pravidelně analyzovány a použity (denně, týdně atd.), zvažte při spuštění hlavního plánování vypnutí výpočtu. Chcete-li vypnout výpočet, na stránce **Hlavní plány** (**Hlavní plánování \> Nastavení \> Plány \> Hlavní plány**) nastavte ochrannou dobu **Zprávy akce** na **0** (nula). Rovněž zkontrolujte, zda je nastavení **Zprávy akce** vypnuto pro všechny skupiny disponibility.
 
 ### <a name="futures"></a>Termíny
 
@@ -117,9 +117,9 @@ Chcete-li zkontrolovat spuštění hlavního plánování systému, postupujte p
 - V pracovním prostoru **Hlavní plánování** vyberte hlavní plán v rozevíracím poli a poté na dlaždici **Hlavní plánování** vyberte možnost **Historie**. Vyberte úlohu, na kartě s náhledem vyberte **Dotazy** a poté vyberte **Doba trvání zpracování úkolu**.
 - Na stránce **Hlavní plány** vyberte v levém podokně plán a poté na záložce s náhledem vyberte **Historie**. Vyberte úlohu, na kartě s náhledem vyberte **Dotazy** a poté vyberte **Doba trvání zpracování úkolu**.
 
-Při kontrole protokolu relace je třeba vzít v úvahu následující skutečnosti:
+Při kontrole protokolu relace je třeba vzít v úvahu následující:
 
-- **Aktualizace** by neměla dlouho trvat (obecně by měla trvat až 30 minut). Jedná se však o jediné vlákno.
+- **Aktualizace** by neměla dlouho trvat (obecně by měla trvat až 30 minut), přestože obsahuje jedno vlákno.
 - **Kopírování plánu** by nemělo trvat dlouho (měla by trvat asi jedna minutu).
 - **Automatické potvrzování** obvykle trvá přibližně 30 minut. Může však zabrat až několik hodin v závislosti na počtu objednávek a složitosti položek.
 - **Automatické potvrzování** by mělo zabrat méně času než **Disponibilita**.
@@ -129,6 +129,28 @@ Při kontrole protokolu relace je třeba vzít v úvahu následující skutečno
 ## <a name="filtering-of-items"></a>Filtrování položek
 
 Filtry použité v dialogovém okně **Spuštění hlavního plánování** mají vliv na spuštění hlavního plánování. Přejděte na **Hlavní plánování \> Hlavní plánování \> Spuštění \> Hlavní plánování** nebo vyberte **Spustit** v pracovním prostoru **Hlavní plánování**. Chcete-li vyloučit položky ze spuštění, doporučujeme, abyste filtrovalo podle stavu životního cyklu položky (nikoli podle čísel položek). Když filtrujete podle stavu životního cyklu, proces aktualizace zabere méně času, než když filtrujete podle čísel položek.
+
+## <a name="automatically-filter-by-items-with-direct-demand"></a>Automaticky filtrovat podle položek s přímou poptávkou
+
+Chcete-li zlepšit dobu běhu hlavního plánování, můžete zvolit, aby byly zahrnuty pouze položky s přímou poptávkou. Tento filtr lze použít pouze pro provedení úplného hlavního plánování bez dalších filtrů, které se aplikují na pole **Záznamy k zahrnutí**. Hlavní plánování spouštěné pomocí filtrů bude ignorovat nastavení **Automaticky filtrovat podle položek s přímou poptávkou**.
+
+Pole **Automaticky filtrovat podle položek s přímou poptávkou** se nachází na stránce **Parametry hlavního plánování** a lze jej použít s nastavením předběžného zpracování i po zpracování.
+
+### <a name="pre-processing"></a>Předběžné zpracování
+Parametr **Předběžné zpracování: Automaticky filtrovat podle položek s přímou poptávkou** zajišťuje, že fáze před zpracováním hlavního plánování bude obsahovat pouze položky, které splňují alespoň jednu z následujících podmínek:
+  - Položka má očekávaný příjem nebo výdej, jako je například nákupní objednávka, prodejní objednávka, nabídka, objednávka transferu nebo výrobní zakázka. 
+  - Položka má disponibilitu položky s pojistnou zásobu (minimální množství na skladě).
+  - Pro položku existuje Prognóza poptávky po dnešku.
+  - Pro položku existuje Prognóza nabídky po dnešku.
+  - Položka zahrnuje všechny spojnice kontinuity z modulu call centra, které dosud nebyly vytvořeny.
+
+> [!NOTE]
+> Položka, která má fyzicky dostupné množství na skladě, nebude vykazovat transakci požadavku, protože pro položku neexistuje poptávka.
+
+### <a name="post-processing"></a>Následné zpracování
+Volba **Následné zpracování: Automaticky filtrovat podle položek s přímou poptávkou** je relevantní pouze v případě, že ve skupinách disponibility nastavíte **Požad. verze kusovníku**. V opačném případě není nutné parametr povolovat. 
+
+Před zahájením kroku disponibility se zobrazí krok předběžné disponibility, během kterého budou položky s povoleným nastavením **Požad. verze kusovníku** znovu zpracovány. To se provádí tak, aby bylo zajištěno plánování položek z požadované verze kusovníku. Položky považované za žádosti v průběhu předběžného zpracování již nemají žádný požadavek, a proto by měly být vyloučeny z běhu plánování.
 
 ## <a name="performance-checklist-summary"></a>Souhrn kontrolního seznamu výkonu
 

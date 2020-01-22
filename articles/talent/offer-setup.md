@@ -3,7 +3,7 @@ title: Nastavení správy nabídek v aplikaci Attract
 description: Toto téma popisuje, jak nastavit nabídky v aplikaci Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/04/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: bc91a83afd5ce1627376685bcf612d6998ddbc02
+ms.sourcegitcommit: 5022d63a81c3715c9a3dcf2a68217bb6b17c7805
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832715"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890548"
 ---
 # <a name="set-up-offer-management-in-attract"></a>Nastavení správy nabídek v aplikaci Attract
 
@@ -45,9 +45,11 @@ Data nabídky jsou nejmenší jednotkou uvnitř šablony balíčku nabídky. Typ
 
     >[!NOTE]
     > Na stránce **Data nabídky** jsou části **Podrobnosti o kandidátovi** a **Podrobnosti o práci**. Attract poskytuje několik vestavěných zástupných textů pro data nabídky.
-    
+    > 
     > Existují části na stránce pro uspořádání různých zástupných textů dat nabídky do logických skupin. Tyto části mohou pomoci s údržbou dat nabídky a naplňováním dat během procesu vytváření nabídky.
-
+    > 
+    > Chcete-li vytvořit seznam hodnot pro zástupný text, odešlete tabulku aplikace Excel obsahující jeden sloupec se zástupným textem coby název sloupce a seznam voleb v řádcích pod ním. Pokud je na stejný zástupný text odkazováno v jiné sadě pravidel dat, ujistěte se, že mají společnou sadu hodnot.
+    
 1.  Chcete-li vytvořit novou část dat nabídky, klikněte na **Přidat sekci** a zadejte jedinečný název pro sekci.
 
 1.  Chcete-li přidat zástupné texty dat nabídky pro jakoukoliv část, klikněte na **Přidat data nabídky** a zadejte jedinečný název pro zástupný text.

@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 270048e10c6c0b20023467662acfdcd1b255588e
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: f69bfec663cb8473c112f108813f042368439570
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008954"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897228"
 ---
 # <a name="working-time-calendars"></a>Kalendáře pracovní doby
-
-[!include [banner](includes/banner.md)]
 
 Kalendář pracovní doby vám umožňuje vytvořit kalendář s hodinami a dny, kdy zaměstnanci pracují ve vaší organizaci. Kalendáře usnadňují proces požadavků na volno ve výchozím nastavení v hodinách a dnech. Pokud zaměstnanec odešle požadavek na volno, nemusí se starat o svátky a zavírací dny, o což se za ně postará kalendář pracovní doby.
 

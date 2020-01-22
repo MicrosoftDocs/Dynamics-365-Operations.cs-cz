@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 747922294eaf971795177beeb73839d453f6475a
-ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
+ms.openlocfilehash: 0222a187b071c5178069ed0bd5223fbf7fb31b6f
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "2830179"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897066"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Nejčastější dotazy týkající se integrace aplikace Dynamics 365 Talent s Dynamics 365 Finance
-
-[!include [banner](includes/banner.md)]
 
 Toto téma uvádí odpovědi na časté otázky spojené s tím, jaká data jsou synchronizována při integraci aplikace Dynamics 365 Talent s Dynamics 365 Finance.
 

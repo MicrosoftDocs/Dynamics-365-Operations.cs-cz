@@ -18,17 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 968167f735cfa05ef17348ce1d55a184e355fbad
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 10b0f1625ba843dcce56f70a66342fdd5af6b0f1
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517522"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898379"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Uspořádání zaměstnanců pomocí oddělení, prací a pozic
-
-[!include [banner](includes/banner.md)]
-
 
 Oddělení, úlohy a pozice jsou organizační prvky, které jsou evidovány v rámci modulu Lidské zdroje. Toto téma obsahuje koncepční informace o těchto prvcích. 
 

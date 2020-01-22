@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a095fe97b05898403b501763204a462ee8dcc12a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814621"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898241"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-talent---onboard"></a>Vytvoření a odeslání průvodce zaškolením za použití Dynamics 365 Talent - Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Vytvoření a odeslání průvodce zaškolením
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +42,7 @@ Jakmile vytvoříte průvodce zaškolením, můžete ji odeslat novému zaměstn
 
 5. V okně **Vytvořit průvodce**, které je v sekci **Koho zaškolujete?**, zadejte jméno nebo e-mailovou adresu nového zaměstnance. Pokud nový zaměstnanec není dosud v systému, vyberte možnost **Přidat nyní** a zadejte informace o daném zaměstnanci.
 
-    ![[Zadání informací pro průvodce zaškolením](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Zadání údajů pro průvodce zaškolením](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 6. V části **Kdy začínají?** vyberte počáteční datum.
 7. Má-li být průvodce zaškolením automaticky odeslán novému zaměstnanci k určitému datu, ujistěte se, že je zaškrtnuta možnost **Naplánovat datum automatického odeslání** a vyberte datum automatického odeslání. Chcete-li průvodce odeslat okamžitě, vypněte možnost **Naplánovat datum automatického odeslání**.
@@ -92,7 +92,7 @@ Není vždy nutné vytvářet průvodce ze šablony. Chcete-li, můžete místo 
 1. V levé nabídce vyberte možnost **Průvodce** a poté vyberte tlačítko **Přidat** (znaménko plus \[**+**\]).
 2. V okně **Vytvořit průvodce**, které je v sekci **Koho zaškolujete?**, zadejte jméno nebo e-mailovou adresu nového zaměstnance. Pokud nový zaměstnanec není dosud v systému, vyberte možnost **Přidat nyní** a zadejte informace o daném zaměstnanci.
 
-    ![[Zadání informací pro průvodce zaškolením](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Zadání údajů pro průvodce zaškolením](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 3. V části **Kdy začínají?** vyberte počáteční datum.
 4. Má-li být průvodce zaškolením automaticky odeslán novému zaměstnanci k určitému datu, ujistěte se, že je zaškrtnuta možnost **Naplánovat datum automatického odeslání** a vyberte datum automatického odeslání. Chcete-li průvodce odeslat okamžitě, vypněte možnost **Naplánovat datum automatického odeslání**.
@@ -105,7 +105,7 @@ Průvodce zaškolením můžete uložit jako šablonu. Tímto způsobem můžete
 1. V levé nabídce vyberte možnost **Průvodci**.
 2. Vyberte tlačítko **Více** (tři tečky \[**...**\]) pro průvodce, ze kterého chcete vytvořit šablonu, a poté vyberte možnost **Uložit jako šablonu**.
 
-    ![[Uložení průvodce zaškolením jako šablonu](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
+    ![[Uložení průvodce zaškolením jako šablonu.](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 
 3. V okně **Uložit jako novou šablonu** zadejte název nové šablony a pak vyberte možnost **Uložit**.
 

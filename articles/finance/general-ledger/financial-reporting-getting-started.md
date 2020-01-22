@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: caa449feba22c5804799b5317a8e29c139cc440e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f67296797d9a671ae071a13b1bbda73cf3fc6e7f
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176746"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915170"
 ---
 # <a name="financial-reporting-overview"></a>Přehled finančního výkaznictví
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Toto téma popisuje, kde získat přístup k účetnímu výkaznictví a jak používat finanční možnosti vytváření sestav. Obsahuje také popis výchozích finančních sestav, které jsou k dispozici.
 
@@ -79,6 +81,18 @@ Funkce finančního vykazování jsou k dispozici pro uživatele, kteří mají 
 | Zobrazit finanční sestavy                | Posoudit finanční výkonnost          | Nepřiřazeno                                                                   |
 
 Jakmile je uživatel přidán nebo se změní role, měl by mít uživatel během několika minut možnost přístupu k finančnímu výkaznictví. **Poznámka:** Role sysadmin je přidána do všech rolí ve finančních výkazech.
+
+## <a name="report-deletions-and-expirations"></a>Odstranění a vypršení platnosti sestav
+Uživatelé, kteří vygenerovali sestavu, ji mohou i odstranit. Uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví** mohou odstranit sestavy jiných uživatelů. 
+
+Počínaje vydáním 10.0.7 byl zaveden koncept dat vypršení platnosti. V pracovním prostoru pro správu funkcí bude povolena nová povinná funkce. Tato funkce obsahuje následující změny:
+* Nově generované sestavy budou automaticky označeny datem vypršení platnosti 90 dní od jejich vygenerování.
+* Všechny existující sestavy před instalací této funkce budou mít dobu platnosti 90 dní. Datum se může po krátkou dobu zobrazit jako prázdné, dokud není spuštěna služba finančního výkaznictví, vygeneruje se sestava a služba provede aktualizaci existujících sestav s prázdným datem vypršení platnosti. 
+* K této funkci mají přístup uživatelé s povinností **Udržovat zabezpečení finančního výkaznictví**. Uživatel s povinností **Udržovat finanční sestavy** s oprávněním **Udržovat vypršení platnosti finančních sestav** má také možnost změnit dobu vypršení platnosti. Nyní jsou k dispozici dvě možnosti uchování sestav: 
+  * Vypršení platnosti za 90 dní
+  * Možnost nastavení nekonečné doby vypršení platnosti sestavy
+
+Je-li vybráno vypršení platnosti 90 dnů, zaručuje platnost 90 dní ode dneška, což je odlišné chování, než 90 dnů od data původního generování nastaveného během generování sestavy. 
 
 ## <a name="default-reports"></a>Výchozí sestavy
 Finanční vykazování poskytuje 22 výchozích finančních výkazů. Každá sestava používá výchozí kategorie hlavního účtu. Tyto sestavy lze použít tak, jak jsou, nebo slouží jako výchozí bod vaše potřeby finančního vykazování. Kromě tradiční finančních výkazů, například výkaz zisků a ztrát nebo rozvaha, tyto výchozí sestavy zahrnují sestavy, které zobrazují různé typy finančních výkazů, které je možné vytvořit. 

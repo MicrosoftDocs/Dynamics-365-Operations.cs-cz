@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7a988f533757cc3f8555fcf4fb724a22a5b014f8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 8f73c034563fb1cc6b05091b4c47e2a788d1a8b6
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770451"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945529"
 ---
 # <a name="configure-your-domain-name"></a>Konfigurace názvu domény
 
@@ -43,16 +43,16 @@ Chcete-li po inicializaci elektronického obchodu přidružit nové domény k pr
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Přehled online obchodu](online-store-overview.md)
+[Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
 
 [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
-[Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
-
 [Přiřazení online webu ke kanálu](associate-site-online-store.md)
+
+[Správa souborů robots.txt](manage-robots-txt-files.md)
+
+[Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
 
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 
 [Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)
-
-[Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)

@@ -3,7 +3,7 @@ title: Přidání uvítací zprávy
 description: V tomto tématu je popsán postup při přidání uvítací zprávy na webovou stránku Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 25a4e91646916b03c8a138fc713577f429ab633c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 4e9deeeaf491b77700ba0833e429f05d376a4392
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697352"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914509"
 ---
 # <a name="add-a-welcome-message"></a>Přidání uvítací zprávy
 
@@ -60,6 +60,8 @@ Uvítací zpráva se nyní zobrazuje v horní části každé stránky webu, kte
 [Přidání loga](add-logo.md)
 
 [Volba motivu webu](select-site-theme.md)
+
+[Práce se soubory přepisu šablon CSS](css-override-files.md)
 
 [Přidání ikony oblíbené položky](add-favicon.md)
 

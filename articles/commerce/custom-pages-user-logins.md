@@ -3,7 +3,7 @@ title: Nastavení vlastních stránek pro přihlášení uživatelů
 description: V tomto tématu je popsán způsob vytváření vlastních stránek v řešení Microsoft Dynamics 365 Commerce, které zpracovávají přizpůsobená přihlášení uživatelů klientů B2C (business-to-consumer) služby Azure Active Directory (Azure AD).
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 644d937ddd3c219ae869f22d977d2846dffc20e1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 20bfacbc2374003814e12e7737644d118d404cc0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697536"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945552"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Nastavení vlastních stránek pro přihlášení uživatelů
 
@@ -136,11 +136,11 @@ Chcete-li aktualizovat zásadu „Registrace a přihlášení“ o informace o v
 1. V zásadě **Registrace a přihlášení**, kterou jste již konfigurovali, vyberte v navigačním podokně možnost **Rozložení stránek**.
 1. Vyberte rozložení **Jednotná stránka pro registraci nebo přihlášení**.
 1. Nastavte volbu **Použít obsah vlastní stránky** na hodnotu **Ano**.
-1. Do pole **Identifikátor URI vlastní stránky** zadejte úplnou adresu URL pro přihlášení. Zahrňte příponu **?preloadscripts=true**. Zadejte například **www.\<moje doména\>.com/sign-in?preloadscripts=true**.
+1. Do pole **Identifikátor URI vlastní stránky** zadejte úplnou adresu URL pro přihlášení. Zahrňte příponu **?preloadscripts=true**. Zadejte například ``www.<my domain>.com/sign-in?preloadscripts=true``.
 1. V poli **Verze rozložení stránky (Preview)** vyberte **1.2.0**.
 1. Vyberte rozložení **Stránka pro registraci místního účtu**.
 1. Nastavte volbu **Použít obsah vlastní stránky** na hodnotu **Ano**.
-1. Do pole **Identifikátor URI vlastní stránky** zadejte úplnou adresu URL pro přihlášení. Zahrňte příponu **?preloadscripts=true**. Zadejte například **www.\<moje doména\>.com/sign-in?preloadscripts=true**.
+1. Do pole **Identifikátor URI vlastní stránky** zadejte úplnou adresu URL pro registraci. Zahrňte příponu **?preloadscripts=true**. Zadejte například ``www.<my domain>.com/sign-up?preloadscripts=true``.
 1. V poli **Verze rozložení stránky (Preview)** vyberte **1.2.0**.
 1. V části **Atributy uživatele** postupujte takto:
 
@@ -156,7 +156,7 @@ Chcete-li aktualizovat zásadu „Editace profilu“ o informace o vlastní str�
 1. V zásadě **Úprava profilu**, kterou jste již konfigurovali, vyberte v navigačním podokně možnost **Rozložení stránek**.
 1. Vyberte rozložení **Stránka Úprava profilu**.
 1. Nastavte volbu **Použít obsah vlastní stránky** na hodnotu **Ano**.
-1. Do pole **Identifikátor URI vlastní stránky** zadejte úplnou adresu URL pro přihlášení. Zahrňte příponu **?preloadscripts=true**. Zadejte například **www.\<moje doména\>.com/sign-in?preloadscripts=true**.
+1. Do pole **Identifikátor URI vlastní stránky** zadejte úplnou adresu URL profilu. Zahrňte příponu **?preloadscripts=true**. Zadejte například ``www.<my domain>.com/profile-edit?preloadscripts=true``.
 1. V poli **Verze rozložení stránky (Preview)** vyberte **1.2.0**.
 1. V části **Atributy uživatele** postupujte takto:
 
@@ -170,12 +170,14 @@ Chcete-li aktualizovat zásadu „Resetování hesla“ o informace o vlastní s
 1. V zásadě **Resetování hesla**, kterou jste již konfigurovali, vyberte v navigačním podokně možnost **Rozložení stránek**.
 1. Vyberte rozložení **Stránka Nové heslo**.
 1. Nastavte volbu **Použít obsah vlastní stránky** na hodnotu **Ano**.
-1. Do pole **Identifikátor URI vlastní stránky** zadejte úplnou adresu URL pro přihlášení. Zahrňte příponu **?preloadscripts=true**. Zadejte například **www.\<moje doména\>.com/sign-in?preloadscripts=true**.
+1. Do pole **Identifikátor URI vlastní stránky** zadejte úplnou adresu URL pro resetování hesla. Zahrňte příponu **?preloadscripts=true**. Zadejte například ``www.<my domain>.com/passwordreset?preloadscripts=true``.
 1. V poli **Verze rozložení stránky (Preview)** vyberte **1.2.0**.
 1. Vyberte rozložení **Stránk Ověření účtu**.
 1. Nastavte volbu **Použít obsah vlastní stránky** na hodnotu **Ano**.
-1. Do pole **Identifikátor URI vlastní stránky** zadejte úplnou adresu URL pro přihlášení. Zahrňte příponu **?preloadscripts=true**. Zadejte například **www.\<moje doména\>.com/sign-in?preloadscripts=true**.
+1. Do pole **Identifikátor URI vlastní stránky** zadejte úplnou adresu URL pro ověření. Zahrňte příponu **?preloadscripts=true**. Zadejte například ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
 1. V poli **Verze rozložení stránky (Preview)** vyberte **1.2.0**.
+
+
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Přizpůsobení výchozích textových řetězců pro popisky a popisy
 
@@ -193,15 +195,15 @@ Po aktualizaci souboru global.json a publikování změn se nový text odkazu zo
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Přehled online obchodu](online-store-overview.md)
-
-[Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
+[Konfigurace názvu domény](configure-your-domain-name.md)
 
 [Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
 
+[Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
+
 [Přiřazení online webu ke kanálu](associate-site-online-store.md)
 
-[Konfigurace názvu domény](configure-your-domain-name.md)
+[Správa souborů robots.txt](manage-robots-txt-files.md)
 
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 

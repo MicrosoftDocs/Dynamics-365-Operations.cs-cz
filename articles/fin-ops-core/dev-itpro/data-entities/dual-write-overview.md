@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 072564446b74318ffc8e8e6ad4fd16f4421e7854
+ms.sourcegitcommit: d0322d1ed6c798301058e44dae76227a0e1f49ac
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772380"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853899"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Integrace dat téměř v reálném čase pomocí Common Data Service
 
@@ -59,7 +59,7 @@ Synchronní, obousměrný datový tok téměř v reálném čase vyžaduje násl
 Pro nastavení integrace mezi aplikacemi Finance and Operations a Common Data Service postupujte podle těchto kroků.
     
 1. Chcete-li nastavit systém s dvojím zápisem, přečtěte si [podrobný návod](https://aka.ms/dualwrite-docs) k oznámení verze Preview dvojího zápisu.
-2. Stáhněte a nainstalujte řešení ze skupiny [integrace Finance and Operations, Common Data Service a Customer Engagement Integration](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer Balíček obsahuje pět řešení:
+2. Stáhněte a nainstalujte řešení ze skupiny [Integrace finančních operací a CDS/CE prostřednictvím dvojího zápisu](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer. Balíček obsahuje pět řešení:
 
     + Dynamics365Company
     + CurrencyExchangeRates
