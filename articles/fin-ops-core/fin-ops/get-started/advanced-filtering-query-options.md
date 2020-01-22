@@ -3,7 +3,7 @@ title: Syntax pokročilého filtrování a dotazů
 description: Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru shody v podokně filtru nebo filtrech záhlaví sloupce mřížky.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,219 +18,225 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9e57cac740a26c6c5b451c92d856e533c6db33e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
+ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180822"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "2931281"
 ---
-# <a name="advanced-filtering-and-query-syntax"></a><span data-ttu-id="e168f-103">Pokročilé filtrování a syntaxe dotazu</span><span class="sxs-lookup"><span data-stu-id="e168f-103">Advanced filtering and query syntax</span></span>
+# <a name="advanced-filtering-and-query-syntax"></a><span data-ttu-id="1c9fe-103">Pokročilé filtrování a syntaxe dotazu</span><span class="sxs-lookup"><span data-stu-id="1c9fe-103">Advanced filtering and query syntax</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="e168f-104">Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru **shody** v podokně filtru nebo filtrech záhlaví sloupce mřížky.</span><span class="sxs-lookup"><span data-stu-id="e168f-104">This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.</span></span>
+<span data-ttu-id="1c9fe-104">Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru **shody** v podokně filtru nebo filtrech záhlaví sloupce mřížky.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-104">This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.</span></span>
 
-## <a name="advanced-query-syntax"></a><span data-ttu-id="e168f-105">Syntax pokročilých dotazů</span><span class="sxs-lookup"><span data-stu-id="e168f-105">Advanced query syntax</span></span>
+## <a name="advanced-query-syntax"></a><span data-ttu-id="1c9fe-105">Syntax pokročilých dotazů</span><span class="sxs-lookup"><span data-stu-id="1c9fe-105">Advanced query syntax</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="e168f-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="e168f-106">Syntax</span></span></th>
-<th><span data-ttu-id="e168f-107">Popis znaku</span><span class="sxs-lookup"><span data-stu-id="e168f-107">Character description</span></span></th>
-<th><span data-ttu-id="e168f-108">popis</span><span class="sxs-lookup"><span data-stu-id="e168f-108">Description</span></span></th>
-<th><span data-ttu-id="e168f-109">Příklad</span><span class="sxs-lookup"><span data-stu-id="e168f-109">Example</span></span></th>
+<th><span data-ttu-id="1c9fe-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="1c9fe-106">Syntax</span></span></th>
+<th><span data-ttu-id="1c9fe-107">Popis znaku</span><span class="sxs-lookup"><span data-stu-id="1c9fe-107">Character description</span></span></th>
+<th><span data-ttu-id="1c9fe-108">popis</span><span class="sxs-lookup"><span data-stu-id="1c9fe-108">Description</span></span></th>
+<th><span data-ttu-id="1c9fe-109">Příklad</span><span class="sxs-lookup"><span data-stu-id="1c9fe-109">Example</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="e168f-110"><em>hodnota</em></span><span class="sxs-lookup"><span data-stu-id="e168f-110"><em>value</em></span></span></td>
-<td><span data-ttu-id="e168f-111">Rovno zadané hodnotě</span><span class="sxs-lookup"><span data-stu-id="e168f-111">Equal to the value that is entered</span></span></td>
-<td><span data-ttu-id="e168f-112">Zadejte hodnotu, kterou chcete vyhledat.</span><span class="sxs-lookup"><span data-stu-id="e168f-112">Type the value to find.</span></span></td>
-<td><span data-ttu-id="e168f-113"><strong>Smith</strong> vyhledá &quot;Smith&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-113"><strong>Smith</strong> finds &quot;Smith&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-110"><em>hodnota</em></span><span class="sxs-lookup"><span data-stu-id="1c9fe-110"><em>value</em></span></span></td>
+<td><span data-ttu-id="1c9fe-111">Rovno zadané hodnotě</span><span class="sxs-lookup"><span data-stu-id="1c9fe-111">Equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="1c9fe-112">Zadejte hodnotu, kterou chcete vyhledat.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-112">Type the value to find.</span></span></td>
+<td><span data-ttu-id="1c9fe-113"><strong>Smith</strong> vyhledá &quot;Smith&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-113"><strong>Smith</strong> finds &quot;Smith&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-114">!<em>hodnota</em> (vykřičník)</span><span class="sxs-lookup"><span data-stu-id="e168f-114">!<em>value</em> (exclamation point)</span></span></td>
-<td><span data-ttu-id="e168f-115">Není rovno zadané hodnotě</span><span class="sxs-lookup"><span data-stu-id="e168f-115">Not equal to the value that is entered</span></span></td>
-<td><span data-ttu-id="e168f-116">Před hodnotu, kterou chcete vyloučit, zadejte vykřičník.</span><span class="sxs-lookup"><span data-stu-id="e168f-116">Type an exclamation point and then the value to exclude.</span></span></td>
-<td><span data-ttu-id="e168f-117"><strong>!Smith</strong> vyhledá všechny hodnoty kromě hodnoty &quot;Smith&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-117"><strong>!Smith</strong> finds all values except &quot;Smith&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-114">!<em>hodnota</em> (vykřičník)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-114">!<em>value</em> (exclamation point)</span></span></td>
+<td><span data-ttu-id="1c9fe-115">Není rovno zadané hodnotě</span><span class="sxs-lookup"><span data-stu-id="1c9fe-115">Not equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="1c9fe-116">Před hodnotu, kterou chcete vyloučit, zadejte vykřičník.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-116">Type an exclamation point and then the value to exclude.</span></span></td>
+<td><span data-ttu-id="1c9fe-117"><strong>!Smith</strong> vyhledá všechny hodnoty kromě hodnoty &quot;Smith&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-117"><strong>!Smith</strong> finds all values except &quot;Smith&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-118"><em>hodnota od</em>..<em>hodnota do</em> (dvojí období)</span><span class="sxs-lookup"><span data-stu-id="e168f-118"><em>from-value</em>..<em>to-value</em> (double period)</span></span></td>
-<td><span data-ttu-id="e168f-119">Mezi dvěma zadanými hodnotami oddělenými dvěma tečkami</span><span class="sxs-lookup"><span data-stu-id="e168f-119">Between the two values that are separated by double periods</span></span></td>
-<td><span data-ttu-id="e168f-120">Zadejte hodnotu Od, pak dvě tečky a nakonec hodnotu Do.</span><span class="sxs-lookup"><span data-stu-id="e168f-120">Type the from-value, then two periods, and then the to-value.</span></span></td>
-<td><span data-ttu-id="e168f-121"><strong>1..10</strong> vyhledá všechny hodnoty od 1 do 10.</span><span class="sxs-lookup"><span data-stu-id="e168f-121"><strong>1..10</strong> finds all values from 1 through 10.</span></span> <span data-ttu-id="e168f-122">V poli řetězce však zadání hodnot <strong>A..C</strong> vyhledá všechny hodnoty, které začínají písmeny &quot;A&quot; a &quot;B&quot; a hodnoty, které se přesně rovnají &quot;C&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-122">However, in a string field, <strong>A..C</strong> finds all values that start with &quot;A&quot; and &quot;B&quot;, and values that are exactly equal to &quot;C&quot;.</span></span> <span data-ttu-id="e168f-123">Tento dotaz nebude hledat například &quot;Ca&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-123">For example, this query won't find &quot;Ca&quot;.</span></span> <span data-ttu-id="e168f-124">Chcete-li vyhledat všechny hodnoty od &quot;A<em>&quot; do &quot;C</em>&quot;, <strong>A..D</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-124">To find all values from &quot;A<em>&quot; through &quot;C</em>&quot;, type <strong>A..D</strong>.</span></span></td>
+<td><span data-ttu-id="1c9fe-118"><em>hodnota od</em>..<em>hodnota do</em> (dvojí období)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-118"><em>from-value</em>..<em>to-value</em> (double period)</span></span></td>
+<td><span data-ttu-id="1c9fe-119">Mezi dvěma zadanými hodnotami oddělenými dvěma tečkami</span><span class="sxs-lookup"><span data-stu-id="1c9fe-119">Between the two values that are separated by double periods</span></span></td>
+<td><span data-ttu-id="1c9fe-120">Zadejte hodnotu Od, pak dvě tečky a nakonec hodnotu Do.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-120">Type the from-value, then two periods, and then the to-value.</span></span></td>
+<td><span data-ttu-id="1c9fe-121"><strong>1..10</strong> vyhledá všechny hodnoty od 1 do 10.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-121"><strong>1..10</strong> finds all values from 1 through 10.</span></span> <span data-ttu-id="1c9fe-122">V poli řetězce však zadání hodnot <strong>A..C</strong> vyhledá všechny hodnoty, které začínají písmeny &quot;A&quot; a &quot;B&quot; a hodnoty, které se přesně rovnají &quot;C&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-122">However, in a string field, <strong>A..C</strong> finds all values that start with &quot;A&quot; and &quot;B&quot;, and values that are exactly equal to &quot;C&quot;.</span></span> <span data-ttu-id="1c9fe-123">Tento dotaz nebude hledat například &quot;Ca&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-123">For example, this query won't find &quot;Ca&quot;.</span></span> <span data-ttu-id="1c9fe-124">Chcete-li vyhledat všechny hodnoty od &quot;A<em>&quot; do &quot;C</em>&quot;, <strong>A..D</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-124">To find all values from &quot;A<em>&quot; through &quot;C</em>&quot;, type <strong>A..D</strong>.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-125">..<em>hodnota</em> (dvojí období)</span><span class="sxs-lookup"><span data-stu-id="e168f-125">..<em>value</em> (double period)</span></span></td>
-<td><span data-ttu-id="e168f-126">Méně nebo rovno zadané hodnotě</span><span class="sxs-lookup"><span data-stu-id="e168f-126">Less than or equal to the value that is entered</span></span></td>
-<td><span data-ttu-id="e168f-127">Zadejte dvě tečky a pak hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e168f-127">Type two periods and then the value.</span></span></td>
-<td><span data-ttu-id="e168f-128"><strong>..1000</strong> vyhledá libovolné číslo menší nebo rovné hodnotě 1000: například &quot;100&quot;, &quot;999.95&quot;, and &quot;1,000&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-128"><strong>..1000</strong> finds any number that is less than or equal to 1000, such as &quot;100&quot;, &quot;999.95&quot;, and &quot;1,000&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-125">..<em>hodnota</em> (dvojí období)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-125">..<em>value</em> (double period)</span></span></td>
+<td><span data-ttu-id="1c9fe-126">Méně nebo rovno zadané hodnotě</span><span class="sxs-lookup"><span data-stu-id="1c9fe-126">Less than or equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="1c9fe-127">Zadejte dvě tečky a pak hodnotu.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-127">Type two periods and then the value.</span></span></td>
+<td><span data-ttu-id="1c9fe-128"><strong>..1000</strong> vyhledá libovolné číslo menší nebo rovné hodnotě 1000: například &quot;100&quot;, &quot;999.95&quot;, and &quot;1,000&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-128"><strong>..1000</strong> finds any number that is less than or equal to 1000, such as &quot;100&quot;, &quot;999.95&quot;, and &quot;1,000&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-129"><em>hodnota</em>..</span><span class="sxs-lookup"><span data-stu-id="e168f-129"><em>value</em>..</span></span> <span data-ttu-id="e168f-130">(dvě tečky)</span><span class="sxs-lookup"><span data-stu-id="e168f-130">(double period)</span></span></td>
-<td><span data-ttu-id="e168f-131">Větší nebo rovno zadané hodnotě</span><span class="sxs-lookup"><span data-stu-id="e168f-131">Greater than or equal to the value that is entered</span></span></td>
-<td><span data-ttu-id="e168f-132">Zadejte hodnotu a poté dvě tečky.</span><span class="sxs-lookup"><span data-stu-id="e168f-132">Type the value and then two periods.</span></span></td>
-<td><span data-ttu-id="e168f-133"><strong>1000..</strong></span><span class="sxs-lookup"><span data-stu-id="e168f-133"><strong>1000..</strong></span></span> <span data-ttu-id="e168f-134">vyhledá libovolné číslo větší nebo rovné hodnotě 1000: například &quot;1,000&quot;, &quot;1,000.01&quot;, and &quot;1,000,000&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-134">finds any number that is greater than or equal to 1000, such as &quot;1,000&quot;, &quot;1,000.01&quot;, and &quot;1,000,000&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-129"><em>hodnota</em>..</span><span class="sxs-lookup"><span data-stu-id="1c9fe-129"><em>value</em>..</span></span> <span data-ttu-id="1c9fe-130">(dvě tečky)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-130">(double period)</span></span></td>
+<td><span data-ttu-id="1c9fe-131">Větší nebo rovno zadané hodnotě</span><span class="sxs-lookup"><span data-stu-id="1c9fe-131">Greater than or equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="1c9fe-132">Zadejte hodnotu a poté dvě tečky.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-132">Type the value and then two periods.</span></span></td>
+<td><span data-ttu-id="1c9fe-133"><strong>1000..</strong></span><span class="sxs-lookup"><span data-stu-id="1c9fe-133"><strong>1000..</strong></span></span> <span data-ttu-id="1c9fe-134">vyhledá libovolné číslo větší nebo rovné hodnotě 1000: například &quot;1,000&quot;, &quot;1,000.01&quot;, and &quot;1,000,000&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-134">finds any number that is greater than or equal to 1000, such as &quot;1,000&quot;, &quot;1,000.01&quot;, and &quot;1,000,000&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-135">&gt;<em>hodnota</em> (znaménko větší než)</span><span class="sxs-lookup"><span data-stu-id="e168f-135">&gt;<em>value</em> (greater than sign)</span></span></td>
-<td><span data-ttu-id="e168f-136">Větší než zadaná hodnota</span><span class="sxs-lookup"><span data-stu-id="e168f-136">Greater than the value that is entered</span></span></td>
-<td><span data-ttu-id="e168f-137">Zadejte znaménko „větší než“ (<strong>&gt;</strong>) a pak hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e168f-137">Type a greater than sign (<strong>&gt;</strong>) and then the value.</span></span></td>
-<td><span data-ttu-id="e168f-138"><strong>&gt;1000</strong> vyhledá libovolné číslo větší než hodnota 1000: &quot;1000.01&quot;, &quot;20,000&quot;, and &quot;1,000,000&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-138"><strong>&gt;1000</strong> finds any number that is greater than 1000, such as &quot;1000.01&quot;, &quot;20,000&quot;, and &quot;1,000,000&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-135">&gt;<em>hodnota</em> (znaménko větší než)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-135">&gt;<em>value</em> (greater than sign)</span></span></td>
+<td><span data-ttu-id="1c9fe-136">Větší než zadaná hodnota</span><span class="sxs-lookup"><span data-stu-id="1c9fe-136">Greater than the value that is entered</span></span></td>
+<td><span data-ttu-id="1c9fe-137">Zadejte znaménko „větší než“ (<strong>&gt;</strong>) a pak hodnotu.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-137">Type a greater than sign (<strong>&gt;</strong>) and then the value.</span></span></td>
+<td><span data-ttu-id="1c9fe-138"><strong>&gt;1000</strong> vyhledá libovolné číslo větší než hodnota 1000: &quot;1000.01&quot;, &quot;20,000&quot;, and &quot;1,000,000&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-138"><strong>&gt;1000</strong> finds any number that is greater than 1000, such as &quot;1000.01&quot;, &quot;20,000&quot;, and &quot;1,000,000&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-139">&lt;<em>hodnota</em> (znaménko menší než)</span><span class="sxs-lookup"><span data-stu-id="e168f-139">&lt;<em>value</em> (less than sign)</span></span></td>
-<td><span data-ttu-id="e168f-140">Menší než zadaná hodnota</span><span class="sxs-lookup"><span data-stu-id="e168f-140">Less than the value that is entered</span></span></td>
-<td><span data-ttu-id="e168f-141">Zadejte znaménko „menší než“ (<strong>&lt;</strong>) a pak hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e168f-141">Type a less than sign (<strong>&lt;</strong>) and then the value.</span></span></td>
-<td><span data-ttu-id="e168f-142"><strong>&lt;1000</strong> vyhledá libovolné číslo menší než hodnota 1000: například &quot;999.99&quot;, &quot;1&quot;, and &quot;-200&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-142"><strong>&lt;1000</strong> finds any number that is less than 1000, such as &quot;999.99&quot;, &quot;1&quot;, and &quot;-200&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-139">&lt;<em>hodnota</em> (znaménko menší než)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-139">&lt;<em>value</em> (less than sign)</span></span></td>
+<td><span data-ttu-id="1c9fe-140">Menší než zadaná hodnota</span><span class="sxs-lookup"><span data-stu-id="1c9fe-140">Less than the value that is entered</span></span></td>
+<td><span data-ttu-id="1c9fe-141">Zadejte znaménko „menší než“ (<strong>&lt;</strong>) a pak hodnotu.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-141">Type a less than sign (<strong>&lt;</strong>) and then the value.</span></span></td>
+<td><span data-ttu-id="1c9fe-142"><strong>&lt;1000</strong> vyhledá libovolné číslo menší než hodnota 1000: například &quot;999.99&quot;, &quot;1&quot;, and &quot;-200&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-142"><strong>&lt;1000</strong> finds any number that is less than 1000, such as &quot;999.99&quot;, &quot;1&quot;, and &quot;-200&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-143"><em>hodnota</em>\* (hvězdička)</span><span class="sxs-lookup"><span data-stu-id="e168f-143"><em>value</em>\* (asterisk)</span></span></td>
-<td><span data-ttu-id="e168f-144">Začínající od zadané hodnoty</span><span class="sxs-lookup"><span data-stu-id="e168f-144">Starting from the value that is entered</span></span></td>
-<td><span data-ttu-id="e168f-145">Zadejte počáteční hodnotu a pak hvězdičku (<strong>\*</strong>).</span><span class="sxs-lookup"><span data-stu-id="e168f-145">Type the starting value and then an asterisk (<strong>\*</strong>).</span></span></td>
-<td><span data-ttu-id="e168f-146"><strong>S\*</strong>nalezne libovolný řetězec začínající na &quot;S&quot;, jako například &quot;Stockholm&quot;, &quot;Sydney&quot;, a &quot;San Francisco&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-146"><strong>S\*</strong> finds any string that starts with &quot;S&quot;, such as &quot;Stockholm&quot;, &quot;Sydney&quot;, and &quot;San Francisco&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-143"><em>hodnota</em>\* (hvězdička)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-143"><em>value</em>\* (asterisk)</span></span></td>
+<td><span data-ttu-id="1c9fe-144">Začínající od zadané hodnoty</span><span class="sxs-lookup"><span data-stu-id="1c9fe-144">Starting from the value that is entered</span></span></td>
+<td><span data-ttu-id="1c9fe-145">Zadejte počáteční hodnotu a pak hvězdičku (<strong>\*</strong>).</span><span class="sxs-lookup"><span data-stu-id="1c9fe-145">Type the starting value and then an asterisk (<strong>\*</strong>).</span></span></td>
+<td><span data-ttu-id="1c9fe-146"><strong>S\*</strong>nalezne libovolný řetězec začínající na &quot;S&quot;, jako například &quot;Stockholm&quot;, &quot;Sydney&quot;, a &quot;San Francisco&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-146"><strong>S\*</strong> finds any string that starts with &quot;S&quot;, such as &quot;Stockholm&quot;, &quot;Sydney&quot;, and &quot;San Francisco&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-147">\*<em>hodnota</em> (hvězdička)</span><span class="sxs-lookup"><span data-stu-id="e168f-147">\*<em>value</em> (asterisk)</span></span></td>
-<td><span data-ttu-id="e168f-148">Končí zadanou hodnotou</span><span class="sxs-lookup"><span data-stu-id="e168f-148">Ending with the value that is entered</span></span></td>
-<td><span data-ttu-id="e168f-149">Zadejte hvězdičku a pak konečnou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e168f-149">Type an asterisk and then the ending value.</span></span></td>
-<td><span data-ttu-id="e168f-150"><strong>\*east</strong>nalezne řetězec končící na &quot;východ&quot;, jako například &quot;severovýchod&quot; nebo &quot;jihovýchod&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-150"><strong>\*east</strong> finds any string that ends with &quot;east&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-147">\*<em>hodnota</em> (hvězdička)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-147">\*<em>value</em> (asterisk)</span></span></td>
+<td><span data-ttu-id="1c9fe-148">Končí zadanou hodnotou</span><span class="sxs-lookup"><span data-stu-id="1c9fe-148">Ending with the value that is entered</span></span></td>
+<td><span data-ttu-id="1c9fe-149">Zadejte hvězdičku a pak konečnou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-149">Type an asterisk and then the ending value.</span></span></td>
+<td><span data-ttu-id="1c9fe-150"><strong>\*east</strong>nalezne řetězec končící na &quot;východ&quot;, jako například &quot;severovýchod&quot; nebo &quot;jihovýchod&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-150"><strong>\*east</strong> finds any string that ends with &quot;east&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-151">*<em>hodnota</em>* (hvězdička)</span><span class="sxs-lookup"><span data-stu-id="e168f-151">*<em>value</em>* (asterisk)</span></span></td>
-<td><span data-ttu-id="e168f-152">Obsahující zadanou hodnotu</span><span class="sxs-lookup"><span data-stu-id="e168f-152">Containing the value that is entered</span></span></td>
-<td><span data-ttu-id="e168f-153">Zadejte hvězdičku, pak hodnotu, a nakonec opět hvězdičku.</span><span class="sxs-lookup"><span data-stu-id="e168f-153">Type an asterisk, then a value, and then another asterisk.</span></span></td>
-<td><span data-ttu-id="e168f-154"><strong>*th*</strong> nalezne libovolný řetězec obsahující &quot;ch&quot;, jako například &quot;severovýchod&quot; nebo &quot;jihovýchod&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-154"><strong>*th*</strong> finds any string that contains &quot;th&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-151">*<em>hodnota</em>* (hvězdička)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-151">*<em>value</em>* (asterisk)</span></span></td>
+<td><span data-ttu-id="1c9fe-152">Obsahující zadanou hodnotu</span><span class="sxs-lookup"><span data-stu-id="1c9fe-152">Containing the value that is entered</span></span></td>
+<td><span data-ttu-id="1c9fe-153">Zadejte hvězdičku, pak hodnotu, a nakonec opět hvězdičku.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-153">Type an asterisk, then a value, and then another asterisk.</span></span></td>
+<td><span data-ttu-id="1c9fe-154"><strong>*th*</strong> nalezne libovolný řetězec obsahující &quot;ch&quot;, jako například &quot;severovýchod&quot; nebo &quot;jihovýchod&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-154"><strong>*th*</strong> finds any string that contains &quot;th&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-155">?</span><span class="sxs-lookup"><span data-stu-id="e168f-155">?</span></span> <span data-ttu-id="e168f-156">(otazník)</span><span class="sxs-lookup"><span data-stu-id="e168f-156">(question mark)</span></span></td>
-<td><span data-ttu-id="e168f-157">Obsahující jeden nebo více neznámých znaků</span><span class="sxs-lookup"><span data-stu-id="e168f-157">Having one or more unknown characters</span></span></td>
-<td><span data-ttu-id="e168f-158">V pozici neznámého znaku v hodnotě můžete zadat otazník.</span><span class="sxs-lookup"><span data-stu-id="e168f-158">Type a question mark at the position of the unknown character in the value.</span></span></td>
-<td><span data-ttu-id="e168f-159"><strong>Sm?th</strong> nalezne &quot;Smith&quot; a &quot;Smyth&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-159"><strong>Sm?th</strong> finds &quot;Smith&quot; and &quot;Smyth&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-155">?</span><span class="sxs-lookup"><span data-stu-id="1c9fe-155">?</span></span> <span data-ttu-id="1c9fe-156">(otazník)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-156">(question mark)</span></span></td>
+<td><span data-ttu-id="1c9fe-157">Obsahující jeden nebo více neznámých znaků</span><span class="sxs-lookup"><span data-stu-id="1c9fe-157">Having one or more unknown characters</span></span></td>
+<td><span data-ttu-id="1c9fe-158">V pozici neznámého znaku v hodnotě můžete zadat otazník.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-158">Type a question mark at the position of the unknown character in the value.</span></span></td>
+<td><span data-ttu-id="1c9fe-159"><strong>Sm?th</strong> nalezne &quot;Smith&quot; a &quot;Smyth&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-159"><strong>Sm?th</strong> finds &quot;Smith&quot; and &quot;Smyth&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-160"><em>hodnota</em>,<em>hodnota</em> (čárka)</span><span class="sxs-lookup"><span data-stu-id="e168f-160"><em>value</em>,<em>value</em> (comma)</span></span></td>
-<td><span data-ttu-id="e168f-161">Shoduje se s hodnotami oddělenými čárkou</span><span class="sxs-lookup"><span data-stu-id="e168f-161">Matching the values that are separated by commas</span></span></td>
-<td><span data-ttu-id="e168f-162">Zadejte veškerá vaše kritéria a oddělte je čárkami.</span><span class="sxs-lookup"><span data-stu-id="e168f-162">Type all your criteria, and separate them by using commas.</span></span></td>
-<td><span data-ttu-id="e168f-163"><strong>A, D, F, G</strong> vyhledá přesně &quot;A&quot;, &quot;D&quot;, &quot;F&quot; a &quot;G&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-163"><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;.</span></span> <span data-ttu-id="e168f-164"><strong>10, 20, 30, 100</strong> vyhledá přesně &quot;10, 20, 30, 100&quot;.</span><span class="sxs-lookup"><span data-stu-id="e168f-164"><strong>10, 20, 30, 100</strong> finds exactly &quot;10, 20, 30, 100&quot;.</span></span></td>
+<td><span data-ttu-id="1c9fe-160"><em>hodnota</em>,<em>hodnota</em> (čárka)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-160"><em>value</em>,<em>value</em> (comma)</span></span></td>
+<td><span data-ttu-id="1c9fe-161">Shoduje se s hodnotami oddělenými čárkou</span><span class="sxs-lookup"><span data-stu-id="1c9fe-161">Matching the values that are separated by commas</span></span></td>
+<td><span data-ttu-id="1c9fe-162">Zadejte veškerá vaše kritéria a oddělte je čárkami.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-162">Type all your criteria, and separate them by using commas.</span></span></td>
+<td><span data-ttu-id="1c9fe-163"><strong>A, D, F, G</strong> vyhledá přesně &quot;A&quot;, &quot;D&quot;, &quot;F&quot; a &quot;G&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-163"><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;.</span></span> <span data-ttu-id="1c9fe-164"><strong>10, 20, 30, 100</strong> vyhledá přesně &quot;10, 20, 30, 100&quot;.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-164"><strong>10, 20, 30, 100</strong> finds exactly &quot;10, 20, 30, 100&quot;.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-165">(<span class="code">příkaz SQL</span>) (příkaz SQL v uvozovkách)</span><span class="sxs-lookup"><span data-stu-id="e168f-165">(<span class="code">SQL statement</span>) (SQL statement between parentheses)</span></span></td>
-<td><span data-ttu-id="e168f-166">Nalezení definovaného dotazu</span><span class="sxs-lookup"><span data-stu-id="e168f-166">Matching a defined query</span></span></td>
-<td><span data-ttu-id="e168f-167">Zadejte dotaz ve formě příkazu SQL v uvozovkách.</span><span class="sxs-lookup"><span data-stu-id="e168f-167">Type a query as an SQL statement between parentheses.</span></span></td>
-<td><span data-ttu-id="e168f-168"><strong><span class="code">(datový zdroj.Název pole != &quot;A&quot;)</span></strong></span><span class="sxs-lookup"><span data-stu-id="e168f-168"><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></span></span></td>
+<td><span data-ttu-id="1c9fe-165">"" (dvě dvojité uvozovky)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-165">"" (two double quotes)</span></span></td>
+<td><span data-ttu-id="1c9fe-166">Odpovídající prázdná hodnota</span><span class="sxs-lookup"><span data-stu-id="1c9fe-166">Matching a blank value</span></span></td>
+<td><span data-ttu-id="1c9fe-167">Zadejte dvě po sobě jdoucí dvojité uvozovky pro filtrování prázdných hodnot v daném poli.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-167">Type two consecutive double quotes to filter for blank values in that field.</span></span></td>
+<td><span data-ttu-id="1c9fe-168">Dvě po sobě jdoucí dvojité uvozovky (<strong>""</strong>) naleznou řádky bez hodnoty pro aktuální sloupec.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-168">Two consecutive double quotes (<strong>""</strong>) finds rows with no value for the current column.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-169">bil.</span><span class="sxs-lookup"><span data-stu-id="e168f-169">T</span></span></td>
-<td><span data-ttu-id="e168f-170">Dnešní datum</span><span class="sxs-lookup"><span data-stu-id="e168f-170">Today's date</span></span></td>
-<td><span data-ttu-id="e168f-171">Zadejte <strong>T</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-171">Type <strong>T</strong>.</span></span></td>
-<td><span data-ttu-id="e168f-172"><strong>T</strong> odpovídá dnešnímu datu.</span><span class="sxs-lookup"><span data-stu-id="e168f-172"><strong>T</strong> matches today's date.</span></span></td>
+<td><span data-ttu-id="1c9fe-169">(<span class="code">příkaz SQL</span>) (příkaz SQL v uvozovkách)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-169">(<span class="code">SQL statement</span>) (SQL statement between parentheses)</span></span></td>
+<td><span data-ttu-id="1c9fe-170">Nalezení definovaného dotazu</span><span class="sxs-lookup"><span data-stu-id="1c9fe-170">Matching a defined query</span></span></td>
+<td><span data-ttu-id="1c9fe-171">Zadejte dotaz ve formě příkazu SQL v uvozovkách.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-171">Type a query as an SQL statement between parentheses.</span></span></td>
+<td><span data-ttu-id="1c9fe-172"><strong><span class="code">(datový zdroj.Název pole != &quot;A&quot;)</span></strong></span><span class="sxs-lookup"><span data-stu-id="1c9fe-172"><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-173">(methodName(parameters)) (metoda <strong>SysQueryRangeUtil</strong> v uvozovkách)</span><span class="sxs-lookup"><span data-stu-id="e168f-173">(methodName(parameters)) (<strong>SysQueryRangeUtil</strong> method between parentheses)</span></span></td>
-<td><span data-ttu-id="e168f-174">Párování hodnoty nebo rozsahu hodnot zadaných za pomoci parametrů metody <strong>SysQueryRangeUtil</strong></span><span class="sxs-lookup"><span data-stu-id="e168f-174">Matching the value or range of values that are specified by the parameters of the <strong>SysQueryRangeUtil</strong> method</span></span></td>
-<td><span data-ttu-id="e168f-175">Zadejte parametry metody <strong>SysQueryRangeUtil</strong> Párování pro určení hodnoty nebo rozsahu hodnot.</span><span class="sxs-lookup"><span data-stu-id="e168f-175">Type a <strong>SysQueryRangeUtil</strong> method that has parameters that specify the value or range of values.</span></span></td>
+<td><span data-ttu-id="1c9fe-173">bil.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-173">T</span></span></td>
+<td><span data-ttu-id="1c9fe-174">Dnešní datum</span><span class="sxs-lookup"><span data-stu-id="1c9fe-174">Today's date</span></span></td>
+<td><span data-ttu-id="1c9fe-175">Zadejte <strong>T</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-175">Type <strong>T</strong>.</span></span></td>
+<td><span data-ttu-id="1c9fe-176"><strong>T</strong> odpovídá dnešnímu datu.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-176"><strong>T</strong> matches today's date.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="1c9fe-177">(methodName(parameters)) (metoda <strong>SysQueryRangeUtil</strong> v uvozovkách)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-177">(methodName(parameters)) (<strong>SysQueryRangeUtil</strong> method between parentheses)</span></span></td>
+<td><span data-ttu-id="1c9fe-178">Párování hodnoty nebo rozsahu hodnot zadaných za pomoci parametrů metody <strong>SysQueryRangeUtil</strong></span><span class="sxs-lookup"><span data-stu-id="1c9fe-178">Matching the value or range of values that are specified by the parameters of the <strong>SysQueryRangeUtil</strong> method</span></span></td>
+<td><span data-ttu-id="1c9fe-179">Zadejte parametry metody <strong>SysQueryRangeUtil</strong> Párování pro určení hodnoty nebo rozsahu hodnot.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-179">Type a <strong>SysQueryRangeUtil</strong> method that has parameters that specify the value or range of values.</span></span></td>
 <td>
 <ol>
-<li><span data-ttu-id="e168f-176">Klikněte na <strong>Pohledávky</strong> &gt; <strong>Faktury</strong> &gt; <strong>Otevřené faktury odběratele</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-176">Click <strong>Accounts receivable</strong> &gt; <strong>Invoices</strong> &gt; <strong>Open customer invoices</strong>.</span></span></li>
-<li><span data-ttu-id="e168f-177">Stisknutím kombinace kláves Ctrl + Shift + F3 otevřete stránku <strong>Dotaz</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-177">Press Ctrl+Shift+F3 to open the <strong>Inquiry</strong> page.</span></span></li>
-<li><span data-ttu-id="e168f-178">Na kartě <strong>Rozsah</strong> klepněte na možnost <strong>Přidat</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-178">On the <strong>Range</strong> tab, click <strong>Add</strong>.</span></span></li>
-<li><span data-ttu-id="e168f-179">V poli <strong>Tabulka</strong> vyberte <strong>Otevřít transakce odběratelů</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-179">In the <strong>Table</strong> field, select <strong>Open customer transactions</strong>.</span></span></li>
-<li><span data-ttu-id="e168f-180">V poli <strong>Pole</strong> vyberte <strong>Datum splatnosti</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-180">In the <strong>Field</strong> field, select <strong>Due date</strong>.</span></span></li>
-<li><span data-ttu-id="e168f-181">V poli <strong>Kritéria</strong> zadejte <strong>(yearRange(-2,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-181">In the <strong>Criteria</strong> field, enter <strong>(yearRange(-2,0))</strong>.</span></span></li>
-<li><span data-ttu-id="e168f-182">Klepněte na tlačítko <strong>OK</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-182">Click <strong>OK</strong>.</span></span> <span data-ttu-id="e168f-183">Stránka seznamu se aktualizuje a bude obsahovat seznam faktur, které odpovídají zadaným kritériím.</span><span class="sxs-lookup"><span data-stu-id="e168f-183">The list page is updated and lists the invoices that match the criterion that you entered.</span></span> <span data-ttu-id="e168f-184">V tomto případě budou uvedeny faktury, které byly splatné v předchozích dvou letech.</span><span class="sxs-lookup"><span data-stu-id="e168f-184">For this example, invoices that were due in the previous two years are listed.</span></span></li>
+<li><span data-ttu-id="1c9fe-180">Klikněte na <strong>Pohledávky</strong> &gt; <strong>Faktury</strong> &gt; <strong>Otevřené faktury odběratele</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-180">Click <strong>Accounts receivable</strong> &gt; <strong>Invoices</strong> &gt; <strong>Open customer invoices</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-181">Stisknutím kombinace kláves Ctrl + Shift + F3 otevřete stránku <strong>Dotaz</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-181">Press Ctrl+Shift+F3 to open the <strong>Inquiry</strong> page.</span></span></li>
+<li><span data-ttu-id="1c9fe-182">Na kartě <strong>Rozsah</strong> klepněte na možnost <strong>Přidat</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-182">On the <strong>Range</strong> tab, click <strong>Add</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-183">V poli <strong>Tabulka</strong> vyberte <strong>Otevřít transakce odběratelů</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-183">In the <strong>Table</strong> field, select <strong>Open customer transactions</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-184">V poli <strong>Pole</strong> vyberte <strong>Datum splatnosti</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-184">In the <strong>Field</strong> field, select <strong>Due date</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-185">V poli <strong>Kritéria</strong> zadejte <strong>(yearRange(-2,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-185">In the <strong>Criteria</strong> field, enter <strong>(yearRange(-2,0))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-186">Klepněte na tlačítko <strong>OK</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-186">Click <strong>OK</strong>.</span></span> <span data-ttu-id="1c9fe-187">Stránka seznamu se aktualizuje a bude obsahovat seznam faktur, které odpovídají zadaným kritériím.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-187">The list page is updated and lists the invoices that match the criterion that you entered.</span></span> <span data-ttu-id="1c9fe-188">V tomto případě budou uvedeny faktury, které byly splatné v předchozích dvou letech.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-188">For this example, invoices that were due in the previous two years are listed.</span></span></li>
 </ol>
-<span data-ttu-id="e168f-185">Další podrobnosti o metodách pro data <strong>SysQueryRangeUtil</strong> a několik příkladů naleznete v tabulce v další části.</span><span class="sxs-lookup"><span data-stu-id="e168f-185">See the table in the next section for additional details about <strong>SysQueryRangeUtil</strong> date methods, and several examples.</span></span></td>
+<span data-ttu-id="1c9fe-189">Další podrobnosti o metodách pro data <strong>SysQueryRangeUtil</strong> a několik příkladů naleznete v tabulce v další části.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-189">See the table in the next section for additional details about <strong>SysQueryRangeUtil</strong> date methods, and several examples.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="advanced-date-queries-that-use-sysqueryrangeutil-methods"></a><span data-ttu-id="e168f-186">Upřesnění datových dotazů, které používají metody SysQueryRangeUtil</span><span class="sxs-lookup"><span data-stu-id="e168f-186">Advanced date queries that use SysQueryRangeUtil methods</span></span>
+## <a name="advanced-date-queries-that-use-sysqueryrangeutil-methods"></a><span data-ttu-id="1c9fe-190">Upřesnění datových dotazů, které používají metody SysQueryRangeUtil</span><span class="sxs-lookup"><span data-stu-id="1c9fe-190">Advanced date queries that use SysQueryRangeUtil methods</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="e168f-187">Metoda</span><span class="sxs-lookup"><span data-stu-id="e168f-187">Method</span></span></th>
-<th><span data-ttu-id="e168f-188">Popis</span><span class="sxs-lookup"><span data-stu-id="e168f-188">Description</span></span></th>
-<th><span data-ttu-id="e168f-189">Příklad</span><span class="sxs-lookup"><span data-stu-id="e168f-189">Example</span></span></th>
+<th><span data-ttu-id="1c9fe-191">Metoda</span><span class="sxs-lookup"><span data-stu-id="1c9fe-191">Method</span></span></th>
+<th><span data-ttu-id="1c9fe-192">Popis</span><span class="sxs-lookup"><span data-stu-id="1c9fe-192">Description</span></span></th>
+<th><span data-ttu-id="1c9fe-193">Příklad</span><span class="sxs-lookup"><span data-stu-id="1c9fe-193">Example</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="e168f-190">Den (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="e168f-190">Day (_relativeDays=0)</span></span></td>
-<td><span data-ttu-id="e168f-191">Vyhledání data vzhledem k datu relace.</span><span class="sxs-lookup"><span data-stu-id="e168f-191">Find a date relative to the session date.</span></span> <span data-ttu-id="e168f-192">Kladné hodnoty naznačují budoucí data a záporné hodnoty dřívější data.</span><span class="sxs-lookup"><span data-stu-id="e168f-192">Positive values indicate future dates, and negative values indicate past dates.</span></span></td>
+<td><span data-ttu-id="1c9fe-194">Den (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-194">Day (_relativeDays=0)</span></span></td>
+<td><span data-ttu-id="1c9fe-195">Vyhledání data vzhledem k datu relace.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-195">Find a date relative to the session date.</span></span> <span data-ttu-id="1c9fe-196">Kladné hodnoty naznačují budoucí data a záporné hodnoty dřívější data.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-196">Positive values indicate future dates, and negative values indicate past dates.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="e168f-193"><strong>Zítra</strong> – zadejte <strong>(Day(1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-193"><strong>Tomorrow</strong> – Enter <strong>(Day(1))</strong>.</span></span></li>
-<li><span data-ttu-id="e168f-194"><strong>Dnes</strong> – zadejte <strong>(Day(0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-194"><strong>Today</strong> – Enter <strong>(Day(0))</strong>.</span></span></li>
-<li><span data-ttu-id="e168f-195"><strong>Včera</strong> – zadejte <strong>(Day(-1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-195"><strong>Yesterday</strong> – Enter <strong>(Day(-1))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-197"><strong>Zítra</strong> – zadejte <strong>(Day(1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-197"><strong>Tomorrow</strong> – Enter <strong>(Day(1))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-198"><strong>Dnes</strong> – zadejte <strong>(Day(0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-198"><strong>Today</strong> – Enter <strong>(Day(0))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-199"><strong>Včera</strong> – zadejte <strong>(Day(-1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-199"><strong>Yesterday</strong> – Enter <strong>(Day(-1))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-196">DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</span><span class="sxs-lookup"><span data-stu-id="e168f-196">DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</span></span></td>
-<td><span data-ttu-id="e168f-197">Vyhledání rozsahu vzhledem k datu relace.</span><span class="sxs-lookup"><span data-stu-id="e168f-197">Find a range of dates relative to the session date.</span></span> <span data-ttu-id="e168f-198">Kladné hodnoty naznačují budoucí data a záporné hodnoty dřívější data.</span><span class="sxs-lookup"><span data-stu-id="e168f-198">Positive values indicate future dates, and negative values indicate past dates.</span></span></td>
+<td><span data-ttu-id="1c9fe-200">DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-200">DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</span></span></td>
+<td><span data-ttu-id="1c9fe-201">Vyhledání rozsahu vzhledem k datu relace.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-201">Find a range of dates relative to the session date.</span></span> <span data-ttu-id="1c9fe-202">Kladné hodnoty naznačují budoucí data a záporné hodnoty dřívější data.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-202">Positive values indicate future dates, and negative values indicate past dates.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="e168f-199"><strong>Posledních 30 dnů</strong> – zadejte <strong>(DayRange(-30,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-199"><strong>Last 30 days</strong> – Enter <strong>(DayRange(-30,0))</strong>.</span></span></li>
-<li><span data-ttu-id="e168f-200"><strong>Posledních 30 dnů a budoucích 30 dnů</strong> – zadejte <strong>(DayRange(-30,30))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-200"><strong>Previous 30 days and next 30 days</strong> – Enter <strong>(DayRange(-30,30))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-203"><strong>Posledních 30 dnů</strong> – zadejte <strong>(DayRange(-30,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-203"><strong>Last 30 days</strong> – Enter <strong>(DayRange(-30,0))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-204"><strong>Posledních 30 dnů a budoucích 30 dnů</strong> – zadejte <strong>(DayRange(-30,30))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-204"><strong>Previous 30 days and next 30 days</strong> – Enter <strong>(DayRange(-30,30))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-201">GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="e168f-201">GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</span></span></td>
-<td><span data-ttu-id="e168f-202">Vyhledání všech dat po určeném relativním datu.</span><span class="sxs-lookup"><span data-stu-id="e168f-202">Find all dates after the specified relative date.</span></span></td>
+<td><span data-ttu-id="1c9fe-205">GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-205">GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</span></span></td>
+<td><span data-ttu-id="1c9fe-206">Vyhledání všech dat po určeném relativním datu.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-206">Find all dates after the specified relative date.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="e168f-203"><strong>Více než 30 dnů ode dneška</strong> – zadejte <strong>(GreaterThanDate(30))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-203"><strong>More than 30 days from now</strong> – Enter <strong>(GreaterThanDate(30))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-207"><strong>Více než 30 dnů ode dneška</strong> – zadejte <strong>(GreaterThanDate(30))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-207"><strong>More than 30 days from now</strong> – Enter <strong>(GreaterThanDate(30))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-204">GreaterThanUtcNow ()</span><span class="sxs-lookup"><span data-stu-id="e168f-204">GreaterThanUtcNow ()</span></span></td>
-<td><span data-ttu-id="e168f-205">Vyhledání všech záznamů data/času po aktuálním času.</span><span class="sxs-lookup"><span data-stu-id="e168f-205">Find all date/time entries after the current time.</span></span></td>
+<td><span data-ttu-id="1c9fe-208">GreaterThanUtcNow ()</span><span class="sxs-lookup"><span data-stu-id="1c9fe-208">GreaterThanUtcNow ()</span></span></td>
+<td><span data-ttu-id="1c9fe-209">Vyhledání všech záznamů data/času po aktuálním času.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-209">Find all date/time entries after the current time.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="e168f-206"><strong>Všechna budoucí data a časy</strong> – zadejte <strong>(GreaterThanUtcNow())</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-206"><strong>All future date/times</strong> – Enter <strong>(GreaterThanUtcNow())</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-210"><strong>Všechna budoucí data a časy</strong> – zadejte <strong>(GreaterThanUtcNow())</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-210"><strong>All future date/times</strong> – Enter <strong>(GreaterThanUtcNow())</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-207">LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="e168f-207">LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</span></span></td>
-<td><span data-ttu-id="e168f-208">Vyhledání všech dat před určeném relativním datem.</span><span class="sxs-lookup"><span data-stu-id="e168f-208">Find all dates before the specified relative date.</span></span></td>
+<td><span data-ttu-id="1c9fe-211">LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-211">LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</span></span></td>
+<td><span data-ttu-id="1c9fe-212">Vyhledání všech dat před určeném relativním datem.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-212">Find all dates before the specified relative date.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="e168f-209"><strong>Méně než sedm dní ode dneška</strong> – zadejte <strong>(LessThanDate(7))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-209"><strong>Less than seven days from now</strong> – Enter <strong>(LessThanDate(7))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-213"><strong>Méně než sedm dní ode dneška</strong> – zadejte <strong>(LessThanDate(7))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-213"><strong>Less than seven days from now</strong> – Enter <strong>(LessThanDate(7))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-210">LessThanUtcNow ()</span><span class="sxs-lookup"><span data-stu-id="e168f-210">LessThanUtcNow ()</span></span></td>
-<td><span data-ttu-id="e168f-211">Vyhledání všech záznamů data/času před aktuálním časem.</span><span class="sxs-lookup"><span data-stu-id="e168f-211">Find all date/time entries before the current time.</span></span></td>
+<td><span data-ttu-id="1c9fe-214">LessThanUtcNow ()</span><span class="sxs-lookup"><span data-stu-id="1c9fe-214">LessThanUtcNow ()</span></span></td>
+<td><span data-ttu-id="1c9fe-215">Vyhledání všech záznamů data/času před aktuálním časem.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-215">Find all date/time entries before the current time.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="e168f-212"><strong>Všechna minulá data/časy</strong> – zadejte <strong>(LessThanUtcNow())</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-212"><strong>All past date/times</strong> – Enter <strong>(LessThanUtcNow())</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-216"><strong>Všechna minulá data/časy</strong> – zadejte <strong>(LessThanUtcNow())</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-216"><strong>All past date/times</strong> – Enter <strong>(LessThanUtcNow())</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-213">MonthRange (_relativeFrom=0, _relativeTo=0)</span><span class="sxs-lookup"><span data-stu-id="e168f-213">MonthRange (_relativeFrom=0, _relativeTo=0)</span></span></td>
-<td><span data-ttu-id="e168f-214">Vyhledání rozsahu dat na základě měsíců vzhledem k aktuálnímu měsíci.</span><span class="sxs-lookup"><span data-stu-id="e168f-214">Find a range of dates, based on months relative to the current month.</span></span></td>
+<td><span data-ttu-id="1c9fe-217">MonthRange (_relativeFrom=0, _relativeTo=0)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-217">MonthRange (_relativeFrom=0, _relativeTo=0)</span></span></td>
+<td><span data-ttu-id="1c9fe-218">Vyhledání rozsahu dat na základě měsíců vzhledem k aktuálnímu měsíci.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-218">Find a range of dates, based on months relative to the current month.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="e168f-215"><strong>Předchozí dva měsíce</strong> – zadejte <strong>(MonthRange(-2,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-215"><strong>Previous two months</strong> – Enter <strong>(MonthRange(-2,0))</strong>.</span></span></li>
-<li><span data-ttu-id="e168f-216"><strong>Následující tři měsíce</strong> – zadejte <strong>(MonthRange(0,3))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-216"><strong>Next three months</strong> – Enter <strong>(MonthRange(0,3))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-219"><strong>Předchozí dva měsíce</strong> – zadejte <strong>(MonthRange(-2,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-219"><strong>Previous two months</strong> – Enter <strong>(MonthRange(-2,0))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-220"><strong>Následující tři měsíce</strong> – zadejte <strong>(MonthRange(0,3))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-220"><strong>Next three months</strong> – Enter <strong>(MonthRange(0,3))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="e168f-217">YearRange (_relativeFrom=0, _relativeTo=0)</span><span class="sxs-lookup"><span data-stu-id="e168f-217">YearRange (_relativeFrom=0, _relativeTo=0)</span></span></td>
-<td><span data-ttu-id="e168f-218">Vyhledání rozsahu dat na základě roků vzhledem k aktuálnímu roku.</span><span class="sxs-lookup"><span data-stu-id="e168f-218">Find a range of dates, based on years relative to the current year.</span></span></td>
+<td><span data-ttu-id="1c9fe-221">YearRange (_relativeFrom=0, _relativeTo=0)</span><span class="sxs-lookup"><span data-stu-id="1c9fe-221">YearRange (_relativeFrom=0, _relativeTo=0)</span></span></td>
+<td><span data-ttu-id="1c9fe-222">Vyhledání rozsahu dat na základě roků vzhledem k aktuálnímu roku.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-222">Find a range of dates, based on years relative to the current year.</span></span></td>
 <td>
 <ul>
-<li><span data-ttu-id="e168f-219"><strong>Příští rok</strong> – zadejte <strong>(YearRange(0, 1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-219"><strong>Next year</strong> – Enter <strong>(YearRange(0, 1))</strong>.</span></span></li>
-<li><span data-ttu-id="e168f-220"><strong>Předchozí rok</strong> – zadejte <strong>(YearRange(-1,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e168f-220"><strong>Previous year</strong> – Enter <strong>(YearRange(-1,0))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-223"><strong>Příští rok</strong> – zadejte <strong>(YearRange(0, 1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-223"><strong>Next year</strong> – Enter <strong>(YearRange(0, 1))</strong>.</span></span></li>
+<li><span data-ttu-id="1c9fe-224"><strong>Předchozí rok</strong> – zadejte <strong>(YearRange(-1,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="1c9fe-224"><strong>Previous year</strong> – Enter <strong>(YearRange(-1,0))</strong>.</span></span></li>
 </ul>
 </td>
 </tr>

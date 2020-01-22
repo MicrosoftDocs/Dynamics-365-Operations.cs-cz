@@ -18,28 +18,26 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-10-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a19aa20cef7d8671876a5fd5e8552ff72d6d29ac
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 96f877ae284a0f914bae2d0f5e5f7caf49109511
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551311"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2896697"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-october-15-2018"></a><span data-ttu-id="4aceb-103">Co je nového nebo upraveného v aplikaci Dynamics 365 Talent – Core HR (15. října 2018)</span><span class="sxs-lookup"><span data-stu-id="4aceb-103">What's new or changed in Dynamics 365 Talent - Core HR (October 15, 2018)</span></span>
+# <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-october-15-2018"></a><span data-ttu-id="4f85a-103">Co je nového nebo upraveného v aplikaci Dynamics 365 Talent – Core HR (15. října 2018)</span><span class="sxs-lookup"><span data-stu-id="4f85a-103">What's new or changed in Dynamics 365 Talent - Core HR (October 15, 2018)</span></span>
 
-[!include [banner](includes/banner.md)]
+<span data-ttu-id="4f85a-104">**Sestavení 8.1.1056**</span><span class="sxs-lookup"><span data-stu-id="4f85a-104">**Build 8.1.1056**</span></span>
 
-<span data-ttu-id="4aceb-104">**Sestavení 8.1.1056**</span><span class="sxs-lookup"><span data-stu-id="4aceb-104">**Build 8.1.1056**</span></span>
-
-<span data-ttu-id="4aceb-105">Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Core HR.</span><span class="sxs-lookup"><span data-stu-id="4aceb-105">This topic describes features that are either new or changed in Core HR.</span></span>
+<span data-ttu-id="4f85a-105">Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Core HR.</span><span class="sxs-lookup"><span data-stu-id="4f85a-105">This topic describes features that are either new or changed in Core HR.</span></span>
 
 
-## <a name="changes"></a><span data-ttu-id="4aceb-106">Změny</span><span class="sxs-lookup"><span data-stu-id="4aceb-106">Changes</span></span>
-<span data-ttu-id="4aceb-107">Kromě různých oprav byly provedeny v této verzi následující aktualizace:</span><span class="sxs-lookup"><span data-stu-id="4aceb-107">In addition to miscellanous fixes, the following updates have been made in this release:</span></span>
-- <span data-ttu-id="4aceb-108">Poslední pracovní den je nyní nastaven při náboru nebo nastavení koncového data zaměstnání.</span><span class="sxs-lookup"><span data-stu-id="4aceb-108">Last Day worked now set when hiring or setting an employment end date.</span></span>
-- <span data-ttu-id="4aceb-109">Odkazy dodržování předpisů USA byly odebrány pro společnosti mimo USA (ACA ADA a I9).</span><span class="sxs-lookup"><span data-stu-id="4aceb-109">US compliance references removed when in non US companies (ACA, ADA, and I9).</span></span>
-- <span data-ttu-id="4aceb-110">Neplatná data (1. 1. 1900) jsou nyní skrytá na stránkách analýzy.</span><span class="sxs-lookup"><span data-stu-id="4aceb-110">Invalid dates (1/1/1900) are now hidden on analytics pages.</span></span>
+## <a name="changes"></a><span data-ttu-id="4f85a-106">Změny</span><span class="sxs-lookup"><span data-stu-id="4f85a-106">Changes</span></span>
+<span data-ttu-id="4f85a-107">Kromě různých oprav byly provedeny v této verzi následující aktualizace:</span><span class="sxs-lookup"><span data-stu-id="4f85a-107">In addition to miscellanous fixes, the following updates have been made in this release:</span></span>
+- <span data-ttu-id="4f85a-108">Poslední pracovní den je nyní nastaven při náboru nebo nastavení koncového data zaměstnání.</span><span class="sxs-lookup"><span data-stu-id="4f85a-108">Last Day worked now set when hiring or setting an employment end date.</span></span>
+- <span data-ttu-id="4f85a-109">Odkazy dodržování předpisů USA byly odebrány pro společnosti mimo USA (ACA ADA a I9).</span><span class="sxs-lookup"><span data-stu-id="4f85a-109">US compliance references removed when in non US companies (ACA, ADA, and I9).</span></span>
+- <span data-ttu-id="4f85a-110">Neplatná data (1. 1. 1900) jsou nyní skrytá na stránkách analýzy.</span><span class="sxs-lookup"><span data-stu-id="4f85a-110">Invalid dates (1/1/1900) are now hidden on analytics pages.</span></span>
 
-## <a name="known-issue"></a><span data-ttu-id="4aceb-111">Známý problém</span><span class="sxs-lookup"><span data-stu-id="4aceb-111">Known issue</span></span>
+## <a name="known-issue"></a><span data-ttu-id="4f85a-111">Známý problém</span><span class="sxs-lookup"><span data-stu-id="4f85a-111">Known issue</span></span>
 
-<span data-ttu-id="4aceb-112">**Problém:** Při přidání nové přílohy k pracovníkovi jsou zašedlá tlačítka **Nová** a **Upravit**. **Řešení:** Než otevřete stránku přílohy, ujistěte se, že jsou zavřena okna s fakty na stránce **Pracovník**.</span><span class="sxs-lookup"><span data-stu-id="4aceb-112">**Issue:** When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. **Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed.</span></span> <span data-ttu-id="4aceb-113">Jsou-li okna s fakty uzavřena při načítání stránky **Pracovník**, budou tlačítka přílohy k dispozici.</span><span class="sxs-lookup"><span data-stu-id="4aceb-113">If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled.</span></span> <span data-ttu-id="4aceb-114">(Tento problém bude opraven v další aktualizaci Platform Update.)</span><span class="sxs-lookup"><span data-stu-id="4aceb-114">(This issue will be fixed in the next platform update.)</span></span>
+<span data-ttu-id="4f85a-112">**Problém:** Při přidání nové přílohy k pracovníkovi jsou zašedlá tlačítka **Nová** a **Upravit**. **Řešení:** Než otevřete stránku přílohy, ujistěte se, že jsou zavřena okna s fakty na stránce **Pracovník**.</span><span class="sxs-lookup"><span data-stu-id="4f85a-112">**Issue:** When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. **Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed.</span></span> <span data-ttu-id="4f85a-113">Jsou-li okna s fakty uzavřena při načítání stránky **Pracovník**, budou tlačítka přílohy k dispozici.</span><span class="sxs-lookup"><span data-stu-id="4f85a-113">If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled.</span></span> <span data-ttu-id="4f85a-114">(Tento problém bude opraven v další aktualizaci Platform Update.)</span><span class="sxs-lookup"><span data-stu-id="4f85a-114">(This issue will be fixed in the next platform update.)</span></span>
