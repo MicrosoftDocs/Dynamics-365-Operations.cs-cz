@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771066"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933925"
 ---
 # <a name="electronic-reporting-er-overview"></a>Přehled elektronického výkaznictví
 
@@ -51,12 +51,12 @@ Modul EV má následující možnosti:
 
 EV podporuje dva typy komponentů: **Datový model** a **Formát**.
 
-#### <a name="data-model-components"></a>Komponenty datového modelu
+#### <a name="data-model-and-model-mapping-components"></a>Součásti datového modelu a mapování modelu
 
 Komponenta datového modelu je abstraktní reprezentací datové struktury. Slouží k popisu konkrétní oblasti obchodní domény s dostatečným množstvím podrobností, aby byly splněny požadavky na výkazy pro tuto doménu. Součást modelu dat se skládá z následujících částí:
 
-- Datový model jako sada obchodních entit konkrétní domény a hierarchicky strukturované definice vztahů mezi nimi.
-- Mapování modelu spojující vybrané zdroje dat aplikace s jednotlivými prvky datového modelu, který při spuštění určuje tok dat a pravidla naplnění obchodních dat do součásti modelu dat.
+- <a name="DataModelComponent"></a>Datový model jako sada obchodních entit konkrétní domény a hierarchicky strukturované definice vztahů mezi nimi.
+- <a name="ModelMappingComponent"></a>Mapování modelu spojující vybrané zdroje dat aplikace s jednotlivými prvky datového modelu, který při spuštění určuje tok dat a pravidla naplnění obchodních dat do součásti modelu dat.
 
 Kontejner (záznam) představuje obchodní entitu modelu dat. Vlastnosti obchodní entity jsou reprezentovány položkami dat (pole). Každá datová položka má jedinečný název, štítek, popis a hodnotu. Hodnota pro každou datovou položku může být určena tak, aby byla rozpoznána jako řetězec, celé číslo, reálné číslo, datum, výčet, logická hodnota a podobně. Kromě toho může být jiným záznamem nebo seznamem záznamů.
 
@@ -81,7 +81,7 @@ Mapování modelu, které podporuje příchozí elektronické dokumenty, má tyt
 
 Pro každou doménu je určena komponenta datového modelu, kterou je třeba používat jako jednotný zdroj dat pro vykazování, který izoluje výkaznictví od fyzické implementace datových zdrojů. Představuje obchodní koncepce a funkce konkrétní domény ve formě, která zvyšuje efektivitu úvodní struktury formátu výkaznictví a usnadňuje jeho další údržbu.
 
-#### <a name="format-components-for-outgoing-electronic-documents"></a>Komponenty formátu pro odchozí elektronické dokumenty
+#### <a name="FormatComponentOutbound"></a>Komponenty formátu pro odchozí elektronické dokumenty
 
 Komponenta formátu je schématem výstupu vykazování, který je generován při spuštění. Schéma se skládá z následujících prvků:
 
@@ -107,7 +107,7 @@ Následující obrázek znázorňuje tok dat u těchto formátů.
 
 Chcete-li spustit jednu konfiguraci formátu ER a vygenerovat odchozí elektronický dokument, je nutné určit mapování konfigurace formátu.
 
-#### <a name="format-components-for-incoming-electronic-documents"></a>Komponenty formátu pro příchozí elektronické dokumenty
+#### <a name="FormatComponentInbound"></a>Komponenty formátu pro příchozí elektronické dokumenty
 Komponenta formátu je schématem příchozího dokumentu, které se importuje při spuštění. Schéma se skládá z následujících prvků:
 
 - Formát, který definuje strukturu a obsah příchozího elektronického dokumentu obsahujícího data, která se importují při spuštění. Komponenta formátu, která slouží k analýze příchozích dokumentů v různých formátech (například text nebo XML).
@@ -144,7 +144,7 @@ Přístup ke komponentám formátu EV závisí na nastavení ISO kódu země/obl
 
 Různé verze součástí formátu data mají pravděpodobně různá nastavení ISO kódů země/oblasti.
 
-#### <a name="configuration"></a>Konfigurace
+#### <a name="Configuration"></a>Konfigurace
 
 Konfigurace ER představuje obálku určité komponenty ER. Komponenta může být komponentou datového modelu nebo formátu. Konfigurace může obsahovat různé verze komponenty ER. Každá konfigurace je označena jako vlastněná určitou konfigurací poskytovatele. Verze **Návrh** komponent z konfigurace lze upravit po zvolení vlastníka konfigurace jako aktivního poskytovatele v nastavení EV v aplikaci.
 
@@ -154,13 +154,13 @@ Vytvořená konfigurace formátu obsahuje komponentu formátu. Komponenta datov�
 
 Konfigurace EV je sdílená pro společnosti aplikace.
 
-#### <a name="provider"></a>Zprostředkovatel
+#### <a name="Provider"></a>Zprostředkovatel
 
 Poskytovatel EV je identifikací strany, která se používá k označení autora (vlastníka) každé konfigurace EV. EV umožňuje spravovat seznam zprostředkovatelů konfigurace. Konfigurace formátu vydané pro elektronické dokumenty jako součást řešení Finance and Operations jsou označeny jako vlastněné poskytovatelem konfigurace **Microsoft**.
 
 Chcete-li zjistit, jak zaregistrovat nového poskytovatele ER, přehrajte si průvodce záznamem úloh **Elektronické výkaznictví – vytvoření poskytovatele konfigurace a jeho označení jako aktivního** (součást obchodního procesu **7.5.4.3 Získání/vývoj součástí IT služeb/řešení (10677)**).
 
-#### <a name="repository"></a>Úložiště
+#### <a name="Repository"></a>Úložiště
 
 Úložiště EV obsahuje konfigurace EV. Následující typy úložiště ER jsou aktuálně podporovány: 
 

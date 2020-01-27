@@ -3,7 +3,7 @@ title: Přehled prognózy poptávky
 description: Pomocí prognózy poptávky lze odhadnout nezávislé poptávky z prodejních objednávek a závislých požadavků v libovolném oddělovacím bodě objednávky odběratele. Rozšířená pravidla redukce prognózy poptávky nabízí ideální řešení pro hromadné přizpůsobení.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9280a2580d20d64f6542902aab1dbf55434bf84c
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815150"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935507"
 ---
 # <a name="demand-forecasting-overview"></a>Přehled prognózy poptávky
 
@@ -32,7 +32,7 @@ ms.locfileid: "2815150"
 
 Pomocí prognózy poptávky lze odhadnout nezávislé poptávky z prodejních objednávek a závislých požadavků v libovolném oddělovacím bodě objednávky odběratele. Rozšířená pravidla redukce prognózy poptávky nabízí ideální řešení pro hromadné přizpůsobení.
 
-Pro generování základní prognózy je souhrn historických transakcí předán do služby strojového učení Microsoft Azure hostované na platformě Azure. Vzhledem k tomu, že tato služba není sdílena mezi uživateli, lze ji snadno upravit pro splnění průmyslově specifických požadavků. Pomocí aplikace Supply Chain Management můžete zobrazit a upravovat prognózy a zobrazit klíčové indikátory výkonnosti popisující přesnost prognózy.
+Pro generování základní prognózy je souhrn historických transakcí předán strojovému učení Microsoft Azure hostovanému na platformě Azure. Vzhledem k tomu, že tato služba není sdílena mezi uživateli, lze ji snadno upravit pro splnění průmyslově specifických požadavků. Pomocí aplikace Supply Chain Management můžete zobrazit a upravovat prognózy a zobrazit klíčové indikátory výkonnosti popisující přesnost prognózy.
 
 ## <a name="key-features-of-demand-forecasting"></a>Klíčové funkce prognózy poptávky
 Zde jsou uvedeny některé z hlavních charakteristik vytváření prognózy poptávky:
@@ -51,7 +51,7 @@ Do prognózy poptávky jsou implementovány tři hlavní motivy:
 -   **Opětovné použití zásobníku Microsoft** – Společnost Microsoft spustila platformu strojového učení v únoru 2015. Strojové učení, které je nyní součástí Microsoft Cortana Analytics Suite, umožňuje rychle a snadno vytvářet experimenty prediktivní analýzy, jako jsou pokusy o odhad poptávky, pomocí programovacích jazyků algoritmů R nebo Python a jednoduché rozhraní přetažení.
     -   Pokusy prognózy poptávky můžete stáhnout, změnit je tak, aby odpovídaly obchodním požadavkům, publikovat je jako webové služby pro platformu Azure, a použít je pro generování prognóz poptávky. Pokud jste si zakoupili předplatné aplikace Supply Chain Management pro plánovač výroby na úrovni podnikového uživatele, jsou experimenty dostupné ke stažení.
     -   Můžete stáhnout všechny aktuálně dostupné pokusy předpovědi poptávky z adresy [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/). Zatímco experimenty s prognózou poptávky jsou do aplikace Supply Chain Management integrovány automaticky, experimenty stažené z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) musí zákazníci a partneři integrovat ručně. Používání experimentů z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) proto není tak přímočaré jako u experimentů s prognózou poptávky aplikace Finance and Operations. Kód experimentů je třeba upravit tak, aby používaly rozhraní API aplikace Finance and Operations.
-    -   Můžete vytvořit vlastní pokusy v aplikaci studia strojového učení Microsoft Azure, publikovat je jako služby Azure a použít je pro generování prognóz poptávky.
+    -   Můžete vytvořit vlastní pokusy v aplikaci studia strojového učení Microsoft Azure (klasické), publikovat je jako služby Azure a použít je pro generování prognóz poptávky.
     -   Pokud nevyžadujete vysoký výkon, nebo nechcete-li zpracovat velké množství dat, můžete používat bezplatnou verzi služby Machine Learning. Doporučujeme vždy začínat od této verze, zejména během implementace a testování. Chcete-li dosáhnout vyššího výkonu a dalšího úložiště, můžete začít používat standardní verzi Machine Learning. Tato verze vyžaduje odběr služby Azure a zahrnuje dodatečné náklady. Podrobnosti o cenách produktu Machine Learning naleznete v tématu [ceny Machine Learning Studio](https://aka.ms/machine-learning-price-info).
 -   **Snížení prognózy v libovolném z oddělovacích bodů** – prognóza poptávky staví na této funkci, která umožňuje vytvářet závislé i nezávislé prognózy poptávky v libovolném oddělovacím bodě.
 

@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812872"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897113"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Úprava průvodců a šablon zaškolení v aplikaci Dynamics 365 Talent - Onboard
+# <a name="edit-onboarding-guides-and-templates"></a>Úprava průvodců a šablon zaškolení
 
 [!include [banner](includes/banner.md)]
 
@@ -114,11 +114,11 @@ Postup použití změn:
 1. Na kartě **Aktivity** přetáhněte položky z pravé části do oblasti pro úpravy.
 2. Chcete-li průvodce uspořádat do oddílů, přetáhněte položku **Nový oddíl** do oblasti pro úpravy a zadejte název a volitelný popis oddílu.
 
-    ![[Přidání nového oddílu do průvodce nebo šablony zaškolením] (./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
+    ![[Přidání nové sekce do průvodce zaškolením nebo šablony](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
 
 3. Chcete-li přidat aktivity pro nově přijatého zaměstnance k dokončení, přetáhněte položku **Nová aktivita** do oblasti pro úpravy a zadejte název a popis aktivity.
 
-    ![[Přidání nové aktivity do průvodce nebo šablony zaškolením](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
+    ![[Přidání nové aktivity do průvodce zaškolením nebo šablony](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
 
 4. Přidání bohatého obsahu do průvodce zaškolením:
 
@@ -129,7 +129,7 @@ Postup použití změn:
     - Chcete-li přidat formulář Microsoft Forms, přetáhněte položku **Microsoft Forms** do oblasti pro úpravy, zadejte název a popis aktivity, zadejte adresu URL formuláře Microsoft Forms a určete velikost oblasti obrazovky.
     - Chcete-li přidat iframe obsahující webový obsah, přetáhněte položku **Webový obsah (iframe)** do oblasti pro úpravy, zadejte název a popis aktivity, zadejte adresu URL webového obsahu a určete velikost oblasti obrazovky.
 
-    ![[Přidání nového bohatého obsahu do průvodce nebo šablony zaškolením](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
+    ![[Přidání bohatého obsahu do průvodce zaškolením nebo šablony](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
 
 2. Volitelné: v oblasti napravo od každé aktivity přiřaďte tuto aktivitu konkrétní osobě nebo roli, přidejte datum splatnosti a kontaktní osobu a přiřaďte barvu kategorie. Když přiřadíte aktivitu osobě nebo roli, bude úkol vytvořen pro každou jednotlivou osobu. Tento úkol se zobrazí v nabídce **Úkoly** v aplikaci Onboard.
 
@@ -148,7 +148,7 @@ Můžete přidat kontaktní osobu, která může nově přijatému zaměstnanci 
 1. Na kartě **Kontakty** vyberte možnost **Nový kontakt**.
 2. V dialogovém okně **Přidat člena týmu** zadejte jméno nebo e-mailovou adresu kontaktní osoby, zadejte krátký popis, který vysvětluje, jakým způsobem může kontaktní osoba pomoci nově přijatému zaměstnanci a poté vyberte **Přidat**. 
 
-    ![[Přidání kontaktů do průvodce nebo šablony zaškolením](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
+    ![[Přidání kontaktů do průvodce zaškolením nebo šablony](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
     Případně můžete vybrat jeden nebo více kontaktů v nabídce **Návrhy.**
 
@@ -169,7 +169,7 @@ V rámci vlastního průvodce zaškolením můžete přidat užitečné soubory,
     - Pokud chcete přidat odkaz, vyberte kartu **Odkaz**, zadejte název a adresu odkazu a vyberte **Přidat**.
     - Pokud chcete přidat mapu, vyberte kartu **Mapa**, zadejte název a adresu mapy a vyberte **Přidat**. Onboard bude obsahovat mapu zadané adresy.
 
-    ![[Přidání nového zdroje do průvodce nebo šablony zaškolením](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
+    ![[Přidání prostředku do průvodce zaškolením nebo šablony](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
 
 3. Práci uložte výběrem možnosti **Uložit**.
 

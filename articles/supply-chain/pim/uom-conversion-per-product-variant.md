@@ -3,12 +3,12 @@ title: Převod měrné jednotky pro variantu produktu
 description: Toto téma popisuje nastavení způsobu převodu měrné jednotky u variant produktu.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: josaw
@@ -17,34 +17,26 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c8181f0bda9b781a6c2b0feb0aba1beb51bfea65
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249441"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935092"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Převod měrné jednotky pro variantu produktu
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)]
-
 Toto téma popisuje nastavení způsobu převodu měrné jednotky u variant produktu. Zahrnuje také příklad nastavení.
 
 Tato funkce umožňuje společnostem definovat jiný převod jednotek mezi variantami stejného produktu. Následující příklad je použit v tomto tématu. Společnost prodává trička ve velikostech S, M, L a XL. Tričko je definováno jako produkt a jsou definovány různé velikosti variant produktu. Trička jsou zabalena v krabicích. Do krabice se vejde pět triček. V případě velikosti XL se však trička vlezou jen čtyři. Společnost chce sledovat různé varianty triček po **kusech**, nicméně trička prodává po **krabicích**. Převod mezi jednotkou zásob a prodejní jednotkou je 1 krabice = 5 kusů s výjimkou varianty XL, kde 1 krabice = 4 kusy.
-
-## <a name="setup"></a>Nastavení
-
-Můžete konfigurovat parametry pro funkci pro produkty, které jsou povoleny pro **všechny procesy** nebo pouze pro produkt povolen proý **procesy skladu** pomocí funkce **Povolit konverzace měrné jednotky** na stránce **parametry informací o produktu**.
 
 ### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Nastavení produktu pro převod jednotek pro variantu
 
 Varianty produktu lze vytvořit pouze pro produkty **podtyp produktu**: **základní produkt**. Další informace naleznete v tématu [Vytvoření základního produktu](tasks/create-product-master.md).
 
 Tato funkce není povolena pro produkty, které jsou nastaveny pro procesy skutečné hmotnosti. 
-
-Při vytváření základního produktu povolte převod měrné jednotky pomocí funkce **Povolit převody měrné jednotky** na stránce**Podrobnosti o produktu**.
 
 Po vytvoření základního produktu s variantami produktu lze nastavit převody jednotek pro varianty. Položku nabídky pro otevření stránky s převody naleznete v kontextu produktu nebo variantě produktu na následujících stránkách.
 

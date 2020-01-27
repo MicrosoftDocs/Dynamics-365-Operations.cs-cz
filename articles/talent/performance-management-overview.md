@@ -3,7 +3,7 @@ title: Řízení výkonnosti
 description: Proces řízení výkonnosti umožňuje zaměstnancům dokumentovat a diskutovat o jejich výkonnosti s jejich manažerem. Manažerům pak umožňuje poskytovat zpětnou vazbu a zaměstnance vést.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 18e9606e62bc2739da99b75ab56161bd7cc7eafe
+ms.sourcegitcommit: 724b72412861d342c138a7935319da700b63c234
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590498"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2921143"
 ---
 # <a name="performance-management"></a>Řízení výkonnosti
-
-[!include [banner](includes/banner.md)]
 
 Proces řízení výkonnosti umožňuje zaměstnancům dokumentovat a diskutovat o jejich výkonnosti s jejich manažerem. Manažerům pak umožňuje poskytovat zpětnou vazbu a zaměstnance vést.  
 
@@ -91,6 +89,8 @@ Pro podrobnější přezkoumání můžete přidat aktivní a dokončené cíle 
 Můžete také využít část **Kompetence**, ve které můžete diskutovat o kompetencích zaměstnance, přezkoumávat je a přiřazovat jim hodnocení. Můžete přidat tolik kompetencí, kolik je třeba, a můžete vybrat, zda musí být kompetenci přiřazeno hodnocení. 
 
 Můžete vytvářet nová přezkoumání vycházející ze šablon, které jste vytvořili. Můžete mít například šablonu pro setkání „jeden na jednoho“, plány rozvoje nebo pravidelná přezkoumání. Šablonu můžete vybrat při vytváření nového přezkoumání.
+
+Chcete-li vytisknout recenze, vyberte tlačítko **Tisk recenze**. Pokud se tlačítko na stránce **Recenze** nezobrazí, ujistěte se, že jste povolili tuto funkci v pracovním prostoru **Správa funkcí**. Další informace o aktivaci správy funkcí naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="components-you-can-include-in-performance-reviews"></a>Komponenty, které lze zahrnout do přezkoumání výkonnosti
 Do přezkoumání výkonnosti můžete zahrnout různé typy informací. Patří k nim podrobnosti přezkoumání, měření, aktivity, hodnocení, podpisy a přílohy.

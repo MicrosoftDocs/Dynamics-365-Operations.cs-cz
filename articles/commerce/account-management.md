@@ -3,7 +3,7 @@ title: Stránky a moduly správy účtů
 description: Toto téma popisuje stránky a moduly správy účtů v řešení Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3986505a7e0e8d33d5b8ff2c06f493335731a8d9
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785369"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885802"
 ---
 # <a name="account-management-pages-and-modules"></a>Stránky a moduly správy účtů
 
@@ -58,7 +58,7 @@ Stránka podrobností objednávky poskytuje podrobné informace pro každou obje
 
 ### <a name="user-profile-page"></a>Stránka profilu uživatele
 
-Na stránce profilu uživatele se zobrazují podrobnosti o účtu uživatele, jako je jméno nebo e-mailová adresa uživatele. Používá modul profilu uživatele. Ačkoli e-mailovou adresu nelze odebrat, je možné ji upravit.
+Na stránce profilu uživatele se zobrazují podrobnosti o účtu uživatele, jako je jméno nebo e-mailová adresa uživatele. Používá modul profilu uživatele. Ačkoli e-mailovou adresu nelze odebrat, je možné ji upravit. Stránka profilu uživatele také zobrazuje uživatelské předvolby, které umožňují uživateli přihlásit nebo odhlásit odběr některých funkcí, jako je přizpůsobení seznamů doporučení. 
 
 ### <a name="user-address-page"></a>Stránka adresy uživatele
 

@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009415"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915194"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Zjednodušené zadávání zaměstnance a navigace
 
-[!include [banner](includes/banner.md)]
-
 Dynamics 365 Talent umožňuje efektivní zadávání údajů o zaměstnancích a zaměstnání. Informace o historii práce můžete rychle aktualizovat pro minulé, aktivní a budoucí zaměstnance a dodavatele.
 
-Můžete také povolit zjednodušenou navigaci s rychlým vyhledáváním informací souvisejících s uživatelem a provést potřebné změny. Tato funkce je nyní k dispozici v prostředích izolovaného prostoru. Chcete-li tuto funkci zapnout, přejděte na **Správa systému > Odkazy > Nastavení > Systémové parametry > Funkce náhledu**. Vyberte **Rozšířený formulář pracovníka a navigace**. To povolí tyto změny pro všechny uživatele. Tuto možnost můžete kdykoli vypnout.
+Můžete také povolit zjednodušenou navigaci s rychlým vyhledáváním informací souvisejících s uživatelem a provést potřebné změny. Tato funkce je nyní k dispozici ve všech prostředích. Chcete-li tuto funkci zapnout, přejděte na položku **Správa systému > Správa funkcí > Nová > Zjednodušené zadávání zaměstnance > Povolit**. To povolí tyto změny pro všechny uživatele. Tuto možnost můžete kdykoli vypnout.
 
 ## <a name="view-options"></a>Možnosti zobrazení
 

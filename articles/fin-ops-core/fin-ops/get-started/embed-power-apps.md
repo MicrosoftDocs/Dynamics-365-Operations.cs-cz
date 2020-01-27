@@ -3,7 +3,7 @@ title: Integrace Power Apps
 description: Toto téma popisuje způsob vložení Power Apps do klienta pro zvýšení funkčnosti produktu.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 755a30f89725ca0a7e1c14252984c617d6ba280e
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 8b5e64cb9ba916f9cbd628703394318b4044867b
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824486"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870234"
 ---
 # <a name="embed-microsoft-power-apps"></a>Integrace Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Následující pokyny popisují postup integrace PowerApp do webového klienta.
 
     - Pole **Název** označuje text zobrazený pro tlačítko nebo kartu, které budou obsahovat integrovanou PowerApp. Často můžete chtít opakovat název PowerApp v tomto poli.
     - **ID aplikace** je identifikátor GUID pro PowerApp, který má být vložen. Chcete-li načíst tuto hodnotu, vyhledejte PowerApp na [web.powerapps.com](https://web.powerapps.com) a vyhledejte pole **ID aplikace** pod položkou **Podrobnosti**.
-    - Pro **vstupní data pro PowerApp** lze volitelně vybrat pole obsahující data, která je nutné předat do PowerApp jako vstup. Podrobné informace o přístupu PowerApp k datům odeslaným z aplikací Finance and Operations naleznete v části tohoto tématu nazvané [Vytvoření PowerApp, která využívá data z aplikací Finance and Operations](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps).
+    - Pro **vstupní data pro PowerApp** lze volitelně vybrat pole obsahující data, která je nutné předat do PowerApp jako vstup. Podrobné informace o přístupu PowerApp k datům odeslaným z aplikací Finance and Operations naleznete v části tohoto tématu nazvané [Vytvoření PowerApp, která využívá data z aplikací Finance and Operations](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps).
     - Zvolte **velikost aplikace** odpovídající typu PowerApp, který vkládáte. Vyberte **Tenký** pro aplikace Power Apps vytvořené pro mobilní zařízení a **Široký** pro Power Apps vytvořené pro tablety. To zajišťuje, že je pro integrovanou PowerApp vyhrazeno dostatečné množství místa.
     - Pevná záložka **Právnické osoby** poskytuje možnost zvolit, pro jaké právnické osoby je PowerApp dostupná. Výchozí nastavení je pro zobrazení PowerApp ve všech právnických osobách.
 
@@ -101,7 +101,7 @@ Následovně můžete upravit konfiguraci vložených PowerApp:
 
 Poté, co byla vložena PowerApp na stránku, existují dva způsoby, jak ji odebrat v případě potřeby:
 
-- Přejděte do podokna **Upravit PowerApp** podle pokynů v části [Úpravy vložené PowerApp](#editing-an-embedded-powerapp) dříve v tomto tématu. Potvrďte, že se v podokně zobrazí informace o vložené PowerApp, kterou chcete odebrat, a klepněte na tlačítko **odstranit**.
+- Přejděte do podokna **Upravit PowerApp** podle pokynů v části [Úpravy vložené PowerApp](#editing-an-embedded-power-app) dříve v tomto tématu. Potvrďte, že se v podokně zobrazí informace o vložené PowerApp, kterou chcete odebrat, a klepněte na tlačítko **odstranit**.
 - Vzhledem k tomu, že vložená PowerApp je uložena jako údaj o individuálním nastavení, clearing přizpůsobení stránky rovněž odstraní všechny Power Apps vložené na této stránce. Poznámka: zrušení zaškrtnutí přizpůsobení stránky je trvalé a nelze je vrátit zpět. Chcete-li odebrat vaše individuální nastavení na stránce, vyberte **Možnosti** a klikněte na **Přizpůsobit tento formulář**. V nabídce **Spravovat** zvolte tlačítko **Vymazat**. Po aktualizaci prohlížeče budou odebrána všechna předchozí individuální nastavení pro tuto stránku. Další informace o optimalizaci stránek pomocí individuálního nastavení najdete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
 
 ## <a name="appendix"></a>Dodatek

@@ -3,7 +3,7 @@ title: Definování a udržování maloobchodní sítě
 description: V tomto tématu je přehled procesu pro nastavení kamenných obchodů, které se v aplikaci Dynamics 365 Retail označují jako maloobchody. Jsou zde informace o úkolech, které je nutné dokončit před a po nastavení maloobchodu.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 45d0386d215da15103a417502debb245c91f6309
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019363"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934601"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definování a udržování maloobchodní sítě
 
@@ -85,3 +85,6 @@ Po zadání podrobností pro maloobchod dokončete tyto úlohy a odešlete nová
 ## <a name="organization-hierarchies"></a>Organizační hierarchie
 
 Retail používá hierarchie organizace pro potřeby strukturování maloobchodních kanálů. Organizační hierarchie představuje vztahy mezi organizacemi, které tvoří váš podnik. Při nastavování obchodů je můžete přidat do organizační hierarchie. Obchody poté budou sdílet data, která se používají pro sortimenty, doplnění a vykazování.
+
+> [!NOTE]
+> Chcete-li použít funkci maloobchodního prodeje, je nutné povolit konfigurační klíč **Více dodacích adres**. Tento konfigurační klíč je k dispozici v klíčích **Obchodní konfigurace** ve složce **Správa systému**\> **Nastavení** \> **Konfigurace licence**. To je vyžadováno z důvodu maloobchodní funkčnosti, která provádí různá ověření na základě dodací adresy nakonfigurované na úrovni řádku prodejní objednávky.

@@ -3,7 +3,7 @@ title: Srovnání funkcí cloudu a on-premises
 description: Toto téma popisuje funkce, které jsou podporovány v cloudu a instalaci on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 10/11/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 8fa5ff0de4e97d5dc178581f721f3a6ea72fc974
-ms.sourcegitcommit: 70c6257bd6833de3e8de34d9a7561088194e59cc
+ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
+ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573923"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935380"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Srovnání funkcí cloudu a on-premises
 
@@ -48,7 +48,7 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 | Integrace a správa dat      |                                                                                           | Ano       | Ano             |
 |                                      | Rozšíření na základě konfigurace                                                            | Ano       | Žádný              |
 |                                      | Export dat do svého vlastního datového skladu                                                    | Ano       | Ano             |
-|                                      | Povolení exportu přírůstkových aktualizací datových entit                                 | Ano       | Žádný              |
+|                                      | Povolení exportu přírůstkových aktualizací datových entit                                 | Ano       | Ano              |
 |                                      | Integrace dat                                                                         | Ano       | Ano             |
 | Správa dokumentů                  |                                                                                           | Ano       | Ano             |
 | Správa financí                 |                                                                                           | Ano       | Ano             |
@@ -148,7 +148,7 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 
 ## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
 
-Pokud chcete zobrazit seznam maloobchodních možností, které jsou k dispozici v místním nasazení, přečtěte si téma [Možnosti, které jsou k dispozici v místním nasazení maloobchodu](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md).
+Pokud chcete zobrazit seznam maloobchodních možností, které jsou k dispozici v místním nasazení, přečtěte si téma [Možnosti, které jsou k dispozici v místním nasazení maloobchodu](../../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
 

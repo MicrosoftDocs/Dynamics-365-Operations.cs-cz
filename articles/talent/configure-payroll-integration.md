@@ -15,16 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ec1d14cb14ab709dfc1bead4be0785904efcce4e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 075b2bdfa08bb190f66b6d60074e1263feedcf70
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251032"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898521"
 ---
-# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
-
-[!include [banner](includes/banner.md)]
+# <a name="configure-payroll-integration-between-talent-and-dayforce"></a>Konfigurace integrace mezd mezi aplikacemi Talent a Dayforce
 
 Integrace mezi aplikacemi Microsoft Dynamics 365 Talent a Ceridian Dayforce závisí na několika krocích konfigurace popsaných v tomto tématu. Před zpracováním výplat je nutné nakonfigurovat integraci v aplikaci Talent i Dayforce.
 

@@ -3,7 +3,7 @@ title: Glosář modelu stránky
 description: V tomto tématu jsou popsány různé prvky používané na stránkách webu Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c7b79e8b3bd68ba6246fe24916c60f476a26605
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 0285af2f73a25db3199b3cb089bc0b253a3b3f00
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697950"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914857"
 ---
 # <a name="page-model-glossary"></a>Glosář modelu stránky
 
@@ -52,6 +52,8 @@ V následující tabulce je uveden přehled termínů, které byste měli znát 
 [Způsoby přidání obsahu](add-manage-content.md)
 
 [Stavy dokumentu a životního cyklu](document-states-overview.md)
+
+[Práce se skupinami publikování](publish-groups.md)
 
 [Práce s moduly](work-with-modules.md)
 

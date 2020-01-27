@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812826"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897135"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Sdílení obsahu s jinými přispěvateli v aplikaci Dynamics 365 Talent - Onboard
+# <a name="share-content-with-other-contributors"></a>Sdílení obsahu s jinými přispěvateli
 
 [!include [banner](includes/banner.md)]
 
@@ -34,11 +34,11 @@ Microsoft Dynamics 365 Talent: Onboard umožňuje sdílet průvodce a šablony z
 1. V levé nabídce vyberte možnost **Průvodci** a poté vyberte průvodce, kterého chcete sdílet.
 2. Zvolte tlačítko **Více** tlačítko (tři svislé tečky) v pravém horním rohu stránky a vyberte **Sdílet**.
 
-    ![[Sdílení průvodce zaškolením s ostatními přispěvateli] (./media/onboard-share-guide.png)](./media/onboard-share-guide.png)
+    ![[Sdílení průvodce zaškolením s jinými přispěvateli](./media/onboard-share-guide.png)](./media/onboard-share-guide.png)
 
 3. V části **Sdílet s**, pokud by příjemci měli mít možnost revidovat příručku, nastavte možnost **Mohou tyto osoby provádět úpravy?** na **Zapnuto**. Pokud mají být příjemci upozorněni e-mailem, že jste s nimi nasdíleli průvodce, nastavte možnost **Odeslat e-mailové oznámení příjemcům** na **Zapnuto**.
 
-    ![[Nastavení přístupu a předvoleb e-mailu pro průvodce zaškolením] (./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+    ![[Nastavení předvoleb přístupu a e-mailu pro původce zaškolením](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
 
 4. Zadejte jméno nebo e-mailovou adresu a z rozevíracího seznamu vyberte požadovaného příjemce.
 5. Na kartě **Spravovat přístup** můžete zkontrolovat nebo změnit možnosti, které příjemci mohou s průvodcem provádět. Chcete-li změnit přístup příjemce, vyberte v rozevíracím seznamu vedle jména příjemce podle potřeby možnost **Může prohlížet**, **Může upravovat** nebo **Odebrat**.

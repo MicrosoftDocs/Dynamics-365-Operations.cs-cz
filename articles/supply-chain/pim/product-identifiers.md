@@ -3,12 +3,12 @@ title: Identifikátory produktu
 description: Toto téma obsahuje informace o různých typech identifikátorů produktu a vysvětluje přidání identifikátorů produktu do dat produktu.
 author: cvocph
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductEntityIdentifierCode
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250592"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934879"
 ---
 # <a name="product-identifiers"></a>Identifikátory produktu 
 
@@ -40,9 +40,12 @@ V aplikaci Dynamics 365 Supply Chain Management je primárním identifikátorem 
 
 V mnoha případech není číslo produktu původně vytvořeno v modulu Dynamics 365 Supply Chain Management. Namísto toho je přidružen k produktu v systému správy (PLM) životního cyklu produktu nebo systém pro správu dat produktu (PDM). V takovém případě používáte data entity k importu produktů a variant produktu. Aplikace Supply Chain Management pak tato čísla použije ve všech operacích.
 
-Při implementaci aplikace  Supply Chain Management je třeba obzvláště zvážit strategii čísel produktů. Systém číslování zboží vylepšuje toky logistiky a pomáhá předcházet chybám. Dobrý identifikátor produktu může mít nejvýše 15 znaků. V optimálním případě má méně než 10 znaků a obsahuje více než pět klasifikačních znaků. Můžete také použít vyhledávací pro účely rychlého vyhledávání. Vyhledávací název je další název představující klasifikaci produktu.
+Při implementaci aplikace Supply Chain Management je třeba obzvláště zvážit strategii čísel produktů. Systém číslování zboží vylepšuje toky logistiky a pomáhá předcházet chybám. Dobrý identifikátor produktu může mít nejvýše 15 znaků. V optimálním případě má méně než 10 znaků a obsahuje více než pět klasifikačních znaků. Můžete také použít vyhledávací pro účely rychlého vyhledávání. Vyhledávací název je další název představující klasifikaci produktu.
 
 Pokud použijete Common Data Service, je číslo produktu v modulu Supply Chain Management také číslo produktu v poli Common Data Service. Varianty produktu jsou synchronizovány do Common Data Service jako odlišné produkty.
+
+> [!NOTE]
+> Číslo produktu nemůže začínat "%".
 
 ## <a name="item-number-and-product-dimensions"></a>Dimenze čísla položky a produktů
 

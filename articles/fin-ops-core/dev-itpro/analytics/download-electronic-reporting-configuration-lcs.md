@@ -3,7 +3,7 @@ title: Stažení konfigurace elektronického vykazování ze služby Lifecycle S
 description: Toto téma popisuje postup, jak stáhnout konfigurace elektronických sestav (ER) ze služby Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 49785835ee2da911d7b8d1360e1c42f850f1153f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4cc14860bd969048c4378b40d97a7940a8710e89
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771486"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934647"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Stažení konfigurací elektronického výkaznictví ze služby Lifecycle Services
 
@@ -39,7 +39,7 @@ Tento kurz vás provede stahováním nejnovější verze konfigurací elektronic
     - Funkční konzultant elektronického výkaznictví
     - Správce systému
 
-2. Přejděte do části **Správa organizace** &gt; **Elektronické výkaznictví**.
+2. Přejděte do části **Správa organizace** &gt; **Pracovní prostory** &gt; **Elektronické výkaznictví**.
 3. V části **Zprostředkovatelé konfigurace** vyberte dlaždici **Microsoft**.
 4. Na dlaždici **Microsoft** klepněte na tlačítko **Úložiště**.
 

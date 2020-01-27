@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: f03e414683465e7275d6c48a843306abefbacaf0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3490378ff2c4a05b490bf268aada6e8be17b77f9
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505834"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898659"
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Generování sestav v rámci zákona Affordable Care Act
-
-[!include [banner](includes/banner.md)]
 
 Tato funkce má pomáhat zaměstnavatelům, kteří potřebují sledovat informace ve formulářích 1095-B a 1095-C v rámci **zmocnění zaměstnavatele** v kontextu zákona Affordable Care Act (ACA). Tato funkce je povolena pouze pro právnické osoby v USA.
 

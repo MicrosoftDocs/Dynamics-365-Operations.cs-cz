@@ -3,7 +3,7 @@ title: Ukázková data doporučení produktu pro omnikanál
 description: Cílem tohoto dokumentu je poskytnou pokyny, jak využívat doporučení Omni kanálu v prostředích s jedním polem na úrovni 1, pomocí předem naplněných a přizpůsobitelných ukázkových dat.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 12/1/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81af4c1bb7828c9b346a3ef514d8657e853dcefb
-ms.sourcegitcommit: c526cfd1f823df1ff33ded95e599a72f0a15cc5a
+ms.openlocfilehash: 31aa5dbd2fa814fd572024a4ae36b9d9b46a2fb0
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2225679"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872319"
 ---
 # <a name="omni-channel-product-recommendations-demo-data"></a>Ukázková data doporučení produktu pro omnikanál
 
 Cílem tohoto dokumentu je poskytnou pokyny, jak využívat doporučení Omni kanálu v prostředích s jedním polem na úrovni 1, pomocí předem naplněných a přizpůsobitelných ukázkových dat.
 
-Doporučení omnikanálového produktu poskytuje sadu redakčně upravených nebo programově generovaných uspořádaných seznamů produktů. Tyto seznamy lze použít v několika situacích, v závislosti na obchodní potřebě. Další informace o seznamech doporučených produktů naleznete v tématu [Přehled doporučení produktu.](product-recommendaitons-overview.md)
+Doporučení omnikanálového produktu poskytuje sadu redakčně upravených nebo programově generovaných uspořádaných seznamů produktů. Tyto seznamy lze použít v několika situacích, v závislosti na obchodní potřebě. Další informace o seznamech doporučených produktů naleznete v tématu [Přehled doporučení produktu.](../commerce/product-recommendations.md)
 
 Pro prostředí s vrstvami 2 a vyššími Dynamics jsou doporučení produktu automaticky vypočítána na základě zákaznických dat.
 Použití ukázkových dat doporučení produktu nezakáže žádné řešení doporučení produktů, které již bylo v daném prostředí zřízeno a žádné náklady související s jeho použitím.
@@ -68,6 +68,6 @@ Přípona obsahuje datový objekt s názvem RecoMockDataset.csv, který umožňu
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Přehled doporučení produktu](product-recommendations-overview.md)
+[Přehled doporučení produktu](../commerce/product-recommendations.md)
 
-[Plánování prostředí](environment-planning.md)
+[Plánování prostředí](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)

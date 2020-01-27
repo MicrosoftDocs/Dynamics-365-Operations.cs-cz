@@ -1,6 +1,6 @@
 ---
 title: Přepínání mezi návrhy dodavatele
-description: ''
+description: Toto téma popisuje způsob přepínání mezi integrací dat dodavatele mezi aplikacemi Finance and Operations a Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 4e97ff0b0e6195b5e3703e15a0bb0de7644ef8d1
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 204d788e72e79e7acf744d24cbeacb0f9b47da7d
+ms.sourcegitcommit: 3306e451f04df01c51d8d332306b135d8ae1e254
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772357"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902718"
 ---
 # <a name="switch-between-vendor-designs"></a>Přepínání mezi návrhy dodavatele
 
@@ -34,11 +34,11 @@ ms.locfileid: "2772357"
 
 Pokud chcete použít další aplikace Dynamics 365 pro hlavní řízení dodavatele a chcete izolovat informace o dodavateli od zákazníků, použijte tento základní návrh dodavatele.  
 
-![Základní tok dodavatele](media/dual-write-switch-1.png)
+![Základní tok dodavatele](media/dual-write-vendor-data-flow.png)
  
 Pokud chcete použít další aplikace Dynamics 365 pro hlavní řízení dodavatele a chcete pokračovat v používání entity **Účet** pro ukládání informací o dodavateli, můžete použít tento rozšířený návrh dodavatele. V tomto návrhu jsou rozšířené informace o dodavateli, jako je například stav blokovaných dodavatelů a profil dodavatele, uloženy v entitě **dodavatelé** v Common Data Service. 
 
-![Rozšířený tok dodavatele](media/dual-write-switch-2.png)
+![Rozšířený tok dodavatele](media/dual-write-vendor-detail.jpg)
  
 Chcete-li použít rozšířený návrh dodavatele, postupujte podle následujících kroků: 
  
@@ -60,5 +60,5 @@ Chcete-li použít rozšířený návrh dodavatele, postupujte podle následují
     4. Pracovní postupy můžete konfigurovat jako pracovní postupy v reálném čase nebo na pozadí na základě vašich požadavků. 
         > [!div class="mx-imgBorder"]
         > ![Převod do workflowu na pozadí](media/dual-write-switch-8.png)
-    5. Aktivujte workflowy, které jste vytvořili v entitách **Účet** a **Dodavatel**, abyste mohli začít používat entitu **Účet** Customer Engagement k ukládání informací o dodavateli. 
+    5. Aktivujte workflowy, které jste vytvořili v entitách **Účet** a **Dodavatel**, abyste mohli začít používat entitu **Účet** k ukládání informací o dodavateli. 
  

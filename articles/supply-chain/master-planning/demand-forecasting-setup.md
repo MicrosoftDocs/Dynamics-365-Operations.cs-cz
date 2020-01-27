@@ -3,7 +3,7 @@ title: Nastavení prognózy poptávky
 description: Toto téma popisuje úlohy nastavení, které je třeba provést, aby bylo možné používat prognózy poptávky.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/16/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f56157be8cc61486801fc4c01bb191432dd9a541
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813792"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935484"
 ---
 # <a name="demand-forecasting-setup"></a>Nastavení prognózy poptávky
 
@@ -63,7 +63,7 @@ Kdykoli je možné přidat dimenze prognózy na seznam dimenzí, které se použ
 
 Ne všechny položky se chovají stejným způsobem z perspektivy prognózy poptávky. Podobné položky mohou být seskupeny do jednoho alokačního klíče položky a pro každý alokační klíč položky lze nastavit parametry, jako například typy transakcí a nastavení metody prognózy. Klepněte na tlačítko **Alokační klíče položek** v levém podokně stránky **Parametry vytváření prognózy poptávky**. 
 
-Pokud chcete generovat prognózu, aplikace Supply Chain Management používá webovou službu Machine Learning. Pro připojení ke službě je třeba zadat následující informace pro přihlášení do studia strojového učení Microsoft Azure:
+Pokud chcete generovat prognózu, aplikace Supply Chain Management používá webovou službu Machine Learning. Pro připojení ke službě je třeba zadat následující informace pro přihlášení do studia strojového učení Microsoft Azure (klasický):
 
 -   Klíč rozhraní API webové služby
 -   Koncový bod URL webové služby
@@ -71,7 +71,7 @@ Pokud chcete generovat prognózu, aplikace Supply Chain Management používá we
 -   Klíč účtu úložiště Azure
 
 > [!NOTE]
-> Název účtu úložiště Azure a klíč jsou nutné pouze při použití vlastního účtu pro úložiště. Při nasazování místní verze musíte mít vlastní účet úložiště ve službě Azure, abyste mohli používat službu Machine Learning pro přístup k historickým datům. 
+> Název účtu úložiště Azure a klíč jsou nutné pouze při použití vlastního účtu pro úložiště. Při nasazování místní verze musíte mít vlastní účet úložiště ve službě Azure, aby služba Machine Learning měla přístup k historickým datům. 
 
 Pokud chcete vytvořit předpovědi poptávky, můžete nasadit vlastní službu pomocí experimentů s prognózou poptávky v rámci Machine Learning Studio nebo aplikace Supply Chain Management. Pokyny pro nasazení experimentů s prognózou poptávky v podobě webové služby jsou k dispozici v aplikaci Supply Chain Management. Na stránce **Parametry vytváření prognózy poptávky** klepněte na kartu **Azure Machine Learning**.
 

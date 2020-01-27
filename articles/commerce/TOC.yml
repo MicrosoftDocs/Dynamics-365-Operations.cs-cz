@@ -8,8 +8,6 @@
           items:
             - name: Před zakoupením
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
-            - name: Registrace ukázkového předplatného
-              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/commerce/toc.json
             - name: Aktualizace služby One Version
               items:
                 - name: Přehled aktualizace služby One Version
@@ -36,10 +34,18 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
                 - name: Vytvoření a automatizace akceptačních testování uživatele
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
-            - name: Nasazení ukázkového prostředí
-              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurace prostředí vyhodnocení elektronického obchodování
-              href: provisioning-guide.md
+            - name: Nastavení prostředí náhledu Commerce
+              items:
+                - name: Přehled prostředí náhledu Commerce
+                  href: cpe-overview.md
+                - name: Zřízení prostředí náhledu Commerce
+                  href: provisioning-guide.md
+                - name: Konfigurovat prostředí náhledu Commerce
+                  href: cpe-post-provisioning.md
+                - name: Nastavení volitelných funkcí pro prostředí náhledu Commerce
+                  href: cpe-optional-features.md
+                - name: Často kladené dotazy k prostředí náhledu Commerce
+                  href: cpe-faq.md
             - name: Zvažování nasazení
               items:
                 - name: Možnosti nasazení
@@ -72,20 +78,14 @@
                   href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
             - name: Co je nového a co se změnilo
               items:
-                - name: Funkce Preview v Retail verzi 10.0.7
+                - name: Retail verze 10.0.7
                   href: ../retail/get-started/whats-new-10-0-7.md?toc=/dynamics365/commerce/toc.json
                 - name: Retail verze 10.0.6
                   href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail verze 10.0.5
-                  href: ../retail/get-started/whats-new-10-0-5.md?toc=/dynamics365/commerce/toc.json
                 - name: Co je nového a co se změnilo v předchozích verzích
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                    - name: Aplikace Finance and Operations 10.0.5 (říjen 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/commerce/toc.json
-                    - name: 'Finance and Operations, 10.0.4 (červenec 2019)'
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Finance and Operations, Enterprise Edition 7.3'
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/commerce/toc.json
                 - name: Odstraněné nebo zastaralé funkce
@@ -376,6 +376,8 @@
                       href: create-ecommerce-site.md
                     - name: Přiřazení webu elektronického obchodu k online kanálu
                       href: associate-site-online-store.md
+                    - name: Správa souborů robots.txt
+                      href: manage-robots-txt-files.md
                     - name: Nastavení vlastních stránek pro přihlášení uživatelů
                       href: custom-pages-user-logins.md
                     - name: Přidání podpory pro síť CDN
@@ -412,12 +414,16 @@
                       href: page-elements-overview.md
                     - name: Stavy dokumentu a životního cyklu
                       href: document-states-overview.md
+                    - name: Práce s publikovacími skupinami
+                      href: publish-groups.md
                     - name: Označení vašeho webu a přidání podrobností obchodu
                       items:
                         - name: Přidání loga
                           href: add-logo.md
                         - name: Volba motivu webu
                           href: select-site-theme.md
+                        - name: Práce s CSS soubory přepisující výchozí styl
+                          href: css-override-files.md
                         - name: Přidání ikony oblíbené položky
                           href: add-favicon.md
                         - name: Přidání uvítací zprávy
@@ -460,12 +466,24 @@
                           href: enrich-product-page.md
                         - name: Obohacení cílové stránky kategorie
                           href: enrich-category-page.md
+                        - name: Ověření přístupnosti obsahu stránky
+                          href: verify-accessibility.md
                     - name: Navigace na webu
                       items:
                         - name: Přizpůsobení navigace na webu
                           href: customize-site-navigation.md
                         - name: Vytvoření URL adresy stránky
                           href: create-page-URL.md
+                - name: 'Ujištění se, že stránka dodržuje předpisy'
+                  items:
+                    - name: Přehled dodržování předpisů
+                      href: compliance-overview.md
+                    - name: Funkce a možnosti usnadnění přístupu
+                      href: accessibility.md
+                    - name: Zásady zacházení se soubory cookie
+                      href: cookie-compliance.md
+                    - name: Přidání stránky se zásadami ochrany osobních údajů
+                      href: add-privacy-page.md
                 - name: Startovací sada
                   items:
                     - name: Přehled startovací sady
@@ -554,10 +572,8 @@
                   href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Hierarchie maloobchodu
                   href: ../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json
-                - name: Atributy a skupiny atributů
+                - name: Správa atributů a skupin atributů
                   href: ../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Vytvoření a správa atributů
-                  href: ../retail/create-manage-attributes.md?toc=/dynamics365/commerce/toc.json
                 - name: Nastavení maloobchodních produktů
                   href: ../retail/set-up-retail-products.md?toc=/dynamics365/commerce/toc.json
                 - name: Správa maloobchodních kategorií produktů a produktů
@@ -756,6 +772,8 @@
                   href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
         - name: Monitorování a analýza
           items:
+            - name: Integrace Dynamics 365 Fraud Protection s Commerce
+              href: ../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
             - name: Monitorování výkonnosti prodeje a marží
               href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
             - name: "Analýza trendů a\_vzorců prodeje"
@@ -1016,6 +1034,252 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/commerce/toc.json
                 - name: Návrhář receptur v elektronickém výkaznictví
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/commerce/toc.json
+                - name: Jazyk a funkce vzorce
+                  items:
+                    - name: Jazyk vzorce
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
+                    - name: Funkce
+                      items:
+                        - name: Datum a čas
+                          items:
+                            - name: Funkce data a času
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/commerce/toc.json
+                            - name: AddDays
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/commerce/toc.json
+                            - name: DateFormat
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/commerce/toc.json
+                            - name: DateTimeFormat
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?toc=/dynamics365/commerce/toc.json
+                            - name: DateTimeValue
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/commerce/toc.json
+                            - name: DateToDateTime
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/commerce/toc.json
+                            - name: DateValue
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/commerce/toc.json
+                            - name: DayOfYear
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?toc=/dynamics365/commerce/toc.json
+                            - name: Days
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?toc=/dynamics365/commerce/toc.json
+                            - name: Now
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?toc=/dynamics365/commerce/toc.json
+                            - name: NullDate
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?toc=/dynamics365/commerce/toc.json
+                            - name: NullDateTime
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?toc=/dynamics365/commerce/toc.json
+                            - name: SessionNow
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/commerce/toc.json
+                            - name: SessionToday
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
+                        - name: Seznam
+                          items:
+                            - name: Funkce seznamu
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/commerce/toc.json
+                            - name: AllItems
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?toc=/dynamics365/commerce/toc.json
+                            - name: AllItemsQuery
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?toc=/dynamics365/commerce/toc.json
+                            - name: Count
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/commerce/toc.json
+                            - name: EmptyList
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/commerce/toc.json
+                            - name: Enumerate
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/commerce/toc.json
+                            - name: Filtr
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/commerce/toc.json
+                            - name: First
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/commerce/toc.json
+                            - name: FirstOrNull
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/commerce/toc.json
+                            - name: Index
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/commerce/toc.json
+                            - name: IsEmpty
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/commerce/toc.json
+                            - name: List
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
+                            - name: ListOfFields
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/commerce/toc.json
+                            - name: ListOfFirstItem
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/commerce/toc.json
+                            - name: OrderBy
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/commerce/toc.json
+                            - name: Reverse
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/commerce/toc.json
+                            - name: Split
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
+                            - name: SplitList
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/commerce/toc.json
+                            - name: SplitListByLimit
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?toc=/dynamics365/commerce/toc.json
+                            - name: StringJoin
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/commerce/toc.json
+                            - name: Where
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?toc=/dynamics365/commerce/toc.json
+                        - name: Logika
+                          items:
+                            - name: Logické funkce
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?toc=/dynamics365/commerce/toc.json
+                            - name: And
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/commerce/toc.json
+                            - name: Case
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/commerce/toc.json
+                            - name: If
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/commerce/toc.json
+                            - name: Not
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/commerce/toc.json
+                            - name: Or
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/commerce/toc.json
+                            - name: ValueIn
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/commerce/toc.json
+                        - name: Matematika
+                          items:
+                            - name: Matematické funkce
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?toc=/dynamics365/commerce/toc.json
+                            - name: Abs
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?toc=/dynamics365/commerce/toc.json
+                            - name: Power
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?toc=/dynamics365/commerce/toc.json
+                            - name: Round
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?toc=/dynamics365/commerce/toc.json
+                            - name: RoundDown
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?toc=/dynamics365/commerce/toc.json
+                            - name: RoundUp
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/commerce/toc.json
+                        - name: Záznamy
+                          items:
+                            - name: Funkce záznamu
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/commerce/toc.json
+                            - name: NullContainer
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/commerce/toc.json
+                            - name: EmptyRecord
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/commerce/toc.json
+                        - name: Text
+                          items:
+                            - name: Textové funkce
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/commerce/toc.json
+                            - name: Char
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
+                            - name: Concatenate
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/commerce/toc.json
+                            - name: Format
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/commerce/toc.json
+                            - name: GetEnumValueByName
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/commerce/toc.json
+                            - name: GuidValue
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/commerce/toc.json
+                            - name: JsonValue
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?toc=/dynamics365/commerce/toc.json
+                            - name: Left
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?toc=/dynamics365/commerce/toc.json
+                            - name: Len
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?toc=/dynamics365/commerce/toc.json
+                            - name: Lower
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/commerce/toc.json
+                            - name: Mid
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/commerce/toc.json
+                            - name: NumberFormat
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
+                            - name: NumeralsToText
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?toc=/dynamics365/commerce/toc.json
+                            - name: PadLeft
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?toc=/dynamics365/commerce/toc.json
+                            - name: QrCode
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/commerce/toc.json
+                            - name: Replace
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?toc=/dynamics365/commerce/toc.json
+                            - name: Right
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?toc=/dynamics365/commerce/toc.json
+                            - name: Text
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
+                            - name: Translate
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?toc=/dynamics365/commerce/toc.json
+                            - name: Trim
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?toc=/dynamics365/commerce/toc.json
+                            - name: Upper
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?toc=/dynamics365/commerce/toc.json
+                        - name: Shromažďování dat
+                          items:
+                            - name: Funkce shromažďování dat
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?toc=/dynamics365/commerce/toc.json
+                            - name: CollectedList
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?toc=/dynamics365/commerce/toc.json
+                            - name: CountIF
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?toc=/dynamics365/commerce/toc.json
+                            - name: CountIFs
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?toc=/dynamics365/commerce/toc.json
+                            - name: FormatElementName
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?toc=/dynamics365/commerce/toc.json
+                            - name: SumIF
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?toc=/dynamics365/commerce/toc.json
+                            - name: SumIFs
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?toc=/dynamics365/commerce/toc.json
+                        - name: Další
+                          items:
+                            - name: Další funkce (konkrétní pro obchodní domény)
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?toc=/dynamics365/commerce/toc.json
+                            - name: CH_Bank_Mod_10
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/commerce/toc.json
+                            - name: CN_GBT_AdditionalDimensionID
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?toc=/dynamics365/commerce/toc.json
+                            - name: ConvertCurrency
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?toc=/dynamics365/commerce/toc.json
+                            - name: CurCredRef
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/commerce/toc.json
+                            - name: FA_Balance
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/commerce/toc.json
+                            - name: CH_Bank_Mod_10
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/commerce/toc.json
+                            - name: FA_Sum
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/commerce/toc.json
+                            - name: GetCurrentCompany
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?toc=/dynamics365/commerce/toc.json
+                            - name: ISOCredRef
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?toc=/dynamics365/commerce/toc.json
+                            - name: IsValidCharacterISO7064
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?toc=/dynamics365/commerce/toc.json
+                            - name: Mod_97
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?toc=/dynamics365/commerce/toc.json
+                            - name: NumSeqValue
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?toc=/dynamics365/commerce/toc.json
+                            - name: RoundAmount
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?toc=/dynamics365/commerce/toc.json
+                            - name: TableName2ID
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?toc=/dynamics365/commerce/toc.json
+                        - name: Převod typu
+                          items:
+                            - name: Funkce převodu typu
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?toc=/dynamics365/commerce/toc.json
+                            - name: Int64Value
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?toc=/dynamics365/commerce/toc.json
+                            - name: IntValue
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?toc=/dynamics365/commerce/toc.json
+                            - name: NumberValue
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/commerce/toc.json
+                            - name: Value
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie data a času: DateTimeValue'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie data a času: DateToDateTime'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie data a času: DateValue'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie seznamu: List'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie seznamu: ListOfFields'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie seznamu: Split'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie seznamu: StringJoin'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie seznamu: Char'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie textu: GuidValue'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie textu: NumberFormat'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie textu: QrCode'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/commerce/toc.json
+                            - name: 'Kategorie textu: Text'
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
                 - name: Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
                 - name: Výběr definic datového modelu při vytváření formátů
@@ -1138,6 +1402,16 @@
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
                         - name: Import konfigurací z RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                - name: Kurzy
+                  items:
+                    - name: Použití zdrojů dat JOIN v mapování modelu elektrického výkaznictví k získání dat z více aplikačních tabulek
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurace formátů elektronického výkaznictví pro použití parametrů zadaných pro právnickou osobu
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
+                    - name: Nastavení parametrů formátu elektronického výkaznictví podle právnické osoby
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
                 - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
                   items:
                     - name: Konfigurace architektury
@@ -1170,8 +1444,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
                     - name: Sledování provedení formátů elektronického výkaznictví pro při řešení problémů s výkonem
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
-                    - name: Přehled správy obchodních dokumentů
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
+                    - name: Správa obchodních dokumentů
+                      items:
+                        - name: Přehled správy obchodních dokumentů
+                          href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
+                        - name: Přidání nových polí do šablony obchodního dokumentu v aplikaci Microsoft Excel
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/commerce/toc.json
                 - name: API rozhraní architektury elektronického výkaznictví
                   items:
                     - name: Rozšíření seznamu funkcí elektronického výkaznictví

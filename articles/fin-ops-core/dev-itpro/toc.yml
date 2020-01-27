@@ -8,7 +8,9 @@
           href: index.md
         - name: Co je nového a co se změnilo
           items:
-            - name: Funkce Preview v aktualizaci Platform update 31 (leden 2020)
+            - name: Funkce Preview v aktualizaci Platform update 32 (únor 2020)
+              href: get-started/whats-new-platform-update-32.md
+            - name: Platform update 31 (leden 2020)
               href: get-started/whats-new-platform-update-31.md
             - name: Platform update 30 (listopad 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
@@ -34,6 +36,10 @@
               href: ../fin-ops/get-started/whats-new-platform-update-20.md
             - name: Platform update 15 (březen 2018)
               href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Co je nového a co se změnilo v předchozích verzích
+              items:
+                - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations
+                  href: ../fin-ops/get-started/whats-new-changed.md
         - name: Obchodní události
           items:
             - name: Přehled obchodních událostí
@@ -410,7 +416,7 @@
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: Integrace PowerBI.com s místními prostředími
                   href: analytics/entity-store-on-prem.md
-                - name: Konfigurace reverzní proxy pro místní prostředí
+                - name: Konfigurace proxy pro místní prostředí
                   href: deployment/onprem-reverseproxy.md
                 - name: Použití aktualizací na místní nasazení
                   href: deployment/apply-updates-on-premises.md
@@ -926,6 +932,8 @@
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Známé problémy
                   href: lifecycle-services/known-issues.md
+                - name: Odstraněné nebo zastaralé funkce v Lifecycle Services (LCS)
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Uživatelská příručka Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Odhad předplatného

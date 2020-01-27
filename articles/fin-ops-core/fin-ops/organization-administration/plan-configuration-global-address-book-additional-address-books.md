@@ -3,7 +3,7 @@ title: Plán pro globální adresář a další adresáře
 description: Toto téma popisuje, co je třeba zvážit a jaká rozhodnutí je třeba učinit během procesu plánování, před nastavením a konfigurací globálního adresáře a jakéhokoli dalšího adresáře.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25a99284b2773e7c9d473357356c69a39f23c92d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 89c6e71e5f537f0f9309eca1025c8e74cdce6716
+ms.sourcegitcommit: 75bbcff474cfb8d2f282be2b9d2d7984d1505fa3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190021"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883404"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Plán pro globální adresář a další adresáře
 
@@ -35,7 +35,7 @@ Toto téma popisuje, co je třeba zvážit a jaká rozhodnutí je třeba učinit
 
 Než začnete pracovat s globálním adresářem, je třeba určit pro něj výchozí hodnoty. Tyto výchozí hodnoty jsou následně použity pro všechny další adresáře, které vytvoříte.
 
-**Rozhodnutí:**
+**Rozhodnutí**
 
 - V jakém pořadí se mají názvy zobrazit pro záznamy strany typu **Osoba**? Například jedna sekvence je příjmení, druhé jméno a křestní jméno.
 - Mají být záznamy strany odstraněny z adresáře při odstranění záznamu role? Například pokud dojde k odstranění záznamu odběratele, má být záznam strany také odstraněn?
@@ -58,11 +58,3 @@ Po vytvoření globálního adresáře můžete vytvořit další adresáře pod
 **Rozhodnutí:**
 
 - Kolik dalších adresářů vytvoříte?
-
-### <a name="address-book-security"></a>Zabezpečení adresáře
-
-Adresáře můžete vytvořit kdykoli a také můžete kdykoli nastavit parametry zabezpečení adresáře. Nemusíte nastavit oprávnění zabezpečení pro adresář. Pokud tak neučiníte, všichni pracovníci ve vaší organizaci budou moci zobrazit všechny záznamy strany v tomto adresáři. Můžete nastavit oprávnění zabezpečení v záznamech strany prostřednictvím adresáře. Oprávnění zabezpečení jsou založena na týmech. Tento přístup zaručuje, že pouze zaměstnanci, kteří jsou přiřazeni do týmu, který má přístup k adresáři, budou moci zobrazit záznamy strany v tomto adresáři. Je třeba vybrat týmy, které mají přístup k jednotlivým adresářům. Pro každý adresář můžete nastavit oprávnění zabezpečení, která povolují nebo zakazují přístup k určitým týmům. Pokud udělíte týmu oprávnění k adresáři, všichni členové tohoto týmu budou moci zobrazit záznamy v daném adresáři. Pokud neudělíte týmu přístup k adresáři, členové tohoto týmu nebudou moci zobrazit záznamy v daném adresáři ani jeho obsah.
-
-**Rozhodnutí:**
-
-- Které týmy by měly mít přístup ke každému novému adresáři, který vytvoříte?

@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3bb61297e294aa3f2d06f542bebe29d7afae9c3b
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 6c8a583a93c2ceb70d8c3b0e0047e2bf2047b56d
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832831"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898310"
 ---
 # <a name="extend-talent-with-power-apps-and-power-automate"></a>Rozšíření aplikace Talent o Power Apps a Power Automate
-
-[!include [banner](includes/banner.md)]
 
 Toto téma popisuje několik příkladů scénářů rozšíření pro aplikaci Microsoft Dynamics 365 Talent používající Microsoft Power Apps a Microsoft Power Automate. Můžete importovat balíček řešení přidružený ke každému příkladu do prostředí Power Apps. Poté můžete tyto balíčky použít pokyny jako návod nebo jako počáteční body pro implementaci scénářů, které jsou použitelné pro vaši organizaci.
 
@@ -108,7 +106,7 @@ Pomocí Referenční aplikace můžete přidat kandidáty do sdílené skupiny t
 
 Tuto aplikaci můžete vložit do samoobsluhy zaměstnanců (ESS) pro odesílání poskytovatelů reference nebo ji můžete použít jako hypertextový odkaz na podnikovém portálu a spustit jako samostatnou aplikaci.
 
-Chcete-li stáhnout **Referenční aplikaci**, přejděte na [Řešení rozšiřitelnosti Dynamics 365 Talent: Referenční aplikace](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) na webu Microsoft Download Center. Chcete-li přidat další funkce, můžete tuto aplikaci importovat a přizpůsobit ji.
+Chcete-li stáhnout **Referenční aplikaci**, přejděte na [Řešení rozšiřitelnosti Dynamics 365 Talent: Referenční aplikace](https://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) na webu Microsoft Download Center. Chcete-li přidat další funkce, můžete tuto aplikaci importovat a přizpůsobit ji.
 
 ## <a name="additional-resources"></a>Další zdroje
 

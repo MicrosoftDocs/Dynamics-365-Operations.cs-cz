@@ -3,7 +3,7 @@ title: Přidání oznámení o vlastnických právech
 description: V tomto tématu je popsán postup při přidání oznámení o autorských právech na web elektronického obchodu.
 author: psimolin
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39135a2eca25336097ee9eddf06dc6709c102571
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2696938"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914557"
 ---
 # <a name="add-a-copyright-notice"></a>Přidání oznámení o vlastnických právech
 
@@ -65,6 +65,8 @@ Zápatí, které obsahuje poznámku o autorských právech, se automaticky zobra
 [Přidání loga](add-logo.md)
 
 [Volba motivu webu](select-site-theme.md)
+
+[Práce se soubory přepisu šablon CSS](css-override-files.md)
 
 [Přidání ikony oblíbené položky](add-favicon.md)
 

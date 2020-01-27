@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: ba0d11efe868d57c74f6ae4b069d1cb8351f7213
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: b705304788f47e4a5d2a9f1b2bf42a065428ea0f
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773050"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898126"
 ---
 # <a name="provision-talent"></a>Zřízení aplikace Talent
-
-[!include [banner](includes/banner.md)]
 
 Toto téma vás povede procesem zřízení nového produkčního prostředí pro aplikaci Dynamics 365 Talent. Toto téma předpokládá, že jste si zakoupili aplikaci Talent prostřednictvím poskytovatele cloudového řešení (CSP) nebo smlouvy o podnikové architektuře (EA). Pokud máte existující licenci pro Microsoft Dynamics 365, která obsahuje servisní plán aplikace Talent, a nedaří se vám provést kroky uvedené v tomto tématu, kontaktujte podporu.
 

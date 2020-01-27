@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5b56f56f5307c292ced30ec94d178244268c5e68
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772644"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935435"
 ---
 # <a name="budgeting-home-page"></a>Domovská stránka Rozpočtování
 
@@ -56,7 +56,7 @@ Další funkce plánování a sestavování rozpočtu jsou k dispozici a jsou in
 
 -   **Rozpočty zaměstnanců** – Rozpočtování zaměstnanců obsahuje podrobné rozpočtové náklady na pracovní pozice, skupiny kompenzací a tak dále.
 -   **Rozpočty dlouhodobého majetku** – Na základě informací o dlouhodobém majetku můžete vypočítat plánovaný odpis a zaznamenat jiné plánované transakce související s dlouhodobým majetkem.
--   **Rozpočty projektu** – V modulu projektů můžete vytvořit podrobné prognózy projektu. Prognózy projektů budou obsahovat podrobnosti o plánované hodinách, výdajích, poplatcích a položkách.
+-   **Rozpočty projektu** – V modulu projektů můžete vytvořit podrobné prognózy projektu. Prognózy projektů budou obsahovat podrobnosti o plánovaných hodinách, výdajích, poplatcích a položkách.
 -   **Prognóza poptávky** – Na základě historických dat transakcí můžete odhadovat budoucí poptávku po zásobách a vytvářet prognózy poptávky.
 
 Informace o přenesení dat plánování z jiných modulů do plánů rozpočtu najdete v tématu [Integrace plánování rozpočtu s jinými moduly](budget-planning-integration-other-modules.md).

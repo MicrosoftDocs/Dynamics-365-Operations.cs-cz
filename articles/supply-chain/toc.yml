@@ -62,7 +62,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Co je nového a co se změnilo
               items:
-                - name: Funkce Preview v aplikaci Supply Chain Management verze 10.0.7 (prosinec 2019)
+                - name: Supply Chain Management verze 10.0.7 (prosinec 2019)
                   href: get-started/whats-new-scm-10-0-7.md
                 - name: Supply Chain Management 10.0.6 (listopad 2019)
                   href: get-started/whats-new-scm-10-0-6.md
@@ -70,10 +70,6 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aplikace Finance and Operations 10.0.5 (říjen 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Finance and Operations, 10.0.4 (červenec 2019)'
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 'Finance and Operations, Enterprise Edition 7.3'
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Odstraněné nebo zastaralé funkce
@@ -264,7 +260,7 @@
                 - name: Vytvoření majetku na základě nákupních objednávek
                   href: asset-management/objects/create-objects-based-on-purchase-orders.md
                 - name: Kusovník majetku
-                  href: /asset-management/objects/object-bom.md
+                  href: asset-management/objects/object-bom.md
                 - name: Historie událostí majetku
                   href: asset-management/objects/object-timeline.md
                 - name: Zobrazení majetku
@@ -592,7 +588,7 @@
                 - name: Analýza nákladů ve výrobní zakázce
                   href: cost-management/production-order-cost-analysis.md
                 - name: Odhad nákladů výrobní zakázky
-                  href: /cost-management/production-order-cost-estimation.md
+                  href: cost-management/production-order-cost-estimation.md
                 - name: "Zobrazení aktuálního stavu NV u\_výrobní zakázky"
                   href: cost-management/tasks/view-current-wip-status-production-order.md
                 - name: "Porovnání aktivních, odhadovaných a\_realizovaných nákladů u\_výrobní zakázky"
@@ -1099,6 +1095,8 @@
                   href: master-planning/safety-stock-replenishment.md
                 - name: Zpoždění
                   href: master-planning/delays.md
+                - name: Zrušení hlavní plánovací úlohy
+                  href: master-planning/cancel-master-planning-job.md
                 - name: Použití sledování pro rozpad
                   href: master-planning/trace-explosion.md
                 - name: Zprávy akce
@@ -1515,6 +1513,8 @@
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Vytvoření uvolněného produktu pro jednu společnost
                   href: pim/tasks/create-released-product-single-company.md
+                - name: Použití datové entity
+                  href: pim/data-entities.md
                 - name: Stav životního cyklu produktu
                   items:
                     - name: Přehled životního cyklu produktu
@@ -2349,6 +2349,10 @@
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                 - name: Zrušení práce skladu pro zpracování výjimek
                   href: warehousing/cancel-warehouse-work.md
+                - name: Systémem řízený výdej v seskupení
+                  href: warehousing/system-directed-cluster-pick.md
+                - name: Seskupování řádků vyskladnění
+                  href: warehousing/pick-line-grouping.md
             - name: Inventura skladu
               items:
                 - name: Kódy důvodů pro inventury zásob
