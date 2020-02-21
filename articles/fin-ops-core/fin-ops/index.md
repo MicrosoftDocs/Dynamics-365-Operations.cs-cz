@@ -1,5 +1,5 @@
 ---
-title: Dokumentace pro aplikaci Finance and Operations
+title: Dokumentaci k aplikaci Finance and Operations
 description: Dokumentace pro aplikace Finance and Operations.
 author: robinarh
 manager: AnnBe
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4249f2ec09e6742c843122c189cc7db7f72d1146
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770912"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005533"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentace pro aplikaci Finance and Operations
+# <a name="finance-and-operations-application-documentation"></a>Dokumentaci k aplikaci Finance and Operations
 
 [!include [banner](includes/banner.md)]
 
 Zjistěte, jak můžete pro svůj obchod využít aplikace Finance and Operations pomocí zdrojů uvedených v tomto tématu. Naleznete tak skvělý obsah pro koncové uživatele, vývojáře a profesionály z oblasti IT. 
 
-Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Retail and Talent. 
+Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Commerce a Dynamics 365 Human Resources. 
 
 <table>
 <colgroup>
@@ -44,7 +44,7 @@ Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Reta
 <h3><a href="get-started/before-you-buy.md">Před zakoupením</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrace ukázkového předplatného</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Výběr možnosti nasazení</a></p>
- <p><a href="get-started/purchase-on-premises.md">Zakoupení aplikace Finance and Operations (on-premises)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Zakoupení Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Životní cyklus implementace</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
@@ -84,9 +84,9 @@ Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Reta
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Funkce týkající se místních předpisů</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Lidské zdroje</a></h3>
-<p><a href="../../talent/manage-benefit-program.md">Zaměstnanecké výhody</a></p>
-<p><a href="../../talent/performance-management-overview.md">Rozvoj a školení zaměstnanců</a></p>
-<p><a href="../../talent/questionnaires.md">Dotazník</a></p>
+<p><a href="../../human-resources/hr-benefits-manage-program.md">Zaměstnanecké výhody</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Rozvoj a školení zaměstnanců</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Dotazníky</a></p>
 <p><a href="hr/manage-recruiting-process.md">Nábor</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Mzdy v USA</a></p>
 
@@ -129,16 +129,17 @@ Mnoho z tohoto obsahu se vztahuje i na související produkty: Dynamics 365 Reta
 </td>
 <td>
 <h3>Související produkty</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Retail</a></h4>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
 <p><a href="../../retail/call-center-functionality.md">Kontaktní středisko</p>
 <p><a href="../../retail/define-maintain-retail-channels.md">Nastavení a správa kanálů</p>
 <p><a href="../../retail/retail-peripherals-overview.md">MPOS a Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Retail – vývojář a správce</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commerce – vývojář a správa</p>
 
-<h4><a href="../../talent/index.yml">Dynamics 365 Talent</a></h4>
-<p><a href="../../talent/manage-benefit-program.md">Zaměstnanecké výhody</a></p>
-<p><a href="../../talent/performance-management-overview.md">Rozvoj a školení zaměstnanců</a></p>
-<p><a href="../../talent/questionnaires.md">Dotazník</a></p>
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Průvodce správce</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Průvodce vývojáře</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Uživatelská příručka</a></p>
+
 
 </td>
 </tr>

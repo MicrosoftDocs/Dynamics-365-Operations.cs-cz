@@ -58,22 +58,24 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurace skladů pro místní nasazení
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: Aplikace Finance and Operations provozovaná prostřednictvím 21Vianet v Číně
+                - name: Aplikace Finance and Operations provozované společností 21Vianet v Číně
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
                 - name: Aplikace Finance and Operations ve Francii
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Co je nového a co se změnilo
               items:
-                - name: Finance verze 10.0.7 (leden 2020)
-                  href: get-started/whats-new-changed-10-0-7.md
-                - name: Finance verze 10.0.6 (listopad 2019)
-                  href: get-started/whats-new-finance-10-0-6.md
-                - name: Co je nového a co se změnilo v předchozích verzích
+                - name: Co je nového a co se změnilo v aplikacích Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+                - name: Co je nového a co se změnilo v aplikaci Finance
                   items:
-                    - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                    - name: 'Finance and Operations, Enterprise Edition 7.3'
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
+                    - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance
+                      href: get-started/whats-new-home-page.md
+                    - name: 'Finance, verze 10.0.9 (duben 2020)'
+                      href: get-started/whats-new-changed-10-0-9.md
+                    - name: Finance verze 10.0.8 (únor 2020)
+                      href: get-started/whats-new-changed-10-0-8.md
+                    - name: Finance verze 10.0.7 (leden 2020)
+                      href: get-started/whats-new-changed-10-0-7.md
                 - name: Odstraněné nebo zastaralé funkce
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
                 - name: Odložené funkce AX 2012
@@ -204,6 +206,8 @@
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
                 - name: "Zadání dat faktury do systému závazků s\_použitím evidence faktur"
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+                - name: Kopírování dodavatelů pomocí sdílených číselných řad
+                  href: accounts-payable/vendor-copy.md
                 - name: Zaznamenání faktury dodavatele do deníku faktur
                   href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
             - name: "Auditování faktur a\_klíčových dat pro závazky"
@@ -274,7 +278,7 @@
                   href: accounts-payable/create-vendor-payments-payment-proposal.md
                 - name: Stornování platby dodavatele
                   href: accounts-payable/reverse-vendor-payment.md
-                - name: Elektronické výkaznictví pro šeky dodavatele
+                - name: Vzorové šeky dodavatele elektronického výkaznictví
                   href: accounts-payable/electronic-reporting-sample-vendor-checks.md
                 - name: Přehled zálohových faktur a záloh
                   href: accounts-payable/prepayments-invoices-vs-prepayments.md
@@ -300,6 +304,18 @@
           items:
             - name: Domovská stránka Pohledávky
               href: accounts-receivable/accounts-receivable.md
+            - name: Stanovení platebních podmínek odběratele
+              href: general-ledger/tasks/establish-customer-payment-terms.md
+            - name: Stanovení způsobu platby odběratele
+              href: accounts-receivable/tasks/establish-customer-method-payment.md
+            - name: Stanovení platebních poplatků odběratele
+              href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: Účetní profily odběratele
+              href: accounts-receivable/customer-posting-profiles.md
+            - name: Kopírování odběratelů pomocí sdílených číselných řad
+              href: accounts-receivable/copy-customer.md
+            - name: Workflow odběratele
+              href: accounts-receivable/customer-workflow.md
             - name: Úvěr a inkasa v modulu Pohledávky
               href: accounts-receivable/collections-credit-accounts-receivable.md
             - name: Konfigurace modulu Pohledávky a kredit a inkasa
@@ -324,66 +340,52 @@
               href: accounts-receivable/customer-posting-profiles.md
             - name: Přehled přímého inkasa SEPA
               href: accounts-receivable/sepa-direct-debit-overview.md
-            - name: Souhlas s inkasem SEPA
+            - name: Nastavení zmocnění přímého inkasa SEPA
               href: accounts-receivable/sepa-direct-debit-mandate.md
             - name: 'Nastavení platební karty, autorizace a záznam'
               href: accounts-receivable/credit-card-authorizations.md
             - name: Vytvoření volné faktury
               href: accounts-receivable/create-free-text-invoice-new.md
+            - name: Rozúčtování a položky dílčí hlavní knihy pro volné faktury
+              href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
             - name: Vytvoření šablony volné faktury
               href: accounts-receivable/create-free-text-invoice-template-new.md
             - name: Oprava volné faktury
               href: accounts-receivable/correct-free-text-invoice.md
             - name: Přiřazení šablony volné faktury odběrateli
               href: accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+            - name: Nastavení a zpracování opakovaných faktur
+              href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: "Generování a\_zaúčtování opakovaných volných faktur"
               href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
             - name: Vytváření faktur prodejních objednávek
               href: accounts-receivable/tasks/create-sales-order-invoices.md
-            - name: Nastavení úrokových sazeb pro kód úroku
-              href: accounts-receivable/set-up-interest-rates-interest-code.md
-            - name: 'Vzdát, obnovit nebo změnit úrokové poplatky'
-              href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
-            - name: Zpracování úroků
-              href: accounts-receivable/tasks/process-interest.md
             - name: Vytvoření faktury odběratele
               href: accounts-receivable/configure-customer-invoices.md
-            - name: Vklad platby odběratele
-              href: accounts-receivable/tasks/deposit-customer-payments.md
-            - name: Stanovení platebních podmínek odběratele
-              href: general-ledger/tasks/establish-customer-payment-terms.md
-            - name: Stanovení způsobu platby odběratele
-              href: accounts-receivable/tasks/establish-customer-method-payment.md
-            - name: Stanovení platebních poplatků odběratele
-              href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: Stránka se seznamem transakcí odběratele
+              href: accounts-receivable/customer-transactions-list-page.md
             - name: Nastavení cizích směnek
               href: accounts-receivable/set-up-bills-exchange.md
             - name: Uzavření účtu pohledávek
               href: accounts-receivable/close-accounts-receivable.md
-            - name: Vytvoření posloupnosti upomínek
-              href: accounts-receivable/tasks/create-collection-letter-sequence.md
-            - name: Zpracování upomínek
-              href: accounts-receivable/tasks/process-collection-letters.md
-            - name: "Vytvoření zmocnění k\_přímému debetu pro odběratele"
-              href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-            - name: "Vytvoření kódu úroků s\_rozsahem"
-              href: accounts-receivable/tasks/create-interest-code-range.md
-            - name: Vytvoření odpisového deníku pro odběratele
-              href: accounts-receivable/tasks/create-write-off-journal-customer.md
-            - name: "Nastavení a\_generování informací o\_splatnosti pohledávek"
-              href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-            - name: Kopírování odběratelů pomocí sdílených číselných řad
-              href: accounts-receivable/copy-customer.md
-            - name: Workflow odběratele
-              href: accounts-receivable/customer-workflow.md
             - name: "Platby a\_vyrovnání"
               items:
+                - name: Přehled uznání výnosů
+                  href: accounts-receivable/revenue-recognition-overview.md
                 - name: Přehled plateb odběratele
                   href: cash-bank-management/tasks/customer-payment-overview.md
-                - name: 'Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy'
-                  href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
                 - name: Centralizované platby pro pohledávky
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
+                - name: Vklad platby odběratele
+                  href: accounts-receivable/tasks/deposit-customer-payments.md
+                - name: Přehled přímého inkasa SEPA
+                  href: accounts-receivable/sepa-direct-debit-overview.md
+                - name: Souhlas s inkasem SEPA
+                  href: accounts-receivable/sepa-direct-debit-mandate.md
+                - name: "Vytvoření zmocnění k\_přímému debetu pro odběratele"
+                  href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+                - name: 'Použití jedné platby odběratele na úhradu několika faktur, které zasahují do více období slevy'
+                  href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
                 - name: Vyrovnání částečné platby zákazníka nebo konečné platby před slevou
                   href: accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md
                 - name: Vyrovnání částečné platby odběratele před datem slevy s konečnou platbou po datu slevy
@@ -396,8 +398,48 @@
                   href: accounts-receivable/reimburse-customers.md
                 - name: Platby částečných částek zákazníkům
                   href: accounts-receivable/customer-payments-partial-amount.md
-                - name: Stránka se seznamem transakcí odběratele
-                  href: accounts-receivable/customer-transactions-list-page.md
+            - name: Kredit a inkasa
+              items:
+                - name: Přehled kreditu a inkas
+                  href: accounts-receivable/cm-credit-and-collections-overview.md
+                - name: Nastavení správy kreditu
+                  href: accounts-receivable/cm-credit-mgmt-setup.md
+                - name: Informace o nastavení správy kreditu
+                  href: accounts-receivable/cm-setup-information.md
+                - name: Přidání informací o správě kreditu pro zákazníka
+                  href: accounts-receivable/cm-add-credit-mgmt-information-customer.md
+                - name: Úvěrové skupiny zákazníka
+                  href: accounts-receivable/cm-customer-credit-groups.md
+                - name: Úpravy limitu úvěru
+                  href: accounts-receivable/cm-credit-limit-adjustments.md
+                - name: Blokování úvěru pro prodejní objednávky
+                  href: accounts-receivable/cm-sales-order-credit-holds.md
+                - name: Periodické úkoly správy kreditu
+                  href: accounts-receivable/cm-periodic-tasks.md
+                - name: Klíčové pojmy správy inkasa
+                  href: accounts-receivable/cm-collections-concepts.md
+                - name: Konfigurace modulu Pohledávky a kredit a inkasa
+                  href: accounts-receivable/accounts-receivables-set-up-overview.md
+                - name: Nastavení kreditu a inkas
+                  href: accounts-receivable/set-up-collections.md
+            - name: Nastavení úrokových sazeb pro kód úroku
+              href: accounts-receivable/set-up-interest-rates-interest-code.md
+            - name: "Vytvoření kódu úroků s\_rozsahem"
+              href: accounts-receivable/tasks/create-interest-code-range.md
+            - name: 'Vzdát, obnovit nebo změnit úrokové poplatky'
+              href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
+            - name: Zpracování úroků
+              href: accounts-receivable/tasks/process-interest.md
+            - name: Kontrola inkasních informací
+              href: accounts-receivable/tasks/review-collections-information.md
+            - name: Vytvoření posloupnosti upomínek
+              href: accounts-receivable/tasks/create-collection-letter-sequence.md
+            - name: Zpracování upomínek
+              href: accounts-receivable/tasks/process-collection-letters.md
+            - name: "Nastavení a\_generování informací o\_splatnosti pohledávek"
+              href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Vytvoření odpisového deníku pro odběratele
+              href: accounts-receivable/tasks/create-write-off-journal-customer.md
         - name: Rozpočtování
           items:
             - name: Domovská stránka Rozpočtování
@@ -416,6 +458,8 @@
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
             - name: Šablony plánování rozpočtu pro Excel
               href: budgeting/budget-planning-excel-templates.md
+            - name: Rozšíření rozvržení plánování rozpočtu
+              href: budgeting/extending-budget-planning-layout.md
             - name: Odstraňování problémů s rozpočtováním pozice
               href: budgeting/position-budgeting-set-up-issues.md
             - name: Plánování rozpočtu
@@ -486,11 +530,11 @@
               href: cash-bank-management/set-up-centralized-payments.md
             - name: Automatické vyrovnání a stanovení priorit
               href: accounts-receivable/automatic-settlement-prioritization.md
-            - name: Jednoduché odsouhlasení banky
+            - name: Odsouhlasení bankovního účtu
               href: cash-bank-management/reconcile-bank-account.md
             - name: Rozšířené odsouhlasení banky
               items:
-                - name: Úlohy nastavení rozšířeného odsouhlasení banky
+                - name: Proces nastavení rozšířeného odsouhlasení banky
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
                 - name: Nastavení procesu importu rozšířené bankovního odsouhlasení
                   href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
@@ -562,7 +606,7 @@
               href: cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
             - name: Vytvoření zásad shrnutí nákladů
               href: cost-accounting/tasks/create-cost-rollup-policy.md
-            - name: Správa zdroje dat pro hlavní knihu nákladového účetnictví
+            - name: Správa datového zdroje pro hlavní knihu nákladového účetnictví
               href: cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
             - name: "Zpracování a\_sledování zdrojových dat"
               href: cost-accounting/tasks/process-trace-source-data.md
@@ -598,6 +642,10 @@
               href: expense-management/expense-workflows.md
             - name: Workflow správy výdajů
               href: expense-management/expense-workflow.md
+            - name: Správa delegování výdajů
+              href: expense-management/manage-expense-delegation.md
+            - name: Zpracování příjemek výdajů
+              href: expense-management/expense-receipt-processing.md
             - name: Import a udržování transakce platební karty
               href: expense-management/import-credit-card.md
             - name: Distribuce na sestavě výdajů
@@ -790,7 +838,7 @@
                   href: general-ledger/process-allocations.md
                 - name: Finanční dimenze
                   href: general-ledger/financial-dimensions.md
-                - name: Konsolidace skupin účtů a účtů
+                - name: Skupiny konsolidačních účtů a další konsolidační účty
                   href: budgeting/consolidation-account-groups-consolidation-accounts.md
                 - name: Přehled konsolidace a vyloučení
                   href: budgeting/consolidation-elimination-overview.md
@@ -830,6 +878,8 @@
                   href: general-ledger/tasks/create-journal-entry-template.md
                 - name: Vytvoření transakcí časového rozlišení hlavní knihy
                   href: general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Převod dílčí hlavní knihy do hlavní knihy
+                  href: general-ledger/subledger-transfer.md
                 - name: Publikování řádek deníku a dokumentů z Excelu
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: Zobrazení položek a transakcí
@@ -916,7 +966,7 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: "Konfigurace standardních nákladů pro práci a\_výdaje"
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
-            - name: Příjemky časově rozlišeného zásobování
+            - name: Časové rozlišení nákladů projektu na nákupních příjemkách
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: Fakturace projektu
               href: accounts-payable/project-invoicing.md
@@ -962,6 +1012,8 @@
               href: public-sector/forecast-positions.md
             - name: Sestavy pozice prognózy ve veřejném sektoru
               href: public-sector/forecast-position-reports.md
+            - name: Nastavení a spuštění dotazu na pozici hotovosti
+              href: public-sector/cash-position-inquiry-setup.md
             - name: Závazky ve veřejném sektoru
               items:
                 - name: Přehled závazků ve veřejném sektoru
@@ -1068,6 +1120,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: Součásti finančních sestav
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Možnosti měny ve finančním výkaznictví
+              href: general-ledger/financial-reporting-currency-capability.md
             - name: Finanční sestavy rozvah
               href: general-ledger/balance-sheet-financial-reports.md
             - name: Generování finančních sestav
@@ -1242,6 +1296,8 @@
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: SPED Fiscal 2020 - Doplňující informace o ICMS-ST pro fiskální SPED rozvržení č. 014
                   href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
+                - name: Fiskální SPED – rozložení 014
+                  href: localizations/latam-bra-sped-fiscal-layout-014.md
                 - name: Parametry pro právnické osoby
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: Nastavení parametrů právnické osoby
@@ -1328,7 +1384,7 @@
               items:
                 - name: Čína - přehled
                   href: localizations/china.md
-                - name: Aplikace Finance and Operations provozovaná prostřednictvím 21Vianet v Číně
+                - name: Finance and Operations provozované společností 21Vianet v Číně
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Porovnání kusovníků
                   href: localizations/apac-chn-bom-comparison.md
@@ -1554,6 +1610,8 @@
                   href: localizations/emea-tax-directives.md
                 - name: "Aktualizace zobrazení částek v\_sestavách a\_dokumentech"
                   href: localizations/emea-amount-printing-forms.md
+                - name: Použití finančních údajů z fakturačního účtu
+                  href: localizations/use-fiscal-data-from-invoice-account.md
                 - name: Daň z přidané hodnoty
                   items:
                     - name: Nastavení DIČ
@@ -1911,10 +1969,16 @@
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Správa rozšířených poznámek
                   href: localizations/emea-ita-exil-structured-notes.md
+                - name: Předběžné smlouvy – fakturace obvyklých vývozců
+                  href: localizations/emea-ita-exil-intent-letter.md
                 - name: Daňová faktura za zboží dodané zdarma
                   href: localizations/emea-ita-exil-goods-for-free.md
                 - name: Zlepšený dotaz na debetní nebo úvěrová vyrovnání
                   href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+                - name: Simulace hlavní knihy (Itálie)
+                  href: localizations/emea-ita-exil-general-ledger-simulations.md
+                - name: Jedinečná certifikace
+                  href: localizations/emea-ita-exil-unique-certification.md
             - name: Japonsko
               items:
                 - name: Japonsko - přehled
@@ -2099,6 +2163,8 @@
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
                 - name: Podrobnosti výpisu DPH
                   href: localizations/emea-ltu-vat-statement-details.md
+                - name: i.SAF vykazování pro Litvu
+                  href: localizations/emea-ltu-isaf.md
             - name: Malajsie
               items:
                 - name: Malajsie - přehled
@@ -2231,6 +2297,10 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Převod hlavní knihy
                       href: localizations/rus-ledger-translation-procedure.md
+                    - name: Sestavy výkazu obratu
+                      href: localizations/rus-turnover-balance-statement-reports.md
+                    - name: Sestavy pohybů na účtu
+                      href: localizations/rus-account-activity-reports.md
                 - name: Držitelé zálohy
                   items:
                     - name: Přehled držitelů záloh pro Rusko
@@ -2339,12 +2409,26 @@
                       href: localizations/rus-miscellaneous-charges.md
                     - name: Vedlejší náklady třetích stran
                       href: localizations/rus-third-party-misc-charges.md
+                    - name: Smlouvy
+                      items:
+                        - name: Přehled smluv
+                          href: localizations/rus-agreements.md
+                        - name: Nastavení a vytváření smluv
+                          href: localizations/rus-set-up-and-create-agreements.md
+                        - name: Registrace transakcí s odkazem na smlouvy
+                          href: localizations/rus-register-transactions-with-reference-to-agreements.md
+                        - name: Dotazy a sestavy se smlouvami
+                          href: localizations/rus-inquiries-reports-agreements.md
                 - name: Zásoby
                   items:
                     - name: Přepravované zboží od dodavatele
                       href: localizations/rus-goods-transit-vendor.md
                     - name: Čísla celního prohlášení
                       href: localizations/rus-custom-declaration-number.md
+                    - name: Struktura nákladů skladu
+                      href: localizations/rus-inventory-cost-structure.md
+                    - name: Průvodce úpravami zásob
+                      href: localizations/rus-inventory-adjustment-wizard.md
                 - name: Vykazování
                   items:
                     - name: Finanční výkaznictví
@@ -2359,6 +2443,8 @@
                       href: localizations/rus-transport-tax-declaration.md
                     - name: Přiznání daně z pozemku
                       href: localizations/rus-land-tax-declaration.md
+                    - name: Přiznání daně ze zisku
+                      href: localizations/rus-profit-tax-declaration.md
                 - name: Správa organizace
                   items:
                     - name: Informace o registraci daně související s adresou
@@ -2457,6 +2543,10 @@
                   href: localizations/apac-tha-unrealized-vat.md
                 - name: Srážková daň
                   href: localizations/apac-tha-withholding-tax.md
+            - name: Spojené arabské emiráty (UAE)
+              items:
+                - name: Nastavení a vykázání daně z přidané hodnoty (DPH)
+                  href: localizations/uae-vat-setup-reporting.md
             - name: Velká Británie
               items:
                 - name: Velká Británie - přehled
@@ -2489,51 +2579,59 @@
           items:
             - name: Přehled lidských zdrojů
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Vytvoření strategie lidských zdrojů
+            - name: Nastavení Human Resources
               items:
-                - name: Vytvořit cíle
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-goal.md
-                - name: 'Uspořádání zaměstnanců podle oddělení, prací a pozic'
-                  href: ../talent/departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurace parametrů lidských zdrojů
+                  href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurace sdílených parametrů lidských zdrojů
+                  href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
+                - name: Nastavení workflow lidských zdrojů
+                  href: ../human-resources/hr-setup-workflows.md?toc=/dynamics365/finance/toc.json
+                - name: Pochopení polí data a času
+                  href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
+            - name: Správa zaměstnanců
+              items:
+                - name: Organizování zaměstnanců
+                  href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
                 - name: Nastavení komponent práce
-                  href: ../talent/create-job.md?toc=/dynamics365/finance/toc.json
-                - name: Definování nových oddělení
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-new-departments.md
-                - name: Definování nových prací
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-new-jobs.md
-                - name: Vytvoření oddělení a jeho přidružení k hierarchii oddělení
-                  href: ../talent/create-department-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
-                - name: "Vytvoření kalendářů a\_vygenerování pracovní doby"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-calendar-working-times.md
-                - name: Nastavení parametrů lidských zdrojů mezi právnickými osobami
-                  href: ../talent/set-up-hr-parameters-across-legal-entities.md?toc=/dynamics365/finance/toc.json
-                - name: Nastavení parametrů lidských zdrojů pro konkrétní společnost
-                  href: ../talent/set-up-company-specific-hr-parameters.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
+                - name: Definování oddělení
+                  href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
+                - name: Přidání oddělení do hierarchie
+                  href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
+                - name: Definování prací
+                  href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření kalendáře pracovní doby
+                  href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
                 - name: Často kladené dotazy k akcím personálu
-                  href: ../talent/personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
-                - name: Správa informací o zaměstnanci pomocí workflow
-                  href: ../talent/workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-                - name: Úprava vztahů podřízenosti pro pozice
-                  href: ../fin-ops-core/fin-ops/hr/tasks/modify-reporting-relationships-position.md
-                - name: Schválení záznamů doručených přihlášek
-                  href: ../fin-ops-core/fin-ops/hr/tasks/approve-application-inbox-records.md
+                  href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
+                - name: Použití workflow ke správě informací o zaměstnanci
+                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
+                - name: Úprava vztahů podřízenosti pro určitou pozici
+                  href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
                 - name: "Zadávání informací o\_pracovnících"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-worker-information.md
+                  href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
                 - name: Zapůjčení položek pracovníkům
-                  href: ../fin-ops-core/fin-ops/hr/tasks/loan-item-worker.md
+                  href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
                 - name: Vytváření položek výpůjček
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-loan-items.md
-                - name: Správa položek zapůjčených pracovníkům
-                  href: ../talent/loan-items.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
+                - name: Správa položek výpůjček
+                  href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
                 - name: Vypracování plánu kariérního postupu
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-succession-plan.md
+                  href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
                 - name: Zadávání časových rozvrhů projektů
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-project-timesheets.md
-                - name: Správa šablon e-mailů
-                  href: ../fin-ops-core/fin-ops/hr/tasks/manage-email-templates.md
-                - name: Správa pracovního volna
-                  href: ../fin-ops-core/fin-ops/hr/tasks/manage-leave-absence.md
-            - name: Nábor
+                  href: ../human-resources/hr-personnel-enter-project-timesheets.md?toc=/dynamics365/finance/toc.json
+                - name: Projekty hromadného zařazení
+                  href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření projektu hromadného zařazení
+                  href: ../human-resources/hr-personnel-create-mass-hire-project.md?toc=/dynamics365/finance/toc.json
+                - name: Nastavení pozic
+                  href: ../human-resources/hr-personnel-set-up-positions.md?toc=/dynamics365/finance/toc.json
+                - name: Nastavení informací o zraněních a onemocněních
+                  href: ../human-resources/hr-personnel-set-up-injury-illness-information.md?toc=/dynamics365/finance/toc.json
+                - name: "Udržování informací o\_zraněních a\_onemocněních zaměstnanců"
+                  href: ../human-resources/hr-personnel-maintain-employee-injury-illness-information.md?toc=/dynamics365/finance/toc.json
+            - name: Nábor kandidátů
               items:
                 - name: Řízení náborových procesů
                   href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
@@ -2553,76 +2651,80 @@
                   href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
                 - name: "Identifikování a\_nasazení nástrojů pro výběr kandidáta"
                   href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Motivace zaměstnanců
+            - name: Nastavení plánů kompenzace
               items:
-                - name: Plány kompenzace
-                  href: ../talent/compensation-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Vytvoření plánů fixní kompenzace
-                  href: ../talent/create-fixed-compensation-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Vytvoření plánů variabilní kompenzace
-                  href: ../talent/create-variable-compensation-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Definování procesů kompenzací a vypočítání výsledků
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-compensation-process-calculate-results.md
-                - name: Zpracování kompenzací
-                  href: ../talent/process-compensation.md?toc=/dynamics365/finance/toc.json
+                - name: Přehled plánů kompenzací
+                  href: ../human-resources/hr-compensation-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Nastavení kompenzačních mřížek
-                  href: ../fin-ops-core/fin-ops/hr/tasks/set-up-compensation-grids.md
-                - name: "Vývoj struktur platu/kompenzace a\_plánů"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-salary-compensation-structure-plan.md
-                - name: "Přidávání informací do deníku výkonnosti a\_udělení pochvaly"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md
+                  href: ../human-resources/hr-compensation-grids.md?toc=/dynamics365/finance/toc.json
+                - name: Vývoj struktury a plánu kompenzace
+                  href: ../human-resources/hr-compensation-structure.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření plánů fixní kompenzace
+                  href: ../human-resources/hr-compensation-fixed-plans.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření plánů variabilní kompenzace
+                  href: ../human-resources/hr-compensation-variable-plans.md?toc=/dynamics365/finance/toc.json
                 - name: "Přihlášení zaměstnanců k\_plánu fixní kompenzace"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enroll-employee-fixed-compensation-plan.md
+                  href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
                 - name: "Přihlášení zaměstnanců k\_plánu variabilní kompenzace"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enroll-employee-variable-compensation-plan.md
-                - name: Vytvoření kontrol výkonnosti
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-performance-review.md
-            - name: Rozvoj a zaškolení zaměstnanců
+                  href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
+                - name: "Definování procesu kompenzací a\_výpočet výsledků"
+                  href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
+                - name: Zpracování plánů kompenzace
+                  href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
+            - name: Správa zaměstnaneckých výhod
+              items:
+                - name: Definování a správa programu zaměstnaneckých výhod
+                  href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
+                - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
+                  href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
+                - name: Proces nároku na zaměstnaneckou výhodu
+                  href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
+                - name: "Definování pravidel a\_zásad nároků na zaměstnanecké výhody"
+                  href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
+                - name: Definování programu zaměstnaneckých výhod
+                  href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření nových zaměstnaneckých výhod
+                  href: ../human-resources/hr-benefits-create.md?toc=/dynamics365/finance/toc.json
+                - name: Registrace pracovníků k zaměstnaneckým výhodám
+                  href: ../human-resources/hr-benefits-enroll-workers.md?toc=/dynamics365/finance/toc.json
+                - name: Správa dat vypršení platnosti zaměstnaneckých výhod
+                  href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
+                - name: Generování ACA sestav
+                  href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Rozvoj zaměstnanců
               items:
                 - name: Přehled řízení výkonnosti
-                  href: ../talent/performance-management-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Vyrovnání dovedností zaměstnanců s obchodními potřebami
-                  href: ../talent/skills.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
+                - name: Vyrovnání dovedností zaměstnanců
+                  href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
+                - name: Přidání do deníku výkonnosti
+                  href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření cíle
+                  href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření kontroly výkonnosti
+                  href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
+            - name: Vytvořit kurzy
+              items:
                 - name: Nastavení školicích kurzů
-                  href: ../talent/courses.md?toc=/dynamics365/finance/toc.json
-            - name: Vytvoření a správa zaměstnaneckých výhod
-              items:
-                - name: Správa programu zaměstnaneckých výhod
-                  href: ../talent/manage-benefit-program.md?toc=/dynamics365/finance/toc.json
-                - name: "Zásady způsobilosti k\_zaměstnaneckým výhodám"
-                  href: ../talent/benefit-eligibility-policies.md?toc=/dynamics365/finance/toc.json
-                - name: Proces nároku na zaměstnaneckou výhodu
-                  href: ../fin-ops-core/fin-ops/hr/tasks/benefit-eligibility-process.md
-                - name: "Definování pravidel a\_zásad nároků na zaměstnanecké výhody"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-benefit-eligibility-rules-policies.md
-                - name: Definování programu zaměstnaneckých výhod
-                  href: ../fin-ops-core/fin-ops/hr/tasks/deliver-employee-benefits-program.md
-                - name: Vytvoření nových zaměstnaneckých výhod
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-new-benefit.md
-                - name: "Registrace pracovníků k zaměstnaneckým výhodám a\_odebrání zaměstnaneckých výhod"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enroll-remove-benefits-workers.md
-                - name: Správa dat vypršení platnosti zaměstnaneckých výhod
-                  href: ../fin-ops-core/fin-ops/hr/tasks/manage-benefit-expiration-dates.md
-            - name: Shromáždění informací pomocí dotazníku
-              items:
-                - name: Dotazníky
-                  href: ../talent/questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Návrh dotazníku
-                  href: ../talent/design-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Distribuce a vyplnění dotazníku
-                  href: ../talent/distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-learning-courses.md?toc=/dynamics365/finance/toc.json
+                - name: Přehled dotazníků
+                  href: ../human-resources/hr-learning-questionnaires.md?toc=/dynamics365/finance/toc.json
+                - name: Návrh dotazníků
+                  href: ../human-resources/hr-learning-design-questionnaires.md?toc=/dynamics365/finance/toc.json
+                - name: Distribuce a plánování dotazníků
+                  href: ../human-resources/hr-learning-distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
                 - name: "Distribuce dotazníků s\_použitím plánování"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/distribute-questionnaires-scheduling.md
-                - name: Hodnocení výsledků dotazníku
-                  href: ../talent/evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-learning-distribute-questionnaires-scheduling.md?toc=/dynamics365/finance/toc.json
+                - name: Zobrazit výsledky dotazníku
+                  href: ../human-resources/hr-learning-evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
                 - name: Analýza výsledků dotazníku
-                  href: ../fin-ops-core/fin-ops/hr/tasks/analyze-questionnaire-results.md
-                - name: "Vytvoření dotazů s\_otevřeným koncem"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-open-ended-question.md
-                - name: "Vytvoření dotazů s\_uzavřeným koncem"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-closed-ended-question.md
-                - name: Nastavení dotazů jako závislých na odpovědi na předcházející otázku
-                  href: ../fin-ops-core/fin-ops/hr/tasks/make-question-dependent-answer-previous-question.md
+                  href: ../human-resources/hr-learning-analyze-questionnaire-results.md?toc=/dynamics365/finance/toc.json
+                - name: "Vytvoření dotazu s\_otevřeným koncem"
+                  href: ../human-resources/hr-learning-create-open-ended-question.md?toc=/dynamics365/finance/toc.json
+                - name: "Vytvoření dotazu s\_uzavřeným koncem"
+                  href: ../human-resources/hr-learning-create-closed-ended-question.md?toc=/dynamics365/finance/toc.json
+                - name: Vytvoření závislé otázky
+                  href: ../human-resources/hr-learning-depending-question.md?toc=/dynamics365/finance/toc.json
             - name: "Bezpečnost na pracovišti a\_dodržování předpisů (USA)"
               items:
                 - name: Ověření formuláře I-9
@@ -2635,10 +2737,6 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
                 - name: Správa přizpůsobení poskytovaných pracovníkům
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-                - name: Nastavení informací o zraněních a onemocněních
-                  href: ../fin-ops-core/fin-ops/hr/tasks/set-up-injury-illness-information.md
-                - name: "Udržování informací o\_zraněních a\_onemocněních zaměstnanců"
-                  href: ../fin-ops-core/fin-ops/hr/tasks/maintain-employee-injury-illness-information.md
         - name: Intelligence
           items:
             - name: Domovská stránka Intelligence
@@ -2653,7 +2751,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: Zaměstnanecké výhody
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: Přehled hotovosti
+                - name: Obsah přehledu hotovosti v Power BI
                   href: cash-bank-management/Cash-Overview-Power-BI-content.md
                 - name: Přehled CFO
                   href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/finance/toc.json
@@ -2779,8 +2877,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
                     - name: Upgrade formátu přijetím nové základní verze tohoto formátu
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json
-                - name: Návrhář receptur v elektronickém výkaznictví
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+                - name: Návrháři receptur v elektronickém výkaznictví
+                  items:
+                    - name: Návrhář receptur
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+                    - name: Rozšířený návrhář receptur
+                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
                 - name: Jazyk a funkce vzorce
                   items:
                     - name: Jazyk vzorce
@@ -2817,7 +2919,7 @@
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/finance/toc.json
                             - name: SessionToday
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
-                        - name: List
+                        - name: Seznam
                           items:
                             - name: Funkce seznamu
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
@@ -2831,7 +2933,7 @@
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/finance/toc.json
                             - name: Enumerate
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/finance/toc.json
-                            - name: Filter
+                            - name: Filtr
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/finance/toc.json
                             - name: First
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/finance/toc.json
@@ -2895,10 +2997,10 @@
                           items:
                             - name: Funkce záznamu
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/finance/toc.json
-                            - name: NullContainer
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/finance/toc.json
                             - name: EmptyRecord
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/finance/toc.json
+                            - name: NullContainer
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/finance/toc.json
                         - name: Text
                           items:
                             - name: Textové funkce
@@ -2973,8 +3075,6 @@
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/finance/toc.json
                             - name: FA_Balance
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/finance/toc.json
-                            - name: CH_Bank_Mod_10
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/finance/toc.json
                             - name: FA_Sum
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/finance/toc.json
                             - name: GetCurrentCompany
@@ -2995,37 +3095,37 @@
                           items:
                             - name: Funkce převodu typu
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?toc=/dynamics365/finance/toc.json
-                            - name: Int64Value
+                            - name: 'Typ: Int64Value'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?toc=/dynamics365/finance/toc.json
-                            - name: IntValue
+                            - name: 'Typ: IntValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: NumberValue
+                            - name: 'Typ: NumberValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
-                            - name: Value
+                            - name: 'Typ: Value'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie data a času: DateTimeValue'
+                            - name: 'Datum a čas: DateTimeValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie data a času: DateToDateTime'
+                            - name: 'Datum a čas: DateToDateTime'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie data a času: DateValue'
+                            - name: 'Datum a čas: DateValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie seznamu: List'
+                            - name: 'Seznam: List'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie seznamu: ListOfFields'
+                            - name: 'Seznam: ListOfFields'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie seznamu: Split'
+                            - name: 'Seznam: Split'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie seznamu: StringJoin'
+                            - name: 'Seznam: StringJoin'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie seznamu: Char'
+                            - name: 'Text: Char'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie textu: GuidValue'
+                            - name: 'Text: GuidValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie textu: NumberFormat'
+                            - name: 'Text: NumberFormat'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie textu: QrCode'
+                            - name: 'Text: QrCode'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Kategorie textu: Text'
+                            - name: 'Text: Text'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
                 - name: Správa mapování modelu elektronického výkaznictví v samostatných konfiguracích elektronického výkaznictví
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
@@ -3151,7 +3251,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
                 - name: Kurzy
                   items:
-                    - name: Použití zdrojů dat JOIN v mapování modelu elektrického výkaznictví k získání dat z více aplikačních tabulek
+                    - name: Použití zdrojů dat JOIN k získání dat z více aplikačních tabulek
                       href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
                     - name: Konfigurace mapování modelu elektrického výkaznictví závislého na kontextu země
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
@@ -3159,6 +3259,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
                     - name: Nastavení parametrů formátu elektronického výkaznictví podle právnické osoby
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
+                    - name: Odložení provádění prvků formátu elektronického výkaznictví
+                      items:
+                        - name: Odložení provádění prvku posloupnosti
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+                        - name: Odložení provádění prvku XML
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
                 - name: Použití řešení elektronického výkaznictví v aplikaci Finance and Operations
                   items:
                     - name: Konfigurace architektury
@@ -3171,10 +3277,26 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Místa určení
                       items:
-                        - name: Přehled míst určení
+                        - name: Přehled cílových míst
                           href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/finance/toc.json
-                        - name: Konfigurace míst určení
+                        - name: Typy cílových míst
+                          items:
+                            - name: Cílové místo archivu
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                            - name: Cílové místo e-mailu
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                            - name: Cílové místo souboru
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                            - name: Cílové místo Power BI
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                            - name: Cílové místo tiskárny
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                            - name: Cílové místo obrazovky
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
+                        - name: Konfigurace cílových míst
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Nastavení odkazu na formát elektronického výkaznictví
+                      href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Automatické ověření generovaných sestav
                       items:
                         - name: Sledování výsledků vygenerovaných sestav a jejich porovnání se základními hodnotami
@@ -3195,6 +3317,8 @@
                       items:
                         - name: Přehled správy obchodních dokumentů
                           href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                        - name: Nové uživatelské rozhraní dokumentu v modulu Správa obchodních dokumentů
+                          href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
                         - name: Přidání nových polí do šablony obchodního dokumentu v aplikaci Microsoft Excel
                           href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
                 - name: API rozhraní architektury elektronického výkaznictví
@@ -3553,7 +3677,7 @@
               items:
                 - name: Vytvoření poskytovatelů směnných kurzů
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-providers.md
-                - name: 'Vytvoření poskytovatele směnných kurzů v aplikaci Finance and Operations, verze 8.0'
+                - name: Vytvoření poskytovatelů směnných kurzů v aplikaci Finance and Operations verze 8.0
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Vyrovnání transakcí pomocí CustTrans::settleTransaction'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
@@ -3561,5 +3685,7 @@
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
+    - name: Dynamics 365 Commerce
+      href: ../commerce/index.md
     - name: Dynamics 365 Retail
-      href: ../retail/index.md
+      href: ../commerce/index.md
