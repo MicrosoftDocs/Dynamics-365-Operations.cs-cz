@@ -1,0 +1,8 @@
+## <a name="sales-tax-ledger-posting-groups-v2-to-msdyn_taxpostinggroups"></a><span data-ttu-id="0c28e-101">Účetní skupiny hlavní knihy pro DPH do msdyn_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="0c28e-101">Sales tax ledger posting groups V2 to msdyn_taxpostinggroups</span></span>
+
+<span data-ttu-id="0c28e-102">Tato šablona synchronizuje data mezi aplikacemi Finance and Operations a Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="0c28e-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="0c28e-103">Pole aplikace Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="0c28e-103">Finance and Operations field</span></span> | <span data-ttu-id="0c28e-104">Typ mapování</span><span class="sxs-lookup"><span data-stu-id="0c28e-104">Map type</span></span> | <span data-ttu-id="0c28e-105">Jiné pole Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="0c28e-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="0c28e-106">Výchozí hodnota</span><span class="sxs-lookup"><span data-stu-id="0c28e-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="0c28e-107">TAXPOSTINGGROUPCODE</span><span class="sxs-lookup"><span data-stu-id="0c28e-107">TAXPOSTINGGROUPCODE</span></span> | = | <span data-ttu-id="0c28e-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="0c28e-108">msdyn_name</span></span> | 
+<span data-ttu-id="0c28e-109">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="0c28e-109">DESCRIPTION</span></span> | = | <span data-ttu-id="0c28e-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="0c28e-110">msdyn_description</span></span> | 

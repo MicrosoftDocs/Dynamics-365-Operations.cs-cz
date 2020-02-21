@@ -1,0 +1,2 @@
+> [!NOTE]
+> <span data-ttu-id="8ba79-101">Tento článek se vztahuje na Dynamics 365 Human Resources i na pracovní prostor **Lidské zdroje** v Dynamics 365 Finance.</span><span class="sxs-lookup"><span data-stu-id="8ba79-101">This article applies to both Dynamics 365 Human Resources and the **Human resources** workspace in Dynamics 365 Finance.</span></span>

@@ -1,0 +1,8 @@
+## <a name="withholding-tax-groups-to-msdyn_withholdingtaxgroups"></a><span data-ttu-id="2ff0f-101">Skupiny srážkové daně do msdyn_withholdingtaxgroups</span><span class="sxs-lookup"><span data-stu-id="2ff0f-101">Withholding tax groups to msdyn_withholdingtaxgroups</span></span>
+
+<span data-ttu-id="2ff0f-102">Tato šablona synchronizuje data mezi aplikacemi Finance and Operations a Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="2ff0f-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="2ff0f-103">Pole aplikace Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="2ff0f-103">Finance and Operations field</span></span> | <span data-ttu-id="2ff0f-104">Typ mapování</span><span class="sxs-lookup"><span data-stu-id="2ff0f-104">Map type</span></span> | <span data-ttu-id="2ff0f-105">Jiné pole Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="2ff0f-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="2ff0f-106">Výchozí hodnota</span><span class="sxs-lookup"><span data-stu-id="2ff0f-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="2ff0f-107">WITHHOLDINGTAXGROUPCODE</span><span class="sxs-lookup"><span data-stu-id="2ff0f-107">WITHHOLDINGTAXGROUPCODE</span></span> | = | <span data-ttu-id="2ff0f-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="2ff0f-108">msdyn_name</span></span> | 
+<span data-ttu-id="2ff0f-109">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="2ff0f-109">DESCRIPTION</span></span> | = | <span data-ttu-id="2ff0f-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="2ff0f-110">msdyn_description</span></span> | 

@@ -1,0 +1,8 @@
+## <a name="legal-entities-to-cdm_companies"></a><span data-ttu-id="d466e-101">Právnické osoby do cdm_companies</span><span class="sxs-lookup"><span data-stu-id="d466e-101">Legal entities to cdm_companies</span></span>
+
+<span data-ttu-id="d466e-102">Tato šablona synchronizuje data mezi aplikacemi Finance and Operations a Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="d466e-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="d466e-103">Pole aplikace Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="d466e-103">Finance and Operations field</span></span> | <span data-ttu-id="d466e-104">Typ mapování</span><span class="sxs-lookup"><span data-stu-id="d466e-104">Map type</span></span> | <span data-ttu-id="d466e-105">Jiné pole Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="d466e-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="d466e-106">Výchozí hodnota</span><span class="sxs-lookup"><span data-stu-id="d466e-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="d466e-107">NAME</span><span class="sxs-lookup"><span data-stu-id="d466e-107">NAME</span></span> | = | <span data-ttu-id="d466e-108">cdm_name</span><span class="sxs-lookup"><span data-stu-id="d466e-108">cdm_name</span></span> | 
+<span data-ttu-id="d466e-109">LEGALENTITYID</span><span class="sxs-lookup"><span data-stu-id="d466e-109">LEGALENTITYID</span></span> | = | <span data-ttu-id="d466e-110">cdm_companycode</span><span class="sxs-lookup"><span data-stu-id="d466e-110">cdm_companycode</span></span> | 

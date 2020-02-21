@@ -1,45 +1,57 @@
-- name: Vývoj a správa aplikací Finance and Operations
+- name: Vývoj a správa pro aplikace Finance and Operations
   items:
-    - name: Vývoj a správa aplikací Finance and Operations
+    - name: Vývoj a správa pro aplikace Finance and Operations
       items:
-        - name: Dokumentace pro aplikaci Finance and Operations
+        - name: Dokumentaci k aplikaci Finance and Operations
           href: ../fin-ops/index.md
-        - name: Vývoj a správa aplikací Finance and Operations
+        - name: Vývoj a správa pro aplikace Finance and Operations
           href: index.md
         - name: Co je nového a co se změnilo
           items:
-            - name: Funkce Preview v aktualizaci Platform update 32 (únor 2020)
-              href: get-started/whats-new-platform-update-32.md
-            - name: Platform update 31 (leden 2020)
-              href: get-started/whats-new-platform-update-31.md
-            - name: Platform update 30 (listopad 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-30.md
-            - name: Platform update 29 (říjen 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-29.md
-            - name: Platform update 28 (červenec 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-28.md
-            - name: Platform update 27 (červen 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-27.md
-            - name: Platform update 26 (květen 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-26.md
-            - name: Platform update 25 (duben 2019)
-              href: ../fin-ops/get-started/whats-new-platform-25.md
-            - name: Platform update 24 (březen 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-24.md
-            - name: Platform update 23 (leden 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-23.md
-            - name: Platform update 22 (prosinec 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-22.md
-            - name: Platform update 21 (listopad 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-21.md
-            - name: Platform update 20 (září 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-20.md
-            - name: Platform update 15 (březen 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-15.md
-            - name: Co je nového a co se změnilo v předchozích verzích
+            - name: Co je nového a co se změnilo v aplikacích Finance and Operations
+              href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Co je nového a co se změnilo v aktualizacích Platform Update
               items:
-                - name: Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations
-                  href: ../fin-ops/get-started/whats-new-changed.md
+                - name: Domovská stránka Co je nového a co se změnilo v aktualizacích Platform Update
+                  href: get-started/whats-new-home-page.md
+                - name: Platform update 33 (duben 2020)
+                  href: get-started/whats-new-platform-update-33.md
+                - name: Platform update 32 (únor 2020)
+                  href: get-started/whats-new-platform-update-32.md
+                - name: Platform update 31 (leden 2020)
+                  href: get-started/whats-new-platform-update-31.md
+                - name: Platform update 30 (listopad 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-30.md
+                - name: Platform update 29 (říjen 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-29.md
+                - name: Platform update 28 (červenec 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-28.md
+                - name: Platform update 27 (červen 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-27.md
+                - name: Platform update 26 (květen 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-26.md
+                - name: Platform update 25 (duben 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-25.md
+                - name: Platform update 24 (březen 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-24.md
+                - name: Platform update 23 (leden 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-23.md
+                - name: Platform update 22 (prosinec 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-22.md
+                - name: Platform update 21 (listopad 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-21.md
+                - name: Platform update 20 (září 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-20.md
+                - name: Platform update 15 (březen 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Odstraněné nebo zastaralé funkce
+              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Odložené funkce AX 2012
+              href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Funkce neimplementované v místních nasazeních
+              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Ukončení standardní podpory pro Microsoft Dynamics AX 2009 a 2012
+              href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Obchodní události
           items:
             - name: Přehled obchodních událostí
@@ -133,35 +145,35 @@
                     - name: Synchronní obousměrná integrace
                       items:
                         - name: Integrace dat téměř v reálném čase
-                          href: data-entities/dual-write-overview.md
+                          href: data-entities/dual-write/dual-write-overview.md
                         - name: Organizační hierarchie na Common Data Service
-                          href: data-entities/dual-write-organization.md
+                          href: data-entities/dual-write/organization-mapping.md
                         - name: Integrace společnosti
                           items:
-                            - name: Koncept společnosti v Common Data Service
-                              href: data-entities/dual-write-company.md
+                            - name: Koncept společnosti v Common Data Services
+                              href: data-entities/dual-write/company-data.md
                             - name: Spuštění s daty společnosti
-                              href: data-entities/dual-write-bootstrap.md
+                              href: data-entities/dual-write/bootstrap-company-data.md
                         - name: Integrovaná hlavní data odběratelů
-                          href: data-entities/dual-write-customer.md
+                          href: data-entities/dual-write/customer-mapping.md
                         - name: Integrovaná hlavní kniha
-                          href: data-entities/dual-write-ledger.md
+                          href: data-entities/dual-write/ledger-mapping.md
                         - name: Sjednocené prostředí produktu
-                          href: data-entities/dual-write-product.md
+                          href: data-entities/dual-write/product-mapping.md
                         - name: Integrace dodavatele
                           items:
                             - name: Integrovaná hlavní data dodavatelů
-                              href: data-entities/dual-write-vendor.md
+                              href: data-entities/dual-write/vendor-mapping.md
                             - name: Přepínání mezi návrhy dodavatele
-                              href: data-entities/dual-write-vendor-switch.md
+                              href: data-entities/dual-write/vendor-switch.md
                         - name: Integrované sklady a pracoviště
-                          href: data-entities/dual-write-sites-and-warehouses.md
+                          href: data-entities/dual-write/sites-warehouses-mapping.md
                         - name: Integrovaná hlavní data daní
-                          href: data-entities/dual-write-tax.md
+                          href: data-entities/dual-write/tax-mapping.md
                         - name: Počáteční synchronizace
-                          href: data-entities/dual-write-initial.md
+                          href: data-entities/dual-write/initial-sync.md
                         - name: Řešení potíží s integrací dat
-                          href: data-entities/dual-write-troubleshooting.md
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
                     - name: Asynchronní jednosměrná integrace
                       items:
                         - name: Konfigurace scénáře zpeněžení potenciálního zákazníka
@@ -170,7 +182,7 @@
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
                             - name: "Synchronizace obchodních vztahů přímo z\_aplikace Sales na odběratele v\_aplikaci Finance and Operations"
                               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                            - name: "Synchronizace produktů přímo z\_aplikace Finance and Operations na produkty v\_aplikaci Sales"
+                            - name: "Synchronizace produktů přímo z\_aplikace Finance and Operations do produktů v aplikaci Sales"
                               href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
                             - name: "Synchronizace kontaktů přímo z\_aplikace Sales na kontakty nebo odběratele v\_aplikaci Finance and Operations"
                               href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
@@ -178,7 +190,7 @@
                               href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
                             - name: Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations
                               href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                            - name: "Synchronizace hlaviček a\_řádků prodejní faktury přímo z\_aplikace Finance and Operations do aplikace Sales"
+                            - name: "Synchronizace záhlaví a\_řádků prodejních faktur přímo z\_aplikace Finance and Operations do aplikace Sales"
                               href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                         - name: Konfigurace integrace se službou Field Service
                           items:
@@ -200,7 +212,7 @@
                               href: ../../supply-chain/sales-marketing/synchronize-project-list.md
                             - name: Synchronizace skladů z aplikace Finance and Operations do služby Field Service
                               href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                            - name: Synchronizace pracovních příkazů s projektem z aplikace Field Service do Finance and Operations
+                            - name: Synchronizace pracovních příkazů s projektem ze služby Field Service do Finance and Operations
                               href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                         - name: Konfigurace integrace Project Service Automation
                           items:
@@ -912,7 +924,7 @@
                   href: gdpr/gdpr-extend-person-search-report.md
                 - name: Správa přístupu k citlivým datům
                   href: gdpr/gdpr-auditing-sensitive-data.md
-                - name: Odpověď na požadavky personálních dat pomocí aplikace Talent
+                - name: Odpověď na požadavky personálních dat pomocí aplikace Human Resources
                   href: gdpr/respond-dsr-request-talent.md
                 - name: Odpověď na požadavky personálních dat v AX 2012
                   href: gdpr/gdpr-ax2012.md
@@ -1258,15 +1270,15 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Podpora
           items:
-            - name: Získání podpory pro aplikace Finance and Operations a Lifecycle Services
+            - name: Získání podpory pro Finance and Operations a Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Přehled podpory Dynamics 365
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
-            - name: Získání podpory pro aplikaci Finance and Operations provozovanou prostřednictvím 21Vianet v Číně
+            - name: Získání podpory pro aplikaci Finance and Operations provozovanou společností 21Vianet v Číně
               href: lifecycle-services/21vianet-support.md
             - name: Odeslání požadavků na tým Dynamics Service Engineering
               href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-            - name: Nastavení technické podpory pro aplikaci Finance and Operations
+            - name: Nastavení technické podpory pro Finance and Operations
               href: lifecycle-services/support-experience.md
             - name: Často kladené dotazy k oknu plánované údržby
               href: lifecycle-services/planned-maintenance-window-faq.md
@@ -1348,7 +1360,7 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Upgrade z AX 2012
               items:
-                - name: Upgrade z aplikace AX 2012 na aplikaci Finance and Operations
+                - name: Upgrade z AX 2012 na Finance and Operations
                   href: migration-upgrade/upgrade-overview-2012.md
                 - name: Upgrade AX 2012 – Plánování pomocí nástroje Upgrade Analyzer
                   href: migration-upgrade/upgrade-analyzer-tool.md
@@ -1390,7 +1402,7 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Migrace dat z AX 2009
               items:
-                - name: Migrace dat z aplikace AX 2009 do aplikace Finance and Operations
+                - name: Migrace dat z AX 2009 do Finance and Operations
                   href: migration-upgrade/data-migration-tool.md
                 - name: Migrace AX 2009 - Instalace nástroje pro migraci dat
                   href: migration-upgrade/install-dmt.md
@@ -1672,5 +1684,7 @@
       href: ../../supply-chain/index.md
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
+    - name: Dynamics 365 Commerce
+      href: ../../commerce/index.md
     - name: Dynamics 365 Retail
-      href: ../../retail/index.md
+      href: ../../commerce/index.md

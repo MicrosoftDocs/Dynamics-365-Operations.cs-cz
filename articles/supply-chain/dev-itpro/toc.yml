@@ -1,4 +1,4 @@
-- name: Vývoj a správa pro aplikaci Finance and Operations
+- name: Vývoj a správa pro Finance and Operations
   href: ../../dev-itpro/index.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Co je nového a co se změnilo
   items:
@@ -76,7 +76,7 @@
       href: ../../dev-itpro/data-entities/integration-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Rozhraní API integrace dat
       items:
-        - name: Balíček správy dat REST API
+        - name: REST API balíčku správy dat
           href: ../../dev-itpro/data-entities/data-management-api.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Koncové body služeb
           items:
@@ -120,7 +120,7 @@
                   href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Organizační hierarchie na Common Data Service
                   href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                - name: Koncept společnosti v Common Data Service
+                - name: Koncept společnosti v Common Data Services
                   href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Integrovaná hlavní data odběratelů
                   href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -142,7 +142,7 @@
                       href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: "Synchronizace obchodních vztahů přímo z\_aplikace Sales na odběratele v\_aplikaci Finance and Operations"
                       href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: "Synchronizace produktů přímo z\_aplikace Finance and Operations na produkty v\_aplikaci Sales"
+                    - name: "Synchronizace produktů přímo z\_aplikace Finance and Operations do produktů v aplikaci Sales"
                       href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: "Synchronizace kontaktů přímo z\_aplikace Sales na kontakty nebo odběratele v\_aplikaci Finance and Operations"
                       href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -150,7 +150,7 @@
                       href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Synchronizace prodejních objednávek přímo mezi aplikacemi Sales a Finance and Operations
                       href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: "Synchronizace hlaviček a\_řádků prodejní faktury přímo z\_aplikace Finance and Operations do aplikace Sales"
+                    - name: "Synchronizace záhlaví a\_řádků prodejních faktur přímo z\_aplikace Finance and Operations do aplikace Sales"
                       href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Konfigurace integrace se službou Field Service
                   items:
@@ -172,7 +172,7 @@
                       href: ../../supply-chain/sales-marketing/synchronize-project-list.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Synchronizace skladů z aplikace Finance and Operations do služby Field Service
                       href: ../../supply-chain/sales-marketing/synchronize-warehouse.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: Synchronizace pracovních příkazů s projektem z aplikace Field Service do Finance and Operations
+                    - name: Synchronizace pracovních příkazů s projektem ze služby Field Service do Finance and Operations
                       href: ../../supply-chain/sales-marketing/synchronize-work-orders.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Konfigurace integrace Project Service Automation
                   items:
@@ -862,7 +862,7 @@
           href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Správa přístupu k citlivým datům
           href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Odpověď na požadavky personálních dat pomocí aplikace Talent
+        - name: Odpověď na požadavky personálních dat pomocí aplikace Human Resources
           href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Odpověď na požadavky personálních dat v AX 2012
           href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1206,17 +1206,17 @@
           href: ../../dev-itpro/lcs-solutions/submit-localization-alerts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Podpora
   items:
-    - name: Získání podpory pro aplikace Finance and Operations a Lifecycle Services
+    - name: Získání podpory pro Finance and Operations a Lifecycle Services
       href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Přehled podpory Dynamics 365
       href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
-    - name: Získání podpory pro aplikaci Finance and Operations provozovanou prostřednictvím 21Vianet v Číně
+    - name: Získání podpory pro aplikaci Finance and Operations provozovanou společností 21Vianet v Číně
       href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Zadání lístku podpory Premier
       href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Odeslání požadavků na tým Dynamics Service Engineering
       href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Nastavení technické podpory pro aplikaci Finance and Operations
+    - name: Nastavení technické podpory pro Finance and Operations
       href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Často kladené dotazy k oknu plánované údržby
       href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1298,7 +1298,7 @@
       href: ../../dev-itpro/migration-upgrade/upgrade-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Upgrade z AX 2012
       items:
-        - name: Upgrade z aplikace AX 2012 na aplikaci Finance and Operations
+        - name: Upgrade z AX 2012 na Finance and Operations
           href: ../../dev-itpro/migration-upgrade/upgrade-overview-2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Upgrade AX 2012 – Plánování pomocí nástroje Upgrade Analyzer
           href: ../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1340,7 +1340,7 @@
               href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Migrace dat z AX 2009
       items:
-        - name: Migrace dat z aplikace AX 2009 do aplikace Finance and Operations
+        - name: Migrace dat z AX 2009 do Finance and Operations
           href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Migrace AX 2009 - Instalace nástroje pro migraci dat
           href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/supply-chain/toc.json

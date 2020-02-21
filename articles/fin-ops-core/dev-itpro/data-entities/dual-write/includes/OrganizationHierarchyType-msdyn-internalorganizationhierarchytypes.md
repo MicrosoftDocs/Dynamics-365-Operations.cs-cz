@@ -1,0 +1,7 @@
+## <a name="organization-hierarchy-type-to-msdyn_internalorganizationhierarchytypes"></a><span data-ttu-id="fedff-101">Typ organizační hierarchie do msdyn_internalorganizationhierarchytypes</span><span class="sxs-lookup"><span data-stu-id="fedff-101">Organization hierarchy type to msdyn_internalorganizationhierarchytypes</span></span>
+
+<span data-ttu-id="fedff-102">Tato šablona synchronizuje data mezi aplikacemi Finance and Operations a Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="fedff-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="fedff-103">Pole aplikace Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="fedff-103">Finance and Operations field</span></span> | <span data-ttu-id="fedff-104">Typ mapování</span><span class="sxs-lookup"><span data-stu-id="fedff-104">Map type</span></span> | <span data-ttu-id="fedff-105">Jiné pole Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="fedff-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="fedff-106">Výchozí hodnota</span><span class="sxs-lookup"><span data-stu-id="fedff-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="fedff-107">NAME</span><span class="sxs-lookup"><span data-stu-id="fedff-107">NAME</span></span> | > | <span data-ttu-id="fedff-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="fedff-108">msdyn_name</span></span> | 
