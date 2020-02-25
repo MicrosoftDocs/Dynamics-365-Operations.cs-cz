@@ -3,7 +3,7 @@ title: Modul kontejneru
 description: Tohle téma se zabývá moduly kontejneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,27 +17,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 22a09b61fbe3bd1cca96011d3fb81a12ef1bc844
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697053"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025498"
 ---
 # <a name="container-module"></a>Modul kontejneru
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tohle téma se zabývá moduly kontejneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
-Modul kontejneru je takový modul, který uvnitř hostuje jiné moduly. Jedná se o nejběžnější kontejner používaný v řešení Dynamics 365 Commerce. Primárním účelem modulu kontejneru je definovat pomocí vlastností, které jsou pro něj nastaveny, rozložení modulů, které jsou uvnitř. Tyto moduly mohou být například umístěny vedle sebe ve dvou sloupcích, ve třech sloupcích, ve čtyřech sloupcích nebo v šesti sloupcích. Mohou být také omezeny na šířku kontejneru nebo mohou vyplnit obrazovku. Do každého modulu kontejneru lze také přidat nadpis.
+Modul kontejneru je takový modul, který uvnitř hostuje jiné moduly. Primárním účelem modulu kontejneru je definovat pomocí vlastností, které jsou pro něj nastaveny, rozložení modulů, které obsahuje. Tyto moduly mohou být například umístěny vedle sebe ve dvou sloupcích, ve třech sloupcích, ve čtyřech sloupcích nebo v šesti sloupcích. Mohou být také omezeny na šířku kontejneru nebo mohou vyplnit obrazovku. Do každého modulu kontejneru lze také přidat nadpis.
 
-Existují tři standardní typy modulů konetjneru: kontejner, kontejner se 2 pozicemi a kontejner se 3 pozicemi. Do těchto kontejnerů lze vložit moduly libovolného typu. Existují také zvláštní typy modulů kontejneru, jako je karusel, blok s formátovaným obsahem, umístění obsahu, košík, pokladna, buy box, záhlaví a zápatí. Tyto kontejnery mají specifické účely a do nich mohou být vloženy pouze určité podporované typy modulů.
+Podporovány jsou tři moduly kontejneru: kontejner, kontejner se 2 pozicemi a kontejner se 3 pozicemi. Do těchto kontejnerů lze vložit moduly libovolného typu. 
 
-Doporučujeme, abyste do kontejneru vložili moduly, aby mohly být omezeny na šířku kontejneru.
+> [!NOTE] 
+> Doporučujeme, abyste do modulu kontejneru vždy vložili moduly, aby mohly být omezeny na šířku kontejneru.
 
 ## <a name="examples-of-container-modules-in-e-commerce"></a>Příklady modulů kontejneru v elektronickém obchodování
 
@@ -98,20 +99,19 @@ Další vlastnosti lze použít k optimalizaci rozložení pro různé porty zob
 
 Chcete-li přidat modul kontejneru na novou stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Vytvořte šablonu stránky s názvem **Šablona kontejneru**.
-1. V pozici **Hlavní** na výchozí stránce přidejte modul kontejneru.
-1. V modulu kontejneru přidejte propagační modul.
-1. Vraťte šablonu se změnami a publikujte ji.
+1. Vytvořte šablonu stránky s názvem **Šablona kontejneru**. 
+1. Do úseku **Tělo** přidejte modul **Výchozí stránka**.
+1. Dokončete úpravy šablony a publikujte ji.
 1. Šablonu kontejneru, kterou jste právě vytvořili, použijte pro vytvoření stránky s názvem **Stránka kontejneru**.
 1. V úseku **Hlavní** nové stránky přidejte modul kontejneru.
-1. V podokně vlastností modulu kontejneru nastavte vlastnost **Počet sloupců** na hodnotu **1** a vlastnost **Šířka** na hodnotu **Přizpůsobit kontejneru**.
-1. V modulu kontejneru přidejte propagační modul.
-1. V podokně vlastností propagačního modulu nakonfigurujte nadpis.
+1. V podokně vlastností modulu kontejneru nastavte vlastnost **Počet sloupců** na hodnotu **1** a vlastnost **Šířka** na hodnotu **Vyplnit kontejner**.
+1. Přidejte modul bloku obsahu v modulu kontejneru.
+1. V podokně vlastností pro modul bloku obsahu nakonfigurujte záhlaví, obrázek a rozvržení.
 1. Uložte stránku a zobrazte náhled. Měli byste vidět jeden propagační modul, který pasuje na šířku modulu kontejneru.
 1. V podokně vlastností modulu kontejneru změňte hodnotu vlastnosti **Počet sloupců** na **3**.
-1. Do modulu kontejneru přidejte další dva propagační moduly.
-1. Uložte stránku a zobrazte náhled. Nyní by měly být zobrazeny tři propagační moduly vedle sebe.
-1. Poté, co jste dosáhli požadovaného rozložení, vraťte stránku se změnami a publikujte ji.
+1. Do modulu kontejneru přidejte další dva moduly bloku obsahu.
+1. Uložte stránku a zobrazte náhled. Nyní by měly být zobrazeny tři moduly bloku obsahu vedle sebe.
+1. Poté, co jste dosáhli požadovaného rozložení, dokončete úpravy stránky a publikujte ji.
 
 ## <a name="additional-resources"></a>Další zdroje
 
@@ -119,9 +119,7 @@ Chcete-li přidat modul kontejneru na novou stránku a nastavit požadované vla
 
 [Karuselový modul](add-carousel.md)
 
-[Modul bloku s formátovaným obsahem](add-content-rich-block.md)
-
-[Modul umístění obsahu](add-content-placement-modules.md)
+[Modul textového bloku](add-content-rich-block.md)
 
 [Modul buy boxu](add-buy-box.md)
 

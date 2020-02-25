@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 96937d48e0d1003adbc5f7fedc89b2686ace01cd
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 311042caf6a391a06c7e2d8c4c2c2f6e1f855437
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899018"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006280"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Co je nového nebo co se změnilo v aplikaci Dynamics 365 Talent (30. července 2019)
 
@@ -41,7 +41,7 @@ Změny popsané v této části se vztahují na číslo sestavení 8.1.2409.
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Regionální podpora pro Kanadu a jihovýchodní Asii
 
-S radostí oznamujeme, že od 1. srpna 2019 bude Talent k dispozici pro Kanadu a jihovýchodní Asii. Tato změna umožňuje vytvářet prostředí v kanadských a asijských oblastech a všechna data aplikace Talent budou zachována pouze v těchto umístěních. Prostředí v těchto nových oblastech můžete vytvořit výběrem umístění v dialogovém okně Nové prostředí a použitím tohoto prostředí ke zřizování aplikace v rámci LCS, jak je popsáno v tématu [Zřizování aplikace Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+S radostí oznamujeme, že od 1. srpna 2019 bude Talent k dispozici pro Kanadu a jihovýchodní Asii. Tato změna umožňuje vytvářet prostředí v kanadských a asijských oblastech a všechna data aplikace Talent budou zachována pouze v těchto umístěních. Prostředí v těchto nových oblastech můžete vytvořit výběrem umístění v dialogovém okně Nové prostředí a použitím tohoto prostředí ke zřizování aplikace v rámci LCS, jak je popsáno v tématu [Zřizování aplikace Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Migrace dat existujících projektů z jiných oblastí do kanadských a asijských oblastí není podporována. Pro tyto nové podporované oblasti lze zřizovat pouze nové projekty.
 

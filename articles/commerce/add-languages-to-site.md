@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 111bcaba971b6223f670176135574633d2f1c5ec
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914601"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001408"
 ---
 # <a name="add-languages-to-your-site"></a>Přidání jazyků na web
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak přidat podporu pro další jazyky na webu Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
-Web můžete lokalizovat do libovolného jazyka, který Dynamics 365 Commerce podporuje. (Seznam podporovaných jazyků je uveden dále v tomto tématu.) Chcete-li přidat jazyk na váš web, musíte jej nejprve přidat do online obchodu vázaného na váš web.
+Web můžete lokalizovat do libovolného jazyka, který Commerce podporuje. (Seznam podporovaných jazyků je uveden dále v tomto tématu.) Chcete-li přidat jazyk na váš web, musíte jej nejprve přidat do online obchodu vázaného na váš web.
 
 ## <a name="add-a-language-to-an-online-store"></a>Přidání jazyka do online obchodu
 
 Pro přidání jazyka do online obchodu postupujte následovně.
 
-1. Otevřete prostředí Dynamics 365 Retail vašeho webu.
-1. Přejděte na **Maloobchod \> Kanály \> Online obchody**, čímž přejděte na seznam online obchodů, které jsou nakonfigurovány pro dané prostředí. Případně zadejte **online obchody** jako hledaný výraz.
+1. Otevřete prostředí Dynamics 365 Commerce vašeho webu.
+1. Přejděte na **Retail a Commerce \> Kanály \> Online obchody**, čímž přejděte na seznam online obchodů, které jsou nakonfigurovány pro dané prostředí. Případně zadejte **online obchody** jako hledaný výraz.
 1. Vyberte online obchod, pro který chcete přidat jazyk.
 1. Na záložce s náhledem **Jazyky** vyberte **Přidat**.
 1. V poli **Jazyk** vyberte jazyk, který chcete přidat.

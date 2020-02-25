@@ -3,7 +3,7 @@ title: Nastavení účtů dodavatele
 description: Toto téma popisuje typy informací, které je nutné zadat při vytváření nového účtu dodavatele.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 63843381207fbe6cb72ac1b5533eda754b1ba55b
+ms.sourcegitcommit: 5457cbec3399d8ed9f87c3a9dc586173b5616c11
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249377"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012438"
 ---
 # <a name="set-up-vendor-accounts"></a>Nastavení účtů dodavatele
 
@@ -88,7 +88,7 @@ Dodavatele je možné blokovat pro různé typy transakcí. Existují tyto možn
 -   **Faktura** – pro dodavatele nelze zaúčtovat žádné faktury.
 -   **Vše** – dodavatel je blokován pro všechny typy transakcí. Tyto typy transakcí zahrnují nákupní požadavky, faktury a platby.
 -   **Platba** – žádné platby nemohou být pro dodavatele generovány.
--   **Požadavek** – lze vytvořit pouze jednu nákupní žádanku. Žádné jiné transakce nelze vytvářet.
+-   **Žádanka** – nelze vytvořit nákupní žádanky pro dodavatele a řádky žádanky, které byly vytvořeny před nastavením dodavatele pro blokování, nelze převést na nákupní objednávku. Řádky požadavků pro dodavatele budou zrušeny, pokud jsou nastaveny zásady pro automatické vytváření nákupních objednávek.
 -   **Nikdy** – dodavatele nebude nikdy blokován pro nečinnost.
 
 Pokud dodavatele budete blokovat, můžete také nastavit důvod a datum, kdy stav blokování skončí. Pokud nezadáte datum ukončení, blokování dodavatele bude trvat navždy.

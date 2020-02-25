@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811665"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005696"
 ---
 # <a name="help-system"></a>Systém nápovědy
 
@@ -32,9 +32,9 @@ ms.locfileid: "2811665"
 Toto téma poskytuje přehled součástí systému nápovědy. Systém nápovědy je společný pro všechny následující produkty:
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 K nápovědě můžete přistupovat z podokna Nápověda u kteréhokoliv produktu, který používáte. 
 
@@ -42,7 +42,7 @@ K nápovědě můžete přistupovat z podokna Nápověda u kteréhokoliv produkt
 
 ## <a name="help-on-docsmicrosoftcom"></a>Nápověda na webu docs.microsoft.com
 
-Web docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) je primární zdroj produktové dokumentace pro aplikace uvedené výše. Web nabízí následující možnosti:
+Web docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) je primární zdroj produktové dokumentace pro aplikace uvedené výše. Web nabízí následující možnosti:
 
 - **Přístup k nejaktuálnějšímu obsahu** – web nám poskytuje rychlejší a pružnější způsob vytváření, provedení a aktualizaci dokumentace k produktům. Díky tomu pomáhá zajistit, že budete mít přístup k aktuálním technickým informacím.
 - **Obsah vytvořený odborníky** – web poskytuje lepší sadu dokumentace k produktu, kterou mohou vylepšovat členové komunity uvnitř i mimo aplikaci Microsoft.
@@ -73,7 +73,7 @@ Do dokumentace můžete přispívat a provádět v ní úpravy. Chcete-li začí
 
 Video o tom, [Jak přispět k dokumentaci Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (viz výše), je obsaženo v kanálu Microsoft Dynamics 365 na YouTube.
 
-Další informace naleznete v naší [příručce přispěvatelů](https://docs.microsoft.com/en-us/contribute).
+Další informace naleznete v naší [příručce přispěvatelů](https://docs.microsoft.com/contribute).
 
 > [!NOTE]
 > V současnosti přijímáme pouze příspěvky do našeho anglického obsahu.
@@ -106,12 +106,12 @@ Chcete-li získat přístup k obsahu nápovědy, klikněte na ikonu **Nápověd
 Z podokna Nápověda můžete otevřít články, které se týkají klienta. Při prvním otevření podokna nápovědy a kliknutí na kartu **Nápověda** uvidíte články vztahující se ke stránce, kterou máte aktuálně otevřenou. Pokud nebyly nalezeny žádné články, můžete zadat klíčová slova pro upřesnění hledání. Po kliknutí na článek v podokně Nápověda se nová záložka otevře v prohlížeči a zobrazí se wiki článek.
 
 > [!IMPORTANT]
-> Tato část se nevztahuje na Dynamics 365 Talent. Systém nápovědy pro aplikaci Talent se automaticky připojí k průvodcům záznamem úloh pro daný produkt. V aplikaci Talent navíc nelze vytvářet vlastní průvodce záznamem úloh.
+> Tato část se nevztahuje na Dynamics 365 Human Resources. Systém nápovědy pro aplikaci Human Resources se automaticky připojí k průvodcům záznamem úloh pro daný produkt. V aplikaci Human Resources navíc nelze vytvářet vlastní průvodce záznamem úloh.
 
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Přístup k průvodcům záznamem úloh z podokna Nápověda
 
-Před zobrazením průvodců záznamem úloh v podokně Nápověda musí správce systému přejít na stránku **Systémové parametry** v aplikaci Finance, Supply Chain Managment a Retail a nakonfigurovat některá nastavení.
+Před zobrazením průvodců záznamem úloh v podokně Nápověda musí správce systému přejít na stránku **Systémové parametry** v aplikaci Finance, Supply Chain Managment a Commerce a nakonfigurovat některá nastavení.
 
 > [!NOTE]
 > - Než bude možné konfigurovat nápovědu, musíte být přihlášeni pomocí účtu ve stejném klientovi, jako ve kterém je aplikace nasazena.

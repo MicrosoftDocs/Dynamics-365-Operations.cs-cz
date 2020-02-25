@@ -19,16 +19,15 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d075635b7b986cc854550d15f7e941a9ea9cf72
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770406"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024926"
 ---
 # <a name="create-curated-product-recommendation-lists"></a>Vytvoření seznamů doporučení vybraných produktů
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak mohou manažeři prodeje vytvářet a spravovat ruční seznamy produktů pro zákazníky Microsoft Dynamics 365 Commerce.
@@ -39,7 +38,7 @@ Seznamy vybraných produktů jsou kolekce jednotlivých položek obsahu vytvoře
 
 Chcete-li vytvořit seznam doporučení vybraných produktů, postupujte takto.
 
-1. Přejděte na **Maloobchod** &gt; **Doporučení produktů** &gt; **Seznamy doporučení**.
+1. Přejděte na **Retail and Commerce &gt; Doporučení produktů &gt; Seznamy doporučení**.
 1. Zvolte **Nové**.
 1. Zadejte hodnotu do pole **ID seznamu**.
 1. Zadejte hodnotu do pole **Název seznamu**.
@@ -60,3 +59,5 @@ Chcete-li vytvořit seznam doporučení vybraných produktů, postupujte takto.
 [Povolit doporučení produktu](enable-product-recommendations.md)
 
 [Přidání seznamů doporučení produktu na stránky](add-reco-list-to-page.md)
+
+[Přehled modulu kolekce produktů](product-collection-module-overview.md)

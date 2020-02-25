@@ -1,9 +1,9 @@
 ---
 title: Vytvoření webu elektronického obchodu
-description: V tomto tématu jsou popsány úlohy, které souvisí s vytvořením nového serveru elektronického obchodu v řešení Dynamics 365 Commerce.
+description: V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu e-Commerce v Konfigurátoru webu Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,29 +19,31 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 3d3d8a290f06d9734be21f2d59152acac6857506
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945828"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002006"
 ---
 # <a name="create-an-e-commerce-site"></a>Vytvoření webu elektronického obchodu
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-V tomto tématu jsou popsány úlohy, které souvisí s vytvořením nového serveru elektronického obchodu v řešení Dynamics 365 Commerce.
+V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu e-Commerce v Konfigurátoru webu Dynamics 365 Commerce.
 
-## <a name="overview"></a>Přehled
+Než začnete vyvíjet svůj web e-Commerce, je nutné nejprve vytvořit nový web v Konfugurátoru webu. 
 
-Chcete-li začít vyvíjet svůj web elektronického obchodu, je nutné nejprve vytvořit nový web ve vývojovém prostředí webu. Než bude možné vytvořit nový web, musí být v aplikaci Dynamics 365 Retail vytvořen alespoň jeden online obchod. 
+
+Chcete-li začít vyvíjet svůj web elektronického obchodu, je nutné nejprve vytvořit nový web ve vývojovém prostředí webu. Než bude možné vytvořit nový web, musí být v aplikaci Commerce vytvořen alespoň jeden online obchod. 
+
 
 ## <a name="set-up-your-site"></a>Zřízení webu
 
 Při zřízení webu postupujte takto.
 
-1. Ve službách Microsoft Lifecycle Services (LCS) vyberte odkaz na vývojové prostředí webu. 
+1. Otevřete prostředí konfigurátoru webu. Odkaz na konfigurátor webu v Microsoft Lifecycle Services (LCS) naleznete na stránce funkcí prostředí pro Commerce.
 1. Na domovské stránce vývojového prostředí webu vyberte možnost **Nový web**.
 1. V dialogovém okně **Nový web** zadejte následující informace.
 

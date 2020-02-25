@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c28c9e8c2573bcd82434f88daa8f9cadc946209
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fc9064f0386fe7c0f4093fc30587be4baa259eb0
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812379"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003672"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Přehled organizací a organizačních hierarchií
 
@@ -47,7 +47,7 @@ Společnost je typ právnické osoby. V současné době jsou společnosti pouze
 
 Provozní jednotka je organizace, která se používá k rozdělení řízení ekonomických zdrojů a operačních procesů v podniku. Osoby v provozní jednotce jsou povinni maximalizovat využívání omezených zdrojů, zdokonalovat procesy a zvažovat jejich výkon.
 
-K typům provozních jednotek patří nákladová střediska, obchodní jednotky, hodnotové proudy, oddělení a maloobchodní kanály. V následující tabulce jsou uvedeny další informace o typech provozních jednotek.
+K typům provozních jednotek patří nákladová střediska, obchodní jednotky, hodnotové proudy, oddělení a velkoobchodní kanály. V následující tabulce jsou uvedeny další informace o typech provozních jednotek.
 
 | Typ provozní jednotky | Popis | Účel |
 |---------------------|-------------|---------|
@@ -55,7 +55,7 @@ K typům provozních jednotek patří nákladová střediska, obchodní jednotky
 | Obchodní jednotka       | Částečně samostatná provozní jednotka vytvořená tak, aby naplňovala strategické obchodní cíle. | Používá se pro finanční vykazování podle průmyslových odvětví nebo produktových řad, které organizace nabízí nezávisle na právnických osobách. |
 | Hodnotový proud        | Provozní jednotka, která řídí jeden nebo více výrobních toků. | Používané běžně v rámci lean manufacturing pro řízení aktivit a toků, které jsou požadovány pro dodávky produktu nebo služby spotřebitelům. |
 | Oddělení          | Provozní jednotka, která představuje kategorii nebo funkční část organizace, která provádí určitý úkol, například prodej nebo účetnictví. | Používané k vykazování ve funkční oblastech. Oddělení mohou mít odpovědnosti za zisk a ztráty a mohou obsahovat skupinu nákladových středisek. |
-| Maloobchodní síť      | Provozní jednotka, která představuje kamenný obchod, online obchod nebo online tržiště. | Slouží pro správu a provozní kontrolu jednoho nebo více obchodů v rámci nebo napříč právnickými osobami. |
+| Kanál pro velkoobchod      | Provozní jednotka, která představuje kamenný obchod, online obchod nebo online tržiště. | Slouží pro správu a provozní kontrolu jednoho nebo více obchodů v rámci nebo napříč právnickými osobami. |
 
 ### <a name="teams"></a>Týmy
 

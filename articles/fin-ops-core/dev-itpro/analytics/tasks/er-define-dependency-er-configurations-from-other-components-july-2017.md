@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d949be57d9e9fe744860f5c4045bef2923b7f284
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 97aedf17bb6fa67fd08497ec6e15a7c92866fa4d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249174"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026103"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definování závislosti konfigurace elektronického výkaznictví na jiných komponentách
 
@@ -109,7 +109,7 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
     * Verze 1.1 této konfigurace mapování modelu byla odeslána do LCS za pomoci projektu LCS pro úložiště ER, v souladu s předchozí konfigurací.   
 
 ## <a name="evaluate-er-configuration-dependencies"></a>Vyhodnocení závislostí konfigurace ER
-    * Odstraníme ze systému vytvořené konfigurace a stáhneme je zpět z úložiště LCS.  
+Odstraníme ze systému vytvořené konfigurace a stáhneme je zpět z úložiště LCS.  
 1. Ve stromovém zobrazení vyberte Sample data model\Sample mapping.
 2. Klepněte na tlačítko Odstranit.
 3. Klepněte na tlačítko Ano.

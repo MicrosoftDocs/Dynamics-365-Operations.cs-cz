@@ -3,7 +3,7 @@ title: Připojení k používání hodnocení a recenzí
 description: V tomto tématu je vysvětleno, jak se lze přihlásit k používání hodnocení a recenzí na vašem webu Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10e3c33af232fa46df09a103b2e73eae09a909eb
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: eda7fbaeea8d3c1a07f7b43cafe44886d149a211
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697973"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027258"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Připojení k používání hodnocení a recenzí
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak se lze přihlásit k používání hodnocení a recenzí na vašem webu Microsoft Dynamics 365 Commerce.
@@ -36,7 +35,7 @@ V tomto tématu je vysvětleno, jak se lze přihlásit k používání hodnocen�
 
 Řešení hodnocení a recenzí je omnikanálové řešení, které lze zpřístupnit v Dynamics 365 Commerce pomocí Microsoft Dynamics Lifecycle Services (LCS). LCS je portál pro správu, který maloobchodní prodejci používají ke správě svého prostředí od zařazení po vyřazení z provozu.
 
-Chcete-li použít řešení hodnocení a recenze na webu služby Commerce, musíte se nejprve přihlásit.
+Chcete-li použít řešení hodnocení a recenze na webu obchodu, musíte při nasazení vašeho webu pro elektronický obchod v aplikaci souhlasit s hodnocením a recenzemi Dynamics 365 Commerce.
 
 ## <a name="opt-in-to-use-ratings-and-reviews"></a>Připojení k používání hodnocení a recenzí
 
@@ -51,6 +50,9 @@ Chcete-li se přihlásit k používání hodnocení a recenzí na vašem webu, p
 
 1. Dokončete proces inicializace e-Commerce.
 
+> [!NOTE] 
+> Jste-li existujícím zákazníkem Dynamics 365 Commerce, který již nasadil server elektronického obchodu bez přijetí hodnocení a recenze a nyní chcete použít hodnocení a recenze z balíčku Dynamics 365 Commerce, odešlete požadavek na službu. Informace o postupu při odesílání žádostí o služby naleznete v tématu [Proces odeslání požadavků na službu](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json). 
+
 ## <a name="additional-resources"></a>Další zdroje
 
 [Přehled hodnocení a recenzí](ratings-reviews-overview.md)
@@ -60,3 +62,5 @@ Chcete-li se přihlásit k používání hodnocení a recenzí na vašem webu, p
 [Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
 
 [Synchronizace hodnocení produktů v Dynamics 365 Retail](sync-product-ratings.md)
+
+

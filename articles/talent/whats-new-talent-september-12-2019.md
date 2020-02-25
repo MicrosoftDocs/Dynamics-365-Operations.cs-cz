@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-09-10
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 14e3482f366319851bed84b6cdd6135f0bcd1e80
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 0aadecd5b37759492f7895ccfda1a777793a08b3
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897322"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006234"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-september-10-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 for Talent (10. září 2019)
 
@@ -55,7 +55,7 @@ Další informace o tom, jak jsou publikovány změny, naleznete v části [Zř�
 
 ### <a name="platform-update-29"></a>Aktualizace platformy 29
 
-Další podrobnosti o aktualizaci Platform Update 29 naleznete v tématu [Funkce Preview v aktualizaci Platform Update 29 aplikace Dynamics 365 for Finance and Operations (říjen 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Další podrobnosti o aktualizaci Platform Update 29 naleznete v tématu [Funkce Preview v aktualizaci Platform Update 29 aplikace Dynamics 365 for Finance and Operations (říjen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
 ### <a name="new-job-base-entity-available-in-data-management-framework-347202"></a>Nová základní entita Pracovní místo dostupná v architektuře pro správu dat (347202)
 

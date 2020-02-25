@@ -3,7 +3,7 @@ title: Stránky a moduly správy účtů
 description: Toto téma popisuje stránky a moduly správy účtů v řešení Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/02/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
-ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
+ms.openlocfilehash: 8787a7b01ecf15752569d2a3a8d7804fe492e63d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2885802"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025662"
 ---
 # <a name="account-management-pages-and-modules"></a>Stránky a moduly správy účtů
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje stránky a moduly správy účtů v řešení Microsoft Dynamics 365 Commerce.
@@ -40,13 +40,12 @@ Správa účtů představuje skupinu stránek, které se používají ke správ�
 
 Cílová stránka správy účtu používá následující moduly:
 
-- **Umístění obsahu** – Jedná se o modul kontejneru, který obsahuje všechny moduly na cílové stránce správy účtu.
-- **Položka přivítání v účtu**– Tento modul slouží k poskytnutí uvítací zprávy na stránce správy účtu. Zahrnuje vlastnosti pro záhlaví a velikost dlaždice. Vlastnost **Velikost dlaždice** definuje šířku modulu v modulu umístění obsahu. Hodnoty jsou v rozsahu **1** až **12**, kde **12** představuje celou šířku kontejneru umístění obsahu.
-- **Položka podání objednávky účtu** – Tento modul se používá k vytvoření souhrnu počtu objednávek, které byly podány uživatelským účtem. Zahrnuje vlastnosti pro záhlaví a velikost dlaždice, a odkaz „zobrazit podrobnosti“. Odkaz „zobrazit podrobnosti“ by měl být nakonfigurován pro přesměrování na stránku historie objednávek.
-- **Položka umístění profilu účtu** – Tento modul slouží k poskytnutí souhrnu profilu uživatele. Zahrnuje vlastnosti pro záhlaví a velikost dlaždice, a odkaz „zobrazit podrobnosti“. Odkaz „zobrazit podrobnosti“ by měl být nakonfigurován pro přesměrování na stránku profilu uživatele.
-- **Požadovaná položka účtu** – Tento modul slouží k poskytnutí souhrnu položek v seznamu přání zákazníka. Může například udávat „V seznamu přání máte 10 položek“. Zahrnuje vlastnosti pro záhlaví a velikost dlaždice, a odkaz „zobrazit podrobnosti“. Odkaz „zobrazit podrobnosti“ by měl být nakonfigurován pro přesměrování na stránku seznamu přání.
-- **Položka adresy účtu** – Tento modul slouží k poskytnutí souhrnu adres uživatele. Může například udávat „Ve vašem účtu byly přidány 2 adresy“. Zahrnuje vlastnosti pro záhlaví a velikost dlaždice, a odkaz „zobrazit podrobnosti“. Odkaz „zobrazit podrobnosti“ by měl být nakonfigurován pro přesměrování na stránku adresy uživatele.
-- **Věrnostní položka účtu** – Tento modul slouží k zobrazení informací o věrnostních programech a odkazování na ně. Zahrnuje vlastnosti pro záhlaví a velikost dlaždice, a odkaz „zobrazit podrobnosti“ a další odkaz „stát se členem“. Odkaz „zobrazit podrobnosti“ by měl být nakonfigurován pro přesměrování na věrnostní stránku. Odkaz "stát se členem" by měl být nakonfigurován pro přesměrování na stránku, na které se uživatelé mohou připojit k věrnostnímu programu.
+- **Kontejner** – všechny moduly cílových stránek správy účtů by měly být umístěny v rámci kontejneru. 
+- **Dlaždicce přivítání v účtu** – Tento modul slouží k poskytnutí uvítací zprávy na stránce správy účtu. Obsahuje vlastnosti pro záhlaví.
+- **Obecná dlaždice účtu** – Tento modul lze použít k zadání záhlaví a odkazů na stránky pro správu účtů, jako jsou například stránky "Historie objednávek" nebo "Můj profil". Pomocí generického modulu dlaždice lze konfigurovat dlaždici pro libovolnou stránku. Ve společnosti Fabrikam se tento modul používá pro odkazy na stránce Historie objednávek a můj profil na cílové stránce správy účtů.
+- **Dlaždice požadovanýcg položek účtu** – Tento modul slouží k poskytnutí souhrnu položek v seznamu přání zákazníka. Může například udávat „V seznamu přání máte 10 položek“. Zahrnuje vlastnosti pro záhlaví a odkaz „Zobrazit podrobnosti“. Odkaz „Zobrazit podrobnosti“ by měl být nakonfigurován pro přesměrování na stránku seznamu přání. 
+- **Dlaždice adresy účtu** – Tento modul slouží k poskytnutí souhrnu adres uživatele. Může například udávat „Ve vašem účtu byly přidány 2 adresy“. Zahrnuje vlastnosti pro záhlaví a odkaz „Zobrazit podrobnosti“. Odkaz „Zobrazit podrobnosti“ by měl být nakonfigurován pro přesměrování na stránku adresy uživatele.
+- **Věrnostní dlaždice účtu** – Tento modul slouží k zobrazení informací o věrnostních programech a odkazování na ně. Tato dlaždice má dva stavy: jeden z těchto stavů obsahuje odkazy na připojení k věrnostnímu programu, pokud uživatel již není členem. Pokud je uživatel již členem, zobrazí se v poli jiný stav odkazy na stránku věrnostní podrobnosti. Vlastnosti zahrnují nadpis, odkaz "Registrace" a odkaz "Zobrazit věrnostní program". Odkaz „Zobrazit věrnostní program“ by měl být nakonfigurován pro přesměrování na věrnostní stránku. Odkaz "Registrace" by měl být nakonfigurován pro přesměrování na stránku, na které se uživatelé mohou připojit k věrnostnímu programu. 
 
 ### <a name="order-history-page"></a>Stránka historie objednávek
 
@@ -58,7 +57,7 @@ Stránka podrobností objednávky poskytuje podrobné informace pro každou obje
 
 ### <a name="user-profile-page"></a>Stránka profilu uživatele
 
-Na stránce profilu uživatele se zobrazují podrobnosti o účtu uživatele, jako je jméno nebo e-mailová adresa uživatele. Používá modul profilu uživatele. Ačkoli e-mailovou adresu nelze odebrat, je možné ji upravit. Stránka profilu uživatele také zobrazuje uživatelské předvolby, které umožňují uživateli přihlásit nebo odhlásit odběr některých funkcí, jako je přizpůsobení seznamů doporučení. 
+Na stránce profilu uživatele se zobrazují podrobnosti o účtu uživatele, jako je jméno nebo e-mailová adresa uživatele. Používá podrobnosti profilu uživatele a moduly úprav profilu uživatele. Ačkoli e-mailovou adresu nelze odebrat, je možné ji upravit. Stránka profilu uživatele také zobrazuje uživatelské předvolby, které umožňují uživateli přihlásit nebo odhlásit odběr některých funkcí, jako je přizpůsobení seznamů doporučení. 
 
 ### <a name="user-address-page"></a>Stránka adresy uživatele
 
@@ -70,7 +69,9 @@ Na stránce seznamu přání se zobrazují položky, které byly přidány do se
 
 ### <a name="loyalty-page"></a>Stránka věrnostního programu
 
-Věrnostní stránka umožňuje zákazníkům připojit se k věrnostnímu programu, nebo v případě, že již jsou členy věrnostního programu, zobrazit podrobné informace o programu. Mohou také zobrazit body, které získali a které byly uplatněny v posledních transakcích.
+Věrnostní stránka umožňuje zákazníkům zobrazit podrobnosti věrnostního programu v případě, že již jsou členy věrnostního programu. Mohou také zobrazit body, které získali a které byly uplatněny v posledních transakcích. Stránka využívá modul podrobnosti věrnostního programu k předvedení podrobností věrnostního programu. 
+
+Chcete-li se připojit k věrnostnímu programu, můžete vytvořit marketingovou stránku s moduly věrnostních zápisů a věrnostních podmínek. Pokud uživatel není členem věrnostního programu, tyto moduly umožní uživateli, aby se přihlásil.
 
 ## <a name="additional-resources"></a>Další zdroje
 

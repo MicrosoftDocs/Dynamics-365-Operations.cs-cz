@@ -3,7 +3,7 @@ title: Centralizované platby pohledávek
 description: Organizace zahrnující více právnických osob mohou vytvářet a spravovat platby pomocí jedné právnické osoby, která zpracovává všechny platby. Proto není nutné zadat stejné transakce pro více právnických osob. Tento článek uvádí příklady, které znázorňují zpracování zaúčtování pro centralizované platby v různých scénářích.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59942fadb0fb702c59c95f75359f1a3036e4668f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176843"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000086"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Centralizované platby pohledávek
 
@@ -88,8 +88,8 @@ Společnost Fabrikam obdrží platbu 580,00 na účet odběratele 4000 – North
 
 | Účet                             | Částka Má dáti | Částka Dal |
 |-------------------------------------|--------------|---------------|
-| Pohledávky (Fabrikam-východ) | 600,00       |               |
-| Tržby (Fabrikam-východ)               |              | 600,00        |
+| Pohledávky (Fabrikam-východ) | 580.00       |               |
+| Tržby (Fabrikam-východ)               |              | 580.00        |
 
 ### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Příjem a zaúčtování platby od odběratele číslo 4000 ve společnosti Fabrikam. Jedná se o odběratele společnosti Fabrikam.
 

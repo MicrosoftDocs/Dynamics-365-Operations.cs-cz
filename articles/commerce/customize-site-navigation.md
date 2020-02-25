@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 642cb5c145dec68631eb9ab27d926ba8ab75c59b
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914903"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001822"
 ---
 # <a name="customize-site-navigation"></a>Přizpůsobení navigace na webu
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je popsán postup při vytvoření přizpůsobené online hierarchie navigace pro uspořádání produktů pro procházení na webu Microsoft Dynamics 365 Commerce.
@@ -35,11 +35,11 @@ V tomto tématu je popsán postup při vytvoření přizpůsobené online hierar
 
 Online výkladní skříně obvykle zákazníkům umožňují vyhledat a procházet produkty pomocí procházení kategorií produktů. Takovou možnost obvykle poskytují karty v horní části stránky nebo navigační panel vlevo. V řešení Dynamics 365 Commerce můžete vytvářet a spravovat hierarchickou strukturu navigace mezi kategoriemi a produkty zahrnuté do různých kategorií.
 
-## <a name="create-a-retail-channel-navigation-hierarchy"></a>Vytvoření hierarchie navigace maloobchodní sítě
+## <a name="create-a-channel-navigation-hierarchy"></a>Vytvoření hierarchie navigace sítě
 
-Chcete-li vytvořit hierarchii navigace maloobchodní sítě, postupujte následovně.
+Chcete-li vytvořit hierarchii navigace kanálu, postupujte následovně.
 
-1. Přejděte do nabídky **Maloobchod \> Produkty a kategorie \> Správa kategorií a produktů**.
+1. Přijděte na **Retail and Commerce \> Produkty a kategorie \> Správa kategorií a produktů**.
 1. Vyberte **Hierarchie kategorií** a pak vyberte **Nová**.
 1. Pojmenujte hierarchii.
 
@@ -57,28 +57,28 @@ Ve výchozím nastavení se kategorie, které definujete, zobrazí v abecedním 
 
 ## <a name="assign-a-category-hierarchy-type"></a>Přiřazení typu hierarchie kategorií
 
-1. Přejděte do nabídky **Maloobchod \> Produkty a kategorie \> Správa kategorií a produktů**.
+1. Přijděte na **Retail and Commerce \> Produkty a kategorie \> Správa kategorií a produktů**.
 1. Vyberte možnost **Hierarchie kategorií**.
 1. V podokně akcí na kartě **Hierarchie kategorií** ve skupině **Nastavení** zvolte **Přidružit typ hierarchie**.
 1. Zvolte **Nové**.
-1. V poli **Typ hierarchie kategorií** vyberte možnost **Hierarchie navigace maloobchodní sítě**.
+1. V poli **Typ hierarchie kategorií** vyberte možnost **Hierarchie navigace kanálů**.
 1. V poli **Hierarchie kategorií** vyberte hierarchii navigace sítě, kterou jste vytvořili dříve.
 
 ## <a name="publish-new-or-updated-navigation-hierarchies"></a>Publikování nových nebo aktualizovaných hierarchií navigací
 
 Chcete-li hierarchii navigace zpřístupnit v online výkladní skříni, postupujte podle následujících kroků.
 
-1. Přejděte na **Maloobchod \> Nastavení kanálu \> Kategorie kanálu a atributy produktu**.
+1. Přejděte na **Retail and Commerce \> Nastavení kanálu \> Kategorie kanálu a atributy produktu**.
 1. Ve stromu vlevo vyberte svůj online obchod.
 1. Vyberte možnost **Publikovat aktualizace kanálů**.
-1. Přejděte do nabídky **Maloobchodní prodej \> Maloobchodní IT \> Distribuční plán**.
+1. Přejděte na **Retail and Commerce \> IT pro Retail and Commerce \> Plán distribuce**.
 1. V seznamu vyhledejte a vyberte **Úloha 1040**.
 1. Vyberte **Spustit**.
 1. Zopakujte kroky 5 a 6 pro úlohy 1070 a 1150.
 
 ## <a name="show-categories-on-your-site"></a>Zobrazení kategorií na vašem webu
 
-Chcete-li zobrazit hierarchii kategorií v online výkladní skříni, je nutné přidat modul navigační nabídky do příslušného umístění v šabloně nebo fragmentu. Modul navigační nabídky pak zobrazí hierarchii navigace za předpokladu, že jste publikovali hierarchii navigace maloobchodu v kanálu, na který je vázán váš web.
+Chcete-li zobrazit hierarchii kategorií v online výkladní skříni, je nutné přidat modul navigační nabídky do příslušného umístění v šabloně nebo fragmentu. Modul navigační nabídky pak zobrazí hierarchii navigace za předpokladu, že jste publikovali hierarchii navigace v kanálu, na který je vázán váš web.
 
 > [!NOTE]
 > Modul navigační nabídky, který je součástí startovací sady obchodu, umožňuje uživatelům přejít pouze ke kategoriím, které nemají podkategorie. Chcete-li, aby vaši zákazníci mohli přejít do kategorií s podkategoriemi, je nutné upravit modul navigační nabídky.

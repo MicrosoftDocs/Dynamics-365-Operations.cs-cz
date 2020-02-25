@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.openlocfilehash: 7e42e68f48de9518199c38d07b650d55628114a7
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 33e0183109bc0bf8c825e3d5a51dcc36dbf58fc1
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896974"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006094"
 ---
 # <a name="get-support-for-microsoft-dynamics-365-talent"></a>Získání podpory pro Microsoft Dynamics 365 Talent
 
-Toto téma vysvětluje, jak získat pomoc pro aplikaci Microsoft Dynamics 365 Talent: Core HR, Dynamics 365 Talent: Attract, and Dynamics 365 Talent: Onboard.
+Toto téma vysvětluje, jak získat pomoc s Dynamics 365 Talent: Attract a Dynamics 365 Talent: Onboard.
 
 ## <a name="support-for-talent"></a>Podpora pro aplikaci Talent
 
@@ -34,7 +34,7 @@ Chcete-li získat podporu pro aplikaci Talent, použijte zdroje v následující
 |------|------------------|
 | Zeptejte se komunity. | Chcete-li získat nápovědu k vašim otázkám, přejděte na [komunitu Dynamics 365 Talent](https://community.dynamics.com/365/talent). Chcete-li najít odpovědi, zadejte otázku do vyhledávacího pole vedle textu **Zeptejte se**. Chcete-li položit dotaz, vyberte **Zeptat se**. |
 | Použijte nástroj podpory využívající cloud. | V [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) přejděte na svůj projekt a vyberte dlaždici **Podpora**. Odsud můžete odeslat problémy dvěma způsoby:<ul><li>Na kartě **Aktivní problémy** vyberte problém, který chcete odeslat, a poté vyberte **Odeslat do společnosti Microsoft.**</li><li>Na kartě **Odesláno do společnosti Microsoft** zvolte možnost **Odeslat nový incident** k odeslání nového problému.</li></ul> |
-| Získejte podporu v aplikaci. | Zvolte tlačítko **Nápověda** (**?**) v pravém horním rohu stránky. Pokud jste v Core HR, vyberte možnost **Podpora**. Pokud se nacházíte v aplikacích Attract nebo Onboard, vyberte **Nahlásit problém**. Problémy jsou hlášeny na kartě **Aktivní problémy** ve LCS, kde může správce určit, zda poskytnout interní podporu nebo odeslat problémy do společnosti Microsoft. (Pokud máte samostatnou verzi naplikace Onboard, jsou problémy odesílány přímo společnosti Microsoft.) |
+| Získejte podporu v aplikaci. | Zvolte tlačítko **Nápověda** (**?**) v pravém horním rohu stránky. Vyberte **Nahlásit problém**. Problémy jsou hlášeny na kartě **Aktivní problémy** ve LCS, kde může správce určit, zda poskytnout interní podporu nebo odeslat problémy do společnosti Microsoft. (Pokud máte samostatnou verzi naplikace Onboard, jsou problémy odesílány přímo společnosti Microsoft.) |
 | Získejte nápovědu k dotazům týkajících se licencí aplikace Talent. | Obraťte na partnera nebo prodejce společnosti Microsoft. |
 | Požadavek na nové funkce a funkcionality v aplikaci Talent. | Na hlavní stránce aplikace Talent vyberte tlačítko **Nápověda** (**?**) a pak vyberte **Nápady.** Můžete také navštívit [Nápady k aplikaci Dynamics 365](https://experience.dynamics.com/ideas/), které vám pomohou zobrazit, vyhledat nebo hlasovat pro existující nápady nebo přidat nové nápady. |
 

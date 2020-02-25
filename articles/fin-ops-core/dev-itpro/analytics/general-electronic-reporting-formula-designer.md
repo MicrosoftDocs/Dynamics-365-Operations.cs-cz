@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0028d1f64aced1bbff91b18456c81adbb95bce30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 14539ed6c00915b7d59a5a3c4870ab6d1a96ad95
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914811"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002513"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Návrhář receptur v elektronickém výkaznictví
 
@@ -51,7 +51,7 @@ Můžete otevřít stránku **Návrhář receptur** po provedení některé z n�
 - definování podmínek pro ověření kontroly procesu,
 - definování textu zpráv pro ověření kontroly procesu.
 
-## <a name="Binding">Datová vazba</a>
+## <a name="Binding"></a>Datová vazba
 
 Návrháře receptur elektronického výkaznictví lze použít k definování výrazu, který převádí data přijatá ze zdrojů dat, aby tato data bylo možné zadat v příjemci dat za běhu následujícícmi způsoby:
 
@@ -69,7 +69,7 @@ Je možné použít následující obrázek, který znázorňuje návrh výrazu 
 
 Navržená receptura `ROUND (Intrastat.AmountMST, 2)` zaokrouhluje za běhu hodnotu pole **AmountMST** pro každý záznam v tabulce Intrastat na dvě desetinná místa. Poté zadá zaokrouhlenou hodnotu do komponenty **Transaction.InvoicedAmount** datového modelu **Vykazování daně**.
 
-## <a name="Transformation">Formátování dat</a>
+## <a name="Transformation"></a>Formátování dat
 
 Návrháře receptur elektronického výkaznictví lze použít k definování výrazu, který naformátuje data přijatá ze zdrojů dat, aby tato data bylo možné odeslat jako součást generovaného elektronického dokumentu: Můžete mít formátování, které je třeba použít jako typické pravidlo, které by mělo být znovu použito pro formát. V takovém případě můžete uvést toto formátování jednou v konfiguraci formátu jako pojmenovanou transformaci, která má výraz formátování. Tuto pojmenovanou transformaci lze potom propojit s mnoha komponentami formátu, kde výstup musí být formátován podle vytvořeného výrazu formátování.
 
@@ -87,7 +87,7 @@ Pokud máte formátování, které je nutné použít jednotlivě, můžete toto
 
 [![Použití formátování na jednotlivou součást](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-## <a name="Validation">Kontrola procesního toku</a>
+## <a name="Validation"></a>Kontrola procesního toku
 
 Návrháře receptur elektronického výkaznictví lze použít k definování výrazů, které se používají k řízení toku procesu generovaných elektronických dokumentů. K dispozici jsou tyto úlohy:
 
@@ -112,7 +112,7 @@ Návrhář receptur elektronického výkaznictví lze také použít k vygenerov
 
 [![Kontrola procesního toku](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled">Řízení obsahu dokumentů</a>
+## <a name="Enabled"></a>Řízení obsahu dokumentů
 
 Návrhář receptur elektronického výkaznictví lze použít ke konfiguraci výrazů, které určují, která data budou vložena do generovaných elektronických dokumentů za běhu. Tyto výrazy mohou povolit nebo zakázat výstup konkrétních prvků formátu, v závislosti na zpracování dat a konfigurované logice. Tyto výrazy lze zadat pro jediný prvek formátu v poli **Povoleno** na kartě **Mapování** na stránce **Návrhář operací**. Výrazy můžete zadat jako logickou podmínku, která vrátí *logickou* hodnotu:
 
@@ -139,7 +139,7 @@ Následující obrázek znázorňuje výraz tohoto typu. (Jako příklad použij
 > 
 > V závislosti na tomto nastavení bude generovaná zpráva pro každou platbu dlužníka – prvek XML **Ustrd** – obsahovat buď text poznámek k platbě, nebo, je-li tento text prázdný, seznam čárkami oddělených čísel faktur použitých k účtování této platby.
 
-## <a name="TestFormula">Ověření konfigurovaných receptur</a>
+## <a name="TestFormula"></a>Ověření konfigurovaných receptur
 
 Na stránce **návrháře receptur** vyberte **Test** pro ověření, jak funguje nakonfigurovaná receptura.
 

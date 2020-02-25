@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9280a2580d20d64f6542902aab1dbf55434bf84c
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: ca463d821292a2ad53462a3575f2d5712b9e53cc
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935507"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004035"
 ---
 # <a name="demand-forecasting-overview"></a>Přehled prognózy poptávky
 
@@ -50,7 +50,7 @@ Do prognózy poptávky jsou implementovány tři hlavní motivy:
 -   **Modulární struktura** – prognóza poptávky je modulární a lze ji snadno konfigurovat. Funkci lze zapnout nebo vypnout změnou konfiguračního klíče v nabídce **Obchod** &gt; **Prognóza zásob** &gt; **Prognóza poptávky**.
 -   **Opětovné použití zásobníku Microsoft** – Společnost Microsoft spustila platformu strojového učení v únoru 2015. Strojové učení, které je nyní součástí Microsoft Cortana Analytics Suite, umožňuje rychle a snadno vytvářet experimenty prediktivní analýzy, jako jsou pokusy o odhad poptávky, pomocí programovacích jazyků algoritmů R nebo Python a jednoduché rozhraní přetažení.
     -   Pokusy prognózy poptávky můžete stáhnout, změnit je tak, aby odpovídaly obchodním požadavkům, publikovat je jako webové služby pro platformu Azure, a použít je pro generování prognóz poptávky. Pokud jste si zakoupili předplatné aplikace Supply Chain Management pro plánovač výroby na úrovni podnikového uživatele, jsou experimenty dostupné ke stažení.
-    -   Můžete stáhnout všechny aktuálně dostupné pokusy předpovědi poptávky z adresy [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/). Zatímco experimenty s prognózou poptávky jsou do aplikace Supply Chain Management integrovány automaticky, experimenty stažené z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) musí zákazníci a partneři integrovat ručně. Používání experimentů z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) proto není tak přímočaré jako u experimentů s prognózou poptávky aplikace Finance and Operations. Kód experimentů je třeba upravit tak, aby používaly rozhraní API aplikace Finance and Operations.
+    -   Můžete stáhnout všechny aktuálně dostupné pokusy předpovědi poptávky z adresy [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/). Zatímco experimenty s prognózou poptávky jsou do aplikace Supply Chain Management integrovány automaticky, experimenty stažené z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) musí zákazníci a partneři integrovat ručně. Proto nejsou pokusy z [Galerie analýzy Cortana](https://gallery.cortanaanalytics.com/) nejsou tak přímočaré jako pokusy prognózy poptávky aplikace Finance and Operations. Je třeba upravit kód pokusů tak, aby používaly programovací rozhraní (API) aplikace Finance and Operations.
     -   Můžete vytvořit vlastní pokusy v aplikaci studia strojového učení Microsoft Azure (klasické), publikovat je jako služby Azure a použít je pro generování prognóz poptávky.
     -   Pokud nevyžadujete vysoký výkon, nebo nechcete-li zpracovat velké množství dat, můžete používat bezplatnou verzi služby Machine Learning. Doporučujeme vždy začínat od této verze, zejména během implementace a testování. Chcete-li dosáhnout vyššího výkonu a dalšího úložiště, můžete začít používat standardní verzi Machine Learning. Tato verze vyžaduje odběr služby Azure a zahrnuje dodatečné náklady. Podrobnosti o cenách produktu Machine Learning naleznete v tématu [ceny Machine Learning Studio](https://aka.ms/machine-learning-price-info).
 -   **Snížení prognózy v libovolném z oddělovacích bodů** – prognóza poptávky staví na této funkci, která umožňuje vytvářet závislé i nezávislé prognózy poptávky v libovolném oddělovacím bodě.
@@ -69,7 +69,7 @@ Prognózy, historická data a veškeré změny provedené v prognózách popt�
 Aplikaci Supply Chain Management můžete použít k zobrazení a úpravě základních prognóz. Před použitím prognóz pro plánování musí být autorizovány ruční úpravy.
 
 ## <a name="limitations"></a>Omezení
-Vytváření prognózy poptávky je nástroj, který usnadňuje odběratelům ve výrobním průmyslu vytvořit procesy prognózy. Nabízí základní funkce řešení prognózy poptávky a je navržen tak, že lze snadno rozšířit. Prognóza poptávky nemusí být nejlepší pro zákazníky v oborech jako je maloobchod, velkoobchod, skladování, přeprava nebo jiné odborné služby.
+Vytváření prognózy poptávky je nástroj, který usnadňuje odběratelům ve výrobním průmyslu vytvořit procesy prognózy. Nabízí základní funkce řešení prognózy poptávky a je navržen tak, že lze snadno rozšířit. Prognóza poptávky nemusí být nejlepší pro zákazníky v oborech jako je obchod, velkoobchod, skladování, přeprava nebo jiné odborné služby.
 
 <a name="additional-resources"></a>Další zdroje
 --------

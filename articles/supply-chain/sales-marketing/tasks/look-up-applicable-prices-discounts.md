@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db9caaa7f425133eda7a5f225b39ca52e11e0716
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835568"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025821"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Vyhledání platných cen a slev
 
@@ -49,7 +49,7 @@ Tento postup popisuje vyhledání ceny a/nebo slevy produktu, které jsou aktuá
 10. Zavřete stránku.
 
 ## <a name="find-the-applicable-discount"></a>Vyhledání platné slevy
-    * Ověřte, že pole Účet odběratele obsahuje číslo odběratele US-001.   
+Ověřte, že pole Účet odběratele obsahuje číslo odběratele US-001.   
 1. Do pole Číslo položky zadejte T0012.
     * Ujistěte se, že je v poli Množství nastavena hodnota 1.  
     * Následující podrobnosti o ceně zobrazené pro produkt T0012 pocházejí z jedné nebo více obchodních smluv: Jednotková cena je 1 000 CAD a procento slevy je 5.  

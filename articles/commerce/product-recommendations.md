@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb369e6d1356ba13a2310d523b671ac57b9642bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e249c7d450510a3a9a33158e9e1c33f832a1f91c
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770039"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024972"
 ---
 # <a name="product-recommendations-overview"></a>Přehled doporučení produktu
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Commerce lze použít k zobrazení doporučení produktů na webu e-Commerce a v zařízení pro prodej na místě (POS). Doporučení produktu jsou položky, o které se může zákazník zajímat. Doporučení jsou založena na trendech nákupu ostatních zákazníků v online i kamených obchodech.
@@ -45,6 +44,7 @@ Doporučení produktu jsou dostupná pro následující scénáře:
 - **Na libovolné stránce obchodu pro procházení nebo cílovou stránku v e-Commerce:** Pokud zákazníci nebo pracovníci obchodu navštíví stránku obchodu, může modul doporučení navrhovat produkty v seznamech **Nový**, **Nejprodávanější**a **Trendující**.
 - **Na stránce Podrobnosti produktu:** Pokud zákaznící nebo pracovníci obchodu navštíví stránku **Podrobnosti produktu**, nabídne modul doporučení další položky, které se také mohou nakoupit. Tyto položky se zobrazí v seznamu **Lidem se také líbí**.
 - **Na stránce transakce nebo na stránce s pokladnou:** modul doporučení navrhuje položky na základě celého seznamu položek v nákupním košíku. Tyto položky se zobrazí v seznamu **Často zakoupené společně**.
+- **Přizpůsobená doporučení:** Maloobchodníci mohou poskytnout přihlášeným zákazníkům seznam **přizpůsobených možností** a také nové funkce, které umožňují, aby byly existující scénáře seznamu přizpůsobeny na základě tohoto odběratele. Další informace naleznete v dokumentaci k funkcím: [povolení přizpůsobených doporučení.](personalized-recommendations.md)
 
 ## <a name="recommendation-service"></a>Služba doporučení
 
@@ -56,6 +56,10 @@ Doporučení produktu používají technologie strojového učení Recommendatio
 ## <a name="additional-resources"></a>Další zdroje
 
 [Povolit doporučení produktu](enable-product-recommendations.md)
+
+[Povolení přizpůsobených doporučení](personalized-recommendations.md)
+
+[Přehled modulu kolekce produktů](product-collection-module-overview.md)
 
 [Vytvoření seznamů doporučení vybraných produktů](create-editorial-recommendation-lists.md)
 

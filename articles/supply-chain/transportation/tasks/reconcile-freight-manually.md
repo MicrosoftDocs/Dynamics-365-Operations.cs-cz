@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb9c850aa045b72137b8a1d3c8cdae51cf2fd7b6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec17fc31df1daed943f9bc3f4cbe25a683c8ac7e
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843234"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026307"
 ---
 # <a name="reconcile-freight-manually"></a>Ruční odsouhlasení dopravného
 
@@ -37,7 +37,7 @@ Tato procedura ukazuje, jak ručně odsouhlasit dopravné. To obvykle provádí 
 3. V seznamu vyberte náklad s ID 00006.
 
 ## <a name="create-a-carrier-invoice"></a>Vytvoření faktury dopravce
-    * Pokud ručně odsouhlasíte dopravné a neobdrželi jste automaticky faktury dopravce, můžete vytvořit fakturu založenou na účtu dopravného.  
+Pokud ručně odsouhlasíte dopravné a neobdrželi jste automaticky faktury dopravce, můžete vytvořit fakturu založenou na účtu dopravného.  
 1. Klepněte na položku Související informace.
 2. Klikněte na Zobrazit podrobnosti účtu dopravného.
 3. Klikněte na Generovat fakturu za dopravné.
@@ -45,7 +45,7 @@ Tato procedura ukazuje, jak ručně odsouhlasit dopravné. To obvykle provádí 
 5. Klikněte na tlačítko OK.
 
 ## <a name="reconcile-the-invoice"></a>Odsouhlasení faktury
-    * Odsouhlasení faktury dopravce a účtu dopravného provádíte řádek po řádku.  
+Odsouhlasení faktury dopravce a účtu dopravného provádíte řádek po řádku.  
 1. Klikněte na Spárovat účty dopravného a faktury.
 2. Rozbalte část Podrobnosti faktury.
 3. Rozbalte oddíl Podrobnosti nespárovaného účtu dopravného.

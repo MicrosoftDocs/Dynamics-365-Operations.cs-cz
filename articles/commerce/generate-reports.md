@@ -1,6 +1,6 @@
 ---
 title: Generování sestav online kanálu
-description: V tomto tématu je popsán způsob generování sestav pro online kanál v Microsoft Dynamics 365 Retail.
+description: V tomto tématu je popsán způsob generování sestav pro online kanál v Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77737c134df8f3ba598fe9026fa7c01ca9976733
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: fd40aabdf40e0f2bb257b914326df5595a0e6945
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698043"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002997"
 ---
 # <a name="generate-online-channel-reports"></a>Generování sestav online kanálu
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je popsán způsob generování sestav pro online kanál v Microsoft Dynamics 365 Retail.
+V tomto tématu je popsán způsob generování sestav pro online kanál v Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
-V Retail můžete generovat a zobrazit několik sestav a sledovat tak, jak váš online kanál funguje.
+V Commerce můžete generovat a zobrazit několik sestav a sledovat tak, jak váš online kanál funguje.
 
 ## <a name="channel-summary-report"></a>Sestava souhrnu kanálu
 
@@ -46,7 +46,7 @@ V sestavě **Souhrn kanálů** je uveden souhrn následujících transakcí pro 
 
 Chcete-li vygenerovat sestavu **Souhrn kanálů**, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail \> Dotazy a sestavy \> Prodejní sestavy \> Sestava souhrnu kanálu**.
+1. Přejděte na **Retail \> Retail a Commerce \> Prodejní sestavy \> Sestava souhrnu kanálu**.
 1. Do pole **Od data** zadejte datum.
 1. Do pole **Do data** zadejte datum.
 1. V poli **Kanál** vyberte online kanál.
@@ -58,7 +58,7 @@ Sestava **Sestava kanálu prodeje podle roku** zobrazuje srovnání ročního pr
 
 Chcete-li vygenerovat sestavu **Sestava kanálu prodeje podle roku**, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail \> Dotazy a sestavy \> Prodejní sestavy \> Sestava kanálu prodeje podle roku**.
+1. Přejděte na **Retail \> Retail a Commerce \> Prodejní sestavy \> Sestava kanálu prodeje podle roku**.
 1. Zadejte rok do pole **Z kalendářního roku**.
 1. Zadejte rok do pole **Do kalendářního roku**.
 1. V poli **Kanál** vyberte online kanál.
@@ -70,7 +70,7 @@ Sestava **Prodejní kanál podle hodin** zobrazuje metriku prodeje za hodinu pro
 
 Chcete-li vygenerovat sestavu **Prodejní kanál podle hodin**, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail \> Dotazy a sestavy \> Prodejní sestavy \> Sestava kanálu prodeje podle hodiny**.
+1. Přejděte na **Retail \> Retail a Commerce \> Prodejní sestavy \> Sestava kanálu prodeje podle hodiny**.
 1. Do pole **Od data** zadejte datum.
 1. Do pole **Do data** zadejte datum.
 1. V poli **Kanál** vyberte online kanál.
@@ -82,7 +82,7 @@ Sestava **Přední odběratelé** zobrazuje prodejní metriky nejlepších *N* o
 
 Chcete-li vygenerovat sestavu **Přední odběratelé**, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail \> Dotazy a sestavy \> Prodejní sestavy \> Sestava předních odběratelů**.
+1. Přejděte na **Retail \> Retail a Commerce \> Prodejní sestavy \> Sestava nejlepších odběratelů**.
 1. Do pole **Od data** zadejte datum.
 1. Do pole **Do data** zadejte datum.
 1. V poli **Kanál** vyberte online kanál.
@@ -94,7 +94,7 @@ Sestava **Největší slevy** zobrazuje prodejní metriky nejlepších *N* slev 
 
 Chcete-li vygenerovat sestavu **Největší slevy**, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail \> Dotazy a sestavy \> Prodejní sestavy \> Sestava největších slev**.
+1. Přejděte na **Retail \> Retail a Commerce \> Prodejní sestavy \> Sestava největších slev**.
 1. Do pole **Od data** zadejte datum.
 1. Do pole **Do data** zadejte datum.
 1. V poli **Kanál** vyberte online kanál.
@@ -106,7 +106,7 @@ Sestava **Nejlepší produkty** zobrazuje prodejní metriky nejlepších *N* pro
 
 Chcete-li vygenerovat sestavu **Nejlepší produkt**, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail \> Dotazy a sestavy \> Prodejní sestavy \> Sestava nejlepších produktů**.
+1. Přejděte na **Retail \> Retail a Commerce \> Prodejní sestavy \> Sestava nejlepších produktů**.
 1. Do pole **Od data** zadejte datum.
 1. Do pole **Do data** zadejte datum.
 1. V poli **Kanál** vyberte online kanál.
@@ -118,7 +118,7 @@ Sestava **Prodejní kategorie** zobrazuje metriky prodeje za vybrané období pr
 
 Chcete-li vygenerovat sestavu **Prodejní kategorie**, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail \> Dotazy a sestavy \> Prodejní sestavy \> Prodejní sestava kategorií**.
+1. Přejděte na **Retail a Commerce \> Dotazy a sestavy \> Prodejní sestavy \> Prodejní sestava kategorií**.
 1. Do pole **Od data** zadejte datum.
 1. Do pole **Do data** zadejte datum.
 1. V poli **Kanál** vyberte online kanál.
@@ -126,11 +126,11 @@ Chcete-li vygenerovat sestavu **Prodejní kategorie**, postupujte následující
 
 ## <a name="organization-sales-report"></a>Sestava prodejů organizace
 
-Sestava **Prodeje organizace** zobrazuje výkonnost vašich maloobchodních obchodů podle organizační jednotky. Tato sestava zahrnuje prodejní množství a částku podle obchodu a ziskovou marži pro každý obchod. Organizační jednotka je založena na výchozí hierarchii sestav.
+Sestava **Prodeje organizace** zobrazuje výkonnost vašich obchodů podle organizační jednotky. Tato sestava zahrnuje prodejní množství a částku podle obchodu a ziskovou marži pro každý obchod. Organizační jednotka je založena na výchozí hierarchii sestav.
 
 Chcete-li vygenerovat sestavu **Prodeje organizace**, postupujte následujícím způsobem.
 
-1. Přejděte na **Retail \> Dotazy a sestavy \> Prodejní sestavy \> Sestava prodejů organizace**.
+1. Přejděte na **Retail a Commerce \> Dotazy a sestavy \> Prodejní sestavy \> Sestava prodejů organizace**.
 1. Do pole **Od data** zadejte datum.
 1. Do pole **Do data** zadejte datum.
 1. Vyberte **OK**.

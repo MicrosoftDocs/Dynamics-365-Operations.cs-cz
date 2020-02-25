@@ -3,7 +3,7 @@ title: Začínáme s optimalizací plánování
 description: Toto téma vysvětluje, jak používat funkci Optimalizace plánování.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 37c2acb2397b2a0ad69272c0645bd200a8d7910d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3e0371c6addc0412dc2fc105891b012941e92a06
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773915"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971457"
 ---
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
@@ -47,15 +47,17 @@ Chcete-li použít optimalizaci plánování, nainstalujte doplněk Optimalizace
 
 1. Přihlaste se k LCS a otevřete požadované prostředí.
 1. Přejděte na **Úplné podrobnosti**.
-1. Vyberte **Správa** nebo přejděte na pevnou záložku **Doplňky prostředí**.
+1. Přejděte na záložku s náhledem **Doplňky prostředí**.
 1. Vyberte možnost **Nainstalovat nový doplněk**.
 1. Vyberte **Optimalizace plánování**.
 1. Postupujte podle pokynů instalační příručky a vyjádřete souhlas s podmínkami a ujednáními.
 1. Vyberte **Instalovat**.
+1. Na záložce s náhledem **Doplňky prostředí** by se mělo zobrazit, že se instaluje optimalizace plánování.
+1. Po několika minutách by se měla položka **Instaluje se** změnit na **Nainstalováno** (pravděpodobně bude nutné aktualizovat stránku). Po instalaci můžete aktivovat optimalizaci plánování v aplikaci Dynamics 365 Supply Chain Management.
 
 ### <a name="planning-optimization-integration"></a>Integrace optimalizace plánování
 
-Chcete-li nakonfigurovat, zda by měl být pro hlavní plánování použit doplněk Optimalizace plánování, přejděte na **Hlavní plánování** \> **Nastavení** \> **Integrace optimalizace plánování** \> **Parametry integrace**.
+Chcete-li nakonfigurovat, zda by měl být pro hlavní plánování použit doplněk Optimalizace plánování, přejděte na **Hlavní plánování** \> **Nastavení** \> **Parametry optimalizace plánování**.
 
 #### <a name="connection-status"></a>Stav připojení
 

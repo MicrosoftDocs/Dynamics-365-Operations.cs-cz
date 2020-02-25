@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7506953c797f5a55a93f1169bf48af8b06eb440e
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 68e3f428215bdc4f9a4ce0dd69cfd4482c72fbf3
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896789"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006257"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Co je nového nebo upraveného v aplikaci Dynamics 365 Talent (23. října 2019)
 
@@ -39,9 +39,9 @@ Tato verze obsahuje dílčí opravy chyb pro aplikaci Dynamics 365 Talent: Onboa
 
 Změny popsané v této části se vztahují na číslo sestavení 8.1.2569. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Microsoft Dynamics Lifecycle Services (LCS).
 
-### <a name="platform-update-30-for-finance-and-operations-apps"></a>Ajtzakuzace Platform Update 30 for aplikace Finance and Operations
+### <a name="platform-update-30-for-finance-and-operations-apps"></a>Aktualizace platformy 30 pro aplikace Finance and Operations
 
-Další informace naleznete v tématu [Co je nového nebo změněné v aktualizaci Platform update 30 pro aplikace Finance and Operations (listopad 2019)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30).
+Další informace naleznete v tématu [Co je nového nebo změněné v aktualizaci Platform update 30 pro aplikace Finance and Operations (listopad 2019)](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30).
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>Odebrání výhod otevře funkci náhledu zahrnutí
 
@@ -89,4 +89,4 @@ Viz [Tisk shrnutí výkonu](https://docs.microsoft.com/dynamics365-release-plan/
 
 Funkce se přidávají a aktualizují v každém vydání. Funkce Správa funkcí poskytuje pracovní prostor, ve kterém si můžete prohlédnout seznam funkcí, které byly dodány v jednotlivých vydáních. Ve výchozím nastavení jsou nové funkce vypnuté. Pracovní prostor slouží k jejich zapnutí a zobrazení odpovídající dokumentace.
 
-Další informace o změnách přicházejících ve správě funkcí naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Další informace o změnách přicházejících ve správě funkcí naleznete v tématu [Přehled správy funkcí](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).

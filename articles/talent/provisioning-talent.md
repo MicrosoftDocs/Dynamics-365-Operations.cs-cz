@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: b705304788f47e4a5d2a9f1b2bf42a065428ea0f
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: d06c0d14fb99e5544a5da05078f5b3a559f9e806
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898126"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025502"
 ---
 # <a name="provision-talent"></a>Zřízení aplikace Talent
 
@@ -46,6 +46,10 @@ Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prost
 
 1. Ve svém LCS projektu vyberte dlaždici **Správa aplikace Talent**.
 2. Označte, zda se jedná o sandbox nebo produkční instanci aplikace Talent. Funkce předčasného náhledu mohou být k dispozici v instancích sandbox pro dřívější zpětnou vazbu a testování. 
+
+    > [!NOTE]
+    > Typ instance Talent nelze po nastavení změnit. Před pokračováním ověřte, zda je vybrán správný typ instance.
+
     > [!NOTE]
     > Typ instance aplikace Talent je oddělen od typu instance prostředí Microsoft Power Apps, který jste nastavili v centru správy Power Apps.
 3. Pokud chcete, aby prostředí obsahovalo stejnou datovou sadu, jaká se používá ve zkušenosti talentové zkušební jednotky, zaškrtněte políčko **Zahrnout ukázková data**. To je vhodné pro dlouhodobá demonstrační nebo školicí prostředí a nikdy se nemá používat pro výrobní prostředí.  Tuto možnost musíte zvolit při počátečním nasazení. Existující nasazení nelze aktualizovat později.
@@ -64,7 +68,7 @@ Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prost
     > [!NOTE]
     > Pokud nesplňujete ještě všechny konečné předpoklady, můžete v projektu nasadit zkušební instanci aplikace Talent. Poté můžete tuto instanci použít k vyzkoušení vašeho řešení, dokud všechny předpoklady nesplníte. Pokud použijete nové prostředí pro testování, musíte stejným způsobem opakovat tento postup k vytvoření produkčního prostředí.
 
-    > Protože v rámci předplatného aplikace Talent jsou povolena pouze dvě prostředí LCS, můžete zvážit také využití 60denní zkušenbí verze [zkušební prostředí Talent](https://dynamics.microsoft.com/talent/overview/). Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Core HR. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Nejsou určena k použití jako produkční prostředí. Mějte na paměti, že po vypršení zkušebního prostředí po 60 dnech budou všechna data v prostředí smazána a nelze je obnovit. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
+    > Protože v rámci předplatného aplikace Talent jsou povolena pouze dvě prostředí LCS, můžete zvážit také využití 60denní zkušenbí verze [zkušební prostředí Talent](https://dynamics.microsoft.com/talent/overview/). Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Human Resources. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Nejsou určena k použití jako produkční prostředí. Mějte na paměti, že po vypršení zkušebního prostředí po 60 dnech budou všechna data v prostředí smazána a nelze je obnovit. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
 
 ## <a name="select-a-power-apps-environment"></a>Výběr prostředí Power Apps
 
@@ -87,4 +91,4 @@ Použijte následující pokyny při určování, do kterého prostředí Power 
 6. Po určení správného prostředí, které chcete použít, můžete pokračovat v procesu zřizování. 
  
 ## <a name="grant-access-to-the-environment"></a>Zřízení přístupu k prostředí
-Ve výchozím nastavení má k prostředí přístup globální správce, který ho vytvořil. Dalším uživatelům aplikace musí být explicitně udělen. Chcete-li udělit přístup, musíte přidat uživatele a přiřadit jim příslušné role v prostředí Core HR. Globální správce, který nasadil aplikaci Talent, musí také spustit aplikaci Attract i Onboard k dokončení inicializace a povolit přístup pro ostatní uživatele klienta.  Dokud k tomu nedojde, ostatní uživatelé nebudou mít přístup do aplikací Attract a Onboard a získáte chyby narušení přístupu. Další informace naleznete v tématu [Vytvoření nových uživatelů](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) a [Přiřazení uživatelů k rolím zabezpečení](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Ve výchozím nastavení má k prostředí přístup globální správce, který ho vytvořil. Dalším uživatelům aplikace musí být explicitně udělen. Chcete-li udělit přístup, musíte přidat uživatele a přiřadit jim příslušné role v prostředí Human Resources. Globální správce, který nasadil aplikaci Talent, musí také spustit aplikaci Attract i Onboard k dokončení inicializace a povolit přístup pro ostatní uživatele klienta.  Dokud k tomu nedojde, ostatní uživatelé nebudou mít přístup do aplikací Attract a Onboard a získáte chyby narušení přístupu. Další informace naleznete v tématu [Vytvoření nových uživatelů](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) a [Přiřazení uživatelů k rolím zabezpečení](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

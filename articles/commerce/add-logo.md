@@ -3,7 +3,7 @@ title: Přidání loga
 description: Toto téma popisuje, jak přidat logo na web v řešení Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 23bac9aae6beb59912bbc9e1f2c6958c007550b0
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914610"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025676"
 ---
 # <a name="add-a-logo"></a>Přidání loga
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Toto téma popisuje, jak přidat logo na web v řešení Microsoft Dynamics 365 Commerce.
@@ -43,7 +43,7 @@ Logo můžete přidat přímo do šablony, rozložení nebo stránky. Tímto zp�
 
 Před přidáním loga na všechny stránky webu je nutné tyto úkoly dokončit.
 
-1. Uložte logo do správce digitálních datových zdrojů, ke kterému máte přístup ze stránky **Datové zdroje**.
+1. Odešlete logo do knihovny médií.
 1. Vytvořte fragment záhlaví. Další informace o vytváření a používání fragmentů naleznete v tématu [Práce s fragmenty](work-with-fragments.md).
 1. Zahrňte do šablony fragment záhlaví, který stránky vašeho webu používají pro své možnosti rozložení a modulu. Další informace o šablonách získáte v části [Práce s šablonami](work-with-templates.md).
 
@@ -51,13 +51,11 @@ Před přidáním loga na všechny stránky webu je nutné tyto úkoly dokončit
 
 Chcete-li přidat logo do fragmentu záhlaví webu, postupujte takto:
 
-1. V navigačním podokně vlevo vyberte **Fragmenty**a pak vyberte fragment záhlaví, který jste vytvořili.
-2. Vyberte **Rezervovat**.
-3. Rozbalte pozici **Záhlaví** a pozici **Logo**.
-4. Vyberte tlačítko se třemi tečkami (**...**) vedle pozice **Logo** a poté vyberte možnost **Přidat modul**.
-5. Vyberte modul logo.
-6. V podokně vlastností napravo nakonfigurujte modul logo, aby se zobrazilo vaše logo.
-7. Uložte fragment záhlaví, vraťte jej se změnami a publikujte.
+1. V navigačním podokně nalevo vyberte položku **Fragmenty stránky**.
+1. Vyberte záhlaví, které jste vytvořili dříve, a poté vyberte možnost **Upravit**.
+1. Rozbalte modul záhlaví.
+1. V podokně vlastností modulu záhlaví zadejte obrázek a odkaz na logo. 
+1. Uložte fragment záhlaví, dokončete úpravy a publikujte jej.
 
 Po publikování aktualizovaného fragmentu záhlaví budou všechny stránky webu, které používají šablonu obsahující fragment záhlaví, zobrazovat vaše logo.
 

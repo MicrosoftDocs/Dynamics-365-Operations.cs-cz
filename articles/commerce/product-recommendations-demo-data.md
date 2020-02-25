@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af8a30e69d9ed143e045950efdcece207f6da14c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6abac72b7530dc7b82c8e95faebdce791cf7dbd1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697927"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003227"
 ---
 # <a name="get-product-recommendations-using-demo-data"></a>Získání doporučení produktu pomocí ukázkových dat
 Tento dokument poskytuje pokyny, jak využívat doporučení Omni kanálu v prostředích s jedním polem na úrovni 1, pomocí předem naplněných a přizpůsobitelných ukázkových dat.
@@ -39,7 +39,7 @@ Doporučení produktu na úrovni 1 jsou založena pouze mimo statická ukázkov�
 Chcete-li povolit ukázková data pro odoporučení produktu, musíte nasadit Náhled rozšíření ukázky Dynamics 365 Commerce do příslušného prostředí. Tím se automaticky povolí ukázková data doporučení produktu.
 
 ## <a name="default-demo-data"></a>Výchozí ukázková data
-Každé prostředí typu OneBox se dodává s předem nahranými ukázkovými daty doporučení produktu uloženými v souboru ‘reco_demo_data.csv’ odděleném čárkami na serveru Retail.
+Každé prostředí typu OneBox se dodává s předem nahranými ukázkovými daty doporučení produktu uloženými v souboru ‘reco_demo_data.csv’ odděleném čárkami v jednotce škálování aplikace Commerce.
 
 Data jsou uspořádána do následujících sloupců.
 

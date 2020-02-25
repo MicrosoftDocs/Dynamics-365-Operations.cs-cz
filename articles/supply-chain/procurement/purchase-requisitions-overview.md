@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bfec4660d9e6b0898cf81e1f1fdd2e4c1fdcaef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0a51d443e40dbf948a06657293dcca77dc177896
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815335"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003646"
 ---
 # <a name="purchase-requisition-overview"></a>Přehled nákupních žádanek
 
@@ -81,7 +81,7 @@ Celkový stav nákupní žádanky se řídí stavem řádků nákupní žádanky
 <li><strong>Probíhá kontrola</strong> – řádky nákupního požadavku byly odeslány ke kontrole. Po dokončení procesu workflowu pro řádek nákupního požadavku zůstane stav daného řádku <strong>Kontrolované</strong>, dokud všechny zbývající řádky nákupního požadavku nebudou zkontrolovány.</li>
 <li><strong>Odmítnuto</strong> – řádek nákupní žádanky byl odmítnut. Nákupní žádanka a řádky nákupní žádanky, které jsou odmítnuty, je možné upravit a znovu odeslat.</li>
 </ul>
-Pokud znovu odešlete řádek nákupní žádanky, který byl zamítnut, proces kontroly začne znovu pro všechny řádky nákupního požadavku, u kterých stále probíhá kontrola. <strong>Poznámka:</strong> můžete odvolat nákupní požadavek, který již byl odeslán. Když odvoláte nákupní požadavek, jsou odvolány také ostatní řádky nákupního požadavku. Lze odstranit řádky nákupního požadavku, které byly odvolány.</td>
+Pokud znovu odešlete řádek nákupní žádanky, který byl zamítnut, proces kontroly začne znovu pro všechny řádky nákupního požadavku, u kterých stále probíhá kontrola. </br><strong>Poznámka:</strong> můžete odvolat nákupní požadavek, který již byl odeslán. Když odvoláte nákupní požadavek, jsou odvolány také ostatní řádky nákupního požadavku. Lze odstranit řádky nákupního požadavku, které byly odvolány.</td>
 </tr>
 <tr class="odd">
 <td>Odmítnuto</td>
@@ -109,7 +109,7 @@ Pokud znovu odešlete řádek nákupní žádanky, který byl zamítnut, proces 
 <tr class="odd">
 <td>Stornováno</td>
 <td>Stornováno</td>
-<td>Nákupní žádanka a všechny řádky nákupní žádanky byly zrušeny. <strong>Poznámka:</strong> Pokud již položku, která je na řádku nákupní žádanky, nepotřebujete, je nutné zrušit řádek nákupní žádanky, pokud byl již schválen. Zrušit lze pouze řádky nákupního požadavku, které byly schváleny. Pokud všechny řádky nákupního požadavku jsou vystaveny kontrole, nákupní požadavek se bude nacházet ve stavu <strong>Kontrolované</strong>. V takovém případě lze odvolat nákupní požadavek a odstranit odpovídající řádek nákupní žádanky.</td>
+<td>Nákupní žádanka a všechny řádky nákupní žádanky byly zrušeny.</br> <strong>Poznámka:</strong> Pokud již položku, která je na řádku nákupní žádanky, nepotřebujete, je nutné zrušit řádek nákupní žádanky, pokud byl již schválen. Zrušit lze pouze řádky nákupního požadavku, které byly schváleny. Pokud všechny řádky nákupního požadavku jsou vystaveny kontrole, nákupní požadavek se bude nacházet ve stavu <strong>Kontrolované</strong>. V takovém případě lze odvolat nákupní požadavek a odstranit odpovídající řádek nákupní žádanky.</td>
 </tr>
 <tr class="even">
 <td>Uzavřené</td>
@@ -156,7 +156,8 @@ V některých případech je nutné spustit zpracování požadavku na nabídku 
 
 Nákupní žádanku můžete zablokovat vložit výběrem políčka **Blokování** na stránce **Podrobnosti nákupní žádanky**. Zpracování nákupní žádanky můžete pokračovat až poté, co blokování odstraníte zrušením zaškrtnutí políčka.  
 
-**Poznámka:** v e-zásobování mohou požadavky na nabídku pro vaši nákupní žádanku povolit dodavatelům přidávat řádky alternativy. V tomto případě nákupní požadavek bude odpovídat schváleným alternativám.
+> [!NOTE]
+> V e-zásobování mohou požadavky na nabídku pro vaši nákupní žádanku povolit dodavatelům přidávat řádky alternativy. V tomto případě nákupní požadavek bude odpovídat schváleným alternativám.
 
 ## <a name="demand-consolidation"></a>Konsolidace poptávky
 Konsolidací řádků nákupní žádanky z více nákupních žádanek můžete posílit svoji vyjednávací pozici s dodavateli a dosáhnout lepších cen, levnějšího dopravného a poplatků za balné a snížení režijních nákladů.  
@@ -172,7 +173,8 @@ Konsolidační příležitost je sada řádků nákupní žádanky, které jsou 
 
 Po přidání řádků žádanky do konsolidační příležitosti a provedení potřebných změn můžete vytvořit nákupní objednávku pro řádky konsolidované nákupní žádanky.  
 
-**Poznámka:** Změny provedené u řádku nákupní žádanky na stránce **Konsolidace nákupní žádanky** se odrazí v nákupní objednávce, kterou vytvoříte. V nákupním požadavku se však řádek nezmění, aby jeho historie zůstala zachována.  
+> [!NOTE]
+> Změny provedené u řádku nákupní žádanky na stránce **Konsolidace nákupní žádanky** se odrazí v nákupní objednávce, kterou vytvoříte. V nákupním požadavku se však řádek nezmění, aby jeho historie zůstala zachována.  
 
 Pro řádky nákupní žádanky, které nejsou určeny pro konsolidaci poptávky nebo nebyly vybrány pro konsolidační příležitost, musí být řádky zpracovány ručně.
 

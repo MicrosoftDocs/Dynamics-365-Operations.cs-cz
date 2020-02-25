@@ -1,9 +1,9 @@
 ---
 title: Domovská stránka mobilní aplikace
-description: Toto téma popisuje mobilní aplikaci Finance and Operations a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci.
+description: Toto téma popisuje mobilní aplikaci Finance and Operations (Dynamics 365) a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci.
 author: sericks007
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: aaff4e3b3bfb079e183a12a5a85e452eed6df51d
-ms.sourcegitcommit: e30ced8f136ef23017d2d8215a756236e42eec25
+ms.openlocfilehash: 012b51b66c831a66a54c7c868735e310f05eb8c1
+ms.sourcegitcommit: f939bc6292840e29bc0f498efc8f4641dfe8f994
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "2853925"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "2975190"
 ---
 # <a name="mobile-app-home-page"></a>Domovská stránka mobilní aplikace
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje mobilní aplikaci Finance and Operations a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci.
+Toto téma popisuje mobilní aplikaci **Finance and Operations (Dynamics 365)** a poskytuje odkazy na zdroje, které vám mohou pomoci ji implementovat ve vaší organizaci.
 
 <a name="overview"></a>Přehled
 --------
@@ -80,7 +80,7 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci při 
 <tr class="odd">
 <td>1</td>
 <td>Správce systému</td>
-<td>Implementace aplikací Finance and Operations ve vaší organizaci.</td>
+<td>Implementujte aplikaci Finance and Operations ve vaší organizaci.</td>
 <td><ul><li>Pokud jste dosud nenainstalovali verzi aplikace Microsoft Dynamics 365, podívejte se do části <a href="../deployment/deploy-demo-environment.md">Nasazení prostředí pro ukázku</a>.</li><li>Pokud chcete zobrazit seznam mobilních pracovních prostorů, které lze použít, přejděte do tématu <a href="mobile-workspaces-released.md">Nedávno vydané mobilní pracovní prostory</a>.</li></ul></td>
 </tr>
 <tr class="even">
@@ -134,9 +134,9 @@ Následující tabulka obsahuje odkazy na zdroje, které vám mohou pomoci při 
 <td>8</td>
 <td>Uživatel</td>
 <td>Stáhněte a nainstalujte mobilní aplikaci.</td>
-<td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Sklady pro aplikaci Finance and Operations pro Android</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Sklady pro aplikaci Finance and Operations pro iOS</a><BR/>
+<td>Aplikace 
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations pro Android</a><BR/>Aplikace 
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations pro iOS</a><BR/>
 (Není podporován Windows Phone)
 </td>
 </tr>

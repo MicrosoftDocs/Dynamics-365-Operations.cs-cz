@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
-ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
+ms.openlocfilehash: aa60f3bc35f2bc10902da060ccacd7767bc9af8f
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935380"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005719"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Srovnání funkcí cloudu a on-premises
 
@@ -32,8 +32,8 @@ V tomto tématu je uvedeno porovnání funkcí dostupných v cloudu a místně p
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
-- [Dynamics 365 Retail](cloud-prem-comparison.md#dynamics-365-retail)
-- [Dynamics 365 Talent](cloud-prem-comparison.md#dynamics-365-talent)
+- [Dynamics 365 Commerce](cloud-prem-comparison.md#dynamics-365-commerce)
+- [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources)
 
 Jsou zde také [uvedeny informace o funkcích vývoje a správy](cloud-prem-comparison.md#development-and-administration-features).
 
@@ -45,8 +45,7 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 |---------------------|-----------------------------|-----------|-----------------|
 | Dodržování předpisů a certifikáty        |                                                                                           | Ano       | Ano             |
 |                                      | SOC 1 Typ 1 certifikace                                                                | Ano       | Ne              |
-| Integrace a správa dat      |                                                                                           | Ano       | Ano             |
-|                                      | Rozšíření na základě konfigurace                                                            | Ano       | Žádný              |
+| Integrace a správa dat      |                                                                                           | Ano       | Ano             
 |                                      | Export dat do svého vlastního datového skladu                                                    | Ano       | Ano             |
 |                                      | Povolení exportu přírůstkových aktualizací datových entit                                 | Ano       | Ano              |
 |                                      | Integrace dat                                                                         | Ano       | Ano             |
@@ -146,15 +145,15 @@ Následující tabulka uvádí oblasti aplikace. Podpora cloudu a instalace on-p
 | Podpora                              |                                                                                           | Ano       | Ano             |
 |                                      | Přístup k podpoře prostřednictvím nabídky nápovědy a podporu                                             | Ano       | Ne              |
 
-## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
+## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-Pokud chcete zobrazit seznam maloobchodních možností, které jsou k dispozici v místním nasazení, přečtěte si téma [Možnosti, které jsou k dispozici v místním nasazení maloobchodu](../../../retail/retail-onprem.md).
+Pokud chcete zobrazit seznam možností, které jsou k dispozici v místním nasazení, přečtěte si téma [Možnosti, které jsou k dispozici v místním nasazení maloobchodu](../../../retail/retail-onprem.md).
 
-## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
+## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 
 | **Oblast**         | **Funkce**         | **Cloud** | **Místní** |
 |------------------|---------------------|-----------|-----------------|
-| Všechny oblasti Talent | Všechny funkce Talent | Ano       | Ne              |
+| Všechny oblasti Human Resources | Všechny funkce Human Resources | Ano       | Ne              |
 
 ## <a name="development-and-administration-features"></a>Funkce pro vývoj a správu
 

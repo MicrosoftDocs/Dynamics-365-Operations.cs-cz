@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: a42e836c0b72798de3375c169e45b121debd55ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 12fadd8387054db3e19d4136555724c23548e05c
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191263"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031012"
 ---
 # <a name="alerts-overview"></a>Přehled výstrah
 
@@ -82,14 +82,14 @@ E-mailová oznámení z výstrah dosud nejsou povolena. To bude k dispozici v bu
 
 ### <a name="how-to-use-alerts-to-monitor-filtered-data"></a>Jak používat výstrahy ke sledování filtrovaných dat
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3DWZ3]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-Video (uvedené výše) [Jak používat výstrahy ke sledování filtrovaných dat](https://youtu.be/ZYKMcv6kl9s) je zahrnuto v [Playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostupné na YouTube.
+Video [Jak používat výstrahy ke sledování filtrovaných dat](https://youtu.be/ZYKMcv6kl9s) (zobrazeno výše) je zahrnuto v [Playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostupné na YouTube.
 
 ### <a name="alert-rule-options"></a>Možnosti pravidla výstrahy
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3E4PV]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-Video [Možnosti pravidel výstrah](https://youtu.be/cpzimwOjicM) (zobrazené výše) je zahrnuto do [playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
+Video [Možnosti pravidel výstrah](https://youtu.be/cpzimwOjicM)  (zobrazené výše) je zahrnuto do [Playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
 
 

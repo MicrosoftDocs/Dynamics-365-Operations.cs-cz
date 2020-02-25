@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 29c13e729223a98d7f45244c5a796bca6e3baaf3
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550826"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026127"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 1 - Příprava datového modelu)
 
@@ -61,7 +61,7 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 11. Ve stromovém zobrazení vyberte možnost CustomerCreditTransferInitiation.
 
 ## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a>Vytvořte odvozený model na podporu přístupu k souborům správy dokumentů.
-    * Vytvoříte vlastní konfiguraci modelu faktury odběratele vyplývající z konfigurace dodávané společností Microsoft. Pomocí této konfigurace budete implementovat přístup k souborům Správy dokumentů a zpřístupníte je pro elektronické dokumenty, které vytvoříte na základě tohoto modelu.  
+Vytvoříte vlastní konfiguraci modelu faktury odběratele vyplývající z konfigurace dodávané společností Microsoft. Pomocí této konfigurace budete implementovat přístup k souborům Správy dokumentů a zpřístupníte je pro elektronické dokumenty, které vytvoříte na základě tohoto modelu.  
 1. Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.
 2. V poli Nový zadejte „Odvodit z názvu: Model faktury zákazníka, Microsoft“.
 3. Zadejte hodnotu Model faktury odběratele (vlastní) do pole Název.

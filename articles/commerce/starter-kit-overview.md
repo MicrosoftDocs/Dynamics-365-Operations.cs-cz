@@ -3,7 +3,7 @@ title: Přehled startovací sady
 description: Toto téma poskytuje přehled o startovací sadě Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73af7fc8845fe08bc4aa014abe4d8c6dcf7ccb7d
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785253"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025895"
 ---
 # <a name="starter-kit-overview"></a>Přehled startovací sady
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled o startovací sadě Microsoft Dynamics 365 Commerce.
@@ -43,7 +43,7 @@ Motivy lze použít pro moduly v startovní sadě ke změně jejich vzhledu. Mot
 V startovní sadě jsou uvedeny následující typy modulů:
 
 - **Moduly kontejneru** – modul kontejneru je jednoduchý modul, který funguje jako hostitel pro ostatní moduly. Řídí rozvržení modulů, které jsou v něm obsažené.
-- **Marketingové moduly** – marketingové moduly zahrnují moduly typu Hero, funkcí, umístění obsahu, blok s formátovaným obsahem, přehrávač videa a karuselové moduly. Všechny tyto moduly lze použít k předvedení obsahu. Lze je umístit na jakoukoliv stránku a jsou řízeny daty ze systému správy obsahu (CMS).
+- **Marketingové moduly** – marketingové moduly zahrnují blok obsahu, blok textu, přehrávač videa a karuselové moduly. Všechny tyto moduly lze použít k předvedení obsahu. Lze je umístit na jakoukoliv stránku a jsou řízeny daty ze systému správy obsahu (CMS).
 - **Moduly záhlaví a zápatí** – moduly záhlaví a zápatí se zobrazí v záhlaví a zápatí všech stránek webu. Tyto moduly lze konfigurovat podle požadavků pomocí vlastností.
 - **Moduly vyhledávání** – produkty mohou být zjištěny pomocí vyhledávacího modulu v záhlaví. Výsledky hledání se zobrazí na stránce výsledků hledání. Produkty lze také nalézt na stránkách kategorie, což jsou vyhrazené stránky pro každou kategorii, která je podporována v hierarchii navigace kanálu. Kromě toho lze pomocí zpřesnění modulů dále vyfiltrovat výsledky hledání ve výsledcích vyhledávání a na stránkách kategorií.
 - **Moduly stránek podrobností produktu** – stránky podrobností produktu používají k zobrazení informací o produktu několik modulů. Modul buy boxu umožňuje zákazníkům zobrazit produkty a přidat je do košíku. Další moduly, jako například modul technické specifikace, zobrazují podrobné informace o produktu. Modul hodnocení a recenze slouží k zobrazení a zajištění recenzí.

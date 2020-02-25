@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1a357c4623f4f9dc441fe328ec0d5481c14ae4af
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771626"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025847"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Přidání analýz do pracovního prostoru pomocí Power BI Embedded
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Tato funkce je podporována v aplikaci Finance and Operations (verze 7.2 a novější).
+> Tato funkce je podporována v Finance and Operations (verze 7.2 a novější).
 
 ## <a name="introduction"></a>Úvod
 Toto téma popisuje, jak vložit sestavu Microsoft Power BI na kartě **Analýzy** v pracovním prostoru. V uvedeném příkladu rozšíříme pracovní prostor **Správa rezervací** v aplikaci Správa vozového parku na kartě **Analýzy** tak, aby zahrnovala analytický pracovní prostor.
@@ -111,7 +111,7 @@ Pomocí těchto kroků přidejte obchodní logiku, která inicializuje ovládac�
 2. Stisknutím klávesy F7 přejděte ke kódu za definicí kódu.
 3. Přidejte následující kód X++:
 
-    ```
+    ```xpp
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
@@ -156,7 +156,7 @@ Nyní jste dokončili úkol přidání obchodní logiky v ovládacím prvku proh
 Tento oddíl obsahuje informace o pomocnících třídy, která se používá k vložení do ovládacího prvku skupiny sestavy Power BI (zdroj .pbix).
 
 #### <a name="syntax"></a>Syntaxe
-```
+```xpp
 public static void initializeReportControl(
     str                 _resourceName,
     FormGroupControl    _formGroupControl,

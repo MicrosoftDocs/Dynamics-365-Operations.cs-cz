@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21ee0b835cbe6cc3a238247be29f8a8d3de42a8d
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: bdbff802ca85f7cc568efb8a1aacaf6f8fb2874a
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570741"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003989"
 ---
 # <a name="product-information-overview"></a>Přehled informací o produktech
 
@@ -32,7 +32,7 @@ ms.locfileid: "2570741"
 
 Toto téma poskytuje informace o správě informací o produktu. Řízení informací o produktech funguje s definicí sdíleného produktu, kategorizací a identifikátory napříč všemi právnickými osobami a také s určitými konfiguracemi produktů pro obchodní procesy. 
 
-Informace o produktu tvoří základní prvky dodávek dodavatelsko-odběratelského řetězce a maloobchodních aplikací pro všechna odvětví. Vztahuje se k procesům a technologiím zaměřeným na centrální správu informací o produktech (například v rámci dodavatelských řetězců). Je důležité, aby byly použity definice sdíleného produktu, dokumentaci, atributy a identifikátory. V různých modulech podnikového řešení jsou požadovány informace o produktu a konfigurace potřebné pro účely správy obchodních procesů, které souvisejí s konkrétními produkty, skupinami produktů nebo kategoriemi produktu.
+Informace o produktu tvoří základní prvky dodávek dodavatelsko-odběratelského řetězce a velkoobchodních aplikací pro všechna odvětví. Vztahuje se k procesům a technologiím zaměřeným na centrální správu informací o produktech (například v rámci dodavatelských řetězců). Je důležité, aby byly použity definice sdíleného produktu, dokumentaci, atributy a identifikátory. V různých modulech podnikového řešení jsou požadovány informace o produktu a konfigurace potřebné pro účely správy obchodních procesů, které souvisejí s konkrétními produkty, skupinami produktů nebo kategoriemi produktu.
 
 ## <a name="product-definition"></a>Definice produktu
 

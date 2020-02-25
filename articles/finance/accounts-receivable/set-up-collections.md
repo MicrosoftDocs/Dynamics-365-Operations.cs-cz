@@ -1,5 +1,5 @@
 ---
-title: Nastavení kreditu a inkas
+title: Nastavit kolekcí
 description: Tento článek popisuje postup nastavení funkce inkasa.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,18 +18,30 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ed075484f79d7ef7d0d4e6d62d037bb3e9cc96f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58d3e7f66ab5816849d393098d073ea7629e6b7c
+ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176834"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013156"
 ---
-# <a name="set-up-credit-and-collections"></a>Nastavení kreditu a inkas
+# <a name="set-up-collections"></a>Nastavit kolekcí
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje postup nastavení funkce inkasa.
+Tento článek popisuje postup nastavení funkce inkasa. Při použití možnosti inkaso je nutné provést některé kroky nastavení. K dispozici jsou také některé volitelné funkce, včetně skupin zákazníků a inkasních týmů. 
+
+- Definice období pro sledování splatnosti
+- Snímky sledování splatnosti
+- Názvy deníků
+- Kód důvodu pro transakce odpisu
+- Inkasní agenti
+- Účet odpisů
+- Informace o nedostatku finančních prostředků (NSF)
+- Nastavení aplikace Outlook pro uživatele stránky **Inkasa**
+- E-mailové adresy
+
+Tyto body jsou podrobněji popsány ve zbývající části tohoto tématu. 
 
 <a name="set-up-aging-period-definitions"></a>Nastavit definice období pro sledování splatnosti
 -------------------------------
@@ -46,7 +58,7 @@ Můžete nastavit fondy zákazníků představující skupiny odběratelů. Fond
 Pokud ve vaší organizaci inkasní práci vykonává více uživatelů, můžete nastavit tým inkasa. Na stránce **Parametry pohledávek** můžete vybrat tým. Pokud nevytvoříte tým inkasa, bude tým vytvořen automaticky při nastavení inkasních agentů na stránce **Inkasní agent**.
 
 ## <a name="set-up-a-collections-case-category"></a>Nastavení kategorie případů inkasa
-Pokud budete používat případy k organizaci inkasní práce, nastavte kategorii případu, která má typ kategorie **Inkasa**. Toto nastavení je nutné pouze v případě, že chcete použít funkci případu na stránce **Inkasa**.
+Abyste mohli používat případy k organizaci inkasní práce, nastavte kategorii případu, která má typ kategorie **Inkasa**. Toto nastavení je nutné pouze v případě, že chcete použít funkci případu na stránce **Inkasa**.
 
 ## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Nastavení názvů deníků (vyrovnání, odpisu a NFP)
 Nastavte názvy deníků používaných při zpracování transakcí na stránce **Inkasa**. Toto zpracování zahrnuje vyrovnání transakce, odpis transakce nebo zpracování platby NFP (nedostatečné finanční prostředky).
@@ -78,7 +90,10 @@ Aktualizujte bankovní účty, aby měly správný deník, když jsou na stránc
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>Nastavení aplikace Outlook pro uživatele stránky Inkasa
 Dříve, než budou moci pracovníci na stránce **Inkasa** vytvářet aktivity či odesílat e-mailové zprávy, je nutné ověřit, že je zvolen konfigurační klíč Synchronizace aplikace **Microsoft Outlook** a že je pro tyto pracovníky nastavena synchronizace s aplikací Outlook.
 
-## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Nastavení e-mailů a adres pro kontakty inkasa odběratelů
+## <a name="set-up-email-and-addresses"></a>Nastavení e-mailů a adres
+Pomocí e-mailu můžete komunikovat se zákazníky a prodejci, kteří se týkají problémů inkasa, za účelem odesílání e-mailových zpráv ze stránky **inkasa**. 
+
+### <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Nastavení e-mailů a adres pro kontakty inkasa odběratelů
 Pokud chcete na stránce **Inkasa** posílat e-mailové zprávy kontaktům odběratelů, nastavte e-mailové adresy těchto kontaktů. Kontaktní osoba pro inkaso se na stránce **Inkasa** používá jako výchozí kontakt. Můžete nastavit adresu pro výpis odběratele, pokud mají mít výpisy adresu odlišnou od primární adresy. 
 
 Na pevné záložce **Úvěry a inkasa** pro odběratele vyberte v poli **Kontakt inkas** osobu z organizace odběratele, která pracuje s vašim inkasním agentem. Tato osoba slouží jako výchozí kontakt na stránce **Inkasa**, kterému jsou odesílány e-mailové zprávy. 
@@ -86,7 +101,7 @@ Na pevné záložce **Úvěry a inkasa** pro odběratele vyberte v poli **Kontak
 > [!NOTE] 
 > Pokud kontaktní osoba inkasa není pro odběratele zadána, použije se primární kontakt odběratele. Pokud není specifikován primární kontakt, e-mailové zprávy budou odeslány na první adresu uvedenou na stránce **Kontakty**.
 
-## <a name="set-up-email-settings-for-salespeople"></a>Nastavení e-mailu pro prodejce
+### <a name="set-up-email-settings-for-salespeople"></a>Nastavení e-mailu pro prodejce
 Pokud chcete na stránce **Inkasa** posílat těmto prodejcům e-mailové zprávy, nastavte e-mailové adresy prodejců. Nastavte e-mailovou adresu pro každého obchodního zástupce v každé skupině provizního prodeje. Obchodní zástupce, který má zvolenu možnost **Kontakt**, je výchozí prodejce, kterému jsou odesílány e-mailové zprávy. 
 
 Pokud obchodní zástupce není zadán, použije se primární prodejce pro organizaci odběratele. Pokud není určen primární prodejce, e-mailové zprávy budou odeslány prvnímu prodejci uvedenému na stránce.
