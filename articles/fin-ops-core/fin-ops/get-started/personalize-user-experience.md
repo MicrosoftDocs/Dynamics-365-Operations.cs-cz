@@ -3,7 +3,7 @@ title: Přizpůsobení uživatelského prostředí
 description: Toto téma vysvětluje, jakým způsobem lze přizpůsobit aplikaci.
 author: jasongre
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac8f154fdf892553f69d135727589bf13efd6076
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935458"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029355"
 ---
 # <a name="personalize-the-user-experience"></a>Přizpůsobení uživatelského prostředí
 
@@ -59,7 +59,8 @@ Když používáte aplikaci, mnoho z vašich voleb se uloží, aby byl systém v
 
 Implicitní individuální nastavení jsou ta přizpůsobení, která provádíte pouhou spoluprací s některými ovládací prvky, které ukládají jejich aktuální viditelný stav.
 
-- **Sloupce mřížky** - Šířku sloupce v mřížce můžete upravit výběrem na ukazateli velikosti vlevo nebo vpravo od záhlaví a jeho posunem doleva nebo doprava na požadovanou šířku sloupce. Aplikace ukládá šířku, kterou jste pro sloupec nastavili. Při příštím otevření stránky obsahující tuto mřížku se pak změní velikost sloupce na tuto šířku.
+- **Šířka sloupce mřížky** - Šířku sloupce v mřížce můžete upravit výběrem na ukazateli velikosti vlevo nebo vpravo od záhlaví a jeho posunem doleva nebo doprava na požadovanou šířku sloupce. Aplikace ukládá šířku, kterou jste pro sloupec nastavili. Při příštím otevření stránky obsahující tuto mřížku se pak změní velikost sloupce na tuto šířku.
+- **Součty sloupců mřížky** – (k dispozici pouze s povoleným ovládacím prvkem mřížky) Můžete se rozhodnout, zda má být součet zobrazen v dolní části libovolného číselného sloupce mřížky a také bez ohledu na to, zda je zápatí mřížky viditelné. Aplikace ukládá tato data, aby byly tyto předvolby při příštím otevření stránky zapamatovány. Další informace naleznete v tématu [Možnosti mřížky](grid-capabilities.md). 
 - **Pevné záložky** - Některé stránky mají možnost rozbalení oddílů, kterým se říká *pevné záložky*. Aplikace ukládá informace o pevných záložkách, které jste rozbalili a sbalili. Když pak příště otevřete stránku, stejné pevné záložky budou buď rozbaleny nebo sbaleny, podle poslední interakce se stránkou. V některých případech můžete zlepšit výkon systému sbalením pevné záložky, protože aplikace nebude muset načítat informace o dané pevné záložce, dokud záložka nebude rozbalena. Jak je vysvětleno dále v tomto tématu, můžete také změnit pořadí pevných záložek na stránce.
 - **Pole s fakty** – některé stránky mají podokno **Související informace**, které obsahuje informace určené pouze pro čtení, které souvisejí s aktuálním předmětem stránky. Každý oddíl v podokně **Související informace** je známé jako *Pole s fakty*. Podokno **Související informace** můžete rozbalit nebo sbalit stejně jako jednotlivá okna s fakty. Aplikace tyto předvolby uloží. Potom se při příštím otevření stránky podokno **Související informace** a jednotlivá okna s fakty rozbalí nebo sbalí na základě vaší poslední interakce se stránkou. V některých případech můžete zlepšit výkon systému sbalením okna s fakty, protože aplikace nebude muset načítat informace o dané pevné záložce, dokud okno s fakty nebude rozbaleno.
 - **Podokna akcí** – *Podokno akcí* se zobrazí v horní části většiny stránek. Podokno akcí obsahuje tlačítka pro řadu akcí, které lze provést na aktuální stránce. Tato tlačítka jsou často organizována na kartách. Můžete připnout celé otevřené podokno akcí nebo ho můžete mít sbalené ve výchozím nastavení. Když pak příště otevřete stránku, podokno akcí bude otevřeno nebo sbaleno, podle poslední interakce se stránkou. Pokud jste připnuli podokno akcí v otevřeném stavu, zobrazí se poslední použitá karta.
@@ -95,7 +96,7 @@ Okna vlastností mohou obsahovat další možnosti přizpůsobení, v závislost
 
 Pokud chcete provést více změn stránky nebo provést změny, které nejsou k dispozici prostřednictvím dalších mechanismů (jako je například změna uspořádání prvků), lze použít panel nástrojů **Individuální nastavení**. Chcete-li otevřít panel nástrojů **Individuální nastavení**, proveďte jeden z následujících kroků:
 
-- V okně vlastností prvku vyberte **Přizpůsobit tento formulář**.
+- V okně vlastností prvku vyberte **Přizpůsobit tuto stránku**.
 - Vyberte **Přizpůsobit tuto stránku** ve skupině **Přizpůsobit** na kartě **Možnosti** podokna akcí libovolné stránky.
 - Na navigačním panelu vyberte tlačítko **nastavení** (symbol ozubeného kola) a pak vyberte volbu **přizpůsobit**.
 
@@ -116,7 +117,8 @@ Jsou k dispozici následující nástroje na panelu nástrojů **Přizpůsobení
 - Použijte nástroj **Přeskočit**, chcete-li odebrat prvek z řady karet klávesnic na stránce. Když na panelu nástrojů vyberete tlačítko **Přeskočit**, všechny prvky, které jsou nyní přeskočené, jsou viditelné a jsou zobrazeny v šedém kontejneru. Můžete interaktivně odebrat nebo přidat pole do pořadí polí.
 - Použijte nástroj **Zobrazit v záhlaví**, když chcete zobrazit v oddílu souhrnu pevné záložky prvek. Když vyberete na panelu nástrojů tlačítko **Zobrazit v záhlaví**, všechna pole, která byla vybrána jako souhrnná pole, jsou zobrazena v šedém kontejneru. Lze interaktivně přidat pole na souhrn pevné záložky a odstranit pole ze souhrnu pevných záložek výběrem pole.
 - Zvolte nástroj **Zamknout**, když chcete označit prvek jako upravitelný nebo neupravitelný. Když na panelu nástrojů vyberete tlačítko **Zamnkout**, všechny prvky, které jsou nyní neupravitelné, jsou viditelné a jsou zobrazeny v šedém kontejneru. Pak je můžete znovu udělat upravitelnými. Všimněte si, že některá pole jsou povinná a nelze je upravovat. Vedle těchto polí se zobrazí symbol visacího zámku.
-- Pomocí tlačítka **Přidat PowerApp** přidejte aplikaci vytvořenou pomocí Microsoft PowerApps na stránku. Podrobné informace o tom, jak vložit aplikaci PowerApps na stránku, získáte v tématu [Vkládání PowerApps](embed-power-apps.md).
+- Pomocí tlačítka **Přidat aplikaci z Power Apps** vložte aplikaci, která byla vytvořena pomocí Microsoft Power Apps, na stránku. Podrobné informace o tom, jak vložit aplikaci z Power Apps na stránku, získáte v tématu [Vkládání aplikací z Power Apps](embed-power-apps.md). Tato možnost je k dispozici pouze tehdy, je-li zakázána funkce [uložená zobrazení](saved-views.md).  
+- Pomocí tlačítka **Přidat aplikaci** vložte aplikaci, která byla vytvořena v Microsoft Power Apps nebo třetí stranou, na stránku.. Tato možnost je k dispozici pouze tehdy, je-li povolena funkce [uložená zobrazení](saved-views.md). 
 - Zvolte nástroj **Vymazat**, pokud chcete obnovit výchozí nainstalovaný stav stránky. Vymaže všechna individuální nastavení na aktuální stránce. Neexistuje akce vrácení. Tento nástroj použijte pouze v případě, že jste si jisti, že chcete resetovat stránku.
 - Použijte nástroj **Import** k načtení přizpůsobení ze souboru, který jste vy nebo někdo jiný dříve vytvořili pro tuto stránku. Při importu přizpůsobení pro stránku můžete zvolit, zda mají být přidána nebo nahrazena všechna existující přizpůsobení pro danou stránku. Neexistuje akce vrácení. Po importu přizpůsobení je tedy nutné ručně vymazat nebo zrušit všechny požadované změny.
 - Použijte nástroj **Export** pro uložení vašeho přizpůsobení stránky do souboru. Individuální nastavení pak můžete sdílet s jinými uživateli. Tito uživatelé musí importovat soubor, který obsahuje vaše přizpůsobení stránky.
@@ -152,7 +154,7 @@ Některé pracovní prostory obsahují dlaždice s početem (tzn. dlaždice s č
 Chcete-li přizpůsobit řídicí panel, klikněte pravým tlačítkem na libovolnou dlaždici, a pak vyberte **Přizpůsobit** pro otevření okna vlastností dlaždice.
 
 - Chcete-li vybranou dlaždici skrýt nebo přejmenovat, můžete tuto změnu provést přímo v okně vlastností.
-- Pokud chcete přeuspořádat dlaždice pracovního prostoru, vyberte v okně vlastností možnost **Přizpůsobit** a otevřete panel nástrojů **Přizpůsobení**. Dlaždice můžete přeuspořádat pomocí nástroje **Přesun** podle vaší potřeby.
+- Pokud chcete přeuspořádat dlaždice pracovního prostoru, vyberte v okně vlastností možnost **Přizpůsobit tuto stránku** a otevřete panel nástrojů **Přizpůsobení**. Dlaždice můžete přeuspořádat pomocí nástroje **Přesun** podle vaší potřeby.
 - Chcete-li přidat novou dlaždici pracovního prostoru, v okně vlastností vyberte **Přidat pracovní prostor**. V dolní části řídicího panelu se vytvoří nová dlaždice pracovního prostoru. Tuto novou dlaždici pracovního prostoru můžete přejmenovat, jak chcete. Můžete také přidat seznamy, odkazy a dlaždice do pracovního prostoru, jak je popsáno v části tématu [Přidání seznamů, odkazů nebo dlaždic do pracovního prostoru](#adding-a-tile-list-or-link-to-a-workspace).
 
 ## <a name="administration-of-personalizations"></a>Správa přizpůsobení

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-17
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 938d2eea7b9e85b19e9c1e3e0930f625224b880d
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 229ae14b9e2dedcd0ade094a772f16c0524d32a7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898612"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006071"
 ---
 # <a name="accrue-time-off-based-on-hours-worked"></a>Časové rozlišení volna na základě odpracovaných hodin
 
 ## <a name="overview"></a>Přehled
 
-Organizace se zaměstnanci s hodinovou mzdou mohou přidělit volno na základě odpracovaných hodin, namísto odpracovaných let v organizaci. Data odpracovaných hodin se obvykle ukládají v systému času a docházky. V aplikaci Talent: Core HR lze tyto odpracované normální a přesčasové hodin importovat a použít jako základ pro přidělení volna zaměstnanci.
+Organizace se zaměstnanci s hodinovou mzdou mohou přidělit volno na základě odpracovaných hodin, namísto odpracovaných let v organizaci. Data odpracovaných hodin se obvykle ukládají v systému času a docházky. 
 
 ## <a name="leave-plans"></a>Plány pracovního volna
 

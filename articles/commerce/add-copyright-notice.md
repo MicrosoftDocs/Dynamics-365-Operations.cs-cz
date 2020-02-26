@@ -3,7 +3,7 @@ title: Přidání oznámení o vlastnických právech
 description: V tomto tématu je popsán postup při přidání oznámení o autorských právech na web elektronického obchodu.
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914557"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025475"
 ---
 # <a name="add-a-copyright-notice"></a>Přidání oznámení o vlastnických právech
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je popsán postup při přidání oznámení o autorských právech na web elektronického obchodu.
@@ -48,8 +48,8 @@ Chcete-li přidat oznámení o autorských právech do dolní části každé st
 1. V navigačním podokně vyberte tlačítko se třemi tečkami (**...**) vedle **Zápatí** a vyberte možnost **Přidat modul**.
 1. V dialogovém okně vyberte **Kategorie zápati** a pak vyberte možnost **OK**.
 1. V navigačním podokně vyberte tlačítko se třemi tečkami vedle **Kategorie zápatí** a vyberte možnost **Přidat modul**.
-1. V dialogovém okně vyberte **Položka bloku s formátovaným obsahem** a pak vyberte možnost **OK**.
-1. V navigačním podokně vyberte možnost **Položka bloku s formátovaným obsahem**
+1. V dialogovém okně vyberte **Textový blok** a pak vyberte možnost **OK**.
+1. V navigačním podokně vyberte položku **Textový blok**.
 1. V podokně vlastností vpravo v poli **Odstavec** přidejte zprávu o autorských právech. Zadejte například **(C) Fabrikam 2019**.
 1. Vyberte možnost **Uložit**, pak vyberte možnost **Vrátit se změnami** a pak vyberte možnost **Publikovat**.
 1. Přejděte na **Šablony**, vyberte šablonu a poté vyberte možnost **Rezervovat**.

@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
-ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
+ms.openlocfilehash: 509827d5736887f56e7754a0760af7dea76277f7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2818472"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006048"
 ---
 # <a name="talent-system-requirements"></a>Systémové požadavky aplikace Talent
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu jsou popsány požadavky pro aplikaci Microsoft Dynamics 365 Talent, včetně aplikací Attract, Onboard a Core HR. Dále jsou zde uvedeny země a oblasti, ve kterých je Talent k dispozici, a informace o jazycích a lokalizaci dat aplikace Talent. Navíc toto téma obsahuje zásady aktualizace pro aplikaci Talent.
+V tomto tématu jsou popsány požadavky pro aplikaci Microsoft Dynamics 365 Talent, včetně aplikací Attract a Onboard. Dále jsou zde uvedeny země a oblasti, ve kterých je Talent k dispozici, a informace o jazycích a lokalizaci dat aplikace Talent. Navíc toto téma obsahuje zásady aktualizace pro aplikaci Talent.
 
 ## <a name="supported-web-browsers"></a>Podporované webové prohlížeče
 

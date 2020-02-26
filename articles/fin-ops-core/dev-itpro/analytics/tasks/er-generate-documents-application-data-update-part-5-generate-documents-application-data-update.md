@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d95feb3395c36f9cf8a23770dc3173377067d9b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184869"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026056"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Generování dokumentů s daty aplikace
 
@@ -58,7 +58,7 @@ Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému 
 6. Klikněte na tlačítko OK.
 
 ## <a name="review-er-format-executions-results"></a>Kontrola výsledků spuštění formátu ER
-    * Prohlédněte si vygenerovaný soubor XML.  
+Prohlédněte si vygenerovaný soubor XML.  
 1. Zavřete stránku.
 2. Přejděte na Daň > Deklarace > Zahraniční obchod > Intrastat.
     * Otevřete tento formulář s transakcemi Intrastat, které byly zahrnuty ve vygenerovaném elektronickém dokumentu.  

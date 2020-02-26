@@ -3,7 +3,7 @@ title: Nasazení nového klienta elektronického obchodu
 description: V tomto tématu je popsán způsob nasazení nového klienta elektronického obchodu pomocí služeb Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945506"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001776"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Nasazení nového klienta elektronického obchodu
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je popsán způsob nasazení nového webu elektronického obchodu pomocí služeb Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="overview"></a>Přehled
-    
+
 Microsoft Dynamics Lifecycle Services (LCS) je cloudový pracovní prostor vhodný pro spolupráci, který mohou partneři a zákazníci používat ke správě projektů a prostředí, zobrazování nejnovějších informací o produktech a funkcích Microsoft Dynamics a vytváření, sledování a procházení incidentů podpory. Funkce správy elektronického obchodu jsou integrovány do LCS.
 
 Další informace o LCS naleznete v části [Uživatelská příručka Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
@@ -80,11 +80,16 @@ Po shromáždění požadovaných informací proveďte následující kroky pro 
 1. Na další stránce vyplňte požadované informace a odešlete daný formulář. Vrátíte se na kartu **Elektronické obchodování**, kde by se mělo zobrazit zahájení inicializace.
 1. Chcete-li zobrazit stav inicializace, vyberte možnost **Aktualizovat** nebo se za chvíli vraťte na kartu **Elektronické obchodování**.
     
-Při inicializaci elektronického obchodu z LCS systém zřizuje několik součástí, které jsou potřebné pro elektronický obchod a přidruží je k prostředí. Po zřízení je karta **Elektronické obchodování** na stránce **Řízení maloobchodu** aktualizována tak, aby reagovala na zřízení. Na stránce jsou zobrazena nejnovější nasazení vlastních nastavení a stav všech dalších probíhajících nasazení. Obsahuje také odkazy na web elektronického obchodu a nástroj pro správu webu elektronického obchodu (nástroj pro vytváření obsahu).
+Při inicializaci elektronického obchodu z LCS systém zřizuje několik součástí, které jsou potřebné pro elektronický obchod a přidruží je k prostředí. Po zřízení je karta **Elektronické obchodování** na stránce **Řízení maloobchodu** aktualizována tak, aby reagovala na zřízení. Na stránce jsou zobrazena nejnovější nasazení vlastních nastavení a stav všech dalších probíhajících nasazení. Obsahuje také odkazy na web elektronického obchodu a nástroj pro konfigurátor webu elektronického obchodu, kde se weby vytváří.
 
-## <a name="access-the-authoring-environment"></a>Přístup do vývojového prostředí
+## <a name="access-site-builder"></a>Přístup ke konfigurátoru webů
 
-Chcete-li získat přístup do vývojového prostředí , přejděte na kartu **Elektronické obchodování** na stránce **Řízení maloobchodu**. Naleznete zde odkazy na web elektronického obchodu a nástroj pro správu webu.
+Chcete-li získat přístup k konfigurátoru webu, přejděte na kartu **Elektronické obchodování** na stránce **Řízení maloobchodu** v LCS a zvolte odkaz **Nástroj pro správu webu e-Commerce**. Cílová stránka konfigurátoru webu ukazuje zobrazení na úrovni klienta. Z této stránky můžete:
+
+- Upravit nastavení na úrovni klienta.
+- Přejít na libovolný web, který jste vytvořili a k němuž máte oprávnění k zobrazení. 
+- Získat přístup k funkcím,recenzí, jako je moderování a vykazování.
+- Vytvořit nový web. Další informace o tom, jak vytvářet nový web, naleznete v tématu [Vytvoření webu elektronického obchodování](create-ecommerce-site.md). 
 
 ## <a name="additional-resources"></a>Další zdroje
 

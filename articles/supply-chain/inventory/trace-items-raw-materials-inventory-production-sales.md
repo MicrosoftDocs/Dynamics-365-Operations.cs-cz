@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: adfb8ffce3f91c0e8e8b996c284414f5ddc1baf1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562523"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004058"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sledování zboží a surovin ve skladu, při výrobě a prodeji
 
@@ -44,7 +44,7 @@ Sledování položky je nástroj business intelligence (BI), který poskytuje p�
 -   Zjistěte, kde bylo zboží nebo suroviny spotřebovány ve výrobě jiné položky.
 
 ## <a name="what-can-i-trace-and-are-there-any-limitations"></a>Co lze sledovat a existují omezení?
-Můžete sledovat historické skladové transakce pro položky a suroviny podle čísla položky a sledovací dimenze, jako je sériové číslo, číslo dávky nebo číslo dávky pro dodavatele. Pokud zboží nebo surovina nemá přiřazenou sledovací dimenzi, nelze je sledovat. Vzhledem k tomu, že sledování je založeno na skladových transakcích, existují při sledování položek určitá omezení. Existují například omezení týkající se transakcí pro projekty, dlouhodobý majetek a maloobchod. Kromě toho jsou v podrobnostech o sledování uvedeny společné produkty, ale nejsou zahrnuty vedlejší produkty. Sledování zahrnuje všechny transakce skladu z jednoho místa na druhé. Uživatelé proto mohou být množstvím informací zahlceni. Sledování je zobrazeno vždy pro jednu právnickou osobu současně. V mezipodnikovém kontextu neexistují žádné schopnosti využitelné mezi více společnostmi. Pro každou společnost, kde jsou položky přijaté nebo vydané, je nutné spustit nové sledování.
+Můžete sledovat historické skladové transakce pro položky a suroviny podle čísla položky a sledovací dimenze, jako je sériové číslo, číslo dávky nebo číslo dávky pro dodavatele. Pokud zboží nebo surovina nemá přiřazenou sledovací dimenzi, nelze je sledovat. Vzhledem k tomu, že sledování je založeno na skladových transakcích, existují při sledování položek určitá omezení. Existují například omezení týkající se transakcí pro projekty, dlouhodobý majetek a velkoobchod. Kromě toho jsou v podrobnostech o sledování uvedeny společné produkty, ale nejsou zahrnuty vedlejší produkty. Sledování zahrnuje všechny transakce skladu z jednoho místa na druhé. Uživatelé proto mohou být množstvím informací zahlceni. Sledování je zobrazeno vždy pro jednu právnickou osobu současně. V mezipodnikovém kontextu neexistují žádné schopnosti využitelné mezi více společnostmi. Pro každou společnost, kde jsou položky přijaté nebo vydané, je nutné spustit nové sledování.
 
 ## <a name="what-criteria-can-i-specify-for-an-item-trace"></a>Jaká kritéria lze určit pro sledování položky?
 Kritéria, která jsou požadována pro sledování položky, jsou: číslo položky, sledovací dimenze, například číslo dávky nebo sériové číslo a směr. Následující tabulka popisuje kritéria, která můžete použít při sledování položky.

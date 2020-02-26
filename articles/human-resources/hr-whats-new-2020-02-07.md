@@ -1,0 +1,72 @@
+---
+title: Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (7. února 2020)
+description: Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Human Resources.
+author: Darinkramer
+manager: AnnBe
+ms.date: 02/07/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-human-resources
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: dkrame
+ms.search.validFrom: 2020-02-07
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 78043273fb98a12a8d33f7bb94ba8ad2e9fb49fb
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029950"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Co je nového nebo změněného v aplikaci Dynamics 365 Human Resources (7. února 2020)
+
+Tento článek popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Human Resources. Změny se vztahují na sestavení číslo 8.1.2835. Čísla v závorkách v některých záhlavích se vztahují na čísla podpory v Microsoft Dynamics Lifecycle Services (LCS).
+
+## <a name="learning-analytics-doesnt-show-the-course-if-the-classroom-is-blank-388289"></a>Analýza studie nezobrazuje kurz, je-li učebna prázdná (388289).
+
+Stránka analýzy studia nyní zobrazuje kurz, je-li učebna prázdná.
+
+## <a name="position-lookup-doesnt-take-the-time-zone-into-account-405344"></a>Při vyhledávání pozice se nezohledňuje časové pásmo (405344).
+
+Vyhledávání otevřených pozic nyní zohledňuje časové pásmo při ověřování otevření pozice.
+
+## <a name="current-balance-analysis-view-doesnt-update-with-the-correct-current-leave-balance-after-submitting-time-off-requests-409756"></a>Zobrazení analýzy aktuálního zůstatku se neaktualizuje správným aktuálním zůstatkem dovolené po odeslání žádostí o volno (409756).
+
+Aktuální zůstatek nyní obsahuje odeslané žádosti o volno.
+
+## <a name="in-preview"></a>Náhled
+
+Od 3. února 2020 jsou k dispozici následující funkce náhledu:
+
+- **Funkce náhledu o pracovním volnu a absenci** Další informace získáte v části [Funkce náhledu o pracovním volnu a absenci](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
+
+- **Funkce náhledu správy zaměstnaneckých výhod** - Další informace, včetně známých problémů, získáte v části [Přehled správy zaměstnaneckých výhod](hr-benefits-management-overview.md).
+
+## <a name="coming-soon"></a>Již brzy
+
+### <a name="platform-update-32"></a>Aktualizace platformy 32 
+
+Brzy bude k dispozici aktualizace platformy č. 32. [Další informace o aktualizaci platformy číslo 32 naleznete zde](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
+
+### <a name="updated-common-data-service-solution"></a>Aktualizované řešení služby Common Data Service
+
+Nové řešení Common Data Service bude brzy k dispozici po provedení následujících změn:
+
+| Popis | Změna |
+| ----------------------------------------- | --- |
+| Změny entity **práce/pozice** | Přidána **Oblast kompenzace**</br>Přidání **finančních dimenzí** |
+| Změny entity **pracovníka** | Přidání **sekvence jmen**</br>Přidaná možnost **Práce z domova**</br>Přidán **jazyk**</br>Přidáno **Datum služebního věku**</br>Přidáno **Datum výročí**</br>Přidáno **Datum původního přijetí** |
+| Změny **entity zaměstnání** | Přidání **finančních dimenzí**</br>Přidán **Důvod pro výpověď**</br>**Datum ukončení** přejmenováno z **data přechodu**</br>Přidáno **datum zkušební doby** |
+| Změny entity **adresy pracovníka** | Přidána **Adresa ulice**</br>**Řádek adresy 1**, **řádek adresy 2** a **řádek adresy 3** označené pro odpis |
+| Nové entity nastavení s nastavením variabilní kompenzace | **Typ plánu variabilní kompenzace**</br>**Plán variabilní kompenzace**</br>**Pravidla připsání**</br>**Úroveň plánu variabilní kompenzace** |
+| Nová entita **Zaměstnání dle kalendáře pracovníka** | Byla přidána **entita pracovního kalendáře** |
+| Nová entita **Mzdové podrobnosti o pozici** | Byla přidána položka **Mzdové podrobnosti o pozici**. |
+| Nová entita **Pozice** | Byla přidána položka **Pozice**. Nová entita **Pozice** bude zahrnuta do procesu synchronizace mezi aplikací Human Resources a službou Common Data Service, ale zpočátku se na ni nebude odkazovat z entit **Pracovní pozice** nebo **Práce**. |
+

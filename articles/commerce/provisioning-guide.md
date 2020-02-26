@@ -1,9 +1,9 @@
 ---
-title: Zřizování ukázkového prostředí služby Commerce
+title: Zřízení prostředí Preview aplikace Dynamics 365 Commerce
 description: Toto téma vysvětluje, jak zřídit ukázkové prostředí v Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 01/06/2020
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,28 +18,28 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b77d2cbbc100aeae5dcd53ddbe69ff2e4435da13
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934741"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024629"
 ---
-# <a name="provision-a-commerce-preview-environment"></a>Zřizování ukázkového prostředí služby Commerce
+# <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Zřízení prostředí Preview aplikace Dynamics 365 Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Toto téma vysvětluje, jak zřídit ukázkové prostředí v Microsoft Dynamics 365 Commerce.
+Toto téma vysvětluje, jak zřídit ukázkové prostředí v Dynamics 365 Commerce.
 
-Než začnete, doporučujeme, abyste celé téma alespoň zběžně pročetli, abyste získali představu o tom, co proces obnáší a co téma obsahuje.
+Než začnete, doporučujeme vám toto téma rychle prohledat, abyste získali představu o tom, co proces vyžaduje.
 
 > [!NOTE]
-> Pokud ještě nemáte přístup k náhledu Dynamics 365 Commerce, můžete požádat o přístup k náhledu z [webu Commerce](https://aka.ms/Dynamics365CommerceWebsite).
+> Pokud ještě nemáte přístup k Dynamics 365 Commerce Preview, můžete si vyžádat přístup k náhledu z webu [Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite).
 
 ## <a name="overview"></a>Přehled
 
-Chcete-li úspěšně zřídit prostředí pro náhled Commerce, musíte vytvořit projekt, který má specifický název a typ produktu. Prostředí a Retail Cloud Scale Unit (RCSU) také mají některé specifické parametry, které musíte použít ke zřizování e-Commerce později. Pokyny v tomto tématu popisují všechny požadované kroky, které je třeba provést, a parametry, které je nutné použít.
+Chcete-li úspěšně zřídit prostředí pro náhled Commerce, musíte vytvořit projekt, který má specifický název a typ produktu. Prostředí a commerce scale unit (CSU) také mají některé specifické parametry, které musíte použít ke zřizování e-Commerce později. Pokyny v tomto tématu popisují všechny požadované kroky, které je třeba provést, a parametry, které je nutné použít.
 
 Po úspěšném zřízení ukázkového prostředí Commerce je k přípravě prostředí náhledu nutné provést několik dalších kroků. Některé kroky jsou volitelné, v závislosti na aspektech systému, které chcete vyhodnotit. Volitelné kroky můžete vždy dokončit později.
 
@@ -52,69 +52,21 @@ Pokud máte dotazy týkající se kroků zřizování nebo pokud se vyskytnou n�
 Aby bylo možné zřídit prostředí pro náhled Commerce, musí být zavedeny následující předpoklady:
 
 - Máte přístup k portálu Microsoft Dynamics Lifecycle Services (LCS).
+- Jste stávajícím partnerem Microsoft Dynamics 365 nebo odběratelem a máte možnost vytvořit projekt Dynamics 365 Commerce.
 - Byli jste přijati do programu náhledu Dynamics 365 Commerce.
-- Máte požadovaná oprávnění k vytvoření projektu pro **potenciální předprodej** nebo **migraci, vytvoření řešení a další informace**.
+- Máte požadovaná oprávnění k vytvoření projektu pro **migraci, vytvoření řešení a další informace**.
 - Máte roli **Správce prostředí** nebo **Vlastník projektu** v projektu, kde se chystáte zřídit prostředí.
 - Máte přístup pro správu ke svému předplatnému Microsoft Azure nebo jste v kontaktu se správcem předplatného, který může provést dva kroky, které pro vás vyžadují oprávnění správce.
 - Máte k dispozici ID klienta Azure Active Directory (Azure AD).
 - Vytvořili jste Skupinu zabezpečení Azure AD, kterou lze použít jako skupinu správců systému e-Commerce a máte k dispozici její ID.
 - Vytvořili jste skupinu zabezpečení Azure AD, kterou lze použít jako skupinu pro moderátory hodnocení a recenzí a máte k dispozici její ID. (Tato skupina zabezpečení může být shodná se skupinou správců systému e-commerce.)
 
-### <a name="find-your-azure-ad-tenant-id"></a>Najděte ID klienta Azure AD
-
-ID klienta Azure AD je globálně jedinečný identifikátor (GUID), který se podobá následujícímu příkladu: **72f988bf-86f1-41af-91ab-2d7cd011db47**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-the-azure-portal"></a>Najděte své ID klienta Azure AD pomocí Azure portálu
-
-1. Přihlaste se do [portálu Azure](https://portal.azure.com/).
-1. Ujistěte se, zda jste vybrali správný adreář.
-1. V levé nabídce vyberte **Azure Active Directory**.
-1. Ve **Spravovat** vyberte **Vlastnosti**. ID klienta Azure AD se zobrazí v **ID adresáře**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-openid-connect-metadata"></a>Vyhledání ID klienta Azure AD pomocí metadat OpenID Connect
-
-Vytvořte adresu URL OpenID nahrazením **\{VAšE\_DOMéNA\}** VAší doménou, například `microsoft.com`. Například `https://login.microsoftonline.com/{YOUR_DOMAIN}/.well-known/openid-configuration`  se stane `https://login.microsoftonline.com/microsoft.com/.well-known/openid-configuration`.
-
-1. Přejděte na adresu URL OpenID, která obsahuje vaši doménu.
-
-    ID klienta Azure AD lze zobrazit ve více hodnotách vlastností.
-
-1. Najděte **authorization\_endpoint** a extrahujte identifikátor GUID, který se zobrazí ihned po `login.microsoftonline.com/`.
-
-### <a name="find-your-azure-ad-security-group-id"></a>Vyhledání ID skupiny zabezpečení Azure AD
-
-ID skupiny zabezpečení Azure AD je identifikátor GUID, který se podobá následujícímu příkladu: **436ea7f5-ee6c-40c1-9f08-825c5811066a**.
-
-Tento postup předpokládá, že jste členem skupiny, pro kterou chcete najít ID.
-
-1. Otevřete [Orůzkumník grafů](https://developer.microsoft.com/graph/graph-explorer#).
-1. Vyberte **Přihlásit se k Microsoft** a přihlaste se pomocí svých pověření.
-1. Vlevo vyberte možnost **zobrazit další ukázky**.
-1. Povolte **Skupiny** z pravého podokna.
-1. Zavřít pravé podokno.
-1. Vyberte možnost **všechny skupiny, do kterých patřím**.
-1. V poli **náhledu odpovědi** najděte svou skupinu. ID skupiny zabezpečení se zobrazí ve vlastnosti **ID**.
-
 ## <a name="provision-your-commerce-preview-environment"></a>Zřizování ukázkového prostředí služby Commerce
 
 Tyto postupy vysvětlují, jak zřídit prostředí pro náhled Commerce. Po úspěšném dokončení těchto nastavení bude prostředí pro náhled Commerce připraveno na konfiguraci. Všechny popsané aktivity se objeví na portálu LCS.
 
 > [!IMPORTANT]
-> Přístup k náhledu je svázán s účtem LCS a organizací, kterou jste určili v aplikaci pro náhled. K zajištění prostředí náhledu Commerce je nutné použít stejný účet. Pokud musíte použít jiný účet LCS nebo nájemce pro prostředí náhledu Commerce, musíte tyto podrobnosti poskytnout společnosti Microsoft. Kontaktní informace naleznete v části [Podpora ukázkového prostředí Commerce](#commerce-preview-environment-support) dále v tomto tématu.
-
-### <a name="grant-access-to-e-commerce-applications"></a>Udělení přístupu k aplikacím e-Commerce
-
-> [!IMPORTANT]
-> Osoba, která se přihlásí, musí být správcem klienta Azure AD, který má ID klienta Azure AD. Pokud tento krok není úspěšně dokončen, zbývající kroky zřízení se nezdaří.
-
-Chcete-li autorizovat aplikace e-Commerce a získat přístup k předplatnému vašeho Azure, postupujte následovně.
-
-1. Sestavte adresu URL v následujícím formátu:
-
-    `https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345`
-
-1. Zkopírujte a vložte adresu URL do prohlížeče nebo do textového editoru a nahraďte **\{AAD\_TENANT\_ID\}** vaším ID klienta Azure AD. Pak otevřete adresu URL.
-1. V dialogovém okně přihlášení Azure AD se přihlaste a potvrďte, že chcete udělit přístup k předplatnému **Dynamics 365 Commerce (náhled)**. Budete přesměrováni na stránku ukazující, zda operace proběhla úspěšně.
+> Přístup k náhledu je svázán s účtem LCS a organizací, kterou jste určili v aplikaci Commerce pro náhled. K zajištění prostředí náhledu Commerce je nutné použít stejný účet. Pokud potřebujete použít jiný účet LCS nebo nájemce pro prostředí náhledu Commerce, musíte tyto podrobnosti poskytnout společnosti Microsoft. Kontaktní informace naleznete v části [Podpora ukázkového prostředí Commerce](#commerce-preview-environment-support) dále v tomto tématu.
 
 ### <a name="confirm-that-preview-features-are-available-and-turned-on-in-lcs"></a>Zkontrolujte, zda jsou k dispozici funkce náhledu a zda jsou zapnuty v LCS.
 
@@ -210,12 +162,12 @@ Následující ilustrace znázorňuje akce, které je třeba provést na stránc
 Pro nasazení prostředí postupujte takto.
 
 > [!NOTE]
-> Je možné, že nebudete muset dokončit kroky 6, 7 a/nebo 8, protože stránky, které mají jedinou možnost, jsou přeskočeny. V zobrazení **Parametry prostředí** potvrďte, že se text **Dynamics 365 Commerce (Náhled)-demo (10.0.6 s aktualizací platformy 30)** zobrazuje přímo nad polem **Název prostředí**. Viz obrázek, který se zobrazí po kroku 8.
+> Je možné, že nebudete muset dokončit kroky 6, 7 a/nebo 8, protože stránky, které mají jedinou možnost, jsou přeskočeny. V zobrazení **Parametry prostředí** potvrďte, že se text **Dynamics 365 Commerce - ukázka (10.0.* x* s aktualizací Platform *xx*)** zobrazuje přímo nad polem **Název prostředí**. Podrobnosti viz obrázek, který se zobrazí po kroku 8.
 
 1. V horní nabídce vyberte možnost **Prostředí hostovaná v cloudu**.
 1. Prostředí přidáte výběrem tlačítka **Přidat**.
-1. V poli **Verze aplikace** vyberte **10.0.6**.
-1. V poli **Verzi platformy** vyberte **Platform Update 30**.
+1. V poli **verze aplikace** vyberte nejaktuálnější verzi. Pokud máte specifickou potřebu vybrat jinou než nejaktuálnější verzi aplikace, nevybírejte verzi před **10.0.8**.
+1. V poli **verze platformy** použijte verzi platformy, která je automaticky vybrána pro vybranou verzi aplikace. 
 
     ![Vyběr verze aplikace a platformy](./media/project1.png)
 
@@ -224,7 +176,7 @@ Pro nasazení prostředí postupujte takto.
 
     ![Výběr topologie prostředí 1](./media/project2.png)
 
-1. Vyberte **Dynamics 365 Commerce (Náhled) - Demo** jako topologii prostředí. Pokud jste dříve nakonfigurovali jeden konektor Azure Connector, bude se používat pro toto prostředí. Pokud jste nakonfigurovali více konektorů Azure, můžete vybrat, kterou spojnici chcete použít: **:Východ USA**, **Východ USA 2**, **Západ USA** nebo **Západ USA 2**. (Pro dosažení nejlepšího výkonu doporučujeme vybrat **Západ USA 2**.)
+1. Jako topologii prostředí vyberte **Dynamics 365 Commerce - ukázka**. Pokud jste dříve nakonfigurovali jeden konektor Azure Connector, bude se používat pro toto prostředí. Pokud jste nakonfigurovali více konektorů Azure, můžete vybrat, kterou spojnici chcete použít: **:Východ USA**, **Východ USA 2**, **Západ USA** nebo **Západ USA 2**. (Pro dosažení nejlepšího výkonu doporučujeme vybrat **Západ USA 2**.)
 
     ![Výběr topologie prostředí 2](./media/project3.png)
 
@@ -241,39 +193,38 @@ Pro nasazení prostředí postupujte takto.
 
 1. Než budete pokračovat, ujistěte se, že je stav prostředí **Nasazený**.
 
-### <a name="initialize-rcsu"></a>Inicializujte RCSU
+### <a name="initialize-the-commerce-scale-unit-csu"></a>Inicializace commerce scale unit (CSU)
 
-Pokud chcete inicializovat RCSU, postupujte takto.
+Pokud chcete inicializovat CSU, postupujte takto.
 
 1. V zobrazení **Prostředí hostovaná v cloudu** vyberte v seznamu požadované prostředí.
 1. V zobrazení prostředí napraco vyberte **úplné podrobnosti**. Zobrazí se podrobnosti o prostředí.
 1. V části **Funkce prostředí** vyberte **Spravovat**.
-1. Na kartě **Maloobchod** vyberte **Inicializovat**. Zobrazí se zobrazení inicializačních parametrů RCSU.
+1. Na kartě **Velkoobchod** vyberte **Inicializovat**. Zobrazí se zobrazení inicializačních parametrů CSU.
 1. V poli **Oblast** zvolte **East US**, **East US 2**, **West US** nebo **West US 2**.
-1. V poli **Verze** vyberte možnost **Určit verzi** v seznamu a pak zadejte **9.16.19262.5** do zobrazeného pole. Je třeba zadat přesnou verzi, která je zde uvedena. V opačném případě bude nutné RCSU aktualizovat na správnou verzi později.
+1. V poli **Verze** vyberte možnost **Určit verzi** v seznamu a pak zadejte **9.18.20014.4** do zobrazeného pole. Je třeba zadat přesnou verzi, která je zde uvedena. V opačném případě bude nutné RCSU aktualizovat na správnou verzi později.
 1. Zapněte možnost **použít rozšíření**.
 1. V seznamu přípon vyberte možnost **Náhled rozšíření ukázky Commerce**.
 1. Vyberte **Inicializovat**.
-1. Na stráncee s potvrzením nasazení ověřte správnost podrobností klikněte vyberte **Ano**. Vrátíte se do zobrazení **Řízení maloobchodu** s vybranou kartou **Maloobchod**. Vaše RCSU byla zařazena do fronty pro zřizování.
-1. Než budete pokračovat, ujistěte se, že je stav RCSU **Úspěch**. Inicializace trvá přibližně dvě až pět hodin.
+1. Na stráncee s potvrzením nasazení ověřte správnost podrobností klikněte vyberte **Ano**. Zobrazení **Správa velkoobchodu** se objeví znovu, když je vybraná karta **Commerce**. Vaše CSU byla zařazena do fronty pro zřizování.
+1. Než budete pokračovat, ujistěte se, že je stav CSU **Úspěch**. Inicializace trvá přibližně dvě až pět hodin.
 
 ### <a name="initialize-e-commerce"></a>Inicializace e-Commerce
 
 Pokud chcete inicializovat e-Commerce, postupujte takto.
 
-1. Na kartě **e-Commerce (Náhled)** zkontrolujte souhlas s náhledem a pak vyberte **nastavení.**
+1. Na kartě **e-Commerce** zkontrolujte souhlas s náhledem a pak vyberte **nastavení.**
 1. Zadejte název pro **Název klienta e-Commerce**. Uvědomte si však, že název bude viditelný u některých adres URL, které odkazují na vaši instanci e-Commerce.
-1. V poli **Název Retail Cloud Scale Unit** vyberte položku RCSU v seznamu. (Seznam by měl mít pouze jednu možnost.)
+1. V poli **Název Commerce scale unit** vyberte položku CSU v seznamu. (Seznam by měl mít pouze jednu možnost.)
 
     Pole **Geografie e-Commerce** je nastaveno automaticky a hodnota nemůže být změněna.
 
 1. Pokračujte výběrem tlačítka **Další**.
 1. Do pole **Podporované názvyhostitelů** zadejte libovolnou platnou doménu, například `www.fabrikam.com`.
-1.  Ve skupině **Skupina zabezpečení AAD pro správce systému** zadejte několik prvních písmen názvu skupiny zabezpečení, kterou chcete použít. Chcete-li zobrazit výsledky hledání, vyberte ikonu lupy. Vyberte skupinu zabezpečení ze seznamu.
-2.  Ve skupině **Skupina zabezpečení AAD pro moderátora hodnocení a recenzí** zadejte několik prvních písmen názvu skupiny zabezpečení, kterou chcete použít. Chcete-li zobrazit výsledky hledání, vyberte ikonu lupy. Vyberte skupinu zabezpečení ze seznamu.
+1.  Ve skupině **Skupina zabezpečení AAD pro správce systému** zadejte několik prvních písmen názvu skupiny zabezpečení, kterou chcete použít. Chcete-li zobrazit výsledky hledání, vyberte ikonu lupy. V seznamu vyberte správnou skupinu zabezpečení.
+2.  Ve skupině **Skupina zabezpečení AAD pro moderátora hodnocení a recenzí** zadejte několik prvních písmen názvu skupiny zabezpečení, kterou chcete použít. Chcete-li zobrazit výsledky hledání, vyberte ikonu lupy. V seznamu vyberte správnou skupinu zabezpečení.
 1. Ponechte možnost **Povolit službu hodnocení a recenzí** povolenou.
-1. Pokud jste již dokončili krok souhlasu společnosti Microsoft Azure Active Directory (Azure AD) podle popisu v části "Udělení přístupu k aplikacím e-Commerce", zaškrtněte políčko a potvrďte svůj souhlas. Pokud jste tento krok ještě nedokončili, musíte to provést dříve, než budete pokračovat v inicializaci. Chcete-li otevřít dialogové okno souhlasu a dokončit krok, vyberte odkaz v textu vedle zaškrtávacího políčka.
-1. Vyberte **Inicializovat**. Vrátíte se do zobrazení **Řízení maloobchodu** s vybranou kartou **e-Commerce (Náhled)**. Vaše inicializace e-Commerce byla zahájena.
+1. Vyberte **Inicializovat**. Zobrazení **Správa velkoobchodu** se objeví znovu, když je vybraná karta **e-Commerce**. Vaše inicializace e-Commerce byla zahájena.
 1. Než budete pokračovat, počkejte, dokud nebude inicializační stav e-Commerce **Inicializace úspěšná**.
 1. V **Odkazech** v pravém dolním roku si poznamenejte adresy URL následujících odkazů:
 
@@ -292,13 +243,13 @@ Chcete-li pokračovat v procesu zřizování a konfigurace prostředí náhledu 
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Přehled prostředí náhledu Commerce](cpe-overview.md)
+[Přehled prostředí Preview aplikace Dynamics 365 Commerce](cpe-overview.md)
 
-[Konfigurovat prostředí náhledu Commerce](cpe-post-provisioning.md)
+[Konfigurace prostředí Preview aplikace Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Nastavení volitelných funkcí pro prostředí náhledu Commerce](cpe-optional-features.md)
+[Konfigurace volitelných funkcí pro prostředí Preview aplikace Dynamics 365 Commerce](cpe-optional-features.md)
 
-[Často kladené dotazy k prostředí náhledu Commerce](cpe-faq.md)
+[Často kladené dotazy k prostředí Preview aplikace Dynamics 365 Commerce](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -308,4 +259,3 @@ Chcete-li pokračovat v procesu zřizování a konfigurace prostředí náhledu 
 
 [Web Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Zdroje nápovědy pro Dynamics 365 Retail](../retail/index.md)

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934879"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004012"
 ---
 # <a name="product-identifiers"></a>Identifikátory produktu 
 
@@ -88,7 +88,7 @@ Na stránce **Externí popisy položek** můžete přidružit číslo položky o
 | popis | Název, který odběratel přiřadil k položce | Název, který dodavatel přiřadil k položce |
 | Externí text položky | Popis položky odběratele | Popis položky dodavatele |
 
-Používá-li více odběratelů nebo dodavatelů stejná čísla položek (například v případě nákupního přidružení nebo maloobchodní skupiny), můžete vytvořit skupiny odběratelů nebo dodavatelů, chcete-li zjednodušit správu informací o externích produktech.
+Používá-li více odběratelů nebo dodavatelů stejná čísla položek (například v případě nákupního přidružení nebo velkoobchodní skupiny), můžete vytvořit skupiny odběratelů nebo dodavatelů, chcete-li zjednodušit správu informací o externích produktech.
 
 - Pro skupiny odběratelů přejděte na **Prodej** &gt; **nastavení** &gt; **položky** &gt; **externí popis položky** k vytváření a údržbě skupin a jejich souvisejících čísel položek. Pokud chcete přiřadit odběratele ke skupině, přejděte na **Pohledávky** &gt; **Odběratelé** &gt; **Všichni odběratelé** a poté na pevné záložce **Výchozí nastavení prodejních objednávek** určete hodnotu v poli **Položka – Skupina odběratelů**.
 - Pro skupiny dodavatelů přejděte na **Zásobování a zdroje** &gt; **nastavení** &gt; **Skupina popisu externí položky** k vytváření a údržbě skupin a jejich souvisejících čísel položek. Pokud chcete přiřadit dodavatele ke skupině, přejděte na **Pohledávky** &gt; **Dodavatelé** &gt; **Všichni dodavatelé** a poté na pevné záložce **Výchozí nastavení nákupních objednávek** určete hodnotu v poli **Položka – Skupina dodavatelů**.

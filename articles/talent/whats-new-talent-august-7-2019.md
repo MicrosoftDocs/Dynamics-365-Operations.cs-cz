@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 745a772ec12dff4e40639dbd7df0a713f5869516
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: a01201ae4934f6650f85634a230469c6272b36b9
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897780"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006487"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-6-2019"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Talent (6. srpna 2019)
 
@@ -57,6 +57,6 @@ Nová možnost umožní, aby manažeři zobrazili výkon svých přímých podř
 
 ## <a name="coming-soon"></a>Již brzy
 
-### <a name="platform-update-29-for-finance-and-operations"></a>Ajtzakuzace Platform Update 29 for Finance and Operations
+### <a name="platform-update-29-for-finance-and-operations"></a>Aktualizace Platform 29 pro Finance and Operations
 
-Další podrobnosti o aktualizaci Platform Update 29 for Finance and Operations naleznete v tématu [Funkce Preview v aktualizaci Platform Update 29 aplikace Dynamics 365 Finance and Operations (říjen 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Další podrobnosti o aktualizaci Platform 29 pro Finance and Operations získáte v tématu [Funkce náhledu v aktualizaci platformy Dynamics 365 Finance and Operations 29 (říjen 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).

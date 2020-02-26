@@ -3,7 +3,7 @@ title: Řízení práce ve skladu pomocí šablon práce a směrnic skladového 
 description: Toto téma popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
 author: perlynne
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9a5292e88fe022482ab9c6c5a8f016745946988
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4645cf36201aa1b87c22ba4dbfb1b8d8117f425a
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026898"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3028021"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Řízení práce ve skladu pomocí šablon práce a směrnic skladového místa
 
@@ -152,7 +152,7 @@ Zvolte použití strategií dávek pro položky, které mají povolenou dávku. 
 ### <a name="strategy"></a>Strategie
 
 -   **Konsolidovat** - Tato strategie se používá pro konsolidaci položek v konkrétním skladovém místě, když jsou podobné položky již k dispozici. Tato operace funguje pouze pro typ vložení směrnic skladového místa. Běžné nastavení pro vložení bude konsolidace na prvním řádku akce a poté na druhém řádku pokus o vložení bez konsolidace. Konsolidace zboží bude mít za následek efektivnější pozdější vyskladnění.
--   **Párovat množství balení** - Tato strategie umožňuje ověřit, zda má výdejní skladové místo zadané množství balení. Tato operace bude fungovat pouze pro směrnici skladového místa typu vyskladnění. 
+-   **Párování množství balení** – Tato strategie vyhledá skladové místo obsahující registrační značku, která má požadované množství. Nelze jej použít s umístěními, která nejsou řízena registrační značkou. Tato strategie funguje pouze pro směrnici skladového místa typu práce vyskladnění.
 -   **Rezervace dávky FEFO** - Tato strategie se používá, když se zásoby vyhledávají pomocí data vypršení platnosti dávky a jsou přiděleny pro rezervaci dávek. Tato strategie se dá použít pouze pro položky s povolenou dávkou. Tato operace funguje pouze pro směrnici skladového místa typu práce vyskladnění. 
 -   **Zaokrouhlit nahoru na úplnou registrační značku** - Tato strategie umožňuje zaokrouhlování skladového množství, aby odpovídalo množství registrační značky přiřazenému ke zboží k výdeji. Tuto strategii můžete použít pouze pro typ doplnění směrnice skladového místa typu Vyskladnění. 
 -   **Prázdné místo bez příchozí práce** - Tato strategie slouží k vyhledání prázdných míst. Sklad je považován za prázdný, pokud nemá žádné fyzických zásoby a neočekává příchozí práci. Tato strategie slouží pouze pro typ směrnice skladového místa Vložení. 

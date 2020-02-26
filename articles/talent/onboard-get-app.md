@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 8739bb1afdbea40c7f1c77064ee6b052516903d1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 1b59fdbdd9ed46f42afd3e7310d2cd3f076edd95
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898195"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006372"
 ---
 # <a name="get-the-onboard-app"></a>Získání aplikace Onboard
 
@@ -32,7 +32,7 @@ Můžete zobrazit ukázku a vyzkoušet aplikaci Microsoft Dynamics 365 Talent: O
 > [!NOTE]
 > Zkušební období vyžaduje firemní e-mailový účet.
 
-Předplatné aplikace Onboard lze zakoupit jako samostatnou aplikaci nebo jako součást aplikace Dynamics 365 Talent. Talent je komplexní systém pro správu lidského kapitálu (HCM), který zahrnuje Dynamics 365 Talent: Attract, Onboard, a Core HR. Další informace o možnostech nákupu produktu Onboard naleznete na [stránce produktu Onboard](https://dynamics.microsoft.com/talent/onboard/)produkt na kartě.
+Předplatné aplikace Onboard lze zakoupit jako samostatnou aplikaci nebo jako součást aplikace Dynamics 365 Talent. Další informace o možnostech nákupu produktu Onboard naleznete na [stránce produktu Onboard](https://dynamics.microsoft.com/talent/onboard/)produkt na kartě.
 
 Během procesu zkušebního období nebo nákupu nastavíte e-mailovou adresu a heslo pro Microsoft 365. Nezapomeňte si tyto hodnoty poznamenat.
 

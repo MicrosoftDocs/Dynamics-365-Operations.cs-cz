@@ -3,7 +3,7 @@ title: Přehled domovské stránky
 description: Toto téma poskytuje přehled domovské stránky Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fb42c9aa2e2ef1d620b310e9d30dbae5f84c788
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698273"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025964"
 ---
 # <a name="overview-of-the-home-page"></a>Přehled domovské stránky
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled domovské stránky Microsoft Dynamics 365 Commerce.
@@ -45,19 +45,19 @@ Hlavní část domovské stránky může zvýraznit produkty, kategorie nebo pro
 
 - **Hlavní** – první položka v horní části hlavního oddílu obvykle zobrazuje jeden nebo více hlavních obrázků, které v obchodě zvýrazní nové produkty a promoakce. Pokud existuje více hlavních obrázků, jsou hostovány v modulu karusel, aby je uživatelé mohli prohlížet.
 
-    Následující ilustrace znázorňuje příklad domovské stránky, kde první položka v hlavním oddílu je hlavní modul s názvem **nově dorazilo**.
+    Následující ilustrace znázorňuje příklad domovské stránky, kde první položka v hlavním oddílu je rozvržení Hero modulu bloku obsahu s názvem "nově dorazilo".
 
     ![Příklad hlavního modulu](./media/Hero.PNG)
 
-- **Propagační** – Propagační modul slouží k nabízení produktů a propagačních akcí prostřednictvím kombinace obrázků a textu. Propagační moduly lze používat nezávisle nebo je lze hostovat v modulu karusel.
+- **Propagační** – Propagační modul bloku obsahu slouží k nabízení produktů a propagačních akcí prostřednictvím kombinace obrázků a textu. Propagační rozvržení lze používat nezávisle nebo je lze hostovat v modulu karusel.
 
-    Následující obrázek znázorňuje příklad propagačního modulu na domovské stránce.
+    Na následujícím obrázku je znázorněn příklad rozvržení modulu bloku obsahu s propagačním rozvržením.
 
     ![Příklady propagačních modulů](./media/Feature.PNG)
 
-- **Umístění obsahu** – modul umístění obsahu umožňuje prezentovat více produktů nebo kategorií s použitím kombinace obrázků a textu v rozložení pro více sloupců. Na obrázku domovské stránky, který se zobrazuje dříve v tomto tématu, se modul umístění obsahu používá pro rozložení tří sloupců pro **Obchod ženy**, **Obchod muži** a **Obchod doplňky**.
+- **Dlaždice** – rozvržení dlaždice bloku obsahu umožňuje prezentovat více produktů nebo kategorií s použitím kombinace obrázků a textu v rozložení pro více sloupců. Na obrázku domovské stránky, který se zobrazuje dříve v tomto tématu, se rozvržení dlaždice používá pro vykreslení tří sloupců pro **Obchod ženy**, **Obchod muži** a **Obchod doplňky**.
 - **Přehrávač videa** – na domovské stránce lze prezentovat obsah videa pomocí modulu přehrávače videa. Obrázek domovské stránky, který se nachází výše v tomto tématu, zahrnuje modul přehrávače videa.
-- **Blok s formátovaným obsahem** – modul bloku s formátovaným obsahem lze použít k zobrazení textového obsahu na domovské stránce v rozložení s jedním sloupcem a více sloupci.
+- **Blok textu** – modul bloku s formátovaným obsahem lze použít k zobrazení textového obsahu na domovské stránce v rozložení s jedním sloupcem a více sloupci.
 - **Doporučení produktu** – moduly doporučení produktu slouží k zobrazení seznamů, například **Nový**, **Trendující** a **Nejlépe prodávané** na domovské stránce. Tyto seznamy předkládají produkty založené na nákupních trendech a lze je vybrat ručně nebo generovat algoritmem. Pomáhají zákazníkům rychle objevit nejlepší produkty a poté pokračovat v nákupu.
 
     Následující obrázek znázorňuje příklad modulu doporučení produktu na domovské stránce.

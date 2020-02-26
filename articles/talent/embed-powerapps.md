@@ -1,5 +1,5 @@
 ---
-title: Integrace aplikací Power Apps v Dynamics 365 - Core HR
+title: Vložení aplikací Power Apps do Dynamics 365 Human Resources
 description: Toto téma vysvětluje, jak vyřešit problém, kdy položka nabídky Microsoft Power Apps zmizela z modulu správy systému.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b1dd1756be349d85af8e6d7159623a2a95e75526
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 8275a8a7c68fa13d6b9880c4c411deaa2dcbb998
+ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898705"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017866"
 ---
-# <a name="embed-power-apps-apps-in-dynamics-365---core-hr"></a>Integrace aplikací Power Apps v Dynamics 365 - Core HR
+# <a name="embed-power-apps-apps-in-dynamics-365-human-resources"></a>Vložení aplikací Power Apps do Dynamics 365 Human Resources
 
 **Vydání**
 
@@ -38,31 +38,31 @@ Došlo ke změně návrhu uživatelského rozhraní a Microsoft Power Apps je ny
 
 Způsob integrace aplikací Power Apps se změnil. Aplikace Power Apps jsou nyní přidávány prostřednictvím modelu přizpůsobení. Aplikace Power Apps můžete přidat téměř na všechny stránky aplikace Microsoft Dynamics 365 Talent.
 
-Podrobné informace o tom, jak integrovat aplikace Power Apps do aplikace Talent, najdete v tématu [Integrace Microsoft Power Apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+Podrobné informace o tom, jak integrovat aplikace Power Apps do aplikace Talent, najdete v tématu [Integrace Power Apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
 Všichni zákazníci Power Apps, kteří integrovali aplikace před změnou, by měli být upgradováni na nový model.
 
-Tlačítko **Power Apps** je v pravém horním rohu téměř každé stránky v aplikaci Talent. Toto tlačítko můžete použít pro vložení aplikace Power Apps.
+Tlačítko **Power Apps** je v pravém horním rohu téměř každé stránky v aplikaci Talent. Toto tlačítko můžete použít pro vložení aplikací.
 
 Následuje příklad.
 
 1. Přejděte na **Správa zaměstnanců \> Odkazy \> Pracovníci \> Zaměstnanci**.
-2. Vyberte tlačítko **Power Apps** a pak vyberte **Vložit PowerApp**.
+2. Vyberte tlačítko **Power Apps** a poté vyberte možnost **Přidat aplikaci z Power Apps**.
 
     ![Tlačítko Power Apps](media/png.png)
 
-3. Vyplňte pole v dialogovém okně **Vložit PowerApp**.
+3. Vyplňte pole v dialogovém okně **Přidat aplikaci z Power Apps**.
 
-    ![Vložení dialogového okna PowerApp](media/insert-powerapp.png)
+    ![Přidání aplikace z dialogového okna Power Apps](media/insert-powerapp.png)
 
 Popřípadě postupujte následovně.
 
-1. V podokně akcí stránky na kartě **Možnosti** ve skupině **Přizpůsobit** zvolte **Přizpůsobit tento formulář**.
+1. V podokně akcí stránky na kartě **Možnosti** ve skupině **Přizpůsobit** zvolte **Přizpůsobit tuto stránku**.
 
     ![Přizpůsobení skupiny na kartě Možnosti](media/options.png)
 
     Zobrazí se panel nástrojů individuálních nastavení.
 
-2. Na panelu nástrojů zvolte **Vložit \> PowerApp**.
+2. Na panelu nástrojů vyberte možnost **Přidat aplikaci z Power Apps**.
 
-    ![Vložení aplikace Power Apps pomocí panelu nástrojů individuálního nastavení](media/powerapp-bar.png)
+    ![Přidání aplikace z Power Apps pomocí panelu nástrojů individuálního nastavení](media/powerapp-bar.png)

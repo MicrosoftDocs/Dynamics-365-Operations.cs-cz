@@ -3,7 +3,7 @@ title: Přehled správy obchodních dokumentů
 description: Toto téma obsahuje informace o použití funkce správy obchodních dokumentů v rámci architektury elektronického výkaznictví.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/09/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
+ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933901"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2957360"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
 
@@ -122,7 +122,7 @@ Chcete-li povolit funkci správy obchodních dokumentů pro všechny právnické
 4. K nové funkci budete mít přístup po aktualizaci stránky.
 
 >[!NOTE]
-> Je také nutné povolit **prostředí UI podobné systému Office pro správu obchodního dokumentu** k používání nového rozhraní správy obchodních dokumentů
+> Další informace o použití nového uživatelského rozhraní dokumentu v modulu Správa obchodních dokumentů naleznete v tématu [Nové uživatelské rozhraní dokumentů v modulu Správa obchodních dokumentů](er-business-document-management-new-template-ui.md).
 
 ![Pracovní prostor Správa funkcí](./media/BDM-Overview-FMEnabling.png)
 
@@ -147,7 +147,7 @@ Informace o nastavení požadovaných parametrů správy dokumentů a typů doku
 
 ![Nastavení typu dokumentu pro správu dokumentů](./media/BDM-Overview-DMSetting.png)
 
-### <a name="set-up-parameters"></a>Nastavení parametrů
+### <a name="SetupBdmParameters">Nastavení parametrů</a>
 
 Na stránce **parametry obchodního dokumentu** lze nastavit základní parametry správy obchodních dokumentů. Na stránku mohou přistupovat jen někteří uživatelé. Mezi ně patří:
 
@@ -166,6 +166,9 @@ Pomocí následujícího postupu nastavíte základní parametry pro všechny pr
 ![Nastavení parametrů správy obchodních dokumentů](./media/BDM-Overview-BDMSetting.png)
 
 Vybraný typ dokumentu je specifický pro společnost a bude použit, pokud uživatel pracuje se správou obchodních dokumentů ve společnosti, pro kterou je nastaven vybraný typ dokumentu. Pokud uživatel pracuje se správou obchodních dokumentů v jiné společnosti, bude použit stejný vybraný typ dokumentu, pokud nebyl pro tuto společnost konfigurován jiný. Pokud byl typ dokumentu konfigurován, bude použit namísto typu vybraného v poli **Typ dokumentu SharePoint**.
+
+> [!NOTE]
+> Parametr **Typ dokumentu SharePoint** definuje složku SharePoint jako dočasné úložiště pro šablony, které lze upravovat pomocí aplikací Microsoft Excel nebo Word. Tento parametr je nutné nastavit, pokud chcete používat tyto desktopové aplikace Office pro úpravy šablon. Další informace naleznete v tématu [Úprava šablony v desktopové aplikaci Office](#EditInOfficeDesktopApp). Chcete-li upravit šablonu pouze pomocí funkce v aplikaci Office 365, můžete tento parametr ponechat prázdný. Další informace naleznete v tématu [Úprava šablony v Office 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Konfigurace přístupových oprávnění
 
@@ -258,23 +261,18 @@ Pro vybranou šablonu je k dispozici možnost **Upravit šablonu**. Tato možnos
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Zahájení úprav šablon vlastněných ostatními poskytovateli
 
-1. V pracovním prostoru správy obchodních dokumentů vyberte **nový dokument**.
+1. V pracovním prostoru správy obchodních dokumentů vyberte dokument, který chcete použít jako šablonu.
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM_overview_new_template1.png)
+![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate3.png)
 
-2. Vyberte dokument, který chcete použít jako šablonu.
+3. Vyberte **Nový dokument** a v poli **Název** změňte v případě potřeby název upravitelné šablony. Text se použije k pojmenování konfigurace formátu elektronického výkaznictví, která je automaticky vytvořena. Všimněte si, že verze konceptu této konfigurace **(Kopie sestavy FTI odběratele (GER)kopie**), která bude obsahovat upravenou šablonu, bude automaticky označena pro spuštění tohoto formátu elektronického výkaznictví pro aktuálního uživatele. Zároveň bude původní neupravená šablona ze základní konfigurace formátu elektronického výkaznictví použita ke spuštění tohoto formátu elektronického výkaznictví pro libovolného jiného uživatele.
+4. V poli **Název** změňte název první revize upravitelné šablony, která bude automaticky vytvořena.
+5. V poli **Komentář** změňte komentář pro automaticky vytvořenou revizi upravitelné šablony.
+6. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav
 
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM_overview_new_template2.png)
+![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate4.png)
 
-3. Klikněte na **Vytvořit dokument**
-4. V poli **Název** změňte v případě potřeby název upravitelné šablony. Text se použije k pojmenování konfigurace formátu elektronického výkaznictví, která je automaticky vytvořena. Všimněte si, že verze konceptu této konfigurace **(Kopie sestavy FTI odběratele (GER)kopie**), která bude obsahovat upravenou šablonu, bude automaticky označena pro spuštění tohoto formátu elektronického výkaznictví pro aktuálního uživatele. Zároveň bude původní neupravená šablona ze základní konfigurace formátu elektronického výkaznictví použita ke spuštění tohoto formátu elektronického výkaznictví pro libovolného jiného uživatele.
-5. V poli **Název** změňte název první revize upravitelné šablony, která bude automaticky vytvořena.
-6. V poli **Komentář** změňte poznámku pro automaticky vytvořenou revizi upravitelné šablony.
-7. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav
-
-![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM_overview_new_template3.png)
-
-Možnost **Nový dokument** je vždy k dispozici pro šablonu v konfiguraci formátu elektronického výkaznictví poskytovanou jiným poskytovatelem (v tomto případě Microsoft). Když kliknete na **Nový dokument**, zobrazí se všechny šablony vlastněné aktuálními a jinými poskytovateli. Po výběru bude šablona otevřena pro úpravy. Upravená šablona bude poté uložena do nové konfigurace formátu elektronického výkaznictví, která bude automaticky vygenerována.
+Možnost **Nový dokument** je vždy k dispozici pro šablonu v konfiguraci formátu elektronického výkaznictví poskytovanou aktuálním a jiným poskytovatelem (v tomto případě Microsoft), který nemá žádnou revizi. Upravená šablona bude poté uložena do nové konfigurace formátu elektronického výkaznictví, která bude automaticky vygenerována.
 
 ### <a name="start-editing-a-template"></a>Zahájení úpravy šablony
 
@@ -282,7 +280,7 @@ Možnost **Nový dokument** je vždy k dispozici pro šablonu v konfiguraci form
 2. V poli **Název** změňte název první revize upravitelné šablony, která bude automaticky vytvořena.
 3. V poli **Komentář** změňte poznámku pro automaticky vytvořenou revizi upravitelné šablony.
 
-    ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM_overview_new_template4.png)
+    ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingTemplate5.png)
 
 5. Klepnutím na tlačítko **OK** potvrďte zahájení procesu úprav.
 
@@ -290,13 +288,16 @@ Otevře se stránka **Editor šablony BDM**. Vybraná šablona bude k dispozici 
 
 ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="edit-a-template-in-office-365"></a>Úprava šablony pomocí Office 365
+### <a name="EditInOffice365">Úprava šablony v Office 365</a>
 
-Šablonu lze upravit pomocí funkcí, které jsou součástí Office 365. Například v řešení Office Online změníte písmo výzev polí v záhlaví šablony z **Obyčejné** na **Tučné**. Tyto změny se automaticky uloží pro upravitelnou šablonu, která se nachází v úložišti primární šablony (standardně úložiště objektu blob služby Azure), které je nakonfigurováno pro architekturu elektronického výkaznictví.
+Šablonu můžete upravit pomocí aplikace Office 365. Například v řešení Office Online změníte písmo výzev polí v záhlaví šablony z **Obyčejné** na **Tučné**. Tyto změny se automaticky uloží v upravitelné šabloně, která se nachází v úložišti primární šablony (standardně úložiště objektu blob služby Azure). To je konfigurováno pro rámec elektronického výkaznictví.
 
 ![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="edit-a-template-in-the-office-desktop-application"></a>Úprava šablony v desktopové aplikaci Office
+### <a name="EditInOfficeDesktopApp">Úprava šablony v desktopové aplikaci Office</a>
+
+> [!NOTE]
+> Tato funkce je k dispozici pouze tehdy, když je parametr **Typ dokumentu SharePoint** správně nakonfigurován. Další informace naleznete v tématu [Konfigurace parametrů](#SetupBdmParameters).
 
 1. Chcete- li upravit šablonu pomocí funkce desktopové aplikace Office (v tomto příkladu aplikace Excel), vyberte možnost **Otevřít v desktopové aplikaci**. Upravitelná šablona je zkopírována z trvalého úložiště do dočasného úložiště konfigurovaného v parametrech správy obchodních dokumentů jako složka SharePoint.
 2. Potvrďte, že chcete otevřít šablonu z dočasného úložiště souborů v desktopové aplikaci Office Excel.
@@ -411,3 +412,4 @@ Pravděpodobně jste se přihlásili k aktuální instanci aplikace v doméně A
 [Integrace obrázků a tvarů v generovaných dokumentech pomocí elektronického výkaznictví](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurace elektronického výkaznictví pro doplňování dat do Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+

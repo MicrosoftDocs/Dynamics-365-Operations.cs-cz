@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4427388d75c1aef40a978ce35c831d5b714f2562
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812573"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006165"
 ---
 # <a name="connect-the-help-system"></a>Připojení k systému nápovědy
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou popsány komponenty systému nápovědy pro aplikace Finance and Operations, jako je Dynamics 365 Finance, Supply Chain Management, Retail a Talent. Poskytuje přehled o tom, jak připojit tyto komponenty, a souhrnné informace o tom, jak vytvořit vlastní nápovědu.
+V tomto tématu jsou popsány komponenty systému nápovědy pro aplikace Finance and Operations, jako je Dynamics 365 Finance, Supply Chain Management, Commerce a Human Resources. Poskytuje přehled o tom, jak připojit tyto komponenty, a souhrnné informace o tom, jak vytvořit vlastní nápovědu.
 
 ## <a name="help-architecture"></a>Architektura nápovědy
 
@@ -43,7 +43,7 @@ Následující obrázek znázorňuje části systému nápovědy. Systém nápov
 ## <a name="connecting-the-help-system"></a>Připojení systému nápovědy
 
 > [!NOTE]
-> Karta **Průvodci záznamem** úloh není k dispozici v aplikacích Dynamics 365 Talent či Retail. Funkci zpřístupníme v budoucí verzi. Průvodci v prostředí Začínáme v aplikaci Talent jsou i nadále k dispozici a zabývají se základními funkcemi. Procesní nápověda je k dispozici také na webu docs.microsoft.com pro Retail a Talent.
+> Karta **Průvodci záznamem** úloh není k dispozici v aplikacích Dynamics 365 Human Resources či Commerce. Funkci zpřístupníme v budoucí verzi. Průvodci v prostředí Začínáme v aplikaci Human Resources jsou i nadále k dispozici a zabývají se základními funkcemi. Procesní nápověda je k dispozici také na webu docs.microsoft.com pro Human Resources a Commerce.
 
 Pomocí stránky **Systémové parametry** správci systému připojí části systému nápovědy pro implementaci.
 
@@ -64,7 +64,7 @@ Po dokončení těchto kroků můžete otevřít podokno **Nápověda** a klikn
 
 ### <a name="showing-translated-task-guides"></a>Zobrazení přeložených průvodců úkoly
 
-Přeložení průvodci úkolem byli poprvé vydání v knihovně APQC Unified Library pro květen 2016 a v knihovně Začínáme. Chcete-li v aplikacích Finance and Operations zobrazit lokalizovanou nápovědu k průvodci záznamem úloh, zkontrolujte, zda máte připojenou knihovnu z května. Jazyk, ve kterém se průvodce úkolem zobrazí, je řízen pro každého uživatele v jazykovém nastavení v části **Možnosti** &gt; **Předvolby**.
+Přeložení průvodci úkolem byli poprvé vydání v knihovně APQC Unified Library pro květen 2016 a v knihovně Začínáme. Aby bylo možné v aplikacích Finance and Operations zobrazit lokalizovanou nápovědu v podobě průvodce úkolem, ujistěte se, že jste připojeni ke knihovně pro květen. Jazyk, ve kterém se průvodce úkolem zobrazí, je řízen pro každého uživatele v jazykovém nastavení v části **Možnosti** &gt; **Předvolby**.
 
 > [!NOTE]
 > I když mnoho průvodců úkolem již bylo přeloženy, klient aktuálně nezobrazuje názvy přeložených průvodců úkolem. Stejně tak pouze průvodci úkolem vydaní v únoru jsou momentálně k dispozici v překladu v knihovně pro únor 2016. Aktualizovanou knihovnou s další překlady zpřístupníme později.
@@ -78,7 +78,7 @@ Můžete použít průvodce záznamem úloh k vytvoření vlastní nápovědy, n
 
 ### <a name="create-custom-help-with-task-guides"></a>Vytvoření vlastní nápovědy pomocí průvodců záznamem úloh
 
-Vlastní nápovědu pro aplikace Finance, Supply Chain Management a Retail můžete vytvořit tak, že vytvoříte záznamy úloh, které odpovídají vaší implementaci, a uložíte je do knihovny obchodního procesu LCS. Pro aplikaci Talent nelze vlastní průvodce záznamem úloh vytvořit.
+Vlastní nápovědu pro aplikace Finance, Supply Chain Management a Commerce můžete vytvořit tak, že vytvoříte záznamy úloh, které odpovídají vaší implementaci, a uložíte je do knihovny obchodního procesu LCS. V aplikaci Human Resources nelze vytvářet vlastní průvodce záznamem úloh.
 
 Pro partnery platí, že pokud knihovnu nastavíte jako podnikovou knihovnu a zahrnete ji do řešení, bude k dispozici vašim odběratelům. Můžete vytvořit také kopii sjednocené globální knihovny APQC a poté otevřít kopii z ní otevřít záznamy úloh, upravit je a uložit záznamy s provedenými změnami. Více informací viz [Zdroje záznamníku úloh](../../dev-itpro/user-interface/task-recorder.md).
 
@@ -86,7 +86,7 @@ Pro partnery platí, že pokud knihovnu nastavíte jako podnikovou knihovnu a za
 
 Společnost Microsoft poskytla dokument white paper a vzorový kód, které popisují způsob vytvoření a připojení vlastního webu nápovědy k panelu Nápověda. Další informace naleznete zde:
 
-- [Vytvoření vlastní nápovědy pro aplikace Finance and Operations (dokument white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Vytvoření vlastní nápovědy pro Finance and Operations (dokument white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [Úložiště GitHub vlastní nápovědy](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## <a name="additional-resources"></a>Další zdroje

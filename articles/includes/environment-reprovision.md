@@ -1,7 +1,7 @@
-Při kopírování databáze mezi prostředími budete muset spustit nástroj opětovného zřízení prostředí předtím, než bude kopírovaná databáze plně funkční, abyste se ujistili, že jsou všechny komponenty Retail aktuální.
+Při kopírování databáze mezi prostředími budete muset spustit nástroj opětovného zřízení prostředí předtím, než bude kopírovaná databáze plně funkční, abyste se ujistili, že jsou všechny komponenty Commerce aktuální.
 
 > [!IMPORTANT]
-> Doporučujeme spustit tento postup bez ohledu na to, zda používáte komponenty Retail nebo ne, protože funkce Retail je součástí všech prostředí. 
+> Doporučujeme spustit tento postup bez ohledu na to, zda používáte komponenty Commerce nebo ne, protože funkce Commerce je součástí všech prostředí. 
 
 Než budete pokračovat, musíte se ujistit, že jsou splněny následující předpoklady:
 1. Pokud upgradujete na vydání z července 2017 (také známé jako 7.2) 7.2.11792.56024, před spuštěním upgradu dat v tomto prostředí použijte v cílovém prostředí následující opravy aplikace hotfix X++. Zabráníte tím různým chybám, ke kterým dochází během upgradu dat:

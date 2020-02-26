@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cc1f4a7e18b43d3ea83575eaf1de71ed3956c01f
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 25f84d960be4f4e8ff1b569d00b356390c232a2c
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844249"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003897"
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Uvolnění produktu / základního produktu právnickým osobám
 
@@ -29,8 +29,8 @@ ms.locfileid: "1844249"
 
 Tato procedura vás provede způsobem uvolnění produktu nebo základního produktu pro jednu nebo více právnických osob. Společnost s ukázkovými daty používaná k tvorbě tohoto úkolu je USRT a úkol je určen pro manažera prodeje a návrháře produktu.
 
-1. Přejděte na Maloobchodní a velkoobchodní prodej > .. > Produkty podle kategorie.
-2. Označte v seznamu vybraný řádek.
+1. Přejděte na Retail and Commerce > .. > Produkty podle kategorie.
+2. Označte na seznamu vybraný řádek.
 3. Klikněte na možnost Uvolnit produkty.
 4. Klepněte na tlačítko Další.
 5. Vyhledejte na seznamu požadovaný záznam a vyberte ho.

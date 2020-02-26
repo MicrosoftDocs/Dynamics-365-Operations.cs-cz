@@ -1,9 +1,9 @@
 ---
-title: Zdroje nápovědy pro Dynamics 365 Commerce
+title: Domovská stránka aplikace Commerce
 description: Domovská stránka pro Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,16 +19,16 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 371f85063333bec53227f9b25a5b69c2cba2e6f8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 08e6a521818c919b364033e22643b9ee4ce0ec65
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770086"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024653"
 ---
-# <a name="help-resources-for-dynamics-365-commerce"></a>Zdroje nápovědy pro Dynamics 365 Commerce
+# <a name="commerce-home-page"></a>Domovská stránka aplikace Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 
@@ -36,25 +36,24 @@ Dynamics 365 Commerce - aplikace vytvořená na prokázaných schopnostech aplik
 
 Tato verze umožňuje vytváření digitálních zážitků pomocí vestavěných nástrojů pro vytváření a vývoj webů k tvorbě poutavých a inteligentních digitálních poutačů. Připojená marketingová a bezobslužná komerční platforma dále umožňuje plynulé řízení obsahu, majetku, promoakcí, zásob a cen ve všech kanálech.
 
-- Vše pro sestavení a spuštění služby digitální obchod: umožňuje zjednodušit obchodní a koncové řešení obchodu, které se přizpůsobí vašim potřebám v tradičních a rozvíjejících se kanálech. Integrované nástroje pro vytváření webových stránek a vývoj umožňují vytvářet poutavé inteligentní digitální poutače, zatímco připojená marketingová a bezobslužná obchodní platforma umožňuje bezproblémové řízení obsahu, majetku, promoakcí, zásob a cen napříč kanály.
+- **Vše pro sestavení a spuštění služby digitální obchod:** umožňuje zjednodušit obchodní a koncové řešení obchodu, které se přizpůsobí vašim potřebám v tradičních a rozvíjejících se kanálech. Integrované nástroje pro vytváření webových stránek a vývoj umožňují vytvářet poutavé inteligentní digitální poutače, zatímco připojená marketingová a bezobslužná obchodní platforma umožňuje bezproblémové řízení obsahu, majetku, promoakcí, zásob a cen napříč kanály.
 
-- Vytvořte věrnostní program a předčete očekávání zákazníků: pomocí nástrojů clienteling získejte obsáhlý přehled o zákazníkovi a odpovězte na jeho potřebu na všech úrovních na základě profilu zákazníka, historie a předvoleb, které proudí mezi fyzickými a digitálními kanály. Svým zaměstnanceům umožněte pečovat o trvalé vztahů pomocí doporučení na základě umělé inteligence, zákaznických přehledů a věrnostních programů, které podporují přitžlivost značky.
+- **Vytvořte věrnostní program a předčete očekávání zákazníků:** pomocí nástrojů clienteling získejte obsáhlý přehled o zákazníkovi a odpovězte na jeho potřebu na všech úrovních na základě profilu zákazníka, historie a předvoleb, které proudí mezi fyzickými a digitálními kanály. Svým zaměstnanceům umožněte pečovat o trvalé vztahů pomocí doporučení na základě umělé inteligence, zákaznických přehledů a věrnostních programů, které podporují přitžlivost značky.
 
-- Flexibilní a inteligentní omnikanálová řešení: sjednocení fyzického a digitálního obchodu díky konzistentním zážitkům zákazníků napříč vyhledáváním v cloudu a objevováním, recenzemi produktů, seznamy, zásobami, dárkovými poukazy a věrnostními produkty. Umožněte zákazníkům nákup, kdy, jak a kde chtějí, na všech zařízeních – při zachovnání volby moderních způsobů platby a shromažďování nebo dodání produktů.
+- **Flexibilní a inteligentní omnikanálová řešení:** sjednocení fyzického a digitálního obchodu díky konzistentním zážitkům zákazníků napříč vyhledáváním v cloudu a objevováním, recenzemi produktů, seznamy, zásobami, dárkovými poukazy a věrnostními produkty. Umožněte zákazníkům nákup, kdy, jak a kde chtějí, na všech zařízeních – při zachovnání volby moderních způsobů platby a shromažďování nebo dodání produktů.
 
-- Zjednodušení operací pomocí umělé inteligence v cloudu: podporujte omnikanálové zážitky a integrované, optimalizované účetní operace s využitím integrovaných, vždy dostupných a kontextových cloudových prostředí. Pomocí pokročilého merchandisingu, řízení zásob, distribuovaného řízení objednávek, cen a propagace můžete provádět inovace a zůstat před konkurencí.Získejte přehledy vizualizací a analýzou komplexních a konzistentních dat ve všech aspektech vašeho podnikání. Pomocí technologií založených na umělé inteligenci můžete poskytovat přístupné webové stránky, chránit vaši firmu před podvody s platbami a účinně moderovat obsah generovaný uživateli, jako jsou hodnocení a recenze. 
-
-## <a name="sign-up-for-the-preview"></a>Registrace náhledu
-
-Přejděte na stránku [Dynamics 365 Commerce (Náhled)](https://dynamics.microsoft.com/en-us/commerce/overview/) a vyplněním aplikace se připojte k náhledu. Stávající zákazníci Dynamics 365 Retail budou moci aktualizovat na aplikaci Commerce, jakmile bude obecně dostupná. 
+- **Zjednodušení operací pomocí umělé inteligence v cloudu:** podporujte omnikanálové zážitky a integrované, optimalizované účetní operace s využitím integrovaných, vždy dostupných a kontextových cloudových prostředí. Pomocí pokročilého merchandisingu, řízení zásob, distribuovaného řízení objednávek, cen a propagace můžete provádět inovace a zůstat před konkurencí.Získejte přehledy vizualizací a analýzou komplexních a konzistentních dat ve všech aspektech vašeho podnikání. Pomocí technologií založených na umělé inteligenci můžete poskytovat přístupné webové stránky, chránit vaši firmu před podvody s platbami a účinně moderovat obsah generovaný uživateli, jako jsou hodnocení a recenze. 
 
 ## <a name="core-concepts-and-tasks"></a>Základní koncepce a úkoly
 
 Vyberte oblast funkce, o které chcete získat informace.
-- [Konfigurace prostředí vyhodnocení elektronického obchodování](provisioning-guide.md)
-- [Přehled startovací sady obchodu](starter-kit-overview.md)
-- [Přehled doporučení produktu](product-recommendations.md)
-- [Přehled hodnocení a recenzí](ratings-reviews-overview.md)
-- [Přehled šablon a rozvržení](templates-layouts-overview.md)
-- [Přidání a správa obsahu](add-manage-content.md)
-- [Rozšiřitelnost online kanálu](e-commerce-extensibility/overview.md)
+- [Konfigurovat prostředí náhledu Commerce](provisioning-guide.md)
+- [Obchodní architektura](retail-components.md)
+- [Nastavení kanálů](channels-overview.md)
+- [Podpora prodeje vašich produktů a služeb](set-up-retail-products.md)
+- [Správa objednávek](Order-fulfillment-overview.md)
+- [Správa zákazníků](set-up-customer-loyalty-program.md)
+- [Správa financí](retail-statements.md)
+- [Správa webu s elektronickým obchodováním](online-store-overview.md)
+- [Ochrana proti podvodům](dev-itpro/DFP.md)
+- [Vývoj a rozšiřitelnost obchodu](dev-itpro/dev-retail-home-page.md)

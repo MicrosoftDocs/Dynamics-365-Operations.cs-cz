@@ -3,7 +3,7 @@ title: Blokování zásob
 description: Toto téma poskytuje přehled blokování zásob, které je součástí vlastního procesu kontroly kvality v aplikaci Supply Chain Management. Blokování zásob můžete použít pro zabránění zpracování nebo spotřeby položek.
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41fbe6e2034c0e58fc03d1dfbbd87844f3a4466
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e1a870936619d07db01d5a8fe83b3fab73693187
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814368"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971480"
 ---
 # <a name="inventory-blocking"></a>Blokování zásob
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek poskytuje přehled blokování zásob, které je součástí vlastního procesu kontroly kvality v aplikaci Supply Chain Management. Blokování zásob můžete použít pro zabránění zpracování nebo spotřeby položek.
+Toto téma poskytuje přehled blokování zásob, které je součástí vlastního procesu kontroly kvality v aplikaci Supply Chain Management. Blokování zásob můžete použít pro zabránění zpracování nebo spotřeby položek.
 
 Skladové položky lze blokovat následujícími způsoby:
 -   Ručně
@@ -43,6 +43,9 @@ Množství položky je možné blokovat tak, že vytvoříte transakci na strán
 
 ## <a name="blocking-items-by-creating-a-quality-order"></a>Blokování položek vytvořením objednávky kvality
 Je možné zadání položek, které musí být kontrolovány pro vytváření objednávky kvality na stránce **Objednávky kvality**. Při vytváření objednávky kvality je blokováno množství položek, které zadáte. Plán vzorkování, který je spojený s objednávkou kvality, řídí pouze množství položek, které musí být zkontrolovány, nikoli množství, které je blokováno. Bez ohledu na množství, které bude odesláno ke kontrole podle plánu vzorkování, bude blokováno množství položek, které je zadáno v objednávce kvality.
+
+> [!NOTE]
+> Hlavní plánování nepodporuje použití funkcí data vypršení platnosti dávky a blokování stavu zásob. To může vést k dvojímu vyloučení množství na skladě, ke kterému může dojít při hlavním plánování. Doporučujeme, abyste při blokování dávek s ukončenou platností spoléhali na kódy dispozice dávky namísto stavu zásob.
 
 ## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Blokování položek pomocí procesu, který generuje objednávku kvality
 Pokud množství položek uvádí, že je nutné položku zkontrolovat, je množství položek blokováno automaticky. Proto při automatickém generování objednávky kvality řídí vzorkovací položka, která je spojena s objednávkou kvality, počet blokovaných položek a nejen množství položek, které budou zkontrolovány. Je-li vybrána možnost **Úplné blokování** na stránce **Vzorkování položek**, celé množství, například řádek nákupní objednávky, bude blokováno při inventuře bez ohledu na množství vzorkování položky.

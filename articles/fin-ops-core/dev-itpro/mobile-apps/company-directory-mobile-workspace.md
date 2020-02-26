@@ -10,17 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Talent
+ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5a96955b72fcc5b0e2975f4bb1e619062be33e20
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 445a2872dcd0e4d3aca9a50c7539fdabb0ed7818
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248750"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005579"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilní pracovní prostor adresáře společnosti
 
@@ -53,11 +53,11 @@ Před použitím tohoto mobilního pracovního prostoru musí být splněny nás
 <tr class="odd">
 <td>Jeden z následujících produktů musí být nasazen ve vaší organizaci:
 <ul><li>Aplikace Finance and Operations</li>
-<li>Microsoft Dynamics 365 Talent</li>
+<li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Správce systému</td>
-<td>Pokud nemáte ve své organizaci nasazenou aplikaci Finance and Operations, nahlédněte do tématu <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí</a>. Pokud nemáte již ve své organizaci nasazenou aplikaci Talent, správce systému může přistupovat ke zkušební verzi z <a href="https://www.microsoft.com/dynamics365/talent">webové stránky Talent</a>.
+<td>Pokud nemáte &#39;ve své organizaci nasazenou aplikaci Finance and Operations, nahlédněte do tématu <a href="../deployment/deploy-demo-environment.md">Nasazení ukázkového prostředí</a>. Pokud nemáte již &#39;ve své organizaci nasazenou aplikaci Human Resources, správce systému může přistupovat ke zkušební verzi z <a href="https://dynamics.microsoft.com/human-resources/overview/">webové stránky Human Resources</a>.
 </td>
 </tr>
 <tr class="even">
@@ -69,7 +69,7 @@ Před použitím tohoto mobilního pracovního prostoru musí být splněny nás
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Stáhněte a nainstalujte mobilní aplikaci
-Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
+Stáhněte a nainstalujte mobilní aplikaci Finance and Operations:
 
 -   [Pro telefony Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Pro telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

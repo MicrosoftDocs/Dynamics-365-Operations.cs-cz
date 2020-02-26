@@ -1,5 +1,5 @@
 ---
-title: Přehled prostředí náhledu Commerce
+title: Přehled prostředí Preview aplikace Dynamics 365 Commerce
 description: Toto téma poskytuje přehled o prostředí náhledu v řešení Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 901583afde4739be5313fa129ff0e52f11326881
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 1ff96aeb5963df9ddee56783a089dad129bbb71c
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906063"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024676"
 ---
-# <a name="commerce-preview-environment-overview"></a>Přehled prostředí náhledu Commerce
+# <a name="dynamics-365-commerce-preview-environment-overview"></a>Přehled prostředí Preview aplikace Dynamics 365 Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled o prostředí náhledu v řešení Microsoft Dynamics 365 Commerce.
@@ -52,10 +52,10 @@ Chcete-li zřizovat prostředí pro náhled Commerce, získáte informace v čá
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Zřízení prostředí náhledu Commerce](provisioning-guide.md)
+[Zřízení prostředí Preview aplikace Dynamics 365 Commerce](provisioning-guide.md)
 
-[Konfigurovat prostředí náhledu Commerce](cpe-post-provisioning.md)
+[Konfigurace prostředí Preview aplikace Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Nastavení volitelných funkcí pro prostředí náhledu Commerce](cpe-optional-features.md)
+[Konfigurace volitelných funkcí pro prostředí Preview aplikace Dynamics 365 Commerce](cpe-optional-features.md)
 
-[Často kladené dotazy k prostředí náhledu Commerce](cpe-faq.md)
+[Často kladené dotazy k prostředí Preview aplikace Dynamics 365 Commerce](cpe-faq.md)

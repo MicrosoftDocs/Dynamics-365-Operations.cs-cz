@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc68289514dc3b201b423091c92fa128d3065707
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536794"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002536"
 ---
 # <a name="view-and-design-financial-reports"></a>Zobrazení a navržení finančních sestav
 
@@ -172,8 +172,8 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 3. Kliknutím na nabídku **Soubor**, pak **Nový** a pak **Definice sloupce** vytvoříte novou definici sloupce .
 4. Ve **sloupci A** vyberte **DESC** jako typ sloupce.
 5. Ve **sloupci B** vyberte **FD** jako typ sloupce.
-6. Poklepejte na pole **Filtr dimenze**.
-7. V okně **Dimenze** poklepejte na sloupec **Oddělení**.
+6. Dvakrát klikněte na pole **Filtr dimenze**.
+7. V okně **Dimenze** dvakrát klikněte na sloupec **Oddělení**.
 8. V části Jednotlivec nebo rozsah dialogového okna klikněte **elipsu** pole **Od**, abyste zobrazili seznam oddělení.
 9. Vyberte oddělení **022**, **Prodej a marketing** a klikněte na tlačítko **OK**.
 10. Zopakujte kroky 5 až 8 pro oddělení 23–25.
@@ -197,4 +197,4 @@ V tomto cvičení budete vytvářet novou sestavu. Sestava je výkaz příjmu od
 
 [Zobrazení finančních sestav](../../../finance/general-ledger/view-financial-reports.md)
 
-[Blog o finančním výkaznictví v Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blog o finančním výkaznictví v Dynamics](https://blogs.msdn.com/b/dynamics_financial_reporting/)

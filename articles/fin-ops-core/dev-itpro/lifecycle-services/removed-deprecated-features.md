@@ -1,9 +1,9 @@
 ---
 title: Odstraněné nebo zastaralé funkce v Lifecycle Services (LCS)
 description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstraněníz Microsoft Dynamics Lifecycle Services (LCS).
-author: sericks007
+author: AngelMarshall
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -12,15 +12,15 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: tsmarsha
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c792d06e9b0aa42919de924bdcc9118358779b72
-ms.sourcegitcommit: 75bbcff474cfb8d2f282be2b9d2d7984d1505fa3
+ms.openlocfilehash: 96ecd040ef8661765c0a3861d8e07fee3c241161
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885448"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027973"
 ---
 # <a name="removed-or-deprecated-features-in-lifecycle-services-lcs"></a>Odstraněné nebo zastaralé funkce v Lifecycle Services (LCS)
 
@@ -53,7 +53,7 @@ Tento seznam je poskytnut, aby vám pomohl zvážit tyto odstraněné a zastaral
 </tr>
 <tr>
 <td><strong>Stav</strong></td>
-<td>Zastaralé: očekává se, že součást vývojových diagramů v BPM bude odstraněna počátkem února 2020. Dojde k odebrání těchto funkcí:
+<td>Zastaralé: očekává se, že součást vývojových diagramů v BPM bude odstraněna během roku 2020. Dojde k odebrání těchto funkcí:
 <ul>
 <li>Existující vývojové diagramy nebudou k dispozici pro zobrazení nebo úpravy. Vlastnosti obrazce, které jsou přidruženy k aktivitám vývojového diagramu, nebudou také k dispozici, protože bude odebrána celá karta <strong>vývojového diagramu</strong>. Tyto vývojové diagramy zahrnují jak výchozí vývojové diagramy, které jsou automaticky generovány, a přizpůsobené vývojové diagramy, které jsou upraveny na základě těchto výchozích vývojových diagramů.</li>
 <li>Tato funkce analýzy přizpůsobení a mezer nebude k dispozici. Proto nebude automaticky vytvořen nebo k dispozici pro export žádný seznam mezer.

@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 31307035014f2fae6146f33bc23e3e06103f82eb
-ms.sourcegitcommit: c237123ad94d9418994ac095fbd8634c05a927b1
+ms.openlocfilehash: 069fa1cb6acad4b8d6618cebb754cbc0892ca9cf
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2943256"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025941"
 ---
 # <a name="product-collection-modules"></a>Moduly kolekce produktů
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je uveden přehled modulů kolekcí produktů v aplikaci Microsoft Dynamics 365 Commerce.
@@ -39,7 +39,7 @@ Moduly kolekcí produktů představují fyzické produkty a služby na webu. Mod
 
 Zdroje pro kolekce produktů mohou být seznamy následujících čtyř typů:
 
-- Redakční seznamy produktů, které jsou ručně definovány v Dynamics 365 Retail jako související produkty pro produkt nebo seznamy produktů
+- Redakční seznamy produktů, které jsou ručně definovány v Dynamics 365 Commerce jako související produkty pro produkt nebo seznamy produktů
 - Algoritmy, jako jsou seznamy nových, nejlépe prodávaných a trendových produktů
 - Seznamy doporučení na základě strojového učení
 - Seznamy přizpůsobení, které podporují individuální výsledky pro odběratele. K zobrazení individuálních výsledků je nutné, aby byli zákazníci přihlášeni k webu e-Commerce. Uživatelé typu Host nevidí individuální výsledky. Zákazníci se mohou odhlásit z vlastního nastavení na [stránce správy účtů](account-management.md).
@@ -57,9 +57,10 @@ V následující tabulce jsou popsány různé typy modulů kolekcí produktů v
 
 | Modul kolekce produktů  | Typ | Popis |
 |----------------------------|------|-------------|
-| Kategorie                   | Kategorie | Tento modul zobrazuje seznam produktů v kategorii dle definice hierarchií kategorií navigace, kterou prodejce vytvořil pro maloobchodní kanál. |
-| Související produkty           | Redakční | Tento modul zobrazuje seznam produktů, které správce zboží nakonfiguroval jako související produkty v maloobchodě, pro typ vztahu vybraný autorem. |
-| Seznam doporučených produktů      | Redakční | Tento modul zobrazuje vlastní seznamy, které prodejci a redaktori vytvořili v aplikaci Retail. |
+| Kategorie                   | Kategorie | Tento modul zobrazuje seznam produktů v kategorii dle definice hierarchií kategorií navigace, kterou prodejce vytvořil pro kanál. |
+| Související produkty           | Redakční | Tento modul zobrazuje seznam produktů, které správce zboží nakonfiguroval jako související produkty ve velkoobchodě, pro typ vztahu vybraný autorem. |
+| Výsledky hledání             | Vyhledávání | Tento typ modulu kolekce produktů zobrazuje seznam produktů, které nejlépe vyhovují vyhledávacímu dotazu zadanému odběratelem. |
+| Seznam doporučených produktů      | Redakční | Tento modul zobrazuje vlastní seznamy, které prodejci a redaktori vytvořili v aplikaci Commerce. |
 | Nové                        | Algoritmický | Tento modul zobrazuje seznam nejnovějších produktů, které byly roztříděny do kanálů a katalogů. Tento seznam může zobrazit individuální výsledky pro přihlášeného uživatele, pokud tuto možnost zvolí autor webu. |
 | Nejprodávanější               | Algoritmický | Tento modul zobrazuje seznam produktů, které jsou seřazeny podle nejvyššího počtu prodejů. Tento seznam může zobrazit individuální výsledky pro přihlášeného uživatele, pokud tuto možnost zvolí autor webu. |
 | Trendy                   | Algoritmický | Tento modul zobrazuje seznam nejprodávanějších produktů za dané období. Tento seznam může zobrazit individuální výsledky pro přihlášeného uživatele, pokud tuto možnost zvolí autor webu. |
@@ -76,7 +77,6 @@ Přidání modulu kolekce produktů do stránky kategorie provedete následovně
 1. V dialogovém okně **Přidat modul** vyberte **Kontejner** a pak vyberte možnost **OK**.
 1. V modulu kontejner vyberte tlačítko se třemi tečkami a poté vyberte možnost **Přidat modul**.
 1. V dialogovém okně **Přidat modul** vyberte **Kolekce produktů** a pak vyberte možnost **OK**.  
-![Ukázkový tok průvodce modulem kolekce produktů](./media/productCollectionModule.png)
 1. Nakonfigurujte nastavení výběrem odpovídajícího zdroje dat a vstupů pro kolekci produktů.
 1. V podokně vlastnosti modulu kolekce produktů vyberte možnost **Přidat seznam produktů**.
 1. V dialogovém okně **Vybrat konfiguraci seznamu produktů** vyberte typ seznamu, zadejte počet položek a vyberte libovolné další možnosti, které jsou k dispozici pro daný typ seznamu. Další informace o typech seznamu naleznete v následující tabulce. 
@@ -88,8 +88,8 @@ V následující tabulce jsou uvedeny typy seznamů, které jsou k dispozici pro
 | Typ                       | Popis | Použití | Kontext stránky | Specifický kontext | Individuální nastavení |
 |----------------------------|-------------|-------|--------------|------------------|-----------------|
 | Produkty podle kategorie       | Seznam produktů, které patří do dané kategorie. Tato kategorie je určena buď kontextem stránky, nebo kontextem, který autor poskytuje. | Tento typ seznamu lze použít na libovolné stránce (například na domovské stránce, na stránce kategorií, na marketingové stránce nebo na stránce s podrobnými informacemi o produktech \[PDP\]) k propagaci určité kategorie produktů. | Kategorie z kontextu stránky, kde je k dispozici (například stránka kategorie) | Autor může zadat specifickou kategorii jako kontext pro seznam. | Nelze použít |
-| Související produkty           | Seznam produktů, které manažer prodeje nakonfiguroval jako související produkt pro typ vztahu v aplikaci Retail. | Tento typ seznamu se primárně používá v PDP, ale lze jej použít na libovolné stránce, pokud je k dispozici nadřazený produkt. | Produkt ze stránky, typ vztahu (povinný) | Produkt lze zvolit ve výběru a je použit typ vztahu. | Nelze použít |
-| Uspořádáno                    | Vlastní seznam, který prodejci a redaktori vytvořili v aplikaci Retail. | Stránka rozšířené kategorie, domovská stránka, rezervace a stránky s košíkem a stránky s produktem | Nelze použít | Nelze použít | Nelze použít |
+| Související produkty           | Seznam produktů, které manažer prodeje nakonfiguroval jako související produkt pro typ vztahu v aplikaci Commerce. | Tento typ seznamu se primárně používá v PDP, ale lze jej použít na libovolné stránce, pokud je k dispozici nadřazený produkt. | Produkt ze stránky, typ vztahu (povinný) | Produkt lze zvolit ve výběru a je použit typ vztahu. | Nelze použít |
+| Uspořádáno                    | Vlastní seznam, který prodejci a redaktori vytvořili v aplikaci Commerce. | Stránka rozšířené kategorie, domovská stránka, rezervace a stránky s košíkem a stránky s produktem | Nelze použít | Nelze použít | Nelze použít |
 | Algoritmický                | <ul><li>**Nový** – seznam nejnovějších produktů, které byly roztříděny do kanálů a katalogů.</li><li>**Nejprodávanější** – seznam produktů, které jsou seřazeny podle nejvyššího počtu prodejů.</li><li>**Trendující** – seznam nejprodávanějších produktů za dané období.</li></ul> | Domovská stránka, stránka rozšířené kategorie a stránky s pokladnou a košíkem | Kategorie z kontextu stránky (například stránka kategorie) | Kategorie určená autorem webu. | Podporováno |
 | Často nakupované společně | Seznam. který používá strojní učení k analýze zákaznických vzorků a doporučí související položky, které jsou často nakoupeny spolu s daným produktem. | Tento typ seznamu lze použít pouze na stránce nákupního košíku. | Košík | Nelze použít | Podporováno |
 | Lidem se též líbí           | Seznam. který používá strojní učení k analýze zákaznických vzorků a doporučí položky, které souvisí s daným produktem. | Tento typ seznamu se používá v PDPs k zobrazení produktů zakoupených jinými zákazníky. | Kontext produktu ze stránky | Produkt poskytnutý autorem webu. | Podporováno |
@@ -102,8 +102,6 @@ V následující tabulce jsou uvedeny typy seznamů, které jsou k dispozici pro
 [Karuselový modul](add-carousel.md)
 
 [Modul bloku bohatého na obsah](add-content-rich-block.md)
-
-[Modul umístění obsahu](add-content-placement-modules.md)
 
 [Modul kontejneru](add-container-module.md)
 

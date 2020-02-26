@@ -3,7 +3,7 @@ title: Práce s fragmenty
 description: V tomto tématu jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 32482538b2913e6585257bcf7a1cbe780d3cdd30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914693"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026033"
 ---
 # <a name="work-with-fragments"></a>Práce s fragmenty 
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 V tomto tématu jsou popsány důvody, kdy a jak používat fragmenty v aplikaci Microsoft Dynamics 365 Commerce.
@@ -57,25 +57,34 @@ Na následujícím obrázku je znázorněno, jak lze fragmenty použít k centra
 
 Můžete vytvořit nový fragment nebo uložit existující konfiguraci modulu jako fragment.
 
+### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Uložit existující konfiguraci modulu jako fragment
+
+Chcete-li převést dříve konfigurovaný modul na opakovaně použitelný fragment, postupujte následujícím způsobem.
+
+1. Otevřete stránku nebo šablonu obsahující modul, který chcete převést na fragment.
+1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami (**...**) vedle názvu modulu. 
+1. Vyberte možnost **Sdílet jako fragment**. 
+1. Zobrazí se dialogové okno. Zadejte název a metadata fragmentu.
+1. Chcete-li uložit konfiguraci modulu jako fragment, který lze přidat na jiné stránky, klepněte na tlačítko **OK**.
+
+Následující obrázek ukazuje, jak uložit konfiguraci modulu jako fragment.
+
+![Obrazovka, která popisuje uložení konfigurace modulu jako fragment](./media/save-as-fragment.png)
+
 ### <a name="create-a-new-fragment"></a>Vytvořit nový fragment
 
 Při vytváření nového fragmentu postupujte takto:
 
 1. V navigačním podokně nalevo vyberte položku **Fragmenty**.
 1. Zvolte **Nový fragment stránky**. Zobrazí se dialogové okno s informacemi o všech dostupných typech modulů. Jak bylo zmíněno dříve, fragmenty mohou být vytvořeny z libovolného typu modulu.
-1. Vyberte typ modulu pro svůj fragment a poté klepněte na tlačítko **OK**.
+1. Vyberte typ modulu pro váš fragment.
 
-    > [!TIP]
-    > Výběrem generického typu kontejnerového modulu získáte maximální pružnost při aktualizaci a konfiguraci fragmentu později.
+Na následujícím obrázku je znázorněno, kde je možné vytvořit nový fragment.
 
-### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Uložit existující konfiguraci modulu jako fragment
+![Obrazovka, na které se má vytvořit nový fragment](./media/fragment-nav-menu.png)
 
-Chcete-li převést dříve konfigurovaný modul na opakovaně použitelný fragment, postupujte následujícím způsobem.
-
-1. Otevřete stránku nebo šablonu obsahující modul, který chcete převést na fragment.
-1. V podokně osnovy vlevo vyberte tlačítko se třemi tečkami (**...**) vedle názvu modulu a pak vyberte možnost **Uložit jako fragment.** Zobrazí se dialogové okno.
-1. Zadejte název a metadata fragmentu.
-1. Chcete-li uložit konfiguraci modulu jako fragment, který lze přidat na jiné stránky, klepněte na tlačítko **OK**.
+> [!TIP]
+> Výběrem generického typu kontejnerového modulu získáte maximální pružnost při aktualizaci a konfiguraci fragmentu později.
 
 ## <a name="add-remove-or-edit-fragments-on-a-page"></a>Přidání, odebrání nebo úprava fragmentů na stránce
 
@@ -88,11 +97,15 @@ Chcete-li přidat fragment na stránku, postupujte takto:
 1. V podokně osnovy vlevo vyberte kontejner nebo slot, do kterých lze přidávat podřízené moduly.
 1. Vyberte tlačítko se třemi tečkami názvu kontejneru nebo slotu a poté vyberte možnost **Přidat fragment**. Zobrazí se dialogové okno.
 
+    ![Snímek obrazovky s postupem přidání existujícího fragmentu do patice nebo do kontejneru.](./media/add-fragment.png)
+ 
     > [!NOTE]
     > Pokud kontejner nebo slot nepodporuje nové podřízené moduly, nebude možnost **Přidat fragment** k dispozici.
-
+    
 1. V dialogovém okně vyhledejte a vyberte fragment, který chcete přidat. Nejsou-li v seznamu uvedeny žádné fragmenty, bude pravděpodobně nutné nejprve vytvořit fragment z typu modulu, který podporuje vybraný kontejner nebo slot.
-1. Výběrem tlačítka **OK** přidáte vybraný fragment do vybraného kontejneru nebo slotu na stránce.
+1. Výběrem přidáte požadovaný fragment do vybraného kontejneru nebo slotu na stránce.
+
+    ![Zachycení obrazovky pro výběr modálního okna fragmentu](./media/fragment-picker.png)
 
 > [!NOTE]
 > Moduly, které jsou povoleny v kontejneru nebo slotu, jsou definovány šablonou stránky nebo vlastními definicemi modulů.

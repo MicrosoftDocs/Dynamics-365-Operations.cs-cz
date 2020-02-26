@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 45a2335d7a661ddc1d8907c56ae8193387f44e26
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771391"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030859"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Určení umístění vlastního úložiště pro vygenerované dokumenty
 
@@ -56,7 +56,7 @@ V aktuální topologii [vytvořte nový formát elektronického výkaznictví](t
 
 Chcete-li určit, jak jsou směrovány dokumenty, které generují formát elektronického výkaznictví, musíte nakonfigurovat [místa určení elektronického výkaznictví](electronic-reporting-destinations.md). V každém cílovém umístění elektronického výkaznictví, které je nakonfigurováno pro ukládání generovaných dokumentů jako souborů, musíte zadat typ dokumentu v rámci architektury správy dokumentů. Různé typy dokumentů mohou být použity pro směrování dokumentů, které různé formáty elektronického výkaznictví generují.
 
-1. Přidejte nový [typ dokumentu](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) pro formát elektronického výkaznictví, který jste předtím vytvořili, nebo importovali. Na následujícím obrázku je typ dokumentu **FileX**.
+1. Přidejte nový [typ dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) pro formát elektronického výkaznictví, který jste předtím vytvořili, nebo importovali. Na následujícím obrázku je typ dokumentu **FileX**.
 2. Chcete-li tento typ dokumentu odlišit od jiných typů dokumentů, zahrňte do jeho názvu konkrétní klíčové slovo. Například v následujícím příkladu je název **složka (LOCAL)**.
 3. V poli **Třída** určete **Připojit soubor**.
 4. V poli **Skupina** určete **Soubor**.
@@ -70,7 +70,7 @@ Chcete-li určit, jak jsou směrovány dokumenty, které generují formát elekt
 
 Zkontrolujte kód metody **insertFile()** třídy **ERDocuManagement**. Všimněte si, že událost **AttachingFile()** je vyvolána během připojování generovaného souboru k záznamu.
 
-```
+```xpp
 /// <summary>
 /// Inserts file as attachment in Document Management.
 /// </summary>
@@ -131,7 +131,7 @@ Je vyvolána událost **AttachingFile()**, když jsou zpracována následující
     1. Uložte generované soubory do složky místního systému souborů serveru, který spouští službu Aplikační objektový server (AOS).
     2. Tyto generované soubory ukládejte pouze tehdy, když se používá nový typ dokumentu (například **FileX**, který má klíčové slovo "(LOCAL)" ve svém názvu), zatímco soubor je připojen k záznamu v protokolu úlohy provedení elektronického výkaznictví.
 
-    ```
+    ```xpp
     class ERDocuSubscriptionSample
     {
         void new()

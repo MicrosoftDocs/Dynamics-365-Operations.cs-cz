@@ -3,7 +3,7 @@ title: Přidání seznamů doporučení produktů na stránky
 description: V tomto tématu je vysvětleno, jak přidat seznam doporučení produktů na stránku elektronického obchodu.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,26 +19,26 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4f2b1e9768b34d341adb3c11e475daa7a1d1882f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5c71c1cf91b1913f44546f40620aff358cf256b2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770498"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001293"
 ---
-# <a name="add-product-recommendation-lists-to-e-commerce-pages"></a>Přidání seznamů doporučení produktů na stránky elektronického obchodu
+# <a name="add-recommendation-lists-to-a-site"></a>Přidání seznamů doporučení na web
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak přidat seznam doporučení produktů na stránku elektronického obchodu.
 
-1. Z existující stránky pro vytváření obsahu elektronického obchodu vyberte možnost **Přidat modul**.
+1. Z existující stránky pro vytváření webu elektronického obchodu vyberte možnost **Přidat modul**.
 2. Vyhledejte modul **kolekce produktů**.
 3. V modulu průvodce vyberte seznam, který chcete přidat na stránku.
 4. Uložte změny.
 
-Další informace o typech seznamů, které lze přidat na stránku, naleznete v tématu [Přehled doporučení produktů](product-recommendations.md).
+Další informace o typech seznamů, které lze přidat na stránku, naleznete v tématu [Přehled modulu kolekce produktů](product-collection-module-overview.md).
 
 
 ## <a name="additional-resources"></a>Další zdroje
@@ -50,3 +50,5 @@ Další informace o typech seznamů, které lze přidat na stránku, naleznete v
 [Vytvoření seznamů doporučení vybraných produktů](create-editorial-recommendation-lists.md)
 
 [Správa výsledků doporučení produktů na základě umělé inteligence a strojového učení](modify-product-recommendation-results.md)
+
+[Přehled modulu kolekce produktů](product-collection-module-overview.md)

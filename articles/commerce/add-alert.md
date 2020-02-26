@@ -1,9 +1,9 @@
 ---
-title: Modul výstrahy
-description: Tohle téma se zabývá moduly výstrahy a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+title: Modul propagačního banneru
+description: Tohle téma se zabývá moduly propagačního banneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,55 +18,66 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 82138dd7f0934f732215f67a3726638eb87075d4
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: da5e220e4578d1064eb7b627b441d3f585b3c095
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785345"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025613"
 ---
-# <a name="alert-module"></a>Modul výstrahy
+# <a name="promo-banner-module"></a>Modul propagačního banneru
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Tohle téma se zabývá moduly výstrahy a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
+Tohle téma se zabývá moduly propagačního banneru a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
-Modul výstrahy slouží k zobrazení vložených informačních zpráv na stránce. Moduly výstrah podporují textové zprávy a odkazy. Lze je použít k zobrazení promoakcí v rámci celého webu, které se zobrazí na všech stránkách webu elektronického obchodu. 
+Moduly propagačního banneru slouží k zobrazení vložených informačních zpráv na stránce. Lze je použít k zobrazení promoakcí v rámci celého webu, které se zobrazí na všech stránkách webu elektronického obchodu. 
 
-Moduly výstrah jsou řízeny daty ze systému správy obsahu (CMS) a lze je umístit na libovolnou stránku.
+Moduly propagačního banneru podporují textové zprávy a odkazy. Je-li do modulu propagačního banneru přidáno více zpráv, stane se bannerem rotujících karuselů, které umožňují zákazníkům cyklicky procházet všechny zprávy. 
 
-## <a name="examples-of-alert-modules-in-e-commerce"></a>Příklady modulů výstrah v elektronickém obchodu
+Moduly propagačního banneru jsou řízeny daty ze systému správy obsahu (CMS) a lze je umístit na libovolnou stránku.
 
-Moduly výstrah lze použít v záhlaví webu, kde označují promoakce nebo zprávy na úrovni celého webu. Několik příkladů:
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Příklady použití propagačního banneru v e-Commerce
+
+Reklamní bannery mohou být použity v záhlaví pracoviště pro zobrazení promoakcí a zpráv na úrovni celého pracoviště, jak je uvedeno v následujících příkladech.
 
 „Výroční výprodej končí za 10 dnů“
 
 „Ušetřete v předškolním výprodeji. Pusťte se do nakupování.“
 
-## <a name="alert-module-properties"></a>Vlastnosti modulu výstrahy
+## <a name="promo-banner-module-properties"></a>Vlastnosti modulu propagačního banneru
 
-| Název vlastnosti  | Hodnota                              | Popis |
-|----------------|------------------------------------|-------------|
-| Text           | Text                               | Textová zpráva, která se zobrazí v modulu výstrahy. |
-| Zarovnání textu | **Vpravo**, **vlevo** nebo **uprostřed** | Hodnota definující zarovnání textu v modulu výstrahy. |
-| Zamítnout výstrahu  | **Pravda** nebo **nepravda**              | Je-li tato hodnota nastavena na hodnotu **pravda**, zákazník může výstrahu zavřít. |
-| Připojení           | Adresa URL                                | Adresa URL pro volitelný odkaz. |
+| Název vlastnosti             | Value                              | Popis |
+|---------------------------|------------------------------------|-------------|
+| Bannerové zprávy           | Text a odkazy                     | Pole textu a odkazů. |
+| Přehrát automaticky                  | **Pravda** nebo **nepravda**              | Hodnota, která určuje, zda jsou zprávy automaticky cyklicky procházeny, pokud je konfigurováno více zpráv. |
+| Interval přechodu snímků | Počet milisekund (MS)      | Interval, který se používá pro procházení zpráv. |
+| Povolit zavření             | **Pravda** nebo **nepravda**              | Je-li tato hodnota nastavena na hodnotu **pravda**, zákazníci mohou výstrahu zavřít. |
+| Zobrazit páku karuselu     | **Pravda** nebo **nepravda**              | Hodnota, která určuje, zda se mají zobrazit páky karuselu, aby zákazníci mohli ručně cyklovat více položek banneru. |
+| Zarovnání textu            | **Vpravo**, **vlevo** nebo **uprostřed** | Zarovnání textu v modulu propagačního banneru. |
+| Připojení                      | Adresa URL                              | Adresa URL pro volitelný odkaz. |
 
-## <a name="add-an-alert-module-to-a-page"></a>Přidání modulu výstrahy na stránku 
+## <a name="add-a-promo-banner-module-to-a-page"></a>Přidání modulu propagačního banneru na novou stránku 
 
-Chcete-li přidat modul výstrahy na stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
+Chcete-li přidat modul propagačního banneru na stránku a nastavit požadované vlastnosti, postupujte následujícím způsobem.
 
-1. Vytvořte šablonu stránky s názvem **Šablona výstrahy**.
-1. V pozici **Hlavní** na výchozí stránce přidejte modul výstrahy.
+1. Vytvořte šablonu stránky s názvem **Šablona propagačního banneru**.
+1. V části **Osnova stránky** přidejte modul **Výchozí stránka** do slotu **Hlavní část**. 
 1. Vraťte šablonu se změnami a publikujte ji. 
-1. Šablonu výstrahy, kterou jste právě vytvořili, použijte pro vytvoření stránky s názvem **Stránka výstrahy**. 
-1. V pozici **Hlavní** nové stránky přidejte modul výstrahy.
-1. V nastavení modulu výstrahy zadejte text výstrahy. Chcete-li dále upravit modul výstrahy, můžete upravit ostatní vlastnosti.
-1. Uložte stránku a zobrazte náhled. V horní části stránky by se měla zobrazit výstraha obsahující text, který jste přidali.
-1. Vraťte stránku se změnami a publikujte ji. 
+1. Šablonu, kterou jste právě vytvořili, použijte pro vytvoření stránky s názvem **Stránka propagačního banneru**. 
+1. V úseku **Hlavní** nové stránky přidejte modul kontejneru. 
+1. V podokně napravo nastavte hodnotu **šířka** na **Vyplnit kontejner**.
+1. V části **Osnova stránky** stránky přidejte do modulu kontejneru modul propgačního banneru.
+1. V nastavení pro modul propgačního banneru přidejte jednu nebo více zpráv banneru. Každá zpráva může obsahovat text spolu s odkazem. Chcete-li dále upravit modul propgačního banneru, můžete upravit ostatní vlastnosti.
+1. Uložte stránku a zobrazte náhled. V horní části stránky by se měla zobrazit výstraha zobrazující text, který jste přidali.
+1. Dokončete úpravy stránky a publikujte ji. 
+
+> [!NOTE]
+> Propagační banner se obvykle používá v patici záhlaví stránky nebo v pozici dílčího hlavního záhlaví.
+
 
 ## <a name="additional-resources"></a>Další zdroje
 
@@ -74,12 +85,8 @@ Chcete-li přidat modul výstrahy na stránku a nastavit požadované vlastnosti
 
 [Karuselový modul](add-carousel.md)
 
-[Modul bloku s formátovaným obsahem](add-content-rich-block.md)
+[Modul textového bloku](add-content-rich-block.md)
 
-[Modul umístění obsahu](add-content-placement-modules.md)
+[Modul bloku obsahu](add-hero-module.md)
 
-[Propagační modul](add-feature-module.md)
-
-[Modul hlavního banneru ](add-hero-module.md)
-
-[Modul přehrávače videa](add-video-player.md)
+[Modul videopřehrávače](add-video-player.md)

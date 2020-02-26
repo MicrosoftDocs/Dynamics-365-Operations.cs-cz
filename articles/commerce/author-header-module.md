@@ -1,9 +1,9 @@
 ---
 title: Modul záhlaví
-description: Toto téma popisuje moduly záhlaví a popisuje, jak je vytvořit v řešení Microsoft Dynamics 365 Commerce.
+description: Toto téma popisuje moduly záhlaví a popisuje, jak vytvořit moduly záhlaví v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,60 +17,60 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cc98419077f6f563ea2265d4e68ba809971cfbd6
-ms.sourcegitcommit: ff93b8f6a11993f2cd00be2da7aa77ef0d950ab8
+ms.openlocfilehash: efadd19681bbb21ea5b2b469e55bc6f4b0535046
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885471"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025645"
 ---
 # <a name="header-module"></a>Modul záhlaví
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje moduly záhlaví a popisuje, jak je vytvořit v řešení Microsoft Dynamics 365 Commerce.
+Toto téma popisuje moduly záhlaví a popisuje, jak vytvořit moduly záhlaví v řešení Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
-Modul záhlaví je speciální kontejner, který se používá k hostování všech modulů, které budou zobrazeny v záhlaví stránky. Může například obsahovat logo webu, odkazy na hierarchii navigace, odkazy na další stránky na webu a vyhledávací panel.
+V aplikaci Dynamics 365 Commerce se záhlaví stránky skládá z několika modulů, jako je například záhlaví, navigační nabídka, hledání, reklamní banner a moduly souhlasu se soubory cookie. 
 
-Modul záhlaví je automaticky optimalizován pro zařízení, na kterém je stránka prohlížena (tj. desktopové nebo mobilní zařízení). Například v mobilním zařízení je navigační panel sbalen do tlačítka **Nabídka** (což je někdy nazýváno *hamburgerová nabídka*).
+Modul záhlaví obsahuje logo webu, odkazy na navigační hierarchii, odkazy na další stránky na webu, symbol košíku, symbol požadovaných položek, přihlašovací možnosti a vyhledávací panel. Modul záhlaví je automaticky optimalizován pro zařízení, na kterém je stránka prohlížena (jinými slovy desktopové nebo mobilní zařízení). Například v mobilním zařízení je navigační panel sbalen do tlačítka **Nabídka** (což je někdy nazýváno *hamburgerová nabídka*).
 
-## <a name="properties-of-a-header"></a>Vlastnosti záhlaví
+## <a name="properties-of-a-header-module"></a>Vlastnosti modulu záhlaví
 
-Podobně jako běžné kontejnery podporuje modul záhlaví vlastnosti **nadpis** a **šířka**.
+Modul záhlaví podporuje vlastnosti **Obrázek loga**, **Odkaz na logo** a **Odkazy na můj účet**. 
 
-Modul záhlaví obsahuje více pozic. Obsahuje například pozice pro informační zprávu, navigační nabídku, logo, vyhledávací panel, ikonu vozíku, ikonu seznamu přání a informace o účtu. Každá pozice podporuje určitou sadu modulů.
+Vlastnosti **Obrázek loga** a **Odkaz na logo** se používají k definování loga na stránce. Další informace naleznete v tématu [Přidat logo](add-logo.md). 
+
+Vlastnost **Odkazy na můj účet** lze použít k definování stránek účtů, pro které chce vlastník webu zobrazit v záhlaví rychlé odkazy.
 
 ## <a name="modules-that-are-available-in-a-header-module"></a>Moduly, které jsou k dispozici v modulu záhlaví
 
 Následující moduly lze použít v modulu záhlaví:
 
-- **Navigační nabídka** – Navigační nabídka představuje hierarchii navigace kanálu a další statické navigační odkazy. Hierarchii navigace kanálu lze nakonfigurovat v aplikaci Dynamics 365 Retail. Konfigurované položky jsou pak zobrazeny jako navigace v záhlaví. Kromě toho lze konfigurovat statické navigační odkazy a poskytnout relativní odkazy na jiné stránky na webu elektronického obchodování. Samotné záhlaví lze zarovnat doleva, doprava nebo na střed.
-- **Ikona košíku** – Ikona košíku je speciální ikona, která představuje košík. Je zobrazena v záhlaví a udává počet položek v vozíku. Odkaz na stránku košíku by měl doprovázet ikonu košíku, aby mohli být zákazníci při interakci s ikonou přesměrováni na stránku košíku.
-- **Ikona seznamu přání** – V záhlaví je zobrazena ikona seznamu přání a udává počet přidaných položek do seznamu přání zákazníka. Odkaz na stránku seznamu přání by měl doprovázet tuto ikonu, aby mohli být zákazníci při interakci s ikonou přesměrováni na stránku seznamu přání.
-- **Přihlašovací modul** – V záhlaví se zobrazí přihlašovací modul. Odběratelé se mohou přihlásit nebo registrovat k účtu. Pokud je zákazník již přihlášen, lze tento modul nakonfigurovat tak, aby zobrazoval odkazy na stránku účtu, stránku historie objednávek nebo jinou stránku.
-- **Modul loga** – Tento modul zobrazuje logo, které představuje maloobchodníka a značku. Jedná se o obrázek s odkazem. Odkaz je obvykle konfigurován tak, že přesměruje na domovskou stránku. Zákazníci se tedy mohou rychle vrátit na domovskou stránku z libovolné stránky na webu.
-- **Výstraha** – V záhlaví se zobrazí výstraha, která slouží k zobrazení vložené zprávy, která se vztahuje na všechny stránky na webu. Výstraha může například zobrazovat zprávu, že „Výroční výprodej končí za 2 dny“.
-- **Vyhledávací panel** – Vyhledávací panel umožňuje uživatelům zadat hledané termíny, aby mohli vyhledávat produkty. Modul musí být konfigurován s adresou URL stránky výsledků hledání. Parametr řetězce dotazu lze nakonfigurovat (výchozí hodnota je **„q“**). Vyhledávací panel obsahuje pozici automatických návrhů, kam by měl být přidán modul automatických návrhů.
-- **Automatické návrhy** – Modul automatických návrhů zobrazuje automaticky navrhované výsledky. Může se jednat o tyto výsledky: klíčová slova, produkty nebo kategorie, ve kterých je hledaný výraz nalezen.
+- **Navigační nabídka** – Navigační nabídka představuje hierarchii navigace kanálu a další statické navigační odkazy. Hierarchii navigace kanálu lze nakonfigurovat v aplikaci Dynamics 365 Commerce. Navigační nabídka obsahuje vlastnost **Zdroj navigace**, která se používá k určení položek navigační nabídky serveru Retail a statických položek nabídky jako zdroje. Jsou-li statické položky nabídky určeny jako zdroj, lze poskytnout relativní odkazy na jiné stránky na webu. Konfigurované položky jsou pak zobrazeny jako navigace v záhlaví. 
+- **Vyhledávání** – Vyhledávací modul umožňuje uživatelům zadat hledané termíny, aby mohli vyhledávat produkty. Adresa URL výchozí stránky pro vyhledávání a parametry vyhledávacího dotazu musí být zadány v **Nastavení webu \> Rozšíření**. Modul vyhledávání obsahuje vlastnosti, které umožňují potlačit tlačítko hledání nebo popis podle potřeby. Modul vyhledávání také podporuje možnosti automatického navrhování, například výsledky hledání produktů, klíčových slov a kategorií.
 
-## <a name="create-a-header-module"></a>Vytvoření modulu záhlaví
+## <a name="create-a-header-module-for-a-page"></a>Vytvoření modulu záhlaví stránky
 
 Chcete-li vytvořit modul záhlaví, postupujte následujícím způsobem.
 
-1. Vytvořte fragment stránky, který obsahuje modul záhlaví.
-1. Přidejte moduly do pozic v modulu záhlaví.
-1. Aktualizujte nastavení pro každý modul.
-1. Uložte fragment stránky. 
-1. Vraťte stránku se změnami a publikujte ji.
+1. Vytvořte fragment s názvem **Fragment záhlaví** a do něj přidejte modul kontejneru.
+1. V podokně vlastností modulu kontejner nastavte vlastnost **Šířka** na **Vyplnit kontejner**.
+1. Přidejte moduly propagačních bannnerů a souhlas se soubory cookie do modulu kontejneru.
+1. Do fragmentu přidejte další modul kontejneru a nastavte vlastnost **Šířka** na **Vyplnit kontejner**.
+1. Přidejte modul záhlaví do druhého modulu kontejneru.
+1. Do pozice **Navigační nabídky** modulu záhlaví přidejte modul navigační nabídka. 
+1. V podokně vlastností modulu navigační nabídka konfigurujte vlastnosti modulu navigační nabídka.
+1. Do pozice **Vyhledávání** modulu záhlaví přidejte modul vyhledávání. 
+1. V podokně vlastností modulu vyhledávání konfigurujte vlastnosti modulu vyhledávání. 
+1. Uložte fragment stránky, dokončete úpravy a publikujte ji. 
 
 Chcete-li zajistit, aby se záhlaví zobrazilo na každé stránce, postupujte podle následujících kroků pro všechny šablony stránek, které jsou pro daný web vytvořeny.
 
-1. Na výchozí stránce přidejte do hlavní pozice záhlaví fragment stránky obsahující modul záhlaví.
-1. Uložte šablonu. 
-1. Vraťte šablonu se změnami a publikujte ji.
+1. Do pozice **Hlavní** na výchozí stránce přidejte do záhlaví fragment záhlaví stránky obsahující modul záhlaví.
+1. Uložte šablonu, dokončete úpravy a publikujte ji.
 
 ## <a name="additional-resources"></a>Další zdroje
 

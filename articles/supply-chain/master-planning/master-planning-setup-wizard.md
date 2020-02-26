@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 9d7da31f2df31c7e5cbac73b3232233090ac369e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635119"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031060"
 ---
 # <a name="master-planning-setup-wizard"></a>Průvodce nastavením hlavního plánování
 
@@ -32,9 +32,9 @@ ms.locfileid: "2635119"
 
 Toto téma obsahuje pokyny pro **Průvodce nastavením hlavního plánování**. Vysvětluje způsob výpočtu návrhů parametrů a také obsahuje příklady, které ukazují, jak různé společnosti nastavují hlavní plánování na základě svých obchodních potřeb.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
-[Průvodce nastavením hlavního plánování v aplikaci Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) (zobrazené výše) je zahrnut do [playlistu Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
+[Video Průvodce nastavením hlavního plánování v aplikaci Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) (zobrazené výše) je součástí playlistu [Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), který je k dispozici na YouTube.
 
 
 ## <a name="specific-requirements-of-your-company"></a>Specifické požadavky vaší společnosti
@@ -184,7 +184,7 @@ V průvodci jsou pro výrobce Contoso Manufacturer zadány následující hodnot
 Contoso Retailer je distribuční společností v módním průmyslu. Používá hlavní plánování k výpočtu, kdy by měly být provedeny nákupní objednávky na základě předpokládaného prodeje. Zde jsou některé z jeho charakteristických rysů:
 
 - Contoso Retailer používá prognózu poptávky k předpovědi prodeje. Nákupní objednávky budou plánovány podle prognózy.
-- Maloobchody používají žádanky pro doplnění.
+- Obchody používají žádanky pro doplnění.
 - Doba realizace z hlavního skladu do každého obchodu je přibližně dva týdny pro všechny položky.
 
 V průvodci jsou pro výrobce Contoso Retailer zadány následující hodnoty:
@@ -208,4 +208,4 @@ V průvodci jsou pro výrobce Contoso Retailer zadány následující hodnoty:
     - **Otázka:** „Chcete zahrnout poptávku ze schválených žádanek k doplňování maloobchodních prodejen?“
     - **Odpověď:** „Ano, jak je definováno v tomto hlavním plánu.“ Je zadán **1 den**.
 
-    Společnost Contoso používá schválené žádanky z maloobchodních obchodů k vytvoření plánovaných nákupních objednávek pro doplnění těchto obchodů. Vzhledem k tomu, že hlavní plánování je spuštěno každý den, budou do plánování zahrnuty žádanky z posledního dne.
+    Společnost Contoso používá schválené žádanky ze svých obchodů k vytvoření plánovaných nákupních objednávek pro doplnění těchto obchodů. Vzhledem k tomu, že hlavní plánování je spuštěno každý den, budou do plánování zahrnuty žádanky z posledního dne.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c3a2881ede53e4adfba775b9bb23071468c8f602
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024234"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006510"
 ---
 # <a name="get-started-with-talent"></a>Začínáme s nápovědou pro aplikaci Talent
 
@@ -31,7 +31,7 @@ ms.locfileid: "2024234"
 V aplikaci Microsoft Dynamics 365 Talent lze snadno upravit uživatelské rozhraní a nastavit volby, které učiní software intuitivnější podle vašich potřeb. Toto téma obsahuje odkazy na témata, která poskytují informace o přizpůsobení uživatelského rozhraní podle vašich požadavků. Témata rovněž obsahuje odkazy na informace, které vám pomohou nalézt informace v systému efektivně a přesně. 
 
 > [!NOTE] 
-> Následující tři produkty spolu úzce souvisí: Dynamics 365 Finance; Dynamics 365 Retail a Dynamics 365 Talent. Stejné funkce se mohou objevit ve všech třech produktech. Proto bude v tématech, která primárně souvisí s modulem Retail, název produktu Dynamics 365 Retail. V tématech, která primárně souvisí s aplikací Talent, bude název produktu Dynamics 365 Talent. V tématech, která primárně souvisí se základním produktem, bude název produktu Dynamics 365 Finance. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
+> Následující tři produkty spolu úzce souvisí: Dynamics 365 Finance; Dynamics 365 Commerce a Dynamics 365 Talent. Stejné funkce se mohou objevit ve všech třech produktech. Proto bude v tématech, která primárně souvisí s modulem Commerce, název produktu Dynamics 365 Commerce. V tématech, která primárně souvisí s aplikací Talent, bude název produktu Dynamics 365 Talent. V tématech, která primárně souvisí se základním produktem, bude název produktu Dynamics 365 Finance. Témata týkající se jednoho produktu mohou platit i pro stejné funkce v podobných produktech.
 
 ## <a name="personalizing-talent"></a>Přizpůsobení aplikace Talent 
 Následující témata ukazují, jak nastavit v aplikaci Talent mnoho funkcí, které usnadňují dokončení práce včas. 

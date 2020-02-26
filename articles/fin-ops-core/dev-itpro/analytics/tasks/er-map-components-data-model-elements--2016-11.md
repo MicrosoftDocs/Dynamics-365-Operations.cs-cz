@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9a033853be17d6013daa5550ca9c061198bb0330
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 548f16034ebdf7e0f29e8e89d85aac880f6323a1
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184731"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026233"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>Elektronické vykazování – Mapování komponent vytvořeného formátu na prvky datového modelu (listopad 2016)
 
@@ -98,7 +98,7 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 2. Zavřete stránku.
 
 ## <a name="change-status-of-the-current-version-of-format-configuration"></a>Změna stavu aktuální verze konfigurace formátu
-    * V dalších krocích změníte stav konfigurace formátu ze stavu Návrh na stav Dokončeno, aby byla dostupná pro generování platebních dokumentů.  
+V dalších krocích změníte stav konfigurace formátu ze stavu Návrh na stav Dokončeno, aby byla dostupná pro generování platebních dokumentů.  
 1. Klikněte na položku Změnit stav.
 2. Klikněte na tlačítko Dokončit.
 3. Zadejte nějakou hodnotu do pole Popis.
@@ -108,7 +108,7 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
     * Všimněte si, že je konfigurace uložena jako dokončená verze 1.1: verze 1 formátu založeného na verzi 1 datového modelu.  
 
 ## <a name="define-effective-date-for-completed-version-of-format"></a>Definování data účinnosti dokončené verze formátu
-    * Každou verzi formátu lze konfigurovat jako dostupnou pro použití od určitého data. Je-li více než jedna verze formátu aktivní ke konkrétnímu datu, k použití bude vybrán nejnovější formát (na základě čísla verze). Pro výběr správné verze se používá hodnota data relace.  
+Každou verzi formátu lze konfigurovat jako dostupnou pro použití od určitého data. Je-li více než jedna verze formátu aktivní ke konkrétnímu datu, k použití bude vybrán nejnovější formát (na základě čísla verze). Pro výběr správné verze se používá hodnota data relace.  
 
 ## <a name="restrict-access-to-created-format-from-companies"></a>Omezení přístupu k vytvořenému formátu ze společností
 1. Rozbalte oddíl Kódy ISO zemí/oblastí.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d66cc69da08478ceb931fab594da51bafcacc38
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3fe08b30977b8515ffd8d0acc1fd8f4b3085de93
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185076"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026079"
 ---
 # <a name="er-design-domain-specific-data-model"></a>Elektronické vykazování – návrh datového modelu pro určitou doménu
 
@@ -48,7 +48,7 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc
 4. Klepnutím na tlačítko Dokončit konfiguraci dokončíte vytvoření konfigurace
 
 ## <a name="create-a-data-model"></a>Vytvoření datového modelu
-    * Vytváříte nový datový model pro vybranou konfiguraci. Tato verze konfigurace bude mít stav Koncept.  
+Vytváříte nový datový model pro vybranou konfiguraci. Tato verze konfigurace bude mít stav Koncept.  
 1. Klikněte na možnost Návrhář.
 
 ## <a name="define-the-structure-of-a-party-participating-in-a-payment-process"></a>Definování struktury strany účastnící se v platebním procesu

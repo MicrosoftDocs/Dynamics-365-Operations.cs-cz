@@ -3,7 +3,7 @@ title: Konfigurace schvalovacích procesů ve workflowu
 description: Pomocí následujícího postupu nakonfigurujte vlastnosti schvalovacího procesu.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1f58e227542b1e5ca1235748d14e71bddac826ee
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811374"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983757"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurace schvalovacích procesů ve workflowu
 
@@ -138,11 +138,12 @@ Při schválení, zamítnutí, delegování nebo eskalování dokumentu nebo př
 
 ## <a name="specify-a-final-approver"></a> Určení konečného schvalovatele
 
-Můžete určit konečného schvalovatele scénářů, kde je schvalujícím osoba, která odeslala dokument ke schválení. Chcete-li určit konečného schvalovatele, postupujte takto.
+Můžete určit konečného schvalovatele pro scénáře, kde schvalující je osoba, která dokument odeslala ke schválení a je používáno "zakázat schválení odesílatelem". Chcete-li určit konečného schvalovatele, postupujte takto.
 
-1. V levém podokně klepněte na tlačítko **Pokročilá nastavení**.
-2. Zaškrtněte políčko **Použít konečného schvalovatele**.
-3. V seznamu vyberte uživatele, který bude konečným schvalovatelem.
+1. V editoru workflowu klikněte pravým tlačítkem myši na prvek schválení a výběrem **Vlastnosti** otevřete formulář **Vlastnosti**.
+2. V levém podokně klepněte na tlačítko **Pokročilá nastavení**.
+3. Zaškrtněte políčko **Použít konečného schvalovatele**.
+4. V seznamu vyberte uživatele, který bude konečným schvalovatelem.
 
 ## <a name="set-a-time-limit"></a>Nastavení časového limitu
 

@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 347db3af36521e11dc70d5188dcc54b07efa1fbe
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 07905b9a843eb42d3031dcc80b4e185c122a9e50
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697835"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002928"
 ---
 # <a name="overview-of-cart-and-checkout-pages"></a>Stránky s přehledem košíku a pokladny
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Toto téma poskytuje přehled stránek košíku a pokladny v řešení Microsoft Dynamics 365 Commerce.
@@ -65,11 +65,11 @@ Hlavní část stránky pokladny, v níž jsou shromážděny všechny informace
 
 ### <a name="shipping-address"></a>Dodací adresa
 
-Pokud musí být zboží expedováno, je požadováno dodání adresy. Formát adres pro dodání jednotlivých národních prostředí lze konfigurovat v aplikaci Dynamics 365 Retail. Pokud budou například položky expedovány do Spojených států, musí doručovací adresa obsahovat ulici, stát a PSČ. Některé základní ověření vstupu se provádí pro pole adresy expedice, jako je například ověření alfanumerických znaků, maximální délka a počet. Ačkoli platnost samotné adresy není ověřena, toto ověření lze provést pomocí přizpůsobených služeb třetích stran.
+Pokud musí být zboží expedováno, je požadováno dodání adresy. Formát adres pro dodání jednotlivých národních prostředí lze konfigurovat v aplikaci Dynamics 365 Commerce. Pokud budou například položky expedovány do Spojených států, musí doručovací adresa obsahovat ulici, stát a PSČ. Některé základní ověření vstupu se provádí pro pole adresy expedice, jako je například ověření alfanumerických znaků, maximální délka a počet. Ačkoli platnost samotné adresy není ověřena, toto ověření lze provést pomocí přizpůsobených služeb třetích stran.
 
 Dodací adresa je použita pro všechny položky v vozíku, pro který je vybrána možnost "expedice". Pokud používáte tok rezervace, který je poskytováný v online startovní sadě, jednotlivé položky nákupního košíku nelze odeslat na jiné adresy. Pokud tuto funkci požadujete, lze ji implementovat pomocí vlastního nastavení modulů rezervace.
 
-Po dodání adresy expedice jsou zobrazeny metody expedice, které jsou k dispozici v online obchodu Dynamics 365 Commerce. Způsoby expedice a adresy, které podporují, lze konfigurovat v Retail.
+Po dodání adresy expedice jsou zobrazeny metody expedice, které jsou k dispozici v online obchodu Dynamics 365 Commerce. Způsoby expedice a adresy, které podporují, lze konfigurovat v aplikaci Commerce.
 
 ### <a name="payment"></a>Platba
 
