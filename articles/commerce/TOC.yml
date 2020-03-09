@@ -60,7 +60,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/commerce/toc.json
                 - name: Systémové požadavky pro místní nasazení
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
-                - name: Instalační kroky pro komponenty maloobchodní sítě v místním prostředí
+                - name: Instalační kroky pro komponenty kanálu Retail v místním prostředí
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Zakoupení Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
@@ -166,6 +166,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
                 - name: Uložená zobrazení
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+                - name: Možnosti mřížky
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Vytvoření vlastních polí a práce s nimi
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: Integrace aplikací PowerApps
@@ -198,7 +200,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Certifikace Payment Application Data Security Standards (PA-DSS)
                   href: dev-itpro/PA-DSS-Certification.md
-                - name: Obchodní funkce dostupné v místních nasazeních
+                - name: Funkce Commerce dostupné v místních nasazeních
                   href: retail-onprem.md
             - name: Nasazení a opravy hotfix
               items:
@@ -438,9 +440,7 @@
                   href: configure-call-center-delivery.md
                 - name: Nastavení a práce s výstrahami u podvodů
                   href: set-up-fraud-alerts.md
-                - name: Nastavení programů kontinuity pro kontaktní střediska
-                  href: set-up-continuity-program.md
-            - name: Další konfigurace sítě
+            - name: Další konfigurace kanálu
               items:
                 - name: Přidání kanálu do organizační hierarchie
                   href: channel-add-to-org-hierarchy.md
@@ -450,6 +450,12 @@
                       href: omni-auto-charges.md
                     - name: Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje
                       href: pro-rate-charges-matching-lines.md
+                - name: Správa programů trvání
+                  items:
+                    - name: Nastavení programů kontinuity pro kontaktní střediska
+                      href: set-up-continuity-program.md
+                    - name: Definování plánů trvání
+                      href: tasks/define-continuity-schedules.md
                 - name: Řízení maloobchodu
                   items:
                     - name: Vytvoření a změna pracovní doby obchodu
@@ -460,8 +466,6 @@
                   items:
                     - name: Konfigurace a práce s blokováním objednávek kontaktního střediska
                       href: work-with-order-holds.md
-                    - name: Definování plánů trvání
-                      href: tasks/define-continuity-schedules.md
                 - name: Platby
                   items:
                     - name: Metody platby
@@ -478,6 +482,8 @@
                       href: dev-itpro/adyen-connector.md
                     - name: Úspora nástrojů online plateb s konektorem Adyen
                       href: dev-itpro/adyen-connector-listpi.md
+                    - name: Snadný offline přepínač pro operace dárkového poukazu a dobropisu
+                      href: dev-itpro/seamless-offline-improvements.md
                     - name: Nastavení scénářů plateb faktur
                       href: payinvoice.md
                     - name: Zabránění duplicitním platbám
@@ -494,9 +500,9 @@
                   href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Nastavení maloobchodních produktů
                   href: set-up-retail-products.md
-                - name: Hierarchie maloobchodních produktů
+                - name: Hierarchie produktů
                   items:
-                    - name: Hierarchie maloobchodu
+                    - name: Hierarchie Commerce
                       href: retail-hierarchies.md
                     - name: Vytvoření nové hierarchie produktu
                       href: create-product-hierarchy.md
@@ -624,6 +630,12 @@
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: "Nastavení pravidel a\_parametrů pro cross-docking a\_metodu buyer's push"
                       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+                    - name: Operace příchozích zásob v POS
+                      href: pos-inbound-inventory-operation.md
+                    - name: Operace odchozích zásob v POS
+                      href: pos-outbound-inventory-operation.md
+                    - name: Výpočet dostupnosti zásob pro maloobchodní kanály
+                      href: calculated-inventory-retail-channels.md
                 - name: Nákupní objednávky
                   items:
                     - name: Přehled nákupních objednávek
@@ -726,7 +738,19 @@
               href: tasks/store-configurations-retail-statements.md
             - name: "Zaúčtování online prodeje a\_plateb"
               href: tasks/posting-online-sales-payments.md
-        - name: Správa webu s elektronickým obchodováním
+        - name: Správa úkolů pracovníka
+          items:
+            - name: Přehled správy úkolů
+              href: task-mgmt-overview.md
+            - name: Konfigurace správy úkolů
+              href: task-mgmt-configure.md
+            - name: Vytvoření seznamů úkolů a přidání úkolů
+              href: task-mgmt-create-lists.md
+            - name: Přiřazení seznamů úkolů k obchodům nebo zaměstnancům
+              href: task-mgmt-assign-lists.md
+            - name: Správa úkolů v POS
+              href: task-mgmt-pos.md
+        - name: Správa webu s elektronickým obchodem
           items:
             - name: Přehled online obchodu
               href: online-store-overview.md
@@ -880,6 +904,8 @@
                   items:
                     - name: Modul buy boxu
                       href: add-buy-box.md
+                    - name: Moduly hodnocení a recenzí
+                      href: ratings-reviews-modules.md
                 - name: Nákupní moduly
                   items:
                     - name: Modul košíku
@@ -930,9 +956,9 @@
               href: set-up-rfm-analysis.md
         - name: Lokalizace a funkce týkající se předpisů
           items:
-            - name: Přehled fiskální integrace pro obchodní síť
+            - name: Přehled fiskální integrace pro kanál Commerce
               href: localizations/fiscal-integration-for-retail-channel.md
-            - name: Nastavení fiskální integrace pro obchodní síť
+            - name: Nastavení fiskální integrace pro kanál Commerce
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Rakousko
               items:
@@ -1042,7 +1068,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: Nábor
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Výkonnost maloobchodního kanálu '
+                - name: 'Výkonnost kanálu Retail '
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Výkon prodeje a ziskovosti
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
@@ -1054,8 +1080,10 @@
                   href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
             - name: Vykazování a tisk dokumentů
               items:
-                - name: Přehled služby Document Reporting Services
+                - name: Přehled služby vykazování dokumentů
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+                - name: Podporovaná písma
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurace služby SSRS pro místní nasazení
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Tisk
@@ -1068,7 +1096,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
                     - name: Instalace zařízení síťové tiskárny v místních prostředích
                       href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
-                    - name: 'Generování dokumentů, publikování a tisk v nasazeních on-premises'
+                    - name: 'Generování dokumentů, publikování a tisk v místních nasazeních'
                       href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/commerce/toc.json
                     - name: Spuštění agenta směrování dokumentu jako služby Windows
                       href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/commerce/toc.json
@@ -1786,7 +1814,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
         - name: Rozšiřitelnost
           items:
-            - name: Vývoj a rozšiřitelnost obchodu
+            - name: Vývoj a rozšiřitelnost Commerce
               href: dev-itpro/dev-retail-home-page.md
             - name: Rozšiřitelnost online kanálu
               items:
@@ -1834,8 +1862,6 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Náhled a ladění modulů
                       href: e-commerce-extensibility/test-module.md
-                    - name: Ladění modulů
-                      href: e-commerce-extensibility/debug-modules.md
                     - name: Testování modulů pomocí napodobenin
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Testování modulů pomocí napodobenin stránek
@@ -1976,6 +2002,8 @@
                   href: dev-itpro/pos-run-samples.md
                 - name: Průvodce implementací správy zařízení
                   href: implementation-considerations-devices.md
+                - name: Události a obslužné rutiny zobrazení košíku POS
+                  href: dev-itpro/cart-view-handlers.md
             - name: Rozšiřitelnost Hardware Station
               items:
                 - name: Hardware Station a rozšiřitelnost
@@ -2032,6 +2060,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Události rozšíření protokolu do Application Insights
                   href: dev-itpro/commerce-application-insights.md
+                - name: Vytvoření asynchronních API rozhraní Commerce (CRT) ve vaší obchodní logice
+                  href: dev-itpro/async-commerce-extension.md
             - name: Rozšiřitelnost konektoru platby
               items:
                 - name: Vytvoření integrace plateb pro platební terminál
@@ -2048,20 +2078,20 @@
                   href: payment-connector-data-fields.md
                 - name: Povolení ochrany před duplicitní platbou pro platební konektor
                   href: dev-itpro/duplicate-payment-protection.md
+                - name: Vytvoření balíčku plateb pro průzkumníka aplikací v nasazeních Service Fabric
+                  href: dev-itpro/payment-connector-package.md
             - name: Rozšiřitelnost elektronického obchodu třetích stran
               items:
                 - name: Konfigurace online obchodů
                   href: dev-itpro/configure-online-store.md
                 - name: Konfigurace poskytovatelů ověřování
                   href: dev-itpro/configure-authentication-providers.md
-                - name: SDK platforma e-Commerce
+                - name: SDK platforma elektronického obchodu
                   href: dev-itpro/ecommerce-platform-sdk.md
             - name: Lokalizace zdrojů rozšíření Commerce a souborů popisků
               href: dev-itpro/extension-resource-localization.md
     - name: Vývoj a správa aplikací Finance and Operations
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Dynamics 365 Retail
-      href: index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Supply Chain Management

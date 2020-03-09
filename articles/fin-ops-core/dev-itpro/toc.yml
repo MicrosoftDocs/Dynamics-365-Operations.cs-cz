@@ -45,7 +45,11 @@
                 - name: Platform update 15 (březen 2018)
                   href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Odstraněné nebo zastaralé funkce
-              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+              items:
+                - name: Odstraněné nebo zastaralé funkce Platform
+                  href: get-started/removed-deprecated-features-platform-updates.md
+                - name: Odebrané nebo zastaralé funkce v předchozích verzích
+                  href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Odložené funkce AX 2012
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Funkce neimplementované v místních nasazeních
@@ -144,7 +148,9 @@
                       href: data-entities/data-integration-cds.md
                     - name: Synchronní obousměrná integrace
                       items:
-                        - name: Integrace dat téměř v reálném čase
+                        - name: Domovská stránka dvojitého zápisu
+                          href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Přehled dvojitého zápisu
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Organizační hierarchie na Common Data Service
                           href: data-entities/dual-write/organization-mapping.md
@@ -422,7 +428,7 @@
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Nasazení místních prostředí (Platform update 8 a 11)
                       href: deployment/setup-deploy-on-premises-pu8-pu11.md
-                    - name: Instalační kroky pro komponenty maloobchodní sítě v místním prostředí
+                    - name: Instalační kroky pro komponenty kanálu Retail v místním prostředí
                       href: deployment/deploy-retail-onprem.md
                 - name: Vývoj a nasazení vlastních modelů do místních prostředí
                   href: deployment/develop-deploy-custom-models-on-premises.md
@@ -940,7 +946,7 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS pro partnery
                   href: lifecycle-services/getting-started-lcs.md
-                - name: Novinky
+                - name: Co je nového a co se změnilo v Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Známé problémy
                   href: lifecycle-services/known-issues.md
@@ -1685,6 +1691,4 @@
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../../commerce/index.md

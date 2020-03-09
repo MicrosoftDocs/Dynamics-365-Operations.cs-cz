@@ -5,6 +5,10 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 18. února 2020
+          href: hr-whats-new-2020-02-18.md
+        - name: 12. února 2020
+          href: hr-whats-new-2020-02-12.md
         - name: 7. února 2020
           href: hr-whats-new-2020-02-07.md
         - name: 3. února 2020
@@ -181,11 +185,11 @@
           href: hr-hrpro-overview.md
         - name: Nastavení Human Resources
           items:
-            - name: Konfigurace parametrů lidských zdrojů
+            - name: Konfigurace parametrů Human Resources
               href: hr-setup-parameters.md
-            - name: Konfigurace sdílených parametrů lidských zdrojů
+            - name: Konfigurace sdílených parametrů Human Resources
               href: hr-setup-shared-parameters.md
-            - name: Nastavení workflow lidských zdrojů
+            - name: Nastavení workflow Human Resources
               href: hr-setup-workflows.md
             - name: Pochopení polí data a času
               href: hr-setup-date-time-fields.md
