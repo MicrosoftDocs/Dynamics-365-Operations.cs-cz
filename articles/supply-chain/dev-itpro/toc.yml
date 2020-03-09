@@ -362,7 +362,7 @@
               href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Nasazení místních prostředí (Platform update 8 a 11)
               href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Instalační kroky pro komponenty maloobchodní sítě v místním prostředí
+            - name: Instalační kroky pro komponenty kanálu Retail v místním prostředí
               href: ../../dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Vývoj a nasazení vlastních modelů do místních prostředí
           href: ../../dev-itpro/deployment/develop-deploy-custom-models-on-premises.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -456,8 +456,6 @@
           items:
             - name: Přehled vytvoření modelů a prvků datového modelu
               href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: "Pokyny k\_názvům pro rozšíření"
-              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Vypnutí přizpůsobení modelu a neschválení funkce
               href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Sestava analýz úprav
