@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8280a05ea180d9de499d87efa53eca8ca912b0e3
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 4293db244d04debf3679cf2bde0b892bd74e8ead
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915641"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041117"
 ---
 # <a name="LEFT">Funkce el. výkaznictví LEFT</a>
 
@@ -33,7 +33,7 @@ Funkce `LEFT` vrátí hodnotu typu *řetězec*, která představuje zadaný poč
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```vb
 LEFT (text, number)
 ```
 

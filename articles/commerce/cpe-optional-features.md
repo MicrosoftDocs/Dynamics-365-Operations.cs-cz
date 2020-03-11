@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024722"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057733"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfigurace volitelných funkcí pro prostředí Preview aplikace Dynamics 365 Commerce
 
@@ -63,8 +63,8 @@ Chcete-li vyhodnotit funkce správy digitálních datových zdrojů pomocí při
 
 ### <a name="update-the-media-base-url"></a>Aktualizace základní adresy URL média
 
-1. Přihlaste se do Dynamics 365 Retail.
-1. Pomocí nabídky v levé části přejděte na **Moduly \> Retail \> Nastavení kanálu \> Profily kanálu**.
+1. Přihlaste se do Dynamics 365 Commerce.
+1. Pomocí nabídky v levé části přejděte na **Moduly \> Retail and commerce \> Nastavení kanálu \> Profily kanálu**.
 1. Vyberte možnost **Upravit**.
 1. V části **Vlastnosti profilu** nahraďte hodnotu vlastnosti **Základní adresa URL serveru médií** základní adresou URL médií, kterou jste vytvořili dříve.
 1. V seznamu vlevo pod **výchozím** kanálem vyberte jiný kanál.
@@ -77,7 +77,7 @@ Chcete-li vyhodnotit funkce správy digitálních datových zdrojů pomocí při
 > [!NOTE]
 > Server SMTP nebo zadaná e-mailová služba musí být v rámci předplatného Azure, které používáte pro dané prostředí, přístupné.
 
-1. Přihlaste se do aplikace Retail.
+1. Přihlášení do Commerce.
 1. Pomocí nabídky v levé části přejděte na **Moduly \> Správa organizace \> Nastavení \> Email \> Parametry e-mailu**.
 1. Na kartě **Nastavení SMTP** do pole **Server odchozí pošty** zadejte FQDN nebo IP adresu serveru SMTP nebo e-mailové služby.
 1. Do pole **Číslo portu SMTP** zadejte číslo portu. (Pokud nepoužíváte protokol Secure Sockets Layer \[SSL\], je výchozí číslo portu **25**.)
@@ -92,7 +92,7 @@ Chcete-li vyhodnotit funkce správy digitálních datových zdrojů pomocí při
 
 Pro každou transakční událost, pro kterou chcete odeslat e-maily, musíte aktualizovat e-mailovou šablonu platnou adresou odesílatele.
 
-1. Přihlaste se do aplikace Retail.
+1. Přihlášení do Commerce.
 1. Pomocí nabídky v levé části přejděte na **Moduly \> Správa organizace \> Nastavení \> Šablony e-mailu organizace**.
 1. Vyberte možnost **Zobrazit seznam**.
 1. Pro každou šablonu v seznamu postupujte takto:
@@ -115,7 +115,7 @@ Pro každou transakční událost, pro kterou chcete odeslat e-maily, musíte ak
     - Šablona objednávky výdeje
 
 1. Přizpůsobte šablony pomocí textu nebo editoru HTML. Další informace naleznete v části [podporované tokeny](#supported-tokens-in-the-email-template) dále v tomto tématu.
-1. Přihlaste se do aplikace Retail.
+1. Přihlášení do Commerce.
 1. Pomocí nabídky v levé části přejděte na **Moduly \> Správa organizace \> Nastavení \> Šablony e-mailu organizace**.
 1. Rozbalením seznamu v levé části zobrazíte všechny šablony.
 1. U každé šablony, kterou chcete přizpůsobit, postupujte následujícím způsobem:

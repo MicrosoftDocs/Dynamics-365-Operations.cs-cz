@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f819139e74d81d24810c63bae1de19358983b9
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015150"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057663"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Blokování úvěrů pro prodejní objednávky
 [!include [banner](../includes/banner.md)]
@@ -264,7 +264,7 @@ Prodejní objednávky, které byly nuceně blokovány, nelze zpracovat pomocí w
 #### <a name="releasing-orders-that-were-added-to-the-credit-management-hold-list-with-a-forced-credit-hold"></a>Uvolnění objednávek přidaných do seznamu blokování pro správu kreditů s vynuceným blokováním úvěru
 Prodejní objednávky, které mají vynucený důvod blokování, nelze automaticky uvolnit. Pokud byla prodejní objednávka vynuceně blokována a použili jste proces, který prodejní objednávky automaticky uvolňuje, prodejní objednávka se zobrazí jako **Připravena k uvolnění** a zůstane v seznamu blokování. Chcete-li objednávku uvolnit, musíte použít nabídku **Uvolnění**.
  
-## <a name="free-text-invoices-retail-orders-and-project-invoice-support-in-credit-management"></a>Volné faktury, maloobchodní objednávky a podpora projektových faktur ve správě úvěru 
-Správu úvěru lze aktuálně použít pouze pro prodejní objednávky. Volné faktury, maloobchodní místo prodejních objednávek a objednávky kontaktního střediska použijí dočasné limity úvěru a pojištění/záruk, které přidáte k úpravě limitu úvěru. Nebudou používat pravidla blokování a v případě potíží s limitem úvěru nebudou uloženy do seznamu blokování.
+## <a name="free-text-invoices-orders-and-project-invoice-support-in-credit-management"></a>Volné faktury, objednávky a podpora projektových faktur ve správě úvěru 
+Správu úvěru lze aktuálně použít pouze pro prodejní objednávky. Volné faktury, místo prodejních objednávek a objednávky kontaktního střediska použijí dočasné limity úvěru a pojištění/záruk, které přidáte k úpravě limitu úvěru. Nebudou používat pravidla blokování a v případě potíží s limitem úvěru nebudou uloženy do seznamu blokování.
 
 Neexistuje podpora pro projektové faktury ve správě úvěrů.

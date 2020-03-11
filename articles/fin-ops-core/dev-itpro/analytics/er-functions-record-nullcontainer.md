@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dde102acf18e451cb895b51b28d22102f38936c
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: ea71bfc4b30164fd32e804bf83a46c49cd18d155
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915779"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041462"
 ---
 # <a name="NULLCONTAINER">Funkce elektronického výkaznictví NULLCONTAINER</a>
 
@@ -33,7 +33,7 @@ Funkce `NULLCONTAINER` vrací prázdnou hodnotu typu *kontejner (záznam)*, kter
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```vb
 NULLCONTAINER (list)
 ```
 

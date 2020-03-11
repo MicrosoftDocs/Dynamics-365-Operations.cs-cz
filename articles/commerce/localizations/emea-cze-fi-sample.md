@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: ed4933f7a1660a7bef93bd74914fa05160c3ea32
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5129fa32d21bfb02693849ff1a04cbae2c17f447
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004695"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057579"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-czech-republic"></a>Ukázka integrace fiskální služby pro Českou republiku
 
@@ -104,7 +104,7 @@ Služba daňové registrace podporuje pouze scénáře, kde je součástí ceny 
 
 ## <a name="set-up-commerce-for-czech-republic"></a>Natavení aplikace Commerce pro Českou republiku
 
-Tato část popisuje nastavení Commerce, která jsou specifická a doporučená pro Českou republiku. Další informace naleznete v tématu [Zdroje nápovědy pro Dynamics 365 Retail](../index.md).
+Tato část popisuje nastavení Commerce, která jsou specifická a doporučená pro Českou republiku. Další informace naleznete v tématu [Domovská stránka Commerce](../index.md).
 
 Chcete-li použít funkci specifickou pro Českou republiku, je nutné zadat následující nastavení.
 
@@ -203,7 +203,7 @@ Další informace o tom, jak pracovat s formáty příjemek, naleznete v tématu
 
 ### <a name="configure-fiscal-integration"></a>Konfigurace fiskální integrace
 
-Postupujte podle kroků pro nastavení fiskální integrace popsané v části [Nastavení fiskální integrace pro maloobchodní kanály](setting-up-fiscal-integration-for-retail-channel.md).
+Postupujte podle kroků pro nastavení fiskální integrace popsané v části [Nastavení fiskální integrace pro kanály Commerce](setting-up-fiscal-integration-for-retail-channel.md).
 
 - [Nastavení procesu fiskální registrace](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Všimněte si také nastavení pro proces fiskální registrace, který je [specifický pro tuto ukázku služby fiskální registrace](#set-up-the-registration-process).
 - [Nastavení zpracování chyb](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
@@ -354,7 +354,7 @@ Předchozí postup umožňuje rozšíření, která jsou součástí ukázky int
         ```
 
 3. Spuste příkazový řádek MSBuild pro program Visual Studio a spusťte **msbuild** ve složce Retail SDK pro vytvoření balíčků k nasazení.
-4. Balíčky použijte pomocí služby Microsoft Dynamics Lifecycle Services (LCS) nebo ručně. Další informace naleznete v tématu [Vytvoření maloobchodních balíčků pro nasazení](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Balíčky použijte pomocí služby Microsoft Dynamics Lifecycle Services (LCS) nebo ručně. Další informace naleznete v tématu [Vytvoření balíčků pro nasazení](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 5. Proveďte všechny požadované úkoly nastavení, které jsou popsány v části [Nastavení Commerce pro Českou republiku](#set-up-commerce-for-czech-republic).
 
 ## <a name="design-of-extensions"></a>Návrh rozšíření

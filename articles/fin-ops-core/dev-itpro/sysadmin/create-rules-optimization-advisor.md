@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 27066cd860d78743d5ae7c851876eb62fe019245
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e14949b871534868c42d2b26a116e10ff9f05179
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180983"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081989"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Vytvoření pravidel pro poradce při optimalizaci
 
@@ -36,7 +36,7 @@ Toto téma vysvětluje postup vytvoření nových pravidel pro **Poradce při op
 
 Chcete-li vytvořit nové pravidlo pro **Poradce při optimalizaci**, přidejte novou třídu, která rozšiřuje abstraktní třídy **SelfHealingRule**, implementuje rozhraní **IDiagnosticsRule** a bude vyplněna atributem **DiagnosticRule**. Třída musí mít také metodu vyplněnou atributem **DiagnosticsRuleSubscription**. To se děje na metodě **opportunityTitle**, která bude diskutována dále. Tuto novou třídu lze přidat do vlastního modelu se závislostí na modelu **SelfHealingRules**. V následujícím příkladu se implementované pravidlo nazývá **RFQTitleSelfHealingRule**.
 
-```
+```xpp
 [DiagnosticsRule] 
 public final class RFQTitleSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule 
 { 
@@ -46,7 +46,7 @@ public final class RFQTitleSelfHealingRule extends SelfHealingRule implements ID
 
 Abstraktní třída **SelfHealingRule** má abstraktní metody, které musí být implementovány ve zděděných třídách. Základem je metoda **evaluate**, která vrací seznam příležitostí identifikovaných pravidlem. Příležitosti mohou být podle právnické osoby nebo je lze použít na celý systém.
 
-```
+```xpp
 protected List evaluate() 
 { 
     List results = new List(Types::Record); 
@@ -82,7 +82,7 @@ Příležitosti mohou být také mezi společnostmi. V takovém případě smyč
 
 Následující kód zobrazí metodu **findRFQCasesWithEmptyTitle**, která vrátí ID případů požadavku na nabídku, které mají prázdné názvy.
 
-```
+```xpp
 private container findRFQCasesWithEmptyTitle() 
 { 
     container result; 
@@ -115,7 +115,7 @@ Název vrácený metodou **opportunityTitle** se zobrazí pod sloupcem **Příle
 
 Následuje příklad implementace. Neupravené řetězce se používají pro zjednodušení, ale správná implementace vyžaduje popisky. 
 
-```
+```xpp
 [DiagnosticsRuleSubscription(DiagnosticsArea::SCM, 
                              'Assign titles to Request for Quotation cases', 
                              DiagnosticsRunFrequency::Daily,  
@@ -128,7 +128,7 @@ public str opportunityTitle()
 
 Popis vrácený **opportunityDetails** se zobrazí na postranním podokně zobrazující další informace o příležitosti. Vezme argument **SelfHealingOpportunity**, kterým je pole **Data**, které lze použít k poskytnutí více podrobností o příležitosti. V tomto příkladu metoda vrátí ID případy požadavku na nabídku s prázdným názvem. 
 
-```
+```xpp
 public str opportunityDetails(SelfHealingOpportunity _opportunity) 
 { 
     str details = ''; 
@@ -153,7 +153,7 @@ Dvě zbývající abstraktní metody k implementaci jsou **provideHealingAction*
 
 **provideHealingAction** vrací hodnotu true, pokud je poskytnuta opravná akce, vrátí false. Pokud je vrácena hodnota true, metoda **performAction** musí být implementována, nebo dojde ke zobrazení chyby. Metoda **PerformAction** vezme argument **SelfHealingOpportunity**, ve které lze použít data pro danou akci. V tomto příkladu akce otevře **PurchRFQCaseTableListPage** pro ruční opravu. 
 
-```
+```xpp
 public boolean providesHealingAction() 
 { 
     return true; 
@@ -172,7 +172,7 @@ V závislosti na specifikách pravidla, je možné provést automatickou akci po
 > [!NOTE]
 > Položka nabídky musí být položka nabídky akcí, aby zabezpečení pracovalo správně. Ostatní typy položky nabídky, jako například **Položky nabídky zobrazení**, nebudou fungovat správně.
 
-```
+```xpp
 public MenuName securityMenuItem() 
 { 
     return menuItemActionStr(PurchRFQCaseTitleAction); 
@@ -181,7 +181,7 @@ public MenuName securityMenuItem()
 
 Po kompilaci pravidla spusťte následující úlohu, aby se zobrazilo v uživatelském rozhraní.
 
-```
+```xpp
 class ScanNewRulesJob 
 {         
     public static void main(Args _args) 
@@ -197,7 +197,7 @@ Pravidlo se zobrazí ve formuláři **Pravidlo ověření diagnostiky**, dostupn
 
 V následujícím příkladu je fragment kódu s kostrou pravidla, včetně všech požadovaných metod a atributů. Pomůže vám to při zahájení psaní nových pravidel. Popisky a položky nabídky akcí, které se používají v uvedeném příkladu, slouží pouze pro demonstrační účel.
 
-```
+```xpp
 [DiagnosticsRuleAttribute]
 public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
 {

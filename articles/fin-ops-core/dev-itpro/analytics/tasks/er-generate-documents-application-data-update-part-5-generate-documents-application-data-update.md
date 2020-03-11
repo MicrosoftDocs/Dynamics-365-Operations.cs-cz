@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 759869577ef30cd3f81eb74103a93cc5d1a3d608
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026056"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042843"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Generování dokumentů s daty aplikace
 
@@ -40,10 +40,14 @@ Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému 
 ## <a name="set-up-foreign-trade-parameters"></a>Nastavit parametry zahraničního obchodu
 1. Přejděte na Daň > Nastavení > Zahraniční obchod > Parametry zahraničního obchodu.
 2. Klikněte na kartu Číselné řady.
-    * Při archivování podrobných informací o procesu vykazování Intrastat je nutné určit záznamy každého vytvořeného archivu. Tato akce vyžaduje konfiguraci zvláštní číselné řady.  
+
+    Při archivování podrobných informací o procesu vykazování Intrastat je nutné určit záznamy každého vytvořeného archivu. Tato akce vyžaduje konfiguraci zvláštní číselné řady.  
+
 3. Vyberte referenci ID archivu Intrastat.
 4. Zadejte hodnotu do pole Kód číselné řady.
-    * V poli Kód číselné řady zadejte nebo vyberte hodnotu Fore_2’.  
+
+    V poli Kód číselné řady zadejte nebo vyberte hodnotu Fore_2’.  
+
 5. Vyřešte změny v číselné řadě Číslo.
 6. Klikněte na položku Uložit.
 7. Zavřete stránku.
@@ -52,20 +56,25 @@ Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému 
 1. Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.
 2. Ve stromovém zobrazení rozbalte Intrastat (model).
 3. Ve stromové struktuře vyberte Intrastat (model)\Intrastat (format).
-4. Klikněte na položku Spustit.
+4. Klikněte na Spustit.
 5. Do pole Zadat název souboru zadejte intrastat2.xml.
-    * intrastat2.xml  
-6. Klikněte na tlačítko OK.
+6. Klepněte na tlačítko OK.
 
 ## <a name="review-er-format-executions-results"></a>Kontrola výsledků spuštění formátu ER
 Prohlédněte si vygenerovaný soubor XML.  
 1. Zavřete stránku.
 2. Přejděte na Daň > Deklarace > Zahraniční obchod > Intrastat.
-    * Otevřete tento formulář s transakcemi Intrastat, které byly zahrnuty ve vygenerovaném elektronickém dokumentu.  
+
+    Otevřete tento formulář s transakcemi Intrastat, které byly zahrnuty ve vygenerovaném elektronickém dokumentu.  
+
 3. Klikněte na Archiv Intrastat.
-    * Vzhledem k tomu, že aktivovaný formát ER nově obsahuje nastavení pro aktualizaci dat aplikace, podrobnosti dokončené sestavy Intrastat byly archivovány. Pomocí tohoto formuláře můžete zobrazit záznam záhlaví vytvořeného archivu.  
+
+    Vzhledem k tomu, že aktivovaný formát ER nově obsahuje nastavení pro aktualizaci dat aplikace, podrobnosti dokončené sestavy Intrastat byly archivovány. Pomocí tohoto formuláře můžete zobrazit záznam záhlaví vytvořeného archivu.  
+
 4. Klepněte na možnost Podrobnosti.
-    * Pomocí tohoto formuláře můžete zobrazit podrobnosti k vytvořenému archivu.  
+
+    Pomocí tohoto formuláře můžete zobrazit podrobnosti k vytvořenému archivu.  
+
 5. Zavřete stránku.
 6. Zavřete stránku.
 7. Zavřete stránku.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 88ba96b1d9d2f722528a4a920eabe4ab64304a7a
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658637"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059421"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobilní schvalování faktur
 
@@ -54,8 +54,8 @@ Každá organizace ladí a definuje svůj svůj obchodní proces pro faktury dod
     -   Kolik rozúčtování (rozšířená cena, DPH, poplatky, rozdělení atd.) je pro řádek faktury k dispozici? Znovu použijte pravidlo 80-20.
     -   Mají faktury také rozúčtování v hlavičce faktury? Pokud ano, budou tato rozúčtování k dispozici v zařízení?
 
-> [!NOTE]
-> Toto téma nevysvětluje, jak upravit rozúčtování, protože tato funkce není aktuálně podporována pro mobilní scénáře.
+    > [!NOTE]
+    > Toto téma nevysvětluje, jak upravit rozúčtování, protože tato funkce není aktuálně podporována pro mobilní scénáře.
 
 -   Budou uživatelé chtít vidět přílohy pro fakturu na zařízení?
 
@@ -158,9 +158,9 @@ První mobilní stránka, kterou byste měli navrhnout, je seznam faktur, které
     - Číslo faktury
     - Datum fakturace
 
-  Po přidání polí musí mobilní stránka vypadat podobně jako na následujícím obrázku. 
+    Po přidání polí musí mobilní stránka vypadat podobně jako na následujícím obrázku. 
     
-   [![Stránka po přidání polí](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Stránka po přidání polí](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  Nyní také musíte přidat následující sloupce, abychom mohli později povolit akce pracovního postupu.
     - Zobrazit dokončené úkoly
@@ -247,9 +247,10 @@ Chcete-li přidat akce workflowu, použijte stránku **VendMobileInvoiceHeaderDe
     - Skryje sloupce týkající se pracovního postupu, které jsou navíc a které jsme přidali dříve na stránce Mobilní seznam. Můžeme přidat tyto sloupce tak, aby aplikace měla tyto informace v kontextu a provést další krok.
     - Podle kroku pracovního postupu, který je aktivní, použije logiku, aby se zobrazily pouze akce.
 
-> [!NOTE]
-> Všimněte si, že název stránky a další ovládací prvky v kódu musí být stejné jako názvy v pracovním prostoru.
+    > [!NOTE]
+    > Všimněte si, že název stránky a další ovládací prvky v kódu musí být stejné jako názvy v pracovním prostoru.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -308,6 +309,7 @@ Chcete-li přidat akce workflowu, použijte stránku **VendMobileInvoiceHeaderDe
                  },
            };
         }
+    ```
 
 2.  Nahrajte kód souboru do pracovního prostoru výběrem karty **Logika**
 3.  Kliknutím na **Hotovo** ukončete režim úprav.
@@ -341,7 +343,7 @@ Požadavky pro tento scénář potvrzují, že budou existovat pouze distribuce 
 
 1.  V adrese URL nahraďte název položky nabídky jako předtím. Stránky, které se objeví, by měly vypadat jako na následujícím obrázku.
 
-[![Stránka Všechny distribuce](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Stránka Všechny distribuce](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Otevřete mobilní návrhář z tlačítka **Nastavení** (ozubené kolečko).
 
@@ -367,16 +369,18 @@ Požadavky pro tento scénář potvrzují, že budou existovat pouze distribuce 
 
 10. Kliknutím na **Publikovat pracovní prostor** uložte práci.
 
-> [!NOTE] 
-> Mobilní stránka **Zobrazení účetnictví** není momentálně propojena s žádnou z mobilních stránek, které jsme doposud vytvořili. Protože by měl uživatel být schopen přejít na stránku **zobrazení účetnictví** stránky ze stránky **Detaily faktury** na mobilním zařízení, musíme poskytnout navigaci ze stránky **Detaily faktury** na stránku **Zobrazit účetnictví**. Můžeme navázat tuto navigaci pomocí další logiky pomocí jazyka JavaScript.
+#### <a name="adding-navigation-to-view-accounting-page"></a>Přidání navigace do stránky "Zobrazit účetnictví"
+
+Mobilní stránka **Zobrazení účetnictví** není momentálně propojena s žádnou z mobilních stránek, které jsme doposud vytvořili. Protože by měl uživatel být schopen přejít na stránku **zobrazení účetnictví** stránky ze stránky **Detaily faktury** na mobilním zařízení, musíme poskytnout navigaci ze stránky **Detaily faktury** na stránku **Zobrazit účetnictví**. Můžeme navázat tuto navigaci pomocí další logiky pomocí jazyka JavaScript.
 
 1.  Otevřete soubor .js, který jste vytvořili dříve a přidejte zvýrazněné řádky v následujícím kódu. Tento kód provádí dvě věci:
     1.  Pomáhá zajistit, že uživatelé nebudou moci přejít přímo z pracovního prostor na stránku **Zobrazení účtování**.
     2.  Naváže ovládání navigace ze stránky **Detaily faktury** na stránku **Zobrazení účetnictví**.
 
-> [!NOTE] 
-> Všimněte si, že název stránky a další ovládací prvky v kódu musí být stejné jako názvy v pracovním prostoru.
+    > [!NOTE] 
+    > Všimněte si, že název stránky a další ovládací prvky v kódu musí být stejné jako názvy v pracovním prostoru.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -439,7 +443,8 @@ Požadavky pro tento scénář potvrzují, že budou existovat pouze distribuce 
                  },
            };
         }
-
+    ```
+    
 2.  Nahrajte kód souboru do pracovního prostoru výběrem karty **Logika** pro přepis předchozího kódu
 3.  Kliknutím na **Hotovo** ukončete režim úprav.
 4.  Klikněte na **Zpět** a potom na **Hotovo** pro odchod z pracovního prostoru

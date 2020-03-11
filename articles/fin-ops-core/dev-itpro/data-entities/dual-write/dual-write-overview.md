@@ -1,9 +1,9 @@
 ---
-title: Integrace dat téměř v reálném čase pomocí Common Data Service
-description: Toto téma poskytuje přehled integrace mezi Finance and Operations a Common Data Service.
+title: Přehled dvojího zapisování
+description: Toto téma obsahuje přehled dvojího zapisování. Dvojí zapisování je infrastruktura poskytující prakticky v reálném čase mezi aplikacemi řízených modelem Microsoft Dynamics 365 a Finance and Operations.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,59 +18,91 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1c09b0c0bb695e7695acb7a8821ffb99ae1f6f06
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 12c6a39700a260c138fab67ed370f94b3aa04213
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019682"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075974"
 ---
-# <a name="near-real-time-data-integration-with-common-data-service"></a>Integrace dat téměř v reálném čase pomocí Common Data Service
+# <a name="dual-write-overview"></a>Přehled dvojího zapisování
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
-V současném digitálním světě používají podnikatelské ekosystémy aplikace Microsoft Dynamics 365 jako celek. Protože data od osob, zákazníků, operací a zařízení s internetem věcí (IoT) proudí do jednoho zdroje, existuje příležitost pro digitální smyčky zpětné vazby. Pro dosažení těchto zkušeností je nezbytná integrace mezi aplikacemi Finance and Operations a dalšími aplikacemi Dynamics 365. Některé aplikace jsou postaveny nad službou Common Data Service. Integrace mezi daty aplikací Finance and Operations s Common Data Service umožní jiným aplikacím komunikovat koherentně a plynule s Finance and Operations.
+## <a name="what-is-dual-write"></a>Co je dvojí zapisování?
 
-Aplikace Finance and Operations a Common Data Service poskytují synchronizaci dat téměř v reálném čase mezi aplikacemi Finance and Operations a dalšími aplikacemi Dynamics 365 prostřednictvím rámce pro dvojí zápis. Pokrytí je široké a pokrývá 28 povrchových oblastí aplikace. Cílem je poskytnout uživateli jednu zkušenost s Dynamics 365 pomocí plynulých datových toků, které spojují obchodní procesy mezi aplikacemi.
+Dvojí zapisování je předpřipravená infrastruktura poskytující prakticky v reálném čase mezi aplikacemi řízených modelem v Microsoft Dynamics 365 a Finance and Operations. Při zpracování dat o zákaznících, produktech, osobách a operacích mimo hranice aplikací jsou všechna oddělení v organizaci oprávněna.
 
-![Diagram přehledu architektury](media/dual-write-overview.jpg)
+Dvojí zapisování poskytuje pevně spojenou obousměrnou integraci mezi aplikacemi Finance and Operations a Common Data Service. Jakákoli změna dat v aplikacích Finance and Operations způsobí zápis do aplikace Common Data Service a jakákoli změna dat v Common Data Service způsobí zápis do aplikací Finance and Operations. Tento automatizovaný tok dat poskytuje integrované uživatelské prostředí pro celé aplikace.
 
-Jsou k dispozici následující propozice hodnot:
+![Datový vztah mezi aplikacemi](media/dual-write-overview.jpg)
 
-+ [Organizační hierarchie v Common Data Service](organization-mapping.md)
-+ [Koncept společnosti v Common Data Service](company-data.md)
-+ [Integrovaná hlavní data odběratelů](customer-mapping.md)
-+ [Integrovaná hlavní kniha](ledger-mapping.md)
-+ [Sjednocené prostředí produktu](product-mapping.md)
-+ [Integrovaná hlavní data dodavatelů](vendor-mapping.md)
-+ [Integrované sklady a pracoviště](sites-warehouses-mapping.md)
-+ [Integrovaná hlavní data daní](tax-mapping.md)
+Dvojí zápis má dva aspekty: aspekt *infrastruktury* a aspekt *aplikace*.
 
-## <a name="system-requirements"></a>Systémové požadavky
+### <a name="infrastructure"></a>Infrastruktura
 
-Synchronní, obousměrný datový tok téměř v reálném čase vyžaduje následující verze:
+Infrastruktura dvojího zapisování je rozšiřitelná a spolehlivá a obsahuje následující klíčové funkce:
 
-+ Microsoft Dynamics 365 for Finance and Operations verze 10.0.4 (července 2019) s aktualizací Platform Update 28 nebo vyšší
-+ Microsoft Dynamics 365 for Customer Engagement verze Platform 9.1 (4.2) nebo novější
++ Synchronní a obousměrný tok dat mezi aplikacemi
++ Synchronizace spolu s režimy přehrát, pozastavit a catchup pro podporu systému při režimech online a offline/asynchronní.
++ Možnost synchronizace počátečních dat mezi aplikacemi
++ Konsolidované zobrazení protokolů aktivit a chyb pro správce dat
++ Možnost konfigurovat vlastní výstrahy a prahové hodnoty a přihlásit se k odběru oznámení
++ Intuitivní uživatelské rozhraní (UI) pro filtrování a transformace
++ Schopnost nastavit a zobrazit závislosti a vztahy entity
++ Rozšiřitelnost pro standardní i pro vlastní entity a mapy
++ Spolehlivé řízení životního cyklu aplikací
++ Přednastavené možnosti nastavení pro nové odběratele
 
-## <a name="setup-instructions"></a>Nastavit instrukce
+### <a name="application"></a>Přihláška
 
-Chcete-li nastavit integraci mezi aplikacemi Finance and Operations a Common Data Service, postupujte podle následujících kroků:
-    
-1. Chcete-li nastavit systém s dvojím zápisem, přečtěte si [podrobný návod](https://aka.ms/dualwrite-docs) k oznámení verze Preview dvojího zápisu.
-2. Stáhněte a nainstalujte řešení ze skupiny [Integrace finančních operací a CDS/CE prostřednictvím dvojího zápisu](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer. Balíček obsahuje pět řešení:
+Dvojí zapisování vytvoří mapování mezi koncepty v aplikacích Finance and Operations a koncepty v aplikacích řízených modelem v Dynamics 365. Tato integrace podporuje následující scénáře:
 
-    + Dynamics365Company
-    + CurrencyExchangeRates
-    + Dynamics365FinanceAndOperationsCommon
-    + Dynamics365FinanceCommon
-    + Dynamics365SupplyChainCommon
++ Integrovaná hlavní data odběratelů
++ Přístup k věrnostním kartám odběratelů a k bodům odměny
++ Sjednocené prostředí základního produktu
++ Povědomí o organizační hierarchii
++ Integrovaná hlavní data dodavatelů
++ Přístup k referenčním datům financování a daně
++ Práce modulu ceny na požádání
++ Integrované prostředí zpeněžení
++ Schopnost poskytovat interní majetek i aktiva pro odběratele prostřednictvím agentů polí
++ Integrované prostředí vynucení platby
++ Integrované aktivity a poznámky pro data a dokumenty odběratelů
++ Možnost vyhledat dostupnost a podrobnosti zásob na skladě
++ Prostředí P2C
++ Schopnost zpracovávat více adres a rolí prostřednictvím koncepce strany
++ Správa jednoho zdroje pro uživatele
++ Integrované kanály pro maloobchod a marketing
++ Zviditelnění promoakcí a slev
++ Funkce požadavku na služby
++ Zjednodušené servisní operace
 
-3. Postupujte podle pořadí provádění pro [synchronizaci počátečních referenčních dat](initial-sync.md).
-4. Setkáte-li se s problémy se synchronizací dvojího zápisu, nahlédněte do [Poradce při potížích s integrací dat](dual-write-troubleshooting.md).
+## <a name="top-reasons-to-use-dual-write"></a>Hlavní důvody pro použití dvojího zapisování
 
-> [!IMPORTANT]
-> Vedle sebe nelze spustit dvojí zápis a [zpeněžení potenciálního zákazníka](../../../../supply-chain/sales-marketing/prospect-to-cash.md). Pokud spouštíte řešení zpeněžení potenciálního zákazníka, je nutné jej odinstalovat. Musíte také zakázat šablony dvojího zápisu zákazníků a dodavatelů, které jsou součástí řešení zpeněžení potenciálního zákazníka.
+Dvojí zapisování poskytuje integraci dat mezi aplikacemi Microsoft Dynamics 365. Toto robustní rozhraní spojuje prostředí a umožňuje různým obchodním aplikacím vzájemnou spolupráci. Zde jsou uvedeny hlavní důvody, proč byste měli používat dvojí zápis:
+
++ Dvojí zapisování poskytuje úzce spojenou, prakticky v reálném čase a obousměrnou integraci mezi aplikacemi Finance and Operations a aplikacemi řízenými modelem v aplikaci Dynamics 365. Tato integrace činí z Microsoft Dynamics 365 univerzální nástroj pro všechna vaše obchodní řešení. Zákazníci, kteří používají Dynamics 365 Finance a Dynamics 365 Supply Chain Management, ale používají řešení pro řízení vztahů se zákazníky (CRM) jiného typu než nabízí společnost Microsoft, přecházení k Dynamics 365 díky podpoře dvojího zapisování.
++ Data od odběratelů, produktů, operací, projektů a Internetu věcí (IoT) automaticky proudí do Common Data Service pomocí dvojího zapisování. Toto připojení je velmi užitečné pro podniky, které se zajímaní o rozšíření Microsoft Power Platform.
++ Infrastruktura dvojího zapisování se řídí podle principu "bez kódu/nízký kód". Chcete-li rozšířit standardní mapy tabulek a tabulek a zahrnout vlastní mapy, je nezbytné pouze minimální úsilí.
++ Dvojí zapisování podporuje režim online i režim offline. Společnost Microsoft je jediná společnost nabízející podporu pro režimy online a offline.
+
+## <a name="what-does-dual-write-mean-for-users-and-architects-of-crm-products"></a>Co znamená dvojí zapisování pro uživatele a architekty produktů CRM?
+
+Dvojí zapisování automatizuje tok dat mezi aplikacemi Finance and Operations a Common Data Service. V budoucích verzích budou pojmy v aplikacích řízených modelem v aplikaci Dynamics 365 (například odběratel, kontakt, nabídka a objednávka) odstupňovány pro zákazníky se středním podílem na trhu a s vyšším podílem na trhu.
+
+V prvním vydání je většina automatizace zpracována řešeními dvojího zápisu. V příštích verzích se tyto řešení stanou součástí aplikace Common Data Service. Pochopíte-li nadcházející změny v aplikaci Common Data Service, můžete v dlouhodobém období ušetřit úsilí. Následují některé zásadní změny:
+
++ Common Data Service bude mít nové koncepce, jako je například společnost nebo smluvní strana. Tyto koncepce budou mít vliv na všechny aplikace vytvořené na Common Data Service, například Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service a Dynamics 365 Field Service.
++ Aktivity a poznámky jsou sjednoceny a rozšířeny tak, aby podporovaly C1 (uživatelé systému) i C2 (zákazníci v systému).
++ Následují některé nadcházející změny v Common Data Service:
+
+    - Datový typ desetinné číslo nahradí datový typ peníze.
+    - Datum vyčerpání bude podporovat minulá, současná a budoucí data na stejném místě.
+    - Pro měnu a směnné kurzy bude existovat více podpor a bude revidováno rozhraní (API) pro aplikaci **Směnný kurz**.
+    - Převody jednotek budou podporovány.
+
+Další informace o nadcházejících změnách naleznete v tématu [Data v Common Data Service - fáze 1 a 2](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap).

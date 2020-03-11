@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91e4658043278b9b8d73766cc0deac5d50d51a59
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 0d51b59c437bd216c6d229546136bb604239fa92
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916147"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041991"
 ---
 # <a name="LISTOFFIELDS">Funkce elektronického výkaznictví LISTOFFIELDS</a>
 
@@ -33,13 +33,13 @@ Funkce `LISTOFFIELDS` vrátí hodnotu typu *seznam záznamů*, která je vytvoř
 
 ## <a name="syntax-1"></a>Syntaxe 1
 
-```
+```vb
 LISTOFFIELDS (path)
 ```
 
 ## <a name="syntax-2"></a>Syntaxe 2
 
-```
+```vb
 LISTOFFIELDS (path, language)
 ```
 
@@ -121,7 +121,7 @@ Typ datového zdroje *Vypočítané pole* použijete ke konfiguraci zdrojů dat 
 
 V takovém případě můžete použít následující výraz k získání popisku hodnoty výčtu ve švýcarské němčině, pokud je tento překlad k dispozici. Není-li k dispozici překlad do švýcarské němčiny, je popisek v němčině.
 
-```
+```vb
 IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 ```
 

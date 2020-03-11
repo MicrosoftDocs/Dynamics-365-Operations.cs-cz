@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771534"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070753"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definice sloupce ve finančních sestavách
 
@@ -120,11 +120,11 @@ Následující tabulka popisuje kódy omezení sloupce.
 | ADJ                     | Omezí částky v tomto sloupci na částky oprav za období, pokud jsou tyto částky k dispozici. |
 | XAD                     | Omezí částky v tomto sloupci tak, aby byly vyloučeny částky oprav za období. |
 | PT                      | Omezí částky ve sloupci tak, aby pouze zaúčtované transakce byly zahrnuty, pokud tyto transakce jsou k dispozici. |
-| UPT                     | Omezí částky ve sloupci tak, aby byly zahrnuty pouze nezaúčtované transakce, pokud jsou tyto transakce k dispozici.<p><strong>Poznámka:</strong> Ne všichni poskytovatelé dat podporují nezaúčtované transakce. Další informace naleznete v <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>příručce pro integraci dat</a> pro váš systém Microsoft Dynamics ERP.</p> |
+| UPT                     | Omezí částky ve sloupci tak, aby byly zahrnuty pouze nezaúčtované transakce, pokud jsou tyto transakce k dispozici.<p><strong>Poznámka:</strong> Ne všichni poskytovatelé dat podporují nezaúčtované transakce. </p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Omezení sloupce na organizační jednotku
 
-1. V Návrháři sestav otevřete definici sloupců, kterou chcete změnit.
+1. V Návrháři sestav otevřete definici sloupce k úpravě.
 2. Klikněte dvakrát na buňku **Jednotka výkaznictví** pro sloupec k omezení.
 3. V dialogovém okně **Výběr jednotky výkaznictví** v seznamu **Strom výkaznictví** vyberte strom.
 4. Rozbalte nebo sbalte seznam jednotek vyberte jednotku výkaznictví a klikněte na tlačítko **OK**.

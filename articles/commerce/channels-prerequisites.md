@@ -3,7 +3,7 @@ title: Předpoklady nastavení kanálu
 description: Toto téma poskytuje přehled předpokladů nastavení kanálů v Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b861d90f1333c8f6e61a83602ed74e30b65f3dc1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002282"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081308"
 ---
 # <a name="channel-setup-prerequisites"></a>Předpoklady nastavení kanálu
 
@@ -40,16 +40,16 @@ Před vytvořením kanálu Dynamics 365 Commerce je nutné provést několik po�
 
 ## <a name="initialization"></a>Inicializace
 
-- [Inicializovat počáteční data](../retail/enable-configure-retail-functionality.md)
+- [Inicializovat počáteční data](enable-configure-retail-functionality.md)
 
 ## <a name="global-prerequisities-required-for-all-channel-types"></a>Globální předpoklady vyžadované pro všechny typy kanálů
 
 - [Definovat a konfigurovat strukturu právnické osoby](channels-legal-entities.md) 
 - [Konfigurace vaší organizační hierarchie](channels-org-hierarchies.md)
 - [Nastavit sklad](channels-setup-warehouse.md)
-- [Konfigurovat DPH](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Konfigurovat DPH](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
 - [Nastavení profilu oznámení e-mailem](email-notification-profiles.md)
-- [Nastavení číselných řad](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Nastavení číselných řad](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
 - [Nastavení výchozího zákazníka a adresáře](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
@@ -57,19 +57,17 @@ Před vytvořením kanálu Dynamics 365 Commerce je nutné provést několik po�
 
 ## <a name="retail-channel-prerequisites"></a>Předpoklady maloobchodní sítě
 
-- [Informační kódy a skupiny informačních kódů](https://docs.microsoft.com/en-us/dynamics365/retail/info-codes-retail?toc=/dynamics365/commerce/toc.json)
+- [Informační kódy a skupiny informačních kódů](info-codes-retail.md)
 - [Nastavení funkčního profilu maloobchodu](retail-functionality-profile.md)
 - [Nastavení adresáře zaměstnanců](new-address-book.md)
-- [Nastavení rozvržení obrazovky](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
-- [Nastavit hardwarovou stanici](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
+- [Nastavení rozvržení obrazovky](pos-screen-layouts.md)
+- [Nastavit hardwarovou stanici](retail-hardware-station-configuration-installation.md)
 
 ## <a name="call-center-channel-prerequisites"></a>Předpoklady kanálu kontaktního střediska
 
 - Parametry kontaktního střediska
-- Metody refundace kontaktního střediska
-- Typy vypůjčení
-- Služby pro platby
-- Kódy blokování objednávek
+- [Způsoby platby za objednávku a refundaci kontaktního střediska](work-with-payments.md)
+- [Způsoby dodání a poplatků kontaktního střediska](configure-call-center-delivery.md)
 
 ## <a name="online-channel-prerequisites"></a>Předpoklady online kanálu
 

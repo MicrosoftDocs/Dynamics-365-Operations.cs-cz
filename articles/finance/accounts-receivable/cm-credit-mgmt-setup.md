@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 02d7e2238e58098428397121de848a1947a991ad
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: b4234ac428cc80836852d4edfb0f37098b4a1e8e
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015147"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071653"
 ---
 # <a name="credit-management-parameters-setup"></a>Nastavení parametrů správy úvěru
 
@@ -38,8 +38,8 @@ Existují čtyři pevné záložky, na kterých můžete měnit parametry, jež 
 - Chcete-li vyžadovat, aby byla pravidla zaúčtování znovu kontrolována, pokud došlo ke změně hodnoty prodejní objednávky (rozšířená cena) od uvolnění prodejní objednávky ze seznamu blokování, nastavte možnost **Umožnit úpravu hodnoty prodejních objednávek po uvolnění blokování objednávky** na **Ano**. .
 - V poli **Důvody zrušených objednávek** vyberte důvod uvolnění, který bude standardně použit, dojde-li ke zrušení prodejní objednávky, která byla blokována správou úvěru.
 - Chcete-li kontrolovat limit úvěru skupiny odběratelů podle limitu úvěru, když odběratel na prodejní objednávce náleží ke skupině odběratelů podle limitu úvěru, nastavte možnost **Kontrolovat limit úvěru skupin odběratelů podle limitu úvěru** na **Ano**. Bude zkontrolován limit úvěru pro danou skupinu a v případě, že je dostatečný, bude zkontrolován limit úvěru pro odběratele.
-- Chcete-li kontrolovat pořadí platebních podmínek, abyste určili, zda se platební podmínky na prodejní objednávce liší od platebních podmínek na jiné prodejní objednávce, nastavte možnost **Zkontrolovat limit úvěru při zvýšení platebních podmínek** na **Ano**. Pokud mají nové platební podmínky vyšší pořadí než původní platební podmínky, objednávka se zablokuje ve správě úvěrů.
-- Chcete-li kontrolovat pořadí slev při vyrovnání, abyste určili, zda se platební sleva na prodejní objednávce liší od platební slevy na jiné prodejní objednávce, nastavte možnost **Zkontrolovat limit úvěru při zvýšení slevy při vyrovnání** na **Ano**. Pokud má nová platební sleva vyšší pořadí než původní platební sleva, objednávka se zablokuje ve správě úvěrů.
+- Chcete-li kontrolovat pořadí platebních podmínek, abyste určili, zda se platební podmínky na prodejní objednávce liší od výchozích platebních podmínek daného odběratele, nastavte možnost **Zkontrolovat limit úvěru při zvýšení platebních podmínek** na **Ano**. Pokud mají nové platební podmínky vyšší pořadí než původní platební podmínky, objednávka se zablokuje ve správě úvěrů.
+- Chcete-li kontrolovat pořadí slev při vyrovnání, abyste určili, zda se platební sleva na prodejní objednávce liší od výchozí platební slevy daného odběratele, nastavte možnost **Zkontrolovat limit úvěru při zvýšení slevy při vyrovnání** na **Ano**. Pokud má nová platební sleva vyšší pořadí než původní platební sleva, objednávka se zablokuje ve správě úvěrů.
 - V poli **Důvod uvolnění upravených objednávek** vyberte důvod uvolnění, který bude použit jako výchozí, když budou upravené objednávky automaticky uvolněny z blokování správy úvěru.
 - Chcete-li kontrolovat chování pravidla **Vypršela platnost limitu úvěru**, nastavte možnost **Ignorovat pravidlo blokování při vypršení platnosti limitu úvěru, je-li datum vypršení platnosti prázdné** na **Ano**. Chcete-li zablokovat objednávku v případě, že datum vypršení platnosti bude prázdné, nastavte možnost **Ne**.
 - V Řízení skladu lze vytvořit vytížení při zadání prodejní objednávky. Chcete-li ponechat řádky prodejní objednávky na vytížení, je-li prodejní objednávka blokována pro úvěr, nastavte možnost **Odebrat blokované řádky vytížení** na **Ne**. Vytížení nelze zpracovat, pokud je blokována prodejní objednávka. Chcete-li odebrat řádky prodejní objednávky z vytížení, je-li prodejní objednávka blokována pro úvěr, nastavte možnost **Ano**. Poté lze vytížení zpracovat.

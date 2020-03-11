@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 7d68f65c27ec8704ef588cf98bbe30fc70cd5b47
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4185d4762b65b6b1ce7531c3995f8bbe084a9c5f
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021897"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057294"
 ---
 # <a name="get-support-for-dynamics-365-retail"></a>Získání podpory pro Dynamics 365 Retail
 
@@ -42,13 +42,13 @@ Chcete-li získat podporu pro aplikaci Commerce, použijte zdroje v následujíc
 <thead>
 <tr>
 <th>Úkol</th>
-<th>Více informací</th>
+<th>Další informace</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Zeptejte se komunity.</td>
-<td>Přejděte na stránku komunity <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a> a vyhledejte odpovědi na své otázky od komunity Dynamics 365.</td>
+<td>Přejděte na stránku <a href="https://community.dynamics.com/365/retail">Dynamics 365 Community</a> a vyhledejte odpovědi na své otázky od komunity Dynamics 365.</td>
 </tr>
 <tr>
 <td>Použijte nástroj Hledání problému.</td>

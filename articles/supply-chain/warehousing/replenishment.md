@@ -3,7 +3,7 @@ title: Přehled doplnění
 description: Toto téma popisuje strategie doplnění, které jsou k dispozici pro sklady, které používají funkce, které jsou k dispozici v modulu Řízení skladu.
 author: Mirzaab
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7aa17df3c3632c89f35a69022084bbd9f4171f36
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251455"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076335"
 ---
 # <a name="replenishment-overview"></a>Přehled doplnění
 
@@ -49,6 +49,8 @@ Směrnice umístění se používají k určení umístění, které je třeba d
 Kromě vytvoření šablony je nutné zadat určitá nastavení doplnění v šabloně vlny. Šablona vlny by měla obsahovat krok vlny pro doplnění, který se spustí pouze v případě, že přidělení zboží není úspěšné. V tomto kroku vlny doplnění se používá kód kroku vlny pro určení toho, která šablona doplnění by se měla použít. Kromě kroku vlny pro doplnění je nutné ujistit se, že je vybráno **Doplnění** v části **Metody** u šablony vlny. 
 
 Stránka **Šablona doplnění** obsahuje pole **Povolit u vlny poptávky použití nerezervovaných množství**. Zvolte toto zaškrtávací políčko, pokud má doplnění poptávky odečíst nerezervované množství z práce vygenerované z vybrané šablony doplnění. Toto políčko je třeba zaškrtnout pro každou existující šablonu doplnění, pokud chcete umožnit šablonám doplnění poptávky používat tuto logiku. Pokud práce pochází ze šablony doplnění s označeným polem **Povolit poptávku vlny pro použití nerezervovaného množství**, při spuštění doplnění poptávky ve skladu dojde k odečtení poptávky z existující práce doplnění pomocí nerezervovaného množství.
+
+**Jednotka doplnění** je minimální jednotka pro doplnění. Musí se jednat o celé číslo, které je násobkem jednotky. Systém bude při vytváření práce zaokrouhlovat až do nejvyšší jednotky.
 
 Doplnění poptávky je podporována pro prodejní objednávky, převodní příkazy, výrobní zakázky a kanbany. 
 

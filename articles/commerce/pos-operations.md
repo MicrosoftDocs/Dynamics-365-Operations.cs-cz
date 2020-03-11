@@ -3,7 +3,7 @@ title: Online a offline operace pokladního místa (POS)
 description: Toto téma obsahuje podrobnosti týkající se operací pokladních míst (POS) v aplikaci Dynamics 365 Commerce. Určuje, kde lze v aplikaci vyvolat operace, a zda jsou k dispozici v offline režimu.
 author: jblucher
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bf67c53ffd5bd530f484b60da604fd9338c964fd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021923"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081332"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online a offline operace pokladního místa (POS)
 
@@ -52,6 +52,8 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 137 | Přidat umístění k odběrateli | Přidejte umístění k odběrateli na stránce **Podrobnosti odběratele**. | Žádný | Žádný | Žádný | Ano | Žádný |
 | 138 | Odstranit umístění od odběratele | Odstraňte umístění na stránce **Podrobnosti odběratele**. | Žádný | Žádný | Žádný | Ano | Žádný |
 | 643 | Přidat kód kupónu | Přidejte kupón zadáním jeho kódu do POS. | Ano | Ano | Ne | Ano | Ne |
+| 141 | Přidat náklady záhlaví | Přidá vedlejší náklady do záhlaví objednávky. | Ano | Ano | Ne | Ne| Ne |
+| 141 | Přidat náklady řádku | Přidá vedlejší náklady do vybraného řádku prodeje. | Ano | Ano | Ne | Ne| Ne |
 | 117 | Přidat věrnostní kartu | Vyzvěte uživatele k zadání čísla věrnostní karty, které budé přidáno do aktuální transakce. | Ano | Ano | Ne | Ano | Ne |
 | 136 | Přidat sériové číslo | Tato operace umožňuje uživateli specifikovat sériové číslo pro aktuálně vybraný produkt. | Ano | Ano | Ne | Ano | Ne |
 | 1214 | Přidat dodací adresu | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
@@ -64,6 +66,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 310 | Vypočítat součet | Při zpoždění výpočtu slev tato operace spustí výpočet pro aktuální transakci. | Ano | Ano | Ne | Ano | Ne |
 | 642 | Vyvézt všechny produkty | Nastavte způsob dodání pro všechny řádky na **Carryout**. | Ano | Ano | Ne | Ano\* | Ne |
 | 641 | Vyvézt vybrané produkty | Nastavte způsob dodání pro zvolené řádky na **Carryout**. | Ano | Ano | Ne | Ano\* | Ne |
+| 647 | Změnit způsob dodávky | Změní způsob dodání pro předem konfigurované řádky prodeje týkající se expedice. | Ano | Ano | Ne | Ne| Ne |
 | 1215 | Změnit heslo | Tato operace umožňuje uživateli POS měnit své heslo. | Ano | Ano | Ano | Ne | Ne |
 | 123 | Změnit měrnou jednotku | Změňte měrnou jednotku pro vybranou položku řádku. | Ano | Ano | Ne | Ano | Ne |
 | 639 | Vymazat výchozího prodejního zástupce u transakce | Odstraňte skupinu prodejní provize (obchodního zástupce) z transakce. | Ano | Ano | Ne | Ano | Ne |
@@ -100,6 +103,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 1218 | Vynutit odemčení periferního zařízení | Systém používá tuto operaci interně k odemknutí periferních zařízení v POS. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
 | 520 | Zůstatek dárkového poukazu | Zobrazí zůstatek dárkového poukazu. | Ano | Ano | Ne | Ne | Ne |
 | 708 | Deaktivovat zařízení | Deaktivujte aktuální zařízení, aby ho nebylo možné použít jako pokladnu POS. | Ne | Ne | Ne | Ne | Ne |
+| 804 | Příchozí operace | Přístup k funkcím správy příchozích skladových zásob. | Ano | Ne | Ano | Ne| Ne |
 | 517 | Účty příjmů | Zaznamená peníze, které jsou umístěny do zásuvky s hotovostí z jiného důvodu než kvůli prodeji. | Ano | Ano | Ano | Ano | Ne |
 | 801 | Vyhledávání zásob | Vyhledejte dostupné množství, na objednávce, a množství dostupné pro slíbení (ATP) pro aktuální obchod a další dostupná umístění. | Ano | Ano | Ano | Ne | Ne |
 | 122 | Komentář k faktuře | Tato operace umožňuje uživateli zadat poznámku týkající se aktuální transakce. | Ano | Ano | Ne | Ano | Ne |
@@ -110,11 +114,13 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 301 | Procento řádkové slevy | Zadá procento slevy pro řádkovou položku v transakci. Tato operace se používá pouze pro položky, u nichž lze použít slevu, a pouze v rámci určeného rozmezí slev. | Ano | Ano | Ne | Ano | Ne |
 | 703 | Zamknout pokladnu | Uzamkněte aktuální pokladnu, aby ji nebylo možné použít, ale neodhlašujte aktuálního uživatele. | Ne | Ne | Ne | Ano | Ne |
 | 701 | Odhlásit | Odhlaste aktuálního uživatele z pokladny. | Ano | Ano | Ano | Ano | Ne |
-| 521 | Zůstatek bodů na věrnostní kartě | Zobrazte zůstatek bodů pro konkrétní věrnostní kartu. | Ano | Ano | Žádný | Žádný | Žádný |
+| 521 | Zůstatek bodů na věrnostní kartě | Zobrazte zůstatek bodů pro konkrétní věrnostní kartu. | Ano | Ano | Ne | Ne | Ne |
+| 142 | Správa nákladů | Zobrazení a správa vedlejších nákladů použitých pro transakci. | Ano | Ano | Ne | Ne| Ne |
 | 918 | Spravovat směny | Zobrazí seznam aktivních, pozastavených a bez zadání částky uzavřených směn. | Ano | Ano | Ano | Žádný | Žádný |
 | 914 | Minimalizovat okno POS | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ne |
 | 1 000 | Otevřít zásuvku | Proveďte operaci "bez prodeje" a otevřete aktuálně zvolené zásuvky s hotovostí. | Ano | Ano | Ano | Ano | Žádný |
-| 928 | Plnění objednávek | Tato operace umožňuje uživatelům vydat, zabalit, expedovat nebo odvolat objednávky pro vyzvednutí v obchodě. | Ano | Ano | Ano | Žádný | Žádný |
+| 928 | Plnění objednávek | Tato operace umožňuje uživatelům vydat, zabalit, expedovat nebo odvolat objednávky pro vyzvednutí v obchodě. | Ano | Ano | Ano | Ne | Ne |
+| 805 | Odchozí operace | Funkce přístupu pro správu dodávek odchozích převodních příkazů. | Ano | Ne | Ano | Ne| Ne |
 | 129 | Přepsat daň řádkového produktu | Přepište daň u vybrané položky řádku a použijte jinou konkrétní daň. | Ano | Ano | Ne | Ano | Ne |
 | 1.3.0 | Přepsat daň řádkového produktu ze seznamu | Přepište daň u vybrané položky řádku a použijte daň, kterou uživatel vybere ze seznamu. | Ano | Ano | Ne | Ano | Ne |
 | 127 | Přepsat daň transakce | Přepište daň u transakce a použijte jinou konkrétní daň. | Ano | Ano | Ne | Ano | Ne |
@@ -147,6 +153,7 @@ Následující sloupce určují, kde lze operace vyvolat:
 | 108 | Hledání produktu | Tato operace umožní uživateli vyhledat produkt pomocí navigace na stránku vyhledávání produktu v POS. | Ano | Ano | Ano | Ano | Ne |
 | 633 | Datum vypršení platnosti nabídky | Tato operace umožňuje uživateli zobrazit nebo změnit datum vypršení platnosti prodejní nabídky. | Ano | Ano | Ne | Ano\* | Ne |
 | 627 | Přepočítat | Přepočítejte všechny řádky objednávky odběratele a daně, založené na aktuální konfiguraci. | Ano | Ano | Ne | Ano\* | Ne |
+| 143 | Přepočítání nákladů | Přepočítání automatických nákladů použitých pro objednávku. | Ano | Ano | Ne | Ne| Ne |
 | 515 | Odvolat objednávku | Tato operace umožňuje uživateli hledat a stornovat objednávky odběratele a prodejní nabídky. | Ano | Ano | Ano | Ne | Ne |
 | 504 | Odvolat transakci | Tato operace umožňuje uživateli stornovat dříve pozastavené transakce z aktuálního obchodu. | Ano | Ano | Ne | Ano‡ | Ne |
 | 305 | Uplatnit věrnostní body | Tato operace není podporována. | Nelze použít | Nelze použít | Nelze použít | Nelze použít | Ano |

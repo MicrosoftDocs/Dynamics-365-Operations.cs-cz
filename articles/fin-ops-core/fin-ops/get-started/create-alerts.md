@@ -3,7 +3,7 @@ title: Vytváření pravidel výstrah
 description: Toto téma obsahuje informace o výstrahách a vysvětluje postup při vytvoření pravidla výstrahy, abyste byli upozorněni na události, jako je například následné datum nebo nastalá specifická změna.
 author: tjvass
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c37ddc52ef576a15dd35cc155e99821c74631a46
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180707"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075917"
 ---
 # <a name="create-alert-rules"></a>Vytváření pravidel výstrah
 
@@ -31,7 +31,11 @@ ms.locfileid: "2180707"
 
 Před nastavením pravidla výstrahy rozhodněte, kdy nebo za jakých situací chcete přijímat výstrahy. Pokud víte, o kterých událostech chcete být vyrozuměni, vyhledejte v aplikaci stránku, kde se zobrazují data, která událost způsobila. Událost může být nadcházející datum nebo nastalá specifická změna. Musíte tedy vyhledat stránku, kde je zadáno datum, nebo kde se objevuje pole, které se změní, nebo nový záznam, který je vytvořen. Jakmile máte tyto informace k dispozici, můžete vytvořit pravidlo výstrahy.
 
-Když vytváříte pravidlo výstrahy, je třeba definovat kritéria, která je třeba splnit dříve, než bude spuštěna výstraha. Kritérium můžete považovat například za shodu mezi výskytem události a splněním specifické podmínky. Když dojde k události, systém začne provádět kontrolu podle podmínek, které jsou nastaveny.
+Když vytváříte pravidlo výstrahy, je třeba definovat kritéria, která je třeba splnit dříve, než bude spuštěna výstraha. Kritéria jsou v podstatě shoda mezi výskytem události a splněním specifické podmínky. Když dojde k události, systém začne provádět kontrolu podle podmínek, které jsou nastaveny.
+
+## <a name="ensure-the-alert-batch-jobs-are-running"></a>Zkontrolujte, zda jsou spuštěny dávkové úlohy výstrah
+
+Dávkové úlohy pro změnu dat a výstrahy s datem splatnosti musí být spuštěny, aby bylo možné zpracovat podmínky výstrah a odesílat upozornění. Chcete-li spustit dávkové úlohy, přejděte na **Správa systému** > **Periodické úkoly** > **Výstrahy** a přidejte novou dávkovou úlohu pro **Výstrahy na základě změn** a/nebo **Výstrahy založené na datu plnění**. Je-li vyžadována dlouhodobá a často spuštěná dávková úloha, vyberte **Opakování** a nastavte **Bez koncového data** se **Vzorcem opakování** **Minuty** a **Počet** **1**.
 
 ## <a name="events"></a>Události
 
@@ -70,16 +74,21 @@ Na pevné záložce **Upozornit mě pomocí** dialogového okna **Vytvořit prav
 
 ## <a name="user-id"></a>ID uživatele
 
-Na pevné záložce **Upozornit mě pomocí** dialogového okna **Vytvořit pravidlo výstrahy** můžete určit, který uživatel by měl přijímat zprávy s výstrahou. ID uživatele je ve výchozím nastavení vybráno. Tato možnost je omezen na správce organizace.
+Na pevné záložce **Upozornit mě pomocí** dialogového okna **Vytvořit pravidlo výstrahy** můžete určit, který uživatel by měl přijímat zprávy s výstrahou. ID uživatele je ve výchozím nastavení vybráno. Možnost změny uživatele, který výstrahu obdrží, je omezena pouze na správce organizace.
+
+## <a name="alerts-as-business-events"></a>Výstrahy jako obchodní události
+
+Výstrahy lze externě odesílat pomocí architektury obchodních událostí. Při vytváření výstrahy nastavte **Pro celou organizaci** na **Ne** a **Odeslat externě** na **Ano**. Po aktivaci obchodní události pomocí výstrahy můžete spustit tok vestavěný v Power Automate pomocí spouštěče **Při výskytu obchodní události** v konektoru Finance and Operations nebo explicitně odeslat událost do koncového bodu obchodních událostí prostřednictvím **Katalogu obchodních událostí**.
 
 ## <a name="create-an-alert-rule"></a>Vytvoření pravidla výstrahy
 
+0. Zkontrolujte, zda jsou spuštěny dávkové úlohy výstrah (viz výše).
 1. Otevřete stránku obsahující data, která chcete sledovat.
 2. V podokně akcí na kartě **Možnosti** ve skupině **Sdílení** vyberte **vytvořit pravidlo výstrahy**.
 3. V dialogovém okně **Vytvořit pravidlo výstrahy**, v poli **Pole** vyberte pole, které chcete sledovat.
 4. V poli **Událost** vyberte typ události.
-5. Na pevné záložce **upozornit mě na** vyberte jednu z možností.
+5. Na pevné záložce **Upozornit mě na** vyberte požadovanou možnost. Chcete-li odeslat výstrahu jako obchodní událost, zkontrolujte, že je možnost **Pro celou organizaci** nastavena na **Ne**.
 6. Pokud by se pravidlo výstrahy mělo deaktivovat v určité datum, vyberte na pevné záložce **Upozornit mě do** koncové datum.
-7. Na pevné záložce **Upozornit mě pomocí** v poli **Předmět** přijměte výchozí text předmětu e-mailové zprávy nebo zadejte nový předmět. Text se používá jako předmět e-mailové zprávy, kterou obdržíte, když se aktivuje výstraha.
+7. Na pevné záložce **Upozornit mě pomocí** v poli **Předmět** přijměte výchozí text předmětu e-mailové zprávy nebo zadejte nový předmět. Text se používá jako předmět e-mailové zprávy, kterou obdržíte, když se aktivuje výstraha. Chcete-li odeslat výstrahu jako obchodní událost, nastavte možnost **Odeslat externě** na **Ano**.
 8. Do pole **Zpráva** zadejte libovolnou zprávu. Text, který bude používán jako zpráva, kterou dostanete při spuštění výstrahy.
 9. Zvolte **OK**, chcete-li uložit nastavení a vytvořit pravidlo výstrahy.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de0981d3200c2b1d62cab7600d2382bd11dd4b20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002236"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057826"
 ---
 # <a name="cloud-powered-search-overview"></a>Přehled hledání využívajícího cloud
 
@@ -33,7 +33,7 @@ Toto téma poskytuje přehled o cloudovém vyhledávání v řešení Microsoft 
 
 ## <a name="overview"></a>Přehled
 
-Možnost vyhledání produktu pomáhá zajistit, že zákazníci mohou snadno a rychle vyhledávat produkty pomocí procházení kategorií, vyhledávání a filtrování. Maloobchodní prodejci považují vyhledání produktu za primární nástrojem pro interakci se zákazníkem ve všech maloobchodních sítích.
+Možnost vyhledání produktu pomáhá zajistit, že zákazníci mohou snadno a rychle vyhledávat produkty pomocí procházení kategorií, vyhledávání a filtrování. Maloobchodní prodejci považují vyhledání produktu za primární nástrojem pro interakci se zákazníkem ve všech kanálech.
 
 Zákazníci jsou zvyklí na téměř okamžitou odezvu webových vyhledávačů, sofistikovaných webů elektronických obchodů, sociálních aplikací, automatických návrhů, které se zobrazují při zadávání hledaných podmínek, fasetové navigace a zvýrazňování. Pokud zákazníci nenaleznou požadovaný produkt v jednom elektronickém obchodě, bez váhání přejdou do jiného elektronického obchodu.
 

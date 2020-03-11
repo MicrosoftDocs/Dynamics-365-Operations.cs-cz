@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6ec42ab920868f541eeac54556f4f24cb1efaa3a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 42448bd54c00b8642b158f422e17d2b46ee25579
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002443"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057872"
 ---
 # <a name="set-up-a-call-center-channel"></a>Nastavení kanálu kontaktního střediska
 
@@ -33,7 +33,7 @@ Toto téma popisuje, jak vytvořit kanálu kontaktního střediska v řešení M
 
 ## <a name="overview"></a>Přehled
 
-V aplikaci Dynamics 365 Commerce je kontaktní středisko typu maloobchodní sítě, které lze definovat v aplikaci. Definování kanálu pro entity kontaktního střediska umožňuje systému zařadit specifická data a zpracovat výchozí hodnoty do prodejních objednávek. Společnost může definovat ve více kanálů kontaktního střediska v aplikaci Commerce. 
+V aplikaci Dynamics 365 Commerce je kontaktní středisko typu kanálu, který lze definovat v aplikaci. Definování kanálu pro entity kontaktního střediska umožňuje systému zařadit specifická data a zpracovat výchozí hodnoty do prodejních objednávek. Společnost může definovat ve více kanálů kontaktního střediska v aplikaci Commerce. 
 
 Před vytvořením nového kanálu kontaktního centra se ujistěte, že jste splnili [Požadavky pro zřízení kanálů](channels-prerequisites.md).
 

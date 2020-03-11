@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac0910d213ee05a2a7a7b218a6714d4f935be16
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 8a52dbce29140591baf4be97baef237dce1f2511
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916745"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040841"
 ---
 # <a name="QRCODE">Funkce elektronického výkaznictví QRCODE</a>
 
@@ -33,7 +33,7 @@ Funkce `QRCODE` vrátí hodnotu typu *kontejner*, která představuje kód rychl
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```vb
 QRCODE (text)
 ```
 
@@ -53,7 +53,7 @@ Výsledný binární datový proud.
 
 Můžete nakonfigurovat formát elektronického výkaznictví (ER) pro vygenerování odchozího dokumentu ve formátu Microsoft Office (sešity aplikace Excel nebo dokumenty aplikace Word) pomocí předdefinované šablony. Tato šablona může obsahovat objekt **obrázku** (sešit aplikace Excel) nebo **ovládací prvek obsahu obrázku** (dokument aplikace Word) jako zástupný symbol pro obrázek kódu QR. Do nakonfigurovaného formátu ER je třeba přidat prvek **buňky**, který se použije k vyplnění tohoto zástupného symbolu. Chcete-li určit, jaké informace budou uloženy v kódu QR, musíte definovat vazbu pro tento prvek **buňky**. Můžete například nakonfigurovat vazbu obsahující následující výraz:
 
-```
+```vb
 QRCODE (model.ListOfShelfLabels.LabelText)`
 ```
 

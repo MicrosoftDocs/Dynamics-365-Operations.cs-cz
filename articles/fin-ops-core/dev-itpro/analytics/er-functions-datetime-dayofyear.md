@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1080a1c2e30cd7ca64ea43120c11eb90d3c99416
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d24aabb582151b0b357b64a988cc932a9c9f3cea
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916331"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070660"
 ---
 # <a name="DAYOFYEAR">Funkce el. výkaznictví DAYOFYEAR</a>
 
@@ -33,7 +33,7 @@ Funkce `DAYOFYEAR` vrátí hodnotu typu *celé číslo*, které představuje po�
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```vb
 DAYOFYEAR (date) as Integer
 ```
 

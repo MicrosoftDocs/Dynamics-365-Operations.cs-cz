@@ -3,7 +3,7 @@ title: Zřízení Human Resources
 description: ''
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f3a7987a9b385fb6ba0294dc46b0d66be8228f06
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f105144047c64fc8e9d42da8d7525a8cc3912c33
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026260"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071607"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -62,9 +62,6 @@ Po vytvoření LCS projektu můžete zařadit aplikaci Human Resources do prost�
 3. Pokud chcete, aby prostředí obsahovalo stejnou demonstrační datovou sadu, jaká se používá v prostředí zkušební ukázky aplikace Human Resources, zaškrtněte políčko **Zahrnout ukázková data**. To je vhodné pro dlouhodobá demonstrační nebo školicí prostředí a nikdy se nemá používat pro výrobní prostředí.  Tuto možnost musíte zvolit při počátečním nasazení. Existující nasazení nelze aktualizovat později.
 
 4. Aplikace Human Resources bude vždy zařazena v prostředí Microsoft Power Apps, aby byla možná integrace a rozšiřitelnost Power Apps. Než budete pokračovat, přečtěte si část Výběr prostředí Power Apps v tomto článku. Pokud již nemáte prostředí Power Apps, vyberte správu prostředí v LCS nebo přejděte do centra pro správu Power Apps. Poté postupujte podle kroků k [Vytvoření prostředí Power Apps](https://docs.microsoft.com/powerapps/administrator/create-environment).
-
-    > [!NOTE]
-    > K zobrazení existujících prostředí nebo vytváření nových prostředí musí být správce klienta zřizujícího aplikaci Human Resources přiřazen k licenci Power Apps P2. Pokud vaše organizace nemá Power Apps P2 licenci, můžete jednu získat ze svého CSP nebo ze stránky s cenami [Power Apps](https://powerapps.microsoft.com/pricing/).
 
 5. Vyberte prostředí, do kterého chcete zřídit aplikaci Human Resources.
 
