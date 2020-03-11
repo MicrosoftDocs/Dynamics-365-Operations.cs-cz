@@ -18,49 +18,49 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80f0606dc3842cdfa56d41e2815eccd7518218b8
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 6eeb66f4206eb39141a5b2573fcb9d15428ae52a
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916515"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042640"
 ---
-# <span data-ttu-id="66daa-103"><a name="NUMBERVALUE">Funkce NUMBERVALUE ER</a></span><span class="sxs-lookup"><span data-stu-id="66daa-103"><a name="NUMBERVALUE">NUMBERVALUE ER function</a></span></span>
+# <span data-ttu-id="2c0fa-103"><a name="NUMBERVALUE">Funkce NUMBERVALUE ER</a></span><span class="sxs-lookup"><span data-stu-id="2c0fa-103"><a name="NUMBERVALUE">NUMBERVALUE ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="66daa-104">Funkce `NUMBERVALUE` vrací hodnotu *reálné číslo*, která je převedena ze zadané hodnoty *Řetězec*.</span><span class="sxs-lookup"><span data-stu-id="66daa-104">The `NUMBERVALUE` function returns a *Real* value that is converted from the specified *String* value.</span></span> <span data-ttu-id="66daa-105">Během převodu se uvažují určené oddělovače skupin desetinných míst a číslic.</span><span class="sxs-lookup"><span data-stu-id="66daa-105">During the conversion, the specified decimal and digit grouping separators are considered.</span></span>
+<span data-ttu-id="2c0fa-104">Funkce `NUMBERVALUE` vrací hodnotu *reálné číslo*, která je převedena ze zadané hodnoty *Řetězec*.</span><span class="sxs-lookup"><span data-stu-id="2c0fa-104">The `NUMBERVALUE` function returns a *Real* value that is converted from the specified *String* value.</span></span> <span data-ttu-id="2c0fa-105">Během převodu se uvažují určené oddělovače skupin desetinných míst a číslic.</span><span class="sxs-lookup"><span data-stu-id="2c0fa-105">During the conversion, the specified decimal and digit grouping separators are considered.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="66daa-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="66daa-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2c0fa-106">Syntaxe</span><span class="sxs-lookup"><span data-stu-id="2c0fa-106">Syntax</span></span>
 
-```
+```vb
 NUMBERVALUE (text, decimal separator, digit grouping separator)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="66daa-107">Argumenty</span><span class="sxs-lookup"><span data-stu-id="66daa-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="2c0fa-107">Argumenty</span><span class="sxs-lookup"><span data-stu-id="2c0fa-107">Arguments</span></span>
 
-<span data-ttu-id="66daa-108">`text`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="66daa-108">`text`: *String*</span></span>
+<span data-ttu-id="2c0fa-108">`text`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="2c0fa-108">`text`: *String*</span></span>
 
-<span data-ttu-id="66daa-109">Textová hodnota, která musí být převedena na *reálné* číslo.</span><span class="sxs-lookup"><span data-stu-id="66daa-109">A text value that must be converted to a *Real* number.</span></span>
+<span data-ttu-id="2c0fa-109">Textová hodnota, která musí být převedena na *reálné* číslo.</span><span class="sxs-lookup"><span data-stu-id="2c0fa-109">A text value that must be converted to a *Real* number.</span></span>
 
-<span data-ttu-id="66daa-110">`decimal separator`: řetězec</span><span class="sxs-lookup"><span data-stu-id="66daa-110">`decimal separator`: String</span></span>
+<span data-ttu-id="2c0fa-110">`decimal separator`: řetězec</span><span class="sxs-lookup"><span data-stu-id="2c0fa-110">`decimal separator`: String</span></span>
 
-<span data-ttu-id="66daa-111">Desetinný oddělovač.</span><span class="sxs-lookup"><span data-stu-id="66daa-111">A decimal separator.</span></span> <span data-ttu-id="66daa-112">Používá se k oddělení celého čísla a zlomkových částí desetinného čísla.</span><span class="sxs-lookup"><span data-stu-id="66daa-112">It's used to separate the integer and fractional parts of a decimal number.</span></span>
+<span data-ttu-id="2c0fa-111">Desetinný oddělovač.</span><span class="sxs-lookup"><span data-stu-id="2c0fa-111">A decimal separator.</span></span> <span data-ttu-id="2c0fa-112">Používá se k oddělení celého čísla a zlomkových částí desetinného čísla.</span><span class="sxs-lookup"><span data-stu-id="2c0fa-112">It's used to separate the integer and fractional parts of a decimal number.</span></span>
 
-<span data-ttu-id="66daa-113">`digit grouping separator`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="66daa-113">`digit grouping separator`: *String*</span></span>
+<span data-ttu-id="2c0fa-113">`digit grouping separator`: *řetězec*</span><span class="sxs-lookup"><span data-stu-id="2c0fa-113">`digit grouping separator`: *String*</span></span>
 
-<span data-ttu-id="66daa-114">Oddělovač skupin číslic.</span><span class="sxs-lookup"><span data-stu-id="66daa-114">A digit grouping separator.</span></span> <span data-ttu-id="66daa-115">Používá se jako oddělovač tisíců.</span><span class="sxs-lookup"><span data-stu-id="66daa-115">It's used as the thousands separator.</span></span>
+<span data-ttu-id="2c0fa-114">Oddělovač skupin číslic.</span><span class="sxs-lookup"><span data-stu-id="2c0fa-114">A digit grouping separator.</span></span> <span data-ttu-id="2c0fa-115">Používá se jako oddělovač tisíců.</span><span class="sxs-lookup"><span data-stu-id="2c0fa-115">It's used as the thousands separator.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="66daa-116">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="66daa-116">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="2c0fa-116">Vrácené hodnoty</span><span class="sxs-lookup"><span data-stu-id="2c0fa-116">Return values</span></span>
 
-<span data-ttu-id="66daa-117">*Reálný*</span><span class="sxs-lookup"><span data-stu-id="66daa-117">*Real*</span></span>
+<span data-ttu-id="2c0fa-117">*Reálný*</span><span class="sxs-lookup"><span data-stu-id="2c0fa-117">*Real*</span></span>
 
-<span data-ttu-id="66daa-118">Výsledná číselná hodnota.</span><span class="sxs-lookup"><span data-stu-id="66daa-118">The resulting numeric value.</span></span>
+<span data-ttu-id="2c0fa-118">Výsledná číselná hodnota.</span><span class="sxs-lookup"><span data-stu-id="2c0fa-118">The resulting numeric value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="66daa-119">Příklad</span><span class="sxs-lookup"><span data-stu-id="66daa-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2c0fa-119">Příklad</span><span class="sxs-lookup"><span data-stu-id="2c0fa-119">Example</span></span>
 
-<span data-ttu-id="66daa-120">`NUMBERVALUE( "1 234,56", ",", " ")` vrací **1234.56**.</span><span class="sxs-lookup"><span data-stu-id="66daa-120">`NUMBERVALUE( "1 234,56", ",", " ")` returns **1234.56**.</span></span>
+<span data-ttu-id="2c0fa-120">`NUMBERVALUE( "1 234,56", ",", " ")` vrací **1234.56**.</span><span class="sxs-lookup"><span data-stu-id="2c0fa-120">`NUMBERVALUE( "1 234,56", ",", " ")` returns **1234.56**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="66daa-121">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="66daa-121">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="2c0fa-121">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="2c0fa-121">Additional resources</span></span>
 
-[<span data-ttu-id="66daa-122">Funkce převodu typu</span><span class="sxs-lookup"><span data-stu-id="66daa-122">Type conversion functions</span></span>](er-functions-category-type-conversion.md)
+[<span data-ttu-id="2c0fa-122">Funkce převodu typu</span><span class="sxs-lookup"><span data-stu-id="2c0fa-122">Type conversion functions</span></span>](er-functions-category-type-conversion.md)

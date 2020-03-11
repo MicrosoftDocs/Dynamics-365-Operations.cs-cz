@@ -3,7 +3,7 @@ title: Domovská stránka Co je nového a co se změnilo v aplikaci Finance and 
 description: Tato stránka obsahuje odkazy na témata, které můžete pomoci k získání informací o nových funkcích v nejnovější verzi aplikace Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 01/31/2020
+ms.date: 02/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,31 +18,37 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 70901bedff1babadff6586aa2f584db87d71bcc7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 39f72c534c7179f4535e6eb8a31ef7e9b72b7b88
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003776"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076017"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a><span data-ttu-id="1ec29-103">Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="1ec29-103">What's new or changed in Finance and Operations apps home page</span></span>
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a><span data-ttu-id="0c65b-103">Domovská stránka Co je nového a co se změnilo v aplikaci Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="0c65b-103">What's new or changed in Finance and Operations apps home page</span></span>
 [!include [banner](../includes/banner.md)]
 
 
 [!include [release notes](../includes/release-notes.md)]
 
-## <a name="application-releases"></a><span data-ttu-id="1ec29-104">Verze aplikace</span><span class="sxs-lookup"><span data-stu-id="1ec29-104">Application releases</span></span>
+## <a name="application-releases"></a><span data-ttu-id="0c65b-104">Verze aplikace</span><span class="sxs-lookup"><span data-stu-id="0c65b-104">Application releases</span></span>
 
-<span data-ttu-id="1ec29-105">Chcete-li zjistit, co je nového nebo změněné v každém vydání aplikace Finance and Operations, naleznete to v následujících tématech:</span><span class="sxs-lookup"><span data-stu-id="1ec29-105">To see what's new or changed in each release of a Finance and Operations app, see the following topics:</span></span>
+<span data-ttu-id="0c65b-105">Chcete-li zjistit, co je nového nebo změněné v každém vydání aplikace Finance and Operations, naleznete to v následujících tématech:</span><span class="sxs-lookup"><span data-stu-id="0c65b-105">To see what's new or changed in each release of a Finance and Operations app, see the following topics:</span></span>
 
-- <span data-ttu-id="1ec29-106">**Finance:** [Co je nového a co se změnilo v aplikaci Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="1ec29-106">**Finance:** [What's new or changed in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)</span></span> 
-- <span data-ttu-id="1ec29-107">**Supply Chain Management:** [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="1ec29-107">**Supply Chain Management:** [What's new or changed in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md)</span></span> 
-- <span data-ttu-id="1ec29-108">**Commerce:** [Co je nového a co se změnilo v aplikaci Dynamics 365 Commerce](../../../retail/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="1ec29-108">**Commerce:** [What's new or changed in Dynamics 365 Commerce](../../../retail/get-started/whats-new-home-page.md)</span></span>
+- <span data-ttu-id="0c65b-106">**Finance:** [Co je nového a co se změnilo v aplikaci Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="0c65b-106">**Finance:** [What's new or changed in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md)</span></span> 
+- <span data-ttu-id="0c65b-107">**Supply Chain Management:** [Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="0c65b-107">**Supply Chain Management:** [What's new or changed in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md)</span></span> 
+- <span data-ttu-id="0c65b-108">**Commerce:** [Co je nového a co se změnilo v aplikaci Dynamics 365 Commerce](../../../retail/get-started/whats-new-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="0c65b-108">**Commerce:** [What's new or changed in Dynamics 365 Commerce](../../../retail/get-started/whats-new-home-page.md)</span></span>
+- <span data-ttu-id="0c65b-109">**Human Resources:** [Co je nového a co se změnilo v Dynamics 365 Human Resources](../../../human-resources/hr-admin-whats-new.md)</span><span class="sxs-lookup"><span data-stu-id="0c65b-109">**Human Resources:** [What's new or changed in Dynamics 365 Human Resources](../../../human-resources/hr-admin-whats-new.md)</span></span>
 
-## <a name="platform-updates"></a><span data-ttu-id="1ec29-109">Aktualizace Platform</span><span class="sxs-lookup"><span data-stu-id="1ec29-109">Platform updates</span></span>
+## <a name="platform-updates"></a><span data-ttu-id="0c65b-110">Aktualizace Platform</span><span class="sxs-lookup"><span data-stu-id="0c65b-110">Platform updates</span></span>
 
-<span data-ttu-id="1ec29-110">Chcete-li zjistit, co je nového nebo změněné v aktualizacích platformy pro aplikace Finance and Operations, přečtěte si následující téma:</span><span class="sxs-lookup"><span data-stu-id="1ec29-110">To see what's new or changed in the Platform updates for Finance and Operations apps, see the following topic:</span></span>
+<span data-ttu-id="0c65b-111">Chcete-li zjistit, co je nového nebo změněné v aktualizacích platformy pro aplikace Finance and Operations, přečtěte si následující téma:</span><span class="sxs-lookup"><span data-stu-id="0c65b-111">To see what's new or changed in the Platform updates for Finance and Operations apps, see the following topic:</span></span>
 
-- [<span data-ttu-id="1ec29-111">Co je nového a co se změnilo v aktualizacích Platform Update</span><span class="sxs-lookup"><span data-stu-id="1ec29-111">What's new or changed in Platform updates</span></span>](../../dev-itpro/get-started/whats-new-home-page.md)
+- [<span data-ttu-id="0c65b-112">Co je nového a co se změnilo v aktualizacích Platform Update</span><span class="sxs-lookup"><span data-stu-id="0c65b-112">What's new or changed in Platform updates</span></span>](../../dev-itpro/get-started/whats-new-home-page.md)
+
+## <a name="lifecycle-services-releases"></a><span data-ttu-id="0c65b-113">Vydání Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="0c65b-113">Lifecycle Services releases</span></span>
+<span data-ttu-id="0c65b-114">Chcete-li zjistit, co je nového nebo co se změnilo v Lifecycle Services, naleznete to v následujícím tématu:</span><span class="sxs-lookup"><span data-stu-id="0c65b-114">To see what's new or changed in Lifecycle Services, see the following topic:</span></span>
+
+- [<span data-ttu-id="0c65b-115">Co je nového a co se změnilo v Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="0c65b-115">What's new or changed in Lifecycle Services (LCS)</span></span>](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
