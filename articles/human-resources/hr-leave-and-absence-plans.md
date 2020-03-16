@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 08fb278a3de0c06715dcd9c252ee6c21b2172cff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
+ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008395"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087293"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Vytvoření plánu volna a absence
 
@@ -61,8 +61,8 @@ Můžete také vytvářet zaměstnanecké výhody na základě pozice, napříkl
 
       | Základ období časového rozlišení | Popis |
       | --- | --- |
-      | Počáteční datum plánu | Počáteční datum období časového rozlišení je datem, kdy je plán k dispozici. |
-      | Datum specifické pro zaměstnance | Počáteční datum období časového rozlišení závisí na události zaměstnance:</br><ul><li>Vlastní (pro každou registraci je nutné zadat základ data časového rozlišení)</li><li>Datum výročí</li><li>Datum původního přijetí</li><li>Datum služebního věku</li><li>Upravené počáteční datum pracovníka</li><li>Počáteční datum pracovníka</li></ul> |
+      | **Počáteční datum plánu** | Počáteční datum období časového rozlišení je datem, kdy je plán k dispozici. |
+      | **Datum specifické pro zaměstnance** | Počáteční datum období časového rozlišení závisí na události zaměstnance:</br><ul><li>Vlastní (pro každou registraci je nutné zadat základ data časového rozlišení)</li><li>Datum výročí</li><li>Datum původního přijetí</li><li>Datum služebního věku</li><li>Upravené počáteční datum pracovníka</li><li>Počáteční datum pracovníka</li></ul> |
 
    3. Vyberte možnost z rozevíracího seznamu **Časově rozlišené datum přidělení**:
 

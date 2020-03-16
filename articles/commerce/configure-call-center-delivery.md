@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9f043d66fbd417633de71b5fa12b13b3f04e3452
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021831"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057803"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurace způsobů dodání a poplatků call centra
 
@@ -66,7 +66,7 @@ Náklady lze konfigurovat tak, aby se použily pro konkrétní způsob dodání,
 
 V oddílu **řádky** lze definovat jeden nebo více nákladů podle měny, jak potřebujete. Náklady musí být spojeny s kódem nákladů, který definuje pravidla zaúčtování pro náklady. Pole **Kategorie** se používá k definování, jak byly vypočítány náklady. Pokud by například mělo být zákazníkovi účtováno 9,95 USD, aby mu byla expedována objednávka podle konkrétního způsobu dodání, použijte kategorii **Pevné**. Pokud se firma rozhodne zpoplatnit odběratele procentem celkové částky objednávky k pokrytí nákladů na dodání, použijte kategorii **procento**. Skutečné náklady pro odběratele jsou definovány v poli **náklady**.
 
-Maloobchodní společnosti často konfigurují vrstvené poplatky. Částka, kterou odběratelé platí za dodání, je v tomto případě založena na hodnotě objednávky. Chcete-li konfigurovat vrstvené poplatky, zadejte hodnoty do pole **od částky** a **do částky** a také definujte náklady na vlastní poplatky v poli **náklady**. Například u objednávek, které mají hodnotu, která je nižší než $50, účtuje prodejce $5,95 pro expedici po zemi. Pro objednávky, které mají hodnotu, která je rovno nebo větší než $50, ale méně než $100, prodejce účtuje $7.95. A nakonec pro objednávky, které mají hodnotu, která je rovna nebo větší než $100, prodejce poskytuje dodání zdarma. Následující obrázek znázorňuje konfiguraci těchto nákladů.
+Společnosti často konfigurují vrstvené poplatky. Částka, kterou odběratelé platí za dodání, je v tomto případě založena na hodnotě objednávky. Chcete-li konfigurovat vrstvené poplatky, zadejte hodnoty do pole **od částky** a **do částky** a také definujte náklady na vlastní poplatky v poli **náklady**. Například u objednávek, které mají hodnotu, která je nižší než $50, účtuje prodejce $5,95 pro expedici po zemi. Pro objednávky, které mají hodnotu, která je rovno nebo větší než $50, ale méně než $100, prodejce účtuje $7.95. A nakonec pro objednávky, které mají hodnotu, která je rovna nebo větší než $100, prodejce poskytuje dodání zdarma. Následující obrázek znázorňuje konfiguraci těchto nákladů.
 
 ![Příklad pevných vrstvených poplatků](media/fixedtieredcharges.png)
 

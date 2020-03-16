@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1fffc7141c041873f39f716aaf1a775984ef499c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021815"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057687"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Výběr mezi Modern POS (MPOS) a Cloud POS
 
@@ -60,7 +60,7 @@ Přestože MPOS a CPOS jsou převážně stejné, existují některé důležit�
 MPOS na zařízeních se systémem Windows, iOS nebo Android je aplikace, která je zabalená, nainstalována a servisovaná na takovém zařízení.
 
 - **Windows** – MPOS pro aplikaci Windows obsahuje celý kód aplikace a integrovanou službu commerce runtime (CRT). 
-- **iOS/Android** – Na těchto platformách se aplikace chová jako hostitel pro kód aplikace CPOS. Jinak řečeno, kód aplikace pochází ze serveru CPOS na Microsoft Azure nebo Commerce Scale Unit. Další informace naleznete v tématech [Přehled Retail Store Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – Na těchto platformách se aplikace chová jako hostitel pro kód aplikace CPOS. Jinak řečeno, kód aplikace pochází ze serveru CPOS na Microsoft Azure nebo Commerce Scale Unit. Další informace naleznete v tématu [přehled Commerce Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### <a name="cpos"></a>CPOS
 

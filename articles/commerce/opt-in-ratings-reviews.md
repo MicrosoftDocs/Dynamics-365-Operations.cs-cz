@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eda7fbaeea8d3c1a07f7b43cafe44886d149a211
-ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
+ms.openlocfilehash: cbdb69202ebec19f4442041cfb1f99857da36d2e
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027258"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057503"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Připojení k používání hodnocení a recenzí
 
@@ -61,6 +61,6 @@ Chcete-li se přihlásit k používání hodnocení a recenzí na vašem webu, p
 
 [Konfigurace hodnocení a recenzí](configure-ratings-reviews.md)
 
-[Synchronizace hodnocení produktů v Dynamics 365 Retail](sync-product-ratings.md)
+[Synchronizace hodnocení produktů v Dynamics 365 Commerce](sync-product-ratings.md)
 
 

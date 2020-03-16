@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3f2616fd98b37576625d9586a1cda29ce1b89f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021917"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057480"
 ---
 # <a name="retail-sales-price-management"></a>Správa maloobchodní prodejní ceny
 
@@ -43,23 +43,23 @@ V tomto tématu se používají následující termíny:
 
 ## <a name="price-groups"></a>Cenové skupiny
 
-Cenové skupiny jsou centrem správy cen a slev v aplikaci Commerce. Cenové skupiny slouží k přiřazení cen a slev k maloobchodním entitám (kanálům, katalogům, umístěním a věrnostním programům). Vzhledem k tomu, že se pro všechny ceny a slevy používají cenové skupiny, je velmi důležité, abyste naplánovali, jak je budete používat, než začnete.
+Cenové skupiny jsou centrem správy cen a slev v aplikaci Commerce. Cenové skupiny slouží k přiřazení cen a slev k entitám Commerce (kanálům, katalogům, umístěním a věrnostním programům). Vzhledem k tomu, že se pro všechny ceny a slevy používají cenové skupiny, je velmi důležité, abyste naplánovali, jak je budete používat, než začnete.
 
-Cenová skupina je sama o sobě pouze název, popis, popřípadě priorita cenové kalkulace. Hlavním bodem týkajícím se cenových skupin, který je třeba mít na paměti, je to, že se používají ke správě vztahů N:N, které mají slevy a ceny s maloobchodními subjekty.
+Cenová skupina je sama o sobě pouze název, popis, popřípadě priorita cenové kalkulace. Hlavním bodem týkajícím se cenových skupin, který je třeba mít na paměti, je to, že se používají ke správě vztahů N:N, které mají slevy a ceny s entitami Commerce.
 
-Následující obrázek znázorňuje, jak se cenové skupiny používají. Na tomto obrázku si všimněte, že „Cenová skupina“ je doslova centrem správy cen a slev. Maloobchodní jednotky, které můžete použít ke správě rozdílových cen a slev, jsou vlevo, a záznamy skutečné ceny a slevy se nacházejí napravo.
+Následující obrázek znázorňuje, jak se cenové skupiny používají. Na tomto obrázku si všimněte, že „Cenová skupina“ je doslova centrem správy cen a slev. Enity Commerce, které můžete použít ke správě rozdílových cen a slev, jsou vlevo, a záznamy skutečné ceny a slevy se nacházejí napravo.
 
 ![Cenové skupiny](./media/PriceGroups.png "Cenové skupiny")
 
-Při vytvoření cenových skupin nepoužívejte jednu cenovou skupinu pro více typů maloobchodních entit. V opačném případě může být obtížné určit, proč se konkrétní cena nebo sleva použije na transakci.
+Při vytvoření cenových skupin nepoužívejte jednu cenovou skupinu pro více typů entit Commerce. V opačném případě může být obtížné určit, proč se konkrétní cena nebo sleva použije na transakci.
 
 Jak ukazuje červená čárkovaná čára na obrázku, Commerce podporuje základní funkcionalitu Microsoft Dynamics 365 cenové skupiny, která je nastavena přímo na odběrateli. V takovém případě však dostanete pouze obchodní smlouvy s prodejní cenou. Pokud chcete použít ceny specifické pro odběratele, doporučujeme, abyste nenastavovali cenové skupiny přímo na odběrateli. Namísto toho bude vhodnější použít umístění.
 
-Následující části poskytují více informací o maloobchodních entitách, které můžete použít pro stanovení odlišných cen při používání cenových skupin. Konfigurace cen a slev pro všechny tyto entity je dvoustupňový proces. Tyto kroky lze provést v libovolném pořadí. Nicméně logické pořadí je nejprve nastavit cenové skupiny na entitách, protože tento krok je pravděpodobně jednorázové nastavení, které se provede během implementace. Poté, když se vytvoří ceny a slevy, můžete nastavit cenové skupiny na těchto cenách a slevách individuálně.
+Následující části poskytují více informací o entitách Commerce, které můžete použít pro stanovení odlišných cen při používání cenových skupin. Konfigurace cen a slev pro všechny tyto entity je dvoustupňový proces. Tyto kroky lze provést v libovolném pořadí. Nicméně logické pořadí je nejprve nastavit cenové skupiny na entitách, protože tento krok je pravděpodobně jednorázové nastavení, které se provede během implementace. Poté, když se vytvoří ceny a slevy, můžete nastavit cenové skupiny na těchto cenách a slevách individuálně.
 
 ### <a name="channels"></a>Kanály
 
-Pro oblast maloobchodu je typické mít různé ceny v různých kanálech. Dva hlavní faktory, které ovlivňují ceny specifické pro daný kanál, jsou náklady a místní tržní podmínky.
+Pro oblast obchodu je typické mít různé ceny v různých kanálech. Dva hlavní faktory, které ovlivňují ceny specifické pro daný kanál, jsou náklady a místní tržní podmínky.
 
 - **Náklady** – čím dál je kanál od zdroje produktu, tím větší jsou náklady za skladování produktu. Například čerstvé produkty mají omezenou trvanlivost a zvláštní výrobní požadavky (např. vegetační období). Během zimy stojí čerstvý salát pravděpodobně více v severním klimatu než v jižních klimatech. Pokud nastavujete ceny pro kanály napříč velkou zeměpisnou oblastí, pravděpodobně budete chtít nastavit různé ceny v různých kanálech.
 - **Místní tržní podmínky** – obchod, který má přímého konkurenta přes ulici, bude mnohem cenově citlivější než obchod, který v blízkosti přímého konkurenta nemá.
@@ -84,7 +84,7 @@ Někteří maloobchodníci používají fyzické nebo virtuální katalogy k uv�
 
 ### <a name="best-practices-for-price-groups"></a>Doporučené postupy pro cenové skupiny
 
-Nepoužívejte cenovou skupinu pro více typů entit maloobchodu. Namísto toho použijte jednu sadu cenových skupin pro kanály, jinou sadu cenových skupin pro umístění nebo věrnostní programy, atd. Můžete použít předponu nebo příponu v názvu cenové skupiny pro vizuální seskupení různých typů cenových skupin, které používáte.
+Nepoužívejte cenovou skupinu pro více typů entit. Namísto toho použijte jednu sadu cenových skupin pro kanály, jinou sadu cenových skupin pro umístění nebo věrnostní programy, atd. Můžete použít předponu nebo příponu v názvu cenové skupiny pro vizuální seskupení různých typů cenových skupin, které používáte.
 
 Vyhněte se nastavování cenových skupin přímo na zákazníka. Použijte místo toho umístění. Tímto způsobem můžete přiřadit zákazníkům všechny typy cen a slev, a to nejen obchodní smlouvy s prodejní cenou.+
 
@@ -98,7 +98,7 @@ Chcete-li použít cenovou prioritu pro ceny, musíte přiřadit cenovou priorit
 
 Funkce cenové priority byla zavedena pro podporu scénáře, kdy maloobchodník chce uplatnit vyšší ceny v určité sadě obchodů. Například maloobchodník definoval regionální ceny pro východní pobřeží Spojených států, ale požaduje vyšší ceny některých produktů v obchodech v New Yorku, protože náklady na prodej některých produktů ve městě jsou vyšší anebo protože místní trh snese vyšší cenu.
 
-Jak bylo popsáno v sekci Nejlepší cena v tomto tématu, maloobchodní cenový modul obvykle vybírá nižší ze dvou cen. Proto je maloobchodníkovi obvykle zabráněno, aby použil vyšší cenu ze dvou cen v obchodě, který má cenové skupiny na východním pobřeží i v New Yorku. Pro vyřešení tohoto problému předtím, než byla zavedena funkce s prioritní cenou, musel maloobchodník dvakrát definovat ceny pro každý produkt a nepřiřadit obě cenové skupiny. Případně prodejce musel vytvořit další cenové skupiny, aby izoloval produkty s vyšší cenou od produktů, které mají obvyklé nižší ceny.
+Jak bylo popsáno v sekci Nejlepší cena v tomto tématu, cenový modul obvykle vybírá nižší ze dvou cen. Proto je maloobchodníkovi obvykle zabráněno, aby použil vyšší cenu ze dvou cen v obchodě, který má cenové skupiny na východním pobřeží i v New Yorku. Pro vyřešení tohoto problému předtím, než byla zavedena funkce s prioritní cenou, musel maloobchodník dvakrát definovat ceny pro každý produkt a nepřiřadit obě cenové skupiny. Případně prodejce musel vytvořit další cenové skupiny, aby izoloval produkty s vyšší cenou od produktů, které mají obvyklé nižší ceny.
 
 Nicméně funkce priority cen umožňuje maloobchodnímu prodejci vytvořit cenovou prioritu pro ceny obchodu, která je vyšší než cenová priorita regionálních cen. Maloobchodní prodejce může případně vytvořit priority cen pouze pro ceny obchodu a ponechat regionální ceny na výchozí prioritě cen, což je 0 (nula). Obě nastavení pomáhají zaručit, že ceny obchodu budou vždy používány před regionálními cenami.
 
@@ -142,7 +142,7 @@ Nejjednodušší místo pro nastavení ceny produktu je přímo na výrobku. Hod
 
 Pokud má výrobek pro každého jednu cenu, základní cena nabízí nejúčinnější způsob, jak spravovat cenu tohoto výrobku. Dokonce i když používáte obchodní smlouvy k nastavení cen, můžete také nastavit základní cenu na výrobku. Pokud pak nepoužijete obchodní smlouvu **Vše**, máte záložní cenu, která se používá, když se neaplikuje žádná obchodní smlouva.
 
-Pokud se měna maloobchodního kanálu liší od měny společnosti, základní cena v tomto velkoobchodním kanálu se určuje použitím převodu měny na cenu, která je nastavena na výrobku.
+Pokud se měna kanálu liší od měny společnosti, základní cena v tomto velkoobchodním kanálu se určuje použitím převodu měny na cenu, která je nastavena na výrobku.
 
 Přestože cenová jednotka není běžným velkoobchodním scénářem, velkoobchodní cenový modul ji podporuje. Je-li cenová jednotka nastavena na hodnotu jinou než **0** (nula), cena za jednotku se rovná výpočtu Cena ÷ Cenová jednotka. Například pokud je cena produktu 10,00 USD a cenová jednotka je 50, cena za množství 1 je 0,20 USD (= 10,00 ÷ 50).
 
@@ -150,9 +150,9 @@ Přestože cenová jednotka není běžným velkoobchodním scénářem, velkoob
 
 Pomocí deníku obchodních dohod můžete pro každý produkt vytvářet obchodní smlouvy s prodejními cenami. V aplikaci Microsoft Dynamics 365 existují tři rozsahy odběratele pro obchodní smlouvy s prodejní cenou: **Tabulka**, **Skupina** a **Vše**. Rozsah odběratele určuje odběratele, na které se vztahuje daná obchodní smlouva s prodejní cenou.
 
-Obchodní smlouva s prodejní cenou **Tabulka** je pro jednoho odběratele, který je zadán přímo v obchodní smlouvě. Tento scénář není typickým maloobchodním scénářem vztahů mezi obchodními společnostmi a koncovými zákazníky (B2C). Pokud k němu však dojde, velkoobchodní cenový modul použije při určování ceny **Tabulku** obchodní smlouvy.
+Obchodní smlouva s prodejní cenou **Tabulka** je pro jednoho odběratele, který je zadán přímo v obchodní smlouvě. Tento scénář není typickým scénářem vztahů mezi obchodními společnostmi a koncovými zákazníky (B2C). Pokud k němu však dojde, velkoobchodní cenový modul použije při určování ceny **Tabulku** obchodní smlouvy.
 
-Obchodní smlouva s prodejní cenou **Skupina** je typ, který se nejčastěji používá s funkcí Retail. Mimo Commerce jsou obchodní smlouvy prodejní cenou **Skupina** pro jednoduchou skupinu odběratelů. V aplikaci Commerce byl však koncept skupiny odběratelů rozšířen tak, aby byl obecnější cenovou skupinou. Cenovou skupinu lze napojit na kanál, umístění, věrnostní program nebo katalog. Podrobné informace o cenových skupin naleznete v části "Cenových skupin" dříve v tomto tématu.
+Obchodní smlouva s prodejní cenou **Skupina** je typ, který se nejčastěji používá. Mimo Commerce jsou obchodní smlouvy prodejní cenou **Skupina** pro jednoduchou skupinu odběratelů. V aplikaci Commerce byl však koncept skupiny odběratelů rozšířen tak, aby byl obecnější cenovou skupinou. Cenovou skupinu lze napojit na kanál, umístění, věrnostní program nebo katalog. Podrobné informace o cenových skupin naleznete v části "Cenových skupin" dříve v tomto tématu.
 
 > [!NOTE]
 > Cena obchodní smlouvy se vždy použije před základní cenou.
@@ -211,7 +211,7 @@ Microsoft SQL Server se často používá pro databáze kanálů z důvodu nákl
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Ceny, které zahrnují daň, a ceny bez daně
 
-Při nastavení prodejních cen v aplikaci Dynamics 365 nezadáváte, zda hodnota ceny, kterou nastavujete, zahrnuje daň či nikoliv. Hodnotou je pouze cena. Nicméně nastavení **Cena včetně DPH** na maloobchodních kanálech vám umožňuje nakonfigurovat kanály tak, aby buď zahrnovaly nebo nezahrnovaly daň z ceny. Toto nastavení se nastavuje na kanálu a může se změnit i v jedné společnosti.
+Při nastavení prodejních cen v aplikaci Dynamics 365 nezadáváte, zda hodnota ceny, kterou nastavujete, zahrnuje daň či nikoliv. Hodnotou je pouze cena. Nicméně nastavení **Cena včetně DPH** na kanálech vám umožňuje nakonfigurovat kanály tak, aby buď zahrnovaly nebo nezahrnovaly daň z ceny. Toto nastavení se nastavuje na kanálu a může se změnit i v jedné společnosti.
 
 Pokud pracujete s oběma typy zahrnuté a nezahrnuté daně, je velmi důležité správné nastavení ceny, vzhledem k tomu, že celková částka, kterou zákazník platí, se změní, pokud se změní nastavení **Cena včetně DPH** na kanálu.
 
@@ -219,15 +219,15 @@ Pokud pracujete s oběma typy zahrnuté a nezahrnuté daně, je velmi důležit�
 
 Jediný cenový modul se používá k výpočtu cen ve všech kanálech: kontaktní středisko, maloobchod a online obchody. To umožňuje jednotné scénáře obchodování.
 
-Maloobchodní ceny jsou určeny k práci s maloobchodními entitami namísto entit mimo maloobchod. Konkrétně je modul navržen pro nastavení cen podle obchodu, nikoli skladu.
+Cenová kalkulace je určena k práci s maloobchodními entitami namísto entit mimo maloobchod. Konkrétně je modul navržen pro nastavení cen podle obchodu, nikoli skladu.
 
-Maloobchodní cenový modul **nepodporuje** následující cenové funkce:
+Cenový modul **nepodporuje** následující cenové funkce:
 
-- Nastavení cen podle dimenzí úložiště lokality nebo lokality a skladu není podporováno. Pokud zadáte dimenzi lokality pouze v obchodních smlouvách, budou maloobchodní ceny ignorovat lokalitu a budou používat obchodní smlouvu pro všechny lokality. Pokud určíte jak lokalitu, tak sklad, chování není definováno/testováno, protože se očekává, že maloobchodníci používají cenové skupiny obchodu k řízení cen pro každý obchod/sklad.
+- Nastavení cen podle dimenzí úložiště lokality nebo lokality a skladu není podporováno. Pokud zadáte dimenzi lokality pouze v obchodních smlouvách, bude cenový modul ignorovat lokalitu a budou používat obchodní smlouvu pro všechny lokality. Pokud určíte jak lokalitu, tak sklad, chování není definováno/testováno, protože se očekává, že maloobchodníci používají cenové skupiny obchodu k řízení cen pro každý obchod/sklad.
 - Ocenění založené na atributech není podporováno.
 - Předávání slev dodavatelů není podporováno.
 
-**Pouze** maloobchodní cenový modul podporuje následující cenové funkce:
+**Pouze** cenový modul podporuje následující cenové funkce:
 
 - Cena je založena na dimenzích produktu, v pořadí od nejkonkrétnější ceny varianty přes nejméně konkrétní cenu varianty, po cenu základního produktu. Cena, která je nastavena pomocí dvou dimenzí produktu (například barva a velikost), se používá před cenou, která je nastavena pomocí pouze jedné dimenze produktu (například velikost).
 - Stejnou cenovou skupinu lze použít ke kontrole cen a slev.

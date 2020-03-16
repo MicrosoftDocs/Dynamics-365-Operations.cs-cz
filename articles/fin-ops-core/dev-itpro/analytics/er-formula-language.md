@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b1c6a3f3fd5b55012d89a6c9f0bf2ed5dddd13c
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916653"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042704"
 ---
 # <a name="electronic-reporting-formula-language"></a>Jazyk receptur v elektronickém výkaznictví
 
@@ -154,7 +154,7 @@ Elektronické výkaznictví umožňuje rozšířit seznam funkcí, které se pou
 
 Můžete vytvořit složené výrazy, které používají funkce z různých kategorií za předpokladu, že se datové typy shodují. Pokud funkce používáte společně, porovnejte datový typ výstupu z jedné funkce do vstupního datového typu, který je vyžadován jinou funkcí. Chcete-li například předejít možné chybě "seznam-je-prázdný" ve vazbě pole na prvek formátu ER, zkombinujte funkce z [kategorie seznamu](er-functions-category-list.md) s funkcí z kategorie [logické](er-functions-category-logical.md), jak ukazuje následující příklad. Zde vzorec používá funkci [IF](er-functions-logical-if.md) k testování, zda je seznam **IntrastatTotals** prázdný předtím, než vrátí hodnotu požadované agregace z tohoto seznamu. Pokud je seznam **IntrastatTotals** prázdný, vrátí vzorec hodnotu **0** (nula).
 
-```
+```vb
 IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 
@@ -162,7 +162,7 @@ IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded'
 
 Často lze stejný výsledek transformace dat získat několika způsoby, použitím funkcí z různých kategorií nebo různých funkcí ze stejné kategorie. Předchozí výraz lze například také nakonfigurovat pomocí funkce [COUNT](er-functions-list-count.md) z kategorie [List](er-functions-category-list.md).
 
-```
+```vb
 IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 

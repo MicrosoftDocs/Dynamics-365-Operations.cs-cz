@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ac5135d0606ffc9816c841637aa032826f87e28
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0ac75d390b8bbb94c6e039b374b51462d348e355
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021873"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057141"
 ---
 # <a name="create-and-associate-registers"></a> Vytvoření a přidružení pokladen
 
@@ -30,14 +30,14 @@ ms.locfileid: "3021873"
 
 Tento postup demonstruje vytvoření pokladních míst. Tato procedura používá data ukázkové společnosti USRT.
 
-1. Přejděte do nabídky Maloobchodní a velkoobchodní prodej > Nastavení POS > Pokladny.
-2. Klikněte na položku Nová.
+1. Přejděte do nabídky Retail and Commerce > Nastavení kanálu > Nastavení POS > Pokladny.
+2. Klikněte na možnost Nový.
 3. Do pole Číslo pokladny zadejte ID nové pokladny.
     * ID registrace obvykle obsahuje kódy, které pomáhají mapovat pokladu s obchodem, do které patří, a skladové místo v obchodě.  
 4. Do pole Název zadejte popisný název pokladny.
 5. V poli Číslo obchodu zadejte nebo vyberte hodnotu.
 6. V poli Profil hardwaru zadejte nebo vyberte hodnotu.
-    * Profily hardwaru umožňují zadat maloobchodní periferní zařízení, která budou připojena k pokladně, jako je například zásuvka a tiskárna účtenek.  
+    * Profily hardwaru umožňují zadat periferní zařízení, která budou připojena k pokladně, jako je například zásuvka a tiskárna účtenek.  
 7. V poli Vizuální profil zadejte nebo vyberte hodnotu.
     * Vizuální profily se používají k určení obrázků použitých na pozadí pokladny a přihlašovací stránky, jakož i motivů pro pokladny.  
 8. Zadejte hodnotu do pole Číslo registrační pokladny POS EFT.

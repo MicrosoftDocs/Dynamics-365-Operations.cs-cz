@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 51d344d7b7a792d0cdf3eeb7f5c6e1a9b2b8bf19
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021827"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057930"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Připojení periferních zařízení k pokladnímu místu (POS).
 
@@ -43,7 +43,7 @@ Několik komponent slouží k definování vztahů mezi úložištěm, pokladní
 
 Navigace: klikněte na tlačítko **Retail and Commerce** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Pokladny**.
 
-Pokladna POS je entita, která se používá k definování vlastností konkrétní instance POS. Tyto vlastnosti zahrnují hardwarový profil nebo nastavení maloobchodních periferních zařízení, která budou použita na pokladně, obchod, ke kterému je pokladna namapována a vizuální prostředí uživatele, který se k dané pokladně přihlásí.
+Pokladna POS je entita, která se používá k definování vlastností konkrétní instance POS. Tyto vlastnosti zahrnují hardwarový profil nebo nastavení periferních zařízení, která budou použita na pokladně, obchod, ke kterému je pokladna namapována a vizuální prostředí uživatele, který se k dané pokladně přihlásí.
 
 ### <a name="devices"></a>Zařízení
 
@@ -67,7 +67,7 @@ Profil hardwaru identifikuje hardware, který je připojen k pokladně POS nebo 
 
 ### <a name="hardware-station"></a>Hardware station
 
-Navigace: klikněte na **Retail and Commerce** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody**. Vyberte obchod a potom klikněte na pevnou záložku **Hardwarové stanice**.
+Navigace: klikněte na **Retail a Commerce** &gt; **Kanály** &gt; **Obchody** &gt; **Všechny obchody**. Vyberte obchod a potom klikněte na pevnou záložku **Hardwarové stanice**.
 
 Hardwarová stanice je instancí obchodní logiky, která řídí periferie systému POS. Hardwarová stanice je automaticky nainstalována společně s aplikací MPOS. Hardwarovou stanici lze také nainstalovat jako samostatnou součást, a potom k ní získat přístup pomocí řešení MPOS nebo Cloud POS v rámci webové služby. Hardwarová stanice musí být definována na úrovni kanálu.
 
@@ -87,7 +87,7 @@ Pokud chcete připojit MPOS k perifernímu zařízení POS v podobě tradičníh
 
 Poté, co jste přiřadili hardwarový profil, proveďte synchronizaci změn s databází kanálu pomocí plánu distribuce **Pokladny**. Plány distribuce můžete najít v nabídce **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Plán distribuce**. 
 
-Dále v kanálu nastavte "místní" hardwarovou stanici. Klikněte na **Retail and Commerce** &gt; **Kanály** &gt; **Maloobchody** &gt; **Všechny maloobchody** a vyberte obchod. 
+Dále v kanálu nastavte "místní" hardwarovou stanici. Klikněte na **Retail and Commerce** &gt; **Kanály** &gt; **Obchody** &gt; **Všechny obchody** a vyberte obchod. 
 
 Poté na pevné záložce **Hardwarové stanice** kliknutím na tlačítko **Přidat** přidejte hardwarovou stanici. Zadejte popis, zadejte **localhost** jako název hostitele a potom synchronizujte změny s kanálem pomocí plánu distribuce **Konfigurace kanálu**. Plány distribuce můžete najít v nabídce **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Plán distribuce**. 
 
@@ -104,7 +104,7 @@ Nakonec v aplikaci MPOS pomocí operace **Vybrat hardwarovou stanici** vyberte h
 
 V tomto scénáři je samostatná hardwarová stanice sdílena mezi klienty MPOS a Cloud POS. Tento scénář vyžaduje vytvoření profilu hardwarové stanice a zadání balíčku ke stažení, portu a hardwarový profil, který používá hardwarová stanice. Profil hardwarové stanice naleznete v části **Retail and Commerce** &gt; **Nastavení kanálu** &gt; **Nastavení POS** &gt; **Profily POS** &gt; **Profily hardwarové stanice**. 
 
-Po vytvoření profilu hardwarové stanice přejděte do konkrétního maloobchodního kanálu (**Retail and Commerce** &gt; **Kanály** &gt; **Obchody** &gt; **Všechny obchody**) a přidejte novou hardwarovou stanici. Namapujte tuto novou hardwarovou stanici k profilu hardwarové stanice, který byl dříve vytvořen. 
+Po vytvoření profilu hardwarové stanice přejděte do konkrétního kanálu (**Retail and Commerce** &gt; **Kanály** &gt; **Obchody** &gt; **Všechny obchody**) a přidejte novou hardwarovou stanici. Namapujte tuto novou hardwarovou stanici k profilu hardwarové stanice, který byl dříve vytvořen. 
 
 Dále zadejte popis, který pomůže pokladníkovi určit hardwarovou stanici. V poli **Název hostitele** zadejte adresu URL hostitelského počítače v následujícím formátu: `https://<MachineName:Port>/HardwareStation`. (**&lt;MachineName:Port&gt;** nahraďte za skutečný název hardwarové stanice a za port, který je určen v profilu hardwarové stanice.) Pro samostatnou hardwarovou stanici byste měli také určit ID terminálu pro elektronický převod peněžních prostředků (EFT). Tato hodnota určuje terminál EFT připojený k hardwarové stanici, když konektor platby komunikuje s poskytovatelem platby. 
 

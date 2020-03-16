@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4ee6b128e473d0999885f1cb1b4dbb015026c4e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021887"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057202"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Nastavení a práce s výstrahami u podvodů kontaktního střediska
 
@@ -54,6 +54,7 @@ Nakonec použijte pole **Typ komentáře k podvodu** pro určení typu dokumentu
 Systém poskytuje dva typy kritérií podvodu pro určení, zda má být objednávka pozdržena kvůli kontrole proti podvodu:
 
 - **Statická podvodná data** používají určitou hodnotu, jako je například telefonní číslo, které bylo uvedeno na seznamu blokovaných čísel, nebo e-mailová adresa označená příznakem, protože je známo, že byly použity pro předchozí podvodné transakce. Chcete-li nastavit statická podvodná data, přejděte na **Maloobchod a velkoobchod** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Podvod** \> **Statická podvodná data**. Na stránce **Statická podvodná data** můžete přidat kritéria podvodu ručně nebo pomocí importu dat. Výsledky jsou připojeny k informacím o podvodu. Pokud je zapnuta kontrola podvodu, každá zadaná prodejní objednávka bude porovnána se statickými daty. Pokud se data nacházejí buď na fakturační adrese zákazníka, nebo na doručovací drese navázané na hlavičku objednávky, nebo pokud jsou data nalezena v dodacích adresách propojených s některým z řádků v této prodejní objednávce, skóre všech jedinečných shody se přidá dohromady a porovná s hodnotou **Minimální hodnocení** pro určení, zda má být objednávka zablokována.
+
 - **Podvodná pravidla** se skládají z uživatelem definovaných proměnných a podmínek definovaných pro tyto proměnné. Chcete-li vytvořit pravidla, přejděte na **Maloobchod a velkoobchod** \> **Nastavení kanálu** \> **Nastavení kontaktního střediska** \> **Podvod** \> **Pravidla**. Podvodná pravidla umožňují společnosti konfigurovat složitější sadu pravidel, která mohou obsahovat výrazy **AND** nebo **OR** pro vyhodnocení více podmínek. Uživatel chce například zablokovat kvůli kontrole proti podvodu všechny objednávky pro odběratele, kteří patří do určité skupiny odběratelů a kteří objednali konkrétní produkt. V tomto případě se definují podmínky k ověření odběratelů a produktů na stránce **Pravidla** pomocí podmínky AND. Objednávka je poté blokována pouze v případě, že jsou splněny obě podmínky, a pokud hodnota skóre přiřazená k tomuto pravidlu, plus hodnota skóre všech dalších pravidel, které objednávka naplní, způsobí, že celkové hodnocení podvodné objednávky překročí **Minimální hodnocení** definované na stránce **Parametry kontaktního střediska**.
 
 > [!NOTE]

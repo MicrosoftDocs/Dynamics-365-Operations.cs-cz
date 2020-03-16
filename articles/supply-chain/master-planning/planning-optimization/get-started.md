@@ -3,7 +3,7 @@ title: Začínáme s optimalizací plánování
 description: Toto téma vysvětluje, jak používat funkci Optimalizace plánování.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/17/2020
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,17 +19,17 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 3e0371c6addc0412dc2fc105891b012941e92a06
-ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
+ms.openlocfilehash: 3e64699005387adcc92e2e7c9fefad68a9de85c0
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "2971457"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076125"
 ---
+# <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
+
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
-
-# <a name="get-started-with-planning-optimization"></a>Začínáme s optimalizací plánování
 
 Funkce Optimalizace plánování aktuálně nepodporuje všechny funkce, které jsou k dispozici v modulu plánování integrovaném v aplikaci Microsoft Dynamics 365 Supply Chain Management. Proto je důležité, abyste vyhodnotili, zda sada funkcí, která je aktuálně k dispozici v optimalizaci plánování, bude vyhovovat vašim požadavkům. Ve výchozím nastavení není funkce optimalizace plánování zapnuta ve službě Lifecycle Services (LCS). Proto máte příležitost provést vyhodnocení před tím, než ji zapnete.
 
@@ -44,6 +44,9 @@ Pokud lze spustit hlavní plánování pomocí aktuální licence, nemusíte kup
 ### <a name="install-the-add-in"></a>Instalace doplňku
 
 Chcete-li použít optimalizaci plánování, nainstalujte doplněk Optimalizace plánování pro aplikaci Dynamics 365 Supply Chain Management. Můžete získat přístup k doplňku z projektu LCS a zapnout funkci optimalizace plánování z uživatelského rozhraní (UI) Supply Chain Management.
+
+> [!NOTE]
+> Požadavek optimalizace plánování je LCS aktivované prostředí s vysokou dostupností (ne OneBox prostředí) s Dynamics 365 Supply Chain Management verze 10.0.7 a novější.
 
 1. Přihlaste se k LCS a otevřete požadované prostředí.
 1. Přejděte na **Úplné podrobnosti**.

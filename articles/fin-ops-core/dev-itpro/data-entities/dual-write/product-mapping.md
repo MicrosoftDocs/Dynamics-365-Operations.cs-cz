@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a52e8f65e7e2a8d90ddf5efa47c07d6995ef645d
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
+ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019677"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3081144"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
@@ -109,7 +109,7 @@ Mějte na paměti, že synchronizace produktů se děje aplikací Finance and Op
 
 Dimenze produktu jsou vlastnosti, které identifikují variantu produktu. K definování variant produktu jsou mapovány do Common Data Service také čtyři dimenze produktu (barva, velikost, styl a konfigurace). Následující ilustrace znázorňuje datový model pro dimenzi produktu Barva. Stejný model se použije pro Velikosti, Styly a Konfigurace. 
 
-![Datový model pro produkty](media/dual-write-product-2.PNG)
+![Datový model pro produkty](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +145,7 @@ Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházej�
 
 Měrné jednotky a odpovídající převody jsou k dispozici v Common Data Service podle datového modelu zobrazeného v diagramu.
 
-![Datový model pro produkty](media/dual-write-product-3.PNG)
+![Datový model pro produkty](media/dual-write-product-three.png)
 
 Pojem měrné jednotky je integrován mezi aplikacemi Finance and Operations a jinými aplikacemi Dynamics 365. Pro každou třídu jednotek v Finance and Operations se v aplikaci Dynamics 365 vytvoří skupina jednotek, která obsahuje jednotky náležející ke třídě jednotek. Výchozí základní jednotka je také vytvořena pro každou skupinu jednotek. 
 
@@ -205,13 +205,13 @@ Pro jednoznačnou identifikaci produktů mezi Dynamics 365 for Finance and Opera
 
 Pro jiného uživatele aplikací Dynamics 365 je produkt identifikován v uživatelském rozhraní pomocí **msdyn_productnumber** (všimněte si, že popisek pole je **číslo produktu**). Ve formuláři produktu jsou zobrazeny jak company, tak i msydn_productnumber. V poli (productnumber) však není zobrazen jedinečný klíč produktu. 
 
-Uvědomte si, že pokud jsou aplikace postaveny na Common Data Service, měla by být věnována zvláštní pozornost použití (productnumber), což je jedinečné ID produktu, jako klíče integrace, a nikoli msdyn_productnumber, z důvodu skutečnosti, že tento není jedinečný. 
+Pokud vytváříte aplikace v Common Data Service, měli byste věnovat pozornost použití **productnumber** (jedinečné ID produktu) jako klíče integrace. Nepoužívejte **msdyn_productnumber**, protože není jedinečné. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Počáteční synchronizace produktů a migrace dat z Common Data Service do Finance and Operations
 
 ### <a name="initial-synchronization-of-products"></a>Počáteční synchronizace produktů 
 
-Když je povolen dvojí zápis, jsou produkty z aplikace Dynamics 365 Finance and Operations synchronizovány do Common Data Service a jiných aplikací Dynamics 365. Mějte na paměti, že produkty vytvořené v aplikaci Common Data Service a jiných aplikacích Dynamics 365 před dvojím zápisem nebudou aktualizovány ani spárovány s daty produktu z Finance and Operations.
+Když je povolen dvojí zápis, jsou produkty z aplikací Finance and Operations synchronizovány do Common Data Service a jiných modelem řízených aplikací Dynamics 365. Produkty vytvořené v aplikaci Common Data Service a jiných aplikacích Dynamics 365 před uvedením dvojího zápisu nebudou aktualizovány ani spárovány s daty produktu z aplikací Finance and Operations.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Párování dat produktu z Finance and Operations a dalších aplikací Dynamics 365
 

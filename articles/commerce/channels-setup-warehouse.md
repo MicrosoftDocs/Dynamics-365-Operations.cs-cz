@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fe785e3bfd503193a588958ae5df0d1c0fdb9e52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002305"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057849"
 ---
 # <a name="warehouse-set-up"></a>Nastavit sklad
 
@@ -59,7 +59,7 @@ Chcete-li nastavit sklad, postupujte následujícím způsobem.
 
 1. V navigačním podokně přejděte na **Moduly \> Retail and commerce \> Nastavení kanálu \> Sklady**.
 1. V podokně akcí zvolte **Nový**.
-1. V poli **Sklad** zadejte hodnotu.  Pokud se jedná o mapování 1:1 na maloobchodní obchod, zvažte použití názvu obchodu nebo názvu místního distribučního střediska.
+1. V poli **Sklad** zadejte hodnotu.  Pokud se jedná o mapování 1:1 na obchod, zvažte použití názvu obchodu nebo názvu místního distribučního střediska.
 1. Zadejte hodnotu do pole **Název**.
 1. V rozevíracím seznamu **Místo** vyberte místo skladu, které bylo vytvořeno dříve.
 1. V poli **Typ** vyberte **Výchozí**.

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 623c25490964ccdf6abc37acaffee7ac0844cf39
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35aad9bf89ba8c1ed6451304d8fc4fc6ffa575b5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251148"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057758"
 ---
 # <a name="trade-allowance-management"></a>Správa obchodních náhrad
 
 [!include [banner](../includes/banner.md)]
 
-Správa obchodních náhrad pomáhá společnostem spravovat programy na podporu prodeje, které nabízejí maloobchodní peněžní odměny za "výkonnostní složku", a to pro odběratele, kteří dosáhnou cílový objem a behaviorální cíle. Tato funkce je určena pro společnosti, které se zaměřují na komplexní procesy propagace za účelem zisku, od rozpočtování a přidělení finančních prostředků na promoakce přes vytvoření smlouvy náhrad, vytvoření a zpracování nároků a zpracování plateb po analýzu efektivity propagace.
+Správa obchodních náhrad pomáhá společnostem spravovat programy na podporu prodeje, které nabízejí peněžní odměny za „výkonnostní složku“, a to pro odběratele, kteří dosáhnou cílový objem a behaviorální cíle. Tato funkce je určena pro společnosti, které se zaměřují na komplexní procesy propagace za účelem zisku, od rozpočtování a přidělení finančních prostředků na promoakce přes vytvoření smlouvy náhrad, vytvoření a zpracování nároků a zpracování plateb po analýzu efektivity propagace.
 
 
 Tento článek nabízí široký přehled funkce správy obchodních náhrad a seznámí vás s typickou sadu úloh, které jsou součástí správy programu na podporu prodeje. Tato funkce je určena několika typů uživatelů, kteří mají zodpovědnost za provoz a rozhodování a kterým by měla pomoci dosáhnout svých cílů:

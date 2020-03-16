@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024699"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057710"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfigurace prostředí Preview aplikace Dynamics 365 Commerce
 
@@ -35,7 +35,7 @@ Toto téma vysvětluje, jak konfigurovat ukázkové prostředí v Microsoft Dyna
 
 Postupy v tomto tématu dokončete až po zřízení prostředí náhledu Commerce. Informace o postupu zřízení prostředí náhledu Commerce najdete v části [Zřízení prostředí náhledu Commerce](provisioning-guide.md).
 
-Po kompletním zřízení prostředí náhledu Commerce je nutné dokončit další kroky konfigurace po zřízení, aby bylo možné začít posuzovat prostředí. K dokončení těchto kroků je nutné použít prostředí Microsoft Dynamics Lifecycle Services (LCS), Dynamics 365 Commerce a Dynamics 365 Retail.
+Po kompletním zřízení prostředí náhledu Commerce je nutné dokončit další kroky konfigurace po zřízení, aby bylo možné začít posuzovat prostředí. K dokončení těchto kroků je nutné použít prostředí Lifecycle Services (LCS) Microsoft Dynamics a Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Než začnete
 
@@ -53,7 +53,7 @@ Po kompletním zřízení prostředí náhledu Commerce je nutné dokončit dal�
 
 Chcete-li pracovníka s vaší identitou přidružit k LCS, postupujte následovně.
 
-1. Pomocí nabídky vlevo přejděte na **Moduly \> Maloobchod \> Zaměstnanci \> Pracovníci**.
+1. Pomocí nabídky vlevo přejděte na **Moduly \> Retail and commerce \> Zaměstnanci \> Pracovníci**.
 1. V seznamu vyhledejte a vyberte následující záznam: **000713 - Andrew Collette**.
 1. V podokně akcí zvolte **Maloobchod**.
 1. Vyberte **Stávající identita přidružení**.
@@ -91,12 +91,12 @@ Pokud chcete začít nastavovat náhled webu v Commerce, postupujte následovně
 1. Ponechte hodnotu pole **Cesta** tak, jak je.
 1. Vyberte **OK**. Zobrazí se seznam stránek na webu.
 
-## <a name="enable-jobs-in-retail"></a>Povolení úloh v programu Retail
+## <a name="enable-jobs"></a>Povolit úlohy
 
-Pokud chcete povolit úlohy v programu Retail, postupujte takto:
+Pokud chcete povolit úlohy v Commerce, postupujte takto:
 
 1. Přihlaste se k prostředí (HQ).
-1. Pomocí nabídky vlevo přejděte na **Retail \> Dotazy a sestavy \> Dávkové úlohy**.
+1. Pomocí nabídky vlevo přejděte na **Retail and commerce \> Dotazy a sestavy \> Dávkové úlohy**.
 
     Zbývající kroky tohoto postupu musí být dokončeny pro každou z následujících úloh:
 
@@ -112,11 +112,11 @@ Pokud chcete povolit úlohy v programu Retail, postupujte takto:
     1. V podokně akcí na kartě **Dávková úloha** vyberte **Změnit stav**.
     1. Vyberte možnost **Čekání** a potom **OK**.
 
-### <a name="run-full-data-synchronization-in-retail"></a>Spuštění úplné synchronizace dat v programu Retail
+### <a name="run-full-data-synchronization"></a>Spustit úplnou synchronizaci dat
 
-Chcete-li spustit úplnou synchronizaci dat v programu Retail, postupujte takto.
+Chcete-li spustit úplnou synchronizaci dat v Commerce, postupujte takto.
 
-1. Pomocí nabídky vlevo přejděte na **Moduly \> Retail \> Nastavení centrály \> Maloobchodní plánovač \> Databáze kanálů**.
+1. Pomocí nabídky vlevo přejděte na **Moduly \> Retail and commerce \> Nastavení centrály \> Maloobchodní plánovač \> Databáze kanálů**.
 1. V seznamu nalevo je vybrán **Výchozí** kanál. Vyberte jiný dostupný kanál. Tento kanál má název **scXXXXXXXXX**.
 1. V podokně akcí vyberte **Úplná synchronizace dat**.
 1. Jako plán distribuce zadejte **9999**.

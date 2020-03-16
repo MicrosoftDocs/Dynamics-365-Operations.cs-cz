@@ -1,6 +1,6 @@
 ---
 title: Vytvoření funkčního profilu maloobchodu
-description: Toto téma popisuje, jak vytvořit nový maloobchodní funkční profil v řešení Microsoft Dynamics 365 Commerce.
+description: Toto téma popisuje, jak vytvořit nový funkční profil v řešení Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9fb0fd63b11e55f2b153fc9c135f148a6e343057
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002836"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057341"
 ---
 # <a name="create-a-retail-functionality-profile"></a>Vytvoření funkčního profilu maloobchodu
 
 
 [!include [banner](includes/banner.md)]
 
-Toto téma popisuje, jak vytvořit nový maloobchodní funkční profil v řešení Microsoft Dynamics 365 Commerce.
+Toto téma popisuje, jak vytvořit nový funkční profil v řešení Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Přehled
 
-Maloobchodní funkční profil poskytuje různá nastavení používaná pro online kanály. Každý maloobchodní kanál musí určovat maloobchodní funkční profil.
+Funkční profil Commerce poskytuje různá nastavení používaná pro online kanály. Každý kanál musí určovat funkční profil.
 
-## <a name="create-a-retail-functionality-profile"></a>Vytvoření funkčního profilu maloobchodu
+## <a name="create-a-functionality-profile"></a>Vytvořit funkční profil
 
-Při vytváření nového maloobchodního funkčního profilu postupujte takto.
+Při vytváření nového funkčního profilu postupujte takto.
 
 1. V navigačním podokně přejděte na **Moduly \> Nastavení kanálu \> Profily POS \> Profily funkcí**.
 1. V podokně akcí zvolte **Nový**.
@@ -51,9 +51,9 @@ Při vytváření nového maloobchodního funkčního profilu postupujte takto.
 1. V části **Informační kódy** upravte podle potřeby další nastavení.
 1. V části **Číslování příjmu** upravte podle potřeby další nastavení. 
   
-Následující obrázek znázorňuje příklad funkčního profilu maloobchodu.
+Následující obrázek znázorňuje příklad funkčního profilu.
   
-![Příklad maloobchodního funkčního profilu](media/retail-functionality-profile.png)
+![Příklad funkčního profilu](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>Další zdroje
 

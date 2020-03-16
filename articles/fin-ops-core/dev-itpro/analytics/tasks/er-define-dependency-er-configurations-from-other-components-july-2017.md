@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97aedf17bb6fa67fd08497ec6e15a7c92866fa4d
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 468a2637f4a5b2b7ff3514c92c52fb26b9231bc4
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026103"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042912"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definování závislosti konfigurace elektronického výkaznictví na jiných komponentách
 
@@ -140,4 +140,3 @@ Odstraníme ze systému vytvořené konfigurace a stáhneme je zpět z úložiš
 26. Ve stromovém zobrazení rozbalte Ukázkový datový model.
     * Všimněte si, že konfigurace modelu mapování Vzorové mapování bylo staženo spolu s vybranou konfigurací modelu dat. Dva soubory jsou staženy společně vzhledem k tomu, že 'Ukázkové mapování' bylo definováno jako implementace vybraného datového modelu a vzhledem k tomu, že je použitelné pro aplikaci. Konfigurace Vzorové mapování (alternativní) nebylo staženo, protože podmínky pro požadovanou aplikační verzi nebyly splněny.   
     * Pokud jste přihlášeni k Finance and Operations, zaregistrujte si stejného poskytovatele, přejděte na projekt LCS a stáhněte stejnou konfiguraci datového modelu, stáhne se konfigurace Ukázkové mapování (alternativní) a konfigurace "Ukázkové mapování" bude přeskočena.  
-

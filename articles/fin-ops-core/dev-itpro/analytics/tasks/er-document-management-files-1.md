@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026127"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042820"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 1 - Příprava datového modelu)
 
@@ -36,10 +36,14 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 
 ## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Získání přístupu k seznamu konfigurací poskytovaných společností Microsoft
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-    * Ujistěte se, že poskytovatel 'Litware, Inc.' je k dispozici a označen jako aktivní.  
+
+    Ujistěte se, že poskytovatel 'Litware, Inc.' je k dispozici a označen jako aktivní.  
+
 2. Vyberte Litware, Inc. Poskytovatel
 3. Klikněte na možnost Úložiště.
-    * Pokud již existuje úložiště typu Zdroje operace, přeskočte zbývající kroky aktuální dílčí úlohy.  
+
+    Pokud již existuje úložiště typu Zdroje operace, přeskočte zbývající kroky aktuální dílčí úlohy.  
+
 4. Klepnutím na možnost Přidat otevřete dialogové okno.
 5. V poli Typ úložiště konfigurace zadejte "Provozní prostředky".
 6. Klikněte na Vytvořit úložiště.
@@ -51,9 +55,13 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 3. Klepněte na tlačítko Zobrazit filtry.
 4. Klikněte na možnost Otevřít.
 5. Ve stromovém zobrazení vyberte možnost CustomerCreditTransferInitiation.
-    * Vyberte konfiguraci modelu "Model faktury odběratele" k importu.  
+
+    Vyberte konfiguraci modelu "Model faktury odběratele" k importu.  
+
 6. Klepněte na tlačítko Importovat.
-    * Klikněte na Import pro verzi 1 vybrané konfigurace.  
+
+    Klikněte na Import pro verzi 1 vybrané konfigurace.  
+
 7. Klepněte na tlačítko Ano.
 8. Zavřete stránku.
 9. Zavřete stránku.
@@ -65,6 +73,5 @@ Vytvoříte vlastní konfiguraci modelu faktury odběratele vyplývající z kon
 1. Kliknutím na možnost Vytvořit konfiguraci otevřete dialogové okno.
 2. V poli Nový zadejte „Odvodit z názvu: Model faktury zákazníka, Microsoft“.
 3. Zadejte hodnotu Model faktury odběratele (vlastní) do pole Název.
-    * Model faktury odběratele (vlastní)  
 4. Klepněte na možnost Vytvořit konfiguraci.
 

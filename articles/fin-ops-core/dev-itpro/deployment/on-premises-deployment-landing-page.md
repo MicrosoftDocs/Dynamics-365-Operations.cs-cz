@@ -1,9 +1,9 @@
 ---
 title: Domovská stránka Místní nasazení
 description: Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 81698517dc501a6001f62216f3804510144c1045
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
+ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770939"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "3090582"
 ---
 # <a name="on-premises-deployment-home-page"></a>Domovská stránka Místní nasazení
 
@@ -56,13 +56,13 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 - [Použití aktualizací na místní nasazení](apply-updates-on-premises.md)
 - [Opětovné nasazení místních prostředí](redeploy-on-prem.md)
 
-## <a name="retail"></a>Retail
-- [Funkce aplikace Retail, které jsou dostupné v místních nasazeních](../../../retail/retail-onprem.md)
+## <a name="commerce"></a>Obchod
+- [Obchodní funkce, které jsou dostupné v místních nasazeních](../../../retail/retail-onprem.md)
 - [Instalační kroky pro komponenty maloobchodní sítě v místním prostředí](deploy-retail-onprem.md)
-- [Konfigurace, Instalace a aktivace Retail Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
-- [Instalace a konfigurace Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Konfigurace, Instalace a aktivace Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
+- [Konfigurace a instalace Commerce Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
-## <a name="upgrade"></a>Upgradovat
+## <a name="upgrade"></a>Upgrade
 - [Proces místního upgradu pro místní prostředí](../migration-upgrade/on-prem-upgrade.md)
 
 ## <a name="other-resources"></a>Další zdroje
@@ -71,6 +71,6 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 - [Rotace certifikátů](certificate-rotation-on-prem.md)
 - [Místní diagnostika](on-premises-diagnostics.md)
 - [Funkce neimplementované v místních nasazeních](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [Odebrané nebo zastaralé funkce pro Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Odstraněné nebo zastaralé funkce Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Zásady životního cyklu softwaru a vydání on-premises](../migration-upgrade/on-prem-version-update-policy.md)
  

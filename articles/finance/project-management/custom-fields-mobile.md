@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 48854c15e429d51dcf30ea804eb636dee7965443
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773638"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080765"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Implementace vlastních polí pro mobilní aplikaci Microsoft Dynamics 365 Project Timesheet na systéech iOS a Android
 
@@ -183,7 +183,7 @@ V následujícím příkladu je pole řetězce uvedeno v časových záznamech. 
 
 Všimněte si použití metody **TSTimesheetCustomField::newFromMetatdata()** pro zjednodušení inicializace vlastností vlastních polí: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength**, and **numberOfDecimals**. Tyto parametry lze také nastavit ručně podle potřeby.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -212,7 +212,7 @@ final class TSTimesheetSettings_Extension
 
 Metoda **buildCustomFieldListForEntry** slouží k zadávání hodnot do uložených řádků časového rozvrhu v mobilní aplikaci. Bere záznam TSTimesheetTrans jako parametr. Pole z tohoto záznamu lze použít k vyplnění hodnoty vlastního pole v aplikaci.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetEntry))]
 final class TsTimesheetEntry_Extension
@@ -250,7 +250,7 @@ Chcete-li uložit vlastní pole zpět do databáze v typickém použití, je nut
 > [!NOTE]
 > Následující příklad ukládá hodnotu **firstOption** nebo **secondOption** vybranou uživatelem do databáze jako neupravenou hodnotu řetězce. Je-li pole databáze typem pole **Výčet**, lze tyto hodnoty ručně namapovat na hodnotu výčtu a poté je uložit do pole výčtu v tabulce databáze.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetEntryService))]
 final class TSTimesheetEntryService_Extension
@@ -339,7 +339,7 @@ Tento kód řídí nastavení zobrazení pro pole v aplikaci. Například říd�
 
 Následující příklad ukazuje vypočítanou hodnotu v části záhlaví v aplikaci.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -369,7 +369,7 @@ final class TSTimesheetSettings_Extension
 Metoda **buildCustomFieldListForHeader** slouží k vyplnění podrobností záhlaví časového rozvrhu v mobilní aplikaci. Bere záznam TSTimesheetTable jako parametr. Pole z tohoto záznamu lze použít k vyplnění hodnoty vlastního pole v aplikaci. Následující příklad nečte žádné hodnoty z databáze. Místo toho používá logiku X ++ k vygenerování vypočtené hodnoty, která je pak zobrazena v aplikaci.
 
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetDetails))]
 final class TSTimesheetDetails_Extension

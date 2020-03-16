@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 026d1d743b5150f152ef70aa642dcf6841a4e398
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025797"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070813"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Použití kurzu pro Regression Suite Automation Tool
 
@@ -217,15 +217,15 @@ Následující ilustrace znázorňuje obchodní procesy pro tento scénář v RS
 
 ## <a name="advanced-scripting"></a>Pokročilé skriptování
 
-### <a name="command-line"></a>Příkazový řádek
+### <a name="cli"></a>CLI
 
-RSAT lze volat z okna **příkazového řádku**.
+RSAT lze volat z okna **Příkazového řádku** nebo **PowerShell**.
 
 > [!NOTE]
 > Ověřte, zda je proměnná prostředí **TestRoot** nastavena na cestu instalace RSAT. (V Microsoft Windows otevřete **Ovládací panel**, vyberte **Systém a zabezpečení \> Systém \> Pokročilá nastavení systému** a pak zvolte **Proměnné prostředí**.)
 
-1. Otevřete okno **příkazového řádku** jako správce.
-2. Spusťte nástroj z instalačního adresáře.
+1. Otevřete okno **příkazového řádku** nebo **PowerShell** jako správce.
+2. Přejděte do instalačního adresáře RSAT.
 
     ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
@@ -242,22 +242,273 @@ RSAT lze volat z okna **příkazového řádku**.
         Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Path to\file.settings" command
 
     Available commands:
-        list
-        listtestsuite suite_name
-        download test_case_id output_dir
-        generate test_case_id output_dir
-        generatederived parent_test_case_id test_plan_id test_suite_id
-        generatetestonly test_case_id output_dir
-        edit excel_file
-        playback excel_file
-        playbackmany excel_file1 [excel_file2 [.. excel_fileN]]
-        playbackbyid test_case_id1 [test_case_id2 [.. test_case_idN]]
-        playbacksuite suite_name
-        clear
-        help
+        ?
         about
+        cls
+        download
+        edit
+        generate
+        generatederived
+        generatetestonly
+        generatetestsuite
+        help
+        list
+        listtestplans
+        listtestsuite
+        listtestsuitenames
+        playback
+        playbackbyid
+        playbackmany
+        playbacksuite
         quit
+        upload
+        uploadrecording
+        usage
     ```
+
+#### <a name=""></a>? 
+Zobrazí nápovědu ke všem dostupným příkazům a jejich parametrům.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
+
+##### <a name="optional-parameters"></a>Volitelné parametry
+
+**``command``**
+
+
+Kde ``[command]`` je jeden z níže uvedených příkazů.
+
+
+#### <a name="about"></a>O aplikaci
+Zobrazí aktuální verze.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
+
+#### <a name="cls"></a>cls
+Vymaže obrazovku.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
+
+
+#### <a name="download"></a>stáhnout
+Stáhne přílohy pro zadaný testovací případ do výstupního adresáře. Pomocí příkazu ``list`` můžete získat všechny dostupné testovací případy. Jako parametr **test_case_id** použijte libovolnou hodnotu z prvního sloupce.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``test_case_id``** Představuje ID testovacího případu.  
+**``output_dir``** Představuje výstupní adresář. Adresář musí existovat.
+
+##### <a name="examples"></a>Příklad
+
+``download 123 c:\temp\rsat``   
+``download 765 c:\rsat\last``
+
+
+#### <a name="edit"></a>upravit
+Umožňuje otevřít soubor parametrů v aplikaci Excel a upravit jej.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``edit``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``excel_file``** Musí obsahovat úplnou cestu k existujícímu souboru aplikace Excel.
+
+##### <a name="examples"></a>Příklad
+``edit c:\RSAT\TestCase_123_Base.xlsx``  
+``edit e:\temp\TestCase_456_Base.xlsx``
+
+
+#### <a name="generate"></a>generovat
+Generuje spuštění testu a soubory parametrů pro zadaný testovací případ v výstupním adresáři.
+Pomocí příkazu ``list`` můžete získat všechny dostupné testovací případy. Jako parametr **test_case_id** použijte libovolnou hodnotu z prvního sloupce.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``test_case_id``** Představuje ID testovacího případu.  
+**``output_dir``** Představuje výstupní adresář. Adresář musí existovat.
+
+##### <a name="examples"></a>Příklad
+``generate 123 c:\temp\rsat``  
+``generate 765 c:\rsat\last``
+
+
+#### <a name="generatederived"></a>generatederived
+Generuje nový testovací případ odvozený od poskytnutého testovacího případu. Pomocí příkazu ``list`` můžete získat všechny dostupné testovací případy. Jako parametr **test_case_id** použijte libovolnou hodnotu z prvního sloupce.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``parent_test_case_id``** Představuje ID nadřazeného testovacího případu.  
+**``test_plan_id``** Představuje ID testovacího plánu.  
+**``test_suite_id``** Představuje ID testovací sady.
+
+##### <a name="examples"></a>Příklad
+``generatederived 123 8901 678``
+
+
+#### <a name="generatetestonly"></a>generatetestonly
+Generuje pouze soubor spuštění testu pro zadaný testovací případ v výstupním adresáři. Pomocí příkazu ``list`` můžete získat všechny dostupné testovací případy. Jako parametr **test_case_id** použijte libovolnou hodnotu z prvního sloupce.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``test_case_id``** Představuje ID testovacího případu.  
+**``output_dir``** Představuje výstupní adresář. Adresář musí existovat.
+
+##### <a name="examples"></a>Příklad
+``generatetestonly 123 c:\temp\rsat``  
+``generatetestonly 765 c:\rsat\last``
+
+
+#### <a name="generatetestsuite"></a>generatetestsuite
+Generuje všechny testovací případy pro zadanou sadu ve výstupním adresáři.
+Pomocí příkazu ``listtestsuitenames`` můžete získat všechny dostupné testovací sady. Jako parametr **test_suite_name** použijte libovolnou hodnotu z prvního sloupce.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``test_suite_name``** Představuje název testovací sady.  
+**``output_dir``** Představuje výstupní adresář. Adresář musí existovat.
+
+##### <a name="examples"></a>Příklad
+``generatetestsuite Tests c:\temp\rsat``   
+``generatetestsuite Purchase c:\rsat\last``
+
+
+#### <a name="help"></a>nápověda
+Totožný s [?](####?) příkaz
+
+
+#### <a name="list"></a>seznamu
+Obsahuje seznam všech dostupných testovacích případů.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
+
+
+#### <a name="listtestplans"></a>listtestplans
+Obsahuje seznam všech dostupných testovacích plánů.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestplans``**
+
+
+#### <a name="listtestsuite"></a>listtestsuite
+Uvádí seznam testovacích případů pro zadanou testovací sadu. Pomocí příkazu ``listtestsuitenames`` můžete získat všechny dostupné testovací sady. Jako parametr **suite_name** použijte libovolnou hodnotu z prvního sloupce.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``suite_name``** Název požadované sady.
+
+##### <a name="examples"></a>Příklad
+``listtestsuite "sample suite name"``  
+``listtestsuite NameOfTheSuite``
+
+
+#### <a name="listtestsuitenames"></a>listtestsuitenames
+Obsahuje seznam všech dostupných testovacích sad.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
+
+
+#### <a name="playback"></a>playback
+Přehraje testovací případ pomocí souboru aplikace Excel.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``excel_file``** Úplná cesta k souboru aplikace Excel. Soubor musí existovat. 
+
+##### <a name="examples"></a>Příklad
+``
+playback c:\RSAT\TestCaseParameters\sample1.xlsx
+playback e:\temp\test.xlsx
+``
+
+
+#### <a name="playbackbyid"></a>playbackbyid
+Přehrává se více testovacích případů najednou.
+Pomocí příkazu ``list`` můžete získat všechny dostupné testovací případy. Jako parametr **test_case_id** použijte libovolnou hodnotu z prvního sloupce.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``test_case_id1``** ID existujícího testovacího případu.  
+**``test_case_id2``** ID existujícího testovacího případu.  
+**``test_case_idN``** ID existujícího testovacího případu.  
+
+##### <a name="examples"></a>Příklad
+``playbackbyid 878``  
+``playbackbyid 2345 667 135``
+
+
+#### <a name="playbackmany"></a>playbackmany
+Přehraje řadu testovacích případů najednou pomocí souborů aplikace Excel.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``excel_file1``** Úplná cesta k souboru aplikace Excel. Soubor musí existovat.  
+**``excel_file2``** Úplná cesta k souboru aplikace Excel. Soubor musí existovat.  
+**``excel_fileN``** Úplná cesta k souboru aplikace Excel. Soubor musí existovat.  
+
+##### <a name="examples"></a>Příklad
+``playbackmany c:\RSAT\TestCaseParameters\param1.xlsx``  
+``playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx``
+
+
+#### <a name="playbacksuite"></a>playbacksuite
+Přehraje všechny testovací případy ze zadané sady testů. Pomocí příkazu ``listtestsuitenames`` můžete získat všechny dostupné testovací sady. Jako parametr **suite_name** použijte libovolnou hodnotu z prvního sloupce.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``suite_name``** Název požadované sady.
+
+##### <a name="examples"></a>Příklad
+``playbacksuite suiteName``  
+``playbacksuite sample_suite``
+
+
+#### <a name="quit"></a>opustit
+Zavře aplikaci.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
+
+
+#### <a name="upload"></a>upload
+Odešle všechny soubory náležející do zadané sady testů nebo testovacích případů.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+
+#### <a name="required-parameters"></a>Povinné parametry
+**``suite_name``** Odešle všechny soubory náležející do zadané testovací sady.
+**``testcase_id``** Odešle všechny soubory náležející do zadaných testovacích případů.
+
+##### <a name="examples"></a>Příklad
+``upload sample_suite``  
+``upload 123``  
+``upload 123 456``
+
+
+#### <a name="uploadrecording"></a>uploadrecording
+Odešle pouze soubor nahrávky, který náleží do zadaných testovacích případů.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+
+##### <a name="required-parameters"></a>Povinné parametry
+**``testcase_id``** Odešle soubor nahrávky, který náleží do zadaných testovacích případů.
+
+##### <a name="examples"></a>Příklad
+``uploadrecording 123``  
+``uploadrecording 123 456``
+
+
+#### <a name="usage"></a>použití
+Zobrazení dvou způsobů vyvolání této aplikace: jeden s použitím souboru výchozího nastavení, další poskytuje soubor nastavení.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
 
 ### <a name="windows-powershell-examples"></a>Příklad Windows PowerShell
 

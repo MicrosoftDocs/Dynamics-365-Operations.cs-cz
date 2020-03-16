@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9ce977b36cd96a27a228dba1bc8c8445bafd879
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 961ccd18e70d4f9851027492366a7d9408a668c5
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916377"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042405"
 ---
 # <a name="DATETODATETIME">Funkce el. výkaznictví DATETODATETIME</a>
 
@@ -33,7 +33,7 @@ Funkce `DATETODATETIME` vrátí hodnotu typu *datum a čas*, která je převeden
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```vb
 DATETODATETIME (date)
 ```
 
@@ -51,7 +51,7 @@ Výsledná hodnota data a času.
 
 ## <a name="example-1"></a>Příklad 1
 
-`DATETODATETIME (CompInfo. 'getCurrentDate()')` vrátí datum aktuální relace Microsoft Dynamics 365 Finance, 24. prosince 2015, **12/24/2015 12:00:00 AM**. V tomto příkladu **CompInfo** představuje zdroj dat elektronického výkaznictví typu **Finance and Operations/Table** a odkazuje na tabulku CompanyInfo.
+`DATETODATETIME (CompInfo. 'getCurrentDate()')` vrátí datum aktuální relace Microsoft Dynamics 365 Finance, 24. prosince 2015, **12/24/2015 12:00:00 AM**. V tomto příkladu **CompInfo** představuje zdroj dat elektronického výkaznictví typu **Finance and Operations/Tabulka** a odkazuje na tabulku CompanyInfo.
 
 ## <a name="example-2"></a>Příklad 2
 

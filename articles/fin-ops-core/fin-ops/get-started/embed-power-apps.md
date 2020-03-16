@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 9585d5a399ebf45b0ad7640f3c4e48d8afc46cd8
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017721"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042935"
 ---
 # <a name="embed-microsoft-power-apps"></a>Integrace Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Následující pokyny popisují postup integrace aplikace z Power Apps do webov�
 
     - Pole **Název** označuje text zobrazený pro tlačítko nebo kartu, které budou obsahovat integrovanou aplikaci. Často můžete chtít opakovat název aplikace v tomto poli.
     - **ID aplikace** je identifikátor GUID pro aplikaci, která má být vložena. Chcete-li načíst tuto hodnotu, vyhledejte aplikaci na [web.powerapps.com](https://web.powerapps.com) a vyhledejte pole **ID aplikace** pod položkou **Podrobnosti**.
-    - Pro **Vstupní kontext pro aplikaci** lze volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Dále v pozdější části tohoto tématu [Vytvoření aplikace, která využívá data z aplikací Finance and Operations](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) získáte podrobné informace o přístupu aplikace k datům odeslaným z aplikací Finance and Operations.
+    - Pro **Vstupní kontext pro aplikaci** lze volitelně vybrat pole obsahující data, která je nutné předat do aplikace jako vstup. Dále v pozdější části tohoto tématu [Vytvoření aplikace, která využívá data odeslaná z aplikací Finance and Operations](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) získáte podrobné informace o přístupu aplikace k datům odeslaným z aplikací Finance and Operations.
     - Zvolte **velikost aplikace** odpovídající typu aplikace, kterou vkládáte. Vyberte **Tenký** pro aplikace vytvořené pro mobilní zařízení a **Široký** pro aplikace vytvořené pro tablety. To zajišťuje, že je pro integrovanou aplikaci vyhrazeno dostatečné množství místa.
     - Pevná záložka **Právnické osoby** poskytuje možnost zvolit, pro jaké právnické osoby je aplikace dostupná. Výchozí nastavení je učinit aplikaci přístupnou všem právnickým osobám. Tato možnost je k dispozici pouze tehdy, je-li zakázána funkce [uložená zobrazení](saved-views.md). 
 
@@ -76,7 +76,7 @@ Důležitou součástí vytváření aplikace z Power Apps, které jsou vloženy
 
 Například ve funkci Při spuštění aplikace můžete nastavit vstupní data z aplikací Finance and Operations do proměnné následujícím způsobem:
 
-```
+```powerapps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
@@ -101,7 +101,7 @@ Následovně můžete upravit konfiguraci vložených aplikací:
 
 Poté, co byla vložena aplikace na stránku, existují dva způsoby, jak ji odebrat v případě potřeby:
 
-- Přejděte do podokna **Upravit aplikaci** podle pokynů v části [Úpravy vložené aplikace](#editing-an-embedded-power-app) dříve v tomto tématu. Potvrďte, že se v podokně zobrazí informace o vložené aplikaci, kterou chcete odebrat, a klepněte na tlačítko **Odstranit**.
+- Přejděte do podokna **Upravit aplikaci** podle pokynů v části [Úpravy vložené aplikace](#editing-an-embedded-app) dříve v tomto tématu. Potvrďte, že se v podokně zobrazí informace o vložené aplikaci, kterou chcete odebrat, a klepněte na tlačítko **Odstranit**.
 - Vzhledem k tomu, že vložená aplikace je uložena jako údaj o individuálním nastavení, clearing přizpůsobení stránky rovněž odstraní všechny aplikace vložené na této stránce. Poznámka: zrušení zaškrtnutí přizpůsobení stránky je trvalé a nelze je vrátit zpět. Chcete-li odebrat vaše individuální nastavení na stránce, vyberte **Možnosti** a klikněte na **Přizpůsobit tuto stránku** a nakonec na **Vymazat**. Po aktualizaci prohlížeče budou odebrána všechna předchozí individuální nastavení pro tuto stránku. Další informace o optimalizaci stránek pomocí individuálního nastavení najdete v části [Přizpůsobení uživatelského prostředí](personalize-user-experience.md).
 
 ## <a name="appendix"></a>Dodatek
@@ -115,7 +115,7 @@ Podle výchozího nastavení uživatel může vložit aplikace na každou strán
 
 Následující příklad ukazuje novou třídu s dvěma metodami potřebnými ke konfigurace, kde mají být aplikace vloženy.
 
-```
+```powerapps
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
 
 public final class ClassTest_Extension

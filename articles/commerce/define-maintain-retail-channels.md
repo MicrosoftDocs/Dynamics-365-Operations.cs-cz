@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 63639d69af90c6aa37bbf7af7868bca71942063f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021826"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057907"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definování a udržování maloobchodní sítě
 
@@ -47,9 +47,9 @@ Před nastavením obchodu je nutné dokončit následující úkoly:
 3. Nastavte číselné řady pro obchod, příkazy obchodu a doklady výkazu obchodu.
 4. Konfigurovat parametry pro Commerce.
 5. Nastavení metody platby, kterou obchod přijímá.
-6. Pro zpracování transakcí platebních karet v maloobchodním pokladním místě (POS) můžete také nastavit platební služby.
+6. Pro zpracování transakcí platebních karet v pokladním místě (POS) můžete také nastavit platební služby.
 7. Nastavení skupin DPH.
-8. Nastavení maloobchodních produktů. V rámci této úlohy můžete také nastavit hierarchie obchodních produktů, varianty produktu a sortiment produktů.
+8. Nastavení produktů. V rámci této úlohy můžete také nastavit hierarchie obchodních produktů, varianty produktu a sortiment produktů.
 9. Nastavení cenových skupin výrobků.
 10. Nastavit ceny produktu. V rámci této úlohy můžete také nastavit úpravy cen, slevy a období slevy.
 11. Nastavení zaměstnanců.
@@ -87,5 +87,5 @@ Po zadání podrobností pro obchod dokončete tyto úlohy a odešlete nová dat
 Commerce používá hierarchie organizace pro potřeby strukturování obchodních kanálů. Organizační hierarchie představuje vztahy mezi organizacemi, které tvoří váš podnik. Při nastavování obchodů je můžete přidat do organizační hierarchie. Obchody poté budou sdílet data, která se používají pro sortimenty, doplnění a vykazování.
 
 > [!NOTE]
-> Chcete-li použít funkci maloobchodního prodeje, je nutné povolit konfigurační klíč **Více dodacích adres**. Tento konfigurační klíč je k dispozici v klíčích **Obchodní konfigurace** ve složce **Správa systému**\> **Nastavení** \> **Konfigurace licence**. To je vyžadováno z důvodu maloobchodní funkčnosti, která provádí různá ověření na základě dodací adresy nakonfigurované na úrovni řádku prodejní objednávky.
+> Chcete-li použít funkci Commerce prodeje, je nutné povolit konfigurační klíč **Více dodacích adres**. Tento konfigurační klíč je k dispozici v klíčích **Obchodní konfigurace** ve složce **Správa systému**\> **Nastavení** \> **Konfigurace licence**. To je vyžadováno z důvodu různých ověření na základě dodací adresy nakonfigurované na úrovni řádku prodejní objednávky.
 
