@@ -1,10 +1,16 @@
 - name: Dynamics 365 Human Resources
   href: hr-welcome.md
   items:
-    - name: Novinky
+    - name: Co je nového
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 10. března 2020
+          href: hr-whats-new-2020-03-10.md
+        - name: 3. března 2020
+          href: hr-whats-new-2020-03-03.md
+        - name: 25. února 2020
+          href: hr-whats-new-2020-02-25.md
         - name: 18. února 2020
           href: hr-whats-new-2020-02-18.md
         - name: 12. února 2020

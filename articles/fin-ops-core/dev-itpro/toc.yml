@@ -14,6 +14,8 @@
               items:
                 - name: Domovská stránka Co je nového a co se změnilo v aktualizacích Platform Update
                   href: get-started/whats-new-home-page.md
+                - name: Platform update 34 (květen 2020)
+                  href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (duben 2020)
                   href: get-started/whats-new-platform-update-33.md
                 - name: Platform update 32 (únor 2020)
@@ -146,41 +148,67 @@
                   items:
                     - name: Přehled integrace dat pomocí Common Data Service
                       href: data-entities/data-integration-cds.md
-                    - name: Synchronní obousměrná integrace
+                    - name: Integrace dvojitého zápisu
                       items:
                         - name: Domovská stránka dvojitého zápisu
                           href: data-entities/dual-write/dual-write-home-page.md
                         - name: Přehled dvojitého zápisu
                           href: data-entities/dual-write/dual-write-overview.md
-                        - name: Organizační hierarchie na Common Data Service
-                          href: data-entities/dual-write/organization-mapping.md
-                        - name: Integrace společnosti
+                        - name: Nastavení dvojitého zápisu
                           items:
-                            - name: Koncept společnosti v Common Data Services
-                              href: data-entities/dual-write/company-data.md
-                            - name: Spuštění s daty společnosti
-                              href: data-entities/dual-write/bootstrap-company-data.md
-                        - name: Integrovaná hlavní data odběratelů
-                          href: data-entities/dual-write/customer-mapping.md
-                        - name: Integrovaná hlavní kniha
-                          href: data-entities/dual-write/ledger-mapping.md
-                        - name: Sjednocené prostředí produktu
-                          href: data-entities/dual-write/product-mapping.md
-                        - name: Integrace dodavatele
+                            - name: Systémové požadavky pro dvojitý zápis
+                              href: data-entities/dual-write/dual-write-system-req.md
+                            - name: Podporované scénáře pro nastavení dvojitého zápisu
+                              href: data-entities/dual-write/connection-setup.md
+                            - name: Nastavení dvojitého zápisu z Lifecycle Services
+                              href: data-entities/dual-write/lcs-setup.md
+                        - name: Mapování konceptů mezi aplikacemi
                           items:
-                            - name: Integrovaná hlavní data dodavatelů
-                              href: data-entities/dual-write/vendor-mapping.md
-                            - name: Přepínání mezi návrhy dodavatele
-                              href: data-entities/dual-write/vendor-switch.md
-                        - name: Integrované sklady a pracoviště
-                          href: data-entities/dual-write/sites-warehouses-mapping.md
-                        - name: Integrovaná hlavní data daní
-                          href: data-entities/dual-write/tax-mapping.md
-                        - name: Počáteční synchronizace
-                          href: data-entities/dual-write/initial-sync.md
-                        - name: Řešení potíží s integrací dat
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: Asynchronní jednosměrná integrace
+                            - name: Organizační hierarchie na Common Data Service
+                              href: data-entities/dual-write/organization-mapping.md
+                            - name: Integrace společnosti
+                              items:
+                                - name: Koncept společnosti v Common Data Services
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Spuštění s daty společnosti
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Integrovaná hlavní data odběratelů
+                              href: data-entities/dual-write/customer-mapping.md
+                            - name: Integrace produktu
+                              items:
+                                - name: Sjednocené prostředí produktu
+                                  href: data-entities/dual-write/product-mapping.md
+                                - name: Integrované sklady a pracoviště
+                                  href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Finanční a daňové údaje
+                              items:
+                                - name: Přístup k finančním datům a daňovým referenčním datům
+                                  href: data-entities/dual-write/finance-tax-reference.md
+                                - name: Integrovaná hlavní kniha
+                                  href: data-entities/dual-write/ledger-mapping.md
+                                - name: Integrovaná hlavní data daní
+                                  href: data-entities/dual-write/tax-mapping.md
+                            - name: Integrace dodavatele
+                              items:
+                                - name: Integrovaná hlavní data dodavatelů
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Přepínání mezi návrhy dodavatele
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Zpeněžení potenciálního zákazníka v dvojitém zápisu
+                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Interní majetek pro údržbu
+                              href: data-entities/dual-write/in-house-assets.md
+                            - name: 'Integrovaný pracovník, práce a pozice'
+                              href: data-entities/dual-write/integrated-hr.md
+                        - name: Podpora dvojitého zápisu
+                          items:
+                            - name: Podpora pro řešení Field Service solutions a Project Service Automation
+                              href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: Počáteční synchronizace
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: Řešení potíží s integrací dat
+                              href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Integrace s integrátorem dat Power Platform
                       items:
                         - name: Konfigurace scénáře zpeněžení potenciálního zákazníka
                           items:
@@ -332,6 +360,8 @@
                   href: database/import-database.md
                 - name: "Obnovení databáze k\_určitému bodu v\_čase"
                   href: database/database-point-in-time-restore.md
+                - name: "Obnovení produkční databáze k\_určitému bodu v\_čase do prostředí sandbox"
+                  href: database/database-pitr-prod-sandbox.md
             - name: Kurzy
               items:
                 - name: Obnovení pro účely školení
@@ -430,6 +460,8 @@
                       href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: Instalační kroky pro komponenty kanálu Retail v místním prostředí
                       href: deployment/deploy-retail-onprem.md
+                    - name: Opětovné použití stejné instance AD FS pro více prostředí
+                      href: deployment/onprem-reuseadfs.md
                 - name: Vývoj a nasazení vlastních modelů do místních prostředí
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: Integrace PowerBI.com s místními prostředími
@@ -971,23 +1003,33 @@
             - name: Vytvoření nebo aktualizace metodologií
               href: lifecycle-services/create-methodology.md
             - name: Modelování podnikových procesů
-              href: lifecycle-services/bpm-overview.md
-            - name: Knihovny podnikových procesů v Modelování podnikových procesů
-              href: lifecycle-services/business-process-libraries-business-process-modeler.md
-            - name: 'Vytvoření, úprava a procházení knihoven modelování podnikových procesů'
-              href: lifecycle-services/creating-editing-browsing.md
-            - name: Dokončení úloh v modelování podnikových procesů
-              href: lifecycle-services/complete-tasks-bpm.md
-            - name: Práce s diagramy aktivit v knihovnách BPM
-              href: lifecycle-services/using-activity-diagrams.md
-            - name: Synchronizace knihoven BPM s Azure DevOps
-              href: lifecycle-services/synchronize-bpm-vsts.md
-            - name: Vytvoření knihoven akceptačního testování pomocí průvodců záznamem úloh a BPM
-              href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Vývojové diagramy v modelování podnikových procesů
-              href: lifecycle-services/flowcharts-business-process-modeler.md
-            - name: Odeslání vlastních podnikových procesů do modelování podnikových procesů
-              href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+              items:
+                - name: Přehled modelování podnikových procesů
+                  href: lifecycle-services/bpm-overview.md
+                - name: Knihovny podnikových procesů v Modelování podnikových procesů
+                  href: lifecycle-services/business-process-libraries-business-process-modeler.md
+                - name: 'Vytvoření, úprava a procházení knihoven modelování podnikových procesů'
+                  href: lifecycle-services/creating-editing-browsing.md
+                - name: Dokončení úloh v modelování podnikových procesů
+                  href: lifecycle-services/complete-tasks-bpm.md
+                - name: Práce s diagramy aktivit v knihovnách BPM
+                  href: lifecycle-services/using-activity-diagrams.md
+                - name: Synchronizace knihoven BPM s Azure DevOps
+                  href: lifecycle-services/synchronize-bpm-vsts.md
+                - name: Vytvoření knihoven akceptačního testování pomocí průvodců záznamem úloh a BPM
+                  href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+                - name: Vývojové diagramy v modelování podnikových procesů
+                  href: lifecycle-services/flowcharts-business-process-modeler.md
+                - name: Odeslání vlastních podnikových procesů do modelování podnikových procesů
+                  href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: Servisní požadavky
+              items:
+                - name: Cloudové operace a obsluha
+                  href: lifecycle-services/cloud-operations-servicing.md
+                - name: Odeslání požadavků na službu týmu Dynamics Service Engineering
+                  href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+                - name: Často kladené dotazy k oknu plánované údržby
+                  href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Monitorování a diagnostika
               href: lifecycle-services/monitoring-diagnostics.md
             - name: Restart služeb prostředí
@@ -1282,14 +1324,8 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Získání podpory pro aplikaci Finance and Operations provozovanou společností 21Vianet v Číně
               href: lifecycle-services/21vianet-support.md
-            - name: Odeslání požadavků na tým Dynamics Service Engineering
-              href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
             - name: Nastavení technické podpory pro Finance and Operations
               href: lifecycle-services/support-experience.md
-            - name: Často kladené dotazy k oknu plánované údržby
-              href: lifecycle-services/planned-maintenance-window-faq.md
-            - name: Cloudové operace a obsluha
-              href: lifecycle-services/cloud-operations-servicing.md
             - name: Správa zkušeností s podporou Finance and Operations
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Správa systému
