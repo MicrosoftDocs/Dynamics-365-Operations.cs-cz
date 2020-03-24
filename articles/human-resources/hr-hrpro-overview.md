@@ -1,6 +1,6 @@
 ---
 title: Přehled
-description: ''
+description: Uživatelská příručka pro Dynamics 365 Human Resources obsahuje pokyny k nastavení aplikace Human Resources, nastavení kompenzace a zaměstnaneckých výhod pro zaměstnance a řízení zaměstnanců.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c489ddaec0363a5a6d68f0464786dfbe1b0e1349
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 7bef82f83de150df69a1a001fa9c07e34270742d
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008346"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091717"
 ---
 # <a name="overview"></a>Přehled
 
@@ -32,8 +32,8 @@ Uživatelská příručka pro Dynamics 365 Human Resources obsahuje pokyny k nas
 ## <a name="set-up-human-resources"></a>Nastavení Human Resources
 
 [Konfigurace parametrů lidských zdrojů](hr-setup-parameters.md)</br>
-[Konfigurace sdílených parametrů lidských zdrojů](hr-setup-shared-parameters.md)</br>
-[Nastavení workflow lidských zdrojů](hr-setup-workflows.md)</br>
+[Konfigurace sdílených parametrů Human Resources](hr-setup-shared-parameters.md)</br>
+[Nastavení workflow Human Resources](hr-setup-workflows.md)</br>
 [Pochopení polí data a času](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>Konfigurace nastavení organizace
@@ -86,7 +86,7 @@ Uživatelská příručka pro Dynamics 365 Human Resources obsahuje pokyny k nas
 [Definování pravidel a zásad nároků na zaměstnanecké výhody](hr-benefits-define-eligibility-rules.md)</br>
 [Definování programu zaměstnaneckých výhod](hr-benefits-deliver-employee-benefits-program.md)</br>
 [Vytvoření nových zaměstnaneckých výhod](hr-benefits-create.md)</br>
-[Přihlásit pracovníky k zaměstnaneckým výhodám](hr-benefits-enroll-workers.md)</br>
+[Registrace pracovníků k zaměstnaneckým výhodám](hr-benefits-enroll-workers.md)</br>
 [Správa dat vypršení platnosti zaměstnaneckých výhod](hr-benefits-expiration-dates.md)</br>
 [Generování ACA sestav](hr-benefits-aca-reports.md)</br>
 
@@ -122,8 +122,8 @@ Uživatelská příručka pro Dynamics 365 Human Resources obsahuje pokyny k nas
 [Distribuce dotazníků s použitím plánování](hr-learning-distribute-questionnaires-scheduling.md)</br>
 [Zobrazit výsledky dotazníku](hr-learning-evaluate-questionnaire-results.md)</br>
 [Analýza výsledků dotazníku](hr-learning-analyze-questionnaire-results.md)</br>
-[Vytvoření otázky s otevřeným koncem](hr-learning-create-open-ended-question.md)</br>
-[Vytvoření otázky s uzavřeným koncem](hr-learning-create-closed-ended-question.md)</br>
+[Vytvoření dotazu s otevřeným koncem](hr-learning-create-open-ended-question.md)</br>
+[Vytvoření dotazu s uzavřeným koncem](hr-learning-create-closed-ended-question.md)</br>
 [Vytvoření závislé otázky](hr-learning-depending-question.md)</br>
 
 

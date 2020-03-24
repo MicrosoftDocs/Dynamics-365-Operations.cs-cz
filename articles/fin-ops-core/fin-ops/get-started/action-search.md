@@ -3,7 +3,7 @@ title: Vyhledání akce
 description: Tento článek popisuje funkci hledání akce. Hledání akce vám pomůže najít a spustit akce na stránce.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d01247aa356625cb759306e5ead2afd3cdeb840f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bd4d81f010149c762dac0f4e6fa912c2e2cef072
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191309"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112161"
 ---
 # <a name="action-search"></a>Vyhledání akce
 
@@ -69,6 +69,9 @@ Předpokládejme například, že jste zadali výraz **cel** do pole **vyhledáv
 V předchozím příkladu vyhledávání akce ukázalo výsledky ze standardního podokna akcí v horní části stránky. Vyhledávání akcí však zobrazuje také výsledky viditelných panelů nástrojů, které jsou umístěny na dalších místech na stránce. Například vyhledáváte tlačítko **Zásoby na skladě**, které se nachází na pevné záložce **Řádky prodejní objednávky**. V tomto případě cesta tlačítka v seznamu výsledků (**Řádky prodejní objednávky**&gt;**Zásoby**&gt;**Zobrazení**) vás informuje o tom, že toto tlačítko se nachází v nadpisu **Zobrazení** na tlačítku nabídky **Zásob** na pevné záložce **Řádky prodejní objednávky**.
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+
+> [!NOTE]
+> V hledání Akcí se nezobrazují některá tlačítka. Tyto zahrnují tlačítka ukončení dialogu a tlačítka z podformulářů. 
 
 ## <a name="action-search-vs-navigation-search"></a>Vyhledávání akcí versus hledání navigace
 

@@ -1,9 +1,9 @@
 ---
-title: Syntax pokročilého filtrování a dotazů
-description: Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru shody v podokně filtru nebo filtrech záhlaví sloupce mřížky.
+title: Pokročilé filtrování a syntaxe dotazu
+description: Toto téma popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru shody v podokně filtru nebo filtrech záhlaví sloupce mřížky.
 author: jasongre
 manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
-ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
+ms.openlocfilehash: 7a525422a091efe8ea88f42e91dc52488430cfe5
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "2931281"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112184"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Pokročilé filtrování a syntaxe dotazu
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru **shody** v podokně filtru nebo filtrech záhlaví sloupce mřížky.
+Toto téma popisuje možnosti filtrování a dotazů, které jsou k dispozici při použití dialogového okna Rozšířený filtr či řazení nebo operátoru **shod** v podokně filtru nebo filtrech záhlaví sloupce mřížky.
 
 ## <a name="advanced-query-syntax"></a>Syntax pokročilých dotazů
 
@@ -122,10 +122,11 @@ Tento článek popisuje možnosti filtrování a dotazů, které jsou k dispozic
 <td>Dvě po sobě jdoucí dvojité uvozovky (<strong>""</strong>) naleznou řádky bez hodnoty pro aktuální sloupec.</td>
 </tr>
 <tr>
-<td>(<span class="code">příkaz SQL</span>) (příkaz SQL v uvozovkách)</td>
+<td>(<span class="code"> dotaz Finance and Operations</span>) (dotaz Finance and Operations mezi závorkami)</td>
 <td>Nalezení definovaného dotazu</td>
-<td>Zadejte dotaz ve formě příkazu SQL v uvozovkách.</td>
-<td><strong><span class="code">(datový zdroj.Název pole != &quot;A&quot;)</span></strong></td>
+<td>Pomocí dotazovacího jazyka Finance and Operations zadejte dotaz jako příkaz SQL mezi závorky.</td>
+  <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
+       Jako příklad syntaxe pro podmínku filtru v poli z kořenového zdroje dat a také pro pole z jiného zdroje dat (pro stránku Všichni odběratelé)</td>
 </tr>
 <tr>
 <td>bil.</td>

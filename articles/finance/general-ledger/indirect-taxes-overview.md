@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16a67ef625fdde0755e96c959be1fb2989ca53b6
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e827ede0508d07b6800ecdc4cc99cb2b6a0bcc78
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770659"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124490"
 ---
 # <a name="sales-tax-overview"></a>Přehled DPH
 
@@ -46,7 +46,7 @@ Každý kód daně z prodeje musí být spojen s obdobím vyrovnání daně z pr
 
 Každý kód daně z prodeje musí být také spojen se skupinou pro zaúčtování do hlavní knihy. Skupinu pro zaúčtování do hlavní knihy určuje hlavní účty, na které budou zaúčtovány částky pro kódy daně z prodeje. 
 
-Lze také definovat volitelné kódy vykazování daně z prodeje. Ty mohou být přiřazeny ke kódům daně z prodeje pro různé typy částky, které byly vypočteny pro kód daně z prodeje. Sestava **Platba DPH podle kódu** obsahuje součty za kód výkazu daně z prodeje pro dané období a interval vyrovnání daně z prodeje. 
+Lze také definovat volitelné kódy vykazování daně z prodeje. Ty mohou být přiřazeny ke kódům daně z prodeje pro různé typy částky, které byly vypočteny pro kód daně z prodeje. Sestava **Platba DPH podle kódu** obsahuje součty za kód výkazu DPH pro dané období a interval vyrovnání daně z prodeje. 
 
 Každá transakce, která vyžaduje výpočet a zaúčtování daně z prodeje, musí mít skupinu daně z prodeje a skupinu daně z prodeje zboží. Skupiny daně z prodeje souvisejí se stranou (například odběratel nebo dodavatele) transakce, zatímco skupiny daně z prodeje zboží se vztahují k prostředku (například zboží nebo kategorie zásobování) transakce. Daňové skupiny obsahují seznam kódů daní. Kódy daně uvedené ve skupině daně z prodeje a skupině daně z prodeje zboží pro transakci jsou kódy daně, které se vztahují na transakci. 
 

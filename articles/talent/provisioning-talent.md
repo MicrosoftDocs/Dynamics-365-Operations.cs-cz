@@ -3,7 +3,7 @@ title: Zřízení aplikace Talent
 description: Toto téma vás povede procesem zřízení nového prostředí pro aplikaci Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/15/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d06c0d14fb99e5544a5da05078f5b3a559f9e806
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: d7c4a8174007384370ae320b3874e104c04b71a5
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025502"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124697"
 ---
 # <a name="provision-talent"></a>Zřízení aplikace Talent
 
@@ -34,17 +34,23 @@ Pro začátek se musí globální správce má přihlásit do služby [Microsoft
 Pokud chcete použít ke správě svého prostředí Talent službu LCS, musíte nejprve vytvořit LCS projekt.
 
 1. Přihlaste se do [LCS](https://lcs.dynamics.com/Logon/Index) pomocí účtu, který jste použili pro přihlášení se k odběru aplikace Talent.
+
 2. Vyberte znaménko plus (**+**) a vytvořte projekt.
+
 3. Vyberte **Microsoft Dynamics 365 Talent** jako název produktu a verzi produktu.
+
 4. Výběr metodologie upgradování **Dynamics 365 Talent**.
-5. Vyberte **Vytvořit**.
+
+5. Vyberte **Vytvořit**. 
 
 Více informací o zahájení práce s aplikací Talent naleznete v metodologii **Talent**, kterou jste vytvořili ve svém nové projektu. Po vytvoření projektu dokončete následující postup ke zřízení prostředí Talent.
 
 ## <a name="provision-a-talent-project"></a>Zřízení projektu Talent
+
 Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prostředí.
 
 1. Ve svém LCS projektu vyberte dlaždici **Správa aplikace Talent**.
+
 2. Označte, zda se jedná o sandbox nebo produkční instanci aplikace Talent. Funkce předčasného náhledu mohou být k dispozici v instancích sandbox pro dřívější zpětnou vazbu a testování. 
 
     > [!NOTE]
@@ -52,13 +58,13 @@ Po vytvoření LCS projektu můžete vytvořit zařadit aplikaci Talent do prost
 
     > [!NOTE]
     > Typ instance aplikace Talent je oddělen od typu instance prostředí Microsoft Power Apps, který jste nastavili v centru správy Power Apps.
+
 3. Pokud chcete, aby prostředí obsahovalo stejnou datovou sadu, jaká se používá ve zkušenosti talentové zkušební jednotky, zaškrtněte políčko **Zahrnout ukázková data**. To je vhodné pro dlouhodobá demonstrační nebo školicí prostředí a nikdy se nemá používat pro výrobní prostředí.  Tuto možnost musíte zvolit při počátečním nasazení. Existující nasazení nelze aktualizovat později.
+
 4. Talent bude vždy zřízen v prostředí Microsoft Power Apps, aby byla možná integrace a rozšiřitelnost Power Apps. Než budete pokračovat, přečtěte si část Výběr prostředí Power Apps v tomto tématu. Pokud již nemáte prostředí Power Apps, vyberte správu prostředí v LCS nebo přejděte do centra pro správu Power Apps. Poté postupujte podle kroků k [Vytvoření prostředí Power Apps](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
-    > [!NOTE]
-    > K zobrazení existujících prostředí nebo vytváření nových prostředí musí být správce klienta zřizujícího aplikaci Talent přiřazen k licenci Power Apps P2. Pokud vaše organizace nemá Power Apps P2 licenci, můžete jednu získat ze svého CSP nebo ze stránky s cenami [Power Apps](https://powerapps.microsoft.com/pricing/).
-
 5. Vyberte prostředí, do kterého chcete zřídit Talent.
+
 6. K odsouhlasení smluvních podmínek vyberte **Ano** a začněte s nasazením.
 
     Nové prostředí se zobrazí v seznamu prostředí v navigačním podokně na levé straně. Nelze však začít používat prostředí, dokud není stav nasazení aktualizován na **Nasazeno**. Tento proces trvá obvykle několik minut. Pokud není proces zřízení úspěšný, musíte kontaktovat podporu.
@@ -77,9 +83,13 @@ Integrace mezi prostředími Talent a Power Apps umožňuje integraci a rozší�
 Použijte následující pokyny při určování, do kterého prostředí Power Apps nasadit aplikaci Talent: 
 
 1. V LCS vyberte **Prostředí pro správu** nebo přejděte přímo do centra pro správu Power Apps, ve kterém můžete zobrazit existující prostředí a vytvářet nová prostředí.
+
 2. Jedno prostředí Talent je mapováno na jedno prostředí Power Apps.
+
 3. Prostředí Power Apps obsahuje aplikaci Talent, spolu s odpovídajícími aplikacemi Power Apps, Power Automate a Common Data Service. Je-li prostředí Power Apps odstraněno, jsou s ním odstraněny i aplikace, které obsahuje. Při zřizování prostředí Talent můžete zřídit **zkušební** nebo **produkční** prostředí. Vyberte typ prostředí podle toho, jak bude prostředí používáno. 
+
 4. Měly být zohledněny strategie integrace dat a testování, například Sandbox, UAT nebo výroba. Doporučujeme zvážit různé implikace na vaše nasazení, protože není snadné později změnit, které prostředí Talent je namapováno na prostředí Power Apps.
+
 5. Následující prostředí Power Apps nelze použít pro aplikaci Talent a bude odfiltrováno ze seznamu voleb v rámci LCS:
  
     - **Výchozí prostředí Power Apps** - I když je každý klient automaticky vytvořen s výchozím prostředím Power Apps, nedoporučujeme je používat se systémem Talent, protože všichni uživatelé klientů mají přístup do prostředí Power Apps a mohou neúmyslně poškodit provozní data při testování a seznámení s integrací Power Apps nebo Power Automate.
@@ -91,4 +101,5 @@ Použijte následující pokyny při určování, do kterého prostředí Power 
 6. Po určení správného prostředí, které chcete použít, můžete pokračovat v procesu zřizování. 
  
 ## <a name="grant-access-to-the-environment"></a>Zřízení přístupu k prostředí
+
 Ve výchozím nastavení má k prostředí přístup globální správce, který ho vytvořil. Dalším uživatelům aplikace musí být explicitně udělen. Chcete-li udělit přístup, musíte přidat uživatele a přiřadit jim příslušné role v prostředí Human Resources. Globální správce, který nasadil aplikaci Talent, musí také spustit aplikaci Attract i Onboard k dokončení inicializace a povolit přístup pro ostatní uživatele klienta.  Dokud k tomu nedojde, ostatní uživatelé nebudou mít přístup do aplikací Attract a Onboard a získáte chyby narušení přístupu. Další informace naleznete v tématu [Vytvoření nových uživatelů](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) a [Přiřazení uživatelů k rolím zabezpečení](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

@@ -3,7 +3,7 @@ title: Povolení zjišťování obchodu na základě polohy
 description: Tohle téma popisuje, jak zapnout zjišťování obchodu na základě polohy pro web Dynamics 365 Commerce.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 304d8d2f05916295b9c6320561d6a25ff40df955
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 66ffe56f9d969c9d62ed4ff49f0848fab7e58a56
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003086"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096862"
 ---
 # <a name="enable-location-based-store-detection"></a>Povolení zjišťování obchodu na základě polohy
 
@@ -48,11 +48,13 @@ Chcete-li zapnout zjišťování obchodu na základě polohy, postupujte podle n
 1. Vyberte **Nastavení webu**.
 1. Nastavte možnost **Povolit zjišťování obchodu na základě polohy** na hodnotu **Zapnuto**.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
 [Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
+
+[Nastavení kanálu online obchodu](online-stores.md)
 
 [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
@@ -60,6 +62,12 @@ Chcete-li zapnout zjišťování obchodu na základě polohy, postupujte podle n
 
 [Správa souborů robots.txt](manage-robots-txt-files.md)
 
+[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+
+[Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
+
 [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
+
+[Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
 
 [Přidání podpory pro síť CDN](add-cdn-support.md)

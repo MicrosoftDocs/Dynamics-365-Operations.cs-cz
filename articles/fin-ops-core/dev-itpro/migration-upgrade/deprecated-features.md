@@ -1,9 +1,9 @@
 ---
-title: Odebrané nebo zastaralé funkce pro Finance and Operations
-description: Toto téma popisuje funkce, které byly odebrány nebo u nichž se plánuje odstranění.
+title: Odebrané nebo zastaralé funkce v předchozích verzích
+description: Toto téma popisuje funkce, které byly odebrány, nebo byly plánovány pro odebrání z Dynamics 365 for Finance and Operations a z předchozích verzí tohoto produktu.
 author: sericks007
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,28 +17,28 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811986"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124559"
 ---
-# <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Odebrané nebo zastaralé funkce pro Finance and Operations
+# <a name="removed-or-deprecated-features-in-previous-releases"></a>Odebrané nebo zastaralé funkce v předchozích verzích
 
 [!include [banner](../includes/banner.md)]
 
-Toto téma popisuje funkce, které byly odebrány z aplikace Finance and Operations, nebo které jsou již zastaralé.
+> [!IMPORTANT]
+> Toto téma již není aktualizováno. Chcete-li zobrazit aktuální seznam funkcí, které byly z aplikací Finance and Operations odebrány nebo zastaraly, hledejte obsah **"Odebrané nebo zastaralé funkce"**, který se vztahuje k používané aplikaci.
+
+Toto téma popisuje funkce, které byly odebrány nebo zastaraly z Dynamics 365 for Finance and Operations a z předchozích verzí tohoto produktu.
 
 - *Odstraněná* funkce již není k dispozici v produktu.
 - *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
 
 Tento seznam je určen k tomu, aby vám pomohl zvážit tyto odstraněné a zastaralé funkce při svém plánování. 
 
-> [!NOTE]
-> Počínaje vydáním Finance and Operations z července 2017 s aktualizací Platform Update 8 se uvádí typ nasazení pro každou odstraněnou nebo zastaralou funkci. Všechny předchozí verze uvedené v tomto tématu podporovaly cloudové nasazení.
-
-Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikace Finance and Operations.
+Podrobné informace o objektech v aplikacích Finance and Operations lze nalézt v části [Sestavy technických informací](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Můžete srovnat různé verze těchto sestav a zjistíte, které objekty se změnily nebo byly odstraněny v každé z verzí aplikací Finance and Operations.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 s aktualizací Platform update 31
 
@@ -51,7 +51,7 @@ Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v 
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: do 1. prosince 2020 plánujeme nadále nepodporovat nastavení čínských typů dokladů bez výběru skupin účtů. Vyhledání dalších podrobností o designu nové funkce ve verzi 10.0.7 |
 
-## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 aktualizace Platform Update 30
+## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 s aktualizací Platform Update 30
 
 
 ### <a name="dimensionhashgethashstr-_message"></a>DimensionHash.getHash(str _message)
@@ -106,7 +106,7 @@ Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v 
 | **Stav**                         | Zastaralé: Do 1. října 2020 plánujeme již nepodporovat položku **Sestava domácí daně – odkaz na funkci IT-00003**. |
 
 
-## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 aktualizace Platform Update 29
+## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 s aktualizací Platform Update 29
 
 ### <a name="us-payroll-tax-updates"></a>Aktualizace daně ze mzdy USA
 
@@ -128,7 +128,7 @@ Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v 
 | **Možnost nasazení**              | Vše  |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je prosinec 2020. |
 
-## <a name="finance-and-operations-1004-with-platform-update-28"></a>Finance and Operations 10.0.4 aktualizace Platform Update 28
+## <a name="finance-and-operations-1004-with-platform-update-28"></a>Finance and Operations 10.0.4 s aktualizací Platform Update 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Francie: Export účetních dat v FEC ve formátu XML
 
@@ -152,7 +152,7 @@ Podrobné informace o objektech v aplikaci Finance and Operations lze nalézt v 
 | **Stav**                         | Zastaralé: Od dubna 2020 již starší navigační panel nebude k dispozici. Do tohoto okamžiku se mohou zákazníci vrátit ke staršímu navigačnímu panelu prostřednictvím stránky **Možnosti výkonu klienta**. |
 
 
-## <a name="finance-and-operations-1002-with-platform-update-26"></a>Finance and Operations 10.0.2 aktualizace Platform Update 26
+## <a name="finance-and-operations-1002-with-platform-update-26"></a>Finance and Operations 10.0.2 s aktualizací Platform Update 26
 
 
 ### <a name="legacy-default-action-behavior"></a>Starší výchozí chování akce
@@ -196,7 +196,7 @@ Podpora pro vytváření prodejních objednávek na základě projektů, kde mě
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je duben 2020. |
 
-## <a name="finance-and-operations-1001-with-platform-update-25"></a>Finance and Operations 10.0.1 aktualizace Platform Update 25
+## <a name="finance-and-operations-1001-with-platform-update-25"></a>Finance and Operations 10.0.1 s aktualizací Platform Update 25
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Zastaralá rozhraní API a možná přerušení změn
 
@@ -221,7 +221,7 @@ Podpora pro vytváření prodejních objednávek na základě projektů, kde mě
 | **Možnost nasazení**              | Vše |
 | **Stav**                         | Zastaralé: Upozornění bude nahrazeno chybou kompilace v příští aktualizaci Platform Update 26. |
 
-## <a name="finance-and-operations-1000-with-platform-update-24"></a>Finance and Operations 10.0.0 aktualizace Platform Update 24
+## <a name="finance-and-operations-1000-with-platform-update-24"></a>Finance and Operations 10.0.0 s aktualizací Platform Update 24
 
 ### <a name="renaming-released-products"></a>Přejmenování vydaných produktů 
 |   |  |
@@ -230,13 +230,13 @@ Podpora pro vytváření prodejních objednávek na základě projektů, kde mě
 | **Nahrazeno jinou funkcí?**   | Č. |
 | **Ovlivněné oblasti produktu**         | Řízení informací o produktech |
 | **Možnost nasazení**              | Vše  |
-| **Stav**                         | Odebráno jako Finance and Operations 10.0.0 aktualizace Platform Update 24. Ve výjimečných případech, například pro obnovení z předchozího přejmenování primárního klíče vydaného produktu, je možné požádat společnost Microsoft o dočasné odebrání tohoto omezení pro operaci přejmenování primárního klíče pro vydané produkty. |
+| **Stav**                         | Odebráno od verze Finance and Operations 10.0.0 s aktualizací Platform Update 24. (Pokud potřebujete opravit poškození dat způsobené předchozím přejmenováním primárního klíče pro uvolněný produkt, obraťte se na podporu společnosti Microsoft a vyžádejte si dočasné odebrání tohoto omezení.) |
 
 
-## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 aktualizace Platform Update 23
+## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 s aktualizací Platform Update 23
 
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>Kontrola SQL Server Reporting Services ReportViewer
-Zákazníci mohou použít akci **Exportovat** poskytovanou vestavěným ovládacím prvkem SQL Server Reporting Services (SSRS) ReportViewe ke stažení dokumentů vyprodukovaných aplikacemi Finance and Operations. Tato prezentace sestavy na bázi HTML nabízí uživatelům náhled dokumentu bez číslování stránek.
+Zákazníci mohou použít akci **Export** poskytovanou vestavěným ovládacím prvkem SQL Server Reporting Services (SSRS) ReportViewe ke stažení dokumentů vyprodukovaných aplikacemi Finance and Operations. Tato prezentace sestavy na bázi HTML nabízí uživatelům náhled dokumentu bez číslování stránek.
 
 |   |  |
 |------------|--------------------|
@@ -272,7 +272,7 @@ Vložené klíčové indikátory výkonnosti (KPI) mohou být vývojářem model
 #### <a name="complete-list"></a>Úplný seznam
 Pro přístup k úplnému seznamu zastaralých rozhraní API nahlédněte do části [Zastarání metod a prvků metadat](deprecation-deletion-apis.md).
 
-## <a name="finance-and-operations-81-with-platform-update-20"></a>Finance and Operations 8.1 aktualizace Platform Update 20
+## <a name="finance-and-operations-81-with-platform-update-20"></a>Finance and Operations 8.1 s aktualizací Platform Update 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Pravidla dávkových převodů pro položky účtu dílčí hlavní knihy
 Režim synchronního převodu je zastaralý v parametrech hlavní knihy.  Tento režim je nahrazen pouze možnostmi Asynchronní a plánovaná dávka, které již existují jako možnosti pro převod. Další informace naleznete v blogu [Parametry hlavní knihy - pravidla dávkového přenosu ](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules).
@@ -294,7 +294,7 @@ Funkce pro konfiguraci formátů souborů TXT a XML prohlášení.
 | **Nahrazeno jinou funkcí?**   | Ano. |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Odebráno jako Finance and Operations 8.1 aktualizace Platform Update 20. |
+| **Stav**                         | Odebráno od verze Finance and Operations 8.1 s aktualizací Platform Update 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Generátor finančních sestav pro Rusko
 Nástroj pro nastavení shromažďování dat pro účetnictví a daňové sestavy a export dat do šablon sestavy XLS a DOC. Funkční části: jsou odstraněny export dat do šablon sestavy XLS , dotazy a pevné požadavky. 
@@ -305,7 +305,7 @@ Nástroj pro nastavení shromažďování dat pro účetnictví a daňové sesta
 | **Nahrazeno jinou funkcí?**   | Ano. Uživatelské rozhraní nastavení finančních sestav by mělo být použito pro nastavení pravidel shromažďování dat účty hlavní knihy a daňovými registry. Export dat do různých typů souborů, pevné požadavky a pravidla shromažďování dat podobná dotazům musí být nakonfigurovány v elektronickém výkaznictví. |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha. |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Odebráno jako Finance and Operations 8.1 aktualizace Platform Update 20. |
+| **Stav**                         | Odebráno od verze Finance and Operations 8.1 s aktualizací Platform Update 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integrování s externími poskytovateli pro odeslání elektronických sestav prostřednictvím komunikačních kanálů pro Rusko
 Funkce exportující generované elektronické soubory deklarací do složky pro další zasílání oficiálním poskytovatelům elektronického výkaznictví, stejně jako import stavu zpět.
@@ -316,7 +316,7 @@ Funkce exportující generované elektronické soubory deklarací do složky pro
 | **Nahrazeno jinou funkcí?**   | Ano.  |
 | **Ovlivněné oblasti produktu**         | Hlavní kniha, daň |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Odebráno jako Finance and Operations 8.1 aktualizace Platform Update 20. |
+| **Stav**                         | Odebráno od verze Finance and Operations 8.1 s aktualizací Platform Update 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Průvodce registrem daně ze zisku
@@ -325,16 +325,16 @@ Funkce pro vytvoření šablony pro nové registry daně ze zisku. Tato funkce v
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Funkce není kompatibilní s modelem rozšiřitelnosti Finance and Operations. |
-| **Nahrazeno jinou funkcí?**   | Ne |
+| **Nahrazeno jinou funkcí?**   | Žádný |
 | **Ovlivněné oblasti produktu**         | Daň |
 | **Možnost nasazení**              | Vše |
-| **Stav**                         | Odebráno jako Finance and Operations 8.1 aktualizace Platform Update 20. |
+| **Stav**                         | Odebráno od verze Finance and Operations 8.1 s aktualizací Platform Update 20. |
 
 
-## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 aktualizace Platform Update 15
+## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 s aktualizací Platform Update 15
 V této verzi nebyly odebrány ani odepsány žádné funkce. Aktualizace platformy 15 je kumulativní a obsahuje nové a změněné funkce aktualizace platformy 13, aktualizace platformy 14 a aktualizace platformy 15.
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 aktualizace Platform Update 12
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 s aktualizací Platform Update 12
 
 ### <a name="personalized-product-recommendations"></a>Doporučení přizpůsobeného produktu 
 Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporučení přizpůsobeného produktu na zařízení POS. Další informace viz [Přehled doporučení produktů](../../../commerce/product-recommendations.md).  
@@ -356,7 +356,7 @@ Možnost zavést vlastní funkce pro použití v tvůrci výrazů ER (další in
 | **Nahrazeno jinou funkcí?**   | Žádný. Kdykoliv je potřeba nová vestavěná funkce, musí být adresován nová požadavek na rozšíření týmu architektury elektronického výkaznictví.<br><br>Jako dočasné řešení pro dobu, kdy je požadovaná funkce vyvíjena týmem elektronického výkaznictví, lze požadovanou logiku naprogramovat jako metodu vlastní třídy aplikace. K této metodě lze získat přístup ve výrazu elektronické výkaznictví jako vlastnost přidaného datového zdroje dat elektronické výkaznictví typu **Aplikace\Třída**, který se vztahuje k této vlastní třídě aplikace.  |
 | **Ovlivněné oblasti produktu**         | Architektura elektronického výkaznictví                                                      |
 | **Možnost nasazení**              | Vše                                                                                      |
-| **Stav**                         | Odebráno jako Finance and Operations, Enterprise Edition 7.3.    |
+| **Stav**                         | Odebráno od verze Finance and Operations, Enterprise Edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Zásoby podle prodlení skupiny zboží a Zásoby podle doby uskladnění za dimenzi zásob
 
@@ -453,7 +453,7 @@ Od 15. února 2018 již nebudou maloobchodní prodejci schopní zobrazit doporu�
 | **Stav**                         |Odstraněno od 15. února 2018. To má vliv na zákazníky s verzí Dynamics 365 for Retail 7.2 a vyšší. |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise Edition červenec 2017 aktualizace Platform Update 8
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise Edition červenec 2017 s aktualizací Platform Update 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Převod měny pro účetnictví a měny vykazování
 
@@ -469,12 +469,12 @@ Převod měny pro účetnictví a měny vykazování byl zaveden se zavedením e
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portál skladu pro mobilní zařízení
 
-Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení. Tato komponenta již není podporována v aplikaci Finance and Operations. Funkce portálu skladu pro mobilní zařízení byla nahrazena nativní aplikací, která vylepšuje uživatelské prostředí.
+Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení. Tato součást již není v aplikaci Finance and Operations podporována. Funkce portálu skladu pro mobilní zařízení byla nahrazena nativní aplikací, která vylepšuje uživatelské prostředí.
 
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Duplicitní funkce.       |
-| **Nahrazeno jinou funkcí?**   | Ano. Tato funkce byla nahrazena aplikací Finance and Operations - Warehousing. Další informace o nastavení a předpokladech naleznete v tématu [Přehled instalace a konfigurace aplikace Warehousing](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Nahrazeno jinou funkcí?**   | Ano. Tato funkce byla nahrazena Finance and Operations - Warehousing. Další informace o nastavení a předpokladech naleznete v tématu [Přehled instalace a konfigurace aplikace Warehousing](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Ovlivněné oblasti produktu**         | Řízení skladu, Správa přepravy     |
 | **Možnost nasazení**              | Portál skladu pro mobilní zařízení (WMDP) byla samostatná komponenta, určená pro místní vlastní nasazení.               |
 | **Stav**                         | Zastaralé: Plánovaná doba pro odstranění funkcionality je čtvrté čtvrtletí roku 2019.   |
@@ -825,7 +825,7 @@ Workflow správy vytvoření cílů zaměstnanců je jednou z několika workflow
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Řízení výkonnosti bylo zcela změněno v aplikaci Finance and Operations.     |
+| **Důvod pro zrušení/odstranění** | Řízení výkonnosti bylo zcela přepracováno v aplikaci Finance and Operations.     |
 | **Nahrazeno jinou funkcí?**   | Upravená funkce řízení výkonnosti poskytuje větší kontrolu nad obsahem cílů, měřeními, která se používají ke sledování vývoje, a připojováním podpůrné dokumentace. Cíle lze ukládat jako šablony a pak znovu použít. Tato funkce vám pomůže rychleji nastavit další cíle pro zaměstnance. |
 | **Ovlivněné oblasti produktu**         | Správa lidského kapitálu                 |
 | **Stav**                         | Odstraněno od verze Dynamics 365 for Operations 1611. |
@@ -966,7 +966,7 @@ Tento nástroj byl použit k integraci klíčových dat z aplikace Microsoft Dyn
 |   |  |
 |------------|--------------------|
 | **Důvod pro zrušení/odstranění** | Tato funkce byla nahrazena jinou funkcí. |
-| **Nahrazeno jinou funkcí?**   | CDS (Common Data Service)                                      |
+| **Nahrazeno jinou funkcí?**   | Common Data Service                                      |
 | **Ovlivněné oblasti produktu**         | Konektor pro Dynamics                         |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.                           |
 
@@ -1053,7 +1053,7 @@ V aplikaci Dynamics AX 2012 R3 se Retail Modern POS připojoval přímo k datab�
 
 |   |  |
 |------------|--------------------|
-| **Důvod pro zrušení/odstranění** | Přímé připojení k databázi vyžadovalo nižší protokoly zabezpečení a primárně sloužilo k dosahování nejvyšších úrovní výkonnosti. Vzhledem k výkonu a vylepšení zabezpečení, ke kterým došlo v aplikaci Finance and Operations tato funkce nyní způsobuje mnohem více problémů, než řeší. |
+| **Důvod pro zrušení/odstranění** | Přímé připojení k databázi vyžadovalo nižší protokoly zabezpečení a primárně sloužilo k dosahování nejvyšších úrovní výkonnosti. Vzhledem k výkonu a vylepšení zabezpečení, ke kterým došlo v aplikaci Finance and Operations, tato funkce nyní způsobuje mnohem více problémů, než řeší. |
 | **Nahrazeno jinou funkcí?**   | Č. V současné době se podporuje pouze standardní komunikace Retail Server.  |
 | **Ovlivněné oblasti produktu**         | Databáze kanálů/Retail Modern POS   |
 | **Stav**                         | Odstraněno od verze Dynamics AX 7.0.  |

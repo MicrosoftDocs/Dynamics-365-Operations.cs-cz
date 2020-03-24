@@ -3,7 +3,7 @@ title: Nastavení kanálu kontaktního střediska
 description: Toto téma popisuje, jak vytvořit kanálu kontaktního střediska v řešení Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 42448bd54c00b8642b158f422e17d2b46ee25579
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 14cee020cc8aead627180343c82bf23534ae83c4
+ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057872"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3131724"
 ---
 # <a name="set-up-a-call-center-channel"></a>Nastavení kanálu kontaktního střediska
 
@@ -33,7 +33,8 @@ Toto téma popisuje, jak vytvořit kanálu kontaktního střediska v řešení M
 
 ## <a name="overview"></a>Přehled
 
-V aplikaci Dynamics 365 Commerce je kontaktní středisko typu kanálu, který lze definovat v aplikaci. Definování kanálu pro entity kontaktního střediska umožňuje systému zařadit specifická data a zpracovat výchozí hodnoty do prodejních objednávek. Společnost může definovat ve více kanálů kontaktního střediska v aplikaci Commerce. 
+
+V aplikaci Dynamics 365 Commerce je kontaktní středisko typu maloobchodní sítě, které lze definovat v aplikaci. Definování kanálu pro entity kontaktního střediska umožňuje systému zařadit specifická data a zpracovat výchozí hodnoty do prodejních objednávek. Zatímco společnost může definovat více kanálů kontaktních center ve službě Commerce, je důležité si uvědomit, že jednotliví uživatelé mohou být spojeni pouze s jedním kanálem kontaktního centra. 
 
 Před vytvořením nového kanálu kontaktního centra se ujistěte, že jste splnili [Požadavky pro zřízení kanálů](channels-prerequisites.md).
 
@@ -41,17 +42,18 @@ Před vytvořením nového kanálu kontaktního centra se ujistěte, že jste sp
 
 Chcete-li vytvořit a konfigurovat nový kanál kontaktního střediska, postupujte dle těchto kroků.
 
-1. V navigačním podokně přejděte na **Moduly \> Kanály \> Kontaktní střediska \> Všechna kontaktní střediska**.
+1. V navigačním podokně přejděte na **Retail and Commerce \> Kanály \> Kontaktní střediska \> Všechna kontaktních střediska**.
 1. V podokně akcí zvolte **Nový**.
 1. Do pole **Název** zadejte název nového kanálu.
 1. Vyberte patřičnou **Právnickou osobu** z rozevírací nabídky.
-1. Vyberte odpovídající umístění **Skladu** z rozevírací nabídky.
-1. Do pole **Výchozí odběratel** zadejte platného výchozího odběratele.
-1. V poli **Profil oznámení e-mailem** zadejte platný profil e-mailového oznámení.
-1. Zadejte informační kód **Přepisu ceny**. Poznámka: je možné, že pro vás bude nutné vytvořit informační kód.
-1. Zadejte informační kód **Kód blokování**. Poznámka: je možné, že pro vás bude nutné vytvořit informační kód.
-1. Zadejte informační kód **Kredit**. Poznámka: je možné, že pro vás bude nutné vytvořit informační kód.
-1. Zvolte **Uložit**.
+1. Vyberte odpovídající umístění **Skladu** z rozevírací nabídky. Toto místo bude použito jako výchozí v prodejních objednávkách vytvořených pro tento kanál kontaktního centra, pokud nebyla na úrovni odběratele nebo položky definována jiná výchozí nastavení.
+1. Do pole **Výchozí odběratel** zadejte platného výchozího odběratele. Tato data slouží k pomoci při vytváření nových záznamů odběratelů při automatickém vyplňování výchozího nastavení. Při vytváření objednávek kontaktních středisek není vhodné vytvářet objednávky pro výchozího odběratele.
+1. V poli **Profil oznámení e-mailem** zadejte platný profil e-mailového oznámení. Při vytváření a zpracování objednávek kontaktních středisek se pomocí profilu e-mailového oznámení spouští automatické e-mailové výstrahy pro zákazníky s informacemi o stavu jejich objednávky.
+1. Zadejte informační kód **Přepisu ceny**. Je možné, že pro vás bude nutné vytvořit informační kód. Tento informační kód poskytuje sadu kódů důvodů, z nichž si uživatel bude při použití funkce přepsání ceny v objednávce kontaktního centra vycházet.
+1. Zadejte informační kód **Kód blokování**. Je možné, že pro vás bude nutné vytvořit informační kód. Tento informační kód poskytuje sadu vlitelných kódů důvodů, z nichž si uživatel bude vybírat při odesílání blokované objednávky.
+1. Zadejte informační kód **Kredit**. Je možné, že pro vás bude nutné vytvořit informační kód. Tento informační kód obsahuje sadu kódů důvodů, z nichž může uživatel vybírat při použití funkce kredit objednávek v centru volání k poskytování různých refundací odběrateli z důvodů služeb pro zákazníky.
+1. Volitelné: nastavení finančních dimenzí na pevné záložce **Finanční dimenze**. Dimenze zadané v tomto poli budou výchozí pro každou prodejní objednávku vytvořenou v tomto kanálu kontaktního centra.
+1. Klikněte na možnost **Uložit**.
 
 V následujícím obrázku je znázorněno vytvoření nového kanálu kontaktního střediska.
 
@@ -71,14 +73,14 @@ Následující obrázek znázorňuje možnosti nastavení **Režimy dodávek** a
 
 ### <a name="set-up-payment-methods"></a>Nastavení metod platby
 
-Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kanálu, postupujte takto.
+Chcete-li nastavit metody platby pro každý typ platby podporovaný v tomto kanálu, postupujte takto. Uživatelé budou muset vybírat z předdefinovaných metod platby a propojit je s kanálem kontaktního střediska. Před nastavením metod platby na kontaktních střediscích nejprve nastavte hlavní metody platby v **Retail and Commerce \> Nastavení kanállu \> Metody platby \> Metody platby**.
 
 1. V podokně akcí vyberte kartu **Nastavení** a poté vyberte možnost **Metody platby**.
 1. V podokně akcí zvolte **Nový**.
-1. V navigačním podokně vyberte požadovaný způsob platby.
-1. V části **Obecné** zadejte **Název operace** a nakonfigurujte další požadovaná nastavení.
-1. Konfigurujte libovolná další nastavení, která jsou požadována pro typ platby.
-1. V podokně akcí vyberte **Uložit**.
+1. V navigačním podokně vyberte způsob platby z dostupných předdefinovaných plateb.
+1. Konfigurujte libovolná další nastavení, která jsou požadována pro typ platby. V případě kreditních karet, dárkových poukazů nebo věrnostních karet je vyžadována další instalace výběrem funkce **Nastavení karty**. 
+1. Konfigurace správných účtů pro zaúčtování pro typ platby v části **Zaúčtování**.
+1. V podokně akcí klikněte na možnost **Uložit**.
 
 Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
@@ -88,17 +90,40 @@ Na následujícím obrázku je znázorněn příklad hotovostní způsob platby.
 
 Nastavené způsoby dodání lze zobrazit výběrem **Způsobů dodání** z karty **Nastavení** v **Podokně akcí**.  
 
-Chcete-li změnit nebo přidat způsob dodání, postupujte podle následujících kroků.
+Chcete-li změnit nebo přidat způsob dodání, který má být přidružen k kanálu kontaktního střediska, postupujte podle následujících kroků.
 
-1. V navigačním podokně přejděte na **Moduly \> Řízení zásob \> Způsoby dodání**.
+1. Ve formuláři způsoby dodání na základě kontaktního střediska vyberte **Spravovat způsoby dodání**
 1. V podokně akcí vyberte možnost **Nový** a vytvořte nový způsob dodání nebo vyberte existující režim.
-1. V oddílu **Maloobchodní kanály** vyberte možnost **Přidat řádek**, chcete-li přidat kanál. Přidání kanálů pomocí organizačních uzlů namísto přidání jednotlivých kanálů může zjednodušit přidávání kanálů.
+1. V oddílu **Maloobchodní kanály** klikněte na **Přidat řádek**, chcete-li přidat kanál kontaktního centra. Přidání kanálů pomocí organizačních uzlů namísto přidání jednotlivých kanálů může zjednodušit přidávání kanálů.
+1. Zajistěte, aby byl způsob dodání konfigurován daty na pevné záložce **Produkty** a **Adresy**. Nejsou-li pro způsob dodání platné žádné produkty nebo dodací adresy, při výběru objednávky dojde k chybám.
+1. Po provedení změn v režimu kontaktní středisko pro konfiguraci dodání je nutné spustit úlohu **Zpracovat způsoby dodání** a rozbalit tak matici změn. Tato úloha se nachází v **Maloobchodní a velkoobchodní prodej \> IT pro maloobchod a velkoobchod \> Zpracovat způsoby dodání**.
 
 Na následujícím obrázku je znázorněn příklad způsobu dodání.
 
 ![Nastavit způsoby dodání](media/channel-setup-retail-7.png)
 
-## <a name="additional-resources"></a>Další zdroje
+### <a name="set-up-channel-users"></a>Nastavení uživatele kanálu
+
+Chcete-li vytvořit prodejní objednávku, která je propojena s kanálem kontaktního centra z programu Commerce Headquarters, musí být uživatel vytvářející prodejní objednávku propojen s kanálem kontaktního střediska. Uživatel nemůže ručně propojit prodejní objednávku vytvořenou v rámci služby Commerce Headquarters s kanálem kontaktního střediska. Odkaz je systematický a je založen na uživateli a vztahu uživatele k kanálu kontaktního střediska. Uživatel může být propojen pouze s jedním kanálem kontaktního centra.
+
+1. V podokně akcí vyberte kartu **Kanál** a poté vyberte možnost **Uživatelé kanálu**.
+1. V podokně akcí zvolte **Nový**.
+1. Vyberte existující **ID uživatele** z rozevíracího seznamu výběrů, chcete-li tohoto uživatele propojit s kanálem kontaktního střediska
+
+Po dokončení nastavení uživatele kanálu a uživatel vytvoří novou prodejní objednávku v Commerce Headquarters, bude prodejní objednávka propojena s přiřazeným kanálem kontaktního střediska. Všechny konfigurace tohoto kanálu budou systematicky použity pro prodejní objednávku. Uživatel může potvrdit, se kterým kanálem kontaktního střediska je prodejní objednávka propojena, a to zobrazením odkazu názvu kanálu v záhlaví prodejní objednávky.
+
+
+### <a name="set-up-price-groups"></a>Nastavení cenových skupin
+
+Cenové skupiny jsou volitelné, ale pokud jsou používány, mohou kontrolovat, které prodejní ceny budou nabídnuty odběratelům, kteří dodávají objednávky do kanálu kontaktního střediska. Pokud pro odběratele nebyla nakonfigurována cenová skupina nebo pokud nejsou použity cenové skupiny katalogu pro prodejní objednávku (pomocí pole **ID zdrojového kódu** v záhlaví objednávky kontaktního centra), použije se pro vyhledání cen položek Cenová skupina kanálů. Pokud v kanálu kontaktního střediska nebyla nalezena Cenová skupina, použijí se výchozí hlavní ceny zboží. 
+
+Chcete-li nastavit cenovou skupinu, postupujte podle následujících pokynů.
+
+1. V podokně akcí klikněte na kartu **Kanál** a poté vyberte možnost **Cenové skupiny**.
+1. V podokně akcí klikněte na možnost **Nový**.
+1. V rozevíracím seznamu vyberte **Maloobchodní cenovou skupinu**.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Předpoklady nastavení kanálu](channels-prerequisites.md)
 

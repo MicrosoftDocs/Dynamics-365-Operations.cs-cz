@@ -1,9 +1,9 @@
 ---
-title: Vytvoření seznamů doporučení vybraných produktů
-description: V tomto tématu je vysvětleno, jak mohou manažeři prodeje vytvářet a spravovat ruční seznamy produktů pro zákazníky Microsoft Dynamics 365 Commerce.
+title: Ručně vytvořit uspořádaná doporučení
+description: V tomto tématu je vysvětleno, jak mohou manažeři prodeje ručně vytvářet a spravovat seznamy produktů pro zákazníky Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: b39ef61e7dabdd8a53d5666926a95cb7b9e6b9a5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024926"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127714"
 ---
-# <a name="create-curated-product-recommendation-lists"></a>Vytvoření seznamů doporučení vybraných produktů
+# <a name="manually-create-curated-recommendations"></a>Ručně vytvořit uspořádaná doporučení
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak mohou manažeři prodeje vytvářet a spravovat ruční seznamy produktů pro zákazníky Microsoft Dynamics 365 Commerce.
+V tomto tématu je vysvětleno, jak mohou manažeři prodeje ručně vytvářet a spravovat seznamy doporučení produktů pro zákazníky Microsoft Dynamics 365 Commerce.
 
 Seznamy vybraných produktů jsou kolekce jednotlivých položek obsahu vytvořených a doporučených lidmi.  
 
@@ -52,12 +52,26 @@ Chcete-li vytvořit seznam doporučení vybraných produktů, postupujte takto.
 
 ![Ukázkový doporučený seznam v administrativě](./media/examplecuratedrecolist.png)
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled doporučení produktu](product-recommendations.md)
 
+[Povolení ADLS v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
+
 [Povolit doporučení produktu](enable-product-recommendations.md)
 
-[Přidání seznamů doporučení produktu na stránky](add-reco-list-to-page.md)
+[Povolení přizpůsobených doporučení](personalized-recommendations.md)
 
-[Přehled modulu kolekce produktů](product-collection-module-overview.md)
+[Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
+
+[Přidání seznamů doporučení na web e-Commerce](add-reco-list-to-page.md)
+
+[Přidat doporučení produktu v POS](product.md)
+
+[Přidání doporučení na obrazovku transakce](add-recommendations-control-pos-screen.md)
+
+[Úprava výsledků doporučení AI-ML](modify-product-recommendation-results.md)
+
+[Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
+
+[Často kladené dotazy k doporučení produktu](faq-recommendations.md)

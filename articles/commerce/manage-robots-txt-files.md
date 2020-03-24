@@ -3,7 +3,7 @@ title: Správa souborů robots.txt
 description: Toto téma popisuje správu souborů robots.txt v aplikaci Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brishoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d0ce49f2968030ca4656a01c7646819c01635e12
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d248dae36e6e038749ee17a5a6ccb32f1dde0aed
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003480"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096836"
 ---
 # <a name="manage-robotstxt-files"></a>Správa souborů robots.txt
 
@@ -86,17 +86,25 @@ Postup odstranění souboru robots.txt v Commerce je následovný.
 > [!NOTE] 
 > Tento postup lze použít k odstranění pouze souborů robots.txt, které byly dříve odeslány pomocí vývojářských nástrojů Commerce.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
 [Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
 
+[Nastavení kanálu online obchodu](online-stores.md)
+
 [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
 [Přiřazení online webu ke kanálu](associate-site-online-store.md)
 
+[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+
+[Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
+
 [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
+
+[Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
 
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 

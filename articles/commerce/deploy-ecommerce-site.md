@@ -3,7 +3,7 @@ title: Nasazení nového klienta elektronického obchodu
 description: V tomto tématu je popsán způsob nasazení nového klienta elektronického obchodu pomocí služeb Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d5cf2804c44e81ad135a3248d38c228148b530cc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001776"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096671"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Nasazení nového klienta elektronického obchodu
 
@@ -91,17 +91,25 @@ Chcete-li získat přístup k konfigurátoru webu, přejděte na kartu **Elektro
 - Získat přístup k funkcím,recenzí, jako je moderování a vykazování.
 - Vytvořit nový web. Další informace o tom, jak vytvářet nový web, naleznete v tématu [Vytvoření webu elektronického obchodování](create-ecommerce-site.md). 
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
 [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
+[Nastavení kanálu online obchodu](online-stores.md)
+
 [Přiřazení online webu ke kanálu](associate-site-online-store.md)
 
 [Správa souborů robots.txt](manage-robots-txt-files.md)
 
+[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+
+[Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
+
 [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
+
+[Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
 
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 

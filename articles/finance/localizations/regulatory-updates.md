@@ -3,7 +3,7 @@ title: Povinné aktualizace
 description: Toto téma obsahuje seznam plánovaných a vydaných povinných aktualizací Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d596a543ca8aacc2c6530672111001a9dd161aa7
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 2aea83f99c7e5b017ae0cf9d755882739e22ccb7
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "2999994"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3112748"
 ---
 # <a name="regulatory-updates"></a>Povinné aktualizace
 
@@ -42,43 +42,38 @@ Nejnovější plány povinné aktualizace naleznete v následující tabulce.
 
 |Země|Plánované datum vydání|Verze vydání|Povinná aktualizace|
 |--------------------|---------------|-------|-------|
+|      Brazílie         |   Březen 2020 - leden 2020      | 10.0.9, 10.0.8      |   DRCST SC – Nařízení SEF číslo 416    |
+|      Brazílie         |   Březen 2020 - leden 2020     | 10.0.9, 10.0.8      |   Příspěvek SPED – rozložení pro leden-2020    |
 |      Brazílie         |   2020. březen       | 10.0.9      |   SPED fiskální – změny v poli D100 záznamu COD_MUN_ORI    |
-|      Brazílie         |   Březen 2020 – prosinec 2019       | 10.0.9, 10.0.8, 10.0.7HF      |   DRCST SC – Ordinance SEF Nº 254/19    |
-|      Brazílie         |   Leden 2020 – prosinec 2019       | 10.0.8, 10.0.7HF      |   Doplňkové informace o ICMS-ST    |
-|      Brazílie        |   Březen 2020 – prosinec 2019       | 10.0.9, 10.0.8HF, 10.0.7HF      |   Sped Fiscal Layout 014 |
-|      Brazílie         |   2019. prosince       | 10.0.7      |   Nová verze technických poznámek pro NF-e: NT 2019.001 verze 1.20    |
-|      Brazílie         |   2019. prosince       | 10.0.7      |   Prohlášení SC DRCST    |
-|      Brazílie          |   Březen 2020 - leden 2020       | 10.0.9, 10.0.8HF, 10.0.7HF      |   DRCST SC – Ordinance SEF Nº 343DR   |
+|      Brazílie         |   Březen 2020 - leden 2020       | 10.0.9, 10.0.8      |   DRCST SC – Nařízení SEF číslo 254/19    |
+|      Brazílie         |   2020. leden       | 10.0.8      |   Doplňkové informace o ICMS-ST    |
+|      Brazílie        |   Březen 2020 - leden 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal Layout 014 |
+|      Brazílie          |   Březen 2020 - leden 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Nařízení SEF číslo 343DR   |
 |      Francie          |   2020. březen       | 10.0.9      |   Lokalizace do francouzštiny: ISO 20022 formát pro mezinárodní platbu a přenos pokladny   |
+|      Maďarsko          |   2020. březen       | 10.0.9, 10.0.8      |   Fakturační systém online v.2.0 v řešení Finance and Operations    |
 |      Indie          |   2020. březen       | 10.0.9      |   Nový GSTR (ANX-1 & ANX-2) nástroj pro offline vracení   |
 |      Itálie          |   2020. leden       | 10.0.8      |   Změny ve správě DPH podle D.L. 119 z 23. říja 2018: Roční daňová komunikace |
-|      Itálie         |   2019. prosince       | 10.0.7      |   Změny ve správě DPH podle D.L. 119 z 23 října 2019: čtvrtletní sdělení o DPH ("Lipe 2018")    |
-|      Itálie         |   Březen 2020 – prosinec 2019     | 10.0.9, 10.0.8HF, 10.0.7HF      |   Maloobchod - správa informací o odběrateli v POS |
-|      Itálie         |   Březen 2020 – prosinec 2019      | 10.0.9, 10.0.8HF, 10.0.7HF      |   Maloobchod – tisk informací o odběrateli ve fiskální příjemce |
-|      Itálie         |   2019. prosince     | 10.0.7      |   Změny ve správě DPH podle D.L. 119 of 23 Oct 2018: komunikace o fakturách  |
-|      Japonsko          |   Březen 2020 – prosinec 2019     | 10.0.9, 10.0.8HF, 10.0.7HF     |   Japan Bankers Association nahrazující platební formáty JBA pevné délky s ISO20022 |
-|      Japonsko          |   Leden 2020 – prosinec 2019     | 10.0.8, 10.0.7HF       |   Byla zavedena změna sazby spotřební daně a snížená daňová sazba (Sestava spotřební daně) |
-|      Japonsko         |   2019. prosince      | 10.0.7       |   Byla zavedena změna sazby spotřební daně a snížená daňová sazba (rozvržení faktury) |
-|      Mexiko          |   Leden 2020 – prosinec 2019    | 10.0.8, 10.0.7HF        |   Maloobchod - CFDI Global: Misc. Resol 2019 - c_CodigoPostal a časové pásmo |
-|     Mexiko          |   2019. prosince       | 10.0.7      |   Aktualizace pravidla 2.7.2.9 – použití časového pásma zařízení, které vydává dokument algoritmus CFDI. |
-|      Mexiko           |   Leden 2020 – prosinec 2019      | 10.0.8, 10.0.7HF     |   Ověření kódu v katalogu produktů a služeb |
-|      Norsko          |   Březen 2020 – prosinec 2019   | 10.0.9, 10.0.8HF, 10.7.7HF     |   Aktualizace SAF-T XSD do verze 1.1 pro Dynamics 365 for Finance and Operations |
-|      Polsko          |   2020. březen    | 10.0.9     |   Registr DPH nákupu a SAF DPH: vlastní agentura z dokumentů SAD musí být nahrazena názvem třetí strany a číslem osvobození od daně. |
+|      Itálie         |   2020. březen     | 10.0.9, 10.0.8HF      |   Maloobchod - správa informací o odběrateli v POS |
+|      Itálie         |   2020. březen      | 10.0.9, 10.0.8HF      |   Maloobchod – tisk informací o odběrateli ve fiskální příjemce |
+|      Japonsko          |   2020. březen     | 10.0.9, 10.0.8HF     |   Japan Bankers Association nahrazující platební formáty JBA pevné délky s ISO20022 |
+|      Japonsko          |   2020. leden      | 10.0.8       |   Byla zavedena změna sazby spotřební daně a snížená daňová sazba (Sestava spotřební daně) |
+|      Mexiko          |   2020. leden     | 10.0.8        |   Maloobchod - CFDI Global: Misc. Resol 2019 - c_CodigoPostal a časové pásmo |
+|      Mexiko           |   2020. leden       | 10.0.8     |   Ověření kódu v katalogu produktů a služeb |
+|      Norsko          |   2020. březen   | 10.0.9, 10.0.8HF     |   Aktualizace SAF-T XSD do verze 1.1 pro Dynamics 365 for Finance and Operations |
+|      Polsko          |   2020. březen    | 10.0.9     |   Registr DPH nákupu a SAF DPH: vlastní agentura z dokumentů SAD musí být nahrazena názvem třetí strany a číslem osvobození od daně |
 |      Polsko          |   Březen 2020 - leden 2020   | 10.0.9, 10.0.8HF     |   Maloobchod - správa informací o odběrateli v POS |
 |      Polsko          |   Březen 2020 - leden 2020     | 10.0.9, 10.0.8HF     |   Maloobchod – tisk informací o odběrateli ve fiskální příjemce |
-|      Polsko          |   Březen 2020 – prosinec 2019     | 10.0.9, 10.0.8, 10.0.7     |   SAF faktury (JPK_FA) v.3 z 2. prosince 2019 |
-|      Polsko          |   Březen 2020 - leden 2019     | 10.0.9, 10.0.8     |   JPK_VDEK nahrazující JPK_VAT (SAF VAT) |
-|      Polsko          |   2019. prosince     | 10.0.7     |   Povinná rozdělená platba |
+|      Polsko          |   Březen 2020 - leden 2020     | 10.0.9, 10.0.8     |   SAF faktury (JPK_FA) v.3 z 2. prosince 2019 |
+|      Polsko          |   Březen 2020 - leden 2020     | 10.0.9, 10.0.8     |   JPK_VDEK nahrazující JPK_VAT (SAF VAT) |
 |      Rusko          |   2020. březen     | 10.0.9     |   Formát daňového prohlášení o dani z majetku pro výkaznictví 2019 |
 |      Rusko          |   2020. březen     | 10.0.9     |   Aktualizace formátu daňového přiznání pro daň ze zisku |
-|      Singapur           |   Leden 2020 – prosinec 2019     | 10.0.8, 10.0.7HF      |   Sestava vratek daně GST |
+|      Singapur           |   2020. leden     | 10.0.8      |   Sestava vratek daně GST |
 |      Švýcarsko           |   2020. březen     | 10.0.9      |   Platební poukázka pro švýcarskou platbu ISR má nový formát (QR kód) |
 |      Velká Británie          |   2020. leden       | 10.0.8      |   Digitalizování daní (MTD) - souhlas správce systému předávat informace mimo D365 pomocí integrace s HMRC |
-|      Velká Británie          |   2019. prosince     | 10.0.7     |   Vytváření daňových digitálních vratek-DPH vytvoření sestavy pro společnosti, které jsou považovány za skupinu DPH v rámci stejné systémové databáze v. 10 |
 
 
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 - Najděte všechny plánované a vydané povinné aktualizace v [Lifecycle Service - hledání problémů](https://lcs.dynamics.com/Logon/Index) (vyžaduje se přihlášení).
 - Seznam lokalizací, které jsou podporovány, uvádí [Příručka mezinárodní dostupnosti](https://aka.ms/dynamics_365_international_availability_deck).
 

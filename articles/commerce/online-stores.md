@@ -3,7 +3,7 @@ title: Nastavení kanálu online obchodu
 description: Tento článek obsahuje informace o online kanálech obchodu a jejich nastavení v aplikaci Dynamics 365 Commerce.
 author: kfend
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 03/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c427b0eba2120123a47f52029d70896be88b9ec0
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b719e40720b091eec879edf332ab63db710a1ebc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021931"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096887"
 ---
 # <a name="set-up-an-online-store-channel"></a>Nastavení kanálu online obchodu
 
@@ -71,3 +71,27 @@ Organizační hierarchie slouží ke strukturování obchodních kanálů a repr
 Při vytváření organizační hierarchie je nutné přiřadit účel k hierarchii. Účel označuje použití hierarchie v organizační struktuře. Můžete vytvořit jednu organizační hierarchii pro operace obchodu a použít danou hierarchii pro sortimenty, doplnění a vykazování. 
 
 Alternativně můžete vytvořit samostatnou organizační hierarchii pro každý účel. Také můžete vytvořit více hierarchií se stejným účelem a přiřadit ke každé z nich kanál. Chcete-li publikovat katalogy produktů v online obchodu, je nutné přinejmenším přidat online obchody do organizační hierarchie pro potřeby vytvoření sortimentů. Produkty v katalogu jsou vybrány ze sortimentu přiřazeného k online obchodu. Při publikování katalogu se během procesu publikování porovnávají data platnosti sortimentu přiřazeného k online obchodu s produkty zahrnutými v katalogu, a určují se tak produkty, které budou k dispozici v online obchodu.
+
+## <a name="additional-resources"></a>Další prostředky
+
+[Konfigurace názvu domény](configure-your-domain-name.md)
+
+[Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
+
+[Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
+
+[Přiřazení online webu ke kanálu](associate-site-online-store.md)
+
+[Správa souborů robots.txt](manage-robots-txt-files.md)
+
+[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+
+[Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
+
+[Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
+
+[Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
+
+[Přidání podpory pro síť CDN](add-cdn-support.md)
+
+[Povolení zjišťování obchodu na základě polohy](enable-store-detection.md)

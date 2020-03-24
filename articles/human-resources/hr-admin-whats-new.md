@@ -1,6 +1,6 @@
 ---
 title: Co je nového a co se změnilo v Human Resources
-description: ''
+description: Každý týden poskytujeme nové vydání pro Microsoft Dynamics 365 Human Resources. Zde uvedené články podávají podrobné informace o změnách provedených v jednotlivých týdnech.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f36aba8a68ea8cc261423f79db00e175df1cf349
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 4058618ec95fabc90fdc784552c1920a109e6418
+ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075941"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3123963"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Co je nového a co se změnilo v Human Resources
 
@@ -41,6 +41,9 @@ Další informace o nadcházejících funkcích a procesu aktualizace pro Human 
 
 Chcete-li zjistit, co je nového nebo změněné v každém týdenním vydání aplikace Human Resources, naleznete to v následujících článcích:
 
+[10. března 2020](hr-whats-new-2020-03-10.md)</br>
+[3. března 2020](hr-whats-new-2020-03-03.md)</br>
+[25. února 2020](hr-whats-new-2020-02-25.md)</br>
 [18. února 2020](hr-whats-new-2020-02-18.md)</br>
 [12. února 2020](hr-whats-new-2020-02-12.md)</br>
 [7. února 2020](hr-whats-new-2020-02-07.md)</br>

@@ -3,7 +3,7 @@ title: Přehled úloh importu a exportu dat
 description: Použijte pracovní prostor Správa dat k vytvoření a správě úloh importu a exportu dat.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b852a73268251241cd66a07d7e4f4720706c0d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184547"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124605"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Přehled úloh importu a exportu dat
 
@@ -191,8 +191,11 @@ Při plánování procesu čištění je nutné zadat následující parametry d
 
 -   **Počet dnů pro uchování historie** – toto nastavení slouží k řízení rozsahu historie provádění, která má být zachována. Specifikuje se v počtech dní. Pokud je úloha čištění naplánována jako opakovaná dávková úloha, toto nastavení bude fungovat jako neustálé přesouvání okna, takže vždy zůstala historie zadaného počtu dnů při odstranění zbývající položky. Výchozí hodnota je 7 dní.
 
--   **Počet hodin pro provedení úlohy** – v závislosti na množství historie, která má být vyčištěna, se může celková doba provádění úlohy čištění pohybovat v rozsahu od několika minut až po několik hodin. Vzhledem k tomu, že je nutné provést vyčištění uvedených tabulek v případě, že v systému není žádná jiná aktivita správy dat, je důležité se ujistit, že úloha vyčištění byla spuštěna a dokončena před zahájením obchodní aktivity.
+-   **Počet hodin pro provedení úlohy** – v závislosti na množství historie, která má být vyčištěna, se může celková doba provádění úlohy čištění pohybovat v rozsahu od několika minut až po několik hodin. Tento parametr musí být nastaven na počet hodin, který bude úloha provádět. Poté, co byla úloha čištění provedena po zadaný počet hodin, úloha se ukončí a bude pokračovat v vyčištění při příštím spuštění na základě plánu opakování.
 
     Maximální čas provedení lze určit nastavením maximálního počtu hodin, které musí úloha spustit pomocí tohoto nastavení. Logika čištění projde v čase s chronologicky uspořádaným pořadím jedno ID spuštění úlohy a nejstarší je nejprve pro vyčištění související historie spuštění. Ukončí vyzvednutí nového ID provedení vyčištění, když je zbývající doba trvání během posledních 10 % zadané doby trvání. V některých případech se očekává, že úloha vyčištění bude pokračovat i po uplynutí určené maximální doby. To bude převážně záviset na počtu záznamů, které mají být odstraněny pro aktuální ID spuštění, které bylo zahájeno před dosažením prahové hodnoty 10 %. Čištění, které bylo zahájeno, musí být dokončeno, aby byla zajištěna integrita dat, což znamená, že vyčištění bude pokračovat navzdory překročení stanoveného limitu. Po dokončení operace nebudou nová ID spuštění vydána a úloha vyčištění skončí. Zbývající historie spuštění, která nebyla vyčištěna z důvodu nedostatečné doby provádění, bude vybrána při příštím plánování úlohy čištění. Výchozí a minimální hodnota pro toto nastavení je 2 hodiny.
 
 -   **Opakovaná dávka** – úlohu čištění lze spustit jako jednorázové, ruční spuštění nebo je také možné naplánovat její opakované provedení v dávce. Dávku lze naplánovat pomocí nastavení **Spustit na pozadí**, což je standardní nastavení dávky.
+
+> [!NOTE]
+> Nejsou-li záznamy v pracovních tabulkách zcela vyčištěny, zkontrolujte, zda je naplánováno spuštění úlohy čištění. Jak bylo vysvětleno výše, při jakékoli čisté realizaci bude úloha čistit pouze tolik ID spuštění, kolik je možné v zadaných maximálních hodinách. Chcete-li pokračovat v čištění všech zbývajících záznamů fázování, je nutné naplánovat pravidelné spouštění úlohy.

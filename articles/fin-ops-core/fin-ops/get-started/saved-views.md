@@ -3,7 +3,7 @@ title: Uložená zobrazení
 description: V tomto tématu je popsán způsob použití funkcí uložených zobrazení.
 author: jasongre
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017697"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100301"
 ---
 # <a name="saved-views"></a>Uložená zobrazení
 
@@ -71,7 +71,7 @@ Chcete-li tyto změny uložit, postupujte podle následujících kroků.
 2.  Změna stávajícího zobrazení:
      1. Zvolte **Uložit**. Všimněte si, že tato akce nebude povolena pro zamčená zobrazení. 
 3.  Vytvoření nového zobrazení:
-     1.    Zvolte **Uložit jako...**. 
+     1.    Zvolte **Uložit jako**. 
      2.    Zadejte název (a volitelně) popis zobrazení.
      3.    Zvolte **Uložit**.
 
@@ -83,9 +83,9 @@ Pokud chcete změnit výchozí zobrazení stránky, postupujte takto:
 2.  Chcete-li otevřít selektor zobrazení, vyberte název zobrazení. 
 3.  Vyberte **Více** a potom **Připnout jako výchozí**.  
 
-Případně můžete při vytváření nového zobrazení (pomocí akce **Uložit jako...**) nastavit toto nové zobrazení jako výchozí nastavením možnosti **Připnout jako výchozí** před uložením zobrazení.
+Případně můžete při vytváření nového zobrazení (pomocí akce **Uložit jako**) nastavit toto nové zobrazení jako výchozí nastavením možnosti **Připnout jako výchozí** před uložením zobrazení.
 
-Všimněte si, že v některých případech se dotaz přidružený k výchozímu zobrazení nespustí při prvním přechodu na stránku. Pokud například přejdete v dlaždici na stránku, bude dotaz dlaždice proveden bez ohledu na dotaz přidružený k výchozímu zobrazení. Pokud také přejdete na stránku, jejíž klasické zobrazení již má definovaný dotaz, bude původní dotaz proveden místo dotazu výchozího zobrazení. Pokud k tomu dojde, zobrazí se při načítání zobrazení výstražná informační zpráva. Přepnutí zobrazení po načtení stránky by umožnilo spuštění dotazu zobrazení očekávaným způsobem.
+Všimněte si, že v některých případech se dotaz přidružený k výchozímu zobrazení nespustí při prvním přechodu na stránku. Pokud například přejdete v dlaždici na stránku, bude dotaz dlaždice proveden bez ohledu na dotaz přidružený k výchozímu zobrazení. Pokud také přejdete na stránku, jejíž standardní zobrazení již má definovaný dotaz, bude původní dotaz proveden místo dotazu výchozího zobrazení. Pokud k tomu dojde, zobrazí se při načítání zobrazení výstražná informační zpráva. Přepnutí zobrazení po načtení stránky by umožnilo spuštění dotazu zobrazení očekávaným způsobem. Počínaje vezí 10.0.10 Platform Update 34 bude informační zpráva obsahovat vloženou akci, která umožní přímé načtení dotazu výchozího zobrazení.
 
 ## <a name="managing-personal-views"></a>Správa osobních zobrazení 
 Dialogové okno **Spravovat moje zobrazení** poskytuje základní funkce pro správu osobních zobrazení a pořadí zobrazení v selektoru zobrazení. Chcete-li otevřít tuto stránku, kliknutím na název zobrazení otevřete rozevírací nabídku selektoru zobrazení, vyberte **Více** a poté vyberte možnost **Spravovat moje zobrazení**.  
@@ -133,7 +133,7 @@ Pokud změny, které chcete provést v publikovaném zobrazení, zahrnují pouze
 3.  Pokud chcete aktualizovat existující zobrazení, vyberte **Ano** (nebo vyberte **Ne**, pokud je chcete publikovat s jiným názvem).
 4.  Aktualizujte název, popis nebo role zabezpečení zobrazení. 
 5.  Zvolte **Publikovat**. 
-6.  [10.0.8/Aktualizace Platform 32 nebo předchozí] Pokud jste aktualizovali název publikovaného zobrazení, bude také nutné odstranit publikované zobrazení s původním názvem (Další informace naleznete v části **Správa publikovaných zobrazení**). 
+6.  [10.0.8/Platform Update 32 nebo předchozí] Pokud jste aktualizovali název publikovaného zobrazení, bude také nutné odstranit publikované zobrazení s původním názvem (Další informace naleznete v části **Správa publikovaných zobrazení**). 
 7. [10.0.9/Platform Update 33 nebo novější] Pokud jste původně zvolili toto publikované zobrazení jako výchozí zobrazení, bude po opětovném publikování výchozí zobrazení pro tyto uživatele znovu.  
 
 Pokud změny provedené v publikovaném zobrazení zahrnují úpravy přizpůsobení nebo filtrů spojených se zobrazením, postupujte následujícím způsobem: 
