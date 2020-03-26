@@ -3,7 +3,7 @@ title: Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 description: Toto téma popisuje způsob použití šablon práce a směrnic skladového místa k určení, jak a kde se práce ve skladu provádí.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8bc3e3e7bea15127062edfcd362476de97bff07d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3014a7b22c47f99b5c57fd6acd9be8d89c6fb8ab
+ms.sourcegitcommit: 75974ae567bb0eacf0f65cac992b34ce5c680b93
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004104"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095790"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Zpracování produktu se skutečnou hmotností pomocí řízení skladu
 
@@ -30,10 +30,10 @@ ms.locfileid: "3004104"
 
 ## <a name="feature-exposure"></a>Expozice funkce
 
-Chcete-li použít řízení skladu pro zpracování produktů se skutečnou hmotností, musíte pro zapnutí této funkce použít licenční konfigurační klíč. (Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**. Poté na kartě **Konfigurační klíče** kartu rozbalte **Obchod \> Řízení skladu a správy přepravy** a zaškrtněte políčko u možnosti **Skutečná hmotnost pro sklad**).
+Chcete-li použít řízení skladu pro zpracování produktů se skutečnou hmotností, musíte pro zapnutí této funkce použít licenční konfigurační klíč. Přejděte do nabídky **Správa systému \> Nastavení \> Konfigurace licence**. Poté na kartě **Konfigurační klíče** kartu rozbalte **Obchod \> Řízení skladu a správy přepravy** a zaškrtněte políčko u možnosti **Skutečná hmotnost pro sklad**.
 
 > [!NOTE]
-> Musí být zapnuty licenční konfigurační klíče pro možnosti **Řízení skladu a správy přepravy** i **Zpracování distribuce \> Skutečná hmotnost**. Chcete-li nastavit konfigurační klíče pro skutečnou hmotnost, musíte také zapnout funkci pomocí pracovního prostoru Správa **Správa funkcí**. Hlavní funkcí, která musí být zapnuta, je **Zpracování produktu se skutečnou hmotností pomocí řízení skladu**. Další související, ale nepovinná funkce, kterou byste mohli chtít zapnout, je **Změna stavu zásob pro produkty se skutečnou hmotností**. Tato funkce přidává podporu změn stavu zásob pro produkty, které jsou povoleny pro skutečnou hmotnost.
+> Musí být zapnuty licenční konfigurační klíče pro možnosti **Řízení skladu a správy přepravy** i **Zpracování distribuce \> Skutečná hmotnost**. Chcete-li nastavit konfigurační klíče pro skutečnou hmotnost, musíte také zapnout funkci pomocí pracovního prostoru Správa **Správa funkcí**. Hlavní funkcí, která musí být zapnuta, je **Zpracování produktu se skutečnou hmotností pomocí řízení skladu**. Dvě související, ale volitelné funkce, které byste mohli chtít zapnout, jsou **Změny stavu zásob pro produkty se skutečnou hmotností** a **Použít existující značky skutečné hmotnosti při vykazování výrobních zakázek jako dokončených**.
 
 Po zapnutí licenčního konfiguračního klíče můžete při vytvoření uvolněného produktu zvolit **Skutečná hmotnost**. Můžete také přidružit uvolněný produkt ke skupině dimenze úložiště, pro kterou je zvolen parametr **Použít procesy řízení skladu**.
 
@@ -107,6 +107,7 @@ Navíc, je-li u položky sledována značka, existuje parametr **Metoda zaznamen
 **Když se používá sledování značky skutečné hmotnosti**, musí být značka vždy vytvořena pro každou jednotku skutečné hmotnosti, která je přijata, a každá značka musí být vždy přiřazena k hmotnosti.
 
 Například **Krabice** je jednotka skutečné hmotnosti a přijmete jednu paletu s osmi krabicemi. V takovém případě se musí vytvořit osm jedinečných štítků skutečné hmotnosti a hmotnost musí být přiřazena ke každému štítku. V závislosti na štítku příchozí skutečné hmotnosti lze zaznamenat buď hmotnost všech osmi krabic a průměrná hmotnosti pak může být rozdělena na každou krabici, nebo lze zaznamenat jedinečnou hmotnost pro každou krabici.
+Při použití **Použít existující značky skutečné hmotnosti při vykazování výrobních zakázek jako dokončených** s procesem povoleným prostřednictvím položky nabídky mobilního zařízení se zásoby aktualizují na základě existující informace štítku skutečné hmotnosti. V důsledku toho aplikace skladového skladu nezobrazí výzvu k zaznamenání dat štítku skutečné hmotnosti jako součásti výrobní sestavy jako dokončené operace.
 
 **Když se nepoužívá sledování značek skutečné hmotnosti**, lze zaznamenat hmotnost pro každou sadu dimenzí, (například pro každou poznávací značku a sledovací dimenzi). Případně lze zaznamenat hmotnost podle agregované úrovně, například pět poznávacích značek (palet).
 

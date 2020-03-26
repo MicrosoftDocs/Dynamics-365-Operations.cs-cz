@@ -1,6 +1,6 @@
 ---
 title: Konfigurace nastavení e-mailu v aplikaci Attract
-description: V tomto tématu je vysvětleno, jak nakonfigurovat nastavení e-mailu odeslaného v aplikaci Microsoft Dynamcis 365 Talent - Attract.
+description: V tomto tématu je vysvětleno, jak nakonfigurovat nastavení e-mailu odeslaného v aplikaci Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/04/2019
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c1ebfaeb2e9bc2836bb70e87afa93484c829b6cb
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: e641e3f0d1873d91be1a1dc9bc22eb734a2b21d5
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833108"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124720"
 ---
 # <a name="configure-email-settings-in-attract"></a>Konfigurace nastavení e-mailu v aplikaci Attract
 

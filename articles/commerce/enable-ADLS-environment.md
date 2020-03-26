@@ -3,7 +3,7 @@ title: Povolení ADLS v prostředí Dynamics 365 Commerce
 description: V tomto tématu je vysvětleno, jak povolit a testovat Azure Data Lake Storage (ADLS) pro prostředí Dynamics 365 Commerce, což je předpokladem pro povolení doporučení produktu.
 author: bebeale
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 068eb522bd44e02dd31d3337a051691a956637fc
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 553e1512ba72559923403eef741ce08222172a09
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025230"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127760"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Povolení ADLS v prostředí Dynamics 365 Commerce
 
@@ -95,8 +95,22 @@ Pokud jste to již nedokončili, postupujte podle kroků pro [povolení doporuč
 
 [Povolit doporučení produktu](enable-product-recommendations.md)
 
-[Přidání seznamů doporučení produktu na stránky](add-reco-list-to-page.md)
+[Povolení přizpůsobených doporučení](personalized-recommendations.md)
 
-[Přidání ovládacího prvku doporučení na obrazovku transakce na zařízeních POS](../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json)
+[Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
+
+[Přidání seznamů doporučení na web e-Commerce](add-reco-list-to-page.md)
+
+[Přidat doporučení produktu v POS](product.md)
+
+[Přidání doporučení na obrazovku transakce](add-recommendations-control-pos-screen.md)
+
+[Úprava výsledků doporučení AI-ML](modify-product-recommendation-results.md)
+
+[Ručně vytvořit uspořádaná doporučení](create-editorial-recommendation-lists.md)
+
+[Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
+
+[Často kladené dotazy k doporučení produktu](faq-recommendations.md)
 
 

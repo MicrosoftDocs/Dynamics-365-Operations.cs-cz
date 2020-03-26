@@ -3,7 +3,7 @@ title: Parametry integrace Project Service Automation
 description: Toto téma vysvětluje, jak nakonfigurovat výchozí data zadávaná při integraci Microsoft Dynamics 365 for Project Service Automation s Microsoft Dynamics 365 Finance.
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,20 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: f7cef5384812e0dcb7d5e084ddd7668a7687a259
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cd09dad15112fd71bfd386e0072a77a4121c96e0
+ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174783"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096244"
 ---
 # <a name="project-service-automation-integration-parameters"></a>Parametry integrace Project Service Automation
 
 [!include[banner](../includes/banner.md)]
 
 Na stránce **Parametry integrace Project Service Automation** můžete nakonfigurovat způsob zadávání výchozích dat při integraci aplikací Dynamics 365 Project Service Automation a Dynamics 365 Finance. Následující pole musí být nastaveny pro projekty, aby byly synchronizovány úspěšně z aplikace Project Service Automation do aplikace Finance.
+
+Chcete-li otevřít stránku **Parametry integrace Project Service Automation**, přejděte na **Řízení projektů a účetnictví** \> **Nastavení** \> **Parametry integrace Dynamics 365 for Project Service Automation**. 
 
 > [!NOTE]
 > - Integrace úkolů projektu, kategorie transakce výdajů, odhady hodin, odhady výdajů a uzamykání funkcí jsou k dispozici ve verzi 8.0.

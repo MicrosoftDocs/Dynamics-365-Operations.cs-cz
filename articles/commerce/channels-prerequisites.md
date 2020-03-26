@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 0da0457240cf12686fff2fa929c7fb510c11f242
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081308"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113775"
 ---
 # <a name="channel-setup-prerequisites"></a>Předpoklady nastavení kanálu
 
@@ -47,9 +47,9 @@ Před vytvořením kanálu Dynamics 365 Commerce je nutné provést několik po�
 - [Definovat a konfigurovat strukturu právnické osoby](channels-legal-entities.md) 
 - [Konfigurace vaší organizační hierarchie](channels-org-hierarchies.md)
 - [Nastavit sklad](channels-setup-warehouse.md)
-- [Konfigurovat DPH](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Konfigurovat DPH](../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json)
 - [Nastavení profilu oznámení e-mailem](email-notification-profiles.md)
-- [Nastavení číselných řad](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Nastavení číselných řad](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json)
 - [Nastavení výchozího zákazníka a adresáře](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)

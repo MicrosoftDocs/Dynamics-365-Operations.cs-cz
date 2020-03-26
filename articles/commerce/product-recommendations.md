@@ -3,7 +3,7 @@ title: Přehled doporučení produktu
 description: V tomto tématu jsou obecné informace o doporučování produktů. Doporučení produktů umožňují zákazníkům snadno a rychle vyhledat produkty, které chtějí, a také produkty, které původně nechtěly nakupovat.
 author: Moonma
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e249c7d450510a3a9a33158e9e1c33f832a1f91c
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: abeeb3c35c21f6d7a6ec24a84522033f9a5367f3
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024972"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127852"
 ---
 # <a name="product-recommendations-overview"></a>Přehled doporučení produktu
 
@@ -34,8 +34,14 @@ Microsoft Dynamics 365 Commerce lze použít k zobrazení doporučení produktů
 
 Doporučení produktů umožňují zákazníkům snadno a rychle najít produkty, které chtějí, a u toho mají pozitivní zkušenosti. Křížový prodej a návazný prodej může dokonce zákazníkům pomoci najít další produkty, než které původně nakupují. Pokud se při zjišťování produktů používají doporučení, mohou vytvářet více možností převodu, pomoci zvýšit výnosy z prodeje a dokonce také zvýšit spokojenost a uchování zákazníků.
 
-V aplikaci Commerce doporučení produktů využívají technologie strojového učení Microsoft Recommendations ve velkém měřítku.
+V platformě e-Commerce doporučení produktů využívají technologie strojového učení Microsoft Recommendations ve velkém měřítku.
 
+## <a name="recommendation-service"></a>Služba doporučení
+
+Služba doporučení produktů používá technologie umělé inteligence a strojového učení (AI-ML) následujícím způsobem:
+
+- Data ve formátu vyžadovaném službou doporučení jsou extrahována z pracovní databáze Commerce a odeslána do úložiště Azure Data Lake Storage (ADLS) nebo úložiště entit.
+- Služba doporučení používá tato uložená data k trénování modelů doporučení pro seznamy **Lidem se také líbí**, **Často zakoupené společně**, **Nový**, **Nejprodávanější** a **Trendující**.
 
 ## <a name="scenarios"></a>Scénáře
 
@@ -44,25 +50,41 @@ Doporučení produktu jsou dostupná pro následující scénáře:
 - **Na libovolné stránce obchodu pro procházení nebo cílovou stránku v e-Commerce:** Pokud zákazníci nebo pracovníci obchodu navštíví stránku obchodu, může modul doporučení navrhovat produkty v seznamech **Nový**, **Nejprodávanější**a **Trendující**.
 - **Na stránce Podrobnosti produktu:** Pokud zákaznící nebo pracovníci obchodu navštíví stránku **Podrobnosti produktu**, nabídne modul doporučení další položky, které se také mohou nakoupit. Tyto položky se zobrazí v seznamu **Lidem se také líbí**.
 - **Na stránce transakce nebo na stránce s pokladnou:** modul doporučení navrhuje položky na základě celého seznamu položek v nákupním košíku. Tyto položky se zobrazí v seznamu **Často zakoupené společně**.
-- **Přizpůsobená doporučení:** Maloobchodníci mohou poskytnout přihlášeným zákazníkům seznam **přizpůsobených možností** a také nové funkce, které umožňují, aby byly existující scénáře seznamu přizpůsobeny na základě tohoto odběratele. Další informace naleznete v dokumentaci k funkcím: [povolení přizpůsobených doporučení.](personalized-recommendations.md)
+- **Přizpůsobená doporučení:** Maloobchodníci mohou poskytnout přihlášeným zákazníkům seznam **přizpůsobených možností** a také nové funkce, které umožňují, aby byly existující scénáře seznamu přizpůsobeny na základě tohoto odběratele. Chcete-li zjistit více, přečtěte si téma [Povolení přizpůsobených doporučení](personalized-recommendations.md).
 
-## <a name="recommendation-service"></a>Služba doporučení
+### <a name="types-of-product-recommendations"></a>Typy doporučení produktů
 
-Doporučení produktu používají technologie strojového učení Recommendations následujícím způsobem:
+V následující tabulce jsou popsány různé typy automatických doporučení produktů, které jsou k dispozici pro maloobchodní prodejce k implementaci do řešení Dynamics 365 Commerce prostřednictvím [modulu kolekce produktů](product-collection-module-overview.md). Maloobchodníci mohou také zobrazit individuální výsledky pro přihlášeného uživatele, pokud tuto možnost zvolí autor webu.
 
-- Data ve formátu vyžadovaném službami Recommendation jsou extrahována z pracovní databáze Commerce a odeslána do úložiště entit.
-- Služba doporučení používá data k trénování modelů doporučení pro seznamy **Lidem se také líbí**, **Často zakoupené společně**, **Nový**, **Nejprodávanější** a **Trendující**.
+| Modul kolekce produktů  | Typ | popis |
+|----------------------------|------|-------------|
+| Nová                        | Algoritmický | Tento modul zobrazuje seznam nejnovějších produktů, které byly nedávno roztříděny do kanálů a katalogů. |
+| Nejprodávanější               | Algoritmický | Tento modul zobrazuje seznam produktů, které jsou seřazeny podle nejvyššího počtu prodejů. |
+| Trendy                   | Algoritmický | Tento modul zobrazuje seznam nejprodávanějších produktů za dané období seřazených podle nejvyššího počtu prodejů.  |
+| Často nakupované společně | AI-ML | Tento modul doporučuje seznam produktů, které jsou běžně kupovány dohromady, spolu s obsahem aktuálního vozíku spotřebitele. |
+| Lidem se též líbí           | AI-ML | Tento modul doporučuje produkty pro daný produkt typu seed na základě zákaznických vzorů nákupů. |
+| Výběry pro vás              | AI-ML | Tento modul doporučuje individuální seznam produktů na základě zákaznických vzorů nákupů. Pro uživatele typu host bude tento seznam sbalen. |
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
+
+[Povolení ADLS v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
 
 [Povolit doporučení produktu](enable-product-recommendations.md)
 
 [Povolení přizpůsobených doporučení](personalized-recommendations.md)
 
-[Přehled modulu kolekce produktů](product-collection-module-overview.md)
+[Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
 
-[Vytvoření seznamů doporučení vybraných produktů](create-editorial-recommendation-lists.md)
+[Přidání seznamů doporučení na web e-Commerce](add-reco-list-to-page.md)
 
-[Správa výsledků doporučení produktů na základě umělé inteligence a strojového učení](modify-product-recommendation-results.md)
+[Přidat doporučení produktu v POS](product.md)
 
-[Přidání seznamů doporučení produktu na stránky](add-reco-list-to-page.md)
+[Přidání doporučení na obrazovku transakce](add-recommendations-control-pos-screen.md)
+
+[Úprava výsledků doporučení AI-ML](modify-product-recommendation-results.md)
+
+[Ručně vytvořit uspořádaná doporučení](create-editorial-recommendation-lists.md)
+
+[Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
+
+[Často kladené dotazy k doporučení produktu](faq-recommendations.md)

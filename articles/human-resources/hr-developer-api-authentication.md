@@ -1,6 +1,6 @@
 ---
 title: Ověřování
-description: ''
+description: Tento článek obsahuje přehled informací o ověřování pomocí rozhraní API (Microsoft Dynamics 365 Human Resources data Application Programming Interface).
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 025feca31eed8649bc319a1e1a1b6d1af3ddb128
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008404"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092099"
 ---
 # <a name="authentication"></a>Ověřování
 

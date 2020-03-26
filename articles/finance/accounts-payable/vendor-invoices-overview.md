@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
-ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
+ms.openlocfilehash: 0cfa7d55f5d4d219c0bc43eb6313c0c6bd014ab6
+ms.sourcegitcommit: ac7c457bda3d8545ee8c0de45e4fcc24d677ffdc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2890320"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3133889"
 ---
 # <a name="vendor-invoices-overview"></a>Přehled faktur dodavatele
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 V tomto tématu jsou obecné informace o fakturách dodavatele. Faktury dodavatele jsou požadavky na zaplacení za přijaté produkty a služby. Faktury dodavatele mohou představovat účet za průběžné služby nebo mohou být založeny na nákupních objednávkách specifického zboží a služeb.
 
@@ -66,6 +67,16 @@ Do faktury dodavatele můžete přidat řádek, který nebyl na nákupní objedn
 
 Vaše organizace může využívat workflowy ke správě procesu kontroly faktur dodavatele. Hlavička faktury, řádek faktury, nebo obojí může vyžadovat přezkoumání pracovního postupu. Ovládací prvky workflow se použijí na záhlaví nebo řádek podle toho, která část byla před zvolením ovládacího prvku aktivní. Namísto tlačítka **Zaúčtovat** se zobrazí tlačítko **Odeslat**, které slouží k odeslání faktury dodavatele do procesu kontroly.
 
+### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Zabránění odeslání faktury do workflowu 
+
+Následuje několik způsobů, jak lze zabránit odeslání faktury do workflowu.
+
+- **Celková částka faktury a zaregistrovaná celková částka se neshodují.** Osoba, která odeslala fakturu, obdrží výstrahu, že celkové částky nejsou stejné, takže může opravit zůstatky před opětovným odesláním faktury do workflowu. Tato funkce je k dispozici, pokud je zapnutý parametr **Zabránit odeslání do workflowu, když liší celková částka faktury a registrovaná celková částka** na stránce **Správa funkcí**. 
+
+- **Faktura obsahuje nepřidělené náklady.** Osoba, která odeslala fakturu, obdrží výstrahu, že faktura obsahuje nepřidělené částky, takže může opravit fakturu před opětovným odesláním do workflowu. Tato funkce je k dispozici, pokud je zapnutý parametr **Zabránit odeslání do workflowu, když existují nepřidělené částky na faktuře dodavatele** na stránce **Správa funkcí**.
+
+- **Faktura obsahuje stejné číslo faktury jako jiná zaúčtovaná faktura.** Osoba, která odeslala fakturu, obdrží výstrahu, že byla nalezena faktura s duplicitním číslem a tato osoba ji může opravit před opětovným odesláním do workflowu. Tato výstraha se zobrazí, pokud je parametr závazků s popiskem **Zkontrolovat použité číslo faktury** je nastaven na **Zamítnout duplikaci**. Tato funkce je k dispozici , pokud je zapnutý parametr **Zabránit odeslání do workflowu, pokud číslo faktury již existuje na zaúčtované faktuře a systém není nastaven, aby přijímal duplicitní čísla faktur** na stránce **Správa funkcí**.  
+
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Spárování faktur dodavatele s příjemkami produktu
 
 Podle potřeby můžete zadávat a ukládat informace o fakturách dodavatele a porovnat řádky faktury s řádky příjemky produktu. Také můžete spárovat částečná množství pro řádek.
@@ -77,6 +88,16 @@ Při zaúčtování faktury je množství v poli **Zůstatek faktury** u každé
 Tato možnost předpokládá, že pro nákupní objednávku byla zaúčtována alespoň jedna příjemka produktu. Faktura dodavatele je založena na těchto příjemkách produktu a odráží na nich uvedená množství. Finanční údaje pro fakturu jsou založeny na údajích zadaných při zaúčtování faktury.
 
 Více informací naleznete v tématu [Zaznamenání faktury dodavatele a spárování s přijatým množstvím](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md)
+
+## <a name="configure-an-automated-task-for-vendor-invoice-workflow-to-post-the-vendor-invoice-using-a-batch-job"></a>Konfigurace automatizované úlohy pro workflow faktury dodavatele za účelem zaúčtování faktury dodavatele pomocí dávkové úlohy
+
+Můžete přidat automatizovanou úlohu zaúčtování do workflowu faktury dodavatele, aby byly faktury zpracovány v dávce. Zaúčtování faktur v dávce umožňuje pokračovat v procesu workflowu, aniž by bylo nutné čekat na dokončení zaúčtování, což zlepšuje celkový výkon všech úloh odeslaných do workflowu.
+
+Chcete-li zaúčtovat fakturu dodavatele v dávce, zapněte na stránce **Správa funkcí** parametr **Dávkové zaúčtování faktur dodavatele**. Workflowy faktur dodavatele jsou konfigurovány přechodem na **Závazky > Nastavení > Workflowy závazků**.
+
+V editor workflowů se nachází úloha **Zaúčtovat faktury dodavatele pomocí dávky** bez ohledu na to, zda je povolen parametr funkce **Dávkové zaúčtování faktur dodavatele**. Není-li parametr funkce povolen, faktura obsahující úlohu **Zaúčtovat faktury dodavatele pomocí dávky** nebude zpracována v rámci workflowu, dokud není parametr povolen. Úloha **Zaúčtovat faktury dodavatele pomocí dávky** nesmí být použita ve stejném workflowu jako automatizovaná úloha **Zaúčtovat faktury dodavatele**. Kromě toho úloha **Zaúčtovat faktury dodavatele pomocí dávky** by měla být posledním prvkem v konfiguraci workflowu.
+
+Můžete zadat počet faktur, které mají být zahrnuty do dávky, a počet hodin, jak dlouho se má čekat před přeplánováním dávky, pomocí nastavení **Závazky > Nastavení > Parametry závazků > Faktura > Worflow faktury**. 
 
 ## <a name="working-with-multiple-invoices"></a>Práce s více fakturami
 

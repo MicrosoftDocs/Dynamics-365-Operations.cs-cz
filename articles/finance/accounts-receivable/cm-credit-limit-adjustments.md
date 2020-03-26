@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5e2fbe74d24c729711c6b96d5ff2b7f0c82922c
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 9b236f489fa2045bdff05f76fadbeacc2f9ed2f4
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015145"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124201"
 ---
 # <a name="credit-limit-adjustments"></a>Úpravy limitu úvěru 
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Úpravy limitu úvěru umožňují správcům úvěrů aktualizovat limity úvěru a data vypršení platnosti jednoho odběratele, skupiny odběratelů nebo všech odběratelů prostřednictvím procesu zaúčtování. Můžete přidávat položky úpravy limitu úvěru pro aktualizaci odběratelů a skupin odběratelů podle limitu úvěru nebo je použít k výpočtu automatických limitů úvěrů. Tyto položky pak mohou být zkontrolovány, odeslány ke schválení prostřednictvím workflow a zaúčtovány na účty odběratelů.
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
-ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
+ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957360"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117330"
 ---
 # <a name="business-document-management-overview"></a>Přehled správy obchodních dokumentů
+
+[!include [banner](../includes/banner.md)]
 
 Podnikový uživatelé používají [architekturu elektronického výkaznictví](general-electronic-reporting.md) ke konfiguraci formátů pro odchozí dokumenty v souladu s právními požadavky různých zemí a oblastí. Uživatelé mohou rovněž definovat tok dat, který určuje, která data aplikace budou umístěna do generovaných dokumentů. Architektura elektronického výkaznictví generuje odchozí dokumenty ve formátech Microsoft Office (sešity aplikace Excel nebo dokumenty aplikace Word) pomocí předdefinovaných šablon. Šablony jsou naplněny požadovanými daty v souladu s konfigurovaným tokem dat, když jsou vygenerovány požadované dokumenty. Každý konfigurovaný formát lze publikovat jako součást řešení elektronického vykazování pro generování určitých odchozích dokumentů. To je představováno konfigurací formátu elektronického vykazování, která může obsahovat šablony, které lze použít k vygenerování různých odchozích dokumentů. Podnikoví uživatelé mohou pomocí této architektury spravovat požadované obchodní dokumenty.
 
@@ -147,7 +149,7 @@ Informace o nastavení požadovaných parametrů správy dokumentů a typů doku
 
 ![Nastavení typu dokumentu pro správu dokumentů](./media/BDM-Overview-DMSetting.png)
 
-### <a name="SetupBdmParameters">Nastavení parametrů</a>
+### <a name=""></a><a name="SetupBdmParameters">Nastavení parametrů</a>
 
 Na stránce **parametry obchodního dokumentu** lze nastavit základní parametry správy obchodních dokumentů. Na stránku mohou přistupovat jen někteří uživatelé. Mezi ně patří:
 
@@ -158,7 +160,7 @@ Pomocí následujícího postupu nastavíte základní parametry pro všechny pr
 
 1. Přihlaste se jako uživatel s přístupem na stránku **Parametry obchodního dokumentu**.
 2. Přejděte do části **Správa organizace** \> **Elektronické vykazování** \> **Správu obchodních dokumentů** \> **Parametry obchodního dokumentu**.
-3.  Na stránce **Parametry obchodního dokumentu** na kartě **Přílohy** v poli **Typ dokumentu SharePoint** definujte typ dokumentu, který se má použít k dočasnému uložení šablon ve formátech Office v době, kdy jsou upravovat pomocí desktopových aplikací Office. 
+3.    Na stránce **Parametry obchodního dokumentu** na kartě **Přílohy** v poli **Typ dokumentu SharePoint** definujte typ dokumentu, který se má použít k dočasnému uložení šablon ve formátech Office v době, kdy jsou upravovat pomocí desktopových aplikací Office. 
 
 > [!NOTE]
 > Pro tento parametr jsou k dispozici pouze typy dokumentů, které jsou konfigurovány s použitím umístění SharePoint.
@@ -288,13 +290,13 @@ Otevře se stránka **Editor šablony BDM**. Vybraná šablona bude k dispozici 
 
 ![Stránka pracovního prostoru správy obchodních dokumentů](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Úprava šablony v Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Úprava šablony v Office 365</a>
 
 Šablonu můžete upravit pomocí aplikace Office 365. Například v řešení Office Online změníte písmo výzev polí v záhlaví šablony z **Obyčejné** na **Tučné**. Tyto změny se automaticky uloží v upravitelné šabloně, která se nachází v úložišti primární šablony (standardně úložiště objektu blob služby Azure). To je konfigurováno pro rámec elektronického výkaznictví.
 
 ![Stránka editoru šablon pro správu obchodních dokumentů](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="EditInOfficeDesktopApp">Úprava šablony v desktopové aplikaci Office</a>
+### <a name=""></a><a name="EditInOfficeDesktopApp">Úprava šablony v desktopové aplikaci Office</a>
 
 > [!NOTE]
 > Tato funkce je k dispozici pouze tehdy, když je parametr **Typ dokumentu SharePoint** správně nakonfigurován. Další informace naleznete v tématu [Konfigurace parametrů](#SetupBdmParameters).

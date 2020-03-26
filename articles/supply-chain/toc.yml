@@ -24,11 +24,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Použití aktualizací na cloudová prostředí
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Použití aktualizací na místní nasazení
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurace aktualizací služby
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Zastavení aktualizací služby
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Informujte se o aktualizacích služeb
+                - name: Získání upozornění na aktualizace služeb
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Automatizace datové úlohy
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
@@ -72,10 +74,12 @@
                       href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management verze 10.0.8 (únor 2020)
                       href: get-started/whats-new-scm-10-0-8.md
-                    - name: Supply Chain Management verze 10.0.7 (leden 2020)
-                      href: get-started/whats-new-scm-10-0-7.md
                 - name: Odstraněné nebo zastaralé funkce
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                  items:
+                    - name: Odstraněné nebo zastaralé funkce v aplikaci Dynamics 365 Supply Chain Management
+                      href: get-started/removed-deprecated-features-scm-updates.md
+                    - name: Odebrané nebo zastaralé funkce v předchozích verzích
+                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Odložené funkce AX 2012
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Funkce neimplementované v místních nasazeních
@@ -665,7 +669,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nábor
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Výkonnost kanálu Retail
+                - name: 'Výkonnost kanálu Retail '
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Výkon prodeje a ziskovosti
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/supply-chain/toc.json

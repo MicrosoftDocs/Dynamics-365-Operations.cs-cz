@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
 ms.openlocfilehash: 6efa4466dbf7f5ca1d3945acf15fac65d628d691
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015139"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124536"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Odložení provádění prvků posloupnosti ve formátech elektronického výkaznictví
 
@@ -45,7 +45,7 @@ Možnost **odloženého provedení** je podporována pouze u prvků posloupnosti
 
 Možnost **odloženého provedení** není použitelná pro posloupnosti, které byly nakonfigurovány jako oříznuté posloupnosti v případě, že je maximální délka omezena.
 
-## <a name="Example"></a>Příklad: Odložení provádění prvku posloupnosti ve formátu elektronického výkaznictví
+## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Příklad: Odložení provádění prvku posloupnosti ve formátu elektronického výkaznictví
 
 Následující postup vysvětluje, jak může uživatel v [roli](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) správce systému nebo funkčního konzultanta elektronického výkaznictví konfigurovat formát elektronického výkaznictví, který obsahuje prvek posloupnosti, kde se pořadí provádění liší od pořadí v hierarchii formátu.
 

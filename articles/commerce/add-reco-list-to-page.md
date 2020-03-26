@@ -1,9 +1,9 @@
 ---
-title: Přidání seznamů doporučení produktů na stránky
+title: Přidání seznamů doporučení na web e-Commerce
 description: V tomto tématu je vysvětleno, jak přidat seznam doporučení produktů na stránku elektronického obchodu.
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,36 +19,47 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5c71c1cf91b1913f44546f40620aff358cf256b2
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8fa8ee7c97299dde6397f853a128c9aaa663584d
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001293"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127645"
 ---
-# <a name="add-recommendation-lists-to-a-site"></a>Přidání seznamů doporučení na web
-
+# <a name="add-recommendation-lists-an-e-commerce-site"></a>Přidání seznamů doporučení na web e-Commerce
 
 [!include [banner](includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak přidat seznam doporučení produktů na stránku elektronického obchodu.
 
 1. Z existující stránky pro vytváření webu elektronického obchodu vyberte možnost **Přidat modul**.
-2. Vyhledejte modul **kolekce produktů**.
-3. V modulu průvodce vyberte seznam, který chcete přidat na stránku.
-4. Uložte změny.
+1. Vyhledejte modul **kolekce produktů**.
+1. V modulu průvodce vyberte seznam, který chcete přidat na stránku.
+1. Uložte změny.
 
 Další informace o typech seznamů, které lze přidat na stránku, naleznete v tématu [Přehled modulu kolekce produktů](product-collection-module-overview.md).
 
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled doporučení produktu](product-recommendations.md)
 
+[Povolení ADLS v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
+
 [Povolit doporučení produktu](enable-product-recommendations.md)
 
-[Vytvoření seznamů doporučení vybraných produktů](create-editorial-recommendation-lists.md)
+[Povolení přizpůsobených doporučení](personalized-recommendations.md)
 
-[Správa výsledků doporučení produktů na základě umělé inteligence a strojového učení](modify-product-recommendation-results.md)
+[Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
 
-[Přehled modulu kolekce produktů](product-collection-module-overview.md)
+[Přidat doporučení produktu v POS](product.md)
+
+[Přidání doporučení na obrazovku transakce](add-recommendations-control-pos-screen.md)
+
+[Úprava výsledků doporučení AI-ML](modify-product-recommendation-results.md)
+
+[Ručně vytvořit uspořádaná doporučení](create-editorial-recommendation-lists.md)
+
+[Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
+
+[Často kladené dotazy k doporučení produktu](faq-recommendations.md)

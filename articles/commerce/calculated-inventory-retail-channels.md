@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8bef8edb46a1942d3efc325e2c437a138ad44839
-ms.sourcegitcommit: e1a55b4dc43abedf523c33ba9a8abe7b073f2ec6
+ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3083011"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113913"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Vypočítat dostupnost zásob pro maloobchodní kanály
 
@@ -41,7 +41,7 @@ V tomto tématu jsou vysvětleny procesy synchronizace dat, které lze často sp
 Pomocí následujících rozhraní API můžete zobrazit dostupnost zásob pro produkt, když se odběratelé nakupují na webu e-Commerce.
 
 - **GetEstimatedAvailability** – pomocí tohoto rozhraní API můžete získat dostupnost zásob pro položku ve skladu kanálu e-Commerce nebo všechny sklady, které jsou spojeny s konfigurací skupiny plnění pro kanál elektronického obchodu. Toto rozhraní API lze také použít pro sklady v určité oblasti nebo radiu vyhledávání na základě zeměpisných dat.
-- **ProductWarehouseInventoryAvailabilities** – pomocí tohoto rozhraní API můžete požadovat zásoby pro položku z určitého skladu. Můžete jej například použít k zobrazení dostupnosti zásob ve scénářích, které zahrnují výdej objednávky.
+- **GetEstimatedProductWarehouseAvailability** – pomocí tohoto rozhraní API můžete požadovat zásoby pro položku z určitého skladu. Můžete jej například použít k zobrazení dostupnosti zásob ve scénářích, které zahrnují výdej objednávky.
 
 > [!NOTE]
 > Tato rozhraní API nahradí **GetProductAvailabilities** a **GetAvailableInventoryNearby** v Dynamics 365 Retail verze 10.0.7 a starší.

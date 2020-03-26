@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 326d9375670cb4f4990a4f7070bf923a28b2c025
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176827"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106852"
 ---
 # <a name="process-collection-letters"></a>Zpracování upomínek
 
@@ -70,7 +70,11 @@ Toto téma popisuje způsob tvorby, tisku a zaúčtování upomínek. Tento úko
     1. Vyberte volbu v poli **Vytištěno**.
 
 ## <a name="control-collection-letters-at-the-customer-level"></a>Ovládací prvek upomínky na úrovni odběratelů
-Upomínky lze také nastavit na úrovni odběratele, tak aby byl sledován kód upomínky pro každou transakci, ale zpracování upomínky bylo založeno na jedné úrovni upomínky, která je pro odběratele uložena. Jedna upomínka bude obsahovat všechny transakce, které jsou pro odběratele po splatnosti. Vzhledem k tomu, že se dny odkladu nyní sledují na úrovni odběratele, nebude další upomínka odeslána, dokud neuplyne počet dní odkladu pro další upomínku v pořadí, a to i přesto, že budou transakce po odeslání poslední upomínky po splatnosti. Tato možnost sníží počet upomínek odeslaných pro každého zákazníka. 
+Pokud jsou upomínky nastaveny na úrovni transakce, může být pro odběratele generováno více upomínek na základě splatnosti transakce. Pokud se transakce zobrazují v jiných posloupnostech upomínek, budou pro každou skupinu zpožděných transakcí pro odběratele generovány samostatné upomínky. Z toho vyplývá, že jednotlivý odběratel může například obdržet jednu upomínku pro transakce, které jsou 60 dnů po splatnosti, a další upomínku pro transakce, které jsou 90 dnů po splatnosti. 
+
+Každá upomínka je také přidružena ke kódu upomínky. Kód upomínky je přidružen k jednotlivým transakcím a používá se k určení, kdy by měla být pro každou transakci vygenerována následující upomínka. Pokud je například transakce zpožděna o více než 30 dní, kód upomínky určí, že následující upomínka bude odeslána, když bude transakce zpožděna o 60 dní, pokud není uhrazena dříve. 
+
+Upomínky lze také nastavit na úrovni odběratele. V tomto případě je sledován kód upomínky pro každou transakci, ale zpracování upomínky bylo založeno na jedné úrovni upomínky, která je pro odběratele uložena. Jedna upomínka bude obsahovat všechny transakce, které jsou pro odběratele po splatnosti. Vzhledem k tomu, že se dny odkladu nyní sledují na úrovni odběratele, nebude další upomínka odeslána, dokud neuplyne počet dní odkladu pro další upomínku v pořadí, a to i přesto, že budou transakce po odeslání poslední upomínky po splatnosti. Tato možnost pomáhá snížit počet upomínek, které musíte odeslat každému zákazníkovi.
 
 ### <a name="set-up-the-customer-to-control-collection-letters-at-the-customer-level"></a>Nastavení odběratele na kontrolu upomínek na úrovni odběratelů
 1.  Přejděte na **Navigační podokno > Moduly > Kredit a inkasa > Nastavení > Parametry závazků** a vyberte kartu **Inkasa**. 

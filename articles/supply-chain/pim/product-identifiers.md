@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
+ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004012"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095610"
 ---
 # <a name="product-identifiers"></a>Identifikátory produktu 
 
@@ -43,9 +43,6 @@ V mnoha případech není číslo produktu původně vytvořeno v modulu Dynamic
 Při implementaci aplikace Supply Chain Management je třeba obzvláště zvážit strategii čísel produktů. Systém číslování zboží vylepšuje toky logistiky a pomáhá předcházet chybám. Dobrý identifikátor produktu může mít nejvýše 15 znaků. V optimálním případě má méně než 10 znaků a obsahuje více než pět klasifikačních znaků. Můžete také použít vyhledávací pro účely rychlého vyhledávání. Vyhledávací název je další název představující klasifikaci produktu.
 
 Pokud použijete Common Data Service, je číslo produktu v modulu Supply Chain Management také číslo produktu v poli Common Data Service. Varianty produktu jsou synchronizovány do Common Data Service jako odlišné produkty.
-
-> [!NOTE]
-> Číslo produktu nemůže začínat "%".
 
 ## <a name="item-number-and-product-dimensions"></a>Dimenze čísla položky a produktů
 
@@ -135,7 +132,7 @@ Bohužel neexistuje standardní funkce, která by vám umožnila vyhledávání 
 | Externí kódy pro uvolněné varianty produkty | Externí kód | Externí kód, třídy externího kódu, číslo položky, dimenze produktu | Externí kódy jsou podle právnické osoby. Pro import musíte odkazovat na definovaný kód třídy. Importujte třídy kódu pomocí entity **Třídy externího kódu pro uvolněné produkty**. Tato entita odkazuje na varianty produktu podle čísla položky a dimenze produktu. |
 | Exportovat kódy pro uvolněné varianty produktu podle identifikátoru čísla produktu | Externí kód | Externí kód, třídy externího kódu, číslo produktu | Externí kódy jsou podle právnické osoby. Pro import musíte odkazovat na definovaný kód třídy. Importujte třídy kódu pomocí entity **Třídy externího kódu pro uvolněné produkty**. Tato entita odkazuje na varianty produktu podle čísla produktu varianty. (Od další hlavní verze) |
 | Číslo GTIN | Nelze použít | Nelze použít | V současné době neexistuje žádná konkrétní entita, která slouží k importu a exportu kódy GTIN. Doporučujeme namísto toho používat entitu **Čárový kód položky**. |
-| Entita identifikátoru datové služby společná pro entitu produktu | Nelze použít | Číslo položky, vyhledávací název položky, vyhledávací název produktu, číslo položky dodavatele, odběratele, číslo položky, externí kódy, kódy GTIN, čárové kódy | Tato entita zkonsoliduje všechny identifikátory do jednoho datového modelu tak, aby bylo možné použít jedno rozhraní ke snadnému exportu všech identifikátorů a jejich souvisejících typů. Použijte entitu **Kódy identifikátoru entity produktu** pro export identifikačních kódů a popisů. Použijte entitu **Rozsah identifikátoru entity produktu** pro export dalších informací o rozsahu do identifikátoru, jako jsou například strana, právnická osoba, množství nebo jednotka. |
+| Entita identifikátoru Common Data Service pro entitu produktu | Nelze použít | Číslo položky, vyhledávací název položky, vyhledávací název produktu, číslo položky dodavatele, odběratele, číslo položky, externí kódy, kódy GTIN, čárové kódy | Tato entita zkonsoliduje všechny identifikátory do jednoho datového modelu tak, aby bylo možné použít jedno rozhraní ke snadnému exportu všech identifikátorů a jejich souvisejících typů. Použijte entitu **Kódy identifikátoru entity produktu** pro export identifikačních kódů a popisů. Použijte entitu **Rozsah identifikátoru entity produktu** pro export dalších informací o rozsahu do identifikátoru, jako jsou například strana, právnická osoba, množství nebo jednotka. |
 
 ### <a name="product-and-item-number-sequences"></a>Číselné řady produkt a položka
 
@@ -167,13 +164,13 @@ Následující tabulka obsahuje přehled výsledků importu a ručního vytvoře
 
 Model identifikátoru entity produktu byl vytvořen proto, aby bylo možné zřídit verzi 1.0 CDS se všemi identifikátory, které se používají pro účely odkazování na produkt. Aby ye tato úloha zjednodušila, budou všechny identifikátory agregovány do jedné globální tabulky identifikátoru, aby je bylo možné exportovat jako jeden model. Všimněte si, že tato verze systému CDS nepoužívá model identifikátorů produktu. Proto má entita **Entita identifikátoru Common Data Service entity produktu** a tento proces omezené praktické použití a v budoucnu pravděpodobně dojde k jejich změně.
 
-Tabulka identifikátorů produktu je globální tabulka, která se vytváří ze všech referenčních tabulek hlavní právnické osoby prostřednictvím opakované dávkové úlohy. Je nutné vybrat právnickou osobu a hierarchii kategorií produktu jako definici rozsahu hlavního globálního produktu. Generování tabulky globálních identifikátorů produktu je omezeno na produkty, které byly vydány pro vybranou právnickou osobu, a produkty, které jsou součástí hierarchie produktů, která je vybrána pro roli **Běžné služby dat** v produktu hierarchie kategorií.
+Tabulka identifikátorů produktu je globální tabulka, která se vytváří ze všech referenčních tabulek hlavní právnické osoby prostřednictvím opakované dávkové úlohy. Je nutné vybrat právnickou osobu a hierarchii kategorií produktu jako definici rozsahu hlavního globálního produktu. Generování tabulky globálních identifikátorů produktu je omezeno na produkty, které byly vydány pro vybranou právnickou osobu, a produkty, které jsou součástí hierarchie produktů, která je vybrána pro roli **Common Data Service** v produktu hierarchie kategorií.
 
 Tento proces předpokládá, že hlavní data produktů jsou primárně udržována v jedné centrální právnické osobě. (Tato právnická osoba však může být virtuální právnická osoba, která se používá pouze k udržování globálních hlavních dat.)
 
 Takto se konfiguruje prostředí:
 
-1. Vybrat hierarchii kategorie pro CDS. Na stránce **Přidružení role hierarchie kategorií**, pokud není přidružena žádná hierarchie k roli **běžné služby dat**, je nutné vytvořit nové přidružení. Vyberte roli **Common data service** a potom přidružte hierarchie kategorií představující nabídku produktů, které mají být synchronizovány do CDS.
+1. Vybrat hierarchii kategorie pro CDS. Na stránce **Přidružení role hierarchie kategorií**, pokud není přidružena žádná hierarchie k roli **Common Data Service**, je nutné vytvořit nové přidružení. Vyberte roli **Common Data Service** a potom přidružte hierarchie kategorií představující nabídku produktů, které mají být synchronizovány do CDS.
 2. Vyberte právnickou osobu pro globální hlavní data produktu. Na stránce **parametry modulu řízení informací o produktu** na kartě **Atributy produktu** vyberte hlavní společnost, kde jsou primárně zachovány identifikátory produktů a položek.
 3. Definování typů kódů identifikátorů, které mají být exportovány. Přejděte na **řízení informací o produktech** &gt; **nastavení** &gt; **Kódy identifikátoru produktu**. Pro vygenerování typů kódů identifikátoru vyberte **Generovat kódy**. Pro každý typ identifikace, která je nalezena ve vybrané právnické osobě je generována položka typu kódu.
 

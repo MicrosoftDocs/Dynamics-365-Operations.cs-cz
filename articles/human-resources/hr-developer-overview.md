@@ -1,6 +1,6 @@
 ---
 title: Přehled
-description: ''
+description: Tato příručka pro vývojáře poskytuje odkaz na rozhraní API a vlastní pole. Poskytuje také informace o integraci s jinými aplikacemi.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 995de90aa7c83b5aad35d935fe021706cf48ec4c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: e67882c47ad37805c6f6ce8051fb58363c4bcdcf
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008350"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091984"
 ---
 # <a name="overview"></a>Přehled
 

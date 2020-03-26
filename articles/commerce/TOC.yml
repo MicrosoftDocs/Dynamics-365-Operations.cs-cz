@@ -22,11 +22,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
                 - name: Použití aktualizací na cloudová prostředí
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Použití aktualizací na místní nasazení
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurace aktualizací služby
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Zastavení aktualizací služby
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
-                - name: Informujte se o aktualizacích služeb
+                - name: Získání upozornění na aktualizace služeb
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Automatizace datové úlohy
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/commerce/toc.json
@@ -84,12 +86,12 @@
                   items:
                     - name: Domovská stránka Co je nového a co se změnilo v aplikaci Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: 'Commerce, verze 10.0.10 (květen 2020)'
+                      href: get-started/whats-new-commerce-10-0-10.md
                     - name: 'Commerce, verze 10.0.9 (duben 2020)'
                       href: get-started/whats-new-10-0-9.md
                     - name: 'Commerce, verze 10.0.8 (únor 2020)'
                       href: get-started/whats-new-10-0-8.md
-                    - name: 'Retail, verze 10.0.7 (leden 2020)'
-                      href: get-started/whats-new-10-0-7.md
                 - name: Odstraněné nebo zastaralé funkce
                   items:
                     - name: Odstraněné nebo zastaralé funkce v aplikaci Finance and Operations
@@ -336,6 +338,8 @@
                       href: pos-operations.md
                     - name: Aktivace zařízení přizpůsobeného Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
+                    - name: Povolení ověření Azure Active Directory pro přihlášení do POS
+                      href: aad-pos-logon.md
                     - name: Rozložení obrazovky ukázkových dat v MPOS a Cloud POS
                       href: demo-data.md
                     - name: Vyhledávání produktu a zákazníka v POS
@@ -368,6 +372,8 @@
                           href: dev-itpro/retail-peripheral-simulator.md
                         - name: Připojení periferních zařízení k POS
                           href: define-maintain-channel-clients-registers-hw-stations.md
+                        - name: Kontrola stavu pro periferní zařízení a služby POS
+                          href: pos-healthcheck.md
                     - name: Rozložení obrazovky
                       items:
                         - name: Rozložení obrazovky ukázkových dat v MPOS/CPOS
@@ -518,7 +524,7 @@
                       href: create-variant-group.md
                 - name: Vytvoření nového produktu
                   items:
-                    - name: Vytvoření přehledu nového produktu
+                    - name: Vytvoření nového produktu v Commerce
                       href: create-new-product.md
                     - name: Správa kategorií produktů a produktů
                       href: category-management-product-creation.md
@@ -570,6 +576,8 @@
                   href: retail-shipping-discount.md
                 - name: Nastavení kupónů
                   href: retail-coupons.md
+                - name: Zobrazení slev v POS
+                  href: discounts-pos.md
                 - name: Sestavy cen
                   href: price-report.md
                 - name: Vytvoření obchodní smluv specifických pro kanál
@@ -582,8 +590,6 @@
                   href: product-recommendations.md
                 - name: Povolení ADLS v prostředí Dynamics 365 Commerce
                   href: enable-ADLS-environment.md
-                - name: Přidání seznamů doporučení produktu na stránky elektronického obchodu
-                  href: add-reco-list-to-page.md
                 - name: Povolit doporučení produktu
                   href: enable-product-recommendations.md
                 - name: Přizpůsobená doporučení
@@ -592,20 +598,22 @@
                       href: personalized-recommendations.md
                     - name: Odhlášení přizpůsobených doporučení
                       href: personalization-gdpr.md
-                - name: Vytvoření seznamů doporučení vybraných produktů
-                  href: create-editorial-recommendation-lists.md
-                - name: Správa výsledků doporučení produktů na základě umělé inteligence a strojového učení
+                - name: Přidání seznamů doporučení na web elektronického obchodu
+                  href: add-reco-list-to-page.md
+                - name: Zkušenosti s POS
+                  items:
+                    - name: Přidání doporučení produktu v POS
+                      href: product.md
+                    - name: Přidání doporučení na obrazovku transakcí
+                      href: add-recommendations-control-pos-screen.md
+                - name: Úprava výsledků doporučení produktů na základě umělé inteligence a strojového učení
                   href: modify-product-recommendation-results.md
-                - name: Získání doporučení produktu pomocí ukázkových dat
+                - name: Ruční vytvoření doporučení vybraných produktů
+                  href: create-editorial-recommendation-lists.md
+                - name: Vytvoření doporučení pomocí ukázkových dat
                   href: product-recommendations-demo-data.md
                 - name: Často kladené dotazy k doporučení produktu
                   href: faq-recommendations.md
-                - name: Zkušenosti s POS
-                  items:
-                    - name: Doporučení produktu v POS
-                      href: product.md
-                    - name: Přidání ovládacího prvku doporučení na obrazovku transakce na zařízeních POS
-                      href: add-recommendations-control-pos-screen.md
             - name: Hodnocení a recenze
               items:
                 - name: Přehled hodnocení a recenzí
@@ -656,6 +664,8 @@
               items:
                 - name: Vytvoření objednávky kontaktního střediska
                   href: tasks/create-call-center-orders.md
+                - name: Změna způsobu dodání v POS
+                  href: POS-change-delivery-mode.md
             - name: Distribuovaná správa objednávek
               items:
                 - name: Přehled DOM
@@ -768,9 +778,15 @@
                   href: associate-site-online-store.md
                 - name: Správa souborů robots.txt
                   href: manage-robots-txt-files.md
+                - name: Hromadné odeslání přesměrování URL adresy
+                  href: upload-bulk-redirects.md
+                - name: Nastavení klienta B2C v Commerce
+                  href: set-up-B2C-tenant.md
                 - name: Nastavení vlastních stránek pro přihlášení uživatelů
                   href: custom-pages-user-logins.md
-                - name: Přidání podpory pro síť CDN
+                - name: Konfigurace více klientů B2C v prostředí Commerce
+                  href: configure-multi-B2C-tenants.md
+                - name: Přidání podpory pro síť pro doručování obsahu
                   href: add-cdn-support.md
                 - name: Povolení zjišťování obchodu na základě polohy
                   href: enable-store-detection.md
@@ -864,6 +880,20 @@
                       href: customize-site-navigation.md
                     - name: Vytvoření URL adresy stránky
                       href: create-page-URL.md
+            - name: Správa digitálních aktiv
+              items:
+                - name: Přehled správy digitálních aktiv
+                  href: dam-overview.md
+                - name: Odeslání obrázků
+                  href: dam-upload-images.md
+                - name: Odeslání videa
+                  href: dam-upload-video.md
+                - name: Odeslání souborů jiných než obrázky a videa
+                  href: dam-upload-files.md
+                - name: Oříznutí obrázků
+                  href: dam-crop-images.md
+                - name: Přizpůsobení ohniska obrázku
+                  href: dam-custom-focal-point.md
             - name: 'Ujištění se, že stránka dodržuje předpisy'
               items:
                 - name: Přehled dodržování předpisů
@@ -1828,6 +1858,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurace souboru vývojového prostředí (.env)
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Nastavení sdílení kódu Azure DevOps a vytvoření příležitosti
+                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Přehled platformy
                   items:
                     - name: Přehled architektury
@@ -1912,6 +1944,10 @@
                       href: e-commerce-extensibility/create-observable-data-action.md
                     - name: Sdílení stavu napříč moduly
                       href: e-commerce-extensibility/share-state-across-modules.md
+                    - name: Přepisy datových akcí
+                      href: e-commerce-extensibility/data-action-overrides.md
+                    - name: Zavěšení datových akcí
+                      href: e-commerce-extensibility/data-action-hooks.md
                 - name: Vývoj motivů
                   items:
                     - name: Přehled motivů
@@ -2062,6 +2098,8 @@
                   href: dev-itpro/commerce-application-insights.md
                 - name: Vytvoření asynchronních API rozhraní Commerce (CRT) ve vaší obchodní logice
                   href: dev-itpro/async-commerce-extension.md
+                - name: Předrozšířené sloupce v databázi kanálů
+                  href: dev-itpro/extended-columns.md
             - name: Rozšiřitelnost konektoru platby
               items:
                 - name: Vytvoření integrace plateb pro platební terminál

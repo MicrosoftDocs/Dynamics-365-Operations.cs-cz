@@ -3,7 +3,7 @@ title: Domovská stránka Místní nasazení
 description: Toto téma obsahuje informace a odkazy na obsah týkající se místních nasazení.
 author: sericks007
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
-ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
+ms.openlocfilehash: b251125323bb74eb8be4172cb1b143c4866a8eac
+ms.sourcegitcommit: ec4df51e17be0b2df393635605ea17250c991ee9
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3090582"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "3099723"
 ---
 # <a name="on-premises-deployment-home-page"></a>Domovská stránka Místní nasazení
 
@@ -55,6 +55,7 @@ Můžete nasadit Dynamics 365 Finance + Operations (on-premises). Když se rozho
 - [Připojení klienta k internetu](../user-interface/client-disconnected.md)
 - [Použití aktualizací na místní nasazení](apply-updates-on-premises.md)
 - [Opětovné nasazení místních prostředí](redeploy-on-prem.md)
+- [Opětovné použití stejné instance AD FS pro více prostředí](onprem-reuseadfs.md)
 
 ## <a name="commerce"></a>Obchod
 - [Obchodní funkce, které jsou dostupné v místních nasazeních](../../../retail/retail-onprem.md)

@@ -3,7 +3,7 @@ title: Přidělení dat pro plánování rozpočtu
 description: Toto téma popisuje metody přidělení, které jsou k dispozici v aplikaci Microsoft Dynamics 365 Finance, a jejich použití.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,23 +18,26 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772069"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106875"
 ---
 # <a name="budget-planning-data-allocation"></a>Přidělení dat pro plánování rozpočtu
 
 [!include [banner](../includes/banner.md)]
 
-Tento článek popisuje metody přidělení, které jsou k dispozici v aplikaci Microsoft Dynamics 365 Finance, a jejich použití.  
+Toto téma popisuje metody přidělení, které jsou k dispozici v aplikaci Microsoft Dynamics 365 Finance, a jejich použití.  
 
 Data lze rozdělit do plánu rozpočtu různými způsoby za účelem přesného zobrazení předpokládaných částek.
 
 ## <a name="allocation-methods"></a>Metody přidělení
 Tři metody přidělení (Přidělit napříč obdobími, Přidělit k dimenzím a Použít pravidla přidělení hlavní knihy) umožňují vytvořit řádky plánu rozpočtu, které jsou založeny na řádcích ve stejném plánu rozpočtu. Tři další metody (Agregovat, Rozdělit a Kopírovat z plánu rozpočtu) umožňují vytvořit řádky plánu rozpočtu v jiných plánech rozpočtu. U všech šesti metod přidělení je třeba zadat cílový scénář. Cílový scénář může být buď stejný jako zdrojový scénář, nebo odlišný od zdrojového scénáře. Dále můžete určit, zda budou nové řádky připojeny k plánu rozpočtu, nebo nahradí aktuální řádky plánu rozpočtu.
+
+> [!NOTE] 
+> Jedinečný scénář by měl být použit pro agregaci, která se liší od scénáře používaného pro distribuci nebo jiné úpravy, které byly dříve provedeny v nadřazeném plánu.  
 
 [![Metoda přidělení Přidělit napříč obdobími](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Přidělit napříč obdobími** – kategorie přidělení období slouží k přidělení řádků plánu rozpočtu ze zdrojového scénáře plánu rozpočtu napříč obdobími k cílovému scénáři. Zdrojová částka je přiřazena k více řádkům v cílovém scénáři na základě procenta a data, které jsou definované v rámci kategorie přidělení období.         

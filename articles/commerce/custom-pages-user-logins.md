@@ -3,7 +3,7 @@ title: Nastavení vlastních stránek pro přihlášení uživatelů
 description: V tomto tématu je popsán způsob vytváření vlastních stránek v řešení Microsoft Dynamics 365 Commerce, které zpracovávají přizpůsobená přihlášení uživatelů klientů B2C (business-to-consumer) služby Azure Active Directory (Azure AD).
 author: brianshook
 manager: annbe
-ms.date: 12/05/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fe2a716d370c350c0c7e034835ff755f1ec9c6a1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 210a7d1c2b0a9a9606723b48681cca3a50fcc05b
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001937"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096790"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Nastavení vlastních stránek pro přihlášení uživatelů
 
@@ -193,17 +193,25 @@ V souboru global.json pro modul přihlášení ve startovní sadě je však mož
 
 Po aktualizaci souboru global.json a publikování změn se nový text odkazu zobrazí v modulu přihlášení, a to jak v řešení Commerce, tak na aktivní přihlašovací stránce.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
 [Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
+
+[Nastavení kanálu online obchodu](online-stores.md)
 
 [Vytvoření webu elektronického obchodu](create-ecommerce-site.md)
 
 [Přiřazení online webu ke kanálu](associate-site-online-store.md)
 
 [Správa souborů robots.txt](manage-robots-txt-files.md)
+
+[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+
+[Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
+
+[Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
 
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 

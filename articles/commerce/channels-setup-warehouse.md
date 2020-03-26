@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057849"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113752"
 ---
 # <a name="warehouse-set-up"></a>Nastavit sklad
 
@@ -33,7 +33,7 @@ Toto téma popisuje, jak nastavit sklad, který má být použit s novým kanál
 
 ## <a name="overview"></a>Přehled
 
-Ke každému obchodnímu kanálu je nutné přidružit konfigurovaný sklad. Následující postupy poskytují minimální konfiguraci nutnou k nastavení skladu pro obchodní kanál. Další informace týkající se nastavení skladu naleznete v [Přehledu řízení skladu](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview).
+Ke každému obchodnímu kanálu je nutné přidružit konfigurovaný sklad. Následující postupy poskytují minimální konfiguraci nutnou k nastavení skladu pro obchodní kanál. Další informace týkající se nastavení skladu naleznete v [Přehledu řízení skladu](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="configure-a-warehouse-site"></a>Konfigurace místa skladu
 
@@ -131,7 +131,7 @@ Následující obrázek ukazuje podrobnosti pro konfigurovaný sklad.
 
 ## <a name="additional-resources"></a>Další zdroje
 
-[Přehled řízení skladu](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
+[Přehled řízení skladu](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Přehled kanálů](channels-overview.md)
 

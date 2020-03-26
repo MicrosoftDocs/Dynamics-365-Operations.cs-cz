@@ -1,9 +1,9 @@
 ---
-title: Správa výsledků doporučení produktů na základě umělé inteligence a strojového učení
+title: Úprava výsledků doporučení produktů na základě umělé inteligence a strojového učení
 description: V tomto tématu je vysvětleno, jak přizpůsobovat výsledky doporučení produktu na základě umělé inteligence-strojového učení (AI-ML) pro váš podnik.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5da77f71fb2569adc011bb9ee9c8c795d85545f8
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 4631ef03e1d73b70d80e774d1efa4909e619bbc0
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024995"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127921"
 ---
-# <a name="manage-ai-ml-based-product-recommendation-results"></a>Správa výsledků doporučení produktů na základě umělé inteligence a strojového učení
+# <a name="adjust-ai-ml-based-product-recommendation-results"></a>Úprava výsledků doporučení produktů na základě umělé inteligence a strojového učení
 
 
 [!include [banner](includes/banner.md)]
 
-V tomto tématu je vysvětleno, jak přizpůsobovat výsledky doporučení produktu na základě umělé inteligence-strojového učení (AI-ML) pro váš podnik. 
+V tomto tématu je vysvětleno, jak upravit výsledky doporučení produktu na základě umělé inteligence-strojového učení (AI-ML) pro váš podnik. 
 
 Po povolení doporučení produktu budou výchozí nastavení účinná. Tyto parametry budou nebo mohou fungovat pro mnoho potřeb. Je nejvhodnější naplánovat strávený čas k vyhodnocení, zda výsledky odpovídají prodejnímu pohybu produktů. Před dalším provedením testování navrhujeme vyhodnocení výsledků za několik dní. 
 
@@ -98,14 +98,26 @@ Chcete-li ručně přidat nebo odebrat výsledky pro produkt typu seed, postupuj
 1.  Odebrání produktů z tabulky: vyberte řádek, který chcete odebrat, a vyberte možnost Odstranit.
 
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled doporučení produktu](product-recommendations.md)
+
+[Povolení ADLS v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
 
 [Povolit doporučení produktu](enable-product-recommendations.md)
 
 [Povolení přizpůsobených doporučení](personalized-recommendations.md)
 
-[Přidání seznamů doporučení produktu na stránky](add-reco-list-to-page.md)
+[Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
 
-[Přehled modulu kolekce produktů](product-collection-module-overview.md)
+[Přidání seznamů doporučení na web e-Commerce](add-reco-list-to-page.md)
+
+[Přidat doporučení produktu v POS](product.md)
+
+[Přidání doporučení na obrazovku transakce](add-recommendations-control-pos-screen.md)
+
+[Ručně vytvořit uspořádaná doporučení](create-editorial-recommendation-lists.md)
+
+[Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
+
+[Často kladené dotazy k doporučení produktu](faq-recommendations.md)

@@ -1,9 +1,9 @@
 ---
-title: Doporučení produktu na POS
+title: Přidání doporučení produktů v POS
 description: Toto téma popisuje používání doporučení produktů na zařízení v místě prodeje (POS).
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bfb13904b774558907b29e74158b1e0a193e17cd
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 48533596c5bdc73dd8c815166e7dde0ca2f3cb4d
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057434"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127806"
 ---
-# <a name="product-recommendations-on-pos"></a>Doporučení produktu v POS
+# <a name="add-product-recommendations-on-pos"></a>Přidání doporučení produktů v POS
 
 [!include [banner](includes/banner.md)]
 
@@ -69,10 +69,26 @@ Chcete-li nastavit doporučení produktu, postupujte následujícím způsobem:
 - Pokud jste přidali **Řízení doporučení** na svou obrazovku transakcí pomocí nástroje **Návrhář rozložení obrazovky**, odstraňte ho také.
 - Máte-li další dotazy, vyhledejte další informace [v nejčastějších dotazech k doporučením produktu](../commerce/faq-recommendations.md).
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
-[Přidání ovládacího prvku doporučení na obrazovku transakce na zařízeních POS](add-recommendations-control-pos-screen.md)
+[Přehled doporučení produktu](product-recommendations.md)
 
-[Přehled doporučení produktu](../commerce/product-recommendations.md)
+[Povolení ADLS v prostředí Dynamics 365 Commerce](enable-adls-environment.md)
 
-[Povolit doporučení produktu](../commerce/enable-product-recommendations.md) 
+[Povolit doporučení produktu](enable-product-recommendations.md)
+
+[Povolení přizpůsobených doporučení](personalized-recommendations.md)
+
+[Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
+
+[Přidání seznamů doporučení na web e-Commerce](add-reco-list-to-page.md)
+
+[Přidání doporučení na obrazovku transakce](add-recommendations-control-pos-screen.md)
+
+[Úprava výsledků doporučení AI-ML](modify-product-recommendation-results.md)
+
+[Ručně vytvořit uspořádaná doporučení](create-editorial-recommendation-lists.md)
+
+[Vytvořit doporučení s ukázkovými daty](product-recommendations-demo-data.md)
+
+[Často kladené dotazy k doporučení produktu](faq-recommendations.md)

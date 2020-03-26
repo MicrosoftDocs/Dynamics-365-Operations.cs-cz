@@ -16,14 +16,16 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5e2989906c5aa3ead9e46b8ed5333e880e5cf1c6
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 10795c90cb90961c17a4326b71ed43dc72039f2b
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769940"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117418"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Import souborů v XML formátu s volitelnými atributy
+
+[!include [banner](../includes/banner.md)]
 
 Formáty elektronického výkaznictví můžete navrhovat pro analyzování příchozích dokumentů ve formátu XML. Některé atributy prvků XML lze zadat v navrženém formátu elektronického výkaznictví jako volitelné. To vám umožní zpracovat správně příchozí soubory s takovými atributy XML a bez nich. Poté můžete obsah z těchto souborů použít k aktualizaci dat aplikace.
 
@@ -52,17 +54,17 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 7. Klikněte na tlačítko **Přidat**.
 8. Kliknutím na možnost **Nový** otevřete dialogové okno.
 9. Do pole **Název** zadejte Seznam.
-10. V poli **Typ položky** vyberte **Seznam záznamů**.
-11. Klikněte na tlačítko **Přidat**.
-12. Kliknutím na možnost **Nový** otevřete dialogové okno.
-13. Do pole **Název** zadejte Kód.
-14. V poli **Typ položky** vyberte **Řetězec**.
-15. Klikněte na tlačítko **Přidat**.
-16. Klikněte na možnost **Uložit**.
-17. Zavřete stránku.
-18. Klikněte na položku **Změnit stav**.
-19. Klikněte na **Dokončit**.
-20. Klikněte na tlačítko **OK**.
+10.    V poli **Typ položky** vyberte **Seznam záznamů**.
+11.    Klikněte na tlačítko **Přidat**.
+12.    Kliknutím na možnost **Nový** otevřete dialogové okno.
+13.    Do pole **Název** zadejte Kód.
+14.    V poli **Typ položky** vyberte **Řetězec**.
+15.    Klikněte na tlačítko **Přidat**.
+16.    Klikněte na možnost **Uložit**.
+17.    Zavřete stránku.
+18.    Klikněte na položku **Změnit stav**.
+19.    Klikněte na **Dokončit**.
+20.    Klikněte na tlačítko **OK**.
 
 ## <a name="create-a-format-for-data-import"></a>Vytvoření formátu pro import dat
 1. Kliknutím na možnost **Vytvořit konfiguraci** otevřete dialogové okno.
@@ -81,32 +83,32 @@ Následující postup popisuje, jak uživatel s rolí Správce systému nebo Ná
 7. Ve stromovém zobrazení vyberte **XML\Element**.
 8. Do pole **Název** zadejte dokument.
 9. V poli **Násobnost** vyberte **Jeden-n**.
-10. Klikněte na tlačítko **OK**.
-11. Ve stromovém zobrazení vyberte **root\document**.
-12. Kliknutím na **Přidat** otevřete dialogové okno pro přetažení.
-13. Ve stromovém zobrazení vyberte **XML\Attribute**.
-14. Do pole **Název** zadejte id.
-15. Klikněte na tlačítko **OK**.
-16. Klikněte na možnost **Uložit**.
+10.    Klikněte na tlačítko **OK**.
+11.    Ve stromovém zobrazení vyberte **root\document**.
+12.    Kliknutím na **Přidat** otevřete dialogové okno pro přetažení.
+13.    Ve stromovém zobrazení vyberte **XML\Attribute**.
+14.    Do pole **Název** zadejte id.
+15.    Klikněte na tlačítko **OK**.
+16.    Klikněte na možnost **Uložit**.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Návrh mapování formátu pro uložení analyzovaných informací do datového modelu
-1.  Klikněte na **Mapovat formát na model**.
-2.  Klepněte na možnost **Nový**.
-3.  V poli **Definice** zadejte nebo vyberte hodnotu.
-4.  Do pole **Název** zadejte Mapování.
-5.  Klikněte na možnost **Uložit**.
-6.  Klikněte na možnost **Návrhář**.
-7.  Ve stromové struktuře rozbalte **formát**.
-8.  Ve stromovém zobrazení rozbalte **format\root: XML Element(root)**.
-9.  Ve stromovém zobrazení vyberte **format\root: XML Element(root)\document: XML Element 1..* (document)**.
-10. Klikněte na **Vazba**.
-11. Ve stromovém zobrazení rozbalte **format\root: XML Element(root)\document: XML Element 1..* (document)**.
-12. Ve stromovém zobrazení vyberte **format\root: XML Element(root)\document: XML Element 1..* (document)\id**.
-13. Ve stromovém zobrazení rozbalte **List = format.root.document**.
-14. Ve stromovém zobrazení zvolte **List = format.root.document\Code**.
-15. Klikněte na **Vazba**.
-16. Klikněte na možnost **Uložit**.
-17. Zavřete stránku.
+1.    Klikněte na **Mapovat formát na model**.
+2.    Klepněte na možnost **Nový**.
+3.    V poli **Definice** zadejte nebo vyberte hodnotu.
+4.    Do pole **Název** zadejte Mapování.
+5.    Klikněte na možnost **Uložit**.
+6.    Klikněte na možnost **Návrhář**.
+7.    Ve stromové struktuře rozbalte **formát**.
+8.    Ve stromovém zobrazení rozbalte **format\root: XML Element(root)**.
+9.    Ve stromovém zobrazení vyberte **format\root: XML Element(root)\document: XML Element 1..* (document)**.
+10.    Klikněte na **Vazba**.
+11.    Ve stromovém zobrazení rozbalte **format\root: XML Element(root)\document: XML Element 1..* (document)**.
+12.    Ve stromovém zobrazení vyberte **format\root: XML Element(root)\document: XML Element 1..* (document)\id**.
+13.    Ve stromovém zobrazení rozbalte **List = format.root.document**.
+14.    Ve stromovém zobrazení zvolte **List = format.root.document\Code**.
+15.    Klikněte na **Vazba**.
+16.    Klikněte na možnost **Uložit**.
+17.    Zavřete stránku.
 
 ## <a name="run-format-mapping"></a>Spuštění mapování formátu
 1. Klikněte na **Spustit**.

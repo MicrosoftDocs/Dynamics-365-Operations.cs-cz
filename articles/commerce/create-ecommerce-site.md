@@ -3,7 +3,7 @@ title: Vytvoření webu elektronického obchodu
 description: V tomto tématu jsou popsány kroky a informace požadované k vytvoření nového webu e-Commerce v Konfigurátoru webu Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3d3d8a290f06d9734be21f2d59152acac6857506
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7177bae911dfa91a645b40581bf23b3ed76562a3
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002006"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096767"
 ---
 # <a name="create-an-e-commerce-site"></a>Vytvoření webu elektronického obchodu
 
@@ -59,17 +59,25 @@ Při zřízení webu postupujte takto.
 
 Po vytvoření webu můžete ověřit, zda je přidružen k online obchodu, výběrem karty **Produkty**. Měli byste vidět sortiment produktů, které byly přiděleny online obchodu. Chcete-li přistupovat k přiděleným produktům podle kategorie, můžete použít také rozevírací nabídku v levé horní části stránky.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Konfigurace názvu domény](configure-your-domain-name.md)
 
 [Nasazení nového webu elektronického obchodu](deploy-ecommerce-site.md)
 
+[Nastavení kanálu online obchodu](online-stores.md)
+
 [Přiřazení online webu ke kanálu](associate-site-online-store.md)
 
 [Správa souborů robots.txt](manage-robots-txt-files.md)
 
+[Nahrání souborů pro hromadné přesmerování adres URL](upload-bulk-redirects.md)
+
+[Nastavení klienta B2C v Commerce](set-up-B2C-tenant.md)
+
 [Nastavení vlastních stránek pro přihlášení uživatelů](custom-pages-user-logins.md)
+
+[Konfigurace několika klientů B2C v prostředí Commerce](configure-multi-B2C-tenants.md)
 
 [Přidání podpory pro síť CDN](add-cdn-support.md)
 
