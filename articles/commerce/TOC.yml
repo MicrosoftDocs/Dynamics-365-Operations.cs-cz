@@ -454,6 +454,8 @@
                   items:
                     - name: Konfigurace a použití rozšířených automatických nákladů
                       href: omni-auto-charges.md
+                    - name: Povolení a konfigurace automatických nákladů podle kanálu
+                      href: auto-charges-by-channel.md
                     - name: Poměrné rozdělení nákladů záhlaví na odpovídající řádky prodeje
                       href: pro-rate-charges-matching-lines.md
                 - name: Správa programů trvání
@@ -525,7 +527,7 @@
                 - name: Vytvoření nového produktu
                   items:
                     - name: Vytvoření nového produktu v Commerce
-                      href: create-new-product.md
+                      href: create-new-product-commerce.md
                     - name: Správa kategorií produktů a produktů
                       href: category-management-product-creation.md
                 - name: Atributy produktu
@@ -598,8 +600,6 @@
                       href: personalized-recommendations.md
                     - name: Odhlášení přizpůsobených doporučení
                       href: personalization-gdpr.md
-                - name: Přidání seznamů doporučení na web elektronického obchodu
-                  href: add-reco-list-to-page.md
                 - name: Zkušenosti s POS
                   items:
                     - name: Přidání doporučení produktu v POS
@@ -944,6 +944,8 @@
                       href: add-checkout-module.md
                     - name: Modul potvrzení objednávky
                       href: order-confirmation-module.md
+                    - name: Modul volby obchodu
+                      href: store-selector.md
                 - name: Moduly správy obchodního vztahu
                   items:
                     - name: Moduly a stránky správy obchodního vztahu
@@ -2115,7 +2117,7 @@
                 - name: Použití dat platby
                   href: payment-connector-data-fields.md
                 - name: Povolení ochrany před duplicitní platbou pro platební konektor
-                  href: dev-itpro/duplicate-payment-protection.md
+                  href: dev-itpro/duplicate-payments-protection.md
                 - name: Vytvoření balíčku plateb pro průzkumníka aplikací v nasazeních Service Fabric
                   href: dev-itpro/payment-connector-package.md
             - name: Rozšiřitelnost elektronického obchodu třetích stran

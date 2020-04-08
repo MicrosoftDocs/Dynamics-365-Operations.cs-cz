@@ -5,6 +5,8 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 19. března 2020
+          href: hr-whats-new-2020-03-19.md
         - name: 10. března 2020
           href: hr-whats-new-2020-03-10.md
         - name: 3. března 2020
@@ -539,3 +541,9 @@
               href: hr-learning-create-closed-ended-question.md
             - name: Vytvoření závislé otázky
               href: hr-learning-depending-question.md
+        - name: Nastavení samoobsluhy pro zaměstnance a manažera
+          items:
+            - name: Přehled samoobsluhy pro zaměstnance a manažera
+              href: hr-employee-manager-self-service-overview.md
+            - name: Úprava osobních informací
+              href: hr-employee-manager-self-service-edit-personal-information.md

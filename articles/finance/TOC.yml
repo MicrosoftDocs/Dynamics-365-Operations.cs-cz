@@ -660,11 +660,11 @@
               href: expense-management/expense-report-distributions.md
             - name: Mezipodnikové výdaje
               href: expense-management/intercompany-expense.md
-            - name: Zásady výdajů
+            - name: Definice zásad výdajů
               href: expense-management/travel-expense-policies.md
-            - name: Zobrazit sestavu výdajů
+            - name: Zobrazení sestavy výdajů
               href: expense-management/view-expense-report.md
-            - name: Zaúčtovat sestavu výdajů
+            - name: Zaúčtování sestavy výdajů
               href: expense-management/post-expense.md
             - name: Sestavy výdajů a více schvalovatelů
               href: expense-management/expense-report-multiple-approvers.md
@@ -984,6 +984,8 @@
               href: project-management/project-contracts.md
             - name: "Prognózy projektu a\_rozpočty"
               href: project-management/project-forecasts-budgets.md
+            - name: Převod rozpočtů projektu na konci fiskálního roku
+              href: project-management/process-project-budgets-for-fiscal-year-end.md
             - name: Prodejní objednávky projektu
               href: project-management/project-sales-orders.md
             - name: Nákupní objednávky pro projekt
@@ -1646,6 +1648,12 @@
                       href: localizations/tasks/create-submit-vat-report.md
                 - name: Zobrazení transakcí u vyrovnání
                   href: localizations/emea-transactions-settlement-form.md
+            - name: Finsko
+              items:
+                - name: Finsko - přehled
+                  href: localizations/finland.md
+                - name: Sestava platby DPH pro Finsko
+                  href: localizations/emea-fin-sales-tax-payment-report-finland.md
             - name: Francie
               items:
                 - name: Francie - přehled
@@ -1692,10 +1700,12 @@
                   href: localizations/emea-fra-print-lump-sum-recovery-text.md
                 - name: Odpis RB/SL
                   href: localizations/emea-fra-rbsl-depreciation.md
-                - name: Nastavení způsobu platby
+                - name: Nastavení metody platby
                   href: localizations/tasks/fr-00004-setup-method-payment.md
                 - name: Aktualizace způsobu platby pro odběratele
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: Sestava DAS-2
+                  href: localizations/emea-fra-das2-report.md
             - name: Německo
               items:
                 - name: Německo - přehled
@@ -1992,10 +2002,16 @@
                   href: localizations/emea-ita-exil-goods-for-free.md
                 - name: Zlepšený dotaz na debetní nebo úvěrová vyrovnání
                   href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+                - name: Vyrovnání provize u plateb
+                  href: localizations/emea-ita-exil-commission-settlement.md
                 - name: Simulace hlavní knihy (Itálie)
                   href: localizations/emea-ita-exil-general-ledger-simulations.md
+                - name: Konfigurovatelné účetní profily pro banky a typy úhrad
+                  href: localizations/emea-ita-exil-bank-remittance.md
                 - name: Jedinečná certifikace
                   href: localizations/emea-ita-exil-unique-certification.md
+                - name: Import protestování cizích směnek
+                  href: localizations/emea-ita-exil-protest-boe.md
             - name: Japonsko
               items:
                 - name: Japonsko - přehled
@@ -2460,6 +2476,8 @@
                       href: localizations/rus-inventory-cost-structure.md
                     - name: Průvodce úpravami zásob
                       href: localizations/rus-inventory-adjustment-wizard.md
+                    - name: Sestavy zásob
+                      href: localizations/rus-inventory-reports.md
                 - name: Vykazování
                   items:
                     - name: Finanční výkaznictví
