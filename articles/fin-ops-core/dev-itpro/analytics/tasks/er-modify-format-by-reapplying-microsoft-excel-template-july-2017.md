@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73f2c10d7462c4b52a2b36dd5f221593707d2f4f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5408fd883e91bbff465434ab23974f22bb0f07da
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184662"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142985"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Úprava formátů opětovným použitím šablon aplikace Excel
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 K provedení kroků v tomto postupu musíte nejprve dokončit průvodce záznamem úloh s názvem „ER – návrh konfigurace pro generování sestav ve formátu OPENXML“.
 
 Tento postup popisuje, jak změnit konfiguraci formátu elektronického vykazování (ER) opakovaným použitím šablony aplikace Microsoft Excel, která byla změněna. V tomto postupu naimportujete upravenou šablonu aplikace Excel do konfigurace formátu ER, která byla vytvořena pro vzorovou společnost Litware, Inc., a poté vygenerujete elektronické dokumenty. Tento postup je navržen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Tyto kroky lze dokončit za použití datové sady GBSI. Předtím, než začnete, si stáhněte a uložte soubor SampleVendPaymWsReport2.xlsx, který je uveden v tématu nápovědy, Změna formátu elektronického vykazování opakovaným použitím šablony Excel (modify-electronic-reporting-format-reapply-excel-template/).
 
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-    * Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako Aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního“.  
+    * Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako Aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu Vytvoření poskytovatele konfigurace a jeho označení jako aktivního.  
 
 ## <a name="select-the-er-format"></a>Vyberte formát ER
 1. Klikněte na Konfigurace výkaznictví.
@@ -49,7 +49,7 @@ Tento postup popisuje, jak změnit konfiguraci formátu elektronického vykazov�
     * Otevřete pracovní verzi vybraného formátu ER pro vaše úpravy.  
 2. V podokně akcí klikněte na možnost Importovat.
 3. Klikněte na Aktualizace z aplikace Excel.
-    * Klepněte na Aktualizovat šablony a vyberte soubor SampleVendPaymWsReport2.xlsx.  
+    * Klepněte na 'Aktualizovat šablony' a vyberte soubor SampleVendPaymWsReport2.xlsx.  
     * Klepněte na tlačítko Aktualizovat šablonu a vyhledejte dříve stažený soubor SampleVendPaymWsReport2.xlsx.  
 4. Klikněte na tlačítko OK.
     * Je použita šablona SampleVendPaymWsReport2.xlsx. Struktura formátu ER je synchronizována s obsahem šablony, jejíž prvky jsou přidány do formátu ER. Existující prvky ve formátu ER, které nejsou zahrnuty v šablony jsou odebrány z definice formátu.  

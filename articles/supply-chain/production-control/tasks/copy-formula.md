@@ -16,16 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd87ded3bcc20b94fae723424d9cc6b94049a1a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9c5d8dbc5204464b2265029b6a11fcac7b79b464
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558756"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147151"
 ---
 # <a name="copy-a-formula"></a>Zkopírování receptury
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup se zaměřuje na vytvoření receptury, která zahrnuje stejné látky jako existující receptura, ale s drobnými odlišnostmi. Chcete-li vytvořit řádky receptury, pomocí funkce Kopírovat můžete zkopírovat existující recepturu, který má většinu potřebných látek. Jednotlivé řádky v nové verzi lze libovolně upravit. Díky funkci Kopírovat není nutno vytvořit více receptur, které jsou téměř totožné. Tento úkol byl vytvořen pomocí ukázkových dat společnosti USP2.
 

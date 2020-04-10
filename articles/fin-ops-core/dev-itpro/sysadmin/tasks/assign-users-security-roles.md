@@ -1,6 +1,6 @@
 ---
 title: Přiřazení uživatelů k rolím zabezpečení
-description: Uživatelé musí být přiřazeni k rolím zabezpečení, aby měli přístup k aplikacím Finance and Operations.
+description: Pro přístup k aplikacím Finance and Operations musí být uživateli přiřazeni k rolím zabezpečení.
 author: ChrisGarty
 manager: AnnBe
 ms.date: 11/14/2019
@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e4f4ef4535de9e371829c2d86d4fdc1400510c7b
-ms.sourcegitcommit: 6aa74f66f1abd3a7977050a5339b0b17e62ff053
+ms.openlocfilehash: 0744f45ac91dfb9b5aae35091e3675202c9144f9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "2807989"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143531"
 ---
 # <a name="assign-users-to-security-roles"></a>Přiřazení uživatelů k rolím zabezpečení
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Chcete-li použít cokoli jiného než společné funkce, je nutné, aby byly uživatelům přiřazeny k role zabezpečení. Tento postup vysvětluje způsob, jakým správce systému může automaticky přiřadit uživatele k rolím automaticky na základě obchodních dat. 
 

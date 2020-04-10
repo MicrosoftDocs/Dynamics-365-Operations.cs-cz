@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0119ae07e490f048dbb021983e25889cb1cb42b3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 9760aeb823730581aa1f02db1574e6f5eccd1f75
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845336"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145633"
 ---
 # <a name="set-up-quality-orders"></a>Nastavení objednávek kvality
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje povolení procesu řízení kvality, kde musí být příchozí zásoby okamžitě po registraci po doručení prohlédnuty. Postup obvykle provádí správce kvality. Proces zahrnuje vytvoření skupiny kvality, definování položek, které budou testovány, a sestavení skupiny testů, které mají být provedeny u položek ve skupině kvality. Tohoto průvodce můžete spustit s ukázkovými daty společnosti USMF.
 
@@ -96,7 +96,7 @@ Tento postup popisuje povolení procesu řízení kvality, kde musí být příc
 ## <a name="create-a-test-group"></a>Vytvoření testovací skupiny
 1. Přejděte na **Řízení zásob > Nastavení > Řízení kvality > Testovací skupiny**.
 2. Klepněte na možnost **Nový**.
-3. Zadejte hodnotu do pole **Testovací skupiny**. Udělte **Testovací skupině** název, který vám pomůže zapamatovat, jaké testy budou spuštěny, a se kterou skupinou kvality by měla být přidružena. Například pokud ji budete používat se skupinou kvality, která vybírá položky začínající na "T", mohli byste ji nazvat "Testy položek T".  
+3. Zadejte hodnotu do pole **Testovací skupiny**. Udělte **Testovací skupině** název, který vám pomůže zapamatovat, jaké testy budou spuštěny, a se kterou skupinou kvality by měla být přidružena. Například pokud ji budete používat se skupinou kvality, která vybírá položky začínající na „T“, mohli byste ji nazvat „Testy položek T“.  
 4. Zadejte hodnotu do pole **Popis**.
 5. V poli **Vzorkování položky** vyberte řádek vzorkování položky, který jste vytvořili dříve.
 6. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
@@ -116,7 +116,7 @@ Tento postup popisuje povolení procesu řízení kvality, kde musí být příc
 1. Přejděte na **Řízení zásob > Nastavení > Řízení kvality > Přiřazení kvality**.
 2. Klepněte na možnost **Nový**.
 3. Vyberte volbu v poli **Typ odkazu**.
-4. V poli **Kód položky** vyberte Skupina. V tomto příkladu nyní vybereme "Skupina" a použijeme dříve vytvořenou skupinu kvality. Můžete zde také nastavte možnost "Tabulka" a určit tak položky ručně, nebo vybrat "Vše" a přidat všechny položky do objednávky kvality.  
+4. V poli **Kód položky** vyberte Skupina. V tomto příkladu nyní vybereme „Skupina“ a použijeme dříve vytvořenou skupinu kvality. Můžete zde také nastavte možnost "Tabulka" a určit tak položky ručně, nebo vybrat "Vše" a přidat všechny položky do objednávky kvality.  
 5. V poli **Položka** vyberte skupinu kvality, kterou jste vytvořili dříve. Možnosti dostupné v poli Položka závisí na nastavení v poli Kód položky.  
 6. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
 7. Rozbalte nebo sbalte oddíl Zpracování.

@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ecc3e1ce842e8d3b693b5e81ed665e9f3c00bfb5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9bccd92946783628dce37c3fd018e4dd927efd49
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021848"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141124"
 ---
 # <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a> Nastavení pravidel a parametrů pro cross docking a metodu buyer's push
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tato procedura ukazuje postup vytváření pravidel doplnění. Pravidla doplnění lze použít k řízení distribuce produktů do obchodů při použití metod cross docking a buyer´s push. Pravidla doplnění lze nastavit pro obchody a skupiny obchodů. Hmotnost definovaná pro jednotlivé řádky v pravidle bude určovat, jak bude množství produktů distribuováno mezi obchody při použití pravidel doplnění jako distribuční metody pro metodu cross docking a buyer´s push. Tato procedura používá ukázkovou společnost USRT.
 

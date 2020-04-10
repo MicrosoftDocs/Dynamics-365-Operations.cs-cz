@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3a6678b09ce4011b7f80d40979209cc2f588df8
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 73bc22949d0b19fa04bf27e6fd7df7b27832795b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994927"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148577"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generování a zpracování rabatů odběratelů
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup ukazuje zpracování rabatů odběratele z generování nároku až do okamžiku jejich předání do pohledávek jako časově rozlišených položek. Provede vás konkrétním příkladem a vysvětlí vliv různých podmínek na řádcích rabatu na konečné částky, které budou připsány odběrateli. Před spuštěním průvodce je třeba použít ukázková data společnosti USMF a provést následující úkoly: (1) Na stránce Parametry pohledávek rozbalte kartu Ceny a potom kartu Podrobnosti o ceně a zkontrolujte, že je možnost Povolit podrobnosti o ceně nastavena na hodnotu Ano. (2) Na stránce Smlouvy o rabatu vyberte smlouvu o rabatu odběratele: USMF-000001. Pokud pole Stav schválení workflowu není nastaveno na Schváleno, proveďte schválení kliknutím na Ověření v podokně akcí.
 
@@ -68,7 +68,7 @@ Tento postup ukazuje zpracování rabatů odběratele z generování nároku až
     - Stránka Rabaty funguje jako pracovní plocha, kde můžete kontrolovat, schvalovat a zpracovat nároky na rabat. Nyní budete zpracovávat nároky, které byly vytvořeny v důsledku fakturace prodejní objednávky pro odběratele US-009, na kterého platí smlouva o rabatu USMF-000001.   
     - První řádek představuje nároku na rabat 800 USD, který je založen na prodeji 40 jednotek produktu T0020 (vypočteno 20 USD za jednotku). To odpovídá podmínkám první množstevní kategorie ve smlouvě o rabatu.  
     - Druhý nárok je 2 400 USD založený na prodeji 60 jednotek produktu T0020 (vypočítáno 40 USD za jednotku) podle druhé množstevní kategorie ve smlouvě.  
-    - Oba nároky jsou ve stavu "K výpočtu". To znamená, že jsou přidruženy ke smlouvě, která slouží ke sledování prodejních výsledků zákazníka v pravidelných intervalech, a že musí být přepočítávány kvůli zohlednění celkového objem prodeje za příslušné období.   
+    - Oba nároky jsou ve stavu „K výpočtu“. To znamená, že jsou přidruženy ke smlouvě, která slouží ke sledování prodejních výsledků zákazníka v pravidelných intervalech, a že musí být přepočítávány kvůli zohlednění celkového objem prodeje za příslušné období.   
 2. Klikněte na možnost **Kumulovat**.
 3. V poli **Odběratel** zadejte nebo vyberte hodnotu.
 4. V poli **Počáteční datum** vyberte aktuální datum.

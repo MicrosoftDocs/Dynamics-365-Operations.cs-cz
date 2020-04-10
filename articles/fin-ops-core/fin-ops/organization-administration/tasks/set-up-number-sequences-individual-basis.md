@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: db662eb407fbcf3587f3fcb03347a3f14e83b879
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189860"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140490"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Nastavení číselných řad na jednotlivém základě
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Toto téma vysvětluje nastavení číselných řad na jednotlivém základě. Číselné řady slouží ke generování čitelných, jedinečných identifikátorů pro záznamy hlavních dat a záznamy transakcí, které je požadují. Hlavní záznam dat nebo transakce, která vyžaduje identifikátor, je označován jako odkaz. Než bude možné vytvořit nové záznamy pro odkaz, musíte nastavit číselné řady a spojit je s odkazem. Můžete nastavit všechny požadované číselné řady současně pomocí průvodce **Nastavení číselných řad**, nebo můžete vytvořit nebo upravit jednotlivé číselné řady na stránce **Číselné řady**.
 

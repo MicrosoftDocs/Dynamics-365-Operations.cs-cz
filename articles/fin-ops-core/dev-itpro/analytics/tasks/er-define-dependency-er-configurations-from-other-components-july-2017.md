@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 468a2637f4a5b2b7ff3514c92c52fb26b9231bc4
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e06fdda7d2d73c3fe4a4b9ee5bd44e6ef857b8d5
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042912"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142224"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definování závislosti konfigurace elektronického výkaznictví na jiných komponentách
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh, ER Správa konfigurací mapování modelů, a mít přístup k aplikaci Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -33,15 +33,15 @@ Tento postup popisuje postup návrhu konfigurace elektronických sestav (ER) a z
 Tento postup je navržen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Kroky lze provést v každé společnosti, protože konfigurace ER jsou sdíleny společnostmi. 
 
 1. Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.
-    * Zkontrolujte, že strom konfigurace obsahuje konfiguraci Ukázkový datový model a podřízené položky. V opačném případě dokončete jednotlivé kroky průvodce záznamem, ER Správa konfigurací mapování modelů, a znovu spusťte tohoto průvodce.   
+    * Zkontrolujte, že strom konfigurace obsahuje konfiguraci 'Ukázkový datový model' a podřízené položky. V opačném případě dokončete jednotlivé kroky průvodce záznamem, ER Správa konfigurací mapování modelů, a znovu spusťte tohoto průvodce.   
 
 ## <a name="define-the-dependency-of-er-configurations-from-other-components"></a>Definování závislosti konfigurace ER z jiných komponent
 1. Ve stromovém zobrazení rozbalte Ukázkový datový model.
 2. Ve stromovém zobrazení vyberte Sample data model\Sample mapping.
-    * Vybrali jsme pracovní verzi konfigurace mapování modelu Ukázkové mapování. Nyní určíme závislosti z dalších softwarových komponent. Tento krok je považován za předpoklad pro řízení stažení této verze konfigurace z úložiště ER a další používání této verze.   
+    * Vybrali jsme pracovní verzi konfigurace mapování modelu 'Ukázkové mapování'. Nyní určíme závislosti z dalších softwarových komponent. Tento krok je považován za předpoklad pro řízení stažení této verze konfigurace z úložiště ER a další používání této verze.   
 3. Rozbalte oddíl Předpoklady.
-    * Mějte na paměti, že skupina předpokladů implementace již byla během tohoto kroku automaticky přidána. Tato skupina obsahuje součást předpokladů, která se vztahuje ke konfiguraci datového modelu a je označena jako Implementace. Označení znamená, že konfigurace mapování modelu pro vzorový model mapování je považována za implementaci datového modelu – Vzorový datový model. Tato součást vynutí u ER stahování konfigurace mapování modelu – Vzorové mapování, z úložiště ER po stažení konfigurace modelu – Vzorový datový model.   
-4. Klikněte na položku Upravit.
+    * Mějte na paměti, že skupina předpokladů 'implementace' již byla během tohoto kroku automaticky přidána. Tato skupina obsahuje součást předpokladů, která se vztahuje ke konfiguraci datového modelu a je označena jako Implementace. Označení znamená, že konfigurace mapování modelu pro 'vzorový model mapování' je považována za implementaci datového modelu – 'Vzorový datový model'. Tato součást vynutí u ER stahování konfigurace mapování modelu – 'Vzorové mapování', z úložiště ER po stažení konfigurace modelu – 'Vzorový datový model'.   
+4. Klikněte na možnost Upravit.
     * Jednu závislost aktuální konfigurace ze softwarové komponenty lze určit pomocí definice typu komponenty a buď verze komponenty nebo rozsahu verzí součástí.  
     * Požadované závislostí mohou být seskupeny. Je-li vybrán typ seskupení 'Všechny', podmínka závislosti této skupiny bude považována za splněnou, pokud bude splněna podmínka každé závislosti z této skupiny a podřízené skupiny. Je-li vybrán typ seskupení 'Jeden', podmínka závislosti této skupiny bude považována za splněnou, pokud bude splněna podmínka alespoň jedné závislosti z této skupiny a podřízené skupiny.   
 5. Klikněte na položku Nová.
@@ -49,7 +49,7 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
 7. Vyberte Microsoft Dynamics 365 for Operations (1611).
 8. V poli Verze zadejte [7.1.1541.3036,8).
     * [7.1.1541.3036,8)  
-    * Zadané závislosti budou vyhodnoceny po stažení této konfigurace z některého úložiště ER. Tato verze konfigurace bude stažena z úložiště ER, pokud je verze 1 konfigurace Vzorový model dat již k dispozici nebo stažena předem. Pokud dojde ke stažení předem, musí být proces dokončen v části Finance and Operations verze musí být 7.1.1541.3036 nebo novější, ale nesmí přesáhnout hlavní verzi 8.   
+    * Zadané závislosti budou vyhodnoceny po stažení této konfigurace z některého úložiště ER. Tato verze konfigurace bude stažena z úložiště ER, pokud je verze 1 konfigurace 'Vzorový model dat' již k dispozici nebo stažena předem. Pokud dojde ke stažení předem, musí být proces dokončen v části Finance and Operations verze musí být 7.1.1541.3036 nebo novější, ale nesmí přesáhnout hlavní verzi 8.   
 9. Klikněte na položku Uložit.
 10. Zavřete stránku.
 11. Klikněte na položku Změnit stav.
@@ -62,7 +62,7 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
 18. Zvolte Microsoft Dynamics AX 7.0 RTW.
 19. V poli Verze zadejte [7.0.1265.3015,7.1).
     * [7.0.1265.3015,7.1)  
-    * Závislosti budou vyhodnoceny po stažení této konfigurace z některého úložiště ER. Tato verze konfigurace bude stažena z úložiště ER, pokud je verze 1 konfigurace Vzorový model dat již k dispozici nebo stažena předem. Pokud dojde ke stažení předem, musí být proces dokončen v části Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition a verze musí být 7.0.1265.3015 nebo novější, ale nesmí přesáhnout vedlejší verzi 1.   
+    * Závislosti budou vyhodnoceny po stažení této konfigurace z některého úložiště ER. Tato verze konfigurace bude stažena z úložiště ER, pokud je verze 1 konfigurace 'Vzorový model dat' již k dispozici nebo stažena předem. Pokud dojde ke stažení předem, musí být proces dokončen v části Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition a verze musí být 7.0.1265.3015 nebo novější, ale nesmí přesáhnout vedlejší verzi 1.   
 20. Klikněte na položku Uložit.
 21. Zavřete stránku.
 22. Klikněte na položku Změnit stav.
@@ -82,8 +82,8 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
 8. V poli Typ úložiště konfigurace zadejte LCS.
 9. Klikněte na Vytvořit úložiště.
 10. V poli Projekt zadejte nebo vyberte hodnotu.
-    * Vyberte požadovaný projekt LCS z vyhledávacího pole Projekt.  
-11. Klikněte na tlačítko OK.
+    * Vyberte požadovaný projekt LCS z vyhledávacího pole 'Projekt'.  
+11. Klepněte na tlačítko OK.
 12. Zavřete stránku.
 
 ## <a name="upload-configurations-to-lcs"></a>Odeslání konfigurací do LCS
@@ -138,5 +138,5 @@ Odstraníme ze systému vytvořené konfigurace a stáhneme je zpět z úložiš
 24. Zavřete stránku.
 25. Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.
 26. Ve stromovém zobrazení rozbalte Ukázkový datový model.
-    * Všimněte si, že konfigurace modelu mapování Vzorové mapování bylo staženo spolu s vybranou konfigurací modelu dat. Dva soubory jsou staženy společně vzhledem k tomu, že 'Ukázkové mapování' bylo definováno jako implementace vybraného datového modelu a vzhledem k tomu, že je použitelné pro aplikaci. Konfigurace Vzorové mapování (alternativní) nebylo staženo, protože podmínky pro požadovanou aplikační verzi nebyly splněny.   
-    * Pokud jste přihlášeni k Finance and Operations, zaregistrujte si stejného poskytovatele, přejděte na projekt LCS a stáhněte stejnou konfiguraci datového modelu, stáhne se konfigurace Ukázkové mapování (alternativní) a konfigurace "Ukázkové mapování" bude přeskočena.  
+    * Všimněte si, že konfigurace modelu mapování 'Vzorové mapování' bylo staženo spolu s vybranou konfigurací modelu dat. Dva soubory jsou staženy společně vzhledem k tomu, že 'Ukázkové mapování' bylo definováno jako implementace vybraného datového modelu a vzhledem k tomu, že je použitelné pro aplikaci. Konfigurace 'Vzorové mapování (alternativní)' nebylo staženo, protože podmínky pro požadovanou aplikační verzi nebyly splněny.   
+    * Pokud jste přihlášeni k Finance and Operations, zaregistrujte si stejného poskytovatele, přejděte na projekt LCS a stáhněte stejnou konfiguraci datového modelu, stáhne se konfigurace 'Ukázkové mapování (alternativní)' a konfigurace "Ukázkové mapování" bude přeskočena.  

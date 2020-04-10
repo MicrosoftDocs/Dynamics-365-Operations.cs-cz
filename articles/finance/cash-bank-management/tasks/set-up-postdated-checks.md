@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 035f6e3b0268f8ee4c9006ca5f0527133cf2771c
-ms.sourcegitcommit: 69f8233e86b32347474a25d83b4ac5920f60407d
+ms.openlocfilehash: 22e67aa051b5ea8267df7efac40e007d0f11a83d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2538471"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141101"
 ---
 # <a name="set-up-postdated-checks"></a>Nastavení postdatovaných šeků
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Toto téma vysvětluje, jak určit, zda se mají zaúčtovat položky deníku pro postdatované šeky a které účetní deníky se mají použít pro vymazání položek a plateb dodavatele. Můžete také určit clearingové účty pro vydané šeky, přijaté šeky a srážkové daně. Postdatované šeky jsou vydány za účelem provedení a přijetí platby v budoucí datu. Můžete zadat, zda se má šek odrazit ve vašich účetních knihách před datem splatnosti.
 

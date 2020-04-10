@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7777ba38e4bf41b17fae698200017b933fc9e876
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9196bedcea26a0024b3eabbbcb9c58a0155a7490
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188158"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141665"
 ---
 # <a name="customer-payment-overview"></a>Přehled plateb odběratele
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento průvodce záznamem úloh vás provede různými metodami zadání plateb odběratele. Tento úkol využívá ukázkovou společnost USMF.
 
@@ -45,7 +45,7 @@ Tento průvodce záznamem úloh vás provede různými metodami zadání plateb 
 14. V **podokně akcí** klikněte na možnost Řádky. Při otevírání řádků se zobrazí všechny platby zaznamenané na stránce **Zadat platby odběratele** a uložené do deníku. Na této stránce také můžete zadat nové platby odběratele nebo upravit existující platbu odběratele před zaúčtováním.
 15. Klikněte na položku **Nová** a vytvořte tak další platbu. 
 16. Vyberte odběratele, od kterého jste platbu obdrželi. Pokud neznáte odběratele, ale víte, která faktura byla prostřednictvím této platby uhrazena, můžete fakturu ručně zadat nebo vybrat v poli Faktura. Po výběru faktury se nastaví výchozí odběratel.  
-17. Klikněte na položku **Vyrovnat transakce** a označte faktury, které byly zaplaceny. Platba nemusí vyrovnávat žádnou fakturu. Pokud se jedná o zálohu nebo pokud nevíte, která faktura byla uhrazena, můžete platbu zadat a zaúčtovat. Platbu pak můžete vyrovnat pomocí faktury později.  
+17. Klikněte na možnost **Vyrovnat transakce** a označte faktury, které byly zaplaceny. Nemusíte vyrovnat platbu pro jakoukoli fakturu. Pokud se jedná o zálohu nebo pokud nevíte, která faktura byla uhrazena, můžete platbu zadat a zaúčtovat. Platbu pak můžete vyrovnat pomocí faktury později.  
 18. Označte faktury, které byly platbou uhrazeny. 
 19. V poli **Částka** zadejte částku platby, která bude na faktuře vyrovnána.
 20. Klikněte na tlačítko **OK**.

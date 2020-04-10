@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbed62c80c14e7cfe96d38d43a5db39b0469d939
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184915"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142448"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Úprava formátů pro generování dokumentů s daty aplikace
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 K dokončení kroků v tomto postupu musíte nejprve dokončit postup ER Generování dokumentů s aktualizací dat aplikace (část 3: úprava modelu a mapování).
 
@@ -96,13 +96,13 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>Upravte formát kvůli zapamatování podrobností o vykazování
 1. Klikněte na Mapovat formát na model.
-2. Klikněte na položku Nová.
-3. V poli Definice zadejte nebo vyberte kořenovou položku Pro aktualizaci dat aplikace.
+2. Klikněte na možnost Nový.
+3. V poli Definice zadejte nebo vyberte kořenovou položku 'Pro aktualizaci dat aplikace'.
     * Pro aktualizaci dat aplikace  
 4. Do pole Název zadejte Mapování pro aktualizaci dat.
     * Mapování pro aktualizaci dat  
 5. Klikněte na položku Uložit.
-    * Toto mapování definuje to, jak jsou podrobné informace o hlášení Intrastat shromážděny v datovém modelu – strukturu, která je určena výběrem kořenové položky Pro aktualizaci dat aplikace. Tyto podrobnosti, mapování modelu se shodnou kořenovou položkou Pro aktualizaci dat aplikace a směr K cíli se použijí pro aktualizaci dat aplikace. Aktualizace dat aplikace začne ihned po vygenerování odchozí sestavy Intrastat. Všimněte si, že aktualizaci dat aplikace lze přeskočit při spuštění, ale datový model musí být prázdný (obsahovat prázdný seznam záznamů).   
+    * Toto mapování definuje to, jak jsou podrobné informace o hlášení Intrastat shromážděny v datovém modelu – strukturu, která je určena výběrem kořenové položky 'Pro aktualizaci dat aplikace'. Tyto podrobnosti, mapování modelu se shodnou kořenovou položkou 'Pro aktualizaci dat aplikace' a směr 'K cíli' se použijí pro aktualizaci dat aplikace. Aktualizace dat aplikace začne ihned po vygenerování odchozí sestavy Intrastat. Všimněte si, že aktualizaci dat aplikace lze přeskočit při spuštění, ale datový model musí být prázdný (obsahovat prázdný seznam záznamů).   
 6. Klikněte na možnost Návrhář.
     * Všimněte si, že je standardně přidán formát odchozí sestavy Intrastat jako zdroj dat pro toto mapování modelu.  
     * Připojte prvky požadované sestavy (předkládané jako datový zdroj) k prvkům datového modelu, který je filtrován na základě kořenové položky vybraného modelu.  

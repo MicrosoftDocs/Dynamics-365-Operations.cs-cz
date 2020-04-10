@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 494af854d408f0b0c02d753ff3d24eb3d6216fd9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 07961d8613b6b5e0e1c5dc6a91b554305dcb17f5
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176759"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138154"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Nastavení účetních profilů dlouhodobého majetku
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento průvodce úkolem nastaví účetní profily pro dlouhodobý majetek.  Využívá účetní role a ukázková data pro právnické osoby USMF.  Příklady uvedené v průvodci úkolem jsou určeny pro základní účetní profil, i když účetní profily je nutné vytvořit pro vaši konkrétní účtovou osnovu a požadavky na finanční výkazy.
 
@@ -34,7 +34,7 @@ Tento průvodce úkolem nastaví účetní profily pro dlouhodobý majetek.  Vyu
 3. Zadejte hodnotu do pole **Účetní profil**.
 4. Zadejte hodnotu do pole **Popis**. Musíte vytvořit zaúčtovací profil pro každý typ transakce dlouhodobého majetku, který chcete použít při práci s dlouhodobým majetkem. Tento průvodce úkolem se spustí s typem Transakce pořízení.  
 5. Na panelu nástrojů klikněte na tlačítko **Přidat**.
-6. V poli **Kniha** zadejte nebo vyberte hodnotu. Pole **Seskupení** umožňuje definovat účetní profil pro tabulku (jeden účet pro každý dlouhodobý majetek) nebo skupinu (jeden účet pro každou skupinu dlouhodobého majetku). Pro tohoto průvodce záznamem úloh ponecháme nastavenou hodnotu Vše a použijeme tak veškerý dlouhodobý majetek se zadanou knihou.  
+6. V poli **Kniha** zadejte nebo vyberte hodnotu. Pole **Seskupení** umožňuje definovat účetní profil pro tabulku (jeden účet pro každý dlouhodobý majetek) nebo skupinu (jeden účet pro každou skupinu dlouhodobého majetku). Pro tohoto průvodce záznamem úloh ponecháme nastavenou hodnotu „Vše“ a použijeme tak veškerý dlouhodobý majetek se zadanou knihou.  
 7. Zadejte požadované hodnoty do pole **Hlavní účet**. Pro pořízení zadejte protiúčet, nebo ponechejte pole prázdné a nechte je vyplnit pro určitou transakci.    
 8. V rozevírací nabídce na pevné záložce **Účty hlavní knihy** vyberte možnost Oprava pořizovací ceny. Pro úpravu transakcí opravy pořizovací ceny použijeme stejné účty, které byly použity pro transakce pořízení.  
 9. Klikněte na tlačítko **Přidat**.
@@ -63,7 +63,7 @@ Tento průvodce úkolem nastaví účetní profily pro dlouhodobý majetek.  Vyu
 32. V poli **Kniha** zadejte nebo vyberte hodnotu.
 33. V poli **Zaúčtovat hodnotu** vyberte Pořizovací hodnota.
     * Pořizovací hodnota se zaměřuje na pořízení a opravu pořizovací ceny pro všechny roky. Můžete také definovat účty pro tyto typy transakcí samostatně.  
-    * Můžete nastavit proces vyřazení tak, aby používal různé účty v závislosti na tom, zda je výsledkem odpisu zisk nebo ztráta. Nastavíme hodnotu prodeje na Vše a použijeme tak stejné účty pro všechny typy vyřazení.  
+    * Můžete nastavit proces vyřazení tak, aby používal různé účty v závislosti na tom, zda je výsledkem odpisu zisk nebo ztráta. Nastavíme hodnotu prodeje na „Vše“ a použijeme tak stejné účty pro všechny typy vyřazení.  
 34. Zadejte požadované hodnoty do pole **Hlavní účet**.
 35. Zadejte požadované hodnoty do pole **Protiúčet**.
 36. Klikněte na tlačítko **Přidat**.

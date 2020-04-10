@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 910d2347bcfb7dcdaa9ff96f324f99e17614d3a9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 33773725a1da38e017f660a4ccfc5bdd98de2b69
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176874"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140622"
 ---
 # <a name="change-the-date-for-a-session"></a>Změna data pro relaci
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 V tomto tématu je vysvětleno, jak lze změnit datum relace. Standardně se při zadávání a publikování položek deníku nebo zdrojových dokumentů používá aktuální datum. Můžete změnit datum používané pro aktuální relaci. Použijte tuto funkci k antedatování položek deníku nebo zdrojových dokumentů podle potřeby.
 

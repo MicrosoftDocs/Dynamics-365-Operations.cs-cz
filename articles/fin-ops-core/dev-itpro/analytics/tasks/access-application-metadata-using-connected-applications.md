@@ -1,6 +1,6 @@
 ---
 title: Přístup k metadatům aplikace pomocí připojených aplikací
-description: Kroky v tomto tématu vysvětlují, jak může uživatel služby Regulatory Configuration Service (RCS) navrhnout nové mapování modelu elektronického výkaznictví (ER) pomocí metadat v modulu Finance and Operations.
+description: Kroky v tomto tématu vysvětlují, jak může uživatel služby Regulatory Configuration Service (RCS) navrhnout nové mapování modelu elektronického výkaznictví (ER) pomocí metadat v Finance and Operations.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/29/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5020b523ca5d76d36f7436a8f43e8629c029e3e8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 28b8346b916729669af42ca47fe9a882e7a77bd0
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769871"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142194"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Přístup k metadatům aplikace pomocí připojených aplikací
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Následující kroky vysvětlují, jak může uživatel služby Regulatory Configuration Service s rolí Správce systému nebo Návrhář elektronického výkaznictví navrhnout nové mapování modelu elektronického výkaznictví (ER) pro pomocí metadat aplikace Finance and Operations. Přístup k metadatům aplikace bude probíhat online pomocí aplikace připojené k RCS. Mapování modelu ER bude konfigurováno pro přístup k transakcím zahraničního obchodu. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md). Pokud jste nedokončili kroky uvedené v tématu [Přístup k metadatům aplikace pomocí konfigurace ER](access-application-metadata-er-configuration.md), přejděte na stránku [Příklady elektronického výkaznictví](https://go.microsoft.com/fwlink/?linkid=862266) a stáhněte a uložte následující konfigurace ER: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml a dokončete kroky v postupu.
+Následující kroky vysvětlují, jak může uživatel služby Regulatory Configuration Service s rolí Správce systému nebo Návrhář elektronického výkaznictví navrhnout nové mapování modelu elektronického výkaznictví (ER) pomocí metadat v aplikaci Finance and Operations. Přístup k metadatům aplikace bude probíhat online pomocí aplikace připojené k RCS. Mapování modelu ER bude konfigurováno pro přístup k transakcím zahraničního obchodu. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v tématu [Vytvoření poskytovatelů konfigurace a jejich označení jako aktivních](er-configuration-provider-mark-it-active-2016-11.md). Pokud jste nedokončili kroky uvedené v tématu [Přístup k metadatům aplikace pomocí konfigurace ER](access-application-metadata-er-configuration.md), přejděte na stránku [Příklady elektronického výkaznictví](https://go.microsoft.com/fwlink/?linkid=862266) a stáhněte a uložte následující konfigurace ER: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml a dokončete kroky v postupu.
 
 ## <a name="prerequisites"></a>Předpoklady
 1. Přejděte na **Všechny pracovní prostory** > **Elektronické výkaznictví**. 
@@ -58,7 +58,7 @@ Následující kroky vysvětlují, jak může uživatel služby Regulatory Confi
 6. Klepněte na možnost **Nový**. 
 7. Do pole **Název** zadejte 'MyConnectedApp'. 
 8. Do pole **Aplikace** zadejte https:// mycompany.operations.dynamics.com. 
-9. Do pole **Tenant** zadejte ‘mycompany.onmicrosoft.com’. 
+9. Do pole **Klient** zadejte ‘mycompany.onmicrosoft.com’. 
 10. Klikněte na možnost **Uložit**. 
 11. Při kontrole připojení ke konfigurované aplikaci klikněte na stránce **Připojit ke vzdálené aplikaci na** odkaz **Kliknutím sem se připojte k vybrané aplikaci**. 
 12. Klikněte na **Zkontrolovat připojení**. 

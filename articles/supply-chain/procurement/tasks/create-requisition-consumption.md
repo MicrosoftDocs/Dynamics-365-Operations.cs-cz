@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2948282d8b40f7d34ffbae072a195cf954ab6e2
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 6ca44b4793f61d1067b9e0740b9a447d3a2363c2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738897"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147381"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Vytvoření žádanky pro spotřebu
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Toto téma popisuje postup vytváření žádosti. Ukazuje různé způsoby, jak vyhledávat produkty v zásobovacím katalogu a jak přidat produkt, který není ve vašem katalogu. Před zahájením tohoto postupu je nutné mít nastavenou zásadu nákupu s výchozím typem žádanky Spotřeba. Tento proces můžete projít pomocí ukázkových dat společnosti USMF nebo pomocí vlastních dat. Postup můžete provést pouze pomocí uživatelského profilu, který je nastavený jako pracovník. Tento úkol běžně provádí zaměstnanec. Role zabezpečení **Zaměstnanec** vám umožní provádět úkoly a pokud používáte data USMF, můžete se přihlásit jako **Alicia**.
 

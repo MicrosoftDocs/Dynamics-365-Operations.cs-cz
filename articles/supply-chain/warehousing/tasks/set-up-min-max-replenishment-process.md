@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
-ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
+ms.openlocfilehash: e8210369139b3c3d4123deff5279abb26b1cbb17
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "2559182"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145955"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Vytvoření procesu minimálního nebo maximálního doplňování
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje, jak nastavit nový proces doplnění využívající strategii doplnění metodou min/max. Pokud zásoby klesnou pod minimální úroveň, vytvoří se práce pro doplnění skladového místa. Postup také popisuje, jak používat pevná výdejní skladová místa a povolit tak doplnění i v případě, že zásoby klesnou pod minimální úroveň, a jak povolit pravidelné spuštění doplnění za pomoci dávkové úlohy. Tyto úkoly obvykle provádějí vedoucí skladu. Tento postup lze spustit s ukázkovými daty společnosti USMF základě vzorových hodnot níže nebo při použití vlastních dat. Jestliže používáte vlastní data, ujistěte se, že používáte sklad, který je povolen pro procesy správy skladu.
 
@@ -34,10 +34,10 @@ Tento postup popisuje, jak nastavit nový proces doplnění využívající stra
 ## <a name="create-a-fixed-picking-location"></a>Vytvoření pevně stanoveného výdejního skladového místa
 1. Přejděte na **Navigační podokno > Moduly > Řízení skladu > Nastavení > Sklad > Pevná umístění**. Tento úkol je volitelný pro doplnění metodou min/max, ale pokud používáte dlouhodobé výdejní skladové místo, úkol umožňuje provést doplnění i v případě, že hodnoty klesnou pod minimální úroveň, protože systém může určit, jaké položky je nutné doplnit, i když nejsou žádné k dispozici.
 2. Klepněte na možnost **Nový**.
-3. V poli **Číslo položky** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat položku A0001.  
-4. V poli **Lokalita** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat pracoviště 2.  
+3. V poli **Číslo položky** zadejte nebo vyberte hodnotu. Pokud používáte USMF, můžete vybrat položku A0001.  
+4. V poli **Lokalita** zadejte nebo vyberte hodnotu. Pokud používáte USMF, můžete vybrat pracoviště 2.  
 5. V poli **Sklad** zadejte nebo vyberte hodnotu. Pokud používáte USMF, můžete vybrat sklad 24.  
-6. V poli **Umístění** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat „CP-003“.  
+6. V poli **Umístění** zadejte nebo vyberte hodnotu. Pokud používáte USMF, můžete vybrat CP-003.  
 7. Zavřete stránku.
 
 ## <a name="create-a-replenishment-location-directive"></a>Vytvoření směrnice pro doplnění místa
@@ -46,7 +46,7 @@ Tento postup popisuje, jak nastavit nový proces doplnění využívající stra
 3. V **podokně akcí** klikněte na možnost **Nový**.
 4. Zadejte hodnotu do pole **Název**.
 5. V poli **Typ práce** vyberte „Vybrat“.
-6. V poli **Lokalita** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat pracoviště 2.  
+6. V poli **Lokalita** zadejte nebo vyberte hodnotu. Pokud používáte USMF, můžete vybrat pracoviště 2.  
 7. V poli **Sklad** zadejte nebo vyberte hodnotu. Pokud používáte USMF, můžete vybrat sklad 24.  
 8. Klikněte na možnost **Uložit**.
 9. V části **Řádky** klikněte na **Nový**.
@@ -70,7 +70,7 @@ Tento postup popisuje, jak nastavit nový proces doplnění využívající stra
 5. Klikněte na možnost **Uložit**.
 6. V části **Podrobnosti pracovní šablony** klikněte na **Nová**.
 7. V poli **Typ práce** vyberte „Vybrat“.
-8. V poli **ID pracovní třídy** zadejte nebo vyberte hodnotu. Mělo by se jednat o pracovní třídu související s doplněním. V případě, že používáte USMF, vyberte „Doplnění“.  
+8. V poli **ID pracovní třídy** zadejte nebo vyberte hodnotu. Mělo by se jednat o pracovní třídu související s doplněním. V případě, že používáte USMF, vyberte Doplnění.  
 9. V části **Podrobnosti pracovní šablony** klikněte na **Nová**.
 10. Označte na seznamu vybraný řádek.
 11. V poli **Typ práce** vyberte „Vložit“.
@@ -90,7 +90,7 @@ Tento postup popisuje, jak nastavit nový proces doplnění využívající stra
 9. Označte v seznamu vybraný řádek.
 10. V poli **Jednotka doplnění** zadejte nebo vyberte hodnotu. Vyberte například ks. Zadání tohoto nastavení je povinné. Umožňuje zadat jiné měrné jednotky pro doplnění ve srovnání s jednotkou zadanou pro minimální a maximální úroveň zásob v této šabloně.
 11. V poli **Šablona práce** zadejte nebo vyberte hodnotu. Vyberte šablonu práce, kterou jste vytvořili dříve.  
-12. V poli **Minimální množství** zadejte číslo. Výběr minimální množství, které spustí proces doplnění. Nastavte například hodnotu 50. Je možné ponechte nastavenou hodnotu 0, a to pokud se jedná o doplňování pevného skladového místa, a pokud je možnost **Doplnit** prázdná pevná skladová místa nastavena na hodnotu Ano. Rovněž kvůli efektivitě doporučujeme vybrat možnost **Doplnit pouze pevná skladová místa**.
+12. V poli **Minimální množství** zadejte číslo. Výběr minimální množství, které spustí proces doplnění. Nastavte například hodnotu 50. Je možné ponechte nastavenou hodnotu 0, a to pokud se jedná o doplňování pevného skladového místa, a pokud je možnost D**oplnit prázdná pevná skladová místa** nastavena na hodnotu „Ano“. Rovněž kvůli efektivitě doporučujeme vybrat možnost **Doplnit pouze pevná skladová místa**.
 13. V poli **Maximální množství** zadejte číslo. Nastavte například hodnotu 100.  
 14. V poli **Jednotka** zadejte nebo vyberte hodnotu. Přiřadíte jednotku pro minimální a maximální množství. Nastavte například ks.  
 15. Zaškrtněte políčko **Doplnit prázdná pevná skladová místa**. Zaškrtnutím tohoto políčka doplníte pevná skladovací místa, jsou-li prázdná. V opačném případě budou doplněna pouze místa, kde je množství na skladě.
@@ -109,7 +109,7 @@ Tento postup popisuje, jak nastavit nový proces doplnění využívající stra
 ## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a>Nastavení procesu doplnění tak, aby byl spouštěn jako dávková úloha
 1. Přejděte na **Správa skladu > Doplnění > Doplnění.** Na stránce Doplnění můžete nastavit doplnění tak, aby se spustilo jako dávková úloha, nebo aby se vyžadovalo její ruční spuštění.
 2. Klikněte na tlačítko **Filtr**.
-3. Označte v seznamu vybraný řádek.
+3. Označte na seznamu vybraný řádek.
 4. V poli **Kritéria** zadejte nebo vyberte hodnotu.
 5. Klikněte na tlačítko **OK**.
 6. Rozbalte sekci **Spustit na pozadí**.

@@ -3,7 +3,7 @@ title: Úprava výsledků doporučení produktů na základě umělé inteligenc
 description: V tomto tématu je vysvětleno, jak přizpůsobovat výsledky doporučení produktu na základě umělé inteligence-strojového učení (AI-ML) pro váš podnik.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4631ef03e1d73b70d80e774d1efa4909e619bbc0
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: afd9271c680b1f4248d6e60036f3e79d204dc3c2
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127921"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154334"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Úprava výsledků doporučení produktů na základě umělé inteligence a strojového učení
 
@@ -110,11 +110,9 @@ Chcete-li ručně přidat nebo odebrat výsledky pro produkt typu seed, postupuj
 
 [Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
 
-[Přidání seznamů doporučení na web e-Commerce](add-reco-list-to-page.md)
+[Přidání doporučení produktu v POS](product.md)
 
-[Přidat doporučení produktu v POS](product.md)
-
-[Přidání doporučení na obrazovku transakce](add-recommendations-control-pos-screen.md)
+[Přidání doporučení na obrazovku transakcí](add-recommendations-control-pos-screen.md)
 
 [Ručně vytvořit uspořádaná doporučení](create-editorial-recommendation-lists.md)
 

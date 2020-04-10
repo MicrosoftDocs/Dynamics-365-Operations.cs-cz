@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e35dbc489608c0aa3bfb13db5ae237f854612b1
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 954bfe3972e46eac803681a5a09e85661999f1d6
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844105"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149658"
 ---
 # <a name="create-a-request-for-quotation"></a>Vytvoření požadavku na nabídku
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tato procedura popisuje způsob ručního vytváření požadavku na nabídku. Toto by obvykle prováděl nákupčí. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Než začnete, je třeba nastavit typy oslovení. Po dokončení tohoto úkolu a po vytvoření a odeslání požadavku na nabídku můžete zadat odpovědí pro každého dodavatele, porovnat je a nejlepší smlouvu vybrat.
 

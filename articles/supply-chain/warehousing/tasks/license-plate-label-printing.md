@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed4fa28039c9320998f6524c9c9edb0a0301b7b0
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 545f1c15888bcd0b46e1028f58cbe3a274846c92
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1866819"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146021"
 ---
 # <a name="enable-license-plate-label-printing"></a>Povolení tisku popisku registrační značky
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tohle téma popisuje automatický tisk štítku Sériový nákladový kód kontejneru (SSCC) po vydání poslední položky ze skladu v procesu prodejního výdeje. Tento postup můžete projít v ukázkových datech společnosti USMF. Pokud jej používáte s použitím vlastních dat, je třeba mít k nastavenou číselnou řadu pro registračních značky vozidla. Je nutné nastavit tiskárnu štítků před zahájením této úlohy. Přejděte do nabídky Správa organizace > Nastavení > Jednotky Síťové tiskárny. V podokně Akce klikněte na Možnosti a poté klepněte na tlačítko Stáhnout instalační program agenta směrování dokumentů. Spusťte instalační program a ujistěte se, že máte nastavenu síťovou tiskárnu na hodnotu Aktivní předtím, než budete pokračovat v postupu.
 

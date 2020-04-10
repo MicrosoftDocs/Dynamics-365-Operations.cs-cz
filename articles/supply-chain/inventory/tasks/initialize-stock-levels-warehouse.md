@@ -17,22 +17,22 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbd6dc6c2e5b7c1abe6e19f00a5df285e0147a92
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 3f922620c7aeeafd8560316239875c1ec5486191
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845374"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145679"
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a>Inicializace úrovní zásob ve skladu
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje, jak manuálně aktualizovat zásoby na skladě pomocí deníku pohybu zásob. (Lze rovněž aktualizovat zásoby na skladě pomocí importu transakcí v datových entitách.) Tohoto průvodce můžete spustit v ukázkových datech společnosti USMF, kde všechny požadavky, jako je název deníku, nastavení položky, účetní profily nebo účty jsou k dispozici. Průvodce navrhuje hodnoty specifické pro položku a dimenze, které se používají. Pokud vyberete jinou položku, může být vyžadováno zadání hodnot pro různé dimenze.
 
 1. Přejděte do Řízení zásob > Položky deníku > Zboží > Pohyb.
 2. Klikněte na položku Nová.
-3. V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
+3. V poli Název kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.
 4. Vyberte pohyb zboží
     * Je vhodné použít jiné šablony názvů deníků pro jiné obchodní účely.  
 5. Klikněte na odkaz na vybraném řádku v seznamu.

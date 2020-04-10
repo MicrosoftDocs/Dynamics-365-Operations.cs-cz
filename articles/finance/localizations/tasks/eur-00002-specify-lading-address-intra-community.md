@@ -16,16 +16,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6eea2a905a59842b6f39c5b1e1c78ae6801b28e0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e555d6791f596850ba1ed718aa5593ee3f88bed9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175086"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144509"
 ---
 # <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a>EUR-00002 Zadání adresy nakládky pro intrakomunitární transakci
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tato procedura ukazuje, jak zadat adresu nakládky pro interní obchodní transakci. Německá firma si například objedná zboží od dodavatele s firemní adresou v Německu. Tento dodavatel má sklad v Itálii a odtud dodává zboží. Tato dodávka musí být vykázána v Intrastatu. Stejné chování platí pro vrácené položky odběratele.
 Postup se vztahuje na všechny evropské země/oblasti. Úkol byl vytvořen za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Německu. Před dokončením této procedury je nutné nakonfigurovat výkaznictví Intrastat. Tento postup je určen pouze pro účetní. Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.

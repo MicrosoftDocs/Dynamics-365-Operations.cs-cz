@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: faf43eb15283ffd7e36ad38728f166884dddcd85
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 4ac87356f46edc118a592acd393823603815917a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844818"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150098"
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Vytvoření hierarchie klasifikace produktu
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje, jak vytvořit novou hierarchii kategorií a přiřadit typ hierarchie kódů komodit. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro správce kategorií.
 

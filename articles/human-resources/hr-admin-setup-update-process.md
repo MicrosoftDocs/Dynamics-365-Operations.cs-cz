@@ -3,7 +3,7 @@ title: Aktualizace procesu
 description: Microsoft Dynamics 365 Human Resources je skutečný software poskytovaný jako služba (SaaS), který poskytuje průběžné a automatické aktualizace při změnách aplikací a platforem.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -16,14 +16,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 267682f4497bacf70f93840a948d0e525dfa4aa1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 424027e82717b8636d59289b28978d6ce3c6db4d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092194"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154498"
 ---
 # <a name="update-process"></a>Aktualizace procesu
 
@@ -37,52 +37,39 @@ Aktualizace jsou vydávány v pravidelných intervalech pro všechna prostředí
 
 Aktualizace aplikace Human Resources se automaticky použijí na všechna prostředí. Aplikace Human Resources poskytuje dva typy vydání:
 
-- **Aktualizace služeb**: Týdenní aktualizace, které zahrnují opravy chyb a nové funkce. Aktualizace služeb také zahrnují platné aktualizace platformy při jejich vydání. Chcete-li získat představu o tom, kdy jsou aktualizace platformy vydávány, viz [Tabulku 3: Vydání platformy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Týdenní aktualizace jsou obvykle vydávány ve středu. Další informace o týdenních aktualizacích viz [Co je nového a co se změnilo v produktu Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365/talent/whats-new).
+- **Aktualizace služeb**: Dvoutýdenní aktualizace, které zahrnují opravy chyb a nové funkce. Aktualizace služeb také zahrnují platné aktualizace platformy při jejich vydání. Chcete-li získat představu o tom, kdy jsou aktualizace platformy vydávány, viz [Tabulku 3: Vydání platformy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Čtrnáctidenní intervaly aktualizace mají průběžné globální zavedení mezi oblastmi. Další informace o čtrnáctidenních aktualizacích viz [Co je nového a co se změnilo v produktu Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
-    Všechna podporovaná datacentra se aktualizují týdně, není-li uvedeno jinak. Týdenní aktualizace obvykle začínají ve středu a jsou dokončeny do neděle. Do týdenních aktualizací jsou zahrnuty USA, Austrálie, Evropa, Spojené království, Asie a Kanada. 
+    Všechna podporovaná datacentra se aktualizují každé dva týdny, není-li uvedeno jinak. Do čtrnáctidenních aktualizací jsou zahrnuty USA, Austrálie, Evropa, Spojené království, Asie a Kanada. 
 
-- **Aktualizace řešení Common Data Service**: Tyto aktualizace se uskutečňují podle potřeby, přibližně jednou za šest týdnů. Zahrnují nové entity a změny existujících entit ve službě Common Data Service. Tyto aktualizace jsou vydávány pro stejné regiony jako týdenní aktualizace a jejich replikace do všech datacenter trvá přibližně šest týdnů. Aktualizace řešení mohou nebo nemusí být vydávány současně s týdenními aktualizacemi služeb.
-
-V následující tabulce je uvedena ukázka plánu:
-
-| Týden | Typ aktualizace |
-| --- | --- |
-| 1 | Aktualizace služby (všechny regiony) |
-| 2 | Aktualizace služby (všechny regiony) + aktualizace řešení (regiony pro týden č. 1) |
-| 3 | Aktualizace služby (všechny regiony) + aktualizace řešení (regiony pro týden č. 2) |
-| 4 | Aktualizace služby (všechny regiony) + aktualizace řešení (regiony pro týden č. 3) |
-| 5 | Aktualizace služby (všechny regiony) + aktualizace řešení (regiony pro týden č. 4) |
-| 6 | Aktualizace služby (všechny regiony) + aktualizace řešení (regiony pro týden č. 5) |
-| 7 | Aktualizace služby (všechny regiony) + aktualizace řešení (regiony pro týden č. 6) |
-| 8 | Aktualizace služby (všechny regiony) |
+- **Aktualizace řešení Common Data Service**: Tyto aktualizace se uskutečňují podle potřeby, přibližně jednou za šest týdnů. Zahrnují nové entity a změny existujících entit ve službě Common Data Service. Tyto aktualizace jsou vydávány pro stejné regiony jako čtrnáctidenní aktualizace a jejich replikace do všech datacenter trvá přibližně šest týdnů. Aktualizace řešení mohou nebo nemusí být vydávány současně s čtrnáctidenními aktualizacemi služeb.
 
 > [!NOTE]
 > Aktualizace řešení jsou po vydání k dispozici ve všech datacentrech. Pokud nechcete čekat na automatickou replikaci aktualizací, můžete tyto aktualizace provést ručně v jakémkoli prostředí, v libovolném datacentru.
 
 V případě potřeby poskytuje aplikace Human Resources také následující typy oprav:
 
-- **Revize (oprava hotfix)**: opravy chyb, které mohou být provedeny buďto současně s vydáním týdenní aktualizace služby, nebo odděleně
+- **Revize (oprava hotfix)**: opravy chyb, které mohou být provedeny buďto současně s vydáním čtrnáctidenní aktualizace služby, nebo odděleně
 
-- **Nouzová oprava**: opravy hotfix prováděné preventivně a v reakci na problém, které jsou svojí povahou samostatné, mohou zahrnovat pouze změny konfigurace nebo změny kódu pro odstranění aktuálních problémů a mohou být prováděny odděleně od vydání týdenní aktualizace služby
+- **Nouzová oprava**: opravy hotfix prováděné preventivně a v reakci na problém, které jsou svojí povahou samostatné, mohou zahrnovat pouze změny konfigurace nebo změny kódu pro odstranění aktuálních problémů a mohou být prováděny odděleně od vydání čtrnáctidenní aktualizace služby
 
 Vydání jsou kontrolována, testována a ověřována v interním prostředí. Po schválení jsou sestavení nasazena do výroby.
 
-## <a name="exceptions-in-2019"></a>Výjimky v roce 2019
+## <a name="release-cadence-exceptions-in-2020"></a>Uvolnit výjimky frekvence v 2020
 
 Následující data představují výjimky z plánu pravidelných vydání:
 
-| Datum | Popis |
+| Datum | popis |
 | --- | --- |
-| Týden zahrnující 25. listopad | Žádné aktualizace |
-| Týden zahrnující 16. prosinec | Pouze menší aktualizace |
-| Týden zahrnující 23. prosinec | Žádné aktualizace |
-| Týden zahrnující 30. prosinec | Žádné aktualizace |
+| Týden zahrnující 23. listopad | Žádné aktualizace |
+| Týden zahrnující 14. prosinec | Pouze menší aktualizace |
+| Týden zahrnující 21. prosinec | Žádné aktualizace |
+| Týden zahrnující 28. prosinec | Žádné aktualizace |
 
 ## <a name="communications"></a>Sdělení
 
 Zde uvádíme, co bylo provedeno v případě aplikace Human Resources a co jsme vydali v následujících místech:
 
-- [Dynamics 365 Human Resources plán](https://dynamics.microsoft.com/roadmap/talent/)
+- [Dynamics 365 Human Resources plán](https://dynamics.microsoft.com/roadmap/human-resources/)
 
 - [Plány vydání Dynamics 365](https://docs.microsoft.com/dynamics365/release-plans/)
 
@@ -114,7 +101,7 @@ Při testování předběžných verzí funkcí nebo při zkoušení nových fun
 
 ## <a name="see-also"></a>Viz také
 
-- [Služba Dynamics 365 a plány vydání Power Platform](https://docs.microsoft.com/dynamics365/release-plans)
-- [Co je nového nebo co se změnilo v aplikaci Human Resource služby Dynamics 365](hr-admin-whats-new.md)
-- [Zásady životního cyklu softwaru](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Služba Dynamics 365 a plány vydání Power Platform](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Co je nového nebo co se změnilo v aplikaci Human Resource služby Dynamics 365](hr-admin-whats-new.md)</br>
+[Zásady životního cyklu softwaru](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 

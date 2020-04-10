@@ -3,7 +3,7 @@ title: Přidání kódu skriptu na webové stránky pro podporu telemetrie
 description: V tomto tématu je popsán postup přidání kódu skriptu na straně klienta na stránky webu za účelem podpory kolekce telemetrie na straně klienta.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 674d00faf1b30f87a0b0062129e1b9fbff955dd4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001270"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154079"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Přidání kódu skriptu na webové stránky pro podporu telemetrie
-
 
 [!include [banner](includes/banner.md)]
 
@@ -38,27 +37,74 @@ Služba Web Analytics je základní nástroj, který umožňuje pochopit, jakým
 > [!NOTE]
 > Pokyny v tomto tématu se vztahují také na jiné vlastní funkce na straně klienta, které řešení Microsoft Dynamics 365 Commerce nativně nenabízí.
 
-## <a name="create-a-reusable-fragment-for-your-script-code"></a>Vytvoření opakovaně použitelného fragmentu kódu skriptu
+## <a name="create-a-reusable-page-fragment-for-your-script-code"></a>Vytvoření opakovaně použitelného fragmentu stránky pro váš kód skriptu
 
-Po vytvoření fragmentu kódu skriptu jej lze opakovaně použít na všech stránkách vašeho webu.
+Fragment stránky umožňuje opakované použití vloženého nebo vnějšího kódu skriptu na všech stránkách vašeho webu bez ohledu na použitou šablonu.
 
-1. Přejde na **Fragmenty \> Nový fragment stránky**.
-2. Vyberte možnost **Externískript**, zadejte název fragmentu a poté klikněte na tlačítko **OK**.
-3. V hierarchii fragmentů vyberte pro fragment, který jste právě vytvořili, podřízený modul **Injektor skriptu**.
-4. V podokně vlastností vpravo přidejte skript na straně klienta a nastavte další možnosti konfigurace podle potřeby.
+### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a>Vytvoření opakovaně použitelného fragmentu stránky pro váš kód vloženého skriptu
 
-## <a name="add-the-fragment-to-templates"></a>Přidání fragmentu do šablon
+Chcete-li vytvořit opakovaně použitelný fragment stránky pro vložený kód skriptu v rámci konfigurátoru webu, postupujte podle následujících kroků.
+
+1. Přejděte na **Fragmenty stránky** a pak vyberte **Nový**.
+1. V dialogovém okně **Nový fragment stránky** vyberte **vložený skript**.
+1. V části **Název fragmentu stránky** zadejte název fragmentu a poté vyberte **OK**.
+1. V rámci vytvořeného fragmentu stránky vyberte modul **Výchozí vložený skript**.
+1. V podokně vlastností vpravo v části **vložený skript**zadejte skript na straně klienta. Poté nakonfigurujte další možnosti podle potřeby.
+1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
+1. Zvolte **Publikovat**.
+
+### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a>Vytvoření opakovaně použitelného fragmentu stránky pro váš kód externího skriptu
+
+Chcete-li vytvořit opakovaně použitelný fragment stránky pro externí kód skriptu v rámci konfigurátoru webu, postupujte podle následujících kroků.
+
+1. Přejděte na **Fragmenty stránky** a pak vyberte **Nový**.
+1. V dialogovém okně **Nový fragment stránky** vyberte **Externí skript**.
+1. V části **Název fragmentu stránky** zadejte název fragmentu a poté vyberte **OK**.
+1. V rámci vytvořeného fragmentu stránky vyberte modul **Výchozí externí skript**.
+1. V podokně vlastností vpravo v části **Zdroj skriptu** přidejte externí nebo relativní adresu URL pro externí zdroj skriptu. Poté nakonfigurujte další možnosti podle potřeby.
+1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
+1. Zvolte **Publikovat**.
+
+## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a>Přidat fragment stránky, který zahrnuje kód skriptu do šablony
+
+Chcete-li přidat fragment stránky, který obsahuje kód skriptu v šabloně v rámci konfigurátoru webu, postupujte podle následujících kroků.
 
 1. Přejděte na **Šablony** a otevřete šablonu pro stránky, na které chcete přidat kód skriptu.
-2. V levém podokně rozbalte hierarchii šablon, aby se zobrazila pozice **Hlavička HTML**.
-3. Vyberte tlačítko se třemi tečkami (**...**) vedle pozice **Hlavička HTML** a poté vyberte možnost **Přidat fragment**.
-4. Vyberte fragment, který jste pro kód skriptu vytvořili.
-5. Uložte šablonu a vraťte ji se změnami.
+1. V levém podokně rozbalte hierarchii šablon, aby se zobrazila pozice **Hlavička HTML**.
+1. Ve sůptu **Hlavička HTML** vyberte tlačítko se třemi tečkami (**...**) a poté vyberte možnost **Přidat fragment stránky**.
+1. Vyberte fragment, který jste pro kód skriptu vytvořili.
+1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
+1. Zvolte **Publikovat**.
 
-> [!NOTE]
-> Po dokončení je nutné publikovat fragment a hlavní šablonu. 
+## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Přidání externího skriptu nebo vloženého skriptu přímo do šablony
 
-## <a name="additional-resources"></a>Další zdroje
+Chcete-li vložit vložený nebo externí skript přímo do sady stránek, která je řízena jedinou šablonou, nemusíte nejprve vytvořit fragment stránky.
+
+### <a name="add-an-inline-script-directly-to-a-template"></a>Přidání vloženého skriptu přímo do šablony
+
+Chcete-li přidat vložený skript přímo do šablony v rámci konfigurátoru webu, postupujte podle následujících kroků.
+
+1. Přejděte na **Šablony** a otevřete šablonu pro stránky, na které chcete přidat kód skriptu.
+1. V levém podokně rozbalte hierarchii šablon, aby se zobrazila pozice **Hlavička HTML**.
+1. Ve sůptu **Hlavička HTML** vyberte tlačítko se třemi tečkami (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte **vložený skript**.
+1. V podokně vlastností vpravo v části **vložený skript**zadejte skript na straně klienta. Poté nakonfigurujte další možnosti podle potřeby.
+1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
+1. Zvolte **Publikovat**.
+
+### <a name="add-an-external-script-directly-to-a-template"></a>Přidání externího skriptu přímo do šablony
+
+Chcete-li přidat externí skript přímo do šablony v rámci konfigurátoru webu, postupujte podle následujících kroků.
+
+1. Přejděte na **Šablony** a otevřete šablonu pro stránky, na které chcete přidat kód skriptu.
+1. V levém podokně rozbalte hierarchii šablon, aby se zobrazila pozice **Hlavička HTML**.
+1. Ve sůptu **Hlavička HTML** vyberte tlačítko se třemi tečkami (**...**) a poté vyberte možnost **Přidat modul**.
+1. V dialogovém okně **Přidat modul** vyberte **Externí skript**.
+1. V podokně vlastností vpravo v části **Zdroj skriptu** přidejte externí nebo relativní adresu URL pro externí zdroj skriptu. Poté nakonfigurujte další možnosti podle potřeby.
+1. Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.
+1. Zvolte **Publikovat**.
+
+## <a name="additional-resources"></a>Další prostředky
 
 [Přidání loga](add-logo.md)
 
@@ -73,4 +119,3 @@ Po vytvoření fragmentu kódu skriptu jej lze opakovaně použít na všech str
 [Přidání oznámení o vlastnických právech](add-copyright-notice.md)
 
 [Přidání jazyků na web](add-languages-to-site.md)
-

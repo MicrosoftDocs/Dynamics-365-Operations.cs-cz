@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143782413359d87f3d4c46940f9a699fbf0e8f90
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 6d292d028ebc87892760524dbd7709e8f181fc5d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769802"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141803"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Návrh konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 K provedení kroků v tomto postupu musíte nejprve dokončit postup "Elektronické výkaznictví - Vytvoření poskytovatele konfigurace a jeho označení jako aktivního." Tento postup vysvětluje proces navrhování konfigurací elektronického výkaznictví pro generování dokumentů v aplikacích Microsoft Excel nebo Word obsahujících vložené obrázky. V tomto postupu vytvoříte požadované konfigurace elektronického výkaznictví pro vzorovou společnost Litware, Inc. Tyto kroky lze dokončit pomocí sady dat USMF. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Dříve než začnete, stáhněte a uložte soubory uvedené v tématu nápovědy [Vložení obrázků a tvarů v obchodních dokumentech generovaných pomocí elektronického výkaznictví](../electronic-reporting-embed-images-shapes.md). Soubory jsou: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png a Cheque template Word.docx.
 
 ## <a name="verify-prerequisites"></a>Kontrola předpokladů  
  1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.  
- 2. Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako Aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního."   
+ 2. Ujistěte se, že poskytovatel konfigurace pro vzorovou společnost ‘Litware, Inc.’ je k dispozici a je označen jako Aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního".   
  3. Klikněte na Konfigurace výkaznictví.  
  
 ## <a name="add-a-new-er-model-configuration"></a>Přidání nové konfigurace ER modelu  
@@ -42,7 +42,7 @@ K provedení kroků v tomto postupu musíte nejprve dokončit postup "Elektronic
  6. Načtený model bude použit jako datový zdroj informací pro generování dokumentů, které obsahují obrázky v aplikaci Excel a Word.  
 
 ## <a name="add-a-new-er-format-configuration"></a>Přidání nové konfigurace formátu ER  
- 1. Namísto vytváření nových formátů můžete načíst dříve uložený konfigurační soubor formátu ER (Tisk šeků format.xml). Tento soubor obsahuje ukázkové rozložení formátu tisku šeků pomocí předtištěného formuláře a mapování tohoto formátu na model pro datový model šeků.   
+ 1. Namísto vytváření nových formátů můžete načíst dříve uložený konfigurační soubor formátu ER (Tisk šeků format.xml). Tento soubor obsahuje ukázkové rozložení formátu tisku šeků pomocí předtištěného formuláře a mapování tohoto formátu na model pro 'datový model šeků'.   
  2. Klikněte na Směna.  
  3. Klikněte na Načíst ze souboru XML.  
  4. Klepněte na tlačítko Procházet a vyberte soubor Cheques printing format.xml.   

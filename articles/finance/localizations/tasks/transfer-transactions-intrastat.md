@@ -16,16 +16,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 919c3cd755458f46a9f083415aa196c703fcf338
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6fa397eb8dbce9418ca3da010e64165e0d399502
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183471"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3139077"
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Převod transakcí do systému Intrastat
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup vás provede nastavením parametrů systému Intrastat a převodem transakcí do systému Intrastat. Tato procedura byla vytvořena pomocí ukázkových dat společnosti DEMF.
 

@@ -3,7 +3,7 @@ title: Konfigurace integrace s aplikací Finance
 description: Tento článek popisuje funkce, které jsou k dispozici pro integraci z aplikace Dynamics 365 Human Resources a Dynamics 365 Finance.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,73 +18,75 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2e7070f627654c9eb889f3e0ee27e37681db0502
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 1558d050627c8dc64727884901ed0d0716df0c50
+ms.sourcegitcommit: f481dfd6bf93bb3e03a7bd9a765e2cfd14305d02
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008327"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3169270"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurace integrace s aplikací Finance
 
-Tento článek popisuje funkce, které jsou k dispozici pro integraci z aplikace Dynamics 365 Human Resources a Dynamics 365 Finance. Šablona Human Resources do Finance, která je k dispozici s [integrátorem dat](https://docs.microsoft.com/powerapps/administrator/data-integrator), umožňuje tok dat pro úlohy, pozice a pracovníky. Data přecházejí z aplikace Human Resources do aplikace Finance. Šablona neposkytuje možnost zpětného přetékání dat z Finance do man Resources. 
+Chcete-li integrovat Dynamics 365 Human Resources s Dynamics 365 Finance, můžete použít šablonu Human Resources do Finance v [Integrátoru dat](https://docs.microsoft.com/powerapps/administrator/data-integrator). Šablona Human Resources do Finance umožňuje tok dat pro úlohy, pozice a pracovníky. Šablona umožňuje tok dat z Human Resources do Finance, ale neumožňuje data tok z Finance do Human Resources.
 
-![Tok integrace z Human Resources do Finance](./media/TalentFinOpsFlow.png)
+![Tok integrace z Human Resources do Finance](./media/hr-admin-integration-finance-flow.png)
 
-Řešení Human Resources do Finance poskytuje následující typy synchronizace dat. 
+Řešení Human Resources do Finance poskytuje následující typy synchronizace dat:
 
-- Udržujte úlohy v Human Resources a synchronizujte je z Human Resources do Finance.
-- Udržujte pozice a přiřazení pozice v Human Resources a synchronizujte je z Human Resources do Finance.
-- Udržujte zaměstnání v Human Resources a synchronizujte je z Human Resources do Finance.
-- Udržujte pracovníky a adresy pracovníků v Human Resources a synchronizujte je z Human Resources do Finance.
+- Udržujte úlohy v Human Resources a synchronizujte je z Human Resources do Finance
+- Udržujte pozice a přiřazení pozice v Human Resources a synchronizujte je z Human Resources do Finance
+- Udržujte zaměstnání v Human Resources a synchronizujte je z Human Resources do Finance
+- Udržujte pracovníky a adresy pracovníků v Human Resources a synchronizujte je z Human Resources do Finance
 
 ## <a name="system-requirements-for-human-resources"></a>Systémové požadavky pro Human Resources
+
 Řešení integrace vyžaduje následující verze aplikací Human Resources a Finance: 
-- Dynamics 365 Human Resources na Common Data Service.
-- Dynamics 365 Finance verze 7.2 a novější.
+
+- Dynamics 365 Human Resources u Common Data Service
+- Dynamics 365 Finance verze 7.2 a novější
 
 ## <a name="template-and-tasks"></a>Šablona a úkoly
 
-Pro přístup k šabloně proveďte následující.
+Chcete-li získat přístup k Human Resources do Finance.
+
 1. Otevřete [centrum pro správu Power Apps](https://admin.powerapps.com/). 
-1. Vyberte **Projekty**a v pravém horním rohu vyberte **Nový projekt**, abyste zvolili veřejné šablony. Pro každou právnickou osobu, kterou chcete integrovat do aplikace Finance, bude nutné vytvořit nový projekt.
 
-Následující šablona slouží k synchronizaci záznamů z Human Resources do Finance.
+2. Vyberte **Projekty** a poté v pravém horním rohu vyberte možnost **Nový projekt**. Vytvořte nový projekt pro každou právnickou osobu, kterou chcete integrovat do aplikace Finance.
 
-- **Název šablony v integraci dat:** Human Resources (Human Resources Common Data Service do Finance)
+3. Vyberte **Human Resources (Human Resources Common Data Service do Finance**), chcete-li synchronizovat záznamy z modulu Human Resources do Finance.
 
-  > [!NOTE]
-  > Název úkolu obsahuje entity použité v jednotlivých aplikacích. Zdroj (Human Resources) je nalevo a cíl (Finance and Operations) je napravo.
+Následující šablony používají základní úlohy k synchronizaci záznamů z Human Resources do Finance:
 
-Následující základní úlohy slouží k synchronizaci záznamů z Human Resources do Finance.
-- Pracovní funkce do pracovní funkce kompenzace
-- Oddělení do provozní jednotky
-- Typy práce do typu práce kompenzace
-- Práce do prací
-- Práce do podrobnosti práce
-- Typy pozic do typu pozice
-- Pracovní pozice do základní pozice
-- Pracovní pozice do podrobností pozice
-- Pracovní pozice do trvání pozice
-- Pracovní pozice do hierarchie pozic
-- Pracovníci do pracovníka
-- Zaměstnání do zaměstnání
-- Zaměstnání do podrobnosti zaměstnání
-- Přiřazení pracovníka pozice do přiřazení pracovníka pozice
-- Adresy pracovníka na poštovní adresu pracovníka V2
+- **Pracovní funkce do pracovní funkce kompenzace**
+- **Oddělení do provozní jednotky**
+- **Typy práce do typu práce kompenzace**
+- **Práce do prací**
+- **Práce do podrobnosti práce**
+- **Typy pozic do typu pozice**
+- **Pracovní pozice do základní pozice**
+- **Pracovní pozice do podrobností pozice**
+- **Pracovní pozice do trvání pozice**
+- **Pracovní pozice do hierarchií pozic**
+- **Pracovníci do pracovníka**
+- **Zaměstnání do zaměstnání**
+- **Zaměstnání do podrobnosti zaměstnání**
+- **Přiřazení pracovníka pozice do přiřazení pracovníka pozice**
+- **Adresy pracovníka na poštovní adresu pracovníka V2**
 
 ## <a name="template-mappings"></a>Mapování šablony
 
+V následujících tabulkách mapování šablony název úlohy obsahuje entity použité v jednotlivých aplikacích. Zdroj (Human Resources) je nalevo a cíl (Finance) je napravo.
+
 ### <a name="job-functions-to-compensation-job-function"></a>Pracovní funkce do pracovní funkce kompenzace
 
-| Entita Common Data Service (zdroj)                 | Entita Finance and Operations (cíl) |
+| Entita Common Data Service (zdroj) | Entita Finance (cíl) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   Název funkce)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
-| cdm_description   (cdm_description) | DESCRIPTION   (POPIS)                 |
+| cdm_description   (cdm_description) | DESCRIPTION   (DESCRIPTION)                 |
 
 ### <a name="departments-to-operating-unit"></a>Oddělení do provozní jednotky
 
-| Entita Common Data Service (zdroj)                           | Entita Finance and Operations (cíl) |
+| Entita Common Data Service (zdroj)           | Entita Finance (cíl) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NÁZEV)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -93,7 +95,7 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 
 ### <a name="job-types-to-compensation-job-type"></a>Typy práce do typu práce kompenzace
 
-| Entita Common Data Service (zdroj)                   | Entita Finance and Operations (cíl) |
+| Entita Common Data Service (zdroj)   | Entita Finance (cíl) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | DESCRIPTION   (POPIS)                 |
@@ -101,7 +103,7 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 
 ### <a name="jobs-to-jobs"></a>Práce do prací
 
-| Entita Common Data Service (zdroj)                                           | Entita Finance and Operations (cíl)           |
+| Entita Common Data Service (zdroj)                           | Entita Finance (cíl)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -111,18 +113,18 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 
 ### <a name="jobs-to-job-detail"></a>Práce do podrobnosti práce
 
-| Entita Common Data Service (zdroj)                                             | Entita Finance and Operations (cíl) |
+| Entita Common Data Service (zdroj)                             | Entita Finance (cíl) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Job Type (Job Type Name))             | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_jobfunctionid.cdm_name   (Pracovní funkce (Název pracovní funkce)) | FUNCTIONID   (FUCNTIONID)                   |
 | cdm_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                     |
 | cdm_validto (Valid To)                                        | VALIDTO (VALIDTO)                           |
-| cdm_defaultfulltimeequivalent   (Default Fulltime Equivalent)   | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)   |
+| cdm_defaultfulltimeequivalent   (Default Full-time Equivalent)   | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)   |
 
 ### <a name="position-types-to-position-type"></a>Typy pozic do typu pozice
 
-| Entita Common Data Service (zdroj)                       | Entita Finance and Operations (cíl) |
+| Entita Common Data Service (zdroj)       | Entita Finance (cíl) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | DESCRIPTION   (DESCRIPTION)                 |
@@ -130,13 +132,13 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 
 ### <a name="job-positions-to-base-position"></a>Pracovní pozice do základní pozice
 
-| Entita Common Data Service (zdroj)                           | Entita Finance and Operations (cíl) |
+| Entita Common Data Service (zdroj)           | Entita Finance (cíl) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Pracovní pozice do podrobností pozice
 
-| Entita Common Data Service (zdroj)                                                      | Entita Finance and Operations (cíl)       |
+| Entita Common Data Service (zdroj)              | Entita Finance (cíl)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Job Position Number)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Job (Name))                                        | JOBID (JOBID)                                    |
@@ -150,15 +152,15 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 
 ### <a name="job-positions-to-position-durations"></a>Pracovní pozice do trvání pozice
 
-| Entita Common Data Service (zdroj)                             | Entita Finance and Operations (cíl) |
+| Entita Common Data Service (zdroj)             | Entita Finance (cíl) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number)   | POSITIONID (POSITIONID)                      |
 | Calculated   Activation (Vypočtená aktivace) | VALIDFROM (VALIDFROM)                        |
 | Calculated   Retirement (vypočtený důchod) | VALIDTO (VALIDTO)                         |
 
-### <a name="job-positions-to-position-hiearchies"></a>Pracovní pozice do hierarchie pozic
+### <a name="job-positions-to-position-hierarchies"></a>Pracovní pozice do hierarchií pozic
 
-| Entita Common Data Service (zdroj)                                                                           | Entita Finance and Operations (cíl) |
+| Entita Common Data Service (zdroj)        | Entita Finance (cíl) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -168,7 +170,7 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 
 
 ### <a name="workers-to-worker"></a>Pracovníci do pracovníka
-| Entita Common Data Service (zdroj)                           | Entita Finance and Operations (cíl)       |
+| Entita Common Data Service (zdroj)           | Entita Finance (cíl)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
 | cdm_gender   (cdm_gender)                     | GENDER (POHLAVÍ)                                   |
@@ -187,7 +189,7 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 
 ### <a name="employments-to-employment"></a>Zaměstnání do zaměstnání
 
-| Entita Common Data Service (zdroj)                                             | Entita Finance and Operations (cíl) |
+| Entita Common Data Service (zdroj)                             | Entita Finance (cíl) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -197,7 +199,7 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 
 ### <a name="employments-to-employment-detail"></a>Zaměstnání do podrobnosti zaměstnání
 
-| Entita Common Data Service (zdroj)                                             | Entita Finance and Operations (cíl)   |
+| Entita Common Data Service (zdroj)                             | Entita Finance (cíl)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -215,7 +217,7 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Přiřazení pracovníka pozice do přiřazení pracovníka pozice
 
-| Entita Common Data Service (zdroj)                                             | Entita Finance and Operations (cíl)   |
+| Entita Common Data Service (zdroj)                             | Entita Finance (cíl)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber   (Job Position Number)                   | POSITIONID(POSITIONID)                        |
@@ -224,7 +226,7 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Adresy pracovníka na poštovní adresu pracovníka V2
 
-| Entita Common Data Service (zdroj)                                             | Entita Finance and Operations (cíl)   |
+| Entita Common Data Service (zdroj)                             | Entita Finance (cíl)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
@@ -239,9 +241,10 @@ Následující základní úlohy slouží k synchronizaci záznamů z Human Reso
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSDESCRIPTION(ADDRESSDESCRIPTION)        |
 
 ## <a name="integration-considerations"></a>Předpoklady integrace
-Při integraci dat z Human Resources do Finance se integrace pokusí spárovat záznamy na základě ID. Pokud dojde ke shodě, budou data v aplikaci Finance budou přepsána hodnotami v aplikaci Human Resources. K problému však může dojít, pokud se jedná o různé záznamy a bylo vygenerováno stejné ID v Human Resources nebo Finance na základě příslušné číselné řady.
 
-Oblasti, ve kterých se to může stát, jsou pracovník, který používá osobní číslo k provedení párování, a pozic. Práce nepoužívají číselné řady. V důsledku toho, pokud se stejné ID práce nachází jak v Human Resources, tak ve Finance, informace z Human Resources tyto informace Dynamics 365 Finance přepíší. 
+Integrace dat z Human Resources do Finance se pokusí spárovat záznamy na základě ID. Pokud dojde ke shodě, budou data v aplikaci Finance budou přepsána hodnotami v aplikaci Human Resources. K problému však může dojít, pokud se jedná o různé záznamy a bylo vygenerováno stejné ID v Human Resources nebo Finance na základě příslušné číselné řady.
+
+Problém může nastat u **Pracovníka**, který používá **Osobní číslo** k provedení párování, a **Pozic**. Práce nepoužívají číselné řady. V důsledku toho, pokud stejné ID práce existuje jak v Human Resources, tak ve Finance, informace z Human Resources tyto informace Dynamics 365 Finance přepíší. 
 
 Chcete-li zabránit problémům s duplicitními ID, můžete buď přidat předponu k [číselné řadě](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), nebo nastavit počáteční číslo pro číselnou řadu, která je nad rozsahem jiného systému. 
 
@@ -250,5 +253,3 @@ ID místa použité pro adresu pracovníka není součástí číselné řady. J
 Na následujícím obrázku je příklad mapování šablony v integrátoru dat. 
 
 ![Mapování šablony](./media/IntegrationMapping.png)
-
-

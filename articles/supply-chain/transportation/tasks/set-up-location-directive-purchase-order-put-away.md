@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aea3f08ea2d1bd584448c3033aea41eca2a0e3ce
-ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
+ms.openlocfilehash: 54c75696f7147a7a4eb7b9d984936af9c28ef501
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "1870909"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146208"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Nastavení směrnice skladového místa pro vyskladnění v rámci nákupní objednávky
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Toto téma vysvětluje, jak nastavit jednoduchou směrnici umístění. Uvedený příklad vytvoří směrnici skladového místa, který má být použita k určení umístění položek, které byly přijaty pro nákupní objednávku. Tohoto průvodce úkolem můžete použít s uvedenými daty za použití ukázkových dat společnosti USMF. Předpoklady: Je nutné vytvořit dispoziční kód. V tomto postupu používáme dispoziční kód Relabel. Pokud vytváříte směrnici skladového místa ve vlastních datech, je nutné nastavit pro sklad a položky pokročilou správu skladu. Tento postup je určen pro vedoucího skladu.
 

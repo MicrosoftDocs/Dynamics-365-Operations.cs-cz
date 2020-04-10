@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0abbce32e2fabe860077502875b92f93ea0ea95c
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 488fb1bea2d2ae06c92c20afdd98735928eee3b8
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867070"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147289"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Vytvoření opakované nákupní objednávky
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Toto téma popisuje, jak vytvořit opakující se nákupní objednávky zkopírováním řádků z předchozího dokumentu nákupní objednávky do nové či stávající nákupní objednávky. Existují dva způsoby vytvoření opakovaných objednávek. Můžete použít akce dostupné na úrovni dokumentů v podokně akcí, nebo můžete použít akce z podrobností o řádku. Akce na úrovni dokumentu jsou určeny především k vytváření nové nákupní objednávky přidáním řádků a informace do záhlaví z jiné objednávky, zatímco akce z podrobností řádku se používá zejména pro přidávání řádků do existující objednávky. Příklad v této příručce lze použít v rámci ukázkových dat společnosti USMF. Tento úkol obvykle provádí nákupčí.
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7549d0c2a3cfa0feb26a641bbc41702b4b21158
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7e32decdd13cb578c1ac026f25a56b37ff7231a9
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833947"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146461"
 ---
 # <a name="fulfill-sales-agreements"></a>Plnění prodejních smluv
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje, jak plnit prodejní smlouvy přidružením prodejní objednávky. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Před spuštěním této příručky, zkontrolujte, že máte platnou prodejní smlouvu typu „Závazek – hodnota produktu“. Případně můžete spustit průvodce úkoly nazvaného „Vytvořit prodejní smlouvy“.  
 

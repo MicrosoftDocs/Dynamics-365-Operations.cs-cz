@@ -3,7 +3,7 @@ title: Identifikátory produktu
 description: Toto téma obsahuje informace o různých typech identifikátorů produktu a vysvětluje přidání identifikátorů produktu do dat produktu.
 author: cvocph
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
-ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
+ms.openlocfilehash: 0aa8baf5802ccdd9a502e2a7d291a76fc4afe932
+ms.sourcegitcommit: d91d96c98b31ae59bc82ec91efbb7da86ffb25fa
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095610"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172018"
 ---
-# <a name="product-identifiers"></a>Identifikátory produktu 
+# <a name="product-identifiers"></a>Identifikátory produktu
 
 [!include [banner](../includes/banner.md)]
 
@@ -53,6 +53,9 @@ Kromě toho nelze variantu produktu jedinečně identifikovat podle čísla polo
 Spousta stránek jako primární identifikátory stále ještě používá dimenze produktu a číslo položky. Čísla produktů však lze použít při vyhledávání. V okně **Prodej a marketing** &gt; **Nastavení** &gt; **Vyhledávání** &gt; **Parametry hledání** můžete změnit vyhledávací kód tak, aby používal čísla produktů místo čísla položky strategie primárního vyhledávání. Nastavíte-li možnost **povolit vyhledávání pro vyhledávání produktu** na **Ano**, vyhledávání zobrazí pouze nejen hlavní produkty, ale varianty produktu. Další informace uvádí téma [Vyhledávání produktů a variant produktu během zadávání objednávky](search-products-product-variants.md)
 
 Kromě toho budete moci vyhledávat a filtrovat číslo produktu, název produktu a popis a dimenze produktu a ID varianty produktu. Pokud zvolíte variantu, zvolí se související číslo položky a všechna ID dimenze produktu. Můžete tedy snadněji vyhledat a zvolit správnou variantu. Toto nastavení se důrazně doporučuje při použití variant produktu a jedinečného čísla produkt jako primárních identifikátorů produktů. Jedinou výjimkou může být odvětví módy, kde často obchodní procesy vyžadují volbu hlavního produktu před výběrem varianty. Před implementací systému číslování byste měli pozorně vyhodnotit tuto možnost.
+
+> [!NOTE]
+> Číslo položky produktu nelze změnit, pokud pro tento produkt existuje nejméně jedna transakce.
 
 ## <a name="product-name-and-description"></a>Název a popis produktu
 
@@ -123,7 +126,7 @@ Bohužel neexistuje standardní funkce, která by vám umožnila vyhledávání 
 | Produkty V2 | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | V závislosti na nastavení entity a číselné řady pro číslo produktu lze automaticky vytvořit číslo produktu v okamžiku importu. |
 | Varianty produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu | V závislosti na šabloně klasifikace produktu může být číslo výrobku automaticky vytvořeno při importu. Můžete však importovat všechna jedinečná číslo výrobku a toto číslo produktu nemusí vycházet ze struktury šablony klasifikace produktu. |
 | Překlady produktu | Název produktu, popis produktu | Název produktu, popis produktu | Tato entita přepíše libovolný jazyk. Všimněte si, že při když je přepsán název nebo popis jazyka primární právnické osoby, název a popis produktu se změní. |
-| Uvolněné produkty V2 | Číslo položky, číslo produktu, vyhledávací název položky| Číslo položky, číslo produktu, vyhledávací název položky, vyhledávací název produktu, název produktu | Tato entita může být složitá při použití číselných řad během vytváření nových uvolněných produktů. Vliv má číselná řada **č. položky** i **číslo produktu**. Číselná řada **Číslo položky** však platí pro právnickou osobu, zatímco číselná řada **číslo produktu** je globální. Proto nedoporučujeme používat číselnou řadu **Číslo položky** při nasazení nových uvolněných produktů. Samozřejmě při použití entity pro uvolnění existujícího produktu musí být číslo produktu uvedeno v entitě. Další informace naleznete v tématu "Číselné řady produktů a položek" v tomto tématu. |
+| Tvorba uvolněného produktu V2 | Číslo položky, číslo produktu, vyhledávací název položky| Číslo položky, číslo produktu, vyhledávací název položky, vyhledávací název produktu, název produktu | Tato entita může být složitá při použití číselných řad během vytváření nových uvolněných produktů. Vliv má číselná řada **č. položky** i **číslo produktu**. Číselná řada **Číslo položky** však platí pro právnickou osobu, zatímco číselná řada **číslo produktu** je globální. Proto nedoporučujeme používat číselnou řadu **Číslo položky** při nasazení nových uvolněných produktů. Samozřejmě při použití entity pro uvolnění existujícího produktu musí být číslo produktu uvedeno v entitě. Další informace naleznete v tématu "Číselné řady produktů a položek" v tomto tématu. |
 | Uvolněné varianty produktu | Číslo položky, dimenze produktu, číslo produktu | Číslo produktu, vyhledávací název produktu, název produktu, popis produktu, dimenze produktu | Stejně jako entit **varianty produktu** i tato entita slouží k vytvoření nových produktů, které mají stejnou šablonu klasifikace produktu nebo číslo produktu pro variantu. |
 | Popisy externích položek pro odběratele | Číslo položky odběratele položky jméno zákazníka, popis odběratele, účtu odběratele | Číslo položky odběratele položky jméno zákazníka, popis odběratele, účtu odběratele | Skupinu odběratelů (například přidružení kupujícího) lze sloučit do jedné skupiny pomocí entity **Skupiny odběratelů popisu externí položky**. |
 | Popis externích položek pro dodavatele | Číslo položky dodavatele, název položky dodavatele, popis dodavatele, účet dodavatele | Číslo položky dodavatele, název položky dodavatele, popis dodavatele, účet dodavatele | Skupinu dodavatelů (například prodejní asociaci nebo průmyslovou organizaci) lze sloučit do jedné skupiny pomocí entity **Skupiny dodavatelů popisu externí položky**. |
@@ -144,7 +147,7 @@ Můžete definovat dvě různé číselné řady:
 > [!NOTE]
 > Měli byste použít číslo položky jako samostatný identifikátor pouze tehdy, když migrujete různé právnické osoby z různých zdrojů s různými systémy číslování. Měli byste se vždy snažit použít identifikátor produktu, který je jedinečný pro všechny právnické osoby. Proto je třeba nastavit možnost **Ruční** na **Ano** pro číselnou řadu **Číslo položky**. Tímto způsobem bude číslo položky vycházet z čísla produktu při vytvoření. Pokud modul Supply Chain Management není vedoucí systém nových čísel produktů, je třeba nastavit možnost **Ruční** na **Ano** pro číselné řady **č. položky** i **číslo produktu**.
 
-Použijete-li entitu **Uvolněný produkt V2** k vytvoření produktů, mohou mnohá nastavení ovlivnit použití číselných řad při vytvoření čísla položky a čísla produktu:
+Použijete-li entitu **Tvorba uvolněného produktu V2** k vytvoření produktů, mohou mnohá nastavení ovlivnit použití číselných řad při vytvoření čísla položky a čísla produktu:
 
 - Nastavení číselné řady **Číslo produktu**
 - Nastavení číselné řady **Číslo položky**
@@ -155,9 +158,9 @@ Následující tabulka obsahuje přehled výsledků importu a ručního vytvoře
 
 | Číselná řada čísla produktu | Číselná řada čísel položky | Mapování čísla položky | Mapování čísla produktu | Výsledek importu entity | Výsledek ručního vytvoření | Závěr |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
-| Je ruční = Ne | Je ruční = Ne | Žádné mapování | Žádné mapování | Čísla produktu používají číselnou řadu **Číslo produktu**. Čísla položek používají číselnou řadu **Číslo produktu**. | Čísla produktu používají číselnou řadu **Číslo produktu**. Čísla položek používají číselnou řadu **Číslo produktu**. | Toto nastavení lze použít, pokud pro produkty a položky vyžadujete jiné číslo. Nedoporučujeme však používat různá čísla pro položky a výrobky. |
-| Je ruční = Ne | Ruční = Ano | Automaticky vygenerovat | Žádné mapování | Číslování produktů i položek používají číselnou řadu **Číslo položky**. | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Toto nastavení se nedoporučuje. Import a ručního vytváření fungují odlišně. |
-| Je ruční = Ne | Ruční = Ano | Žádné mapování | Žádné mapování | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Toto nastavení se doporučuje, pokud mají produkty konzistentní automatické číslování, bez ohledu na to, zda se použije import nebo ruční vytvoření. |
+| Je ruční = Ne | Je ruční = Ne | Žádné mapování | Žádné mapování | Čísla produktu používají číselnou řadu **Číslo produktu**. Čísla položek používají číselnou řadu **Číslo produktu**. | Čísla produktu používají číselnou řadu **Číslo produktu**. Čísla položek používají číselnou řadu **Číslo produktu**. | S touto konfigurací budou čísla produktů následovat po číselné řadě produktů a čísla položek budou následovat po číselné řadě položek. Tato konfigurace však nebude fungovat v případě, že existuje více než jedna položka (řádek), která má být importována. |
+| Je ruční = Ne | Ruční = Ano | Automaticky vygenerovat | Žádné mapování | Číslování produktů i položek používají číselnou řadu **Číslo položky**. | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Číslování produktů i položek používá číselnou řadu produktu. Jedná se o doporučený postup při importu nebalených produktů s použitím datové entity Tvorba uvolněného produktu V2. |
+| Je ruční = Ne | Ruční = Ano | Žádné mapování | Žádné mapování | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Číslování produktů i položek používají číselnou řadu **Číslo produktu**. | Číslování produktů i položek používá číselnou řadu produktu. Tato konfigurace však nebude fungovat v případě, že existuje více než jedna položka (řádek), která má být importována. |
 | Ruční = Ano | Nelze použít | Nelze použít | Automaticky vygenerovat | Obdržíte následující chybovou zprávu: Nelze detekovat číselnou řadu. | Podle číselné řady **Číslo položky** | Toto nastavení není podporováno pro import. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identifikátor entity produktu (exportovat všechny identifikátory produktu)

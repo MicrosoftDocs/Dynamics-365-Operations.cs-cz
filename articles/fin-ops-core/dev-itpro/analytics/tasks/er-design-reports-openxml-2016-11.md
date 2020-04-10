@@ -16,22 +16,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ea5b17873dea4508230f39ffb41a50e2f427584f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769848"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142125"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>Elektronické vykazování – Návrh konfigurace pro generování sestav ve formátu OPENXML (listopad 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci pro elektronické výkaznictví, která obsahuje šablonu pro generování elektronických dokladů ve formátu OPENXML. Tato konfigurace se použije ke zpracování plateb dodavatele.
 
 V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. Tyto kroky lze provést ve společnosti GBSI.
 
-K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". Je třeba mít k dispozici soubor aplikace Excel, který bude importován při vytváření šablony. K tomuto souboru lze přistoupit ze [šablony sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266).
+K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". Je třeba mít k dispozici soubor aplikace Excel, který bude importován při vytváření šablony. K tomuto souboru lze přistoupit ze [šablony sestavy platby](https://go.microsoft.com/fwlink/?linkid=862266).
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Odeslání konfigurace modelu platebních dat
@@ -55,7 +55,7 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postup
 3. Výběrem možnosti **Vytvořit konfiguraci** otevřete dialogové okno.
 4. Do pole **Nový** zadejte `Format based on data model PaymentModel`. Vytvořte formát, který vychází z modelu dat PaymentModel.
 5. Do pole **Název** zadejte `Sample worksheet report`. Ukázková sestava listu  
-6. Do pole **Popis** zadejte `Sample worksheet report for vendors’ payments`. Ukázková sestavu listu pro platby dodavatelů.  
+6. Do pole **Popis** zadejte `Sample worksheet report for vendors' payments`. Ukázková sestavu listu pro platby dodavatelů.  
 7. V poli **Definice datového modelu** zadejte nebo vyberte hodnotu. Vyberte definici **CustomerCreditTransferInitiation**.  
 8. Vyberte **Vytvořit konfiguraci**.
 

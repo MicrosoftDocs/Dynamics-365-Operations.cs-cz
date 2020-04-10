@@ -16,16 +16,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3b6254c63b73e175a9d9093bb58e96d480678920
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 496c4841d36174be3e65b0a4fc9a3a331662637f
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175082"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3139015"
 ---
 # <a name="eur-00018-vat-reconciliation-report"></a>EUR-00018 Sestava odsouhlasení DPH
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tato procedura ukazuje, jak generovat sestavu odsouhlasení daně, která je k dispozici pro islandské a norské právnické osoby. Byla vytvořena za použití ukázkových dat společnosti DEMF s hodnotou země/oblasti právnické osoby aktualizovanou na Norsko.
 

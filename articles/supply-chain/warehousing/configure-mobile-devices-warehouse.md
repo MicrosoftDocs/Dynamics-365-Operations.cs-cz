@@ -3,7 +3,7 @@ title: Nastavení mobilních zařízení pro práci ve skladu
 description: Toto téma popisuje postup konfigurace položek nabídky, které pracovníci ve skladě mohou používat k práci z mobilního zařízení.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df3968c01006d773300593b966a69b5283a889a2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4c4b131c14101722593f685cbe1133b1aa1319b0
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813033"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161821"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Nastavení mobilních zařízení pro práci ve skladu
 
@@ -95,11 +95,11 @@ Po provedení počáteční akce pro mobilním zařízení můžete nastavit pol
 </tr>
 <tr>
 <td>Přijetí registrační značky</td>
-<td>Přijměte příchozí vytížení za pomoci ID registrační značky.</td>
+<td>Přijměte a příchozí avízo expedice zboží (ASN) za pomoci ID registrační značky.</td>
 </tr>
 <tr>
-<td>Přijetí a odložení poznávací značky</td>
-<td>Přijměte a vyskladněte příchozí vytížení za pomoci ID registrační značky.</td>
+<td>Přijetí a odložení registrační značky</td>
+<td>Přijměte a odložte příchozí avízo expedice zboží (ASN) za pomoci ID registrační značky.</td>
 </tr>
 <tr>
 <td>Přijetí položky nákladu</td>
@@ -119,7 +119,7 @@ Po provedení počáteční akce pro mobilním zařízení můžete nastavit pol
 <td>Zaregistrujte příjem množství zboží registrací čísla vrácené položky a položky vyskladněte. Obě akce provede stejný pracovník.</td>
 </tr>
 <tr>
-<td rowspan="4">Objednávka převozu</td>
+<td rowspan="6">Objednávka převozu</td>
 <td>Příjem zboží převodního příkazu</td>
 <td>Zaregistrujte příjem množství zboží a vytvořte pracovní vyskladnění pro jiného zaměstnance.
 
@@ -140,8 +140,16 @@ Po provedení počáteční akce pro mobilním zařízení můžete nastavit pol
 <td>Zaregistrujte příjem množství zboží a položky vyskladněte. Obě akce provede stejný pracovník.</td>
 </tr>
 <tr>
-<td rowspan="4">Výroba</td>
-<td>Ohlásit jako dokončené</td>
+<td>Přijetí registrační značky</td>
+<td>Přijměte a příchozí avízo expedice zboží (ASN) za pomoci ID registrační značky.</td>
+</tr>
+<tr>
+<td>Přijetí a odložení registrační značky</td>
+<td>Přijměte a odložte příchozí avízo expedice zboží (ASN) za pomoci ID registrační značky.</td>
+</tr>
+<tr>
+<td rowspan="4">Výrobní</td>
+<td>Oznámit jako dokončené</td>
 <td>Zaregistrujte množství dokončených položek, které byly v rámci výroby dokončeny a vytvořte vyskladnění pro jiného pracovníka. Počet může odpovídat části nebo celému množství, které bylo naplánováno pro výrobu.</td>
 </tr>
 <tr>

@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: baf39040bef2ccd0c643ce0d034348807ecdc50c
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: fe8ad0540febcc703554e2451f7f644338e4d57b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914776"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149451"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Nastavení oprávnění pro objednávání produktů jménem jiného uživatele
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Toto téma vysvětluje, jak udělit zaměstnancům oprávnění k přípravě nákupních žádanek jménem ostatních pracovníků. Jinak řečeno, pořizovatel" nákupního požadavku může vytvořit požadavek za jiného žadatele. Postup rovněž ukazuje, jak udělit pracovníkovi oprávnění objednat zboží a služby u různých právnických osob nebo provozních jednotek. Obvykle jsou tyto úlohy prováděny vedoucím nákupu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
+Toto téma vysvětluje, jak udělit zaměstnancům oprávnění k přípravě nákupních žádanek jménem ostatních pracovníků. Jinak řečeno, „pořizovatel“ nákupního požadavku může vytvořit požadavek za jiného „žadatele“. Postup rovněž ukazuje, jak udělit pracovníkovi oprávnění objednat zboží a služby u různých právnických osob nebo provozních jednotek. Obvykle jsou tyto úlohy prováděny vedoucím nákupu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
 
 
 ## <a name="grant-permission-to-enter-purchase-requisitions-on-behalf-of-another-worker"></a>Udělení oprávnění zadat nákupní žádanky jménem jiného pracovníka

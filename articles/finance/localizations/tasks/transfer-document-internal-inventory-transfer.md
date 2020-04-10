@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4da59781f3357a6713eebba03d87c5127b8cd3b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5cb0d3d51bf30717f05a4daf1a098565d5d48621
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174785"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143402"
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>Vygenerování dokladu převodu pro interní převod zásob
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zboží v rámci společnosti. Tato procedura je k dispozici pouze pro právnické osoby, jejichž primární adresa je v Litvě. Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Litvě. Než bude možné tuto proceduru dokončit, je nutné dokončit proceduru "Nastavení převodních dokumentů pro pohyb zboží uvnitř společnosti". Tato procedura je určena pouze pro skladové účetní. Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
+Tato procedura ukazuje postup vytvoření přepravních dokladů pro pohyb zboží v rámci společnosti. Tato procedura je k dispozici pouze pro právnické osoby, jejichž primární adresa je v Litvě. Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Litvě. Než bude možné tuto proceduru dokončit, je nutné dokončit proceduru „Nastavení převodních dokumentů pro pohyb zboží uvnitř společnosti“. Tato procedura je určena pouze pro skladové účetní. Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
 
 ## <a name="create-a-transfer-order"></a>Vytvoření převodního příkazu

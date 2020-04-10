@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 62eeb29e348c558e8954f656b89d90792b0c347b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: dad74855ab9a9c225a5cd64a8c27663aedcd21e4
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021851"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141216"
 ---
 # <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a> Zadání produktů z distribučního centra do obchodu pomocí metody buyer's push
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tato procedura vás provede postupem, jak vytvořit a zpracovat buyer´s push k distribuci produktů z jednoho skladové místa do jednoho nebo více obchodů. Můžete definovat více konfigurací a nechat systém navrhovat, jak budou produkty distribuovány, nebo ručně zadat, kam budou produkty distribuovány a kolik jich bude distribuováno do jednotlivých obchodů. Tato procedura neobsahuje nastavení dat, která lze použít pro buyer´s push, jako jsou například pravidla doplnění, organizační hierarchie a skladovací hmotnosti. Tato procedura používá ukázkovou společnost USRT.
 

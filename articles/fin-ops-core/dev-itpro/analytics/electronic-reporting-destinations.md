@@ -3,7 +3,7 @@ title: Místa určení elektronického výkaznictví
 description: Toto téma obsahuje informace o správě cílů elektronického výkaznictví, podporovaných typech cílů a o možnostech zabezpečení.
 author: nselin
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2e4c6951afbff367dc93072d20395c3a37fffbcb
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030766"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150808"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Místa určení elektronického výkaznictví
 
@@ -114,7 +114,7 @@ Po dokončení tohoto nastavení bude k dispozici možnost **Spustit koncept** p
 
 [![Možnost Spustit koncept](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
-## <a name="DestinationFailure"></a>Zpracování selhání cíle
+## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Zpracování selhání cíle
 
 Formát elektronického výkaznictví je obvykle spuštěn v rozsahu určitého obchodního procesu. Doručení odchozího dokumentu, který je generován při spuštění formátu elektronického výkaznictví, však musí být někdy považováno za součást tohoto obchodního procesu. V takovém případě, pokud je doručení vygenerovaného odchozího dokumentu do konfigurovaného cíle neúspěšné, musí být provádění obchodního procesu zrušeno. Chcete-li nakonfigurovat příslušný cíl elektronického výkaznictví, vyberte možnost **Zastavit zpracování při selhání**.
 
@@ -124,7 +124,7 @@ Například konfigurujete zpracování plateb dodavatele, aby byl spuštěn form
 
 Pokud odškrtnete políčko **Zastavit zpracování při selhání** pro komponentu **Průvodní dopis** v cíli souboru, bude platba považována za úspěšně zpracovanou i tehdy, když nebude průvodní dopis úspěšně odeslán e-mailem. Stav platby bude změněn z **Žádný** na **Odesláno** i v případě, že průvodní dopis nelze odeslat, protože například chybí e-mailová adresa příjemce nebo odesílatele, nebo jsou adresy nesprávné.
 
-## <a name="OutputConversionToPDF"></a>Výstupní převod do souboru PDF
+## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Výstupní převod do souboru PDF
 
 Chcete-li převést výstup ve formátu Microsoft Office (Excel/Word) do formátu PDF, můžete použít volbu převodu do PDF.
 
@@ -157,6 +157,19 @@ Možnost převodu PDF lze zapnout pouze pro součásti souboru, které se použ�
 Chcete-li zapnout převod do PDF pro cíl souboru, zaškrtněte políčko **Převést do PDF**.
 
 [![Zapnutí převodu do PDF pro cíl souboru](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+
+### <a name=""></a><a name="SelectPdfPageOrientation">Výběr orientace stránky pro převod do PDF</a>
+
+Vygenerujete-li konfiguraci ER ve formátu aplikace Excel a chcete ji převést do formátu PDF, můžete určit orientaci stránky v PDF. Když zaškrtnete políčko **Převést do PDF** pro povolení převodu PDF pro cíl souboru, který vytváří výstupní soubor ve formátu aplikace Excel, bude pole **Orientace stránky** k dispozici na pevné záložce **Nastavení převodu PDF**. V poli **Orientace stránky** vyberte upřednostňovanou orientaci.
+
+[![Výběr orientace stránky pro převod do PDF](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+> [!NOTE]
+> Chcete-li mít možnost vybrat orientaci stránky PDF, je nutné nainstalovat Microsoft Dynamics 365 Finance 10.0.10 (květen 2020) nebo novější.
+>
+> Vybraná orientace stránky se použije pro všechny konfigurace ER, které jsou generovány ve formátu aplikace Excel a následně převedeny do formátu PDF.
+>
+> Pokud je převedený PDF vytvořen z konfigurace ER ve formátu aplikace Word, bude orientace stránky PDF provedena z dokumentu aplikace Word.
 
 ## <a name="security-considerations"></a>Na co brát ohled při zabezpečení
 

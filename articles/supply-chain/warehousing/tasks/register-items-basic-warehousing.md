@@ -1,6 +1,6 @@
 ---
 title: Registrace položek pro položky umožňující základní uskladnění pomocí deníku se záznamem doručení položek
-description: Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení položek, když použijete "základní funkce skladu" v modulu Řízení zásob.
+description: Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení položek, když použijete „základní funkce skladu“ v modulu Řízení zásob.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e64a6df41e43c1b97243a6f7291393982575636
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 537418a78f7cc9d1375188076264e38b790e081b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847224"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145978"
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-an-item-arrival-journal"></a>Registrace položek pro položky umožňující základní uskladnění pomocí deníku se záznamem doručení položek
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení položek, když použijete "základní funkce skladu" v modulu Řízení zásob. To obvykle provádí přijímající pracovník. Tento postup můžete spustit s ukázkovými daty společnosti USMF s ukázkovými hodnotami, které jsou zobrazeny.  Pokud nepoužíváte USMF, musíte mít před zahájením tohoto průvodce potvrzenou nákupní objednávku s otevřeným řádkem nákupní objednávky. Položka na řádku musí být na skladě. Položka zároveň musí být přidružena ke skupině dimenzí úložiště, kde jsou aktivní pracoviště a sklad.
+Tento postup popisuje, jak zaregistrovat položky pomocí deníku doručení položek, když použijete „základní funkce skladu“ v modulu Řízení zásob. To obvykle provádí přijímající pracovník. Tento postup můžete spustit s ukázkovými daty společnosti USMF s ukázkovými hodnotami, které jsou zobrazeny.  Pokud nepoužíváte USMF, musíte mít před zahájením tohoto průvodce potvrzenou nákupní objednávku s otevřeným řádkem nákupní objednávky. Položka na řádku musí být na skladě. Položka zároveň musí být přidružena ke skupině dimenzí úložiště, kde jsou aktivní pracoviště a sklad.
 
 
 ## <a name="create-item-arrival-journal-header"></a>Vytvoření záhlaví deníku pro doručení položky

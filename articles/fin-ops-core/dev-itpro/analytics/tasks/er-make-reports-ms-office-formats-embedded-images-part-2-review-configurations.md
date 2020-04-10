@@ -1,6 +1,6 @@
 ---
 title: Revize konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
-description: K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 1 - nastavení parametrů).
+description: K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh "Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 1 - nastavení parametrů)".
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d05020c5b83137d977d7260e269cb7d8c219406
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8f81f0f86c255d048393047965c0aa29cbef09d0
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184777"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143069"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Revize konfigurací pro generování sestav ve formátech Office s integrovanými obrázky
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 1: nastavení parametrů).
+K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh "Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 1: nastavení parametrů)".
 
 Tento postup popisuje proces navrhování konfigurací elektronického vykazování (ER) pro generování elektronických dokumentů obsahujících vložené obrázky v aplikaci Microsoft Excel a Microsoft Word. V tomto příkladu si prohlédnete konfigurace ER pro vzorovou společnost Litware, Inc. 
 
@@ -83,7 +83,7 @@ Tento postup je navržen pro uživatele s přiřazenou rolí správce systému n
 8. Ve stromovém zobrazení rozbalte Report\ChequeLines.
 9. Ve stromovém zobrazení vyberte Report\ChequeLines\CompLogo.
 10. Přepnutím aktivujte 'Zobrazit podrobnosti'.
-    * Všimněte si, že prvek buňky ve formátu CompLogo představuje položku Excel, která slouží k načtení obrázku loga společnosti v sestavě. Tento prvek formátu má vazbu na element datového modelu obrázku, který za běhu obsahuje obrázek loga společnosti v binárním formátu.   
+    * Všimněte si, že prvek buňky ve formátu 'CompLogo' představuje položku Excel, která slouží k načtení obrázku loga společnosti v sestavě. Tento prvek formátu má vazbu na element datového modelu obrázku, který za běhu obsahuje obrázek loga společnosti v binárním formátu.   
 11. Klikněte na kartu Mapování.
 12. Klikněte na Úprava povolena.
     * Poznámka: můžete nastavit element buňky ve formátu "CompLogo" tak, aby již nebyl povolen. V takovém případě se na přidruženém prvku obrázku Excel skryje logo společnosti ve vygenerované sestavě. Pokud se u povoleného výrazu vrátí hodnota TRUE, a definovaná vazba nepřinese žádný obrázek, přidružený prvek obrázku Excel bude obsahovat obrázek, který byl uložen v šabloně aplikace Excel.   

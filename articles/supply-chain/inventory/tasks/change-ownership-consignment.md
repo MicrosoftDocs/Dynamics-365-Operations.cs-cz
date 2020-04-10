@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1cf45e838afcb55e15175811f4d38be07d7a484d
-ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
+ms.openlocfilehash: 8200e0235fa78cbef4fdadd1d1c124446b89e72a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "1874870"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145865"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Změna vlastnictví zásob dodávky na základě výrobní poptávky
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tato procedura ukazuje, jak změnit vlastníka zásob dodávky od dodavatele vaší právnické osobě, když existuje poptávka po zásobách ve výrobě. Tato změna vlastnictví se provádí vytvořením a zaúčtováním deníků změn vlastnictví zásob. Řádky deníku změny vlastnictví lze vytvořit ručně nebo, jak je znázorněno v tomto záznamu, na základě existující výrobní poptávky. Tento úkol obvykle provádí vedoucí dílny. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Používáte-li vlastní data, musí být splněny následující předpoklady: název skladového deníku, který byl nastaven pro změnu vlastnictví zásob, fyzicky zaznamenané zboží na skladě vlastněné dodavatelem a jeden nebo více řádků výrobních zakázek pro materiál. Tento postup je určen pro funkci, která byla přidána do Dynamics 365 for Operations, verze 1611.
 

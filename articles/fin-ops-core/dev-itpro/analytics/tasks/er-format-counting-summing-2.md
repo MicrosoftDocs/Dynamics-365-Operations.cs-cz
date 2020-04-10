@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d785b321037645837dbcbaf28c8ede9b8e97b79
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 20188438a4ca623fc926e6c373fb002f148c3df4
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550595"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142471"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-2---configure-computations"></a>Elektronické výkaznictví – konfigurace formátu počítání a sčítání (část 2 - Konfigurace výpočtů)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Následující procedura popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) k vytvoření počtu a součtu na základě dat již generovaného textového výstupu. Tyto kroky lze provést v rámci libovolné společnosti.
 
@@ -85,34 +85,34 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 34. Klepněte na tlačítko Upravit pro pole "Název klíče shromážděných dat"
 35. Klikněte na možnost Přidat datový zdroj.
     * $BlockName  
-36. Klikněte na položku Uložit.
+36. Klepněte na tlačítko Uložit.
 37. Zavřete stránku.
 38. Klepněte na tlačítko Upravit pro pole Hodnota klíče shromážděných dat.
 39. Do pole Vzorec zadejte 'IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")'.
     * IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")  
 40. Klikněte na položku Uložit.
 41. Zavřete stránku.
-    * Spočítejte řádky této sekvence. Výsledky budou použity s názvem blok nezávisle pro různé pokyny. Hodnota "Import" se použije pro všechny příchozí transakce Intrastat. Hodnota "Export" se použije pro všechny odchozí transakce Intrastat. Zvažte použití virtuální tabulky aplikace Excel. Pro každou transakci vytvořte řádek, kde jsou v prvním sloupci "blok" zadány příslušné hodnoty "Import" a "Export".  
+    * Spočítejte řádky této sekvence. Výsledky budou použity s názvem "blok" nezávisle pro různé pokyny. Hodnota "Import" se použije pro všechny příchozí transakce Intrastat. Hodnota "Export" se použije pro všechny odchozí transakce Intrastat. Zvažte použití virtuální tabulky aplikace Excel. Pro každou transakci vytvořte řádek, kde jsou v prvním sloupci "blok" zadány příslušné hodnoty "Import" a "Export".  
 42. Ve stromovém zobrazení rozbalte „Intrastat\Data: Pořadí“.
 43. Ve stromovém zobrazení vyberte 'Intrastat\Data: Pořadí\Příjezdy?'.
 44. Klepněte na tlačítko Upravit pro pole "Název klíče shromážděných dat".
     * Spočítejte řádky této sekvence. Výsledky budou uloženy do paměti s názvem "záznam".  
 45. Ve stromovém zobrazení vyberte '$RecName'.
 46. Klikněte na možnost Přidat datový zdroj.
-47. Klikněte na položku Uložit.
+47. Klepněte na tlačítko Uložit.
 48. Zavřete stránku.
-49. Klepněte na tlačítko Upravit pro pole Hodnota klíče shromážděných dat.
+49. Klepněte na tlačítko Upravit pro pole 'Hodnota klíče shromážděných dat'
 50. Do pole Vzorec zadejte "Intrastat.CommodityRecord.CommodityCode".
 51. Klikněte na položku Uložit.
 52. Zavřete stránku.
-    * Spočítejte řádky této sekvence. Výsledky budou použity s názvem záznam nezávisle pro různé kódy komodit. Zvažte použití virtuální tabulky aplikace Excel. Pro každou transakci použijte řádek, kde jsou v prvním sloupci "blok" zadány příslušné hodnoty "Import" a "Export", a ve druhém záznamu bloku hodnota kódu komodity.  
+    * Spočítejte řádky této sekvence. Výsledky budou použity s názvem "záznam" nezávisle pro různé kódy komodit. Zvažte použití virtuální tabulky aplikace Excel. Pro každou transakci použijte řádek, kde jsou v prvním sloupci "blok" zadány příslušné hodnoty "Import" a "Export", a ve druhém záznamu bloku hodnota kódu komodity.  
 53. Ve stromovém zobrazení vyberte 'Intrastat\Data: Pořadí\Expedice?'.
 54. Klepněte na tlačítko Upravit pro pole "Název klíče shromážděných dat"
 55. Ve stromovém zobrazení vyberte '$RecName'.
 56. Klikněte na možnost Přidat datový zdroj.
-57. Klikněte na položku Uložit.
+57. Klepněte na tlačítko Uložit.
 58. Zavřete stránku.
-59. Klepněte na tlačítko Upravit pro pole Hodnota klíče shromážděných dat.
+59. Klepněte na tlačítko Upravit pro pole 'Hodnota klíče shromážděných dat'.
 60. Do pole Vzorec zadejte "Intrastat.CommodityRecord.CommodityCode".
 61. Klepněte na tlačítko Uložit.
 62. Zavřete stránku.
@@ -121,18 +121,18 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 65. Klikněte na kartu Formát.
 66. Ve stromové struktuře vyberte "Intrastat\Data\Expedice\Záznam\Částka faktury EUR".
 67. Klikněte na kartu Mapování.
-68. Klepněte na tlačítko Upravit pro pole Název klíče shromážděných dat.
+68. Klepněte na tlačítko Upravit pro pole 'Název klíče shromážděných dat'.
 69. Ve stromovém zobrazení vyberte '$InvName'.
 70. Klikněte na možnost Přidat datový zdroj.
 71. Klikněte na položku Uložit.
 72. Zavřete stránku.
-    * Sečtěte hodnoty fakturované částky pro řádky této sekvence. Výsledky budou použity s názvem InvoicedAmountEUR nezávisle pro různé pokyny Intrastat a kódy komodit. Zvažte vytvoření virtuální tabulky aplikace Excel. Pro každou transakci vytvořte řádek, kde jsou v prvním sloupci "blok" zadány příslušné hodnoty "Import" a "Export". Druhý blok "záznam" je vyplněn hodnotou kódu komodity a třetí sloupec, který "InvoicedAmountEUR" je vyplněn hodnotou částky faktury.  
+    * Sečtěte hodnoty fakturované částky pro řádky této sekvence. Výsledky budou použity s názvem "InvoicedAmountEUR" nezávisle pro různé pokyny Intrastat a kódy komodit. Zvažte vytvoření virtuální tabulky aplikace Excel. Pro každou transakci vytvořte řádek, kde jsou v prvním sloupci "blok" zadány příslušné hodnoty "Import" a "Export". Druhý blok "záznam" je vyplněn hodnotou kódu komodity a třetí sloupec, který "InvoicedAmountEUR" je vyplněn hodnotou částky faktury.  
 73. Ve stromovém zobrazení rozbalte „Intrastat\Data\Příjezdy?“.
 74. Ve stromovém zobrazení rozbalte „Intrastat\Data\Příjezdy?\Záznam = Intrastat.CommodityRecord“.
 75. Klikněte na kartu Formát.
 76. Ve stromové struktuře vyberte "Intrastat\Data\Příjezdy\Záznam\Částka faktury EUR".
 77. Klikněte na kartu Mapování.
-78. Klepněte na tlačítko Upravit pro pole Název klíče shromážděných dat.
+78. Klepněte na tlačítko Upravit pro pole 'Název klíče shromážděných dat'.
 79. Ve stromovém zobrazení vyberte '$InvName'.
 80. Klikněte na možnost Přidat datový zdroj.
 81. Klikněte na položku Uložit.

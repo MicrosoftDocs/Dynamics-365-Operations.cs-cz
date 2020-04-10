@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc28149aa56302e09eb0e7be581a582f58a76416
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 9c813a429d7837493663625bde341638eecfc5ee
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847344"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148487"
 ---
 # <a name="configure-wave-processing"></a>Konfigurace zpracování vlny
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento průvodce popisuje, jak nastavit kritéria určující práci, která vznikne pro sklad při zpracování vlny, a zda jsou vlny zpracovány ručně nebo automaticky. Podle potřeby určete kritéria nastavením šablon vlny a dotazů, které odpovídají vlně ve vydaných řádcích u prodejní objednávky, výrobní nebo kanbanové zakázce. Zpracování vlny se používá ve skladech, které používají funkce v modulu řízení skladu, nikoli ty, které používají funkce v modulu Řízení zásob. Tento postup můžete projít v ukázkových datech společnosti USMF.
 
@@ -34,7 +34,7 @@ Tento průvodce popisuje, jak nastavit kritéria určující práci, která vzni
 2. Klepněte na možnost **Nový**.
 3. Zadejte hodnotu do pole **Název šablony vlny**. Během nastavení šablony vlny zadáváte pořadí, ve kterém budou šablony párovány s uvolněnými řádky na prodejních objednávkách, výrobních zakázkách nebo kanbanech. Když dojde k uvolnění řádku do skladu nebo do výroby, použije se první šablona vlny, pro kterou se splňují kritéria. Doporučujeme proto umístit šablony s nejkonkrétnějšími kritérii do horní části seznamu. Čím širší kritéria, tím pravděpodobněji řádek splní kritéria, a tím větší šance, že budou řádky přiřazeny k chybné vlně.  
 4. Zadejte hodnotu do pole **Popis šablony vlny**.
-5. V poli **Lokalita** zadejte nebo vyberte hodnotu. Pokud používáte data USMF, můžete vybrat pracoviště 2.  
+5. V poli **Lokalita** zadejte nebo vyberte hodnotu. Pokud používáte USMF, můžete vybrat pracoviště 2.  
 6. V poli **Sklad** zadejte nebo vyberte hodnotu. Pokud používáte USMF, můžete vybrat sklad 24.  
 7. V poli **Automatizovat vytvoření vlny** nastavte hodnotu **Ano**. Vyberte tuto možnost, chcete-li automaticky vytvořit vlnu při vydání prodejní objednávky, výrobní zakázky nebo kanbanu do skladu.  
 8. Nastavte možnost **Zpracovat vlnu při uvolnění do skladu** na **Ano**. Vyberte tuto možnost, chcete-li automaticky zpracovat vlnu a vytvořit práci při vydání řádku do skladu.  

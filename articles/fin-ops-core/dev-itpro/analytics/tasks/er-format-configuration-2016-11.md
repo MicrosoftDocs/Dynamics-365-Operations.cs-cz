@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1fd41b1724eb2e0405c0e7a7e0ff0aea4a945e0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: af2899da843967bfaaa8f3c66906fc8e3765b573
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184938"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142494"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>Elektronické vykazování – Vytvoření konfigurace formátu (listopad 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit konfiguraci formátu pro elektronické výkaznictví. Tato konfigurace formátu definuje formát elektronických dokumentů, které jsou použity pro zpracování plateb. V tomto příkladu budete vytvářet konfiguraci formátu pro vzorovou společnost Litware, Inc. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu Mapování modelu na vybrané zdroje dat.
+Tohle téma popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit konfiguraci formátu pro elektronické výkaznictví. Tato konfigurace formátu definuje formát elektronických dokumentů, které jsou použity pro zpracování plateb. V tomto příkladu budete vytvářet konfiguraci formátu pro vzorovou společnost Litware, Inc. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu "Mapování modelu na vybrané zdroje dat".
 
 
 ## <a name="create-a-new-format-configuration"></a>Vytvoření nové konfigurace formátu

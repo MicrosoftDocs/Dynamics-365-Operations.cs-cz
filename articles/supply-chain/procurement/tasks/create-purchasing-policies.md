@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e29df3b42479a215b66354f8dfceea002a146e74
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: c8416f9a869b9144a63a6fb08c667cc32dec9854
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856465"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149704"
 ---
 # <a name="create-purchasing-policies"></a>Vytvoření zásad nákupu
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Totot téma popisuje, jak vytvořit zásady nákupu a srovnat tak obchodní procesy pro nákup. Před vytvořením zásady nakupování nastavte parametry zásady nákupu. Je možné vytvořit, upravit a vyřadit zásady nákupu, ale zásady nákupu nelze odstranit. Tento proces obvykle provádí manažer nákupu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat.
 

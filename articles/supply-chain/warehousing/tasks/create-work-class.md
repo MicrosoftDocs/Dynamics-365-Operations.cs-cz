@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5def9be0966d65728ffb0897229c0d749e7e13a0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6afbd9f54ef9046da10d0abc24ed545b5735a069
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571783"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146093"
 ---
 # <a name="create-a-work-class"></a>Vytvoření pracovní třídy
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje nastavení pracovní třídy. Pracovní třídy se používají k nasměrování a/nebo omezení typu řádků pracovních příkazů, které pracovník skladu může v mobilním zařízení zpracovat. Řádky, které může pracovník zpracovat, se určují na základě pracovních tříd pro položky nabídky mobilního zařízení, k nimž má pracovník skladu přístup, a pro pracovní třídu specifikovanou na řádcích práce. Pracovní třídy lze také použít k ověření skladového místa pro řádek pracovního příkazu. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Tento postup je určen pro vedoucího skladu.
 

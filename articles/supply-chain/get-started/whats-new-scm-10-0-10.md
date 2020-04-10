@@ -1,0 +1,73 @@
+---
+title: Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.10. (květen 2020)
+description: Toto téma popisuje funkce, které jsou nové nebo se změnily v aplikaci Dynamics 365 Supply Chain Management 10.0.10.
+author: kamaybac
+manager: AnnBe
+ms.date: 03/21/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2020-03-21
+ms.dyn365.ops.version: 10.0.10
+ms.openlocfilehash: afab27ef8a60e9d7e8749e94d3738ee7e6d53d12
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164786"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.10. (květen 2020)
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+Tohle téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microsoft Dynamics 365 Supply Chain Management verze Preview 10.0.10. Tato verze má číslo sestavení 10.0.420 a je k dispozici následujícím způsobem:
+
+- **Verze Preview:** březen 2020
+- **Obecná dostupnost (automatická aktualizace):** duben 2020
+- **Automatická aktualizace:** květen 2020
+
+## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
+
+Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další informace na webu [Plány vydání](https://docs.microsoft.com/dynamics365/release-plans/). Další odkazy odkazují na další dokumentaci nebo videa, které jsou v současnosti k dispozici pro danou funkci. Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
+
+- [Rozšíření pro použití existujících značek skutečné hmotnosti se správou skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
+- [Rozšíření správy příchozího nákladu pro správu skladu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)
+- [Hlavní plánování zahrnuje položky s množstvím na skladě, pokud jsou povoleny filtry předběžného zpracování](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+- [Nové datové entity pro oblast výroby](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Správa kvality pro procesy skladu](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)
+
+## <a name="additional-resources"></a>Další prostředky
+
+### <a name="platform-update-34"></a>Platform update 34
+
+Aplikace Microsoft Dynamics 365 Supply Chain Management 10.0.10 zahrnuje aktualizaci Platform Update 34. Další informace naleznete v tématu [Funkce Preview v aktualizaci Platform Update 34](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+Sháníte-li informace o opravách chyb zahrnutých v jednotlivých aktualizacích, které jsou součástí verze 10.0.10, přihlaste se ke službám Lifecycle Services (LCS) a přečtěte si [článek znalostní báze](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+
+### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: plán 1. vlny vydání v r. 2020
+
+Zajímáte se o nadcházející a nedávno uvedené funkce jakékoliv z našich obchodních aplikací nebo platforem?
+
+Přečtěte si téma [Dynamics 365: plán 1. vlny vydání v r. 2020](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Popsali jsme všechny podrobnosti, od A až do Z, v jednom dokumentu, který můžete používat pro plánování.
+
+### <a name="removed-and-deprecated-supply-chain-management-features"></a>Odebrané a zastaralé funkce Supply Chain Management
+
+Téma [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) popisuje funkce Supply Chain Management, které byly nebo jsou naplánovány k odebrání nebo které zastaraly.
+
+- *Odstraněná* funkce již není k dispozici v produktu.
+- *Zastaralá* funkce není v aktivním nasazení a v budoucí aktualizaci může být odstraněna.
+
+Před odebráním jakékoli funkce produktu bude oznámeno její zastarání v tématu [Odebrané nebo zastaralé funkce v Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 měsíců před odebráním.
+
+U změn způsobujícíh chyby, které ovlivní pouze dobu kompilace, ale jsou v binárním formátu kompatibilní s prostředím sandbox a produkčními prostředími, bude doba zastarání kratší než 12 měsíců. Obvykle se jedná o funkční aktualizace, které je třeba provést v kompilátoru.

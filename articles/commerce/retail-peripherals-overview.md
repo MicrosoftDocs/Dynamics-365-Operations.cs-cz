@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124398"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154173"
 ---
 # <a name="peripherals"></a>Periferní zařízení
 
@@ -158,7 +158,7 @@ Ze sítě adresovatelné zásuvky s hotovostí, tiskárny účtenek a platební 
 
 ### <a name="dedicated"></a>Vyhrazeno
 
-Klienti Modern POS pro Windows Android zahrnují **vyhrazené** nebo vestavěné hardwarové stanice. Tito klienti mohou komunikovat přímo s periferními zařízeními pomocí obchodní logiky, která je vestavěna v aplikacích. Aplikace Android podporuje pouze síťová zařízení. Další informace o podpoře periferních zařízení Android naleznete v článku [Nastavení aplikace POS Hybrid na systémech Android a iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+Klienti Modern POS pro Windows Android zahrnují **vyhrazené** nebo vestavěné hardwarové stanice. Tito klienti mohou komunikovat přímo s periferními zařízeními pomocí obchodní logiky, která je vestavěna v aplikacích. Aplikace Android podporuje pouze síťová zařízení. Další informace o podpoře periferních zařízení Android naleznete v článku [Nastavení aplikace POS Hybrid na systémech Android a iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 Chcete-li použít vyhrazenou hardwarovou stanici, přiřaďte k registru hardwarový profil, který bude používat aplikaci Modern POS pro aplikace sytému Windows nebo Android. Pak vytvořte hardwarovou stanici typu **Vyhrazený** pro obchod, kde bude registr používán. Spusťte Modern POS v režimu bez zásuvky a pomocí operace **spravovat hardwarové stanice** zapněte možnosti hardwarové stanice, vyhrazená hardwarová stanice bude standardně aktivní. Poté se znovu přihlaste z Modern POS, potom se přihlaste a otevřete směnu a periferní zařízení konfigurovaná v hardwarovém profilu budou použitelná. 
 
@@ -199,7 +199,7 @@ Informace naleznete v tématu [Konfigurace, instalace a aktivace Moder POS (MPOS
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Nastavení a konfigurace Modern POS pro Android a iOS
 
-Informace naleznete v části [Nastavení hybridní aplikace POS v systému Android a iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+Informace naleznete v části [Nastavení hybridní aplikace POS v systému Android a iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="opos-device-setup-and-configuration"></a>Instalace a konfigurace zařízení OPOS
 
@@ -494,7 +494,7 @@ Tato konfigurace je nejtypičtější konfigurací tradičních pevných POS reg
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Moderní POS pro systém Android s hardwarovou stanicí IPC (vestavěnou)
 
-**Novinka 10.0.8** - Síťové tiskárny Epson a hotovostní zásuvky připojené k těmto tiskárnám pomocí portu DK jsou nyní podporovány v aplikaci Modern POS pro Android. Podrobné informace naleznete v článku [Nastavení aplikace POS Hybrid na systémech Android a iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+**Novinka 10.0.8** - Síťové tiskárny Epson a hotovostní zásuvky připojené k těmto tiskárnám pomocí portu DK jsou nyní podporovány v aplikaci Modern POS pro Android. Podrobné informace naleznete v článku [Nastavení aplikace POS Hybrid na systémech Android a iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Všichni klienti Modern POS, kteří mají potvrzenou, sdílenou hardwarovou stanici IIS
 

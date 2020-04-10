@@ -1,6 +1,6 @@
 ---
 title: Generování sestav ve formátech Office s integrovanými obrázky
-description: Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfigurace pro elektronické výkaznictví (ER) a vygenerovat tak elektronické dokumenty ve formátu MS Office (Excel nebo Word) s vloženými obrázky.
+description: Následující postup popisuje, jak uživatel s rolí 'Správce systému' nebo 'Návrhář elektronického výkaznictví' může navrhnout konfigurace pro elektronické výkaznictví (ER) a vygenerovat tak elektronické dokumenty ve formátu MS Office (Excel nebo Word) s vloženými obrázky.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64fade6578e9cd4f8a51c524e4f6ebbf63b93f20
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184754"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143092"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generování sestav ve formátech Office s integrovanými obrázky
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfigurace pro elektronické výkaznictví (ER) a vygenerovat tak elektronické dokumenty ve formátu MS Office (Excel nebo Word) s vloženými obrázky.
+Následující postup popisuje, jak uživatel s rolí 'Správce systému' nebo 'Návrhář elektronického výkaznictví' může navrhnout konfigurace pro elektronické výkaznictví (ER) a vygenerovat tak elektronické dokumenty ve formátu MS Office (Excel nebo Word) s vloženými obrázky.
 
-V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnost Litware, Inc.  K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 2: konfigurace přehledu). Tyto kroky lze provést v rámci společnosti USMF.
+V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnost 'Litware, Inc'.  K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky průvodce záznamem úloh "Vytváření sestav ER ve formátu MS Office s vloženými obrázky (část 2: konfigurace přehledu)". Tyto kroky lze provést v rámci společnosti 'USMF'.
 
 
 ## <a name="run-format-with-initial-model-mapping"></a>Spuštění formátu s počátečním mapováním modelu
@@ -40,7 +40,7 @@ V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnos
     * Spusťte formát pro účely testování.  
 6. V poli Obchodovatelný formát šeku vyberte Ano.
 7. Klikněte na tlačítko OK.
-    * Prohlédněte si vytvořený výstup. Všimněte si, že logo společnosti se zobrazí v sestavě společně s podpisem oprávněné osoby. Obrázek podpisu je převzat z pole typu dat Kontejner ze záznamu rozvržení šeku, který je přidružen k vybranému bankovnímu účtu.  
+    * Prohlédněte si vytvořený výstup. Všimněte si, že logo společnosti se zobrazí v sestavě společně s podpisem oprávněné osoby. Obrázek podpisu je převzat z pole typu dat 'Kontejner' ze záznamu rozvržení šeku, který je přidružen k vybranému bankovnímu účtu.  
 8. Rozbalte sekci Kopie.
 9. Klikněte na položku Upravit.
 10. V poli Vodoznak zadejte Tisknout vodoznak jako anulovaný.
@@ -105,7 +105,7 @@ V tomto příkladu použijete vytvořené konfigurace ER pro vzorovou společnos
 9. Klepněte na tlačítko Ano.
 10. Klikněte na položku Nová.
 11. Klepněte na volby Soubor.
-    * Klepněte na tlačítko Procházet a vyberte předem stažený soubor Cheque template Word.docx.  
+    * Klepněte na tlačítko Procházet a vyberte předem stažený soubor 'Cheque template Word.docx'.  
 12. Zavřete stránku.
 13. V poli Šablona zadejte nebo vyberte hodnotu.
 14. Klikněte na položku Uložit.

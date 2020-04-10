@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90032539d59b310cb2d4c1324312eac6593fba6b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a5142fe552147a9b2988a8828ba1206fad9e252e
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843588"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146737"
 ---
 # <a name="lean-pegging-from-sales-orders"></a>Doložení z prodejních objednávek štíhlé výroby
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup se zaměřuje na ověřování stromu doložení z řádku prodeje, kde položka je vyráběna s kanbany. Po ověření stromu doložení jsou plánovány všechny kanbanové úlohy. To je užitečné pro objednávky scénáře, kde pořadí příjemce musí zajistit, aby bylo možné výrobu spustit přímo. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro rozšířenou objednávku příjemce pracující ve štíhlé společnosti.
 

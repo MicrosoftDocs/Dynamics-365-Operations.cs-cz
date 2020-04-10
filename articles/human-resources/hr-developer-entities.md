@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6879a45dd1fcc1ba718747aaaf0d7936c2eac49f
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: c8e0288da16829c04a9b97c0a52caa8bd27cddf8
+ms.sourcegitcommit: fde8045ea49d0cf26d5e7ac5a0da5c0d3d69d5bc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087339"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166491"
 ---
 # <a name="common-data-service-entities"></a>Entity Common Data Service
 
@@ -87,14 +87,19 @@ V Common Data Service jsou k dispozici následující entity lidských zdrojů.
 | Pracovní pozice | cdm_jobposition |
 | Typ pozice | cdm_positiontype |
 | Přiřazení pracovníka k pozici | cdm_positionworkerassignmentmap |
+| Dimenze pracovních pozic | cdm_jobpositiondimension|
 | Typ práce | cdm_jobtype |
 | Jazyk | cdm_language |
+| Pozice | cdm_title |
+
+> [!NOTE]
+> Finanční dimenze pro **Typ pozice**, **Přiřazení pracovníka poziec** a **Zaměstnání** poskytují integraci v jediném směru do Common Data Service. Aktualizace finančních dimenzí nelze v současné době synchronizovat z Common Data Service do modulu Human Resources. 
 
 ## <a name="leave-and-absence-entities"></a>Entity pracovního volna a absence
 
-| Název | Celek |
+| Jméno | Celek |
 | --- | --- |
-| Opustit bankovní transakci | cdm_leavebanktransaction |
+| Transakce fondu pracovního volna | cdm_leavebanktransaction |
 | Opustit zápis | cdm_leaveenrollment |
 | Plán pracovního volna | cdm_leaveplan |
 | Žádost o pracovní volno | cdm_leaverequest |

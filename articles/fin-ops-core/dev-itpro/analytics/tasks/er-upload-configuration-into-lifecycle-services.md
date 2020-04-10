@@ -16,23 +16,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 980ce00ae702ea0a3394efa15419e0f7b7dc2530
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182202"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143272"
 ---
 # <a name="er-upload-a-configuration-into-lifecycle-services"></a>Odeslání konfigurace ER do služby Lifecycle Services
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může vytvořit novou konfiguraci formátu pro elektronické výkaznictví a odeslat ji do služby Microsoft Lifecycle Services (LCS).
 
-V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc a odešlete ji do LCS. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace ER se sdílí mezi společnostmi. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v postupu "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". K dokončení tohoto postupu je nutný také přístup k LCS.
+V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc a odešlete ji do LCS. Tyto kroky lze provést v kterékoli společnosti, protože konfigurace ER se sdílí mezi společnostmi. K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proceduře "Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". K dokončení tohoto postupu je nutný také přístup k LCS.
 
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
-2. Vyberte Litware, Inc. a nastavte ji jako aktivní.
+2. Vyberte 'Litware, Inc.' a nastavte ji jako aktivní.
 3. Klikněte na Konfigurace.
 
 ## <a name="create-a-new-data-model-configuration"></a>Vytvoření nové konfigurace datového modelu
@@ -83,7 +83,7 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc
 4. Klikněte na položku Změnit stav.
 5. Klepněte na Sdílet.
     * Stav konfigurace se změní z "Dokončeno" na 'Sdíleno' během publikování v LCS.  
-6. Klikněte na tlačítko OK.
+6. Klepněte na tlačítko OK.
 7. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
     * Vyberte verzi konfigurace se stavem „Sdílena“.  
     * Všimněte si, že stav vybrané verze se změnil z "Dokončeno" na 'Sdíleno'.  
@@ -93,5 +93,5 @@ V tomto příkladu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc
 10. Klikněte na možnost Otevřít.
     * Vyberte úložiště LCS a otevřete je.  
     * Všimněte si, že vybraná konfigurace je uvedena jako aktiva vybraného projektu LCS.  
-    * Otevřete LCS pomocí https://lcs.dynamics.com. Otevřete projekt, který byl použit dříve pro registraci úložiště, otevřete Knihovnu majetku pro tento projekt a rozbalte obsah s typem majetku Konfigurace GER – odeslané konfigurace ER budou nyní k dispozici. Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.  
+    * Otevřete LCS pomocí https://lcs.dynamics.com. Otevřete projekt, který byl použit dříve pro registraci úložiště, otevřete 'Knihovnu majetku' pro tento projekt a rozbalte obsah s typem majetku 'Konfigurace GER' – odeslané konfigurace ER budou nyní k dispozici. Všimněte si, že odeslané konfigurace LCS je možné importovat do jiné instance, pokud poskytovatelé mají přístupová práva k tomuto projektu LCS.  
 

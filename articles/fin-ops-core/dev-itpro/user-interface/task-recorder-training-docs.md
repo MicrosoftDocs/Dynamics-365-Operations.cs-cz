@@ -3,7 +3,7 @@ title: Vytváření dokumentace nebo školení pomocí záznamníku úloh
 description: Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, jak vytvořit nahrávky úkolů a jak přizpůsobit průvodce záznamem úloh Microsoft a zahrnout je do nápovědy.
 author: josaw1
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 268b95aad57c2e4863a3f58cd54828dbb0e09465
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 927f6475e60b5b93aac0e0c2840cb0b4fc7f0ac8
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006188"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164551"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Vytváření dokumentace nebo školení pomocí záznamníku úloh
 
@@ -40,8 +40,6 @@ Toto téma vysvětluje, co je Záznamník úkolů a průvodci záznamem úloh, j
 Záznamník úkolů je nástroj, který umožňuje zaznamenat akce prováděné v uživatelském rozhraní produktu. Při použití Záznamníku úkolů jsou zaznamenány všechny události prováděné v uživatelském rozhraní, které jsou spouštěny na serveru, včetně přidání hodnot, změny nastavení a odebrání dat. Kroky, které zaznamenáte, jsou souhrnně označovány termínem *záznam úkolu*. Záznamy úloh lze používat mnoha způsoby:
 
 -   **Záznamy úkolů lze přehrát jako průvodce úkolem.** Průvodci záznamem úloh jsou nedílnou součástí prostředí nápovědy.Průvodce záznamem úloh je kontrolovaný, řízený a interaktivní způsob, který vás provede kroky daného úkolu nebo obchodního procesu. Uživatel obdrží pokyny k dokončení jednotlivých kroků pomocí je místních výzev (nebo "bublin"), která se zobrazí v uživatelském rozhraní a odkazují na prvek uživatelského rozhraní, který musí uživatel použít. Bublina obsahuje také informace o tom, jak pracovat s prvkem, jako je "Klepněte sem" nebo "Do tohoto pole zadejte hodnotu."Spouští se v rámci aktuální datové sady uživatele a dat, která jsou zadána a uložena v prostředí uživatele.
--   **Záznamy úloh lze zobrazit jako kroky postupu v podokně nápovědy.** Podokno nápovědy lze použít k hledání a zobrazení záznamů úloh. Do podokna Nápověda můžete přejít kliknutím na ikonu **?** v horním navigačním pruhu nebo můžete použít klávesové zkratky,  **Ctrl + Shift +?**. Kroky záznamu úkolu si můžete přečíst v podokně nápovědy nebo můžete zvolit přehrání záznamu jako průvodce úkolem, který vás provede uživatelským rozhraním.
--   **Záznamy úkolů lze uložit do BPM.** Záznam úkolu lze uložit na řádek hierarchie v knihovně modulu Modelování podnikových procesů ve službě Lifecycle Services (LCS). Seznam kroků a vývojový diagram podnikového procesu bude vygenerován ze záznamu. Záznamníky úkolů, které byly uloženy do knihovny BPM, lze zobrazit jako nápovědu.
 -   **Záznamy úkolů lze uložit jako dokumenty Word.** Tímto způsobem lze snadno vytvářet tisknutelné přepisy školení.
 
 Můžete vytvořit vlastní záznamy úkolů, přehrávat záznamy úkolů poskytované společností Microsoft nebo upravovat záznamy úkolů poskytované společností Microsoft podle konfigurace.Další informace o Záznamníku úloh naleznete v tématu [Záznamník úloh](task-recorder.md).
@@ -114,10 +112,9 @@ Můžete stáhnout a upravovat záznamy úkolů společnosti Microsoft a použí
 10. Po přehrání záznamu do konce klikněte na tlačítko **Zastavit** na panelu Záznamníku úkolů v horní části obrazovky.
 11. Vyberte, jak chcete záznam úkolu uložit.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Zahrnutí záznamu úkolu do podokna nápovědy
-Chcete-li zobrazovat vlastní záznamy úkolů v podokně nápovědy, aby je bylo možné přehrát jako průvodce úkolem nebo zobrazit jako text, je třeba záznamy úkolů uložit do vlastní knihovny BPM a poté aktualizovat systémové parametry nápovědy tak, aby odkazovaly na knihovnu BPM. Další informace naleznete v tématu [Připojení systému nápovědy](../../fin-ops/get-started/help-connect.md).
 
-<a name="additional-resources"></a>Další zdroje
+
+<a name="additional-resources"></a>Další prostředky
 --------
 
 [Systém nápovědy](../../fin-ops/get-started/help-overview.md)

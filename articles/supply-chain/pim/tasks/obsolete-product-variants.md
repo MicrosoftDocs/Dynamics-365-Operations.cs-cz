@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4641d24cfa24722f5411da8943bfe4095a9546a4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dcd0f67bae1042cb1e81423898eacd20f921e0e2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567623"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147569"
 ---
 # <a name="find-obsolete-product-variants"></a>Nalezení zastaralých variant produktů 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tato procedura ukazuje, jak nalézt zastaralé uvolněné produkty nebo varianty produktu a jak přiřadit stav životního cyklu produktu k zastaralým produktům. Předpoklad: Je nutné definovat nejméně jeden stav životního cyklu produktu, který není aktivní pro plánování, ještě před přehráním tohoto Průvodce záznamem úloh.
 
