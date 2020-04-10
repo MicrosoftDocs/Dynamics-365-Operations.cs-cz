@@ -16,50 +16,50 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: babbc5ee067743d368680970556f8e5d3d8585f0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 360df29e6349fd4d42d6d14af646e929b73943bd
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176734"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145142"
 ---
-# <a name="create-a-journal-entry-using-template"></a><span data-ttu-id="9dcd4-103">Vytvoření záznamu deníku pomocí šablony</span><span class="sxs-lookup"><span data-stu-id="9dcd4-103">Create a journal entry using template</span></span>
+# <a name="create-a-journal-entry-using-template"></a><span data-ttu-id="68ae3-103">Vytvoření záznamu deníku pomocí šablony</span><span class="sxs-lookup"><span data-stu-id="68ae3-103">Create a journal entry using template</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9dcd4-104">Zaúčtované deníky lze uložit jako šablony dokladů a použít v novém dokladu deníku.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-104">Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher.</span></span> <span data-ttu-id="9dcd4-105">Tato procedura používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-105">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="68ae3-104">Zaúčtované deníky lze uložit jako šablony dokladů a použít v novém dokladu deníku.</span><span class="sxs-lookup"><span data-stu-id="68ae3-104">Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher.</span></span> <span data-ttu-id="68ae3-105">Tato procedura používá ukázkovou společnost USMF.</span><span class="sxs-lookup"><span data-stu-id="68ae3-105">This procedure uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="9dcd4-106">Přejděte na **Navigační podokno > Moduly > Hlavní kniha > Položky deníku > Hlavní deníky**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-106">Go to **Navigation pane > Modules > General ledger > Journal entries > General journals**.</span></span>
-2. <span data-ttu-id="9dcd4-107">V **podokně akcí** klikněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-107">On the **Action pane**, click **New**.</span></span> <span data-ttu-id="9dcd4-108">Tento postup se spustí vytvořením a zaúčtováním dokladu deníku, ale ne všechny dříve zaúčtované doklady deníku lze uložit jako šablonu.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-108">This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.</span></span>  
-3. <span data-ttu-id="9dcd4-109">V poli **Název** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-109">In the **Name** field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="9dcd4-110">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-110">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="9dcd4-111">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-111">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="9dcd4-112">Klikněte na možnost **Řádky**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-112">Click **Lines**.</span></span>
-7. <span data-ttu-id="9dcd4-113">Zadejte hodnotu do pole **Typ účtu**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-113">In the **Account type** field, type a value.</span></span>
-8. <span data-ttu-id="9dcd4-114">Zadejte hodnotu do pole **Popis**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-114">In the **Description** field, type a value.</span></span>
-9. <span data-ttu-id="9dcd4-115">Zadejte hodnotu do pole **Má dáti**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-115">In the **Debit** field, type a value.</span></span>
-10. <span data-ttu-id="9dcd4-116">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-116">Click **New**.</span></span>
-11. <span data-ttu-id="9dcd4-117">Zadejte hodnotu do pole **Typ účtu**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-117">In the **Account type** field, type a value.</span></span>
-12. <span data-ttu-id="9dcd4-118">Zadejte hodnotu do pole **Popis**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-118">In the **Description** field, type a value.</span></span>
-13. <span data-ttu-id="9dcd4-119">Zadejte hodnotu do pole **Má dáti**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-119">In the **Debit** field, type a value.</span></span>
-14. <span data-ttu-id="9dcd4-120">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-120">Click **New**.</span></span>
-14. <span data-ttu-id="9dcd4-121">Zadejte požadované hodnoty do pole **Účet**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-121">In the **Account** field, specify the desired values.</span></span>
-15. <span data-ttu-id="9dcd4-122">Zadejte hodnotu do pole **Popis**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-122">In the **Description** field, type a value.</span></span>
-16. <span data-ttu-id="9dcd4-123">V poli **Dal** zadejte hodnotu pro vyrovnání dokladu.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-123">In the **Credit** field, type a value to balance the voucher.</span></span>
-17. <span data-ttu-id="9dcd4-124">V **podokně akcí** klikněte na **Zaúčtovat**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-124">On the **Action pane**, click **Post**.</span></span>
-18. <span data-ttu-id="9dcd4-125">Klikněte na **Funkce**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-125">Click **Functions**.</span></span>
-19. <span data-ttu-id="9dcd4-126">Klikněte na šablonu **Uložit doklad**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-126">Click **Save voucher** template.</span></span>
-20. <span data-ttu-id="9dcd4-127">Tento postup předpokládá, že je typ šablony **Procento**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-127">This procedure assumes a **Percent Template** type.</span></span> <span data-ttu-id="9dcd4-128">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-128">Click OK.</span></span>
-    - <span data-ttu-id="9dcd4-129">Procento: částky v dokladu jsou převedeny na procentuální faktory, což umožní při výběru šablony dokladu použít jakoukoli částku.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-129">Percent: The amounts in the voucher are converted into percentage factors, which allows any amount to be applied when the Voucher template is selected.</span></span>
-    - <span data-ttu-id="9dcd4-130">Částka: skutečné částky, které budou uloženy a použity.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-130">Amount: The actual amounts will be stored and applied.</span></span>  
-21. <span data-ttu-id="9dcd4-131">Klikněte na **Hlavní deníky**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-131">Click **General journals**.</span></span>
-22. <span data-ttu-id="9dcd4-132">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-132">Click **New**.</span></span>
-23. <span data-ttu-id="9dcd4-133">V poli **Název** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-133">In the **Name** field, click the drop-down button to open the lookup.</span></span>
-24. <span data-ttu-id="9dcd4-134">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-134">In the list, click the link in the selected row.</span></span>
-25. <span data-ttu-id="9dcd4-135">Klikněte na možnost **Řádky**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-135">Click **Lines**.</span></span>
-26. <span data-ttu-id="9dcd4-136">Klikněte na **Funkce**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-136">Click **Functions**.</span></span>
-27. <span data-ttu-id="9dcd4-137">Klikněte na **Vybrat šablonu dokladu**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-137">Click **Select voucher template**.</span></span>
-28. <span data-ttu-id="9dcd4-138">Vyberte šablonu, kterou jste vytvořili dříve.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-138">Find the template that you created earlier.</span></span> <span data-ttu-id="9dcd4-139">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-139">Click **OK**.</span></span> <span data-ttu-id="9dcd4-140">Může být nutné kliknout na **předchozí krok** a poté vybrat správnou šablonu, pokud existují další šablony.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-140">You may need to click **Previous step** and then select the correct template if other templates exist.</span></span>  
-29. <span data-ttu-id="9dcd4-141">V poli **Částka** zadejte částku, kterou chcete použít pro doklad.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-141">In the **Amount** field, enter the amount to be applied to the voucher.</span></span> <span data-ttu-id="9dcd4-142">Pole **Částka** se zobrazí pouze pokud je typ šablony dokladu Procento.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-142">The **Amount** field is only displayed if the voucher template is of type Percent.</span></span>  
-30. <span data-ttu-id="9dcd4-143">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="9dcd4-143">Click **OK**.</span></span>
+1. <span data-ttu-id="68ae3-106">Přejděte na **Navigační podokno > Moduly > Hlavní kniha > Položky deníku > Hlavní deníky**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-106">Go to **Navigation pane > Modules > General ledger > Journal entries > General journals**.</span></span>
+2. <span data-ttu-id="68ae3-107">V **podokně akcí** klikněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-107">On the **Action pane**, click **New**.</span></span> <span data-ttu-id="68ae3-108">Tento postup se spustí vytvořením a zaúčtováním dokladu deníku, ale ne všechny dříve zaúčtované doklady deníku lze uložit jako šablonu.</span><span class="sxs-lookup"><span data-stu-id="68ae3-108">This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.</span></span>  
+3. <span data-ttu-id="68ae3-109">V poli **Název** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="68ae3-109">In the **Name** field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="68ae3-110">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="68ae3-110">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="68ae3-111">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="68ae3-111">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="68ae3-112">Klikněte na možnost **Řádky**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-112">Click **Lines**.</span></span>
+7. <span data-ttu-id="68ae3-113">Zadejte hodnotu do pole **Typ účtu**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-113">In the **Account type** field, type a value.</span></span>
+8. <span data-ttu-id="68ae3-114">Zadejte hodnotu do pole **Popis**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-114">In the **Description** field, type a value.</span></span>
+9. <span data-ttu-id="68ae3-115">Zadejte hodnotu do pole **Má dáti**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-115">In the **Debit** field, type a value.</span></span>
+10. <span data-ttu-id="68ae3-116">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-116">Click **New**.</span></span>
+11. <span data-ttu-id="68ae3-117">Zadejte hodnotu do pole **Typ účtu**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-117">In the **Account type** field, type a value.</span></span>
+12. <span data-ttu-id="68ae3-118">Zadejte hodnotu do pole **Popis**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-118">In the **Description** field, type a value.</span></span>
+13. <span data-ttu-id="68ae3-119">Zadejte hodnotu do pole **Má dáti**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-119">In the **Debit** field, type a value.</span></span>
+14. <span data-ttu-id="68ae3-120">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-120">Click **New**.</span></span>
+14. <span data-ttu-id="68ae3-121">Zadejte požadované hodnoty do pole **Účet**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-121">In the **Account** field, specify the desired values.</span></span>
+15. <span data-ttu-id="68ae3-122">Zadejte hodnotu do pole **Popis**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-122">In the **Description** field, type a value.</span></span>
+16. <span data-ttu-id="68ae3-123">V poli **Dal** zadejte hodnotu pro vyrovnání dokladu.</span><span class="sxs-lookup"><span data-stu-id="68ae3-123">In the **Credit** field, type a value to balance the voucher.</span></span>
+17. <span data-ttu-id="68ae3-124">V **podokně akcí** klikněte na **Zaúčtovat**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-124">On the **Action pane**, click **Post**.</span></span>
+18. <span data-ttu-id="68ae3-125">Klikněte na **Funkce**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-125">Click **Functions**.</span></span>
+19. <span data-ttu-id="68ae3-126">Klikněte na šablonu **Uložit doklad**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-126">Click **Save voucher** template.</span></span>
+20. <span data-ttu-id="68ae3-127">Tento postup předpokládá, že je typ šablony **Procento**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-127">This procedure assumes a **Percent Template** type.</span></span> <span data-ttu-id="68ae3-128">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="68ae3-128">Click OK.</span></span>
+    - <span data-ttu-id="68ae3-129">Procento: částky v dokladu jsou převedeny na procentuální faktory, což umožní při výběru šablony dokladu použít jakoukoli částku.</span><span class="sxs-lookup"><span data-stu-id="68ae3-129">Percent: The amounts in the voucher are converted into percentage factors, which allows any amount to be applied when the Voucher template is selected.</span></span>
+    - <span data-ttu-id="68ae3-130">Částka: skutečné částky, které budou uloženy a použity.</span><span class="sxs-lookup"><span data-stu-id="68ae3-130">Amount: The actual amounts will be stored and applied.</span></span>  
+21. <span data-ttu-id="68ae3-131">Klikněte na **Hlavní deníky**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-131">Click **General journals**.</span></span>
+22. <span data-ttu-id="68ae3-132">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-132">Click **New**.</span></span>
+23. <span data-ttu-id="68ae3-133">V poli **Název** kliknutím na tlačítko rozevíracího seznamu otevřete vyhledávání.</span><span class="sxs-lookup"><span data-stu-id="68ae3-133">In the **Name** field, click the drop-down button to open the lookup.</span></span>
+24. <span data-ttu-id="68ae3-134">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="68ae3-134">In the list, click the link in the selected row.</span></span>
+25. <span data-ttu-id="68ae3-135">Klikněte na možnost **Řádky**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-135">Click **Lines**.</span></span>
+26. <span data-ttu-id="68ae3-136">Klikněte na **Funkce**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-136">Click **Functions**.</span></span>
+27. <span data-ttu-id="68ae3-137">Klikněte na **Vybrat šablonu dokladu**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-137">Click **Select voucher template**.</span></span>
+28. <span data-ttu-id="68ae3-138">Vyberte šablonu, kterou jste vytvořili dříve.</span><span class="sxs-lookup"><span data-stu-id="68ae3-138">Find the template that you created earlier.</span></span> <span data-ttu-id="68ae3-139">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-139">Click **OK**.</span></span> <span data-ttu-id="68ae3-140">Může být nutné kliknout na **předchozí krok** a poté vybrat správnou šablonu, pokud existují další šablony.</span><span class="sxs-lookup"><span data-stu-id="68ae3-140">You may need to click **Previous step** and then select the correct template if other templates exist.</span></span>  
+29. <span data-ttu-id="68ae3-141">V poli **Částka** zadejte částku, kterou chcete použít pro doklad.</span><span class="sxs-lookup"><span data-stu-id="68ae3-141">In the **Amount** field, enter the amount to be applied to the voucher.</span></span> <span data-ttu-id="68ae3-142">Pole **Částka** se zobrazí pouze pokud je typ šablony dokladu Procento.</span><span class="sxs-lookup"><span data-stu-id="68ae3-142">The **Amount** field is only displayed if the voucher template is of type Percent.</span></span>  
+30. <span data-ttu-id="68ae3-143">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="68ae3-143">Click **OK**.</span></span>
 

@@ -16,41 +16,41 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: eed4ab9bac4aa40e20709927053613bbffe1be71
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ee8385561f9aadae333c05c6df62de0ad1d39010
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185881"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144596"
 ---
-# <a name="view-related-intercompany-voucher-from-journal"></a><span data-ttu-id="733b6-103">Zobrazení souvisejícího mezipodnikového dokladu z deníku</span><span class="sxs-lookup"><span data-stu-id="733b6-103">View related intercompany voucher from journal</span></span>
+# <a name="view-related-intercompany-voucher-from-journal"></a><span data-ttu-id="9512a-103">Zobrazení souvisejícího mezipodnikového dokladu z deníku</span><span class="sxs-lookup"><span data-stu-id="9512a-103">View related intercompany voucher from journal</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="733b6-104">Související doklad zobrazí doklad společností protiúčtu při zaúčtování mezipodnikové transakce z deníku hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="733b6-104">The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.</span></span>
+<span data-ttu-id="9512a-104">Související doklad zobrazí doklad společností protiúčtu při zaúčtování mezipodnikové transakce z deníku hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="9512a-104">The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.</span></span>
 
 
-## <a name="post-an-intercompany-journal"></a><span data-ttu-id="733b6-105">Zaúčtování mezipodnikového deníku</span><span class="sxs-lookup"><span data-stu-id="733b6-105">Post an intercompany journal</span></span>
-1. <span data-ttu-id="733b6-106">Přejděte na možnost Hlavní deníky.</span><span class="sxs-lookup"><span data-stu-id="733b6-106">Go to General journals.</span></span>
-2. <span data-ttu-id="733b6-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="733b6-107">Click New.</span></span>
-3. <span data-ttu-id="733b6-108">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="733b6-108">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="733b6-109">V poli Název zadejte nebo vyberte název mezipodnikového deníku.</span><span class="sxs-lookup"><span data-stu-id="733b6-109">In the Name field, enter or select the intercompany journal name.</span></span>
-5. <span data-ttu-id="733b6-110">Klikněte na možnost Řádky.</span><span class="sxs-lookup"><span data-stu-id="733b6-110">Click Lines.</span></span>
-6. <span data-ttu-id="733b6-111">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="733b6-111">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="733b6-112">Zadejte požadované hodnoty do pole Účet.</span><span class="sxs-lookup"><span data-stu-id="733b6-112">In the Account field, specify the desired values.</span></span>
-8. <span data-ttu-id="733b6-113">V poli Popis zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="733b6-113">In the Description field, enter or select a value.</span></span>
-9. <span data-ttu-id="733b6-114">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="733b6-114">In the Description field, type a value.</span></span>
-10. <span data-ttu-id="733b6-115">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="733b6-115">Close the page.</span></span>
-11. <span data-ttu-id="733b6-116">Do pole Má dáti zadejte čísl.</span><span class="sxs-lookup"><span data-stu-id="733b6-116">In the Debit field, enter a number.</span></span>
-12. <span data-ttu-id="733b6-117">V poli Společnost protiúčtu vyberte nebo zadejte společnost protiúčtu.</span><span class="sxs-lookup"><span data-stu-id="733b6-117">In the Offset company field, type or select the offset company.</span></span>
-13. <span data-ttu-id="733b6-118">V poli Společnost protiúčtu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="733b6-118">In the Offset company field, enter or select a value.</span></span>
-14. <span data-ttu-id="733b6-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="733b6-119">Close the page.</span></span>
-15. <span data-ttu-id="733b6-120">Zadejte požadované hodnoty do pole Protiúčet.</span><span class="sxs-lookup"><span data-stu-id="733b6-120">In the Offset account field, specify the desired values.</span></span>
-16. <span data-ttu-id="733b6-121">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="733b6-121">Click Post.</span></span>
+## <a name="post-an-intercompany-journal"></a><span data-ttu-id="9512a-105">Zaúčtování mezipodnikového deníku</span><span class="sxs-lookup"><span data-stu-id="9512a-105">Post an intercompany journal</span></span>
+1. <span data-ttu-id="9512a-106">Přejděte na možnost Hlavní deníky.</span><span class="sxs-lookup"><span data-stu-id="9512a-106">Go to General journals.</span></span>
+2. <span data-ttu-id="9512a-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="9512a-107">Click New.</span></span>
+3. <span data-ttu-id="9512a-108">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="9512a-108">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="9512a-109">V poli Název zadejte nebo vyberte název mezipodnikového deníku.</span><span class="sxs-lookup"><span data-stu-id="9512a-109">In the Name field, enter or select the intercompany journal name.</span></span>
+5. <span data-ttu-id="9512a-110">Klikněte na možnost Řádky.</span><span class="sxs-lookup"><span data-stu-id="9512a-110">Click Lines.</span></span>
+6. <span data-ttu-id="9512a-111">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="9512a-111">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="9512a-112">Zadejte požadované hodnoty do pole Účet.</span><span class="sxs-lookup"><span data-stu-id="9512a-112">In the Account field, specify the desired values.</span></span>
+8. <span data-ttu-id="9512a-113">V poli Popis zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="9512a-113">In the Description field, enter or select a value.</span></span>
+9. <span data-ttu-id="9512a-114">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="9512a-114">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="9512a-115">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="9512a-115">Close the page.</span></span>
+11. <span data-ttu-id="9512a-116">Do pole Má dáti zadejte čísl.</span><span class="sxs-lookup"><span data-stu-id="9512a-116">In the Debit field, enter a number.</span></span>
+12. <span data-ttu-id="9512a-117">V poli Společnost protiúčtu vyberte nebo zadejte společnost protiúčtu.</span><span class="sxs-lookup"><span data-stu-id="9512a-117">In the Offset company field, type or select the offset company.</span></span>
+13. <span data-ttu-id="9512a-118">V poli Společnost protiúčtu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="9512a-118">In the Offset company field, enter or select a value.</span></span>
+14. <span data-ttu-id="9512a-119">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="9512a-119">Close the page.</span></span>
+15. <span data-ttu-id="9512a-120">Zadejte požadované hodnoty do pole Protiúčet.</span><span class="sxs-lookup"><span data-stu-id="9512a-120">In the Offset account field, specify the desired values.</span></span>
+16. <span data-ttu-id="9512a-121">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="9512a-121">Click Post.</span></span>
 
-## <a name="view-related-intercompany-voucher"></a><span data-ttu-id="733b6-122">Zobrazení souvisejícího mezipodnikového dokladu</span><span class="sxs-lookup"><span data-stu-id="733b6-122">View related intercompany voucher</span></span>
-1. <span data-ttu-id="733b6-123">Klikněte na možnost Doklad.</span><span class="sxs-lookup"><span data-stu-id="733b6-123">Click Voucher.</span></span>
-2. <span data-ttu-id="733b6-124">Klikněte na možnost Související doklady.</span><span class="sxs-lookup"><span data-stu-id="733b6-124">Click Related vouchers.</span></span>
-3. <span data-ttu-id="733b6-125">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="733b6-125">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="733b6-126">Klikněte na možnost Doklad.</span><span class="sxs-lookup"><span data-stu-id="733b6-126">Click Voucher.</span></span>
+## <a name="view-related-intercompany-voucher"></a><span data-ttu-id="9512a-122">Zobrazení souvisejícího mezipodnikového dokladu</span><span class="sxs-lookup"><span data-stu-id="9512a-122">View related intercompany voucher</span></span>
+1. <span data-ttu-id="9512a-123">Klikněte na možnost Doklad.</span><span class="sxs-lookup"><span data-stu-id="9512a-123">Click Voucher.</span></span>
+2. <span data-ttu-id="9512a-124">Klikněte na možnost Související doklady.</span><span class="sxs-lookup"><span data-stu-id="9512a-124">Click Related vouchers.</span></span>
+3. <span data-ttu-id="9512a-125">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="9512a-125">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="9512a-126">Klikněte na možnost Doklad.</span><span class="sxs-lookup"><span data-stu-id="9512a-126">Click Voucher.</span></span>
 

@@ -16,39 +16,38 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d684eedd5b40ee9775ab779c243d05cdc6e01f58
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c0c5b20ff6fff2bc62daca68c46e949a38df8d92
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188848"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140260"
 ---
-# <a name="create-an-interest-code-with-a-range"></a><span data-ttu-id="aa6ee-103">Vytvoření kódu úroků s rozsahem</span><span class="sxs-lookup"><span data-stu-id="aa6ee-103">Create an interest code with a range</span></span>
+# <a name="create-an-interest-code-with-a-range"></a><span data-ttu-id="59e98-103">Vytvoření kódu úroků s rozsahem</span><span class="sxs-lookup"><span data-stu-id="59e98-103">Create an interest code with a range</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
+<span data-ttu-id="59e98-104">Kódy úroků lze nastavit pro výpočet různých částek úroků podle rozsahu hodnot.</span><span class="sxs-lookup"><span data-stu-id="59e98-104">Interest codes can be set up to calculate different interest amounts based on a range of values.</span></span> <span data-ttu-id="59e98-105">Tato procedura vám ukáže, jak přidáte kód úroků a jak k němu přidáte rozsah.</span><span class="sxs-lookup"><span data-stu-id="59e98-105">This procedure will show you how to add an interest code and add a range to it.</span></span>
 
-<span data-ttu-id="aa6ee-104">Kódy úroků lze nastavit pro výpočet různých částek úroků podle rozsahu hodnot.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-104">Interest codes can be set up to calculate different interest amounts based on a range of values.</span></span> <span data-ttu-id="aa6ee-105">Tato procedura vám ukáže, jak přidáte kód úroků a jak k němu přidáte rozsah.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-105">This procedure will show you how to add an interest code and add a range to it.</span></span>
-
-1. <span data-ttu-id="aa6ee-106">Přejděte do nabídky Úvěry a inkasa > Úrok > Nastavení kódů úroku.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-106">Go to Credit and collections > Interest > Set up interest codes.</span></span>
-2. <span data-ttu-id="aa6ee-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-107">Click New.</span></span>
-3. <span data-ttu-id="aa6ee-108">V poli Kód úroku zadejte název kódu úroku.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-108">In the Interest code field, enter the name of the interest code.</span></span>
-4. <span data-ttu-id="aa6ee-109">Do pole Popis zadejte popis kódu úroku.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-109">In the Description field, enter a description for the interest code.</span></span>
-5. <span data-ttu-id="aa6ee-110">Vyberte měsíc.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-110">Select Month.</span></span>
-6. <span data-ttu-id="aa6ee-111">Rozbalte část Zisky.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-111">Expand the Earnings section.</span></span>
-7. <span data-ttu-id="aa6ee-112">Rozbalte část Zisky podle měny.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-112">Expand the Earnings by currency section.</span></span>
-8. <span data-ttu-id="aa6ee-113">Zadejte požadované hodnoty do pole Účet pro zaúčtování do hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-113">In the Ledger posting account field, specify the desired values.</span></span>
-9. <span data-ttu-id="aa6ee-114">Vyberte možnost „Měsíce“ v poli Úrok podle rozsahu.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-114">In the Interest by range field, select 'Months'.</span></span>
-10. <span data-ttu-id="aa6ee-115">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-115">Click Add.</span></span>
-11. <span data-ttu-id="aa6ee-116">Do pole Popis zadejte popis pro tuto měnu a rozsah.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-116">In the Description field, enter a description for this currency and range.</span></span>
-12. <span data-ttu-id="aa6ee-117">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-117">Click Save.</span></span>
-13. <span data-ttu-id="aa6ee-118">Klikněte na Rozsahy.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-118">Click Ranges.</span></span>
-14. <span data-ttu-id="aa6ee-119">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-119">Click New.</span></span>
-15. <span data-ttu-id="aa6ee-120">Zadejte možnost 0 pro pole Od hodnoty a poté zadejte procento úroku za měsíc, který se použije pro výpočet úroků.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-120">Enter the From value as 0 and then enter the interest percent per month that will be used to calculate the interest.</span></span> <span data-ttu-id="aa6ee-121">V našem příkladu to je 1,5.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-121">For our example, it is 1.5.</span></span>
-16. <span data-ttu-id="aa6ee-122">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-122">Click New.</span></span>
-17. <span data-ttu-id="aa6ee-123">Do dalšího pole Hodnota od zadejte možnost 4, což je první měsíc, kdy budete počítat novou částku úroku.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-123">Enter the next From value as 4, which is the first month that you will be calculating a new interest amount.</span></span>
-18. <span data-ttu-id="aa6ee-124">Zadejte procento měsíčního úroku, který se použije pro výpočet úroku počínaje 4. měsícem.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-124">Enter the interest percent per month that will be used to calculate the interest starting in month 4.</span></span> <span data-ttu-id="aa6ee-125">V tomto příkladu to je 2.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-125">For this example, it is 2.0.</span></span>
-19. <span data-ttu-id="aa6ee-126">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-126">Click New.</span></span>
-20. <span data-ttu-id="aa6ee-127">Do dalšího pole Hodnota od zadejte možnost 7, což je další měsíc, kdy budete počítat novou částku úroku.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-127">Enter the next From value as 7, which is the next month that you will be calculating a new interest amount.</span></span>
-21. <span data-ttu-id="aa6ee-128">Zadejte procento měsíčního úroku, který se použije pro výpočet úroku počínaje 7. měsícem.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-128">Enter the interest percent per month that will be used to calculate the interest starting in month 7.</span></span> <span data-ttu-id="aa6ee-129">V tomto příkladu to je 2,5.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-129">For this example, it is 2.5.</span></span>
-22. <span data-ttu-id="aa6ee-130">Chcete-li dokončit nastavení, klikněte na tlačítko Zavřít.</span><span class="sxs-lookup"><span data-stu-id="aa6ee-130">Click Close to complete the setup.</span></span>
+1. <span data-ttu-id="59e98-106">Přejděte do nabídky Úvěry a inkasa > Úrok > Nastavení kódů úroku.</span><span class="sxs-lookup"><span data-stu-id="59e98-106">Go to Credit and collections > Interest > Set up interest codes.</span></span>
+2. <span data-ttu-id="59e98-107">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="59e98-107">Click New.</span></span>
+3. <span data-ttu-id="59e98-108">V poli Kód úroku zadejte název kódu úroku.</span><span class="sxs-lookup"><span data-stu-id="59e98-108">In the Interest code field, enter the name of the interest code.</span></span>
+4. <span data-ttu-id="59e98-109">Do pole Popis zadejte popis kódu úroku.</span><span class="sxs-lookup"><span data-stu-id="59e98-109">In the Description field, enter a description for the interest code.</span></span>
+5. <span data-ttu-id="59e98-110">Vyberte měsíc.</span><span class="sxs-lookup"><span data-stu-id="59e98-110">Select Month.</span></span>
+6. <span data-ttu-id="59e98-111">Rozbalte část Zisky.</span><span class="sxs-lookup"><span data-stu-id="59e98-111">Expand the Earnings section.</span></span>
+7. <span data-ttu-id="59e98-112">Rozbalte část Zisky podle měny.</span><span class="sxs-lookup"><span data-stu-id="59e98-112">Expand the Earnings by currency section.</span></span>
+8. <span data-ttu-id="59e98-113">Zadejte požadované hodnoty do pole Účet pro zaúčtování do hlavní knihy.</span><span class="sxs-lookup"><span data-stu-id="59e98-113">In the Ledger posting account field, specify the desired values.</span></span>
+9. <span data-ttu-id="59e98-114">Vyberte možnost „Měsíce“ v poli Úrok podle rozsahu.</span><span class="sxs-lookup"><span data-stu-id="59e98-114">In the Interest by range field, select 'Months'.</span></span>
+10. <span data-ttu-id="59e98-115">Klepněte na možnost Přidat.</span><span class="sxs-lookup"><span data-stu-id="59e98-115">Click Add.</span></span>
+11. <span data-ttu-id="59e98-116">Do pole Popis zadejte popis pro tuto měnu a rozsah.</span><span class="sxs-lookup"><span data-stu-id="59e98-116">In the Description field, enter a description for this currency and range.</span></span>
+12. <span data-ttu-id="59e98-117">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="59e98-117">Click Save.</span></span>
+13. <span data-ttu-id="59e98-118">Klikněte na Rozsahy.</span><span class="sxs-lookup"><span data-stu-id="59e98-118">Click Ranges.</span></span>
+14. <span data-ttu-id="59e98-119">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="59e98-119">Click New.</span></span>
+15. <span data-ttu-id="59e98-120">Zadejte možnost 0 pro pole Od hodnoty a poté zadejte procento úroku za měsíc, který se použije pro výpočet úroků.</span><span class="sxs-lookup"><span data-stu-id="59e98-120">Enter the From value as 0 and then enter the interest percent per month that will be used to calculate the interest.</span></span> <span data-ttu-id="59e98-121">V našem příkladu to je 1,5.</span><span class="sxs-lookup"><span data-stu-id="59e98-121">For our example, it is 1.5.</span></span>
+16. <span data-ttu-id="59e98-122">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="59e98-122">Click New.</span></span>
+17. <span data-ttu-id="59e98-123">Do dalšího pole Hodnota od zadejte možnost 4, což je první měsíc, kdy budete počítat novou částku úroku.</span><span class="sxs-lookup"><span data-stu-id="59e98-123">Enter the next From value as 4, which is the first month that you will be calculating a new interest amount.</span></span>
+18. <span data-ttu-id="59e98-124">Zadejte procento měsíčního úroku, který se použije pro výpočet úroku počínaje 4. měsícem.</span><span class="sxs-lookup"><span data-stu-id="59e98-124">Enter the interest percent per month that will be used to calculate the interest starting in month 4.</span></span> <span data-ttu-id="59e98-125">V tomto příkladu to je 2.</span><span class="sxs-lookup"><span data-stu-id="59e98-125">For this example, it is 2.0.</span></span>
+19. <span data-ttu-id="59e98-126">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="59e98-126">Click New.</span></span>
+20. <span data-ttu-id="59e98-127">Do dalšího pole Hodnota od zadejte možnost 7, což je další měsíc, kdy budete počítat novou částku úroku.</span><span class="sxs-lookup"><span data-stu-id="59e98-127">Enter the next From value as 7, which is the next month that you will be calculating a new interest amount.</span></span>
+21. <span data-ttu-id="59e98-128">Zadejte procento měsíčního úroku, který se použije pro výpočet úroku počínaje 7. měsícem.</span><span class="sxs-lookup"><span data-stu-id="59e98-128">Enter the interest percent per month that will be used to calculate the interest starting in month 7.</span></span> <span data-ttu-id="59e98-129">V tomto příkladu to je 2,5.</span><span class="sxs-lookup"><span data-stu-id="59e98-129">For this example, it is 2.5.</span></span>
+22. <span data-ttu-id="59e98-130">Chcete-li dokončit nastavení, klikněte na tlačítko Zavřít.</span><span class="sxs-lookup"><span data-stu-id="59e98-130">Click Close to complete the setup.</span></span>
 

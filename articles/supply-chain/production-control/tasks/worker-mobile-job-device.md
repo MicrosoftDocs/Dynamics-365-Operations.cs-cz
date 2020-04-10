@@ -17,54 +17,54 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a6e45ea8fdbe30436badd88d4972fda970755275
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8573909476009d5f37a3c0d02ac57b0d518dc267
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835760"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148738"
 ---
-# <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="246f9-103">Konfigurace pracovníka s použitím mobilního pracovního zařízení</span><span class="sxs-lookup"><span data-stu-id="246f9-103">Configure a worker using the mobile job device</span></span>
+# <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="a5391-103">Konfigurace pracovníka s použitím mobilního pracovního zařízení</span><span class="sxs-lookup"><span data-stu-id="a5391-103">Configure a worker using the mobile job device</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="246f9-104">Toto téma popisuje způsob přiřazení správných rolí uživatelskému účtu pracovníka a následného povolení pracovníkovi provádět registrace v dílenském řízení.</span><span class="sxs-lookup"><span data-stu-id="246f9-104">This topic explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.</span></span>
+<span data-ttu-id="a5391-104">Toto téma popisuje způsob přiřazení správných rolí uživatelskému účtu pracovníka a následného povolení pracovníkovi provádět registrace v dílenském řízení.</span><span class="sxs-lookup"><span data-stu-id="a5391-104">This topic explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.</span></span>
 
-## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a><span data-ttu-id="246f9-105">Ověření, zda je pracovníkovi přiřazena určitá role</span><span class="sxs-lookup"><span data-stu-id="246f9-105">Verify that a worker is assigned a certain role</span></span>
+## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a><span data-ttu-id="a5391-105">Ověření, zda je pracovníkovi přiřazena určitá role</span><span class="sxs-lookup"><span data-stu-id="a5391-105">Verify that a worker is assigned a certain role</span></span>
 
-<span data-ttu-id="246f9-106">V tomto příkladu ověřte, zda je uživateli "SHANNON" přiřazena role operátora stroje před konfigurací účtu pracovníka.</span><span class="sxs-lookup"><span data-stu-id="246f9-106">For this example, verify that user "SHANNON" is assigned the machine operator role before you configure the worker account.</span></span>
+<span data-ttu-id="a5391-106">V tomto příkladu ověřte, zda je uživateli "SHANNON" přiřazena role operátora stroje před konfigurací účtu pracovníka.</span><span class="sxs-lookup"><span data-stu-id="a5391-106">For this example, verify that user "SHANNON" is assigned the machine operator role before you configure the worker account.</span></span>
 
-1. <span data-ttu-id="246f9-107">Přejděte na **Navigační podokno > Moduly > Správa systému > Uživatelé > Uživatelé**.</span><span class="sxs-lookup"><span data-stu-id="246f9-107">Go to **Navigation pane > Modules > System administration > Users > Users**.</span></span>
-2. <span data-ttu-id="246f9-108">Vyhledejte uživatele v rychlém filtru.</span><span class="sxs-lookup"><span data-stu-id="246f9-108">Search for a user in the quick filter.</span></span> <span data-ttu-id="246f9-109">V tomto příkladu zadejte `shannon`.</span><span class="sxs-lookup"><span data-stu-id="246f9-109">For this example, enter `shannon`.</span></span>
-3. <span data-ttu-id="246f9-110">Vyberte odkaz ve sloupci **ID uživatele** uživatelského účtu, který se zobrazí.</span><span class="sxs-lookup"><span data-stu-id="246f9-110">Select the link in the **User ID** column of the user account that appears.</span></span>
-4. <span data-ttu-id="246f9-111">Ve stromovém zobrazení **Uživatelské role** vyberte **Role > Operátor stroje**.</span><span class="sxs-lookup"><span data-stu-id="246f9-111">In the **User's roles** tree, select **Roles > Machine operator**.</span></span>
-5. <span data-ttu-id="246f9-112">Zavřete **Podrobnosti uživatele** a stránky **uživatelů** a vraťte se na domovskou stránku.</span><span class="sxs-lookup"><span data-stu-id="246f9-112">Close the **user details** and **users** pages to return to the home page.</span></span>
+1. <span data-ttu-id="a5391-107">Přejděte na **Navigační podokno > Moduly > Správa systému > Uživatelé > Uživatelé**.</span><span class="sxs-lookup"><span data-stu-id="a5391-107">Go to **Navigation pane > Modules > System administration > Users > Users**.</span></span>
+2. <span data-ttu-id="a5391-108">Vyhledejte uživatele v rychlém filtru.</span><span class="sxs-lookup"><span data-stu-id="a5391-108">Search for a user in the quick filter.</span></span> <span data-ttu-id="a5391-109">V tomto příkladu zadejte `shannon`.</span><span class="sxs-lookup"><span data-stu-id="a5391-109">For this example, enter `shannon`.</span></span>
+3. <span data-ttu-id="a5391-110">Vyberte odkaz ve sloupci **ID uživatele** uživatelského účtu, který se zobrazí.</span><span class="sxs-lookup"><span data-stu-id="a5391-110">Select the link in the **User ID** column of the user account that appears.</span></span>
+4. <span data-ttu-id="a5391-111">Ve stromovém zobrazení **Uživatelské role** vyberte **Role > Operátor stroje**.</span><span class="sxs-lookup"><span data-stu-id="a5391-111">In the **User's roles** tree, select **Roles > Machine operator**.</span></span>
+5. <span data-ttu-id="a5391-112">Zavřete **Podrobnosti uživatele** a stránky **uživatelů** a vraťte se na domovskou stránku.</span><span class="sxs-lookup"><span data-stu-id="a5391-112">Close the **user details** and **users** pages to return to the home page.</span></span>
 
-## <a name="configure-worker-account"></a><span data-ttu-id="246f9-113">Nastavte konfiguraci účtu pracovníka</span><span class="sxs-lookup"><span data-stu-id="246f9-113">Configure worker account</span></span>
-1. <span data-ttu-id="246f9-114">Přejděte na **Navigační podokno > Moduly > Lidské zdroje > Pracovníci > Pracovníci**.</span><span class="sxs-lookup"><span data-stu-id="246f9-114">Go to **Navigation pane > Modules > Human resources > Workers > Workers**.</span></span>
-2. <span data-ttu-id="246f9-115">Vyhledejte uživatele v rychlém filtru.</span><span class="sxs-lookup"><span data-stu-id="246f9-115">Search for a user in the quick filter.</span></span> <span data-ttu-id="246f9-116">V tomto příkladu zadejte `shannon`.</span><span class="sxs-lookup"><span data-stu-id="246f9-116">For this example, enter `shannon`.</span></span>
-3. <span data-ttu-id="246f9-117">Vyberte odkaz ve sloupci **Název** uživatelského účtu, který se zobrazí.</span><span class="sxs-lookup"><span data-stu-id="246f9-117">Select the link in the **Name** column of the user account that appears.</span></span>
-4. <span data-ttu-id="246f9-118">Vyberte záložku **Registrace času**.</span><span class="sxs-lookup"><span data-stu-id="246f9-118">Select the **Time registration** tab.</span></span>
-5. <span data-ttu-id="246f9-119">Vyberte **Aktivovat na terminálech registrace**.</span><span class="sxs-lookup"><span data-stu-id="246f9-119">Select **Activate on registration terminals**.</span></span>
-6. <span data-ttu-id="246f9-120">V následujících polích zadejte hodnoty:</span><span class="sxs-lookup"><span data-stu-id="246f9-120">Enter or select values in the following fields:</span></span>  
+## <a name="configure-worker-account"></a><span data-ttu-id="a5391-113">Nastavte konfiguraci účtu pracovníka</span><span class="sxs-lookup"><span data-stu-id="a5391-113">Configure worker account</span></span>
+1. <span data-ttu-id="a5391-114">Přejděte na **Navigační podokno > Moduly > Lidské zdroje > Pracovníci > Pracovníci**.</span><span class="sxs-lookup"><span data-stu-id="a5391-114">Go to **Navigation pane > Modules > Human resources > Workers > Workers**.</span></span>
+2. <span data-ttu-id="a5391-115">Vyhledejte uživatele v rychlém filtru.</span><span class="sxs-lookup"><span data-stu-id="a5391-115">Search for a user in the quick filter.</span></span> <span data-ttu-id="a5391-116">V tomto příkladu zadejte `shannon`.</span><span class="sxs-lookup"><span data-stu-id="a5391-116">For this example, enter `shannon`.</span></span>
+3. <span data-ttu-id="a5391-117">Vyberte odkaz ve sloupci **Název** uživatelského účtu, který se zobrazí.</span><span class="sxs-lookup"><span data-stu-id="a5391-117">Select the link in the **Name** column of the user account that appears.</span></span>
+4. <span data-ttu-id="a5391-118">Vyberte záložku **Registrace času**.</span><span class="sxs-lookup"><span data-stu-id="a5391-118">Select the **Time registration** tab.</span></span>
+5. <span data-ttu-id="a5391-119">Vyberte **Aktivovat na terminálech registrace**.</span><span class="sxs-lookup"><span data-stu-id="a5391-119">Select **Activate on registration terminals**.</span></span>
+6. <span data-ttu-id="a5391-120">V následujících polích zadejte hodnoty:</span><span class="sxs-lookup"><span data-stu-id="a5391-120">Enter or select values in the following fields:</span></span>  
 
-    - <span data-ttu-id="246f9-121">**Skupina výpočtu**</span><span class="sxs-lookup"><span data-stu-id="246f9-121">**Calculation group**</span></span>  
-    - <span data-ttu-id="246f9-122">**Výchozí skupina výpočtu**</span><span class="sxs-lookup"><span data-stu-id="246f9-122">**Default calculation group**</span></span>  
-    - <span data-ttu-id="246f9-123">**Skupina schválení**</span><span class="sxs-lookup"><span data-stu-id="246f9-123">**Approval group**</span></span>  
-    - <span data-ttu-id="246f9-124">**Standardní profil**</span><span class="sxs-lookup"><span data-stu-id="246f9-124">**Standard profile**</span></span>  
-    - <span data-ttu-id="246f9-125">**Skupina profilu**</span><span class="sxs-lookup"><span data-stu-id="246f9-125">**Profile group**</span></span>  
+    - <span data-ttu-id="a5391-121">**Skupina výpočtu**</span><span class="sxs-lookup"><span data-stu-id="a5391-121">**Calculation group**</span></span>  
+    - <span data-ttu-id="a5391-122">**Výchozí skupina výpočtu**</span><span class="sxs-lookup"><span data-stu-id="a5391-122">**Default calculation group**</span></span>  
+    - <span data-ttu-id="a5391-123">**Skupina schválení**</span><span class="sxs-lookup"><span data-stu-id="a5391-123">**Approval group**</span></span>  
+    - <span data-ttu-id="a5391-124">**Standardní profil**</span><span class="sxs-lookup"><span data-stu-id="a5391-124">**Standard profile**</span></span>  
+    - <span data-ttu-id="a5391-125">**Skupina profilu**</span><span class="sxs-lookup"><span data-stu-id="a5391-125">**Profile group**</span></span>  
 
-7. <span data-ttu-id="246f9-126">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="246f9-126">Select **OK**.</span></span>
-8. <span data-ttu-id="246f9-127">Vyberte tlačítko **Upravit** zadejte číslo znaku pro novou registraci pracovníka.</span><span class="sxs-lookup"><span data-stu-id="246f9-127">Select **Edit** to enter a badge number for the new time registration worker.</span></span> <span data-ttu-id="246f9-128">V poli **ID znaku** zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="246f9-128">Enter a value in the **Badge ID** field.</span></span>
-9. <span data-ttu-id="246f9-129">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="246f9-129">Select **Save**.</span></span>
-10. <span data-ttu-id="246f9-130">Zavřete stránky **Podrobnosti o pracovníkovi** a **Pracovníci**.</span><span class="sxs-lookup"><span data-stu-id="246f9-130">Close the **Worker details** and **Workers** pages.</span></span>
+7. <span data-ttu-id="a5391-126">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="a5391-126">Select **OK**.</span></span>
+8. <span data-ttu-id="a5391-127">Vyberte tlačítko **Upravit** zadejte číslo znaku pro novou registraci pracovníka.</span><span class="sxs-lookup"><span data-stu-id="a5391-127">Select **Edit** to enter a badge number for the new time registration worker.</span></span> <span data-ttu-id="a5391-128">V poli **ID znaku** zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a5391-128">Enter a value in the **Badge ID** field.</span></span>
+9. <span data-ttu-id="a5391-129">Zvolte **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="a5391-129">Select **Save**.</span></span>
+10. <span data-ttu-id="a5391-130">Zavřete stránky **Podrobnosti o pracovníkovi** a **Pracovníci**.</span><span class="sxs-lookup"><span data-stu-id="a5391-130">Close the **Worker details** and **Workers** pages.</span></span>
 
-## <a name="assign-worker-to-device-group"></a><span data-ttu-id="246f9-131">Přiřaďte pracovníka ke skupině zařízení</span><span class="sxs-lookup"><span data-stu-id="246f9-131">Assign worker to device group</span></span>
-1. <span data-ttu-id="246f9-132">Přejděte do nabídky **Řízení výroby > Nastavení > Provádění výroby > Konfigurovat úkolový lístek pro zařízení**.</span><span class="sxs-lookup"><span data-stu-id="246f9-132">Go to **Production control > Setup > Manufacturing execution > Configure job card for devices**.</span></span>
-2. <span data-ttu-id="246f9-133">Vyberte **přidat**.</span><span class="sxs-lookup"><span data-stu-id="246f9-133">Select **Add**.</span></span>
-3. <span data-ttu-id="246f9-134">Vyberte požadovaného pracovníka v seznamu.</span><span class="sxs-lookup"><span data-stu-id="246f9-134">In the list, select the desired worker.</span></span> <span data-ttu-id="246f9-135">V tomto příkladu vyberte **SHANNON**.</span><span class="sxs-lookup"><span data-stu-id="246f9-135">For this example, select **SHANNON**.</span></span>
-4. <span data-ttu-id="246f9-136">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="246f9-136">Select **OK**.</span></span>
-5. <span data-ttu-id="246f9-137">Vyberte možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="246f9-137">Select **Edit**.</span></span>
-6. <span data-ttu-id="246f9-138">V poli **Výrobní jednotka** lze nastavit výchozí filtr pro pracovníka.</span><span class="sxs-lookup"><span data-stu-id="246f9-138">In the **Production unit** field, you can set the default filter for the worker.</span></span> <span data-ttu-id="246f9-139">Tím bude zajištěno, že pouze výrobní práce pro vybrané výrobní jednotky se zobrazí v případě, že se pracovník přihlásí k zařízení.</span><span class="sxs-lookup"><span data-stu-id="246f9-139">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span> <span data-ttu-id="246f9-140">Zadejte požadovanou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="246f9-140">Enter the desired value.</span></span>
-7. <span data-ttu-id="246f9-141">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="246f9-141">Close the page.</span></span>
+## <a name="assign-worker-to-device-group"></a><span data-ttu-id="a5391-131">Přiřaďte pracovníka ke skupině zařízení</span><span class="sxs-lookup"><span data-stu-id="a5391-131">Assign worker to device group</span></span>
+1. <span data-ttu-id="a5391-132">Přejděte do nabídky **Řízení výroby > Nastavení > Provádění výroby > Konfigurovat úkolový lístek pro zařízení**.</span><span class="sxs-lookup"><span data-stu-id="a5391-132">Go to **Production control > Setup > Manufacturing execution > Configure job card for devices**.</span></span>
+2. <span data-ttu-id="a5391-133">Vyberte **přidat**.</span><span class="sxs-lookup"><span data-stu-id="a5391-133">Select **Add**.</span></span>
+3. <span data-ttu-id="a5391-134">Vyberte požadovaného pracovníka v seznamu.</span><span class="sxs-lookup"><span data-stu-id="a5391-134">In the list, select the desired worker.</span></span> <span data-ttu-id="a5391-135">V tomto příkladu vyberte **SHANNON**.</span><span class="sxs-lookup"><span data-stu-id="a5391-135">For this example, select **SHANNON**.</span></span>
+4. <span data-ttu-id="a5391-136">Vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="a5391-136">Select **OK**.</span></span>
+5. <span data-ttu-id="a5391-137">Vyberte možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="a5391-137">Select **Edit**.</span></span>
+6. <span data-ttu-id="a5391-138">V poli **Výrobní jednotka** lze nastavit výchozí filtr pro pracovníka.</span><span class="sxs-lookup"><span data-stu-id="a5391-138">In the **Production unit** field, you can set the default filter for the worker.</span></span> <span data-ttu-id="a5391-139">Tím bude zajištěno, že pouze výrobní práce pro vybrané výrobní jednotky se zobrazí v případě, že se pracovník přihlásí k zařízení.</span><span class="sxs-lookup"><span data-stu-id="a5391-139">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span> <span data-ttu-id="a5391-140">Zadejte požadovanou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="a5391-140">Enter the desired value.</span></span>
+7. <span data-ttu-id="a5391-141">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="a5391-141">Close the page.</span></span>
 

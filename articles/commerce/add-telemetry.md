@@ -3,7 +3,7 @@ title: Přidání kódu skriptu na webové stránky pro podporu telemetrie
 description: V tomto tématu je popsán postup přidání kódu skriptu na straně klienta na stránky webu za účelem podpory kolekce telemetrie na straně klienta.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,60 +17,105 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 674d00faf1b30f87a0b0062129e1b9fbff955dd4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001270"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154079"
 ---
-# <a name="add-script-code-to-site-pages-to-support-telemetry"></a><span data-ttu-id="66d91-103">Přidání kódu skriptu na webové stránky pro podporu telemetrie</span><span class="sxs-lookup"><span data-stu-id="66d91-103">Add script code to site pages to support telemetry</span></span>
-
+# <a name="add-script-code-to-site-pages-to-support-telemetry"></a><span data-ttu-id="958df-103">Přidání kódu skriptu na webové stránky pro podporu telemetrie</span><span class="sxs-lookup"><span data-stu-id="958df-103">Add script code to site pages to support telemetry</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="66d91-104">V tomto tématu je popsán postup přidání kódu skriptu na straně klienta na stránky webu za účelem podpory kolekce telemetrie na straně klienta.</span><span class="sxs-lookup"><span data-stu-id="66d91-104">This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.</span></span>
+<span data-ttu-id="958df-104">V tomto tématu je popsán postup přidání kódu skriptu na straně klienta na stránky webu za účelem podpory kolekce telemetrie na straně klienta.</span><span class="sxs-lookup"><span data-stu-id="958df-104">This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="66d91-105">Přehled</span><span class="sxs-lookup"><span data-stu-id="66d91-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="958df-105">Přehled</span><span class="sxs-lookup"><span data-stu-id="958df-105">Overview</span></span>
 
-<span data-ttu-id="66d91-106">Služba Web Analytics je základní nástroj, který umožňuje pochopit, jakým způsobem zákazníci komunikují s webem, a učinit rozhodnutí, která pomohou optimalizovat prostředí s maximálním vylazením.</span><span class="sxs-lookup"><span data-stu-id="66d91-106">Web analytics are an essential tool when you want to understand how your customers interact with your site and make decisions that will help optimize the experience for maximum conversion.</span></span> <span data-ttu-id="66d91-107">K dispozici je mnoho balíčků služby Web Analytics, které vám pomohou dosáhnout těchto cílů, jako jsou služby Google Analytics, Clicky, Moz Analytics a KISSMetrics.</span><span class="sxs-lookup"><span data-stu-id="66d91-107">Many web analytics packages are available to help you achieve these goals, such as Google Analytics, Clicky, Moz Analytics, and KISSMetrics.</span></span> <span data-ttu-id="66d91-108">Většina balíčků služby Web Analytics vyžaduje přidání kódu skriptu na straně klienta do prvku **\<head\>** kódu HTML pro všechny stránky vašeho webu.</span><span class="sxs-lookup"><span data-stu-id="66d91-108">Most web analytics packages require that you add client-side script code in the **\<head\>** element of the HTML for all pages of your site.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="66d91-109">Pokyny v tomto tématu se vztahují také na jiné vlastní funkce na straně klienta, které řešení Microsoft Dynamics 365 Commerce nativně nenabízí.</span><span class="sxs-lookup"><span data-stu-id="66d91-109">The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.</span></span>
-
-## <a name="create-a-reusable-fragment-for-your-script-code"></a><span data-ttu-id="66d91-110">Vytvoření opakovaně použitelného fragmentu kódu skriptu</span><span class="sxs-lookup"><span data-stu-id="66d91-110">Create a reusable fragment for your script code</span></span>
-
-<span data-ttu-id="66d91-111">Po vytvoření fragmentu kódu skriptu jej lze opakovaně použít na všech stránkách vašeho webu.</span><span class="sxs-lookup"><span data-stu-id="66d91-111">After you create a fragment for your script code, it can be reused across all pages on your site.</span></span>
-
-1. <span data-ttu-id="66d91-112">Přejde na **Fragmenty \> Nový fragment stránky**.</span><span class="sxs-lookup"><span data-stu-id="66d91-112">Go to **Fragments \> New page fragment**.</span></span>
-2. <span data-ttu-id="66d91-113">Vyberte možnost **Externískript**, zadejte název fragmentu a poté klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="66d91-113">Select **External Script**, enter a name for the fragment, and then select **OK**.</span></span>
-3. <span data-ttu-id="66d91-114">V hierarchii fragmentů vyberte pro fragment, který jste právě vytvořili, podřízený modul **Injektor skriptu**.</span><span class="sxs-lookup"><span data-stu-id="66d91-114">In the fragment hierarchy, select the **script injector** module child of the fragment that you just created.</span></span>
-4. <span data-ttu-id="66d91-115">V podokně vlastností vpravo přidejte skript na straně klienta a nastavte další možnosti konfigurace podle potřeby.</span><span class="sxs-lookup"><span data-stu-id="66d91-115">In the property pane on the right, add your client-side script, and set other configuration options as you require.</span></span>
-
-## <a name="add-the-fragment-to-templates"></a><span data-ttu-id="66d91-116">Přidání fragmentu do šablon</span><span class="sxs-lookup"><span data-stu-id="66d91-116">Add the fragment to templates</span></span>
-
-1. <span data-ttu-id="66d91-117">Přejděte na **Šablony** a otevřete šablonu pro stránky, na které chcete přidat kód skriptu.</span><span class="sxs-lookup"><span data-stu-id="66d91-117">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
-2. <span data-ttu-id="66d91-118">V levém podokně rozbalte hierarchii šablon, aby se zobrazila pozice **Hlavička HTML**.</span><span class="sxs-lookup"><span data-stu-id="66d91-118">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
-3. <span data-ttu-id="66d91-119">Vyberte tlačítko se třemi tečkami (**...**) vedle pozice **Hlavička HTML** a poté vyberte možnost **Přidat fragment**.</span><span class="sxs-lookup"><span data-stu-id="66d91-119">Select the ellipsis button (**...**) for the **HTML Head** slot, and then select **Add fragment**.</span></span>
-4. <span data-ttu-id="66d91-120">Vyberte fragment, který jste pro kód skriptu vytvořili.</span><span class="sxs-lookup"><span data-stu-id="66d91-120">Select the fragment that you created for your script code.</span></span>
-5. <span data-ttu-id="66d91-121">Uložte šablonu a vraťte ji se změnami.</span><span class="sxs-lookup"><span data-stu-id="66d91-121">Save the template, and check it in.</span></span>
+<span data-ttu-id="958df-106">Služba Web Analytics je základní nástroj, který umožňuje pochopit, jakým způsobem zákazníci komunikují s webem, a učinit rozhodnutí, která pomohou optimalizovat prostředí s maximálním vylazením.</span><span class="sxs-lookup"><span data-stu-id="958df-106">Web analytics are an essential tool when you want to understand how your customers interact with your site and make decisions that will help optimize the experience for maximum conversion.</span></span> <span data-ttu-id="958df-107">K dispozici je mnoho balíčků služby Web Analytics, které vám pomohou dosáhnout těchto cílů, jako jsou služby Google Analytics, Clicky, Moz Analytics a KISSMetrics.</span><span class="sxs-lookup"><span data-stu-id="958df-107">Many web analytics packages are available to help you achieve these goals, such as Google Analytics, Clicky, Moz Analytics, and KISSMetrics.</span></span> <span data-ttu-id="958df-108">Většina balíčků služby Web Analytics vyžaduje přidání kódu skriptu na straně klienta do prvku **\<head\>** kódu HTML pro všechny stránky vašeho webu.</span><span class="sxs-lookup"><span data-stu-id="958df-108">Most web analytics packages require that you add client-side script code in the **\<head\>** element of the HTML for all pages of your site.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="66d91-122">Po dokončení je nutné publikovat fragment a hlavní šablonu.</span><span class="sxs-lookup"><span data-stu-id="66d91-122">After you've finished, you must publish the fragment and the master template.</span></span> 
+> <span data-ttu-id="958df-109">Pokyny v tomto tématu se vztahují také na jiné vlastní funkce na straně klienta, které řešení Microsoft Dynamics 365 Commerce nativně nenabízí.</span><span class="sxs-lookup"><span data-stu-id="958df-109">The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="66d91-123">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="66d91-123">Additional resources</span></span>
+## <a name="create-a-reusable-page-fragment-for-your-script-code"></a><span data-ttu-id="958df-110">Vytvoření opakovaně použitelného fragmentu stránky pro váš kód skriptu</span><span class="sxs-lookup"><span data-stu-id="958df-110">Create a reusable page fragment for your script code</span></span>
 
-[<span data-ttu-id="66d91-124">Přidání loga</span><span class="sxs-lookup"><span data-stu-id="66d91-124">Add a logo</span></span>](add-logo.md)
+<span data-ttu-id="958df-111">Fragment stránky umožňuje opakované použití vloženého nebo vnějšího kódu skriptu na všech stránkách vašeho webu bez ohledu na použitou šablonu.</span><span class="sxs-lookup"><span data-stu-id="958df-111">A page fragment allows you to reuse inline or external script code across all pages on your site, regardless of the template they use.</span></span>
 
-[<span data-ttu-id="66d91-125">Volba motivu webu</span><span class="sxs-lookup"><span data-stu-id="66d91-125">Select a site theme</span></span>](select-site-theme.md)
+### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a><span data-ttu-id="958df-112">Vytvoření opakovaně použitelného fragmentu stránky pro váš kód vloženého skriptu</span><span class="sxs-lookup"><span data-stu-id="958df-112">Create a reusable page fragment for your inline script code</span></span>
 
-[<span data-ttu-id="66d91-126">Práce se soubory přepisu šablon CSS</span><span class="sxs-lookup"><span data-stu-id="66d91-126">Work with CSS override files</span></span>](css-override-files.md)
+<span data-ttu-id="958df-113">Chcete-li vytvořit opakovaně použitelný fragment stránky pro vložený kód skriptu v rámci konfigurátoru webu, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="958df-113">To create a reusable page fragment for your inline script code in site builder, follow these steps.</span></span>
 
-[<span data-ttu-id="66d91-127">Přidání ikony oblíbené položky</span><span class="sxs-lookup"><span data-stu-id="66d91-127">Add a favicon</span></span>](add-favicon.md)
+1. <span data-ttu-id="958df-114">Přejděte na **Fragmenty stránky** a pak vyberte **Nový**.</span><span class="sxs-lookup"><span data-stu-id="958df-114">Go to **Page Fragments**, and then select **New**.</span></span>
+1. <span data-ttu-id="958df-115">V dialogovém okně **Nový fragment stránky** vyberte **vložený skript**.</span><span class="sxs-lookup"><span data-stu-id="958df-115">In the **New Page Fragment** dialog box, select **Inline script**.</span></span>
+1. <span data-ttu-id="958df-116">V části **Název fragmentu stránky** zadejte název fragmentu a poté vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="958df-116">Under **Page Fragment Name**, enter a name for the fragment, and then select **OK**.</span></span>
+1. <span data-ttu-id="958df-117">V rámci vytvořeného fragmentu stránky vyberte modul **Výchozí vložený skript**.</span><span class="sxs-lookup"><span data-stu-id="958df-117">Under the page fragment that you created, select the **Default inline script** module.</span></span>
+1. <span data-ttu-id="958df-118">V podokně vlastností vpravo v části **vložený skript**zadejte skript na straně klienta.</span><span class="sxs-lookup"><span data-stu-id="958df-118">In the property pane on the right, under **Inline script**, enter your client-side script.</span></span> <span data-ttu-id="958df-119">Poté nakonfigurujte další možnosti podle potřeby.</span><span class="sxs-lookup"><span data-stu-id="958df-119">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="958df-120">Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.</span><span class="sxs-lookup"><span data-stu-id="958df-120">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="958df-121">Zvolte **Publikovat**.</span><span class="sxs-lookup"><span data-stu-id="958df-121">Select **Publish**.</span></span>
 
-[<span data-ttu-id="66d91-128">Přidání uvítací zprávy</span><span class="sxs-lookup"><span data-stu-id="66d91-128">Add a welcome message</span></span>](add-welcome-message.md)
+### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a><span data-ttu-id="958df-122">Vytvoření opakovaně použitelného fragmentu stránky pro váš kód externího skriptu</span><span class="sxs-lookup"><span data-stu-id="958df-122">Create a reusable page fragment for your external script code</span></span>
 
-[<span data-ttu-id="66d91-129">Přidání oznámení o vlastnických právech</span><span class="sxs-lookup"><span data-stu-id="66d91-129">Add a copyright notice</span></span>](add-copyright-notice.md)
+<span data-ttu-id="958df-123">Chcete-li vytvořit opakovaně použitelný fragment stránky pro externí kód skriptu v rámci konfigurátoru webu, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="958df-123">To create a reusable page fragment for your external script code in site builder, follow these steps.</span></span>
 
-[<span data-ttu-id="66d91-130">Přidání jazyků na web</span><span class="sxs-lookup"><span data-stu-id="66d91-130">Add languages to your site</span></span>](add-languages-to-site.md)
+1. <span data-ttu-id="958df-124">Přejděte na **Fragmenty stránky** a pak vyberte **Nový**.</span><span class="sxs-lookup"><span data-stu-id="958df-124">Go to **Page Fragments**, and then select **New**.</span></span>
+1. <span data-ttu-id="958df-125">V dialogovém okně **Nový fragment stránky** vyberte **Externí skript**.</span><span class="sxs-lookup"><span data-stu-id="958df-125">In the **New Page Fragment** dialog box, select **External script**.</span></span>
+1. <span data-ttu-id="958df-126">V části **Název fragmentu stránky** zadejte název fragmentu a poté vyberte **OK**.</span><span class="sxs-lookup"><span data-stu-id="958df-126">Under **Page Fragment Name**, enter a name for the fragment, and then select **OK**.</span></span>
+1. <span data-ttu-id="958df-127">V rámci vytvořeného fragmentu stránky vyberte modul **Výchozí externí skript**.</span><span class="sxs-lookup"><span data-stu-id="958df-127">Under the page fragment that you created, select the **Default external script** module.</span></span>
+1. <span data-ttu-id="958df-128">V podokně vlastností vpravo v části **Zdroj skriptu** přidejte externí nebo relativní adresu URL pro externí zdroj skriptu.</span><span class="sxs-lookup"><span data-stu-id="958df-128">In the property pane on the right, under **Script source**, add an external or relative URL for the external script source.</span></span> <span data-ttu-id="958df-129">Poté nakonfigurujte další možnosti podle potřeby.</span><span class="sxs-lookup"><span data-stu-id="958df-129">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="958df-130">Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.</span><span class="sxs-lookup"><span data-stu-id="958df-130">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="958df-131">Zvolte **Publikovat**.</span><span class="sxs-lookup"><span data-stu-id="958df-131">Select **Publish**.</span></span>
 
+## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a><span data-ttu-id="958df-132">Přidat fragment stránky, který zahrnuje kód skriptu do šablony</span><span class="sxs-lookup"><span data-stu-id="958df-132">Add a page fragment that includes script code to a template</span></span>
+
+<span data-ttu-id="958df-133">Chcete-li přidat fragment stránky, který obsahuje kód skriptu v šabloně v rámci konfigurátoru webu, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="958df-133">To add a page fragment that includes script code to a template in site builder, follow these steps.</span></span>
+
+1. <span data-ttu-id="958df-134">Přejděte na **Šablony** a otevřete šablonu pro stránky, na které chcete přidat kód skriptu.</span><span class="sxs-lookup"><span data-stu-id="958df-134">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
+1. <span data-ttu-id="958df-135">V levém podokně rozbalte hierarchii šablon, aby se zobrazila pozice **Hlavička HTML**.</span><span class="sxs-lookup"><span data-stu-id="958df-135">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
+1. <span data-ttu-id="958df-136">Ve sůptu **Hlavička HTML** vyberte tlačítko se třemi tečkami (**...**) a poté vyberte možnost **Přidat fragment stránky**.</span><span class="sxs-lookup"><span data-stu-id="958df-136">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Page Fragment**.</span></span>
+1. <span data-ttu-id="958df-137">Vyberte fragment, který jste pro kód skriptu vytvořili.</span><span class="sxs-lookup"><span data-stu-id="958df-137">Select the fragment that you created for your script code.</span></span>
+1. <span data-ttu-id="958df-138">Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.</span><span class="sxs-lookup"><span data-stu-id="958df-138">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="958df-139">Zvolte **Publikovat**.</span><span class="sxs-lookup"><span data-stu-id="958df-139">Select **Publish**.</span></span>
+
+## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a><span data-ttu-id="958df-140">Přidání externího skriptu nebo vloženého skriptu přímo do šablony</span><span class="sxs-lookup"><span data-stu-id="958df-140">Add an external script or inline script directly to a template</span></span>
+
+<span data-ttu-id="958df-141">Chcete-li vložit vložený nebo externí skript přímo do sady stránek, která je řízena jedinou šablonou, nemusíte nejprve vytvořit fragment stránky.</span><span class="sxs-lookup"><span data-stu-id="958df-141">If you want to insert an inline or external script directly into a set of pages that are controlled by a single template, you don't have to create a page fragment first.</span></span>
+
+### <a name="add-an-inline-script-directly-to-a-template"></a><span data-ttu-id="958df-142">Přidání vloženého skriptu přímo do šablony</span><span class="sxs-lookup"><span data-stu-id="958df-142">Add an inline script directly to a template</span></span>
+
+<span data-ttu-id="958df-143">Chcete-li přidat vložený skript přímo do šablony v rámci konfigurátoru webu, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="958df-143">To add an inline script directly to a template in site builder, follow these steps.</span></span>
+
+1. <span data-ttu-id="958df-144">Přejděte na **Šablony** a otevřete šablonu pro stránky, na které chcete přidat kód skriptu.</span><span class="sxs-lookup"><span data-stu-id="958df-144">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
+1. <span data-ttu-id="958df-145">V levém podokně rozbalte hierarchii šablon, aby se zobrazila pozice **Hlavička HTML**.</span><span class="sxs-lookup"><span data-stu-id="958df-145">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
+1. <span data-ttu-id="958df-146">Ve sůptu **Hlavička HTML** vyberte tlačítko se třemi tečkami (**...**) a poté vyberte možnost **Přidat modul**.</span><span class="sxs-lookup"><span data-stu-id="958df-146">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="958df-147">V dialogovém okně **Přidat modul** vyberte **vložený skript**.</span><span class="sxs-lookup"><span data-stu-id="958df-147">In the **Add Module** dialog box, select **Inline script**.</span></span>
+1. <span data-ttu-id="958df-148">V podokně vlastností vpravo v části **vložený skript**zadejte skript na straně klienta.</span><span class="sxs-lookup"><span data-stu-id="958df-148">In the property pane on the right, under **Inline script**, enter your client-side script.</span></span> <span data-ttu-id="958df-149">Poté nakonfigurujte další možnosti podle potřeby.</span><span class="sxs-lookup"><span data-stu-id="958df-149">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="958df-150">Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.</span><span class="sxs-lookup"><span data-stu-id="958df-150">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="958df-151">Zvolte **Publikovat**.</span><span class="sxs-lookup"><span data-stu-id="958df-151">Select **Publish**.</span></span>
+
+### <a name="add-an-external-script-directly-to-a-template"></a><span data-ttu-id="958df-152">Přidání externího skriptu přímo do šablony</span><span class="sxs-lookup"><span data-stu-id="958df-152">Add an external script directly to a template</span></span>
+
+<span data-ttu-id="958df-153">Chcete-li přidat externí skript přímo do šablony v rámci konfigurátoru webu, postupujte podle následujících kroků.</span><span class="sxs-lookup"><span data-stu-id="958df-153">To add an external script directly to a template in site builder, follow these steps.</span></span>
+
+1. <span data-ttu-id="958df-154">Přejděte na **Šablony** a otevřete šablonu pro stránky, na které chcete přidat kód skriptu.</span><span class="sxs-lookup"><span data-stu-id="958df-154">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
+1. <span data-ttu-id="958df-155">V levém podokně rozbalte hierarchii šablon, aby se zobrazila pozice **Hlavička HTML**.</span><span class="sxs-lookup"><span data-stu-id="958df-155">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
+1. <span data-ttu-id="958df-156">Ve sůptu **Hlavička HTML** vyberte tlačítko se třemi tečkami (**...**) a poté vyberte možnost **Přidat modul**.</span><span class="sxs-lookup"><span data-stu-id="958df-156">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="958df-157">V dialogovém okně **Přidat modul** vyberte **Externí skript**.</span><span class="sxs-lookup"><span data-stu-id="958df-157">In the **Add Module** dialog box, select **External script**.</span></span>
+1. <span data-ttu-id="958df-158">V podokně vlastností vpravo v části **Zdroj skriptu** přidejte externí nebo relativní adresu URL pro externí zdroj skriptu.</span><span class="sxs-lookup"><span data-stu-id="958df-158">In the property pane on the right, under **Script source**, add an external or relative URL for the external script source.</span></span> <span data-ttu-id="958df-159">Poté nakonfigurujte další možnosti podle potřeby.</span><span class="sxs-lookup"><span data-stu-id="958df-159">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="958df-160">Vyberte **Uložit** a potom vyberte **Dokončit úpravy**.</span><span class="sxs-lookup"><span data-stu-id="958df-160">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="958df-161">Zvolte **Publikovat**.</span><span class="sxs-lookup"><span data-stu-id="958df-161">Select **Publish**.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="958df-162">Další prostředky</span><span class="sxs-lookup"><span data-stu-id="958df-162">Additional resources</span></span>
+
+[<span data-ttu-id="958df-163">Přidání loga</span><span class="sxs-lookup"><span data-stu-id="958df-163">Add a logo</span></span>](add-logo.md)
+
+[<span data-ttu-id="958df-164">Volba motivu webu</span><span class="sxs-lookup"><span data-stu-id="958df-164">Select a site theme</span></span>](select-site-theme.md)
+
+[<span data-ttu-id="958df-165">Práce se soubory přepisu šablon CSS</span><span class="sxs-lookup"><span data-stu-id="958df-165">Work with CSS override files</span></span>](css-override-files.md)
+
+[<span data-ttu-id="958df-166">Přidání ikony oblíbené položky</span><span class="sxs-lookup"><span data-stu-id="958df-166">Add a favicon</span></span>](add-favicon.md)
+
+[<span data-ttu-id="958df-167">Přidání uvítací zprávy</span><span class="sxs-lookup"><span data-stu-id="958df-167">Add a welcome message</span></span>](add-welcome-message.md)
+
+[<span data-ttu-id="958df-168">Přidání oznámení o vlastnických právech</span><span class="sxs-lookup"><span data-stu-id="958df-168">Add a copyright notice</span></span>](add-copyright-notice.md)
+
+[<span data-ttu-id="958df-169">Přidání jazyků na web</span><span class="sxs-lookup"><span data-stu-id="958df-169">Add languages to your site</span></span>](add-languages-to-site.md)

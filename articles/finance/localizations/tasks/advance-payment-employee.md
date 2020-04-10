@@ -16,158 +16,158 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cfc03cb9dc35a27f99b740da181fe54aa2e684d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1fe975f802a8d8080a306d9ac1cedb377f280690
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175087"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137978"
 ---
-# <a name="eeu-00047-advance-payment-to-employee"></a><span data-ttu-id="e24a6-103">EEU 00047 Záloha pro zaměstnance</span><span class="sxs-lookup"><span data-stu-id="e24a6-103">EEU-00047 Advance payment to employee</span></span>
+# <a name="eeu-00047-advance-payment-to-employee"></a><span data-ttu-id="8c4ee-103">EEU 00047 Záloha pro zaměstnance</span><span class="sxs-lookup"><span data-stu-id="8c4ee-103">EEU-00047 Advance payment to employee</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="e24a6-104">Tato procedura ukazuje, jak lze nastavit a registrovat transakce pro držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="e24a6-104">This procedure demonstrates how to set up and register transactions for an advance holder.</span></span> <span data-ttu-id="e24a6-105">Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Litvě.</span><span class="sxs-lookup"><span data-stu-id="e24a6-105">This procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="e24a6-106">Tento úkol lze použít pouze pro právnické osoby s primární adresu v Polsku, Litvě, Lotyšsku, Estonsku, České republice nebo Maďarsku.</span><span class="sxs-lookup"><span data-stu-id="e24a6-106">This task only works for legal entities with a primary address in Poland, Lithuania, Latvia, Estonia, Czech Republic, or Hungary.</span></span> <span data-ttu-id="e24a6-107">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="e24a6-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="8c4ee-104">Tato procedura ukazuje, jak lze nastavit a registrovat transakce pro držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-104">This procedure demonstrates how to set up and register transactions for an advance holder.</span></span> <span data-ttu-id="8c4ee-105">Procedura byla vytvořena za použití ukázkových dat společnosti DEMF s primární adresou právnické osoby v Litvě.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-105">This procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="8c4ee-106">Tento úkol lze použít pouze pro právnické osoby s primární adresu v Polsku, Litvě, Lotyšsku, Estonsku, České republice nebo Maďarsku.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-106">This task only works for legal entities with a primary address in Poland, Lithuania, Latvia, Estonia, Czech Republic, or Hungary.</span></span> <span data-ttu-id="8c4ee-107">Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-new-cash-account"></a><span data-ttu-id="e24a6-108">Vytvoření nového bankovního účtu</span><span class="sxs-lookup"><span data-stu-id="e24a6-108">Create a new cash account</span></span>
-1. <span data-ttu-id="e24a6-109">Přejděte do nabídky Pokladna a banka > Bankovní účty > Pokladní účty.</span><span class="sxs-lookup"><span data-stu-id="e24a6-109">Go to Cash and bank management > Bank accounts > Cash accounts.</span></span>
-2. <span data-ttu-id="e24a6-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e24a6-110">Click New.</span></span>
-3. <span data-ttu-id="e24a6-111">Zadejte hodnotu do pole Hotovost.</span><span class="sxs-lookup"><span data-stu-id="e24a6-111">In the Cash field, type a value.</span></span>
-4. <span data-ttu-id="e24a6-112">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="e24a6-112">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="e24a6-113">V poli Skupina číselné řady zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-113">In the Number sequence group field, enter or select a value.</span></span>
-6. <span data-ttu-id="e24a6-114">Rozbalte sekci Ověření.</span><span class="sxs-lookup"><span data-stu-id="e24a6-114">Expand the Validation section.</span></span>
-7. <span data-ttu-id="e24a6-115">V poli Měna zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-115">In the Currency field, enter or select a value.</span></span>
-8. <span data-ttu-id="e24a6-116">Vyberte možnost Ano v poli Záporná hotovost.</span><span class="sxs-lookup"><span data-stu-id="e24a6-116">Select Yes in the Negative cash field.</span></span>
-9. <span data-ttu-id="e24a6-117">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-117">Click Save.</span></span>
+## <a name="create-a-new-cash-account"></a><span data-ttu-id="8c4ee-108">Vytvoření nového bankovního účtu</span><span class="sxs-lookup"><span data-stu-id="8c4ee-108">Create a new cash account</span></span>
+1. <span data-ttu-id="8c4ee-109">Přejděte do nabídky Pokladna a banka > Bankovní účty > Pokladní účty.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-109">Go to Cash and bank management > Bank accounts > Cash accounts.</span></span>
+2. <span data-ttu-id="8c4ee-110">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-110">Click New.</span></span>
+3. <span data-ttu-id="8c4ee-111">Zadejte hodnotu do pole Hotovost.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-111">In the Cash field, type a value.</span></span>
+4. <span data-ttu-id="8c4ee-112">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-112">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="8c4ee-113">V poli Skupina číselné řady zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-113">In the Number sequence group field, enter or select a value.</span></span>
+6. <span data-ttu-id="8c4ee-114">Rozbalte sekci Ověření.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-114">Expand the Validation section.</span></span>
+7. <span data-ttu-id="8c4ee-115">V poli Měna zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-115">In the Currency field, enter or select a value.</span></span>
+8. <span data-ttu-id="8c4ee-116">Vyberte možnost Ano v poli Záporná hotovost.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-116">Select Yes in the Negative cash field.</span></span>
+9. <span data-ttu-id="8c4ee-117">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-117">Click Save.</span></span>
 
-## <a name="create-a-new-journal"></a><span data-ttu-id="e24a6-118">Vytvoření nového deníku</span><span class="sxs-lookup"><span data-stu-id="e24a6-118">Create a new journal</span></span>
-1. <span data-ttu-id="e24a6-119">Přejděte do hlavní knihy > Nastavení deníku > Názvy deníků.</span><span class="sxs-lookup"><span data-stu-id="e24a6-119">Go to General ledger > Journal setup > Journal names.</span></span>
-2. <span data-ttu-id="e24a6-120">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e24a6-120">Click New.</span></span>
-3. <span data-ttu-id="e24a6-121">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="e24a6-121">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="e24a6-122">V poli Číselná řada dokladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-122">In the Voucher series field, enter or select a value.</span></span>
-5. <span data-ttu-id="e24a6-123">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-123">Click Save.</span></span>
-6. <span data-ttu-id="e24a6-124">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="e24a6-124">Click New.</span></span>
-7. <span data-ttu-id="e24a6-125">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="e24a6-125">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="e24a6-126">Vyberte volbu v poli Typ deníku.</span><span class="sxs-lookup"><span data-stu-id="e24a6-126">In the Journal type field, select an option.</span></span>
-9. <span data-ttu-id="e24a6-127">V poli Číselná řada dokladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-127">In the Voucher series field, enter or select a value.</span></span>
-10. <span data-ttu-id="e24a6-128">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-128">Click Save.</span></span>
+## <a name="create-a-new-journal"></a><span data-ttu-id="8c4ee-118">Vytvoření nového deníku</span><span class="sxs-lookup"><span data-stu-id="8c4ee-118">Create a new journal</span></span>
+1. <span data-ttu-id="8c4ee-119">Přejděte do hlavní knihy > Nastavení deníku > Názvy deníků.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-119">Go to General ledger > Journal setup > Journal names.</span></span>
+2. <span data-ttu-id="8c4ee-120">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-120">Click New.</span></span>
+3. <span data-ttu-id="8c4ee-121">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-121">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="8c4ee-122">V poli Číselná řada dokladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-122">In the Voucher series field, enter or select a value.</span></span>
+5. <span data-ttu-id="8c4ee-123">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-123">Click Save.</span></span>
+6. <span data-ttu-id="8c4ee-124">Klepněte na možnost Nový.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-124">Click New.</span></span>
+7. <span data-ttu-id="8c4ee-125">Zadejte hodnotu do pole Název.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-125">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="8c4ee-126">Vyberte volbu v poli Typ deníku.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-126">In the Journal type field, select an option.</span></span>
+9. <span data-ttu-id="8c4ee-127">V poli Číselná řada dokladů zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-127">In the Voucher series field, enter or select a value.</span></span>
+10. <span data-ttu-id="8c4ee-128">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-128">Click Save.</span></span>
 
-## <a name="create-an-advance-holder-group"></a><span data-ttu-id="e24a6-129">Vytvoření skupiny držitelů záloh</span><span class="sxs-lookup"><span data-stu-id="e24a6-129">Create an advance holder group</span></span>
-1. <span data-ttu-id="e24a6-130">Přejděte na Závazky > Nastavení > Držitelé zálohy > Skupiny držitelů záloh.</span><span class="sxs-lookup"><span data-stu-id="e24a6-130">Go to Accounts payable > Setup > Advance holders > Advance holder groups.</span></span>
-2. <span data-ttu-id="e24a6-131">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e24a6-131">Click New.</span></span>
-3. <span data-ttu-id="e24a6-132">Zadejte hodnotu do pole Skupina.</span><span class="sxs-lookup"><span data-stu-id="e24a6-132">In the Group field, type a value.</span></span>
-4. <span data-ttu-id="e24a6-133">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e24a6-133">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="e24a6-134">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-134">Click Save.</span></span>
+## <a name="create-an-advance-holder-group"></a><span data-ttu-id="8c4ee-129">Vytvoření skupiny držitelů záloh</span><span class="sxs-lookup"><span data-stu-id="8c4ee-129">Create an advance holder group</span></span>
+1. <span data-ttu-id="8c4ee-130">Přejděte na Závazky > Nastavení > Držitelé zálohy > Skupiny držitelů záloh.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-130">Go to Accounts payable > Setup > Advance holders > Advance holder groups.</span></span>
+2. <span data-ttu-id="8c4ee-131">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-131">Click New.</span></span>
+3. <span data-ttu-id="8c4ee-132">Zadejte hodnotu do pole Skupina.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-132">In the Group field, type a value.</span></span>
+4. <span data-ttu-id="8c4ee-133">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-133">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="8c4ee-134">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-134">Click Save.</span></span>
 
-## <a name="create-an-employee-posting-profile"></a><span data-ttu-id="e24a6-135">Vytvoření účetního profilu zaměstnance</span><span class="sxs-lookup"><span data-stu-id="e24a6-135">Create an employee posting profile</span></span>
-1. <span data-ttu-id="e24a6-136">Přejděte na Závazky > Nastavení > Držitelé zálohy > Účetní profily zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="e24a6-136">Go to Accounts payable > Setup > Advance holders > Employee posting profiles.</span></span>
-2. <span data-ttu-id="e24a6-137">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e24a6-137">Click New.</span></span>
-3. <span data-ttu-id="e24a6-138">Zadejte hodnotu do pole Účetní profil.</span><span class="sxs-lookup"><span data-stu-id="e24a6-138">In the Posting profile field, type a value.</span></span>
-4. <span data-ttu-id="e24a6-139">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e24a6-139">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="e24a6-140">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="e24a6-140">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="e24a6-141">Vyberte volbu v poli Platné pro.</span><span class="sxs-lookup"><span data-stu-id="e24a6-141">In the Valid for field, select an option.</span></span>
-7. <span data-ttu-id="e24a6-142">Zadejte požadované hodnoty do pole Součtový účet.</span><span class="sxs-lookup"><span data-stu-id="e24a6-142">In the Summary account field, specify the desired values.</span></span>
-8. <span data-ttu-id="e24a6-143">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-143">Click Save.</span></span>
+## <a name="create-an-employee-posting-profile"></a><span data-ttu-id="8c4ee-135">Vytvoření účetního profilu zaměstnance</span><span class="sxs-lookup"><span data-stu-id="8c4ee-135">Create an employee posting profile</span></span>
+1. <span data-ttu-id="8c4ee-136">Přejděte na Závazky > Nastavení > Držitelé zálohy > Účetní profily zaměstnanců.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-136">Go to Accounts payable > Setup > Advance holders > Employee posting profiles.</span></span>
+2. <span data-ttu-id="8c4ee-137">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-137">Click New.</span></span>
+3. <span data-ttu-id="8c4ee-138">Zadejte hodnotu do pole Účetní profil.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-138">In the Posting profile field, type a value.</span></span>
+4. <span data-ttu-id="8c4ee-139">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-139">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="8c4ee-140">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-140">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="8c4ee-141">Vyberte volbu v poli Platné pro.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-141">In the Valid for field, select an option.</span></span>
+7. <span data-ttu-id="8c4ee-142">Zadejte požadované hodnoty do pole Součtový účet.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-142">In the Summary account field, specify the desired values.</span></span>
+8. <span data-ttu-id="8c4ee-143">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-143">Click Save.</span></span>
 
-## <a name="set-up-advance-holder-parameters"></a><span data-ttu-id="e24a6-144">Nastavení parametrů držitele zálohy</span><span class="sxs-lookup"><span data-stu-id="e24a6-144">Set up advance holder parameters</span></span>
-1. <span data-ttu-id="e24a6-145">Přejděte do nabídky Závazky > Nastavení > Parametry závazků.</span><span class="sxs-lookup"><span data-stu-id="e24a6-145">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
-2. <span data-ttu-id="e24a6-146">Klepněte na kartu Držitelé zálohy.</span><span class="sxs-lookup"><span data-stu-id="e24a6-146">Click the Advance holders tab.</span></span>
-3. <span data-ttu-id="e24a6-147">V poli Účetní profil zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-147">In the Posting profile field, enter or select a value.</span></span>
-4. <span data-ttu-id="e24a6-148">V poli Název zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-148">In the Name field, enter or select a value.</span></span>
-5. <span data-ttu-id="e24a6-149">V poli Hotovost zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-149">In the Cash field, enter or select a value.</span></span>
-6. <span data-ttu-id="e24a6-150">V poli Název zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-150">In the Name field, enter or select a value.</span></span>
-7. <span data-ttu-id="e24a6-151">V poli Typ účtu vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="e24a6-151">In the Account type field, select an option.</span></span>
-8. <span data-ttu-id="e24a6-152">Zadejte požadované hodnoty do pole Hlavní účet.</span><span class="sxs-lookup"><span data-stu-id="e24a6-152">In the Main account field, specify the desired values.</span></span>
-9. <span data-ttu-id="e24a6-153">Klikněte na kartu Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="e24a6-153">Click the Number sequences tab.</span></span>
-10. <span data-ttu-id="e24a6-154">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-154">Click Save.</span></span>
+## <a name="set-up-advance-holder-parameters"></a><span data-ttu-id="8c4ee-144">Nastavení parametrů držitele zálohy</span><span class="sxs-lookup"><span data-stu-id="8c4ee-144">Set up advance holder parameters</span></span>
+1. <span data-ttu-id="8c4ee-145">Přejděte do nabídky Závazky > Nastavení > Parametry závazků.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-145">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
+2. <span data-ttu-id="8c4ee-146">Klepněte na kartu Držitelé zálohy.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-146">Click the Advance holders tab.</span></span>
+3. <span data-ttu-id="8c4ee-147">V poli Účetní profil zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-147">In the Posting profile field, enter or select a value.</span></span>
+4. <span data-ttu-id="8c4ee-148">V poli Název zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-148">In the Name field, enter or select a value.</span></span>
+5. <span data-ttu-id="8c4ee-149">V poli Hotovost zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-149">In the Cash field, enter or select a value.</span></span>
+6. <span data-ttu-id="8c4ee-150">V poli Název zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-150">In the Name field, enter or select a value.</span></span>
+7. <span data-ttu-id="8c4ee-151">V poli Typ účtu vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-151">In the Account type field, select an option.</span></span>
+8. <span data-ttu-id="8c4ee-152">Zadejte požadované hodnoty do pole Hlavní účet.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-152">In the Main account field, specify the desired values.</span></span>
+9. <span data-ttu-id="8c4ee-153">Klikněte na kartu Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-153">Click the Number sequences tab.</span></span>
+10. <span data-ttu-id="8c4ee-154">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-154">Click Save.</span></span>
 
-## <a name="set-up-a-cash-posting-profile"></a><span data-ttu-id="e24a6-155">Nastavení účetního profilu pro hotovost</span><span class="sxs-lookup"><span data-stu-id="e24a6-155">Set up a cash posting profile</span></span>
-1. <span data-ttu-id="e24a6-156">Přejděte do nabídky Pokladna a banka > Nastavení > Účetní profily pro hotovost.</span><span class="sxs-lookup"><span data-stu-id="e24a6-156">Go to Cash and bank management > Setup > Cash posting profiles.</span></span>
-2. <span data-ttu-id="e24a6-157">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e24a6-157">Click New.</span></span>
-3. <span data-ttu-id="e24a6-158">Zadejte hodnotu do pole Účtování hotovosti.</span><span class="sxs-lookup"><span data-stu-id="e24a6-158">In the Cash posting field, type a value.</span></span>
-4. <span data-ttu-id="e24a6-159">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="e24a6-159">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="e24a6-160">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="e24a6-160">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="e24a6-161">Vyberte volbu v poli Platné pro.</span><span class="sxs-lookup"><span data-stu-id="e24a6-161">In the Valid for field, select an option.</span></span>
-7. <span data-ttu-id="e24a6-162">Zadejte požadované hodnoty do pole Hlavní účet.</span><span class="sxs-lookup"><span data-stu-id="e24a6-162">In the Main account field, specify the desired values.</span></span>
-8. <span data-ttu-id="e24a6-163">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-163">Click Save.</span></span>
+## <a name="set-up-a-cash-posting-profile"></a><span data-ttu-id="8c4ee-155">Nastavení účetního profilu pro hotovost</span><span class="sxs-lookup"><span data-stu-id="8c4ee-155">Set up a cash posting profile</span></span>
+1. <span data-ttu-id="8c4ee-156">Přejděte do nabídky Pokladna a banka > Nastavení > Účetní profily pro hotovost.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-156">Go to Cash and bank management > Setup > Cash posting profiles.</span></span>
+2. <span data-ttu-id="8c4ee-157">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-157">Click New.</span></span>
+3. <span data-ttu-id="8c4ee-158">Zadejte hodnotu do pole Účtování hotovosti.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-158">In the Cash posting field, type a value.</span></span>
+4. <span data-ttu-id="8c4ee-159">Zadejte nějakou hodnotu do pole Popis.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-159">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="8c4ee-160">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-160">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="8c4ee-161">Vyberte volbu v poli Platné pro.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-161">In the Valid for field, select an option.</span></span>
+7. <span data-ttu-id="8c4ee-162">Zadejte požadované hodnoty do pole Hlavní účet.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-162">In the Main account field, specify the desired values.</span></span>
+8. <span data-ttu-id="8c4ee-163">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-163">Click Save.</span></span>
 
-## <a name="set-up-cash-and-bank-parameters"></a><span data-ttu-id="e24a6-164">Nastavení parametrů pokladny a banky</span><span class="sxs-lookup"><span data-stu-id="e24a6-164">Set up cash and bank parameters</span></span>
-1. <span data-ttu-id="e24a6-165">Přejděte do nabídky Pokladna a banka > Nastavení > Parametry pokladny a banky.</span><span class="sxs-lookup"><span data-stu-id="e24a6-165">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
-2. <span data-ttu-id="e24a6-166">Klikněte na kartu Hotovost.</span><span class="sxs-lookup"><span data-stu-id="e24a6-166">Click the Cash tab.</span></span>
-3. <span data-ttu-id="e24a6-167">V poli Hotovost zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-167">In the Cash field, enter or select a value.</span></span>
-4. <span data-ttu-id="e24a6-168">V poli Účtování hotovosti nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-168">In the Cash posting field, enter or select a value.</span></span>
-5. <span data-ttu-id="e24a6-169">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-169">Click Save.</span></span>
-6. <span data-ttu-id="e24a6-170">Klikněte na kartu Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="e24a6-170">Click the Number sequences tab.</span></span>
-7. <span data-ttu-id="e24a6-171">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e24a6-171">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="e24a6-172">V poli Kód číselné řady zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-172">In the Number sequence code field, enter or select a value.</span></span>
-9. <span data-ttu-id="e24a6-173">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="e24a6-173">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="e24a6-174">V poli Kód číselné řady zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-174">In the Number sequence code field, enter or select a value.</span></span>
-11. <span data-ttu-id="e24a6-175">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-175">Click Save.</span></span>
+## <a name="set-up-cash-and-bank-parameters"></a><span data-ttu-id="8c4ee-164">Nastavení parametrů pokladny a banky</span><span class="sxs-lookup"><span data-stu-id="8c4ee-164">Set up cash and bank parameters</span></span>
+1. <span data-ttu-id="8c4ee-165">Přejděte do nabídky Pokladna a banka > Nastavení > Parametry pokladny a banky.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-165">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
+2. <span data-ttu-id="8c4ee-166">Klikněte na kartu Hotovost.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-166">Click the Cash tab.</span></span>
+3. <span data-ttu-id="8c4ee-167">V poli Hotovost zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-167">In the Cash field, enter or select a value.</span></span>
+4. <span data-ttu-id="8c4ee-168">V poli Účtování hotovosti nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-168">In the Cash posting field, enter or select a value.</span></span>
+5. <span data-ttu-id="8c4ee-169">Klepněte na tlačítko Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-169">Click Save.</span></span>
+6. <span data-ttu-id="8c4ee-170">Klikněte na kartu Číselné řady.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-170">Click the Number sequences tab.</span></span>
+7. <span data-ttu-id="8c4ee-171">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-171">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="8c4ee-172">V poli Kód číselné řady zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-172">In the Number sequence code field, enter or select a value.</span></span>
+9. <span data-ttu-id="8c4ee-173">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-173">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="8c4ee-174">V poli Kód číselné řady zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-174">In the Number sequence code field, enter or select a value.</span></span>
+11. <span data-ttu-id="8c4ee-175">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-175">Click Save.</span></span>
 
-## <a name="set-up-terms-of-payment"></a><span data-ttu-id="e24a6-176">Nastavit podmínky platby</span><span class="sxs-lookup"><span data-stu-id="e24a6-176">Set up terms of payment</span></span>
-1. <span data-ttu-id="e24a6-177">Přejděte do nabídky Závazky > Nastavení platby > Podmínky platby.</span><span class="sxs-lookup"><span data-stu-id="e24a6-177">Go to Accounts payable > Payment setup > Terms of payment.</span></span>
-2. <span data-ttu-id="e24a6-178">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-178">Click Edit.</span></span>
-3. <span data-ttu-id="e24a6-179">Vyberte možnost Ano v poli Od držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="e24a6-179">Select Yes in the From advance holder field.</span></span>
-4. <span data-ttu-id="e24a6-180">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-180">Click Save.</span></span>
+## <a name="set-up-terms-of-payment"></a><span data-ttu-id="8c4ee-176">Nastavit podmínky platby</span><span class="sxs-lookup"><span data-stu-id="8c4ee-176">Set up terms of payment</span></span>
+1. <span data-ttu-id="8c4ee-177">Přejděte do nabídky Závazky > Nastavení platby > Podmínky platby.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-177">Go to Accounts payable > Payment setup > Terms of payment.</span></span>
+2. <span data-ttu-id="8c4ee-178">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-178">Click Edit.</span></span>
+3. <span data-ttu-id="8c4ee-179">Vyberte možnost Ano v poli Od držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-179">Select Yes in the From advance holder field.</span></span>
+4. <span data-ttu-id="8c4ee-180">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-180">Click Save.</span></span>
 
-## <a name="create-a-new-worker"></a><span data-ttu-id="e24a6-181">Vytvoření nového pracovníka</span><span class="sxs-lookup"><span data-stu-id="e24a6-181">Create a new worker</span></span>
-1. <span data-ttu-id="e24a6-182">Přejděte k nabídce Lidské zdroje > Pracovníci > Pracovníci.</span><span class="sxs-lookup"><span data-stu-id="e24a6-182">Go to Human resources > Workers > Workers.</span></span>
-2. <span data-ttu-id="e24a6-183">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e24a6-183">Click New.</span></span>
-3. <span data-ttu-id="e24a6-184">Do pole Křestní jméno zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-184">In the First name field, type a value.</span></span>
-4. <span data-ttu-id="e24a6-185">Do pole příjmení zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-185">In the Last name field, type a value.</span></span>
-5. <span data-ttu-id="e24a6-186">Zadejte hodnotu do pole ID pracovníka.</span><span class="sxs-lookup"><span data-stu-id="e24a6-186">In the Worker ID field, type a value.</span></span>
-6. <span data-ttu-id="e24a6-187">Klikněte na Přijmout nového pracovníka.</span><span class="sxs-lookup"><span data-stu-id="e24a6-187">Click Hire new worker.</span></span>
-7. <span data-ttu-id="e24a6-188">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-188">Click Save.</span></span>
+## <a name="create-a-new-worker"></a><span data-ttu-id="8c4ee-181">Vytvoření nového pracovníka</span><span class="sxs-lookup"><span data-stu-id="8c4ee-181">Create a new worker</span></span>
+1. <span data-ttu-id="8c4ee-182">Přejděte k nabídce Lidské zdroje > Pracovníci > Pracovníci.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-182">Go to Human resources > Workers > Workers.</span></span>
+2. <span data-ttu-id="8c4ee-183">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-183">Click New.</span></span>
+3. <span data-ttu-id="8c4ee-184">Do pole Křestní jméno zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-184">In the First name field, type a value.</span></span>
+4. <span data-ttu-id="8c4ee-185">Do pole příjmení zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-185">In the Last name field, type a value.</span></span>
+5. <span data-ttu-id="8c4ee-186">Zadejte hodnotu do pole ID pracovníka.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-186">In the Worker ID field, type a value.</span></span>
+6. <span data-ttu-id="8c4ee-187">Klikněte na Přijmout nového pracovníka.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-187">Click Hire new worker.</span></span>
+7. <span data-ttu-id="8c4ee-188">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-188">Click Save.</span></span>
 
-## <a name="set-up-a-worker-as-an-advance-holder"></a><span data-ttu-id="e24a6-189">Nastavení pracovníka jako držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="e24a6-189">Set up a worker as an advance holder</span></span>
-1. <span data-ttu-id="e24a6-190">Přejděte na Závazky > Držitelé zálohy > Držitelé zálohy.</span><span class="sxs-lookup"><span data-stu-id="e24a6-190">Go to Accounts payable > Advance holders > Advance holders.</span></span>
-2. <span data-ttu-id="e24a6-191">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-191">Click Edit.</span></span>
-3. <span data-ttu-id="e24a6-192">V poli Skupina zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-192">In the Group field, enter or select a value.</span></span>
-4. <span data-ttu-id="e24a6-193">Vyberte možnost Ano v poli Držitel zálohy.</span><span class="sxs-lookup"><span data-stu-id="e24a6-193">Select Yes in the Advance holder field.</span></span>
-5. <span data-ttu-id="e24a6-194">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-194">Click Save.</span></span>
+## <a name="set-up-a-worker-as-an-advance-holder"></a><span data-ttu-id="8c4ee-189">Nastavení pracovníka jako držitele zálohy.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-189">Set up a worker as an advance holder</span></span>
+1. <span data-ttu-id="8c4ee-190">Přejděte na Závazky > Držitelé zálohy > Držitelé zálohy.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-190">Go to Accounts payable > Advance holders > Advance holders.</span></span>
+2. <span data-ttu-id="8c4ee-191">Klikněte na položku Upravit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-191">Click Edit.</span></span>
+3. <span data-ttu-id="8c4ee-192">V poli Skupina zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-192">In the Group field, enter or select a value.</span></span>
+4. <span data-ttu-id="8c4ee-193">Vyberte možnost Ano v poli Držitel zálohy.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-193">Select Yes in the Advance holder field.</span></span>
+5. <span data-ttu-id="8c4ee-194">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-194">Click Save.</span></span>
 
-## <a name="create-and-post-a-purchase-order-invoice"></a><span data-ttu-id="e24a6-195">Vytvoření a zaúčtování faktury nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="e24a6-195">Create and post a purchase order invoice</span></span>
-1. <span data-ttu-id="e24a6-196">Přejděte na Závazky > Nákupní objednávky > Všechny nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="e24a6-196">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="e24a6-197">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="e24a6-197">Click New.</span></span>
-3. <span data-ttu-id="e24a6-198">V poli Účet dodavatele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-198">In the Vendor account field, enter or select a value.</span></span>
-4. <span data-ttu-id="e24a6-199">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e24a6-199">Click OK.</span></span>
-5. <span data-ttu-id="e24a6-200">V poli Řádky nebo záhlaví vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="e24a6-200">In the Lines or header field, select an option.</span></span>
-6. <span data-ttu-id="e24a6-201">Rozbalte část Ceny a slevy.</span><span class="sxs-lookup"><span data-stu-id="e24a6-201">Expand the Price and discount section.</span></span>
-7. <span data-ttu-id="e24a6-202">V poli Platební podmínky zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-202">In the Terms of payment field, enter or select a value.</span></span>
-8. <span data-ttu-id="e24a6-203">V poli Držitel zálohy zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-203">In the Advance holder field, enter or select a value.</span></span>
-9. <span data-ttu-id="e24a6-204">V poli Řádky nebo záhlaví vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="e24a6-204">In the Lines or header field, select an option.</span></span>
-10. <span data-ttu-id="e24a6-205">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="e24a6-205">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="e24a6-206">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-206">In the Item number field, enter or select a value.</span></span>
-12. <span data-ttu-id="e24a6-207">Zadejte číslo do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="e24a6-207">In the Quantity field, enter a number.</span></span>
-13. <span data-ttu-id="e24a6-208">Zadejte číslo do pole Jednotková cena.</span><span class="sxs-lookup"><span data-stu-id="e24a6-208">In the Unit price field, enter a number.</span></span>
-14. <span data-ttu-id="e24a6-209">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-209">Click Save.</span></span>
-15. <span data-ttu-id="e24a6-210">V podokně akcí klikněte na položku Nákup.</span><span class="sxs-lookup"><span data-stu-id="e24a6-210">On the Action Pane, click Purchase.</span></span>
-16. <span data-ttu-id="e24a6-211">Klikněte na tlačítko Potvrdit.</span><span class="sxs-lookup"><span data-stu-id="e24a6-211">Click Confirm.</span></span>
-17. <span data-ttu-id="e24a6-212">V podokně akcí klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="e24a6-212">On the Action Pane, click Invoice.</span></span>
-18. <span data-ttu-id="e24a6-213">Klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="e24a6-213">Click Invoice.</span></span>
-19. <span data-ttu-id="e24a6-214">Kliknutím na Výchozí od: Množství v příjemce produktu otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="e24a6-214">Click Default from: Product receipt quantity to open the drop dialog.</span></span>
-20. <span data-ttu-id="e24a6-215">Vyberte volbu v poli Výchozí množství pro řádky.</span><span class="sxs-lookup"><span data-stu-id="e24a6-215">In the Default quantity for lines field, select an option.</span></span>
-21. <span data-ttu-id="e24a6-216">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e24a6-216">Click OK.</span></span>
-22. <span data-ttu-id="e24a6-217">Zadejte hodnotu do pole Číslo.</span><span class="sxs-lookup"><span data-stu-id="e24a6-217">In the Number field, type a value.</span></span>
-23. <span data-ttu-id="e24a6-218">Do pole Popis faktury zadejte nějakou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-218">In the Invoice description field, type a value.</span></span>
-24. <span data-ttu-id="e24a6-219">Zadejte datum do pole Datum faktury.</span><span class="sxs-lookup"><span data-stu-id="e24a6-219">In the Invoice date field, enter a date.</span></span>
-25. <span data-ttu-id="e24a6-220">Do pole Rejstřík DPH zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="e24a6-220">In the Date of VAT register field, enter a date.</span></span>
-26. <span data-ttu-id="e24a6-221">Zadejte datum do pole Datum přijetí dokumentu.</span><span class="sxs-lookup"><span data-stu-id="e24a6-221">In the Receive document date field, enter a date.</span></span>
-27. <span data-ttu-id="e24a6-222">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="e24a6-222">Click Post.</span></span>
+## <a name="create-and-post-a-purchase-order-invoice"></a><span data-ttu-id="8c4ee-195">Vytvoření a zaúčtování faktury nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-195">Create and post a purchase order invoice</span></span>
+1. <span data-ttu-id="8c4ee-196">Přejděte na Závazky > Nákupní objednávky > Všechny nákupní objednávky.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-196">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="8c4ee-197">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-197">Click New.</span></span>
+3. <span data-ttu-id="8c4ee-198">V poli Účet dodavatele zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-198">In the Vendor account field, enter or select a value.</span></span>
+4. <span data-ttu-id="8c4ee-199">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-199">Click OK.</span></span>
+5. <span data-ttu-id="8c4ee-200">V poli Řádky nebo záhlaví vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-200">In the Lines or header field, select an option.</span></span>
+6. <span data-ttu-id="8c4ee-201">Rozbalte část Ceny a slevy.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-201">Expand the Price and discount section.</span></span>
+7. <span data-ttu-id="8c4ee-202">V poli Platební podmínky zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-202">In the Terms of payment field, enter or select a value.</span></span>
+8. <span data-ttu-id="8c4ee-203">V poli Držitel zálohy zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-203">In the Advance holder field, enter or select a value.</span></span>
+9. <span data-ttu-id="8c4ee-204">V poli Řádky nebo záhlaví vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-204">In the Lines or header field, select an option.</span></span>
+10. <span data-ttu-id="8c4ee-205">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-205">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="8c4ee-206">V poli Číslo zboží zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-206">In the Item number field, enter or select a value.</span></span>
+12. <span data-ttu-id="8c4ee-207">Zadejte číslo do pole Množství.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-207">In the Quantity field, enter a number.</span></span>
+13. <span data-ttu-id="8c4ee-208">Zadejte číslo do pole Jednotková cena.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-208">In the Unit price field, enter a number.</span></span>
+14. <span data-ttu-id="8c4ee-209">Klikněte na položku Uložit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-209">Click Save.</span></span>
+15. <span data-ttu-id="8c4ee-210">V podokně akcí klikněte na položku Nákup.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-210">On the Action Pane, click Purchase.</span></span>
+16. <span data-ttu-id="8c4ee-211">Klikněte na tlačítko Potvrdit.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-211">Click Confirm.</span></span>
+17. <span data-ttu-id="8c4ee-212">V podokně akcí klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-212">On the Action Pane, click Invoice.</span></span>
+18. <span data-ttu-id="8c4ee-213">Klikněte na položku Faktura.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-213">Click Invoice.</span></span>
+19. <span data-ttu-id="8c4ee-214">Kliknutím na Výchozí od: Množství v příjemce produktu otevřete dialogové okno.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-214">Click Default from: Product receipt quantity to open the drop dialog.</span></span>
+20. <span data-ttu-id="8c4ee-215">Vyberte volbu v poli Výchozí množství pro řádky.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-215">In the Default quantity for lines field, select an option.</span></span>
+21. <span data-ttu-id="8c4ee-216">Klepněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-216">Click OK.</span></span>
+22. <span data-ttu-id="8c4ee-217">Zadejte hodnotu do pole Číslo.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-217">In the Number field, type a value.</span></span>
+23. <span data-ttu-id="8c4ee-218">Do pole Popis faktury zadejte nějakou hodnotu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-218">In the Invoice description field, type a value.</span></span>
+24. <span data-ttu-id="8c4ee-219">Zadejte datum do pole Datum faktury.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-219">In the Invoice date field, enter a date.</span></span>
+25. <span data-ttu-id="8c4ee-220">Do pole Rejstřík DPH zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-220">In the Date of VAT register field, enter a date.</span></span>
+26. <span data-ttu-id="8c4ee-221">Zadejte datum do pole Datum přijetí dokumentu.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-221">In the Receive document date field, enter a date.</span></span>
+27. <span data-ttu-id="8c4ee-222">Klikněte na položku Zaúčtovat.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-222">Click Post.</span></span>
 
-## <a name="balance-and-close-advance-holders-transactions"></a><span data-ttu-id="e24a6-223">Zůstatek a uzavření transakce držitelů záloh</span><span class="sxs-lookup"><span data-stu-id="e24a6-223">Balance and close advance holders transactions</span></span>
-1. <span data-ttu-id="e24a6-224">Přejděte na Závazky > Držitelé zálohy > Držitelé zálohy.</span><span class="sxs-lookup"><span data-stu-id="e24a6-224">Go to Accounts payable > Advance holders > Advance holders.</span></span>
-2. <span data-ttu-id="e24a6-225">Klikněte na Transakce.</span><span class="sxs-lookup"><span data-stu-id="e24a6-225">Click Transactions.</span></span>
-3. <span data-ttu-id="e24a6-226">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e24a6-226">Close the page.</span></span>
-4. <span data-ttu-id="e24a6-227">Klikněte na Zůstatek.</span><span class="sxs-lookup"><span data-stu-id="e24a6-227">Click Balance.</span></span>
-5. <span data-ttu-id="e24a6-228">Klikněte na Uzavřít v bance.</span><span class="sxs-lookup"><span data-stu-id="e24a6-228">Click Close via bank.</span></span>
-6. <span data-ttu-id="e24a6-229">Vyberte možnost Ano v poli Automaticky.</span><span class="sxs-lookup"><span data-stu-id="e24a6-229">Select Yes in the Automatic field.</span></span>
-7. <span data-ttu-id="e24a6-230">V poli Převáděná částka</span><span class="sxs-lookup"><span data-stu-id="e24a6-230">In the Amount to be transferred.</span></span> <span data-ttu-id="e24a6-231">zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="e24a6-231">field, enter a number.</span></span>
-8. <span data-ttu-id="e24a6-232">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e24a6-232">Click OK.</span></span>
-9. <span data-ttu-id="e24a6-233">Klikněte na Uzavřít v hotovosti.</span><span class="sxs-lookup"><span data-stu-id="e24a6-233">Click Close via cash.</span></span>
-10. <span data-ttu-id="e24a6-234">Vyberte možnost Ano v poli Automaticky.</span><span class="sxs-lookup"><span data-stu-id="e24a6-234">Select Yes in the Automatic field.</span></span>
-11. <span data-ttu-id="e24a6-235">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="e24a6-235">Click OK.</span></span>
-12. <span data-ttu-id="e24a6-236">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="e24a6-236">Close the page.</span></span>
-13. <span data-ttu-id="e24a6-237">Klikněte na Transakce.</span><span class="sxs-lookup"><span data-stu-id="e24a6-237">Click Transactions.</span></span>
+## <a name="balance-and-close-advance-holders-transactions"></a><span data-ttu-id="8c4ee-223">Zůstatek a uzavření transakce držitelů záloh</span><span class="sxs-lookup"><span data-stu-id="8c4ee-223">Balance and close advance holders transactions</span></span>
+1. <span data-ttu-id="8c4ee-224">Přejděte na Závazky > Držitelé zálohy > Držitelé zálohy.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-224">Go to Accounts payable > Advance holders > Advance holders.</span></span>
+2. <span data-ttu-id="8c4ee-225">Klikněte na Transakce.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-225">Click Transactions.</span></span>
+3. <span data-ttu-id="8c4ee-226">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-226">Close the page.</span></span>
+4. <span data-ttu-id="8c4ee-227">Klikněte na Zůstatek.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-227">Click Balance.</span></span>
+5. <span data-ttu-id="8c4ee-228">Klikněte na Uzavřít v bance.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-228">Click Close via bank.</span></span>
+6. <span data-ttu-id="8c4ee-229">Vyberte možnost Ano v poli Automaticky.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-229">Select Yes in the Automatic field.</span></span>
+7. <span data-ttu-id="8c4ee-230">V poli Převáděná částka</span><span class="sxs-lookup"><span data-stu-id="8c4ee-230">In the Amount to be transferred.</span></span> <span data-ttu-id="8c4ee-231">zadejte číslo.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-231">field, enter a number.</span></span>
+8. <span data-ttu-id="8c4ee-232">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-232">Click OK.</span></span>
+9. <span data-ttu-id="8c4ee-233">Klikněte na Uzavřít v hotovosti.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-233">Click Close via cash.</span></span>
+10. <span data-ttu-id="8c4ee-234">Vyberte možnost Ano v poli Automaticky.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-234">Select Yes in the Automatic field.</span></span>
+11. <span data-ttu-id="8c4ee-235">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-235">Click OK.</span></span>
+12. <span data-ttu-id="8c4ee-236">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-236">Close the page.</span></span>
+13. <span data-ttu-id="8c4ee-237">Klikněte na Transakce.</span><span class="sxs-lookup"><span data-stu-id="8c4ee-237">Click Transactions.</span></span>
 
