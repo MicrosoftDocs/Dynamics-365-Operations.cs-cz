@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: fb34ecc0ff5966ae09fdb00e80134a11eceb30a2
-ms.sourcegitcommit: c6be9706bca05089d4a4dc898d991410edb5c609
+ms.openlocfilehash: d62cf8be089eb8bccaf323041bf446b7f120b93f
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097433"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164528"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Co je nového a co se změnilo v aplikaci Dynamics 365 Supply Chain Management 10.0.8. (únor 2020)
 
@@ -32,13 +32,14 @@ Toto téma uvádí funkce, které jsou nové nebo se změnily v aplikaci Microso
 
 - **Verze Preview:** prosinec 2019
 - **Obecná dostupnost (automatická aktualizace):** leden 2020
-- **Automatická aktualizace:** únor 2020 
+- **Automatická aktualizace:** únor 2020
 
 ## <a name="features-included-in-this-release"></a>Funkce zahrnuté do této verze
 
 Tato verze obsahuje následující funkce. Nadpisy funkcí odkazují na další informace na webu [Plány vydání](https://docs.microsoft.com/dynamics365/release-plans/). Další odkazy odkazují na další dokumentaci nebo videa, které jsou v současnosti k dispozici pro danou funkci. Některé z těchto funkcí mohou být také zahrnuty do předchozího přírůstkového vydání, ale nebyly ohlášeny v předchozím tématu *Novinky*, tak je uvádíme zde. Většinu těchto funkcí je nutné povolit pomocí [Správy funkcí](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), než je budete moci použít.
 
 - [Další zóna skladového místa](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+- [Správa majetku](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management) – Další informace naleznete v tématu [Přehled správy majetku](../asset-management/index.md).
 - [Zrušit práci](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work) – další informace viz [Zrušení práce skladu pro zpracování výjimek](../warehousing/cancel-warehouse-work.md).
 - [Změnit fond práce u práce](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
 - [Pozice seskupení plná](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)

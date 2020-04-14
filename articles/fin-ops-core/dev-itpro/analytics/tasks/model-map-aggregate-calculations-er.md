@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3084882dd4b51f067793b3a7999ce89cda1257d9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0912b620fc70f8ed33e336da9ecefacd1f4e376e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184593"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143170"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Použití konfigurací mapování modelu pro agregované výpočty na úrovni databáze
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup poskytuje informace o způsobu navržení nové konfigurace mapování modelu elektronického výkaznictví a použití integrovaných funkcí ER k efektivním agregovaným výpočtům. V tomto postupu vytvoříte konfiguraci pro vzorovou společnost Litware, Inc. 
 
 Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Tyto kroky lze dokončit za použití libovolné datové sady.
 
- Provedení těchto kroků vyžaduje provedení kroků v postupu ER vylepšuje efektivitu souhrnných výpočtů provedením na úrovni databáze (část 1: Příprava konfigurace).
+ Provedení těchto kroků vyžaduje provedení kroků v postupu „ER vylepšuje efektivitu souhrnných výpočtů provedením na úrovni databáze (část 1: Příprava konfigurace)“.
 
 1. Přejděte do části Správa organizace > Elektronické výkaznictví > Konfigurace.
 2. Ve stromovém zobrazení rozbalte „Modul Intrastat“.
@@ -52,7 +52,7 @@ Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému 
     * TransactionsGroups  
 14. Klikněte na „Upravit skupinu podle“.
 15. Ve stromovém zobrazení vyberte možnost „Transakce“.
-    * Vyberte přidaný zdroj dat typu Seznam záznamů, který představuje záznamy pro seskupení  
+    * Vyberte přidaný zdroj dat typu Seznam záznamů, který představuje záznamy pro seskupení.  
 16. Klikněte na „Přidat pole do“.
 17. Klikněte na „Skupina Co“.
 18. Ve stromovém zobrazení rozbalte možnost Transakce.
@@ -69,7 +69,7 @@ Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému 
     * Vyberte typ seskupení.  
 27. Do pole Název napište 'SumOfAmountMST'.
     * Zadejte název tohoto seskupení v konfigurovaném zdroji dat.  
-28. Klikněte na položku Uložit.
+28. Klepněte na tlačítko Uložit.
     * Pole Provedení v označuje, že toto seskupení bude provedeno v době běhu v databázi SQL.  
 29. Zavřete stránku.
 30. Klikněte na tlačítko OK.
@@ -103,7 +103,7 @@ Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému 
 55. Klikněte na možnost Vazba.
 56. Ve stromu rozbalte 'TransactionsGroups'.
 57. Ve stromovém zobrazení vyberte 'TransactionsGroups'.
-58. Klikněte na položku Upravit.
+58. Klikněte na možnost Upravit.
 59. Klikněte na „Upravit skupinu podle“.
     * Poznámka: pole 'Provedení v' označuje, že toto seskupení se provede v době běhu v paměti vzhledem k tomu, že obě seskupení stejného pole jsou vázána na položky datového modelu.   
 60. V seznamu označte všechny řádky nebo jejich označení zrušte.
@@ -114,6 +114,6 @@ Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému 
 65. Klikněte na „Přidat pole do“.
 66. Klikněte na „Skupina Co“.
 67. Ve stromovém zobrazení rozbalte 'Commodity record(Intrastat)'.
-68. Klikněte na položku Uložit.
+68. Klepněte na tlačítko Uložit.
     * Poznámka: pole 'Provedení v' označuje, že toto seskupení se provede při spuštění v paměti i v případě, že neexistují žádná seskupení definovaná ve vybraném zdroji dat a vybraný zdroj dat tabulky záznamů typu se vztahuje na stejnou tabulku 'systému Intrastat. Důvodem je skutečnost, že zdroj dat obsahuje některá vypočítaná pole, která nelze ještě převést na úrovni databáze SQL.  
 

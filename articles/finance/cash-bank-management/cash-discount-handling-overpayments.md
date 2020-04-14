@@ -1,5 +1,5 @@
 ---
-title: Zpracování platebních slev u přeplatků
+title: Platební slevy u přeplatků
 description: Tento článek popisuje scénáře, které znázorňují způsob zpracování platby, když zákazník využije platební slevu, ale má také přeplatek.
 author: ShylaThompson
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 803cb478bb7631439ebde66ad96182193d3dd1ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e2fafe2fba9dd71fc09c60bfa20d72fa59510b7f
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188342"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154149"
 ---
-# <a name="handling-cash-discounts-for-overpayments"></a>Zpracování platebních slev u přeplatků
+# <a name="cash-discounts-for-overpayments"></a>Platební slevy u přeplatků
 
 [!include [banner](../includes/banner.md)]
 

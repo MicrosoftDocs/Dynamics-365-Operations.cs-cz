@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 523f6414ec212aef48eece487f4199ea2cf4b87e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5dfd5655ecdfa74d75490b0915c4cea609baebe3
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836137"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146489"
 ---
 # <a name="validate-a-production-flow-and-version"></a>Ověření výrobního toku a verze
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tato procedura popisuje postup při vytvoření nového výrobního toku a první verze pro lean manufacturing. Předpoklady: Musí být definovány výrobní parametry pro Lean manufacturing a jednotky měření pro čas třídy. Je třeba definovat hodnotový proud a skupinu výroby. S koncepty výrobních toků a aktivitami se seznámíte v dokumentaci o Lean manufacturingu. Tato procedura se vztahuje k právnické osobě USMF v ukázkových datech. Avšak mohou být použity jiní právnické osoby za předpokladu, že právnická osoba je nakonfigurována pro Lean manufacturing.
 

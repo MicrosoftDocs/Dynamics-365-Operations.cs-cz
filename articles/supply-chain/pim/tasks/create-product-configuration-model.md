@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 199ee5cd20a064bc6e1fd480f52c9c01ced8b1ba
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5bdbf9a0708a8e5ae15516ffd603fa0e01595dc8
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844746"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147795"
 ---
 # <a name="create-a-product-configuration-model"></a>Vytvoření modelu konfigurace produktu
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje způsob vytvoření modelu konfigurace produktu a zadání základních informací, jako například atributy a dílčí komponenty. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

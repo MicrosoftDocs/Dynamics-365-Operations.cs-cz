@@ -3,7 +3,7 @@ title: Nastavení parametrů správy úvěru
 description: V tomto tématu jsou popsány možnosti, které lze použít ke konfiguraci správy úvěru, tak aby byly splněny požadavky vašeho podniku.
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ba0b047fe984f6bc164cbe137320d6bf6c13dafc
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124178"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154521"
 ---
 # <a name="credit-management-parameters-setup"></a>Nastavení parametrů správy úvěru
 
 [!include [banner](../includes/banner.md)]
 
-V tomto tématu jsou popsány možnosti, které lze použít ke konfiguraci správy úvěru, tak aby byly splněny požadavky vašeho podniku. Chcete-li začít používat funkce správy úvěru, nastavte parametry na stránce **Parametry správy úvěru** (**Správa úvěru \> Nastavení \> Parametry správy úvěru**).
+V tomto tématu jsou popsány možnosti, které lze použít ke konfiguraci správy úvěru, tak aby byly splněny požadavky vašeho podniku. Chcete-li používat funkce správy úvěru, nastavte parametry na stránce **Parametry úvěrů a inkas** (**Úvěry a inkasa \> Nastavení \> Parametry úvěrů a inkas**).
 
 ## <a name="credit-parameters"></a>Parametry úvěru
 
-Existují čtyři pevné záložky, na kterých můžete měnit parametry, jež řídí správu úvěru: **Blokování úvěru**, **Kontrolní bod správy úvěru**, **Statistika správy úvěru** a **Limity úvěru**. Následující části popisují nastavení, která jsou k dispozici na jednotlivých pevných záložkách.
+Existují čtyři pevné záložky v sekci **Úvěry**, na kterých můžete měnit parametry, jež řídí správu úvěru: **Blokování úvěru**, **Kontrolní bod správy úvěru**, **CStatistika správy úvěru** a **Limity úvěru**. Následující části popisují nastavení, která jsou k dispozici na jednotlivých pevných záložkách.
 
 ### <a name="credit-holds"></a>Blokování úvěru
 

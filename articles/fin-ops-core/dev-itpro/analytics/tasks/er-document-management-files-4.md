@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f715be8c151f62a4bbb4cc295d3158fe5a17e084
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: f5639a46c105e735d028e903513b4fcfb1f0d968
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550802"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142608"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-4---run-format"></a>Elektronické výkaznictví – Používání souborů pro správu dokumentů ve formátech výstupu (část 4 - Spuštění formátu)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat formát elektronického výkaznictví (ER) k souborů správy dokumentů (příloh) ve výstupu elektronického výkaznictví. Tyto kroky lze provést v rámci společnosti DEMF.
 
@@ -66,7 +66,7 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 8. Vyberte řádek deníku faktury odběratele a pole Prodejní objednávka.
 9. Zadejte hodnotu 000148 do pole Kritéria.
     * V poli kritérií "Prodejní objednávka" zadejte číslo objednávky 000148.  
-10. Klikněte na tlačítko OK.
-11. Klikněte na tlačítko OK.
+10. Klepněte na tlačítko OK.
+11. Klepněte na tlačítko OK.
     * Prohlédněte si generovaný výstup. Všimněte si, že pro každou přílohu byl vytvořen jeden uzel XML. Obsah přílohy je naplněna do výstupu XML v textovém formátu MIME (base64).  
 

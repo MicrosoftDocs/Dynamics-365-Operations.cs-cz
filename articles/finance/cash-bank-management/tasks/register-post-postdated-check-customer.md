@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f27675a2aa2160619bf78eea33bba2ce0b7bd81
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11089584e150a1a302eb969a5fb61cb9d1900901
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188089"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141734"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrace a zaúčtování postdatovaného šeku pro odběratele
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Podrobnosti postdatovaného šeku přijatého od zákazníka můžete zaregistrovat. Také můžete postdatovaný šek zaúčtovat a generovat finanční transakce.   Dokončete následující úlohy před registrací a zaúčtováním postdatovaného šeku přijatého od odběratele:  • Nastavte postdatované šeky na stránce Pokladna a banka • Nastavte metodu platby pro postdatované šeky.   Role tohoto postupu je Pokladník Tato procedura používá ukázkovou společnost USMF.
+Podrobnosti postdatovaného šeku přijatého od zákazníka můžete zaregistrovat. Také můžete postdatovaný šek zaúčtovat a generovat finanční transakce.   Dokončete následující úlohy před registrací a zaúčtováním postdatovaného šeku přijatého od odběratele:   * Nastavte postdatované šeky na stránce Pokladna a banka * Nastavte metodu platby pro postdatované šeky   Role tohoto postupu je Pokladník. Tato procedura používá ukázkovou společnost USMF.
 
 1. Přejděte na Pohledávky > Platby > Deník plateb.
 2. Klikněte na položku Nová.

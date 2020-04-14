@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae0aa90cfd673704bcd8e19f795499283ff01d44
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0fbd58fb6b03f3c6eb5e54f811d98ad636e65a94
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560948"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146369"
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Přidružení indexu paliva k dopravci jako nákladů na dodatečné služby
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Tento průvodce popisuje vytvoření přiřazení doplňkové služby, nákladů na dodatečné služby dopravce, hlavní dodatečné služby pro palivový příplatek a přidružení dopravce index paliva dopravce. Je nutné nastavit index paliva dopravce před spuštěním tohoto průvodce. K tomu můžete použít postup Nastavení indexu paliva dopravce. Tyto úlohy nastavení jsou obvykle prováděny manažerem logistiky. Jako ukázková data pro tento postup slouží data USMF.
+Tento průvodce popisuje vytvoření přiřazení doplňkové služby, nákladů na dodatečné služby dopravce, hlavní dodatečné služby pro palivový příplatek a přidružení dopravce index paliva dopravce. Je nutné nastavit index paliva dopravce před spuštěním tohoto průvodce. K tomu můžete použít postup "Nastavení indexu paliva dopravce". Tyto úlohy nastavení jsou obvykle prováděny manažerem logistiky. Jako ukázková data pro tento postup slouží data USMF.
 
 
 ## <a name="create-an-accessorial-master"></a>Vytvoření hlavní dodatečné služby

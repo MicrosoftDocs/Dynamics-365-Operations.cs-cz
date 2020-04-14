@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b616998738d6b6986f157d136fc56e061900ef41
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 501936734b6ec970062d0d2cbcc8a3cdc11b934f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550525"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142356"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>Elektronické výkaznictví – Použití vodorovně rozbalovacích oblastí k dynamickému přidání sloupců v tabulkách aplikace Excel (část 1 - Formát návrhu)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Následující postup vysvětluje, jak uživatel s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví může nakonfigurovat formát elektronických sestav (ER) ke generování sestav jako soubory s listy OPENXML (Excel), ve kterých lze dynamicky vytvářet požadované sloupce jako vodorovně rozbalitelné rozsahy. Tyto kroky lze provést v rámci libovolné společnosti.
 
 K provedení těchto kroků je nutné nejprve dokončit tyto tři průvodce: 
 
-ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního
+"ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního"
 
-Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 1: návrh datového modelu)
+"Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 1 - návrh datového modelu)"
 
-Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2: mapování modelu)
+"Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2 - mapování modelu)"
 
 Musíte též stáhnout a uložit místní kopii šablony se vzorovou sestavou, kterou naleznete zde [Vzorová sestava webové služby finančích dimenzí](https://go.microsoft.com/fwlink/?linkid=862266).
 
@@ -62,7 +62,7 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 4. Klikněte na Import z aplikace Excel.
 5. Klikněte na Přílohy.
     * Importujte šablonu sestavy. Použijte soubor aplikace Excel, který jste pro ten účel stáhli.  
-6. Klikněte na položku Nová.
+6. Klikněte na možnost Nový.
 7. Klepněte na volby Soubor.
 8. Zavřete stránku.
 9. V poli Šablona zadejte nebo vyberte hodnotu.

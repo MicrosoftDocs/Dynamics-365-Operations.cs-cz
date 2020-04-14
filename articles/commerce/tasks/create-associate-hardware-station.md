@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 772ccc44c01d97a07796bd1ee443012448955f49
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 305308b0e4ba99aae4bf6f8f94041db570a25893
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3021874"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141030"
 ---
 # <a name="create-and-associate-a-hardware-station"></a> Vytvoření a přidružení hardwarové stanice
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tato procedura vás provede postupem vytvoření nové hardwarové stanice. Bude vytvořený nový hardwarový profil a použije se pro přidání nových hardwarových stanic do předem definovaného obchodu (kanálu). Tato procedura používá v ukázkových datech společnost USRT.
 

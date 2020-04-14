@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
-ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
+ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3081144"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173193"
 ---
 # <a name="unified-product-experience"></a>Sjednocené prostředí produktu
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 Pokud se obchodní ekosystém skládá z aplikace Dynamics 365, jako je například finance, Supply Chain Management a Sales, firmy tyto aplikace často používají ke zdrojování údajů o produktů. Důvodem je skutečnost, že tyto aplikace poskytují robustní produktovou infrastrukturu doplněnou sofistikovanými koncepty ocenění a přesnými daty o zásobách. Firmy, které používají externí systém správy životního cyklu produktu (PLM) pro výrobu dat produktu, mohou sdílet produkty z aplikací Finance and Operations do jiných aplikací Dynamics 365. Sjednocené prostředí produktu přináší integrovaný model dat produktu do Common Data Service, takže všichni uživatelé aplikace včetně uživatelů Power Platform mohou využívat obsáhlá data o produktech přicházející z aplikací Finance and Operations.
 
@@ -52,7 +52,7 @@ Mapování entit dvojího zápisu pro produkty bylo navrženo tak, aby data prou
 
 Informace o produktu obsahují všechny informace související s produktem a jeho definici, jako jsou například dimenze produktů nebo dimenze sledování a úložiště. Jak je ukázáno v následující tabulce, je vytvořena kolekce map entit pro synchronizaci produktů a souvisejících informací.
 
-Finance and Operations | Jiné aplikace Dynamics 365 | Popis
+Aplikace Finance and Operations | Jiné aplikace Dynamics 365 | popis
 -----------------------|--------------------------------|---
 Uvolněné produkty V2 | msdyn\_sharedproductdetails | Entita **msdyn\_sharedproductdetails** obsahuje pole z aplikací Finance and Operations, které definují produkt a obsahují finanční a řídící informace o produktu. 
 Uvolněné jedinečné produkty v Common Data Service | Produkt | Entita **Produkt** obsahuje pole, která definují produkt. Zahrnuje jednotlivé produkty (produkty s dílčím typem produktu) a varianty produktu. Následující tabulka zobrazuje mapování.
@@ -75,7 +75,7 @@ Jednotka | uoms
 Převody jednotek | msdyn_ unitofmeasureconversions
 Převod měrné jednotky konkrétního produktu | msdyn_productspecificunitofmeasureconversion
 Kategorie produktu | msdyn_productcategories | Každá z kategorií produktů a informace o její struktuře a vlastnostech je obsažena v entitě kategorie produktu. 
-Hierarchie kategorií produktů | msdyn_productcategoryhierarhies | Hierarchie produktů slouží ke kategorizaci nebo seskupení produktů. Hierarchie kategorií jsou k dispozici v Common Data Service pomocí entity hierarchie kategorií produktu. 
+Hierarchie kategorií produktů | msdyn_productcategoryhierarhies | Hierarchie produktů můžete použít k uspořádání produktů do kategorií nebo k jejich seskupení. Hierarchie kategorií jsou k dispozici v Common Data Service prostřednictvím entity Hierarchie kategorií produktu. 
 Role hierarchie kategorií produktů | msdyn_productcategoryhierarchies | Hierarchie produktů lze použít pro různé role v D365 Finance and Operations. Určují, která kategorie se použije v jednotlivých rolích, v nichž se používá entita role kategorie produktu. 
 Přiřazení kategorií produktů | msdyn_productcategoryassignments | Chcete-li přiřadit produkt do kategorie, lze použít entitu přiřazení kategorie produktu.
 
@@ -143,7 +143,7 @@ Výchozí nastavení objednávky definuje pracoviště a sklad, odkud pocházej�
 
 ## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>Převody měrných jednotek
 
-Měrné jednotky a odpovídající převody jsou k dispozici v Common Data Service podle datového modelu zobrazeného v diagramu.
+Měrné jednotky a odpovídající převod jsou k dispozici v Common Data Service podle datového modelu zobrazeného v diagramu.
 
 ![Datový model pro produkty](media/dual-write-product-three.png)
 
@@ -153,7 +153,7 @@ Pojem měrné jednotky je integrován mezi aplikacemi Finance and Operations a j
 
 [!include [unit of measure conversions](includes/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
 
-[!include [product specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
+[!include [product-specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
 ## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-common-data-service"></a>Počáteční synchronizace párování dat jednotek mezi aplikacemi Finance and Operations a Common Data Service
 
@@ -172,7 +172,7 @@ Pro jednotky spárované/překrývající se v aplikacích Finance and Operation
 
 Pro jednotky a třídy jednotek v aplikacích Finance and Operations neexistující v jiných aplikacích Dynamics 365:
 
-Jako součást dvojího zápisu jsou skupiny jednotek z aplikací Finance and Operations a jejich odpovídající jednotky vytvořeny a synchronizovány v jiných aplikacích Dynamics 365 a Common Data Service a skupina jednotek bude nastavena jako „externě udržovaná“. Není nutné provádět žádné dodatečné zaváděcí úsilí.
+Jako součást dvojitého zápisu jsou skupiny jednotek z aplikací Finance and Operations a jejich odpovídající jednotky vytvořeny a synchronizovány v jiných aplikacích Dynamics 365 a Common Data Service a skupina jednotek bude nastavena jako „externě udržovaná“. Není nutné provádět žádné dodatečné zaváděcí úsilí.
 
 Pro jednotky v jiných aplikacích Dynamics 365, které neexistují v aplikacích Finance and Operations:
 
@@ -203,7 +203,7 @@ Zásady produktu jsou sady zásad, které se používají pro definování produ
 
 Pro jednoznačnou identifikaci produktů mezi Dynamics 365 for Finance and Operations a produktů v Common Data Service se používá klíč integrace. U produktů je **(productnumber)** jedinečným klíčem, který identifikuje produkt v Common Data Service. Je tvořen zřetězením: **(company, msdyn_productnumber)**. **Company** označuje právnickou osobu v Finance and Operations a **msdyn_productnumber** označuje číslo produktu pro specifický produkt v aplikaci Finance and Operations. 
 
-Pro jiného uživatele aplikací Dynamics 365 je produkt identifikován v uživatelském rozhraní pomocí **msdyn_productnumber** (všimněte si, že popisek pole je **číslo produktu**). Ve formuláři produktu jsou zobrazeny jak company, tak i msydn_productnumber. V poli (productnumber) však není zobrazen jedinečný klíč produktu. 
+Pro uživatele ostatních aplikací Dynamics 365 je produkt identifikován v uživatelském rozhraní pomocí **msdyn_productnumber** (všimněte si, že popisek pole je **číslo produktu**). Ve formuláři produktu jsou zobrazeny jak company, tak i msydn_productnumber. V poli (productnumber) však není zobrazen jedinečný klíč produktu. 
 
 Pokud vytváříte aplikace v Common Data Service, měli byste věnovat pozornost použití **productnumber** (jedinečné ID produktu) jako klíče integrace. Nepoužívejte **msdyn_productnumber**, protože není jedinečné. 
 

@@ -16,16 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8274e390a177f51649f5cad70ef7ad5bd50a8830
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f1e99d7c84171e4affe59fb896a7e93c2a328740
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558460"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146760"
 ---
 # <a name="estimate-a-production-order"></a>Odhad výrobní zakázky
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento proces můžete spustit pomocí ukázkových dat společnosti USMF nebo pomocí sady vlastních dat. V obou případech je třeba mít otevřenou výrobní zakázku, která má status Vytvořeno. Jedná se o druhou proceduru ze sedmi, která vysvětluje životního cyklus výrobní zakázky.
 

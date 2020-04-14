@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 28a82ea8747fcbbceb835291ad5cd3d87091a736
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a087fa63bfdf4c2340f0fe9a8bdbd9195a7b90b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190688"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144057"
 ---
 # <a name="approve-application-inbox-records"></a>Schválení záznamů doručených přihlášek
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje kontrolu přihlášek přijatých prostřednictvím samoobslužných stránek pro zaměstnance. Kromě kontroly přihlášek můžete schválit přihlášku mezi vybranými příchozími záznamy. Příchozí záznamy o přihláškách představují přihlášky k zaměstnání, které byly přeloženy společnosti k uvážení. Po schválení záznamu se vytvoří záznam uchazeče pro uživatele, který podal přihlášku. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 

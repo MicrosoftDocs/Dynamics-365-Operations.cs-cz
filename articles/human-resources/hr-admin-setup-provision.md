@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f982f3c3b2703a71e6c8a1a0d1be15fb260a6ef1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 4f2fd2b7bf9f09a61d07e1bc35ad48fe2c5d7383
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092239"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138352"
 ---
 # <a name="provision-human-resources"></a>Zřízení Human Resources
 
@@ -56,7 +56,7 @@ Po vytvoření LCS projektu můžete zařadit aplikaci Human Resources do prost�
 2. Označte, zda se jedná o sandbox nebo produkční instanci aplikace Human Resources. Funkce předčasného náhledu mohou být k dispozici v instancích sandbox pro dřívější zpětnou vazbu a testování.
    
     > [!NOTE]
-    > Typ instance Talent nelze po nastavení změnit. Před pokračováním ověřte, zda je vybrán správný typ instance.</br></br>
+    > Typ instance Human Resources nelze po nastavení změnit. Před pokračováním ověřte, zda je vybrán správný typ instance.</br></br>
     > Typ instance aplikace Human Resources je oddělen od typu instance prostředí Microsoft Power Apps, který jste nastavili v centru správy Power Apps.
     
 3. Pokud chcete, aby prostředí obsahovalo stejnou demonstrační datovou sadu, jaká se používá v prostředí zkušební ukázky aplikace Human Resources, zaškrtněte políčko **Zahrnout ukázková data**. To je vhodné pro dlouhodobá demonstrační nebo školicí prostředí a nikdy se nemá používat pro výrobní prostředí.  Tuto možnost musíte zvolit při počátečním nasazení. Existující nasazení nelze aktualizovat později.
@@ -74,7 +74,7 @@ Po vytvoření LCS projektu můžete zařadit aplikaci Human Resources do prost�
     > [!NOTE]
     > Pokud ještě nesplňujete všechny konečné předpoklady, můžete v projektu nasadit zkušební instanci aplikace Human Resources. Poté můžete tuto instanci použít k vyzkoušení vašeho řešení, dokud všechny předpoklady nesplníte. Pokud použijete nové prostředí pro testování, musíte stejným způsobem opakovat tento postup k vytvoření produkčního prostředí.
 
-    > Protože v rámci předplatného aplikace Human Resources jsou povolena pouze dvě prostředí LCS, můžete zvážit také využití 60denní zkušební verze [zkušební prostředí aplikace Human Resources](https://dynamics.microsoft.com/talent/overview/). Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Human Resources. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Nejsou určena k použití jako produkční prostředí. Mějte na paměti, že po vypršení zkušebního prostředí po 60 dnech budou všechna data v prostředí smazána a nelze je obnovit. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
+    > Můžete zvážit využití [zkušebního prostředí Human Resources](https://dynamics.microsoft.com/talent/overview/) zdarma na 60 dní. Přestože zkušební prostředí je vlastněno uživatelem, který o něj požádal, mohou být jiní uživatelé pozváni prostřednictvím rozhraní správy pro Human Resources. Zkušební prostředí obsahují fiktivní data, která slouží k bezpečnému prohlížení programu. Nejsou určena k použití jako produkční prostředí. Mějte na paměti, že po vypršení zkušebního prostředí po 60 dnech budou všechna data v prostředí smazána a nelze je obnovit. Můžete se zaregistrovat k novému zkušebnímu prostředí po vypršení platnosti existujícího prostředí.
 
 ## <a name="select-a-power-apps-environment"></a>Výběr prostředí Power Apps
 
@@ -97,7 +97,10 @@ Použijte následující pokyny při určování, do kterého prostředí Power 
     - **Zkušební prostředí** Tato prostředí jsou vytvářena s dobou platnosti a vyprší po uplynutí této doby, což způsobí, že prostředí a všechny obsažené instance aplikace Human Resources budou automaticky odebrány.
    
     - **Nepodporované oblasti** – Aplikace Human Resources je v současné době podporována pouze v následujících oblastech: Spojené státy, Evropa, Velká Británie, Austrálie, Kanada a Asie.
-  
+
+    > [!NOTE]
+    > Prostředí Human Resources je zajišťováno ve stejné oblasti, v níž je prostředí Power Apps zajišťováno. Migrace prostředí Human Resources do jiné oblasti není podporována.
+
 6. Po určení správného prostředí, které chcete použít, můžete pokračovat v procesu zřizování. 
  
 ## <a name="grant-access-to-the-environment"></a>Zřízení přístupu k prostředí

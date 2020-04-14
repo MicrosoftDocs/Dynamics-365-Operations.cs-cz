@@ -3,7 +3,7 @@ title: Povolení doporučení přizpůsobeného produktu
 description: V tomto tématu je popsán způsob vytváření individuálních doporučení produktu pro zákazníky Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bdb56a1f45cdea1832bd269502e534efdb207b03
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: 9b847a67306861052a360e0137e2e257b056888e
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127898"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154265"
 ---
 # <a name="enable-personalized-recommendations"></a>Povolení přizpůsobených doporučení
 
@@ -115,8 +115,6 @@ Chcete-li použít přizpůsobení pro existující seznam doporučení v modulu
 [Povolit doporučení produktu](enable-product-recommendations.md)
 
 [Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
-
-[Přidání seznamů doporučení na web e-Commerce](add-reco-list-to-page.md)
 
 [Přidat doporučení produktu v POS](product.md)
 

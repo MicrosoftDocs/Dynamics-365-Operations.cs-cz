@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0830707885e8ed52581aa789df0279d78e3a9c10
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 67e09e3187ac49e12727116f55066b64a386e2de
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184823"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142379"
 ---
 # <a name="er-import-a-configuration-from-lifecycle-services"></a>Import konfigurace ER ze služby Lifecycle Services
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Následující postup popisuje, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může importovat novou verzi konfigurace formátu pro elektronické výkaznictví ze služby Microsoft Lifecycle Services (LCS).
 
@@ -42,17 +42,17 @@ V tomto příkladu zvolíte požadovanou verzi konfiguraci ER a importujete ji p
 3. Klikněte na položku Změnit stav.
 4. Klikněte na Ukončit.
     * Změňte stav vybrané verze ze "Sdíleno" na „Ukončeno“ a umožněte tak její odstranění.  
-5. Klikněte na tlačítko OK.
+5. Klepněte na tlačítko OK.
 6. Vyhledejte na seznamu požadovaný záznam a vyberte ho.
     * Vyberte verzi této konfigurace se stavem „Ukončeno“.  
-7. Klepněte na tlačítko Odstranit.
+7. Klikněte na tlačítko Odstranit.
 8. Klepněte na tlačítko Ano.
     * Všimněte si, že pouze 2. verze návrhu vybrané konfigurace modelu dat je k dispozici.  
 9. Zavřete stránku.
 
 ## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a>Import sdílené verze konfigurace modelu dat z LCS
-1. Označte v seznamu vybraný řádek.
-    * Otevřete seznam úložišť pro poskytovatele konfigurace Litware, Inc.    
+1. Označte na seznamu vybraný řádek.
+    * Otevřete seznam úložišť pro poskytovatele konfigurace 'Litware, Inc.'    
 2. Klikněte na možnost Úložiště.
 3. Klikněte na možnost Otevřít.
     * Vyberte úložiště LCS a otevřete je.  

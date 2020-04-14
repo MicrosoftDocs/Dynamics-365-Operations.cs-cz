@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4429bda6efddbb4f1fa7da06e91e51d885919c05
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: abe6745682030766eabcd4411121866c9d890be0
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914947"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149613"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Vytvoření žádanky používající požadavek na nabídku
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Toto téma popisuje postup přidání informací o ceně a dodavateli do nákupní žádanky z procesu požadavku na nabídku. Příklad uvedený v tomto průvodci lze použít u ukázkových dat společnosti USMF, a vy musíte být k dokončení všech kroků přihlášeni jako správce. Úkoly v této příručce obvykle provádí odborníci v oblasti zásobování.
 
@@ -69,7 +69,7 @@ Další úkol je vytvořit požadavek na nabídku pro získání nabídek na vá
 1. Aktualizujte stránku.
 2. Zvolte **Požadavek na nabídku**.
 3. V poli **Kupující právnická osoba** vyberte možnost **USMF**. Je nutné vybrat stejnou právnickou osobu, která je uvedena na řádku požadavku.  
-4. Označte v seznamu vybraný řádek. Pokud máte více řádků v nákupní žádance, vyberte všechny řádky, které chcete přidat do požadavku na nabídku.  
+4. Označte na seznamu vybraný řádek. Pokud máte více řádků v nákupní žádance, vyberte všechny řádky, které chcete přidat do požadavku na nabídku.  
 5. Vyberte **OK**.
 6. Aktualizujte stránku.
 7. Zajistěte, že je otevřené okno s fakty, a rozbalte oddíl **Související dokumenty**.

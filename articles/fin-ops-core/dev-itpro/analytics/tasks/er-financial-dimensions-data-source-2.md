@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 788564bfd7c3df146266976d8eef6621ff37ca2a
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 48ce4942f8407242013df45f533390784694d4e6
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550618"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142540"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>Elektronické výkaznictví – Používání finančních dimenzí jako zdroje dat (část 2 - mapování modelu)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Následující postup popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) použití finančních dimenzí jako zdroje dat pro sestavy elektronického výkaznictví. Tyto kroky lze provést v rámci libovolné společnosti.
 
@@ -57,8 +57,8 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
 20. V poli Finanční dimenze vyberte "Právnická osoba".
     * Vyberte Vše, chcete-li povolit uživateli výběr požadovaných dimenzí pro aktuální instanci ve vyhledávacím poli.  Vyberte Právnická osoba, chcete-li povolit uživateli výběr dimenzí pro společnost ve vyhledávacím poli.  Vyberte dimenzi, abyste uživateli povolili výběr dimenzí pomocí jedné sady dimenzí.  
 21. Vyberte možnost Ano v poli Zeptat se na hlavní účet.
-    * Nastavte v poli Zeptat se na hlavní účet hodnotu Ano, chcete-li umožnit uživatelům vybrat hlavní účet jako součást seznamu dimenzí.   Je-li nastavena na hodnotu Ne, hlavní účet nebude zahrnut do seznamu dimenzí a je povolena možnost "Je hlavní účet povinný". Pokud je možnost Je hlavní účet povinný nastavena na hodnotu Ano, zahrňte hlavní účet do seznamu dimenzí nezávisle na výběru uživatele.  
-22. Klikněte na tlačítko OK.
+    * Nastavte v poli 'Zeptat se na hlavní účet' hodnotu Ano, chcete-li umožnit uživatelům vybrat hlavní účet jako součást seznamu dimenzí.   Je-li nastavena na hodnotu Ne, hlavní účet nebude zahrnut do seznamu dimenzí a je povolena možnost "Je hlavní účet povinný". Pokud je možnost 'Je hlavní účet povinný' nastavena na hodnotu Ano, zahrňte hlavní účet do seznamu dimenzí nezávisle na výběru uživatele.  
+22. Klepněte na tlačítko OK.
 23. Ve stromovém zobrazení vyberte možnost 'Dynamics 365 for Operations\Záznamy v tabulce'.
 24. Klikněte na možnost Přidat kořen.
 25. Do pole Název zadejte 'LedgerJournal'.
@@ -134,7 +134,7 @@ K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elek
     * Company.'find()'.'name()'  
 64. Klikněte na položku Uložit.
 65. Zavřete stránku.
-66. Klikněte na položku Uložit.
+66. Klepněte na tlačítko Uložit.
 67. Zavřete stránku.
 
 ## <a name="complete-this-draft-models-version"></a>Dokončení tohoto konceptu verze modelu

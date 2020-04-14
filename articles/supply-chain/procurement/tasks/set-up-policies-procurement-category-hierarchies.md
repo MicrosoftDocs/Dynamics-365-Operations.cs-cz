@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 230794eacd5e9911496dd3826f08126cc21494cb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8d8c259ad081d02395c6ae3c3b7cf66b89933fdf
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844162"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149497"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Nastavení zásad pro hierarchie kategorií zásobování
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup použijte k nastavení pravidel pro objednávání produktů v kategorii. Pravidla jsou definována pro určitou zásadu nákupu. Pravidlo zásad přístupu ke kategorii určuje, ke kterým kategoriím zásobování mají uživatelé přístup při vytváření žádanky. Při vytvoření žádanky jsou zásada nákupu a pravidla přístupu ke kategoriím určená k použití určena na základě právního subjektu a provozní jednotky, do které zaměstnanec patří. Tento postup můžete projít v ukázkových datech společnosti USMF. Tento úkol obvykle provádí manažer nákupu.
 

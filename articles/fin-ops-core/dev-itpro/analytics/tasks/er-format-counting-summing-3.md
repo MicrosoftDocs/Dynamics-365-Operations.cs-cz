@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bbef7048488056f50ec8967a9af53d468666856
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e8a4965c07c5a084b21da40667747db36530284c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550756"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141941"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-3---use-computations-to-make-the-output"></a>Elektronické výkaznictví – konfigurace formátu počítání a sčítání (část 3 - Použití výpočtů k vytvoření výstupu)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Následující procedura popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) k vytvoření počtu a součtu na základě dat již generovaného textového výstupu. Tyto kroky lze provést v rámci libovolné společnosti.
 
@@ -55,7 +55,7 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
     * COLLECTEDLIST('$BlockName',  
 16. Do pole Vzorec zadejte 'COLLECTEDLIST('$BlockName', "*")'.
     * COLLECTEDLIST('$BlockName', "*")  
-17. Klikněte na položku Uložit.
+17. Klepněte na tlačítko Uložit.
     * Vzorec "*" znamená, že všechny bloky budou zahrnuty do seznamu pro tento záznam.  
 18. Zavřete stránku.
 19. Klikněte na tlačítko OK.

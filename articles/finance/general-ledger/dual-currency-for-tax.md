@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1ba4d09240888f0c533fb07614e75ffecea0742c
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 863403dc3b2444f00f0cac27a494fc49d3d70de7
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124086"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161585"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Podpora duální měny pro DPH
 [!include [banner](../includes/banner.md)]
@@ -34,7 +34,7 @@ Funkce duální měny pro Dynamics 365 Finance byla představena ve verzi 8.1 (�
 
 V předchozích verzích byly transakce převedeny na měnu vykazování v následujícím pořadí: 
 
-Celková transakce byla vypočtena v měně transakce > částka transakce byla převedena na zúčtovací měnu > částka zúčtovací měny byla převedena na měnu vykazování
+- Celková transakce byla vypočtena v měně transakce > částka transakce byla převedena na zúčtovací měnu > částka zúčtovací měny byla převedena na měnu vykazování
 
 Po povolení duální funkce měny byly transakce převedeny na měnu vykazování v následujícím pořadí:
 
@@ -48,8 +48,6 @@ V důsledku podpory duálních měn jsou v modulu Správa funkcí k dispozici dv
 - Automatický zůstatek pro vyrovnání daně v měně vykazování (zavedeno ve verzi 10.0.11)
 
 Podpora dvojí měny pro DPH zajišťuje, že daně budou vypočítány přesně v měně daně a že zůstatek vyrovnání DPH je vypočítán přesně v zúčtovací měně i v měně vykazování. 
-
-Nové funkce jsou aktuálně zpřístupněny pro soukromé náhledy zákazníků. Chcete-li tyto funkce povolit, vyvolejte požadavek na službu prostřednictvím odpovídajících kanálů společnosti Microsoft.
 
 ## <a name="sales-tax-conversion"></a>Převod DPH
 

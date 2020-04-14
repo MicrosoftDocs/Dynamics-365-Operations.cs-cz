@@ -17,16 +17,16 @@ ms.search.industry: Service industries
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b5f3d08b0ebd98c9256d5eca393a483721ecc5bc
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d88ae709f55fb7e33e794a539cd78719bf7ac64f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837909"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147243"
 ---
 # <a name="submit-and-approve-project-budget-revision"></a>Odeslání a schválení revize projektového rozpočtu
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup poskytuje informace o revizi projektového rozpočtu. Rozpočet projektu lze zrevidovat opakovaně podle potřeby, ale nezobrazí se množství jednotlivých revizí, pokud byl rozpočet upravován více než jednou. 
 

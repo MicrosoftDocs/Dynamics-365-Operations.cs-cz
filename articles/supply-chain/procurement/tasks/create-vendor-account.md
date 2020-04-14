@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 116085a71e872c13bbf2820f4408e3c7d1261d17
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: ba585a9bb1a296bbf7181530e151d737bfa22fc2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924408"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149589"
 ---
 # <a name="create-a-vendor-account"></a>Vytvoření účtu dodavatele
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje vytvoření účtu dodavatele a přidání adresy a kontaktních informací. Postup neukazuje vyplnění všech polí pro nákupní a finanční účely. Další informace o těchto polích naleznete v popisech polí. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Účty dodavatele jsou obvykle vytvářeny pracovníky zásobování nebo zaměstnanci starající se o pohledávky.
 

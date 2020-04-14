@@ -3,7 +3,7 @@ title: Modul buy boxu
 description: Tohle téma se zabývá moduly buy boxu a popisuje, jak je přidat na stránky webu v řešení Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 13d044a150651dd18c3a09c4db6a783fe8f42287
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025452"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154056"
 ---
 # <a name="buy-box-module"></a>Modul buy boxu
 
@@ -58,7 +58,7 @@ Pomocí motivů lze odebrat nebo změnit pořadí vlastností produktu a ovláda
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduly, které lze použít v modulu buy boxu
 
 - **Galerie médií** – Tento modul slouží k předvedení obrázků produktu na stránce s podrobnostmi o produktu. Může podporovat jeden nebo mnoho obrázků. Podporuje také obrázky miniatur. Obrázky miniatur lze uspořádat vodorovně (jako řádek pod obrázkem) nebo svisle (jako sloupec vedle obrázku). Modul galerie médií lze přidat do pozice **Média** v modulu buy boxu. V současné době podporuje pouze obrázky. 
-- **Volič obchodů** – Tento modul zobrazuje seznam obchodů, které jsou poblíž a kde je položka k výdeji. Umožňuje uživatelům zadat umístění pro hledání obchodů, které jsou v okolí. Modul volby obchodu je integrovaný s API geokódování služby Mapy Bing, které slouží k převodu umístění na zeměpisnou šířku a délku. Klíč rozhraní API mapy služby Bing je povinný a musí být přidán do stránky sdílené parametry pro Retail v aplikaci Dynamics 365 Retail. Tento modul podporuje dvě vlastnosti, **Okruh hledání** a **Odkaz na podmínky služby**. Vlastnost **Okruh hledání** definuje poloměr vyhledávání pro obchody v mílích. Není-li zadána žádná hodnota, použije se výchozí poloměr vyhledávání 50 mil. Pokud se používají mapy Bing nebo některá externí služba, vlastnost **Odkaz na podmínky služby** se používá k získání odkazu na podmínky služby. Pro službu Bing Maps je vyžadován odkaz na podmínky služby. 
+- **Volič obchodů** – Tento modul zobrazuje seznam obchodů, které jsou poblíž a kde je položka k výdeji. Umožňuje uživatelům zadat umístění pro hledání obchodů, které jsou v okolí. Další informace o tomto modulu naleznete v tématu [Modul Volič obchodů](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Nastavení modulu buy boxu
 
@@ -89,9 +89,11 @@ Chcete-li přidat modul buy boxu na novou stránku a nastavit požadované vlast
 1. Uložte stránku a zobrazte náhled. Do adresy URL stránky náhledu přidejte parametr řetězce dotazu **?productid=&lt;id produktu&gt;**. Tímto způsobem se pro načtení a vykreslení stránky náhledu použije kontext produktu.
 1. Uložte stránku, dokončete úpravy a publikujte ji. Na stránce s podrobnostmi o produktu by se měl zobrazit buy box.
 
-## <a name="additional-resources"></a>Další zdroje
+## <a name="additional-resources"></a>Další prostředky
 
 [Přehled startovací sady](starter-kit-overview.md)
+
+[Modul Volič obchodů](store-selector.md)
 
 [Modul kontejneru](add-container-module.md)
 

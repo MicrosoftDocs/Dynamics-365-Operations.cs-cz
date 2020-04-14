@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 48a327fc5033a7478d2ae5e401ffdce6e4546ad0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042866"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143308"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>Elektronické vykazování – Vytvoření požadovaných konfigurací pro import dat z externího souboru
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci z externího souboru. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. K dokončení těchto krokůmusíte nejprve dokončit postup z průvodce záznamem úloh ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního. Tyto kroky lze dokončit za použití datové sady USMF. Je nutné stáhnout a uložit lokálně následující soubory pomocí odkazů z tématu Přehled elektronického vykazování (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+Následující kroky vysvětlují, jak uživatel s rolí Správce systému nebo Návrhář elektronického výkaznictví může navrhnout konfiguraci elektronického výkaznictví pro import dat v aplikaci z externího souboru. V tomto příkladu vytvoříte požadované ER konfigurace pro vzorovou společnost Litware, Inc. K dokončení těchto krokůmusíte nejprve dokončit postup z průvodce záznamem úloh "ER Vytvoření poskytovatele konfigurace a jeho označení jako aktivního". Tyto kroky lze dokončit za použití datové sady USMF. Je nutné stáhnout a uložit lokálně následující soubory pomocí odkazů z tématu Přehled elektronického vykazování (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
 ER umožňuje podnikovým uživatelům konfigurovat proces importu souborů externích dat do tabulek v ve formátech .XML nebo .TXT. Nejprve je třeba navrhnout konfiguraci abstraktního datového modelu a ER datového modelu, které budou představovat importovaná data. Dále je třeba definovat strukturu souboru, který chcete importovat, a metodu, kterou použijete k importu dat ze souboru do abstraktního datového modelu. Pro tento abstraktní datový model msuí být vytvořena konfigurace formátu ER, která se mapuje na navržený datový model. Poté musí být konfigurace datového modelu rozšířena mapováním, které popisuje, jak jsou importovaná data zachována jako data abstraktního datového modelu a jak se použijí k aktualizaci tabulek.  Konfigurace ER datového modelu musí být připojena k novému mapování modelu popisujícímu vazbu datového modelu k umístění aplikací.  
 
@@ -36,7 +36,7 @@ Následující scénář ukazuje možnosti importu ER dat. To zahrnuje transakce
 ## <a name="add-a-new-er-model-configuration"></a>Přidání nové konfigurace ER modelu
 1. Přejděte do části Správa organizace > Pracovní prostory > Elektronické výkaznictví.
 
-    Ověřte, že poskytovatel konfigurace pro vzorovou společnost Litware, Inc. je k dispozici a označen jako aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního“.    
+    Ověřte, že poskytovatel konfigurace pro vzorovou společnost 'Litware, Inc'. je k dispozici a označen jako aktivní. Pokud tohoto zprostředkovatele konfigurace nevidíte, musíte nejprve dokončit jednotlivé kroky v postupu „Vytvoření poskytovatele konfigurace a jeho označení jako aktivního“.   
 
 2. Klikněte na Konfigurace výkaznictví.
 
@@ -235,7 +235,7 @@ Proveďte toto mapování formátu pro účely testování. Použijte 1099entrie
 17. Klikněte na položku Uložit.
 18. Zavřete stránku.
 19. Zavřete stránku.
-20. Klikněte na položku Upravit.
+20. Klikněte na možnost Upravit.
 
     Pokud jste nainstalovali opravy hotfix „KB 4012871 Podpora mapování německého modelu v oddělených konfiguracích se schopností určení různých druhů předpokladů pro jejich nasazení v různých verzích aplikace Dynamics 365 Finance” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), proveďte další krok „Zapnout příznak ‘Výchozí nastavení pro mapování modelu’” pro zadanou konfiguraci formátu. Jinak přejděte na následující krok.  
 

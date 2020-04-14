@@ -1,6 +1,6 @@
 ---
 title: Úprava modelů a mapování pro generování dokumentů s daty aplikace
-description: K dokončení kroků v tomto postupu musíte nejprve dokončit postup ER Generování dokumentů s aktualizací dat aplikace (část 2 - generování dokumentů).
+description: K dokončení kroků v tomto postupu musíte nejprve dokončit postup "ER Generování dokumentů s aktualizací dat aplikace (část 2 - generování dokumentů)".
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5df6128228b9ff620c606c550c5eb7a6039b915
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a4546de2c5c1773aadce0ec084ee7058ff2ae153
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182294"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141872"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Úprava modelů a mapování pro generování dokumentů s daty aplikace
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-K dokončení kroků v tomto postupu musíte nejprve dokončit postup ER Generování dokumentů s aktualizací dat aplikace (část 2: generování dokumentů). 
+K dokončení kroků v tomto postupu musíte nejprve dokončit postup "ER Generování dokumentů s aktualizací dat aplikace (část 2: generování dokumentů)". 
 
 Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazování (ER) k vygenerování elektronického dokumentu a aktualizaci dat aplikace. V tomto postupu budete upravovat konfigurace ER tak, aby se začaly používat výhradně ke generování elektronických dokumentů a k aktualizaci dat aplikace. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického vykazování. Tyto kroky lze dokončit za použití datové sady DEMF.
 
@@ -101,9 +101,9 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
 10. Klikněte na možnost Přidat kořen.
 11. Do pole Název zadejte Model.
     * model  
-12. V poli Definice zadejte nebo vyberte hodnotu Pro aktualizaci dat aplikace.
+12. V poli Definice zadejte nebo vyberte hodnotu 'Pro aktualizaci dat aplikace'.
     * Pro aktualizaci dat aplikace  
-13. Klikněte na tlačítko OK.
+13. Klepněte na tlačítko OK.
 14. Ve stromovém zobrazení rozbalte „model“.
 15. Ve stromovém zobrazení vyberte možnost „Funkce\Počítané pole“.
 16. Ve stromovém zobrazení vyberte model\Archive header.
@@ -129,11 +129,11 @@ Kroky v tomto postupu vysvětlují návrh konfigurace elektronického vykazován
     * Archivovat  
 32. Do pole Tabulka zadejte IntrastatArchiveGeneral.
     * IntrastatArchiveGeneral  
-    * Ponechte akci záznamu Vložit, aby bylo možné přidat záznamy během archivace podrobností pro každý proces vykazování Intrastat.  
+    * Ponechte akci záznamu 'Vložit', aby bylo možné přidat záznamy během archivace podrobností pro každý proces vykazování Intrastat.  
 33. Vyberte možnost Ano v poli Informační protokol o záznamu.
     * Výběrem možnosti Ano získáte informace o problémech s aktualizací dat aplikace.  
 34. Vyberte možnost Ano v poli Ověření akce přeskočení záznamu.
-    * Výběrem možnosti Ano potlačíte chyby v ověření prázdného pole ID archivu Intrastat. Tato akce proběhne po přidání záznamů na základě nastavení pořadového čísla pro tuto tabulku ve formuláři Parametry zahraničního obchodu.  
+    * Výběrem možnosti Ano potlačíte chyby v ověření prázdného pole 'ID archivu Intrastat'. Tato akce proběhne po přidání záznamů na základě nastavení pořadového čísla pro tuto tabulku ve formuláři Parametry zahraničního obchodu.  
 35. Klikněte na tlačítko OK.
     * Vytvořte vazbu přidaného zdroje dat (filtrovaný model založený na vybrané kořenové položce) s prvky z přidaného cíle.  
 36. Ve stromovém zobrazení rozbalte Archiv.

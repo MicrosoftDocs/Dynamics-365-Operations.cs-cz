@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fbf5f12e10762e83bdf7a6c67a436ac906d0f7e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 1dad2cc4a47e24d6cdd68edd4b3d391428d28320
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837847"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147059"
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a>Vytvoření receptury kopírováním z existující receptury
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje, jak rychle vytvořit novou recepturu zkopírování z některé existující receptury. Můžete použít společnosti USMF, USP2 nebo USPI s ukázkovými daty pro vytvoření této procedury.
 

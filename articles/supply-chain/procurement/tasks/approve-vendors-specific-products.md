@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 815d968b37cf285544799735fdd3f00f0c7ebffb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d09a7388377899b7cfb11ba744232d06aa2c4db6
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838159"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149784"
 ---
 # <a name="approve-vendors-for-specific-products"></a>Schválení dodavatelů pro konkrétní produkty
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje způsob schválení dodavatelů pro určité produkty. Tímto způsobem lze určit, které dodavatele lze použít při přidání produktu do nákupní objednávky. Tento postup můžete použít s ukázkovými daty společnosti USMF nebo pomocí vlastních dat. Tento úkol obvykle provádí manažer nákupu.
 

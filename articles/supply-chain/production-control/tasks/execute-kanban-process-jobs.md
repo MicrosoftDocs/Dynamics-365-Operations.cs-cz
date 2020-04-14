@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08fddd6404bf835283adaca14ad7ceb851f5a489
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7ebae3fac556348aafa595e6e21caf9cd6b44ba4
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837631"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149014"
 ---
 # <a name="execute-kanban-process-jobs"></a>Provádění úloh kanbanových procesů
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup se zaměřuje na realizaci úloh kanbanových procesů. První úloha je dokončena s očekávaným množstvím a bez chyb. Druhá úloha je dokončena s chybami. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup je určen pro operátora stroje.
 

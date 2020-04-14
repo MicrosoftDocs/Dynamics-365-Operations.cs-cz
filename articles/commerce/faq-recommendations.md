@@ -3,7 +3,7 @@ title: Často kladené dotazy k doporučení produktu
 description: Toto téma obsahuje informace o procesech a nástrojích, které lze použít při řešení problémů souvisejících s doporučeními produktů nebo s jejich výsledky.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3add4e2e0d5cc16b561b808aacf5cef94fea5ae5
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: 2e30d29516dff6b2128e21bfa6e449e396884d00
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127783"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154383"
 ---
 # <a name="product-recommendations-faq"></a>Často kladené dotazy k doporučení produktu
 
@@ -88,8 +88,6 @@ Po povolení doporučení produktů budete muset přidat panel doporučení na �
 [Povolení přizpůsobených doporučení](personalized-recommendations.md)
 
 [Odhlášení přizpůsobených doporučení](personalization-gdpr.md)
-
-[Přidání seznamů doporučení na web e-Commerce](add-reco-list-to-page.md)
 
 [Přidat doporučení produktu v POS](product.md)
 

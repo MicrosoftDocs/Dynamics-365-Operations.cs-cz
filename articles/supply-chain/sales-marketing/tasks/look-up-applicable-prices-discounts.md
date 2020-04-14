@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 1ded87dcd553c0aa9c19ca273460f9adf0a4b542
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025821"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148623"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Vyhledání platných cen a slev
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup popisuje vyhledání ceny a/nebo slevy produktu, které jsou aktuálně platné pro určitého odběratele, aniž by byla vytvořena prodejní objednávka. Postup vás provede konkrétním příkladem a aby bylo možné vybrat potřebné hodnoty, je nutné v příkladu použít ukázkovou společnost USMF.
 

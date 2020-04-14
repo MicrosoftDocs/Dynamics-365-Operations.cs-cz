@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f61228d328521d0c6fe8e0ae704001a65d03151f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 207309e8be6c097cec187f3475a489330e1f6b6c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249220"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142678"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Návrh výrazů elektronického výkaznictví pro volání metod třídy aplikace
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento průvodce obsahuje informace o tom, jak opakovaně použít existující aplikační logiku v konfiguracích elektronického výkaznictví (ER) voláním požadovaných metod aplikačních tříd ve výrazech ER. Argumenty pro volání třídy hodnoty lze definovat dynamicky při spuštění: například na základě informací v dokumentu určeném k ověření jejich správnosti. V této příručce vytvoříte požadované konfigurace elektronického výkaznictví pro vzorovou společnost Litware, Inc. Tento postup je vytvořen pro uživatele s přiřazenou rolí správce systému nebo vývojáře elektronického výkaznictví. 
 
@@ -44,7 +44,7 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proced
 4. Přidejte pole filtru ‘Type name’. Do pole Název typu zadejte hodnotu filtru “zdroje”, vyberte operaci filtru "obsahuje" a klikněte na Použít.
 5. Klikněte na možnost Otevřít.
 6. Ve stromovém zobrazení vyberte „Model platby“.
-    * Pokud není aktivní tlačítko Import na pevné záložce Verze, již jste importovali verzi 1 konfigurace ER Platební model. Zbývající kroky tohoto dílčího úkolu můžete vynechat.   
+    * Pokud není aktivní tlačítko Import na pevné záložce Verze, již jste importovali verzi 1 konfigurace ER 'Platební model'. Zbývající kroky tohoto dílčího úkolu můžete vynechat.   
 7. Klepněte na tlačítko Importovat.
 8. Klepněte na tlačítko Ano.
 9. Zavřete stránku.
@@ -76,7 +76,7 @@ K provedení těchto kroků musíte nejprve dokončit jednotlivé kroky v proced
 9. Do pole název zadejte text Řádky.
     * Řádky  
 10. V poli Násobnost vyberte Jeden-n.
-    * V poli "Násobnost" je vybraná možnost Jeden k mnoha. Na základě tohoto nastavení se očekává, že v souboru analýzy bude prezentován alespoň jeden řádek.  
+    * V poli "Násobnost" je vybraná možnost 'Jeden k mnoha'. Na základě tohoto nastavení se očekává, že v souboru analýzy bude prezentován alespoň jeden řádek.  
 11. Klikněte na tlačítko OK.
 12. Ve stromu vyberte možnost 'Root\Rows'.
 13. Klikněte na položku Přidat pořadí.

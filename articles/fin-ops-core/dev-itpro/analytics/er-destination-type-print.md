@@ -3,7 +3,7 @@ title: Typ cílového místa elektronického výkaznictví tiskárny
 description: Toto téma vysvětluje, jak můžete konfigurovat cíl tiskárny pro každou komponentu SLOŽKA nebo SOUBOR formátu elektronického výkaznictví, který je nakonfigurován pro generování odchozích dokumentů buď v PDF nebo formátech Microsoft Office (Excel nebo Word).
 author: NickSelin
 manager: AnnBe
-ms.date: 01/16/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 58e067baa130458e3a8e788d978604f208140a03
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 148da191ce4ea99c237895c40ec007a1aa0cd537
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019667"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150785"
 ---
-# <a name="PrinterDestinationType"></a>Cílové místo tiskárny
+# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Cílové místo tiskárny
 
 [!include [banner](../includes/banner.md)]
 
@@ -65,7 +65,9 @@ Cíl **tiskárny** je implementován pouze pro nasazení v cloudu.
 > [!NOTE]
 > Pokud konfigurujete cíl **tiskárny**, možnost **převést do PDF** není nutné mít zapnutou. Převod souboru PDF pro účely tisku bude proveden i v případě, že je tato možnost vypnuta.
 
-## <a name="additional-resources"></a>Další zdroje
+Chcete-li při tisku odchozího dokumentu ve formátu aplikace Excel použít určitou [orientaci stránky](electronic-reporting-destinations.md#SelectPdfPageOrientation), je nutné zapnout možnost **převést na PDF**. Nastavíte-li volbu **převést na PDF** na hodnotu **Ano**, zpřístupní se pole **Orientace stránky**. V poli **Orientace stránky** můžete vybrat orientaci stránky.
+
+## <a name="additional-resources"></a>Další prostředky
 
 - [Přehled elektronického výkaznictví](general-electronic-reporting.md)
 - [Místa určení elektronického výkaznictví](electronic-reporting-destinations.md)

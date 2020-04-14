@@ -19,20 +19,19 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 269346d38eeb3812c352d16f9d50fbcd09307c12
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 977b74b10b4549d09a8816264f9ff603fa86e91c
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124582"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172824"
 ---
 # <a name="integrated-customer-master"></a>Integrovaná hlavní data odběratelů
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-Pro záznamy zákazníků je typické, že je možné je řídit ve více než jedné aplikaci. Prodejní aktivita může například přinést záznamy komerčních zákazníků prostřednictvím aplikace Sales a elektronický obchod nebo maloobchodní prodej mohou přinést záznamy zákazníků v rámci Finance and Operations. Bez ohledu na to, odkud záznam odběratele pochází, je integrován v pozadí mezi hranicemi aplikace a rozdíly v infrastruktuře. Integrované řízení zákazníků pomáhá zvládat scénáře vícenásobného řízení a poskytuje komplexní přehled o zákaznících do sady aplikací Dynamics 365.
+Zákaznická data mohou být vyplněna ve více než jedné aplikaci Dynamics 365. Například záznam odběratele může pocházet z prodejní aktivity v Dynamics 365 Sales (aplikace řízená podle modelu v Dynamics 365) nebo může záznam pocházet z maloobchodní aktivity v Dynamics 365 Commerce (aplikce Finance and Operations). Bez ohledu na místo, odkud pocházejí data odběratele, je integrováno na pozadí. Integrovaná hlavní předloha odběratele poskytuje flexibilitu pro hlavní zákaznická data v jakékoli aplikaci Dynamics 365 a poskytuje komplexní přehled o zákaznících v rámci aplikační sady Dynamics 365.
 
 ## <a name="customer-data-flow"></a>Tok dat odběratele
 
@@ -59,7 +58,6 @@ Skupiny odběratelů             | msdyn_customergroups            | Tato šablo
 Způsob platby odběratele     | msdyn_customerpaymentmethods    | Tato šablona slouží k synchronizaci informací o způsobu platby odběratele.
 Zákazníci V3                | účty                        | Tato šablona synchronizuje hlavní informace o zákaznících pro komerční a organizační zákazníky.
 Zákazníci V3                | kontakty                        | Tato šablona synchronizuje hlavní data odběratele pro spotřebitele a koncové uživatele.
-Věrnostní karta                | msdyn_loyaltycards              | Tato šablona slouží k synchronizaci informací o věrnostních kartách.
 Přípony názvu                | msdyn_nameaffixes               | Tato šablona synchronizuje referenční data přípon názvů pro odběratele a dodavatele.
 Řádky dnů platby CDS V2    | msdyn_paymentdaylines           | Tato šablona synchronizuje referenční data řádků dnů platby pro odběratele a dodavatele.
 Dny platby CDS            | msdyn_paymentdays               | Tato šablona synchronizuje referenční data dnů platby pro odběratele a dodavatele.
@@ -78,8 +76,6 @@ Platební podmínky            | msdyn_paymentterms              | Tato šablona
 [!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
 
 [!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
 
 [!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
 
