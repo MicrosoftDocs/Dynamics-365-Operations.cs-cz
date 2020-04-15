@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72940f719baca5e8042c2f2caa8abbacb7d8264e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ed8c60b188b7c7090546e8367455e0f58ce9359b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844482"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147680"
 ---
 # <a name="create-sales-price-selection-criteria"></a>Vytvoření kritérií pro výběr prodejní ceny
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tato procedura ukazuje, jak vytvořit kritérium výběru prodejní ceny pro modely prodejní ceny podle atributů. Spuštění této procedury vyžaduje, aby byl k dispozici nejméně jeden model prodejní ceny. Tento příklad používá cenový model pro model prodejních cen řešení Reproduktor ve společnosti ukázkových dat USMF. Manažer produktu obvykle používá tuto proceduru.
 
@@ -33,10 +33,10 @@ Tato procedura ukazuje, jak vytvořit kritérium výběru prodejní ceny pro mod
 ## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a>Přidání nového kritéria pro existující model prodejní ceny
 1. Klepněte na Definice modelu varianty produktu.
 2. Klepněte na Modely konfigurace produktu.
-3. V seznamu vyberte řádek pro model výrobku řešení reproduktoru, ale neklepejte na odkaz pro název modelu.
+3. V seznamu vyberte řádek pro model výrobku řešení reproduktoru, ale neklikejte na odkaz pro název modelu.
 4. V podokně akcí klepněte na možnost Model.
 5. Klikněte na Kritéria cenového modelu.
-6. Klikněte na položku Nová.
+6. Klikněte na možnost Nový.
 7. Do pole Název zadejte hodnotu Skupina odběratelů 10.
     * Název kritéria cenového modelu se používá na pomoc při identifikaci základních kritérií výběru.  
 8. V poli Cenový model zadejte nebo vyberte hodnotu.

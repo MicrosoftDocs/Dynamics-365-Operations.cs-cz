@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0a80e5b1a79c874ce0a8d24c85be71d0dc5c9c8
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b89d08d8f6a4223eb592ffa2b918504839e5287b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550549"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142402"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-4---run-format"></a>Elektronické výkaznictví – konfigurace formátu počítání a sčítání (část 4 - Spuštění formátu)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Následující procedura popisuje, jak uživatel s rolí správce systému nebo vývojář elektronického výkaznictví může nakonfigurovat datový model Elektronické výkaznictví (ER) k vytvoření počtu a součtu na základě dat již generovaného textového výstupu. Tyto kroky lze provést v rámci společnosti DEMF.
 
-K dokončení těchto kroků je nutné nejprve provést kroky v proceduře "Elektronické výkaznictví – Konfigurace formátu na provedení výpočtu a součtu (část 3: Používání výpočtů k vytvoření výstupu).
+K dokončení těchto kroků je nutné nejprve provést kroky v postupu „Elektronické výkaznictví – Konfigurace formátu na provedení výpočtu a součtu (část 3: Používání výpočtů k vytvoření výstupu)“.
 
 Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for Operations verze 1611.
 
@@ -49,9 +49,9 @@ Tento postup je určený pro funkci, která byla přidána do Dynamics 365 for O
 12. Klikněte na položku Uložit.
 13. Přejděte na Daň > Nastavení > Zahraniční obchod > Parametry zahraničního obchodu.
 14. Rozbalte část Elektronické výkaznictví.
-15. Do pole Název zadejte hodnotu Konfigurace Intrastat (DE) s výpočty a součty'.
-16. Do pole Název zadejte hodnotu Konfigurace Intrastat (DE) s výpočty a součty'.
-17. Klikněte na položku Uložit.
+15. Zvolte konfiguraci „Intrastat (DE) s výpočty a součty“.
+16. Zvolte konfiguraci „Intrastat (DE) s výpočty a součty“.
+17. Klepněte na tlačítko Uložit.
 18. Zavřete stránku.
 19. Přejděte na Daň > Deklarace > Zahraniční obchod > Intrastat.
 20. Klepněte na Výstup.

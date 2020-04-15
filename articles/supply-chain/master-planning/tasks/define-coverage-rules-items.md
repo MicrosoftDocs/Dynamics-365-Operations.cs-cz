@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 680d7c9339b089a4da82bef18bae3af41e23af30
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5ecd56c84b232fd7855bf2fb01eaebe3f3bd4440
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845159"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150279"
 ---
 # <a name="define-coverage-rules-for-items"></a>Definování pravidel disponibility pro položky
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF. Tento postup popisuje, jak vytvořit pravidla disponibility a přepsat nastavení disponibility pro určitou položku. Také ukazuje, jak zadat výchozí nastavení skladu.
 

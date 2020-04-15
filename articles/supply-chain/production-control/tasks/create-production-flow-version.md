@@ -16,16 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9a76e5bb6f63f793e4644c2ccf70cef21785ff10
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5512c30be586c75d2571d60588a1179c0d47570b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564079"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146990"
 ---
 # <a name="create-a-production-flow-version"></a>Vytvoření verze výrobního toku
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tento postup se zaměřuje na vytvoření nové verze výrobního toku. Pro tuto proceduru musí být definovány výrobní parametry pro Lean manufacturing a jednotky měření pro čas třídy. Je třeba také definovat hodnotový proud a skupinu výroby. Další informace o výrobních tocích a aktivitách v lean manufacturingu naleznete v dokumentech white paper pro Lean manufacturing aplikace Microsoft Dynamics AX. K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.
 
