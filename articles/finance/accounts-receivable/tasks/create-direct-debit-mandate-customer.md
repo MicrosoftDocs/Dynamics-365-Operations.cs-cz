@@ -16,77 +16,77 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5ca5ff2290df2179004ca1cebd11f67fbb7a724e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 86d29782f616219b5d84e3567910cb28c60b65ae
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176832"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140299"
 ---
-# <a name="create-a-direct-debit-mandate-for-a-customer"></a><span data-ttu-id="6a100-103">Vytvoření zmocnění k přímému debetu pro odběratele</span><span class="sxs-lookup"><span data-stu-id="6a100-103">Create a direct debit mandate for a customer</span></span>
+# <a name="create-a-direct-debit-mandate-for-a-customer"></a><span data-ttu-id="5163a-103">Vytvoření zmocnění k přímému debetu pro odběratele</span><span class="sxs-lookup"><span data-stu-id="5163a-103">Create a direct debit mandate for a customer</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6a100-104">Tento průvodce úkolem ukazuje, jak vytvořit zmocnění k přímému debetu a použít je ve faktuře.</span><span class="sxs-lookup"><span data-stu-id="6a100-104">This task guide demonstrates how to create a direct debit mandate and use it on an invoice.</span></span>
+<span data-ttu-id="5163a-104">Tento průvodce úkolem ukazuje, jak vytvořit zmocnění k přímému debetu a použít je ve faktuře.</span><span class="sxs-lookup"><span data-stu-id="5163a-104">This task guide demonstrates how to create a direct debit mandate and use it on an invoice.</span></span>
 
 
-## <a name="create-a-bank-account"></a><span data-ttu-id="6a100-105">Vytvoření bankovního účtu</span><span class="sxs-lookup"><span data-stu-id="6a100-105">Create a bank account</span></span>
-1. <span data-ttu-id="6a100-106">V **navigační podokně** přejděte na **Moduly > Pohledávky > Odběratelé > Všichni odběratelé**.</span><span class="sxs-lookup"><span data-stu-id="6a100-106">In the **Navigation pane**, go to **Modules > Accounts receivable > Customers > All customers**.</span></span>
-2. <span data-ttu-id="6a100-107">V seznamu vyberte záznam.</span><span class="sxs-lookup"><span data-stu-id="6a100-107">In the list, select a record.</span></span> <span data-ttu-id="6a100-108">Vyberte například US-001.</span><span class="sxs-lookup"><span data-stu-id="6a100-108">For example, select US-001</span></span>
-3. <span data-ttu-id="6a100-109">V podokně akcí klikněte na možnost **Odběratel**.</span><span class="sxs-lookup"><span data-stu-id="6a100-109">On the Action Pane, click **Customer**.</span></span>
-4. <span data-ttu-id="6a100-110">Klikněte na možnost **Bankovní účty**.</span><span class="sxs-lookup"><span data-stu-id="6a100-110">Click **Bank accounts**.</span></span>
-5. <span data-ttu-id="6a100-111">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="6a100-111">Click **New**.</span></span>
-6. <span data-ttu-id="6a100-112">Zadejte hodnotu do pole **Bankovní účet**.</span><span class="sxs-lookup"><span data-stu-id="6a100-112">In the **Bank account** field, type a value.</span></span>
-7. <span data-ttu-id="6a100-113">Zadejte hodnotu do pole **Název**.</span><span class="sxs-lookup"><span data-stu-id="6a100-113">In the **Name** field, type a value.</span></span>
-8. <span data-ttu-id="6a100-114">Zadejte hodnotu do pole **IBAN**.</span><span class="sxs-lookup"><span data-stu-id="6a100-114">In the **IBAN** field, type a value.</span></span>
-9. <span data-ttu-id="6a100-115">Zadejte hodnotu do pole **Měna**.</span><span class="sxs-lookup"><span data-stu-id="6a100-115">In the **Currency** field, type a value.</span></span>
-10. <span data-ttu-id="6a100-116">Klikněte na možnost **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="6a100-116">Click **Save**.</span></span>
-11. <span data-ttu-id="6a100-117">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6a100-117">Close the page.</span></span>
-12. <span data-ttu-id="6a100-118">V **navigačním podokně** přejděte na **Moduly > Správa hotovosti a banky > Bankovní účty > Bankovní účty**.</span><span class="sxs-lookup"><span data-stu-id="6a100-118">In the **Navigation pane**, go to **Modules > Cash and bank management > Bank accounts > Bank accounts**.</span></span>
-13. <span data-ttu-id="6a100-119">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="6a100-119">In the list, find and select the desired record.</span></span>
-14. <span data-ttu-id="6a100-120">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="6a100-120">In the list, click the link in the selected row.</span></span>
-15. <span data-ttu-id="6a100-121">Klikněte na možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="6a100-121">Click **Edit**.</span></span>
-16. <span data-ttu-id="6a100-122">Rozbalte záložku s náhledem **Další identifikace**.</span><span class="sxs-lookup"><span data-stu-id="6a100-122">Expand the **Additional identification** fastTab.</span></span>
-17. <span data-ttu-id="6a100-123">Zadejte hodnotu do pole **ID přímého debetu**.</span><span class="sxs-lookup"><span data-stu-id="6a100-123">In the **Direct debit ID** field, type a value.</span></span>
-18. <span data-ttu-id="6a100-124">Zadejte hodnotu do pole **IBAN**.</span><span class="sxs-lookup"><span data-stu-id="6a100-124">In the **IBAN** field, type a value.</span></span>
-19. <span data-ttu-id="6a100-125">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6a100-125">Close the page.</span></span>
-20. <span data-ttu-id="6a100-126">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6a100-126">Close the page.</span></span>
+## <a name="create-a-bank-account"></a><span data-ttu-id="5163a-105">Vytvoření bankovního účtu</span><span class="sxs-lookup"><span data-stu-id="5163a-105">Create a bank account</span></span>
+1. <span data-ttu-id="5163a-106">V **navigační podokně** přejděte na **Moduly > Pohledávky > Odběratelé > Všichni odběratelé**.</span><span class="sxs-lookup"><span data-stu-id="5163a-106">In the **Navigation pane**, go to **Modules > Accounts receivable > Customers > All customers**.</span></span>
+2. <span data-ttu-id="5163a-107">V seznamu vyberte záznam.</span><span class="sxs-lookup"><span data-stu-id="5163a-107">In the list, select a record.</span></span> <span data-ttu-id="5163a-108">Vyberte například US-001.</span><span class="sxs-lookup"><span data-stu-id="5163a-108">For example, select US-001</span></span>
+3. <span data-ttu-id="5163a-109">V podokně akcí klikněte na možnost **Odběratel**.</span><span class="sxs-lookup"><span data-stu-id="5163a-109">On the Action Pane, click **Customer**.</span></span>
+4. <span data-ttu-id="5163a-110">Klikněte na možnost **Bankovní účty**.</span><span class="sxs-lookup"><span data-stu-id="5163a-110">Click **Bank accounts**.</span></span>
+5. <span data-ttu-id="5163a-111">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="5163a-111">Click **New**.</span></span>
+6. <span data-ttu-id="5163a-112">Zadejte hodnotu do pole **Bankovní účet**.</span><span class="sxs-lookup"><span data-stu-id="5163a-112">In the **Bank account** field, type a value.</span></span>
+7. <span data-ttu-id="5163a-113">Zadejte hodnotu do pole **Název**.</span><span class="sxs-lookup"><span data-stu-id="5163a-113">In the **Name** field, type a value.</span></span>
+8. <span data-ttu-id="5163a-114">Zadejte hodnotu do pole **IBAN**.</span><span class="sxs-lookup"><span data-stu-id="5163a-114">In the **IBAN** field, type a value.</span></span>
+9. <span data-ttu-id="5163a-115">Zadejte hodnotu do pole **Měna**.</span><span class="sxs-lookup"><span data-stu-id="5163a-115">In the **Currency** field, type a value.</span></span>
+10. <span data-ttu-id="5163a-116">Klikněte na možnost **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="5163a-116">Click **Save**.</span></span>
+11. <span data-ttu-id="5163a-117">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5163a-117">Close the page.</span></span>
+12. <span data-ttu-id="5163a-118">V **navigačním podokně** přejděte na **Moduly > Správa hotovosti a banky > Bankovní účty > Bankovní účty**.</span><span class="sxs-lookup"><span data-stu-id="5163a-118">In the **Navigation pane**, go to **Modules > Cash and bank management > Bank accounts > Bank accounts**.</span></span>
+13. <span data-ttu-id="5163a-119">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="5163a-119">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="5163a-120">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="5163a-120">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="5163a-121">Klikněte na možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="5163a-121">Click **Edit**.</span></span>
+16. <span data-ttu-id="5163a-122">Rozbalte záložku s náhledem **Další identifikace**.</span><span class="sxs-lookup"><span data-stu-id="5163a-122">Expand the **Additional identification** fastTab.</span></span>
+17. <span data-ttu-id="5163a-123">Zadejte hodnotu do pole **ID přímého debetu**.</span><span class="sxs-lookup"><span data-stu-id="5163a-123">In the **Direct debit ID** field, type a value.</span></span>
+18. <span data-ttu-id="5163a-124">Zadejte hodnotu do pole **IBAN**.</span><span class="sxs-lookup"><span data-stu-id="5163a-124">In the **IBAN** field, type a value.</span></span>
+19. <span data-ttu-id="5163a-125">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5163a-125">Close the page.</span></span>
+20. <span data-ttu-id="5163a-126">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5163a-126">Close the page.</span></span>
 
-## <a name="define-the-electronic-payment-method"></a><span data-ttu-id="6a100-127">Definování metody elektronické platby</span><span class="sxs-lookup"><span data-stu-id="6a100-127">Define the electronic payment method</span></span>
-1. <span data-ttu-id="6a100-128">V **navigačním podokně** přejděte na **Moduly > Pohledávky > Nastavení plateb > Metody platby**.</span><span class="sxs-lookup"><span data-stu-id="6a100-128">In the **Navigation pane**, go to **Modules > Accounts receivable > Payments setup > Methods of payment**.</span></span>
-2. <span data-ttu-id="6a100-129">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="6a100-129">Click **New**.</span></span>
-3. <span data-ttu-id="6a100-130">V poli **Způsob platby** zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="6a100-130">In the **Method of payment** field, type a value.</span></span>
-4. <span data-ttu-id="6a100-131">Zadejte hodnotu do pole **Popis**.</span><span class="sxs-lookup"><span data-stu-id="6a100-131">In the **Description** field, type a value.</span></span>
-5. <span data-ttu-id="6a100-132">V poli **Typ platby** zadejte „Elektronická platba“.</span><span class="sxs-lookup"><span data-stu-id="6a100-132">In the **Payment type** field, enter 'Electronic payment'.</span></span> <span data-ttu-id="6a100-133">Typ platby pro metodu platby „zmocnění k přímému debetu“ musí být elektronická platba.</span><span class="sxs-lookup"><span data-stu-id="6a100-133">The payment type for a direct debit mandate method of payment must be Electronic payment.</span></span>
-6. <span data-ttu-id="6a100-134">Vyberte možnost Ano v poli **Požadovat zmocnění**.</span><span class="sxs-lookup"><span data-stu-id="6a100-134">Select Yes in the **Require mandate** field.</span></span>
-7. <span data-ttu-id="6a100-135">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6a100-135">Close the page.</span></span>
+## <a name="define-the-electronic-payment-method"></a><span data-ttu-id="5163a-127">Definování metody elektronické platby</span><span class="sxs-lookup"><span data-stu-id="5163a-127">Define the electronic payment method</span></span>
+1. <span data-ttu-id="5163a-128">V **navigačním podokně** přejděte na **Moduly > Pohledávky > Nastavení plateb > Metody platby**.</span><span class="sxs-lookup"><span data-stu-id="5163a-128">In the **Navigation pane**, go to **Modules > Accounts receivable > Payments setup > Methods of payment**.</span></span>
+2. <span data-ttu-id="5163a-129">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="5163a-129">Click **New**.</span></span>
+3. <span data-ttu-id="5163a-130">V poli **Způsob platby** zadejte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="5163a-130">In the **Method of payment** field, type a value.</span></span>
+4. <span data-ttu-id="5163a-131">Zadejte hodnotu do pole **Popis**.</span><span class="sxs-lookup"><span data-stu-id="5163a-131">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="5163a-132">V poli **Typ platby** zadejte „Elektronická platba“.</span><span class="sxs-lookup"><span data-stu-id="5163a-132">In the **Payment type** field, enter 'Electronic payment'.</span></span> <span data-ttu-id="5163a-133">Typ platby pro metodu platby „zmocnění k přímému debetu“ musí být elektronická platba.</span><span class="sxs-lookup"><span data-stu-id="5163a-133">The payment type for a direct debit mandate method of payment must be Electronic payment.</span></span>
+6. <span data-ttu-id="5163a-134">Vyberte možnost Ano v poli **Požadovat zmocnění**.</span><span class="sxs-lookup"><span data-stu-id="5163a-134">Select Yes in the **Require mandate** field.</span></span>
+7. <span data-ttu-id="5163a-135">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5163a-135">Close the page.</span></span>
 
-## <a name="add-a-direct-debit-mandate-to-a-customer"></a><span data-ttu-id="6a100-136">Přidejte zmocnění k přímému debetu zákazníkovi.</span><span class="sxs-lookup"><span data-stu-id="6a100-136">Add a direct debit mandate to a customer.</span></span>
-1. <span data-ttu-id="6a100-137">V **navigační podokně** přejděte na **Moduly > Pohledávky > Odběratelé > Všichni odběratelé**.</span><span class="sxs-lookup"><span data-stu-id="6a100-137">In the **Navigation pane**, go to **Modules > Accounts receivable > Customers > All customers**.</span></span>
-2. <span data-ttu-id="6a100-138">V seznamu vyberte záznam.</span><span class="sxs-lookup"><span data-stu-id="6a100-138">In the list, select a record.</span></span> <span data-ttu-id="6a100-139">Vyberte například US-001.</span><span class="sxs-lookup"><span data-stu-id="6a100-139">For example, select US-001</span></span>
-3. <span data-ttu-id="6a100-140">Klikněte na možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="6a100-140">Click **Edit**.</span></span>
-4. <span data-ttu-id="6a100-141">Rozbalte záložku s náhledem **Výchozí nastavení plateb**.</span><span class="sxs-lookup"><span data-stu-id="6a100-141">Expand the **Payment defaults** fastTab.</span></span>
-5. <span data-ttu-id="6a100-142">V poli **Metody platby** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="6a100-142">In the **Method of payment** field, enter or select a value.</span></span>
-6. <span data-ttu-id="6a100-143">Rozbalte záložku s náhledem **Výchozí nastavení plateb**.</span><span class="sxs-lookup"><span data-stu-id="6a100-143">Expand the **Payment defaults** fastTab.</span></span>
-7. <span data-ttu-id="6a100-144">Rozbalte záložku s náhledem **Zmocnění k přímému debetu**.</span><span class="sxs-lookup"><span data-stu-id="6a100-144">Expand the **Direct debit mandates** fastTab.</span></span>
-8. <span data-ttu-id="6a100-145">Klikněte na tlačítko **Přidat**.</span><span class="sxs-lookup"><span data-stu-id="6a100-145">Click **Add**.</span></span>
-9. <span data-ttu-id="6a100-146">V poli **Bankovní účet** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="6a100-146">In the **Bank account** field, enter or select a value.</span></span>
-10. <span data-ttu-id="6a100-147">V poli **Bankovní účet věřitele** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="6a100-147">In the **Creditor bank account** field, enter or select a value.</span></span>
-11. <span data-ttu-id="6a100-148">V poli **Četnost plateb** zadejte počet plateb, u kterých očekáváte, že budou zpracovány pro zmocnění.</span><span class="sxs-lookup"><span data-stu-id="6a100-148">In the **Payment frequency** field, enter the number of payments that you expect to process for this mandate.</span></span>
-12. <span data-ttu-id="6a100-149">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="6a100-149">Click **OK**.</span></span>
-13. <span data-ttu-id="6a100-150">Klepněte na položku **Tisk**.</span><span class="sxs-lookup"><span data-stu-id="6a100-150">Click **Print**.</span></span>
-14. <span data-ttu-id="6a100-151">Klikněte na **Sestava zmocnění**.</span><span class="sxs-lookup"><span data-stu-id="6a100-151">Click **Mandate report**.</span></span>
-15. <span data-ttu-id="6a100-152">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6a100-152">Close the page.</span></span>
-16. <span data-ttu-id="6a100-153">Klikněte na možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="6a100-153">Click **Edit**.</span></span>
-17. <span data-ttu-id="6a100-154">Do pole **Datum podpisu** zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="6a100-154">In the **Signature date** field, enter a date.</span></span>
-18. <span data-ttu-id="6a100-155">Klepněte na tlačítko **Ano**.</span><span class="sxs-lookup"><span data-stu-id="6a100-155">Click **Yes**.</span></span>
-19. <span data-ttu-id="6a100-156">Zadejte místo podpisu zmocnění.</span><span class="sxs-lookup"><span data-stu-id="6a100-156">Enter the location where the mandate was signed.</span></span>
-20. <span data-ttu-id="6a100-157">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="6a100-157">Click **OK**.</span></span>
-21. <span data-ttu-id="6a100-158">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="6a100-158">Close the page.</span></span>
+## <a name="add-a-direct-debit-mandate-to-a-customer"></a><span data-ttu-id="5163a-136">Přidejte zmocnění k přímému debetu zákazníkovi.</span><span class="sxs-lookup"><span data-stu-id="5163a-136">Add a direct debit mandate to a customer.</span></span>
+1. <span data-ttu-id="5163a-137">V **navigační podokně** přejděte na **Moduly > Pohledávky > Odběratelé > Všichni odběratelé**.</span><span class="sxs-lookup"><span data-stu-id="5163a-137">In the **Navigation pane**, go to **Modules > Accounts receivable > Customers > All customers**.</span></span>
+2. <span data-ttu-id="5163a-138">V seznamu vyberte záznam.</span><span class="sxs-lookup"><span data-stu-id="5163a-138">In the list, select a record.</span></span> <span data-ttu-id="5163a-139">Vyberte například US-001.</span><span class="sxs-lookup"><span data-stu-id="5163a-139">For example, select US-001</span></span>
+3. <span data-ttu-id="5163a-140">Klikněte na možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="5163a-140">Click **Edit**.</span></span>
+4. <span data-ttu-id="5163a-141">Rozbalte záložku s náhledem **Výchozí nastavení plateb**.</span><span class="sxs-lookup"><span data-stu-id="5163a-141">Expand the **Payment defaults** fastTab.</span></span>
+5. <span data-ttu-id="5163a-142">V poli **Metody platby** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="5163a-142">In the **Method of payment** field, enter or select a value.</span></span>
+6. <span data-ttu-id="5163a-143">Rozbalte záložku s náhledem **Výchozí nastavení plateb**.</span><span class="sxs-lookup"><span data-stu-id="5163a-143">Expand the **Payment defaults** fastTab.</span></span>
+7. <span data-ttu-id="5163a-144">Rozbalte záložku s náhledem **Zmocnění k přímému debetu**.</span><span class="sxs-lookup"><span data-stu-id="5163a-144">Expand the **Direct debit mandates** fastTab.</span></span>
+8. <span data-ttu-id="5163a-145">Klikněte na tlačítko **Přidat**.</span><span class="sxs-lookup"><span data-stu-id="5163a-145">Click **Add**.</span></span>
+9. <span data-ttu-id="5163a-146">V poli **Bankovní účet** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="5163a-146">In the **Bank account** field, enter or select a value.</span></span>
+10. <span data-ttu-id="5163a-147">V poli **Bankovní účet věřitele** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="5163a-147">In the **Creditor bank account** field, enter or select a value.</span></span>
+11. <span data-ttu-id="5163a-148">V poli **Četnost plateb** zadejte počet plateb, u kterých očekáváte, že budou zpracovány pro zmocnění.</span><span class="sxs-lookup"><span data-stu-id="5163a-148">In the **Payment frequency** field, enter the number of payments that you expect to process for this mandate.</span></span>
+12. <span data-ttu-id="5163a-149">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="5163a-149">Click **OK**.</span></span>
+13. <span data-ttu-id="5163a-150">Klepněte na položku **Tisk**.</span><span class="sxs-lookup"><span data-stu-id="5163a-150">Click **Print**.</span></span>
+14. <span data-ttu-id="5163a-151">Klikněte na **Sestava zmocnění**.</span><span class="sxs-lookup"><span data-stu-id="5163a-151">Click **Mandate report**.</span></span>
+15. <span data-ttu-id="5163a-152">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5163a-152">Close the page.</span></span>
+16. <span data-ttu-id="5163a-153">Klikněte na možnost **Upravit**.</span><span class="sxs-lookup"><span data-stu-id="5163a-153">Click **Edit**.</span></span>
+17. <span data-ttu-id="5163a-154">Do pole **Datum podpisu** zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="5163a-154">In the **Signature date** field, enter a date.</span></span>
+18. <span data-ttu-id="5163a-155">Klepněte na tlačítko **Ano**.</span><span class="sxs-lookup"><span data-stu-id="5163a-155">Click **Yes**.</span></span>
+19. <span data-ttu-id="5163a-156">Zadejte místo podpisu zmocnění.</span><span class="sxs-lookup"><span data-stu-id="5163a-156">Enter the location where the mandate was signed.</span></span>
+20. <span data-ttu-id="5163a-157">Klikněte na tlačítko **OK**.</span><span class="sxs-lookup"><span data-stu-id="5163a-157">Click **OK**.</span></span>
+21. <span data-ttu-id="5163a-158">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="5163a-158">Close the page.</span></span>
 
-## <a name="create-a-free-text-invoice-with-mandate"></a><span data-ttu-id="6a100-159">Vytvoření volné faktury se zmocněním</span><span class="sxs-lookup"><span data-stu-id="6a100-159">Create a free text invoice with mandate</span></span>
-1. <span data-ttu-id="6a100-160">V **podokně navigace** přejděte na **Moduly > Pohledávky > Faktury > Všechny otevřené faktury**.</span><span class="sxs-lookup"><span data-stu-id="6a100-160">In the **Navigation pane**, go to **Modules > Accounts receivable > Invoices > All free text invoices**.</span></span>
-2. <span data-ttu-id="6a100-161">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="6a100-161">Click **New**.</span></span>
-3. <span data-ttu-id="6a100-162">Vyberte odběratele, pro kterého jste vybrali zmocnění.</span><span class="sxs-lookup"><span data-stu-id="6a100-162">Select the customer that you added the mandate to.</span></span>
-4. <span data-ttu-id="6a100-163">V poli **ID zmocnění k přímému debetu** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="6a100-163">In the **Direct debit mandate ID** field, enter or select a value.</span></span>
+## <a name="create-a-free-text-invoice-with-mandate"></a><span data-ttu-id="5163a-159">Vytvoření volné faktury se zmocněním</span><span class="sxs-lookup"><span data-stu-id="5163a-159">Create a free text invoice with mandate</span></span>
+1. <span data-ttu-id="5163a-160">V **podokně navigace** přejděte na **Moduly > Pohledávky > Faktury > Všechny otevřené faktury**.</span><span class="sxs-lookup"><span data-stu-id="5163a-160">In the **Navigation pane**, go to **Modules > Accounts receivable > Invoices > All free text invoices**.</span></span>
+2. <span data-ttu-id="5163a-161">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="5163a-161">Click **New**.</span></span>
+3. <span data-ttu-id="5163a-162">Vyberte odběratele, pro kterého jste vybrali zmocnění.</span><span class="sxs-lookup"><span data-stu-id="5163a-162">Select the customer that you added the mandate to.</span></span>
+4. <span data-ttu-id="5163a-163">V poli **ID zmocnění k přímému debetu** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="5163a-163">In the **Direct debit mandate ID** field, enter or select a value.</span></span>
 
