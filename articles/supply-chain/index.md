@@ -2,14 +2,14 @@
 title: Zdroje nápovědy pro Supply Chain Management
 description: Tato stránka poskytuje seznam témat nápovědy a dalších zdrojů pro funkce aplikace Supply Chain Management.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 11/26/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b5f82d76f2e285b6318d900d41919aae14ec71a
-ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
+ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "2853981"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201518"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Zdroje nápovědy pro Supply Chain Management
 
@@ -59,7 +59,7 @@ Další informace o Dynamics 365 Finance naleznete na [domovské stránce správ
 
 Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, verze 8.0 (duben 2018).
 
-- [Synchronizace pracovního příkazu mezi službou Field Service a aplikací Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Synchronizace pracovního příkazu mezi službou Field Service a aplikací Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
 Tato krátká videa vám představí nové funkce, které přináší aplikace Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (prosinec 2017).
 

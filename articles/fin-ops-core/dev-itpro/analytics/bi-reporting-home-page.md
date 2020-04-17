@@ -1,5 +1,5 @@
 ---
-title: Domovská stránka analytických nástrojů a vykazování
+title: Domovská stránka vytváření sestav a analýzy s Power BI
 description: Toto téma vás nasměruje na zdroje, které můžete použít, abyste se dozvěděli více o business intelligence a nástrojích pro vykazování.
 author: sericks007
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 424da665f91820f3fe42c98b352a646dd3db72c5
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771557"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258573"
 ---
-# <a name="business-intelligence-bi-and-reporting-home-page"></a>Domovská stránka analytických nástrojů a vykazování
+# <a name="reporting-and-analytics-with-power-bi-home-page"></a>Domovská stránka vytváření sestav a analýzy s Power BI
 
 [!include [banner](../includes/banner.md)]
 
