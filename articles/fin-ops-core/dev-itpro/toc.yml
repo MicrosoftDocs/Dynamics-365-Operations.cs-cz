@@ -14,7 +14,9 @@
               items:
                 - name: Domovská stránka Co je nového a co se změnilo v aktualizacích Platform Update
                   href: get-started/whats-new-home-page.md
-                - name: Platform update 34 (květen 2020)
+                - name: Platform Update pro 10.0.11 (červenec 2020)
+                  href: get-started/whats-new-platform-update-35.md
+                - name: Platform Update pro 10.0.10 (květen 2020)
                   href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (duben 2020)
                   href: get-started/whats-new-platform-update-33.md
@@ -324,8 +326,6 @@
                       href: data-entities/configuration-data-packages.md
                     - name: Balíčky dat konfigurace (pouze vydání z července 2017)
                       href: data-entities/configuration-data-packages.md
-                    - name: Zpřístupnit úložiště entit jako Data Lake
-                      href: data-entities/entity-store-data-lake.md
                 - name: Šablony dat konfigurací
                   href: data-entities/configuration-data-templates.md
                 - name: Sledování změn entity
@@ -384,6 +384,14 @@
               href: user-interface/data-validation-workspace.md
             - name: Popisy chyb správy dat
               href: data-entities/dm-error-descriptions.md
+        - name: Azure Data Lake
+          items:
+            - name: Přehled Azure Data Lake
+              href: data-entities/azure-data-lake-overview.md
+            - name: Aplikace Finance and Operations v Azure Data Lake
+              href: data-entities/finance-data-azure-data-lake.md
+            - name: Zpřístupnění úložiště entit jako Data Lake
+              href: data-entities/entity-store-data-lake.md
         - name: Operace přesunu databáze
           items:
             - name: Přehled
@@ -482,38 +490,46 @@
               items:
                 - name: Domovská stránka Místní nasazení
                   href: deployment/on-premises-deployment-landing-page.md
-                - name: Přehled místního nasazení
-                  href: deployment/on-premises-overview.md
-                - name: Plán a příprava pro místní nasazení
-                  href: deployment/plan-onprem-deployment.md
-                - name: Požadavky na rozsah hardwaru
-                  href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                - name: Nastavení místních projektů
-                  href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                - name: Příprava pro místní nasazení
+                  items:
+                    - name: Přehled místního nasazení
+                      href: deployment/on-premises-overview.md
+                    - name: Plán a příprava pro místní nasazení
+                      href: deployment/plan-onprem-deployment.md
+                    - name: Požadavky na rozsah hardwaru
+                      href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                 - name: Nastavení a nasazení místních prostředí
                   items:
-                    - name: Domovská stránka Nastavení a nasazení místních prostředí
-                      href: deployment/setup-deploy-on-premises-environments.md
-                    - name: Nasazení místních prostředí (Platform update 12 a novější)
+                    - name: Nastavení místních projektů v LCS
+                      href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                    - name: Nastavení a nasazení místních prostředí
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Nasazení místních prostředí (Platform update 8 a 11)
-                      href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: Instalační kroky pro komponenty kanálu Retail v místním prostředí
                       href: deployment/deploy-retail-onprem.md
+                    - name: Vývoj a nasazení vlastních modelů do místních prostředí
+                      href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: Údržba prostředí
+                  items:
+                    - name: Použití aktualizací na místní nasazení
+                      href: deployment/apply-updates-on-premises.md
+                    - name: Rotace certifikátů
+                      href: deployment/certificate-rotation-on-prem.md
+                    - name: Připojení klienta k internetu
+                      href: user-interface/client-disconnected.md
+                    - name: Konfigurace proxy pro místní prostředí
+                      href: deployment/onprem-reverseproxy.md
+                    - name: Místní diagnostika
+                      href: deployment/on-premises-diagnostics.md
+                    - name: Integrace PowerBI.com s místními prostředími
+                      href: analytics/entity-store-on-prem.md
+                    - name: Rekonfigurace prostředí
+                      href: lifecycle-services/reconfigure-environment.md
+                    - name: Opětovné nasazení místních nasazení
+                      href: deployment/redeploy-on-prem.md
+                    - name: Odebrání a přeinstalace uzlu AOS
+                      href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Opětovné použití stejné instance AD FS pro více prostředí
                       href: deployment/onprem-reuseadfs.md
-                - name: Vývoj a nasazení vlastních modelů do místních prostředí
-                  href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Integrace PowerBI.com s místními prostředími
-                  href: analytics/entity-store-on-prem.md
-                - name: Konfigurace proxy pro místní prostředí
-                  href: deployment/onprem-reverseproxy.md
-                - name: Použití aktualizací na místní nasazení
-                  href: deployment/apply-updates-on-premises.md
-                - name: Místní diagnostika
-                  href: deployment/on-premises-diagnostics.md
-                - name: Opětovné nasazení místních nasazení
-                  href: deployment/redeploy-on-prem.md
                 - name: Místní agent
                   items:
                     - name: Kompatibilita AD FS Office 365
@@ -522,16 +538,12 @@
                       href: lifecycle-services/pre-post-scripts.md
                     - name: Aktualizace místního agenta
                       href: lifecycle-services/update-local-agent.md
-                - name: Rekonfigurace prostředí
-                  href: lifecycle-services/reconfigure-environment.md
-                - name: Připojení klienta k internetu
-                  href: user-interface/client-disconnected.md
-                - name: Řešení problémů s místním nasazením
-                  href: deployment/troubleshoot-on-prem.md
-                - name: Skripty pro řešení problémů v místních prostředích
-                  href: deployment/onprem-tsg-implementations.md
-                - name: Rotace certifikátů
-                  href: deployment/certificate-rotation-on-prem.md
+                - name: Řešení potíží
+                  items:
+                    - name: Řešení problémů s místním nasazením
+                      href: deployment/troubleshoot-on-prem.md
+                    - name: Skripty pro řešení problémů v místních prostředích
+                      href: deployment/onprem-tsg-implementations.md
             - name: Nasazení vlastního kódu
               items:
                 - name: Vytvoření nasaditelných balíčků modelů
@@ -812,7 +824,7 @@
                       href: extensibility/customize-model-elements-extensions.md
                     - name: Přizpůsobení pomocí rozšíření a překrývání vrstev
                       href: extensibility/customization-overlayering-extensions.md
-                - name: Novinky
+                - name: Co je nového
                   items:
                     - name: Co je nového a co se změnilo pro rozšiřitelnost
                       href: extensibility/extensibility-new.md
@@ -928,7 +940,9 @@
                       href: extensibility/extensibility-attributes.md
                     - name: Přerušení změn
                       href: extensibility/breaking-changes.md
-            - name: Výkon
+                    - name: Nástroj kontroly kompatibility
+                      href: extensibility/compatibility-checker-tool.md
+            - name: Výkonnost
               items:
                 - name: Sledování pomocí Trace parser
                   href: perf-test/trace-trace-tutorial.md
@@ -1442,6 +1456,8 @@
               href: sysadmin/configure-manage-database-log.md
             - name: Vytvoření mezipaměti metadat OData při spuštění AOS
               href: sysadmin/odata-warmup.md
+            - name: Nastavení klienta Azure Key Vault
+              href: ../../finance/localizations/setting-up-azure-key-vault-client.md
         - name: 'Upgrady, aktualizace a opravy hotfix'
           items:
             - name: 'Zdroje upgradů, aktualizací a oprav hotfix'
@@ -1542,7 +1558,7 @@
                   href: deployment/apply-updates-on-premises.md
                 - name: Opětovné nasazení místního nasazení
                   href: deployment/redeploy-on-prem.md
-                - name: Místní upgrade pro verzi on-premises 7.x na 8.1
+                - name: Proces místního upgradu pro místní prostředí
                   href: migration-upgrade/on-prem-upgrade.md
             - name: Opravy hotfix
               items:

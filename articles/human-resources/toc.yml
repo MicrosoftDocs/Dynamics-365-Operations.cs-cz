@@ -5,6 +5,12 @@
       items:
         - name: Co je nového a co se změnilo v Human Resources
           href: hr-admin-whats-new.md
+        - name: 13. dubna 2020
+          href: hr-whats-new-2020-04-13.md
+        - name: 3. dubna 2020
+          href: hr-whats-new-2020-04-03.md
+        - name: 24. března 2020
+          href: hr-whats-new-2020-03-24.md
         - name: 19. března 2020
           href: hr-whats-new-2020-03-19.md
         - name: 10. března 2020
@@ -395,13 +401,13 @@
               href: hr-compensation-enroll-employees-fixed.md
             - name: "Přihlášení zaměstnanců k\_plánu variabilní kompenzace"
               href: hr-compensation-enroll-employees-variable.md
-            - name: "Definování procesu kompenzací a\_výpočet výsledků"
+            - name: Definování procesu kompenzací a výpočet výsledků
               href: hr-compensation-define-process.md
             - name: Zpracování plánů kompenzace
               href: hr-compensation-process.md
         - name: Správa zaměstnaneckých výhod
           items:
-            - name: 'Funkce Preview: Správa zaměstnaneckých výhod'
+            - name: Správa zaměstnaneckých výhod
               items:
                 - name: Přehled správy zaměstnaneckých výhod
                   href: hr-benefits-management-overview.md
@@ -445,12 +451,8 @@
                   items:
                     - name: Nastavení plánů zaměstnaneckých výhod
                       href: hr-benefits-plans-setup.md
-                    - name: Vytvoření plánů zaměstnaneckých výhod pracovníka
-                      href: hr-benefits-plans-worker.md
                     - name: Nastavení programů flexibilních kreditů
                       href: hr-benefits-plans-flex-credit-programs.md
-                    - name: Konfigurace budoucích životních událostí
-                      href: hr-benefits-plans-future-life-events.md
                 - name: Zpracování plánů zaměstnaneckých výhod
                   items:
                     - name: Zpracování způsobilosti k registraci
@@ -499,6 +501,8 @@
               href: hr-leave-and-absence-enroll.md
             - name: Časové rozlišení plánů pracovního volna a absence
               href: hr-leave-and-absence-accrue.md
+            - name: Přerušit pracovní volno
+              href: hr-leave-and-absence-suspend-leave.md
             - name: Zobrazení analýz pro pracovní volno a absenci
               href: hr-leave-and-absence-analytics.md
             - name: Správa žádostí o pracovní volno a absenci
