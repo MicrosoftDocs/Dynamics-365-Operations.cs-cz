@@ -2,7 +2,7 @@
 title: Odeslání a schválení rozpočtu projektu
 description: Tento postup ukazuje způsob vytvoření a odeslání rozpočtu projektu.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,50 +10,50 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7aa7c301946b92b956f4b1b0f92985451ffe917e
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 14683554c45db72061ecbbf4a528656df3132692
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3149428"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207434"
 ---
-# <a name="submit-and-approve-project-budget"></a><span data-ttu-id="81e92-103">Odeslání a schválení rozpočtu projektu</span><span class="sxs-lookup"><span data-stu-id="81e92-103">Submit and approve project budget</span></span>
+# <a name="submit-and-approve-project-budget"></a><span data-ttu-id="26b33-103">Odeslání a schválení rozpočtu projektu</span><span class="sxs-lookup"><span data-stu-id="26b33-103">Submit and approve project budget</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="81e92-104">Tento postup ukazuje způsob vytvoření a odeslání rozpočtu projektu.</span><span class="sxs-lookup"><span data-stu-id="81e92-104">This procedure shows you how to create and submit the budget for a project.</span></span> 
+<span data-ttu-id="26b33-104">Tento postup ukazuje způsob vytvoření a odeslání rozpočtu projektu.</span><span class="sxs-lookup"><span data-stu-id="26b33-104">This procedure shows you how to create and submit the budget for a project.</span></span> 
 
-<span data-ttu-id="81e92-105">Při vytvoření rozpočtu projektu můžete zadat odhadované výnosy a náklady projektu a použít je pro kontrolu skutečných transakcí projektu.</span><span class="sxs-lookup"><span data-stu-id="81e92-105">When you create a project budget, you can enter estimated revenues and costs for a project, and then use those to control actual project transactions.</span></span> <span data-ttu-id="81e92-106">V rozpočtu projektu musí být všechny původní rozpočty a revize odeslány do workflow projektu ke schválení.</span><span class="sxs-lookup"><span data-stu-id="81e92-106">In project budgeting, all original budgets and revisions must be sent to project workflow for approval.</span></span> <span data-ttu-id="81e92-107">Workflow vám poskytuje lepší kontrolu nad procesy a vytváří záznam historie změn.</span><span class="sxs-lookup"><span data-stu-id="81e92-107">Workflow gives you increased control over the process and creates a change history record.</span></span>
+<span data-ttu-id="26b33-105">Při vytvoření rozpočtu projektu můžete zadat odhadované výnosy a náklady projektu a použít je pro kontrolu skutečných transakcí projektu.</span><span class="sxs-lookup"><span data-stu-id="26b33-105">When you create a project budget, you can enter estimated revenues and costs for a project, and then use those to control actual project transactions.</span></span> <span data-ttu-id="26b33-106">V rozpočtu projektu musí být všechny původní rozpočty a revize odeslány do workflow projektu ke schválení.</span><span class="sxs-lookup"><span data-stu-id="26b33-106">In project budgeting, all original budgets and revisions must be sent to project workflow for approval.</span></span> <span data-ttu-id="26b33-107">Workflow vám poskytuje lepší kontrolu nad procesy a vytváří záznam historie změn.</span><span class="sxs-lookup"><span data-stu-id="26b33-107">Workflow gives you increased control over the process and creates a change history record.</span></span>
 
-<span data-ttu-id="81e92-108">Tento úkol byl vytvořen pomocí sady dat USSI.</span><span class="sxs-lookup"><span data-stu-id="81e92-108">This task was created using the USSI data set.</span></span>
+<span data-ttu-id="26b33-108">Tento úkol byl vytvořen pomocí sady dat USSI.</span><span class="sxs-lookup"><span data-stu-id="26b33-108">This task was created using the USSI data set.</span></span>
 
-1. <span data-ttu-id="81e92-109">V **navigačním podokně** přejděte na **Moduly > Řízení projektů a účetnictví > Projekty > Všechny projekty**.</span><span class="sxs-lookup"><span data-stu-id="81e92-109">In the **Navigation pane**, go to **Modules > Project management and accounting > Projects > All projects**.</span></span>
-2. <span data-ttu-id="81e92-110">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="81e92-110">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="81e92-111">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="81e92-111">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="81e92-112">V **podokně akcí** klikněte na možnost **Plán**.</span><span class="sxs-lookup"><span data-stu-id="81e92-112">On the **Action Pane**, click **Plan**.</span></span>
-5. <span data-ttu-id="81e92-113">Klikněte na **Rozpočet projektu**.</span><span class="sxs-lookup"><span data-stu-id="81e92-113">Click **Project budget**.</span></span>
-6. <span data-ttu-id="81e92-114">Zadejte hodnotu do pole **Popis**.</span><span class="sxs-lookup"><span data-stu-id="81e92-114">In the **Description** field, type a value.</span></span>
-7. <span data-ttu-id="81e92-115">Rozbalte pevnou záložku **Náklady**.</span><span class="sxs-lookup"><span data-stu-id="81e92-115">Expand the **Cost** fastTab.</span></span>
-8. <span data-ttu-id="81e92-116">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="81e92-116">Click **New**.</span></span>
-9. <span data-ttu-id="81e92-117">V poli **Typ transakce** vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="81e92-117">In the **Transaction type** field, select an option.</span></span>
-10. <span data-ttu-id="81e92-118">V poli **Kategorie** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="81e92-118">In the **Category** field, enter or select a value.</span></span>
-11. <span data-ttu-id="81e92-119">Zadejte číslo do pole **Původní rozpočet**.</span><span class="sxs-lookup"><span data-stu-id="81e92-119">In the **Original budget** field, enter a number.</span></span>
-12. <span data-ttu-id="81e92-120">Rozbalte pevnou záložku **Výnosy**.</span><span class="sxs-lookup"><span data-stu-id="81e92-120">Expand the **Revenues** fastTab.</span></span>
-13. <span data-ttu-id="81e92-121">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="81e92-121">Click **New**.</span></span>
-14. <span data-ttu-id="81e92-122">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="81e92-122">In the list, mark the selected row.</span></span>
-15. <span data-ttu-id="81e92-123">V poli **Typ transakce** vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="81e92-123">In the **Transaction type** field, select an option.</span></span>
-16. <span data-ttu-id="81e92-124">V poli **Kategorie** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="81e92-124">In the **Category** field, enter or select a value.</span></span>
-17. <span data-ttu-id="81e92-125">Zadejte číslo do pole **Původní rozpočet**.</span><span class="sxs-lookup"><span data-stu-id="81e92-125">In the **Original budget** field, enter a number.</span></span>
-18. <span data-ttu-id="81e92-126">Klikněte na možnost **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="81e92-126">Click **Save**.</span></span>
-19. <span data-ttu-id="81e92-127">Klikněte na **Workflow**.</span><span class="sxs-lookup"><span data-stu-id="81e92-127">Click **Workflow**.</span></span>
-20. <span data-ttu-id="81e92-128">Klepněte na tlačítko **Odeslat**.</span><span class="sxs-lookup"><span data-stu-id="81e92-128">Click **Submit**.</span></span>
-21. <span data-ttu-id="81e92-129">Zadejte hodnotu do pole **Komentář**.</span><span class="sxs-lookup"><span data-stu-id="81e92-129">In the **Comment** field, type a value.</span></span>
-22. <span data-ttu-id="81e92-130">Klepněte na tlačítko **Odeslat**.</span><span class="sxs-lookup"><span data-stu-id="81e92-130">Click **Submit**.</span></span>
+1. <span data-ttu-id="26b33-109">V **navigačním podokně** přejděte na **Moduly > Řízení projektů a účetnictví > Projekty > Všechny projekty**.</span><span class="sxs-lookup"><span data-stu-id="26b33-109">In the **Navigation pane**, go to **Modules > Project management and accounting > Projects > All projects**.</span></span>
+2. <span data-ttu-id="26b33-110">Vyhledejte na seznamu požadovaný záznam a vyberte ho.</span><span class="sxs-lookup"><span data-stu-id="26b33-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="26b33-111">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="26b33-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="26b33-112">V **podokně akcí** klikněte na možnost **Plán**.</span><span class="sxs-lookup"><span data-stu-id="26b33-112">On the **Action Pane**, click **Plan**.</span></span>
+5. <span data-ttu-id="26b33-113">Klikněte na **Rozpočet projektu**.</span><span class="sxs-lookup"><span data-stu-id="26b33-113">Click **Project budget**.</span></span>
+6. <span data-ttu-id="26b33-114">Zadejte hodnotu do pole **Popis**.</span><span class="sxs-lookup"><span data-stu-id="26b33-114">In the **Description** field, type a value.</span></span>
+7. <span data-ttu-id="26b33-115">Rozbalte pevnou záložku **Náklady**.</span><span class="sxs-lookup"><span data-stu-id="26b33-115">Expand the **Cost** fastTab.</span></span>
+8. <span data-ttu-id="26b33-116">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="26b33-116">Click **New**.</span></span>
+9. <span data-ttu-id="26b33-117">V poli **Typ transakce** vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="26b33-117">In the **Transaction type** field, select an option.</span></span>
+10. <span data-ttu-id="26b33-118">V poli **Kategorie** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="26b33-118">In the **Category** field, enter or select a value.</span></span>
+11. <span data-ttu-id="26b33-119">Zadejte číslo do pole **Původní rozpočet**.</span><span class="sxs-lookup"><span data-stu-id="26b33-119">In the **Original budget** field, enter a number.</span></span>
+12. <span data-ttu-id="26b33-120">Rozbalte pevnou záložku **Výnosy**.</span><span class="sxs-lookup"><span data-stu-id="26b33-120">Expand the **Revenues** fastTab.</span></span>
+13. <span data-ttu-id="26b33-121">Klepněte na možnost **Nový**.</span><span class="sxs-lookup"><span data-stu-id="26b33-121">Click **New**.</span></span>
+14. <span data-ttu-id="26b33-122">Označte na seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="26b33-122">In the list, mark the selected row.</span></span>
+15. <span data-ttu-id="26b33-123">V poli **Typ transakce** vyberte možnost.</span><span class="sxs-lookup"><span data-stu-id="26b33-123">In the **Transaction type** field, select an option.</span></span>
+16. <span data-ttu-id="26b33-124">V poli **Kategorie** zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="26b33-124">In the **Category** field, enter or select a value.</span></span>
+17. <span data-ttu-id="26b33-125">Zadejte číslo do pole **Původní rozpočet**.</span><span class="sxs-lookup"><span data-stu-id="26b33-125">In the **Original budget** field, enter a number.</span></span>
+18. <span data-ttu-id="26b33-126">Klikněte na možnost **Uložit**.</span><span class="sxs-lookup"><span data-stu-id="26b33-126">Click **Save**.</span></span>
+19. <span data-ttu-id="26b33-127">Klikněte na **Workflow**.</span><span class="sxs-lookup"><span data-stu-id="26b33-127">Click **Workflow**.</span></span>
+20. <span data-ttu-id="26b33-128">Klepněte na tlačítko **Odeslat**.</span><span class="sxs-lookup"><span data-stu-id="26b33-128">Click **Submit**.</span></span>
+21. <span data-ttu-id="26b33-129">Zadejte hodnotu do pole **Komentář**.</span><span class="sxs-lookup"><span data-stu-id="26b33-129">In the **Comment** field, type a value.</span></span>
+22. <span data-ttu-id="26b33-130">Klepněte na tlačítko **Odeslat**.</span><span class="sxs-lookup"><span data-stu-id="26b33-130">Click **Submit**.</span></span>
 

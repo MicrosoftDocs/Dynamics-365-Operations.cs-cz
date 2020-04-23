@@ -2,7 +2,7 @@
 title: Použití kódů důvodu fáze
 description: Pomocí kódu důvodu lze uvést, proč byla zrušena smlouva o úrovni služeb (SLA) nebo proč došlo k překročení časového limitu nastaveného smlouvou SLA.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAParameters
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,57 +18,57 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33fa7e5f08f09fe109d0507d686315d01e043928
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 54dae6edb6681e1ba29709ebeeea2e5094262257
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557749"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3206466"
 ---
-# <a name="use-stage-reason-codes"></a><span data-ttu-id="2f102-103">Použití kódů důvodu fáze</span><span class="sxs-lookup"><span data-stu-id="2f102-103">Use stage reason codes</span></span> 
+# <a name="use-stage-reason-codes"></a><span data-ttu-id="011df-103">Použití kódů důvodu fáze</span><span class="sxs-lookup"><span data-stu-id="011df-103">Use stage reason codes</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="2f102-104">Pomocí kódu důvodu lze uvést, proč byla zrušena smlouva o úrovni služeb (SLA) nebo proč došlo k překročení časového limitu nastaveného smlouvou SLA.</span><span class="sxs-lookup"><span data-stu-id="2f102-104">You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the time limit that is you define in the SLA.</span></span>
+<span data-ttu-id="011df-104">Pomocí kódu důvodu lze uvést, proč byla zrušena smlouva o úrovni služeb (SLA) nebo proč došlo k překročení časového limitu nastaveného smlouvou SLA.</span><span class="sxs-lookup"><span data-stu-id="011df-104">You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the time limit that is you define in the SLA.</span></span>
 
-<span data-ttu-id="2f102-105">Také můžete vyžadovat zadání kódu důvodu při zrušení smlouvy SLA nebo pokud časový limit překročí čas, který je určen ve smlouvě SLA pro servisní zakázku.</span><span class="sxs-lookup"><span data-stu-id="2f102-105">You can also specify that a reason code is required when an SLA is canceled, or when the time limit exceeds the time that is specified in the SLA for the service order.</span></span>
+<span data-ttu-id="011df-105">Také můžete vyžadovat zadání kódu důvodu při zrušení smlouvy SLA nebo pokud časový limit překročí čas, který je určen ve smlouvě SLA pro servisní zakázku.</span><span class="sxs-lookup"><span data-stu-id="011df-105">You can also specify that a reason code is required when an SLA is canceled, or when the time limit exceeds the time that is specified in the SLA for the service order.</span></span>
 
-<span data-ttu-id="2f102-106">Pokud jste určili, že má být kód důvodu vyžadován, je třeba zadat kód důvodu v následujících situacích:</span><span class="sxs-lookup"><span data-stu-id="2f102-106">If you have specified that a reason code is required, you must enter a reason code in the following situations:</span></span>
+<span data-ttu-id="011df-106">Pokud jste určili, že má být kód důvodu vyžadován, je třeba zadat kód důvodu v následujících situacích:</span><span class="sxs-lookup"><span data-stu-id="011df-106">If you have specified that a reason code is required, you must enter a reason code in the following situations:</span></span>
 
-  - <span data-ttu-id="2f102-107">Když je servisní zakázka přesunuta do fáze, v níž je pro danou servisní zakázku pozastaven časový záznam vzhledem ke smlouvě SLA.</span><span class="sxs-lookup"><span data-stu-id="2f102-107">When a service order is moved to a stage that stops time recording against the SLA for the service order.</span></span>
+  - <span data-ttu-id="011df-107">Když je servisní zakázka přesunuta do fáze, v níž je pro danou servisní zakázku pozastaven časový záznam vzhledem ke smlouvě SLA.</span><span class="sxs-lookup"><span data-stu-id="011df-107">When a service order is moved to a stage that stops time recording against the SLA for the service order.</span></span>
 
-  - <span data-ttu-id="2f102-108">Pokud je servisní zakázka ukončena.</span><span class="sxs-lookup"><span data-stu-id="2f102-108">When the service order is signed off.</span></span>
+  - <span data-ttu-id="011df-108">Pokud je servisní zakázka ukončena.</span><span class="sxs-lookup"><span data-stu-id="011df-108">When the service order is signed off.</span></span>
 
-  - <span data-ttu-id="2f102-109">Když je časový záznam zastaven ručně.</span><span class="sxs-lookup"><span data-stu-id="2f102-109">When time recording is manually stopped.</span></span>
+  - <span data-ttu-id="011df-109">Když je časový záznam zastaven ručně.</span><span class="sxs-lookup"><span data-stu-id="011df-109">When time recording is manually stopped.</span></span>
 
-## <a name="set-up-reason-codes"></a><span data-ttu-id="2f102-110">Nastavení kódů důvodů</span><span class="sxs-lookup"><span data-stu-id="2f102-110">Set up reason codes</span></span>
+## <a name="set-up-reason-codes"></a><span data-ttu-id="011df-110">Nastavení kódů důvodů</span><span class="sxs-lookup"><span data-stu-id="011df-110">Set up reason codes</span></span>
 
-1.  <span data-ttu-id="2f102-111">Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **servisní zakázky** \> **kódy důvodu fáze**.</span><span class="sxs-lookup"><span data-stu-id="2f102-111">Click **Service management** \> **Setup** \> **Service orders** \> **Stage reason codes**.</span></span>
+1.  <span data-ttu-id="011df-111">Klepněte na tlačítko **řízení servisu** \> **nastavení** \> **servisní zakázky** \> **kódy důvodu fáze**.</span><span class="sxs-lookup"><span data-stu-id="011df-111">Click **Service management** \> **Setup** \> **Service orders** \> **Stage reason codes**.</span></span>
 
-2.  <span data-ttu-id="2f102-112">Ve formuláři **Kódy důvodu fáze** klepněte na možnost **nový** k vytvoření nového kódz důvodu fáze.</span><span class="sxs-lookup"><span data-stu-id="2f102-112">In the **Stage reason codes** form, click **New** to create a new reason code.</span></span>
+2.  <span data-ttu-id="011df-112">Ve formuláři **Kódy důvodu fáze** klepněte na možnost **nový** k vytvoření nového kódz důvodu fáze.</span><span class="sxs-lookup"><span data-stu-id="011df-112">In the **Stage reason codes** form, click **New** to create a new reason code.</span></span>
 
-3.  <span data-ttu-id="2f102-113">Do pole **Kód důvodu fáze** zadejte jedinečný kód důvodu fáze.</span><span class="sxs-lookup"><span data-stu-id="2f102-113">In the **Stage reason code** field, enter a unique stage reason code.</span></span>
+3.  <span data-ttu-id="011df-113">Do pole **Kód důvodu fáze** zadejte jedinečný kód důvodu fáze.</span><span class="sxs-lookup"><span data-stu-id="011df-113">In the **Stage reason code** field, enter a unique stage reason code.</span></span>
 
-4.  <span data-ttu-id="2f102-114">Do pole **Popis** zadejte popis kódu důvodu fáze.</span><span class="sxs-lookup"><span data-stu-id="2f102-114">In the **Description** field, enter a description of the stage reason code.</span></span>
+4.  <span data-ttu-id="011df-114">Do pole **Popis** zadejte popis kódu důvodu fáze.</span><span class="sxs-lookup"><span data-stu-id="011df-114">In the **Description** field, enter a description of the stage reason code.</span></span>
 
-5.  <span data-ttu-id="2f102-115">Uložte změny zavřením formuláře.</span><span class="sxs-lookup"><span data-stu-id="2f102-115">Close the form to save your changes.</span></span>
+5.  <span data-ttu-id="011df-115">Uložte změny zavřením formuláře.</span><span class="sxs-lookup"><span data-stu-id="011df-115">Close the form to save your changes.</span></span>
 
-## <a name="require-reason-codes-when-a-service-level-agreement-is-canceled"></a><span data-ttu-id="2f102-116">Vyžadování kódů důvodů při zrušení smlouvy o úrovni služeb</span><span class="sxs-lookup"><span data-stu-id="2f102-116">Require reason codes when a service level agreement is canceled</span></span>
+## <a name="require-reason-codes-when-a-service-level-agreement-is-canceled"></a><span data-ttu-id="011df-116">Vyžadování kódů důvodů při zrušení smlouvy o úrovni služeb</span><span class="sxs-lookup"><span data-stu-id="011df-116">Require reason codes when a service level agreement is canceled</span></span>
 
-1.  <span data-ttu-id="2f102-117">Klikněte **Správa servisu** \> **Nastavení** \> **Parametry správy servisu**.</span><span class="sxs-lookup"><span data-stu-id="2f102-117">Click **Service management** \> **Setup** \> **Service management parameters**.</span></span>
+1.  <span data-ttu-id="011df-117">Klikněte **Správa servisu** \> **Nastavení** \> **Parametry správy servisu**.</span><span class="sxs-lookup"><span data-stu-id="011df-117">Click **Service management** \> **Setup** \> **Service management parameters**.</span></span>
 
-2.  <span data-ttu-id="2f102-118">Ve formuláři **parametry správy servisu** klepněte na odkaz **Obecné** a poté zaškrtněte políčko **kód důvodu zrušení**.</span><span class="sxs-lookup"><span data-stu-id="2f102-118">In the **Service management parameters** form, click the **General** link, and then select the **Reason code on canceling** check box.</span></span>
+2.  <span data-ttu-id="011df-118">Ve formuláři **parametry správy servisu** klepněte na odkaz **Obecné** a poté zaškrtněte políčko **kód důvodu zrušení**.</span><span class="sxs-lookup"><span data-stu-id="011df-118">In the **Service management parameters** form, click the **General** link, and then select the **Reason code on canceling** check box.</span></span>
 
-## <a name="require-reason-codes-when-the-a-service-order-exceeds-the-time-limit-that-is-set-by-the-service-level-agreement"></a><span data-ttu-id="2f102-119">Vyžadování kódu důvodu při překročení časového limitu nastaveného smlouvou o úrovni služeb</span><span class="sxs-lookup"><span data-stu-id="2f102-119">Require reason codes when the a service order exceeds the time limit that is set by the service level agreement</span></span>
+## <a name="require-reason-codes-when-the-a-service-order-exceeds-the-time-limit-that-is-set-by-the-service-level-agreement"></a><span data-ttu-id="011df-119">Vyžadování kódu důvodu při překročení časového limitu nastaveného smlouvou o úrovni služeb</span><span class="sxs-lookup"><span data-stu-id="011df-119">Require reason codes when the a service order exceeds the time limit that is set by the service level agreement</span></span>
 
-1.  <span data-ttu-id="2f102-120">Klikněte **Správa servisu** \> **Nastavení** \> **Parametry správy servisu**.</span><span class="sxs-lookup"><span data-stu-id="2f102-120">Click **Service management** \> **Setup** \> **Service management parameters**.</span></span>
+1.  <span data-ttu-id="011df-120">Klikněte **Správa servisu** \> **Nastavení** \> **Parametry správy servisu**.</span><span class="sxs-lookup"><span data-stu-id="011df-120">Click **Service management** \> **Setup** \> **Service management parameters**.</span></span>
 
-2.  <span data-ttu-id="2f102-121">Ve formuláři **parametry správy servisu** klepněte na odkaz **Obecné** a poté zaškrtněte políčko **kód důvodu při překročení času**.</span><span class="sxs-lookup"><span data-stu-id="2f102-121">In the **Service management parameters** form, click the **General** link, and then select the **Reason code on exceeding time** check box.</span></span>
+2.  <span data-ttu-id="011df-121">Ve formuláři **parametry správy servisu** klepněte na odkaz **Obecné** a poté zaškrtněte políčko **kód důvodu při překročení času**.</span><span class="sxs-lookup"><span data-stu-id="011df-121">In the **Service management parameters** form, click the **General** link, and then select the **Reason code on exceeding time** check box.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="2f102-122">Viz také</span><span class="sxs-lookup"><span data-stu-id="2f102-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="011df-122">Viz také</span><span class="sxs-lookup"><span data-stu-id="011df-122">See also</span></span>
 
-[<span data-ttu-id="2f102-123">Zahájení a ukončení záznamu času v servisní zakázce</span><span class="sxs-lookup"><span data-stu-id="2f102-123">Start and stop time recording on a service order</span></span>](start-and-stop-time-recording-on-a-service-order.md)
+[<span data-ttu-id="011df-123">Zahájení a ukončení záznamu času v servisní zakázce</span><span class="sxs-lookup"><span data-stu-id="011df-123">Start and stop time recording on a service order</span></span>](start-and-stop-time-recording-on-a-service-order.md)
 
   
 

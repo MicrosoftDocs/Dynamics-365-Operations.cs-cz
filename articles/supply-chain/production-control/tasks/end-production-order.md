@@ -2,47 +2,47 @@
 title: Ukončení výrobní zakázky
 description: Tato procedura popisuje způsob ukončení výrobní zakázky.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb84d3b1908d6be889a49f7386de876cb52141ab
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: fade659c320e0ea1059644324859c9a3cb273c96
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3149037"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207064"
 ---
-# <a name="end-a-production-order"></a><span data-ttu-id="75476-103">Ukončení výrobní zakázky</span><span class="sxs-lookup"><span data-stu-id="75476-103">End a production order</span></span>
+# <a name="end-a-production-order"></a><span data-ttu-id="fd4bd-103">Ukončení výrobní zakázky</span><span class="sxs-lookup"><span data-stu-id="fd4bd-103">End a production order</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="75476-104">Tato procedura popisuje způsob ukončení výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="75476-104">This procedure shows how to end a production order.</span></span> <span data-ttu-id="75476-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="75476-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="75476-106">Jedná se o poslední proceduru ze sedmi, která vysvětluje životního cyklus výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="75476-106">This is the final procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="fd4bd-104">Tato procedura popisuje způsob ukončení výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-104">This procedure shows how to end a production order.</span></span> <span data-ttu-id="fd4bd-105">K vytvoření tohoto postupu jsou použita ukázková data společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="fd4bd-106">Jedná se o poslední proceduru ze sedmi, která vysvětluje životního cyklus výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-106">This is the final procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="end-a-production-order"></a><span data-ttu-id="75476-107">Ukončení výrobní zakázky</span><span class="sxs-lookup"><span data-stu-id="75476-107">End a production order</span></span>
-1. <span data-ttu-id="75476-108">Přejděte na Řízení výroby > Výrobní zakázky > Všechny výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="75476-108">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="75476-109">Vyberte výrobní zakázku, která má stav Vykázáno jako dokončený.</span><span class="sxs-lookup"><span data-stu-id="75476-109">Select a production order that has the status Reported as finished.</span></span>  
-2. <span data-ttu-id="75476-110">V podokně akcí klikněte na položku Výrobní zakázka.</span><span class="sxs-lookup"><span data-stu-id="75476-110">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="75476-111">Klepněte na tlačítko Konec.</span><span class="sxs-lookup"><span data-stu-id="75476-111">Click End.</span></span>
-    * <span data-ttu-id="75476-112">Na této stránce můžete potvrdit, že chcete ukončit výrobní zakázku.</span><span class="sxs-lookup"><span data-stu-id="75476-112">On this page, you can confirm that you want to end the production order.</span></span>  
-4. <span data-ttu-id="75476-113">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="75476-113">Click the General tab.</span></span>
-5. <span data-ttu-id="75476-114">Do pole Datum zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="75476-114">In the Date field, enter a date.</span></span>
-6. <span data-ttu-id="75476-115">V poli Metoda odpadu vyberte „Přidělení“</span><span class="sxs-lookup"><span data-stu-id="75476-115">In the Scrap method field, select 'Allocation'.</span></span>
-    * <span data-ttu-id="75476-116">Pokud vyberete Metodu přidělení, náklady za sešrotovaný materiál budou přidány k dokončenému zboží.</span><span class="sxs-lookup"><span data-stu-id="75476-116">When you select the Allocation method, costs from the scrapped materials are added to the finished goods.</span></span>  
-7. <span data-ttu-id="75476-117">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="75476-117">Click OK.</span></span>
+## <a name="end-a-production-order"></a><span data-ttu-id="fd4bd-107">Ukončení výrobní zakázky</span><span class="sxs-lookup"><span data-stu-id="fd4bd-107">End a production order</span></span>
+1. <span data-ttu-id="fd4bd-108">Přejděte na Řízení výroby > Výrobní zakázky > Všechny výrobní zakázky.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-108">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="fd4bd-109">Vyberte výrobní zakázku, která má stav Vykázáno jako dokončený.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-109">Select a production order that has the status Reported as finished.</span></span>  
+2. <span data-ttu-id="fd4bd-110">V podokně akcí klikněte na položku Výrobní zakázka.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-110">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="fd4bd-111">Klepněte na tlačítko Konec.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-111">Click End.</span></span>
+    * <span data-ttu-id="fd4bd-112">Na této stránce můžete potvrdit, že chcete ukončit výrobní zakázku.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-112">On this page, you can confirm that you want to end the production order.</span></span>  
+4. <span data-ttu-id="fd4bd-113">Klikněte na záložku Obecné.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-113">Click the General tab.</span></span>
+5. <span data-ttu-id="fd4bd-114">Do pole Datum zadejte datum.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-114">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="fd4bd-115">V poli Metoda odpadu vyberte „Přidělení“</span><span class="sxs-lookup"><span data-stu-id="fd4bd-115">In the Scrap method field, select 'Allocation'.</span></span>
+    * <span data-ttu-id="fd4bd-116">Pokud vyberete Metodu přidělení, náklady za sešrotovaný materiál budou přidány k dokončenému zboží.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-116">When you select the Allocation method, costs from the scrapped materials are added to the finished goods.</span></span>  
+7. <span data-ttu-id="fd4bd-117">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-117">Click OK.</span></span>
 
-## <a name="validate-calculation-results"></a><span data-ttu-id="75476-118">Ověření výsledků výpočtu</span><span class="sxs-lookup"><span data-stu-id="75476-118">Validate calculation results</span></span>
-1. <span data-ttu-id="75476-119">V podokně akcí klikněte na možnost Spravovat náklady.</span><span class="sxs-lookup"><span data-stu-id="75476-119">On the Action Pane, click Manage costs.</span></span>
-2. <span data-ttu-id="75476-120">Klikněte na Zobrazit porovnání nákladů.</span><span class="sxs-lookup"><span data-stu-id="75476-120">Click View cost comparison.</span></span>
-    * <span data-ttu-id="75476-121">Po ukončení výrobní zakázky budete mít můžete porovnat odhadovanou cenu nákladu proti skutečné ceně nákladů, abyste získali přehled o výrobních odchylkách.</span><span class="sxs-lookup"><span data-stu-id="75476-121">After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.</span></span>  
+## <a name="validate-calculation-results"></a><span data-ttu-id="fd4bd-118">Ověření výsledků výpočtu</span><span class="sxs-lookup"><span data-stu-id="fd4bd-118">Validate calculation results</span></span>
+1. <span data-ttu-id="fd4bd-119">V podokně akcí klikněte na možnost Spravovat náklady.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-119">On the Action Pane, click Manage costs.</span></span>
+2. <span data-ttu-id="fd4bd-120">Klikněte na Zobrazit porovnání nákladů.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-120">Click View cost comparison.</span></span>
+    * <span data-ttu-id="fd4bd-121">Po ukončení výrobní zakázky budete mít můžete porovnat odhadovanou cenu nákladu proti skutečné ceně nákladů, abyste získali přehled o výrobních odchylkách.</span><span class="sxs-lookup"><span data-stu-id="fd4bd-121">After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.</span></span>  

@@ -2,7 +2,7 @@
 title: Použití sledování pro rozpad
 description: V tomto článku je vysvětleno použití sledování k prozkoumání příčin výsledku rozpadu objednávky.
 author: roxanadiaconu
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19231
 ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
@@ -19,32 +19,32 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f2821eb6a17d2caaacf399f8d519e4caf3ecd04
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 046d4f5270869542d33023b9b9c927e89f5ad40b
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813654"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3209506"
 ---
-# <a name="use-tracing-for-explosion"></a><span data-ttu-id="258f1-103">Použití sledování pro rozpad</span><span class="sxs-lookup"><span data-stu-id="258f1-103">Use tracing for explosion</span></span>
+# <a name="use-tracing-for-explosion"></a><span data-ttu-id="bbfc4-103">Použití sledování pro rozpad</span><span class="sxs-lookup"><span data-stu-id="bbfc4-103">Use tracing for explosion</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="258f1-104">V tomto článku je vysvětleno použití sledování k prozkoumání příčin výsledku rozpadu objednávky.</span><span class="sxs-lookup"><span data-stu-id="258f1-104">This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.</span></span>
+<span data-ttu-id="bbfc4-104">V tomto článku je vysvětleno použití sledování k prozkoumání příčin výsledku rozpadu objednávky.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-104">This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.</span></span>
 
-<span data-ttu-id="258f1-105">Po povolení sledování můžete zobrazit informace o činitelích, které tvoří výsledek rozpadu určité objednávky.</span><span class="sxs-lookup"><span data-stu-id="258f1-105">By enabling tracing, you can view information about the factors that contributed to the outcome of the explosion of a particular order.</span></span> <span data-ttu-id="258f1-106">Na následujícím příkladu je znázorněno, jak lze použít informace o sledování:</span><span class="sxs-lookup"><span data-stu-id="258f1-106">The following examples show how you can use the tracing information:</span></span>
+<span data-ttu-id="bbfc4-105">Po povolení sledování můžete zobrazit informace o činitelích, které tvoří výsledek rozpadu určité objednávky.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-105">By enabling tracing, you can view information about the factors that contributed to the outcome of the explosion of a particular order.</span></span> <span data-ttu-id="bbfc4-106">Na následujícím příkladu je znázorněno, jak lze použít informace o sledování:</span><span class="sxs-lookup"><span data-stu-id="bbfc4-106">The following examples show how you can use the tracing information:</span></span>
 
--   <span data-ttu-id="258f1-107">Zobrazit vztahy mezi akcemi na plánovaných objednávkách za účelem optimalizace dodavatelského řetězce a skladových rezervací.</span><span class="sxs-lookup"><span data-stu-id="258f1-107">View relations between the actions on planned orders to optimize the supply chain and inventory reservations.</span></span>
--   <span data-ttu-id="258f1-108">Zobrazit vztahy k objednávkám, které již byly schváleny.</span><span class="sxs-lookup"><span data-stu-id="258f1-108">View relations to orders that are already approved.</span></span> <span data-ttu-id="258f1-109">Můžete se zaměřit na automatické potvrzování odvozených požadavků a přesněji stanovit prioritu objednávky.</span><span class="sxs-lookup"><span data-stu-id="258f1-109">You can focus on automatically firming derived requirements and then prioritize orders more accurately.</span></span>
--   <span data-ttu-id="258f1-110">Simulovat výsledky plánování a určit, zda jsou parametry plánování optimální.</span><span class="sxs-lookup"><span data-stu-id="258f1-110">Simulate planning results to determine whether the planning parameters are optimal.</span></span>
--   <span data-ttu-id="258f1-111">Určit způsob, jakým byly pro objednávku určovány informace, jako například data výroby, množství a priority.</span><span class="sxs-lookup"><span data-stu-id="258f1-111">Identify how information such as production dates, quantities, and priorities for an order were determined.</span></span>
+-   <span data-ttu-id="bbfc4-107">Zobrazit vztahy mezi akcemi na plánovaných objednávkách za účelem optimalizace dodavatelského řetězce a skladových rezervací.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-107">View relations between the actions on planned orders to optimize the supply chain and inventory reservations.</span></span>
+-   <span data-ttu-id="bbfc4-108">Zobrazit vztahy k objednávkám, které již byly schváleny.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-108">View relations to orders that are already approved.</span></span> <span data-ttu-id="bbfc4-109">Můžete se zaměřit na automatické potvrzování odvozených požadavků a přesněji stanovit prioritu objednávky.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-109">You can focus on automatically firming derived requirements and then prioritize orders more accurately.</span></span>
+-   <span data-ttu-id="bbfc4-110">Simulovat výsledky plánování a určit, zda jsou parametry plánování optimální.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-110">Simulate planning results to determine whether the planning parameters are optimal.</span></span>
+-   <span data-ttu-id="bbfc4-111">Určit způsob, jakým byly pro objednávku určovány informace, jako například data výroby, množství a priority.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-111">Identify how information such as production dates, quantities, and priorities for an order were determined.</span></span>
 
-<span data-ttu-id="258f1-112">Můžete zobrazit podrobnosti o termínech a akcích pro vybranou objednávku.</span><span class="sxs-lookup"><span data-stu-id="258f1-112">You can view details about futures and actions for a selected order.</span></span> <span data-ttu-id="258f1-113">Na stránce **Rozpad** jsou na kartě **Vysvětlení** v horním podokně k dispozici informace o sledování.</span><span class="sxs-lookup"><span data-stu-id="258f1-113">On the **Explosion** page, tracing information is available on the **Explanation** tab in the upper pane.</span></span> <span data-ttu-id="258f1-114">K sledování dochází, když rozložíte objednávku.</span><span class="sxs-lookup"><span data-stu-id="258f1-114">Tracing occurs when you explode an order.</span></span> <span data-ttu-id="258f1-115">Sledování objednávky zahájíte kliknutím na možnost **Aktualizace**a následným označením zaškrtávacího políčka **Povolit sledování**.</span><span class="sxs-lookup"><span data-stu-id="258f1-115">To start tracing for the order, click **Update**, and then select the **Enable trace** check box.</span></span> <span data-ttu-id="258f1-116">Při vyhledávání konkrétních informací v protokolu můžete použít pole **Najít text**.</span><span class="sxs-lookup"><span data-stu-id="258f1-116">You can use the **Find text** field to search the log for specific information.</span></span> <span data-ttu-id="258f1-117">Výsledky hledání jsou zvýrazněny ve stromové struktuře.</span><span class="sxs-lookup"><span data-stu-id="258f1-117">Search results are highlighted in the tree.</span></span>
+<span data-ttu-id="bbfc4-112">Můžete zobrazit podrobnosti o termínech a akcích pro vybranou objednávku.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-112">You can view details about futures and actions for a selected order.</span></span> <span data-ttu-id="bbfc4-113">Na stránce **Rozpad** jsou na kartě **Vysvětlení** v horním podokně k dispozici informace o sledování.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-113">On the **Explosion** page, tracing information is available on the **Explanation** tab in the upper pane.</span></span> <span data-ttu-id="bbfc4-114">K sledování dochází, když rozložíte objednávku.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-114">Tracing occurs when you explode an order.</span></span> <span data-ttu-id="bbfc4-115">Sledování objednávky zahájíte kliknutím na možnost **Aktualizace**a následným označením zaškrtávacího políčka **Povolit sledování**.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-115">To start tracing for the order, click **Update**, and then select the **Enable trace** check box.</span></span> <span data-ttu-id="bbfc4-116">Při vyhledávání konkrétních informací v protokolu můžete použít pole **Najít text**.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-116">You can use the **Find text** field to search the log for specific information.</span></span> <span data-ttu-id="bbfc4-117">Výsledky hledání jsou zvýrazněny ve stromové struktuře.</span><span class="sxs-lookup"><span data-stu-id="bbfc4-117">Search results are highlighted in the tree.</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="258f1-118">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="258f1-118">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="bbfc4-118">Další zdroje</span><span class="sxs-lookup"><span data-stu-id="bbfc4-118">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="258f1-119">Přehled hlavních plánů</span><span class="sxs-lookup"><span data-stu-id="258f1-119">Master plans overview</span></span>](master-plans.md)
+[<span data-ttu-id="bbfc4-119">Přehled hlavních plánů</span><span class="sxs-lookup"><span data-stu-id="bbfc4-119">Master plans overview</span></span>](master-plans.md)
 
 
 

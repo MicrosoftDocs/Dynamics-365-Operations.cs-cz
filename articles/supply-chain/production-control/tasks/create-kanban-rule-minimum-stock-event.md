@@ -2,7 +2,7 @@
 title: Vytvoření kanbanového pravidla s použitím události pro minimální úroveň zásob
 description: Tento postup se zaměřuje na nastavení potřebné k vytvoření kanbanového pravidlo pomocí události pro minimální úroveň zásob, aby tak bylo jisté, že bude konkrétní produkt v určitém místě vždy k dispozici.
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,61 +10,61 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable, InventLocationIdLookup
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ca5a2e2180235e51ef569fd93ad06867c3dddae
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: b295000e132b8551045520df1af55a37673f131d
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3149313"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3212243"
 ---
-# <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a><span data-ttu-id="4754e-103">Vytvoření kanbanového pravidla s použitím události pro minimální úroveň zásob</span><span class="sxs-lookup"><span data-stu-id="4754e-103">Create a kanban rule using a minimum stock event</span></span>
+# <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a><span data-ttu-id="04016-103">Vytvoření kanbanového pravidla s použitím události pro minimální úroveň zásob</span><span class="sxs-lookup"><span data-stu-id="04016-103">Create a kanban rule using a minimum stock event</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="4754e-104">Tento postup se zaměřuje na nastavení potřebné k vytvoření kanbanového pravidlo pomocí události pro minimální úroveň zásob, aby tak bylo jisté, že bude konkrétní produkt v určitém místě vždy k dispozici.</span><span class="sxs-lookup"><span data-stu-id="4754e-104">This procedure focuses on the setup needed to create a kanban rule using a minimum stock event to ensure that a specific product is always available at a specific location.</span></span> <span data-ttu-id="4754e-105">Je vytvořeno kanbanové pravidlo, které při poklesu úrovně zásob pod 200 kusů převede materiál do skladového místa.</span><span class="sxs-lookup"><span data-stu-id="4754e-105">A kanban rule is created to transfer material to the location when the inventory level drops below 200 pieces.</span></span> <span data-ttu-id="4754e-106">Spuštěním zpracování události požadavku dojde k vytvoření potřebných kanbanů.</span><span class="sxs-lookup"><span data-stu-id="4754e-106">By running the Pegging event processing, the needed kanbans are created.</span></span> <span data-ttu-id="4754e-107">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="4754e-107">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="4754e-108">Tento úkol je určen pro technologa výrobních procesů nebo správce hodnotového proudu, kteří připravují výrobu nového nebo změněného výrobku v prostředí štíhlé výroby.</span><span class="sxs-lookup"><span data-stu-id="4754e-108">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.</span></span>
+<span data-ttu-id="04016-104">Tento postup se zaměřuje na nastavení potřebné k vytvoření kanbanového pravidlo pomocí události pro minimální úroveň zásob, aby tak bylo jisté, že bude konkrétní produkt v určitém místě vždy k dispozici.</span><span class="sxs-lookup"><span data-stu-id="04016-104">This procedure focuses on the setup needed to create a kanban rule using a minimum stock event to ensure that a specific product is always available at a specific location.</span></span> <span data-ttu-id="04016-105">Je vytvořeno kanbanové pravidlo, které při poklesu úrovně zásob pod 200 kusů převede materiál do skladového místa.</span><span class="sxs-lookup"><span data-stu-id="04016-105">A kanban rule is created to transfer material to the location when the inventory level drops below 200 pieces.</span></span> <span data-ttu-id="04016-106">Spuštěním zpracování události požadavku dojde k vytvoření potřebných kanbanů.</span><span class="sxs-lookup"><span data-stu-id="04016-106">By running the Pegging event processing, the needed kanbans are created.</span></span> <span data-ttu-id="04016-107">Tento úkol byl vytvořen pomocí ukázkových dat společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="04016-107">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="04016-108">Tento úkol je určen pro technologa výrobních procesů nebo správce hodnotového proudu, kteří připravují výrobu nového nebo změněného výrobku v prostředí štíhlé výroby.</span><span class="sxs-lookup"><span data-stu-id="04016-108">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.</span></span>
 
 
-## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="4754e-109">Vytvořit nové kanbanové pravidlo</span><span class="sxs-lookup"><span data-stu-id="4754e-109">Create a new kanban rule</span></span>
-1. <span data-ttu-id="4754e-110">Přejděte k Řízení informací o produktech > Lean manufacturing > Kanbanová pravidla.</span><span class="sxs-lookup"><span data-stu-id="4754e-110">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
-2. <span data-ttu-id="4754e-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4754e-111">Click New.</span></span>
-3. <span data-ttu-id="4754e-112">V poli Typ vyberte Výběr.</span><span class="sxs-lookup"><span data-stu-id="4754e-112">In the Type field, select 'Withdrawal'.</span></span>
-    * <span data-ttu-id="4754e-113">Tento typ se používá k vytvoření kanbanů převodu.</span><span class="sxs-lookup"><span data-stu-id="4754e-113">This type is used to create transfer kanbans.</span></span>  
-4. <span data-ttu-id="4754e-114">V poli Strategie doplnění vyberte „Událost“.</span><span class="sxs-lookup"><span data-stu-id="4754e-114">In the Replenishment strategy field, select 'Event'.</span></span>
-    * <span data-ttu-id="4754e-115">Strategie Událost se používá s cílem vytvořit převod kanbanů na základě události.</span><span class="sxs-lookup"><span data-stu-id="4754e-115">The Event strategy is used to create the transfer kanbans based on an event.</span></span> <span data-ttu-id="4754e-116">Dále v postupu spustíte kanbany převodu pomocí doplnění skladu.</span><span class="sxs-lookup"><span data-stu-id="4754e-116">Later in the procedure, you will trigger transfer kanbans by using stock replenishment.</span></span>  
-5. <span data-ttu-id="4754e-117">V poli První aktivita plánu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4754e-117">In the First plan activity field, enter or select a value.</span></span>
-    * <span data-ttu-id="4754e-118">Zadejte nebo vyberte ReplenishSpeakerComponents.</span><span class="sxs-lookup"><span data-stu-id="4754e-118">Enter or select ReplenishSpeakerComponents.</span></span> <span data-ttu-id="4754e-119">Tato aktivita převodu má přijímací sklad (výstupní) a umístění 12, což znamená, že materiál se přesune do umístění 12 ve skladu 12.</span><span class="sxs-lookup"><span data-stu-id="4754e-119">This transfer activity has receipt (output) warehouse and location 12, which means that materials will be moved to location 12 in warehouse 12.</span></span>  
-6. <span data-ttu-id="4754e-120">Rozbalte sekci Podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="4754e-120">Expand the Details section.</span></span>
-7. <span data-ttu-id="4754e-121">V poli Produkt zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4754e-121">In the Product field, enter or select a value.</span></span>
-    * <span data-ttu-id="4754e-122">Vyberte volbu „M0007“.</span><span class="sxs-lookup"><span data-stu-id="4754e-122">Select M0007.</span></span>  
-8. <span data-ttu-id="4754e-123">Rozbalte sekci Události.</span><span class="sxs-lookup"><span data-stu-id="4754e-123">Expand the Events section.</span></span>
-9. <span data-ttu-id="4754e-124">V poli Událost doplnění skladu vyberte „Dávka“.</span><span class="sxs-lookup"><span data-stu-id="4754e-124">In the Stock replenishment event field, select 'Batch'.</span></span>
-    * <span data-ttu-id="4754e-125">Tímto krokem se vytvoří kanbany pro splnění požadavků na materiál v souvisejícím umístění během zpracování události požadavku.</span><span class="sxs-lookup"><span data-stu-id="4754e-125">This creates kanbans to fulfill material needs at the related location during Pegging event processing.</span></span>  
+## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="04016-109">Vytvořit nové kanbanové pravidlo</span><span class="sxs-lookup"><span data-stu-id="04016-109">Create a new kanban rule</span></span>
+1. <span data-ttu-id="04016-110">Přejděte k Řízení informací o produktech > Lean manufacturing > Kanbanová pravidla.</span><span class="sxs-lookup"><span data-stu-id="04016-110">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+2. <span data-ttu-id="04016-111">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="04016-111">Click New.</span></span>
+3. <span data-ttu-id="04016-112">V poli Typ vyberte Výběr.</span><span class="sxs-lookup"><span data-stu-id="04016-112">In the Type field, select 'Withdrawal'.</span></span>
+    * <span data-ttu-id="04016-113">Tento typ se používá k vytvoření kanbanů převodu.</span><span class="sxs-lookup"><span data-stu-id="04016-113">This type is used to create transfer kanbans.</span></span>  
+4. <span data-ttu-id="04016-114">V poli Strategie doplnění vyberte „Událost“.</span><span class="sxs-lookup"><span data-stu-id="04016-114">In the Replenishment strategy field, select 'Event'.</span></span>
+    * <span data-ttu-id="04016-115">Strategie Událost se používá s cílem vytvořit převod kanbanů na základě události.</span><span class="sxs-lookup"><span data-stu-id="04016-115">The Event strategy is used to create the transfer kanbans based on an event.</span></span> <span data-ttu-id="04016-116">Dále v postupu spustíte kanbany převodu pomocí doplnění skladu.</span><span class="sxs-lookup"><span data-stu-id="04016-116">Later in the procedure, you will trigger transfer kanbans by using stock replenishment.</span></span>  
+5. <span data-ttu-id="04016-117">V poli První aktivita plánu zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="04016-117">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="04016-118">Zadejte nebo vyberte ReplenishSpeakerComponents.</span><span class="sxs-lookup"><span data-stu-id="04016-118">Enter or select ReplenishSpeakerComponents.</span></span> <span data-ttu-id="04016-119">Tato aktivita převodu má přijímací sklad (výstupní) a umístění 12, což znamená, že materiál se přesune do umístění 12 ve skladu 12.</span><span class="sxs-lookup"><span data-stu-id="04016-119">This transfer activity has receipt (output) warehouse and location 12, which means that materials will be moved to location 12 in warehouse 12.</span></span>  
+6. <span data-ttu-id="04016-120">Rozbalte sekci Podrobnosti.</span><span class="sxs-lookup"><span data-stu-id="04016-120">Expand the Details section.</span></span>
+7. <span data-ttu-id="04016-121">V poli Produkt zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="04016-121">In the Product field, enter or select a value.</span></span>
+    * <span data-ttu-id="04016-122">Vyberte volbu „M0007“.</span><span class="sxs-lookup"><span data-stu-id="04016-122">Select M0007.</span></span>  
+8. <span data-ttu-id="04016-123">Rozbalte sekci Události.</span><span class="sxs-lookup"><span data-stu-id="04016-123">Expand the Events section.</span></span>
+9. <span data-ttu-id="04016-124">V poli Událost doplnění skladu vyberte „Dávka“.</span><span class="sxs-lookup"><span data-stu-id="04016-124">In the Stock replenishment event field, select 'Batch'.</span></span>
+    * <span data-ttu-id="04016-125">Tímto krokem se vytvoří kanbany pro splnění požadavků na materiál v souvisejícím umístění během zpracování události požadavku.</span><span class="sxs-lookup"><span data-stu-id="04016-125">This creates kanbans to fulfill material needs at the related location during Pegging event processing.</span></span>  
 
-## <a name="set-the-minimum-quantity-for-the-item"></a><span data-ttu-id="4754e-126">Nastavení minimálního množství pro zboží</span><span class="sxs-lookup"><span data-stu-id="4754e-126">Set the minimum quantity for the item</span></span>
-1. <span data-ttu-id="4754e-127">Kliknutím přejdete na odkaz v poli Produkt.</span><span class="sxs-lookup"><span data-stu-id="4754e-127">Click to follow the link in the Product field.</span></span>
-2. <span data-ttu-id="4754e-128">Kliknutím přejdete na odkaz v poli Číslo položky.</span><span class="sxs-lookup"><span data-stu-id="4754e-128">Click to follow the link in the Item number field.</span></span>
-3. <span data-ttu-id="4754e-129">Rozbalte okno s fakty Obrázek produktu.</span><span class="sxs-lookup"><span data-stu-id="4754e-129">Expand the Product image FactBox.</span></span>
-4. <span data-ttu-id="4754e-130">V podokně akcí klikněte na položku Plán.</span><span class="sxs-lookup"><span data-stu-id="4754e-130">On the Action Pane, click Plan.</span></span>
-5. <span data-ttu-id="4754e-131">Klikněte na Disponibilita položky.</span><span class="sxs-lookup"><span data-stu-id="4754e-131">Click Item coverage.</span></span>
-6. <span data-ttu-id="4754e-132">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="4754e-132">Click New.</span></span>
-7. <span data-ttu-id="4754e-133">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="4754e-133">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="4754e-134">V poli Sklad zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="4754e-134">In the Warehouse field, enter or select a value.</span></span>
-    * <span data-ttu-id="4754e-135">Nastavte sklad na 12.</span><span class="sxs-lookup"><span data-stu-id="4754e-135">Set Warehouse to 12.</span></span>  
-9. <span data-ttu-id="4754e-136">Nastavte Minimum na "200".</span><span class="sxs-lookup"><span data-stu-id="4754e-136">Set Minimum to '200'.</span></span>
+## <a name="set-the-minimum-quantity-for-the-item"></a><span data-ttu-id="04016-126">Nastavení minimálního množství pro zboží</span><span class="sxs-lookup"><span data-stu-id="04016-126">Set the minimum quantity for the item</span></span>
+1. <span data-ttu-id="04016-127">Kliknutím přejdete na odkaz v poli Produkt.</span><span class="sxs-lookup"><span data-stu-id="04016-127">Click to follow the link in the Product field.</span></span>
+2. <span data-ttu-id="04016-128">Kliknutím přejdete na odkaz v poli Číslo položky.</span><span class="sxs-lookup"><span data-stu-id="04016-128">Click to follow the link in the Item number field.</span></span>
+3. <span data-ttu-id="04016-129">Rozbalte okno s fakty Obrázek produktu.</span><span class="sxs-lookup"><span data-stu-id="04016-129">Expand the Product image FactBox.</span></span>
+4. <span data-ttu-id="04016-130">V podokně akcí klikněte na položku Plán.</span><span class="sxs-lookup"><span data-stu-id="04016-130">On the Action Pane, click Plan.</span></span>
+5. <span data-ttu-id="04016-131">Klikněte na Disponibilita položky.</span><span class="sxs-lookup"><span data-stu-id="04016-131">Click Item coverage.</span></span>
+6. <span data-ttu-id="04016-132">Klikněte na položku Nová.</span><span class="sxs-lookup"><span data-stu-id="04016-132">Click New.</span></span>
+7. <span data-ttu-id="04016-133">Označte v seznamu vybraný řádek.</span><span class="sxs-lookup"><span data-stu-id="04016-133">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="04016-134">V poli Sklad zadejte nebo vyberte hodnotu.</span><span class="sxs-lookup"><span data-stu-id="04016-134">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="04016-135">Nastavte sklad na 12.</span><span class="sxs-lookup"><span data-stu-id="04016-135">Set Warehouse to 12.</span></span>  
+9. <span data-ttu-id="04016-136">Nastavte Minimum na "200".</span><span class="sxs-lookup"><span data-stu-id="04016-136">Set Minimum to '200'.</span></span>
 
-## <a name="run-the-batch-event-creation-job"></a><span data-ttu-id="4754e-137">Spuštění dávkové úlohy pro vytvoření události</span><span class="sxs-lookup"><span data-stu-id="4754e-137">Run the batch event creation job</span></span>
-1. <span data-ttu-id="4754e-138">Přejděte na Řízení výroby > Pravidelné úlohy > Dávkové zpracování kanbanových úloh > Zpracování události požadavku.</span><span class="sxs-lookup"><span data-stu-id="4754e-138">Go to Production control > Periodic tasks > Kanban job batch processing > Pegging event processing.</span></span>
-2. <span data-ttu-id="4754e-139">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="4754e-139">Click OK.</span></span>
-3. <span data-ttu-id="4754e-140">Přejděte k Řízení informací o produktech > Lean manufacturing > Kanbanová pravidla.</span><span class="sxs-lookup"><span data-stu-id="4754e-140">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
-4. <span data-ttu-id="4754e-141">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="4754e-141">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="4754e-142">Vyberte kanbanové pravidlo, které bylo vytvořeno dříve.</span><span class="sxs-lookup"><span data-stu-id="4754e-142">Select the kanban rule that you created earlier.</span></span>  
-5. <span data-ttu-id="4754e-143">Rozbalte sekci Kanbany.</span><span class="sxs-lookup"><span data-stu-id="4754e-143">Expand the Kanbans section.</span></span>
-    * <span data-ttu-id="4754e-144">Všimněte si, že kanban byl vytvořen pro přenos potřebného materiálu do skladu 12.</span><span class="sxs-lookup"><span data-stu-id="4754e-144">Notice that a kanban was created to transfer the needed material to warehouse 12.</span></span>  
+## <a name="run-the-batch-event-creation-job"></a><span data-ttu-id="04016-137">Spuštění dávkové úlohy pro vytvoření události</span><span class="sxs-lookup"><span data-stu-id="04016-137">Run the batch event creation job</span></span>
+1. <span data-ttu-id="04016-138">Přejděte na Řízení výroby > Pravidelné úlohy > Dávkové zpracování kanbanových úloh > Zpracování události požadavku.</span><span class="sxs-lookup"><span data-stu-id="04016-138">Go to Production control > Periodic tasks > Kanban job batch processing > Pegging event processing.</span></span>
+2. <span data-ttu-id="04016-139">Klikněte na tlačítko OK.</span><span class="sxs-lookup"><span data-stu-id="04016-139">Click OK.</span></span>
+3. <span data-ttu-id="04016-140">Přejděte k Řízení informací o produktech > Lean manufacturing > Kanbanová pravidla.</span><span class="sxs-lookup"><span data-stu-id="04016-140">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+4. <span data-ttu-id="04016-141">Klikněte na odkaz na vybraném řádku v seznamu.</span><span class="sxs-lookup"><span data-stu-id="04016-141">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="04016-142">Vyberte kanbanové pravidlo, které bylo vytvořeno dříve.</span><span class="sxs-lookup"><span data-stu-id="04016-142">Select the kanban rule that you created earlier.</span></span>  
+5. <span data-ttu-id="04016-143">Rozbalte sekci Kanbany.</span><span class="sxs-lookup"><span data-stu-id="04016-143">Expand the Kanbans section.</span></span>
+    * <span data-ttu-id="04016-144">Všimněte si, že kanban byl vytvořen pro přenos potřebného materiálu do skladu 12.</span><span class="sxs-lookup"><span data-stu-id="04016-144">Notice that a kanban was created to transfer the needed material to warehouse 12.</span></span>  
 

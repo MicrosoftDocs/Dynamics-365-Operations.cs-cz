@@ -2,7 +2,7 @@
 title: Sledování zásob dodávky s použitím dodavatelské spolupráce
 description: Tato procedura ukazuje, jak použít spolupráci dodavatele k zobrazení informací o úrovni zásob produktu, který jste umístili v zásilce pro zákazníka.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,36 +10,36 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders, DefaultDashboard, ConsignmentVendorPortalOnhand
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 589b478fa59f2fb2a5008d02e39f2808391d0994
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: c74f09ee2056ce88442bf8f8ccba3985638525a6
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3145551"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3213930"
 ---
-# <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="4246e-103">Sledování zásob dodávky s použitím dodavatelské spolupráce</span><span class="sxs-lookup"><span data-stu-id="4246e-103">Monitor consignment inventory using vendor collaboration</span></span>
+# <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="c4e2a-103">Sledování zásob dodávky s použitím dodavatelské spolupráce</span><span class="sxs-lookup"><span data-stu-id="c4e2a-103">Monitor consignment inventory using vendor collaboration</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="4246e-104">Tato procedura ukazuje, jak použít spolupráci dodavatele k zobrazení informací o úrovni zásob produktu, který jste umístili v zásilce pro zákazníka.</span><span class="sxs-lookup"><span data-stu-id="4246e-104">This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer.</span></span> <span data-ttu-id="4246e-105">Můžete také sledovat spotřebu zásob, když zákazník převezme vlastnictví zásob.</span><span class="sxs-lookup"><span data-stu-id="4246e-105">You can also monitor the consumption of the stock when the customer takes ownership of the inventory.</span></span> <span data-ttu-id="4246e-106">Tento postup můžete projít v ukázkových datech společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="4246e-106">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="4246e-107">Tento postup je určen pro funkci, která byla přidána do Dynamics 365 for Operations, verze 1611.</span><span class="sxs-lookup"><span data-stu-id="4246e-107">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
+<span data-ttu-id="c4e2a-104">Tato procedura ukazuje, jak použít spolupráci dodavatele k zobrazení informací o úrovni zásob produktu, který jste umístili v zásilce pro zákazníka.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-104">This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer.</span></span> <span data-ttu-id="c4e2a-105">Můžete také sledovat spotřebu zásob, když zákazník převezme vlastnictví zásob.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-105">You can also monitor the consumption of the stock when the customer takes ownership of the inventory.</span></span> <span data-ttu-id="c4e2a-106">Tento postup můžete projít v ukázkových datech společnosti USMF.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-106">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="c4e2a-107">Tento postup je určen pro funkci, která byla přidána do Dynamics 365 for Operations, verze 1611.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-107">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
 
-## <a name="view-consumed-inventory"></a><span data-ttu-id="4246e-108">Zobrazení spotřebovaných zásob</span><span class="sxs-lookup"><span data-stu-id="4246e-108">View consumed inventory</span></span>
-1. <span data-ttu-id="4246e-109">Přejděte do nabídky Spolupráce dodavatele > Zásoby dodávky > Produkty přijaté ze zásob dodávky.</span><span class="sxs-lookup"><span data-stu-id="4246e-109">Go to Vendor collaboration > Consignment inventory > Products received from consignment inventory.</span></span>
-    * <span data-ttu-id="4246e-110">V seznamu jsou uvedeny řádky příjemky, které byly vytvořeny při změně vlastnictví šarže zásob dodávky z dodavatele na odběratele.</span><span class="sxs-lookup"><span data-stu-id="4246e-110">The list shows the product receipt lines that were generated when ownership of the consignment inventory was changed from the vendor to the customer.</span></span> <span data-ttu-id="4246e-111">Bude pravděpodobně nutné přejít doprava, chcete-li zobrazit množství a další informace.</span><span class="sxs-lookup"><span data-stu-id="4246e-111">You might have to scroll to the right to see quantities and other information.</span></span> <span data-ttu-id="4246e-112">Informace v tomto seznamu slouží ke generování faktur pro odběratele.</span><span class="sxs-lookup"><span data-stu-id="4246e-112">You can use the information in this list to generate invoices for your customer.</span></span> <span data-ttu-id="4246e-113">Můžete také exportovat data do aplikace Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="4246e-113">You can also export the data to Microsoft Excel.</span></span>   
-2. <span data-ttu-id="4246e-114">Klikněte na možnost Zobrazit nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="4246e-114">Click View purchase order.</span></span>
-3. <span data-ttu-id="4246e-115">Rozbalte sekci Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="4246e-115">Expand the Line details section.</span></span>
-    * <span data-ttu-id="4246e-116">Řádek je označen jako Zásilka a oddílu v záhlaví ukazuje, že má nákupní objednávka stav Přijato.</span><span class="sxs-lookup"><span data-stu-id="4246e-116">The line is marked as Consignment, and the header section shows that the purchase order has a status of Received.</span></span>  
-4. <span data-ttu-id="4246e-117">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="4246e-117">Close the page.</span></span>
+## <a name="view-consumed-inventory"></a><span data-ttu-id="c4e2a-108">Zobrazení spotřebovaných zásob</span><span class="sxs-lookup"><span data-stu-id="c4e2a-108">View consumed inventory</span></span>
+1. <span data-ttu-id="c4e2a-109">Přejděte do nabídky Spolupráce dodavatele > Zásoby dodávky > Produkty přijaté ze zásob dodávky.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-109">Go to Vendor collaboration > Consignment inventory > Products received from consignment inventory.</span></span>
+    * <span data-ttu-id="c4e2a-110">V seznamu jsou uvedeny řádky příjemky, které byly vytvořeny při změně vlastnictví šarže zásob dodávky z dodavatele na odběratele.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-110">The list shows the product receipt lines that were generated when ownership of the consignment inventory was changed from the vendor to the customer.</span></span> <span data-ttu-id="c4e2a-111">Bude pravděpodobně nutné přejít doprava, chcete-li zobrazit množství a další informace.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-111">You might have to scroll to the right to see quantities and other information.</span></span> <span data-ttu-id="c4e2a-112">Informace v tomto seznamu slouží ke generování faktur pro odběratele.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-112">You can use the information in this list to generate invoices for your customer.</span></span> <span data-ttu-id="c4e2a-113">Můžete také exportovat data do aplikace Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-113">You can also export the data to Microsoft Excel.</span></span>   
+2. <span data-ttu-id="c4e2a-114">Klikněte na možnost Zobrazit nákupní objednávku.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-114">Click View purchase order.</span></span>
+3. <span data-ttu-id="c4e2a-115">Rozbalte sekci Podrobnosti řádku.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-115">Expand the Line details section.</span></span>
+    * <span data-ttu-id="c4e2a-116">Řádek je označen jako Zásilka a oddílu v záhlaví ukazuje, že má nákupní objednávka stav Přijato.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-116">The line is marked as Consignment, and the header section shows that the purchase order has a status of Received.</span></span>  
+4. <span data-ttu-id="c4e2a-117">Zavřete stránku.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-117">Close the page.</span></span>
 
-## <a name="view-on-hand-inventory"></a><span data-ttu-id="4246e-118">Zobrazení zásob na skladě</span><span class="sxs-lookup"><span data-stu-id="4246e-118">View on-hand inventory</span></span>
-1. <span data-ttu-id="4246e-119">Přejděte do nabídky Spolupráce dodavatele > Zásoby dodávky > Zásoby dodávky na skladě.</span><span class="sxs-lookup"><span data-stu-id="4246e-119">Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.</span></span>
-    * <span data-ttu-id="4246e-120">Stránka Zásoby dodávky na skladě ukazuje zásobu, kterou vlastníte ve skladu zákazníka.</span><span class="sxs-lookup"><span data-stu-id="4246e-120">The On-hand consignment inventory page shows the stock that you own at the customer's warehouse.</span></span> <span data-ttu-id="4246e-121">Další dimenze, například pracoviště a sklad, můžete zobrazit klepnutím na kartu Zobrazit dimenze.</span><span class="sxs-lookup"><span data-stu-id="4246e-121">You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.</span></span>   
+## <a name="view-on-hand-inventory"></a><span data-ttu-id="c4e2a-118">Zobrazení zásob na skladě</span><span class="sxs-lookup"><span data-stu-id="c4e2a-118">View on-hand inventory</span></span>
+1. <span data-ttu-id="c4e2a-119">Přejděte do nabídky Spolupráce dodavatele > Zásoby dodávky > Zásoby dodávky na skladě.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-119">Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.</span></span>
+    * <span data-ttu-id="c4e2a-120">Stránka Zásoby dodávky na skladě ukazuje zásobu, kterou vlastníte ve skladu zákazníka.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-120">The On-hand consignment inventory page shows the stock that you own at the customer's warehouse.</span></span> <span data-ttu-id="c4e2a-121">Další dimenze, například pracoviště a sklad, můžete zobrazit klepnutím na kartu Zobrazit dimenze.</span><span class="sxs-lookup"><span data-stu-id="c4e2a-121">You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.</span></span>   
 
