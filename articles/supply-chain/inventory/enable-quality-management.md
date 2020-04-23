@@ -2,7 +2,7 @@
 title: Přehled správy kvality
 description: Toto téma popisuje, jak lze použít správu kvality v aplikaci Dynamics 365 Supply Chain Management za účelem zlepšení kvality produktu v rámci dodavatelsko-odběratelského řetězce.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2d51c659d9d06f075458359d81de978e7a6d14b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
+ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814391"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3224902"
 ---
 # <a name="quality-management-overview"></a>Přehled správy kvality
 
@@ -303,123 +303,7 @@ Pokud v nákupu nastavíte pole **Typ události** na hodnotu **Příjemka produk
 - Pokud je možnost **Podle aktualizovaného množství** nastavená na **Ano**, objednávka kvality se vygeneruje pro každý příjem na základě nákupní objednávky podle přijatého množství a nastavení ve vzorku položky. Při každém příjmu množství na základě nákupní objednávky jsou nové objednávky kvality generovány na základě nově přijatého množství.
 - Pokud je možnost **Podle aktualizovaného množství** nastavená na **Ne**, objednávka kvality se vygeneruje pro první příjem na základě nákupní objednávky podle přijatého množství a nastavení ve vzorku položky. Dále se vytvoří jedna nebo více objednávek kvality na základě zbývajícího množství v závislosti na sledovacích dimenzích. Objednávky kvality nejsou vygenerovány pro následné příjmy s nákupní objednávkou.
 
-<table>
-<tbody>
-<tr>
-<th>Specifikace kvality</th>
-<th>Na aktualizované množství</th>
-<th>Na sledovací dimenzi</th>
-<th>Výsledek</th>
-</tr>
-<tr>
-<td>Počet procent: 10 %</td>
-<td>Ano</td>
-<td>
-<p>Číslo dávky: Ne</p>
-<p>Sériové číslo: Ne</p>
-</td>
-<td>
-<p>Množství na objednávce: 100</p>
-<ol>
-<li>Vykázat jako dokončené pro 30
-<ul>
-<li>Objednávka kvality č. 1 na 3 (10 % z 30)</li>
-</ul>
-</li>
-<li>Vykázat jako dokončené pro 70
-<ul>
-<li>Objednávka kvality č.2 na 7 (10 % ze zbývajícího množství objednávky, které se v tomto případě rovná 70)</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fixní množství: 1</td>
-<td>Ne</td>
-<td>
-<p>Číslo dávky: Ne</p>
-<p>Sériové číslo: Ne</p>
-</td>
-<td>Množství na objednávce: 100
-<ol>
-<li>Vykázat jako dokončené pro 30
-<ul>
-<li>Objednávka kvality č. 1 je vytvořena pro 1 (pro první vykázané množství jako dokončené, které má pevnou hodnotu 1).</li>
-<li>Žádné další objednávky kvality nebudou vytvořeny proti zbývajícímu množství.</li>
-</ul>
-</li>
-<li>Vykázat jako dokončené pro 10
-<ul>
-<li>Nejsou vytvořeny žádné objednávky kvality.</li>
-</ul>
-</li>
-<li>Vykázat jako dokončené pro 60
-<ul>
-<li>Nejsou vytvořeny žádné objednávky kvality.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fixní množství: 1</td>
-<td>Ano</td>
-<td>
-<p>Číslo dávky: Ano</p>
-<p>Sériové číslo: Ano</p>
-</td>
-<td>
-<p>Množství na objednávce: 10</p>
-<ol>
-<li>Vykázat jako dokončené pro 3
-<ul>
-<li>Pořadí kvality č 1 pro 1 z dávky #b1, sériové #s1</li>
-<li>Pořadí kvality č 2 pro 1 z dávky #b2, sériové #s2</li>
-<li>Pořadí kvality č 3 pro 1 z dávky #b3, sériové #s3</li>
-</ul>
-</li>
-<li>Vykázat jako dokončené pro 2
-<ul>
-<li>Pořadí kvality č 4 pro 1 z dávky #b4, sériové #s4</li>
-<li>Pořadí kvality č 5 pro 1 z dávky #b5, sériové #s5</li>
-</ul>
-</li>
-</ol>
-<p><strong>Poznámka:</strong> Dávku lze znovu použít.</p>
-</td>
-</tr>
-<tr>
-<td>Fixní množství: 2</td>
-<td>Ne</td>
-<td>
-<p>Číslo dávky: Ano</p>
-<p>Sériové číslo: Ano</p>
-</td>
-<td>
-<p>Množství na objednávce: 10</p>
-<ol>
-<li>Vykázat jako dokončené pro 4
-<ul>
-<li>Pořadí kvality č 1 pro 1 z dávky #b1, sériové #s1.</li>
-<li>Pořadí kvality č 2 pro 1 z dávky #b2, sériové #s2.</li>
-<li>Pořadí kvality č 3 pro 1 z dávky #b3, sériové #s3.</li>
-<li>Pořadí kvality č 4 pro 1 z dávky #b4, sériové #s4.</li>
-<li>Žádné další objednávky kvality nebudou vytvořeny proti zbývajícímu množství.</li>
-</ul>
-</li>
-<li>Vykázat jako dokončené pro 6
-<ul>
-<li>Nejsou vytvořeny žádné objednávky kvality.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
-
-### <a name="production"></a>Výroba
+### <a name="production"></a>Výrobní
 
 Pokud ve výrobě nastavíte pole **Typ události** na hodnotu **Vykázat jako dokončené** a pole **Spuštění** na **Po** na stránce **Přidružení kvality**, získáte následující výsledky:
 
